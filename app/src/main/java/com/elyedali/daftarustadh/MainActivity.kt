@@ -50,6 +50,7 @@ import com.elyedali.daftarustadh.transfer.RecordFile
 import com.elyedali.daftarustadh.transfer.RecordImporter
 import com.elyedali.daftarustadh.transfer.TransferCodec
 import com.elyedali.daftarustadh.ui.ResultsStatusScreen
+import com.elyedali.daftarustadh.ui.StatsScreen
 import com.elyedali.daftarustadh.ui.KashfSettingsScreen
 import com.elyedali.daftarustadh.report.KashfSettings
 import com.elyedali.daftarustadh.report.ReportCalc
@@ -74,7 +75,7 @@ import java.util.UUID
 
 private const val TEACHER_NAME_KEY = "teacher_name"
 
-private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS }
+private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -289,6 +290,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
                     Screen.RESULTS -> BackHandler { screen = Screen.STUDENTS }
+                    Screen.STATS -> BackHandler { screen = Screen.HOME }
                     Screen.KASHF_SETTINGS -> BackHandler { screen = Screen.RESULTS }
                     Screen.GENERAL_REMARKS -> BackHandler { screen = Screen.KASHF_SETTINGS }
                     Screen.IMPORT -> BackHandler { screen = Screen.STUDENTS }
@@ -448,6 +450,17 @@ class MainActivity : AppCompatActivity() {
                         )
                     }
 
+                    screen == Screen.STATS && inst != null -> {
+                        val genderCounts by remember { studentDao.observeGenderCounts() }.collectAsState(initial = emptyList())
+                        StatsScreen(
+                            schoolName = inst.schoolName,
+                            schoolYear = inst.schoolYear,
+                            classes = managedClasses,
+                            genderCounts = genderCounts,
+                            onBack = { screen = Screen.HOME }
+                        )
+                    }
+
                     screen == Screen.KASHF_SETTINGS -> {
                         val ownLevels = inst?.let { i ->
                             val stages = when (i.stage) { Stage.COLLEGE -> listOf(Stage.COLLEGE); Stage.LYCEE -> listOf(Stage.LYCEE); else -> listOf(Stage.COLLEGE, Stage.LYCEE) }
@@ -509,6 +522,7 @@ class MainActivity : AppCompatActivity() {
                         onOpenTeaching = { screen = Screen.TEACHING },
                         onOpenFile = openFile,
                         onOpenRemarks = { screen = Screen.REMARKS },
+                        onOpenStats = { screen = Screen.STATS },
                         onLanguageSelected = { tag ->
                             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag))
                         }

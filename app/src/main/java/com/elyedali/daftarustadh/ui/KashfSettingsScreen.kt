@@ -48,10 +48,7 @@ fun KashfSettingsScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Text(stringResource(R.string.kashf_settings), style = MaterialTheme.typography.titleLarge)
-            }
+            ScreenHeader(stringResource(R.string.kashf_settings), onBack)
             OutlinedButton(onClick = onEditGeneralRemarks, modifier = Modifier.fillMaxWidth()) {
                 Text(stringResource(R.string.general_remarks))
             }

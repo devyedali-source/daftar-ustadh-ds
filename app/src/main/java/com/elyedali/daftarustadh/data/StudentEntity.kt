@@ -1,5 +1,6 @@
 package com.elyedali.daftarustadh.data
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
@@ -20,5 +21,23 @@ data class StudentEntity(
     val nationalId: String,     // الرقم الوطني
     val guardianPhone1: String, // هاتف الوكيل 1
     val guardianPhone2: String, // هاتف الوكيل 2
-    val createdAt: Long
+    val createdAt: Long,
+    /** الجنس: "M" ولد، "F" بنت، "" غير محدد. */
+    @ColumnInfo(defaultValue = "") val gender: String = ""
 )
+
+object Gender {
+    const val BOY = "M"
+    const val GIRL = "F"
+
+    /** يفهم الجنس كما يُكتب في ملفات Excel: ذكر/أنثى، M/F، G/F، Garçon/Fille... */
+    fun parse(text: String): String {
+        val t = text.trim().lowercase()
+        return when {
+            t.isEmpty() -> ""
+            t in setOf("ذ", "ذكر", "ولد", "m", "g", "h", "garçon", "garcon", "masculin", "homme", "male") -> BOY
+            t in setOf("أ", "ا", "أنثى", "انثى", "بنت", "f", "fille", "féminin", "feminin", "femme", "female") -> GIRL
+            else -> ""
+        }
+    }
+}

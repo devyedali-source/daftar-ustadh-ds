@@ -83,7 +83,7 @@ fun InstitutionScreen(
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(14.dp)
         ) {
-            Text(stringResource(R.string.institution_title), style = MaterialTheme.typography.headlineSmall)
+            ScreenHeader(stringResource(R.string.institution_title), onCancel)
 
             // الولاية
             ExposedDropdownMenuBox(expanded = wilayaMenu, onExpandedChange = { wilayaMenu = it }) {

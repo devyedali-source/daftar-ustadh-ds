@@ -179,4 +179,22 @@
     <string name="kashf_generating">جارٍ إنتاج الكشوف…</string>
     <string name="kashf_share">إرسال كشوف الدرجات</string>
     <string name="kashf_file_name">كشوف درجات %1$s - %2$s - Bulletins %1$s - %3$s - %4$s.pdf</string>
+    <string name="gender">الجنس</string>
+    <string name="boy">ولد</string>
+    <string name="girl">بنت</string>
+    <string name="statistics">الإحصائيات</string>
+    <string name="stat_classes">قسمًا</string>
+    <string name="stat_students">طالبًا</string>
+    <string name="stat_boys">ولدًا</string>
+    <string name="stat_girls">بنتًا</string>
+    <string name="stat_unknown_gender">%1$d طالبًا لم يُحدَّد جنسهم بعد</string>
+    <string name="stat_by_level">حسب المستوى</string>
+    <string name="stat_by_class">حسب القسم</string>
+    <string name="stat_n_classes">%1$d أقسام</string>
+    <string name="home_my_classes_desc">الأقسام التي تدرّسها، وإدراج النتائج وإرسالها</string>
+    <string name="home_open_file_desc">ملف قسم أو سجل أستاذ وصلك عبر الواتساب</string>
+    <string name="home_remarks_desc">اسمك في الطابع، وملاحظات المواد</string>
+    <string name="home_register_desc">الولاية، المؤسسة، نوعها، والسنة الدراسية</string>
+    <string name="home_classes_desc">الأقسام والطلاب، النتائج، والكشوف</string>
+    <string name="home_stats_desc">عدد الأقسام والطلاب، الأولاد والبنات</string>
 </resources>

@@ -35,10 +35,7 @@ fun TeachingClassesScreen(
 ) {
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Text(stringResource(R.string.my_classes), style = MaterialTheme.typography.titleLarge)
-            }
+            ScreenHeader(stringResource(R.string.my_classes), onBack)
             Button(onClick = onOpenFile, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.open_class_file)) }
             if (classes.isEmpty()) Text(stringResource(R.string.no_teaching_classes))
             LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {

@@ -100,10 +100,7 @@ fun ImportStudentsScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Text(stringResource(R.string.import_title, schoolClass.name), style = MaterialTheme.typography.titleLarge)
-            }
+            ScreenHeader(stringResource(R.string.import_title, schoolClass.name), onBack)
             when {
                 loading -> CircularProgressIndicator()
 
@@ -127,7 +124,7 @@ fun ImportStudentsScreen(
                                 Column(Modifier.weight(1f)) {
                                     if (s.nameAr.isNotBlank()) Text(s.nameAr)
                                     if (s.nameFr.isNotBlank()) Text(s.nameFr, style = MaterialTheme.typography.bodySmall)
-                                    val extra = listOf(s.rim, s.nationalId, s.guardianPhone1, s.guardianPhone2).filter { it.isNotBlank() }
+                                    val extra = listOf(genderLabel(s.gender), s.rim, s.nationalId, s.guardianPhone1, s.guardianPhone2).filter { it.isNotBlank() }
                                     if (extra.isNotEmpty()) Text(extra.joinToString(" · "), style = MaterialTheme.typography.bodySmall)
                                 }
                             }
@@ -206,6 +203,7 @@ private fun fieldLabel(f: StudentField): Int = when (f) {
     StudentField.ROLL -> R.string.roll_number
     StudentField.NAME_AR -> R.string.name_ar
     StudentField.NAME_FR -> R.string.name_fr
+    StudentField.GENDER -> R.string.gender
     StudentField.RIM -> R.string.rim
     StudentField.NATIONAL_ID -> R.string.national_id
     StudentField.PHONE1 -> R.string.guardian_phone_1

@@ -51,6 +51,24 @@ object DemoData {
         "عثمان محمد" to "Ousmane Mohamed", "أم كلثوم أحمد" to "Oumou Kelthoum Ahmed"
     )
 
+    private val GIRLS = setOf(
+        "آمنة سيدي محمد",
+        "أم كلثوم أحمد",
+        "السالكة محمد",
+        "النانه سيدي",
+        "توت أحمد",
+        "حواء عبد الله",
+        "خديجة محمد المختار",
+        "زينب محمد الأمين",
+        "عائشة أحمد بابه",
+        "فاطمة الزهراء محمد",
+        "فاطمة عبد الله أحمد",
+        "لاله محمد",
+        "مريم أحمد سالم",
+        "مريم الشيخ محمد",
+        "مريم سيدي أحمد"
+    )
+
     private suspend fun seed(context: Context, db: DaftarDatabase) {
         val now = System.currentTimeMillis()
         val rnd = Random(2026)
@@ -103,7 +121,8 @@ object DemoData {
                 nationalId = (1000000000L + rnd.nextLong(8999999999L)).toString(),
                 guardianPhone1 = listOf("2", "3", "4")[rnd.nextInt(3)] + (1000000 + rnd.nextInt(8999999)),
                 guardianPhone2 = if (rnd.nextBoolean()) "4" + (1000000 + rnd.nextInt(8999999)) else "",
-                createdAt = now
+                createdAt = now,
+                gender = if (ar in GIRLS) Gender.GIRL else Gender.BOY
             )
         }
         db.studentDao().saveAll(students)

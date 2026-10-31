@@ -179,4 +179,22 @@
     <string name="kashf_generating">Production des bulletins…</string>
     <string name="kashf_share">Envoyer les bulletins</string>
     <string name="kashf_file_name">كشوف درجات %1$s - %2$s - Bulletins %1$s - %3$s - %4$s.pdf</string>
+    <string name="gender">Sexe</string>
+    <string name="boy">Garçon</string>
+    <string name="girl">Fille</string>
+    <string name="statistics">Statistiques</string>
+    <string name="stat_classes">classes</string>
+    <string name="stat_students">élèves</string>
+    <string name="stat_boys">garçons</string>
+    <string name="stat_girls">filles</string>
+    <string name="stat_unknown_gender">%1$d élèves sans sexe renseigné</string>
+    <string name="stat_by_level">Par niveau</string>
+    <string name="stat_by_class">Par classe</string>
+    <string name="stat_n_classes">%1$d classes</string>
+    <string name="home_my_classes_desc">Vos classes : saisir et envoyer les notes</string>
+    <string name="home_open_file_desc">Fichier de classe ou relevé reçu par WhatsApp</string>
+    <string name="home_remarks_desc">Votre nom pour le cachet et les appréciations</string>
+    <string name="home_register_desc">Wilaya, établissement, type et année scolaire</string>
+    <string name="home_classes_desc">Classes et élèves, notes et bulletins</string>
+    <string name="home_stats_desc">Nombre de classes et d\'élèves, garçons et filles</string>
 </resources>

@@ -56,15 +56,10 @@ fun TeacherClassScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Column(Modifier.weight(1f)) {
-                    Text(schoolClass.name, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
-                    if (schoolName != null) Text(schoolName, style = MaterialTheme.typography.bodySmall)
-                    Text(stringResource(R.string.students_count, studentCount), style = MaterialTheme.typography.bodySmall)
-                }
-                TextButton(onClick = onShowStudents) { Text(stringResource(R.string.students_list)) }
-            }
+            ScreenHeader(
+                schoolClass.name, onBack,
+                listOfNotNull(schoolName, stringResource(R.string.students_count, studentCount))
+            ) { HeaderAction(stringResource(R.string.students_list), onShowStudents) }
             Text(stringResource(R.string.my_subjects_here), style = MaterialTheme.typography.titleMedium)
             if (mine.isEmpty()) {
                 Text(stringResource(R.string.choose_my_subjects_hint))

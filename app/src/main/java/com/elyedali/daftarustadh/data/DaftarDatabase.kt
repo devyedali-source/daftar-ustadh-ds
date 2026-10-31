@@ -16,7 +16,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 @Database(
     entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class,
         GradeEntity::class, TeacherSubjectEntity::class, SubjectRecordEntity::class],
-    version = 7,
+    version = 8,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -110,13 +110,20 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 7 → 8: جنس الطالب (للإحصائيات). */
+        private val MIGRATION_7_8 = object : Migration(7, 8) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `student` ADD COLUMN `gender` TEXT NOT NULL DEFAULT ''")
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8).build().also { instance = it }
             }
     }
 }

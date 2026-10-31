@@ -36,6 +36,7 @@ import androidx.compose.ui.unit.dp
 import com.elyedali.daftarustadh.R
 import com.elyedali.daftarustadh.data.ClassEntity
 import com.elyedali.daftarustadh.data.StudentEntity
+import com.elyedali.daftarustadh.data.Gender
 import java.util.UUID
 
 /** طلاب القسم: لائحة، إضافة، تعديل، حذف بالرمز 9999، واستيراد من Excel. */
@@ -61,15 +62,10 @@ fun StudentsScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Column(Modifier.weight(1f)) {
-                    Text(schoolClass.name, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
-                    if (subtitle != null) Text(subtitle, style = MaterialTheme.typography.bodySmall)
-                    Text(stringResource(R.string.students_count, students.size), style = MaterialTheme.typography.bodySmall)
-                }
-                TextButton(onClick = onShowSubjects) { Text(stringResource(R.string.subjects)) }
-            }
+            ScreenHeader(
+                schoolClass.name, onBack,
+                listOfNotNull(subtitle, stringResource(R.string.students_count, students.size))
+            ) { HeaderAction(stringResource(R.string.subjects), onShowSubjects) }
             if (!readOnly) {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     Button(onClick = { adding = true }, modifier = Modifier.weight(1f)) { Text("+  " + stringResource(R.string.add_student)) }
@@ -118,7 +114,11 @@ fun StudentsScreen(
                             if (s.nameAr.isNotBlank()) Text(s.nameAr)
                             if (s.nameFr.isNotBlank()) Text(s.nameFr, style = MaterialTheme.typography.bodySmall)
                         }
-                        if (s.rim.isNotBlank()) Text(s.rim, style = MaterialTheme.typography.bodySmall)
+                        Column(horizontalAlignment = Alignment.End) {
+                            if (s.gender.isNotBlank()) Text(genderLabel(s.gender), style = MaterialTheme.typography.labelSmall,
+                                color = if (s.gender == Gender.GIRL) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.primary)
+                            if (s.rim.isNotBlank()) Text(s.rim, style = MaterialTheme.typography.bodySmall)
+                        }
                     }
                     HorizontalDivider()
                 }
@@ -163,6 +163,7 @@ private fun StudentEditDialog(
     var nationalId by remember { mutableStateOf(existing?.nationalId ?: "") }
     var phone1 by remember { mutableStateOf(existing?.guardianPhone1 ?: "") }
     var phone2 by remember { mutableStateOf(existing?.guardianPhone2 ?: "") }
+    var gender by remember { mutableStateOf(existing?.gender ?: "") }
 
     val rollNumber = roll.toIntOrNull()
     val rollTaken = rollNumber != null && others.any { it.rollNumber == rollNumber }
@@ -181,6 +182,13 @@ private fun StudentEditDialog(
                     modifier = Modifier.fillMaxWidth())
                 OutlinedTextField(nameAr, { nameAr = it }, label = { Text(stringResource(R.string.name_ar)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
                 OutlinedTextField(nameFr, { nameFr = it }, label = { Text(stringResource(R.string.name_fr)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text(stringResource(R.string.gender))
+                    androidx.compose.material3.FilterChip(selected = gender == Gender.BOY, onClick = { gender = if (gender == Gender.BOY) "" else Gender.BOY },
+                        label = { Text(stringResource(R.string.boy)) })
+                    androidx.compose.material3.FilterChip(selected = gender == Gender.GIRL, onClick = { gender = if (gender == Gender.GIRL) "" else Gender.GIRL },
+                        label = { Text(stringResource(R.string.girl)) })
+                }
                 OutlinedTextField(rim, { rim = it.trim() }, label = { Text(stringResource(R.string.rim)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
                 OutlinedTextField(nationalId, { nationalId = it.filter(Char::isDigit) }, label = { Text(stringResource(R.string.national_id)) }, singleLine = true, keyboardOptions = digits, modifier = Modifier.fillMaxWidth())
                 OutlinedTextField(phone1, { phone1 = it.filter { c -> c.isDigit() || c == '+' || c == ' ' } }, label = { Text(stringResource(R.string.guardian_phone_1)) }, singleLine = true, keyboardOptions = phone, modifier = Modifier.fillMaxWidth())
@@ -203,11 +211,19 @@ private fun StudentEditDialog(
                         nationalId = nationalId.trim(),
                         guardianPhone1 = phone1.trim(),
                         guardianPhone2 = phone2.trim(),
-                        createdAt = existing?.createdAt ?: System.currentTimeMillis()
+                        createdAt = existing?.createdAt ?: System.currentTimeMillis(),
+                        gender = gender
                     )
                 )
             }) { Text(stringResource(R.string.save)) }
         },
         dismissButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.cancel)) } }
     )
+}
+
+@Composable
+fun genderLabel(g: String): String = when (g) {
+    Gender.BOY -> stringResource(R.string.boy)
+    Gender.GIRL -> stringResource(R.string.girl)
+    else -> ""
 }

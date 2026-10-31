@@ -15,6 +15,10 @@ interface StudentDao {
     @Query("SELECT * FROM student WHERE classId = :classId")
     suspend fun listByClass(classId: String): List<StudentEntity>
 
+    /** عدد الطلاب لكل قسم وجنس، للإحصائيات. */
+    @Query("SELECT classId, gender, COUNT(*) AS count FROM student GROUP BY classId, gender")
+    fun observeGenderCounts(): Flow<List<ClassGenderCount>>
+
     @Query("SELECT * FROM student WHERE id = :id")
     suspend fun getById(id: String): StudentEntity?
 
@@ -30,3 +34,5 @@ interface StudentDao {
     @Query("DELETE FROM student WHERE classId = :classId")
     suspend fun deleteByClass(classId: String)
 }
+
+data class ClassGenderCount(val classId: String, val gender: String, val count: Int)

@@ -67,13 +67,7 @@ fun ResultsStatusScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Column(Modifier.weight(1f)) {
-                    Text(stringResource(R.string.class_results_title, schoolClass.name), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
-                    Text(stringResource(R.string.students_count, students.size), style = MaterialTheme.typography.bodySmall)
-                }
-            }
+            ScreenHeader(stringResource(R.string.class_results_title, schoolClass.name), onBack, listOf(stringResource(R.string.students_count, students.size)))
             TabRow(selectedTabIndex = term - 1) {
                 listOf(R.string.term_1, R.string.term_2, R.string.term_3).forEachIndexed { i, res ->
                     Tab(selected = term == i + 1, onClick = { term = i + 1 }, text = { Text(stringResource(res)) })

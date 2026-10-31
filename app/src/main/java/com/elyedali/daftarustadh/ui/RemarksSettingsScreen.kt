@@ -60,10 +60,7 @@ fun RemarksSettingsScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Text(title ?: stringResource(R.string.remarks_settings), style = MaterialTheme.typography.titleLarge)
-            }
+            ScreenHeader(title ?: stringResource(R.string.remarks_settings), onBack)
             if (teacherName != null) OutlinedTextField(
                 name.value, { name.value = it },
                 label = { Text(stringResource(R.string.teacher_name)) },

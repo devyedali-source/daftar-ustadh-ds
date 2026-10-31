@@ -53,6 +53,7 @@ object ClassFileCodec {
                     if (file.type == ClassFileType.FULL) {
                         o.put("rim", s.rim).put("nationalId", s.nationalId)
                             .put("phone1", s.guardianPhone1).put("phone2", s.guardianPhone2)
+                            .put("gender", s.gender)
                     }
                     put(o)
                 }
@@ -105,7 +106,8 @@ object ClassFileCodec {
                     nationalId = s.optString("nationalId"),
                     guardianPhone1 = s.optString("phone1"),
                     guardianPhone2 = s.optString("phone2"),
-                    createdAt = now
+                    createdAt = now,
+                    gender = s.optString("gender")
                 )
             }
             return ClassFile(type, institution, schoolClass, students)

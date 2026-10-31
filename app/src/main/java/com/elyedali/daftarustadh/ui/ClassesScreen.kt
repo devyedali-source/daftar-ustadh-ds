@@ -63,13 +63,7 @@ fun ClassesScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Column(Modifier.weight(1f)) {
-                    Text(stringResource(R.string.classes_title), style = MaterialTheme.typography.titleLarge)
-                    Text("${institution.schoolName} — ${institution.schoolYear}", style = MaterialTheme.typography.bodySmall)
-                }
-            }
+            ScreenHeader(stringResource(R.string.classes_title), onBack, listOf(institution.schoolName, institution.schoolYear))
             Button(onClick = { showCreate = true }, modifier = Modifier.fillMaxWidth()) {
                 Text("+  " + stringResource(R.string.create_class))
             }

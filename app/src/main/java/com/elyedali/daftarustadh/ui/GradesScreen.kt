@@ -78,14 +78,10 @@ fun GradesScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(horizontal = 12.dp, vertical = 8.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Column(Modifier.weight(1f)) {
-                    Text(if (isFr) subject.nameFr else subject.nameAr, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-                    Text("${schoolClass.name} — ${stringResource(R.string.coefficient)} ${subject.coefficient}", style = MaterialTheme.typography.bodySmall)
-                }
-                TextButton(onClick = onPrintRecord) { Text(stringResource(R.string.print_record)) }
-            }
+            ScreenHeader(
+                if (isFr) subject.nameFr else subject.nameAr, onBack,
+                listOf("${schoolClass.name} — ${stringResource(R.string.coefficient)} ${subject.coefficient}")
+            ) { HeaderAction(stringResource(R.string.print_record), onPrintRecord) }
             if (onSendRecord != null) {
                 androidx.compose.material3.Button(onClick = onSendRecord, modifier = Modifier.fillMaxWidth()) {
                     Text(stringResource(R.string.send_record))

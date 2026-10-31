@@ -4,7 +4,7 @@ import com.elyedali.daftarustadh.data.StudentEntity
 import java.util.UUID
 
 /** الخانة التي يُربط بها عمود من أعمدة الملف. */
-enum class StudentField { IGNORE, ROLL, NAME_AR, NAME_FR, RIM, NATIONAL_ID, PHONE1, PHONE2 }
+enum class StudentField { IGNORE, ROLL, NAME_AR, NAME_FR, GENDER, RIM, NATIONAL_ID, PHONE1, PHONE2 }
 
 data class ImportColumn(val index: Int, val header: String?, val samples: List<String>)
 
@@ -38,6 +38,7 @@ object StudentImport {
         if (h.isEmpty()) return null
         fun any(vararg k: String) = k.any { h == it || h.contains(it) }
         return when {
+            any("الجنس", "جنس", "sexe", "genre", "sex") -> StudentField.GENDER
             any("الرقم الوطني", "رقم وطني", "nni", "national") -> StudentField.NATIONAL_ID
             any("الرقم المدرسي", "رقم مدرسي", "رقم التسجيل", "matricule", "rim") -> StudentField.RIM
             any("رقم النداء", "النداء", "ordre", "n ordre") || h == "n" || h == "no" || h == "num" || h == "رقم" || h == "ر ت" -> StudentField.ROLL
@@ -53,6 +54,7 @@ object StudentImport {
     private fun fieldFromContent(values: List<String>): StudentField {
         val v = values.filter { it.isNotBlank() }
         if (v.isEmpty()) return StudentField.IGNORE
+        if (v.all { com.elyedali.daftarustadh.data.Gender.parse(it).isNotEmpty() }) return StudentField.GENDER
         val ar = v.count { hasArabic(it) }
         val la = v.count { hasLatin(it) && !hasArabic(it) }
         if (ar * 2 >= v.size) return StudentField.NAME_AR
@@ -117,6 +119,7 @@ object StudentImport {
         val cRoll = col(StudentField.ROLL); val cAr = col(StudentField.NAME_AR); val cFr = col(StudentField.NAME_FR)
         val cRim = col(StudentField.RIM); val cNat = col(StudentField.NATIONAL_ID)
         val cP1 = col(StudentField.PHONE1); val cP2 = col(StudentField.PHONE2)
+        val cGender = col(StudentField.GENDER)
         fun cell(r: List<String>, c: Int?) = c?.let { r.getOrNull(it) }?.trim() ?: ""
 
         val usedRolls = existing.map { it.rollNumber }.toHashSet()
@@ -153,7 +156,8 @@ object StudentImport {
                     nationalId = cell(r, cNat),
                     guardianPhone1 = cell(r, cP1),
                     guardianPhone2 = cell(r, cP2),
-                    createdAt = now
+                    createdAt = now,
+                    gender = com.elyedali.daftarustadh.data.Gender.parse(cell(r, cGender))
                 )
             )
         }
