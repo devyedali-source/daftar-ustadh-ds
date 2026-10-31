@@ -238,4 +238,5 @@
     <string name="leg_next">Suivant</string>
     <string name="leg_copy">Copier</string>
     <string name="leg_copied">Texte copié</string>
+    <string name="no_browser">Aucun navigateur pour ouvrir le site Koutoubi.</string>
 </resources>

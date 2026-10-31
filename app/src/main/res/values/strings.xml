@@ -238,4 +238,5 @@
     <string name="leg_next">التالية</string>
     <string name="leg_copy">نسخ</string>
     <string name="leg_copied">نُسخ النص</string>
+    <string name="no_browser">لا يوجد متصفح على الهاتف لفتح موقع كتبي.</string>
 </resources>

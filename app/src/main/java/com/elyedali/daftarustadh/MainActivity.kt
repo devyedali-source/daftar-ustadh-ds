@@ -371,7 +371,10 @@ class MainActivity : AppCompatActivity() {
                                 NavigationDrawerItem(
                                     label = { androidx.compose.material3.Text(stringResource(res)) },
                                     selected = screen == target,
-                                    onClick = { screen = target; scope.launch { drawerState.close() } },
+                                    onClick = {
+                                        if (target == Screen.BOOKS) openKoutoubi() else screen = target
+                                        scope.launch { drawerState.close() }
+                                    },
                                     modifier = androidx.compose.ui.Modifier.padding(horizontal = 12.dp)
                                 )
                             }
@@ -448,7 +451,7 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = Screen.HOME }
                     )
 
-                    screen == Screen.EXCHANGES || screen == Screen.BOOKS -> {
+                    screen == Screen.EXCHANGES -> {
                         val title = stringResource(when (screen) {
                             Screen.LEGISLATION -> R.string.menu_legislation
                             Screen.EXCHANGES -> R.string.menu_exchanges
@@ -883,5 +886,19 @@ class MainActivity : AppCompatActivity() {
             else -> null
         }
         if (uri != null) incomingFile.value = uri
+    }
+
+    /** «كتبي»: يفتح موقع كتبي في متصفح الهاتف خارج التطبيق. */
+    private fun openKoutoubi() {
+        val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse(KOUTOUBI_URL))
+        try {
+            startActivity(intent)
+        } catch (e: android.content.ActivityNotFoundException) {
+            android.widget.Toast.makeText(this, getString(R.string.no_browser), android.widget.Toast.LENGTH_LONG).show()
+        }
+    }
+
+    companion object {
+        const val KOUTOUBI_URL = "https://koutoubi.mr/"
     }
 }
