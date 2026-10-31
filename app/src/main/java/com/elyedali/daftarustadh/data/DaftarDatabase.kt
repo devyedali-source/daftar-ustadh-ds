@@ -14,14 +14,15 @@ import androidx.sqlite.db.SupportSQLiteDatabase
  * كل تغيير في الجداول يكون بترقية (Migration) تحفظ بيانات المستخدم.
  */
 @Database(
-    entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class],
-    version = 3,
+    entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class],
+    version = 4,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
     abstract fun appMetaDao(): AppMetaDao
     abstract fun institutionDao(): InstitutionDao
     abstract fun classDao(): ClassDao
+    abstract fun studentDao(): StudentDao
 
     companion object {
         @Volatile private var instance: DaftarDatabase? = null
@@ -54,13 +55,27 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 3 → 4: إضافة جدول الطلاب. */
+        private val MIGRATION_3_4 = object : Migration(3, 4) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `student` (" +
+                        "`id` TEXT NOT NULL, `classId` TEXT NOT NULL, `rollNumber` INTEGER NOT NULL, " +
+                        "`nameAr` TEXT NOT NULL, `nameFr` TEXT NOT NULL, `rim` TEXT NOT NULL, " +
+                        "`nationalId` TEXT NOT NULL, `guardianPhone1` TEXT NOT NULL, " +
+                        "`guardianPhone2` TEXT NOT NULL, `createdAt` INTEGER NOT NULL, PRIMARY KEY(`id`))"
+                )
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_student_classId` ON `student` (`classId`)")
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4).build().also { instance = it }
             }
     }
 }

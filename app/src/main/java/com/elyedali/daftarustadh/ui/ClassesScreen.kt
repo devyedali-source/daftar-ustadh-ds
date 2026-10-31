@@ -52,12 +52,12 @@ fun ClassesScreen(
     institution: InstitutionEntity,
     classes: List<ClassEntity>,
     onCreate: (levelCode: String, number: Int, onResult: (Boolean) -> Unit) -> Unit,
+    onOpen: (ClassEntity) -> Unit,
     onDelete: (ClassEntity) -> Unit,
     onBack: () -> Unit
 ) {
     val context = LocalContext.current
     var showCreate by remember { mutableStateOf(false) }
-    var shown by remember { mutableStateOf<ClassEntity?>(null) }
     var toDelete by remember { mutableStateOf<ClassEntity?>(null) }
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -78,7 +78,7 @@ fun ClassesScreen(
             LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 items(classes, key = { it.id }) { c ->
                     val level = CurriculumRepository.level(context, c.schoolYear, c.levelCode)
-                    Card(Modifier.fillMaxWidth().clickable { shown = c }) {
+                    Card(Modifier.fillMaxWidth().clickable { onOpen(c) }) {
                         Row(Modifier.padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
                             Column(Modifier.weight(1f)) {
                                 Text(c.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
@@ -106,7 +106,6 @@ fun ClassesScreen(
             onDismiss = { showCreate = false }
         )
     }
-    shown?.let { c -> ClassSubjectsDialog(c) { shown = null } }
     toDelete?.let { c ->
         SensitiveConfirmDialog(
             title = stringResource(R.string.delete_class_title, c.name),
@@ -201,7 +200,7 @@ private fun CreateClassDialog(
 }
 
 @Composable
-private fun ClassSubjectsDialog(c: ClassEntity, onDismiss: () -> Unit) {
+fun ClassSubjectsDialog(c: ClassEntity, onDismiss: () -> Unit) {
     val context = LocalContext.current
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
     val level = remember(c) { CurriculumRepository.level(context, c.schoolYear, c.levelCode) }
