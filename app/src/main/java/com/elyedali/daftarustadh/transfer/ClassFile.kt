@@ -116,9 +116,19 @@ object ClassFileCodec {
         }
     }
 
-    /** اسم ملف بحروف لاتينية فقط حتى لا يتشوّه في الواتساب. */
+    /**
+     * اسم ملف كامل بالعربية والفرنسية حتى يفهمه المتلقي في الواتساب، مثل:
+     * «ملف القسم 1AS1 للأساتذة - Fichier de la classe 1AS1 pour les enseignants - إعدادية البنات - 2026-2027.dsq»
+     */
     fun fileName(file: ClassFile): String {
-        val suffix = if (file.type == ClassFileType.FULL) "_complet" else ""
-        return "DS_${file.schoolClass.levelCode}${file.schoolClass.number}_${file.schoolClass.schoolYear}$suffix.dsq"
+        val c = "${file.schoolClass.levelCode}${file.schoolClass.number}"
+        val title = when (file.type) {
+            ClassFileType.TEACHER -> "ملف القسم $c للأساتذة - Fichier de la classe $c pour les enseignants"
+            ClassFileType.FULL -> "ملف معلومات القسم $c الكامل - Fichier complet de la classe $c"
+        }
+        val raw = "$title - ${file.institution.schoolName} - ${file.schoolClass.schoolYear}"
+        // حذف الحروف الممنوعة في أسماء الملفات، وتقصير الاسم الطويل جدًا
+        val safe = raw.replace(Regex("""[\\/:*?"<>|\r\n\t]"""), " ").replace(Regex("\\s+"), " ").trim().take(150)
+        return "$safe.dsq"
     }
 }
