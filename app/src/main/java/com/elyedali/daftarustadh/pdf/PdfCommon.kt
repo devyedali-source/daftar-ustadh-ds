@@ -15,18 +15,18 @@ object PdfCommon {
     const val HEADER = 82f
 
     /** الرأسية الرسمية: العربية يمينًا، الفرنسية يسارًا، والشعار في الوسط. */
-    fun drawOfficialHeader(c: Canvas, seal: Bitmap?) {
+    fun drawOfficialHeader(c: Canvas, seal: Bitmap?, pageW: Float = W) {
         val sealSize = 72f
-        val col = (W - 2 * M - sealSize - 16f) / 2f
+        val col = (pageW - 2 * M - sealSize - 16f) / 2f
         val lineH = 15f
         OfficialHeader.AR.forEachIndexed { i, t ->
-            PdfText.draw(c, t, W - M - col, M + i * lineH, col, lineH, 9.5f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
+            PdfText.draw(c, t, pageW - M - col, M + i * lineH, col, lineH, 9.5f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
         }
         OfficialHeader.FR.forEachIndexed { i, t ->
             PdfText.draw(c, t, M, M + i * lineH, col, lineH, 9f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
         }
         seal?.let { bmp ->
-            val left = (W - sealSize) / 2f
+            val left = (pageW - sealSize) / 2f
             c.drawBitmap(bmp, null, RectF(left, M, left + sealSize, M + sealSize), Paint(Paint.ANTI_ALIAS_FLAG or Paint.FILTER_BITMAP_FLAG))
         }
     }

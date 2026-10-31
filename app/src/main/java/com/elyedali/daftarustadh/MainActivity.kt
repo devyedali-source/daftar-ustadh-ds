@@ -124,7 +124,6 @@ class MainActivity : AppCompatActivity() {
         val gradeDao = db.gradeDao()
         val documentDao = db.documentDao()
         val absenceDao = db.absenceDao()
-        val textbookDao = db.textbookDao()
         val absenceImporter = com.elyedali.daftarustadh.transfer.AbsenceImporter(db)
         val metaDao = db.appMetaDao()
         val importer = ClassFileImporter(db)
@@ -169,8 +168,6 @@ class MainActivity : AppCompatActivity() {
                 val absenceSessions by absenceSessionsFlow.collectAsState(initial = emptyList())
                 val absencesFlow = remember(classId) { classId?.let { absenceDao.observeAbsences(it) } ?: flowOf(emptyList()) }
                 val absences by absencesFlow.collectAsState(initial = emptyList())
-                val textbookFlow = remember(classId) { classId?.let { textbookDao.observeByClass(it) } ?: flowOf(emptyList()) }
-                val textbookEntries by textbookFlow.collectAsState(initial = emptyList())
                 val recordsFlow = remember(classId) { classId?.let { gradeDao.observeRecords(it) } ?: flowOf(emptyList()) }
                 val records by recordsFlow.collectAsState(initial = emptyList())
                 val classGradesFlow = remember(classId) { classId?.let { gradeDao.observeClass(it) } ?: flowOf(emptyList()) }
@@ -293,6 +290,30 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 var askNameAbsence by remember { mutableStateOf(false) }
+
+                /** سحب دفتر النصوص فارغًا (PDF) لملئه باليد — للإدارة. */
+                fun printTextbook(c: ClassEntity, pages: Int) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
+                        val info = com.elyedali.daftarustadh.pdf.TextbookPdf.Info(
+                            title = "دفتر النصوص — Cahier de textes",
+                            lineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069",
+                            lineFr = "Établissement : ${owner.schoolName} — Wilaya : $wilayaFr — Classe : ${c.name} — Année scolaire : ${c.schoolYear}",
+                            shortLine = "دفتر النصوص — Cahier de textes — \u2066${c.name}\u2069 — \u2066${c.schoolYear}\u2069",
+                            headers = listOf(
+                                "التاريخ\nDate", "التوقيت\nHoraire", "المادة\nMatière", "المجال\nDomaine",
+                                "الموضوع\nSujet", "المدة\nDurée", "التوقيع\nSignature"
+                            ),
+                            page = { p, n -> "صفحة $p من $n — Page $p / $n" },
+                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                        )
+                        val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.TextbookPdf.build(pages, info) }
+                        val name = "دفتر النصوص - Cahier de textes - ${c.name} - ${owner.schoolName} - ${c.schoolYear}.pdf"
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.tb_print), "application/pdf")
+                    }
+                }
 
                 /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
                 fun printRecord(c: ClassEntity, code: String, name: String, blank: Boolean = false) {
@@ -462,7 +483,6 @@ class MainActivity : AppCompatActivity() {
                                 studentDao.deleteByClass(c.id)
                                 absenceDao.deleteAbsencesByClass(c.id)
                                 absenceDao.deleteSessionsByClass(c.id)
-                                textbookDao.deleteByClass(c.id)
                                 classDao.delete(c)
                             }
                         },
@@ -590,13 +610,7 @@ class MainActivity : AppCompatActivity() {
                                     onUpload = openFile,
                                     onChooseSubjects = null
                                 )
-                                3 -> TextbookTab(
-                                    classId = c.id,
-                                    subjects = subjects.map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
-                                    entries = textbookEntries,
-                                    onSave = { e -> scope.launch { textbookDao.save(e) } },
-                                    onDelete = { e -> scope.launch { textbookDao.delete(e) } }
-                                )
+                                3 -> TextbookTab(onPrint = { pages -> printTextbook(c, pages) })
                                 4 -> {
                                     val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
                                     KashfTab(
