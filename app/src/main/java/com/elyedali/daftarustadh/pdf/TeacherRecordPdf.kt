@@ -1,5 +1,6 @@
 package com.elyedali.daftarustadh.pdf
 
+import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.RectF
@@ -39,7 +40,8 @@ object TeacherRecordPdf {
         val gradeHeaders: List<String>, // 6 عناوين: اختبار ف1، امتحان ف1، ...
         val signature: String,
         val stampLines: List<String>,
-        val page: (Int, Int) -> String
+        val page: (Int, Int) -> String,
+        val seal: Bitmap? = null        // شعار الجمهورية في وسط الرأسية
     )
 
     fun build(students: List<StudentEntity>, labels: Labels): ByteArray {
@@ -92,13 +94,19 @@ object TeacherRecordPdf {
     }
 
     private fun drawHeader(c: Canvas, l: Labels) {
-        val half = (W - 2 * M) / 2f
+        val sealSize = 72f
+        val col = (W - 2 * M - sealSize - 16f) / 2f
         val lineH = 15f
         l.headerAr.forEachIndexed { i, t ->
-            PdfText.draw(c, t, M + half, M + i * lineH, half, lineH, 9.5f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
+            PdfText.draw(c, t, W - M - col, M + i * lineH, col, lineH, 9.5f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
         }
         l.headerFr.forEachIndexed { i, t ->
-            PdfText.draw(c, t, M, M + i * lineH, half, lineH, 9.5f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
+            PdfText.draw(c, t, M, M + i * lineH, col, lineH, 9f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
+        }
+        l.seal?.let { bmp ->
+            val left = (W - sealSize) / 2f
+            val paint = Paint(Paint.ANTI_ALIAS_FLAG or Paint.FILTER_BITMAP_FLAG)
+            c.drawBitmap(bmp, null, RectF(left, M, left + sealSize, M + sealSize), paint)
         }
     }
 

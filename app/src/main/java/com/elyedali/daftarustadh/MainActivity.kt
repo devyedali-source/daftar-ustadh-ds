@@ -140,7 +140,8 @@ class MainActivity : AppCompatActivity() {
                             gradeHeaders = (1..3).flatMap { t -> listOf(getString(R.string.rec_test, t), getString(R.string.rec_exam, t)) },
                             signature = getString(R.string.rec_signature),
                             stampLines = listOf(name, getString(R.string.rec_stamp_subject, subjectName)),
-                            page = { p, n -> getString(R.string.rec_page, p, n) }
+                            page = { p, n -> getString(R.string.rec_page, p, n) },
+                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
                         )
                         val bytes = withContext(Dispatchers.Default) { TeacherRecordPdf.build(list, labels) }
                         val fileName = getString(R.string.rec_file_name, subject.nameAr, c.name, subject.nameFr, c.schoolYear)
