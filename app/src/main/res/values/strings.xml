@@ -272,8 +272,6 @@
     <string name="ex_no_results_hint">حاول تغيير شروط الفلترة أو استخدم «استمارة الإعلان» لإضافة عرضك الخاص.</string>
     <string name="ex_specialty_line">التخصص: %1$s</string>
     <string name="ex_moughataa_badge">مقاطعي</string>
-    <string name="ex_published_badge">منشور</string>
-    <string name="ex_not_published_badge">لم يُنشر بعد</string>
     <string name="ex_price_negotiable">المقابل المالي: للنقاش في الخاص</string>
     <string name="ex_price_amount">المقابل المالي: %1$s أوقية</string>
     <string name="ex_current_place">مكان العمل الحالي:</string>
@@ -365,4 +363,16 @@
     <string name="tb_pages">عدد الصفحات:</string>
     <string name="tb_pages_n">%1$d صفحة</string>
     <string name="tb_print">سحب دفتر النصوص فارغًا</string>
+    <string name="ex_published_badge">مفعّل للعامة</string>
+    <string name="ex_not_published_badge">غير مفعّل</string>
+    <string name="ex_act_title">تواصل مع الإدارة لنشر إعلانك</string>
+    <string name="ex_act_price">سعر نشر الإعلان: %1$d أوقية جديدة</string>
+    <string name="ex_act_note">ملاحظة: تم حفظ إعلانك، ولن يظهر للعامة إلا بعد تفعيله من طرف الإدارة.</string>
+    <string name="ex_act_press">اضغط على الزر أدناه لإرسال طلب تفعيل الإعلان رقم (#%1$s) مباشرة عبر واتساب الإدارة:</string>
+    <string name="ex_act_whatsapp">تواصل عبر واتساب الإدارة</string>
+    <string name="ex_close">إغلاق</string>
+    <string name="ex_act_not_active">إعلان غير مفعل للعامة بعد</string>
+    <string name="ex_act_banner">سعر نشر الإعلان %1$d أوقية جديدة. تواصل مع الإدارة لتفعيل المنشور.</string>
+    <string name="ex_act_button">تفعيل 💬</string>
+    <string name="ex_act_message">أريد نشر وتفعيل إعلان تبادل بين جمهور الأساتذة (تطبيق دفتر الأستاذ DS).\n🔑 رقم الإعلان (كود الإعلان):\n%1$s</string>
 </resources>

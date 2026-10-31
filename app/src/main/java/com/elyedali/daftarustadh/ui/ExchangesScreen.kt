@@ -129,6 +129,8 @@ fun ExchangesScreen(
     val publishedMsg = stringResource(R.string.ex_published)
     val savedLocalMsg = stringResource(R.string.ex_saved_local)
 
+    var activationFor by remember { mutableStateOf<ExchangeAd?>(null) }
+
     // يحفظ المنشور على الهاتف ثم يحاول إرساله إلى الخادم.
     val savePost: (ExchangeAd) -> Unit = { ad ->
         scope.launch {
@@ -170,11 +172,65 @@ fun ExchangesScreen(
             when (tab) {
                 0 -> OffersTab(wilayas, specialties, labels, myPosts, repository, onDelete = deletePost)
                 1 -> ExchangeForm(wilayas, specialties, existing = null, ownerId = ownerId,
-                    defaults = myPosts.firstOrNull()) { ad -> savePost(ad); tab = 2 }
+                    defaults = myPosts.firstOrNull()) { ad -> savePost(ad); tab = 2; activationFor = ad }
                 else -> MyPostsTab(wilayas, specialties, labels, myPosts, ownerId, onSave = savePost, onDelete = deletePost)
             }
         }
     }
+    activationFor?.let { ad -> ActivationDialog(ad) { activationFor = null } }
+}
+
+/** يفتح واتساب الإدارة برسالة طلب تفعيل الإعلان (كما في دفتر المعلم). */
+fun sendExchangeActivation(context: android.content.Context, ad: ExchangeAd, message: String) {
+    val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.exchange.ExchangeActivation.ADMIN_PHONE}&text=" + Uri.encode(message))
+    try {
+        context.startActivity(Intent(Intent.ACTION_VIEW, uri))
+    } catch (e: Exception) {
+        Toast.makeText(context, context.getString(R.string.ex_no_whatsapp), Toast.LENGTH_SHORT).show()
+    }
+}
+
+@Composable
+private fun activationMessage(ad: ExchangeAd): String = stringResource(R.string.ex_act_message, ad.code)
+
+/** بعد نشر الإعلان: السعر، وملاحظة أنه لا يظهر للعامة إلا بعد التفعيل، وزر واتساب الإدارة. */
+@Composable
+private fun ActivationDialog(ad: ExchangeAd, onDismiss: () -> Unit) {
+    val context = LocalContext.current
+    val message = activationMessage(ad)
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = {
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text("📢", fontSize = 24.sp)
+                Text(stringResource(R.string.ex_act_title), fontWeight = FontWeight.Bold, fontSize = 17.sp, color = Color(0xFF1B5E20))
+            }
+        },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Card(
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF8E1)),
+                    border = BorderStroke(1.dp, Color(0xFFFFB300)), shape = RoundedCornerShape(12.dp),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        Text("🏷️ " + stringResource(R.string.ex_act_price, com.elyedali.daftarustadh.exchange.ExchangeActivation.PRICE_MRU),
+                            fontWeight = FontWeight.ExtraBold, fontSize = 15.sp, color = Color(0xFFE65100))
+                        Text(stringResource(R.string.ex_act_note), fontSize = 12.sp, color = Color(0xFF5D4037))
+                    }
+                }
+                Text(stringResource(R.string.ex_act_press, ad.code), fontSize = 13.sp, color = Color.DarkGray)
+            }
+        },
+        confirmButton = {
+            Button(
+                onClick = { sendExchangeActivation(context, ad, message); onDismiss() },
+                colors = ButtonDefaults.buttonColors(containerColor = WhatsAppGreen), shape = RoundedCornerShape(12.dp)
+            ) { Text("💬 " + stringResource(R.string.ex_act_whatsapp), fontWeight = FontWeight.Bold, color = Color.White) }
+        },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.ex_close), color = Color.Gray) } },
+        shape = RoundedCornerShape(20.dp)
+    )
 }
 
 @Composable
@@ -226,7 +282,9 @@ private fun OffersTab(
         (myPosts + remote.filter { r -> myPosts.none { it.id == r.id } }).sortedByDescending { it.createdAt }
     }
     val myIds = remember(myPosts) { myPosts.map { it.id }.toSet() }
+    // العروض العامة: الإعلانات المفعّلة فقط (كما في دفتر المعلم)
     val filtered = all.filter { ad ->
+        ad.isApproved &&
         (specialtyFilter == null || specialtyFilter in ad.specialties) &&
             (typeFilter == null || ad.offerType == typeFilter) &&
             (roleFilter == null || ad.role == roleFilter) &&
@@ -395,6 +453,30 @@ private fun ExchangeOfferCard(
         elevation = CardDefaults.cardElevation(1.dp)
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            if (isMine && !ad.isApproved) {
+                val context = LocalContext.current
+                val message = activationMessage(ad)
+                Card(
+                    Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF8E1)),
+                    border = BorderStroke(1.dp, Color(0xFFFFB300))
+                ) {
+                    Row(Modifier.padding(10.dp), verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Column(Modifier.weight(1f)) {
+                            Text("⏳ " + stringResource(R.string.ex_act_not_active), color = Color(0xFFE65100),
+                                fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                            Text(stringResource(R.string.ex_act_banner, com.elyedali.daftarustadh.exchange.ExchangeActivation.PRICE_MRU),
+                                color = Color(0xFF5D4037), fontSize = 11.sp, lineHeight = 15.sp)
+                        }
+                        Button(
+                            onClick = { sendExchangeActivation(context, ad, message) },
+                            colors = ButtonDefaults.buttonColors(containerColor = WhatsAppGreen),
+                            shape = RoundedCornerShape(8.dp), contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp)
+                        ) { Text(stringResource(R.string.ex_act_button), color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Bold) }
+                    }
+                }
+            }
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.Top) {
                 Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Text("👨‍🏫 " + exchangeRoleLabel(ad.role), fontWeight = FontWeight.Bold, fontSize = 14.sp)
@@ -407,9 +489,9 @@ private fun ExchangeOfferCard(
                 Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Badge(offerTypeIcon(ad.offerType) + " " + offerTypeLabel(ad.offerType), badgeBg, badgeFg)
                     if (isMine) Badge(
-                        if (ad.isSynced) "🌐 " + stringResource(R.string.ex_published_badge) else "⏳ " + stringResource(R.string.ex_not_published_badge),
-                        if (ad.isSynced) Color(0xFFE8F5E9) else Color(0xFFFFF3E0),
-                        if (ad.isSynced) Color(0xFF2E7D32) else Color(0xFFE65100)
+                        if (ad.isApproved) "🌐 " + stringResource(R.string.ex_published_badge) else "⏳ " + stringResource(R.string.ex_not_published_badge),
+                        if (ad.isApproved) Color(0xFFE8F5E9) else Color(0xFFFFF3E0),
+                        if (ad.isApproved) Color(0xFF2E7D32) else Color(0xFFE65100)
                     )
                 }
             }
@@ -581,7 +663,7 @@ private fun MyPostsTab(
         } else {
             items(myPosts, key = { it.id }) { ad ->
                 ExchangeOfferCard(ad, true, labels, specialties, null,
-                    onEdit = { editingId = ad.id }, onDelete = { onDelete(ad) })
+                    onEdit = if (ad.isApproved) null else ({ editingId = ad.id }), onDelete = { onDelete(ad) })
             }
         }
     }

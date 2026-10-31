@@ -37,8 +37,12 @@ data class ExchangeAd(
     val whatsapp: String,               // أرقام فقط مع رمز البلد، مثل 22236123456
     val desiredWilayas: List<String>,
     val createdAt: Long,
-    val isSynced: Boolean = false       // وصل إلى الخادم أم لا
+    val isSynced: Boolean = false,      // وصل إلى الخادم أم لا
+    val isApproved: Boolean = false     // فُعّل للعامة من طرف الإدارة (بعد دفع 200 أوقية جديدة)
 ) {
+    /** كود الإعلان القصير الذي يُرسل في طلب التفعيل. */
+    val code: String get() = id.replace("-", "").take(8).uppercase()
+
     fun toJson(): JSONObject = JSONObject()
         .put("id", id).put("owner", ownerId)
         .put("offer_type", offerType).put("price", priceAmount).put("negotiable", isNegotiable)
@@ -50,6 +54,7 @@ data class ExchangeAd(
         .put("desired", JSONArray(desiredWilayas))
         .put("created", createdAt)
         .put("synced", isSynced)
+        .put("approved", isApproved)
 
     companion object {
         fun fromJson(o: JSONObject): ExchangeAd = ExchangeAd(
@@ -66,7 +71,8 @@ data class ExchangeAd(
             whatsapp = o.optString("whatsapp"),
             desiredWilayas = o.optJSONArray("desired").toStrings(),
             createdAt = o.optLong("created"),
-            isSynced = o.optBoolean("synced")
+            isSynced = o.optBoolean("synced"),
+            isApproved = o.optBoolean("approved")
         )
 
         fun listToJson(list: List<ExchangeAd>): String = JSONArray(list.map { it.toJson() }).toString()
@@ -100,6 +106,15 @@ data class ExchangeAd(
         /** الرقم المحلي (8 خانات) لعرضه لصاحبه فقط عند التعديل. */
         fun localPhone(stored: String): String = stored.removePrefix("222")
     }
+}
+
+/**
+ * تفعيل إعلان التبادل — بنفس طريقة دفتر المعلم ونفس السعر:
+ * الإعلان يُحفظ ولا يظهر للعامة إلا بعد تفعيله من الإدارة؛ يرسل الأستاذ طلب التفعيل عبر واتساب الإدارة.
+ */
+object ExchangeActivation {
+    const val ADMIN_PHONE = "22237786585"
+    const val PRICE_MRU = 200
 }
 
 /** مكان حفظ المنشورات ومشاركتها بين الأساتذة (خادم التطبيق). */

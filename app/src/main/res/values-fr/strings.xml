@@ -272,8 +272,6 @@
     <string name="ex_no_results_hint">Modifiez les filtres ou utilisez le « Formulaire » pour ajouter votre offre.</string>
     <string name="ex_specialty_line">Spécialité : %1$s</string>
     <string name="ex_moughataa_badge">Moughataa (مقاطعي)</string>
-    <string name="ex_published_badge">Publiée</string>
-    <string name="ex_not_published_badge">Pas encore publiée</string>
     <string name="ex_price_negotiable">Contrepartie : à discuter en privé</string>
     <string name="ex_price_amount">Contrepartie : %1$s MRU</string>
     <string name="ex_current_place">Lieu de travail actuel :</string>
@@ -365,4 +363,16 @@
     <string name="tb_pages">Nombre de pages :</string>
     <string name="tb_pages_n">%1$d pages</string>
     <string name="tb_print">Générer le cahier de textes vierge</string>
+    <string name="ex_published_badge">Activée</string>
+    <string name="ex_not_published_badge">Non activée</string>
+    <string name="ex_act_title">Contactez l\'administration pour publier votre annonce</string>
+    <string name="ex_act_price">Prix de publication : %1$d MRU</string>
+    <string name="ex_act_note">Remarque : votre annonce est enregistrée ; elle ne sera visible qu\'après activation par l\'administration.</string>
+    <string name="ex_act_press">Appuyez sur le bouton ci-dessous pour envoyer la demande d\'activation de l\'annonce (#%1$s) via le WhatsApp de l\'administration :</string>
+    <string name="ex_act_whatsapp">WhatsApp de l\'administration</string>
+    <string name="ex_close">Fermer</string>
+    <string name="ex_act_not_active">Annonce pas encore activée</string>
+    <string name="ex_act_banner">Prix de publication %1$d MRU. Contactez l\'administration pour l\'activer.</string>
+    <string name="ex_act_button">Activer 💬</string>
+    <string name="ex_act_message">Je veux publier et activer une annonce d\'échange (application Daftar Ustadh DS).\n🔑 Code de l\'annonce :\n%1$s</string>
 </resources>
