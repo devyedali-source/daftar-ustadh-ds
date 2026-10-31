@@ -5,4 +5,23 @@
     <string name="language">Langue de l\'interface</string>
     <string name="lang_ar">العربية</string>
     <string name="lang_fr">Français</string>
+
+    <string name="register_institution">Enregistrer l\'établissement</string>
+    <string name="edit_institution">Modifier l\'établissement</string>
+    <string name="institution_title">Informations de l\'établissement</string>
+    <string name="wilaya">Wilaya</string>
+    <string name="school">Établissement</string>
+    <string name="choose_school">Touchez pour choisir l\'établissement</string>
+    <string name="choose_wilaya_first">Choisissez d\'abord la wilaya</string>
+    <string name="search_school">Rechercher l\'établissement</string>
+    <string name="school_not_found">Établissement introuvable, je saisis son nom</string>
+    <string name="school_manual">Nom de l\'établissement</string>
+    <string name="back_to_list">Choisir dans la liste</string>
+    <string name="stage">Type d\'établissement</string>
+    <string name="stage_college">Collège</string>
+    <string name="stage_lycee">Lycée</string>
+    <string name="stage_both">Collège et lycée</string>
+    <string name="school_year">Année scolaire</string>
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
 </resources>

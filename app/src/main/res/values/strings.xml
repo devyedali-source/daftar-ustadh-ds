@@ -5,4 +5,23 @@
     <string name="language">لغة الواجهة</string>
     <string name="lang_ar">العربية</string>
     <string name="lang_fr">Français</string>
+
+    <string name="register_institution">تسجيل المؤسسة</string>
+    <string name="edit_institution">تعديل معلومات المؤسسة</string>
+    <string name="institution_title">معلومات المؤسسة</string>
+    <string name="wilaya">الولاية</string>
+    <string name="school">المؤسسة</string>
+    <string name="choose_school">اضغط لاختيار المؤسسة</string>
+    <string name="choose_wilaya_first">اختر الولاية أولًا</string>
+    <string name="search_school">ابحث عن المؤسسة</string>
+    <string name="school_not_found">لم أجد مؤسستي، سأكتب اسمها</string>
+    <string name="school_manual">اسم المؤسسة</string>
+    <string name="back_to_list">الاختيار من اللائحة</string>
+    <string name="stage">نوع المؤسسة</string>
+    <string name="stage_college">إعدادية</string>
+    <string name="stage_lycee">ثانوية</string>
+    <string name="stage_both">إعدادية وثانوية</string>
+    <string name="school_year">السنة الدراسية</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
 </resources>
