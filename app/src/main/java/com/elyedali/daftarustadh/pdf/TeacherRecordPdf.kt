@@ -116,7 +116,7 @@ object TeacherRecordPdf {
         }
         var y = top + TABLE_HEAD
         rows.forEach { s ->
-            PdfText.draw(c, s.rollNumber.toString(), edges[1], y, rollW, ROW, 9f)
+            PdfText.draw(c, if (s.rollNumber > 0) s.rollNumber.toString() else "", edges[1], y, rollW, ROW, 9f)
             // الاسم بالعربية وتحته بالفرنسية
             val names = listOf(s.nameAr, s.nameFr).filter { it.isNotBlank() }.joinToString("\n")
             PdfText.draw(c, names, edges[2] + 3f, y, nameW - 6f, ROW, 8f, Layout.Alignment.ALIGN_NORMAL, maxLines = 2)
@@ -145,5 +145,10 @@ object TeacherRecordPdf {
         l.stampLines.forEachIndexed { i, t ->
             PdfText.draw(c, t, left + 6f, stampTop + 7f + i * 16f, boxW - 12f, 16f, if (i == 0) 11f else 9f, bold = i == 0, color = INK, maxLines = 1)
         }
+    }
+
+    /** أسطر فارغة لسجل يُملأ كله باليد: أرقام من 1 إلى count بلا أسماء. */
+    fun blankRows(count: Int = 70): List<StudentEntity> = (1..count).map {
+        StudentEntity("blank-$it", "", it, "", "", "", "", "", "", 0L)
     }
 }

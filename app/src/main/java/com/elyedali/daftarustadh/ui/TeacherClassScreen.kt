@@ -48,7 +48,8 @@ fun TeacherClassScreen(
     onSetMySubjects: (Set<String>) -> Unit,
     onOpenSubject: (String) -> Unit,
     onShowStudents: () -> Unit,
-    onBack: () -> Unit
+    onBack: () -> Unit,
+    showHeader: Boolean = true
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
     var choosing by remember { mutableStateOf(false) }
@@ -56,7 +57,7 @@ fun TeacherClassScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            ScreenHeader(
+            if (showHeader) ScreenHeader(
                 schoolClass.name, onBack,
                 listOfNotNull(schoolName, stringResource(R.string.students_count, studentCount))
             ) { HeaderAction(stringResource(R.string.students_list), onShowStudents) }

@@ -53,7 +53,8 @@ fun StudentsScreen(
     onShare: ((com.elyedali.daftarustadh.transfer.ClassFileType) -> Unit)? = null,
     readOnly: Boolean = false,
     subtitle: String? = null,
-    onOpenResults: (() -> Unit)? = null
+    onOpenResults: (() -> Unit)? = null,
+    showHeader: Boolean = true
 ) {
     var shareMenu by remember { mutableStateOf(false) }
     var editing by remember { mutableStateOf<StudentEntity?>(null) }
@@ -62,7 +63,7 @@ fun StudentsScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            ScreenHeader(
+            if (showHeader) ScreenHeader(
                 schoolClass.name, onBack,
                 listOfNotNull(subtitle, stringResource(R.string.students_count, students.size))
             ) { HeaderAction(stringResource(R.string.subjects), onShowSubjects) }

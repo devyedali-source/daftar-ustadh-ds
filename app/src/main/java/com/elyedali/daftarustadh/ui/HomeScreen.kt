@@ -18,6 +18,7 @@ import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.List
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -48,7 +49,8 @@ fun HomeScreen(
     onOpenFile: () -> Unit,
     onOpenRemarks: () -> Unit,
     onOpenStats: () -> Unit,
-    onLanguageSelected: (String) -> Unit
+    onLanguageSelected: (String) -> Unit,
+    onOpenMenu: () -> Unit = {}
 ) {
     val context = LocalContext.current
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -65,6 +67,9 @@ fun HomeScreen(
                     .padding(18.dp)
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
+                    androidx.compose.material3.IconButton(onClick = onOpenMenu) {
+                        androidx.compose.material3.Icon(androidx.compose.material.icons.Icons.Filled.Menu, contentDescription = null, tint = Color.White)
+                    }
                     Column(Modifier.weight(1f)) {
                         Text(stringResource(R.string.app_name), style = MaterialTheme.typography.headlineSmall, color = Color.White)
                         Text(stringResource(R.string.welcome_subtitle), style = MaterialTheme.typography.bodyMedium, color = Color.White.copy(alpha = 0.85f))

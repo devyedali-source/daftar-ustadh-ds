@@ -34,6 +34,9 @@ import com.elyedali.daftarustadh.data.TeacherSubjectEntity
 import com.elyedali.daftarustadh.data.SubjectRecordEntity
 import com.elyedali.daftarustadh.data.GradeSlot
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.verticalScroll
 import com.elyedali.daftarustadh.data.TestsMode
 import com.elyedali.daftarustadh.data.SchoolDirectory
@@ -51,6 +54,19 @@ import com.elyedali.daftarustadh.transfer.RecordImporter
 import com.elyedali.daftarustadh.transfer.TransferCodec
 import com.elyedali.daftarustadh.ui.ResultsStatusScreen
 import com.elyedali.daftarustadh.ui.StatsScreen
+import com.elyedali.daftarustadh.ui.AllClassesScreen
+import com.elyedali.daftarustadh.ui.ClassHub
+import com.elyedali.daftarustadh.ui.ComingSoon
+import com.elyedali.daftarustadh.ui.DocumentsTab
+import com.elyedali.daftarustadh.ui.KashfTab
+import com.elyedali.daftarustadh.data.DocumentEntity
+import com.elyedali.daftarustadh.pdf.DocumentPdf
+import androidx.compose.material3.ModalNavigationDrawer
+import androidx.compose.material3.ModalDrawerSheet
+import androidx.compose.material3.NavigationDrawerItem
+import androidx.compose.material3.DrawerValue
+import androidx.compose.material3.rememberDrawerState
+import androidx.compose.runtime.mutableIntStateOf
 import com.elyedali.daftarustadh.ui.KashfSettingsScreen
 import com.elyedali.daftarustadh.report.KashfSettings
 import com.elyedali.daftarustadh.report.ReportCalc
@@ -75,7 +91,8 @@ import java.util.UUID
 
 private const val TEACHER_NAME_KEY = "teacher_name"
 
-private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS }
+private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -102,6 +119,7 @@ class MainActivity : AppCompatActivity() {
         val classDao = db.classDao()
         val studentDao = db.studentDao()
         val gradeDao = db.gradeDao()
+        val documentDao = db.documentDao()
         val metaDao = db.appMetaDao()
         val importer = ClassFileImporter(db)
         // بيانات تجريبية (نسخ التجربة فقط الآن؛ وبعد تسجيل الدخول لحساب صاحب التطبيق فقط)
@@ -132,7 +150,12 @@ class MainActivity : AppCompatActivity() {
                 val students by studentsFlow.collectAsState(initial = emptyList())
                 var subjectCode by rememberSaveable { mutableStateOf<String?>(null) }
                 var gradesFromAdmin by rememberSaveable { mutableStateOf(false) }
-                var gradesBack by rememberSaveable { mutableStateOf(Screen.TEACHER_CLASS) }
+                var gradesBack by rememberSaveable { mutableStateOf(Screen.TEACHER_HUB) }
+                var hubTab by rememberSaveable { mutableIntStateOf(0) }
+                var hubBack by rememberSaveable { mutableStateOf(Screen.ALL_CLASSES) }
+                val drawerState = rememberDrawerState(DrawerValue.Closed)
+                val documentsFlow = remember(classId) { classId?.let { documentDao.observeByClass(it) } ?: flowOf(emptyList()) }
+                val documents by documentsFlow.collectAsState(initial = emptyList())
                 var recordCheck by remember { mutableStateOf<RecordCheck.Ready?>(null) }
                 val recordsFlow = remember(classId) { classId?.let { gradeDao.observeRecords(it) } ?: flowOf(emptyList()) }
                 val records by recordsFlow.collectAsState(initial = emptyList())
@@ -180,6 +203,35 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 var askNameSends by remember { mutableStateOf(false) }
+                var askNameBlank by remember { mutableStateOf(false) }
+                var askNameDoc by remember { mutableStateOf<DocumentEntity?>(null) }
+
+                /** سحب وثيقة الأستاذ PDF برأسية المؤسسة وطابعه. */
+                fun exportDocument(d: DocumentEntity, name: String) {
+                    scope.launch {
+                        val c = classDao.getById(d.classId) ?: return@launch
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                            .filter { s -> mySubjects.any { it.subjectCode == s.code } }
+                        val stamp = listOf(name) +
+                            (if (subjects.isEmpty()) emptyList() else listOf(
+                                "أستاذ مادة: " + subjects.joinToString("، ") { it.nameAr },
+                                "Professeur de : " + subjects.joinToString(", ") { it.nameFr }
+                            ))
+                        val info = DocumentPdf.Info(
+                            infoLineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069",
+                            infoLineFr = "Établissement : ${owner.schoolName} — Classe : ${c.name} — Année scolaire : ${c.schoolYear}",
+                            title = d.title,
+                            body = d.body,
+                            stampLines = stamp,
+                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                        )
+                        val bytes = withContext(Dispatchers.Default) { DocumentPdf.build(info) }
+                        val fileName = ("${d.title.ifBlank { "Document" }} - ${c.name} - ${c.schoolYear}.pdf")
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, fileName, getString(R.string.doc_pdf), "application/pdf")
+                    }
+                }
                 var sendConfirm by remember { mutableStateOf<String?>(null) }
 
                 /** إرسال سجل الأستاذ لمادة: ملف ‎.dsq يحمل نتائجه وطابعه، يُرفع عند المكلّف بالقسم. */
@@ -205,12 +257,12 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
-                fun printRecord(c: ClassEntity, code: String, name: String) {
+                fun printRecord(c: ClassEntity, code: String, name: String, blank: Boolean = false) {
                     scope.launch {
                         val owner = institutionDao.getById(c.institutionId) ?: return@launch
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
                             ?.subjects?.firstOrNull { it.code == code } ?: return@launch
-                        val list = studentDao.listByClass(c.id)
+                        val list = if (blank) TeacherRecordPdf.blankRows(70) else studentDao.listByClass(c.id)
                         // سجل الأستاذ ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة
                         val wilaya = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)
                         val labels = TeacherRecordPdf.Labels(
@@ -291,12 +343,41 @@ class MainActivity : AppCompatActivity() {
                     Screen.GRADES -> BackHandler { screen = gradesBack }
                     Screen.RESULTS -> BackHandler { screen = Screen.STUDENTS }
                     Screen.STATS -> BackHandler { screen = Screen.HOME }
-                    Screen.KASHF_SETTINGS -> BackHandler { screen = Screen.RESULTS }
+                    Screen.KASHF_SETTINGS -> BackHandler { screen = Screen.ADMIN_CLASS }
                     Screen.GENERAL_REMARKS -> BackHandler { screen = Screen.KASHF_SETTINGS }
-                    Screen.IMPORT -> BackHandler { screen = Screen.STUDENTS }
+                    Screen.IMPORT -> BackHandler { screen = Screen.ADMIN_CLASS }
+                    Screen.ADMIN_CLASS, Screen.TEACHER_HUB -> BackHandler { screen = hubBack }
+                    Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS -> BackHandler { screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
                 }
 
+                ModalNavigationDrawer(
+                    drawerState = drawerState,
+                    gesturesEnabled = screen == Screen.HOME || drawerState.isOpen,
+                    drawerContent = {
+                        ModalDrawerSheet {
+                            androidx.compose.material3.Text(
+                                stringResource(R.string.app_name),
+                                style = androidx.compose.material3.MaterialTheme.typography.titleLarge,
+                                modifier = androidx.compose.ui.Modifier.padding(20.dp)
+                            )
+                            listOf(
+                                Screen.HOME to R.string.menu_home,
+                                Screen.ALL_CLASSES to R.string.classes_title,
+                                Screen.LEGISLATION to R.string.menu_legislation,
+                                Screen.EXCHANGES to R.string.menu_exchanges,
+                                Screen.BOOKS to R.string.menu_books
+                            ).forEach { (target, res) ->
+                                NavigationDrawerItem(
+                                    label = { androidx.compose.material3.Text(stringResource(res)) },
+                                    selected = screen == target,
+                                    onClick = { screen = target; scope.launch { drawerState.close() } },
+                                    modifier = androidx.compose.ui.Modifier.padding(horizontal = 12.dp)
+                                )
+                            }
+                        }
+                    }
+                ) {
                 when {
                     screen == Screen.INSTITUTION -> InstitutionScreen(
                         existing = inst,
@@ -323,11 +404,12 @@ class MainActivity : AppCompatActivity() {
                                 onResult(rowId != -1L)
                             }
                         },
-                        onOpen = { c -> classId = c.id; fromTeaching = false; screen = Screen.STUDENTS },
+                        onOpen = { c -> classId = c.id; fromTeaching = false; hubTab = 0; hubBack = Screen.CLASSES; screen = Screen.ADMIN_CLASS },
                         onDelete = { c ->
                             scope.launch {
                                 gradeDao.deleteByClass(c.id)
                                 gradeDao.deleteRecordsByClass(c.id)
+                                documentDao.deleteByClass(c.id)
                                 gradeDao.deleteTeacherSubjectsByClass(c.id)
                                 studentDao.deleteByClass(c.id)
                                 classDao.delete(c)
@@ -340,9 +422,148 @@ class MainActivity : AppCompatActivity() {
                         classes = teachingClasses,
                         schoolNames = schoolNames,
                         onOpenFile = openFile,
-                        onOpen = { c -> classId = c.id; fromTeaching = true; screen = Screen.TEACHER_CLASS },
+                        onOpen = { c -> classId = c.id; fromTeaching = true; hubTab = 0; hubBack = Screen.TEACHING; screen = Screen.TEACHER_HUB },
                         onBack = { screen = Screen.HOME }
                     )
+
+                    screen == Screen.ALL_CLASSES -> AllClassesScreen(
+                        managed = managedClasses,
+                        teaching = teachingClasses,
+                        schoolNames = schoolNames,
+                        hasInstitution = inst != null,
+                        onOpenManaged = { c -> classId = c.id; fromTeaching = false; hubTab = 0; hubBack = Screen.ALL_CLASSES; screen = Screen.ADMIN_CLASS },
+                        onOpenTeaching = { c -> classId = c.id; fromTeaching = true; hubTab = 0; hubBack = Screen.ALL_CLASSES; screen = Screen.TEACHER_HUB },
+                        onManageClasses = { screen = Screen.CLASSES },
+                        onOpenFile = openFile,
+                        onBack = { screen = Screen.HOME }
+                    )
+
+                    screen == Screen.LEGISLATION || screen == Screen.EXCHANGES || screen == Screen.BOOKS -> {
+                        val title = stringResource(when (screen) {
+                            Screen.LEGISLATION -> R.string.menu_legislation
+                            Screen.EXCHANGES -> R.string.menu_exchanges
+                            else -> R.string.menu_books
+                        })
+                        androidx.compose.material3.Surface(androidx.compose.ui.Modifier.fillMaxSize(), color = androidx.compose.material3.MaterialTheme.colorScheme.background) {
+                            androidx.compose.foundation.layout.Column(androidx.compose.ui.Modifier.padding(16.dp)) {
+                                com.elyedali.daftarustadh.ui.ScreenHeader(title, { screen = Screen.HOME })
+                                ComingSoon(stringResource(R.string.coming_soon))
+                            }
+                        }
+                    }
+
+                    screen == Screen.ADMIN_CLASS && currentClass != null -> {
+                        val c = currentClass!!
+                        val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                        ClassHub(
+                            title = c.name,
+                            subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
+                            tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
+                                stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
+                            selected = hubTab,
+                            onSelect = { hubTab = it },
+                            onBack = { screen = hubBack }
+                        ) {
+                            when (hubTab) {
+                                0 -> {
+                                    StudentsScreen(
+                                        schoolClass = c,
+                                        students = students,
+                                        onSave = { s -> scope.launch { studentDao.save(s) } },
+                                        onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); studentDao.delete(s) } },
+                                        onImport = { screen = Screen.IMPORT },
+                                        onShowSubjects = { showSubjects = true },
+                                        onBack = { screen = hubBack },
+                                        onShare = { type -> share(c, type) },
+                                        showHeader = false
+                                    )
+                                    if (showSubjects) ClassSubjectsDialog(c, onPick = { code ->
+                                        subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.ADMIN_CLASS; showSubjects = false; screen = Screen.GRADES
+                                    }) { showSubjects = false }
+                                }
+                                1 -> ResultsStatusScreen(
+                                    schoolClass = c,
+                                    subjects = subjects,
+                                    students = students,
+                                    grades = classGrades,
+                                    records = records,
+                                    onUploadRecord = openFile,
+                                    onOpenSubject = { code ->
+                                        subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.ADMIN_CLASS; screen = Screen.GRADES
+                                    },
+                                    onGenerate = { term -> generateKashf(c, term) },
+                                    onOpenSettings = { screen = Screen.KASHF_SETTINGS },
+                                    onBack = { screen = hubBack },
+                                    showHeader = false,
+                                    showGenerate = false
+                                )
+                                2 -> {
+                                    val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
+                                    KashfTab(
+                                        missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
+                                        onGenerate = { term -> generateKashf(c, term) },
+                                        onOpenSettings = { screen = Screen.KASHF_SETTINGS }
+                                    )
+                                }
+                                else -> ComingSoon(stringResource(R.string.coming_soon))
+                            }
+                        }
+                    }
+
+                    screen == Screen.TEACHER_HUB && currentClass != null -> {
+                        val c = currentClass!!
+                        ClassHub(
+                            title = c.name,
+                            subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
+                            tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
+                                stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
+                            selected = hubTab,
+                            onSelect = { hubTab = it },
+                            onBack = { screen = hubBack }
+                        ) {
+                            when (hubTab) {
+                                0 -> StudentsScreen(
+                                    schoolClass = c,
+                                    students = students,
+                                    onSave = {}, onDelete = {}, onImport = {},
+                                    onShowSubjects = {},
+                                    onBack = { screen = hubBack },
+                                    readOnly = true,
+                                    showHeader = false
+                                )
+                                1 -> TeacherClassScreen(
+                                    schoolClass = c,
+                                    schoolName = schoolNames[c.institutionId],
+                                    classSubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty(),
+                                    mySubjectCodes = mySubjects.map { it.subjectCode }.toSet(),
+                                    grades = classGrades,
+                                    studentCount = students.size,
+                                    onSetMySubjects = { chosen ->
+                                        scope.launch {
+                                            val current = mySubjects.map { it.subjectCode }.toSet()
+                                            (current - chosen).forEach { gradeDao.removeTeacherSubject(c.id, it) }
+                                            (chosen - current).forEach { gradeDao.saveTeacherSubject(TeacherSubjectEntity(c.id, it)) }
+                                        }
+                                    },
+                                    onOpenSubject = { code -> subjectCode = code; gradesFromAdmin = false; gradesBack = Screen.TEACHER_HUB; screen = Screen.GRADES },
+                                    onShowStudents = { hubTab = 0 },
+                                    onBack = { screen = hubBack },
+                                    showHeader = false
+                                )
+                                2 -> ComingSoon(stringResource(R.string.coming_soon))
+                                else -> DocumentsTab(
+                                    classId = c.id,
+                                    documents = documents,
+                                    onSave = { d -> scope.launch { documentDao.save(d) } },
+                                    onDelete = { d -> scope.launch { documentDao.delete(d) } },
+                                    onExport = { d ->
+                                        val n = teacherName
+                                        if (n.isNullOrBlank()) { askNameDoc = d; askNameFor = "" } else exportDocument(d, n)
+                                    }
+                                )
+                            }
+                        }
+                    }
 
                     screen == Screen.STUDENTS && currentClass != null -> {
                         val c = currentClass!!
@@ -424,9 +645,10 @@ class MainActivity : AppCompatActivity() {
                                     if (n.isNullOrBlank()) { askNameFor = code; askNameSends = true } else sendConfirm = code
                                 }
                             },
-                            onPrintRecord = {
+                            onPrintRecord = { blank ->
                                 val n = teacherName
-                                if (n.isNullOrBlank()) askNameFor = code else printRecord(c, code, n)
+                                askNameBlank = blank
+                                if (n.isNullOrBlank()) askNameFor = code else printRecord(c, code, n, blank)
                             },
                             onBack = back
                         )
@@ -473,11 +695,11 @@ class MainActivity : AppCompatActivity() {
                             onSave = { map ->
                                 scope.launch {
                                     metaDao.put(AppMetaEntity(KashfSettings.THRESHOLDS_KEY, KashfSettings.encodeThresholds(thresholds + map)))
-                                    screen = Screen.RESULTS
+                                    screen = Screen.ADMIN_CLASS
                                 }
                             },
                             onEditGeneralRemarks = { screen = Screen.GENERAL_REMARKS },
-                            onBack = { screen = Screen.RESULTS }
+                            onBack = { screen = Screen.ADMIN_CLASS }
                         )
                     }
 
@@ -511,8 +733,8 @@ class MainActivity : AppCompatActivity() {
                     screen == Screen.IMPORT && currentClass != null -> ImportStudentsScreen(
                         schoolClass = currentClass!!,
                         existing = students,
-                        onConfirm = { list -> scope.launch { studentDao.saveAll(list); screen = Screen.STUDENTS } },
-                        onBack = { screen = Screen.STUDENTS }
+                        onConfirm = { list -> scope.launch { studentDao.saveAll(list); screen = Screen.ADMIN_CLASS } },
+                        onBack = { screen = Screen.ADMIN_CLASS }
                     )
 
                     else -> HomeScreen(
@@ -523,10 +745,13 @@ class MainActivity : AppCompatActivity() {
                         onOpenFile = openFile,
                         onOpenRemarks = { screen = Screen.REMARKS },
                         onOpenStats = { screen = Screen.STATS },
+                        onOpenMenu = { scope.launch { drawerState.open() } },
                         onLanguageSelected = { tag ->
                             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag))
                         }
                     )
+                }
+
                 }
 
                 askNameFor?.let { code ->
@@ -545,8 +770,12 @@ class MainActivity : AppCompatActivity() {
                                 val n = typed.trim()
                                 askNameFor = null
                                 scope.launch { metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, n)) }
-                                if (askNameSends) { askNameSends = false; sendConfirm = code }
-                                else currentClass?.let { printRecord(it, code, n) }
+                                val doc = askNameDoc
+                                when {
+                                    doc != null -> { askNameDoc = null; exportDocument(doc, n) }
+                                    askNameSends -> { askNameSends = false; sendConfirm = code }
+                                    else -> currentClass?.let { printRecord(it, code, n, askNameBlank) }
+                                }
                             }) { Text(stringResource(R.string.save)) }
                         },
                         dismissButton = { TextButton(onClick = { askNameFor = null }) { Text(stringResource(R.string.cancel)) } }
@@ -599,7 +828,8 @@ class MainActivity : AppCompatActivity() {
                                     recordImporter.apply(chk)
                                     classId = chk.schoolClass.id
                                     fromTeaching = false
-                                    screen = Screen.RESULTS
+                                    hubTab = 1
+                                    screen = Screen.ADMIN_CLASS
                                     fileResult = FileResult.Message(getString(R.string.record_done, subjectName, chk.file.className))
                                 }
                             }) { Text(stringResource(R.string.record_upload)) }

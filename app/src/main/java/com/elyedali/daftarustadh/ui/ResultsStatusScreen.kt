@@ -51,6 +51,8 @@ fun ResultsStatusScreen(
     onOpenSubject: (String) -> Unit,
     onGenerate: (term: Int) -> Unit,
     onOpenSettings: () -> Unit,
+    showHeader: Boolean = true,
+    showGenerate: Boolean = true,
     onBack: () -> Unit
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -67,7 +69,7 @@ fun ResultsStatusScreen(
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            ScreenHeader(stringResource(R.string.class_results_title, schoolClass.name), onBack, listOf(stringResource(R.string.students_count, students.size)))
+            if (showHeader) ScreenHeader(stringResource(R.string.class_results_title, schoolClass.name), onBack, listOf(stringResource(R.string.students_count, students.size)))
             TabRow(selectedTabIndex = term - 1) {
                 listOf(R.string.term_1, R.string.term_2, R.string.term_3).forEachIndexed { i, res ->
                     Tab(selected = term == i + 1, onClick = { term = i + 1 }, text = { Text(stringResource(res)) })
@@ -80,11 +82,11 @@ fun ResultsStatusScreen(
             )
             if (subjects.isNotEmpty() && completeCount == subjects.size) {
                 Text(stringResource(R.string.all_subjects_complete), color = MaterialTheme.colorScheme.primary)
-                Button(onClick = { onGenerate(term) }, modifier = Modifier.fillMaxWidth()) {
+                if (showGenerate) Button(onClick = { onGenerate(term) }, modifier = Modifier.fillMaxWidth()) {
                     Text(stringResource(if (term == 3) R.string.generate_annual else R.string.generate_term))
                 }
             }
-            TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
+            if (showGenerate) TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
             Button(onClick = onUploadRecord, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record)) }
             Text(stringResource(R.string.upload_record_hint), style = MaterialTheme.typography.bodySmall)
             LazyColumn(verticalArrangement = Arrangement.spacedBy(6.dp)) {

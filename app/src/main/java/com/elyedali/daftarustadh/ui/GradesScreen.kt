@@ -61,7 +61,8 @@ fun GradesScreen(
     scale: List<RemarkLevel>,
     onSetGrade: (studentId: String, slot: String, value: Double?) -> Unit,
     onTestsMode: (String) -> Unit,
-    onPrintRecord: () -> Unit,
+    /** true = سجل فارغ بـ70 خانة بلا أسماء؛ false = سجل بأسماء طلاب القسم وخانات فارغة. */
+    onPrintRecord: (blank: Boolean) -> Unit,
     /** null عند الإدارة: إرسال السجل خاص بالأستاذ. */
     onSendRecord: (() -> Unit)? = null,
     onBack: () -> Unit
@@ -81,7 +82,18 @@ fun GradesScreen(
             ScreenHeader(
                 if (isFr) subject.nameFr else subject.nameAr, onBack,
                 listOf("${schoolClass.name} — ${stringResource(R.string.coefficient)} ${subject.coefficient}")
-            ) { HeaderAction(stringResource(R.string.print_record), onPrintRecord) }
+            ) {
+                var printMenu by remember { mutableStateOf(false) }
+                androidx.compose.foundation.layout.Box {
+                    HeaderAction(stringResource(R.string.print_record)) { printMenu = true }
+                    androidx.compose.material3.DropdownMenu(expanded = printMenu, onDismissRequest = { printMenu = false }) {
+                        androidx.compose.material3.DropdownMenuItem(text = { Text(stringResource(R.string.print_with_names)) },
+                            onClick = { printMenu = false; onPrintRecord(false) })
+                        androidx.compose.material3.DropdownMenuItem(text = { Text(stringResource(R.string.print_blank_70)) },
+                            onClick = { printMenu = false; onPrintRecord(true) })
+                    }
+                }
+            }
             if (onSendRecord != null) {
                 androidx.compose.material3.Button(onClick = onSendRecord, modifier = Modifier.fillMaxWidth()) {
                     Text(stringResource(R.string.send_record))
