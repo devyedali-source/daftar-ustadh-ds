@@ -170,4 +170,13 @@
     <string name="record_wrong_class">Ce relevé ne correspond à aucune de vos classes : %1$s, classe %2$s, wilaya %3$s, année %4$s. Vérifiez qu\'il vient du même établissement, de la même classe et de la même année.</string>
     <string name="record_not_managed">La classe %1$s n\'est chez vous que dans « Mes classes ». Pour charger les relevés de vos collègues, la classe doit être en mode administration.</string>
     <string name="record_done">Notes de %1$s chargées dans la classe %2$s.</string>
+    <string name="generate_term">Produire les bulletins de ce trimestre</string>
+    <string name="generate_annual">Produire les bulletins annuels</string>
+    <string name="kashf_settings">Réglages des bulletins</string>
+    <string name="general_remarks">Appréciation générale selon la moyenne générale</string>
+    <string name="pass_thresholds">Moyenne de passage par niveau</string>
+    <string name="pass_thresholds_help">Entre 8 et 10. Sur le bulletin annuel, « Admis en classe supérieure » est coché pour l\'élève qui atteint la moyenne de son niveau ; redoublement et exclusion restent à cocher à la main.</string>
+    <string name="kashf_generating">Production des bulletins…</string>
+    <string name="kashf_share">Envoyer les bulletins</string>
+    <string name="kashf_file_name">كشوف درجات %1$s - %2$s - Bulletins %1$s - %3$s - %4$s.pdf</string>
 </resources>

@@ -49,6 +49,11 @@ import com.elyedali.daftarustadh.transfer.RecordFile
 import com.elyedali.daftarustadh.transfer.RecordImporter
 import com.elyedali.daftarustadh.transfer.TransferCodec
 import com.elyedali.daftarustadh.ui.ResultsStatusScreen
+import com.elyedali.daftarustadh.ui.KashfSettingsScreen
+import com.elyedali.daftarustadh.report.KashfSettings
+import com.elyedali.daftarustadh.report.ReportCalc
+import com.elyedali.daftarustadh.pdf.ReportCardPdf
+import com.elyedali.daftarustadh.data.Stage
 import com.elyedali.daftarustadh.ui.ClassSubjectsDialog
 import com.elyedali.daftarustadh.ui.ClassesScreen
 import com.elyedali.daftarustadh.ui.DaftarTheme
@@ -68,7 +73,7 @@ import java.util.UUID
 
 private const val TEACHER_NAME_KEY = "teacher_name"
 
-private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS }
+private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -135,6 +140,41 @@ class MainActivity : AppCompatActivity() {
                 val remarkScale = remember(remarksText) { RemarkScale.decode(remarksText) }
                 val teacherName by remember { metaDao.observe(TEACHER_NAME_KEY) }.collectAsState(initial = null)
                 var askNameFor by remember { mutableStateOf<String?>(null) }
+                val thresholdsText by remember { metaDao.observe(KashfSettings.THRESHOLDS_KEY) }.collectAsState(initial = null)
+                val thresholds = remember(thresholdsText) { KashfSettings.decodeThresholds(thresholdsText) }
+                val generalText by remember { metaDao.observe(KashfSettings.GENERAL_REMARKS_KEY) }.collectAsState(initial = null)
+                val generalRemarks = remember(generalText) {
+                    if (generalText.isNullOrBlank()) KashfSettings.DEFAULT_GENERAL_REMARKS else RemarkScale.decode(generalText)
+                }
+
+                /** إنتاج كشوف الدرجات لقسم: ملف PDF واحد، كشف في كل صفحة، يُرسل للوراقة. */
+                fun generateKashf(c: ClassEntity, term: Int) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                        val list = studentDao.listByClass(c.id)
+                        val reports = ReportCalc.build(
+                            term, subjects, list, classGrades, records,
+                            mySubjects.associate { it.subjectCode to it.testsMode }
+                        )
+                        val info = ReportCardPdf.Info(
+                            schoolYear = c.schoolYear,
+                            schoolName = owner.schoolName,
+                            className = c.name,
+                            passThreshold = thresholds[c.levelCode] ?: KashfSettings.DEFAULT_THRESHOLD,
+                            subjectRemarks = remarkScale,
+                            generalRemarks = generalRemarks,
+                            date = java.text.SimpleDateFormat("dd/MM/yyyy", java.util.Locale.US).format(java.util.Date()),
+                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                        )
+                        val bytes = withContext(Dispatchers.Default) { ReportCardPdf.build(term, reports, info) }
+                        val termAr = when (term) { 1 -> "الفصل الأول"; 2 -> "الفصل الثاني"; else -> "السنوية" }
+                        val termFr = when (term) { 1 -> "T1"; 2 -> "T2"; else -> "annuels" }
+                        val name = getString(R.string.kashf_file_name, c.name, termAr, termFr, c.schoolYear)
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.kashf_share), "application/pdf")
+                    }
+                }
                 var askNameSends by remember { mutableStateOf(false) }
                 var sendConfirm by remember { mutableStateOf<String?>(null) }
 
@@ -243,6 +283,8 @@ class MainActivity : AppCompatActivity() {
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
                     Screen.RESULTS -> BackHandler { screen = Screen.STUDENTS }
+                    Screen.KASHF_SETTINGS -> BackHandler { screen = Screen.RESULTS }
+                    Screen.GENERAL_REMARKS -> BackHandler { screen = Screen.KASHF_SETTINGS }
                     Screen.IMPORT -> BackHandler { screen = Screen.STUDENTS }
                     else -> BackHandler { screen = Screen.HOME }
                 }
@@ -394,9 +436,45 @@ class MainActivity : AppCompatActivity() {
                             onOpenSubject = { code ->
                                 subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.RESULTS; screen = Screen.GRADES
                             },
+                            onGenerate = { term -> generateKashf(c, term) },
+                            onOpenSettings = { screen = Screen.KASHF_SETTINGS },
                             onBack = { screen = Screen.STUDENTS }
                         )
                     }
+
+                    screen == Screen.KASHF_SETTINGS -> {
+                        val ownLevels = inst?.let { i ->
+                            val stages = when (i.stage) { Stage.COLLEGE -> listOf(Stage.COLLEGE); Stage.LYCEE -> listOf(Stage.LYCEE); else -> listOf(Stage.COLLEGE, Stage.LYCEE) }
+                            stages.flatMap { st -> CurriculumRepository.creatableLevels(this@MainActivity, i.schoolYear, st) }.map { it.code }
+                        }.orEmpty()
+                        val levels = (ownLevels + managedClasses.map { it.levelCode }).distinct()
+                        KashfSettingsScreen(
+                            levels = levels,
+                            thresholds = thresholds,
+                            onSave = { map ->
+                                scope.launch {
+                                    metaDao.put(AppMetaEntity(KashfSettings.THRESHOLDS_KEY, KashfSettings.encodeThresholds(thresholds + map)))
+                                    screen = Screen.RESULTS
+                                }
+                            },
+                            onEditGeneralRemarks = { screen = Screen.GENERAL_REMARKS },
+                            onBack = { screen = Screen.RESULTS }
+                        )
+                    }
+
+                    screen == Screen.GENERAL_REMARKS -> RemarksSettingsScreen(
+                        scale = generalRemarks,
+                        teacherName = null,
+                        onSave = { list, _ ->
+                            scope.launch {
+                                metaDao.put(AppMetaEntity(KashfSettings.GENERAL_REMARKS_KEY, RemarkScale.encode(list)))
+                                screen = Screen.KASHF_SETTINGS
+                            }
+                        },
+                        title = stringResource(R.string.general_remarks),
+                        defaults = KashfSettings.DEFAULT_GENERAL_REMARKS,
+                        onBack = { screen = Screen.KASHF_SETTINGS }
+                    )
 
                     screen == Screen.REMARKS -> RemarksSettingsScreen(
                         scale = remarkScale,

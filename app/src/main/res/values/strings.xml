@@ -170,4 +170,13 @@
     <string name="record_wrong_class">هذا السجل لا يوافق أي قسم عندك: %1$s، القسم %2$s، الولاية %3$s، السنة الدراسية %4$s. تأكد أنه من نفس المؤسسة والقسم والسنة.</string>
     <string name="record_not_managed">القسم %1$s موجود عندك في «أقسامي» فقط. لرفع سجلات زملائك يجب أن يكون القسم في وضع الإدارة.</string>
     <string name="record_done">رُفعت نتائج %1$s في القسم %2$s.</string>
+    <string name="generate_term">إنتاج كشوف درجات هذا الفصل</string>
+    <string name="generate_annual">إنتاج كشوف الدرجات السنوية</string>
+    <string name="kashf_settings">إعدادات الكشوف</string>
+    <string name="general_remarks">الملاحظة العامة حسب المعدل العام</string>
+    <string name="pass_thresholds">معدل النجاح لكل مستوى</string>
+    <string name="pass_thresholds_help">بين 8 و10. في الكشف السنوي تُعلَّم خانة «متجاوز إلى القسم الأعلى» لمن بلغ معدل مستواه، وتبقى خانتا الإعادة والطرد للملء اليدوي.</string>
+    <string name="kashf_generating">جارٍ إنتاج الكشوف…</string>
+    <string name="kashf_share">إرسال كشوف الدرجات</string>
+    <string name="kashf_file_name">كشوف درجات %1$s - %2$s - Bulletins %1$s - %3$s - %4$s.pdf</string>
 </resources>

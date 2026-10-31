@@ -41,8 +41,11 @@ private class EditableLevel(min: String, ar: String, fr: String) {
 @Composable
 fun RemarksSettingsScreen(
     scale: List<RemarkLevel>,
-    teacherName: String,
+    /** null = لا تُعرض خانة اسم الأستاذ (ملاحظات الإدارة العامة). */
+    teacherName: String?,
     onSave: (List<RemarkLevel>, String) -> Unit,
+    title: String? = null,
+    defaults: List<RemarkLevel> = RemarkScale.DEFAULT,
     onBack: () -> Unit
 ) {
     val rows = remember(scale) {
@@ -50,7 +53,7 @@ fun RemarksSettingsScreen(
             scale.sortedBy { it.min }.forEach { add(EditableLevel(GradeMath.format(it.min), it.textAr, it.textFr)) }
         }
     }
-    val name = remember(teacherName) { androidx.compose.runtime.mutableStateOf(teacherName) }
+    val name = remember(teacherName) { androidx.compose.runtime.mutableStateOf(teacherName.orEmpty()) }
     val parsed = rows.map { r -> GradeMath.parse(r.min.value) }
     val valid = rows.isNotEmpty() && parsed.all { it != null } && parsed.contains(0.0) &&
         parsed.toSet().size == parsed.size && rows.all { it.ar.value.isNotBlank() }
@@ -59,9 +62,9 @@ fun RemarksSettingsScreen(
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
-                Text(stringResource(R.string.remarks_settings), style = MaterialTheme.typography.titleLarge)
+                Text(title ?: stringResource(R.string.remarks_settings), style = MaterialTheme.typography.titleLarge)
             }
-            OutlinedTextField(
+            if (teacherName != null) OutlinedTextField(
                 name.value, { name.value = it },
                 label = { Text(stringResource(R.string.teacher_name)) },
                 supportingText = { Text(stringResource(R.string.teacher_name_hint)) },
@@ -76,7 +79,7 @@ fun RemarksSettingsScreen(
                 }) { Text(stringResource(R.string.save)) }
                 OutlinedButton(onClick = { rows.add(EditableLevel("", "", "")) }) { Text("+  " + stringResource(R.string.add_level)) }
                 TextButton(onClick = {
-                    rows.clear(); RemarkScale.DEFAULT.forEach { rows.add(EditableLevel(GradeMath.format(it.min), it.textAr, it.textFr)) }
+                    rows.clear(); defaults.forEach { rows.add(EditableLevel(GradeMath.format(it.min), it.textAr, it.textFr)) }
                 }) { Text(stringResource(R.string.restore_default)) }
             }
             LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {

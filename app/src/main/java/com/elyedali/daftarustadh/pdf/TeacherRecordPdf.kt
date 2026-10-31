@@ -93,22 +93,7 @@ object TeacherRecordPdf {
         return out.toByteArray()
     }
 
-    private fun drawHeader(c: Canvas, l: Labels) {
-        val sealSize = 72f
-        val col = (W - 2 * M - sealSize - 16f) / 2f
-        val lineH = 15f
-        l.headerAr.forEachIndexed { i, t ->
-            PdfText.draw(c, t, W - M - col, M + i * lineH, col, lineH, 9.5f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
-        }
-        l.headerFr.forEachIndexed { i, t ->
-            PdfText.draw(c, t, M, M + i * lineH, col, lineH, 9f, Layout.Alignment.ALIGN_CENTER, bold = i == 0, maxLines = 1)
-        }
-        l.seal?.let { bmp ->
-            val left = (W - sealSize) / 2f
-            val paint = Paint(Paint.ANTI_ALIAS_FLAG or Paint.FILTER_BITMAP_FLAG)
-            c.drawBitmap(bmp, null, RectF(left, M, left + sealSize, M + sealSize), paint)
-        }
-    }
+    private fun drawHeader(c: Canvas, l: Labels) = PdfCommon.drawOfficialHeader(c, l.seal)
 
     /** يرسم الجدول من اليمين إلى اليسار ويرجع أسفل الجدول. */
     private fun drawTable(c: Canvas, top: Float, rows: List<StudentEntity>, l: Labels): Float {

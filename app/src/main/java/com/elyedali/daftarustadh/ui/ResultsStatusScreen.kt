@@ -49,6 +49,8 @@ fun ResultsStatusScreen(
     records: List<SubjectRecordEntity>,
     onUploadRecord: () -> Unit,
     onOpenSubject: (String) -> Unit,
+    onGenerate: (term: Int) -> Unit,
+    onOpenSettings: () -> Unit,
     onBack: () -> Unit
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -84,7 +86,11 @@ fun ResultsStatusScreen(
             )
             if (subjects.isNotEmpty() && completeCount == subjects.size) {
                 Text(stringResource(R.string.all_subjects_complete), color = MaterialTheme.colorScheme.primary)
+                Button(onClick = { onGenerate(term) }, modifier = Modifier.fillMaxWidth()) {
+                    Text(stringResource(if (term == 3) R.string.generate_annual else R.string.generate_term))
+                }
             }
+            TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
             Button(onClick = onUploadRecord, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record)) }
             Text(stringResource(R.string.upload_record_hint), style = MaterialTheme.typography.bodySmall)
             LazyColumn(verticalArrangement = Arrangement.spacedBy(6.dp)) {
