@@ -207,19 +207,22 @@ class MainActivity : AppCompatActivity() {
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
                             ?.subjects?.firstOrNull { it.code == code } ?: return@launch
                         val list = studentDao.listByClass(c.id)
-                        val isFr = resources.configuration.locales[0].language == "fr"
-                        val subjectName = if (isFr) subject.nameFr else subject.nameAr
+                        // سجل الأستاذ ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة
                         val wilaya = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)
                         val labels = TeacherRecordPdf.Labels(
-                            title = getString(R.string.rec_title, subjectName),
-                            subtitle = getString(R.string.rec_subtitle, c.name, c.schoolYear, subject.coefficient),
-                            schoolLine = getString(R.string.rec_school_line, if (isFr && wilaya != null) wilaya.nameFr else owner.wilaya, owner.schoolName),
-                            rollHeader = getString(R.string.rec_roll),
-                            nameHeader = getString(R.string.rec_name),
-                            gradeHeaders = (1..3).flatMap { t -> listOf(getString(R.string.rec_test, t), getString(R.string.rec_exam, t)) },
-                            signature = getString(R.string.rec_signature),
-                            stampLines = listOf(name, getString(R.string.rec_stamp_subject, subjectName)),
-                            page = { p, n -> getString(R.string.rec_page, p, n) },
+                            title = "سجل نتائج مادة: ${subject.nameAr} — Relevé de notes : ${subject.nameFr}",
+                            subtitle = "القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069 — الضارب: ${subject.coefficient}" +
+                                " — الولاية: ${owner.wilaya} — المؤسسة: ${owner.schoolName}",
+                            schoolLine = "Classe : ${c.name} — Année scolaire : ${c.schoolYear} — Coef. ${subject.coefficient}" +
+                                (wilaya?.let { " — Wilaya : ${it.nameFr}" } ?: "") + " — Établissement : ${owner.schoolName}",
+                            rollHeader = "ر.ن\nN°",
+                            nameHeader = "الاسم الكامل\nNom et Prénom",
+                            gradeHeaders = (1..3).flatMap { t ->
+                                listOf("اختبار ف$t\nDevoir T$t", "امتحان ف$t\nCompo T$t")
+                            },
+                            signature = "توقيع الأستاذ — Signature du professeur",
+                            stampLines = listOf(name, "أستاذ مادة: ${subject.nameAr}", "Professeur de : ${subject.nameFr}"),
+                            page = { p, n -> "صفحة $p من $n — Page $p / $n" },
                             seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
                         )
                         val bytes = withContext(Dispatchers.Default) { TeacherRecordPdf.build(list, labels) }

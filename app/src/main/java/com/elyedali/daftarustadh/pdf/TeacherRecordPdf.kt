@@ -21,10 +21,10 @@ object TeacherRecordPdf {
     private const val W = 595f
     private const val H = 842f
     private const val M = 28f
-    private const val ROW = 19f
+    private const val ROW = 22f
     private const val HEADER = 82f
     private const val TITLE = 62f
-    private const val TABLE_HEAD = 30f
+    private const val TABLE_HEAD = 32f
     private const val FOOTER = 110f
     private val BLACK = 0xFF000000.toInt()
     private val INK = 0xFF1F3A93.toInt()   // لون الطابع: حبر أزرق
@@ -69,9 +69,9 @@ object TeacherRecordPdf {
             var y = M
             if (index == 0) {
                 drawHeader(c, labels); y += HEADER
-                PdfText.draw(c, labels.title, M, y, W - 2 * M, 22f, 14f, bold = true)
-                PdfText.draw(c, labels.subtitle, M, y + 22f, W - 2 * M, 18f, 10.5f)
-                PdfText.draw(c, labels.schoolLine, M, y + 40f, W - 2 * M, 18f, 10.5f)
+                PdfText.draw(c, labels.title, M, y, W - 2 * M, 22f, 12.5f, bold = true, maxLines = 1)
+                PdfText.draw(c, labels.subtitle, M, y + 22f, W - 2 * M, 18f, 9f, maxLines = 1)
+                PdfText.draw(c, labels.schoolLine, M, y + 40f, W - 2 * M, 18f, 9f, maxLines = 1)
                 y += TITLE
             } else {
                 y += 20f
@@ -112,13 +112,14 @@ object TeacherRecordPdf {
         c.drawRect(M, top, right, top + TABLE_HEAD, fill)
         val heads = listOf(l.rollHeader, l.nameHeader) + l.gradeHeaders
         for (i in heads.indices) {
-            PdfText.draw(c, heads[i], edges[i + 1] + 1f, top, edges[i] - edges[i + 1] - 2f, TABLE_HEAD, 8.5f, bold = true)
+            PdfText.draw(c, heads[i], edges[i + 1] + 1f, top, edges[i] - edges[i + 1] - 2f, TABLE_HEAD, 7.5f, bold = true)
         }
         var y = top + TABLE_HEAD
         rows.forEach { s ->
             PdfText.draw(c, s.rollNumber.toString(), edges[1], y, rollW, ROW, 9f)
-            val name = s.nameAr.ifBlank { s.nameFr }
-            PdfText.draw(c, name, edges[2] + 3f, y, nameW - 6f, ROW, 9f, Layout.Alignment.ALIGN_NORMAL, maxLines = 1)
+            // الاسم بالعربية وتحته بالفرنسية
+            val names = listOf(s.nameAr, s.nameFr).filter { it.isNotBlank() }.joinToString("\n")
+            PdfText.draw(c, names, edges[2] + 3f, y, nameW - 6f, ROW, 8f, Layout.Alignment.ALIGN_NORMAL, maxLines = 2)
             y += ROW
         }
         // الخطوط
@@ -133,7 +134,7 @@ object TeacherRecordPdf {
 
     /** «توقيع الأستاذ» وتحته الطابع باسمه، في الجهة اليسرى من الصفحة. */
     private fun drawSignature(c: Canvas, top: Float, l: Labels) {
-        val boxW = 200f
+        val boxW = 230f
         val left = M + 10f
         PdfText.draw(c, l.signature, left, top, boxW, 16f, 10f, bold = true, maxLines = 1)
         val stampTop = top + 22f
