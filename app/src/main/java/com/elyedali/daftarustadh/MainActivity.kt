@@ -452,17 +452,37 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     screen == Screen.EXCHANGES -> {
-                        val title = stringResource(when (screen) {
-                            Screen.LEGISLATION -> R.string.menu_legislation
-                            Screen.EXCHANGES -> R.string.menu_exchanges
-                            else -> R.string.menu_books
-                        })
-                        androidx.compose.material3.Surface(androidx.compose.ui.Modifier.fillMaxSize(), color = androidx.compose.material3.MaterialTheme.colorScheme.background) {
-                            androidx.compose.foundation.layout.Column(androidx.compose.ui.Modifier.padding(16.dp)) {
-                                com.elyedali.daftarustadh.ui.ScreenHeader(title, { screen = Screen.HOME })
-                                ComingSoon(stringResource(R.string.coming_soon))
+                        val myAdText by remember { metaDao.observe(EXCHANGE_AD_KEY) }.collectAsState(initial = null)
+                        val myAd = remember(myAdText) {
+                            myAdText?.let { runCatching { com.elyedali.daftarustadh.exchange.ExchangeAd.fromJson(org.json.JSONObject(it)) }.getOrNull() }
+                        }
+                        var ownerId by remember { mutableStateOf<String?>(null) }
+                        LaunchedEffect(Unit) {
+                            ownerId = metaDao.get(EXCHANGE_OWNER_KEY) ?: UUID.randomUUID().toString().also {
+                                metaDao.put(AppMetaEntity(EXCHANGE_OWNER_KEY, it))
                             }
                         }
+                        val isFr = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
+                        val wilayaNames = remember { com.elyedali.daftarustadh.data.SchoolDirectory.wilayas(this@MainActivity).map { it.name } }
+                        val specialtyOptions = remember(isFr) {
+                            val order = listOf("IR", "AR", "HG", "PH", "IC", "FR", "ANG", "MATS", "SN", "PC", "TI", "LEG", "EPS")
+                            val year = CurriculumRepository.availableYears(this@MainActivity).lastOrNull()
+                            val subjects = if (year == null) emptyList()
+                                else CurriculumRepository.levels(this@MainActivity, year).flatMap { it.subjects }.distinctBy { it.code }
+                            subjects.sortedBy { order.indexOf(it.code).let { i -> if (i < 0) 99 else i } }
+                                .map { com.elyedali.daftarustadh.ui.SpecialtyOption(it.code, if (isFr) it.nameFr else it.nameAr) }
+                        }
+                        val owner = ownerId
+                        if (owner != null) com.elyedali.daftarustadh.ui.ExchangesScreen(
+                            title = stringResource(R.string.menu_exchanges),
+                            wilayas = wilayaNames,
+                            specialties = specialtyOptions,
+                            myAd = myAd,
+                            ownerId = owner,
+                            repository = com.elyedali.daftarustadh.exchange.NotConnectedExchangeRepository,
+                            onSaveMine = { ad -> metaDao.put(AppMetaEntity(EXCHANGE_AD_KEY, ad?.toJson()?.toString() ?: "")) },
+                            onBack = { screen = Screen.HOME }
+                        )
                     }
 
                     screen == Screen.ADMIN_CLASS && currentClass != null -> {
@@ -900,5 +920,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val KOUTOUBI_URL = "https://koutoubi.mr/"
+        const val EXCHANGE_AD_KEY = "exchange_my_ad"
+        const val EXCHANGE_OWNER_KEY = "exchange_owner_id"
     }
 }
