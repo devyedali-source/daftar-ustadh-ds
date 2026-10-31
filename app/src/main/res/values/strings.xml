@@ -136,7 +136,7 @@
     <string name="teacher_name_hint">يظهر في الطابع أسفل «توقيع الأستاذ» في سجلاتك</string>
     <string name="teacher_name_needed">اكتب اسمك كما تريده في الطابع:</string>
     <string name="rec_title">سجل نتائج مادة: %1$s</string>
-    <string name="rec_subtitle">القسم: %1$s — السنة الدراسية: %2$s — الضارب: %3$d</string>
+    <string name="rec_subtitle">القسم: \u2066%1$s\u2069 — السنة الدراسية: \u2066%2$s\u2069 — الضارب: %3$d</string>
     <string name="rec_roll">ر.ن</string>
     <string name="rec_name">الاسم الكامل</string>
     <string name="rec_test">اختبار ف%1$d</string>

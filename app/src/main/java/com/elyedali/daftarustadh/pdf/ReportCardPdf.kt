@@ -70,10 +70,10 @@ object ReportCardPdf {
         // معلومات الطالب
         val s = r.student
         val rowsAr = listOf(
-            "السنة الدراسية: ${info.schoolYear}",
+            "السنة الدراسية: \u2066${info.schoolYear}\u2069",
             "المؤسسة: ${info.schoolName}",
             "الاسم الكامل: ${s.nameAr.ifBlank { s.nameFr }}",
-            "القسم: ${info.className} — رقم النداء: ${s.rollNumber}",
+            "القسم: \u2066${info.className}\u2069 — رقم النداء: ${s.rollNumber}",
             "الرقم الوطني: ${s.nationalId} — الرقم المدرسي: ${s.rim}"
         )
         val rowsFr = listOf(
@@ -174,7 +174,7 @@ object ReportCardPdf {
 
         val rx = W - M - blockW
         var yy = y
-        cell(c, "التاريخ: ${info.date} — Date", rx, yy, blockW, 18f, 9f, lines = 1); yy += 22f
+        cell(c, "التاريخ: \u2066${info.date}\u2069 — Date", rx, yy, blockW, 18f, 9f, lines = 1); yy += 22f
         cell(c, "توقيع وختم مدير المؤسسة\nSignature et cachet du Directeur de l'Établissement", rx, yy, blockW, 28f, 8.5f, bold = true)
         yy += 70f
         val general = RemarkScale.remarkFor(r.generalAverage, info.generalRemarks)
