@@ -51,6 +51,7 @@ import com.elyedali.daftarustadh.data.Stage
 fun ClassesScreen(
     institution: InstitutionEntity,
     classes: List<ClassEntity>,
+    schoolNames: Map<String, String>,
     onCreate: (levelCode: String, number: Int, onResult: (Boolean) -> Unit) -> Unit,
     onOpen: (ClassEntity) -> Unit,
     onDelete: (ClassEntity) -> Unit,
@@ -83,6 +84,9 @@ fun ClassesScreen(
                             Column(Modifier.weight(1f)) {
                                 Text(c.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                                 Text(levelDescription(c.levelCode), style = MaterialTheme.typography.bodySmall)
+                                if (c.institutionId != institution.id) {
+                                    Text(schoolNames[c.institutionId] ?: "", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.primary)
+                                }
                                 if (level != null) {
                                     Text(
                                         stringResource(R.string.subjects_summary, level.subjects.size, level.totalCoefficient),
@@ -140,7 +144,7 @@ private fun CreateClassDialog(
     val duplicateMsg = stringResource(R.string.class_exists)
 
     fun nextNumber(code: String): Int =
-        (existing.filter { it.levelCode == code }.maxOfOrNull { it.number } ?: 0) + 1
+        (existing.filter { it.levelCode == code && it.institutionId == institution.id }.maxOfOrNull { it.number } ?: 0) + 1
 
     val number = numberText.toIntOrNull()
     val canCreate = levelCode != null && number != null && number in 1..99

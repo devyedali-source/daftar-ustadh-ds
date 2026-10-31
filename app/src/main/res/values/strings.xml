@@ -87,4 +87,21 @@
     <string name="import_empty_rows">%1$d سطر بلا اسم: تُرك</string>
     <string name="import_confirm">حفظ الطلاب</string>
     <string name="import_back_to_columns">رجوع إلى الأعمدة</string>
+    <string name="teacher_section">الأستاذ</string>
+    <string name="admin_section">وضع الإدارة</string>
+    <string name="my_classes">أقسامي</string>
+    <string name="open_class_file">فتح ملف قسم</string>
+    <string name="no_teaching_classes">لم يصلك أي قسم بعد. افتح ملف القسم الذي أرسله لك المكلّف بالقسم.</string>
+    <string name="share_class">مشاركة ملف القسم</string>
+    <string name="share_teacher_file">ملف القسم للأساتذة</string>
+    <string name="share_teacher_file_hint">رقم النداء والاسمان فقط، لإدراج النتائج</string>
+    <string name="share_full_file">ملف معلومات القسم الكامل</string>
+    <string name="share_full_file_hint">كل معلومات الطلاب، لأستاذ مكلّف بإدارة القسم</string>
+    <string name="share_chooser">إرسال ملف القسم</string>
+    <string name="file_invalid">هذا الملف ليس ملف قسم من دفتر الأستاذ DS، أو أنه تالف.</string>
+    <string name="file_conflict">القسم %1$s موجود عندك من مصدر آخر. اتفقوا على ملف واحد للقسم: ملف من أنشأه.</string>
+    <string name="file_ok_teacher">تمت إضافة القسم %1$s إلى «أقسامي».</string>
+    <string name="file_ok_full">تمت إضافة القسم %1$s إلى وضع الإدارة.</string>
+    <string name="file_counts">طلاب جدد: %1$d — طلاب حُدّثت معلوماتهم: %2$d</string>
+    <string name="ok">حسنًا</string>
 </resources>

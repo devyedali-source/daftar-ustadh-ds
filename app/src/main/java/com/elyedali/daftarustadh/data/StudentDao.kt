@@ -15,6 +15,9 @@ interface StudentDao {
     @Query("SELECT * FROM student WHERE classId = :classId")
     suspend fun listByClass(classId: String): List<StudentEntity>
 
+    @Query("SELECT * FROM student WHERE id = :id")
+    suspend fun getById(id: String): StudentEntity?
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun save(s: StudentEntity)
 

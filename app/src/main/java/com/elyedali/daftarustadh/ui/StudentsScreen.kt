@@ -47,8 +47,13 @@ fun StudentsScreen(
     onDelete: (StudentEntity) -> Unit,
     onImport: () -> Unit,
     onShowSubjects: () -> Unit,
-    onBack: () -> Unit
+    onBack: () -> Unit,
+    /** null في «أقسامي» عند الأستاذ: اللائحة للقراءة فقط، لأن مرجعها من أنشأ القسم. */
+    onShare: ((com.elyedali.daftarustadh.transfer.ClassFileType) -> Unit)? = null,
+    readOnly: Boolean = false,
+    subtitle: String? = null
 ) {
+    var shareMenu by remember { mutableStateOf(false) }
     var editing by remember { mutableStateOf<StudentEntity?>(null) }
     var adding by remember { mutableStateOf(false) }
     var toDelete by remember { mutableStateOf<StudentEntity?>(null) }
@@ -59,19 +64,49 @@ fun StudentsScreen(
                 TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
                 Column(Modifier.weight(1f)) {
                     Text(schoolClass.name, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                    if (subtitle != null) Text(subtitle, style = MaterialTheme.typography.bodySmall)
                     Text(stringResource(R.string.students_count, students.size), style = MaterialTheme.typography.bodySmall)
                 }
                 TextButton(onClick = onShowSubjects) { Text(stringResource(R.string.subjects)) }
             }
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                Button(onClick = { adding = true }, modifier = Modifier.weight(1f)) { Text("+  " + stringResource(R.string.add_student)) }
-                OutlinedButton(onClick = onImport, modifier = Modifier.weight(1f)) { Text(stringResource(R.string.import_excel)) }
+            if (!readOnly) {
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Button(onClick = { adding = true }, modifier = Modifier.weight(1f)) { Text("+  " + stringResource(R.string.add_student)) }
+                    OutlinedButton(onClick = onImport, modifier = Modifier.weight(1f)) { Text(stringResource(R.string.import_excel)) }
+                }
+            }
+            if (onShare != null && students.isNotEmpty()) {
+                Column {
+                    OutlinedButton(onClick = { shareMenu = true }, modifier = Modifier.fillMaxWidth()) {
+                        Text(stringResource(R.string.share_class))
+                    }
+                    androidx.compose.material3.DropdownMenu(expanded = shareMenu, onDismissRequest = { shareMenu = false }) {
+                        androidx.compose.material3.DropdownMenuItem(
+                            text = {
+                                Column {
+                                    Text(stringResource(R.string.share_teacher_file))
+                                    Text(stringResource(R.string.share_teacher_file_hint), style = MaterialTheme.typography.bodySmall)
+                                }
+                            },
+                            onClick = { shareMenu = false; onShare(com.elyedali.daftarustadh.transfer.ClassFileType.TEACHER) }
+                        )
+                        androidx.compose.material3.DropdownMenuItem(
+                            text = {
+                                Column {
+                                    Text(stringResource(R.string.share_full_file))
+                                    Text(stringResource(R.string.share_full_file_hint), style = MaterialTheme.typography.bodySmall)
+                                }
+                            },
+                            onClick = { shareMenu = false; onShare(com.elyedali.daftarustadh.transfer.ClassFileType.FULL) }
+                        )
+                    }
+                }
             }
             if (students.isEmpty()) Text(stringResource(R.string.no_students))
             LazyColumn {
                 items(students, key = { it.id }) { s ->
                     Row(
-                        Modifier.fillMaxWidth().clickable { editing = s }.padding(vertical = 10.dp),
+                        Modifier.fillMaxWidth().clickable(enabled = !readOnly) { editing = s }.padding(vertical = 10.dp),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text(s.rollNumber.toString(), Modifier.width(40.dp), fontWeight = FontWeight.Bold)

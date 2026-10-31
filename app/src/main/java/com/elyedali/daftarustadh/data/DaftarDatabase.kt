@@ -15,7 +15,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
  */
 @Database(
     entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class],
-    version = 4,
+    version = 5,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -69,13 +69,22 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 4 → 5: تمييز مؤسسة المستخدم، وتمييز أقسام الإدارة وأقسام الأستاذ. */
+        private val MIGRATION_4_5 = object : Migration(4, 5) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `institution` ADD COLUMN `isOwn` INTEGER NOT NULL DEFAULT 1")
+                db.execSQL("ALTER TABLE `school_class` ADD COLUMN `managed` INTEGER NOT NULL DEFAULT 1")
+                db.execSQL("ALTER TABLE `school_class` ADD COLUMN `teaching` INTEGER NOT NULL DEFAULT 0")
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5).build().also { instance = it }
             }
     }
 }

@@ -8,8 +8,16 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface InstitutionDao {
-    @Query("SELECT * FROM institution ORDER BY createdAt LIMIT 1")
+    /** المؤسسة التي سجّلها المستخدم بنفسه (وضع الإدارة). */
+    @Query("SELECT * FROM institution WHERE isOwn = 1 ORDER BY createdAt LIMIT 1")
     fun observe(): Flow<InstitutionEntity?>
+
+    /** كل المؤسسات: مؤسسته، والمؤسسات التي وصلته أقسامها في ملفات. */
+    @Query("SELECT * FROM institution")
+    fun observeAll(): Flow<List<InstitutionEntity>>
+
+    @Query("SELECT * FROM institution WHERE id = :id")
+    suspend fun getById(id: String): InstitutionEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun save(institution: InstitutionEntity)

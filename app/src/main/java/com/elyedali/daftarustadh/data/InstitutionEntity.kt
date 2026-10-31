@@ -1,5 +1,6 @@
 package com.elyedali.daftarustadh.data
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -16,7 +17,9 @@ data class InstitutionEntity(
     val schoolListId: String?,
     val stage: String,      // college | lycee | both
     val schoolYear: String,
-    val createdAt: Long
+    val createdAt: Long,
+    /** true = المؤسسة التي سجّلها المستخدم بنفسه؛ false = مؤسسة وصلت مع ملف قسم. */
+    @ColumnInfo(defaultValue = "1") val isOwn: Boolean = true
 )
 
 object Stage {
