@@ -108,12 +108,11 @@ fun ClassesScreen(
     }
     shown?.let { c -> ClassSubjectsDialog(c) { shown = null } }
     toDelete?.let { c ->
-        AlertDialog(
-            onDismissRequest = { toDelete = null },
-            title = { Text(stringResource(R.string.delete_class_title, c.name)) },
-            text = { Text(stringResource(R.string.delete_class_text)) },
-            confirmButton = { TextButton(onClick = { onDelete(c); toDelete = null }) { Text(stringResource(R.string.delete)) } },
-            dismissButton = { TextButton(onClick = { toDelete = null }) { Text(stringResource(R.string.cancel)) } }
+        SensitiveConfirmDialog(
+            title = stringResource(R.string.delete_class_title, c.name),
+            message = stringResource(R.string.delete_class_text),
+            onConfirm = { onDelete(c); toDelete = null },
+            onDismiss = { toDelete = null }
         )
     }
 }

@@ -53,4 +53,5 @@
     <string name="branch_d">série Sciences naturelles</string>
     <string name="branch_a">série Lettres modernes</string>
     <string name="branch_o">série Lettres originelles</string>
+    <string name="type_code_to_delete">Pour confirmer, saisissez le code %1$s</string>
 </resources>

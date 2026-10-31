@@ -53,4 +53,5 @@
     <string name="branch_d">شعبة العلوم الطبيعية</string>
     <string name="branch_a">شعبة الآداب العصرية</string>
     <string name="branch_o">شعبة الآداب الأصلية</string>
+    <string name="type_code_to_delete">للتأكيد اكتب الرمز %1$s</string>
 </resources>
