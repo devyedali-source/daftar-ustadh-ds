@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Daftar Al-Ustadh DS</string>
+    <string name="welcome_subtitle">Enseignement secondaire (collège et lycée)</string>
+    <string name="language">Langue de l\'interface</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+</resources>

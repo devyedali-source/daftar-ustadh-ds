@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">دفتر الأستاذ DS</string>
+    <string name="welcome_subtitle">التعليم الإعدادي والثانوي</string>
+    <string name="language">لغة الواجهة</string>
+    <string name="lang_ar">العربية</string>
+    <string name="lang_fr">Français</string>
+</resources>
