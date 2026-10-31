@@ -58,6 +58,7 @@ import com.elyedali.daftarustadh.ui.AllClassesScreen
 import com.elyedali.daftarustadh.ui.ClassHub
 import com.elyedali.daftarustadh.ui.AbsenceTab
 import com.elyedali.daftarustadh.ui.AbsenceSubject
+import com.elyedali.daftarustadh.ui.TextbookTab
 import com.elyedali.daftarustadh.ui.ComingSoon
 import com.elyedali.daftarustadh.ui.DocumentsTab
 import com.elyedali.daftarustadh.ui.KashfTab
@@ -123,6 +124,7 @@ class MainActivity : AppCompatActivity() {
         val gradeDao = db.gradeDao()
         val documentDao = db.documentDao()
         val absenceDao = db.absenceDao()
+        val textbookDao = db.textbookDao()
         val absenceImporter = com.elyedali.daftarustadh.transfer.AbsenceImporter(db)
         val metaDao = db.appMetaDao()
         val importer = ClassFileImporter(db)
@@ -167,6 +169,8 @@ class MainActivity : AppCompatActivity() {
                 val absenceSessions by absenceSessionsFlow.collectAsState(initial = emptyList())
                 val absencesFlow = remember(classId) { classId?.let { absenceDao.observeAbsences(it) } ?: flowOf(emptyList()) }
                 val absences by absencesFlow.collectAsState(initial = emptyList())
+                val textbookFlow = remember(classId) { classId?.let { textbookDao.observeByClass(it) } ?: flowOf(emptyList()) }
+                val textbookEntries by textbookFlow.collectAsState(initial = emptyList())
                 val recordsFlow = remember(classId) { classId?.let { gradeDao.observeRecords(it) } ?: flowOf(emptyList()) }
                 val records by recordsFlow.collectAsState(initial = emptyList())
                 val classGradesFlow = remember(classId) { classId?.let { gradeDao.observeClass(it) } ?: flowOf(emptyList()) }
@@ -458,6 +462,7 @@ class MainActivity : AppCompatActivity() {
                                 studentDao.deleteByClass(c.id)
                                 absenceDao.deleteAbsencesByClass(c.id)
                                 absenceDao.deleteSessionsByClass(c.id)
+                                textbookDao.deleteByClass(c.id)
                                 classDao.delete(c)
                             }
                         },
@@ -533,7 +538,8 @@ class MainActivity : AppCompatActivity() {
                             title = c.name,
                             subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_absence), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
+                                stringResource(R.string.tab_absence), stringResource(R.string.tab_textbook),
+                                stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
                             selected = hubTab,
                             onSelect = { hubTab = it },
                             onBack = { screen = hubBack }
@@ -584,7 +590,14 @@ class MainActivity : AppCompatActivity() {
                                     onUpload = openFile,
                                     onChooseSubjects = null
                                 )
-                                3 -> {
+                                3 -> TextbookTab(
+                                    classId = c.id,
+                                    subjects = subjects.map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
+                                    entries = textbookEntries,
+                                    onSave = { e -> scope.launch { textbookDao.save(e) } },
+                                    onDelete = { e -> scope.launch { textbookDao.delete(e) } }
+                                )
+                                4 -> {
                                     val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
                                     KashfTab(
                                         missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,

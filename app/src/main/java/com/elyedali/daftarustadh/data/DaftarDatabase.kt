@@ -16,8 +16,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 @Database(
     entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class,
         GradeEntity::class, TeacherSubjectEntity::class, SubjectRecordEntity::class,
-        DocumentEntity::class, AbsenceSessionEntity::class, AbsenceEntity::class],
-    version = 10,
+        DocumentEntity::class, AbsenceSessionEntity::class, AbsenceEntity::class, TextbookEntryEntity::class],
+    version = 11,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -28,6 +28,7 @@ abstract class DaftarDatabase : RoomDatabase() {
     abstract fun gradeDao(): GradeDao
     abstract fun documentDao(): DocumentDao
     abstract fun absenceDao(): AbsenceDao
+    abstract fun textbookDao(): TextbookDao
 
     companion object {
         @Volatile private var instance: DaftarDatabase? = null
@@ -152,13 +153,27 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 10 → 11: دفتر النصوص (للإدارة). */
+        private val MIGRATION_10_11 = object : Migration(10, 11) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `textbook_entry` (" +
+                        "`id` TEXT NOT NULL, `classId` TEXT NOT NULL, `date` TEXT NOT NULL, `startTime` TEXT NOT NULL, " +
+                        "`endTime` TEXT NOT NULL, `subjectCode` TEXT NOT NULL, `domain` TEXT NOT NULL, `topic` TEXT NOT NULL, " +
+                        "`durationMinutes` INTEGER NOT NULL, `signature` TEXT NOT NULL, `updatedAt` INTEGER NOT NULL, " +
+                        "PRIMARY KEY(`id`))"
+                )
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_textbook_entry_classId` ON `textbook_entry` (`classId`)")
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11).build().also { instance = it }
             }
     }
 }
