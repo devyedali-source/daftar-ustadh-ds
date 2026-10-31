@@ -39,4 +39,27 @@ interface GradeDao {
 
     @Query("DELETE FROM teacher_subject WHERE classId = :classId")
     suspend fun deleteTeacherSubjectsByClass(classId: String)
+
+    // ---- سجلات المواد المرفوعة عند الإدارة ----
+
+    @Query("SELECT * FROM subject_record WHERE classId = :classId")
+    fun observeRecords(classId: String): Flow<List<SubjectRecordEntity>>
+
+    @Query("SELECT * FROM subject_record WHERE classId = :classId AND subjectCode = :subjectCode")
+    suspend fun getRecord(classId: String, subjectCode: String): SubjectRecordEntity?
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun saveRecord(r: SubjectRecordEntity)
+
+    @Query("DELETE FROM subject_record WHERE classId = :classId")
+    suspend fun deleteRecordsByClass(classId: String)
+
+    @Query("SELECT COUNT(*) FROM grade WHERE classId = :classId AND subjectCode = :subjectCode")
+    suspend fun countGrades(classId: String, subjectCode: String): Int
+
+    @Query("DELETE FROM grade WHERE classId = :classId AND subjectCode = :subjectCode AND studentId = :studentId")
+    suspend fun clearStudentSubject(classId: String, subjectCode: String, studentId: String)
+
+    @Query("SELECT * FROM grade WHERE classId = :classId AND subjectCode = :subjectCode")
+    suspend fun listSubject(classId: String, subjectCode: String): List<GradeEntity>
 }

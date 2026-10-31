@@ -42,3 +42,17 @@ object GradeSlot {
     fun test(term: Int) = "T$term"
     fun exam(term: Int) = "E$term"
 }
+
+/**
+ * سجل مادة رُفع عند الإدارة (أو أُدخل يدويًا): اسم الأستاذ الذي يظهر في الكشف،
+ * وطريقة حساب معدل الاختبارات التي اختارها، وتاريخ الرفع.
+ * teacherName فارغ = إدخال يدوي من الإدارة.
+ */
+@Entity(tableName = "subject_record", primaryKeys = ["classId", "subjectCode"])
+data class SubjectRecordEntity(
+    val classId: String,
+    val subjectCode: String,
+    val teacherName: String,
+    val testsMode: String,
+    val receivedAt: Long
+)

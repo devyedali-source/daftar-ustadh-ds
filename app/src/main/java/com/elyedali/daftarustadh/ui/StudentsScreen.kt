@@ -51,7 +51,8 @@ fun StudentsScreen(
     /** null في «أقسامي» عند الأستاذ: اللائحة للقراءة فقط، لأن مرجعها من أنشأ القسم. */
     onShare: ((com.elyedali.daftarustadh.transfer.ClassFileType) -> Unit)? = null,
     readOnly: Boolean = false,
-    subtitle: String? = null
+    subtitle: String? = null,
+    onOpenResults: (() -> Unit)? = null
 ) {
     var shareMenu by remember { mutableStateOf(false) }
     var editing by remember { mutableStateOf<StudentEntity?>(null) }
@@ -74,6 +75,9 @@ fun StudentsScreen(
                     Button(onClick = { adding = true }, modifier = Modifier.weight(1f)) { Text("+  " + stringResource(R.string.add_student)) }
                     OutlinedButton(onClick = onImport, modifier = Modifier.weight(1f)) { Text(stringResource(R.string.import_excel)) }
                 }
+            }
+            if (onOpenResults != null) {
+                Button(onClick = onOpenResults, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.class_results)) }
             }
             if (onShare != null && students.isNotEmpty()) {
                 Column {

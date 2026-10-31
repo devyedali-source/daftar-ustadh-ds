@@ -43,4 +43,12 @@ object GradeMath {
     /** عرض النقطة بأرقام لاتينية وبرقمين بعد الفاصلة على الأكثر: 12.5، 13.75، 14. */
     fun format(v: Double?): String =
         if (v == null) "" else BigDecimal.valueOf(v).setScale(2, RoundingMode.HALF_UP).stripTrailingZeros().toPlainString()
+
+    /** هل نتائج الطالب في المادة مكتملة لكشف هذا الفصل؟ */
+    fun isComplete(term: Int, grades: Map<String, Double>): Boolean = when (term) {
+        1 -> grades[GradeSlot.E1] != null
+        2 -> grades[GradeSlot.E2] != null
+        else -> listOf(1, 2, 3).any { grades[GradeSlot.test(it)] != null } &&
+            grades[GradeSlot.E1] != null && grades[GradeSlot.E2] != null && grades[GradeSlot.E3] != null
+    }
 }

@@ -147,4 +147,27 @@
     <string name="rec_file_name">سجل %1$s - %2$s - Relevé %3$s - %2$s - %4$s.pdf</string>
     <string name="share_record">Envoyer le relevé</string>
     <string name="rec_school_line">Wilaya : %1$s — Établissement : %2$s</string>
+    <string name="send_record">Envoyer mon relevé au responsable de la classe</string>
+    <string name="send_record_incomplete">Toutes les cases ne sont pas remplies (%1$d sur %2$d). Envoyer quand même ? Vous pourrez envoyer une version à jour plus tard, qui remplacera celle-ci.</string>
+    <string name="send">Envoyer</string>
+    <string name="class_results">Notes et bulletins</string>
+    <string name="class_results_title">Notes de la classe %1$s</string>
+    <string name="subjects_complete">Matières complètes : %1$d sur %2$d</string>
+    <string name="all_subjects_complete">Toutes les matières de ce trimestre sont complètes.</string>
+    <string name="upload_record">Charger un relevé d\'enseignant</string>
+    <string name="upload_record_hint">Ou ouvrez le fichier du relevé directement depuis WhatsApp. Pour saisir une matière à la main, touchez-la.</string>
+    <string name="source_teacher">Chargé depuis le relevé de : %1$s</string>
+    <string name="source_manual">Saisie manuelle</string>
+    <string name="source_none">Pas encore chargé</string>
+    <string name="missing_students">%1$d manquants</string>
+    <string name="record_check_title">Relevé %1$s — classe %2$s</string>
+    <string name="record_teacher">Enseignant : %1$s</string>
+    <string name="record_matched">Élèves correspondants : %1$d</string>
+    <string name="record_unknown">Dans le relevé mais pas dans votre classe (non chargés) : %1$s</string>
+    <string name="record_missing">Dans votre classe mais pas dans le relevé : %1$s</string>
+    <string name="record_replace">Cette matière a déjà des notes ; celles de ce relevé les remplaceront.</string>
+    <string name="record_upload">Charger les notes</string>
+    <string name="record_wrong_class">Ce relevé ne correspond à aucune de vos classes : %1$s, classe %2$s, wilaya %3$s, année %4$s. Vérifiez qu\'il vient du même établissement, de la même classe et de la même année.</string>
+    <string name="record_not_managed">La classe %1$s n\'est chez vous que dans « Mes classes ». Pour charger les relevés de vos collègues, la classe doit être en mode administration.</string>
+    <string name="record_done">Notes de %1$s chargées dans la classe %2$s.</string>
 </resources>

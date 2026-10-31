@@ -15,8 +15,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase
  */
 @Database(
     entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class,
-        GradeEntity::class, TeacherSubjectEntity::class],
-    version = 6,
+        GradeEntity::class, TeacherSubjectEntity::class, SubjectRecordEntity::class],
+    version = 7,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -98,13 +98,25 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 6 → 7: سجلات المواد المرفوعة عند الإدارة. */
+        private val MIGRATION_6_7 = object : Migration(6, 7) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `subject_record` (" +
+                        "`classId` TEXT NOT NULL, `subjectCode` TEXT NOT NULL, `teacherName` TEXT NOT NULL, " +
+                        "`testsMode` TEXT NOT NULL, `receivedAt` INTEGER NOT NULL, " +
+                        "PRIMARY KEY(`classId`, `subjectCode`))"
+                )
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7).build().also { instance = it }
             }
     }
 }
