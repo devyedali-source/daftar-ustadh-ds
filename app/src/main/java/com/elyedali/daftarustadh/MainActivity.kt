@@ -452,10 +452,8 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     screen == Screen.EXCHANGES -> {
-                        val myAdText by remember { metaDao.observe(EXCHANGE_AD_KEY) }.collectAsState(initial = null)
-                        val myAd = remember(myAdText) {
-                            myAdText?.let { runCatching { com.elyedali.daftarustadh.exchange.ExchangeAd.fromJson(org.json.JSONObject(it)) }.getOrNull() }
-                        }
+                        val myPostsText by remember { metaDao.observe(EXCHANGE_POSTS_KEY) }.collectAsState(initial = null)
+                        val myPosts = remember(myPostsText) { com.elyedali.daftarustadh.exchange.ExchangeAd.listFromJson(myPostsText) }
                         var ownerId by remember { mutableStateOf<String?>(null) }
                         LaunchedEffect(Unit) {
                             ownerId = metaDao.get(EXCHANGE_OWNER_KEY) ?: UUID.randomUUID().toString().also {
@@ -477,10 +475,10 @@ class MainActivity : AppCompatActivity() {
                             title = stringResource(R.string.menu_exchanges),
                             wilayas = wilayaNames,
                             specialties = specialtyOptions,
-                            myAd = myAd,
+                            myPosts = myPosts,
                             ownerId = owner,
                             repository = com.elyedali.daftarustadh.exchange.NotConnectedExchangeRepository,
-                            onSaveMine = { ad -> metaDao.put(AppMetaEntity(EXCHANGE_AD_KEY, ad?.toJson()?.toString() ?: "")) },
+                            onSaveMyPosts = { list -> metaDao.put(AppMetaEntity(EXCHANGE_POSTS_KEY, com.elyedali.daftarustadh.exchange.ExchangeAd.listToJson(list))) },
                             onBack = { screen = Screen.HOME }
                         )
                     }
@@ -920,7 +918,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val KOUTOUBI_URL = "https://koutoubi.mr/"
-        const val EXCHANGE_AD_KEY = "exchange_my_ad"
+        const val EXCHANGE_POSTS_KEY = "exchange_my_posts"
         const val EXCHANGE_OWNER_KEY = "exchange_owner_id"
     }
 }
