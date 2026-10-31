@@ -228,4 +228,14 @@
     <string name="doc_body">Texte</string>
     <string name="pdf_pages">%1$d pages — touchez une page pour l\'agrandir</string>
     <string name="share">Partager</string>
+    <string name="leg_summary">%1$d textes — %2$d articles</string>
+    <string name="leg_original_pdf">Version scannée</string>
+    <string name="leg_search_hint">Rechercher dans les articles (mot ou numéro)</string>
+    <string name="leg_results">Résultats : %1$d</string>
+    <string name="leg_articles_count">%1$d articles</string>
+    <string name="leg_position">Article %1$d sur %2$d</string>
+    <string name="leg_prev">Précédent</string>
+    <string name="leg_next">Suivant</string>
+    <string name="leg_copy">Copier</string>
+    <string name="leg_copied">Texte copié</string>
 </resources>
