@@ -11,6 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.LaunchedEffect
@@ -30,6 +31,8 @@ import com.elyedali.daftarustadh.data.GradeEntity
 import com.elyedali.daftarustadh.data.RemarkScale
 import com.elyedali.daftarustadh.data.TeacherSubjectEntity
 import com.elyedali.daftarustadh.data.TestsMode
+import com.elyedali.daftarustadh.data.SchoolDirectory
+import com.elyedali.daftarustadh.pdf.TeacherRecordPdf
 import com.elyedali.daftarustadh.data.DaftarDatabase
 import com.elyedali.daftarustadh.transfer.ClassFile
 import com.elyedali.daftarustadh.transfer.ClassFileCodec
@@ -53,6 +56,8 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.UUID
+
+private const val TEACHER_NAME_KEY = "teacher_name"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS }
 
@@ -113,6 +118,36 @@ class MainActivity : AppCompatActivity() {
                 val mySubjects by mySubjectsFlow.collectAsState(initial = emptyList())
                 val remarksText by remember { metaDao.observe(RemarkScale.KEY) }.collectAsState(initial = null)
                 val remarkScale = remember(remarksText) { RemarkScale.decode(remarksText) }
+                val teacherName by remember { metaDao.observe(TEACHER_NAME_KEY) }.collectAsState(initial = null)
+                var askNameFor by remember { mutableStateOf<String?>(null) }
+
+                /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
+                fun printRecord(c: ClassEntity, code: String, name: String) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
+                            ?.subjects?.firstOrNull { it.code == code } ?: return@launch
+                        val list = studentDao.listByClass(c.id)
+                        val isFr = resources.configuration.locales[0].language == "fr"
+                        val subjectName = if (isFr) subject.nameFr else subject.nameAr
+                        val wilaya = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)
+                        val labels = TeacherRecordPdf.Labels(
+                            title = getString(R.string.rec_title, subjectName),
+                            subtitle = getString(R.string.rec_subtitle, c.name, c.schoolYear, subject.coefficient),
+                            schoolLine = getString(R.string.rec_school_line, if (isFr && wilaya != null) wilaya.nameFr else owner.wilaya, owner.schoolName),
+                            rollHeader = getString(R.string.rec_roll),
+                            nameHeader = getString(R.string.rec_name),
+                            gradeHeaders = (1..3).flatMap { t -> listOf(getString(R.string.rec_test, t), getString(R.string.rec_exam, t)) },
+                            signature = getString(R.string.rec_signature),
+                            stampLines = listOf(name, getString(R.string.rec_stamp_subject, subjectName)),
+                            page = { p, n -> getString(R.string.rec_page, p, n) }
+                        )
+                        val bytes = withContext(Dispatchers.Default) { TeacherRecordPdf.build(list, labels) }
+                        val fileName = getString(R.string.rec_file_name, subject.nameAr, c.name, subject.nameFr, c.schoolYear)
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, fileName, getString(R.string.share_record), "application/pdf")
+                    }
+                }
 
                 // فتح ملف قسم: من الواتساب أو من زر «فتح ملف قسم»
                 fun processFile(uri: Uri) {
@@ -273,14 +308,23 @@ class MainActivity : AppCompatActivity() {
                                 }
                             },
                             onTestsMode = { mode -> scope.launch { gradeDao.saveTeacherSubject(TeacherSubjectEntity(c.id, code, mode)) } },
+                            onPrintRecord = {
+                                val n = teacherName
+                                if (n.isNullOrBlank()) askNameFor = code else printRecord(c, code, n)
+                            },
                             onBack = back
                         )
                     }
 
                     screen == Screen.REMARKS -> RemarksSettingsScreen(
                         scale = remarkScale,
-                        onSave = { list ->
-                            scope.launch { metaDao.put(AppMetaEntity(RemarkScale.KEY, RemarkScale.encode(list))); screen = Screen.HOME }
+                        teacherName = teacherName.orEmpty(),
+                        onSave = { list, name ->
+                            scope.launch {
+                                metaDao.put(AppMetaEntity(RemarkScale.KEY, RemarkScale.encode(list)))
+                                metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, name))
+                                screen = Screen.HOME
+                            }
                         },
                         onBack = { screen = Screen.HOME }
                     )
@@ -302,6 +346,29 @@ class MainActivity : AppCompatActivity() {
                         onLanguageSelected = { tag ->
                             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag))
                         }
+                    )
+                }
+
+                askNameFor?.let { code ->
+                    var typed by remember { mutableStateOf("") }
+                    AlertDialog(
+                        onDismissRequest = { askNameFor = null },
+                        title = { Text(stringResource(R.string.teacher_name)) },
+                        text = {
+                            androidx.compose.foundation.layout.Column {
+                                Text(stringResource(R.string.teacher_name_needed))
+                                OutlinedTextField(typed, { typed = it }, singleLine = true)
+                            }
+                        },
+                        confirmButton = {
+                            TextButton(enabled = typed.isNotBlank(), onClick = {
+                                val n = typed.trim()
+                                askNameFor = null
+                                scope.launch { metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, n)) }
+                                currentClass?.let { printRecord(it, code, n) }
+                            }) { Text(stringResource(R.string.save)) }
+                        },
+                        dismissButton = { TextButton(onClick = { askNameFor = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
 

@@ -41,7 +41,8 @@ private class EditableLevel(min: String, ar: String, fr: String) {
 @Composable
 fun RemarksSettingsScreen(
     scale: List<RemarkLevel>,
-    onSave: (List<RemarkLevel>) -> Unit,
+    teacherName: String,
+    onSave: (List<RemarkLevel>, String) -> Unit,
     onBack: () -> Unit
 ) {
     val rows = remember(scale) {
@@ -49,6 +50,7 @@ fun RemarksSettingsScreen(
             scale.sortedBy { it.min }.forEach { add(EditableLevel(GradeMath.format(it.min), it.textAr, it.textFr)) }
         }
     }
+    val name = remember(teacherName) { androidx.compose.runtime.mutableStateOf(teacherName) }
     val parsed = rows.map { r -> GradeMath.parse(r.min.value) }
     val valid = rows.isNotEmpty() && parsed.all { it != null } && parsed.contains(0.0) &&
         parsed.toSet().size == parsed.size && rows.all { it.ar.value.isNotBlank() }
@@ -59,11 +61,18 @@ fun RemarksSettingsScreen(
                 TextButton(onClick = onBack) { Text(stringResource(R.string.back)) }
                 Text(stringResource(R.string.remarks_settings), style = MaterialTheme.typography.titleLarge)
             }
+            OutlinedTextField(
+                name.value, { name.value = it },
+                label = { Text(stringResource(R.string.teacher_name)) },
+                supportingText = { Text(stringResource(R.string.teacher_name_hint)) },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth()
+            )
             Text(stringResource(R.string.remarks_help), style = MaterialTheme.typography.bodySmall)
             if (!valid) Text(stringResource(R.string.remarks_invalid), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 Button(enabled = valid, onClick = {
-                    onSave(rows.map { RemarkLevel(GradeMath.parse(it.min.value)!!, it.ar.value.trim(), it.fr.value.trim().ifBlank { it.ar.value.trim() }) })
+                    onSave(rows.map { RemarkLevel(GradeMath.parse(it.min.value)!!, it.ar.value.trim(), it.fr.value.trim().ifBlank { it.ar.value.trim() }) }, name.value.trim())
                 }) { Text(stringResource(R.string.save)) }
                 OutlinedButton(onClick = { rows.add(EditableLevel("", "", "")) }) { Text("+  " + stringResource(R.string.add_level)) }
                 TextButton(onClick = {

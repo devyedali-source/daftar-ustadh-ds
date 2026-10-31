@@ -61,6 +61,7 @@ fun GradesScreen(
     scale: List<RemarkLevel>,
     onSetGrade: (studentId: String, slot: String, value: Double?) -> Unit,
     onTestsMode: (String) -> Unit,
+    onPrintRecord: () -> Unit,
     onBack: () -> Unit
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -81,6 +82,7 @@ fun GradesScreen(
                     Text(if (isFr) subject.nameFr else subject.nameAr, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                     Text("${schoolClass.name} — ${stringResource(R.string.coefficient)} ${subject.coefficient}", style = MaterialTheme.typography.bodySmall)
                 }
+                TextButton(onClick = onPrintRecord) { Text(stringResource(R.string.print_record)) }
             }
             TabRow(selectedTabIndex = term - 1) {
                 listOf(R.string.term_1, R.string.term_2, R.string.term_3).forEachIndexed { i, res ->

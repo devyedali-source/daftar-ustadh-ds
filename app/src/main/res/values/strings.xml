@@ -131,4 +131,20 @@
     <string name="from_average">من</string>
     <string name="remark_ar">الملاحظة بالعربية</string>
     <string name="remark_fr">الملاحظة بالفرنسية</string>
+    <string name="print_record">سحب السجل</string>
+    <string name="teacher_name">اسم الأستاذ</string>
+    <string name="teacher_name_hint">يظهر في الطابع أسفل «توقيع الأستاذ» في سجلاتك</string>
+    <string name="teacher_name_needed">اكتب اسمك كما تريده في الطابع:</string>
+    <string name="rec_title">سجل نتائج مادة: %1$s</string>
+    <string name="rec_subtitle">القسم: %1$s — السنة الدراسية: %2$s — الضارب: %3$d</string>
+    <string name="rec_roll">ر.ن</string>
+    <string name="rec_name">الاسم الكامل</string>
+    <string name="rec_test">اختبار ف%1$d</string>
+    <string name="rec_exam">امتحان ف%1$d</string>
+    <string name="rec_signature">توقيع الأستاذ</string>
+    <string name="rec_stamp_subject">أستاذ مادة: %1$s</string>
+    <string name="rec_page">صفحة %1$d من %2$d</string>
+    <string name="rec_file_name">سجل %1$s - %2$s - Relevé %3$s - %2$s - %4$s.pdf</string>
+    <string name="share_record">إرسال سجل الأستاذ</string>
+    <string name="rec_school_line">الولاية: %1$s — المؤسسة: %2$s</string>
 </resources>

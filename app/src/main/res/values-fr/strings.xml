@@ -131,4 +131,20 @@
     <string name="from_average">À partir de</string>
     <string name="remark_ar">Appréciation en arabe</string>
     <string name="remark_fr">Appréciation en français</string>
+    <string name="print_record">Imprimer le relevé</string>
+    <string name="teacher_name">Nom de l\'enseignant</string>
+    <string name="teacher_name_hint">Apparaît dans le cachet sous « Signature du professeur » sur vos relevés</string>
+    <string name="teacher_name_needed">Écrivez votre nom tel qu\'il doit apparaître dans le cachet :</string>
+    <string name="rec_title">Relevé de notes : %1$s</string>
+    <string name="rec_subtitle">Classe : %1$s — Année scolaire : %2$s — Coef. %3$d</string>
+    <string name="rec_roll">N°</string>
+    <string name="rec_name">Nom et prénom</string>
+    <string name="rec_test">Devoir T%1$d</string>
+    <string name="rec_exam">Compo T%1$d</string>
+    <string name="rec_signature">Signature du professeur</string>
+    <string name="rec_stamp_subject">Professeur de : %1$s</string>
+    <string name="rec_page">Page %1$d sur %2$d</string>
+    <string name="rec_file_name">سجل %1$s - %2$s - Relevé %3$s - %2$s - %4$s.pdf</string>
+    <string name="share_record">Envoyer le relevé</string>
+    <string name="rec_school_line">Wilaya : %1$s — Établissement : %2$s</string>
 </resources>
