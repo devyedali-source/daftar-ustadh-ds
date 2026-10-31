@@ -36,10 +36,11 @@ data class RecordFile(
     val className: String get() = "$levelCode$number"
 }
 
-/** يقرأ أي ملف ‎.dsq: ملف قسم أو سجل أستاذ. */
+/** يقرأ أي ملف ‎.dsq: ملف قسم، أو سجل نتائج أستاذ، أو سجل غياب أستاذ. */
 object TransferCodec {
     private const val FORMAT = "daftar-ustadh-ds"
     const val TYPE_RECORD = "teacher_record"
+    const val TYPE_ABSENCE = "teacher_absence"
 
     private fun gzip(json: JSONObject): ByteArray {
         val out = ByteArrayOutputStream()
@@ -47,7 +48,7 @@ object TransferCodec {
         return out.toByteArray()
     }
 
-    /** يرجع ClassFile أو RecordFile، أو يرمي InvalidClassFileException. */
+    /** يرجع ClassFile أو RecordFile أو AbsenceFile، أو يرمي InvalidClassFileException. */
     fun decodeAny(bytes: ByteArray): Any {
         val json = try {
             JSONObject(GZIPInputStream(ByteArrayInputStream(bytes)).use { it.readBytes() }.toString(Charsets.UTF_8))
@@ -55,8 +56,14 @@ object TransferCodec {
             throw InvalidClassFileException()
         }
         if (json.optString("format") != FORMAT) throw InvalidClassFileException()
-        return if (json.optString("type") == TYPE_RECORD) decodeRecord(json) else ClassFileCodec.decode(bytes)
+        return when (json.optString("type")) {
+            TYPE_RECORD -> decodeRecord(json)
+            TYPE_ABSENCE -> AbsenceFile.fromJson(json)
+            else -> ClassFileCodec.decode(bytes)
+        }
     }
+
+    fun encodeAbsence(a: AbsenceFile): ByteArray = gzip(a.toJson(FORMAT, TYPE_ABSENCE))
 
     fun encodeRecord(r: RecordFile): ByteArray = gzip(
         JSONObject()

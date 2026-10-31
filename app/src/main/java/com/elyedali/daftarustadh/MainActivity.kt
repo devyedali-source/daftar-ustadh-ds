@@ -56,6 +56,8 @@ import com.elyedali.daftarustadh.ui.ResultsStatusScreen
 import com.elyedali.daftarustadh.ui.StatsScreen
 import com.elyedali.daftarustadh.ui.AllClassesScreen
 import com.elyedali.daftarustadh.ui.ClassHub
+import com.elyedali.daftarustadh.ui.AbsenceTab
+import com.elyedali.daftarustadh.ui.AbsenceSubject
 import com.elyedali.daftarustadh.ui.ComingSoon
 import com.elyedali.daftarustadh.ui.DocumentsTab
 import com.elyedali.daftarustadh.ui.KashfTab
@@ -120,6 +122,8 @@ class MainActivity : AppCompatActivity() {
         val studentDao = db.studentDao()
         val gradeDao = db.gradeDao()
         val documentDao = db.documentDao()
+        val absenceDao = db.absenceDao()
+        val absenceImporter = com.elyedali.daftarustadh.transfer.AbsenceImporter(db)
         val metaDao = db.appMetaDao()
         val importer = ClassFileImporter(db)
         // بيانات تجريبية (نسخ التجربة فقط الآن؛ وبعد تسجيل الدخول لحساب صاحب التطبيق فقط)
@@ -138,6 +142,7 @@ class MainActivity : AppCompatActivity() {
                 var showSubjects by remember { mutableStateOf(false) }
                 var fileResult by remember { mutableStateOf<FileResult?>(null) }
                 val inst = institution
+                val isFrUi = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
 
                 val managedFlow = remember(inst?.schoolYear) {
                     if (inst == null) flowOf(emptyList()) else classDao.observeManaged(inst.schoolYear)
@@ -157,6 +162,11 @@ class MainActivity : AppCompatActivity() {
                 val documentsFlow = remember(classId) { classId?.let { documentDao.observeByClass(it) } ?: flowOf(emptyList()) }
                 val documents by documentsFlow.collectAsState(initial = emptyList())
                 var recordCheck by remember { mutableStateOf<RecordCheck.Ready?>(null) }
+                var absenceCheck by remember { mutableStateOf<com.elyedali.daftarustadh.transfer.AbsenceCheck.Ready?>(null) }
+                val absenceSessionsFlow = remember(classId) { classId?.let { absenceDao.observeSessions(it) } ?: flowOf(emptyList()) }
+                val absenceSessions by absenceSessionsFlow.collectAsState(initial = emptyList())
+                val absencesFlow = remember(classId) { classId?.let { absenceDao.observeAbsences(it) } ?: flowOf(emptyList()) }
+                val absences by absencesFlow.collectAsState(initial = emptyList())
                 val recordsFlow = remember(classId) { classId?.let { gradeDao.observeRecords(it) } ?: flowOf(emptyList()) }
                 val records by recordsFlow.collectAsState(initial = emptyList())
                 val classGradesFlow = remember(classId) { classId?.let { gradeDao.observeClass(it) } ?: flowOf(emptyList()) }
@@ -256,6 +266,30 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                /** إرسال غياب مادة الأستاذ في القسم إلى الإدارة (ملف ‎.dsq عبر الواتساب). */
+                fun sendAbsence(c: ClassEntity, code: String, name: String) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
+                            ?.subjects?.firstOrNull { it.code == code } ?: return@launch
+                        val sessions = absenceDao.listSessions(c.id, code).map { s ->
+                            com.elyedali.daftarustadh.transfer.AbsenceFileSession(
+                                s.date, s.period, absenceDao.listAbsences(s.id).map { it.studentId }
+                            )
+                        }
+                        val file = com.elyedali.daftarustadh.transfer.AbsenceFile(
+                            institutionId = owner.id, wilaya = owner.wilaya, schoolName = owner.schoolName,
+                            schoolListId = owner.schoolListId, classId = c.id, schoolYear = c.schoolYear,
+                            levelCode = c.levelCode, number = c.number, subjectCode = code,
+                            subjectNameAr = subject.nameAr, subjectNameFr = subject.nameFr,
+                            teacherName = name, sessions = sessions
+                        )
+                        val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeAbsence(file) }
+                        ShareHelper.share(this@MainActivity, bytes, file.fileName(), getString(R.string.abs_share_title))
+                    }
+                }
+                var askNameAbsence by remember { mutableStateOf(false) }
+
                 /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
                 fun printRecord(c: ClassEntity, code: String, name: String, blank: Boolean = false) {
                     scope.launch {
@@ -302,6 +336,13 @@ class MainActivity : AppCompatActivity() {
                                         getString(R.string.record_wrong_class, chk.file.schoolName, chk.file.className, chk.file.wilaya, chk.file.schoolYear)
                                     )
                                     is RecordCheck.NotManaged -> FileResult.Message(getString(R.string.record_not_managed, chk.file.className))
+                                }
+                                is com.elyedali.daftarustadh.transfer.AbsenceFile -> when (val chk = absenceImporter.check(any)) {
+                                    is com.elyedali.daftarustadh.transfer.AbsenceCheck.Ready -> { absenceCheck = chk; null }
+                                    is com.elyedali.daftarustadh.transfer.AbsenceCheck.WrongClass -> FileResult.Message(
+                                        getString(R.string.record_wrong_class, chk.file.schoolName, chk.file.className, chk.file.wilaya, chk.file.schoolYear)
+                                    )
+                                    is com.elyedali.daftarustadh.transfer.AbsenceCheck.NotManaged -> FileResult.Message(getString(R.string.record_not_managed, chk.file.className))
                                 }
                                 is ClassFile -> FileResult.Done(importer.save(any))
                                 else -> FileResult.Invalid
@@ -415,6 +456,8 @@ class MainActivity : AppCompatActivity() {
                                 documentDao.deleteByClass(c.id)
                                 gradeDao.deleteTeacherSubjectsByClass(c.id)
                                 studentDao.deleteByClass(c.id)
+                                absenceDao.deleteAbsencesByClass(c.id)
+                                absenceDao.deleteSessionsByClass(c.id)
                                 classDao.delete(c)
                             }
                         },
@@ -490,7 +533,7 @@ class MainActivity : AppCompatActivity() {
                             title = c.name,
                             subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
+                                stringResource(R.string.tab_absence), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
                             selected = hubTab,
                             onSelect = { hubTab = it },
                             onBack = { screen = hubBack }
@@ -501,7 +544,7 @@ class MainActivity : AppCompatActivity() {
                                         schoolClass = c,
                                         students = students,
                                         onSave = { s -> scope.launch { studentDao.save(s) } },
-                                        onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); studentDao.delete(s) } },
+                                        onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s) } },
                                         onImport = { screen = Screen.IMPORT },
                                         onShowSubjects = { showSubjects = true },
                                         onBack = { screen = hubBack },
@@ -528,7 +571,20 @@ class MainActivity : AppCompatActivity() {
                                     showHeader = false,
                                     showGenerate = false
                                 )
-                                2 -> {
+                                2 -> AbsenceTab(
+                                    classId = c.id,
+                                    students = students,
+                                    subjects = subjects.map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
+                                    sessions = absenceSessions,
+                                    absences = absences,
+                                    isAdmin = true,
+                                    onSave = { old, session, ids -> scope.launch { absenceDao.replaceSession(old, session, ids) } },
+                                    onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
+                                    onSend = null,
+                                    onUpload = openFile,
+                                    onChooseSubjects = null
+                                )
+                                3 -> {
                                     val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
                                     KashfTab(
                                         missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
@@ -547,7 +603,7 @@ class MainActivity : AppCompatActivity() {
                             title = c.name,
                             subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
+                                stringResource(R.string.tab_absence), stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
                             selected = hubTab,
                             onSelect = { hubTab = it },
                             onBack = { screen = hubBack }
@@ -581,7 +637,30 @@ class MainActivity : AppCompatActivity() {
                                     onBack = { screen = hubBack },
                                     showHeader = false
                                 )
-                                2 -> ComingSoon(stringResource(R.string.coming_soon))
+                                2 -> {
+                                    val mine = mySubjects.map { it.subjectCode }.toSet()
+                                    val classSubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                                    AbsenceTab(
+                                        classId = c.id,
+                                        students = students,
+                                        subjects = classSubjects.filter { it.code in mine }
+                                            .map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
+                                        sessions = absenceSessions,
+                                        absences = absences,
+                                        isAdmin = false,
+                                        onSave = { old, session, ids ->
+                                            scope.launch { absenceDao.replaceSession(old, session.copy(recordedBy = teacherName.orEmpty()), ids) }
+                                        },
+                                        onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
+                                        onSend = { code ->
+                                            val n = teacherName
+                                            if (n.isNullOrBlank()) { askNameAbsence = true; askNameFor = code } else sendAbsence(c, code, n)
+                                        },
+                                        onUpload = null,
+                                        onChooseSubjects = { hubTab = 1 }
+                                    )
+                                }
+                                3 -> ComingSoon(stringResource(R.string.coming_soon))
                                 else -> DocumentsTab(
                                     classId = c.id,
                                     documents = documents,
@@ -603,7 +682,7 @@ class MainActivity : AppCompatActivity() {
                             schoolClass = c,
                             students = students,
                             onSave = { s -> scope.launch { studentDao.save(s) } },
-                            onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); studentDao.delete(s) } },
+                            onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s) } },
                             onImport = { screen = Screen.IMPORT },
                             onShowSubjects = { showSubjects = true },
                             onBack = { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES },
@@ -788,7 +867,7 @@ class MainActivity : AppCompatActivity() {
                 askNameFor?.let { code ->
                     var typed by remember { mutableStateOf("") }
                     AlertDialog(
-                        onDismissRequest = { askNameFor = null; askNameSends = false },
+                        onDismissRequest = { askNameFor = null; askNameSends = false; askNameAbsence = false },
                         title = { Text(stringResource(R.string.teacher_name)) },
                         text = {
                             androidx.compose.foundation.layout.Column {
@@ -803,6 +882,7 @@ class MainActivity : AppCompatActivity() {
                                 scope.launch { metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, n)) }
                                 val doc = askNameDoc
                                 when {
+                                    askNameAbsence -> { askNameAbsence = false; currentClass?.let { sendAbsence(it, code, n) } }
                                     doc != null -> { askNameDoc = null; exportDocument(doc, n) }
                                     askNameSends -> { askNameSends = false; sendConfirm = code }
                                     else -> currentClass?.let { printRecord(it, code, n, askNameBlank) }
@@ -866,6 +946,37 @@ class MainActivity : AppCompatActivity() {
                             }) { Text(stringResource(R.string.record_upload)) }
                         },
                         dismissButton = { TextButton(onClick = { recordCheck = null }) { Text(stringResource(R.string.cancel)) } }
+                    )
+                }
+
+                absenceCheck?.let { chk ->
+                    val isFr = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
+                    val subjectName = if (isFr) chk.file.subjectNameFr else chk.file.subjectNameAr
+                    AlertDialog(
+                        onDismissRequest = { absenceCheck = null },
+                        title = { Text(stringResource(R.string.abs_import_title, subjectName, chk.file.className)) },
+                        text = {
+                            androidx.compose.foundation.layout.Column {
+                                Text(stringResource(R.string.record_teacher, chk.file.teacherName))
+                                Text(stringResource(R.string.abs_import_counts, chk.newSessions, chk.replacedSessions))
+                                if (chk.unknownStudents > 0)
+                                    Text(stringResource(R.string.abs_import_unknown, chk.unknownStudents), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
+                            }
+                        },
+                        confirmButton = {
+                            TextButton(enabled = chk.file.sessions.isNotEmpty(), onClick = {
+                                absenceCheck = null
+                                scope.launch {
+                                    absenceImporter.apply(chk)
+                                    classId = chk.schoolClass.id
+                                    fromTeaching = false
+                                    hubTab = 2
+                                    screen = Screen.ADMIN_CLASS
+                                    fileResult = FileResult.Message(getString(R.string.abs_import_done, subjectName, chk.file.className))
+                                }
+                            }) { Text(stringResource(R.string.record_upload)) }
+                        },
+                        dismissButton = { TextButton(onClick = { absenceCheck = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
 

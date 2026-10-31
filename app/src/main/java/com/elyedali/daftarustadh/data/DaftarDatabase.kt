@@ -16,8 +16,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 @Database(
     entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class,
         GradeEntity::class, TeacherSubjectEntity::class, SubjectRecordEntity::class,
-        DocumentEntity::class],
-    version = 9,
+        DocumentEntity::class, AbsenceSessionEntity::class, AbsenceEntity::class],
+    version = 10,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -27,6 +27,7 @@ abstract class DaftarDatabase : RoomDatabase() {
     abstract fun studentDao(): StudentDao
     abstract fun gradeDao(): GradeDao
     abstract fun documentDao(): DocumentDao
+    abstract fun absenceDao(): AbsenceDao
 
     companion object {
         @Volatile private var instance: DaftarDatabase? = null
@@ -131,13 +132,33 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 9 → 10: دفتر الغياب (الحصص والغائبون). */
+        private val MIGRATION_9_10 = object : Migration(9, 10) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `absence_session` (" +
+                        "`id` TEXT NOT NULL, `classId` TEXT NOT NULL, `subjectCode` TEXT NOT NULL, `date` TEXT NOT NULL, " +
+                        "`period` INTEGER NOT NULL, `source` TEXT NOT NULL, `recordedBy` TEXT NOT NULL, " +
+                        "`updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))"
+                )
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_absence_session_classId` ON `absence_session` (`classId`)")
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `absence` (" +
+                        "`sessionId` TEXT NOT NULL, `studentId` TEXT NOT NULL, `classId` TEXT NOT NULL, " +
+                        "PRIMARY KEY(`sessionId`, `studentId`))"
+                )
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_absence_classId` ON `absence` (`classId`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_absence_studentId` ON `absence` (`studentId`)")
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10).build().also { instance = it }
             }
     }
 }
