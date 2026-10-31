@@ -95,7 +95,7 @@ import java.util.UUID
 private const val TEACHER_NAME_KEY = "teacher_name"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -177,6 +177,11 @@ class MainActivity : AppCompatActivity() {
                 val remarksText by remember { metaDao.observe(RemarkScale.KEY) }.collectAsState(initial = null)
                 val remarkScale = remember(remarksText) { RemarkScale.decode(remarksText) }
                 val teacherName by remember { metaDao.observe(TEACHER_NAME_KEY) }.collectAsState(initial = null)
+                val activatedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.KEY) }.collectAsState(initial = null)
+                val activatedClasses = remember(activatedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(activatedText) }
+                val requestedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY) }.collectAsState(initial = null)
+                val requestedClasses = remember(requestedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(requestedText) }
+                var activationBack by rememberSaveable { mutableStateOf(Screen.HOME) }
                 var askNameFor by remember { mutableStateOf<String?>(null) }
                 val thresholdsText by remember { metaDao.observe(KashfSettings.THRESHOLDS_KEY) }.collectAsState(initial = null)
                 val thresholds = remember(thresholdsText) { KashfSettings.decodeThresholds(thresholdsText) }
@@ -187,6 +192,11 @@ class MainActivity : AppCompatActivity() {
 
                 /** إنتاج كشوف الدرجات لقسم: ملف PDF واحد، كشف في كل صفحة، يُرسل للوراقة. */
                 fun generateKashf(c: ClassEntity, term: Int) {
+                    // الفصل الأول مجاني؛ كشف الفصل الثاني والسنوي يحتاجان تفعيل القسم
+                    if (com.elyedali.daftarustadh.data.ClassActivation.needsActivation(term) && c.id !in activatedClasses) {
+                        activationBack = screen; screen = Screen.ACTIVATION
+                        return
+                    }
                     scope.launch {
                         val owner = institutionDao.getById(c.institutionId) ?: return@launch
                         val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
@@ -414,6 +424,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.IMPORT -> BackHandler { screen = Screen.ADMIN_CLASS }
                     Screen.ADMIN_CLASS, Screen.TEACHER_HUB -> BackHandler { screen = hubBack }
                     Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS -> BackHandler { screen = Screen.HOME }
+                    Screen.ACTIVATION -> BackHandler { screen = activationBack }
                     else -> BackHandler { screen = Screen.HOME }
                 }
 
@@ -519,6 +530,37 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = Screen.HOME }
                     )
 
+                    screen == Screen.ACTIVATION -> com.elyedali.daftarustadh.ui.ActivationScreen(
+                        classes = managedClasses.sortedBy { it.name },
+                        activated = activatedClasses,
+                        requested = requestedClasses,
+                        onRequest = { chosen, total ->
+                            val owner = inst
+                            val msg = buildString {
+                                append(getString(R.string.act_msg_intro)).append('\n')
+                                if (owner != null) {
+                                    append(getString(R.string.act_msg_school, owner.schoolName)).append('\n')
+                                    append(getString(R.string.act_msg_wilaya, owner.wilaya)).append('\n')
+                                    append(getString(R.string.act_msg_year, owner.schoolYear)).append('\n')
+                                }
+                                append(getString(R.string.act_msg_classes, chosen.size)).append('\n')
+                                chosen.forEach { append("• ${it.name} — ${com.elyedali.daftarustadh.data.ClassActivation.code(it.id)}\n") }
+                                append(getString(R.string.act_msg_total, total))
+                            }
+                            val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
+                            try {
+                                startActivity(Intent(Intent.ACTION_VIEW, uri))
+                                scope.launch {
+                                    metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY,
+                                        com.elyedali.daftarustadh.data.ClassActivation.encode(requestedClasses + chosen.map { it.id })))
+                                }
+                            } catch (e: Exception) {
+                                android.widget.Toast.makeText(this@MainActivity, getString(R.string.ex_no_whatsapp), android.widget.Toast.LENGTH_SHORT).show()
+                            }
+                        },
+                        onBack = { screen = activationBack }
+                    )
+
                     screen == Screen.EXCHANGES -> {
                         val myPostsText by remember { metaDao.observe(EXCHANGE_POSTS_KEY) }.collectAsState(initial = null)
                         val myPosts = remember(myPostsText) { com.elyedali.daftarustadh.exchange.ExchangeAd.listFromJson(myPostsText) }
@@ -616,7 +658,9 @@ class MainActivity : AppCompatActivity() {
                                     KashfTab(
                                         missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
                                         onGenerate = { term -> generateKashf(c, term) },
-                                        onOpenSettings = { screen = Screen.KASHF_SETTINGS }
+                                        onOpenSettings = { screen = Screen.KASHF_SETTINGS },
+                                        locked = c.id !in activatedClasses,
+                                        onActivate = { activationBack = Screen.ADMIN_CLASS; screen = Screen.ACTIVATION }
                                     )
                                 }
                                 else -> ComingSoon(stringResource(R.string.coming_soon))
@@ -882,6 +926,7 @@ class MainActivity : AppCompatActivity() {
                         onOpenFile = openFile,
                         onOpenRemarks = { screen = Screen.REMARKS },
                         onOpenStats = { screen = Screen.STATS },
+                        onOpenActivation = { activationBack = Screen.HOME; screen = Screen.ACTIVATION },
                         onOpenMenu = { scope.launch { drawerState.open() } },
                         onLanguageSelected = { tag ->
                             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag))

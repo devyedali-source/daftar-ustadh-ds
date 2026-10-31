@@ -20,6 +20,7 @@ import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Share
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -49,6 +50,7 @@ fun HomeScreen(
     onOpenFile: () -> Unit,
     onOpenRemarks: () -> Unit,
     onOpenStats: () -> Unit,
+    onOpenActivation: () -> Unit,
     onLanguageSelected: (String) -> Unit,
     onOpenMenu: () -> Unit = {}
 ) {
@@ -112,6 +114,8 @@ fun HomeScreen(
                     tint = MaterialTheme.colorScheme.secondary, onClick = onOpenClasses)
                 ActionCard(Icons.Filled.Info, stringResource(R.string.statistics), stringResource(R.string.home_stats_desc),
                     tint = MaterialTheme.colorScheme.tertiary, onClick = onOpenStats)
+                ActionCard(Icons.Filled.Star, stringResource(R.string.act_title), stringResource(R.string.home_activation_desc),
+                    tint = Color(0xFFE65100), onClick = onOpenActivation)
                 ActionCard(Icons.Filled.Edit, stringResource(R.string.edit_institution), null,
                     tint = MaterialTheme.colorScheme.onSurfaceVariant, onClick = onRegisterInstitution)
             }

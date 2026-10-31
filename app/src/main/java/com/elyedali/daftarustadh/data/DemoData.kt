@@ -101,6 +101,8 @@ object DemoData {
         val meta = db.appMetaDao()
         if (meta.get("teacher_name") == null) meta.put(AppMetaEntity("teacher_name", "محمد الأمين أحمد"))
         meta.put(AppMetaEntity("pass_thresholds", """{"1AS":10,"5C":9}"""))
+        // القسم المكتمل مفعّل لتجربة كشف الفصل الثاني والسنوي؛ 5C1 غير مفعّل لتجربة التفعيل
+        meta.put(AppMetaEntity(ClassActivation.KEY, ClassActivation.encode(setOf("demo-1as1"))))
     }
 
     private suspend fun seedClass(

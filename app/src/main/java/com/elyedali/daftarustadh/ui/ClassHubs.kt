@@ -49,7 +49,9 @@ fun ClassHub(
 fun KashfTab(
     missingByTerm: Map<Int, Int>,   // عدد الطلاب الذين تنقصهم نتائج لكل كشف
     onGenerate: (Int) -> Unit,
-    onOpenSettings: () -> Unit
+    onOpenSettings: () -> Unit,
+    locked: Boolean = false,          // القسم غير مفعّل: كشف الفصل الثاني والسنوي مقفلان
+    onActivate: () -> Unit = {}
 ) {
     Column(Modifier.fillMaxSize().padding(top = 10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         listOf(1 to R.string.term_1, 2 to R.string.term_2, 3 to R.string.kashf_annual).forEach { (term, res) ->
@@ -65,8 +67,14 @@ fun KashfTab(
                         color = if (ready) MaterialTheme.colorScheme.secondary else MaterialTheme.colorScheme.error,
                         style = MaterialTheme.typography.bodySmall
                     )
-                    Button(enabled = ready, onClick = { onGenerate(term) }) {
-                        Text(stringResource(if (term == 3) R.string.generate_annual else R.string.generate_term))
+                    if (locked && term >= 2) {
+                        Text("🔒 " + stringResource(R.string.act_locked), color = MaterialTheme.colorScheme.error,
+                            style = MaterialTheme.typography.bodySmall)
+                        Button(onClick = onActivate) { Text(stringResource(R.string.act_activate_class)) }
+                    } else {
+                        Button(enabled = ready, onClick = { onGenerate(term) }) {
+                            Text(stringResource(if (term == 3) R.string.generate_annual else R.string.generate_term))
+                        }
                     }
                 }
             }
