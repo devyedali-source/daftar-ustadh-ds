@@ -23,7 +23,13 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.core.os.LocaleListCompat
+import com.elyedali.daftarustadh.data.AppMetaEntity
 import com.elyedali.daftarustadh.data.ClassEntity
+import com.elyedali.daftarustadh.data.CurriculumRepository
+import com.elyedali.daftarustadh.data.GradeEntity
+import com.elyedali.daftarustadh.data.RemarkScale
+import com.elyedali.daftarustadh.data.TeacherSubjectEntity
+import com.elyedali.daftarustadh.data.TestsMode
 import com.elyedali.daftarustadh.data.DaftarDatabase
 import com.elyedali.daftarustadh.transfer.ClassFile
 import com.elyedali.daftarustadh.transfer.ClassFileCodec
@@ -34,10 +40,13 @@ import com.elyedali.daftarustadh.transfer.ShareHelper
 import com.elyedali.daftarustadh.ui.ClassSubjectsDialog
 import com.elyedali.daftarustadh.ui.ClassesScreen
 import com.elyedali.daftarustadh.ui.DaftarTheme
+import com.elyedali.daftarustadh.ui.GradesScreen
 import com.elyedali.daftarustadh.ui.HomeScreen
 import com.elyedali.daftarustadh.ui.ImportStudentsScreen
 import com.elyedali.daftarustadh.ui.InstitutionScreen
+import com.elyedali.daftarustadh.ui.RemarksSettingsScreen
 import com.elyedali.daftarustadh.ui.StudentsScreen
+import com.elyedali.daftarustadh.ui.TeacherClassScreen
 import com.elyedali.daftarustadh.ui.TeachingClassesScreen
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOf
@@ -45,7 +54,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.UUID
 
-private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, STUDENTS, IMPORT }
+private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -70,6 +79,8 @@ class MainActivity : AppCompatActivity() {
         val institutionDao = db.institutionDao()
         val classDao = db.classDao()
         val studentDao = db.studentDao()
+        val gradeDao = db.gradeDao()
+        val metaDao = db.appMetaDao()
         val importer = ClassFileImporter(db)
 
         setContent {
@@ -94,6 +105,14 @@ class MainActivity : AppCompatActivity() {
                 val currentClass: ClassEntity? by currentClassFlow.collectAsState(initial = null)
                 val studentsFlow = remember(classId) { classId?.let { studentDao.observeByClass(it) } ?: flowOf(emptyList()) }
                 val students by studentsFlow.collectAsState(initial = emptyList())
+                var subjectCode by rememberSaveable { mutableStateOf<String?>(null) }
+                var gradesFromAdmin by rememberSaveable { mutableStateOf(false) }
+                val classGradesFlow = remember(classId) { classId?.let { gradeDao.observeClass(it) } ?: flowOf(emptyList()) }
+                val classGrades by classGradesFlow.collectAsState(initial = emptyList())
+                val mySubjectsFlow = remember(classId) { classId?.let { gradeDao.observeTeacherSubjects(it) } ?: flowOf(emptyList()) }
+                val mySubjects by mySubjectsFlow.collectAsState(initial = emptyList())
+                val remarksText by remember { metaDao.observe(RemarkScale.KEY) }.collectAsState(initial = null)
+                val remarkScale = remember(remarksText) { RemarkScale.decode(remarksText) }
 
                 // فتح ملف قسم: من الواتساب أو من زر «فتح ملف قسم»
                 fun processFile(uri: Uri) {
@@ -136,7 +155,9 @@ class MainActivity : AppCompatActivity() {
 
                 when (screen) {
                     Screen.HOME -> {}
-                    Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHING else Screen.CLASSES }
+                    Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
+                    Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
+                    Screen.GRADES -> BackHandler { screen = if (gradesFromAdmin) Screen.STUDENTS else Screen.TEACHER_CLASS }
                     Screen.IMPORT -> BackHandler { screen = Screen.STUDENTS }
                     else -> BackHandler { screen = Screen.HOME }
                 }
@@ -170,6 +191,8 @@ class MainActivity : AppCompatActivity() {
                         onOpen = { c -> classId = c.id; fromTeaching = false; screen = Screen.STUDENTS },
                         onDelete = { c ->
                             scope.launch {
+                                gradeDao.deleteByClass(c.id)
+                                gradeDao.deleteTeacherSubjectsByClass(c.id)
                                 studentDao.deleteByClass(c.id)
                                 classDao.delete(c)
                             }
@@ -181,7 +204,7 @@ class MainActivity : AppCompatActivity() {
                         classes = teachingClasses,
                         schoolNames = schoolNames,
                         onOpenFile = openFile,
-                        onOpen = { c -> classId = c.id; fromTeaching = true; screen = Screen.STUDENTS },
+                        onOpen = { c -> classId = c.id; fromTeaching = true; screen = Screen.TEACHER_CLASS },
                         onBack = { screen = Screen.HOME }
                     )
 
@@ -192,16 +215,75 @@ class MainActivity : AppCompatActivity() {
                             schoolClass = c,
                             students = students,
                             onSave = { s -> scope.launch { studentDao.save(s) } },
-                            onDelete = { s -> scope.launch { studentDao.delete(s) } },
+                            onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); studentDao.delete(s) } },
                             onImport = { screen = Screen.IMPORT },
                             onShowSubjects = { showSubjects = true },
-                            onBack = { screen = if (fromTeaching) Screen.TEACHING else Screen.CLASSES },
+                            onBack = { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES },
                             onShare = if (readOnly) null else { type -> share(c, type) },
                             readOnly = readOnly,
                             subtitle = schoolNames[c.institutionId]
                         )
-                        if (showSubjects) ClassSubjectsDialog(c) { showSubjects = false }
+                        if (showSubjects) ClassSubjectsDialog(
+                            c,
+                            onPick = if (readOnly) null else { code ->
+                                subjectCode = code; gradesFromAdmin = true; showSubjects = false; screen = Screen.GRADES
+                            }
+                        ) { showSubjects = false }
                     }
+
+                    screen == Screen.TEACHER_CLASS && currentClass != null -> {
+                        val c = currentClass!!
+                        TeacherClassScreen(
+                            schoolClass = c,
+                            schoolName = schoolNames[c.institutionId],
+                            classSubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty(),
+                            mySubjectCodes = mySubjects.map { it.subjectCode }.toSet(),
+                            grades = classGrades,
+                            studentCount = students.size,
+                            onSetMySubjects = { chosen ->
+                                scope.launch {
+                                    val current = mySubjects.map { it.subjectCode }.toSet()
+                                    (current - chosen).forEach { gradeDao.removeTeacherSubject(c.id, it) }
+                                    (chosen - current).forEach { gradeDao.saveTeacherSubject(TeacherSubjectEntity(c.id, it)) }
+                                }
+                            },
+                            onOpenSubject = { code -> subjectCode = code; gradesFromAdmin = false; screen = Screen.GRADES },
+                            onShowStudents = { screen = Screen.STUDENTS },
+                            onBack = { screen = Screen.TEACHING }
+                        )
+                    }
+
+                    screen == Screen.GRADES && currentClass != null && subjectCode != null -> {
+                        val c = currentClass!!
+                        val code = subjectCode!!
+                        val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
+                            ?.subjects?.firstOrNull { it.code == code }
+                        val back = { screen = if (gradesFromAdmin) Screen.STUDENTS else Screen.TEACHER_CLASS }
+                        if (subject == null) LaunchedEffect(Unit) { back() } else GradesScreen(
+                            schoolClass = c,
+                            subject = subject,
+                            students = students,
+                            grades = classGrades.filter { it.subjectCode == code },
+                            testsMode = mySubjects.firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE,
+                            scale = remarkScale,
+                            onSetGrade = { studentId, slot, value ->
+                                scope.launch {
+                                    if (value == null) gradeDao.clear(studentId, code, slot)
+                                    else gradeDao.save(GradeEntity(studentId, c.id, code, slot, value, System.currentTimeMillis()))
+                                }
+                            },
+                            onTestsMode = { mode -> scope.launch { gradeDao.saveTeacherSubject(TeacherSubjectEntity(c.id, code, mode)) } },
+                            onBack = back
+                        )
+                    }
+
+                    screen == Screen.REMARKS -> RemarksSettingsScreen(
+                        scale = remarkScale,
+                        onSave = { list ->
+                            scope.launch { metaDao.put(AppMetaEntity(RemarkScale.KEY, RemarkScale.encode(list))); screen = Screen.HOME }
+                        },
+                        onBack = { screen = Screen.HOME }
+                    )
 
                     screen == Screen.IMPORT && currentClass != null -> ImportStudentsScreen(
                         schoolClass = currentClass!!,
@@ -216,6 +298,7 @@ class MainActivity : AppCompatActivity() {
                         onOpenClasses = { screen = Screen.CLASSES },
                         onOpenTeaching = { screen = Screen.TEACHING },
                         onOpenFile = openFile,
+                        onOpenRemarks = { screen = Screen.REMARKS },
                         onLanguageSelected = { tag ->
                             AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag))
                         }

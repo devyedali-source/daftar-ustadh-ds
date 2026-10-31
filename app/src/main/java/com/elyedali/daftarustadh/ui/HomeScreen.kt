@@ -16,6 +16,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -36,6 +37,7 @@ fun HomeScreen(
     onOpenClasses: () -> Unit,
     onOpenTeaching: () -> Unit,
     onOpenFile: () -> Unit,
+    onOpenRemarks: () -> Unit,
     onLanguageSelected: (String) -> Unit
 ) {
     val context = LocalContext.current
@@ -56,6 +58,7 @@ fun HomeScreen(
             Spacer(Modifier.height(8.dp))
             Button(onClick = onOpenTeaching, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.my_classes)) }
             OutlinedButton(onClick = onOpenFile, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.open_class_file)) }
+            TextButton(onClick = onOpenRemarks) { Text(stringResource(R.string.remarks_settings)) }
 
             Spacer(Modifier.height(24.dp))
             // وضع الإدارة

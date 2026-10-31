@@ -14,8 +14,9 @@ import androidx.sqlite.db.SupportSQLiteDatabase
  * كل تغيير في الجداول يكون بترقية (Migration) تحفظ بيانات المستخدم.
  */
 @Database(
-    entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class],
-    version = 5,
+    entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class, StudentEntity::class,
+        GradeEntity::class, TeacherSubjectEntity::class],
+    version = 6,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -23,6 +24,7 @@ abstract class DaftarDatabase : RoomDatabase() {
     abstract fun institutionDao(): InstitutionDao
     abstract fun classDao(): ClassDao
     abstract fun studentDao(): StudentDao
+    abstract fun gradeDao(): GradeDao
 
     companion object {
         @Volatile private var instance: DaftarDatabase? = null
@@ -78,13 +80,31 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 5 → 6: النقاط، ومواد الأستاذ في كل قسم. */
+        private val MIGRATION_5_6 = object : Migration(5, 6) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `grade` (" +
+                        "`studentId` TEXT NOT NULL, `classId` TEXT NOT NULL, `subjectCode` TEXT NOT NULL, " +
+                        "`slot` TEXT NOT NULL, `value` REAL NOT NULL, `updatedAt` INTEGER NOT NULL, " +
+                        "PRIMARY KEY(`studentId`, `subjectCode`, `slot`))"
+                )
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_grade_classId_subjectCode` ON `grade` (`classId`, `subjectCode`)")
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `teacher_subject` (" +
+                        "`classId` TEXT NOT NULL, `subjectCode` TEXT NOT NULL, `testsMode` TEXT NOT NULL, " +
+                        "PRIMARY KEY(`classId`, `subjectCode`))"
+                )
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6).build().also { instance = it }
             }
     }
 }

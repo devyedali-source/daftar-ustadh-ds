@@ -104,4 +104,31 @@
     <string name="file_ok_full">تمت إضافة القسم %1$s إلى وضع الإدارة.</string>
     <string name="file_counts">طلاب جدد: %1$d — طلاب حُدّثت معلوماتهم: %2$d</string>
     <string name="ok">حسنًا</string>
+    <string name="term_1">الفصل الأول</string>
+    <string name="term_2">الفصل الثاني</string>
+    <string name="term_3">الفصل الثالث</string>
+    <string name="grades_complete">مكتمل: %1$d من %2$d طالبًا</string>
+    <string name="rule_term_1">معدل المادة في الفصل الأول = امتحان الفصل الأول</string>
+    <string name="rule_term_2">معدل المادة في الفصل الثاني = امتحان الفصل الثاني</string>
+    <string name="rule_term_3">المعدل السنوي للمادة = (معدل الاختبارات×3 + امتحان ف1×1 + امتحان ف2×2 + امتحان ف3×3) ÷ 9</string>
+    <string name="tests_mode_average">معدل الاختبارات المدرجة</string>
+    <string name="tests_mode_best">أفضل نتيجة اختبار</string>
+    <string name="student">الطالب</string>
+    <string name="test_short">اختبار</string>
+    <string name="exam_short">امتحان</string>
+    <string name="average_short">المعدل</string>
+    <string name="students_list">الطلاب</string>
+    <string name="my_subjects_here">موادي في هذا القسم</string>
+    <string name="choose_my_subjects">اختيار موادي</string>
+    <string name="choose_my_subjects_hint">اختر المادة أو المواد التي تدرّسها في هذا القسم.</string>
+    <string name="subject_progress">الضارب %1$d — خانات مملوءة: %2$d من %3$d</string>
+    <string name="pick_subject_to_enter">اضغط على مادة لإدخال نتائجها يدويًا</string>
+    <string name="remarks_settings">إعدادات سجل الأستاذ</string>
+    <string name="remarks_help">الملاحظة تُكتب تلقائيًا أمام كل طالب حسب معدل المادة: من المعدل المكتوب حتى الدرجة التالية.</string>
+    <string name="remarks_invalid">يجب أن تبدأ درجة من 0، وأن يكون لكل درجة معدل مختلف بين 0 و20 وملاحظة بالعربية.</string>
+    <string name="add_level">درجة</string>
+    <string name="restore_default">الافتراضي</string>
+    <string name="from_average">من</string>
+    <string name="remark_ar">الملاحظة بالعربية</string>
+    <string name="remark_fr">الملاحظة بالفرنسية</string>
 </resources>

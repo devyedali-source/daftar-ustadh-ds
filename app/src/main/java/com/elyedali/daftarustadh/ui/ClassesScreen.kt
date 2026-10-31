@@ -204,7 +204,7 @@ private fun CreateClassDialog(
 }
 
 @Composable
-fun ClassSubjectsDialog(c: ClassEntity, onDismiss: () -> Unit) {
+fun ClassSubjectsDialog(c: ClassEntity, onPick: ((String) -> Unit)? = null, onDismiss: () -> Unit) {
     val context = LocalContext.current
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
     val level = remember(c) { CurriculumRepository.level(context, c.schoolYear, c.levelCode) }
@@ -217,11 +217,16 @@ fun ClassSubjectsDialog(c: ClassEntity, onDismiss: () -> Unit) {
                     Text(stringResource(R.string.subject), Modifier.weight(1f), fontWeight = FontWeight.Bold)
                     Text(stringResource(R.string.coefficient), fontWeight = FontWeight.Bold)
                 }
+                if (onPick != null) Text(stringResource(R.string.pick_subject_to_enter), style = MaterialTheme.typography.bodySmall)
                 HorizontalDivider()
                 LazyColumn(Modifier.heightIn(max = 380.dp)) {
                     items(level?.subjects ?: emptyList(), key = { it.code }) { s ->
-                        Row(Modifier.fillMaxWidth().padding(vertical = 6.dp)) {
-                            Text(if (isFr) s.nameFr else s.nameAr, Modifier.weight(1f))
+                        Row(
+                            Modifier.fillMaxWidth()
+                                .clickable(enabled = onPick != null) { onPick?.invoke(s.code) }
+                                .padding(vertical = 6.dp)
+                        ) {
+                            Text(if (isFr) s.nameFr else s.nameAr, Modifier.weight(1f), color = if (onPick != null) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface)
                             Text(s.coefficient.toString())
                         }
                     }

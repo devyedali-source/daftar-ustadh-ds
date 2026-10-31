@@ -104,4 +104,31 @@
     <string name="file_ok_full">La classe %1$s a été ajoutée au mode administration.</string>
     <string name="file_counts">Nouveaux élèves : %1$d — élèves mis à jour : %2$d</string>
     <string name="ok">OK</string>
+    <string name="term_1">1er trimestre</string>
+    <string name="term_2">2e trimestre</string>
+    <string name="term_3">3e trimestre</string>
+    <string name="grades_complete">Complet : %1$d élèves sur %2$d</string>
+    <string name="rule_term_1">Moyenne du 1er trimestre = composition du 1er trimestre</string>
+    <string name="rule_term_2">Moyenne du 2e trimestre = composition du 2e trimestre</string>
+    <string name="rule_term_3">Moyenne annuelle = (moyenne des devoirs×3 + compo 1×1 + compo 2×2 + compo 3×3) ÷ 9</string>
+    <string name="tests_mode_average">Moyenne des devoirs saisis</string>
+    <string name="tests_mode_best">Meilleure note de devoir</string>
+    <string name="student">Élève</string>
+    <string name="test_short">Devoir</string>
+    <string name="exam_short">Compo</string>
+    <string name="average_short">Moy.</string>
+    <string name="students_list">Élèves</string>
+    <string name="my_subjects_here">Mes matières dans cette classe</string>
+    <string name="choose_my_subjects">Choisir mes matières</string>
+    <string name="choose_my_subjects_hint">Choisissez la ou les matières que vous enseignez dans cette classe.</string>
+    <string name="subject_progress">Coef. %1$d — cases remplies : %2$d sur %3$d</string>
+    <string name="pick_subject_to_enter">Touchez une matière pour saisir ses notes à la main</string>
+    <string name="remarks_settings">Réglages du cahier de l\'enseignant</string>
+    <string name="remarks_help">L\'appréciation s\'écrit automatiquement selon la moyenne de la matière : de la moyenne indiquée jusqu\'au niveau suivant.</string>
+    <string name="remarks_invalid">Un niveau doit commencer à 0 ; chaque niveau doit avoir une moyenne différente entre 0 et 20 et une appréciation en arabe.</string>
+    <string name="add_level">Niveau</string>
+    <string name="restore_default">Par défaut</string>
+    <string name="from_average">À partir de</string>
+    <string name="remark_ar">Appréciation en arabe</string>
+    <string name="remark_fr">Appréciation en français</string>
 </resources>
