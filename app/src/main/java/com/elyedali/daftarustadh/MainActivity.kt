@@ -24,6 +24,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.core.os.LocaleListCompat
+import androidx.lifecycle.lifecycleScope
 import com.elyedali.daftarustadh.data.AppMetaEntity
 import com.elyedali.daftarustadh.data.ClassEntity
 import com.elyedali.daftarustadh.data.CurriculumRepository
@@ -102,6 +103,8 @@ class MainActivity : AppCompatActivity() {
         val gradeDao = db.gradeDao()
         val metaDao = db.appMetaDao()
         val importer = ClassFileImporter(db)
+        // بيانات تجريبية (نسخ التجربة فقط الآن؛ وبعد تسجيل الدخول لحساب صاحب التطبيق فقط)
+        lifecycleScope.launch(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db) }
         val recordImporter = RecordImporter(db)
 
         setContent {

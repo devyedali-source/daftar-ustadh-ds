@@ -16,6 +16,9 @@ interface InstitutionDao {
     @Query("SELECT * FROM institution")
     fun observeAll(): Flow<List<InstitutionEntity>>
 
+    @Query("SELECT COUNT(*) FROM institution WHERE isOwn = 1")
+    suspend fun ownCount(): Int
+
     @Query("SELECT * FROM institution WHERE id = :id")
     suspend fun getById(id: String): InstitutionEntity?
 
