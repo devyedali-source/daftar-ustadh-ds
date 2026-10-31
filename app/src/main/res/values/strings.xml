@@ -226,4 +226,6 @@
     <string name="doc_delete">حذف الوثيقة</string>
     <string name="doc_title">العنوان</string>
     <string name="doc_body">النص</string>
+    <string name="pdf_pages">%1$d صفحة — المس الصفحة لتكبيرها</string>
+    <string name="share">مشاركة</string>
 </resources>

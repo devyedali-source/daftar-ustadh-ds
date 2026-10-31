@@ -226,4 +226,6 @@
     <string name="doc_delete">Supprimer le document</string>
     <string name="doc_title">Titre</string>
     <string name="doc_body">Texte</string>
+    <string name="pdf_pages">%1$d pages — touchez une page pour l\'agrandir</string>
+    <string name="share">Partager</string>
 </resources>

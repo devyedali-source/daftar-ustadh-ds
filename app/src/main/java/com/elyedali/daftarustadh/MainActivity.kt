@@ -438,7 +438,17 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = Screen.HOME }
                     )
 
-                    screen == Screen.LEGISLATION || screen == Screen.EXCHANGES || screen == Screen.BOOKS -> {
+                    screen == Screen.LEGISLATION -> com.elyedali.daftarustadh.ui.PdfViewerScreen(
+                        title = stringResource(R.string.menu_legislation),
+                        assetPath = "legislation/nusus_tashri3_madrasi.pdf",
+                        onShare = { file ->
+                            ShareHelper.share(this@MainActivity, file.readBytes(), "نصوص مرجعية في التشريع المدرسي.pdf",
+                                getString(R.string.share), "application/pdf")
+                        },
+                        onBack = { screen = Screen.HOME }
+                    )
+
+                    screen == Screen.EXCHANGES || screen == Screen.BOOKS -> {
                         val title = stringResource(when (screen) {
                             Screen.LEGISLATION -> R.string.menu_legislation
                             Screen.EXCHANGES -> R.string.menu_exchanges
