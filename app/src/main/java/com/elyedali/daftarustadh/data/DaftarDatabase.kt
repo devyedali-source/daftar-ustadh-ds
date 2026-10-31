@@ -14,13 +14,14 @@ import androidx.sqlite.db.SupportSQLiteDatabase
  * كل تغيير في الجداول يكون بترقية (Migration) تحفظ بيانات المستخدم.
  */
 @Database(
-    entities = [AppMetaEntity::class, InstitutionEntity::class],
-    version = 2,
+    entities = [AppMetaEntity::class, InstitutionEntity::class, ClassEntity::class],
+    version = 3,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
     abstract fun appMetaDao(): AppMetaDao
     abstract fun institutionDao(): InstitutionDao
+    abstract fun classDao(): ClassDao
 
     companion object {
         @Volatile private var instance: DaftarDatabase? = null
@@ -37,13 +38,29 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 2 → 3: إضافة جدول الأقسام. */
+        private val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `school_class` (" +
+                        "`id` TEXT NOT NULL, `institutionId` TEXT NOT NULL, `schoolYear` TEXT NOT NULL, " +
+                        "`levelCode` TEXT NOT NULL, `number` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, " +
+                        "PRIMARY KEY(`id`))"
+                )
+                db.execSQL(
+                    "CREATE UNIQUE INDEX IF NOT EXISTS `index_school_class_institutionId_schoolYear_levelCode_number` " +
+                        "ON `school_class` (`institutionId`, `schoolYear`, `levelCode`, `number`)"
+                )
+            }
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3).build().also { instance = it }
             }
     }
 }

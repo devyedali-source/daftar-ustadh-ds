@@ -31,6 +31,7 @@ import com.elyedali.daftarustadh.data.Stage
 fun HomeScreen(
     institution: InstitutionEntity?,
     onRegisterInstitution: () -> Unit,
+    onOpenClasses: () -> Unit,
     onLanguageSelected: (String) -> Unit
 ) {
     val context = LocalContext.current
@@ -63,6 +64,8 @@ fun HomeScreen(
                         Text("${stringResource(R.string.school_year)}: ${institution.schoolYear}")
                     }
                 }
+                Spacer(Modifier.height(12.dp))
+                Button(onClick = onOpenClasses, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.classes_title)) }
                 Spacer(Modifier.height(8.dp))
                 OutlinedButton(onClick = onRegisterInstitution) { Text(stringResource(R.string.edit_institution)) }
             }
