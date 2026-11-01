@@ -498,5 +498,5 @@
     <string name="mode_teacher">وضع الأستاذ</string>
     <string name="mode_choose">اختر وضع العمل 👇</string>
     <string name="mode_admin_desc">إنشاء الأقسام، الطلاب، النتائج، الكشوف، الغياب، دفتر النصوص والجدول الزمني</string>
-    <string name="mode_teacher_desc">أقسامك التي تدرّسها: رصد الدرجات والغياب وجدولك الزمني</string>
+    <string name="mode_teacher_desc">أقسامك التي تدرّسها: رصد الدرجات وجدولك الزمني</string>
 </resources>

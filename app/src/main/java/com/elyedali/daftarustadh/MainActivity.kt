@@ -989,9 +989,9 @@ class MainActivity : AppCompatActivity() {
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_absence), stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
+                                stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
                             icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
-                                androidx.compose.material.icons.Icons.Filled.CheckCircle, androidx.compose.material.icons.Icons.Filled.DateRange,
+                                androidx.compose.material.icons.Icons.Filled.DateRange,
                                 androidx.compose.material.icons.Icons.Filled.Create),
                             selected = hubTab,
                             onSelect = { hubTab = it },
@@ -1026,30 +1026,7 @@ class MainActivity : AppCompatActivity() {
                                     onBack = { screen = hubBack },
                                     showHeader = false
                                 )
-                                2 -> {
-                                    val mine = mySubjects.map { it.subjectCode }.toSet()
-                                    val classSubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
-                                    AbsenceTab(
-                                        classId = c.id,
-                                        students = students,
-                                        subjects = classSubjects.filter { it.code in mine }
-                                            .map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
-                                        sessions = absenceSessions,
-                                        absences = absences,
-                                        isAdmin = false,
-                                        onSave = { old, session, ids ->
-                                            scope.launch { absenceDao.replaceSession(old, session.copy(recordedBy = teacherName.orEmpty()), ids) }
-                                        },
-                                        onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
-                                        onSend = { code ->
-                                            val n = teacherName
-                                            if (n.isNullOrBlank()) { askNameAbsence = true; askNameFor = code } else sendAbsence(c, code, n)
-                                        },
-                                        onUpload = null,
-                                        onChooseSubjects = { hubTab = 1 }
-                                    )
-                                }
-                                3 -> com.elyedali.daftarustadh.ui.TeacherTimetableView(
+                                2 -> com.elyedali.daftarustadh.ui.TeacherTimetableView(
                                     entries = myTimetable,
                                     highlightClass = c.name,
                                     highlightInstitution = c.institutionId,

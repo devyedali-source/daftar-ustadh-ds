@@ -498,5 +498,5 @@
     <string name="mode_teacher">Mode professeur</string>
     <string name="mode_choose">Choisissez le mode de travail 👇</string>
     <string name="mode_admin_desc">Classes, élèves, résultats, bulletins, absences, cahier de textes et emploi du temps</string>
-    <string name="mode_teacher_desc">Vos classes : saisie des notes, absences et votre emploi du temps</string>
+    <string name="mode_teacher_desc">Vos classes : saisie des notes et votre emploi du temps</string>
 </resources>
