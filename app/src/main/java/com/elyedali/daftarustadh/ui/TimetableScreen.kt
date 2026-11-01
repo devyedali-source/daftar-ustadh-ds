@@ -400,10 +400,14 @@ private fun TeacherListPane(
                         singleLine = true, modifier = Modifier.fillMaxWidth(), isError = duplicate)
                     if (duplicate) Text(stringResource(R.string.tt_teacher_exists), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
                     Text(stringResource(R.string.tt_teacher_subjects), fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    val max = com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS
+                    Text(stringResource(R.string.max_subjects, chosen.size, max), fontSize = 12.sp,
+                        color = if (chosen.size >= max) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant)
                     FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                         allSubjects.forEach { code ->
                             FilterChip(
                                 selected = code in chosen,
+                                enabled = code in chosen || chosen.size < max,
                                 onClick = { chosen = if (code in chosen) chosen - code else chosen + code },
                                 label = { Text(subjectLabel(code)) }
                             )
@@ -412,7 +416,7 @@ private fun TeacherListPane(
                 }
             },
             confirmButton = {
-                TextButton(enabled = name.isNotBlank() && chosen.isNotEmpty() && !duplicate, onClick = {
+                TextButton(enabled = name.isNotBlank() && chosen.isNotEmpty() && chosen.size <= com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS && !duplicate, onClick = {
                     val t = TimetableTeacher(name.trim(), allSubjects.filter { it in chosen })
                     onSave(if (existing == null) teachers + t else teachers.toMutableList().also { it[idx] = t })
                     editing = null

@@ -492,4 +492,6 @@
     <string name="drawer_no_school">Établissement non enregistré</string>
     <string name="kashf_reports">Bulletins</string>
     <string name="ex_choose_wilaya_first">Choisissez d\'abord la wilaya pour voir ses moughataas</string>
+    <string name="max_subjects">%1$d sur %2$d — %2$d matières au maximum</string>
+    <string name="ex_err_max_specialties">5 spécialités au maximum</string>
 </resources>

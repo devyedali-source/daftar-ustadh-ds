@@ -492,4 +492,6 @@
     <string name="drawer_no_school">لم تُسجَّل المؤسسة بعد</string>
     <string name="kashf_reports">كشوف الدرجات</string>
     <string name="ex_choose_wilaya_first">اختر الولاية أولًا لتظهر مقاطعاتها</string>
+    <string name="max_subjects">%1$d من %2$d — الحد الأقصى %2$d مواد</string>
+    <string name="ex_err_max_specialties">لا يمكن اختيار أكثر من 5 تخصصات</string>
 </resources>

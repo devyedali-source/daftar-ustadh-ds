@@ -735,10 +735,14 @@ private fun ExchangeForm(
             }
             Text(stringResource(if (role == ExchangeRole.TEACHER) R.string.ex_specialties_required else R.string.ex_specialties_optional),
                 fontSize = 12.sp, fontWeight = FontWeight.Bold)
+            val maxSpec = com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS
+            Text(stringResource(R.string.max_subjects, chosen.size, maxSpec), fontSize = 12.sp,
+                color = if (chosen.size >= maxSpec) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant)
             FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 specialties.forEach { s ->
                     FilterChip(
                         selected = s.code in chosen,
+                        enabled = s.code in chosen || chosen.size < maxSpec,
                         onClick = { if (s.code in chosen) chosen.remove(s.code) else chosen.add(s.code) },
                         label = { Text(s.label, fontSize = 12.sp) }
                     )
@@ -803,6 +807,7 @@ private fun ExchangeForm(
                 error = when {
                     offerType != OfferType.FRIENDLY && !negotiable && price.isBlank() -> R.string.ex_err_price
                     role == ExchangeRole.TEACHER && chosen.isEmpty() -> R.string.ex_err_specialties
+                    chosen.size > com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS -> R.string.ex_err_max_specialties
                     wilaya.isBlank() -> R.string.ex_err_wilaya
                     moughataa.isBlank() -> R.string.ex_err_moughataa
                     number == null -> R.string.ex_err_phone

@@ -182,6 +182,9 @@ data class TimetableTeacher(val name: String, val subjects: List<String>)
 object TimetableTeachers {
     const val KEY = "timetable_teachers"
 
+    /** لا يدرّس الأستاذ أكثر من 5 مواد. */
+    const val MAX_SUBJECTS = 5
+
     fun encode(list: List<TimetableTeacher>): String = JSONArray().apply {
         list.forEach { t -> put(JSONObject().put("name", t.name).put("subjects", JSONArray(t.subjects))) }
     }.toString()
