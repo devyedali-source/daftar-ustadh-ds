@@ -60,7 +60,6 @@ fun TeacherProfileScreen(
     onCancel: () -> Unit
 ) {
     var name by rememberSaveable { mutableStateOf(existing?.name.orEmpty()) }
-    var phone by rememberSaveable { mutableStateOf(existing?.phone.orEmpty()) }
     var chosen by androidx.compose.runtime.remember { mutableStateOf(existing?.specialties.orEmpty()) }
     val max = TimetableTeachers.MAX_SUBJECTS
     val canSave = name.isNotBlank() && chosen.isNotEmpty() && chosen.size <= max
@@ -73,11 +72,10 @@ fun TeacherProfileScreen(
                 verticalArrangement = Arrangement.spacedBy(14.dp)
             ) {
                 Text(stringResource(R.string.tp_intro), fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                // الاسم يُكتب في الطابع تحت «توقيع الأستاذ» في سجلاته ووثائقه؛ رقم الهاتف تسجّله الإدارة لا الأستاذ
                 OutlinedTextField(name, { name = it }, label = { Text(stringResource(R.string.tp_name)) },
+                    supportingText = { Text(stringResource(R.string.tp_name_hint)) },
                     singleLine = true, modifier = Modifier.fillMaxWidth())
-                OutlinedTextField(phone, { phone = it.filter { c -> c.isDigit() || c == '+' } },
-                    label = { Text(stringResource(R.string.tp_phone)) }, singleLine = true,
-                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone), modifier = Modifier.fillMaxWidth())
                 Text(stringResource(R.string.tp_specialties), fontWeight = FontWeight.Bold, fontSize = 14.sp)
                 Text(stringResource(R.string.max_subjects, chosen.size, max), fontSize = 12.sp,
                     color = if (chosen.size >= max) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant)
@@ -93,7 +91,7 @@ fun TeacherProfileScreen(
                 }
                 Button(
                     enabled = canSave,
-                    onClick = { onSave(TeacherProfile(name.trim(), phone.trim(), specialties.map { it.code }.filter { it in chosen })) },
+                    onClick = { onSave(TeacherProfile(name.trim(), existing?.phone.orEmpty(), specialties.map { it.code }.filter { it in chosen })) },
                     modifier = Modifier.fillMaxWidth()
                 ) { Text(stringResource(R.string.save), fontWeight = FontWeight.Bold) }
             }

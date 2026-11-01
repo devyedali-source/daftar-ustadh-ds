@@ -595,4 +595,5 @@
     <string name="guide_move">Dans un mode : touchez « Passer à l\'autre mode » sous les outils, ou le bouton retour pour revenir à cette page. De partout : menu latéral ← « Accueil et classes ». Le mode actuel est écrit en haut de chaque page.</string>
     <string name="mode_switch_to_teacher">Passer au mode professeur</string>
     <string name="mode_switch_to_admin">Passer au mode administration</string>
+    <string name="tp_name_hint">Votre nom figure dans le cachet sous « Signature du professeur » sur vos registres et documents : écrivez-le tel qu\'il doit apparaître.</string>
 </resources>
