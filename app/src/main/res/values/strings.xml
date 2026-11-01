@@ -509,7 +509,7 @@
     <string name="drawer_never_synced">لم تتم المزامنة بعد</string>
     <string name="drawer_sync">مزامنة الآن</string>
     <string name="drawer_logout">تسجيل الخروج</string>
-    <string name="drawer_footer">دفتر الأستاذ DS\nجميع الحقوق محفوظة © 2026</string>
+    <string name="drawer_footer">دفتر الأستاذ DS\nجميع الحقوق محفوظة © المختار اليدالي</string>
     <string name="drawer_sync_later">المزامنة مع Google Drive ستُفعَّل في المرحلة القادمة (مع الخادم).</string>
     <string name="drawer_logout_later">تسجيل الدخول والخروج سيُفعَّلان مع إنشاء الخادم.</string>
     <string name="sr_title">مشاركة سجلات الأساتذة</string>

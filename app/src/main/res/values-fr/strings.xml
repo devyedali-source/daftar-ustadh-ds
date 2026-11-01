@@ -509,7 +509,7 @@
     <string name="drawer_never_synced">Pas encore synchronisé</string>
     <string name="drawer_sync">Synchroniser</string>
     <string name="drawer_logout">Se déconnecter</string>
-    <string name="drawer_footer">دفتر الأستاذ DS\nTous droits réservés © 2026</string>
+    <string name="drawer_footer">دفتر الأستاذ DS\nTous droits réservés © المختار اليدالي</string>
     <string name="drawer_sync_later">La synchronisation Google Drive sera activée à la prochaine étape (avec le serveur).</string>
     <string name="drawer_logout_later">La connexion et la déconnexion seront activées avec le serveur.</string>
     <string name="sr_title">Partager les registres des professeurs</string>
