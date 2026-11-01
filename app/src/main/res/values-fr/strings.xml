@@ -605,7 +605,7 @@
     <string name="gm_short_unjustified">ANJ</string>
     <string name="send_blocked_title">Registre incomplet : envoi impossible</string>
     <string name="send_blocked_empty">Aucune note saisie dans cette matière.</string>
-    <string name="send_blocked_list">Le trimestre %1$d est incomplet : il manque les notes de %2$d élèves :\n%3$s\n\nComplétez-les (ou notez leur absence en touchant le nom), puis envoyez.</string>
+    <string name="send_blocked_list">Le trimestre %1$d est incomplet : il manque les notes de %2$d élèves :\n%3$s\n\nComplétez-les (0 pour un absent), puis envoyez.</string>
     <string name="kashf_blocked">Impossible de générer le bulletin avant que toutes les notes soient complètes.</string>
     <string name="term_progress">Trimestre %1$d : %2$d sur %3$d complets</string>
     <string name="steps_admin_title">Étapes de l\'administration</string>
@@ -617,7 +617,7 @@
     <string name="steps_admin_6">Quand toutes les matières sont complètes, le bouton des bulletins s\'active.</string>
     <string name="steps_teacher_title">Étapes du professeur</string>
     <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier de classe » (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes, matières et emploi du temps apparaissent.</string>
-    <string name="steps_teacher_2">Classe ← Résultats ← matière : saisissez devoir et composition pour chaque élève. Absent : touchez son nom (justifié 10, non justifié 0).</string>
+    <string name="steps_teacher_2">Classe ← Résultats ← matière : saisissez devoir et composition pour chaque élève. Pour un absent, saisissez 0.</string>
     <string name="steps_teacher_3">Ne calculez rien : tout est calculé automatiquement.</string>
     <string name="steps_teacher_4">Quand le trimestre est complet (✓ sous la matière), touchez « Envoyer le registre » et envoyez-le à l\'administration par WhatsApp.</string>
     <string name="steps_teacher_5">Recommencez à chaque trimestre : le nouveau registre remplace l\'ancien chez l\'administration.</string>

@@ -605,7 +605,7 @@
     <string name="gm_short_unjustified">غ</string>
     <string name="send_blocked_title">لا يمكن إرسال السجل قبل اكتمال النتائج</string>
     <string name="send_blocked_empty">لم تُرصد أي نتيجة في هذه المادة بعد.</string>
-    <string name="send_blocked_list">الفصل %1$d غير مكتمل: تنقص نتائج %2$d طالبًا:\n%3$s\n\nأكمل خاناتهم (أو سجّل غيابهم بالضغط على الاسم) ثم أرسل.</string>
+    <string name="send_blocked_list">الفصل %1$d غير مكتمل: تنقص نتائج %2$d طالبًا:\n%3$s\n\nأكمل خاناتهم (الغائب تكتب له 0) ثم أرسل.</string>
     <string name="kashf_blocked">لا يمكن سحب الكشف قبل اكتمال نتائج كل المواد لكل الطلاب.</string>
     <string name="term_progress">الفصل %1$d: مكتمل %2$d من %3$d</string>
     <string name="steps_admin_title">خطوات عمل الإدارة</string>
@@ -617,7 +617,7 @@
     <string name="steps_admin_6">بعد اكتمال نتائج كل المواد يُفتح زر سحب الكشوف (الكشوف ← كشوف الدرجات).</string>
     <string name="steps_teacher_title">خطوات عمل الأستاذ</string>
     <string name="steps_teacher_1">افتح الملف الذي أرسلته لك الإدارة عبر واتساب: اضغط «فتح ملف قسم» واختره (أو اضغط عليه في واتساب واختر دفتر الأستاذ DS). تظهر أقسامك وموادك وجدولك.</string>
-    <string name="steps_teacher_2">افتح القسم ← النتائج ← المادة، وارصد نقطة الاختبار والامتحان لكل طالب. للغائب اضغط على اسمه: بتبرير 10، بدون تبرير 0.</string>
+    <string name="steps_teacher_2">افتح القسم ← النتائج ← المادة، وارصد نقطة الاختبار والامتحان لكل طالب. الغائب تكتب له 0.</string>
     <string name="steps_teacher_3">لا تحسب معدلًا ولا مجموعًا: كل شيء يُحسب تلقائيًا.</string>
     <string name="steps_teacher_4">عندما يكتمل الفصل لكل الطلاب (✓ تحت المادة) اضغط «إرسال السجل» وأرسله للإدارة عبر واتساب.</string>
     <string name="steps_teacher_5">كرّر ذلك بعد كل فصل: السجل الجديد يحلّ محلّ السابق عند الإدارة.</string>

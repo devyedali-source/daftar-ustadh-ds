@@ -82,7 +82,7 @@ fun GradesScreen(
     }
     // نفس قاعدة الاكتمال المعتمدة في الكشوف وفي إرسال السجل
     val complete = students.count { s -> GradeMath.isComplete(term, byStudent[s.id].orEmpty()) }
-    var absenceFor by remember { mutableStateOf<StudentEntity?>(null) }
+
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(horizontal = 12.dp, vertical = 8.dp)) {
@@ -111,7 +111,6 @@ fun GradesScreen(
                     Tab(selected = term == i + 1, onClick = { term = i + 1 }, text = { Text(stringResource(res)) })
                 }
             }
-            Text(stringResource(R.string.gm_tip), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.tertiary)
             Text(
                 stringResource(R.string.grades_complete, complete, students.size),
                 style = MaterialTheme.typography.bodySmall,
@@ -152,8 +151,7 @@ fun GradesScreen(
                     val avg = GradeMath.subjectAverage(term, g, testsMode)
                     val remark = RemarkScale.remarkFor(avg, scale)
                     Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-                        // الضغط على اسم الطالب: تسجيل غيابه عن الاختبار أو الامتحان
-                        Column(Modifier.weight(1f).clickable { absenceFor = s }) {
+                        Column(Modifier.weight(1f)) {
                             Text("${s.rollNumber}. " + (if (isFr && s.nameFr.isNotBlank()) s.nameFr else s.nameAr.ifBlank { s.nameFr }), maxLines = 2)
                             if (remark != null) {
                                 Text(if (isFr) remark.textFr else remark.textAr, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.primary)
@@ -168,34 +166,6 @@ fun GradesScreen(
                 }
             }
         }
-    }
-    absenceFor?.let { st ->
-        val mk = marksBy[st.id].orEmpty()
-        androidx.compose.material3.AlertDialog(
-            onDismissRequest = { absenceFor = null },
-            title = { Text("${st.rollNumber}. " + st.nameAr.ifBlank { st.nameFr }) },
-            text = {
-                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                    Text(stringResource(R.string.gm_hint), style = MaterialTheme.typography.bodySmall)
-                    listOf(GradeSlot.test(term) to R.string.test_short, GradeSlot.exam(term) to R.string.exam_short).forEach { (slot, label) ->
-                        val cur = mk[slot]
-                        Text(stringResource(label), fontWeight = FontWeight.Bold)
-                        androidx.compose.foundation.layout.FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                            FilterChip(selected = cur == null, onClick = {
-                                if (cur != null) onSetGrade(st.id, slot, null, null)
-                            }, label = { Text(stringResource(R.string.gm_present)) })
-                            FilterChip(selected = cur == GradeMark.JUSTIFIED, onClick = {
-                                onSetGrade(st.id, slot, GradeMark.valueOf(GradeMark.JUSTIFIED), GradeMark.JUSTIFIED)
-                            }, label = { Text(stringResource(R.string.gm_justified)) })
-                            FilterChip(selected = cur == GradeMark.UNJUSTIFIED, onClick = {
-                                onSetGrade(st.id, slot, GradeMark.valueOf(GradeMark.UNJUSTIFIED), GradeMark.UNJUSTIFIED)
-                            }, label = { Text(stringResource(R.string.gm_unjustified)) })
-                        }
-                    }
-                }
-            },
-            confirmButton = { TextButton(onClick = { absenceFor = null }) { Text(stringResource(R.string.ok)) } }
-        )
     }
 }
 
