@@ -162,6 +162,22 @@ private fun GenerateTab(
         SettingCard(stringResource(R.string.tt_periods)) {
             Stepper(settings.periods, 1, 12) { onSave(settings.copy(periods = it, breakAfter = settings.breakAfter.coerceAtMost(it))) }
         }
+        SettingCard(stringResource(R.string.tt_day_periods)) {
+            Text(stringResource(R.string.tt_day_periods_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            settings.days.forEach { d ->
+                val n = settings.periodsOn(d)
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text(days[d], Modifier.width(80.dp), fontWeight = FontWeight.SemiBold)
+                    Stepper(n, 0, settings.periods) { v ->
+                        val map = settings.dayPeriods.toMutableMap()
+                        if (v == settings.periods) map.remove(d) else map[d] = v
+                        onSave(settings.copy(dayPeriods = map))
+                    }
+                    Text("\u2066${if (n > 0) TimetableSettings.hhmm(settings.end(n - 1)) else "—"}\u2069", fontSize = 12.sp,
+                        color = MaterialTheme.colorScheme.secondary)
+                }
+            }
+        }
         SettingCard(stringResource(R.string.tt_start)) {
             OutlinedButton(onClick = {
                 TimePickerDialog(context, { _, h, m -> onSave(settings.copy(startMinutes = h * 60 + m)) },
@@ -342,9 +358,11 @@ fun TimetableGrid(
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(days[d], Modifier.width(64.dp).padding(2.dp), fontWeight = FontWeight.Bold, fontSize = 12.sp)
                     (0 until settings.periods).forEach { p ->
-                        val content = cell(d, p)
+                        val closed = p >= settings.periodsOn(d)
+                        val content = if (closed) null else cell(d, p)
                         val isSel = selected == (d to p)
-                        val bg = colorKey(d, p)?.let { colorFor(it) } ?: MaterialTheme.colorScheme.surface
+                        val bg = if (closed) MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
+                            else colorKey(d, p)?.let { colorFor(it) } ?: MaterialTheme.colorScheme.surface
                         Box(
                             Modifier.width(cellW).heightIn(min = 52.dp).padding(2.dp)
                                 .background(bg, RoundedCornerShape(8.dp))
@@ -352,7 +370,7 @@ fun TimetableGrid(
                                     if (isSel) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outlineVariant,
                                     RoundedCornerShape(8.dp))
                                 .then(
-                                    if (onClick != null || onLongClick != null) Modifier.combinedClickable(
+                                    if (!closed && (onClick != null || onLongClick != null)) Modifier.combinedClickable(
                                         onClick = { onClick?.invoke(d, p) },
                                         onLongClick = onLongClick?.let { { it(d, p) } }
                                     ) else Modifier

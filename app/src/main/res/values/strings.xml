@@ -454,4 +454,6 @@
     <string name="tt_week_hours">حصصي في الأسبوع: %1$d</string>
     <string name="tt_clash">توجد حصص متداخلة بين مؤسستين (باللون الأحمر). تواصل مع الإدارة.</string>
     <string name="tt_received">وصل جدولك من %1$s: %2$d حصة.</string>
+    <string name="tt_day_periods">حصص كل يوم</string>
+    <string name="tt_day_periods_hint">اليوم الدراسي من 8:00 إلى 14:00، والجمعة تنتهي 12:00. يمكن تقصير أي يوم.</string>
 </resources>

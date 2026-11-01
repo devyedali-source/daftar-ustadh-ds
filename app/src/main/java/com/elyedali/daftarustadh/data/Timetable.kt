@@ -108,14 +108,18 @@ abstract class TimetableDao {
  * تُحفظ في app_meta.
  */
 data class TimetableSettings(
-    val days: List<Int> = listOf(0, 1, 2, 3, 4),  // الاثنين ... الجمعة
-    val periods: Int = 7,
+    val days: List<Int> = listOf(0, 1, 2, 3, 4, 5),  // الاثنين ... السبت (السبت يوم دراسة في الإعدادية والثانوية)
+    val periods: Int = 6,                           // من 8:00 إلى 14:00
     val startMinutes: Int = 8 * 60,
     val periodMinutes: Int = 60,
-    val breakAfter: Int = 3,                     // استراحة بعد الحصة الثالثة (0 = بدون)
-    val breakMinutes: Int = 15
+    val breakAfter: Int = 0,                        // بدون استراحة (0)، أو بعد الحصة رقم n
+    val breakMinutes: Int = 15,
+    val dayPeriods: Map<Int, Int> = mapOf(4 to 4)   // أيام أقصر: الجمعة تنتهي 12:00 (4 حصص)
 ) {
-    val slotCount: Int get() = days.size * periods
+    /** عدد حصص يوم معيّن (الجمعة أقصر). */
+    fun periodsOn(day: Int): Int = (dayPeriods[day] ?: periods).coerceIn(0, periods)
+
+    val slotCount: Int get() = days.sumOf { periodsOn(it) }
 
     fun start(period: Int): Int =
         startMinutes + period * periodMinutes + if (breakAfter in 1..period) breakMinutes else 0
@@ -127,6 +131,7 @@ data class TimetableSettings(
     fun encode(): String = JSONObject()
         .put("days", JSONArray(days)).put("periods", periods).put("start", startMinutes)
         .put("length", periodMinutes).put("breakAfter", breakAfter).put("breakMinutes", breakMinutes)
+        .put("dayPeriods", JSONObject().apply { dayPeriods.forEach { (d, n) -> put(d.toString(), n) } })
         .toString()
 
     companion object {
@@ -140,12 +145,16 @@ data class TimetableSettings(
                 val o = JSONObject(text)
                 val d = o.getJSONArray("days")
                 TimetableSettings(
-                    days = (0 until d.length()).map { d.getInt(it) }.filter { it in 0..6 }.distinct().sorted().ifEmpty { listOf(0, 1, 2, 3, 4) },
-                    periods = o.optInt("periods", 7).coerceIn(1, 12),
+                    days = (0 until d.length()).map { d.getInt(it) }.filter { it in 0..6 }.distinct().sorted().ifEmpty { listOf(0, 1, 2, 3, 4, 5) },
+                    periods = o.optInt("periods", 6).coerceIn(1, 12),
                     startMinutes = o.optInt("start", 480).coerceIn(0, 23 * 60),
                     periodMinutes = o.optInt("length", 60).coerceIn(20, 120),
-                    breakAfter = o.optInt("breakAfter", 3).coerceIn(0, 12),
-                    breakMinutes = o.optInt("breakMinutes", 15).coerceIn(0, 120)
+                    breakAfter = o.optInt("breakAfter", 0).coerceIn(0, 12),
+                    breakMinutes = o.optInt("breakMinutes", 15).coerceIn(0, 120),
+                    dayPeriods = o.optJSONObject("dayPeriods")?.let { dp ->
+                        dp.keys().asSequence().mapNotNull { k -> k.toIntOrNull()?.let { it to dp.optInt(k) } }
+                            .filter { it.first in 0..6 }.toMap()
+                    } ?: mapOf(4 to 4)
                 )
             }.getOrDefault(TimetableSettings())
         }

@@ -35,15 +35,19 @@ object TimetableGenerator {
         dayCount: Int,
         periods: Int,
         seed: Long = System.currentTimeMillis(),
-        iterations: Int = 120_000
+        iterations: Int = 120_000,
+        periodsPerDay: List<Int>? = null   // عدد حصص كل يوم (الجمعة أقصر)؛ null = كل الأيام كاملة
     ): Result {
+        val perDay = IntArray(dayCount) { d -> (periodsPerDay?.getOrNull(d) ?: periods).coerceIn(0, periods) }
+        fun isOpen(s: Int) = s % periods < perDay[s / periods]
         val rnd = Random(seed)
         val classIds = lessons.map { it.classId }.distinct()
         val teachers = lessons.map { it.teacher }.filter { it.isNotBlank() }.distinct()
         val classIndex = classIds.withIndex().associate { it.value to it.index }
         val teacherIndex = teachers.withIndex().associate { it.value to it.index }
         val slots = dayCount * periods
-        val overloaded = classIds.filter { c -> lessons.filter { it.classId == c }.sumOf { it.hours } > slots }
+        val openSlots = perDay.sum()
+        val overloaded = classIds.filter { c -> lessons.filter { it.classId == c }.sumOf { it.hours } > openSlots }
 
         // وحدات الساعة
         val units = ArrayList<LessonUnit>()
@@ -58,6 +62,7 @@ object TimetableGenerator {
         val pos = IntArray(units.size) { -1 }
 
         fun free(u: Int, s: Int): Boolean {
+            if (!isOpen(s)) return false
             val unit = units[u]
             if (classAt[unit.classIdx][s] != -1) return false
             return unit.teacherIdx < 0 || teacherAt[unit.teacherIdx][s] == -1
@@ -135,7 +140,7 @@ object TimetableGenerator {
             }
             var cost = 0.0
             perSubjectCount.forEach { (sub, n) ->
-                val ideal = minOf(dayCount, (n + 1) / 2)
+                val ideal = minOf(perDay.count { it > 0 }, (n + 1) / 2)
                 val used = perSubjectDays[sub]?.size ?: 0
                 if (used < ideal) cost += 1.5 * (ideal - used)
             }
@@ -195,7 +200,7 @@ object TimetableGenerator {
             val unit = units[u]
             val from = pos[u]
             val to = rnd.nextInt(slots)
-            if (to == from) { temp *= cooling; return@repeat }
+            if (to == from || !isOpen(to)) { temp *= cooling; return@repeat }
             val other = classAt[unit.classIdx][to]
             if (other < 0) {
                 // نقل إلى خانة فارغة في القسم

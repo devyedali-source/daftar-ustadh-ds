@@ -454,4 +454,6 @@
     <string name="tt_week_hours">Mes séances par semaine : %1$d</string>
     <string name="tt_clash">Des séances se chevauchent entre deux établissements (en rouge). Contactez l\'administration.</string>
     <string name="tt_received">Emploi du temps reçu de %1$s : %2$d séances.</string>
+    <string name="tt_day_periods">Séances par jour</string>
+    <string name="tt_day_periods_hint">Journée de 8:00 à 14:00, le vendredi se termine à 12:00. Chaque jour peut être raccourci.</string>
 </resources>
