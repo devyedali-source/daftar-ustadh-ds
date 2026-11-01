@@ -525,4 +525,5 @@
     <string name="sr_received">وصلت سجلات النتائج من %1$s ✅\nالأقسام: %2$s\nعدد المواد: %3$d</string>
     <string name="sr_received_conflicts">لم تُضَف هذه الأقسام لأنها موجودة عندك من مصدر آخر: %1$s</string>
     <string name="tt_teacher_whatsapp">رقم واتساب الأستاذ</string>
+    <string name="dsq_caption">📂 ملف من تطبيق دفتر الأستاذ DS — اضغط عليه واختر «دفتر الأستاذ DS» لفتحه.</string>
 </resources>

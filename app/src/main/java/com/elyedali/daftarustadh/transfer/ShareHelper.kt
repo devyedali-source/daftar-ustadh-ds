@@ -6,8 +6,14 @@ import androidx.core.content.FileProvider
 import java.io.File
 
 object ShareHelper {
+    /**
+     * نوع خاص بملفات التطبيق (‎.dsq): بدونه يسمّيها واتساب «BIN»،
+     * ومعه يظهر الملف باسمه وامتداده، ويفتح مباشرة بالتطبيق.
+     */
+    const val DSQ_MIME = "application/vnd.daftar-ustadh.dsq"
+
     /** يحفظ الملف مؤقتًا ثم يفتح نافذة المشاركة (واتساب، بلوتوث، المشاركة القريبة...). */
-    fun share(context: Context, bytes: ByteArray, fileName: String, chooserTitle: String, mimeType: String = "application/octet-stream") {
+    fun share(context: Context, bytes: ByteArray, fileName: String, chooserTitle: String, mimeType: String = DSQ_MIME) {
         val dir = File(context.cacheDir, "shared").apply { mkdirs() }
         dir.listFiles()?.forEach { it.delete() }
         val file = File(dir, fileName).apply { writeBytes(bytes) }
@@ -15,6 +21,7 @@ object ShareHelper {
         val send = Intent(Intent.ACTION_SEND).apply {
             type = mimeType
             putExtra(Intent.EXTRA_STREAM, uri)
+            if (mimeType == DSQ_MIME) putExtra(Intent.EXTRA_TEXT, context.getString(com.elyedali.daftarustadh.R.string.dsq_caption))
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         }
         context.startActivity(Intent.createChooser(send, chooserTitle).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
@@ -32,7 +39,7 @@ object ShareHelper {
         val uri = FileProvider.getUriForFile(context, context.packageName + ".files", file)
         for (pkg in listOf("com.whatsapp", "com.whatsapp.w4b")) {
             val send = Intent(Intent.ACTION_SEND).apply {
-                type = "application/octet-stream"
+                type = DSQ_MIME
                 setPackage(pkg)
                 putExtra(Intent.EXTRA_STREAM, uri)
                 putExtra(Intent.EXTRA_TEXT, caption)
@@ -46,7 +53,7 @@ object ShareHelper {
             }
         }
         val send = Intent(Intent.ACTION_SEND).apply {
-            type = "application/octet-stream"
+            type = DSQ_MIME
             putExtra(Intent.EXTRA_STREAM, uri)
             putExtra(Intent.EXTRA_TEXT, caption)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)

@@ -525,4 +525,5 @@
     <string name="sr_received">Registres de notes reçus de %1$s ✅\nClasses : %2$s\nNombre de matières : %3$d</string>
     <string name="sr_received_conflicts">Ces classes n\'ont pas été ajoutées car elles existent déjà d\'une autre source : %1$s</string>
     <string name="tt_teacher_whatsapp">WhatsApp du professeur</string>
+    <string name="dsq_caption">📂 Fichier de l\'application دفتر الأستاذ DS — touchez-le et choisissez « دفتر الأستاذ DS » pour l\'ouvrir.</string>
 </resources>
