@@ -5,6 +5,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -28,6 +30,7 @@ import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.AssistChip
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -87,6 +90,7 @@ fun AppTopBar(title: String, onMenu: (() -> Unit)?, onBack: (() -> Unit)?) {
  * 1) اختيار السنة الدراسية (بطاقة لكل سنة وعدد أقسامها)، 2) أقسام السنة المختارة،
  * مع زر «إنشاء قسم» العائم (الإدارة) وزر «فتح ملف قسم» (الأستاذ).
  */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun HomeYearsScreen(
     classes: List<ClassEntity>,            // أقسام الإدارة وأقسام الأستاذ من كل السنوات
@@ -94,6 +98,9 @@ fun HomeYearsScreen(
     selectedYear: String?,
     mode: String?,                         // null = لم يُختر بعد، "admin" = وضع الإدارة، "teacher" = وضع الأستاذ
     onSelectMode: (String?) -> Unit,
+    institutionName: String?,
+    teacherName: String?,
+    onTool: (String) -> Unit,
     schoolNames: Map<String, String>,
     ownInstitutionId: String?,
     activated: Set<String>,
@@ -210,6 +217,32 @@ fun HomeYearsScreen(
                                     MiniStat("👥", total, stringResource(R.string.stat_students))
                                     MiniStat("👦", boys, stringResource(R.string.stat_boys))
                                     MiniStat("👧", girls, stringResource(R.string.stat_girls))
+                                }
+                            }
+                        }
+                        item {
+                            // صاحب الوضع وأدواته: المؤسسة وأدوات الإدارة، أو الأستاذ وأدواته
+                            val tools = if (mode == MODE_ADMIN) listOf(
+                                "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
+                                "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
+                                "STATS" to ("📊 " + stringResource(R.string.statistics)),
+                                "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title)),
+                                "REMARKS" to ("✏️ " + stringResource(R.string.remarks_settings))
+                            ) else listOf(
+                                "TEACHER_PROFILE" to ("👤 " + stringResource(R.string.tp_title)),
+                                "MY_TIMETABLE" to ("🗓️ " + stringResource(R.string.tt_my_timetable))
+                            )
+                            Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
+                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                                elevation = CardDefaults.cardElevation(1.dp)) {
+                                Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                    Text((if (mode == MODE_ADMIN) "🏫 " + (institutionName ?: "") else "👨‍🏫 " + (teacherName ?: "")),
+                                        fontWeight = FontWeight.Black, fontSize = 15.sp, maxLines = 2)
+                                    FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                                        tools.forEach { (key, label) ->
+                                            AssistChip(onClick = { onTool(key) }, label = { Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold) })
+                                        }
+                                    }
                                 }
                             }
                         }

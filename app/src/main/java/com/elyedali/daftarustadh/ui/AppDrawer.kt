@@ -2,6 +2,7 @@ package com.elyedali.daftarustadh.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -18,7 +19,10 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalDrawerSheet
@@ -36,6 +40,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -43,13 +48,14 @@ import com.elyedali.daftarustadh.R
 
 /**
  * القائمة الجانبية كما في دفتر المعلم: رأس ملوّن بالشعار واسم التطبيق والمؤسسة،
- * ثم «القائمة الجانبية للتطبيق 📌» وعناصرها، ثم أدوات الإدارة، ثم اللغة.
+ * ثم: الصفحة الرئيسية والأقسام، التبادلات، التشريع، كتبي؛ وفي الأسفل المزامنة وتسجيل الخروج.
  */
 @Composable
 fun AppDrawer(
     schoolName: String?,
     schoolYear: String?,
     current: String,
+    lastSync: String?,
     onItem: (String) -> Unit
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -58,7 +64,7 @@ fun AppDrawer(
         drawerShape = RoundedCornerShape(topStart = 24.dp, bottomStart = 24.dp),
         modifier = Modifier.width(310.dp)
     ) {
-        Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+        Column(Modifier.fillMaxSize()) {
             Box(
                 Modifier.fillMaxWidth()
                     .background(Brush.verticalGradient(listOf(MaterialTheme.colorScheme.primary, MaterialTheme.colorScheme.secondary)))
@@ -87,26 +93,45 @@ fun AppDrawer(
             Text(stringResource(R.string.drawer_menu), fontWeight = FontWeight.Bold, fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp))
             Item("🏫", R.string.drawer_home, current == "HOME") { onItem("HOME") }
-            Item("📅", R.string.tt_title, current == "TIMETABLE") { onItem("TIMETABLE") }
-            Item("🗓️", R.string.tt_my_timetable, current == "MY_TIMETABLE") { onItem("MY_TIMETABLE") }
             Item("🤝", R.string.menu_exchanges, current == "EXCHANGES") { onItem("EXCHANGES") }
             Item("⚖️", R.string.menu_legislation, current == "LEGISLATION") { onItem("LEGISLATION") }
             Item("📚", R.string.menu_books, false) { onItem("BOOKS") }
+
+            Spacer(Modifier.weight(1f))
             HorizontalDivider(Modifier.padding(vertical = 8.dp, horizontal = 16.dp))
-            Text(stringResource(R.string.admin_section), fontWeight = FontWeight.Bold, fontSize = 12.sp,
-                color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp))
-            Item("📊", R.string.statistics, current == "STATS") { onItem("STATS") }
-            Item("⭐", R.string.act_title, current == "ACTIVATION") { onItem("ACTIVATION") }
-            Item("🏛️", R.string.drawer_institution, current == "INSTITUTION") { onItem("INSTITUTION") }
-            Item("✏️", R.string.remarks_settings, current == "REMARKS") { onItem("REMARKS") }
-            Item("📂", R.string.open_class_file, false) { onItem("OPEN_FILE") }
-            HorizontalDivider(Modifier.padding(vertical = 8.dp, horizontal = 16.dp))
-            Row(Modifier.padding(horizontal = 20.dp, vertical = 4.dp), verticalAlignment = Alignment.CenterVertically,
+
+            // المزامنة (Google Drive) كما في دفتر المعلم
+            Surface(
+                color = Color(0xFFF1F8E9), shape = RoundedCornerShape(12.dp),
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp)
+                    .border(1.dp, Color(0xFF2E7D32).copy(alpha = 0.3f), RoundedCornerShape(12.dp))
+            ) {
+                Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text("☁️ " + stringResource(R.string.drawer_sync_title), fontWeight = FontWeight.ExtraBold, fontSize = 12.sp, color = Color(0xFF1B5E20))
+                    Text(stringResource(R.string.drawer_last_sync, lastSync ?: stringResource(R.string.drawer_never_synced)),
+                        fontSize = 10.5.sp, color = Color(0xFF33691E))
+                    Button(
+                        onClick = { onItem("SYNC") }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(10.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2E7D32), contentColor = Color.White)
+                    ) { Text("🔄 " + stringResource(R.string.drawer_sync), fontWeight = FontWeight.Bold, fontSize = 12.sp) }
+                }
+            }
+
+            Row(Modifier.padding(horizontal = 20.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text("🌐", fontSize = 16.sp)
                 FilterChip(selected = !isFr, onClick = { onItem("LANG_AR") }, label = { Text("العربية") })
                 FilterChip(selected = isFr, onClick = { onItem("LANG_FR") }, label = { Text("Français") })
             }
+
+            OutlinedButton(
+                onClick = { onItem("LOGOUT") },
+                modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 6.dp),
+                colors = ButtonDefaults.outlinedButtonColors(contentColor = Color(0xFFD32F2F)),
+                border = BorderStroke(1.dp, Color(0xFFD32F2F)), shape = RoundedCornerShape(12.dp)
+            ) { Text("🚪 " + stringResource(R.string.drawer_logout), fontWeight = FontWeight.Bold, fontSize = 12.sp) }
+            Text(stringResource(R.string.drawer_footer), fontSize = 10.sp, color = Color.Gray,
+                textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp))
             Spacer(Modifier.height(20.dp))
         }
     }

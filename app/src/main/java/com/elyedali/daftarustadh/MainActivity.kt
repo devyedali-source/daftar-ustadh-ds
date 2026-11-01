@@ -102,7 +102,7 @@ import java.util.UUID
 private const val TEACHER_NAME_KEY = "teacher_name"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -190,6 +190,8 @@ class MainActivity : AppCompatActivity() {
                 val remarksText by remember { metaDao.observe(RemarkScale.KEY) }.collectAsState(initial = null)
                 val remarkScale = remember(remarksText) { RemarkScale.decode(remarksText) }
                 val teacherName by remember { metaDao.observe(TEACHER_NAME_KEY) }.collectAsState(initial = null)
+                val teacherProfileText by remember { metaDao.observe(com.elyedali.daftarustadh.ui.TeacherProfile.KEY) }.collectAsState(initial = null)
+                val teacherProfile = com.elyedali.daftarustadh.ui.TeacherProfile.decode(teacherProfileText)
                 val activatedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.KEY) }.collectAsState(initial = null)
                 val activatedClasses = remember(activatedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(activatedText) }
                 val requestedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY) }.collectAsState(initial = null)
@@ -655,6 +657,8 @@ class MainActivity : AppCompatActivity() {
                     Screen.ACTIVATION -> BackHandler { screen = activationBack }
                     Screen.TIMETABLE -> BackHandler { screen = ttBack }
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
+                    Screen.INSTITUTION -> BackHandler { if (inst == null) homeMode = null; screen = Screen.HOME }
+                    Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) homeMode = null; screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
                 }
 
@@ -666,10 +670,13 @@ class MainActivity : AppCompatActivity() {
                             schoolName = inst?.schoolName,
                             schoolYear = inst?.schoolYear,
                             current = screen.name,
+                            lastSync = null,
                             onItem = { key ->
                                 scope.launch { drawerState.close() }
                                 when (key) {
-                                    "HOME" -> { screen = Screen.HOME }
+                                    "HOME" -> { selectedYear = null; homeMode = null; screen = Screen.HOME }
+                                    "SYNC" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_sync_later), android.widget.Toast.LENGTH_LONG).show()
+                                    "LOGOUT" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_logout_later), android.widget.Toast.LENGTH_LONG).show()
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                     "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
                                     "EXCHANGES" -> screen = Screen.EXCHANGES
@@ -691,8 +698,29 @@ class MainActivity : AppCompatActivity() {
                     screen == Screen.INSTITUTION -> InstitutionScreen(
                         existing = inst,
                         onSave = { scope.launch { institutionDao.save(it); screen = Screen.HOME } },
-                        onCancel = { screen = Screen.HOME }
+                        onCancel = { if (inst == null) homeMode = null; screen = Screen.HOME }
                     )
+
+                    screen == Screen.TEACHER_PROFILE -> {
+                        val isFrP = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
+                        val options = remember(isFrP) {
+                            val year = CurriculumRepository.availableYears(this@MainActivity).lastOrNull()
+                            (if (year == null) emptyList() else CurriculumRepository.levels(this@MainActivity, year).flatMap { it.subjects }.distinctBy { it.code })
+                                .map { com.elyedali.daftarustadh.ui.SpecialtyOption(it.code, if (isFrP) it.nameFr else it.nameAr) }
+                        }
+                        com.elyedali.daftarustadh.ui.TeacherProfileScreen(
+                            existing = teacherProfile ?: teacherName?.takeIf { it.isNotBlank() }?.let { com.elyedali.daftarustadh.ui.TeacherProfile(it, "", emptyList()) },
+                            specialties = options,
+                            onSave = { pr ->
+                                scope.launch {
+                                    metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.ui.TeacherProfile.KEY, pr.encode()))
+                                    metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, pr.name))
+                                    screen = Screen.HOME
+                                }
+                            },
+                            onCancel = { if (teacherProfile == null) homeMode = null; screen = Screen.HOME }
+                        )
+                    }
 
                     screen == Screen.CLASSES && inst != null -> ClassesScreen(
                         institution = inst,
@@ -1225,7 +1253,25 @@ class MainActivity : AppCompatActivity() {
                         currentInstitutionYear = inst?.schoolYear,
                         selectedYear = selectedYear,
                         mode = homeMode,
-                        onSelectMode = { homeMode = it },
+                        onSelectMode = { m ->
+                            homeMode = m
+                            // أول دخول: الإدارة تسجّل معلومات المؤسسة، والأستاذ يسجّل معلوماته (مرة واحدة)
+                            if (m == com.elyedali.daftarustadh.ui.MODE_ADMIN && inst == null) screen = Screen.INSTITUTION
+                            if (m == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherProfile == null) screen = Screen.TEACHER_PROFILE
+                        },
+                        institutionName = inst?.schoolName,
+                        teacherName = teacherProfile?.name ?: teacherName,
+                        onTool = { key ->
+                            when (key) {
+                                "INSTITUTION" -> screen = Screen.INSTITUTION
+                                "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                "STATS" -> screen = Screen.STATS
+                                "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
+                                "REMARKS" -> screen = Screen.REMARKS
+                                "TEACHER_PROFILE" -> screen = Screen.TEACHER_PROFILE
+                                "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
+                            }
+                        },
                         schoolNames = schoolNames,
                         ownInstitutionId = inst?.id,
                         activated = activatedClasses,

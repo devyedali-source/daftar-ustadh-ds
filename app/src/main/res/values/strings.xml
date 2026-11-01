@@ -499,4 +499,17 @@
     <string name="mode_choose">اختر وضع العمل 👇</string>
     <string name="mode_admin_desc">إنشاء الأقسام، الطلاب، النتائج، الكشوف، الغياب، دفتر النصوص والجدول الزمني</string>
     <string name="mode_teacher_desc">أقسامك التي تدرّسها: رصد الدرجات وجدولك الزمني</string>
+    <string name="tp_title">معلوماتي كأستاذ</string>
+    <string name="tp_intro">سجّل معلوماتك مرة واحدة، وبعدها تجد أقسامك وجداولك في وضع الأستاذ.</string>
+    <string name="tp_name">الاسم الكامل</string>
+    <string name="tp_phone">رقم الهاتف</string>
+    <string name="tp_specialties">المواد التي تدرّسها</string>
+    <string name="drawer_sync_title">مزامنة Google Drive</string>
+    <string name="drawer_last_sync">آخر مزامنة: %1$s</string>
+    <string name="drawer_never_synced">لم تتم المزامنة بعد</string>
+    <string name="drawer_sync">مزامنة الآن</string>
+    <string name="drawer_logout">تسجيل الخروج</string>
+    <string name="drawer_footer">دفتر الأستاذ DS\nجميع الحقوق محفوظة © 2026</string>
+    <string name="drawer_sync_later">المزامنة مع Google Drive ستُفعَّل في المرحلة القادمة (مع الخادم).</string>
+    <string name="drawer_logout_later">تسجيل الدخول والخروج سيُفعَّلان مع إنشاء الخادم.</string>
 </resources>
