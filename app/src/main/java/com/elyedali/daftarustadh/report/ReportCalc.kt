@@ -74,16 +74,16 @@ object ReportCalc {
                     e1 = m[GradeSlot.E1], e2 = m[GradeSlot.E2], e3 = m[GradeSlot.E3],
                     testsAvg = GradeMath.testsAverage(m, mode),
                     average = avg,
-                    total = avg?.let { it * sub.coefficient },
+                    total = avg?.let { GradeMath.round2(it * sub.coefficient) },
                     teacherName = rec?.teacherName.orEmpty()
                 )
             }
-            val total = lines.sumOf { it.total ?: 0.0 }
+            val total = GradeMath.round2(lines.sumOf { it.total ?: 0.0 })
             Triple(s, lines, total)
         }
-        val averages = partial.map { (s, _, total) -> s.id to (if (coefSum == 0) 0.0 else total / coefSum) }.toMap()
-        // الرتبة على المعدل مقرّبًا لرقمين، حتى لا تفرّق كسور غير ظاهرة بين متساويين
-        val rounded = averages.mapValues { Math.round(it.value * 100) / 100.0 }
+        // المعدل العام مقرّبًا لرقمين كما يُطبع، والرتبة عليه هو نفسه: المتساويان في الكشف متساويان في الرتبة
+        val averages = partial.map { (s, _, total) -> s.id to (if (coefSum == 0) 0.0 else GradeMath.round2(total / coefSum)) }.toMap()
+        val rounded = averages
         return partial.map { (s, lines, total) ->
             val mine = rounded.getValue(s.id)
             StudentReport(

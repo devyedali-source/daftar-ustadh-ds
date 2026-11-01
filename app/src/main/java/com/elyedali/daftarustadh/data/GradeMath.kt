@@ -13,20 +13,26 @@ import java.math.RoundingMode
  */
 object GradeMath {
 
+    /**
+     * تقريب لرقمين بعد الفاصلة (0.005 تُرفع) بحساب عشري دقيق.
+     * كل معدل يُقرَّب قبل استعماله، فما يُطبع في الكشف يتطابق مع الحساب باليد.
+     */
+    fun round2(v: Double): Double = BigDecimal.valueOf(v).setScale(2, RoundingMode.HALF_UP).toDouble()
+
     fun testsAverage(grades: Map<String, Double>, mode: String): Double? {
         val tests = listOf(1, 2, 3).mapNotNull { grades[GradeSlot.test(it)] }
         if (tests.isEmpty()) return null
-        return if (mode == TestsMode.BEST) tests.max() else tests.average()
+        return round2(if (mode == TestsMode.BEST) tests.max() else tests.average())
     }
 
     fun subjectAverage(term: Int, grades: Map<String, Double>, testsMode: String): Double? = when (term) {
-        1 -> grades[GradeSlot.E1]
-        2 -> grades[GradeSlot.E2]
+        1 -> grades[GradeSlot.E1]?.let { round2(it) }
+        2 -> grades[GradeSlot.E2]?.let { round2(it) }
         else -> {
             val t = testsAverage(grades, testsMode)
             val e1 = grades[GradeSlot.E1]; val e2 = grades[GradeSlot.E2]; val e3 = grades[GradeSlot.E3]
             if (t == null || e1 == null || e2 == null || e3 == null) null
-            else (t * 3 + e1 * 1 + e2 * 2 + e3 * 3) / 9.0
+            else round2((t * 3 + e1 * 1 + e2 * 2 + e3 * 3) / 9.0)
         }
     }
 
