@@ -14,6 +14,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Create
+import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
@@ -51,6 +52,8 @@ fun HomeScreen(
     onOpenRemarks: () -> Unit,
     onOpenStats: () -> Unit,
     onOpenActivation: () -> Unit,
+    onOpenTimetable: () -> Unit,
+    onOpenMyTimetable: () -> Unit,
     onLanguageSelected: (String) -> Unit,
     onOpenMenu: () -> Unit = {}
 ) {
@@ -102,6 +105,7 @@ fun HomeScreen(
             SectionTitle(stringResource(R.string.teacher_section))
             ActionCard(Icons.Filled.List, stringResource(R.string.my_classes), stringResource(R.string.home_my_classes_desc), onClick = onOpenTeaching)
             ActionCard(Icons.Filled.Share, stringResource(R.string.open_class_file), stringResource(R.string.home_open_file_desc), onClick = onOpenFile)
+            ActionCard(Icons.Filled.DateRange, stringResource(R.string.tt_my_timetable), stringResource(R.string.home_my_timetable_desc), onClick = onOpenMyTimetable)
             ActionCard(Icons.Filled.Create, stringResource(R.string.remarks_settings), stringResource(R.string.home_remarks_desc),
                 tint = MaterialTheme.colorScheme.onSurfaceVariant, onClick = onOpenRemarks)
 
@@ -112,6 +116,8 @@ fun HomeScreen(
             } else {
                 ActionCard(Icons.Filled.AccountBox, stringResource(R.string.classes_title), stringResource(R.string.home_classes_desc),
                     tint = MaterialTheme.colorScheme.secondary, onClick = onOpenClasses)
+                ActionCard(Icons.Filled.DateRange, stringResource(R.string.tt_title), stringResource(R.string.home_timetable_desc),
+                    tint = MaterialTheme.colorScheme.secondary, onClick = onOpenTimetable)
                 ActionCard(Icons.Filled.Info, stringResource(R.string.statistics), stringResource(R.string.home_stats_desc),
                     tint = MaterialTheme.colorScheme.tertiary, onClick = onOpenStats)
                 ActionCard(Icons.Filled.Star, stringResource(R.string.act_title), stringResource(R.string.home_activation_desc),

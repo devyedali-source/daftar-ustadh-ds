@@ -41,6 +41,7 @@ object TransferCodec {
     private const val FORMAT = "daftar-ustadh-ds"
     const val TYPE_RECORD = "teacher_record"
     const val TYPE_ABSENCE = "teacher_absence"
+    const val TYPE_TIMETABLE = "teacher_timetable"
 
     private fun gzip(json: JSONObject): ByteArray {
         val out = ByteArrayOutputStream()
@@ -59,11 +60,14 @@ object TransferCodec {
         return when (json.optString("type")) {
             TYPE_RECORD -> decodeRecord(json)
             TYPE_ABSENCE -> AbsenceFile.fromJson(json)
+            TYPE_TIMETABLE -> TimetableFile.fromJson(json)
             else -> ClassFileCodec.decode(bytes)
         }
     }
 
     fun encodeAbsence(a: AbsenceFile): ByteArray = gzip(a.toJson(FORMAT, TYPE_ABSENCE))
+
+    fun encodeTimetable(t: TimetableFile): ByteArray = gzip(t.toJson(FORMAT, TYPE_TIMETABLE))
 
     fun encodeRecord(r: RecordFile): ByteArray = gzip(
         JSONObject()
