@@ -7,19 +7,27 @@ import java.io.File
 
 object ShareHelper {
     /**
-     * نوع خاص بملفات التطبيق (‎.dsq): بدونه يسمّيها واتساب «BIN»،
-     * ومعه يظهر الملف باسمه وامتداده، ويفتح مباشرة بالتطبيق.
+     * علامة «ملف بيانات التطبيق»: يُرسل في صورة PDF عادي (لا «BIN» مجهول قد يُظن فيروسًا)،
+     * صفحته تعرّف بالملف، والبيانات محمولة داخله (انظر DsqPdf).
      */
     const val DSQ_MIME = "application/vnd.daftar-ustadh.dsq"
+    private const val PDF = "application/pdf"
+
+    /** يحوّل ملف البيانات إلى PDF يحملها، ويغيّر الامتداد ‎.dsq إلى ‎.pdf. */
+    private fun asPdf(context: Context, bytes: ByteArray, fileName: String): Pair<ByteArray, String> {
+        val title = fileName.removeSuffix(".dsq")
+        return DsqPdf.wrap(context, bytes, title) to "$title.pdf"
+    }
 
     /** يحفظ الملف مؤقتًا ثم يفتح نافذة المشاركة (واتساب، بلوتوث، المشاركة القريبة...). */
     fun share(context: Context, bytes: ByteArray, fileName: String, chooserTitle: String, mimeType: String = DSQ_MIME) {
+        val (outBytes, outName) = if (mimeType == DSQ_MIME) asPdf(context, bytes, fileName) else bytes to fileName
         val dir = File(context.cacheDir, "shared").apply { mkdirs() }
         dir.listFiles()?.forEach { it.delete() }
-        val file = File(dir, fileName).apply { writeBytes(bytes) }
+        val file = File(dir, outName).apply { writeBytes(outBytes) }
         val uri = FileProvider.getUriForFile(context, context.packageName + ".files", file)
         val send = Intent(Intent.ACTION_SEND).apply {
-            type = mimeType
+            type = if (mimeType == DSQ_MIME) PDF else mimeType
             putExtra(Intent.EXTRA_STREAM, uri)
             if (mimeType == DSQ_MIME) putExtra(Intent.EXTRA_TEXT, context.getString(com.elyedali.daftarustadh.R.string.dsq_caption))
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
@@ -49,13 +57,14 @@ object ShareHelper {
      * @param phone الرقم الدولي بدون + (مثل 22236000000)
      */
     fun shareToWhatsApp(context: Context, bytes: ByteArray, fileName: String, phone: String, caption: String, chooserTitle: String): Boolean {
+        val (outBytes, outName) = asPdf(context, bytes, fileName)
         val dir = File(context.cacheDir, "shared").apply { mkdirs() }
         dir.listFiles()?.forEach { it.delete() }
-        val file = File(dir, fileName).apply { writeBytes(bytes) }
+        val file = File(dir, outName).apply { writeBytes(outBytes) }
         val uri = FileProvider.getUriForFile(context, context.packageName + ".files", file)
         for (pkg in listOf("com.whatsapp", "com.whatsapp.w4b")) {
             val send = Intent(Intent.ACTION_SEND).apply {
-                type = DSQ_MIME
+                type = PDF
                 setPackage(pkg)
                 putExtra(Intent.EXTRA_STREAM, uri)
                 putExtra(Intent.EXTRA_TEXT, caption)
@@ -69,7 +78,7 @@ object ShareHelper {
             }
         }
         val send = Intent(Intent.ACTION_SEND).apply {
-            type = DSQ_MIME
+            type = PDF
             putExtra(Intent.EXTRA_STREAM, uri)
             putExtra(Intent.EXTRA_TEXT, caption)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)

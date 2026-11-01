@@ -668,10 +668,11 @@ class MainActivity : AppCompatActivity() {
                             val bytes = withContext(Dispatchers.IO) {
                                 contentResolver.openInputStream(uri)?.use { it.readBytes() }
                             } ?: throw IllegalStateException()
-                            // ملف PDF (جدول أو سجل للطباعة) لا يُفتح في التطبيق: نوضّح ذلك بدل «ملف تالف»
-                            if (bytes.size >= 4 && String(bytes, 0, 4, Charsets.ISO_8859_1) == "%PDF")
-                                throw PdfNotImportableException()
-                            when (val any = TransferCodec.decodeAny(bytes)) {
+                            // ملفات التطبيق تصل في صورة PDF تحمل البيانات؛ أما PDF عادي (للطباعة) فلا يُفتح في التطبيق
+                            val data = if (com.elyedali.daftarustadh.transfer.DsqPdf.isPdf(bytes))
+                                com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException()
+                            else bytes
+                            when (val any = TransferCodec.decodeAny(data)) {
                                 is RecordFile -> when (val chk = recordImporter.check(any)) {
                                     is RecordCheck.Ready -> { recordCheck = chk; null }
                                     is RecordCheck.WrongClass -> FileResult.Message(

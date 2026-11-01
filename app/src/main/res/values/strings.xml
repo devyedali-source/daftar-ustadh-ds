@@ -525,7 +525,7 @@
     <string name="sr_received">وصلت سجلات النتائج وجدولك من %1$s ✅\nالأقسام: %2$s\nعدد المواد: %3$d\nحصص الجدول: %4$d</string>
     <string name="sr_received_conflicts">لم تُضَف هذه الأقسام لأنها موجودة عندك من مصدر آخر: %1$s</string>
     <string name="tt_teacher_whatsapp">رقم واتساب الأستاذ</string>
-    <string name="dsq_caption">📂 ملف من تطبيق دفتر الأستاذ DS — اضغط عليه واختر «دفتر الأستاذ DS» لفتحه.</string>
+    <string name="dsq_caption">📂 ملف بيانات من تطبيق دفتر الأستاذ DS — افتحه من التطبيق بزر «فتح ملف» لتُضاف بياناته.</string>
     <string name="tt_approve_first">اعتمد الجدول الزمني أولًا (الجدول الزمني ← التوليد والإعدادات).</string>
     <string name="tt_pb_not_generated">لم يُولَّد الجدول بعد.</string>
     <string name="tt_pb_missing_hours">%1$s: %2$s ينقصها %3$d ساعة</string>
@@ -580,5 +580,5 @@
     <string name="ac_bad_range">تاريخ البداية بعد تاريخ النهاية.</string>
     <string name="ac_no_absence">لا غياب في هذه الفترة.</string>
     <string name="ac_roll">رقم النداء %1$d</string>
-    <string name="file_is_pdf">هذا ملف PDF للقراءة أو الطباعة، ولا يُفتح داخل التطبيق.\nافتح ملف دفتر الأستاذ DS الذي أرسلته الإدارة (يظهر في واتساب باسم مثل «سجلات النتائج…» أو «جدول الأستاذ…» وعليه BIN).</string>
+    <string name="file_is_pdf">هذا ملف PDF عادي للقراءة أو الطباعة، وليس ملف بيانات من دفتر الأستاذ DS.\nملفات التطبيق مكتوب في صفحتها: «ملف بيانات من تطبيق دفتر الأستاذ DS».</string>
 </resources>

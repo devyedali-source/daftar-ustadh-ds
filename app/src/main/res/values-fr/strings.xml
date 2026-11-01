@@ -525,7 +525,7 @@
     <string name="sr_received">Registres de notes et emploi du temps reçus de %1$s ✅\nClasses : %2$s\nMatières : %3$d\nSéances : %4$d</string>
     <string name="sr_received_conflicts">Ces classes n\'ont pas été ajoutées car elles existent déjà d\'une autre source : %1$s</string>
     <string name="tt_teacher_whatsapp">WhatsApp du professeur</string>
-    <string name="dsq_caption">📂 Fichier de l\'application دفتر الأستاذ DS — touchez-le et choisissez « دفتر الأستاذ DS » pour l\'ouvrir.</string>
+    <string name="dsq_caption">📂 Fichier de données دفتر الأستاذ DS — ouvrez-le depuis l\'application avec « Ouvrir un fichier ».</string>
     <string name="tt_approve_first">Validez d\'abord l\'emploi du temps (Emploi du temps ← Génération).</string>
     <string name="tt_pb_not_generated">L\'emploi du temps n\'est pas encore généré.</string>
     <string name="tt_pb_missing_hours">%1$s : il manque %3$d h de %2$s</string>
@@ -580,5 +580,5 @@
     <string name="ac_bad_range">La date de début est après la date de fin.</string>
     <string name="ac_no_absence">Aucune absence sur cette période.</string>
     <string name="ac_roll">N° d\'appel %1$d</string>
-    <string name="file_is_pdf">Ce fichier est un PDF à lire ou imprimer, il ne s\'ouvre pas dans l\'application.\nOuvrez le fichier دفتر الأستاذ DS envoyé par l\'administration (dans WhatsApp, nommé « سجلات النتائج… » ou « جدول الأستاذ… », marqué BIN).</string>
+    <string name="file_is_pdf">Ce PDF est un document ordinaire (lecture ou impression), pas un fichier de données دفتر الأستاذ DS.\nLes fichiers de l\'application portent la mention « ملف بيانات من تطبيق دفتر الأستاذ DS ».</string>
 </resources>
