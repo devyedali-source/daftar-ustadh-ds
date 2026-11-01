@@ -512,4 +512,17 @@
     <string name="drawer_footer">دفتر الأستاذ DS\nTous droits réservés © 2026</string>
     <string name="drawer_sync_later">La synchronisation Google Drive sera activée à la prochaine étape (avec le serveur).</string>
     <string name="drawer_logout_later">La connexion et la déconnexion seront activées avec le serveur.</string>
+    <string name="sr_title">Partager les registres des professeurs</string>
+    <string name="sr_intro">Chaque professeur reçoit par WhatsApp un seul fichier contenant toutes ses classes et leurs listes d\'élèves, avec les matières qu\'il enseigne dans chacune : ses registres de notes sont prêts. Les professeurs et la répartition viennent de « Emploi du temps ← Professeurs ».</string>
+    <string name="sr_manage_teachers">Professeurs et répartition des classes</string>
+    <string name="sr_no_teachers">Aucun professeur. Ajoutez-les avec « Professeurs et répartition des classes ».</string>
+    <string name="sr_add_whatsapp">Ajouter un numéro WhatsApp</string>
+    <string name="sr_no_classes">Aucune classe ne lui est encore attribuée.</string>
+    <string name="sr_send">Envoyer ses registres par WhatsApp (%1$s classes)</string>
+    <string name="sr_send_again">Renvoyer (%1$s classes)</string>
+    <string name="sr_sent">Envoyé</string>
+    <string name="sr_caption">Bonjour M. %1$s 🌹\nVoici les registres de notes de vos classes à %2$s :\n%3$s\nOuvrez le fichier avec l\'application دفتر الأستاذ DS.</string>
+    <string name="sr_received">Registres de notes reçus de %1$s ✅\nClasses : %2$s\nNombre de matières : %3$d</string>
+    <string name="sr_received_conflicts">Ces classes n\'ont pas été ajoutées car elles existent déjà d\'une autre source : %1$s</string>
+    <string name="tt_teacher_whatsapp">WhatsApp du professeur</string>
 </resources>

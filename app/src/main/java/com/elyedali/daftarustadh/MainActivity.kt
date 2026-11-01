@@ -102,7 +102,7 @@ import java.util.UUID
 private const val TEACHER_NAME_KEY = "teacher_name"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -138,6 +138,7 @@ class MainActivity : AppCompatActivity() {
         // بيانات تجريبية (نسخ التجربة فقط الآن؛ وبعد تسجيل الدخول لحساب صاحب التطبيق فقط)
         lifecycleScope.launch(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db) }
         val recordImporter = RecordImporter(db)
+        val bundleImporter = com.elyedali.daftarustadh.transfer.TeacherBundleImporter(db)
 
         setContent {
             DaftarTheme {
@@ -207,6 +208,8 @@ class MainActivity : AppCompatActivity() {
                 var ttGenerating by remember { mutableStateOf(false) }
                 var ttResult by remember { mutableStateOf<String?>(null) }
                 var ttInitialClass by rememberSaveable { mutableStateOf<String?>(null) }
+                var ttInitialTab by remember { mutableStateOf<Int?>(null) }
+                var recordsSent by remember { mutableStateOf(setOf<String>()) }
                 var ttBack by rememberSaveable { mutableStateOf(Screen.HOME) }
                 var askNameFor by remember { mutableStateOf<String?>(null) }
                 val thresholdsText by remember { metaDao.observe(KashfSettings.THRESHOLDS_KEY) }.collectAsState(initial = null)
@@ -585,6 +588,7 @@ class MainActivity : AppCompatActivity() {
                 // فتح ملف قسم: من الواتساب أو من زر «فتح ملف قسم»
                 fun processFile(uri: Uri) {
                     scope.launch {
+                        var importedYear: String? = null
                         val result: FileResult? = try {
                             val bytes = withContext(Dispatchers.IO) {
                                 contentResolver.openInputStream(uri)?.use { it.readBytes() }
@@ -609,7 +613,22 @@ class MainActivity : AppCompatActivity() {
                                     screen = Screen.MY_TIMETABLE
                                     FileResult.Message(getString(R.string.tt_received, any.schoolName, any.entries.size))
                                 }
-                                is ClassFile -> FileResult.Done(importer.save(any))
+                                is com.elyedali.daftarustadh.transfer.TeacherBundle -> {
+                                    val out = bundleImporter.save(any)
+                                    // اسم الأستاذ كما سجّلته الإدارة، إن لم يكن مسجّلًا عنده
+                                    if (teacherName.isNullOrBlank() && any.teacherName.isNotBlank())
+                                        metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, any.teacherName))
+                                    if (out.saved.isNotEmpty()) {
+                                        selectedYear = any.classes.first().first.schoolClass.schoolYear
+                                        homeMode = com.elyedali.daftarustadh.ui.MODE_TEACHER
+                                        screen = Screen.HOME
+                                    }
+                                    FileResult.Message(
+                                        getString(R.string.sr_received, any.schoolName, out.saved.joinToString("، "), out.subjects) +
+                                            if (out.conflicts.isEmpty()) "" else "\n\n" + getString(R.string.sr_received_conflicts, out.conflicts.joinToString("، "))
+                                    )
+                                }
+                                is ClassFile -> { importedYear = any.schoolClass.schoolYear; FileResult.Done(importer.save(any)) }
                                 else -> FileResult.Invalid
                             }
                         } catch (e: Exception) {
@@ -617,8 +636,12 @@ class MainActivity : AppCompatActivity() {
                         }
                         if (result != null) fileResult = result
                         if (result is FileResult.Done && result.outcome is ImportOutcome.Success) {
-                            screen = if ((result.outcome as ImportOutcome.Success).type == ClassFileType.TEACHER)
-                                Screen.TEACHING else Screen.CLASSES
+                            // يفتح الصفحة الرئيسية على سنة القسم ووضعه (الأستاذ أو الإدارة)
+                            val ok = result.outcome as ImportOutcome.Success
+                            importedYear?.let { selectedYear = it }
+                            homeMode = if (ok.type == ClassFileType.TEACHER) com.elyedali.daftarustadh.ui.MODE_TEACHER
+                                else com.elyedali.daftarustadh.ui.MODE_ADMIN
+                            screen = Screen.HOME
                         }
                     }
                 }
@@ -639,6 +662,29 @@ class MainActivity : AppCompatActivity() {
                         val file = ClassFile(type, owner, c, list)
                         val bytes = withContext(Dispatchers.Default) { ClassFileCodec.encode(file) }
                         ShareHelper.share(this@MainActivity, bytes, ClassFileCodec.fileName(file), chooserTitle)
+                    }
+                }
+
+                /** يرسل للأستاذ عبر واتساب حزمة فيها كل أقسامه ولوائح طلابها والمواد التي يدرّسها في كل قسم. */
+                fun sendTeacherRecords(t: com.elyedali.daftarustadh.data.TimetableTeacher) {
+                    val owner = inst ?: return
+                    val mine = ttAssignments.filter { it.teacherName == t.name }
+                    val classes = managedClasses.filter { c -> mine.any { it.classId == c.id } }
+                        .sortedWith(compareBy({ it.levelCode }, { it.number }))
+                    if (classes.isEmpty() || t.phone.isBlank()) return
+                    scope.launch {
+                        val bundle = com.elyedali.daftarustadh.transfer.TeacherBundle(
+                            teacherName = t.name, schoolName = owner.schoolName, schoolYear = owner.schoolYear,
+                            classes = classes.map { c ->
+                                ClassFile(ClassFileType.TEACHER, owner, c, studentDao.listByClass(c.id)) to
+                                    mine.filter { it.classId == c.id }.map { it.subjectCode }
+                            }
+                        )
+                        val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeBundle(bundle) }
+                        val caption = getString(R.string.sr_caption, t.name, owner.schoolName,
+                            classes.joinToString("، ") { c -> c.name + " (" + mine.filter { it.classId == c.id }.joinToString("، ") { subjectName(it.subjectCode) } + ")" })
+                        ShareHelper.shareToWhatsApp(this@MainActivity, bytes, bundle.fileName(), t.phone, caption, chooserTitle)
+                        recordsSent = recordsSent + t.name
                     }
                 }
 
@@ -699,6 +745,18 @@ class MainActivity : AppCompatActivity() {
                         existing = inst,
                         onSave = { scope.launch { institutionDao.save(it); screen = Screen.HOME } },
                         onCancel = { if (inst == null) homeMode = null; screen = Screen.HOME }
+                    )
+
+                    screen == Screen.SHARE_RECORDS -> com.elyedali.daftarustadh.ui.ShareRecordsScreen(
+                        teachers = ttTeachers,
+                        classes = managedClasses,
+                        assignments = ttAssignments,
+                        subjectLabel = { subjectName(it) },
+                        sent = recordsSent,
+                        onSend = { sendTeacherRecords(it) },
+                        onSavePhone = { t, phone -> saveTeachers(ttTeachers.map { if (it.name == t.name) it.copy(phone = phone) else it }) },
+                        onManageTeachers = { ttInitialClass = null; ttInitialTab = 1; ttBack = Screen.SHARE_RECORDS; screen = Screen.TIMETABLE },
+                        onBack = { screen = Screen.HOME }
                     )
 
                     screen == Screen.TEACHER_PROFILE -> {
@@ -827,7 +885,8 @@ class MainActivity : AppCompatActivity() {
                         onShareClass = { shareClassTimetable(it) },
                         onShareTeacherPdf = { shareTeacherTimetablePdf(it) },
                         onSendTeacherFile = { sendTeacherTimetable(it) },
-                        onBack = { screen = ttBack }
+                        onBack = { screen = ttBack },
+                        initialTab = ttInitialTab
                     )
 
                     screen == Screen.MY_TIMETABLE -> com.elyedali.daftarustadh.ui.TeacherTimetableView(
@@ -1001,7 +1060,7 @@ class MainActivity : AppCompatActivity() {
                                             colorKey = { d, p -> at[d to p]?.subjectCode }
                                         )
                                         androidx.compose.material3.Button(onClick = {
-                                            ttInitialClass = c.id; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE
+                                            ttInitialClass = c.id; ttInitialTab = null; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE
                                         }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.tt_open_institution)) }
                                         if (at.isNotEmpty()) androidx.compose.material3.OutlinedButton(onClick = { shareClassTimetable(c) },
                                             modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.tt_share_class, c.name)) }
@@ -1264,7 +1323,8 @@ class MainActivity : AppCompatActivity() {
                         onTool = { key ->
                             when (key) {
                                 "INSTITUTION" -> screen = Screen.INSTITUTION
-                                "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                "TIMETABLE" -> { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                "SHARE_RECORDS" -> screen = Screen.SHARE_RECORDS
                                 "STATS" -> screen = Screen.STATS
                                 "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
                                 "REMARKS" -> screen = Screen.REMARKS

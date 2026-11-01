@@ -512,4 +512,17 @@
     <string name="drawer_footer">دفتر الأستاذ DS\nجميع الحقوق محفوظة © 2026</string>
     <string name="drawer_sync_later">المزامنة مع Google Drive ستُفعَّل في المرحلة القادمة (مع الخادم).</string>
     <string name="drawer_logout_later">تسجيل الدخول والخروج سيُفعَّلان مع إنشاء الخادم.</string>
+    <string name="sr_title">مشاركة سجلات الأساتذة</string>
+    <string name="sr_intro">كل أستاذ يتلقى عبر واتساب ملفًا واحدًا فيه جميع أقسامه ولوائح طلابها، مع المواد التي يدرّسها في كل قسم، فيجد سجلات النتائج جاهزة للرصد. الأساتذة وتوزيع الأقسام عليهم من «الجدول الزمني ← أساتذة المواد».</string>
+    <string name="sr_manage_teachers">الأساتذة وتوزيع الأقسام</string>
+    <string name="sr_no_teachers">لا يوجد أساتذة بعد. أضفهم من زر «الأساتذة وتوزيع الأقسام».</string>
+    <string name="sr_add_whatsapp">أضف رقم واتساب</string>
+    <string name="sr_no_classes">لم تُوزَّع عليه أقسام بعد.</string>
+    <string name="sr_send">إرسال سجلاته عبر واتساب (%1$s أقسام)</string>
+    <string name="sr_send_again">إعادة الإرسال (%1$s أقسام)</string>
+    <string name="sr_sent">أُرسل</string>
+    <string name="sr_caption">السلام عليكم أستاذ %1$s 🌹\nهذه سجلات النتائج لأقسامك في %2$s:\n%3$s\nافتح الملف بتطبيق دفتر الأستاذ DS.</string>
+    <string name="sr_received">وصلت سجلات النتائج من %1$s ✅\nالأقسام: %2$s\nعدد المواد: %3$d</string>
+    <string name="sr_received_conflicts">لم تُضَف هذه الأقسام لأنها موجودة عندك من مصدر آخر: %1$s</string>
+    <string name="tt_teacher_whatsapp">رقم واتساب الأستاذ</string>
 </resources>

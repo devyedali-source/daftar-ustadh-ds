@@ -32,6 +32,14 @@ object ClassFileCodec {
     private const val VERSION = 1
 
     fun encode(file: ClassFile): ByteArray {
+        val json = toJson(file)
+        val out = ByteArrayOutputStream()
+        GZIPOutputStream(out).use { it.write(json.toString().toByteArray(Charsets.UTF_8)) }
+        return out.toByteArray()
+    }
+
+    /** محتوى ملف القسم (يُستعمل أيضًا داخل حزمة سجلات الأستاذ). */
+    fun toJson(file: ClassFile): JSONObject {
         val i = file.institution
         val c = file.schoolClass
         val json = JSONObject()
@@ -58,15 +66,20 @@ object ClassFileCodec {
                     put(o)
                 }
             })
-        val out = ByteArrayOutputStream()
-        GZIPOutputStream(out).use { it.write(json.toString().toByteArray(Charsets.UTF_8)) }
-        return out.toByteArray()
+        return json
     }
 
     fun decode(bytes: ByteArray): ClassFile {
+        val json = try {
+            JSONObject(GZIPInputStream(ByteArrayInputStream(bytes)).use { it.readBytes() }.toString(Charsets.UTF_8))
+        } catch (e: Exception) {
+            throw InvalidClassFileException()
+        }
+        return fromJson(json)
+    }
+
+    fun fromJson(json: JSONObject): ClassFile {
         try {
-            val text = GZIPInputStream(ByteArrayInputStream(bytes)).use { it.readBytes() }.toString(Charsets.UTF_8)
-            val json = JSONObject(text)
             if (json.optString("format") != FORMAT) throw InvalidClassFileException()
             val type = ClassFileType.entries.firstOrNull { it.code == json.getString("type") }
                 ?: throw InvalidClassFileException()

@@ -34,6 +34,10 @@ interface GradeDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveTeacherSubject(t: TeacherSubjectEntity)
 
+    /** يضيف المادة للأستاذ دون المساس بإعداداتها إن كانت موجودة. */
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun addTeacherSubject(t: TeacherSubjectEntity)
+
     @Query("DELETE FROM teacher_subject WHERE classId = :classId AND subjectCode = :subjectCode")
     suspend fun removeTeacherSubject(classId: String, subjectCode: String)
 

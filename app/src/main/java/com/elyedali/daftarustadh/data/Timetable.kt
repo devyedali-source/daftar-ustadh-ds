@@ -176,8 +176,8 @@ data class TimetableSettings(
     }
 }
 
-/** أستاذ في المؤسسة: اسمه والمواد التي يدرّسها (مُدخل من الإدارة لتوليد الجدول). */
-data class TimetableTeacher(val name: String, val subjects: List<String>)
+/** أستاذ في المؤسسة: اسمه والمواد التي يدرّسها ورقم واتسابه (مُدخل من الإدارة). */
+data class TimetableTeacher(val name: String, val subjects: List<String>, val phone: String = "")
 
 object TimetableTeachers {
     const val KEY = "timetable_teachers"
@@ -186,7 +186,7 @@ object TimetableTeachers {
     const val MAX_SUBJECTS = 5
 
     fun encode(list: List<TimetableTeacher>): String = JSONArray().apply {
-        list.forEach { t -> put(JSONObject().put("name", t.name).put("subjects", JSONArray(t.subjects))) }
+        list.forEach { t -> put(JSONObject().put("name", t.name).put("subjects", JSONArray(t.subjects)).put("phone", t.phone)) }
     }.toString()
 
     fun decode(text: String?): List<TimetableTeacher> {
@@ -196,7 +196,7 @@ object TimetableTeachers {
             (0 until a.length()).map { i ->
                 val o = a.getJSONObject(i)
                 val s = o.getJSONArray("subjects")
-                TimetableTeacher(o.getString("name"), (0 until s.length()).map { s.getString(it) })
+                TimetableTeacher(o.getString("name"), (0 until s.length()).map { s.getString(it) }, o.optString("phone"))
             }.filter { it.name.isNotBlank() }
         }.getOrDefault(emptyList())
     }

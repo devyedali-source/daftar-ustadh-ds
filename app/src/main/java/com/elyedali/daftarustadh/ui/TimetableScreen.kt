@@ -107,9 +107,10 @@ fun TimetableScreen(
     onShareClass: (ClassEntity) -> Unit,
     onShareTeacherPdf: (String) -> Unit,
     onSendTeacherFile: (String) -> Unit,
-    onBack: () -> Unit
+    onBack: () -> Unit,
+    initialTab: Int? = null
 ) {
-    var tab by rememberSaveable { mutableIntStateOf(if (initialClassId != null && slots.any { it.classId == initialClassId }) 2 else 0) }
+    var tab by rememberSaveable { mutableIntStateOf(initialTab ?: if (initialClassId != null && slots.any { it.classId == initialClassId }) 2 else 0) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(horizontal = 12.dp, vertical = 10.dp)) {
             ScreenHeader(stringResource(R.string.tt_title), onBack)
@@ -366,6 +367,8 @@ private fun TeacherListPane(
                         TextButton(onClick = { deleting = i }) { Text("🗑️") }
                     }
                     Text(t.subjects.joinToString("، ") { subjectLabel(it) }, fontSize = 12.sp, color = MaterialTheme.colorScheme.primary)
+                    if (t.phone.isNotBlank()) Text("🟢 " + com.elyedali.daftarustadh.exchange.ExchangeAd.localPhone(t.phone), fontSize = 11.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant)
                     if (mine.isNotEmpty()) Text(
                         mine.groupBy { it.subjectCode }.entries.joinToString(" — ") { (code, l) ->
                             subjectLabel(code) + ": " + l.mapNotNull { classNames[it.classId] }.sorted().joinToString("، ")
@@ -390,6 +393,8 @@ private fun TeacherListPane(
         val existing = teachers.getOrNull(idx)
         var name by remember(idx) { mutableStateOf(existing?.name.orEmpty()) }
         var chosen by remember(idx) { mutableStateOf(existing?.subjects.orEmpty().toSet()) }
+        var phone by remember(idx) { mutableStateOf(existing?.phone.orEmpty()) }
+        val phoneOk = phone.isBlank() || com.elyedali.daftarustadh.exchange.ExchangeAd.normalizePhone(phone) != null
         val duplicate = teachers.withIndex().any { (j, t) -> j != idx && t.name == name.trim() }
         AlertDialog(
             onDismissRequest = { editing = null },
@@ -399,6 +404,12 @@ private fun TeacherListPane(
                     OutlinedTextField(name, { name = it }, label = { Text(stringResource(R.string.tt_teacher_name)) },
                         singleLine = true, modifier = Modifier.fillMaxWidth(), isError = duplicate)
                     if (duplicate) Text(stringResource(R.string.tt_teacher_exists), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                    OutlinedTextField(phone, { phone = it.filter { c -> c.isDigit() || c == '+' || c == ' ' } },
+                        label = { Text("🟢 " + stringResource(R.string.tt_teacher_whatsapp)) },
+                        placeholder = { Text("36000000") }, singleLine = true, isError = !phoneOk,
+                        keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(keyboardType = androidx.compose.ui.text.input.KeyboardType.Phone),
+                        modifier = Modifier.fillMaxWidth())
+                    if (!phoneOk) Text(stringResource(R.string.ex_err_phone), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
                     Text(stringResource(R.string.tt_teacher_subjects), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                     val max = com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS
                     Text(stringResource(R.string.max_subjects, chosen.size, max), fontSize = 12.sp,
@@ -416,8 +427,9 @@ private fun TeacherListPane(
                 }
             },
             confirmButton = {
-                TextButton(enabled = name.isNotBlank() && chosen.isNotEmpty() && chosen.size <= com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS && !duplicate, onClick = {
-                    val t = TimetableTeacher(name.trim(), allSubjects.filter { it in chosen })
+                TextButton(enabled = name.isNotBlank() && chosen.isNotEmpty() && chosen.size <= com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS && !duplicate && phoneOk, onClick = {
+                    val t = TimetableTeacher(name.trim(), allSubjects.filter { it in chosen },
+                        com.elyedali.daftarustadh.exchange.ExchangeAd.normalizePhone(phone).orEmpty())
                     onSave(if (existing == null) teachers + t else teachers.toMutableList().also { it[idx] = t })
                     editing = null
                 }) { Text(stringResource(R.string.save)) }
