@@ -1,6 +1,9 @@
 package com.elyedali.daftarustadh.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
@@ -77,7 +80,16 @@ fun DaftarTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = Light,  // مثل دفتر المعلم: ألوان فاتحة دائمًا
         shapes = AppShapes,
-        typography = AppTypography,
-        content = content
-    )
+        typography = AppTypography
+    ) {
+        // أندرويد 15 يرسم التطبيق تحت شريط الحالة وشريط التنقل: نترك لهما مساحتهما
+        // (لون أعلى الشاشة بنفسجي مثل الشريط العلوي) حتى لا يتداخل العنوان والأزرار معهما.
+        androidx.compose.foundation.layout.Box(
+            androidx.compose.ui.Modifier.fillMaxSize().background(Light.primary)
+        ) {
+            androidx.compose.foundation.layout.Box(
+                androidx.compose.ui.Modifier.fillMaxSize().safeDrawingPadding().background(Light.background)
+            ) { content() }
+        }
+    }
 }

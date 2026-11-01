@@ -475,11 +475,11 @@
     <string name="home_no_years_desc">Appuyez sur « Créer une classe » en bas de l\'écran, ou « Ouvrir un fichier de classe » si vous en avez reçu un.</string>
     <string name="home_year_label">Année scolaire : %1$s</string>
     <string name="home_year_ongoing">En cours</string>
-    <string name="home_year_classes">%1$d classes enregistrées</string>
-    <string name="home_year_classes_title">Classes de %1$s (%2$d)</string>
+    <string name="home_year_classes">Classes enregistrées : %1$s</string>
+    <string name="home_year_classes_title">Classes de %1$s (%2$s)</string>
     <string name="home_no_classes_year">Aucune classe pour cette année</string>
     <string name="home_no_classes_year_desc">Appuyez sur « Créer une classe » en bas, ou « Ouvrir un fichier de classe ».</string>
-    <string name="home_students_n">%1$d élèves</string>
+    <string name="home_students_n">%1$s élèves</string>
     <string name="badge_admin">Administration</string>
     <string name="badge_teacher">Professeur</string>
     <string name="stat_classes">Classes</string>

@@ -142,16 +142,17 @@ fun HomeYearsScreen(
                                     ) { Text("📚", fontSize = 22.sp) }
                                     Column(Modifier.weight(1f).padding(horizontal = 12.dp)) {
                                         Row(verticalAlignment = Alignment.CenterVertically) {
-                                            Text(stringResource(R.string.home_year_label, "⁦$year⁩"), fontWeight = FontWeight.Black, fontSize = 16.sp)
+                                            Text(stringResource(R.string.home_year_label, "⁦$year⁩"), Modifier.weight(1f, fill = false),
+                                                fontWeight = FontWeight.Black, fontSize = 16.sp)
                                             if (year == current) {
                                                 Spacer(Modifier.size(8.dp))
                                                 Surface(color = Color(0xFFE8F5E9), shape = RoundedCornerShape(8.dp)) {
                                                     Text("● " + stringResource(R.string.home_year_ongoing), Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
-                                                        color = Color(0xFF2E7D32), fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                                                        color = Color(0xFF2E7D32), fontSize = 11.sp, fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false)
                                                 }
                                             }
                                         }
-                                        Text(stringResource(R.string.home_year_classes, count), fontSize = 13.sp,
+                                        Text(stringResource(R.string.home_year_classes, count.toString()), fontSize = 13.sp,
                                             color = MaterialTheme.colorScheme.onSurfaceVariant)
                                     }
                                     Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
@@ -181,7 +182,7 @@ fun HomeYearsScreen(
                             }
                         }
                         item {
-                            Text(stringResource(R.string.home_year_classes_title, selectedYear, yearClasses.size),
+                            Text(stringResource(R.string.home_year_classes_title, selectedYear, yearClasses.size.toString()),
                                 fontWeight = FontWeight.Bold, fontSize = 15.sp, color = MaterialTheme.colorScheme.primary)
                         }
                         if (yearClasses.isEmpty()) item {
@@ -216,7 +217,7 @@ fun HomeYearsScreen(
                                         Text(
                                             listOfNotNull(levelDescription(c.levelCode),
                                                 schoolNames[c.institutionId]?.takeIf { c.institutionId != ownInstitutionId || !c.managed },
-                                                stringResource(R.string.home_students_n, students)).joinToString("  |  "),
+                                                stringResource(R.string.home_students_n, students.toString())).joinToString("  |  "),
                                             fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 2
                                         )
                                     }
