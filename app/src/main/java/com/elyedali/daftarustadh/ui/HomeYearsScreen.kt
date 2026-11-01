@@ -228,11 +228,11 @@ fun HomeYearsScreen(
                                 "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
                                 "PRINT_SHOP" to ("🖨️ " + stringResource(R.string.ps_title)),
                                 "STATS" to ("📊 " + stringResource(R.string.statistics)),
-                                "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title)),
-                                "REMARKS" to ("✏️ " + stringResource(R.string.remarks_settings))
+                                "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title))
                             ) else listOf(
                                 "TEACHER_PROFILE" to ("👤 " + stringResource(R.string.tp_title)),
-                                "MY_TIMETABLE" to ("🗓️ " + stringResource(R.string.tt_my_timetable))
+                                "MY_TIMETABLE" to ("🗓️ " + stringResource(R.string.tt_my_timetable)),
+                                "REMARKS" to ("✏️ " + stringResource(R.string.remarks_settings))
                             )
                             Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
                                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),

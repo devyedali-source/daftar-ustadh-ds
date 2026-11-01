@@ -1513,13 +1513,13 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = Screen.KASHF_SETTINGS }
                     )
 
+                    // إعدادات سجل الأستاذ (وضع الأستاذ): ملاحظات المواد حسب المعدل؛ اسمه في «معلوماتي»
                     screen == Screen.REMARKS -> RemarksSettingsScreen(
                         scale = remarkScale,
-                        teacherName = teacherName.orEmpty(),
-                        onSave = { list, name ->
+                        teacherName = null,
+                        onSave = { list, _ ->
                             scope.launch {
                                 metaDao.put(AppMetaEntity(RemarkScale.KEY, RemarkScale.encode(list)))
-                                metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, name))
                                 screen = Screen.HOME
                             }
                         },
