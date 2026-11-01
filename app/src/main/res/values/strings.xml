@@ -491,4 +491,5 @@
     <string name="drawer_institution">معلومات المؤسسة</string>
     <string name="drawer_no_school">لم تُسجَّل المؤسسة بعد</string>
     <string name="kashf_reports">كشوف الدرجات</string>
+    <string name="ex_choose_wilaya_first">اختر الولاية أولًا لتظهر مقاطعاتها</string>
 </resources>

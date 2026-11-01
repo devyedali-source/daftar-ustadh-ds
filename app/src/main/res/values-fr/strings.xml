@@ -491,4 +491,5 @@
     <string name="drawer_institution">Informations de l\'établissement</string>
     <string name="drawer_no_school">Établissement non enregistré</string>
     <string name="kashf_reports">Bulletins</string>
+    <string name="ex_choose_wilaya_first">Choisissez d\'abord la wilaya pour voir ses moughataas</string>
 </resources>

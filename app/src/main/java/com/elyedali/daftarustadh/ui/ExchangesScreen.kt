@@ -757,8 +757,21 @@ private fun ExchangeForm(
             OutlinedButton(onClick = { pickWilaya = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
                 Text(stringResource(R.string.ex_wilaya) + ": " + wilaya.ifBlank { stringResource(R.string.ex_choose_wilaya) })
             }
-            OutlinedTextField(moughataa, { moughataa = it }, label = { Text(stringResource(R.string.ex_moughataa)) },
-                singleLine = true, modifier = Modifier.fillMaxWidth())
+            // اختيار المقاطعة من مقاطعات الولاية (كما في دفتر المعلم)
+            val options = com.elyedali.daftarustadh.data.Moughataas.of(wilaya)
+            if (wilaya.isBlank()) {
+                Text(stringResource(R.string.ex_choose_wilaya_first), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            } else if (options.isNotEmpty()) {
+                Text(stringResource(R.string.ex_moughataa) + ":", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    options.forEach { m ->
+                        FilterChip(selected = moughataa == m, onClick = { moughataa = m }, label = { Text(m) })
+                    }
+                }
+            } else {
+                OutlinedTextField(moughataa, { moughataa = it }, label = { Text(stringResource(R.string.ex_moughataa)) },
+                    singleLine = true, modifier = Modifier.fillMaxWidth())
+            }
         }
 
         FormSection(stringResource(R.string.ex_step4)) {
@@ -828,7 +841,7 @@ private fun ExchangeForm(
             options = wilayas,
             selected = wilaya,
             labelFor = { it },
-            onPick = { wilaya = it; desired.remove(it); pickWilaya = false },
+            onPick = { if (it != wilaya) moughataa = ""; wilaya = it; desired.remove(it); pickWilaya = false },
             onDismiss = { pickWilaya = false }
         )
     }
