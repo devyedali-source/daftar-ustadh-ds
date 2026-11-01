@@ -100,6 +100,8 @@ import kotlinx.coroutines.withContext
 import java.util.UUID
 
 private const val TEACHER_NAME_KEY = "teacher_name"
+/** العربية بأرقام لاتينية. */
+private const val AR_LATN = "ar-u-nu-latn"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
     ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS }
@@ -118,9 +120,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // العربية هي اللغة الافتراضية عند أول تشغيل
-        if (AppCompatDelegate.getApplicationLocales().isEmpty) {
-            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("ar"))
+        // العربية هي اللغة الافتراضية عند أول تشغيل، بأرقام عادية (1 2 3) لا (١ ٢ ٣) في كل التطبيق
+        val locales = AppCompatDelegate.getApplicationLocales()
+        if (locales.isEmpty || locales.toLanguageTags() == "ar") {
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(AR_LATN))
         }
         if (savedInstanceState == null) handleIntent(intent)
 
@@ -733,7 +736,7 @@ class MainActivity : AppCompatActivity() {
                                     "INSTITUTION" -> screen = Screen.INSTITUTION
                                     "REMARKS" -> screen = Screen.REMARKS
                                     "OPEN_FILE" -> openFile()
-                                    "LANG_AR" -> AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("ar"))
+                                    "LANG_AR" -> AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(AR_LATN))
                                     "LANG_FR" -> AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("fr"))
                                 }
                             }
@@ -1019,7 +1022,7 @@ class MainActivity : AppCompatActivity() {
                                     onSave = { old, session, ids -> scope.launch { absenceDao.replaceSession(old, session, ids) } },
                                     onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
                                     onSend = null,
-                                    onUpload = openFile,
+                                    onUpload = null,
                                     onChooseSubjects = null
                                 )
                                 3 -> {
