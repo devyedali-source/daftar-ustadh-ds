@@ -616,7 +616,7 @@
     <string name="steps_admin_5">À la réception d\'un registre : classe ← Résultats ← « Importer un registre ». Aucun calcul : moyennes, totaux et rangs sont automatiques.</string>
     <string name="steps_admin_6">Quand toutes les matières sont complètes, le bouton des bulletins s\'active.</string>
     <string name="steps_teacher_title">Étapes du professeur</string>
-    <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier de classe » (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes, matières et emploi du temps apparaissent.</string>
+    <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier de classe » (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes et matières apparaissent. Votre emploi du temps est imprimé en page 2 du même fichier.</string>
     <string name="steps_teacher_2">Classe ← Résultats ← matière : saisissez devoir et composition pour chaque élève. Pour un absent, saisissez 0.</string>
     <string name="steps_teacher_3">Ne calculez rien : tout est calculé automatiquement.</string>
     <string name="steps_teacher_4">Quand le trimestre est complet (✓ sous la matière), touchez « Envoyer le registre » et envoyez-le à l\'administration par WhatsApp.</string>

@@ -234,7 +234,6 @@ fun HomeYearsScreen(
                                 "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title))
                             ) else listOf(
                                 "TEACHER_PROFILE" to ("👤 " + stringResource(R.string.tp_title)),
-                                "MY_TIMETABLE" to ("🗓️ " + stringResource(R.string.tt_my_timetable)),
                                 "REMARKS" to ("✏️ " + stringResource(R.string.remarks_settings))
                             )
                             Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),

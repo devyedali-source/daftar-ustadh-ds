@@ -22,8 +22,10 @@ object DsqPdf {
     private const val H = 842f
     private const val M = 28f
 
-    /** صفحة PDF تعرّف بالملف، وتحمل البيانات بعدها. */
-    fun wrap(context: Context, data: ByteArray, title: String): ByteArray {
+    /**
+     * صفحة PDF تعرّف بالملف، وتحمل البيانات بعدها.
+     * @param extra صفحات إضافية تُرسم بعد صفحة التعريف (مثل جدول الأستاذ)؛ تأخذ رقم الصفحة التالية وترجع الذي بعدها. */
+    fun wrap(context: Context, data: ByteArray, title: String, extra: ((PdfDocument, Int) -> Int)? = null): ByteArray {
         val seal = BitmapFactory.decodeResource(context.resources, R.drawable.img_mauritania_seal)
         val date = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.US).format(java.util.Date())
         val pdf = PdfCommon.render { doc ->
@@ -52,6 +54,7 @@ object DsqPdf {
             }
             PdfText.draw(c, "⁦$date⁩ — دفتر الأستاذ DS", M, H - M - 20f, W - 2 * M, 16f, 9f)
             doc.finishPage(page)
+            extra?.invoke(doc, 2)
         }
         val payload = Base64.encodeToString(data, Base64.NO_WRAP).toByteArray(Charsets.US_ASCII)
         return pdf + BEGIN.toByteArray(Charsets.US_ASCII) + payload + END.toByteArray(Charsets.US_ASCII)

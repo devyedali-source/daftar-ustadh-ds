@@ -14,9 +14,10 @@ object ShareHelper {
     private const val PDF = "application/pdf"
 
     /** يحوّل ملف البيانات إلى PDF يحملها، ويغيّر الامتداد ‎.dsq إلى ‎.pdf. */
-    private fun asPdf(context: Context, bytes: ByteArray, fileName: String): Pair<ByteArray, String> {
+    private fun asPdf(context: Context, bytes: ByteArray, fileName: String,
+                      extra: ((android.graphics.pdf.PdfDocument, Int) -> Int)? = null): Pair<ByteArray, String> {
         val title = fileName.removeSuffix(".dsq")
-        return DsqPdf.wrap(context, bytes, title) to "$title.pdf"
+        return DsqPdf.wrap(context, bytes, title, extra) to "$title.pdf"
     }
 
     /** يحفظ الملف مؤقتًا ثم يفتح نافذة المشاركة (واتساب، بلوتوث، المشاركة القريبة...). */
@@ -56,8 +57,9 @@ object ShareHelper {
      * إن لم يكن واتساب مثبتًا تُفتح نافذة المشاركة العادية. يرجع true إن فُتح واتساب.
      * @param phone الرقم الدولي بدون + (مثل 22236000000)
      */
-    fun shareToWhatsApp(context: Context, bytes: ByteArray, fileName: String, phone: String, caption: String, chooserTitle: String): Boolean {
-        val (outBytes, outName) = asPdf(context, bytes, fileName)
+    fun shareToWhatsApp(context: Context, bytes: ByteArray, fileName: String, phone: String, caption: String, chooserTitle: String,
+                        extraPages: ((android.graphics.pdf.PdfDocument, Int) -> Int)? = null): Boolean {
+        val (outBytes, outName) = asPdf(context, bytes, fileName, extraPages)
         val dir = File(context.cacheDir, "shared").apply { mkdirs() }
         dir.listFiles()?.forEach { it.delete() }
         val file = File(dir, outName).apply { writeBytes(outBytes) }

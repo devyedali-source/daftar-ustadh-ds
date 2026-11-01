@@ -788,7 +788,17 @@ class MainActivity : AppCompatActivity() {
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeBundle(bundle) }
                         val caption = getString(R.string.sr_caption, t.name, owner.schoolName,
                             classes.joinToString("، ") { c -> c.name + " (" + mine.filter { it.classId == c.id }.joinToString("، ") { subjectName(it.subjectCode) } + ")" })
-                        ShareHelper.shareToWhatsApp(this@MainActivity, bytes, bundle.fileName(), t.phone, caption, chooserTitle)
+                        // صفحة جدول الأستاذ داخل الملف نفسه: يراه في واتساب كوثيقة PDF
+                        val names = classes.associate { it.id to it.name }
+                        val slotsMine = ttManagedSlots.filter { it.teacherName == t.name }.groupBy { it.day to it.period }
+                        val ttInfo = timetableInfo(
+                            "جدول الأستاذ: ${t.name} — Emploi du temps du professeur",
+                            "المؤسسة: ${owner.schoolName} — السنة الدراسية: \u2066${adminYear ?: owner.schoolYear}\u2069",
+                            "Établissement : ${owner.schoolName} — Année scolaire : ${adminYear ?: owner.schoolYear}"
+                        ) { d, p -> slotsMine[d to p]?.let { l -> val (ar, fr) = subjectArFr(l.first().subjectCode); l.joinToString(" / ") { names[it.classId].orEmpty() } + "\n$ar\n$fr" }.orEmpty() }
+                        ShareHelper.shareToWhatsApp(this@MainActivity, bytes, bundle.fileName(), t.phone, caption, chooserTitle) { doc, no ->
+                            com.elyedali.daftarustadh.pdf.TimetablePdf.drawInto(doc, no, ttInfo)
+                        }
                         recordsSent = recordsSent + t.name
                     }
                 }
@@ -1354,9 +1364,8 @@ class MainActivity : AppCompatActivity() {
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
+                                stringResource(R.string.tab_editor)),
                             icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
-                                androidx.compose.material.icons.Icons.Filled.DateRange,
                                 androidx.compose.material.icons.Icons.Filled.Create),
                             selected = hubTab,
                             onSelect = { hubTab = it },
@@ -1390,14 +1399,6 @@ class MainActivity : AppCompatActivity() {
                                     onShowStudents = { hubTab = 0 },
                                     onBack = { screen = hubBack },
                                     showHeader = false
-                                )
-                                2 -> com.elyedali.daftarustadh.ui.TeacherTimetableView(
-                                    entries = myTimetable,
-                                    highlightClass = c.name,
-                                    highlightInstitution = c.institutionId,
-                                    onOpenFile = openFile,
-                                    showHeader = false,
-                                    onBack = { screen = hubBack }
                                 )
                                 else -> DocumentsTab(
                                     classId = c.id,
