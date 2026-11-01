@@ -458,9 +458,6 @@ class MainActivity : AppCompatActivity() {
                     return null
                 }
 
-                fun timetablePdf(title: String, lineAr: String, lineFr: String, cells: (Int, Int) -> String): ByteArray =
-                    com.elyedali.daftarustadh.pdf.TimetablePdf.build(timetableInfo(title, lineAr, lineFr, cells))
-
                 fun timetableInfo(title: String, lineAr: String, lineFr: String, cells: (Int, Int) -> String): com.elyedali.daftarustadh.pdf.TimetablePdf.Info {
                     val dayAr = listOf("الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد")
                     val dayFr = listOf("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche")
@@ -476,6 +473,9 @@ class MainActivity : AppCompatActivity() {
                         )
                     )
                 }
+
+                fun timetablePdf(title: String, lineAr: String, lineFr: String, cells: (Int, Int) -> String): ByteArray =
+                    com.elyedali.daftarustadh.pdf.TimetablePdf.build(timetableInfo(title, lineAr, lineFr, cells))
 
                 fun subjectArFr(code: String): Pair<String, String> {
                     val all = CurriculumRepository.availableYears(this@MainActivity).lastOrNull()?.let { y ->
@@ -587,17 +587,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 /** سحب دفتر النصوص فارغًا (PDF) لملئه باليد — للإدارة. */
-                fun printTextbook(c: ClassEntity, pages: Int) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
-                        val info = textbookInfo(c, owner)
-                        val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.TextbookPdf.build(pages, info) }
-                        val name = "دفتر النصوص - Cahier de textes - ${c.name} - ${owner.schoolName} - ${c.schoolYear}.pdf"
-                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
-                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.tb_print), "application/pdf")
-                    }
-                }
-
                 fun textbookInfo(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity): com.elyedali.daftarustadh.pdf.TextbookPdf.Info {
                         val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
                         return com.elyedali.daftarustadh.pdf.TextbookPdf.Info(
@@ -613,6 +602,18 @@ class MainActivity : AppCompatActivity() {
                             seal = sealBitmap
                         )
                 }
+
+                fun printTextbook(c: ClassEntity, pages: Int) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val info = textbookInfo(c, owner)
+                        val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.TextbookPdf.build(pages, info) }
+                        val name = "دفتر النصوص - Cahier de textes - ${c.name} - ${owner.schoolName} - ${c.schoolYear}.pdf"
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.tb_print), "application/pdf")
+                    }
+                }
+
 
                 /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
                 /** عناوين سجل نتائج مادة: ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة. */
