@@ -4,11 +4,36 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.RectF
+import android.graphics.pdf.PdfDocument
 import android.text.Layout
 import java.math.BigDecimal
 import java.math.RoundingMode
 
 object PdfCommon {
+    /** ينشئ مستند PDF ويكتب فيه ما يرسمه block، ثم يرجع بايتات الملف. */
+    fun render(block: (PdfDocument) -> Unit): ByteArray {
+        val doc = PdfDocument()
+        try {
+            block(doc)
+            val out = java.io.ByteArrayOutputStream()
+            doc.writeTo(out)
+            return out.toByteArray()
+        } finally {
+            doc.close()
+        }
+    }
+
+    /** يكتب المستند مباشرة في ملف (للمستندات الكبيرة جدًا: كل سجلات المؤسسة). */
+    fun renderToFile(file: java.io.File, block: (PdfDocument) -> Unit) {
+        val doc = PdfDocument()
+        try {
+            block(doc)
+            file.outputStream().use { doc.writeTo(it) }
+        } finally {
+            doc.close()
+        }
+    }
+
     const val W = 595f
     const val H = 842f
     const val M = 28f

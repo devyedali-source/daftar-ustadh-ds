@@ -106,7 +106,7 @@ private const val AR_LATN = "ar-u-nu-latn"
 private const val TT_APPROVED_KEY = "timetable_approved"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -116,6 +116,11 @@ private sealed class FileResult {
 }
 
 class MainActivity : AppCompatActivity() {
+
+    /** شعار الجمهورية في رأسية الوثائق: يُحمَّل مرة واحدة. */
+    private val sealBitmap: android.graphics.Bitmap? by lazy {
+        android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+    }
 
     /** ملف قسم فُتح من الواتساب أو من مدير الملفات، ينتظر المعالجة. */
     private val incomingFile = mutableStateOf<Uri?>(null)
@@ -216,6 +221,7 @@ class MainActivity : AppCompatActivity() {
                 var ttInitialClass by rememberSaveable { mutableStateOf<String?>(null) }
                 var ttInitialTab by remember { mutableStateOf<Int?>(null) }
                 var recordsSent by remember { mutableStateOf(setOf<String>()) }
+                var printWorking by remember { mutableStateOf(false) }
                 var ttBack by rememberSaveable { mutableStateOf(Screen.HOME) }
                 var askNameFor by remember { mutableStateOf<String?>(null) }
                 val thresholdsText by remember { metaDao.observe(KashfSettings.THRESHOLDS_KEY) }.collectAsState(initial = null)
@@ -264,7 +270,7 @@ class MainActivity : AppCompatActivity() {
                             subjectRemarks = remarkScale,
                             generalRemarks = generalRemarks,
                             date = java.text.SimpleDateFormat("dd/MM/yyyy", java.util.Locale.US).format(java.util.Date()),
-                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                            seal = sealBitmap
                         )
                         val bytes = withContext(Dispatchers.Default) { ReportCardPdf.build(term, reports, info) }
                         val termAr = when (term) { 1 -> "الفصل الأول"; 2 -> "الفصل الثاني"; else -> "السنوية" }
@@ -296,7 +302,7 @@ class MainActivity : AppCompatActivity() {
                             title = d.title,
                             body = d.body,
                             stampLines = stamp,
-                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                            seal = sealBitmap
                         )
                         val bytes = withContext(Dispatchers.Default) { DocumentPdf.build(info) }
                         val fileName = ("${d.title.ifBlank { "Document" }} - ${c.name} - ${c.schoolYear}.pdf")
@@ -452,18 +458,21 @@ class MainActivity : AppCompatActivity() {
                     return null
                 }
 
-                fun timetablePdf(title: String, lineAr: String, lineFr: String, cells: (Int, Int) -> String): ByteArray {
+                fun timetablePdf(title: String, lineAr: String, lineFr: String, cells: (Int, Int) -> String): ByteArray =
+                    com.elyedali.daftarustadh.pdf.TimetablePdf.build(timetableInfo(title, lineAr, lineFr, cells))
+
+                fun timetableInfo(title: String, lineAr: String, lineFr: String, cells: (Int, Int) -> String): com.elyedali.daftarustadh.pdf.TimetablePdf.Info {
                     val dayAr = listOf("الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد")
                     val dayFr = listOf("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche")
                     val st = ttSettings
-                    return com.elyedali.daftarustadh.pdf.TimetablePdf.build(
+                    return (
                         com.elyedali.daftarustadh.pdf.TimetablePdf.Info(
                             title = title, lineAr = lineAr, lineFr = lineFr,
                             dayLabels = st.days.map { "${dayAr[it]}\n${dayFr[it]}" },
                             periodLabels = (0 until st.periods).map { "${it + 1}\n${st.label(it)}" },
                             cells = st.days.map { d -> (0 until st.periods).map { p -> cells(d, p) } },
                             footer = "دفتر الأستاذ DS",
-                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                            seal = sealBitmap
                         )
                     )
                 }
@@ -581,8 +590,17 @@ class MainActivity : AppCompatActivity() {
                 fun printTextbook(c: ClassEntity, pages: Int) {
                     scope.launch {
                         val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val info = textbookInfo(c, owner)
+                        val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.TextbookPdf.build(pages, info) }
+                        val name = "دفتر النصوص - Cahier de textes - ${c.name} - ${owner.schoolName} - ${c.schoolYear}.pdf"
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.tb_print), "application/pdf")
+                    }
+                }
+
+                fun textbookInfo(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity): com.elyedali.daftarustadh.pdf.TextbookPdf.Info {
                         val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
-                        val info = com.elyedali.daftarustadh.pdf.TextbookPdf.Info(
+                        return com.elyedali.daftarustadh.pdf.TextbookPdf.Info(
                             title = "دفتر النصوص — Cahier de textes",
                             lineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069",
                             lineFr = "Établissement : ${owner.schoolName} — Wilaya : $wilayaFr — Classe : ${c.name} — Année scolaire : ${c.schoolYear}",
@@ -592,25 +610,16 @@ class MainActivity : AppCompatActivity() {
                                 "الموضوع\nSujet", "المدة\nDurée", "التوقيع\nSignature"
                             ),
                             page = { p, n -> "صفحة $p من $n — Page $p / $n" },
-                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                            seal = sealBitmap
                         )
-                        val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.TextbookPdf.build(pages, info) }
-                        val name = "دفتر النصوص - Cahier de textes - ${c.name} - ${owner.schoolName} - ${c.schoolYear}.pdf"
-                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
-                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.tb_print), "application/pdf")
-                    }
                 }
 
                 /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
-                fun printRecord(c: ClassEntity, code: String, name: String, blank: Boolean = false) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
-                        val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
-                            ?.subjects?.firstOrNull { it.code == code } ?: return@launch
-                        val list = if (blank) TeacherRecordPdf.blankRows(70) else studentDao.listByClass(c.id)
-                        // سجل الأستاذ ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة
+                /** عناوين سجل نتائج مادة: ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة. */
+                fun recordLabels(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity,
+                                 subject: com.elyedali.daftarustadh.data.CurriculumSubject, name: String): TeacherRecordPdf.Labels {
                         val wilaya = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)
-                        val labels = TeacherRecordPdf.Labels(
+                        return TeacherRecordPdf.Labels(
                             title = "سجل نتائج مادة: ${subject.nameAr} — Relevé de notes : ${subject.nameFr}",
                             subtitle = "القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069 — الضارب: ${subject.coefficient}" +
                                 " — الولاية: ${owner.wilaya} — المؤسسة: ${owner.schoolName}",
@@ -624,8 +633,17 @@ class MainActivity : AppCompatActivity() {
                             signature = "توقيع الأستاذ — Signature du professeur",
                             stampLines = listOf(name, "أستاذ مادة: ${subject.nameAr}", "Professeur de : ${subject.nameFr}"),
                             page = { p, n -> "صفحة $p من $n — Page $p / $n" },
-                            seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
+                            seal = sealBitmap
                         )
+                }
+
+                fun printRecord(c: ClassEntity, code: String, name: String, blank: Boolean = false) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
+                            ?.subjects?.firstOrNull { it.code == code } ?: return@launch
+                        val list = if (blank) TeacherRecordPdf.blankRows(70) else studentDao.listByClass(c.id)
+                        val labels = recordLabels(c, owner, subject, name)
                         val bytes = withContext(Dispatchers.Default) { TeacherRecordPdf.build(list, labels) }
                         val fileName = getString(R.string.rec_file_name, subject.nameAr, c.name, subject.nameFr, c.schoolYear)
                             .replace(Regex("[\\\\/:*?\"<>|]"), " ")
@@ -739,6 +757,118 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                /** أشهر السنة الدراسية (أكتوبر ← يونيو) وأيام الدراسة في كل شهر، حسب أيام الجدول الزمني. */
+                fun schoolMonths(schoolYear: String): List<com.elyedali.daftarustadh.pdf.AbsencePdf.Month> {
+                    val y1 = schoolYear.take(4).toIntOrNull() ?: return emptyList()
+                    val ar = listOf("يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر")
+                    val fr = listOf("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre")
+                    val short = listOf("إثن", "ثلا", "أرب", "خمي", "جمع", "سبت", "أحد")   // 0 = الاثنين
+                    val schoolDays = ttSettings.days.toSet()
+                    return (listOf(y1 to 9, y1 to 10, y1 to 11) + (0..5).map { (y1 + 1) to it }).map { (y, m) ->
+                        val cal = java.util.Calendar.getInstance().apply { clear(); set(y, m, 1) }
+                        val n = cal.getActualMaximum(java.util.Calendar.DAY_OF_MONTH)
+                        val days = (1..n).mapNotNull { d ->
+                            cal.set(java.util.Calendar.DAY_OF_MONTH, d)
+                            val idx = (cal.get(java.util.Calendar.DAY_OF_WEEK) + 5) % 7   // الاثنين = 0
+                            if (idx in schoolDays) com.elyedali.daftarustadh.pdf.AbsencePdf.Day(d, short[idx]) else null
+                        }
+                        com.elyedali.daftarustadh.pdf.AbsencePdf.Month("شهر ${ar[m]} ⁦$y⁩", "Mois de ${fr[m]} $y", days)
+                    }
+                }
+
+                /**
+                 * الوراقة: يجهّز ملفات PDF للطباعة (ملف لكل وثيقة يجمع كل الأقسام أو كل الأساتذة)
+                 * ثم يشاركها دفعة واحدة (واتساب أو غيره).
+                 */
+                fun shareWithPrintShop(choice: com.elyedali.daftarustadh.ui.PrintChoice) {
+                    val owner = inst ?: return
+                    val classes = managedClasses.sortedWith(compareBy({ it.levelCode }, { it.number }))
+                    if (classes.isEmpty()) return
+                    printWorking = true
+                    scope.launch {
+                        try {
+                            val seal = sealBitmap
+                            val dir = ShareHelper.freshShareDir(this@MainActivity)
+                            val tag = "${owner.schoolName} - ${owner.schoolYear}".replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                            val students = classes.associate { it.id to studentDao.listByClass(it.id) }
+                            val files = ArrayList<java.io.File>()
+                            withContext(Dispatchers.Default) {
+                                if (choice.records) {
+                                    val f = java.io.File(dir, "سجلات نتائج الأساتذة - Registres de notes - $tag.pdf")
+                                    com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
+                                        var no = 1
+                                        classes.forEach { c ->
+                                            CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty().forEach { sub ->
+                                                val teacher = ttAssignments.firstOrNull { it.classId == c.id && it.subjectCode == sub.code }?.teacherName.orEmpty()
+                                                no = TeacherRecordPdf.drawInto(doc, no, students[c.id].orEmpty(),
+                                                    recordLabels(c, owner, sub, teacher).copy(seal = seal))
+                                            }
+                                        }
+                                    }
+                                    files += f
+                                }
+                                if (choice.timetables) {
+                                    val names = classes.associate { it.id to it.name }
+                                    val f = java.io.File(dir, "جداول الأساتذة - Emplois du temps des professeurs - $tag.pdf")
+                                    com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
+                                        var no = 1
+                                        ttManagedSlots.map { it.teacherName }.filter { it.isNotBlank() }.distinct().sorted().forEach { t ->
+                                            val mine = ttManagedSlots.filter { it.teacherName == t }.groupBy { it.day to it.period }
+                                            val info = timetableInfo(
+                                                "جدول الأستاذ: $t — Emploi du temps du professeur",
+                                                "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — السنة الدراسية: ⁦${owner.schoolYear}⁩",
+                                                "Établissement : ${owner.schoolName} — Année scolaire : ${owner.schoolYear}"
+                                            ) { d, p -> mine[d to p]?.let { l -> val (ar, fr) = subjectArFr(l.first().subjectCode); l.joinToString(" / ") { names[it.classId].orEmpty() } + "\n$ar\n$fr" }.orEmpty() }
+                                            no = com.elyedali.daftarustadh.pdf.TimetablePdf.drawInto(doc, no, info.copy(seal = seal))
+                                        }
+                                    }
+                                    files += f
+                                }
+                                if (choice.absence) {
+                                    val months = schoolMonths(owner.schoolYear)
+                                    val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
+                                    val f = java.io.File(dir, "دفتر الغياب - Registre d'appel - $tag.pdf")
+                                    com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
+                                        var no = 1
+                                        classes.forEach { c ->
+                                            no = com.elyedali.daftarustadh.pdf.AbsencePdf.drawInto(doc, no, com.elyedali.daftarustadh.pdf.AbsencePdf.Info(
+                                                title = "دفتر الغياب — Registre d'appel",
+                                                lineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — القسم: ⁦${c.name}⁩ — السنة الدراسية: ⁦${c.schoolYear}⁩",
+                                                lineFr = "Établissement : ${owner.schoolName} — Wilaya : $wilayaFr — Classe : ${c.name} — Année scolaire : ${c.schoolYear}",
+                                                shortLine = "دفتر الغياب — Registre d'appel — ⁦${c.name}⁩ — ⁦${c.schoolYear}⁩",
+                                                months = months,
+                                                students = students[c.id].orEmpty().map { s -> com.elyedali.daftarustadh.pdf.AbsencePdf.Student(s.rollNumber, s.nameAr, s.nameFr) },
+                                                rollHeader = "ر.ن\nN°",
+                                                nameHeader = "الاسم الكامل — Nom et Prénom",
+                                                totalHeader = "المجموع\nTotal",
+                                                page = { p, n -> "⁦${c.name}⁩ — صفحة $p من $n — Page $p / $n" },
+                                                seal = seal
+                                            ))
+                                        }
+                                    }
+                                    files += f
+                                }
+                                if (choice.textbook) {
+                                    val f = java.io.File(dir, "دفتر النصوص - Cahier de textes - $tag.pdf")
+                                    com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
+                                        var no = 1
+                                        classes.forEach { c ->
+                                            no = com.elyedali.daftarustadh.pdf.TextbookPdf.drawInto(doc, no, choice.textbookPages, textbookInfo(c, owner).copy(seal = seal))
+                                        }
+                                    }
+                                    files += f
+                                }
+                            }
+                            if (files.isNotEmpty()) ShareHelper.shareFiles(this@MainActivity, files, "application/pdf",
+                                getString(R.string.ps_title), getString(R.string.ps_message, owner.schoolName))
+                        } catch (e: Exception) {
+                            android.widget.Toast.makeText(this@MainActivity, getString(R.string.ps_error), android.widget.Toast.LENGTH_LONG).show()
+                        } finally {
+                            printWorking = false
+                        }
+                    }
+                }
+
                 when (screen) {
                     Screen.HOME -> if (homeMode != null) BackHandler { homeMode = null } else if (selectedYear != null) BackHandler { selectedYear = null }
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
@@ -797,6 +927,39 @@ class MainActivity : AppCompatActivity() {
                         onSave = { scope.launch { institutionDao.save(it); screen = Screen.HOME } },
                         onCancel = { if (inst == null) homeMode = null; screen = Screen.HOME }
                     )
+
+                    screen == Screen.PRINT_SHOP -> {
+                        val noStudents = classesWithoutStudents.joinToString("، ") { it.name }
+                        val n = managedClasses.size
+                        com.elyedali.daftarustadh.ui.PrintShopScreen(
+                            records = com.elyedali.daftarustadh.ui.PrintItem(
+                                ready = n > 0 && ttApproved && classesWithoutStudents.isEmpty(),
+                                note = when {
+                                    n == 0 -> getString(R.string.ps_no_classes)
+                                    !ttApproved -> getString(R.string.sr_block_timetable)
+                                    classesWithoutStudents.isNotEmpty() -> getString(R.string.sr_block_students, noStudents)
+                                    else -> getString(R.string.ps_records_note, n)
+                                }),
+                            timetables = com.elyedali.daftarustadh.ui.PrintItem(
+                                ready = n > 0 && ttApproved,
+                                note = if (ttApproved) getString(R.string.ps_timetables_note, ttManagedSlots.map { it.teacherName }.filter { it.isNotBlank() }.distinct().size)
+                                    else getString(R.string.sr_block_timetable)),
+                            absence = com.elyedali.daftarustadh.ui.PrintItem(
+                                ready = n > 0 && classesWithoutStudents.isEmpty(),
+                                note = when {
+                                    n == 0 -> getString(R.string.ps_no_classes)
+                                    classesWithoutStudents.isNotEmpty() -> getString(R.string.sr_block_students, noStudents)
+                                    else -> getString(R.string.ps_absence_note, n)
+                                }),
+                            textbook = com.elyedali.daftarustadh.ui.PrintItem(
+                                ready = n > 0,
+                                note = if (n == 0) getString(R.string.ps_no_classes) else getString(R.string.ps_textbook_note, n)),
+                            working = printWorking,
+                            onShare = { shareWithPrintShop(it) },
+                            onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.PRINT_SHOP; screen = Screen.TIMETABLE },
+                            onBack = { screen = Screen.HOME }
+                        )
+                    }
 
                     screen == Screen.SHARE_RECORDS -> com.elyedali.daftarustadh.ui.ShareRecordsScreen(
                         teachers = ttTeachers,
@@ -1387,6 +1550,7 @@ class MainActivity : AppCompatActivity() {
                                 "INSTITUTION" -> screen = Screen.INSTITUTION
                                 "TIMETABLE" -> { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                 "SHARE_RECORDS" -> screen = Screen.SHARE_RECORDS
+                                "PRINT_SHOP" -> screen = Screen.PRINT_SHOP
                                 "STATS" -> screen = Screen.STATS
                                 "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
                                 "REMARKS" -> screen = Screen.REMARKS

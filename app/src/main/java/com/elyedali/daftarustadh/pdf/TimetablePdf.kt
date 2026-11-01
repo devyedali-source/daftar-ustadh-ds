@@ -27,9 +27,11 @@ object TimetablePdf {
         val seal: Bitmap?
     )
 
-    fun build(info: Info): ByteArray {
-        val doc = PdfDocument()
-        val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), 1).create())
+    fun build(info: Info): ByteArray = PdfCommon.render { drawInto(it, 1, info) }
+
+    /** يرسم الجدول في صفحة جديدة من مستند قائم، ويرجع رقم الصفحة التالية. */
+    fun drawInto(doc: PdfDocument, pageNo: Int, info: Info): Int {
+        val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), pageNo).create())
         val c = page.canvas
         PdfCommon.drawOfficialHeader(c, info.seal, W)
         var y = M + HEADER
@@ -73,9 +75,6 @@ object TimetablePdf {
         for (p in 1 until cols) { val x = right - dayW - p * colW; c.drawLine(x, y, x, bottom, line) }
         PdfText.draw(c, info.footer, M, bottom + 4f, W - 2 * M, 14f, 8f, maxLines = 1)
         doc.finishPage(page)
-        val out = ByteArrayOutputStream()
-        doc.writeTo(out)
-        doc.close()
-        return out.toByteArray()
+        return pageNo + 1
     }
 }

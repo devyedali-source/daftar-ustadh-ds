@@ -226,6 +226,7 @@ fun HomeYearsScreen(
                                 "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
                                 "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
                                 "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
+                                "PRINT_SHOP" to ("🖨️ " + stringResource(R.string.ps_title)),
                                 "STATS" to ("📊 " + stringResource(R.string.statistics)),
                                 "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title)),
                                 "REMARKS" to ("✏️ " + stringResource(R.string.remarks_settings))

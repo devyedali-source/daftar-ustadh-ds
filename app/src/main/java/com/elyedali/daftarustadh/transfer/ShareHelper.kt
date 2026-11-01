@@ -27,6 +27,22 @@ object ShareHelper {
         context.startActivity(Intent.createChooser(send, chooserTitle).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
     }
 
+    /** مجلد الملفات المؤقتة للمشاركة (يُفرَّغ قبل كل مشاركة). */
+    fun freshShareDir(context: Context): File =
+        File(context.cacheDir, "shared").apply { mkdirs(); listFiles()?.forEach { it.delete() } }
+
+    /** يشارك عدة ملفات دفعة واحدة (مثل ملفات الوراقة). */
+    fun shareFiles(context: Context, files: List<File>, mimeType: String, chooserTitle: String, text: String? = null) {
+        val uris = ArrayList(files.map { FileProvider.getUriForFile(context, context.packageName + ".files", it) })
+        val send = Intent(if (uris.size == 1) Intent.ACTION_SEND else Intent.ACTION_SEND_MULTIPLE).apply {
+            type = mimeType
+            if (uris.size == 1) putExtra(Intent.EXTRA_STREAM, uris[0]) else putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris)
+            if (text != null) putExtra(Intent.EXTRA_TEXT, text)
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
+        context.startActivity(Intent.createChooser(send, chooserTitle).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+    }
+
     /**
      * يرسل الملف مباشرة إلى محادثة رقم معيّن في واتساب (أو واتساب الأعمال).
      * إن لم يكن واتساب مثبتًا تُفتح نافذة المشاركة العادية. يرجع true إن فُتح واتساب.

@@ -33,11 +33,13 @@ object TextbookPdf {
     // نسب عرض الأعمدة بنفس ترتيب العناوين (من اليمين)
     private val WEIGHTS = listOf(1.0f, 1.1f, 1.2f, 1.6f, 3.6f, 0.8f, 1.3f)
 
-    fun build(pages: Int, info: Info): ByteArray {
-        val doc = PdfDocument()
+    fun build(pages: Int, info: Info): ByteArray = PdfCommon.render { drawInto(it, 1, pages, info) }
+
+    /** يضيف دفتر النصوص إلى مستند قائم، ويرجع رقم الصفحة التالية. */
+    fun drawInto(doc: PdfDocument, startNo: Int, pages: Int, info: Info): Int {
         val count = pages.coerceIn(1, 200)
         for (p in 1..count) {
-            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), p).create())
+            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), startNo + p - 1).create())
             val c = page.canvas
             var y = M
             if (p == 1) {
@@ -56,10 +58,7 @@ object TextbookPdf {
             PdfText.draw(c, info.page(p, count), M, H - M + 2f, W - 2 * M, 14f, 8f)
             doc.finishPage(page)
         }
-        val out = ByteArrayOutputStream()
-        doc.writeTo(out)
-        doc.close()
-        return out.toByteArray()
+        return startNo + count
     }
 
     private fun drawTable(c: Canvas, top: Float, rows: Int, headers: List<String>) {

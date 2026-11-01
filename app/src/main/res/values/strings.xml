@@ -543,4 +543,20 @@
     <string name="sr_block_timetable">اكتمال الجدول الزمني واعتماده</string>
     <string name="sr_block_students">تسجيل الطلاب في الأقسام: %1$s</string>
     <string name="sr_open_timetable">فتح الجدول الزمني</string>
+    <string name="ps_title">مشاركة مع الوراقة</string>
+    <string name="ps_intro">جهّز ملفات PDF جاهزة للسحب، ملف لكل وثيقة يجمع كل الأقسام أو كل الأساتذة، ثم أرسلها إلى الوراقة دفعة واحدة (واتساب أو غيره).</string>
+    <string name="ps_records">سجلات نتائج جميع الأساتذة</string>
+    <string name="ps_timetables">الجداول الزمنية لجميع الأساتذة</string>
+    <string name="ps_absence">دفتر الغياب لجميع الأقسام</string>
+    <string name="ps_textbook">دفتر النصوص لجميع الأقسام</string>
+    <string name="ps_textbook_pages">عدد صفحات دفتر النصوص لكل قسم:</string>
+    <string name="ps_records_note">سجل لكل مادة في كل قسم (%1$d أقسام) بأسماء الطلاب واسم الأستاذ.</string>
+    <string name="ps_timetables_note">صفحة لكل أستاذ (%1$d أساتذة) من الجدول المعتمد.</string>
+    <string name="ps_absence_note">لكل قسم (%1$d أقسام) صفحة لكل شهر من أكتوبر إلى يونيو، بأسماء الطلاب وأيام الدراسة.</string>
+    <string name="ps_textbook_note">نسخة فارغة لكل قسم (%1$d أقسام) تُملأ باليد.</string>
+    <string name="ps_no_classes">لا توجد أقسام في وضع الإدارة لهذه السنة.</string>
+    <string name="ps_share">تجهيز ومشاركة مع الوراقة</string>
+    <string name="ps_preparing">جارٍ تجهيز الملفات…</string>
+    <string name="ps_message">السلام عليكم، هذه وثائق %1$s للسحب. شكرًا 🌹</string>
+    <string name="ps_error">تعذّر تجهيز الملفات، حاول مرة أخرى.</string>
 </resources>

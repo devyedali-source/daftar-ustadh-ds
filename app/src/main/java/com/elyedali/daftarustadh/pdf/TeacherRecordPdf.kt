@@ -44,7 +44,10 @@ object TeacherRecordPdf {
         val seal: Bitmap? = null        // شعار الجمهورية في وسط الرأسية
     )
 
-    fun build(students: List<StudentEntity>, labels: Labels): ByteArray {
+    fun build(students: List<StudentEntity>, labels: Labels): ByteArray = PdfCommon.render { drawInto(it, 1, students, labels) }
+
+    /** يضيف سجل المادة إلى مستند قائم، ويرجع رقم الصفحة التالية. */
+    fun drawInto(doc: PdfDocument, startNo: Int, students: List<StudentEntity>, labels: Labels): Int {
         val sorted = students.sortedBy { it.rollNumber }
         val firstCapacity = ((H - 2 * M - HEADER - TITLE - TABLE_HEAD) / ROW).toInt()
         val otherCapacity = ((H - 2 * M - TABLE_HEAD - 20f) / ROW).toInt()
@@ -62,9 +65,8 @@ object TeacherRecordPdf {
         val signatureOnNewPage = lastBottom + FOOTER > H - M
         val totalPages = pages.size + if (signatureOnNewPage) 1 else 0
 
-        val doc = PdfDocument()
         pages.forEachIndexed { index, rows ->
-            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), index + 1).create())
+            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), startNo + index).create())
             val c = page.canvas
             var y = M
             if (index == 0) {
@@ -82,15 +84,12 @@ object TeacherRecordPdf {
             doc.finishPage(page)
         }
         if (signatureOnNewPage) {
-            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), totalPages).create())
+            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), startNo + totalPages - 1).create())
             drawSignature(page.canvas, M + 20f, labels)
             PdfText.draw(page.canvas, labels.page(totalPages, totalPages), M, H - M + 4f, W - 2 * M, 14f, 8f)
             doc.finishPage(page)
         }
-        val out = ByteArrayOutputStream()
-        doc.writeTo(out)
-        doc.close()
-        return out.toByteArray()
+        return startNo + totalPages
     }
 
     private fun drawHeader(c: Canvas, l: Labels) = PdfCommon.drawOfficialHeader(c, l.seal)

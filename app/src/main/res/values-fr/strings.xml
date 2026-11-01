@@ -543,4 +543,20 @@
     <string name="sr_block_timetable">l\'achèvement et la validation de l\'emploi du temps</string>
     <string name="sr_block_students">l\'enregistrement des élèves des classes : %1$s</string>
     <string name="sr_open_timetable">Ouvrir l\'emploi du temps</string>
+    <string name="ps_title">Partager avec l\'imprimerie</string>
+    <string name="ps_intro">Préparez des PDF prêts à imprimer (un fichier par document, regroupant toutes les classes ou tous les professeurs), puis envoyez-les à l\'imprimerie en une fois.</string>
+    <string name="ps_records">Registres de notes de tous les professeurs</string>
+    <string name="ps_timetables">Emplois du temps de tous les professeurs</string>
+    <string name="ps_absence">Registre d\'appel de toutes les classes</string>
+    <string name="ps_textbook">Cahier de textes de toutes les classes</string>
+    <string name="ps_textbook_pages">Pages du cahier de textes par classe :</string>
+    <string name="ps_records_note">Un registre par matière et par classe (%1$d classes) avec élèves et professeur.</string>
+    <string name="ps_timetables_note">Une page par professeur (%1$d professeurs), emploi du temps validé.</string>
+    <string name="ps_absence_note">Pour chaque classe (%1$d classes), une page par mois d\'octobre à juin, avec élèves et jours de classe.</string>
+    <string name="ps_textbook_note">Un exemplaire vierge par classe (%1$d classes), à remplir à la main.</string>
+    <string name="ps_no_classes">Aucune classe en mode administration pour cette année.</string>
+    <string name="ps_share">Préparer et partager avec l\'imprimerie</string>
+    <string name="ps_preparing">Préparation des fichiers…</string>
+    <string name="ps_message">Bonjour, voici les documents de %1$s à imprimer. Merci 🌹</string>
+    <string name="ps_error">Impossible de préparer les fichiers, réessayez.</string>
 </resources>
