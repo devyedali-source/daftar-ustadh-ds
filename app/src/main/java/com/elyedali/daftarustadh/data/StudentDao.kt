@@ -12,6 +12,10 @@ interface StudentDao {
     @Query("SELECT * FROM student WHERE classId = :classId ORDER BY rollNumber, nameAr")
     fun observeByClass(classId: String): Flow<List<StudentEntity>>
 
+    /** طلاب عدة أقسام (مركز الغياب في الإدارة). */
+    @Query("SELECT * FROM student WHERE classId IN (:classIds) ORDER BY rollNumber")
+    fun observeByClasses(classIds: List<String>): Flow<List<StudentEntity>>
+
     @Query("SELECT * FROM student WHERE classId = :classId")
     suspend fun listByClass(classId: String): List<StudentEntity>
 

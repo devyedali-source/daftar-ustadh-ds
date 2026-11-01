@@ -559,4 +559,25 @@
     <string name="ps_preparing">جارٍ تجهيز الملفات…</string>
     <string name="ps_message">السلام عليكم، هذه وثائق %1$s للسحب. شكرًا 🌹</string>
     <string name="ps_error">تعذّر تجهيز الملفات، حاول مرة أخرى.</string>
+    <string name="ac_title">الغياب</string>
+    <string name="ac_tab_entry">تسجيل ورقة الأستاذ</string>
+    <string name="ac_tab_top">الأكثر تغيبًا</string>
+    <string name="ac_entry_hint">اختر القسم والتاريخ والحصة، ثم اكتب أرقام النداء للغائبين كما في ورقة الأستاذ (مثل: 3 7 12). المادة والأستاذ يُعرفان من الجدول الزمني.</string>
+    <string name="ac_class">القسم</string>
+    <string name="ac_period">الحصة</string>
+    <string name="ac_no_school_day">هذا اليوم ليس من أيام الدراسة في الجدول الزمني.</string>
+    <string name="ac_pick_subject">لا توجد حصة في الجدول لهذا الوقت، اختر المادة:</string>
+    <string name="ac_existing">هذه الحصة مسجّلة من قبل: الأرقام أدناه هي غائبوها، والحفظ يحلّ محلّها.</string>
+    <string name="ac_numbers">أرقام النداء للغائبين</string>
+    <string name="ac_unknown">أرقام غير موجودة في القسم: %1$s</string>
+    <string name="ac_none_absent">لا غائب في هذه الحصة (تُسجَّل حاضرة كلها)</string>
+    <string name="ac_save">حفظ الغياب</string>
+    <string name="ac_saved">سُجّل الغياب: %1$s</string>
+    <string name="ac_from">من</string>
+    <string name="ac_to">إلى</string>
+    <string name="ac_all_classes">كل الأقسام</string>
+    <string name="ac_summary">الحصص المسجلة: %1$d — ساعات الغياب: %2$d — الطلاب المتغيبون: %3$d</string>
+    <string name="ac_bad_range">تاريخ البداية بعد تاريخ النهاية.</string>
+    <string name="ac_no_absence">لا غياب في هذه الفترة.</string>
+    <string name="ac_roll">رقم النداء %1$d</string>
 </resources>

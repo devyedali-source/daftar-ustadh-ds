@@ -106,7 +106,7 @@ private const val AR_LATN = "ar-u-nu-latn"
 private const val TT_APPROVED_KEY = "timetable_approved"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 private sealed class FileResult {
@@ -192,6 +192,11 @@ class MainActivity : AppCompatActivity() {
                 val absenceSessions by absenceSessionsFlow.collectAsState(initial = emptyList())
                 val absencesFlow = remember(classId) { classId?.let { absenceDao.observeAbsences(it) } ?: flowOf(emptyList()) }
                 val absences by absencesFlow.collectAsState(initial = emptyList())
+                // مركز الغياب: كل أقسام الإدارة
+                val managedIds = managedClasses.map { it.id }
+                val allStudents by remember(managedIds) { studentDao.observeByClasses(managedIds) }.collectAsState(initial = emptyList())
+                val allAbsSessions by remember(managedIds) { absenceDao.observeSessionsOf(managedIds) }.collectAsState(initial = emptyList())
+                val allAbsences by remember(managedIds) { absenceDao.observeAbsencesOf(managedIds) }.collectAsState(initial = emptyList())
                 val recordsFlow = remember(classId) { classId?.let { gradeDao.observeRecords(it) } ?: flowOf(emptyList()) }
                 val records by recordsFlow.collectAsState(initial = emptyList())
                 val classGradesFlow = remember(classId) { classId?.let { gradeDao.observeClass(it) } ?: flowOf(emptyList()) }
@@ -929,6 +934,23 @@ class MainActivity : AppCompatActivity() {
                         onCancel = { if (inst == null) homeMode = null; screen = Screen.HOME }
                     )
 
+                    screen == Screen.ABSENCE_CENTER -> com.elyedali.daftarustadh.ui.AbsenceCenterScreen(
+                        classes = managedClasses.sortedWith(compareBy({ it.levelCode }, { it.number })),
+                        students = allStudents,
+                        sessions = allAbsSessions,
+                        absences = allAbsences,
+                        settings = ttSettings,
+                        slots = ttManagedSlots,
+                        subjectsOf = { c ->
+                            CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                                .map { AbsenceSubject(it.code, subjectName(it.code)) }
+                        },
+                        subjectLabel = { subjectName(it) },
+                        yearStart = (inst?.schoolYear?.take(4) ?: "2026") + "-10-01",
+                        onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
+                        onBack = { screen = Screen.HOME }
+                    )
+
                     screen == Screen.PRINT_SHOP -> {
                         val noStudents = classesWithoutStudents.joinToString("، ") { it.name }
                         val n = managedClasses.size
@@ -1552,6 +1574,7 @@ class MainActivity : AppCompatActivity() {
                                 "TIMETABLE" -> { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                 "SHARE_RECORDS" -> screen = Screen.SHARE_RECORDS
                                 "PRINT_SHOP" -> screen = Screen.PRINT_SHOP
+                                "ABSENCE_CENTER" -> screen = Screen.ABSENCE_CENTER
                                 "STATS" -> screen = Screen.STATS
                                 "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
                                 "REMARKS" -> screen = Screen.REMARKS

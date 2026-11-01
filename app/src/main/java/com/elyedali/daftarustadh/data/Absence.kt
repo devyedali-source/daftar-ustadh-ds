@@ -54,6 +54,13 @@ abstract class AbsenceDao {
     @Query("SELECT * FROM absence_session WHERE classId = :classId ORDER BY date DESC, period DESC")
     abstract fun observeSessions(classId: String): Flow<List<AbsenceSessionEntity>>
 
+    /** حصص وغيابات عدة أقسام (مركز الغياب في الإدارة). */
+    @Query("SELECT * FROM absence_session WHERE classId IN (:classIds) ORDER BY date DESC, period DESC")
+    abstract fun observeSessionsOf(classIds: List<String>): Flow<List<AbsenceSessionEntity>>
+
+    @Query("SELECT * FROM absence WHERE classId IN (:classIds)")
+    abstract fun observeAbsencesOf(classIds: List<String>): Flow<List<AbsenceEntity>>
+
     @Query("SELECT * FROM absence WHERE classId = :classId")
     abstract fun observeAbsences(classId: String): Flow<List<AbsenceEntity>>
 

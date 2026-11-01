@@ -559,4 +559,25 @@
     <string name="ps_preparing">Préparation des fichiers…</string>
     <string name="ps_message">Bonjour, voici les documents de %1$s à imprimer. Merci 🌹</string>
     <string name="ps_error">Impossible de préparer les fichiers, réessayez.</string>
+    <string name="ac_title">Absences</string>
+    <string name="ac_tab_entry">Saisir la feuille du professeur</string>
+    <string name="ac_tab_top">Les plus absents</string>
+    <string name="ac_entry_hint">Choisissez la classe, la date et la séance, puis tapez les numéros d\'appel des absents comme sur la feuille du professeur (ex. : 3 7 12). La matière et le professeur viennent de l\'emploi du temps.</string>
+    <string name="ac_class">Classe</string>
+    <string name="ac_period">Séance</string>
+    <string name="ac_no_school_day">Ce jour n\'est pas un jour de classe dans l\'emploi du temps.</string>
+    <string name="ac_pick_subject">Aucune séance prévue à cette heure, choisissez la matière :</string>
+    <string name="ac_existing">Séance déjà saisie : les numéros ci-dessous sont ses absents ; enregistrer la remplace.</string>
+    <string name="ac_numbers">Numéros d\'appel des absents</string>
+    <string name="ac_unknown">Numéros inexistants dans la classe : %1$s</string>
+    <string name="ac_none_absent">Aucun absent à cette séance</string>
+    <string name="ac_save">Enregistrer les absences</string>
+    <string name="ac_saved">Absences enregistrées : %1$s</string>
+    <string name="ac_from">Du</string>
+    <string name="ac_to">Au</string>
+    <string name="ac_all_classes">Toutes les classes</string>
+    <string name="ac_summary">Séances saisies : %1$d — Heures d\'absence : %2$d — Élèves absents : %3$d</string>
+    <string name="ac_bad_range">La date de début est après la date de fin.</string>
+    <string name="ac_no_absence">Aucune absence sur cette période.</string>
+    <string name="ac_roll">N° d\'appel %1$d</string>
 </resources>
