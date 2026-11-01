@@ -29,6 +29,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -169,14 +170,13 @@ private fun GradeField(
     onSetGrade: (String, String, Double?) -> Unit,
     modifier: Modifier
 ) {
+    // الخانة تعرض دائمًا النقطة المحفوظة؛ ولا تُعرض الكتابة الجارية إلا أثناء الكتابة فيها
+    var focused by remember(studentId, slot) { mutableStateOf(false) }
     var text by remember(studentId, slot) { mutableStateOf(GradeMath.format(value)) }
-    // إن تغيّرت القيمة من مكان آخر (رفع سجل مثلًا) تُحدَّث الخانة
-    LaunchedEffect(value) {
-        if (GradeMath.parse(text) != value) text = GradeMath.format(value)
-    }
-    val invalid = text.isNotBlank() && GradeMath.parse(text) == null
+    val shown = if (focused) text else GradeMath.format(value)
+    val invalid = shown.isNotBlank() && GradeMath.parse(shown) == null
     OutlinedTextField(
-        value = text,
+        value = shown,
         onValueChange = { v ->
             text = v.take(5)
             if (text.isBlank()) onSetGrade(studentId, slot, null)
@@ -186,6 +186,9 @@ private fun GradeField(
         isError = invalid,
         textStyle = MaterialTheme.typography.bodyMedium.copy(textAlign = TextAlign.Center),
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal, imeAction = ImeAction.Next),
-        modifier = modifier.padding(horizontal = 2.dp)
+        modifier = modifier.padding(horizontal = 2.dp).onFocusChanged { f ->
+            if (f.isFocused && !focused) text = GradeMath.format(value)
+            focused = f.isFocused
+        }
     )
 }
