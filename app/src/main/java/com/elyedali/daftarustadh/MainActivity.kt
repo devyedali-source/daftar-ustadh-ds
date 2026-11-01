@@ -187,6 +187,8 @@ class MainActivity : AppCompatActivity() {
                 val ttSettingsText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TimetableSettings.KEY) }.collectAsState(initial = null)
                 val ttSettings = remember(ttSettingsText) { com.elyedali.daftarustadh.data.TimetableSettings.decode(ttSettingsText) }
                 val ttAssignments by remember { timetableDao.observeAssignments() }.collectAsState(initial = emptyList())
+                val ttTeachersText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TimetableTeachers.KEY) }.collectAsState(initial = null)
+                val ttTeachers = remember(ttTeachersText) { com.elyedali.daftarustadh.data.TimetableTeachers.decode(ttTeachersText) }
                 val ttSlots by remember { timetableDao.observeSlots() }.collectAsState(initial = emptyList())
                 val myTimetable by remember { timetableDao.observeTeacherTimetable() }.collectAsState(initial = emptyList())
                 var ttGenerating by remember { mutableStateOf(false) }
@@ -320,18 +322,57 @@ class MainActivity : AppCompatActivity() {
                     return if (isFrUi) s.nameFr else s.nameAr
                 }
 
+                /** توزيع أقسام كل مادة على أساتذتها بالعدل (حسب قائمة الأساتذة ومواد كل واحد). */
+                suspend fun distributeTeachers() {
+                    val classSubjects = managedClasses.map { c ->
+                        Triple(c.id, c.levelCode, CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
+                            ?.subjects.orEmpty().map { it.code to it.weeklyHours })
+                    }
+                    val result = com.elyedali.daftarustadh.data.TimetableTeachers.distribute(ttTeachers, classSubjects)
+                    val covered = ttTeachers.flatMap { it.subjects }.toSet()
+                    classSubjects.forEach { (cid, _, subs) ->
+                        subs.filter { it.first in covered }.forEach { (code, _) -> timetableDao.deleteAssignment(cid, code) }
+                    }
+                    result.forEach { timetableDao.saveAssignment(it) }
+                    // الحصص الموجودة تأخذ الأستاذ الجديد
+                    val byKey = result.associateBy { it.classId to it.subjectCode }
+                    timetableDao.saveSlots(ttSlots.mapNotNull { sl -> byKey[sl.classId to sl.subjectCode]?.let { sl.copy(teacherName = it.teacherName) } })
+                }
+
+                /** حفظ قائمة الأساتذة؛ تغيير اسم أستاذ يُنقل إلى تعييناته وجدوله، وحذفه يحذف تعييناته. */
+                fun saveTeachers(newList: List<com.elyedali.daftarustadh.data.TimetableTeacher>) {
+                    val old = ttTeachers
+                    scope.launch {
+                        metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.TimetableTeachers.KEY,
+                            com.elyedali.daftarustadh.data.TimetableTeachers.encode(newList)))
+                        val removed = old.map { it.name } - newList.map { it.name }.toSet()
+                        val added = newList.map { it.name } - old.map { it.name }.toSet()
+                        if (old.size == newList.size && removed.size == 1 && added.size == 1) {
+                            val from = removed.first(); val to = added.first()
+                            ttAssignments.filter { it.teacherName == from }.forEach { timetableDao.saveAssignment(it.copy(teacherName = to)) }
+                            timetableDao.saveSlots(ttSlots.filter { it.teacherName == from }.map { it.copy(teacherName = to) })
+                        } else {
+                            ttAssignments.filter { it.teacherName in removed }.forEach { timetableDao.deleteAssignment(it.classId, it.subjectCode) }
+                            timetableDao.saveSlots(ttSlots.filter { it.teacherName in removed }.map { it.copy(teacherName = "") })
+                        }
+                    }
+                }
+
                 /** توليد الجدول الزمني لكل أقسام الإدارة في السنة الحالية. */
                 fun generateTimetable() {
                     val classesNow = managedClasses
                     if (classesNow.isEmpty()) return
                     ttGenerating = true
                     scope.launch {
+                        // أول توليد: إن لم توزَّع الأقسام بعد على الأساتذة، تُوزَّع تلقائيًا
+                        if (ttAssignments.none { a -> classesNow.any { it.id == a.classId } } && ttTeachers.isNotEmpty()) distributeTeachers()
+                        val assignmentsNow = timetableDao.listAssignments()
                         val settings = ttSettings
                         val lessons = classesNow.flatMap { c ->
                             CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty().map { sub ->
                                 com.elyedali.daftarustadh.timetable.TimetableGenerator.Lesson(
                                     c.id, sub.code,
-                                    ttAssignments.firstOrNull { it.classId == c.id && it.subjectCode == sub.code }?.teacherName.orEmpty(),
+                                    assignmentsNow.firstOrNull { it.classId == c.id && it.subjectCode == sub.code }?.teacherName.orEmpty(),
                                     sub.weeklyHours
                                 )
                             }
@@ -702,6 +743,7 @@ class MainActivity : AppCompatActivity() {
                         subjectLabel = { subjectName(it) },
                         settings = ttSettings,
                         assignments = ttAssignments,
+                        teachers = ttTeachers,
                         slots = ttSlots.filter { s -> managedClasses.any { it.id == s.classId } },
                         generating = ttGenerating,
                         lastResult = ttResult,
@@ -715,6 +757,8 @@ class MainActivity : AppCompatActivity() {
                                 timetableDao.saveSlots(ttSlots.filter { it.classId == cid && it.subjectCode == code }.map { it.copy(teacherName = teacher) })
                             }
                         },
+                        onSaveTeachers = { saveTeachers(it) },
+                        onDistribute = { scope.launch { distributeTeachers() } },
                         onGenerate = { generateTimetable() },
                         onSwap = { cid, a, b -> swapSlots(cid, a, b) },
                         onEditCell = { cid, d, p, code ->

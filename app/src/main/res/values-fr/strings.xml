@@ -426,7 +426,6 @@
     <string name="tt_replace_confirm">Un emploi du temps existe. La nouvelle génération remplacera celui de toutes les classes. Continuer ?</string>
     <string name="tt_result_ok">Emploi du temps généré : %1$d séances — trous des professeurs : %2$d</string>
     <string name="tt_result_unplaced">Heures non placées (ajoutez des séances ou des jours) : %1$s</string>
-    <string name="tt_teachers_hint">Choisissez la classe puis touchez chaque matière pour écrire son professeur. Le même nom dans plusieurs classes = le même professeur.</string>
     <string name="tt_hours_week">%1$d h par semaine</string>
     <string name="tt_choose_teacher">Choisir le professeur</string>
     <string name="tt_teacher_name">Nom du professeur</string>
@@ -457,4 +456,20 @@
     <string name="tt_add_period">séance</string>
     <string name="tt_remove_period">séance</string>
     <string name="tt_default_times">Horaires par défaut</string>
+    <string name="tt_mode_teachers">Professeurs</string>
+    <string name="tt_mode_by_class">Par classe</string>
+    <string name="tt_teachers_list_hint">Écrivez le nom de chaque professeur et cochez les matières qu\'il enseigne. L\'application répartit ensuite équitablement les classes de chaque matière selon les heures.</string>
+    <string name="tt_add_teacher">Ajouter un professeur</string>
+    <string name="tt_edit_teacher">Modifier le professeur</string>
+    <string name="tt_no_teacher_list">Aucun professeur. Ajoutez les professeurs et leurs matières.</string>
+    <string name="tt_uncovered">Matières sans professeur : %1$s</string>
+    <string name="tt_distribute">Répartir équitablement les classes</string>
+    <string name="tt_distribute_confirm">Les classes de chaque matière seront réparties entre ses professeurs selon les heures, en remplaçant la répartition précédente. Continuer ?</string>
+    <string name="tt_teacher_exists">Ce nom existe déjà.</string>
+    <string name="tt_teacher_subjects">Matières enseignées :</string>
+    <string name="tt_delete_teacher">Supprimer le professeur %1$s ?</string>
+    <string name="tt_delete">Supprimer</string>
+    <string name="tt_other_subject">n\'enseigne pas cette matière</string>
+    <string name="tt_no_teacher_for_subject">Sans professeur</string>
+    <string name="tt_teachers_hint">Vérifiez le professeur de chaque matière de la classe ; touchez une matière pour le changer.</string>
 </resources>

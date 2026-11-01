@@ -426,7 +426,6 @@
     <string name="tt_replace_confirm">يوجد جدول سابق. التوليد الجديد سيحلّ محلّ جداول كل الأقسام. هل تريد المتابعة؟</string>
     <string name="tt_result_ok">تم توليد الجدول: %1$d حصة — فراغات أيام الأساتذة: %2$d</string>
     <string name="tt_result_unplaced">لم تجد هذه الساعات مكانًا (زد عدد الحصص أو الأيام): %1$s</string>
-    <string name="tt_teachers_hint">اختر القسم ثم المس كل مادة لكتابة اسم أستاذها. الاسم نفسه في عدة أقسام يعني نفس الأستاذ.</string>
     <string name="tt_hours_week">%1$d ساعة في الأسبوع</string>
     <string name="tt_choose_teacher">اختر الأستاذ</string>
     <string name="tt_teacher_name">اسم الأستاذ</string>
@@ -457,4 +456,20 @@
     <string name="tt_add_period">حصة</string>
     <string name="tt_remove_period">حصة</string>
     <string name="tt_default_times">التوقيت التلقائي</string>
+    <string name="tt_mode_teachers">الأساتذة</string>
+    <string name="tt_mode_by_class">حسب القسم</string>
+    <string name="tt_teachers_list_hint">اكتب اسم كل أستاذ وضع علامات على المواد التي يدرّسها. بعد ذلك يوزّع التطبيق أقسام كل مادة على أساتذتها بالعدل حسب الساعات.</string>
+    <string name="tt_add_teacher">إضافة أستاذ</string>
+    <string name="tt_edit_teacher">تعديل الأستاذ</string>
+    <string name="tt_no_teacher_list">لا يوجد أساتذة بعد. أضف الأساتذة ومواد كل واحد.</string>
+    <string name="tt_uncovered">مواد بلا أستاذ: %1$s</string>
+    <string name="tt_distribute">توزيع الأقسام على الأساتذة بالعدل</string>
+    <string name="tt_distribute_confirm">سيوزّع التطبيق أقسام كل مادة على أساتذتها حسب الساعات، وسيحلّ هذا محلّ التوزيع السابق لهذه المواد. هل تريد المتابعة؟</string>
+    <string name="tt_teacher_exists">هذا الاسم موجود من قبل.</string>
+    <string name="tt_teacher_subjects">المواد التي يدرّسها:</string>
+    <string name="tt_delete_teacher">حذف الأستاذ %1$s؟</string>
+    <string name="tt_delete">حذف</string>
+    <string name="tt_other_subject">لا يدرّس هذه المادة</string>
+    <string name="tt_no_teacher_for_subject">بدون أستاذ</string>
+    <string name="tt_teachers_hint">راجع أستاذ كل مادة في القسم، والمس المادة لتغييره.</string>
 </resources>

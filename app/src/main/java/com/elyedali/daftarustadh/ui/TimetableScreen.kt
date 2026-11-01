@@ -64,6 +64,7 @@ import com.elyedali.daftarustadh.data.CurriculumSubject
 import com.elyedali.daftarustadh.data.TimetableAssignmentEntity
 import com.elyedali.daftarustadh.data.TimetableSettings
 import com.elyedali.daftarustadh.data.TimetableSlotEntity
+import com.elyedali.daftarustadh.data.TimetableTeacher
 
 /** أسماء الأيام: 0 = الاثنين ... 6 = الأحد. */
 @Composable
@@ -91,12 +92,15 @@ fun TimetableScreen(
     subjectLabel: (String) -> String,
     settings: TimetableSettings,
     assignments: List<TimetableAssignmentEntity>,
+    teachers: List<TimetableTeacher>,
     slots: List<TimetableSlotEntity>,
     generating: Boolean,
     lastResult: String?,
     initialClassId: String?,
     onSaveSettings: (TimetableSettings) -> Unit,
     onAssign: (classId: String, subjectCode: String, teacher: String) -> Unit,
+    onSaveTeachers: (List<TimetableTeacher>) -> Unit,
+    onDistribute: () -> Unit,
     onGenerate: () -> Unit,
     onSwap: (classId: String, a: Pair<Int, Int>, b: Pair<Int, Int>) -> String?,
     onEditCell: (classId: String, day: Int, period: Int, subjectCode: String?) -> Unit,
@@ -116,7 +120,7 @@ fun TimetableScreen(
             Box(Modifier.weight(1f).fillMaxWidth()) {
                 when (tab) {
                     0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate)
-                    1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, onAssign)
+                    1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
                     2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass)
                     else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile)
                 }
@@ -280,11 +284,175 @@ private fun TeachersTab(
     subjectsByClass: Map<String, List<CurriculumSubject>>,
     subjectLabel: (String) -> String,
     assignments: List<TimetableAssignmentEntity>,
+    teachers: List<TimetableTeacher>,
+    onAssign: (String, String, String) -> Unit,
+    onSaveTeachers: (List<TimetableTeacher>) -> Unit,
+    onDistribute: () -> Unit
+) {
+    var mode by rememberSaveable { mutableIntStateOf(0) }  // 0 الأساتذة، 1 حسب القسم
+    Column(Modifier.fillMaxSize()) {
+        Row(
+            Modifier.fillMaxWidth().padding(top = 10.dp)
+                .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(12.dp)).padding(3.dp)
+        ) {
+            listOf(R.string.tt_mode_teachers, R.string.tt_mode_by_class).forEachIndexed { i, res ->
+                Box(
+                    Modifier.weight(1f)
+                        .background(if (mode == i) MaterialTheme.colorScheme.surface else Color.Transparent, RoundedCornerShape(10.dp))
+                        .clickable { mode = i }.padding(vertical = 8.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(stringResource(res), fontWeight = if (mode == i) FontWeight.Bold else FontWeight.Normal,
+                        color = if (mode == i) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+            }
+        }
+        if (mode == 0) TeacherListPane(classes, subjectsByClass, subjectLabel, assignments, teachers, onSaveTeachers, onDistribute)
+        else ByClassAssignPane(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign)
+    }
+}
+
+/** الأساتذة: يكتب المسؤول الاسم ويضع علامات على المواد التي يدرّسها، ثم توزَّع الأقسام بالعدل. */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun TeacherListPane(
+    classes: List<ClassEntity>,
+    subjectsByClass: Map<String, List<CurriculumSubject>>,
+    subjectLabel: (String) -> String,
+    assignments: List<TimetableAssignmentEntity>,
+    teachers: List<TimetableTeacher>,
+    onSave: (List<TimetableTeacher>) -> Unit,
+    onDistribute: () -> Unit
+) {
+    var editing by remember { mutableStateOf<Int?>(null) }   // -1 = أستاذ جديد
+    var confirmDistribute by remember { mutableStateOf(false) }
+    var deleting by remember { mutableStateOf<Int?>(null) }
+    val order = listOf("IR", "AR", "HG", "PH", "IC", "FR", "ANG", "MATS", "SN", "PC", "TI", "LEG", "EPS")
+    // كل المواد الموجودة في أقسام المؤسسة
+    val allSubjects = remember(subjectsByClass) {
+        subjectsByClass.values.flatten().map { it.code }.distinct()
+            .sortedBy { order.indexOf(it).let { i -> if (i < 0) 99 else i } }
+    }
+    val hoursOf = remember(subjectsByClass) {
+        subjectsByClass.flatMap { (cid, subs) -> subs.map { (cid to it.code) to it.weeklyHours } }.toMap()
+    }
+    val classNames = remember(classes) { classes.associate { it.id to it.name } }
+    val uncovered = allSubjects.filter { code -> teachers.none { code in it.subjects } }
+
+    LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(vertical = 10.dp)) {
+        item { Text(stringResource(R.string.tt_teachers_list_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+        item {
+            Button(onClick = { editing = -1 }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
+                Text("➕ " + stringResource(R.string.tt_add_teacher), fontWeight = FontWeight.Bold)
+            }
+        }
+        if (teachers.isEmpty()) item {
+            Text(stringResource(R.string.tt_no_teacher_list), color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(12.dp))
+        }
+        items(teachers.indices.toList(), key = { "t-" + teachers[it].name }) { i ->
+            val t = teachers[i]
+            val mine = assignments.filter { it.teacherName == t.name }
+            val hours = mine.sumOf { hoursOf[it.classId to it.subjectCode] ?: 0 }
+            Card(
+                Modifier.fillMaxWidth().clickable { editing = i }, shape = RoundedCornerShape(14.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                elevation = CardDefaults.cardElevation(1.dp)
+            ) {
+                Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text("👨‍🏫 " + t.name, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f))
+                        Text(stringResource(R.string.tt_hours_week, hours), fontSize = 12.sp, fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.secondary)
+                        TextButton(onClick = { deleting = i }) { Text("🗑️") }
+                    }
+                    Text(t.subjects.joinToString("، ") { subjectLabel(it) }, fontSize = 12.sp, color = MaterialTheme.colorScheme.primary)
+                    if (mine.isNotEmpty()) Text(
+                        mine.groupBy { it.subjectCode }.entries.joinToString(" — ") { (code, l) ->
+                            subjectLabel(code) + ": " + l.mapNotNull { classNames[it.classId] }.sorted().joinToString("، ")
+                        },
+                        fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+        }
+        if (uncovered.isNotEmpty() && teachers.isNotEmpty()) item {
+            Text(stringResource(R.string.tt_uncovered, uncovered.joinToString("، ") { subjectLabel(it) }), fontSize = 12.sp,
+                color = MaterialTheme.colorScheme.error)
+        }
+        if (teachers.isNotEmpty()) item {
+            OutlinedButton(onClick = { confirmDistribute = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
+                Text("⚖️ " + stringResource(R.string.tt_distribute))
+            }
+        }
+    }
+
+    editing?.let { idx ->
+        val existing = teachers.getOrNull(idx)
+        var name by remember(idx) { mutableStateOf(existing?.name.orEmpty()) }
+        var chosen by remember(idx) { mutableStateOf(existing?.subjects.orEmpty().toSet()) }
+        val duplicate = teachers.withIndex().any { (j, t) -> j != idx && t.name == name.trim() }
+        AlertDialog(
+            onDismissRequest = { editing = null },
+            title = { Text(stringResource(if (existing == null) R.string.tt_add_teacher else R.string.tt_edit_teacher)) },
+            text = {
+                Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    OutlinedTextField(name, { name = it }, label = { Text(stringResource(R.string.tt_teacher_name)) },
+                        singleLine = true, modifier = Modifier.fillMaxWidth(), isError = duplicate)
+                    if (duplicate) Text(stringResource(R.string.tt_teacher_exists), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                    Text(stringResource(R.string.tt_teacher_subjects), fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                        allSubjects.forEach { code ->
+                            FilterChip(
+                                selected = code in chosen,
+                                onClick = { chosen = if (code in chosen) chosen - code else chosen + code },
+                                label = { Text(subjectLabel(code)) }
+                            )
+                        }
+                    }
+                }
+            },
+            confirmButton = {
+                TextButton(enabled = name.isNotBlank() && chosen.isNotEmpty() && !duplicate, onClick = {
+                    val t = TimetableTeacher(name.trim(), allSubjects.filter { it in chosen })
+                    onSave(if (existing == null) teachers + t else teachers.toMutableList().also { it[idx] = t })
+                    editing = null
+                }) { Text(stringResource(R.string.save)) }
+            },
+            dismissButton = { TextButton(onClick = { editing = null }) { Text(stringResource(R.string.cancel)) } }
+        )
+    }
+    deleting?.let { idx ->
+        AlertDialog(
+            onDismissRequest = { deleting = null },
+            text = { Text(stringResource(R.string.tt_delete_teacher, teachers.getOrNull(idx)?.name.orEmpty())) },
+            confirmButton = {
+                TextButton(onClick = { onSave(teachers.filterIndexed { j, _ -> j != idx }); deleting = null }) {
+                    Text(stringResource(R.string.tt_delete))
+                }
+            },
+            dismissButton = { TextButton(onClick = { deleting = null }) { Text(stringResource(R.string.cancel)) } }
+        )
+    }
+    if (confirmDistribute) AlertDialog(
+        onDismissRequest = { confirmDistribute = false },
+        text = { Text(stringResource(R.string.tt_distribute_confirm)) },
+        confirmButton = { TextButton(onClick = { confirmDistribute = false; onDistribute() }) { Text(stringResource(R.string.tt_distribute)) } },
+        dismissButton = { TextButton(onClick = { confirmDistribute = false }) { Text(stringResource(R.string.cancel)) } }
+    )
+}
+
+/** حسب القسم: مراجعة أستاذ كل مادة في القسم وتغييره يدويًا. */
+@Composable
+private fun ByClassAssignPane(
+    classes: List<ClassEntity>,
+    subjectsByClass: Map<String, List<CurriculumSubject>>,
+    subjectLabel: (String) -> String,
+    assignments: List<TimetableAssignmentEntity>,
+    teachers: List<TimetableTeacher>,
     onAssign: (String, String, String) -> Unit
 ) {
     var classId by rememberSaveable { mutableStateOf(classes.firstOrNull()?.id) }
     var editing by remember { mutableStateOf<CurriculumSubject?>(null) }
-    val known = remember(assignments) { assignments.map { it.teacherName }.filter { it.isNotBlank() }.distinct().sorted() }
     val cid = classId ?: return
     LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(vertical = 10.dp)) {
         item { Text(stringResource(R.string.tt_teachers_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
@@ -307,29 +475,30 @@ private fun TeachersTab(
         }
     }
     editing?.let { s ->
-        var name by remember(s.code, cid) {
-            mutableStateOf(assignments.firstOrNull { it.classId == cid && it.subjectCode == s.code }?.teacherName.orEmpty())
-        }
+        // أساتذة هذه المادة أولًا، ثم البقية
+        val options = teachers.sortedBy { if (s.code in it.subjects) 0 else 1 }
+        val otherLabel = stringResource(R.string.tt_other_subject)
         AlertDialog(
             onDismissRequest = { editing = null },
             title = { Text(subjectLabel(s.code) + " — " + classes.firstOrNull { it.id == cid }?.name.orEmpty()) },
             text = {
-                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    OutlinedTextField(name, { name = it }, label = { Text(stringResource(R.string.tt_teacher_name)) },
-                        singleLine = true, modifier = Modifier.fillMaxWidth())
-                    if (known.isNotEmpty()) {
-                        Text(stringResource(R.string.tt_known_teachers), fontSize = 12.sp, fontWeight = FontWeight.Bold)
-                        LazyColumn(Modifier.heightIn(max = 220.dp)) {
-                            items(known) { k ->
-                                Text(k, Modifier.fillMaxWidth().clickable { name = k }.padding(vertical = 8.dp),
-                                    color = if (k == name) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface)
-                            }
-                        }
+                LazyColumn(Modifier.heightIn(max = 380.dp)) {
+                    if (options.isEmpty()) item { Text(stringResource(R.string.tt_no_teacher_list)) }
+                    items(options, key = { it.name }) { t ->
+                        Text(
+                            t.name + if (s.code in t.subjects) "" else " ($otherLabel)",
+                            Modifier.fillMaxWidth().clickable { onAssign(cid, s.code, t.name); editing = null }.padding(vertical = 10.dp),
+                            color = if (s.code in t.subjects) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    item {
+                        Text(stringResource(R.string.tt_no_teacher_for_subject), Modifier.fillMaxWidth()
+                            .clickable { onAssign(cid, s.code, ""); editing = null }.padding(vertical = 10.dp),
+                            color = MaterialTheme.colorScheme.error)
                     }
                 }
             },
-            confirmButton = { TextButton(onClick = { onAssign(cid, s.code, name.trim()); editing = null }) { Text(stringResource(R.string.save)) } },
-            dismissButton = { TextButton(onClick = { editing = null }) { Text(stringResource(R.string.cancel)) } }
+            confirmButton = { TextButton(onClick = { editing = null }) { Text(stringResource(R.string.cancel)) } }
         )
     }
 }

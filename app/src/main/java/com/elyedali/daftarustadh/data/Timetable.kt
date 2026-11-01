@@ -59,6 +59,9 @@ abstract class TimetableDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     abstract suspend fun saveAssignment(a: TimetableAssignmentEntity)
 
+    @Query("SELECT * FROM timetable_assignment")
+    abstract suspend fun listAssignments(): List<TimetableAssignmentEntity>
+
     @Query("DELETE FROM timetable_assignment WHERE classId = :classId AND subjectCode = :subjectCode")
     abstract suspend fun deleteAssignment(classId: String, subjectCode: String)
 
@@ -170,5 +173,58 @@ data class TimetableSettings(
                 )
             }.getOrDefault(TimetableSettings())
         }
+    }
+}
+
+/** أستاذ في المؤسسة: اسمه والمواد التي يدرّسها (مُدخل من الإدارة لتوليد الجدول). */
+data class TimetableTeacher(val name: String, val subjects: List<String>)
+
+object TimetableTeachers {
+    const val KEY = "timetable_teachers"
+
+    fun encode(list: List<TimetableTeacher>): String = JSONArray().apply {
+        list.forEach { t -> put(JSONObject().put("name", t.name).put("subjects", JSONArray(t.subjects))) }
+    }.toString()
+
+    fun decode(text: String?): List<TimetableTeacher> {
+        if (text.isNullOrBlank()) return emptyList()
+        return runCatching {
+            val a = JSONArray(text)
+            (0 until a.length()).map { i ->
+                val o = a.getJSONObject(i)
+                val s = o.getJSONArray("subjects")
+                TimetableTeacher(o.getString("name"), (0 until s.length()).map { s.getString(it) })
+            }.filter { it.name.isNotBlank() }
+        }.getOrDefault(emptyList())
+    }
+
+    /**
+     * يوزّع أقسام كل مادة على أساتذتها بالعدل: كل حصة (قسم، مادة) تذهب للأستاذ الأقل ساعات
+     * ممن يدرّسون تلك المادة، مع تفضيل من يدرّس نفس المستوى. يرجع التعيينات الجديدة.
+     * @param classSubjects لكل قسم: (معرّف القسم، المستوى، [(رمز المادة، ساعاتها)])
+     */
+    fun distribute(
+        teachers: List<TimetableTeacher>,
+        classSubjects: List<Triple<String, String, List<Pair<String, Int>>>>
+    ): List<TimetableAssignmentEntity> {
+        val load = HashMap<String, Int>()
+        val levels = HashMap<String, MutableSet<String>>()  // أستاذ -> مستويات (مادة|مستوى)
+        val jobs = classSubjects.flatMap { (cid, level, subs) -> subs.map { (code, h) -> Triple(cid, level, code to h) } }
+            .filter { (_, _, sh) -> teachers.any { sh.first in it.subjects } }
+            .sortedWith(compareByDescending<Triple<String, String, Pair<String, Int>>> { it.third.second }.thenBy { it.second }.thenBy { it.first })
+        val out = ArrayList<TimetableAssignmentEntity>()
+        jobs.forEach { (cid, level, sh) ->
+            val (code, hours) = sh
+            val eligible = teachers.filter { code in it.subjects }
+            val pick = eligible.minWithOrNull(
+                compareBy<TimetableTeacher> { load[it.name] ?: 0 }
+                    .thenBy { if (levels[it.name]?.contains("$code|$level") == true) 0 else 1 }
+                    .thenBy { it.name }
+            ) ?: return@forEach
+            load[pick.name] = (load[pick.name] ?: 0) + hours
+            levels.getOrPut(pick.name) { HashSet() }.add("$code|$level")
+            out += TimetableAssignmentEntity(cid, code, pick.name)
+        }
+        return out
     }
 }
