@@ -468,7 +468,7 @@
     <string name="tt_other_subject">لا يدرّس هذه المادة</string>
     <string name="tt_no_teacher_for_subject">بدون أستاذ</string>
     <string name="tt_teachers_hint">راجع أستاذ كل مادة في القسم، والمس المادة لتغييره.</string>
-    <string name="home_choose_year_title">دفتر الأستاذ - اختيار السنة الدراسية 📅</string>
+    <string name="home_choose_year_title">دفتر الأستاذ DS - اختيار السنة الدراسية 📅</string>
     <string name="home_year_title">السنة الدراسية: %1$s 🏫</string>
     <string name="home_choose_year_prompt">اختر السنة الدراسية للعمل عليها 📅</string>
     <string name="home_no_years">لا توجد سنوات دراسية مسجلة بعد</string>

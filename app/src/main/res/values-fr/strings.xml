@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Daftar Al-Ustadh DS</string>
+    <string name="app_name">دفتر الأستاذ DS</string>
     <string name="welcome_subtitle">Enseignement secondaire (collège et lycée)</string>
     <string name="language">Langue de l\'interface</string>
     <string name="lang_ar">العربية</string>
@@ -98,7 +98,7 @@
     <string name="share_full_file">Fichier complet de la classe</string>
     <string name="share_full_file_hint">Toutes les informations des élèves, pour un enseignant chargé de la classe</string>
     <string name="share_chooser">Envoyer le fichier de la classe</string>
-    <string name="file_invalid">Ce fichier n\'est pas un fichier de classe Daftar Al-Ustadh DS, ou il est endommagé.</string>
+    <string name="file_invalid">Ce fichier n\'est pas un fichier de classe دفتر الأستاذ DS, ou il est endommagé.</string>
     <string name="file_conflict">La classe %1$s existe déjà chez vous depuis une autre source. Mettez-vous d\'accord sur un seul fichier : celui de son créateur.</string>
     <string name="file_ok_teacher">La classe %1$s a été ajoutée à « Mes classes ».</string>
     <string name="file_ok_full">La classe %1$s a été ajoutée au mode administration.</string>
@@ -263,7 +263,7 @@
     <string name="ex_count_leaving">Professeurs voulant quitter %1$s : (%2$d)</string>
     <string name="ex_count_entering">Professeurs voulant rejoindre %1$s : (%2$d)</string>
     <string name="ex_count_wilaya">Professeurs concernés par %1$s : (%2$d)</string>
-    <string name="ex_disclaimer">L\'application Daftar Ustadh DS n\'est pas responsable des accords entre personnes ; elle met seulement les professeurs en contact.</string>
+    <string name="ex_disclaimer">L\'application دفتر الأستاذ DS n\'est pas responsable des accords entre personnes ; elle met seulement les professeurs en contact.</string>
     <string name="ex_no_results">Aucune offre ne correspond à la recherche</string>
     <string name="ex_no_results_hint">Modifiez les filtres ou utilisez le « Formulaire » pour ajouter votre offre.</string>
     <string name="ex_specialty_line">Spécialité : %1$s</string>
@@ -278,7 +278,7 @@
     <string name="ex_contact">Contacter</string>
     <string name="ex_delete_confirm">Supprimer définitivement cette annonce ?</string>
     <string name="ex_delete_yes">Oui, supprimer</string>
-    <string name="ex_msg_header">Cette annonce de l\'application Daftar Ustadh DS m\'intéresse 🤝</string>
+    <string name="ex_msg_header">Cette annonce de l\'application دفتر الأستاذ DS m\'intéresse 🤝</string>
     <string name="ex_msg_specialty">Spécialité</string>
     <string name="ex_wilaya">Wilaya</string>
     <string name="ex_moughataa">Moughataa</string>
@@ -370,7 +370,7 @@
     <string name="ex_act_not_active">Annonce pas encore activée</string>
     <string name="ex_act_banner">Prix de publication %1$d MRU. Contactez l\'administration pour l\'activer.</string>
     <string name="ex_act_button">Activer 💬</string>
-    <string name="ex_act_message">Je veux publier et activer une annonce d\'échange (application Daftar Ustadh DS).\n🔑 Code de l\'annonce :\n%1$s</string>
+    <string name="ex_act_message">Je veux publier et activer une annonce d\'échange (application دفتر الأستاذ DS).\n🔑 Code de l\'annonce :\n%1$s</string>
     <string name="act_title">Activation des classes</string>
     <string name="home_activation_desc">Trimestre 1 gratuit ; l\'activation ouvre les trimestres 2 et 3</string>
     <string name="act_explain">Le 1er trimestre est gratuit. L\'activation d\'une classe ouvre les trimestres 2 et 3 de l\'année (bulletin du T2 et bulletin annuel). Le professeur est toujours gratuit.</string>
@@ -390,7 +390,7 @@
     <string name="act_after_send">Après paiement, l\'administration active les classes et les bulletins du T2 et annuel s\'ouvrent.</string>
     <string name="act_locked">Activation de la classe requise</string>
     <string name="act_activate_class">Activer la classe</string>
-    <string name="act_msg_intro">Je veux activer des classes dans l\'application Daftar Ustadh DS (trimestres 2 et 3).</string>
+    <string name="act_msg_intro">Je veux activer des classes dans l\'application دفتر الأستاذ DS (trimestres 2 et 3).</string>
     <string name="act_msg_school">Établissement : %1$s</string>
     <string name="act_msg_wilaya">Wilaya : %1$s</string>
     <string name="act_msg_year">Année scolaire : %1$s</string>
@@ -468,7 +468,7 @@
     <string name="tt_other_subject">n\'enseigne pas cette matière</string>
     <string name="tt_no_teacher_for_subject">Sans professeur</string>
     <string name="tt_teachers_hint">Vérifiez le professeur de chaque matière de la classe ; touchez une matière pour le changer.</string>
-    <string name="home_choose_year_title">Daftar Ustadh - Choix de l\'année 📅</string>
+    <string name="home_choose_year_title">دفتر الأستاذ DS - Choix de l\'année 📅</string>
     <string name="home_year_title">Année scolaire : %1$s 🏫</string>
     <string name="home_choose_year_prompt">Choisissez l\'année scolaire 📅</string>
     <string name="home_no_years">Aucune année scolaire enregistrée</string>
@@ -509,7 +509,7 @@
     <string name="drawer_never_synced">Pas encore synchronisé</string>
     <string name="drawer_sync">Synchroniser</string>
     <string name="drawer_logout">Se déconnecter</string>
-    <string name="drawer_footer">Daftar Ustadh DS\nTous droits réservés © 2026</string>
+    <string name="drawer_footer">دفتر الأستاذ DS\nTous droits réservés © 2026</string>
     <string name="drawer_sync_later">La synchronisation Google Drive sera activée à la prochaine étape (avec le serveur).</string>
     <string name="drawer_logout_later">La connexion et la déconnexion seront activées avec le serveur.</string>
 </resources>

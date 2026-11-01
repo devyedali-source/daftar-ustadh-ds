@@ -453,7 +453,7 @@ class MainActivity : AppCompatActivity() {
                             dayLabels = st.days.map { "${dayAr[it]}\n${dayFr[it]}" },
                             periodLabels = (0 until st.periods).map { "${it + 1}\n${st.label(it)}" },
                             cells = st.days.map { d -> (0 until st.periods).map { p -> cells(d, p) } },
-                            footer = "دفتر الأستاذ DS — Daftar Ustadh DS",
+                            footer = "دفتر الأستاذ DS",
                             seal = android.graphics.BitmapFactory.decodeResource(resources, R.drawable.img_mauritania_seal)
                         )
                     )
