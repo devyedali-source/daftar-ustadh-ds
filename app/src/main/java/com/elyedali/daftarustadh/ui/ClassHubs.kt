@@ -6,6 +6,14 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material3.Icon
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -22,24 +30,34 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.elyedali.daftarustadh.R
 
-/** هيكل قسم بتبويبات: رأس موحّد ثم شريط تبويبات ثم محتوى التبويب. */
+/**
+ * هيكل القسم كما في دفتر المعلم: شريط علوي (اسم القسم والسنة) وشريط تنقل سفلي بأيقونات.
+ */
 @Composable
 fun ClassHub(
     title: String,
     subtitles: List<String>,
     tabs: List<String>,
+    icons: List<ImageVector>,
     selected: Int,
     onSelect: (Int) -> Unit,
     onBack: () -> Unit,
     content: @Composable () -> Unit
 ) {
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-        Column(Modifier.fillMaxSize().padding(horizontal = 12.dp, vertical = 10.dp)) {
-            ScreenHeader(title, onBack, subtitles)
-            ScrollableTabRow(selectedTabIndex = selected, edgePadding = 0.dp, containerColor = MaterialTheme.colorScheme.background) {
-                tabs.forEachIndexed { i, t -> Tab(selected = selected == i, onClick = { onSelect(i) }, text = { Text(t) }) }
+        Column(Modifier.fillMaxSize()) {
+            AppTopBar(title = (listOf(title) + subtitles.filter { it.isNotBlank() }).joinToString(" — "), onMenu = null, onBack = onBack)
+            Box(Modifier.weight(1f).fillMaxWidth().padding(horizontal = 12.dp)) { content() }
+            NavigationBar(containerColor = MaterialTheme.colorScheme.surfaceVariant) {
+                tabs.forEachIndexed { i, t ->
+                    NavigationBarItem(
+                        selected = selected == i,
+                        onClick = { onSelect(i) },
+                        icon = { Icon(icons.getOrElse(i) { Icons.Filled.Star }, contentDescription = t) },
+                        label = { Text(t, fontSize = 9.sp, fontWeight = FontWeight.Bold, maxLines = 1) }
+                    )
+                }
             }
-            Box(Modifier.weight(1f).fillMaxWidth()) { content() }
         }
     }
 }

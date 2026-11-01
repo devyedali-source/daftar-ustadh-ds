@@ -14,26 +14,31 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-/** ألوان هادئة رسمية: أزرق داكن (لون الوثائق الرسمية) مع أخضر موريتاني للنجاح والإنجاز. */
+/** نفس ألوان دفتر المعلم (لوحة Bento البنفسجية) حتى تكون الواجهات متطابقة. */
 private val Light = lightColorScheme(
-    primary = Color(0xFF1B3A6B),
+    primary = Color(0xFF6750A4),
     onPrimary = Color.White,
-    primaryContainer = Color(0xFFDCE6F7),
-    onPrimaryContainer = Color(0xFF0E2447),
-    secondary = Color(0xFF1E7A4F),
+    primaryContainer = Color(0xFFEADDFF),
+    onPrimaryContainer = Color(0xFF21005D),
+    secondary = Color(0xFF21005D),
     onSecondary = Color.White,
-    secondaryContainer = Color(0xFFD5EFE1),
-    onSecondaryContainer = Color(0xFF0B3D25),
-    tertiary = Color(0xFFB8860B),
-    tertiaryContainer = Color(0xFFFFF1CC),
-    background = Color(0xFFF3F5F9),
+    secondaryContainer = Color(0xFFE8DEF8),
+    onSecondaryContainer = Color(0xFF21005D),
+    tertiary = Color(0xFF7D5260),
+    tertiaryContainer = Color(0xFFFFD8E4),
+    onTertiaryContainer = Color(0xFF31111D),
+    background = Color(0xFFFDF8F6),
+    onBackground = Color(0xFF1D1B20),
     surface = Color.White,
-    surfaceVariant = Color(0xFFE8ECF3),
-    onSurfaceVariant = Color(0xFF4A5468),
-    outline = Color(0xFFB9C2D3),
+    onSurface = Color(0xFF1D1B20),
+    surfaceVariant = Color(0xFFF3EDF7),
+    onSurfaceVariant = Color(0xFF49454F),
+    outline = Color(0xFFCAC4D0),
+    outlineVariant = Color(0xFFE7E0EC),
     error = Color(0xFFB3261E)
 )
 
+@Suppress("unused")
 private val Dark = darkColorScheme(
     primary = Color(0xFF9DB9EA),
     onPrimary = Color(0xFF0E2447),
@@ -70,7 +75,7 @@ private val AppTypography = base.copy(
 @Composable
 fun DaftarTheme(content: @Composable () -> Unit) {
     MaterialTheme(
-        colorScheme = if (isSystemInDarkTheme()) Dark else Light,
+        colorScheme = Light,  // مثل دفتر المعلم: ألوان فاتحة دائمًا
         shapes = AppShapes,
         typography = AppTypography,
         content = content

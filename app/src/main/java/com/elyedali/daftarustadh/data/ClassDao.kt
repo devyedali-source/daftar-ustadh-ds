@@ -18,6 +18,10 @@ interface ClassDao {
     @Query("SELECT * FROM school_class WHERE teaching = 1 ORDER BY schoolYear DESC, levelCode, number")
     fun observeTeaching(): Flow<List<ClassEntity>>
 
+    /** كل الأقسام (الإدارة والأستاذ) من كل السنوات — للصفحة الرئيسية. */
+    @Query("SELECT * FROM school_class WHERE managed = 1 OR teaching = 1 ORDER BY schoolYear DESC, levelCode, number")
+    fun observeAll(): Flow<List<ClassEntity>>
+
     @Query("SELECT * FROM school_class WHERE id = :id")
     fun observeById(id: String): Flow<ClassEntity?>
 

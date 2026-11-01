@@ -99,6 +99,7 @@ fun ClassesScreen(
     if (showCreate) {
         CreateClassDialog(
             institution = institution,
+            schoolYear = institution.schoolYear,
             existing = classes,
             onCreate = onCreate,
             onDismiss = { showCreate = false }
@@ -116,20 +117,21 @@ fun ClassesScreen(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun CreateClassDialog(
+fun CreateClassDialog(
     institution: InstitutionEntity,
+    schoolYear: String,
     existing: List<ClassEntity>,
     onCreate: (String, Int, (Boolean) -> Unit) -> Unit,
     onDismiss: () -> Unit
 ) {
     val context = LocalContext.current
-    val levels: List<CurriculumLevel> = remember(institution) {
+    val levels: List<CurriculumLevel> = remember(institution, schoolYear) {
         val stages = when (institution.stage) {
             Stage.COLLEGE -> listOf(Stage.COLLEGE)
             Stage.LYCEE -> listOf(Stage.LYCEE)
             else -> listOf(Stage.COLLEGE, Stage.LYCEE)
         }
-        stages.flatMap { CurriculumRepository.creatableLevels(context, institution.schoolYear, it) }
+        stages.flatMap { CurriculumRepository.creatableLevels(context, schoolYear, it) }
     }
     var levelCode by remember { mutableStateOf<String?>(null) }
     var numberText by remember { mutableStateOf("") }
@@ -138,7 +140,7 @@ private fun CreateClassDialog(
     val duplicateMsg = stringResource(R.string.class_exists)
 
     fun nextNumber(code: String): Int =
-        (existing.filter { it.levelCode == code && it.institutionId == institution.id }.maxOfOrNull { it.number } ?: 0) + 1
+        (existing.filter { it.levelCode == code && it.institutionId == institution.id && it.schoolYear == schoolYear }.maxOfOrNull { it.number } ?: 0) + 1
 
     val number = numberText.toIntOrNull()
     val canCreate = levelCode != null && number != null && number in 1..99

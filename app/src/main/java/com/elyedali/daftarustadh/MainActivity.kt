@@ -60,6 +60,7 @@ import com.elyedali.daftarustadh.ui.ClassHub
 import com.elyedali.daftarustadh.ui.AbsenceTab
 import com.elyedali.daftarustadh.ui.AbsenceSubject
 import com.elyedali.daftarustadh.ui.TextbookTab
+import com.elyedali.daftarustadh.ui.HomeYearsScreen
 import com.elyedali.daftarustadh.ui.ComingSoon
 import com.elyedali.daftarustadh.ui.DocumentsTab
 import com.elyedali.daftarustadh.ui.KashfTab
@@ -80,7 +81,6 @@ import com.elyedali.daftarustadh.ui.ClassSubjectsDialog
 import com.elyedali.daftarustadh.ui.ClassesScreen
 import com.elyedali.daftarustadh.ui.DaftarTheme
 import com.elyedali.daftarustadh.ui.GradesScreen
-import com.elyedali.daftarustadh.ui.HomeScreen
 import com.elyedali.daftarustadh.ui.ImportStudentsScreen
 import com.elyedali.daftarustadh.ui.InstitutionScreen
 import com.elyedali.daftarustadh.ui.RemarksSettingsScreen
@@ -152,6 +152,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 val managedClasses by managedFlow.collectAsState(initial = emptyList())
                 val teachingClasses by remember { classDao.observeTeaching() }.collectAsState(initial = emptyList())
+                val allClasses by remember { classDao.observeAll() }.collectAsState(initial = emptyList())
+                val homeGenderCounts by remember { studentDao.observeGenderCounts() }.collectAsState(initial = emptyList())
+                var selectedYear by rememberSaveable { mutableStateOf<String?>(null) }
+                var showCreateClass by remember { mutableStateOf(false) }
                 val currentClassFlow = remember(classId) { classId?.let { classDao.observeById(it) } ?: flowOf(null) }
                 val currentClass: ClassEntity? by currentClassFlow.collectAsState(initial = null)
                 val studentsFlow = remember(classId) { classId?.let { studentDao.observeByClass(it) } ?: flowOf(emptyList()) }
@@ -201,6 +205,22 @@ class MainActivity : AppCompatActivity() {
                 val generalText by remember { metaDao.observe(KashfSettings.GENERAL_REMARKS_KEY) }.collectAsState(initial = null)
                 val generalRemarks = remember(generalText) {
                     if (generalText.isNullOrBlank()) KashfSettings.DEFAULT_GENERAL_REMARKS else RemarkScale.decode(generalText)
+                }
+
+                /** حذف قسم وكل ما يتعلق به (بعد إدخال 9999). */
+                fun deleteClass(c: ClassEntity) {
+                    scope.launch {
+                        gradeDao.deleteByClass(c.id)
+                        gradeDao.deleteRecordsByClass(c.id)
+                        documentDao.deleteByClass(c.id)
+                        gradeDao.deleteTeacherSubjectsByClass(c.id)
+                        studentDao.deleteByClass(c.id)
+                        absenceDao.deleteAbsencesByClass(c.id)
+                        absenceDao.deleteSessionsByClass(c.id)
+                        timetableDao.deleteAssignmentsByClass(c.id)
+                        timetableDao.deleteSlotsByClass(c.id)
+                        classDao.delete(c)
+                    }
                 }
 
                 /** إنتاج كشوف الدرجات لقسم: ملف PDF واحد، كشف في كل صفحة، يُرسل للوراقة. */
@@ -614,7 +634,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 when (screen) {
-                    Screen.HOME -> {}
+                    Screen.HOME -> if (selectedYear != null) BackHandler { selectedYear = null }
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
@@ -635,30 +655,29 @@ class MainActivity : AppCompatActivity() {
                     drawerState = drawerState,
                     gesturesEnabled = screen == Screen.HOME || drawerState.isOpen,
                     drawerContent = {
-                        ModalDrawerSheet {
-                            androidx.compose.material3.Text(
-                                stringResource(R.string.app_name),
-                                style = androidx.compose.material3.MaterialTheme.typography.titleLarge,
-                                modifier = androidx.compose.ui.Modifier.padding(20.dp)
-                            )
-                            listOf(
-                                Screen.HOME to R.string.menu_home,
-                                Screen.ALL_CLASSES to R.string.classes_title,
-                                Screen.LEGISLATION to R.string.menu_legislation,
-                                Screen.EXCHANGES to R.string.menu_exchanges,
-                                Screen.BOOKS to R.string.menu_books
-                            ).forEach { (target, res) ->
-                                NavigationDrawerItem(
-                                    label = { androidx.compose.material3.Text(stringResource(res)) },
-                                    selected = screen == target,
-                                    onClick = {
-                                        if (target == Screen.BOOKS) openKoutoubi() else screen = target
-                                        scope.launch { drawerState.close() }
-                                    },
-                                    modifier = androidx.compose.ui.Modifier.padding(horizontal = 12.dp)
-                                )
+                        com.elyedali.daftarustadh.ui.AppDrawer(
+                            schoolName = inst?.schoolName,
+                            schoolYear = inst?.schoolYear,
+                            current = screen.name,
+                            onItem = { key ->
+                                scope.launch { drawerState.close() }
+                                when (key) {
+                                    "HOME" -> { screen = Screen.HOME }
+                                    "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                    "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
+                                    "EXCHANGES" -> screen = Screen.EXCHANGES
+                                    "LEGISLATION" -> screen = Screen.LEGISLATION
+                                    "BOOKS" -> openKoutoubi()
+                                    "STATS" -> screen = Screen.STATS
+                                    "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
+                                    "INSTITUTION" -> screen = Screen.INSTITUTION
+                                    "REMARKS" -> screen = Screen.REMARKS
+                                    "OPEN_FILE" -> openFile()
+                                    "LANG_AR" -> AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("ar"))
+                                    "LANG_FR" -> AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("fr"))
+                                }
                             }
-                        }
+                        )
                     }
                 ) {
                 when {
@@ -855,8 +874,10 @@ class MainActivity : AppCompatActivity() {
                             title = c.name,
                             subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_absence), stringResource(R.string.tab_textbook),
-                                stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
+                                stringResource(R.string.tab_absence), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
+                            icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
+                                androidx.compose.material.icons.Icons.Filled.CheckCircle, androidx.compose.material.icons.Icons.Filled.List,
+                                androidx.compose.material.icons.Icons.Filled.DateRange),
                             selected = hubTab,
                             onSelect = { hubTab = it },
                             onBack = { screen = hubBack }
@@ -907,16 +928,30 @@ class MainActivity : AppCompatActivity() {
                                     onUpload = openFile,
                                     onChooseSubjects = null
                                 )
-                                3 -> TextbookTab(onPrint = { pages -> printTextbook(c, pages) })
-                                4 -> {
-                                    val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
-                                    KashfTab(
-                                        missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
-                                        onGenerate = { term -> generateKashf(c, term) },
-                                        onOpenSettings = { screen = Screen.KASHF_SETTINGS },
-                                        locked = c.id !in activatedClasses,
-                                        onActivate = { activationBack = Screen.ADMIN_CLASS; screen = Screen.ACTIVATION }
-                                    )
+                                3 -> {
+                                    // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)
+                                    var printTab by rememberSaveable { mutableIntStateOf(0) }
+                                    androidx.compose.foundation.layout.Column(Modifier.fillMaxSize()) {
+                                        androidx.compose.foundation.layout.Row(
+                                            Modifier.fillMaxWidth().padding(top = 10.dp),
+                                            horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(8.dp)
+                                        ) {
+                                            androidx.compose.material3.FilterChip(selected = printTab == 0, onClick = { printTab = 0 },
+                                                label = { Text(stringResource(R.string.kashf_reports)) })
+                                            androidx.compose.material3.FilterChip(selected = printTab == 1, onClick = { printTab = 1 },
+                                                label = { Text(stringResource(R.string.tab_textbook)) })
+                                        }
+                                        if (printTab == 0) {
+                                            val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
+                                            KashfTab(
+                                                missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
+                                                onGenerate = { term -> generateKashf(c, term) },
+                                                onOpenSettings = { screen = Screen.KASHF_SETTINGS },
+                                                locked = c.id !in activatedClasses,
+                                                onActivate = { activationBack = Screen.ADMIN_CLASS; screen = Screen.ACTIVATION }
+                                            )
+                                        } else TextbookTab(onPrint = { pages -> printTextbook(c, pages) })
+                                    }
                                 }
                                 else -> {
                                     val at = ttSlots.filter { it.classId == c.id }.associateBy { it.day to it.period }
@@ -948,6 +983,9 @@ class MainActivity : AppCompatActivity() {
                             subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
                                 stringResource(R.string.tab_absence), stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
+                            icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
+                                androidx.compose.material.icons.Icons.Filled.CheckCircle, androidx.compose.material.icons.Icons.Filled.DateRange,
+                                androidx.compose.material.icons.Icons.Filled.Create),
                             selected = hubTab,
                             onSelect = { hubTab = it },
                             onBack = { screen = hubBack }
@@ -1198,24 +1236,53 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = Screen.ADMIN_CLASS }
                     )
 
-                    else -> HomeScreen(
-                        institution = inst,
-                        onRegisterInstitution = { screen = Screen.INSTITUTION },
-                        onOpenClasses = { screen = Screen.CLASSES },
-                        onOpenTeaching = { screen = Screen.TEACHING },
+                    else -> HomeYearsScreen(
+                        classes = allClasses,
+                        currentInstitutionYear = inst?.schoolYear,
+                        selectedYear = selectedYear,
+                        schoolNames = schoolNames,
+                        ownInstitutionId = inst?.id,
+                        activated = activatedClasses,
+                        genderCounts = homeGenderCounts,
+                        onSelectYear = { selectedYear = it },
+                        onOpenClass = { c ->
+                            classId = c.id; hubTab = 0; hubBack = Screen.HOME
+                            if (c.managed) { fromTeaching = false; screen = Screen.ADMIN_CLASS }
+                            else { fromTeaching = true; screen = Screen.TEACHER_HUB }
+                        },
+                        onDeleteClass = { deleteClass(it) },
+                        onCreateClass = { if (inst == null) screen = Screen.INSTITUTION else showCreateClass = true },
                         onOpenFile = openFile,
-                        onOpenRemarks = { screen = Screen.REMARKS },
-                        onOpenStats = { screen = Screen.STATS },
-                        onOpenActivation = { activationBack = Screen.HOME; screen = Screen.ACTIVATION },
-                        onOpenTimetable = { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE },
-                        onOpenMyTimetable = { screen = Screen.MY_TIMETABLE },
-                        onOpenMenu = { scope.launch { drawerState.open() } },
-                        onLanguageSelected = { tag ->
-                            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(tag))
-                        }
+                        onMenu = { scope.launch { drawerState.open() } }
                     )
                 }
 
+                }
+
+                if (showCreateClass && inst != null) {
+                    val year = selectedYear ?: inst.schoolYear
+                    com.elyedali.daftarustadh.ui.CreateClassDialog(
+                        institution = inst,
+                        schoolYear = year,
+                        existing = allClasses,
+                        onCreate = { level, number, onResult ->
+                            scope.launch {
+                                val rowId = classDao.insert(
+                                    ClassEntity(
+                                        id = UUID.randomUUID().toString(),
+                                        institutionId = inst.id,
+                                        schoolYear = year,
+                                        levelCode = level,
+                                        number = number,
+                                        createdAt = System.currentTimeMillis()
+                                    )
+                                )
+                                onResult(rowId != -1L)
+                                if (rowId != -1L) selectedYear = year
+                            }
+                        },
+                        onDismiss = { showCreateClass = false }
+                    )
                 }
 
                 askNameFor?.let { code ->
