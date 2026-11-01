@@ -596,4 +596,16 @@
     <string name="mode_switch_to_teacher">Passer au mode professeur</string>
     <string name="mode_switch_to_admin">Passer au mode administration</string>
     <string name="tp_name_hint">Votre nom figure dans le cachet sous « Signature du professeur » sur vos registres et documents : écrivez-le tel qu\'il doit apparaître.</string>
+    <string name="gm_hint">Absence au devoir ou à la composition : absent justifié = 10, absent non justifié = 0.</string>
+    <string name="gm_tip">💡 Pour noter l\'absence d\'un élève à un devoir ou une composition, touchez son nom (justifiée = 10, non justifiée = 0).</string>
+    <string name="gm_present">Note normale</string>
+    <string name="gm_justified">Absent justifié (10)</string>
+    <string name="gm_unjustified">Absent non justifié (0)</string>
+    <string name="gm_short_justified">AJ</string>
+    <string name="gm_short_unjustified">ANJ</string>
+    <string name="send_blocked_title">Registre incomplet : envoi impossible</string>
+    <string name="send_blocked_empty">Aucune note saisie dans cette matière.</string>
+    <string name="send_blocked_list">Le trimestre %1$d est incomplet : il manque les notes de %2$d élèves :\n%3$s\n\nComplétez-les (ou notez leur absence en touchant le nom), puis envoyez.</string>
+    <string name="kashf_blocked">Impossible de générer le bulletin avant que toutes les notes soient complètes.</string>
+    <string name="term_progress">Trimestre %1$d : %2$d sur %3$d complets</string>
 </resources>

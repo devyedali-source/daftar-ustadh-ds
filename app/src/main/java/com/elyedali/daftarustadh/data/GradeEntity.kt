@@ -18,8 +18,17 @@ data class GradeEntity(
     val subjectCode: String,
     val slot: String,       // T1 E1 T2 E2 T3 E3
     val value: Double,
-    val updatedAt: Long
+    val updatedAt: Long,
+    val mark: String? = null   // غياب: AJ = غائب بتبرير (10)، AN = غائب بدون تبرير (0)؛ null = نقطة عادية
 )
+
+/** الغياب عن اختبار أو امتحان: بتبرير يأخذ 10، وبدون تبرير يأخذ 0. */
+object GradeMark {
+    const val JUSTIFIED = "AJ"
+    const val UNJUSTIFIED = "AN"
+    fun valueOf(mark: String): Double = if (mark == JUSTIFIED) 10.0 else 0.0
+    fun isValid(mark: String?) = mark == JUSTIFIED || mark == UNJUSTIFIED
+}
 
 /** المواد التي يدرّسها الأستاذ في قسم، وطريقة حساب معدل الاختبارات في الفصل الثالث. */
 @Entity(tableName = "teacher_subject", primaryKeys = ["classId", "subjectCode"])

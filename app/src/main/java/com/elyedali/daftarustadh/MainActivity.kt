@@ -39,6 +39,7 @@ import com.elyedali.daftarustadh.data.RemarkScale
 import com.elyedali.daftarustadh.data.TeacherSubjectEntity
 import com.elyedali.daftarustadh.data.SubjectRecordEntity
 import com.elyedali.daftarustadh.data.GradeSlot
+import com.elyedali.daftarustadh.data.GradeMath
 import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -262,6 +263,12 @@ class MainActivity : AppCompatActivity() {
                     // الفصل الأول مجاني؛ كشف الفصل الثاني والسنوي يحتاجان تفعيل القسم
                     if (com.elyedali.daftarustadh.data.ClassActivation.needsActivation(term) && c.id !in activatedClasses) {
                         activationBack = screen; screen = Screen.ACTIVATION
+                        return
+                    }
+                    // لا كشف قبل اكتمال النتائج (حماية إضافية لما يعرضه التبويب)
+                    val subjectsNow = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                    if (students.isEmpty() || com.elyedali.daftarustadh.report.ReportCalc.missing(term, subjectsNow, students, classGrades).isNotEmpty()) {
+                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.kashf_blocked), android.widget.Toast.LENGTH_LONG).show()
                         return
                     }
                     scope.launch {
@@ -1454,10 +1461,10 @@ class MainActivity : AppCompatActivity() {
                             testsMode = (if (gradesFromAdmin) records.firstOrNull { it.subjectCode == code }?.testsMode else null)
                                 ?: mySubjects.firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE,
                             scale = remarkScale,
-                            onSetGrade = { studentId, slot, value ->
+                            onSetGrade = { studentId, slot, value, mark ->
                                 scope.launch {
                                     if (value == null) gradeDao.clear(studentId, code, slot)
-                                    else gradeDao.save(GradeEntity(studentId, c.id, code, slot, value, System.currentTimeMillis()))
+                                    else gradeDao.save(GradeEntity(studentId, c.id, code, slot, value, System.currentTimeMillis(), mark))
                                 }
                             },
                             onTestsMode = { mode ->
@@ -1669,19 +1676,33 @@ class MainActivity : AppCompatActivity() {
 
                 sendConfirm?.let { code ->
                     val c = currentClass
-                    val total = students.size * GradeSlot.ALL.size
-                    val filled = classGrades.count { it.subjectCode == code }
                     val n = teacherName
+                    // لا يُرسل السجل إلا مكتملًا: آخر فصل بدأ رصده يجب أن يكتمل لكل الطلاب (وكذا الفصول قبله)
+                    val byStudent = classGrades.filter { it.subjectCode == code }.groupBy { it.studentId }
+                        .mapValues { e -> e.value.associate { it.slot to it.value } }
+                    val started = (3 downTo 1).firstOrNull { t ->
+                        byStudent.values.any { it[GradeSlot.test(t)] != null || it[GradeSlot.exam(t)] != null }
+                    } ?: 0
+                    val incomplete = if (started == 0) students else students.filter { st ->
+                        (1..started).any { t -> !GradeMath.isComplete(t, byStudent[st.id].orEmpty()) }
+                    }
                     if (c == null || n.isNullOrBlank()) {
                         LaunchedEffect(code) { sendConfirm = null }
-                    } else if (filled >= total) {
+                    } else if (students.isNotEmpty() && incomplete.isEmpty()) {
                         LaunchedEffect(code) { sendConfirm = null; sendRecord(c, code, n) }
                     } else {
                         AlertDialog(
                             onDismissRequest = { sendConfirm = null },
-                            text = { Text(stringResource(R.string.send_record_incomplete, filled, total)) },
-                            confirmButton = { TextButton(onClick = { sendConfirm = null; sendRecord(c, code, n) }) { Text(stringResource(R.string.send)) } },
-                            dismissButton = { TextButton(onClick = { sendConfirm = null }) { Text(stringResource(R.string.cancel)) } }
+                            title = { Text(stringResource(R.string.send_blocked_title)) },
+                            text = {
+                                Text(
+                                    if (started == 0) stringResource(R.string.send_blocked_empty)
+                                    else stringResource(R.string.send_blocked_list, started, incomplete.size,
+                                        incomplete.sortedBy { it.rollNumber }.take(15).joinToString("، ") { "${it.rollNumber}. ${it.nameAr.ifBlank { it.nameFr }}" } +
+                                            if (incomplete.size > 15) " …" else "")
+                                )
+                            },
+                            confirmButton = { TextButton(onClick = { sendConfirm = null }) { Text(stringResource(R.string.ok)) } }
                         )
                     }
                 }

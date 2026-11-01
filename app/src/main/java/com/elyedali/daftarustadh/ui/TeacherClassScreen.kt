@@ -68,13 +68,22 @@ fun TeacherClassScreen(
             } else {
                 LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     items(mine, key = { it.code }) { sub ->
-                        val subjectGrades = grades.filter { it.subjectCode == sub.code }
-                        val filled = subjectGrades.size
-                        val total = studentCount * GradeSlot.ALL.size
+                        // مؤشر الاكتمال لكل فصل بنفس قاعدة الكشوف وإرسال السجل
+                        val byStudent = grades.filter { it.subjectCode == sub.code }.groupBy { it.studentId }
+                            .mapValues { e -> e.value.associate { it.slot to it.value } }
+                        val doneByTerm = (1..3).map { t -> byStudent.values.count { com.elyedali.daftarustadh.data.GradeMath.isComplete(t, it) } }
                         Card(Modifier.fillMaxWidth().clickable { onOpenSubject(sub.code) }) {
-                            Column(Modifier.padding(14.dp)) {
+                            Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
                                 Text(if (isFr) sub.nameFr else sub.nameAr, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-                                Text(stringResource(R.string.subject_progress, sub.coefficient, filled, total), style = MaterialTheme.typography.bodySmall)
+                                Text(stringResource(R.string.coefficient) + " ${sub.coefficient}", style = MaterialTheme.typography.bodySmall)
+                                doneByTerm.forEachIndexed { i, n ->
+                                    val ok = studentCount > 0 && n >= studentCount
+                                    Text(
+                                        stringResource(R.string.term_progress, i + 1, n, studentCount) + if (ok) "  ✓" else "",
+                                        style = MaterialTheme.typography.bodySmall, fontWeight = if (ok) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (ok) androidx.compose.ui.graphics.Color(0xFF2E7D32) else MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                }
                             }
                         }
                     }

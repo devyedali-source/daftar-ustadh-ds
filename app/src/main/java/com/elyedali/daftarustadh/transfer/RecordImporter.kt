@@ -61,7 +61,7 @@ class RecordImporter(private val db: DaftarDatabase) {
         val now = System.currentTimeMillis()
         file.students.filter { it.id in ids }.forEach { s ->
             gradeDao.clearStudentSubject(c.id, file.subjectCode, s.id)
-            s.grades.forEach { (slot, v) -> gradeDao.save(GradeEntity(s.id, c.id, file.subjectCode, slot, v, now)) }
+            s.grades.forEach { (slot, v) -> gradeDao.save(GradeEntity(s.id, c.id, file.subjectCode, slot, v, now, s.marks[slot])) }
         }
         gradeDao.saveRecord(
             SubjectRecordEntity(

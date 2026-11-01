@@ -1,5 +1,6 @@
 package com.elyedali.daftarustadh.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -41,6 +42,7 @@ import com.elyedali.daftarustadh.R
 import com.elyedali.daftarustadh.data.ClassEntity
 import com.elyedali.daftarustadh.data.CurriculumSubject
 import com.elyedali.daftarustadh.data.GradeEntity
+import com.elyedali.daftarustadh.data.GradeMark
 import com.elyedali.daftarustadh.data.GradeMath
 import com.elyedali.daftarustadh.data.GradeSlot
 import com.elyedali.daftarustadh.data.RemarkLevel
@@ -52,6 +54,7 @@ import com.elyedali.daftarustadh.data.TestsMode
  * إدراج نتائج مادة في قسم: لكل فصل خانتا الاختبار والامتحان، ثم معدل المادة وملاحظته.
  * كل خانة تُحفظ فور كتابة نقطة صحيحة (0 إلى 20)، والخانة الفارغة تُمسح.
  */
+@OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
 @Composable
 fun GradesScreen(
     schoolClass: ClassEntity,
@@ -60,7 +63,8 @@ fun GradesScreen(
     grades: List<GradeEntity>,
     testsMode: String,
     scale: List<RemarkLevel>,
-    onSetGrade: (studentId: String, slot: String, value: Double?) -> Unit,
+    /** mark: علامة الغياب (GradeMark) أو null لنقطة عادية. */
+    onSetGrade: (studentId: String, slot: String, value: Double?, mark: String?) -> Unit,
     onTestsMode: (String) -> Unit,
     /** true = سجل فارغ بـ70 خانة بلا أسماء؛ false = سجل بأسماء طلاب القسم وخانات فارغة. */
     onPrintRecord: (blank: Boolean) -> Unit,
@@ -73,10 +77,12 @@ fun GradesScreen(
     val byStudent: Map<String, Map<String, Double>> = remember(grades) {
         grades.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.value } }
     }
-    val complete = students.count { s ->
-        val g = byStudent[s.id].orEmpty()
-        g[GradeSlot.test(term)] != null && g[GradeSlot.exam(term)] != null
+    val marksBy: Map<String, Map<String, String>> = remember(grades) {
+        grades.filter { it.mark != null }.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.mark!! } }
     }
+    // نفس قاعدة الاكتمال المعتمدة في الكشوف وفي إرسال السجل
+    val complete = students.count { s -> GradeMath.isComplete(term, byStudent[s.id].orEmpty()) }
+    var absenceFor by remember { mutableStateOf<StudentEntity?>(null) }
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(horizontal = 12.dp, vertical = 8.dp)) {
@@ -105,6 +111,7 @@ fun GradesScreen(
                     Tab(selected = term == i + 1, onClick = { term = i + 1 }, text = { Text(stringResource(res)) })
                 }
             }
+            Text(stringResource(R.string.gm_tip), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.tertiary)
             Text(
                 stringResource(R.string.grades_complete, complete, students.size),
                 style = MaterialTheme.typography.bodySmall,
@@ -145,20 +152,50 @@ fun GradesScreen(
                     val avg = GradeMath.subjectAverage(term, g, testsMode)
                     val remark = RemarkScale.remarkFor(avg, scale)
                     Row(Modifier.fillMaxWidth().padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Column(Modifier.weight(1f)) {
+                        // الضغط على اسم الطالب: تسجيل غيابه عن الاختبار أو الامتحان
+                        Column(Modifier.weight(1f).clickable { absenceFor = s }) {
                             Text("${s.rollNumber}. " + (if (isFr && s.nameFr.isNotBlank()) s.nameFr else s.nameAr.ifBlank { s.nameFr }), maxLines = 2)
                             if (remark != null) {
                                 Text(if (isFr) remark.textFr else remark.textAr, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.primary)
                             }
                         }
-                        GradeField(s.id, GradeSlot.test(term), g[GradeSlot.test(term)], onSetGrade, Modifier.width(68.dp))
-                        GradeField(s.id, GradeSlot.exam(term), g[GradeSlot.exam(term)], onSetGrade, Modifier.width(68.dp))
+                        val mk = marksBy[s.id].orEmpty()
+                        GradeField(s.id, GradeSlot.test(term), g[GradeSlot.test(term)], mk[GradeSlot.test(term)], onSetGrade, Modifier.width(68.dp))
+                        GradeField(s.id, GradeSlot.exam(term), g[GradeSlot.exam(term)], mk[GradeSlot.exam(term)], onSetGrade, Modifier.width(68.dp))
                         Text(GradeMath.format(avg), Modifier.width(48.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold)
                     }
                     HorizontalDivider()
                 }
             }
         }
+    }
+    absenceFor?.let { st ->
+        val mk = marksBy[st.id].orEmpty()
+        androidx.compose.material3.AlertDialog(
+            onDismissRequest = { absenceFor = null },
+            title = { Text("${st.rollNumber}. " + st.nameAr.ifBlank { st.nameFr }) },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Text(stringResource(R.string.gm_hint), style = MaterialTheme.typography.bodySmall)
+                    listOf(GradeSlot.test(term) to R.string.test_short, GradeSlot.exam(term) to R.string.exam_short).forEach { (slot, label) ->
+                        val cur = mk[slot]
+                        Text(stringResource(label), fontWeight = FontWeight.Bold)
+                        androidx.compose.foundation.layout.FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                            FilterChip(selected = cur == null, onClick = {
+                                if (cur != null) onSetGrade(st.id, slot, null, null)
+                            }, label = { Text(stringResource(R.string.gm_present)) })
+                            FilterChip(selected = cur == GradeMark.JUSTIFIED, onClick = {
+                                onSetGrade(st.id, slot, GradeMark.valueOf(GradeMark.JUSTIFIED), GradeMark.JUSTIFIED)
+                            }, label = { Text(stringResource(R.string.gm_justified)) })
+                            FilterChip(selected = cur == GradeMark.UNJUSTIFIED, onClick = {
+                                onSetGrade(st.id, slot, GradeMark.valueOf(GradeMark.UNJUSTIFIED), GradeMark.UNJUSTIFIED)
+                            }, label = { Text(stringResource(R.string.gm_unjustified)) })
+                        }
+                    }
+                }
+            },
+            confirmButton = { TextButton(onClick = { absenceFor = null }) { Text(stringResource(R.string.ok)) } }
+        )
     }
 }
 
@@ -167,27 +204,34 @@ private fun GradeField(
     studentId: String,
     slot: String,
     value: Double?,
-    onSetGrade: (String, String, Double?) -> Unit,
+    mark: String?,
+    onSetGrade: (String, String, Double?, String?) -> Unit,
     modifier: Modifier
 ) {
+    // الغياب يُعرض «غ.م» (بتبرير = 10) أو «غ» (بدون تبرير = 0)
+    val markLabel = when (mark) {
+        GradeMark.JUSTIFIED -> stringResource(R.string.gm_short_justified)
+        GradeMark.UNJUSTIFIED -> stringResource(R.string.gm_short_unjustified)
+        else -> null
+    }
     // الخانة تعرض دائمًا النقطة المحفوظة؛ ولا تُعرض الكتابة الجارية إلا أثناء الكتابة فيها
     var focused by remember(studentId, slot) { mutableStateOf(false) }
     var text by remember(studentId, slot) { mutableStateOf(GradeMath.format(value)) }
-    val shown = if (focused) text else GradeMath.format(value)
-    val invalid = shown.isNotBlank() && GradeMath.parse(shown) == null
+    val shown = if (focused) text else markLabel ?: GradeMath.format(value)
+    val invalid = focused && text.isNotBlank() && GradeMath.parse(text) == null
     OutlinedTextField(
         value = shown,
         onValueChange = { v ->
             text = v.take(5)
-            if (text.isBlank()) onSetGrade(studentId, slot, null)
-            else GradeMath.parse(text)?.let { onSetGrade(studentId, slot, it) }
+            if (text.isBlank()) onSetGrade(studentId, slot, null, null)
+            else GradeMath.parse(text)?.let { onSetGrade(studentId, slot, it, null) }
         },
         singleLine = true,
         isError = invalid,
         textStyle = MaterialTheme.typography.bodyMedium.copy(textAlign = TextAlign.Center),
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal, imeAction = ImeAction.Next),
         modifier = modifier.padding(horizontal = 2.dp).onFocusChanged { f ->
-            if (f.isFocused && !focused) text = GradeMath.format(value)
+            if (f.isFocused && !focused) text = if (mark != null) "" else GradeMath.format(value)
             focused = f.isFocused
         }
     )

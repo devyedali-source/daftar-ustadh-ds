@@ -596,4 +596,16 @@
     <string name="mode_switch_to_teacher">التبديل إلى وضع الأستاذ</string>
     <string name="mode_switch_to_admin">التبديل إلى وضع الإدارة</string>
     <string name="tp_name_hint">يُكتب اسمك في الطابع تحت «توقيع الأستاذ» في سجلات النتائج والوثائق التي تسحبها، فاكتبه كما تريد أن يظهر.</string>
+    <string name="gm_hint">سجّل غياب الطالب عن الاختبار أو الامتحان: الغائب بتبرير يأخذ 10، والغائب بدون تبرير يأخذ 0.</string>
+    <string name="gm_tip">💡 لتسجيل غياب طالب عن اختبار أو امتحان اضغط على اسمه (بتبرير = 10، بدون تبرير = 0).</string>
+    <string name="gm_present">نقطة عادية</string>
+    <string name="gm_justified">غائب بتبرير (10)</string>
+    <string name="gm_unjustified">غائب بدون تبرير (0)</string>
+    <string name="gm_short_justified">غ.م</string>
+    <string name="gm_short_unjustified">غ</string>
+    <string name="send_blocked_title">لا يمكن إرسال السجل قبل اكتمال النتائج</string>
+    <string name="send_blocked_empty">لم تُرصد أي نتيجة في هذه المادة بعد.</string>
+    <string name="send_blocked_list">الفصل %1$d غير مكتمل: تنقص نتائج %2$d طالبًا:\n%3$s\n\nأكمل خاناتهم (أو سجّل غيابهم بالضغط على الاسم) ثم أرسل.</string>
+    <string name="kashf_blocked">لا يمكن سحب الكشف قبل اكتمال نتائج كل المواد لكل الطلاب.</string>
+    <string name="term_progress">الفصل %1$d: مكتمل %2$d من %3$d</string>
 </resources>

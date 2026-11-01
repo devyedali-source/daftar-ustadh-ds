@@ -11,7 +11,10 @@ import java.util.zip.GZIPInputStream
 import java.util.zip.GZIPOutputStream
 
 /** طالب كما في سجل الأستاذ: الرقم الخفي، ورقم النداء والاسم لعرض الفروق إن وُجدت. */
-data class RecordStudent(val id: String, val roll: Int, val name: String, val grades: Map<String, Double>)
+data class RecordStudent(
+    val id: String, val roll: Int, val name: String, val grades: Map<String, Double>,
+    val marks: Map<String, String> = emptyMap()   // علامات الغياب لكل خانة (AJ / AN)
+)
 
 /**
  * سجل نتائج مادة يرسله الأستاذ إلى المكلّف بالقسم (ملف ‎.dsq).
@@ -91,7 +94,9 @@ object TransferCodec {
                 r.students.forEach { s ->
                     val g = JSONObject()
                     s.grades.forEach { (slot, v) -> g.put(slot, v) }
-                    put(JSONObject().put("id", s.id).put("roll", s.roll).put("name", s.name).put("grades", g))
+                    val mk = JSONObject()
+                    s.marks.forEach { (slot, m) -> mk.put(slot, m) }
+                    put(JSONObject().put("id", s.id).put("roll", s.roll).put("name", s.name).put("grades", g).put("marks", mk))
                 }
             })
     )
@@ -107,7 +112,10 @@ object TransferCodec {
                 val g = s.getJSONObject("grades")
                 val grades = GradeSlot.ALL.filter { g.has(it) }.associateWith { g.getDouble(it) }
                     .filterValues { it in 0.0..20.0 }
-                RecordStudent(s.getString("id"), s.optInt("roll"), s.optString("name"), grades)
+                val mk = s.optJSONObject("marks")
+                val marks = if (mk == null) emptyMap() else GradeSlot.ALL.filter { mk.has(it) && it in grades }
+                    .associateWith { mk.getString(it) }.filterValues { com.elyedali.daftarustadh.data.GradeMark.isValid(it) }
+                RecordStudent(s.getString("id"), s.optInt("roll"), s.optString("name"), grades, marks)
             }
             return RecordFile(
                 institutionId = i.getString("id"),
@@ -133,7 +141,9 @@ object TransferCodec {
     fun buildRecordStudents(students: List<StudentEntity>, grades: List<GradeEntity>): List<RecordStudent> {
         val by = grades.groupBy { it.studentId }
         return students.sortedBy { it.rollNumber }.map { s ->
-            RecordStudent(s.id, s.rollNumber, s.nameAr.ifBlank { s.nameFr }, by[s.id].orEmpty().associate { it.slot to it.value })
+            val mine = by[s.id].orEmpty()
+            RecordStudent(s.id, s.rollNumber, s.nameAr.ifBlank { s.nameFr }, mine.associate { it.slot to it.value },
+                mine.mapNotNull { g -> g.mark?.let { g.slot to it } }.toMap())
         }
     }
 

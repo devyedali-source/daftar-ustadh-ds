@@ -18,7 +18,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         GradeEntity::class, TeacherSubjectEntity::class, SubjectRecordEntity::class,
         DocumentEntity::class, AbsenceSessionEntity::class, AbsenceEntity::class,
         TimetableAssignmentEntity::class, TimetableSlotEntity::class, TeacherTimetableEntity::class],
-    version = 11,
+    version = 12,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -154,6 +154,13 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 11 → 12: علامة الغياب في النقاط (غائب بتبرير / بدون تبرير). */
+        private val MIGRATION_11_12 = object : Migration(11, 12) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `grade` ADD COLUMN `mark` TEXT")
+            }
+        }
+
         /** 10 → 11: الجدول الزمني (تعيين الأساتذة، حصص الأقسام، وجدول الأستاذ المستلَم). */
         private val MIGRATION_10_11 = object : Migration(10, 11) {
             override fun migrate(db: SupportSQLiteDatabase) {
@@ -185,7 +192,7 @@ abstract class DaftarDatabase : RoomDatabase() {
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12).build().also { instance = it }
             }
     }
 }
