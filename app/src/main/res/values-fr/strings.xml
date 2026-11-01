@@ -494,4 +494,9 @@
     <string name="ex_choose_wilaya_first">Choisissez d\'abord la wilaya pour voir ses moughataas</string>
     <string name="max_subjects">%1$d sur %2$d — %2$d matières au maximum</string>
     <string name="ex_err_max_specialties">5 spécialités au maximum</string>
+    <string name="mode_admin">Mode administration</string>
+    <string name="mode_teacher">Mode professeur</string>
+    <string name="mode_choose">Choisissez le mode de travail 👇</string>
+    <string name="mode_admin_desc">Classes, élèves, résultats, bulletins, absences, cahier de textes et emploi du temps</string>
+    <string name="mode_teacher_desc">Vos classes : saisie des notes, absences et votre emploi du temps</string>
 </resources>

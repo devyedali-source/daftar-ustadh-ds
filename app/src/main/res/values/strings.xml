@@ -494,4 +494,9 @@
     <string name="ex_choose_wilaya_first">اختر الولاية أولًا لتظهر مقاطعاتها</string>
     <string name="max_subjects">%1$d من %2$d — الحد الأقصى %2$d مواد</string>
     <string name="ex_err_max_specialties">لا يمكن اختيار أكثر من 5 تخصصات</string>
+    <string name="mode_admin">وضع الإدارة</string>
+    <string name="mode_teacher">وضع الأستاذ</string>
+    <string name="mode_choose">اختر وضع العمل 👇</string>
+    <string name="mode_admin_desc">إنشاء الأقسام، الطلاب، النتائج، الكشوف، الغياب، دفتر النصوص والجدول الزمني</string>
+    <string name="mode_teacher_desc">أقسامك التي تدرّسها: رصد الدرجات والغياب وجدولك الزمني</string>
 </resources>

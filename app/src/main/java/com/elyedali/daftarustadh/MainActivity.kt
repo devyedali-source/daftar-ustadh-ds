@@ -161,6 +161,7 @@ class MainActivity : AppCompatActivity() {
                 val allClasses by remember { classDao.observeAll() }.collectAsState(initial = emptyList())
                 val homeGenderCounts by remember { studentDao.observeGenderCounts() }.collectAsState(initial = emptyList())
                 var selectedYear by rememberSaveable { mutableStateOf<String?>(null) }
+                var homeMode by rememberSaveable { mutableStateOf<String?>(null) }  // admin / teacher
                 var showCreateClass by remember { mutableStateOf(false) }
                 val currentClassFlow = remember(classId) { classId?.let { classDao.observeById(it) } ?: flowOf(null) }
                 val currentClass: ClassEntity? by currentClassFlow.collectAsState(initial = null)
@@ -640,7 +641,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 when (screen) {
-                    Screen.HOME -> if (selectedYear != null) BackHandler { selectedYear = null }
+                    Screen.HOME -> if (homeMode != null) BackHandler { homeMode = null } else if (selectedYear != null) BackHandler { selectedYear = null }
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
@@ -878,7 +879,7 @@ class MainActivity : AppCompatActivity() {
                         val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
                         ClassHub(
                             title = c.name,
-                            subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
+                            subtitles = listOfNotNull(stringResource(R.string.mode_admin), c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
                                 stringResource(R.string.tab_absence), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
                             icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
@@ -986,7 +987,7 @@ class MainActivity : AppCompatActivity() {
                         val c = currentClass!!
                         ClassHub(
                             title = c.name,
-                            subtitles = listOfNotNull(schoolNames[c.institutionId], c.schoolYear),
+                            subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
                                 stringResource(R.string.tab_absence), stringResource(R.string.tab_teacher_timetable), stringResource(R.string.tab_editor)),
                             icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
@@ -1246,14 +1247,16 @@ class MainActivity : AppCompatActivity() {
                         classes = allClasses,
                         currentInstitutionYear = inst?.schoolYear,
                         selectedYear = selectedYear,
+                        mode = homeMode,
+                        onSelectMode = { homeMode = it },
                         schoolNames = schoolNames,
                         ownInstitutionId = inst?.id,
                         activated = activatedClasses,
                         genderCounts = homeGenderCounts,
-                        onSelectYear = { selectedYear = it },
+                        onSelectYear = { selectedYear = it; homeMode = null },
                         onOpenClass = { c ->
                             classId = c.id; hubTab = 0; hubBack = Screen.HOME
-                            if (c.managed) { fromTeaching = false; screen = Screen.ADMIN_CLASS }
+                            if (homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN) { fromTeaching = false; screen = Screen.ADMIN_CLASS }
                             else { fromTeaching = true; screen = Screen.TEACHER_HUB }
                         },
                         onDeleteClass = { deleteClass(it) },
@@ -1284,7 +1287,7 @@ class MainActivity : AppCompatActivity() {
                                     )
                                 )
                                 onResult(rowId != -1L)
-                                if (rowId != -1L) selectedYear = year
+                                if (rowId != -1L) { selectedYear = year; homeMode = com.elyedali.daftarustadh.ui.MODE_ADMIN }
                             }
                         },
                         onDismiss = { showCreateClass = false }

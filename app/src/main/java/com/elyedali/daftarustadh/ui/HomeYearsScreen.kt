@@ -92,6 +92,8 @@ fun HomeYearsScreen(
     classes: List<ClassEntity>,            // أقسام الإدارة وأقسام الأستاذ من كل السنوات
     currentInstitutionYear: String?,
     selectedYear: String?,
+    mode: String?,                         // null = لم يُختر بعد، "admin" = وضع الإدارة، "teacher" = وضع الأستاذ
+    onSelectMode: (String?) -> Unit,
     schoolNames: Map<String, String>,
     ownInstitutionId: String?,
     activated: Set<String>,
@@ -112,11 +114,23 @@ fun HomeYearsScreen(
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Box(Modifier.fillMaxSize()) {
             Column(Modifier.fillMaxSize()) {
+                val modeLabel = when (mode) {
+                    MODE_ADMIN -> stringResource(R.string.mode_admin)
+                    MODE_TEACHER -> stringResource(R.string.mode_teacher)
+                    else -> null
+                }
                 AppTopBar(
-                    title = if (selectedYear == null) stringResource(R.string.home_choose_year_title)
-                    else stringResource(R.string.home_year_title, selectedYear),
+                    title = when {
+                        selectedYear == null -> stringResource(R.string.home_choose_year_title)
+                        modeLabel == null -> stringResource(R.string.home_year_title, selectedYear)
+                        else -> "$modeLabel — ⁦$selectedYear⁩"
+                    },
                     onMenu = onMenu,
-                    onBack = if (selectedYear != null) ({ onSelectYear(null) }) else null
+                    onBack = when {
+                        selectedYear == null -> null
+                        mode != null -> ({ onSelectMode(null) })
+                        else -> ({ onSelectYear(null) })
+                    }
                 )
                 if (selectedYear == null) {
                     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp, 16.dp, 16.dp, 110.dp),
@@ -160,8 +174,26 @@ fun HomeYearsScreen(
                             }
                         }
                     }
+                } else if (mode == null) {
+                    // اختيار وضع العمل: الإدارة أو الأستاذ
+                    val inYear = classes.filter { it.schoolYear == selectedYear }
+                    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp),
+                        verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                        item {
+                            Text(stringResource(R.string.mode_choose), fontWeight = FontWeight.Bold, fontSize = 15.sp,
+                                color = MaterialTheme.colorScheme.primary)
+                        }
+                        item {
+                            ModeCard("🏫", stringResource(R.string.mode_admin), stringResource(R.string.mode_admin_desc),
+                                inYear.count { it.managed }, Color(0xFFE3F2FD), Color(0xFF1565C0)) { onSelectMode(MODE_ADMIN) }
+                        }
+                        item {
+                            ModeCard("👨‍🏫", stringResource(R.string.mode_teacher), stringResource(R.string.mode_teacher_desc),
+                                inYear.count { it.teaching }, Color(0xFFF3E5F5), Color(0xFF6A1B9A)) { onSelectMode(MODE_TEACHER) }
+                        }
+                    }
                 } else {
-                    val yearClasses = classes.filter { it.schoolYear == selectedYear }
+                    val yearClasses = classes.filter { it.schoolYear == selectedYear && (if (mode == MODE_ADMIN) it.managed else it.teaching) }
                         .sortedWith(compareBy({ it.levelCode }, { it.number }))
                     val ids = yearClasses.map { it.id }.toSet()
                     val counts = genderCounts.filter { it.classId in ids }
@@ -203,9 +235,7 @@ fun HomeYearsScreen(
                                     Column(Modifier.weight(1f).padding(horizontal = 12.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
                                         Text(c.name, fontWeight = FontWeight.Black, fontSize = 17.sp)
                                         Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                                            if (c.managed) Badge(stringResource(R.string.badge_admin), Color(0xFFE3F2FD), Color(0xFF1565C0))
-                                            if (c.teaching) Badge(stringResource(R.string.badge_teacher), Color(0xFFF3E5F5), Color(0xFF6A1B9A))
-                                            if (c.managed) {
+                                            if (mode == MODE_ADMIN) {
                                                 val on = c.id in activated
                                                 Badge(
                                                     stringResource(if (on) R.string.act_status_active else R.string.act_status_inactive),
@@ -216,7 +246,7 @@ fun HomeYearsScreen(
                                         }
                                         Text(
                                             listOfNotNull(levelDescription(c.levelCode),
-                                                schoolNames[c.institutionId]?.takeIf { c.institutionId != ownInstitutionId || !c.managed },
+                                                schoolNames[c.institutionId]?.takeIf { mode == MODE_TEACHER },
                                                 stringResource(R.string.home_students_n, students.toString())).joinToString("  |  "),
                                             fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 2
                                         )
@@ -230,18 +260,18 @@ fun HomeYearsScreen(
                     }
                 }
             }
-            // الأزرار العائمة: إنشاء قسم (الإدارة) وفتح ملف قسم (الأستاذ)
-            Column(
+            // الأزرار العائمة: إنشاء قسم في وضع الإدارة، وفتح ملف قسم في وضع الأستاذ
+            if (selectedYear == null || mode != null) Column(
                 Modifier.align(Alignment.BottomEnd).padding(16.dp),
                 horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(10.dp)
             ) {
-                SmallFloatingActionButton(onClick = onOpenFile, containerColor = MaterialTheme.colorScheme.secondaryContainer) {
+                if (mode != MODE_ADMIN) SmallFloatingActionButton(onClick = onOpenFile, containerColor = MaterialTheme.colorScheme.secondaryContainer) {
                     Row(Modifier.padding(horizontal = 12.dp), verticalAlignment = Alignment.CenterVertically) {
                         Icon(Icons.Filled.Share, contentDescription = null, modifier = Modifier.size(18.dp))
                         Text("  " + stringResource(R.string.open_class_file), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                     }
                 }
-                ExtendedFloatingActionButton(
+                if (mode != MODE_TEACHER) ExtendedFloatingActionButton(
                     onClick = onCreateClass,
                     icon = { Icon(Icons.Filled.Add, contentDescription = null) },
                     text = { Text(stringResource(R.string.create_class), fontWeight = FontWeight.Bold) },
@@ -257,6 +287,28 @@ fun HomeYearsScreen(
             onConfirm = { onDeleteClass(c); toDelete = null },
             onDismiss = { toDelete = null }
         )
+    }
+}
+
+const val MODE_ADMIN = "admin"
+const val MODE_TEACHER = "teacher"
+
+@Composable
+private fun ModeCard(icon: String, title: String, desc: String, count: Int, bg: Color, fg: Color, onClick: () -> Unit) {
+    Card(
+        Modifier.fillMaxWidth().clickable(onClick = onClick), shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        elevation = CardDefaults.cardElevation(3.dp)
+    ) {
+        Row(Modifier.padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
+            Box(Modifier.size(58.dp).background(bg, CircleShape), contentAlignment = Alignment.Center) { Text(icon, fontSize = 28.sp) }
+            Column(Modifier.weight(1f).padding(horizontal = 14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text(title, fontWeight = FontWeight.Black, fontSize = 18.sp, color = fg)
+                Text(desc, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text(stringResource(R.string.home_year_classes, count.toString()), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+            }
+            Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = null, tint = fg)
+        }
     }
 }
 
