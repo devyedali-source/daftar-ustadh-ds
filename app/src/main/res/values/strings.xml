@@ -622,4 +622,5 @@
     <string name="steps_teacher_4">عندما يكتمل الفصل لكل الطلاب (✓ تحت المادة) اضغط «إرسال السجل» وأرسله للإدارة عبر واتساب.</string>
     <string name="steps_teacher_5">كرّر ذلك بعد كل فصل: السجل الجديد يحلّ محلّ السابق عند الإدارة.</string>
     <string name="record_other_teacher">⚠️ هذه المادة مسندة في الجدول الزمني إلى الأستاذ: %1$s. تأكد قبل الرفع.</string>
+    <string name="doc_pick_subject">اختر مادة هذا الاختبار</string>
 </resources>

@@ -14,8 +14,9 @@ import com.elyedali.daftarustadh.pdf.PdfCommon.W
 import java.io.ByteArrayOutputStream
 
 /**
- * وثيقة الأستاذ (امتحان، طلب، درس...): الرأسية الرسمية، سطر المؤسسة والقسم، العنوان، النص على عدة صفحات إن طال،
- * وفي آخرها «توقيع الأستاذ» وطابعه باسمه.
+ * وثيقة الأستاذ (اختبار، طلب، درس...): بلا رأسية رسمية ولا شعار؛
+ * في الأعلى معلومات المؤسسة والسنة الدراسية والقسم (والمادة في الاختبار)، ثم العنوان والنص على عدة صفحات إن طال،
+ * و«توقيع الأستاذ» وطابعه في أسفل الصفحة الأخيرة.
  */
 object DocumentPdf {
     private val INK = 0xFF1F3A93.toInt()
@@ -23,10 +24,11 @@ object DocumentPdf {
     data class Info(
         val infoLineAr: String,
         val infoLineFr: String,
+        val subjectLine: String?,      // «المادة: ...» للاختبار، وإلا null
         val title: String,
         val body: String,
         val stampLines: List<String>,
-        val seal: Bitmap?
+        val seal: Bitmap? = null       // لم يعد مستعملًا: الوثيقة بلا شعار
     )
 
     fun build(i: Info): ByteArray {
@@ -38,52 +40,51 @@ object DocumentPdf {
             .setIncludePad(false)
             .build()
         val doc = PdfDocument()
-        val firstTop = M + PdfCommon.HEADER + 70f
+        val headH = 16f + 16f + (if (i.subjectLine != null) 18f else 0f) + 8f
+        val firstTop = M + headH + 30f
         val otherTop = M + 10f
-        val bottomLimit = H - M - 20f
+        val pageBottom = H - M - 20f
+        // الطابع في أسفل الصفحة الأخيرة: لا يتجاوز النص هذا الحد في الصفحة الأخيرة
+        val stampH = 22f + 16f * i.stampLines.size + 14f
+        val stampTop = pageBottom - stampH
         var line = 0
         var pageNo = 0
-        while (line < body.lineCount || pageNo == 0) {
+        while (true) {
             pageNo++
             val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), pageNo).create())
             val c = page.canvas
             val top = if (pageNo == 1) firstTop else otherTop
             if (pageNo == 1) {
-                PdfCommon.drawOfficialHeader(c, i.seal)
-                var y = M + PdfCommon.HEADER
+                var y = M
                 PdfText.draw(c, i.infoLineAr, M, y, W - 2 * M, 16f, 9.5f, maxLines = 1); y += 16f
-                PdfText.draw(c, i.infoLineFr, M, y, W - 2 * M, 16f, 9f, maxLines = 1); y += 20f
-                PdfText.draw(c, i.title, M, y, W - 2 * M, 24f, 14f, bold = true, maxLines = 2)
+                PdfText.draw(c, i.infoLineFr, M, y, W - 2 * M, 16f, 9f, maxLines = 1); y += 16f
+                if (i.subjectLine != null) { PdfText.draw(c, i.subjectLine, M, y, W - 2 * M, 18f, 10.5f, bold = true, maxLines = 1); y += 18f }
+                c.drawLine(M, y + 4f, W - M, y + 4f, Paint().apply { color = 0xFF000000.toInt(); strokeWidth = 0.6f })
+                PdfText.draw(c, i.title, M, y + 8f, W - 2 * M, 24f, 14f, bold = true, maxLines = 2)
             }
-            // الأسطر التي تتسع في هذه الصفحة
             val startLine = line
-            val startY = body.getLineTop(startLine)
-            while (line < body.lineCount && top + (body.getLineBottom(line) - startY) <= bottomLimit) line++
+            val startY = if (startLine < body.lineCount) body.getLineTop(startLine) else 0
+            while (line < body.lineCount && top + (body.getLineBottom(line) - startY) <= pageBottom) line++
             if (line == startLine && line < body.lineCount) line++   // سطر أطول من الصفحة: يُرسم ولو قُصّ
+            // إن انتهى النص هنا لكن نزل إلى مكان الطابع: نعيد الأسطر الأخيرة إلى صفحة جديدة
+            if (line >= body.lineCount && line > startLine) {
+                while (line > startLine + 1 && top + (body.getLineBottom(line - 1) - startY) > stampTop) line--
+            }
             if (line > startLine) {
                 c.save()
-                c.clipRect(M, top, W - M, bottomLimit)
+                c.clipRect(M, top, W - M, pageBottom)
                 c.translate(M, top - startY)
-                body.draw(c)
+                StaticLayout.Builder.obtain(i.body, body.getLineStart(startLine), body.getLineEnd(line - 1), paint, width)
+                    .setAlignment(Layout.Alignment.ALIGN_NORMAL).setLineSpacing(3f, 1f).setIncludePad(false).build()
+                    .let { part -> c.translate(0f, startY.toFloat()); part.draw(c) }
                 c.restore()
             }
             val usedBottom = top + (if (line > startLine) body.getLineBottom(line - 1) - startY else 0).toFloat()
-            val isLast = line >= body.lineCount
-            if (isLast && usedBottom + 110f <= bottomLimit) {
-                drawStamp(c, usedBottom + 16f, i)
-                PdfText.draw(c, "$pageNo", M, H - M + 4f, W - 2 * M, 14f, 8f)
-                doc.finishPage(page)
-                break
-            }
+            val isLast = line >= body.lineCount && usedBottom <= stampTop
+            if (isLast) drawStamp(c, stampTop, i)
             PdfText.draw(c, "$pageNo", M, H - M + 4f, W - 2 * M, 14f, 8f)
             doc.finishPage(page)
-            if (isLast) {
-                pageNo++
-                val p2 = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), pageNo).create())
-                drawStamp(p2.canvas, M + 20f, i)
-                doc.finishPage(p2)
-                break
-            }
+            if (isLast) break
         }
         val out = ByteArrayOutputStream()
         doc.writeTo(out); doc.close()

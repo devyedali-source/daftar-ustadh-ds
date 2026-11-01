@@ -301,25 +301,37 @@ class MainActivity : AppCompatActivity() {
                 var askNameBlank by remember { mutableStateOf(false) }
                 var askNameDoc by remember { mutableStateOf<DocumentEntity?>(null) }
 
-                /** سحب وثيقة الأستاذ PDF برأسية المؤسسة وطابعه. */
-                fun exportDocument(d: DocumentEntity, name: String) {
+                var docSubjectChoice by remember { mutableStateOf<Pair<DocumentEntity, String>?>(null) }
+
+                /**
+                 * سحب وثيقة الأستاذ PDF: بلا رأسية ولا شعار، فقط المؤسسة والسنة والقسم (والمادة في الاختبار)،
+                 * والتوقيع وطابعه أسفل الصفحة. إن كان للأستاذ عدة مواد في القسم يختار مادة الاختبار أولًا.
+                 */
+                fun exportDocument(d: DocumentEntity, name: String, examSubject: String? = null) {
+                    val mineCodes = mySubjects.map { it.subjectCode }
+                    if (d.type == com.elyedali.daftarustadh.data.DocType.EXAM && examSubject == null && mineCodes.size > 1) {
+                        docSubjectChoice = d to name
+                        return
+                    }
                     scope.launch {
                         val c = classDao.getById(d.classId) ?: return@launch
                         val owner = institutionDao.getById(c.institutionId) ?: return@launch
-                        val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
-                            .filter { s -> mySubjects.any { it.subjectCode == s.code } }
+                        val all = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                        val subjects = all.filter { s -> s.code in mineCodes }
+                        val examSub = if (d.type == com.elyedali.daftarustadh.data.DocType.EXAM)
+                            all.firstOrNull { it.code == (examSubject ?: mineCodes.singleOrNull()) } else null
                         val stamp = listOf(name) +
                             (if (subjects.isEmpty()) emptyList() else listOf(
                                 "أستاذ مادة: " + subjects.joinToString("، ") { it.nameAr },
                                 "Professeur de : " + subjects.joinToString(", ") { it.nameFr }
                             ))
                         val info = DocumentPdf.Info(
-                            infoLineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069",
-                            infoLineFr = "Établissement : ${owner.schoolName} — Classe : ${c.name} — Année scolaire : ${c.schoolYear}",
+                            infoLineAr = "المؤسسة: ${owner.schoolName} — السنة الدراسية: \u2066${c.schoolYear}\u2069 — القسم: \u2066${c.name}\u2069",
+                            infoLineFr = "Établissement : ${owner.schoolName} — Année scolaire : ${c.schoolYear} — Classe : ${c.name}",
+                            subjectLine = examSub?.let { "المادة: ${it.nameAr} — Matière : ${it.nameFr}" },
                             title = d.title,
                             body = d.body,
-                            stampLines = stamp,
-                            seal = sealBitmap
+                            stampLines = stamp
                         )
                         val bytes = withContext(Dispatchers.Default) { DocumentPdf.build(info) }
                         val fileName = ("${d.title.ifBlank { "Document" }} - ${c.name} - ${c.schoolYear}.pdf")
@@ -1671,6 +1683,27 @@ class MainActivity : AppCompatActivity() {
                             }) { Text(stringResource(R.string.save)) }
                         },
                         dismissButton = { TextButton(onClick = { askNameFor = null }) { Text(stringResource(R.string.cancel)) } }
+                    )
+                }
+
+                docSubjectChoice?.let { (d, n) ->
+                    val c = currentClass
+                    val opts = c?.let { cc -> CurriculumRepository.level(this@MainActivity, cc.schoolYear, cc.levelCode)?.subjects.orEmpty() }
+                        .orEmpty().filter { s -> mySubjects.any { it.subjectCode == s.code } }
+                    AlertDialog(
+                        onDismissRequest = { docSubjectChoice = null },
+                        title = { Text(stringResource(R.string.doc_pick_subject)) },
+                        text = {
+                            androidx.compose.foundation.layout.Column {
+                                opts.forEach { sub ->
+                                    TextButton(onClick = { docSubjectChoice = null; exportDocument(d, n, sub.code) }) {
+                                        Text(if (isFrUi) sub.nameFr else sub.nameAr)
+                                    }
+                                }
+                            }
+                        },
+                        confirmButton = {},
+                        dismissButton = { TextButton(onClick = { docSubjectChoice = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
 

@@ -622,4 +622,5 @@
     <string name="steps_teacher_4">Quand le trimestre est complet (✓ sous la matière), touchez « Envoyer le registre » et envoyez-le à l\'administration par WhatsApp.</string>
     <string name="steps_teacher_5">Recommencez à chaque trimestre : le nouveau registre remplace l\'ancien chez l\'administration.</string>
     <string name="record_other_teacher">⚠️ Dans l\'emploi du temps, cette matière est attribuée à : %1$s. Vérifiez avant d\'importer.</string>
+    <string name="doc_pick_subject">Choisissez la matière de ce devoir</string>
 </resources>
