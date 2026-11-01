@@ -1718,6 +1718,10 @@ class MainActivity : AppCompatActivity() {
                                 Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState())
                             ) {
                                 Text(stringResource(R.string.record_teacher, chk.file.teacherName))
+                                // الأستاذ المعيّن لهذه المادة في هذا القسم (الجدول الزمني) يختلف عن صاحب السجل؟
+                                val assigned = ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == chk.file.subjectCode }?.teacherName
+                                if (!assigned.isNullOrBlank() && assigned.trim() != chk.file.teacherName.trim())
+                                    Text(stringResource(R.string.record_other_teacher, assigned), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 Text(stringResource(R.string.record_matched, chk.matched))
                                 if (chk.unknownStudents.isNotEmpty())
                                     Text(stringResource(R.string.record_unknown, chk.unknownStudents.joinToString("، ")), color = androidx.compose.material3.MaterialTheme.colorScheme.error)

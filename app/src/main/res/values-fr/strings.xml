@@ -521,7 +521,7 @@
     <string name="sr_send">Envoyer registres et emploi du temps par WhatsApp (%1$s classes)</string>
     <string name="sr_send_again">Renvoyer (%1$s classes)</string>
     <string name="sr_sent">Envoyé</string>
-    <string name="sr_caption">Bonjour M. %1$s 🌹\nVoici les registres de notes de vos classes et votre emploi du temps à %2$s :\n%3$s\nOuvrez le fichier avec l\'application دفتر الأستاذ DS.</string>
+    <string name="sr_caption">Bonjour M. %1$s 🌹\nVoici les listes de vos classes et votre emploi du temps à %2$s :\n%3$s\n\n1) Installez « دفتر الأستاذ DS » et ouvrez-y ce fichier.\n2) Saisissez les notes de chaque trimestre (aucun calcul, tout est automatique).\n3) Trimestre complet : touchez « Envoyer le registre » et renvoyez-le ici.</string>
     <string name="sr_received">Registres de notes et emploi du temps reçus de %1$s ✅\nClasses : %2$s\nMatières : %3$d\nSéances : %4$d</string>
     <string name="sr_received_conflicts">Ces classes n\'ont pas été ajoutées car elles existent déjà d\'une autre source : %1$s</string>
     <string name="tt_teacher_whatsapp">WhatsApp du professeur</string>
@@ -608,4 +608,18 @@
     <string name="send_blocked_list">Le trimestre %1$d est incomplet : il manque les notes de %2$d élèves :\n%3$s\n\nComplétez-les (ou notez leur absence en touchant le nom), puis envoyez.</string>
     <string name="kashf_blocked">Impossible de générer le bulletin avant que toutes les notes soient complètes.</string>
     <string name="term_progress">Trimestre %1$d : %2$d sur %3$d complets</string>
+    <string name="steps_admin_title">Étapes de l\'administration</string>
+    <string name="steps_admin_1">Créez les classes et leurs élèves (ou importez-les).</string>
+    <string name="steps_admin_2">Enregistrez les professeurs, leur WhatsApp et la répartition des classes, puis préparez et validez l\'emploi du temps.</string>
+    <string name="steps_admin_3">Dans « Partager les registres », envoyez à chaque professeur son fichier : listes de ses classes, matières et emploi du temps.</string>
+    <string name="steps_admin_4">Demandez à chaque professeur d\'installer « دفتر الأستاذ DS », d\'y ouvrir le fichier, de saisir les notes de chaque trimestre et de vous les renvoyer.</string>
+    <string name="steps_admin_5">À la réception d\'un registre : classe ← Résultats ← « Importer un registre ». Aucun calcul : moyennes, totaux et rangs sont automatiques.</string>
+    <string name="steps_admin_6">Quand toutes les matières sont complètes, le bouton des bulletins s\'active.</string>
+    <string name="steps_teacher_title">Étapes du professeur</string>
+    <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier de classe » (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes, matières et emploi du temps apparaissent.</string>
+    <string name="steps_teacher_2">Classe ← Résultats ← matière : saisissez devoir et composition pour chaque élève. Absent : touchez son nom (justifié 10, non justifié 0).</string>
+    <string name="steps_teacher_3">Ne calculez rien : tout est calculé automatiquement.</string>
+    <string name="steps_teacher_4">Quand le trimestre est complet (✓ sous la matière), touchez « Envoyer le registre » et envoyez-le à l\'administration par WhatsApp.</string>
+    <string name="steps_teacher_5">Recommencez à chaque trimestre : le nouveau registre remplace l\'ancien chez l\'administration.</string>
+    <string name="record_other_teacher">⚠️ Dans l\'emploi du temps, cette matière est attribuée à : %1$s. Vérifiez avant d\'importer.</string>
 </resources>

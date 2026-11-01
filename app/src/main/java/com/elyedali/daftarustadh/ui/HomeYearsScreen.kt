@@ -256,6 +256,15 @@ fun HomeYearsScreen(
                                 }
                             }
                         }
+                        // خطوات العمل: ماذا تفعل الإدارة، وماذا يفعل الأستاذ
+                        item {
+                            if (mode == MODE_ADMIN) StepsGuide(R.string.steps_admin_title, listOf(
+                                R.string.steps_admin_1, R.string.steps_admin_2, R.string.steps_admin_3,
+                                R.string.steps_admin_4, R.string.steps_admin_5, R.string.steps_admin_6), yearClasses.isEmpty())
+                            else StepsGuide(R.string.steps_teacher_title, listOf(
+                                R.string.steps_teacher_1, R.string.steps_teacher_2, R.string.steps_teacher_3,
+                                R.string.steps_teacher_4, R.string.steps_teacher_5), yearClasses.isEmpty())
+                        }
                         item {
                             Text(stringResource(R.string.home_year_classes_title, selectedYear, yearClasses.size.toString()),
                                 fontWeight = FontWeight.Bold, fontSize = 15.sp, color = MaterialTheme.colorScheme.primary)
@@ -358,6 +367,27 @@ private fun ModesGuide() {
                 }
             } else {
                 Text(stringResource(R.string.guide_short), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
+    }
+}
+
+/** بطاقة «خطوات العمل» قابلة للطي: مفتوحة ما دام لا يوجد قسم، ثم مطوية. */
+@Composable
+private fun StepsGuide(title: Int, steps: List<Int>, startOpen: Boolean) {
+    var open by remember { mutableStateOf(startOpen) }
+    Card(
+        Modifier.fillMaxWidth().clickable { open = !open }, shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFE8F5E9)), elevation = CardDefaults.cardElevation(1.dp)
+    ) {
+        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            Text("📘 " + stringResource(title) + if (open) "  ▲" else "  ▼", fontWeight = FontWeight.Black, fontSize = 15.sp,
+                color = Color(0xFF1B5E20))
+            if (open) steps.forEachIndexed { i, res ->
+                Row(verticalAlignment = Alignment.Top) {
+                    Text("${i + 1}.", fontWeight = FontWeight.Black, color = Color(0xFF2E7D32), modifier = Modifier.padding(end = 6.dp))
+                    Text(stringResource(res), fontSize = 13.sp)
+                }
             }
         }
     }
