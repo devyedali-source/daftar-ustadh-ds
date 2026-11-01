@@ -109,6 +109,9 @@ private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS,
     ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
+/** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
+private class PdfNotImportableException : Exception()
+
 private sealed class FileResult {
     data object Invalid : FileResult()
     data class Done(val outcome: ImportOutcome) : FileResult()
@@ -665,6 +668,9 @@ class MainActivity : AppCompatActivity() {
                             val bytes = withContext(Dispatchers.IO) {
                                 contentResolver.openInputStream(uri)?.use { it.readBytes() }
                             } ?: throw IllegalStateException()
+                            // ملف PDF (جدول أو سجل للطباعة) لا يُفتح في التطبيق: نوضّح ذلك بدل «ملف تالف»
+                            if (bytes.size >= 4 && String(bytes, 0, 4, Charsets.ISO_8859_1) == "%PDF")
+                                throw PdfNotImportableException()
                             when (val any = TransferCodec.decodeAny(bytes)) {
                                 is RecordFile -> when (val chk = recordImporter.check(any)) {
                                     is RecordCheck.Ready -> { recordCheck = chk; null }
@@ -703,6 +709,8 @@ class MainActivity : AppCompatActivity() {
                                 is ClassFile -> { importedYear = any.schoolClass.schoolYear; FileResult.Done(importer.save(any)) }
                                 else -> FileResult.Invalid
                             }
+                        } catch (e: PdfNotImportableException) {
+                            FileResult.Message(getString(R.string.file_is_pdf))
                         } catch (e: Exception) {
                             FileResult.Invalid
                         }

@@ -98,7 +98,7 @@
     <string name="share_full_file">Fichier complet de la classe</string>
     <string name="share_full_file_hint">Toutes les informations des élèves, pour un enseignant chargé de la classe</string>
     <string name="share_chooser">Envoyer le fichier de la classe</string>
-    <string name="file_invalid">Ce fichier n\'est pas un fichier de classe دفتر الأستاذ DS, ou il est endommagé.</string>
+    <string name="file_invalid">Ce fichier n\'est pas un fichier دفتر الأستاذ DS, ou il est endommagé.</string>
     <string name="file_conflict">La classe %1$s existe déjà chez vous depuis une autre source. Mettez-vous d\'accord sur un seul fichier : celui de son créateur.</string>
     <string name="file_ok_teacher">La classe %1$s a été ajoutée à « Mes classes ».</string>
     <string name="file_ok_full">La classe %1$s a été ajoutée au mode administration.</string>
@@ -580,4 +580,5 @@
     <string name="ac_bad_range">La date de début est après la date de fin.</string>
     <string name="ac_no_absence">Aucune absence sur cette période.</string>
     <string name="ac_roll">N° d\'appel %1$d</string>
+    <string name="file_is_pdf">Ce fichier est un PDF à lire ou imprimer, il ne s\'ouvre pas dans l\'application.\nOuvrez le fichier دفتر الأستاذ DS envoyé par l\'administration (dans WhatsApp, nommé « سجلات النتائج… » ou « جدول الأستاذ… », marqué BIN).</string>
 </resources>
