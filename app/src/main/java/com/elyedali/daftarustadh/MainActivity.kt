@@ -102,6 +102,8 @@ import java.util.UUID
 private const val TEACHER_NAME_KEY = "teacher_name"
 /** العربية بأرقام لاتينية. */
 private const val AR_LATN = "ar-u-nu-latn"
+/** بصمة الجدول الزمني المعتمد. */
+private const val TT_APPROVED_KEY = "timetable_approved"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
     ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS }
@@ -207,6 +209,7 @@ class MainActivity : AppCompatActivity() {
                 val ttTeachersText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TimetableTeachers.KEY) }.collectAsState(initial = null)
                 val ttTeachers = remember(ttTeachersText) { com.elyedali.daftarustadh.data.TimetableTeachers.decode(ttTeachersText) }
                 val ttSlots by remember { timetableDao.observeSlots() }.collectAsState(initial = emptyList())
+                val ttApprovedSig by remember { metaDao.observe(TT_APPROVED_KEY) }.collectAsState(initial = null)
                 val myTimetable by remember { timetableDao.observeTeacherTimetable() }.collectAsState(initial = emptyList())
                 var ttGenerating by remember { mutableStateOf(false) }
                 var ttResult by remember { mutableStateOf<String?>(null) }
@@ -508,25 +511,67 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                // ===== حالة الجدول الزمني: اكتماله واعتماده =====
+                val ttManagedSlots = ttSlots.filter { s -> managedClasses.any { it.id == s.classId } }
+                /** بصمة الجدول: أي تعديل بعد الاعتماد يُلغي الاعتماد تلقائيًا. */
+                val ttSignature = ttManagedSlots.map { "${it.classId}|${it.day}|${it.period}|${it.subjectCode}|${it.teacherName}" }
+                    .sorted().joinToString(";").hashCode().toString() + ":" + ttManagedSlots.size
+                /** ما ينقص الجدول ليُعتمد (فارغة = مكتمل). */
+                val ttProblems: List<String> = run {
+                    val out = ArrayList<String>()
+                    if (managedClasses.isEmpty()) return@run out
+                    if (ttManagedSlots.isEmpty()) { out += getString(R.string.tt_pb_not_generated); return@run out }
+                    managedClasses.sortedWith(compareBy({ it.levelCode }, { it.number })).forEach { c ->
+                        val subs = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                        val mine = ttManagedSlots.filter { it.classId == c.id }
+                        subs.forEach { sub ->
+                            val placed = mine.count { it.subjectCode == sub.code }
+                            if (placed < sub.weeklyHours) out += getString(R.string.tt_pb_missing_hours, c.name, subjectName(sub.code), sub.weeklyHours - placed)
+                        }
+                        mine.filter { it.teacherName.isBlank() }.map { it.subjectCode }.distinct().forEach { code ->
+                            out += getString(R.string.tt_pb_no_teacher, c.name, subjectName(code))
+                        }
+                    }
+                    // أستاذ في قسمين في نفس الحصة
+                    ttManagedSlots.filter { it.teacherName.isNotBlank() }.groupBy { Triple(it.teacherName, it.day, it.period) }
+                        .filter { it.value.size > 1 }.keys.forEach { (t, d, p) ->
+                            out += getString(R.string.tt_pb_clash, t, getString(listOf(R.string.day_0, R.string.day_1, R.string.day_2, R.string.day_3, R.string.day_4, R.string.day_5, R.string.day_6)[d.coerceIn(0, 6)]), p + 1)
+                        }
+                    out
+                }
+                val ttApproved = ttProblems.isEmpty() && ttManagedSlots.isNotEmpty() && ttApprovedSig == ttSignature
+                /** أقسام الإدارة التي لم يُسجَّل فيها أي طالب بعد. */
+                val classesWithoutStudents = managedClasses.filter { c -> homeGenderCounts.none { it.classId == c.id && it.count > 0 } }
+                    .sortedWith(compareBy({ it.levelCode }, { it.number }))
+
+                /** جدول الأستاذ كما يصله (ملف ‎.dsq أو داخل حزمة سجلاته). */
+                fun buildTeacherTimetable(teacher: String): com.elyedali.daftarustadh.transfer.TimetableFile? {
+                    val owner = inst ?: return null
+                    val names = managedClasses.associate { it.id to it.name }
+                    val st = ttSettings
+                    return com.elyedali.daftarustadh.transfer.TimetableFile(
+                        institutionId = owner.id, schoolName = owner.schoolName, wilaya = owner.wilaya,
+                        schoolYear = owner.schoolYear, teacherName = teacher,
+                        entries = ttSlots.filter { it.teacherName == teacher && it.classId in names }.map { s ->
+                            val (ar, fr) = subjectArFr(s.subjectCode)
+                            com.elyedali.daftarustadh.transfer.TimetableFileEntry(
+                                day = s.day, period = s.period,
+                                startTime = com.elyedali.daftarustadh.data.TimetableSettings.hhmm(st.start(s.period)),
+                                endTime = com.elyedali.daftarustadh.data.TimetableSettings.hhmm(st.end(s.period)),
+                                className = names[s.classId].orEmpty(), subjectCode = s.subjectCode,
+                                subjectNameAr = ar, subjectNameFr = fr
+                            )
+                        }
+                    )
+                }
+
                 fun sendTeacherTimetable(teacher: String) {
+                    if (!ttApproved) {
+                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.tt_approve_first), android.widget.Toast.LENGTH_LONG).show()
+                        return
+                    }
+                    val file = buildTeacherTimetable(teacher) ?: return
                     scope.launch {
-                        val owner = inst ?: return@launch
-                        val names = managedClasses.associate { it.id to it.name }
-                        val st = ttSettings
-                        val file = com.elyedali.daftarustadh.transfer.TimetableFile(
-                            institutionId = owner.id, schoolName = owner.schoolName, wilaya = owner.wilaya,
-                            schoolYear = owner.schoolYear, teacherName = teacher,
-                            entries = ttSlots.filter { it.teacherName == teacher }.map { s ->
-                                val (ar, fr) = subjectArFr(s.subjectCode)
-                                com.elyedali.daftarustadh.transfer.TimetableFileEntry(
-                                    day = s.day, period = s.period,
-                                    startTime = com.elyedali.daftarustadh.data.TimetableSettings.hhmm(st.start(s.period)),
-                                    endTime = com.elyedali.daftarustadh.data.TimetableSettings.hhmm(st.end(s.period)),
-                                    className = names[s.classId].orEmpty(), subjectCode = s.subjectCode,
-                                    subjectNameAr = ar, subjectNameFr = fr
-                                )
-                            }
-                        )
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeTimetable(file) }
                         ShareHelper.share(this@MainActivity, bytes, file.fileName(), getString(R.string.tt_send_teacher))
                     }
@@ -627,7 +672,7 @@ class MainActivity : AppCompatActivity() {
                                         screen = Screen.HOME
                                     }
                                     FileResult.Message(
-                                        getString(R.string.sr_received, any.schoolName, out.saved.joinToString("، "), out.subjects) +
+                                        getString(R.string.sr_received, any.schoolName, out.saved.joinToString("، "), out.subjects, out.periods) +
                                             if (out.conflicts.isEmpty()) "" else "\n\n" + getString(R.string.sr_received_conflicts, out.conflicts.joinToString("، "))
                                     )
                                 }
@@ -675,13 +720,16 @@ class MainActivity : AppCompatActivity() {
                     val classes = managedClasses.filter { c -> mine.any { it.classId == c.id } }
                         .sortedWith(compareBy({ it.levelCode }, { it.number }))
                     if (classes.isEmpty() || t.phone.isBlank()) return
+                    if (!ttApproved || classesWithoutStudents.isNotEmpty()) return
+                    val timetable = buildTeacherTimetable(t.name)
                     scope.launch {
                         val bundle = com.elyedali.daftarustadh.transfer.TeacherBundle(
                             teacherName = t.name, schoolName = owner.schoolName, schoolYear = owner.schoolYear,
                             classes = classes.map { c ->
                                 ClassFile(ClassFileType.TEACHER, owner, c, studentDao.listByClass(c.id)) to
                                     mine.filter { it.classId == c.id }.map { it.subjectCode }
-                            }
+                            },
+                            timetable = timetable
                         )
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeBundle(bundle) }
                         val caption = getString(R.string.sr_caption, t.name, owner.schoolName,
@@ -756,6 +804,12 @@ class MainActivity : AppCompatActivity() {
                         assignments = ttAssignments,
                         subjectLabel = { subjectName(it) },
                         sent = recordsSent,
+                        blockers = buildList {
+                            if (!ttApproved) add(getString(R.string.sr_block_timetable))
+                            if (classesWithoutStudents.isNotEmpty())
+                                add(getString(R.string.sr_block_students, classesWithoutStudents.joinToString("، ") { it.name }))
+                        },
+                        onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.SHARE_RECORDS; screen = Screen.TIMETABLE },
                         onSend = { sendTeacherRecords(it) },
                         onSavePhone = { t, phone -> saveTeachers(ttTeachers.map { if (it.name == t.name) it.copy(phone = phone) else it }) },
                         onManageTeachers = { ttInitialClass = null; ttInitialTab = 1; ttBack = Screen.SHARE_RECORDS; screen = Screen.TIMETABLE },
@@ -889,7 +943,12 @@ class MainActivity : AppCompatActivity() {
                         onShareTeacherPdf = { shareTeacherTimetablePdf(it) },
                         onSendTeacherFile = { sendTeacherTimetable(it) },
                         onBack = { screen = ttBack },
-                        initialTab = ttInitialTab
+                        initialTab = ttInitialTab,
+                        problems = ttProblems,
+                        approved = ttApproved,
+                        onApprove = { yes ->
+                            scope.launch { metaDao.put(AppMetaEntity(TT_APPROVED_KEY, if (yes) ttSignature else "")) }
+                        }
                     )
 
                     screen == Screen.MY_TIMETABLE -> com.elyedali.daftarustadh.ui.TeacherTimetableView(

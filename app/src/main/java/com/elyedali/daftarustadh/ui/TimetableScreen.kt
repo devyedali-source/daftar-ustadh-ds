@@ -29,6 +29,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -108,7 +109,10 @@ fun TimetableScreen(
     onShareTeacherPdf: (String) -> Unit,
     onSendTeacherFile: (String) -> Unit,
     onBack: () -> Unit,
-    initialTab: Int? = null
+    initialTab: Int? = null,
+    problems: List<String> = emptyList(),
+    approved: Boolean = false,
+    onApprove: (Boolean) -> Unit = {}
 ) {
     var tab by rememberSaveable { mutableIntStateOf(initialTab ?: if (initialClassId != null && slots.any { it.classId == initialClassId }) 2 else 0) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -120,7 +124,8 @@ fun TimetableScreen(
             }
             Box(Modifier.weight(1f).fillMaxWidth()) {
                 when (tab) {
-                    0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate)
+                    0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate,
+                        problems, approved, onApprove)
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
                     2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass)
                     else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile)
@@ -143,7 +148,10 @@ private fun GenerateTab(
     generating: Boolean,
     lastResult: String?,
     onSave: (TimetableSettings) -> Unit,
-    onGenerate: () -> Unit
+    onGenerate: () -> Unit,
+    problems: List<String>,
+    approved: Boolean,
+    onApprove: (Boolean) -> Unit
 ) {
     val context = LocalContext.current
     val days = dayLabels()
@@ -236,6 +244,35 @@ private fun GenerateTab(
                     } else Text("⚙️ " + stringResource(R.string.tt_generate), fontWeight = FontWeight.Bold)
                 }
                 lastResult?.let { Text(it, fontSize = 12.sp, fontWeight = FontWeight.SemiBold) }
+            }
+        }
+        // اعتماد الجدول: لا يُرسل للأساتذة إلا جدول مكتمل ومعتمد
+        Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
+            colors = CardDefaults.cardColors(containerColor = if (approved) Color(0xFFE8F5E9) else MaterialTheme.colorScheme.surface),
+            elevation = CardDefaults.cardElevation(1.dp)) {
+            Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Text(stringResource(R.string.tt_approval), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
+                when {
+                    approved -> {
+                        Text("✅ " + stringResource(R.string.tt_approved), fontWeight = FontWeight.Bold, color = Color(0xFF2E7D32))
+                        Text(stringResource(R.string.tt_approved_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        OutlinedButton(onClick = { onApprove(false) }, modifier = Modifier.fillMaxWidth()) {
+                            Text(stringResource(R.string.tt_unapprove))
+                        }
+                    }
+                    problems.isNotEmpty() -> {
+                        Text("⚠️ " + stringResource(R.string.tt_incomplete), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.error)
+                        problems.take(12).forEach { Text("• $it", fontSize = 12.sp, color = MaterialTheme.colorScheme.error) }
+                        if (problems.size > 12) Text("… +${problems.size - 12}", fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
+                    }
+                    else -> {
+                        Text(stringResource(R.string.tt_ready_to_approve), fontSize = 12.sp)
+                        Button(onClick = { onApprove(true) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp),
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2E7D32), contentColor = Color.White)) {
+                            Text("✅ " + stringResource(R.string.tt_approve), fontWeight = FontWeight.Bold)
+                        }
+                    }
+                }
             }
         }
     }

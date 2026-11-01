@@ -53,6 +53,8 @@ fun ShareRecordsScreen(
     assignments: List<TimetableAssignmentEntity>,
     subjectLabel: (String) -> String,
     sent: Set<String>,
+    blockers: List<String>,
+    onOpenTimetable: () -> Unit,
     onSend: (TimetableTeacher) -> Unit,
     onSavePhone: (TimetableTeacher, String) -> Unit,
     onManageTeachers: () -> Unit,
@@ -67,6 +69,23 @@ fun ShareRecordsScreen(
             LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 item {
                     Text(stringResource(R.string.sr_intro), fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                // شروط الإرسال: جدول زمني مكتمل ومعتمد، وتسجيل الطلاب مكتمل
+                item {
+                    Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
+                        colors = CardDefaults.cardColors(containerColor = if (blockers.isEmpty()) Color(0xFFE8F5E9) else Color(0xFFFFF3E0))) {
+                        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                            if (blockers.isEmpty()) {
+                                Text("✅ " + stringResource(R.string.sr_ready), fontWeight = FontWeight.Bold, color = Color(0xFF2E7D32))
+                            } else {
+                                Text("⏳ " + stringResource(R.string.sr_not_ready), fontWeight = FontWeight.Bold, color = Color(0xFFE65100))
+                                blockers.forEach { Text("• $it", fontSize = 12.sp, color = Color(0xFFBF360C)) }
+                                OutlinedButton(onClick = onOpenTimetable, modifier = Modifier.fillMaxWidth()) {
+                                    Text("📅 " + stringResource(R.string.sr_open_timetable))
+                                }
+                            }
+                        }
+                    }
                 }
                 item {
                     OutlinedButton(onClick = onManageTeachers, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
@@ -110,7 +129,7 @@ fun ShareRecordsScreen(
                             }
                             Button(
                                 onClick = { onSend(t) },
-                                enabled = hasPhone && byClass.isNotEmpty(),
+                                enabled = hasPhone && byClass.isNotEmpty() && blockers.isEmpty(),
                                 modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp),
                                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF25D366), contentColor = Color.White)
                             ) {
