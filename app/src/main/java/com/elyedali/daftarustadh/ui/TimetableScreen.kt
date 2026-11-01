@@ -159,8 +159,41 @@ private fun GenerateTab(
                 }
             }
         }
-        SettingCard(stringResource(R.string.tt_periods)) {
-            Stepper(settings.periods, 1, 12) { onSave(settings.copy(periods = it, breakAfter = settings.breakAfter.coerceAtMost(it))) }
+        SettingCard(stringResource(R.string.tt_times)) {
+            Text(stringResource(R.string.tt_times_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            fun pick(minutes: Int, set: (Int) -> Unit) {
+                TimePickerDialog(context, { _, h, m -> set(h * 60 + m) }, minutes / 60, minutes % 60, true).show()
+            }
+            settings.times.forEachIndexed { i, (st, en) ->
+                val br = settings.breakBefore(i)
+                if (br > 0) Text("☕ " + stringResource(R.string.tt_break_line,
+                    TimetableSettings.hhmm(settings.end(i - 1)), TimetableSettings.hhmm(st), br),
+                    fontSize = 12.sp, color = MaterialTheme.colorScheme.tertiary)
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text("${i + 1}", fontWeight = FontWeight.Black, modifier = Modifier.width(22.dp))
+                    OutlinedButton(onClick = {
+                        pick(st) { v -> onSave(settings.copy(times = settings.times.toMutableList().also { it[i] = v to maxOf(en, v + 5) })) }
+                    }) { Text("\u2066${TimetableSettings.hhmm(st)}\u2069") }
+                    Text("→")
+                    OutlinedButton(onClick = {
+                        pick(en) { v -> if (v > st) onSave(settings.copy(times = settings.times.toMutableList().also { it[i] = st to v })) }
+                    }) { Text("\u2066${TimetableSettings.hhmm(en)}\u2069") }
+                    Text(stringResource(R.string.tt_minutes, en - st), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+            }
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                OutlinedButton(enabled = settings.periods < 12, onClick = {
+                    val last = settings.times.last()
+                    val len = last.second - last.first
+                    onSave(settings.copy(times = settings.times + (last.second to last.second + len)))
+                }) { Text("+ " + stringResource(R.string.tt_add_period)) }
+                OutlinedButton(enabled = settings.periods > 1, onClick = {
+                    onSave(settings.copy(times = settings.times.dropLast(1)))
+                }) { Text("− " + stringResource(R.string.tt_remove_period)) }
+                TextButton(onClick = { onSave(settings.copy(times = TimetableSettings.DEFAULT_TIMES)) }) {
+                    Text(stringResource(R.string.tt_default_times))
+                }
+            }
         }
         SettingCard(stringResource(R.string.tt_day_periods)) {
             Text(stringResource(R.string.tt_day_periods_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -177,34 +210,6 @@ private fun GenerateTab(
                         color = MaterialTheme.colorScheme.secondary)
                 }
             }
-        }
-        SettingCard(stringResource(R.string.tt_start)) {
-            OutlinedButton(onClick = {
-                TimePickerDialog(context, { _, h, m -> onSave(settings.copy(startMinutes = h * 60 + m)) },
-                    settings.startMinutes / 60, settings.startMinutes % 60, true).show()
-            }) { Text("🕗 ⁦${TimetableSettings.hhmm(settings.startMinutes)}⁩") }
-        }
-        SettingCard(stringResource(R.string.tt_length)) {
-            FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                listOf(45, 50, 55, 60).forEach { m ->
-                    FilterChip(selected = settings.periodMinutes == m, onClick = { onSave(settings.copy(periodMinutes = m)) },
-                        label = { Text(stringResource(R.string.tt_minutes, m)) })
-                }
-            }
-        }
-        SettingCard(stringResource(R.string.tt_break)) {
-            Text(stringResource(R.string.tt_break_after), fontSize = 12.sp)
-            Stepper(settings.breakAfter, 0, settings.periods) { onSave(settings.copy(breakAfter = it)) }
-            FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                listOf(10, 15, 20, 30).forEach { m ->
-                    FilterChip(selected = settings.breakMinutes == m, onClick = { onSave(settings.copy(breakMinutes = m)) },
-                        label = { Text(stringResource(R.string.tt_minutes, m)) })
-                }
-            }
-            Text(
-                (0 until settings.periods).joinToString("  •  ") { "${it + 1}: ⁦${settings.label(it)}⁩" },
-                fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
         }
         Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {

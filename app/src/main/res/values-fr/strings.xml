@@ -416,12 +416,7 @@
     <string name="tt_tab_by_class">Par classe</string>
     <string name="tt_tab_by_teacher">Par professeur</string>
     <string name="tt_days">Jours de cours</string>
-    <string name="tt_periods">Séances par jour</string>
-    <string name="tt_start">Début de la 1re séance</string>
-    <string name="tt_length">Durée de la séance</string>
     <string name="tt_minutes">%1$d min</string>
-    <string name="tt_break">Récréation</string>
-    <string name="tt_break_after">Après la séance n° (0 = sans) :</string>
     <string name="tt_capacity">Séances par semaine : %1$d — max d\'heures d\'une classe : %2$d</string>
     <string name="tt_classes_count">Classes : %1$d</string>
     <string name="tt_missing_teachers">%1$d matières sans professeur : réparties sans contrôle de conflit. Affectez-les dans « Professeurs ».</string>
@@ -456,4 +451,10 @@
     <string name="tt_received">Emploi du temps reçu de %1$s : %2$d séances.</string>
     <string name="tt_day_periods">Séances par jour</string>
     <string name="tt_day_periods_hint">Journée de 8:00 à 14:00, le vendredi se termine à 12:00. Chaque jour peut être raccourci.</string>
+    <string name="tt_times">Horaires des séances</string>
+    <string name="tt_times_hint">Touchez une heure pour la modifier. La récréation est l\'écart entre la fin d\'une séance et le début de la suivante.</string>
+    <string name="tt_break_line">Récréation %1$s - %2$s (%3$d min)</string>
+    <string name="tt_add_period">séance</string>
+    <string name="tt_remove_period">séance</string>
+    <string name="tt_default_times">Horaires par défaut</string>
 </resources>

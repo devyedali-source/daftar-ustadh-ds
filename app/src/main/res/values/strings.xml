@@ -416,12 +416,7 @@
     <string name="tt_tab_by_class">حسب القسم</string>
     <string name="tt_tab_by_teacher">حسب الأستاذ</string>
     <string name="tt_days">أيام الدراسة</string>
-    <string name="tt_periods">عدد الحصص في اليوم</string>
-    <string name="tt_start">بداية أول حصة</string>
-    <string name="tt_length">مدة الحصة</string>
     <string name="tt_minutes">%1$d دقيقة</string>
-    <string name="tt_break">الاستراحة</string>
-    <string name="tt_break_after">بعد الحصة رقم (0 = بدون استراحة):</string>
     <string name="tt_capacity">حصص الأسبوع: %1$d — أكبر عدد ساعات لقسم: %2$d</string>
     <string name="tt_classes_count">الأقسام: %1$d</string>
     <string name="tt_missing_teachers">%1$d مادة بلا أستاذ: ستوزَّع دون التحقق من تداخل الأستاذ. عيّن الأساتذة من تبويب «أساتذة المواد».</string>
@@ -456,4 +451,10 @@
     <string name="tt_received">وصل جدولك من %1$s: %2$d حصة.</string>
     <string name="tt_day_periods">حصص كل يوم</string>
     <string name="tt_day_periods_hint">اليوم الدراسي من 8:00 إلى 14:00، والجمعة تنتهي 12:00. يمكن تقصير أي يوم.</string>
+    <string name="tt_times">توقيت الحصص</string>
+    <string name="tt_times_hint">المس الوقت لتغييره. الاستراحة هي الفراغ بين نهاية حصة وبداية التي تليها.</string>
+    <string name="tt_break_line">استراحة %1$s - %2$s (%3$d دقيقة)</string>
+    <string name="tt_add_period">حصة</string>
+    <string name="tt_remove_period">حصة</string>
+    <string name="tt_default_times">التوقيت التلقائي</string>
 </resources>
