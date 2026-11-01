@@ -75,10 +75,10 @@ fun AppTopBar(title: String, onMenu: (() -> Unit)?, onBack: (() -> Unit)?) {
             Icon(Icons.Filled.Menu, contentDescription = null, tint = Color.White)
         }
         Image(
-            painter = painterResource(R.mipmap.ic_launcher_foreground), contentDescription = null,
-            modifier = Modifier.padding(horizontal = 4.dp).size(32.dp).clip(CircleShape)
-                .border(1.dp, Color.White.copy(alpha = 0.5f), CircleShape),
-            contentScale = ContentScale.Crop
+            // شعار الجمهورية الإسلامية الموريتانية
+            painter = painterResource(R.drawable.img_mauritania_seal), contentDescription = null,
+            modifier = Modifier.padding(horizontal = 4.dp).size(34.dp),
+            contentScale = ContentScale.Fit
         )
         Text(title, Modifier.weight(1f).padding(horizontal = 6.dp), color = Color.White, fontWeight = FontWeight.Black,
             fontSize = 16.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)

@@ -73,9 +73,10 @@ fun AppDrawer(
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         Image(
-                            painter = painterResource(R.mipmap.ic_launcher_foreground), contentDescription = null,
-                            modifier = Modifier.size(52.dp).clip(CircleShape).border(2.dp, Color.White, CircleShape),
-                            contentScale = ContentScale.Crop
+                            // شعار الجمهورية الإسلامية الموريتانية
+                            painter = painterResource(R.drawable.img_mauritania_seal), contentDescription = null,
+                            modifier = Modifier.size(58.dp),
+                            contentScale = ContentScale.Fit
                         )
                         Column {
                             Text(stringResource(R.string.app_name) + " 🏫", fontWeight = FontWeight.Black, fontSize = 16.sp, color = Color.White)
