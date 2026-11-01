@@ -6,13 +6,13 @@ import kotlin.random.Random
 /**
  * مولّد الجدول الزمني «المنصف».
  *
- * قيود لا تُخرق: لا يكون للقسم حصتان في وقت واحد، ولا يكون الأستاذ في قسمين في وقت واحد.
- * ما يُحسَّن (كلما قلّ كان أفضل):
- *  - ساعات كل أستاذ متتالية في اليوم (بلا فراغات بين حصصه)،
- *  - حصص القسم متصلة من أول اليوم (بلا فراغات في وسط اليوم)،
- *  - المادة الواحدة لا تتجاوز ساعتين في اليوم، وساعتاها في نفس اليوم متتاليتان،
- *  - توزيع ساعات المادة على أيام مختلفة،
- *  - توزيع عبء الأستاذ على أيامه دون إرهاق يوم واحد.
+ * الحصة غالبًا ساعتان وأحيانًا ساعة: ساعات كل مادة تُقسَّم إلى حصص من ساعتين متتاليتين
+ * (لا تقطعهما استراحة)، وما بقي (ساعة فردية) حصة من ساعة.
+ *
+ * قيود لا تُخرق: لا يكون للقسم حصتان في وقت واحد، ولا يكون الأستاذ في قسمين في وقت واحد،
+ * ولا توضع حصة في وقت مقفل (مثل الجمعة بعد 12:00)، ولا تقطع الاستراحة حصة الساعتين.
+ * ما يُحسَّن: ساعات الأستاذ متتالية في اليوم، حصص القسم متصلة من أول اليوم،
+ * المادة لا تتجاوز ساعتين في اليوم، وتتوزع حصصها على أيام الأسبوع، دون إرهاق الأستاذ في يوم واحد.
  */
 object TimetableGenerator {
 
@@ -23,24 +23,30 @@ object TimetableGenerator {
 
     data class Result(
         val placed: List<Placed>,
-        val unplaced: List<Lesson>,      // ساعات لم يجد لها المولّد مكانًا (مع عددها في hours)
-        val teacherGaps: Int,            // مجموع الفراغات في أيام الأساتذة
-        val overloadedClasses: List<String> // أقسام ساعاتها أكثر من حصص الأسبوع
+        val unplaced: List<Lesson>,          // ساعات لم يجد لها المولّد مكانًا (مع عددها في hours)
+        val teacherGaps: Int,                // مجموع الفراغات في أيام الأساتذة
+        val overloadedClasses: List<String>  // أقسام ساعاتها أكثر من حصص الأسبوع
     )
 
-    private class LessonUnit(val classIdx: Int, val subject: String, val teacherIdx: Int, val teacher: String)
+    private class LessonUnit(val classIdx: Int, val subject: String, val teacherIdx: Int, val teacher: String, val size: Int)
 
+    /**
+     * @param periodsPerDay عدد حصص كل يوم (الجمعة أقصر)؛ null = كل الأيام كاملة.
+     * @param doubleStarts أرقام الحصص التي يمكن أن تبدأ بها حصة من ساعتين (هي والتي تليها بلا استراحة بينهما)؛
+     *                     null = أي حصتين متتاليتين.
+     */
     fun generate(
         lessons: List<Lesson>,
         dayCount: Int,
         periods: Int,
         seed: Long = System.currentTimeMillis(),
-        iterations: Int = 120_000,
-        periodsPerDay: List<Int>? = null   // عدد حصص كل يوم (الجمعة أقصر)؛ null = كل الأيام كاملة
+        iterations: Int = 150_000,
+        periodsPerDay: List<Int>? = null,
+        doubleStarts: Set<Int>? = null
     ): Result {
-        val perDay = IntArray(dayCount) { d -> (periodsPerDay?.getOrNull(d) ?: periods).coerceIn(0, periods) }
-        fun isOpen(s: Int) = s % periods < perDay[s / periods]
         val rnd = Random(seed)
+        val perDay = IntArray(dayCount) { d -> (periodsPerDay?.getOrNull(d) ?: periods).coerceIn(0, periods) }
+        val starts2 = doubleStarts ?: (0 until periods - 1).toSet()
         val classIds = lessons.map { it.classId }.distinct()
         val teachers = lessons.map { it.teacher }.filter { it.isNotBlank() }.distinct()
         val classIndex = classIds.withIndex().associate { it.value to it.index }
@@ -49,69 +55,83 @@ object TimetableGenerator {
         val openSlots = perDay.sum()
         val overloaded = classIds.filter { c -> lessons.filter { it.classId == c }.sumOf { it.hours } > openSlots }
 
-        // وحدات الساعة
+        // الحصص: ساعتان ساعتان، والساعة الفردية حصة من ساعة
         val units = ArrayList<LessonUnit>()
         lessons.forEach { l ->
-            repeat(l.hours) { units += LessonUnit(classIndex.getValue(l.classId), l.subjectCode, teacherIndex[l.teacher] ?: -1, l.teacher) }
+            val c = classIndex.getValue(l.classId)
+            val t = teacherIndex[l.teacher] ?: -1
+            repeat(l.hours / 2) { units += LessonUnit(c, l.subjectCode, t, l.teacher, 2) }
+            if (l.hours % 2 == 1) units += LessonUnit(c, l.subjectCode, t, l.teacher, 1)
         }
         val nC = classIds.size
         val nT = teachers.size
-        // شغل: القسم × الخانة -> رقم الوحدة أو -1 ؛ الأستاذ × الخانة -> رقم الوحدة أو -1
         val classAt = Array(nC) { IntArray(slots) { -1 } }
         val teacherAt = Array(nT) { IntArray(slots) { -1 } }
         val pos = IntArray(units.size) { -1 }
 
+        /** هل يصح أن تبدأ الحصة u في الخانة s (بغض النظر عن الشغل)؟ */
+        fun validStart(u: Int, s: Int): Boolean {
+            val d = s / periods; val p = s % periods
+            val size = units[u].size
+            if (p + size > perDay[d]) return false
+            return size == 1 || p in starts2
+        }
+
         fun free(u: Int, s: Int): Boolean {
-            if (!isOpen(s)) return false
+            if (!validStart(u, s)) return false
             val unit = units[u]
-            if (classAt[unit.classIdx][s] != -1) return false
-            return unit.teacherIdx < 0 || teacherAt[unit.teacherIdx][s] == -1
+            for (k in 0 until unit.size) {
+                if (classAt[unit.classIdx][s + k] != -1) return false
+                if (unit.teacherIdx >= 0 && teacherAt[unit.teacherIdx][s + k] != -1) return false
+            }
+            return true
         }
 
         fun place(u: Int, s: Int) {
             val unit = units[u]
-            classAt[unit.classIdx][s] = u
-            if (unit.teacherIdx >= 0) teacherAt[unit.teacherIdx][s] = u
+            for (k in 0 until unit.size) {
+                classAt[unit.classIdx][s + k] = u
+                if (unit.teacherIdx >= 0) teacherAt[unit.teacherIdx][s + k] = u
+            }
             pos[u] = s
         }
 
         fun remove(u: Int) {
             val s = pos[u]; if (s < 0) return
             val unit = units[u]
-            classAt[unit.classIdx][s] = -1
-            if (unit.teacherIdx >= 0) teacherAt[unit.teacherIdx][s] = -1
+            for (k in 0 until unit.size) {
+                classAt[unit.classIdx][s + k] = -1
+                if (unit.teacherIdx >= 0) teacherAt[unit.teacherIdx][s + k] = -1
+            }
             pos[u] = -1
         }
 
-        // تكلفة يوم قسم: فراغات وسط اليوم، تأخير البداية، ومواد مكرّرة أكثر من ساعتين أو غير متتالية
         fun classDayCost(c: Int, d: Int): Double {
             var cost = 0.0
             var first = -1; var last = -1; var count = 0
-            val bySubject = HashMap<String, MutableList<Int>>()
+            val hoursBySubject = HashMap<String, Int>()
+            val unitsBySubject = HashMap<String, MutableSet<Int>>()
             for (p in 0 until periods) {
                 val u = classAt[c][d * periods + p]
                 if (u >= 0) {
                     if (first < 0) first = p
                     last = p; count++
-                    bySubject.getOrPut(units[u].subject) { ArrayList() }.add(p)
+                    val sub = units[u].subject
+                    hoursBySubject[sub] = (hoursBySubject[sub] ?: 0) + 1
+                    unitsBySubject.getOrPut(sub) { HashSet() }.add(u)
                 }
             }
             if (count > 0) {
                 cost += 4.0 * (last - first + 1 - count)  // فراغات في وسط اليوم
                 cost += 0.6 * first                        // يبدأ متأخرًا
             }
-            bySubject.values.forEach { ps ->
-                if (ps.size > 2) cost += 6.0 * (ps.size - 2)
-                if (ps.size >= 2) {
-                    // الساعات في نفس اليوم يجب أن تكون متتالية
-                    val span = ps.max() - ps.min() + 1
-                    cost += 2.5 * (span - ps.size)
-                }
+            hoursBySubject.forEach { (sub, h) ->
+                if (h > 2) cost += 6.0 * (h - 2)                          // أكثر من ساعتين للمادة في اليوم
+                if ((unitsBySubject[sub]?.size ?: 0) > 1) cost += 3.0    // حصتان منفصلتان لنفس المادة في يوم واحد
             }
             return cost
         }
 
-        // تكلفة يوم أستاذ: فراغات بين حصصه، وعبء ثقيل في يوم واحد
         fun teacherDayCost(t: Int, d: Int): Double {
             var first = -1; var last = -1; var count = 0
             for (p in 0 until periods) {
@@ -123,64 +143,30 @@ object TimetableGenerator {
             if (count == 0) return 0.0
             var cost = 3.0 * (last - first + 1 - count)
             if (count > 5) cost += 2.0 * (count - 5)
-            if (count == 1) cost += 0.8  // حصة يتيمة في يوم كامل
+            if (count == 1) cost += 0.8
             return cost
         }
 
-        // توزيع ساعات المادة على الأيام: أيام بلا حصة لمادة كثيرة الساعات
+        // حصص المادة الواحدة في القسم تتوزع على أيام مختلفة
         fun subjectSpreadCost(c: Int): Double {
-            val perSubjectDays = HashMap<String, MutableSet<Int>>()
-            val perSubjectCount = HashMap<String, Int>()
+            val days = HashMap<String, MutableSet<Int>>()
+            val count = HashMap<String, Int>()
+            val seen = HashSet<Int>()
             for (s in 0 until slots) {
                 val u = classAt[c][s]
-                if (u >= 0) {
-                    perSubjectDays.getOrPut(units[u].subject) { HashSet() }.add(s / periods)
-                    perSubjectCount[units[u].subject] = (perSubjectCount[units[u].subject] ?: 0) + 1
+                if (u >= 0 && seen.add(u)) {
+                    days.getOrPut(units[u].subject) { HashSet() }.add(s / periods)
+                    count[units[u].subject] = (count[units[u].subject] ?: 0) + 1
                 }
             }
             var cost = 0.0
-            perSubjectCount.forEach { (sub, n) ->
-                val ideal = minOf(perDay.count { it > 0 }, (n + 1) / 2)
-                val used = perSubjectDays[sub]?.size ?: 0
+            val openDays = perDay.count { it > 0 }
+            count.forEach { (sub, n) ->
+                val ideal = minOf(openDays, n)
+                val used = days[sub]?.size ?: 0
                 if (used < ideal) cost += 1.5 * (ideal - used)
             }
             return cost
-        }
-
-        fun dayCostAround(u: Int, s: Int): Double {
-            val unit = units[u]; val d = s / periods
-            var c = classDayCost(unit.classIdx, d) + subjectSpreadCost(unit.classIdx)
-            if (unit.teacherIdx >= 0) c += teacherDayCost(unit.teacherIdx, d)
-            return c
-        }
-
-        // 1) توزيع أولي جشع: الأساتذة الأكثر عبئًا والمواد الأكثر ساعات أولًا
-        val teacherLoad = IntArray(nT)
-        units.forEach { if (it.teacherIdx >= 0) teacherLoad[it.teacherIdx]++ }
-        val tieBreak = IntArray(units.size) { rnd.nextInt() }
-        val order = units.indices.sortedWith(
-            compareByDescending<Int> { if (units[it].teacherIdx >= 0) teacherLoad[units[it].teacherIdx] else 0 }
-                .thenBy { tieBreak[it] }
-        )
-        val unplacedUnits = ArrayList<Int>()
-        for (u in order) {
-            var best = -1; var bestCost = Double.MAX_VALUE
-            for (s in 0 until slots) {
-                if (!free(u, s)) continue
-                place(u, s)
-                val cost = dayCostAround(u, s) + rnd.nextDouble() * 0.3
-                remove(u)
-                if (cost < bestCost) { bestCost = cost; best = s }
-            }
-            if (best >= 0) place(u, best) else unplacedUnits += u
-        }
-
-        // 2) تحسين محلي (تلدين محاكى): نقل حصة إلى خانة فارغة، أو تبديل حصتين في نفس القسم
-        fun totalCost(): Double {
-            var c = 0.0
-            for (ci in 0 until nC) { for (d in 0 until dayCount) c += classDayCost(ci, d); c += subjectSpreadCost(ci) }
-            for (t in 0 until nT) for (d in 0 until dayCount) c += teacherDayCost(t, d)
-            return c
         }
 
         fun localCost(cls: Int, ts: List<Int>, days: Set<Int>): Double {
@@ -192,6 +178,30 @@ object TimetableGenerator {
             return c
         }
 
+        // 1) توزيع أولي جشع: حصص الساعتين أولًا، ثم الأساتذة الأكثر عبئًا
+        val teacherLoad = IntArray(nT)
+        units.forEach { if (it.teacherIdx >= 0) teacherLoad[it.teacherIdx] += it.size }
+        val tieBreak = IntArray(units.size) { rnd.nextInt() }
+        val order = units.indices.sortedWith(
+            compareByDescending<Int> { units[it].size }
+                .thenByDescending { if (units[it].teacherIdx >= 0) teacherLoad[units[it].teacherIdx] else 0 }
+                .thenBy { tieBreak[it] }
+        )
+        val unplacedUnits = ArrayList<Int>()
+        for (u in order) {
+            var best = -1; var bestCost = Double.MAX_VALUE
+            val unit = units[u]
+            for (s in 0 until slots) {
+                if (!free(u, s)) continue
+                place(u, s)
+                val cost = localCost(unit.classIdx, listOf(unit.teacherIdx), setOf(s / periods)) + rnd.nextDouble() * 0.3
+                remove(u)
+                if (cost < bestCost) { bestCost = cost; best = s }
+            }
+            if (best >= 0) place(u, best) else unplacedUnits += u
+        }
+
+        // 2) تحسين محلي (تلدين محاكى): نقل حصة إلى مكان فارغ، أو تبديل حصتين بنفس المدة في نفس القسم
         var temp = 2.0
         val cooling = Math.pow(0.01 / temp, 1.0 / iterations.coerceAtLeast(1))
         val placedUnits = units.indices.filter { pos[it] >= 0 }
@@ -200,11 +210,14 @@ object TimetableGenerator {
             val unit = units[u]
             val from = pos[u]
             val to = rnd.nextInt(slots)
-            if (to == from || !isOpen(to)) { temp *= cooling; return@repeat }
-            val other = classAt[unit.classIdx][to]
-            if (other < 0) {
-                // نقل إلى خانة فارغة في القسم
-                if (unit.teacherIdx >= 0 && teacherAt[unit.teacherIdx][to] != -1) { temp *= cooling; return@repeat }
+            if (to == from || !validStart(u, to)) { temp *= cooling; return@repeat }
+            val owner = classAt[unit.classIdx][to]
+            if (owner < 0 || owner == u) {
+                // نقل إلى مكان فارغ
+                remove(u)
+                val canMove = free(u, to)
+                place(u, from)
+                if (!canMove) { temp *= cooling; return@repeat }
                 val days = setOf(from / periods, to / periods)
                 val before = localCost(unit.classIdx, listOf(unit.teacherIdx), days)
                 remove(u); place(u, to)
@@ -212,33 +225,47 @@ object TimetableGenerator {
                 val delta = after - before
                 if (delta > 0 && rnd.nextDouble() >= exp(-delta / temp)) { remove(u); place(u, from) }
             } else {
-                // تبديل حصتين من نفس القسم
-                val o = units[other]
-                if (o.subject == unit.subject && o.teacherIdx == unit.teacherIdx) { temp *= cooling; return@repeat }
-                remove(u); remove(other)
-                val ok = (unit.teacherIdx < 0 || teacherAt[unit.teacherIdx][to] == -1) &&
-                    (o.teacherIdx < 0 || teacherAt[o.teacherIdx][from] == -1)
-                if (!ok) { place(u, from); place(other, to); temp *= cooling; return@repeat }
+                // تبديل مع حصة بنفس المدة تبدأ في نفس الخانة
+                val o = units[owner]
+                if (o.size != unit.size || pos[owner] != to || (o.subject == unit.subject && o.teacherIdx == unit.teacherIdx)) {
+                    temp *= cooling; return@repeat
+                }
+                remove(u); remove(owner)
+                var ok = free(u, to)
+                if (ok) { place(u, to); ok = free(owner, from); remove(u) }
+                place(u, from); place(owner, to)
+                if (!ok) { temp *= cooling; return@repeat }
                 val days = setOf(from / periods, to / periods)
                 val ts = listOf(unit.teacherIdx, o.teacherIdx)
-                place(u, from); place(other, to)
                 val before = localCost(unit.classIdx, ts, days)
-                remove(u); remove(other)
-                place(u, to); place(other, from)
+                remove(u); remove(owner)
+                place(u, to); place(owner, from)
                 val after = localCost(unit.classIdx, ts, days)
                 val delta = after - before
                 if (delta > 0 && rnd.nextDouble() >= exp(-delta / temp)) {
-                    remove(u); remove(other); place(u, from); place(other, to)
+                    remove(u); remove(owner); place(u, from); place(owner, to)
                 }
             }
             temp *= cooling
         }
 
-        // محاولة أخيرة لوضع ما لم يُوضع
-        val stillUnplaced = ArrayList<Int>()
+        // محاولة أخيرة: حصة لم تجد مكانًا تُوزَّع ساعاتها منفصلة حيث أمكن
+        val stillUnplaced = ArrayList<Pair<LessonUnit, Int>>()
+        val extraPlaced = ArrayList<Placed>()
         unplacedUnits.forEach { u ->
-            val s = (0 until slots).firstOrNull { free(u, it) }
-            if (s != null) place(u, s) else stillUnplaced += u
+            val unit = units[u]
+            var left = unit.size
+            for (s in 0 until slots) {
+                if (left == 0) break
+                val d = s / periods; val p = s % periods
+                if (p >= perDay[d] || classAt[unit.classIdx][s] != -1) continue
+                if (unit.teacherIdx >= 0 && teacherAt[unit.teacherIdx][s] != -1) continue
+                classAt[unit.classIdx][s] = u
+                if (unit.teacherIdx >= 0) teacherAt[unit.teacherIdx][s] = u
+                extraPlaced += Placed(classIds[unit.classIdx], d, p, unit.subject, unit.teacher)
+                left--
+            }
+            if (left > 0) stillUnplaced += unit to left
         }
 
         var gaps = 0
@@ -248,14 +275,16 @@ object TimetableGenerator {
             if (count > 0) gaps += last - first + 1 - count
         }
 
-        val placed = units.indices.filter { pos[it] >= 0 }.map { u ->
+        val placed = units.indices.filter { pos[it] >= 0 }.flatMap { u ->
             val unit = units[u]
-            Placed(classIds[unit.classIdx], pos[u] / periods, pos[u] % periods, unit.subject, unit.teacher)
+            (0 until unit.size).map { k ->
+                val s = pos[u] + k
+                Placed(classIds[unit.classIdx], s / periods, s % periods, unit.subject, unit.teacher)
+            }
+        } + extraPlaced
+        val unplaced = stillUnplaced.groupBy { it.first.classIdx to it.first.subject }.map { (k, list) ->
+            Lesson(classIds[k.first], k.second, list.first().first.teacher, list.sumOf { it.second })
         }
-        val unplaced = stillUnplaced.groupBy { units[it].classIdx to units[it].subject }.map { (k, list) ->
-            Lesson(classIds[k.first], k.second, units[list.first()].teacher, list.size)
-        }
-        @Suppress("UNUSED_VARIABLE") val finalCost = totalCost()
         return Result(placed, unplaced, gaps, overloaded)
     }
 

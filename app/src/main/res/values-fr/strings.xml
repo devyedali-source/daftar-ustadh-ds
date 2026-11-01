@@ -420,7 +420,7 @@
     <string name="tt_capacity">Séances par semaine : %1$d — max d\'heures d\'une classe : %2$d</string>
     <string name="tt_classes_count">Classes : %1$d</string>
     <string name="tt_missing_teachers">%1$d matières sans professeur : réparties sans contrôle de conflit. Affectez-les dans « Professeurs ».</string>
-    <string name="tt_fair_rules">Répartition équitable : heures de chaque professeur consécutives, séances de la classe continues dès le début de la journée, une matière ≤ 2 h par jour et répartie sur la semaine.</string>
+    <string name="tt_fair_rules">Répartition équitable : la séance dure le plus souvent 2 h consécutives sans récréation au milieu, l\'heure impaire forme une séance d\'1 h. Heures de chaque professeur consécutives, séances de la classe continues dès le début de la journée, une matière ≤ 2 h par jour et répartie sur la semaine.</string>
     <string name="tt_generate">Générer l\'emploi du temps</string>
     <string name="tt_generating">Génération…</string>
     <string name="tt_replace_confirm">Un emploi du temps existe. La nouvelle génération remplacera celui de toutes les classes. Continuer ?</string>

@@ -338,7 +338,8 @@ class MainActivity : AppCompatActivity() {
                         }
                         val result = withContext(Dispatchers.Default) {
                             com.elyedali.daftarustadh.timetable.TimetableGenerator.generate(lessons, settings.days.size, settings.periods,
-                                periodsPerDay = settings.days.map { settings.periodsOn(it) })
+                                periodsPerDay = settings.days.map { settings.periodsOn(it) },
+                                doubleStarts = settings.doubleStarts())
                         }
                         val newSlots = result.placed.map {
                             com.elyedali.daftarustadh.data.TimetableSlotEntity(it.classId, settings.days[it.day], it.period, it.subjectCode, it.teacher)

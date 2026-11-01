@@ -127,6 +127,9 @@ data class TimetableSettings(
 
     fun label(period: Int): String = "${hhmm(start(period))}-${hhmm(end(period))}"
 
+    /** الحصص التي يمكن أن تبدأ بها حصة من ساعتين: هي والتي تليها بلا استراحة بينهما. */
+    fun doubleStarts(): Set<Int> = (0 until periods - 1).filter { end(it) == start(it + 1) }.toSet()
+
     /** الاستراحات: الفراغ بين نهاية حصة وبداية التي تليها. */
     fun breakBefore(period: Int): Int = if (period <= 0) 0 else (start(period) - end(period - 1)).coerceAtLeast(0)
 
