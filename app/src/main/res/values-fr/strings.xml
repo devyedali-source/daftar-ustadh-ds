@@ -581,4 +581,18 @@
     <string name="ac_no_absence">Aucune absence sur cette période.</string>
     <string name="ac_roll">N° d\'appel %1$d</string>
     <string name="file_is_pdf">Ce PDF est un document ordinaire (lecture ou impression), pas un fichier de données دفتر الأستاذ DS.\nLes fichiers de l\'application portent la mention « ملف بيانات من تطبيق دفتر الأستاذ DS ».</string>
+    <string name="guide_title">Quel mode choisir ?</string>
+    <string name="guide_short">Touchez ici pour comprendre la différence entre les deux modes et comment passer de l\'un à l\'autre.</string>
+    <string name="guide_admin_title">🏫 Mode administration — pour qui gère l\'établissement</string>
+    <string name="guide_admin">Pour le directeur, le directeur des études et le surveillant général. Enregistrez l\'établissement une fois, créez les classes et les élèves, préparez et validez l\'emploi du temps, envoyez à chaque professeur ses registres et son emploi du temps, importez ses registres remplis, saisissez les absences et imprimez bulletins et documents.</string>
+    <string name="guide_teacher_title">👨‍🏫 Mode professeur — pour qui enseigne</string>
+    <string name="guide_teacher">Enregistrez vos informations une fois, puis ouvrez le fichier envoyé par l\'administration par WhatsApp : vous y trouvez vos classes, matières et emploi du temps. Saisissez les notes et envoyez le registre de chaque matière à l\'administration. Si vous enseignez dans plusieurs établissements, toutes vos classes sont ici.</string>
+    <string name="guide_both_title">👥 Si vous êtes administratif et enseignant</string>
+    <string name="guide_both">Utilisez les deux modes sur le même téléphone : l\'administration pour gérer l\'établissement, le mode professeur pour vos classes. Les données de chaque mode sont séparées.</string>
+    <string name="guide_one_title">☝️ Si vous n\'avez qu\'un rôle</string>
+    <string name="guide_one">Entrez seulement dans votre mode. Le professeur n\'a pas besoin du mode administration, et l\'administratif qui n\'enseigne pas n\'a pas besoin du mode professeur.</string>
+    <string name="guide_move_title">🔄 Comment passer d\'un mode à l\'autre ?</string>
+    <string name="guide_move">Dans un mode : touchez « Passer à l\'autre mode » sous les outils, ou le bouton retour pour revenir à cette page. De partout : menu latéral ← « Accueil et classes ». Le mode actuel est écrit en haut de chaque page.</string>
+    <string name="mode_switch_to_teacher">Passer au mode professeur</string>
+    <string name="mode_switch_to_admin">Passer au mode administration</string>
 </resources>

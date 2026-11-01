@@ -38,6 +38,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SmallFloatingActionButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -198,6 +199,7 @@ fun HomeYearsScreen(
                             ModeCard("👨‍🏫", stringResource(R.string.mode_teacher), stringResource(R.string.mode_teacher_desc),
                                 inYear.count { it.teaching }, Color(0xFFF3E5F5), Color(0xFF6A1B9A)) { onSelectMode(MODE_TEACHER) }
                         }
+                        item { ModesGuide() }
                     }
                 } else {
                     val yearClasses = classes.filter { it.schoolYear == selectedYear && (if (mode == MODE_ADMIN) it.managed else it.teaching) }
@@ -245,6 +247,11 @@ fun HomeYearsScreen(
                                         tools.forEach { (key, label) ->
                                             AssistChip(onClick = { onTool(key) }, label = { Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold) })
                                         }
+                                    }
+                                    // التنقل بين الوضعين لمن يجمع بين الإدارة والتدريس
+                                    TextButton(onClick = { onSelectMode(if (mode == MODE_ADMIN) MODE_TEACHER else MODE_ADMIN) }) {
+                                        Text("🔄 " + stringResource(if (mode == MODE_ADMIN) R.string.mode_switch_to_teacher else R.string.mode_switch_to_admin),
+                                            fontSize = 13.sp, fontWeight = FontWeight.Bold)
                                     }
                                 }
                             }
@@ -323,6 +330,36 @@ fun HomeYearsScreen(
             onConfirm = { onDeleteClass(c); toDelete = null },
             onDismiss = { toDelete = null }
         )
+    }
+}
+
+/** شرح الوضعين: لمن كل وضع، وكيف يتنقل من يجمع بينهما. */
+@Composable
+private fun ModesGuide() {
+    var open by remember { mutableStateOf(false) }
+    Card(
+        Modifier.fillMaxWidth().clickable { open = !open }, shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF8E1)),
+        elevation = CardDefaults.cardElevation(1.dp)
+    ) {
+        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text("💡 " + stringResource(R.string.guide_title) + if (open) "  ▲" else "  ▼",
+                fontWeight = FontWeight.Black, fontSize = 15.sp, color = Color(0xFF8D6E00))
+            if (open) {
+                listOf(
+                    R.string.guide_admin_title to R.string.guide_admin,
+                    R.string.guide_teacher_title to R.string.guide_teacher,
+                    R.string.guide_both_title to R.string.guide_both,
+                    R.string.guide_one_title to R.string.guide_one,
+                    R.string.guide_move_title to R.string.guide_move
+                ).forEach { (t, b) ->
+                    Text(stringResource(t), fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                    Text(stringResource(b), fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+            } else {
+                Text(stringResource(R.string.guide_short), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+        }
     }
 }
 
