@@ -167,15 +167,17 @@ class MainActivity : AppCompatActivity() {
                 val inst = institution
                 val isFrUi = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
 
-                val managedFlow = remember(inst?.schoolYear) {
-                    if (inst == null) flowOf(emptyList()) else classDao.observeManaged(inst.schoolYear)
-                }
-                val managedClasses by managedFlow.collectAsState(initial = emptyList())
                 val teachingClasses by remember { classDao.observeTeaching() }.collectAsState(initial = emptyList())
                 val allClasses by remember { classDao.observeAll() }.collectAsState(initial = emptyList())
                 val homeGenderCounts by remember { studentDao.observeGenderCounts() }.collectAsState(initial = emptyList())
                 var selectedYear by rememberSaveable { mutableStateOf<String?>(null) }
                 var homeMode by rememberSaveable { mutableStateOf<String?>(null) }  // admin / teacher
+                /** سنة عمل الإدارة: السنة المختارة في وضع الإدارة، وإلا سنة المؤسسة. كل أدوات الإدارة تعمل عليها. */
+                val adminYear: String? = selectedYear?.takeIf { homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN } ?: inst?.schoolYear
+                val managedFlow = remember(inst?.id, adminYear) {
+                    if (inst == null || adminYear == null) flowOf(emptyList()) else classDao.observeManaged(adminYear)
+                }
+                val managedClasses by managedFlow.collectAsState(initial = emptyList())
                 var showCreateClass by remember { mutableStateOf(false) }
                 val currentClassFlow = remember(classId) { classId?.let { classDao.observeById(it) } ?: flowOf(null) }
                 val currentClass: ClassEntity? by currentClassFlow.collectAsState(initial = null)
@@ -518,11 +520,11 @@ class MainActivity : AppCompatActivity() {
                         val bytes = withContext(Dispatchers.Default) {
                             timetablePdf(
                                 "جدول الأستاذ: $teacher — Emploi du temps du professeur",
-                                "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — السنة الدراسية: \u2066${owner.schoolYear}\u2069",
-                                "Établissement : ${owner.schoolName} — Année scolaire : ${owner.schoolYear}"
+                                "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — السنة الدراسية: \u2066${adminYear ?: owner.schoolYear}\u2069",
+                                "Établissement : ${owner.schoolName} — Année scolaire : ${adminYear ?: owner.schoolYear}"
                             ) { d, p -> mine[d to p]?.let { l -> val (ar, fr) = subjectArFr(l.first().subjectCode); l.joinToString(" / ") { names[it.classId].orEmpty() } + "\n$ar\n$fr" }.orEmpty() }
                         }
-                        val name = "جدول الأستاذ $teacher - Emploi du temps - ${owner.schoolName} - ${owner.schoolYear}.pdf"
+                        val name = "جدول الأستاذ $teacher - Emploi du temps - ${owner.schoolName} - ${adminYear ?: owner.schoolYear}.pdf"
                             .replace(Regex("[\\\\/:*?\"<>|]"), " ")
                         ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.tt_title), "application/pdf")
                     }
@@ -568,7 +570,7 @@ class MainActivity : AppCompatActivity() {
                     val st = ttSettings
                     return com.elyedali.daftarustadh.transfer.TimetableFile(
                         institutionId = owner.id, schoolName = owner.schoolName, wilaya = owner.wilaya,
-                        schoolYear = owner.schoolYear, teacherName = teacher,
+                        schoolYear = adminYear ?: owner.schoolYear, teacherName = teacher,
                         entries = ttSlots.filter { it.teacherName == teacher && it.classId in names }.map { s ->
                             val (ar, fr) = subjectArFr(s.subjectCode)
                             com.elyedali.daftarustadh.transfer.TimetableFileEntry(
@@ -757,7 +759,7 @@ class MainActivity : AppCompatActivity() {
                     val timetable = buildTeacherTimetable(t.name)
                     scope.launch {
                         val bundle = com.elyedali.daftarustadh.transfer.TeacherBundle(
-                            teacherName = t.name, schoolName = owner.schoolName, schoolYear = owner.schoolYear,
+                            teacherName = t.name, schoolName = owner.schoolName, schoolYear = adminYear ?: owner.schoolYear,
                             classes = classes.map { c ->
                                 ClassFile(ClassFileType.TEACHER, owner, c, studentDao.listByClass(c.id)) to
                                     mine.filter { it.classId == c.id }.map { it.subjectCode }
@@ -804,7 +806,7 @@ class MainActivity : AppCompatActivity() {
                         try {
                             val seal = sealBitmap
                             val dir = ShareHelper.freshShareDir(this@MainActivity)
-                            val tag = "${owner.schoolName} - ${owner.schoolYear}".replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                            val tag = "${owner.schoolName} - ${adminYear ?: owner.schoolYear}".replace(Regex("[\\\\/:*?\"<>|]"), " ")
                             val students = classes.associate { it.id to studentDao.listByClass(it.id) }
                             val files = ArrayList<java.io.File>()
                             withContext(Dispatchers.Default) {
@@ -831,8 +833,8 @@ class MainActivity : AppCompatActivity() {
                                             val mine = ttManagedSlots.filter { it.teacherName == t }.groupBy { it.day to it.period }
                                             val info = timetableInfo(
                                                 "جدول الأستاذ: $t — Emploi du temps du professeur",
-                                                "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — السنة الدراسية: ⁦${owner.schoolYear}⁩",
-                                                "Établissement : ${owner.schoolName} — Année scolaire : ${owner.schoolYear}"
+                                                "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — السنة الدراسية: ⁦${adminYear ?: owner.schoolYear}⁩",
+                                                "Établissement : ${owner.schoolName} — Année scolaire : ${adminYear ?: owner.schoolYear}"
                                             ) { d, p -> mine[d to p]?.let { l -> val (ar, fr) = subjectArFr(l.first().subjectCode); l.joinToString(" / ") { names[it.classId].orEmpty() } + "\n$ar\n$fr" }.orEmpty() }
                                             no = com.elyedali.daftarustadh.pdf.TimetablePdf.drawInto(doc, no, info.copy(seal = seal))
                                         }
@@ -840,7 +842,7 @@ class MainActivity : AppCompatActivity() {
                                     files += f
                                 }
                                 if (choice.absence) {
-                                    val months = schoolMonths(owner.schoolYear)
+                                    val months = schoolMonths(adminYear ?: owner.schoolYear)
                                     val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
                                     val f = java.io.File(dir, "دفتر الغياب - Registre d'appel - $tag.pdf")
                                     com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
@@ -955,7 +957,7 @@ class MainActivity : AppCompatActivity() {
                                 .map { AbsenceSubject(it.code, subjectName(it.code)) }
                         },
                         subjectLabel = { subjectName(it) },
-                        yearStart = (inst?.schoolYear?.take(4) ?: "2026") + "-10-01",
+                        yearStart = ((adminYear ?: inst?.schoolYear)?.take(4) ?: "2026") + "-10-01",
                         onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
                         onBack = { screen = Screen.HOME }
                     )
