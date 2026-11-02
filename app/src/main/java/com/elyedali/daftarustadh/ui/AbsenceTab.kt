@@ -91,8 +91,13 @@ fun AbsenceTab(
     onDelete: (sessionId: String) -> Unit,
     onSend: ((subjectCode: String) -> Unit)?,
     onUpload: (() -> Unit)?,
-    onChooseSubjects: (() -> Unit)?
+    onChooseSubjects: (() -> Unit)?,
+    /** للإدارة: إبلاغ وكلاء غائبي الحصة عبر واتساب. */
+    className: String = "",
+    schoolName: String = ""
 ) {
+    var notifySession by remember { mutableStateOf<AbsenceSessionEntity?>(null) }
+    val whenLabel = stringResource(R.string.gn_when)
     val codes = remember(subjects) { subjects.map { it.code }.toSet() }
     val labels = remember(subjects) { subjects.associate { it.code to it.label } }
     // الأستاذ لا يرى إلا حصص موادّه
@@ -225,6 +230,9 @@ fun AbsenceTab(
                         )
                         if (s.recordedBy.isNotBlank()) Text(stringResource(R.string.abs_recorded_by, s.recordedBy),
                             fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        if (isAdmin && absent.isNotEmpty()) TextButton(onClick = { notifySession = s }) {
+                            Text("📩 " + stringResource(R.string.gn_button, absent.size), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                        }
                     }
                 }
             }
@@ -251,6 +259,15 @@ fun AbsenceTab(
                 }
             }
         }
+    }
+    notifySession?.let { ns ->
+        val ids = absences.filter { it.sessionId == ns.id }.map { it.studentId }.toSet()
+        GuardianNotifyDialog(
+            absent = students.filter { it.id in ids },
+            className = className,
+            schoolName = schoolName,
+            whenText = whenLabel.format("\u2066${displayDate(ns.date)}\u2069", ns.period, labels[ns.subjectCode] ?: ns.subjectCode)
+        ) { notifySession = null }
     }
 }
 

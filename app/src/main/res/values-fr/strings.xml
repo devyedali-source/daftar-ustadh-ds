@@ -67,8 +67,8 @@
     <string name="name_fr">Nom en français</string>
     <string name="rim">Matricule (RIM)</string>
     <string name="national_id">NNI</string>
-    <string name="guardian_phone_1">Téléphone du tuteur 1</string>
-    <string name="guardian_phone_2">Téléphone du tuteur 2</string>
+    <string name="guardian_phone_1">WhatsApp du tuteur (avis d\'absence)</string>
+    <string name="guardian_phone_2">Autre téléphone du tuteur</string>
     <string name="field_ignore">Ignorer</string>
     <string name="import_title">Importer les élèves de %1$s</string>
     <string name="import_intro">Choisissez un fichier Excel (.xlsx) ou CSV contenant la liste des élèves. L\'application reconnaîtra les colonnes, puis vous les vérifierez avant l\'enregistrement.</string>
@@ -647,4 +647,15 @@
     <string name="mi_remind">Le relancer par WhatsApp</string>
     <string name="mi_no_phone">Pas de numéro WhatsApp pour ce professeur (ajoutez-le dans « Professeurs »).</string>
     <string name="mi_no_teacher">Matières sans professeur attribué : %1$s</string>
+    <string name="photo_take">Photographier</string>
+    <string name="photo_pick">Photo du téléphone</string>
+    <string name="photo_delete">Supprimer la photo</string>
+    <string name="gn_title">Prévenir les tuteurs des absents (%1$d)</string>
+    <string name="gn_button">Prévenir les tuteurs des absents par WhatsApp (%1$d)</string>
+    <string name="gn_send">Prévenir</string>
+    <string name="gn_no_phone">Pas de WhatsApp du tuteur</string>
+    <string name="gn_when">le %1$s — séance %2$d — %3$s</string>
+    <string name="gn_message">Bonjour,\nNous vous informons que l\'élève %1$s de la classe %2$s a été absent(e) %3$s.\nL\'administration de %4$s</string>
+    <string name="ps_cards">Cartes d\'élèves de toutes les classes</string>
+    <string name="ps_cards_note">Dix cartes par page : nom, matricule, classe, N° d\'appel et photo (%1$d élèves, dont %2$d avec photo).</string>
 </resources>

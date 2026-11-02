@@ -67,8 +67,8 @@
     <string name="name_fr">الاسم بالفرنسية</string>
     <string name="rim">الرقم المدرسي (RIM)</string>
     <string name="national_id">الرقم الوطني</string>
-    <string name="guardian_phone_1">هاتف الوكيل 1</string>
-    <string name="guardian_phone_2">هاتف الوكيل 2</string>
+    <string name="guardian_phone_1">واتساب الوكيل (لإبلاغه بالغياب)</string>
+    <string name="guardian_phone_2">هاتف آخر للوكيل</string>
     <string name="field_ignore">تجاهل</string>
     <string name="import_title">استيراد طلاب %1$s</string>
     <string name="import_intro">اختر ملف Excel (‎.xlsx) أو CSV فيه لائحة الطلاب. سيتعرّف التطبيق على الأعمدة، ثم تراجعها قبل الحفظ.</string>
@@ -647,4 +647,15 @@
     <string name="mi_remind">تذكيره عبر واتساب</string>
     <string name="mi_no_phone">لا يوجد رقم واتساب لهذا الأستاذ (أضفه في «أساتذة المواد»).</string>
     <string name="mi_no_teacher">مواد بلا أستاذ معيّن لهذا القسم: %1$s</string>
+    <string name="photo_take">تصوير الطالب</string>
+    <string name="photo_pick">صورة من الهاتف</string>
+    <string name="photo_delete">حذف الصورة</string>
+    <string name="gn_title">إبلاغ وكلاء الغائبين (%1$d)</string>
+    <string name="gn_button">إبلاغ وكلاء الغائبين عبر واتساب (%1$d)</string>
+    <string name="gn_send">إبلاغ</string>
+    <string name="gn_no_phone">لا يوجد رقم واتساب للوكيل</string>
+    <string name="gn_when">يوم %1$s — الحصة %2$d — %3$s</string>
+    <string name="gn_message">السلام عليكم ورحمة الله،\nنُعلمكم أن الطالب(ة) %1$s من القسم %2$s تغيّب(ت) %3$s.\nإدارة %4$s</string>
+    <string name="ps_cards">بطاقات الطلاب لجميع الأقسام</string>
+    <string name="ps_cards_note">عشر بطاقات في كل صفحة: الاسم، الرقم المدرسي، القسم، رقم النداء والصورة (%1$d طالبًا، منهم %2$d بصورة).</string>
 </resources>

@@ -37,6 +37,11 @@ import com.elyedali.daftarustadh.R
 import com.elyedali.daftarustadh.data.ClassEntity
 import com.elyedali.daftarustadh.data.StudentEntity
 import com.elyedali.daftarustadh.data.Gender
+import androidx.compose.ui.draw.clip
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.unit.sp
 import java.util.UUID
 
 /** طلاب القسم: لائحة، إضافة، تعديل، حذف بالرمز 9999، واستيراد من Excel. */
@@ -156,6 +161,19 @@ private fun StudentEditDialog(
     onDelete: (() -> Unit)?,
     onDismiss: () -> Unit
 ) {
+    val context = androidx.compose.ui.platform.LocalContext.current
+    // معرّف الطالب ثابت من الآن: تُحفظ صورته باسمه حتى قبل الحفظ
+    val studentId = remember { existing?.id ?: UUID.randomUUID().toString() }
+    var photoVersion by remember { mutableStateOf(0) }
+    val photo = remember(photoVersion) { com.elyedali.daftarustadh.data.StudentPhotos.load(context, studentId) }
+    fun onPicked(uri: android.net.Uri?) {
+        if (uri != null && com.elyedali.daftarustadh.data.StudentPhotos.save(context, studentId, uri)) photoVersion++
+    }
+    val pickPhoto = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.GetContent()) { onPicked(it) }
+    var cameraUri by remember { mutableStateOf<android.net.Uri?>(null) }
+    val takePhoto = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.TakePicture()) { ok -> if (ok) onPicked(cameraUri) }
     val suggestedRoll = (others.maxOfOrNull { it.rollNumber } ?: 0) + 1
     var roll by remember { mutableStateOf((existing?.rollNumber ?: suggestedRoll).toString()) }
     var nameAr by remember { mutableStateOf(existing?.nameAr ?: "") }
@@ -177,6 +195,30 @@ private fun StudentEditDialog(
         title = { Text(stringResource(if (existing == null) R.string.add_student else R.string.edit_student)) },
         text = {
             Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                // صورة الطالب (لبطاقة الطالب)
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                    androidx.compose.foundation.layout.Box(
+                        Modifier.size(64.dp, 80.dp).clip(androidx.compose.foundation.shape.RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.surfaceVariant),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        if (photo != null) androidx.compose.foundation.Image(photo.asImageBitmap(), null,
+                            Modifier.fillMaxSize(), contentScale = androidx.compose.ui.layout.ContentScale.Crop)
+                        else Text("👤", fontSize = 28.sp)
+                    }
+                    Column {
+                        TextButton(onClick = {
+                            val dir = java.io.File(context.cacheDir, "photos").apply { mkdirs() }
+                            val f = java.io.File(dir, "student-${System.currentTimeMillis()}.jpg")
+                            val uri = androidx.core.content.FileProvider.getUriForFile(context, context.packageName + ".files", f)
+                            cameraUri = uri
+                            try { takePhoto.launch(uri) } catch (e: Exception) { pickPhoto.launch("image/*") }
+                        }) { Text("📷 " + stringResource(R.string.photo_take)) }
+                        TextButton(onClick = { pickPhoto.launch("image/*") }) { Text("🖼️ " + stringResource(R.string.photo_pick)) }
+                        if (photo != null) TextButton(onClick = {
+                            com.elyedali.daftarustadh.data.StudentPhotos.delete(context, studentId); photoVersion++
+                        }) { Text(stringResource(R.string.photo_delete), color = MaterialTheme.colorScheme.error) }
+                    }
+                }
                 OutlinedTextField(roll, { roll = it.filter(Char::isDigit).take(3) }, label = { Text(stringResource(R.string.roll_number)) },
                     singleLine = true, keyboardOptions = digits, isError = rollTaken,
                     supportingText = { if (rollTaken) Text(stringResource(R.string.roll_taken)) },
@@ -203,7 +245,7 @@ private fun StudentEditDialog(
             TextButton(enabled = canSave, onClick = {
                 onSave(
                     StudentEntity(
-                        id = existing?.id ?: UUID.randomUUID().toString(),
+                        id = studentId,
                         classId = classId,
                         rollNumber = rollNumber!!,
                         nameAr = nameAr.trim(),

@@ -60,4 +60,7 @@ dependencies {
 
     // قراءة أرقام النداء والنقاط من صورة ورقة الأستاذ (على الهاتف، بلا إنترنت)
     implementation("com.google.mlkit:text-recognition:16.0.1")
+
+    // تدوير صور الطلاب حسب اتجاه الكاميرا
+    implementation("androidx.exifinterface:exifinterface:1.3.7")
 }

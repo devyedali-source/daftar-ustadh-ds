@@ -36,7 +36,8 @@ import androidx.compose.ui.unit.sp
 import com.elyedali.daftarustadh.R
 
 /** ما تختاره الإدارة لإرساله إلى الوراقة. */
-data class PrintChoice(val records: Boolean, val timetables: Boolean, val absence: Boolean, val textbook: Boolean, val textbookPages: Int)
+data class PrintChoice(val records: Boolean, val timetables: Boolean, val absence: Boolean, val textbook: Boolean, val textbookPages: Int,
+                       val cards: Boolean = false)
 
 /** وثيقة في صفحة الوراقة: هل هي جاهزة، وما الذي ينقصها. */
 data class PrintItem(val ready: Boolean, val note: String)
@@ -51,6 +52,7 @@ fun PrintShopScreen(
     timetables: PrintItem,
     absence: PrintItem,
     textbook: PrintItem,
+    cards: PrintItem,
     working: Boolean,
     onShare: (PrintChoice) -> Unit,
     onOpenTimetable: () -> Unit,
@@ -61,7 +63,8 @@ fun PrintShopScreen(
     var abs by rememberSaveable { mutableStateOf(absence.ready) }
     var tb by rememberSaveable { mutableStateOf(textbook.ready) }
     var pages by rememberSaveable { mutableIntStateOf(20) }
-    val any = (rec && records.ready) || (tt && timetables.ready) || (abs && absence.ready) || (tb && textbook.ready)
+    var cd by rememberSaveable { mutableStateOf(false) }
+    val any = (rec && records.ready) || (tt && timetables.ready) || (abs && absence.ready) || (tb && textbook.ready) || (cd && cards.ready)
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize()) {
@@ -85,8 +88,10 @@ fun PrintShopScreen(
                     Text("$pages", fontWeight = FontWeight.Black, fontSize = 17.sp)
                     OutlinedButton(onClick = { if (pages < 200) pages += 5 }, enabled = pages < 200) { Text("+") }
                 }
+                Option("🪪", stringResource(R.string.ps_cards), cards, cd) { cd = it }
                 Button(
-                    onClick = { onShare(PrintChoice(rec && records.ready, tt && timetables.ready, abs && absence.ready, tb && textbook.ready, pages)) },
+                    onClick = { onShare(PrintChoice(rec && records.ready, tt && timetables.ready, abs && absence.ready, tb && textbook.ready, pages,
+                        cd && cards.ready)) },
                     enabled = any && !working,
                     modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)
                 ) {

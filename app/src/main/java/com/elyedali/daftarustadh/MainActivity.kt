@@ -249,6 +249,7 @@ class MainActivity : AppCompatActivity() {
                         gradeDao.deleteRecordsByClass(c.id)
                         documentDao.deleteByClass(c.id)
                         gradeDao.deleteTeacherSubjectsByClass(c.id)
+                        studentDao.listByClass(c.id).forEach { com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, it.id) }
                         studentDao.deleteByClass(c.id)
                         absenceDao.deleteAbsencesByClass(c.id)
                         absenceDao.deleteSessionsByClass(c.id)
@@ -917,6 +918,21 @@ class MainActivity : AppCompatActivity() {
                                     }
                                     files += f
                                 }
+                                if (choice.cards) {
+                                    val f = java.io.File(dir, "بطاقات الطلاب - Cartes d'élèves - $tag.pdf")
+                                    val info = com.elyedali.daftarustadh.pdf.StudentCardPdf.Info(owner.schoolName, adminYear ?: owner.schoolYear, seal)
+                                    com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
+                                        val cards = classes.flatMap { c ->
+                                            students[c.id].orEmpty().sortedBy { it.rollNumber }.map { s ->
+                                                com.elyedali.daftarustadh.pdf.StudentCardPdf.Card(
+                                                    s.nameAr.ifBlank { s.nameFr }, if (s.nameAr.isNotBlank()) s.nameFr else "", s.rim, c.name, s.rollNumber,
+                                                    { com.elyedali.daftarustadh.data.StudentPhotos.load(this@MainActivity, s.id) })
+                                            }
+                                        }
+                                        com.elyedali.daftarustadh.pdf.StudentCardPdf.drawInto(doc, 1, cards, info)
+                                    }
+                                    files += f
+                                }
                                 if (choice.textbook) {
                                     val f = java.io.File(dir, "دفتر النصوص - Cahier de textes - $tag.pdf")
                                     com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
@@ -1037,7 +1053,8 @@ class MainActivity : AppCompatActivity() {
                         subjectLabel = { subjectName(it) },
                         yearStart = ((adminYear ?: inst?.schoolYear)?.take(4) ?: "2026") + "-10-01",
                         onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
-                        onBack = { screen = Screen.HOME }
+                        onBack = { screen = Screen.HOME },
+                        schoolName = inst?.schoolName.orEmpty()
                     )
 
                     screen == Screen.PRINT_SHOP -> {
@@ -1066,6 +1083,14 @@ class MainActivity : AppCompatActivity() {
                             textbook = com.elyedali.daftarustadh.ui.PrintItem(
                                 ready = n > 0,
                                 note = if (n == 0) getString(R.string.ps_no_classes) else getString(R.string.ps_textbook_note, n)),
+                            cards = run {
+                                val total = homeGenderCounts.filter { gc -> managedClasses.any { it.id == gc.classId } }.sumOf { it.count }
+                                val withPhoto = allStudents.count { com.elyedali.daftarustadh.data.StudentPhotos.exists(this@MainActivity, it.id) }
+                                com.elyedali.daftarustadh.ui.PrintItem(
+                                    ready = total > 0,
+                                    note = if (total == 0) getString(R.string.ps_no_classes) else getString(R.string.ps_cards_note, total, withPhoto)
+                                )
+                            },
                             working = printWorking,
                             onShare = { shareWithPrintShop(it) },
                             onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.PRINT_SHOP; screen = Screen.TIMETABLE },
@@ -1319,7 +1344,7 @@ class MainActivity : AppCompatActivity() {
                                         schoolClass = c,
                                         students = students,
                                         onSave = { s -> scope.launch { studentDao.save(s) } },
-                                        onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s) } },
+                                        onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
                                         onImport = { screen = Screen.IMPORT },
                                         onShowSubjects = { showSubjects = true },
                                         onBack = { screen = hubBack },
@@ -1369,7 +1394,9 @@ class MainActivity : AppCompatActivity() {
                                     onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
                                     onSend = null,
                                     onUpload = null,
-                                    onChooseSubjects = null
+                                    onChooseSubjects = null,
+                                    className = c.name,
+                                    schoolName = schoolNames[c.institutionId].orEmpty()
                                 )
                                 3 -> {
                                     // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)
@@ -1482,7 +1509,7 @@ class MainActivity : AppCompatActivity() {
                             schoolClass = c,
                             students = students,
                             onSave = { s -> scope.launch { studentDao.save(s) } },
-                            onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s) } },
+                            onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
                             onImport = { screen = Screen.IMPORT },
                             onShowSubjects = { showSubjects = true },
                             onBack = { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES },

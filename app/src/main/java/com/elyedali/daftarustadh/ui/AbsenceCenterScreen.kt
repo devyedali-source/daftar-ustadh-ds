@@ -107,7 +107,8 @@ fun AbsenceCenterScreen(
     subjectLabel: (String) -> String,
     yearStart: String,
     onSave: (AbsenceSessionEntity, Set<String>) -> Unit,
-    onBack: () -> Unit
+    onBack: () -> Unit,
+    schoolName: String = ""
 ) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -131,7 +132,7 @@ fun AbsenceCenterScreen(
                 Text(stringResource(R.string.ps_no_classes), Modifier.padding(24.dp), color = MaterialTheme.colorScheme.error)
                 return@Column
             }
-            if (tab == 0) EntryTab(classes, students, sessions, absences, settings, slots, subjectsOf, subjectLabel, onSave)
+            if (tab == 0) EntryTab(classes, students, sessions, absences, settings, slots, subjectsOf, subjectLabel, onSave, schoolName)
             else TopTab(classes, students, sessions, absences, yearStart)
         }
     }
@@ -147,8 +148,10 @@ private fun EntryTab(
     slots: List<TimetableSlotEntity>,
     subjectsOf: (ClassEntity) -> List<AbsenceSubject>,
     subjectLabel: (String) -> String,
-    onSave: (AbsenceSessionEntity, Set<String>) -> Unit
+    onSave: (AbsenceSessionEntity, Set<String>) -> Unit,
+    schoolName: String
 ) {
+    val whenLabel = stringResource(R.string.gn_when)
     var classId by rememberSaveable { mutableStateOf(classes.first().id) }
     val cls = classes.firstOrNull { it.id == classId } ?: classes.first()
     var date by rememberSaveable { mutableStateOf(today()) }
@@ -156,6 +159,11 @@ private fun EntryTab(
     var chosenSubject by rememberSaveable { mutableStateOf<String?>(null) }
     var numbers by rememberSaveable { mutableStateOf("") }
     var saved by remember { mutableStateOf<String?>(null) }
+    // غائبو آخر حصة حُفظت ووصفها: لإبلاغ وكلائهم
+    var lastAbsent by remember { mutableStateOf<List<StudentEntity>>(emptyList()) }
+    var lastWhen by remember { mutableStateOf("") }
+    var lastClass by remember { mutableStateOf("") }
+    var notify by remember { mutableStateOf(false) }
 
     val day = weekday(date)
     val periodsToday = if (day in settings.days) settings.periodsOn(day) else 0
@@ -262,6 +270,9 @@ private fun EntryTab(
                             absentStudents.map { it.id }.toSet()
                         )
                         saved = "${cls.name} — ${show(date)} — $period"
+                        lastAbsent = absentStudents
+                        lastClass = cls.name
+                        lastWhen = whenLabel.format("\u2066${show(date)}\u2069", period, subjectLabel(subject))
                         numbers = ""
                         // الحصة التالية مباشرة لتسجيل الورقة الموالية
                         if (period < periodsToday) { period += 1; chosenSubject = null }
@@ -272,7 +283,13 @@ private fun EntryTab(
             }
         }
         saved?.let { s -> item { Text("✅ " + stringResource(R.string.ac_saved, s), color = Green, fontWeight = FontWeight.Bold) } }
+        if (saved != null && lastAbsent.isNotEmpty()) item {
+            OutlinedButton(onClick = { notify = true }, modifier = Modifier.fillMaxWidth()) {
+                Text("📩 " + stringResource(R.string.gn_button, lastAbsent.size), fontWeight = FontWeight.Bold)
+            }
+        }
     }
+    if (notify) GuardianNotifyDialog(lastAbsent, lastClass, schoolName, lastWhen) { notify = false }
 }
 
 @Composable
