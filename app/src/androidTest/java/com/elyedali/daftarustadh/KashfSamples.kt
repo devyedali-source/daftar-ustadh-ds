@@ -41,7 +41,7 @@ class KashfSamples {
             }
         }
         val seal = BitmapFactory.decodeResource(ctx.resources, R.drawable.img_mauritania_seal)
-        val out = File(ctx.getExternalFilesDir(null), "samples").apply { mkdirs() }
+        val out = File(ctx.filesDir, "samples").apply { mkdirs() }
         listOf(1 to "kashf-T1", 2 to "kashf-T2", 3 to "kashf-annuel").forEach { (term, name) ->
             val reports = ReportCalc.build(term, subjects, students, grades, emptyList(), emptyMap())
             val info = ReportCardPdf.Info(

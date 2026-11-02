@@ -33,14 +33,14 @@ jobs:
           disable-animations: true
           script: |
             gradle connectedDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.KashfSamples -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
-            mkdir -p out && adb pull /sdcard/Android/data/com.elyedali.daftarustadh/files/samples out/
+            mkdir -p out && for f in kashf-T1 kashf-T2 kashf-annuel; do adb exec-out run-as com.elyedali.daftarustadh cat files/samples/$f.pdf > out/$f.pdf; done; ls -la out
       - name: Push samples
         run: |
           git config user.name "samples-bot"
           git config user.email "samples-bot@users.noreply.github.com"
           git checkout --orphan samples
           git rm -rf --cached . > /dev/null
-          cp -r out/samples/* . 2>/dev/null || cp -r out/* .
+          cp out/*.pdf .
           git add *.pdf
           git commit -m "Kashf samples"
           git push -f origin samples
