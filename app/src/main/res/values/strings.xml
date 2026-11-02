@@ -640,4 +640,11 @@
     <string name="qg_save">حفظ %1$d نقطة</string>
     <string name="qg_saved">حُفظت %1$d نقطة. يمكنك إدخال خانة أو مادة أخرى.</string>
     <string name="qg_ocr_failed">تعذّرت قراءة الصورة. التقطها بإضاءة جيدة وورقة مستوية، أو اكتب الأرقام يدويًا.</string>
+    <string name="mi_button">ماذا ينقص؟ (%1$d مواد غير مكتملة)</string>
+    <string name="mi_title">ما ينقص نتائج %1$s — %2$s</string>
+    <string name="mi_missing_n">ناقصة عند %1$d من %2$d</string>
+    <string name="mi_message">السلام عليكم أستاذ %1$s 🌹\nنتائج القسم %2$s (%3$s) لم تكتمل عندنا بعد:\n%4$s\nنرجو إكمالها وإرسال السجل في أقرب وقت. شكرًا.</string>
+    <string name="mi_remind">تذكيره عبر واتساب</string>
+    <string name="mi_no_phone">لا يوجد رقم واتساب لهذا الأستاذ (أضفه في «أساتذة المواد»).</string>
+    <string name="mi_no_teacher">مواد بلا أستاذ معيّن لهذا القسم: %1$s</string>
 </resources>

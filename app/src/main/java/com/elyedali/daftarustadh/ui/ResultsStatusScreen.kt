@@ -21,6 +21,8 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -49,6 +51,10 @@ fun ResultsStatusScreen(
     records: List<SubjectRecordEntity>,
     onUploadRecord: () -> Unit,
     onQuickEntry: (() -> Unit)? = null,
+    /** أستاذ المادة في هذا القسم: (الاسم، رقم واتساب) من «أساتذة المواد»، أو null. */
+    teacherOf: ((subjectCode: String) -> Pair<String, String>?)? = null,
+    /** إرسال تذكير للأستاذ عبر واتساب (الرقم، نص الرسالة). */
+    onRemind: ((phone: String, message: String) -> Unit)? = null,
     onOpenSubject: (String) -> Unit,
     onGenerate: (term: Int) -> Unit,
     onOpenSettings: () -> Unit,
@@ -67,6 +73,7 @@ fun ResultsStatusScreen(
         !GradeMath.isComplete(term, bySubject[code]?.get(st.id).orEmpty())
     }
     val completeCount = subjects.count { students.isNotEmpty() && missing(it.code) == 0 }
+    var showMissing by remember { mutableStateOf(false) }
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -88,6 +95,12 @@ fun ResultsStatusScreen(
                 }
             }
             if (showGenerate) TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
+            // «ماذا ينقص؟»: الأساتذة الذين لم تكتمل نتائج موادهم في هذا الفصل، مع تذكيرهم عبر واتساب
+            if (teacherOf != null && subjects.isNotEmpty() && completeCount < subjects.size)
+                androidx.compose.material3.OutlinedButton(onClick = { showMissing = true }, modifier = Modifier.fillMaxWidth(),
+                    colors = androidx.compose.material3.ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colorScheme.error)) {
+                    Text("❓ " + stringResource(R.string.mi_button, subjects.size - completeCount), fontWeight = FontWeight.Bold)
+                }
             Button(onClick = onUploadRecord, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record)) }
             if (onQuickEntry != null) androidx.compose.material3.OutlinedButton(onClick = onQuickEntry, modifier = Modifier.fillMaxWidth()) {
                 Text("⚡ " + stringResource(R.string.qg_button))
@@ -127,5 +140,43 @@ fun ResultsStatusScreen(
                 }
             }
         }
+    }
+    if (showMissing && teacherOf != null) {
+        val termName = stringResource(when (term) { 1 -> R.string.term_1; 2 -> R.string.term_2; else -> R.string.term_3 })
+        val incomplete = subjects.filter { missing(it.code) > 0 }
+        // تجميع المواد الناقصة حسب الأستاذ: رسالة واحدة لكل أستاذ
+        val byTeacher = incomplete.groupBy { teacherOf(it.code) }
+        val noTeacher = byTeacher[null].orEmpty()
+        val missingLabel = stringResource(R.string.mi_missing_n)
+        androidx.compose.material3.AlertDialog(
+            onDismissRequest = { showMissing = false },
+            title = { Text(stringResource(R.string.mi_title, termName, schoolClass.name)) },
+            text = {
+                LazyColumn(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.heightIn(max = 460.dp)) {
+                    items(byTeacher.entries.filter { it.key != null }.toList(), key = { it.key!!.first }) { (t, subs) ->
+                        val (name, phone) = t!!
+                        val lines = subs.joinToString("\n") { sub ->
+                            "• " + (if (isFr) sub.nameFr else sub.nameAr) + " — " + missingLabel.format(missing(sub.code), students.size)
+                        }
+                        val msg = stringResource(R.string.mi_message, name, schoolClass.name, termName, lines)
+                        Card(Modifier.fillMaxWidth()) {
+                            Column(Modifier.padding(10.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                                Text("👨‍🏫 $name", fontWeight = FontWeight.Bold)
+                                Text(lines, style = MaterialTheme.typography.bodySmall)
+                                if (phone.isNotBlank() && onRemind != null) Button(onClick = { onRemind(phone, msg) }, modifier = Modifier.fillMaxWidth()) {
+                                    Text("🟢 " + stringResource(R.string.mi_remind), fontWeight = FontWeight.Bold)
+                                } else Text(stringResource(R.string.mi_no_phone), color = MaterialTheme.colorScheme.error,
+                                    style = MaterialTheme.typography.bodySmall)
+                            }
+                        }
+                    }
+                    if (noTeacher.isNotEmpty()) item {
+                        Text(stringResource(R.string.mi_no_teacher, noTeacher.joinToString("، ") { if (isFr) it.nameFr else it.nameAr }),
+                            color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                    }
+                }
+            },
+            confirmButton = { TextButton(onClick = { showMissing = false }) { Text(stringResource(R.string.ok)) } }
+        )
     }
 }

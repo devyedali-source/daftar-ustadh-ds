@@ -1338,6 +1338,17 @@ class MainActivity : AppCompatActivity() {
                                     records = records,
                                     onUploadRecord = openFile,
                                     onQuickEntry = { subjectCode = null; screen = Screen.QUICK_GRADES },
+                                    teacherOf = { code ->
+                                        val name = ttAssignments.firstOrNull { it.classId == c.id && it.subjectCode == code }?.teacherName?.takeIf { it.isNotBlank() }
+                                            ?: records.firstOrNull { it.subjectCode == code }?.teacherName?.takeIf { it.isNotBlank() }
+                                        name?.let { n -> n to (ttTeachers.firstOrNull { it.name == n }?.phone.orEmpty()) }
+                                    },
+                                    onRemind = { phone, msg ->
+                                        val uri = Uri.parse("https://wa.me/$phone?text=" + Uri.encode(msg))
+                                        try { startActivity(Intent(Intent.ACTION_VIEW, uri)) } catch (e: Exception) {
+                                            android.widget.Toast.makeText(this@MainActivity, getString(R.string.ex_no_whatsapp), android.widget.Toast.LENGTH_SHORT).show()
+                                        }
+                                    },
                                     onOpenSubject = { code ->
                                         subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.ADMIN_CLASS; screen = Screen.GRADES
                                     },

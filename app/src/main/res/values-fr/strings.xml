@@ -640,4 +640,11 @@
     <string name="qg_save">Enregistrer %1$d notes</string>
     <string name="qg_saved">%1$d notes enregistrées. Vous pouvez saisir une autre colonne ou matière.</string>
     <string name="qg_ocr_failed">Lecture impossible. Reprenez la photo avec un bon éclairage, feuille à plat, ou saisissez les chiffres.</string>
+    <string name="mi_button">Que manque-t-il ? (%1$d matières incomplètes)</string>
+    <string name="mi_title">Manquants — %1$s — %2$s</string>
+    <string name="mi_missing_n">incomplet pour %1$d sur %2$d</string>
+    <string name="mi_message">Bonjour M. %1$s 🌹\nLes notes de la classe %2$s (%3$s) ne sont pas encore complètes chez nous :\n%4$s\nMerci de les compléter et d\'envoyer le registre au plus vite.</string>
+    <string name="mi_remind">Le relancer par WhatsApp</string>
+    <string name="mi_no_phone">Pas de numéro WhatsApp pour ce professeur (ajoutez-le dans « Professeurs »).</string>
+    <string name="mi_no_teacher">Matières sans professeur attribué : %1$s</string>
 </resources>
