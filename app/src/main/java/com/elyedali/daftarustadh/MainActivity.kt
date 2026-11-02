@@ -342,6 +342,28 @@ class MainActivity : AppCompatActivity() {
                 }
                 var sendConfirm by remember { mutableStateOf<String?>(null) }
 
+                /** عناوين سجل نتائج مادة: ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة. */
+                fun recordLabels(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity,
+                                 subject: com.elyedali.daftarustadh.data.CurriculumSubject, name: String): TeacherRecordPdf.Labels {
+                        val wilaya = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)
+                        return TeacherRecordPdf.Labels(
+                            title = "سجل نتائج مادة: ${subject.nameAr} — Relevé de notes : ${subject.nameFr}",
+                            subtitle = "القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069 — الضارب: ${subject.coefficient}" +
+                                " — الولاية: ${owner.wilaya} — المؤسسة: ${owner.schoolName}",
+                            schoolLine = "Classe : ${c.name} — Année scolaire : ${c.schoolYear} — Coef. ${subject.coefficient}" +
+                                (wilaya?.let { " — Wilaya : ${it.nameFr}" } ?: "") + " — Établissement : ${owner.schoolName}",
+                            rollHeader = "ر.ن\nN°",
+                            nameHeader = "الاسم الكامل\nNom et Prénom",
+                            gradeHeaders = (1..3).flatMap { t ->
+                                listOf("اختبار ف$t\nDevoir T$t", "امتحان ف$t\nCompo T$t")
+                            },
+                            signature = "توقيع الأستاذ — Signature du professeur",
+                            stampLines = listOf(name, "أستاذ مادة: ${subject.nameAr}", "Professeur de : ${subject.nameFr}"),
+                            page = { p, n -> "صفحة $p من $n — Page $p / $n" },
+                            seal = sealBitmap
+                        )
+                }
+
                 /** إرسال سجل الأستاذ لمادة: ملف ‎.dsq يحمل نتائجه وطابعه، يُرفع عند المكلّف بالقسم. */
                 fun sendRecord(c: ClassEntity, code: String, name: String) {
                     scope.launch {
@@ -360,7 +382,11 @@ class MainActivity : AppCompatActivity() {
                             students = TransferCodec.buildRecordStudents(list, g)
                         )
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeRecord(record) }
-                        ShareHelper.share(this@MainActivity, bytes, TransferCodec.recordFileName(record), getString(R.string.share_record))
+                        // الصفحة الثانية من الملف: سجل المادة نفسه بأسماء الطلاب ونقاطهم، يُقرأ ويُطبع في الإدارة
+                        val labels = recordLabels(c, owner, subject, name)
+                        val byStudent = g.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.value } }
+                        ShareHelper.share(this@MainActivity, bytes, TransferCodec.recordFileName(record), getString(R.string.share_record),
+                            extraPages = { doc, no -> TeacherRecordPdf.drawInto(doc, no, list, labels, byStudent) })
                     }
                 }
 
@@ -646,28 +672,6 @@ class MainActivity : AppCompatActivity() {
 
 
                 /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
-                /** عناوين سجل نتائج مادة: ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة. */
-                fun recordLabels(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity,
-                                 subject: com.elyedali.daftarustadh.data.CurriculumSubject, name: String): TeacherRecordPdf.Labels {
-                        val wilaya = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)
-                        return TeacherRecordPdf.Labels(
-                            title = "سجل نتائج مادة: ${subject.nameAr} — Relevé de notes : ${subject.nameFr}",
-                            subtitle = "القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069 — الضارب: ${subject.coefficient}" +
-                                " — الولاية: ${owner.wilaya} — المؤسسة: ${owner.schoolName}",
-                            schoolLine = "Classe : ${c.name} — Année scolaire : ${c.schoolYear} — Coef. ${subject.coefficient}" +
-                                (wilaya?.let { " — Wilaya : ${it.nameFr}" } ?: "") + " — Établissement : ${owner.schoolName}",
-                            rollHeader = "ر.ن\nN°",
-                            nameHeader = "الاسم الكامل\nNom et Prénom",
-                            gradeHeaders = (1..3).flatMap { t ->
-                                listOf("اختبار ف$t\nDevoir T$t", "امتحان ف$t\nCompo T$t")
-                            },
-                            signature = "توقيع الأستاذ — Signature du professeur",
-                            stampLines = listOf(name, "أستاذ مادة: ${subject.nameAr}", "Professeur de : ${subject.nameFr}"),
-                            page = { p, n -> "صفحة $p من $n — Page $p / $n" },
-                            seal = sealBitmap
-                        )
-                }
-
                 fun printRecord(c: ClassEntity, code: String, name: String, blank: Boolean = false) {
                     scope.launch {
                         val owner = institutionDao.getById(c.institutionId) ?: return@launch

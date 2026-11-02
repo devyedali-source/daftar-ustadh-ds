@@ -44,10 +44,13 @@ object TeacherRecordPdf {
         val seal: Bitmap? = null        // شعار الجمهورية في وسط الرأسية
     )
 
-    fun build(students: List<StudentEntity>, labels: Labels): ByteArray = PdfCommon.render { drawInto(it, 1, students, labels) }
+    fun build(students: List<StudentEntity>, labels: Labels, grades: Map<String, Map<String, Double>> = emptyMap()): ByteArray =
+        PdfCommon.render { drawInto(it, 1, students, labels, grades) }
 
     /** يضيف سجل المادة إلى مستند قائم، ويرجع رقم الصفحة التالية. */
-    fun drawInto(doc: PdfDocument, startNo: Int, students: List<StudentEntity>, labels: Labels): Int {
+    /** @param grades نقاط كل طالب (studentId → خانة → نقطة) لتُكتب في الجدول؛ فارغة = سجل يُملأ باليد. */
+    fun drawInto(doc: PdfDocument, startNo: Int, students: List<StudentEntity>, labels: Labels,
+                 grades: Map<String, Map<String, Double>> = emptyMap()): Int {
         val sorted = students.sortedBy { it.rollNumber }
         val firstCapacity = ((H - 2 * M - HEADER - TITLE - TABLE_HEAD) / ROW).toInt()
         val otherCapacity = ((H - 2 * M - TABLE_HEAD - 20f) / ROW).toInt()
@@ -78,7 +81,7 @@ object TeacherRecordPdf {
             } else {
                 y += 20f
             }
-            val bottom = drawTable(c, y, rows, labels)
+            val bottom = drawTable(c, y, rows, labels, grades)
             if (index == pages.lastIndex && !signatureOnNewPage) drawSignature(c, bottom + 12f, labels)
             PdfText.draw(c, labels.page(index + 1, totalPages), M, H - M + 4f, W - 2 * M, 14f, 8f)
             doc.finishPage(page)
@@ -95,7 +98,7 @@ object TeacherRecordPdf {
     private fun drawHeader(c: Canvas, l: Labels) = PdfCommon.drawOfficialHeader(c, l.seal)
 
     /** يرسم الجدول من اليمين إلى اليسار ويرجع أسفل الجدول. */
-    private fun drawTable(c: Canvas, top: Float, rows: List<StudentEntity>, l: Labels): Float {
+    private fun drawTable(c: Canvas, top: Float, rows: List<StudentEntity>, l: Labels, grades: Map<String, Map<String, Double>>): Float {
         val line = Paint().apply { color = BLACK; strokeWidth = 0.7f; style = Paint.Style.STROKE }
         val fill = Paint().apply { color = 0xFFEDEDED.toInt(); style = Paint.Style.FILL }
         val right = W - M
@@ -119,6 +122,12 @@ object TeacherRecordPdf {
             // الاسم بالعربية وتحته بالفرنسية
             val names = listOf(s.nameAr, s.nameFr).filter { it.isNotBlank() }.joinToString("\n")
             PdfText.draw(c, names, edges[2] + 3f, y, nameW - 6f, ROW, 8f, Layout.Alignment.ALIGN_NORMAL, maxLines = 2)
+            // النقاط بترتيب الأعمدة: اختبار ف1، امتحان ف1، اختبار ف2، ...
+            grades[s.id]?.let { g ->
+                com.elyedali.daftarustadh.data.GradeSlot.ALL.forEachIndexed { k, slot ->
+                    g[slot]?.let { v -> PdfText.draw(c, PdfCommon.num(v), edges[k + 3], y, gradeW, ROW, 9f, bold = slot.startsWith("E")) }
+                }
+            }
             y += ROW
         }
         // الخطوط

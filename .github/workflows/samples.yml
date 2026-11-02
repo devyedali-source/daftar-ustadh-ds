@@ -32,8 +32,8 @@ jobs:
           target: default
           disable-animations: true
           script: |
-            gradle connectedDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.KashfSamples -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
-            mkdir -p out && for f in kashf-T1 kashf-T2 kashf-annuel; do adb exec-out run-as com.elyedali.daftarustadh cat files/samples/$f.pdf > out/$f.pdf; done; ls -la out
+            gradle connectedDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.package=com.elyedali.daftarustadh -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
+            mkdir -p out && for f in kashf-T1 kashf-T2 kashf-annuel record-T1 record-T2 record-T3; do adb exec-out run-as com.elyedali.daftarustadh cat files/samples/$f.pdf > out/$f.pdf; done; ls -la out
       - name: Push samples
         run: |
           git config user.name "samples-bot"

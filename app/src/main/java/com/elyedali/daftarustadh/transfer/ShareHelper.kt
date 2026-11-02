@@ -21,8 +21,9 @@ object ShareHelper {
     }
 
     /** يحفظ الملف مؤقتًا ثم يفتح نافذة المشاركة (واتساب، بلوتوث، المشاركة القريبة...). */
-    fun share(context: Context, bytes: ByteArray, fileName: String, chooserTitle: String, mimeType: String = DSQ_MIME) {
-        val (outBytes, outName) = if (mimeType == DSQ_MIME) asPdf(context, bytes, fileName) else bytes to fileName
+    fun share(context: Context, bytes: ByteArray, fileName: String, chooserTitle: String, mimeType: String = DSQ_MIME,
+              extraPages: ((android.graphics.pdf.PdfDocument, Int) -> Int)? = null) {
+        val (outBytes, outName) = if (mimeType == DSQ_MIME) asPdf(context, bytes, fileName, extraPages) else bytes to fileName
         val dir = File(context.cacheDir, "shared").apply { mkdirs() }
         dir.listFiles()?.forEach { it.delete() }
         val file = File(dir, outName).apply { writeBytes(outBytes) }
