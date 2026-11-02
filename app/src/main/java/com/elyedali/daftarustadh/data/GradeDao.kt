@@ -64,6 +64,10 @@ interface GradeDao {
     @Query("DELETE FROM grade WHERE classId = :classId AND subjectCode = :subjectCode AND studentId = :studentId")
     suspend fun clearStudentSubject(classId: String, subjectCode: String, studentId: String)
 
+    /** نتائج عدة أقسام (فحص ما ينقص بعد رفع ملفات النتائج دفعة واحدة). */
+    @Query("SELECT * FROM grade WHERE classId IN (:classIds)")
+    suspend fun listClasses(classIds: List<String>): List<GradeEntity>
+
     @Query("SELECT * FROM grade WHERE classId = :classId AND subjectCode = :subjectCode")
     suspend fun listSubject(classId: String, subjectCode: String): List<GradeEntity>
 }

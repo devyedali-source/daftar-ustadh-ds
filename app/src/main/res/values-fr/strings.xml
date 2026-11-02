@@ -658,4 +658,16 @@
     <string name="gn_message">Bonjour,\nNous vous informons que l\'élève %1$s de la classe %2$s a été absent(e) %3$s.\nL\'administration de %4$s</string>
     <string name="ps_cards">Cartes d\'élèves de toutes les classes</string>
     <string name="ps_cards_note">Dix cartes par page : nom, matricule, classe, N° d\'appel et photo (%1$d élèves, dont %2$d avec photo).</string>
+    <string name="bu_button">Importer plusieurs registres à la fois</string>
+    <string name="bu_working">Import et vérification des fichiers…</string>
+    <string name="bu_title">Résultat de l\'import</string>
+    <string name="bu_imported">%1$d registres importés :</string>
+    <string name="bu_duplicates">%1$d fichiers en double ignorés (le plus récent de chaque registre est retenu).</string>
+    <string name="bu_rejected">%1$d fichiers non importés :</string>
+    <string name="bu_wrong_class">le registre de %1$s n\'appartient pas à vos classes ou à votre année</string>
+    <string name="bu_not_record">pas un registre de notes دفتر الأستاذ DS</string>
+    <string name="bu_students_diff">%1$d élèves du registre absents de la classe, %2$d de la classe absents du registre</string>
+    <string name="bu_missing_n">incomplet pour %1$d</string>
+    <string name="bu_complete">Les résultats du %1$s sont complets dans toutes les classes et matières.</string>
+    <string name="bu_still_missing">Il manque encore pour le %1$s :</string>
 </resources>

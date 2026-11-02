@@ -658,4 +658,16 @@
     <string name="gn_message">السلام عليكم ورحمة الله،\nنُعلمكم أن الطالب(ة) %1$s من القسم %2$s تغيّب(ت) %3$s.\nإدارة %4$s</string>
     <string name="ps_cards">بطاقات الطلاب لجميع الأقسام</string>
     <string name="ps_cards_note">عشر بطاقات في كل صفحة: الاسم، الرقم المدرسي، القسم، رقم النداء والصورة (%1$d طالبًا، منهم %2$d بصورة).</string>
+    <string name="bu_button">رفع ملفات النتائج دفعة واحدة</string>
+    <string name="bu_working">جارٍ رفع الملفات وفحصها…</string>
+    <string name="bu_title">نتيجة رفع ملفات النتائج</string>
+    <string name="bu_imported">رُفع %1$d سجلًا:</string>
+    <string name="bu_duplicates">تُجووز %1$d ملفًا مكررًا (أُخذ الأحدث من كل سجل).</string>
+    <string name="bu_rejected">لم يُرفع %1$d ملفًا:</string>
+    <string name="bu_wrong_class">سجل القسم %1$s ليس من أقسام مؤسستك أو سنتك</string>
+    <string name="bu_not_record">ليس سجل نتائج من دفتر الأستاذ DS</string>
+    <string name="bu_students_diff">%1$d طالبًا في السجل ليسوا في القسم، و%2$d في القسم ليسوا في السجل</string>
+    <string name="bu_missing_n">ناقصة عند %1$d</string>
+    <string name="bu_complete">اكتملت نتائج %1$s في كل الأقسام والمواد.</string>
+    <string name="bu_still_missing">ما زال ينقص من نتائج %1$s:</string>
 </resources>

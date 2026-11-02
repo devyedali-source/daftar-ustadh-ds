@@ -50,6 +50,7 @@ fun ResultsStatusScreen(
     grades: List<GradeEntity>,
     records: List<SubjectRecordEntity>,
     onUploadRecord: () -> Unit,
+    onUploadMany: (() -> Unit)? = null,
     onQuickEntry: (() -> Unit)? = null,
     /** أستاذ المادة في هذا القسم: (الاسم، رقم واتساب) من «أساتذة المواد»، أو null. */
     teacherOf: ((subjectCode: String) -> Pair<String, String>?)? = null,
@@ -102,6 +103,9 @@ fun ResultsStatusScreen(
                     Text("❓ " + stringResource(R.string.mi_button, subjects.size - completeCount), fontWeight = FontWeight.Bold)
                 }
             Button(onClick = onUploadRecord, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record)) }
+            if (onUploadMany != null) androidx.compose.material3.OutlinedButton(onClick = onUploadMany, modifier = Modifier.fillMaxWidth()) {
+                Text("📥 " + stringResource(R.string.bu_button))
+            }
             if (onQuickEntry != null) androidx.compose.material3.OutlinedButton(onClick = onQuickEntry, modifier = Modifier.fillMaxWidth()) {
                 Text("⚡ " + stringResource(R.string.qg_button))
             }

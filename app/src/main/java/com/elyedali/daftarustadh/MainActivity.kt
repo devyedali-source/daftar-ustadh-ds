@@ -113,6 +113,16 @@ private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS,
 /** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
 private class PdfNotImportableException : Exception()
 
+/** نتيجة رفع ملفات النتائج دفعة واحدة. */
+private data class BatchResult(
+    val imported: List<String>,          // «1AS1 — الرياضيات (مختار)»
+    val duplicates: Int,                 // ملفات مكررة تُجووزت
+    val rejected: List<String>,          // ملفات ليست سجلات نتائج لأقسامك، أو تالفة
+    val warnings: List<String>,          // طلاب في السجل وليسوا في القسم أو العكس
+    val term: Int,                       // الفصل الذي فُحص اكتماله
+    val missing: List<String>            // ما ينقص بعد الرفع: «1AS1: الفرنسية (ناقصة عند 3)»
+)
+
 private sealed class FileResult {
     data object Invalid : FileResult()
     data class Done(val outcome: ImportOutcome) : FileResult()
@@ -765,6 +775,81 @@ class MainActivity : AppCompatActivity() {
                 }
                 val openFile = { filePicker.launch(arrayOf("*/*")) }
 
+                // ===== رفع ملفات النتائج دفعة واحدة =====
+                var batchResult by remember { mutableStateOf<BatchResult?>(null) }
+                var batchWorking by remember { mutableStateOf(false) }
+                fun processRecordsBatch(uris: List<Uri>) {
+                    if (uris.isEmpty()) return
+                    batchWorking = true
+                    scope.launch {
+                        val rejected = ArrayList<String>()
+                        val ready = ArrayList<RecordCheck.Ready>()
+                        val seenBytes = HashSet<Int>()
+                        var duplicates = 0
+                        for (uri in uris) {
+                            val name = runCatching {
+                                contentResolver.query(uri, arrayOf(android.provider.OpenableColumns.DISPLAY_NAME), null, null, null)?.use { c ->
+                                    if (c.moveToFirst()) c.getString(0) else null
+                                }
+                            }.getOrNull() ?: uri.lastPathSegment.orEmpty()
+                            try {
+                                val bytes = withContext(Dispatchers.IO) { contentResolver.openInputStream(uri)?.use { it.readBytes() } } ?: throw IllegalStateException()
+                                // نفس الملف مرتين (حُمّل من واتساب أكثر من مرة): يُتجاوز
+                                if (!seenBytes.add(bytes.contentHashCode())) { duplicates++; continue }
+                                val data = if (com.elyedali.daftarustadh.transfer.DsqPdf.isPdf(bytes))
+                                    com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException() else bytes
+                                when (val any = TransferCodec.decodeAny(data)) {
+                                    is RecordFile -> when (val chk = recordImporter.check(any)) {
+                                        is RecordCheck.Ready -> ready += chk
+                                        is RecordCheck.WrongClass -> rejected += "$name — " + getString(R.string.bu_wrong_class, any.className)
+                                        is RecordCheck.NotManaged -> rejected += "$name — " + getString(R.string.record_not_managed, any.className)
+                                    }
+                                    else -> rejected += "$name — " + getString(R.string.bu_not_record)
+                                }
+                            } catch (e: Exception) {
+                                rejected += "$name — " + getString(R.string.bu_not_record)
+                            }
+                        }
+                        // سجلان لنفس المادة في نفس القسم: يُؤخذ الأحدث إرسالًا، ثم الأكثر نقاطًا
+                        val chosen = ready.groupBy { it.schoolClass.id + "|" + it.file.subjectCode }.values.map { group ->
+                            duplicates += group.size - 1
+                            group.maxWith(compareBy<RecordCheck.Ready>({ it.file.exportedAt }, { r -> r.file.students.sumOf { it.grades.size } }))
+                        }
+                        val imported = ArrayList<String>()
+                        val warnings = ArrayList<String>()
+                        chosen.forEach { chk ->
+                            recordImporter.apply(chk)
+                            val label = "${chk.file.className} — ${if (isFrUi) chk.file.subjectNameFr else chk.file.subjectNameAr}" +
+                                (if (chk.file.teacherName.isNotBlank()) " (${chk.file.teacherName})" else "")
+                            imported += label
+                            if (chk.unknownStudents.isNotEmpty() || chk.missingStudents.isNotEmpty())
+                                warnings += label + ": " + getString(R.string.bu_students_diff, chk.unknownStudents.size, chk.missingStudents.size)
+                        }
+                        // الفصل الذي يُفحص: آخر فصل وصلت امتحاناته في هذه الملفات
+                        val term = (3 downTo 1).firstOrNull { t ->
+                            chosen.any { c -> c.file.students.any { st -> st.grades.containsKey(GradeSlot.exam(t)) } }
+                        } ?: 1
+                        val classes = managedClasses.sortedWith(compareBy({ it.levelCode }, { it.number }))
+                        val all = gradeDao.listClasses(classes.map { it.id })
+                        val missing = ArrayList<String>()
+                        classes.forEach { c ->
+                            val subs = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                            val sts = studentDao.listByClass(c.id)
+                            val g = all.filter { it.classId == c.id }.groupBy { it.subjectCode }
+                                .mapValues { e -> e.value.groupBy { it.studentId }.mapValues { s -> s.value.associate { it.slot to it.value } } }
+                            val parts = subs.mapNotNull { sub ->
+                                val n = sts.count { st -> !GradeMath.isComplete(term, g[sub.code]?.get(st.id).orEmpty()) }
+                                if (n > 0) "${if (isFrUi) sub.nameFr else sub.nameAr} (${getString(R.string.bu_missing_n, n)})" else null
+                            }
+                            if (parts.isNotEmpty() && sts.isNotEmpty()) missing += "${c.name}: " + parts.joinToString("، ")
+                        }
+                        batchWorking = false
+                        batchResult = BatchResult(imported, duplicates, rejected, warnings, term, missing)
+                    }
+                }
+                val batchPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()) { uris -> processRecordsBatch(uris) }
+                val openBatch = { batchPicker.launch(arrayOf("*/*")) }
+
                 // ===== إدخال النتائج بأرقام النداء: قراءة صورة ورقة الأستاذ =====
                 var ocrText by remember { mutableStateOf<String?>(null) }
                 var ocrBusy by remember { mutableStateOf(false) }
@@ -1371,6 +1456,7 @@ class MainActivity : AppCompatActivity() {
                                     grades = classGrades,
                                     records = records,
                                     onUploadRecord = openFile,
+                                    onUploadMany = openBatch,
                                     onQuickEntry = { subjectCode = null; screen = Screen.QUICK_GRADES },
                                     teacherOf = { code ->
                                         val name = ttAssignments.firstOrNull { it.classId == c.id && it.subjectCode == code }?.teacherName?.takeIf { it.isNotBlank() }
@@ -1704,6 +1790,7 @@ class MainActivity : AppCompatActivity() {
                                 "TIMETABLE" -> { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                 "SHARE_RECORDS" -> screen = Screen.SHARE_RECORDS
                                 "PRINT_SHOP" -> screen = Screen.PRINT_SHOP
+                                "UPLOAD_MANY" -> openBatch()
                                 "ABSENCE_CENTER" -> screen = Screen.ABSENCE_CENTER
                                 "STATS" -> screen = Screen.STATS
                                 "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
@@ -1838,6 +1925,43 @@ class MainActivity : AppCompatActivity() {
                             confirmButton = { TextButton(onClick = { sendConfirm = null }) { Text(stringResource(R.string.ok)) } }
                         )
                     }
+                }
+
+                if (batchWorking) AlertDialog(
+                    onDismissRequest = {},
+                    text = { Text(stringResource(R.string.bu_working)) },
+                    confirmButton = {}
+                )
+                batchResult?.let { r ->
+                    val termName = stringResource(when (r.term) { 1 -> R.string.term_1; 2 -> R.string.term_2; else -> R.string.term_3 })
+                    AlertDialog(
+                        onDismissRequest = { batchResult = null },
+                        title = { Text(stringResource(R.string.bu_title)) },
+                        text = {
+                            androidx.compose.foundation.layout.Column(
+                                Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState()),
+                                verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(8.dp)
+                            ) {
+                                Text("✅ " + stringResource(R.string.bu_imported, r.imported.size), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                                if (r.imported.isNotEmpty()) Text(r.imported.joinToString("\n") { "• $it" }, style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
+                                if (r.duplicates > 0) Text("⏭️ " + stringResource(R.string.bu_duplicates, r.duplicates))
+                                if (r.rejected.isNotEmpty()) Text("⛔ " + stringResource(R.string.bu_rejected, r.rejected.size) + "\n" +
+                                    r.rejected.joinToString("\n") { "• $it" }, color = androidx.compose.material3.MaterialTheme.colorScheme.error,
+                                    style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
+                                if (r.warnings.isNotEmpty()) Text("⚠️ " + r.warnings.joinToString("\n"), color = androidx.compose.ui.graphics.Color(0xFFE65100),
+                                    style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
+                                androidx.compose.material3.HorizontalDivider()
+                                if (r.missing.isEmpty()) Text("🎉 " + stringResource(R.string.bu_complete, termName),
+                                    fontWeight = androidx.compose.ui.text.font.FontWeight.Bold, color = androidx.compose.ui.graphics.Color(0xFF2E7D32))
+                                else {
+                                    Text("❓ " + stringResource(R.string.bu_still_missing, termName), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold,
+                                        color = androidx.compose.material3.MaterialTheme.colorScheme.error)
+                                    Text(r.missing.joinToString("\n") { "• $it" }, style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
+                                }
+                            }
+                        },
+                        confirmButton = { TextButton(onClick = { batchResult = null }) { Text(stringResource(R.string.ok)) } }
+                    )
                 }
 
                 recordCheck?.let { chk ->

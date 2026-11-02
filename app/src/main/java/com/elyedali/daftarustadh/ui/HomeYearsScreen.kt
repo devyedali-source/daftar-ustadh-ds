@@ -229,6 +229,7 @@ fun HomeYearsScreen(
                                 "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
                                 "ABSENCE_CENTER" to ("🗓️ " + stringResource(R.string.ac_title)),
                                 "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
+                                "UPLOAD_MANY" to ("📥 " + stringResource(R.string.bu_button)),
                                 "PRINT_SHOP" to ("🖨️ " + stringResource(R.string.ps_title)),
                                 "STATS" to ("📊 " + stringResource(R.string.statistics)),
                                 "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title))

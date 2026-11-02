@@ -34,7 +34,8 @@ data class RecordFile(
     val subjectNameFr: String,
     val teacherName: String,
     val testsMode: String,
-    val students: List<RecordStudent>
+    val students: List<RecordStudent>,
+    val exportedAt: Long = 0L   // وقت إرسال الأستاذ للسجل: عند تكرار نفس السجل يُؤخذ الأحدث
 ) {
     val className: String get() = "$levelCode$number"
 }
@@ -131,6 +132,7 @@ object TransferCodec {
                 subjectNameFr = sub.optString("nameFr"),
                 teacherName = json.optString("teacherName"),
                 testsMode = json.optString("testsMode"),
+                exportedAt = json.optLong("exportedAt"),
                 students = students
             )
         } catch (e: Exception) {
