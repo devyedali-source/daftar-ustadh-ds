@@ -56,8 +56,31 @@ object DsqPdf {
             doc.finishPage(page)
             extra?.invoke(doc, 2)
         }
-        val payload = Base64.encodeToString(data, Base64.NO_WRAP).toByteArray(Charsets.US_ASCII)
-        return pdf + BEGIN.toByteArray(Charsets.US_ASCII) + payload + END.toByteArray(Charsets.US_ASCII)
+        val payload = BEGIN + Base64.encodeToString(data, Base64.NO_WRAP) + END
+        return appendDataObject(pdf, payload)
+    }
+
+    /**
+     * يضيف البيانات داخل المستند نفسه كتحديث PDF نظامي (كائن جديد + جدول مراجع + startxref في آخر الملف)،
+     * لا كنص ملصق بعد نهايته: برامج القراءة الصارمة (عارض Google وواتساب) تبحث عن startxref في آخر الملف،
+     * وكانت ترفض الملف حين تكون البيانات بعده.
+     */
+    private fun appendDataObject(pdf: ByteArray, payload: String): ByteArray {
+        val text = String(pdf, Charsets.ISO_8859_1)
+        val size = Regex("""/Size\s+(\d+)""").findAll(text).last().groupValues[1].toInt()
+        val root = Regex("""/Root\s+(\d+\s+\d+\s+R)""").findAll(text).last().groupValues[1]
+        val info = Regex("""/Info\s+(\d+\s+\d+\s+R)""").findAll(text).lastOrNull()?.groupValues?.get(1)
+        val prev = Regex("""startxref\s+(\d+)""").findAll(text).last().groupValues[1]
+        val sb = StringBuilder(text)
+        if (!text.endsWith("\n")) sb.append('\n')
+        val objOffset = sb.length
+        sb.append("$size 0 obj\n<< /Length ${payload.length} >>\nstream\n").append(payload).append("\nendstream\nendobj\n")
+        val xrefOffset = sb.length
+        sb.append("xref\n0 1\n0000000000 65535 f \n$size 1\n")
+            .append(String.format(java.util.Locale.ROOT, "%010d 00000 n \n", objOffset))
+            .append("trailer\n<< /Size ${size + 1} /Root $root").append(if (info != null) " /Info $info" else "")
+            .append(" /Prev $prev >>\nstartxref\n$xrefOffset\n%%EOF\n")
+        return sb.toString().toByteArray(Charsets.ISO_8859_1)
     }
 
     fun isPdf(bytes: ByteArray): Boolean = bytes.size >= 4 && String(bytes, 0, 4, Charsets.ISO_8859_1) == "%PDF"
