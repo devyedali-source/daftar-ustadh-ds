@@ -108,7 +108,8 @@ fun AbsenceCenterScreen(
     yearStart: String,
     onSave: (AbsenceSessionEntity, Set<String>) -> Unit,
     onBack: () -> Unit,
-    schoolName: String = ""
+    schoolName: String = "",
+    subjectArFr: (String) -> Pair<String, String> = { it to it }
 ) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -132,7 +133,7 @@ fun AbsenceCenterScreen(
                 Text(stringResource(R.string.ps_no_classes), Modifier.padding(24.dp), color = MaterialTheme.colorScheme.error)
                 return@Column
             }
-            if (tab == 0) EntryTab(classes, students, sessions, absences, settings, slots, subjectsOf, subjectLabel, onSave, schoolName)
+            if (tab == 0) EntryTab(classes, students, sessions, absences, settings, slots, subjectsOf, subjectLabel, onSave, schoolName, subjectArFr)
             else TopTab(classes, students, sessions, absences, yearStart)
         }
     }
@@ -149,7 +150,8 @@ private fun EntryTab(
     subjectsOf: (ClassEntity) -> List<AbsenceSubject>,
     subjectLabel: (String) -> String,
     onSave: (AbsenceSessionEntity, Set<String>) -> Unit,
-    schoolName: String
+    schoolName: String,
+    subjectArFr: (String) -> Pair<String, String>
 ) {
     val whenLabel = stringResource(R.string.gn_when)
     var classId by rememberSaveable { mutableStateOf(classes.first().id) }
@@ -164,6 +166,9 @@ private fun EntryTab(
     var lastWhen by remember { mutableStateOf("") }
     var lastClass by remember { mutableStateOf("") }
     var notify by remember { mutableStateOf(false) }
+    var lastDate by remember { mutableStateOf("") }
+    var lastPeriod by remember { mutableIntStateOf(0) }
+    var lastSubject by remember { mutableStateOf("") }
 
     val day = weekday(date)
     val periodsToday = if (day in settings.days) settings.periodsOn(day) else 0
@@ -272,6 +277,7 @@ private fun EntryTab(
                         saved = "${cls.name} — ${show(date)} — $period"
                         lastAbsent = absentStudents
                         lastClass = cls.name
+                        lastDate = show(date); lastPeriod = period; lastSubject = subject
                         lastWhen = whenLabel.format("\u2066${show(date)}\u2069", period, subjectLabel(subject))
                         numbers = ""
                         // الحصة التالية مباشرة لتسجيل الورقة الموالية
@@ -289,7 +295,10 @@ private fun EntryTab(
             }
         }
     }
-    if (notify) GuardianNotifyDialog(lastAbsent, lastClass, schoolName, lastWhen) { notify = false }
+    if (notify) {
+        val (ar, fr) = subjectArFr(lastSubject)
+        GuardianNotifyDialog(lastAbsent, lastClass, schoolName, lastWhen, lastDate, lastPeriod, ar, fr) { notify = false }
+    }
 }
 
 @Composable

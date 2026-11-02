@@ -94,7 +94,8 @@ fun AbsenceTab(
     onChooseSubjects: (() -> Unit)?,
     /** للإدارة: إبلاغ وكلاء غائبي الحصة عبر واتساب. */
     className: String = "",
-    schoolName: String = ""
+    schoolName: String = "",
+    subjectArFr: (String) -> Pair<String, String> = { it to it }
 ) {
     var notifySession by remember { mutableStateOf<AbsenceSessionEntity?>(null) }
     val whenLabel = stringResource(R.string.gn_when)
@@ -262,11 +263,13 @@ fun AbsenceTab(
     }
     notifySession?.let { ns ->
         val ids = absences.filter { it.sessionId == ns.id }.map { it.studentId }.toSet()
+        val (subAr, subFr) = subjectArFr(ns.subjectCode)
         GuardianNotifyDialog(
             absent = students.filter { it.id in ids },
             className = className,
             schoolName = schoolName,
-            whenText = whenLabel.format("\u2066${displayDate(ns.date)}\u2069", ns.period, labels[ns.subjectCode] ?: ns.subjectCode)
+            whenText = whenLabel.format("\u2066${displayDate(ns.date)}\u2069", ns.period, labels[ns.subjectCode] ?: ns.subjectCode),
+            date = displayDate(ns.date), period = ns.period, subjectAr = subAr, subjectFr = subFr
         ) { notifySession = null }
     }
 }

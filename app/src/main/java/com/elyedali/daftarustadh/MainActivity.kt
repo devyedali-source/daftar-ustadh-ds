@@ -1054,7 +1054,8 @@ class MainActivity : AppCompatActivity() {
                         yearStart = ((adminYear ?: inst?.schoolYear)?.take(4) ?: "2026") + "-10-01",
                         onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
                         onBack = { screen = Screen.HOME },
-                        schoolName = inst?.schoolName.orEmpty()
+                        schoolName = inst?.schoolName.orEmpty(),
+                        subjectArFr = { subjectArFr(it) }
                     )
 
                     screen == Screen.PRINT_SHOP -> {
@@ -1396,7 +1397,8 @@ class MainActivity : AppCompatActivity() {
                                     onUpload = null,
                                     onChooseSubjects = null,
                                     className = c.name,
-                                    schoolName = schoolNames[c.institutionId].orEmpty()
+                                    schoolName = schoolNames[c.institutionId].orEmpty(),
+                                    subjectArFr = { subjectArFr(it) }
                                 )
                                 3 -> {
                                     // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)
