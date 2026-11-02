@@ -15,6 +15,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "0.1.0"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     androidResources {
@@ -63,4 +64,8 @@ dependencies {
 
     // تدوير صور الطلاب حسب اتجاه الكاميرا
     implementation("androidx.exifinterface:exifinterface:1.3.7")
+
+    // أمثلة الكشوف (اختبار على المحاكي فقط، لا يدخل في التطبيق)
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+    androidTestImplementation("androidx.test:runner:1.6.2")
 }

@@ -1,0 +1,46 @@
+name: Kashf samples
+
+# يدوي فقط: يولّد أمثلة كشوف الدرجات على محاكي أندرويد ويضعها في فرع samples
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Run on emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          arch: x86_64
+          target: default
+          disable-animations: true
+          script: |
+            gradle connectedDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.KashfSamples
+            mkdir -p out && adb pull /sdcard/Android/data/com.elyedali.daftarustadh/files/samples out/
+      - name: Push samples
+        run: |
+          git config user.name "samples-bot"
+          git config user.email "samples-bot@users.noreply.github.com"
+          git checkout --orphan samples
+          git rm -rf --cached . > /dev/null
+          cp -r out/samples/* . 2>/dev/null || cp -r out/* .
+          git add *.pdf
+          git commit -m "Kashf samples"
+          git push -f origin samples
