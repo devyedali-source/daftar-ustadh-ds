@@ -32,7 +32,7 @@ jobs:
           target: default
           disable-animations: true
           script: |
-            gradle connectedDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.KashfSamples
+            gradle connectedDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.KashfSamples -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
             mkdir -p out && adb pull /sdcard/Android/data/com.elyedali.daftarustadh/files/samples out/
       - name: Push samples
         run: |
