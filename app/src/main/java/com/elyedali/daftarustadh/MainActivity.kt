@@ -371,7 +371,11 @@ class MainActivity : AppCompatActivity() {
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
                             ?.subjects?.firstOrNull { it.code == code } ?: return@launch
                         val list = studentDao.listByClass(c.id)
-                        val g = gradeDao.listSubject(c.id, code)
+                        val allGrades = gradeDao.listSubject(c.id, code)
+                        // في الفصلين الأول والثاني يرسل الأستاذ نتائج الامتحانات فقط، ويحتفظ بالاختبارات عنده
+                        // حتى الفصل الأخير؛ عندها يرسل كل شيء (الاختبارات والامتحانات الثلاثة)
+                        val lastExamTerm = (3 downTo 1).firstOrNull { t -> allGrades.any { it.slot == GradeSlot.exam(t) } } ?: 0
+                        val g = if (lastExamTerm >= 3) allGrades else allGrades.filter { it.slot.startsWith("E") }
                         val mode = mySubjects.firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE
                         val record = RecordFile(
                             institutionId = owner.id, wilaya = owner.wilaya, schoolName = owner.schoolName,

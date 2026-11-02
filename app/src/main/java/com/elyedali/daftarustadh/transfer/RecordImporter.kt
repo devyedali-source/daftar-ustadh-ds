@@ -59,8 +59,13 @@ class RecordImporter(private val db: DaftarDatabase) {
         val file = ready.file
         val ids = db.studentDao().listByClass(c.id).map { it.id }.toSet()
         val now = System.currentTimeMillis()
+        // سجل الفصل الأول أو الثاني لا يحمل الاختبارات: تُستبدل الامتحانات فقط ولا تُمسّ بقية الخانات.
+        // السجل الأخير (فيه اختبارات) يحلّ محلّ كل نتائج المادة.
+        val hasTests = file.students.any { s -> s.grades.keys.any { !it.startsWith("E") } }
         file.students.filter { it.id in ids }.forEach { s ->
-            gradeDao.clearStudentSubject(c.id, file.subjectCode, s.id)
+            if (hasTests) gradeDao.clearStudentSubject(c.id, file.subjectCode, s.id)
+            else com.elyedali.daftarustadh.data.GradeSlot.ALL.filter { it.startsWith("E") }
+                .forEach { slot -> gradeDao.clear(s.id, file.subjectCode, slot) }
             s.grades.forEach { (slot, v) -> gradeDao.save(GradeEntity(s.id, c.id, file.subjectCode, slot, v, now, s.marks[slot])) }
         }
         gradeDao.saveRecord(

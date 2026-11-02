@@ -48,7 +48,8 @@ class RecordSamples {
         )
         listOf(1, 2, 3).forEach { term ->
             // ما يرسله الأستاذ بعد اكتمال هذا الفصل: نقاط الفصول حتى هذا الفصل
-            val slots = GradeSlot.ALL.take(term * 2).toSet()
+            // الفصلان الأول والثاني: الامتحانات فقط؛ الفصل الأخير: الاختبارات والامتحانات كلها
+            val slots = if (term < 3) GradeSlot.ALL.take(term * 2).filter { it.startsWith("E") }.toSet() else GradeSlot.ALL.toSet()
             val g = all.filter { it.slot in slots }
             val record = RecordFile(
                 institutionId = "i1", wilaya = "انواكشوط 2 (الغربية)", schoolName = "إعدادية البنات", schoolListId = null,
