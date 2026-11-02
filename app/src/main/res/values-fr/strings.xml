@@ -155,7 +155,7 @@
     <string name="subjects_complete">Matières complètes : %1$d sur %2$d</string>
     <string name="all_subjects_complete">Toutes les matières de ce trimestre sont complètes.</string>
     <string name="upload_record">Charger un relevé d\'enseignant</string>
-    <string name="upload_record_hint">Deux façons : importez le registre du professeur avec le bouton ci-dessus (ou ouvrez-le depuis WhatsApp), ou touchez une matière ci-dessous pour saisir ou corriger ses notes.</string>
+    <string name="upload_record_hint">Trois façons : importer le registre du professeur, saisie rapide par N° d\'appel (manuelle ou photo), ou toucher une matière ci-dessous pour saisir ou corriger.</string>
     <string name="source_teacher">Chargé depuis le relevé de : %1$s</string>
     <string name="source_manual">Saisie manuelle</string>
     <string name="source_none">Pas encore chargé</string>
@@ -613,7 +613,7 @@
     <string name="steps_admin_2">Enregistrez les professeurs, leur WhatsApp et la répartition des classes, puis préparez et validez l\'emploi du temps.</string>
     <string name="steps_admin_3">Dans « Partager les registres », envoyez à chaque professeur son fichier : listes de ses classes, matières et emploi du temps.</string>
     <string name="steps_admin_4">Demandez à chaque professeur d\'installer « دفتر الأستاذ DS », d\'y ouvrir le fichier, de saisir les notes de chaque trimestre et de vous les renvoyer.</string>
-    <string name="steps_admin_5">Deux façons d\'enregistrer les notes : (a) importer le registre du professeur : classe ← Résultats ← « Importer un registre », ou touchez le fichier dans WhatsApp ; (b) saisie manuelle : dans « Résultats », touchez la matière et saisissez les notes ; de même pour corriger une note (ex. 0 → 10 pour une absence justifiée). Aucun calcul : moyennes, totaux et rangs sont automatiques.</string>
+    <string name="steps_admin_5">Trois façons d\'enregistrer les notes : (a) importer le registre du professeur (Résultats ← « Importer un registre », ou depuis WhatsApp) ; (b) saisie rapide par N° d\'appel : pour les feuilles avec numéros seulement, tapez « N° note » ligne par ligne ou photographiez la feuille, vérifiez puis enregistrez ; (c) saisie manuelle : touchez la matière et saisissez ou corrigez (ex. 0 → 10 pour une absence justifiée). Aucun calcul : moyennes, totaux et rangs sont automatiques.</string>
     <string name="steps_admin_6">Quand toutes les matières sont complètes, le bouton des bulletins s\'active.</string>
     <string name="steps_teacher_title">Étapes du professeur</string>
     <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier de classe » (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes et matières apparaissent. Votre emploi du temps est imprimé en page 2 du même fichier.</string>
@@ -623,4 +623,21 @@
     <string name="steps_teacher_5">Recommencez à chaque trimestre : le nouveau registre remplace l\'ancien chez l\'administration.</string>
     <string name="record_other_teacher">⚠️ Dans l\'emploi du temps, cette matière est attribuée à : %1$s. Vérifiez avant d\'importer.</string>
     <string name="doc_pick_subject">Choisissez la matière de ce devoir</string>
+    <string name="qg_title">Saisie rapide par N° d\'appel</string>
+    <string name="qg_button">Saisie rapide par N° d\'appel (manuelle ou par photo de la feuille)</string>
+    <string name="qg_intro">Pour les feuilles rendues par le professeur avec les seuls numéros d\'appel. Choisissez matière, trimestre et colonne, puis une ligne par élève « N° note », ou photographiez la feuille pour que l\'application lise les chiffres. Vérifiez l\'aperçu puis enregistrez. Le N° d\'appel ne change pas de l\'année.</string>
+    <string name="qg_term">T%1$d</string>
+    <string name="qg_camera">Photographier</string>
+    <string name="qg_gallery">Photo du téléphone</string>
+    <string name="qg_reading">Lecture de la photo…</string>
+    <string name="qg_lines">N° d\'appel et note (une ligne par élève)</string>
+    <string name="qg_lines_hint">Ex. : 3 12.5 — virgule et chiffres arabes acceptés. Corrigez ici tout chiffre mal lu.</string>
+    <string name="qg_swap">Inverser (si la note a été lue avant le numéro)</string>
+    <string name="qg_bad">Lignes illisibles ou numéro absent de la classe : %1$s</string>
+    <string name="qg_dup">Numéro en double : %1$s</string>
+    <string name="qg_preview">Aperçu : %1$d élèves sur %2$d</string>
+    <string name="qg_missing">Notes pas encore saisies pour les numéros : %1$s</string>
+    <string name="qg_save">Enregistrer %1$d notes</string>
+    <string name="qg_saved">%1$d notes enregistrées. Vous pouvez saisir une autre colonne ou matière.</string>
+    <string name="qg_ocr_failed">Lecture impossible. Reprenez la photo avec un bon éclairage, feuille à plat, ou saisissez les chiffres.</string>
 </resources>

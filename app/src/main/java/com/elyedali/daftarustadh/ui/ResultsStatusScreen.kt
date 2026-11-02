@@ -48,6 +48,7 @@ fun ResultsStatusScreen(
     grades: List<GradeEntity>,
     records: List<SubjectRecordEntity>,
     onUploadRecord: () -> Unit,
+    onQuickEntry: (() -> Unit)? = null,
     onOpenSubject: (String) -> Unit,
     onGenerate: (term: Int) -> Unit,
     onOpenSettings: () -> Unit,
@@ -88,6 +89,9 @@ fun ResultsStatusScreen(
             }
             if (showGenerate) TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
             Button(onClick = onUploadRecord, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record)) }
+            if (onQuickEntry != null) androidx.compose.material3.OutlinedButton(onClick = onQuickEntry, modifier = Modifier.fillMaxWidth()) {
+                Text("⚡ " + stringResource(R.string.qg_button))
+            }
             Text(stringResource(R.string.upload_record_hint), style = MaterialTheme.typography.bodySmall)
             LazyColumn(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 items(subjects, key = { it.code }) { sub ->

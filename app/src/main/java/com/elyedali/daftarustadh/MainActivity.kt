@@ -107,7 +107,7 @@ private const val AR_LATN = "ar-u-nu-latn"
 private const val TT_APPROVED_KEY = "timetable_approved"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 /** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
@@ -756,6 +756,29 @@ class MainActivity : AppCompatActivity() {
                 }
                 val openFile = { filePicker.launch(arrayOf("*/*")) }
 
+                // ===== إدخال النتائج بأرقام النداء: قراءة صورة ورقة الأستاذ =====
+                var ocrText by remember { mutableStateOf<String?>(null) }
+                var ocrBusy by remember { mutableStateOf(false) }
+                fun readPhoto(uri: Uri) {
+                    ocrBusy = true
+                    scope.launch {
+                        val t = com.elyedali.daftarustadh.ocr.RollOcr.read(this@MainActivity, uri)
+                        ocrBusy = false
+                        if (t.isBlank()) android.widget.Toast.makeText(this@MainActivity, getString(R.string.qg_ocr_failed), android.widget.Toast.LENGTH_LONG).show()
+                        else ocrText = t
+                    }
+                }
+                val photoPicker = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) { uri -> if (uri != null) readPhoto(uri) }
+                var cameraUri by remember { mutableStateOf<Uri?>(null) }
+                val camera = rememberLauncherForActivityResult(ActivityResultContracts.TakePicture()) { ok -> if (ok) cameraUri?.let { readPhoto(it) } }
+                fun takePhoto() {
+                    val dir = java.io.File(cacheDir, "photos").apply { mkdirs(); listFiles()?.forEach { it.delete() } }
+                    val f = java.io.File(dir, "sheet-${System.currentTimeMillis()}.jpg")
+                    val uri = androidx.core.content.FileProvider.getUriForFile(this@MainActivity, "$packageName.files", f)
+                    cameraUri = uri
+                    try { camera.launch(uri) } catch (e: Exception) { photoPicker.launch("image/*") }
+                }
+
                 val chooserTitle = stringResource(R.string.share_chooser)
                 fun share(c: ClassEntity, type: ClassFileType) {
                     scope.launch {
@@ -930,6 +953,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.ACTIVATION -> BackHandler { screen = activationBack }
                     Screen.TIMETABLE -> BackHandler { screen = ttBack }
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
+                    Screen.QUICK_GRADES -> BackHandler { hubTab = 1; screen = Screen.ADMIN_CLASS }
                     Screen.INSTITUTION -> BackHandler { if (inst == null) homeMode = null; screen = Screen.HOME }
                     Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) homeMode = null; screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
@@ -973,6 +997,31 @@ class MainActivity : AppCompatActivity() {
                         onSave = { scope.launch { institutionDao.save(it); screen = Screen.HOME } },
                         onCancel = { if (inst == null) homeMode = null; screen = Screen.HOME }
                     )
+
+                    screen == Screen.QUICK_GRADES && currentClass != null -> {
+                        val c = currentClass!!
+                        com.elyedali.daftarustadh.ui.QuickGradesScreen(
+                            className = c.name,
+                            subjects = com.elyedali.daftarustadh.report.ReportCalc.orderSubjects(
+                                CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()),
+                            subjectLabel = { if (isFrUi) it.nameFr else it.nameAr },
+                            students = students,
+                            grades = classGrades,
+                            initialSubject = subjectCode,
+                            ocrText = ocrText,
+                            ocrBusy = ocrBusy,
+                            onPhoto = { photoPicker.launch("image/*") },
+                            onCamera = { takePhoto() },
+                            onOcrConsumed = { ocrText = null },
+                            onSave = { code, slot, values ->
+                                scope.launch {
+                                    val now = System.currentTimeMillis()
+                                    values.forEach { (sid, v) -> gradeDao.save(GradeEntity(sid, c.id, code, slot, v, now)) }
+                                }
+                            },
+                            onBack = { hubTab = 1; screen = Screen.ADMIN_CLASS }
+                        )
+                    }
 
                     screen == Screen.ABSENCE_CENTER -> com.elyedali.daftarustadh.ui.AbsenceCenterScreen(
                         classes = managedClasses.sortedWith(compareBy({ it.levelCode }, { it.number })),
@@ -1288,6 +1337,7 @@ class MainActivity : AppCompatActivity() {
                                     grades = classGrades,
                                     records = records,
                                     onUploadRecord = openFile,
+                                    onQuickEntry = { subjectCode = null; screen = Screen.QUICK_GRADES },
                                     onOpenSubject = { code ->
                                         subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.ADMIN_CLASS; screen = Screen.GRADES
                                     },
