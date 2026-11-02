@@ -106,6 +106,8 @@ fun ResultsStatusScreen(
             if (onUploadMany != null) androidx.compose.material3.OutlinedButton(onClick = onUploadMany, modifier = Modifier.fillMaxWidth()) {
                 Text("📥 " + stringResource(R.string.bu_button))
             }
+            if (onUploadMany != null) Text(stringResource(R.string.bu_hint), style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant)
             if (onQuickEntry != null) androidx.compose.material3.OutlinedButton(onClick = onQuickEntry, modifier = Modifier.fillMaxWidth()) {
                 Text("⚡ " + stringResource(R.string.qg_button))
             }
