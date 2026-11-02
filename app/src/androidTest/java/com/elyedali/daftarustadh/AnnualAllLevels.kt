@@ -24,9 +24,12 @@ class AnnualAllLevels {
         val ctx = InstrumentationRegistry.getInstrumentation().targetContext
         val year = CurriculumRepository.availableYears(ctx).last()
         val seal = BitmapFactory.decodeResource(ctx.resources, R.drawable.img_mauritania_seal)
-        val out = File(ctx.filesDir, "samples/annual").apply { mkdirs() }
+        val out = File(ctx.filesDir, "samples").apply { mkdirs() }
         val rnd = Random(21)
-        CurriculumRepository.levels(ctx, year).forEachIndexed { idx, lvl ->
+        // ملف واحد يرسمه كود التطبيق نفسه: صفحة لكل مستوى وشعبة
+        val doc = android.graphics.pdf.PdfDocument()
+        var no = 1
+        CurriculumRepository.levels(ctx, year).forEachIndexed { _, lvl ->
             val cls = "${lvl.code}1"
             val students = listOf(
                 StudentEntity("a", cls, 1, "فاطمة محمد سالم", "Fatimetou Mohamed Salem", "1234567890", "", "", "", 0L, "F"),
@@ -41,7 +44,9 @@ class AnnualAllLevels {
                 passThreshold = KashfSettings.DEFAULT_THRESHOLD, subjectRemarks = RemarkScale.DEFAULT,
                 generalRemarks = KashfSettings.DEFAULT_GENERAL_REMARKS, date = "02/11/2026", seal = seal
             )
-            File(out, "%02d-%s.pdf".format(idx + 1, lvl.code)).writeBytes(ReportCardPdf.build(3, reports, info))
+            no = ReportCardPdf.drawInto(doc, no, 3, reports, info)
         }
+        File(out, "annual-all.pdf").outputStream().use { doc.writeTo(it) }
+        doc.close()
     }
 }

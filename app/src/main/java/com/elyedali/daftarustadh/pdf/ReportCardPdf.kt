@@ -35,16 +35,17 @@ object ReportCardPdf {
         val seal: Bitmap?
     )
 
-    fun build(term: Int, reports: List<StudentReport>, info: Info): ByteArray {
-        val doc = PdfDocument()
+    fun build(term: Int, reports: List<StudentReport>, info: Info): ByteArray =
+        PdfCommon.render { drawInto(it, 1, term, reports, info) }
+
+    /** يضيف كشوف الطلاب إلى مستند قائم (كشف في كل صفحة)، ويرجع رقم الصفحة التالية. */
+    fun drawInto(doc: PdfDocument, startNo: Int, term: Int, reports: List<StudentReport>, info: Info): Int {
         reports.forEachIndexed { i, r ->
-            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), i + 1).create())
+            val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), startNo + i).create())
             drawCard(page.canvas, term, r, info)
             doc.finishPage(page)
         }
-        val out = ByteArrayOutputStream()
-        doc.writeTo(out); doc.close()
-        return out.toByteArray()
+        return startNo + reports.size
     }
 
     private val line = Paint().apply { color = BLACK; strokeWidth = 0.7f; style = Paint.Style.STROKE }
