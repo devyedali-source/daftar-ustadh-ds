@@ -1398,7 +1398,8 @@ class MainActivity : AppCompatActivity() {
                                     onChooseSubjects = null,
                                     className = c.name,
                                     schoolName = schoolNames[c.institutionId].orEmpty(),
-                                    subjectArFr = { subjectArFr(it) }
+                                    subjectArFr = { subjectArFr(it) },
+                                    periodTime = { p -> if (p in 1..ttSettings.periods) ttSettings.label(p - 1) else "" }
                                 )
                                 3 -> {
                                     // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)

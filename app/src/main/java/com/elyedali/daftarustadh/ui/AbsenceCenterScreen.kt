@@ -297,7 +297,8 @@ private fun EntryTab(
     }
     if (notify) {
         val (ar, fr) = subjectArFr(lastSubject)
-        GuardianNotifyDialog(lastAbsent, lastClass, schoolName, lastWhen, lastDate, lastPeriod, ar, fr) { notify = false }
+        GuardianNotifyDialog(lastAbsent, lastClass, schoolName, lastWhen, lastDate, lastPeriod, ar, fr,
+            time = if (lastPeriod >= 1) settings.label(lastPeriod - 1) else "") { notify = false }
     }
 }
 

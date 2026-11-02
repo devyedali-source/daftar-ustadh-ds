@@ -95,7 +95,9 @@ fun AbsenceTab(
     /** للإدارة: إبلاغ وكلاء غائبي الحصة عبر واتساب. */
     className: String = "",
     schoolName: String = "",
-    subjectArFr: (String) -> Pair<String, String> = { it to it }
+    subjectArFr: (String) -> Pair<String, String> = { it to it },
+    /** توقيت الحصة (مثل 08:00-09:00) حسب الجدول الزمني. */
+    periodTime: (Int) -> String = { "" }
 ) {
     var notifySession by remember { mutableStateOf<AbsenceSessionEntity?>(null) }
     val whenLabel = stringResource(R.string.gn_when)
@@ -269,7 +271,8 @@ fun AbsenceTab(
             className = className,
             schoolName = schoolName,
             whenText = whenLabel.format("\u2066${displayDate(ns.date)}\u2069", ns.period, labels[ns.subjectCode] ?: ns.subjectCode),
-            date = displayDate(ns.date), period = ns.period, subjectAr = subAr, subjectFr = subFr
+            date = displayDate(ns.date), period = ns.period, subjectAr = subAr, subjectFr = subFr,
+            time = periodTime(ns.period)
         ) { notifySession = null }
     }
 }

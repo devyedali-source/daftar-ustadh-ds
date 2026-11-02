@@ -43,14 +43,16 @@ fun guardianWhatsApp(s: StudentEntity): String? =
  * @param when_ وصف الحصة: التاريخ ورقم الحصة والمادة
  */
 /** رسالة الغياب للوكيل بالعربية ثم بالفرنسية دائمًا، أيًّا كانت لغة الواجهة. */
-fun guardianMessage(st: StudentEntity, className: String, schoolName: String, date: String, period: Int, subjectAr: String, subjectFr: String): String {
+fun guardianMessage(st: StudentEntity, className: String, schoolName: String, date: String, period: Int, subjectAr: String, subjectFr: String,
+                    time: String = ""): String {
+    val t = if (time.isBlank()) "" else " \u2066$time\u2069"
     val nameAr = st.nameAr.ifBlank { st.nameFr }
     val nameFr = st.nameFr.ifBlank { st.nameAr }
     return "السلام عليكم ورحمة الله،\n" +
-        "نُعلمكم أن الطالب(ة) $nameAr من القسم \u2066$className\u2069 تغيّب(ت) يوم \u2066$date\u2069 في الحصة $period ($subjectAr).\n" +
+        "نُعلمكم أن الطالب(ة) $nameAr من القسم \u2066$className\u2069 تغيّب(ت) يوم \u2066$date\u2069 في الحصة $period$t ($subjectAr).\n" +
         "إدارة $schoolName\n\n" +
         "Bonjour,\n" +
-        "Nous vous informons que l'élève $nameFr de la classe $className a été absent(e) le $date, séance $period ($subjectFr).\n" +
+        "Nous vous informons que l'élève $nameFr de la classe $className a été absent(e) le $date, séance $period${if (time.isBlank()) "" else " ($time)"} — $subjectFr.\n" +
         "L'administration de $schoolName"
 }
 
@@ -64,6 +66,7 @@ fun GuardianNotifyDialog(
     period: Int,
     subjectAr: String,
     subjectFr: String,
+    time: String = "",
     onDismiss: () -> Unit
 ) {
     val context = LocalContext.current
@@ -85,7 +88,7 @@ fun GuardianNotifyDialog(
                         }
                         if (phone != null) Button(
                             onClick = {
-                                val msg = guardianMessage(st, className, schoolName, date, period, subjectAr, subjectFr)
+                                val msg = guardianMessage(st, className, schoolName, date, period, subjectAr, subjectFr, time)
                                 try {
                                     context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/$phone?text=" + Uri.encode(msg))))
                                     sent = sent + st.id
