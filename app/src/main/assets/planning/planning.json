@@ -5,7 +5,7 @@
   "ANG": "First Cycle English Guide — 2020",
   "FR": "Guide d'exploitation du programme pour le premier cycle — septembre 2022",
   "PC": "Programme de sciences physiques : premier cycle — mars 2025",
-  "TI": "Guides du professeur : Informatique 1AS et 2AS, Technologie 1AS et 2AS (suite des leçons, sans répartition par semaine), Technologie 3AS (par semaine)",
+  "TI": "Guides du professeur : Informatique 1AS, 2AS et 3AS, Technologie 1AS et 2AS (suite des leçons, sans répartition par semaine), Technologie 3AS (par semaine)",
   "HG": "منهاج التاريخ والجغرافيا — السلك الأول، أبريل 2025",
   "MATS": "Curricula de mathématiques du premier cycle — 2022 (progression annuelle par mois et semaine)"
  },
@@ -4383,6 +4383,312 @@
     }
    ],
    "3AS": [
+    {
+     "l": "Leçon 1",
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Leçon 2",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "lesson",
+     "i": [
+      "Introduction à PowerPoint et création d'une présentation"
+     ]
+    },
+    {
+     "l": "Leçon 3",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "lesson",
+     "i": [
+      "Ouverture, fermeture et enregistrement d'une présentation"
+     ]
+    },
+    {
+     "l": "Leçon 4",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "lesson",
+     "i": [
+      "Insertion et gestion des diapositives"
+     ]
+    },
+    {
+     "l": "Leçon 5",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "lesson",
+     "i": [
+      "Insertion de texte et mise en forme"
+     ]
+    },
+    {
+     "l": "Leçon 6",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "lesson",
+     "i": [
+      "Insertion d'images et objets graphiques"
+     ]
+    },
+    {
+     "l": "Leçon 7",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "lesson",
+     "i": [
+      "Déplacement et transition des diapositives"
+     ]
+    },
+    {
+     "l": "Leçon 8",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "lesson",
+     "i": [
+      "Exposition et finalisation de la présentation"
+     ]
+    },
+    {
+     "l": "Leçon 9",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Présentation assistée par ordinateur",
+     "k": "eval",
+     "i": [
+      "Évaluation : présentation PowerPoint"
+     ]
+    },
+    {
+     "l": "Leçon 10",
+     "t": 1,
+     "u": "Informatique — Unité 2 : Éthique de l'utilisation de l'Internet",
+     "k": "lesson",
+     "i": [
+      "Naviguer sur Internet en toute sécurité et avec éthique"
+     ]
+    },
+    {
+     "l": "Leçon 11",
+     "t": 1,
+     "u": "Informatique — Unité 2 : Éthique de l'utilisation de l'Internet",
+     "k": "eval",
+     "i": [
+      "Évaluation : éthique de l'utilisation de l'Internet"
+     ]
+    },
+    {
+     "l": "Leçon 12",
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation des unités 1 et 2 (trimestre 1)"
+     ]
+    },
+    {
+     "l": "Leçon 13",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Introduction à la notion d'algorithme"
+     ]
+    },
+    {
+     "l": "Leçon 14",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Introduction à la notion de variables"
+     ]
+    },
+    {
+     "l": "Leçon 15",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Introduction à la notion de conditions"
+     ]
+    },
+    {
+     "l": "Leçon 16",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Écriture d'un algorithme simple"
+     ]
+    },
+    {
+     "l": "Leçon 17",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Test d'un algorithme simple"
+     ]
+    },
+    {
+     "l": "Leçon 18",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Introduction aux boucles"
+     ]
+    },
+    {
+     "l": "Leçon 19",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Utilisation des boucles dans un algorithme"
+     ]
+    },
+    {
+     "l": "Leçon 20",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Reconnaissance de la tâche faite par un algorithme"
+     ]
+    },
+    {
+     "l": "Leçon 21",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "lesson",
+     "i": [
+      "Création et test d'un algorithme final"
+     ]
+    },
+    {
+     "l": "Leçon 22",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Algorithme et programmation",
+     "k": "eval",
+     "i": [
+      "Évaluation de l'unité 3"
+     ]
+    },
+    {
+     "l": "Leçon 23",
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation semestrielle (trimestre 2)"
+     ]
+    },
+    {
+     "l": "Leçon 24",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Réseau simple",
+     "k": "lesson",
+     "i": [
+      "Introduction aux réseaux informatiques"
+     ]
+    },
+    {
+     "l": "Leçon 25",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Réseau simple",
+     "k": "lesson",
+     "i": [
+      "Composantes d'un réseau simple"
+     ]
+    },
+    {
+     "l": "Leçon 26",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Réseau simple",
+     "k": "lesson",
+     "i": [
+      "Fonctionnement et types de réseaux"
+     ]
+    },
+    {
+     "l": "Leçon 27",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Réseau simple",
+     "k": "lesson",
+     "i": [
+      "Utilisation d'un réseau local simple"
+     ]
+    },
+    {
+     "l": "Leçon 28",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Réseau simple",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 4 (réseau simple)"
+     ]
+    },
+    {
+     "l": "Leçon 29",
+     "t": 3,
+     "u": "Informatique — Unité 5 : E-mail",
+     "k": "lesson",
+     "i": [
+      "Introduction à l'e-mail"
+     ]
+    },
+    {
+     "l": "Leçon 30",
+     "t": 3,
+     "u": "Informatique — Unité 5 : E-mail",
+     "k": "lesson",
+     "i": [
+      "Rédaction et envoi d'un e-mail"
+     ]
+    },
+    {
+     "l": "Leçon 31",
+     "t": 3,
+     "u": "Informatique — Unité 5 : E-mail",
+     "k": "lesson",
+     "i": [
+      "Ajouter une pièce jointe"
+     ]
+    },
+    {
+     "l": "Leçon 32",
+     "t": 3,
+     "u": "Informatique — Unité 5 : E-mail",
+     "k": "lesson",
+     "i": [
+      "Réception et gestion des e-mails"
+     ]
+    },
+    {
+     "l": "Leçon 33",
+     "t": 3,
+     "u": "Informatique — Unité 5 : E-mail",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 5 (e-mail)"
+     ]
+    },
+    {
+     "l": "Leçon 34",
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation semestrielle sommative (trimestre 3)"
+     ]
+    },
     {
      "l": "Semaine 3",
      "t": 1,
