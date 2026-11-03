@@ -1675,13 +1675,15 @@ class MainActivity : AppCompatActivity() {
 
                     screen == Screen.TEACHER_HUB && currentClass != null -> {
                         val c = currentClass!!
+                        val isCollege = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.stage == "college"
                         ClassHub(
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
+                            // أقسام الإعدادية: صفحة التخطيط السنوي
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_editor)),
+                                stringResource(R.string.tab_editor)) + (if (isCollege) listOf(stringResource(R.string.plan_tab)) else emptyList()),
                             icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
-                                androidx.compose.material.icons.Icons.Filled.Create),
+                                androidx.compose.material.icons.Icons.Filled.Create) + (if (isCollege) listOf(androidx.compose.material.icons.Icons.Filled.DateRange) else emptyList()),
                             selected = hubTab,
                             onSelect = { hubTab = it },
                             onBack = { screen = hubBack }
@@ -1714,6 +1716,12 @@ class MainActivity : AppCompatActivity() {
                                     onShowStudents = { hubTab = 0 },
                                     onBack = { screen = hubBack },
                                     showHeader = false
+                                )
+                                3 -> com.elyedali.daftarustadh.ui.PlanningTab(
+                                    levelCode = c.levelCode,
+                                    mySubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                                        .filter { s -> mySubjects.any { it.subjectCode == s.code } }
+                                        .map { it.code to (if (isFrUi) it.nameFr else it.nameAr) }
                                 )
                                 else -> DocumentsTab(
                                     classId = c.id,

@@ -718,4 +718,9 @@
     <string name="reg_blank">فارغ</string>
     <string name="reg_no_students">لا يوجد طلاب في هذا القسم بعد: سجّلهم في «الطلاب» لسحب الدفتر بأسمائهم.</string>
     <string name="bu_other_teacher">سجل الأستاذ %1$s، والمادة مسندة في الجدول الزمني إلى %2$s. لم يُرفع: إن كان صحيحًا فارفعه وحده.</string>
+    <string name="plan_tab">التخطيط</string>
+    <string name="plan_title">التخطيط السنوي</string>
+    <string name="plan_holiday">عطلة</string>
+    <string name="plan_missing">لم يصل بعد تخطيط: %1$s</string>
+    <string name="plan_none">لم يصل بعد التخطيط السنوي لموادك في هذا المستوى.</string>
 </resources>
