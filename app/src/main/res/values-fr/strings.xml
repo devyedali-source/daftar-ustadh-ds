@@ -98,7 +98,7 @@
     <string name="share_full_file">Fichier complet de la classe</string>
     <string name="share_full_file_hint">Toutes les informations des élèves, pour un enseignant chargé de la classe</string>
     <string name="share_chooser">Envoyer le fichier de la classe</string>
-    <string name="file_invalid">Ce fichier n\'est pas un fichier « دفتر الأستاذ DS » ou « إدارة DS », ou il est endommagé.</string>
+    <string name="file_invalid">Lecture impossible : ce n\'est pas un fichier « دفتر الأستاذ DS » ou « إدارة DS », il est endommagé, ou il vient d\'une version plus récente (mettez l\'application à jour puis réessayez).</string>
     <string name="file_conflict">La classe %1$s existe déjà chez vous depuis une autre source. Mettez-vous d\'accord sur un seul fichier : celui de son créateur.</string>
     <string name="file_ok_teacher">La classe %1$s a été ajoutée à « Mes classes ».</string>
     <string name="file_ok_full">La classe %1$s a été ajoutée au mode administration.</string>
@@ -707,4 +707,6 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="ts_classes">Mes classes : %1$s</string>
     <string name="ts_open_file">Ouvrir un fichier d\'une administration</string>
     <string name="ts_hint">Si vous enseignez dans plusieurs établissements, ouvrez le fichier de chacun : ils apparaissent ici, votre emploi du temps regroupe toutes vos séances et signale les chevauchements.</string>
+    <string name="record_by_name">⚠️ Le code de cette classe a changé chez vous après l\'envoi du fichier au professeur (classe recréée ou application réinstallée) : la classe a été reconnue par établissement, année et nom.</string>
+    <string name="record_by_roll">⚠️ %1$d élèves ont été reconnus par leur numéro d\'appel car leur code interne a changé. Vérifiez avant d\'enregistrer, et renvoyez au professeur son nouveau fichier.</string>
 </resources>

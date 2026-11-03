@@ -1,6 +1,7 @@
 package com.elyedali.daftarustadh.transfer
 
 import com.elyedali.daftarustadh.data.DaftarDatabase
+import com.elyedali.daftarustadh.data.GradeEntity
 import com.elyedali.daftarustadh.data.TeacherSubjectEntity
 import org.json.JSONArray
 import org.json.JSONObject
@@ -57,15 +58,56 @@ data class BundleOutcome(val saved: List<String>, val conflicts: List<String>, v
 class TeacherBundleImporter(private val db: DaftarDatabase) {
     private val classImporter = ClassFileImporter(db)
 
+    private fun norm(t: String) = t.trim().replace(Regex("\\s+"), " ").lowercase()
+
+    /**
+     * قسم وصل من قبل بنفس المؤسسة (بالاسم) والسنة والمستوى والرقم لكن برمز آخر:
+     * الإدارة أعادت إنشاء القسم أو أعادت تثبيت تطبيقها. يُستبدل القديم بالجديد، وتُنقل نقاط الأستاذ
+     * من طلاب القسم القديم إلى طلاب الجديد بأرقام النداء، فلا يُرفض الملف ولا يضيع ما رصده.
+     */
+    private suspend fun replaceOld(file: ClassFile): List<GradeEntity> {
+        val incoming = file.schoolClass
+        val olds = db.classDao().findTeaching(incoming.schoolYear, incoming.levelCode, incoming.number).filter { old ->
+            old.id != incoming.id && (old.institutionId == incoming.institutionId ||
+                db.institutionDao().getById(old.institutionId)?.let {
+                    norm(it.schoolName) == norm(file.institution.schoolName) && norm(it.wilaya) == norm(file.institution.wilaya) } == true)
+        }
+        if (olds.isEmpty()) return emptyList()
+        val newByRoll = file.students.associateBy { it.rollNumber }
+        val moved = ArrayList<GradeEntity>()
+        olds.forEach { old ->
+            val oldStudents = db.studentDao().listByClass(old.id).associateBy { it.id }
+            db.gradeDao().listClasses(listOf(old.id)).forEach { g ->
+                val roll = oldStudents[g.studentId]?.rollNumber ?: return@forEach
+                val to = newByRoll[roll] ?: return@forEach
+                moved += g.copy(studentId = to.id, classId = incoming.id)
+            }
+            db.documentDao().moveClass(old.id, incoming.id)
+            db.gradeDao().deleteByClass(old.id)
+            db.gradeDao().deleteRecordsByClass(old.id)
+            db.gradeDao().deleteTeacherSubjectsByClass(old.id)
+            db.studentDao().deleteByClass(old.id)
+            db.absenceDao().deleteAbsencesByClass(old.id)
+            db.absenceDao().deleteSessionsByClass(old.id)
+            db.classDao().delete(old)
+            // جدول المؤسسة القديمة (برمزها القديم) يُحذف، فيحلّ محله جدول الملف الجديد
+            if (old.institutionId != incoming.institutionId)
+                db.timetableDao().clearTeacherTimetable(old.institutionId, old.schoolYear)
+        }
+        return moved
+    }
+
     suspend fun save(bundle: TeacherBundle): BundleOutcome {
         val saved = ArrayList<String>()
         val conflicts = ArrayList<String>()
         var subjects = 0
         bundle.classes.forEach { (file, codes) ->
+            val moved = replaceOld(file)
             when (val r = classImporter.save(file)) {
                 is ImportOutcome.Success -> {
                     saved += r.className
                     codes.forEach { db.gradeDao().addTeacherSubject(TeacherSubjectEntity(file.schoolClass.id, it)); subjects++ }
+                    moved.forEach { db.gradeDao().save(it) }
                 }
                 is ImportOutcome.ConflictingSource -> conflicts += r.className
             }

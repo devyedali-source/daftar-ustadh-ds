@@ -19,36 +19,68 @@ sealed class RecordCheck {
         val unknownStudents: List<String>,   // في السجل وليسوا في القسم عندك
         val missingStudents: List<String>,   // في القسم عندك وليسوا في السجل
         val alreadyUploaded: SubjectRecordEntity?,
-        val hasGrades: Boolean
+        val hasGrades: Boolean,
+        /** طالب السجل ← طالب القسم عندك (بالرقم الخفي، وإلا برقم النداء). */
+        val mapping: Map<String, String> = emptyMap(),
+        /** عدد الطلاب الذين طوبقوا برقم النداء لأن رقمهم الخفي تغيّر (طالب أُعيد تسجيله). */
+        val byRoll: Int = 0,
+        /** القسم نفسه عرفناه باسمه (المؤسسة والسنة والقسم) لأن رمزه تغيّر (أُعيد إنشاؤه أو أُعيد تثبيت التطبيق). */
+        val classByName: Boolean = false
     ) : RecordCheck()
 }
 
 class RecordImporter(private val db: DaftarDatabase) {
 
+    private fun norm(t: String) = t.trim().replace(Regex("\\s+"), " ").lowercase()
+
     suspend fun check(file: RecordFile): RecordCheck {
-        val c = db.classDao().getById(file.classId)
+        val byId = db.classDao().getById(file.classId)
         // التحقق: بصمة القسم تتضمن المؤسسة والسنة والمستوى والرقم؛ ويُتحقق منها صراحةً أيضًا
-        if (c == null || c.institutionId != file.institutionId || c.schoolYear != file.schoolYear ||
-            c.levelCode != file.levelCode || c.number != file.number
-        ) return RecordCheck.WrongClass(file)
-        val owner = db.institutionDao().getById(c.institutionId)
-        if (owner == null || owner.wilaya != file.wilaya ||
-            (owner.schoolListId != null && file.schoolListId != null && owner.schoolListId != file.schoolListId)
-        ) return RecordCheck.WrongClass(file)
+        val idOk = byId != null && byId.institutionId == file.institutionId && byId.schoolYear == file.schoolYear &&
+            byId.levelCode == file.levelCode && byId.number == file.number
+        var classByName = false
+        val c: ClassEntity = if (idOk) byId!! else {
+            // رمز القسم لا يوافق (أُعيد إنشاء القسم أو أُعيد تثبيت تطبيق الإدارة بعد إرسال الملفات للأساتذة):
+            // يُعرف القسم باسمه في مؤسستك: نفس اسم المؤسسة والسنة والمستوى والرقم، ثم يُطابق الطلاب بأرقام النداء
+            val own = db.institutionDao().getOwn() ?: return RecordCheck.WrongClass(file)
+            if (norm(own.schoolName) != norm(file.schoolName) || norm(own.wilaya) != norm(file.wilaya)) return RecordCheck.WrongClass(file)
+            val slot = db.classDao().findSlot(own.id, file.schoolYear, file.levelCode, file.number)
+                ?: return RecordCheck.WrongClass(file)
+            classByName = true
+            slot
+        }
+        if (!classByName) {
+            val owner = db.institutionDao().getById(c.institutionId)
+            if (owner == null ||
+                (owner.schoolListId != null && file.schoolListId != null && owner.schoolListId != file.schoolListId)
+            ) return RecordCheck.WrongClass(file)
+        }
         if (!c.managed) return RecordCheck.NotManaged(file)
 
         val students = db.studentDao().listByClass(c.id)
         val ids = students.map { it.id }.toSet()
-        val fileIds = file.students.map { it.id }.toSet()
+        // المطابقة: بالرقم الخفي أولًا؛ ومن بقي يُطابق برقم النداء (ثابت طوال السنة) إن كان ذلك الرقم لم يُطابق بعد
+        val mapping = HashMap<String, String>()
+        file.students.filter { it.id in ids }.forEach { mapping[it.id] = it.id }
+        val usedTargets = mapping.values.toMutableSet()
+        val byRollNumber = students.filter { it.id !in usedTargets }.associateBy { it.rollNumber }
+        var byRoll = 0
+        file.students.filter { it.id !in mapping && it.roll > 0 }.forEach { fs ->
+            val target = byRollNumber[fs.roll]
+            if (target != null && target.id !in usedTargets) { mapping[fs.id] = target.id; usedTargets += target.id; byRoll++ }
+        }
         return RecordCheck.Ready(
             file = file,
             schoolClass = c,
-            matched = file.students.count { it.id in ids },
-            unknownStudents = file.students.filter { it.id !in ids }.map { "${it.roll}. ${it.name}" },
-            missingStudents = students.filter { it.id !in fileIds }.sortedBy { it.rollNumber }
+            matched = mapping.size,
+            unknownStudents = file.students.filter { it.id !in mapping }.map { "${it.roll}. ${it.name}" },
+            missingStudents = students.filter { it.id !in usedTargets }.sortedBy { it.rollNumber }
                 .map { "${it.rollNumber}. ${it.nameAr.ifBlank { it.nameFr }}" },
             alreadyUploaded = db.gradeDao().getRecord(c.id, file.subjectCode),
-            hasGrades = db.gradeDao().countGrades(c.id, file.subjectCode) > 0
+            hasGrades = db.gradeDao().countGrades(c.id, file.subjectCode) > 0,
+            mapping = mapping,
+            byRoll = byRoll,
+            classByName = classByName
         )
     }
 
@@ -59,14 +91,17 @@ class RecordImporter(private val db: DaftarDatabase) {
         val file = ready.file
         val ids = db.studentDao().listByClass(c.id).map { it.id }.toSet()
         val now = System.currentTimeMillis()
+        // طالب السجل ← طالب القسم (المطابقة التي عُرضت قبل الرفع)
+        val target: (String) -> String? = { fid -> (ready.mapping[fid] ?: fid).takeIf { it in ids } }
         // سجل الفصل الأول أو الثاني لا يحمل الاختبارات: تُستبدل الامتحانات فقط ولا تُمسّ بقية الخانات.
         // السجل الأخير (فيه اختبارات) يحلّ محلّ كل نتائج المادة.
         val hasTests = file.students.any { s -> s.grades.keys.any { !it.startsWith("E") } }
-        file.students.filter { it.id in ids }.forEach { s ->
-            if (hasTests) gradeDao.clearStudentSubject(c.id, file.subjectCode, s.id)
+        file.students.forEach { s ->
+            val sid = target(s.id) ?: return@forEach
+            if (hasTests) gradeDao.clearStudentSubject(c.id, file.subjectCode, sid)
             else com.elyedali.daftarustadh.data.GradeSlot.ALL.filter { it.startsWith("E") }
-                .forEach { slot -> gradeDao.clear(s.id, file.subjectCode, slot) }
-            s.grades.forEach { (slot, v) -> gradeDao.save(GradeEntity(s.id, c.id, file.subjectCode, slot, v, now, s.marks[slot])) }
+                .forEach { slot -> gradeDao.clear(sid, file.subjectCode, slot) }
+            s.grades.forEach { (slot, v) -> gradeDao.save(GradeEntity(sid, c.id, file.subjectCode, slot, v, now, s.marks[slot])) }
         }
         gradeDao.saveRecord(
             SubjectRecordEntity(

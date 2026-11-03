@@ -28,6 +28,10 @@ interface ClassDao {
     @Query("SELECT * FROM school_class WHERE id = :id")
     suspend fun getById(id: String): ClassEntity?
 
+    /** أقسام الأستاذ في سنة ومستوى ورقم معيّن (من أي مؤسسة). */
+    @Query("SELECT * FROM school_class WHERE teaching = 1 AND managed = 0 AND schoolYear = :schoolYear AND levelCode = :levelCode AND number = :number")
+    suspend fun findTeaching(schoolYear: String, levelCode: String, number: Int): List<ClassEntity>
+
     @Query("SELECT * FROM school_class WHERE institutionId = :institutionId AND schoolYear = :schoolYear AND levelCode = :levelCode AND number = :number LIMIT 1")
     suspend fun findSlot(institutionId: String, schoolYear: String, levelCode: String, number: Int): ClassEntity?
 

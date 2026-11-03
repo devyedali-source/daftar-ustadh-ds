@@ -31,6 +31,14 @@
                 <data android:mimeType="application/gzip" />
                 <data android:mimeType="application/x-gzip" />
             </intent-filter>
+            <!-- استقبال عدة ملفات معًا عبر «مشاركة» (سجلات الأساتذة من واتساب) -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.daftar-ustadh.dsq" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/octet-stream" />
+            </intent-filter>
             <!-- استقبال ملف قسم عبر «مشاركة» -->
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />

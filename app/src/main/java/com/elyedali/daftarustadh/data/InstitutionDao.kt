@@ -16,6 +16,9 @@ interface InstitutionDao {
     @Query("SELECT * FROM institution")
     fun observeAll(): Flow<List<InstitutionEntity>>
 
+    @Query("SELECT * FROM institution WHERE isOwn = 1 ORDER BY createdAt LIMIT 1")
+    suspend fun getOwn(): InstitutionEntity?
+
     @Query("SELECT COUNT(*) FROM institution WHERE isOwn = 1")
     suspend fun ownCount(): Int
 

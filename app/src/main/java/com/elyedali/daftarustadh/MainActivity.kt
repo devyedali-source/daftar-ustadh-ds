@@ -140,6 +140,7 @@ class MainActivity : AppCompatActivity() {
 
     /** ملف قسم فُتح من الواتساب أو من مدير الملفات، ينتظر المعالجة. */
     private val incomingFile = mutableStateOf<Uri?>(null)
+    private val incomingFiles = mutableStateOf<List<Uri>>(emptyList())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -877,6 +878,8 @@ class MainActivity : AppCompatActivity() {
                             imported += label
                             if (chk.unknownStudents.isNotEmpty() || chk.missingStudents.isNotEmpty())
                                 warnings += label + ": " + getString(R.string.bu_students_diff, chk.unknownStudents.size, chk.missingStudents.size)
+                            if (chk.classByName || chk.byRoll > 0)
+                                warnings += label + ": " + getString(R.string.record_by_roll, chk.byRoll)
                         }
                         // الفصل الذي يُفحص: آخر فصل وصلت امتحاناته في هذه الملفات
                         val term = (3 downTo 1).firstOrNull { t ->
@@ -902,6 +905,15 @@ class MainActivity : AppCompatActivity() {
                 }
                 val batchPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()) { uris -> processRecordsBatch(uris) }
                 val openBatch = { batchPicker.launch(arrayOf("*/*")) }
+                // ملفات كثيرة وصلت معًا بـ«مشاركة» من واتساب: الإدارة ترفعها دفعة واحدة، والأستاذ يفتحها واحدًا واحدًا
+                val pendingUris by incomingFiles
+                LaunchedEffect(pendingUris) {
+                    val list = pendingUris
+                    if (list.isNotEmpty()) {
+                        incomingFiles.value = emptyList()
+                        if (com.elyedali.daftarustadh.AppRole.isAdmin) processRecordsBatch(list) else list.forEach { processFile(it) }
+                    }
+                }
 
                 // ===== إدخال النتائج بأرقام النداء: قراءة صورة ورقة الأستاذ =====
                 var ocrText by remember { mutableStateOf<String?>(null) }
@@ -2114,6 +2126,9 @@ class MainActivity : AppCompatActivity() {
                                 if (!assigned.isNullOrBlank() && assigned.trim() != chk.file.teacherName.trim())
                                     Text(stringResource(R.string.record_other_teacher, assigned), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 Text(stringResource(R.string.record_matched, chk.matched))
+                                // القسم أُعيد إنشاؤه أو أُعيد تثبيت التطبيق بعد إرسال الملف للأستاذ: المطابقة بأرقام النداء
+                                if (chk.classByName) Text(stringResource(R.string.record_by_name), color = androidx.compose.ui.graphics.Color(0xFFE65100))
+                                if (chk.byRoll > 0) Text(stringResource(R.string.record_by_roll, chk.byRoll), color = androidx.compose.ui.graphics.Color(0xFFE65100))
                                 if (chk.unknownStudents.isNotEmpty())
                                     Text(stringResource(R.string.record_unknown, chk.unknownStudents.joinToString("، ")), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 if (chk.missingStudents.isNotEmpty())
@@ -2205,6 +2220,12 @@ class MainActivity : AppCompatActivity() {
             else -> null
         }
         if (uri != null) incomingFile.value = uri
+        // عدة ملفات مُشاركة معًا من واتساب (تحديد عدة سجلات ثم «مشاركة»)
+        if (intent?.action == Intent.ACTION_SEND_MULTIPLE) {
+            val list: List<Uri> = (if (Build.VERSION.SDK_INT >= 33) intent.getParcelableArrayListExtra(Intent.EXTRA_STREAM, Uri::class.java)
+                else @Suppress("DEPRECATION") intent.getParcelableArrayListExtra<Uri>(Intent.EXTRA_STREAM)).orEmpty()
+            if (list.isNotEmpty()) incomingFiles.value = list
+        }
     }
 
     /** «كتبي»: يفتح موقع كتبي في متصفح الهاتف خارج التطبيق. */

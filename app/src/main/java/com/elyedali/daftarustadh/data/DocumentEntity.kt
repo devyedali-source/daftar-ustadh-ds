@@ -42,4 +42,7 @@ interface DocumentDao {
 
     @Query("DELETE FROM document WHERE classId = :classId")
     suspend fun deleteByClass(classId: String)
+
+    @Query("UPDATE document SET classId = :to WHERE classId = :from")
+    suspend fun moveClass(from: String, to: String)
 }
