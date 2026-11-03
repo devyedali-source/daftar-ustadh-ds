@@ -59,7 +59,9 @@ fun StudentsScreen(
     readOnly: Boolean = false,
     subtitle: String? = null,
     onOpenResults: (() -> Unit)? = null,
-    showHeader: Boolean = true
+    showHeader: Boolean = true,
+    /** الإدارة: بطاقات طلاب القسم (PDF) لمشاركتها مع الوراقة. */
+    onCards: (() -> Unit)? = null
 ) {
     var shareMenu by remember { mutableStateOf(false) }
     var editing by remember { mutableStateOf<StudentEntity?>(null) }
@@ -106,6 +108,11 @@ fun StudentsScreen(
                             onClick = { shareMenu = false; onShare(com.elyedali.daftarustadh.transfer.ClassFileType.FULL) }
                         )
                     }
+                }
+            }
+            if (onCards != null && students.isNotEmpty()) {
+                OutlinedButton(onClick = onCards, modifier = Modifier.fillMaxWidth()) {
+                    Text("🪪 " + stringResource(R.string.cards_button), maxLines = 2)
                 }
             }
             if (students.isEmpty()) Text(stringResource(R.string.no_students))

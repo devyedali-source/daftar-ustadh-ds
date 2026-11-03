@@ -243,6 +243,8 @@ class MainActivity : AppCompatActivity() {
                 var ttInitialTab by remember { mutableStateOf<Int?>(null) }
                 var recordsSent by remember { mutableStateOf(setOf<String>()) }
                 var printWorking by remember { mutableStateOf(false) }
+                // صفحة المشاركة مع الوراقة: BOOKS دفاتر الإدارة، RECORDS سجلات الأساتذة، TIMETABLES جداول الأساتذة
+                var printKind by rememberSaveable { mutableStateOf("BOOKS") }
                 var ttBack by rememberSaveable { mutableStateOf(Screen.HOME) }
                 var askNameFor by remember { mutableStateOf<String?>(null) }
                 val thresholdsText by remember { metaDao.observe(KashfSettings.THRESHOLDS_KEY) }.collectAsState(initial = null)
@@ -1078,12 +1080,30 @@ class MainActivity : AppCompatActivity() {
                                 }
                             }
                             if (files.isNotEmpty()) ShareHelper.shareFiles(this@MainActivity, files, "application/pdf",
-                                getString(R.string.ps_title), getString(R.string.ps_message, owner.schoolName))
+                                getString(R.string.ps_share), getString(R.string.ps_message, owner.schoolName))
                         } catch (e: Exception) {
                             android.widget.Toast.makeText(this@MainActivity, getString(R.string.ps_error), android.widget.Toast.LENGTH_LONG).show()
                         } finally {
                             printWorking = false
                         }
+                    }
+                }
+
+                /** بطاقات طلاب القسم (PDF): عشر بطاقات في كل صفحة، لمشاركتها مع الوراقة. */
+                fun shareClassCards(c: ClassEntity) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val list = studentDao.listByClass(c.id).sortedBy { it.rollNumber }
+                        if (list.isEmpty()) return@launch
+                        val info = com.elyedali.daftarustadh.pdf.StudentCardPdf.Info(owner.schoolName, c.schoolYear, sealBitmap)
+                        val cards = list.map { s ->
+                            com.elyedali.daftarustadh.pdf.StudentCardPdf.Card(
+                                s.nameAr.ifBlank { s.nameFr }, if (s.nameAr.isNotBlank()) s.nameFr else "", s.rim, c.name, s.rollNumber,
+                                { com.elyedali.daftarustadh.data.StudentPhotos.load(this@MainActivity, s.id) })
+                        }
+                        val tag = "${c.name} - ${owner.schoolName} - ${c.schoolYear}".replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.StudentCardPdf.build(cards, info) }
+                        ShareHelper.share(this@MainActivity, bytes, "بطاقات الطلاب - Cartes d'élèves - $tag.pdf", getString(R.string.cards_button), "application/pdf")
                     }
                 }
 
@@ -1193,7 +1213,9 @@ class MainActivity : AppCompatActivity() {
                         val noStudents = classesWithoutStudents.joinToString("، ") { it.name }
                         val n = managedClasses.size
                         com.elyedali.daftarustadh.ui.PrintShopScreen(
-                            records = com.elyedali.daftarustadh.ui.PrintItem(
+                            title = getString(when (printKind) { "RECORDS" -> R.string.ps_records_title; "TIMETABLES" -> R.string.ps_timetables_title; else -> R.string.ps_books_title }),
+                            intro = getString(when (printKind) { "RECORDS" -> R.string.ps_intro_records; "TIMETABLES" -> R.string.ps_intro_timetables; else -> R.string.ps_intro }),
+                            records = if (printKind != "RECORDS") null else com.elyedali.daftarustadh.ui.PrintItem(
                                 ready = n > 0 && ttApproved && classesWithoutStudents.isEmpty(),
                                 note = when {
                                     n == 0 -> getString(R.string.ps_no_classes)
@@ -1201,28 +1223,20 @@ class MainActivity : AppCompatActivity() {
                                     classesWithoutStudents.isNotEmpty() -> getString(R.string.sr_block_students, noStudents)
                                     else -> getString(R.string.ps_records_note, n)
                                 }),
-                            timetables = com.elyedali.daftarustadh.ui.PrintItem(
+                            timetables = if (printKind != "TIMETABLES") null else com.elyedali.daftarustadh.ui.PrintItem(
                                 ready = n > 0 && ttApproved,
                                 note = if (ttApproved) getString(R.string.ps_timetables_note, ttManagedSlots.map { it.teacherName }.filter { it.isNotBlank() }.distinct().size)
                                     else getString(R.string.sr_block_timetable)),
-                            absence = com.elyedali.daftarustadh.ui.PrintItem(
+                            absence = if (printKind != "BOOKS") null else com.elyedali.daftarustadh.ui.PrintItem(
                                 ready = n > 0 && classesWithoutStudents.isEmpty(),
                                 note = when {
                                     n == 0 -> getString(R.string.ps_no_classes)
                                     classesWithoutStudents.isNotEmpty() -> getString(R.string.sr_block_students, noStudents)
                                     else -> getString(R.string.ps_absence_note, n)
                                 }),
-                            textbook = com.elyedali.daftarustadh.ui.PrintItem(
+                            textbook = if (printKind != "BOOKS") null else com.elyedali.daftarustadh.ui.PrintItem(
                                 ready = n > 0,
                                 note = if (n == 0) getString(R.string.ps_no_classes) else getString(R.string.ps_textbook_note, n)),
-                            cards = run {
-                                val total = homeGenderCounts.filter { gc -> managedClasses.any { it.id == gc.classId } }.sumOf { it.count }
-                                val withPhoto = allStudents.count { com.elyedali.daftarustadh.data.StudentPhotos.exists(this@MainActivity, it.id) }
-                                com.elyedali.daftarustadh.ui.PrintItem(
-                                    ready = total > 0,
-                                    note = if (total == 0) getString(R.string.ps_no_classes) else getString(R.string.ps_cards_note, total, withPhoto)
-                                )
-                            },
                             working = printWorking,
                             onShare = { shareWithPrintShop(it) },
                             onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.PRINT_SHOP; screen = Screen.TIMETABLE },
@@ -1484,7 +1498,8 @@ class MainActivity : AppCompatActivity() {
                                         onShowSubjects = { showSubjects = true },
                                         onBack = { screen = hubBack },
                                         onShare = { type -> share(c, type) },
-                                        showHeader = false
+                                        showHeader = false,
+                                        onCards = { shareClassCards(c) }
                                     )
                                     if (showSubjects) ClassSubjectsDialog(c, onPick = { code ->
                                         subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.ADMIN_CLASS; showSubjects = false; screen = Screen.GRADES
@@ -1519,33 +1534,52 @@ class MainActivity : AppCompatActivity() {
                                     showHeader = false,
                                     showGenerate = false
                                 )
-                                2 -> AbsenceTab(
-                                    classId = c.id,
+                                // الغياب داخل القسم: تسجيل ورقة الأستاذ بأرقام النداء، الحصص المسجّلة، والأكثر تغيبًا
+                                2 -> com.elyedali.daftarustadh.ui.AbsenceCenterScreen(
+                                    classes = listOf(c),
                                     students = students,
-                                    subjects = subjects.map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
                                     sessions = absenceSessions,
                                     absences = absences,
-                                    isAdmin = true,
-                                    onSave = { old, session, ids -> scope.launch { absenceDao.replaceSession(old, session, ids) } },
-                                    onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
-                                    onSend = null,
-                                    onUpload = null,
-                                    onChooseSubjects = null,
-                                    className = c.name,
+                                    settings = ttSettings,
+                                    slots = if (ttApproved) ttManagedSlots.filter { it.classId == c.id } else emptyList(),
+                                    subjectLabel = { subjectName(it) },
+                                    yearStart = c.schoolYear.take(4) + "-10-01",
+                                    onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
+                                    onBack = { screen = hubBack },
                                     schoolName = schoolNames[c.institutionId].orEmpty(),
                                     subjectArFr = { subjectArFr(it) },
-                                    periodTime = { p -> if (p in 1..ttSettings.periods) ttSettings.label(p - 1) else "" },
-                                    // الغياب مرتبط بجدول القسم
-                                    slotAt = { d, p ->
-                                        val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
-                                        if (!ttApproved) null else ttManagedSlots.firstOrNull { it.classId == c.id && it.day == day && it.period == p - 1 }
-                                    },
-                                    periodsOnDate = { d ->
-                                        val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
-                                        if (day in ttSettings.days) ttSettings.periodsOn(day) else 0
-                                    },
-                                    hasTimetable = ttApproved && ttManagedSlots.any { it.classId == c.id },
-                                    onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE }
+                                    onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE },
+                                    showTopBar = false,
+                                    sessionsTab = {
+                                        AbsenceTab(
+                                        classId = c.id,
+                                        students = students,
+                                        subjects = subjects.map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
+                                        sessions = absenceSessions,
+                                        absences = absences,
+                                        isAdmin = true,
+                                        onSave = { old, session, ids -> scope.launch { absenceDao.replaceSession(old, session, ids) } },
+                                        onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
+                                        onSend = null,
+                                        onUpload = null,
+                                        onChooseSubjects = null,
+                                        className = c.name,
+                                        schoolName = schoolNames[c.institutionId].orEmpty(),
+                                        subjectArFr = { subjectArFr(it) },
+                                        periodTime = { p -> if (p in 1..ttSettings.periods) ttSettings.label(p - 1) else "" },
+                                        // الغياب مرتبط بجدول القسم
+                                        slotAt = { d, p ->
+                                            val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
+                                            if (!ttApproved) null else ttManagedSlots.firstOrNull { it.classId == c.id && it.day == day && it.period == p - 1 }
+                                        },
+                                        periodsOnDate = { d ->
+                                            val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
+                                            if (day in ttSettings.days) ttSettings.periodsOn(day) else 0
+                                        },
+                                        hasTimetable = ttApproved && ttManagedSlots.any { it.classId == c.id },
+                                        onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE }
+                                    )
+                                    }
                                 )
                                 3 -> {
                                     // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)
@@ -1840,7 +1874,9 @@ class MainActivity : AppCompatActivity() {
                                 "INSTITUTION" -> screen = Screen.INSTITUTION
                                 "TIMETABLE" -> { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                 "SHARE_RECORDS" -> screen = Screen.SHARE_RECORDS
-                                "PRINT_SHOP" -> screen = Screen.PRINT_SHOP
+                                "PRINT_SHOP" -> { printKind = "BOOKS"; screen = Screen.PRINT_SHOP }
+                                "PRINT_RECORDS" -> { printKind = "RECORDS"; screen = Screen.PRINT_SHOP }
+                                "PRINT_TIMETABLES" -> { printKind = "TIMETABLES"; screen = Screen.PRINT_SHOP }
                                 "UPLOAD_MANY" -> openBatch()
                                 "ABSENCE_CENTER" -> screen = Screen.ABSENCE_CENTER
                                 "STATS" -> screen = Screen.STATS

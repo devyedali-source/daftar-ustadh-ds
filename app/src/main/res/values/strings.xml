@@ -544,7 +544,7 @@
     <string name="sr_block_students">تسجيل الطلاب في الأقسام: %1$s</string>
     <string name="sr_open_timetable">فتح الجدول الزمني</string>
     <string name="ps_title">مشاركة مع الوراقة</string>
-    <string name="ps_intro">جهّز ملفات PDF جاهزة للسحب، ملف لكل وثيقة يجمع كل الأقسام أو كل الأساتذة، ثم أرسلها إلى الوراقة دفعة واحدة (واتساب أو غيره).</string>
+    <string name="ps_intro">دفتر الغياب ودفتر النصوص لكل الأقسام في ملفات PDF جاهزة للسحب، ترسلها إلى الوراقة دفعة واحدة (واتساب أو غيره).</string>
     <string name="ps_records">سجلات نتائج جميع الأساتذة</string>
     <string name="ps_timetables">الجداول الزمنية لجميع الأساتذة</string>
     <string name="ps_absence">دفتر الغياب لجميع الأقسام</string>
@@ -691,4 +691,11 @@
     <string name="tt_teacher_swap_move">نقل حصة %1$s في القسم %2$s من (%3$s) إلى (%4$s)؟</string>
     <string name="tt_teacher_swap_with">تبادل حصة %1$s في القسم %2$s من (%3$s) مع حصة %6$s (%5$s) في (%4$s)؟</string>
     <string name="tt_teacher_swap_ok">تبديل</string>
+    <string name="ps_books_title">دفاتر الإدارة</string>
+    <string name="ps_records_title">سجلات نتائج الأساتذة</string>
+    <string name="ps_timetables_title">الجداول الزمنية للأساتذة</string>
+    <string name="ps_intro_records">سجلات نتائج كل الأساتذة (سجل لكل مادة في كل قسم) في ملف PDF واحد جاهز للسحب، ترسله إلى الوراقة.</string>
+    <string name="ps_intro_timetables">الجداول الزمنية لكل الأساتذة (صفحة لكل أستاذ) من الجدول المعتمد، في ملف PDF واحد جاهز للسحب، ترسله إلى الوراقة.</string>
+    <string name="cards_button">بطاقات طلاب القسم (للوراقة)</string>
+    <string name="ac_tab_sessions">الحصص المسجّلة</string>
 </resources>

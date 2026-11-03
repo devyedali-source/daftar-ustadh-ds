@@ -544,7 +544,7 @@
     <string name="sr_block_students">l\'enregistrement des élèves des classes : %1$s</string>
     <string name="sr_open_timetable">Ouvrir l\'emploi du temps</string>
     <string name="ps_title">Partager avec l\'imprimerie</string>
-    <string name="ps_intro">Préparez des PDF prêts à imprimer (un fichier par document, regroupant toutes les classes ou tous les professeurs), puis envoyez-les à l\'imprimerie en une fois.</string>
+    <string name="ps_intro">Le registre d\'appel et le cahier de textes de toutes les classes en PDF prêts à imprimer, à envoyer d\'un coup à l\'imprimerie (WhatsApp ou autre).</string>
     <string name="ps_records">Registres de notes de tous les professeurs</string>
     <string name="ps_timetables">Emplois du temps de tous les professeurs</string>
     <string name="ps_absence">Registre d\'appel de toutes les classes</string>
@@ -691,4 +691,11 @@
     <string name="tt_teacher_swap_move">Déplacer la séance de %1$s en %2$s de (%3$s) à (%4$s) ?</string>
     <string name="tt_teacher_swap_with">Échanger la séance de %1$s en %2$s (%3$s) avec celle de %6$s (%5$s) à (%4$s) ?</string>
     <string name="tt_teacher_swap_ok">Échanger</string>
+    <string name="ps_books_title">Registres de l\'administration</string>
+    <string name="ps_records_title">Registres de notes des professeurs</string>
+    <string name="ps_timetables_title">Emplois du temps des professeurs</string>
+    <string name="ps_intro_records">Les registres de notes de tous les professeurs (un par matière et par classe) dans un seul PDF prêt à imprimer, à envoyer à l\'imprimerie.</string>
+    <string name="ps_intro_timetables">Les emplois du temps de tous les professeurs (une page par professeur), d\'après l\'emploi du temps validé, dans un seul PDF à envoyer à l\'imprimerie.</string>
+    <string name="cards_button">Cartes d\'élèves de la classe (pour l\'imprimerie)</string>
+    <string name="ac_tab_sessions">Séances saisies</string>
 </resources>

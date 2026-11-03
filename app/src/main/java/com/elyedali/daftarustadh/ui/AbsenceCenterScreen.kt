@@ -109,15 +109,20 @@ fun AbsenceCenterScreen(
     onBack: () -> Unit,
     schoolName: String = "",
     subjectArFr: (String) -> Pair<String, String> = { it to it },
-    onOpenTimetable: (classId: String) -> Unit = {}
+    onOpenTimetable: (classId: String) -> Unit = {},
+    /** داخل القسم: بلا شريط علوي، ومعها تبويب «الحصص المسجّلة» لمراجعة الحصص وتعديلها. */
+    showTopBar: Boolean = true,
+    sessionsTab: (@Composable () -> Unit)? = null
 ) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
+    val tabs = if (sessionsTab != null) listOf(R.string.ac_tab_entry, R.string.ac_tab_sessions, R.string.ac_tab_top)
+        else listOf(R.string.ac_tab_entry, R.string.ac_tab_top)
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize()) {
-            AppTopBar(title = stringResource(R.string.ac_title), onMenu = null, onBack = onBack)
+            if (showTopBar) AppTopBar(title = stringResource(R.string.ac_title), onMenu = null, onBack = onBack)
             Row(Modifier.fillMaxWidth().padding(12.dp).clip(RoundedCornerShape(12.dp))
                 .background(MaterialTheme.colorScheme.surfaceVariant).padding(3.dp)) {
-                listOf(R.string.ac_tab_entry, R.string.ac_tab_top).forEachIndexed { i, res ->
+                tabs.forEachIndexed { i, res ->
                     Box(
                         Modifier.weight(1f).clip(RoundedCornerShape(10.dp))
                             .background(if (tab == i) MaterialTheme.colorScheme.surface else Color.Transparent)
@@ -133,8 +138,11 @@ fun AbsenceCenterScreen(
                 Text(stringResource(R.string.ps_no_classes), Modifier.padding(24.dp), color = MaterialTheme.colorScheme.error)
                 return@Column
             }
-            if (tab == 0) EntryTab(classes, students, sessions, absences, settings, slots, subjectLabel, onSave, schoolName, subjectArFr, onOpenTimetable)
-            else TopTab(classes, students, sessions, absences, yearStart)
+            when (tabs.getOrNull(tab)) {
+                R.string.ac_tab_entry -> EntryTab(classes, students, sessions, absences, settings, slots, subjectLabel, onSave, schoolName, subjectArFr, onOpenTimetable)
+                R.string.ac_tab_sessions -> Box(Modifier.fillMaxSize().padding(horizontal = 12.dp)) { sessionsTab?.invoke() }
+                else -> TopTab(classes, students, sessions, absences, yearStart)
+            }
         }
     }
 }
@@ -194,7 +202,7 @@ private fun EntryTab(
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(horizontal = 14.dp, vertical = 4.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item { Text(stringResource(R.string.ac_entry_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
-        item {
+        if (classes.size > 1) item {
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(stringResource(R.string.ac_class), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -332,7 +340,7 @@ private fun TopTab(
                 DateButton(stringResource(R.string.ac_to), to, Modifier.weight(1f)) { to = it }
             }
         }
-        item {
+        if (classes.size > 1) item {
             LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 item { FilterChip(selected = classFilter == null, onClick = { classFilter = null }, label = { Text(stringResource(R.string.ac_all_classes)) }) }
                 items(classes, key = { it.id }) { c ->

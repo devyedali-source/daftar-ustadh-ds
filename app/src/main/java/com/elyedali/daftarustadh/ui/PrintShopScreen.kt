@@ -48,50 +48,53 @@ data class PrintItem(val ready: Boolean, val note: String)
  */
 @Composable
 fun PrintShopScreen(
-    records: PrintItem,
-    timetables: PrintItem,
-    absence: PrintItem,
-    textbook: PrintItem,
-    cards: PrintItem,
+    title: String,
+    intro: String,
+    records: PrintItem?,
+    timetables: PrintItem?,
+    absence: PrintItem?,
+    textbook: PrintItem?,
     working: Boolean,
     onShare: (PrintChoice) -> Unit,
     onOpenTimetable: () -> Unit,
     onBack: () -> Unit
 ) {
-    var rec by rememberSaveable { mutableStateOf(records.ready) }
-    var tt by rememberSaveable { mutableStateOf(timetables.ready) }
-    var abs by rememberSaveable { mutableStateOf(absence.ready) }
-    var tb by rememberSaveable { mutableStateOf(textbook.ready) }
+    // كل صفحة تعرض وثائقها فقط: دفاتر الإدارة (الغياب والنصوص)، أو سجلات الأساتذة، أو جداولهم
+    var rec by rememberSaveable { mutableStateOf(records?.ready == true) }
+    var tt by rememberSaveable { mutableStateOf(timetables?.ready == true) }
+    var abs by rememberSaveable { mutableStateOf(absence?.ready == true) }
+    var tb by rememberSaveable { mutableStateOf(textbook?.ready == true) }
     var pages by rememberSaveable { mutableIntStateOf(20) }
-    var cd by rememberSaveable { mutableStateOf(false) }
-    val any = (rec && records.ready) || (tt && timetables.ready) || (abs && absence.ready) || (tb && textbook.ready) || (cd && cards.ready)
+    val recOn = rec && records?.ready == true
+    val ttOn = tt && timetables?.ready == true
+    val absOn = abs && absence?.ready == true
+    val tbOn = tb && textbook?.ready == true
+    val any = recOn || ttOn || absOn || tbOn
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize()) {
-            AppTopBar(title = stringResource(R.string.ps_title), onMenu = null, onBack = onBack)
+            AppTopBar(title = title, onMenu = null, onBack = onBack)
             Column(
                 Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(10.dp)
             ) {
-                Text(stringResource(R.string.ps_intro), fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                Option("📒", stringResource(R.string.ps_records), records, rec) { rec = it }
-                Option("📅", stringResource(R.string.ps_timetables), timetables, tt) { tt = it }
-                if (!timetables.ready) OutlinedButton(onClick = onOpenTimetable, modifier = Modifier.fillMaxWidth()) {
+                Text(intro, fontSize = 13.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                records?.let { Option("📒", stringResource(R.string.ps_records), it, rec) { v -> rec = v } }
+                timetables?.let { Option("📅", stringResource(R.string.ps_timetables), it, tt) { v -> tt = v } }
+                if ((records != null && !records.ready) || (timetables != null && !timetables.ready)) OutlinedButton(onClick = onOpenTimetable, modifier = Modifier.fillMaxWidth()) {
                     Text("📅 " + stringResource(R.string.sr_open_timetable))
                 }
-                Option("🗓️", stringResource(R.string.ps_absence), absence, abs) { abs = it }
-                Option("📖", stringResource(R.string.ps_textbook), textbook, tb) { tb = it }
-                if (tb) Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp),
+                absence?.let { Option("🗓️", stringResource(R.string.ps_absence), it, abs) { v -> abs = v } }
+                textbook?.let { Option("📖", stringResource(R.string.ps_textbook), it, tb) { v -> tb = v } }
+                if (textbook != null && tbOn) Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp),
                     modifier = Modifier.padding(horizontal = 8.dp)) {
                     Text(stringResource(R.string.ps_textbook_pages), fontSize = 13.sp, modifier = Modifier.weight(1f))
                     OutlinedButton(onClick = { if (pages > 5) pages -= 5 }, enabled = pages > 5) { Text("−") }
                     Text("$pages", fontWeight = FontWeight.Black, fontSize = 17.sp)
                     OutlinedButton(onClick = { if (pages < 200) pages += 5 }, enabled = pages < 200) { Text("+") }
                 }
-                Option("🪪", stringResource(R.string.ps_cards), cards, cd) { cd = it }
                 Button(
-                    onClick = { onShare(PrintChoice(rec && records.ready, tt && timetables.ready, abs && absence.ready, tb && textbook.ready, pages,
-                        cd && cards.ready)) },
+                    onClick = { onShare(PrintChoice(recOn, ttOn, absOn, tbOn, pages)) },
                     enabled = any && !working,
                     modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)
                 ) {

@@ -227,10 +227,11 @@ fun HomeYearsScreen(
                             val tools = if (mode == MODE_ADMIN) listOf(
                                 "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
                                 "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
-                                "ABSENCE_CENTER" to ("🗓️ " + stringResource(R.string.ac_title)),
                                 "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
                                 "UPLOAD_MANY" to ("📥 " + stringResource(R.string.bu_button)),
-                                "PRINT_SHOP" to ("🖨️ " + stringResource(R.string.ps_title)),
+                                "PRINT_RECORDS" to ("📒 " + stringResource(R.string.ps_records_title)),
+                                "PRINT_TIMETABLES" to ("📅 " + stringResource(R.string.ps_timetables_title)),
+                                "PRINT_SHOP" to ("🖨️ " + stringResource(R.string.ps_books_title)),
                                 "STATS" to ("📊 " + stringResource(R.string.statistics)),
                                 "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title))
                             ) else listOf(
