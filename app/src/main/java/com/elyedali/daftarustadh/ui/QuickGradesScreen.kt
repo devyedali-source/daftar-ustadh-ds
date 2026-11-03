@@ -16,6 +16,11 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ExposedDropdownMenuBox
+import androidx.compose.material3.ExposedDropdownMenuDefaults
+import androidx.compose.material3.MenuAnchorType
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
@@ -38,6 +43,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.LocalTextStyle
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableStateMapOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.focus.FocusDirection
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.style.TextAlign
 import com.elyedali.daftarustadh.R
 import com.elyedali.daftarustadh.data.CurriculumSubject
 import com.elyedali.daftarustadh.data.GradeEntity
@@ -64,9 +81,32 @@ fun parseRollGrades(text: String): List<RollGrade> =
 
 /**
  * إدخال النتائج بأرقام النداء (الإدارة): للمؤسسات التي لا ترسل الأسماء للأساتذة،
- * فيعيد الأستاذ ورقة فيها أرقام النداء والنقاط. تكتبها الإدارة سطرًا سطرًا، أو تلتقط صورة الورقة
- * فيقرأ التطبيق الأرقام منها، ثم تراجعها قبل الحفظ.
+ * فيعيد الأستاذ ورقة فيها أرقام النداء والنقاط.
+ * جدول مثل Excel: سطر لكل رقم نداء وخانة للنقطة، فلا يكتب المستخدم رقم النداء ولا المسافات.
+ * أو تلتقط صورة الورقة فيملأ التطبيق الخانات منها، ثم تراجعها قبل الحفظ.
  */
+/** قائمة منسدلة (Combobox) لخطوة اختيار. */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun StepCombo(label: String, options: List<Pair<String, String>>, selected: String?, onSelect: (String) -> Unit) {
+    var open by remember { mutableStateOf(false) }
+    ExposedDropdownMenuBox(expanded = open, onExpandedChange = { open = it }) {
+        OutlinedTextField(
+            value = options.firstOrNull { it.first == selected }?.second.orEmpty(),
+            onValueChange = {},
+            readOnly = true,
+            label = { Text(label) },
+            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = open) },
+            modifier = Modifier.fillMaxWidth().menuAnchor(MenuAnchorType.PrimaryNotEditable)
+        )
+        ExposedDropdownMenu(expanded = open, onDismissRequest = { open = false }) {
+            options.forEach { (key, text) ->
+                DropdownMenuItem(text = { Text(text) }, onClick = { onSelect(key); open = false })
+            }
+        }
+    }
+}
+
 @Composable
 fun QuickGradesScreen(
     className: String,
@@ -83,109 +123,150 @@ fun QuickGradesScreen(
     onSave: (subjectCode: String, slot: String, values: Map<String, Double>) -> Unit,
     onBack: () -> Unit
 ) {
-    var subject by rememberSaveable { mutableStateOf(initialSubject ?: subjects.firstOrNull()?.code) }
-    var term by rememberSaveable { mutableIntStateOf(1) }
-    var exam by rememberSaveable { mutableStateOf(true) }
-    var text by rememberSaveable { mutableStateOf("") }
+    // الاختيار خطوة بخطوة: الفصل ← المادة ← الخانة ← الجدول
+    var term by rememberSaveable { mutableStateOf<Int?>(null) }
+    var subject by rememberSaveable { mutableStateOf(initialSubject?.takeIf { c -> subjects.any { it.code == c } }) }
+    var exam by rememberSaveable { mutableStateOf<Boolean?>(null) }
     var saved by rememberSaveable { mutableStateOf<Int?>(null) }
-    // نص الصورة يُضاف إلى الخانة للمراجعة
-    androidx.compose.runtime.LaunchedEffect(ocrText) {
-        if (ocrText != null) { text = ocrText; saved = null; onOcrConsumed() }
+    val t = term
+    val e = exam
+    val slot: String? = if (t == null || e == null) null else if (e) GradeSlot.exam(t) else GradeSlot.test(t)
+    val ready = slot != null && subject != null
+    // ما كُتب في الجدول: رقم النداء ← النقطة كنص (يُفرَّغ عند تغيير المادة أو الخانة)
+    val entries = remember(subject, slot) { mutableStateMapOf<Int, String>() }
+    // آخر نص قُرئ من صورة، والأسطر التي لم تُفهم منه
+    var lastOcr by rememberSaveable { mutableStateOf("") }
+    var ocrBad by remember { mutableStateOf<List<String>>(emptyList()) }
+    val sorted = students.sortedBy { it.rollNumber }
+    val byRoll = sorted.associateBy { it.rollNumber }
+
+    fun fillFrom(text: String) {
+        val parsed = parseRollGrades(text)
+        val good = parsed.filter { it.roll != null && it.grade != null && it.roll in byRoll }
+        good.forEach { entries[it.roll!!] = GradeMath.format(it.grade) }
+        ocrBad = parsed.filter { it !in good }.map { it.line }
+        saved = null
     }
-    val slot = if (exam) GradeSlot.exam(term) else GradeSlot.test(term)
-    val byRoll = students.associateBy { it.rollNumber }
-    val parsed = parseRollGrades(text)
-    val badLines = parsed.filter { it.roll == null || it.grade == null || it.roll !in byRoll }
-    val dupRolls = parsed.mapNotNull { it.roll }.groupingBy { it }.eachCount().filterValues { it > 1 }.keys
-    val good = parsed.filter { it.roll != null && it.grade != null && it.roll in byRoll && it.roll !in dupRolls }
+    // نص الصورة يملأ خانات الجدول للمراجعة
+    LaunchedEffect(ocrText) {
+        if (ocrText != null) { lastOcr = ocrText; fillFrom(ocrText); onOcrConsumed() }
+    }
+
     val current = grades.filter { it.subjectCode == subject && it.slot == slot }.associateBy { it.studentId }
-    val missing = students.filter { st -> good.none { it.roll == st.rollNumber } && current[st.id] == null }
+    val filled = entries.filterValues { it.isNotBlank() }
+    val invalid = filled.filter { (_, v) -> GradeMath.parse(v) == null }.keys
+    val values = filled.mapNotNull { (roll, v) -> val st = byRoll[roll]; val g = GradeMath.parse(v); if (st != null && g != null) st.id to g else null }.toMap()
+    val missing = sorted.filter { st -> st.id !in values && current[st.id] == null }
+    val focus = LocalFocusManager.current
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize()) {
             AppTopBar(title = stringResource(R.string.qg_title) + " — " + className, onMenu = null, onBack = onBack)
-            LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 item { Text(stringResource(R.string.qg_intro), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
                 item {
-                    LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                        items(subjects, key = { it.code }) { s ->
-                            FilterChip(selected = subject == s.code, onClick = { subject = s.code; saved = null }, label = { Text(subjectLabel(s)) })
-                        }
+                    StepCombo(stringResource(R.string.qg_pick_term),
+                        listOf("1" to stringResource(R.string.term_1), "2" to stringResource(R.string.term_2), "3" to stringResource(R.string.term_3)),
+                        term?.toString()) { term = it.toInt(); saved = null; ocrBad = emptyList() }
+                }
+                if (term != null) item {
+                    StepCombo(stringResource(R.string.qg_pick_subject), subjects.map { it.code to subjectLabel(it) }, subject) {
+                        subject = it; saved = null; ocrBad = emptyList()
                     }
                 }
-                item {
-                    Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
-                        (1..3).forEach { t ->
-                            FilterChip(selected = term == t, onClick = { term = t; saved = null }, label = { Text(stringResource(R.string.qg_term, t)) })
-                        }
-                        Text("|", color = MaterialTheme.colorScheme.outline)
-                        FilterChip(selected = !exam, onClick = { exam = false; saved = null }, label = { Text(stringResource(R.string.test_short)) })
-                        FilterChip(selected = exam, onClick = { exam = true; saved = null }, label = { Text(stringResource(R.string.exam_short)) })
-                    }
+                if (term != null && subject != null) item {
+                    StepCombo(stringResource(R.string.qg_pick_slot),
+                        listOf("T" to stringResource(R.string.test_short), "E" to stringResource(R.string.exam_short)),
+                        exam?.let { if (it) "E" else "T" }) { exam = it == "E"; saved = null; ocrBad = emptyList() }
                 }
-                item {
+                if (!ready) item {
+                    Text(stringResource(R.string.qg_pick_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                if (ready) item {
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        OutlinedButton(onClick = onCamera, enabled = !ocrBusy, modifier = Modifier.weight(1f)) { Text("📷 " + stringResource(R.string.qg_camera)) }
-                        OutlinedButton(onClick = onPhoto, enabled = !ocrBusy, modifier = Modifier.weight(1f)) { Text("🖼️ " + stringResource(R.string.qg_gallery)) }
+                        OutlinedButton(onClick = onCamera, enabled = !ocrBusy, modifier = Modifier.weight(1f)) {
+                            Text("📷 " + stringResource(R.string.qg_camera), maxLines = 1, overflow = TextOverflow.Ellipsis)
+                        }
+                        OutlinedButton(onClick = onPhoto, enabled = !ocrBusy, modifier = Modifier.weight(1f)) {
+                            Text("🖼️ " + stringResource(R.string.qg_gallery), maxLines = 1, overflow = TextOverflow.Ellipsis)
+                        }
                     }
                     if (ocrBusy) Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(top = 6.dp)) {
                         CircularProgressIndicator(Modifier.size(18.dp), strokeWidth = 2.dp)
                         Text("  " + stringResource(R.string.qg_reading), fontSize = 13.sp)
                     }
                 }
-                item {
-                    OutlinedTextField(
-                        text, { text = it; saved = null },
-                        label = { Text(stringResource(R.string.qg_lines)) },
-                        placeholder = { Text("1  12.5\n2  14\n3  9.75") },
-                        modifier = Modifier.fillMaxWidth().heightIn(min = 140.dp)
-                    )
-                    Text(stringResource(R.string.qg_lines_hint), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                    // إن قُرئت الورقة بالعكس (النقطة قبل الرقم): يُقلب أول وآخر عدد في كل سطر
-                    if (text.isNotBlank()) androidx.compose.material3.TextButton(onClick = {
-                        text = text.lines().joinToString("\n") { line ->
+                // إن قُرئت الورقة بالعكس (النقطة قبل الرقم): يُقلب أول وآخر عدد في كل سطر ويُعاد ملء الجدول
+                if (ready && lastOcr.isNotBlank()) item {
+                    TextButton(onClick = {
+                        lastOcr = lastOcr.lines().joinToString("\n") { line ->
                             val nums = Regex("""\d+(?:[.,]\d+)?""").findAll(line).map { it.value }.toList()
                             if (nums.size >= 2) "${nums.last()}  ${nums.first()}" else line
                         }
-                        saved = null
+                        entries.clear(); fillFrom(lastOcr)
                     }) { Text("⇄ " + stringResource(R.string.qg_swap), fontSize = 12.sp) }
                 }
-                if (badLines.isNotEmpty()) item {
-                    Text(stringResource(R.string.qg_bad, badLines.joinToString(" | ") { it.line }), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                if (ready && ocrBad.isNotEmpty()) item {
+                    Text(stringResource(R.string.qg_bad, ocrBad.joinToString(" | ")), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
                 }
-                if (dupRolls.isNotEmpty()) item {
-                    Text(stringResource(R.string.qg_dup, dupRolls.sorted().joinToString("، ")), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
-                }
-                if (good.isNotEmpty()) item {
-                    Text(stringResource(R.string.qg_preview, good.size, students.size), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
-                }
-                items(good.sortedBy { it.roll }, key = { "g-" + it.roll }) { rg ->
-                    val st = byRoll.getValue(rg.roll!!)
-                    val old = current[st.id]?.value
-                    Row(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.surface)
-                        .padding(horizontal = 10.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Text("${st.rollNumber}", fontWeight = FontWeight.Black, modifier = Modifier.width(34.dp))
-                        Text(st.nameAr.ifBlank { st.nameFr }, Modifier.weight(1f), maxLines = 1, overflow = TextOverflow.Ellipsis, fontSize = 13.sp)
-                        if (old != null && old != rg.grade) Text(GradeMath.format(old) + " ← ", fontSize = 12.sp, color = Color(0xFFE65100))
-                        Text(GradeMath.format(rg.grade), fontWeight = FontWeight.Black, color = MaterialTheme.colorScheme.primary)
+                // رأس الجدول
+                if (ready) item {
+                    Row(Modifier.fillMaxWidth().clip(RoundedCornerShape(topStart = 10.dp, topEnd = 10.dp))
+                        .background(MaterialTheme.colorScheme.primaryContainer).padding(horizontal = 10.dp, vertical = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically) {
+                        Text(stringResource(R.string.qg_col_roll), Modifier.width(56.dp), fontWeight = FontWeight.Bold, fontSize = 12.sp, textAlign = TextAlign.Center)
+                        Text(stringResource(R.string.qg_col_name), Modifier.weight(1f), fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                        Text(stringResource(R.string.qg_col_grade), Modifier.width(110.dp), fontWeight = FontWeight.Bold, fontSize = 12.sp, textAlign = TextAlign.Center)
                     }
                 }
-                if (good.isNotEmpty() && missing.isNotEmpty()) item {
+                if (ready && sorted.isEmpty()) item {
+                    Text(stringResource(R.string.qg_no_students), color = MaterialTheme.colorScheme.error, fontSize = 13.sp)
+                }
+                if (ready) items(sorted, key = { it.id }) { st ->
+                    val v = entries[st.rollNumber].orEmpty()
+                    val bad = v.isNotBlank() && GradeMath.parse(v) == null
+                    val old = current[st.id]?.value
+                    Row(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surface).padding(horizontal = 10.dp, vertical = 2.dp),
+                        verticalAlignment = Alignment.CenterVertically) {
+                        Text("${st.rollNumber}", Modifier.width(56.dp), fontWeight = FontWeight.Black, fontSize = 16.sp, textAlign = TextAlign.Center)
+                        Text(st.nameAr.ifBlank { st.nameFr }, Modifier.weight(1f), maxLines = 1, overflow = TextOverflow.Ellipsis, fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        OutlinedTextField(
+                            value = v,
+                            onValueChange = { t -> entries[st.rollNumber] = t.filter { it.isDigit() || it == '.' || it == ',' || it in '٠'..'٩' || it == '٫' }.take(5); saved = null },
+                            modifier = Modifier.width(110.dp),
+                            singleLine = true,
+                            isError = bad,
+                            // النقطة المحفوظة تظهر باهتة؛ ما تكتبه يحلّ محلها
+                            placeholder = { if (old != null) Text(GradeMath.format(old), color = MaterialTheme.colorScheme.outline, fontSize = 14.sp) },
+                            textStyle = LocalTextStyle.current.copy(textAlign = TextAlign.Center, fontWeight = FontWeight.Bold, fontSize = 16.sp),
+                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal, imeAction = ImeAction.Next),
+                            keyboardActions = KeyboardActions(onNext = { focus.moveFocus(FocusDirection.Down) })
+                        )
+                    }
+                }
+                if (ready) item { Text(stringResource(R.string.qg_table_hint), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                if (invalid.isNotEmpty()) item {
+                    Text(stringResource(R.string.qg_invalid, invalid.sorted().joinToString("، ")), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                }
+                if (values.isNotEmpty() && missing.isNotEmpty()) item {
                     Text(stringResource(R.string.qg_missing, missing.joinToString("، ") { "${it.rollNumber}" }), fontSize = 12.sp,
                         color = Color(0xFFE65100))
                 }
-                item {
+                if (ready) item {
                     Button(
                         onClick = {
-                            subject?.let { s ->
-                                onSave(s, slot, good.associate { byRoll.getValue(it.roll!!).id to it.grade!! })
-                                saved = good.size
-                                text = ""
-                            }
+                            val sl = slot
+                            subject?.let { s -> if (sl != null) {
+                                onSave(s, sl, values)
+                                saved = values.size
+                                entries.clear(); lastOcr = ""; ocrBad = emptyList()
+                                focus.clearFocus()
+                            } }
                         },
-                        enabled = subject != null && good.isNotEmpty() && badLines.isEmpty() && dupRolls.isEmpty(),
+                        enabled = ready && values.isNotEmpty() && invalid.isEmpty(),
                         modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)
-                    ) { Text("💾 " + stringResource(R.string.qg_save, good.size), fontWeight = FontWeight.Bold) }
+                    ) { Text("💾 " + stringResource(R.string.qg_save, values.size), fontWeight = FontWeight.Bold) }
                 }
                 saved?.let { n -> item { Text("✅ " + stringResource(R.string.qg_saved, n), color = Color(0xFF2E7D32), fontWeight = FontWeight.Bold) } }
             }
