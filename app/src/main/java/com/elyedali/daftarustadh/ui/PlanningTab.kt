@@ -40,12 +40,17 @@ import com.elyedali.daftarustadh.data.AnnualPlans
  * التخطيط السنوي لقسم إعدادي (تطبيق الأستاذ): لكل مادة يدرّسها، أسبوعًا بأسبوع على السنة كاملة،
  * مع أسابيع الاختبارات والعطل (العطلة بعد اختبار الفصل).
  */
+/** مادة بلا تخطيط سنوي: التربية البدنية. */
+private const val NO_PLAN = "EPS"
+
 @Composable
 fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
     val context = LocalContext.current
     val withPlan = remember(levelCode) { AnnualPlans.subjectsWithPlan(context, levelCode) }
     val available = mySubjects.filter { it.first in withPlan }
-    val missing = mySubjects.filter { it.first !in withPlan }
+    // التربية البدنية ليس لها تخطيط سنوي: لا تُعدّ ناقصة
+    val missing = mySubjects.filter { it.first !in withPlan && it.first != NO_PLAN }
+    val onlyNoPlan = available.isEmpty() && mySubjects.isNotEmpty() && mySubjects.all { it.first == NO_PLAN }
     var chosen by rememberSaveable { mutableStateOf(available.firstOrNull()?.first) }
     val subject = chosen?.takeIf { c -> available.any { it.first == c } } ?: available.firstOrNull()?.first
     val rows = remember(subject, levelCode) { subject?.let { AnnualPlans.rows(context, it, levelCode) }.orEmpty() }
@@ -69,7 +74,7 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
         if (subject == null) {
-            item { Text(stringResource(R.string.plan_none), color = MaterialTheme.colorScheme.onSurfaceVariant) }
+            item { Text(stringResource(if (onlyNoPlan) R.string.plan_no_eps else R.string.plan_none), color = MaterialTheme.colorScheme.onSurfaceVariant) }
             return@LazyColumn
         }
         item {
