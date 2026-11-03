@@ -112,6 +112,8 @@ private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS,
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 /** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
 private class PdfNotImportableException : Exception()
+/** ملف يخص التطبيق الآخر (الإدارة أو الأستاذ). */
+private class WrongAppException(val app: String) : Exception()
 
 /** نتيجة رفع ملفات النتائج دفعة واحدة. */
 private data class BatchResult(
@@ -182,7 +184,8 @@ class MainActivity : AppCompatActivity() {
                 val allClasses by remember { classDao.observeAll() }.collectAsState(initial = emptyList())
                 val homeGenderCounts by remember { studentDao.observeGenderCounts() }.collectAsState(initial = emptyList())
                 var selectedYear by rememberSaveable { mutableStateOf<String?>(null) }
-                var homeMode by rememberSaveable { mutableStateOf<String?>(null) }  // admin / teacher
+                // وضع التطبيق ثابت: «إدارة DS» = الإدارة، «دفتر الأستاذ DS» = الأستاذ
+                val homeMode: String = com.elyedali.daftarustadh.ui.APP_MODE
                 /** سنة عمل الإدارة: السنة المختارة في وضع الإدارة، وإلا سنة المؤسسة. كل أدوات الإدارة تعمل عليها. */
                 val adminYear: String? = selectedYear?.takeIf { homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN } ?: inst?.schoolYear
                 val managedFlow = remember(inst?.id, adminYear) {
@@ -746,7 +749,16 @@ class MainActivity : AppCompatActivity() {
                             val data = if (com.elyedali.daftarustadh.transfer.DsqPdf.isPdf(bytes))
                                 com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException()
                             else bytes
-                            when (val any = TransferCodec.decodeAny(data)) {
+                            val any = TransferCodec.decodeAny(data)
+                            // كل ملف لتطبيقه: سجلات الأساتذة وغيابهم وملف القسم الكامل لتطبيق الإدارة،
+                            // وحزمة الأستاذ وجدوله وملف القسم للأساتذة لتطبيق الأستاذ
+                            val forAdmin = any is RecordFile || any is com.elyedali.daftarustadh.transfer.AbsenceFile ||
+                                (any is ClassFile && any.type == ClassFileType.FULL)
+                            val forTeacher = any is com.elyedali.daftarustadh.transfer.TeacherBundle || any is com.elyedali.daftarustadh.transfer.TimetableFile ||
+                                (any is ClassFile && any.type == ClassFileType.TEACHER)
+                            if (com.elyedali.daftarustadh.AppRole.isAdmin && forTeacher) throw WrongAppException(com.elyedali.daftarustadh.AppRole.TEACHER_APP_NAME)
+                            if (!com.elyedali.daftarustadh.AppRole.isAdmin && forAdmin) throw WrongAppException(com.elyedali.daftarustadh.AppRole.ADMIN_APP_NAME)
+                            when (any) {
                                 is RecordFile -> when (val chk = recordImporter.check(any)) {
                                     is RecordCheck.Ready -> { recordCheck = chk; null }
                                     is RecordCheck.WrongClass -> FileResult.Message(
@@ -773,7 +785,6 @@ class MainActivity : AppCompatActivity() {
                                         metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, any.teacherName))
                                     if (out.saved.isNotEmpty()) {
                                         selectedYear = any.classes.first().first.schoolClass.schoolYear
-                                        homeMode = com.elyedali.daftarustadh.ui.MODE_TEACHER
                                         screen = Screen.HOME
                                     }
                                     FileResult.Message(
@@ -786,6 +797,8 @@ class MainActivity : AppCompatActivity() {
                             }
                         } catch (e: PdfNotImportableException) {
                             FileResult.Message(getString(R.string.file_is_pdf))
+                        } catch (e: WrongAppException) {
+                            FileResult.Message(getString(R.string.file_other_app, e.app))
                         } catch (e: Exception) {
                             FileResult.Invalid
                         }
@@ -794,8 +807,6 @@ class MainActivity : AppCompatActivity() {
                             // يفتح الصفحة الرئيسية على سنة القسم ووضعه (الأستاذ أو الإدارة)
                             val ok = result.outcome as ImportOutcome.Success
                             importedYear?.let { selectedYear = it }
-                            homeMode = if (ok.type == ClassFileType.TEACHER) com.elyedali.daftarustadh.ui.MODE_TEACHER
-                                else com.elyedali.daftarustadh.ui.MODE_ADMIN
                             screen = Screen.HOME
                         }
                     }
@@ -949,6 +960,9 @@ class MainActivity : AppCompatActivity() {
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeBundle(bundle) }
                         val caption = getString(R.string.sr_caption, t.name, owner.schoolName,
                             classes.joinToString("، ") { c -> c.name + " (" + mine.filter { it.classId == c.id }.joinToString("، ") { subjectName(it.subjectCode) } + ")" })
+                            // رابط تحميل تطبيق الأستاذ مع الملف (حين يُحدَّد)
+                            .let { cap -> if (com.elyedali.daftarustadh.AppRole.TEACHER_APP_LINK.isBlank()) cap
+                                else cap + "\n\n" + getString(R.string.sr_app_link, com.elyedali.daftarustadh.AppRole.TEACHER_APP_LINK) }
                         // صفحة جدول الأستاذ داخل الملف نفسه: يراه في واتساب كوثيقة PDF
                         val ttInfo = teacherTimetableInfo(t.name, owner)
                         // بعد الجدول: لائحة طلاب كل قسم من أقسامه (رقم النداء والاسم)
@@ -1108,7 +1122,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 when (screen) {
-                    Screen.HOME -> if (homeMode != null) BackHandler { homeMode = null } else if (selectedYear != null) BackHandler { selectedYear = null }
+                    Screen.HOME -> if (selectedYear != null) BackHandler { selectedYear = null }
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
@@ -1123,8 +1137,8 @@ class MainActivity : AppCompatActivity() {
                     Screen.TIMETABLE -> BackHandler { screen = ttBack }
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
                     Screen.QUICK_GRADES -> BackHandler { hubTab = 1; screen = Screen.ADMIN_CLASS }
-                    Screen.INSTITUTION -> BackHandler { if (inst == null) homeMode = null; screen = Screen.HOME }
-                    Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) homeMode = null; screen = Screen.HOME }
+                    Screen.INSTITUTION -> BackHandler { if (inst == null) selectedYear = null; screen = Screen.HOME }
+                    Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) selectedYear = null; screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
                 }
 
@@ -1140,7 +1154,7 @@ class MainActivity : AppCompatActivity() {
                             onItem = { key ->
                                 scope.launch { drawerState.close() }
                                 when (key) {
-                                    "HOME" -> { selectedYear = null; homeMode = null; screen = Screen.HOME }
+                                    "HOME" -> { selectedYear = null; screen = Screen.HOME }
                                     "SYNC" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_sync_later), android.widget.Toast.LENGTH_LONG).show()
                                     "LOGOUT" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_logout_later), android.widget.Toast.LENGTH_LONG).show()
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
@@ -1164,7 +1178,7 @@ class MainActivity : AppCompatActivity() {
                     screen == Screen.INSTITUTION -> InstitutionScreen(
                         existing = inst,
                         onSave = { scope.launch { institutionDao.save(it); screen = Screen.HOME } },
-                        onCancel = { if (inst == null) homeMode = null; screen = Screen.HOME }
+                        onCancel = { if (inst == null) selectedYear = null; screen = Screen.HOME }
                     )
 
                     screen == Screen.QUICK_GRADES && currentClass != null -> {
@@ -1279,7 +1293,7 @@ class MainActivity : AppCompatActivity() {
                                     screen = Screen.HOME
                                 }
                             },
-                            onCancel = { if (teacherProfile == null) homeMode = null; screen = Screen.HOME }
+                            onCancel = { if (teacherProfile == null) selectedYear = null; screen = Screen.HOME }
                         )
                     }
 
@@ -1862,7 +1876,6 @@ class MainActivity : AppCompatActivity() {
                         selectedYear = selectedYear,
                         mode = homeMode,
                         onSelectMode = { m ->
-                            homeMode = m
                             // أول دخول: الإدارة تسجّل معلومات المؤسسة، والأستاذ يسجّل معلوماته (مرة واحدة)
                             if (m == com.elyedali.daftarustadh.ui.MODE_ADMIN && inst == null) screen = Screen.INSTITUTION
                             if (m == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherProfile == null) screen = Screen.TEACHER_PROFILE
@@ -1890,7 +1903,12 @@ class MainActivity : AppCompatActivity() {
                         ownInstitutionId = inst?.id,
                         activated = activatedClasses,
                         genderCounts = homeGenderCounts,
-                        onSelectYear = { selectedYear = it; homeMode = null },
+                        onSelectYear = {
+                            selectedYear = it
+                            // أول دخول: الإدارة تسجّل معلومات المؤسسة، والأستاذ يسجّل معلوماته (مرة واحدة)
+                            if (homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN && inst == null) screen = Screen.INSTITUTION
+                            if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherProfile == null) screen = Screen.TEACHER_PROFILE
+                        },
                         onOpenClass = { c ->
                             classId = c.id; hubTab = 0; hubBack = Screen.HOME
                             if (homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN) { fromTeaching = false; screen = Screen.ADMIN_CLASS }
@@ -1924,7 +1942,7 @@ class MainActivity : AppCompatActivity() {
                                     )
                                 )
                                 onResult(rowId != -1L)
-                                if (rowId != -1L) { selectedYear = year; homeMode = com.elyedali.daftarustadh.ui.MODE_ADMIN }
+                                if (rowId != -1L) selectedYear = year
                             }
                         },
                         onDismiss = { showCreateClass = false }

@@ -6,6 +6,7 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.graphics.pdf.PdfDocument
 import android.util.Base64
+import com.elyedali.daftarustadh.AppRole
 import com.elyedali.daftarustadh.R
 import com.elyedali.daftarustadh.pdf.PdfCommon
 import com.elyedali.daftarustadh.pdf.PdfText
@@ -27,6 +28,17 @@ object DsqPdf {
      * @param extra صفحات إضافية تُرسم بعد صفحة التعريف (مثل جدول الأستاذ)؛ تأخذ رقم الصفحة التالية وترجع الذي بعدها. */
     fun wrap(context: Context, data: ByteArray, title: String, extra: ((PdfDocument, Int) -> Int)? = null): ByteArray {
         val seal = BitmapFactory.decodeResource(context.resources, R.drawable.img_mauritania_seal)
+        // التطبيق الذي يُفتح فيه الملف: سجلات الأساتذة وغيابهم وملف القسم الكامل لـ«إدارة DS»، والباقي لـ«دفتر الأستاذ DS»
+        val app = try {
+            when (val any = TransferCodec.decodeAny(data)) {
+                is RecordFile, is AbsenceFile -> AppRole.ADMIN_APP_NAME
+                is ClassFile -> if (any.type == ClassFileType.FULL) AppRole.ADMIN_APP_NAME else AppRole.TEACHER_APP_NAME
+                else -> AppRole.TEACHER_APP_NAME
+            }
+        } catch (e: Exception) {
+            if (AppRole.isAdmin) AppRole.ADMIN_APP_NAME else AppRole.TEACHER_APP_NAME
+        }
+        val own = if (AppRole.isAdmin) AppRole.ADMIN_APP_NAME else AppRole.TEACHER_APP_NAME
         val date = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.US).format(java.util.Date())
         val pdf = PdfCommon.render { doc ->
             val page = doc.startPage(PdfDocument.PageInfo.Builder(W.toInt(), H.toInt(), 1).create())
@@ -39,10 +51,10 @@ object DsqPdf {
             c.drawRoundRect(box, 14f, 14f, Paint().apply { color = 0xFFF3EDF7.toInt(); style = Paint.Style.FILL })
             c.drawRoundRect(box, 14f, 14f, Paint().apply { color = 0xFF6750A4.toInt(); style = Paint.Style.STROKE; strokeWidth = 1.5f })
             val text = listOf(
-                "📂 ملف بيانات من تطبيق «دفتر الأستاذ DS»",
-                "لإضافة محتواه: افتح تطبيق دفتر الأستاذ DS ثم اضغط «فتح ملف» واختر هذا الملف،",
-                "أو اضغط على الملف في واتساب واختر «دفتر الأستاذ DS».",
-                "Fichier de données de l'application « دفتر الأستاذ DS »",
+                "📂 ملف بيانات لتطبيق «$app»",
+                "لإضافة محتواه: افتح تطبيق «$app» ثم اضغط «فتح ملف» واختر هذا الملف،",
+                "أو اضغط على الملف في واتساب واختر «$app».",
+                "Fichier de données pour l'application « $app »",
                 "Pour l'ajouter : ouvrez l'application puis « Ouvrir un fichier » et choisissez ce fichier."
             )
             var ty = y + 16f
@@ -52,7 +64,7 @@ object DsqPdf {
                     bold = i == 0 || i == 3, maxLines = 2)
                 ty += h + 4f
             }
-            PdfText.draw(c, "⁦$date⁩ — دفتر الأستاذ DS", M, H - M - 20f, W - 2 * M, 16f, 9f)
+            PdfText.draw(c, "⁦$date⁩ — $own", M, H - M - 20f, W - 2 * M, 16f, 9f)
             doc.finishPage(page)
             extra?.invoke(doc, 2)
         }

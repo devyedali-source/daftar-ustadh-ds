@@ -18,6 +18,22 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    // تطبيقان من مشروع واحد: «إدارة DS» (وضع الإدارة) و«دفتر الأستاذ DS» (وضع الأستاذ)
+    // الإدارة تحتفظ بالمعرّف القديم فتبقى بيانات النسخ المثبتة؛ والأستاذ تطبيق جديد يُثبَّت بجانبها.
+    flavorDimensions += "role"
+    productFlavors {
+        create("admin") {
+            dimension = "role"
+            applicationId = "com.elyedali.daftarustadh"
+            buildConfigField("String", "ROLE", "\"admin\"")
+        }
+        create("teacher") {
+            dimension = "role"
+            applicationId = "com.elyedali.daftarustadh.teacher"
+            buildConfigField("String", "ROLE", "\"teacher\"")
+        }
+    }
+
     androidResources {
         generateLocaleConfig = false
     }

@@ -98,7 +98,7 @@
     <string name="share_full_file">ملف معلومات القسم الكامل</string>
     <string name="share_full_file_hint">كل معلومات الطلاب، لأستاذ مكلّف بإدارة القسم</string>
     <string name="share_chooser">إرسال ملف القسم</string>
-    <string name="file_invalid">هذا الملف ليس من ملفات دفتر الأستاذ DS، أو أنه تالف.</string>
+    <string name="file_invalid">هذا الملف ليس من ملفات «دفتر الأستاذ DS» أو «إدارة DS»، أو أنه تالف.</string>
     <string name="file_conflict">القسم %1$s موجود عندك من مصدر آخر. اتفقوا على ملف واحد للقسم: ملف من أنشأه.</string>
     <string name="file_ok_teacher">تمت إضافة القسم %1$s إلى «أقسامي».</string>
     <string name="file_ok_full">تمت إضافة القسم %1$s إلى وضع الإدارة.</string>
@@ -390,7 +390,7 @@
     <string name="act_after_send">بعد الدفع تفعّل الإدارة الأقسام، فيُفتح كشف الفصل الثاني والكشف السنوي.</string>
     <string name="act_locked">يحتاج تفعيل القسم</string>
     <string name="act_activate_class">تفعيل القسم</string>
-    <string name="act_msg_intro">أريد تفعيل أقسام في تطبيق دفتر الأستاذ DS (الفصلان الثاني والثالث).</string>
+    <string name="act_msg_intro">أريد تفعيل أقسام في تطبيق إدارة DS (الفصلان الثاني والثالث).</string>
     <string name="act_msg_school">المؤسسة: %1$s</string>
     <string name="act_msg_wilaya">الولاية: %1$s</string>
     <string name="act_msg_year">السنة الدراسية: %1$s</string>
@@ -525,7 +525,7 @@
     <string name="sr_received">وصلت سجلات النتائج وجدولك من %1$s ✅\nالأقسام: %2$s\nعدد المواد: %3$d\nحصص الجدول: %4$d</string>
     <string name="sr_received_conflicts">لم تُضَف هذه الأقسام لأنها موجودة عندك من مصدر آخر: %1$s</string>
     <string name="tt_teacher_whatsapp">رقم واتساب الأستاذ</string>
-    <string name="dsq_caption">📂 ملف بيانات من تطبيق دفتر الأستاذ DS — افتحه من التطبيق بزر «فتح ملف» لتُضاف بياناته.</string>
+    <string name="dsq_caption">📂 ملف بيانات — افتحه في التطبيق المكتوب في صفحته الأولى بزر «فتح ملف» لتُضاف بياناته.</string>
     <string name="tt_approve_first">اعتمد الجدول الزمني أولًا (الجدول الزمني ← التوليد والإعدادات).</string>
     <string name="tt_pb_not_generated">لم يُولَّد الجدول بعد.</string>
     <string name="tt_pb_missing_hours">%1$s: %2$s ينقصها %3$d ساعة</string>
@@ -582,7 +582,8 @@
     <string name="ac_bad_range">تاريخ البداية بعد تاريخ النهاية.</string>
     <string name="ac_no_absence">لا غياب في هذه الفترة.</string>
     <string name="ac_roll">رقم النداء %1$d</string>
-    <string name="file_is_pdf">هذا ملف PDF عادي للقراءة أو الطباعة، وليس ملف بيانات من دفتر الأستاذ DS.\nملفات التطبيق مكتوب في صفحتها: «ملف بيانات من تطبيق دفتر الأستاذ DS».</string>
+    <string name="file_is_pdf">هذا ملف PDF عادي للقراءة أو الطباعة، وليس ملف بيانات.
+ملفات البيانات مكتوب في صفحتها الأولى: «ملف بيانات لتطبيق …».</string>
     <string name="guide_title">أي وضع أختار؟</string>
     <string name="guide_short">اضغط هنا لتعرف الفرق بين الوضعين وكيف تتنقل بينهما.</string>
     <string name="guide_admin_title">🏫 وضع الإدارة — لمن يسيّر المؤسسة</string>
@@ -698,4 +699,6 @@
     <string name="ps_intro_timetables">الجداول الزمنية لكل الأساتذة (صفحة لكل أستاذ) من الجدول المعتمد، في ملف PDF واحد جاهز للسحب، ترسله إلى الوراقة.</string>
     <string name="cards_button">بطاقات طلاب القسم (للوراقة)</string>
     <string name="ac_tab_sessions">الحصص المسجّلة</string>
+    <string name="file_other_app">هذا الملف ليس لهذا التطبيق: افتحه في تطبيق «%1$s».</string>
+    <string name="sr_app_link">رابط تحميل تطبيق «دفتر الأستاذ DS»: %1$s</string>
 </resources>

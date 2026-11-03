@@ -249,11 +249,7 @@ fun HomeYearsScreen(
                                             AssistChip(onClick = { onTool(key) }, label = { Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold) })
                                         }
                                     }
-                                    // التنقل بين الوضعين لمن يجمع بين الإدارة والتدريس
-                                    TextButton(onClick = { onSelectMode(if (mode == MODE_ADMIN) MODE_TEACHER else MODE_ADMIN) }) {
-                                        Text("🔄 " + stringResource(if (mode == MODE_ADMIN) R.string.mode_switch_to_teacher else R.string.mode_switch_to_admin),
-                                            fontSize = 13.sp, fontWeight = FontWeight.Bold)
-                                    }
+
                                 }
                             }
                         }
@@ -396,6 +392,9 @@ private fun StepsGuide(title: Int, steps: List<Int>, startOpen: Boolean) {
 
 const val MODE_ADMIN = "admin"
 const val MODE_TEACHER = "teacher"
+
+/** وضع هذا التطبيق: «إدارة DS» = وضع الإدارة، «دفتر الأستاذ DS» = وضع الأستاذ. */
+val APP_MODE: String get() = if (com.elyedali.daftarustadh.AppRole.isAdmin) MODE_ADMIN else MODE_TEACHER
 
 @Composable
 private fun ModeCard(icon: String, title: String, desc: String, count: Int, bg: Color, fg: Color, onClick: () -> Unit) {

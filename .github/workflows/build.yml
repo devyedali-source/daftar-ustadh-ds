@@ -20,6 +20,6 @@ jobs:
         run: gradle assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         with:
-          name: daftar-ustadh-ds-debug
-          path: app/build/outputs/apk/debug/*.apk
+          name: daftar-ustadh-ds-apps
+          path: app/build/outputs/apk/*/debug/*.apk
           retention-days: 7

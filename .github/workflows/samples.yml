@@ -32,7 +32,7 @@ jobs:
           target: default
           disable-animations: true
           script: |
-            gradle connectedDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.package=com.elyedali.daftarustadh -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
+            gradle connectedAdminDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.package=com.elyedali.daftarustadh -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
             mkdir -p out && for f in kashf-T1 kashf-T2 kashf-annuel record-T1 record-T2 record-T3 annual-all; do adb exec-out run-as com.elyedali.daftarustadh cat files/samples/$f.pdf > out/$f.pdf; done; ls -la out
       - name: Push samples
         run: |

@@ -98,7 +98,7 @@
     <string name="share_full_file">Fichier complet de la classe</string>
     <string name="share_full_file_hint">Toutes les informations des élèves, pour un enseignant chargé de la classe</string>
     <string name="share_chooser">Envoyer le fichier de la classe</string>
-    <string name="file_invalid">Ce fichier n\'est pas un fichier دفتر الأستاذ DS, ou il est endommagé.</string>
+    <string name="file_invalid">Ce fichier n\'est pas un fichier « دفتر الأستاذ DS » ou « إدارة DS », ou il est endommagé.</string>
     <string name="file_conflict">La classe %1$s existe déjà chez vous depuis une autre source. Mettez-vous d\'accord sur un seul fichier : celui de son créateur.</string>
     <string name="file_ok_teacher">La classe %1$s a été ajoutée à « Mes classes ».</string>
     <string name="file_ok_full">La classe %1$s a été ajoutée au mode administration.</string>
@@ -390,7 +390,7 @@
     <string name="act_after_send">Après paiement, l\'administration active les classes et les bulletins du T2 et annuel s\'ouvrent.</string>
     <string name="act_locked">Activation de la classe requise</string>
     <string name="act_activate_class">Activer la classe</string>
-    <string name="act_msg_intro">Je veux activer des classes dans l\'application دفتر الأستاذ DS (trimestres 2 et 3).</string>
+    <string name="act_msg_intro">Je veux activer des classes dans l\'application إدارة DS (trimestres 2 et 3).</string>
     <string name="act_msg_school">Établissement : %1$s</string>
     <string name="act_msg_wilaya">Wilaya : %1$s</string>
     <string name="act_msg_year">Année scolaire : %1$s</string>
@@ -525,7 +525,7 @@
     <string name="sr_received">Registres de notes et emploi du temps reçus de %1$s ✅\nClasses : %2$s\nMatières : %3$d\nSéances : %4$d</string>
     <string name="sr_received_conflicts">Ces classes n\'ont pas été ajoutées car elles existent déjà d\'une autre source : %1$s</string>
     <string name="tt_teacher_whatsapp">WhatsApp du professeur</string>
-    <string name="dsq_caption">📂 Fichier de données دفتر الأستاذ DS — ouvrez-le depuis l\'application avec « Ouvrir un fichier ».</string>
+    <string name="dsq_caption">📂 Fichier de données — ouvrez-le avec « Ouvrir un fichier » dans l\'application indiquée en première page.</string>
     <string name="tt_approve_first">Validez d\'abord l\'emploi du temps (Emploi du temps ← Génération).</string>
     <string name="tt_pb_not_generated">L\'emploi du temps n\'est pas encore généré.</string>
     <string name="tt_pb_missing_hours">%1$s : il manque %3$d h de %2$s</string>
@@ -582,7 +582,8 @@
     <string name="ac_bad_range">La date de début est après la date de fin.</string>
     <string name="ac_no_absence">Aucune absence sur cette période.</string>
     <string name="ac_roll">N° d\'appel %1$d</string>
-    <string name="file_is_pdf">Ce PDF est un document ordinaire (lecture ou impression), pas un fichier de données دفتر الأستاذ DS.\nLes fichiers de l\'application portent la mention « ملف بيانات من تطبيق دفتر الأستاذ DS ».</string>
+    <string name="file_is_pdf">Ce PDF est un document ordinaire (lecture ou impression), pas un fichier de données.
+Les fichiers de données portent en première page : « Fichier de données pour l\'application … ».</string>
     <string name="guide_title">Quel mode choisir ?</string>
     <string name="guide_short">Touchez ici pour comprendre la différence entre les deux modes et comment passer de l\'un à l\'autre.</string>
     <string name="guide_admin_title">🏫 Mode administration — pour qui gère l\'établissement</string>
@@ -698,4 +699,6 @@
     <string name="ps_intro_timetables">Les emplois du temps de tous les professeurs (une page par professeur), d\'après l\'emploi du temps validé, dans un seul PDF à envoyer à l\'imprimerie.</string>
     <string name="cards_button">Cartes d\'élèves de la classe (pour l\'imprimerie)</string>
     <string name="ac_tab_sessions">Séances saisies</string>
+    <string name="file_other_app">Ce fichier n\'est pas pour cette application : ouvrez-le dans « %1$s ».</string>
+    <string name="sr_app_link">Lien de téléchargement de « دفتر الأستاذ DS » : %1$s</string>
 </resources>
