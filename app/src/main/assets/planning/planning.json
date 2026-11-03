@@ -3,7 +3,9 @@
   "AR": "برنامج مادة اللغة العربية (المرحلة الإعدادية) — مارس 2025",
   "IC": "منهاج التربية المدنية — السنة الأولى (2020) والثانية والثالثة (مارس 2025)",
   "ANG": "First Cycle English Guide — 2020",
-  "FR": "Guide d'exploitation du programme pour le premier cycle — septembre 2022"
+  "FR": "Guide d'exploitation du programme pour le premier cycle — septembre 2022",
+  "PC": "Programme de sciences physiques : premier cycle — mars 2025",
+  "TI": "Guides du professeur IPN 2025 : Informatique 1AS et Technologie 1AS (sans répartition par semaine)"
  },
  "plans": {
   "AR": {
@@ -2849,6 +2851,1143 @@
       "Raconter l'histoire de certains métiers dans son environnement",
       "Activité parascolaire",
       "Présentation du projet"
+     ]
+    }
+   ]
+  },
+  "PC": {
+   "2AS": [
+    {
+     "l": "Semaine 1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "start",
+     "i": [
+      "Accueil et préparation"
+     ]
+    },
+    {
+     "l": "Semaine 2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Semaine 3",
+     "w": 3,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Mélanges : définition",
+      "Mélanges homogènes et hétérogènes"
+     ]
+    },
+    {
+     "l": "Semaine 4",
+     "w": 4,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Méthodes de séparation des mélanges liquides : décantation, filtration"
+     ]
+    },
+    {
+     "l": "Semaine 5",
+     "w": 5,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Distillation"
+     ]
+    },
+    {
+     "l": "Semaine 6",
+     "w": 6,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Mélanges gazeux : air",
+      "Composition de l'air",
+      "Masse d'un litre d'air",
+      "Pression atmosphérique : mise en évidence, mesure et unité"
+     ]
+    },
+    {
+     "l": "Semaine 7",
+     "w": 7,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "eval",
+     "i": [
+      "Évaluation"
+     ]
+    },
+    {
+     "l": "Semaine 8",
+     "w": 8,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Mélanges gazeux (suite)"
+     ]
+    },
+    {
+     "l": "Semaine 9",
+     "w": 9,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Corps purs simples",
+      "Corps purs composés"
+     ]
+    },
+    {
+     "l": "Semaine 10",
+     "w": 10,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Atome : nom et symbole de quelques atomes : H, O, C, N, Cl, Na, Fe, Cu, Ag, Au…"
+     ]
+    },
+    {
+     "l": "Semaine 11",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 1"
+     ]
+    },
+    {
+     "l": "Semaine 12",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 13",
+     "w": 13,
+     "t": 2,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Molécule : formule moléculaire de quelques molécules : H2, O2, N2, Cl2, H2O, CO2"
+     ]
+    },
+    {
+     "l": "Semaine 14",
+     "w": 14,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Éléments d'un circuit simple",
+      "Dipôles et symboles",
+      "Conducteurs et isolants",
+      "Circuit ouvert, circuit fermé"
+     ]
+    },
+    {
+     "l": "Semaine 15",
+     "w": 15,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Circuit série",
+      "Circuit parallèle",
+      "Fonctionnement d'une lampe torche"
+     ]
+    },
+    {
+     "l": "Semaine 16",
+     "w": 16,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Intensité : ampèremètre, mesure, sens conventionnel du courant, unité internationale"
+     ]
+    },
+    {
+     "l": "Semaine 17",
+     "w": 17,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Loi d'unicité (circuit série)",
+      "Loi des nœuds (circuit parallèle)",
+      "Court-circuit",
+      "Effet calorifique (thermique) du courant électrique"
+     ]
+    },
+    {
+     "l": "Semaine 18",
+     "w": 18,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "eval",
+     "i": [
+      "Évaluation"
+     ]
+    },
+    {
+     "l": "Semaine 19",
+     "w": 19,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Tension : voltmètre, mesure, unité"
+     ]
+    },
+    {
+     "l": "Semaine 20",
+     "w": 20,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Additivité des tensions dans un circuit série"
+     ]
+    },
+    {
+     "l": "Semaine 21",
+     "w": 21,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Unicité de la tension dans un circuit dérivation"
+     ]
+    },
+    {
+     "l": "Semaine 22",
+     "w": 22,
+     "t": 2,
+     "u": "Unité 2",
+     "k": "lesson",
+     "i": [
+      "Additivité et unicité des tensions (suite)"
+     ]
+    },
+    {
+     "l": "Semaine 23",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 2"
+     ]
+    },
+    {
+     "l": "Semaine 24",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 25",
+     "w": 25,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Semaine 26",
+     "w": 26,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Tension nominale",
+      "Surtension et sous-tension"
+     ]
+    },
+    {
+     "l": "Semaine 27",
+     "w": 27,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Effets d'une force : effet statique et effet dynamique",
+      "Définition d'une force"
+     ]
+    },
+    {
+     "l": "Semaine 28",
+     "w": 28,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Les différents types de forces"
+     ]
+    },
+    {
+     "l": "Semaine 29",
+     "w": 29,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Caractéristiques d'une force",
+      "Représentation vectorielle d'une force"
+     ]
+    },
+    {
+     "l": "Semaine 30",
+     "w": 30,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "eval",
+     "i": [
+      "Évaluation"
+     ]
+    },
+    {
+     "l": "Semaine 31",
+     "w": 31,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Sources primaires de lumière (Soleil, lampe)",
+      "Sources secondaires de lumière (Lune, miroir)",
+      "Récepteurs de lumière"
+     ]
+    },
+    {
+     "l": "Semaine 32",
+     "w": 32,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Faisceaux lumineux (convergent et divergent)",
+      "Rayon lumineux",
+      "Milieu transparent, translucide et opaque",
+      "Vitesse de la lumière"
+     ]
+    },
+    {
+     "l": "Semaine 33",
+     "w": 33,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Ombres et pénombres"
+     ]
+    },
+    {
+     "l": "Semaine 34",
+     "w": 34,
+     "t": 3,
+     "u": "Unité 3 et unité 4",
+     "k": "lesson",
+     "i": [
+      "Chambre noire"
+     ]
+    },
+    {
+     "l": "Semaine 35",
+     "w": 35,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 3"
+     ]
+    },
+    {
+     "l": "Semaine 36",
+     "w": 36,
+     "t": 3,
+     "u": "",
+     "k": "final",
+     "i": [
+      "Validation des acquis ou certification"
+     ]
+    }
+   ],
+   "3AS": [
+    {
+     "l": "Semaine 1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "start",
+     "i": [
+      "Accueil et préparation"
+     ]
+    },
+    {
+     "l": "Semaine 2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Semaine 3",
+     "w": 3,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Réaction chimique : définition, réactifs et produits"
+     ]
+    },
+    {
+     "l": "Semaine 4",
+     "w": 4,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Élément chimique : atomes, molécules"
+     ]
+    },
+    {
+     "l": "Semaine 5",
+     "w": 5,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Écriture de l'équation bilan d'une réaction",
+      "Conservation du nombre d'atomes et de la nature de l'atome"
+     ]
+    },
+    {
+     "l": "Semaine 6",
+     "w": 6,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Soluté, solvant, solution",
+      "Dissolution",
+      "Concentration massique d'une solution"
+     ]
+    },
+    {
+     "l": "Semaine 7",
+     "w": 7,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Notion de dilution",
+      "Concentration massique d'une solution après la dilution",
+      "Solution saturée",
+      "Solubilité"
+     ]
+    },
+    {
+     "l": "Semaine 8",
+     "w": 8,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Solutions acides, basiques et neutres",
+      "Notion de pH",
+      "pH d'une solution acide, basique, neutre"
+     ]
+    },
+    {
+     "l": "Semaine 9",
+     "w": 9,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "eval",
+     "i": [
+      "Évaluation"
+     ]
+    },
+    {
+     "l": "Semaine 10",
+     "w": 10,
+     "t": 1,
+     "u": "Unité 1",
+     "k": "lesson",
+     "i": [
+      "Effet de la dilution sur le pH : solution acide, basique, neutre"
+     ]
+    },
+    {
+     "l": "Semaine 11",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 1"
+     ]
+    },
+    {
+     "l": "Semaine 12",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 13",
+     "w": 13,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Les différents états de la matière : mise en évidence",
+      "Propriétés physiques (état liquide)"
+     ]
+    },
+    {
+     "l": "Semaine 14",
+     "w": 14,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Propriétés physiques (état solide, état gazeux)"
+     ]
+    },
+    {
+     "l": "Semaine 15",
+     "w": 15,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Les changements d'état de la matière"
+     ]
+    },
+    {
+     "l": "Semaine 16",
+     "w": 16,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Conservation de la masse",
+      "Variation du volume",
+      "Unités : masse (kg), volume (m3), température (°C)",
+      "Température des changements d'état de l'eau"
+     ]
+    },
+    {
+     "l": "Semaine 17",
+     "w": 17,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Masse, volume, masse volumique : mesure, unité, définition"
+     ]
+    },
+    {
+     "l": "Semaine 18",
+     "w": 18,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Densité : définition, unité",
+      "Densité d'un liquide et d'un solide par rapport à l'eau"
+     ]
+    },
+    {
+     "l": "Semaine 19",
+     "w": 19,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Le poids : mise en évidence, définition, caractéristiques, mesure, unité"
+     ]
+    },
+    {
+     "l": "Semaine 20",
+     "w": 20,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Représentation vectorielle",
+      "Relation entre poids et masse",
+      "Invariance de la masse et variation du poids avec le lieu"
+     ]
+    },
+    {
+     "l": "Semaine 21",
+     "w": 21,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "lesson",
+     "i": [
+      "Force de gravitation universelle : définition",
+      "Intensité de la pesanteur à une altitude"
+     ]
+    },
+    {
+     "l": "Semaine 22",
+     "w": 22,
+     "t": 2,
+     "u": "Unité 2 et unité 3",
+     "k": "eval",
+     "i": [
+      "Évaluation"
+     ]
+    },
+    {
+     "l": "Semaine 23",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 2"
+     ]
+    },
+    {
+     "l": "Semaine 24",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 25",
+     "w": 25,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Caractéristiques d'un dipôle ohmique : mesure, unité, loi d'Ohm"
+     ]
+    },
+    {
+     "l": "Semaine 26",
+     "w": 26,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Caractéristiques d'un dipôle ohmique (suite)"
+     ]
+    },
+    {
+     "l": "Semaine 27",
+     "w": 27,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Association des résistances : en série"
+     ]
+    },
+    {
+     "l": "Semaine 28",
+     "w": 28,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Association des résistances : en dérivation"
+     ]
+    },
+    {
+     "l": "Semaine 29",
+     "w": 29,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Puissance électrique (définition, unité, expression)",
+      "Puissance nominale"
+     ]
+    },
+    {
+     "l": "Semaine 30",
+     "w": 30,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Énergie électrique (définition, unité, expression)"
+     ]
+    },
+    {
+     "l": "Semaine 31",
+     "w": 31,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Réflexion de la lumière"
+     ]
+    },
+    {
+     "l": "Semaine 32",
+     "w": 32,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Réfraction de la lumière"
+     ]
+    },
+    {
+     "l": "Semaine 33",
+     "w": 33,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "lesson",
+     "i": [
+      "Réfraction de la lumière (suite)"
+     ]
+    },
+    {
+     "l": "Semaine 34",
+     "w": 34,
+     "t": 3,
+     "u": "Unités 4 et 5",
+     "k": "eval",
+     "i": [
+      "Évaluation"
+     ]
+    },
+    {
+     "l": "Semaine 35",
+     "w": 35,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 3"
+     ]
+    },
+    {
+     "l": "Semaine 36",
+     "w": 36,
+     "t": 3,
+     "u": "",
+     "k": "final",
+     "i": [
+      "Validation des acquis ou certification"
+     ]
+    }
+   ]
+  },
+  "TI": {
+   "1AS": [
+    {
+     "l": "Leçon 1",
+     "t": 0,
+     "u": "Informatique — Unité 1 : Ordinateur et périphériques",
+     "k": "lesson",
+     "i": [
+      "Ordinateur, unité centrale et souris"
+     ]
+    },
+    {
+     "l": "Leçon 2",
+     "t": 0,
+     "u": "Informatique — Unité 1 : Ordinateur et périphériques",
+     "k": "lesson",
+     "i": [
+      "Clavier"
+     ]
+    },
+    {
+     "l": "Leçon 3",
+     "t": 0,
+     "u": "Informatique — Unité 1 : Ordinateur et périphériques",
+     "k": "lesson",
+     "i": [
+      "Imprimante, moyens de stockage"
+     ]
+    },
+    {
+     "l": "Leçon 4-5",
+     "t": 0,
+     "u": "Informatique — Unité 1 : Ordinateur et périphériques",
+     "k": "lesson",
+     "i": [
+      "Notion du système d'exploitation, gestion du bureau"
+     ]
+    },
+    {
+     "l": "Leçon 6",
+     "t": 0,
+     "u": "Informatique — Unité 1 : Ordinateur et périphériques",
+     "k": "lesson",
+     "i": [
+      "Gestion de dossiers et de fenêtres"
+     ]
+    },
+    {
+     "l": "Leçon 7",
+     "t": 0,
+     "u": "Informatique — Unité 1 : Ordinateur et périphériques",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 1"
+     ]
+    },
+    {
+     "l": "Leçon 8",
+     "t": 0,
+     "u": "Informatique — Unité 3 : Système d'information",
+     "k": "lesson",
+     "i": [
+      "Notion de système d'information"
+     ]
+    },
+    {
+     "l": "Leçon 9",
+     "t": 0,
+     "u": "Informatique — Unité 3 : Système d'information",
+     "k": "lesson",
+     "i": [
+      "Notion de connexion à un réseau et programme informatique"
+     ]
+    },
+    {
+     "l": "Leçon 10",
+     "t": 0,
+     "u": "Informatique — Unité 3 : Système d'information",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 3"
+     ]
+    },
+    {
+     "l": "Leçon 11",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Interface de Microsoft Word"
+     ]
+    },
+    {
+     "l": "Leçon 12",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Introduction à la barre de menus et au ruban"
+     ]
+    },
+    {
+     "l": "Leçon 13",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "La barre de menus et le ruban (suite)"
+     ]
+    },
+    {
+     "l": "Leçon 14",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Introduction à la mise en page"
+     ]
+    },
+    {
+     "l": "Leçon 15",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Mise en forme du texte"
+     ]
+    },
+    {
+     "l": "Leçon 16",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Insertion d'éléments visuels (image)"
+     ]
+    },
+    {
+     "l": "Leçon 17",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Organisation et structure d'un document"
+     ]
+    },
+    {
+     "l": "Leçon 18",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Entêtes et pieds de page"
+     ]
+    },
+    {
+     "l": "Leçon 19",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "lesson",
+     "i": [
+      "Impression"
+     ]
+    },
+    {
+     "l": "Leçon 20",
+     "t": 0,
+     "u": "Informatique — Unité 4 : Traitement de textes",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 4"
+     ]
+    },
+    {
+     "l": "Leçon 21",
+     "t": 0,
+     "u": "Informatique — Unité 5 : Éthique de l'utilisation de l'Internet",
+     "k": "lesson",
+     "i": [
+      "Choix des sites Internet éducatifs"
+     ]
+    },
+    {
+     "l": "Leçon 22",
+     "t": 0,
+     "u": "Informatique — Unité 5 : Éthique de l'utilisation de l'Internet",
+     "k": "lesson",
+     "i": [
+      "Éloignement des sites indésirables"
+     ]
+    },
+    {
+     "l": "Leçon 23",
+     "t": 0,
+     "u": "Informatique — Unité 5 : Éthique de l'utilisation de l'Internet",
+     "k": "lesson",
+     "i": [
+      "Respect d'autrui"
+     ]
+    },
+    {
+     "l": "Leçon 24",
+     "t": 0,
+     "u": "Informatique — Unité 5 : Éthique de l'utilisation de l'Internet",
+     "k": "lesson",
+     "i": [
+      "Respect des normes éthiques de publication et de communication"
+     ]
+    },
+    {
+     "l": "Leçon 25",
+     "t": 0,
+     "u": "Informatique — Unité 5 : Éthique de l'utilisation de l'Internet",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 5"
+     ]
+    },
+    {
+     "l": "Leçon 26",
+     "t": 0,
+     "u": "Informatique — Unité 6 : Réseau et Internet",
+     "k": "lesson",
+     "i": [
+      "Pages et sites Web"
+     ]
+    },
+    {
+     "l": "Leçon 27",
+     "t": 0,
+     "u": "Informatique — Unité 6 : Réseau et Internet",
+     "k": "lesson",
+     "i": [
+      "Navigateurs"
+     ]
+    },
+    {
+     "l": "Leçon 28",
+     "t": 0,
+     "u": "Informatique — Unité 6 : Réseau et Internet",
+     "k": "lesson",
+     "i": [
+      "Moteurs de recherche et recherche"
+     ]
+    },
+    {
+     "l": "Leçon 29",
+     "t": 0,
+     "u": "Informatique — Unité 6 : Réseau et Internet",
+     "k": "lesson",
+     "i": [
+      "Téléchargement"
+     ]
+    },
+    {
+     "l": "Leçon 30",
+     "t": 0,
+     "u": "Informatique — Unité 6 : Réseau et Internet",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 6"
+     ]
+    },
+    {
+     "l": "Leçon 1",
+     "t": 0,
+     "u": "Technologie — Chapitre I : Objet technique",
+     "k": "lesson",
+     "i": [
+      "L'objet technique et ses fonctions"
+     ]
+    },
+    {
+     "l": "Leçon 2",
+     "t": 0,
+     "u": "Technologie — Chapitre I : Objet technique",
+     "k": "lesson",
+     "i": [
+      "Valeur et principe de fonctionnement d'un objet technique"
+     ]
+    },
+    {
+     "l": "Leçon 3",
+     "t": 0,
+     "u": "Technologie — Chapitre II : Les matériaux",
+     "k": "lesson",
+     "i": [
+      "Les matériaux"
+     ]
+    },
+    {
+     "l": "Leçon 4",
+     "t": 0,
+     "u": "Technologie — Chapitre III : Évolution de l'objet technique",
+     "k": "lesson",
+     "i": [
+      "Les familles des objets techniques"
+     ]
+    },
+    {
+     "l": "Leçon 5",
+     "t": 0,
+     "u": "Technologie — Chapitre III : Évolution de l'objet technique",
+     "k": "lesson",
+     "i": [
+      "Évolution technologique et étude de cas"
+     ]
+    },
+    {
+     "l": "Leçon 6",
+     "t": 0,
+     "u": "Technologie — Chapitre IV : Énergies mises en œuvre dans le fonctionnement de l'objet technique",
+     "k": "lesson",
+     "i": [
+      "Formes d'énergies utilisées pour le fonctionnement d'un objet"
+     ]
+    },
+    {
+     "l": "Leçon 7",
+     "t": 0,
+     "u": "Technologie — Chapitre IV : Énergies mises en œuvre dans le fonctionnement de l'objet technique",
+     "k": "lesson",
+     "i": [
+      "Impacts environnementaux des sources d'énergies"
+     ]
+    },
+    {
+     "l": "Leçon 8",
+     "t": 0,
+     "u": "Technologie — Chapitre V : Fonctions technologiques",
+     "k": "lesson",
+     "i": [
+      "Fonction de commande"
+     ]
+    },
+    {
+     "l": "Leçon 9",
+     "t": 0,
+     "u": "Technologie — Chapitre V : Fonctions technologiques",
+     "k": "lesson",
+     "i": [
+      "Fonction d'alimentation"
+     ]
+    },
+    {
+     "l": "Leçon 10",
+     "t": 0,
+     "u": "Technologie — Chapitre VI : Entrepreneuriat",
+     "k": "lesson",
+     "i": [
+      "L'entrepreneuriat"
+     ]
+    },
+    {
+     "l": "Leçon 11",
+     "t": 0,
+     "u": "Technologie — Chapitre VII : Environnement",
+     "k": "lesson",
+     "i": [
+      "Protection de l'environnement"
+     ]
+    },
+    {
+     "l": "Leçon 12",
+     "t": 0,
+     "u": "Technologie — Chapitre VII : Environnement",
+     "k": "lesson",
+     "i": [
+      "Produits polluants et non polluants"
      ]
     }
    ]
