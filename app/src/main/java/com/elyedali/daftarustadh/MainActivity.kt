@@ -115,6 +115,21 @@ private class PdfNotImportableException : Exception()
 /** ملف يخص التطبيق الآخر (الإدارة أو الأستاذ). */
 private class WrongAppException(val app: String) : Exception()
 
+/**
+ * نفس الأستاذ رغم اختلاف بسيط في كتابة الاسم (المسافات، «الأستاذ»، الهمزات، اسم زائد أو ناقص):
+ * الإدارة تعرف رقم واتسابه ومن أرسل الملف، فلا يُعدّ الاختلاف البسيط أستاذًا آخر.
+ */
+private fun sameTeacher(a: String, b: String): Boolean {
+    fun n(t: String) = t.lowercase().replace(Regex("[أإآ]"), "ا").replace('ة', 'ه').replace('ى', 'ي')
+        .replace(Regex("^\\s*(الاستاذ|الاستاذه|استاذ|prof\\.?|m\\.|mme)\\s+"), "")
+        .replace(Regex("[^\\p{L}\\p{N}]+"), " ").trim()
+    val x = n(a); val y = n(b)
+    if (x.isEmpty() || y.isEmpty() || x == y) return true
+    val wx = x.split(" ").toSet(); val wy = y.split(" ").toSet()
+    // كل كلمات الاسم الأقصر موجودة في الأطول (مثل «محمد أحمد» و«محمد أحمد سالم»)
+    return wx.containsAll(wy) || wy.containsAll(wx)
+}
+
 /** نتيجة رفع ملفات النتائج دفعة واحدة. */
 private data class BatchResult(
     val imported: List<String>,          // «1AS1 — الرياضيات (مختار)»
@@ -871,7 +886,7 @@ class MainActivity : AppCompatActivity() {
                                             chk.older -> { older++; }
                                             // ليس الأستاذ المسند لهذه المادة في الجدول الزمني: لا يُرفع دفعة واحدة (يُرفع وحده بعد التأكد)
                                             ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }?.teacherName
-                                                ?.takeIf { it.isNotBlank() && it.trim() != any.teacherName.trim() } != null ->
+                                                ?.takeIf { it.isNotBlank() && !sameTeacher(it, any.teacherName) } != null ->
                                                 rejected += "$name — " + getString(R.string.bu_other_teacher, any.teacherName,
                                                     ttAssignments.first { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }.teacherName)
                                             else -> ready += chk
@@ -1795,7 +1810,9 @@ class MainActivity : AppCompatActivity() {
                                 }
                             },
                             onPrintRecord = { blank ->
-                                val n = teacherName
+                                // الإدارة: اسم الأستاذ المسند للمادة في الجدول الزمني؛ الأستاذ: اسمه
+                                val n = if (gradesFromAdmin) ttAssignments.firstOrNull { it.classId == c.id && it.subjectCode == code }?.teacherName
+                                    ?.takeIf { it.isNotBlank() } ?: teacherName else teacherName
                                 askNameBlank = blank
                                 if (n.isNullOrBlank()) askNameFor = code else printRecord(c, code, n, blank)
                             },
@@ -2119,7 +2136,7 @@ class MainActivity : AppCompatActivity() {
                                 Text(stringResource(R.string.record_teacher, chk.file.teacherName))
                                 // الأستاذ المعيّن لهذه المادة في هذا القسم (الجدول الزمني) يختلف عن صاحب السجل؟
                                 val assigned = ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == chk.file.subjectCode }?.teacherName
-                                if (!assigned.isNullOrBlank() && assigned.trim() != chk.file.teacherName.trim())
+                                if (!assigned.isNullOrBlank() && !sameTeacher(assigned, chk.file.teacherName))
                                     Text(stringResource(R.string.record_other_teacher, assigned), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 Text(stringResource(R.string.record_matched, chk.matched))
                                 // القسم أُعيد إنشاؤه أو أُعيد تثبيت التطبيق بعد إرسال الملف للأستاذ: المطابقة بأرقام النداء
