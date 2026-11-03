@@ -56,6 +56,9 @@ data class TeacherBundle(
 data class BundleOutcome(val saved: List<String>, val conflicts: List<String>, val subjects: Int, val periods: Int)
 
 class TeacherBundleImporter(private val db: DaftarDatabase) {
+    companion object {
+        fun nameKey(institutionId: String) = "bundle_teacher_name|$institutionId"
+    }
     private val classImporter = ClassFileImporter(db)
 
     private fun norm(t: String) = t.trim().replace(Regex("\\s+"), " ").lowercase()
@@ -107,10 +110,17 @@ class TeacherBundleImporter(private val db: DaftarDatabase) {
                 is ImportOutcome.Success -> {
                     saved += r.className
                     codes.forEach { db.gradeDao().addTeacherSubject(TeacherSubjectEntity(file.schoolClass.id, it)); subjects++ }
+                    // مادة سحبتها الإدارة منه في هذا القسم (أسندتها لأستاذ آخر): تُزال من قائمته فلا يرسل سجلها
+                    db.gradeDao().listTeacherSubjects(file.schoolClass.id).filter { it.subjectCode !in codes }
+                        .forEach { db.gradeDao().removeTeacherSubject(it.classId, it.subjectCode) }
                     moved.forEach { db.gradeDao().save(it) }
                 }
                 is ImportOutcome.ConflictingSource -> conflicts += r.className
             }
+        }
+        // اسم الأستاذ كما سجّلته إدارة هذه المؤسسة: يُكتب في سجلاته التي يرسلها إليها، فتتطابق مع إسنادها
+        if (bundle.teacherName.isNotBlank()) bundle.classes.map { it.first.institution.id }.distinct().forEach { id ->
+            db.appMetaDao().put(com.elyedali.daftarustadh.data.AppMetaEntity(nameKey(id), bundle.teacherName))
         }
         // جدول الأستاذ: يحلّ محلّ جدوله السابق من نفس المؤسسة والسنة
         val tt = bundle.timetable

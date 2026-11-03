@@ -400,7 +400,10 @@ class MainActivity : AppCompatActivity() {
                             schoolListId = owner.schoolListId, classId = c.id, schoolYear = c.schoolYear,
                             levelCode = c.levelCode, number = c.number, subjectCode = code,
                             subjectNameAr = subject.nameAr, subjectNameFr = subject.nameFr,
-                            teacherName = name, testsMode = mode,
+                            // الاسم الذي سجّلته به إدارة هذه المؤسسة (من ملفها)، فيطابق إسنادها ولا يُرفض عندها
+                            teacherName = metaDao.get(com.elyedali.daftarustadh.transfer.TeacherBundleImporter.nameKey(owner.id))
+                                ?.takeIf { it.isNotBlank() } ?: name,
+                            testsMode = mode,
                             students = TransferCodec.buildRecordStudents(list, g)
                         )
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeRecord(record) }
@@ -866,6 +869,11 @@ class MainActivity : AppCompatActivity() {
                                                 rejected += "$name — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
                                             // سجل أقدم من الذي رُفع لهذه المادة: يُتجاوز حتى لا تعود نقاط قديمة
                                             chk.older -> { older++; }
+                                            // ليس الأستاذ المسند لهذه المادة في الجدول الزمني: لا يُرفع دفعة واحدة (يُرفع وحده بعد التأكد)
+                                            ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }?.teacherName
+                                                ?.takeIf { it.isNotBlank() && it.trim() != any.teacherName.trim() } != null ->
+                                                rejected += "$name — " + getString(R.string.bu_other_teacher, any.teacherName,
+                                                    ttAssignments.first { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }.teacherName)
                                             else -> ready += chk
                                         }
                                         is RecordCheck.WrongClass -> rejected += "$name — " + getString(R.string.bu_wrong_class, any.className)

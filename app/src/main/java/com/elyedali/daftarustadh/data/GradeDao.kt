@@ -44,6 +44,9 @@ interface GradeDao {
     @Query("DELETE FROM teacher_subject WHERE classId = :classId")
     suspend fun deleteTeacherSubjectsByClass(classId: String)
 
+    @Query("SELECT * FROM teacher_subject WHERE classId = :classId")
+    suspend fun listTeacherSubjects(classId: String): List<TeacherSubjectEntity>
+
     // ---- سجلات المواد المرفوعة عند الإدارة ----
 
     @Query("SELECT * FROM subject_record WHERE classId = :classId")

@@ -717,4 +717,5 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="reg_with_names">Avec les noms des élèves</string>
     <string name="reg_blank">Vierge</string>
     <string name="reg_no_students">Aucun élève dans cette classe : enregistrez-les dans « Élèves » pour imprimer le registre avec leurs noms.</string>
+    <string name="bu_other_teacher">registre de %1$s, mais la matière est attribuée à %2$s dans l\'emploi du temps. Non enregistré : s\'il est correct, ouvrez-le seul.</string>
 </resources>
