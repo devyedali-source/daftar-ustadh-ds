@@ -785,6 +785,11 @@ class MainActivity : AppCompatActivity() {
                                     // اسم الأستاذ كما سجّلته الإدارة، إن لم يكن مسجّلًا عنده
                                     if (teacherName.isNullOrBlank() && any.teacherName.isNotBlank())
                                         metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, any.teacherName))
+                                    // معلومات الأستاذ تُملأ من الملف (اسمه وموادّه) إن لم يسجّلها، فلا يُطلب منه إلا رصد النتائج
+                                    if (teacherProfile == null && any.teacherName.isNotBlank())
+                                        metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.ui.TeacherProfile.KEY,
+                                            com.elyedali.daftarustadh.ui.TeacherProfile(any.teacherName, "",
+                                                any.classes.flatMap { it.second }.distinct().take(com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS)).encode()))
                                     if (out.saved.isNotEmpty()) {
                                         selectedYear = any.classes.first().first.schoolClass.schoolYear
                                         teacherSchool = null
@@ -1931,7 +1936,7 @@ class MainActivity : AppCompatActivity() {
                             teacherSchool = null
                             // أول دخول: الإدارة تسجّل معلومات المؤسسة، والأستاذ يسجّل معلوماته (مرة واحدة)
                             if (homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN && inst == null) screen = Screen.INSTITUTION
-                            if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherProfile == null) screen = Screen.TEACHER_PROFILE
+                            // الأستاذ لا يُطلب منه شيء: اسمه وموادّه تأتي من ملف الإدارة
                         },
                         onOpenClass = { c ->
                             classId = c.id; hubTab = 0; hubBack = Screen.HOME
