@@ -5,7 +5,7 @@
   "ANG": "First Cycle English Guide — 2020",
   "FR": "Guide d'exploitation du programme pour le premier cycle — septembre 2022",
   "PC": "Programme de sciences physiques : premier cycle — mars 2025",
-  "TI": "Guides du professeur : Informatique 1AS, Technologie 1AS et 2AS (sans répartition par semaine), Technologie 3AS (par semaine)",
+  "TI": "Guides du professeur : Informatique 1AS et 2AS, Technologie 1AS et 2AS (suite des leçons, sans répartition par semaine), Technologie 3AS (par semaine)",
   "HG": "منهاج التاريخ والجغرافيا — السلك الأول، أبريل 2025",
   "MATS": "Curricula de mathématiques du premier cycle — 2022 (progression annuelle par mois et semaine)"
  },
@@ -3994,6 +3994,321 @@
     }
    ],
    "2AS": [
+    {
+     "l": "Leçon 1",
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Leçon 2",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Traitement d'image",
+     "k": "lesson",
+     "i": [
+      "Introduction aux images numériques"
+     ]
+    },
+    {
+     "l": "Leçon 3",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Traitement d'image",
+     "k": "lesson",
+     "i": [
+      "Création et enregistrement d'une image"
+     ]
+    },
+    {
+     "l": "Leçon 4",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Traitement d'image",
+     "k": "lesson",
+     "i": [
+      "Téléchargement et gestion d'images"
+     ]
+    },
+    {
+     "l": "Leçon 5",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Traitement d'image",
+     "k": "lesson",
+     "i": [
+      "Traitement simple d'une image : recadrage et redimensionnement"
+     ]
+    },
+    {
+     "l": "Leçon 6",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Traitement d'image",
+     "k": "lesson",
+     "i": [
+      "Retouches de base : luminosité, contraste et filtres"
+     ]
+    },
+    {
+     "l": "Leçon 7",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Traitement d'image",
+     "k": "lesson",
+     "i": [
+      "Projet final : création et gestion d'une image personnalisée"
+     ]
+    },
+    {
+     "l": "Leçon 8",
+     "t": 1,
+     "u": "Informatique — Unité 1 : Traitement d'image",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 1"
+     ]
+    },
+    {
+     "l": "Leçon 9",
+     "t": 1,
+     "u": "Informatique — Unité 2 : Éthique de l'utilisation de l'Internet",
+     "k": "lesson",
+     "i": [
+      "Naviguer sur Internet de manière éducative et sécurisée"
+     ]
+    },
+    {
+     "l": "Leçon 10",
+     "t": 1,
+     "u": "Informatique — Unité 2 : Éthique de l'utilisation de l'Internet",
+     "k": "lesson",
+     "i": [
+      "Respect et éthique sur Internet"
+     ]
+    },
+    {
+     "l": "Leçon 11",
+     "t": 1,
+     "u": "Informatique — Unité 2 : Éthique de l'utilisation de l'Internet",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 2"
+     ]
+    },
+    {
+     "l": "Leçon 12",
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Test d'évaluation trimestriel (trimestre 1)"
+     ]
+    },
+    {
+     "l": "Leçon 13",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Découverte d'Excel et gestion des fichiers"
+     ]
+    },
+    {
+     "l": "Leçon 14",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Feuilles et cellules : organisation du tableur"
+     ]
+    },
+    {
+     "l": "Leçon 15",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Saisie et mise en forme de données"
+     ]
+    },
+    {
+     "l": "Leçon 16",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Ajout de formules de base"
+     ]
+    },
+    {
+     "l": "Leçon 17",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Utilisation des fonctions courantes"
+     ]
+    },
+    {
+     "l": "Leçon 18",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Mise en page et formatage avancé"
+     ]
+    },
+    {
+     "l": "Leçon 19",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Représentation graphique de données"
+     ]
+    },
+    {
+     "l": "Leçon 20",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Préparation à l'impression"
+     ]
+    },
+    {
+     "l": "Leçon 21",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "lesson",
+     "i": [
+      "Projet final : application des connaissances"
+     ]
+    },
+    {
+     "l": "Leçon 22",
+     "t": 2,
+     "u": "Informatique — Unité 3 : Traitement des données",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 3"
+     ]
+    },
+    {
+     "l": "Leçon 23",
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Test d'évaluation (trimestre 2)"
+     ]
+    },
+    {
+     "l": "Leçon 24",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Web",
+     "k": "lesson",
+     "i": [
+      "Introduction aux moteurs de recherche"
+     ]
+    },
+    {
+     "l": "Leçon 25",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Web",
+     "k": "lesson",
+     "i": [
+      "Fiabilité des sources et dangers du web"
+     ]
+    },
+    {
+     "l": "Leçon 26",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Web",
+     "k": "lesson",
+     "i": [
+      "Téléchargement responsable et légal"
+     ]
+    },
+    {
+     "l": "Leçon 27",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Web",
+     "k": "lesson",
+     "i": [
+      "Sécurité et gestion des fichiers téléchargés"
+     ]
+    },
+    {
+     "l": "Leçon 28",
+     "t": 3,
+     "u": "Informatique — Unité 4 : Web",
+     "k": "eval",
+     "i": [
+      "Tests d'évaluation et soutien de l'unité 4"
+     ]
+    },
+    {
+     "l": "Leçon 29",
+     "t": 3,
+     "u": "Informatique — Unité 5 : Messagerie électronique",
+     "k": "lesson",
+     "i": [
+      "Introduction à la messagerie électronique (théorie)"
+     ]
+    },
+    {
+     "l": "Leçon 30",
+     "t": 3,
+     "u": "Informatique — Unité 5 : Messagerie électronique",
+     "k": "lesson",
+     "i": [
+      "Création et gestion d'une boîte électronique"
+     ]
+    },
+    {
+     "l": "Leçon 31",
+     "t": 3,
+     "u": "Informatique — Unité 5 : Messagerie électronique",
+     "k": "lesson",
+     "i": [
+      "Envoi et réception d'un courrier électronique"
+     ]
+    },
+    {
+     "l": "Leçon 32",
+     "t": 3,
+     "u": "Informatique — Unité 5 : Messagerie électronique",
+     "k": "lesson",
+     "i": [
+      "Sécurité et bonnes pratiques en messagerie électronique"
+     ]
+    },
+    {
+     "l": "Leçon 33",
+     "t": 3,
+     "u": "Informatique — Unité 5 : Messagerie électronique",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 5"
+     ]
+    },
+    {
+     "l": "Leçon 34",
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Test d'évaluation (trimestre 3)"
+     ]
+    },
+    {
+     "l": "Leçon 35",
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Test d'évaluation (trimestre 3)"
+     ]
+    },
     {
      "l": "Leçon",
      "t": 0,
