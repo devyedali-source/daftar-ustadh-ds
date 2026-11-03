@@ -552,7 +552,7 @@
     <string name="ps_textbook_pages">عدد صفحات دفتر النصوص لكل قسم:</string>
     <string name="ps_records_note">سجل لكل مادة في كل قسم (%1$d أقسام) بأسماء الطلاب واسم الأستاذ.</string>
     <string name="ps_timetables_note">صفحة لكل أستاذ (%1$d أساتذة) من الجدول المعتمد.</string>
-    <string name="ps_absence_note">لكل قسم (%1$d أقسام) صفحة لكل شهر من أكتوبر إلى يونيو، بأسماء الطلاب وأيام الدراسة.</string>
+    <string name="ps_absence_note">لكل قسم (%1$d أقسام) صفحة لكل شهر من أكتوبر إلى يونيو بأيام الدراسة، بأسماء الطلاب أو فارغًا.</string>
     <string name="ps_textbook_note">نسخة فارغة لكل قسم (%1$d أقسام) تُملأ باليد.</string>
     <string name="ps_no_classes">لا توجد أقسام في وضع الإدارة لهذه السنة.</string>
     <string name="ps_share">تجهيز ومشاركة مع الوراقة</string>
@@ -712,4 +712,9 @@
     <string name="record_bad_subject">المادة «%1$s» ليست من مواد القسم %2$s في البرنامج. تأكد أن السجل لهذا القسم ولهذه السنة.</string>
     <string name="record_older">⚠️ هذا السجل أقدم من سجل هذه المادة الذي رفعته من قبل (أُرسل قبله). رفعه يُرجع نقاطًا قديمة؛ ارفعه فقط إن كنت متأكدًا.</string>
     <string name="record_older_skipped">تُجووز %1$d سجلًا أقدم من سجلات رُفعت من قبل لنفس المواد.</string>
+    <string name="reg_absence">دفتر الغياب (سجل النداء)</string>
+    <string name="reg_absence_hint">دفتر الغياب للسحب والملء باليد: صفحة لكل شهر من أكتوبر إلى يونيو بأيام الدراسة. اختر دفترًا بأسماء طلاب القسم وأرقام ندائهم، أو دفترًا فارغًا.</string>
+    <string name="reg_with_names">بأسماء الطلاب</string>
+    <string name="reg_blank">فارغ</string>
+    <string name="reg_no_students">لا يوجد طلاب في هذا القسم بعد: سجّلهم في «الطلاب» لسحب الدفتر بأسمائهم.</string>
 </resources>

@@ -37,7 +37,7 @@ import com.elyedali.daftarustadh.R
 
 /** ما تختاره الإدارة لإرساله إلى الوراقة. */
 data class PrintChoice(val records: Boolean, val timetables: Boolean, val absence: Boolean, val textbook: Boolean, val textbookPages: Int,
-                       val cards: Boolean = false)
+                       val cards: Boolean = false, val absenceBlank: Boolean = false)
 
 /** وثيقة في صفحة الوراقة: هل هي جاهزة، وما الذي ينقصها. */
 data class PrintItem(val ready: Boolean, val note: String)
@@ -65,6 +65,7 @@ fun PrintShopScreen(
     var abs by rememberSaveable { mutableStateOf(absence?.ready == true) }
     var tb by rememberSaveable { mutableStateOf(textbook?.ready == true) }
     var pages by rememberSaveable { mutableIntStateOf(20) }
+    var absBlank by rememberSaveable { mutableStateOf(false) }   // دفتر الغياب: فارغ أو بأسماء الطلاب
     val recOn = rec && records?.ready == true
     val ttOn = tt && timetables?.ready == true
     val absOn = abs && absence?.ready == true
@@ -85,6 +86,12 @@ fun PrintShopScreen(
                     Text("📅 " + stringResource(R.string.sr_open_timetable))
                 }
                 absence?.let { Option("🗓️", stringResource(R.string.ps_absence), it, abs) { v -> abs = v } }
+                if (absence != null && absOn) Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(horizontal = 8.dp)) {
+                    androidx.compose.material3.FilterChip(selected = !absBlank, onClick = { absBlank = false },
+                        label = { Text(stringResource(R.string.reg_with_names)) })
+                    androidx.compose.material3.FilterChip(selected = absBlank, onClick = { absBlank = true },
+                        label = { Text(stringResource(R.string.reg_blank)) })
+                }
                 textbook?.let { Option("📖", stringResource(R.string.ps_textbook), it, tb) { v -> tb = v } }
                 if (textbook != null && tbOn) Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp),
                     modifier = Modifier.padding(horizontal = 8.dp)) {
@@ -94,7 +101,7 @@ fun PrintShopScreen(
                     OutlinedButton(onClick = { if (pages < 200) pages += 5 }, enabled = pages < 200) { Text("+") }
                 }
                 Button(
-                    onClick = { onShare(PrintChoice(recOn, ttOn, absOn, tbOn, pages)) },
+                    onClick = { onShare(PrintChoice(recOn, ttOn, absOn, tbOn, pages, absenceBlank = absBlank)) },
                     enabled = any && !working,
                     modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)
                 ) {

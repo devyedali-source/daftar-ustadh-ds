@@ -1033,6 +1033,38 @@ class MainActivity : AppCompatActivity() {
                  * الوراقة: يجهّز ملفات PDF للطباعة (ملف لكل وثيقة يجمع كل الأقسام أو كل الأساتذة)
                  * ثم يشاركها دفعة واحدة (واتساب أو غيره).
                  */
+                /** دفتر الغياب (سجل النداء) للسحب والملء باليد: بأسماء الطلاب، أو فارغًا. */
+                fun absenceRegisterInfo(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity,
+                                        list: List<com.elyedali.daftarustadh.data.StudentEntity>, blank: Boolean): com.elyedali.daftarustadh.pdf.AbsencePdf.Info {
+                    val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
+                    return com.elyedali.daftarustadh.pdf.AbsencePdf.Info(
+                        title = "دفتر الغياب — Registre d'appel",
+                        lineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — القسم: \u2066${c.name}\u2069 — السنة الدراسية: \u2066${c.schoolYear}\u2069",
+                        lineFr = "Établissement : ${owner.schoolName} — Wilaya : $wilayaFr — Classe : ${c.name} — Année scolaire : ${c.schoolYear}",
+                        shortLine = "دفتر الغياب — Registre d'appel — \u2066${c.name}\u2069 — \u2066${c.schoolYear}\u2069",
+                        months = schoolMonths(c.schoolYear),
+                        // فارغ: أسطر بلا أسماء تُملأ باليد
+                        students = if (blank) emptyList() else list.map { s -> com.elyedali.daftarustadh.pdf.AbsencePdf.Student(s.rollNumber, s.nameAr, s.nameFr) },
+                        rollHeader = "ر.ن\nN°",
+                        nameHeader = "الاسم الكامل — Nom et Prénom",
+                        totalHeader = "المجموع\nTotal",
+                        page = { p, n -> "\u2066${c.name}\u2069 — صفحة $p من $n — Page $p / $n" },
+                        seal = sealBitmap
+                    )
+                }
+
+                fun printAbsenceRegister(c: ClassEntity, blank: Boolean) {
+                    scope.launch {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val list = studentDao.listByClass(c.id)
+                        val info = absenceRegisterInfo(c, owner, list, blank)
+                        val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.AbsencePdf.build(info) }
+                        val name = "دفتر الغياب - Registre d'appel - ${c.name} - ${owner.schoolName} - ${c.schoolYear}.pdf"
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.reg_absence), "application/pdf")
+                    }
+                }
+
                 fun shareWithPrintShop(choice: com.elyedali.daftarustadh.ui.PrintChoice) {
                     val owner = inst ?: return
                     val classes = managedClasses.sortedWith(compareBy({ it.levelCode }, { it.number }))
@@ -1078,25 +1110,12 @@ class MainActivity : AppCompatActivity() {
                                     files += f
                                 }
                                 if (choice.absence) {
-                                    val months = schoolMonths(adminYear ?: owner.schoolYear)
-                                    val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
                                     val f = java.io.File(dir, "دفتر الغياب - Registre d'appel - $tag.pdf")
                                     com.elyedali.daftarustadh.pdf.PdfCommon.renderToFile(f) { doc ->
                                         var no = 1
                                         classes.forEach { c ->
-                                            no = com.elyedali.daftarustadh.pdf.AbsencePdf.drawInto(doc, no, com.elyedali.daftarustadh.pdf.AbsencePdf.Info(
-                                                title = "دفتر الغياب — Registre d'appel",
-                                                lineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — القسم: ⁦${c.name}⁩ — السنة الدراسية: ⁦${c.schoolYear}⁩",
-                                                lineFr = "Établissement : ${owner.schoolName} — Wilaya : $wilayaFr — Classe : ${c.name} — Année scolaire : ${c.schoolYear}",
-                                                shortLine = "دفتر الغياب — Registre d'appel — ⁦${c.name}⁩ — ⁦${c.schoolYear}⁩",
-                                                months = months,
-                                                students = students[c.id].orEmpty().map { s -> com.elyedali.daftarustadh.pdf.AbsencePdf.Student(s.rollNumber, s.nameAr, s.nameFr) },
-                                                rollHeader = "ر.ن\nN°",
-                                                nameHeader = "الاسم الكامل — Nom et Prénom",
-                                                totalHeader = "المجموع\nTotal",
-                                                page = { p, n -> "⁦${c.name}⁩ — صفحة $p من $n — Page $p / $n" },
-                                                seal = seal
-                                            ))
+                                            no = com.elyedali.daftarustadh.pdf.AbsencePdf.drawInto(doc, no,
+                                                absenceRegisterInfo(c, owner, students[c.id].orEmpty(), choice.absenceBlank).copy(seal = seal))
                                         }
                                     }
                                     files += f
@@ -1275,13 +1294,10 @@ class MainActivity : AppCompatActivity() {
                                 ready = n > 0 && ttApproved,
                                 note = if (ttApproved) getString(R.string.ps_timetables_note, ttManagedSlots.map { it.teacherName }.filter { it.isNotBlank() }.distinct().size)
                                     else getString(R.string.sr_block_timetable)),
+                            // دفتر الغياب يُسحب فارغًا أو بأسماء الطلاب (القسم بلا طلاب يخرج بأسطر فارغة)
                             absence = if (printKind != "BOOKS") null else com.elyedali.daftarustadh.ui.PrintItem(
-                                ready = n > 0 && classesWithoutStudents.isEmpty(),
-                                note = when {
-                                    n == 0 -> getString(R.string.ps_no_classes)
-                                    classesWithoutStudents.isNotEmpty() -> getString(R.string.sr_block_students, noStudents)
-                                    else -> getString(R.string.ps_absence_note, n)
-                                }),
+                                ready = n > 0,
+                                note = if (n == 0) getString(R.string.ps_no_classes) else getString(R.string.ps_absence_note, n)),
                             textbook = if (printKind != "BOOKS") null else com.elyedali.daftarustadh.ui.PrintItem(
                                 ready = n > 0,
                                 note = if (n == 0) getString(R.string.ps_no_classes) else getString(R.string.ps_textbook_note, n)),
@@ -1582,52 +1598,10 @@ class MainActivity : AppCompatActivity() {
                                     showHeader = false,
                                     showGenerate = false
                                 )
-                                // الغياب داخل القسم: تسجيل ورقة الأستاذ بأرقام النداء، الحصص المسجّلة، والأكثر تغيبًا
-                                2 -> com.elyedali.daftarustadh.ui.AbsenceCenterScreen(
-                                    classes = listOf(c),
-                                    students = students,
-                                    sessions = absenceSessions,
-                                    absences = absences,
-                                    settings = ttSettings,
-                                    slots = if (ttApproved) ttManagedSlots.filter { it.classId == c.id } else emptyList(),
-                                    subjectLabel = { subjectName(it) },
-                                    yearStart = c.schoolYear.take(4) + "-10-01",
-                                    onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
-                                    onBack = { screen = hubBack },
-                                    schoolName = schoolNames[c.institutionId].orEmpty(),
-                                    subjectArFr = { subjectArFr(it) },
-                                    onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE },
-                                    showTopBar = false,
-                                    sessionsTab = {
-                                        AbsenceTab(
-                                        classId = c.id,
-                                        students = students,
-                                        subjects = subjects.map { AbsenceSubject(it.code, if (isFrUi) it.nameFr else it.nameAr) },
-                                        sessions = absenceSessions,
-                                        absences = absences,
-                                        isAdmin = true,
-                                        onSave = { old, session, ids -> scope.launch { absenceDao.replaceSession(old, session, ids) } },
-                                        onDelete = { id -> scope.launch { absenceDao.deleteSession(id) } },
-                                        onSend = null,
-                                        onUpload = null,
-                                        onChooseSubjects = null,
-                                        className = c.name,
-                                        schoolName = schoolNames[c.institutionId].orEmpty(),
-                                        subjectArFr = { subjectArFr(it) },
-                                        periodTime = { p -> if (p in 1..ttSettings.periods) ttSettings.label(p - 1) else "" },
-                                        // الغياب مرتبط بجدول القسم
-                                        slotAt = { d, p ->
-                                            val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
-                                            if (!ttApproved) null else ttManagedSlots.firstOrNull { it.classId == c.id && it.day == day && it.period == p - 1 }
-                                        },
-                                        periodsOnDate = { d ->
-                                            val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
-                                            if (day in ttSettings.days) ttSettings.periodsOn(day) else 0
-                                        },
-                                        hasTimetable = ttApproved && ttManagedSlots.any { it.classId == c.id },
-                                        onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE }
-                                    )
-                                    }
+                                // دفتر الغياب: للسحب فقط (فارغًا أو بأسماء الطلاب)، يُملأ باليد
+                                2 -> com.elyedali.daftarustadh.ui.AbsenceRegisterTab(
+                                    hasStudents = students.isNotEmpty(),
+                                    onPrint = { blank -> printAbsenceRegister(c, blank) }
                                 )
                                 3 -> {
                                     // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)
