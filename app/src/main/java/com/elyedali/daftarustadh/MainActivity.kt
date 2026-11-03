@@ -514,7 +514,11 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                fun swapSlots(classId: String, a: Pair<Int, Int>, b: Pair<Int, Int>): String? {
+                /**
+                 * تبديل حصتين في جدول قسم (أو نقل حصة إلى وقت فارغ)، بعد التأكد أن الأستاذين غير مشغولين في قسم آخر.
+                 * @param keepApproval الجدول معتمد: التبديل الصحيح لا يغيّر الساعات ولا يُحدث تضاربًا، فيبقى معتمدًا.
+                 */
+                fun swapSlots(classId: String, a: Pair<Int, Int>, b: Pair<Int, Int>, keepApproval: Boolean = false): String? {
                     val placed = ttSlots.map { com.elyedali.daftarustadh.timetable.TimetableGenerator.Placed(it.classId, it.day, it.period, it.subjectCode, it.teacherName) }
                     com.elyedali.daftarustadh.timetable.TimetableGenerator.canSwap(placed, classId, a, b)?.let { return it }
                     val sa = ttSlots.firstOrNull { it.classId == classId && it.day == a.first && it.period == a.second }
@@ -522,10 +526,19 @@ class MainActivity : AppCompatActivity() {
                     scope.launch {
                         timetableDao.deleteSlot(classId, a.first, a.second)
                         timetableDao.deleteSlot(classId, b.first, b.second)
-                        timetableDao.saveSlots(listOfNotNull(
+                        val moved = listOfNotNull(
                             sa?.copy(day = b.first, period = b.second),
                             sb?.copy(day = a.first, period = a.second)
-                        ))
+                        )
+                        timetableDao.saveSlots(moved)
+                        if (keepApproval) {
+                            // البصمة الجديدة بنفس طريقة ttSignature
+                            val managed = (ttSlots.filter { it !== sa && it !== sb } + moved)
+                                .filter { sl -> managedClasses.any { it.id == sl.classId } }
+                            val sig = managed.map { "${it.classId}|${it.day}|${it.period}|${it.subjectCode}|${it.teacherName}" }
+                                .sorted().joinToString(";").hashCode().toString() + ":" + managed.size
+                            metaDao.put(AppMetaEntity(TT_APPROVED_KEY, sig))
+                        }
                     }
                     return null
                 }
@@ -1348,7 +1361,7 @@ class MainActivity : AppCompatActivity() {
                         onSaveTeachers = { saveTeachers(it) },
                         onDistribute = { scope.launch { distributeTeachers() } },
                         onGenerate = { generateTimetable() },
-                        onSwap = { cid, a, b -> swapSlots(cid, a, b) },
+                        onSwap = { cid, a, b -> swapSlots(cid, a, b, keepApproval = ttApproved) },
                         onEditCell = { cid, d, p, code ->
                             scope.launch {
                                 if (code == null) timetableDao.deleteSlot(cid, d, p)

@@ -128,7 +128,7 @@ fun TimetableScreen(
                         problems, approved, onApprove)
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
                     2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass)
-                    else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile)
+                    else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile, onSwap)
                 }
             }
         }
@@ -686,8 +686,16 @@ private fun ByTeacherTab(
     settings: TimetableSettings,
     slots: List<TimetableSlotEntity>,
     onSharePdf: (String) -> Unit,
-    onSendFile: (String) -> Unit
+    onSendFile: (String) -> Unit,
+    onSwap: (String, Pair<Int, Int>, Pair<Int, Int>) -> String?
 ) {
+    val context = LocalContext.current
+    val busyMsg = stringResource(R.string.tt_swap_busy)
+    val doneMsg = stringResource(R.string.tt_swap_done)
+    val days = dayLabels()
+    // تبديل ساعة في جدول الأستاذ: حصته المختارة ← الوقت المطلوب
+    var selected by remember { mutableStateOf<Pair<Int, Int>?>(null) }
+    var pending by remember { mutableStateOf<Pair<Pair<Int, Int>, Pair<Int, Int>>?>(null) }
     val teachers = remember(slots) { slots.map { it.teacherName }.filter { it.isNotBlank() }.distinct().sorted() }
     var teacher by rememberSaveable { mutableStateOf<String?>(null) }
     val t = teacher?.takeIf { it in teachers } ?: teachers.firstOrNull()
@@ -699,21 +707,61 @@ private fun ByTeacherTab(
             return@Column
         }
         LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-            items(teachers) { n -> FilterChip(selected = n == t, onClick = { teacher = n }, label = { Text(n) }) }
+            items(teachers) { n -> FilterChip(selected = n == t, onClick = { teacher = n; selected = null }, label = { Text(n) }) }
         }
         val mine = slots.filter { it.teacherName == t }
         val at = mine.groupBy { it.day to it.period }
         Text(stringResource(R.string.tt_teacher_hours, t, mine.size), fontWeight = FontWeight.Bold)
+        Text(stringResource(R.string.tt_teacher_swap_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
         TimetableGrid(
             settings = settings,
             cell = { d, p -> at[d to p]?.let { l -> l.joinToString(" / ") { names[it.classId].orEmpty() } to subjectLabel(l.first().subjectCode) } },
-            colorKey = { d, p -> at[d to p]?.first()?.classId }
+            colorKey = { d, p -> at[d to p]?.first()?.classId },
+            selected = selected,
+            onClick = { d, p ->
+                val sel = selected
+                when {
+                    sel == null -> if (at[d to p] != null) selected = d to p      // أولًا: حصة من حصص الأستاذ
+                    sel == (d to p) -> selected = null
+                    else -> { pending = sel to (d to p); selected = null }
+                }
+            }
         )
+        if (selected != null) Text(stringResource(R.string.tt_teacher_swap_pick), fontSize = 12.sp, fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary)
         Button(onClick = { onSendFile(t) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
             Text("📤 " + stringResource(R.string.tt_send_teacher))
         }
         OutlinedButton(onClick = { onSharePdf(t) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
             Text("🖨️ " + stringResource(R.string.tt_teacher_pdf))
         }
+    }
+    pending?.let { (from, to) ->
+        val lesson = slots.firstOrNull { it.teacherName == t && it.day == from.first && it.period == from.second }
+        if (lesson == null) { pending = null; return@let }
+        val cls = names[lesson.classId].orEmpty()
+        // ما في قسمه في الوقت المطلوب: حصة أستاذ آخر (تبادل) أو وقت فارغ (نقل)
+        val other = slots.firstOrNull { it.classId == lesson.classId && it.day == to.first && it.period == to.second }
+        val fromText = "${days[from.first]} — ${from.second + 1}"
+        val toText = "${days[to.first]} — ${to.second + 1}"
+        AlertDialog(
+            onDismissRequest = { pending = null },
+            title = { Text(stringResource(R.string.tt_teacher_swap_title)) },
+            text = {
+                Text(
+                    if (other == null) stringResource(R.string.tt_teacher_swap_move, subjectLabel(lesson.subjectCode), cls, fromText, toText)
+                    else stringResource(R.string.tt_teacher_swap_with, subjectLabel(lesson.subjectCode), cls, fromText, toText,
+                        subjectLabel(other.subjectCode), other.teacherName.ifBlank { "—" })
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    val busy = onSwap(lesson.classId, from, to)
+                    Toast.makeText(context, if (busy != null) busyMsg.format(busy) else doneMsg, Toast.LENGTH_LONG).show()
+                    pending = null
+                }) { Text(stringResource(R.string.tt_teacher_swap_ok)) }
+            },
+            dismissButton = { TextButton(onClick = { pending = null }) { Text(stringResource(R.string.cancel)) } }
+        )
     }
 }

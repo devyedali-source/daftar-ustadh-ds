@@ -684,4 +684,11 @@
     <string name="qg_table_hint">La touche « Suivant » du clavier passe au numéro suivant. Le chiffre pâle est la note déjà enregistrée ; tapez par-dessus pour la changer. Une case vide reste inchangée.</string>
     <string name="qg_invalid">Note invalide (de 0 à 20) pour les numéros d\'appel : %1$s</string>
     <string name="tt_class_not_approved">L\'emploi du temps n\'est pas encore validé. Il se prépare pour toutes les classes ensemble depuis « Emploi du temps » dans les outils de l\'administration : enregistrez les professeurs et leurs matières, générez puis validez ; l\'emploi du temps validé de la classe s\'affichera ici.</string>
+    <string name="tt_swap_done">Échange effectué. L\'emploi du temps reste validé ; envoyez aux deux professeurs leur nouvel emploi du temps.</string>
+    <string name="tt_teacher_swap_hint">Échanger une heure demandée par le professeur : touchez une de ses séances, puis l\'horaire voulu. Si sa classe a une séance d\'un autre professeur à cet horaire, les deux séances sont échangées ; si l\'horaire est libre, la séance y est déplacée. Refusé si l\'un d\'eux est occupé dans une autre classe.</string>
+    <string name="tt_teacher_swap_pick">Touchez maintenant l\'horaire où le professeur veut déplacer cette séance.</string>
+    <string name="tt_teacher_swap_title">Échanger une heure</string>
+    <string name="tt_teacher_swap_move">Déplacer la séance de %1$s en %2$s de (%3$s) à (%4$s) ?</string>
+    <string name="tt_teacher_swap_with">Échanger la séance de %1$s en %2$s (%3$s) avec celle de %6$s (%5$s) à (%4$s) ?</string>
+    <string name="tt_teacher_swap_ok">Échanger</string>
 </resources>
