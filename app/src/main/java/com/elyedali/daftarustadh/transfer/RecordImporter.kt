@@ -25,7 +25,11 @@ sealed class RecordCheck {
         /** عدد الطلاب الذين طوبقوا برقم النداء لأن رقمهم الخفي تغيّر (طالب أُعيد تسجيله). */
         val byRoll: Int = 0,
         /** القسم نفسه عرفناه باسمه (المؤسسة والسنة والقسم) لأن رمزه تغيّر (أُعيد إنشاؤه أو أُعيد تثبيت التطبيق). */
-        val classByName: Boolean = false
+        val classByName: Boolean = false,
+        /** السجل أقدم من سجل هذه المادة الذي رُفع من قبل (أُرسل قبله): رفعه يُرجع نقاطًا قديمة. */
+        val older: Boolean = false,
+        /** آخر فصل في السجل (الفصل الذي يخصه). */
+        val term: Int = 1
     ) : RecordCheck()
 }
 
@@ -69,7 +73,10 @@ class RecordImporter(private val db: DaftarDatabase) {
             val target = byRollNumber[fs.roll]
             if (target != null && target.id !in usedTargets) { mapping[fs.id] = target.id; usedTargets += target.id; byRoll++ }
         }
+        val lastSent = db.appMetaDao().get(exportedKey(c.id, file.subjectCode))?.toLongOrNull() ?: 0L
         return RecordCheck.Ready(
+            older = file.exportedAt > 0 && file.exportedAt < lastSent,
+            term = termOf(file),
             file = file,
             schoolClass = c,
             matched = mapping.size,
@@ -84,7 +91,20 @@ class RecordImporter(private val db: DaftarDatabase) {
         )
     }
 
-    /** يرفع نتائج المادة: نتائج كل طالب في السجل تحلّ محلّ نتائجه السابقة في هذه المادة. */
+    private fun exportedKey(classId: String, subject: String) = "record_exported|$classId|$subject"
+
+    /** آخر فصل وصلت امتحاناته في السجل. */
+    fun termOf(file: RecordFile): Int =
+        (3 downTo 1).firstOrNull { t -> file.students.any { it.grades.containsKey(com.elyedali.daftarustadh.data.GradeSlot.exam(t)) } } ?: 1
+
+    /**
+     * يرفع نتائج المادة. السجل يخص فصله فقط:
+     * - سجل الفصل الأول: امتحان الفصل الأول.
+     * - سجل الفصل الثاني: امتحان الفصل الثاني.
+     * - السجل الأخير: امتحان الفصل الثالث والاختبارات.
+     * خانات الفصول السابقة في السجل لا تُكتب إلا إذا كانت فارغة عند الإدارة، فلا يُمسّ ما صحّحته الإدارة
+     * (مثل الغائب بتبرير من 0 إلى 10) حين يصل سجل الفصل الموالي.
+     */
     suspend fun apply(ready: RecordCheck.Ready) {
         val gradeDao = db.gradeDao()
         val c = ready.schoolClass
@@ -93,15 +113,25 @@ class RecordImporter(private val db: DaftarDatabase) {
         val now = System.currentTimeMillis()
         // طالب السجل ← طالب القسم (المطابقة التي عُرضت قبل الرفع)
         val target: (String) -> String? = { fid -> (ready.mapping[fid] ?: fid).takeIf { it in ids } }
-        // سجل الفصل الأول أو الثاني لا يحمل الاختبارات: تُستبدل الامتحانات فقط ولا تُمسّ بقية الخانات.
-        // السجل الأخير (فيه اختبارات) يحلّ محلّ كل نتائج المادة.
-        val hasTests = file.students.any { s -> s.grades.keys.any { !it.startsWith("E") } }
+        val term = termOf(file)
+        val S = com.elyedali.daftarustadh.data.GradeSlot
+        val owned = if (term >= 3) setOf(S.E3, S.T1, S.T2, S.T3) else setOf(S.exam(term))
+        val existing = gradeDao.listSubject(c.id, file.subjectCode).groupBy { it.studentId }
+            .mapValues { e -> e.value.associateBy { it.slot } }
         file.students.forEach { s ->
             val sid = target(s.id) ?: return@forEach
-            if (hasTests) gradeDao.clearStudentSubject(c.id, file.subjectCode, sid)
-            else com.elyedali.daftarustadh.data.GradeSlot.ALL.filter { it.startsWith("E") }
-                .forEach { slot -> gradeDao.clear(sid, file.subjectCode, slot) }
-            s.grades.forEach { (slot, v) -> gradeDao.save(GradeEntity(sid, c.id, file.subjectCode, slot, v, now, s.marks[slot])) }
+            val mine = existing[sid].orEmpty()
+            // خانات هذا الفصل: تحلّ محلّ السابق (وتُفرَّغ إن لم تكن في السجل)
+            owned.forEach { slot -> if (slot !in s.grades) gradeDao.clear(sid, file.subjectCode, slot) }
+            s.grades.forEach { (slot, v) ->
+                if (slot in owned || mine[slot] == null)
+                    gradeDao.save(GradeEntity(sid, c.id, file.subjectCode, slot, v, now, s.marks[slot]))
+            }
+        }
+        if (file.exportedAt > 0) {
+            val key = exportedKey(c.id, file.subjectCode)
+            val prev = db.appMetaDao().get(key)?.toLongOrNull() ?: 0L
+            if (file.exportedAt > prev) db.appMetaDao().put(com.elyedali.daftarustadh.data.AppMetaEntity(key, file.exportedAt.toString()))
         }
         gradeDao.saveRecord(
             SubjectRecordEntity(

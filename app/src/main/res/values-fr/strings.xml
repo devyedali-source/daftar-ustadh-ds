@@ -165,7 +165,7 @@
     <string name="record_matched">Élèves correspondants : %1$d</string>
     <string name="record_unknown">Dans le relevé mais pas dans votre classe (non chargés) : %1$s</string>
     <string name="record_missing">Dans votre classe mais pas dans le relevé : %1$s</string>
-    <string name="record_replace">Cette matière a déjà des notes ; celles de ce relevé les remplaceront.</string>
+    <string name="record_replace">Des notes existent déjà : celles du trimestre de ce registre les remplacent ; les notes des trimestres précédents (et vos corrections) ne sont pas touchées.</string>
     <string name="record_upload">Charger les notes</string>
     <string name="record_wrong_class">Ce relevé ne correspond à aucune de vos classes : %1$s, classe %2$s, wilaya %3$s, année %4$s. Vérifiez qu\'il vient du même établissement, de la même classe et de la même année.</string>
     <string name="record_not_managed">La classe %1$s n\'est chez vous que dans « Mes classes ». Pour charger les relevés de vos collègues, la classe doit être en mode administration.</string>
@@ -709,4 +709,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="ts_hint">Si vous enseignez dans plusieurs établissements, ouvrez le fichier de chacun : ils apparaissent ici, votre emploi du temps regroupe toutes vos séances et signale les chevauchements.</string>
     <string name="record_by_name">⚠️ Le code de cette classe a changé chez vous après l\'envoi du fichier au professeur (classe recréée ou application réinstallée) : la classe a été reconnue par établissement, année et nom.</string>
     <string name="record_by_roll">⚠️ %1$d élèves ont été reconnus par leur numéro d\'appel car leur code interne a changé. Vérifiez avant d\'enregistrer, et renvoyez au professeur son nouveau fichier.</string>
+    <string name="record_bad_subject">La matière « %1$s » ne fait pas partie du programme de la classe %2$s. Vérifiez que le registre correspond à cette classe et à cette année.</string>
+    <string name="record_older">⚠️ Ce registre est plus ancien que celui déjà enregistré pour cette matière. L\'enregistrer ramène d\'anciennes notes ; ne le faites que si vous en êtes sûr.</string>
+    <string name="record_older_skipped">%1$d registre(s) plus ancien(s) que ceux déjà enregistrés ont été ignorés.</string>
 </resources>

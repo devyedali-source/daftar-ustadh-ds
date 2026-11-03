@@ -740,6 +740,10 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                /** مادة السجل من مواد مستوى القسم؟ (سجل من برنامج سنة أخرى أو مادة لا يدرسها القسم يُرفض) */
+                fun subjectOfLevel(c: ClassEntity, code: String): Boolean =
+                    CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty().any { it.code == code }
+
                 // فتح ملف قسم: من الواتساب أو من زر «فتح ملف قسم»
                 fun processFile(uri: Uri) {
                     scope.launch {
@@ -763,7 +767,9 @@ class MainActivity : AppCompatActivity() {
                             if (!com.elyedali.daftarustadh.AppRole.isAdmin && forAdmin) throw WrongAppException(com.elyedali.daftarustadh.AppRole.ADMIN_APP_NAME)
                             when (any) {
                                 is RecordFile -> when (val chk = recordImporter.check(any)) {
-                                    is RecordCheck.Ready -> { recordCheck = chk; null }
+                                    is RecordCheck.Ready -> if (!subjectOfLevel(chk.schoolClass, any.subjectCode))
+                                        FileResult.Message(getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name))
+                                        else { recordCheck = chk; null }
                                     is RecordCheck.WrongClass -> FileResult.Message(
                                         getString(R.string.record_wrong_class, chk.file.schoolName, chk.file.className, chk.file.wilaya, chk.file.schoolYear)
                                     )
@@ -840,6 +846,7 @@ class MainActivity : AppCompatActivity() {
                         val ready = ArrayList<RecordCheck.Ready>()
                         val seenBytes = HashSet<Int>()
                         var duplicates = 0
+                        var older = 0
                         for (uri in uris) {
                             val name = runCatching {
                                 contentResolver.query(uri, arrayOf(android.provider.OpenableColumns.DISPLAY_NAME), null, null, null)?.use { c ->
@@ -854,7 +861,13 @@ class MainActivity : AppCompatActivity() {
                                     com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException() else bytes
                                 when (val any = TransferCodec.decodeAny(data)) {
                                     is RecordFile -> when (val chk = recordImporter.check(any)) {
-                                        is RecordCheck.Ready -> ready += chk
+                                        is RecordCheck.Ready -> when {
+                                            !subjectOfLevel(chk.schoolClass, any.subjectCode) ->
+                                                rejected += "$name — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
+                                            // سجل أقدم من الذي رُفع لهذه المادة: يُتجاوز حتى لا تعود نقاط قديمة
+                                            chk.older -> { older++; }
+                                            else -> ready += chk
+                                        }
                                         is RecordCheck.WrongClass -> rejected += "$name — " + getString(R.string.bu_wrong_class, any.className)
                                         is RecordCheck.NotManaged -> rejected += "$name — " + getString(R.string.record_not_managed, any.className)
                                     }
@@ -900,6 +913,7 @@ class MainActivity : AppCompatActivity() {
                             if (parts.isNotEmpty() && sts.isNotEmpty()) missing += "${c.name}: " + parts.joinToString("، ")
                         }
                         batchWorking = false
+                        if (older > 0) warnings += getString(R.string.record_older_skipped, older)
                         batchResult = BatchResult(imported, duplicates, rejected, warnings, term, missing)
                     }
                 }
@@ -2127,6 +2141,7 @@ class MainActivity : AppCompatActivity() {
                                     Text(stringResource(R.string.record_other_teacher, assigned), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 Text(stringResource(R.string.record_matched, chk.matched))
                                 // القسم أُعيد إنشاؤه أو أُعيد تثبيت التطبيق بعد إرسال الملف للأستاذ: المطابقة بأرقام النداء
+                                if (chk.older) Text(stringResource(R.string.record_older), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 if (chk.classByName) Text(stringResource(R.string.record_by_name), color = androidx.compose.ui.graphics.Color(0xFFE65100))
                                 if (chk.byRoll > 0) Text(stringResource(R.string.record_by_roll, chk.byRoll), color = androidx.compose.ui.graphics.Color(0xFFE65100))
                                 if (chk.unknownStudents.isNotEmpty())
