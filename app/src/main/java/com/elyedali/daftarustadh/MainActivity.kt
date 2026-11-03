@@ -437,13 +437,13 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 /** توزيع أقسام كل مادة على أساتذتها بالعدل (حسب قائمة الأساتذة ومواد كل واحد). */
-                suspend fun distributeTeachers() {
+                suspend fun distributeTeachers(teachers: List<com.elyedali.daftarustadh.data.TimetableTeacher> = ttTeachers) {
                     val classSubjects = managedClasses.map { c ->
                         Triple(c.id, c.levelCode, CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
                             ?.subjects.orEmpty().map { it.code to it.weeklyHours })
                     }
-                    val result = com.elyedali.daftarustadh.data.TimetableTeachers.distribute(ttTeachers, classSubjects)
-                    val covered = ttTeachers.flatMap { it.subjects }.toSet()
+                    val result = com.elyedali.daftarustadh.data.TimetableTeachers.distribute(teachers, classSubjects)
+                    val covered = teachers.flatMap { it.subjects }.toSet()
                     classSubjects.forEach { (cid, _, subs) ->
                         subs.filter { it.first in covered }.forEach { (code, _) -> timetableDao.deleteAssignment(cid, code) }
                     }
@@ -469,6 +469,8 @@ class MainActivity : AppCompatActivity() {
                             ttAssignments.filter { it.teacherName in removed }.forEach { timetableDao.deleteAssignment(it.classId, it.subjectCode) }
                             timetableDao.saveSlots(ttSlots.filter { it.teacherName in removed }.map { it.copy(teacherName = "") })
                         }
+                        // توزيع تلقائي: أقسام كل مادة تُوزَّع على أساتذتها حسب الساعات المبرمجة لكل قسم
+                        distributeTeachers(newList)
                     }
                 }
 
@@ -478,8 +480,8 @@ class MainActivity : AppCompatActivity() {
                     if (classesNow.isEmpty()) return
                     ttGenerating = true
                     scope.launch {
-                        // أول توليد: إن لم توزَّع الأقسام بعد على الأساتذة، تُوزَّع تلقائيًا
-                        if (ttAssignments.none { a -> classesNow.any { it.id == a.classId } } && ttTeachers.isNotEmpty()) distributeTeachers()
+                        // قبل كل توليد: توزيع تلقائي للأقسام على أساتذة كل مادة (يشمل الأقسام المضافة حديثًا)
+                        if (ttTeachers.isNotEmpty()) distributeTeachers()
                         val assignmentsNow = timetableDao.listAssignments()
                         val settings = ttSettings
                         val lessons = classesNow.flatMap { c ->
@@ -607,9 +609,12 @@ class MainActivity : AppCompatActivity() {
                             val placed = mine.count { it.subjectCode == sub.code }
                             if (placed < sub.weeklyHours) out += getString(R.string.tt_pb_missing_hours, c.name, subjectName(sub.code), sub.weeklyHours - placed)
                         }
-                        mine.filter { it.teacherName.isBlank() }.map { it.subjectCode }.distinct().forEach { code ->
-                            out += getString(R.string.tt_pb_no_teacher, c.name, subjectName(code))
-                        }
+                    }
+                    // مواد بلا أستاذ: سطر لكل مادة مع أقسامها
+                    ttManagedSlots.filter { it.teacherName.isBlank() }.groupBy { it.subjectCode }.forEach { (code, l) ->
+                        val names = l.map { it.classId }.distinct().mapNotNull { id -> managedClasses.firstOrNull { it.id == id } }
+                            .sortedWith(compareBy({ it.levelCode }, { it.number })).joinToString("، ") { it.name }
+                        out += getString(R.string.tt_pb_no_teacher, subjectName(code), names)
                     }
                     // أستاذ في قسمين في نفس الحصة
                     ttManagedSlots.filter { it.teacherName.isNotBlank() }.groupBy { Triple(it.teacherName, it.day, it.period) }
@@ -1160,14 +1165,15 @@ class MainActivity : AppCompatActivity() {
                         sessions = allAbsSessions,
                         absences = allAbsences,
                         settings = ttSettings,
-                        slots = ttManagedSlots,
+                        // الغياب مرتبط بالجدول الزمني المعتمد
+                        slots = if (ttApproved) ttManagedSlots else emptyList(),
                         subjectLabel = { subjectName(it) },
                         yearStart = ((adminYear ?: inst?.schoolYear)?.take(4) ?: "2026") + "-10-01",
                         onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
                         onBack = { screen = Screen.HOME },
                         schoolName = inst?.schoolName.orEmpty(),
                         subjectArFr = { subjectArFr(it) },
-                        onOpenTimetable = { id -> ttInitialClass = id; ttInitialTab = null; ttBack = Screen.ABSENCE_CENTER; screen = Screen.TIMETABLE }
+                        onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.ABSENCE_CENTER; screen = Screen.TIMETABLE }
                     )
 
                     screen == Screen.PRINT_SHOP -> {
@@ -1519,14 +1525,14 @@ class MainActivity : AppCompatActivity() {
                                     // الغياب مرتبط بجدول القسم
                                     slotAt = { d, p ->
                                         val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
-                                        ttManagedSlots.firstOrNull { it.classId == c.id && it.day == day && it.period == p - 1 }
+                                        if (!ttApproved) null else ttManagedSlots.firstOrNull { it.classId == c.id && it.day == day && it.period == p - 1 }
                                     },
                                     periodsOnDate = { d ->
                                         val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
                                         if (day in ttSettings.days) ttSettings.periodsOn(day) else 0
                                     },
-                                    hasTimetable = ttManagedSlots.any { it.classId == c.id },
-                                    onOpenTimetable = { ttInitialClass = c.id; ttInitialTab = null; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE }
+                                    hasTimetable = ttApproved && ttManagedSlots.any { it.classId == c.id },
+                                    onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE }
                                 )
                                 3 -> {
                                     // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)
@@ -1559,16 +1565,15 @@ class MainActivity : AppCompatActivity() {
                                         Modifier.fillMaxSize().verticalScroll(androidx.compose.foundation.rememberScrollState()).padding(top = 10.dp),
                                         verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(10.dp)
                                     ) {
-                                        if (at.isEmpty()) Text(stringResource(R.string.tt_no_timetable))
+                                        // هذه الصفحة تعرض فقط جدول القسم المعتمد؛ الجدول يُعدّ ويُولَّد لكل الأقسام معًا من «الجدول الزمني»
+                                        if (at.isEmpty() || !ttApproved) Text(stringResource(R.string.tt_class_not_approved),
+                                            color = MaterialTheme.colorScheme.error)
                                         else com.elyedali.daftarustadh.ui.TimetableGrid(
                                             settings = ttSettings,
                                             cell = { d, p -> at[d to p]?.let { subjectName(it.subjectCode) to it.teacherName } },
                                             colorKey = { d, p -> at[d to p]?.subjectCode }
                                         )
-                                        androidx.compose.material3.Button(onClick = {
-                                            ttInitialClass = c.id; ttInitialTab = null; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE
-                                        }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.tt_open_institution)) }
-                                        if (at.isNotEmpty()) androidx.compose.material3.OutlinedButton(onClick = { shareClassTimetable(c) },
+                                        if (at.isNotEmpty() && ttApproved) androidx.compose.material3.OutlinedButton(onClick = { shareClassTimetable(c) },
                                             modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.tt_share_class, c.name)) }
                                     }
                                 }

@@ -454,7 +454,7 @@
     <string name="tt_default_times">Horaires par défaut</string>
     <string name="tt_mode_teachers">Professeurs</string>
     <string name="tt_mode_by_class">Par classe</string>
-    <string name="tt_teachers_list_hint">Écrivez le nom de chaque professeur et cochez les matières qu\'il enseigne. L\'application répartit ensuite équitablement les classes de chaque matière selon les heures.</string>
+    <string name="tt_teachers_list_hint">Enregistrez tous les professeurs : nom et matières enseignées. L\'application répartit automatiquement les classes de chaque matière entre ses professeurs selon les heures de chaque classe, sans affectation manuelle. Après toute modification, régénérez l\'emploi du temps.</string>
     <string name="tt_add_teacher">Ajouter un professeur</string>
     <string name="tt_edit_teacher">Modifier le professeur</string>
     <string name="tt_no_teacher_list">Aucun professeur. Ajoutez les professeurs et leurs matières.</string>
@@ -529,7 +529,7 @@
     <string name="tt_approve_first">Validez d\'abord l\'emploi du temps (Emploi du temps ← Génération).</string>
     <string name="tt_pb_not_generated">L\'emploi du temps n\'est pas encore généré.</string>
     <string name="tt_pb_missing_hours">%1$s : il manque %3$d h de %2$s</string>
-    <string name="tt_pb_no_teacher">%1$s : %2$s sans professeur</string>
+    <string name="tt_pb_no_teacher">%1$s sans professeur dans : %2$s — ajoutez un professeur de cette matière dans « Professeurs »</string>
     <string name="tt_pb_clash">%1$s a deux classes en même temps (%2$s, séance %3$d)</string>
     <string name="tt_approval">Validation de l\'emploi du temps</string>
     <string name="tt_approved">Emploi du temps validé</string>
@@ -567,8 +567,8 @@
     <string name="ac_period">Séance</string>
     <string name="ac_no_school_day">Ce jour n\'est pas un jour de classe dans l\'emploi du temps.</string>
     <string name="ac_no_slot">Aucune séance pour cette classe à cette heure selon l\'emploi du temps : aucune absence ne peut y être saisie. Vérifiez le jour et la séance, ou corrigez l\'emploi du temps de la classe.</string>
-    <string name="ac_no_timetable">L\'emploi du temps de la classe %1$s n\'est pas saisi. Les absences sont liées à l\'emploi du temps : saisissez d\'abord celui de la classe.</string>
-    <string name="ac_open_timetable">Saisir l\'emploi du temps de la classe</string>
+    <string name="ac_no_timetable">Aucun emploi du temps validé pour la classe %1$s. Les absences sont liées à l\'emploi du temps validé : générez et validez d\'abord l\'emploi du temps de l\'établissement.</string>
+    <string name="ac_open_timetable">Ouvrir l\'emploi du temps</string>
     <string name="ac_existing">Séance déjà saisie : les numéros ci-dessous sont ses absents ; enregistrer la remplace.</string>
     <string name="ac_numbers">Numéros d\'appel des absents</string>
     <string name="ac_unknown">Numéros inexistants dans la classe : %1$s</string>
@@ -612,7 +612,7 @@
     <string name="term_progress">Trimestre %1$d : %2$d sur %3$d complets</string>
     <string name="steps_admin_title">Étapes de l\'administration</string>
     <string name="steps_admin_1">Créez les classes et leurs élèves (ou importez-les).</string>
-    <string name="steps_admin_2">Enregistrez les professeurs, leur WhatsApp et la répartition des classes, puis préparez et validez l\'emploi du temps.</string>
+    <string name="steps_admin_2">Dans « Emploi du temps », enregistrez tous les professeurs, leurs matières et leur WhatsApp : les classes leur sont réparties automatiquement selon les heures. Générez ensuite l\'emploi du temps de toutes les classes et validez-le ; celui de chaque classe s\'affiche dans la classe.</string>
     <string name="steps_admin_3">Dans « Partager les registres », envoyez à chaque professeur son fichier : listes de ses classes, matières et emploi du temps.</string>
     <string name="steps_admin_4">Demandez à chaque professeur d\'installer « دفتر الأستاذ DS », d\'y ouvrir le fichier, de saisir les notes de chaque trimestre et de vous les renvoyer.</string>
     <string name="steps_admin_5">Trois façons d\'enregistrer les notes : (a) importer les registres : « Résultats » ← « Importer un registre » pour un fichier, ou « 📥 Importer plusieurs registres » pour sélectionner d\'un coup tous les fichiers reçus sur WhatsApp ; doublons ignorés, puis s\'affiche ce qui manque ou « complets » ; (b) saisie rapide par N° d\'appel, manuelle ou par photo ; (c) saisie manuelle : touchez la matière pour saisir ou corriger (ex. 0 → 10), après le dernier import de cette matière. Aucun calcul : tout est automatique.</string>
@@ -683,4 +683,5 @@
     <string name="qg_no_students">Aucun élève dans cette classe. Ajoutez-les d\'abord dans « Élèves ».</string>
     <string name="qg_table_hint">La touche « Suivant » du clavier passe au numéro suivant. Le chiffre pâle est la note déjà enregistrée ; tapez par-dessus pour la changer. Une case vide reste inchangée.</string>
     <string name="qg_invalid">Note invalide (de 0 à 20) pour les numéros d\'appel : %1$s</string>
+    <string name="tt_class_not_approved">L\'emploi du temps n\'est pas encore validé. Il se prépare pour toutes les classes ensemble depuis « Emploi du temps » dans les outils de l\'administration : enregistrez les professeurs et leurs matières, générez puis validez ; l\'emploi du temps validé de la classe s\'affichera ici.</string>
 </resources>

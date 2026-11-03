@@ -327,27 +327,8 @@ private fun TeachersTab(
     onSaveTeachers: (List<TimetableTeacher>) -> Unit,
     onDistribute: () -> Unit
 ) {
-    var mode by rememberSaveable { mutableIntStateOf(0) }  // 0 الأساتذة، 1 حسب القسم
-    Column(Modifier.fillMaxSize()) {
-        Row(
-            Modifier.fillMaxWidth().padding(top = 10.dp)
-                .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(12.dp)).padding(3.dp)
-        ) {
-            listOf(R.string.tt_mode_teachers, R.string.tt_mode_by_class).forEachIndexed { i, res ->
-                Box(
-                    Modifier.weight(1f)
-                        .background(if (mode == i) MaterialTheme.colorScheme.surface else Color.Transparent, RoundedCornerShape(10.dp))
-                        .clickable { mode = i }.padding(vertical = 8.dp),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text(stringResource(res), fontWeight = if (mode == i) FontWeight.Bold else FontWeight.Normal,
-                        color = if (mode == i) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant)
-                }
-            }
-        }
-        if (mode == 0) TeacherListPane(classes, subjectsByClass, subjectLabel, assignments, teachers, onSaveTeachers, onDistribute)
-        else ByClassAssignPane(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign)
-    }
+    // التوزيع تلقائي: لا تعيين يدوي لكل قسم؛ يكفي تسجيل الأساتذة وموادهم
+    TeacherListPane(classes, subjectsByClass, subjectLabel, assignments, teachers, onSaveTeachers, onDistribute)
 }
 
 /** الأساتذة: يكتب المسؤول الاسم ويضع علامات على المواد التي يدرّسها، ثم توزَّع الأقسام بالعدل. */
@@ -418,11 +399,6 @@ private fun TeacherListPane(
         if (uncovered.isNotEmpty() && teachers.isNotEmpty()) item {
             Text(stringResource(R.string.tt_uncovered, uncovered.joinToString("، ") { subjectLabel(it) }), fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.error)
-        }
-        if (teachers.isNotEmpty()) item {
-            OutlinedButton(onClick = { confirmDistribute = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
-                Text("⚖️ " + stringResource(R.string.tt_distribute))
-            }
         }
     }
 
