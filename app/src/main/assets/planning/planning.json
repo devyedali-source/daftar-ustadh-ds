@@ -6,7 +6,8 @@
   "FR": "Guide d'exploitation du programme pour le premier cycle — septembre 2022",
   "PC": "Programme de sciences physiques : premier cycle — mars 2025",
   "TI": "Guides du professeur : Informatique 1AS, Technologie 1AS et 2AS (sans répartition par semaine), Technologie 3AS (par semaine)",
-  "HG": "منهاج التاريخ والجغرافيا — السلك الأول، أبريل 2025"
+  "HG": "منهاج التاريخ والجغرافيا — السلك الأول، أبريل 2025",
+  "MATS": "Curricula de mathématiques du premier cycle — 2022 (progression annuelle par mois et semaine)"
  },
  "plans": {
   "AR": {
@@ -5333,6 +5334,953 @@
      "k": "final",
      "i": [
       "اختبارات المصادقة على النتائج أو الإشهاد"
+     ]
+    }
+   ]
+  },
+  "MATS": {
+   "1AS": [
+    {
+     "l": "Octobre S1",
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers naturels"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers naturels"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers naturels"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers naturels"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers naturels"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Droites et segments"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Droites et segments"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Droites et segments",
+      "Décimaux positifs"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Décimaux positifs"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Décimaux positifs",
+      "Evaluations"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fractions"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fractions"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fractions"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Triangles et parallélogramme"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Triangles et parallélogramme"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Proportionnalité et pourcentage"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Proportionnalité et pourcentage"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Proportionnalité et pourcentage"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Cercle et disque"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Cercle et disque"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Cercle et disque",
+      "Evaluations"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Cube et pavé droit"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Cube et pavé droit"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision sur les activités numériques"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision sur les activités géométriques"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Juin S2",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Juin S3",
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Evaluations"
+     ]
+    }
+   ],
+   "2AS": [
+    {
+     "l": "Octobre S1",
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers relatifs"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers relatifs"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Entiers relatifs"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Décimaux"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Décimaux"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres rationnels"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres rationnels"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Calcul littéral"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Calcul littéral"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Repérage sur un axe",
+      "Evaluations"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Repérage sur un axe",
+      "Angles"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Angles"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Angles"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Polygones"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Polygones"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Polygones"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Projection orthogonale"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Droites et cercles"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Droites et cercles"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Transformations"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Transformations",
+      "Evaluations"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Proportionnalité"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Proportionnalité"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Cylindre et prisme droit"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Cylindre et prisme droit"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Juin S2",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Juin S3",
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Evaluations"
+     ]
+    }
+   ],
+   "3AS": [
+    {
+     "l": "Octobre S1",
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Arithmétique"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Arithmétique"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres réels"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres réels"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres réels"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Calcul littéral"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Calcul littéral"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Équations et inéquations"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Équations et inéquations",
+      "Angles"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Angles",
+      "Evaluations"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Triangle et cercle"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Triangle et cercle"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Vecteurs et repères"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Vecteurs et repères"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Vecteurs et repères"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Théorème de Pythagore"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Théorème de Pythagore"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Trigonométrie"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Trigonométrie"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Transformations"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Transformations",
+      "Evaluations"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fonction linéaire"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fonction linéaire"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Statistique"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Boule et sphère"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Boule et sphère"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Evaluations"
      ]
     }
    ]
