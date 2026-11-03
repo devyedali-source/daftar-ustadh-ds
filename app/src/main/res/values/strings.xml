@@ -701,4 +701,10 @@
     <string name="ac_tab_sessions">الحصص المسجّلة</string>
     <string name="file_other_app">هذا الملف ليس لهذا التطبيق: افتحه في تطبيق «%1$s».</string>
     <string name="sr_app_link">رابط تحميل تطبيق «دفتر الأستاذ DS»: %1$s</string>
+    <string name="ts_timetable_title">جدولي الزمني الشامل (كل المؤسسات)</string>
+    <string name="ts_pick_school">اختر المؤسسة</string>
+    <string name="ts_no_school">لا توجد أقسام لهذه السنة بعد. افتح الملف الذي أرسلته لك إدارة مؤسستك.</string>
+    <string name="ts_classes">أقسامي: %1$s</string>
+    <string name="ts_open_file">فتح ملف من إدارة مؤسسة</string>
+    <string name="ts_hint">إن كنت تدرّس في أكثر من مؤسسة، افتح ملف كل مؤسسة: تظهر كل مؤسسة هنا، ويجمع جدولك الزمني حصصك فيها كلها، وتُبرز الحصص المتداخلة بين مؤسستين.</string>
 </resources>

@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -47,7 +48,11 @@ fun TeacherTimetableView(
     highlightInstitution: String?,
     onOpenFile: () -> Unit,
     showHeader: Boolean,
-    onBack: () -> Unit
+    onBack: () -> Unit,
+    /** محتوى يُضاف قبل الجدول وبعده (صفحة اختيار المؤسسة في تطبيق الأستاذ). */
+    before: LazyListScope.() -> Unit = {},
+    after: LazyListScope.() -> Unit = {},
+    showOpenFile: Boolean = true
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
     val days = dayLabels()
@@ -63,13 +68,15 @@ fun TeacherTimetableView(
         Column(Modifier.fillMaxSize().padding(horizontal = if (showHeader) 12.dp else 0.dp, vertical = if (showHeader) 10.dp else 0.dp)) {
             if (showHeader) ScreenHeader(stringResource(R.string.tt_my_timetable), onBack)
             LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(10.dp), contentPadding = PaddingValues(vertical = 10.dp)) {
-                item {
+                before()
+                if (showOpenFile) item {
                     OutlinedButton(onClick = onOpenFile, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
                         Text("📥 " + stringResource(R.string.tt_open_file))
                     }
                 }
                 if (entries.isEmpty()) {
                     item { Text(stringResource(R.string.tt_teacher_empty), color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                    after()
                     return@LazyColumn
                 }
                 if (schools.size > 1) item {
@@ -116,6 +123,7 @@ fun TeacherTimetableView(
                         }
                     }
                 }
+                after()
             }
         }
     }

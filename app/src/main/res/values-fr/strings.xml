@@ -701,4 +701,10 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="ac_tab_sessions">Séances saisies</string>
     <string name="file_other_app">Ce fichier n\'est pas pour cette application : ouvrez-le dans « %1$s ».</string>
     <string name="sr_app_link">Lien de téléchargement de « دفتر الأستاذ DS » : %1$s</string>
+    <string name="ts_timetable_title">Mon emploi du temps complet (tous établissements)</string>
+    <string name="ts_pick_school">Choisissez l\'établissement</string>
+    <string name="ts_no_school">Aucune classe pour cette année. Ouvrez le fichier envoyé par l\'administration de votre établissement.</string>
+    <string name="ts_classes">Mes classes : %1$s</string>
+    <string name="ts_open_file">Ouvrir un fichier d\'une administration</string>
+    <string name="ts_hint">Si vous enseignez dans plusieurs établissements, ouvrez le fichier de chacun : ils apparaissent ici, votre emploi du temps regroupe toutes vos séances et signale les chevauchements.</string>
 </resources>

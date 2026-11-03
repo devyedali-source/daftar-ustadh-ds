@@ -186,6 +186,8 @@ class MainActivity : AppCompatActivity() {
                 var selectedYear by rememberSaveable { mutableStateOf<String?>(null) }
                 // وضع التطبيق ثابت: «إدارة DS» = الإدارة، «دفتر الأستاذ DS» = الأستاذ
                 val homeMode: String = com.elyedali.daftarustadh.ui.APP_MODE
+                // تطبيق الأستاذ: المؤسسة المختارة بعد السنة (قد يدرّس في أكثر من مؤسسة)
+                var teacherSchool by rememberSaveable { mutableStateOf<String?>(null) }
                 /** سنة عمل الإدارة: السنة المختارة في وضع الإدارة، وإلا سنة المؤسسة. كل أدوات الإدارة تعمل عليها. */
                 val adminYear: String? = selectedYear?.takeIf { homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN } ?: inst?.schoolYear
                 val managedFlow = remember(inst?.id, adminYear) {
@@ -785,6 +787,7 @@ class MainActivity : AppCompatActivity() {
                                         metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, any.teacherName))
                                     if (out.saved.isNotEmpty()) {
                                         selectedYear = any.classes.first().first.schoolClass.schoolYear
+                                        teacherSchool = null
                                         screen = Screen.HOME
                                     }
                                     FileResult.Message(
@@ -1122,7 +1125,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 when (screen) {
-                    Screen.HOME -> if (selectedYear != null) BackHandler { selectedYear = null }
+                    Screen.HOME -> if (teacherSchool != null) BackHandler { teacherSchool = null } else if (selectedYear != null) BackHandler { selectedYear = null }
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
@@ -1154,7 +1157,7 @@ class MainActivity : AppCompatActivity() {
                             onItem = { key ->
                                 scope.launch { drawerState.close() }
                                 when (key) {
-                                    "HOME" -> { selectedYear = null; screen = Screen.HOME }
+                                    "HOME" -> { selectedYear = null; teacherSchool = null; screen = Screen.HOME }
                                     "SYNC" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_sync_later), android.widget.Toast.LENGTH_LONG).show()
                                     "LOGOUT" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_logout_later), android.widget.Toast.LENGTH_LONG).show()
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
@@ -1870,15 +1873,35 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = Screen.ADMIN_CLASS }
                     )
 
+                    // تطبيق الأستاذ: بعد السنة، جدوله الشامل لكل المؤسسات ثم اختيار المؤسسة
+                    screen == Screen.HOME && homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && selectedYear != null && teacherSchool == null -> {
+                        val year = selectedYear!!
+                        val mine = allClasses.filter { it.schoolYear == year && it.teaching }
+                        com.elyedali.daftarustadh.ui.TeacherSchoolsScreen(
+                            year = year,
+                            schools = mine.groupBy { it.institutionId }.map { (id, l) ->
+                                com.elyedali.daftarustadh.ui.TeacherSchool(id, schoolNames[id].orEmpty(),
+                                    l.sortedWith(compareBy({ it.levelCode }, { it.number })).map { it.name })
+                            }.sortedBy { it.name },
+                            timetable = myTimetable.filter { it.schoolYear == year },
+                            onPick = { teacherSchool = it },
+                            onOpenFile = openFile,
+                            onBack = { selectedYear = null },
+                            onMenu = { scope.launch { drawerState.open() } }
+                        )
+                    }
+
                     else -> HomeYearsScreen(
-                        classes = allClasses,
+                        classes = if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherSchool != null) allClasses.filter { it.institutionId == teacherSchool } else allClasses,
                         currentInstitutionYear = inst?.schoolYear,
                         selectedYear = selectedYear,
                         mode = homeMode,
+                        // الوضع ثابت في كل تطبيق؛ زر الرجوع في الأعلى يرجع خطوة: من الأقسام إلى المؤسسات (الأستاذ) أو إلى السنوات
                         onSelectMode = { m ->
-                            // أول دخول: الإدارة تسجّل معلومات المؤسسة، والأستاذ يسجّل معلوماته (مرة واحدة)
-                            if (m == com.elyedali.daftarustadh.ui.MODE_ADMIN && inst == null) screen = Screen.INSTITUTION
-                            if (m == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherProfile == null) screen = Screen.TEACHER_PROFILE
+                            if (m == null) {
+                                if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherSchool != null) teacherSchool = null
+                                else selectedYear = null
+                            }
                         },
                         institutionName = inst?.schoolName,
                         teacherName = teacherProfile?.name ?: teacherName,
@@ -1905,6 +1928,7 @@ class MainActivity : AppCompatActivity() {
                         genderCounts = homeGenderCounts,
                         onSelectYear = {
                             selectedYear = it
+                            teacherSchool = null
                             // أول دخول: الإدارة تسجّل معلومات المؤسسة، والأستاذ يسجّل معلوماته (مرة واحدة)
                             if (homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN && inst == null) screen = Screen.INSTITUTION
                             if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherProfile == null) screen = Screen.TEACHER_PROFILE
