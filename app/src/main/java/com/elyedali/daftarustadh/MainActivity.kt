@@ -644,6 +644,17 @@ class MainActivity : AppCompatActivity() {
                     )
                 }
 
+                /** صفحة جدول الأستاذ (PDF) من الجدول الزمني للمؤسسة. */
+                fun teacherTimetableInfo(teacher: String, owner: com.elyedali.daftarustadh.data.InstitutionEntity): com.elyedali.daftarustadh.pdf.TimetablePdf.Info {
+                    val names = managedClasses.associate { it.id to it.name }
+                    val slotsMine = ttManagedSlots.filter { it.teacherName == teacher }.groupBy { it.day to it.period }
+                    return timetableInfo(
+                        "جدول الأستاذ: $teacher — Emploi du temps du professeur",
+                        "المؤسسة: ${owner.schoolName} — السنة الدراسية: \u2066${adminYear ?: owner.schoolYear}\u2069",
+                        "Établissement : ${owner.schoolName} — Année scolaire : ${adminYear ?: owner.schoolYear}"
+                    ) { d, p -> slotsMine[d to p]?.let { l -> val (ar, fr) = subjectArFr(l.first().subjectCode); l.joinToString(" / ") { names[it.classId].orEmpty() } + "\n$ar\n$fr" }.orEmpty() }
+                }
+
                 fun sendTeacherTimetable(teacher: String) {
                     if (!ttApproved) {
                         android.widget.Toast.makeText(this@MainActivity, getString(R.string.tt_approve_first), android.widget.Toast.LENGTH_LONG).show()
@@ -652,7 +663,10 @@ class MainActivity : AppCompatActivity() {
                     val file = buildTeacherTimetable(teacher) ?: return
                     scope.launch {
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeTimetable(file) }
-                        ShareHelper.share(this@MainActivity, bytes, file.fileName(), getString(R.string.tt_send_teacher))
+                        // الجدول ظاهر في الصفحة الثانية من الملف نفسه
+                        val ttInfo = inst?.let { teacherTimetableInfo(teacher, it) }
+                        ShareHelper.share(this@MainActivity, bytes, file.fileName(), getString(R.string.tt_send_teacher),
+                            extraPages = ttInfo?.let { info -> { doc: android.graphics.pdf.PdfDocument, no: Int -> com.elyedali.daftarustadh.pdf.TimetablePdf.drawInto(doc, no, info) } })
                     }
                 }
 
@@ -874,13 +888,23 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 val chooserTitle = stringResource(R.string.share_chooser)
+                /** عنوان لائحة طلاب القسم في ملفات القسم وحزمة الأستاذ. */
+                fun studentListInfo(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity, full: Boolean) =
+                    com.elyedali.daftarustadh.pdf.StudentListPdf.Info(
+                        title = "لائحة طلاب القسم \u2066${c.name}\u2069 — Liste des élèves de la classe ${c.name}",
+                        subtitle = "${owner.schoolName} — \u2066${c.schoolYear}\u2069",
+                        full = full
+                    )
                 fun share(c: ClassEntity, type: ClassFileType) {
                     scope.launch {
                         val owner = institutionDao.getById(c.institutionId) ?: return@launch
                         val list = studentDao.listByClass(c.id)
                         val file = ClassFile(type, owner, c, list)
                         val bytes = withContext(Dispatchers.Default) { ClassFileCodec.encode(file) }
-                        ShareHelper.share(this@MainActivity, bytes, ClassFileCodec.fileName(file), chooserTitle)
+                        // لائحة الطلاب ظاهرة في صفحات الملف نفسه: تُقرأ في واتساب وتُطبع
+                        val listInfo = studentListInfo(c, owner, type == ClassFileType.FULL)
+                        ShareHelper.share(this@MainActivity, bytes, ClassFileCodec.fileName(file), chooserTitle,
+                            extraPages = { doc, no -> com.elyedali.daftarustadh.pdf.StudentListPdf.drawInto(doc, no, list, listInfo) })
                     }
                 }
 
@@ -906,15 +930,13 @@ class MainActivity : AppCompatActivity() {
                         val caption = getString(R.string.sr_caption, t.name, owner.schoolName,
                             classes.joinToString("، ") { c -> c.name + " (" + mine.filter { it.classId == c.id }.joinToString("، ") { subjectName(it.subjectCode) } + ")" })
                         // صفحة جدول الأستاذ داخل الملف نفسه: يراه في واتساب كوثيقة PDF
-                        val names = classes.associate { it.id to it.name }
-                        val slotsMine = ttManagedSlots.filter { it.teacherName == t.name }.groupBy { it.day to it.period }
-                        val ttInfo = timetableInfo(
-                            "جدول الأستاذ: ${t.name} — Emploi du temps du professeur",
-                            "المؤسسة: ${owner.schoolName} — السنة الدراسية: \u2066${adminYear ?: owner.schoolYear}\u2069",
-                            "Établissement : ${owner.schoolName} — Année scolaire : ${adminYear ?: owner.schoolYear}"
-                        ) { d, p -> slotsMine[d to p]?.let { l -> val (ar, fr) = subjectArFr(l.first().subjectCode); l.joinToString(" / ") { names[it.classId].orEmpty() } + "\n$ar\n$fr" }.orEmpty() }
+                        val ttInfo = teacherTimetableInfo(t.name, owner)
+                        // بعد الجدول: لائحة طلاب كل قسم من أقسامه (رقم النداء والاسم)
+                        val lists = bundle.classes.map { (f, _) -> f.students to studentListInfo(f.schoolClass, owner, false) }
                         ShareHelper.shareToWhatsApp(this@MainActivity, bytes, bundle.fileName(), t.phone, caption, chooserTitle) { doc, no ->
-                            com.elyedali.daftarustadh.pdf.TimetablePdf.drawInto(doc, no, ttInfo)
+                            var next = com.elyedali.daftarustadh.pdf.TimetablePdf.drawInto(doc, no, ttInfo)
+                            lists.forEach { (st, info) -> next = com.elyedali.daftarustadh.pdf.StudentListPdf.drawInto(doc, next, st, info) }
+                            next
                         }
                         recordsSent = recordsSent + t.name
                     }
