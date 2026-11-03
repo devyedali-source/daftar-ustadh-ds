@@ -63,7 +63,7 @@ private fun today(): String = Calendar.getInstance().let { iso(it.get(Calendar.Y
 private fun show(isoDate: String): String = isoDate.split("-").let { if (it.size == 3) "${it[2]}/${it[1]}/${it[0]}" else isoDate }
 
 /** يوم الأسبوع للتاريخ: 0 = الاثنين ... 6 = الأحد (كما في الجدول الزمني). */
-private fun weekday(isoDate: String): Int {
+fun absenceWeekday(isoDate: String): Int {
     val p = isoDate.split("-").mapNotNull { it.toIntOrNull() }
     if (p.size != 3) return 0
     val c = Calendar.getInstance().apply { clear(); set(p[0], p[1] - 1, p[2]) }
@@ -103,13 +103,13 @@ fun AbsenceCenterScreen(
     absences: List<AbsenceEntity>,
     settings: TimetableSettings,
     slots: List<TimetableSlotEntity>,
-    subjectsOf: (ClassEntity) -> List<AbsenceSubject>,
     subjectLabel: (String) -> String,
     yearStart: String,
     onSave: (AbsenceSessionEntity, Set<String>) -> Unit,
     onBack: () -> Unit,
     schoolName: String = "",
-    subjectArFr: (String) -> Pair<String, String> = { it to it }
+    subjectArFr: (String) -> Pair<String, String> = { it to it },
+    onOpenTimetable: (classId: String) -> Unit = {}
 ) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -133,7 +133,7 @@ fun AbsenceCenterScreen(
                 Text(stringResource(R.string.ps_no_classes), Modifier.padding(24.dp), color = MaterialTheme.colorScheme.error)
                 return@Column
             }
-            if (tab == 0) EntryTab(classes, students, sessions, absences, settings, slots, subjectsOf, subjectLabel, onSave, schoolName, subjectArFr)
+            if (tab == 0) EntryTab(classes, students, sessions, absences, settings, slots, subjectLabel, onSave, schoolName, subjectArFr, onOpenTimetable)
             else TopTab(classes, students, sessions, absences, yearStart)
         }
     }
@@ -147,18 +147,17 @@ private fun EntryTab(
     absences: List<AbsenceEntity>,
     settings: TimetableSettings,
     slots: List<TimetableSlotEntity>,
-    subjectsOf: (ClassEntity) -> List<AbsenceSubject>,
     subjectLabel: (String) -> String,
     onSave: (AbsenceSessionEntity, Set<String>) -> Unit,
     schoolName: String,
-    subjectArFr: (String) -> Pair<String, String>
+    subjectArFr: (String) -> Pair<String, String>,
+    onOpenTimetable: (classId: String) -> Unit
 ) {
     val whenLabel = stringResource(R.string.gn_when)
     var classId by rememberSaveable { mutableStateOf(classes.first().id) }
     val cls = classes.firstOrNull { it.id == classId } ?: classes.first()
     var date by rememberSaveable { mutableStateOf(today()) }
     var period by rememberSaveable { mutableIntStateOf(0) }          // 0 = لم تُختر
-    var chosenSubject by rememberSaveable { mutableStateOf<String?>(null) }
     var numbers by rememberSaveable { mutableStateOf("") }
     var saved by remember { mutableStateOf<String?>(null) }
     // غائبو آخر حصة حُفظت ووصفها: لإبلاغ وكلائهم
@@ -170,11 +169,12 @@ private fun EntryTab(
     var lastPeriod by remember { mutableIntStateOf(0) }
     var lastSubject by remember { mutableStateOf("") }
 
-    val day = weekday(date)
+    val day = absenceWeekday(date)
     val periodsToday = if (day in settings.days) settings.periodsOn(day) else 0
     val slot = slots.firstOrNull { it.classId == cls.id && it.day == day && it.period == period - 1 }
-    val subjects = subjectsOf(cls)
-    val subject = slot?.subjectCode ?: chosenSubject
+    // الغياب مرتبط بجدول القسم: المادة والأستاذ يُؤخذان من الجدول، ولا يُقبل تسجيل حصة ليست فيه
+    val hasTimetable = slots.any { it.classId == cls.id }
+    val subject = slot?.subjectCode
     val sessionId = subject?.let { AbsenceSessionEntity.idOf(cls.id, it, date, period) }
     val existing = sessions.firstOrNull { it.id == sessionId }
     val classStudents = students.filter { it.classId == cls.id }
@@ -204,33 +204,37 @@ private fun EntryTab(
                 }
             }
         }
-        item {
+        if (!hasTimetable) item {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text("⚠️ " + stringResource(R.string.ac_no_timetable, cls.name), color = MaterialTheme.colorScheme.error,
+                    fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                Button(onClick = { onOpenTimetable(cls.id) }, modifier = Modifier.fillMaxWidth()) {
+                    Text("📅 " + stringResource(R.string.ac_open_timetable))
+                }
+            }
+        }
+        if (hasTimetable) item {
             DateButton(stringResource(R.string.abs_date), date, Modifier.fillMaxWidth()) { date = it; period = 0; numbers = ""; saved = null }
         }
-        item {
+        if (hasTimetable) item {
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(stringResource(R.string.ac_period), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 if (periodsToday == 0) {
                     Text(stringResource(R.string.ac_no_school_day), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
                 } else LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                     items((1..periodsToday).toList()) { p ->
-                        FilterChip(selected = period == p, onClick = { period = p; chosenSubject = null; numbers = ""; saved = null },
+                        FilterChip(selected = period == p, onClick = { period = p; numbers = ""; saved = null },
                             label = { Text("$p  ⁦${settings.label(p - 1)}⁩", fontSize = 12.sp) })
                     }
                 }
             }
         }
-        if (period > 0) item { Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        if (hasTimetable && period > 0) item { Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
             if (slot != null) {
                 Text("📘 " + subjectLabel(slot.subjectCode) + if (slot.teacherName.isNotBlank()) " — 👨‍🏫 ${slot.teacherName}" else "",
                     fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
             } else {
-                Text(stringResource(R.string.ac_pick_subject), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    items(subjects, key = { it.code }) { s ->
-                        FilterChip(selected = chosenSubject == s.code, onClick = { chosenSubject = s.code }, label = { Text(s.label) })
-                    }
-                }
+                Text(stringResource(R.string.ac_no_slot), fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
             }
         } }
         if (period > 0 && subject != null) {
@@ -281,7 +285,7 @@ private fun EntryTab(
                         lastWhen = whenLabel.format("\u2066${show(date)}\u2069", period, subjectLabel(subject))
                         numbers = ""
                         // الحصة التالية مباشرة لتسجيل الورقة الموالية
-                        if (period < periodsToday) { period += 1; chosenSubject = null }
+                        if (period < periodsToday) period += 1
                     },
                     enabled = unknown.isEmpty() && classStudents.isNotEmpty(),
                     modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)

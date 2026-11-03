@@ -1139,16 +1139,13 @@ class MainActivity : AppCompatActivity() {
                         absences = allAbsences,
                         settings = ttSettings,
                         slots = ttManagedSlots,
-                        subjectsOf = { c ->
-                            CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
-                                .map { AbsenceSubject(it.code, subjectName(it.code)) }
-                        },
                         subjectLabel = { subjectName(it) },
                         yearStart = ((adminYear ?: inst?.schoolYear)?.take(4) ?: "2026") + "-10-01",
                         onSave = { session, ids -> scope.launch { absenceDao.saveSession(session, ids) } },
                         onBack = { screen = Screen.HOME },
                         schoolName = inst?.schoolName.orEmpty(),
-                        subjectArFr = { subjectArFr(it) }
+                        subjectArFr = { subjectArFr(it) },
+                        onOpenTimetable = { id -> ttInitialClass = id; ttInitialTab = null; ttBack = Screen.ABSENCE_CENTER; screen = Screen.TIMETABLE }
                     )
 
                     screen == Screen.PRINT_SHOP -> {
@@ -1493,7 +1490,18 @@ class MainActivity : AppCompatActivity() {
                                     className = c.name,
                                     schoolName = schoolNames[c.institutionId].orEmpty(),
                                     subjectArFr = { subjectArFr(it) },
-                                    periodTime = { p -> if (p in 1..ttSettings.periods) ttSettings.label(p - 1) else "" }
+                                    periodTime = { p -> if (p in 1..ttSettings.periods) ttSettings.label(p - 1) else "" },
+                                    // الغياب مرتبط بجدول القسم
+                                    slotAt = { d, p ->
+                                        val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
+                                        ttManagedSlots.firstOrNull { it.classId == c.id && it.day == day && it.period == p - 1 }
+                                    },
+                                    periodsOnDate = { d ->
+                                        val day = com.elyedali.daftarustadh.ui.absenceWeekday(d)
+                                        if (day in ttSettings.days) ttSettings.periodsOn(day) else 0
+                                    },
+                                    hasTimetable = ttManagedSlots.any { it.classId == c.id },
+                                    onOpenTimetable = { ttInitialClass = c.id; ttInitialTab = null; ttBack = Screen.ADMIN_CLASS; screen = Screen.TIMETABLE }
                                 )
                                 3 -> {
                                     // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)

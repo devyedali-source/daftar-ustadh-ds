@@ -566,7 +566,9 @@
     <string name="ac_class">القسم</string>
     <string name="ac_period">الحصة</string>
     <string name="ac_no_school_day">هذا اليوم ليس من أيام الدراسة في الجدول الزمني.</string>
-    <string name="ac_pick_subject">لا توجد حصة في الجدول لهذا الوقت، اختر المادة:</string>
+    <string name="ac_no_slot">لا توجد حصة لهذا القسم في هذا الوقت حسب الجدول الزمني، فلا يُسجَّل فيها غياب. تأكد من اليوم والحصة، أو صحّح جدول القسم.</string>
+    <string name="ac_no_timetable">جدول القسم %1$s غير مُدرج. الغياب مرتبط بالجدول الزمني: أدرج جدول القسم أولًا ليُقبل تسجيل الغياب.</string>
+    <string name="ac_open_timetable">إدراج جدول القسم</string>
     <string name="ac_existing">هذه الحصة مسجّلة من قبل: الأرقام أدناه هي غائبوها، والحفظ يحلّ محلّها.</string>
     <string name="ac_numbers">أرقام النداء للغائبين</string>
     <string name="ac_unknown">أرقام غير موجودة في القسم: %1$s</string>

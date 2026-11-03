@@ -53,6 +53,7 @@ import com.elyedali.daftarustadh.data.AbsenceEntity
 import com.elyedali.daftarustadh.data.AbsenceSessionEntity
 import com.elyedali.daftarustadh.data.AbsenceSource
 import com.elyedali.daftarustadh.data.StudentEntity
+import com.elyedali.daftarustadh.data.TimetableSlotEntity
 import java.util.Calendar
 
 /** مادة تظهر في دفتر الغياب. */
@@ -97,7 +98,13 @@ fun AbsenceTab(
     schoolName: String = "",
     subjectArFr: (String) -> Pair<String, String> = { it to it },
     /** توقيت الحصة (مثل 08:00-09:00) حسب الجدول الزمني. */
-    periodTime: (Int) -> String = { "" }
+    periodTime: (Int) -> String = { "" },
+    /** للإدارة: الغياب مرتبط بجدول القسم. الحصة (التاريخ، رقمها) ← حصة الجدول أو null. */
+    slotAt: ((date: String, period: Int) -> TimetableSlotEntity?)? = null,
+    /** عدد حصص يوم التاريخ حسب إعدادات الجدول. */
+    periodsOnDate: (String) -> Int = { ABSENCE_MAX_PERIOD },
+    hasTimetable: Boolean = true,
+    onOpenTimetable: (() -> Unit)? = null
 ) {
     var notifySession by remember { mutableStateOf<AbsenceSessionEntity?>(null) }
     val whenLabel = stringResource(R.string.gn_when)
@@ -135,6 +142,9 @@ fun AbsenceTab(
             defaultSubject = filter ?: subjects.first().code,
             allSessionIds = remember(sessions) { sessions.map { it.id }.toSet() },
             isAdmin = isAdmin,
+            slotAt = slotAt,
+            periodsOnDate = periodsOnDate,
+            periodTime = periodTime,
             onSave = { old, s, ids -> onSave(old, s, ids); creating = false; editingId = null },
             onDelete = { id -> onDelete(id); creating = false; editingId = null },
             onCancel = { creating = false; editingId = null }
@@ -160,7 +170,15 @@ fun AbsenceTab(
                 }
             }
         }
-        item {
+        if (!hasTimetable) item {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text("⚠️ " + stringResource(R.string.ac_no_timetable, className), color = MaterialTheme.colorScheme.error,
+                    fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                if (onOpenTimetable != null) Button(onClick = onOpenTimetable, modifier = Modifier.fillMaxWidth()) {
+                    Text("📅 " + stringResource(R.string.ac_open_timetable))
+                }
+            }
+        } else item {
             Button(onClick = { creating = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
                 Text("➕ " + stringResource(R.string.abs_new), fontWeight = FontWeight.Bold)
             }
@@ -299,18 +317,27 @@ private fun AbsenceEditor(
     defaultSubject: String,
     allSessionIds: Set<String>,
     isAdmin: Boolean,
+    slotAt: ((String, Int) -> TimetableSlotEntity?)?,
+    periodsOnDate: (String) -> Int,
+    periodTime: (Int) -> String,
     onSave: (String?, AbsenceSessionEntity, Set<String>) -> Unit,
     onDelete: (String) -> Unit,
     onCancel: () -> Unit
 ) {
     val context = LocalContext.current
-    var subject by rememberSaveable { mutableStateOf(existing?.subjectCode ?: defaultSubject) }
+    var chosen by rememberSaveable { mutableStateOf(existing?.subjectCode ?: defaultSubject) }
     var date by rememberSaveable { mutableStateOf(existing?.date ?: todayIso()) }
     var period by rememberSaveable { mutableIntStateOf(existing?.period ?: 1) }
+    // مع الجدول: المادة تُؤخذ من حصة الجدول، ولا يُقبل تسجيل حصة ليست فيه
+    // (حصة قديمة سُجّلت قبل الجدول تبقى قابلة للتعديل ما دام تاريخها وحصتها لم يتغيرا)
+    val slot = slotAt?.invoke(date, period)
+    val keepOld = existing != null && existing.date == date && existing.period == period
+    val subject: String? = if (slotAt == null) chosen else slot?.subjectCode ?: existing?.subjectCode?.takeIf { keepOld }
+    val maxPeriod = if (slotAt == null) ABSENCE_MAX_PERIOD else periodsOnDate(date)
     val absent = remember { mutableStateListOf<String>().apply { addAll(existingAbsent) } }
     var confirmDelete by remember { mutableStateOf(false) }
-    val newId = AbsenceSessionEntity.idOf(classId, subject, date, period)
-    val overwrites = newId != existing?.id && newId in allSessionIds
+    val newId = subject?.let { AbsenceSessionEntity.idOf(classId, it, date, period) }
+    val overwrites = newId != null && newId != existing?.id && newId in allSessionIds
 
     LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp),
         contentPadding = PaddingValues(top = 10.dp, bottom = 16.dp)) {
@@ -318,12 +345,12 @@ private fun AbsenceEditor(
             Text(stringResource(if (existing == null) R.string.abs_new else R.string.abs_edit),
                 fontWeight = FontWeight.Black, fontSize = 17.sp, color = MaterialTheme.colorScheme.primary)
         }
-        if (subjects.size > 1) item {
+        if (slotAt == null && subjects.size > 1) item {
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(stringResource(R.string.abs_subject), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                     items(subjects, key = { it.code }) { s ->
-                        FilterChip(selected = subject == s.code, onClick = { subject = s.code }, label = { Text(s.label) })
+                        FilterChip(selected = chosen == s.code, onClick = { chosen = s.code }, label = { Text(s.label) })
                     }
                 }
             }
@@ -344,10 +371,23 @@ private fun AbsenceEditor(
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(stringResource(R.string.abs_period), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    items((1..ABSENCE_MAX_PERIOD).toList()) { p ->
-                        FilterChip(selected = period == p, onClick = { period = p }, label = { Text("$p") })
+                    items((1..maxOf(maxPeriod, 1)).toList()) { p ->
+                        val t = if (slotAt != null) periodTime(p) else ""
+                        FilterChip(selected = period == p, onClick = { period = p },
+                            label = { Text(if (t.isBlank()) "$p" else "$p  \u2066$t\u2069", fontSize = 12.sp) })
                     }
                 }
+            }
+        }
+        if (slotAt != null) item {
+            when {
+                maxPeriod == 0 -> Text(stringResource(R.string.ac_no_school_day), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                slot != null -> Text("📘 " + (subjects.firstOrNull { it.code == slot.subjectCode }?.label ?: slot.subjectCode) +
+                    if (slot.teacherName.isNotBlank()) " — 👨‍🏫 ${slot.teacherName}" else "",
+                    fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
+                subject != null -> Text("📘 " + (subjects.firstOrNull { it.code == subject }?.label ?: subject),
+                    fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
+                else -> Text(stringResource(R.string.ac_no_slot), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
             }
         }
         if (overwrites) item {
@@ -389,15 +429,15 @@ private fun AbsenceEditor(
                     onSave(
                         existing?.id,
                         AbsenceSessionEntity(
-                            id = newId, classId = classId, subjectCode = subject, date = date, period = period,
+                            id = newId!!, classId = classId, subjectCode = subject!!, date = date, period = period,
                             source = if (isAdmin) AbsenceSource.ADMIN else AbsenceSource.TEACHER,
-                            recordedBy = existing?.recordedBy.orEmpty(),
+                            recordedBy = slot?.teacherName ?: existing?.recordedBy.orEmpty(),
                             updatedAt = System.currentTimeMillis()
                         ),
                         absent.toSet()
                     )
                 },
-                enabled = students.isNotEmpty() && classId.isNotBlank(),
+                enabled = students.isNotEmpty() && classId.isNotBlank() && newId != null && period <= maxOf(maxPeriod, 0),
                 modifier = Modifier.fillMaxWidth().padding(top = 6.dp), shape = RoundedCornerShape(14.dp)
             ) { Text("💾 " + stringResource(R.string.abs_save), fontWeight = FontWeight.Bold) }
         }

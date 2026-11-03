@@ -566,7 +566,9 @@
     <string name="ac_class">Classe</string>
     <string name="ac_period">Séance</string>
     <string name="ac_no_school_day">Ce jour n\'est pas un jour de classe dans l\'emploi du temps.</string>
-    <string name="ac_pick_subject">Aucune séance prévue à cette heure, choisissez la matière :</string>
+    <string name="ac_no_slot">Aucune séance pour cette classe à cette heure selon l\'emploi du temps : aucune absence ne peut y être saisie. Vérifiez le jour et la séance, ou corrigez l\'emploi du temps de la classe.</string>
+    <string name="ac_no_timetable">L\'emploi du temps de la classe %1$s n\'est pas saisi. Les absences sont liées à l\'emploi du temps : saisissez d\'abord celui de la classe.</string>
+    <string name="ac_open_timetable">Saisir l\'emploi du temps de la classe</string>
     <string name="ac_existing">Séance déjà saisie : les numéros ci-dessous sont ses absents ; enregistrer la remplace.</string>
     <string name="ac_numbers">Numéros d\'appel des absents</string>
     <string name="ac_unknown">Numéros inexistants dans la classe : %1$s</string>
