@@ -1417,16 +1417,19 @@ class MainActivity : AppCompatActivity() {
                     screen == Screen.ADMIN_CLASS && currentClass != null -> {
                         val c = currentClass!!
                         val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                        val adminTabOrder = listOf(0, 4, 1, 3, 2)
                         ClassHub(
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_admin), c.schoolYear),
-                            tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_absence), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable)),
-                            icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
+                            // ترتيب العرض: الطلاب، جدول القسم، النتائج، الكشوف، الغياب
+                            // (أرقام التبويبات الداخلية كما هي: 0 الطلاب، 1 النتائج، 2 الغياب، 3 الكشوف، 4 جدول القسم)
+                            tabs = adminTabOrder.map { listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
+                                stringResource(R.string.tab_absence), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable))[it] },
+                            icons = adminTabOrder.map { listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
                                 androidx.compose.material.icons.Icons.Filled.CheckCircle, androidx.compose.material.icons.Icons.Filled.List,
-                                androidx.compose.material.icons.Icons.Filled.DateRange),
-                            selected = hubTab,
-                            onSelect = { hubTab = it },
+                                androidx.compose.material.icons.Icons.Filled.DateRange)[it] },
+                            selected = adminTabOrder.indexOf(hubTab).coerceAtLeast(0),
+                            onSelect = { hubTab = adminTabOrder[it] },
                             onBack = { screen = hubBack }
                         ) {
                             when (hubTab) {
