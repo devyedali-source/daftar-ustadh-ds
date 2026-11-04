@@ -224,19 +224,22 @@ fun HomeYearsScreen(
                         }
                         item {
                             // صاحب الوضع وأدواته: المؤسسة وأدوات الإدارة، أو الأستاذ وأدواته
-                            val tools = if (mode == MODE_ADMIN) listOf(
-                                "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
-                                "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
-                                "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
-                                "UPLOAD_MANY" to ("📥 " + stringResource(R.string.bu_button)),
-                                "PRINT_RECORDS" to ("📒 " + stringResource(R.string.ps_records_title)),
-                                "PRINT_TIMETABLES" to ("📅 " + stringResource(R.string.ps_timetables_title)),
-                                "PRINT_SHOP" to ("🖨️ " + stringResource(R.string.ps_books_title)),
-                                "STATS" to ("📊 " + stringResource(R.string.statistics)),
-                                "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title))
+                            // كل زر إما أداة مباشرة، وإما مجموعة تفتح قائمة بأدواتها
+                            val tools: List<Pair<String, List<Pair<String, String>>>> = if (mode == MODE_ADMIN) listOf(
+                                ("📊 " + stringResource(R.string.statistics)) to listOf("STATS" to ""),
+                                ("⚙️ " + stringResource(R.string.home_group_settings)) to listOf(
+                                    "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
+                                    "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title))),
+                                ("🤝 " + stringResource(R.string.home_group_share)) to listOf(
+                                    "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
+                                    "PRINT_RECORDS" to ("📒 " + stringResource(R.string.ps_records_title))),
+                                ("📥 " + stringResource(R.string.bu_button)) to listOf("UPLOAD_MANY" to ""),
+                                ("📅 " + stringResource(R.string.home_group_timetables)) to listOf(
+                                    "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
+                                    "PRINT_TIMETABLES" to ("🗓️ " + stringResource(R.string.ps_timetables_title)))
                             ) else listOf(
-                                "TEACHER_PROFILE" to ("👤 " + stringResource(R.string.tp_title)),
-                                "REMARKS" to ("✏️ " + stringResource(R.string.remarks_settings))
+                                ("👤 " + stringResource(R.string.tp_title)) to listOf("TEACHER_PROFILE" to ""),
+                                ("✏️ " + stringResource(R.string.remarks_settings)) to listOf("REMARKS" to "")
                             )
                             Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
                                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
@@ -245,8 +248,20 @@ fun HomeYearsScreen(
                                     Text((if (mode == MODE_ADMIN) "🏫 " + (institutionName ?: "") else "👨‍🏫 " + (teacherName ?: "")),
                                         fontWeight = FontWeight.Black, fontSize = 15.sp, maxLines = 2)
                                     FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                                        tools.forEach { (key, label) ->
-                                            AssistChip(onClick = { onTool(key) }, label = { Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold) })
+                                        tools.forEach { (label, items) ->
+                                            if (items.size == 1) {
+                                                AssistChip(onClick = { onTool(items[0].first) }, label = { Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold) })
+                                            } else Box {
+                                                var open by remember { mutableStateOf(false) }
+                                                AssistChip(onClick = { open = true }, label = { Text("$label ▾", fontSize = 12.sp, fontWeight = FontWeight.Bold) })
+                                                androidx.compose.material3.DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
+                                                    items.forEach { (key, itemLabel) ->
+                                                        androidx.compose.material3.DropdownMenuItem(
+                                                            text = { Text(itemLabel, fontWeight = FontWeight.Bold) },
+                                                            onClick = { open = false; onTool(key) })
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
 

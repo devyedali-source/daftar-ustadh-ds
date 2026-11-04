@@ -736,4 +736,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tt_duration">Durée de la séance :</string>
     <string name="tt_one_hour">Une heure</string>
     <string name="tt_two_hours">Deux heures consécutives</string>
+    <string name="home_group_settings">Paramètres</string>
+    <string name="home_group_share">Partage avec les professeurs</string>
+    <string name="home_group_timetables">Emplois du temps</string>
 </resources>

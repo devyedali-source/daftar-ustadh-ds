@@ -736,4 +736,7 @@
     <string name="tt_duration">مدة الحصة:</string>
     <string name="tt_one_hour">ساعة واحدة</string>
     <string name="tt_two_hours">ساعتان متتاليتان</string>
+    <string name="home_group_settings">الإعدادات</string>
+    <string name="home_group_share">مشاركة مع الأساتذة</string>
+    <string name="home_group_timetables">الجداول الزمنية</string>
 </resources>
