@@ -163,7 +163,13 @@ private fun GenerateTab(
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(top = 10.dp, bottom = 16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)) {
         // التوقيت ثابت: 08:00–14:00 من الاثنين إلى السبت (الجمعة حتى 12:00)؛ تختار المؤسسة فقط وقت حصتي آخر النهار
-        SettingCard(stringResource(R.string.tt_times)) {
+        // البطاقة مخفية تحت زر «الإعدادات»
+        var showTimes by remember { mutableStateOf(false) }
+        OutlinedButton(onClick = { showTimes = !showTimes }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
+            Text("⚙️ " + stringResource(R.string.home_group_settings) + " — " + stringResource(R.string.tt_times) +
+                if (showTimes) "  ▴" else "  ▾", fontWeight = FontWeight.Bold)
+        }
+        if (showTimes) SettingCard(stringResource(R.string.tt_times)) {
             Text(stringResource(R.string.tt_fixed_times), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Text(stringResource(R.string.tt_evening_title), fontWeight = FontWeight.Bold, fontSize = 13.sp)
             val ev = settings.eveningStart
