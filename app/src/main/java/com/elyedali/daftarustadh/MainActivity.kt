@@ -1044,23 +1044,43 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                /** أشهر السنة الدراسية (أكتوبر ← يونيو) وأيام الدراسة في كل شهر، حسب أيام الجدول الزمني. */
+                /**
+                 * أسابيع السنة الدراسية (أكتوبر ← يونيو): صفحة لكل أسبوع من الاثنين إلى السبت،
+                 * وفي كل يوم ست حصص.
+                 */
                 fun schoolMonths(schoolYear: String): List<com.elyedali.daftarustadh.pdf.AbsencePdf.Month> {
                     val y1 = schoolYear.take(4).toIntOrNull() ?: return emptyList()
                     val ar = listOf("يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر")
-                    val fr = listOf("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre")
-                    val short = listOf("إثن", "ثلا", "أرب", "خمي", "جمع", "سبت", "أحد")   // 0 = الاثنين
+                    val fr = listOf("janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre")
+                    val short = listOf("الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد")   // 0 = الاثنين
                     val schoolDays = ttSettings.days.toSet()
-                    return (listOf(y1 to 9, y1 to 10, y1 to 11) + (0..5).map { (y1 + 1) to it }).map { (y, m) ->
-                        val cal = java.util.Calendar.getInstance().apply { clear(); set(y, m, 1) }
-                        val n = cal.getActualMaximum(java.util.Calendar.DAY_OF_MONTH)
-                        val days = (1..n).mapNotNull { d ->
-                            cal.set(java.util.Calendar.DAY_OF_MONTH, d)
-                            val idx = (cal.get(java.util.Calendar.DAY_OF_WEEK) + 5) % 7   // الاثنين = 0
-                            if (idx in schoolDays) com.elyedali.daftarustadh.pdf.AbsencePdf.Day(d, short[idx]) else null
+                    val cal = java.util.Calendar.getInstance().apply { clear(); set(y1, 9, 1) }
+                    // نبدأ من اثنين الأسبوع الذي فيه فاتح أكتوبر
+                    while ((cal.get(java.util.Calendar.DAY_OF_WEEK) + 5) % 7 != 0) cal.add(java.util.Calendar.DAY_OF_MONTH, -1)
+                    val start = java.util.Calendar.getInstance().apply { clear(); set(y1, 9, 1) }
+                    val end = java.util.Calendar.getInstance().apply { clear(); set(y1 + 1, 5, 30) }
+                    val weeks = ArrayList<com.elyedali.daftarustadh.pdf.AbsencePdf.Month>()
+                    while (!cal.after(end)) {
+                        val dates = ArrayList<Triple<Int, Int, Int>>()   // (اليوم، الشهر، السنة)
+                        val days = ArrayList<com.elyedali.daftarustadh.pdf.AbsencePdf.Day>()
+                        repeat(7) { idx ->
+                            if (idx in schoolDays && !cal.before(start) && !cal.after(end)) {
+                                val d = cal.get(java.util.Calendar.DAY_OF_MONTH)
+                                days += com.elyedali.daftarustadh.pdf.AbsencePdf.Day(d, short[idx])
+                                dates += Triple(d, cal.get(java.util.Calendar.MONTH), cal.get(java.util.Calendar.YEAR))
+                            }
+                            cal.add(java.util.Calendar.DAY_OF_MONTH, 1)
                         }
-                        com.elyedali.daftarustadh.pdf.AbsencePdf.Month("شهر ${ar[m]} ⁦$y⁩", "Mois de ${fr[m]} $y", days)
+                        if (days.isNotEmpty()) {
+                            val (d1, m1, a1) = dates.first(); val (d2, m2, a2) = dates.last()
+                            val fromAr = if (m1 == m2) "$d1" else if (a1 == a2) "$d1 ${ar[m1]}" else "$d1 ${ar[m1]} $a1"
+                            val fromFr = if (m1 == m2) "$d1" else if (a1 == a2) "$d1 ${fr[m1]}" else "$d1 ${fr[m1]} $a1"
+                            weeks += com.elyedali.daftarustadh.pdf.AbsencePdf.Month(
+                                "أسبوع من $fromAr إلى $d2 ${ar[m2]} $a2",
+                                "Semaine du $fromFr au $d2 ${fr[m2]} $a2", days)
+                        }
                     }
+                    return weeks
                 }
 
                 /**

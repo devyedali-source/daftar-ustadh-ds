@@ -552,7 +552,7 @@
     <string name="ps_textbook_pages">Pages du cahier de textes par classe :</string>
     <string name="ps_records_note">Un registre par matière et par classe (%1$d classes) avec élèves et professeur.</string>
     <string name="ps_timetables_note">Une page par professeur (%1$d professeurs), emploi du temps validé.</string>
-    <string name="ps_absence_note">Pour chaque classe (%1$d), une page par mois d\'octobre à juin avec les jours de classe, avec les noms des élèves ou vierge.</string>
+    <string name="ps_absence_note">Pour chaque classe (%1$d), une page par semaine d\'octobre à juin, six heures par jour, avec les noms des élèves ou vierge.</string>
     <string name="ps_textbook_note">Un exemplaire vierge par classe (%1$d classes), à remplir à la main.</string>
     <string name="ps_no_classes">Aucune classe en mode administration pour cette année.</string>
     <string name="ps_share">Préparer et partager avec l\'imprimerie</string>
@@ -713,7 +713,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="record_older">⚠️ Ce registre est plus ancien que celui déjà enregistré pour cette matière. L\'enregistrer ramène d\'anciennes notes ; ne le faites que si vous en êtes sûr.</string>
     <string name="record_older_skipped">%1$d registre(s) plus ancien(s) que ceux déjà enregistrés ont été ignorés.</string>
     <string name="reg_absence">Registre d\'appel</string>
-    <string name="reg_absence_hint">Registre d\'appel à imprimer et remplir à la main : une page par mois d\'octobre à juin avec les jours de classe. Choisissez un registre avec les noms et numéros d\'appel des élèves, ou un registre vierge.</string>
+    <string name="reg_absence_hint">Registre d\'appel à imprimer et remplir à la main : une page par semaine d\'octobre à juin, avec six cases par jour (une par heure). Choisissez un registre avec les noms et numéros d\'appel des élèves, ou un registre vierge.</string>
     <string name="reg_with_names">Avec les noms des élèves</string>
     <string name="reg_blank">Vierge</string>
     <string name="reg_no_students">Aucun élève dans cette classe : enregistrez-les dans « Élèves » pour imprimer le registre avec leurs noms.</string>
