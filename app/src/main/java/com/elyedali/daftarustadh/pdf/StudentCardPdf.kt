@@ -94,7 +94,7 @@ object StudentCardPdf {
         PdfText.draw(c, "الرقم المدرسي: ⁦${card.rim.ifBlank { "—" }}⁩", tx, y, tw, 15f, 8.5f, align = right, maxLines = 1); y += 16f
         PdfText.draw(c, "القسم: ⁦${card.className}⁩", tx, y, tw, 15f, 8.5f, align = right, maxLines = 1); y += 16f
         PdfText.draw(c, "رقم النداء: ⁦${card.roll}⁩", tx, y, tw, 15f, 9f, bold = true, align = right, maxLines = 1)
-        PdfText.draw(c, "Matricule : ${card.rim.ifBlank { "—" }} — Classe : ${card.className} — N° ${card.roll}", left + 6f, top + CH - 18f,
+        PdfText.draw(c, "RIM : ${card.rim.ifBlank { "—" }} — Classe : ${card.className} — N° ${card.roll}", left + 6f, top + CH - 18f,
             CW - 12f, 14f, 6.5f, color = 0xFF616161.toInt(), maxLines = 1)
     }
 }

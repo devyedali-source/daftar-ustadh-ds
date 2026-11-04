@@ -38,7 +38,7 @@ object StudentListPdf {
         fixed += Col("رقم النداء\nN°", 40f, center) { if (it.rollNumber > 0) it.rollNumber.toString() else "" }
         val extra = if (info.full) listOf(
             Col("الجنس\nSexe", 40f, center) { s -> when (s.gender) { Gender.BOY -> "ولد"; Gender.GIRL -> "بنت"; else -> "" } },
-            Col("الرقم المدرسي\nMatricule", 72f, center) { s -> if (s.rim.isBlank()) "" else "\u2066${s.rim}\u2069" },
+            Col("الرقم المدرسي\nRIM", 72f, center) { s -> if (s.rim.isBlank()) "" else "\u2066${s.rim}\u2069" },
             Col("الرقم الوطني\nNNI", 76f, center) { s -> if (s.nationalId.isBlank()) "" else "\u2066${s.nationalId}\u2069" },
             Col("هاتف الوكيل\nTél. tuteur", 80f, center) { s ->
                 listOf(s.guardianPhone1, s.guardianPhone2).filter { it.isNotBlank() }.joinToString("\n") { "\u2066$it\u2069" }

@@ -65,7 +65,7 @@
     <string name="roll_taken">Ce numéro est déjà utilisé</string>
     <string name="name_ar">Nom en arabe</string>
     <string name="name_fr">Nom en français</string>
-    <string name="rim">Matricule (RIM)</string>
+    <string name="rim">RIM</string>
     <string name="national_id">NNI</string>
     <string name="guardian_phone_1">WhatsApp du tuteur (avis d\'absence)</string>
     <string name="guardian_phone_2">Autre téléphone du tuteur</string>
@@ -660,7 +660,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="gn_when">le %1$s — séance %2$d — %3$s</string>
     <string name="gn_message">Bonjour,\nNous vous informons que l\'élève %1$s de la classe %2$s a été absent(e) %3$s.\nL\'administration de %4$s</string>
     <string name="ps_cards">Cartes d\'élèves de toutes les classes</string>
-    <string name="ps_cards_note">Dix cartes par page : nom, matricule, classe, N° d\'appel et photo (%1$d élèves, dont %2$d avec photo).</string>
+    <string name="ps_cards_note">Dix cartes par page : nom, RIM, classe, N° d\'appel et photo (%1$d élèves, dont %2$d avec photo).</string>
     <string name="bu_button">Importer plusieurs registres à la fois</string>
     <string name="bu_working">Import et vérification des fichiers…</string>
     <string name="bu_title">Résultat de l\'import</string>

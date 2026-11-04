@@ -82,7 +82,7 @@ object ReportCardPdf {
             "Établissement : ${info.schoolName}",
             "Nom et Prénom : ${s.nameFr.ifBlank { s.nameAr }}",
             "Classe : ${info.className} — N° d'ordre : ${s.rollNumber}",
-            "Numéro National : ${s.nationalId} — Matricule : ${s.rim}"
+            "Numéro National : ${s.nationalId} — RIM : ${s.rim}"
         )
         rowsAr.indices.forEach { i ->
             cell(c, rowsAr[i], M + half, y, half, 16f, 9.5f, align = Layout.Alignment.ALIGN_NORMAL, lines = 1)
