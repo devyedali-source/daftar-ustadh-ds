@@ -296,9 +296,9 @@ private fun OffersTab(
     }
     val countText = when {
         wilayaFilter == null -> stringResource(R.string.ex_count_all, filtered.size)
-        direction == Direction.LEAVING -> stringResource(R.string.ex_count_leaving, wilayaFilter!!, filtered.size)
-        direction == Direction.ENTERING -> stringResource(R.string.ex_count_entering, wilayaFilter!!, filtered.size)
-        else -> stringResource(R.string.ex_count_wilaya, wilayaFilter!!, filtered.size)
+        direction == Direction.LEAVING -> stringResource(R.string.ex_count_leaving, wilayaLabel(wilayaFilter!!), filtered.size)
+        direction == Direction.ENTERING -> stringResource(R.string.ex_count_entering, wilayaLabel(wilayaFilter!!), filtered.size)
+        else -> stringResource(R.string.ex_count_wilaya, wilayaLabel(wilayaFilter!!), filtered.size)
     }
 
     LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp), contentPadding = PaddingValues(bottom = 16.dp)) {
@@ -326,7 +326,7 @@ private fun OffersTab(
                     ChipFilter(stringResource(R.string.ex_filter_type), OfferType.ALL.map { it to offerTypeLabel(it) }, typeFilter) { typeFilter = it }
                     ChipFilter(stringResource(R.string.ex_filter_role), ExchangeRole.ALL.map { it to exchangeRoleLabel(it) }, roleFilter) { roleFilter = it }
                     OutlinedButton(onClick = { pickWilaya = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
-                        Text(stringResource(R.string.ex_filter_wilaya) + ": " + (wilayaFilter ?: stringResource(R.string.ex_all_wilayas)))
+                        Text(stringResource(R.string.ex_filter_wilaya) + ": " + (wilayaFilter?.let { wilayaLabel(it) } ?: stringResource(R.string.ex_all_wilayas)))
                     }
                     if (wilayaFilter != null) {
                         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -385,7 +385,7 @@ private fun OffersTab(
             title = stringResource(R.string.ex_filter_wilaya),
             options = listOf<String?>(null) + wilayas,
             selected = wilayaFilter,
-            labelFor = { it ?: stringResource(R.string.ex_all_wilayas) },
+            labelFor = { it?.let { w -> wilayaLabel(w) } ?: stringResource(R.string.ex_all_wilayas) },
             onPick = { wilayaFilter = it; if (it == null) direction = Direction.ALL; pickWilaya = false },
             onDismiss = { pickWilaya = false }
         )
@@ -509,14 +509,14 @@ private fun ExchangeOfferCard(
             Column(verticalArrangement = Arrangement.spacedBy(3.dp)) {
                 Text("📍 " + stringResource(R.string.ex_current_place), fontWeight = FontWeight.Bold, fontSize = 12.sp,
                     color = MaterialTheme.colorScheme.primary)
-                Text(stringResource(R.string.ex_place_line, ad.wilaya, ad.moughataa), fontSize = 13.sp)
+                Text(stringResource(R.string.ex_place_line, wilayaLabel(ad.wilaya), ad.moughataa), fontSize = 13.sp)
             }
             if (ad.desiredWilayas.isNotEmpty()) {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     Text("🧭 " + stringResource(R.string.ex_desired), fontWeight = FontWeight.Bold, fontSize = 12.sp,
                         color = MaterialTheme.colorScheme.secondary)
                     FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                        ad.desiredWilayas.forEach { w -> Badge("📍 $w", MaterialTheme.colorScheme.primaryContainer, MaterialTheme.colorScheme.primary) }
+                        ad.desiredWilayas.forEach { w -> Badge("📍 " + wilayaLabel(w), MaterialTheme.colorScheme.primaryContainer, MaterialTheme.colorScheme.primary) }
                     }
                 }
             }
@@ -759,7 +759,7 @@ private fun ExchangeForm(
 
         FormSection(stringResource(R.string.ex_step3)) {
             OutlinedButton(onClick = { pickWilaya = true }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
-                Text(stringResource(R.string.ex_wilaya) + ": " + wilaya.ifBlank { stringResource(R.string.ex_choose_wilaya) })
+                Text(stringResource(R.string.ex_wilaya) + ": " + (if (wilaya.isBlank()) stringResource(R.string.ex_choose_wilaya) else wilayaLabel(wilaya)))
             }
             // اختيار المقاطعة من مقاطعات الولاية (كما في دفتر المعلم)
             val options = com.elyedali.daftarustadh.data.Moughataas.of(wilaya)
@@ -793,7 +793,7 @@ private fun ExchangeForm(
             FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 wilayas.filter { it != wilaya }.forEach { w ->
                     FilterChip(selected = w in desired, onClick = { if (w in desired) desired.remove(w) else desired.add(w) },
-                        label = { Text(w, fontSize = 12.sp) })
+                        label = { Text(wilayaLabel(w), fontSize = 12.sp) })
                 }
             }
         }
@@ -845,7 +845,7 @@ private fun ExchangeForm(
             title = stringResource(R.string.ex_wilaya),
             options = wilayas,
             selected = wilaya,
-            labelFor = { it },
+            labelFor = { wilayaLabel(it) },
             onPick = { if (it != wilaya) moughataa = ""; wilaya = it; desired.remove(it); pickWilaya = false },
             onDismiss = { pickWilaya = false }
         )
@@ -864,6 +864,14 @@ private fun FormSection(title: String, content: @Composable () -> Unit) {
             content()
         }
     }
+}
+
+/** اسم الولاية بلغة الواجهة: يُحفظ بالعربية ويُعرض بالفرنسية في الواجهة الفرنسية. */
+@Composable
+private fun wilayaLabel(name: String): String {
+    val context = androidx.compose.ui.platform.LocalContext.current
+    val fr = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
+    return if (fr) com.elyedali.daftarustadh.data.SchoolDirectory.wilaya(context, name)?.nameFr ?: name else name
 }
 
 @Composable
