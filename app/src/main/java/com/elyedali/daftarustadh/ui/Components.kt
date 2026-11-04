@@ -128,3 +128,37 @@ fun SectionTitle(text: String) {
     Text(text, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.primary,
         modifier = Modifier.padding(top = 8.dp, bottom = 2.dp))
 }
+
+/**
+ * زر «من جهات الاتصال»: يفتح قائمة أرقام الهاتف ويرجع الرقم المختار بصيغة محلية (8 أرقام إن أمكن).
+ * لا يحتاج إذن قراءة جهات الاتصال: النظام يعطي التطبيق الرقم المختار فقط.
+ */
+@Composable
+fun ContactPhoneButton(onPicked: (String) -> Unit) {
+    val context = androidx.compose.ui.platform.LocalContext.current
+    val launcher = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()
+    ) { res ->
+        val uri = res.data?.data ?: return@rememberLauncherForActivityResult
+        val number = try {
+            context.contentResolver.query(uri,
+                arrayOf(android.provider.ContactsContract.CommonDataKinds.Phone.NUMBER), null, null, null)?.use { c ->
+                if (c.moveToFirst()) c.getString(0) else null
+            }
+        } catch (e: Exception) { null } ?: return@rememberLauncherForActivityResult
+        val normalized = com.elyedali.daftarustadh.exchange.ExchangeAd.normalizePhone(number)
+        onPicked(normalized?.let { com.elyedali.daftarustadh.exchange.ExchangeAd.localPhone(it) }
+            ?: number.filter { it.isDigit() || it == '+' || it == ' ' })
+    }
+    androidx.compose.material3.OutlinedButton(
+        onClick = {
+            val intent = android.content.Intent(android.content.Intent.ACTION_PICK,
+                android.provider.ContactsContract.CommonDataKinds.Phone.CONTENT_URI)
+            try { launcher.launch(intent) } catch (e: Exception) {
+                android.widget.Toast.makeText(context, context.getString(com.elyedali.daftarustadh.R.string.contact_pick_unavailable),
+                    android.widget.Toast.LENGTH_SHORT).show()
+            }
+        },
+        modifier = Modifier.fillMaxWidth()
+    ) { Text("📇 " + androidx.compose.ui.res.stringResource(com.elyedali.daftarustadh.R.string.contact_pick)) }
+}

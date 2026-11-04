@@ -157,6 +157,8 @@ fun ShareRecordsScreen(
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone), modifier = Modifier.fillMaxWidth())
                     if (phone.isNotBlank() && normalized == null)
                         Text(stringResource(R.string.ex_err_phone), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                    // خيار آخر: اختيار الرقم من جهات الاتصال في الهاتف
+                    ContactPhoneButton { phone = it }
                 }
             },
             confirmButton = {

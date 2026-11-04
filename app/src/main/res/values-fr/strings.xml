@@ -755,4 +755,6 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tt_manual_confirm">L\'emploi du temps actuel de toutes les classes et les affectations des professeurs seront effacés, et la validation annulée. La liste des professeurs est conservée. Continuer ?</string>
     <string name="tt_manual_on">Saisie manuelle activée : l\'application ne répartit pas les professeurs. Remplissez l\'emploi du temps de chaque classe dans l\'onglet « Par classe », puis validez-le. Pour revenir à la répartition automatique, appuyez sur « Générer l\'emploi du temps ».</string>
     <string name="tt_manual_go">Remplir les emplois du temps des classes</string>
+    <string name="contact_pick">Choisir dans les contacts</string>
+    <string name="contact_pick_unavailable">Impossible d\'ouvrir les contacts sur ce téléphone</string>
 </resources>

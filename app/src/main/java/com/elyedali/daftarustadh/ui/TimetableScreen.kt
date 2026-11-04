@@ -433,6 +433,8 @@ private fun TeacherListPane(
                         keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(keyboardType = androidx.compose.ui.text.input.KeyboardType.Phone),
                         modifier = Modifier.fillMaxWidth())
                     if (!phoneOk) Text(stringResource(R.string.ex_err_phone), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                    // خيار آخر: اختيار الرقم من جهات الاتصال في الهاتف
+                    ContactPhoneButton { phone = it }
                     Text(stringResource(R.string.tt_teacher_subjects), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                     val max = com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS
                     Text(stringResource(R.string.max_subjects, chosen.size, max), fontSize = 12.sp,
