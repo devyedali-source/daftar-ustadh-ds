@@ -733,4 +733,7 @@
     <string name="tt_pick_teacher">اختر أستاذ %1$s:</string>
     <string name="tt_teacher_busy">مشغول في قسم آخر في هذا الوقت</string>
     <string name="tt_without_teacher">بدون أستاذ الآن</string>
+    <string name="tt_duration">مدة الحصة:</string>
+    <string name="tt_one_hour">ساعة واحدة</string>
+    <string name="tt_two_hours">ساعتان متتاليتان</string>
 </resources>

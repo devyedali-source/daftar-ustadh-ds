@@ -733,4 +733,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tt_pick_teacher">Choisissez le professeur de %1$s :</string>
     <string name="tt_teacher_busy">occupé dans une autre classe à cet horaire</string>
     <string name="tt_without_teacher">Sans professeur pour l\'instant</string>
+    <string name="tt_duration">Durée de la séance :</string>
+    <string name="tt_one_hour">Une heure</string>
+    <string name="tt_two_hours">Deux heures consécutives</string>
 </resources>

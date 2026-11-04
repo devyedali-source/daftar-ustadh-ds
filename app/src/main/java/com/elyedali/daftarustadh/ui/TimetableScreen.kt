@@ -615,15 +615,35 @@ private fun ByClassTab(
     editCell?.let { (d, p) ->
         val subjects = subjectsByClass[cid].orEmpty()
         var pickedSubject by remember(d, p) { mutableStateOf<String?>(null) }
+        var pickedTeacher by remember(d, p) { mutableStateOf<String?>(null) }
+        // الحصة ساعة أو ساعتان: الساعة الثانية هي الحصة الموالية في نفس اليوم بلا استراحة بينهما، وهي فارغة
+        val canDouble = p in settings.doubleStarts() && p + 1 < settings.periodsOn(d) && at[d to (p + 1)] == null
         // الأستاذ مشغول في قسم آخر في هذا الوقت؟
-        fun busyElsewhere(t: String) = slots.any { it.classId != cid && it.teacherName == t && it.day == d && it.period == p }
+        fun busyElsewhere(t: String, per: Int = p) = slots.any { it.classId != cid && it.teacherName == t && it.day == d && it.period == per }
         AlertDialog(
             onDismissRequest = { editCell = null },
             title = { Text(stringResource(R.string.tt_edit_cell, dayLabels()[d], p + 1)) },
             text = {
                 LazyColumn(Modifier.heightIn(max = 420.dp)) {
                     val code = pickedSubject
-                    if (code == null) {
+                    val teacherPicked = pickedTeacher
+                    if (code != null && teacherPicked != null) {
+                        // المدة: ساعة واحدة أو ساعتان متتاليتان
+                        item { Text(stringResource(R.string.tt_duration), fontWeight = FontWeight.Bold, fontSize = 13.sp) }
+                        item {
+                            Text("⏱️ " + stringResource(R.string.tt_one_hour) + "  \u2066${settings.label(p)}\u2069",
+                                Modifier.fillMaxWidth().clickable { onEditCell(cid, d, p, code, teacherPicked); editCell = null }.padding(vertical = 10.dp))
+                        }
+                        item {
+                            val busy2 = teacherPicked.isNotBlank() && busyElsewhere(teacherPicked, p + 1)
+                            Text("⏱️⏱️ " + stringResource(R.string.tt_two_hours) + "  \u2066${TimetableSettings.hhmm(settings.start(p))}-${TimetableSettings.hhmm(settings.end(p + 1))}\u2069" +
+                                if (busy2) "  — " + stringResource(R.string.tt_teacher_busy) else "",
+                                Modifier.fillMaxWidth().clickable(enabled = !busy2) {
+                                    onEditCell(cid, d, p, code, teacherPicked); onEditCell(cid, d, p + 1, code, teacherPicked); editCell = null
+                                }.padding(vertical = 10.dp),
+                                color = if (busy2) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface)
+                        }
+                    } else if (code == null) {
                         if (at[d to p] != null) item {
                             Text(stringResource(R.string.tt_empty_cell), Modifier.fillMaxWidth().clickable {
                                 onEditCell(cid, d, p, null, null); editCell = null
@@ -644,7 +664,8 @@ private fun ByClassTab(
                         items(options, key = { "t-$it" }) { t ->
                             val busy = busyElsewhere(t)
                             Text("👨‍🏫 $t" + if (busy) "  — " + stringResource(R.string.tt_teacher_busy) else "",
-                                Modifier.fillMaxWidth().clickable(enabled = !busy) { onEditCell(cid, d, p, code, t); editCell = null }
+                                Modifier.fillMaxWidth().clickable(enabled = !busy) {
+                                    if (canDouble) pickedTeacher = t else { onEditCell(cid, d, p, code, t); editCell = null } }
                                     .padding(vertical = 10.dp),
                                 color = if (busy) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface)
                         }
@@ -653,14 +674,15 @@ private fun ByClassTab(
                         }
                         item {
                             Text(stringResource(R.string.tt_without_teacher), Modifier.fillMaxWidth().clickable {
-                                onEditCell(cid, d, p, code, ""); editCell = null
+                                if (canDouble) pickedTeacher = "" else { onEditCell(cid, d, p, code, ""); editCell = null }
                             }.padding(vertical = 10.dp), color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }
                     }
                 }
             },
-            confirmButton = { TextButton(onClick = { if (pickedSubject != null) pickedSubject = null else editCell = null }) {
-                Text(stringResource(if (pickedSubject != null) R.string.back else R.string.cancel)) } }
+            confirmButton = { TextButton(onClick = {
+                when { pickedTeacher != null -> pickedTeacher = null; pickedSubject != null -> pickedSubject = null; else -> editCell = null }
+            }) { Text(stringResource(if (pickedSubject != null) R.string.back else R.string.cancel)) } }
         )
     }
 }
