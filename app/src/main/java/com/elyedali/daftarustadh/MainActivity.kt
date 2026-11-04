@@ -1601,10 +1601,10 @@ class MainActivity : AppCompatActivity() {
                         ClassHub(
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_admin), c.schoolYear),
-                            // ترتيب العرض: الطلاب، جدول القسم، النتائج، الكشوف، الغياب
-                            // (أرقام التبويبات الداخلية كما هي: 0 الطلاب، 1 النتائج، 2 الغياب، 3 الكشوف، 4 جدول القسم)
+                            // ترتيب العرض: الطلاب، جدول القسم، النتائج، الكشوف، دفاتر الإدارة
+                            // (أرقام التبويبات الداخلية كما هي: 0 الطلاب، 1 النتائج، 2 دفاتر الإدارة، 3 الكشوف، 4 جدول القسم)
                             tabs = adminTabOrder.map { listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_absence), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable))[it] },
+                                stringResource(R.string.ps_books_title), stringResource(R.string.tab_kashf), stringResource(R.string.tab_class_timetable))[it] },
                             icons = adminTabOrder.map { listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
                                 androidx.compose.material.icons.Icons.Filled.CheckCircle, androidx.compose.material.icons.Icons.Filled.List,
                                 androidx.compose.material.icons.Icons.Filled.DateRange)[it] },
@@ -1659,35 +1659,35 @@ class MainActivity : AppCompatActivity() {
                                     showHeader = false,
                                     showGenerate = false
                                 )
-                                // دفتر الغياب: للسحب فقط (فارغًا أو بأسماء الطلاب)، يُملأ باليد
-                                2 -> com.elyedali.daftarustadh.ui.AbsenceRegisterTab(
-                                    hasStudents = students.isNotEmpty(),
-                                    onPrint = { blank -> printAbsenceRegister(c, blank) }
-                                )
-                                3 -> {
-                                    // «الكشوف»: كشوف الدرجات + دفتر النصوص (سحب اللوائح والكشوف كما في دفتر المعلم)
-                                    var printTab by rememberSaveable { mutableIntStateOf(0) }
+                                // «دفاتر الإدارة»: دفتر الغياب + دفتر النصوص، للسحب والملء باليد
+                                2 -> {
+                                    var bookTab by rememberSaveable { mutableIntStateOf(0) }
                                     androidx.compose.foundation.layout.Column(Modifier.fillMaxSize()) {
                                         androidx.compose.foundation.layout.Row(
                                             Modifier.fillMaxWidth().padding(top = 10.dp),
                                             horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(8.dp)
                                         ) {
-                                            androidx.compose.material3.FilterChip(selected = printTab == 0, onClick = { printTab = 0 },
-                                                label = { Text(stringResource(R.string.kashf_reports)) })
-                                            androidx.compose.material3.FilterChip(selected = printTab == 1, onClick = { printTab = 1 },
+                                            androidx.compose.material3.FilterChip(selected = bookTab == 0, onClick = { bookTab = 0 },
+                                                label = { Text(stringResource(R.string.tab_absence)) })
+                                            androidx.compose.material3.FilterChip(selected = bookTab == 1, onClick = { bookTab = 1 },
                                                 label = { Text(stringResource(R.string.tab_textbook)) })
                                         }
-                                        if (printTab == 0) {
-                                            val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
-                                            KashfTab(
-                                                missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
-                                                onGenerate = { term -> generateKashf(c, term) },
-                                                onOpenSettings = { screen = Screen.KASHF_SETTINGS },
-                                                locked = c.id !in activatedClasses,
-                                                onActivate = { activationBack = Screen.ADMIN_CLASS; screen = Screen.ACTIVATION }
-                                            )
-                                        } else TextbookTab(onPrint = { pages -> printTextbook(c, pages) })
+                                        if (bookTab == 0) com.elyedali.daftarustadh.ui.AbsenceRegisterTab(
+                                            hasStudents = students.isNotEmpty(),
+                                            onPrint = { blank -> printAbsenceRegister(c, blank) }
+                                        ) else TextbookTab(onPrint = { pages -> printTextbook(c, pages) })
                                     }
+                                }
+                                // «الكشوف»: كشوف الدرجات
+                                3 -> {
+                                    val missing = (1..3).associateWith { t -> ReportCalc.missing(t, subjects, students, classGrades).size }
+                                    KashfTab(
+                                        missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
+                                        onGenerate = { term -> generateKashf(c, term) },
+                                        onOpenSettings = { screen = Screen.KASHF_SETTINGS },
+                                        locked = c.id !in activatedClasses,
+                                        onActivate = { activationBack = Screen.ADMIN_CLASS; screen = Screen.ACTIVATION }
+                                    )
                                 }
                                 else -> {
                                     val at = ttSlots.filter { it.classId == c.id }.associateBy { it.day to it.period }
