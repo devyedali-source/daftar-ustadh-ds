@@ -34,13 +34,15 @@ private data class Counts(val total: Int, val boys: Int, val girls: Int) {
     val unknown get() = total - boys - girls
 }
 
-/** إحصائيات المؤسسة: عدد الأقسام والطلاب والأولاد والبنات، ثم لكل مستوى ولكل قسم. */
+/** إحصائيات المؤسسة: الأقسام والطلاب والأولاد والبنات، ثم لكل مستوى ولكل قسم، ثم الأساتذة وأساتذة كل مادة. */
 @Composable
 fun StatsScreen(
     schoolName: String,
     schoolYear: String,
     classes: List<ClassEntity>,
     genderCounts: List<ClassGenderCount>,
+    teachers: List<com.elyedali.daftarustadh.data.TimetableTeacher> = emptyList(),
+    subjectLabel: (String) -> String = { it },
     onBack: () -> Unit
 ) {
     fun countsFor(ids: Set<String>): Counts {
@@ -87,6 +89,31 @@ fun StatsScreen(
             items(classes, key = { it.id }) { cl ->
                 val c = countsFor(setOf(cl.id))
                 CountsRow(cl.name, null, null, c)
+            }
+
+            // الأساتذة: عددهم، وعدد أساتذة كل مادة (من تبويب «أساتذة المواد» في الجدول الزمني)
+            item { SectionTitle(stringResource(R.string.stat_teachers_title)) }
+            item {
+                StatTile(teachers.size.toString(), stringResource(R.string.stat_teachers), MaterialTheme.colorScheme.secondary, Modifier.fillMaxWidth())
+            }
+            if (teachers.isEmpty()) item {
+                Text(stringResource(R.string.stat_no_teachers), style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            val bySubject = teachers.flatMap { t -> t.subjects.map { it to t.name } }
+                .groupBy({ it.first }, { it.second }).toList().sortedByDescending { it.second.size }
+            if (bySubject.isNotEmpty()) item { SectionTitle(stringResource(R.string.stat_teachers_by_subject)) }
+            items(bySubject, key = { "sub-" + it.first }) { (code, names) ->
+                Card(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(subjectLabel(code), style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                            Num(names.size.toString(), stringResource(R.string.stat_teachers), MaterialTheme.colorScheme.secondary)
+                        }
+                        Text(names.sorted().joinToString("، "), style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
             }
         }
     }

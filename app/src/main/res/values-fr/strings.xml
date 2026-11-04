@@ -739,4 +739,8 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="home_group_settings">Paramètres</string>
     <string name="home_group_share">Partage avec les professeurs</string>
     <string name="home_group_timetables">Emplois du temps</string>
+    <string name="stat_teachers_title">Professeurs</string>
+    <string name="stat_teachers">Professeurs</string>
+    <string name="stat_teachers_by_subject">Professeurs par matière</string>
+    <string name="stat_no_teachers">Aucun professeur enregistré. Ajoutez-les dans « Emplois du temps » → onglet « Professeurs ».</string>
 </resources>

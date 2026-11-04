@@ -1891,6 +1891,8 @@ class MainActivity : AppCompatActivity() {
                             schoolYear = inst.schoolYear,
                             classes = managedClasses,
                             genderCounts = genderCounts,
+                            teachers = ttTeachers,
+                            subjectLabel = { subjectName(it) },
                             onBack = { screen = Screen.HOME }
                         )
                     }

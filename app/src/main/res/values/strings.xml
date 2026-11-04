@@ -739,4 +739,8 @@
     <string name="home_group_settings">الإعدادات</string>
     <string name="home_group_share">مشاركة مع الأساتذة</string>
     <string name="home_group_timetables">الجداول الزمنية</string>
+    <string name="stat_teachers_title">الأساتذة</string>
+    <string name="stat_teachers">الأساتذة</string>
+    <string name="stat_teachers_by_subject">عدد أساتذة كل مادة</string>
+    <string name="stat_no_teachers">لا يوجد أساتذة مسجلون بعد. سجّلهم من «الجداول الزمنية» ← تبويب «أساتذة المواد».</string>
 </resources>
