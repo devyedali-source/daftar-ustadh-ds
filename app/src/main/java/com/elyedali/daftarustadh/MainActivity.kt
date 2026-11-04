@@ -1624,7 +1624,10 @@ class MainActivity : AppCompatActivity() {
                                         onBack = { screen = hubBack },
                                         onShare = { type -> share(c, type) },
                                         showHeader = false,
-                                        onCards = { shareClassCards(c) }
+                                        onCards = { shareClassCards(c) },
+                                        onDemo = if (com.elyedali.daftarustadh.data.DemoData.allowedFor(null)) ({
+                                            scope.launch { studentDao.saveAll(com.elyedali.daftarustadh.data.DemoData.sampleStudents(c.id)) }
+                                        }) else null
                                     )
                                     if (showSubjects) ClassSubjectsDialog(c, onPick = { code ->
                                         subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.ADMIN_CLASS; showSubjects = false; screen = Screen.GRADES

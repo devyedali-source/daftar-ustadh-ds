@@ -61,7 +61,9 @@ fun StudentsScreen(
     onOpenResults: (() -> Unit)? = null,
     showHeader: Boolean = true,
     /** الإدارة: بطاقات طلاب القسم (PDF) لمشاركتها مع الوراقة. */
-    onCards: (() -> Unit)? = null
+    onCards: (() -> Unit)? = null,
+    /** نسخ التجربة: ملء القسم الفارغ بطلاب افتراضيين. */
+    onDemo: (() -> Unit)? = null
 ) {
     var shareMenu by remember { mutableStateOf(false) }
     var editing by remember { mutableStateOf<StudentEntity?>(null) }
@@ -116,6 +118,11 @@ fun StudentsScreen(
                 }
             }
             if (students.isEmpty()) Text(stringResource(R.string.no_students))
+            if (students.isEmpty() && !readOnly && onDemo != null) {
+                OutlinedButton(onClick = onDemo, modifier = Modifier.fillMaxWidth()) {
+                    Text("🧪 " + stringResource(R.string.demo_students_button), maxLines = 2)
+                }
+            }
             LazyColumn {
                 items(students, key = { it.id }) { s ->
                     Row(

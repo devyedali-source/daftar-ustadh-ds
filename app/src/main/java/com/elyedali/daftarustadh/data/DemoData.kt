@@ -105,6 +105,29 @@ object DemoData {
         meta.put(AppMetaEntity(ClassActivation.KEY, ClassActivation.encode(setOf("demo-1as1"))))
     }
 
+    /**
+     * طلاب افتراضيون لقسم فارغ (زر «بيانات افتراضية» في صفحة الطلاب): أسماء بالعربية والفرنسية،
+     * أرقام نداء من 1، الجنس، RIM والرقم الوطني وهاتف الوكيل. معرّفاتهم تبدأ بـ «demo-».
+     */
+    fun sampleStudents(classId: String, size: Int = 30): List<StudentEntity> {
+        val now = System.currentTimeMillis()
+        val rnd = Random(now)
+        val shift = rnd.nextInt(NAMES.size)
+        return (0 until size).map { i ->
+            val (ar, fr) = NAMES[(i + shift) % NAMES.size]
+            StudentEntity(
+                id = "demo-$classId-$now-s${i + 1}", classId = classId, rollNumber = i + 1,
+                nameAr = ar, nameFr = fr,
+                rim = "26" + (100000 + rnd.nextInt(899999)).toString(),
+                nationalId = (1000000000L + rnd.nextLong(8999999999L)).toString(),
+                guardianPhone1 = listOf("2", "3", "4")[rnd.nextInt(3)] + (1000000 + rnd.nextInt(8999999)),
+                guardianPhone2 = if (rnd.nextBoolean()) "4" + (1000000 + rnd.nextInt(8999999)) else "",
+                createdAt = now,
+                gender = if (ar in GIRLS) Gender.GIRL else Gender.BOY
+            )
+        }
+    }
+
     private suspend fun seedClass(
         context: Context, db: DaftarDatabase, rnd: Random, inst: InstitutionEntity,
         classId: String, level: String, number: Int, size: Int, completeness: Double,

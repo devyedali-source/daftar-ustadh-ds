@@ -748,4 +748,5 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tt_swap_two_sessions">Échanger deux séances (par classe)</string>
     <string name="tt_swap_two_teachers">Échanger entre deux professeurs (par professeur)</string>
     <string name="tt_new_generation">Générer un nouvel emploi du temps (remplace l\'emploi du temps validé)</string>
+    <string name="demo_students_button">Données fictives (30 élèves pour tester)</string>
 </resources>

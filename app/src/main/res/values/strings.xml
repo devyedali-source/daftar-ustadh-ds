@@ -748,4 +748,5 @@
     <string name="tt_swap_two_sessions">تبادل بين حصتين (حسب القسم)</string>
     <string name="tt_swap_two_teachers">تبادل بين أستاذين (حسب الأستاذ)</string>
     <string name="tt_new_generation">توليد جدول جديد (يحل محل الجدول المعتمد)</string>
+    <string name="demo_students_button">بيانات افتراضية (30 طالبًا للتجربة)</string>
 </resources>
