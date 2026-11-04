@@ -251,7 +251,10 @@ class MainActivity : AppCompatActivity() {
                 val requestedClasses = remember(requestedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(requestedText) }
                 var activationBack by rememberSaveable { mutableStateOf(Screen.HOME) }
                 val ttSettingsText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TimetableSettings.KEY) }.collectAsState(initial = null)
-                val ttSettings = remember(ttSettingsText) { com.elyedali.daftarustadh.data.TimetableSettings.decode(ttSettingsText) }
+                val ttSettings = remember(ttSettingsText) {
+                    // التوقيت ثابت (08:00–14:00، الاثنين–السبت)؛ يُحتفظ فقط بوقت حصتي آخر النهار الذي اختارته المؤسسة
+                    com.elyedali.daftarustadh.data.TimetableSettings.fixed(com.elyedali.daftarustadh.data.TimetableSettings.decode(ttSettingsText).eveningStart)
+                }
                 val ttAssignments by remember { timetableDao.observeAssignments() }.collectAsState(initial = emptyList())
                 val ttTeachersText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TimetableTeachers.KEY) }.collectAsState(initial = null)
                 val ttTeachers = remember(ttTeachersText) { com.elyedali.daftarustadh.data.TimetableTeachers.decode(ttTeachersText) }
@@ -463,15 +466,23 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 /** توزيع أقسام كل مادة على أساتذتها بالعدل (حسب قائمة الأساتذة ومواد كل واحد). */
-                suspend fun distributeTeachers(teachers: List<com.elyedali.daftarustadh.data.TimetableTeacher> = ttTeachers) {
+                /**
+                 * @param onlyMissing الجدول موجود (مُدخل يدويًا أو مولَّد): لا يُغيَّر أستاذ مادة له أستاذ صالح،
+                 * ويُسند فقط ما ليس له أستاذ، فلا يفسد الجدول الذي أدخلته الإدارة.
+                 */
+                suspend fun distributeTeachers(teachers: List<com.elyedali.daftarustadh.data.TimetableTeacher> = ttTeachers, onlyMissing: Boolean = false) {
                     val classSubjects = managedClasses.map { c ->
                         Triple(c.id, c.levelCode, CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
                             ?.subjects.orEmpty().map { it.code to it.weeklyHours })
                     }
+                    val valid = { a: com.elyedali.daftarustadh.data.TimetableAssignmentEntity ->
+                        teachers.any { t -> t.name == a.teacherName && a.subjectCode in t.subjects } }
+                    val keep = if (onlyMissing) timetableDao.listAssignments().filter(valid).associateBy { it.classId to it.subjectCode } else emptyMap()
                     val result = com.elyedali.daftarustadh.data.TimetableTeachers.distribute(teachers, classSubjects)
+                        .filter { (it.classId to it.subjectCode) !in keep }
                     val covered = teachers.flatMap { it.subjects }.toSet()
                     classSubjects.forEach { (cid, _, subs) ->
-                        subs.filter { it.first in covered }.forEach { (code, _) -> timetableDao.deleteAssignment(cid, code) }
+                        subs.filter { it.first in covered && (cid to it.first) !in keep }.forEach { (code, _) -> timetableDao.deleteAssignment(cid, code) }
                     }
                     result.forEach { timetableDao.saveAssignment(it) }
                     // الحصص الموجودة تأخذ الأستاذ الجديد
@@ -496,7 +507,7 @@ class MainActivity : AppCompatActivity() {
                             timetableDao.saveSlots(ttSlots.filter { it.teacherName in removed }.map { it.copy(teacherName = "") })
                         }
                         // توزيع تلقائي: أقسام كل مادة تُوزَّع على أساتذتها حسب الساعات المبرمجة لكل قسم
-                        distributeTeachers(newList)
+                        distributeTeachers(newList, onlyMissing = ttSlots.any { s -> managedClasses.any { it.id == s.classId } })
                     }
                 }
 
@@ -1463,11 +1474,18 @@ class MainActivity : AppCompatActivity() {
                         onDistribute = { scope.launch { distributeTeachers() } },
                         onGenerate = { generateTimetable() },
                         onSwap = { cid, a, b -> swapSlots(cid, a, b, keepApproval = ttApproved) },
-                        onEditCell = { cid, d, p, code ->
+                        // الإدخال اليدوي: المادة والأستاذ؛ الأستاذ المختار يصير أستاذ المادة في القسم (وكل حصصها فيه)
+                        onEditCell = { cid, d, p, code, chosen ->
                             scope.launch {
                                 if (code == null) timetableDao.deleteSlot(cid, d, p)
                                 else {
-                                    val teacher = ttAssignments.firstOrNull { it.classId == cid && it.subjectCode == code }?.teacherName.orEmpty()
+                                    val assigned = ttAssignments.firstOrNull { it.classId == cid && it.subjectCode == code }?.teacherName.orEmpty()
+                                    val teacher = chosen ?: assigned
+                                    if (chosen != null && chosen != assigned) {
+                                        if (chosen.isBlank()) timetableDao.deleteAssignment(cid, code)
+                                        else timetableDao.saveAssignment(com.elyedali.daftarustadh.data.TimetableAssignmentEntity(cid, code, chosen))
+                                        timetableDao.saveSlots(ttSlots.filter { it.classId == cid && it.subjectCode == code }.map { it.copy(teacherName = chosen) })
+                                    }
                                     timetableDao.saveSlots(listOf(com.elyedali.daftarustadh.data.TimetableSlotEntity(cid, d, p, code, teacher)))
                                 }
                             }

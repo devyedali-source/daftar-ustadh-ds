@@ -466,7 +466,7 @@
     <string name="tt_delete_teacher">حذف الأستاذ %1$s؟</string>
     <string name="tt_delete">حذف</string>
     <string name="tt_other_subject">لا يدرّس هذه المادة</string>
-    <string name="tt_no_teacher_for_subject">بدون أستاذ</string>
+    <string name="tt_no_teacher_for_subject">لا يوجد أستاذ مسجّل لهذه المادة: أضفه في «أساتذة المواد».</string>
     <string name="tt_teachers_hint">راجع أستاذ كل مادة في القسم، والمس المادة لتغييره.</string>
     <string name="home_choose_year_title">دفتر الأستاذ DS - اختيار السنة الدراسية 📅</string>
     <string name="home_year_title">السنة الدراسية: %1$s 🏫</string>
@@ -724,4 +724,13 @@
     <string name="plan_missing">لم يصل بعد تخطيط: %1$s</string>
     <string name="plan_none">لم يصل بعد التخطيط السنوي لموادك في هذا المستوى.</string>
     <string name="plan_no_eps">التربية البدنية ليس لها تخطيط سنوي.</string>
+    <string name="tt_fixed_times">التوقيت ثابت: من الاثنين إلى السبت، من 08:00 إلى 14:00 (الجمعة حتى 12:00). الحصص: 08:00–09:00، 09:00–10:00، استراحة، 10:15–11:05، 11:05–12:00، ثم حصتا آخر النهار.</string>
+    <string name="tt_evening_title">توقيت حصتي آخر النهار</string>
+    <string name="tt_evening_other">توقيت آخر…</string>
+    <string name="tt_evening_hint">★ الأغلب: 12:15–14:00. بعض المؤسسات تجعلهما مساءً (مثل 16:00–18:00 أو 17:00–19:00) أو في توقيت تختاره.</string>
+    <string name="tt_manual_hint">أدخل جدول هذا القسم يدويًا (إن أعددته خارج التطبيق): المس خانة فارغة واختر المادة ثم الأستاذ. أو ولّد الجدول تلقائيًا من «الإعدادات والتوليد».</string>
+    <string name="tt_pick_subject">اختر المادة (الحصص المدخلة / الحصص المقررة):</string>
+    <string name="tt_pick_teacher">اختر أستاذ %1$s:</string>
+    <string name="tt_teacher_busy">مشغول في قسم آخر في هذا الوقت</string>
+    <string name="tt_without_teacher">بدون أستاذ الآن</string>
 </resources>

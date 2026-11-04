@@ -119,6 +119,9 @@ data class TimetableSettings(
 ) {
     val periods: Int get() = times.size
 
+    /** بداية حصتي آخر النهار المحفوظة (الحصة الخامسة). */
+    val eveningStart: Int get() = times.getOrNull(4)?.first ?: DEFAULT_EVENING
+
     /** عدد حصص يوم معيّن (الجمعة أقصر). */
     fun periodsOn(day: Int): Int = (dayPeriods[day] ?: periods).coerceIn(0, periods)
 
@@ -153,6 +156,22 @@ data class TimetableSettings(
         )
 
         fun hhmm(m: Int) = "%02d:%02d".format(java.util.Locale.ROOT, (m / 60) % 24, m % 60)
+
+        /** أيام الدراسة ثابتة: الاثنين إلى السبت. */
+        val FIXED_DAYS = listOf(0, 1, 2, 3, 4, 5)
+
+        /** بداية حصتي آخر النهار: 12:15 (الأغلب) أو مساءً حسب اختيار المؤسسة (مثل 16:00 أو 17:00). */
+        const val DEFAULT_EVENING = 12 * 60 + 15
+
+        /**
+         * التوقيت ثابت: 08:00–14:00 من الاثنين إلى السبت، والجمعة حتى 12:00 (أربع حصص).
+         * الشيء الوحيد الذي تختاره المؤسسة: وقت حصتي آخر النهار (بين 12 و14، أو مساءً).
+         */
+        fun fixed(eveningStart: Int = DEFAULT_EVENING): TimetableSettings {
+            val evening = if (eveningStart == DEFAULT_EVENING) DEFAULT_TIMES.drop(4)
+                else listOf(eveningStart to eveningStart + 60, eveningStart + 60 to eveningStart + 120)
+            return TimetableSettings(days = FIXED_DAYS, times = DEFAULT_TIMES.take(4) + evening, dayPeriods = mapOf(4 to 4))
+        }
 
         fun decode(text: String?): TimetableSettings {
             if (text.isNullOrBlank()) return TimetableSettings()

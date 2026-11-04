@@ -104,7 +104,7 @@ fun TimetableScreen(
     onDistribute: () -> Unit,
     onGenerate: () -> Unit,
     onSwap: (classId: String, a: Pair<Int, Int>, b: Pair<Int, Int>) -> String?,
-    onEditCell: (classId: String, day: Int, period: Int, subjectCode: String?) -> Unit,
+    onEditCell: (classId: String, day: Int, period: Int, subjectCode: String?, teacher: String?) -> Unit,
     onShareClass: (ClassEntity) -> Unit,
     onShareTeacherPdf: (String) -> Unit,
     onSendTeacherFile: (String) -> Unit,
@@ -127,7 +127,7 @@ fun TimetableScreen(
                     0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate,
                         problems, approved, onApprove)
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
-                    2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass)
+                    2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass, teachers)
                     else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile, onSwap)
                 }
             }
@@ -162,67 +162,26 @@ private fun GenerateTab(
     }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(top = 10.dp, bottom = 16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        SettingCard(stringResource(R.string.tt_days)) {
-            FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                (0..6).forEach { d ->
-                    FilterChip(selected = d in settings.days, onClick = {
-                        val nd = if (d in settings.days) settings.days - d else (settings.days + d).sorted()
-                        if (nd.isNotEmpty()) onSave(settings.copy(days = nd))
-                    }, label = { Text(days[d]) })
-                }
-            }
-        }
+        // التوقيت ثابت: 08:00–14:00 من الاثنين إلى السبت (الجمعة حتى 12:00)؛ تختار المؤسسة فقط وقت حصتي آخر النهار
         SettingCard(stringResource(R.string.tt_times)) {
-            Text(stringResource(R.string.tt_times_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            fun pick(minutes: Int, set: (Int) -> Unit) {
-                TimePickerDialog(context, { _, h, m -> set(h * 60 + m) }, minutes / 60, minutes % 60, true).show()
-            }
-            settings.times.forEachIndexed { i, (st, en) ->
-                val br = settings.breakBefore(i)
-                if (br > 0) Text("☕ " + stringResource(R.string.tt_break_line,
-                    TimetableSettings.hhmm(settings.end(i - 1)), TimetableSettings.hhmm(st), br),
-                    fontSize = 12.sp, color = MaterialTheme.colorScheme.tertiary)
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    Text("${i + 1}", fontWeight = FontWeight.Black, modifier = Modifier.width(22.dp))
-                    OutlinedButton(onClick = {
-                        pick(st) { v -> onSave(settings.copy(times = settings.times.toMutableList().also { it[i] = v to maxOf(en, v + 5) })) }
-                    }) { Text("\u2066${TimetableSettings.hhmm(st)}\u2069") }
-                    Text("→")
-                    OutlinedButton(onClick = {
-                        pick(en) { v -> if (v > st) onSave(settings.copy(times = settings.times.toMutableList().also { it[i] = st to v })) }
-                    }) { Text("\u2066${TimetableSettings.hhmm(en)}\u2069") }
-                    Text(stringResource(R.string.tt_minutes, en - st), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Text(stringResource(R.string.tt_fixed_times), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Text(stringResource(R.string.tt_evening_title), fontWeight = FontWeight.Bold, fontSize = 13.sp)
+            val ev = settings.eveningStart
+            val presets = listOf(TimetableSettings.DEFAULT_EVENING, 16 * 60, 17 * 60)
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                presets.forEach { st ->
+                    val label = if (st == TimetableSettings.DEFAULT_EVENING) "12:15 – 14:00" else
+                        "${TimetableSettings.hhmm(st)} – ${TimetableSettings.hhmm(st + 120)}"
+                    FilterChip(selected = ev == st, onClick = { onSave(TimetableSettings.fixed(st)) },
+                        label = { Text("\u2066$label\u2069" + if (st == TimetableSettings.DEFAULT_EVENING) " ★" else "") })
                 }
+                FilterChip(selected = ev !in presets, onClick = {
+                    TimePickerDialog(context, { _, h, m -> onSave(TimetableSettings.fixed(h * 60 + m)) },
+                        if (ev in presets) 15 else ev / 60, if (ev in presets) 0 else ev % 60, true).show()
+                }, label = { Text(if (ev in presets) stringResource(R.string.tt_evening_other)
+                    else "\u2066${TimetableSettings.hhmm(ev)} – ${TimetableSettings.hhmm(ev + 120)}\u2069") })
             }
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                OutlinedButton(enabled = settings.periods < 12, onClick = {
-                    val last = settings.times.last()
-                    val len = last.second - last.first
-                    onSave(settings.copy(times = settings.times + (last.second to last.second + len)))
-                }) { Text("+ " + stringResource(R.string.tt_add_period)) }
-                OutlinedButton(enabled = settings.periods > 1, onClick = {
-                    onSave(settings.copy(times = settings.times.dropLast(1)))
-                }) { Text("− " + stringResource(R.string.tt_remove_period)) }
-                TextButton(onClick = { onSave(settings.copy(times = TimetableSettings.DEFAULT_TIMES)) }) {
-                    Text(stringResource(R.string.tt_default_times))
-                }
-            }
-        }
-        SettingCard(stringResource(R.string.tt_day_periods)) {
-            Text(stringResource(R.string.tt_day_periods_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            settings.days.forEach { d ->
-                val n = settings.periodsOn(d)
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text(days[d], Modifier.width(80.dp), fontWeight = FontWeight.SemiBold)
-                    Stepper(n, 0, settings.periods) { v ->
-                        val map = settings.dayPeriods.toMutableMap()
-                        if (v == settings.periods) map.remove(d) else map[d] = v
-                        onSave(settings.copy(dayPeriods = map))
-                    }
-                    Text("\u2066${if (n > 0) TimetableSettings.hhmm(settings.end(n - 1)) else "—"}\u2069", fontSize = 12.sp,
-                        color = MaterialTheme.colorScheme.secondary)
-                }
-            }
+            Text(stringResource(R.string.tt_evening_hint), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
         Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
@@ -607,8 +566,9 @@ private fun ByClassTab(
     slots: List<TimetableSlotEntity>,
     initialClassId: String?,
     onSwap: (String, Pair<Int, Int>, Pair<Int, Int>) -> String?,
-    onEditCell: (String, Int, Int, String?) -> Unit,
-    onShare: (ClassEntity) -> Unit
+    onEditCell: (String, Int, Int, String?, String?) -> Unit,
+    onShare: (ClassEntity) -> Unit,
+    teachers: List<TimetableTeacher> = emptyList()
 ) {
     val context = LocalContext.current
     var classId by rememberSaveable { mutableStateOf(initialClassId ?: classes.firstOrNull()?.id) }
@@ -622,57 +582,85 @@ private fun ByClassTab(
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(vertical = 10.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)) {
         ClassChips(classes, cid) { classId = it; selected = null }
-        if (mine.isEmpty()) {
-            Text(stringResource(R.string.tt_no_timetable), color = MaterialTheme.colorScheme.onSurfaceVariant)
-        } else {
-            Text(stringResource(R.string.tt_swap_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            TimetableGrid(
-                settings = settings,
-                cell = { d, p -> at[d to p]?.let { subjectLabel(it.subjectCode) to it.teacherName } },
-                colorKey = { d, p -> at[d to p]?.subjectCode },
-                selected = selected,
-                onClick = { d, p ->
-                    val s = selected
-                    when {
-                        s == null -> selected = d to p
-                        s == (d to p) -> selected = null
-                        else -> {
-                            val busy = onSwap(cid, s, d to p)
-                            if (busy != null) Toast.makeText(context, busyMsg.format(busy), Toast.LENGTH_LONG).show()
-                            selected = null
-                        }
+        // الإدخال اليدوي متاح دائمًا (لمن أعدّ جدوله خارج التطبيق): خانة فارغة ← اختيار المادة والأستاذ
+        Text(stringResource(if (mine.isEmpty()) R.string.tt_manual_hint else R.string.tt_swap_hint), fontSize = 12.sp,
+            color = MaterialTheme.colorScheme.onSurfaceVariant)
+        TimetableGrid(
+            settings = settings,
+            cell = { d, p -> at[d to p]?.let { subjectLabel(it.subjectCode) to it.teacherName } },
+            colorKey = { d, p -> at[d to p]?.subjectCode },
+            selected = selected,
+            onClick = { d, p ->
+                val s = selected
+                when {
+                    s == null && at[d to p] == null -> editCell = d to p      // خانة فارغة: إدخال يدوي
+                    s == null -> selected = d to p
+                    s == (d to p) -> selected = null
+                    else -> {
+                        val busy = onSwap(cid, s, d to p)
+                        if (busy != null) Toast.makeText(context, busyMsg.format(busy), Toast.LENGTH_LONG).show()
+                        selected = null
                     }
-                },
-                onLongClick = { d, p -> editCell = d to p }
-            )
-            val hours = subjectsByClass[cid].orEmpty().sumOf { it.weeklyHours }
-            Text(stringResource(R.string.tt_class_hours, mine.size, hours), fontSize = 12.sp,
-                color = if (mine.size < hours) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.secondary)
-            Button(onClick = { onShare(c) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
-                Text("🖨️ " + stringResource(R.string.tt_share_class, c.name))
-            }
+                }
+            },
+            onLongClick = { d, p -> selected = null; editCell = d to p }
+        )
+        val hours = subjectsByClass[cid].orEmpty().sumOf { it.weeklyHours }
+        Text(stringResource(R.string.tt_class_hours, mine.size, hours), fontSize = 12.sp,
+            color = if (mine.size < hours) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.secondary)
+        if (mine.isNotEmpty()) Button(onClick = { onShare(c) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
+            Text("🖨️ " + stringResource(R.string.tt_share_class, c.name))
         }
     }
     editCell?.let { (d, p) ->
         val subjects = subjectsByClass[cid].orEmpty()
+        var pickedSubject by remember(d, p) { mutableStateOf<String?>(null) }
+        // الأستاذ مشغول في قسم آخر في هذا الوقت؟
+        fun busyElsewhere(t: String) = slots.any { it.classId != cid && it.teacherName == t && it.day == d && it.period == p }
         AlertDialog(
             onDismissRequest = { editCell = null },
             title = { Text(stringResource(R.string.tt_edit_cell, dayLabels()[d], p + 1)) },
             text = {
-                LazyColumn(Modifier.heightIn(max = 380.dp)) {
-                    item {
-                        Text(stringResource(R.string.tt_empty_cell), Modifier.fillMaxWidth().clickable {
-                            onEditCell(cid, d, p, null); editCell = null
-                        }.padding(vertical = 10.dp), color = MaterialTheme.colorScheme.error)
-                    }
-                    items(subjects, key = { it.code }) { s ->
-                        val t = assignments.firstOrNull { it.classId == cid && it.subjectCode == s.code }?.teacherName.orEmpty()
-                        Text(subjectLabel(s.code) + if (t.isNotBlank()) " — $t" else "",
-                            Modifier.fillMaxWidth().clickable { onEditCell(cid, d, p, s.code); editCell = null }.padding(vertical = 10.dp))
+                LazyColumn(Modifier.heightIn(max = 420.dp)) {
+                    val code = pickedSubject
+                    if (code == null) {
+                        if (at[d to p] != null) item {
+                            Text(stringResource(R.string.tt_empty_cell), Modifier.fillMaxWidth().clickable {
+                                onEditCell(cid, d, p, null, null); editCell = null
+                            }.padding(vertical = 10.dp), color = MaterialTheme.colorScheme.error)
+                        }
+                        item { Text(stringResource(R.string.tt_pick_subject), fontWeight = FontWeight.Bold, fontSize = 13.sp) }
+                        items(subjects, key = { it.code }) { s ->
+                            val placed = mine.count { it.subjectCode == s.code }
+                            Text(subjectLabel(s.code) + "  (\u2066$placed/${s.weeklyHours}\u2069)",
+                                Modifier.fillMaxWidth().clickable { pickedSubject = s.code }.padding(vertical = 10.dp),
+                                color = if (placed >= s.weeklyHours) MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.onSurface)
+                        }
+                    } else {
+                        val assigned = assignments.firstOrNull { it.classId == cid && it.subjectCode == code }?.teacherName.orEmpty()
+                        val options = (listOf(assigned).filter { it.isNotBlank() } +
+                            teachers.filter { code in it.subjects }.map { it.name }).distinct()
+                        item { Text(stringResource(R.string.tt_pick_teacher, subjectLabel(code)), fontWeight = FontWeight.Bold, fontSize = 13.sp) }
+                        items(options, key = { "t-$it" }) { t ->
+                            val busy = busyElsewhere(t)
+                            Text("👨‍🏫 $t" + if (busy) "  — " + stringResource(R.string.tt_teacher_busy) else "",
+                                Modifier.fillMaxWidth().clickable(enabled = !busy) { onEditCell(cid, d, p, code, t); editCell = null }
+                                    .padding(vertical = 10.dp),
+                                color = if (busy) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurface)
+                        }
+                        if (options.isEmpty()) item {
+                            Text(stringResource(R.string.tt_no_teacher_for_subject), fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
+                        }
+                        item {
+                            Text(stringResource(R.string.tt_without_teacher), Modifier.fillMaxWidth().clickable {
+                                onEditCell(cid, d, p, code, ""); editCell = null
+                            }.padding(vertical = 10.dp), color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
                     }
                 }
             },
-            confirmButton = { TextButton(onClick = { editCell = null }) { Text(stringResource(R.string.cancel)) } }
+            confirmButton = { TextButton(onClick = { if (pickedSubject != null) pickedSubject = null else editCell = null }) {
+                Text(stringResource(if (pickedSubject != null) R.string.back else R.string.cancel)) } }
         )
     }
 }
