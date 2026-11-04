@@ -125,7 +125,7 @@ fun TimetableScreen(
             Box(Modifier.weight(1f).fillMaxWidth()) {
                 when (tab) {
                     0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate,
-                        problems, approved, onApprove)
+                        problems, approved, onApprove, onGoTab = { tab = it })
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
                     2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass, teachers)
                     else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile, onSwap)
@@ -151,7 +151,8 @@ private fun GenerateTab(
     onGenerate: () -> Unit,
     problems: List<String>,
     approved: Boolean,
-    onApprove: (Boolean) -> Unit
+    onApprove: (Boolean) -> Unit,
+    onGoTab: (Int) -> Unit = {}
 ) {
     val context = LocalContext.current
     val days = dayLabels()
@@ -163,11 +164,22 @@ private fun GenerateTab(
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(top = 10.dp, bottom = 16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)) {
         // التوقيت ثابت: 08:00–14:00 من الاثنين إلى السبت (الجمعة حتى 12:00)؛ تختار المؤسسة فقط وقت حصتي آخر النهار
-        // البطاقة مخفية تحت زر «الإعدادات»
+        // زر «الإعدادات»: يخفي توقيت الحصص، وبعد اعتماد الجدول يخفي أيضًا التبادلات وتوليد جدول جديد
         var showTimes by remember { mutableStateOf(false) }
         OutlinedButton(onClick = { showTimes = !showTimes }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
-            Text("⚙️ " + stringResource(R.string.home_group_settings) + " — " + stringResource(R.string.tt_times) +
+            Text("⚙️ " + stringResource(R.string.home_group_settings) +
+                (if (approved) "" else " — " + stringResource(R.string.tt_times)) +
                 if (showTimes) "  ▴" else "  ▾", fontWeight = FontWeight.Bold)
+        }
+        // التبادلات: بين حصتين في جدول قسم، أو بين أستاذين في جدول أستاذ
+        if (showTimes && approved) SettingCard(stringResource(R.string.tt_swaps_title)) {
+            Text(stringResource(R.string.tt_swaps_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            OutlinedButton(onClick = { onGoTab(2) }, modifier = Modifier.fillMaxWidth()) {
+                Text("🔁 " + stringResource(R.string.tt_swap_two_sessions), fontWeight = FontWeight.Bold)
+            }
+            OutlinedButton(onClick = { onGoTab(3) }, modifier = Modifier.fillMaxWidth()) {
+                Text("🔁 " + stringResource(R.string.tt_swap_two_teachers), fontWeight = FontWeight.Bold)
+            }
         }
         if (showTimes) SettingCard(stringResource(R.string.tt_times)) {
             Text(stringResource(R.string.tt_fixed_times), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -189,9 +201,12 @@ private fun GenerateTab(
             }
             Text(stringResource(R.string.tt_evening_hint), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
-        Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
+        // توليد الجدول: بعد الاعتماد يُخفى تحت زر «الإعدادات»
+        if (!approved || showTimes) Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
             colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
             Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                if (approved) Text("🆕 " + stringResource(R.string.tt_new_generation), fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.primary)
                 Text(stringResource(R.string.tt_capacity, settings.slotCount, maxHours), fontWeight = FontWeight.Bold,
                     color = if (maxHours > settings.slotCount) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onPrimaryContainer)
                 Text(stringResource(R.string.tt_classes_count, classes.size), fontSize = 13.sp)
