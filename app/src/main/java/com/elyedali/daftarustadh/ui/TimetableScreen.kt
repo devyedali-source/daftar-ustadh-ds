@@ -112,7 +112,9 @@ fun TimetableScreen(
     initialTab: Int? = null,
     problems: List<String> = emptyList(),
     approved: Boolean = false,
-    onApprove: (Boolean) -> Unit = {}
+    onApprove: (Boolean) -> Unit = {},
+    manual: Boolean = false,
+    onStartManual: () -> Unit = {}
 ) {
     var tab by rememberSaveable { mutableIntStateOf(initialTab ?: if (initialClassId != null && slots.any { it.classId == initialClassId }) 2 else 0) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -125,7 +127,7 @@ fun TimetableScreen(
             Box(Modifier.weight(1f).fillMaxWidth()) {
                 when (tab) {
                     0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate,
-                        problems, approved, onApprove, onGoTab = { tab = it })
+                        problems, approved, onApprove, onGoTab = { tab = it }, manual = manual, onStartManual = onStartManual)
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
                     2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass, teachers)
                     else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile, onSwap)
@@ -152,11 +154,14 @@ private fun GenerateTab(
     problems: List<String>,
     approved: Boolean,
     onApprove: (Boolean) -> Unit,
-    onGoTab: (Int) -> Unit = {}
+    onGoTab: (Int) -> Unit = {},
+    manual: Boolean = false,
+    onStartManual: () -> Unit = {}
 ) {
     val context = LocalContext.current
     val days = dayLabels()
     var confirm by remember { mutableStateOf(false) }
+    var confirmManual by remember { mutableStateOf(false) }
     val maxHours = classes.maxOfOrNull { c -> subjectsByClass[c.id].orEmpty().sumOf { it.weeklyHours } } ?: 0
     val missing = classes.sumOf { c ->
         subjectsByClass[c.id].orEmpty().count { s -> assignments.none { it.classId == c.id && it.subjectCode == s.code && it.teacherName.isNotBlank() } }
@@ -200,6 +205,25 @@ private fun GenerateTab(
                     else "\u2066${TimetableSettings.hhmm(ev)} – ${TimetableSettings.hhmm(ev + 120)}\u2069") })
             }
             Text(stringResource(R.string.tt_evening_hint), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        // الإدخال اليدوي: لمؤسسة أعدّت جدولها خارج التطبيق
+        if (!approved || showTimes) Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
+            colors = CardDefaults.cardColors(containerColor = if (manual) Color(0xFFFFF8E1) else MaterialTheme.colorScheme.surface),
+            elevation = CardDefaults.cardElevation(1.dp)) {
+            Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Text("✍️ " + stringResource(R.string.tt_manual_title), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
+                if (manual) {
+                    Text(stringResource(R.string.tt_manual_on), fontSize = 12.sp)
+                    Button(onClick = { onGoTab(2) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
+                        Text("📝 " + stringResource(R.string.tt_manual_go), fontWeight = FontWeight.Bold)
+                    }
+                } else {
+                    Text(stringResource(R.string.tt_manual_desc), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    OutlinedButton(onClick = { confirmManual = true }, enabled = classes.isNotEmpty(), modifier = Modifier.fillMaxWidth()) {
+                        Text("✍️ " + stringResource(R.string.tt_manual_start), fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
         }
         // توليد الجدول: بعد الاعتماد يُخفى تحت زر «الإعدادات»
         if (!approved || showTimes) Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(16.dp),
@@ -256,6 +280,12 @@ private fun GenerateTab(
             }
         }
     }
+    if (confirmManual) AlertDialog(
+        onDismissRequest = { confirmManual = false },
+        text = { Text(stringResource(R.string.tt_manual_confirm)) },
+        confirmButton = { TextButton(onClick = { confirmManual = false; onStartManual(); onGoTab(2) }) { Text(stringResource(R.string.tt_manual_start)) } },
+        dismissButton = { TextButton(onClick = { confirmManual = false }) { Text(stringResource(R.string.cancel)) } }
+    )
     if (confirm) AlertDialog(
         onDismissRequest = { confirm = false },
         text = { Text(stringResource(R.string.tt_replace_confirm)) },

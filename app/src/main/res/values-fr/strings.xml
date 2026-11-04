@@ -749,4 +749,10 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tt_swap_two_teachers">Échanger entre deux professeurs (par professeur)</string>
     <string name="tt_new_generation">Générer un nouvel emploi du temps (remplace l\'emploi du temps validé)</string>
     <string name="demo_students_button">Données fictives (30 élèves pour tester)</string>
+    <string name="tt_manual_title">Saisie manuelle de l\'emploi du temps</string>
+    <string name="tt_manual_desc">Pour un établissement qui a préparé son emploi du temps hors de l\'application : les emplois du temps de toutes les classes sont vidés et la répartition automatique des professeurs s\'arrête, puis vous remplissez chaque case avec la matière et le professeur depuis l\'onglet « Par classe ».</string>
+    <string name="tt_manual_start">Commencer la saisie manuelle</string>
+    <string name="tt_manual_confirm">L\'emploi du temps actuel de toutes les classes et les affectations des professeurs seront effacés, et la validation annulée. La liste des professeurs est conservée. Continuer ?</string>
+    <string name="tt_manual_on">Saisie manuelle activée : l\'application ne répartit pas les professeurs. Remplissez l\'emploi du temps de chaque classe dans l\'onglet « Par classe », puis validez-le. Pour revenir à la répartition automatique, appuyez sur « Générer l\'emploi du temps ».</string>
+    <string name="tt_manual_go">Remplir les emplois du temps des classes</string>
 </resources>

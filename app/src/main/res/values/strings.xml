@@ -749,4 +749,10 @@
     <string name="tt_swap_two_teachers">تبادل بين أستاذين (حسب الأستاذ)</string>
     <string name="tt_new_generation">توليد جدول جديد (يحل محل الجدول المعتمد)</string>
     <string name="demo_students_button">بيانات افتراضية (30 طالبًا للتجربة)</string>
+    <string name="tt_manual_title">إدخال الجدول يدويًا</string>
+    <string name="tt_manual_desc">لمؤسسة أعدّت جدولها خارج التطبيق: تُفرغ جداول جميع الأقسام ويتوقف التوزيع التلقائي للأساتذة، ثم تملأ كل خانة بالمادة والأستاذ من تبويب «حسب القسم».</string>
+    <string name="tt_manual_start">بدء الإدخال اليدوي</string>
+    <string name="tt_manual_confirm">سيُمسح الجدول الحالي لجميع الأقسام وتعيينات الأساتذة، ويُلغى الاعتماد. قائمة الأساتذة تبقى كما هي. هل تريد المتابعة؟</string>
+    <string name="tt_manual_on">الإدخال اليدوي مفعّل: لا يوزّع التطبيق الأساتذة على الأقسام. املأ جدول كل قسم من تبويب «حسب القسم»، ثم اعتمد الجدول. للعودة إلى التوزيع التلقائي اضغط «توليد الجدول».</string>
+    <string name="tt_manual_go">ملء جداول الأقسام</string>
 </resources>

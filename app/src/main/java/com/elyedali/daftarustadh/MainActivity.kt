@@ -105,6 +105,8 @@ private const val TEACHER_NAME_KEY = "teacher_name"
 private const val AR_LATN = "ar-u-nu-latn"
 /** بصمة الجدول الزمني المعتمد. */
 private const val TT_APPROVED_KEY = "timetable_approved"
+/** الجدول يُدخل يدويًا (أُعدّ خارج التطبيق): لا توزيع تلقائي للأساتذة على الأقسام. */
+private const val TT_MANUAL_KEY = "timetable_manual"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
     ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES }
@@ -260,6 +262,8 @@ class MainActivity : AppCompatActivity() {
                 val ttTeachers = remember(ttTeachersText) { com.elyedali.daftarustadh.data.TimetableTeachers.decode(ttTeachersText) }
                 val ttSlots by remember { timetableDao.observeSlots() }.collectAsState(initial = emptyList())
                 val ttApprovedSig by remember { metaDao.observe(TT_APPROVED_KEY) }.collectAsState(initial = null)
+                val ttManualText by remember { metaDao.observe(TT_MANUAL_KEY) }.collectAsState(initial = null)
+                val ttManual = ttManualText == "1"
                 val myTimetable by remember { timetableDao.observeTeacherTimetable() }.collectAsState(initial = emptyList())
                 var ttGenerating by remember { mutableStateOf(false) }
                 var ttResult by remember { mutableStateOf<String?>(null) }
@@ -507,7 +511,21 @@ class MainActivity : AppCompatActivity() {
                             timetableDao.saveSlots(ttSlots.filter { it.teacherName in removed }.map { it.copy(teacherName = "") })
                         }
                         // توزيع تلقائي: أقسام كل مادة تُوزَّع على أساتذتها حسب الساعات المبرمجة لكل قسم
-                        distributeTeachers(newList, onlyMissing = ttSlots.any { s -> managedClasses.any { it.id == s.classId } })
+                        // (إلا في الإدخال اليدوي: الإدارة تختار أستاذ كل حصة بنفسها)
+                        if (metaDao.get(TT_MANUAL_KEY) != "1")
+                            distributeTeachers(newList, onlyMissing = ttSlots.any { s -> managedClasses.any { it.id == s.classId } })
+                    }
+                }
+
+                /** الإدخال اليدوي: جداول كل الأقسام فارغة، وتعيينات الأساتذة تُمسح، ويُلغى الاعتماد. */
+                fun startManualTimetable() {
+                    val ids = managedClasses.map { it.id }
+                    scope.launch {
+                        metaDao.put(AppMetaEntity(TT_MANUAL_KEY, "1"))
+                        metaDao.put(AppMetaEntity(TT_APPROVED_KEY, ""))
+                        timetableDao.deleteSlotsOf(ids)
+                        ttAssignments.filter { it.classId in ids }.forEach { timetableDao.deleteAssignment(it.classId, it.subjectCode) }
+                        ttResult = null
                     }
                 }
 
@@ -517,6 +535,8 @@ class MainActivity : AppCompatActivity() {
                     if (classesNow.isEmpty()) return
                     ttGenerating = true
                     scope.launch {
+                        // التوليد التلقائي ينهي الإدخال اليدوي
+                        metaDao.put(AppMetaEntity(TT_MANUAL_KEY, ""))
                         // قبل كل توليد: توزيع تلقائي للأقسام على أساتذة كل مادة (يشمل الأقسام المضافة حديثًا)
                         if (ttTeachers.isNotEmpty()) distributeTeachers()
                         val assignmentsNow = timetableDao.listAssignments()
@@ -1493,6 +1513,8 @@ class MainActivity : AppCompatActivity() {
                         onSaveTeachers = { saveTeachers(it) },
                         onDistribute = { scope.launch { distributeTeachers() } },
                         onGenerate = { generateTimetable() },
+                        manual = ttManual,
+                        onStartManual = { startManualTimetable() },
                         onSwap = { cid, a, b -> swapSlots(cid, a, b, keepApproval = ttApproved) },
                         // الإدخال اليدوي: المادة والأستاذ؛ الأستاذ المختار يصير أستاذ المادة في القسم (وكل حصصها فيه)
                         onEditCell = { cid, d, p, code, chosen ->
