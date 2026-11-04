@@ -1677,7 +1677,7 @@ class MainActivity : AppCompatActivity() {
                                     ) {
                                         // هذه الصفحة تعرض فقط جدول القسم المعتمد؛ الجدول يُعدّ ويُولَّد لكل الأقسام معًا من «الجدول الزمني»
                                         if (at.isEmpty() || !ttApproved) Text(stringResource(R.string.tt_class_not_approved),
-                                            color = MaterialTheme.colorScheme.error)
+                                            color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                         else com.elyedali.daftarustadh.ui.TimetableGrid(
                                             settings = ttSettings,
                                             cell = { d, p -> at[d to p]?.let { subjectName(it.subjectCode) to it.teacherName } },
