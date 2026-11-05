@@ -1,6 +1,7 @@
 package com.elyedali.daftarustadh.ui
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -56,6 +57,13 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
     val rows = remember(subject, levelCode) { subject?.let { AnnualPlans.rows(context, it, levelCode) }.orEmpty() }
     val termNames = listOf("", stringResource(R.string.term_1), stringResource(R.string.term_2), stringResource(R.string.term_3))
     val holiday = stringResource(R.string.plan_holiday)
+    // دروس الكتاب المرتبطة بعناوين التخطيط (محتوى الكتاب، السبورة، التحضير)
+    val lessonSet = remember(subject, levelCode) { subject?.let { com.elyedali.daftarustadh.data.LessonBank.load(context, it, levelCode) } }
+    var opened by remember { mutableStateOf<Pair<com.elyedali.daftarustadh.data.BookLesson, String>?>(null) }
+    opened?.let { (l, week) ->
+        LessonDialog(l, available.firstOrNull { it.first == subject }?.second.orEmpty(), week,
+            lessonSet?.book.orEmpty(), lessonSet?.bookTitle.orEmpty()) { opened = null }
+    }
 
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
         item {
@@ -81,6 +89,8 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
             Text(available.first { it.first == subject }.second + " — " + levelCode, fontWeight = FontWeight.Bold, fontSize = 15.sp)
             val src = AnnualPlans.source(context, subject)
             if (src.isNotBlank()) Text("📄 " + src, fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (lessonSet != null) Text("📖 " + stringResource(R.string.plan_lessons_hint), fontSize = 12.sp,
+                color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold)
         }
         itemsIndexed(rows) { i, r ->
             val prev = rows.getOrNull(i - 1)
@@ -106,8 +116,15 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
                         fontWeight = FontWeight.Bold, fontSize = 12.sp, color = fg, textAlign = TextAlign.Start)
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                         if (r.kind == "holiday" && r.items.isEmpty()) Text(holiday, fontWeight = FontWeight.Bold, color = fg, fontSize = 13.sp)
-                        r.items.forEach { Text("• $it", fontSize = 13.sp, color = fg,
-                            fontWeight = if (r.kind == "lesson") FontWeight.Normal else FontWeight.Bold) }
+                        r.items.forEach { item ->
+                            val l = if (r.kind == "lesson") lessonSet?.find(item) else null
+                            if (l != null) Text("📖 $item", fontSize = 13.sp, color = MaterialTheme.colorScheme.primary,
+                                fontWeight = FontWeight.Bold,
+                                modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(6.dp))
+                                    .clickable { opened = l to r.label }.padding(vertical = 2.dp))
+                            else Text("• $item", fontSize = 13.sp, color = fg,
+                                fontWeight = if (r.kind == "lesson") FontWeight.Normal else FontWeight.Bold)
+                        }
                     }
                 }
             }

@@ -765,4 +765,17 @@
     <string name="tprog_upload">رفع نتائج الفصل %1$d للإدارة</string>
     <string name="tprog_no_subjects">لا توجد مواد لك في هذه الأقسام بعد. افتح ملف الإدارة لتصلك أقسامك وموادك.</string>
     <string name="ts_my_timetable">جدولي الزمني</string>
+    <string name="lesson_prep">التحضير</string>
+    <string name="lesson_book">محتوى الكتاب</string>
+    <string name="lesson_board">محتوى السبورة</string>
+    <string name="lesson_pages">صفحات الدرس في الكتاب: %1$d – %2$d</string>
+    <string name="lesson_objectives">الأهداف</string>
+    <string name="lesson_intro">مقدمة الدرس</string>
+    <string name="lesson_summary">ملخص الدرس</string>
+    <string name="lesson_points">أهم النقاط</string>
+    <string name="lesson_application">تطبيق صغير</string>
+    <string name="lesson_show_answer">إظهار الإجابة</string>
+    <string name="lesson_hide_answer">إخفاء الإجابة</string>
+    <string name="lesson_book_missing">تعذر فتح الكتاب.</string>
+    <string name="plan_lessons_hint">اضغط على عنوان الدرس لفتح التحضير ومحتوى الكتاب والسبورة.</string>
 </resources>

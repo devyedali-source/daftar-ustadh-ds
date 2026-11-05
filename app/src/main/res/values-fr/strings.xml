@@ -765,4 +765,17 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tprog_upload">Envoyer les notes du trimestre %1$d à l\'administration</string>
     <string name="tprog_no_subjects">Aucune matière dans ces classes pour l\'instant. Ouvrez le fichier de l\'administration pour recevoir vos classes et matières.</string>
     <string name="ts_my_timetable">Mon emploi du temps</string>
+    <string name="lesson_prep">Préparation</string>
+    <string name="lesson_book">Manuel</string>
+    <string name="lesson_board">Tableau</string>
+    <string name="lesson_pages">Pages du manuel : %1$d – %2$d</string>
+    <string name="lesson_objectives">Objectifs</string>
+    <string name="lesson_intro">Introduction</string>
+    <string name="lesson_summary">Résumé</string>
+    <string name="lesson_points">Points essentiels</string>
+    <string name="lesson_application">Petite application</string>
+    <string name="lesson_show_answer">Afficher la réponse</string>
+    <string name="lesson_hide_answer">Masquer la réponse</string>
+    <string name="lesson_book_missing">Impossible d\'ouvrir le manuel.</string>
+    <string name="plan_lessons_hint">Touchez le titre d\'une leçon pour ouvrir la préparation, le manuel et le tableau.</string>
 </resources>
