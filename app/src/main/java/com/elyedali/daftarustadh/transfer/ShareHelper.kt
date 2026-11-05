@@ -20,6 +20,11 @@ object ShareHelper {
         return DsqPdf.wrap(context, bytes, title, extra) to "$title.pdf"
     }
 
+    /** ملف البيانات في صورة PDF (لمشاركة عدة ملفات دفعة واحدة). */
+    fun wrapPdf(context: Context, bytes: ByteArray, fileName: String,
+                extra: ((android.graphics.pdf.PdfDocument, Int) -> Int)? = null): Pair<ByteArray, String> =
+        asPdf(context, bytes, fileName, extra)
+
     /** يحفظ الملف مؤقتًا ثم يفتح نافذة المشاركة (واتساب، بلوتوث، المشاركة القريبة...). */
     fun share(context: Context, bytes: ByteArray, fileName: String, chooserTitle: String, mimeType: String = DSQ_MIME,
               extraPages: ((android.graphics.pdf.PdfDocument, Int) -> Int)? = null) {

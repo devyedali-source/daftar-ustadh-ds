@@ -758,4 +758,10 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="contact_pick">Choisir dans les contacts</string>
     <string name="contact_pick_unavailable">Impossible d\'ouvrir les contacts sur ce téléphone</string>
     <string name="subjects_from_admin">Vos matières dans cette classe ont été attribuées par l\'administration.</string>
+    <string name="tprog_title">Avancement de la saisie des notes</string>
+    <string name="tprog_term">Trimestre %1$d</string>
+    <string name="tprog_count">%1$d / %2$d classes complètes</string>
+    <string name="tprog_done_list">Complètes : %1$s</string>
+    <string name="tprog_upload">Envoyer les notes du trimestre %1$d à l\'administration</string>
+    <string name="tprog_no_subjects">Aucune matière dans ces classes pour l\'instant. Ouvrez le fichier de l\'administration pour recevoir vos classes et matières.</string>
 </resources>

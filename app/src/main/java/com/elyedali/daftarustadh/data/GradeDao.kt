@@ -31,6 +31,12 @@ interface GradeDao {
     @Query("SELECT * FROM teacher_subject WHERE classId = :classId")
     fun observeTeacherSubjects(classId: String): Flow<List<TeacherSubjectEntity>>
 
+    @Query("SELECT * FROM teacher_subject")
+    fun observeAllTeacherSubjects(): Flow<List<TeacherSubjectEntity>>
+
+    @Query("SELECT * FROM grade WHERE classId IN (:classIds)")
+    fun observeClasses(classIds: List<String>): Flow<List<GradeEntity>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveTeacherSubject(t: TeacherSubjectEntity)
 

@@ -31,6 +31,8 @@ import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.AssistChip
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -111,7 +113,10 @@ fun HomeYearsScreen(
     onDeleteClass: (ClassEntity) -> Unit,
     onCreateClass: () -> Unit,
     onOpenFile: () -> Unit,
-    onMenu: () -> Unit
+    onMenu: () -> Unit,
+    /** الأستاذ: تقدم رصد النتائج لكل فصل، ورفعها للإدارة بعد اكتمالها. */
+    termProgress: List<TeacherTermProgress> = emptyList(),
+    onUploadTerm: (Int) -> Unit = {}
 ) {
     val current = SchoolYear.current()
     val years = remember(classes, currentInstitutionYear) {
@@ -217,11 +222,15 @@ fun HomeYearsScreen(
                                 Row(Modifier.fillMaxWidth().padding(14.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
                                     MiniStat("🏫", yearClasses.size, stringResource(R.string.stat_classes))
                                     MiniStat("👥", total, stringResource(R.string.stat_students))
-                                    MiniStat("👦", boys, stringResource(R.string.stat_boys))
-                                    MiniStat("👧", girls, stringResource(R.string.stat_girls))
+                                    // الأستاذ: مكان الأولاد والبنات تقدم رصد النتائج أسفل البطاقة
+                                    if (mode != MODE_TEACHER) {
+                                        MiniStat("👦", boys, stringResource(R.string.stat_boys))
+                                        MiniStat("👧", girls, stringResource(R.string.stat_girls))
+                                    }
                                 }
                             }
                         }
+                        if (mode == MODE_TEACHER && termProgress.isNotEmpty()) item { TermProgressCard(termProgress, onUploadTerm) }
                         item {
                             // صاحب الوضع وأدواته: المؤسسة وأدوات الإدارة، أو الأستاذ وأدواته
                             // كل زر إما أداة مباشرة، وإما مجموعة تفتح قائمة بأدواتها
@@ -456,6 +465,49 @@ private fun EmptyCard(title: String, desc: String) {
             Text(title, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center)
             Text(desc, fontSize = 12.sp, textAlign = TextAlign.Center, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.height(4.dp))
+        }
+    }
+}
+
+
+/** تقدم رصد نتائج فصل عند الأستاذ: الأقسام المكتملة من أقسامه. */
+data class TeacherTermProgress(val term: Int, val completed: List<String>, val total: Int) {
+    val isDone: Boolean get() = total > 0 && completed.size >= total
+}
+
+@Composable
+private fun TermProgressCard(progress: List<TeacherTermProgress>, onUpload: (Int) -> Unit) {
+    Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        elevation = CardDefaults.cardElevation(1.dp)) {
+        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            Text("📊 " + stringResource(R.string.tprog_title), fontWeight = FontWeight.Black, fontSize = 15.sp,
+                color = MaterialTheme.colorScheme.primary)
+            if (progress.first().total == 0)
+                Text(stringResource(R.string.tprog_no_subjects), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            else progress.forEach { p ->
+                val done = p.isDone
+                val color = if (done) Color(0xFF2E7D32) else MaterialTheme.colorScheme.primary
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(stringResource(R.string.tprog_term, p.term), fontWeight = FontWeight.Bold, fontSize = 14.sp,
+                            modifier = Modifier.weight(1f))
+                        Text(stringResource(R.string.tprog_count, p.completed.size, p.total) + if (done) "  ✓" else "",
+                            fontWeight = FontWeight.Bold, fontSize = 13.sp, color = color)
+                    }
+                    androidx.compose.material3.LinearProgressIndicator(
+                        progress = { p.completed.size.toFloat() / p.total },
+                        modifier = Modifier.fillMaxWidth().height(6.dp), color = color,
+                        trackColor = MaterialTheme.colorScheme.surfaceVariant)
+                    if (p.completed.isNotEmpty() && !done)
+                        Text(stringResource(R.string.tprog_done_list, p.completed.joinToString("، ")), fontSize = 11.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    if (done) Button(onClick = { onUpload(p.term) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2E7D32), contentColor = Color.White)) {
+                        Text("📤 " + stringResource(R.string.tprog_upload, p.term), fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
         }
     }
 }

@@ -408,14 +408,17 @@ class MainActivity : AppCompatActivity() {
                         )
                 }
 
-                /** إرسال سجل الأستاذ لمادة: ملف ‎.dsq يحمل نتائجه وطابعه، يُرفع عند المكلّف بالقسم. */
-                fun sendRecord(c: ClassEntity, code: String, name: String) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                /**
+                 * سجل الأستاذ لمادة في صورة PDF يحمل البيانات: (المحتوى، اسم الملف).
+                 * @param uptoTerm عند رفع نتائج فصل لكل الأقسام: لا يُرسل ما بعد هذا الفصل.
+                 */
+                suspend fun buildRecordPdf(c: ClassEntity, code: String, name: String, uptoTerm: Int? = null): Pair<ByteArray, String>? {
+                        val owner = institutionDao.getById(c.institutionId) ?: return null
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
-                            ?.subjects?.firstOrNull { it.code == code } ?: return@launch
+                            ?.subjects?.firstOrNull { it.code == code } ?: return null
                         val list = studentDao.listByClass(c.id)
-                        val allGrades = gradeDao.listSubject(c.id, code)
+                        val allGrades = gradeDao.listSubject(c.id, code).filter { g ->
+                            uptoTerm == null || (g.slot.drop(1).toIntOrNull() ?: 0) <= uptoTerm }
                         // في الفصلين الأول والثاني يرسل الأستاذ نتائج الامتحانات فقط، ويحتفظ بالاختبارات عنده
                         // حتى الفصل الأخير؛ عندها يرسل كل شيء (الاختبارات والامتحانات الثلاثة)
                         val lastExamTerm = (3 downTo 1).firstOrNull { t -> allGrades.any { it.slot == GradeSlot.exam(t) } } ?: 0
@@ -436,8 +439,34 @@ class MainActivity : AppCompatActivity() {
                         // الصفحة الثانية من الملف: سجل المادة نفسه بأسماء الطلاب ونقاطهم، يُقرأ ويُطبع في الإدارة
                         val labels = recordLabels(c, owner, subject, name)
                         val byStudent = g.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.value } }
-                        ShareHelper.share(this@MainActivity, bytes, TransferCodec.recordFileName(record), getString(R.string.share_record),
-                            extraPages = { doc, no -> TeacherRecordPdf.drawInto(doc, no, list, labels, byStudent) })
+                        return withContext(Dispatchers.Default) {
+                            ShareHelper.wrapPdf(this@MainActivity, bytes, TransferCodec.recordFileName(record),
+                                extra = { doc, no -> TeacherRecordPdf.drawInto(doc, no, list, labels, byStudent) })
+                        }
+                }
+
+                /** إرسال سجل الأستاذ لمادة: ملف يحمل نتائجه وطابعه، يُرفع عند المكلّف بالقسم. */
+                fun sendRecord(c: ClassEntity, code: String, name: String) {
+                    scope.launch {
+                        val (bytes, fileName) = buildRecordPdf(c, code, name) ?: return@launch
+                        val file = java.io.File(ShareHelper.freshShareDir(this@MainActivity), fileName).apply { writeBytes(bytes) }
+                        ShareHelper.shareFiles(this@MainActivity, listOf(file), "application/pdf", getString(R.string.share_record),
+                            getString(R.string.dsq_caption))
+                    }
+                }
+
+                /** رفع نتائج فصل للإدارة: سجلات كل مواد الأستاذ في كل الأقسام المكتملة، دفعة واحدة. */
+                fun uploadTermRecords(term: Int, pairs: List<Pair<ClassEntity, String>>, name: String) {
+                    scope.launch {
+                        val dir = ShareHelper.freshShareDir(this@MainActivity)
+                        val files = pairs.mapNotNull { (c, code) ->
+                            buildRecordPdf(c, code, name, uptoTerm = term)?.let { (bytes, fileName) ->
+                                java.io.File(dir, fileName).apply { writeBytes(bytes) }
+                            }
+                        }
+                        if (files.isEmpty()) return@launch
+                        ShareHelper.shareFiles(this@MainActivity, files, "application/pdf", getString(R.string.share_record),
+                            getString(R.string.dsq_caption))
                     }
                 }
 
@@ -2000,8 +2029,33 @@ class MainActivity : AppCompatActivity() {
                         )
                     }
 
-                    else -> HomeYearsScreen(
-                        classes = if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherSchool != null) allClasses.filter { it.institutionId == teacherSchool } else allClasses,
+                    else -> {
+                    val homeClasses = if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherSchool != null) allClasses.filter { it.institutionId == teacherSchool } else allClasses
+                    // الأستاذ: تقدم رصد النتائج لكل فصل في أقسامه (القسم مكتمل إذا اكتملت كل مواده لكل الطلاب)
+                    val progClasses = if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER)
+                        homeClasses.filter { it.teaching && it.schoolYear == selectedYear } else emptyList()
+                    val progIds = progClasses.map { it.id }
+                    val allMySubjects by remember { gradeDao.observeAllTeacherSubjects() }.collectAsState(initial = emptyList())
+                    val progGrades by remember(progIds) { gradeDao.observeClasses(progIds) }.collectAsState(initial = emptyList())
+                    val progStudents by remember(progIds) { studentDao.observeByClasses(progIds) }.collectAsState(initial = emptyList())
+                    val progPairs = progClasses.flatMap { c -> allMySubjects.filter { it.classId == c.id }.map { c to it.subjectCode } }
+                    val termProgress = if (progClasses.isEmpty()) emptyList() else {
+                        val gradesBy = progGrades.groupBy { Triple(it.classId, it.subjectCode, it.studentId) }
+                            .mapValues { e -> e.value.associate { it.slot to it.value } }
+                        val studentsBy = progStudents.groupBy { it.classId }
+                        val withSubjects = progClasses.filter { c -> progPairs.any { it.first.id == c.id } }
+                        (1..3).map { t ->
+                            val done = withSubjects.filter { c ->
+                                val st = studentsBy[c.id].orEmpty()
+                                st.isNotEmpty() && progPairs.filter { it.first.id == c.id }.all { (_, code) ->
+                                    st.all { GradeMath.isComplete(t, gradesBy[Triple(c.id, code, it.id)].orEmpty()) }
+                                }
+                            }
+                            com.elyedali.daftarustadh.ui.TeacherTermProgress(t, done.map { it.name }, withSubjects.size)
+                        }
+                    }
+                    HomeYearsScreen(
+                        classes = homeClasses,
                         currentInstitutionYear = inst?.schoolYear,
                         selectedYear = selectedYear,
                         mode = homeMode,
@@ -2050,8 +2104,14 @@ class MainActivity : AppCompatActivity() {
                         onDeleteClass = { deleteClass(it) },
                         onCreateClass = { if (inst == null) screen = Screen.INSTITUTION else showCreateClass = true },
                         onOpenFile = openFile,
-                        onMenu = { scope.launch { drawerState.open() } }
+                        onMenu = { scope.launch { drawerState.open() } },
+                        termProgress = termProgress,
+                        onUploadTerm = { t ->
+                            // اسم الأستاذ في السجل: الاسم الذي سجّلته به الإدارة (من ملفها) إن وُجد
+                            uploadTermRecords(t, progPairs, (teacherProfile?.name ?: teacherName).orEmpty())
+                        }
                     )
+                    }
                 }
 
                 }
