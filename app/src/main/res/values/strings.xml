@@ -764,4 +764,5 @@
     <string name="tprog_done_list">المكتملة: %1$s</string>
     <string name="tprog_upload">رفع نتائج الفصل %1$d للإدارة</string>
     <string name="tprog_no_subjects">لا توجد مواد لك في هذه الأقسام بعد. افتح ملف الإدارة لتصلك أقسامك وموادك.</string>
+    <string name="ts_my_timetable">جدولي الزمني</string>
 </resources>

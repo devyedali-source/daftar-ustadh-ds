@@ -52,7 +52,8 @@ fun TeacherTimetableView(
     /** محتوى يُضاف قبل الجدول وبعده (صفحة اختيار المؤسسة في تطبيق الأستاذ). */
     before: LazyListScope.() -> Unit = {},
     after: LazyListScope.() -> Unit = {},
-    showOpenFile: Boolean = true
+    showOpenFile: Boolean = true,
+    collapsed: Boolean = false
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
     val days = dayLabels()
@@ -69,6 +70,8 @@ fun TeacherTimetableView(
             if (showHeader) ScreenHeader(stringResource(R.string.tt_my_timetable), onBack)
             LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(10.dp), contentPadding = PaddingValues(vertical = 10.dp)) {
                 before()
+                // مطويّ: يظهر العنوان فقط (قبل) وما بعده
+                if (collapsed) { after(); return@LazyColumn }
                 if (showOpenFile) item {
                     OutlinedButton(onClick = onOpenFile, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
                         Text("📥 " + stringResource(R.string.tt_open_file))

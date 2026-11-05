@@ -19,6 +19,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -46,6 +48,7 @@ fun TeacherSchoolsScreen(
     onBack: () -> Unit,
     onMenu: () -> Unit
 ) {
+    var showTimetable by androidx.compose.runtime.saveable.rememberSaveable { androidx.compose.runtime.mutableStateOf(false) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize()) {
             AppTopBar(title = stringResource(R.string.mode_teacher) + " — " + year, onMenu = onMenu, onBack = onBack)
@@ -58,10 +61,24 @@ fun TeacherSchoolsScreen(
                     showHeader = false,
                     onBack = onBack,
                     showOpenFile = false,
+                    collapsed = !showTimetable,
                     before = {
+                        // «جدولي الزمني»: عنوان يُضغط فيظهر الجدول تحته أو يُطوى
                         item {
-                            Text("🗓️ " + stringResource(R.string.ts_timetable_title), fontWeight = FontWeight.Black, fontSize = 16.sp,
-                                color = MaterialTheme.colorScheme.primary, modifier = Modifier.padding(top = 6.dp))
+                            Card(Modifier.fillMaxWidth().padding(top = 6.dp).clickable { showTimetable = !showTimetable },
+                                shape = RoundedCornerShape(16.dp),
+                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                                Row(Modifier.padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                                    Column(Modifier.weight(1f)) {
+                                        Text("🗓️ " + stringResource(R.string.ts_my_timetable), fontWeight = FontWeight.Black, fontSize = 16.sp,
+                                            color = MaterialTheme.colorScheme.primary)
+                                        Text(stringResource(R.string.tt_week_hours, timetable.size), fontSize = 12.sp,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                    }
+                                    Text(if (showTimetable) "▴" else "▾", fontSize = 20.sp, fontWeight = FontWeight.Black,
+                                        color = MaterialTheme.colorScheme.primary)
+                                }
+                            }
                         }
                     },
                     after = {

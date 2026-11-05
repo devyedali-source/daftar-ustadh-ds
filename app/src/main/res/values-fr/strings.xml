@@ -764,4 +764,5 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tprog_done_list">Complètes : %1$s</string>
     <string name="tprog_upload">Envoyer les notes du trimestre %1$d à l\'administration</string>
     <string name="tprog_no_subjects">Aucune matière dans ces classes pour l\'instant. Ouvrez le fichier de l\'administration pour recevoir vos classes et matières.</string>
+    <string name="ts_my_timetable">Mon emploi du temps</string>
 </resources>
