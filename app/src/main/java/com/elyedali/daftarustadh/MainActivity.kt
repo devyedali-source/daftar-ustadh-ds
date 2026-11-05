@@ -263,6 +263,10 @@ class MainActivity : AppCompatActivity() {
                 val ttSlots by remember { timetableDao.observeSlots() }.collectAsState(initial = emptyList())
                 val ttApprovedSig by remember { metaDao.observe(TT_APPROVED_KEY) }.collectAsState(initial = null)
                 val ttManualText by remember { metaDao.observe(TT_MANUAL_KEY) }.collectAsState(initial = null)
+                // مواد الأستاذ التي أسندتها الإدارة في حزمته، لكل قسم
+                val bundleSubjectsMeta by remember { metaDao.observePrefix("bundle_subjects|") }.collectAsState(initial = emptyList())
+                fun bundleSubjectsOf(classId: String): String? =
+                    bundleSubjectsMeta.firstOrNull { it.key == com.elyedali.daftarustadh.transfer.TeacherBundleImporter.subjectsKey(classId) }?.value
                 val ttManual = ttManualText == "1"
                 val myTimetable by remember { timetableDao.observeTeacherTimetable() }.collectAsState(initial = emptyList())
                 var ttGenerating by remember { mutableStateOf(false) }
@@ -1763,6 +1767,7 @@ class MainActivity : AppCompatActivity() {
                                 )
                                 1 -> TeacherClassScreen(
                                     schoolClass = c,
+                                    subjectsFromAdmin = bundleSubjectsOf(c.id) != null,
                                     schoolName = schoolNames[c.institutionId],
                                     classSubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty(),
                                     mySubjectCodes = mySubjects.map { it.subjectCode }.toSet(),
@@ -1828,6 +1833,7 @@ class MainActivity : AppCompatActivity() {
                         val c = currentClass!!
                         TeacherClassScreen(
                             schoolClass = c,
+                            subjectsFromAdmin = bundleSubjectsOf(c.id) != null,
                             schoolName = schoolNames[c.institutionId],
                             classSubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty(),
                             mySubjectCodes = mySubjects.map { it.subjectCode }.toSet(),

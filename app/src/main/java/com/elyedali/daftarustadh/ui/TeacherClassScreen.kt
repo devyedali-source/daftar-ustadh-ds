@@ -49,7 +49,9 @@ fun TeacherClassScreen(
     onOpenSubject: (String) -> Unit,
     onShowStudents: () -> Unit,
     onBack: () -> Unit,
-    showHeader: Boolean = true
+    showHeader: Boolean = true,
+    /** الإدارة أسندت للأستاذ مواده في هذا القسم (حزمة الأستاذ): لا يظهر زر «اختيار موادي». */
+    subjectsFromAdmin: Boolean = false
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
     var choosing by remember { mutableStateOf(false) }
@@ -88,7 +90,10 @@ fun TeacherClassScreen(
                         }
                     }
                 }
-                OutlinedButton(onClick = { choosing = true }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.choose_my_subjects)) }
+                if (!subjectsFromAdmin)
+                    OutlinedButton(onClick = { choosing = true }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.choose_my_subjects)) }
+                else Text(stringResource(R.string.subjects_from_admin), style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
     }

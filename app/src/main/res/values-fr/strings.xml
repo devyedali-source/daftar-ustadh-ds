@@ -757,4 +757,5 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tt_manual_go">Remplir les emplois du temps des classes</string>
     <string name="contact_pick">Choisir dans les contacts</string>
     <string name="contact_pick_unavailable">Impossible d\'ouvrir les contacts sur ce téléphone</string>
+    <string name="subjects_from_admin">Vos matières dans cette classe ont été attribuées par l\'administration.</string>
 </resources>

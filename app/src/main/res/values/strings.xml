@@ -757,4 +757,5 @@
     <string name="tt_manual_go">ملء جداول الأقسام</string>
     <string name="contact_pick">اختيار الرقم من جهات الاتصال</string>
     <string name="contact_pick_unavailable">لا يمكن فتح جهات الاتصال في هذا الهاتف</string>
+    <string name="subjects_from_admin">موادك في هذا القسم أسندتها لك الإدارة.</string>
 </resources>

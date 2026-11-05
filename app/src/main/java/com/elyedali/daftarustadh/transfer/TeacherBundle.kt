@@ -58,6 +58,8 @@ data class BundleOutcome(val saved: List<String>, val conflicts: List<String>, v
 class TeacherBundleImporter(private val db: DaftarDatabase) {
     companion object {
         fun nameKey(institutionId: String) = "bundle_teacher_name|$institutionId"
+        /** مواد الأستاذ في هذا القسم أسندتها الإدارة في الحزمة: لا يختارها الأستاذ بنفسه. */
+        fun subjectsKey(classId: String) = "bundle_subjects|$classId"
     }
     private val classImporter = ClassFileImporter(db)
 
@@ -114,6 +116,7 @@ class TeacherBundleImporter(private val db: DaftarDatabase) {
                     db.gradeDao().listTeacherSubjects(file.schoolClass.id).filter { it.subjectCode !in codes }
                         .forEach { db.gradeDao().removeTeacherSubject(it.classId, it.subjectCode) }
                     moved.forEach { db.gradeDao().save(it) }
+                    db.appMetaDao().put(com.elyedali.daftarustadh.data.AppMetaEntity(subjectsKey(file.schoolClass.id), codes.joinToString(",")))
                 }
                 is ImportOutcome.ConflictingSource -> conflicts += r.className
             }
