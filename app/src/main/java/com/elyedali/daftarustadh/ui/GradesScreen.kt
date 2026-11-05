@@ -192,7 +192,10 @@ private fun GradeField(
     OutlinedTextField(
         value = shown,
         onValueChange = { v ->
-            text = v.take(5)
+            val t = v.take(5)
+            // لا تُقبل كتابة نقطة خارج 0–20 (مثل 30): يبقى ما كان مكتوبًا ولا تُحفظ نقطة خاطئة
+            if (t.isNotBlank() && GradeMath.parse(t) == null) return@OutlinedTextField
+            text = t
             if (text.isBlank()) onSetGrade(studentId, slot, null, null)
             else GradeMath.parse(text)?.let { onSetGrade(studentId, slot, it, null) }
         },

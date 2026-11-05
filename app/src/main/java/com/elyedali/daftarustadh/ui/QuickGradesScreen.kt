@@ -233,7 +233,11 @@ fun QuickGradesScreen(
                             color = MaterialTheme.colorScheme.onSurfaceVariant)
                         OutlinedTextField(
                             value = v,
-                            onValueChange = { t -> entries[st.rollNumber] = t.filter { it.isDigit() || it == '.' || it == ',' || it in '٠'..'٩' || it == '٫' }.take(5); saved = null },
+                            onValueChange = { t ->
+                                val v = t.filter { it.isDigit() || it == '.' || it == ',' || it in '٠'..'٩' || it == '٫' }.take(5)
+                                // لا تُقبل نقطة أكبر من 20
+                                if (v.isBlank() || GradeMath.parse(v) != null) { entries[st.rollNumber] = v; saved = null }
+                            },
                             modifier = Modifier.width(110.dp),
                             singleLine = true,
                             isError = bad,
