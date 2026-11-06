@@ -1,0 +1,560 @@
+{
+ "subject": "MATS",
+ "level": "3AS",
+ "book": "books/MATS_3AS.pdf",
+ "bookTitle": "Mathématiques 3e AS — IPN",
+ "lessons": [
+  {
+   "title": "Arithmétique",
+   "match": [
+    "Arithmétique"
+   ],
+   "pages": [
+    9,
+    30
+   ],
+   "objectives": [
+    "Utiliser la division euclidienne, les critères de divisibilité et les nombres premiers.",
+    "Calculer un PGCD (algorithme d’Euclide) et un PPCM ; écrire un nombre en binaire."
+   ],
+   "intro": "Je demande : « On veut partager 84 bonbons et 60 gâteaux en paquets identiques, sans reste. Combien de paquets au maximum ? »",
+   "summary": "Effectuer la division euclidienne de a par b (b ≠ 0), c’est trouver q et r tels que a = b × q + r avec 0 ≤ r < b. Si r = 0, a est un multiple de b et b est un diviseur de a. Un nombre premier a exactement deux diviseurs : 1 et lui-même. Le PGCD de deux entiers est le plus grand de leurs diviseurs communs ; on le calcule par l’algorithme des soustractions successives ou par l’algorithme d’Euclide (divisions successives : le PGCD est le dernier reste non nul). Le PPCM est le plus petit multiple commun non nul. Dans le système binaire, on n’utilise que les chiffres 0 et 1 (puissances de 2).",
+   "points": [
+    "a = b × q + r avec 0 ≤ r < b.",
+    "Nombre premier : deux diviseurs (1 et lui-même).",
+    "PGCD : algorithme d’Euclide (dernier reste non nul).",
+    "PPCM : plus petit multiple commun non nul.",
+    "Binaire : chiffres 0 et 1, puissances de 2."
+   ],
+   "application": {
+    "q": "Calcule PGCD(84 ; 60) par l’algorithme d’Euclide.",
+    "a": "84 = 60 × 1 + 24 ; 60 = 24 × 2 + 12 ; 24 = 12 × 2 + 0. PGCD = 12."
+   },
+   "board": [
+    {
+     "h": "Division euclidienne",
+     "lines": [
+      "a = b × q + r avec 0 ≤ r < b",
+      "r = 0 : b divise a"
+     ]
+    },
+    {
+     "h": "Nombres premiers",
+     "lines": [
+      "Exactement deux diviseurs : 1 et lui-même – 2, 3, 5, 7, 11…"
+     ]
+    },
+    {
+     "h": "PGCD et PPCM",
+     "lines": [
+      "Algorithme d’Euclide : le PGCD est le dernier reste non nul",
+      "PPCM : plus petit multiple commun non nul"
+     ]
+    },
+    {
+     "h": "Binaire",
+     "lines": [
+      "13 = 8 + 4 + 1 = (1101)₂"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule PGCD(84 ; 60) par l’algorithme d’Euclide."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nombres réels et opérations",
+   "match": [
+    "Nombres réels"
+   ],
+   "pages": [
+    31,
+    68
+   ],
+   "objectives": [
+    "Calculer avec les réels, les racines carrées et les puissances.",
+    "Utiliser l’ordre, les intervalles et la valeur absolue."
+   ],
+   "intro": "Je demande : « Quel nombre, multiplié par lui-même, donne 2 ? Peut-on l’écrire sous forme de fraction ? »",
+   "summary": "L’ensemble des nombres réels ℝ correspond à tous les points d’un axe gradué. La racine carrée d’un réel positif a est le réel positif √a dont le carré est a. Règles : √(a × b) = √a × √b ; √(a / b) = √a / √b (b > 0) ; (√a)² = a ; mais √(a + b) ≠ √a + √b. Puissances : aⁿ × aᵐ = aⁿ⁺ᵐ ; (aⁿ)ᵐ = aⁿᵐ ; a⁻ⁿ = 1/aⁿ. Priorités : parenthèses, puissances, multiplications et divisions, puis additions et soustractions. Ordre : ajouter un même nombre conserve l’ordre ; multiplier par un nombre négatif change le sens. Un intervalle est un ensemble de réels compris entre deux bornes ; la valeur absolue |x| est la distance de x à 0.",
+   "points": [
+    "√a : réel positif dont le carré est a.",
+    "√(ab) = √a × √b ; √(a/b) = √a / √b.",
+    "√(a + b) ≠ √a + √b.",
+    "Multiplier par un négatif change le sens de l’inégalité.",
+    "|x| : distance de x à zéro."
+   ],
+   "application": {
+    "q": "Simplifie √50 et calcule |–3,5|.",
+    "a": "√50 = √(25 × 2) = 5√2 ; |–3,5| = 3,5."
+   },
+   "board": [
+    {
+     "h": "Racine carrée",
+     "lines": [
+      "(√a)² = a (a ≥ 0)",
+      "√(a × b) = √a × √b   √(a / b) = √a / √b",
+      "√(a + b) ≠ √a + √b"
+     ]
+    },
+    {
+     "h": "Puissances",
+     "lines": [
+      "aⁿ × aᵐ = aⁿ⁺ᵐ   (aⁿ)ᵐ = aⁿᵐ   a⁻ⁿ = 1/aⁿ"
+     ]
+    },
+    {
+     "h": "Ordre et intervalles",
+     "lines": [
+      "Si a < b et c < 0 alors ac > bc",
+      "[a ; b] – ]a ; b[ – |x| = distance de x à 0"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Simplifie √50 et calcule |–3,5|."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Calcul littéral et identités remarquables",
+   "match": [
+    "Calcul littéral"
+   ],
+   "pages": [
+    69,
+    80
+   ],
+   "objectives": [
+    "Développer, réduire et ordonner une expression.",
+    "Utiliser les identités remarquables pour développer et factoriser."
+   ],
+   "intro": "Je demande : « Comment calculer 101² de tête ? »",
+   "summary": "Développer, c’est transformer un produit en somme ; factoriser, c’est transformer une somme en produit. Pour supprimer des parenthèses précédées du signe –, on change les signes des termes. Identités remarquables : (a + b)² = a² + 2ab + b² ; (a – b)² = a² – 2ab + b² ; (a + b)(a – b) = a² – b². On factorise en mettant en évidence un facteur commun ou en reconnaissant une identité remarquable.",
+   "points": [
+    "(a + b)² = a² + 2ab + b².",
+    "(a – b)² = a² – 2ab + b².",
+    "(a + b)(a – b) = a² – b².",
+    "Factoriser : facteur commun ou identité remarquable.",
+    "–(a – b) = –a + b."
+   ],
+   "application": {
+    "q": "Factorise x² – 9 et développe (x + 3)².",
+    "a": "x² – 9 = (x – 3)(x + 3) ; (x + 3)² = x² + 6x + 9."
+   },
+   "board": [
+    {
+     "h": "Identités remarquables",
+     "lines": [
+      "(a + b)² = a² + 2ab + b²",
+      "(a – b)² = a² – 2ab + b²",
+      "(a + b)(a – b) = a² – b²"
+     ]
+    },
+    {
+     "h": "Factoriser",
+     "lines": [
+      "Facteur commun : 3x + 6 = 3(x + 2)",
+      "Identité : x² – 9 = (x – 3)(x + 3)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Factorise x² – 9 et développe (x + 3)²."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Équations, inéquations et systèmes",
+   "match": [
+    "Équations et inéquations"
+   ],
+   "pages": [
+    81,
+    106
+   ],
+   "objectives": [
+    "Résoudre une équation et une inéquation du premier degré.",
+    "Résoudre un système de deux équations à deux inconnues."
+   ],
+   "intro": "Je demande : « Un stylo et un cahier coûtent 70 MRU ; deux stylos et un cahier coûtent 90 MRU. Quel est le prix de chacun ? »",
+   "summary": "Une équation du premier degré à une inconnue s’écrit ax + b = 0 ; on la résout en isolant x. Pour une inéquation, on procède de même, mais si l’on multiplie ou divise par un nombre négatif, on change le sens de l’inégalité ; on représente les solutions par un intervalle. Le signe de ax + b est celui de a à droite de –b/a. Un système de deux équations du premier degré à deux inconnues se résout par substitution ou par combinaison (addition) ; graphiquement, la solution est le point d’intersection de deux droites.",
+   "points": [
+    "ax + b = 0 → x = –b/a (a ≠ 0).",
+    "Inéquation : diviser par un négatif change le sens.",
+    "Solutions d’une inéquation : un intervalle.",
+    "Système : substitution ou combinaison.",
+    "Interprétation graphique : intersection de deux droites."
+   ],
+   "application": {
+    "q": "Résous le système : x + y = 70 et 2x + y = 90.",
+    "a": "En soustrayant : x = 20, puis y = 50. Le stylo coûte 20 MRU et le cahier 50 MRU."
+   },
+   "board": [
+    {
+     "h": "Équation",
+     "lines": [
+      "ax + b = 0 ⇔ x = –b/a"
+     ]
+    },
+    {
+     "h": "Inéquation",
+     "lines": [
+      "–2x < 6 ⇔ x > –3 (on change le sens)",
+      "Solutions : un intervalle"
+     ]
+    },
+    {
+     "h": "Système",
+     "lines": [
+      "Substitution – combinaison",
+      "Graphiquement : intersection de deux droites"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Résous le système : x + y = 70 et 2x + y = 90."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Angles et cercles",
+   "match": [
+    "Angles",
+    "Triangle et cercle"
+   ],
+   "pages": [
+    107,
+    118
+   ],
+   "objectives": [
+    "Calculer la longueur d’un arc.",
+    "Utiliser les propriétés des angles inscrits et des angles au centre."
+   ],
+   "intro": "Je trace un cercle, un angle au centre et un angle inscrit qui interceptent le même arc et je demande : « Comparez leurs mesures. »",
+   "summary": "Un angle au centre a son sommet au centre du cercle ; un angle inscrit a son sommet sur le cercle et ses côtés coupent le cercle. La longueur d’un arc intercepté par un angle au centre de mesure α (en degrés) est ℓ = (α × π × r) / 180. Propriétés : la mesure d’un angle inscrit est la moitié de celle de l’angle au centre qui intercepte le même arc ; deux angles inscrits qui interceptent le même arc sont égaux ; un angle inscrit qui intercepte un demi-cercle est droit.",
+   "points": [
+    "Angle au centre : sommet au centre.",
+    "Angle inscrit : sommet sur le cercle.",
+    "Longueur d’un arc : ℓ = απr / 180.",
+    "Angle inscrit = moitié de l’angle au centre (même arc).",
+    "Deux angles inscrits interceptant le même arc sont égaux."
+   ],
+   "application": {
+    "q": "Un angle au centre mesure 80°. Quelle est la mesure d’un angle inscrit qui intercepte le même arc ?",
+    "a": "80° ÷ 2 = 40°."
+   },
+   "board": [
+    {
+     "h": "Définitions",
+     "lines": [
+      "Angle au centre : sommet au centre O",
+      "Angle inscrit : sommet sur le cercle"
+     ]
+    },
+    {
+     "h": "Longueur d’un arc",
+     "lines": [
+      "ℓ = (α × π × r) / 180"
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Angle inscrit = ½ angle au centre (même arc)",
+      "Angles inscrits interceptant le même arc : égaux",
+      "Angle inscrit dans un demi-cercle : droit"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un angle au centre mesure 80°. Quelle est la mesure d’un angle inscrit qui intercepte le même arc ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Théorème de Pythagore",
+   "match": [
+    "Théorème de Pythagore"
+   ],
+   "pages": [
+    119,
+    128
+   ],
+   "objectives": [
+    "Utiliser le théorème de Pythagore pour calculer une longueur.",
+    "Utiliser sa réciproque pour démontrer qu’un triangle est rectangle."
+   ],
+   "intro": "Je demande : « Une échelle de 5 m est posée contre un mur, son pied est à 3 m du mur. À quelle hauteur touche-t-elle le mur ? »",
+   "summary": "Un triangle rectangle est inscrit dans un cercle dont le centre est le milieu de l’hypoténuse. Propriété de Pythagore : si ABC est rectangle en A, alors BC² = AB² + AC² (le carré de l’hypoténuse est égal à la somme des carrés des deux autres côtés). Réciproque : si BC² = AB² + AC², alors le triangle ABC est rectangle en A.",
+   "points": [
+    "Triangle rectangle : le milieu de l’hypoténuse est le centre du cercle circonscrit.",
+    "Pythagore : BC² = AB² + AC².",
+    "Réciproque : si BC² = AB² + AC², le triangle est rectangle en A.",
+    "L’hypoténuse est le plus grand côté."
+   ],
+   "application": {
+    "q": "Calcule la hauteur atteinte par l’échelle (hypoténuse 5 m, base 3 m).",
+    "a": "h² = 5² – 3² = 25 – 9 = 16, donc h = 4 m."
+   },
+   "board": [
+    {
+     "h": "Cercle circonscrit",
+     "lines": [
+      "Triangle rectangle : centre = milieu de l’hypoténuse"
+     ]
+    },
+    {
+     "h": "Théorème de Pythagore",
+     "lines": [
+      "ABC rectangle en A ⇒ BC² = AB² + AC²"
+     ]
+    },
+    {
+     "h": "Réciproque",
+     "lines": [
+      "BC² = AB² + AC² ⇒ ABC rectangle en A"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule la hauteur atteinte par l’échelle (hypoténuse 5 m, base 3 m)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Repères et droites du plan",
+   "match": [
+    "Vecteurs et repères"
+   ],
+   "pages": [
+    129,
+    166
+   ],
+   "objectives": [
+    "Calculer avec les vecteurs et les coordonnées.",
+    "Déterminer l’équation d’une droite."
+   ],
+   "intro": "Je place deux points A(1 ; 2) et B(5 ; 4) dans un repère et je demande : « Comment calculer les coordonnées du milieu et la longueur AB ? »",
+   "summary": "Un vecteur est défini par une direction, un sens et une longueur. On additionne deux vecteurs par la relation de Chasles (AB + BC = AC) ou la règle du parallélogramme. Trois points A, B, C sont alignés si les vecteurs AB et AC sont colinéaires. Dans un repère : le vecteur AB a pour coordonnées (x_B – x_A ; y_B – y_A) ; le milieu I de [AB] a pour coordonnées ((x_A + x_B)/2 ; (y_A + y_B)/2) ; dans un repère orthonormé, AB = √((x_B – x_A)² + (y_B – y_A)²). Une droite non parallèle à l’axe des ordonnées a une équation de la forme y = ax + b, où a est le coefficient directeur ; deux droites sont parallèles si elles ont le même coefficient directeur.",
+   "points": [
+    "Chasles : AB + BC = AC.",
+    "Alignement : vecteurs colinéaires.",
+    "Coordonnées de AB : (x_B – x_A ; y_B – y_A).",
+    "Distance : AB = √((x_B – x_A)² + (y_B – y_A)²).",
+    "Droite : y = ax + b ; parallèles ⇔ même coefficient directeur."
+   ],
+   "application": {
+    "q": "A(1 ; 2) et B(5 ; 4) : calcule les coordonnées du milieu I et la distance AB.",
+    "a": "I(3 ; 3) ; AB = √(4² + 2²) = √20 = 2√5."
+   },
+   "board": [
+    {
+     "h": "Vecteurs",
+     "lines": [
+      "Chasles : AB + BC = AC",
+      "Alignement : AB et AC colinéaires"
+     ]
+    },
+    {
+     "h": "Dans un repère",
+     "lines": [
+      "AB (x_B – x_A ; y_B – y_A)",
+      "Milieu : ((x_A + x_B)/2 ; (y_A + y_B)/2)",
+      "AB = √((x_B – x_A)² + (y_B – y_A)²)"
+     ]
+    },
+    {
+     "h": "Équation de droite",
+     "lines": [
+      "y = ax + b – a : coefficient directeur",
+      "Droites parallèles : même a"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "A(1 ; 2) et B(5 ; 4) : calcule les coordonnées du milieu I et la distance AB."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Trigonométrie",
+   "match": [
+    "Trigonométrie"
+   ],
+   "pages": [
+    193,
+    208
+   ],
+   "objectives": [
+    "Utiliser cosinus, sinus et tangente d’un angle aigu dans un triangle rectangle.",
+    "Connaître les relations et les valeurs des angles particuliers."
+   ],
+   "intro": "Je dessine un triangle rectangle et je demande : « Connaissant un angle et l’hypoténuse, comment calculer les autres côtés ? »",
+   "summary": "Dans un triangle rectangle, pour un angle aigu : cos = côté adjacent / hypoténuse ; sin = côté opposé / hypoténuse ; tan = côté opposé / côté adjacent. Le cosinus et le sinus d’un angle aigu sont compris entre 0 et 1. Relations : cos² x + sin² x = 1 ; tan x = sin x / cos x. Angles particuliers : cos 30° = √3/2, sin 30° = 1/2 ; cos 45° = sin 45° = √2/2 ; cos 60° = 1/2, sin 60° = √3/2. La calculatrice permet de trouver la mesure d’un angle connaissant son cosinus, son sinus ou sa tangente.",
+   "points": [
+    "cos = adjacent / hypoténuse.",
+    "sin = opposé / hypoténuse.",
+    "tan = opposé / adjacent.",
+    "cos² x + sin² x = 1 ; tan x = sin x / cos x.",
+    "cos 60° = 1/2 ; sin 30° = 1/2 ; cos 45° = √2/2."
+   ],
+   "application": {
+    "q": "Dans ABC rectangle en A, BC = 10 cm et l’angle B mesure 30°. Calcule AC.",
+    "a": "sin B = AC / BC, donc AC = 10 × sin 30° = 10 × 1/2 = 5 cm."
+   },
+   "board": [
+    {
+     "h": "Définitions (triangle rectangle)",
+     "lines": [
+      "cos = adjacent / hypoténuse",
+      "sin = opposé / hypoténuse",
+      "tan = opposé / adjacent"
+     ]
+    },
+    {
+     "h": "Relations",
+     "lines": [
+      "cos² x + sin² x = 1",
+      "tan x = sin x / cos x"
+     ]
+    },
+    {
+     "h": "Angles particuliers",
+     "lines": [
+      "30° : cos = √3/2 – sin = 1/2",
+      "45° : cos = sin = √2/2",
+      "60° : cos = 1/2 – sin = √3/2"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Dans ABC rectangle en A, BC = 10 cm et l’angle B mesure 30°. Calcule AC."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Transformations dans le plan",
+   "match": [
+    "Transformations"
+   ],
+   "pages": [
+    209,
+    234
+   ],
+   "objectives": [
+    "Utiliser les symétries, la translation et l’homothétie.",
+    "Connaître les propriétés de l’homothétie."
+   ],
+   "intro": "Je montre une photo et son agrandissement et je demande : « Quelle transformation permet de passer de l’une à l’autre ? »",
+   "summary": "Rappels : la symétrie axiale, la symétrie centrale et la translation conservent les distances, les angles, l’alignement et les aires. L’homothétie de centre O et de rapport k (k ≠ 0) associe à tout point M le point M’ tel que OM’ = k × OM (vectoriellement). Si |k| > 1, c’est un agrandissement ; si |k| < 1, une réduction ; si k < 0, M et M’ sont de part et d’autre de O. L’homothétie conserve l’alignement, le parallélisme et les angles ; elle multiplie les longueurs par |k| et les aires par k².",
+   "points": [
+    "Symétries et translation : conservent distances et angles.",
+    "Homothétie (O, k) : OM’ = k × OM.",
+    "|k| > 1 : agrandissement ; |k| < 1 : réduction.",
+    "Longueurs × |k| ; aires × k².",
+    "Conserve alignement, parallélisme et angles."
+   ],
+   "application": {
+    "q": "Un triangle d’aire 6 cm² subit une homothétie de rapport 3. Quelle est l’aire de son image ?",
+    "a": "6 × 3² = 54 cm²."
+   },
+   "board": [
+    {
+     "h": "Rappels",
+     "lines": [
+      "Symétrie axiale – symétrie centrale – translation",
+      "Conservent distances, angles, alignement, aires"
+     ]
+    },
+    {
+     "h": "Homothétie (O, k)",
+     "lines": [
+      "OM’ = k × OM",
+      "|k| > 1 : agrandissement – |k| < 1 : réduction"
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Longueurs × |k| – aires × k²",
+      "Conserve l’alignement, le parallélisme, les angles"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un triangle d’aire 6 cm² subit une homothétie de rapport 3. Quelle est l’aire de son image ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fonctions linéaires et affines",
+   "match": [
+    "Fonction linéaire"
+   ],
+   "pages": [
+    235,
+    254
+   ],
+   "objectives": [
+    "Reconnaître et représenter une fonction linéaire et une fonction affine.",
+    "Relier fonction linéaire et proportionnalité."
+   ],
+   "intro": "Je demande : « Un kilo de riz coûte 40 MRU. Combien coûtent x kilos ? Et si l’on ajoute 20 MRU de transport ? »",
+   "summary": "Une fonction linéaire de coefficient a associe à tout nombre x le nombre ax : f(x) = ax. Elle traduit une situation de proportionnalité ; sa représentation graphique est une droite qui passe par l’origine. Le coefficient se calcule par a = f(x) / x. Une fonction affine associe à x le nombre ax + b : f(x) = ax + b ; sa représentation est une droite de coefficient directeur a et d’ordonnée à l’origine b. On a a = (f(x₂) – f(x₁)) / (x₂ – x₁).",
+   "points": [
+    "Linéaire : f(x) = ax (proportionnalité).",
+    "Graphique : droite passant par l’origine.",
+    "Affine : f(x) = ax + b.",
+    "a : coefficient directeur ; b : ordonnée à l’origine.",
+    "a = (f(x₂) – f(x₁)) / (x₂ – x₁)."
+   ],
+   "application": {
+    "q": "f est affine avec f(1) = 60 et f(3) = 140. Détermine a et b.",
+    "a": "a = (140 – 60) / (3 – 1) = 40 ; b = 60 – 40 = 20 ; f(x) = 40x + 20."
+   },
+   "board": [
+    {
+     "h": "Fonction linéaire",
+     "lines": [
+      "f(x) = ax – proportionnalité",
+      "Droite passant par l’origine – a = f(x) / x"
+     ]
+    },
+    {
+     "h": "Fonction affine",
+     "lines": [
+      "f(x) = ax + b",
+      "a : coefficient directeur – b : ordonnée à l’origine",
+      "a = (f(x₂) – f(x₁)) / (x₂ – x₁)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "f est affine avec f(1) = 60 et f(3) = 140. Détermine a et b."
+     ]
+    }
+   ]
+  }
+ ]
+}
