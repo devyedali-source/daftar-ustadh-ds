@@ -87,13 +87,13 @@ object DemoData {
         db.institutionDao().save(other)
 
         // قسم 1AS1: كل النتائج مكتملة → يمكن إنتاج كشوف الفصول الثلاثة
-        seedClass(context, db, rnd, own, "demo-1as1", "1AS", 1, 30, completeness = 1.0, teaching = true,
+        seedClass(context, db, rnd, own, "demo-1as1", "1AS", 1, 5, completeness = 1.0, teaching = true,
             teachers = mapOf("MATS" to "محمد الأمين أحمد", "AR" to "سيدي محمد ولد أحمد", "FR" to "Mohamed Salem", "IR" to "أحمد ولد محمد"))
         // قسم 5C1: نتائج ناقصة → يظهر شريط المواد المتبقية
-        seedClass(context, db, rnd, own, "demo-5c1", "5C", 1, 24, completeness = 0.6, teaching = false,
+        seedClass(context, db, rnd, own, "demo-5c1", "5C", 1, 5, completeness = 0.6, teaching = false,
             teachers = mapOf("MATS" to "محمد الأمين أحمد", "PC" to "خديجة بنت عبد الله"))
         // قسم من مؤسسة أخرى في «أقسامي» فقط (الأستاذ يدرّس في مدرستين)
-        seedClass(context, db, rnd, other, "demo-6d1", "6D", 1, 20, completeness = 0.3, teaching = true,
+        seedClass(context, db, rnd, other, "demo-6d1", "6D", 1, 5, completeness = 0.3, teaching = true,
             managed = false, teachers = emptyMap())
 
         db.gradeDao().saveTeacherSubject(TeacherSubjectEntity("demo-1as1", "MATS"))
@@ -109,7 +109,7 @@ object DemoData {
      * طلاب افتراضيون لقسم فارغ (زر «بيانات افتراضية» في صفحة الطلاب): أسماء بالعربية والفرنسية،
      * أرقام نداء من 1، الجنس، RIM والرقم الوطني وهاتف الوكيل. معرّفاتهم تبدأ بـ «demo-».
      */
-    fun sampleStudents(classId: String, size: Int = 30): List<StudentEntity> {
+    fun sampleStudents(classId: String, size: Int = 5): List<StudentEntity> {
         val now = System.currentTimeMillis()
         val rnd = Random(now)
         val shift = rnd.nextInt(NAMES.size)
