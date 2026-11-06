@@ -1,0 +1,317 @@
+{
+ "subject": "ANG",
+ "level": "3AS",
+ "book": "books/ANG_3AS.pdf",
+ "bookTitle": "Study English — 3rd year (3AS), IPN",
+ "lessons": [
+  {
+   "title": "Who is that boy? (Describing people)",
+   "match": [
+    "Talking about one's family members, friends…"
+   ],
+   "pages": [
+    9,
+    16
+   ],
+   "objectives": [
+    "Describe and identify people: appearance, clothes and personality.",
+    "Use What does he look like? / What is he like? and who / whose."
+   ],
+   "intro": "I show a photo of a person and ask: “Who is this? What does he look like? What is he wearing? What is he like?”",
+   "summary": "The teacher shows a picture of Harouna, a former student. The students describe him: he is wearing a green T-shirt, he is handsome with black curly hair and brown skin, and he is polite, confident and smart. In the second dialogue, the school chooses the student of the year: Mohamed, who is hardworking, cooperative, polite, sociable, humble and reliable. To ask about appearance: What does he look like? – He is tall / He has curly hair. To ask about personality: What is he like? – He is humble. To identify: the boy with the green T-shirt, the man in the white boubou, the girl whose shirt is yellow.",
+   "points": [
+    "Appearance: What does he look like? – He is tall / He has curly hair.",
+    "Personality: What is he like? – He is humble and hard-working.",
+    "Clothes: He is wearing a green T-shirt.",
+    "Identify: the man in the white boubou / the man with the big nose.",
+    "Relative pronouns: who, whose, that, which."
+   ],
+   "application": {
+    "q": "Complete: The girl ____ shirt is yellow is my friend. The boy ____ is standing is my brother.",
+    "a": "whose – who."
+   },
+   "board": [
+    {
+     "h": "Appearance",
+     "lines": [
+      "What does he look like?",
+      "He is tall and slim. He has curly hair and brown skin."
+     ]
+    },
+    {
+     "h": "Personality",
+     "lines": [
+      "What is she like?",
+      "She is humble, sociable and reliable."
+     ]
+    },
+    {
+     "h": "Identifying",
+     "lines": [
+      "the boy with the green T-shirt",
+      "the man in the white boubou",
+      "the girl whose shirt is yellow"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete: The girl ____ shirt is yellow is my friend. The boy ____ is standing is my brother."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Past actions and events",
+   "match": [
+    "Talking about one's, a friend's, a neighbor's… experience and past actions"
+   ],
+   "pages": [
+    33,
+    35
+   ],
+   "objectives": [
+    "Talk about past actions and events.",
+    "Use the simple past (affirmative, negative, interrogative)."
+   ],
+   "intro": "I ask: “What did you do last weekend? Where did you go?”",
+   "summary": "The text compares science in the past and today. In the past, scientists worked with very simple tools and observed the sky with their naked eyes; in 1609 Galileo observed the stars with his first telescope; researchers measured everything by hand and wrote their results in notebooks; in 1928 Fleming searched for a way to fight bacteria. Today science moves much faster. We use the simple past for finished past actions: regular verbs + -ed (worked, observed), irregular verbs (spent, took). Negative: didn’t + base verb. Question: Did + subject + base verb?",
+   "points": [
+    "Simple past: finished actions in the past.",
+    "Regular verbs: work → worked, observe → observed.",
+    "Irregular verbs: spend → spent, take → took.",
+    "Negative: didn’t + base verb.",
+    "Question: Did + subject + base verb?"
+   ],
+   "application": {
+    "q": "Put into the past: Scientists (work) with simple tools. They (not / have) computers.",
+    "a": "Scientists worked with simple tools. They didn’t have computers."
+   },
+   "board": [
+    {
+     "h": "Simple past",
+     "lines": [
+      "Affirmative: Scientists worked with simple tools.",
+      "Negative: They didn’t have computers.",
+      "Question: Did they share ideas by letters?"
+     ]
+    },
+    {
+     "h": "Verbs",
+     "lines": [
+      "Regular: work → worked – observe → observed",
+      "Irregular: spend → spent – take → took"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Put into the past: Scientists (work) with simple tools. They (not / have) computers."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Expressing simultaneity (while, when, as)",
+   "match": [
+    "Talking about concurrent activities"
+   ],
+   "pages": [
+    36,
+    38
+   ],
+   "objectives": [
+    "Talk about actions happening at the same time in the past.",
+    "Use while, when and as with the past continuous."
+   ],
+   "intro": "I ask: “What were you doing yesterday at 8 p.m.? What was your brother doing at the same time?”",
+   "summary": "The student tells the teacher about his busy afternoon: while he was working on his homework, his little brother was watching TV; when his father came home, his brother was still watching TV. We use while for two long actions at the same time: while + past continuous, past continuous. We use when for a short action that happens during a longer one: when + simple past, past continuous. We use as for two background actions happening together.",
+   "points": [
+    "While + past continuous + past continuous.",
+    "When + simple past + past continuous.",
+    "As + past continuous + past continuous.",
+    "Past continuous: was/were + verb-ing."
+   ],
+   "application": {
+    "q": "Rewrite with when: I was sleeping. The phone rang.",
+    "a": "When the phone rang, I was sleeping."
+   },
+   "board": [
+    {
+     "h": "While",
+     "lines": [
+      "Two long actions: While I was studying, my brother was watching TV."
+     ]
+    },
+    {
+     "h": "When",
+     "lines": [
+      "Short action during a long one: When the bell rang, we were writing."
+     ]
+    },
+    {
+     "h": "As",
+     "lines": [
+      "Background actions: As I was walking, I was thinking."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Rewrite with when: I was sleeping. The phone rang."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Talking about the future",
+   "match": [
+    "Talking about one's, a friend's, a neighbor's… future life and intentions"
+   ],
+   "pages": [
+    39,
+    42
+   ],
+   "objectives": [
+    "Talk about future actions and plans.",
+    "Use will / shall (affirmative, negative, interrogative)."
+   ],
+   "intro": "I ask: “What will you do after the exams? What will you be in the future?”",
+   "summary": "Ahmed and Mariem talk about the government’s future transport projects: SNIM will modernize the railway between Zouerate and Nouadhibou, the government will build new roads, and the ports of Nouakchott and Nouadhibou will be expanded. We use will / shall + base verb for the future. Negative: will not (won’t) / shall not (shan’t). Question: Will / Shall + subject + base verb? Shall is mainly used with I and we, for offers and suggestions.",
+   "points": [
+    "Will / shall + base verb.",
+    "Negative: won’t / shan’t + base verb.",
+    "Question: Will you help me tomorrow?",
+    "Shall with I / we: Shall we start the lesson now?"
+   ],
+   "application": {
+    "q": "Make negative and interrogative: She will start a new job next week.",
+    "a": "She won’t start a new job next week. Will she start a new job next week?"
+   },
+   "board": [
+    {
+     "h": "Simple future",
+     "lines": [
+      "Affirmative: The government will build new roads.",
+      "Negative: They won’t arrive today.",
+      "Question: Will you help me tomorrow?"
+     ]
+    },
+    {
+     "h": "Will / Shall",
+     "lines": [
+      "Will: all subjects – decisions, promises, predictions",
+      "Shall: I / we – offers and suggestions"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Make negative and interrogative: She will start a new job next week."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Real conditions (promises)",
+   "match": [
+    "Making promises and expressing the likelihood of happenings"
+   ],
+   "pages": [
+    25,
+    28
+   ],
+   "objectives": [
+    "Make promises and express likely results.",
+    "Use the zero and first conditionals."
+   ],
+   "intro": "I ask: “What will your parents do if you pass your exam?”",
+   "summary": "A son asks his father: “What will you do for me if I pass my final exam?” The father promises: “If you pass, I’ll take you on a nice trip.” Zero conditional (facts, routines): If + present simple, present simple – If you heat water, it boils. First conditional (real future possibilities): If + present simple, will + base verb – If you study hard, you will succeed.",
+   "points": [
+    "Zero conditional: If + present, present (facts).",
+    "First conditional: If + present, will + base verb.",
+    "Promises: If you pass, I’ll take you on a trip.",
+    "Likely results: If it rains, we will stay home."
+   ],
+   "application": {
+    "q": "Complete: If you speak English every day, you ____ (improve) quickly.",
+    "a": "If you speak English every day, you will improve quickly."
+   },
+   "board": [
+    {
+     "h": "Zero conditional",
+     "lines": [
+      "If + present simple, present simple",
+      "If you heat water, it boils."
+     ]
+    },
+    {
+     "h": "First conditional",
+     "lines": [
+      "If + present simple, will + base verb",
+      "If you study hard, you will succeed."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete: If you speak English every day, you ____ (improve) quickly."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Making comparison (superlatives)",
+   "match": [
+    "Comparing people and things using the superlatives"
+   ],
+   "pages": [
+    29,
+    32
+   ],
+   "objectives": [
+    "Compare people and things using comparatives and superlatives.",
+    "Use the superlative of superiority and inferiority."
+   ],
+   "intro": "I ask: “What is the biggest city in Mauritania? Who is the tallest student in our class?”",
+   "summary": "The text compares students and places in a school: Mariem is more intelligent than Ahmed, Hamoud is faster. We use the superlative to show that one thing is the most or the least in a group. Superiority: short adjectives: the + adjective + -est (the tallest); long adjectives: the most + adjective (the most intelligent). Inferiority: the least + adjective (the least careful). Example: Nouakchott is the biggest city in Mauritania.",
+   "points": [
+    "Comparative: taller than, more beautiful than.",
+    "Superlative (short): the + adj + -est – the tallest.",
+    "Superlative (long): the most + adj – the most intelligent.",
+    "Inferiority: the least + adj – the least interesting."
+   ],
+   "application": {
+    "q": "Complete: Nouakchott is ____ (big) city in Mauritania. Fatima is ____ (hardworking) student.",
+    "a": "the biggest – the most hardworking."
+   },
+   "board": [
+    {
+     "h": "Superlative of superiority",
+     "lines": [
+      "Short: the + adj + -est – Ali is the tallest student.",
+      "Long: the most + adj – Mariem is the most intelligent girl."
+     ]
+    },
+    {
+     "h": "Superlative of inferiority",
+     "lines": [
+      "the least + adj – This is the least interesting book."
+     ]
+    },
+    {
+     "h": "Example",
+     "lines": [
+      "Nouakchott is the biggest city in Mauritania."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete: Nouakchott is ____ (big) city in Mauritania. Fatima is ____ (hardworking) student."
+     ]
+    }
+   ]
+  }
+ ]
+}

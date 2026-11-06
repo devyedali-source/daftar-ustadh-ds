@@ -1,0 +1,120 @@
+{
+ "subject": "FR",
+ "level": "3AS",
+ "book": "books/FR_3AS.pdf",
+ "bookTitle": "Français 3e AS — manuel IPN",
+ "lessons": [
+  {
+   "title": "Soigner son apparence",
+   "match": [
+    "Décrire un phénomène de société : mode musicale, vestimentaire, coiffure (langage des jeunes)",
+    "Décrire un fait de société : cérémonie de mariage, de circoncision, baptême…"
+   ],
+   "pages": [
+    29,
+    41
+   ],
+   "objectives": [
+    "Décrire des tenues et des coiffures selon les occasions (fêtes, cérémonies).",
+    "Utiliser le superlatif, le participe présent et le gérondif."
+   ],
+   "intro": "Je montre des images de tenues (mariage, fête religieuse, festivités nationales) et je demande : « Comment ces personnes sont-elles habillées ? À quelle occasion ? »",
+   "summary": "Le texte décrit une foule de femmes un jour de fête : les grand-mères avec leurs longs voiles noirs, les jeunes filles aux longues nattes ou aux tresses dressées, les jeunes femmes en boubous amples. Les vêtements de fête sont riches, presque tous teints à l’indigo : bazins, percales ou cotonnades locales. Pour décrire, on utilise le lexique des vêtements et de la coiffure et le superlatif : relatif (le plus…, le moins…, le meilleur) ou absolu (très, extrêmement). Le participe présent finit par -ant (dansant) ; le gérondif = en + participe présent (en dansant) et exprime la manière, le moyen ou la cause.",
+   "points": [
+    "Décrire une tenue : le boubou, le voile, le bazin, les nattes, les tresses.",
+    "Adapter la tenue à l’occasion : mariage, fête religieuse, fête nationale.",
+    "Superlatif relatif : le plus beau, la moins chère, le meilleur.",
+    "Superlatif absolu : très, extrêmement.",
+    "Gérondif : en + participe présent (en dansant)."
+   ],
+   "application": {
+    "q": "Mets au superlatif : « L’été est la saison (chaud +) de l’année. »",
+    "a": "L’été est la saison la plus chaude de l’année."
+   },
+   "board": [
+    {
+     "h": "Décrire une tenue",
+     "lines": [
+      "le boubou – le voile – le bazin – l’indigo",
+      "les nattes – les tresses"
+     ]
+    },
+    {
+     "h": "Le superlatif",
+     "lines": [
+      "relatif : le/la/les plus… – le/la/les moins…",
+      "absolu : très – extrêmement"
+     ]
+    },
+    {
+     "h": "Participe présent et gérondif",
+     "lines": [
+      "dansant – finissant",
+      "en dansant : manière, moyen, cause"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Mets au superlatif : « L’été est la saison (chaud +) de l’année. »"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "S’intégrer dans un milieu professionnel",
+   "match": [
+    "Décrire des métiers en les comparant : enseignant, médecin, pilote, informaticien, architecte"
+   ],
+   "pages": [
+    59,
+    68
+   ],
+   "objectives": [
+    "Présenter et défendre le choix d’un métier.",
+    "Utiliser le lexique des métiers et les articulateurs d’opposition et de concession."
+   ],
+   "intro": "Je demande : « Quel métier voulez-vous exercer ? Pourquoi ? Quels outils utilise un médecin, un maçon ? »",
+   "summary": "L’unité présente les artisanes de Boutilimit et leurs objets traditionnels, un médecin en tournée à Boutilimit, et Lilyane Slansky qui a choisi un métier peu courant chez les femmes. Chaque métier a son lexique spécialisé : le stéthoscope, le bistouri, la seringue pour la médecine ; la pelle, la truelle, le burin pour la maçonnerie. Pour comparer et défendre un choix, on utilise l’opposition (alors que, tandis que, par contre) et la concession (bien que + subjonctif, même si + indicatif, avoir beau + infinitif, pourtant, cependant, toutefois).",
+   "points": [
+    "Lexique des métiers : stéthoscope, bistouri (médecine) ; truelle, burin (maçonnerie).",
+    "Défendre son choix de métier.",
+    "Opposition : alors que, tandis que, par contre.",
+    "Concession : bien que + subjonctif, même si + indicatif.",
+    "avoir beau + infinitif ; pourtant ; cependant."
+   ],
+   "application": {
+    "q": "Complète : ____ il pleuve, je vais me promener. Salek est actif, ____ Salma est studieuse.",
+    "a": "Bien qu’il pleuve… ; … alors que (tandis que) Salma est studieuse."
+   },
+   "board": [
+    {
+     "h": "Le lexique des métiers",
+     "lines": [
+      "médecin : stéthoscope – bistouri – seringue",
+      "maçon : pelle – truelle – burin"
+     ]
+    },
+    {
+     "h": "L’opposition",
+     "lines": [
+      "alors que – tandis que – par contre"
+     ]
+    },
+    {
+     "h": "La concession",
+     "lines": [
+      "bien que + subjonctif – même si + indicatif",
+      "avoir beau + infinitif – pourtant – cependant"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Complète : ____ il pleuve, je vais me promener. Salek est actif, ____ Salma est studieuse."
+     ]
+    }
+   ]
+  }
+ ]
+}
