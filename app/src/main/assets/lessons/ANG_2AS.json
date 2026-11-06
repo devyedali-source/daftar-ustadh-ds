@@ -1,0 +1,235 @@
+{
+ "subject": "ANG",
+ "level": "2AS",
+ "book": "books/ANG_2AS.pdf",
+ "bookTitle": "Study English — 2nd year (2AS), IPN",
+ "lessons": [
+  {
+   "title": "Eating outdoors (Ordering food)",
+   "match": [
+    "Making and responding to orders"
+   ],
+   "pages": [
+    16,
+    19
+   ],
+   "objectives": [
+    "Order food and drinks politely in a restaurant.",
+    "Use: Can/May I help you? I’d like… Would you like…?"
+   ],
+   "intro": "I ask: “You are in a restaurant and you are hungry. What do you say to the waiter?” Then we read the dialogue between Houda, Yahya and the waiter.",
+   "summary": "Houda and her brother Yahya are eating out. The waiter asks: “Can I help you?” Houda says: “I’d like some lunch.” They order a starter (a little salad, a little soup), a main course (rice and fish, a vegetarian sandwich) and drinks (milk). At the end, Houda asks for the bill. To order we use: I would like… / I’d like… / I’ll have… The waiter asks: Would you like a starter? What would you like for the main course? Would you like anything to drink?",
+   "points": [
+    "Waiter: Can I help you? / May I help you?",
+    "Customer: I’d like… / I’ll have…",
+    "Waiter: Would you like a starter / anything to drink?",
+    "Customer: Could you give us the bill, please?",
+    "Menu: starter, main course, dessert, drink."
+   ],
+   "application": {
+    "q": "Complete: Waiter: What would you like for the main course? – You: ____",
+    "a": "I’d like a plate of rice and fish, please."
+   },
+   "board": [
+    {
+     "h": "Ordering",
+     "lines": [
+      "Can I help you? – Yes, please.",
+      "I’d like some lunch, please.",
+      "I’ll have a vegetarian sandwich."
+     ]
+    },
+    {
+     "h": "The waiter asks",
+     "lines": [
+      "Would you like a starter?",
+      "What would you like for the main course?",
+      "Would you like anything to drink?"
+     ]
+    },
+    {
+     "h": "The menu",
+     "lines": [
+      "starter – main course – dessert – drink"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete: Waiter: What would you like for the main course? – You: ____"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Can I borrow your textbook? (Requests)",
+   "match": [
+    "Making and responding to requests"
+   ],
+   "pages": [
+    20,
+    23
+   ],
+   "objectives": [
+    "Make polite requests.",
+    "Accept or decline a request."
+   ],
+   "intro": "I ask a student: “Can I borrow your pen?” He answers. Then I ask: “What did I ask for? Was I polite?”",
+   "summary": "Aly forgot his English book at home. He asks his classmate Sidi: “Can I borrow your book?” Sidi is using it, so Aly asks the teacher: “Could you, please, lend me your book for a while?” To make a request we use: Can/Could I + base verb…? Can/Could you + base verb…? May I…? Will/Would you…? Do/Would you mind + verb-ing…? Could, May, Would you mind and I wonder if… are more formal than Can and Will.",
+   "points": [
+    "Can/Could I + base verb…? (Can I borrow your book?)",
+    "Can/Could you + base verb…?",
+    "May I…? (May I use your ruler?)",
+    "Do/Would you mind + verb-ing…? → answer “No, not at all.” to accept.",
+    "Accept: Sure! / Of course! Decline: Sorry, I can’t."
+   ],
+   "application": {
+    "q": "Complete: ____ you mind opening the window? – No, not at all.",
+    "a": "Would you mind opening the window? (or: Do you mind…)"
+   },
+   "board": [
+    {
+     "h": "Making requests",
+     "lines": [
+      "Can/Could I + verb? – Can I borrow your book?",
+      "Can/Could you + verb? – Could you lend me your pen?",
+      "May I + verb? – May I sit here?",
+      "Do/Would you mind + verb-ing? – Would you mind opening the window?"
+     ]
+    },
+    {
+     "h": "Responding",
+     "lines": [
+      "Accept: Sure! / Of course! / No, not at all.",
+      "Decline: Sorry, I can’t. I’m using it."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete: ____ you mind opening the window? – No, not at all."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "At the food market (Quantity and prices)",
+   "match": [
+    "Expressing and asking about quantity using quantifiers (many, much, a lot of, few, a few, little, a little…)",
+    "Counting (50-1000)"
+   ],
+   "pages": [
+    34,
+    36
+   ],
+   "objectives": [
+    "Express and ask about quantity.",
+    "Ask for and give the price of items."
+   ],
+   "intro": "I show a shopping list and ask: “How much sugar do we need? How many kilos of onions?”",
+   "summary": "Aicha’s grandmother is at the market. She buys a 25 kg bag of rice, 5 kilos of sugar, a 5-liter bottle of cooking oil, 5 kilos of onions and 3 kilos of potatoes. She asks: “How much is all that?” The salesperson says: “That’s 2110 MRU.” We use How many with countable nouns (How many kilos?) and How much with uncountable nouns (How much sugar?). Many and much are for big amounts; few/a few (countable) and little/a little (uncountable) are for small amounts. To ask the price: How much is it? How much does it cost?",
+   "points": [
+    "How many + countable noun: How many kilos?",
+    "How much + uncountable noun: How much sugar?",
+    "a few (countable), a little (uncountable).",
+    "Price: How much is it? How much does it cost? – It’s 2110 MRU.",
+    "Containers: a bag of, a bottle of, a kilo of, a packet of."
+   ],
+   "application": {
+    "q": "Complete with many or much: How ____ eggs are there in your fridge? How ____ salt is there?",
+    "a": "How many eggs…? How much salt…?"
+   },
+   "board": [
+    {
+     "h": "Quantity",
+     "lines": [
+      "How many + countable: How many kilos do you want?",
+      "How much + uncountable: How much sugar did she buy?",
+      "a few + countable / a little + uncountable"
+     ]
+    },
+    {
+     "h": "Prices",
+     "lines": [
+      "How much is it? / How much does it cost?",
+      "That’s 2110 MRU."
+     ]
+    },
+    {
+     "h": "Containers",
+     "lines": [
+      "a bag of rice – a bottle of oil – a kilo of sugar – a packet of tea"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete with many or much: How ____ eggs are there in your fridge? How ____ salt is there?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fruits and vegetables (Comparison)",
+   "match": [
+    "Comparing people and things using short and long adjectives"
+   ],
+   "pages": [
+    37,
+    39
+   ],
+   "objectives": [
+    "Compare two people or things.",
+    "Use the comparative of superiority, inferiority and equality."
+   ],
+   "intro": "I show a date and a carrot and ask: “Which is sweeter? Which is cheaper?”",
+   "summary": "The text compares fruits and vegetables: fruits are usually tastier than vegetables; dates are more delicious than carrots; vegetables are cheaper than fruits; sweet potatoes are as sweet as beetroots. Comparative of superiority: short adjective + -er + than (bigger than), more + long adjective + than (more delicious than). Irregular: good → better, bad → worse. Comparative of inferiority: less + adjective + than. Comparative of equality: as + adjective + as.",
+   "points": [
+    "Short adjective + -er + than: tastier, bigger.",
+    "more + long adjective + than: more delicious.",
+    "Irregular: good → better, bad → worse.",
+    "Inferiority: less + adjective + than.",
+    "Equality: as + adjective + as."
+   ],
+   "application": {
+    "q": "Give the comparative: Watermelons are (big) melons. Plums are (tasty – equality) pineapples.",
+    "a": "Watermelons are bigger than melons. Plums are as tasty as pineapples."
+   },
+   "board": [
+    {
+     "h": "Superiority",
+     "lines": [
+      "short adj + -er + than: big → bigger than",
+      "more + long adj + than: more delicious than",
+      "good → better / bad → worse"
+     ]
+    },
+    {
+     "h": "Inferiority",
+     "lines": [
+      "less + adj + than: less tasty than"
+     ]
+    },
+    {
+     "h": "Equality",
+     "lines": [
+      "as + adj + as: as sweet as"
+     ]
+    },
+    {
+     "h": "Spelling",
+     "lines": [
+      "big → bigger (CVC)",
+      "easy → easier (y → i)"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Give the comparative: Watermelons are (big) melons. Plums are (tasty – equality) pineapples."
+     ]
+    }
+   ]
+  }
+ ]
+}

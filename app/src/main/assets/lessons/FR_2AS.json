@@ -1,0 +1,122 @@
+{
+ "subject": "FR",
+ "level": "2AS",
+ "book": "books/FR_2AS.pdf",
+ "bookTitle": "Français 2e AS — manuel de l’élève, IPN",
+ "lessons": [
+  {
+   "title": "Exprimer ses goûts et donner ses motivations",
+   "match": [
+    "Expliquer simplement ses choix personnels et ses goûts"
+   ],
+   "pages": [
+    10,
+    19
+   ],
+   "objectives": [
+    "Exprimer ses goûts et ses préférences et les justifier.",
+    "Reconnaître les types de phrases et la forme négative."
+   ],
+   "intro": "Je montre des images de tenues (boubou, voile, caftan, wax) et je demande : « Quelle tenue préférez-vous porter le jour de la fête ? Pourquoi ? »",
+   "summary": "Le texte raconte le matin de l’Aïd el Kébir : chacun porte une tenue neuve. Les plus grands préfèrent le grand boubou, ceux de la classe d’âge du narrateur aiment le « Samandor » bien brodé, et d’autres choisissent le wax ou le tergal par modestie. Pour exprimer le goût et le choix, on utilise des verbes comme aimer, adorer, préférer, choisir, détester. Il existe quatre types de phrases : déclarative, interrogative (totale ou partielle), impérative (ordre, interdit) et exclamative (émotion). La négation se construit avec ne…pas, ne…jamais, ne…rien, ne…plus, ne…aucun, ne…ni…ni, ne…que (restrictive).",
+   "points": [
+    "Goût et préférence : aimer, adorer, préférer, choisir, détester.",
+    "Justifier son choix : parce que, car, pour…",
+    "Types de phrases : déclarative, interrogative, impérative, exclamative.",
+    "Négation : ne…pas, ne…jamais, ne…rien, ne…aucun, ne…ni…ni.",
+    "Temps composé : la négation encadre l’auxiliaire (Elle n’a pas porté de voile)."
+   ],
+   "application": {
+    "q": "Mets à la forme négative : « J’aime le grand boubou et le caftan. »",
+    "a": "Je n’aime ni le grand boubou ni le caftan."
+   },
+   "board": [
+    {
+     "h": "Exprimer ses goûts",
+     "lines": [
+      "J’aime / J’adore / Je préfère / Je choisis…",
+      "Je n’aime pas / Je déteste…",
+      "… parce que / car …"
+     ]
+    },
+    {
+     "h": "Types de phrases",
+     "lines": [
+      "déclarative : J’aime beaucoup le grand boubou.",
+      "interrogative : Pourquoi tu ne portes pas la même tenue ?",
+      "impérative : Ne parle pas comme ça !",
+      "exclamative : Quel jeune homme audacieux tu es !"
+     ]
+    },
+    {
+     "h": "La négation",
+     "lines": [
+      "ne…pas – ne…jamais – ne…rien – ne…plus",
+      "ne…aucun – ne…ni…ni – ne…que (restrictive)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Mets à la forme négative : « J’aime le grand boubou et le caftan. »"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le choix de Nafi (deux métiers)",
+   "match": [
+    "Expliquer les avantages/inconvénients d'un métier exercé dans son environnement"
+   ],
+   "pages": [
+    20,
+    21
+   ],
+   "objectives": [
+    "Présenter un métier de son environnement.",
+    "Expliquer les raisons d’un choix de métier."
+   ],
+   "intro": "Je demande : « Quel métier voulez-vous exercer plus tard ? Pourquoi ? Qu’est-ce qui vous plaît et qu’est-ce qui ne vous plaît pas dans ce métier ? »",
+   "summary": "Dans le dialogue, Hafsa est infirmière d’État aux urgences et Nafi est assistante sociale. Les deux métiers ont un point commun : aider les personnes. Mais ils sont différents : l’infirmière aide les personnes quand elles sont malades, l’assistante sociale les aide quand elles sont en difficulté sociale. Nafi explique qu’elle a hésité entre les deux métiers et qu’elle n’a pas choisi celui d’infirmière parce qu’elle n’aime pas la dimension soin.",
+   "points": [
+    "Infirmière : soigner les malades.",
+    "Assistante sociale : aider les personnes en difficulté sociale.",
+    "Point commun : l’assistance aux personnes.",
+    "Justifier un choix : Je n’ai pas choisi… parce que…"
+   ],
+   "application": {
+    "q": "Présente en 5 lignes un métier de ton quartier : ce qu’il apporte et ses difficultés.",
+    "a": "Exemple : Le boulanger fabrique le pain chaque jour. C’est un métier utile, mais il faut se lever très tôt…"
+   },
+   "board": [
+    {
+     "h": "Deux métiers",
+     "lines": [
+      "Infirmière d’État : aide les malades",
+      "Assistante sociale : aide les personnes en difficulté sociale"
+     ]
+    },
+    {
+     "h": "Comparer",
+     "lines": [
+      "Point commun : l’assistance",
+      "Différence : la maladie / la difficulté sociale"
+     ]
+    },
+    {
+     "h": "Expliquer son choix",
+     "lines": [
+      "J’ai choisi… parce que…",
+      "Je n’ai pas choisi… car je n’aime pas…"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Présente en 5 lignes un métier de ton quartier : ce qu’il apporte et ses difficultés."
+     ]
+    }
+   ]
+  }
+ ]
+}
