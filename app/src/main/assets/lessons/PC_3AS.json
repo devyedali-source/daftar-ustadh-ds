@@ -1,0 +1,1162 @@
+{
+ "subject": "PC",
+ "level": "3AS",
+ "book": "books/PC_3AS.pdf",
+ "bookTitle": "Physique-Chimie 3e AS — IPN",
+ "lessons": [
+  {
+   "title": "La réaction chimique : réactifs et produits",
+   "match": [
+    "Réaction chimique : définition, réactifs et produits"
+   ],
+   "pages": [
+    10,
+    12
+   ],
+   "objectives": [
+    "Définir une réaction chimique.",
+    "Identifier les réactifs et les produits."
+   ],
+   "intro": "Je fais brûler un morceau de charbon et je demande : « Le charbon disparaît : que devient-il ? »",
+   "summary": "Une réaction chimique est une transformation de la matière au cours de laquelle les espèces chimiques sont modifiées. Les espèces qui disparaissent sont les réactifs, celles qui se forment sont les produits. Exemple : la combustion du carbone : carbone + dioxygène → dioxyde de carbone. Le bilan s’écrit : réactif (1) + réactif (2) → produit (1) + produit (2).",
+   "points": [
+    "Réaction chimique : transformation de la matière.",
+    "Réactifs : espèces qui disparaissent.",
+    "Produits : espèces qui se forment.",
+    "Combustion du carbone : C + O₂ → CO₂."
+   ],
+   "application": {
+    "q": "Dans la combustion du carbone, quels sont les réactifs et le produit ?",
+    "a": "Réactifs : carbone et dioxygène. Produit : dioxyde de carbone."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Transformation au cours de laquelle les espèces chimiques changent"
+     ]
+    },
+    {
+     "h": "Réactifs et produits",
+     "lines": [
+      "Réactifs : disparaissent – produits : se forment",
+      "réactif 1 + réactif 2 → produit 1 + produit 2"
+     ]
+    },
+    {
+     "h": "Exemple",
+     "lines": [
+      "carbone + dioxygène → dioxyde de carbone"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Dans la combustion du carbone, quels sont les réactifs et le produit ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Éléments chimiques : atomes et molécules",
+   "match": [
+    "Élément chimique : atomes, molécules"
+   ],
+   "pages": [
+    9,
+    10
+   ],
+   "objectives": [
+    "Définir l’élément chimique, l’atome et la molécule.",
+    "Utiliser la masse molaire et la quantité de matière."
+   ],
+   "intro": "Je demande : « Le fer d’un clou et le fer de la rouille : est-ce le même élément ? »",
+   "summary": "L’atome est le plus petit constituant séparable de la matière. Les atomes identiques forment un élément chimique, qui a un nom, un symbole (une majuscule, parfois suivie d’une minuscule : C, Fe, Cu) et une masse molaire M en g/mol. Une molécule est un groupe d’au moins deux atomes liés ; sa formule indique la nature et le nombre de ses atomes, et sa masse molaire est la somme des masses molaires de ses atomes. À une masse m d’un corps correspond une quantité de matière n = m / M (en mol).",
+   "points": [
+    "Atome : plus petit constituant séparable.",
+    "Élément chimique : atomes identiques, nom et symbole.",
+    "Masse molaire M en g/mol.",
+    "Molécule : au moins deux atomes liés.",
+    "n = m / M."
+   ],
+   "application": {
+    "q": "Calcule la masse molaire de H₂O (H = 1 g/mol, O = 16 g/mol) et la quantité de matière dans 36 g d’eau.",
+    "a": "M(H₂O) = 2 × 1 + 16 = 18 g/mol ; n = 36 / 18 = 2 mol."
+   },
+   "board": [
+    {
+     "h": "Atome et élément",
+     "lines": [
+      "Atome : plus petit constituant séparable",
+      "Élément : atomes identiques – symbole : C, Fe, Cu"
+     ]
+    },
+    {
+     "h": "Molécule",
+     "lines": [
+      "Au moins 2 atomes liés – formule chimique",
+      "M(molécule) = somme des M des atomes"
+     ]
+    },
+    {
+     "h": "Quantité de matière",
+     "lines": [
+      "n = m / M (mol)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule la masse molaire de H₂O (H = 1 g/mol, O = 16 g/mol) et la quantité de matière dans 36 g d’eau."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’équation-bilan d’une réaction",
+   "match": [
+    "Écriture de l'équation bilan d'une réaction",
+    "Conservation du nombre d'atomes et de la nature de l'atome"
+   ],
+   "pages": [
+    10,
+    15
+   ],
+   "objectives": [
+    "Écrire et équilibrer l’équation-bilan d’une réaction.",
+    "Appliquer la conservation des atomes."
+   ],
+   "intro": "J’écris C + O₂ → CO₂ puis H₂ + O₂ → H₂O et je demande : « Compte les atomes de chaque côté. Que remarques-tu ? »",
+   "summary": "Au cours d’une réaction chimique, les éléments chimiques présents dans les réactifs se retrouvent dans les produits : il y a conservation de la nature et du nombre des atomes. L’équation-bilan représente la réaction avec les formules des réactifs et des produits ; on l’équilibre en plaçant des coefficients devant les formules pour que chaque type d’atome soit en même nombre des deux côtés. Exemple : 2 H₂ + O₂ → 2 H₂O.",
+   "points": [
+    "Conservation de la nature des atomes.",
+    "Conservation du nombre des atomes.",
+    "On équilibre avec des coefficients devant les formules.",
+    "2 H₂ + O₂ → 2 H₂O."
+   ],
+   "application": {
+    "q": "Équilibre : CH₄ + O₂ → CO₂ + H₂O.",
+    "a": "CH₄ + 2 O₂ → CO₂ + 2 H₂O."
+   },
+   "board": [
+    {
+     "h": "Conservation",
+     "lines": [
+      "Même nature et même nombre d’atomes dans les réactifs et les produits"
+     ]
+    },
+    {
+     "h": "Équilibrer",
+     "lines": [
+      "Coefficients devant les formules (jamais dans les indices)",
+      "2 H₂ + O₂ → 2 H₂O"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Équilibre : CH₄ + O₂ → CO₂ + H₂O."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Solutions et concentration massique",
+   "match": [
+    "Soluté, solvant, solution",
+    "Dissolution",
+    "Concentration massique d'une solution"
+   ],
+   "pages": [
+    21,
+    23
+   ],
+   "objectives": [
+    "Définir soluté, solvant et solution.",
+    "Calculer une concentration massique."
+   ],
+   "intro": "Je dissous du sucre dans un verre d’eau et je demande : « Où est passé le sucre ? Comment savoir si l’eau est très sucrée ? »",
+   "summary": "Une solution est un mélange homogène obtenu par dissolution d’une ou de plusieurs substances (les solutés) dans un solvant. Quand le solvant est l’eau, c’est une solution aqueuse. La concentration massique d’un soluté est Cm = m / V, où m est la masse de soluté (en g) et V le volume de la solution (en L) ; elle s’exprime en g/L. Pour préparer une solution, on pèse le soluté, on le dissout dans une fiole jaugée et on complète avec l’eau.",
+   "points": [
+    "Solution : soluté + solvant (mélange homogène).",
+    "Solution aqueuse : le solvant est l’eau.",
+    "Cm = m / V (g/L).",
+    "Préparation : pesée, dissolution, fiole jaugée."
+   ],
+   "application": {
+    "q": "On dissout 10 g de sel dans de l’eau pour obtenir 0,5 L de solution. Calcule Cm.",
+    "a": "Cm = 10 / 0,5 = 20 g/L."
+   },
+   "board": [
+    {
+     "h": "Définitions",
+     "lines": [
+      "Soluté + solvant → solution",
+      "Solution aqueuse : solvant = eau"
+     ]
+    },
+    {
+     "h": "Concentration massique",
+     "lines": [
+      "Cm = m / V – m en g, V en L, Cm en g/L"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "On dissout 10 g de sel dans de l’eau pour obtenir 0,5 L de solution. Calcule Cm."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dilution, solution saturée et solubilité",
+   "match": [
+    "Notion de dilution",
+    "Concentration massique d'une solution après la dilution",
+    "Solution saturée",
+    "Solubilité"
+   ],
+   "pages": [
+    22,
+    25
+   ],
+   "objectives": [
+    "Préparer une solution diluée.",
+    "Définir une solution saturée et la solubilité."
+   ],
+   "intro": "Je verse de l’eau dans un sirop et je demande : « Le sirop est-il plus ou moins concentré ? La quantité de sucre a-t-elle changé ? »",
+   "summary": "Diluer une solution, c’est lui ajouter du solvant : la masse de soluté ne change pas, mais la concentration diminue. On a : C₀ × V₀ = Cf × Vf, donc le volume à prélever de la solution mère est V₀ = (Cf × Vf) / C₀. Une solution est saturée lorsque le solvant ne peut plus dissoudre de soluté. La solubilité d’un soluté est la concentration maximale qu’on peut atteindre dans un solvant donné ; elle dépend de la température.",
+   "points": [
+    "Dilution : ajout de solvant, même masse de soluté.",
+    "C₀ × V₀ = Cf × Vf.",
+    "V₀ = Cf × Vf / C₀.",
+    "Solution saturée : plus de dissolution possible.",
+    "Solubilité : concentration maximale, dépend de la température."
+   ],
+   "application": {
+    "q": "On veut 100 mL d’une solution à 2 g/L à partir d’une solution mère à 10 g/L. Quel volume prélever ?",
+    "a": "V₀ = (2 × 100) / 10 = 20 mL."
+   },
+   "board": [
+    {
+     "h": "Dilution",
+     "lines": [
+      "Ajout de solvant – la masse de soluté est conservée",
+      "C₀ × V₀ = Cf × Vf"
+     ]
+    },
+    {
+     "h": "Saturation et solubilité",
+     "lines": [
+      "Solution saturée : le soluté ne se dissout plus",
+      "Solubilité : concentration maximale – dépend de la température"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "On veut 100 mL d’une solution à 2 g/L à partir d’une solution mère à 10 g/L. Quel volume prélever ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Solutions acides, basiques et neutres : le pH",
+   "match": [
+    "Solutions acides, basiques et neutres",
+    "Notion de pH",
+    "pH d'une solution acide, basique, neutre"
+   ],
+   "pages": [
+    31,
+    33
+   ],
+   "objectives": [
+    "Classer les solutions selon leur pH.",
+    "Mesurer le pH avec le papier pH ou le pH-mètre."
+   ],
+   "intro": "Je montre du jus de citron, de l’eau et de l’eau savonneuse et je demande : « Comment savoir si une solution est acide ? »",
+   "summary": "Les solutions aqueuses sont acides, basiques ou neutres. Le pH est un nombre sans unité compris entre 0 et 14 qui permet d’évaluer l’acidité ou la basicité d’une solution : pH < 7 : solution acide ; pH = 7 : solution neutre ; pH > 7 : solution basique. On le mesure avec le papier pH (imbibé d’indicateurs colorés) ou, plus précisément, avec le pH-mètre. Les solutions acides et basiques concentrées sont dangereuses (corrosives) : il ne faut ni les toucher, ni les goûter, ni les respirer.",
+   "points": [
+    "pH : nombre sans unité entre 0 et 14.",
+    "pH < 7 : acide ; = 7 : neutre ; > 7 : basique.",
+    "Mesure : papier pH ou pH-mètre.",
+    "Précautions : ne pas toucher, goûter ni inhaler."
+   ],
+   "application": {
+    "q": "Classe : jus de citron (pH = 2), eau pure (pH = 7), eau de javel (pH = 12).",
+    "a": "Acide : jus de citron. Neutre : eau pure. Basique : eau de javel."
+   },
+   "board": [
+    {
+     "h": "Échelle de pH",
+     "lines": [
+      "0 ← acide — 7 neutre — basique → 14"
+     ]
+    },
+    {
+     "h": "Mesure",
+     "lines": [
+      "Papier pH (indicateurs colorés)",
+      "pH-mètre (valeur précise)"
+     ]
+    },
+    {
+     "h": "Sécurité",
+     "lines": [
+      "Ne pas toucher – ne pas goûter – ne pas inhaler"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : jus de citron (pH = 2), eau pure (pH = 7), eau de javel (pH = 12)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Effet de la dilution sur le pH",
+   "match": [
+    "Effet de la dilution sur le pH : solution acide, basique, neutre"
+   ],
+   "pages": [
+    33,
+    35
+   ],
+   "objectives": [
+    "Prévoir l’effet de la dilution sur le pH."
+   ],
+   "intro": "Je mesure le pH d’un vinaigre, puis du même vinaigre dilué avec de l’eau, et je demande : « Que devient le pH ? »",
+   "summary": "Quand on dilue une solution acide, son pH augmente et se rapproche de 7 : elle devient moins acide. Quand on dilue une solution basique, son pH diminue et se rapproche de 7 : elle devient moins basique. La dilution d’une solution neutre ne change pas son pH. Une solution ne peut pas changer de nature (acide ou basique) par simple dilution.",
+   "points": [
+    "Acide dilué : pH augmente vers 7.",
+    "Basique dilué : pH diminue vers 7.",
+    "Neutre dilué : pH reste 7.",
+    "La dilution ne change pas la nature de la solution."
+   ],
+   "application": {
+    "q": "Une solution a un pH de 3. Après dilution, son pH peut-il être 9 ? Pourquoi ?",
+    "a": "Non : en diluant un acide, le pH augmente mais reste inférieur à 7."
+   },
+   "board": [
+    {
+     "h": "Dilution et pH",
+     "lines": [
+      "Acide : pH ↑ vers 7 (moins acide)",
+      "Basique : pH ↓ vers 7 (moins basique)",
+      "Neutre : pH = 7 inchangé"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Une solution a un pH de 3. Après dilution, son pH peut-il être 9 ? Pourquoi ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les états de la matière : l’état liquide",
+   "match": [
+    "Les différents états de la matière : mise en évidence",
+    "Propriétés physiques (état liquide)"
+   ],
+   "pages": [
+    43,
+    45
+   ],
+   "objectives": [
+    "Mettre en évidence les trois états de la matière.",
+    "Connaître les propriétés de l’état liquide."
+   ],
+   "intro": "Je montre un glaçon, de l’eau et de la vapeur et je demande : « Est-ce la même matière ? Sous quels états ? »",
+   "summary": "La matière se trouve sous trois états physiques : solide (glace, bois, sable), liquide (eau, huile, lait), gazeux (air, vapeur d’eau, butane). Un liquide a un volume propre mais pas de forme propre : il prend la forme du récipient ; sa surface libre au repos est plane et horizontale ; il est incompressible et non expansible.",
+   "points": [
+    "Trois états : solide, liquide, gazeux.",
+    "Liquide : volume propre, pas de forme propre.",
+    "Surface libre plane et horizontale.",
+    "Liquide incompressible et non expansible."
+   ],
+   "application": {
+    "q": "Pourquoi l’eau versée dans une bouteille prend-elle la forme de la bouteille ?",
+    "a": "Parce qu’un liquide n’a pas de forme propre : il prend celle du récipient."
+   },
+   "board": [
+    {
+     "h": "Les trois états",
+     "lines": [
+      "Solide – liquide – gazeux"
+     ]
+    },
+    {
+     "h": "L’état liquide",
+     "lines": [
+      "Volume propre – pas de forme propre",
+      "Surface libre plane et horizontale",
+      "Incompressible – non expansible"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi l’eau versée dans une bouteille prend-elle la forme de la bouteille ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’état solide et l’état gazeux",
+   "match": [
+    "Propriétés physiques (état solide, état gazeux)"
+   ],
+   "pages": [
+    43,
+    46
+   ],
+   "objectives": [
+    "Connaître les propriétés des solides compacts et divisés.",
+    "Connaître les propriétés des gaz."
+   ],
+   "intro": "Je montre une datte, du sable et un ballon gonflé et je demande : « Lesquels ont une forme propre ? »",
+   "summary": "Un solide compact (verre, pain, glace) peut être saisi entre les doigts et possède une forme propre et un volume propre. Un solide divisé (sable, farine, sucre en poudre) ne peut être saisi que partiellement et prend la forme du récipient. Les gaz (air, butane) n’ont ni forme propre ni volume propre : ils occupent tout le volume qui leur est offert ; ils sont compressibles et expansibles.",
+   "points": [
+    "Solide compact : forme et volume propres.",
+    "Solide divisé : prend la forme du récipient.",
+    "Gaz : ni forme ni volume propres.",
+    "Gaz : compressibles et expansibles."
+   ],
+   "application": {
+    "q": "Classe : glace, farine, air, huile.",
+    "a": "Solide compact : glace. Solide divisé : farine. Gaz : air. Liquide : huile."
+   },
+   "board": [
+    {
+     "h": "L’état solide",
+     "lines": [
+      "Compact : forme et volume propres – verre, pain",
+      "Divisé : prend la forme du récipient – sable, farine"
+     ]
+    },
+    {
+     "h": "L’état gazeux",
+     "lines": [
+      "Ni forme ni volume propres",
+      "Compressible et expansible"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : glace, farine, air, huile."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les changements d’état",
+   "match": [
+    "Les changements d'état de la matière"
+   ],
+   "pages": [
+    51,
+    54
+   ],
+   "objectives": [
+    "Nommer les changements d’état.",
+    "Connaître les températures de changement d’état de l’eau."
+   ],
+   "intro": "Je chauffe un glaçon dans une casserole et je demande : « Que se passe-t-il successivement ? »",
+   "summary": "Un changement d’état est le passage d’un état physique à un autre ; il dépend de la température et de la pression. Fusion : solide → liquide (la glace fond à 0 °C). Solidification : liquide → solide (l’eau gèle à 0 °C). Vaporisation (ébullition) : liquide → gaz (l’eau bout à 100 °C). Liquéfaction : gaz → liquide. Sublimation : solide → gaz directement. Condensation : gaz → solide.",
+   "points": [
+    "Fusion : solide → liquide.",
+    "Solidification : liquide → solide (eau : 0 °C).",
+    "Vaporisation : liquide → gaz (eau : 100 °C).",
+    "Liquéfaction : gaz → liquide.",
+    "Sublimation : solide → gaz ; condensation : gaz → solide."
+   ],
+   "application": {
+    "q": "Comment s’appelle le passage de la vapeur d’eau à l’eau liquide sur une vitre froide ?",
+    "a": "La liquéfaction."
+   },
+   "board": [
+    {
+     "h": "Changements d’état",
+     "lines": [
+      "Fusion : S → L – Solidification : L → S",
+      "Vaporisation : L → G – Liquéfaction : G → L",
+      "Sublimation : S → G – Condensation : G → S"
+     ]
+    },
+    {
+     "h": "L’eau",
+     "lines": [
+      "Fusion / solidification : 0 °C",
+      "Ébullition : 100 °C"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment s’appelle le passage de la vapeur d’eau à l’eau liquide sur une vitre froide ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Masse et volume lors d’un changement d’état",
+   "match": [
+    "Conservation de la masse",
+    "Variation du volume",
+    "Unités : masse (kg), volume (m3), température (°C)",
+    "Température des changements d'état de l'eau"
+   ],
+   "pages": [
+    54,
+    56
+   ],
+   "objectives": [
+    "Montrer la conservation de la masse lors d’un changement d’état.",
+    "Constater la variation du volume ; connaître les unités."
+   ],
+   "intro": "Je pèse une bouteille d’eau, je la mets au congélateur, puis je la pèse à nouveau : « La masse a-t-elle changé ? Et le volume ? »",
+   "summary": "Lors d’un changement d’état, la masse se conserve, mais le volume varie : quand l’eau se solidifie, son volume augmente (la glace prend plus de place que l’eau). Unités : la masse en kilogramme (kg), le volume en mètre cube (m³), la température en degré Celsius (°C). Pour l’eau pure, sous la pression normale, la fusion et la solidification ont lieu à 0 °C et l’ébullition à 100 °C ; la température reste constante pendant le changement d’état.",
+   "points": [
+    "La masse se conserve.",
+    "Le volume varie (l’eau gèle → volume augmente).",
+    "Unités : kg, m³, °C.",
+    "Eau : 0 °C (fusion) et 100 °C (ébullition).",
+    "Température constante pendant le changement d’état."
+   ],
+   "application": {
+    "q": "Une bouteille pleine d’eau fermée éclate au congélateur. Explique.",
+    "a": "En gelant, l’eau garde la même masse mais son volume augmente, ce qui fait éclater la bouteille."
+   },
+   "board": [
+    {
+     "h": "Conservation",
+     "lines": [
+      "La masse se conserve lors d’un changement d’état"
+     ]
+    },
+    {
+     "h": "Volume",
+     "lines": [
+      "Le volume varie : l’eau qui gèle augmente de volume"
+     ]
+    },
+    {
+     "h": "Unités",
+     "lines": [
+      "Masse : kg – volume : m³ – température : °C"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Une bouteille pleine d’eau fermée éclate au congélateur. Explique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Masse, volume et masse volumique",
+   "match": [
+    "Masse, volume, masse volumique : mesure, unité, définition"
+   ],
+   "pages": [
+    63,
+    66
+   ],
+   "objectives": [
+    "Mesurer une masse et un volume.",
+    "Calculer une masse volumique."
+   ],
+   "intro": "Je montre un kilo de coton et un kilo de fer et je demande : « Lequel est le plus lourd ? Lequel prend le plus de place ? »",
+   "summary": "La masse m d’un objet représente la quantité de matière qui le constitue ; elle se mesure avec une balance et s’exprime en kilogramme (kg). Le volume V mesure l’espace occupé par un corps ; son unité légale est le mètre cube (m³) ; on mesure le volume d’un liquide avec une éprouvette graduée (1 L = 1 dm³). La masse volumique d’un corps est ρ = m / V (en kg/m³ ou g/cm³).",
+   "points": [
+    "Masse : balance, kg.",
+    "Volume : éprouvette graduée, m³ (1 L = 1 dm³).",
+    "Masse volumique : ρ = m / V.",
+    "Unités : kg/m³ ou g/cm³."
+   ],
+   "application": {
+    "q": "Un cube d’acier de 1 dm³ a une masse de 7,7 kg. Calcule sa masse volumique en kg/m³.",
+    "a": "ρ = 7,7 kg / 0,001 m³ = 7700 kg/m³."
+   },
+   "board": [
+    {
+     "h": "Masse",
+     "lines": [
+      "Quantité de matière – balance – kg"
+     ]
+    },
+    {
+     "h": "Volume",
+     "lines": [
+      "Espace occupé – éprouvette graduée – m³ (1 L = 1 dm³)"
+     ]
+    },
+    {
+     "h": "Masse volumique",
+     "lines": [
+      "ρ = m / V – kg/m³ ou g/cm³"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un cube d’acier de 1 dm³ a une masse de 7,7 kg. Calcule sa masse volumique en kg/m³."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La densité",
+   "match": [
+    "Densité : définition, unité",
+    "Densité d'un liquide et d'un solide par rapport à l'eau"
+   ],
+   "pages": [
+    66,
+    68
+   ],
+   "objectives": [
+    "Définir et calculer la densité d’un solide ou d’un liquide par rapport à l’eau.",
+    "Prévoir si un corps flotte."
+   ],
+   "intro": "Je mets un morceau de bois et un clou dans l’eau et je demande : « Pourquoi l’un flotte et l’autre coule ? »",
+   "summary": "La densité d’un solide ou d’un liquide par rapport à l’eau est d = ρ(corps) / ρ(eau). Elle n’a pas d’unité. La densité d’un gaz se calcule par rapport à l’air : d = ρ(gaz) / ρ(air). Un corps dont la densité est inférieure à 1 flotte sur l’eau ; si elle est supérieure à 1, il coule.",
+   "points": [
+    "d = ρ(corps) / ρ(eau).",
+    "La densité n’a pas d’unité.",
+    "Gaz : d = ρ(gaz) / ρ(air).",
+    "d < 1 : flotte ; d > 1 : coule."
+   ],
+   "application": {
+    "q": "L’huile a une masse volumique de 920 kg/m³. Calcule sa densité. Flotte-t-elle sur l’eau ?",
+    "a": "d = 920 / 1000 = 0,92 < 1 : elle flotte."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "d = ρ(corps) / ρ(eau) – sans unité",
+      "Gaz : d = ρ(gaz) / ρ(air)"
+     ]
+    },
+    {
+     "h": "Flottaison",
+     "lines": [
+      "d < 1 : flotte – d > 1 : coule"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "L’huile a une masse volumique de 920 kg/m³. Calcule sa densité. Flotte-t-elle sur l’eau ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le poids",
+   "match": [
+    "Le poids : mise en évidence, définition, caractéristiques, mesure, unité"
+   ],
+   "pages": [
+    73,
+    75
+   ],
+   "objectives": [
+    "Définir le poids et donner ses caractéristiques.",
+    "Mesurer le poids avec un dynamomètre."
+   ],
+   "intro": "Je lâche une craie et je demande : « Pourquoi tombe-t-elle toujours vers le bas ? »",
+   "summary": "Le poids d’un corps est la force d’attraction exercée par la Terre sur ce corps. Ses caractéristiques : direction verticale ; sens du haut vers le bas ; point d’application le centre de gravité G du corps ; intensité P mesurée avec un dynamomètre en newton (N).",
+   "points": [
+    "Poids : attraction de la Terre sur le corps.",
+    "Direction : verticale ; sens : vers le bas.",
+    "Point d’application : centre de gravité G.",
+    "Intensité : dynamomètre, newton (N)."
+   ],
+   "application": {
+    "q": "Donne les quatre caractéristiques du poids d’un livre posé sur une table.",
+    "a": "Point d’application : centre de gravité du livre ; direction : verticale ; sens : vers le bas ; intensité : P en newtons."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Force d’attraction exercée par la Terre sur un corps"
+     ]
+    },
+    {
+     "h": "Caractéristiques",
+     "lines": [
+      "Point d’application : centre de gravité G",
+      "Direction : verticale – sens : vers le bas",
+      "Intensité : P en newtons (dynamomètre)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Donne les quatre caractéristiques du poids d’un livre posé sur une table."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Relation entre poids et masse",
+   "match": [
+    "Représentation vectorielle",
+    "Relation entre poids et masse",
+    "Invariance de la masse et variation du poids avec le lieu"
+   ],
+   "pages": [
+    74,
+    76
+   ],
+   "objectives": [
+    "Représenter le poids par un vecteur.",
+    "Utiliser P = m × g ; distinguer masse et poids."
+   ],
+   "intro": "Je demande : « Un astronaute a une masse de 70 kg sur Terre. Sur la Lune, sa masse change-t-elle ? Et son poids ? »",
+   "summary": "On représente le poids par un vecteur vertical, dirigé vers le bas, ayant pour origine le centre de gravité et une longueur proportionnelle à l’intensité. Le poids et la masse sont liés par P = m × g, où g est l’intensité de la pesanteur en N/kg (sur Terre, g ≈ 10 N/kg). La masse ne varie pas quand on change de lieu, mais le poids varie avec le lieu (latitude, altitude), car g dépend du lieu.",
+   "points": [
+    "Vecteur poids : vertical, vers le bas, origine G.",
+    "P = m × g.",
+    "g ≈ 10 N/kg sur Terre.",
+    "La masse est invariable.",
+    "Le poids varie avec le lieu."
+   ],
+   "application": {
+    "q": "Calcule le poids d’un sac de riz de 25 kg (g = 10 N/kg).",
+    "a": "P = 25 × 10 = 250 N."
+   },
+   "board": [
+    {
+     "h": "Relation",
+     "lines": [
+      "P = m × g – P en N, m en kg, g en N/kg",
+      "Sur Terre : g ≈ 10 N/kg"
+     ]
+    },
+    {
+     "h": "Masse et poids",
+     "lines": [
+      "La masse ne change pas avec le lieu",
+      "Le poids varie avec le lieu (g varie)"
+     ]
+    },
+    {
+     "h": "Représentation",
+     "lines": [
+      "Vecteur vertical vers le bas, origine G"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule le poids d’un sac de riz de 25 kg (g = 10 N/kg)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La gravitation universelle",
+   "match": [
+    "Force de gravitation universelle : définition",
+    "Intensité de la pesanteur à une altitude"
+   ],
+   "pages": [
+    76,
+    78
+   ],
+   "objectives": [
+    "Énoncer la loi de la gravitation universelle.",
+    "Calculer l’intensité de la pesanteur à une altitude."
+   ],
+   "intro": "Je demande : « Pourquoi la Lune tourne-t-elle autour de la Terre sans s’éloigner ? »",
+   "summary": "Deux corps de masses m₁ et m₂, dont les centres sont distants de d, exercent l’un sur l’autre des forces d’attraction de même intensité : F = G × m₁ × m₂ / d², où G = 6,67 × 10⁻¹¹ (S.I.) est la constante de gravitation universelle. À une altitude h, l’intensité de la pesanteur est g = G × M / (R + h)², où M et R sont la masse et le rayon de la Terre ; au sol, g₀ = G × M / R². L’intensité de la pesanteur diminue quand l’altitude augmente.",
+   "points": [
+    "F = G × m₁ × m₂ / d².",
+    "G = 6,67 × 10⁻¹¹ S.I.",
+    "Forces réciproques de même intensité.",
+    "g = G × M / (R + h)².",
+    "g diminue avec l’altitude."
+   ],
+   "application": {
+    "q": "Comment varie g quand on monte en altitude ? Justifie avec la formule.",
+    "a": "g diminue, car le dénominateur (R + h)² augmente quand h augmente."
+   },
+   "board": [
+    {
+     "h": "Loi de Newton",
+     "lines": [
+      "F = G × m₁ × m₂ / d²",
+      "G = 6,67 × 10⁻¹¹ S.I."
+     ]
+    },
+    {
+     "h": "Pesanteur et altitude",
+     "lines": [
+      "g = G × M / (R + h)²",
+      "Au sol : g₀ = G × M / R²",
+      "g diminue quand h augmente"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment varie g quand on monte en altitude ? Justifie avec la formule."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le dipôle ohmique et la loi d’Ohm",
+   "match": [
+    "Caractéristiques d'un dipôle ohmique : mesure, unité, loi d'Ohm",
+    "Caractéristiques d'un dipôle ohmique (suite)"
+   ],
+   "pages": [
+    87,
+    93
+   ],
+   "objectives": [
+    "Mesurer une résistance et tracer la caractéristique d’un dipôle ohmique.",
+    "Appliquer la loi d’Ohm et lire le code des couleurs."
+   ],
+   "intro": "J’ajoute une résistance dans un circuit avec une lampe et je demande : « Que devient l’éclat de la lampe ? »",
+   "summary": "La résistance électrique caractérise la façon dont un dipôle s’oppose au passage du courant ; son unité est l’ohm (Ω). Une résistance ajoutée dans un circuit série diminue l’intensité du courant. On la mesure avec un ohmmètre (fonction Ω d’un multimètre), hors du circuit. La caractéristique U = f(I) d’un dipôle ohmique est une droite qui passe par l’origine : U = R × I (loi d’Ohm). La valeur d’une résistance peut aussi se lire grâce aux anneaux colorés (code des couleurs).",
+   "points": [
+    "Résistance : unité l’ohm (Ω).",
+    "Mesure : ohmmètre, hors circuit.",
+    "Une résistance diminue l’intensité.",
+    "Loi d’Ohm : U = R × I.",
+    "Caractéristique : droite passant par l’origine."
+   ],
+   "application": {
+    "q": "Un conducteur ohmique de 20 Ω est traversé par un courant de 0,3 A. Calcule la tension à ses bornes.",
+    "a": "U = R × I = 20 × 0,3 = 6 V."
+   },
+   "board": [
+    {
+     "h": "Résistance",
+     "lines": [
+      "Unité : ohm (Ω) – mesure : ohmmètre hors circuit",
+      "Diminue l’intensité du courant"
+     ]
+    },
+    {
+     "h": "Loi d’Ohm",
+     "lines": [
+      "U = R × I",
+      "Caractéristique U = f(I) : droite passant par l’origine"
+     ]
+    },
+    {
+     "h": "Code des couleurs",
+     "lines": [
+      "Anneaux colorés → valeur de la résistance"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un conducteur ohmique de 20 Ω est traversé par un courant de 0,3 A. Calcule la tension à ses bornes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Association de résistances en série",
+   "match": [
+    "Association des résistances : en série"
+   ],
+   "pages": [
+    94,
+    95
+   ],
+   "objectives": [
+    "Calculer la résistance équivalente de résistances en série."
+   ],
+   "intro": "Je branche deux résistances l’une après l’autre et je mesure la résistance totale : « Comment se compare-t-elle aux deux résistances ? »",
+   "summary": "Des résistances sont montées en série lorsqu’elles sont branchées l’une à la suite de l’autre. La résistance équivalente est égale à la somme des résistances : Req = R₁ + R₂ + R₃ + … Elle est plus grande que chacune des résistances.",
+   "points": [
+    "En série : l’une à la suite de l’autre.",
+    "Req = R₁ + R₂ + …",
+    "Req est plus grande que chaque résistance."
+   ],
+   "application": {
+    "q": "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 20 Ω en série.",
+    "a": "Req = 60 + 20 = 80 Ω."
+   },
+   "board": [
+    {
+     "h": "Association en série",
+     "lines": [
+      "Req = R₁ + R₂ + R₃ + …",
+      "Req > chaque résistance"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 20 Ω en série."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Association de résistances en dérivation",
+   "match": [
+    "Association des résistances : en dérivation"
+   ],
+   "pages": [
+    94,
+    95
+   ],
+   "objectives": [
+    "Calculer la résistance équivalente de résistances en dérivation."
+   ],
+   "intro": "Je branche deux résistances en parallèle et je demande : « La résistance totale augmente-t-elle ou diminue-t-elle ? »",
+   "summary": "Des résistances sont montées en dérivation lorsqu’elles sont branchées entre les deux mêmes points. L’inverse de la résistance équivalente est égal à la somme des inverses : 1/Req = 1/R₁ + 1/R₂ + … Pour deux résistances : Req = (R₁ × R₂) / (R₁ + R₂). Elle est plus petite que la plus petite des résistances.",
+   "points": [
+    "En dérivation : entre les deux mêmes points.",
+    "1/Req = 1/R₁ + 1/R₂ + …",
+    "Deux résistances : Req = R₁R₂ / (R₁ + R₂).",
+    "Req plus petite que chaque résistance."
+   ],
+   "application": {
+    "q": "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 30 Ω en dérivation.",
+    "a": "Req = (60 × 30) / (60 + 30) = 1800 / 90 = 20 Ω."
+   },
+   "board": [
+    {
+     "h": "Association en dérivation",
+     "lines": [
+      "1/Req = 1/R₁ + 1/R₂ + …",
+      "Deux résistances : Req = R₁ × R₂ / (R₁ + R₂)",
+      "Req < chaque résistance"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 30 Ω en dérivation."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La puissance électrique",
+   "match": [
+    "Puissance électrique (définition, unité, expression)",
+    "Puissance nominale"
+   ],
+   "pages": [
+    101,
+    102
+   ],
+   "objectives": [
+    "Définir la puissance électrique et la puissance nominale.",
+    "Utiliser P = U × I."
+   ],
+   "intro": "Je montre l’étiquette d’un fer à repasser (220 V – 1000 W) et je demande : « Que signifient ces indications ? »",
+   "summary": "La puissance électrique correspond à l’énergie électrique échangée par un dipôle pendant une seconde. La puissance nominale d’un appareil est la puissance qu’il reçoit sous sa tension nominale ; elle s’exprime en watt (W) ; 1 kW = 1000 W, 1 MW = 10⁶ W, 1 GW = 10⁹ W. Plus la puissance nominale est élevée, plus l’action de l’appareil est efficace. Un dipôle alimenté sous une tension U et traversé par un courant I reçoit la puissance P = U × I.",
+   "points": [
+    "Puissance : énergie échangée par seconde.",
+    "Puissance nominale : sous la tension nominale.",
+    "Unité : watt (W) ; 1 kW = 1000 W.",
+    "P = U × I."
+   ],
+   "application": {
+    "q": "Une lampe 220 V – 100 W fonctionne normalement. Calcule l’intensité qui la traverse.",
+    "a": "I = P / U = 100 / 220 ≈ 0,45 A."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Énergie électrique échangée pendant 1 s"
+     ]
+    },
+    {
+     "h": "Puissance nominale",
+     "lines": [
+      "Inscrite sur l’appareil – watt (W)",
+      "1 kW = 1000 W – 1 MW = 10⁶ W"
+     ]
+    },
+    {
+     "h": "Expression",
+     "lines": [
+      "P = U × I"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Une lampe 220 V – 100 W fonctionne normalement. Calcule l’intensité qui la traverse."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’énergie électrique",
+   "match": [
+    "Énergie électrique (définition, unité, expression)"
+   ],
+   "pages": [
+    102,
+    104
+   ],
+   "objectives": [
+    "Calculer l’énergie électrique consommée.",
+    "Convertir joules et kilowattheures."
+   ],
+   "intro": "Je montre une facture d’électricité et je demande : « Qu’est-ce qu’on paie : la puissance ou l’énergie ? En quelle unité ? »",
+   "summary": "L’énergie électrique E transférée pendant une durée t à un appareil de puissance P est E = P × t. Si P est en watts et t en secondes, E est en joules (J), l’unité légale. Si P est en kilowatts et t en heures, E est en kilowattheures (kWh), l’unité couramment utilisée : 1 kWh = 3 600 000 J = 3,6 × 10⁶ J.",
+   "points": [
+    "E = P × t.",
+    "Unité légale : joule (J) — P en W, t en s.",
+    "Unité courante : kWh — P en kW, t en h.",
+    "1 kWh = 3,6 × 10⁶ J."
+   ],
+   "application": {
+    "q": "Un téléviseur de 100 W fonctionne 3 h par jour. Calcule l’énergie consommée en un jour en kWh.",
+    "a": "E = 0,1 kW × 3 h = 0,3 kWh."
+   },
+   "board": [
+    {
+     "h": "Expression",
+     "lines": [
+      "E = P × t"
+     ]
+    },
+    {
+     "h": "Unités",
+     "lines": [
+      "Joule : P en W, t en s",
+      "kWh : P en kW, t en h",
+      "1 kWh = 3,6 × 10⁶ J"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un téléviseur de 100 W fonctionne 3 h par jour. Calcule l’énergie consommée en un jour en kWh."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La réflexion de la lumière",
+   "match": [
+    "Réflexion de la lumière"
+   ],
+   "pages": [
+    111,
+    114
+   ],
+   "objectives": [
+    "Distinguer réflexion diffuse et réflexion spéculaire.",
+    "Appliquer les lois de la réflexion."
+   ],
+   "intro": "J’éclaire un miroir avec une lampe torche et je demande : « Où va la lumière après avoir touché le miroir ? »",
+   "summary": "Lorsqu’un objet à surface rugueuse renvoie la lumière dans toutes les directions, c’est la réflexion diffuse. Si la surface est polie et brillante, la lumière est renvoyée dans une direction privilégiée : c’est la réflexion spéculaire. Lois de Descartes pour la réflexion : le rayon incident, le rayon réfléchi et la normale au point d’incidence sont dans un même plan ; l’angle de réflexion est égal à l’angle d’incidence (r = i).",
+   "points": [
+    "Réflexion diffuse : surface rugueuse.",
+    "Réflexion spéculaire : surface polie.",
+    "Rayon incident, rayon réfléchi et normale dans un même plan.",
+    "Angle de réflexion = angle d’incidence (r = i)."
+   ],
+   "application": {
+    "q": "Un rayon arrive sur un miroir avec un angle d’incidence de 35°. Quel est l’angle de réflexion ?",
+    "a": "r = i = 35°."
+   },
+   "board": [
+    {
+     "h": "Types de réflexion",
+     "lines": [
+      "Diffuse : surface rugueuse",
+      "Spéculaire : surface polie (miroir)"
+     ]
+    },
+    {
+     "h": "Lois de Descartes",
+     "lines": [
+      "Rayon incident, rayon réfléchi et normale dans un même plan",
+      "r = i"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un rayon arrive sur un miroir avec un angle d’incidence de 35°. Quel est l’angle de réflexion ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La réfraction de la lumière",
+   "match": [
+    "Réfraction de la lumière",
+    "Réfraction de la lumière (suite)"
+   ],
+   "pages": [
+    115,
+    119
+   ],
+   "objectives": [
+    "Appliquer la loi de la réfraction.",
+    "Connaître l’angle limite et la décomposition de la lumière."
+   ],
+   "intro": "Je plonge une règle dans un verre d’eau et je demande : « Pourquoi la règle semble-t-elle cassée ? »",
+   "summary": "La réfraction est le changement de direction de la lumière quand elle passe d’un milieu transparent à un autre. Lois de Descartes : le rayon incident, la normale et le rayon réfracté sont dans un même plan ; n₁ × sin i₁ = n₂ × sin i₂, où n₁ et n₂ sont les indices de réfraction des deux milieux. Quand la lumière passe dans un milieu plus réfringent (n₂ > n₁), il existe un angle limite de réfraction tel que sin i₂max = n₁ / n₂. Un prisme décompose la lumière blanche en couleurs (dispersion).",
+   "points": [
+    "Réfraction : changement de direction entre deux milieux.",
+    "Rayon incident, normale et rayon réfracté dans un même plan.",
+    "n₁ sin i₁ = n₂ sin i₂.",
+    "Angle limite : sin i₂max = n₁ / n₂.",
+    "Le prisme décompose la lumière blanche."
+   ],
+   "application": {
+    "q": "Un rayon passe de l’air (n = 1) dans l’eau (n = 1,33) avec i₁ = 30°. Calcule sin i₂.",
+    "a": "sin i₂ = (1 × sin 30°) / 1,33 = 0,5 / 1,33 ≈ 0,376 (i₂ ≈ 22°)."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Changement de direction de la lumière entre deux milieux"
+     ]
+    },
+    {
+     "h": "Lois de Descartes",
+     "lines": [
+      "Rayon incident, normale et rayon réfracté dans un même plan",
+      "n₁ × sin i₁ = n₂ × sin i₂"
+     ]
+    },
+    {
+     "h": "Angle limite et dispersion",
+     "lines": [
+      "sin i₂max = n₁ / n₂",
+      "Le prisme décompose la lumière blanche"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un rayon passe de l’air (n = 1) dans l’eau (n = 1,33) avec i₁ = 30°. Calcule sin i₂."
+     ]
+    }
+   ]
+  }
+ ]
+}

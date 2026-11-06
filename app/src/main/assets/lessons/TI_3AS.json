@@ -1,0 +1,1111 @@
+{
+ "subject": "TI",
+ "level": "3AS",
+ "book": "books/TI_3AS.pdf",
+ "bookTitle": "Informatique 3e AS — IPN",
+ "lessons": [
+  {
+   "title": "Introduction à PowerPoint et création d'une présentation",
+   "match": [
+    "Introduction à PowerPoint et création d'une présentation"
+   ],
+   "pages": [
+    12,
+    14
+   ],
+   "objectives": [
+    "Découvrir PowerPoint et la structure d’une diapositive.",
+    "Créer une présentation simple avec du texte et une image, puis l’enregistrer."
+   ],
+   "intro": "Je demande : « Avez-vous déjà regardé un exposé projeté sur un écran ? Avec quel logiciel l’a-t-on préparé ? »",
+   "summary": "PowerPoint est un logiciel de présentation assistée par ordinateur (PréAO). Une présentation est un ensemble de diapositives. Pour la créer : ouvrir PowerPoint, choisir « Nouvelle présentation », taper le titre et le sous-titre dans les zones de la première diapositive, insérer une image (Insertion → Image), puis enregistrer le fichier (Fichier → Enregistrer sous) dans un dossier personnel.",
+   "points": [
+    "PréAO : présentation assistée par ordinateur.",
+    "Une présentation = un ensemble de diapositives.",
+    "Zones de titre et de contenu.",
+    "Insertion → Image.",
+    "Fichier → Enregistrer sous (.pptx)."
+   ],
+   "application": {
+    "q": "Crée une diapositive de titre « Mon école » avec ton nom en sous-titre et enregistre-la.",
+    "a": "Nouvelle présentation → taper le titre et le sous-titre → Fichier → Enregistrer sous → « Mon_ecole.pptx »."
+   },
+   "board": [
+    {
+     "h": "PowerPoint",
+     "lines": [
+      "Logiciel de PréAO – présentation = diapositives"
+     ]
+    },
+    {
+     "h": "Créer une présentation",
+     "lines": [
+      "1. Nouvelle présentation",
+      "2. Titre et sous-titre",
+      "3. Insertion → Image",
+      "4. Fichier → Enregistrer sous"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Crée une diapositive de titre « Mon école » avec ton nom en sous-titre et enregistre-la."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ouverture, fermeture et enregistrement d'une présentation",
+   "match": [
+    "Ouverture, fermeture et enregistrement d'une présentation"
+   ],
+   "pages": [
+    15,
+    19
+   ],
+   "objectives": [
+    "Maîtriser la gestion des fichiers d’une présentation.",
+    "Ouvrir, enregistrer, enregistrer une copie et fermer PowerPoint correctement."
+   ],
+   "intro": "Je demande : « Vous avez travaillé sur une présentation hier. Comment la retrouver et la modifier aujourd’hui sans perdre l’ancienne version ? »",
+   "summary": "Pour ouvrir une présentation existante : Fichier → Ouvrir, puis choisir le fichier. Pour enregistrer les modifications : Fichier → Enregistrer (Ctrl + S). Pour garder l’ancienne version et créer une copie sous un nouveau nom : Fichier → Enregistrer sous. Pour fermer : Fichier → Fermer ou le bouton ✕, en enregistrant avant de quitter.",
+   "points": [
+    "Ouvrir : Fichier → Ouvrir.",
+    "Enregistrer : Fichier → Enregistrer (Ctrl + S).",
+    "Copie : Fichier → Enregistrer sous (nouveau nom).",
+    "Fermer : Fichier → Fermer, après avoir enregistré."
+   ],
+   "application": {
+    "q": "Ouvre ta présentation « Mon_ecole », ajoute une diapositive et enregistre une copie « Mon_ecole_v2 ».",
+    "a": "Fichier → Ouvrir → modifier → Fichier → Enregistrer sous → « Mon_ecole_v2 »."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Ouvrir : Fichier → Ouvrir.",
+      "Enregistrer : Fichier → Enregistrer (Ctrl + S).",
+      "Copie : Fichier → Enregistrer sous (nouveau nom).",
+      "Fermer : Fichier → Fermer, après avoir enregistré."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Ouvre ta présentation « Mon_ecole », ajoute une diapositive et enregistre une copie « Mon_ecole_v2 »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Insertion et gestion des diapositives",
+   "match": [
+    "Insertion et gestion des diapositives"
+   ],
+   "pages": [
+    20,
+    24
+   ],
+   "objectives": [
+    "Organiser une présentation de plusieurs diapositives.",
+    "Insérer, supprimer, déplacer et dupliquer des diapositives."
+   ],
+   "intro": "Je montre une présentation dont les diapositives sont dans le désordre et je demande : « Comment les remettre dans l’ordre ? »",
+   "summary": "Pour insérer une diapositive : Accueil → Nouvelle diapositive (et choisir une disposition). Pour la supprimer : clic droit sur sa miniature → Supprimer. Pour la déplacer : faire glisser sa miniature dans le volet de gauche ou utiliser la trieuse de diapositives. Pour la dupliquer : clic droit → Dupliquer la diapositive.",
+   "points": [
+    "Insérer : Accueil → Nouvelle diapositive.",
+    "Supprimer : clic droit → Supprimer.",
+    "Déplacer : glisser la miniature (trieuse).",
+    "Dupliquer : clic droit → Dupliquer."
+   ],
+   "application": {
+    "q": "Crée une présentation de 4 diapositives, déplace la dernière en 2e position et duplique la première.",
+    "a": "Glisser la miniature 4 entre la 1 et la 2 ; clic droit sur la 1 → Dupliquer la diapositive."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Insérer : Accueil → Nouvelle diapositive.",
+      "Supprimer : clic droit → Supprimer.",
+      "Déplacer : glisser la miniature (trieuse).",
+      "Dupliquer : clic droit → Dupliquer."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Crée une présentation de 4 diapositives, déplace la dernière en 2e position et duplique la première."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Insertion de texte et mise en forme",
+   "match": [
+    "Insertion de texte et mise en forme"
+   ],
+   "pages": [
+    25,
+    29
+   ],
+   "objectives": [
+    "Insérer et mettre en forme du texte dans une diapositive.",
+    "Créer des zones de texte et appliquer police, taille, couleur, alignement et puces."
+   ],
+   "intro": "Je montre deux diapositives, l’une mal présentée, l’autre bien mise en forme, et je demande : « Laquelle est plus lisible ? Pourquoi ? »",
+   "summary": "Pour ajouter du texte : cliquer dans une zone de texte ou Insertion → Zone de texte. Pour le mettre en forme : sélectionner le texte puis, dans l’onglet Accueil, choisir la police, la taille, la couleur, le gras ou l’italique, l’alignement (gauche, centré, droite) et les puces ou la numérotation. Une bonne diapositive contient peu de texte, lisible et bien organisé.",
+   "points": [
+    "Insertion → Zone de texte.",
+    "Accueil : police, taille, couleur.",
+    "Gras, italique, souligné.",
+    "Alignement et puces.",
+    "Peu de texte, lisible."
+   ],
+   "application": {
+    "q": "Crée une diapositive « Nos matières » avec une liste à puces de 5 matières, en taille 28 et centrée.",
+    "a": "Insertion → Zone de texte → taper la liste → Puces → taille 28 → Centrer."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Insertion → Zone de texte.",
+      "Accueil : police, taille, couleur.",
+      "Gras, italique, souligné.",
+      "Alignement et puces.",
+      "Peu de texte, lisible."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Crée une diapositive « Nos matières » avec une liste à puces de 5 matières, en taille 28 et centrée."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Insertion d'images et objets graphiques",
+   "match": [
+    "Insertion d'images et objets graphiques"
+   ],
+   "pages": [
+    30,
+    34
+   ],
+   "objectives": [
+    "Enrichir une présentation avec des images et des formes.",
+    "Insérer une image, la redimensionner, la positionner et ajouter des formes."
+   ],
+   "intro": "Je demande : « Une diapositive sans image est-elle aussi intéressante ? Comment ajouter une photo ? »",
+   "summary": "Pour insérer une image : Insertion → Image (depuis l’ordinateur ou en ligne). Pour la redimensionner : faire glisser les poignées d’angle (pour garder les proportions). Pour la déplacer : la faire glisser. Pour ajouter une forme (flèche, rectangle, cercle) : Insertion → Formes, puis dessiner et changer sa couleur.",
+   "points": [
+    "Insertion → Image.",
+    "Redimensionner avec les poignées d’angle.",
+    "Déplacer en faisant glisser.",
+    "Insertion → Formes (flèches, rectangles…)."
+   ],
+   "application": {
+    "q": "Insère le logo de ton école sur la première diapositive et ajoute une flèche qui pointe vers le titre.",
+    "a": "Insertion → Image → choisir le logo → redimensionner ; Insertion → Formes → flèche."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Insertion → Image.",
+      "Redimensionner avec les poignées d’angle.",
+      "Déplacer en faisant glisser.",
+      "Insertion → Formes (flèches, rectangles…)."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Insère le logo de ton école sur la première diapositive et ajoute une flèche qui pointe vers le titre."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Déplacement et transition des diapositives",
+   "match": [
+    "Déplacement et transition des diapositives"
+   ],
+   "pages": [
+    35,
+    39
+   ],
+   "objectives": [
+    "Naviguer dans le diaporama et ajouter des transitions.",
+    "Tester le déroulement de la présentation et appliquer des transitions simples."
+   ],
+   "intro": "Je lance un diaporama et je demande : « Comment passer d’une diapositive à l’autre ? Comment rendre le passage plus agréable ? »",
+   "summary": "Pour lancer le diaporama : Diaporama → À partir du début (F5). Pour naviguer : flèches du clavier, clic de souris, Échap pour quitter. Une transition est l’effet visuel qui se produit au passage d’une diapositive à la suivante : onglet Transitions → choisir un effet (fondu, poussée…), régler sa durée, et appliquer à toutes si on le souhaite.",
+   "points": [
+    "Lancer : F5 (Diaporama).",
+    "Naviguer : flèches, clic ; Échap pour quitter.",
+    "Transition : effet entre deux diapositives.",
+    "Onglet Transitions : effet et durée."
+   ],
+   "application": {
+    "q": "Applique une transition « Fondu » à toutes les diapositives et lance le diaporama.",
+    "a": "Transitions → Fondu → Appliquer partout → F5."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Lancer : F5 (Diaporama).",
+      "Naviguer : flèches, clic ; Échap pour quitter.",
+      "Transition : effet entre deux diapositives.",
+      "Onglet Transitions : effet et durée."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Applique une transition « Fondu » à toutes les diapositives et lance le diaporama."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Exposition et finalisation de la présentation",
+   "match": [
+    "Exposition et finalisation de la présentation"
+   ],
+   "pages": [
+    40,
+    45
+   ],
+   "objectives": [
+    "Présenter son travail et finaliser le fichier.",
+    "Présenter oralement à l’aide du diaporama et préparer le fichier pour la projection, l’impression ou l’envoi."
+   ],
+   "intro": "Je demande : « Vous allez présenter votre exposé devant la classe. Que faut-il vérifier avant ? »",
+   "summary": "Avant l’exposé, on vérifie l’orthographe, l’ordre des diapositives et les transitions. Pendant l’exposé, on regarde le public, on parle clairement et on ne lit pas tout l’écran. Pour finaliser : enregistrer la version finale, l’exporter en PDF pour l’envoi, ou l’imprimer (Fichier → Imprimer, plusieurs diapositives par page).",
+   "points": [
+    "Vérifier : orthographe, ordre, transitions.",
+    "Présenter : regarder le public, parler clairement.",
+    "Exporter en PDF pour l’envoi.",
+    "Imprimer : Fichier → Imprimer."
+   ],
+   "application": {
+    "q": "Présente ta présentation en 3 minutes devant la classe, puis exporte-la en PDF.",
+    "a": "Exposé oral puis Fichier → Exporter → PDF."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Vérifier : orthographe, ordre, transitions.",
+      "Présenter : regarder le public, parler clairement.",
+      "Exporter en PDF pour l’envoi.",
+      "Imprimer : Fichier → Imprimer."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Présente ta présentation en 3 minutes devant la classe, puis exporte-la en PDF."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Naviguer sur Internet en toute sécurité et avec éthique",
+   "match": [
+    "Naviguer sur Internet en toute sécurité et avec éthique"
+   ],
+   "pages": [
+    50,
+    52
+   ],
+   "objectives": [
+    "Adopter de bonnes pratiques de navigation.",
+    "Reconnaître un site fiable, protéger ses informations personnelles et respecter la propriété intellectuelle."
+   ],
+   "intro": "Je montre deux sites (un fiable, un douteux) et je demande : « Auquel faites-vous confiance ? Pourquoi ? »",
+   "summary": "Pour naviguer en sécurité : vérifier l’adresse du site (https, cadenas), préférer les sites officiels et éducatifs, ne jamais donner ses informations personnelles (mot de passe, adresse, numéro), éviter les sites inappropriés et ne pas cliquer sur les liens suspects. Pour être éthique : respecter les droits d’auteur (citer ses sources), être poli et respectueux dans ses messages, ne pas diffuser de fausses informations.",
+   "points": [
+    "Vérifier l’adresse : https et cadenas.",
+    "Préférer les sites officiels et éducatifs.",
+    "Ne pas partager ses informations personnelles.",
+    "Respecter les droits d’auteur : citer ses sources.",
+    "Communiquer avec respect."
+   ],
+   "application": {
+    "q": "Cite trois règles pour naviguer sur Internet en toute sécurité.",
+    "a": "Vérifier que le site est fiable (https), ne pas donner ses informations personnelles, ne pas cliquer sur les liens suspects."
+   },
+   "board": [
+    {
+     "h": "Sécurité",
+     "lines": [
+      "Site fiable : https, cadenas, site officiel",
+      "Ne pas partager ses informations personnelles",
+      "Ne pas cliquer sur les liens suspects"
+     ]
+    },
+    {
+     "h": "Éthique",
+     "lines": [
+      "Citer ses sources – respecter les droits d’auteur",
+      "Être respectueux – ne pas diffuser de fausses informations"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite trois règles pour naviguer sur Internet en toute sécurité."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Introduction à la notion d'algorithme",
+   "match": [
+    "Introduction à la notion d'algorithme"
+   ],
+   "pages": [
+    60,
+    62
+   ],
+   "objectives": [
+    "Comprendre la notion d’algorithme et son importance.",
+    "Définir un algorithme et identifier ses caractéristiques."
+   ],
+   "intro": "Je demande : « Comment prépare-t-on le thé ? Quelles sont les étapes pour résoudre un exercice de mathématiques ? »",
+   "summary": "Un algorithme est une suite finie et ordonnée d’instructions qui permet de résoudre un problème ou de réaliser une tâche. Ses caractéristiques : il a un début et une fin, ses instructions sont précises et ordonnées, il donne un résultat. Exemple : préparer le thé : faire bouillir l’eau, ajouter le thé, ajouter le sucre, servir. En informatique, l’algorithme est traduit en programme pour l’ordinateur.",
+   "points": [
+    "Algorithme : suite finie et ordonnée d’instructions.",
+    "Il a un début et une fin.",
+    "Instructions précises et ordonnées.",
+    "Il est traduit en programme."
+   ],
+   "application": {
+    "q": "Écris l’algorithme pour se laver les mains.",
+    "a": "Début – ouvrir le robinet – mouiller les mains – mettre du savon – frotter – rincer – fermer le robinet – sécher – Fin."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Algorithme : suite finie et ordonnée d’instructions.",
+      "Il a un début et une fin.",
+      "Instructions précises et ordonnées.",
+      "Il est traduit en programme."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Écris l’algorithme pour se laver les mains."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Introduction à la notion de variables",
+   "match": [
+    "Introduction à la notion de variables"
+   ],
+   "pages": [
+    63,
+    65
+   ],
+   "objectives": [
+    "Comprendre la notion de variable.",
+    "Définir une variable, identifier ses types et l’utiliser dans un petit algorithme."
+   ],
+   "intro": "Je demande : « Si je veux mémoriser l’âge d’un élève dans un programme, comment le garder en mémoire ? »",
+   "summary": "Une variable est un emplacement de la mémoire qui porte un nom et qui contient une valeur pouvant changer. On la déclare en lui donnant un nom et un type : entier (âge = 14), réel (moyenne = 12,5), caractère ('A'), chaîne de caractères (\"Ahmed\"). On lui donne une valeur par l’affectation : age ← 14.",
+   "points": [
+    "Variable : emplacement mémoire avec un nom et une valeur.",
+    "Types : entier, réel, caractère, chaîne.",
+    "Déclaration : nom + type.",
+    "Affectation : age ← 14."
+   ],
+   "application": {
+    "q": "Déclare une variable pour le nom d’un élève et une pour sa moyenne, puis affecte-leur des valeurs.",
+    "a": "Variables : nom : chaîne ; moyenne : réel. nom ← \"Fatimetou\" ; moyenne ← 15,5."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Variable : emplacement mémoire avec un nom et une valeur.",
+      "Types : entier, réel, caractère, chaîne.",
+      "Déclaration : nom + type.",
+      "Affectation : age ← 14."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Déclare une variable pour le nom d’un élève et une pour sa moyenne, puis affecte-leur des valeurs."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Introduction à la notion de conditions",
+   "match": [
+    "Introduction à la notion de conditions"
+   ],
+   "pages": [
+    66,
+    68
+   ],
+   "objectives": [
+    "Comprendre la notion de condition en programmation.",
+    "Utiliser une structure conditionnelle simple (Si… Alors… Sinon)."
+   ],
+   "intro": "Je demande : « Que faites-vous s’il pleut ? Que se passe-t-il si vous obtenez une moyenne inférieure à 10 ? »",
+   "summary": "Une condition permet à un algorithme de choisir entre deux actions selon qu’une expression est vraie ou fausse. Structure : Si condition Alors instructions 1 Sinon instructions 2 FinSi. Exemple : Si moyenne ≥ 10 Alors Écrire(\"Admis\") Sinon Écrire(\"Refusé\") FinSi. On utilise les opérateurs de comparaison : =, ≠, <, >, ≤, ≥.",
+   "points": [
+    "Condition : choix selon vrai ou faux.",
+    "Si… Alors… Sinon… FinSi.",
+    "Opérateurs : =, ≠, <, >, ≤, ≥.",
+    "Exemple : admis si moyenne ≥ 10."
+   ],
+   "application": {
+    "q": "Écris un algorithme qui lit un nombre et affiche « positif » ou « négatif ».",
+    "a": "Lire(n) ; Si n ≥ 0 Alors Écrire(\"positif\") Sinon Écrire(\"négatif\") FinSi."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Condition : choix selon vrai ou faux.",
+      "Si… Alors… Sinon… FinSi.",
+      "Opérateurs : =, ≠, <, >, ≤, ≥.",
+      "Exemple : admis si moyenne ≥ 10."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Écris un algorithme qui lit un nombre et affiche « positif » ou « négatif »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Écriture d'un algorithme simple",
+   "match": [
+    "Écriture d'un algorithme simple"
+   ],
+   "pages": [
+    69,
+    71
+   ],
+   "objectives": [
+    "Écrire un algorithme simple avec les instructions de base.",
+    "Utiliser Début, Lire, Écrire, l’affectation et Fin."
+   ],
+   "intro": "Je demande : « Quand vous préparez du thé, suivez-vous des étapes ? Peut-on le préparer sans ordre précis ? »",
+   "summary": "Un algorithme simple s’écrit avec une structure : Algorithme nom ; Variables (déclaration) ; Début ; instructions ; Fin. Les instructions de base : Lire (saisir une donnée), Écrire (afficher un résultat), l’affectation ← (donner une valeur à une variable). Exemple : calculer la somme de deux nombres : Lire(a) ; Lire(b) ; s ← a + b ; Écrire(s).",
+   "points": [
+    "Structure : nom, variables, Début, instructions, Fin.",
+    "Lire : saisir une donnée.",
+    "Écrire : afficher un résultat.",
+    "Affectation : s ← a + b."
+   ],
+   "application": {
+    "q": "Écris un algorithme qui calcule l’aire d’un rectangle.",
+    "a": "Variables L, l, A : réels. Début Lire(L) Lire(l) A ← L × l Écrire(A) Fin."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Structure : nom, variables, Début, instructions, Fin.",
+      "Lire : saisir une donnée.",
+      "Écrire : afficher un résultat.",
+      "Affectation : s ← a + b."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Écris un algorithme qui calcule l’aire d’un rectangle."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Test d'un algorithme simple",
+   "match": [
+    "Test d'un algorithme simple"
+   ],
+   "pages": [
+    72,
+    74
+   ],
+   "objectives": [
+    "Tester un algorithme à l’aide d’exemples concrets.",
+    "Exécuter pas à pas un algorithme simple et vérifier son fonctionnement."
+   ],
+   "intro": "Je demande : « Comment savoir si un programme ou un algorithme fonctionne correctement ? »",
+   "summary": "Tester un algorithme, c’est l’exécuter « à la main » avec des valeurs choisies et vérifier que le résultat est correct. On utilise un tableau de suivi (trace) qui montre la valeur de chaque variable après chaque instruction. Si le résultat est faux, on cherche l’erreur et on corrige l’algorithme.",
+   "points": [
+    "Tester : exécuter avec des valeurs choisies.",
+    "Tableau de suivi : valeur des variables à chaque étape.",
+    "Comparer le résultat obtenu au résultat attendu.",
+    "Corriger en cas d’erreur."
+   ],
+   "application": {
+    "q": "Teste l’algorithme « Lire(a) ; Lire(b) ; s ← a + b ; Écrire(s) » avec a = 5 et b = 7.",
+    "a": "a = 5, b = 7, s = 12 : l’algorithme affiche 12, le résultat est correct."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Tester : exécuter avec des valeurs choisies.",
+      "Tableau de suivi : valeur des variables à chaque étape.",
+      "Comparer le résultat obtenu au résultat attendu.",
+      "Corriger en cas d’erreur."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Teste l’algorithme « Lire(a) ; Lire(b) ; s ← a + b ; Écrire(s) » avec a = 5 et b = 7."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Introduction aux boucles",
+   "match": [
+    "Introduction aux boucles"
+   ],
+   "pages": [
+    75,
+    77
+   ],
+   "objectives": [
+    "Comprendre la notion de boucle.",
+    "Identifier une situation répétitive et utiliser une boucle simple (Pour / Tant que)."
+   ],
+   "intro": "Je demande : « Si je vous demande d’écrire 10 fois “Bonjour”, comment allez-vous faire ? »",
+   "summary": "Une boucle permet de répéter des instructions plusieurs fois. La boucle « Pour » s’utilise quand on connaît le nombre de répétitions : Pour i de 1 à 10 Faire Écrire(\"Bonjour\") FinPour. La boucle « Tant que » répète tant qu’une condition est vraie : Tant que n < 10 Faire n ← n + 1 FinTantQue.",
+   "points": [
+    "Boucle : répéter des instructions.",
+    "Pour : nombre de répétitions connu.",
+    "Tant que : répéter tant que la condition est vraie.",
+    "Exemple : Pour i de 1 à 10 Faire …"
+   ],
+   "application": {
+    "q": "Écris une boucle qui affiche les nombres de 1 à 5.",
+    "a": "Pour i de 1 à 5 Faire Écrire(i) FinPour."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Boucle : répéter des instructions.",
+      "Pour : nombre de répétitions connu.",
+      "Tant que : répéter tant que la condition est vraie.",
+      "Exemple : Pour i de 1 à 10 Faire …"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Écris une boucle qui affiche les nombres de 1 à 5."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Utilisation des boucles dans un algorithme",
+   "match": [
+    "Utilisation des boucles dans un algorithme"
+   ],
+   "pages": [
+    78,
+    80
+   ],
+   "objectives": [
+    "Utiliser les boucles pour répéter une action automatiquement.",
+    "Écrire un algorithme simple utilisant une boucle."
+   ],
+   "intro": "Je demande : « Si je veux afficher 10 fois le message Bonjour, dois-je écrire 10 instructions ? »",
+   "summary": "Dans un algorithme, la boucle évite d’écrire plusieurs fois la même instruction. On l’utilise par exemple pour calculer une somme : s ← 0 ; Pour i de 1 à 10 Faire s ← s + i FinPour ; Écrire(s). Il faut bien initialiser les variables avant la boucle et vérifier que la boucle « Tant que » s’arrête.",
+   "points": [
+    "La boucle évite les répétitions d’instructions.",
+    "Initialiser les variables avant la boucle.",
+    "Somme : s ← s + i dans la boucle.",
+    "Vérifier que la boucle s’arrête."
+   ],
+   "application": {
+    "q": "Écris un algorithme qui calcule la somme des nombres de 1 à 100.",
+    "a": "s ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Écrire(s). (Résultat : 5050)"
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "La boucle évite les répétitions d’instructions.",
+      "Initialiser les variables avant la boucle.",
+      "Somme : s ← s + i dans la boucle.",
+      "Vérifier que la boucle s’arrête."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Écris un algorithme qui calcule la somme des nombres de 1 à 100."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Reconnaissance de la tâche faite par un algorithme",
+   "match": [
+    "Reconnaissance de la tâche faite par un algorithme"
+   ],
+   "pages": [
+    81,
+    84
+   ],
+   "objectives": [
+    "Reconnaître la tâche réalisée par un algorithme.",
+    "Analyser un algorithme simple et identifier son rôle."
+   ],
+   "intro": "J’écris au tableau : Début Lire A Lire B S ← A + B Afficher S Fin, et je demande : « Que fait cet algorithme ? »",
+   "summary": "Pour reconnaître la tâche d’un algorithme, on lit ses instructions une à une, on repère les données lues (entrées), les calculs effectués (traitement) et les résultats affichés (sorties), puis on l’exécute avec des exemples. Exemple : Lire A, Lire B, S ← A + B, Afficher S : l’algorithme calcule et affiche la somme de deux nombres.",
+   "points": [
+    "Repérer les entrées (Lire).",
+    "Repérer le traitement (calculs).",
+    "Repérer les sorties (Écrire / Afficher).",
+    "Exécuter avec des exemples."
+   ],
+   "application": {
+    "q": "Que fait l’algorithme : Lire(n) ; Si n mod 2 = 0 Alors Écrire(\"pair\") Sinon Écrire(\"impair\") FinSi ?",
+    "a": "Il indique si un nombre est pair ou impair."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Repérer les entrées (Lire).",
+      "Repérer le traitement (calculs).",
+      "Repérer les sorties (Écrire / Afficher).",
+      "Exécuter avec des exemples."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Que fait l’algorithme : Lire(n) ; Si n mod 2 = 0 Alors Écrire(\"pair\") Sinon Écrire(\"impair\") FinSi ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Création et test d'un algorithme final",
+   "match": [
+    "Création et test d'un algorithme final"
+   ],
+   "pages": [
+    85,
+    87
+   ],
+   "objectives": [
+    "Créer, exécuter et tester un algorithme complet.",
+    "Créer un algorithme, le tester avec des données simples et vérifier les résultats attendus."
+   ],
+   "intro": "Je demande : « Avez-vous déjà utilisé un ordinateur pour résoudre un problème étape par étape ? »",
+   "summary": "Pour créer un algorithme complet : analyser le problème (données, résultat attendu), déclarer les variables, écrire les instructions (lecture, conditions, boucles, affichage), puis le tester avec plusieurs jeux de données et corriger les erreurs. Exemple : calculer la moyenne de trois notes et afficher « Admis » si elle est supérieure ou égale à 10.",
+   "points": [
+    "Analyser : données et résultat attendu.",
+    "Déclarer les variables.",
+    "Écrire : lecture, condition, boucle, affichage.",
+    "Tester avec plusieurs jeux de données."
+   ],
+   "application": {
+    "q": "Écris et teste un algorithme qui lit trois notes, calcule leur moyenne et affiche « Admis » ou « Refusé ».",
+    "a": "Lire(n1, n2, n3) ; m ← (n1 + n2 + n3) / 3 ; Si m ≥ 10 Alors Écrire(\"Admis\") Sinon Écrire(\"Refusé\") FinSi."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Analyser : données et résultat attendu.",
+      "Déclarer les variables.",
+      "Écrire : lecture, condition, boucle, affichage.",
+      "Tester avec plusieurs jeux de données."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Écris et teste un algorithme qui lit trois notes, calcule leur moyenne et affiche « Admis » ou « Refusé »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Introduction aux réseaux informatiques",
+   "match": [
+    "Introduction aux réseaux informatiques"
+   ],
+   "pages": [
+    96,
+    98
+   ],
+   "objectives": [
+    "Comprendre la notion de réseau informatique et son utilité.",
+    "Identifier les principaux équipements d’un réseau."
+   ],
+   "intro": "Je demande : « Chez vous, combien d’appareils sont connectés au même WiFi ? Comment communiquent-ils ? »",
+   "summary": "Un réseau informatique est un ensemble d’appareils (ordinateurs, téléphones, imprimantes) reliés entre eux pour échanger des informations et partager des ressources (fichiers, imprimante, connexion Internet). Les équipements principaux : le serveur, les clients (postes de travail), le switch (commutateur), le routeur, les câbles et le WiFi. Il faut respecter les règles de sécurité : mots de passe, ne pas partager ses identifiants.",
+   "points": [
+    "Réseau : appareils reliés pour échanger et partager.",
+    "Partage : fichiers, imprimante, Internet.",
+    "Équipements : serveur, clients, switch, routeur, câbles, WiFi.",
+    "Sécurité : mots de passe."
+   ],
+   "application": {
+    "q": "Cite trois avantages d’un réseau dans la salle informatique.",
+    "a": "Partager les fichiers, utiliser une seule imprimante, partager la connexion Internet."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Réseau : appareils reliés pour échanger et partager.",
+      "Partage : fichiers, imprimante, Internet.",
+      "Équipements : serveur, clients, switch, routeur, câbles, WiFi.",
+      "Sécurité : mots de passe."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite trois avantages d’un réseau dans la salle informatique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Composantes d'un réseau simple",
+   "match": [
+    "Composantes d'un réseau simple"
+   ],
+   "pages": [
+    99,
+    100
+   ],
+   "objectives": [
+    "Reconnaître les composantes d’un réseau simple.",
+    "Identifier le rôle de chaque composant."
+   ],
+   "intro": "Je demande : « Comment les ordinateurs de la salle informatique peuvent-ils partager la même imprimante ? »",
+   "summary": "Un réseau simple comprend : des postes clients (ordinateurs des utilisateurs), éventuellement un serveur (qui stocke et partage les ressources), un switch qui relie les appareils par câbles et transmet les données au bon destinataire, un routeur qui relie le réseau à Internet, des câbles réseau (RJ45) ou une connexion sans fil (WiFi), et une carte réseau dans chaque appareil.",
+   "points": [
+    "Clients : ordinateurs des utilisateurs.",
+    "Serveur : stocke et partage les ressources.",
+    "Switch : relie les appareils du réseau local.",
+    "Routeur : relie le réseau à Internet.",
+    "Câbles RJ45 ou WiFi ; carte réseau."
+   ],
+   "application": {
+    "q": "Associe : switch – routeur – serveur → leur rôle.",
+    "a": "Switch : relier les ordinateurs ; routeur : accès à Internet ; serveur : partager les ressources."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Clients : ordinateurs des utilisateurs.",
+      "Serveur : stocke et partage les ressources.",
+      "Switch : relie les appareils du réseau local.",
+      "Routeur : relie le réseau à Internet.",
+      "Câbles RJ45 ou WiFi ; carte réseau."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Associe : switch – routeur – serveur → leur rôle."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fonctionnement et types de réseaux",
+   "match": [
+    "Fonctionnement et types de réseaux"
+   ],
+   "pages": [
+    101,
+    103
+   ],
+   "objectives": [
+    "Comprendre le fonctionnement d’un réseau et ses types.",
+    "Distinguer les types de réseaux et expliquer le cheminement d’une information."
+   ],
+   "intro": "Je demande : « Quand vous êtes à la maison, comment votre téléphone, votre tablette et votre imprimante communiquent-ils ? »",
+   "summary": "Dans un réseau, chaque appareil a une adresse (adresse IP). Une information est découpée en paquets qui passent par le switch ou le routeur jusqu’au destinataire. On distingue selon la taille : le PAN (réseau personnel, Bluetooth), le LAN (réseau local : maison, école), le MAN (réseau d’une ville) et le WAN (réseau étendu, comme Internet).",
+   "points": [
+    "Chaque appareil a une adresse IP.",
+    "L’information circule en paquets.",
+    "PAN : réseau personnel.",
+    "LAN : réseau local (école).",
+    "MAN : ville ; WAN : étendu (Internet)."
+   ],
+   "application": {
+    "q": "Classe : le réseau de ta salle informatique, Internet, la connexion Bluetooth entre ton téléphone et un écouteur.",
+    "a": "Salle informatique : LAN ; Internet : WAN ; Bluetooth : PAN."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Chaque appareil a une adresse IP.",
+      "L’information circule en paquets.",
+      "PAN : réseau personnel.",
+      "LAN : réseau local (école).",
+      "MAN : ville ; WAN : étendu (Internet)."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : le réseau de ta salle informatique, Internet, la connexion Bluetooth entre ton téléphone et un écouteur."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Utilisation d'un réseau local simple",
+   "match": [
+    "Utilisation d'un réseau local simple"
+   ],
+   "pages": [
+    104,
+    105
+   ],
+   "objectives": [
+    "Utiliser un réseau local simple.",
+    "Se connecter, accéder aux ressources partagées et respecter les règles de sécurité."
+   ],
+   "intro": "Je demande : « Comment les ordinateurs de la salle peuvent-ils imprimer sur la même imprimante ? Comment partager un fichier avec ton voisin ? »",
+   "summary": "Pour utiliser un réseau local : se connecter (câble ou WiFi avec mot de passe), ouvrir l’explorateur de fichiers → Réseau pour voir les ordinateurs et dossiers partagés, copier ou ouvrir un fichier d’un dossier partagé, et choisir l’imprimante réseau pour imprimer. Il faut respecter les règles : ne pas supprimer les fichiers des autres et garder son mot de passe secret.",
+   "points": [
+    "Se connecter : câble ou WiFi.",
+    "Explorateur → Réseau : ressources partagées.",
+    "Ouvrir ou copier un fichier partagé.",
+    "Imprimer sur l’imprimante réseau.",
+    "Respecter les fichiers des autres."
+   ],
+   "application": {
+    "q": "Copie un fichier depuis le dossier partagé de la classe vers ton dossier personnel.",
+    "a": "Explorateur → Réseau → dossier partagé → clic droit sur le fichier → Copier → coller dans son dossier."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Se connecter : câble ou WiFi.",
+      "Explorateur → Réseau : ressources partagées.",
+      "Ouvrir ou copier un fichier partagé.",
+      "Imprimer sur l’imprimante réseau.",
+      "Respecter les fichiers des autres."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Copie un fichier depuis le dossier partagé de la classe vers ton dossier personnel."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Introduction à l'e-mail",
+   "match": [
+    "Introduction à l'e-mail"
+   ],
+   "pages": [
+    112,
+    114
+   ],
+   "objectives": [
+    "Découvrir la messagerie électronique.",
+    "Comprendre les éléments d’une adresse et d’un e-mail."
+   ],
+   "intro": "Je demande : « Avez-vous déjà envoyé un message par Internet ? Comment s’appelle ce type de message ? »",
+   "summary": "Un e-mail (courrier électronique) est un message envoyé par Internet d’une boîte électronique à une autre. Une adresse e-mail a la forme nom@fournisseur.domaine (ex. : ahmed@gmail.com) : le nom d’utilisateur, le symbole @ (arobase) et le nom du service. Un e-mail comprend : le destinataire (À), l’objet, le corps du message et éventuellement des pièces jointes.",
+   "points": [
+    "E-mail : message envoyé par Internet.",
+    "Adresse : nom@fournisseur.domaine.",
+    "@ : arobase.",
+    "Éléments : destinataire, objet, message, pièce jointe."
+   ],
+   "application": {
+    "q": "Identifie les parties de l’adresse : sidi.ahmed@yahoo.fr.",
+    "a": "Nom d’utilisateur : sidi.ahmed ; @ : arobase ; fournisseur : yahoo ; domaine : fr."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "E-mail : message envoyé par Internet.",
+      "Adresse : nom@fournisseur.domaine.",
+      "@ : arobase.",
+      "Éléments : destinataire, objet, message, pièce jointe."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Identifie les parties de l’adresse : sidi.ahmed@yahoo.fr."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Rédaction et envoi d'un e-mail",
+   "match": [
+    "Rédaction et envoi d'un e-mail"
+   ],
+   "pages": [
+    115,
+    117
+   ],
+   "objectives": [
+    "Rédiger et envoyer un e-mail correctement.",
+    "Utiliser les champs À, Cc et Cci et les formules de politesse."
+   ],
+   "intro": "Je demande : « Vous voulez écrire à votre professeur pour demander un document. Comment commencer et terminer votre message ? »",
+   "summary": "Pour envoyer un e-mail : cliquer sur « Nouveau message », écrire l’adresse du destinataire dans « À » (Cc : copie visible ; Cci : copie cachée), écrire un objet court et clair, rédiger le message avec une formule d’appel (Bonjour Monsieur…), le contenu et une formule de politesse (Cordialement), relire, puis cliquer sur « Envoyer ». On peut aussi répondre (Répondre) ou transférer (Transférer) un message.",
+   "points": [
+    "Nouveau message.",
+    "À : destinataire ; Cc : copie ; Cci : copie cachée.",
+    "Objet court et clair.",
+    "Formule d’appel, message, formule de politesse.",
+    "Relire puis Envoyer."
+   ],
+   "application": {
+    "q": "Rédige un e-mail à ton professeur pour lui demander le cours de la semaine dernière.",
+    "a": "À : adresse du professeur ; Objet : Demande du cours ; « Bonjour Monsieur, … Cordialement, [nom] » ; Envoyer."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Nouveau message.",
+      "À : destinataire ; Cc : copie ; Cci : copie cachée.",
+      "Objet court et clair.",
+      "Formule d’appel, message, formule de politesse.",
+      "Relire puis Envoyer."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Rédige un e-mail à ton professeur pour lui demander le cours de la semaine dernière."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ajouter une pièce jointe",
+   "match": [
+    "Ajouter une pièce jointe"
+   ],
+   "pages": [
+    118,
+    120
+   ],
+   "objectives": [
+    "Joindre un fichier à un e-mail.",
+    "Attacher un fichier (image, document) et l’envoyer au bon destinataire."
+   ],
+   "intro": "Je demande : « Vous avez appris à envoyer un e-mail. Comment envoyer aussi une photo ou un devoir ? »",
+   "summary": "Une pièce jointe est un fichier (image, document, PDF) envoyé avec un e-mail. Pour l’ajouter : dans le nouveau message, cliquer sur l’icône trombone (Joindre un fichier), choisir le fichier dans l’ordinateur, attendre la fin du téléchargement, vérifier que le fichier apparaît sous le message, puis envoyer. Il faut faire attention à la taille des fichiers et ne pas ouvrir les pièces jointes d’inconnus.",
+   "points": [
+    "Pièce jointe : fichier envoyé avec l’e-mail.",
+    "Icône trombone : Joindre un fichier.",
+    "Vérifier le fichier avant l’envoi.",
+    "Attention à la taille des fichiers.",
+    "Ne pas ouvrir les pièces jointes d’inconnus."
+   ],
+   "application": {
+    "q": "Envoie ton devoir (fichier Word) en pièce jointe à ton professeur.",
+    "a": "Nouveau message → trombone → choisir le fichier → vérifier → Envoyer."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Pièce jointe : fichier envoyé avec l’e-mail.",
+      "Icône trombone : Joindre un fichier.",
+      "Vérifier le fichier avant l’envoi.",
+      "Attention à la taille des fichiers.",
+      "Ne pas ouvrir les pièces jointes d’inconnus."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Envoie ton devoir (fichier Word) en pièce jointe à ton professeur."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Réception et gestion des e-mails",
+   "match": [
+    "Réception et gestion des e-mails"
+   ],
+   "pages": [
+    121,
+    123
+   ],
+   "objectives": [
+    "Consulter et organiser sa boîte mail.",
+    "Lire, répondre, organiser et classer ses e-mails."
+   ],
+   "intro": "Je demande : « Avez-vous déjà reçu un e-mail ? Comment faites-vous pour le lire et y répondre ? »",
+   "summary": "La boîte de réception contient les messages reçus ; les messages non lus apparaissent en gras. Pour gérer sa messagerie : ouvrir et lire un message, répondre (Répondre ou Répondre à tous), transférer, supprimer les messages inutiles, classer les messages dans des dossiers, marquer les messages importants, et vérifier le dossier Spam (courrier indésirable) sans ouvrir les messages suspects.",
+   "points": [
+    "Boîte de réception : messages reçus.",
+    "Non lus : en gras.",
+    "Répondre, transférer, supprimer.",
+    "Classer dans des dossiers.",
+    "Spam : courrier indésirable."
+   ],
+   "application": {
+    "q": "Crée un dossier « École » dans ta boîte mail et déplace-y un message de ton professeur.",
+    "a": "Nouveau dossier → « École » → sélectionner le message → Déplacer vers « École »."
+   },
+   "board": [
+    {
+     "h": "L’essentiel",
+     "lines": [
+      "Boîte de réception : messages reçus.",
+      "Non lus : en gras.",
+      "Répondre, transférer, supprimer.",
+      "Classer dans des dossiers.",
+      "Spam : courrier indésirable."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Crée un dossier « École » dans ta boîte mail et déplace-y un message de ton professeur."
+     ]
+    }
+   ]
+  }
+ ]
+}
