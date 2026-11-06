@@ -1,0 +1,545 @@
+{
+ "subject": "MATS",
+ "level": "1AS",
+ "book": "books/MATS_1AS.pdf",
+ "bookTitle": "Mathématique 1AS — IPN",
+ "lessons": [
+  {
+   "title": "Chapitre 1 : Entiers naturels",
+   "match": [
+    "Entiers naturels"
+   ],
+   "pages": [
+    7,
+    30
+   ],
+   "objectives": [
+    "Lire, écrire, comparer et ranger des entiers naturels.",
+    "Calculer avec les quatre opérations et connaître leurs propriétés."
+   ],
+   "intro": "J’écris au tableau : 510 ; 8 ; 1 205. Je demande : « Ces nombres sont-ils des entiers naturels ? Lequel est le plus grand ? Comment le savoir ? »",
+   "summary": "Les entiers naturels sont 0, 1, 2, 3, … On les écrit avec les chiffres de 0 à 9, et la valeur d’un chiffre dépend de sa position (unités, dizaines, centaines…). On compare et on range les entiers dans l’ordre croissant ou décroissant, et on peut les placer sur une demi-droite graduée. L’addition est commutative (a + b = b + a), associative, et 0 est son élément neutre. La multiplication est commutative, associative, 1 est son élément neutre, et elle est distributive par rapport à l’addition et à la soustraction : k × (a + b) = k × a + k × b.",
+   "points": [
+    "Entiers naturels : 0, 1, 2, 3, …",
+    "Ordre croissant (du plus petit au plus grand) et décroissant.",
+    "Addition : commutative, associative ; 0 élément neutre.",
+    "Multiplication : commutative, associative ; 1 élément neutre.",
+    "Distributivité : k × (a + b) = k × a + k × b."
+   ],
+   "application": {
+    "q": "Calcule astucieusement : 25 × 7 × 4 et 12 × 99 + 12.",
+    "a": "25 × 4 × 7 = 100 × 7 = 700 ; 12 × 99 + 12 = 12 × (99 + 1) = 1 200."
+   },
+   "board": [
+    {
+     "h": "1. Les entiers naturels",
+     "lines": [
+      "0, 1, 2, 3, 4, …",
+      "Position du chiffre : unités, dizaines, centaines, milliers…"
+     ]
+    },
+    {
+     "h": "2. Comparer et ranger",
+     "lines": [
+      "Ordre croissant : 8 < 510 < 1 205",
+      "Ordre décroissant : 1 205 > 510 > 8"
+     ]
+    },
+    {
+     "h": "3. Propriétés de l’addition",
+     "lines": [
+      "Commutativité : a + b = b + a",
+      "Associativité : (a + b) + c = a + (b + c)",
+      "Élément neutre : a + 0 = a"
+     ]
+    },
+    {
+     "h": "4. Propriétés de la multiplication",
+     "lines": [
+      "Commutativité : a × b = b × a",
+      "Élément neutre : a × 1 = a",
+      "Distributivité : k × (a + b) = k × a + k × b"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule : 25 × 7 × 4 et 12 × 99 + 12."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 2 : Segments, demi-droites et droites",
+   "match": [
+    "Droites et segments"
+   ],
+   "pages": [
+    31,
+    42
+   ],
+   "objectives": [
+    "Distinguer segment, demi-droite et droite.",
+    "Reconnaître des droites sécantes, perpendiculaires, parallèles.",
+    "Construire la médiatrice d’un segment."
+   ],
+   "intro": "Je place deux points A et B au tableau et je demande : « Combien de traits droits peut-on tracer passant par A et B ? Où commencent-ils et où finissent-ils ? »",
+   "summary": "Un segment [AB] est limité par deux points A et B ; son milieu I est le point du segment tel que IA = IB. Une demi-droite [Ax) a une origine A et est illimitée d’un côté. Une droite (AB) est illimitée des deux côtés. Deux droites sécantes ont un seul point commun ; si elles forment un angle droit, elles sont perpendiculaires (d1 ⊥ d2). Deux droites parallèles n’ont aucun point commun, ou sont confondues. La médiatrice d’un segment [AB] est la droite qui passe par son milieu et qui est perpendiculaire à (AB).",
+   "points": [
+    "Segment [AB] : limité par A et B ; milieu I : IA = IB.",
+    "Demi-droite [Ax) : une origine, illimitée d’un côté.",
+    "Droite (AB) : illimitée des deux côtés.",
+    "Sécantes : un point commun ; perpendiculaires : angle droit (90°).",
+    "Parallèles : aucun point commun (ou confondues). Médiatrice : passe par le milieu et perpendiculaire."
+   ],
+   "application": {
+    "q": "Trace un segment [AB] de 6 cm, place son milieu I et construis sa médiatrice.",
+    "a": "On place I à 3 cm de A, puis on trace avec l’équerre la droite passant par I et perpendiculaire à (AB)."
+   },
+   "board": [
+    {
+     "h": "1. Segment, demi-droite, droite",
+     "lines": [
+      "[AB] : segment limité par A et B",
+      "[Ax) : demi-droite d’origine A",
+      "(AB) : droite illimitée"
+     ]
+    },
+    {
+     "h": "2. Positions de deux droites",
+     "lines": [
+      "Sécantes : un seul point commun",
+      "Perpendiculaires : d1 ⊥ d2 (angle droit)",
+      "Parallèles : d1 // d2 (aucun point commun)"
+     ]
+    },
+    {
+     "h": "3. Médiatrice d’un segment",
+     "lines": [
+      "Passe par le milieu du segment",
+      "Perpendiculaire au segment"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Construis la médiatrice d’un segment [AB] de 6 cm."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 3 (A) : Nombres décimaux positifs",
+   "match": [
+    "Décimaux positifs"
+   ],
+   "pages": [
+    43,
+    50
+   ],
+   "objectives": [
+    "Lire, écrire, comparer, encadrer et ranger des décimaux.",
+    "Additionner, soustraire, multiplier et diviser des décimaux."
+   ],
+   "intro": "Je demande : « Un cahier coûte 12,50 MRU. Que représente le nombre après la virgule ? Qui coûte le plus cher : 12,5 ou 12,45 ? »",
+   "summary": "Un nombre décimal positif a une partie entière et une partie décimale séparées par une virgule : dans 12,45 la partie entière est 12, la partie décimale 45 (4 dixièmes, 5 centièmes). Pour comparer deux décimaux, on compare d’abord les parties entières, puis les chiffres des dixièmes, des centièmes… On peut encadrer un décimal entre deux entiers (12 < 12,45 < 13) et le placer sur une demi-droite graduée. Pour additionner ou soustraire, on aligne les virgules. Pour multiplier, on calcule sans virgule puis on place la virgule selon le nombre total de chiffres après la virgule.",
+   "points": [
+    "Partie entière , partie décimale : 12,45.",
+    "Dixièmes, centièmes, millièmes.",
+    "Comparer : partie entière d’abord, puis chiffre par chiffre.",
+    "Encadrement : 12 < 12,45 < 13.",
+    "Addition et soustraction : aligner les virgules."
+   ],
+   "application": {
+    "q": "Range dans l’ordre croissant : 3,5 ; 3,05 ; 3,45 ; 3,4.",
+    "a": "3,05 < 3,4 < 3,45 < 3,5."
+   },
+   "board": [
+    {
+     "h": "1. Écriture d’un décimal",
+     "lines": [
+      "12,45 : partie entière 12 ; partie décimale 45",
+      "4 dixièmes, 5 centièmes"
+     ]
+    },
+    {
+     "h": "2. Comparer et encadrer",
+     "lines": [
+      "Comparer les parties entières, puis les dixièmes, les centièmes…",
+      "12 < 12,45 < 13"
+     ]
+    },
+    {
+     "h": "3. Opérations",
+     "lines": [
+      "Addition / soustraction : aligner les virgules",
+      "Multiplication : placer la virgule à la fin"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Range : 3,5 ; 3,05 ; 3,45 ; 3,4."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 3 (B) : Fractions",
+   "match": [
+    "Fractions"
+   ],
+   "pages": [
+    50,
+    62
+   ],
+   "objectives": [
+    "Connaître la notion de fraction et la placer sur une demi-droite graduée.",
+    "Comparer des fractions, les simplifier, et calculer des sommes et produits simples."
+   ],
+   "intro": "Je partage un gâteau dessiné au tableau en 4 parts égales et j’en colorie 3. Je demande : « Quelle partie du gâteau est coloriée ? Comment l’écrire ? »",
+   "summary": "Une fraction a/b (b ≠ 0) a un numérateur a et un dénominateur b. Une fraction décimale a pour dénominateur 10, 100, 1000… (3/10 = 0,3). On obtient une fraction égale en multipliant ou en divisant le numérateur et le dénominateur par un même nombre non nul. Une fraction est irréductible quand on ne peut plus la simplifier. Avec le même dénominateur, la plus grande fraction est celle qui a le plus grand numérateur ; avec le même numérateur, la plus grande est celle qui a le plus petit dénominateur. Pour additionner deux fractions de même dénominateur, on additionne les numérateurs ; sinon, on les réduit d’abord au même dénominateur. Pour multiplier, on multiplie les numérateurs entre eux et les dénominateurs entre eux.",
+   "points": [
+    "Fraction a/b : numérateur a, dénominateur b (b ≠ 0).",
+    "Fraction décimale : dénominateur 10, 100, 1000…",
+    "Fractions égales : multiplier ou diviser haut et bas par un même nombre.",
+    "Comparer : même dénominateur → comparer les numérateurs.",
+    "a/b + c/b = (a + c)/b ; a/b × c/d = (a × c)/(b × d)."
+   ],
+   "application": {
+    "q": "Simplifie 12/18, puis calcule 2/7 + 3/7 et 2/3 × 4/5.",
+    "a": "12/18 = 2/3 ; 2/7 + 3/7 = 5/7 ; 2/3 × 4/5 = 8/15."
+   },
+   "board": [
+    {
+     "h": "1. Notion de fraction",
+     "lines": [
+      "a/b : a numérateur, b dénominateur (b ≠ 0)",
+      "3/4 : 3 parts sur 4 parts égales"
+     ]
+    },
+    {
+     "h": "2. Fractions égales et simplification",
+     "lines": [
+      "a/b = (a × k)/(b × k)",
+      "12/18 = 6/9 = 2/3 (irréductible)"
+     ]
+    },
+    {
+     "h": "3. Comparaison",
+     "lines": [
+      "Même dénominateur : 2/7 < 5/7",
+      "Même numérateur : 3/8 < 3/5"
+     ]
+    },
+    {
+     "h": "4. Opérations",
+     "lines": [
+      "a/b + c/b = (a + c)/b",
+      "a/b × c/d = (a × c)/(b × d)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Simplifie 12/18 ; calcule 2/7 + 3/7 et 2/3 × 4/5."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 4 : Triangles et parallélogrammes",
+   "match": [
+    "Triangles et parallélogramme"
+   ],
+   "pages": [
+    63,
+    84
+   ],
+   "objectives": [
+    "Connaître le triangle, la somme de ses angles, ses droites remarquables, son périmètre et son aire.",
+    "Connaître le parallélogramme et les parallélogrammes particuliers (rectangle, losange, carré) et leurs formules."
+   ],
+   "intro": "Je dessine un triangle et un parallélogramme au tableau et je demande : « Combien de côtés ? Quelles différences voyez-vous ? »",
+   "summary": "Un triangle a trois côtés, trois sommets et trois angles ; la somme de ses angles est égale à 180°. Il a des droites remarquables (hauteurs, médianes, médiatrices…). Son périmètre est la somme des longueurs de ses côtés, et son aire est (base × hauteur) / 2. Un quadrilatère a quatre côtés. Un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles ; ses côtés opposés ont la même longueur et ses diagonales se coupent en leur milieu. Le rectangle a quatre angles droits, le losange quatre côtés égaux, et le carré est à la fois un rectangle et un losange.",
+   "points": [
+    "Triangle : somme des angles = 180°.",
+    "Aire du triangle = (base × hauteur) / 2.",
+    "Parallélogramme : côtés opposés parallèles et de même longueur ; diagonales qui se coupent en leur milieu.",
+    "Rectangle : 4 angles droits ; losange : 4 côtés égaux ; carré : rectangle et losange.",
+    "Aire du parallélogramme = base × hauteur ; rectangle = L × l ; carré = c × c."
+   ],
+   "application": {
+    "q": "Un triangle a deux angles de 50° et 70°. Calcule le troisième angle.",
+    "a": "180° − (50° + 70°) = 60°."
+   },
+   "board": [
+    {
+     "h": "1. Le triangle",
+     "lines": [
+      "3 côtés, 3 sommets, 3 angles",
+      "Somme des angles = 180°",
+      "Aire = (base × hauteur) / 2"
+     ]
+    },
+    {
+     "h": "2. Le parallélogramme",
+     "lines": [
+      "Côtés opposés parallèles et de même longueur",
+      "Diagonales qui se coupent en leur milieu",
+      "Aire = base × hauteur"
+     ]
+    },
+    {
+     "h": "3. Parallélogrammes particuliers",
+     "lines": [
+      "Rectangle : 4 angles droits ; A = L × l",
+      "Losange : 4 côtés égaux",
+      "Carré : rectangle + losange ; A = c × c"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Angles de 50° et 70° : calcule le troisième."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 5 : Proportionnalité et pourcentage",
+   "match": [
+    "Proportionnalité et pourcentage"
+   ],
+   "pages": [
+    85,
+    94
+   ],
+   "objectives": [
+    "Reconnaître une situation de proportionnalité (tableau et graphique).",
+    "Utiliser les propriétés de la proportionnalité et calculer un pourcentage."
+   ],
+   "intro": "Je demande : « Un cahier coûte 20 MRU. Combien coûtent 2 cahiers ? 5 cahiers ? Le prix double-t-il quand le nombre double ? »",
+   "summary": "Une situation est de proportionnalité quand on passe des nombres de la première ligne du tableau à ceux de la seconde en multipliant toujours par le même nombre : le coefficient de proportionnalité. Sur un graphique, une situation de proportionnalité est représentée par des points alignés sur une droite qui passe par l’origine du repère. Dans un tableau de proportionnalité, les produits en croix sont égaux ; à une somme (ou différence) d’éléments de la première ligne correspond la somme (ou différence) des éléments associés de la seconde ligne. Un pourcentage est une proportion sur 100 : prendre 20 % de 300, c’est calculer 300 × 20 / 100 = 60.",
+   "points": [
+    "Coefficient de proportionnalité : on multiplie toujours par le même nombre.",
+    "Graphique : points alignés sur une droite passant par l’origine.",
+    "Produits en croix égaux.",
+    "Somme et différence des colonnes conservées.",
+    "Pourcentage : p % de N = N × p / 100."
+   ],
+   "application": {
+    "q": "Calcule 15 % de 400 MRU.",
+    "a": "400 × 15 / 100 = 60 MRU."
+   },
+   "board": [
+    {
+     "h": "1. Situation de proportionnalité",
+     "lines": [
+      "On multiplie toujours par le même nombre (coefficient)",
+      "Exemple : 1 cahier → 20 MRU ; 5 cahiers → 100 MRU"
+     ]
+    },
+    {
+     "h": "2. Propriétés",
+     "lines": [
+      "Graphique : droite passant par l’origine",
+      "Produits en croix égaux",
+      "Somme / différence des colonnes"
+     ]
+    },
+    {
+     "h": "3. Pourcentage",
+     "lines": [
+      "p % de N = N × p / 100",
+      "20 % de 300 = 60"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule 15 % de 400 MRU."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 7 : Cercles et disques",
+   "match": [
+    "Cercle et disque"
+   ],
+   "pages": [
+    107,
+    118
+   ],
+   "objectives": [
+    "Connaître le cercle, ses éléments (centre, rayon, corde, diamètre, arc) et le disque.",
+    "Calculer le périmètre d’un cercle et l’aire d’un disque."
+   ],
+   "intro": "Je montre un objet rond (une pièce, un couvercle) et je demande : « Comment tracer exactement ce rond ? Quel instrument utilise-t-on ? »",
+   "summary": "Le cercle de centre O et de rayon r est formé de tous les points situés à la distance r de O. Une corde est un segment qui joint deux points du cercle ; un diamètre est une corde qui passe par le centre, c’est la corde la plus longue (d = 2r). Un arc est une portion de cercle entre deux de ses points. Le disque de centre O et de rayon r est la partie du plan limitée par ce cercle. Le périmètre du cercle est P = 2 × π × r = π × d, avec π ≈ 3,14. L’aire du disque est A = π × r × r.",
+   "points": [
+    "Cercle : points à la distance r du centre O.",
+    "Corde, diamètre (d = 2r), arc.",
+    "Disque : partie du plan limitée par le cercle.",
+    "Périmètre : P = 2 × π × r = π × d (π ≈ 3,14).",
+    "Aire du disque : A = π × r × r."
+   ],
+   "application": {
+    "q": "Calcule le périmètre d’un cercle de rayon 10 cm.",
+    "a": "P = 2 × 3,14 × 10 = 62,8 cm."
+   },
+   "board": [
+    {
+     "h": "1. Le cercle",
+     "lines": [
+      "Centre O, rayon r",
+      "Corde : joint deux points du cercle",
+      "Diamètre : corde passant par O (d = 2r)",
+      "Arc : portion du cercle"
+     ]
+    },
+    {
+     "h": "2. Le disque",
+     "lines": [
+      "Partie du plan limitée par le cercle"
+     ]
+    },
+    {
+     "h": "3. Formules",
+     "lines": [
+      "Périmètre : P = 2 × π × r = π × d",
+      "Aire : A = π × r × r",
+      "π ≈ 3,14"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Périmètre d’un cercle de rayon 10 cm."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 8 : Statistique",
+   "match": [
+    "Statistique"
+   ],
+   "pages": [
+    119,
+    132
+   ],
+   "objectives": [
+    "Collecter et organiser des données (effectif, fréquence, mode).",
+    "Représenter une série (diagramme en bâtons, histogramme, diagramme circulaire).",
+    "Calculer la moyenne et déterminer la médiane."
+   ],
+   "intro": "Je demande à chaque élève son âge et j’écris les réponses au tableau. « Combien d’élèves ont 13 ans ? Quel est l’âge le plus fréquent ? »",
+   "summary": "Une série statistique est l’ensemble des données collectées sur un caractère (âge, note…). L’effectif d’une valeur est le nombre de fois où elle apparaît ; la fréquence est l’effectif divisé par l’effectif total. Le mode est la valeur qui a le plus grand effectif. On représente une série par un diagramme en bâtons, un histogramme ou un diagramme circulaire. La moyenne est la somme des valeurs divisée par l’effectif total (moyenne pondérée quand on tient compte des effectifs). La médiane partage la série rangée en deux parties de même effectif.",
+   "points": [
+    "Effectif : nombre de fois qu’une valeur apparaît.",
+    "Fréquence = effectif / effectif total.",
+    "Mode : valeur de plus grand effectif.",
+    "Représentations : bâtons, histogramme, diagramme circulaire.",
+    "Moyenne = somme des valeurs / effectif total ; médiane : partage en deux."
+   ],
+   "application": {
+    "q": "Notes : 8 ; 12 ; 12 ; 15 ; 13. Calcule la moyenne et donne le mode.",
+    "a": "Moyenne = 60 / 5 = 12 ; mode = 12."
+   },
+   "board": [
+    {
+     "h": "1. Vocabulaire",
+     "lines": [
+      "Série statistique, caractère",
+      "Effectif, effectif total",
+      "Fréquence = effectif / effectif total",
+      "Mode"
+     ]
+    },
+    {
+     "h": "2. Représentations",
+     "lines": [
+      "Diagramme en bâtons",
+      "Histogramme",
+      "Diagramme circulaire / semi-circulaire"
+     ]
+    },
+    {
+     "h": "3. Moyenne et médiane",
+     "lines": [
+      "Moyenne = somme des valeurs / effectif total",
+      "Médiane : partage la série rangée en deux"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Notes 8, 12, 12, 15, 13 : moyenne et mode."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 9 : Cube, pavé et prisme droits",
+   "match": [
+    "Cube et pavé droit"
+   ],
+   "pages": [
+    133,
+    151
+   ],
+   "objectives": [
+    "Représenter un cube et un pavé droit en perspective cavalière.",
+    "Reconnaître leurs patrons et calculer aires et volumes."
+   ],
+   "intro": "Je montre une boîte en carton et un dé et je demande : « Combien de faces ? d’arêtes ? de sommets ? Comment les dessiner sur une feuille plate ? »",
+   "summary": "Le cube a 6 faces carrées identiques, 12 arêtes de même longueur et 8 sommets. Le pavé droit (parallélépipède rectangle) a 6 faces rectangulaires, 12 arêtes et 8 sommets. En perspective cavalière, les faces vues de face sont dessinées en vraie grandeur, les arêtes parallèles restent parallèles, et les arêtes cachées sont en pointillés. Le patron est la figure plane qui, pliée, forme le solide. Volume du cube : V = a × a × a ; volume du pavé : V = L × l × h.",
+   "points": [
+    "Cube : 6 faces carrées, 12 arêtes égales, 8 sommets.",
+    "Pavé droit : 6 faces rectangulaires, 12 arêtes, 8 sommets.",
+    "Perspective cavalière : face avant en vraie grandeur, parallèles conservées, arêtes cachées en pointillés.",
+    "Patron : figure plane qui forme le solide.",
+    "Volume : cube a × a × a ; pavé L × l × h."
+   ],
+   "application": {
+    "q": "Calcule le volume d’un pavé droit de 5 cm × 3 cm × 2 cm.",
+    "a": "V = 5 × 3 × 2 = 30 cm³."
+   },
+   "board": [
+    {
+     "h": "1. Le cube",
+     "lines": [
+      "6 faces carrées",
+      "12 arêtes égales",
+      "8 sommets",
+      "V = a × a × a"
+     ]
+    },
+    {
+     "h": "2. Le pavé droit",
+     "lines": [
+      "6 faces rectangulaires",
+      "12 arêtes, 8 sommets",
+      "V = L × l × h"
+     ]
+    },
+    {
+     "h": "3. Perspective cavalière",
+     "lines": [
+      "Face avant en vraie grandeur",
+      "Arêtes parallèles restent parallèles",
+      "Arêtes cachées en pointillés"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Volume d’un pavé 5 cm × 3 cm × 2 cm."
+     ]
+    }
+   ]
+  }
+ ]
+}
