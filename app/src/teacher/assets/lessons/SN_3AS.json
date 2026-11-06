@@ -1,0 +1,1142 @@
+{
+ "subject": "SN",
+ "level": "3AS",
+ "book": "books/SN_3AS.pdf",
+ "bookTitle": "Sciences de la Vie et de la Terre – 3AS",
+ "lessons": [
+  {
+   "title": "L’appareil génital masculin, la puberté et le spermatozoïde",
+   "match": [
+    "Appareil génital mâle : organisation, coupe de testicule, puberté, spermatozoïde"
+   ],
+   "pages": [
+    9,
+    13
+   ],
+   "objectives": [
+    "Identifier les organes de l’appareil génital masculin.",
+    "Décrire le spermatozoïde.",
+    "Citer les caractères sexuels de la puberté chez le garçon."
+   ],
+   "intro": "Je montre le schéma de l’appareil génital masculin et je demande : « Quel organe produit les cellules reproductrices ? »",
+   "summary": "L’appareil génital masculin comprend deux testicules (gonades) qui produisent les spermatozoïdes, des voies génitales (épididymes, canaux déférents, urètre), un organe copulateur et des glandes annexes (vésicules séminales, prostate, glandes de Cowper). Le spermatozoïde est une cellule allongée et mobile : une tête (noyau + acrosome), une pièce intermédiaire et un flagelle. La puberté est le passage de l’enfance à l’adolescence : chez le garçon, les organes génitaux se développent (caractères primaires) et apparaissent la pilosité, la musculature, la voix grave, l’élargissement des épaules (caractères secondaires).",
+   "points": [
+    "Testicules : production des spermatozoïdes.",
+    "Voies génitales et glandes annexes.",
+    "Spermatozoïde : tête, pièce intermédiaire, flagelle.",
+    "Puberté : caractères sexuels primaires et secondaires."
+   ],
+   "application": {
+    "q": "Cite les trois parties du spermatozoïde.",
+    "a": "La tête, la pièce intermédiaire et le flagelle."
+   },
+   "board": [
+    {
+     "h": "Appareil génital masculin",
+     "lines": [
+      "Testicules : produisent les spermatozoïdes",
+      "Voies génitales : épididymes, canaux déférents, urètre",
+      "Glandes annexes : vésicules séminales, prostate, glandes de Cowper"
+     ]
+    },
+    {
+     "h": "Le spermatozoïde",
+     "lines": [
+      "Tête (noyau + acrosome) – pièce intermédiaire – flagelle",
+      "Cellule allongée et mobile"
+     ]
+    },
+    {
+     "h": "La puberté chez le garçon",
+     "lines": [
+      "Pilosité, musculature, voix grave, épaules larges"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les trois parties du spermatozoïde."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’appareil génital féminin, la puberté et l’ovule",
+   "match": [
+    "Appareil génital femelle : organisation, coupe d’ovaire, puberté, ovocyte"
+   ],
+   "pages": [
+    12,
+    16
+   ],
+   "objectives": [
+    "Identifier les organes de l’appareil génital féminin.",
+    "Décrire l’ovule.",
+    "Citer les caractères sexuels de la puberté chez la fille."
+   ],
+   "intro": "Je montre le schéma de l’appareil génital féminin et je demande : « Où sont produites les cellules reproductrices femelles ? »",
+   "summary": "L’appareil génital féminin comprend deux ovaires (gonades) qui produisent les ovules, des voies génitales (deux trompes de Fallope, lieu de rencontre des gamètes, et l’utérus, lieu des règles et de la grossesse), le vagin et des glandes annexes. L’ovule est une cellule de grosse taille, sphérique, immobile, produite en petit nombre et de façon cyclique, de la puberté à la ménopause. Chez la fille, la puberté se manifeste par le développement des organes génitaux et l’apparition des caractères secondaires (seins, pilosité, bassin).",
+   "points": [
+    "Ovaires : production des ovules.",
+    "Trompes de Fallope : lieu de la fécondation.",
+    "Utérus : lieu de la grossesse.",
+    "Ovule : gros, sphérique, immobile.",
+    "Puberté : seins, pilosité, bassin."
+   ],
+   "application": {
+    "q": "Compare l’ovule et le spermatozoïde (taille, mobilité).",
+    "a": "L’ovule est gros et immobile ; le spermatozoïde est petit et mobile."
+   },
+   "board": [
+    {
+     "h": "Appareil génital féminin",
+     "lines": [
+      "Ovaires : produisent les ovules",
+      "Trompes de Fallope : rencontre des gamètes",
+      "Utérus : grossesse – vagin – glandes annexes"
+     ]
+    },
+    {
+     "h": "L’ovule",
+     "lines": [
+      "Gros, sphérique, immobile, produit de façon cyclique"
+     ]
+    },
+    {
+     "h": "La puberté chez la fille",
+     "lines": [
+      "Développement des seins, de la pilosité et du bassin"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Compare l’ovule et le spermatozoïde (taille, mobilité)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La fécondation",
+   "match": [
+    "Fécondation : définition, conditions, étapes, zygote"
+   ],
+   "pages": [
+    17,
+    18
+   ],
+   "objectives": [
+    "Définir la fécondation.",
+    "Citer ses étapes et son lieu."
+   ],
+   "intro": "Je demande : « Comment commence la vie d’un nouvel être humain ? »",
+   "summary": "La fécondation est la rencontre et la fusion d’un gamète mâle et d’un gamète femelle, formant une nouvelle cellule appelée œuf ou zygote. Elle a lieu dans le tiers supérieur de la trompe de Fallope. Ses étapes sont : l’attraction et l’encerclement de l’ovule par les spermatozoïdes, la pénétration d’un seul spermatozoïde, puis la fusion des deux noyaux.",
+   "points": [
+    "Fusion d’un spermatozoïde et d’un ovule.",
+    "Résultat : œuf ou zygote.",
+    "Lieu : tiers supérieur de la trompe.",
+    "Un seul spermatozoïde pénètre."
+   ],
+   "application": {
+    "q": "Où a lieu la fécondation chez la femme ?",
+    "a": "Dans le tiers supérieur de la trompe de Fallope."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Spermatozoïde + ovule → œuf (zygote)"
+     ]
+    },
+    {
+     "h": "Lieu",
+     "lines": [
+      "Tiers supérieur de la trompe de Fallope"
+     ]
+    },
+    {
+     "h": "Étapes",
+     "lines": [
+      "Attraction et encerclement de l’ovule",
+      "Pénétration d’un seul spermatozoïde",
+      "Fusion des deux noyaux"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Où a lieu la fécondation chez la femme ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hygiène de l’appareil génital et IST",
+   "match": [
+    "Hygiène : IST et SIDA",
+    "Mesures de protection de l’appareil génital"
+   ],
+   "pages": [
+    18,
+    20
+   ],
+   "objectives": [
+    "Définir les IST et leurs modes de transmission.",
+    "Citer les règles d’hygiène de l’appareil génital."
+   ],
+   "intro": "Je demande : « Pourquoi l’hygiène du corps est-elle importante à l’adolescence ? »",
+   "summary": "L’hygiène de l’appareil reproducteur est essentielle, surtout à l’adolescence : propreté du corps, changement régulier des vêtements. Les IST (infections sexuellement transmissibles) sont infectieuses et contagieuses ; elles se transmettent par voie sexuelle, par voie sanguine et de la mère à l’enfant. Elles sont dues à des bactéries, des virus (hépatite B, Sida…) ou des parasites. Règles d’hygiène : sensibiliser et informer, l’abstinence pour les célibataires, la fidélité au partenaire légitime, le dépistage avant le mariage et pendant la grossesse, éviter les objets souillés (seringues, lames).",
+   "points": [
+    "Propreté du corps, vêtements propres.",
+    "IST : voie sexuelle, sanguine, mère-enfant.",
+    "Causes : bactéries, virus (hépatite B, Sida), parasites.",
+    "Abstinence, fidélité, dépistage, éviter les objets souillés."
+   ],
+   "application": {
+    "q": "Cite deux modes de transmission des IST et deux moyens de prévention.",
+    "a": "Par voie sanguine et de la mère à l’enfant ; le dépistage prénuptial et éviter les objets souillés."
+   },
+   "board": [
+    {
+     "h": "Hygiène",
+     "lines": [
+      "Propreté du corps – changement régulier des vêtements"
+     ]
+    },
+    {
+     "h": "Les IST",
+     "lines": [
+      "Transmission : voie sexuelle, voie sanguine, mère → enfant",
+      "Causes : bactéries, virus (hépatite B, Sida), parasites"
+     ]
+    },
+    {
+     "h": "Prévention",
+     "lines": [
+      "Informer – abstinence – fidélité",
+      "Dépistage prénuptial – éviter seringues et lames souillées"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux modes de transmission des IST et deux moyens de prévention."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le système nerveux central et périphérique",
+   "match": [
+    "Système nerveux central : encéphale, moelle épinière",
+    "Système nerveux périphérique : nerfs (types et rôles)"
+   ],
+   "pages": [
+    29,
+    32
+   ],
+   "objectives": [
+    "Identifier les organes du système nerveux central.",
+    "Classer les nerfs selon leur origine et leur rôle."
+   ],
+   "intro": "Je demande : « Quand je touche un objet chaud, qui m’avertit ? Par où passe l’information ? »",
+   "summary": "Le système nerveux central comprend l’encéphale, dans la boîte crânienne (cerveau : pensée, mémoire, mouvements volontaires ; cervelet : coordination et équilibre ; tronc cérébral : fonctions vitales), et la moelle épinière, dans la colonne vertébrale, qui transmet les messages et intervient dans certains réflexes. Le système nerveux périphérique est formé de nerfs : crâniens (de l’encéphale) ou rachidiens (de la moelle épinière). Selon leur rôle, ils sont sensitifs (vers le centre), moteurs (vers les organes) ou mixtes (dans les deux sens).",
+   "points": [
+    "SNC : encéphale + moelle épinière.",
+    "Cerveau, cervelet, tronc cérébral.",
+    "Nerfs crâniens et rachidiens.",
+    "Nerfs sensitifs, moteurs, mixtes."
+   ],
+   "application": {
+    "q": "Quelle est la différence entre un nerf sensitif et un nerf moteur ?",
+    "a": "Le nerf sensitif conduit le message vers le centre nerveux ; le nerf moteur le conduit du centre vers les organes."
+   },
+   "board": [
+    {
+     "h": "Système nerveux central",
+     "lines": [
+      "Encéphale : cerveau, cervelet, tronc cérébral",
+      "Moelle épinière : dans la colonne vertébrale"
+     ]
+    },
+    {
+     "h": "Système nerveux périphérique",
+     "lines": [
+      "Nerfs crâniens (encéphale) – nerfs rachidiens (moelle)",
+      "Sensitifs → centre – moteurs → organes – mixtes : deux sens"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle est la différence entre un nerf sensitif et un nerf moteur ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le neurone et ses propriétés",
+   "match": [
+    "Neurone : structure et propriétés"
+   ],
+   "pages": [
+    33,
+    35
+   ],
+   "objectives": [
+    "Décrire la structure du neurone.",
+    "Citer ses propriétés."
+   ],
+   "intro": "Je demande : « Quelle cellule transporte les messages nerveux dans notre corps ? »",
+   "summary": "Le neurone est l’unité de base du système nerveux : une cellule spécialisée qui transmet l’influx nerveux. Il comprend le corps cellulaire (avec le noyau), les dendrites qui reçoivent les messages et l’axone, long prolongement qui conduit le message vers une autre cellule. Il possède deux propriétés : l’excitabilité (réagir à un stimulus et le transformer en message nerveux) et la conductibilité (propager le message).",
+   "points": [
+    "Neurone : unité de base du système nerveux.",
+    "Corps cellulaire, dendrites, axone.",
+    "Excitabilité.",
+    "Conductibilité."
+   ],
+   "application": {
+    "q": "Cite les deux propriétés du neurone.",
+    "a": "L’excitabilité et la conductibilité."
+   },
+   "board": [
+    {
+     "h": "Structure",
+     "lines": [
+      "Corps cellulaire (noyau) – dendrites – axone"
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Excitabilité : réagir à un stimulus",
+      "Conductibilité : propager le message nerveux"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les deux propriétés du neurone."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le réflexe inné et l’arc réflexe",
+   "match": [
+    "Réflexe inné et arc réflexe"
+   ],
+   "pages": [
+    36,
+    37
+   ],
+   "objectives": [
+    "Définir le réflexe inné.",
+    "Identifier les éléments de l’arc réflexe."
+   ],
+   "intro": "Je tape doucement sous le genou d’un élève assis et je demande : « Pourquoi la jambe se lève-t-elle toute seule ? »",
+   "summary": "Un réflexe inné est une réponse automatique, rapide et involontaire, présente dès la naissance, identique chez tous les individus d’une espèce (ex. réflexe rotulien). Il repose sur un arc réflexe formé de : un récepteur qui capte le stimulus, un nerf sensitif vers le centre nerveux, un centre nerveux (moelle épinière) qui élabore la réponse, un nerf moteur et un effecteur (muscle ou glande) qui réalise la réponse.",
+   "points": [
+    "Réflexe inné : automatique, rapide, involontaire.",
+    "Présent dès la naissance.",
+    "Arc réflexe : récepteur → nerf sensitif → centre → nerf moteur → effecteur."
+   ],
+   "application": {
+    "q": "Cite dans l’ordre les éléments de l’arc réflexe.",
+    "a": "Récepteur, nerf sensitif, centre nerveux, nerf moteur, effecteur."
+   },
+   "board": [
+    {
+     "h": "Réflexe inné",
+     "lines": [
+      "Réponse automatique, rapide, involontaire – dès la naissance",
+      "Exemple : réflexe rotulien"
+     ]
+    },
+    {
+     "h": "Arc réflexe",
+     "lines": [
+      "Récepteur → nerf sensitif → centre nerveux (moelle)",
+      "→ nerf moteur → effecteur (muscle ou glande)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite dans l’ordre les éléments de l’arc réflexe."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hygiène du système nerveux",
+   "match": [
+    "Hygiène du système nerveux"
+   ],
+   "pages": [
+    37,
+    38
+   ],
+   "objectives": [
+    "Citer les règles d’hygiène du système nerveux."
+   ],
+   "intro": "Je demande : « Pourquoi est-il difficile de bien travailler après une nuit sans sommeil ? »",
+   "summary": "L’hygiène du système nerveux est l’ensemble des habitudes qui protègent le cerveau et les nerfs : une alimentation équilibrée, une activité physique régulière, un sommeil suffisant et une bonne gestion du stress. Il faut éviter les excitants (café, alcool, tabac), le bruit excessif et les drogues.",
+   "points": [
+    "Sommeil suffisant.",
+    "Alimentation équilibrée, activité physique.",
+    "Gérer le stress.",
+    "Éviter excitants, alcool, tabac, drogues, bruit."
+   ],
+   "application": {
+    "q": "Cite deux habitudes qui protègent le système nerveux et deux à éviter.",
+    "a": "Dormir suffisamment et faire du sport ; éviter les drogues et le tabac."
+   },
+   "board": [
+    {
+     "h": "À faire",
+     "lines": [
+      "Dormir suffisamment – manger équilibré",
+      "Activité physique – gérer le stress"
+     ]
+    },
+    {
+     "h": "À éviter",
+     "lines": [
+      "Excitants (café, alcool, tabac) – drogues – bruit excessif"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux habitudes qui protègent le système nerveux et deux à éviter."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le squelette et les types d’os",
+   "match": [
+    "Le squelette : schéma, types d’os"
+   ],
+   "pages": [
+    43,
+    44
+   ],
+   "objectives": [
+    "Classer les os selon leur forme."
+   ],
+   "intro": "Je demande aux élèves de toucher leur crâne puis leur bras : « Ces os ont-ils la même forme ? »",
+   "summary": "Les os sont classés selon leur forme : les os longs, plus longs que larges, agissent comme des leviers (fémur, humérus) ; les os courts assurent stabilité et mobilité fine (carpe, tarse) ; les os plats protègent les organes vitaux (crâne, sternum, côtes) ; les os irréguliers ont des formes complexes (vertèbres, os du bassin).",
+   "points": [
+    "Os longs : fémur, humérus.",
+    "Os courts : carpe, tarse.",
+    "Os plats : crâne, sternum, côtes.",
+    "Os irréguliers : vertèbres, bassin."
+   ],
+   "application": {
+    "q": "Classe ces os : fémur, côte, vertèbre, os du carpe.",
+    "a": "Fémur : long ; côte : plat ; vertèbre : irrégulier ; carpe : court."
+   },
+   "board": [
+    {
+     "h": "Types d’os",
+     "lines": [
+      "Longs : fémur, humérus (leviers)",
+      "Courts : carpe, tarse",
+      "Plats : crâne, sternum, côtes (protection)",
+      "Irréguliers : vertèbres, os du bassin"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe ces os : fémur, côte, vertèbre, os du carpe."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’os long : structure, composition et croissance",
+   "match": [
+    "Os long : structure, composition chimique, croissance"
+   ],
+   "pages": [
+    45,
+    49
+   ],
+   "objectives": [
+    "Décrire la structure d’un os long.",
+    "Citer la composition chimique de l’os.",
+    "Expliquer la croissance de l’os."
+   ],
+   "intro": "Je montre la coupe d’un os long et je demande : « L’os est-il plein ou creux ? »",
+   "summary": "Un os long (l’humérus) a deux têtes, les épiphyses, et un corps, la diaphyse. Les épiphyses contiennent un os spongieux rempli de moelle rouge ; la diaphyse a un canal médullaire contenant la moelle jaune, entouré d’os compact recouvert du périoste. L’os est formé d’osséine (substance organique, 30 %), de sels minéraux (45 %) et d’eau (25 %). La croissance en longueur se fait grâce au cartilage de croissance (de conjugaison) des épiphyses ; la croissance en épaisseur grâce au périoste.",
+   "points": [
+    "Épiphyses et diaphyse.",
+    "Moelle rouge, canal médullaire, moelle jaune, périoste.",
+    "Osséine 30 %, sels minéraux 45 %, eau 25 %.",
+    "Longueur : cartilage de croissance ; épaisseur : périoste."
+   ],
+   "application": {
+    "q": "Quelle partie assure la croissance de l’os en longueur ?",
+    "a": "Le cartilage de croissance (de conjugaison) situé dans les épiphyses."
+   },
+   "board": [
+    {
+     "h": "Structure",
+     "lines": [
+      "Épiphyses : os spongieux + moelle rouge",
+      "Diaphyse : canal médullaire + moelle jaune, os compact, périoste"
+     ]
+    },
+    {
+     "h": "Composition",
+     "lines": [
+      "Osséine 30 % – sels minéraux 45 % – eau 25 %"
+     ]
+    },
+    {
+     "h": "Croissance",
+     "lines": [
+      "En longueur : cartilage de croissance",
+      "En épaisseur : périoste"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle partie assure la croissance de l’os en longueur ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le muscle strié",
+   "match": [
+    "Muscles striés : structure, formes, propriétés"
+   ],
+   "pages": [
+    49,
+    52
+   ],
+   "objectives": [
+    "Décrire la structure du muscle strié.",
+    "Citer ses propriétés."
+   ],
+   "intro": "Je demande aux élèves de plier le bras : « Que sentez-vous sous la peau ? Que fait le muscle ? »",
+   "summary": "Le muscle strié est formé de fibres musculaires regroupées en faisceaux. La fibre est une cellule cylindrique à plusieurs noyaux ; sa membrane est le sarcolemme, son cytoplasme le sarcoplasme, qui contient des myofibrilles permettant la contraction. Le muscle squelettique a trois propriétés : l’excitabilité (répondre à un stimulus), la contractilité (se raccourcir en augmentant de diamètre) et l’élasticité (reprendre sa longueur initiale).",
+   "points": [
+    "Fibres musculaires en faisceaux.",
+    "Fibre : plusieurs noyaux, sarcolemme, myofibrilles.",
+    "Excitabilité, contractilité, élasticité."
+   ],
+   "application": {
+    "q": "Cite les trois propriétés du muscle squelettique.",
+    "a": "L’excitabilité, la contractilité et l’élasticité."
+   },
+   "board": [
+    {
+     "h": "Structure",
+     "lines": [
+      "Faisceaux de fibres musculaires",
+      "Fibre : plusieurs noyaux – sarcolemme – myofibrilles"
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Excitabilité – contractilité – élasticité"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les trois propriétés du muscle squelettique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les articulations",
+   "match": [
+    "Articulations : définition et types"
+   ],
+   "pages": [
+    52,
+    55
+   ],
+   "objectives": [
+    "Définir une articulation.",
+    "Classer les articulations selon leur mobilité."
+   ],
+   "intro": "Je demande : « Peut-on bouger les os du crâne comme on bouge le coude ? Pourquoi ? »",
+   "summary": "Une articulation est une jonction entre deux ou plusieurs os. Une articulation mobile comporte des surfaces recouvertes de cartilage, une capsule articulaire et une cavité contenant du liquide synovial qui réduit les frottements ; les ligaments assurent sa stabilité. On distingue les articulations immobiles ou synarthroses (sutures du crâne), semi-mobiles ou amphiarthroses (vertèbres) et mobiles ou diarthroses (coude).",
+   "points": [
+    "Articulation : jonction entre os.",
+    "Cartilage, capsule, liquide synovial, ligaments.",
+    "Synarthrose : crâne.",
+    "Amphiarthrose : vertèbres.",
+    "Diarthrose : coude."
+   ],
+   "application": {
+    "q": "Donne un exemple de chaque type d’articulation.",
+    "a": "Immobile : crâne ; semi-mobile : vertèbres ; mobile : coude."
+   },
+   "board": [
+    {
+     "h": "Articulation mobile",
+     "lines": [
+      "Cartilage – capsule – liquide synovial – ligaments"
+     ]
+    },
+    {
+     "h": "Types",
+     "lines": [
+      "Synarthrose (immobile) : sutures du crâne",
+      "Amphiarthrose (semi-mobile) : vertèbres",
+      "Diarthrose (mobile) : coude"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Donne un exemple de chaque type d’articulation."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hygiène de la motricité",
+   "match": [
+    "Hygiène de la motricité : accidents des os, des muscles et des articulations"
+   ],
+   "pages": [
+    56,
+    62
+   ],
+   "objectives": [
+    "Citer les accidents des os, des muscles et des articulations.",
+    "Proposer des mesures de protection."
+   ],
+   "intro": "Je demande : « Pourquoi faut-il s’échauffer avant de jouer au football ? »",
+   "summary": "Les déformations de la colonne vertébrale sont la scoliose (déviation latérale), la cyphose (dos voûté) et la lordose (courbure exagérée vers l’avant). Les accidents musculaires sont l’élongation, le claquage et la déchirure. Les accidents des articulations sont la luxation (l’os sort de l’articulation) et l’entorse (les ligaments sont abîmés). Pour se protéger : bonne alimentation, sport, posture correcte, échauffement, effort modéré, repos et hydratation.",
+   "points": [
+    "Os : scoliose, cyphose, lordose.",
+    "Muscles : élongation, claquage, déchirure.",
+    "Articulations : luxation, entorse.",
+    "Échauffement, bonne posture, repos."
+   ],
+   "application": {
+    "q": "Quelle est la différence entre une luxation et une entorse ?",
+    "a": "Dans la luxation, l’os sort de l’articulation ; dans l’entorse, ce sont les ligaments qui sont abîmés."
+   },
+   "board": [
+    {
+     "h": "Accidents",
+     "lines": [
+      "Os (colonne) : scoliose, cyphose, lordose",
+      "Muscles : élongation, claquage, déchirure",
+      "Articulations : luxation, entorse"
+     ]
+    },
+    {
+     "h": "Protection",
+     "lines": [
+      "Bonne posture – alimentation – sport",
+      "Échauffement – effort modéré – repos – hydratation"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle est la différence entre une luxation et une entorse ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les changements climatiques",
+   "match": [
+    "Changements climatiques : causes et conséquences"
+   ],
+   "pages": [
+    67,
+    69
+   ],
+   "objectives": [
+    "Définir le changement climatique.",
+    "Citer ses causes, ses conséquences et des solutions."
+   ],
+   "intro": "Je demande : « Avez-vous remarqué que les pluies diminuent et que la chaleur augmente ? Pourquoi ? »",
+   "summary": "Le changement climatique est une modification durable du climat : hausse des températures, baisse des pluies dans certaines régions, phénomènes météorologiques plus violents, perturbation des écosystèmes. Il est accentué par les activités humaines qui augmentent les gaz à effet de serre. Pour le réduire : diminuer la combustion du pétrole, du charbon et du gaz, utiliser les énergies renouvelables (solaire, éolienne, hydraulique), protéger les forêts, planter des arbres et sensibiliser les citoyens.",
+   "points": [
+    "Modification durable du climat.",
+    "Cause : gaz à effet de serre des activités humaines.",
+    "Conséquences : chaleur, baisse des pluies, phénomènes violents.",
+    "Solutions : énergies renouvelables, arbres."
+   ],
+   "application": {
+    "q": "Cite deux solutions pour réduire le réchauffement climatique.",
+    "a": "Utiliser les énergies renouvelables et planter des arbres."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Modification durable du climat de la Terre"
+     ]
+    },
+    {
+     "h": "Causes et conséquences",
+     "lines": [
+      "Gaz à effet de serre des activités humaines",
+      "Hausse des températures, baisse des pluies, phénomènes violents"
+     ]
+    },
+    {
+     "h": "Solutions",
+     "lines": [
+      "Énergies renouvelables – protéger les forêts – planter des arbres"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux solutions pour réduire le réchauffement climatique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La pollution",
+   "match": [
+    "Pollution de l’air, du sol, de l’eau et du littoral"
+   ],
+   "pages": [
+    70,
+    79
+   ],
+   "objectives": [
+    "Définir la pollution.",
+    "Citer ses formes et des mesures pour la réduire."
+   ],
+   "intro": "Je demande : « Que deviennent les sachets plastiques jetés dans la nature ? »",
+   "summary": "La pollution est la dégradation d’un écosystème par l’introduction, généralement humaine, de substances. La pollution de l’air vient des pots d’échappement et des usines. Les substances polluantes (acides, métaux lourds) modifient le sol et sa fertilité. La pollution de l’eau vient de l’industrie, de l’agriculture, des automobiles et des eaux usées non traitées. Le littoral mauritanien est menacé par les déchets, les marées noires, les eaux usées et la surpêche. Mesures : énergies renouvelables, transport collectif, traitement des eaux usées, moins d’engrais chimiques, recyclage, nettoyage des plages.",
+   "points": [
+    "Pollution : dégradation d’un écosystème.",
+    "Air : véhicules, usines.",
+    "Sol et eau : produits chimiques, eaux usées.",
+    "Littoral : marées noires, déchets, surpêche.",
+    "Mesures : traiter les eaux, recycler."
+   ],
+   "application": {
+    "q": "Cite deux origines de la pollution de l’eau et une mesure pour la réduire.",
+    "a": "L’industrie et l’agriculture ; traiter les eaux usées avant de les rejeter."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Dégradation d’un écosystème par des substances introduites par l’homme"
+     ]
+    },
+    {
+     "h": "Formes",
+     "lines": [
+      "Air : pots d’échappement, usines",
+      "Sol et eau : produits chimiques, métaux lourds, eaux usées",
+      "Littoral : marées noires, déchets, surpêche"
+     ]
+    },
+    {
+     "h": "Mesures",
+     "lines": [
+      "Énergies renouvelables – traiter les eaux usées",
+      "Moins d’engrais chimiques – recycler – nettoyer les plages"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux origines de la pollution de l’eau et une mesure pour la réduire."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La gestion des déchets",
+   "match": [
+    "Gestion des déchets"
+   ],
+   "pages": [
+    80,
+    81
+   ],
+   "objectives": [
+    "Citer les types de déchets.",
+    "Connaître les modes de traitement des déchets."
+   ],
+   "intro": "Je demande : « Que faisons-nous des déchets de la maison ? Que pourrions-nous faire de mieux ? »",
+   "summary": "Les ordures ménagères sont les déchets de la vie quotidienne (plastiques, cartons, bouteilles, boîtes de conserve). Les voitures, les usines et l’agriculture produisent aussi des déchets (CO₂, plomb, engrais, pesticides) qui polluent l’eau, le sol et l’air. Selon leur nature, on traite les déchets en les enfouissant (biodégradables), en les recyclant (plastiques, papiers) ou en les brûlant. Le tri et la collecte séparée des déchets de soins (biomédicaux) sont essentiels.",
+   "points": [
+    "Ordures ménagères : plastiques, cartons, bouteilles.",
+    "Déchets industriels et agricoles.",
+    "Traitement : enfouir, recycler, brûler.",
+    "Tri des déchets biomédicaux."
+   ],
+   "application": {
+    "q": "Cite trois manières de traiter les déchets.",
+    "a": "Les enfouir, les recycler ou les brûler."
+   },
+   "board": [
+    {
+     "h": "Types de déchets",
+     "lines": [
+      "Ménagers : plastiques, cartons, bouteilles",
+      "Industriels, agricoles, biomédicaux"
+     ]
+    },
+    {
+     "h": "Traitement",
+     "lines": [
+      "Enfouir (biodégradables) – recycler (plastiques, papiers) – brûler",
+      "Trier les déchets de soins"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite trois manières de traiter les déchets."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les catastrophes naturelles",
+   "match": [
+    "Catastrophes naturelles"
+   ],
+   "pages": [
+    82,
+    90
+   ],
+   "objectives": [
+    "Citer des catastrophes naturelles en Mauritanie.",
+    "Donner leurs conséquences et des moyens de prévention."
+   ],
+   "intro": "Je demande : « Quels dangers naturels menacent nos cultures et nos troupeaux ? »",
+   "summary": "La Mauritanie subit la sécheresse : le désert progresse d’environ 6 km par an et les sols perdent leur fertilité. Les inondations surviennent après de fortes pluies ou le débordement des cours d’eau ; il faut bien aménager les villes et éviter de construire dans les zones exposées. Les feux de brousse détruisent les pâturages ; on les limite par la sensibilisation et les pare-feux. Les criquets pèlerins forment de grands essaims qui détruisent d’énormes quantités de plantes.",
+   "points": [
+    "Sécheresse : le désert avance de 6 km par an.",
+    "Inondations : fortes pluies, débordement.",
+    "Feux de brousse : destruction des pâturages.",
+    "Criquets pèlerins : destruction des cultures."
+   ],
+   "application": {
+    "q": "Cite deux catastrophes naturelles qui menacent la Mauritanie et une conséquence de chacune.",
+    "a": "La sécheresse (sols moins fertiles) et les feux de brousse (destruction des pâturages)."
+   },
+   "board": [
+    {
+     "h": "Sécheresse",
+     "lines": [
+      "Le désert progresse d’environ 6 km par an"
+     ]
+    },
+    {
+     "h": "Inondations",
+     "lines": [
+      "Fortes pluies, débordement des cours d’eau – bien aménager les villes"
+     ]
+    },
+    {
+     "h": "Feux de brousse et criquets",
+     "lines": [
+      "Feux : destruction des pâturages – pare-feux",
+      "Criquets pèlerins : destruction des cultures"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux catastrophes naturelles qui menacent la Mauritanie et une conséquence de chacune."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les roches plutoniques : le granite",
+   "match": [
+    "Roches magmatiques : définition et caractéristiques",
+    "Roches plutoniques : le granite"
+   ],
+   "pages": [
+    101,
+    109
+   ],
+   "objectives": [
+    "Décrire les propriétés du granite.",
+    "Expliquer son origine et son altération.",
+    "Citer ses utilisations et sa localisation en Mauritanie."
+   ],
+   "intro": "Je montre un morceau de granite et je demande : « Que voyez-vous à la loupe ? »",
+   "summary": "Le granite est une roche dure, dense et imperméable, formée de cristaux visibles à l’œil nu : feldspaths (blancs ou roses), quartz (gris) et micas (noirs). C’est une roche magmatique plutonique : elle se forme en profondeur par refroidissement lent d’un magma, d’où sa texture grenue. Sous l’action de l’eau, il forme des boules puis une arène granitique (sable). Il est utilisé dans la construction (pavés, façades, sculptures). En Mauritanie, il se trouve dans les Mauritanides et la Dorsale Rgueïbat. Autres roches plutoniques : gabbro, diorite, syénite.",
+   "points": [
+    "Cristaux visibles : feldspaths, quartz, micas.",
+    "Refroidissement lent en profondeur : texture grenue.",
+    "Altération : boules, arène granitique.",
+    "Mauritanides et Dorsale Rgueïbat.",
+    "Autres : gabbro, diorite, syénite."
+   ],
+   "application": {
+    "q": "Pourquoi les cristaux du granite sont-ils grands ?",
+    "a": "Parce que le magma refroidit lentement en profondeur, ce qui laisse le temps aux cristaux de grandir."
+   },
+   "board": [
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Dur, dense, imperméable",
+      "Cristaux visibles : feldspaths, quartz, micas"
+     ]
+    },
+    {
+     "h": "Origine",
+     "lines": [
+      "Magma refroidi lentement en profondeur → texture grenue"
+     ]
+    },
+    {
+     "h": "Altération et utilisation",
+     "lines": [
+      "Boules → arène granitique (sable)",
+      "Construction : pavés, façades, sculptures"
+     ]
+    },
+    {
+     "h": "En Mauritanie",
+     "lines": [
+      "Mauritanides et Dorsale Rgueïbat"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi les cristaux du granite sont-ils grands ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les roches volcaniques : le basalte",
+   "match": [
+    "Roches volcaniques : le basalte"
+   ],
+   "pages": [
+    110,
+    119
+   ],
+   "objectives": [
+    "Décrire les propriétés du basalte.",
+    "Expliquer son origine, son altération et ses utilisations."
+   ],
+   "intro": "Je montre un morceau de basalte et un morceau de granite et je demande : « Quelles différences voyez-vous ? »",
+   "summary": "Le basalte est une roche volcanique noire à gris foncé, dure et dense, à structure microlithique (petits cristaux et pâte non cristallisée). Il est riche en fer, magnésium et calcium et pauvre en silice. Il provient d’un magma fluide qui sort par les volcans et refroidit rapidement en surface ; il forme des coulées de lave et des plateaux basaltiques. Il s’altère en boules puis en argile. Il est utilisé en agriculture et dans la construction. En Mauritanie, on le trouve dans les Mauritanides et la Dorsale Regueibat. Autres roches volcaniques : rhyolite, andésite.",
+   "points": [
+    "Noir, dense, structure microlithique.",
+    "Refroidissement rapide en surface.",
+    "Coulées de lave, plateaux basaltiques.",
+    "Altération : boules puis argile.",
+    "Mauritanides et Dorsale Regueibat."
+   ],
+   "application": {
+    "q": "Compare le refroidissement du magma pour le granite et pour le basalte.",
+    "a": "Granite : refroidissement lent en profondeur ; basalte : refroidissement rapide en surface."
+   },
+   "board": [
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Noir à gris foncé – dur – dense",
+      "Structure microlithique – pauvre en silice"
+     ]
+    },
+    {
+     "h": "Origine",
+     "lines": [
+      "Magma fluide refroidi rapidement en surface",
+      "Coulées de lave – plateaux basaltiques"
+     ]
+    },
+    {
+     "h": "Altération et utilisation",
+     "lines": [
+      "Boules → argile",
+      "Agriculture – construction"
+     ]
+    },
+    {
+     "h": "En Mauritanie",
+     "lines": [
+      "Mauritanides et Dorsale Regueibat"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Compare le refroidissement du magma pour le granite et pour le basalte."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les roches métamorphiques et le gneiss",
+   "match": [
+    "Roches métamorphiques : définition, caractéristiques",
+    "Étude d’exemple : le gneiss"
+   ],
+   "pages": [
+    129,
+    132
+   ],
+   "objectives": [
+    "Définir une roche métamorphique.",
+    "Décrire les propriétés du gneiss."
+   ],
+   "intro": "Je montre un gneiss et je demande : « Que remarquez-vous sur les bandes de cette roche ? »",
+   "summary": "Les roches métamorphiques résultent de la transformation, à l’état solide, de roches préexistantes sous l’effet de la pression et/ou de la température. Elles sont dures, compactes et sans fossiles ; elles présentent une schistosité ou une foliation. Le gneiss est une roche métamorphique foliée (alternance de bandes claires et sombres) à texture cristalline ; il est dur, compact, très résistant et sans fossiles.",
+   "points": [
+    "Transformation à l’état solide.",
+    "Pression et température.",
+    "Dures, compactes, sans fossiles.",
+    "Gneiss : bandes claires et sombres (foliation)."
+   ],
+   "application": {
+    "q": "Qu’est-ce qui transforme une roche en roche métamorphique ?",
+    "a": "La pression et/ou la température, sans fusion."
+   },
+   "board": [
+    {
+     "h": "Roches métamorphiques",
+     "lines": [
+      "Transformation à l’état solide sous pression et température",
+      "Dures, compactes, sans fossiles – schistosité, foliation"
+     ]
+    },
+    {
+     "h": "Le gneiss",
+     "lines": [
+      "Bandes claires et sombres (foliation)",
+      "Texture cristalline – très résistant"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Qu’est-ce qui transforme une roche en roche métamorphique ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le gneiss : origine, utilisation et autres exemples",
+   "match": [
+    "Le gneiss : localisation en Mauritanie, utilisation, autres exemples"
+   ],
+   "pages": [
+    133,
+    137
+   ],
+   "objectives": [
+    "Expliquer l’origine du gneiss.",
+    "Citer ses utilisations, sa localisation et d’autres roches métamorphiques."
+   ],
+   "intro": "Je demande : « De quelle roche le gneiss peut-il provenir ? »",
+   "summary": "Les gneiss se forment en profondeur sous une forte pression et une température élevée, par transformation progressive de l’argile en schiste, puis en micaschiste, puis en gneiss. Le gneiss est utilisé comme matériau de construction : pierres concassées pour les routes, pavés, bâtiments, barrages et fondations, et à des fins décoratives. En Mauritanie, il se trouve dans les Mauritanides et la Dorsale du Regueïbat. Autres roches métamorphiques : micaschiste (des argiles), quartzite (du grès), marbre et cipolin (du calcaire).",
+   "points": [
+    "Argile → schiste → micaschiste → gneiss.",
+    "Construction : routes, pavés, barrages.",
+    "Mauritanides et Dorsale du Regueïbat.",
+    "Autres : micaschiste, quartzite, marbre."
+   ],
+   "application": {
+    "q": "De quelle roche provient le marbre ?",
+    "a": "Du calcaire."
+   },
+   "board": [
+    {
+     "h": "Origine",
+     "lines": [
+      "Argile → schiste → micaschiste → gneiss (pression + température)"
+     ]
+    },
+    {
+     "h": "Utilisation et localisation",
+     "lines": [
+      "Routes, pavés, bâtiments, barrages, décoration",
+      "Mauritanides et Dorsale du Regueïbat"
+     ]
+    },
+    {
+     "h": "Autres exemples",
+     "lines": [
+      "Micaschiste (argile) – quartzite (grès) – marbre (calcaire)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "De quelle roche provient le marbre ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le cycle des roches",
+   "match": [
+    "Cycle des roches"
+   ],
+   "pages": [
+    137,
+    139
+   ],
+   "objectives": [
+    "Décrire les relations entre les trois grands types de roches."
+   ],
+   "intro": "Je demande : « Une roche peut-elle se transformer en une autre roche ? Comment ? »",
+   "summary": "Le cycle des roches est l’ensemble des transformations qui permettent aux roches de se former, de se transformer et de se recycler. Les roches magmatiques se forment par refroidissement du magma, en profondeur (plutoniques) ou en surface (volcaniques). L’altération, l’érosion et le transport fragmentent les roches en sédiments, qui se déposent et se compactent en roches sédimentaires. Sous forte pression et température, sans fusion, les roches deviennent métamorphiques. En profondeur, toutes les roches peuvent fondre et redevenir du magma : le cycle est continu.",
+   "points": [
+    "Magma → roches magmatiques.",
+    "Érosion → sédiments → roches sédimentaires.",
+    "Pression + température → roches métamorphiques.",
+    "Fusion → magma : cycle continu."
+   ],
+   "application": {
+    "q": "Comment une roche sédimentaire peut-elle devenir métamorphique ?",
+    "a": "Sous l’effet d’une forte pression et d’une température élevée, sans fusion."
+   },
+   "board": [
+    {
+     "h": "Trois types de roches",
+     "lines": [
+      "Magmatiques – sédimentaires – métamorphiques"
+     ]
+    },
+    {
+     "h": "Le cycle",
+     "lines": [
+      "Magma → roches magmatiques → sédiments → roches sédimentaires",
+      "Pression + température → roches métamorphiques → fusion → magma"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment une roche sédimentaire peut-elle devenir métamorphique ?"
+     ]
+    }
+   ]
+  }
+ ]
+}

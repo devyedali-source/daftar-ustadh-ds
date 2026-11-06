@@ -1,0 +1,1423 @@
+{
+ "subject": "SN",
+ "level": "1AS",
+ "book": "books/SN_1AS.pdf",
+ "bookTitle": "Sciences de la Vie et de la Terre – 1AS",
+ "lessons": [
+  {
+   "title": "Les domaines des SVT",
+   "match": [
+    "Biologie : définition et branches (zoologie, botanique)",
+    "Géologie : définition et branches (pétrologie, stratigraphie, paléontologie)",
+    "Écologie : définitions (écologie, écosystème, biocénose, biotope)"
+   ],
+   "pages": [
+    9,
+    10
+   ],
+   "objectives": [
+    "Définir les SVT et citer leurs domaines.",
+    "Citer les branches de la biologie et de la géologie.",
+    "Définir écosystème, biocénose et biotope."
+   ],
+   "intro": "Je montre une plante, un insecte et une roche, puis je demande : « Quelle science étudie chacun de ces objets ? »",
+   "summary": "Les SVT étudient les êtres vivants, la Terre et ses phénomènes. La biologie étudie les êtres vivants ; ses branches sont la zoologie (les animaux) et la botanique (les plantes). La géologie étudie la structure, la composition et l’évolution de la Terre ; ses branches sont la pétrologie (les roches), la minéralogie (les minéraux), la paléontologie (les fossiles) et la stratigraphie (les couches de la Terre). L’écologie étudie les relations entre les êtres vivants et leur environnement. Un écosystème est formé d’une communauté d’êtres vivants, la biocénose, en relation avec un milieu de vie, le biotope.",
+   "points": [
+    "Biologie : zoologie (animaux), botanique (plantes).",
+    "Géologie : pétrologie, minéralogie, paléontologie, stratigraphie.",
+    "Écologie : relations entre les êtres vivants et leur environnement.",
+    "Écosystème = biocénose + biotope."
+   ],
+   "application": {
+    "q": "Quelle branche étudie les fossiles ? Que forme une biocénose avec son biotope ?",
+    "a": "La paléontologie étudie les fossiles. Une biocénose et son biotope forment un écosystème."
+   },
+   "board": [
+    {
+     "h": "Les SVT",
+     "lines": [
+      "Étudient les êtres vivants, la Terre et ses phénomènes"
+     ]
+    },
+    {
+     "h": "Biologie",
+     "lines": [
+      "Zoologie : les animaux",
+      "Botanique : les plantes"
+     ]
+    },
+    {
+     "h": "Géologie",
+     "lines": [
+      "Pétrologie : les roches – Minéralogie : les minéraux",
+      "Paléontologie : les fossiles – Stratigraphie : les couches de la Terre"
+     ]
+    },
+    {
+     "h": "Écologie",
+     "lines": [
+      "Relations entre les êtres vivants et leur environnement",
+      "Écosystème = biocénose (êtres vivants) + biotope (milieu de vie)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle branche étudie les fossiles ? Que forme une biocénose avec son biotope ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Distinguer le vivant du non vivant",
+   "match": [
+    "Distinguer le vivant du non vivant"
+   ],
+   "pages": [
+    11,
+    12
+   ],
+   "objectives": [
+    "Citer les caractéristiques des êtres vivants.",
+    "Distinguer le vivant du non vivant."
+   ],
+   "intro": "Je montre une roche et une plante en pot, puis je demande : « Lequel est vivant ? Comment le savez-vous ? »",
+   "summary": "Les êtres vivants sont très divers, mais ils sont tous composés d’au moins une cellule. Les fonctions vitales — alimentation, respiration, croissance et reproduction — marquent la différence entre le vivant et le non-vivant. Si aucun de ces critères n’existe, il s’agit du non vivant : une roche, une cuillère…",
+   "points": [
+    "Tout être vivant est formé d’au moins une cellule.",
+    "Fonctions vitales : se nourrir, respirer, grandir, se reproduire.",
+    "Sans ces critères : non vivant (roche, cuillère…)."
+   ],
+   "application": {
+    "q": "Classe en vivant ou non vivant : un caillou, un arbre, une chèvre, une cuillère.",
+    "a": "Vivant : l’arbre, la chèvre. Non vivant : le caillou, la cuillère."
+   },
+   "board": [
+    {
+     "h": "Le vivant",
+     "lines": [
+      "Formé d’au moins une cellule",
+      "Se nourrit, respire, grandit, se reproduit"
+     ]
+    },
+    {
+     "h": "Le non vivant",
+     "lines": [
+      "Ne présente aucun de ces critères : roche, cuillère…"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe en vivant ou non vivant : un caillou, un arbre, une chèvre, une cuillère."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Distinguer l’animal du végétal",
+   "match": [
+    "Distinguer l’animal du végétal"
+   ],
+   "pages": [
+    13,
+    13
+   ],
+   "objectives": [
+    "Distinguer un animal d’un végétal."
+   ],
+   "intro": "Je demande : « La chèvre et l’arbre sont vivants. Qu’est-ce qui les différencie ? »",
+   "summary": "Les animaux et les végétaux sont des êtres vivants. Les animaux sont capables de se déplacer activement et possèdent des organes de sens (yeux, narines, oreilles). Les végétaux sont généralement fixés au sol et ne possèdent pas ces organes.",
+   "points": [
+    "Animal : se déplace activement, possède des organes de sens.",
+    "Végétal : généralement fixé au sol, sans organes de sens."
+   ],
+   "application": {
+    "q": "Le palmier est-il un animal ou un végétal ? Justifie.",
+    "a": "C’est un végétal : il est fixé au sol et n’a pas d’organes de sens."
+   },
+   "board": [
+    {
+     "h": "Animal",
+     "lines": [
+      "Se déplace activement",
+      "Possède des organes de sens (yeux, narines, oreilles)"
+     ]
+    },
+    {
+     "h": "Végétal",
+     "lines": [
+      "Généralement fixé au sol",
+      "Ne possède pas d’organes de sens"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Le palmier est-il un animal ou un végétal ? Justifie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Classification simplifiée des êtres vivants",
+   "match": [
+    "Classification simplifiée des êtres vivants"
+   ],
+   "pages": [
+    13,
+    16
+   ],
+   "objectives": [
+    "Définir la cellule et citer ses parties.",
+    "Connaître les niveaux de la classification des êtres vivants."
+   ],
+   "intro": "Je demande : « Comment ranger en groupes tous les êtres vivants que vous connaissez ? »",
+   "summary": "La cellule est l’élément de base de tous les êtres vivants. Elle est formée d’une membrane, d’un noyau et d’un cytoplasme ; elle est souvent microscopique. Un être formé d’une seule cellule est unicellulaire ; formé de plusieurs, il est pluricellulaire. Pour classer les êtres vivants, on recherche les caractères qu’ils possèdent en commun. Ils sont classés en règnes, puis embranchements, classes, ordres, familles, genres et espèces (RECOFGE). Une espèce peut être identifiée par une clé de détermination.",
+   "points": [
+    "Cellule : membrane, noyau, cytoplasme.",
+    "Unicellulaire / pluricellulaire.",
+    "Classer selon les caractères communs.",
+    "Règne → embranchement → classe → ordre → famille → genre → espèce."
+   ],
+   "application": {
+    "q": "Range dans l’ordre : famille, règne, espèce, classe.",
+    "a": "Règne, classe, famille, espèce."
+   },
+   "board": [
+    {
+     "h": "La cellule",
+     "lines": [
+      "Membrane + cytoplasme + noyau",
+      "Unicellulaire : une seule cellule – pluricellulaire : plusieurs cellules"
+     ]
+    },
+    {
+     "h": "La classification",
+     "lines": [
+      "On classe selon les caractères communs",
+      "Règne – Embranchement – Classe – Ordre – Famille – Genre – Espèce (RECOFGE)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Range dans l’ordre : famille, règne, espèce, classe."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La marche",
+   "match": [
+    "La marche"
+   ],
+   "pages": [
+    23,
+    28
+   ],
+   "objectives": [
+    "Citer les buts du déplacement.",
+    "Identifier les organes actifs et passifs du mouvement.",
+    "Distinguer les types de marche."
+   ],
+   "intro": "Je demande : « Pourquoi les animaux se déplacent-ils ? Quels organes utilisez-vous pour marcher ? »",
+   "summary": "Les animaux se déplacent pour se protéger du mauvais temps, rechercher leur nourriture, fuir un prédateur et se reproduire. Les muscles se contractent : ce sont les organes actifs du mouvement ; les os, sur lesquels ils sont attachés, sont les organes passifs. Un support offrant un appui est indispensable. L’homme marche sur la plante du pied (plantigrade) et sur deux membres (bipède). Beaucoup de mammifères marchent sur quatre pattes (quadrupèdes) ; ceux qui marchent sur les doigts sont digitigrades et les animaux à sabots (vache, chèvre) sont onguligrades.",
+   "points": [
+    "Buts : se protéger, se nourrir, fuir, se reproduire.",
+    "Muscles : organes actifs ; os : organes passifs.",
+    "Un support est indispensable.",
+    "Plantigrade, digitigrade, onguligrade ; bipède, quadrupède."
+   ],
+   "application": {
+    "q": "La chèvre marche sur des sabots : comment l’appelle-t-on ? Et l’homme ?",
+    "a": "La chèvre est onguligrade ; l’homme est plantigrade et bipède."
+   },
+   "board": [
+    {
+     "h": "Buts du déplacement",
+     "lines": [
+      "Se protéger, se nourrir, fuir un prédateur, se reproduire"
+     ]
+    },
+    {
+     "h": "Organes",
+     "lines": [
+      "Muscles : organes actifs – os : organes passifs",
+      "Un support est indispensable"
+     ]
+    },
+    {
+     "h": "Types de marche",
+     "lines": [
+      "Plantigrade (homme) – digitigrade (sur les doigts) – onguligrade (sabots)",
+      "Bipède : 2 membres – quadrupède : 4 pattes"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "La chèvre marche sur des sabots : comment l’appelle-t-on ? Et l’homme ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La reptation",
+   "match": [
+    "La reptation"
+   ],
+   "pages": [
+    34,
+    36
+   ],
+   "objectives": [
+    "Décrire la reptation chez les vertébrés et les invertébrés."
+   ],
+   "intro": "Je demande : « Le serpent n’a pas de pattes. Comment avance-t-il ? »",
+   "summary": "Les animaux qui rampent n’ont généralement pas de pattes. Le serpent avance horizontalement par ondulations et rétractions alternatives du corps. Le ver de terre (lombric) contracte et allonge successivement les segments de son corps en s’accrochant à des soies locomotrices. Chez l’escargot, le pied musculaire permet le déplacement par des ondulations.",
+   "points": [
+    "Ramper : sans pattes en général.",
+    "Serpent : ondulations du corps.",
+    "Lombric : contraction et allongement des segments, soies.",
+    "Escargot : pied musculaire."
+   ],
+   "application": {
+    "q": "Comment se déplace le lombric ?",
+    "a": "Il contracte et allonge successivement les segments de son corps en s’accrochant à ses soies."
+   },
+   "board": [
+    {
+     "h": "Chez les vertébrés",
+     "lines": [
+      "Serpent : ondulations et rétractions du corps"
+     ]
+    },
+    {
+     "h": "Chez les invertébrés",
+     "lines": [
+      "Lombric : segments qui se contractent et s’allongent + soies",
+      "Escargot : pied musculaire"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment se déplace le lombric ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La nage",
+   "match": [
+    "La nage"
+   ],
+   "pages": [
+    32,
+    34
+   ],
+   "objectives": [
+    "Identifier les nageoires du poisson et leur rôle."
+   ],
+   "intro": "Je montre l’image d’un poisson et je demande : « Quels organes lui permettent d’avancer dans l’eau ? »",
+   "summary": "Les animaux qui vivent en milieu aquatique sont adaptés à la nage. Le poisson utilise ses nageoires : dorsale, caudale, anale, pectorales et pelviennes (abdominales). Les nageoires lui permettent de se soutenir, de garder l’équilibre et d’avancer dans l’eau.",
+   "points": [
+    "Nageoires : dorsale, caudale, anale, pectorales, pelviennes.",
+    "Rôle : se soutenir, garder l’équilibre, avancer."
+   ],
+   "application": {
+    "q": "Cite trois nageoires du poisson et leur rôle général.",
+    "a": "Dorsale, caudale, pectorales : elles permettent de se soutenir, garder l’équilibre et avancer."
+   },
+   "board": [
+    {
+     "h": "Organes de la nage",
+     "lines": [
+      "Nageoires dorsale, caudale, anale, pectorales, pelviennes"
+     ]
+    },
+    {
+     "h": "Rôle",
+     "lines": [
+      "Se soutenir – garder l’équilibre – avancer dans l’eau"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite trois nageoires du poisson et leur rôle général."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le vol",
+   "match": [
+    "Le vol"
+   ],
+   "pages": [
+    29,
+    31
+   ],
+   "objectives": [
+    "Identifier les organes du vol.",
+    "Expliquer l’adaptation de l’oiseau au vol."
+   ],
+   "intro": "Je demande : « Quels organes permettent à l’oiseau de voler ? »",
+   "summary": "Les ailes sont les instruments du vol. Étalées, elles augmentent la surface d’appui sur l’air ; elles sont actionnées par des muscles puissants. Les oiseaux sont adaptés au vol grâce au plumage, aux sacs aériens et à leur corps léger en forme de fuseau : c’est une forme aérodynamique.",
+   "points": [
+    "Ailes : surface d’appui sur l’air.",
+    "Muscles puissants.",
+    "Plumage, sacs aériens, corps léger en fuseau (aérodynamique)."
+   ],
+   "application": {
+    "q": "Cite deux adaptations de l’oiseau au vol.",
+    "a": "Le plumage et le corps léger en forme de fuseau (aussi : sacs aériens)."
+   },
+   "board": [
+    {
+     "h": "Organes du vol",
+     "lines": [
+      "Ailes étalées actionnées par des muscles puissants"
+     ]
+    },
+    {
+     "h": "Adaptations",
+     "lines": [
+      "Plumage – sacs aériens – corps léger en fuseau",
+      "Forme aérodynamique"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux adaptations de l’oiseau au vol."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le sol",
+   "match": [
+    "Sol : définition, exemples (sableux, argileux…)"
+   ],
+   "pages": [
+    39,
+    41
+   ],
+   "objectives": [
+    "Définir le sol.",
+    "Citer les constituants du sol."
+   ],
+   "intro": "Je montre un peu de terre et je demande : « De quoi est formée cette terre ? »",
+   "summary": "Le sol est la couche superficielle de la croûte terrestre qui résulte de l’altération des roches et de l’activité des êtres vivants. Il sert de support aux plantes. Ses constituants sont : des constituants organiques (débris d’organismes), des constituants minéraux (sable, argile…), des gaz dans les interstices et la solution du sol (eau et ions).",
+   "points": [
+    "Sol : couche superficielle de la croûte terrestre.",
+    "Formé par l’altération des roches et l’activité des êtres vivants.",
+    "Constituants : organiques, minéraux, gaz, solution du sol."
+   ],
+   "application": {
+    "q": "Cite les quatre types de constituants du sol.",
+    "a": "Constituants organiques, minéraux (sable, argile), gaz et solution du sol."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Couche superficielle de la croûte terrestre",
+      "Altération des roches + activité des êtres vivants"
+     ]
+    },
+    {
+     "h": "Constituants",
+     "lines": [
+      "Organiques – minéraux (sable, argile…) – gaz – solution du sol (eau + ions)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les quatre types de constituants du sol."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Morphologie d’une plante à fleurs",
+   "match": [
+    "Morphologie d’une plante"
+   ],
+   "pages": [
+    41,
+    43
+   ],
+   "objectives": [
+    "Identifier les organes d’une plante à fleurs.",
+    "Décrire la racine, la tige et la feuille."
+   ],
+   "intro": "Je montre une plante entière et je demande : « Nommez ses différentes parties. »",
+   "summary": "Une plante à fleurs est formée d’un appareil végétatif (racines, tige, feuilles) et d’un appareil reproducteur. Les racines sont la partie souterraine ; la zone pilifère porte les poils absorbants et la coiffe protège l’extrémité. La tige est la partie aérienne qui soutient la plante et porte les feuilles et les bourgeons. Une feuille est formée d’un limbe, d’un pétiole et d’une base foliaire ; elle peut être simple ou composée.",
+   "points": [
+    "Appareil végétatif : racines, tige, feuilles.",
+    "Racine : zone pilifère, coiffe.",
+    "Tige : soutien, porte feuilles et bourgeons.",
+    "Feuille : limbe, pétiole, base foliaire."
+   ],
+   "application": {
+    "q": "Quelles sont les trois parties d’une feuille ?",
+    "a": "Le limbe, le pétiole et la base foliaire."
+   },
+   "board": [
+    {
+     "h": "Appareil végétatif",
+     "lines": [
+      "Racines – tige – feuilles"
+     ]
+    },
+    {
+     "h": "Racine",
+     "lines": [
+      "Zone pilifère (poils absorbants) – coiffe"
+     ]
+    },
+    {
+     "h": "Tige et feuille",
+     "lines": [
+      "Tige : soutien, porte feuilles et bourgeons",
+      "Feuille : limbe + pétiole + base foliaire"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelles sont les trois parties d’une feuille ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Rôle des racines",
+   "match": [
+    "Rôle des racines : absorption de l’eau et des sels minéraux (sève brute)"
+   ],
+   "pages": [
+    43,
+    44
+   ],
+   "objectives": [
+    "Expliquer le rôle des poils absorbants.",
+    "Définir la sève brute."
+   ],
+   "intro": "Je demande : « Par où la plante prend-elle l’eau du sol ? »",
+   "summary": "L’eau et les minéraux du sol sont captés par les poils absorbants des racines, qui forment une très grande surface d’échange. La racine fixe aussi la plante au sol. Les substances prélevées forment un liquide riche en eau et en sels minéraux : la sève brute, transportée par les vaisseaux du xylème dans toute la plante.",
+   "points": [
+    "Poils absorbants : absorption de l’eau et des sels minéraux.",
+    "La racine fixe la plante.",
+    "Sève brute = eau + sels minéraux.",
+    "Transportée par le xylème."
+   ],
+   "application": {
+    "q": "Comment s’appelle le liquide absorbé par les racines ? Que contient-il ?",
+    "a": "La sève brute : de l’eau et des sels minéraux."
+   },
+   "board": [
+    {
+     "h": "Rôles de la racine",
+     "lines": [
+      "Absorber l’eau et les sels minéraux (poils absorbants)",
+      "Fixer la plante au sol"
+     ]
+    },
+    {
+     "h": "Sève brute",
+     "lines": [
+      "Eau + sels minéraux",
+      "Transportée par le xylème"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment s’appelle le liquide absorbé par les racines ? Que contient-il ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Rôle des feuilles : transpiration et photosynthèse",
+   "match": [
+    "Rôle des feuilles : transpiration, photosynthèse (autotrophie, sève élaborée)"
+   ],
+   "pages": [
+    44,
+    47
+   ],
+   "objectives": [
+    "Mettre en évidence la transpiration.",
+    "Identifier les conditions de la photosynthèse.",
+    "Définir la sève élaborée."
+   ],
+   "intro": "Je montre une plante couverte d’un sac en plastique et je demande : « D’où viennent les gouttes d’eau sur le sac ? »",
+   "summary": "L’eau absorbée est en grande partie rejetée sous forme de vapeur au niveau des feuilles, par des pores appelés stomates : c’est la transpiration. À la lumière, les parties vertes des feuilles, qui contiennent la chlorophylle, fabriquent de l’amidon (test à l’eau iodée positif) : c’est la photosynthèse. Elle a besoin de lumière, de dioxyde de carbone et de chlorophylle. La plante verte fabrique ainsi sa propre matière organique. L’eau et les substances fabriquées (sucres) forment la sève élaborée.",
+   "points": [
+    "Transpiration : rejet de vapeur d’eau par les stomates.",
+    "Photosynthèse : lumière + CO₂ + chlorophylle.",
+    "Fabrication d’amidon (eau iodée).",
+    "Sève élaborée = eau + sucres fabriqués."
+   ],
+   "application": {
+    "q": "Quelles sont les conditions nécessaires à la photosynthèse ?",
+    "a": "La lumière, le dioxyde de carbone et la chlorophylle."
+   },
+   "board": [
+    {
+     "h": "Transpiration",
+     "lines": [
+      "Rejet de vapeur d’eau par les stomates des feuilles"
+     ]
+    },
+    {
+     "h": "Photosynthèse",
+     "lines": [
+      "Conditions : lumière + CO₂ + chlorophylle",
+      "Production d’amidon (test à l’eau iodée)"
+     ]
+    },
+    {
+     "h": "Sève élaborée",
+     "lines": [
+      "Eau + sucres fabriqués par la plante"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelles sont les conditions nécessaires à la photosynthèse ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Rôle des vaisseaux conducteurs",
+   "match": [
+    "Rôle des vaisseaux conducteurs : circulation de la sève"
+   ],
+   "pages": [
+    47,
+    50
+   ],
+   "objectives": [
+    "Distinguer le xylème et le phloème."
+   ],
+   "intro": "Je demande : « Comment l’eau absorbée par les racines arrive-t-elle jusqu’aux feuilles ? »",
+   "summary": "Les vaisseaux conducteurs assurent le transport des substances dans la plante. Le xylème transporte la sève brute (eau et sels minéraux) des racines vers les feuilles, grâce surtout à la transpiration. Le phloème transporte la sève élaborée (sucres produits par la photosynthèse) des feuilles vers les organes de stockage ou de croissance.",
+   "points": [
+    "Xylème : sève brute, racines → feuilles.",
+    "Phloème : sève élaborée, feuilles → organes.",
+    "La transpiration aide la montée de la sève brute."
+   ],
+   "application": {
+    "q": "Quel vaisseau transporte la sève élaborée ? Dans quel sens ?",
+    "a": "Le phloème, des feuilles vers les organes de stockage ou de croissance."
+   },
+   "board": [
+    {
+     "h": "Xylème",
+     "lines": [
+      "Sève brute (eau + sels minéraux)",
+      "Des racines vers les feuilles"
+     ]
+    },
+    {
+     "h": "Phloème",
+     "lines": [
+      "Sève élaborée (sucres)",
+      "Des feuilles vers les organes"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel vaisseau transporte la sève élaborée ? Dans quel sens ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nutrition d’un champignon",
+   "match": [
+    "Nutrition d’une plante non chlorophyllienne"
+   ],
+   "pages": [
+    50,
+    52
+   ],
+   "objectives": [
+    "Expliquer la nutrition hétérotrophe du champignon.",
+    "Citer ses trois types de nutrition."
+   ],
+   "intro": "Je demande : « Le champignon n’est pas vert. Peut-il fabriquer sa nourriture comme la plante ? »",
+   "summary": "Les champignons ont une nutrition hétérotrophe : ils ne produisent pas leur propre matière organique et l’obtiennent de leur environnement, par absorption de nutriments après une digestion externe. Ils peuvent être saprophytes (matière organique morte), parasites (aux dépens d’un hôte) ou symbiotiques (association bénéfique, comme les mycorhizes et les lichens). Ils jouent un rôle essentiel dans le recyclage des matières organiques.",
+   "points": [
+    "Hétérotrophe : ne fabrique pas sa matière organique.",
+    "Absorption après digestion externe.",
+    "Saprophytes, parasites, symbiotiques.",
+    "Rôle : recyclage des matières organiques."
+   ],
+   "application": {
+    "q": "Quelle est la différence entre la nutrition d’une plante verte et celle d’un champignon ?",
+    "a": "La plante verte fabrique sa matière organique (autotrophe) ; le champignon la prend dans son milieu (hétérotrophe)."
+   },
+   "board": [
+    {
+     "h": "Nutrition hétérotrophe",
+     "lines": [
+      "Le champignon prend sa matière organique dans son milieu",
+      "Absorption après digestion externe"
+     ]
+    },
+    {
+     "h": "Types",
+     "lines": [
+      "Saprophytes : matière morte",
+      "Parasites : aux dépens d’un hôte",
+      "Symbiotiques : mycorhizes, lichens"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle est la différence entre la nutrition d’une plante verte et celle d’un champignon ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nutrition d’un invertébré : la mouche et le lombric",
+   "match": [
+    "Mode de nutrition d’un invertébré (étude d’un exemple)"
+   ],
+   "pages": [
+    56,
+    60
+   ],
+   "objectives": [
+    "Décrire les pièces buccales de la mouche.",
+    "Décrire le tube digestif du lombric."
+   ],
+   "intro": "Je demande : « Avec quoi la mouche prend-elle sa nourriture ? Et le ver de terre ? »",
+   "summary": "Les pièces buccales de la mouche forment une trompe terminée par deux coussinets munis de pores, par lesquels elle aspire sa nourriture. La mouche est attirée par tous les types d’aliments et dépose des bactéries sur la nourriture. Le lombric avale la terre de façon continue : son tube digestif comprend la bouche, le pharynx, l’œsophage, le jabot (stockage), le gésier (broyage), l’intestin (digestion et absorption) et l’anus, qui rejette les déchets sous forme de turricules.",
+   "points": [
+    "Mouche : trompe qui aspire la nourriture.",
+    "Elle dépose des bactéries sur les aliments.",
+    "Lombric : bouche, pharynx, œsophage, jabot, gésier, intestin, anus.",
+    "Il avale la terre et rejette des turricules."
+   ],
+   "application": {
+    "q": "Cite dans l’ordre les parties du tube digestif du lombric.",
+    "a": "Bouche, pharynx, œsophage, jabot, gésier, intestin, anus."
+   },
+   "board": [
+    {
+     "h": "La mouche",
+     "lines": [
+      "Trompe + coussinets : aspire la nourriture",
+      "Dépose des bactéries sur les aliments"
+     ]
+    },
+    {
+     "h": "Le lombric",
+     "lines": [
+      "Bouche → pharynx → œsophage → jabot → gésier → intestin → anus",
+      "Avale la terre – rejette des turricules"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite dans l’ordre les parties du tube digestif du lombric."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nutrition d’un végétarien : vache, lapin, pigeon",
+   "match": [
+    "Mode de nutrition d’un végétarien (herbivore, granivore)"
+   ],
+   "pages": [
+    61,
+    68
+   ],
+   "objectives": [
+    "Décrire la denture et l’appareil digestif d’un herbivore.",
+    "Expliquer la rumination.",
+    "Décrire la nutrition d’un granivore."
+   ],
+   "intro": "Je demande : « La vache mâche longtemps même quand elle ne broute plus. Pourquoi ? »",
+   "summary": "Les mammifères végétariens n’ont pas de canines et possèdent une barre : leur denture est incomplète. La vache a quatre compartiments à l’estomac (panse, bonnet, feuillet, caillette) ; elle broute puis rumine : l’herbe remonte dans la bouche et est mastiquée longuement. Le lapin a de longues incisives à croissance continue, un long intestin et un volumineux cæcum. Le pigeon granivore n’a pas de dents : il a un jabot et un gésier où les graines sont broyées grâce aux muscles et aux petits cailloux. L’intestin est très long chez les végétariens.",
+   "points": [
+    "Denture incomplète : pas de canines, une barre.",
+    "Vache : panse, bonnet, feuillet, caillette ; rumination.",
+    "Lapin : incisives à croissance continue, cæcum.",
+    "Pigeon : jabot et gésier ; pas de dents."
+   ],
+   "application": {
+    "q": "Cite les quatre compartiments de l’estomac de la vache.",
+    "a": "La panse, le bonnet, le feuillet et la caillette."
+   },
+   "board": [
+    {
+     "h": "Herbivore ruminant : la vache",
+     "lines": [
+      "Denture incomplète (pas de canines, une barre)",
+      "Panse – bonnet – feuillet – caillette",
+      "Broute puis rumine"
+     ]
+    },
+    {
+     "h": "Le lapin",
+     "lines": [
+      "Incisives à croissance continue – long intestin – cæcum"
+     ]
+    },
+    {
+     "h": "Granivore : le pigeon",
+     "lines": [
+      "Pas de dents – jabot + gésier (broyage avec des cailloux)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les quatre compartiments de l’estomac de la vache."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nutrition d’un carnivore : le chat",
+   "match": [
+    "Étude d’un carnivore"
+   ],
+   "pages": [
+    69,
+    71
+   ],
+   "objectives": [
+    "Décrire le comportement alimentaire d’un prédateur.",
+    "Décrire la denture et le tube digestif du chat."
+   ],
+   "intro": "Je demande : « Comment le chat attrape-t-il une souris ? Quelles dents utilise-t-il ? »",
+   "summary": "Les prédateurs repèrent leurs proies par la vue, l’ouïe et l’odorat, et chassent à l’affût, à la course ou en maraude. Le chat a une denture complète avec des canines développées (crocs) et des molaires tranchantes. Sa mastication est sommaire. La digestion de la viande étant rapide, son tube digestif est beaucoup plus court que celui des herbivores.",
+   "points": [
+    "Repérage : vue, ouïe, odorat.",
+    "Chasse : à l’affût, à la course, en maraude.",
+    "Denture complète : crocs, molaires tranchantes.",
+    "Tube digestif court."
+   ],
+   "application": {
+    "q": "Pourquoi le tube digestif du chat est-il plus court que celui de la vache ?",
+    "a": "Parce que la digestion de la viande est plus rapide que celle des végétaux."
+   },
+   "board": [
+    {
+     "h": "Comportement alimentaire",
+     "lines": [
+      "Repérage : vue, ouïe, odorat",
+      "Chasse à l’affût, à la course, en maraude"
+     ]
+    },
+    {
+     "h": "Denture et tube digestif",
+     "lines": [
+      "Denture complète : crocs + molaires tranchantes",
+      "Tube digestif court"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi le tube digestif du chat est-il plus court que celui de la vache ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’appareil digestif de l’homme",
+   "match": [
+    "Étude d’un omnivore (l’homme) : appareil digestif"
+   ],
+   "pages": [
+    71,
+    73
+   ],
+   "objectives": [
+    "Identifier les organes de l’appareil digestif de l’homme.",
+    "Citer le rôle des différentes dents."
+   ],
+   "intro": "Je demande : « L’homme mange des végétaux et de la viande : comment l’appelle-t-on ? »",
+   "summary": "Un omnivore mange des aliments végétaux et animaux, comme l’homme. Ses dents jouent des rôles différents : les incisives coupent, les canines déchirent, les prémolaires et molaires broient. Les aliments passent dans le tube digestif : bouche, œsophage, estomac, intestin grêle, gros intestin et anus.",
+   "points": [
+    "Omnivore : mange de tout.",
+    "Incisives (couper), canines (déchirer), molaires (broyer).",
+    "Tube digestif : bouche, œsophage, estomac, intestin grêle, gros intestin, anus."
+   ],
+   "application": {
+    "q": "Quel est le rôle des incisives et des molaires ?",
+    "a": "Les incisives coupent ; les molaires broient."
+   },
+   "board": [
+    {
+     "h": "Les dents",
+     "lines": [
+      "Incisives : couper – canines : déchirer",
+      "Prémolaires et molaires : broyer"
+     ]
+    },
+    {
+     "h": "Le tube digestif",
+     "lines": [
+      "Bouche → œsophage → estomac → intestin grêle → gros intestin → anus"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel est le rôle des incisives et des molaires ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le mécanisme de la digestion",
+   "match": [
+    "Mécanisme de la digestion"
+   ],
+   "pages": [
+    73,
+    76
+   ],
+   "objectives": [
+    "Définir la digestion.",
+    "Distinguer transformations mécaniques et chimiques."
+   ],
+   "intro": "Je demande : « Que devient le pain que nous mangeons ? »",
+   "summary": "La digestion est une transformation des aliments dans le tube digestif due aux sécrétions des glandes digestives. Les aliments subissent des transformations mécaniques (broyage) et chimiques (dissolution) qui les réduisent en petits éléments solubles, les nutriments, qui passent dans le sang. Les aliments non digérés (excréments) sont rejetés par l’anus.",
+   "points": [
+    "Digestion : transformation des aliments dans le tube digestif.",
+    "Action mécanique (broyage) et chimique (dissolution).",
+    "Nutriments : passent dans le sang.",
+    "Déchets rejetés par l’anus."
+   ],
+   "application": {
+    "q": "Comment appelle-t-on les petits éléments solubles qui passent dans le sang ?",
+    "a": "Les nutriments."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Transformation des aliments grâce aux sécrétions des glandes digestives"
+     ]
+    },
+    {
+     "h": "Deux actions",
+     "lines": [
+      "Mécanique : broyage",
+      "Chimique : dissolution"
+     ]
+    },
+    {
+     "h": "Résultat",
+     "lines": [
+      "Nutriments → sang",
+      "Déchets → rejetés par l’anus"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment appelle-t-on les petits éléments solubles qui passent dans le sang ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hygiène de l’appareil digestif",
+   "match": [
+    "Hygiène de l’appareil digestif"
+   ],
+   "pages": [
+    76,
+    82
+   ],
+   "objectives": [
+    "Citer des maladies de l’appareil digestif.",
+    "Proposer des règles d’hygiène."
+   ],
+   "intro": "Je demande : « Pourquoi faut-il se brosser les dents après chaque repas ? »",
+   "summary": "L’appareil digestif peut être atteint de plusieurs maladies : l’intoxication alimentaire (aliments ou eau contenant bactéries, parasites, virus ou poisons), la carie dentaire, la dysenterie (avec sang ou mucus) et la constipation. Pour les prévenir : se brosser les dents après chaque repas et consulter un dentiste chaque année, bien s’alimenter et s’hydrater, et faire des exercices physiques.",
+   "points": [
+    "Maladies : intoxication, carie, dysenterie, constipation.",
+    "Se brosser les dents après chaque repas.",
+    "Bien s’alimenter et s’hydrater.",
+    "Faire de l’exercice physique."
+   ],
+   "application": {
+    "q": "Cite deux maladies de l’appareil digestif et une règle d’hygiène.",
+    "a": "La carie et la dysenterie ; se brosser les dents après chaque repas."
+   },
+   "board": [
+    {
+     "h": "Maladies",
+     "lines": [
+      "Intoxication alimentaire – carie dentaire",
+      "Dysenterie – constipation"
+     ]
+    },
+    {
+     "h": "Règles d’hygiène",
+     "lines": [
+      "Se brosser les dents après chaque repas, voir un dentiste",
+      "Bien s’alimenter, s’hydrater, faire de l’exercice"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux maladies de l’appareil digestif et une règle d’hygiène."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’appareil respiratoire de l’homme",
+   "match": [
+    "Respiration pulmonaire chez l’homme : appareil respiratoire"
+   ],
+   "pages": [
+    90,
+    91
+   ],
+   "objectives": [
+    "Identifier les organes de l’appareil respiratoire."
+   ],
+   "intro": "Je demande : « Par où l’air entre-t-il dans notre corps ? Où va-t-il ? »",
+   "summary": "L’appareil respiratoire est l’ensemble des organes qui permettent la circulation de l’air et les échanges gazeux. L’air passe par les fosses nasales, le pharynx, le larynx, la trachée-artère, les bronches et les bronchioles. Les échanges gazeux ont lieu au niveau des alvéoles pulmonaires.",
+   "points": [
+    "Voies : fosses nasales, pharynx, larynx, trachée, bronches, bronchioles.",
+    "Échanges gazeux : alvéoles pulmonaires."
+   ],
+   "application": {
+    "q": "Où ont lieu les échanges gazeux dans le poumon ?",
+    "a": "Au niveau des alvéoles pulmonaires."
+   },
+   "board": [
+    {
+     "h": "Conduction de l’air",
+     "lines": [
+      "Fosses nasales → pharynx → larynx → trachée → bronches → bronchioles"
+     ]
+    },
+    {
+     "h": "Échanges gazeux",
+     "lines": [
+      "Dans les alvéoles pulmonaires"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Où ont lieu les échanges gazeux dans le poumon ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les mouvements respiratoires",
+   "match": [
+    "Mouvements respiratoires (inspiration, expiration)"
+   ],
+   "pages": [
+    91,
+    92
+   ],
+   "objectives": [
+    "Décrire l’inspiration et l’expiration.",
+    "Définir la ventilation pulmonaire."
+   ],
+   "intro": "Je demande aux élèves de poser la main sur la poitrine et de respirer : « Que remarquez-vous ? »",
+   "summary": "La ventilation pulmonaire est un mouvement cyclique alternant l’inspiration (entrée de l’air) et l’expiration (sortie de l’air). Le rythme et l’amplitude des cycles dépendent des besoins des organes en dioxygène. La ventilation renouvelle l’air des alvéoles et permet les échanges gazeux entre l’air et le sang.",
+   "points": [
+    "Inspiration : entrée de l’air.",
+    "Expiration : sortie de l’air.",
+    "Le rythme dépend des besoins en dioxygène.",
+    "La ventilation renouvelle l’air des alvéoles."
+   ],
+   "application": {
+    "q": "Pourquoi respire-t-on plus vite après une course ?",
+    "a": "Parce que les organes ont plus besoin de dioxygène."
+   },
+   "board": [
+    {
+     "h": "Ventilation pulmonaire",
+     "lines": [
+      "Inspiration : l’air entre",
+      "Expiration : l’air sort"
+     ]
+    },
+    {
+     "h": "Rythme",
+     "lines": [
+      "Dépend des besoins des organes en dioxygène"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi respire-t-on plus vite après une course ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les échanges gazeux respiratoires",
+   "match": [
+    "Rôle des poumons, échanges gazeux respiratoires"
+   ],
+   "pages": [
+    93,
+    96
+   ],
+   "objectives": [
+    "Décrire les échanges gazeux au niveau des alvéoles."
+   ],
+   "intro": "Je souffle dans de l’eau de chaux avec une paille et je demande : « Pourquoi l’eau de chaux se trouble-t-elle ? »",
+   "summary": "Les poumons sont des surfaces d’échanges entre l’air et le sang. Le poumon droit a trois lobes, le gauche deux. Les alvéoles, à paroi fine et très vascularisée, sont le siège des échanges gazeux. Au niveau des poumons, le sang abandonne du dioxyde de carbone et de la vapeur d’eau et se charge de dioxygène ; au niveau des tissus, le phénomène inverse se produit.",
+   "points": [
+    "Poumon droit : 3 lobes ; gauche : 2 lobes.",
+    "Alvéoles : paroi fine et vascularisée.",
+    "Le sang prend le dioxygène et rejette le CO₂.",
+    "Inverse au niveau des tissus."
+   ],
+   "application": {
+    "q": "Quel gaz le sang reçoit-il dans les alvéoles ? Lequel rejette-t-il ?",
+    "a": "Il reçoit le dioxygène et rejette le dioxyde de carbone."
+   },
+   "board": [
+    {
+     "h": "Les poumons",
+     "lines": [
+      "Poumon droit : 3 lobes – poumon gauche : 2 lobes",
+      "Alvéoles : paroi fine et riche en vaisseaux"
+     ]
+    },
+    {
+     "h": "Échanges",
+     "lines": [
+      "Air → sang : dioxygène",
+      "Sang → air : dioxyde de carbone + vapeur d’eau"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel gaz le sang reçoit-il dans les alvéoles ? Lequel rejette-t-il ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hygiène de l’appareil respiratoire",
+   "match": [
+    "Hygiène de l’appareil respiratoire : maladies et règles d’hygiène"
+   ],
+   "pages": [
+    96,
+    98
+   ],
+   "objectives": [
+    "Citer des maladies de l’appareil respiratoire.",
+    "Proposer des règles d’hygiène."
+   ],
+   "intro": "Je demande : « Pourquoi le tabac est-il dangereux pour les poumons ? »",
+   "summary": "L’appareil respiratoire peut être atteint de nombreuses affections : infections, bronchites, pneumonie, tuberculose, cancers dus au tabac… Pour son bon fonctionnement, il faut respirer par le nez, éviter les mauvaises attitudes qui compriment la cage thoracique, faire des exercices physiques en milieu aéré et vivre au grand air, sans fumer ni respirer de gaz toxiques.",
+   "points": [
+    "Maladies : bronchite, pneumonie, tuberculose, cancer.",
+    "Respirer par le nez.",
+    "Bonne posture, exercices physiques.",
+    "Ne pas fumer, éviter les gaz toxiques."
+   ],
+   "application": {
+    "q": "Cite deux maladies respiratoires et deux règles d’hygiène.",
+    "a": "La tuberculose et la bronchite ; respirer par le nez et ne pas fumer."
+   },
+   "board": [
+    {
+     "h": "Maladies",
+     "lines": [
+      "Bronchite – pneumonie – tuberculose – cancer du poumon"
+     ]
+    },
+    {
+     "h": "Règles d’hygiène",
+     "lines": [
+      "Respirer par le nez – bonne posture",
+      "Exercices physiques – ne pas fumer, éviter les gaz toxiques"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux maladies respiratoires et deux règles d’hygiène."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La respiration branchiale du poisson",
+   "match": [
+    "Respiration branchiale chez le poisson"
+   ],
+   "pages": [
+    99,
+    102
+   ],
+   "objectives": [
+    "Décrire la branchie.",
+    "Décrire les mouvements respiratoires du poisson."
+   ],
+   "intro": "Je demande : « Le poisson vit dans l’eau. Comment respire-t-il ? »",
+   "summary": "La branchie est l’organe respiratoire du poisson. Elle est formée d’un arc branchial portant deux lames de fins filaments très irrigués, ce qui augmente la surface d’échange. Quand la bouche s’ouvre, les opercules s’abaissent ; quand la bouche se ferme, les opercules se soulèvent. Le courant d’eau apporte le dioxygène dissous et emporte le dioxyde de carbone ; les échanges se font au niveau des branchies.",
+   "points": [
+    "Branchie : arc branchial + filaments irrigués.",
+    "Bouche ouverte : opercules abaissés.",
+    "Bouche fermée : opercules soulevés.",
+    "Échanges entre l’eau et le sang."
+   ],
+   "application": {
+    "q": "Que se passe-t-il au niveau des opercules quand le poisson ouvre la bouche ?",
+    "a": "Les opercules s’abaissent."
+   },
+   "board": [
+    {
+     "h": "La branchie",
+     "lines": [
+      "Arc branchial + lames de filaments très irrigués"
+     ]
+    },
+    {
+     "h": "Mouvements",
+     "lines": [
+      "Bouche s’ouvre → opercules s’abaissent",
+      "Bouche se ferme → opercules se soulèvent"
+     ]
+    },
+    {
+     "h": "Échanges",
+     "lines": [
+      "L’eau apporte le O₂ dissous et emporte le CO₂"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Que se passe-t-il au niveau des opercules quand le poisson ouvre la bouche ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La respiration trachéenne du criquet",
+   "match": [
+    "Respiration trachéenne chez le criquet ou la mouche"
+   ],
+   "pages": [
+    102,
+    105
+   ],
+   "objectives": [
+    "Décrire les stigmates et les trachées.",
+    "Expliquer le rôle des mouvements de l’abdomen."
+   ],
+   "intro": "Je montre l’image d’un criquet et je demande : « Il n’a ni poumons ni branchies. Par où entre l’air ? »",
+   "summary": "Chez le criquet, l’air entre par des petits orifices visibles sur les côtés du corps : les stigmates. De chaque stigmate partent des tubes, les trachées, maintenues ouvertes par des spirales de chitine. De plus en plus ramifiées, elles conduisent l’air directement aux organes. La circulation de l’air est assurée par les mouvements rythmiques de l’abdomen : il se contracte pour rejeter l’air riche en CO₂ et se relâche pour faire entrer l’air riche en O₂.",
+   "points": [
+    "Stigmates : orifices respiratoires.",
+    "Trachées : tubes qui conduisent l’air aux organes.",
+    "Trachéoles : échanges gazeux.",
+    "Mouvements de l’abdomen."
+   ],
+   "application": {
+    "q": "Comment s’appellent les orifices respiratoires du criquet ?",
+    "a": "Les stigmates."
+   },
+   "board": [
+    {
+     "h": "Organes",
+     "lines": [
+      "Stigmates : orifices sur les côtés du corps",
+      "Trachées → trachéoles : conduisent l’air aux organes"
+     ]
+    },
+    {
+     "h": "Mouvements",
+     "lines": [
+      "L’abdomen se contracte : sortie de l’air",
+      "L’abdomen se relâche : entrée de l’air"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment s’appellent les orifices respiratoires du criquet ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La respiration cutanée de la grenouille",
+   "match": [
+    "Respiration cutanée chez la grenouille"
+   ],
+   "pages": [
+    105,
+    107
+   ],
+   "objectives": [
+    "Décrire la peau de la grenouille.",
+    "Expliquer la respiration cutanée."
+   ],
+   "intro": "Je demande : « La grenouille reste longtemps sous l’eau. Comment respire-t-elle ? »",
+   "summary": "La peau de la grenouille est fine et possède de nombreux petits vaisseaux sanguins. Hors de l’eau, elle respire par ses poumons et par sa peau. Dans l’eau, elle respire surtout par la peau : le dioxygène dissous passe à travers la peau dans le sang. En hiver, enfouie dans la vase, elle respire uniquement par la peau. La respiration cutanée complète la respiration pulmonaire.",
+   "points": [
+    "Peau fine, humide, richement vascularisée.",
+    "Dans l’eau : respiration surtout cutanée.",
+    "Hors de l’eau : poumons + peau.",
+    "En hiver : uniquement par la peau."
+   ],
+   "application": {
+    "q": "Pourquoi la peau de la grenouille permet-elle la respiration ?",
+    "a": "Parce qu’elle est fine et riche en vaisseaux sanguins."
+   },
+   "board": [
+    {
+     "h": "La peau",
+     "lines": [
+      "Fine – humide – riche en vaisseaux sanguins"
+     ]
+    },
+    {
+     "h": "Respiration",
+     "lines": [
+      "Dans l’eau : par la peau",
+      "Hors de l’eau : poumons + peau"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi la peau de la grenouille permet-elle la respiration ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Mise en évidence de la respiration des végétaux",
+   "match": [
+    "Respiration des végétaux : mise en évidence"
+   ],
+   "pages": [
+    116,
+    121
+   ],
+   "objectives": [
+    "Mettre en évidence la respiration d’une plante.",
+    "Savoir que tous les végétaux respirent."
+   ],
+   "intro": "Je demande : « Une plante respire-t-elle comme nous ? Comment le prouver ? »",
+   "summary": "La respiration est une fonction vitale commune aux animaux et aux végétaux : absorption de dioxygène et rejet de dioxyde de carbone. Elle a lieu le jour et la nuit. Le jour, les échanges de la photosynthèse masquent ceux de la respiration ; c’est pourquoi on place la plante à l’obscurité pour mettre en évidence sa respiration (l’eau de chaux se trouble). Les organes non chlorophylliens et les champignons respirent aussi.",
+   "points": [
+    "Respiration : absorption de O₂, rejet de CO₂.",
+    "Jour et nuit.",
+    "On place la plante à l’obscurité pour la mettre en évidence.",
+    "Végétaux chlorophylliens ou non, champignons."
+   ],
+   "application": {
+    "q": "Pourquoi place-t-on la plante à l’obscurité pour étudier sa respiration ?",
+    "a": "Parce que le jour, la photosynthèse masque les échanges de la respiration."
+   },
+   "board": [
+    {
+     "h": "La respiration",
+     "lines": [
+      "Absorption de dioxygène – rejet de dioxyde de carbone",
+      "Le jour et la nuit"
+     ]
+    },
+    {
+     "h": "Mise en évidence",
+     "lines": [
+      "Plante à l’obscurité + eau de chaux qui se trouble",
+      "Organes non chlorophylliens et champignons respirent aussi"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi place-t-on la plante à l’obscurité pour étudier sa respiration ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les stomates",
+   "match": [
+    "Stomates"
+   ],
+   "pages": [
+    122,
+    124
+   ],
+   "objectives": [
+    "Décrire la structure d’un stomate.",
+    "Expliquer son fonctionnement."
+   ],
+   "intro": "Je demande : « Par où les gaz entrent-ils et sortent-ils de la feuille ? »",
+   "summary": "Le stomate est une structure microscopique des feuilles. Il est formé de deux cellules de garde en forme de rein entourant un orifice, l’ostiole, par lequel passent les gaz et la vapeur d’eau. L’augmentation du volume des cellules de garde ouvre l’ostiole ; sa diminution le ferme. Les stomates permettent à la plante de réguler la respiration, la photosynthèse et la transpiration.",
+   "points": [
+    "Cellules de garde en forme de rein.",
+    "Ostiole : orifice central.",
+    "Cellules gonflées : ostiole ouvert.",
+    "Rôle : respiration, photosynthèse, transpiration."
+   ],
+   "application": {
+    "q": "Que se passe-t-il quand le volume des cellules de garde augmente ?",
+    "a": "L’ostiole s’ouvre."
+   },
+   "board": [
+    {
+     "h": "Structure",
+     "lines": [
+      "Deux cellules de garde – ostiole – cellules annexes"
+     ]
+    },
+    {
+     "h": "Fonctionnement",
+     "lines": [
+      "Volume augmente → ostiole ouvert",
+      "Volume diminue → ostiole fermé"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Que se passe-t-il quand le volume des cellules de garde augmente ?"
+     ]
+    }
+   ]
+  }
+ ]
+}

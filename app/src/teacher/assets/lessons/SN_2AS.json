@@ -1,0 +1,1582 @@
+{
+ "subject": "SN",
+ "level": "2AS",
+ "book": "books/SN_2AS.pdf",
+ "bookTitle": "Sciences de la Vie et de la Terre – 2AS",
+ "lessons": [
+  {
+   "title": "La reproduction : définition",
+   "match": [
+    "Reproduction : définition"
+   ],
+   "pages": [
+    9,
+    11
+   ],
+   "objectives": [
+    "Définir la reproduction.",
+    "Distinguer reproduction asexuée et sexuée."
+   ],
+   "intro": "Je demande : « Pourquoi les êtres vivants doivent-ils se reproduire ? »",
+   "summary": "La reproduction est une fonction vitale qui permet aux êtres vivants de former de nouveaux individus pour assurer la survie de leur espèce. Dans la reproduction asexuée, un seul individu donne naissance à des clones, sans cellules mâles et femelles. Dans la reproduction sexuée, un mâle et une femelle produisent des cellules reproductrices qui s’unissent lors de la fécondation.",
+   "points": [
+    "Reproduction : former de nouveaux individus.",
+    "Assure la survie de l’espèce.",
+    "Asexuée : un seul individu, des clones.",
+    "Sexuée : mâle + femelle, fécondation."
+   ],
+   "application": {
+    "q": "Quelle est la différence entre reproduction asexuée et sexuée ?",
+    "a": "L’asexuée fait intervenir un seul individu (clones) ; la sexuée un mâle et une femelle qui produisent des gamètes."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Fonction vitale : former de nouveaux individus",
+      "Assure la survie de l’espèce"
+     ]
+    },
+    {
+     "h": "Deux modes",
+     "lines": [
+      "Asexuée : un seul parent → clones",
+      "Sexuée : mâle + femelle → fécondation"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle est la différence entre reproduction asexuée et sexuée ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La reproduction asexuée chez les animaux",
+   "match": [
+    "Reproduction asexuée : division binaire (amibe, paramécie…)"
+   ],
+   "pages": [
+    11,
+    15
+   ],
+   "objectives": [
+    "Décrire la scissiparité.",
+    "Citer des exemples d’animaux à reproduction asexuée."
+   ],
+   "intro": "Je montre l’image d’une paramécie qui se divise et je demande : « Combien d’individus obtient-on ? »",
+   "summary": "La scissiparité (division binaire) est un mode de reproduction asexuée où le parent se scinde en deux individus de même taille, qui régénèrent la partie manquante. Elle ne fait intervenir ni gamètes ni fécondation et permet une multiplication rapide, sans diversité génétique. Elle est fréquente chez les protozoaires (amibe, paramécie). Le bourgeonnement s’observe chez l’hydre, les coraux et les éponges. Ces modes produisent des clones.",
+   "points": [
+    "Scissiparité : le parent se divise en deux.",
+    "Ni gamètes ni fécondation.",
+    "Exemples : amibe, paramécie.",
+    "Bourgeonnement : hydre, coraux, éponges.",
+    "Résultat : des clones."
+   ],
+   "application": {
+    "q": "Cite deux animaux qui se reproduisent par scissiparité.",
+    "a": "L’amibe et la paramécie."
+   },
+   "board": [
+    {
+     "h": "Scissiparité",
+     "lines": [
+      "Le parent se divise en deux individus identiques",
+      "Amibe, paramécie"
+     ]
+    },
+    {
+     "h": "Bourgeonnement",
+     "lines": [
+      "Hydre, coraux, éponges"
+     ]
+    },
+    {
+     "h": "Caractères",
+     "lines": [
+      "Ni gamètes ni fécondation – des clones"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux animaux qui se reproduisent par scissiparité."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La reproduction sexuée : gamètes et fécondation",
+   "match": [
+    "Reproduction sexuée : gamètes et fécondation"
+   ],
+   "pages": [
+    15,
+    17
+   ],
+   "objectives": [
+    "Comparer les gamètes mâle et femelle.",
+    "Définir la fécondation."
+   ],
+   "intro": "Je demande : « Pour avoir un poussin, faut-il un coq et une poule ? Pourquoi ? »",
+   "summary": "La reproduction sexuée nécessite un mâle et une femelle qui produisent des gamètes. Les spermatozoïdes sont petits, mobiles, nombreux et produits par les testicules ; les ovules sont gros, immobiles, peu nombreux et produits par les ovaires. La fécondation est la rencontre d’un spermatozoïde et d’un ovule : elle forme une cellule-œuf (zygote). Elle peut être interne ou externe. La reproduction sexuée entraîne une diversité génétique.",
+   "points": [
+    "Spermatozoïdes : petits, mobiles, nombreux (testicules).",
+    "Ovules : gros, immobiles, peu nombreux (ovaires).",
+    "Fécondation → cellule-œuf (zygote).",
+    "Interne ou externe."
+   ],
+   "application": {
+    "q": "Où sont produits les spermatozoïdes et les ovules ?",
+    "a": "Les spermatozoïdes dans les testicules, les ovules dans les ovaires."
+   },
+   "board": [
+    {
+     "h": "Les gamètes",
+     "lines": [
+      "Spermatozoïde : petit, mobile, nombreux – testicules",
+      "Ovule : gros, immobile, peu nombreux – ovaires"
+     ]
+    },
+    {
+     "h": "La fécondation",
+     "lines": [
+      "Spermatozoïde + ovule → cellule-œuf (zygote)",
+      "Interne ou externe"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Où sont produits les spermatozoïdes et les ovules ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le mode ovipare : la poule et la grenouille",
+   "match": [
+    "Modes de reproduction : ovipare"
+   ],
+   "pages": [
+    17,
+    25
+   ],
+   "objectives": [
+    "Décrire la reproduction de la poule.",
+    "Décrire la reproduction et la métamorphose de la grenouille."
+   ],
+   "intro": "Je montre un œuf et je demande : « D’où vient le poussin qui sort de cet œuf ? »",
+   "summary": "Chez la poule, la fécondation est interne et a lieu dans l’oviducte. L’ovule fécondé (le jaune) s’entoure du blanc, de membranes et d’une coquille, puis l’œuf est pondu. L’incubation dure 21 jours ; l’embryon se nourrit des réserves de l’œuf et se développe grâce à la chaleur de la couvaison. Chez la grenouille, la femelle pond des œufs dans l’eau et le mâle les féconde : la fécondation est externe. Les œufs donnent des têtards qui subissent une métamorphose et deviennent de jeunes grenouilles.",
+   "points": [
+    "Ovipare : la femelle pond des œufs.",
+    "Poule : fécondation interne, incubation 21 jours.",
+    "Grenouille : fécondation externe dans l’eau.",
+    "Têtard → métamorphose → grenouille."
+   ],
+   "application": {
+    "q": "La fécondation chez la grenouille est-elle interne ou externe ? Justifie.",
+    "a": "Externe : le mâle libère son sperme sur les œufs pondus dans l’eau."
+   },
+   "board": [
+    {
+     "h": "La poule",
+     "lines": [
+      "Fécondation interne dans l’oviducte",
+      "Jaune + blanc + coquille → œuf pondu",
+      "Incubation : 21 jours"
+     ]
+    },
+    {
+     "h": "La grenouille",
+     "lines": [
+      "Fécondation externe dans l’eau",
+      "Œuf → têtard → métamorphose → jeune grenouille"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "La fécondation chez la grenouille est-elle interne ou externe ? Justifie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les modes vivipare et ovovivipare",
+   "match": [
+    "Modes de reproduction : vivipare, ovovivipare"
+   ],
+   "pages": [
+    26,
+    31
+   ],
+   "objectives": [
+    "Décrire la reproduction d’un vivipare (la vache).",
+    "Décrire la reproduction d’un ovovivipare (le serpent)."
+   ],
+   "intro": "Je demande : « La vache pond-elle des œufs ? Comment naît le veau ? »",
+   "summary": "Chez les vivipares comme la vache, la fécondation est interne ; l’embryon se développe dans l’utérus de la mère : c’est la gestation. La femelle donne naissance à un petit déjà formé. Chez les ovovivipares comme certains serpents, la fécondation est aussi interne, mais les œufs restent dans l’oviducte de la femelle et éclosent dans son ventre : les petits naissent déjà formés, mais les échanges avec la mère sont limités.",
+   "points": [
+    "Vivipare : gestation dans l’utérus (vache).",
+    "Naissance d’un petit formé.",
+    "Ovovivipare : œufs gardés dans l’oviducte (serpent).",
+    "Les œufs éclosent dans le corps de la femelle."
+   ],
+   "application": {
+    "q": "Quelle est la différence entre un vivipare et un ovovivipare ?",
+    "a": "Chez le vivipare, l’embryon se développe dans l’utérus ; chez l’ovovivipare, il se développe dans un œuf gardé dans le corps de la femelle."
+   },
+   "board": [
+    {
+     "h": "Vivipare : la vache",
+     "lines": [
+      "Fécondation interne",
+      "Gestation dans l’utérus → petit déjà formé"
+     ]
+    },
+    {
+     "h": "Ovovivipare : le serpent",
+     "lines": [
+      "Fécondation interne",
+      "Œufs gardés dans l’oviducte, éclosion dans le ventre"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle est la différence entre un vivipare et un ovovivipare ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La reproduction asexuée des végétaux",
+   "match": [
+    "Reproduction asexuée des végétaux : bourgeonnement, bouturage, marcottage, greffage"
+   ],
+   "pages": [
+    37,
+    43
+   ],
+   "objectives": [
+    "Décrire le marcottage, le bouturage, le greffage et le bourgeonnement."
+   ],
+   "intro": "Je montre une tige plantée dans la terre et je demande : « Peut-elle donner une nouvelle plante sans graine ? »",
+   "summary": "La reproduction asexuée (multiplication végétative) se fait à partir des organes végétatifs de la plante mère. Le marcottage : une partie de la plante forme des racines avant d’être séparée (la marcotte). Le bouturage : on plante un fragment (tige, feuille ou racine) dans un milieu favorable (ex. figuier). Le greffage : on soude un greffon sur un porte-greffe qui lui fournit la sève et les racines. Le bourgeonnement : un bourgeon donne un nouvel individu (pomme de terre, oignon, cactus). Les nouvelles plantes sont identiques à la plante mère.",
+   "points": [
+    "Marcottage : racines avant séparation.",
+    "Bouturage : fragment planté.",
+    "Greffage : greffon + porte-greffe.",
+    "Bourgeonnement : pomme de terre, oignon.",
+    "Plantes identiques à la plante mère."
+   ],
+   "application": {
+    "q": "Qu’est-ce que le greffage ?",
+    "a": "C’est souder une portion de plante (greffon) sur une autre plante (porte-greffe) qui lui fournit la sève."
+   },
+   "board": [
+    {
+     "h": "Techniques",
+     "lines": [
+      "Marcottage : la marcotte s’enracine avant d’être séparée",
+      "Bouturage : fragment de tige, feuille ou racine planté",
+      "Greffage : greffon soudé sur un porte-greffe",
+      "Bourgeonnement : pomme de terre, oignon, cactus"
+     ]
+    },
+    {
+     "h": "Résultat",
+     "lines": [
+      "Plantes génétiquement identiques à la plante mère"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Qu’est-ce que le greffage ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’organisation de la fleur",
+   "match": [
+    "Plante à fleurs : organisation de la fleur"
+   ],
+   "pages": [
+    43,
+    44
+   ],
+   "objectives": [
+    "Identifier les pièces de la fleur."
+   ],
+   "intro": "Je montre une fleur et je demande : « Quelles parties pouvez-vous reconnaître ? »",
+   "summary": "La fleur est l’organe reproducteur des plantes à fleurs. Elle est formée de quatre types de pièces en cercles : les sépales (calice), les pétales (corolle) qui attirent les pollinisateurs, les étamines (organes mâles : anthère qui produit le pollen + filet), et le pistil (organe femelle : stigmate, style et ovaire contenant les ovules). Calice et corolle forment le périanthe.",
+   "points": [
+    "Sépales → calice.",
+    "Pétales → corolle.",
+    "Étamines : anthère + filet (pollen).",
+    "Pistil : stigmate + style + ovaire (ovules)."
+   ],
+   "application": {
+    "q": "Quel est l’organe mâle de la fleur ? Que produit-il ?",
+    "a": "L’étamine ; son anthère produit le pollen."
+   },
+   "board": [
+    {
+     "h": "Pièces protectrices",
+     "lines": [
+      "Sépales (calice) – pétales (corolle)"
+     ]
+    },
+    {
+     "h": "Pièces reproductrices",
+     "lines": [
+      "Étamines (mâles) : anthère + filet → pollen",
+      "Pistil (femelle) : stigmate + style + ovaire → ovules"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel est l’organe mâle de la fleur ? Que produit-il ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La pollinisation",
+   "match": [
+    "Pollinisation (définition et modes)"
+   ],
+   "pages": [
+    45,
+    46
+   ],
+   "objectives": [
+    "Définir la pollinisation.",
+    "Distinguer ses modes et ses agents."
+   ],
+   "intro": "Je demande : « Pourquoi voit-on les abeilles se poser sur les fleurs ? »",
+   "summary": "La pollinisation a lieu quand la fleur s’épanouit : les anthères s’ouvrent et libèrent les grains de pollen. L’autopollinisation (directe) : la fleur est fécondée par son propre pollen. La pollinisation croisée (indirecte) : par le pollen d’une autre plante. Elle peut être assurée par le vent, les insectes (abeilles, papillons), l’eau ou d’autres animaux.",
+   "points": [
+    "Libération du pollen par les anthères.",
+    "Autopollinisation : pollen de la même fleur.",
+    "Pollinisation croisée : pollen d’une autre plante.",
+    "Agents : vent, insectes, eau, animaux."
+   ],
+   "application": {
+    "q": "Cite deux agents de la pollinisation.",
+    "a": "Le vent et les insectes (abeilles, papillons)."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Transport du pollen des anthères vers le stigmate"
+     ]
+    },
+    {
+     "h": "Modes",
+     "lines": [
+      "Autopollinisation (directe)",
+      "Pollinisation croisée (indirecte)"
+     ]
+    },
+    {
+     "h": "Agents",
+     "lines": [
+      "Vent – insectes – eau – autres animaux"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux agents de la pollinisation."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gamètes et fécondation chez les plantes à fleurs",
+   "match": [
+    "Gamètes et fécondation chez la plante à fleurs"
+   ],
+   "pages": [
+    46,
+    47
+   ],
+   "objectives": [
+    "Identifier les gamètes de la plante à fleurs.",
+    "Expliquer la formation de la graine."
+   ],
+   "intro": "Je demande : « D’où vient la graine qu’on trouve dans un fruit ? »",
+   "summary": "La formation des graines résulte de la fécondation : l’union d’un gamète mâle (anthérozoïde, provenant du grain de pollen) et d’un gamète femelle (oosphère, situé dans l’ovule). L’œuf qui en résulte donne le germe de la graine, qui deviendra la nouvelle plante.",
+   "points": [
+    "Gamète mâle : anthérozoïde (grain de pollen).",
+    "Gamète femelle : oosphère (ovule).",
+    "Fécondation → œuf → germe de la graine."
+   ],
+   "application": {
+    "q": "Comment s’appelle le gamète femelle chez la plante à fleurs ? Où se trouve-t-il ?",
+    "a": "L’oosphère ; elle se trouve dans l’ovule."
+   },
+   "board": [
+    {
+     "h": "Les gamètes",
+     "lines": [
+      "Mâle : anthérozoïde (dans le grain de pollen)",
+      "Femelle : oosphère (dans l’ovule)"
+     ]
+    },
+    {
+     "h": "La fécondation",
+     "lines": [
+      "Anthérozoïde + oosphère → œuf → germe de la graine"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment s’appelle le gamète femelle chez la plante à fleurs ? Où se trouve-t-il ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Plante sans fleurs : le Fucus",
+   "match": [
+    "Plante sans fleurs : étude du Fucus"
+   ],
+   "pages": [
+    47,
+    48
+   ],
+   "objectives": [
+    "Décrire la reproduction sexuée du Fucus."
+   ],
+   "intro": "Je montre l’image d’une algue brune et je demande : « Elle n’a pas de fleurs. Comment se reproduit-elle ? »",
+   "summary": "Il existe des pieds mâles et des pieds femelles de Fucus. En période de reproduction apparaissent des conceptacles contenant des capsules de gamètes : les anthéridies des mâles contiennent 64 anthérozoïdes à deux flagelles, les oogones des femelles contiennent 8 oosphères. Au printemps, les gamètes sont libérés et se rencontrent dans l’eau de mer : la fécondation est externe. Le zygote donne un nouveau Fucus.",
+   "points": [
+    "Pieds mâles et pieds femelles.",
+    "Conceptacles.",
+    "Anthéridies : 64 anthérozoïdes ; oogones : 8 oosphères.",
+    "Fécondation externe dans l’eau de mer."
+   ],
+   "application": {
+    "q": "La fécondation du Fucus est-elle interne ou externe ?",
+    "a": "Externe : les gamètes se rencontrent dans l’eau de mer."
+   },
+   "board": [
+    {
+     "h": "Organes",
+     "lines": [
+      "Conceptacles",
+      "Anthéridies (mâles) : 64 anthérozoïdes",
+      "Oogones (femelles) : 8 oosphères"
+     ]
+    },
+    {
+     "h": "Fécondation",
+     "lines": [
+      "Externe, dans l’eau de mer → zygote → nouveau Fucus"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "La fécondation du Fucus est-elle interne ou externe ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La composition du sang",
+   "match": [
+    "Composition du sang : globules rouges et blancs, plaquettes, plasma"
+   ],
+   "pages": [
+    57,
+    60
+   ],
+   "objectives": [
+    "Citer les constituants du sang et leurs rôles."
+   ],
+   "intro": "Je demande : « Quand on se coupe, du sang coule. De quoi est-il composé ? »",
+   "summary": "Le sang est un tissu liquide formé du plasma (55 %) et des éléments figurés (45 %). Les globules rouges (hématies) transportent l’oxygène, les globules blancs (leucocytes) défendent l’organisme et les plaquettes interviennent dans la coagulation. Le plasma contient de l’eau, des sels minéraux, des protéines, des substances nutritives et des déchets ; il les transporte vers les organes. En l’absence d’anticoagulant, le sang forme un caillot et un sérum.",
+   "points": [
+    "Plasma : 55 % ; éléments figurés : 45 %.",
+    "Globules rouges : transport de l’oxygène.",
+    "Globules blancs : défense.",
+    "Plaquettes : coagulation."
+   ],
+   "application": {
+    "q": "Quel est le rôle des globules blancs ? Et des plaquettes ?",
+    "a": "Les globules blancs défendent l’organisme ; les plaquettes interviennent dans la coagulation."
+   },
+   "board": [
+    {
+     "h": "Éléments figurés (45 %)",
+     "lines": [
+      "Globules rouges : transportent l’oxygène",
+      "Globules blancs : défendent l’organisme",
+      "Plaquettes : coagulation"
+     ]
+    },
+    {
+     "h": "Plasma (55 %)",
+     "lines": [
+      "Eau, sels minéraux, protéines, nutriments, déchets"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel est le rôle des globules blancs ? Et des plaquettes ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les groupes sanguins",
+   "match": [
+    "Groupes sanguins"
+   ],
+   "pages": [
+    61,
+    62
+   ],
+   "objectives": [
+    "Citer les groupes sanguins.",
+    "Connaître le donneur et le receveur universels."
+   ],
+   "intro": "Je demande : « Pourquoi le médecin demande-t-il le groupe sanguin avant une transfusion ? »",
+   "summary": "Il existe quatre groupes sanguins : A, B, AB et O, selon la présence ou l’absence des antigènes A et B sur les globules rouges. Le groupe AB n’a pas d’anticorps : c’est le receveur universel. Le groupe O n’a pas d’antigènes : c’est le donneur universel. Le facteur Rhésus complète la classification (Rh+ ou Rh−). La compatibilité est essentielle lors des transfusions.",
+   "points": [
+    "Quatre groupes : A, B, AB, O.",
+    "AB : receveur universel.",
+    "O : donneur universel.",
+    "Rhésus : Rh+ ou Rh−."
+   ],
+   "application": {
+    "q": "Quel groupe est donneur universel ? Lequel est receveur universel ?",
+    "a": "Le groupe O est donneur universel ; le groupe AB est receveur universel."
+   },
+   "board": [
+    {
+     "h": "Groupes ABO",
+     "lines": [
+      "A : antigène A – B : antigène B",
+      "AB : antigènes A et B → receveur universel",
+      "O : sans antigène → donneur universel"
+     ]
+    },
+    {
+     "h": "Rhésus",
+     "lines": [
+      "Rh+ : antigène D présent – Rh− : absent"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel groupe est donneur universel ? Lequel est receveur universel ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le cœur et l’appareil circulatoire",
+   "match": [
+    "Anatomie du cœur",
+    "Appareil circulatoire : grande et petite circulation, artères et veines"
+   ],
+   "pages": [
+    62,
+    69
+   ],
+   "objectives": [
+    "Décrire l’anatomie du cœur.",
+    "Connaître le sens de la circulation et les types de vaisseaux.",
+    "Distinguer la grande et la petite circulation."
+   ],
+   "intro": "Je demande aux élèves de poser la main sur la poitrine : « Qu’est-ce qui bat ? À quoi sert-il ? »",
+   "summary": "Le cœur est un muscle (myocarde) formé de deux oreillettes en haut et de deux ventricules en bas. Le cœur droit contient du sang riche en CO₂, le cœur gauche du sang riche en O₂ ; les deux moitiés ne communiquent pas. Le sang circule toujours dans le sens : veines → oreillettes → ventricules → artères, grâce aux valvules. Les artères vont du cœur vers les organes, les veines des organes vers le cœur. La grande circulation va du ventricule gauche aux organes puis à l’oreillette droite ; la petite circulation va du ventricule droit aux poumons puis à l’oreillette gauche.",
+   "points": [
+    "Deux oreillettes, deux ventricules.",
+    "Cœur droit : sang riche en CO₂ ; cœur gauche : riche en O₂.",
+    "Veines → oreillettes → ventricules → artères.",
+    "Artères : du cœur vers les organes ; veines : vers le cœur.",
+    "Grande circulation et petite circulation."
+   ],
+   "application": {
+    "q": "Quel est le trajet de la petite circulation ?",
+    "a": "Du ventricule droit, par l’artère pulmonaire, aux poumons, puis retour à l’oreillette gauche par les veines pulmonaires."
+   },
+   "board": [
+    {
+     "h": "Le cœur",
+     "lines": [
+      "2 oreillettes (haut) + 2 ventricules (bas)",
+      "Cœur droit : sang riche en CO₂ – cœur gauche : sang riche en O₂"
+     ]
+    },
+    {
+     "h": "Sens de la circulation",
+     "lines": [
+      "Veines → oreillettes → ventricules → artères (valvules)",
+      "Artères : cœur → organes – veines : organes → cœur"
+     ]
+    },
+    {
+     "h": "Deux circulations",
+     "lines": [
+      "Grande : ventricule gauche → organes → oreillette droite",
+      "Petite : ventricule droit → poumons → oreillette gauche"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel est le trajet de la petite circulation ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’activité spontanée du cœur",
+   "match": [
+    "Activité spontanée du cœur : cardiographe, révolution cardiaque"
+   ],
+   "pages": [
+    70,
+    72
+   ],
+   "objectives": [
+    "Définir l’automatisme cardiaque.",
+    "Décrire les phases de la révolution cardiaque."
+   ],
+   "intro": "Je demande : « Le cœur bat même pendant le sommeil. Qui le commande ? »",
+   "summary": "Le cœur se contracte de façon spontanée et rythmée, même isolé : c’est l’automatisme cardiaque. La révolution cardiaque comprend trois phases : la systole auriculaire (les oreillettes se contractent et chassent le sang vers les ventricules), la systole ventriculaire (les ventricules se contractent et propulsent le sang dans les artères) et la diastole générale (relâchement : le sang remplit les oreillettes). La fréquence cardiaque est d’environ 70 battements par minute au repos chez l’adulte.",
+   "points": [
+    "Automatisme cardiaque.",
+    "Systole auriculaire.",
+    "Systole ventriculaire.",
+    "Diastole générale.",
+    "Environ 70 battements/minute au repos."
+   ],
+   "application": {
+    "q": "Cite dans l’ordre les trois phases de la révolution cardiaque.",
+    "a": "Systole auriculaire, systole ventriculaire, diastole générale."
+   },
+   "board": [
+    {
+     "h": "Automatisme",
+     "lines": [
+      "Le cœur se contracte seul, de façon rythmée"
+     ]
+    },
+    {
+     "h": "Révolution cardiaque",
+     "lines": [
+      "Systole auriculaire : oreillettes → ventricules",
+      "Systole ventriculaire : ventricules → artères",
+      "Diastole générale : relâchement, remplissage"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite dans l’ordre les trois phases de la révolution cardiaque."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hygiène de l’appareil circulatoire",
+   "match": [
+    "Hygiène de l’appareil circulatoire"
+   ],
+   "pages": [
+    75,
+    77
+   ],
+   "objectives": [
+    "Citer les facteurs défavorables au cœur.",
+    "Proposer des mesures d’hygiène."
+   ],
+   "intro": "Je demande : « Pourquoi dit-on que le tabac est mauvais pour le cœur ? »",
+   "summary": "Les facteurs défavorables à l’appareil circulatoire sont le tabagisme, la sédentarité, une alimentation trop riche en graisses et en sel, l’excès de sucre (obésité, diabète) et le stress. Plus on fume, plus le risque de maladies cardiovasculaires augmente. Pour préserver l’appareil circulatoire : pratiquer une activité physique régulière, manger sainement, ne pas fumer, limiter le stress et bien dormir.",
+   "points": [
+    "Facteurs : tabac, sédentarité, graisses et sel, sucre, stress.",
+    "Plus on fume, plus le risque augmente.",
+    "Activité physique, alimentation saine.",
+    "Ne pas fumer, bien dormir."
+   ],
+   "application": {
+    "q": "Cite deux facteurs défavorables au cœur et deux mesures d’hygiène.",
+    "a": "Le tabagisme et la sédentarité ; faire du sport et ne pas fumer."
+   },
+   "board": [
+    {
+     "h": "Facteurs défavorables",
+     "lines": [
+      "Tabagisme – sédentarité",
+      "Excès de graisses, de sel, de sucre – stress"
+     ]
+    },
+    {
+     "h": "Mesures d’hygiène",
+     "lines": [
+      "Activité physique régulière – manger sainement",
+      "Ne pas fumer – limiter le stress, bien dormir"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux facteurs défavorables au cœur et deux mesures d’hygiène."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La composition de l’urine",
+   "match": [
+    "Composition de l’urine"
+   ],
+   "pages": [
+    87,
+    91
+   ],
+   "objectives": [
+    "Citer les constituants normaux et anormaux de l’urine."
+   ],
+   "intro": "Je demande : « Pourquoi le médecin demande-t-il parfois une analyse d’urine ? »",
+   "summary": "Les constituants normaux de l’urine sont l’eau, les sels minéraux et des constituants organiques, notamment l’urée et l’acide urique. L’urée est un déchet provenant des protéines, transporté par le sang. Les constituants anormaux sont le glucose (signe de diabète), l’albumine (albuminurie), des cristaux, des globules et des pigments biliaires : ils peuvent signaler une maladie.",
+   "points": [
+    "Normaux : eau, sels minéraux, urée, acide urique.",
+    "L’urée provient des protéines.",
+    "Anormaux : glucose (diabète), albumine.",
+    "Analyses fréquentes : albumine et glucose."
+   ],
+   "application": {
+    "q": "Que signifie la présence de glucose dans l’urine ?",
+    "a": "Elle indique le diabète."
+   },
+   "board": [
+    {
+     "h": "Constituants normaux",
+     "lines": [
+      "Eau – sels minéraux – urée – acide urique"
+     ]
+    },
+    {
+     "h": "Constituants anormaux",
+     "lines": [
+      "Glucose → diabète",
+      "Albumine → albuminurie",
+      "Cristaux, globules, pigments biliaires"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Que signifie la présence de glucose dans l’urine ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’appareil urinaire",
+   "match": [
+    "Organisation de l’appareil urinaire"
+   ],
+   "pages": [
+    83,
+    87
+   ],
+   "objectives": [
+    "Identifier les organes de l’appareil urinaire."
+   ],
+   "intro": "Je demande : « Quel chemin suit l’urine avant de sortir du corps ? »",
+   "summary": "L’appareil urinaire assure la formation, le stockage et l’élimination de l’urine. Il comprend deux reins en forme de haricot et les voies urinaires : deux uretères qui conduisent l’urine des reins à la vessie, la vessie qui est le réservoir d’urine, et l’urètre qui évacue l’urine vers l’extérieur.",
+   "points": [
+    "Deux reins en forme de haricot.",
+    "Deux uretères : reins → vessie.",
+    "Vessie : réservoir.",
+    "Urètre : évacuation."
+   ],
+   "application": {
+    "q": "Quel organe conduit l’urine du rein à la vessie ?",
+    "a": "L’uretère."
+   },
+   "board": [
+    {
+     "h": "Les reins",
+     "lines": [
+      "Deux reins en forme de haricot – fabriquent l’urine"
+     ]
+    },
+    {
+     "h": "Les voies urinaires",
+     "lines": [
+      "Uretères : reins → vessie",
+      "Vessie : réservoir – urètre : évacuation"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel organe conduit l’urine du rein à la vessie ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le néphron",
+   "match": [
+    "Coupe de rein : les néphrons"
+   ],
+   "pages": [
+    83,
+    87
+   ],
+   "objectives": [
+    "Décrire la structure du néphron."
+   ],
+   "intro": "Je montre une coupe de rein et je demande : « Où l’urine est-elle fabriquée ? »",
+   "summary": "Le néphron est l’unité de base du rein. Il est composé du corpuscule rénal (glomérule + capsule de Bowman) et d’un système tubulaire (tube contourné proximal, anse de Henlé, tube contourné distal), qui se termine dans un tube collecteur. Le hile du rein laisse passer l’artère et la veine rénales et les conduits excréteurs.",
+   "points": [
+    "Néphron : unité de base du rein.",
+    "Corpuscule rénal : glomérule + capsule de Bowman.",
+    "Tubes : contourné proximal, anse de Henlé, contourné distal.",
+    "Tube collecteur."
+   ],
+   "application": {
+    "q": "Cite les deux parties du corpuscule rénal.",
+    "a": "Le glomérule et la capsule de Bowman."
+   },
+   "board": [
+    {
+     "h": "Le néphron",
+     "lines": [
+      "Unité de base du rein"
+     ]
+    },
+    {
+     "h": "Structure",
+     "lines": [
+      "Corpuscule rénal : glomérule + capsule de Bowman",
+      "Tube contourné proximal → anse de Henlé → tube contourné distal → tube collecteur"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les deux parties du corpuscule rénal."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les fonctions du rein",
+   "match": [
+    "Fonctions du rein : filtration, réabsorption, sécrétion"
+   ],
+   "pages": [
+    91,
+    97
+   ],
+   "objectives": [
+    "Expliquer la formation de l’urine.",
+    "Citer les fonctions du rein."
+   ],
+   "intro": "Je demande : « L’urine vient du sang. Comment le rein la fabrique-t-il ? »",
+   "summary": "L’urine est fabriquée par les reins à partir du sang. Dans les glomérules, le sang est filtré : l’eau, les déchets et certaines substances forment l’urine primitive. Les éléments utiles sont ensuite réabsorbés par les tubules et les déchets sont concentrés : c’est l’urine définitive, formée après filtration, réabsorption puis sécrétion. Elle ne contient ni protéines ni glucose. Les reins épurent le sang et maintiennent la constance du milieu intérieur.",
+   "points": [
+    "Filtration dans le glomérule → urine primitive.",
+    "Réabsorption des éléments utiles.",
+    "Sécrétion → urine définitive.",
+    "Les reins épurent le sang."
+   ],
+   "application": {
+    "q": "Comment s’appelle le liquide obtenu après la filtration du sang ?",
+    "a": "L’urine primitive."
+   },
+   "board": [
+    {
+     "h": "Formation de l’urine",
+     "lines": [
+      "Filtration (glomérule) → urine primitive",
+      "Réabsorption des éléments utiles",
+      "Sécrétion → urine définitive"
+     ]
+    },
+    {
+     "h": "Rôles du rein",
+     "lines": [
+      "Épurer le sang",
+      "Maintenir la constance du milieu intérieur"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment s’appelle le liquide obtenu après la filtration du sang ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Hygiène de l’appareil urinaire",
+   "match": [
+    "Hygiène de l’appareil urinaire"
+   ],
+   "pages": [
+    98,
+    100
+   ],
+   "objectives": [
+    "Proposer des mesures d’hygiène pour les reins."
+   ],
+   "intro": "Je demande : « Pourquoi faut-il boire assez d’eau chaque jour ? »",
+   "summary": "Le mauvais fonctionnement des reins peut causer l’accumulation de déchets toxiques dans le sang. Pour préserver les reins, il faut boire suffisamment d’eau pour éviter les calculs et les infections, éviter les excès de protides, de sucre, de sel et de médicaments, uriner régulièrement, avoir une bonne hygiène intime et limiter la fatigue excessive.",
+   "points": [
+    "Boire suffisamment d’eau.",
+    "Éviter les excès de sel, de sucre, de médicaments.",
+    "Uriner régulièrement.",
+    "Bonne hygiène intime."
+   ],
+   "application": {
+    "q": "Cite deux mesures pour protéger les reins.",
+    "a": "Boire suffisamment d’eau et éviter l’excès de sel."
+   },
+   "board": [
+    {
+     "h": "Risques",
+     "lines": [
+      "Accumulation de déchets toxiques – calculs – infections"
+     ]
+    },
+    {
+     "h": "Mesures d’hygiène",
+     "lines": [
+      "Boire suffisamment d’eau – uriner régulièrement",
+      "Éviter les excès de sel, de sucre, de médicaments",
+      "Bonne hygiène intime"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux mesures pour protéger les reins."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Exemples d’écosystèmes",
+   "match": [
+    "Exemples d’écosystèmes : terrestres et océaniques"
+   ],
+   "pages": [
+    107,
+    112
+   ],
+   "objectives": [
+    "Définir un écosystème terrestre et océanique.",
+    "Citer les composantes de la biocénose."
+   ],
+   "intro": "Je demande : « Dans une forêt, qui vit avec qui ? De quoi dépendent-ils ? »",
+   "summary": "Un écosystème est formé d’un biotope (milieu physique : air, lumière, sol, eau) et d’une biocénose (êtres vivants qui interagissent). La biocénose comprend les producteurs (plantes vertes), les consommateurs (herbivores, carnivores, omnivores) et les décomposeurs (champignons, vers, bactéries). Le soleil est la source principale d’énergie. L’écosystème océanique est un milieu marin d’eau salée qui joue un rôle dans la régulation du climat et la production d’oxygène.",
+   "points": [
+    "Écosystème = biotope + biocénose.",
+    "Producteurs, consommateurs, décomposeurs.",
+    "Le soleil : source d’énergie.",
+    "Écosystèmes terrestres et océaniques."
+   ],
+   "application": {
+    "q": "Cite les trois catégories d’êtres vivants d’une biocénose.",
+    "a": "Les producteurs, les consommateurs et les décomposeurs."
+   },
+   "board": [
+    {
+     "h": "Écosystème",
+     "lines": [
+      "Biotope (milieu physique) + biocénose (êtres vivants)"
+     ]
+    },
+    {
+     "h": "Biocénose",
+     "lines": [
+      "Producteurs : plantes vertes",
+      "Consommateurs : herbivores, carnivores, omnivores",
+      "Décomposeurs : champignons, vers, bactéries"
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Terrestres : forêts, déserts, prairies – océaniques : milieu marin"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les trois catégories d’êtres vivants d’une biocénose."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les aires protégées : PNBA et Diawling",
+   "match": [
+    "Aires protégées : PNBA, Parc National de Diawling"
+   ],
+   "pages": [
+    112,
+    115
+   ],
+   "objectives": [
+    "Présenter le Parc National du Banc d’Arguin et le Parc National du Diawling."
+   ],
+   "intro": "Je demande : « Connaissez-vous un parc national en Mauritanie ? Pourquoi le protège-t-on ? »",
+   "summary": "Le Parc National du Banc d’Arguin (PNBA), créé en 1976, couvre 12 000 km², soit un tiers du littoral mauritanien. Classé site RAMSAR et Patrimoine mondial, il abrite une biodiversité exceptionnelle (poissons, oiseaux migrateurs) ; c’est la zone de pêche traditionnelle des Imraguen. Le Parc National du Diawling, créé en 1991 dans le bas delta du fleuve Sénégal, couvre 16 000 hectares ; il vise à restaurer l’écosystème, soutenir la pêche et l’élevage et préserver la biodiversité.",
+   "points": [
+    "PNBA : 1976, 12 000 km², un tiers du littoral.",
+    "Site RAMSAR, Patrimoine mondial.",
+    "Imraguen : pêche traditionnelle.",
+    "Diawling : 1991, bas delta du fleuve Sénégal, 16 000 ha."
+   ],
+   "application": {
+    "q": "En quelle année a été créé le PNBA ? Quelle communauté y pêche ?",
+    "a": "En 1976 ; les Imraguen."
+   },
+   "board": [
+    {
+     "h": "Banc d’Arguin (PNBA)",
+     "lines": [
+      "Créé en 1976 – 12 000 km² – 1/3 du littoral",
+      "Site RAMSAR, Patrimoine mondial – pêche des Imraguen"
+     ]
+    },
+    {
+     "h": "Diawling (PND)",
+     "lines": [
+      "Créé en 1991 – bas delta du fleuve Sénégal – 16 000 ha",
+      "Restaurer l’écosystème, préserver la biodiversité"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "En quelle année a été créé le PNBA ? Quelle communauté y pêche ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les zones humides : les lacs d’Aleg et de Mâl",
+   "match": [
+    "Zones humides : définition, importance, exemple"
+   ],
+   "pages": [
+    115,
+    117
+   ],
+   "objectives": [
+    "Présenter un exemple de zone humide.",
+    "Citer son importance."
+   ],
+   "intro": "Je demande : « Que se passe-t-il dans certaines dépressions pendant la saison des pluies ? »",
+   "summary": "Les lacs d’Aleg et de Mâl sont deux zones humides temporaires du Brakna. Ils se remplissent surtout pendant la saison des pluies. Ils attirent des oiseaux d’eau migrateurs, servent à l’abreuvement du bétail et permettent l’agriculture, l’élevage et la pêche artisanale. Ils contribuent à maintenir la biodiversité locale et à soutenir les communautés rurales ; ils sont sensibles aux changements climatiques et à la pression humaine.",
+   "points": [
+    "Lacs d’Aleg et de Mâl (Brakna) : zones humides temporaires.",
+    "Remplis pendant la saison des pluies.",
+    "Oiseaux migrateurs, bétail, agriculture, pêche.",
+    "Fragiles : climat et pression humaine."
+   ],
+   "application": {
+    "q": "Cite deux utilisations du lac d’Aleg par les populations.",
+    "a": "L’abreuvement du bétail et l’agriculture en saison humide."
+   },
+   "board": [
+    {
+     "h": "Exemple",
+     "lines": [
+      "Lacs d’Aleg et de Mâl (Brakna) – zones humides temporaires"
+     ]
+    },
+    {
+     "h": "Importance",
+     "lines": [
+      "Biodiversité : oiseaux d’eau migrateurs",
+      "Élevage, agriculture, pêche artisanale"
+     ]
+    },
+    {
+     "h": "Menaces",
+     "lines": [
+      "Changements climatiques – pression humaine"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite deux utilisations du lac d’Aleg par les populations."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les chaînes alimentaires",
+   "match": [
+    "Chaînes alimentaires : définition, maillons, exemple"
+   ],
+   "pages": [
+    117,
+    119
+   ],
+   "objectives": [
+    "Définir une chaîne alimentaire.",
+    "Identifier ses maillons."
+   ],
+   "intro": "Je demande : « L’herbe, la gazelle, le lion : qui mange qui ? »",
+   "summary": "Une chaîne alimentaire est une suite d’êtres vivants dans laquelle chacun se nourrit du précédent et sert de nourriture au suivant. Ses maillons sont : les producteurs (plantes vertes), les consommateurs primaires (herbivores), secondaires (carnivores qui mangent les herbivores) et tertiaires (grands prédateurs), et les décomposeurs (champignons, bactéries, vers) qui transforment les déchets en matière minérale.",
+   "points": [
+    "Chacun mange le précédent.",
+    "Producteurs : plantes vertes.",
+    "Consommateurs primaires, secondaires, tertiaires.",
+    "Décomposeurs."
+   ],
+   "application": {
+    "q": "Dans la chaîne herbe → gazelle → lion, quel est le consommateur primaire ?",
+    "a": "La gazelle."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Suite d’êtres vivants : chacun mange le précédent"
+     ]
+    },
+    {
+     "h": "Maillons",
+     "lines": [
+      "Producteurs : plantes vertes",
+      "Consommateurs : primaires (herbivores), secondaires, tertiaires",
+      "Décomposeurs : champignons, bactéries, vers"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Dans la chaîne herbe → gazelle → lion, quel est le consommateur primaire ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les réseaux trophiques et les interactions",
+   "match": [
+    "Notion de réseau trophique"
+   ],
+   "pages": [
+    119,
+    124
+   ],
+   "objectives": [
+    "Définir un réseau trophique.",
+    "Citer des exemples d’interactions entre êtres vivants."
+   ],
+   "intro": "Je demande : « Le lion mange-t-il seulement la gazelle ? Que se passe-t-il si plusieurs chaînes se croisent ? »",
+   "summary": "Un réseau trophique est un ensemble de chaînes alimentaires reliées entre elles dans un écosystème ; il est plus complexe qu’une chaîne. Les êtres vivants ont des interactions : intraspécifiques (entre individus de la même espèce : effet de groupe, effet de masse) et interspécifiques (entre espèces différentes : parasitisme, symbiose ou mutualisme, commensalisme).",
+   "points": [
+    "Réseau trophique : chaînes reliées entre elles.",
+    "Interactions intraspécifiques : même espèce.",
+    "Interspécifiques : parasitisme, symbiose, commensalisme."
+   ],
+   "application": {
+    "q": "Qu’est-ce qu’un réseau trophique ?",
+    "a": "Un ensemble de chaînes alimentaires reliées entre elles dans un écosystème."
+   },
+   "board": [
+    {
+     "h": "Réseau trophique",
+     "lines": [
+      "Ensemble de chaînes alimentaires reliées entre elles"
+     ]
+    },
+    {
+     "h": "Interactions",
+     "lines": [
+      "Intraspécifiques : effet de groupe, effet de masse",
+      "Interspécifiques : parasitisme, symbiose, commensalisme"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Qu’est-ce qu’un réseau trophique ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les roches sédimentaires : définition et origines",
+   "match": [
+    "Roches sédimentaires : définitions, caractéristiques, origines"
+   ],
+   "pages": [
+    131,
+    133
+   ],
+   "objectives": [
+    "Définir sédiment et roche sédimentaire.",
+    "Citer leurs caractéristiques et leurs origines."
+   ],
+   "intro": "Je montre du sable et un morceau de calcaire et je demande : « Comment ces roches se sont-elles formées ? »",
+   "summary": "Un sédiment est un petit fragment de roche transporté par l’eau, le vent ou la glace, qui se dépose en couches. Les roches sédimentaires se forment à la surface de la Terre par l’accumulation de sédiments. Elles sont exogènes, stratifiées (en strates) et souvent fossilifères. Leur origine peut être détritique (débris de roches : sable), chimique (précipitation : sel, calcaire) ou biologique (restes d’êtres vivants : lignite, houille).",
+   "points": [
+    "Sédiment : fragment transporté et déposé.",
+    "Roches exogènes, stratifiées, fossilifères.",
+    "Origines : détritique, chimique, biologique."
+   ],
+   "application": {
+    "q": "Cite les trois caractéristiques des roches sédimentaires.",
+    "a": "Elles sont exogènes, stratifiées et fossilifères."
+   },
+   "board": [
+    {
+     "h": "Définitions",
+     "lines": [
+      "Sédiment : fragment transporté par l’eau, le vent ou la glace",
+      "Roche sédimentaire : accumulation de sédiments"
+     ]
+    },
+    {
+     "h": "Caractéristiques",
+     "lines": [
+      "Exogènes – stratifiées – fossilifères"
+     ]
+    },
+    {
+     "h": "Origines",
+     "lines": [
+      "Détritique (sable) – chimique (sel, calcaire) – biologique (houille)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Cite les trois caractéristiques des roches sédimentaires."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La formation des roches sédimentaires",
+   "match": [
+    "Processus de formation des roches sédimentaires"
+   ],
+   "pages": [
+    132,
+    133
+   ],
+   "objectives": [
+    "Décrire les étapes de formation d’une roche sédimentaire."
+   ],
+   "intro": "Je demande : « Comment des grains de sable peuvent-ils devenir une roche dure ? »",
+   "summary": "La formation d’une roche sédimentaire passe par plusieurs étapes : l’altération (les roches sont usées), l’érosion (les particules sont arrachées), le transport (les sédiments sont déplacés), le dépôt ou sédimentation (les sédiments se déposent en couches) et la diagenèse (les couches se compactent et se transforment en roche).",
+   "points": [
+    "Altération.",
+    "Érosion.",
+    "Transport.",
+    "Dépôt (sédimentation).",
+    "Diagenèse."
+   ],
+   "application": {
+    "q": "Range dans l’ordre : dépôt, altération, diagenèse, transport.",
+    "a": "Altération, transport, dépôt, diagenèse."
+   },
+   "board": [
+    {
+     "h": "Étapes",
+     "lines": [
+      "Altération → érosion → transport",
+      "Dépôt (sédimentation) → diagenèse (compaction)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Range dans l’ordre : dépôt, altération, diagenèse, transport."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Roches siliceuses : le sable",
+   "match": [
+    "Roches siliceuses : le sable"
+   ],
+   "pages": [
+    134,
+    137
+   ],
+   "objectives": [
+    "Décrire les propriétés et l’origine du sable.",
+    "Citer ses utilisations."
+   ],
+   "intro": "Je verse quelques gouttes d’acide chlorhydrique dilué sur du sable et je demande : « Se passe-t-il quelque chose ? »",
+   "summary": "Le sable est une roche meuble composée surtout de grains de quartz (silice) : c’est une roche siliceuse. Il est dur, perméable, insoluble dans l’eau et ne réagit pas avec l’acide chlorhydrique (sauf s’il est calcaire). La forme des grains dépend du transport : anguleux (torrent), émoussés et luisants (fleuves, plages), ronds et mats (dunes). C’est une roche détritique issue de la désagrégation de roches comme le granite. Il est utilisé dans la construction, la fonderie et la fabrication du verre.",
+   "points": [
+    "Roche meuble, grains de quartz.",
+    "Dur, perméable, ne réagit pas avec l’acide.",
+    "Forme des grains selon le transport.",
+    "Utilisations : construction, fonderie, verre."
+   ],
+   "application": {
+    "q": "Le sable fait-il effervescence avec l’acide chlorhydrique ? Pourquoi ?",
+    "a": "Non, car il est formé de silice (quartz), sauf s’il est calcaire."
+   },
+   "board": [
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Roche meuble – grains de quartz (silice)",
+      "Dur, perméable, pas d’effervescence avec l’acide"
+     ]
+    },
+    {
+     "h": "Origine",
+     "lines": [
+      "Roche détritique : désagrégation du granite"
+     ]
+    },
+    {
+     "h": "Utilisations",
+     "lines": [
+      "Construction – fonderie – verre"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Le sable fait-il effervescence avec l’acide chlorhydrique ? Pourquoi ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Roches argileuses : l’argile",
+   "match": [
+    "Roches argileuses : l’argile"
+   ],
+   "pages": [
+    138,
+    141
+   ],
+   "objectives": [
+    "Décrire les propriétés de l’argile.",
+    "Citer ses utilisations."
+   ],
+   "intro": "Je mouille un peu d’argile et je demande : « Que peut-on fabriquer avec cette pâte ? »",
+   "summary": "L’argile est une roche tendre, onctueuse au toucher, qui forme avec l’eau une pâte plastique. Elle absorbe l’eau puis devient imperméable, ne fait pas effervescence avec l’acide et se fend en période de sécheresse. Chauffée, elle durcit : c’est l’argile cuite. Elle provient de l’altération des roches cristallines. Elle est utilisée pour le modelage : poteries, briques, tuiles.",
+   "points": [
+    "Tendre, onctueuse, plastique avec l’eau.",
+    "Imperméable quand elle gonfle.",
+    "Pas d’effervescence avec l’acide.",
+    "Utilisations : poteries, briques, tuiles."
+   ],
+   "application": {
+    "q": "Pourquoi utilise-t-on l’argile pour fabriquer des poteries ?",
+    "a": "Parce qu’elle forme avec l’eau une pâte plastique qui durcit à la cuisson."
+   },
+   "board": [
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Tendre, onctueuse, pâte plastique avec l’eau",
+      "Imperméable – pas d’effervescence avec l’acide"
+     ]
+    },
+    {
+     "h": "Origine",
+     "lines": [
+      "Altération des roches cristallines"
+     ]
+    },
+    {
+     "h": "Utilisations",
+     "lines": [
+      "Poteries – briques – tuiles"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi utilise-t-on l’argile pour fabriquer des poteries ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Roches carbonatées : les calcaires",
+   "match": [
+    "Roches carbonatées : les calcaires"
+   ],
+   "pages": [
+    142,
+    146
+   ],
+   "objectives": [
+    "Décrire les propriétés et l’origine du calcaire."
+   ],
+   "intro": "Je verse quelques gouttes d’acide sur un morceau de calcaire et je demande : « Que voyez-vous ? »",
+   "summary": "Les calcaires sont formés principalement de carbonate de calcium. Ce sont des roches tendres, perméables, qui font effervescence avec l’acide chlorhydrique. Le calcaire se dissout dans l’eau chargée de dioxyde de carbone et se décompose par la chaleur en chaux. Il est souvent fossilifère. Il se forme par l’activité des êtres vivants (coraux, coquillages) ou par des changements chimiques dans l’eau. Il est utilisé dans la construction.",
+   "points": [
+    "Carbonate de calcium.",
+    "Effervescence avec l’acide.",
+    "Chauffé : donne la chaux.",
+    "Origine biologique ou chimique.",
+    "Fossilifère."
+   ],
+   "application": {
+    "q": "Comment reconnaître un calcaire avec de l’acide ?",
+    "a": "Il fait effervescence avec l’acide chlorhydrique."
+   },
+   "board": [
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Carbonate de calcium – tendre, perméable",
+      "Effervescence avec l’acide – chauffé → chaux"
+     ]
+    },
+    {
+     "h": "Origine",
+     "lines": [
+      "Êtres vivants (coraux, coquillages) ou précipitation chimique"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment reconnaître un calcaire avec de l’acide ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Roches salines : le gypse et le sel",
+   "match": [
+    "Roches salines : le gypse"
+   ],
+   "pages": [
+    146,
+    150
+   ],
+   "objectives": [
+    "Décrire les propriétés du gypse et du sel.",
+    "Expliquer la formation des évaporites."
+   ],
+   "intro": "Je montre une rose de sable et je demande : « Comment cette roche s’est-elle formée ? »",
+   "summary": "Les roches salines ou évaporites se forment par l’évaporation d’une eau riche en sels. Le gypse est une roche tendre (rayable à l’ongle) et légèrement soluble dans l’eau ; il a plusieurs variétés comme la rose de sable. Chauffé à 120-130 °C, il se transforme en plâtre, utilisé dans les constructions. Le sel gemme (chlorure de sodium) est tendre, très soluble dans l’eau et ne réagit pas avec l’acide ; ses gisements se trouvent en surface, dans les sebkhas.",
+   "points": [
+    "Évaporites : évaporation d’eau salée.",
+    "Gypse : rayable à l’ongle → plâtre.",
+    "Sel : très soluble, cristaux cubiques.",
+    "Pas d’effervescence avec l’acide."
+   ],
+   "application": {
+    "q": "Que donne le gypse quand on le chauffe ?",
+    "a": "Il donne du plâtre."
+   },
+   "board": [
+    {
+     "h": "Formation",
+     "lines": [
+      "Évaporation d’une eau riche en sels → évaporites"
+     ]
+    },
+    {
+     "h": "Le gypse",
+     "lines": [
+      "Tendre, rayable à l’ongle",
+      "Chauffé à 120-130 °C → plâtre"
+     ]
+    },
+    {
+     "h": "Le sel",
+     "lines": [
+      "Chlorure de sodium – très soluble – sebkhas"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Que donne le gypse quand on le chauffe ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Roches carbonées : le pétrole",
+   "match": [
+    "Roches carbonées : le pétrole"
+   ],
+   "pages": [
+    151,
+    155
+   ],
+   "objectives": [
+    "Décrire les propriétés du pétrole.",
+    "Expliquer sa formation et citer ses usages."
+   ],
+   "intro": "Je demande : « D’où vient l’essence que l’on met dans les voitures ? »",
+   "summary": "Le pétrole est un liquide formé d’hydrocarbures (carbone + hydrogène), très inflammable, plus léger que l’eau et qui ne s’y mélange pas. Il se forme par accumulation de restes organiques (plancton, algues) dans des milieux peu oxygénés ; enfouis, ils se transforment sous l’effet de la chaleur et de la pression. Les hydrocarbures migrent puis sont bloqués par une roche imperméable : c’est le gisement (gaz en haut, pétrole au milieu, eau en bas). Raffiné, il donne les carburants (essence, gazole, fuel).",
+   "points": [
+    "Hydrocarbures : carbone + hydrogène.",
+    "Inflammable, plus léger que l’eau.",
+    "Formé à partir de restes organiques.",
+    "Gisement : gaz, pétrole, eau.",
+    "Carburants : essence, gazole, fuel."
+   ],
+   "application": {
+    "q": "Dans un gisement, dans quel ordre se placent le gaz, le pétrole et l’eau ?",
+    "a": "Le gaz en haut, le pétrole au milieu, l’eau en bas."
+   },
+   "board": [
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Hydrocarbures – inflammable – plus léger que l’eau"
+     ]
+    },
+    {
+     "h": "Formation",
+     "lines": [
+      "Restes organiques enfouis + chaleur + pression",
+      "Gisement : gaz / pétrole / eau"
+     ]
+    },
+    {
+     "h": "Utilisations",
+     "lines": [
+      "Carburants : essence, gazole, fuel"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Dans un gisement, dans quel ordre se placent le gaz, le pétrole et l’eau ?"
+     ]
+    }
+   ]
+  }
+ ]
+}

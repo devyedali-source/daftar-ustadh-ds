@@ -7,7 +7,8 @@
   "PC": "Programme de sciences physiques : premier cycle — mars 2025",
   "TI": "Guides du professeur : Informatique 1AS, 2AS et 3AS, Technologie 1AS et 2AS (suite des leçons, sans répartition par semaine), Technologie 3AS (par semaine)",
   "HG": "منهاج التاريخ والجغرافيا — السلك الأول، أبريل 2025",
-  "MATS": "Curricula de mathématiques du premier cycle — 2022 (progression annuelle par mois et semaine)"
+  "MATS": "Curricula de mathématiques du premier cycle — 2022 (progression annuelle par mois et semaine)",
+  "SN": "Programme des Sciences de la Vie et de la Terre (SVT) — premier cycle, mars 2025"
  },
  "plans": {
   "AR": {
@@ -6902,6 +6903,1135 @@
      "k": "exam",
      "i": [
       "Evaluations"
+     ]
+    }
+   ]
+  },
+  "SN": {
+   "1AS": [
+    {
+     "l": "Semaine 1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "start",
+     "i": [
+      "Accueil et préparation"
+     ]
+    },
+    {
+     "l": "Semaine 2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Semaine 3",
+     "w": 3,
+     "t": 1,
+     "u": "Unité 1 : Domaines des SVT, découverte des êtres vivants dans leur milieu",
+     "k": "activity",
+     "i": [
+      "Sortie sur le terrain (collecte d’échantillons)"
+     ]
+    },
+    {
+     "l": "Semaine 4",
+     "w": 4,
+     "t": 1,
+     "u": "Unité 1 : Domaines des SVT, découverte des êtres vivants dans leur milieu",
+     "k": "lesson",
+     "i": [
+      "Biologie : définition et branches (zoologie, botanique)",
+      "Géologie : définition et branches (pétrologie, stratigraphie, paléontologie)",
+      "Écologie : définitions (écologie, écosystème, biocénose, biotope)"
+     ]
+    },
+    {
+     "l": "Semaine 5",
+     "w": 5,
+     "t": 1,
+     "u": "Unité 1 : Domaines des SVT, découverte des êtres vivants dans leur milieu",
+     "k": "lesson",
+     "i": [
+      "Distinguer le vivant du non vivant",
+      "Distinguer l’animal du végétal"
+     ]
+    },
+    {
+     "l": "Semaine 6",
+     "w": 6,
+     "t": 1,
+     "u": "Unité 1 : Domaines des SVT, découverte des êtres vivants dans leur milieu",
+     "k": "lesson",
+     "i": [
+      "Classification simplifiée des êtres vivants"
+     ]
+    },
+    {
+     "l": "Semaine 7",
+     "w": 7,
+     "t": 1,
+     "u": "Unité 1 : Domaines des SVT, découverte des êtres vivants dans leur milieu",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 1"
+     ]
+    },
+    {
+     "l": "Semaine 8",
+     "w": 8,
+     "t": 1,
+     "u": "Unité 2 : La fonction de locomotion",
+     "k": "lesson",
+     "i": [
+      "La marche",
+      "La reptation"
+     ]
+    },
+    {
+     "l": "Semaine 9",
+     "w": 9,
+     "t": 1,
+     "u": "Unité 2 : La fonction de locomotion",
+     "k": "lesson",
+     "i": [
+      "La nage",
+      "Le vol"
+     ]
+    },
+    {
+     "l": "Semaine 10",
+     "w": 10,
+     "t": 1,
+     "u": "Unité 2 : La fonction de locomotion",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 11",
+     "w": 11,
+     "t": 1,
+     "u": "Unité 2 : La fonction de locomotion",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 2"
+     ]
+    },
+    {
+     "l": "Semaine 12",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 1"
+     ]
+    },
+    {
+     "l": "Semaine 13",
+     "w": 13,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 14",
+     "w": 14,
+     "t": 2,
+     "u": "Unité 3 : Nutrition des végétaux",
+     "k": "lesson",
+     "i": [
+      "Sol : définition, exemples (sableux, argileux…)",
+      "Morphologie d’une plante",
+      "Rôle des racines : absorption de l’eau et des sels minéraux (sève brute)"
+     ]
+    },
+    {
+     "l": "Semaine 15",
+     "w": 15,
+     "t": 2,
+     "u": "Unité 3 : Nutrition des végétaux",
+     "k": "lesson",
+     "i": [
+      "Rôle des feuilles : transpiration, photosynthèse (autotrophie, sève élaborée)",
+      "Rôle des vaisseaux conducteurs : circulation de la sève"
+     ]
+    },
+    {
+     "l": "Semaine 16",
+     "w": 16,
+     "t": 2,
+     "u": "Unité 3 : Nutrition des végétaux",
+     "k": "lesson",
+     "i": [
+      "Nutrition d’une plante non chlorophyllienne"
+     ]
+    },
+    {
+     "l": "Semaine 17",
+     "w": 17,
+     "t": 2,
+     "u": "Unité 3 : Nutrition des végétaux",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 18",
+     "w": 18,
+     "t": 2,
+     "u": "Unité 3 : Nutrition des végétaux",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 3"
+     ]
+    },
+    {
+     "l": "Semaine 19",
+     "w": 19,
+     "t": 2,
+     "u": "Unité 4 : Nutrition des animaux",
+     "k": "lesson",
+     "i": [
+      "Mode de nutrition d’un invertébré (étude d’un exemple)",
+      "Mode de nutrition d’un végétarien (herbivore, granivore)"
+     ]
+    },
+    {
+     "l": "Semaine 20",
+     "w": 20,
+     "t": 2,
+     "u": "Unité 4 : Nutrition des animaux",
+     "k": "lesson",
+     "i": [
+      "Étude d’un carnivore",
+      "Étude d’un omnivore (l’homme) : appareil digestif",
+      "Mécanisme de la digestion"
+     ]
+    },
+    {
+     "l": "Semaine 21",
+     "w": 21,
+     "t": 2,
+     "u": "Unité 4 : Nutrition des animaux",
+     "k": "lesson",
+     "i": [
+      "Hygiène de l’appareil digestif",
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 22",
+     "w": 22,
+     "t": 2,
+     "u": "Unité 4 : Nutrition des animaux",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 4"
+     ]
+    },
+    {
+     "l": "Semaine 23",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 2"
+     ]
+    },
+    {
+     "l": "Semaine 24",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 25",
+     "w": 25,
+     "t": 3,
+     "u": "Unité 5 : Fonction de respiration chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Respiration pulmonaire chez l’homme : appareil respiratoire",
+      "Mouvements respiratoires (inspiration, expiration)",
+      "Rôle des poumons, échanges gazeux respiratoires"
+     ]
+    },
+    {
+     "l": "Semaine 26",
+     "w": 26,
+     "t": 3,
+     "u": "Unité 5 : Fonction de respiration chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Hygiène de l’appareil respiratoire : maladies et règles d’hygiène"
+     ]
+    },
+    {
+     "l": "Semaine 27",
+     "w": 27,
+     "t": 3,
+     "u": "Unité 5 : Fonction de respiration chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Respiration branchiale chez le poisson"
+     ]
+    },
+    {
+     "l": "Semaine 28",
+     "w": 28,
+     "t": 3,
+     "u": "Unité 5 : Fonction de respiration chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Respiration trachéenne chez le criquet ou la mouche"
+     ]
+    },
+    {
+     "l": "Semaine 29",
+     "w": 29,
+     "t": 3,
+     "u": "Unité 5 : Fonction de respiration chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Respiration cutanée chez la grenouille"
+     ]
+    },
+    {
+     "l": "Semaine 30",
+     "w": 30,
+     "t": 3,
+     "u": "Unité 5 : Fonction de respiration chez les animaux",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 31",
+     "w": 31,
+     "t": 3,
+     "u": "Unité 5 : Fonction de respiration chez les animaux",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 5"
+     ]
+    },
+    {
+     "l": "Semaine 32",
+     "w": 32,
+     "t": 3,
+     "u": "Unité 6 : Fonction de respiration chez les végétaux",
+     "k": "lesson",
+     "i": [
+      "Respiration des végétaux : mise en évidence",
+      "Stomates"
+     ]
+    },
+    {
+     "l": "Semaine 33",
+     "w": 33,
+     "t": 3,
+     "u": "Unité 6 : Fonction de respiration chez les végétaux",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 34",
+     "w": 34,
+     "t": 3,
+     "u": "Unité 6 : Fonction de respiration chez les végétaux",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 6"
+     ]
+    },
+    {
+     "l": "Semaine 35",
+     "w": 35,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 3"
+     ]
+    },
+    {
+     "l": "Semaine 36",
+     "w": 36,
+     "t": 3,
+     "u": "",
+     "k": "final",
+     "i": [
+      "Validation des acquis ou certification"
+     ]
+    }
+   ],
+   "2AS": [
+    {
+     "l": "Semaine 1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "start",
+     "i": [
+      "Accueil et préparation"
+     ]
+    },
+    {
+     "l": "Semaine 2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Semaine 3",
+     "w": 3,
+     "t": 1,
+     "u": "Unité 1 : Fonction de reproduction chez les animaux",
+     "k": "activity",
+     "i": [
+      "Sortie sur le terrain (collecte d’échantillons)"
+     ]
+    },
+    {
+     "l": "Semaine 4",
+     "w": 4,
+     "t": 1,
+     "u": "Unité 1 : Fonction de reproduction chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Reproduction : définition",
+      "Reproduction asexuée : division binaire (amibe, paramécie…)"
+     ]
+    },
+    {
+     "l": "Semaine 5",
+     "w": 5,
+     "t": 1,
+     "u": "Unité 1 : Fonction de reproduction chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Reproduction sexuée : gamètes et fécondation",
+      "Modes de reproduction : ovipare"
+     ]
+    },
+    {
+     "l": "Semaine 6",
+     "w": 6,
+     "t": 1,
+     "u": "Unité 1 : Fonction de reproduction chez les animaux",
+     "k": "lesson",
+     "i": [
+      "Modes de reproduction : vivipare, ovovivipare"
+     ]
+    },
+    {
+     "l": "Semaine 7",
+     "w": 7,
+     "t": 1,
+     "u": "Unité 1 : Fonction de reproduction chez les animaux",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 1"
+     ]
+    },
+    {
+     "l": "Semaine 8",
+     "w": 8,
+     "t": 1,
+     "u": "Unité 2 : La reproduction chez les végétaux",
+     "k": "lesson",
+     "i": [
+      "Reproduction asexuée des végétaux : bourgeonnement, bouturage, marcottage, greffage"
+     ]
+    },
+    {
+     "l": "Semaine 9",
+     "w": 9,
+     "t": 1,
+     "u": "Unité 2 : La reproduction chez les végétaux",
+     "k": "lesson",
+     "i": [
+      "Plante à fleurs : organisation de la fleur",
+      "Pollinisation (définition et modes)",
+      "Gamètes et fécondation chez la plante à fleurs"
+     ]
+    },
+    {
+     "l": "Semaine 10",
+     "w": 10,
+     "t": 1,
+     "u": "Unité 2 : La reproduction chez les végétaux",
+     "k": "lesson",
+     "i": [
+      "Plante sans fleurs : étude du Fucus"
+     ]
+    },
+    {
+     "l": "Semaine 11",
+     "w": 11,
+     "t": 1,
+     "u": "Unité 2 : La reproduction chez les végétaux",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 2"
+     ]
+    },
+    {
+     "l": "Semaine 12",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 1"
+     ]
+    },
+    {
+     "l": "Semaine 13",
+     "w": 13,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 14",
+     "w": 14,
+     "t": 2,
+     "u": "Unité 3 : Sang et circulation sanguine chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Composition du sang : globules rouges et blancs, plaquettes, plasma"
+     ]
+    },
+    {
+     "l": "Semaine 15",
+     "w": 15,
+     "t": 2,
+     "u": "Unité 3 : Sang et circulation sanguine chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Groupes sanguins",
+      "Anatomie du cœur",
+      "Appareil circulatoire : grande et petite circulation, artères et veines"
+     ]
+    },
+    {
+     "l": "Semaine 16",
+     "w": 16,
+     "t": 2,
+     "u": "Unité 3 : Sang et circulation sanguine chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Activité spontanée du cœur : cardiographe, révolution cardiaque"
+     ]
+    },
+    {
+     "l": "Semaine 17",
+     "w": 17,
+     "t": 2,
+     "u": "Unité 3 : Sang et circulation sanguine chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Hygiène de l’appareil circulatoire",
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 18",
+     "w": 18,
+     "t": 2,
+     "u": "Unité 3 : Sang et circulation sanguine chez l’homme",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 3"
+     ]
+    },
+    {
+     "l": "Semaine 19",
+     "w": 19,
+     "t": 2,
+     "u": "Unité 4 : Urine et excrétion urinaire",
+     "k": "lesson",
+     "i": [
+      "Composition de l’urine",
+      "Organisation de l’appareil urinaire"
+     ]
+    },
+    {
+     "l": "Semaine 20",
+     "w": 20,
+     "t": 2,
+     "u": "Unité 4 : Urine et excrétion urinaire",
+     "k": "lesson",
+     "i": [
+      "Coupe de rein : les néphrons",
+      "Fonctions du rein : filtration, réabsorption, sécrétion"
+     ]
+    },
+    {
+     "l": "Semaine 21",
+     "w": 21,
+     "t": 2,
+     "u": "Unité 4 : Urine et excrétion urinaire",
+     "k": "lesson",
+     "i": [
+      "Hygiène de l’appareil urinaire",
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 22",
+     "w": 22,
+     "t": 2,
+     "u": "Unité 4 : Urine et excrétion urinaire",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 4"
+     ]
+    },
+    {
+     "l": "Semaine 23",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 2"
+     ]
+    },
+    {
+     "l": "Semaine 24",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 25",
+     "w": 25,
+     "t": 3,
+     "u": "Unité 5 : Exemples d’écosystèmes et réseaux trophiques",
+     "k": "lesson",
+     "i": [
+      "Exemples d’écosystèmes : terrestres et océaniques",
+      "Aires protégées : PNBA, Parc National de Diawling",
+      "Zones humides : définition, importance, exemple"
+     ]
+    },
+    {
+     "l": "Semaine 26",
+     "w": 26,
+     "t": 3,
+     "u": "Unité 5 : Exemples d’écosystèmes et réseaux trophiques",
+     "k": "lesson",
+     "i": [
+      "Chaînes alimentaires : définition, maillons, exemple"
+     ]
+    },
+    {
+     "l": "Semaine 27",
+     "w": 27,
+     "t": 3,
+     "u": "Unité 5 : Exemples d’écosystèmes et réseaux trophiques",
+     "k": "lesson",
+     "i": [
+      "Notion de réseau trophique"
+     ]
+    },
+    {
+     "l": "Semaine 28",
+     "w": 28,
+     "t": 3,
+     "u": "Unité 5 : Exemples d’écosystèmes et réseaux trophiques",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 29",
+     "w": 29,
+     "t": 3,
+     "u": "Unité 5 : Exemples d’écosystèmes et réseaux trophiques",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 5"
+     ]
+    },
+    {
+     "l": "Semaine 30",
+     "w": 30,
+     "t": 3,
+     "u": "Unité 6 : Les roches sédimentaires",
+     "k": "lesson",
+     "i": [
+      "Roches sédimentaires : définitions, caractéristiques, origines",
+      "Processus de formation des roches sédimentaires"
+     ]
+    },
+    {
+     "l": "Semaine 31",
+     "w": 31,
+     "t": 3,
+     "u": "Unité 6 : Les roches sédimentaires",
+     "k": "lesson",
+     "i": [
+      "Roches siliceuses : le sable",
+      "Roches argileuses : l’argile"
+     ]
+    },
+    {
+     "l": "Semaine 32",
+     "w": 32,
+     "t": 3,
+     "u": "Unité 6 : Les roches sédimentaires",
+     "k": "lesson",
+     "i": [
+      "Roches carbonatées : les calcaires",
+      "Roches salines : le gypse"
+     ]
+    },
+    {
+     "l": "Semaine 33",
+     "w": 33,
+     "t": 3,
+     "u": "Unité 6 : Les roches sédimentaires",
+     "k": "lesson",
+     "i": [
+      "Roches carbonées : le pétrole"
+     ]
+    },
+    {
+     "l": "Semaine 34",
+     "w": 34,
+     "t": 3,
+     "u": "Unité 6 : Les roches sédimentaires",
+     "k": "eval",
+     "i": [
+      "TD",
+      "Évaluation et soutien de l'unité 6"
+     ]
+    },
+    {
+     "l": "Semaine 35",
+     "w": 35,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 3"
+     ]
+    },
+    {
+     "l": "Semaine 36",
+     "w": 36,
+     "t": 3,
+     "u": "",
+     "k": "final",
+     "i": [
+      "Validation des acquis ou certification"
+     ]
+    }
+   ],
+   "3AS": [
+    {
+     "l": "Semaine 1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "start",
+     "i": [
+      "Accueil et préparation"
+     ]
+    },
+    {
+     "l": "Semaine 2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Semaine 3",
+     "w": 3,
+     "t": 1,
+     "u": "Unité 1 : Reproduction chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Appareil génital mâle : organisation, coupe de testicule, puberté, spermatozoïde"
+     ]
+    },
+    {
+     "l": "Semaine 4",
+     "w": 4,
+     "t": 1,
+     "u": "Unité 1 : Reproduction chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Appareil génital femelle : organisation, coupe d’ovaire, puberté, ovocyte"
+     ]
+    },
+    {
+     "l": "Semaine 5",
+     "w": 5,
+     "t": 1,
+     "u": "Unité 1 : Reproduction chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Fécondation : définition, conditions, étapes, zygote"
+     ]
+    },
+    {
+     "l": "Semaine 6",
+     "w": 6,
+     "t": 1,
+     "u": "Unité 1 : Reproduction chez l’homme",
+     "k": "lesson",
+     "i": [
+      "Hygiène : IST et SIDA",
+      "Mesures de protection de l’appareil génital"
+     ]
+    },
+    {
+     "l": "Semaine 7",
+     "w": 7,
+     "t": 1,
+     "u": "Unité 1 : Reproduction chez l’homme",
+     "k": "eval",
+     "i": [
+      "TD",
+      "Évaluation et soutien de l'unité 1"
+     ]
+    },
+    {
+     "l": "Semaine 8",
+     "w": 8,
+     "t": 1,
+     "u": "Unité 2 : Système nerveux",
+     "k": "lesson",
+     "i": [
+      "Système nerveux central : encéphale, moelle épinière",
+      "Système nerveux périphérique : nerfs (types et rôles)"
+     ]
+    },
+    {
+     "l": "Semaine 9",
+     "w": 9,
+     "t": 1,
+     "u": "Unité 2 : Système nerveux",
+     "k": "lesson",
+     "i": [
+      "Neurone : structure et propriétés",
+      "Réflexe inné et arc réflexe"
+     ]
+    },
+    {
+     "l": "Semaine 10",
+     "w": 10,
+     "t": 1,
+     "u": "Unité 2 : Système nerveux",
+     "k": "lesson",
+     "i": [
+      "Hygiène du système nerveux"
+     ]
+    },
+    {
+     "l": "Semaine 11",
+     "w": 11,
+     "t": 1,
+     "u": "Unité 2 : Système nerveux",
+     "k": "eval",
+     "i": [
+      "TD",
+      "Évaluation et soutien de l'unité 2"
+     ]
+    },
+    {
+     "l": "Semaine 12",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 1"
+     ]
+    },
+    {
+     "l": "Semaine 13",
+     "w": 13,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 14",
+     "w": 14,
+     "t": 2,
+     "u": "Unité 3 : Motricité",
+     "k": "lesson",
+     "i": [
+      "Le squelette : schéma, types d’os"
+     ]
+    },
+    {
+     "l": "Semaine 15",
+     "w": 15,
+     "t": 2,
+     "u": "Unité 3 : Motricité",
+     "k": "lesson",
+     "i": [
+      "Os long : structure, composition chimique, croissance"
+     ]
+    },
+    {
+     "l": "Semaine 16",
+     "w": 16,
+     "t": 2,
+     "u": "Unité 3 : Motricité",
+     "k": "lesson",
+     "i": [
+      "Muscles striés : structure, formes, propriétés"
+     ]
+    },
+    {
+     "l": "Semaine 17",
+     "w": 17,
+     "t": 2,
+     "u": "Unité 3 : Motricité",
+     "k": "lesson",
+     "i": [
+      "Articulations : définition et types"
+     ]
+    },
+    {
+     "l": "Semaine 18",
+     "w": 18,
+     "t": 2,
+     "u": "Unité 3 : Motricité",
+     "k": "lesson",
+     "i": [
+      "Hygiène de la motricité : accidents des os, des muscles et des articulations"
+     ]
+    },
+    {
+     "l": "Semaine 19",
+     "w": 19,
+     "t": 2,
+     "u": "Unité 3 : Motricité",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 20",
+     "w": 20,
+     "t": 2,
+     "u": "Unité 3 : Motricité",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 3"
+     ]
+    },
+    {
+     "l": "Semaine 21",
+     "w": 21,
+     "t": 2,
+     "u": "Unité 4 : Grands problèmes environnementaux actuels",
+     "k": "lesson",
+     "i": [
+      "Changements climatiques : causes et conséquences",
+      "Pollution de l’air, du sol, de l’eau et du littoral"
+     ]
+    },
+    {
+     "l": "Semaine 22",
+     "w": 22,
+     "t": 2,
+     "u": "Unité 4 : Grands problèmes environnementaux actuels",
+     "k": "lesson",
+     "i": [
+      "Gestion des déchets",
+      "Catastrophes naturelles",
+      "Évaluation et soutien de l'unité 4"
+     ]
+    },
+    {
+     "l": "Semaine 23",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 2"
+     ]
+    },
+    {
+     "l": "Semaine 24",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Semaine 25",
+     "w": 25,
+     "t": 3,
+     "u": "Unité 5 : Roches magmatiques",
+     "k": "lesson",
+     "i": [
+      "Roches magmatiques : définition et caractéristiques",
+      "Roches plutoniques : le granite"
+     ]
+    },
+    {
+     "l": "Semaine 26",
+     "w": 26,
+     "t": 3,
+     "u": "Unité 5 : Roches magmatiques",
+     "k": "lesson",
+     "i": [
+      "Roches volcaniques : le basalte"
+     ]
+    },
+    {
+     "l": "Semaine 27",
+     "w": 27,
+     "t": 3,
+     "u": "Unité 5 : Roches magmatiques",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 28",
+     "w": 28,
+     "t": 3,
+     "u": "Unité 5 : Roches magmatiques",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 5"
+     ]
+    },
+    {
+     "l": "Semaine 29",
+     "w": 29,
+     "t": 3,
+     "u": "Unité 6 : Roches métamorphiques",
+     "k": "lesson",
+     "i": [
+      "Roches métamorphiques : définition, caractéristiques",
+      "Étude d’exemple : le gneiss"
+     ]
+    },
+    {
+     "l": "Semaine 30",
+     "w": 30,
+     "t": 3,
+     "u": "Unité 6 : Roches métamorphiques",
+     "k": "lesson",
+     "i": [
+      "Le gneiss : localisation en Mauritanie, utilisation, autres exemples"
+     ]
+    },
+    {
+     "l": "Semaine 31",
+     "w": 31,
+     "t": 3,
+     "u": "Unité 6 : Roches métamorphiques",
+     "k": "lesson",
+     "i": [
+      "Cycle des roches"
+     ]
+    },
+    {
+     "l": "Semaine 32",
+     "w": 32,
+     "t": 3,
+     "u": "Unité 6 : Roches métamorphiques",
+     "k": "activity",
+     "i": [
+      "TD"
+     ]
+    },
+    {
+     "l": "Semaine 33",
+     "w": 33,
+     "t": 3,
+     "u": "Unité 6 : Roches métamorphiques",
+     "k": "activity",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Semaine 34",
+     "w": 34,
+     "t": 3,
+     "u": "Unité 6 : Roches métamorphiques",
+     "k": "eval",
+     "i": [
+      "Évaluation et soutien de l'unité 6"
+     ]
+    },
+    {
+     "l": "Semaine 35",
+     "w": 35,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluation trimestrielle 3"
+     ]
+    },
+    {
+     "l": "Semaine 36",
+     "w": 36,
+     "t": 3,
+     "u": "",
+     "k": "final",
+     "i": [
+      "Validation des acquis ou certification"
      ]
     }
    ]
