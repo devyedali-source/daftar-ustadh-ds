@@ -1,0 +1,1019 @@
+{
+ "subject": "ANG",
+ "level": "1AS",
+ "book": "books/ANG_1AS.pdf",
+ "bookTitle": "Study English — 1st year (1AS), IPN",
+ "lessons": [
+  {
+   "title": "Hello, students! (Greetings)",
+   "match": [
+    "Different expressions of greetings"
+   ],
+   "pages": [
+    9,
+    10
+   ],
+   "objectives": [
+    "Greet people and answer greetings.",
+    "Use the verb to be (am, is, are) in short greetings."
+   ],
+   "intro": "I enter the class and say: “Hello, students! How are you?” I wait for their answers, then I ask: “What do we say when we meet someone?”",
+   "summary": "In the dialogue, the teacher Mohamed meets his first-year class: “Hello, students, how are you?” – “Hello.” – “My name is Mohamed. What is your name?” To greet, we say: hi, hello, good morning. To answer “How are you?” we say: I am fine / fine, thank you / thanks. The verb to be in the simple present: I am (I’m); he, she, it is (he’s, she’s, it’s); we, you, they are (we’re, you’re, they’re).",
+   "points": [
+    "Greetings: hi, hello, how are you?",
+    "Answers: I am fine, fine, thank you, thanks.",
+    "I am = I’m; he/she/it is; we/you/they are.",
+    "Adjectives: good, fine, okay."
+   ],
+   "application": {
+    "q": "Rearrange: are / how / you / Brahim / ?",
+    "a": "How are you, Brahim?"
+   },
+   "board": [
+    {
+     "h": "Greetings",
+     "lines": [
+      "Hi! / Hello!",
+      "How are you?",
+      "I am fine, thank you. And you?"
+     ]
+    },
+    {
+     "h": "To be (simple present)",
+     "lines": [
+      "I am = I’m",
+      "He / She / It is = he’s / she’s / it’s",
+      "We / You / They are = we’re / you’re / they’re"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Rearrange: are – how – you – Brahim?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Goodbye, bye-bye! (Leave taking)",
+   "match": [
+    "Leave taking expressions"
+   ],
+   "pages": [
+    11,
+    12
+   ],
+   "objectives": [
+    "Greet according to the time of the day.",
+    "Take leave politely."
+   ],
+   "intro": "I ask: “What do you say to your friends when you leave school at the end of the day?”",
+   "summary": "We greet according to the time: good morning, good afternoon, good evening. When we meet someone for the first time we say: “Nice to meet you” – “Nice to meet you, too”. To take leave we say: goodbye, bye-bye, see you. We use the subject pronouns I, you, he, she, it, the wh- words how, what, where, and the verb to be: am, is, are.",
+   "points": [
+    "Good + morning / afternoon / evening.",
+    "Nice to meet you. – Nice to meet you, too.",
+    "Leave taking: goodbye, bye-bye, see you.",
+    "Wh- words: how, what, where."
+   ],
+   "application": {
+    "q": "What do you say at 8 a.m.? At 4 p.m.? When you leave?",
+    "a": "Good morning. Good afternoon. Goodbye / Bye-bye."
+   },
+   "board": [
+    {
+     "h": "Greetings and time",
+     "lines": [
+      "Good morning",
+      "Good afternoon",
+      "Good evening"
+     ]
+    },
+    {
+     "h": "Meeting someone",
+     "lines": [
+      "Nice to meet you.",
+      "Nice to meet you, too."
+     ]
+    },
+    {
+     "h": "Leave taking",
+     "lines": [
+      "Goodbye!",
+      "Bye-bye!",
+      "See you!"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Rearrange: morning / good / Ahmed."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Counting (1–50)",
+   "match": [
+    "Counting (1-50)"
+   ],
+   "pages": [
+    13,
+    19
+   ],
+   "objectives": [
+    "Count from 0 to 50.",
+    "Say and understand phone numbers."
+   ],
+   "intro": "I write some numbers on the board (7, 13, 20, 45) and ask: “Who can read these numbers in English?”",
+   "summary": "The book gives the numbers from zero to fifty: one, two, three… ten; eleven, twelve, thirteen… nineteen; twenty, twenty-one… thirty, forty, fifty. We use numbers to say our age (I am 13 years old) and our phone numbers: “His number is two, six, eight, five…”.",
+   "points": [
+    "0–10: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+    "11–19: eleven, twelve, thirteen … nineteen.",
+    "Tens: twenty, thirty, forty, fifty.",
+    "Compound numbers: twenty-one, thirty-five, forty-eight…",
+    "How old are you? – I am 13 years old."
+   ],
+   "application": {
+    "q": "Write in letters: 14, 27, 50.",
+    "a": "Fourteen, twenty-seven, fifty."
+   },
+   "board": [
+    {
+     "h": "Numbers 0–20",
+     "lines": [
+      "zero, one, two, three, four, five, six, seven, eight, nine, ten",
+      "eleven, twelve, thirteen, fourteen, fifteen … twenty"
+     ]
+    },
+    {
+     "h": "Tens",
+     "lines": [
+      "twenty – thirty – forty – fifty",
+      "21 twenty-one, 35 thirty-five, 48 forty-eight"
+     ]
+    },
+    {
+     "h": "Use",
+     "lines": [
+      "How old are you? – I am 13 years old.",
+      "My phone number is 2-6-8-5…"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Write in letters: 14, 27, 50."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Talking about oneself",
+   "match": [
+    "Introducing oneself, responding to introductions and asking for and giving personal information"
+   ],
+   "pages": [
+    13,
+    22
+   ],
+   "objectives": [
+    "Introduce oneself and respond to introductions.",
+    "Ask for and give personal information: name, origin, residence, age.",
+    "Introduce others."
+   ],
+   "intro": "I introduce myself: “Hello! My name is … I am from … I live in …”. Then I ask a student: “And you? What is your name?”",
+   "summary": "To talk about ourselves we say: My name is Sara. I am from Kaedi. I live in Atar. Our nationality is Mauritanian. To ask: What is your name? Where are you from? Where do you live? How old are you? When we meet someone: “Glad to meet you” – “Glad to meet you, too.” To introduce others: “Let me introduce you to Mody, my brother.” / “This is my classmate, Behah.”",
+   "points": [
+    "My name is … / I am from … / I live in …",
+    "What is your name? Where are you from? Where do you live?",
+    "Glad / Nice to meet you. – Glad to meet you, too.",
+    "Introducing others: Let me introduce you to … / This is …",
+    "Possessive adjective: your (What is your name?)."
+   ],
+   "application": {
+    "q": "Complete: My ___ is Savia. I ___ from Mauritania and I ___ in Boutilimit.",
+    "a": "My name is Savia. I am from Mauritania and I live in Boutilimit."
+   },
+   "board": [
+    {
+     "h": "Introducing oneself",
+     "lines": [
+      "My name is …",
+      "I am from …",
+      "I live in …",
+      "I am … years old."
+     ]
+    },
+    {
+     "h": "Asking for information",
+     "lines": [
+      "What is your name?",
+      "Where are you from?",
+      "Where do you live?",
+      "How old are you?"
+     ]
+    },
+    {
+     "h": "Responding / introducing others",
+     "lines": [
+      "Glad to meet you. – Glad to meet you, too.",
+      "Let me introduce you to …",
+      "This is my classmate …"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Talk to a classmate about yourself."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The alphabet",
+   "match": [
+    "The alphabet: sound and script"
+   ],
+   "pages": [
+    14,
+    15
+   ],
+   "objectives": [
+    "Say and write the letters of the alphabet (capital and small).",
+    "Spell names."
+   ],
+   "intro": "I ask: “How do you spell your name?” and I spell my own name letter by letter on the board.",
+   "summary": "The English alphabet has 26 letters. Each letter has a capital form (A, B, C…) and a small form (a, b, c…). We use the alphabet to spell names: “How do you spell his last name?” – “A-b-d-e-r-r-a-h-m-a-n-e.”",
+   "points": [
+    "26 letters: A to Z.",
+    "Capital letters: A B C D …",
+    "Small letters: a b c d …",
+    "How do you spell it, please?"
+   ],
+   "application": {
+    "q": "Spell your first name and your town.",
+    "a": "Example: S-i-d-i, R-o-s-s-o."
+   },
+   "board": [
+    {
+     "h": "The alphabet",
+     "lines": [
+      "A B C D E F G H I J K L M",
+      "N O P Q R S T U V W X Y Z"
+     ]
+    },
+    {
+     "h": "Capital and small letters",
+     "lines": [
+      "A – a, B – b, C – c …"
+     ]
+    },
+    {
+     "h": "Spelling",
+     "lines": [
+      "How do you spell your name?",
+      "A-h-m-e-d."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Spell your name and your town."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Demonstratives (identifying things)",
+   "match": [
+    "Demonstratives"
+   ],
+   "pages": [
+    23,
+    26
+   ],
+   "objectives": [
+    "Identify things with this, that, these, those.",
+    "Ask if someone has an object."
+   ],
+   "intro": "I hold a pen and say: “This is a pen.” Then I point to the door: “That is a door.” I ask: “What is this?”",
+   "summary": "In the market, Mahmoud asks the shopkeeper: “Can I have that jacket, please?” – “Which one?” – “The blue one.” This and that are used for singular; these and those for plural. This / these: for close things; that / those: for far things. To ask if someone has an object: Do you have a …? Does he / she have a …?",
+   "points": [
+    "This / That + singular: This is a fan.",
+    "These / Those + plural: These are pens.",
+    "This, these: close. That, those: far.",
+    "Do you have a …? Does he have a …?"
+   ],
+   "application": {
+    "q": "Fill in with is / are: This ___ a fan. These ___ not pens. That ___ a lighter.",
+    "a": "This is a fan. These are not pens. That is a lighter."
+   },
+   "board": [
+    {
+     "h": "Demonstratives",
+     "lines": [
+      "Singular: this (close) – that (far)",
+      "Plural: these (close) – those (far)"
+     ]
+    },
+    {
+     "h": "Examples",
+     "lines": [
+      "This is a book.",
+      "That is a door.",
+      "These are pens.",
+      "Those are students."
+     ]
+    },
+    {
+     "h": "Asking",
+     "lines": [
+      "What is this? – It is a ruler.",
+      "Do you have a pen?"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Fill in with is / are."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Listen to me! (Instructions)",
+   "match": [
+    "Responding and giving classroom positive and negative commands/instructions"
+   ],
+   "pages": [
+    27,
+    29
+   ],
+   "objectives": [
+    "Give and respond to positive and negative instructions in the classroom."
+   ],
+   "intro": "I say: “Stand up! … Sit down! … Open your books!” and the students do the actions. Then I ask: “What did I do?”",
+   "summary": "In the dialogue, the teacher reviews the classroom rules: “Look at me! Listen very carefully! Be on time! Don’t sit on the tables!” A positive instruction uses the simple form of the verb: Listen to me! A negative instruction uses Don’t + the simple form of the verb: Don’t sit on the table!",
+   "points": [
+    "Positive instruction: verb (simple form): Listen! Open your book!",
+    "Negative instruction: Don’t + verb: Don’t talk!",
+    "Classroom rules: Be on time! Clean the board! Respect the elders!"
+   ],
+   "application": {
+    "q": "Rearrange: cold / drink / water / don’t.",
+    "a": "Don’t drink cold water!"
+   },
+   "board": [
+    {
+     "h": "Positive instructions",
+     "lines": [
+      "Listen to me!",
+      "Open your books!",
+      "Write the date!"
+     ]
+    },
+    {
+     "h": "Negative instructions",
+     "lines": [
+      "Don’t + verb",
+      "Don’t sit on the table!",
+      "Don’t be lazy!"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Give three classroom rules."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "What time is it?",
+   "match": [
+    "Telling and asking for the time"
+   ],
+   "pages": [
+    51,
+    53
+   ],
+   "objectives": [
+    "Ask for and tell the time.",
+    "Say the time of day (a.m. / p.m.)."
+   ],
+   "intro": "I draw a clock on the board showing 8:00 and ask: “What time is it?”",
+   "summary": "To ask the time: What time is it? What’s the time? Do you have the time, please? To answer: It is eleven o’clock. It is seven-thirty / half past seven. It is twenty past six. We say a.m. (in the morning) and p.m. (in the afternoon, in the evening, at night). Examples: I wake up at seven-thirty in the morning. School ends at noon.",
+   "points": [
+    "What time is it? / What’s the time?",
+    "It is … o’clock.",
+    "Half past, … past, … to.",
+    "a.m. = morning; p.m. = afternoon / evening / night.",
+    "noon (12:00 p.m.), midnight (12:00 a.m.)."
+   ],
+   "application": {
+    "q": "Write the time: 7:30 a.m. and 4:00 p.m.",
+    "a": "It is seven-thirty (half past seven) in the morning. It is four o’clock in the afternoon."
+   },
+   "board": [
+    {
+     "h": "Asking the time",
+     "lines": [
+      "What time is it?",
+      "What’s the time?"
+     ]
+    },
+    {
+     "h": "Telling the time",
+     "lines": [
+      "It is eleven o’clock.",
+      "It is half past seven (7:30).",
+      "It is twenty past six (6:20)."
+     ]
+    },
+    {
+     "h": "Time of day",
+     "lines": [
+      "a.m.: in the morning",
+      "p.m.: in the afternoon / evening / at night",
+      "noon – midnight"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What time do you wake up?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Today is Monday (Days of the week)",
+   "match": [
+    "The seven days of the week"
+   ],
+   "pages": [
+    54,
+    55
+   ],
+   "objectives": [
+    "Name the seven days of the week in order."
+   ],
+   "intro": "I ask: “What day is it today?” and I write the answer on the board.",
+   "summary": "There are seven days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday and Sunday. Monday is the first day of the week, Tuesday is the second … Sunday is the seventh day. Days always start with a capital letter.",
+   "points": [
+    "Seven days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+    "Monday is the first day of the week.",
+    "Days start with a capital letter."
+   ],
+   "application": {
+    "q": "Complete: ___ is the fifth day of the week. Monday is the ___ day of the week.",
+    "a": "Friday is the fifth day. Monday is the first day."
+   },
+   "board": [
+    {
+     "h": "The days of the week",
+     "lines": [
+      "1. Monday",
+      "2. Tuesday",
+      "3. Wednesday",
+      "4. Thursday",
+      "5. Friday",
+      "6. Saturday",
+      "7. Sunday"
+     ]
+    },
+    {
+     "h": "Remember",
+     "lines": [
+      "Days start with a capital letter."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What day is it today?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Show me today’s date (Months and date)",
+   "match": [
+    "The twelve months of the year",
+    "Giving, asking for and writing the date"
+   ],
+   "pages": [
+    56,
+    57
+   ],
+   "objectives": [
+    "Name the twelve months of the year.",
+    "Ask for, give and write the date."
+   ],
+   "intro": "I write today’s date on the board and ask: “What is the date today?”",
+   "summary": "There are twelve months in a year: January, February, March, April, May, June, July, August, September, October, November and December. January is the first month, December is the twelfth. To ask the date: What is the date today? To answer: Today is Monday, the fourth of November. We write: Monday, November 4th.",
+   "points": [
+    "Twelve months: January … December.",
+    "January is the first month; December is the twelfth.",
+    "What is the date today?",
+    "Today is … the … of …",
+    "Months start with a capital letter."
+   ],
+   "application": {
+    "q": "Complete: ___ is the eighth month of the year. Write today’s date.",
+    "a": "August is the eighth month. Example: Today is Wednesday, November 4th."
+   },
+   "board": [
+    {
+     "h": "The months",
+     "lines": [
+      "January, February, March, April",
+      "May, June, July, August",
+      "September, October, November, December"
+     ]
+    },
+    {
+     "h": "The date",
+     "lines": [
+      "What is the date today?",
+      "Today is Monday, the 4th of November.",
+      "Written: Monday, November 4th."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Write your date of birth."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Talking about others (family and friends)",
+   "match": [
+    "Asking for and giving one's family members' and friends' personal information"
+   ],
+   "pages": [
+    42,
+    47
+   ],
+   "objectives": [
+    "Ask for and give information about family members and friends.",
+    "Use he / she, his / her and the simple present (live, have)."
+   ],
+   "intro": "I show a photo of a family and ask: “Who is this man? What is his name? Where does he live?”",
+   "summary": "Mohamed asks Abdoul about his new friend Ahmed: “What’s his name? Where is he from?” Omar introduces his family in a WhatsApp message: “This man is my father, Sow, he is a policeman.” We use he / she, his / her, contractions (he’s, she’s, his name’s) and nationalities (Mauritanian, Canadian…). Simple present: I live – he lives; I don’t live – he doesn’t live; I have – he has.",
+   "points": [
+    "Personal pronouns: he, she. Possessive adjectives: his, her.",
+    "Contractions: he is → he’s, her name is → her name’s.",
+    "Nationalities: Mauritania → Mauritanian.",
+    "He / she lives, has; he / she doesn’t live, doesn’t have."
+   ],
+   "application": {
+    "q": "Write three sentences about a member of your family.",
+    "a": "Example: My brother’s name is Ali. He is twelve years old. He lives in Kiffa."
+   },
+   "board": [
+    {
+     "h": "Asking about others",
+     "lines": [
+      "What’s his / her name?",
+      "Where is he / she from?",
+      "How old is he / she?"
+     ]
+    },
+    {
+     "h": "Giving information",
+     "lines": [
+      "His name’s Ahmed.",
+      "She’s from Boghe.",
+      "He is Mauritanian."
+     ]
+    },
+    {
+     "h": "Simple present",
+     "lines": [
+      "I live – he / she lives",
+      "I have – he / she has",
+      "He doesn’t live – she doesn’t have"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Introduce one member of your family."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "At a party (Identifying people)",
+   "match": [
+    "Demonstratives and relative pronouns"
+   ],
+   "pages": [
+    40,
+    41
+   ],
+   "objectives": [
+    "Identify people using demonstratives and descriptions (in + clothing, with + accessories)."
+   ],
+   "intro": "I point to a student and ask: “Who is that boy in the blue shirt?”",
+   "summary": "At Ahmed’s party, Yacoub asks: “Who is that boy in a blue shirt?” – “He is my brother, Baba.” “And who are those boys?” We identify people with: in + clothing (the boy in a grey jacket is my nephew) and with + body parts / accessories (the man with a mask is a doctor).",
+   "points": [
+    "Who is that boy …? Who are those girls …?",
+    "in + clothing: the girl in a red dress.",
+    "with + accessories / body parts: the man with a cap.",
+    "that / those for people who are far."
+   ],
+   "application": {
+    "q": "Fill in with in / with: The man ___ a black suit is the headmaster. The boy ___ a cap is Samba.",
+    "a": "The man in a black suit … The boy with a cap …"
+   },
+   "board": [
+    {
+     "h": "Asking",
+     "lines": [
+      "Who is that boy in a blue shirt?",
+      "Who are those girls?"
+     ]
+    },
+    {
+     "h": "Identifying",
+     "lines": [
+      "in + clothing: the boy in a grey jacket",
+      "with + accessories: the man with a mask"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Identify three classmates."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Where are these balls? (Locating)",
+   "match": [
+    "Ask about and say where people and things are located"
+   ],
+   "pages": [
+    33,
+    34
+   ],
+   "objectives": [
+    "Ask about and say where people and things are."
+   ],
+   "intro": "I put a pen on the table, then under the table, and ask: “Where is the pen?”",
+   "summary": "Sidi, Fatimetou and Demba are on the bus. Salem is under the car. Ali is behind the car. Lalla is in front of the car. Fatimetou is between Demba and Sidi. To ask: Where is …? Where are …? Prepositions of location: in, on, at, under, behind, in front of, between, above, below, across.",
+   "points": [
+    "Where is …? / Where are …?",
+    "Prepositions: in, on, at, under, behind, in front of, between, above, below.",
+    "Example: The teacher is in front of the students."
+   ],
+   "application": {
+    "q": "Complete: The teacher stands ___ the students. Fatimetou is ___ Demba and Sidi.",
+    "a": "in front of; between."
+   },
+   "board": [
+    {
+     "h": "Asking",
+     "lines": [
+      "Where is the teacher?",
+      "Where are the balls?"
+     ]
+    },
+    {
+     "h": "Prepositions of location",
+     "lines": [
+      "in – on – at",
+      "under – above – below",
+      "behind – in front of – between"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Say where three things are in your classroom."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Describing things",
+   "match": [
+    "Describing things giving their sizes, shapes, quality, colors, origin…"
+   ],
+   "pages": [
+    35,
+    36
+   ],
+   "objectives": [
+    "Describe things: size, shape, colour, quality.",
+    "Use possessive pronouns."
+   ],
+   "intro": "I show a book and ask: “What colour is it? Is it big or small? Is it heavy?”",
+   "summary": "To describe things we use adjectives: large, small, hot, cold, black, red, square, rectangular, oval, good, bad… Adjectives never take “s”. Questions: What’s it like? – It’s … What colour is …? What’s the colour of …? Possessive pronouns: mine, yours, his, hers, its, ours, theirs.",
+   "points": [
+    "Adjectives of size, shape, colour, quality.",
+    "Adjectives never take “s”: two red books.",
+    "What’s it like? What colour is it?",
+    "Possessive pronouns: mine, yours, his, hers, ours, theirs."
+   ],
+   "application": {
+    "q": "Describe your schoolbag with two adjectives.",
+    "a": "Example: My schoolbag is big and blue."
+   },
+   "board": [
+    {
+     "h": "Adjectives",
+     "lines": [
+      "Size: large, small",
+      "Shape: square, oval, rectangular",
+      "Colour: red, white, green",
+      "Quality: good, bad, heavy"
+     ]
+    },
+    {
+     "h": "Questions",
+     "lines": [
+      "What’s it like? – It’s …",
+      "What colour is it? – It’s …"
+     ]
+    },
+    {
+     "h": "Possessive pronouns",
+     "lines": [
+      "mine, yours, his, hers, ours, theirs"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Describe your schoolbag."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Describing people",
+   "match": [
+    "Describing people giving their height, weight, age, personal character, physical traits, state, clothing, body parts"
+   ],
+   "pages": [
+    37,
+    39
+   ],
+   "objectives": [
+    "Describe people: height, age, physical traits, clothing."
+   ],
+   "intro": "I describe a student without saying his name: “He is tall, he has short hair, he is wearing a white shirt.” Who is it?",
+   "summary": "Ahmed is wearing a red shirt. Khady is ten years old; she has black hair; she is a short girl. To describe people we use: He / she is … (tall, short, fat, thin, young, old). He / she has got … (long hair, a beard). He / she wears … To ask: What does he / she look like?",
+   "points": [
+    "He / she is + adjective: tall, short, thin, young.",
+    "He / she has got + noun: long hair, a beard.",
+    "He / she wears / is wearing + clothes.",
+    "What does he / she look like?"
+   ],
+   "application": {
+    "q": "Describe a classmate in two sentences.",
+    "a": "Example: Salma is tall and thin. She has long hair."
+   },
+   "board": [
+    {
+     "h": "Describing",
+     "lines": [
+      "He / she is tall, short, thin, young …",
+      "He / she has got long hair, a beard …",
+      "He / she wears a red shirt …"
+     ]
+    },
+    {
+     "h": "Asking",
+     "lines": [
+      "What does he / she look like?",
+      "Is he / she tall?"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Describe a classmate."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "They can do (Ability)",
+   "match": [
+    "Expressing what one can or can't do"
+   ],
+   "pages": [
+    48,
+    50
+   ],
+   "objectives": [
+    "Express ability and inability with can / can’t."
+   ],
+   "intro": "I ask: “Can you swim? Can you speak English?” and students answer yes or no.",
+   "summary": "Ability: Aminetou can listen to music. Fatma can read. Inability: Ali can’t see. Ousmane can’t speak. To ask a question, we invert the subject and can: Can you drive? Short answers: Yes, I can / No, I can’t.",
+   "points": [
+    "Ability: subject + can + verb.",
+    "Inability: subject + can’t (cannot) + verb.",
+    "Question: Can + subject + verb?",
+    "Short answers: Yes, I can. / No, I can’t."
+   ],
+   "application": {
+    "q": "Answer: Can you speak Hassaniya? Can you fly with your arms?",
+    "a": "Yes, I can. / No, I can’t."
+   },
+   "board": [
+    {
+     "h": "Ability",
+     "lines": [
+      "I can read.",
+      "She can listen to music."
+     ]
+    },
+    {
+     "h": "Inability",
+     "lines": [
+      "He can’t see.",
+      "I cannot fly."
+     ]
+    },
+    {
+     "h": "Questions",
+     "lines": [
+      "Can you drive? – Yes, I can. / No, I can’t."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Say two things you can do and one you can’t."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Daily routine (Habitual actions)",
+   "match": [
+    "Talking about routines and frequency of actions"
+   ],
+   "pages": [
+    58,
+    60
+   ],
+   "objectives": [
+    "Talk about habitual actions with the simple present.",
+    "Use frequency adverbs."
+   ],
+   "intro": "I ask: “What time do you wake up? What do you do before school?”",
+   "summary": "“On a typical day, I wake up at six o’clock, I do my ablutions and pray, I eat my breakfast…” The simple present is used for habitual actions: I / you / we / they write; he / she / it writes. Negative: I don’t write; he doesn’t write. Frequency adverbs: always, usually, often, sometimes, rarely, never.",
+   "points": [
+    "Simple present for routines.",
+    "He / she / it + verb + s: he writes.",
+    "Negative: don’t / doesn’t + verb.",
+    "Frequency adverbs: always, usually, often, sometimes, rarely, never."
+   ],
+   "application": {
+    "q": "Write three sentences about your morning routine.",
+    "a": "Example: I always wake up at six. I usually eat breakfast. I never come late."
+   },
+   "board": [
+    {
+     "h": "Simple present",
+     "lines": [
+      "I / you / we / they write",
+      "He / she / it writes",
+      "Negative: don’t / doesn’t write"
+     ]
+    },
+    {
+     "h": "Frequency adverbs",
+     "lines": [
+      "always – usually – often",
+      "sometimes – rarely – never"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Describe your typical day."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Different tasks (Ongoing actions)",
+   "match": [
+    "Asking and answering questions about what one is presently doing"
+   ],
+   "pages": [
+    61,
+    63
+   ],
+   "objectives": [
+    "Describe ongoing actions with the present continuous."
+   ],
+   "intro": "I start writing on the board and ask: “What am I doing now?”",
+   "summary": "He is watching television. She is cooking. We are studying English. The present continuous describes an ongoing action: be (am, is, are) + verb + ing. Questions: What are you doing? – I am making some tea. Spelling: take → taking, cut → cutting, begin → beginning.",
+   "points": [
+    "Present continuous: am / is / are + verb-ing.",
+    "What are you doing? – I am …",
+    "Spelling: take → taking, cut → cutting."
+   ],
+   "application": {
+    "q": "Put the verb in the present continuous: Demba (pray). The teacher (write) a note.",
+    "a": "Demba is praying. The teacher is writing a note."
+   },
+   "board": [
+    {
+     "h": "Present continuous",
+     "lines": [
+      "am / is / are + verb + ing",
+      "He is reading.",
+      "They are swimming."
+     ]
+    },
+    {
+     "h": "Questions",
+     "lines": [
+      "What are you doing?",
+      "What is he doing?"
+     ]
+    },
+    {
+     "h": "Spelling",
+     "lines": [
+      "take → taking",
+      "cut → cutting",
+      "begin → beginning"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What are you doing now?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Which game do you like? (Likes and dislikes)",
+   "match": [
+    "Asking and answering questions about what one likes/dislikes"
+   ],
+   "pages": [
+    64,
+    65
+   ],
+   "objectives": [
+    "Ask and answer about likes and dislikes."
+   ],
+   "intro": "I ask: “Do you like football? What is your favourite sport?”",
+   "summary": "Sidi asks Ousmane about his hobbies: “Do you play football?” – “Yes, I do. I love playing football.” We say: I like + verb-ing / + noun (I like football, I like reading). I don’t like / I dislike / I hate + verb-ing. Questions: Do you like …? What is your favourite …?",
+   "points": [
+    "I like / love + verb-ing or noun.",
+    "I don’t like / dislike / hate + verb-ing.",
+    "Do you like …? – Yes, I do. / No, I don’t.",
+    "What is your favourite …?"
+   ],
+   "application": {
+    "q": "Talk about two things you like and one thing you dislike.",
+    "a": "Example: I like reading and playing football. I don’t like hot weather."
+   },
+   "board": [
+    {
+     "h": "Likes",
+     "lines": [
+      "I like football.",
+      "I love playing football."
+     ]
+    },
+    {
+     "h": "Dislikes",
+     "lines": [
+      "I don’t like hot weather.",
+      "I dislike / hate …"
+     ]
+    },
+    {
+     "h": "Questions",
+     "lines": [
+      "Do you like …? – Yes, I do. / No, I don’t.",
+      "What is your favourite sport?"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Say three things you like."
+     ]
+    }
+   ]
+  }
+ ]
+}

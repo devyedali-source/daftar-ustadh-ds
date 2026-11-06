@@ -1,0 +1,228 @@
+{
+ "subject": "FR",
+ "level": "1AS",
+ "book": "books/FR_1AS.pdf",
+ "bookTitle": "Manuel de français — 1re année (1AS), IPN",
+ "lessons": [
+  {
+   "title": "Unité 1 : Informer et s’informer (se présenter, présenter autrui)",
+   "match": [
+    "Informer sur soi et sur autrui",
+    "Demander des informations sur autrui et sur son environnement"
+   ],
+   "pages": [
+    11,
+    30
+   ],
+   "objectives": [
+    "Se présenter et présenter autrui.",
+    "Recueillir des informations sur l’autre.",
+    "Points de langue : lexique de la parenté, pronoms personnels, accord du verbe avec son sujet, on / ont / a / à."
+   ],
+   "intro": "J’observe l’image de la cour du collège avec les élèves, puis je lis la présentation de Mohamed : « Salut, Youssouf ! Je m’appelle Mohamed. Je suis élève au collège Dar Naim 3. J’ai 13 ans… » Je demande : « Et toi, comment te présentes-tu ? »",
+   "summary": "Pour se présenter, on donne son nom, son âge, son collège, sa famille, sa ville. Pour s’informer sur l’autre, on pose des questions : Comment t’appelles-tu ? Quel âge as-tu ? Où habites-tu ? Les mots de la parenté indiquent les liens dans la famille : le père, la mère, le frère, la sœur, l’oncle, la tante, le cousin, le neveu… Les pronoms personnels remplacent des noms ou des groupes nominaux ; ils peuvent être sujets (je, tu, il…) ou compléments (me, te, le, la, lui, nous, vous, les, leur). Le verbe conjugué s’accorde avec son sujet. Enfin, « a » est le verbe avoir, « à » est une préposition ; « ont » est le verbe avoir, « on » est un pronom.",
+   "points": [
+    "Se présenter : Je m’appelle… J’ai … ans. Je suis élève au collège…",
+    "S’informer : Comment t’appelles-tu ? Quel âge as-tu ? Où habites-tu ?",
+    "Parenté : père, mère, frère, sœur, oncle, tante, cousin(e), neveu, nièce.",
+    "Pronoms personnels sujets (je, tu, il…) et compléments (me, te, le, la, lui, leur…).",
+    "Le verbe s’accorde avec son sujet. a / à ; on / ont."
+   ],
+   "application": {
+    "q": "Complète par a ou à : Il … faim. Je vais … Kiffa. Complète par on ou ont : Ils … de vieux vélos.",
+    "a": "Il a faim. Je vais à Kiffa. Ils ont de vieux vélos."
+   },
+   "board": [
+    {
+     "h": "Me présenter",
+     "lines": [
+      "Je m’appelle …",
+      "J’ai … ans.",
+      "Je suis élève au collège …",
+      "J’habite à …"
+     ]
+    },
+    {
+     "h": "Questions pour s’informer",
+     "lines": [
+      "Comment t’appelles-tu ?",
+      "Quel âge as-tu ?",
+      "Où habites-tu ?"
+     ]
+    },
+    {
+     "h": "Vocabulaire : la parenté",
+     "lines": [
+      "le père, la mère, le frère, la sœur",
+      "l’oncle, la tante, le cousin, la cousine",
+      "le neveu, la nièce, le grand-père, la grand-mère"
+     ]
+    },
+    {
+     "h": "Grammaire : les pronoms personnels",
+     "lines": [
+      "Sujets : je, tu, il/elle, nous, vous, ils/elles",
+      "Compléments : me, te, le, la, lui, nous, vous, les, leur"
+     ]
+    },
+    {
+     "h": "Orthographe : a / à – on / ont",
+     "lines": [
+      "a = verbe avoir : il a faim.",
+      "à = préposition : aller à Kiffa.",
+      "ont = verbe avoir : ils ont ; on = pronom : on joue."
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Présente un camarade à la classe."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité 2 : Mon environnement (1) – décrire une chambre, une maison, une école",
+   "match": [
+    "Informer sur son environnement",
+    "Décrire un objet (outil, appareil, matière) dans son environnement"
+   ],
+   "pages": [
+    31,
+    44
+   ],
+   "objectives": [
+    "Décrire son environnement immédiat : une chambre, une maison, une école.",
+    "Points de langue : lexique de la localisation, l’adjectif qualificatif épithète, avoir / être / voir au présent et à l’imparfait, le son /é/."
+   ],
+   "intro": "J’observe l’image d’une chambre à coucher avec les élèves : « Que présente cette image ? Quels matériels contient-elle ? » Puis nous lisons le texte « Ma chambre ».",
+   "summary": "Pour rédiger une description, on donne d’abord des informations générales sur ce qui est décrit, puis les détails de chaque partie : un objet, un lieu, une personne. Pour situer les éléments, on utilise les indicateurs spatiaux : à droite, à gauche, devant, derrière, au milieu, à côté de, au fond, au-dessus, au-dessous, sur. L’adjectif qualificatif épithète complète le nom : « ma grande sœur », « une longue table ». Pour décrire, on emploie le présent et l’imparfait et des verbes de perception (voir, regarder, observer). Le son /é/ s’écrit de plusieurs façons : est, et, é, ée, er, ait.",
+   "points": [
+    "Décrire : informations générales, puis détails.",
+    "Indicateurs spatiaux : à droite, à gauche, devant, derrière, au milieu, à côté de, sur.",
+    "L’adjectif épithète : ma grande sœur, une longue table.",
+    "Temps de la description : présent et imparfait (avoir, être, voir).",
+    "Le son /é/ : est, et, é, ée, er, ait."
+   ],
+   "application": {
+    "q": "Écris trois phrases pour décrire ta salle de classe avec : au milieu, à droite, au fond.",
+    "a": "Exemple : Au milieu, il y a les tables des élèves. À droite, il y a une grande fenêtre. Au fond, il y a une armoire."
+   },
+   "board": [
+    {
+     "h": "Décrire un lieu",
+     "lines": [
+      "1. Informations générales",
+      "2. Détails de chaque partie"
+     ]
+    },
+    {
+     "h": "Vocabulaire : la localisation",
+     "lines": [
+      "à droite – à gauche – devant – derrière",
+      "au milieu – à côté de – au fond – sur – sous"
+     ]
+    },
+    {
+     "h": "Grammaire : l’adjectif épithète",
+     "lines": [
+      "ma sœur → ma grande sœur",
+      "une table → une longue table"
+     ]
+    },
+    {
+     "h": "Conjugaison",
+     "lines": [
+      "Présent : j’ai, je suis, je vois",
+      "Imparfait : j’avais, j’étais, je voyais"
+     ]
+    },
+    {
+     "h": "Orthographe : le son /é/",
+     "lines": [
+      "est (verbe être) – et (conjonction)",
+      "é / ée (participe passé) – er (infinitif)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Décris ta chambre en cinq phrases."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité 3 : Mon environnement (2) – décrire un paysage, un espace",
+   "match": [
+    "Décrire un lieu / un paysage se trouvant dans son environnement"
+   ],
+   "pages": [
+    45,
+    58
+   ],
+   "objectives": [
+    "Décrire un paysage, un espace.",
+    "Points de langue : lexique du climat et des saisons, le complément du nom, la tournure impersonnelle, les articles partitifs."
+   ],
+   "intro": "J’observe avec les élèves l’image d’un paysage désertique : « Qu’est-ce que vous voyez ? Les hommes peuvent-ils vivre dans ce lieu ? Pourquoi ? » Puis nous lisons le texte « La désertification ».",
+   "summary": "Pour décrire un paysage, on observe ses composants et on les situe. Le lexique du climat et des saisons aide à décrire : l’hiver (froid), le printemps (doux), l’été (très chaud), l’automne (entre chaleur et fraîcheur). Le complément du nom est un nom précédé d’une préposition qui complète un autre nom : les prévisions de la météo, le manche en bois, la boîte à outils. Certains verbes s’emploient seulement à la 3e personne du singulier avec un « il » impersonnel : il pleut, il neige, il fait chaud. L’article partitif (du, de la, des, d’) s’emploie devant des choses qu’on ne compte pas : du vent, de la pluie.",
+   "points": [
+    "Les saisons : hiver, printemps, été, automne.",
+    "Le complément du nom : nom + de / à / en + nom.",
+    "La tournure impersonnelle : il pleut, il neige, il fait chaud.",
+    "Les articles partitifs : du, de la, des, d’."
+   ],
+   "application": {
+    "q": "Complète par du, de la, des ou d’ : La dégradation … couvert végétal. Les pluies … hiver. Le mouvement … jeunes.",
+    "a": "La dégradation du couvert végétal. Les pluies d’hiver. Le mouvement des jeunes."
+   },
+   "board": [
+    {
+     "h": "Décrire un paysage",
+     "lines": [
+      "Observer les composants",
+      "Les situer dans l’espace"
+     ]
+    },
+    {
+     "h": "Vocabulaire : climat et saisons",
+     "lines": [
+      "l’hiver : froid",
+      "le printemps : doux",
+      "l’été : très chaud",
+      "l’automne : entre chaleur et fraîcheur"
+     ]
+    },
+    {
+     "h": "Grammaire : le complément du nom",
+     "lines": [
+      "la boîte à outils",
+      "le manche en bois",
+      "les prévisions de la météo"
+     ]
+    },
+    {
+     "h": "Conjugaison : la tournure impersonnelle",
+     "lines": [
+      "il pleut – il neige – il fait chaud – il fait nuit"
+     ]
+    },
+    {
+     "h": "Orthographe : les partitifs",
+     "lines": [
+      "du = de + le",
+      "des = de + les",
+      "d’ devant une voyelle"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Décris le paysage de ta ville en saison des pluies."
+     ]
+    }
+   ]
+  }
+ ]
+}
