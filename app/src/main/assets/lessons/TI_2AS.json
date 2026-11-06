@@ -1,0 +1,446 @@
+{
+ "subject": "TI",
+ "level": "2AS",
+ "book": "books/TI_2AS.pdf",
+ "bookTitle": "Technologie 2AS — IPN",
+ "lessons": [
+  {
+   "title": "Système technique",
+   "match": [
+    "Système technique"
+   ],
+   "pages": [
+    9,
+    19
+   ],
+   "objectives": [
+    "Définir un système technique et décrire son fonctionnement (intrant → système → extrant).",
+    "Classer les systèmes techniques et modéliser un système simple."
+   ],
+   "intro": "Je montre un grille-pain (ou une image) et je demande : « Qu’est-ce qui entre dans cet objet ? Qu’est-ce qui en sort ? »",
+   "summary": "Un système technique est un ensemble d’éléments qui fonctionnent ensemble pour répondre à un besoin : une voiture permet de se déplacer, un lave-linge de laver le linge. Les systèmes évoluent selon le besoin, les performances attendues et les normes. Un système simple se comprend par son diagramme fonctionnel : intrant (matière, énergie, information) → système → extrant (produit, service, information). Exemple : grille-pain : pain + énergie électrique → éléments chauffants, minuterie → pain grillé. On classe les systèmes selon leur fonction (transformation, transmission, stockage, contrôle) ou selon leur source d’énergie. On le modélise par un schéma fonctionnel, un diagramme de blocs ou un dessin technique.",
+   "points": [
+    "Système technique : éléments qui répondent ensemble à un besoin.",
+    "Intrant → Système → Extrant.",
+    "Classement : transformation, transmission, stockage, contrôle.",
+    "Modélisation : schéma fonctionnel, diagramme de blocs, dessin technique."
+   ],
+   "application": {
+    "q": "Donne l’intrant et l’extrant d’une lampe de poche.",
+    "a": "Intrant : énergie électrique des piles. Extrant : lumière."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Ensemble d’éléments qui répondent à un besoin"
+     ]
+    },
+    {
+     "h": "Fonctionnement",
+     "lines": [
+      "Intrant → Système → Extrant",
+      "Grille-pain : pain + électricité → pain grillé"
+     ]
+    },
+    {
+     "h": "Classement",
+     "lines": [
+      "Transformation – transmission – stockage – contrôle"
+     ]
+    },
+    {
+     "h": "Modélisation",
+     "lines": [
+      "Schéma fonctionnel – diagramme de blocs – dessin technique"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Donne l’intrant et l’extrant d’une lampe de poche."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Caractéristiques physiques des matériaux",
+   "match": [
+    "Caractéristiques physiques des matériaux"
+   ],
+   "pages": [
+    21,
+    26
+   ],
+   "objectives": [
+    "Connaître les propriétés physiques des familles de matériaux.",
+    "Choisir un matériau adapté à un usage."
+   ],
+   "intro": "Je demande : « Pourquoi une casserole est-elle en métal et son manche en plastique ou en bois ? »",
+   "summary": "Les matériaux se classent en familles : métalliques (fer, cuivre, aluminium), céramiques (verre, béton), organiques (bois, plastique) et composites. Chaque famille a des caractéristiques physiques : masse volumique, résistance mécanique, conductivité thermique et électrique, transparence, perméabilité. Les métaux conduisent bien la chaleur et l’électricité ; les céramiques sont très résistantes mais cassantes ; les organiques sont légers et isolants ; les composites ont une excellente résistance. On choisit un matériau selon les contraintes : résistance, chaleur, électricité, masse, coût.",
+   "points": [
+    "Familles : métalliques, céramiques, organiques, composites.",
+    "Métaux : bons conducteurs de chaleur et d’électricité.",
+    "Céramiques : résistantes mais cassantes.",
+    "Organiques : légers et isolants.",
+    "Choix selon : résistance, conductivité, masse, coût."
+   ],
+   "application": {
+    "q": "Pourquoi utilise-t-on le cuivre dans les fils électriques ?",
+    "a": "Parce que c’est un métal très bon conducteur de l’électricité."
+   },
+   "board": [
+    {
+     "h": "Familles de matériaux",
+     "lines": [
+      "Métalliques : fer – cuivre – aluminium",
+      "Céramiques : verre – béton",
+      "Organiques : bois – plastique",
+      "Composites"
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Masse volumique – résistance mécanique",
+      "Conductivité thermique et électrique – transparence"
+     ]
+    },
+    {
+     "h": "Choisir un matériau",
+     "lines": [
+      "Selon l’usage : résistance, chaleur, électricité, masse, coût"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi utilise-t-on le cuivre dans les fils électriques ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fonction protection et réception",
+   "match": [
+    "Fonction protection et réception"
+   ],
+   "pages": [
+    27,
+    32
+   ],
+   "objectives": [
+    "Identifier la fonction de protection et ses dispositifs.",
+    "Identifier la fonction de réception dans un objet réel."
+   ],
+   "intro": "Je demande : « Que se passe-t-il dans la maison quand il y a un court-circuit ? Qu’est-ce qui coupe le courant ? »",
+   "summary": "La fonction de protection protège les personnes et les appareils : le fusible et le disjoncteur coupent le courant en cas de surintensité, la mise à la masse protège contre les chocs électriques, le paratonnerre protège les bâtiments contre la foudre. Il existe aussi des protections mécaniques (coques, carters, amortisseurs). La fonction de réception permet à un objet de capter un signal ou une énergie et de la transformer en effet utile : l’ampoule transforme l’énergie électrique en lumière, le fer à repasser en chaleur, le séchoir en chaleur et en mouvement ; l’antenne et le micro captent des signaux.",
+   "points": [
+    "Protection : fusible, disjoncteur, masse, paratonnerre.",
+    "Protections mécaniques : coques, carters, amortisseurs.",
+    "Réception : capter et transformer une énergie ou un signal.",
+    "Ampoule → lumière ; fer à repasser → chaleur."
+   ],
+   "application": {
+    "q": "Quel dispositif protège une maison contre la foudre ? Et contre un court-circuit ?",
+    "a": "Le paratonnerre ; le fusible ou le disjoncteur."
+   },
+   "board": [
+    {
+     "h": "Fonction protection",
+     "lines": [
+      "Fusible – disjoncteur : coupent le courant",
+      "Masse : contre les chocs électriques",
+      "Paratonnerre : contre la foudre"
+     ]
+    },
+    {
+     "h": "Fonction réception",
+     "lines": [
+      "Capter et transformer une énergie",
+      "Ampoule : électricité → lumière",
+      "Fer à repasser : électricité → chaleur"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quel dispositif protège une maison contre la foudre ? Et contre un court-circuit ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’entreprise et les secteurs d’activités économiques",
+   "match": [
+    "L'entreprise et les secteurs d'activités économiques"
+   ],
+   "pages": [
+    33,
+    37
+   ],
+   "objectives": [
+    "Définir l’entreprise et ses types.",
+    "Distinguer les secteurs primaire, secondaire et tertiaire et leurs technologies."
+   ],
+   "intro": "Je cite SNIM, TOPLAIT et MAURITEL et je demande : « Que produit ou que fournit chacune de ces entreprises ? »",
+   "summary": "Une entreprise est une organisation qui produit des biens ou des services pour les vendre sur un marché afin de réaliser un profit. On la classe selon sa taille (micro-entreprise, PME, grande entreprise) et selon son statut (privée, publique, coopérative). Le secteur primaire exploite les ressources naturelles (agriculture, pêche, mines), le secondaire transforme les matières premières (industrie, construction), le tertiaire fournit des services (commerce, éducation, santé). L’entreprise crée des emplois, produit des richesses, paie des impôts et innove. Chaque secteur utilise des technologies adaptées : drones et GPS en agriculture, robots dans l’industrie, codes-barres dans le commerce.",
+   "points": [
+    "Entreprise : produit des biens ou des services pour un profit.",
+    "Taille : micro, PME, grande ; statut : privée, publique, coopérative.",
+    "Primaire : ressources naturelles ; secondaire : transformation ; tertiaire : services.",
+    "Rôle : emplois, richesses, impôts, innovation."
+   ],
+   "application": {
+    "q": "Classe par secteur : une mine de fer, une laiterie, une banque.",
+    "a": "Mine de fer : primaire. Laiterie : secondaire. Banque : tertiaire."
+   },
+   "board": [
+    {
+     "h": "L’entreprise",
+     "lines": [
+      "Produit des biens ou des services pour réaliser un profit",
+      "Privée – publique – coopérative"
+     ]
+    },
+    {
+     "h": "Les secteurs",
+     "lines": [
+      "Primaire : agriculture – pêche – mines",
+      "Secondaire : industrie – construction",
+      "Tertiaire : commerce – éducation – santé"
+     ]
+    },
+    {
+     "h": "Rôle",
+     "lines": [
+      "Emplois – richesses – impôts – innovation"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe par secteur : une mine de fer, une laiterie, une banque."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les critères et les leviers du développement durable",
+   "match": [
+    "Les critères et les leviers du développement durable"
+   ],
+   "pages": [
+    39,
+    42
+   ],
+   "objectives": [
+    "Comprendre la notion de développement durable et ses trois piliers.",
+    "Connaître des actions concrètes : biodiversité, recyclage, énergies renouvelables."
+   ],
+   "intro": "Je donne une liste d’actions (sac réutilisable, piles jetées à la poubelle…) et je demande : « Lesquelles protègent la planète ? »",
+   "summary": "Le développement durable est un mode de développement qui répond aux besoins du présent sans compromettre ceux des générations futures. Il repose sur trois piliers : l’écologie (environnement), l’économie et le social. Ses leviers : protéger la biodiversité (l’ensemble des espèces vivantes), pratiquer l’économie circulaire (réutiliser les déchets dans le cycle de production), utiliser les énergies renouvelables (propres et inépuisables), trier ses déchets, composter, protéger les espèces menacées.",
+   "points": [
+    "Répondre aux besoins présents et futurs.",
+    "Trois piliers : écologie, économie, social.",
+    "Biodiversité : ensemble des espèces vivantes.",
+    "Économie circulaire : réutiliser les déchets.",
+    "Énergies renouvelables : propres et inépuisables."
+   ],
+   "application": {
+    "q": "Associe : économie circulaire – biodiversité – énergie renouvelable.",
+    "a": "Économie circulaire : réutilisation des déchets ; biodiversité : ensemble des espèces vivantes ; énergie renouvelable : énergie propre et inépuisable."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Répondre aux besoins du présent sans compromettre ceux des générations futures"
+     ]
+    },
+    {
+     "h": "Trois piliers",
+     "lines": [
+      "Écologie – économie – social"
+     ]
+    },
+    {
+     "h": "Leviers",
+     "lines": [
+      "Biodiversité – économie circulaire – énergies renouvelables",
+      "Tri des déchets – compostage – protection des espèces"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Associe : économie circulaire – biodiversité – énergie renouvelable."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les causes des changements climatiques",
+   "match": [
+    "Les causes des changements climatiques"
+   ],
+   "pages": [
+    43,
+    46
+   ],
+   "objectives": [
+    "Comprendre ce qu’est le changement climatique.",
+    "Expliquer le rôle des gaz à effet de serre et des activités humaines."
+   ],
+   "intro": "Je demande : « Il fait de plus en plus chaud chaque année. Pourquoi ? »",
+   "summary": "Le changement climatique désigne les modifications durables du climat de la Terre, surtout le réchauffement. Il est dû à l’augmentation des gaz à effet de serre (GES) : dioxyde de carbone (CO₂), méthane (CH₄), protoxyde d’azote (N₂O, engrais chimiques)… qui retiennent la chaleur. Les causes humaines : les transports (CO₂), l’industrie (énergies fossiles), l’agriculture intensive (méthane), la déforestation (moins d’arbres pour absorber le CO₂), le chauffage et l’électricité produits au charbon.",
+   "points": [
+    "Changement climatique : modification durable du climat.",
+    "Gaz à effet de serre : CO₂, méthane, N₂O.",
+    "Causes : transports, industrie, agriculture intensive.",
+    "Déforestation : moins d’absorption de CO₂."
+   ],
+   "application": {
+    "q": "Vrai ou faux : « Les volcans sont les principaux responsables du réchauffement climatique. »",
+    "a": "Faux : ce sont surtout les activités humaines (transports, industrie, déforestation)."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Modification durable du climat (réchauffement)"
+     ]
+    },
+    {
+     "h": "Gaz à effet de serre",
+     "lines": [
+      "CO₂ – méthane (CH₄) – protoxyde d’azote (N₂O)"
+     ]
+    },
+    {
+     "h": "Causes humaines",
+     "lines": [
+      "Transports – industrie – agriculture intensive",
+      "Déforestation – électricité au charbon"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Vrai ou faux : « Les volcans sont les principaux responsables du réchauffement climatique. »"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les conséquences des changements climatiques",
+   "match": [
+    "Les conséquences des changements climatiques"
+   ],
+   "pages": [
+    47,
+    52
+   ],
+   "objectives": [
+    "Identifier les conséquences du réchauffement climatique.",
+    "Connaître les actions pour le limiter."
+   ],
+   "intro": "Je montre des photos de glaciers fondus, d’inondations et de forêts brûlées et je demande : « Quel lien avec le climat ? »",
+   "summary": "Le réchauffement climatique a de graves conséquences : fonte des glaces et élévation du niveau de la mer, phénomènes extrêmes plus fréquents (ouragans, inondations, incendies), déforestation aggravée, perturbation des écosystèmes (migration et disparition d’espèces), et conséquences humaines (manque d’eau et de nourriture, maladies, migrations climatiques). Pour agir : réduire les émissions de CO₂, produire une énergie propre, améliorer l’efficacité énergétique, privilégier les transports en commun et le vélo, protéger et restaurer les forêts et les zones humides.",
+   "points": [
+    "Fonte des glaces, élévation du niveau de la mer.",
+    "Phénomènes extrêmes : ouragans, inondations, incendies.",
+    "Disparition d’espèces, déséquilibre des écosystèmes.",
+    "Manque d’eau et de nourriture, migrations climatiques.",
+    "Agir : énergies propres, transports doux, protéger les forêts."
+   ],
+   "application": {
+    "q": "Propose trois gestes pour limiter le réchauffement climatique.",
+    "a": "Éteindre les lumières inutiles, marcher ou prendre le bus, planter des arbres."
+   },
+   "board": [
+    {
+     "h": "Conséquences naturelles",
+     "lines": [
+      "Fonte des glaces – élévation du niveau de la mer",
+      "Ouragans – inondations – incendies",
+      "Disparition d’espèces"
+     ]
+    },
+    {
+     "h": "Conséquences humaines",
+     "lines": [
+      "Manque d’eau et de nourriture – maladies – migrations climatiques"
+     ]
+    },
+    {
+     "h": "Agir",
+     "lines": [
+      "Réduire le CO₂ – énergies propres – transports en commun – protéger les forêts"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Propose trois gestes pour limiter le réchauffement climatique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les types d’énergies renouvelables",
+   "match": [
+    "Les types d'énergies renouvelables et leurs caractéristiques"
+   ],
+   "pages": [
+    53,
+    56
+   ],
+   "objectives": [
+    "Définir une énergie renouvelable.",
+    "Décrire les énergies éolienne, hydraulique et solaire et leurs caractéristiques."
+   ],
+   "intro": "Je montre des images d’un panneau solaire, d’un barrage et d’une éolienne et je demande : « Quelle source naturelle utilise chacun ? »",
+   "summary": "Une énergie renouvelable est produite à partir de sources naturelles inépuisables à l’échelle humaine (vent, soleil, eau) ; elle est propre et respectueuse de l’environnement. L’énergie éolienne : le vent fait tourner les pales d’une éolienne qui entraîne un générateur électrique. L’énergie hydraulique : l’eau d’un barrage fait tourner une turbine. L’énergie solaire : les panneaux photovoltaïques transforment la lumière du soleil en électricité. Caractéristiques : durabilité, faibles émissions de gaz à effet de serre, diversité des ressources, technologies innovantes.",
+   "points": [
+    "Énergie renouvelable : source naturelle inépuisable.",
+    "Éolienne : le vent.",
+    "Hydraulique : l’eau (barrage, turbine).",
+    "Solaire : le soleil (panneaux photovoltaïques).",
+    "Durable et peu polluante."
+   ],
+   "application": {
+    "q": "Associe : éolienne, barrage, panneau photovoltaïque → leur source d’énergie.",
+    "a": "Éolienne : vent ; barrage : eau ; panneau photovoltaïque : soleil."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Énergie issue de sources naturelles inépuisables"
+     ]
+    },
+    {
+     "h": "Types",
+     "lines": [
+      "Éolienne : vent → pales → générateur",
+      "Hydraulique : eau → turbine",
+      "Solaire : soleil → panneaux photovoltaïques"
+     ]
+    },
+    {
+     "h": "Caractéristiques",
+     "lines": [
+      "Durable – peu de gaz à effet de serre – ressources variées"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Associe : éolienne, barrage, panneau photovoltaïque → leur source d’énergie."
+     ]
+    }
+   ]
+  }
+ ]
+}

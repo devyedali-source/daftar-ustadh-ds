@@ -1,0 +1,1126 @@
+{
+ "subject": "PC",
+ "level": "2AS",
+ "book": "books/PC_2AS.pdf",
+ "bookTitle": "Physique-Chimie 2AS — IPN",
+ "lessons": [
+  {
+   "title": "Les mélanges : homogènes et hétérogènes",
+   "match": [
+    "Mélanges : définition",
+    "Mélanges homogènes et hétérogènes"
+   ],
+   "pages": [
+    8,
+    8
+   ],
+   "objectives": [
+    "Définir un mélange.",
+    "Distinguer un mélange homogène d’un mélange hétérogène."
+   ],
+   "intro": "Je verse du sel dans un verre d’eau et du sable dans un autre verre, puis je demande : « Que voyez-vous dans chaque verre ? »",
+   "summary": "Un mélange est constitué de plusieurs constituants. Le mélange est hétérogène si l’on distingue à l’œil nu au moins deux constituants (eau + sable, eau + huile) ; sinon c’est un mélange homogène (eau + sel, eau + sucre).",
+   "points": [
+    "Mélange : plusieurs constituants.",
+    "Hétérogène : on distingue au moins deux constituants.",
+    "Homogène : on ne distingue qu’une seule phase."
+   ],
+   "application": {
+    "q": "Classe : eau + sable ; eau + sucre ; eau + huile.",
+    "a": "Hétérogènes : eau + sable, eau + huile. Homogène : eau + sucre."
+   },
+   "board": [
+    {
+     "h": "Mélange",
+     "lines": [
+      "Corps formé de plusieurs constituants"
+     ]
+    },
+    {
+     "h": "Types",
+     "lines": [
+      "Hétérogène : on distingue au moins 2 constituants (eau + sable)",
+      "Homogène : un seul aspect (eau + sel)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : eau + sable ; eau + sucre ; eau + huile."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Décantation et filtration",
+   "match": [
+    "Méthodes de séparation des mélanges liquides : décantation, filtration"
+   ],
+   "pages": [
+    8,
+    10
+   ],
+   "objectives": [
+    "Séparer les constituants d’un mélange hétérogène par décantation et filtration."
+   ],
+   "intro": "Je montre de l’eau boueuse et je demande : « Comment obtenir une eau claire ? »",
+   "summary": "La décantation consiste à laisser reposer un mélange : les corps les plus lourds se déposent au fond et l’on peut récupérer le liquide au-dessus. La filtration élimine les particules solides plus fines : on place un filtre dans un entonnoir et on verse lentement le liquide ; le filtre laisse passer le liquide et retient les particules plus grosses que ses trous. Le liquide limpide obtenu est le filtrat.",
+   "points": [
+    "Décantation : laisser reposer, les corps lourds se déposent.",
+    "Filtration : filtre + entonnoir.",
+    "Le filtre retient les particules solides.",
+    "Filtrat : liquide limpide obtenu."
+   ],
+   "application": {
+    "q": "Quelle méthode utiliser pour séparer le sable de l’eau ? Comment appelle-t-on le liquide obtenu après filtration ?",
+    "a": "Décantation puis filtration ; le liquide obtenu est le filtrat."
+   },
+   "board": [
+    {
+     "h": "Décantation",
+     "lines": [
+      "Laisser reposer : les corps lourds se déposent au fond"
+     ]
+    },
+    {
+     "h": "Filtration",
+     "lines": [
+      "Filtre dans un entonnoir",
+      "Le filtre retient les solides – le liquide obtenu est le filtrat"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle méthode utiliser pour séparer le sable de l’eau ? Comment appelle-t-on le liquide obtenu après filtration ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La distillation",
+   "match": [
+    "Distillation"
+   ],
+   "pages": [
+    10,
+    11
+   ],
+   "objectives": [
+    "Décrire la distillation et son rôle."
+   ],
+   "intro": "Je demande : « L’eau salée est limpide. Peut-on en retirer le sel par filtration ? »",
+   "summary": "La distillation permet de séparer les constituants d’un mélange homogène. On chauffe le mélange dans un ballon : la vapeur d’eau s’élève, passe dans le réfrigérant où elle se refroidit et se liquéfie ; des gouttes d’eau pure tombent dans le bécher : c’est le distillat (eau distillée). Les composés solides dissous restent dans le ballon.",
+   "points": [
+    "Distillation : séparer les constituants d’un mélange homogène.",
+    "Chauffage → vapeur → refroidissement → liquide.",
+    "Distillat : eau quasiment pure.",
+    "Les solides dissous restent dans le ballon."
+   ],
+   "application": {
+    "q": "Comment appelle-t-on l’eau obtenue par distillation ? Que reste-t-il dans le ballon ?",
+    "a": "L’eau distillée (le distillat) ; il reste les solides dissous (le sel)."
+   },
+   "board": [
+    {
+     "h": "Principe",
+     "lines": [
+      "Chauffer → vaporiser → refroidir → liquéfier"
+     ]
+    },
+    {
+     "h": "Résultats",
+     "lines": [
+      "Distillat = eau distillée (quasiment pure)",
+      "Dans le ballon : les solides dissous"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment appelle-t-on l’eau obtenue par distillation ? Que reste-t-il dans le ballon ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’air : composition, masse et pression",
+   "match": [
+    "Mélanges gazeux : air",
+    "Composition de l'air",
+    "Masse d'un litre d'air",
+    "Pression atmosphérique : mise en évidence, mesure et unité",
+    "Mélanges gazeux (suite)"
+   ],
+   "pages": [
+    11,
+    11
+   ],
+   "objectives": [
+    "Connaître la composition de l’air et la masse d’un litre d’air.",
+    "Définir et mesurer la pression atmosphérique."
+   ],
+   "intro": "Je demande : « L’air est-il un corps pur ou un mélange ? L’air a-t-il une masse ? »",
+   "summary": "L’air est un mélange gazeux constitué principalement de diazote (78 %) et de dioxygène (21 %) ; 1 % est constitué d’autres gaz (gaz rares, vapeur d’eau, dioxyde de carbone). Dans les conditions normales (0 °C et 1013 hPa), un litre d’air a une masse de 1,3 g. La pression atmosphérique est la force exercée par le poids de l’air sur une surface ; elle se mesure avec un baromètre. Au niveau de la mer, elle vaut environ 101 300 Pa = 1013 hPa ≈ 1 bar. L’unité légale de pression est le pascal (Pa) ; 1 hPa = 100 Pa.",
+   "points": [
+    "Air : diazote 78 %, dioxygène 21 %, autres gaz 1 %.",
+    "1 L d’air ≈ 1,3 g (0 °C, 1013 hPa).",
+    "Pression atmosphérique : mesurée au baromètre.",
+    "Unité : pascal (Pa) ; 1 hPa = 100 Pa ; ≈ 1013 hPa au niveau de la mer."
+   ],
+   "application": {
+    "q": "Quelle est la masse de 10 L d’air dans les conditions normales ?",
+    "a": "10 × 1,3 g = 13 g."
+   },
+   "board": [
+    {
+     "h": "Composition de l’air",
+     "lines": [
+      "Diazote : 78 %",
+      "Dioxygène : 21 %",
+      "Autres gaz : 1 %"
+     ]
+    },
+    {
+     "h": "Masse",
+     "lines": [
+      "1 L d’air ≈ 1,3 g (0 °C – 1013 hPa)"
+     ]
+    },
+    {
+     "h": "Pression atmosphérique",
+     "lines": [
+      "Mesurée avec un baromètre",
+      "Unité : pascal (Pa) – 1 hPa = 100 Pa",
+      "Niveau de la mer : ≈ 1013 hPa ≈ 1 bar"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Quelle est la masse de 10 L d’air dans les conditions normales ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Corps purs simples et composés",
+   "match": [
+    "Corps purs simples",
+    "Corps purs composés"
+   ],
+   "pages": [
+    12,
+    13
+   ],
+   "objectives": [
+    "Distinguer corps pur simple et corps pur composé."
+   ],
+   "intro": "Je demande : « L’eau distillée est-elle un mélange ? De quoi est formée sa molécule ? »",
+   "summary": "Un corps pur ne contient qu’un seul constituant. Un corps pur simple est constitué d’atomes d’une seule sorte : dihydrogène H₂, dioxygène O₂. Un corps pur composé est constitué de plusieurs sortes d’atomes : eau H₂O, dioxyde de carbone CO₂, butane C₄H₁₀, chlorure de sodium NaCl.",
+   "points": [
+    "Corps pur : un seul constituant.",
+    "Corps pur simple : une seule sorte d’atomes (H₂, O₂).",
+    "Corps pur composé : plusieurs sortes d’atomes (H₂O, CO₂, NaCl)."
+   ],
+   "application": {
+    "q": "Classe : O₂ ; H₂O ; N₂ ; CO₂.",
+    "a": "Simples : O₂, N₂. Composés : H₂O, CO₂."
+   },
+   "board": [
+    {
+     "h": "Corps pur simple",
+     "lines": [
+      "Une seule sorte d’atomes : H₂ – O₂ – N₂"
+     ]
+    },
+    {
+     "h": "Corps pur composé",
+     "lines": [
+      "Plusieurs sortes d’atomes : H₂O – CO₂ – NaCl – C₄H₁₀"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : O₂ ; H₂O ; N₂ ; CO₂."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’atome : noms et symboles",
+   "match": [
+    "Atome : nom et symbole de quelques atomes : H, O, C, N, Cl, Na, Fe, Cu, Ag, Au…"
+   ],
+   "pages": [
+    12,
+    12
+   ],
+   "objectives": [
+    "Définir l’atome.",
+    "Connaître le nom et le symbole de quelques atomes."
+   ],
+   "intro": "Je demande : « Si l’on coupait un morceau de fer en morceaux de plus en plus petits, jusqu’où pourrait-on aller ? »",
+   "summary": "L’atome est le constituant fondamental de la matière. Les atomes identiques forment un élément chimique qui possède un symbole : hydrogène H, oxygène O, carbone C, azote N, chlore Cl, sodium Na, fer Fe, cuivre Cu, argent Ag, or Au.",
+   "points": [
+    "L’atome : constituant fondamental de la matière.",
+    "Chaque élément a un symbole.",
+    "H, O, C, N, Cl.",
+    "Na, Fe, Cu, Ag, Au."
+   ],
+   "application": {
+    "q": "Donne le symbole de : fer, cuivre, sodium, or.",
+    "a": "Fe, Cu, Na, Au."
+   },
+   "board": [
+    {
+     "h": "L’atome",
+     "lines": [
+      "Constituant fondamental de la matière"
+     ]
+    },
+    {
+     "h": "Symboles",
+     "lines": [
+      "Hydrogène H – Oxygène O – Carbone C – Azote N – Chlore Cl",
+      "Sodium Na – Fer Fe – Cuivre Cu – Argent Ag – Or Au"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Donne le symbole de : fer, cuivre, sodium, or."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La molécule et sa formule",
+   "match": [
+    "Molécule : formule moléculaire de quelques molécules : H2, O2, N2, Cl2, H2O, CO2"
+   ],
+   "pages": [
+    12,
+    13
+   ],
+   "objectives": [
+    "Définir la molécule.",
+    "Lire une formule moléculaire."
+   ],
+   "intro": "J’écris H₂O au tableau et je demande : « Que signifient les lettres et le chiffre ? »",
+   "summary": "Une molécule est un édifice plus ou moins complexe formé par l’association de plusieurs atomes. La formule chimique d’une molécule indique la nature et le nombre d’atomes liés entre eux. Exemples : dihydrogène H₂, dioxygène O₂, diazote N₂, dichlore Cl₂, eau H₂O (2 atomes d’hydrogène et 1 atome d’oxygène), dioxyde de carbone CO₂ (1 atome de carbone et 2 atomes d’oxygène).",
+   "points": [
+    "Molécule : association de plusieurs atomes.",
+    "La formule indique la nature et le nombre d’atomes.",
+    "H₂, O₂, N₂, Cl₂.",
+    "H₂O : 2 H + 1 O ; CO₂ : 1 C + 2 O."
+   ],
+   "application": {
+    "q": "Combien d’atomes et de quelles sortes dans la molécule CO₂ ?",
+    "a": "3 atomes : 1 atome de carbone et 2 atomes d’oxygène."
+   },
+   "board": [
+    {
+     "h": "La molécule",
+     "lines": [
+      "Association de plusieurs atomes"
+     ]
+    },
+    {
+     "h": "Formule",
+     "lines": [
+      "Indique la nature et le nombre des atomes",
+      "H₂O : 2 H + 1 O   CO₂ : 1 C + 2 O",
+      "H₂ – O₂ – N₂ – Cl₂"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Combien d’atomes et de quelles sortes dans la molécule CO₂ ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le circuit électrique simple",
+   "match": [
+    "Éléments d'un circuit simple",
+    "Dipôles et symboles",
+    "Conducteurs et isolants",
+    "Circuit ouvert, circuit fermé"
+   ],
+   "pages": [
+    18,
+    20
+   ],
+   "objectives": [
+    "Réaliser et schématiser un circuit simple.",
+    "Distinguer conducteurs et isolants, circuit ouvert et circuit fermé."
+   ],
+   "intro": "Je donne une pile, une lampe et des fils et je demande : « Comment allumer la lampe ? »",
+   "summary": "Un circuit électrique est constitué d’une suite ininterrompue de conducteurs branchés aux bornes d’un générateur (la pile). On le représente par un schéma où chaque élément (dipôle) a un symbole : pile, lampe, interrupteur, moteur, fil. Les matériaux qui laissent passer le courant sont des conducteurs (métaux), ceux qui ne le laissent pas passer sont des isolants (plastique, bois, verre). Un circuit fermé est traversé par un courant ; un circuit ouvert ne l’est pas.",
+   "points": [
+    "Circuit : générateur + récepteurs + fils, sans interruption.",
+    "Chaque dipôle a un symbole normalisé.",
+    "Conducteurs : métaux ; isolants : plastique, bois, verre.",
+    "Circuit fermé : courant ; circuit ouvert : pas de courant."
+   ],
+   "application": {
+    "q": "Classe en conducteurs et isolants : clou, gomme, fil de cuivre, règle en plastique.",
+    "a": "Conducteurs : clou, fil de cuivre. Isolants : gomme, règle en plastique."
+   },
+   "board": [
+    {
+     "h": "Circuit simple",
+     "lines": [
+      "Générateur (pile) – lampe – interrupteur – fils",
+      "Schéma avec les symboles des dipôles"
+     ]
+    },
+    {
+     "h": "Conducteurs / isolants",
+     "lines": [
+      "Conducteurs : métaux",
+      "Isolants : plastique – bois – verre"
+     ]
+    },
+    {
+     "h": "Circuit fermé / ouvert",
+     "lines": [
+      "Fermé : le courant passe",
+      "Ouvert : le courant ne passe pas"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe en conducteurs et isolants : clou, gomme, fil de cuivre, règle en plastique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Circuit série et circuit en dérivation",
+   "match": [
+    "Circuit série",
+    "Circuit parallèle",
+    "Fonctionnement d'une lampe torche"
+   ],
+   "pages": [
+    20,
+    22
+   ],
+   "objectives": [
+    "Distinguer circuit série et circuit en dérivation.",
+    "Expliquer le fonctionnement d’une lampe torche."
+   ],
+   "intro": "Je demande : « Si une lampe de la maison grille, pourquoi les autres restent-elles allumées ? »",
+   "summary": "Dans un circuit en série, tous les éléments sont branchés les uns à la suite des autres et forment une seule boucle : si un appareil tombe en panne, les autres ne fonctionnent plus. Dans un circuit en dérivation (parallèle), les éléments sont disposés sur plusieurs boucles reliées au même générateur : la branche qui contient le générateur est la branche principale, les autres sont les branches dérivées ; si un appareil tombe en panne, les autres continuent à fonctionner. La lampe torche est un circuit simple en série : piles, interrupteur, lampe.",
+   "points": [
+    "Série : une seule boucle.",
+    "Série : une panne arrête tout.",
+    "Dérivation : plusieurs boucles, branche principale et branches dérivées.",
+    "Dérivation : les autres appareils continuent de fonctionner.",
+    "Lampe torche : circuit série simple."
+   ],
+   "application": {
+    "q": "Les lampes d’une maison sont-elles montées en série ou en dérivation ? Justifie.",
+    "a": "En dérivation, car si une lampe grille les autres continuent de fonctionner."
+   },
+   "board": [
+    {
+     "h": "Circuit en série",
+     "lines": [
+      "Une seule boucle",
+      "Une panne → tout s’arrête"
+     ]
+    },
+    {
+     "h": "Circuit en dérivation",
+     "lines": [
+      "Plusieurs boucles – branche principale et branches dérivées",
+      "Une panne → les autres fonctionnent"
+     ]
+    },
+    {
+     "h": "Lampe torche",
+     "lines": [
+      "Piles + interrupteur + lampe en série"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Les lampes d’une maison sont-elles montées en série ou en dérivation ? Justifie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "L’intensité du courant électrique",
+   "match": [
+    "Intensité : ampèremètre, mesure, sens conventionnel du courant, unité internationale"
+   ],
+   "pages": [
+    23,
+    24
+   ],
+   "objectives": [
+    "Mesurer l’intensité avec un ampèremètre.",
+    "Connaître le sens conventionnel du courant et l’unité."
+   ],
+   "intro": "Je demande : « Comment savoir si le courant qui traverse une lampe est fort ou faible ? »",
+   "summary": "L’intensité du courant électrique se mesure avec un ampèremètre, branché en série avec le dipôle. Son unité internationale est l’ampère (A). Par convention, le courant sort par la borne positive (+) du générateur et entre par sa borne négative (–).",
+   "points": [
+    "Appareil : ampèremètre, branché en série.",
+    "Unité : ampère (A).",
+    "Sens conventionnel : de la borne + vers la borne – à l’extérieur du générateur."
+   ],
+   "application": {
+    "q": "Comment brancher un ampèremètre pour mesurer l’intensité qui traverse une lampe ?",
+    "a": "En série avec la lampe."
+   },
+   "board": [
+    {
+     "h": "Mesure",
+     "lines": [
+      "Ampèremètre branché en série"
+     ]
+    },
+    {
+     "h": "Unité",
+     "lines": [
+      "Ampère (A)"
+     ]
+    },
+    {
+     "h": "Sens conventionnel",
+     "lines": [
+      "Le courant sort par la borne + et entre par la borne – du générateur"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Comment brancher un ampèremètre pour mesurer l’intensité qui traverse une lampe ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Lois de l’intensité, court-circuit et effet thermique",
+   "match": [
+    "Loi d'unicité (circuit série)",
+    "Loi des nœuds (circuit parallèle)",
+    "Court-circuit",
+    "Effet calorifique (thermique) du courant électrique"
+   ],
+   "pages": [
+    24,
+    25
+   ],
+   "objectives": [
+    "Appliquer la loi d’unicité et la loi des nœuds.",
+    "Connaître les dangers du court-circuit et l’effet thermique du courant."
+   ],
+   "intro": "Je mesure l’intensité à plusieurs endroits d’un circuit série, puis dans les branches d’un circuit en dérivation, et je demande : « Que remarquez-vous ? »",
+   "summary": "Dans un circuit en série, l’intensité du courant est la même en tout point et ne dépend pas de l’ordre des dipôles (loi d’unicité). Dans un circuit en dérivation, l’intensité dans la branche principale est égale à la somme des intensités dans les branches dérivées : I = I₁ + I₂ (loi des nœuds). Un dipôle est court-circuité lorsqu’on relie ses bornes par un fil : il ne fonctionne plus, et les autres lampes brillent plus fort et risquent de griller. Un courant d’intensité élevée échauffe les conducteurs : c’est l’effet calorifique (thermique) ; la laine de fer brûle.",
+   "points": [
+    "Loi d’unicité (série) : même intensité partout.",
+    "Loi des nœuds : I = I₁ + I₂.",
+    "Court-circuit : fil entre les bornes d’un dipôle.",
+    "Effet thermique : le courant échauffe les conducteurs."
+   ],
+   "application": {
+    "q": "Dans un circuit en dérivation, I₁ = 0,25 A et I₂ = 0,10 A. Calcule I dans la branche principale.",
+    "a": "I = I₁ + I₂ = 0,25 + 0,10 = 0,35 A."
+   },
+   "board": [
+    {
+     "h": "Loi d’unicité (série)",
+     "lines": [
+      "L’intensité est la même en tout point"
+     ]
+    },
+    {
+     "h": "Loi des nœuds (dérivation)",
+     "lines": [
+      "I = I₁ + I₂"
+     ]
+    },
+    {
+     "h": "Court-circuit",
+     "lines": [
+      "Fil entre les bornes d’un dipôle : il ne fonctionne plus",
+      "Les autres lampes risquent de griller"
+     ]
+    },
+    {
+     "h": "Effet thermique",
+     "lines": [
+      "Un courant élevé échauffe les conducteurs"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Dans un circuit en dérivation, I₁ = 0,25 A et I₂ = 0,10 A. Calcule I dans la branche principale."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La tension électrique",
+   "match": [
+    "Tension : voltmètre, mesure, unité"
+   ],
+   "pages": [
+    26,
+    27
+   ],
+   "objectives": [
+    "Mesurer une tension avec un voltmètre.",
+    "Connaître l’unité de tension et ses multiples."
+   ],
+   "intro": "Je montre une pile de 4,5 V et je demande : « Que signifie 4,5 V ? »",
+   "summary": "La tension électrique se mesure avec un voltmètre, branché en dérivation aux bornes du dipôle ; sa borne + est reliée à la borne du dipôle où arrive le courant. Il existe une tension aux bornes d’un générateur isolé, mais pas aux bornes d’un récepteur isolé. L’unité de tension est le volt (V) ; on la note U (U = 4,5 V). 1 mV = 0,001 V ; 1 kV = 1000 V.",
+   "points": [
+    "Voltmètre : branché en dérivation.",
+    "Tension aux bornes d’une pile isolée ; pas aux bornes d’une lampe isolée.",
+    "Unité : volt (V).",
+    "1 mV = 0,001 V ; 1 kV = 1000 V."
+   ],
+   "application": {
+    "q": "Convertis : 4500 mV en V ; 2 kV en V.",
+    "a": "4500 mV = 4,5 V ; 2 kV = 2000 V."
+   },
+   "board": [
+    {
+     "h": "Mesure",
+     "lines": [
+      "Voltmètre branché en dérivation"
+     ]
+    },
+    {
+     "h": "Unité",
+     "lines": [
+      "Volt (V) – U = 4,5 V",
+      "1 mV = 0,001 V   1 kV = 1000 V"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Convertis : 4500 mV en V ; 2 kV en V."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Additivité des tensions (circuit série)",
+   "match": [
+    "Additivité des tensions dans un circuit série"
+   ],
+   "pages": [
+    27,
+    28
+   ],
+   "objectives": [
+    "Appliquer la loi d’additivité des tensions."
+   ],
+   "intro": "Je mesure la tension aux bornes de la pile et de chaque dipôle d’un circuit série et je demande : « Quelle relation trouvez-vous ? »",
+   "summary": "Dans un circuit en série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles : U = U₁ + U₂ + … Plus généralement, la tension aux bornes d’une association en série de dipôles est égale à la somme des tensions aux bornes de chacun d’eux.",
+   "points": [
+    "Série : U générateur = U₁ + U₂ + …",
+    "La tension s’additionne dans un circuit série."
+   ],
+   "application": {
+    "q": "Une pile de 4,5 V alimente en série une lampe (U₁ = 1,8 V) et un moteur. Calcule la tension U₂ du moteur.",
+    "a": "U₂ = 4,5 – 1,8 = 2,7 V."
+   },
+   "board": [
+    {
+     "h": "Loi d’additivité",
+     "lines": [
+      "Circuit série : U = U₁ + U₂ + …"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Une pile de 4,5 V alimente en série une lampe (U₁ = 1,8 V) et un moteur. Calcule la tension U₂ du moteur."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unicité de la tension (circuit en dérivation)",
+   "match": [
+    "Unicité de la tension dans un circuit dérivation",
+    "Additivité et unicité des tensions (suite)"
+   ],
+   "pages": [
+    28,
+    28
+   ],
+   "objectives": [
+    "Appliquer la loi d’unicité des tensions en dérivation."
+   ],
+   "intro": "Je mesure la tension aux bornes d’une lampe et d’un moteur montés en dérivation sur une pile de 4,5 V et je demande : « Que remarquez-vous ? »",
+   "summary": "Deux dipôles branchés en dérivation aux bornes d’un générateur sont soumis à la même tension, qui est celle du générateur : U pile = U lampe = U moteur (loi d’unicité des tensions).",
+   "points": [
+    "Dérivation : même tension aux bornes de chaque branche.",
+    "U pile = U lampe = U moteur."
+   ],
+   "application": {
+    "q": "Une lampe et un moteur sont montés en dérivation sur une pile de 4,5 V. Quelle est la tension aux bornes du moteur ?",
+    "a": "4,5 V (même tension que la pile)."
+   },
+   "board": [
+    {
+     "h": "Loi d’unicité",
+     "lines": [
+      "Dérivation : U pile = U₁ = U₂"
+     ]
+    },
+    {
+     "h": "Comparer",
+     "lines": [
+      "Série : les tensions s’additionnent",
+      "Dérivation : la tension est la même"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Une lampe et un moteur sont montés en dérivation sur une pile de 4,5 V. Quelle est la tension aux bornes du moteur ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tension nominale, surtension et sous-tension",
+   "match": [
+    "Tension nominale",
+    "Surtension et sous-tension"
+   ],
+   "pages": [
+    28,
+    29
+   ],
+   "objectives": [
+    "Connaître la tension nominale d’une lampe.",
+    "Reconnaître une surtension et une sous-tension."
+   ],
+   "intro": "Je montre le culot d’une lampe et je demande : « Que signifie l’inscription 6 V ? »",
+   "summary": "Chaque lampe porte sur son culot une inscription : sa tension nominale, la tension sous laquelle elle fonctionne normalement. Si une lampe reçoit une tension nettement inférieure à sa tension nominale, elle est en sous-tension : son éclat est faible. Si elle reçoit une tension nettement supérieure, elle est en surtension : son éclat est fort et elle risque de griller rapidement.",
+   "points": [
+    "Tension nominale : inscrite sur le culot.",
+    "Sous-tension : éclat faible.",
+    "Surtension : éclat fort, risque de griller."
+   ],
+   "application": {
+    "q": "Une lampe 3,5 V est branchée sur une pile de 9 V. Que se passe-t-il ?",
+    "a": "Elle est en surtension : elle brille fort et risque de griller."
+   },
+   "board": [
+    {
+     "h": "Tension nominale",
+     "lines": [
+      "Inscrite sur le culot : fonctionnement normal"
+     ]
+    },
+    {
+     "h": "Sous-tension",
+     "lines": [
+      "U < U nominale : éclat faible"
+     ]
+    },
+    {
+     "h": "Surtension",
+     "lines": [
+      "U > U nominale : éclat fort, la lampe risque de griller"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Une lampe 3,5 V est branchée sur une pile de 9 V. Que se passe-t-il ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les effets d’une force",
+   "match": [
+    "Effets d'une force : effet statique et effet dynamique",
+    "Définition d'une force"
+   ],
+   "pages": [
+    38,
+    38
+   ],
+   "objectives": [
+    "Définir une force.",
+    "Distinguer l’effet statique et l’effet dynamique."
+   ],
+   "intro": "Je pousse un livre sur la table, puis j’écrase une balle en mousse, et je demande : « Qu’a produit mon action dans chaque cas ? »",
+   "summary": "On appelle force l’action mécanique d’un corps sur un autre. Une force peut modifier le mouvement du corps sur lequel elle s’exerce (le mettre en mouvement, l’arrêter, changer sa vitesse ou sa direction) : c’est l’effet dynamique. Elle peut aussi déformer le corps : c’est l’effet statique.",
+   "points": [
+    "Force : action mécanique d’un corps sur un autre.",
+    "Effet dynamique : modifier le mouvement.",
+    "Effet statique : déformer le corps."
+   ],
+   "application": {
+    "q": "Indique l’effet : un joueur frappe un ballon ; on écrase une boîte en carton.",
+    "a": "Ballon : effet dynamique. Boîte : effet statique."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Force : action mécanique d’un corps sur un autre"
+     ]
+    },
+    {
+     "h": "Effets",
+     "lines": [
+      "Dynamique : modifie le mouvement",
+      "Statique : déforme le corps"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Indique l’effet : un joueur frappe un ballon ; on écrase une boîte en carton."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les différents types de forces",
+   "match": [
+    "Les différents types de forces"
+   ],
+   "pages": [
+    38,
+    39
+   ],
+   "objectives": [
+    "Distinguer forces de contact et forces à distance."
+   ],
+   "intro": "J’approche un aimant d’un clou sans le toucher, puis je tire une chaise, et je demande : « Y a-t-il contact dans les deux cas ? »",
+   "summary": "On distingue deux types de forces : les forces de contact, où l’auteur et le receveur sont en contact (pousser une chaise, tirer une corde) ; et les forces à distance, où ils ne sont pas nécessairement en contact (attraction d’un aimant sur un clou, poids d’un objet attiré par la Terre).",
+   "points": [
+    "Forces de contact : auteur et receveur se touchent.",
+    "Forces à distance : sans contact nécessaire.",
+    "Exemples à distance : aimant, poids."
+   ],
+   "application": {
+    "q": "Classe : action d’un aimant sur un clou ; action d’une main qui pousse un chariot.",
+    "a": "Aimant : force à distance. Main : force de contact."
+   },
+   "board": [
+    {
+     "h": "Forces de contact",
+     "lines": [
+      "Contact entre l’auteur et le receveur : pousser, tirer"
+     ]
+    },
+    {
+     "h": "Forces à distance",
+     "lines": [
+      "Sans contact : aimant – poids (attraction de la Terre)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : action d’un aimant sur un clou ; action d’une main qui pousse un chariot."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Caractéristiques et représentation d’une force",
+   "match": [
+    "Caractéristiques d'une force",
+    "Représentation vectorielle d'une force"
+   ],
+   "pages": [
+    39,
+    40
+   ],
+   "objectives": [
+    "Donner les caractéristiques d’une force.",
+    "Représenter une force par un vecteur."
+   ],
+   "intro": "Je tire un chariot avec une corde et je demande : « Comment décrire complètement cette force ? »",
+   "summary": "Une force est une grandeur vectorielle caractérisée par : un point d’application, une direction, un sens et une intensité. L’intensité se mesure avec un dynamomètre ; son unité est le newton (N). On représente une force par un vecteur (une flèche) : son origine est le point d’application, sa direction et son sens sont ceux de la force, et sa longueur est proportionnelle à l’intensité selon une échelle choisie.",
+   "points": [
+    "Caractéristiques : point d’application, direction, sens, intensité.",
+    "Intensité : dynamomètre, newton (N).",
+    "Représentation : vecteur-force.",
+    "Longueur proportionnelle à l’intensité (échelle)."
+   ],
+   "application": {
+    "q": "Une force de 6 N est représentée à l’échelle 1 cm pour 2 N. Quelle est la longueur du vecteur ?",
+    "a": "6 ÷ 2 = 3 cm."
+   },
+   "board": [
+    {
+     "h": "Caractéristiques",
+     "lines": [
+      "Point d’application – direction – sens – intensité"
+     ]
+    },
+    {
+     "h": "Intensité",
+     "lines": [
+      "Dynamomètre – unité : newton (N)"
+     ]
+    },
+    {
+     "h": "Représentation",
+     "lines": [
+      "Vecteur-force : origine = point d’application",
+      "Longueur selon l’échelle (ex. 1 cm pour 2 N)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Une force de 6 N est représentée à l’échelle 1 cm pour 2 N. Quelle est la longueur du vecteur ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sources et récepteurs de lumière",
+   "match": [
+    "Sources primaires de lumière (Soleil, lampe)",
+    "Sources secondaires de lumière (Lune, miroir)",
+    "Récepteurs de lumière"
+   ],
+   "pages": [
+    46,
+    49
+   ],
+   "objectives": [
+    "Distinguer sources primaires et secondaires.",
+    "Connaître quelques récepteurs de lumière."
+   ],
+   "intro": "Je demande : « La Lune brille la nuit. Produit-elle sa propre lumière ? »",
+   "summary": "Les sources primaires produisent et émettent de la lumière : Soleil, lampe, flamme. Les sources secondaires (objets diffusants) renvoient dans toutes les directions la lumière qu’elles reçoivent : la Lune, un objet éclairé. Les récepteurs de lumière sont des corps sensibles à la lumière, qui se transforment ou réagissent sous son action : l’œil (récepteur biologique), la cellule photoélectrique, la pellicule photographique, la peau, les plantes vertes.",
+   "points": [
+    "Sources primaires : produisent la lumière (Soleil, lampe).",
+    "Sources secondaires : renvoient la lumière reçue (Lune).",
+    "Récepteurs : œil, cellule photoélectrique, pellicule.",
+    "L’œil est un récepteur biologique."
+   ],
+   "application": {
+    "q": "Classe : Soleil, Lune, bougie allumée, cahier éclairé.",
+    "a": "Primaires : Soleil, bougie allumée. Secondaires : Lune, cahier éclairé."
+   },
+   "board": [
+    {
+     "h": "Sources primaires",
+     "lines": [
+      "Produisent la lumière : Soleil – lampe – flamme"
+     ]
+    },
+    {
+     "h": "Sources secondaires",
+     "lines": [
+      "Renvoient la lumière reçue : Lune – objets éclairés"
+     ]
+    },
+    {
+     "h": "Récepteurs",
+     "lines": [
+      "Œil – cellule photoélectrique – pellicule – plantes vertes"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : Soleil, Lune, bougie allumée, cahier éclairé."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Propagation de la lumière : faisceaux, milieux, vitesse",
+   "match": [
+    "Faisceaux lumineux (convergent et divergent)",
+    "Rayon lumineux",
+    "Milieu transparent, translucide et opaque",
+    "Vitesse de la lumière"
+   ],
+   "pages": [
+    49,
+    52
+   ],
+   "objectives": [
+    "Distinguer les faisceaux lumineux et modéliser la lumière par un rayon.",
+    "Classer les milieux ; connaître la vitesse de la lumière."
+   ],
+   "intro": "J’éclaire un peigne posé sur une feuille avec une lampe torche et je demande : « Comment se propage la lumière ? »",
+   "summary": "Dans un milieu homogène et transparent, la lumière se propage en ligne droite. On représente son trajet par un rayon lumineux : une droite munie d’une flèche. Un faisceau lumineux est un ensemble de rayons : convergent (les rayons se rapprochent, loupe), divergent (ils s’écartent, lampe torche) ou parallèle (laser). Un milieu transparent laisse passer complètement la lumière (air, verre), un milieu translucide la laisse passer partiellement (verre dépoli, papier calque), un milieu opaque ne la laisse pas passer (bois, carton). Dans le vide, la lumière se propage à environ 300 000 km/s. L’année-lumière est la distance parcourue par la lumière en un an (≈ 9,46 × 10¹⁵ m).",
+   "points": [
+    "Propagation rectiligne dans un milieu homogène et transparent.",
+    "Rayon lumineux : droite + flèche.",
+    "Faisceaux : convergent, divergent, parallèle.",
+    "Milieux : transparent, translucide, opaque.",
+    "Vitesse dans le vide : ≈ 300 000 km/s ; année-lumière ≈ 9,46 × 10¹⁵ m."
+   ],
+   "application": {
+    "q": "Classe : verre, papier calque, carton.",
+    "a": "Transparent : verre. Translucide : papier calque. Opaque : carton."
+   },
+   "board": [
+    {
+     "h": "Propagation",
+     "lines": [
+      "Rectiligne dans un milieu homogène et transparent",
+      "Rayon : droite + flèche"
+     ]
+    },
+    {
+     "h": "Faisceaux",
+     "lines": [
+      "Convergent – divergent – parallèle"
+     ]
+    },
+    {
+     "h": "Milieux",
+     "lines": [
+      "Transparent : verre – translucide : papier calque – opaque : bois"
+     ]
+    },
+    {
+     "h": "Vitesse",
+     "lines": [
+      "≈ 300 000 km/s dans le vide",
+      "1 année-lumière ≈ 9,46 × 10¹⁵ m"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Classe : verre, papier calque, carton."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ombres et pénombres",
+   "match": [
+    "Ombres et pénombres"
+   ],
+   "pages": [
+    52,
+    54
+   ],
+   "objectives": [
+    "Distinguer ombre propre, ombre portée et pénombre.",
+    "Connaître les facteurs qui influencent la taille et la netteté de l’ombre."
+   ],
+   "intro": "J’éclaire une balle avec une lampe et je demande : « Où voit-on l’ombre ? Est-elle partout aussi sombre ? »",
+   "summary": "L’ombre portée est la zone sombre créée sur une surface par un objet opaque placé entre une source et cette surface ; elle reproduit la forme de l’objet grâce à la propagation rectiligne. La partie non éclairée de l’objet est son ombre propre. La pénombre est une zone partiellement éclairée autour de l’ombre ; elle existe quand la source est étendue (une source ponctuelle ne donne pas de pénombre). L’ombre est plus grande si l’on rapproche l’objet de la source ou si l’on éloigne l’écran ; elle est plus nette avec une source ponctuelle, éloignée de l’objet, et un objet proche de l’écran.",
+   "points": [
+    "Ombre propre : partie non éclairée de l’objet.",
+    "Ombre portée : zone sombre sur l’écran.",
+    "Pénombre : zone partiellement éclairée (source étendue).",
+    "Source ponctuelle : pas de pénombre."
+   ],
+   "application": {
+    "q": "Pourquoi une source ponctuelle ne donne-t-elle pas de pénombre ?",
+    "a": "Parce que tous les rayons partent d’un seul point : une zone est soit éclairée, soit dans l’ombre."
+   },
+   "board": [
+    {
+     "h": "Définitions",
+     "lines": [
+      "Ombre propre : partie non éclairée de l’objet",
+      "Ombre portée : zone sombre sur l’écran",
+      "Pénombre : zone partiellement éclairée"
+     ]
+    },
+    {
+     "h": "Sources",
+     "lines": [
+      "Ponctuelle : ombre sans pénombre",
+      "Étendue : ombre + pénombre"
+     ]
+    },
+    {
+     "h": "Ombre nette",
+     "lines": [
+      "Source ponctuelle – loin de l’objet – objet proche de l’écran"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi une source ponctuelle ne donne-t-elle pas de pénombre ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La chambre noire",
+   "match": [
+    "Chambre noire"
+   ],
+   "pages": [
+    54,
+    55
+   ],
+   "objectives": [
+    "Expliquer la formation de l’image dans une chambre noire."
+   ],
+   "intro": "Je montre une boîte fermée percée d’un petit trou et je demande : « Que verra-t-on sur la face opposée si l’on place une bougie devant le trou ? »",
+   "summary": "La chambre noire est une boîte fermée avec un petit trou sur une face. La lumière venant d’un objet passe par le trou et projette sur la face opposée une image inversée et réduite de l’objet. Les rayons venant du haut de l’objet atteignent le bas de l’écran et inversement : ce croisement des rayons prouve que la lumière se propage en ligne droite. Plus l’objet est éloigné du trou, plus l’image est petite. Ce principe est utilisé dans les appareils photo et les projecteurs.",
+   "points": [
+    "Boîte fermée + petit trou.",
+    "Image inversée et réduite.",
+    "Croisement des rayons : propagation rectiligne.",
+    "Objet éloigné → image plus petite."
+   ],
+   "application": {
+    "q": "Pourquoi l’image dans une chambre noire est-elle inversée ?",
+    "a": "Parce que les rayons lumineux se propagent en ligne droite et se croisent en passant par le trou."
+   },
+   "board": [
+    {
+     "h": "Description",
+     "lines": [
+      "Boîte fermée percée d’un petit trou"
+     ]
+    },
+    {
+     "h": "Image",
+     "lines": [
+      "Inversée et réduite",
+      "Due au croisement des rayons (propagation rectiligne)"
+     ]
+    },
+    {
+     "h": "Taille de l’image",
+     "lines": [
+      "Objet éloigné du trou → image plus petite"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Pourquoi l’image dans une chambre noire est-elle inversée ?"
+     ]
+    }
+   ]
+  }
+ ]
+}
