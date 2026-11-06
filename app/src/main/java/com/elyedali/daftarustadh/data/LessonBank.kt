@@ -30,7 +30,11 @@ data class BookLesson(
 
 /** دروس مادة لمستوى: الملف assets/lessons/{المادة}_{المستوى}.json والكتاب في assets/books. */
 data class LessonSet(val book: String, val bookTitle: String, val lessons: List<BookLesson>) {
-    fun find(planTitle: String): BookLesson? = lessons.firstOrNull { planTitle in it.match }
+    /** occurrence: ترتيب تكرار العنوان نفسه في التخطيط (مثل «مفاهيم جغرافية» ثلاث مرات) — الدروس المتطابقة تؤخذ بترتيبها. */
+    fun find(planTitle: String, occurrence: Int = 0): BookLesson? {
+        val c = lessons.filter { planTitle in it.match }
+        return c.getOrNull(occurrence) ?: c.firstOrNull()
+    }
     fun bookOf(l: BookLesson): String = l.book.ifBlank { book }
     fun bookTitleOf(l: BookLesson): String = l.bookTitle.ifBlank { bookTitle }
 }

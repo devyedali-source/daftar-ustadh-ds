@@ -94,6 +94,8 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
         }
         itemsIndexed(rows) { i, r ->
             val prev = rows.getOrNull(i - 1)
+            // كم مرة ورد كل عنوان قبل هذا الأسبوع (لربط العناوين المكررة بدروس مختلفة)
+            val seen = rows.take(i).flatMap { it.items }
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 // عنوان الفصل عند بدايته
                 if (r.term in 1..3 && r.kind != "holiday" && (prev == null || prev.term != r.term))
@@ -117,7 +119,7 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                         if (r.kind == "holiday" && r.items.isEmpty()) Text(holiday, fontWeight = FontWeight.Bold, color = fg, fontSize = 13.sp)
                         r.items.forEach { item ->
-                            val l = if (r.kind == "lesson") lessonSet?.find(item) else null
+                            val l = if (r.kind == "lesson") lessonSet?.find(item, seen.count { it == item }) else null
                             if (l != null) Text("📖 $item", fontSize = 13.sp, color = MaterialTheme.colorScheme.primary,
                                 fontWeight = FontWeight.Bold,
                                 modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(6.dp))
