@@ -62,7 +62,7 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
     var opened by remember { mutableStateOf<Pair<com.elyedali.daftarustadh.data.BookLesson, String>?>(null) }
     opened?.let { (l, week) ->
         LessonDialog(l, available.firstOrNull { it.first == subject }?.second.orEmpty(), week,
-            lessonSet?.book.orEmpty(), lessonSet?.bookTitle.orEmpty()) { opened = null }
+            lessonSet?.bookOf(l).orEmpty(), lessonSet?.bookTitleOf(l).orEmpty()) { opened = null }
     }
 
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {

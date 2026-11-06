@@ -22,12 +22,17 @@ data class BookLesson(
     val points: List<String>,
     val applicationQ: String,
     val applicationA: String,
-    val board: List<BoardSection>
+    val board: List<BoardSection>,
+    /** كتاب الدرس إن كان للمادة أكثر من كتاب (مثل التاريخ والجغرافيا). */
+    val book: String = "",
+    val bookTitle: String = ""
 )
 
 /** دروس مادة لمستوى: الملف assets/lessons/{المادة}_{المستوى}.json والكتاب في assets/books. */
 data class LessonSet(val book: String, val bookTitle: String, val lessons: List<BookLesson>) {
     fun find(planTitle: String): BookLesson? = lessons.firstOrNull { planTitle in it.match }
+    fun bookOf(l: BookLesson): String = l.book.ifBlank { book }
+    fun bookTitleOf(l: BookLesson): String = l.bookTitle.ifBlank { bookTitle }
 }
 
 object LessonBank {
@@ -53,7 +58,8 @@ object LessonBank {
                         applicationQ = app?.optString("q").orEmpty(), applicationA = app?.optString("a").orEmpty(),
                         board = (0 until (b?.length() ?: 0)).map { j ->
                             val s = b!!.getJSONObject(j); BoardSection(s.optString("h"), strs(s.optJSONArray("lines")))
-                        }
+                        },
+                        book = l.optString("book"), bookTitle = l.optString("bookTitle")
                     )
                 })
             } catch (e: Exception) { null }
