@@ -38,9 +38,17 @@ android {
         generateLocaleConfig = false
     }
 
+    // R8: تصغير الشيفرة وحذف الموارد غير المستعملة (يُطبَّق على النسخة التي يبنيها GitHub)
     buildTypes {
+        debug {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
