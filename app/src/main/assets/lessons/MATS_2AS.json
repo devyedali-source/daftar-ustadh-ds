@@ -1,0 +1,629 @@
+{
+ "subject": "MATS",
+ "level": "2AS",
+ "book": "books/MATS_2AS.pdf",
+ "bookTitle": "Mathématiques 2AS — IPN",
+ "lessons": [
+  {
+   "title": "Les entiers relatifs",
+   "match": [
+    "Entiers relatifs"
+   ],
+   "pages": [
+    7,
+    20
+   ],
+   "objectives": [
+    "Reconnaître, comparer et ranger des entiers relatifs.",
+    "Additionner et soustraire des entiers relatifs ; simplifier une somme algébrique."
+   ],
+   "intro": "Je demande : « La température à Atar est de 8 °C le matin et de 3 degrés sous zéro dans un autre pays. Comment écrire cette température ? »",
+   "summary": "Un entier relatif est un entier précédé d’un signe + (positif) ou – (négatif) ; l’ensemble des entiers relatifs se note ℤ. Sur une droite graduée, les positifs sont à droite de zéro, les négatifs à gauche. De deux entiers relatifs, le plus grand est celui qui est le plus à droite ; tout positif est plus grand que tout négatif ; de deux négatifs, le plus grand a la plus petite distance à zéro. Somme : deux nombres de même signe → on garde le signe et on additionne les distances à zéro ; de signes contraires → on prend le signe du plus éloigné de zéro et on soustrait les distances. L’addition est commutative et associative, 0 est l’élément neutre, et a + (–a) = 0. Pour soustraire un entier relatif, on ajoute son opposé.",
+   "points": [
+    "ℤ : …, –2, –1, 0, +1, +2, …",
+    "Ordre : tout positif > tout négatif ; –7 < –3.",
+    "Même signe : on garde le signe, on additionne les distances à zéro.",
+    "Signes contraires : signe du plus éloigné de zéro, on soustrait.",
+    "a – b = a + (opposé de b)."
+   ],
+   "application": {
+    "q": "Calcule : (–7) + (+3) ; (–5) + (–4) ; (+6) – (–2).",
+    "a": "(–7) + (+3) = –4 ; (–5) + (–4) = –9 ; (+6) – (–2) = 6 + 2 = +8."
+   },
+   "board": [
+    {
+     "h": "Notion",
+     "lines": [
+      "Entier relatif : signe + ou – et distance à zéro",
+      "Ensemble : ℤ"
+     ]
+    },
+    {
+     "h": "Ordre dans ℤ",
+     "lines": [
+      "Le plus grand est le plus à droite sur la droite graduée",
+      "–7 < –3 < 0 < +2"
+     ]
+    },
+    {
+     "h": "Addition",
+     "lines": [
+      "Même signe : (–5) + (–4) = –9",
+      "Signes contraires : (–7) + (+3) = –4",
+      "a + (–a) = 0"
+     ]
+    },
+    {
+     "h": "Soustraction",
+     "lines": [
+      "a – b = a + (–b) : (+6) – (–2) = +8"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule : (–7) + (+3) ; (–5) + (–4) ; (+6) – (–2)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nombres décimaux relatifs",
+   "match": [
+    "Décimaux"
+   ],
+   "pages": [
+    21,
+    40
+   ],
+   "objectives": [
+    "Calculer avec des décimaux relatifs (quatre opérations).",
+    "Utiliser les puissances et l’écriture scientifique."
+   ],
+   "intro": "Je demande : « Un commerçant a une dette de 2,5 milliers d’ouguiyas et gagne ensuite 4,75 milliers. Où en est-il ? »",
+   "summary": "Un décimal relatif est un nombre décimal muni d’un signe. Les règles d’addition et de soustraction sont celles des entiers relatifs : pour soustraire un décimal relatif, on ajoute son opposé. Produit et quotient : deux nombres de même signe donnent un résultat positif, deux nombres de signes contraires donnent un résultat négatif ; un produit de plusieurs facteurs est positif si le nombre de facteurs négatifs est pair. Puissance : aⁿ = a × a × … × a (n facteurs), a⁰ = 1, a⁻ⁿ = 1/aⁿ. Propriétés : aⁿ × aᵐ = aⁿ⁺ᵐ ; (aⁿ)ᵐ = aⁿᵐ. L’écriture scientifique d’un décimal est a × 10ⁿ avec 1 ≤ a < 10 (en valeur absolue).",
+   "points": [
+    "Soustraire = ajouter l’opposé.",
+    "Même signe → produit/quotient positif ; signes contraires → négatif.",
+    "Nombre pair de facteurs négatifs → produit positif.",
+    "aⁿ × aᵐ = aⁿ⁺ᵐ ; (aⁿ)ᵐ = aⁿᵐ ; a⁰ = 1.",
+    "Écriture scientifique : a × 10ⁿ avec 1 ≤ a < 10."
+   ],
+   "application": {
+    "q": "Calcule (–2,5) × (–4) et donne l’écriture scientifique de 45 300.",
+    "a": "(–2,5) × (–4) = +10 ; 45 300 = 4,53 × 10⁴."
+   },
+   "board": [
+    {
+     "h": "Signe d’un produit ou d’un quotient",
+     "lines": [
+      "(+) × (+) = (+)   (–) × (–) = (+)",
+      "(+) × (–) = (–)   (–) × (+) = (–)"
+     ]
+    },
+    {
+     "h": "Puissances",
+     "lines": [
+      "aⁿ = a × a × … × a (n facteurs)",
+      "aⁿ × aᵐ = aⁿ⁺ᵐ   (aⁿ)ᵐ = aⁿᵐ   a⁰ = 1"
+     ]
+    },
+    {
+     "h": "Écriture scientifique",
+     "lines": [
+      "a × 10ⁿ avec 1 ≤ a < 10",
+      "45 300 = 4,53 × 10⁴"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule (–2,5) × (–4) et donne l’écriture scientifique de 45 300."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Les nombres rationnels",
+   "match": [
+    "Nombres rationnels"
+   ],
+   "pages": [
+    41,
+    50
+   ],
+   "objectives": [
+    "Comparer des fractions.",
+    "Calculer avec des nombres rationnels (quatre opérations, puissances)."
+   ],
+   "intro": "Je demande : « Ahmed a mangé 2/5 d’un gâteau et Sidi 3/7. Qui a mangé le plus ? »",
+   "summary": "Un nombre rationnel est un nombre qui peut s’écrire a/b avec a et b entiers relatifs et b ≠ 0. On ne change pas une fraction en multipliant (ou en divisant) son numérateur et son dénominateur par un même nombre non nul. Pour comparer deux fractions, on les réduit au même dénominateur. Addition et soustraction : même dénominateur → on ajoute les numérateurs ; sinon on réduit d’abord au même dénominateur. Produit : a/b × c/d = (a×c)/(b×d). Pour diviser par une fraction non nulle, on multiplie par son inverse. La multiplication est distributive par rapport à l’addition et à la soustraction.",
+   "points": [
+    "Rationnel : a/b, b ≠ 0.",
+    "a/b = (a×k)/(b×k), k ≠ 0.",
+    "Comparer : réduire au même dénominateur.",
+    "a/b × c/d = ac/bd.",
+    "a/b ÷ c/d = a/b × d/c."
+   ],
+   "application": {
+    "q": "Compare 2/5 et 3/7, puis calcule 2/5 + 3/7.",
+    "a": "2/5 = 14/35 et 3/7 = 15/35, donc 2/5 < 3/7. 2/5 + 3/7 = 29/35."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "Rationnel : a/b avec a, b ∈ ℤ et b ≠ 0"
+     ]
+    },
+    {
+     "h": "Égalité et comparaison",
+     "lines": [
+      "a/b = (a×k)/(b×k)",
+      "On réduit au même dénominateur pour comparer"
+     ]
+    },
+    {
+     "h": "Opérations",
+     "lines": [
+      "a/b + c/b = (a+c)/b",
+      "a/b × c/d = (a×c)/(b×d)",
+      "a/b ÷ c/d = a/b × d/c"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Compare 2/5 et 3/7, puis calcule 2/5 + 3/7."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Calcul littéral",
+   "match": [
+    "Calcul littéral"
+   ],
+   "pages": [
+    51,
+    60
+   ],
+   "objectives": [
+    "Réduire, développer et factoriser une expression littérale.",
+    "Traduire une situation par une expression littérale."
+   ],
+   "intro": "Je dessine un rectangle de longueur x + 3 et de largeur 2 et je demande : « Comment écrire son aire ? »",
+   "summary": "Une expression littérale est une expression qui contient une ou plusieurs lettres représentant des nombres. Réduire une expression, c’est regrouper les termes semblables : 3x + 5x = 8x. Développer, c’est transformer un produit en somme : distributivité simple k(a + b) = ka + kb et k(a – b) = ka – kb ; distributivité double (a + b)(c + d) = ac + ad + bc + bd. Factoriser, c’est transformer une somme en produit en mettant en évidence un facteur commun : ka + kb = k(a + b).",
+   "points": [
+    "Expression littérale : contient des lettres.",
+    "Réduire : 3x + 5x = 8x.",
+    "k(a + b) = ka + kb.",
+    "(a + b)(c + d) = ac + ad + bc + bd.",
+    "Factoriser : ka + kb = k(a + b)."
+   ],
+   "application": {
+    "q": "Développe 2(x + 3) puis factorise 5x + 15.",
+    "a": "2(x + 3) = 2x + 6 ; 5x + 15 = 5(x + 3)."
+   },
+   "board": [
+    {
+     "h": "Réduire",
+     "lines": [
+      "3x + 5x = 8x   4a – a = 3a"
+     ]
+    },
+    {
+     "h": "Développer",
+     "lines": [
+      "k(a + b) = ka + kb",
+      "(a + b)(c + d) = ac + ad + bc + bd"
+     ]
+    },
+    {
+     "h": "Factoriser",
+     "lines": [
+      "ka + kb = k(a + b)",
+      "5x + 15 = 5(x + 3)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Développe 2(x + 3) puis factorise 5x + 15."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Repères et vecteurs",
+   "match": [
+    "Repérage sur un axe"
+   ],
+   "pages": [
+    61,
+    74
+   ],
+   "objectives": [
+    "Repérer un point sur un axe et dans le plan.",
+    "Utiliser les vecteurs : égalité, relation de Chasles, milieu."
+   ],
+   "intro": "Je trace une droite graduée et je place A d’abscisse –2 et B d’abscisse 5 ; je demande : « Quelle est la distance AB ? Où est le milieu de [AB] ? »",
+   "summary": "Un axe est une droite munie d’une origine O et d’un point unité I. Chaque point M a une abscisse x. La mesure algébrique de (A, B) est AB = x_B – x_A. L’abscisse du milieu de [AB] est (x_A + x_B)/2. Un vecteur AB est défini par une direction, un sens et une longueur. Deux vecteurs sont égaux s’ils ont même direction, même sens et même longueur : AB = DC équivaut à ABCD parallélogramme. Relation de Chasles : AB + BC = AC. Dans un repère du plan, le milieu de [AB] a pour coordonnées ((x_A + x_B)/2 ; (y_A + y_B)/2) et le vecteur AB a pour composantes (x_B – x_A ; y_B – y_A).",
+   "points": [
+    "Mesure algébrique : AB = x_B – x_A.",
+    "Milieu sur un axe : (x_A + x_B)/2.",
+    "Vecteur : direction, sens, longueur.",
+    "AB = DC ⇔ ABCD parallélogramme.",
+    "Chasles : AB + BC = AC.",
+    "Composantes de AB : (x_B – x_A ; y_B – y_A)."
+   ],
+   "application": {
+    "q": "A(–2) et B(5) sur un axe : calcule AB et l’abscisse du milieu I.",
+    "a": "AB = 5 – (–2) = 7 ; x_I = (–2 + 5)/2 = 1,5."
+   },
+   "board": [
+    {
+     "h": "Repérage sur un axe",
+     "lines": [
+      "Mesure algébrique : AB = x_B – x_A",
+      "Milieu : x_I = (x_A + x_B)/2"
+     ]
+    },
+    {
+     "h": "Vecteurs",
+     "lines": [
+      "Direction – sens – longueur",
+      "AB = DC ⇔ ABCD est un parallélogramme",
+      "Chasles : AB + BC = AC"
+     ]
+    },
+    {
+     "h": "Repère du plan",
+     "lines": [
+      "Milieu : ((x_A + x_B)/2 ; (y_A + y_B)/2)",
+      "Composantes de AB : (x_B – x_A ; y_B – y_A)"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "A(–2) et B(5) sur un axe : calcule AB et l’abscisse du milieu I."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Polygones",
+   "match": [
+    "Polygones"
+   ],
+   "pages": [
+    87,
+    100
+   ],
+   "objectives": [
+    "Utiliser les droites remarquables du triangle.",
+    "Connaître les propriétés des parallélogrammes, du trapèze et des polygones réguliers."
+   ],
+   "intro": "Je montre des figures (triangle, carré, losange, trapèze, hexagone) et je demande : « Comment appelle-t-on une figure fermée formée de segments ? »",
+   "summary": "Dans un triangle, les trois médianes sont concourantes au centre de gravité, les trois hauteurs à l’orthocentre, les trois bissectrices au centre du cercle inscrit, et les trois médiatrices au centre du cercle circonscrit. Un polygone est une figure fermée formée de segments (côtés). Un parallélogramme a ses côtés opposés parallèles ; ses diagonales se coupent en leur milieu, ses côtés opposés ont même longueur et ses angles opposés ont même mesure. Un trapèze est un quadrilatère qui a deux côtés parallèles (les bases). Un polygone régulier a tous ses côtés de même longueur et tous ses angles de même mesure.",
+   "points": [
+    "Médianes → centre de gravité ; hauteurs → orthocentre.",
+    "Bissectrices → centre du cercle inscrit ; médiatrices → centre du cercle circonscrit.",
+    "Parallélogramme : diagonales qui se coupent en leur milieu.",
+    "Trapèze : deux côtés parallèles.",
+    "Polygone régulier : côtés égaux et angles égaux."
+   ],
+   "application": {
+    "q": "ABCD est un parallélogramme de centre O avec AC = 8 cm. Calcule AO.",
+    "a": "Les diagonales se coupent en leur milieu, donc AO = 8 ÷ 2 = 4 cm."
+   },
+   "board": [
+    {
+     "h": "Droites remarquables du triangle",
+     "lines": [
+      "Médianes → centre de gravité",
+      "Hauteurs → orthocentre",
+      "Bissectrices → cercle inscrit",
+      "Médiatrices → cercle circonscrit"
+     ]
+    },
+    {
+     "h": "Parallélogramme",
+     "lines": [
+      "Côtés opposés parallèles et de même longueur",
+      "Diagonales qui se coupent en leur milieu"
+     ]
+    },
+    {
+     "h": "Autres polygones",
+     "lines": [
+      "Trapèze : deux côtés parallèles (bases)",
+      "Polygone régulier : côtés égaux, angles égaux"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "ABCD est un parallélogramme de centre O avec AC = 8 cm. Calcule AO."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Projection orthogonale",
+   "match": [
+    "Projection orthogonale"
+   ],
+   "pages": [
+    101,
+    106
+   ],
+   "objectives": [
+    "Construire le projeté orthogonal d’un point sur une droite.",
+    "Connaître les propriétés de la projection orthogonale."
+   ],
+   "intro": "Je place une lampe au-dessus d’une règle et je demande : « Où arrive l’ombre d’un point de la règle sur la table ? »",
+   "summary": "Soit une droite (D) et un point M. Le projeté orthogonal de M sur (D) est le point H, intersection de (D) et de la perpendiculaire à (D) passant par M. Les points de (D) sont invariants : chacun est son propre projeté. La projection orthogonale conserve le milieu : le projeté du milieu d’un segment est le milieu des projetés. Dans un repère orthonormé, l’abscisse d’un point est l’abscisse de son projeté sur l’axe des abscisses, et son ordonnée celle de son projeté sur l’axe des ordonnées.",
+   "points": [
+    "Projeté H de M : (MH) ⊥ (D) et H ∈ (D).",
+    "Points de (D) : invariants.",
+    "Conservation du milieu.",
+    "Coordonnées = projetés sur les axes."
+   ],
+   "application": {
+    "q": "Construis le projeté orthogonal H d’un point M sur une droite (D). Que vaut MH si M est sur (D) ?",
+    "a": "On trace la perpendiculaire à (D) passant par M ; elle coupe (D) en H. Si M ∈ (D), alors H = M et MH = 0."
+   },
+   "board": [
+    {
+     "h": "Définition",
+     "lines": [
+      "H projeté orthogonal de M sur (D) :",
+      "H ∈ (D) et (MH) ⊥ (D)"
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Les points de (D) sont invariants",
+      "Le projeté du milieu est le milieu des projetés"
+     ]
+    },
+    {
+     "h": "Projection et coordonnées",
+     "lines": [
+      "Abscisse : projection sur l’axe des abscisses",
+      "Ordonnée : projection sur l’axe des ordonnées"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Construis le projeté orthogonal H d’un point M sur une droite (D). Que vaut MH si M est sur (D) ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Droites et cercles",
+   "match": [
+    "Droites et cercles"
+   ],
+   "pages": [
+    107,
+    116
+   ],
+   "objectives": [
+    "Utiliser l’inégalité triangulaire et la distance d’un point à une droite.",
+    "Connaître les positions relatives d’une droite et d’un cercle ; la tangente."
+   ],
+   "intro": "Je trace un cercle et plusieurs droites qui le coupent, le touchent ou ne le rencontrent pas, et je demande : « Combien de points communs dans chaque cas ? »",
+   "summary": "Inégalité triangulaire : pour trois points A, B, C, AC ≤ AB + BC ; l’égalité a lieu si B ∈ [AC]. La distance d’un point A à une droite (D) est la longueur AH, où H est le projeté orthogonal de A sur (D) ; c’est la plus courte distance de A à un point de (D). Soit un cercle de centre O et de rayon r, et d la distance de O à une droite (D) : si d > r, la droite est extérieure (aucun point commun) ; si d = r, elle est tangente (un point commun) ; si d < r, elle est sécante (deux points communs). La tangente en un point A du cercle est perpendiculaire au rayon [OA].",
+   "points": [
+    "AC ≤ AB + BC.",
+    "Distance de A à (D) = AH (H projeté orthogonal).",
+    "d > r : extérieure ; d = r : tangente ; d < r : sécante.",
+    "La tangente en A est perpendiculaire à [OA]."
+   ],
+   "application": {
+    "q": "Un cercle a pour rayon 3 cm ; la distance de son centre à une droite (D) est 3 cm. Quelle est la position de (D) ?",
+    "a": "d = r = 3 cm, donc (D) est tangente au cercle (un seul point commun)."
+   },
+   "board": [
+    {
+     "h": "Inégalité triangulaire",
+     "lines": [
+      "AC ≤ AB + BC (égalité si B ∈ [AC])"
+     ]
+    },
+    {
+     "h": "Distance d’un point à une droite",
+     "lines": [
+      "AH avec H projeté orthogonal de A sur (D)"
+     ]
+    },
+    {
+     "h": "Droite et cercle (centre O, rayon r, d = distance de O à (D))",
+     "lines": [
+      "d > r : extérieure – 0 point commun",
+      "d = r : tangente – 1 point commun",
+      "d < r : sécante – 2 points communs"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Un cercle a pour rayon 3 cm ; la distance de son centre à une droite (D) est 3 cm. Quelle est la position de (D) ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Transformations",
+   "match": [
+    "Transformations"
+   ],
+   "pages": [
+    117,
+    134
+   ],
+   "objectives": [
+    "Construire l’image d’une figure par une symétrie centrale, une symétrie axiale ou une translation.",
+    "Connaître les propriétés de conservation."
+   ],
+   "intro": "Je montre un papillon et une frise et je demande : « Comment passe-t-on d’une moitié du papillon à l’autre ? D’un motif de la frise au suivant ? »",
+   "summary": "Symétrie centrale de centre O : M’ est le symétrique de M si O est le milieu de [MM’]. Symétrie axiale d’axe (D) : M’ est le symétrique de M si (D) est la médiatrice de [MM’]. Translation de vecteur u : M’ est l’image de M si MM’ = u. Ces trois transformations conservent les longueurs, les angles, l’alignement et les aires : l’image d’une droite est une droite, l’image d’un cercle est un cercle de même rayon. Une figure a un centre de symétrie (ou un axe de symétrie) si elle est sa propre image par la symétrie.",
+   "points": [
+    "Symétrie centrale : O milieu de [MM’].",
+    "Symétrie axiale : (D) médiatrice de [MM’].",
+    "Translation : MM’ = u.",
+    "Conservation : longueurs, angles, alignement, aires.",
+    "Centre / axe de symétrie d’une figure."
+   ],
+   "application": {
+    "q": "A’ est le symétrique de A par rapport à O. Si OA = 4 cm, combien mesure AA’ ?",
+    "a": "O est le milieu de [AA’], donc AA’ = 2 × 4 = 8 cm."
+   },
+   "board": [
+    {
+     "h": "Symétrie centrale (centre O)",
+     "lines": [
+      "O est le milieu de [MM’]"
+     ]
+    },
+    {
+     "h": "Symétrie axiale (axe D)",
+     "lines": [
+      "(D) est la médiatrice de [MM’]"
+     ]
+    },
+    {
+     "h": "Translation (vecteur u)",
+     "lines": [
+      "MM’ = u"
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Conservent : longueurs – angles – alignement – aires"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "A’ est le symétrique de A par rapport à O. Si OA = 4 cm, combien mesure AA’ ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Statistique",
+   "match": [
+    "Statistique"
+   ],
+   "pages": [
+    135,
+    148
+   ],
+   "objectives": [
+    "Organiser une série statistique : effectifs, fréquences, effectifs et fréquences cumulés.",
+    "Calculer la moyenne, la médiane et l’étendue."
+   ],
+   "intro": "Je relève les notes d’un devoir de dix élèves de la classe et je demande : « Comment résumer ces notes en un seul nombre ? »",
+   "summary": "Une série statistique est un ensemble de données relevées sur une population ; le caractère étudié peut être quantitatif ou qualitatif. L’effectif d’une valeur est le nombre de fois où elle apparaît ; la fréquence est l’effectif divisé par l’effectif total. La moyenne est la somme des valeurs (chacune multipliée par son effectif) divisée par l’effectif total. L’étendue est la différence entre la plus grande et la plus petite valeur. La médiane partage la série rangée en deux groupes de même effectif. L’effectif cumulé croissant d’une valeur est la somme des effectifs des valeurs inférieures ou égales ; on le représente par le polygone des effectifs cumulés.",
+   "points": [
+    "Effectif ; fréquence = effectif ÷ effectif total.",
+    "Moyenne = Σ(valeur × effectif) ÷ effectif total.",
+    "Étendue = plus grande valeur – plus petite valeur.",
+    "Médiane : partage la série rangée en deux moitiés.",
+    "Effectifs et fréquences cumulés ; polygone des effectifs cumulés."
+   ],
+   "application": {
+    "q": "Notes : 8, 10, 12, 12, 13. Calcule la moyenne, l’étendue et la médiane.",
+    "a": "Moyenne = 55 ÷ 5 = 11 ; étendue = 13 – 8 = 5 ; médiane = 12."
+   },
+   "board": [
+    {
+     "h": "Vocabulaire",
+     "lines": [
+      "Population – caractère – effectif – fréquence = effectif ÷ total"
+     ]
+    },
+    {
+     "h": "Paramètres",
+     "lines": [
+      "Moyenne = Σ(valeur × effectif) ÷ effectif total",
+      "Étendue = max – min",
+      "Médiane : partage la série rangée en deux"
+     ]
+    },
+    {
+     "h": "Cumuls",
+     "lines": [
+      "Effectif cumulé croissant – fréquence cumulée",
+      "Polygone des effectifs cumulés"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Notes : 8, 10, 12, 12, 13. Calcule la moyenne, l’étendue et la médiane."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cylindre, sphère et boule",
+   "match": [
+    "Cylindre et prisme droit"
+   ],
+   "pages": [
+    149,
+    164
+   ],
+   "objectives": [
+    "Représenter un cylindre de révolution et construire son patron.",
+    "Calculer aire et volume d’un cylindre ; connaître la sphère et la boule."
+   ],
+   "intro": "Je montre une boîte de conserve et un ballon et je demande : « Quelles formes ont ces objets ? Comment calculer la quantité qu’ils contiennent ? »",
+   "summary": "Un cylindre de révolution est le solide engendré par un rectangle qui tourne autour d’un de ses côtés ; il a deux bases qui sont des disques de même rayon r, et une hauteur h. Son patron est formé de deux disques et d’un rectangle de longueur 2πr et de largeur h. Aire latérale = 2πrh ; volume = πr²h. La sphère de centre O et de rayon r est l’ensemble des points situés à la distance r de O ; la boule est l’ensemble des points situés à une distance inférieure ou égale à r. Aire de la sphère = 4πr² ; volume de la boule = (4/3)πr³. La section d’une sphère par un plan est un cercle.",
+   "points": [
+    "Cylindre : deux disques de rayon r et une hauteur h.",
+    "Patron : deux disques et un rectangle (2πr × h).",
+    "Aire latérale = 2πrh ; volume = πr²h.",
+    "Sphère : points à distance r de O ; boule : distance ≤ r.",
+    "Aire de la sphère = 4πr² ; volume de la boule = (4/3)πr³."
+   ],
+   "application": {
+    "q": "Calcule le volume d’un cylindre de rayon 2 cm et de hauteur 5 cm (π ≈ 3,14).",
+    "a": "V = π × 2² × 5 = 20π ≈ 62,8 cm³."
+   },
+   "board": [
+    {
+     "h": "Cylindre de révolution",
+     "lines": [
+      "Bases : deux disques de rayon r – hauteur h",
+      "Patron : 2 disques + rectangle (2πr × h)",
+      "Aire latérale = 2πrh   Volume = πr²h"
+     ]
+    },
+    {
+     "h": "Sphère et boule",
+     "lines": [
+      "Sphère : points à la distance r du centre",
+      "Boule : points à une distance ≤ r",
+      "Aire = 4πr²   Volume = (4/3)πr³"
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Calcule le volume d’un cylindre de rayon 2 cm et de hauteur 5 cm (π ≈ 3,14)."
+     ]
+    }
+   ]
+  }
+ ]
+}
