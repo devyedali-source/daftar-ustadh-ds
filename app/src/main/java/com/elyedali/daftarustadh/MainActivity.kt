@@ -1771,7 +1771,8 @@ class MainActivity : AppCompatActivity() {
 
                     screen == Screen.TEACHER_HUB && currentClass != null -> {
                         val c = currentClass!!
-                        val isCollege = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.stage == "college"
+                        // التخطيط والتحضير للأستاذ فقط: تطبيق الإدارة لا يعرض تبويب التخطيط
+                        val isCollege = !AppRole.isAdmin && CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.stage == "college"
                         ClassHub(
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
