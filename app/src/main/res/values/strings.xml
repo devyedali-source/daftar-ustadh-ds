@@ -431,6 +431,7 @@
     <string name="tt_swap_busy">لا يمكن التبديل: الأستاذ %1$s مشغول في هذا الوقت بقسم آخر.</string>
     <string name="tt_class_hours">الحصص الموزعة: %1$d من %2$d ساعة</string>
     <string name="tt_share_class">سحب جدول القسم %1$s (PDF)</string>
+    <string name="tt_share_all_classes">سحب جدول جميع الأقسام في جدول واحد (PDF)</string>
     <string name="tt_edit_cell">%1$s — الحصة %2$d</string>
     <string name="tt_empty_cell">خانة فارغة (بدون حصة)</string>
     <string name="tt_no_teachers">لا يوجد أساتذة في الجدول بعد. عيّن الأساتذة ثم ولّد الجدول.</string>

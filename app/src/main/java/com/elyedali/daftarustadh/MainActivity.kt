@@ -677,6 +677,43 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                /** الجدول العام: جداول جميع الأقسام في جدول واحد (PDF). */
+                fun shareAllClassesTimetable() {
+                    scope.launch {
+                        val owner = inst ?: return@launch
+                        val year = adminYear ?: owner.schoolYear
+                        val cls = managedClasses.filter { it.schoolYear == year }.sortedWith(compareBy({ it.levelCode }, { it.number }))
+                        if (cls.isEmpty()) return@launch
+                        val st = ttSettings
+                        val dayAr = listOf("الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد")
+                        val dayFr = listOf("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche")
+                        val byClass = ttSlots.groupBy { it.classId }.mapValues { (_, l) -> l.associateBy { it.day to it.period } }
+                        val bytes = withContext(Dispatchers.Default) {
+                            com.elyedali.daftarustadh.pdf.AllClassesTimetablePdf.build(
+                                com.elyedali.daftarustadh.pdf.AllClassesTimetablePdf.Info(
+                                    title = "الجدول العام لجميع الأقسام — Emploi du temps général",
+                                    lineAr = "المؤسسة: ${owner.schoolName} — الولاية: ${owner.wilaya} — السنة الدراسية: \u2066$year\u2069",
+                                    lineFr = "Établissement : ${owner.schoolName} — Année scolaire : $year",
+                                    classNames = cls.map { it.name },
+                                    dayLabels = st.days.map { "${dayAr[it]}\n${dayFr[it]}" },
+                                    periodLabels = st.days.map { d -> (0 until st.periodsOn(d)).map { "${it + 1}\n${st.label(it)}" } },
+                                    cells = cls.map { c ->
+                                        val at = byClass[c.id].orEmpty()
+                                        st.days.map { d -> (0 until st.periodsOn(d)).map { p ->
+                                            at[d to p]?.let { s -> subjectName(s.subjectCode) + if (s.teacherName.isNotBlank()) "\n${s.teacherName}" else "" }.orEmpty()
+                                        } }
+                                    },
+                                    footer = "دفتر الأستاذ DS",
+                                    seal = sealBitmap
+                                )
+                            )
+                        }
+                        val name = "الجدول العام - Emploi du temps général - ${owner.schoolName} - $year.pdf"
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.tt_title), "application/pdf")
+                    }
+                }
+
                 fun shareTeacherTimetablePdf(teacher: String) {
                     scope.launch {
                         val owner = inst ?: return@launch
@@ -1566,6 +1603,7 @@ class MainActivity : AppCompatActivity() {
                             }
                         },
                         onShareClass = { shareClassTimetable(it) },
+                        onShareAll = { shareAllClassesTimetable() },
                         onShareTeacherPdf = { shareTeacherTimetablePdf(it) },
                         onSendTeacherFile = { sendTeacherTimetable(it) },
                         onBack = { screen = ttBack },

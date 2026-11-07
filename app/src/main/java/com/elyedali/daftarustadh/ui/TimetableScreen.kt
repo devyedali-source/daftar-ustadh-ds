@@ -106,6 +106,7 @@ fun TimetableScreen(
     onSwap: (classId: String, a: Pair<Int, Int>, b: Pair<Int, Int>) -> String?,
     onEditCell: (classId: String, day: Int, period: Int, subjectCode: String?, teacher: String?) -> Unit,
     onShareClass: (ClassEntity) -> Unit,
+    onShareAll: () -> Unit = {},
     onShareTeacherPdf: (String) -> Unit,
     onSendTeacherFile: (String) -> Unit,
     onBack: () -> Unit,
@@ -129,7 +130,7 @@ fun TimetableScreen(
                     0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate,
                         problems, approved, onApprove, onGoTab = { tab = it }, manual = manual, onStartManual = onStartManual)
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
-                    2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass, teachers)
+                    2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass, teachers, onShareAll)
                     else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile, onSwap)
                 }
             }
@@ -621,7 +622,8 @@ private fun ByClassTab(
     onSwap: (String, Pair<Int, Int>, Pair<Int, Int>) -> String?,
     onEditCell: (String, Int, Int, String?, String?) -> Unit,
     onShare: (ClassEntity) -> Unit,
-    teachers: List<TimetableTeacher> = emptyList()
+    teachers: List<TimetableTeacher> = emptyList(),
+    onShareAll: () -> Unit = {}
 ) {
     val context = LocalContext.current
     var classId by rememberSaveable { mutableStateOf(initialClassId ?: classes.firstOrNull()?.id) }
@@ -663,6 +665,9 @@ private fun ByClassTab(
             color = if (mine.size < hours) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.secondary)
         if (mine.isNotEmpty()) Button(onClick = { onShare(c) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
             Text("🖨️ " + stringResource(R.string.tt_share_class, c.name))
+        }
+        if (slots.isNotEmpty()) OutlinedButton(onClick = onShareAll, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
+            Text("🗂️ " + stringResource(R.string.tt_share_all_classes))
         }
     }
     editCell?.let { (d, p) ->

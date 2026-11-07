@@ -431,6 +431,7 @@
     <string name="tt_swap_busy">Échange impossible : le professeur %1$s est occupé à ce moment dans une autre classe.</string>
     <string name="tt_class_hours">Séances placées : %1$d sur %2$d h</string>
     <string name="tt_share_class">Emploi du temps de %1$s (PDF)</string>
+    <string name="tt_share_all_classes">Emploi du temps général de toutes les classes (PDF)</string>
     <string name="tt_edit_cell">%1$s — séance %2$d</string>
     <string name="tt_empty_cell">Case vide (pas de séance)</string>
     <string name="tt_no_teachers">Aucun professeur dans l\'emploi du temps. Affectez-les puis générez.</string>
