@@ -29,7 +29,9 @@ sealed class RecordCheck {
         /** السجل أقدم من سجل هذه المادة الذي رُفع من قبل (أُرسل قبله): رفعه يُرجع نقاطًا قديمة. */
         val older: Boolean = false,
         /** آخر فصل في السجل (الفصل الذي يخصه). */
-        val term: Int = 1
+        val term: Int = 1,
+        /** سجل من الوضع الحر: عدد التلاميذ مطابق، فطوبقوا حسب ترتيبهم في القائمة دون أرقام النداء أو الأسماء. */
+        val byOrder: Boolean = false
     ) : RecordCheck()
 }
 
@@ -47,7 +49,10 @@ class RecordImporter(private val db: DaftarDatabase) {
             // رمز القسم لا يوافق (أُعيد إنشاء القسم أو أُعيد تثبيت تطبيق الإدارة بعد إرسال الملفات للأساتذة):
             // يُعرف القسم باسمه في مؤسستك: نفس اسم المؤسسة والسنة والمستوى والرقم، ثم يُطابق الطلاب بأرقام النداء
             val own = db.institutionDao().getOwn() ?: return RecordCheck.WrongClass(file)
-            if (norm(own.schoolName) != norm(file.schoolName) || norm(own.wilaya) != norm(file.wilaya)) return RecordCheck.WrongClass(file)
+            // المؤسسة نفسها: نفس رمزها في لائحة المدارس، أو نفس الاسم والولاية (سجل الوضع الحر)
+            val sameList = own.schoolListId != null && own.schoolListId == file.schoolListId
+            val sameName = norm(own.schoolName) == norm(file.schoolName) && norm(own.wilaya) == norm(file.wilaya)
+            if (!sameList && !sameName) return RecordCheck.WrongClass(file)
             val slot = db.classDao().findSlot(own.id, file.schoolYear, file.levelCode, file.number)
                 ?: return RecordCheck.WrongClass(file)
             classByName = true
@@ -73,6 +78,16 @@ class RecordImporter(private val db: DaftarDatabase) {
             val target = byRollNumber[fs.roll]
             if (target != null && target.id !in usedTargets) { mapping[fs.id] = target.id; usedTargets += target.id; byRoll++ }
         }
+        // الوضع الحر (القسم عُرف باسمه): إن كان عدد التلاميذ مطابقًا يُطابقون حسب ترتيبهم في القائمة،
+        // ولا يهم اختلاف أرقام النداء أو الأسماء
+        var byOrder = false
+        if (classByName && file.students.isNotEmpty() && file.students.size == students.size && mapping.size < students.size) {
+            mapping.clear(); usedTargets.clear(); byRoll = 0
+            file.students.sortedBy { it.roll }.zip(students.sortedBy { it.rollNumber }).forEach { (fs, st) ->
+                mapping[fs.id] = st.id; usedTargets += st.id
+            }
+            byOrder = true
+        }
         val lastSent = db.appMetaDao().get(exportedKey(c.id, file.subjectCode))?.toLongOrNull() ?: 0L
         return RecordCheck.Ready(
             older = file.exportedAt > 0 && file.exportedAt < lastSent,
@@ -87,7 +102,8 @@ class RecordImporter(private val db: DaftarDatabase) {
             hasGrades = db.gradeDao().countGrades(c.id, file.subjectCode) > 0,
             mapping = mapping,
             byRoll = byRoll,
-            classByName = classByName
+            classByName = classByName,
+            byOrder = byOrder
         )
     }
 

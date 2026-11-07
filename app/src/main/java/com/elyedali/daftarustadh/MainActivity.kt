@@ -1010,7 +1010,9 @@ class MainActivity : AppCompatActivity() {
                             imported += label
                             if (chk.unknownStudents.isNotEmpty() || chk.missingStudents.isNotEmpty())
                                 warnings += label + ": " + getString(R.string.bu_students_diff, chk.unknownStudents.size, chk.missingStudents.size)
-                            if (chk.classByName || chk.byRoll > 0)
+                            if (chk.byOrder)
+                                warnings += label + ": " + getString(R.string.record_by_order, chk.matched)
+                            else if (chk.classByName || chk.byRoll > 0)
                                 warnings += label + ": " + getString(R.string.record_by_roll, chk.byRoll)
                         }
                         // الفصل الذي يُفحص: آخر فصل وصلت امتحاناته في هذه الملفات
@@ -2382,7 +2384,8 @@ class MainActivity : AppCompatActivity() {
                                 Text(stringResource(R.string.record_matched, chk.matched))
                                 // القسم أُعيد إنشاؤه أو أُعيد تثبيت التطبيق بعد إرسال الملف للأستاذ: المطابقة بأرقام النداء
                                 if (chk.older) Text(stringResource(R.string.record_older), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
-                                if (chk.classByName) Text(stringResource(R.string.record_by_name), color = androidx.compose.ui.graphics.Color(0xFFE65100))
+                                if (chk.byOrder) Text(stringResource(R.string.record_by_order, chk.matched), color = androidx.compose.ui.graphics.Color(0xFFE65100))
+                                else if (chk.classByName) Text(stringResource(R.string.record_by_name), color = androidx.compose.ui.graphics.Color(0xFFE65100))
                                 if (chk.byRoll > 0) Text(stringResource(R.string.record_by_roll, chk.byRoll), color = androidx.compose.ui.graphics.Color(0xFFE65100))
                                 if (chk.unknownStudents.isNotEmpty())
                                     Text(stringResource(R.string.record_unknown, chk.unknownStudents.joinToString("، ")), color = androidx.compose.material3.MaterialTheme.colorScheme.error)

@@ -723,6 +723,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="ts_no_classes_yet">Aucune classe : ouvrez-la et créez vos classes</string>
     <string name="ts_add_self_school">Ajouter un établissement (travail personnel)</string>
     <string name="ts_self_hint">Si votre administration n\'utilise pas l\'application : ajoutez votre établissement, créez vos classes, saisissez vos élèves et vos matières, puis vos notes.</string>
+    <string name="record_by_order">⚠️ Relevé du mode libre : établissement, classe et niveau identiques, et même nombre d\'élèves (%1$d). Les élèves ont été associés selon leur ordre dans la liste, sans tenir compte des numéros d\'appel ni des noms. Vérifiez avant d\'enregistrer.</string>
     <string name="record_by_name">⚠️ Le code de cette classe a changé chez vous après l\'envoi du fichier au professeur (classe recréée ou application réinstallée) : la classe a été reconnue par établissement, année et nom.</string>
     <string name="record_by_roll">⚠️ %1$d élèves ont été reconnus par leur numéro d\'appel car leur code interne a changé. Vérifiez avant d\'enregistrer, et renvoyez au professeur son nouveau fichier.</string>
     <string name="record_bad_subject">La matière « %1$s » ne fait pas partie du programme de la classe %2$s. Vérifiez que le registre correspond à cette classe et à cette année.</string>
