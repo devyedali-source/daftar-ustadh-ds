@@ -31,25 +31,58 @@
    },
    "board": [
     {
-     "h": "Greetings",
+     "h": "Dialogue",
      "lines": [
-      "Hi! / Hello!",
-      "How are you?",
-      "I am fine, thank you. And you?"
+      "Mohamed: Hello, students, how are you?",
+      "Students: Hello. Are you a teacher?",
+      "Mohamed: Yes, I am. My name is Mohamed. What is your name?",
+      "Aly: My name is Aly.",
+      "Aly: Oh, the bell is ringing. I’m going home, goodbye! — Demba: Bye-bye!"
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.141,
+       0.196,
+       0.859,
+       0.46
+      ],
+      "caption": "Hello, students!"
+     }
+    },
+    {
+     "h": "I can remember",
+     "lines": [
+      "Greetings: hi / hello / how are you? — I am fine / fine, thank you / thanks.",
+      "Adjectives: good, fine, okay."
+     ],
+     "table": [
+      [
+       "Subject",
+       "To be",
+       "Short form"
+      ],
+      [
+       "I",
+       "am",
+       "I’m"
+      ],
+      [
+       "he / she / it",
+       "is",
+       "he’s / she’s / it’s"
+      ],
+      [
+       "we / you / they",
+       "are",
+       "we’re / you’re / they’re"
+      ]
      ]
     },
     {
-     "h": "To be (simple present)",
+     "h": "Vocabulary",
      "lines": [
-      "I am = I’m",
-      "He / She / It is = he’s / she’s / it’s",
-      "We / You / They are = we’re / you’re / they’re"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Rearrange: are – how – you – Brahim?"
+      "Vocabulary: good, goodbye, morning, hello, how are you, fine, bye-bye."
      ]
     }
    ]
@@ -81,32 +114,40 @@
    },
    "board": [
     {
-     "h": "Greetings and time",
+     "h": "Dialogues",
      "lines": [
-      "Good morning",
-      "Good afternoon",
-      "Good evening"
+      "Saleh: Hi, good morning. Are you a new student? What is your name?",
+      "Zeineb: Yes, I’m a new student coming from Zouerate. My name is Zeineb.",
+      "John: Good afternoon. My name is John. — Moussa: My name is Moussa. It’s a pleasure to meet you.",
+      "Abdalla: Nice to meet you, Diagana. — Diagana: Where are you from? — Abdalla: I’m from Turkey!"
+     ],
+     "fig": {
+      "page": 11,
+      "rect": [
+       0.131,
+       0.211,
+       0.872,
+       0.567
+      ],
+      "caption": "Goodbye!"
+     }
+    },
+    {
+     "h": "Expressions",
+     "lines": [
+      "Good morning — Good afternoon — Good evening.",
+      "How are you? — I’m fine / I’m okay.",
+      "Nice to meet you. — Nice to meet you, too.",
+      "Bye — Goodbye."
      ]
     },
     {
-     "h": "Meeting someone",
+     "h": "I can remember",
      "lines": [
-      "Nice to meet you.",
-      "Nice to meet you, too."
-     ]
-    },
-    {
-     "h": "Leave taking",
-     "lines": [
-      "Goodbye!",
-      "Bye-bye!",
-      "See you!"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Rearrange: morning / good / Ahmed."
+      "Good + morning / afternoon / evening.",
+      "Subject pronouns: I, you, he, she, it.",
+      "“Wh” words: how, what, where.",
+      "To be in the simple present: am, is, are."
      ]
     }
    ]
@@ -139,30 +180,71 @@
    },
    "board": [
     {
-     "h": "Numbers 0–20",
-     "lines": [
-      "zero, one, two, three, four, five, six, seven, eight, nine, ten",
-      "eleven, twelve, thirteen, fourteen, fifteen … twenty"
+     "h": "Let’s count",
+     "lines": [],
+     "table": [
+      [
+       "0 zero",
+       "11 eleven",
+       "21 twenty-one"
+      ],
+      [
+       "1 one",
+       "12 twelve",
+       "22 twenty-two"
+      ],
+      [
+       "2 two",
+       "13 thirteen",
+       "23 twenty-three"
+      ],
+      [
+       "3 three",
+       "14 fourteen",
+       "24 twenty-four"
+      ],
+      [
+       "4 four",
+       "15 fifteen",
+       "25 twenty-five"
+      ],
+      [
+       "5 five",
+       "16 sixteen",
+       "30 thirty"
+      ],
+      [
+       "6 six",
+       "17 seventeen",
+       "31 thirty-one"
+      ],
+      [
+       "7 seven",
+       "18 eighteen",
+       "40 forty"
+      ],
+      [
+       "8 eight",
+       "19 nineteen",
+       "50 fifty"
+      ],
+      [
+       "9 nine",
+       "20 twenty",
+       ""
+      ],
+      [
+       "10 ten",
+       "",
+       ""
+      ]
      ]
     },
     {
-     "h": "Tens",
+     "h": "Asking about age",
      "lines": [
-      "twenty – thirty – forty – fifty",
-      "21 twenty-one, 35 thirty-five, 48 forty-eight"
-     ]
-    },
-    {
-     "h": "Use",
-     "lines": [
-      "How old are you? – I am 13 years old.",
-      "My phone number is 2-6-8-5…"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Write in letters: 14, 27, 50."
+      "How old are you? — I am twelve. / I am 15 years old.",
+      "Djeinaba: I’m sixteen. And you? — Fatma: I am fourteen."
      ]
     }
    ]
@@ -196,35 +278,95 @@
    },
    "board": [
     {
-     "h": "Introducing oneself",
+     "h": "I look and read",
      "lines": [
-      "My name is …",
-      "I am from …",
-      "I live in …",
-      "I am … years old."
+      "Hello. I am a student in this class. My name is Sara. What’s your name?",
+      "Hi. My name is Khadija. I live in Atar.",
+      "Hello. My name is Ramata. I am from Kaedi.",
+      "Our nationality is Mauritanian."
+     ],
+     "fig": {
+      "page": 13,
+      "rect": [
+       0.124,
+       0.206,
+       0.877,
+       0.497
+      ],
+      "caption": "Talking about myself"
+     }
+    },
+    {
+     "h": "Questions and answers",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What is your name?",
+       "My name is Mawloud."
+      ],
+      [
+       "Where are you from?",
+       "I am from Keur Macene."
+      ],
+      [
+       "Where do you live?",
+       "I live in Nouakchott."
+      ],
+      [
+       "How old are you?",
+       "I am 15 years old."
+      ]
      ]
     },
     {
-     "h": "Asking for information",
+     "h": "Grammar points",
      "lines": [
-      "What is your name?",
-      "Where are you from?",
-      "Where do you live?",
-      "How old are you?"
+      "To be: I am. To have: I have.",
+      "Short forms: I’m, you’re, he’s, she’s, we’re ; I’ve, you’ve, we’ve, they’ve ; name’s.",
+      "Personal pronoun: I. Possessive adjectives: my, your.",
+      "Use capital letters for proper names and the beginning of a sentence."
      ]
     },
     {
-     "h": "Responding / introducing others",
+     "h": "Meeting people",
      "lines": [
-      "Glad to meet you. – Glad to meet you, too.",
-      "Let me introduce you to …",
-      "This is my classmate …"
+      "Nice to meet you, Ahmed. — Nice to meet you, too.",
+      "Glad to meet you. — Glad to meet you, too.",
+      "Good night! See you tomorrow!"
      ]
     },
     {
-     "h": "Practice",
+     "h": "Introducing others",
      "lines": [
-      "Talk to a classmate about yourself."
+      "Let me introduce you to Mody, my brother. — I’d like you to meet my best friend Fatima.",
+      "Pleased to meet you. — It’s a pleasure to meet you, too.",
+      "Nationalities: He is Mauritanian. She is Japanese."
+     ],
+     "table": [
+      [
+       "Affirmative",
+       "Negative",
+       "Question"
+      ],
+      [
+       "I listen",
+       "I do not listen",
+       "Do I listen?"
+      ],
+      [
+       "He / she / it listens",
+       "He does not listen",
+       "Does he listen?"
+      ],
+      [
+       "We / you / they listen",
+       "They do not listen",
+       "Do they listen?"
+      ]
      ]
     }
    ]
@@ -256,29 +398,24 @@
    },
    "board": [
     {
-     "h": "The alphabet",
+     "h": "Capital letters",
      "lines": [
       "A B C D E F G H I J K L M",
       "N O P Q R S T U V W X Y Z"
      ]
     },
     {
-     "h": "Capital and small letters",
+     "h": "Small letters",
      "lines": [
-      "A – a, B – b, C – c …"
+      "a b c d e f g h i j k l m",
+      "n o p q r s t u v w x y z"
      ]
     },
     {
-     "h": "Spelling",
+     "h": "Spelling names",
      "lines": [
-      "How do you spell your name?",
-      "A-h-m-e-d."
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Spell your name and your town."
+      "“C-o-u-m-b-a D-i-e-n-g” — you write: Coumba Dieng.",
+      "How do you spell your last name, please? — It’s M-U-L-L-E-R."
      ]
     }
    ]
@@ -310,33 +447,63 @@
    },
    "board": [
     {
-     "h": "Demonstratives",
+     "h": "Dialogue: at the market",
      "lines": [
-      "Singular: this (close) – that (far)",
-      "Plural: these (close) – those (far)"
+      "Mahmoud: Can I have that jacket, please? — Shopkeeper: Which one? — Mahmoud: The blue one.",
+      "Mahmoud: How much is it? — Shopkeeper: It’s 800 MRU.",
+      "Mahmoud: And how much are those shoes? — Shopkeeper: They’re 300 MRU."
+     ],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.221,
+       0.237,
+       0.782,
+       0.49
+      ],
+      "caption": "Buying clothes"
+     }
+    },
+    {
+     "h": "I can remember",
+     "lines": [
+      "What is this? — This is a watch. / It’s a watch.",
+      "What are those? — Those are shoes."
+     ],
+     "table": [
+      [
+       "",
+       "Close things",
+       "Far things"
+      ],
+      [
+       "Singular",
+       "this",
+       "that"
+      ],
+      [
+       "Plural",
+       "these",
+       "those"
+      ]
      ]
     },
     {
-     "h": "Examples",
+     "h": "A new house",
      "lines": [
-      "This is a book.",
-      "That is a door.",
-      "These are pens.",
-      "Those are students."
-     ]
-    },
-    {
-     "h": "Asking",
-     "lines": [
-      "What is this? – It is a ruler.",
-      "Do you have a pen?"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Fill in with is / are."
-     ]
+      "Rooms: hall, living room, dining room, bathroom, bedroom, kitchen.",
+      "Do you have a refrigerator? — Does she have a washing machine?"
+     ],
+     "fig": {
+      "page": 25,
+      "rect": [
+       0.224,
+       0.217,
+       0.776,
+       0.427
+      ],
+      "caption": "Our new house"
+     }
     }
    ]
   },
@@ -365,25 +532,42 @@
    },
    "board": [
     {
-     "h": "Positive instructions",
+     "h": "Positive commands",
      "lines": [
-      "Listen to me!",
-      "Open your books!",
-      "Write the date!"
+      "Look at me! Listen to me! Be on time! Clean the board!",
+      "Write the date! Write with a blue pen! Behave yourselves!"
+     ],
+     "fig": {
+      "page": 27,
+      "rect": [
+       0.19,
+       0.22,
+       0.806,
+       0.469
+      ],
+      "caption": "Classroom rules"
+     }
+    },
+    {
+     "h": "Negative commands",
+     "lines": [
+      "Don’t sit on the tables!",
+      "Don’t throw pieces of paper on the floor!",
+      "Don’t spit on the wall!",
+      "Don’t write with a red pen or a pencil!"
      ]
     },
     {
-     "h": "Negative instructions",
+     "h": "I can remember",
      "lines": [
-      "Don’t + verb",
-      "Don’t sit on the table!",
-      "Don’t be lazy!"
+      "Positive instruction: simple form of the verb — Listen to me!",
+      "Negative instruction: Don’t + simple form of the verb — Don’t sit on the table!"
      ]
     },
     {
-     "h": "Practice",
+     "h": "Vocabulary",
      "lines": [
-      "Give three classroom rules."
+      "Vocabulary: stand up, sit down, come in, go out, knock on the door, obey your parents, respect the elders."
      ]
     }
    ]
@@ -416,32 +600,59 @@
    },
    "board": [
     {
+     "h": "Telling the time",
+     "lines": [],
+     "table": [
+      [
+       "Time",
+       "We say"
+      ],
+      [
+       "11:00",
+       "It is eleven o’clock a.m."
+      ],
+      [
+       "06:20",
+       "It is six-twenty / twenty past six."
+      ],
+      [
+       "19:30",
+       "It is seven-thirty p.m. / half past seven."
+      ],
+      [
+       "08:35",
+       "It is eight thirty-five / twenty-five to nine."
+      ],
+      [
+       "09:45",
+       "It is nine forty-five / a quarter to ten."
+      ]
+     ],
+     "fig": {
+      "page": 51,
+      "rect": [
+       0.237,
+       0.199,
+       0.764,
+       0.368
+      ],
+      "caption": "What time is it?"
+     }
+    },
+    {
+     "h": "a.m. and p.m.",
+     "lines": [
+      "a.m.: from midnight to midday ; p.m.: from midday to midnight.",
+      "Midday is 12:00 ; midnight is 00:00.",
+      "From … to …: I go to school from eight in the morning to one in the afternoon."
+     ]
+    },
+    {
      "h": "Asking the time",
      "lines": [
-      "What time is it?",
-      "What’s the time?"
-     ]
-    },
-    {
-     "h": "Telling the time",
-     "lines": [
-      "It is eleven o’clock.",
-      "It is half past seven (7:30).",
-      "It is twenty past six (6:20)."
-     ]
-    },
-    {
-     "h": "Time of day",
-     "lines": [
-      "a.m.: in the morning",
-      "p.m.: in the afternoon / evening / at night",
-      "noon – midnight"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "What time do you wake up?"
+      "What time is it? — What’s the time? — Do you have time, please?",
+      "Sorry, could you tell me the time, please?",
+      "What time does this class begin? — It begins at 10:00 a.m."
      ]
     }
    ]
@@ -473,25 +684,34 @@
     {
      "h": "The days of the week",
      "lines": [
-      "1. Monday",
-      "2. Tuesday",
-      "3. Wednesday",
-      "4. Thursday",
-      "5. Friday",
-      "6. Saturday",
-      "7. Sunday"
+      "There are seven days in a week.",
+      "Monday is the first day of the week ; Sunday is the seventh day."
+     ],
+     "table": [
+      [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th",
+       "6th",
+       "7th"
+      ],
+      [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday",
+       "Friday",
+       "Saturday",
+       "Sunday"
+      ]
      ]
     },
     {
-     "h": "Remember",
+     "h": "Vocabulary",
      "lines": [
-      "Days start with a capital letter."
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "What day is it today?"
+      "Vocabulary: day, week, today, before, after, first, second, third, fourth, fifth, sixth, seventh."
      ]
     }
    ]
@@ -525,25 +745,46 @@
    },
    "board": [
     {
-     "h": "The months",
+     "h": "The months of the year",
      "lines": [
-      "January, February, March, April",
-      "May, June, July, August",
-      "September, October, November, December"
-     ]
+      "There are twelve months in a year.",
+      "January is the first month of the year ; December is the twelfth month."
+     ],
+     "table": [
+      [
+       "1 January",
+       "2 February",
+       "3 March",
+       "4 April"
+      ],
+      [
+       "5 May",
+       "6 June",
+       "7 July",
+       "8 August"
+      ],
+      [
+       "9 September",
+       "10 October",
+       "11 November",
+       "12 December"
+      ]
+     ],
+     "fig": {
+      "page": 54,
+      "rect": [
+       0.304,
+       0.21,
+       0.695,
+       0.396
+      ],
+      "caption": "A calendar"
+     }
     },
     {
-     "h": "The date",
+     "h": "Vocabulary",
      "lines": [
-      "What is the date today?",
-      "Today is Monday, the 4th of November.",
-      "Written: Monday, November 4th."
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Write your date of birth."
+      "Vocabulary: independence, day, month, year."
      ]
     }
    ]
@@ -575,33 +816,77 @@
    },
    "board": [
     {
-     "h": "Asking about others",
+     "h": "Dialogue: a new friend",
      "lines": [
-      "What’s his / her name?",
-      "Where is he / she from?",
-      "How old is he / she?"
+      "Abdoul: He is a first year student. He is from Tidjikja, but now he lives in Ksar with his aunt.",
+      "His father is a teacher, and his mother is a nurse. He has two brothers and one sister."
+     ],
+     "fig": {
+      "page": 42,
+      "rect": [
+       0.687,
+       0.211,
+       0.887,
+       0.371
+      ],
+      "caption": "Friends"
+     }
+    },
+    {
+     "h": "Questions about others",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What is his name?",
+       "His name is Ahmed."
+      ],
+      [
+       "Where is he from?",
+       "He is from Tidjikja."
+      ],
+      [
+       "Does he live in Teyaret?",
+       "No, he doesn’t. He lives in Ksar."
+      ],
+      [
+       "What does his father do?",
+       "He is a teacher."
+      ]
      ]
     },
     {
-     "h": "Giving information",
+     "h": "I can remember",
      "lines": [
-      "His name’s Ahmed.",
-      "She’s from Boghe.",
-      "He is Mauritanian."
+      "Personal pronouns: he, she ; possessive adjectives: his, her.",
+      "Contractions: he is → he’s ; she is → she’s ; where is → where’s ; his name is → his name’s."
+     ],
+     "table": [
+      [
+       "",
+       "Affirmative",
+       "Negative"
+      ],
+      [
+       "to live",
+       "I/we/you/they live — he/she/it lives",
+       "don’t live — doesn’t live"
+      ],
+      [
+       "to have",
+       "I/we/you/they have — he/she/it has",
+       "don’t have — doesn’t have"
+      ]
      ]
     },
     {
-     "h": "Simple present",
+     "h": "Nationalities",
      "lines": [
-      "I live – he / she lives",
-      "I have – he / she has",
-      "He doesn’t live – she doesn’t have"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Introduce one member of your family."
+      "Mauritania → Mauritanian ; Mali → Malian ; Tunisia → Tunisian ; Canada → Canadian.",
+      "England → English ; France → French ; the United States → American."
      ]
     }
    ]
@@ -632,23 +917,34 @@
    },
    "board": [
     {
-     "h": "Asking",
+     "h": "Dialogue",
      "lines": [
-      "Who is that boy in a blue shirt?",
-      "Who are those girls?"
+      "Yacoub: Ahmed, who is that boy in a blue shirt? — Ahmed: He is my brother, Baba.",
+      "Yacoub: What about the girl wearing a veil? — Ahmed: She’s my sister, Khadija.",
+      "Yacoub: And who are those boys? — Ahmed: They are my classmates, Abdou and Adama."
+     ],
+     "fig": {
+      "page": 40,
+      "rect": [
+       0.631,
+       0.238,
+       0.885,
+       0.383
+      ],
+      "caption": "At a party"
+     }
+    },
+    {
+     "h": "I can remember",
+     "lines": [
+      "in + clothing: The boy in a grey jacket is my nephew.",
+      "with + body parts / accessories: The man with a mask is a doctor."
      ]
     },
     {
-     "h": "Identifying",
+     "h": "Vocabulary",
      "lines": [
-      "in + clothing: the boy in a grey jacket",
-      "with + accessories: the man with a mask"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Identify three classmates."
+      "Vocabulary: party, to invite, who, in, with, cap, veil, pants, gloves, turban, jeans."
      ]
     }
    ]
@@ -678,24 +974,35 @@
    },
    "board": [
     {
-     "h": "Asking",
+     "h": "I look and read",
      "lines": [
-      "Where is the teacher?",
-      "Where are the balls?"
+      "Salem is under the car. Samba and Omar are in the car.",
+      "Ali is behind the car. Lalla is in front of the car.",
+      "Fatimetou is between Demba and Sidi."
+     ],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.221,
+       0.203,
+       0.779,
+       0.409
+      ],
+      "caption": "Prepositions of place"
+     }
+    },
+    {
+     "h": "Questions",
+     "lines": [
+      "Where is the teacher? — He is in front of the students.",
+      "Where are Sidi and Khady? — They are behind Zeinebou.",
+      "Where is the teacher’s bag? — It’s on the desk."
      ]
     },
     {
-     "h": "Prepositions of location",
+     "h": "I can remember",
      "lines": [
-      "in – on – at",
-      "under – above – below",
-      "behind – in front of – between"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Say where three things are in your classroom."
+      "Prepositions of location: in, on, at, under, behind, in front of, between, next to, above, below, across."
      ]
     }
    ]
@@ -727,31 +1034,29 @@
    },
    "board": [
     {
-     "h": "Adjectives",
+     "h": "Possessive adjectives",
      "lines": [
-      "Size: large, small",
-      "Shape: square, oval, rectangular",
-      "Colour: red, white, green",
-      "Quality: good, bad, heavy"
-     ]
+      "Her schoolbag is heavy. His shoes are dirty. Our classroom is large.",
+      "My shirt is new. Your ruler is triangular. Their class is noisy."
+     ],
+     "fig": {
+      "page": 35,
+      "rect": [
+       0.38,
+       0.227,
+       0.621,
+       0.395
+      ],
+      "caption": "Describe the things in this picture"
+     }
     },
     {
-     "h": "Questions",
+     "h": "I can remember",
      "lines": [
-      "What’s it like? – It’s …",
-      "What colour is it? – It’s …"
-     ]
-    },
-    {
-     "h": "Possessive pronouns",
-     "lines": [
-      "mine, yours, his, hers, ours, theirs"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Describe your schoolbag."
+      "Adjectives (never take “s”): large, small, hot, cold, black, red, square, rectangular, oval, good, bad.",
+      "Possessive pronouns: mine, yours, his, hers, its, ours, theirs.",
+      "What’s it like? — It’s … ; What are they like? — They are …",
+      "What’s the color of …? — What color is …?"
      ]
     }
    ]
@@ -782,24 +1087,44 @@
    },
    "board": [
     {
-     "h": "Describing",
+     "h": "I look and read",
      "lines": [
-      "He / she is tall, short, thin, young …",
-      "He / she has got long hair, a beard …",
-      "He / she wears a red shirt …"
+      "Ahmed is wearing a red shirt. Ahmed is twelve years old.",
+      "My sister Khady is ten years old. She has black hair. She is a short girl."
+     ],
+     "fig": {
+      "page": 37,
+      "rect": [
+       0.461,
+       0.221,
+       0.611,
+       0.428
+      ],
+      "caption": "What does he look like?"
+     }
+    },
+    {
+     "h": "Questions",
+     "lines": [
+      "What does she look like? — She is tall with a broad nose.",
+      "What color is her hair? — It is black. What color are her eyes? — They are brown.",
+      "What does she usually wear? — She usually wears a blue veil."
      ]
     },
     {
-     "h": "Asking",
+     "h": "I can remember",
      "lines": [
-      "What does he / she look like?",
-      "Is he / she tall?"
+      "Adjectives never take “s”.",
+      "He/she has got … ; He/she wears … ; He/she is …",
+      "Has he/she got …? Is he/she …? What does he/she look like?"
      ]
     },
     {
-     "h": "Practice",
+     "h": "Vocabulary",
      "lines": [
-      "Describe a classmate."
+      "a toddler: around 1–3 years old ; a teenager: between 13 and 19.",
+      "lean: with very little fat ; wavy hair: between straight and curly.",
+      "a snub nose: a nose which goes up at the end ; a broad nose ≠ a narrow nose."
      ]
     }
    ]
@@ -830,29 +1155,33 @@
    },
    "board": [
     {
-     "h": "Ability",
+     "h": "Ability and inability",
      "lines": [
-      "I can read.",
-      "She can listen to music."
+      "Aminetou can listen to music. Fatma can read.",
+      "Ali can’t see. Ousmane can’t speak. Khadi can’t play football."
+     ],
+     "fig": {
+      "page": 48,
+      "rect": [
+       0.12,
+       0.218,
+       0.36,
+       0.481
+      ],
+      "caption": "He can walk"
+     }
+    },
+    {
+     "h": "I can remember",
+     "lines": [
+      "To form a question, invert the subject and “can”: Can you drive? Can he drive?",
+      "Short answers: Yes, I can. / No, I can’t. — Yes, she can. / No, she can’t."
      ]
     },
     {
-     "h": "Inability",
+     "h": "Vocabulary",
      "lines": [
-      "He can’t see.",
-      "I cannot fly."
-     ]
-    },
-    {
-     "h": "Questions",
-     "lines": [
-      "Can you drive? – Yes, I can. / No, I can’t."
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Say two things you can do and one you can’t."
+      "Vocabulary: blind, deaf, dumb, crippled, jump, run, ride, of course."
      ]
     }
    ]
@@ -884,24 +1213,56 @@
    },
    "board": [
     {
-     "h": "Simple present",
+     "h": "A typical day",
      "lines": [
-      "I / you / we / they write",
-      "He / she / it writes",
-      "Negative: don’t / doesn’t write"
+      "I wake up at six o’clock in the morning ; I do my ablutions and pray.",
+      "I eat my breakfast and brush my teeth, then I go to school and stay there until two o’clock.",
+      "In the evening, I study my lessons, eat dinner with my family and watch television. Then I go to bed."
+     ],
+     "fig": {
+      "page": 58,
+      "rect": [
+       0.647,
+       0.229,
+       0.885,
+       0.39
+      ],
+      "caption": "He brushes his teeth"
+     }
+    },
+    {
+     "h": "I can remember: the simple present",
+     "lines": [
+      "The present tense is used to talk about habitual actions."
+     ],
+     "table": [
+      [
+       "",
+       "I / you / we / they",
+       "he / she / it"
+      ],
+      [
+       "Affirmative",
+       "I write",
+       "he writes"
+      ],
+      [
+       "Negative",
+       "I don’t write",
+       "he doesn’t write"
+      ],
+      [
+       "Question",
+       "Do you drink tea? — Yes, I do.",
+       "Does he bring his phone? — No, he doesn’t."
+      ]
      ]
     },
     {
      "h": "Frequency adverbs",
      "lines": [
-      "always – usually – often",
-      "sometimes – rarely – never"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Describe your typical day."
+      "always, usually, often, sometimes, rarely, never.",
+      "I always drink milk in the morning. He sometimes plays football. I rarely go to the sea."
      ]
     }
    ]
@@ -931,32 +1292,29 @@
    },
    "board": [
     {
-     "h": "Present continuous",
+     "h": "What are they doing?",
      "lines": [
-      "am / is / are + verb + ing",
-      "He is reading.",
-      "They are swimming."
-     ]
+      "He is watching television. She is cooking. We are studying English.",
+      "What are you doing? — I am making some tea.",
+      "What are the children doing? — They are playing."
+     ],
+     "fig": {
+      "page": 61,
+      "rect": [
+       0.502,
+       0.218,
+       0.834,
+       0.456
+      ],
+      "caption": "She is cooking"
+     }
     },
     {
-     "h": "Questions",
+     "h": "I can remember",
      "lines": [
-      "What are you doing?",
-      "What is he doing?"
-     ]
-    },
-    {
-     "h": "Spelling",
-     "lines": [
-      "take → taking",
-      "cut → cutting",
-      "begin → beginning"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "What are you doing now?"
+      "The present continuous describes an ongoing action.",
+      "Form: am / is / are + verb + ing — The teacher is explaining the lesson.",
+      "Spelling: take → taking ; cut → cutting ; begin → beginning."
      ]
     }
    ]
@@ -987,30 +1345,35 @@
    },
    "board": [
     {
-     "h": "Likes",
+     "h": "Dialogue",
      "lines": [
-      "I like football.",
-      "I love playing football."
+      "Sidi: Hey, Ousmane. Do you play football?",
+      "Ousmane: Yes, I do. I love playing football in the afternoon. What about you?",
+      "Sidi: I like football but my favorite sport is boxing."
+     ],
+     "fig": {
+      "page": 64,
+      "rect": [
+       0.655,
+       0.198,
+       0.884,
+       0.335
+      ],
+      "caption": "Football"
+     }
+    },
+    {
+     "h": "Favorite things",
+     "lines": [
+      "Football is my favorite sport. Apples are my favorite fruit. Green is my favorite colour."
      ]
     },
     {
-     "h": "Dislikes",
+     "h": "I can remember",
      "lines": [
-      "I don’t like hot weather.",
-      "I dislike / hate …"
-     ]
-    },
-    {
-     "h": "Questions",
-     "lines": [
-      "Do you like …? – Yes, I do. / No, I don’t.",
-      "What is your favourite sport?"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Say three things you like."
+      "I like + verb-ing / + infinitive ;  I like + noun / pronoun.",
+      "Do you like + verb-ing?",
+      "I dislike + verb-ing."
      ]
     }
    ]

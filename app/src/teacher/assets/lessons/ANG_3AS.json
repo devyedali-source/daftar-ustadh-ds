@@ -32,31 +32,52 @@
    },
    "board": [
     {
-     "h": "Appearance",
+     "h": "Dialogue",
      "lines": [
-      "What does he look like?",
-      "He is tall and slim. He has curly hair and brown skin."
+      "The teacher: Look at the picture, who is the boy in it? — Student: Harouna.",
+      "The teacher: What is he wearing? — Student: He is wearing a green T-shirt.",
+      "The teacher: How does he usually behave? — He is always polite and he is very smart.",
+      "The teacher: What does he look like? — He is handsome, with black curly hair and brown skin."
      ]
     },
     {
-     "h": "Personality",
+     "h": "I can remember",
      "lines": [
-      "What is she like?",
-      "She is humble, sociable and reliable."
+      "Who / whose / that / which: The girl whose shirt is yellow is my friend."
+     ],
+     "table": [
+      [
+       "Structure",
+       "Example"
+      ],
+      [
+       "What do / does + subject + look like?",
+       "What does your father look like?"
+      ],
+      [
+       "subject + look + adjective",
+       "He looks tall."
+      ],
+      [
+       "subject + to be + adjective",
+       "He is thin."
+      ],
+      [
+       "in + clothes",
+       "My uncle is the one in the blue boubou."
+      ],
+      [
+       "with + part of body",
+       "My neighbor is the man with the big nose."
+      ]
      ]
     },
     {
-     "h": "Identifying",
+     "h": "Character",
      "lines": [
-      "the boy with the green T-shirt",
-      "the man in the white boubou",
-      "the girl whose shirt is yellow"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Complete: The girl ____ shirt is yellow is my friend. The boy ____ is standing is my brother."
+      "What do you think of …? — What is … like? — How do you find …?",
+      "Good character: honest, reliable, humble, sociable, open-minded, easy-going, hard-working.",
+      "Bad character: dishonest, lazy, impatient, nervous, unreliable."
      ]
     }
    ]
@@ -89,24 +110,70 @@
    },
    "board": [
     {
-     "h": "Simple past",
+     "h": "Text",
      "lines": [
-      "Affirmative: Scientists worked with simple tools.",
-      "Negative: They didn’t have computers.",
-      "Question: Did they share ideas by letters?"
+      "In the past, scientists worked with very simple tools and recorded their results in paper notebooks.",
+      "They shared their ideas through handwritten letters.",
+      "Today, scientists use advanced machines and communicate instantly through the internet."
      ]
     },
     {
-     "h": "Verbs",
+     "h": "The simple past",
      "lines": [
-      "Regular: work → worked – observe → observed",
-      "Irregular: spend → spent – take → took"
+      "Use: finished past actions, historical facts, specific past times."
+     ],
+     "table": [
+      [
+       "Form",
+       "Example"
+      ],
+      [
+       "Regular: verb + -ed",
+       "They worked."
+      ],
+      [
+       "Irregular: 2nd form",
+       "They wrote letters."
+      ],
+      [
+       "Negative: did not + base verb",
+       "They didn’t work together."
+      ],
+      [
+       "Question: Did + subject + base verb?",
+       "Did they work alone?"
+      ]
      ]
     },
     {
-     "h": "Practice",
+     "h": "The past continuous",
      "lines": [
-      "Put into the past: Scientists (work) with simple tools. They (not / have) computers."
+      "Use: an action in progress at a specific past time, or when interrupted."
+     ],
+     "table": [
+      [
+       "Form",
+       "Example"
+      ],
+      [
+       "was / were + verb-ing",
+       "She was observing the stars."
+      ],
+      [
+       "wasn’t / weren’t + verb-ing",
+       "They weren’t using email."
+      ],
+      [
+       "Was / Were + subject + verb-ing?",
+       "Was he working alone?"
+      ]
+     ]
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [
+      "scientist, researcher, telescope, data, pace, in isolation, observation.",
+      "manual: done by hand ; analyze: study data carefully."
      ]
     }
    ]
@@ -138,27 +205,46 @@
    },
    "board": [
     {
-     "h": "While",
+     "h": "Dialogue",
      "lines": [
-      "Two long actions: While I was studying, my brother was watching TV."
+      "Student: While I was working on my homework, my little brother was watching TV.",
+      "Student: When my father came home, my brother was still watching TV.",
+      "Student: While everyone else was relaxing, I was still working."
      ]
     },
     {
-     "h": "When",
+     "h": "I can remember",
      "lines": [
-      "Short action during a long one: When the bell rang, we were writing."
+      "While: two long actions at the same time ; when: a short action during a longer one ; as: actions happening together (background)."
+     ],
+     "table": [
+      [
+       "Word",
+       "Form",
+       "Example"
+      ],
+      [
+       "while",
+       "while + past continuous, past continuous",
+       "While I was studying, my brother was watching TV."
+      ],
+      [
+       "when",
+       "when + simple past, past continuous",
+       "When the bell rang, we were writing."
+      ],
+      [
+       "as",
+       "as + past continuous, past continuous",
+       "As I was walking, I was thinking."
+      ]
      ]
     },
     {
-     "h": "As",
+     "h": "Vocabulary",
      "lines": [
-      "Background actions: As I was walking, I was thinking."
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Rewrite with when: I was sleeping. The phone rang."
+      "exhausted: very tired ; interrupt: to stop someone for a short time.",
+      "concentrate: to focus your attention ; relaxing: resting and feeling calm."
      ]
     }
    ]
@@ -190,24 +276,44 @@
    },
    "board": [
     {
-     "h": "Simple future",
+     "h": "Dialogue",
      "lines": [
-      "Affirmative: The government will build new roads.",
-      "Negative: They won’t arrive today.",
-      "Question: Will you help me tomorrow?"
+      "Mariem: SNIM will modernize the railway between Zouerate and Nouadhibou.",
+      "Mariem: The government will build new roads to connect cities and villages.",
+      "Mariem: The ports of Nouakchott and Nouadhibou will be expanded in the future.",
+      "Ahmed: I shall talk about these projects in class the day after tomorrow."
      ]
     },
     {
-     "h": "Will / Shall",
+     "h": "The simple future",
      "lines": [
-      "Will: all subjects – decisions, promises, predictions",
-      "Shall: I / we – offers and suggestions"
+      "Will: all subjects — decisions, promises, predictions.",
+      "Shall: mainly with I and we — offers, suggestions, formal contexts.",
+      "Time expressions: tomorrow, the day after tomorrow, next week, next year, soon, later, in the future."
+     ],
+     "table": [
+      [
+       "Form",
+       "Example"
+      ],
+      [
+       "Subject + will / shall + base verb",
+       "I will travel tomorrow. We shall visit our grandparents."
+      ],
+      [
+       "Subject + will not (won’t) / shall not (shan’t) + base verb",
+       "They won’t arrive today."
+      ],
+      [
+       "Will / Shall + subject + base verb?",
+       "Will you help me? Shall we start the lesson now?"
+      ]
      ]
     },
     {
-     "h": "Practice",
+     "h": "Vocabulary",
      "lines": [
-      "Make negative and interrogative: She will start a new job next week."
+      "modernize, railway, trade, create jobs, connect, port, expand, airport, transportation, develop."
      ]
     }
    ]
@@ -239,23 +345,42 @@
    },
    "board": [
     {
-     "h": "Zero conditional",
+     "h": "Dialogue",
      "lines": [
-      "If + present simple, present simple",
-      "If you heat water, it boils."
+      "Son: Dad, what will you do for me if I pass my final exam?",
+      "Father: If you pass, I’ll take you on a nice trip.",
+      "Father: If you work hard, you will make it.",
+      "Father: If you succeed, I’ll keep my promise."
      ]
     },
     {
-     "h": "First conditional",
-     "lines": [
-      "If + present simple, will + base verb",
-      "If you study hard, you will succeed."
+     "h": "I can remember",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Form",
+       "Use",
+       "Example"
+      ],
+      [
+       "Zero conditional",
+       "If + present simple, present simple",
+       "general truths, habits",
+       "If you heat water, it boils."
+      ],
+      [
+       "First conditional",
+       "If + present simple, will + base verb",
+       "likely results in the future",
+       "If you study hard, you will succeed."
+      ]
      ]
     },
     {
-     "h": "Practice",
+     "h": "Vocabulary",
      "lines": [
-      "Complete: If you speak English every day, you ____ (improve) quickly."
+      "Vocabulary: pass, fail, succeed, lose, gain, win, race, promise, count on."
      ]
     }
    ]
@@ -287,28 +412,47 @@
    },
    "board": [
     {
-     "h": "Superlative of superiority",
+     "h": "Text",
      "lines": [
-      "Short: the + adj + -est – Ali is the tallest student.",
-      "Long: the most + adj – Mariem is the most intelligent girl."
+      "Ahmed is smart, but Mariem is even more intelligent than him.",
+      "Our school is big, but the village school is much smaller.",
+      "Ahmed is slow in the race, but Hamoud is faster."
      ]
     },
     {
-     "h": "Superlative of inferiority",
+     "h": "Comparatives",
      "lines": [
-      "the least + adj – This is the least interesting book."
+      "Superiority: adjective + -er + than / more + adjective + than — Ali is taller than Mariem.",
+      "Inferiority: less + adjective + than / not as … as — My phone is not as new as yours."
      ]
     },
     {
-     "h": "Example",
+     "h": "Superlatives",
      "lines": [
-      "Nouakchott is the biggest city in Mauritania."
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Complete: Nouakchott is ____ (big) city in Mauritania. Fatima is ____ (hardworking) student."
+      "Nouakchott is the biggest city in Mauritania.",
+      "This is the easiest exam we’ve had."
+     ],
+     "table": [
+      [
+       "",
+       "Form",
+       "Example"
+      ],
+      [
+       "Superiority (short)",
+       "the + adjective + -est",
+       "Ali is the tallest student."
+      ],
+      [
+       "Superiority (long)",
+       "the most + adjective",
+       "Mariem is the most intelligent girl in class."
+      ],
+      [
+       "Inferiority",
+       "the least + adjective",
+       "This is the least interesting book."
+      ]
      ]
     }
    ]

@@ -32,31 +32,54 @@
    },
    "board": [
     {
-     "h": "Ordering",
+     "h": "Dialogue: at the restaurant",
      "lines": [
-      "Can I help you? – Yes, please.",
-      "I’d like some lunch, please.",
-      "I’ll have a vegetarian sandwich."
+      "Waiter: Hello. Can I help you? — Houda: Yes, please. I’d like some lunch.",
+      "Waiter: Would you like a starter? — Houda: I’d like a little salad.",
+      "Waiter: What would you like for the main course? — Houda: I’d like a plate of rice and fish.",
+      "Waiter: Would you like anything to drink? — Houda: A bowl of milk for me.",
+      "Houda: No, just the bill."
      ]
     },
     {
-     "h": "The waiter asks",
+     "h": "I can remember",
      "lines": [
-      "Would you like a starter?",
-      "What would you like for the main course?",
-      "Would you like anything to drink?"
+      "Can / May I help you?",
+      "I would like a glass of water, please. — I’d like a bottle of Coke.",
+      "Can / Could you give me a little sugar, please?",
+      "Would you mind helping carry this desk? — May I sit here?"
      ]
     },
     {
-     "h": "The menu",
+     "h": "Many / much — few / little",
      "lines": [
-      "starter – main course – dessert – drink"
+      "Few and little mean that the amount is not sufficient."
+     ],
+     "table": [
+      [
+       "",
+       "Countable nouns",
+       "Uncountable nouns"
+      ],
+      [
+       "Big amount",
+       "many — How many people?",
+       "much — How much water?"
+      ],
+      [
+       "Small amount",
+       "few / a few",
+       "little / a little"
+      ]
      ]
     },
     {
-     "h": "Practice",
+     "h": "Vocabulary",
      "lines": [
-      "Complete: Waiter: What would you like for the main course? – You: ____"
+      "Starter: light food we take before the main course ; main course: the major food of the menu.",
+      "Vegetarian: someone who does not eat meat, fish or eggs.",
+      "Bill: paper showing the total amount to pay.",
+      "a packet of tea, a kilo of sugar, a slice of bread, a loaf of bread, a bottle of water, a glass of milk."
      ]
     }
    ]
@@ -89,25 +112,69 @@
    },
    "board": [
     {
+     "h": "Dialogue",
+     "lines": [
+      "Aly: Hi, Sidi. Can I borrow your book? — Sidi: I am using my book. You can ask the teacher.",
+      "Aly: Could you, please, lend me your book for a while? — Teacher: Sure, but where is your book?",
+      "Aly: I forgot it at home."
+     ]
+    },
+    {
      "h": "Making requests",
      "lines": [
-      "Can/Could I + verb? – Can I borrow your book?",
-      "Can/Could you + verb? – Could you lend me your pen?",
-      "May I + verb? – May I sit here?",
-      "Do/Would you mind + verb-ing? – Would you mind opening the window?"
+      "The answer to “Do / Would you mind…?” is negative to mean yes: No, not at all.",
+      "Could, May, Would you mind and I wonder if are more formal than Can and Will."
+     ],
+     "table": [
+      [
+       "Request",
+       "Example",
+       "Accepting",
+       "Declining"
+      ],
+      [
+       "Can / Could I + verb?",
+       "Can I borrow your book?",
+       "Sure!",
+       "No, I’m sorry."
+      ],
+      [
+       "Can / Could you + verb?",
+       "Could you lend me your book?",
+       "Of course. Here you are.",
+       "No, I’m using it."
+      ],
+      [
+       "May I + verb?",
+       "May I use your ruler?",
+       "Yes, here it is!",
+       "I’m afraid I can’t."
+      ],
+      [
+       "Will / Would you + verb?",
+       "Would you help me lift this box?",
+       "Yes, of course!",
+       "I’m sorry, I can’t."
+      ],
+      [
+       "Do / Would you mind + verb-ing?",
+       "Would you mind opening the window?",
+       "No, not at all.",
+       "Sorry, I can’t."
+      ],
+      [
+       "I wonder if you could…",
+       "I wonder if you could give me a ride.",
+       "Sure, no problem.",
+       "I’d love to, but…"
+      ]
      ]
     },
     {
-     "h": "Responding",
+     "h": "Borrow or lend?",
      "lines": [
-      "Accept: Sure! / Of course! / No, not at all.",
-      "Decline: Sorry, I can’t. I’m using it."
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Complete: ____ you mind opening the window? – No, not at all."
+      "To borrow: to take something with the intention of returning it — Can I borrow your phone?",
+      "To lend: to give something for a short time — Can you lend me some money?"
      ]
     }
    ]
@@ -141,30 +208,48 @@
    },
    "board": [
     {
-     "h": "Quantity",
+     "h": "Dialogue",
      "lines": [
-      "How many + countable: How many kilos do you want?",
-      "How much + uncountable: How much sugar did she buy?",
-      "a few + countable / a little + uncountable"
+      "Salesperson: Can I help you, Madam? — Grandmother: I would like some rice, some sugar, and some cooking oil.",
+      "Salesperson: How much of each? — Grandmother: A 25 kg bag of rice, 5 kilos of sugar, and a 5-liter bottle of cooking oil.",
+      "Salesperson: How many kilos of each would you like? — Grandmother: Five kilos of onions and three kilos of potatoes.",
+      "Grandmother: How much is all that? — Salesperson: That’s 2110 MRU."
      ]
     },
     {
-     "h": "Prices",
+     "h": "Asking about prices",
      "lines": [
-      "How much is it? / How much does it cost?",
-      "That’s 2110 MRU."
+      "How much does it cost? / How much is it?",
+      "How much do they cost? / How much are they?"
      ]
     },
     {
-     "h": "Containers",
+     "h": "Count and non-count nouns",
      "lines": [
-      "a bag of rice – a bottle of oil – a kilo of sugar – a packet of tea"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Complete with many or much: How ____ eggs are there in your fridge? How ____ salt is there?"
+      "A count noun can be singular or plural ; use a / an with the singular: There is an orange on the table.",
+      "A non-count noun is always singular ; don’t use a / an: There is some milk in the refrigerator."
+     ],
+     "table": [
+      [
+       "",
+       "Count",
+       "Non-count"
+      ],
+      [
+       "Definite amount",
+       "How many bottles did she buy?",
+       "How much sugar did she buy?"
+      ],
+      [
+       "Indefinite amount",
+       "She bought some bags.",
+       "She bought some rice."
+      ],
+      [
+       "Question",
+       "Did she buy any bottles?",
+       "Did she buy any oil?"
+      ]
      ]
     }
    ]
@@ -197,36 +282,55 @@
    },
    "board": [
     {
-     "h": "Superiority",
+     "h": "Text",
      "lines": [
-      "short adj + -er + than: big → bigger than",
-      "more + long adj + than: more delicious than",
-      "good → better / bad → worse"
+      "Fruits are usually tastier than vegetables.",
+      "Dates are more delicious than carrots.",
+      "Eggplant and lettuce are less tasty than green beans and carrots.",
+      "Sweet potatoes are as sweet as beetroots.",
+      "Strawberries smell better than grapes."
      ]
     },
     {
-     "h": "Inferiority",
+     "h": "I can remember",
      "lines": [
-      "less + adj + than: less tasty than"
+      "Irregular: good → better ; bad → worse.",
+      "Spelling: big → bigger (CVC) ; easy → easier (y → i)."
+     ],
+     "table": [
+      [
+       "Comparison",
+       "Form",
+       "Example"
+      ],
+      [
+       "Superiority (short)",
+       "adjective + -er + than",
+       "Fruits are tastier than vegetables."
+      ],
+      [
+       "Superiority (long)",
+       "more + adjective + than",
+       "Dates are more delicious than carrots."
+      ],
+      [
+       "Inferiority",
+       "less + adjective + than",
+       "Lettuce is less tasty than carrots."
+      ],
+      [
+       "Equality",
+       "as + adjective + as",
+       "Sweet potatoes are as sweet as beets."
+      ]
      ]
     },
     {
-     "h": "Equality",
+     "h": "Vocabulary",
      "lines": [
-      "as + adj + as: as sweet as"
-     ]
-    },
-    {
-     "h": "Spelling",
-     "lines": [
-      "big → bigger (CVC)",
-      "easy → easier (y → i)"
-     ]
-    },
-    {
-     "h": "Practice",
-     "lines": [
-      "Give the comparative: Watermelons are (big) melons. Plums are (tasty – equality) pineapples."
+      "Sour: sharp or acidic taste ; bitter: not sweet.",
+      "Chili: a small red or green pepper with a very hot taste.",
+      "Eggplant, lettuce, healthy."
      ]
     }
    ]
