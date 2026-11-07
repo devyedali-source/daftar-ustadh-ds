@@ -5,8 +5,13 @@ import android.graphics.pdf.PdfRenderer
 import android.os.ParcelFileDescriptor
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -72,7 +77,8 @@ fun LessonDialog(
     var view by rememberSaveable { mutableStateOf(0) }   // 0 التحضير، 1 الكتاب، 2 السبورة
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
         Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-            Column(Modifier.fillMaxSize()) {
+            // لا يختفي أسفل المحتوى (مثل زر «إظهار الإجابة») تحت أزرار الهاتف
+            Column(Modifier.fillMaxSize().systemBarsPadding()) {
                 Row(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.primary).padding(horizontal = 8.dp, vertical = 10.dp),
                     verticalAlignment = Alignment.CenterVertically) {
                     TextButton(onClick = { if (view != 0) view = 0 else onDismiss() }) {
@@ -91,7 +97,7 @@ fun LessonDialog(
                 Box(Modifier.weight(1f)) {
                     when (view) {
                         1 -> BookPages(bookAsset, lesson.pageFrom, lesson.pageTo, bookTitle)
-                        2 -> BoardView(lesson)
+                        2 -> BoardView(lesson, bookAsset)
                         else -> PrepView(lesson)
                     }
                 }
@@ -115,7 +121,8 @@ private fun ViewButton(label: String, selected: Boolean, modifier: Modifier, onC
 @Composable
 private fun PrepView(l: BookLesson) {
     var showAnswer by rememberSaveable(l.title) { mutableStateOf(false) }
-    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(12.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(start = 12.dp, end = 12.dp, top = 12.dp, bottom = 40.dp),
+        verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
             Text(stringResource(R.string.lesson_pages, l.pageFrom, l.pageTo), fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
@@ -148,23 +155,62 @@ private fun PrepCard(title: String, bg: Color, content: @Composable () -> Unit) 
     }
 }
 
-/** محتوى السبورة: لوح أخضر بخط الطباشير. */
+/** محتوى السبورة: لوح أخضر بخط الطباشير، مع الجداول والرسوم المأخوذة من الكتاب. */
 @Composable
-private fun BoardView(l: BookLesson) {
+private fun BoardView(l: BookLesson, bookAsset: String) {
     val chalk = Color(0xFFF5F5F0)
     val yellow = Color(0xFFFFE082)
+    val context = LocalContext.current
+    val hasFig = l.board.any { it.figure != null }
+    val holder = remember(bookAsset) { RendererHolder() }
+    DisposableEffect(bookAsset) { onDispose { holder.close() } }
+    val ready by produceState(initialValue = false, bookAsset, hasFig) {
+        if (hasFig) value = withContext(Dispatchers.IO) { LessonBank.bookFile(context, bookAsset)?.let { holder.open(it) } ?: false }
+    }
     LazyColumn(Modifier.fillMaxSize().padding(8.dp).background(Color(0xFF6D4C41), RoundedCornerShape(12.dp)).padding(8.dp)
         .background(Color(0xFF1F4A36), RoundedCornerShape(6.dp)),
-        contentPadding = PaddingValues(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        contentPadding = PaddingValues(start = 14.dp, end = 14.dp, top = 14.dp, bottom = 40.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
         item {
             Text(l.title, color = chalk, fontWeight = FontWeight.Black, fontSize = 21.sp, textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth())
         }
         items(l.board) { s ->
-            Column(verticalArrangement = Arrangement.spacedBy(3.dp)) {
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 if (s.heading.isNotBlank()) Text(s.heading, color = yellow, fontWeight = FontWeight.Bold, fontSize = 17.sp)
                 s.lines.forEach { line ->
                     Text(if (s.lines.size > 1) "– $line" else line, color = chalk, fontSize = 15.sp, lineHeight = 23.sp)
+                }
+                if (s.table.isNotEmpty()) ChalkTable(s.table, chalk, yellow)
+                s.figure?.let { f ->
+                    val bmp by produceState<Bitmap?>(initialValue = null, ready, f) {
+                        if (ready) value = holder.renderCrop(f.page - 1, f.rect)
+                    }
+                    val b = bmp
+                    if (b != null) Image(b.asImageBitmap(), contentDescription = f.caption,
+                        modifier = Modifier.fillMaxWidth().background(Color.White, RoundedCornerShape(6.dp)).padding(4.dp)
+                            .aspectRatio(b.width.toFloat() / b.height), contentScale = ContentScale.FillWidth)
+                    if (f.caption.isNotBlank()) Text(f.caption, color = chalk.copy(alpha = 0.85f), fontSize = 13.sp,
+                        textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
+                }
+            }
+        }
+    }
+}
+
+/** جدول بخط الطباشير: الصف الأول عناوين الأعمدة. */
+@Composable
+private fun ChalkTable(rows: List<List<String>>, chalk: Color, head: Color) {
+    val cols = rows.maxOf { it.size }
+    Column(Modifier.fillMaxWidth().border(1.dp, chalk.copy(alpha = 0.7f))) {
+        rows.forEachIndexed { i, r ->
+            Row(Modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
+                (0 until cols).forEach { c ->
+                    Box(Modifier.weight(1f).fillMaxHeight().border(0.5.dp, chalk.copy(alpha = 0.5f)).padding(5.dp),
+                        contentAlignment = Alignment.Center) {
+                        Text(r.getOrNull(c).orEmpty(), color = if (i == 0) head else chalk,
+                            fontWeight = if (i == 0) FontWeight.Bold else FontWeight.Normal,
+                            fontSize = 13.sp, lineHeight = 18.sp, textAlign = TextAlign.Center)
+                    }
                 }
             }
         }
@@ -213,12 +259,14 @@ private class RendererHolder {
         true
     } catch (e: Exception) { false }
 
-    suspend fun render(index: Int): Bitmap? = lock.withLock {
+    suspend fun render(index: Int): Bitmap? = renderAt(index, 1100)
+
+    private suspend fun renderAt(index: Int, width: Int): Bitmap? = lock.withLock {
         withContext(Dispatchers.IO) {
             val r = renderer ?: return@withContext null
             if (index !in 0 until r.pageCount) return@withContext null
             try { r.openPage(index).use { page ->
-                val w = 1100
+                val w = width
                 val h = (w.toFloat() * page.height / page.width).toInt()
                 val bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
                 bmp.eraseColor(android.graphics.Color.WHITE)
@@ -226,6 +274,17 @@ private class RendererHolder {
                 bmp
             } } catch (e: Exception) { null }
         }
+    }
+
+    /** جزء من صفحة (رسم أو شكل) بدقة عالية: rect = (يسار، أعلى، يمين، أسفل) كنسب. */
+    suspend fun renderCrop(index: Int, rect: List<Float>): Bitmap? {
+        if (rect.size != 4) return null
+        val full = renderAt(index, 1800) ?: return null
+        val x0 = (rect[0] * full.width).toInt().coerceIn(0, full.width - 1)
+        val y0 = (rect[1] * full.height).toInt().coerceIn(0, full.height - 1)
+        val x1 = (rect[2] * full.width).toInt().coerceIn(x0 + 1, full.width)
+        val y1 = (rect[3] * full.height).toInt().coerceIn(y0 + 1, full.height)
+        return Bitmap.createBitmap(full, x0, y0, x1 - x0, y1 - y0).also { if (it !== full) full.recycle() }
     }
 
     fun close() {

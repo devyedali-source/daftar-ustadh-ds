@@ -4,8 +4,16 @@ import android.content.Context
 import org.json.JSONObject
 import java.io.File
 
-/** قسم من محتوى السبورة: عنوان وأسطر. */
-data class BoardSection(val heading: String, val lines: List<String>)
+/** رسم من الكتاب يُقتطع من صفحته: rect = (يسار، أعلى، يمين، أسفل) كنسب من عرض الصفحة وطولها. */
+data class BoardFigure(val page: Int, val rect: List<Float>, val caption: String)
+
+/** قسم من محتوى السبورة: عنوان وأسطر، وجدول (الصف الأول عناوين الأعمدة) أو رسم من الكتاب إن وُجدا. */
+data class BoardSection(
+    val heading: String,
+    val lines: List<String>,
+    val table: List<List<String>> = emptyList(),
+    val figure: BoardFigure? = null
+)
 
 /**
  * درس من الكتاب المدرسي مرتبط بعنوان في التخطيط السنوي:
@@ -61,7 +69,15 @@ object LessonBank {
                         summary = l.optString("summary"), points = strs(l.optJSONArray("points")),
                         applicationQ = app?.optString("q").orEmpty(), applicationA = app?.optString("a").orEmpty(),
                         board = (0 until (b?.length() ?: 0)).map { j ->
-                            val s = b!!.getJSONObject(j); BoardSection(s.optString("h"), strs(s.optJSONArray("lines")))
+                            val s = b!!.getJSONObject(j)
+                            val t = s.optJSONArray("table")
+                            val f = s.optJSONObject("fig")
+                            BoardSection(s.optString("h"), strs(s.optJSONArray("lines")),
+                                (0 until (t?.length() ?: 0)).map { r -> strs(t!!.getJSONArray(r)) },
+                                f?.let { fo ->
+                                    val r = fo.getJSONArray("rect")
+                                    BoardFigure(fo.getInt("page"), (0 until r.length()).map { r.getDouble(it).toFloat() }, fo.optString("caption"))
+                                })
                         },
                         book = l.optString("book"), bookTitle = l.optString("bookTitle")
                     )
