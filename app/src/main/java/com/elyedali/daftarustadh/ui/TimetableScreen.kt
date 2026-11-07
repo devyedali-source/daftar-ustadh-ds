@@ -366,7 +366,7 @@ private fun TeacherListPane(
         subjectsByClass.flatMap { (cid, subs) -> subs.map { (cid to it.code) to it.weeklyHours } }.toMap()
     }
     val classNames = remember(classes) { classes.associate { it.id to it.name } }
-    val uncovered = allSubjects.filter { code -> teachers.none { code in it.subjects } }
+    val uncovered = allSubjects.filter { code -> teachers.none { code in it.all } }
 
     LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(vertical = 10.dp)) {
         item { Text(stringResource(R.string.tt_teachers_list_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
@@ -390,11 +390,13 @@ private fun TeacherListPane(
                 Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Text("👨‍🏫 " + t.name, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f))
-                        Text(stringResource(R.string.tt_hours_week, hours), fontSize = 12.sp, fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colorScheme.secondary)
+                        Text(stringResource(R.string.tt_hours_of_max, hours, t.maxHours), fontSize = 12.sp, fontWeight = FontWeight.Bold,
+                            color = if (hours > t.maxHours) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.secondary)
                         TextButton(onClick = { deleting = i }) { Text("🗑️") }
                     }
                     Text(t.subjects.joinToString("، ") { subjectLabel(it) }, fontSize = 12.sp, color = MaterialTheme.colorScheme.primary)
+                    if (t.extra.isNotEmpty()) Text(stringResource(R.string.tt_can_teach, t.extra.joinToString("، ") { subjectLabel(it) }),
+                        fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     if (t.phone.isNotBlank()) Text("🟢 " + com.elyedali.daftarustadh.exchange.ExchangeAd.localPhone(t.phone), fontSize = 11.sp,
                         color = MaterialTheme.colorScheme.onSurfaceVariant)
                     if (mine.isNotEmpty()) Text(
@@ -416,6 +418,9 @@ private fun TeacherListPane(
         val existing = teachers.getOrNull(idx)
         var name by remember(idx) { mutableStateOf(existing?.name.orEmpty()) }
         var chosen by remember(idx) { mutableStateOf(existing?.subjects.orEmpty().toSet()) }
+        var extra by remember(idx) { mutableStateOf(existing?.extra.orEmpty().toSet()) }
+        var maxText by remember(idx) { mutableStateOf((existing?.maxHours ?: com.elyedali.daftarustadh.data.TimetableTeachers.DEFAULT_MAX_HOURS).toString()) }
+        val maxHours = maxText.toIntOrNull()?.takeIf { it in 1..40 }
         var phone by remember(idx) { mutableStateOf(existing?.phone.orEmpty()) }
         val phoneOk = phone.isBlank() || com.elyedali.daftarustadh.exchange.ExchangeAd.normalizePhone(phone) != null
         val duplicate = teachers.withIndex().any { (j, t) -> j != idx && t.name == name.trim() }
@@ -435,16 +440,35 @@ private fun TeacherListPane(
                     if (!phoneOk) Text(stringResource(R.string.ex_err_phone), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
                     // خيار آخر: اختيار الرقم من جهات الاتصال في الهاتف
                     ContactPhoneButton { phone = it }
+                    OutlinedTextField(maxText, { maxText = it.filter { c -> c.isDigit() }.take(2) },
+                        label = { Text(stringResource(R.string.tt_teacher_max_hours)) }, singleLine = true, isError = maxHours == null,
+                        keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(keyboardType = androidx.compose.ui.text.input.KeyboardType.Number),
+                        modifier = Modifier.fillMaxWidth())
+                    // المواد الأصلية: تخصص الأستاذ (مادة أو مادتان)
                     Text(stringResource(R.string.tt_teacher_subjects), fontWeight = FontWeight.Bold, fontSize = 13.sp)
-                    val max = com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS
-                    Text(stringResource(R.string.max_subjects, chosen.size, max), fontSize = 12.sp,
-                        color = if (chosen.size >= max) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant)
+                    val maxMain = com.elyedali.daftarustadh.data.TimetableTeachers.MAX_MAIN
+                    Text(stringResource(R.string.max_subjects, chosen.size, maxMain), fontSize = 12.sp,
+                        color = if (chosen.size >= maxMain) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant)
                     FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                         allSubjects.forEach { code ->
                             FilterChip(
                                 selected = code in chosen,
-                                enabled = code in chosen || chosen.size < max,
-                                onClick = { chosen = if (code in chosen) chosen - code else chosen + code },
+                                enabled = code in chosen || chosen.size < maxMain,
+                                onClick = { chosen = if (code in chosen) chosen - code else chosen + code; extra = extra - code },
+                                label = { Text(subjectLabel(code)) }
+                            )
+                        }
+                    }
+                    // مواد يمكن أن يدرّسها عند الحاجة: تُسند إليه فقط ما فاض عن أصحابها الأصليين
+                    Text(stringResource(R.string.tt_teacher_extra), fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    Text(stringResource(R.string.tt_teacher_extra_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    val maxExtra = com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS - chosen.size
+                    FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                        allSubjects.filter { it !in chosen }.forEach { code ->
+                            FilterChip(
+                                selected = code in extra,
+                                enabled = code in extra || extra.size < maxExtra,
+                                onClick = { extra = if (code in extra) extra - code else extra + code },
                                 label = { Text(subjectLabel(code)) }
                             )
                         }
@@ -452,9 +476,11 @@ private fun TeacherListPane(
                 }
             },
             confirmButton = {
-                TextButton(enabled = name.isNotBlank() && chosen.isNotEmpty() && chosen.size <= com.elyedali.daftarustadh.data.TimetableTeachers.MAX_SUBJECTS && !duplicate && phoneOk, onClick = {
+                TextButton(enabled = name.isNotBlank() && chosen.isNotEmpty() && chosen.size <= com.elyedali.daftarustadh.data.TimetableTeachers.MAX_MAIN &&
+                    maxHours != null && !duplicate && phoneOk, onClick = {
                     val t = TimetableTeacher(name.trim(), allSubjects.filter { it in chosen },
-                        com.elyedali.daftarustadh.exchange.ExchangeAd.normalizePhone(phone).orEmpty())
+                        com.elyedali.daftarustadh.exchange.ExchangeAd.normalizePhone(phone).orEmpty(),
+                        extra = allSubjects.filter { it in extra && it !in chosen }, maxHours = maxHours ?: com.elyedali.daftarustadh.data.TimetableTeachers.DEFAULT_MAX_HOURS)
                     onSave(if (existing == null) teachers + t else teachers.toMutableList().also { it[idx] = t })
                     editing = null
                 }) { Text(stringResource(R.string.save)) }
@@ -517,8 +543,9 @@ private fun ByClassAssignPane(
     }
     editing?.let { s ->
         // أساتذة هذه المادة أولًا، ثم البقية
-        val options = teachers.sortedBy { if (s.code in it.subjects) 0 else 1 }
+        val options = teachers.sortedBy { if (s.code in it.subjects) 0 else if (s.code in it.extra) 1 else 2 }
         val otherLabel = stringResource(R.string.tt_other_subject)
+        val canLabel = stringResource(R.string.tt_extra_subject)
         AlertDialog(
             onDismissRequest = { editing = null },
             title = { Text(subjectLabel(s.code) + " — " + classes.firstOrNull { it.id == cid }?.name.orEmpty()) },
@@ -527,9 +554,9 @@ private fun ByClassAssignPane(
                     if (options.isEmpty()) item { Text(stringResource(R.string.tt_no_teacher_list)) }
                     items(options, key = { it.name }) { t ->
                         Text(
-                            t.name + if (s.code in t.subjects) "" else " ($otherLabel)",
+                            t.name + if (s.code in t.subjects) "" else if (s.code in t.extra) " ($canLabel)" else " ($otherLabel)",
                             Modifier.fillMaxWidth().clickable { onAssign(cid, s.code, t.name); editing = null }.padding(vertical = 10.dp),
-                            color = if (s.code in t.subjects) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant
+                            color = if (s.code in t.all) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant
                         )
                     }
                     item {
@@ -716,7 +743,7 @@ private fun ByClassTab(
                     } else {
                         val assigned = assignments.firstOrNull { it.classId == cid && it.subjectCode == code }?.teacherName.orEmpty()
                         val options = (listOf(assigned).filter { it.isNotBlank() } +
-                            teachers.filter { code in it.subjects }.map { it.name }).distinct()
+                            teachers.filter { code in it.subjects }.map { it.name } + teachers.filter { code in it.extra }.map { it.name }).distinct()
                         item { Text(stringResource(R.string.tt_pick_teacher, subjectLabel(code)), fontWeight = FontWeight.Bold, fontSize = 13.sp) }
                         items(options, key = { "t-$it" }) { t ->
                             val busy = busyElsewhere(t)

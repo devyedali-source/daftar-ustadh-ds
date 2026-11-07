@@ -462,7 +462,13 @@
     <string name="tt_distribute">توزيع الأقسام على الأساتذة بالعدل</string>
     <string name="tt_distribute_confirm">سيوزّع التطبيق أقسام كل مادة على أساتذتها حسب الساعات، وسيحلّ هذا محلّ التوزيع السابق لهذه المواد. هل تريد المتابعة؟</string>
     <string name="tt_teacher_exists">هذا الاسم موجود من قبل.</string>
-    <string name="tt_teacher_subjects">المواد التي يدرّسها:</string>
+    <string name="tt_teacher_subjects">مواده الأصلية (تخصصه):</string>
+    <string name="tt_hours_of_max">%1$d من %2$d ساعة</string>
+    <string name="tt_can_teach">يمكنه تدريس: %1$s</string>
+    <string name="tt_teacher_max_hours">نصاب الأستاذ (ساعات في الأسبوع)</string>
+    <string name="tt_teacher_extra">مواد يمكن أن يدرّسها</string>
+    <string name="tt_teacher_extra_hint">تُسند إليه فقط الساعات التي فاضت عن نصاب أصحاب المادة الأصليين، ما دام لديه وقت فراغ.</string>
+    <string name="tt_extra_subject">يمكنه تدريسها</string>
     <string name="tt_delete_teacher">حذف الأستاذ %1$s؟</string>
     <string name="tt_delete">حذف</string>
     <string name="tt_other_subject">لا يدرّس هذه المادة</string>

@@ -513,11 +513,11 @@ class MainActivity : AppCompatActivity() {
                             ?.subjects.orEmpty().map { it.code to it.weeklyHours })
                     }
                     val valid = { a: com.elyedali.daftarustadh.data.TimetableAssignmentEntity ->
-                        teachers.any { t -> t.name == a.teacherName && a.subjectCode in t.subjects } }
+                        teachers.any { t -> t.name == a.teacherName && a.subjectCode in t.all } }
                     val keep = if (onlyMissing) timetableDao.listAssignments().filter(valid).associateBy { it.classId to it.subjectCode } else emptyMap()
                     val result = com.elyedali.daftarustadh.data.TimetableTeachers.distribute(teachers, classSubjects)
                         .filter { (it.classId to it.subjectCode) !in keep }
-                    val covered = teachers.flatMap { it.subjects }.toSet()
+                    val covered = teachers.flatMap { it.all }.toSet()
                     classSubjects.forEach { (cid, _, subs) ->
                         subs.filter { it.first in covered && (cid to it.first) !in keep }.forEach { (code, _) -> timetableDao.deleteAssignment(cid, code) }
                     }

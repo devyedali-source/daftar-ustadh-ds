@@ -462,7 +462,13 @@
     <string name="tt_distribute">Répartir équitablement les classes</string>
     <string name="tt_distribute_confirm">Les classes de chaque matière seront réparties entre ses professeurs selon les heures, en remplaçant la répartition précédente. Continuer ?</string>
     <string name="tt_teacher_exists">Ce nom existe déjà.</string>
-    <string name="tt_teacher_subjects">Matières enseignées :</string>
+    <string name="tt_teacher_subjects">Matières de spécialité :</string>
+    <string name="tt_hours_of_max">%1$d / %2$d h</string>
+    <string name="tt_can_teach">Peut enseigner : %1$s</string>
+    <string name="tt_teacher_max_hours">Service hebdomadaire (heures)</string>
+    <string name="tt_teacher_extra">Matières qu\'il peut enseigner</string>
+    <string name="tt_teacher_extra_hint">Ne lui sont attribuées que les heures dépassant le service des professeurs de la matière, s\'il a du temps libre.</string>
+    <string name="tt_extra_subject">peut l\'enseigner</string>
     <string name="tt_delete_teacher">Supprimer le professeur %1$s ?</string>
     <string name="tt_delete">Supprimer</string>
     <string name="tt_other_subject">n\'enseigne pas cette matière</string>

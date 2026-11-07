@@ -195,8 +195,20 @@ data class TimetableSettings(
     }
 }
 
-/** أستاذ في المؤسسة: اسمه والمواد التي يدرّسها ورقم واتسابه (مُدخل من الإدارة). */
-data class TimetableTeacher(val name: String, val subjects: List<String>, val phone: String = "")
+/**
+ * أستاذ في المؤسسة (مُدخل من الإدارة): اسمه، ومواده الأصلية (تخصصه: مادة أو مادتان)،
+ * والمواد التي يمكن أن يدرّسها عند الحاجة، ونصابه (ساعاته في الأسبوع)، ورقم واتسابه.
+ */
+data class TimetableTeacher(
+    val name: String,
+    val subjects: List<String>,
+    val phone: String = "",
+    val extra: List<String> = emptyList(),
+    val maxHours: Int = TimetableTeachers.DEFAULT_MAX_HOURS
+) {
+    /** كل ما يمكن أن يُسند إليه: مواده الأصلية ثم الإضافية. */
+    val all: List<String> get() = subjects + extra.filter { it !in subjects }
+}
 
 object TimetableTeachers {
     const val KEY = "timetable_teachers"
@@ -204,8 +216,17 @@ object TimetableTeachers {
     /** لا يدرّس الأستاذ أكثر من 5 مواد. */
     const val MAX_SUBJECTS = 5
 
+    /** المواد الأصلية (التخصص): مادة أو مادتان على الأكثر. */
+    const val MAX_MAIN = 2
+
+    /** النصاب الافتراضي للأستاذ (ساعات في الأسبوع)، تعدّله الإدارة لكل أستاذ. */
+    const val DEFAULT_MAX_HOURS = 18
+
     fun encode(list: List<TimetableTeacher>): String = JSONArray().apply {
-        list.forEach { t -> put(JSONObject().put("name", t.name).put("subjects", JSONArray(t.subjects)).put("phone", t.phone)) }
+        list.forEach { t ->
+            put(JSONObject().put("name", t.name).put("subjects", JSONArray(t.subjects)).put("phone", t.phone)
+                .put("extra", JSONArray(t.extra)).put("maxHours", t.maxHours))
+        }
     }.toString()
 
     fun decode(text: String?): List<TimetableTeacher> {
@@ -215,14 +236,19 @@ object TimetableTeachers {
             (0 until a.length()).map { i ->
                 val o = a.getJSONObject(i)
                 val s = o.getJSONArray("subjects")
-                TimetableTeacher(o.getString("name"), (0 until s.length()).map { s.getString(it) }, o.optString("phone"))
+                val e = o.optJSONArray("extra")
+                TimetableTeacher(o.getString("name"), (0 until s.length()).map { s.getString(it) }, o.optString("phone"),
+                    e?.let { a2 -> (0 until a2.length()).map { a2.getString(it) } }.orEmpty(),
+                    o.optInt("maxHours", DEFAULT_MAX_HOURS).takeIf { it > 0 } ?: DEFAULT_MAX_HOURS)
             }.filter { it.name.isNotBlank() }
         }.getOrDefault(emptyList())
     }
 
     /**
-     * يوزّع أقسام كل مادة على أساتذتها بالعدل: كل حصة (قسم، مادة) تذهب للأستاذ الأقل ساعات
-     * ممن يدرّسون تلك المادة، مع تفضيل من يدرّس نفس المستوى. يرجع التعيينات الجديدة.
+     * يوزّع أقسام كل مادة على أساتذتها:
+     * 1) أصحاب المادة الأصلية أولًا، الأقل ساعات منهم، ما دام في نصابه متسع (مع تفضيل من يدرّس نفس المستوى).
+     * 2) ما فاض عن نصابهم يُسند لمن يمكنه تدريس المادة (مادة إضافية) وله وقت فراغ.
+     * 3) إن لم يتسع أحد: صاحب المادة الأصلية الأقل ساعات، ثم صاحب المادة الإضافية.
      * @param classSubjects لكل قسم: (معرّف القسم، المستوى، [(رمز المادة، ساعاتها)])
      */
     fun distribute(
@@ -232,17 +258,31 @@ object TimetableTeachers {
         val load = HashMap<String, Int>()
         val levels = HashMap<String, MutableSet<String>>()  // أستاذ -> مستويات (مادة|مستوى)
         val jobs = classSubjects.flatMap { (cid, level, subs) -> subs.map { (code, h) -> Triple(cid, level, code to h) } }
-            .filter { (_, _, sh) -> teachers.any { sh.first in it.subjects } }
+            .filter { (_, _, sh) -> teachers.any { sh.first in it.all } }
             .sortedWith(compareByDescending<Triple<String, String, Pair<String, Int>>> { it.third.second }.thenBy { it.second }.thenBy { it.first })
         val out = ArrayList<TimetableAssignmentEntity>()
-        jobs.forEach { (cid, level, sh) ->
+        fun best(list: List<TimetableTeacher>, code: String, level: String) = list.minWithOrNull(
+            compareBy<TimetableTeacher> { load[it.name] ?: 0 }
+                .thenBy { if (levels[it.name]?.contains("$code|$level") == true) 0 else 1 }
+                .thenBy { it.name })
+        // أصحاب المواد الأصلية يأخذون حصصهم أولًا، ثم يُوزَّع الفائض على أصحاب المواد الإضافية
+        val pending = ArrayList<Triple<String, String, Pair<String, Int>>>()
+        jobs.forEach { job ->
+            val (cid, level, sh) = job
             val (code, hours) = sh
-            val eligible = teachers.filter { code in it.subjects }
-            val pick = eligible.minWithOrNull(
-                compareBy<TimetableTeacher> { load[it.name] ?: 0 }
-                    .thenBy { if (levels[it.name]?.contains("$code|$level") == true) 0 else 1 }
-                    .thenBy { it.name }
-            ) ?: return@forEach
+            val pick = best(teachers.filter { code in it.subjects && (load[it.name] ?: 0) + hours <= it.maxHours }, code, level)
+            if (pick == null) { pending += job; return@forEach }
+            load[pick.name] = (load[pick.name] ?: 0) + hours
+            levels.getOrPut(pick.name) { HashSet() }.add("$code|$level")
+            out += TimetableAssignmentEntity(cid, code, pick.name)
+        }
+        pending.forEach { (cid, level, sh) ->
+            val (code, hours) = sh
+            val fits = { t: TimetableTeacher -> (load[t.name] ?: 0) + hours <= t.maxHours }
+            val pick = best(teachers.filter { code !in it.subjects && code in it.extra && fits(it) }, code, level)
+                ?: best(teachers.filter { code in it.subjects }, code, level)
+                ?: best(teachers.filter { code in it.extra }, code, level)
+                ?: return@forEach
             load[pick.name] = (load[pick.name] ?: 0) + hours
             levels.getOrPut(pick.name) { HashSet() }.add("$code|$level")
             out += TimetableAssignmentEntity(cid, code, pick.name)
