@@ -32,7 +32,7 @@ import com.elyedali.daftarustadh.R
 import com.elyedali.daftarustadh.data.TeacherTimetableEntity
 
 /** مؤسسة يدرّس فيها الأستاذ في السنة المختارة. */
-data class TeacherSchool(val id: String, val name: String, val classes: List<String>)
+data class TeacherSchool(val id: String, val name: String, val classes: List<String>, val self: Boolean = false)
 
 /**
  * تطبيق الأستاذ بعد اختيار السنة: جدوله الزمني الشامل لكل المؤسسات التي وصلته ملفاتها،
@@ -45,6 +45,7 @@ fun TeacherSchoolsScreen(
     timetable: List<TeacherTimetableEntity>,
     onPick: (String) -> Unit,
     onOpenFile: () -> Unit,
+    onAddSelfSchool: () -> Unit = {},
     onBack: () -> Unit,
     onMenu: () -> Unit
 ) {
@@ -101,7 +102,12 @@ fun TeacherSchoolsScreen(
                                             contentAlignment = Alignment.Center) { Text("🏫", fontSize = 20.sp) }
                                         Column(Modifier.weight(1f).padding(horizontal = 12.dp)) {
                                             Text(sc.name, fontWeight = FontWeight.Black, fontSize = 16.sp)
-                                            Text(stringResource(R.string.ts_classes, sc.classes.joinToString("، ")), fontSize = 12.sp,
+                                            // مصدر المؤسسة: عمله الفردي أو ملف من إدارتها
+                                            Text(stringResource(if (sc.self) R.string.ts_self_work else R.string.ts_from_admin), fontSize = 11.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = if (sc.self) Color(0xFFB26A00) else Color(0xFF2E7D32))
+                                            Text(if (sc.classes.isEmpty()) stringResource(R.string.ts_no_classes_yet)
+                                                else stringResource(R.string.ts_classes, sc.classes.joinToString("، ")), fontSize = 12.sp,
                                                 color = MaterialTheme.colorScheme.onSurfaceVariant)
                                         }
                                     }
@@ -113,7 +119,13 @@ fun TeacherSchoolsScreen(
                                 Text("📥 " + stringResource(R.string.ts_open_file), fontWeight = FontWeight.Bold, color = Color.White)
                             }
                         }
+                        item {
+                            androidx.compose.material3.OutlinedButton(onClick = onAddSelfSchool, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp)) {
+                                Text("➕ " + stringResource(R.string.ts_add_self_school), fontWeight = FontWeight.Bold)
+                            }
+                        }
                         item { Text(stringResource(R.string.ts_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                        item { Text(stringResource(R.string.ts_self_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
                     }
                 )
             }

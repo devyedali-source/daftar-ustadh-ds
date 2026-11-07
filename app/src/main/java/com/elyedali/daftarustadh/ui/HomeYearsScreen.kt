@@ -113,6 +113,8 @@ fun HomeYearsScreen(
     onDeleteClass: (ClassEntity) -> Unit,
     onCreateClass: () -> Unit,
     onOpenFile: () -> Unit,
+    /** الأستاذ: يُنشئ أقسامًا فقط في مؤسسة عمله الفردي. */
+    canCreateClass: Boolean = true,
     onMenu: () -> Unit,
     /** الأستاذ: تقدم رصد النتائج لكل فصل، ورفعها للإدارة بعد اكتمالها. */
     termProgress: List<TeacherTermProgress> = emptyList(),
@@ -348,7 +350,7 @@ fun HomeYearsScreen(
                         Text("  " + stringResource(R.string.open_class_file), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                     }
                 }
-                if (mode != MODE_TEACHER) ExtendedFloatingActionButton(
+                if (mode != MODE_TEACHER || canCreateClass) ExtendedFloatingActionButton(
                     onClick = onCreateClass,
                     icon = { Icon(Icons.Filled.Add, contentDescription = null) },
                     text = { Text(stringResource(R.string.create_class), fontWeight = FontWeight.Bold) },

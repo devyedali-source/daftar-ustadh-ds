@@ -196,6 +196,10 @@ class MainActivity : AppCompatActivity() {
                 var showSubjects by remember { mutableStateOf(false) }
                 var fileResult by remember { mutableStateOf<FileResult?>(null) }
                 val inst = institution
+                // تطبيق الأستاذ: مؤسسات سجّلها بنفسه (عمله الفردي، دون ملف من الإدارة)
+                val selfSchoolIds = if (AppRole.isAdmin) emptySet() else institutions.filter { it.isOwn }.map { it.id }.toSet()
+                var addingSelfSchool by rememberSaveable { mutableStateOf(false) }
+                var importBack by rememberSaveable { mutableStateOf(Screen.ADMIN_CLASS) }
                 val isFrUi = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
 
                 val teachingClasses by remember { classDao.observeTeaching() }.collectAsState(initial = emptyList())
@@ -1312,14 +1316,14 @@ class MainActivity : AppCompatActivity() {
                     Screen.STATS -> BackHandler { screen = Screen.HOME }
                     Screen.KASHF_SETTINGS -> BackHandler { screen = Screen.ADMIN_CLASS }
                     Screen.GENERAL_REMARKS -> BackHandler { screen = Screen.KASHF_SETTINGS }
-                    Screen.IMPORT -> BackHandler { screen = Screen.ADMIN_CLASS }
+                    Screen.IMPORT -> BackHandler { screen = importBack }
                     Screen.ADMIN_CLASS, Screen.TEACHER_HUB -> BackHandler { screen = hubBack }
                     Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS -> BackHandler { screen = Screen.HOME }
                     Screen.ACTIVATION -> BackHandler { screen = activationBack }
                     Screen.TIMETABLE -> BackHandler { screen = ttBack }
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
                     Screen.QUICK_GRADES -> BackHandler { hubTab = 1; screen = Screen.ADMIN_CLASS }
-                    Screen.INSTITUTION -> BackHandler { if (inst == null) selectedYear = null; screen = Screen.HOME }
+                    Screen.INSTITUTION -> BackHandler { if (addingSelfSchool) addingSelfSchool = false else if (inst == null) selectedYear = null; screen = Screen.HOME }
                     Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) selectedYear = null; screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
                 }
@@ -1358,9 +1362,15 @@ class MainActivity : AppCompatActivity() {
                 ) {
                 when {
                     screen == Screen.INSTITUTION -> InstitutionScreen(
-                        existing = inst,
-                        onSave = { scope.launch { institutionDao.save(it); screen = Screen.HOME } },
-                        onCancel = { if (inst == null) selectedYear = null; screen = Screen.HOME }
+                        existing = if (addingSelfSchool) null else inst,
+                        onSave = { s ->
+                            scope.launch {
+                                institutionDao.save(if (addingSelfSchool) s.copy(isOwn = true) else s)
+                                if (addingSelfSchool) { addingSelfSchool = false; teacherSchool = s.id }
+                                screen = Screen.HOME
+                            }
+                        },
+                        onCancel = { if (addingSelfSchool) addingSelfSchool = false else if (inst == null) selectedYear = null; screen = Screen.HOME }
                     )
 
                     screen == Screen.QUICK_GRADES && currentClass != null -> {
@@ -1696,7 +1706,7 @@ class MainActivity : AppCompatActivity() {
                                         students = students,
                                         onSave = { s -> scope.launch { studentDao.save(s) } },
                                         onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
-                                        onImport = { screen = Screen.IMPORT },
+                                        onImport = { importBack = Screen.ADMIN_CLASS; screen = Screen.IMPORT },
                                         onShowSubjects = { showSubjects = true },
                                         onBack = { screen = hubBack },
                                         onShare = { type -> share(c, type) },
@@ -1808,7 +1818,17 @@ class MainActivity : AppCompatActivity() {
                             onBack = { screen = hubBack }
                         ) {
                             when (hubTab) {
-                                0 -> StudentsScreen(
+                                0 -> if (c.institutionId in selfSchoolIds) StudentsScreen(
+                                    // عمله الفردي: يسجّل تلاميذه بنفسه
+                                    schoolClass = c,
+                                    students = students,
+                                    onSave = { s -> scope.launch { studentDao.save(s) } },
+                                    onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
+                                    onImport = { importBack = Screen.TEACHER_HUB; screen = Screen.IMPORT },
+                                    onShowSubjects = {},
+                                    onBack = { screen = hubBack },
+                                    showHeader = false
+                                ) else StudentsScreen(
                                     schoolClass = c,
                                     students = students,
                                     onSave = {}, onDelete = {}, onImport = {},
@@ -1865,7 +1885,7 @@ class MainActivity : AppCompatActivity() {
                             students = students,
                             onSave = { s -> scope.launch { studentDao.save(s) } },
                             onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
-                            onImport = { screen = Screen.IMPORT },
+                            onImport = { importBack = Screen.ADMIN_CLASS; screen = Screen.IMPORT },
                             onShowSubjects = { showSubjects = true },
                             onBack = { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES },
                             onShare = if (readOnly) null else { type -> share(c, type) },
@@ -2035,20 +2055,23 @@ class MainActivity : AppCompatActivity() {
                     screen == Screen.IMPORT && currentClass != null -> ImportStudentsScreen(
                         schoolClass = currentClass!!,
                         existing = students,
-                        onConfirm = { list -> scope.launch { studentDao.saveAll(list); screen = Screen.ADMIN_CLASS } },
-                        onBack = { screen = Screen.ADMIN_CLASS }
+                        onConfirm = { list -> scope.launch { studentDao.saveAll(list); screen = importBack } },
+                        onBack = { screen = importBack }
                     )
 
                     // تطبيق الأستاذ: بعد السنة، جدوله الشامل لكل المؤسسات ثم اختيار المؤسسة
                     screen == Screen.HOME && homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && selectedYear != null && teacherSchool == null -> {
                         val year = selectedYear!!
-                        val mine = allClasses.filter { it.schoolYear == year && it.teaching }
+                        val mine = allClasses.filter { it.schoolYear == year && (it.teaching || it.institutionId in selfSchoolIds) }
+                        val byId = mine.groupBy { it.institutionId }
                         com.elyedali.daftarustadh.ui.TeacherSchoolsScreen(
                             year = year,
-                            schools = mine.groupBy { it.institutionId }.map { (id, l) ->
+                            schools = (byId.keys + selfSchoolIds).map { id ->
                                 com.elyedali.daftarustadh.ui.TeacherSchool(id, schoolNames[id].orEmpty(),
-                                    l.sortedWith(compareBy({ it.levelCode }, { it.number })).map { it.name })
-                            }.sortedBy { it.name },
+                                    byId[id].orEmpty().sortedWith(compareBy({ it.levelCode }, { it.number })).map { it.name },
+                                    self = id in selfSchoolIds)
+                            }.sortedWith(compareBy({ it.self }, { it.name })),
+                            onAddSelfSchool = { addingSelfSchool = true; screen = Screen.INSTITUTION },
                             timetable = myTimetable.filter { it.schoolYear == year },
                             onPick = { teacherSchool = it },
                             onOpenFile = openFile,
@@ -2131,6 +2154,7 @@ class MainActivity : AppCompatActivity() {
                         },
                         onDeleteClass = { deleteClass(it) },
                         onCreateClass = { if (inst == null) screen = Screen.INSTITUTION else showCreateClass = true },
+                        canCreateClass = homeMode != com.elyedali.daftarustadh.ui.MODE_TEACHER || teacherSchool in selfSchoolIds,
                         onOpenFile = openFile,
                         onMenu = { scope.launch { drawerState.open() } },
                         termProgress = termProgress,
@@ -2144,10 +2168,14 @@ class MainActivity : AppCompatActivity() {
 
                 }
 
-                if (showCreateClass && inst != null) {
-                    val year = selectedYear ?: inst.schoolYear
+                // الإدارة: قسم في مؤسستها؛ الأستاذ: قسم في مؤسسة عمله الفردي المفتوحة (يُعدّ من أقسام تدريسه)
+                val createIn = if (!AppRole.isAdmin && homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER)
+                    institutions.firstOrNull { it.id == teacherSchool && it.id in selfSchoolIds } else inst
+                if (showCreateClass && createIn != null) {
+                    val year = selectedYear ?: createIn.schoolYear
+                    val selfWork = !AppRole.isAdmin && createIn.id in selfSchoolIds
                     com.elyedali.daftarustadh.ui.CreateClassDialog(
-                        institution = inst,
+                        institution = createIn,
                         schoolYear = year,
                         existing = allClasses,
                         onCreate = { level, number, onResult ->
@@ -2155,11 +2183,12 @@ class MainActivity : AppCompatActivity() {
                                 val rowId = classDao.insert(
                                     ClassEntity(
                                         id = UUID.randomUUID().toString(),
-                                        institutionId = inst.id,
+                                        institutionId = createIn.id,
                                         schoolYear = year,
                                         levelCode = level,
                                         number = number,
-                                        createdAt = System.currentTimeMillis()
+                                        createdAt = System.currentTimeMillis(),
+                                        teaching = selfWork
                                     )
                                 )
                                 onResult(rowId != -1L)
