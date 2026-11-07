@@ -34,33 +34,109 @@
     {
      "h": "Division euclidienne",
      "lines": [
-      "a = b × q + r avec 0 ≤ r < b",
-      "r = 0 : b divise a"
+      "Diviser a par b (b ≠ 0), c’est trouver q et r tels que a = b × q + r avec 0 ≤ r < b.",
+      "b divise a (a multiple de b) si le reste est nul : a = b × q.",
+      "1 divise tout entier ; 0 est multiple de tout entier ; tout entier se divise lui-même.",
+      "La somme et la différence de deux multiples d’un entier sont des multiples de cet entier."
+     ]
+    },
+    {
+     "h": "Critères de divisibilité",
+     "lines": [],
+     "table": [
+      [
+       "Par",
+       "Condition"
+      ],
+      [
+       "2",
+       "chiffre des unités 0, 2, 4, 6 ou 8"
+      ],
+      [
+       "3",
+       "somme des chiffres divisible par 3"
+      ],
+      [
+       "4",
+       "nombre formé par les deux derniers chiffres divisible par 4"
+      ],
+      [
+       "5",
+       "chiffre des unités 0 ou 5"
+      ],
+      [
+       "9",
+       "somme des chiffres divisible par 9"
+      ],
+      [
+       "10",
+       "chiffre des unités 0"
+      ],
+      [
+       "11",
+       "différence entre la somme des chiffres de rangs pairs et celle des rangs impairs divisible par 11"
+      ]
      ]
     },
     {
      "h": "Nombres premiers",
      "lines": [
-      "Exactement deux diviseurs : 1 et lui-même – 2, 3, 5, 7, 11…"
+      "Un nombre premier n’est divisible que par 1 et par lui-même ; 1 n’est pas premier.",
+      "p est premier s’il n’est divisible par aucun nombre premier n tel que n² ≤ p.",
+      "Tout entier se décompose en facteurs premiers : 840 = 2³ × 3 × 5 × 7."
      ]
     },
     {
      "h": "PGCD et PPCM",
      "lines": [
-      "Algorithme d’Euclide : le PGCD est le dernier reste non nul",
-      "PPCM : plus petit multiple commun non nul"
+      "PGCD(a ; b) : plus grand diviseur commun. Exemple : PGCD(18 ; 42) = 6.",
+      "a et b sont premiers entre eux si PGCD(a ; b) = 1 ; a/b est alors irréductible.",
+      "PPCM(x ; y) : plus petit multiple commun non nul.",
+      "Si a divise b : PGCD(a ; b) = a et PPCM(a ; b) = b."
      ]
     },
     {
-     "h": "Binaire",
+     "h": "Calcul du PGCD",
      "lines": [
-      "13 = 8 + 4 + 1 = (1101)₂"
+      "Soustractions successives : PGCD(a ; b) = PGCD(b ; a − b) ; le PGCD est la dernière différence non nulle.",
+      "Divisions successives (Euclide) : PGCD(a ; b) = PGCD(b ; r) ; le PGCD est le dernier reste non nul."
+     ],
+     "table": [
+      [
+       "Dividende",
+       "Diviseur",
+       "Reste"
+      ],
+      [
+       "9165",
+       "2745",
+       "330"
+      ],
+      [
+       "2745",
+       "330",
+       "105"
+      ],
+      [
+       "330",
+       "105",
+       "15"
+      ],
+      [
+       "105",
+       "15",
+       "0"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Numération binaire",
      "lines": [
-      "Calcule PGCD(84 ; 60) par l’algorithme d’Euclide."
+      "En base 10, chaque rang est une puissance de 10 : 1965 = 1 × 10³ + 9 × 10² + 6 × 10¹ + 5 × 10⁰.",
+      "En base 2, on n’utilise que 0 et 1 ; chaque bit représente une puissance de 2.",
+      "17 = 2⁴ + 2⁰ donc (17)₁₀ = (10001)₂ ;  26 = 2⁴ + 2³ + 2¹ donc (26)₁₀ = (11010)₂.",
+      "On peut aussi utiliser les divisions successives par 2.",
+      "Addition et multiplication en binaire : même principe qu’en base 10 (1 + 1 = 10 : on pose 0 et on retient 1)."
      ]
     }
    ]
@@ -93,30 +169,74 @@
    },
    "board": [
     {
+     "h": "L’ensemble ℝ",
+     "lines": [
+      "Les rationnels et des nombres comme √2 ou π forment l’ensemble des réels ℝ.",
+      "ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ ;  ℝ* = ℝ − {0} ;  ℝ = ℝ⁺ ∪ ℝ⁻.",
+      "Tout point d’une droite graduée est repéré par un réel."
+     ]
+    },
+    {
+     "h": "Opérations dans ℝ",
+     "lines": [
+      "Addition et multiplication : commutatives et associatives ; 0 et 1 sont les éléments neutres.",
+      "Tout réel x a un opposé −x ; tout réel non nul a un inverse 1/x.",
+      "Soustraire, c’est ajouter l’opposé ; diviser, c’est multiplier par l’inverse.",
+      "a × b = 0 équivaut à a = 0 ou b = 0.",
+      "Identités remarquables : (a + b)² = a² + 2ab + b² ; (a − b)² = a² − 2ab + b² ; (a + b)(a − b) = a² − b²."
+     ]
+    },
+    {
      "h": "Racine carrée",
      "lines": [
-      "(√a)² = a (a ≥ 0)",
-      "√(a × b) = √a × √b   √(a / b) = √a / √b",
-      "√(a + b) ≠ √a + √b"
+      "Pour a ≥ 0, √a est l’unique réel positif dont le carré est a : (√a)² = a.",
+      "√a n’a pas de sens si a < 0 ;  √(a²) = |a|.",
+      "x² = a : aucune solution si a < 0 ; x = 0 si a = 0 ; deux solutions √a et −√a si a > 0.",
+      "√(x × y) = √x × √y ;  √(x/y) = √x / √y (y ≠ 0).",
+      "En général √(x + y) ≠ √x + √y.",
+      "Écriture b√c : √a = √(b² × c) = b√c.",
+      "Pour supprimer le radical au dénominateur, on multiplie par l’expression conjuguée."
      ]
     },
     {
      "h": "Puissances",
      "lines": [
-      "aⁿ × aᵐ = aⁿ⁺ᵐ   (aⁿ)ᵐ = aⁿᵐ   a⁻ⁿ = 1/aⁿ"
+      "aⁿ = a × … × a ; a⁰ = 1 ; a¹ = a ; a⁻ⁿ = 1/aⁿ.",
+      "aⁿ × aᵖ = aⁿ⁺ᵖ ;  (aⁿ)ᵖ = aⁿˣᵖ ;  (a/b)ᵖ = aᵖ/bᵖ ;  aⁿ/aᵖ = aⁿ⁻ᵖ",
+      "Priorités : puissances, multiplications et divisions, additions et soustractions."
      ]
     },
     {
-     "h": "Ordre et intervalles",
+     "h": "Ordre dans ℝ",
      "lines": [
-      "Si a < b et c < 0 alors ac > bc",
-      "[a ; b] – ]a ; b[ – |x| = distance de x à 0"
+      "a < b équivaut à a − b < 0.",
+      "Si a < b, alors a + x < b + x.",
+      "Si a < b et x > 0, alors ax < bx ; si x < 0, l’ordre est inversé : bx < ax.",
+      "Si 0 < a < b, alors 0 < 1/b < 1/a."
      ]
     },
     {
-     "h": "Application",
+     "h": "Encadrements et intervalles",
      "lines": [
-      "Simplifie √50 et calcule |–3,5|."
+      "Encadrement : a < x < b. Exemple : 22/7 = 3,142857… : 3 < x < 4 ; 3,1 < x < 3,2 ; 3,14 < x < 3,15.",
+      "Si a ≤ x ≤ b et a′ ≤ y ≤ b′, alors a + a′ ≤ x + y ≤ b + b′.",
+      "[a ; b] : a ≤ x ≤ b ;  ]a ; b[ : a < x < b ;  [a ; +∞[ : x ≥ a ;  ]−∞ ; a] : x ≤ a.",
+      "Amplitude : b − a ; centre : (a + b)/2 ; rayon : (b − a)/2."
+     ]
+    },
+    {
+     "h": "Valeur approchée, troncature, arrondi",
+     "lines": [
+      "Troncature à l’ordre n : on supprime les chiffres après le n-ième chiffre après la virgule.",
+      "Arrondi : si le chiffre suivant est inférieur à 5, l’arrondi est la troncature ; sinon on augmente d’une unité le dernier chiffre."
+     ]
+    },
+    {
+     "h": "Valeur absolue",
+     "lines": [
+      "|a| = a si a ≥ 0 ; |a| = −a si a ≤ 0 ;  |a| ≥ 0 ;  |a| = |−a| ;  |a| = 0 ⟺ a = 0.",
+      "|a × b| = |a| × |b| ;  |a + b| ≤ |a| + |b|.",
+      "|x| = m (m ≥ 0) ⟺ x = m ou x = −m ;  |x| ≤ m ⟺ x ∈ [−m ; m]."
      ]
     }
    ]
@@ -149,24 +269,51 @@
    },
    "board": [
     {
-     "h": "Identités remarquables",
+     "h": "Réduire et ordonner",
      "lines": [
-      "(a + b)² = a² + 2ab + b²",
-      "(a – b)² = a² – 2ab + b²",
-      "(a + b)(a – b) = a² – b²"
+      "Réduire, c’est regrouper les termes de même nature (mêmes lettres, mêmes exposants).",
+      "Exemple : 5m² + 6 − 7m + 12m² + 8m − 15 = 17m² + m − 9.",
+      "Ordonner, c’est ranger les termes suivant les puissances croissantes ou décroissantes de x."
+     ]
+    },
+    {
+     "h": "Supprimer les parenthèses",
+     "lines": [
+      "a + (b + c) = a + b + c ;  a + (b − c) = a + b − c",
+      "a − (b + c) = a − b − c ;  a − (b − c) = a − b + c",
+      "Exemple : (5s + 7) − (10s − 2) = −5s + 9."
+     ]
+    },
+    {
+     "h": "Développer",
+     "lines": [
+      "(a + b)(x + y) = ax + ay + bx + by",
+      "(a − b)(x − y) = ax − ay − bx + by",
+      "On utilise la distributivité, les identités remarquables et la suppression des parenthèses."
+     ]
+    },
+    {
+     "h": "Identités remarquables",
+     "lines": [],
+     "table": [
+      [
+       "Carré d’une somme",
+       "Carré d’une différence",
+       "Somme × différence"
+      ],
+      [
+       "(a + b)² = a² + 2ab + b²",
+       "(a − b)² = a² − 2ab + b²",
+       "(a + b)(a − b) = a² − b²"
+      ]
      ]
     },
     {
      "h": "Factoriser",
      "lines": [
-      "Facteur commun : 3x + 6 = 3(x + 2)",
-      "Identité : x² – 9 = (x – 3)(x + 3)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Factorise x² – 9 et développe (x + 3)²."
+      "Factoriser, c’est transformer une somme ou une différence en un produit.",
+      "Facteur commun : ax + ay = a(x + y).",
+      "On peut aussi reconnaître le développement d’une identité remarquable."
      ]
     }
    ]
@@ -199,29 +346,46 @@
    },
    "board": [
     {
-     "h": "Équation",
+     "h": "Équations du premier degré",
      "lines": [
-      "ax + b = 0 ⇔ x = –b/a"
+      "On peut ajouter (ou retrancher) un même nombre aux deux membres, ou les multiplier (ou diviser) par un même nombre non nul.",
+      "a + x = b a pour solution x = b − a ;  ax = b (a ≠ 0) a pour solution x = b/a.",
+      "Étapes : développer et réduire, regrouper, diviser par le coefficient de l’inconnue, conclure.",
+      "|ax + b| = c : pas de solution si c < 0 ; ax + b = 0 si c = 0 ; ax + b = c ou ax + b = −c si c > 0.",
+      "(ax + b)(cx + d) = 0 : on résout ax + b = 0 et cx + d = 0."
      ]
     },
     {
-     "h": "Inéquation",
+     "h": "Inéquations du premier degré",
      "lines": [
-      "–2x < 6 ⇔ x > –3 (on change le sens)",
-      "Solutions : un intervalle"
+      "Ajouter ou retrancher un même nombre : l’ordre ne change pas.",
+      "Multiplier ou diviser par un nombre strictement positif : l’ordre ne change pas.",
+      "Multiplier ou diviser par un nombre strictement négatif : l’ordre change.",
+      "Signe de ax + b : on cherche la valeur x = −b/a, puis on dresse un tableau de signes.",
+      "Signe d’un produit ou d’un quotient : tableau de signes des facteurs (valeur interdite pour le dénominateur)."
      ]
     },
     {
-     "h": "Système",
+     "h": "Résoudre un problème",
      "lines": [
-      "Substitution – combinaison",
-      "Graphiquement : intersection de deux droites"
+      "1) Choix de l’inconnue ; 2) mise en équation ; 3) résolution ; 4) vérification et conclusion."
      ]
     },
     {
-     "h": "Application",
+     "h": "Systèmes de deux équations",
      "lines": [
-      "Résous le système : x + y = 70 et 2x + y = 90."
+      "Une équation du premier degré à deux inconnues s’écrit ax + by + c = 0 ; ses solutions sont des couples (x ; y).",
+      "Résoudre un système, c’est trouver les couples qui vérifient les deux équations à la fois.",
+      "Méthodes : substitution et combinaison.",
+      "Exemple : x + 2y = 20 et 2x − y = 10."
+     ]
+    },
+    {
+     "h": "Inéquations à deux inconnues",
+     "lines": [
+      "On trace la droite frontière (en remplaçant l’inégalité par =) ; elle partage le plan en deux demi-plans.",
+      "On teste un point (souvent l’origine O) pour savoir quel demi-plan convient.",
+      "Pour un système, la solution est la région commune aux demi-plans qui conviennent."
      ]
     }
    ]
@@ -255,31 +419,32 @@
    },
    "board": [
     {
-     "h": "Définitions",
+     "h": "Angle au centre et arc",
      "lines": [
-      "Angle au centre : sommet au centre O",
-      "Angle inscrit : sommet sur le cercle"
+      "Un angle au centre a pour sommet le centre du cercle ; il intercepte un arc.",
+      "Longueur d’un arc : π × r × mesure (en degrés) / 180.",
+      "Correspondance : degrés/180 = radians/π = grades/200. Exemple : 60° = π/3 rad.",
+      "En radians : longueur de l’arc l = r × α."
      ]
     },
     {
-     "h": "Longueur d’un arc",
+     "h": "Angle inscrit",
      "lines": [
-      "ℓ = (α × π × r) / 180"
-     ]
-    },
-    {
-     "h": "Propriétés",
-     "lines": [
-      "Angle inscrit = ½ angle au centre (même arc)",
-      "Angles inscrits interceptant le même arc : égaux",
-      "Angle inscrit dans un demi-cercle : droit"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Un angle au centre mesure 80°. Quelle est la mesure d’un angle inscrit qui intercepte le même arc ?"
-     ]
+      "Un angle inscrit est formé par deux cordes issues d’un même point du cercle.",
+      "Un angle au centre est le double de l’angle inscrit qui intercepte le même arc.",
+      "Deux angles inscrits qui interceptent le même arc ont la même mesure.",
+      "Deux angles inscrits de même mesure interceptent des arcs de même longueur, et réciproquement."
+     ],
+     "fig": {
+      "page": 110,
+      "rect": [
+       0.335,
+       0.559,
+       0.494,
+       0.693
+      ],
+      "caption": "Angle inscrit BAC"
+     }
     }
    ]
   },
@@ -310,27 +475,36 @@
    },
    "board": [
     {
-     "h": "Cercle circonscrit",
+     "h": "Triangle rectangle et cercle",
      "lines": [
-      "Triangle rectangle : centre = milieu de l’hypoténuse"
+      "Si un triangle est rectangle, son hypoténuse est un diamètre de son cercle circonscrit.",
+      "Le milieu de l’hypoténuse est le centre du cercle ; la médiane issue de l’angle droit mesure la moitié de l’hypoténuse.",
+      "Si un côté d’un triangle est un diamètre de son cercle circonscrit, ce triangle est rectangle."
      ]
     },
     {
      "h": "Théorème de Pythagore",
      "lines": [
-      "ABC rectangle en A ⇒ BC² = AB² + AC²"
-     ]
+      "Si ABC est rectangle en A, alors BC² = AB² + AC².",
+      "L’hypoténuse est le plus grand côté."
+     ],
+     "fig": {
+      "page": 121,
+      "rect": [
+       0.593,
+       0.691,
+       0.89,
+       0.804
+      ],
+      "caption": "Triangle rectangle"
+     }
     },
     {
-     "h": "Réciproque",
+     "h": "Réciproque et contraposée",
      "lines": [
-      "BC² = AB² + AC² ⇒ ABC rectangle en A"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Calcule la hauteur atteinte par l’échelle (hypoténuse 5 m, base 3 m)."
+      "Si le carré d’un côté est égal à la somme des carrés des deux autres, le triangle est rectangle.",
+      "Si le carré du plus grand côté n’est pas égal à la somme des carrés des deux autres, le triangle n’est pas rectangle.",
+      "Exemple : EF = 5, EG = 11, FG = 12 : 12² = 144 et 5² + 11² = 146 : EFG n’est pas rectangle."
      ]
     }
    ]
@@ -365,29 +539,48 @@
     {
      "h": "Vecteurs",
      "lines": [
-      "Chasles : AB + BC = AC",
-      "Alignement : AB et AC colinéaires"
+      "Vecteur AB⃗ : direction (AB), sens de A vers B, longueur (norme) AB, notée ‖AB⃗‖.",
+      "Deux vecteurs sont égaux (même direction, même sens, même longueur) ou opposés (sens contraires).",
+      "Deux vecteurs non nuls de même direction sont colinéaires.",
+      "AB⃗ = DC⃗ ⟺ ABCD est un parallélogramme ;  AI⃗ = IB⃗ ⟺ I milieu de [AB]."
      ]
     },
     {
-     "h": "Dans un repère",
+     "h": "Opérations sur les vecteurs",
      "lines": [
-      "AB (x_B – x_A ; y_B – y_A)",
-      "Milieu : ((x_A + x_B)/2 ; (y_A + y_B)/2)",
-      "AB = √((x_B – x_A)² + (y_B – y_A)²)"
+      "Relation de Chasles : AB⃗ + BC⃗ = AC⃗.",
+      "Règle du parallélogramme : AB⃗ + AC⃗ = AD⃗ où ABDC est un parallélogramme.",
+      "u⃗ − v⃗ = u⃗ + (−v⃗).",
+      "ku⃗ : même direction que u⃗, longueur |k| × ‖u⃗‖, même sens si k > 0, sens opposé si k < 0.",
+      "u⃗ et v⃗ sont colinéaires ⟺ il existe k tel que u⃗ = k × v⃗.",
+      "A, B, C alignés ⟺ AB⃗ et AC⃗ colinéaires ; (AB) // (CD) ⟺ AB⃗ et CD⃗ colinéaires."
      ]
     },
     {
-     "h": "Équation de droite",
+     "h": "Calcul dans un repère",
      "lines": [
-      "y = ax + b – a : coefficient directeur",
-      "Droites parallèles : même a"
+      "Milieu de [AB] : ((x_A + x_B)/2 ; (y_A + y_B)/2).",
+      "Composantes de AB⃗ : (x_B − x_A ; y_B − y_A).",
+      "u⃗ + v⃗ : (x + x′ ; y + y′) ;  ku⃗ : (kx ; ky).",
+      "Distance (repère orthonormé) : AB = √((x_B − x_A)² + (y_B − y_A)²).",
+      "Colinéarité : xy′ − yx′ = 0 ;  orthogonalité (repère orthonormé) : xx′ + yy′ = 0."
      ]
     },
     {
-     "h": "Application",
+     "h": "Équations de droites",
      "lines": [
-      "A(1 ; 2) et B(5 ; 4) : calcule les coordonnées du milieu I et la distance AB."
+      "Un vecteur directeur d’une droite est un vecteur non nul qui a sa direction.",
+      "Toute droite a une équation ax + by + c = 0 avec (a ; b) ≠ (0 ; 0) ; un vecteur directeur est (−b ; a).",
+      "Équation réduite : y = mx + p (m : coefficient directeur, p : ordonnée à l’origine) ; ou x = a pour une droite parallèle à l’axe des ordonnées.",
+      "m = (y_B − y_A)/(x_B − x_A)."
+     ]
+    },
+    {
+     "h": "Positions de deux droites",
+     "lines": [
+      "ax + by + c = 0 et a′x + b′y + c′ = 0 sont parallèles ⟺ ab′ − a′b = 0.",
+      "Elles sont perpendiculaires (repère orthonormé) ⟺ aa′ + bb′ = 0.",
+      "y = mx + p et y = m′x + p′ : parallèles ⟺ m = m′ ; perpendiculaires ⟺ m × m′ = −1."
      ]
     }
    ]
@@ -420,33 +613,78 @@
    },
    "board": [
     {
-     "h": "Définitions (triangle rectangle)",
+     "h": "Dans le triangle rectangle",
      "lines": [
-      "cos = adjacent / hypoténuse",
-      "sin = opposé / hypoténuse",
-      "tan = opposé / adjacent"
+      "Si ABC est rectangle en A :",
+      "cos B̂ = côté adjacent / hypoténuse = AB/BC",
+      "sin B̂ = côté opposé / hypoténuse = AC/BC",
+      "tan B̂ = côté opposé / côté adjacent = AC/AB"
      ]
     },
     {
-     "h": "Relations",
+     "h": "Propriétés",
      "lines": [
-      "cos² x + sin² x = 1",
-      "tan x = sin x / cos x"
+      "Pour un angle aigu : 0 < cos < 1 et 0 < sin < 1 ; la tangente est positive.",
+      "Relation fondamentale : cos²α + sin²α = 1 ;  tan α = sin α / cos α.",
+      "Angles complémentaires (Â + B̂ = 90°) : sin Â = cos B̂ et cos Â = sin B̂.",
+      "Exemple : cos α = 0,6 donne sin α = 0,8 et tan α = 4/3."
      ]
     },
     {
-     "h": "Angles particuliers",
-     "lines": [
-      "30° : cos = √3/2 – sin = 1/2",
-      "45° : cos = sin = √2/2",
-      "60° : cos = 1/2 – sin = √3/2"
+     "h": "Angles remarquables",
+     "lines": [],
+     "table": [
+      [
+       "α",
+       "0°",
+       "30°",
+       "45°",
+       "60°",
+       "90°"
+      ],
+      [
+       "sin",
+       "0",
+       "1/2",
+       "√2/2",
+       "√3/2",
+       "1"
+      ],
+      [
+       "cos",
+       "1",
+       "√3/2",
+       "√2/2",
+       "1/2",
+       "0"
+      ],
+      [
+       "tan",
+       "0",
+       "√3/3",
+       "1",
+       "√3",
+       "n’existe pas"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Cercle trigonométrique",
      "lines": [
-      "Dans ABC rectangle en A, BC = 10 cm et l’angle B mesure 30°. Calcule AC."
-     ]
+      "Cercle de centre O et de rayon 1, parcouru dans le sens direct (contraire des aiguilles d’une montre).",
+      "cos α est l’abscisse du point M et sin α son ordonnée ; tout point de ce cercle vérifie x² + y² = 1.",
+      "Son périmètre est 2π : 360° = 2π rad ; 180° = π ; 90° = π/2 ; 60° = π/3 ; 45° = π/4 ; 30° = π/6."
+     ],
+     "fig": {
+      "page": 202,
+      "rect": [
+       0.632,
+       0.555,
+       0.894,
+       0.697
+      ],
+      "caption": "Cercle trigonométrique"
+     }
     }
    ]
   },
@@ -478,31 +716,58 @@
    },
    "board": [
     {
-     "h": "Rappels",
+     "h": "Symétrie axiale",
      "lines": [
-      "Symétrie axiale – symétrie centrale – translation",
-      "Conservent distances, angles, alignement, aires"
+      "Si A ∉ Δ, son symétrique A′ est tel que Δ soit la médiatrice de [AA′] ; si A ∈ Δ, A est invariant.",
+      "L’image d’un segment est un segment de même longueur ; une figure et son image sont superposables.",
+      "Δ est axe de symétrie d’une figure si la figure est sa propre symétrique par rapport à Δ."
      ]
     },
     {
-     "h": "Homothétie (O, k)",
+     "h": "Symétrie centrale",
      "lines": [
-      "OM’ = k × OM",
-      "|k| > 1 : agrandissement – |k| < 1 : réduction"
+      "A′ est le symétrique de A par rapport à O si O est le milieu de [AA′].",
+      "Un point et son image sont alignés avec le centre ; l’image d’une droite est une droite parallèle.",
+      "O est centre de symétrie d’une figure si la figure est sa propre symétrique par rapport à O."
      ]
     },
     {
-     "h": "Propriétés",
+     "h": "Translation",
      "lines": [
-      "Longueurs × |k| – aires × k²",
-      "Conserve l’alignement, le parallélisme, les angles"
-     ]
+      "La translation de vecteur v⃗ associe à M le point M′ tel que MM′⃗ = v⃗.",
+      "Si A′ et B′ sont les images de A et B, alors A′B′⃗ = AB⃗.",
+      "Elle conserve les longueurs, les milieux, les angles, le parallélisme et l’orthogonalité ; l’image d’une droite est une droite parallèle."
+     ],
+     "fig": {
+      "page": 219,
+      "rect": [
+       0.108,
+       0.514,
+       0.676,
+       0.686
+      ],
+      "caption": "Translation d’un cercle"
+     }
     },
     {
-     "h": "Application",
+     "h": "Homothétie",
      "lines": [
-      "Un triangle d’aire 6 cm² subit une homothétie de rapport 3. Quelle est l’aire de son image ?"
-     ]
+      "L’homothétie de centre Ω et de rapport k (k ≠ 0) associe à M le point M′ tel que ΩM′⃗ = k × ΩM⃗.",
+      "Ω, M et M′ sont alignés ; le seul point invariant est le centre.",
+      "Rapport 1/2 : milieu de [ΩM] ; rapport −1 : symétrie de centre Ω ; rapport 1 : identité.",
+      "Elle agrandit ou réduit une figure ; elle conserve l’alignement, les milieux et les angles ; l’image d’une droite est une droite parallèle.",
+      "Elle multiplie les longueurs par |k|, les aires par k² et les volumes par |k|³."
+     ],
+     "fig": {
+      "page": 222,
+      "rect": [
+       0.508,
+       0.693,
+       0.884,
+       0.839
+      ],
+      "caption": "Agrandissement par homothétie"
+     }
     }
    ]
   },
@@ -536,22 +801,70 @@
     {
      "h": "Fonction linéaire",
      "lines": [
-      "f(x) = ax – proportionnalité",
-      "Droite passant par l’origine – a = f(x) / x"
-     ]
+      "f : x ⟼ ax ; a est le coefficient ; f(x) est l’image de x et x l’antécédent de f(x).",
+      "f(1) = a ;  f(x − y) = f(x) − f(y) ;  f(kx) = k × f(x).",
+      "Sa représentation graphique est une droite qui passe par l’origine.",
+      "Exemple : f(x) = 2x passe par (0 ; 0) et (1 ; 2)."
+     ],
+     "fig": {
+      "page": 239,
+      "rect": [
+       0.298,
+       0.071,
+       0.655,
+       0.312
+      ],
+      "caption": "Droites représentant des fonctions linéaires"
+     }
     },
     {
      "h": "Fonction affine",
      "lines": [
-      "f(x) = ax + b",
-      "a : coefficient directeur – b : ordonnée à l’origine",
-      "a = (f(x₂) – f(x₁)) / (x₂ – x₁)"
+      "f(x) = ax + b : a est le coefficient directeur, b l’ordonnée à l’origine.",
+      "Exemple : f(x) = 2x − 5 : f(3) = 1 et f(−4) = −13.",
+      "Coefficient directeur : a = (f(x₁) − f(x₂))/(x₁ − x₂).",
+      "Sa représentation graphique est la droite d’équation y = ax + b ; elle passe par (0 ; b).",
+      "Si b = 0, la fonction est linéaire."
+     ],
+     "fig": {
+      "page": 243,
+      "rect": [
+       0.632,
+       0.727,
+       0.852,
+       0.891
+      ],
+      "caption": "Représentation graphique d’une fonction affine"
+     }
+    },
+    {
+     "h": "Sens de variation",
+     "lines": [],
+     "table": [
+      [
+       "Signe de a",
+       "Sens de variation"
+      ],
+      [
+       "a > 0",
+       "f est croissante"
+      ],
+      [
+       "a < 0",
+       "f est décroissante"
+      ],
+      [
+       "a = 0",
+       "f est constante"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Fonctions affines par morceaux",
      "lines": [
-      "f est affine avec f(1) = 60 et f(3) = 140. Détermine a et b."
+      "Elles sont définies par des fonctions affines sur plusieurs intervalles.",
+      "Exemple : |x| = −x si x < 0 et |x| = x si x ≥ 0.",
+      "Leur représentation graphique est formée de segments ou de demi-droites."
      ]
     }
    ]
