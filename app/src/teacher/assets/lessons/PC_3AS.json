@@ -31,29 +31,49 @@
    },
    "board": [
     {
+     "h": "Expérience",
+     "lines": [
+      "On fait brûler un petit morceau de papier : il disparaît, il se forme de la cendre et il se dégage de la fumée.",
+      "Cette transformation nécessite la présence de l’oxygène."
+     ],
+     "fig": {
+      "page": 10,
+      "rect": [
+       0.667,
+       0.154,
+       0.913,
+       0.374
+      ],
+      "caption": "Combustion d’un morceau de papier"
+     }
+    },
+    {
      "h": "Définition",
      "lines": [
-      "Transformation au cours de laquelle les espèces chimiques changent"
+      "Une réaction chimique est une transformation de la matière au cours de laquelle les espèces chimiques qui la constituent sont modifiées.",
+      "Les espèces qui disparaissent sont les réactifs ; les espèces formées sont les produits.",
+      "Bilan : réactif (1) + réactif (2) donne produit (1) + produit (2).",
+      "Exemple : papier + oxygène donne cendre + fumée."
      ]
     },
     {
-     "h": "Réactifs et produits",
+     "h": "Lois de conservation",
      "lines": [
-      "Réactifs : disparaissent – produits : se forment",
-      "réactif 1 + réactif 2 → produit 1 + produit 2"
-     ]
-    },
-    {
-     "h": "Exemple",
-     "lines": [
-      "carbone + dioxygène → dioxyde de carbone"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Dans la combustion du carbone, quels sont les réactifs et le produit ?"
-     ]
+      "Conservation de la nature des atomes : les mêmes éléments chimiques apparaissent dans les réactifs et dans les produits.",
+      "Conservation du nombre d’atomes : le nombre d’atomes de chaque élément est le même dans les réactifs et dans les produits.",
+      "Conservation de la masse : la masse est la même avant et après la réaction (craie + acide).",
+      "« Rien ne se perd, rien ne se crée, tout se transforme » (Lavoisier)."
+     ],
+     "fig": {
+      "page": 10,
+      "rect": [
+       0.661,
+       0.666,
+       0.947,
+       0.827
+      ],
+      "caption": "Craie et acide : la masse se conserve"
+     }
     }
    ]
   },
@@ -85,29 +105,103 @@
    },
    "board": [
     {
-     "h": "Atome et élément",
+     "h": "L’atome",
      "lines": [
-      "Atome : plus petit constituant séparable",
-      "Élément : atomes identiques – symbole : C, Fe, Cu"
+      "L’atome est le plus petit constituant séparable de la matière.",
+      "Les atomes identiques forment une famille appelée élément chimique.",
+      "Chaque élément a un nom et un symbole : une lettre majuscule, ou une majuscule suivie d’une minuscule."
+     ],
+     "table": [
+      [
+       "Élément",
+       "Symbole"
+      ],
+      [
+       "Hydrogène",
+       "H"
+      ],
+      [
+       "Carbone",
+       "C"
+      ],
+      [
+       "Oxygène",
+       "O"
+      ],
+      [
+       "Magnésium",
+       "Mg"
+      ],
+      [
+       "Sodium",
+       "Na"
+      ],
+      [
+       "Azote",
+       "N"
+      ],
+      [
+       "Fer",
+       "Fe"
+      ]
      ]
     },
     {
-     "h": "Molécule",
+     "h": "La molécule",
      "lines": [
-      "Au moins 2 atomes liés – formule chimique",
-      "M(molécule) = somme des M des atomes"
+      "Une molécule est un groupe d’au moins deux atomes liés entre eux.",
+      "Sa formule chimique fait apparaître la nature et le nombre des atomes qui la constituent.",
+      "Molécule simple : formée d’atomes identiques. Molécule complexe : formée d’atomes de natures différentes."
+     ],
+     "table": [
+      [
+       "Molécule",
+       "Formule",
+       "Type"
+      ],
+      [
+       "Dioxygène",
+       "O₂",
+       "simple"
+      ],
+      [
+       "Dihydrogène",
+       "H₂",
+       "simple"
+      ],
+      [
+       "Diazote",
+       "N₂",
+       "simple"
+      ],
+      [
+       "Dioxyde de carbone",
+       "CO₂",
+       "complexe"
+      ],
+      [
+       "Eau",
+       "H₂O",
+       "complexe"
+      ],
+      [
+       "Butane",
+       "C₄H₁₀",
+       "complexe"
+      ],
+      [
+       "Glucose",
+       "C₆H₁₂O₆",
+       "complexe"
+      ]
      ]
     },
     {
-     "h": "Quantité de matière",
+     "h": "Masse molaire et quantité de matière",
      "lines": [
-      "n = m / M (mol)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Calcule la masse molaire de H₂O (H = 1 g/mol, O = 16 g/mol) et la quantité de matière dans 36 g d’eau."
+      "Chaque élément a une masse molaire M exprimée en g/mol.",
+      "La masse molaire d’une molécule est la somme des masses molaires des atomes qui la constituent.",
+      "À une masse m d’un produit correspond une quantité de matière (nombre de moles) : n = m / M."
      ]
     }
    ]
@@ -140,23 +234,76 @@
    },
    "board": [
     {
-     "h": "Conservation",
+     "h": "Combustion du carbone",
      "lines": [
-      "Même nature et même nombre d’atomes dans les réactifs et les produits"
-     ]
+      "Le fusain incandescent, introduit dans un flacon de dioxygène, disparaît en partie.",
+      "L’eau de chaux se trouble : il s’est formé du dioxyde de carbone.",
+      "Carbone + dioxygène → dioxyde de carbone :  C + O₂ → CO₂",
+      "1 mol de carbone réagit avec 1 mol de dioxygène pour produire 1 mol de dioxyde de carbone.",
+      "Le carbone est le combustible ; le dioxygène est le comburant."
+     ],
+     "fig": {
+      "page": 11,
+      "rect": [
+       0.054,
+       0.447,
+       0.881,
+       0.675
+      ],
+      "caption": "Combustion du carbone et test à l’eau de chaux"
+     }
     },
     {
-     "h": "Équilibrer",
+     "h": "Combustion complète du butane",
      "lines": [
-      "Coefficients devant les formules (jamais dans les indices)",
-      "2 H₂ + O₂ → 2 H₂O"
-     ]
+      "Flamme bleue : le verre de montre se couvre de buée, le sulfate de cuivre devient bleu (eau) et l’eau de chaux se trouble (dioxyde de carbone).",
+      "Butane + dioxygène → dioxyde de carbone + eau",
+      "C₄H₁₀ + 13/2 O₂ → 4 CO₂ + 5 H₂O"
+     ],
+     "fig": {
+      "page": 12,
+      "rect": [
+       0.648,
+       0.573,
+       0.985,
+       0.923
+      ],
+      "caption": "Combustion du butane au bec Bunsen"
+     }
     },
     {
-     "h": "Application",
+     "h": "Combustion incomplète",
      "lines": [
-      "Équilibre : CH₄ + O₂ → CO₂ + H₂O."
-     ]
+      "Virole peu ouverte : la flamme devient jaune et éclairante, une soucoupe se couvre d’un dépôt noir de carbone.",
+      "Elle peut produire du carbone et du monoxyde de carbone, gaz incolore, inodore et très toxique."
+     ],
+     "fig": {
+      "page": 13,
+      "rect": [
+       0.752,
+       0.476,
+       0.947,
+       0.668
+      ],
+      "caption": "Dépôt de carbone : combustion incomplète"
+     }
+    },
+    {
+     "h": "Combustion du fer",
+     "lines": [
+      "La laine de fer brûle vivement dans le dioxygène, sans flamme, en projetant des étincelles ; il se forme de petites boules grises d’oxyde de fer.",
+      "2 Fe + 3/2 O₂ → Fe₂O₃"
+     ],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.573,
+       0.37,
+       0.74,
+       0.573
+      ],
+      "caption": "Combustion de la laine de fer dans le dioxygène"
+     }
     }
    ]
   },
@@ -191,20 +338,27 @@
     {
      "h": "Définitions",
      "lines": [
-      "Soluté + solvant → solution",
-      "Solution aqueuse : solvant = eau"
+      "Une solution est un mélange homogène obtenu par dissolution d’une ou plusieurs substances (solutés) dans un solvant.",
+      "Soluté : substance pure placée dans le solvant, en quantité moins grande ; il peut être solide, liquide ou gazeux.",
+      "Solvant : liquide qui dissout d’autres substances sans les modifier chimiquement.",
+      "Solution aqueuse : solution dont le solvant est l’eau.",
+      "Soluté + solvant → solution ;  soluté + eau → solution aqueuse.",
+      "Exemples : z’rig sucré, jus de bissap."
+     ]
+    },
+    {
+     "h": "Ce que l’on peut dissoudre",
+     "lines": [
+      "Un liquide dans un liquide : limité par la miscibilité des deux liquides.",
+      "Un solide dans un liquide : limité par la solubilité du solide.",
+      "Un gaz dans un liquide."
      ]
     },
     {
      "h": "Concentration massique",
      "lines": [
-      "Cm = m / V – m en g, V en L, Cm en g/L"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "On dissout 10 g de sel dans de l’eau pour obtenir 0,5 L de solution. Calcule Cm."
+      "Elle représente la masse de soluté dissous par litre de solution :  Cm = m / V",
+      "m : masse de soluté (g) ; V : volume de la solution (L) ; Cm en g.L⁻¹."
      ]
     }
    ]
@@ -240,24 +394,51 @@
    },
    "board": [
     {
-     "h": "Dilution",
+     "h": "Solution saturée et solubilité",
      "lines": [
-      "Ajout de solvant – la masse de soluté est conservée",
-      "C₀ × V₀ = Cf × Vf"
+      "La solubilité est la concentration massique maximale d’un soluté dans un solvant donné ; elle dépend de la température.",
+      "Quand elle est atteinte, la solution est saturée : tout soluté ajouté ne se dissout plus (mélange hétérogène).",
+      "Un liquide miscible avec l’eau en toutes proportions ne donne pas de saturation."
      ]
     },
     {
-     "h": "Saturation et solubilité",
+     "h": "Préparation par dissolution",
      "lines": [
-      "Solution saturée : le soluté ne se dissout plus",
-      "Solubilité : concentration maximale – dépend de la température"
-     ]
+      "Masse à dissoudre : m = Cm × V  (m en g, V en L, Cm en g/L).",
+      "Matériel : balance, coupelle, spatule, entonnoir, fiole jaugée et son bouchon, pissette d’eau distillée.",
+      "Étape 1 : peser la masse m dans une coupelle.",
+      "Étape 2 : introduire le solide dans la fiole jaugée avec l’entonnoir, puis rincer la coupelle et l’entonnoir à l’eau distillée.",
+      "Étape 3 : remplir aux trois quarts, agiter, compléter jusqu’au trait de jauge, boucher et agiter."
+     ],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.598,
+       0.477,
+       0.893,
+       0.646
+      ],
+      "caption": "Compléter jusqu’au trait de jauge puis agiter"
+     }
     },
     {
-     "h": "Application",
+     "h": "Préparation par dilution",
      "lines": [
-      "On veut 100 mL d’une solution à 2 g/L à partir d’une solution mère à 10 g/L. Quel volume prélever ?"
-     ]
+      "On prélève un volume V₀ de solution mère et on ajoute de l’eau distillée pour obtenir la solution fille, moins concentrée.",
+      "La masse de soluté se conserve :  Cm₀ × V₀ = Cmf × Vf  donc  V₀ = Cmf × Vf / Cm₀",
+      "Matériel : bécher, pipette jaugée, propipette, fiole jaugée et son bouchon, pissette d’eau distillée.",
+      "La verrerie jaugée est à privilégier : elle mesure un volume précis."
+     ],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.568,
+       0.709,
+       0.876,
+       0.923
+      ],
+      "caption": "Solution mère et solution diluée"
+     }
     }
    ]
   },
@@ -290,29 +471,66 @@
    },
    "board": [
     {
-     "h": "Échelle de pH",
+     "h": "Notion de pH",
      "lines": [
-      "0 ← acide — 7 neutre — basique → 14"
+      "Les solutions sont classées en trois types : acides, basiques et neutres.",
+      "Le pH est un nombre sans unité compris entre 0 et 14 ; il évalue l’acidité ou la basicité d’une solution aqueuse."
      ]
     },
     {
-     "h": "Mesure",
+     "h": "Mesure du pH",
      "lines": [
-      "Papier pH (indicateurs colorés)",
-      "pH-mètre (valeur précise)"
-     ]
+      "Papier pH : papier imbibé d’indicateurs colorés ; on compare sa couleur au nuancier de la boîte.",
+      "pH-mètre : électrode reliée à un boîtier qui affiche la valeur exacte du pH."
+     ],
+     "fig": {
+      "page": 31,
+      "rect": [
+       0.41,
+       0.547,
+       0.915,
+       0.673
+      ],
+      "caption": "Mesure du pH au papier pH"
+     }
     },
     {
-     "h": "Sécurité",
+     "h": "Classement des solutions",
      "lines": [
-      "Ne pas toucher – ne pas goûter – ne pas inhaler"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe : jus de citron (pH = 2), eau pure (pH = 7), eau de javel (pH = 12)."
-     ]
+      "Plus le pH est petit, plus la solution est acide ; plus il est grand, plus elle est basique."
+     ],
+     "table": [
+      [
+       "pH",
+       "Nature",
+       "Exemples"
+      ],
+      [
+       "pH < 7",
+       "acide",
+       "jus d’orange, acide chlorhydrique"
+      ],
+      [
+       "pH = 7",
+       "neutre",
+       "eau pure, chlorure de sodium"
+      ],
+      [
+       "pH > 7",
+       "basique",
+       "eau de javel, soude"
+      ]
+     ],
+     "fig": {
+      "page": 32,
+      "rect": [
+       0.053,
+       0.134,
+       0.823,
+       0.346
+      ],
+      "caption": "pH de quelques solutions"
+     }
     }
    ]
   },
@@ -342,17 +560,66 @@
    },
    "board": [
     {
-     "h": "Dilution et pH",
+     "h": "Dilution d’une solution acide",
      "lines": [
-      "Acide : pH ↑ vers 7 (moins acide)",
-      "Basique : pH ↓ vers 7 (moins basique)",
-      "Neutre : pH = 7 inchangé"
-     ]
+      "S₁ : pH = 2 ; 10 mL de S₁ + 90 mL d’eau donnent S₂ : pH = 3.",
+      "Quand on dilue une solution acide, son pH augmente et se rapproche de 7 : elle devient moins acide."
+     ],
+     "fig": {
+      "page": 32,
+      "rect": [
+       0.453,
+       0.754,
+       0.921,
+       0.976
+      ],
+      "caption": "Dilution d’une solution acide"
+     }
     },
     {
-     "h": "Application",
+     "h": "Dilution d’une solution basique",
      "lines": [
-      "Une solution a un pH de 3. Après dilution, son pH peut-il être 9 ? Pourquoi ?"
+      "Soude S₁ : pH = 10 ; 5 mL de S₁ + 45 mL d’eau donnent S₂ : pH = 9 ; on recommence : S₃ : pH = 8.",
+      "Quand on dilue une solution basique, son pH diminue et se rapproche de 7 : elle devient moins basique."
+     ],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.053,
+       0.384,
+       0.879,
+       0.653
+      ],
+      "caption": "Dilution d’une solution basique"
+     }
+    },
+    {
+     "h": "Dangers",
+     "lines": [
+      "La plupart de ces solutions sont dangereuses, surtout concentrées.",
+      "Les acides sont corrosifs : brûlures graves de la peau et des yeux.",
+      "L’inhalation de vapeurs acides irrite et brûle le système respiratoire.",
+      "Des pictogrammes sur les étiquettes indiquent les dangers."
+     ],
+     "fig": {
+      "page": 34,
+      "rect": [
+       0.059,
+       0.061,
+       0.947,
+       0.456
+      ],
+      "caption": "Pictogrammes de danger"
+     }
+    },
+    {
+     "h": "Précautions",
+     "lines": [
+      "Ne pas toucher, goûter ou inhaler les solutions.",
+      "Ne pas mélanger des solutions concentrées avec des solutions inconnues ; aérer le lieu.",
+      "Verser l’acide dans l’eau ; diluer les solutions concentrées avant utilisation.",
+      "Ne pas jeter ces solutions dans les cours d’eau.",
+      "Porter gants, lunettes de protection et blouse."
      ]
     }
    ]
@@ -385,24 +652,51 @@
    },
    "board": [
     {
-     "h": "Les trois états",
+     "h": "Trois états physiques",
      "lines": [
-      "Solide – liquide – gazeux"
+      "Solide : glace, bois, sable. Liquide : eau, huile, lait. Gazeux : air, vapeur d’eau, butane."
      ]
     },
     {
-     "h": "L’état liquide",
+     "h": "La surface libre",
      "lines": [
-      "Volume propre – pas de forme propre",
-      "Surface libre plane et horizontale",
-      "Incompressible – non expansible"
+      "La surface du liquide en contact avec l’air est la surface libre.",
+      "Dans un récipient immobile, elle est toujours plane et horizontale, quelle que soit l’inclinaison du récipient."
+     ],
+     "fig": {
+      "page": 44,
+      "rect": [
+       0.301,
+       0.819,
+       0.699,
+       0.951
+      ],
+      "caption": "La surface libre reste horizontale"
+     }
+    },
+    {
+     "h": "Pas de forme propre",
+     "lines": [
+      "Transvasé dans des récipients de formes différentes, le liquide prend la forme du récipient mais garde le même volume.",
+      "Le liquide a un volume propre mais pas de forme propre."
      ]
     },
     {
-     "h": "Application",
+     "h": "Ni compressible ni expansible",
      "lines": [
-      "Pourquoi l’eau versée dans une bouteille prend-elle la forme de la bouteille ?"
-     ]
+      "Seringue bouchée contenant 5 mL de liquide : on pousse puis on tire le piston, le volume ne change pas.",
+      "Le liquide n’est ni compressible ni expansible."
+     ],
+     "fig": {
+      "page": 45,
+      "rect": [
+       0.635,
+       0.142,
+       0.947,
+       0.326
+      ],
+      "caption": "Seringue contenant un liquide"
+     }
     }
    ]
   },
@@ -433,23 +727,81 @@
    },
    "board": [
     {
-     "h": "L’état solide",
+     "h": "Les solides compacts",
      "lines": [
-      "Compact : forme et volume propres – verre, pain",
-      "Divisé : prend la forme du récipient – sable, farine"
-     ]
+      "Exemples : verre de thé, pain, dattes, glace.",
+      "Un solide compact se saisit entièrement entre les doigts ; il a une forme propre et un volume propre."
+     ],
+     "fig": {
+      "page": 44,
+      "rect": [
+       0.374,
+       0.053,
+       0.895,
+       0.165
+      ],
+      "caption": "Le bloc de bois garde sa forme"
+     }
+    },
+    {
+     "h": "Les solides divisés",
+     "lines": [
+      "Exemples : sable, farine, sucre en poudre (ensemble de petits solides).",
+      "Ils se saisissent partiellement entre les doigts ; ils n’ont pas de forme propre et prennent la forme du récipient."
+     ],
+     "fig": {
+      "page": 44,
+      "rect": [
+       0.053,
+       0.406,
+       0.731,
+       0.549
+      ],
+      "caption": "Le sable prend la forme du récipient"
+     }
     },
     {
      "h": "L’état gazeux",
      "lines": [
-      "Ni forme ni volume propres",
-      "Compressible et expansible"
-     ]
+      "L’air et tous les gaz n’ont pas de forme propre et occupent tout le volume qui leur est offert.",
+      "Seringue bouchée : en poussant, le volume d’air diminue (compressible) ; en tirant, il augmente (expansible).",
+      "Tous les gaz sont compressibles et expansibles."
+     ],
+     "fig": {
+      "page": 46,
+      "rect": [
+       0.053,
+       0.112,
+       0.892,
+       0.291
+      ],
+      "caption": "Seringue d’air bouchée"
+     }
     },
     {
-     "h": "Application",
-     "lines": [
-      "Classe : glace, farine, air, huile."
+     "h": "Tableau récapitulatif",
+     "lines": [],
+     "table": [
+      [
+       "État",
+       "Caractéristiques",
+       "Exemples"
+      ],
+      [
+       "Solide",
+       "Forme propre ; saisissable",
+       "glace, pierre"
+      ],
+      [
+       "Liquide",
+       "Pas de forme propre ; volume fixe ; ni compressible ni expansible",
+       "eau, jus"
+      ],
+      [
+       "Gaz",
+       "Ni forme ni volume propre ; compressible ; expansible",
+       "air, vapeur"
+      ]
      ]
     }
    ]
@@ -482,25 +834,69 @@
    },
    "board": [
     {
-     "h": "Changements d’état",
+     "h": "Définition",
      "lines": [
-      "Fusion : S → L – Solidification : L → S",
-      "Vaporisation : L → G – Liquéfaction : G → L",
-      "Sublimation : S → G – Condensation : G → S"
+      "Un changement d’état est le passage d’un état physique à un autre.",
+      "C’est une transformation physique qui dépend de la température et de la pression."
      ]
     },
     {
-     "h": "L’eau",
+     "h": "Vaporisation (ébullition)",
      "lines": [
-      "Fusion / solidification : 0 °C",
-      "Ébullition : 100 °C"
+      "Passage de l’état liquide à l’état gazeux en chauffant le liquide.",
+      "Pendant l’ébullition d’un corps pur, la température reste constante : 100 °C pour l’eau pure."
+     ],
+     "fig": {
+      "page": 51,
+      "rect": [
+       0.045,
+       0.303,
+       0.918,
+       0.59
+      ],
+      "caption": "Évolution de la température de l’eau chauffée"
+     }
+    },
+    {
+     "h": "Liquéfaction",
+     "lines": [
+      "Passage de l’état gazeux à l’état liquide en refroidissant le gaz.",
+      "Exemple : gouttes d’eau sur une bouteille sortie du réfrigérateur."
+     ],
+     "fig": {
+      "page": 52,
+      "rect": [
+       0.592,
+       0.144,
+       0.944,
+       0.331
+      ],
+      "caption": "Gouttelettes sur une bouteille froide"
+     }
+    },
+    {
+     "h": "Solidification et fusion",
+     "lines": [
+      "Solidification : passage de l’état liquide à l’état solide ; l’eau devient glace à 0 °C et la température reste à 0 °C pendant la solidification.",
+      "Fusion : passage de l’état solide à l’état liquide en chauffant ; la glace fond à 0 °C."
      ]
     },
     {
-     "h": "Application",
+     "h": "Sublimation et condensation",
      "lines": [
-      "Comment s’appelle le passage de la vapeur d’eau à l’eau liquide sur une vitre froide ?"
-     ]
+      "Sublimation : passage direct de l’état solide à l’état gazeux (la neige disparaît au soleil sans fondre).",
+      "Condensation : passage de l’état gazeux à l’état solide (givre dans le réfrigérateur)."
+     ],
+     "fig": {
+      "page": 54,
+      "rect": [
+       0.053,
+       0.095,
+       0.778,
+       0.304
+      ],
+      "caption": "Schéma des changements d’état"
+     }
     }
    ]
   },
@@ -535,28 +931,69 @@
    },
    "board": [
     {
-     "h": "Conservation",
+     "h": "Conservation de la masse",
      "lines": [
-      "La masse se conserve lors d’un changement d’état"
+      "On pèse un glaçon avant et après sa fusion : la masse ne varie pas.",
+      "Lors d’un changement d’état, la masse se conserve."
+     ],
+     "fig": {
+      "page": 54,
+      "rect": [
+       0.463,
+       0.469,
+       0.86,
+       0.592
+      ],
+      "caption": "Fusion d’un glaçon sur la balance"
+     }
+    },
+    {
+     "h": "Variation du volume",
+     "lines": [],
+     "table": [
+      [
+       "Changement d’état",
+       "Volume"
+      ],
+      [
+       "Fusion",
+       "augmente légèrement (la plupart des substances)"
+      ],
+      [
+       "Solidification",
+       "diminue ; exception : l’eau, son volume augmente en gelant"
+      ],
+      [
+       "Vaporisation",
+       "augmente fortement"
+      ],
+      [
+       "Liquéfaction",
+       "diminue nettement"
+      ]
      ]
     },
     {
-     "h": "Volume",
+     "h": "Grandeurs physiques",
      "lines": [
-      "Le volume varie : l’eau qui gèle augmente de volume"
+      "Volume : espace occupé ; unité légale m³, unité pratique L ; 1 m³ = 1000 L ; 1 L = 1 dm³.",
+      "Masse : quantité de matière ; unité kg ; 1 kg = 1000 g ; 1 tonne = 1000 kg.",
+      "Température : caractérise l’état de froid ou de chaud ; unité usuelle °C ; mesurée au thermomètre."
      ]
     },
     {
-     "h": "Unités",
-     "lines": [
-      "Masse : kg – volume : m³ – température : °C"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Une bouteille pleine d’eau fermée éclate au congélateur. Explique."
-     ]
+     "h": "Le cycle de l’eau",
+     "lines": [],
+     "fig": {
+      "page": 55,
+      "rect": [
+       0.073,
+       0.522,
+       0.855,
+       0.933
+      ],
+      "caption": "Le cycle des états de l’eau"
+     }
     }
    ]
   },
@@ -587,27 +1024,65 @@
    },
    "board": [
     {
-     "h": "Masse",
+     "h": "La masse",
      "lines": [
-      "Quantité de matière – balance – kg"
-     ]
+      "La masse m représente la quantité de matière ; elle se mesure avec une balance et s’exprime en kg.",
+      "Elle ne dépend pas du lieu.",
+      "Balance électronique : affichage direct et fonction « tare » ; elle est plus précise.",
+      "Balance de Roberval : équilibre des deux plateaux avec des masses marquées.",
+      "Liquide ou poudre : récipient vide sur le plateau, touche TARE, verser, lire la valeur."
+     ],
+     "fig": {
+      "page": 63,
+      "rect": [
+       0.618,
+       0.404,
+       0.935,
+       0.675
+      ],
+      "caption": "Balance électronique et balance de Roberval"
+     }
     },
     {
-     "h": "Volume",
+     "h": "Le volume d’un liquide",
      "lines": [
-      "Espace occupé – éprouvette graduée – m³ (1 L = 1 dm³)"
-     ]
+      "Le volume V mesure l’espace occupé ; unité légale m³ (et dm³, cm³, mm³), ou litre L (dL, cL, mL).",
+      "À retenir : 1 L = 1 dm³ et 1 cm³ = 1 mL.",
+      "On le mesure de préférence avec une éprouvette graduée, l’œil en face du ménisque."
+     ],
+     "fig": {
+      "page": 64,
+      "rect": [
+       0.633,
+       0.709,
+       0.934,
+       0.923
+      ],
+      "caption": "Lecture au niveau du ménisque"
+     }
+    },
+    {
+     "h": "Le volume d’un solide",
+     "lines": [
+      "Forme régulière : cube V = a × a × a ; pavé V = L × l × h ; cylindre V = π × r² × h.",
+      "Forme quelconque : déplacement d’eau dans une éprouvette ; V = V(après) − V(avant). Exemple : 92 − 80 = 12 mL."
+     ],
+     "fig": {
+      "page": 66,
+      "rect": [
+       0.191,
+       0.198,
+       0.81,
+       0.456
+      ],
+      "caption": "Mesure du volume par déplacement d’eau"
+     }
     },
     {
      "h": "Masse volumique",
      "lines": [
-      "ρ = m / V – kg/m³ ou g/cm³"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Un cube d’acier de 1 dm³ a une masse de 7,7 kg. Calcule sa masse volumique en kg/m³."
+      "ρ = m / V  (m en kg, V en m³, ρ en kg/m³) ; on utilise aussi g/L ou g/cm³.",
+      "Une espèce qui coule dans l’eau a une masse volumique plus grande que celle de l’eau ; une espèce qui flotte a une masse volumique plus petite."
      ]
     }
    ]
@@ -642,21 +1117,52 @@
     {
      "h": "Définition",
      "lines": [
-      "d = ρ(corps) / ρ(eau) – sans unité",
-      "Gaz : d = ρ(gaz) / ρ(air)"
+      "La densité d’un corps est le rapport de sa masse volumique à celle d’un corps de référence.",
+      "Référence : l’eau pure pour les solides et les liquides ; l’air (même température et même pression) pour les gaz.",
+      "La densité est sans unité."
      ]
     },
     {
-     "h": "Flottaison",
+     "h": "Formules",
      "lines": [
-      "d < 1 : flotte – d > 1 : coule"
+      "Solide ou liquide :  d = ρ(corps) / ρ(eau)",
+      "Gaz ou vapeur :  d = ρ(gaz) / ρ(air)",
+      "Les deux masses volumiques doivent être exprimées dans la même unité."
      ]
     },
     {
-     "h": "Application",
+     "h": "Couler ou flotter",
      "lines": [
-      "L’huile a une masse volumique de 920 kg/m³. Calcule sa densité. Flotte-t-elle sur l’eau ?"
-     ]
+      "Une espèce qui coule dans l’eau a une densité plus grande que 1.",
+      "Une espèce qui flotte a une densité plus petite que 1."
+     ],
+     "fig": {
+      "page": 68,
+      "rect": [
+       0.485,
+       0.271,
+       0.944,
+       0.349
+      ],
+      "caption": "Masses volumiques de quelques substances"
+     }
+    },
+    {
+     "h": "Exemple",
+     "lines": [
+      "Une pièce de poids 1,35 N (g = 10 N/kg) : m = 0,135 kg ; V = 160 − 110 = 50 cm³.",
+      "ρ = 135 g / 50 cm³ = 2,7 g/cm³ : c’est de l’aluminium et non de l’argent."
+     ],
+     "fig": {
+      "page": 68,
+      "rect": [
+       0.609,
+       0.083,
+       0.947,
+       0.27
+      ],
+      "caption": "Mesures sur la pièce métallique"
+     }
     }
    ]
   },
@@ -687,23 +1193,63 @@
    },
    "board": [
     {
-     "h": "Définition",
+     "h": "Mise en évidence",
      "lines": [
-      "Force d’attraction exercée par la Terre sur un corps"
-     ]
+      "Tout objet lancé retombe ; les branches chargées de dattes se plient vers le bas : c’est l’attraction terrestre.",
+      "La Terre exerce une action attractive sur tout objet proche ; elle est modélisée par une force : le poids, noté P⃗."
+     ],
+     "fig": {
+      "page": 73,
+      "rect": [
+       0.462,
+       0.229,
+       0.923,
+       0.492
+      ],
+      "caption": "Branches de palmier chargées de dattes"
+     }
     },
     {
-     "h": "Caractéristiques",
+     "h": "Direction et sens",
      "lines": [
-      "Point d’application : centre de gravité G",
-      "Direction : verticale – sens : vers le bas",
-      "Intensité : P en newtons (dynamomètre)"
-     ]
+      "Fil à plomb : le solide lâché tombe verticalement et écrase la craie.",
+      "Le poids s’exerce toujours selon la verticale, du haut vers le bas.",
+      "La verticale passe par le centre de la Terre."
+     ],
+     "fig": {
+      "page": 73,
+      "rect": [
+       0.51,
+       0.747,
+       0.929,
+       0.945
+      ],
+      "caption": "Expérience du fil à plomb"
+     }
     },
     {
-     "h": "Application",
+     "h": "Point d’application",
      "lines": [
-      "Donne les quatre caractéristiques du poids d’un livre posé sur une table."
+      "Le point d’application est le centre de gravité G.",
+      "Solide homogène de forme régulière : G est au centre géométrique (centre de symétrie).",
+      "Forme quelconque : on suspend le carton en A, B puis C ; les droites tracées se coupent en G."
+     ],
+     "fig": {
+      "page": 74,
+      "rect": [
+       0.053,
+       0.543,
+       0.91,
+       0.686
+      ],
+      "caption": "Centre de gravité de solides réguliers"
+     }
+    },
+    {
+     "h": "Intensité",
+     "lines": [
+      "Elle se mesure avec un dynamomètre.",
+      "Son unité est le newton (N)."
      ]
     }
    ]
@@ -738,29 +1284,79 @@
    },
    "board": [
     {
-     "h": "Relation",
+     "h": "Expérience",
      "lines": [
-      "P = m × g – P en N, m en kg, g en N/kg",
-      "Sur Terre : g ≈ 10 N/kg"
+      "On mesure au dynamomètre le poids P de différentes masses m."
+     ],
+     "table": [
+      [
+       "m (kg)",
+       "0,050",
+       "0,075",
+       "0,100",
+       "0,150",
+       "0,175",
+       "0,200"
+      ],
+      [
+       "P (N)",
+       "0,49",
+       "0,73",
+       "0,98",
+       "1,47",
+       "1,71",
+       "1,96"
+      ],
+      [
+       "P/m (N/kg)",
+       "9,8",
+       "9,73",
+       "9,8",
+       "9,8",
+       "9,77",
+       "9,8"
+      ]
+     ],
+     "fig": {
+      "page": 75,
+      "rect": [
+       0.054,
+       0.543,
+       0.798,
+       0.822
+      ],
+      "caption": "Mesures au dynamomètre"
+     }
+    },
+    {
+     "h": "Conclusion",
+     "lines": [
+      "Le rapport P/m est pratiquement constant : g ≈ 9,8 N/kg, l’intensité de la pesanteur.",
+      "La courbe P = f(m) est une droite qui passe par l’origine : le poids est proportionnel à la masse.",
+      "P = m × g  (P en N, m en kg, g en N/kg)."
+     ],
+     "fig": {
+      "page": 76,
+      "rect": [
+       0.569,
+       0.178,
+       0.947,
+       0.351
+      ],
+      "caption": "Poids en fonction de la masse"
+     }
+    },
+    {
+     "h": "Remarques",
+     "lines": [
+      "La masse ne varie pas quand on change de lieu.",
+      "Le poids et g dépendent du lieu (latitude et altitude)."
      ]
     },
     {
-     "h": "Masse et poids",
+     "h": "Représentation du poids",
      "lines": [
-      "La masse ne change pas avec le lieu",
-      "Le poids varie avec le lieu (g varie)"
-     ]
-    },
-    {
-     "h": "Représentation",
-     "lines": [
-      "Vecteur vertical vers le bas, origine G"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Calcule le poids d’un sac de riz de 25 kg (g = 10 N/kg)."
+      "Le poids est représenté par un vecteur (segment fléché) de même direction, sens et point d’application que P⃗, et de longueur proportionnelle à sa valeur."
      ]
     }
    ]
@@ -794,25 +1390,49 @@
    },
    "board": [
     {
-     "h": "Loi de Newton",
+     "h": "Une même cause",
      "lines": [
-      "F = G × m₁ × m₂ / d²",
-      "G = 6,67 × 10⁻¹¹ S.I."
+      "Newton explique la chute des corps, le mouvement de la Lune autour de la Terre et celui des planètes autour du Soleil par un même phénomène : l’attraction universelle."
      ]
     },
     {
-     "h": "Pesanteur et altitude",
+     "h": "Loi de la gravitation",
      "lines": [
+      "Deux objets qui ont une masse s’attirent mutuellement : c’est une interaction attractive à distance.",
+      "F⃗1/2 = − F⃗2/1 : même direction, sens opposés, même intensité.",
+      "F = G × m₁ × m₂ / d²   (d : distance entre les centres)",
+      "G = 6,67 × 10⁻¹¹ (S.I.) : constante de gravitation universelle.",
+      "Elle explique la cohésion du système solaire et le mouvement des planètes et de leurs satellites."
+     ],
+     "fig": {
+      "page": 77,
+      "rect": [
+       0.543,
+       0.197,
+       0.911,
+       0.357
+      ],
+      "caption": "Interaction gravitationnelle entre deux corps"
+     }
+    },
+    {
+     "h": "Pesanteur à l’altitude h",
+     "lines": [
+      "La Terre est une sphère de rayon R et de masse M ; à l’altitude h, la force gravitationnelle est le poids.",
       "g = G × M / (R + h)²",
-      "Au sol : g₀ = G × M / R²",
-      "g diminue quand h augmente"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment varie g quand on monte en altitude ? Justifie avec la formule."
-     ]
+      "Au sol (h = 0) : g₀ = G × M / R², donc G × M = g₀ × R².",
+      "D’où : g = g₀ × R² / (R + h)²"
+     ],
+     "fig": {
+      "page": 77,
+      "rect": [
+       0.627,
+       0.57,
+       0.947,
+       0.772
+      ],
+      "caption": "Corps à l’altitude h"
+     }
     }
    ]
   },
@@ -845,29 +1465,164 @@
    },
    "board": [
     {
-     "h": "Résistance",
+     "h": "Appareils de mesure",
      "lines": [
-      "Unité : ohm (Ω) – mesure : ohmmètre hors circuit",
-      "Diminue l’intensité du courant"
+      "L’ampèremètre se branche en série ; le voltmètre se branche en parallèle (dérivation).",
+      "On commence par le plus grand calibre, puis on le diminue.",
+      "Appareil analogique :  X = lecture × calibre / échelle",
+      "Multimètre : tension (bornes V et COM), intensité (10A ou mA et COM), résistance."
+     ],
+     "fig": {
+      "page": 87,
+      "rect": [
+       0.053,
+       0.766,
+       0.876,
+       0.936
+      ],
+      "caption": "Branchement de l’ampèremètre et du voltmètre"
+     }
+    },
+    {
+     "h": "La résistance",
+     "lines": [
+      "Le dipôle ohmique est un petit cylindre à deux bornes portant des anneaux de couleurs.",
+      "Il est caractérisé par sa résistance R, en ohm (Ω) : 1 kΩ = 1000 Ω ; 1 MΩ = 1 000 000 Ω.",
+      "La résistance caractérise la façon dont un dipôle résiste au passage du courant."
+     ],
+     "fig": {
+      "page": 89,
+      "rect": [
+       0.619,
+       0.47,
+       0.925,
+       0.555
+      ],
+      "caption": "Un dipôle ohmique (résistance)"
+     }
+    },
+    {
+     "h": "Influence de la résistance",
+     "lines": [
+      "Une résistance en série diminue l’intensité ; plus elle est grande, plus l’intensité est faible.",
+      "L’intensité ne dépend ni du sens de branchement ni de l’emplacement de la résistance."
+     ],
+     "table": [
+      [
+       "Circuit",
+       "Intensité",
+       "Éclat de la lampe"
+      ],
+      [
+       "Sans résistance",
+       "430 mA",
+       "normal"
+      ],
+      [
+       "Avec R₁ = 10 Ω",
+       "71,6 mA",
+       "faible"
+      ],
+      [
+       "Avec R₂ = 68 Ω",
+       "55,2 mA",
+       "très faible"
+      ],
+      [
+       "R₂ inversée ou déplacée",
+       "55,2 mA",
+       "très faible"
+      ]
      ]
     },
     {
-     "h": "Loi d’Ohm",
+     "h": "Caractéristique et loi d’Ohm",
      "lines": [
-      "U = R × I",
-      "Caractéristique U = f(I) : droite passant par l’origine"
-     ]
+      "La courbe U = f(I) est une droite qui passe par l’origine : U et I sont proportionnels.",
+      "Loi d’Ohm :  U = R × I   (U en V, I en A, R en Ω)."
+     ],
+     "table": [
+      [
+       "U (V)",
+       "0",
+       "2,83",
+       "4,27",
+       "5,72",
+       "7,17",
+       "8,65"
+      ],
+      [
+       "I (mA)",
+       "0",
+       "62,1",
+       "93,7",
+       "125,4",
+       "157,2",
+       "189,7"
+      ]
+     ],
+     "fig": {
+      "page": 91,
+      "rect": [
+       0.504,
+       0.588,
+       0.933,
+       0.737
+      ],
+      "caption": "Caractéristique d’un dipôle ohmique"
+     }
+    },
+    {
+     "h": "Mesure à l’ohmmètre",
+     "lines": [
+      "On place le multimètre sur la zone Ω, en commençant par le plus grand calibre.",
+      "On mesure la résistance hors du circuit, entre les bornes COM et Ω.",
+      "Le meilleur calibre est celui juste supérieur à la résistance mesurée.",
+      "Exemple : 0.654 affiché sur le calibre 2 kΩ donne 0,654 kΩ = 654 Ω."
+     ],
+     "fig": {
+      "page": 92,
+      "rect": [
+       0.651,
+       0.122,
+       0.924,
+       0.327
+      ],
+      "caption": "Multimètre en mode ohmmètre"
+     }
     },
     {
      "h": "Code des couleurs",
      "lines": [
-      "Anneaux colorés → valeur de la résistance"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Un conducteur ohmique de 20 Ω est traversé par un courant de 0,3 A. Calcule la tension à ses bornes."
+      "1ᵉʳ anneau : 1ᵉʳ chiffre ; 2ᵉ anneau : 2ᵉ chiffre ; 3ᵉ anneau : nombre de zéros ; 4ᵉ anneau : précision.",
+      "Exemple : rouge (2), bleu (6), marron (1 zéro) → 260 Ω ; anneau or : 5 %, soit ± 13 Ω.",
+      "La valeur réelle est comprise entre 247 Ω et 273 Ω."
+     ],
+     "table": [
+      [
+       "Noir",
+       "Marron",
+       "Rouge",
+       "Orange",
+       "Jaune",
+       "Vert",
+       "Bleu",
+       "Violet",
+       "Gris",
+       "Blanc"
+      ],
+      [
+       "0",
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9"
+      ]
      ]
     }
    ]
@@ -897,17 +1652,23 @@
    },
    "board": [
     {
-     "h": "Association en série",
+     "h": "Résistances en série",
      "lines": [
-      "Req = R₁ + R₂ + R₃ + …",
-      "Req > chaque résistance"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 20 Ω en série."
-     ]
+      "Toutes les résistances sont traversées par le même courant I.",
+      "La tension totale est la somme des tensions :  UAD = UAB + UBC + UCD = R₁I + R₂I + R₃I",
+      "Résistance équivalente :  Réq = R₁ + R₂ + R₃",
+      "Pour n résistances en série :  Réq = R₁ + R₂ + … + Rn"
+     ],
+     "fig": {
+      "page": 94,
+      "rect": [
+       0.134,
+       0.174,
+       0.81,
+       0.394
+      ],
+      "caption": "Association en série et résistance équivalente"
+     }
     }
    ]
   },
@@ -937,18 +1698,23 @@
    },
    "board": [
     {
-     "h": "Association en dérivation",
+     "h": "Résistances en parallèle",
      "lines": [
-      "1/Req = 1/R₁ + 1/R₂ + …",
-      "Deux résistances : Req = R₁ × R₂ / (R₁ + R₂)",
-      "Req < chaque résistance"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 30 Ω en dérivation."
-     ]
+      "Les dipôles ont leurs bornes communes deux à deux : la tension est la même aux bornes de chacun.",
+      "Le courant se partage :  I = I₁ + I₂ + I₃ = UAB/R₁ + UAB/R₂ + UAB/R₃",
+      "Résistance équivalente :  1/Réq = 1/R₁ + 1/R₂ + 1/R₃",
+      "Pour n résistances en parallèle :  1/Réq = 1/R₁ + 1/R₂ + … + 1/Rn"
+     ],
+     "fig": {
+      "page": 94,
+      "rect": [
+       0.127,
+       0.65,
+       0.63,
+       0.847
+      ],
+      "caption": "Association en parallèle et résistance équivalente"
+     }
     }
    ]
   },
@@ -982,27 +1748,75 @@
     {
      "h": "Définition",
      "lines": [
-      "Énergie électrique échangée pendant 1 s"
+      "Les appareils transforment l’énergie électrique en énergie thermique, lumineuse ou de mouvement.",
+      "La puissance électrique est l’énergie électrique échangée par un dipôle pendant une seconde de fonctionnement."
      ]
     },
     {
      "h": "Puissance nominale",
      "lines": [
-      "Inscrite sur l’appareil – watt (W)",
-      "1 kW = 1000 W – 1 MW = 10⁶ W"
-     ]
+      "La plaque signalétique indique la tension nominale et la puissance nominale.",
+      "La puissance nominale P est la puissance reçue sous la tension nominale ; elle s’exprime en watt (W).",
+      "1 kW = 1000 W ; 1 MW = 1 000 000 W ; 1 GW = 1 000 000 000 W.",
+      "Plus la puissance nominale est élevée, plus l’action de l’appareil est efficace."
+     ],
+     "table": [
+      [
+       "Appareil",
+       "Puissance nominale"
+      ],
+      [
+       "Calculatrice",
+       "0,1 mW"
+      ],
+      [
+       "Lampe basse consommation",
+       "30 W"
+      ],
+      [
+       "TV LCD",
+       "150 W"
+      ],
+      [
+       "Perceuse",
+       "600 W"
+      ],
+      [
+       "Lave-linge",
+       "2,5 kW"
+      ],
+      [
+       "Cuisinière électrique",
+       "6,5 kW"
+      ]
+     ],
+     "fig": {
+      "page": 101,
+      "rect": [
+       0.053,
+       0.496,
+       0.923,
+       0.766
+      ],
+      "caption": "Plaques signalétiques"
+     }
     },
     {
-     "h": "Expression",
+     "h": "Puissance reçue",
      "lines": [
-      "P = U × I"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Une lampe 220 V – 100 W fonctionne normalement. Calcule l’intensité qui la traverse."
-     ]
+      "P = U × I   (U en V, I en A, P en W).",
+      "Sous sa tension nominale, U × I est égal à la puissance nominale."
+     ],
+     "fig": {
+      "page": 102,
+      "rect": [
+       0.586,
+       0.312,
+       0.897,
+       0.541
+      ],
+      "caption": "P = U × I = 12 × 2 = 24 W"
+     }
     }
    ]
   },
@@ -1033,24 +1847,67 @@
    },
    "board": [
     {
-     "h": "Expression",
+     "h": "Énergie électrique",
      "lines": [
-      "E = P × t"
+      "Elle dépend de la puissance de l’appareil et de sa durée de fonctionnement.",
+      "E = P × t   (P en W, t en s, E en J).",
+      "1 J est l’énergie reçue par un appareil de 1 W pendant 1 s.",
+      "E (kWh) = P (kW) × t (h) ;  1 kWh = 3 600 000 J = 3,6 × 10⁶ J.",
+      "Le compteur indique l’énergie en kWh."
+     ],
+     "fig": {
+      "page": 102,
+      "rect": [
+       0.648,
+       0.629,
+       0.904,
+       0.908
+      ],
+      "caption": "Compteur d’énergie électrique"
+     }
+    },
+    {
+     "h": "Abonnement et prix",
+     "lines": [
+      "L’abonnement fixe la puissance maximale de l’installation ; si on la dépasse, l’installation disjoncte.",
+      "Prix à payer = nombre de kWh utilisés × prix d’un kWh.",
+      "Exemple : aspirateur 1300 W pendant 480 s : E = 624 000 J ≈ 0,17 kWh."
      ]
     },
     {
-     "h": "Unités",
+     "h": "Fils adaptés",
      "lines": [
-      "Joule : P en W, t en s",
-      "kWh : P en kW, t en h",
-      "1 kWh = 3,6 × 10⁶ J"
-     ]
+      "Le courant échauffe les conducteurs : c’est l’effet Joule.",
+      "Les gros fils s’échauffent moins que les fils fins.",
+      "Les appareils de forte puissance (plaques de cuisson, lave-linge) doivent être alimentés par de gros fils."
+     ],
+     "fig": {
+      "page": 104,
+      "rect": [
+       0.165,
+       0.299,
+       0.835,
+       0.637
+      ],
+      "caption": "Installation électrique et coupe-circuit"
+     }
     },
     {
-     "h": "Application",
+     "h": "Protection",
      "lines": [
-      "Un téléviseur de 100 W fonctionne 3 h par jour. Calcule l’énergie consommée en un jour en kWh."
-     ]
+      "Surintensité : trop d’appareils puissants sur une multiprise, ou contact entre phase et neutre (court-circuit) ; risque d’incendie.",
+      "Les coupe-circuits (fusibles, disjoncteurs) ouvrent le circuit quand l’intensité dépasse la valeur maximale admissible."
+     ],
+     "fig": {
+      "page": 104,
+      "rect": [
+       0.053,
+       0.082,
+       0.929,
+       0.28
+      ],
+      "caption": "Fusible et disjoncteur"
+     }
     }
    ]
   },
@@ -1081,24 +1938,106 @@
    },
    "board": [
     {
-     "h": "Types de réflexion",
+     "h": "Deux types de réflexion",
      "lines": [
-      "Diffuse : surface rugueuse",
-      "Spéculaire : surface polie (miroir)"
-     ]
+      "Réflexion diffuse : une surface rugueuse renvoie la lumière dans toutes les directions."
+     ],
+     "fig": {
+      "page": 111,
+      "rect": [
+       0.518,
+       0.316,
+       0.93,
+       0.482
+      ],
+      "caption": "Réflexion diffuse"
+     }
     },
     {
-     "h": "Lois de Descartes",
+     "h": "Réflexion spéculaire",
      "lines": [
-      "Rayon incident, rayon réfléchi et normale dans un même plan",
-      "r = i"
-     ]
+      "Réflexion spéculaire : une surface polie et brillante renvoie la lumière dans une direction privilégiée (miroir plan : vitre, plaque métallique, eau calme)."
+     ],
+     "fig": {
+      "page": 111,
+      "rect": [
+       0.502,
+       0.595,
+       0.897,
+       0.847
+      ],
+      "caption": "Réflexion spéculaire"
+     }
     },
     {
-     "h": "Application",
+     "h": "Vocabulaire",
      "lines": [
-      "Un rayon arrive sur un miroir avec un angle d’incidence de 35°. Quel est l’angle de réflexion ?"
-     ]
+      "SI : rayon incident ; I : point d’incidence ; IR : rayon réfléchi ; IN : normale au miroir.",
+      "i : angle d’incidence (entre IN et SI) ; r : angle de réflexion (entre IN et IR).",
+      "Plan d’incidence : plan formé par SI et IN."
+     ],
+     "fig": {
+      "page": 112,
+      "rect": [
+       0.47,
+       0.12,
+       0.902,
+       0.304
+      ],
+      "caption": "Réflexion sur un miroir plan"
+     }
+    },
+    {
+     "h": "Lois de Descartes de la réflexion",
+     "lines": [
+      "Le rayon incident, le rayon réfléchi et la normale sont dans un même plan.",
+      "L’angle de réflexion est égal à l’angle d’incidence :  i = r"
+     ],
+     "fig": {
+      "page": 112,
+      "rect": [
+       0.186,
+       0.622,
+       0.815,
+       0.927
+      ],
+      "caption": "Vérification au disque gradué"
+     }
+    },
+    {
+     "h": "Image dans un miroir plan",
+     "lines": [
+      "Deux bougies de part et d’autre d’une vitre : la bougie éteinte semble allumée ; elles sont symétriques par rapport à la vitre.",
+      "Un miroir plan donne d’un objet réel une image virtuelle, symétrique de l’objet par rapport au miroir.",
+      "L’image n’est pas superposable à l’objet : l’image de la main droite est une main gauche.",
+      "Le point image est à l’intersection des prolongements des rayons réfléchis."
+     ],
+     "fig": {
+      "page": 114,
+      "rect": [
+       0.458,
+       0.763,
+       0.877,
+       0.928
+      ],
+      "caption": "Construction de l’image"
+     }
+    },
+    {
+     "h": "Champ d’observation",
+     "lines": [
+      "C’est la portion d’espace dont l’œil placé en O voit les points par réflexion sur le miroir ; on la construit avec les rayons extrêmes et la loi i = r."
+     ],
+     "fig": {
+      "page": 115,
+      "rect": [
+       0.173,
+       0.244,
+       0.827,
+       0.492
+      ],
+      "caption": "Champ d’observation d’un miroir plan"
+     }
     }
    ]
   },
@@ -1131,30 +2070,84 @@
    },
    "board": [
     {
-     "h": "Définition",
+     "h": "Notion de réfraction",
      "lines": [
-      "Changement de direction de la lumière entre deux milieux"
+      "Plongé dans l’eau, un crayon semble cassé.",
+      "En traversant la surface de séparation de deux milieux (dioptre), la lumière change de direction : c’est la réfraction.",
+      "Une partie de la lumière est aussi réfléchie ; un faisceau très oblique peut être totalement réfléchi."
+     ],
+     "fig": {
+      "page": 115,
+      "rect": [
+       0.053,
+       0.649,
+       0.785,
+       0.905
+      ],
+      "caption": "Crayon dans l’eau et laser dans l’eau"
+     }
+    },
+    {
+     "h": "Vocabulaire",
+     "lines": [
+      "SI : rayon incident ; I : point d’incidence ; IR : rayon réfracté ; IN : normale au dioptre.",
+      "i₁ : angle d’incidence ; i₂ : angle de réfraction (entre IN et le rayon réfracté)."
+     ],
+     "fig": {
+      "page": 116,
+      "rect": [
+       0.499,
+       0.347,
+       0.931,
+       0.621
+      ],
+      "caption": "Réfraction dans un bloc de verre"
+     }
+    },
+    {
+     "h": "Lois de Descartes de la réfraction",
+     "lines": [
+      "Le rayon incident, la normale et le rayon réfracté sont dans un même plan.",
+      "n₁ × sin(i₁) = n₂ × sin(i₂)   (n₁, n₂ : indices de réfraction des deux milieux).",
+      "Quand i₁ augmente, i₂ augmente aussi."
      ]
     },
     {
-     "h": "Lois de Descartes",
+     "h": "Angle limite et réflexion totale",
      "lines": [
-      "Rayon incident, normale et rayon réfracté dans un même plan",
-      "n₁ × sin i₁ = n₂ × sin i₂"
-     ]
+      "Vers un milieu plus réfringent (n₁ < n₂) : le rayon se rapproche de la normale ; angle limite de réfraction : sin(i₂max) = n₁ / n₂.",
+      "Vers un milieu moins réfringent (n₁ > n₂) : le rayon s’écarte de la normale ; angle limite d’incidence : sin(i₁lim) = n₂ / n₁.",
+      "Au-delà de i₁lim, il n’y a plus de rayon réfracté : c’est la réflexion totale.",
+      "Exemple eau/air (n = 1,33) : sin(i) = 1 / 1,33, angle limite ≈ 48,75°."
+     ],
+     "fig": {
+      "page": 117,
+      "rect": [
+       0.053,
+       0.544,
+       0.933,
+       0.804
+      ],
+      "caption": "Réfraction air–plexiglas au disque gradué"
+     }
     },
     {
-     "h": "Angle limite et dispersion",
+     "h": "Décomposition de la lumière",
      "lines": [
-      "sin i₂max = n₁ / n₂",
-      "Le prisme décompose la lumière blanche"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Un rayon passe de l’air (n = 1) dans l’eau (n = 1,33) avec i₁ = 30°. Calcule sin i₂."
-     ]
+      "Un prisme ou un réseau décompose la lumière blanche en lumières colorées, du violet au rouge.",
+      "Le violet est plus dévié que le rouge ; ces couleurs sont des radiations.",
+      "La lumière blanche est le mélange de toutes ces lumières colorées : c’est le spectre de la lumière visible."
+     ],
+     "fig": {
+      "page": 118,
+      "rect": [
+       0.497,
+       0.519,
+       0.921,
+       0.739
+      ],
+      "caption": "Décomposition de la lumière par un prisme"
+     }
     }
    ]
   }
