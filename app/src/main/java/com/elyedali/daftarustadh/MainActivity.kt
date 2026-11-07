@@ -1960,9 +1960,6 @@ class MainActivity : AppCompatActivity() {
                                     } else gradeDao.saveTeacherSubject(TeacherSubjectEntity(c.id, code, mode))
                                 }
                             },
-                            // الأستاذ المستقل (عمله الفردي): الفصل الأخير وحساب معدل المادة يحتاجان التفعيل
-                            term3Locked = !AppRole.isAdmin && !gradesFromAdmin && c.institutionId in selfSchoolIds && c.schoolYear !in teacherActivated,
-                            onActivate = { teacherActivateYear = c.schoolYear },
                             onSendRecord = if (gradesFromAdmin) null else {
                                 {
                                     val n = teacherName
@@ -2219,7 +2216,6 @@ class MainActivity : AppCompatActivity() {
                             androidx.compose.foundation.layout.Column(verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)) {
                                 Text(stringResource(R.string.tact_explain, com.elyedali.daftarustadh.data.TeacherActivation.PRICE, year))
                                 Text("• " + stringResource(R.string.tact_item_planning))
-                                Text("• " + stringResource(R.string.tact_item_grades))
                                 Text(stringResource(R.string.tact_free_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall,
                                     color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant)
                                 if (year in teacherRequested) Text("⏳ " + stringResource(R.string.act_status_requested),

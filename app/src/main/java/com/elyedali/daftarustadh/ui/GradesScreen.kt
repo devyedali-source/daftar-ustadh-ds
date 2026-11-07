@@ -70,9 +70,6 @@ fun GradesScreen(
     onPrintRecord: (blank: Boolean) -> Unit,
     /** null عند الإدارة: إرسال السجل خاص بالأستاذ. */
     onSendRecord: (() -> Unit)? = null,
-    /** الأستاذ المستقل غير المفعّل: الفصل الأخير وحساب معدل المادة مقفلان. */
-    term3Locked: Boolean = false,
-    onActivate: () -> Unit = {},
     onBack: () -> Unit
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -126,19 +123,6 @@ fun GradesScreen(
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
-            if (term3Locked && com.elyedali.daftarustadh.data.TeacherActivation.gradesNeedActivation(term)) {
-                androidx.compose.material3.Card(Modifier.fillMaxWidth().padding(top = 10.dp)) {
-                    Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                        Text("🔒 " + stringResource(R.string.tact_grades_locked), fontWeight = FontWeight.Bold)
-                        Text(stringResource(R.string.tact_grades_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE),
-                            style = MaterialTheme.typography.bodySmall)
-                        androidx.compose.material3.Button(onClick = onActivate, modifier = Modifier.fillMaxWidth()) {
-                            Text("⭐ " + stringResource(R.string.tact_title))
-                        }
-                    }
-                }
-                return@Column
-            }
             if (term == 3) {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(vertical = 4.dp)) {
                     FilterChip(
