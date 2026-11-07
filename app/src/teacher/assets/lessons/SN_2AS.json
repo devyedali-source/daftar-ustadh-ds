@@ -33,21 +33,35 @@
     {
      "h": "Définition",
      "lines": [
-      "Fonction vitale : former de nouveaux individus",
-      "Assure la survie de l’espèce"
-     ]
+      "La reproduction est une fonction vitale qui permet aux êtres vivants de former de nouveaux individus pour assurer la survie de leur espèce."
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.234,
+       0.189,
+       0.771,
+       0.764
+      ],
+      "caption": "Les étapes de la reproduction sexuée"
+     }
     },
     {
-     "h": "Deux modes",
-     "lines": [
-      "Asexuée : un seul parent → clones",
-      "Sexuée : mâle + femelle → fécondation"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelle est la différence entre reproduction asexuée et sexuée ?"
+     "h": "Deux modes de reproduction",
+     "lines": [],
+     "table": [
+      [
+       "Mode",
+       "Principe"
+      ],
+      [
+       "Asexuée",
+       "Un seul individu donne naissance à des clones, sans cellules mâles ni femelles"
+      ],
+      [
+       "Sexuée",
+       "Un mâle et une femelle produisent des cellules reproductrices qui s’unissent lors de la fécondation"
+      ]
      ]
     }
    ]
@@ -80,29 +94,40 @@
    },
    "board": [
     {
-     "h": "Scissiparité",
+     "h": "La scissiparité",
      "lines": [
-      "Le parent se divise en deux individus identiques",
-      "Amibe, paramécie"
-     ]
+      "Le parent se scinde en deux individus de même taille qui régénèrent la partie manquante (division ou fission binaire).",
+      "Ni gamètes ni fécondation : multiplication rapide mais sans diversité génétique.",
+      "Fréquente chez les protozoaires : amibe, paramécie…"
+     ],
+     "fig": {
+      "page": 11,
+      "rect": [
+       0.21,
+       0.512,
+       0.79,
+       0.603
+      ],
+      "caption": "Multiplication par scissiparité chez l’amibe"
+     }
     },
     {
-     "h": "Bourgeonnement",
+     "h": "Le bourgeonnement",
      "lines": [
-      "Hydre, coraux, éponges"
-     ]
-    },
-    {
-     "h": "Caractères",
-     "lines": [
-      "Ni gamètes ni fécondation – des clones"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux animaux qui se reproduisent par scissiparité."
-     ]
+      "Un bourgeon se forme sur l’individu et donne un nouvel individu.",
+      "Il produit des clones (individus génétiquement identiques).",
+      "Observé chez l’hydre, les coraux, les éponges."
+     ],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.152,
+       0.312,
+       0.848,
+       0.494
+      ],
+      "caption": "Le bourgeonnement chez l’hydre"
+     }
     }
    ]
   },
@@ -134,23 +159,52 @@
    "board": [
     {
      "h": "Les gamètes",
-     "lines": [
-      "Spermatozoïde : petit, mobile, nombreux – testicules",
-      "Ovule : gros, immobile, peu nombreux – ovaires"
-     ]
+     "lines": [],
+     "table": [
+      [
+       "Gamète",
+       "Caractères",
+       "Produit par"
+      ],
+      [
+       "Spermatozoïde (mâle)",
+       "Petit, mobile, nombreux",
+       "Les testicules"
+      ],
+      [
+       "Ovule (femelle)",
+       "Gros, immobile, peu nombreux",
+       "Les ovaires"
+      ]
+     ],
+     "fig": {
+      "page": 15,
+      "rect": [
+       0.218,
+       0.7,
+       0.785,
+       0.932
+      ],
+      "caption": "Spermatozoïde et ovule"
+     }
     },
     {
      "h": "La fécondation",
      "lines": [
-      "Spermatozoïde + ovule → cellule-œuf (zygote)",
-      "Interne ou externe"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Où sont produits les spermatozoïdes et les ovules ?"
-     ]
+      "C’est la rencontre d’un spermatozoïde et d’un ovule : elle forme une cellule-œuf (zygote) qui donne un nouvel individu.",
+      "Elle peut être interne (dans le corps de la femelle) ou externe (dans l’eau).",
+      "La reproduction sexuée entraîne une diversité génétique par le mélange des patrimoines des deux parents."
+     ],
+     "fig": {
+      "page": 16,
+      "rect": [
+       0.567,
+       0.062,
+       0.907,
+       0.236
+      ],
+      "caption": "La fécondation"
+     }
     }
    ]
   },
@@ -181,24 +235,63 @@
    },
    "board": [
     {
-     "h": "La poule",
+     "h": "Chez la volaille",
      "lines": [
-      "Fécondation interne dans l’oviducte",
-      "Jaune + blanc + coquille → œuf pondu",
-      "Incubation : 21 jours"
-     ]
+      "Poule : ovaire, oviducte, cloaque. Coq : testicules, spermiductes, cloaque (caractères sexuels primaires).",
+      "Caractères sexuels secondaires du coq : crête, barbillons, queue développée, ergot.",
+      "Après la parade nuptiale, les spermatozoïdes passent par les cloaques en contact ; fécondation interne dans l’oviducte."
+     ],
+     "fig": {
+      "page": 17,
+      "rect": [
+       0.424,
+       0.739,
+       0.896,
+       0.936
+      ],
+      "caption": "Appareils reproducteurs du coq et de la poule"
+     }
+    },
+    {
+     "h": "Formation de l’œuf et développement",
+     "lines": [
+      "L’ovule fécondé (le jaune) descend dans l’oviducte et s’entoure du blanc, de membranes et d’une coquille calcaire.",
+      "Incubation (couvaison) : 21 jours ; l’embryon se nourrit des réserves de l’œuf.",
+      "À l’éclosion, le poussin casse la coquille avec le diamant du bec."
+     ],
+     "fig": {
+      "page": 18,
+      "rect": [
+       0.092,
+       0.416,
+       0.91,
+       0.922
+      ],
+      "caption": "Trajet de l’ovule et formation de l’œuf"
+     }
     },
     {
      "h": "La grenouille",
      "lines": [
-      "Fécondation externe dans l’eau",
-      "Œuf → têtard → métamorphose → jeune grenouille"
-     ]
+      "Accouplement sans organe copulateur (amplexus) ; la femelle pond dans l’eau et le mâle féconde les œufs : fécondation externe.",
+      "Métamorphose : têtard à branchies → pattes postérieures puis antérieures → poumons → disparition de la queue → jeune grenouille."
+     ],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.105,
+       0.588,
+       0.895,
+       0.891
+      ],
+      "caption": "Métamorphose de la grenouille"
+     }
     },
     {
-     "h": "Application",
+     "h": "Caractères du mode ovipare",
      "lines": [
-      "La fécondation chez la grenouille est-elle interne ou externe ? Justifie."
+      "Fécondation interne (oiseaux) ; développement externe dans un œuf pondu contenant des réserves ; éclosion hors du corps de la mère.",
+      "Typique des oiseaux, des reptiles et de certains poissons."
      ]
     }
    ]
@@ -230,23 +323,50 @@
    },
    "board": [
     {
-     "h": "Vivipare : la vache",
+     "h": "Appareils génitaux (taureau, vache)",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Organes externes",
+       "Organes internes"
+      ],
+      [
+       "Mâle (taureau)",
+       "Pénis, prépuce, scrotum",
+       "Testicules, épididymes, canaux déférents, glandes annexes"
+      ],
+      [
+       "Femelle (vache)",
+       "Vulve, vestibule vaginal",
+       "Vagin, col de l’utérus, utérus, trompes, ovaires"
+      ]
+     ],
+     "fig": {
+      "page": 26,
+      "rect": [
+       0.213,
+       0.235,
+       0.483,
+       0.456
+      ],
+      "caption": "Appareil reproducteur de la vache"
+     }
+    },
+    {
+     "h": "La viviparité",
      "lines": [
-      "Fécondation interne",
-      "Gestation dans l’utérus → petit déjà formé"
+      "Accouplement et fécondation interne.",
+      "L’embryon se développe dans l’utérus de la mère : c’est la gestation.",
+      "À la fin de la gestation, la femelle donne naissance à un petit entièrement formé."
      ]
     },
     {
-     "h": "Ovovivipare : le serpent",
+     "h": "L’ovoviviparité (serpents)",
      "lines": [
-      "Fécondation interne",
-      "Œufs gardés dans l’oviducte, éclosion dans le ventre"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelle est la différence entre un vivipare et un ovovivipare ?"
+      "Fécondation interne ; les œufs riches en réserves restent dans l’oviducte (chambre d’incubation).",
+      "Ils éclosent dans le ventre de la femelle : les petits naissent formés.",
+      "Les échanges avec la mère sont limités (surtout des gaz)."
      ]
     }
    ]
@@ -278,25 +398,65 @@
    },
    "board": [
     {
-     "h": "Techniques",
+     "h": "Multiplication végétative",
      "lines": [
-      "Marcottage : la marcotte s’enracine avant d’être séparée",
-      "Bouturage : fragment de tige, feuille ou racine planté",
-      "Greffage : greffon soudé sur un porte-greffe",
-      "Bourgeonnement : pomme de terre, oignon, cactus"
+      "Multiplication à partir des tissus végétatifs de la plante mère : organes non spécialisés (tiges, racines, feuilles) ou spécialisés (tubercules, stolons, racines drageonnantes)."
      ]
     },
     {
-     "h": "Résultat",
-     "lines": [
-      "Plantes génétiquement identiques à la plante mère"
-     ]
+     "h": "Les techniques",
+     "lines": [],
+     "table": [
+      [
+       "Technique",
+       "Principe",
+       "Exemple"
+      ],
+      [
+       "Marcottage",
+       "Une partie de la plante s’enracine avant d’être séparée de la plante mère",
+       "Menthe"
+      ],
+      [
+       "Bouturage",
+       "Un fragment (tige, feuille, racine) est planté dans un milieu favorable",
+       "Figuier"
+      ],
+      [
+       "Greffage",
+       "Un greffon est soudé sur un porte-greffe qui lui fournit sève et racines",
+       "Pommier"
+      ],
+      [
+       "Bourgeonnement",
+       "Un bourgeon se développe sur un organe et donne un nouvel individu",
+       "Pomme de terre, oignon, cactus"
+      ]
+     ],
+     "fig": {
+      "page": 37,
+      "rect": [
+       0.212,
+       0.281,
+       0.788,
+       0.623
+      ],
+      "caption": "Marcottage chez la menthe"
+     }
     },
     {
-     "h": "Application",
-     "lines": [
-      "Qu’est-ce que le greffage ?"
-     ]
+     "h": "Exemples",
+     "lines": [],
+     "fig": {
+      "page": 40,
+      "rect": [
+       0.31,
+       0.193,
+       0.691,
+       0.488
+      ],
+      "caption": "Étapes du greffage chez le pommier"
+     }
     }
    ]
   },
@@ -326,22 +486,50 @@
    },
    "board": [
     {
-     "h": "Pièces protectrices",
-     "lines": [
-      "Sépales (calice) – pétales (corolle)"
-     ]
+     "h": "Les pièces florales",
+     "lines": [],
+     "table": [
+      [
+       "Pièce",
+       "Description",
+       "Ensemble"
+      ],
+      [
+       "Sépales",
+       "Pièces vertes protectrices",
+       "Calice"
+      ],
+      [
+       "Pétales",
+       "Souvent colorés, attirent les pollinisateurs",
+       "Corolle"
+      ],
+      [
+       "Étamines",
+       "Organes mâles : anthère (pollen) + filet",
+       "Androcée"
+      ],
+      [
+       "Pistil",
+       "Organe femelle : stigmate, style, ovaire (ovules)",
+       "Gynécée"
+      ]
+     ],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.252,
+       0.572,
+       0.749,
+       0.817
+      ],
+      "caption": "Coupe d’une fleur"
+     }
     },
     {
-     "h": "Pièces reproductrices",
+     "h": "À retenir",
      "lines": [
-      "Étamines (mâles) : anthère + filet → pollen",
-      "Pistil (femelle) : stigmate + style + ovaire → ovules"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quel est l’organe mâle de la fleur ? Que produit-il ?"
+      "La fleur est l’organe reproducteur des Spermaphytes ; calice + corolle = périanthe."
      ]
     }
    ]
@@ -375,26 +563,41 @@
     {
      "h": "Définition",
      "lines": [
-      "Transport du pollen des anthères vers le stigmate"
-     ]
+      "Quand la fleur s’épanouit, les anthères mûres s’ouvrent et libèrent les grains de pollen qui gagnent le stigmate."
+     ],
+     "fig": {
+      "page": 45,
+      "rect": [
+       0.32,
+       0.197,
+       0.681,
+       0.376
+      ],
+      "caption": "Pollinisation directe et pollinisation par un insecte"
+     }
     },
     {
-     "h": "Modes",
-     "lines": [
-      "Autopollinisation (directe)",
-      "Pollinisation croisée (indirecte)"
+     "h": "Modes de pollinisation",
+     "lines": [],
+     "table": [
+      [
+       "Mode",
+       "Principe"
+      ],
+      [
+       "Autopollinisation (directe)",
+       "Pollen de la même fleur ou de la même plante"
+      ],
+      [
+       "Pollinisation croisée (indirecte)",
+       "Pollen d’une fleur d’une autre plante"
+      ]
      ]
     },
     {
      "h": "Agents",
      "lines": [
-      "Vent – insectes – eau – autres animaux"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux agents de la pollinisation."
+      "Le vent, les insectes (abeilles, papillons…), l’eau et d’autres animaux (chauves-souris…)."
      ]
     }
    ]
@@ -425,22 +628,11 @@
    },
    "board": [
     {
-     "h": "Les gamètes",
-     "lines": [
-      "Mâle : anthérozoïde (dans le grain de pollen)",
-      "Femelle : oosphère (dans l’ovule)"
-     ]
-    },
-    {
      "h": "La fécondation",
      "lines": [
-      "Anthérozoïde + oosphère → œuf → germe de la graine"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment s’appelle le gamète femelle chez la plante à fleurs ? Où se trouve-t-il ?"
+      "Union d’un gamète mâle (anthérozoïde, issu du grain de pollen) et d’un gamète femelle (oosphère, dans l’ovule).",
+      "L’œuf formé donne le germe de la graine, puis la nouvelle plante.",
+      "La formation des graines résulte donc d’une reproduction sexuée."
      ]
     }
    ]
@@ -471,24 +663,22 @@
    },
    "board": [
     {
-     "h": "Organes",
+     "h": "Reproduction du Fucus",
      "lines": [
-      "Conceptacles",
-      "Anthéridies (mâles) : 64 anthérozoïdes",
-      "Oogones (femelles) : 8 oosphères"
-     ]
-    },
-    {
-     "h": "Fécondation",
-     "lines": [
-      "Externe, dans l’eau de mer → zygote → nouveau Fucus"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "La fécondation du Fucus est-elle interne ou externe ?"
-     ]
+      "Il existe des pieds mâles et des pieds femelles.",
+      "Des conceptacles contiennent des anthéridies (64 anthérozoïdes à deux flagelles) chez le mâle, des oogones (8 oosphères) chez la femelle.",
+      "Au printemps, les gamètes sont libérés dans l’eau de mer : la fécondation est externe ; le zygote donne un nouveau thalle."
+     ],
+     "fig": {
+      "page": 47,
+      "rect": [
+       0.234,
+       0.673,
+       0.767,
+       0.869
+      ],
+      "caption": "Cycle de reproduction du Fucus"
+     }
     }
    ]
   },
@@ -518,24 +708,52 @@
    },
    "board": [
     {
-     "h": "Éléments figurés (45 %)",
-     "lines": [
-      "Globules rouges : transportent l’oxygène",
-      "Globules blancs : défendent l’organisme",
-      "Plaquettes : coagulation"
-     ]
+     "h": "Un tissu liquide",
+     "lines": [],
+     "table": [
+      [
+       "Partie",
+       "Proportion",
+       "Composition et rôle"
+      ],
+      [
+       "Éléments figurés",
+       "45 %",
+       "Globules rouges (transport de l’oxygène), globules blancs (défense), plaquettes (coagulation)"
+      ],
+      [
+       "Plasma",
+       "55 %",
+       "Eau, sels minéraux, protéines, nutriments, déchets (CO₂, urée, acide urique)"
+      ]
+     ],
+     "fig": {
+      "page": 58,
+      "rect": [
+       0.234,
+       0.44,
+       0.628,
+       0.726
+      ],
+      "caption": "Sang centrifugé et éléments figurés"
+     }
     },
     {
-     "h": "Plasma (55 %)",
+     "h": "Observations",
      "lines": [
-      "Eau, sels minéraux, protéines, nutriments, déchets"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quel est le rôle des globules blancs ? Et des plaquettes ?"
-     ]
+      "Le sang non coagulé se sépare en plasma (en haut), couche blanche (globules blancs) et dépôt rouge (globules rouges).",
+      "Sans anticoagulant, le sang coagule : caillot (cellules + fibrine) et sérum (plasma sans fibrinogène)."
+     ],
+     "fig": {
+      "page": 57,
+      "rect": [
+       0.574,
+       0.357,
+       0.904,
+       0.503
+      ],
+      "caption": "Composition d’un vaisseau sanguin"
+     }
     }
    ]
   },
@@ -566,23 +784,56 @@
    },
    "board": [
     {
-     "h": "Groupes ABO",
-     "lines": [
-      "A : antigène A – B : antigène B",
-      "AB : antigènes A et B → receveur universel",
-      "O : sans antigène → donneur universel"
-     ]
+     "h": "Le système ABO",
+     "lines": [],
+     "table": [
+      [
+       "Groupe",
+       "Antigènes (globules rouges)",
+       "Anticorps (plasma)",
+       "Remarque"
+      ],
+      [
+       "A",
+       "A",
+       "Anti-B",
+       ""
+      ],
+      [
+       "B",
+       "B",
+       "Anti-A",
+       ""
+      ],
+      [
+       "AB",
+       "A et B",
+       "Aucun",
+       "Receveur universel"
+      ],
+      [
+       "O",
+       "Aucun",
+       "Anti-A et anti-B",
+       "Donneur universel"
+      ]
+     ],
+     "fig": {
+      "page": 61,
+      "rect": [
+       0.173,
+       0.157,
+       0.828,
+       0.424
+      ],
+      "caption": "Les groupes sanguins"
+     }
     },
     {
-     "h": "Rhésus",
+     "h": "Le facteur Rhésus",
      "lines": [
-      "Rh+ : antigène D présent – Rh− : absent"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quel groupe est donneur universel ? Lequel est receveur universel ?"
+      "Rh+ : antigène D présent ; Rh− : antigène D absent.",
+      "La compatibilité des groupes est essentielle lors des transfusions."
      ]
     }
    ]
@@ -617,31 +868,66 @@
    },
    "board": [
     {
-     "h": "Le cœur",
+     "h": "Structure du cœur",
      "lines": [
-      "2 oreillettes (haut) + 2 ventricules (bas)",
-      "Cœur droit : sang riche en CO₂ – cœur gauche : sang riche en O₂"
+      "Trois tissus : péricarde (enveloppe), myocarde (muscle), endocarde (couche interne).",
+      "Un sillon transversal sépare les oreillettes (en haut) des ventricules (en bas, plus musclés).",
+      "Un sillon vertical sépare le cœur droit (sang riche en CO₂) du cœur gauche (sang riche en O₂) ; ils ne communiquent pas."
+     ],
+     "fig": {
+      "page": 64,
+      "rect": [
+       0.372,
+       0.067,
+       0.909,
+       0.381
+      ],
+      "caption": "Coupe du cœur humain"
+     }
+    },
+    {
+     "h": "Circulation dans le cœur",
+     "lines": [
+      "Toujours : veines → oreillettes → ventricules → artères.",
+      "Cœur gauche : entrée par les veines pulmonaires, sortie par l’aorte ; cœur droit : entrée par les veines caves, sortie par l’artère pulmonaire.",
+      "Valvules : tricuspide (à droite), mitrale (à gauche), sigmoïdes (à la sortie des ventricules)."
      ]
     },
     {
-     "h": "Sens de la circulation",
-     "lines": [
-      "Veines → oreillettes → ventricules → artères (valvules)",
-      "Artères : cœur → organes – veines : organes → cœur"
-     ]
-    },
-    {
-     "h": "Deux circulations",
-     "lines": [
-      "Grande : ventricule gauche → organes → oreillette droite",
-      "Petite : ventricule droit → poumons → oreillette gauche"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quel est le trajet de la petite circulation ?"
-     ]
+     "h": "Les vaisseaux",
+     "lines": [],
+     "table": [
+      [
+       "Vaisseau",
+       "Sens",
+       "Exemples"
+      ],
+      [
+       "Artères",
+       "Du cœur vers les organes",
+       "Aorte (sang riche en O₂), artère pulmonaire (sang riche en CO₂), coronaires"
+      ],
+      [
+       "Veines",
+       "Des organes vers le cœur",
+       "Veines caves, veines pulmonaires, veine porte, veines coronaires"
+      ],
+      [
+       "Capillaires",
+       "Relais entre artères et veines",
+       "—"
+      ]
+     ],
+     "fig": {
+      "page": 73,
+      "rect": [
+       0.095,
+       0.197,
+       0.906,
+       0.794
+      ],
+      "caption": "Grande et petite circulation"
+     }
     }
    ]
   },
@@ -673,23 +959,51 @@
    },
    "board": [
     {
-     "h": "Automatisme",
+     "h": "L’automatisme cardiaque",
      "lines": [
-      "Le cœur se contracte seul, de façon rythmée"
+      "Le cœur se contracte spontanément et rythmiquement, même isolé, sans commande du cerveau ; il fonctionne comme deux pompes accolées."
      ]
     },
     {
-     "h": "Révolution cardiaque",
-     "lines": [
-      "Systole auriculaire : oreillettes → ventricules",
-      "Systole ventriculaire : ventricules → artères",
-      "Diastole générale : relâchement, remplissage"
-     ]
+     "h": "La révolution cardiaque",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Ce qui se passe"
+      ],
+      [
+       "Systole auriculaire",
+       "Les oreillettes se contractent ; le sang passe dans les ventricules"
+      ],
+      [
+       "Systole ventriculaire",
+       "Les ventricules se contractent ; le sang est propulsé dans les artères"
+      ],
+      [
+       "Diastole générale",
+       "Relâchement ; le sang remplit les oreillettes"
+      ]
+     ],
+     "fig": {
+      "page": 70,
+      "rect": [
+       0.436,
+       0.348,
+       0.9,
+       0.55
+      ],
+      "caption": "Enregistrement de l’activité cardiaque"
+     }
     },
     {
-     "h": "Application",
+     "h": "Paramètres",
      "lines": [
-      "Cite dans l’ordre les trois phases de la révolution cardiaque."
+      "Fréquence cardiaque : environ 70 battements/min au repos chez l’adulte.",
+      "Débit cardiaque = volume éjecté par battement × fréquence.",
+      "Tension artérielle : systolique 12 cm Hg, diastolique 8 cm Hg.",
+      "Pouls : battement ressenti sur une artère superficielle.",
+      "L’activité du cœur s’enregistre avec un électrocardiographe."
      ]
     }
    ]
@@ -723,21 +1037,26 @@
     {
      "h": "Facteurs défavorables",
      "lines": [
-      "Tabagisme – sédentarité",
-      "Excès de graisses, de sel, de sucre – stress"
-     ]
+      "Tabagisme, sédentarité, alimentation trop riche en graisses et en sel, excès de sucre, stress permanent."
+     ],
+     "fig": {
+      "page": 74,
+      "rect": [
+       0.091,
+       0.308,
+       0.897,
+       0.777
+      ],
+      "caption": "Mesure de la tension artérielle"
+     }
     },
     {
-     "h": "Mesures d’hygiène",
+     "h": "Règles d’hygiène",
      "lines": [
-      "Activité physique régulière – manger sainement",
-      "Ne pas fumer – limiter le stress, bien dormir"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux facteurs défavorables au cœur et deux mesures d’hygiène."
+      "Pratiquer une activité physique régulière.",
+      "Manger sainement (éviter les graisses saturées).",
+      "Ne pas fumer.",
+      "Limiter le stress et bien dormir."
      ]
     }
    ]
@@ -770,21 +1089,57 @@
     {
      "h": "Constituants normaux",
      "lines": [
-      "Eau – sels minéraux – urée – acide urique"
-     ]
+      "Eau et sels minéraux.",
+      "Constituants organiques : urée (30 g), acide urique (1 g) ; l’urée provient de la « combustion » des protéines.",
+      "Traces : hormones, vitamines, médicaments…"
+     ],
+     "fig": {
+      "page": 88,
+      "rect": [
+       0.608,
+       0.297,
+       0.908,
+       0.555
+      ],
+      "caption": "Mise en évidence de l’urée dans l’urine"
+     }
     },
     {
      "h": "Constituants anormaux",
-     "lines": [
-      "Glucose → diabète",
-      "Albumine → albuminurie",
-      "Cristaux, globules, pigments biliaires"
-     ]
+     "lines": [],
+     "table": [
+      [
+       "Constituant",
+       "Signification"
+      ],
+      [
+       "Glucose",
+       "Diabète"
+      ],
+      [
+       "Albumine",
+       "Albuminurie"
+      ],
+      [
+       "Cristaux, globules, pigments biliaires",
+       "Pathologies rénales, métaboliques ou infectieuses"
+      ]
+     ],
+     "fig": {
+      "page": 89,
+      "rect": [
+       0.47,
+       0.406,
+       0.902,
+       0.66
+      ],
+      "caption": "Recherche du glucose dans l’urine"
+     }
     },
     {
-     "h": "Application",
+     "h": "NB",
      "lines": [
-      "Que signifie la présence de glucose dans l’urine ?"
+      "Deux analyses fréquentes : la recherche d’albumine et de glucose dans l’urine."
      ]
     }
    ]
@@ -815,22 +1170,46 @@
    },
    "board": [
     {
-     "h": "Les reins",
-     "lines": [
-      "Deux reins en forme de haricot – fabriquent l’urine"
-     ]
+     "h": "Organisation",
+     "lines": [],
+     "table": [
+      [
+       "Organe",
+       "Rôle"
+      ],
+      [
+       "2 reins (en forme de haricot)",
+       "Formation de l’urine"
+      ],
+      [
+       "2 uretères",
+       "Conduisent l’urine des reins à la vessie"
+      ],
+      [
+       "La vessie",
+       "Réservoir d’urine"
+      ],
+      [
+       "L’urètre",
+       "Évacue l’urine vers l’extérieur"
+      ]
+     ],
+     "fig": {
+      "page": 85,
+      "rect": [
+       0.297,
+       0.106,
+       0.909,
+       0.566
+      ],
+      "caption": "L’appareil urinaire"
+     }
     },
     {
-     "h": "Les voies urinaires",
+     "h": "Le rein",
      "lines": [
-      "Uretères : reins → vessie",
-      "Vessie : réservoir – urètre : évacuation"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quel organe conduit l’urine du rein à la vessie ?"
+      "Deux pôles (le supérieur porte la glande surrénale), deux faces, deux bords.",
+      "Le hile laisse passer l’artère et la veine rénales et les conduits excréteurs."
      ]
     }
    ]
@@ -861,23 +1240,22 @@
    },
    "board": [
     {
-     "h": "Le néphron",
+     "h": "Unité de base du rein",
      "lines": [
-      "Unité de base du rein"
-     ]
-    },
-    {
-     "h": "Structure",
-     "lines": [
-      "Corpuscule rénal : glomérule + capsule de Bowman",
-      "Tube contourné proximal → anse de Henlé → tube contourné distal → tube collecteur"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les deux parties du corpuscule rénal."
-     ]
+      "Corpuscule rénal : glomérule + capsule de Bowman.",
+      "Système tubulaire : tube contourné proximal, anse de Henlé, tube contourné distal.",
+      "Il se termine dans un tube collecteur."
+     ],
+     "fig": {
+      "page": 86,
+      "rect": [
+       0.149,
+       0.52,
+       0.852,
+       0.935
+      ],
+      "caption": "Schéma d’un néphron"
+     }
     }
    ]
   },
@@ -910,22 +1288,34 @@
     {
      "h": "Formation de l’urine",
      "lines": [
-      "Filtration (glomérule) → urine primitive",
-      "Réabsorption des éléments utiles",
-      "Sécrétion → urine définitive"
+      "Le sang arrive par l’artère rénale et se ramifie en capillaires dans les néphrons.",
+      "Filtration : l’eau, les déchets et certaines substances traversent les capillaires : urine primitive.",
+      "Réabsorption des éléments utiles puis sécrétion : urine définitive, concentrée, sans protéines ni glucose."
+     ],
+     "fig": {
+      "page": 94,
+      "rect": [
+       0.156,
+       0.087,
+       0.844,
+       0.7
+      ],
+      "caption": "Régions actives du néphron"
+     }
+    },
+    {
+     "h": "Les rôles du rein",
+     "lines": [
+      "Organe épurateur : élimine les produits nuisibles.",
+      "Organe régulateur du milieu intérieur (eau et sels).",
+      "Fonction de synthèse (ammoniaque)."
      ]
     },
     {
-     "h": "Rôles du rein",
+     "h": "Trajet de l’urine",
      "lines": [
-      "Épurer le sang",
-      "Maintenir la constance du milieu intérieur"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment s’appelle le liquide obtenu après la filtration du sang ?"
+      "Rein → uretères → vessie → urètre (miction).",
+      "Le besoin d’uriner apparaît vers 250 mL ; une augmentation anormale du volume urinaire est la polyurie."
      ]
     }
    ]
@@ -956,23 +1346,19 @@
    },
    "board": [
     {
-     "h": "Risques",
+     "h": "Pour préserver les reins",
      "lines": [
-      "Accumulation de déchets toxiques – calculs – infections"
+      "Boire suffisamment d’eau (éviter calculs et infections).",
+      "Éviter les excès de protides, de sucre, de sel et de médicaments.",
+      "Uriner régulièrement.",
+      "Maintenir une bonne hygiène intime.",
+      "Limiter la fatigue excessive."
      ]
     },
     {
-     "h": "Mesures d’hygiène",
+     "h": "À retenir",
      "lines": [
-      "Boire suffisamment d’eau – uriner régulièrement",
-      "Éviter les excès de sel, de sucre, de médicaments",
-      "Bonne hygiène intime"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux mesures pour protéger les reins."
+      "Un mauvais fonctionnement des reins accumule des déchets toxiques dans le sang et dérègle l’eau et les sels du corps."
      ]
     }
    ]
@@ -1004,30 +1390,58 @@
    },
    "board": [
     {
-     "h": "Écosystème",
+     "h": "L’écosystème",
      "lines": [
-      "Biotope (milieu physique) + biocénose (êtres vivants)"
+      "Écosystème = biotope (milieu physique : air, lumière, sol, eau) + biocénose (êtres vivants en interaction)."
+     ],
+     "fig": {
+      "page": 107,
+      "rect": [
+       0.243,
+       0.3,
+       0.757,
+       0.828
+      ],
+      "caption": "Un écosystème terrestre"
+     }
+    },
+    {
+     "h": "La biocénose",
+     "lines": [],
+     "table": [
+      [
+       "Rôle",
+       "Êtres vivants"
+      ],
+      [
+       "Producteurs",
+       "Plantes vertes (photosynthèse)"
+      ],
+      [
+       "Consommateurs",
+       "Herbivores, carnivores, omnivores"
+      ],
+      [
+       "Décomposeurs",
+       "Champignons, vers, bactéries (recyclent la matière morte)"
+      ]
      ]
     },
     {
-     "h": "Biocénose",
+     "h": "L’écosystème océanique",
      "lines": [
-      "Producteurs : plantes vertes",
-      "Consommateurs : herbivores, carnivores, omnivores",
-      "Décomposeurs : champignons, vers, bactéries"
-     ]
-    },
-    {
-     "h": "Exemples",
-     "lines": [
-      "Terrestres : forêts, déserts, prairies – océaniques : milieu marin"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les trois catégories d’êtres vivants d’une biocénose."
-     ]
+      "Milieu marin d’eau salée qui joue un rôle crucial dans la régulation du climat et la production d’oxygène."
+     ],
+     "fig": {
+      "page": 110,
+      "rect": [
+       0.092,
+       0.173,
+       0.909,
+       0.749
+      ],
+      "caption": "L’écosystème océanique"
+     }
     }
    ]
   },
@@ -1057,24 +1471,59 @@
    },
    "board": [
     {
-     "h": "Banc d’Arguin (PNBA)",
-     "lines": [
-      "Créé en 1976 – 12 000 km² – 1/3 du littoral",
-      "Site RAMSAR, Patrimoine mondial – pêche des Imraguen"
-     ]
+     "h": "Les deux parcs nationaux",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Parc National du Banc d’Arguin (PNBA)",
+       "Parc National du Diawling (PND)"
+      ],
+      [
+       "Création",
+       "1976",
+       "1991"
+      ],
+      [
+       "Superficie",
+       "12 000 km² (un tiers du littoral)",
+       "16 000 hectares (bas delta du fleuve Sénégal)"
+      ],
+      [
+       "Classements",
+       "Ramsar, Patrimoine mondial (UNESCO), « Don à la Terre » (WWF)",
+       "Site Ramsar (1994), Réserve de biosphère transfrontière (2005)"
+      ],
+      [
+       "Particularités",
+       "Herbiers marins, upwelling, moteurs interdits ; pêche traditionnelle des Imraguen",
+       "Restaurer l’écosystème dégradé par les barrages et les sécheresses"
+      ]
+     ],
+     "fig": {
+      "page": 112,
+      "rect": [
+       0.495,
+       0.753,
+       0.907,
+       0.868
+      ],
+      "caption": "Le Banc d’Arguin et la pêche Imraguen"
+     }
     },
     {
-     "h": "Diawling (PND)",
-     "lines": [
-      "Créé en 1991 – bas delta du fleuve Sénégal – 16 000 ha",
-      "Restaurer l’écosystème, préserver la biodiversité"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "En quelle année a été créé le PNBA ? Quelle communauté y pêche ?"
-     ]
+     "h": "Le Diawling",
+     "lines": [],
+     "fig": {
+      "page": 114,
+      "rect": [
+       0.43,
+       0.181,
+       0.884,
+       0.302
+      ],
+      "caption": "Le parc national du Diawling"
+     }
     }
    ]
   },
@@ -1105,28 +1554,40 @@
    },
    "board": [
     {
-     "h": "Exemple",
-     "lines": [
-      "Lacs d’Aleg et de Mâl (Brakna) – zones humides temporaires"
-     ]
+     "h": "Deux zones humides temporaires (Brakna)",
+     "lines": [],
+     "table": [
+      [
+       "Lac",
+       "Caractères",
+       "Usages"
+      ],
+      [
+       "Aleg",
+       "Dépression fermée près d’Aleg, remplie lors des crues ; oiseaux d’eau migrateurs",
+       "Abreuvement du bétail, agriculture en saison humide"
+      ],
+      [
+       "Mâl",
+       "Plus au sud, fonctionnement semblable ; réservoir d’eau important",
+       "Élevage, pêche artisanale, agriculture"
+      ]
+     ],
+     "fig": {
+      "page": 115,
+      "rect": [
+       0.091,
+       0.539,
+       0.373,
+       0.7
+      ],
+      "caption": "Le lac d’Aleg"
+     }
     },
     {
-     "h": "Importance",
+     "h": "À retenir",
      "lines": [
-      "Biodiversité : oiseaux d’eau migrateurs",
-      "Élevage, agriculture, pêche artisanale"
-     ]
-    },
-    {
-     "h": "Menaces",
-     "lines": [
-      "Changements climatiques – pression humaine"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux utilisations du lac d’Aleg par les populations."
+      "Ces lacs saisonniers maintiennent la biodiversité locale et les moyens de subsistance ; ils sont sensibles au climat et à la pression humaine."
      ]
     }
    ]
@@ -1160,21 +1621,47 @@
     {
      "h": "Définition",
      "lines": [
-      "Suite d’êtres vivants : chacun mange le précédent"
-     ]
+      "Suite d’êtres vivants dont chacun se nourrit du précédent et sert de nourriture au suivant ; elle montre le transfert d’énergie des producteurs aux consommateurs."
+     ],
+     "fig": {
+      "page": 117,
+      "rect": [
+       0.217,
+       0.69,
+       0.784,
+       0.889
+      ],
+      "caption": "Une chaîne alimentaire : plante → lapin → renard"
+     }
     },
     {
-     "h": "Maillons",
-     "lines": [
-      "Producteurs : plantes vertes",
-      "Consommateurs : primaires (herbivores), secondaires, tertiaires",
-      "Décomposeurs : champignons, bactéries, vers"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Dans la chaîne herbe → gazelle → lion, quel est le consommateur primaire ?"
+     "h": "Les maillons",
+     "lines": [],
+     "table": [
+      [
+       "Maillon",
+       "Exemples"
+      ],
+      [
+       "Producteurs",
+       "Plantes vertes"
+      ],
+      [
+       "Consommateurs primaires",
+       "Herbivores : lapin, gazelle"
+      ],
+      [
+       "Consommateurs secondaires",
+       "Carnivores : renard"
+      ],
+      [
+       "Consommateurs tertiaires",
+       "Grands prédateurs : aigle, lion"
+      ],
+      [
+       "Décomposeurs",
+       "Champignons, bactéries, vers"
+      ]
      ]
     }
    ]
@@ -1205,23 +1692,71 @@
    },
    "board": [
     {
-     "h": "Réseau trophique",
+     "h": "Le réseau trophique",
      "lines": [
-      "Ensemble de chaînes alimentaires reliées entre elles"
-     ]
+      "Ensemble de chaînes alimentaires reliées entre elles dans un écosystème ; plus complexe qu’une simple chaîne."
+     ],
+     "fig": {
+      "page": 119,
+      "rect": [
+       0.317,
+       0.54,
+       0.684,
+       0.913
+      ],
+      "caption": "Réseau trophique en Afrique"
+     }
     },
     {
-     "h": "Interactions",
-     "lines": [
-      "Intraspécifiques : effet de groupe, effet de masse",
-      "Interspécifiques : parasitisme, symbiose, commensalisme"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Qu’est-ce qu’un réseau trophique ?"
-     ]
+     "h": "Les interactions",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Interaction",
+       "Définition"
+      ],
+      [
+       "Intraspécifique",
+       "Effet de groupe",
+       "Transformations des individus groupés"
+      ],
+      [
+       "Intraspécifique",
+       "Effet de masse",
+       "Réduction du nombre d’individus dans un milieu surpeuplé"
+      ],
+      [
+       "Interspécifique",
+       "Parasitisme",
+       "Un parasite vit aux dépens d’un hôte"
+      ],
+      [
+       "Interspécifique",
+       "Symbiose (mutualisme)",
+       "Bénéfice réciproque"
+      ],
+      [
+       "Interspécifique",
+       "Commensalisme",
+       "Un seul en profite sans nuire à l’autre"
+      ],
+      [
+       "Interspécifique",
+       "Prédation",
+       "Se nourrir d’un autre en provoquant sa mort"
+      ]
+     ],
+     "fig": {
+      "page": 121,
+      "rect": [
+       0.214,
+       0.482,
+       0.786,
+       0.71
+      ],
+      "caption": "Parasitisme, symbiose, prédation"
+     }
     }
    ]
   },
@@ -1251,28 +1786,32 @@
    },
    "board": [
     {
-     "h": "Définitions",
+     "h": "Définition",
      "lines": [
-      "Sédiment : fragment transporté par l’eau, le vent ou la glace",
-      "Roche sédimentaire : accumulation de sédiments"
-     ]
-    },
-    {
-     "h": "Caractéristiques",
-     "lines": [
-      "Exogènes – stratifiées – fossilifères"
+      "Roches formées à la surface de la Terre par l’accumulation de sédiments déposés par l’eau, le vent ou la glace.",
+      "Roches exogènes, souvent stratifiées (en strates) ; certaines sont fossilifères."
      ]
     },
     {
      "h": "Origines",
-     "lines": [
-      "Détritique (sable) – chimique (sel, calcaire) – biologique (houille)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les trois caractéristiques des roches sédimentaires."
+     "lines": [],
+     "table": [
+      [
+       "Origine",
+       "Exemples"
+      ],
+      [
+       "Détritique",
+       "Sable, gravier"
+      ],
+      [
+       "Chimique",
+       "Sel, calcaire"
+      ],
+      [
+       "Biologique",
+       "Lignite, houille"
+      ]
      ]
     }
    ]
@@ -1304,17 +1843,24 @@
    },
    "board": [
     {
-     "h": "Étapes",
+     "h": "Le processus sédimentaire",
      "lines": [
-      "Altération → érosion → transport",
-      "Dépôt (sédimentation) → diagenèse (compaction)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Range dans l’ordre : dépôt, altération, diagenèse, transport."
-     ]
+      "1) Altération : les roches sont usées.",
+      "2) Érosion : les particules sont arrachées.",
+      "3) Transport : les sédiments sont déplacés.",
+      "4) Dépôt (sédimentation) en couches.",
+      "5) Diagenèse : les couches se compactent et deviennent roche."
+     ],
+     "fig": {
+      "page": 132,
+      "rect": [
+       0.168,
+       0.183,
+       0.833,
+       0.538
+      ],
+      "caption": "Histoire d’une roche sédimentaire"
+     }
     }
    ]
   },
@@ -1345,28 +1891,50 @@
    },
    "board": [
     {
-     "h": "Propriétés",
+     "h": "Le sable",
      "lines": [
-      "Roche meuble – grains de quartz (silice)",
-      "Dur, perméable, pas d’effervescence avec l’acide"
-     ]
+      "Roche meuble de grains de quartz (silice) mêlés parfois à du calcaire, de l’argile ou des oxydes de fer.",
+      "Dur, perméable, insoluble, sans réaction à l’acide chlorhydrique (sauf s’il est calcaire).",
+      "Roche détritique issue de la désagrégation de roches comme le granite."
+     ],
+     "fig": {
+      "page": 134,
+      "rect": [
+       0.528,
+       0.495,
+       0.907,
+       0.715
+      ],
+      "caption": "Grains de sable à la loupe"
+     }
     },
     {
-     "h": "Origine",
-     "lines": [
-      "Roche détritique : désagrégation du granite"
+     "h": "Forme des grains et transport",
+     "lines": [],
+     "table": [
+      [
+       "Transport",
+       "Grains"
+      ],
+      [
+       "Torrent",
+       "Anguleux, non usés"
+      ],
+      [
+       "Fleuves et plages",
+       "Émoussés, luisants"
+      ],
+      [
+       "Dunes (vent)",
+       "Ronds, mats"
+      ]
      ]
     },
     {
      "h": "Utilisations",
      "lines": [
-      "Construction – fonderie – verre"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Le sable fait-il effervescence avec l’acide chlorhydrique ? Pourquoi ?"
+      "Construction, fonderie, verre, filtration, abrasif, agriculture.",
+      "Autres roches siliceuses : grès, silex, diatomite (dures, cassure conchoïdale, étincelles au choc)."
      ]
     }
    ]
@@ -1398,29 +1966,41 @@
    },
    "board": [
     {
-     "h": "Propriétés",
+     "h": "Propriétés de l’argile",
      "lines": [
-      "Tendre, onctueuse, pâte plastique avec l’eau",
-      "Imperméable – pas d’effervescence avec l’acide"
-     ]
+      "Roche tendre, onctueuse au toucher, plastique avec l’eau (modelage).",
+      "Imperméable mais absorbe l’eau ; pas d’effervescence avec l’acide.",
+      "Se fend en période de sécheresse ; couleurs variées selon la teneur en fer.",
+      "Cuite, elle durcit et ne fait plus pâte avec l’eau."
+     ],
+     "fig": {
+      "page": 138,
+      "rect": [
+       0.497,
+       0.734,
+       0.904,
+       0.92
+      ],
+      "caption": "L’argile et l’eau"
+     }
     },
     {
-     "h": "Origine",
+     "h": "Origine et utilisations",
      "lines": [
-      "Altération des roches cristallines"
-     ]
-    },
-    {
-     "h": "Utilisations",
-     "lines": [
-      "Poteries – briques – tuiles"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi utilise-t-on l’argile pour fabriquer des poteries ?"
-     ]
+      "Elle provient de l’altération des roches cristallines (kaolinisation).",
+      "Briques, poteries, constructions traditionnelles, étanchéité des barrages, matériaux avec le ciment.",
+      "Autres roches argileuses : schiste argileux, marne, argilite, bauxite."
+     ],
+     "fig": {
+      "page": 138,
+      "rect": [
+       0.243,
+       0.482,
+       0.757,
+       0.652
+      ],
+      "caption": "Argile sèche fendillée"
+     }
     }
    ]
   },
@@ -1453,21 +2033,38 @@
     {
      "h": "Propriétés",
      "lines": [
-      "Carbonate de calcium – tendre, perméable",
-      "Effervescence avec l’acide – chauffé → chaux"
-     ]
+      "Formés surtout de carbonate de calcium (CaCO₃).",
+      "Tendres (dureté 3), perméables, font effervescence avec l’acide chlorhydrique.",
+      "Se dissolvent dans l’eau chargée de CO₂ ; la chaleur les décompose en chaux et CO₂.",
+      "Roches souvent fossilifères."
+     ],
+     "fig": {
+      "page": 143,
+      "rect": [
+       0.445,
+       0.1,
+       0.908,
+       0.305
+      ],
+      "caption": "Effervescence du calcaire avec l’acide"
+     }
     },
     {
-     "h": "Origine",
+     "h": "Types et utilisations",
      "lines": [
-      "Êtres vivants (coraux, coquillages) ou précipitation chimique"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment reconnaître un calcaire avec de l’acide ?"
-     ]
+      "Biologiques (coquillages, coraux), biochimiques, lacustres, marins, tufs, travertins, stalactites et stalagmites.",
+      "Pierre de taille, fabrication de la chaux et du ciment."
+     ],
+     "fig": {
+      "page": 145,
+      "rect": [
+       0.155,
+       0.542,
+       0.477,
+       0.745
+      ],
+      "caption": "Calcaire coquillier"
+     }
     }
    ]
   },
@@ -1498,29 +2095,72 @@
    },
    "board": [
     {
-     "h": "Formation",
+     "h": "Les évaporites",
      "lines": [
-      "Évaporation d’une eau riche en sels → évaporites"
+      "Roches formées par l’évaporation d’eau riche en sels (mer, lac salé) : sel gemme (NaCl), gypse, anhydrite."
      ]
     },
     {
-     "h": "Le gypse",
-     "lines": [
-      "Tendre, rayable à l’ongle",
-      "Chauffé à 120-130 °C → plâtre"
-     ]
+     "h": "Gypse et sel",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Gypse",
+       "Sel (NaCl)"
+      ],
+      [
+       "Dureté",
+       "Rayable à l’ongle",
+       "2"
+      ],
+      [
+       "Solubilité",
+       "Légèrement soluble",
+       "Très soluble (350 g/L)"
+      ],
+      [
+       "Acide",
+       "—",
+       "Pas de réaction"
+      ],
+      [
+       "Chaleur",
+       "À 120–130 °C devient plâtre",
+       "Fond vers 800 °C"
+      ],
+      [
+       "Utilisation",
+       "Plâtre : construction, médecine, moulages",
+       "Cuisine, conservation des aliments"
+      ]
+     ],
+     "fig": {
+      "page": 146,
+      "rect": [
+       0.092,
+       0.669,
+       0.908,
+       0.794
+      ],
+      "caption": "Variétés de gypse"
+     }
     },
     {
-     "h": "Le sel",
+     "h": "En Mauritanie",
      "lines": [
-      "Chlorure de sodium – très soluble – sebkhas"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Que donne le gypse quand on le chauffe ?"
-     ]
+      "Sebkhas d’Idjil (Tiris) et de N’Terert (Trarza) ; récolte en marais salants ou en mines."
+     ],
+     "fig": {
+      "page": 150,
+      "rect": [
+       0.641,
+       0.302,
+       0.903,
+       0.431
+      ],
+      "caption": "Exploitation du sel"
+     }
     }
    ]
   },
@@ -1552,28 +2192,44 @@
    },
    "board": [
     {
-     "h": "Propriétés",
+     "h": "Le pétrole",
      "lines": [
-      "Hydrocarbures – inflammable – plus léger que l’eau"
-     ]
+      "Liquide d’hydrocarbures (carbone + hydrogène), très inflammable, plus léger que l’eau (densité ≈ 0,8), fluide ou visqueux, jaune à noir."
+     ],
+     "fig": {
+      "page": 151,
+      "rect": [
+       0.191,
+       0.217,
+       0.809,
+       0.478
+      ],
+      "caption": "Différents pétroles bruts"
+     }
     },
     {
      "h": "Formation",
      "lines": [
-      "Restes organiques enfouis + chaleur + pression",
-      "Gisement : gaz / pétrole / eau"
-     ]
+      "Restes organiques (plancton, algues) dans des milieux peu oxygénés → boue → kérogène.",
+      "Enfouissement : chaleur et pression transforment le kérogène en hydrocarbures.",
+      "Migration vers une roche réservoir poreuse ; une roche imperméable forme un piège : gaz en haut, pétrole au milieu, eau en bas."
+     ],
+     "fig": {
+      "page": 152,
+      "rect": [
+       0.095,
+       0.063,
+       0.906,
+       0.323
+      ],
+      "caption": "La formation du pétrole"
+     }
     },
     {
      "h": "Utilisations",
      "lines": [
-      "Carburants : essence, gazole, fuel"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Dans un gisement, dans quel ordre se placent le gaz, le pétrole et l’eau ?"
+      "Carburants (essence, gazole, fuel), bitume, goudron, lubrifiants, plastiques, textiles, cosmétiques, médicaments.",
+      "Autres roches carbonées : houille, lignite, tourbe."
      ]
     }
    ]
