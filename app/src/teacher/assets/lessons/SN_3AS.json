@@ -32,30 +32,69 @@
    },
    "board": [
     {
-     "h": "Appareil génital masculin",
-     "lines": [
-      "Testicules : produisent les spermatozoïdes",
-      "Voies génitales : épididymes, canaux déférents, urètre",
-      "Glandes annexes : vésicules séminales, prostate, glandes de Cowper"
-     ]
+     "h": "L’appareil génital mâle",
+     "lines": [],
+     "table": [
+      [
+       "Partie",
+       "Organes",
+       "Rôle"
+      ],
+      [
+       "Gonades",
+       "Deux testicules",
+       "Production des spermatozoïdes"
+      ],
+      [
+       "Voies génitales",
+       "Épididymes, canaux déférents, urètre",
+       "Transport et émission du sperme"
+      ],
+      [
+       "Organe copulateur",
+       "Pénis (verge)",
+       "Accouplement"
+      ],
+      [
+       "Glandes annexes",
+       "Vésicules séminales, prostate, glandes de Cowper",
+       "Production du liquide séminal"
+      ]
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.09,
+       0.359,
+       0.461,
+       0.697
+      ],
+      "caption": "Appareil génital masculin"
+     }
     },
     {
      "h": "Le spermatozoïde",
      "lines": [
-      "Tête (noyau + acrosome) – pièce intermédiaire – flagelle",
-      "Cellule allongée et mobile"
-     ]
+      "La spermatogenèse est la production des spermatozoïdes.",
+      "Tête (noyau + acrosome), pièce intermédiaire riche en mitochondries, flagelle (mobilité) ; cellule allongée et mobile, à cytoplasme réduit."
+     ],
+     "fig": {
+      "page": 11,
+      "rect": [
+       0.101,
+       0.063,
+       0.9,
+       0.359
+      ],
+      "caption": "Structure du spermatozoïde"
+     }
     },
     {
-     "h": "La puberté chez le garçon",
+     "h": "La puberté",
      "lines": [
-      "Pilosité, musculature, voix grave, épaules larges"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les trois parties du spermatozoïde."
+      "Passage de l’enfance à l’adolescence marqué par des modifications de l’organisme.",
+      "Garçon : développement des organes génitaux ; caractères secondaires : pilosité, musculature, voix plus grave, épaules plus larges.",
+      "Fille : développement des organes génitaux ; caractères secondaires : seins, pilosité, bassin."
      ]
     }
    ]
@@ -89,30 +128,62 @@
    },
    "board": [
     {
-     "h": "Appareil génital féminin",
-     "lines": [
-      "Ovaires : produisent les ovules",
-      "Trompes de Fallope : rencontre des gamètes",
-      "Utérus : grossesse – vagin – glandes annexes"
-     ]
+     "h": "L’appareil génital femelle",
+     "lines": [],
+     "table": [
+      [
+       "Partie",
+       "Organes",
+       "Rôle"
+      ],
+      [
+       "Gonades",
+       "Deux ovaires",
+       "Production des ovules"
+      ],
+      [
+       "Voies génitales",
+       "Deux trompes de Fallope, un utérus",
+       "Rencontre des gamètes ; règles et grossesse"
+      ],
+      [
+       "Organe copulateur",
+       "Le vagin",
+       "Accouplement"
+      ],
+      [
+       "Glandes annexes",
+       "Utérines, cervicales, de Bartholin, mammaires",
+       ""
+      ]
+     ],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.101,
+       0.197,
+       0.908,
+       0.494
+      ],
+      "caption": "Appareil génital féminin"
+     }
     },
     {
      "h": "L’ovule",
      "lines": [
-      "Gros, sphérique, immobile, produit de façon cyclique"
-     ]
-    },
-    {
-     "h": "La puberté chez la fille",
-     "lines": [
-      "Développement des seins, de la pilosité et du bassin"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Compare l’ovule et le spermatozoïde (taille, mobilité)."
-     ]
+      "L’ovogenèse est la formation des ovules.",
+      "Cellule de grosse taille, sphérique, immobile, produite en petit nombre et de façon cyclique, de la puberté à la ménopause."
+     ],
+     "fig": {
+      "page": 15,
+      "rect": [
+       0.137,
+       0.63,
+       0.863,
+       0.816
+      ],
+      "caption": "Follicule et ovule"
+     }
     }
    ]
   },
@@ -145,28 +216,27 @@
     {
      "h": "Définition",
      "lines": [
-      "Spermatozoïde + ovule → œuf (zygote)"
+      "Rencontre et fusion d’un gamète mâle et d’un gamète femelle formant un œuf (zygote).",
+      "Elle a lieu dans le tiers supérieur de la trompe de Fallope."
      ]
     },
     {
-     "h": "Lieu",
+     "h": "Les étapes",
      "lines": [
-      "Tiers supérieur de la trompe de Fallope"
-     ]
-    },
-    {
-     "h": "Étapes",
-     "lines": [
-      "Attraction et encerclement de l’ovule",
-      "Pénétration d’un seul spermatozoïde",
-      "Fusion des deux noyaux"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Où a lieu la fécondation chez la femme ?"
-     ]
+      "1) Attraction et encerclement de l’ovule par les spermatozoïdes.",
+      "2) Pénétration d’un seul spermatozoïde.",
+      "3) Fusion des deux noyaux : zygote."
+     ],
+     "fig": {
+      "page": 17,
+      "rect": [
+       0.092,
+       0.208,
+       0.92,
+       0.522
+      ],
+      "caption": "Les étapes de la fécondation"
+     }
     }
    ]
   },
@@ -198,29 +268,39 @@
    },
    "board": [
     {
-     "h": "Hygiène",
+     "h": "L’hygiène",
      "lines": [
-      "Propreté du corps – changement régulier des vêtements"
+      "Propreté du corps, changement quotidien des sous-vêtements, se laver les mains, utiliser ses propres affaires de toilette.",
+      "Une mauvaise hygiène peut entraîner des maladies et des infections."
      ]
     },
     {
-     "h": "Les IST",
-     "lines": [
-      "Transmission : voie sexuelle, voie sanguine, mère → enfant",
-      "Causes : bactéries, virus (hépatite B, Sida), parasites"
+     "h": "Les IST (MST)",
+     "lines": [],
+     "table": [
+      [
+       "Agent",
+       "Exemples"
+      ],
+      [
+       "Bactéries",
+       "Gonocoques, tréponèmes"
+      ],
+      [
+       "Virus",
+       "Hépatite B, herpès, HPV, CMV, Sida"
+      ],
+      [
+       "Parasites",
+       "Chlamydiae, trichomonas"
+      ]
      ]
     },
     {
-     "h": "Prévention",
+     "h": "Transmission et prévention",
      "lines": [
-      "Informer – abstinence – fidélité",
-      "Dépistage prénuptial – éviter seringues et lames souillées"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux modes de transmission des IST et deux moyens de prévention."
+      "Transmission : voie sexuelle, voie sanguine, de la mère à l’enfant.",
+      "Prévention : s’informer ; abstinence pour les célibataires ; fidélité au partenaire légitime ; dépistage avant le mariage et pendant la grossesse ; éviter les objets souillés (seringues, lames, outils de coiffure)."
      ]
     }
    ]
@@ -253,24 +333,58 @@
    },
    "board": [
     {
-     "h": "Système nerveux central",
-     "lines": [
-      "Encéphale : cerveau, cervelet, tronc cérébral",
-      "Moelle épinière : dans la colonne vertébrale"
-     ]
+     "h": "Le système nerveux central",
+     "lines": [],
+     "table": [
+      [
+       "Organe",
+       "Rôle"
+      ],
+      [
+       "Cerveau",
+       "Pensée, mémoire, émotions, mouvements volontaires"
+      ],
+      [
+       "Cervelet",
+       "Coordination des mouvements, équilibre"
+      ],
+      [
+       "Tronc cérébral",
+       "Fonctions vitales (respiration, rythme cardiaque)"
+      ],
+      [
+       "Moelle épinière",
+       "Transmission des messages nerveux, certains réflexes"
+      ]
+     ],
+     "fig": {
+      "page": 29,
+      "rect": [
+       0.091,
+       0.43,
+       0.461,
+       0.667
+      ],
+      "caption": "Vue externe de l’encéphale"
+     }
     },
     {
-     "h": "Système nerveux périphérique",
+     "h": "Le système nerveux périphérique : les nerfs",
      "lines": [
-      "Nerfs crâniens (encéphale) – nerfs rachidiens (moelle)",
-      "Sensitifs → centre – moteurs → organes – mixtes : deux sens"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelle est la différence entre un nerf sensitif et un nerf moteur ?"
-     ]
+      "Un nerf est un ensemble de fibres nerveuses en faisceaux entourées de tissus conjonctifs.",
+      "Selon la localisation : nerfs crâniens (de l’encéphale), nerfs rachidiens (de la moelle épinière).",
+      "Selon le rôle : sensitifs (vers le centre, ex. nerf optique), moteurs (vers les effecteurs, ex. nerf oculomoteur), mixtes (ex. nerf sciatique)."
+     ],
+     "fig": {
+      "page": 31,
+      "rect": [
+       0.105,
+       0.566,
+       0.892,
+       0.765
+      ],
+      "caption": "Coupe transversale d’un nerf"
+     }
     }
    ]
   },
@@ -301,22 +415,38 @@
    },
    "board": [
     {
-     "h": "Structure",
+     "h": "Le neurone",
      "lines": [
-      "Corps cellulaire (noyau) – dendrites – axone"
-     ]
+      "Unité de base du système nerveux, cellule spécialisée qui transmet l’influx nerveux.",
+      "Corps cellulaire (noyau), dendrites (reçoivent les messages), axone (conduit le message vers une autre cellule)."
+     ],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.091,
+       0.24,
+       0.921,
+       0.487
+      ],
+      "caption": "Schéma du neurone"
+     }
     },
     {
-     "h": "Propriétés",
-     "lines": [
-      "Excitabilité : réagir à un stimulus",
-      "Conductibilité : propager le message nerveux"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les deux propriétés du neurone."
+     "h": "Propriétés du tissu nerveux",
+     "lines": [],
+     "table": [
+      [
+       "Propriété",
+       "Définition"
+      ],
+      [
+       "Excitabilité",
+       "Réagir à un stimulus et le transformer en message nerveux"
+      ],
+      [
+       "Conductibilité",
+       "Propager et transmettre le message le long du neurone"
+      ]
      ]
     }
    ]
@@ -347,24 +477,28 @@
    },
    "board": [
     {
-     "h": "Réflexe inné",
+     "h": "Le réflexe inné",
      "lines": [
-      "Réponse automatique, rapide, involontaire – dès la naissance",
-      "Exemple : réflexe rotulien"
+      "Réponse automatique, rapide et involontaire, présente dès la naissance.",
+      "Stéréotypé (identique chez tous les individus de l’espèce), sans apprentissage.",
+      "Il protège l’organisme et maintient les fonctions vitales (réflexe de retrait, réflexe myotatique)."
      ]
     },
     {
-     "h": "Arc réflexe",
+     "h": "L’arc réflexe",
      "lines": [
-      "Récepteur → nerf sensitif → centre nerveux (moelle)",
-      "→ nerf moteur → effecteur (muscle ou glande)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite dans l’ordre les éléments de l’arc réflexe."
-     ]
+      "Récepteur → neurone sensitif → centre nerveux (moelle épinière ou tronc cérébral) → neurone moteur → muscle effecteur."
+     ],
+     "fig": {
+      "page": 36,
+      "rect": [
+       0.107,
+       0.255,
+       0.893,
+       0.545
+      ],
+      "caption": "Schéma d’un arc réflexe simple"
+     }
     }
    ]
   },
@@ -394,22 +528,19 @@
    },
    "board": [
     {
-     "h": "À faire",
+     "h": "Bonnes habitudes",
      "lines": [
-      "Dormir suffisamment – manger équilibré",
-      "Activité physique – gérer le stress"
+      "Dormir suffisamment.",
+      "Alimentation équilibrée.",
+      "Activité physique régulière.",
+      "Se reposer après un effort intellectuel.",
+      "Gérer le stress ; respecter les règles de sécurité (casque, ceinture)."
      ]
     },
     {
      "h": "À éviter",
      "lines": [
-      "Excitants (café, alcool, tabac) – drogues – bruit excessif"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux habitudes qui protègent le système nerveux et deux à éviter."
+      "Les excitants (café, alcool, tabac), les drogues, l’abus d’écrans et le bruit excessif."
      ]
     }
    ]
@@ -440,19 +571,45 @@
    },
    "board": [
     {
-     "h": "Types d’os",
-     "lines": [
-      "Longs : fémur, humérus (leviers)",
-      "Courts : carpe, tarse",
-      "Plats : crâne, sternum, côtes (protection)",
-      "Irréguliers : vertèbres, os du bassin"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe ces os : fémur, côte, vertèbre, os du carpe."
-     ]
+     "h": "Classification des os selon leur forme",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Caractères",
+       "Exemples"
+      ],
+      [
+       "Os longs",
+       "Plus longs que larges, leviers du mouvement",
+       "Fémur, humérus"
+      ],
+      [
+       "Os courts",
+       "Aussi longs que larges, stabilité et mobilité fine",
+       "Carpe, tarse"
+      ],
+      [
+       "Os plats",
+       "Minces, protègent les organes",
+       "Crâne, sternum, côtes"
+      ],
+      [
+       "Os irréguliers",
+       "Formes complexes, protection et attaches musculaires",
+       "Vertèbres, os du bassin"
+      ]
+     ],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.288,
+       0.485,
+       0.648,
+       0.765
+      ],
+      "caption": "Différents types d’os"
+     }
     }
    ]
   },
@@ -486,28 +643,59 @@
     {
      "h": "Structure",
      "lines": [
-      "Épiphyses : os spongieux + moelle rouge",
-      "Diaphyse : canal médullaire + moelle jaune, os compact, périoste"
-     ]
+      "Deux épiphyses (têtes) et une diaphyse (corps).",
+      "Épiphyses : cartilage et os spongieux à moelle rouge.",
+      "Diaphyse : canal médullaire à moelle jaune et os compact recouvert du périoste."
+     ],
+     "fig": {
+      "page": 45,
+      "rect": [
+       0.394,
+       0.244,
+       0.604,
+       0.571
+      ],
+      "caption": "Coupe longitudinale d’un os long"
+     }
     },
     {
-     "h": "Composition",
-     "lines": [
-      "Osséine 30 % – sels minéraux 45 % – eau 25 %"
+     "h": "Composition chimique",
+     "lines": [],
+     "table": [
+      [
+       "Constituant",
+       "Proportion"
+      ],
+      [
+       "Osséine (organique, combustible)",
+       "≈ 30 %"
+      ],
+      [
+       "Sels minéraux (carbonates, phosphates de calcium…)",
+       "45 %"
+      ],
+      [
+       "Eau",
+       "25 %"
+      ]
      ]
     },
     {
      "h": "Croissance",
      "lines": [
-      "En longueur : cartilage de croissance",
-      "En épaisseur : périoste"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelle partie assure la croissance de l’os en longueur ?"
-     ]
+      "En longueur : cartilage de croissance (de conjugaison) des épiphyses.",
+      "En épaisseur : activité du périoste."
+     ],
+     "fig": {
+      "page": 48,
+      "rect": [
+       0.082,
+       0.255,
+       0.909,
+       0.484
+      ],
+      "caption": "Croissance de l’os en longueur et en épaisseur"
+     }
     }
    ]
   },
@@ -539,20 +727,40 @@
     {
      "h": "Structure",
      "lines": [
-      "Faisceaux de fibres musculaires",
-      "Fibre : plusieurs noyaux – sarcolemme – myofibrilles"
-     ]
+      "Fibres musculaires regroupées en faisceaux.",
+      "La fibre est une cellule cylindrique plurinucléée : sarcolemme (membrane), sarcoplasme (cytoplasme) riche en myofibrilles contractiles."
+     ],
+     "fig": {
+      "page": 49,
+      "rect": [
+       0.233,
+       0.622,
+       0.772,
+       0.784
+      ],
+      "caption": "Organisation du muscle strié"
+     }
     },
     {
      "h": "Propriétés",
-     "lines": [
-      "Excitabilité – contractilité – élasticité"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les trois propriétés du muscle squelettique."
+     "lines": [],
+     "table": [
+      [
+       "Propriété",
+       "Définition"
+      ],
+      [
+       "Excitabilité",
+       "Recevoir un stimulus et y répondre"
+      ],
+      [
+       "Contractilité",
+       "Se raccourcir et s’épaissir après un stimulus"
+      ],
+      [
+       "Élasticité",
+       "Reprendre sa longueur initiale (limitée)"
+      ]
      ]
     }
    ]
@@ -585,24 +793,57 @@
    },
    "board": [
     {
-     "h": "Articulation mobile",
+     "h": "L’articulation mobile",
      "lines": [
-      "Cartilage – capsule – liquide synovial – ligaments"
-     ]
+      "Jonction entre deux ou plusieurs os.",
+      "Surfaces articulaires recouvertes de cartilage, capsule, cavité à liquide synovial (réduit les frottements), ligaments (stabilité) ; les muscles contrôlent les mouvements."
+     ],
+     "fig": {
+      "page": 52,
+      "rect": [
+       0.474,
+       0.088,
+       0.908,
+       0.316
+      ],
+      "caption": "Schéma d’une articulation mobile"
+     }
     },
     {
-     "h": "Types",
-     "lines": [
-      "Synarthrose (immobile) : sutures du crâne",
-      "Amphiarthrose (semi-mobile) : vertèbres",
-      "Diarthrose (mobile) : coude"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Donne un exemple de chaque type d’articulation."
-     ]
+     "h": "Types d’articulations",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Mobilité",
+       "Exemple"
+      ],
+      [
+       "Synarthroses",
+       "Immobiles",
+       "Os du crâne"
+      ],
+      [
+       "Amphiarthroses",
+       "Semi-mobiles",
+       "Vertèbres"
+      ],
+      [
+       "Diarthroses (synoviales)",
+       "Mobiles",
+       "Genou, coude"
+      ]
+     ],
+     "fig": {
+      "page": 54,
+      "rect": [
+       0.112,
+       0.246,
+       0.888,
+       0.539
+      ],
+      "caption": "Les types d’articulations"
+     }
     }
    ]
   },
@@ -633,25 +874,86 @@
    },
    "board": [
     {
-     "h": "Accidents",
-     "lines": [
-      "Os (colonne) : scoliose, cyphose, lordose",
-      "Muscles : élongation, claquage, déchirure",
-      "Articulations : luxation, entorse"
-     ]
+     "h": "Déformations de la colonne",
+     "lines": [],
+     "table": [
+      [
+       "Déformation",
+       "Description"
+      ],
+      [
+       "Scoliose",
+       "Déviation latérale en « S » ou en « C »"
+      ],
+      [
+       "Cyphose",
+       "Courbure excessive vers l’arrière (dos voûté)"
+      ],
+      [
+       "Lordose",
+       "Courbure exagérée vers l’avant (lombaire)"
+      ]
+     ],
+     "fig": {
+      "page": 56,
+      "rect": [
+       0.124,
+       0.272,
+       0.877,
+       0.58
+      ],
+      "caption": "Colonne normale, scoliose, cyphose, lordose"
+     }
     },
     {
-     "h": "Protection",
-     "lines": [
-      "Bonne posture – alimentation – sport",
-      "Échauffement – effort modéré – repos – hydratation"
-     ]
+     "h": "Accidents musculaires",
+     "lines": [],
+     "table": [
+      [
+       "Accident",
+       "Description"
+      ],
+      [
+       "Élongation",
+       "Étirement excessif, microlésions, sans rupture"
+      ],
+      [
+       "Claquage",
+       "Rupture partielle des fibres, douleur brutale"
+      ],
+      [
+       "Déchirure",
+       "Rupture importante ou totale, hématome ; immobilisation"
+      ]
+     ],
+     "fig": {
+      "page": 58,
+      "rect": [
+       0.255,
+       0.598,
+       0.733,
+       0.742
+      ],
+      "caption": "État normal, élongation, déchirure, rupture"
+     }
     },
     {
-     "h": "Application",
+     "h": "Accidents articulaires",
      "lines": [
-      "Quelle est la différence entre une luxation et une entorse ?"
-     ]
+      "Luxation : l’os sort de l’articulation ; prise en charge médicale rapide.",
+      "Entorse : les ligaments sont étirés ou déchirés ; repos, glace, bandage.",
+      "Prévention : échauffement, effort modéré, bonne posture, alimentation équilibrée, repos."
+     ],
+     "fig": {
+      "page": 60,
+      "rect": [
+       0.113,
+       0.606,
+       0.891,
+       0.862
+      ],
+      "caption": "Luxation et entorse"
+     }
     }
    ]
   },
@@ -684,26 +986,27 @@
     {
      "h": "Définition",
      "lines": [
-      "Modification durable du climat de la Terre"
-     ]
+      "Modification durable du climat : hausse des températures, baisse des pluies dans certaines régions, phénomènes plus violents, écosystèmes perturbés.",
+      "Les activités humaines accentuent ces changements en augmentant les gaz à effet de serre."
+     ],
+     "fig": {
+      "page": 67,
+      "rect": [
+       0.234,
+       0.445,
+       0.723,
+       0.795
+      ],
+      "caption": "Causes et conséquences du changement climatique"
+     }
     },
     {
-     "h": "Causes et conséquences",
+     "h": "Pour réduire le réchauffement",
      "lines": [
-      "Gaz à effet de serre des activités humaines",
-      "Hausse des températures, baisse des pluies, phénomènes violents"
-     ]
-    },
-    {
-     "h": "Solutions",
-     "lines": [
-      "Énergies renouvelables – protéger les forêts – planter des arbres"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux solutions pour réduire le réchauffement climatique."
+      "Diminuer la combustion du pétrole, du charbon et du gaz.",
+      "Utiliser les énergies renouvelables (solaire, éolienne, hydraulique).",
+      "Protéger les forêts et planter des arbres.",
+      "Sensibiliser les citoyens, surtout les jeunes."
      ]
     }
    ]
@@ -738,29 +1041,63 @@
     {
      "h": "Définition",
      "lines": [
-      "Dégradation d’un écosystème par des substances introduites par l’homme"
+      "Dégradation d’un écosystème par l’introduction, généralement humaine, de substances ou de radiations."
      ]
     },
     {
-     "h": "Formes",
-     "lines": [
-      "Air : pots d’échappement, usines",
-      "Sol et eau : produits chimiques, métaux lourds, eaux usées",
-      "Littoral : marées noires, déchets, surpêche"
-     ]
+     "h": "Types de pollution",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Origines"
+      ],
+      [
+       "Air",
+       "Pots d’échappement, usines"
+      ],
+      [
+       "Sol",
+       "Acides, métaux lourds, composés organiques"
+      ],
+      [
+       "Eau",
+       "Industrie, agriculture, automobile, eaux usées"
+      ],
+      [
+       "Littoral",
+       "Déchets, marées noires, eaux usées et industrielles, surpêche"
+      ]
+     ],
+     "fig": {
+      "page": 72,
+      "rect": [
+       0.533,
+       0.71,
+       0.906,
+       0.936
+      ],
+      "caption": "Rejets industriels dans l’eau"
+     }
     },
     {
      "h": "Mesures",
      "lines": [
-      "Énergies renouvelables – traiter les eaux usées",
-      "Moins d’engrais chimiques – recycler – nettoyer les plages"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux origines de la pollution de l’eau et une mesure pour la réduire."
-     ]
+      "Air : énergies renouvelables, transports collectifs, filtres, espaces verts.",
+      "Eau : traiter les eaux usées, réduire les produits chimiques, recycler.",
+      "Sol : limiter engrais et pesticides, engrais naturels, lutte biologique.",
+      "Côtes : ne pas jeter de déchets, recycler le plastique, nettoyer les plages."
+     ],
+     "fig": {
+      "page": 76,
+      "rect": [
+       0.481,
+       0.085,
+       0.908,
+       0.27
+      ],
+      "caption": "Pollution du littoral"
+     }
     }
    ]
   },
@@ -791,23 +1128,47 @@
    },
    "board": [
     {
-     "h": "Types de déchets",
+     "h": "Les déchets",
      "lines": [
-      "Ménagers : plastiques, cartons, bouteilles",
-      "Industriels, agricoles, biomédicaux"
+      "Ordures ménagères (plastiques, cartons, bouteilles…) et déchets des voitures, usines et agriculture (CO₂, soufre, plomb, engrais, pesticides)."
+     ],
+     "fig": {
+      "page": 80,
+      "rect": [
+       0.202,
+       0.447,
+       0.797,
+       0.716
+      ],
+      "caption": "Dépôt d’ordures"
+     }
+    },
+    {
+     "h": "Le traitement",
+     "lines": [],
+     "table": [
+      [
+       "Traitement",
+       "Déchets concernés"
+      ],
+      [
+       "Enfouissement",
+       "Biodégradables"
+      ],
+      [
+       "Recyclage",
+       "Plastiques, papiers…"
+      ],
+      [
+       "Incinération",
+       "Déchets brûlés"
+      ]
      ]
     },
     {
-     "h": "Traitement",
+     "h": "À retenir",
      "lines": [
-      "Enfouir (biodégradables) – recycler (plastiques, papiers) – brûler",
-      "Trier les déchets de soins"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite trois manières de traiter les déchets."
+      "Le tri des déchets et la collecte séparée des déchets biomédicaux dangereux réduisent les risques pour la santé."
      ]
     }
    ]
@@ -839,29 +1200,59 @@
    },
    "board": [
     {
-     "h": "Sécheresse",
-     "lines": [
-      "Le désert progresse d’environ 6 km par an"
-     ]
+     "h": "Catastrophes en Mauritanie",
+     "lines": [],
+     "table": [
+      [
+       "Catastrophe",
+       "Causes",
+       "Conséquences / prévention"
+      ],
+      [
+       "Sécheresse et désertification",
+       "Baisse des pluies, dégradation des sols, vents de sable",
+       "Sols infertiles, pâturages rares"
+      ],
+      [
+       "Inondations",
+       "Pluies très fortes, débordement des oueds et du fleuve",
+       "Dégâts ; aménager les villes, nettoyer les canaux, ne pas construire en zone exposée"
+      ],
+      [
+       "Feux de brousse",
+       "Sécheresse, chaleur, vent, feux mal éteints",
+       "Perte des pâturages ; sensibilisation, pare-feux"
+      ],
+      [
+       "Criquets pèlerins",
+       "Reproduction rapide en saison des pluies, grands essaims",
+       "Destruction des cultures et des pâturages"
+      ]
+     ],
+     "fig": {
+      "page": 85,
+      "rect": [
+       0.282,
+       0.429,
+       0.721,
+       0.862
+      ],
+      "caption": "Comment se produit une inondation"
+     }
     },
     {
-     "h": "Inondations",
-     "lines": [
-      "Fortes pluies, débordement des cours d’eau – bien aménager les villes"
-     ]
-    },
-    {
-     "h": "Feux de brousse et criquets",
-     "lines": [
-      "Feux : destruction des pâturages – pare-feux",
-      "Criquets pèlerins : destruction des cultures"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux catastrophes naturelles qui menacent la Mauritanie et une conséquence de chacune."
-     ]
+     "h": "Illustrations",
+     "lines": [],
+     "fig": {
+      "page": 89,
+      "rect": [
+       0.516,
+       0.207,
+       0.905,
+       0.426
+      ],
+      "caption": "Essaim de criquets pèlerins"
+     }
     }
    ]
   },
@@ -895,36 +1286,58 @@
    },
    "board": [
     {
-     "h": "Propriétés",
+     "h": "Le granite",
      "lines": [
-      "Dur, dense, imperméable",
-      "Cristaux visibles : feldspaths, quartz, micas"
-     ]
+      "Roche dure, dense (≈ 2,7), imperméable, à grains visibles : roche cristalline à texture grenue.",
+      "Minéraux : feldspaths (blanc ou rose), quartz (gris translucide), micas (noir, brillant).",
+      "Riche en silice (plus de 65 %) : roche acide."
+     ],
+     "fig": {
+      "page": 101,
+      "rect": [
+       0.162,
+       0.39,
+       0.839,
+       0.526
+      ],
+      "caption": "Échantillons de granite"
+     }
     },
     {
      "h": "Origine",
      "lines": [
-      "Magma refroidi lentement en profondeur → texture grenue"
-     ]
+      "Roche magmatique plutonique : magma refroidi lentement en profondeur (gros cristaux).",
+      "Il affleure après soulèvement et érosion des couches supérieures."
+     ],
+     "fig": {
+      "page": 103,
+      "rect": [
+       0.272,
+       0.229,
+       0.728,
+       0.628
+      ],
+      "caption": "Formation du granite"
+     }
     },
     {
-     "h": "Altération et utilisation",
+     "h": "Altération et utilisations",
      "lines": [
-      "Boules → arène granitique (sable)",
-      "Construction : pavés, façades, sculptures"
-     ]
-    },
-    {
-     "h": "En Mauritanie",
-     "lines": [
-      "Mauritanides et Dorsale Rgueïbat"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi les cristaux du granite sont-ils grands ?"
-     ]
+      "L’eau élargit les fractures : boules de granite puis arène granitique ; chaos granitiques.",
+      "Quartz intact ; biotite détruite ; feldspaths transformés en argile (kaolin).",
+      "Construction : pavés, bordures, façades. En Mauritanie : Mauritanides et Dorsale Rgueïbat.",
+      "Autres roches plutoniques : gabbro, diorite, syénite, pegmatite."
+     ],
+     "fig": {
+      "page": 105,
+      "rect": [
+       0.481,
+       0.765,
+       0.907,
+       0.917
+      ],
+      "caption": "Chaos granitique"
+     }
     }
    ]
   },
@@ -956,37 +1369,58 @@
    },
    "board": [
     {
-     "h": "Propriétés",
+     "h": "Le basalte",
      "lines": [
-      "Noir à gris foncé – dur – dense",
-      "Structure microlithique – pauvre en silice"
-     ]
+      "Roche volcanique noire à gris foncé, dure, dense (≈ 3 g/cm³).",
+      "Structure microlitique : microlites + pâte amorphe.",
+      "Riche en fer, magnésium, calcium, pauvre en silice : roche basique."
+     ],
+     "fig": {
+      "page": 110,
+      "rect": [
+       0.107,
+       0.507,
+       0.893,
+       0.719
+      ],
+      "caption": "Lame mince de basalte"
+     }
     },
     {
-     "h": "Origine",
+     "h": "Origine et gisements",
      "lines": [
-      "Magma fluide refroidi rapidement en surface",
-      "Coulées de lave – plateaux basaltiques"
-     ]
+      "Magma fluide issu de la fusion partielle du manteau, émis par les volcans rouges (éruptions effusives) et les dorsales.",
+      "Refroidissement en deux phases : gros cristaux en profondeur, microlites en surface.",
+      "Gisements : coulées, plateaux basaltiques (trapps), fonds océaniques ; sous la mer : basaltes en coussins."
+     ],
+     "fig": {
+      "page": 112,
+      "rect": [
+       0.114,
+       0.527,
+       0.417,
+       0.797
+      ],
+      "caption": "Formation du basalte"
+     }
     },
     {
-     "h": "Altération et utilisation",
+     "h": "Altération, usages et autres roches",
      "lines": [
-      "Boules → argile",
-      "Agriculture – construction"
-     ]
-    },
-    {
-     "h": "En Mauritanie",
-     "lines": [
-      "Mauritanides et Dorsale Regueibat"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Compare le refroidissement du magma pour le granite et pour le basalte."
-     ]
+      "Altération physique (gel, températures) et chimique (eau, acides) : boules puis argile.",
+      "Usages : enrichir les sols, construction.",
+      "Autres roches volcaniques : rhyolite (≈ granite), andésite (≈ diorite), trachyte (≈ syénite), dolérite, pierre ponce, obsidienne."
+     ],
+     "fig": {
+      "page": 115,
+      "rect": [
+       0.098,
+       0.211,
+       0.903,
+       0.371
+      ],
+      "caption": "Altération du basalte en boules"
+     }
     }
    ]
   },
@@ -1018,24 +1452,37 @@
    },
    "board": [
     {
-     "h": "Roches métamorphiques",
+     "h": "Les roches métamorphiques",
      "lines": [
-      "Transformation à l’état solide sous pression et température",
-      "Dures, compactes, sans fossiles – schistosité, foliation"
-     ]
+      "Transformation à l’état solide de roches préexistantes sous l’effet de la pression et/ou de la température.",
+      "Dures, compactes, sans fossiles ; présentent une schistosité ou une foliation."
+     ],
+     "fig": {
+      "page": 129,
+      "rect": [
+       0.15,
+       0.419,
+       0.851,
+       0.718
+      ],
+      "caption": "Roches métamorphiques"
+     }
     },
     {
      "h": "Le gneiss",
      "lines": [
-      "Bandes claires et sombres (foliation)",
-      "Texture cristalline – très résistant"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Qu’est-ce qui transforme une roche en roche métamorphique ?"
-     ]
+      "Roche d’un métamorphisme intense, foliée (bandes claires et sombres), à texture cristalline, dure et sans fossiles."
+     ],
+     "fig": {
+      "page": 131,
+      "rect": [
+       0.103,
+       0.27,
+       0.898,
+       0.409
+      ],
+      "caption": "Échantillons de gneiss"
+     }
     }
    ]
   },
@@ -1068,27 +1515,61 @@
     {
      "h": "Origine",
      "lines": [
-      "Argile → schiste → micaschiste → gneiss (pression + température)"
-     ]
+      "Formé en profondeur sous forte pression et haute température.",
+      "Transformation progressive : argile → schiste → micaschiste → gneiss.",
+      "En Mauritanie : Mauritanides et Dorsale du Rgueïbat."
+     ],
+     "fig": {
+      "page": 133,
+      "rect": [
+       0.124,
+       0.276,
+       0.875,
+       0.599
+      ],
+      "caption": "Origine et formation du gneiss"
+     }
     },
     {
-     "h": "Utilisation et localisation",
-     "lines": [
-      "Routes, pavés, bâtiments, barrages, décoration",
-      "Mauritanides et Dorsale du Regueïbat"
-     ]
-    },
-    {
-     "h": "Autres exemples",
-     "lines": [
-      "Micaschiste (argile) – quartzite (grès) – marbre (calcaire)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "De quelle roche provient le marbre ?"
-     ]
+     "h": "Autres roches métamorphiques",
+     "lines": [],
+     "table": [
+      [
+       "Roche",
+       "Roche d’origine",
+       "Caractères"
+      ],
+      [
+       "Micaschiste",
+       "Argile",
+       "Brillant, riche en mica, feuilleté"
+      ],
+      [
+       "Cipolin",
+       "Calcaire",
+       "Marbre feuilleté, clair"
+      ],
+      [
+       "Quartzite",
+       "Grès",
+       "Très dur, surtout du quartz"
+      ],
+      [
+       "Marbre",
+       "Calcaire",
+       "Compact, coloré ; construction, sculpture"
+      ]
+     ],
+     "fig": {
+      "page": 135,
+      "rect": [
+       0.104,
+       0.499,
+       0.897,
+       0.591
+      ],
+      "caption": "Autres roches métamorphiques"
+     }
     }
    ]
   },
@@ -1118,23 +1599,23 @@
    },
    "board": [
     {
-     "h": "Trois types de roches",
+     "h": "Un cycle continu",
      "lines": [
-      "Magmatiques – sédimentaires – métamorphiques"
-     ]
-    },
-    {
-     "h": "Le cycle",
-     "lines": [
-      "Magma → roches magmatiques → sédiments → roches sédimentaires",
-      "Pression + température → roches métamorphiques → fusion → magma"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment une roche sédimentaire peut-elle devenir métamorphique ?"
-     ]
+      "Magmatiques : refroidissement du magma en profondeur (plutoniques) ou en surface (volcaniques).",
+      "Altération, érosion, transport → sédiments → compaction → roches sédimentaires.",
+      "Forte pression et température sans fusion → roches métamorphiques.",
+      "Fusion en profondeur → nouveau magma : le cycle n’a ni début ni fin."
+     ],
+     "fig": {
+      "page": 128,
+      "rect": [
+       0.394,
+       0.64,
+       0.911,
+       0.938
+      ],
+      "caption": "Le cycle des roches"
+     }
     }
    ]
   }
