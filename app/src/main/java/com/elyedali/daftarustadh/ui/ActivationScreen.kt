@@ -67,11 +67,9 @@ fun ActivationScreen(
                         Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                             Text(stringResource(R.string.act_explain), fontSize = 13.sp)
                             Text("🏷️ " + stringResource(R.string.act_prices_title), fontWeight = FontWeight.Bold, color = Orange)
-                            Text(stringResource(R.string.act_price_1, ClassActivation.PRICE_1), fontSize = 13.sp)
-                            Text(stringResource(R.string.act_price_3, ClassActivation.PRICE_3), fontSize = 13.sp)
-                            Text(stringResource(R.string.act_price_5, ClassActivation.PRICE_5), fontSize = 13.sp)
-                            Text(stringResource(R.string.act_price_7, ClassActivation.PRICE_7_PLUS), fontSize = 13.sp)
-                            Text(stringResource(R.string.act_price_other), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text(stringResource(R.string.act_price_1, ClassActivation.PRICE_UP_TO_3), fontSize = 13.sp)
+                            Text(stringResource(R.string.act_price_3, ClassActivation.PRICE_UP_TO_6), fontSize = 13.sp)
+                            Text(stringResource(R.string.act_price_7, ClassActivation.PRICE_MORE), fontSize = 13.sp)
                         }
                     }
                 }

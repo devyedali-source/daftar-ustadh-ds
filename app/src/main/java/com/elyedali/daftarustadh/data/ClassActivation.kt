@@ -14,24 +14,17 @@ object ClassActivation {
     const val REQUESTED_KEY = "activation_requested"  // أقسام أُرسل طلب تفعيلها وتنتظر
     const val ADMIN_PHONE = "22237786585"
 
-    const val PRICE_1 = 350
-    const val PRICE_3 = 1000
-    const val PRICE_5 = 1500
-    const val PRICE_7_PLUS = 1900
+    // تفعيل الإدارة: للفصل الأخير فقط (الكشف السنوي)، حسب عدد الأقسام
+    const val PRICE_UP_TO_3 = 700
+    const val PRICE_UP_TO_6 = 900
+    const val PRICE_MORE = 1100
 
-    /** سعر تفعيل عدد من الأقسام. */
-    fun price(count: Int): Int {
-        if (count <= 0) return 0
-        if (count >= 7) return PRICE_7_PLUS
-        // أرخص جمع من باقات 1 و3 و5 (والعدد أقل من 7)
-        val best = IntArray(count + 1) { Int.MAX_VALUE }
-        best[0] = 0
-        for (n in 1..count) {
-            for ((size, cost) in listOf(1 to PRICE_1, 3 to PRICE_3, 5 to PRICE_5)) {
-                if (size <= n && best[n - size] != Int.MAX_VALUE) best[n] = minOf(best[n], best[n - size] + cost)
-            }
-        }
-        return minOf(best[count], PRICE_7_PLUS)
+    /** سعر تفعيل عدد من الأقسام: 1–3 أقسام 700، 4–6 أقسام 900، أكثر من 6 أقسام 1100. */
+    fun price(count: Int): Int = when {
+        count <= 0 -> 0
+        count <= 3 -> PRICE_UP_TO_3
+        count <= 6 -> PRICE_UP_TO_6
+        else -> PRICE_MORE
     }
 
     fun decode(text: String?): Set<String> =
@@ -40,8 +33,8 @@ object ClassActivation {
 
     fun encode(ids: Set<String>): String = JSONArray(ids.sorted()).toString()
 
-    /** الكشوف التي تحتاج تفعيلًا: كشف الفصل الثاني (2) والكشف السنوي (3). */
-    fun needsActivation(term: Int) = term >= 2
+    /** الكشوف التي تحتاج تفعيلًا: الفصل الأخير فقط (الكشف السنوي). الفصلان الأول والثاني مجانيان. */
+    fun needsActivation(term: Int) = term >= 3
 
     /** كود قصير للقسم يُرسل في طلب التفعيل. */
     fun code(classId: String): String = classId.replace("-", "").take(8).uppercase()

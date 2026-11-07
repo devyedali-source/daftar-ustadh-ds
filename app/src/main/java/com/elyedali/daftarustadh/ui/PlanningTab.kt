@@ -45,7 +45,13 @@ import com.elyedali.daftarustadh.data.AnnualPlans
 private const val NO_PLAN = "EPS"
 
 @Composable
-fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
+fun PlanningTab(
+    levelCode: String,
+    mySubjects: List<Pair<String, String>>,
+    /** غير مفعّل: الفصل الأول مجاني، والفصلان الثاني والثالث مقفلان. */
+    locked: Boolean = false,
+    onActivate: () -> Unit = {}
+) {
     val context = LocalContext.current
     val withPlan = remember(levelCode) { AnnualPlans.subjectsWithPlan(context, levelCode) }
     val available = mySubjects.filter { it.first in withPlan }
@@ -92,10 +98,12 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
             if (lessonSet != null) Text("📖 " + stringResource(R.string.plan_lessons_hint), fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold)
         }
-        itemsIndexed(rows) { i, r ->
-            val prev = rows.getOrNull(i - 1)
+        // غير مفعّل: يُعرض الفصل الأول فقط، وتحل محل الفصلين الثاني والثالث بطاقة التفعيل
+        val shownRows = if (locked) rows.filter { !com.elyedali.daftarustadh.data.TeacherActivation.planningNeedsActivation(it.term) } else rows
+        itemsIndexed(shownRows) { i, r ->
+            val prev = shownRows.getOrNull(i - 1)
             // كم مرة ورد كل عنوان قبل هذا الأسبوع (لربط العناوين المكررة بدروس مختلفة)
-            val seen = rows.take(i).flatMap { it.items }
+            val seen = shownRows.take(i).flatMap { it.items }
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 // عنوان الفصل عند بدايته
                 if (r.term in 1..3 && r.kind != "holiday" && (prev == null || prev.term != r.term))
@@ -127,6 +135,17 @@ fun PlanningTab(levelCode: String, mySubjects: List<Pair<String, String>>) {
                             else Text("• $item", fontSize = 13.sp, color = fg,
                                 fontWeight = if (r.kind == "lesson") FontWeight.Normal else FontWeight.Bold)
                         }
+                    }
+                }
+            }
+        }
+        if (locked && rows.any { com.elyedali.daftarustadh.data.TeacherActivation.planningNeedsActivation(it.term) }) item {
+            androidx.compose.material3.Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text("🔒 " + stringResource(R.string.tact_planning_locked), fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.tact_planning_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE), fontSize = 12.sp)
+                    androidx.compose.material3.Button(onClick = onActivate, modifier = Modifier.fillMaxWidth()) {
+                        Text("⭐ " + stringResource(R.string.tact_title))
                     }
                 }
             }

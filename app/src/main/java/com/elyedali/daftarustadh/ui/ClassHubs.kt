@@ -68,7 +68,7 @@ fun KashfTab(
     missingByTerm: Map<Int, Int>,   // عدد الطلاب الذين تنقصهم نتائج لكل كشف
     onGenerate: (Int) -> Unit,
     onOpenSettings: () -> Unit,
-    locked: Boolean = false,          // القسم غير مفعّل: كشف الفصل الثاني والسنوي مقفلان
+    locked: Boolean = false,          // القسم غير مفعّل: الكشف السنوي (الفصل الأخير) مقفل
     onActivate: () -> Unit = {}
 ) {
     Column(Modifier.fillMaxSize().padding(top = 10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -85,7 +85,7 @@ fun KashfTab(
                         color = if (ready) MaterialTheme.colorScheme.secondary else MaterialTheme.colorScheme.error,
                         style = MaterialTheme.typography.bodySmall
                     )
-                    if (locked && term >= 2) {
+                    if (locked && com.elyedali.daftarustadh.data.ClassActivation.needsActivation(term)) {
                         Text("🔒 " + stringResource(R.string.act_locked), color = MaterialTheme.colorScheme.error,
                             style = MaterialTheme.typography.bodySmall)
                         Button(onClick = onActivate) { Text(stringResource(R.string.act_activate_class)) }

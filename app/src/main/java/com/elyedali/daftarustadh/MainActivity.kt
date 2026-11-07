@@ -255,6 +255,12 @@ class MainActivity : AppCompatActivity() {
                 val activatedClasses = remember(activatedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(activatedText) }
                 val requestedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY) }.collectAsState(initial = null)
                 val requestedClasses = remember(requestedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(requestedText) }
+                // تفعيل الأستاذ (120 أوقية للسنة): التخطيط والتحاضير للفصلين 2 و3، ونتائج الفصل الأخير للمستقل
+                val teacherActText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TeacherActivation.KEY) }.collectAsState(initial = null)
+                val teacherActivated = remember(teacherActText) { com.elyedali.daftarustadh.data.TeacherActivation.decode(teacherActText) }
+                val teacherReqText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TeacherActivation.REQUESTED_KEY) }.collectAsState(initial = null)
+                val teacherRequested = remember(teacherReqText) { com.elyedali.daftarustadh.data.TeacherActivation.decode(teacherReqText) }
+                var teacherActivateYear by remember { mutableStateOf<String?>(null) }
                 var activationBack by rememberSaveable { mutableStateOf(Screen.HOME) }
                 val ttSettingsText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TimetableSettings.KEY) }.collectAsState(initial = null)
                 val ttSettings = remember(ttSettingsText) {
@@ -1859,6 +1865,8 @@ class MainActivity : AppCompatActivity() {
                                 )
                                 3 -> com.elyedali.daftarustadh.ui.PlanningTab(
                                     levelCode = c.levelCode,
+                                    locked = c.schoolYear !in teacherActivated,
+                                    onActivate = { teacherActivateYear = c.schoolYear },
                                     mySubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
                                         .filter { s -> mySubjects.any { it.subjectCode == s.code } }
                                         .map { it.code to (if (isFrUi) it.nameFr else it.nameAr) }
@@ -1952,6 +1960,9 @@ class MainActivity : AppCompatActivity() {
                                     } else gradeDao.saveTeacherSubject(TeacherSubjectEntity(c.id, code, mode))
                                 }
                             },
+                            // الأستاذ المستقل (عمله الفردي): الفصل الأخير وحساب معدل المادة يحتاجان التفعيل
+                            term3Locked = !AppRole.isAdmin && !gradesFromAdmin && c.institutionId in selfSchoolIds && c.schoolYear !in teacherActivated,
+                            onActivate = { teacherActivateYear = c.schoolYear },
                             onSendRecord = if (gradesFromAdmin) null else {
                                 {
                                     val n = teacherName
@@ -2196,6 +2207,43 @@ class MainActivity : AppCompatActivity() {
                             }
                         },
                         onDismiss = { showCreateClass = false }
+                    )
+                }
+
+                // طلب تفعيل الأستاذ عبر واتساب الإدارة
+                teacherActivateYear?.let { year ->
+                    AlertDialog(
+                        onDismissRequest = { teacherActivateYear = null },
+                        title = { Text("⭐ " + stringResource(R.string.tact_title)) },
+                        text = {
+                            androidx.compose.foundation.layout.Column(verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)) {
+                                Text(stringResource(R.string.tact_explain, com.elyedali.daftarustadh.data.TeacherActivation.PRICE, year))
+                                Text("• " + stringResource(R.string.tact_item_planning))
+                                Text("• " + stringResource(R.string.tact_item_grades))
+                                Text(stringResource(R.string.tact_free_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall,
+                                    color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant)
+                                if (year in teacherRequested) Text("⏳ " + stringResource(R.string.act_status_requested),
+                                    color = androidx.compose.material3.MaterialTheme.colorScheme.primary,
+                                    fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                            }
+                        },
+                        confirmButton = {
+                            TextButton(onClick = {
+                                teacherActivateYear = null
+                                scope.launch {
+                                    val code = metaDao.get(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY) ?: com.elyedali.daftarustadh.data.TeacherActivation.newCode().also { metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY, it)) }
+                                    val msg = getString(R.string.tact_msg, (teacherProfile?.name ?: teacherName).orEmpty(), year, code, com.elyedali.daftarustadh.data.TeacherActivation.PRICE)
+                                    val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
+                                    try {
+                                        startActivity(Intent(Intent.ACTION_VIEW, uri))
+                                        metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.TeacherActivation.REQUESTED_KEY, com.elyedali.daftarustadh.data.TeacherActivation.encode(teacherRequested + year)))
+                                    } catch (e: Exception) {
+                                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.ex_no_whatsapp), android.widget.Toast.LENGTH_SHORT).show()
+                                    }
+                                }
+                            }) { Text(stringResource(R.string.act_send)) }
+                        },
+                        dismissButton = { TextButton(onClick = { teacherActivateYear = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
 
