@@ -35,6 +35,8 @@ object TimetableGenerator {
      * @param doubleStarts أرقام الحصص التي يمكن أن تبدأ بها حصة من ساعتين (هي والتي تليها بلا استراحة بينهما)؛
      *                     null = أي حصتين متتاليتين.
      */
+    private fun teacherLoad0(units: List<LessonUnit>, t: Int): Int = units.filter { it.teacherIdx == t }.sumOf { it.size }
+
     fun generate(
         lessons: List<Lesson>,
         dayCount: Int,
@@ -169,8 +171,29 @@ object TimetableGenerator {
             return cost
         }
 
+        // أيام عمل الأستاذ: تُجمع حصصه في أقل عدد من الأيام المتتالية، فتبقى له أيام فارغة كاملة
+        // (يعمل مثلًا بداية الأسبوع، أو نهايته، فيقدر على العمل في مؤسسة أخرى بقية الأيام).
+        // أساتذة المادة الواحدة يتقاسمون الأسبوع: واحد يميل إلى أوله، والآخر إلى آخره.
+        val openDayList = (0 until dayCount).filter { perDay[it] > 0 }
+        val neededDays = IntArray(nT) { t -> ((teacherLoad0(units, t) + 4) / 5).coerceIn(1, openDayList.size.coerceAtLeast(1)) }
+        val leanLate = BooleanArray(nT)
+        units.filter { it.teacherIdx >= 0 }.groupBy { it.subject }.forEach { (_, us) ->
+            us.map { it.teacher }.distinct().sorted().forEachIndexed { i, name -> teacherIndex[name]?.let { if (i % 2 == 1) leanLate[it] = true } }
+        }
+        fun teacherWeekCost(t: Int): Double {
+            val worked = openDayList.filter { d -> (0 until periods).any { p -> teacherAt[t][d * periods + p] >= 0 } }
+            if (worked.isEmpty()) return 0.0
+            val pos0 = worked.map { openDayList.indexOf(it) }
+            var cost = 3.0 * (worked.size - neededDays[t]).coerceAtLeast(0)    // يوم عمل زائد
+            cost += 1.0 * (pos0.last() - pos0.first() + 1 - worked.size)       // يوم فارغ في وسط أيام عمله
+            val last = openDayList.size - 1
+            cost += 0.15 * pos0.sumOf { if (leanLate[t]) last - it else it }  // الميل إلى أول الأسبوع أو آخره
+            return cost
+        }
+
         fun localCost(cls: Int, ts: List<Int>, days: Set<Int>): Double {
             var c = subjectSpreadCost(cls)
+            ts.distinct().forEach { t -> if (t >= 0) c += teacherWeekCost(t) }
             days.forEach { d ->
                 c += classDayCost(cls, d)
                 ts.forEach { t -> if (t >= 0) c += teacherDayCost(t, d) }
