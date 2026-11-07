@@ -32,39 +32,119 @@
    },
    "board": [
     {
-     "h": "1. Les entiers naturels",
+     "h": "Écriture des entiers naturels",
      "lines": [
-      "0, 1, 2, 3, 4, …",
-      "Position du chiffre : unités, dizaines, centaines, milliers…"
+      "L’ensemble des entiers naturels est noté ℕ : 15 ∈ ℕ ; 6,8 ∉ ℕ.",
+      "Selon sa position, un chiffre indique des unités, des dizaines, des centaines, des milliers…",
+      "On sépare les tranches de trois chiffres à partir de la droite : 8 753 192 406.",
+      "Mille est invariable ; vingt et cent prennent un s lorsqu’ils sont multipliés et terminent le nombre."
      ]
     },
     {
-     "h": "2. Comparer et ranger",
+     "h": "Comparer et ranger",
      "lines": [
-      "Ordre croissant : 8 < 510 < 1 205",
-      "Ordre décroissant : 1 205 > 510 > 8"
+      "Le plus petit entier est celui qui a le moins de chiffres.",
+      "S’ils ont le même nombre de chiffres, on compare les chiffres de même position, de gauche à droite.",
+      "Symboles : < ; ≤ ; > ; ≥.",
+      "Ordre croissant : du plus petit au plus grand ; ordre décroissant : du plus grand au plus petit."
      ]
     },
     {
-     "h": "3. Propriétés de l’addition",
+     "h": "Propriétés des opérations",
      "lines": [
-      "Commutativité : a + b = b + a",
-      "Associativité : (a + b) + c = a + (b + c)",
-      "Élément neutre : a + 0 = a"
+      "Distributivité : x × (y + z) = x × y + x × z ;  x × (y − z) = x × y − x × z.",
+      "La soustraction n’est possible que si le premier terme est supérieur ou égal au second.",
+      "Division : dividende = (diviseur × quotient) + reste."
+     ],
+     "table": [
+      [
+       "Propriété",
+       "Addition",
+       "Multiplication"
+      ],
+      [
+       "Commutativité",
+       "x + y = y + x",
+       "x × y = y × x"
+      ],
+      [
+       "Associativité",
+       "(x + y) + z = x + (y + z)",
+       "(x × y) × z = x × (y × z)"
+      ],
+      [
+       "Élément neutre",
+       "x + 0 = x",
+       "x × 1 = x"
+      ]
      ]
     },
     {
-     "h": "4. Propriétés de la multiplication",
+     "h": "Priorités des opérations",
      "lines": [
-      "Commutativité : a × b = b × a",
-      "Élément neutre : a × 1 = a",
-      "Distributivité : k × (a + b) = k × a + k × b"
+      "On calcule d’abord à l’intérieur des parenthèses.",
+      "Puis les puissances, puis les multiplications et les divisions, enfin les additions et les soustractions."
      ]
     },
     {
-     "h": "Application",
+     "h": "Puissances",
      "lines": [
-      "Calcule : 25 × 7 × 4 et 12 × 99 + 12."
+      "aⁿ = a × a × … × a (n facteurs égaux à a) ; a¹ = a ; a⁰ = 1 (a ≠ 0) ; 0⁰ n’a pas de sens.",
+      "aⁿ × aᵖ = aⁿ⁺ᵖ ;  aⁿ × bⁿ = (a × b)ⁿ ;  (aⁿ)ᵖ = aⁿˣᵖ",
+      "Attention : 5² ≠ 5 × 2.",
+      "Décomposition suivant les puissances de 10 : 407 325 = 5 × 10⁰ + 2 × 10¹ + 3 × 10² + 7 × 10³ + 4 × 10⁵."
+     ]
+    },
+    {
+     "h": "Multiples et diviseurs",
+     "lines": [
+      "M₃ = {0 ; 3 ; 6 ; 9 ; 12 ; …} : ensemble des multiples de 3.",
+      "0 est multiple de tout entier ; tout entier est multiple de 1 et de lui-même.",
+      "b divise a (b ≠ 0) si a est multiple de b : 12 = 3 × 4, donc 3 divise 12.",
+      "PPCM(x ; y) : plus petit multiple commun non nul. Exemple : PPCM(3 ; 5) = 15.",
+      "PGCD(a ; b) : plus grand diviseur commun. Exemple : PGCD(36 ; 54) = 9."
+     ]
+    },
+    {
+     "h": "Critères de divisibilité",
+     "lines": [],
+     "table": [
+      [
+       "Divisible par",
+       "Si…"
+      ],
+      [
+       "2",
+       "il se termine par 0, 2, 4, 6 ou 8"
+      ],
+      [
+       "3",
+       "la somme de ses chiffres est divisible par 3"
+      ],
+      [
+       "4",
+       "le nombre formé par ses deux derniers chiffres est divisible par 4"
+      ],
+      [
+       "5",
+       "il se termine par 0 ou 5"
+      ],
+      [
+       "9",
+       "la somme de ses chiffres est divisible par 9"
+      ],
+      [
+       "10",
+       "il se termine par 0"
+      ]
+     ]
+    },
+    {
+     "h": "Nombres premiers",
+     "lines": [
+      "Un nombre premier a exactement deux diviseurs : 1 et lui-même.",
+      "1 n’est pas premier ; 2 est le seul nombre premier pair.",
+      "Décomposition en facteurs premiers : 60 = 2² × 3 × 5 ;  396 = 2² × 3² × 11."
      ]
     }
    ]
@@ -98,33 +178,87 @@
    },
    "board": [
     {
-     "h": "1. Segment, demi-droite, droite",
+     "h": "Segment",
      "lines": [
-      "[AB] : segment limité par A et B",
-      "[Ax) : demi-droite d’origine A",
-      "(AB) : droite illimitée"
+      "On le note [AB] : A et B sont ses extrémités.",
+      "Si M ∈ [AB], alors AM + MB = AB.",
+      "Le milieu I de [AB] vérifie : I ∈ [AB] et IA = IB ; donc AI = AB/2 et AB = 2AI."
+     ],
+     "fig": {
+      "page": 32,
+      "rect": [
+       0.48,
+       0.631,
+       0.818,
+       0.77
+      ],
+      "caption": "Milieu d’un segment"
+     }
+    },
+    {
+     "h": "Demi-droite et droite",
+     "lines": [
+      "La demi-droite [AB) a une origine A mais pas de fin ni de longueur.",
+      "La droite (AB) n’a pas de longueur ; on peut aussi la noter (D) ou (xy).",
+      "Par deux points différents passe une seule droite.",
+      "Trois points sur une même droite sont alignés, et réciproquement."
      ]
     },
     {
-     "h": "2. Positions de deux droites",
+     "h": "Droites sécantes et perpendiculaires",
      "lines": [
-      "Sécantes : un seul point commun",
-      "Perpendiculaires : d1 ⊥ d2 (angle droit)",
-      "Parallèles : d1 // d2 (aucun point commun)"
-     ]
+      "Deux droites sécantes ont un seul point commun : (AB) ∩ (AC) = {A}.",
+      "Deux droites qui forment un angle droit sont perpendiculaires : d ⊥ d′.",
+      "Par un point donné, on ne peut tracer qu’une seule perpendiculaire à une droite."
+     ],
+     "fig": {
+      "page": 36,
+      "rect": [
+       0.295,
+       0.223,
+       0.439,
+       0.314
+      ],
+      "caption": "Droites perpendiculaires"
+     }
     },
     {
-     "h": "3. Médiatrice d’un segment",
+     "h": "Droites parallèles",
      "lines": [
-      "Passe par le milieu du segment",
-      "Perpendiculaire au segment"
-     ]
+      "Deux droites non sécantes sont parallèles : d // d′ (strictement parallèles : aucun point commun ; confondues : tous les points communs).",
+      "Deux droites perpendiculaires à une même droite sont parallèles.",
+      "Par un point A, on ne peut tracer qu’une seule parallèle à une droite d.",
+      "Si d₁ // d₂ et d₂ // d₃, alors d₁ // d₃.",
+      "Si d // d′ et d₁ ⊥ d, alors d₁ ⊥ d′."
+     ],
+     "fig": {
+      "page": 35,
+      "rect": [
+       0.704,
+       0.576,
+       0.912,
+       0.686
+      ],
+      "caption": "Deux parallèles et une perpendiculaire"
+     }
     },
     {
-     "h": "Application",
+     "h": "Médiatrice d’un segment",
      "lines": [
-      "Construis la médiatrice d’un segment [AB] de 6 cm."
-     ]
+      "La médiatrice de [AB] est la droite qui passe par le milieu de [AB] et qui est perpendiculaire à (AB).",
+      "Si M est sur la médiatrice de [AB], alors MA = MB, et réciproquement.",
+      "La médiatrice d’un segment est l’ensemble des points équidistants de ses extrémités."
+     ],
+     "fig": {
+      "page": 38,
+      "rect": [
+       0.489,
+       0.658,
+       0.885,
+       0.861
+      ],
+      "caption": "Construction de la médiatrice"
+     }
     }
    ]
   },
@@ -156,30 +290,30 @@
    },
    "board": [
     {
-     "h": "1. Écriture d’un décimal",
+     "h": "Écriture d’un décimal",
      "lines": [
-      "12,45 : partie entière 12 ; partie décimale 45",
-      "4 dixièmes, 5 centièmes"
+      "Un décimal positif s’écrit avec une virgule : partie entière à gauche, partie décimale à droite.",
+      "L’ensemble des décimaux positifs est noté ID⁺ ; tout entier naturel est un décimal positif.",
+      "Partie décimale : dixièmes, centièmes, millièmes…",
+      "17 689,4235 se lit : dix-sept mille six cent quatre-vingt-neuf virgule quatre mille deux cent trente-cinq."
      ]
     },
     {
-     "h": "2. Comparer et encadrer",
+     "h": "Comparer, encadrer, ranger",
      "lines": [
-      "Comparer les parties entières, puis les dixièmes, les centièmes…",
-      "12 < 12,45 < 13"
+      "On compare d’abord les parties entières ; si elles sont égales, on compare les parties décimales.",
+      "Encadrement à l’unité près : 3 < 3,5 < 4 ; on peut encadrer au dixième, au centième… près.",
+      "Ordre croissant : du plus petit au plus grand ; ordre décroissant : du plus grand au plus petit."
      ]
     },
     {
-     "h": "3. Opérations",
+     "h": "Opérations",
      "lines": [
-      "Addition / soustraction : aligner les virgules",
-      "Multiplication : placer la virgule à la fin"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Range : 3,5 ; 3,05 ; 3,45 ; 3,4."
+      "Addition et soustraction : chiffres de même ordre l’un sous l’autre, virgule à sa place.",
+      "Ordre de grandeur : 3,8 + 2,9 ≈ 4 + 3 = 7.",
+      "La différence est le plus grand moins le plus petit.",
+      "Multiplication : on calcule sans les virgules, puis on place la virgule selon la somme des nombres de décimales des facteurs.",
+      "Le quotient de deux décimaux peut être un décimal (si la division s’arrête)."
      ]
     }
    ]
@@ -212,37 +346,36 @@
    },
    "board": [
     {
-     "h": "1. Notion de fraction",
+     "h": "Notion de fraction",
      "lines": [
-      "a/b : a numérateur, b dénominateur (b ≠ 0)",
-      "3/4 : 3 parts sur 4 parts égales"
+      "Une fraction a/b est le quotient d’un entier a par un entier b non nul : a est le numérateur, b le dénominateur.",
+      "Une fraction de dénominateur 10, 100, 1000… est une fraction décimale.",
+      "Tout décimal s’écrit sous forme de fraction décimale : 12,03 = 1203/100."
      ]
     },
     {
-     "h": "2. Fractions égales et simplification",
+     "h": "Fractions égales et irréductibles",
      "lines": [
-      "a/b = (a × k)/(b × k)",
-      "12/18 = 6/9 = 2/3 (irréductible)"
+      "Multiplier (ou diviser) le numérateur et le dénominateur par un même nombre non nul donne une fraction égale.",
+      "a/b = x/y si et seulement si a × y = b × x (produits en croix)."
      ]
     },
     {
-     "h": "3. Comparaison",
+     "h": "Comparer des fractions",
      "lines": [
-      "Même dénominateur : 2/7 < 5/7",
-      "Même numérateur : 3/8 < 3/5"
+      "Même dénominateur : la plus petite a le plus petit numérateur.",
+      "Même numérateur : la plus petite a le plus grand dénominateur.",
+      "Dénominateurs différents : on réduit au même dénominateur."
      ]
     },
     {
-     "h": "4. Opérations",
+     "h": "Opérations",
      "lines": [
       "a/b + c/b = (a + c)/b",
-      "a/b × c/d = (a × c)/(b × d)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Simplifie 12/18 ; calcule 2/7 + 3/7 et 2/3 × 4/5."
+      "a/b + c/d = (a × d)/(b × d) + (c × b)/(d × b) = (a × d + c × b)/(b × d)",
+      "On peut réduire au même dénominateur avec le PPCM des dénominateurs.",
+      "La soustraction se fait de la même manière (premier terme ≥ second).",
+      "n × a/b = (n × a)/b ;   a/b × c/d = (a × c)/(b × d)"
      ]
     }
    ]
@@ -275,33 +408,96 @@
    },
    "board": [
     {
-     "h": "1. Le triangle",
+     "h": "Triangles",
      "lines": [
-      "3 côtés, 3 sommets, 3 angles",
-      "Somme des angles = 180°",
+      "Un triangle ABC a trois côtés [AB], [BC], [CA] et trois angles Â, B̂, Ĉ.",
+      "La somme des angles d’un triangle est égale à 180°.",
+      "Isocèle en A : AB = AC et B̂ = Ĉ. Équilatéral : trois côtés égaux et Â = B̂ = Ĉ = 60°.",
+      "Rectangle en A : Â = 90° ; [BC] est l’hypoténuse."
+     ],
+     "fig": {
+      "page": 63,
+      "rect": [
+       0.778,
+       0.359,
+       0.915,
+       0.447
+      ],
+      "caption": "Un triangle"
+     }
+    },
+    {
+     "h": "Droites remarquables",
+     "lines": [
+      "Médianes : elles se coupent au centre de gravité.",
+      "Hauteurs : elles se coupent à l’orthocentre H.",
+      "Médiatrices : elles se coupent au centre du cercle circonscrit (cercle passant par les trois sommets).",
+      "La droite qui passe par les milieux de deux côtés est parallèle au troisième ; le segment qui joint ces milieux mesure la moitié du troisième côté.",
+      "La droite qui passe par le milieu d’un côté et qui est parallèle à un deuxième côté coupe le troisième en son milieu."
+     ],
+     "fig": {
+      "page": 66,
+      "rect": [
+       0.558,
+       0.559,
+       0.765,
+       0.657
+      ],
+      "caption": "Les médianes d’un triangle"
+     }
+    },
+    {
+     "h": "Périmètre et aire du triangle",
+     "lines": [
+      "P = AB + AC + BC",
       "Aire = (base × hauteur) / 2"
      ]
     },
     {
-     "h": "2. Le parallélogramme",
+     "h": "Quadrilatères et parallélogramme",
      "lines": [
-      "Côtés opposés parallèles et de même longueur",
-      "Diagonales qui se coupent en leur milieu",
-      "Aire = base × hauteur"
-     ]
+      "Un segment qui joint deux sommets non consécutifs est une diagonale ; un quadrilatère est convexe si ses diagonales sont sécantes.",
+      "Un parallélogramme est un quadrilatère convexe dont les côtés opposés sont parallèles deux à deux.",
+      "Ses côtés opposés ont même longueur, ses diagonales ont même milieu, ses angles consécutifs sont supplémentaires.",
+      "Chacune de ces propriétés permet aussi de reconnaître un parallélogramme."
+     ],
+     "fig": {
+      "page": 71,
+      "rect": [
+       0.69,
+       0.828,
+       0.896,
+       0.9
+      ],
+      "caption": "Un parallélogramme"
+     }
     },
     {
-     "h": "3. Parallélogrammes particuliers",
+     "h": "Parallélogrammes particuliers",
      "lines": [
-      "Rectangle : 4 angles droits ; A = L × l",
-      "Losange : 4 côtés égaux",
-      "Carré : rectangle + losange ; A = c × c"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Angles de 50° et 70° : calcule le troisième."
+      "Un losange qui a un angle droit, ou des diagonales égales, est un carré."
+     ],
+     "table": [
+      [
+       "Figure",
+       "Définition",
+       "Diagonales"
+      ],
+      [
+       "Rectangle",
+       "parallélogramme avec un angle droit",
+       "même longueur et même milieu"
+      ],
+      [
+       "Losange",
+       "parallélogramme avec deux côtés consécutifs égaux",
+       "perpendiculaires et de même milieu"
+      ],
+      [
+       "Carré",
+       "rectangle dont la longueur et la largeur sont égales",
+       "perpendiculaires, de même longueur et de même milieu"
+      ]
      ]
     }
    ]
@@ -334,31 +530,56 @@
    },
    "board": [
     {
-     "h": "1. Situation de proportionnalité",
+     "h": "Tableau de proportionnalité",
      "lines": [
-      "On multiplie toujours par le même nombre (coefficient)",
-      "Exemple : 1 cahier → 20 MRU ; 5 cahiers → 100 MRU"
+      "On passe de la 1ʳᵉ ligne à la 2ᵉ en multipliant toujours par le même nombre : le coefficient de proportionnalité.",
+      "Les produits en croix sont égaux : a × d = b × c."
+     ],
+     "table": [
+      [
+       "Côté a",
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      [
+       "Périmètre p",
+       "3",
+       "6",
+       "9",
+       "12"
+      ]
      ]
     },
     {
-     "h": "2. Propriétés",
+     "h": "Représentation graphique",
      "lines": [
-      "Graphique : droite passant par l’origine",
-      "Produits en croix égaux",
-      "Somme / différence des colonnes"
+      "Une situation de proportionnalité est représentée par des points alignés sur une droite qui passe par l’origine, et réciproquement."
      ]
     },
     {
-     "h": "3. Pourcentage",
+     "h": "Propriétés",
      "lines": [
-      "p % de N = N × p / 100",
-      "20 % de 300 = 60"
+      "À une somme (ou une différence) de valeurs de la 1ʳᵉ ligne correspond la somme (ou la différence) des valeurs associées.",
+      "Au produit (ou quotient) d’une valeur par un nombre correspond le produit (ou quotient) de la valeur associée par ce nombre."
      ]
     },
     {
-     "h": "Application",
+     "h": "Pourcentage",
      "lines": [
-      "Calcule 15 % de 400 MRU."
+      "Un pourcentage ramène une valeur partielle à une valeur totale de 100.",
+      "Exemple : 24 filles sur 60 élèves : 24/60 × 100 = 40 %.",
+      "Prendre a % de M : a × M / 100.",
+      "Augmenter M de a % : M + a × M / 100 ;  diminuer M de a % : M − a × M / 100."
+     ]
+    },
+    {
+     "h": "Échelle",
+     "lines": [
+      "L’échelle est le rapport entre la mesure sur la représentation et la mesure réelle.",
+      "Échelle 1/100 : dimension sur le plan = dimension réelle × 1/100.",
+      "Exemple : 5 cm sur une carte au 1/1 000 000 : 5 × 1 000 000 cm = 50 km."
      ]
     }
    ]
@@ -391,33 +612,59 @@
    },
    "board": [
     {
-     "h": "1. Le cercle",
+     "h": "Cercle",
      "lines": [
-      "Centre O, rayon r",
-      "Corde : joint deux points du cercle",
-      "Diamètre : corde passant par O (d = 2r)",
-      "Arc : portion du cercle"
-     ]
+      "Le cercle 𝒞(O, r) est l’ensemble des points M tels que OM = r.",
+      "Rayon : segment qui joint le centre à un point du cercle ; corde : segment qui joint deux points du cercle ; diamètre : corde qui passe par le centre.",
+      "Les cordes les plus longues sont les diamètres.",
+      "M est à l’intérieur si OM < r, sur le cercle si OM = r, à l’extérieur si OM > r."
+     ],
+     "fig": {
+      "page": 108,
+      "rect": [
+       0.736,
+       0.448,
+       0.884,
+       0.539
+      ],
+      "caption": "Cercle, corde et diamètre"
+     }
     },
     {
-     "h": "2. Le disque",
+     "h": "Périmètre et arcs",
      "lines": [
-      "Partie du plan limitée par le cercle"
-     ]
+      "Périmètre du cercle : P = 2 × π × r = π × d   (π ≈ 3,14).",
+      "Un arc est une portion de cercle entre deux points.",
+      "Longueur d’un demi-cercle : π × r ;  d’un quart de cercle : π × r / 2."
+     ],
+     "fig": {
+      "page": 109,
+      "rect": [
+       0.46,
+       0.727,
+       0.698,
+       0.835
+      ],
+      "caption": "Demi-cercle"
+     }
     },
     {
-     "h": "3. Formules",
+     "h": "Disque",
      "lines": [
-      "Périmètre : P = 2 × π × r = π × d",
-      "Aire : A = π × r × r",
-      "π ≈ 3,14"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Périmètre d’un cercle de rayon 10 cm."
-     ]
+      "Le disque 𝒟(O, r) est la partie du plan limitée par le cercle : ensemble des points M tels que OM ≤ r.",
+      "Aire du disque : A = π × r².",
+      "Exemple : r = 10 cm : A ≈ 3,14 × 100 = 314 cm²."
+     ],
+     "fig": {
+      "page": 111,
+      "rect": [
+       0.722,
+       0.373,
+       0.891,
+       0.498
+      ],
+      "caption": "Disque de centre O et de rayon r"
+     }
     }
    ]
   },
@@ -450,33 +697,77 @@
    },
    "board": [
     {
-     "h": "1. Vocabulaire",
+     "h": "Vocabulaire",
      "lines": [
-      "Série statistique, caractère",
-      "Effectif, effectif total",
-      "Fréquence = effectif / effectif total",
-      "Mode"
+      "Le caractère est la propriété étudiée : quantitatif (valeurs numériques) ou qualitatif (modalités).",
+      "L’effectif d’une valeur est le nombre de fois où elle apparaît ; l’effectif total N est la somme des effectifs.",
+      "Une série statistique est l’ensemble des données recueillies sur un caractère dans une population."
      ]
     },
     {
-     "h": "2. Représentations",
+     "h": "Mode, classes, fréquence",
      "lines": [
-      "Diagramme en bâtons",
-      "Histogramme",
-      "Diagramme circulaire / semi-circulaire"
+      "Le mode est la valeur (ou modalité) qui a le plus grand effectif ; une série peut avoir plusieurs modes.",
+      "Classe : amplitude = plus grande valeur − plus petite ; centre = demi-somme des deux.",
+      "Fréquence = effectif de la donnée / effectif total (≤ 1, peut s’exprimer en %)."
      ]
     },
     {
-     "h": "3. Moyenne et médiane",
+     "h": "Représentations",
      "lines": [
-      "Moyenne = somme des valeurs / effectif total",
-      "Médiane : partage la série rangée en deux"
+      "Histogramme : bandes verticales de hauteurs proportionnelles aux effectifs.",
+      "Diagramme en bâtons : pratique pour un caractère quantitatif.",
+      "Diagrammes circulaire et semi-circulaire : angles au centre proportionnels aux effectifs (360° ou 180° pour l’effectif total)."
+     ],
+     "table": [
+      [
+       "Matière",
+       "Arabe",
+       "Maths",
+       "Français",
+       "Total"
+      ],
+      [
+       "Effectif",
+       "6",
+       "18",
+       "6",
+       "30"
+      ],
+      [
+       "Angle",
+       "36°",
+       "108°",
+       "36°",
+       "180°"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Moyenne et médiane",
      "lines": [
-      "Notes 8, 12, 12, 15, 13 : moyenne et mode."
+      "Moyenne arithmétique = somme des valeurs / nombre de valeurs.",
+      "Moyenne pondérée = somme des (effectif × valeur) / effectif total ; seulement pour un caractère quantitatif.",
+      "La médiane partage les valeurs ordonnées en deux groupes de même effectif.",
+      "13 notes : la 7ᵉ est la médiane ; 14 notes : moyenne de la 7ᵉ et de la 8ᵉ."
+     ],
+     "table": [
+      [
+       "Âge",
+       "12",
+       "13",
+       "14",
+       "15",
+       "16"
+      ],
+      [
+       "Effectif",
+       "2",
+       "6",
+       "9",
+       "5",
+       "3"
+      ]
      ]
     }
    ]
@@ -509,35 +800,79 @@
    },
    "board": [
     {
-     "h": "1. Le cube",
+     "h": "Perspective cavalière",
      "lines": [
-      "6 faces carrées",
-      "12 arêtes égales",
-      "8 sommets",
-      "V = a × a × a"
+      "1) Face avant en vraie grandeur ; 2) fuyantes parallèles, de même longueur mais raccourcies ; 3) arêtes visibles de la face arrière ; 4) arêtes cachées en pointillés.",
+      "Angles de fuite usuels : 30°, 45° ou 60° ; coefficients de réduction usuels : 1/2, 1/3, 2/3…"
      ]
     },
     {
-     "h": "2. Le pavé droit",
+     "h": "Le cube",
      "lines": [
-      "6 faces rectangulaires",
-      "12 arêtes, 8 sommets",
-      "V = L × l × h"
-     ]
+      "6 faces carrées superposables, 12 arêtes de même longueur, 8 sommets.",
+      "Aire d’une face : a² ; aire latérale : 4a² ; aire totale : 6a².",
+      "Volume : V = a³."
+     ],
+     "fig": {
+      "page": 137,
+      "rect": [
+       0.679,
+       0.663,
+       0.913,
+       0.816
+      ],
+      "caption": "Cube en perspective cavalière"
+     }
     },
     {
-     "h": "3. Perspective cavalière",
-     "lines": [
-      "Face avant en vraie grandeur",
-      "Arêtes parallèles restent parallèles",
-      "Arêtes cachées en pointillés"
-     ]
+     "h": "Patron du cube",
+     "lines": [],
+     "fig": {
+      "page": 138,
+      "rect": [
+       0.669,
+       0.672,
+       0.903,
+       0.795
+      ],
+      "caption": "Un patron du cube"
+     }
     },
     {
-     "h": "Application",
+     "h": "Le pavé droit",
      "lines": [
-      "Volume d’un pavé 5 cm × 3 cm × 2 cm."
-     ]
+      "6 faces rectangulaires superposables deux à deux, 12 arêtes, 8 sommets ; le cube est un pavé droit.",
+      "Aire de la base : L × l ; aire latérale : 2 × (L × h + l × h).",
+      "Aire totale : 2 × (L × l + L × h + l × h) ;  volume : V = L × l × h."
+     ],
+     "fig": {
+      "page": 141,
+      "rect": [
+       0.654,
+       0.776,
+       0.909,
+       0.874
+      ],
+      "caption": "Pavé droit"
+     }
+    },
+    {
+     "h": "Le prisme droit",
+     "lines": [
+      "Deux bases polygonales superposables dans des plans parallèles ; les autres faces sont des rectangles.",
+      "Les arêtes latérales sont parallèles, de même longueur (la hauteur) et perpendiculaires aux bases.",
+      "Aire totale = 2 × aire de la base + aire latérale ;  volume = aire de la base × hauteur."
+     ],
+     "fig": {
+      "page": 142,
+      "rect": [
+       0.709,
+       0.697,
+       0.908,
+       0.806
+      ],
+      "caption": "Prisme droit"
+     }
     }
    ]
   }
