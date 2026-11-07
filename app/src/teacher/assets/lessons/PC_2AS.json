@@ -31,23 +31,51 @@
    },
    "board": [
     {
-     "h": "Mélange",
+     "h": "Définition",
      "lines": [
-      "Corps formé de plusieurs constituants"
-     ]
+      "Un mélange est une association de deux ou plusieurs substances (solides, liquides ou gazeuses) qui n’interagissent pas chimiquement."
+     ],
+     "fig": {
+      "page": 8,
+      "rect": [
+       0.272,
+       0.223,
+       0.729,
+       0.438
+      ],
+      "caption": "Exemples de mélanges"
+     }
     },
     {
-     "h": "Types",
-     "lines": [
-      "Hétérogène : on distingue au moins 2 constituants (eau + sable)",
-      "Homogène : un seul aspect (eau + sel)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe : eau + sable ; eau + sucre ; eau + huile."
-     ]
+     "h": "Deux sortes de mélanges",
+     "lines": [],
+     "table": [
+      [
+       "Mélange",
+       "Définition",
+       "Exemples"
+      ],
+      [
+       "Homogène",
+       "On ne distingue pas les constituants à l’œil nu",
+       "Thé, sirop, café, lait"
+      ],
+      [
+       "Hétérogène",
+       "On distingue au moins deux constituants à l’œil nu",
+       "Eau + huile, eau boueuse"
+      ]
+     ],
+     "fig": {
+      "page": 8,
+      "rect": [
+       0.637,
+       0.612,
+       0.935,
+       0.744
+      ],
+      "caption": "Eau + huile et eau boueuse"
+     }
     }
    ]
   },
@@ -77,23 +105,40 @@
    },
    "board": [
     {
-     "h": "Décantation",
+     "h": "La décantation",
      "lines": [
-      "Laisser reposer : les corps lourds se déposent au fond"
-     ]
+      "On laisse reposer le mélange : les corps les plus lourds se déposent au fond du récipient.",
+      "Le liquide s’éclaircit progressivement, puis on le verse délicatement dans un autre récipient.",
+      "Elle sépare des constituants d’un mélange hétérogène."
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.245,
+       0.189,
+       0.756,
+       0.369
+      ],
+      "caption": "Décantation de l’eau boueuse"
+     }
     },
     {
-     "h": "Filtration",
+     "h": "La filtration",
      "lines": [
-      "Filtre dans un entonnoir",
-      "Le filtre retient les solides – le liquide obtenu est le filtrat"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelle méthode utiliser pour séparer le sable de l’eau ? Comment appelle-t-on le liquide obtenu après filtration ?"
-     ]
+      "Le papier filtre, percé de petits trous, laisse passer le liquide et retient les particules solides plus grosses.",
+      "Le solide retenu est le résidu ; le liquide limpide recueilli est le filtrat.",
+      "Elle donne un mélange homogène à partir d’un mélange hétérogène."
+     ],
+     "fig": {
+      "page": 10,
+      "rect": [
+       0.531,
+       0.046,
+       0.794,
+       0.247
+      ],
+      "caption": "Montage de filtration"
+     }
     }
    ]
   },
@@ -125,21 +170,20 @@
     {
      "h": "Principe",
      "lines": [
-      "Chauffer → vaporiser → refroidir → liquéfier"
-     ]
-    },
-    {
-     "h": "Résultats",
-     "lines": [
-      "Distillat = eau distillée (quasiment pure)",
-      "Dans le ballon : les solides dissous"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment appelle-t-on l’eau obtenue par distillation ? Que reste-t-il dans le ballon ?"
-     ]
+      "Elle sépare les constituants d’un mélange homogène de liquides dont les températures de vaporisation sont éloignées.",
+      "On chauffe le ballon jusqu’à l’ébullition ; la vapeur se liquéfie dans le réfrigérant refroidi par l’eau froide.",
+      "Les gouttes recueillies forment le distillat (eau distillée, quasiment pure) ; les solides dissous restent dans le ballon."
+     ],
+     "fig": {
+      "page": 10,
+      "rect": [
+       0.493,
+       0.729,
+       0.933,
+       0.937
+      ],
+      "caption": "Montage de distillation"
+     }
     }
    ]
   },
@@ -175,31 +219,44 @@
    "board": [
     {
      "h": "Composition de l’air",
-     "lines": [
-      "Diazote : 78 %",
-      "Dioxygène : 21 %",
-      "Autres gaz : 1 %"
+     "lines": [],
+     "table": [
+      [
+       "Gaz",
+       "Proportion"
+      ],
+      [
+       "Diazote",
+       "78 %"
+      ],
+      [
+       "Dioxygène",
+       "21 %"
+      ],
+      [
+       "Autres gaz (gaz rares, vapeur d’eau, CO₂)",
+       "1 %"
+      ]
      ]
     },
     {
-     "h": "Masse",
+     "h": "Masse et pression",
      "lines": [
-      "1 L d’air ≈ 1,3 g (0 °C – 1013 hPa)"
-     ]
-    },
-    {
-     "h": "Pression atmosphérique",
-     "lines": [
-      "Mesurée avec un baromètre",
-      "Unité : pascal (Pa) – 1 hPa = 100 Pa",
-      "Niveau de la mer : ≈ 1013 hPa ≈ 1 bar"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelle est la masse de 10 L d’air dans les conditions normales ?"
-     ]
+      "Dans les conditions normales (0 °C et 1013 hPa), 1 L d’air a une masse de 1,3 g.",
+      "La pression atmosphérique est la force exercée par le poids de l’air sur une surface donnée ; elle se mesure avec un baromètre.",
+      "Au niveau de la mer : environ 101 300 Pa = 1013 hPa ≈ 1 bar.",
+      "Unité légale : le pascal (Pa) ; 1 hPa = 100 Pa ; 1 bar = 100 000 Pa."
+     ],
+     "fig": {
+      "page": 11,
+      "rect": [
+       0.754,
+       0.828,
+       0.931,
+       0.944
+      ],
+      "caption": "Le baromètre"
+     }
     }
    ]
   },
@@ -229,22 +286,41 @@
    },
    "board": [
     {
-     "h": "Corps pur simple",
+     "h": "Le corps pur",
      "lines": [
-      "Une seule sorte d’atomes : H₂ – O₂ – N₂"
+      "Substance composée d’un seul type d’entité ; on ne peut pas la décomposer en différentes substances : c’est le contraire d’un mélange."
      ]
     },
     {
-     "h": "Corps pur composé",
-     "lines": [
-      "Plusieurs sortes d’atomes : H₂O – CO₂ – NaCl – C₄H₁₀"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe : O₂ ; H₂O ; N₂ ; CO₂."
-     ]
+     "h": "Simple ou composé",
+     "lines": [],
+     "table": [
+      [
+       "Corps pur",
+       "Définition",
+       "Exemples"
+      ],
+      [
+       "Simple",
+       "Constitué d’atomes d’une seule sorte",
+       "Dihydrogène H₂, dioxygène O₂"
+      ],
+      [
+       "Composé",
+       "Constitué de plusieurs sortes d’atomes",
+       "Eau H₂O, CO₂, butane C₄H₁₀, chlorure de sodium NaCl"
+      ]
+     ],
+     "fig": {
+      "page": 12,
+      "rect": [
+       0.276,
+       0.768,
+       0.724,
+       0.847
+      ],
+      "caption": "Modèles moléculaires : dioxygène, eau, dioxyde de carbone"
+     }
     }
    ]
   },
@@ -277,20 +353,60 @@
     {
      "h": "L’atome",
      "lines": [
-      "Constituant fondamental de la matière"
-     ]
+      "L’atome est le constituant fondamental de la matière.",
+      "Des atomes identiques forment un élément chimique qui possède un symbole."
+     ],
+     "fig": {
+      "page": 12,
+      "rect": [
+       0.272,
+       0.244,
+       0.729,
+       0.34
+      ],
+      "caption": "Modèles des atomes"
+     }
     },
     {
-     "h": "Symboles",
-     "lines": [
-      "Hydrogène H – Oxygène O – Carbone C – Azote N – Chlore Cl",
-      "Sodium Na – Fer Fe – Cuivre Cu – Argent Ag – Or Au"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Donne le symbole de : fer, cuivre, sodium, or."
+     "h": "Quelques symboles",
+     "lines": [],
+     "table": [
+      [
+       "Élément",
+       "Symbole"
+      ],
+      [
+       "Hydrogène",
+       "H"
+      ],
+      [
+       "Oxygène",
+       "O"
+      ],
+      [
+       "Carbone",
+       "C"
+      ],
+      [
+       "Azote",
+       "N"
+      ],
+      [
+       "Sodium",
+       "Na"
+      ],
+      [
+       "Fer",
+       "Fe"
+      ],
+      [
+       "Cuivre",
+       "Cu"
+      ],
+      [
+       "Or",
+       "Au"
+      ]
      ]
     }
    ]
@@ -324,22 +440,53 @@
     {
      "h": "La molécule",
      "lines": [
-      "Association de plusieurs atomes"
+      "Édifice plus ou moins complexe formé par l’association de plusieurs atomes.",
+      "La formule chimique indique la nature et le nombre des atomes liés entre eux."
      ]
     },
     {
-     "h": "Formule",
-     "lines": [
-      "Indique la nature et le nombre des atomes",
-      "H₂O : 2 H + 1 O   CO₂ : 1 C + 2 O",
-      "H₂ – O₂ – N₂ – Cl₂"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Combien d’atomes et de quelles sortes dans la molécule CO₂ ?"
-     ]
+     "h": "Exemples",
+     "lines": [],
+     "table": [
+      [
+       "Molécule",
+       "Formule"
+      ],
+      [
+       "Dihydrogène",
+       "H₂"
+      ],
+      [
+       "Dioxygène",
+       "O₂"
+      ],
+      [
+       "Diazote",
+       "N₂"
+      ],
+      [
+       "Dichlore",
+       "Cl₂"
+      ],
+      [
+       "Eau",
+       "H₂O"
+      ],
+      [
+       "Dioxyde de carbone",
+       "CO₂"
+      ]
+     ],
+     "fig": {
+      "page": 12,
+      "rect": [
+       0.276,
+       0.768,
+       0.724,
+       0.847
+      ],
+      "caption": "Modèles moléculaires"
+     }
     }
    ]
   },
@@ -373,31 +520,65 @@
    },
    "board": [
     {
-     "h": "Circuit simple",
+     "h": "Le circuit",
      "lines": [
-      "Générateur (pile) – lampe – interrupteur – fils",
-      "Schéma avec les symboles des dipôles"
+      "Un circuit électrique comprend au moins un générateur (il fournit le courant), un récepteur et des fils de connexion.",
+      "Un dipôle est un élément électrique qui possède deux bornes."
+     ],
+     "fig": {
+      "page": 20,
+      "rect": [
+       0.133,
+       0.138,
+       0.591,
+       0.32
+      ],
+      "caption": "Circuit : piles, interrupteur, lampe"
+     }
+    },
+    {
+     "h": "Symboles normalisés",
+     "lines": [],
+     "table": [
+      [
+       "Dipôle",
+       "Rôle"
+      ],
+      [
+       "Lampe",
+       "Éclairage"
+      ],
+      [
+       "Fil de connexion",
+       "Relier les dipôles"
+      ],
+      [
+       "Interrupteur ouvert / fermé",
+       "Couper / laisser passer le courant"
+      ],
+      [
+       "Générateur, pile",
+       "Créer le courant"
+      ]
      ]
     },
     {
-     "h": "Conducteurs / isolants",
+     "h": "Conducteurs et isolants",
      "lines": [
-      "Conducteurs : métaux",
-      "Isolants : plastique – bois – verre"
-     ]
-    },
-    {
-     "h": "Circuit fermé / ouvert",
-     "lines": [
-      "Fermé : le courant passe",
-      "Ouvert : le courant ne passe pas"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe en conducteurs et isolants : clou, gomme, fil de cuivre, règle en plastique."
-     ]
+      "Conducteur : laisse passer le courant (métaux : fer, aluminium, cuivre).",
+      "Isolant : ne laisse pas passer le courant (plastique, bois, verre).",
+      "Circuit fermé : boucle complète, le courant circule ; circuit ouvert : le passage est interrompu."
+     ],
+     "fig": {
+      "page": 19,
+      "rect": [
+       0.609,
+       0.108,
+       0.92,
+       0.264
+      ],
+      "caption": "Test de conducteurs et d’isolants"
+     }
     }
    ]
   },
@@ -433,28 +614,39 @@
     {
      "h": "Circuit en série",
      "lines": [
-      "Une seule boucle",
-      "Une panne → tout s’arrête"
-     ]
+      "Les dipôles sont reliés les uns à la suite des autres et forment une seule boucle.",
+      "Si un dipôle est grillé ou dévissé, les autres ne fonctionnent plus.",
+      "L’éclat d’une lampe dépend du nombre de dipôles ; l’ordre n’a pas d’influence."
+     ],
+     "fig": {
+      "page": 21,
+      "rect": [
+       0.218,
+       0.136,
+       0.782,
+       0.303
+      ],
+      "caption": "Lampes en série"
+     }
     },
     {
      "h": "Circuit en dérivation",
      "lines": [
-      "Plusieurs boucles – branche principale et branches dérivées",
-      "Une panne → les autres fonctionnent"
-     ]
-    },
-    {
-     "h": "Lampe torche",
-     "lines": [
-      "Piles + interrupteur + lampe en série"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Les lampes d’une maison sont-elles montées en série ou en dérivation ? Justifie."
-     ]
+      "Les dipôles sont placés dans des branches indépendantes reliées au générateur.",
+      "Branche principale (avec le générateur) et branches dérivées ; un nœud relie plusieurs branches.",
+      "Chaque lampe brille comme si elle était seule ; si une branche est ouverte, les autres fonctionnent.",
+      "C’est le montage des installations domestiques."
+     ],
+     "fig": {
+      "page": 21,
+      "rect": [
+       0.509,
+       0.708,
+       0.77,
+       0.851
+      ],
+      "caption": "Nœuds et branches d’un circuit en dérivation"
+     }
     }
    ]
   },
@@ -486,26 +678,20 @@
     {
      "h": "Mesure",
      "lines": [
-      "Ampèremètre branché en série"
-     ]
-    },
-    {
-     "h": "Unité",
-     "lines": [
-      "Ampère (A)"
-     ]
-    },
-    {
-     "h": "Sens conventionnel",
-     "lines": [
-      "Le courant sort par la borne + et entre par la borne – du générateur"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment brancher un ampèremètre pour mesurer l’intensité qui traverse une lampe ?"
-     ]
+      "L’intensité se mesure avec un ampèremètre (ou un multimètre, bornes COM et A ou mA) branché en série.",
+      "Unité : l’ampère (A) ; 1 A = 1000 mA.",
+      "Sens conventionnel : de la borne + vers la borne − à l’extérieur du générateur."
+     ],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.571,
+       0.801,
+       0.823,
+       0.919
+      ],
+      "caption": "Ampèremètre branché en série"
+     }
     }
    ]
   },
@@ -539,35 +725,56 @@
    },
    "board": [
     {
-     "h": "Loi d’unicité (série)",
+     "h": "Lois de l’intensité",
+     "lines": [],
+     "table": [
+      [
+       "Circuit",
+       "Loi"
+      ],
+      [
+       "En série",
+       "L’intensité est la même en tout point (loi d’unicité)"
+      ],
+      [
+       "En dérivation",
+       "I (branche principale) = I₁ + I₂ (loi des nœuds)"
+      ]
+     ],
+     "fig": {
+      "page": 24,
+      "rect": [
+       0.156,
+       0.367,
+       0.39,
+       0.507
+      ],
+      "caption": "Mesure des intensités en dérivation"
+     }
+    },
+    {
+     "h": "Exemple du manuel",
      "lines": [
-      "L’intensité est la même en tout point"
+      "I = 0,35 A ; I₁ = 0,25 A ; I₂ = 0,10 A : on vérifie I = I₁ + I₂."
      ]
     },
     {
-     "h": "Loi des nœuds (dérivation)",
+     "h": "Court-circuit et effet thermique",
      "lines": [
-      "I = I₁ + I₂"
-     ]
-    },
-    {
-     "h": "Court-circuit",
-     "lines": [
-      "Fil entre les bornes d’un dipôle : il ne fonctionne plus",
-      "Les autres lampes risquent de griller"
-     ]
-    },
-    {
-     "h": "Effet thermique",
-     "lines": [
-      "Un courant élevé échauffe les conducteurs"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Dans un circuit en dérivation, I₁ = 0,25 A et I₂ = 0,10 A. Calcule I dans la branche principale."
-     ]
+      "Un dipôle est court-circuité si ses deux bornes sont reliées par un bon conducteur : il ne fonctionne plus et les autres lampes risquent de griller.",
+      "Effet thermique : un courant élevé échauffe les conducteurs (la laine de fer brûle).",
+      "Applications : fer à repasser, grille-pain, chauffe-eau, radiateurs, sèche-cheveux."
+     ],
+     "fig": {
+      "page": 25,
+      "rect": [
+       0.677,
+       0.537,
+       0.932,
+       0.647
+      ],
+      "caption": "Effet thermique : la laine de fer"
+     }
     }
    ]
   },
@@ -598,22 +805,47 @@
    },
    "board": [
     {
-     "h": "Mesure",
+     "h": "Définition et mesure",
      "lines": [
-      "Voltmètre branché en dérivation"
-     ]
+      "La tension électrique mesure ce qui pousse les électrons à se déplacer dans un circuit.",
+      "Elle se mesure avec un voltmètre (bornes COM et V) branché en dérivation aux bornes du dipôle.",
+      "Unité : le volt (V) ; 1 mV = 0,001 V ; 1 kV = 1000 V."
+     ],
+     "fig": {
+      "page": 26,
+      "rect": [
+       0.376,
+       0.88,
+       0.531,
+       0.948
+      ],
+      "caption": "Voltmètre aux bornes d’un dipôle"
+     }
     },
     {
-     "h": "Unité",
-     "lines": [
-      "Volt (V) – U = 4,5 V",
-      "1 mV = 0,001 V   1 kV = 1000 V"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Convertis : 4500 mV en V ; 2 kV en V."
+     "h": "Dipôles isolés",
+     "lines": [],
+     "table": [
+      [
+       "Dipôle isolé",
+       "Tension"
+      ],
+      [
+       "Pile",
+       "4,5 V"
+      ],
+      [
+       "Lampe",
+       "0 V"
+      ],
+      [
+       "Moteur",
+       "0 V"
+      ],
+      [
+       "Fil de connexion",
+       "0 V"
+      ]
      ]
     }
    ]
@@ -642,15 +874,45 @@
    },
    "board": [
     {
-     "h": "Loi d’additivité",
-     "lines": [
-      "Circuit série : U = U₁ + U₂ + …"
-     ]
+     "h": "Mesures",
+     "lines": [],
+     "table": [
+      [
+       "Tension",
+       "Valeur"
+      ],
+      [
+       "U(lampe)",
+       "1,8 V"
+      ],
+      [
+       "U(fil)",
+       "0 V"
+      ],
+      [
+       "U(moteur)",
+       "2,7 V"
+      ],
+      [
+       "U(pile)",
+       "4,5 V"
+      ]
+     ],
+     "fig": {
+      "page": 27,
+      "rect": [
+       0.238,
+       0.596,
+       0.471,
+       0.7
+      ],
+      "caption": "Circuit série : lampe et moteur"
+     }
     },
     {
-     "h": "Application",
+     "h": "Loi d’additivité",
      "lines": [
-      "Une pile de 4,5 V alimente en série une lampe (U₁ = 1,8 V) et un moteur. Calcule la tension U₂ du moteur."
+      "Dans un circuit en série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles : U(pile) = U(L) + U(M)."
      ]
     }
    ]
@@ -682,21 +944,19 @@
     {
      "h": "Loi d’unicité",
      "lines": [
-      "Dérivation : U pile = U₁ = U₂"
-     ]
-    },
-    {
-     "h": "Comparer",
-     "lines": [
-      "Série : les tensions s’additionnent",
-      "Dérivation : la tension est la même"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Une lampe et un moteur sont montés en dérivation sur une pile de 4,5 V. Quelle est la tension aux bornes du moteur ?"
-     ]
+      "Mesures : U(lampe) = U(moteur) = U(pile) = 4,5 V.",
+      "Des dipôles branchés en dérivation aux bornes d’un générateur sont soumis à la même tension, celle du générateur."
+     ],
+     "fig": {
+      "page": 28,
+      "rect": [
+       0.58,
+       0.281,
+       0.794,
+       0.399
+      ],
+      "caption": "Lampe et moteur en dérivation"
+     }
     }
    ]
   },
@@ -729,25 +989,43 @@
     {
      "h": "Tension nominale",
      "lines": [
-      "Inscrite sur le culot : fonctionnement normal"
-     ]
+      "Inscrite sur le culot de la lampe, c’est la tension qu’elle doit recevoir pour fonctionner normalement."
+     ],
+     "fig": {
+      "page": 28,
+      "rect": [
+       0.718,
+       0.757,
+       0.932,
+       0.892
+      ],
+      "caption": "Tension nominale inscrite sur une lampe"
+     }
     },
     {
-     "h": "Sous-tension",
-     "lines": [
-      "U < U nominale : éclat faible"
-     ]
-    },
-    {
-     "h": "Surtension",
-     "lines": [
-      "U > U nominale : éclat fort, la lampe risque de griller"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Une lampe 3,5 V est branchée sur une pile de 9 V. Que se passe-t-il ?"
+     "h": "Fonctionnement d’une lampe",
+     "lines": [],
+     "table": [
+      [
+       "Tension reçue",
+       "Situation",
+       "Éclat"
+      ],
+      [
+       "Nettement inférieure",
+       "Sous-tension",
+       "Faible"
+      ],
+      [
+       "Égale",
+       "Fonctionnement normal",
+       "Normal"
+      ],
+      [
+       "Nettement supérieure",
+       "Surtension",
+       "Fort : risque de griller"
+      ]
      ]
     }
    ]
@@ -779,22 +1057,46 @@
    },
    "board": [
     {
+     "h": "Effets d’une force",
+     "lines": [],
+     "table": [
+      [
+       "Effet",
+       "Type",
+       "Exemple"
+      ],
+      [
+       "Mettre en mouvement",
+       "Dynamique",
+       "Le footballeur frappe un ballon au repos"
+      ],
+      [
+       "Modifier le mouvement (trajectoire, vitesse)",
+       "Dynamique",
+       "Changer la direction du ballon"
+      ],
+      [
+       "Déformer un objet",
+       "Statique",
+       "La main déforme un chiffon"
+      ]
+     ],
+     "fig": {
+      "page": 38,
+      "rect": [
+       0.605,
+       0.11,
+       0.917,
+       0.241
+      ],
+      "caption": "Le pied exerce une force sur le ballon"
+     }
+    },
+    {
      "h": "Définition",
      "lines": [
-      "Force : action mécanique d’un corps sur un autre"
-     ]
-    },
-    {
-     "h": "Effets",
-     "lines": [
-      "Dynamique : modifie le mouvement",
-      "Statique : déforme le corps"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Indique l’effet : un joueur frappe un ballon ; on écrase une boîte en carton."
+      "Une force est une action mécanique exercée par un objet (l’auteur) sur un autre objet (le receveur).",
+      "Exemple : la main (auteur) pousse le mur (receveur)."
      ]
     }
    ]
@@ -824,22 +1126,35 @@
    },
    "board": [
     {
-     "h": "Forces de contact",
-     "lines": [
-      "Contact entre l’auteur et le receveur : pousser, tirer"
-     ]
-    },
-    {
-     "h": "Forces à distance",
-     "lines": [
-      "Sans contact : aimant – poids (attraction de la Terre)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe : action d’un aimant sur un clou ; action d’une main qui pousse un chariot."
-     ]
+     "h": "Deux types de forces",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Définition",
+       "Exemples"
+      ],
+      [
+       "Forces de contact",
+       "S’exercent seulement s’il y a contact direct",
+       "Marteau sur un clou, vent sur une voile, tension d’un fil, poussée d’une main"
+      ],
+      [
+       "Forces à distance",
+       "Agissent sans contact",
+       "Force gravitationnelle (la Terre attire les objets), force magnétique (aimant et clous)"
+      ]
+     ],
+     "fig": {
+      "page": 39,
+      "rect": [
+       0.712,
+       0.371,
+       0.928,
+       0.516
+      ],
+      "caption": "Un aimant attire des clous"
+     }
     }
    ]
   },
@@ -871,29 +1186,45 @@
    },
    "board": [
     {
-     "h": "Caractéristiques",
+     "h": "Les quatre caractéristiques",
      "lines": [
-      "Point d’application – direction – sens – intensité"
+      "Point d’application : où la force s’exerce.",
+      "Direction : la droite selon laquelle elle agit.",
+      "Sens : indiqué par la pointe de la flèche.",
+      "Intensité : sa valeur, en newtons (N), mesurée au dynamomètre."
+     ],
+     "fig": {
+      "page": 39,
+      "rect": [
+       0.562,
+       0.659,
+       0.929,
+       0.836
+      ],
+      "caption": "Force exercée par la main sur le mur"
+     }
+    },
+    {
+     "h": "Le vecteur-force",
+     "lines": [
+      "Origine = point d’application ; direction et sens = ceux de la force ; longueur proportionnelle à l’intensité selon une échelle."
      ]
     },
     {
-     "h": "Intensité",
+     "h": "Exemple du manuel",
      "lines": [
-      "Dynamomètre – unité : newton (N)"
-     ]
-    },
-    {
-     "h": "Représentation",
-     "lines": [
-      "Vecteur-force : origine = point d’application",
-      "Longueur selon l’échelle (ex. 1 cm pour 2 N)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Une force de 6 N est représentée à l’échelle 1 cm pour 2 N. Quelle est la longueur du vecteur ?"
-     ]
+      "Une boule pèse sur une table avec une force verticale, vers le bas, de 15 N. Échelle 1 cm pour 5 N : vecteur de 3 cm."
+     ],
+     "fig": {
+      "page": 40,
+      "rect": [
+       0.685,
+       0.462,
+       0.927,
+       0.64
+      ],
+      "caption": "Représentation du vecteur-force"
+     }
     }
    ]
   },
@@ -926,28 +1257,77 @@
    },
    "board": [
     {
-     "h": "Sources primaires",
+     "h": "Sources de lumière",
+     "lines": [],
+     "table": [
+      [
+       "Source",
+       "Définition",
+       "Exemples"
+      ],
+      [
+       "Primaire",
+       "Produit sa propre lumière",
+       "Soleil, étoiles, lampes, bougies, feu, écrans"
+      ],
+      [
+       "Secondaire (objet diffusant)",
+       "Renvoie la lumière reçue",
+       "Lune, planètes, murs, livre"
+      ]
+     ],
+     "fig": {
+      "page": 46,
+      "rect": [
+       0.115,
+       0.641,
+       0.885,
+       0.776
+      ],
+      "caption": "Exemples de sources primaires"
+     }
+    },
+    {
+     "h": "Naturelles ou artificielles",
      "lines": [
-      "Produisent la lumière : Soleil – lampe – flamme"
+      "Naturelles : Soleil, étoiles, Lune. Artificielles : lampe électrique, écran, bougie."
      ]
     },
     {
-     "h": "Sources secondaires",
-     "lines": [
-      "Renvoient la lumière reçue : Lune – objets éclairés"
-     ]
-    },
-    {
-     "h": "Récepteurs",
-     "lines": [
-      "Œil – cellule photoélectrique – pellicule – plantes vertes"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe : Soleil, Lune, bougie allumée, cahier éclairé."
-     ]
+     "h": "Récepteurs de lumière",
+     "lines": [],
+     "table": [
+      [
+       "Récepteur",
+       "Effet",
+       "Exemples"
+      ],
+      [
+       "Photochimique",
+       "Transformation chimique",
+       "Chlorure d’argent, pellicule photo"
+      ],
+      [
+       "Photoélectrique",
+       "Production de courant",
+       "Panneaux solaires"
+      ],
+      [
+       "Biologique",
+       "Réaction du vivant",
+       "L’œil (rétine), la peau, les plantes vertes"
+      ]
+     ],
+     "fig": {
+      "page": 48,
+      "rect": [
+       0.282,
+       0.082,
+       0.719,
+       0.243
+      ],
+      "caption": "Pellicule et chlorure d’argent"
+     }
     }
    ]
   },
@@ -982,35 +1362,67 @@
    },
    "board": [
     {
-     "h": "Propagation",
+     "h": "Rayons et faisceaux",
      "lines": [
-      "Rectiligne dans un milieu homogène et transparent",
-      "Rayon : droite + flèche"
+      "Rayon lumineux : ligne imaginaire, sans épaisseur, qui indique la direction de propagation.",
+      "Faisceau : ensemble de rayons ; convergent (loupe), divergent (lampe torche), parallèle (laser)."
+     ],
+     "fig": {
+      "page": 50,
+      "rect": [
+       0.151,
+       0.235,
+       0.85,
+       0.379
+      ],
+      "caption": "Faisceaux divergent, parallèle, convergent"
+     }
+    },
+    {
+     "h": "Propagation rectiligne",
+     "lines": [
+      "La lumière se propage en ligne droite dans les milieux homogènes et transparents.",
+      "Dans un milieu non homogène (air chaud au sol), le trajet se courbe : mirages."
      ]
     },
     {
-     "h": "Faisceaux",
-     "lines": [
-      "Convergent – divergent – parallèle"
-     ]
+     "h": "Milieux et vitesse",
+     "lines": [],
+     "table": [
+      [
+       "Milieu",
+       "Lumière"
+      ],
+      [
+       "Transparent",
+       "Passe complètement"
+      ],
+      [
+       "Translucide",
+       "Passe partiellement"
+      ],
+      [
+       "Opaque",
+       "Ne passe pas"
+      ]
+     ],
+     "fig": {
+      "page": 51,
+      "rect": [
+       0.204,
+       0.197,
+       0.796,
+       0.419
+      ],
+      "caption": "Transparent, translucide, opaque"
+     }
     },
     {
-     "h": "Milieux",
+     "h": "Vitesse de la lumière",
      "lines": [
-      "Transparent : verre – translucide : papier calque – opaque : bois"
-     ]
-    },
-    {
-     "h": "Vitesse",
-     "lines": [
-      "≈ 300 000 km/s dans le vide",
-      "1 année-lumière ≈ 9,46 × 10¹⁵ m"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe : verre, papier calque, carton."
+      "Dans le vide : c ≈ 300 000 km/s = 3·10⁸ m/s ; plus faible dans les milieux matériels.",
+      "Année-lumière : distance parcourue en un an ≈ 9,46·10¹⁵ m.",
+      "Unité astronomique : distance Terre–Soleil = 150 millions de km."
      ]
     }
    ]
@@ -1044,28 +1456,42 @@
     {
      "h": "Définitions",
      "lines": [
-      "Ombre propre : partie non éclairée de l’objet",
-      "Ombre portée : zone sombre sur l’écran",
-      "Pénombre : zone partiellement éclairée"
-     ]
+      "Ombre portée : zone sombre créée par un objet opaque entre la source et une surface ; elle reproduit la forme de l’obstacle.",
+      "Ombre propre : partie non éclairée de l’objet.",
+      "Pénombre : zone partiellement éclairée autour de l’ombre, présente avec une source étendue."
+     ],
+     "fig": {
+      "page": 53,
+      "rect": [
+       0.118,
+       0.268,
+       0.882,
+       0.468
+      ],
+      "caption": "Ombre et pénombre avec une source étendue"
+     }
     },
     {
-     "h": "Sources",
+     "h": "Source ponctuelle",
      "lines": [
-      "Ponctuelle : ombre sans pénombre",
-      "Étendue : ombre + pénombre"
-     ]
+      "Pas de pénombre : seulement ombre et zones de clarté (deux rayons suffisent pour la construire)."
+     ],
+     "fig": {
+      "page": 54,
+      "rect": [
+       0.15,
+       0.046,
+       0.851,
+       0.284
+      ],
+      "caption": "Ombre avec une source ponctuelle"
+     }
     },
     {
-     "h": "Ombre nette",
+     "h": "Grandeur et netteté de l’ombre",
      "lines": [
-      "Source ponctuelle – loin de l’objet – objet proche de l’écran"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi une source ponctuelle ne donne-t-elle pas de pénombre ?"
+      "L’ombre grandit si l’objet se rapproche de la source ou si l’écran s’éloigne.",
+      "Pour une ombre nette : source ponctuelle, source éloignée de l’objet, objet proche de l’écran."
      ]
     }
    ]
@@ -1096,28 +1522,30 @@
    },
    "board": [
     {
-     "h": "Description",
+     "h": "Principe",
      "lines": [
-      "Boîte fermée percée d’un petit trou"
-     ]
+      "Boîte fermée percée d’un petit trou : la lumière entre et projette une image inversée sur la face opposée.",
+      "Les rayons venant du haut de l’objet atteignent le bas de l’écran, et inversement."
+     ],
+     "fig": {
+      "page": 55,
+      "rect": [
+       0.21,
+       0.523,
+       0.79,
+       0.704
+      ],
+      "caption": "Formation de l’image dans la chambre noire"
+     }
     },
     {
-     "h": "Image",
+     "h": "Conclusions",
      "lines": [
-      "Inversée et réduite",
-      "Due au croisement des rayons (propagation rectiligne)"
-     ]
-    },
-    {
-     "h": "Taille de l’image",
-     "lines": [
-      "Objet éloigné du trou → image plus petite"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi l’image dans une chambre noire est-elle inversée ?"
+      "La lumière voyage en ligne droite.",
+      "L’image est inversée par le croisement des rayons.",
+      "La taille du trou influe sur la netteté et la luminosité.",
+      "Plus l’objet est éloigné du trou, plus l’image est petite.",
+      "Principe utilisé dans les appareils photo et les projecteurs."
      ]
     }
    ]
