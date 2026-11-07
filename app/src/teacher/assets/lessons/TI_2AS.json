@@ -33,32 +33,119 @@
     {
      "h": "Définition",
      "lines": [
-      "Ensemble d’éléments qui répondent à un besoin"
+      "Un système technique est un ensemble organisé d’éléments qui interagissent pour remplir une fonction ou répondre à un besoin.",
+      "Il transforme un intrant en un extrant désiré, en utilisant une énergie.",
+      "Exemples : une voiture permet de se déplacer ; un lave-linge lave le linge."
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.091,
+       0.184,
+       0.915,
+       0.471
+      ],
+      "caption": "Des objets techniques"
+     }
+    },
+    {
+     "h": "Évolution et besoins",
+     "lines": [
+      "Ère préindustrielle : outils simples, force animale ; ère industrielle : machine à vapeur, électricité ; ère numérique : électronique, informatique, robotique ; aujourd’hui : intelligence artificielle.",
+      "Besoins : primaires (se nourrir, se loger, se vêtir), de confort, de sécurité, de production et de service."
      ]
     },
     {
-     "h": "Fonctionnement",
+     "h": "Fonctionnement : intrant → système → extrant",
      "lines": [
-      "Intrant → Système → Extrant",
-      "Grille-pain : pain + électricité → pain grillé"
+      "Intrant : ce qui entre (matière, énergie, information) ; extrant : ce qui sort après traitement.",
+      "Exemple du grille-pain : pain + énergie électrique → éléments chauffants, minuterie → pain grillé."
+     ],
+     "fig": {
+      "page": 13,
+      "rect": [
+       0.099,
+       0.209,
+       0.428,
+       0.417
+      ],
+      "caption": "L’ampoule à incandescence"
+     }
+    },
+    {
+     "h": "Les composants",
+     "lines": [],
+     "table": [
+      [
+       "Composant",
+       "Rôle",
+       "Exemples"
+      ],
+      [
+       "Parties opératives",
+       "réalisent les actions",
+       "moteurs, vérins, résistances"
+      ],
+      [
+       "Parties de commande",
+       "gèrent le fonctionnement",
+       "microcontrôleurs, interrupteurs, capteurs"
+      ],
+      [
+       "Sources d’énergie",
+       "alimentent le système",
+       "batteries, prises"
+      ],
+      [
+       "Transducteurs",
+       "convertissent une énergie en une autre",
+       "microphone, haut-parleur"
+      ],
+      [
+       "Organes de liaison",
+       "relient les composants",
+       "fils, tuyaux, engrenages"
+      ]
      ]
     },
     {
-     "h": "Classement",
+     "h": "Classification",
      "lines": [
-      "Transformation – transmission – stockage – contrôle"
+      "Selon la fonction : transmission (câble), stockage (batterie), contrôle (thermostat).",
+      "Selon l’énergie : mécanique, électrique, hydraulique, pneumatique, thermique.",
+      "Selon le domaine : domestique, industriel, transport, médical, agricole.",
+      "Selon l’autonomie : primaire (énergie musculaire), mécanisé (énergie extérieure + commande de l’utilisateur), automatisé (programme : feux de carrefour, guichet automatique), robotisé (capteurs, actionneurs, intelligence artificielle)."
      ]
     },
     {
-     "h": "Modélisation",
-     "lines": [
-      "Schéma fonctionnel – diagramme de blocs – dessin technique"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Donne l’intrant et l’extrant d’une lampe de poche."
+     "h": "Technologie câblée et programmée",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Câblée",
+       "Programmée"
+      ],
+      [
+       "Logique définie par",
+       "le câblage entre composants",
+       "un logiciel (programme)"
+      ],
+      [
+       "Avantages",
+       "fiable, rapide, robuste",
+       "flexible, facile à modifier"
+      ],
+      [
+       "Inconvénients",
+       "rigide, coûteuse à modifier",
+       "bugs possibles, dépend de l’alimentation"
+      ],
+      [
+       "Exemples",
+       "éclairage simple, premiers ascenseurs",
+       "téléphones, ordinateurs, robots modernes"
+      ]
      ]
     }
    ]
@@ -91,31 +178,112 @@
    },
    "board": [
     {
-     "h": "Familles de matériaux",
-     "lines": [
-      "Métalliques : fer – cuivre – aluminium",
-      "Céramiques : verre – béton",
-      "Organiques : bois – plastique",
-      "Composites"
+     "h": "Caractéristiques physiques",
+     "lines": [],
+     "table": [
+      [
+       "Caractéristique",
+       "Définition"
+      ],
+      [
+       "Masse volumique",
+       "masse d’un matériau pour un certain volume"
+      ],
+      [
+       "Densité",
+       "plus elle est grande, plus le matériau est compact"
+      ],
+      [
+       "Résistance mécanique",
+       "capacité à résister à une force sans se casser"
+      ],
+      [
+       "Conductivité thermique",
+       "capacité à conduire la chaleur"
+      ],
+      [
+       "Conductivité électrique",
+       "capacité à conduire l’électricité"
+      ],
+      [
+       "Transparence / opacité",
+       "laisse passer ou non la lumière"
+      ],
+      [
+       "Perméabilité",
+       "laisse passer l’eau, l’air ou le champ magnétique"
+      ],
+      [
+       "Résistance à la corrosion",
+       "résistance à la rouille"
+      ]
+     ],
+     "fig": {
+      "page": 21,
+      "rect": [
+       0.148,
+       0.193,
+       0.853,
+       0.609
+      ],
+      "caption": "Familles de matériaux"
+     }
+    },
+    {
+     "h": "Tableau comparatif",
+     "lines": [],
+     "table": [
+      [
+       "Propriété",
+       "Métalliques",
+       "Céramiques",
+       "Organiques",
+       "Composites"
+      ],
+      [
+       "Masse volumique",
+       "élevée (cuivre, acier)",
+       "moyenne à élevée (verre, béton)",
+       "faible (bois, plastique)",
+       "variable"
+      ],
+      [
+       "Résistance mécanique",
+       "très bonne",
+       "très élevée mais cassants",
+       "faible à moyenne",
+       "excellente"
+      ],
+      [
+       "Conductivité thermique",
+       "très bonne (cuivre, alu)",
+       "faible à moyenne (isolants)",
+       "faible",
+       "variable"
+      ],
+      [
+       "Conductivité électrique",
+       "très bonne (cuivre, or)",
+       "très faible",
+       "très faible",
+       "faible"
+      ],
+      [
+       "Transparence",
+       "opaques",
+       "certains transparents (verre)",
+       "majoritairement opaques",
+       "souvent opaques"
+      ]
      ]
     },
     {
-     "h": "Propriétés",
+     "h": "À retenir",
      "lines": [
-      "Masse volumique – résistance mécanique",
-      "Conductivité thermique et électrique – transparence"
-     ]
-    },
-    {
-     "h": "Choisir un matériau",
-     "lines": [
-      "Selon l’usage : résistance, chaleur, électricité, masse, coût"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi utilise-t-on le cuivre dans les fils électriques ?"
+      "Métaux : solides et conducteurs, mais à protéger de la corrosion.",
+      "Céramiques : dures, résistantes à la chaleur et à la corrosion, mais cassantes et isolantes.",
+      "Organiques : légers, isolants, faciles à façonner, moins résistants et sensibles au vieillissement.",
+      "Composites : légers, résistants, durables, propriétés sur mesure."
      ]
     }
    ]
@@ -147,25 +315,55 @@
    },
    "board": [
     {
-     "h": "Fonction protection",
+     "h": "Fonction de protection",
      "lines": [
-      "Fusible – disjoncteur : coupent le courant",
-      "Masse : contre les chocs électriques",
-      "Paratonnerre : contre la foudre"
+      "Elle préserve les utilisateurs, les équipements et les structures contre les surtensions, les courts-circuits, la chaleur, l’humidité ou les chocs.",
+      "Fusible : interrompt le courant en cas de surcharge ; disjoncteur : coupe automatiquement le courant en cas d’anomalie.",
+      "Mise à la masse : dévie le courant vers la terre ; paratonnerre : protège contre la foudre."
+     ],
+     "fig": {
+      "page": 29,
+      "rect": [
+       0.234,
+       0.148,
+       0.762,
+       0.242
+      ],
+      "caption": "Symboles du fusible et du disjoncteur"
+     }
+    },
+    {
+     "h": "Types de protection",
+     "lines": [
+      "Mécanique : coques, carters, amortisseurs.",
+      "Chimique : peintures anti-corrosion, revêtements ignifuges.",
+      "Électrique : fusibles, disjoncteurs, parasurtenseurs.",
+      "Structures : isolation thermique (laine de verre, polystyrène), portes coupe-feu, étanchéité (joints), résistance aux chocs."
      ]
     },
     {
-     "h": "Fonction réception",
+     "h": "Fonction de réception",
      "lines": [
-      "Capter et transformer une énergie",
-      "Ampoule : électricité → lumière",
-      "Fer à repasser : électricité → chaleur"
-     ]
+      "Elle permet à un objet de recevoir, transformer ou utiliser une énergie pour produire un effet utile.",
+      "Ampoule : électricité → lumière ; fer à repasser : électricité → chaleur ; séchoir : chaleur et mouvement d’air.",
+      "Récepteurs : cellules photovoltaïques, moteurs, résistances, radiateurs."
+     ],
+     "fig": {
+      "page": 27,
+      "rect": [
+       0.137,
+       0.188,
+       0.879,
+       0.465
+      ],
+      "caption": "Protection et réception"
+     }
     },
     {
-     "h": "Application",
+     "h": "Capteurs et domotique",
      "lines": [
-      "Quel dispositif protège une maison contre la foudre ? Et contre un court-circuit ?"
+      "Capteurs de température, de mouvement, de luminosité.",
+      "Capteurs d’ouverture, alarmes, détecteurs de fumée."
      ]
     }
    ]
@@ -199,28 +397,60 @@
     {
      "h": "L’entreprise",
      "lines": [
-      "Produit des biens ou des services pour réaliser un profit",
-      "Privée – publique – coopérative"
+      "Une organisation qui produit des biens ou des services pour les vendre afin de réaliser un profit.",
+      "Selon la taille : micro-entreprise, PME, grande entreprise. Selon le statut : privée, publique, coopérative.",
+      "Rôle : créer des emplois, produire des richesses (PIB), payer des impôts, innover."
      ]
     },
     {
-     "h": "Les secteurs",
+     "h": "Les secteurs d’activité",
+     "lines": [],
+     "table": [
+      [
+       "Secteur",
+       "Description",
+       "Exemples"
+      ],
+      [
+       "Primaire",
+       "exploite les ressources naturelles",
+       "agriculture, pêche, mines"
+      ],
+      [
+       "Secondaire",
+       "transforme les matières premières",
+       "industrie, construction"
+      ],
+      [
+       "Tertiaire",
+       "fournit des services",
+       "commerce, éducation, santé"
+      ]
+     ],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.208,
+       0.186,
+       0.793,
+       0.409
+      ],
+      "caption": "La technologie dans l’agriculture"
+     }
+    },
+    {
+     "h": "Technologies par secteur",
      "lines": [
-      "Primaire : agriculture – pêche – mines",
-      "Secondaire : industrie – construction",
-      "Tertiaire : commerce – éducation – santé"
+      "Primaire : tracteurs, drones agricoles, GPS, sonars, foreuses.",
+      "Secondaire : robots industriels, chaînes automatisées, machines d’emballage, découpe laser.",
+      "Tertiaire : caisse automatique, code-barres, scanner, IRM, tableau interactif."
      ]
     },
     {
-     "h": "Rôle",
+     "h": "Impact des technologies",
      "lines": [
-      "Emplois – richesses – impôts – innovation"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe par secteur : une mine de fer, une laiterie, une banque."
+      "Gain de temps et de productivité ; travail moins pénible.",
+      "Nouveaux métiers ; besoin de se former."
      ]
     }
    ]
@@ -255,26 +485,55 @@
     {
      "h": "Définition",
      "lines": [
-      "Répondre aux besoins du présent sans compromettre ceux des générations futures"
+      "Un développement qui répond aux besoins du présent sans compromettre ceux des générations futures.",
+      "Trois piliers : écologique (protéger l’environnement), économique (produire de manière responsable), social (réduire les inégalités)."
      ]
     },
     {
-     "h": "Trois piliers",
-     "lines": [
-      "Écologie – économie – social"
-     ]
+     "h": "Critères",
+     "lines": [],
+     "table": [
+      [
+       "Critère",
+       "Explication"
+      ],
+      [
+       "Biodiversité",
+       "préserver toutes les formes de vie"
+      ],
+      [
+       "Économie circulaire",
+       "réduire les déchets, recycler, réutiliser"
+      ],
+      [
+       "Énergie renouvelable",
+       "sources inépuisables et propres (solaire, éolienne, hydraulique)"
+      ],
+      [
+       "Réduction des émissions",
+       "lutter contre le réchauffement climatique"
+      ],
+      [
+       "Responsabilité sociale",
+       "droits des travailleurs, éducation, santé"
+      ]
+     ],
+     "fig": {
+      "page": 39,
+      "rect": [
+       0.146,
+       0.464,
+       0.855,
+       0.71
+      ],
+      "caption": "Économie circulaire et énergie renouvelable"
+     }
     },
     {
-     "h": "Leviers",
+     "h": "Actions durables",
      "lines": [
-      "Biodiversité – économie circulaire – énergies renouvelables",
-      "Tri des déchets – compostage – protection des espèces"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Associe : économie circulaire – biodiversité – énergie renouvelable."
+      "Installer des panneaux solaires ; utiliser le vélo ou les transports en commun.",
+      "Acheter local ; trier ses déchets ; protéger les espèces menacées."
      ]
     }
    ]
@@ -306,29 +565,75 @@
    },
    "board": [
     {
-     "h": "Définition",
+     "h": "Le changement climatique",
      "lines": [
-      "Modification durable du climat (réchauffement)"
+      "Modifications durables du climat, notamment une augmentation anormale de la température moyenne mondiale.",
+      "Conséquences : fonte des glaciers, montée de la mer, sécheresses, inondations, disparition d’espèces."
      ]
     },
     {
-     "h": "Gaz à effet de serre",
+     "h": "Les gaz à effet de serre",
      "lines": [
-      "CO₂ – méthane (CH₄) – protoxyde d’azote (N₂O)"
+      "Ils piègent la chaleur dans l’atmosphère comme une couverture ; trop de GES provoque un réchauffement."
+     ],
+     "table": [
+      [
+       "Gaz",
+       "Source principale"
+      ],
+      [
+       "Dioxyde de carbone (CO₂)",
+       "combustibles fossiles (charbon, pétrole, gaz)"
+      ],
+      [
+       "Méthane (CH₄)",
+       "élevage, décharges"
+      ],
+      [
+       "Protoxyde d’azote (N₂O)",
+       "engrais chimiques"
+      ],
+      [
+       "Vapeur d’eau",
+       "naturelle"
+      ]
      ]
     },
     {
      "h": "Causes humaines",
-     "lines": [
-      "Transports – industrie – agriculture intensive",
-      "Déforestation – électricité au charbon"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Vrai ou faux : « Les volcans sont les principaux responsables du réchauffement climatique. »"
-     ]
+     "lines": [],
+     "table": [
+      [
+       "Activité",
+       "Impact"
+      ],
+      [
+       "Transports",
+       "émissions de CO₂"
+      ],
+      [
+       "Industrie",
+       "énergie fossile, rejets de gaz"
+      ],
+      [
+       "Agriculture intensive",
+       "méthane, déforestation"
+      ],
+      [
+       "Déforestation",
+       "moins d’arbres pour absorber le CO₂"
+      ]
+     ],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.101,
+       0.147,
+       0.9,
+       0.692
+      ],
+      "caption": "Industrie, transport, déforestation"
+     }
     }
    ]
   },
@@ -360,29 +665,32 @@
    },
    "board": [
     {
-     "h": "Conséquences naturelles",
+     "h": "Conséquences principales",
      "lines": [
-      "Fonte des glaces – élévation du niveau de la mer",
-      "Ouragans – inondations – incendies",
-      "Disparition d’espèces"
-     ]
+      "Hausse des températures : vagues de chaleur, sécheresses.",
+      "Fonte des glaciers et des calottes polaires ; élévation du niveau de la mer : inondation des côtes.",
+      "Événements extrêmes : ouragans, inondations, incendies.",
+      "Perturbation des écosystèmes : migrations d’animaux, disparition d’espèces.",
+      "Conséquences humaines : moins d’eau et de nourriture, risques pour la santé, migrations climatiques."
+     ],
+     "fig": {
+      "page": 47,
+      "rect": [
+       0.186,
+       0.392,
+       0.497,
+       0.608
+      ],
+      "caption": "Fonte des glaces"
+     }
     },
     {
-     "h": "Conséquences humaines",
+     "h": "Limiter le changement climatique",
      "lines": [
-      "Manque d’eau et de nourriture – maladies – migrations climatiques"
-     ]
-    },
-    {
-     "h": "Agir",
-     "lines": [
-      "Réduire le CO₂ – énergies propres – transports en commun – protéger les forêts"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Propose trois gestes pour limiter le réchauffement climatique."
+      "Transition énergétique : passer des énergies polluantes aux énergies renouvelables.",
+      "Réduire les GES : transports en commun, vélo, isolation des bâtiments, agriculture durable.",
+      "Protéger les écosystèmes : lutter contre la déforestation, replanter des arbres.",
+      "Consommer moins : réparer, recycler, acheter local, éviter le plastique."
      ]
     }
    ]
@@ -417,27 +725,52 @@
     {
      "h": "Définition",
      "lines": [
-      "Énergie issue de sources naturelles inépuisables"
+      "Énergie produite à partir de sources naturelles inépuisables à l’échelle humaine : vent, soleil, eau.",
+      "Elle est propre et respectueuse de l’environnement."
      ]
     },
     {
-     "h": "Types",
-     "lines": [
-      "Éolienne : vent → pales → générateur",
-      "Hydraulique : eau → turbine",
-      "Solaire : soleil → panneaux photovoltaïques"
-     ]
+     "h": "Les trois énergies",
+     "lines": [],
+     "table": [
+      [
+       "Énergie",
+       "Source",
+       "Fonctionnement"
+      ],
+      [
+       "Éolienne",
+       "le vent",
+       "le vent fait tourner les pales qui entraînent un générateur"
+      ],
+      [
+       "Hydraulique",
+       "l’eau",
+       "l’eau en mouvement fait tourner des turbines (barrage)"
+      ],
+      [
+       "Solaire",
+       "le soleil",
+       "photovoltaïque : lumière → électricité ; thermique : chauffe l’eau"
+      ]
+     ],
+     "fig": {
+      "page": 53,
+      "rect": [
+       0.12,
+       0.227,
+       0.88,
+       0.779
+      ],
+      "caption": "Énergies renouvelables"
+     }
     },
     {
      "h": "Caractéristiques",
      "lines": [
-      "Durable – peu de gaz à effet de serre – ressources variées"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Associe : éolienne, barrage, panneau photovoltaïque → leur source d’énergie."
+      "Durabilité : elles ne s’épuisent pas.",
+      "Presque pas de gaz à effet de serre.",
+      "Diversité des ressources ; technologies en progrès."
      ]
     }
    ]

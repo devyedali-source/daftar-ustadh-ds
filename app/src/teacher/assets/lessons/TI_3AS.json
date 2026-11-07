@@ -32,24 +32,47 @@
    },
    "board": [
     {
-     "h": "PowerPoint",
+     "h": "Logiciel de présentation",
      "lines": [
-      "Logiciel de PréAO – présentation = diapositives"
+      "Un logiciel de présentation (PowerPoint, Impress, Google Slides) crée des diapositives pour illustrer un exposé."
      ]
     },
     {
-     "h": "Créer une présentation",
-     "lines": [
-      "1. Nouvelle présentation",
-      "2. Titre et sous-titre",
-      "3. Insertion → Image",
-      "4. Fichier → Enregistrer sous"
+     "h": "L’interface",
+     "lines": [],
+     "table": [
+      [
+       "Élément",
+       "Rôle"
+      ],
+      [
+       "Ruban (onglets)",
+       "Accueil, Insertion, Création…"
+      ],
+      [
+       "Diapositive",
+       "page de la présentation"
+      ],
+      [
+       "Zone de texte",
+       "pour écrire un titre ou un contenu"
+      ],
+      [
+       "Volet des diapositives",
+       "à gauche, pour naviguer"
+      ],
+      [
+       "Barre d’état",
+       "zoom, numéro de diapositive"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Première diapositive",
      "lines": [
-      "Crée une diapositive de titre « Mon école » avec ton nom en sous-titre et enregistre-la."
+      "Titre : le titre de l’exposé ; sous-titre : nom, classe, date.",
+      "Ajouter une image : Insertion → Images ; redimensionner par les coins.",
+      "Enregistrer : Ctrl + S ; formats : .pptx (modifiable), .pdf (lecture seule)."
      ]
     }
    ]
@@ -81,18 +104,41 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Ouvrir une présentation",
      "lines": [
-      "Ouvrir : Fichier → Ouvrir.",
-      "Enregistrer : Fichier → Enregistrer (Ctrl + S).",
-      "Copie : Fichier → Enregistrer sous (nouveau nom).",
-      "Fermer : Fichier → Fermer, après avoir enregistré."
+      "Fichier → Ouvrir → Parcourir ; ou double-clic sur le fichier .pptx ; ou Ctrl + O."
      ]
     },
     {
-     "h": "Application",
+     "h": "Enregistrer ou Enregistrer sous",
      "lines": [
-      "Ouvre ta présentation « Mon_ecole », ajoute une diapositive et enregistre une copie « Mon_ecole_v2 »."
+      "Enregistrer souvent ; ne pas éteindre sans enregistrer."
+     ],
+     "table": [
+      [
+       "Enregistrer (Ctrl + S)",
+       "Enregistrer sous (F12)"
+      ],
+      [
+       "écrase le fichier actuel",
+       "crée un nouveau fichier"
+      ],
+      [
+       "pas de choix du nom ni du dossier",
+       "choix du nom, du dossier, du format"
+      ],
+      [
+       "rapide",
+       "garder une version, exporter en .pdf"
+      ]
+     ]
+    },
+    {
+     "h": "Fermer",
+     "lines": [
+      "Fermer la présentation : Fichier → Fermer.",
+      "Quitter PowerPoint : Fichier → Quitter, Alt + F4 ou la croix.",
+      "Si PowerPoint demande d’enregistrer, répondre Oui."
      ]
     }
    ]
@@ -124,18 +170,51 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Gérer les diapositives",
+     "lines": [],
+     "table": [
+      [
+       "Opération",
+       "Méthode rapide"
+      ],
+      [
+       "Ajouter une diapositive",
+       "Ctrl + M ou Accueil → Nouvelle diapositive"
+      ],
+      [
+       "Supprimer",
+       "sélectionner → touche Suppr (Ctrl + Z pour annuler)"
+      ],
+      [
+       "Dupliquer",
+       "clic droit → Dupliquer la diapositive"
+      ],
+      [
+       "Déplacer",
+       "glisser-déposer dans le volet de gauche"
+      ]
+     ],
+     "fig": {
+      "page": 20,
+      "rect": [
+       0.52,
+       0.649,
+       0.859,
+       0.824
+      ],
+      "caption": "Onglet Accueil → Nouvelle diapositive"
+     }
+    },
+    {
+     "h": "Dispositions",
      "lines": [
-      "Insérer : Accueil → Nouvelle diapositive.",
-      "Supprimer : clic droit → Supprimer.",
-      "Déplacer : glisser la miniature (trieuse).",
-      "Dupliquer : clic droit → Dupliquer."
+      "Diapositive de titre, Titre et contenu, En-tête de section, Deux contenus, Comparaison."
      ]
     },
     {
-     "h": "Application",
+     "h": "Ordre logique d’un exposé",
      "lines": [
-      "Crée une présentation de 4 diapositives, déplace la dernière en 2e position et duplique la première."
+      "Titre → Plan → Développement 1 → Développement 2 → Conclusion."
      ]
     }
    ]
@@ -168,19 +247,51 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Zones de texte",
      "lines": [
-      "Insertion → Zone de texte.",
-      "Accueil : police, taille, couleur.",
-      "Gras, italique, souligné.",
-      "Alignement et puces.",
-      "Peu de texte, lisible."
+      "Zone par défaut : liée à la disposition (« Cliquez pour ajouter un titre »).",
+      "Zone de texte libre : Insertion → Zone de texte, placée n’importe où.",
+      "Sélectionner : double-clic (un mot), triple-clic (un paragraphe), Ctrl + A (tout)."
      ]
     },
     {
-     "h": "Application",
+     "h": "Mise en forme",
+     "lines": [],
+     "table": [
+      [
+       "Action",
+       "Outil / raccourci"
+      ],
+      [
+       "Gras",
+       "Ctrl + G"
+      ],
+      [
+       "Italique",
+       "Ctrl + I"
+      ],
+      [
+       "Souligné",
+       "Ctrl + U"
+      ],
+      [
+       "Centrer",
+       "Ctrl + E"
+      ],
+      [
+       "Police, taille, couleur",
+       "Accueil → groupe Police"
+      ],
+      [
+       "Liste à puces",
+       "Accueil → Puces"
+      ]
+     ]
+    },
+    {
+     "h": "Lisibilité",
      "lines": [
-      "Crée une diapositive « Nos matières » avec une liste à puces de 5 matières, en taille 28 et centrée."
+      "Taille suffisante et couleurs contrastées."
      ]
     }
    ]
@@ -212,18 +323,47 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Insérer une image",
      "lines": [
-      "Insertion → Image.",
-      "Redimensionner avec les poignées d’angle.",
-      "Déplacer en faisant glisser.",
-      "Insertion → Formes (flèches, rectangles…)."
+      "Depuis un fichier : Insertion → Images → Ce périphérique.",
+      "En ligne : Insertion → Images → Images en ligne (vérifier la licence).",
+      "Capture d’écran : Insertion → Capture d’écran."
      ]
     },
     {
-     "h": "Application",
+     "h": "Manipuler une image",
      "lines": [
-      "Insère le logo de ton école sur la première diapositive et ajoute une flèche qui pointe vers le titre."
+      "Redimensionner par les coins (ou Maj + coin) pour garder les proportions.",
+      "Déplacer : cliquer-glisser ; pivoter : flèche circulaire ; supprimer : Suppr.",
+      "Format de l’image : corrections, couleur, effets artistiques, supprimer l’arrière-plan, cadre."
+     ]
+    },
+    {
+     "h": "Formes",
+     "lines": [
+      "Mise en forme : remplissage, contour, effets (ombre, reflet)."
+     ],
+     "table": [
+      [
+       "Forme",
+       "Utilisation"
+      ],
+      [
+       "Rectangle",
+       "encadrer du texte"
+      ],
+      [
+       "Cercle / ovale",
+       "mettre en valeur"
+      ],
+      [
+       "Flèche",
+       "indiquer une direction"
+      ],
+      [
+       "Légende",
+       "ajouter un commentaire"
+      ]
      ]
     }
    ]
@@ -255,18 +395,46 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
-     "lines": [
-      "Lancer : F5 (Diaporama).",
-      "Naviguer : flèches, clic ; Échap pour quitter.",
-      "Transition : effet entre deux diapositives.",
-      "Onglet Transitions : effet et durée."
+     "h": "Le diaporama",
+     "lines": [],
+     "table": [
+      [
+       "Action",
+       "Raccourci"
+      ],
+      [
+       "Lancer depuis le début",
+       "F5"
+      ],
+      [
+       "Lancer depuis la diapositive courante",
+       "Maj + F5"
+      ],
+      [
+       "Diapositive suivante",
+       "flèche droite / Espace / clic"
+      ],
+      [
+       "Diapositive précédente",
+       "flèche gauche"
+      ],
+      [
+       "Aller à une diapositive",
+       "numéro + Entrée"
+      ],
+      [
+       "Quitter",
+       "Échap"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Les transitions",
      "lines": [
-      "Applique une transition « Fondu » à toutes les diapositives et lance le diaporama."
+      "Une transition est un effet visuel au passage d’une diapositive à une autre.",
+      "Onglet Transitions : galerie d’effets, options d’effet, durée, son, « Appliquer à tout ».",
+      "Supprimer : choisir « Aucune ».",
+      "La transition concerne le passage entre diapositives ; l’animation concerne les objets d’une diapositive."
      ]
     }
    ]
@@ -298,18 +466,45 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Vérification finale",
      "lines": [
-      "Vérifier : orthographe, ordre, transitions.",
-      "Présenter : regarder le public, parler clairement.",
-      "Exporter en PDF pour l’envoi.",
-      "Imprimer : Fichier → Imprimer."
+      "Orthographe (F7), ordre des diapositives, lisibilité, images non déformées, transitions cohérentes."
      ]
     },
     {
-     "h": "Application",
+     "h": "Présenter oralement",
      "lines": [
-      "Présente ta présentation en 3 minutes devant la classe, puis exporte-la en PDF."
+      "Avant : connaître son sujet, répéter, préparer l’introduction et la conclusion.",
+      "Pendant : parler fort, regarder le public, ne pas lire ses diapositives.",
+      "Mode présentateur : Alt + F5."
+     ]
+    },
+    {
+     "h": "Exporter et imprimer",
+     "lines": [
+      "Imprimer : diapositives pleine page, pages de commentaires, documents (plusieurs diapositives par page), plan."
+     ],
+     "table": [
+      [
+       "Format",
+       "Utilisation"
+      ],
+      [
+       ".pptx",
+       "modification ultérieure"
+      ],
+      [
+       ".pdf",
+       "diffusion sans modification"
+      ],
+      [
+       ".jpg / .png",
+       "publication des diapositives"
+      ],
+      [
+       ".mp4",
+       "partager en vidéo"
+      ]
      ]
     }
    ]
@@ -342,24 +537,24 @@
    },
    "board": [
     {
-     "h": "Sécurité",
+     "h": "Choisir un site fiable",
      "lines": [
-      "Site fiable : https, cadenas, site officiel",
-      "Ne pas partager ses informations personnelles",
-      "Ne pas cliquer sur les liens suspects"
+      "Vérifier l’adresse (https), l’auteur, la date de mise à jour ; comparer avec d’autres sources."
      ]
     },
     {
-     "h": "Éthique",
+     "h": "Se protéger",
      "lines": [
-      "Citer ses sources – respecter les droits d’auteur",
-      "Être respectueux – ne pas diffuser de fausses informations"
+      "Ne pas cliquer sur des liens inconnus ; informer un adulte en cas de contenu choquant.",
+      "Ne pas partager son mot de passe ni ses informations personnelles ; utiliser un mot de passe fort ; se déconnecter."
      ]
     },
     {
-     "h": "Application",
+     "h": "Respecter les autres",
      "lines": [
-      "Cite trois règles pour naviguer sur Internet en toute sécurité."
+      "Citer la source ; mentionner l’auteur d’un texte ou d’une image.",
+      "Ne pas insulter : c’est interdit et contraire à la netiquette.",
+      "Droit à l’image : ne pas publier la photo d’une personne sans son accord."
      ]
     }
    ]
@@ -391,18 +586,28 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Définition",
      "lines": [
-      "Algorithme : suite finie et ordonnée d’instructions.",
-      "Il a un début et une fin.",
-      "Instructions précises et ordonnées.",
-      "Il est traduit en programme."
+      "Un algorithme est une suite finie et ordonnée d’instructions permettant d’obtenir un résultat à partir de données.",
+      "Caractéristiques : précis, ordonné, fini, efficace."
      ]
     },
     {
-     "h": "Application",
+     "h": "Exemple : préparer un thé",
      "lines": [
-      "Écris l’algorithme pour se laver les mains."
+      "1. Faire chauffer l’eau ; 2. mettre le thé dans la tasse ; 3. verser l’eau chaude ; 4. attendre ; 5. ajouter du sucre."
+     ]
+    },
+    {
+     "h": "Structure",
+     "lines": [
+      "Début",
+      "Lire A",
+      "Lire B",
+      "S ← A + B",
+      "Afficher S",
+      "Fin",
+      "Lire : entrer une valeur ; ← : calcul / affectation ; Afficher : montrer le résultat."
      ]
     }
    ]
@@ -434,18 +639,54 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Définition",
      "lines": [
-      "Variable : emplacement mémoire avec un nom et une valeur.",
-      "Types : entier, réel, caractère, chaîne.",
-      "Déclaration : nom + type.",
-      "Affectation : age ← 14."
+      "Une variable est un espace de la mémoire qui stocke une information.",
+      "Elle a un nom, un type et une valeur qui peut changer."
      ]
     },
     {
-     "h": "Application",
+     "h": "Les types",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Description",
+       "Exemple"
+      ],
+      [
+       "Entier",
+       "nombre sans virgule",
+       "25"
+      ],
+      [
+       "Réel",
+       "nombre avec virgule",
+       "3.14"
+      ],
+      [
+       "Caractère",
+       "une seule lettre",
+       "'A'"
+      ],
+      [
+       "Chaîne",
+       "texte",
+       "« Bonjour »"
+      ]
+     ]
+    },
+    {
+     "h": "Exemple",
      "lines": [
-      "Déclare une variable pour le nom d’un élève et une pour sa moyenne, puis affecte-leur des valeurs."
+      "Variables  nom : chaîne ; age : entier",
+      "Début",
+      "nom ← « Yahya »",
+      "age ← 18",
+      "Afficher « Bonjour », nom",
+      "Afficher « Tu as », age, « ans »",
+      "Fin",
+      "La flèche ← signifie affectation."
      ]
     }
    ]
@@ -477,18 +718,30 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Définition",
      "lines": [
-      "Condition : choix selon vrai ou faux.",
-      "Si… Alors… Sinon… FinSi.",
-      "Opérateurs : =, ≠, <, >, ≤, ≥.",
-      "Exemple : admis si moyenne ≥ 10."
+      "Une condition permet à l’ordinateur de prendre une décision selon qu’une situation est vraie ou fausse."
      ]
     },
     {
-     "h": "Application",
+     "h": "Structure",
      "lines": [
-      "Écris un algorithme qui lit un nombre et affiche « positif » ou « négatif »."
+      "Si condition Alors",
+      "   instruction",
+      "Sinon",
+      "   autre instruction",
+      "FinSi"
+     ]
+    },
+    {
+     "h": "Exemple",
+     "lines": [
+      "Lire age",
+      "Si age >= 18 Alors",
+      "   Afficher « Majeur »",
+      "Sinon",
+      "   Afficher « Mineur »",
+      "FinSi"
      ]
     }
    ]
@@ -520,18 +773,27 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Forme générale",
      "lines": [
-      "Structure : nom, variables, Début, instructions, Fin.",
-      "Lire : saisir une donnée.",
-      "Écrire : afficher un résultat.",
-      "Affectation : s ← a + b."
+      "Algorithme Nom",
+      "Variables …",
+      "Début",
+      "   Instructions",
+      "Fin",
+      "Lire : recevoir une donnée ; Écrire : afficher ; ← : affectation."
      ]
     },
     {
-     "h": "Application",
+     "h": "Exemple : le double d’un nombre",
      "lines": [
-      "Écris un algorithme qui calcule l’aire d’un rectangle."
+      "Algorithme Double",
+      "Variables N, D : entier",
+      "Début",
+      "   Écrire(« Donner un nombre »)",
+      "   Lire(N)",
+      "   D ← N * 2",
+      "   Écrire(« Le double est : », D)",
+      "Fin"
      ]
     }
    ]
@@ -563,18 +825,36 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Tester un algorithme",
      "lines": [
-      "Tester : exécuter avec des valeurs choisies.",
-      "Tableau de suivi : valeur des variables à chaque étape.",
-      "Comparer le résultat obtenu au résultat attendu.",
-      "Corriger en cas d’erreur."
+      "Tester, c’est remplacer les variables par des valeurs et suivre les étapes pour vérifier le résultat."
      ]
     },
     {
-     "h": "Application",
-     "lines": [
-      "Teste l’algorithme « Lire(a) ; Lire(b) ; s ← a + b ; Écrire(s) » avec a = 5 et b = 7."
+     "h": "Exemple : somme de deux nombres",
+     "lines": [],
+     "table": [
+      [
+       "Test",
+       "A",
+       "B",
+       "S = A + B",
+       "Affiché"
+      ],
+      [
+       "1",
+       "3",
+       "5",
+       "8",
+       "8"
+      ],
+      [
+       "2",
+       "10",
+       "7",
+       "17",
+       "17"
+      ]
      ]
     }
    ]
@@ -606,18 +886,29 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Définition",
      "lines": [
-      "Boucle : répéter des instructions.",
-      "Pour : nombre de répétitions connu.",
-      "Tant que : répéter tant que la condition est vraie.",
-      "Exemple : Pour i de 1 à 10 Faire …"
+      "Une boucle répète une ou plusieurs instructions plusieurs fois : plus rapide, plus organisé, moins d’erreurs."
      ]
     },
     {
-     "h": "Application",
+     "h": "Boucle Pour",
      "lines": [
-      "Écris une boucle qui affiche les nombres de 1 à 5."
+      "Quand on connaît le nombre de répétitions.",
+      "Pour i allant de 1 à 5",
+      "   Afficher « Bonjour »",
+      "FinPour"
+     ]
+    },
+    {
+     "h": "Boucle Tant que",
+     "lines": [
+      "Quand on répète selon une condition.",
+      "i ← 1",
+      "Tant que i ≤ 3",
+      "   Afficher i",
+      "   i ← i + 1",
+      "FinTantQue"
      ]
     }
    ]
@@ -649,18 +940,18 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Syntaxes",
      "lines": [
-      "La boucle évite les répétitions d’instructions.",
-      "Initialiser les variables avant la boucle.",
-      "Somme : s ← s + i dans la boucle.",
-      "Vérifier que la boucle s’arrête."
+      "Pour i allant de 1 à 5 Faire … FinPour",
+      "TantQue condition Faire … FinTantQue"
      ]
     },
     {
-     "h": "Application",
+     "h": "Exemple : afficher les nombres de 1 à 10",
      "lines": [
-      "Écris un algorithme qui calcule la somme des nombres de 1 à 100."
+      "Pour i allant de 1 à 10 Faire",
+      "   Écrire i",
+      "FinPour"
      ]
     }
    ]
@@ -692,18 +983,27 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Méthode",
      "lines": [
-      "Repérer les entrées (Lire).",
-      "Repérer le traitement (calculs).",
-      "Repérer les sorties (Écrire / Afficher).",
-      "Exécuter avec des exemples."
+      "1. Lire les variables utilisées ; 2. observer les opérations ; 3. identifier le résultat affiché ; 4. déduire le rôle de l’algorithme."
      ]
     },
     {
-     "h": "Application",
+     "h": "Exemple 1",
      "lines": [
-      "Que fait l’algorithme : Lire(n) ; Si n mod 2 = 0 Alors Écrire(\"pair\") Sinon Écrire(\"impair\") FinSi ?"
+      "Lire N",
+      "Si N mod 2 = 0 Alors Afficher « Nombre pair »",
+      "Sinon Afficher « Nombre impair »",
+      "Rôle : dire si un nombre est pair ou impair."
+     ]
+    },
+    {
+     "h": "Exemple 2",
+     "lines": [
+      "Lire R",
+      "Surface ← 3.14 × R × R",
+      "Afficher Surface",
+      "Rôle : calculer une valeur approchée de la surface d’un cercle."
      ]
     }
    ]
@@ -735,18 +1035,32 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Étapes",
      "lines": [
-      "Analyser : données et résultat attendu.",
-      "Déclarer les variables.",
-      "Écrire : lecture, condition, boucle, affichage.",
-      "Tester avec plusieurs jeux de données."
+      "1. Définir le problème ; 2. écrire les instructions dans l’ordre ; 3. ajouter les variables ; 4. tester avec plusieurs exemples.",
+      "Corriger les erreurs (bogues) ; nommer clairement (calcul_moyenne)."
      ]
     },
     {
-     "h": "Application",
-     "lines": [
-      "Écris et teste un algorithme qui lit trois notes, calcule leur moyenne et affiche « Admis » ou « Refusé »."
+     "h": "Les trois structures de base",
+     "lines": [],
+     "table": [
+      [
+       "Structure",
+       "Description"
+      ],
+      [
+       "Séquence",
+       "les instructions s’exécutent dans l’ordre"
+      ],
+      [
+       "Sélection",
+       "choisir selon une condition (Si … Alors … Sinon)"
+      ],
+      [
+       "Répétition",
+       "répéter des instructions (boucle)"
+      ]
      ]
     }
    ]
@@ -778,18 +1092,33 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Définition",
      "lines": [
-      "Réseau : appareils reliés pour échanger et partager.",
-      "Partage : fichiers, imprimante, Internet.",
-      "Équipements : serveur, clients, switch, routeur, câbles, WiFi.",
-      "Sécurité : mots de passe."
+      "Un réseau est un ensemble d’ordinateurs et d’appareils reliés pour échanger des informations ou partager des équipements."
+     ],
+     "fig": {
+      "page": 98,
+      "rect": [
+       0.64,
+       0.588,
+       0.933,
+       0.749
+      ],
+      "caption": "Un réseau informatique"
+     }
+    },
+    {
+     "h": "Avantages",
+     "lines": [
+      "Partager des fichiers, une connexion Internet, des périphériques (imprimante) ; communiquer."
      ]
     },
     {
-     "h": "Application",
+     "h": "Équipements",
      "lines": [
-      "Cite trois avantages d’un réseau dans la salle informatique."
+      "Ordinateurs et périphériques (hôtes) ; commutateur (switch) : relie les appareils du réseau.",
+      "Routeur / box : relie le réseau local à Internet ; câbles Ethernet (RJ45) ou Wi-Fi.",
+      "Internet est le « réseau des réseaux »."
      ]
     }
    ]
@@ -822,19 +1151,37 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
-     "lines": [
-      "Clients : ordinateurs des utilisateurs.",
-      "Serveur : stocke et partage les ressources.",
-      "Switch : relie les appareils du réseau local.",
-      "Routeur : relie le réseau à Internet.",
-      "Câbles RJ45 ou WiFi ; carte réseau."
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Associe : switch – routeur – serveur → leur rôle."
+     "h": "Les composantes",
+     "lines": [],
+     "table": [
+      [
+       "Élément",
+       "Rôle"
+      ],
+      [
+       "Serveur",
+       "ordinateur central qui fournit des services"
+      ],
+      [
+       "Postes clients",
+       "ordinateurs reliés au serveur"
+      ],
+      [
+       "Switch",
+       "relie les ordinateurs entre eux"
+      ],
+      [
+       "Câbles Ethernet",
+       "connexion filaire"
+      ],
+      [
+       "Wi-Fi",
+       "connexion sans fil"
+      ],
+      [
+       "Imprimante réseau",
+       "partagée entre plusieurs utilisateurs"
+      ]
      ]
     }
    ]
@@ -867,19 +1214,29 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
-     "lines": [
-      "Chaque appareil a une adresse IP.",
-      "L’information circule en paquets.",
-      "PAN : réseau personnel.",
-      "LAN : réseau local (école).",
-      "MAN : ville ; WAN : étendu (Internet)."
+     "h": "Types de réseaux",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Portée"
+      ],
+      [
+       "LAN (réseau local)",
+       "une salle, une maison, un collège"
+      ],
+      [
+       "WAN (réseau étendu)",
+       "une ville, un pays, le monde"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Le chemin de l’information",
      "lines": [
-      "Classe : le réseau de ta salle informatique, Internet, la connexion Bluetooth entre ton téléphone et un écouteur."
+      "Clients : demandent un service ; switch : dirige le trafic dans le réseau local ; routeur : porte de sortie vers Internet.",
+      "Dans un même LAN, un fichier passe par le switch sans passer par Internet.",
+      "Une adresse IP identifie un appareil sur le réseau."
      ]
     }
    ]
@@ -912,20 +1269,22 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Utiliser le réseau local",
      "lines": [
-      "Se connecter : câble ou WiFi.",
-      "Explorateur → Réseau : ressources partagées.",
-      "Ouvrir ou copier un fichier partagé.",
-      "Imprimer sur l’imprimante réseau.",
-      "Respecter les fichiers des autres."
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Copie un fichier depuis le dossier partagé de la classe vers ton dossier personnel."
-     ]
+      "Se connecter par câble ou Wi-Fi ; vérifier l’icône réseau.",
+      "Fichiers partagés : Ce PC → Réseau → dossier partagé.",
+      "Imprimer : Fichier → Imprimer → choisir l’imprimante réseau."
+     ],
+     "fig": {
+      "page": 104,
+      "rect": [
+       0.6,
+       0.545,
+       0.933,
+       0.789
+      ],
+      "caption": "Schéma d’un réseau local"
+     }
     }
    ]
   },
@@ -956,18 +1315,59 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Définition",
      "lines": [
-      "E-mail : message envoyé par Internet.",
-      "Adresse : nom@fournisseur.domaine.",
-      "@ : arobase.",
-      "Éléments : destinataire, objet, message, pièce jointe."
+      "Un e-mail (courrier électronique) est un message envoyé et reçu via Internet : communication rapide, envoi de documents."
      ]
     },
     {
-     "h": "Application",
+     "h": "Structure d’un e-mail",
+     "lines": [],
+     "table": [
+      [
+       "Champ",
+       "Rôle"
+      ],
+      [
+       "À",
+       "adresse du destinataire"
+      ],
+      [
+       "Cc",
+       "copie visible"
+      ],
+      [
+       "Cci",
+       "copie cachée"
+      ],
+      [
+       "Objet",
+       "sujet du message"
+      ],
+      [
+       "Corps",
+       "contenu du message"
+      ],
+      [
+       "Pièce jointe",
+       "fichier attaché"
+      ]
+     ],
+     "fig": {
+      "page": 113,
+      "rect": [
+       0.507,
+       0.054,
+       0.911,
+       0.223
+      ],
+      "caption": "Une boîte de messagerie"
+     }
+    },
+    {
+     "h": "Sécurité",
      "lines": [
-      "Identifie les parties de l’adresse : sidi.ahmed@yahoo.fr."
+      "Vérifier l’adresse ; ne pas partager son mot de passe ; ne pas ouvrir un e-mail suspect ; être poli."
      ]
     }
    ]
@@ -1000,19 +1400,24 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Règles de rédaction",
      "lines": [
-      "Nouveau message.",
-      "À : destinataire ; Cc : copie ; Cci : copie cachée.",
-      "Objet court et clair.",
-      "Formule d’appel, message, formule de politesse.",
-      "Relire puis Envoyer."
+      "Objet clair ; commencer par « Bonjour » et finir par « Cordialement » ; message structuré ; relire ; signer (prénom, nom, classe)."
      ]
     },
     {
-     "h": "Application",
+     "h": "Exemple",
      "lines": [
-      "Rédige un e-mail à ton professeur pour lui demander le cours de la semaine dernière."
+      "À : professeur@ecole.com",
+      "Objet : Demande d’information sur le projet",
+      "Bonjour Monsieur, je vous écris pour avoir plus d’informations sur le projet de science. Cordialement. [Nom]"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Un e-mail a un destinataire, un objet et un corps.",
+      "Cc pour informer d’autres personnes ; Cci pour les cacher."
      ]
     }
    ]
@@ -1045,19 +1450,23 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Définition",
      "lines": [
-      "Pièce jointe : fichier envoyé avec l’e-mail.",
-      "Icône trombone : Joindre un fichier.",
-      "Vérifier le fichier avant l’envoi.",
-      "Attention à la taille des fichiers.",
-      "Ne pas ouvrir les pièces jointes d’inconnus."
+      "Une pièce jointe est un fichier attaché à un e-mail (photo, document, présentation)."
      ]
     },
     {
-     "h": "Application",
+     "h": "Étapes",
      "lines": [
-      "Envoie ton devoir (fichier Word) en pièce jointe à ton professeur."
+      "1. Nouveau message ; 2. destinataire et objet ; 3. cliquer sur le trombone (Joindre un fichier) ; 4. choisir le fichier → Ouvrir ; 5. vérifier que son nom apparaît ; 6. Envoyer."
+     ]
+    },
+    {
+     "h": "Précautions",
+     "lines": [
+      "Les fichiers trop lourds ne passent pas toujours.",
+      "Ne pas ouvrir les pièces jointes des inconnus.",
+      "Vérifier le destinataire et le bon fichier avant d’envoyer."
      ]
     }
    ]
@@ -1090,19 +1499,18 @@
    },
    "board": [
     {
-     "h": "L’essentiel",
+     "h": "Lire et répondre",
      "lines": [
-      "Boîte de réception : messages reçus.",
-      "Non lus : en gras.",
-      "Répondre, transférer, supprimer.",
-      "Classer dans des dossiers.",
-      "Spam : courrier indésirable."
+      "Se connecter : adresse e-mail + mot de passe.",
+      "Boîte de réception : les messages non lus sont en gras ; on voit l’expéditeur, l’objet, la date, les pièces jointes.",
+      "Répondre : Répondre → écrire → Envoyer."
      ]
     },
     {
-     "h": "Application",
+     "h": "Organiser",
      "lines": [
-      "Crée un dossier « École » dans ta boîte mail et déplace-y un message de ton professeur."
+      "Créer des dossiers (École, Travail) ; déplacer les messages ; supprimer les messages inutiles.",
+      "Ranger aide à retrouver un message et garde la boîte propre."
      ]
     }
    ]
