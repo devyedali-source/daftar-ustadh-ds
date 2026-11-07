@@ -32,33 +32,107 @@
    },
    "board": [
     {
-     "h": "Exprimer ses goûts",
+     "h": "Texte : la fête de l’Aïd el Kébir",
      "lines": [
-      "J’aime / J’adore / Je préfère / Je choisis…",
-      "Je n’aime pas / Je déteste…",
-      "… parce que / car …"
+      "Tout le monde portait une tenue neuve : les plus grands préfèrent le grand boubou, ceux de ma classe d’âge aiment le « Samandor Ganila » brodé, d’autres choisissent le « Wax » ou le « Tergal ».",
+      "Après la prière, l’imam égorge son mouton ; les femmes et les jeunes filles préparent les mets."
+     ],
+     "fig": {
+      "page": 10,
+      "rect": [
+       0.304,
+       0.32,
+       0.621,
+       0.411
+      ],
+      "caption": "Des vêtements"
+     }
+    },
+    {
+     "h": "Vocabulaire : exprimer ses goûts",
+     "lines": [
+      "Nuancer une opinion : c’est bon ; c’est assez bon ; c’est très bon ; c’est excellent ; ce n’est pas bon ; c’est mauvais ; je pense que… ; je crois que…"
+     ],
+     "table": [
+      [
+       "J’aime",
+       "Je n’aime pas",
+       "J’adore",
+       "Je déteste"
+      ],
+      [
+       "J’aime lire",
+       "Je n’aime pas lire",
+       "J’adore marcher",
+       "Je déteste attendre"
+      ],
+      [
+       "J’aime le sport",
+       "Je n’aime pas le sport",
+       "J’adore le basket",
+       "Je déteste le froid"
+      ]
      ]
     },
     {
-     "h": "Types de phrases",
+     "h": "Grammaire : les types de phrases",
      "lines": [
-      "déclarative : J’aime beaucoup le grand boubou.",
-      "interrogative : Pourquoi tu ne portes pas la même tenue ?",
-      "impérative : Ne parle pas comme ça !",
-      "exclamative : Quel jeune homme audacieux tu es !"
+      "Interrogative : pour poser une question. Totale (réponse oui/non) ou partielle (Où iras-tu ?).",
+      "Déclarative : pour affirmer (J’aime beaucoup le grand boubou.).",
+      "Impérative : pour un ordre, un interdit (Ne parle pas comme ça !).",
+      "Exclamative : pour une émotion (Quel jeune homme audacieux tu es !).",
+      "Formes : affirmative, négative ou emphatique (C’est ce tailleur qui a créé ce modèle)."
      ]
     },
     {
      "h": "La négation",
      "lines": [
-      "ne…pas – ne…jamais – ne…rien – ne…plus",
-      "ne…aucun – ne…ni…ni – ne…que (restrictive)"
+      "Locutions : ne…pas ; ne…jamais ; ne…rien ; ne…plus ; ne…guère ; ne…point ; ne…aucun ; ne…ni…ni ; ne…que.",
+      "Avec l’infinitif : ne pas avant le verbe (Ne pas aller à l’école est une mauvaise habitude).",
+      "Temps simple : la locution encadre le verbe (Fatimétou ne porte pas de voile).",
+      "Temps composé : elle encadre l’auxiliaire (Fatimétou n’a pas porté de voile).",
+      "ne…que : négation restrictive (Je n’ai vu que la silhouette du voleur).",
+      "Négation totale avec pas / point ; partielle avec les autres éléments."
      ]
     },
     {
-     "h": "Application",
+     "h": "Orthographe : on / on n’",
      "lines": [
-      "Mets à la forme négative : « J’aime le grand boubou et le caftan. »"
+      "on + voyelle (liaison) : on y voit clair ; on en parlera plus tard.",
+      "on n’ (négation) : on n’y voit rien ; on n’en parle jamais."
+     ]
+    },
+    {
+     "h": "Conjugaison : présent et passé composé",
+     "lines": [
+      "Le présent correspond au moment où l’on parle ; il exprime aussi une vérité générale (L’eau bout à 100 °C).",
+      "Passé composé : avoir ou être au présent + participe passé (J’ai porté un boubou ; Il est arrivé)."
+     ],
+     "table": [
+      [
+       "Groupe",
+       "Terminaisons du présent"
+      ],
+      [
+       "1ᵉʳ groupe (-er)",
+       "-e, -es, -e, -ons, -ez, -ent"
+      ],
+      [
+       "2ᵉ groupe (-ir, -issant)",
+       "-is, -is, -it, -issons, -issez, -issent"
+      ],
+      [
+       "3ᵉ groupe -oir (vouloir)",
+       "-x, -x, -t, -ons, -ez, -ent"
+      ],
+      [
+       "3ᵉ groupe -dre (vendre)",
+       "-ds, -ds, -d, -ons, -ez, -ent"
+      ],
+      [
+       "3ᵉ groupe -tre / -pre",
+       "-s, -s, -t, -ons, -ez, -ent"
+      ]
      ]
     }
    ]
@@ -90,30 +164,46 @@
    },
    "board": [
     {
-     "h": "Deux métiers",
+     "h": "Les personnages",
      "lines": [
-      "Infirmière d’État : aide les malades",
-      "Assistante sociale : aide les personnes en difficulté sociale"
+      "Hafsa : infirmière d’État, elle travaille aux urgences.",
+      "Nafi : assistante sociale, nouvellement affectée au centre."
      ]
     },
     {
-     "h": "Comparer",
-     "lines": [
-      "Point commun : l’assistance",
-      "Différence : la maladie / la difficulté sociale"
+     "h": "Deux métiers différents",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Infirmière",
+       "Assistante sociale"
+      ],
+      [
+       "Point commun",
+       "aider les personnes",
+       "aider les personnes"
+      ],
+      [
+       "Aide apportée",
+       "quand elles sont malades",
+       "quand elles sont en difficulté sociale"
+      ]
      ]
     },
     {
-     "h": "Expliquer son choix",
+     "h": "Le choix de Nafi",
      "lines": [
-      "J’ai choisi… parce que…",
-      "Je n’ai pas choisi… car je n’aime pas…"
+      "Pendant la formation, elle a hésité entre les deux métiers (tronc commun).",
+      "« Je n’ai pas choisi le métier d’infirmière pour une raison simple. Je n’aime pas la dimension soin : les piqûres, la maladie, la mort… »"
      ]
     },
     {
-     "h": "Application",
+     "h": "Expressions utiles",
      "lines": [
-      "Présente en 5 lignes un métier de ton quartier : ce qu’il apporte et ses difficultés."
+      "Se présenter : Je m’appelle… ; Je suis assistante sociale.",
+      "Comparer : nos métiers sont similaires / très différents ; vous…, tandis que nous…",
+      "Prendre congé : Je suis ravie de faire ta connaissance. — Le plaisir est pour moi. Au revoir."
      ]
     }
    ]

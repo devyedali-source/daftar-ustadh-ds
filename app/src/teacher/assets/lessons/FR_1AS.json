@@ -34,49 +34,130 @@
    },
    "board": [
     {
-     "h": "Me présenter",
+     "h": "Se présenter",
      "lines": [
-      "Je m’appelle …",
-      "J’ai … ans.",
-      "Je suis élève au collège …",
-      "J’habite à …"
-     ]
+      "Salut, Youssouf ! Je m’appelle Mohamed.",
+      "Je suis élève au collège Dar Naim 3. J’ai 13 ans.",
+      "J’ai deux frères et une sœur. J’habite près du carrefour Ould Badou.",
+      "Pour se présenter : nom, âge, origine, collège et classe, famille, quartier, goûts."
+     ],
+     "fig": {
+      "page": 13,
+      "rect": [
+       0.141,
+       0.181,
+       0.859,
+       0.319
+      ],
+      "caption": "La cour du collège"
+     }
     },
     {
-     "h": "Questions pour s’informer",
+     "h": "Vocabulaire : les liens de parenté",
      "lines": [
-      "Comment t’appelles-tu ?",
-      "Quel âge as-tu ?",
-      "Où habites-tu ?"
-     ]
-    },
-    {
-     "h": "Vocabulaire : la parenté",
-     "lines": [
-      "le père, la mère, le frère, la sœur",
-      "l’oncle, la tante, le cousin, la cousine",
-      "le neveu, la nièce, le grand-père, la grand-mère"
+      "Le père, la mère, le fils, la fille, le grand-père, la grand-mère.",
+      "Le frère, la sœur, l’oncle, la tante, le neveu, la nièce.",
+      "Le cousin, la cousine, le beau-frère, la belle-sœur."
      ]
     },
     {
      "h": "Grammaire : les pronoms personnels",
      "lines": [
-      "Sujets : je, tu, il/elle, nous, vous, ils/elles",
-      "Compléments : me, te, le, la, lui, nous, vous, les, leur"
+      "Ils remplacent des noms ou des groupes nominaux et varient en genre et en nombre.",
+      "Le pronom peut être sujet ou complément.",
+      "Attention : le, la, l’, les placés avant un verbe sont des pronoms (je le vends) ; devant un nom, ce sont des articles (le cahier)."
+     ],
+     "table": [
+      [
+       "Personne",
+       "Sujet",
+       "Insistance",
+       "Complément"
+      ],
+      [
+       "1ʳᵉ sing.",
+       "je",
+       "moi",
+       "me / m’"
+      ],
+      [
+       "2ᵉ sing.",
+       "tu",
+       "toi",
+       "te / t’"
+      ],
+      [
+       "3ᵉ sing.",
+       "il / elle / on",
+       "lui / elle",
+       "le / la / l’ / lui"
+      ],
+      [
+       "1ʳᵉ plur.",
+       "nous",
+       "nous",
+       "nous"
+      ],
+      [
+       "2ᵉ plur.",
+       "vous",
+       "vous",
+       "vous"
+      ],
+      [
+       "3ᵉ plur.",
+       "ils / elles",
+       "eux / elles",
+       "les / leur"
+      ]
      ]
     },
     {
-     "h": "Orthographe : a / à – on / ont",
+     "h": "Conjugaison : accord du verbe avec son sujet",
      "lines": [
-      "a = verbe avoir : il a faim.",
-      "à = préposition : aller à Kiffa.",
-      "ont = verbe avoir : ils ont ; on = pronom : on joue."
+      "Dans une phrase verbale, le verbe conjugué s’accorde avec son sujet."
      ]
     },
     {
-     "h": "Application",
+     "h": "Orthographe : a / à — on / ont",
      "lines": [
-      "Présente un camarade à la classe."
+      "a (sans accent) : verbe ou auxiliaire avoir : il a faim ; il a mangé.",
+      "à (avec accent) : préposition : aller à Kiffa.",
+      "ont : verbe avoir (ils ont) ;  on : pronom sujet (on part)."
+     ]
+    },
+    {
+     "h": "La ponctuation",
+     "lines": [],
+     "table": [
+      [
+       "Signe",
+       "Emploi"
+      ],
+      [
+       "Le point (.)",
+       "pour finir une phrase"
+      ],
+      [
+       "Le point d’interrogation (?)",
+       "à la fin d’une question"
+      ],
+      [
+       "Le point d’exclamation (!)",
+       "pour montrer son émotion"
+      ],
+      [
+       "Les deux points (:)",
+       "pour annoncer ou expliquer"
+      ],
+      [
+       "Les guillemets (« … »)",
+       "quand quelqu’un prend la parole"
+      ],
+      [
+       "Le tiret (–)",
+       "avant la réplique d’une autre personne"
+      ]
      ]
     }
    ]
@@ -110,44 +191,121 @@
    },
    "board": [
     {
+     "h": "Texte : Ma chambre",
+     "lines": [
+      "« Je partage ma chambre avec ma grande sœur. Il y a deux lits, un à côté de l’autre… Au milieu, il y a une longue table de nuit avec des étagères au-dessus… Derrière la porte, à gauche, on voit trois posters… »"
+     ],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.178,
+       0.268,
+       0.82,
+       0.428
+      ],
+      "caption": "Une chambre à coucher"
+     }
+    },
+    {
      "h": "Décrire un lieu",
      "lines": [
-      "1. Informations générales",
-      "2. Détails de chaque partie"
+      "On donne d’abord les informations générales pour que le lecteur se fasse une idée globale.",
+      "Puis les détails : des précisions sur chaque partie de ce qui est décrit."
      ]
     },
     {
-     "h": "Vocabulaire : la localisation",
+     "h": "Vocabulaire : la localisation spatiale",
      "lines": [
-      "à droite – à gauche – devant – derrière",
-      "au milieu – à côté de – au fond – sur – sous"
+      "Pour situer : à droite, à gauche, devant, derrière, au milieu, à côté de, au fond, au-dessus, au-dessous, sur, sous.",
+      "On classe ces outils selon l’éloignement, la proximité, le rapport horizontal ou vertical."
      ]
     },
     {
-     "h": "Grammaire : l’adjectif épithète",
+     "h": "Grammaire : les expansions du nom (1)",
      "lines": [
-      "ma sœur → ma grande sœur",
-      "une table → une longue table"
+      "Déterminant + nom = groupe nominal minimal : ma sœur ; une table.",
+      "L’adjectif qualificatif épithète est directement relié au nom : ma grande sœur ; une longue table ; une petite porte."
      ]
     },
     {
-     "h": "Conjugaison",
+     "h": "Conjugaison : avoir, être, voir",
      "lines": [
-      "Présent : j’ai, je suis, je vois",
-      "Imparfait : j’avais, j’étais, je voyais"
+      "Pour décrire, on emploie le présent et l’imparfait, avec des verbes de perception (voir, regarder, observer, apercevoir)."
+     ],
+     "table": [
+      [
+       "",
+       "avoir (prés.)",
+       "être (prés.)",
+       "voir (prés.)",
+       "avoir (imp.)",
+       "être (imp.)",
+       "voir (imp.)"
+      ],
+      [
+       "je / j’",
+       "ai",
+       "suis",
+       "vois",
+       "avais",
+       "étais",
+       "voyais"
+      ],
+      [
+       "tu",
+       "as",
+       "es",
+       "vois",
+       "avais",
+       "étais",
+       "voyais"
+      ],
+      [
+       "il / elle",
+       "a",
+       "est",
+       "voit",
+       "avait",
+       "était",
+       "voyait"
+      ],
+      [
+       "nous",
+       "avons",
+       "sommes",
+       "voyons",
+       "avions",
+       "étions",
+       "voyions"
+      ],
+      [
+       "vous",
+       "avez",
+       "êtes",
+       "voyez",
+       "aviez",
+       "étiez",
+       "voyiez"
+      ],
+      [
+       "ils / elles",
+       "ont",
+       "sont",
+       "voient",
+       "avaient",
+       "étaient",
+       "voyaient"
+      ]
      ]
     },
     {
      "h": "Orthographe : le son /é/",
      "lines": [
-      "est (verbe être) – et (conjonction)",
-      "é / ée (participe passé) – er (infinitif)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Décris ta chambre en cinq phrases."
+      "est : verbe être (le petit est courageux).",
+      "et : conjonction qui relie (le lion et la panthère) ; aussi fin de noms (un filet).",
+      "é / ée : participe passé ; fin de noms (un marché, un café).",
+      "er : infinitif du 1ᵉʳ groupe (danser) ; fin de noms (un cahier).",
+      "ait / aient : imparfait aux 3ᵉˢ personnes (il marchait ; ils marchaient)."
      ]
     }
    ]
@@ -179,47 +337,86 @@
    },
    "board": [
     {
-     "h": "Décrire un paysage",
+     "h": "Texte : La désertification",
      "lines": [
-      "Observer les composants",
-      "Les situer dans l’espace"
-     ]
+      "Définition : la dégradation des terres dans les zones arides, semi-arides et subhumides sèches.",
+      "Causes : les variations climatiques, les activités humaines et l’érosion.",
+      "Conséquences : manque d’eau, appauvrissement des terres, perte du couvert végétal et de la biodiversité, départ des populations.",
+      "Il faut considérer l’environnement comme un milieu sensible et corriger nos erreurs."
+     ],
+     "fig": {
+      "page": 47,
+      "rect": [
+       0.187,
+       0.213,
+       0.814,
+       0.388
+      ],
+      "caption": "Un paysage désertique"
+     }
     },
     {
-     "h": "Vocabulaire : climat et saisons",
+     "h": "Vocabulaire : le climat et les saisons",
      "lines": [
-      "l’hiver : froid",
-      "le printemps : doux",
-      "l’été : très chaud",
-      "l’automne : entre chaleur et fraîcheur"
-     ]
+      "Dans le Sahel, la chaleur s’installe dès le mois de mai."
+     ],
+     "table": [
+      [
+       "Saison",
+       "Mois",
+       "Climat"
+      ],
+      [
+       "L’hiver",
+       "décembre, janvier, février",
+       "froid, vent glacial"
+      ],
+      [
+       "Le printemps",
+       "mars, avril, mai",
+       "doux, verdure, arbres en fleurs"
+      ],
+      [
+       "L’été",
+       "juin, juillet, août",
+       "très chaud, vacances"
+      ],
+      [
+       "L’automne",
+       "septembre, octobre, novembre",
+       "les feuilles jaunissent et tombent"
+      ]
+     ],
+     "fig": {
+      "page": 50,
+      "rect": [
+       0.328,
+       0.41,
+       0.673,
+       0.578
+      ],
+      "caption": "Les quatre saisons"
+     }
     },
     {
      "h": "Grammaire : le complément du nom",
      "lines": [
-      "la boîte à outils",
-      "le manche en bois",
-      "les prévisions de la météo"
+      "C’est un nom précédé d’une préposition qui complète un nom (groupe prépositionnel).",
+      "Exemples : les prévisions de la météo ; le manche en bois ; la boîte à outils."
      ]
     },
     {
      "h": "Conjugaison : la tournure impersonnelle",
      "lines": [
-      "il pleut – il neige – il fait chaud – il fait nuit"
+      "Certains verbes ne s’emploient qu’à la 3ᵉ personne du singulier : « il » ne représente personne.",
+      "Ce sont souvent des verbes du temps et du climat : il pleut ; il neige ; il tonne ; il fait froid ; il fait chaud ; il fait nuit."
      ]
     },
     {
-     "h": "Orthographe : les partitifs",
+     "h": "Orthographe : les articles partitifs",
      "lines": [
-      "du = de + le",
-      "des = de + les",
-      "d’ devant une voyelle"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Décris le paysage de ta ville en saison des pluies."
+      "Devant des noms « non comptables » (une partie d’un tout) : du = de + le ; des = de + les ; d’ devant une voyelle ou un h muet.",
+      "Exemples : la dégradation du couvert ; le mouvement des jeunes ; les pluies d’hiver."
      ]
     }
    ]

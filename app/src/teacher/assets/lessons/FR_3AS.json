@@ -33,30 +33,114 @@
    },
    "board": [
     {
-     "h": "Décrire une tenue",
+     "h": "Texte : la parure des femmes",
      "lines": [
-      "le boubou – le voile – le bazin – l’indigo",
-      "les nattes – les tresses"
+      "Des femmes de tous les âges : grand-mères aux longs voiles noirs, jeunes filles aux longues nattes, jeunes femmes en boubou ample.",
+      "Les vêtements de fête sont teints à l’indigo : bazins, percales et cotonnades locales ; la teinture des Sarakolaises de Kaédi est réputée.",
+      "Bijoux : l’argent et l’or aux cous, aux oreilles, aux poignets et aux chevilles.",
+      "D’après Tène Youssouf Guèye, Rêlla ou les voies d’honneur."
+     ],
+     "fig": {
+      "page": 30,
+      "rect": [
+       0.357,
+       0.624,
+       0.616,
+       0.805
+      ],
+      "caption": "Une tenue traditionnelle"
+     }
+    },
+    {
+     "h": "Vocabulaire : le sport et la santé",
+     "lines": [
+      "Pratiquer, (s’)entraîner, être en forme, un échauffement, s’échauffer, l’endurance, s’étirer.",
+      "Une compétition, une épreuve sportive, un championnat, battre un record.",
+      "Une blessure, une douleur, les courbatures, se tordre la cheville, se casser la jambe, le surentraînement.",
+      "Des sports nautiques, de combat, d’équipe, d’endurance, de montagne."
      ]
     },
     {
-     "h": "Le superlatif",
+     "h": "Grammaire : le superlatif",
      "lines": [
-      "relatif : le/la/les plus… – le/la/les moins…",
-      "absolu : très – extrêmement"
+      "Il présente une qualité à son plus haut ou plus bas degré : le / la / les plus… ; le / la / les moins…",
+      "Superlatif relatif : par comparaison avec les autres (Hamoud est le meilleur élève de la classe).",
+      "Superlatif absolu : sans comparaison, avec très, fort, extrêmement, infiniment…"
+     ],
+     "table": [
+      [
+       "Positif",
+       "Superlatif"
+      ],
+      [
+       "bien",
+       "le mieux / le moins bien"
+      ],
+      [
+       "mal",
+       "le plus mal / le moins mal"
+      ],
+      [
+       "beaucoup",
+       "le plus"
+      ],
+      [
+       "peu",
+       "le moins"
+      ]
      ]
     },
     {
-     "h": "Participe présent et gérondif",
+     "h": "Orthographe : participe présent et gérondif",
      "lines": [
-      "dansant – finissant",
-      "en dansant : manière, moyen, cause"
+      "Le participe présent finit toujours par -ant : dansant, finissant, écrivant.",
+      "Le gérondif = en + participe présent : en dansant, en écrivant.",
+      "Le participe présent peut avoir une valeur de verbe ou d’adjectif (adjectif verbal : une classe bruyante).",
+      "Le gérondif est un complément circonstanciel de manière, de moyen ou de cause (Il retourna à sa place en protestant)."
      ]
     },
     {
-     "h": "Application",
+     "h": "Conjugaison : le futur antérieur",
      "lines": [
-      "Mets au superlatif : « L’été est la saison (chaud +) de l’année. »"
+      "Formation : être ou avoir au futur + participe passé (il sera parti ; il aura téléphoné).",
+      "Emploi : une action future qui se passe avant une autre action future (Quand il aura fini ses études, il se mariera)."
+     ],
+     "table": [
+      [
+       "",
+       "permettre",
+       "interdire"
+      ],
+      [
+       "j’",
+       "aurai permis",
+       "aurai interdit"
+      ],
+      [
+       "tu",
+       "auras permis",
+       "auras interdit"
+      ],
+      [
+       "il / elle",
+       "aura permis",
+       "aura interdit"
+      ],
+      [
+       "nous",
+       "aurons permis",
+       "aurons interdit"
+      ],
+      [
+       "vous",
+       "aurez permis",
+       "aurez interdit"
+      ],
+      [
+       "ils / elles",
+       "auront permis",
+       "auront interdit"
+      ]
      ]
     }
    ]
@@ -89,30 +173,126 @@
    },
    "board": [
     {
-     "h": "Le lexique des métiers",
+     "h": "Texte : Leïla et le médecin",
      "lines": [
-      "médecin : stéthoscope – bistouri – seringue",
-      "maçon : pelle – truelle – burin"
+      "À Boutilimit, Leïla voit passer un médecin nomade, maure comme sa famille.",
+      "Il dirige la petite clinique, l’hôpital de tentes, les distributions de nourriture et les vaccinations, en restant doux, calme et patient.",
+      "Dès qu’un enfant est malade, la tribu se rapproche de Boutilimit."
      ]
     },
     {
-     "h": "L’opposition",
+     "h": "Vocabulaire : le lexique des métiers",
      "lines": [
-      "alors que – tandis que – par contre"
+      "Chaque métier a ses mots techniques : le stéthoscope, le bistouri, la seringue (médecine) ; la pelle, la truelle, le burin (maçonnerie) ; la craie (enseignement).",
+      "Exemple : Lilyane Slansky a choisi de conduire des camions « parce qu’elle aimait les camions et la mécanique »."
      ]
     },
     {
-     "h": "La concession",
+     "h": "Grammaire : l’opposition",
      "lines": [
-      "bien que + subjonctif – même si + indicatif",
-      "avoir beau + infinitif – pourtant – cependant"
+      "alors que : Elle reste assise alors qu’elle a un travail urgent.",
+      "tandis que : Il adore le théâtre, tandis que je le déteste.",
+      "en revanche / par contre : Il prononce mal ; en revanche, il maîtrise la grammaire."
      ]
     },
     {
-     "h": "Application",
+     "h": "Grammaire : la concession",
      "lines": [
-      "Complète : ____ il pleuve, je vais me promener. Salek est actif, ____ Salma est studieuse."
+      "bien que / quoique + subjonctif : Bien qu’il pleuve, je vais me promener.",
+      "même si + indicatif : Même si vous habitez loin, vous pouvez venir.",
+      "avoir beau + infinitif : J’ai beau lui expliquer, il ne comprend rien.",
+      "pourtant ; toutefois ; cependant ; néanmoins : C’est un homme intelligent ; toutefois il n’est pas compétent dans ce domaine."
      ]
+    },
+    {
+     "h": "Les formules de politesse",
+     "lines": [
+      "Saluer : bonjour, bonsoir, salut, au revoir, à bientôt.",
+      "Remercier : merci, merci beaucoup ; répondre : je vous en prie, c’est un plaisir.",
+      "S’excuser : je suis désolé(e), excusez-moi, pardon.",
+      "Formel : Monsieur / Madame ; Je vous prie de croire, Monsieur, en l’expression de mes salutations distinguées.",
+      "La lettre amicale : la date, la formule d’ouverture, le corps, la formule de politesse, la signature."
+     ]
+    },
+    {
+     "h": "Conjugaison : présent de l’indicatif",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "adhérer",
+       "faire partie",
+       "se retirer",
+       "exclure",
+       "suspendre"
+      ],
+      [
+       "je",
+       "adhère",
+       "fais partie",
+       "me retire",
+       "exclus",
+       "suspends"
+      ],
+      [
+       "tu",
+       "adhères",
+       "fais partie",
+       "te retires",
+       "exclus",
+       "suspends"
+      ],
+      [
+       "il / elle",
+       "adhère",
+       "fait partie",
+       "se retire",
+       "exclut",
+       "suspend"
+      ],
+      [
+       "nous",
+       "adhérons",
+       "faisons partie",
+       "nous retirons",
+       "excluons",
+       "suspendons"
+      ],
+      [
+       "vous",
+       "adhérez",
+       "faites partie",
+       "vous retirez",
+       "excluez",
+       "suspendez"
+      ],
+      [
+       "ils / elles",
+       "adhèrent",
+       "font partie",
+       "se retirent",
+       "excluent",
+       "suspendent"
+      ]
+     ]
+    },
+    {
+     "h": "Lecture : le pharmacien",
+     "lines": [
+      "Il délivre les médicaments, conseille, gère les stocks ; il peut travailler en officine, en laboratoire ou dans l’industrie.",
+      "Qualités : accueillant, rigoureux, organisé, discret.",
+      "Formation : un bac scientifique puis au moins six années d’études."
+     ],
+     "fig": {
+      "page": 67,
+      "rect": [
+       0.307,
+       0.611,
+       0.693,
+       0.798
+      ],
+      "caption": "Le métier de pharmacien"
+     }
     }
    ]
   }
