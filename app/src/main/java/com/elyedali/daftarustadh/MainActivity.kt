@@ -1867,8 +1867,9 @@ class MainActivity : AppCompatActivity() {
                                     levelCode = c.levelCode,
                                     locked = c.schoolYear !in teacherActivated,
                                     onActivate = { teacherActivateYear = c.schoolYear },
+                                    // كل مواد المستوى تظهر في التخطيط، حتى لأستاذ المادة الواحدة
                                     mySubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
-                                        .filter { s -> mySubjects.any { it.subjectCode == s.code } }
+                                        .sortedBy { s -> if (mySubjects.any { it.subjectCode == s.code }) 0 else 1 }
                                         .map { it.code to (if (isFrUi) it.nameFr else it.nameAr) }
                                 )
                                 else -> DocumentsTab(
