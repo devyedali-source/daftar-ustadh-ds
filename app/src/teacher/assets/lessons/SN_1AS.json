@@ -34,36 +34,52 @@
    },
    "board": [
     {
-     "h": "Les SVT",
+     "h": "Définition",
      "lines": [
-      "Étudient les êtres vivants, la Terre et ses phénomènes"
+      "Les Sciences de la Vie et de la Terre (SVT) sont une discipline scientifique qui étudie les êtres vivants, la Terre et ses phénomènes."
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.228,
+       0.309,
+       0.753,
+       0.562
+      ],
+      "caption": "Arbre des domaines et objets d’étude des SVT"
+     }
+    },
+    {
+     "h": "Les domaines des SVT",
+     "lines": [],
+     "table": [
+      [
+       "Domaine",
+       "Objet d’étude",
+       "Branches"
+      ],
+      [
+       "Biologie",
+       "Les êtres vivants : organisation, diversité, fonctionnement, interactions",
+       "Zoologie (animaux), Botanique (plantes)"
+      ],
+      [
+       "Géologie",
+       "Structure, composition et évolution de la Terre",
+       "Pétrologie (roches), Minéralogie (minéraux), Paléontologie (fossiles), Stratigraphie (couches de la Terre)"
+      ],
+      [
+       "Écologie",
+       "Relations entre les êtres vivants et leur environnement",
+       "—"
+      ]
      ]
     },
     {
-     "h": "Biologie",
+     "h": "Vocabulaire de l’écologie",
      "lines": [
-      "Zoologie : les animaux",
-      "Botanique : les plantes"
-     ]
-    },
-    {
-     "h": "Géologie",
-     "lines": [
-      "Pétrologie : les roches – Minéralogie : les minéraux",
-      "Paléontologie : les fossiles – Stratigraphie : les couches de la Terre"
-     ]
-    },
-    {
-     "h": "Écologie",
-     "lines": [
-      "Relations entre les êtres vivants et leur environnement",
-      "Écosystème = biocénose (êtres vivants) + biotope (milieu de vie)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelle branche étudie les fossiles ? Que forme une biocénose avec son biotope ?"
+      "Écosystème : ensemble homogène et stable formé d’une communauté d’êtres vivants (biocénose) en relation avec un biotope.",
+      "Biotope : milieu de vie délimité géographiquement où les conditions écologiques (température, humidité…) sont homogènes."
      ]
     }
    ]
@@ -94,23 +110,23 @@
    },
    "board": [
     {
-     "h": "Le vivant",
+     "h": "Critères du vivant",
      "lines": [
-      "Formé d’au moins une cellule",
-      "Se nourrit, respire, grandit, se reproduit"
-     ]
-    },
-    {
-     "h": "Le non vivant",
-     "lines": [
-      "Ne présente aucun de ces critères : roche, cuillère…"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Classe en vivant ou non vivant : un caillou, un arbre, une chèvre, une cuillère."
-     ]
+      "Les fonctions vitales — alimentation, respiration, croissance, reproduction — marquent la différence entre le vivant et le non-vivant.",
+      "Est vivant tout ce qui construit sa propre matière vivante et qui est capable de consommer, de respirer et de se reproduire.",
+      "Si aucun de ces critères n’est présent, c’est du non-vivant : une roche, une cuillère…",
+      "Les êtres vivants sont très divers, mais tous sont composés d’au moins une cellule."
+     ],
+     "fig": {
+      "page": 16,
+      "rect": [
+       0.153,
+       0.473,
+       0.852,
+       0.815
+      ],
+      "caption": "Tableau : naît, se nourrit, grandit, meurt — vivant ou non vivant ?"
+     }
     }
    ]
   },
@@ -138,24 +154,41 @@
    },
    "board": [
     {
-     "h": "Animal",
-     "lines": [
-      "Se déplace activement",
-      "Possède des organes de sens (yeux, narines, oreilles)"
+     "h": "Animal ou végétal ?",
+     "lines": [],
+     "table": [
+      [
+       "Critère",
+       "Animaux",
+       "Végétaux"
+      ],
+      [
+       "Déplacement",
+       "Se déplacent activement",
+       "Généralement fixés au sol"
+      ],
+      [
+       "Organes des sens",
+       "Yeux, narines, oreilles…",
+       "Absents"
+      ]
      ]
     },
     {
-     "h": "Végétal",
+     "h": "À retenir",
      "lines": [
-      "Généralement fixé au sol",
-      "Ne possède pas d’organes de sens"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Le palmier est-il un animal ou un végétal ? Justifie."
-     ]
+      "Les animaux et les végétaux sont des êtres vivants."
+     ],
+     "fig": {
+      "page": 20,
+      "rect": [
+       0.317,
+       0.557,
+       0.681,
+       0.749
+      ],
+      "caption": "Tableau à compléter : règne animal / règne végétal"
+     }
     }
    ]
   },
@@ -188,22 +221,43 @@
     {
      "h": "La cellule",
      "lines": [
-      "Membrane + cytoplasme + noyau",
-      "Unicellulaire : une seule cellule – pluricellulaire : plusieurs cellules"
+      "La cellule est l’élément constitutif de base de tous les êtres vivants.",
+      "Elle est formée d’une membrane plasmique (cytoplasmique), d’un noyau entouré d’un cytoplasme.",
+      "Souvent microscopique, elle existe chez le végétal comme chez l’animal.",
+      "Isolée : êtres unicellulaires ; associée à d’autres cellules : êtres pluricellulaires."
+     ],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.126,
+       0.521,
+       0.872,
+       0.765
+      ],
+      "caption": "Cellule de l’épithélium buccal et cellule de bulbe d’oignon"
+     }
+    },
+    {
+     "h": "La classification scientifique",
+     "lines": [
+      "On recherche les caractères communs pour créer des groupes emboîtés les uns dans les autres.",
+      "Ordre des groupes : Règne → Embranchement → Classe → Ordre → Famille → Genre → Espèce (RECOFGE).",
+      "Une espèce peut être identifiée par une clé de détermination."
      ]
     },
     {
-     "h": "La classification",
-     "lines": [
-      "On classe selon les caractères communs",
-      "Règne – Embranchement – Classe – Ordre – Famille – Genre – Espèce (RECOFGE)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Range dans l’ordre : famille, règne, espèce, classe."
-     ]
+     "h": "Le microscope",
+     "lines": [],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.101,
+       0.061,
+       0.392,
+       0.266
+      ],
+      "caption": "Le microscope optique"
+     }
     }
    ]
   },
@@ -235,30 +289,85 @@
    },
    "board": [
     {
-     "h": "Buts du déplacement",
+     "h": "Pourquoi les animaux se déplacent",
      "lines": [
-      "Se protéger, se nourrir, fuir un prédateur, se reproduire"
+      "Se protéger du mauvais temps.",
+      "Rechercher leur nourriture.",
+      "Fuir un prédateur.",
+      "Se reproduire."
      ]
     },
     {
-     "h": "Organes",
+     "h": "Les organes du mouvement",
      "lines": [
-      "Muscles : organes actifs – os : organes passifs",
-      "Un support est indispensable"
-     ]
+      "Les muscles se contractent : ce sont les organes actifs du mouvement ; ils déplacent les os sur lesquels ils sont attachés.",
+      "Les os sont les organes passifs du mouvement.",
+      "Un support offrant un appui est indispensable au déplacement."
+     ],
+     "fig": {
+      "page": 24,
+      "rect": [
+       0.155,
+       0.629,
+       0.842,
+       0.935
+      ],
+      "caption": "Contraction et relâchement des muscles du bras"
+     }
     },
     {
-     "h": "Types de marche",
-     "lines": [
-      "Plantigrade (homme) – digitigrade (sur les doigts) – onguligrade (sabots)",
-      "Bipède : 2 membres – quadrupède : 4 pattes"
-     ]
+     "h": "Les types de marche",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Appui sur le sol",
+       "Exemple"
+      ],
+      [
+       "Plantigrade",
+       "Plante du pied",
+       "L’homme (bipède)"
+      ],
+      [
+       "Digitigrade",
+       "Les doigts",
+       "Le chat, le chien"
+      ],
+      [
+       "Onguligrade",
+       "Les sabots (ongles)",
+       "Vache, chèvre, cheval"
+      ]
+     ],
+     "fig": {
+      "page": 27,
+      "rect": [
+       0.202,
+       0.086,
+       0.799,
+       0.478
+      ],
+      "caption": "Membre inférieur et marche chez l’homme"
+     }
     },
     {
-     "h": "Application",
+     "h": "Remarques",
      "lines": [
-      "La chèvre marche sur des sabots : comment l’appelle-t-on ? Et l’homme ?"
-     ]
+      "L’homme est bipède et garde l’équilibre grâce au balancement des membres supérieurs.",
+      "Beaucoup de mammifères sont quadrupèdes.",
+      "Le lièvre et le cheval ont une morphologie adaptée au saut et à la course."
+     ],
+     "fig": {
+      "page": 26,
+      "rect": [
+       0.17,
+       0.402,
+       0.829,
+       0.632
+      ],
+      "caption": "Patte postérieure et locomotion du lièvre"
+     }
     }
    ]
   },
@@ -290,21 +399,36 @@
     {
      "h": "Chez les vertébrés",
      "lines": [
-      "Serpent : ondulations et rétractions du corps"
-     ]
+      "Les animaux qui rampent n’ont généralement pas de pattes (ou des pattes très courtes).",
+      "Le serpent avance horizontalement par ondulations et rétractions alternatives du corps."
+     ],
+     "fig": {
+      "page": 34,
+      "rect": [
+       0.195,
+       0.648,
+       0.804,
+       0.745
+      ],
+      "caption": "Reptation du serpent"
+     }
     },
     {
      "h": "Chez les invertébrés",
      "lines": [
-      "Lombric : segments qui se contractent et s’allongent + soies",
-      "Escargot : pied musculaire"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment se déplace le lombric ?"
-     ]
+      "Le ver de terre (lombric) contracte et allonge successivement les segments de son corps en s’accrochant grâce à des soies locomotrices.",
+      "Chez l’escargot, le pied musculaire permet le déplacement par des ondulations transversales."
+     ],
+     "fig": {
+      "page": 35,
+      "rect": [
+       0.192,
+       0.615,
+       0.795,
+       0.743
+      ],
+      "caption": "Déplacement du lombric"
+     }
     }
    ]
   },
@@ -332,22 +456,38 @@
    },
    "board": [
     {
-     "h": "Organes de la nage",
+     "h": "Les organes de la nage",
      "lines": [
-      "Nageoires dorsale, caudale, anale, pectorales, pelviennes"
-     ]
+      "Les animaux aquatiques nagent grâce aux nageoires : dorsale, caudale, anale, pectorales, abdominales (pelviennes).",
+      "Les nageoires permettent aux poissons de se soutenir, de garder l’équilibre et d’avancer dans l’eau."
+     ],
+     "fig": {
+      "page": 32,
+      "rect": [
+       0.136,
+       0.613,
+       0.864,
+       0.784
+      ],
+      "caption": "Morphologie externe du tilapia"
+     }
     },
     {
-     "h": "Rôle",
+     "h": "Ce qui facilite la nage",
      "lines": [
-      "Se soutenir – garder l’équilibre – avancer dans l’eau"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite trois nageoires du poisson et leur rôle général."
-     ]
+      "La nageoire caudale (queue) est le principal organe du déplacement ; les autres nageoires jouent un rôle de stabilisateur.",
+      "La nage nécessite une forme hydrodynamique pour faciliter le déplacement dans l’eau."
+     ],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.161,
+       0.577,
+       0.836,
+       0.839
+      ],
+      "caption": "Nage du thon et de l’anguille"
+     }
     }
    ]
   },
@@ -377,23 +517,39 @@
    },
    "board": [
     {
-     "h": "Organes du vol",
+     "h": "Adaptation au vol",
      "lines": [
-      "Ailes étalées actionnées par des muscles puissants"
-     ]
+      "Les ailes, étalées et actionnées par des muscles puissants, augmentent la surface d’appui sur l’air.",
+      "Les oiseaux sont adaptés au vol grâce au plumage, aux sacs aériens et à un corps léger en forme de fuseau : forme aérodynamique."
+     ],
+     "fig": {
+      "page": 29,
+      "rect": [
+       0.105,
+       0.219,
+       0.883,
+       0.484
+      ],
+      "caption": "Plumes, squelette et sacs aériens de l’oiseau"
+     }
     },
     {
-     "h": "Adaptations",
+     "h": "Les phases et sortes de vol",
      "lines": [
-      "Plumage – sacs aériens – corps léger en fuseau",
-      "Forme aérodynamique"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux adaptations de l’oiseau au vol."
-     ]
+      "Trois phases : l’envol (décollage) en prenant appui sur les pattes ; le vol proprement dit ; l’atterrissage.",
+      "Vol battu : battements d’ailes de haut en bas.",
+      "Vol plané : ailes largement étalées sans battement."
+     ],
+     "fig": {
+      "page": 30,
+      "rect": [
+       0.183,
+       0.671,
+       0.821,
+       0.893
+      ],
+      "caption": "Les phases du vol"
+     }
     }
    ]
   },
@@ -425,20 +581,44 @@
     {
      "h": "Définition",
      "lines": [
-      "Couche superficielle de la croûte terrestre",
-      "Altération des roches + activité des êtres vivants"
-     ]
+      "Le sol est la couche superficielle de la croûte terrestre qui résulte de l’altération des roches et de l’activité des êtres vivants.",
+      "Il joue un rôle fondamental dans les écosystèmes en servant de support aux plantes."
+     ],
+     "fig": {
+      "page": 39,
+      "rect": [
+       0.109,
+       0.404,
+       0.888,
+       0.61
+      ],
+      "caption": "Sol sableux, sol limoneux, sol argileux"
+     }
     },
     {
-     "h": "Constituants",
-     "lines": [
-      "Organiques – minéraux (sable, argile…) – gaz – solution du sol (eau + ions)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les quatre types de constituants du sol."
+     "h": "Les constituants du sol",
+     "lines": [],
+     "table": [
+      [
+       "Constituant",
+       "Exemples"
+      ],
+      [
+       "Organiques",
+       "Débris d’organismes végétaux"
+      ],
+      [
+       "Minéraux",
+       "Sable, argile…"
+      ],
+      [
+       "Gaz",
+       "Circulent dans les interstices du sol"
+      ],
+      [
+       "Solution du sol",
+       "Eau et ions"
+      ]
      ]
     }
    ]
@@ -470,29 +650,59 @@
    },
    "board": [
     {
-     "h": "Appareil végétatif",
+     "h": "Organisation",
      "lines": [
-      "Racines – tige – feuilles"
+      "Une plante à fleurs est formée d’un appareil végétatif (racines, tige, feuilles) et d’un appareil reproducteur (fleurs)."
+     ],
+     "fig": {
+      "page": 41,
+      "rect": [
+       0.243,
+       0.429,
+       0.758,
+       0.82
+      ],
+      "caption": "Morphologie d’une plante à fleurs"
+     }
+    },
+    {
+     "h": "Les organes de l’appareil végétatif",
+     "lines": [],
+     "table": [
+      [
+       "Organe",
+       "Description et rôle"
+      ],
+      [
+       "Racines",
+       "Partie souterraine ; zone pilifère (poils absorbants) et coiffe protectrice ; maintiennent la plante et absorbent l’eau et les sels minéraux"
+      ],
+      [
+       "Tige",
+       "Partie aérienne, principal élément de soutien ; porte les feuilles et les bourgeons"
+      ],
+      [
+       "Feuilles",
+       "Limbe mince maintenu par des nervures, pétiole, base foliaire ; sites de la photosynthèse, des échanges gazeux et de la transpiration"
+      ]
      ]
     },
     {
-     "h": "Racine",
+     "h": "Types de racines et de feuilles",
      "lines": [
-      "Zone pilifère (poils absorbants) – coiffe"
-     ]
-    },
-    {
-     "h": "Tige et feuille",
-     "lines": [
-      "Tige : soutien, porte feuilles et bourgeons",
-      "Feuille : limbe + pétiole + base foliaire"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelles sont les trois parties d’une feuille ?"
-     ]
+      "Racines pivotantes (réserves), fasciculées (surface de contact), adventives (naissent sur la tige, soutien).",
+      "Feuille simple : limbe unique et continu ; feuille composée : plusieurs folioles rattachées au pétiole."
+     ],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.455,
+       0.568,
+       0.921,
+       0.802
+      ],
+      "caption": "Feuille simple et feuille composée"
+     }
     }
    ]
   },
@@ -523,23 +733,27 @@
    },
    "board": [
     {
-     "h": "Rôles de la racine",
+     "h": "L’absorption",
      "lines": [
-      "Absorber l’eau et les sels minéraux (poils absorbants)",
-      "Fixer la plante au sol"
-     ]
+      "L’eau et les minéraux du sol sont captés par les poils absorbants des racines.",
+      "Ces poils forment une très grande surface d’échange entre la plante et le sol.",
+      "Des champignons peuvent s’associer aux racines : les mycorhizes."
+     ],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.156,
+       0.279,
+       0.844,
+       0.496
+      ],
+      "caption": "Racine, zone pilifère et absorption"
+     }
     },
     {
-     "h": "Sève brute",
+     "h": "La sève brute",
      "lines": [
-      "Eau + sels minéraux",
-      "Transportée par le xylème"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment s’appelle le liquide absorbé par les racines ? Que contient-il ?"
+      "Les substances prélevées par les racines forment la sève brute (eau + sels minéraux), transportée par les vaisseaux du xylème dans toute la plante."
      ]
     }
    ]
@@ -572,28 +786,63 @@
    },
    "board": [
     {
-     "h": "Transpiration",
+     "h": "La transpiration",
      "lines": [
-      "Rejet de vapeur d’eau par les stomates des feuilles"
-     ]
+      "L’eau absorbée est en grande partie rejetée sous forme de vapeur d’eau : c’est la transpiration.",
+      "Elle se fait par des pores, les stomates, surtout sur la face inférieure des feuilles ; ils peuvent s’ouvrir et se fermer.",
+      "Elle régule la température de la plante et assure la montée de l’eau des racines vers les feuilles."
+     ],
+     "fig": {
+      "page": 44,
+      "rect": [
+       0.268,
+       0.51,
+       0.732,
+       0.708
+      ],
+      "caption": "Expérience : rôle des feuilles dans la transpiration"
+     }
     },
     {
-     "h": "Photosynthèse",
-     "lines": [
-      "Conditions : lumière + CO₂ + chlorophylle",
-      "Production d’amidon (test à l’eau iodée)"
-     ]
+     "h": "La photosynthèse : expériences",
+     "lines": [],
+     "table": [
+      [
+       "Expérience",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Plants à la lumière / à l’obscurité",
+       "À l’obscurité : plants jaunes et grêles",
+       "La lumière est indispensable"
+      ],
+      [
+       "Plant avec potasse (absorbe le CO₂)",
+       "Le plant ne grandit pas",
+       "Le dioxyde de carbone est indispensable"
+      ],
+      [
+       "Feuille panachée + eau iodée",
+       "Amidon seulement dans les parties vertes",
+       "La chlorophylle est indispensable"
+      ]
+     ],
+     "fig": {
+      "page": 46,
+      "rect": [
+       0.228,
+       0,
+       0.771,
+       0.223
+      ],
+      "caption": "Expérience : rôle de la lumière"
+     }
     },
     {
-     "h": "Sève élaborée",
+     "h": "À retenir",
      "lines": [
-      "Eau + sucres fabriqués par la plante"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quelles sont les conditions nécessaires à la photosynthèse ?"
+      "Les substances organiques fabriquées (sucres) et l’eau forment la sève élaborée (sève nourricière)."
      ]
     }
    ]
@@ -623,24 +872,49 @@
    },
    "board": [
     {
-     "h": "Xylème",
-     "lines": [
-      "Sève brute (eau + sels minéraux)",
-      "Des racines vers les feuilles"
-     ]
+     "h": "Deux types de vaisseaux",
+     "lines": [],
+     "table": [
+      [
+       "Vaisseau",
+       "Sève transportée",
+       "Trajet"
+      ],
+      [
+       "Xylème",
+       "Sève brute (eau + sels minéraux)",
+       "Des racines vers les feuilles (transpiration, capillarité)"
+      ],
+      [
+       "Phloème",
+       "Sève élaborée (sucres de la photosynthèse)",
+       "Des feuilles vers les organes de stockage ou de croissance"
+      ]
+     ],
+     "fig": {
+      "page": 50,
+      "rect": [
+       0.123,
+       0.062,
+       0.876,
+       0.408
+      ],
+      "caption": "Circulation de la sève brute et de la sève élaborée"
+     }
     },
     {
-     "h": "Phloème",
-     "lines": [
-      "Sève élaborée (sucres)",
-      "Des feuilles vers les organes"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quel vaisseau transporte la sève élaborée ? Dans quel sens ?"
-     ]
+     "h": "Observation",
+     "lines": [],
+     "fig": {
+      "page": 48,
+      "rect": [
+       0.486,
+       0.062,
+       0.844,
+       0.232
+      ],
+      "caption": "Coupe d’une tige : vaisseaux conducteurs"
+     }
     }
    ]
   },
@@ -671,24 +945,41 @@
    },
    "board": [
     {
-     "h": "Nutrition hétérotrophe",
+     "h": "Une nutrition hétérotrophe",
      "lines": [
-      "Le champignon prend sa matière organique dans son milieu",
-      "Absorption après digestion externe"
+      "Les champignons ne produisent pas leur matière organique : ils l’absorbent dans leur milieu après une digestion externe grâce à des enzymes."
      ]
     },
     {
-     "h": "Types",
-     "lines": [
-      "Saprophytes : matière morte",
-      "Parasites : aux dépens d’un hôte",
-      "Symbiotiques : mycorhizes, lichens"
+     "h": "Les types de nutrition",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Mode",
+       "Exemple"
+      ],
+      [
+       "Saprophytes",
+       "Se nourrissent de matière organique morte",
+       "Pleurotes (décomposeurs du bois)"
+      ],
+      [
+       "Parasites",
+       "Vivent aux dépens d’un hôte",
+       "L’ergot du seigle"
+      ],
+      [
+       "Symbiotiques",
+       "Association bénéfique",
+       "Mycorhizes, lichens"
+      ]
      ]
     },
     {
-     "h": "Application",
+     "h": "Importance",
      "lines": [
-      "Quelle est la différence entre la nutrition d’une plante verte et celle d’un champignon ?"
+      "Ces modes de nutrition jouent un rôle essentiel dans le recyclage des matières organiques et l’équilibre des écosystèmes."
      ]
     }
    ]
@@ -722,21 +1013,72 @@
     {
      "h": "La mouche",
      "lines": [
-      "Trompe + coussinets : aspire la nourriture",
-      "Dépose des bactéries sur les aliments"
-     ]
+      "Les pièces buccales de la mouche forment une trompe terminée par deux coussinets munis de pores par lesquels elle aspire sa nourriture.",
+      "Elle accepte tous les aliments (sucre, excréments, aliments pourrissants…) et y dépose des bactéries provenant des déchets."
+     ],
+     "fig": {
+      "page": 56,
+      "rect": [
+       0.106,
+       0.445,
+       0.896,
+       0.654
+      ],
+      "caption": "La mouche et sa trompe"
+     }
     },
     {
-     "h": "Le lombric",
-     "lines": [
-      "Bouche → pharynx → œsophage → jabot → gésier → intestin → anus",
-      "Avale la terre – rejette des turricules"
-     ]
+     "h": "Le tube digestif du lombric",
+     "lines": [],
+     "table": [
+      [
+       "Partie",
+       "Rôle"
+      ],
+      [
+       "Bouche",
+       "Ingérer le sol"
+      ],
+      [
+       "Pharynx",
+       "Aspirer la nourriture"
+      ],
+      [
+       "Œsophage",
+       "Conduire vers le jabot"
+      ],
+      [
+       "Jabot",
+       "Stockage temporaire"
+      ],
+      [
+       "Gésier",
+       "Broyage mécanique"
+      ],
+      [
+       "Intestin",
+       "Digestion chimique et absorption"
+      ],
+      [
+       "Anus",
+       "Expulsion des déchets (turricules)"
+      ]
+     ],
+     "fig": {
+      "page": 57,
+      "rect": [
+       0.172,
+       0.694,
+       0.828,
+       0.9
+      ],
+      "caption": "Tube digestif du lombric"
+     }
     },
     {
-     "h": "Application",
+     "h": "Comportement du lombric",
      "lines": [
-      "Cite dans l’ordre les parties du tube digestif du lombric."
+      "Ingestion continue et non sélective de sol et de matière organique, liée à son activité de creusement ; il contribue à la santé du sol."
      ]
     }
    ]
@@ -769,30 +1111,57 @@
    },
    "board": [
     {
-     "h": "Herbivore ruminant : la vache",
+     "h": "La vache (ruminant)",
      "lines": [
-      "Denture incomplète (pas de canines, une barre)",
-      "Panse – bonnet – feuillet – caillette",
-      "Broute puis rumine"
-     ]
+      "Incisives seulement à la mâchoire inférieure, bourrelet corné en haut ; molaires à croissance continue ; canines absentes : denture incomplète avec une barre.",
+      "Estomac à quatre compartiments : panse, bonnet, feuillet, caillette (la plus proche de l’estomac humain).",
+      "Elle broute puis rumine ; la digestion lente se poursuit dans un intestin très long."
+     ],
+     "fig": {
+      "page": 62,
+      "rect": [
+       0.46,
+       0.262,
+       0.905,
+       0.571
+      ],
+      "caption": "Appareil digestif de la vache"
+     }
     },
     {
-     "h": "Le lapin",
+     "h": "Le lapin (rongeur)",
      "lines": [
-      "Incisives à croissance continue – long intestin – cæcum"
-     ]
+      "Incisives longues en biseau à croissance continue, pas de canines, une barre.",
+      "Intestin long et volumineux caecum où s’accomplit une grande partie de la digestion."
+     ],
+     "fig": {
+      "page": 65,
+      "rect": [
+       0.192,
+       0.276,
+       0.805,
+       0.687
+      ],
+      "caption": "Dentition et appareil digestif du lapin"
+     }
     },
     {
-     "h": "Granivore : le pigeon",
+     "h": "Le pigeon (granivore)",
      "lines": [
-      "Pas de dents – jabot + gésier (broyage avec des cailloux)"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite les quatre compartiments de l’estomac de la vache."
-     ]
+      "Pas de dents ; il avale sans mastiquer.",
+      "Estomac à deux cavités : le jabot (estomac chimique) et le gésier (broyage grâce aux muscles et aux petits cailloux).",
+      "Intestin très long."
+     ],
+     "fig": {
+      "page": 67,
+      "rect": [
+       0.185,
+       0.226,
+       0.791,
+       0.475
+      ],
+      "caption": "Appareil digestif du pigeon"
+     }
     }
    ]
   },
@@ -823,24 +1192,40 @@
    },
    "board": [
     {
-     "h": "Comportement alimentaire",
+     "h": "Le comportement de prédateur",
      "lines": [
-      "Repérage : vue, ouïe, odorat",
-      "Chasse à l’affût, à la course, en maraude"
-     ]
+      "Les prédateurs repèrent leurs proies par la vue, l’ouïe et l’odorat.",
+      "Trois types de chasse : à l’affût, à la course et en maraude.",
+      "La succession des actions pour se nourrir est le comportement alimentaire."
+     ],
+     "fig": {
+      "page": 69,
+      "rect": [
+       0.194,
+       0.255,
+       0.81,
+       0.445
+      ],
+      "caption": "Le chat chassant à l’affût"
+     }
     },
     {
-     "h": "Denture et tube digestif",
+     "h": "Denture et tube digestif du chat",
      "lines": [
-      "Denture complète : crocs + molaires tranchantes",
-      "Tube digestif court"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi le tube digestif du chat est-il plus court que celui de la vache ?"
-     ]
+      "Denture complète : canines développées (crocs) et molaires tranchantes ; pas de dents broyeuses.",
+      "Tube digestif court : cavité orale, pharynx, estomac (300–350 ml), intestin grêle (environ 1,5 m), gros intestin, rectum, anus.",
+      "La digestion de la viande est plus rapide que celle des végétaux."
+     ],
+     "fig": {
+      "page": 70,
+      "rect": [
+       0.134,
+       0.176,
+       0.868,
+       0.478
+      ],
+      "caption": "Crâne et appareil digestif du chat"
+     }
     }
    ]
   },
@@ -870,23 +1255,59 @@
    },
    "board": [
     {
-     "h": "Les dents",
+     "h": "Un omnivore",
      "lines": [
-      "Incisives : couper – canines : déchirer",
-      "Prémolaires et molaires : broyer"
-     ]
+      "L’homme mange des aliments végétaux et animaux ; sa denture et son appareil digestif sont adaptés à un régime complet."
+     ],
+     "fig": {
+      "page": 71,
+      "rect": [
+       0.265,
+       0.607,
+       0.736,
+       0.931
+      ],
+      "caption": "Appareil digestif de l’homme"
+     }
     },
     {
      "h": "Le tube digestif",
      "lines": [
-      "Bouche → œsophage → estomac → intestin grêle → gros intestin → anus"
+      "Bouche → œsophage → estomac → intestin grêle → gros intestin → anus.",
+      "Glandes annexes : glandes salivaires, foie, pancréas (suc pancréatique)."
      ]
     },
     {
-     "h": "Application",
-     "lines": [
-      "Quel est le rôle des incisives et des molaires ?"
-     ]
+     "h": "Les dents",
+     "lines": [],
+     "table": [
+      [
+       "Dent",
+       "Rôle"
+      ],
+      [
+       "Incisives",
+       "Couper"
+      ],
+      [
+       "Canines",
+       "Déchirer"
+      ],
+      [
+       "Prémolaires et molaires",
+       "Broyer"
+      ]
+     ],
+     "fig": {
+      "page": 72,
+      "rect": [
+       0.093,
+       0.113,
+       0.908,
+       0.352
+      ],
+      "caption": "Coupe d’une dent et mâchoires de l’homme"
+     }
     }
    ]
   },
@@ -919,28 +1340,31 @@
     {
      "h": "Définition",
      "lines": [
-      "Transformation des aliments grâce aux sécrétions des glandes digestives"
+      "La digestion est la transformation des aliments dans le tube digestif due aux sécrétions des glandes digestives.",
+      "Transformations mécaniques (broyage) et chimiques (dissolution) qui donnent des nutriments solubles passant dans le sang.",
+      "Les aliments non digérés (excréments) sont rejetés par l’anus."
      ]
     },
     {
-     "h": "Deux actions",
+     "h": "Exemple : le pain dans la bouche",
      "lines": [
-      "Mécanique : broyage",
-      "Chimique : dissolution"
+      "Le pain contient de l’amidon (molécules de glucose reliées).",
+      "La salive contient une enzyme, l’amylase salivaire, qui coupe ces liaisons et libère du glucose : goût sucré."
      ]
     },
     {
-     "h": "Résultat",
-     "lines": [
-      "Nutriments → sang",
-      "Déchets → rejetés par l’anus"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment appelle-t-on les petits éléments solubles qui passent dans le sang ?"
-     ]
+     "h": "Les étapes de la digestion",
+     "lines": [],
+     "fig": {
+      "page": 74,
+      "rect": [
+       0.139,
+       0.128,
+       0.862,
+       0.603
+      ],
+      "caption": "Tableau : principales étapes de la digestion chez l’homme"
+     }
     }
    ]
   },
@@ -971,23 +1395,40 @@
    },
    "board": [
     {
-     "h": "Maladies",
-     "lines": [
-      "Intoxication alimentaire – carie dentaire",
-      "Dysenterie – constipation"
+     "h": "Quelques maladies",
+     "lines": [],
+     "table": [
+      [
+       "Maladie",
+       "Cause / signes",
+       "Prévention"
+      ],
+      [
+       "Intoxication alimentaire",
+       "Aliments ou eau contenant bactéries, parasites, virus, poisons ou métaux lourds",
+       "Respecter les règles de prévention"
+      ],
+      [
+       "Carie dentaire",
+       "Douleur au froid, au chaud, au sucré ; points bruns",
+       "Brosser les dents après chaque repas, voir un dentiste chaque année"
+      ],
+      [
+       "Dysenterie",
+       "Diarrhée avec sang ou mucus ; infection bactérienne ou protozoaire",
+       "Hygiène de l’eau et des aliments"
+      ],
+      [
+       "Constipation",
+       "Difficultés du transit intestinal",
+       "Bien s’hydrater, bouger"
+      ]
      ]
     },
     {
-     "h": "Règles d’hygiène",
+     "h": "Une saine hygiène",
      "lines": [
-      "Se brosser les dents après chaque repas, voir un dentiste",
-      "Bien s’alimenter, s’hydrater, faire de l’exercice"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux maladies de l’appareil digestif et une règle d’hygiène."
+      "S’alimenter et s’hydrater correctement, bouger suffisamment et faire des exercices physiques."
      ]
     }
    ]
@@ -1016,21 +1457,27 @@
    },
    "board": [
     {
-     "h": "Conduction de l’air",
+     "h": "Définition",
      "lines": [
-      "Fosses nasales → pharynx → larynx → trachée → bronches → bronchioles"
-     ]
+      "L’appareil respiratoire est l’ensemble des organes permettant la circulation de l’air et les échanges gazeux entre l’organisme et le milieu extérieur.",
+      "Conduction de l’air : fosses nasales, pharynx, larynx, trachée-artère, bronches, bronchioles.",
+      "Échanges gazeux : au niveau des alvéoles pulmonaires."
+     ],
+     "fig": {
+      "page": 90,
+      "rect": [
+       0.113,
+       0.55,
+       0.888,
+       0.784
+      ],
+      "caption": "Appareil respiratoire de l’homme"
+     }
     },
     {
-     "h": "Échanges gazeux",
+     "h": "Respirer",
      "lines": [
-      "Dans les alvéoles pulmonaires"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Où ont lieu les échanges gazeux dans le poumon ?"
+      "Un être vivant respire quand il prélève du dioxygène (O₂) dans son milieu et y rejette du dioxyde de carbone (CO₂)."
      ]
     }
    ]
@@ -1062,22 +1509,47 @@
    },
    "board": [
     {
-     "h": "Ventilation pulmonaire",
-     "lines": [
-      "Inspiration : l’air entre",
-      "Expiration : l’air sort"
-     ]
+     "h": "Inspiration et expiration",
+     "lines": [],
+     "table": [
+      [
+       "Inspiration",
+       "Expiration"
+      ],
+      [
+       "Le diaphragme se contracte et s’abaisse",
+       "Le diaphragme se relâche"
+      ],
+      [
+       "Les muscles intercostaux se contractent : la cage thoracique se soulève",
+       "Les muscles intercostaux se relâchent : la cage thoracique s’abaisse"
+      ],
+      [
+       "Le volume de la cage thoracique augmente",
+       "Le volume diminue"
+      ],
+      [
+       "L’air entre dans les poumons",
+       "L’air est chassé vers l’extérieur"
+      ]
+     ],
+     "fig": {
+      "page": 91,
+      "rect": [
+       0.27,
+       0.731,
+       0.731,
+       0.933
+      ],
+      "caption": "Mouvements respiratoires"
+     }
     },
     {
-     "h": "Rythme",
+     "h": "À retenir",
      "lines": [
-      "Dépend des besoins des organes en dioxygène"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi respire-t-on plus vite après une course ?"
+      "La ventilation pulmonaire est un mouvement cyclique et rythmé, le plus souvent inconscient.",
+      "Le volume d’air échangé à chaque cycle (0,5 l) est faible par rapport aux 6 l contenus dans les poumons.",
+      "Le rythme et l’amplitude dépendent des besoins des organes en dioxygène."
      ]
     }
    ]
@@ -1110,22 +1582,36 @@
     {
      "h": "Les poumons",
      "lines": [
-      "Poumon droit : 3 lobes – poumon gauche : 2 lobes",
-      "Alvéoles : paroi fine et riche en vaisseaux"
-     ]
+      "Le poumon droit a trois lobes, le poumon gauche deux.",
+      "Les alvéoles pulmonaires, à paroi fine et très vascularisée, sont le siège des échanges gazeux."
+     ],
+     "fig": {
+      "page": 94,
+      "rect": [
+       0.568,
+       0.669,
+       0.909,
+       0.901
+      ],
+      "caption": "Bronchioles et alvéoles pulmonaires"
+     }
     },
     {
-     "h": "Échanges",
+     "h": "Les échanges",
      "lines": [
-      "Air → sang : dioxygène",
-      "Sang → air : dioxyde de carbone + vapeur d’eau"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Quel gaz le sang reçoit-il dans les alvéoles ? Lequel rejette-t-il ?"
-     ]
+      "Les gaz diffusent à travers les parois des alvéoles et des capillaires.",
+      "Au niveau des poumons, le sang rejette du CO₂ et de la vapeur d’eau et se charge en O₂ ; au niveau des tissus, c’est l’inverse."
+     ],
+     "fig": {
+      "page": 94,
+      "rect": [
+       0.142,
+       0.134,
+       0.858,
+       0.371
+      ],
+      "caption": "Composition de l’air inspiré et expiré, et du sang"
+     }
     }
    ]
   },
@@ -1156,22 +1642,28 @@
    },
    "board": [
     {
-     "h": "Maladies",
+     "h": "Maladies et accidents",
      "lines": [
-      "Bronchite – pneumonie – tuberculose – cancer du poumon"
-     ]
+      "Infections des muqueuses, bronchites, pneumonie, tuberculose pulmonaire, cancers dus au tabac…"
+     ],
+     "fig": {
+      "page": 97,
+      "rect": [
+       0.449,
+       0.512,
+       0.902,
+       0.691
+      ],
+      "caption": "Poumon sain et poumon de fumeur"
+     }
     },
     {
      "h": "Règles d’hygiène",
      "lines": [
-      "Respirer par le nez – bonne posture",
-      "Exercices physiques – ne pas fumer, éviter les gaz toxiques"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Cite deux maladies respiratoires et deux règles d’hygiène."
+      "Respirer par le nez pour filtrer et réchauffer l’air.",
+      "Éviter les mauvaises attitudes qui compriment la cage thoracique.",
+      "Faire des exercices physiques en milieu aéré.",
+      "Vivre au grand air, sans fumer, sans gaz toxiques."
      ]
     }
    ]
@@ -1205,27 +1697,40 @@
     {
      "h": "La branchie",
      "lines": [
-      "Arc branchial + lames de filaments très irrigués"
+      "Une branchie est formée d’un arc branchial portant deux lames de fins filaments très irrigués ; cette structure augmente la surface d’échange."
+     ],
+     "fig": {
+      "page": 99,
+      "rect": [
+       0.433,
+       0.202,
+       0.888,
+       0.357
+      ],
+      "caption": "Les branchies du poisson"
+     }
+    },
+    {
+     "h": "Mouvements respiratoires",
+     "lines": [
+      "Quand la bouche s’ouvre, les opercules s’abaissent ; quand elle se ferme, les opercules se soulèvent."
      ]
     },
     {
-     "h": "Mouvements",
+     "h": "Échanges gazeux",
      "lines": [
-      "Bouche s’ouvre → opercules s’abaissent",
-      "Bouche se ferme → opercules se soulèvent"
-     ]
-    },
-    {
-     "h": "Échanges",
-     "lines": [
-      "L’eau apporte le O₂ dissous et emporte le CO₂"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Que se passe-t-il au niveau des opercules quand le poisson ouvre la bouche ?"
-     ]
+      "Un courant d’eau apporte le dioxygène dissous et emporte le dioxyde de carbone ; les échanges eau–sang ont lieu dans les branchies."
+     ],
+     "fig": {
+      "page": 100,
+      "rect": [
+       0.144,
+       0.721,
+       0.859,
+       0.935
+      ],
+      "caption": "Échanges gazeux au niveau d’une branchie"
+     }
     }
    ]
   },
@@ -1256,24 +1761,38 @@
    },
    "board": [
     {
-     "h": "Organes",
+     "h": "Les trachées",
      "lines": [
-      "Stigmates : orifices sur les côtés du corps",
-      "Trachées → trachéoles : conduisent l’air aux organes"
-     ]
+      "Réseau dense de tubes maintenus ouverts par des spirales de chitine.",
+      "Elles partent des stigmates, petits orifices visibles sur les côtés du corps."
+     ],
+     "fig": {
+      "page": 102,
+      "rect": [
+       0.114,
+       0.779,
+       0.488,
+       0.889
+      ],
+      "caption": "Stigmates et trachées du criquet"
+     }
     },
     {
-     "h": "Mouvements",
+     "h": "Les échanges",
      "lines": [
-      "L’abdomen se contracte : sortie de l’air",
-      "L’abdomen se relâche : entrée de l’air"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Comment s’appellent les orifices respiratoires du criquet ?"
-     ]
+      "Les trachées se ramifient en trachéoles qui conduisent l’air directement aux organes.",
+      "L’abdomen se contracte pour rejeter l’air riche en CO₂ et se relâche pour laisser entrer l’air riche en O₂."
+     ],
+     "fig": {
+      "page": 104,
+      "rect": [
+       0.465,
+       0.283,
+       0.9,
+       0.491
+      ],
+      "caption": "Échanges gazeux respiratoires du criquet"
+     }
     }
    ]
   },
@@ -1304,23 +1823,39 @@
    },
    "board": [
     {
-     "h": "La peau",
+     "h": "Deux respirations",
      "lines": [
-      "Fine – humide – riche en vaisseaux sanguins"
-     ]
+      "Hors de l’eau : respiration pulmonaire par les narines et la glotte.",
+      "Dans l’eau et en hiver (enfouie dans la vase) : respiration surtout cutanée."
+     ],
+     "fig": {
+      "page": 105,
+      "rect": [
+       0.195,
+       0.747,
+       0.517,
+       0.893
+      ],
+      "caption": "La grenouille"
+     }
     },
     {
-     "h": "Respiration",
+     "h": "La respiration cutanée",
      "lines": [
-      "Dans l’eau : par la peau",
-      "Hors de l’eau : poumons + peau"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi la peau de la grenouille permet-elle la respiration ?"
-     ]
+      "Le dioxygène dissous dans l’eau traverse la peau et passe dans le sang ; le CO₂ suit le chemin inverse.",
+      "Caractères : pas de mouvements respiratoires ; peau fine, humide, recouverte de mucus et richement vascularisée.",
+      "Elle complète généralement la respiration pulmonaire ou branchiale."
+     ],
+     "fig": {
+      "page": 105,
+      "rect": [
+       0.526,
+       0.747,
+       0.806,
+       0.895
+      ],
+      "caption": "Coupe de la peau de grenouille"
+     }
     }
    ]
   },
@@ -1353,22 +1888,35 @@
     {
      "h": "La respiration",
      "lines": [
-      "Absorption de dioxygène – rejet de dioxyde de carbone",
-      "Le jour et la nuit"
-     ]
+      "Fonction vitale commune aux animaux et aux végétaux : absorption de dioxygène et rejet de dioxyde de carbone.",
+      "Elle a lieu le jour et la nuit ; le jour, la photosynthèse la masque : on place donc la plante à l’obscurité pour la mettre en évidence."
+     ],
+     "fig": {
+      "page": 116,
+      "rect": [
+       0.216,
+       0.473,
+       0.784,
+       0.857
+      ],
+      "caption": "Plante à l’obscurité : trouble de l’eau de chaux"
+     }
     },
     {
-     "h": "Mise en évidence",
+     "h": "Organes non chlorophylliens et champignons",
      "lines": [
-      "Plante à l’obscurité + eau de chaux qui se trouble",
-      "Organes non chlorophylliens et champignons respirent aussi"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Pourquoi place-t-on la plante à l’obscurité pour étudier sa respiration ?"
-     ]
+      "Tout organisme vivant, chlorophyllien ou non, réalise des échanges gazeux respiratoires avec son milieu."
+     ],
+     "fig": {
+      "page": 120,
+      "rect": [
+       0.141,
+       0.126,
+       0.865,
+       0.344
+      ],
+      "caption": "Respiration des fruits : dégagement de CO₂"
+     }
     }
    ]
   },
@@ -1400,21 +1948,42 @@
    "board": [
     {
      "h": "Structure",
-     "lines": [
-      "Deux cellules de garde – ostiole – cellules annexes"
-     ]
+     "lines": [],
+     "table": [
+      [
+       "Élément",
+       "Rôle"
+      ],
+      [
+       "Cellules de garde",
+       "Deux cellules en forme de rein ; leur ouverture/fermeture contrôle les échanges gazeux"
+      ],
+      [
+       "Ostiole (pore)",
+       "Orifice par lequel passent CO₂, O₂ et vapeur d’eau"
+      ],
+      [
+       "Cellules épidermiques (annexes)",
+       "Entourent les cellules de garde et aident leur fonctionnement"
+      ]
+     ],
+     "fig": {
+      "page": 123,
+      "rect": [
+       0.167,
+       0.206,
+       0.81,
+       0.388
+      ],
+      "caption": "Stomate ouvert et stomate fermé"
+     }
     },
     {
      "h": "Fonctionnement",
      "lines": [
-      "Volume augmente → ostiole ouvert",
-      "Volume diminue → ostiole fermé"
-     ]
-    },
-    {
-     "h": "Application",
-     "lines": [
-      "Que se passe-t-il quand le volume des cellules de garde augmente ?"
+      "Les cellules de garde gonflent : l’ostiole s’ouvre ; elles diminuent de volume : il se ferme.",
+      "Les stomates régulent respiration, photosynthèse et transpiration.",
+      "Chez les plantes aquatiques, les échanges se font entre les gaz dissous dans l’eau et les parties immergées."
      ]
     }
    ]
