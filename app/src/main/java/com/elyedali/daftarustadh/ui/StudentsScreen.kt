@@ -91,7 +91,8 @@ fun StudentsScreen(
                         Text(stringResource(R.string.share_class))
                     }
                     androidx.compose.material3.DropdownMenu(expanded = shareMenu, onDismissRequest = { shareMenu = false }) {
-                        androidx.compose.material3.DropdownMenuItem(
+                        // الإدارة لا ترسل ملف القسم للأساتذة: يصلهم في ملفهم الكامل (أقسامهم وسجلاتهم وجدولهم)
+                        if (!com.elyedali.daftarustadh.AppRole.isAdmin) androidx.compose.material3.DropdownMenuItem(
                             text = {
                                 Column {
                                     Text(stringResource(R.string.share_teacher_file))
