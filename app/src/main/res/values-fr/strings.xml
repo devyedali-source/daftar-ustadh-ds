@@ -743,6 +743,8 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="stat_teachers">Professeurs</string>
     <string name="stat_teachers_by_subject">Professeurs par matière</string>
     <string name="stat_no_teachers">Aucun professeur enregistré. Ajoutez-les dans « Emplois du temps » → onglet « Professeurs ».</string>
+    <string name="stat_teachers_detail">Statistiques par professeur</string>
+    <string name="stat_hours_week">h/semaine</string>
     <string name="tt_swaps_title">Échanges</string>
     <string name="tt_swaps_hint">Échanger deux séances dans l\'emploi du temps d\'une classe : touchez la première puis la seconde. Ou échanger des heures entre deux professeurs depuis l\'emploi du temps du professeur. L\'emploi du temps reste validé après l\'échange.</string>
     <string name="tt_swap_two_sessions">Échanger deux séances (par classe)</string>

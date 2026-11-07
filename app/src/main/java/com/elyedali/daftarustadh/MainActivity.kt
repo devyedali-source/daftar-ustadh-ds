@@ -1953,6 +1953,11 @@ class MainActivity : AppCompatActivity() {
                             classes = managedClasses,
                             genderCounts = genderCounts,
                             teachers = ttTeachers,
+                            assignments = ttAssignments,
+                            hoursOf = managedClasses.flatMap { c ->
+                                CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
+                                    .map { (c.id to it.code) to it.weeklyHours }
+                            }.toMap(),
                             subjectLabel = { subjectName(it) },
                             onBack = { screen = Screen.HOME }
                         )

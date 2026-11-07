@@ -743,6 +743,8 @@
     <string name="stat_teachers">الأساتذة</string>
     <string name="stat_teachers_by_subject">عدد أساتذة كل مادة</string>
     <string name="stat_no_teachers">لا يوجد أساتذة مسجلون بعد. سجّلهم من «الجداول الزمنية» ← تبويب «أساتذة المواد».</string>
+    <string name="stat_teachers_detail">الإحصائية بأسماء الأساتذة</string>
+    <string name="stat_hours_week">ساعة/أسبوع</string>
     <string name="tt_swaps_title">التبادلات</string>
     <string name="tt_swaps_hint">تبادل حصتين في جدول قسم: المس الحصة الأولى ثم الثانية. أو تبادل ساعات بين أستاذين من جدول الأستاذ. يبقى الجدول معتمدًا بعد التبادل.</string>
     <string name="tt_swap_two_sessions">تبادل بين حصتين (حسب القسم)</string>

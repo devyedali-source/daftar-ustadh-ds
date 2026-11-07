@@ -42,6 +42,8 @@ fun StatsScreen(
     classes: List<ClassEntity>,
     genderCounts: List<ClassGenderCount>,
     teachers: List<com.elyedali.daftarustadh.data.TimetableTeacher> = emptyList(),
+    assignments: List<com.elyedali.daftarustadh.data.TimetableAssignmentEntity> = emptyList(),
+    hoursOf: Map<Pair<String, String>, Int> = emptyMap(),
     subjectLabel: (String) -> String = { it },
     onBack: () -> Unit
 ) {
@@ -100,6 +102,29 @@ fun StatsScreen(
                 Text(stringResource(R.string.stat_no_teachers), style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
+            // لكل أستاذ: عدد أقسامه، ساعاته في الأسبوع، والمواد التي يدرّسها (من الإسناد في الجدول الزمني)
+            val classIds = classes.map { it.id }.toSet()
+            val perTeacher = teachers.map { t ->
+                val mine = assignments.filter { it.teacherName == t.name && it.classId in classIds }
+                Triple(t, mine.map { it.classId }.distinct().size, mine.sumOf { hoursOf[it.classId to it.subjectCode] ?: 0 }) to
+                    mine.map { it.subjectCode }.distinct().ifEmpty { t.subjects }
+            }.sortedByDescending { it.first.third }
+            if (perTeacher.isNotEmpty()) item { SectionTitle(stringResource(R.string.stat_teachers_detail)) }
+            items(perTeacher, key = { "tch-" + it.first.first.name }) { (info, subs) ->
+                val (t, nClasses, hours) = info
+                Card(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(t.name, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                            Num(nClasses.toString(), stringResource(R.string.stat_classes), MaterialTheme.colorScheme.secondary)
+                            Num(hours.toString(), stringResource(R.string.stat_hours_week), MaterialTheme.colorScheme.primary)
+                        }
+                        Text(subs.joinToString("، ") { subjectLabel(it) }, style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                }
+            }
+
             val bySubject = teachers.flatMap { t -> t.subjects.map { it to t.name } }
                 .groupBy({ it.first }, { it.second }).toList().sortedByDescending { it.second.size }
             if (bySubject.isNotEmpty()) item { SectionTitle(stringResource(R.string.stat_teachers_by_subject)) }
