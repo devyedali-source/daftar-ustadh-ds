@@ -214,24 +214,8 @@ fun HomeYearsScreen(
                     val total = counts.sumOf { it.count }
                     val boys = counts.filter { it.gender == Gender.BOY }.sumOf { it.count }
                     val girls = counts.filter { it.gender == Gender.GIRL }.sumOf { it.count }
-                    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp, 16.dp, 16.dp, 110.dp),
-                        verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                        item {
-                            Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
-                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
-                                Row(Modifier.fillMaxWidth().padding(14.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
-                                    MiniStat("🏫", yearClasses.size, stringResource(R.string.stat_classes))
-                                    MiniStat("👥", total, stringResource(R.string.stat_students))
-                                    // الأستاذ: مكان الأولاد والبنات تقدم رصد النتائج أسفل البطاقة
-                                    if (mode != MODE_TEACHER) {
-                                        MiniStat("👦", boys, stringResource(R.string.stat_boys))
-                                        MiniStat("👧", girls, stringResource(R.string.stat_girls))
-                                    }
-                                }
-                            }
-                        }
-                        if (mode == MODE_TEACHER && termProgress.isNotEmpty()) item { TermProgressCard(termProgress, onUploadTerm) }
-                        item {
+                    // بطاقة صاحب الوضع (الأستاذ أو المؤسسة) وأدواته
+                    val ownerCard: @Composable () -> Unit = {
                             // صاحب الوضع وأدواته: المؤسسة وأدوات الإدارة، أو الأستاذ وأدواته
                             // كل زر إما أداة مباشرة، وإما مجموعة تفتح قائمة بأدواتها
                             val tools: List<Pair<String, List<Pair<String, String>>>> = if (mode == MODE_ADMIN) listOf(
@@ -276,7 +260,27 @@ fun HomeYearsScreen(
 
                                 }
                             }
+                    }
+                    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp, 16.dp, 16.dp, 110.dp),
+                        verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                        // وضع الأستاذ: معلوماته أعلى الإحصائيات
+                        if (mode == MODE_TEACHER) item { ownerCard() }
+                        item {
+                            Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
+                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                                Row(Modifier.fillMaxWidth().padding(14.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
+                                    MiniStat("🏫", yearClasses.size, stringResource(R.string.stat_classes))
+                                    MiniStat("👥", total, stringResource(R.string.stat_students))
+                                    // الأستاذ: مكان الأولاد والبنات تقدم رصد النتائج أسفل البطاقة
+                                    if (mode != MODE_TEACHER) {
+                                        MiniStat("👦", boys, stringResource(R.string.stat_boys))
+                                        MiniStat("👧", girls, stringResource(R.string.stat_girls))
+                                    }
+                                }
+                            }
                         }
+                        if (mode == MODE_TEACHER && termProgress.isNotEmpty()) item { TermProgressCard(termProgress, onUploadTerm) }
+                        if (mode != MODE_TEACHER) item { ownerCard() }
                         // خطوات العمل: ماذا تفعل الإدارة، وماذا يفعل الأستاذ
                         item {
                             if (mode == MODE_ADMIN) StepsGuide(R.string.steps_admin_title, listOf(
