@@ -249,6 +249,49 @@ object TimetableGenerator {
             temp *= cooling
         }
 
+        // 3) إصلاح: حصة لم تجد مكانًا (لأن ساعات القسم الفارغة يكون فيها أستاذها مشغولًا)
+        //    نُفرغ لها مكانًا بنقل الحصة أو الحصتين اللتين تعترضانها (في القسم أو عند الأستاذ) إلى أماكن أخرى
+        fun bestFreeSlot(u: Int): Int {
+            var best = -1; var bestCost = Double.MAX_VALUE
+            for (s in 0 until slots) {
+                if (!free(u, s)) continue
+                place(u, s)
+                val cost = localCost(units[u].classIdx, listOf(units[u].teacherIdx), setOf(s / periods))
+                remove(u)
+                if (cost < bestCost) { bestCost = cost; best = s }
+            }
+            return best
+        }
+
+        fun tryRepair(u: Int): Boolean {
+            val unit = units[u]
+            for (s in (0 until slots).filter { validStart(u, it) }.shuffled(rnd)) {
+                val blockers = LinkedHashSet<Int>()
+                for (k in 0 until unit.size) {
+                    classAt[unit.classIdx][s + k].let { if (it >= 0) blockers += it }
+                    if (unit.teacherIdx >= 0) teacherAt[unit.teacherIdx][s + k].let { if (it >= 0) blockers += it }
+                }
+                if (blockers.isEmpty()) { place(u, s); return true }
+                if (blockers.size > 2) continue
+                val old = blockers.associateWith { pos[it] }
+                blockers.forEach { remove(it) }
+                place(u, s)
+                val moved = ArrayList<Int>()
+                var ok = true
+                for (b in blockers) {
+                    val t = bestFreeSlot(b)
+                    if (t < 0) { ok = false; break }
+                    place(b, t); moved += b
+                }
+                if (ok) return true
+                moved.forEach { remove(it) }
+                remove(u)
+                old.forEach { (b, p) -> place(b, p) }
+            }
+            return false
+        }
+        unplacedUnits.removeAll { tryRepair(it) }
+
         // محاولة أخيرة: حصة لم تجد مكانًا تُوزَّع ساعاتها منفصلة حيث أمكن
         val stillUnplaced = ArrayList<Pair<LessonUnit, Int>>()
         val extraPlaced = ArrayList<Placed>()
