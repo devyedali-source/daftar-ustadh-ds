@@ -54,7 +54,22 @@ fun PlanningTab(
 ) {
     val context = LocalContext.current
     val withPlan = remember(levelCode) { AnnualPlans.subjectsWithPlan(context, levelCode) }
-    val available = mySubjects.filter { it.first in withPlan }
+    // ترتيب المواد يحدده الأستاذ بنفسه (يرفع مادة أو ينزلها) ويُحفظ على الجهاز
+    val prefs = remember { context.getSharedPreferences("planning_order", android.content.Context.MODE_PRIVATE) }
+    var order by remember { mutableStateOf(prefs.getString("order", "").orEmpty().split(",").filter { it.isNotBlank() }) }
+    var reordering by rememberSaveable { mutableStateOf(false) }
+    val available = mySubjects.filter { it.first in withPlan }.let { list ->
+        list.sortedBy { s -> order.indexOf(s.first).let { i -> if (i < 0) Int.MAX_VALUE else i } }
+    }
+    fun move(code: String, delta: Int) {
+        val codes = available.map { it.first }.toMutableList()
+        val i = codes.indexOf(code); val j = i + delta
+        if (i < 0 || j !in codes.indices) return
+        codes[i] = codes[j]; codes[j] = code
+        // نحتفظ بترتيب مواد المستويات الأخرى ونضع ترتيب هذا المستوى أولا
+        order = codes + order.filter { it !in codes }
+        prefs.edit().putString("order", order.joinToString(",")).apply()
+    }
     // التربية البدنية ليس لها تخطيط سنوي: لا تُعدّ ناقصة
     val missing = mySubjects.filter { it.first !in withPlan && it.first != NO_PLAN }
     val onlyNoPlan = available.isEmpty() && mySubjects.isNotEmpty() && mySubjects.all { it.first == NO_PLAN }
@@ -75,6 +90,24 @@ fun PlanningTab(
         item {
             Text("🗓️ " + stringResource(R.string.plan_title), fontWeight = FontWeight.Black, fontSize = 17.sp,
                 color = MaterialTheme.colorScheme.primary)
+        }
+        if (available.size > 1) item {
+            Text(if (reordering) "✔ " + stringResource(R.string.plan_reorder_done) else "↕ " + stringResource(R.string.plan_reorder),
+                fontSize = 12.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.clip(RoundedCornerShape(8.dp)).clickable { reordering = !reordering }.padding(vertical = 4.dp, horizontal = 6.dp))
+        }
+        if (reordering && available.size > 1) {
+            itemsIndexed(available, key = { _, it -> "ord_" + it.first }) { i, (code, label) ->
+                Row(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.surfaceVariant)
+                    .padding(horizontal = 12.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text("${i + 1}. " + label, Modifier.weight(1f), fontWeight = FontWeight.Bold)
+                    Text("▲", fontSize = 18.sp, color = if (i > 0) MaterialTheme.colorScheme.primary else Color.Gray,
+                        modifier = Modifier.clip(RoundedCornerShape(6.dp)).clickable(enabled = i > 0) { move(code, -1) }.padding(8.dp))
+                    Text("▼", fontSize = 18.sp, color = if (i < available.size - 1) MaterialTheme.colorScheme.primary else Color.Gray,
+                        modifier = Modifier.clip(RoundedCornerShape(6.dp)).clickable(enabled = i < available.size - 1) { move(code, 1) }.padding(8.dp))
+                }
+            }
+            return@LazyColumn
         }
         if (available.size > 1) item {
             LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {

@@ -737,6 +737,8 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="plan_tab">Progression</string>
     <string name="plan_title">Progression annuelle</string>
     <string name="plan_holiday">Vacances</string>
+    <string name="plan_reorder">Ordonner les matières</string>
+    <string name="plan_reorder_done">Terminer</string>
     <string name="plan_missing">Progression pas encore disponible : %1$s</string>
     <string name="plan_none">La progression annuelle de vos matières pour ce niveau n\'est pas encore disponible.</string>
     <string name="plan_no_eps">L\'EPS n\'a pas de progression annuelle.</string>

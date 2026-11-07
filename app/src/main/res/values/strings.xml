@@ -737,6 +737,8 @@
     <string name="plan_tab">التخطيط</string>
     <string name="plan_title">التخطيط السنوي</string>
     <string name="plan_holiday">عطلة</string>
+    <string name="plan_reorder">ترتيب المواد</string>
+    <string name="plan_reorder_done">تم الترتيب</string>
     <string name="plan_missing">لم يصل بعد تخطيط: %1$s</string>
     <string name="plan_none">لم يصل بعد التخطيط السنوي لموادك في هذا المستوى.</string>
     <string name="plan_no_eps">التربية البدنية ليس لها تخطيط سنوي.</string>
