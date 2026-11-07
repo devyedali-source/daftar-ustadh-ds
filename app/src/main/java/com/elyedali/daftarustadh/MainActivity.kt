@@ -800,21 +800,6 @@ class MainActivity : AppCompatActivity() {
                     ) { d, p -> slotsMine[d to p]?.let { l -> val (ar, fr) = subjectArFr(l.first().subjectCode); l.joinToString(" / ") { names[it.classId].orEmpty() } + "\n$ar\n$fr" }.orEmpty() }
                 }
 
-                fun sendTeacherTimetable(teacher: String) {
-                    if (!ttApproved) {
-                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.tt_approve_first), android.widget.Toast.LENGTH_LONG).show()
-                        return
-                    }
-                    val file = buildTeacherTimetable(teacher) ?: return
-                    scope.launch {
-                        val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeTimetable(file) }
-                        // الجدول ظاهر في الصفحة الثانية من الملف نفسه
-                        val ttInfo = inst?.let { teacherTimetableInfo(teacher, it) }
-                        ShareHelper.share(this@MainActivity, bytes, file.fileName(), getString(R.string.tt_send_teacher),
-                            extraPages = ttInfo?.let { info -> { doc: android.graphics.pdf.PdfDocument, no: Int -> com.elyedali.daftarustadh.pdf.TimetablePdf.drawInto(doc, no, info) } })
-                    }
-                }
-
                 /** سحب دفتر النصوص فارغًا (PDF) لملئه باليد — للإدارة. */
                 fun textbookInfo(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity): com.elyedali.daftarustadh.pdf.TextbookPdf.Info {
                         val wilayaFr = SchoolDirectory.wilaya(this@MainActivity, owner.wilaya)?.nameFr ?: owner.wilaya
@@ -1605,7 +1590,6 @@ class MainActivity : AppCompatActivity() {
                         onShareClass = { shareClassTimetable(it) },
                         onShareAll = { shareAllClassesTimetable() },
                         onShareTeacherPdf = { shareTeacherTimetablePdf(it) },
-                        onSendTeacherFile = { sendTeacherTimetable(it) },
                         onBack = { screen = ttBack },
                         initialTab = ttInitialTab,
                         problems = ttProblems,

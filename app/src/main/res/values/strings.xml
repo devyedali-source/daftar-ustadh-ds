@@ -436,7 +436,6 @@
     <string name="tt_empty_cell">خانة فارغة (بدون حصة)</string>
     <string name="tt_no_teachers">لا يوجد أساتذة في الجدول بعد. عيّن الأساتذة ثم ولّد الجدول.</string>
     <string name="tt_teacher_hours">%1$s: %2$d ساعة في الأسبوع</string>
-    <string name="tt_send_teacher">إرسال الجدول للأستاذ (ملف)</string>
     <string name="tt_teacher_pdf">سحب جدول الأستاذ (PDF)</string>
     <string name="tt_open_institution">فتح الجدول الزمني للمؤسسة</string>
     <string name="tt_open_file">فتح ملف جدول وصلني من الإدارة</string>

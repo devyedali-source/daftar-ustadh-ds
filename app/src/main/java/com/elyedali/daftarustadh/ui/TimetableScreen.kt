@@ -108,7 +108,6 @@ fun TimetableScreen(
     onShareClass: (ClassEntity) -> Unit,
     onShareAll: () -> Unit = {},
     onShareTeacherPdf: (String) -> Unit,
-    onSendTeacherFile: (String) -> Unit,
     onBack: () -> Unit,
     initialTab: Int? = null,
     problems: List<String> = emptyList(),
@@ -131,7 +130,7 @@ fun TimetableScreen(
                         problems, approved, onApprove, onGoTab = { tab = it }, manual = manual, onStartManual = onStartManual)
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)
                     2 -> ByClassTab(classes, subjectsByClass, subjectLabel, settings, assignments, slots, initialClassId, onSwap, onEditCell, onShareClass, teachers, onShareAll)
-                    else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSendTeacherFile, onSwap)
+                    else -> ByTeacherTab(classes, subjectLabel, settings, slots, onShareTeacherPdf, onSwap)
                 }
             }
         }
@@ -754,7 +753,6 @@ private fun ByTeacherTab(
     settings: TimetableSettings,
     slots: List<TimetableSlotEntity>,
     onSharePdf: (String) -> Unit,
-    onSendFile: (String) -> Unit,
     onSwap: (String, Pair<Int, Int>, Pair<Int, Int>) -> String?
 ) {
     val context = LocalContext.current
@@ -797,9 +795,6 @@ private fun ByTeacherTab(
         )
         if (selected != null) Text(stringResource(R.string.tt_teacher_swap_pick), fontSize = 12.sp, fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.primary)
-        Button(onClick = { onSendFile(t) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
-            Text("📤 " + stringResource(R.string.tt_send_teacher))
-        }
         OutlinedButton(onClick = { onSharePdf(t) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
             Text("🖨️ " + stringResource(R.string.tt_teacher_pdf))
         }

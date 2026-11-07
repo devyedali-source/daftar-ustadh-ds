@@ -436,7 +436,6 @@
     <string name="tt_empty_cell">Case vide (pas de séance)</string>
     <string name="tt_no_teachers">Aucun professeur dans l\'emploi du temps. Affectez-les puis générez.</string>
     <string name="tt_teacher_hours">%1$s : %2$d h par semaine</string>
-    <string name="tt_send_teacher">Envoyer l\'emploi du temps au professeur (fichier)</string>
     <string name="tt_teacher_pdf">Emploi du temps du professeur (PDF)</string>
     <string name="tt_open_institution">Ouvrir l\'emploi du temps de l\'établissement</string>
     <string name="tt_open_file">Ouvrir un fichier d\'emploi du temps reçu</string>
