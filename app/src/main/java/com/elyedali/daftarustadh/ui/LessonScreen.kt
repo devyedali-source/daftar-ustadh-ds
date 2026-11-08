@@ -97,13 +97,24 @@ fun LessonDialog(
                 Box(Modifier.weight(1f)) {
                     when (view) {
                         1 -> BookPages(bookAsset, lesson.pageFrom, lesson.pageTo, bookTitle)
-                        2 -> BoardView(lesson, bookAsset)
+                        // دروس المواد التي تُدرَّس بالفرنسية أو الإنجليزية: السبورة تُكتب من اليسار إلى اليمين
+                        2 -> if (isLatinLesson(lesson)) androidx.compose.runtime.CompositionLocalProvider(
+                            androidx.compose.ui.platform.LocalLayoutDirection provides androidx.compose.ui.unit.LayoutDirection.Ltr
+                        ) { BoardView(lesson, bookAsset) } else BoardView(lesson, bookAsset)
                         else -> PrepView(lesson)
                     }
                 }
             }
         }
     }
+}
+
+/** الدرس مكتوب بحروف لاتينية (فرنسية أو إنجليزية): الحروف اللاتينية أكثر من العربية في عنوانه ومحتوى سبورته. */
+private fun isLatinLesson(l: BookLesson): Boolean {
+    val text = l.title + " " + l.board.take(3).joinToString(" ") { it.heading + " " + it.lines.take(3).joinToString(" ") }
+    val arabic = text.count { it in '\u0600'..'\u06FF' }
+    val latin = text.count { it in 'A'..'Z' || it in 'a'..'z' || it in '\u00C0'..'\u024F' }
+    return latin > arabic
 }
 
 @Composable
