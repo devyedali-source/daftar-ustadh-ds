@@ -1796,6 +1796,13 @@ class MainActivity : AppCompatActivity() {
                                         verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(10.dp)
                                     ) {
                                         // هذه الصفحة تعرض فقط جدول القسم المعتمد؛ الجدول يُعدّ ويُولَّد لكل الأقسام معًا من «الجدول الزمني»
+                                        // زر سحب الجدول في الأعلى فيبقى ظاهرًا دائمًا فوق الجدول
+                                        if (at.isNotEmpty() && ttApproved) androidx.compose.material3.OutlinedButton(onClick = { shareClassTimetable(c) },
+                                            shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp),
+                                            modifier = Modifier.fillMaxWidth()) {
+                                            Text("🖨️ " + stringResource(R.string.tt_share_class, c.name),
+                                                textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                                        }
                                         if (at.isEmpty() || !ttApproved) Text(stringResource(R.string.tt_class_not_approved),
                                             color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                         else com.elyedali.daftarustadh.ui.TimetableGrid(
@@ -1803,8 +1810,6 @@ class MainActivity : AppCompatActivity() {
                                             cell = { d, p -> at[d to p]?.let { subjectName(it.subjectCode) to it.teacherName } },
                                             colorKey = { d, p -> at[d to p]?.subjectCode }
                                         )
-                                        if (at.isNotEmpty() && ttApproved) androidx.compose.material3.OutlinedButton(onClick = { shareClassTimetable(c) },
-                                            modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.tt_share_class, c.name)) }
                                     }
                                 }
                             }
