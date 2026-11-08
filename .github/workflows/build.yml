@@ -18,8 +18,14 @@ jobs:
           gradle-version: "8.9"
       - name: Build debug APK
         run: gradle assembleDebug --no-daemon
+      # كل تطبيق في ملف تحميل مستقل
       - uses: actions/upload-artifact@v4
         with:
-          name: daftar-ustadh-ds-apps
-          path: app/build/outputs/apk/*/debug/*.apk
+          name: تطبيق-الأستاذ
+          path: app/build/outputs/apk/teacher/debug/*.apk
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        with:
+          name: تطبيق-الإدارة
+          path: app/build/outputs/apk/admin/debug/*.apk
           retention-days: 7
