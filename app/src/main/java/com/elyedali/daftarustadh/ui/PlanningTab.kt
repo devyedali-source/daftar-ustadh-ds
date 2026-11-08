@@ -102,13 +102,8 @@ fun PlanningTab(
                 }, fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 if (st is com.elyedali.daftarustadh.data.BookPack.Status.Downloading)
                     androidx.compose.material3.LinearProgressIndicator(progress = { st.percent / 100f }, modifier = Modifier.fillMaxWidth())
-                else if (st !is com.elyedali.daftarustadh.data.BookPack.Status.Failed)
+                else
                     androidx.compose.material3.LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
-                if (st is com.elyedali.daftarustadh.data.BookPack.Status.Failed || st is com.elyedali.daftarustadh.data.BookPack.Status.WaitingWifi)
-                    Text("↻ " + stringResource(R.string.books_retry), fontSize = 12.sp, fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.clip(RoundedCornerShape(8.dp))
-                            .clickable { com.elyedali.daftarustadh.data.BookPack.retry(context) }.padding(vertical = 4.dp, horizontal = 6.dp))
             }
         }
         item {

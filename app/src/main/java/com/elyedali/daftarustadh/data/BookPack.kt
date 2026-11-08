@@ -37,8 +37,22 @@ object BookPack {
         !context.assets.list(PACK).isNullOrEmpty()
     } catch (e: Exception) { false }.also { bundled = it }
 
+    private var appContext: Context? = null
+    private val handler = android.os.Handler(android.os.Looper.getMainLooper())
+
     private val listener = AssetPackStateUpdateListener { s: AssetPackState ->
-        if (s.name() == PACK) _status.value = toStatus(s)
+        if (s.name() == PACK) {
+            val st = toStatus(s)
+            _status.value = st
+            if (st is Status.Failed) retryLater()
+        }
+    }
+
+    /** إعادة التحميل تلقائيًا بعد دقيقة دون تدخل من المستخدم (انقطاع الإنترنت مثلًا). */
+    private fun retryLater() {
+        val c = appContext ?: return
+        handler.removeCallbacksAndMessages(null)
+        handler.postDelayed({ start(c) }, 60_000L)
     }
 
     private fun toStatus(s: AssetPackState): Status = when (s.status()) {
@@ -56,19 +70,18 @@ object BookPack {
     fun start(context: Context) {
         if (AppRole.isAdmin) return
         val app = context.applicationContext
+        appContext = app
         if (isBundled(app)) { _status.value = Status.Ready; return }
         try {
             val m = manager ?: AssetPackManagerFactory.getInstance(app).also { manager = it }
             if (m.getPackLocation(PACK) != null) { _status.value = Status.Ready; return }
             if (!listening) { m.registerListener(listener); listening = true }
-            m.fetch(listOf(PACK)).addOnFailureListener { _status.value = Status.Failed }
+            m.fetch(listOf(PACK)).addOnFailureListener { _status.value = Status.Failed; retryLater() }
         } catch (e: Exception) {
             _status.value = Status.Failed
+            retryLater()
         }
     }
-
-    /** إعادة المحاولة بعد فشل أو انتظار شبكة. */
-    fun retry(context: Context) { _status.value = Status.Pending; start(context) }
 
     /** ملف الكتاب الجاهز للقراءة، أو null إن لم تُنزَّل الحزمة بعد. */
     fun file(context: Context, assetPath: String): File? {

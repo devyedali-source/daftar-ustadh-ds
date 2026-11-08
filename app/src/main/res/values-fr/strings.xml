@@ -803,9 +803,8 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="books_downloading">📥 Téléchargement des manuels : %1$d%%</string>
     <string name="books_pending">📥 Préparation du téléchargement des manuels…</string>
     <string name="books_waiting_wifi">📶 Les manuels attendent une connexion Wi-Fi.</string>
-    <string name="books_failed">⚠️ Le téléchargement des manuels n\'a pas abouti. Vérifiez Internet et que l\'application vient du Play Store.</string>
-    <string name="books_retry">Réessayer</string>
-    <string name="books_not_ready">📥 Les manuels sont encore en téléchargement. Suivez la progression dans la page du plan annuel.</string>
+    <string name="books_failed">📥 Le téléchargement des manuels a été interrompu ; il reprendra automatiquement dès qu\'Internet sera disponible.</string>
+    <string name="books_not_ready">📥 Les manuels sont encore en téléchargement ; ils s\'afficheront ici automatiquement une fois terminés.</string>
     <string name="lesson_book_missing">Impossible d\'ouvrir le manuel.</string>
     <string name="plan_lessons_hint">Touchez le titre d\'une leçon pour ouvrir la préparation, le manuel et le tableau.</string>
 </resources>
