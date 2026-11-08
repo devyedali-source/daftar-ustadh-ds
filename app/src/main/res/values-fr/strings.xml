@@ -155,7 +155,7 @@
     <string name="subjects_complete">Matières complètes : %1$d sur %2$d</string>
     <string name="all_subjects_complete">Toutes les matières de ce trimestre sont complètes.</string>
     <string name="upload_record">Charger un relevé d\'enseignant</string>
-    <string name="upload_record_hint">Trois façons : importer le registre du professeur, saisie rapide par N° d\'appel (manuelle ou photo), ou toucher une matière ci-dessous pour saisir ou corriger.</string>
+    <string name="upload_record_hint">Trois façons : importer le registre du professeur, saisie rapide par N° d\'appel, ou toucher une matière ci-dessous pour saisir ou corriger.</string>
     <string name="source_teacher">Chargé depuis le relevé de : %1$s</string>
     <string name="source_manual">Saisie manuelle</string>
     <string name="source_none">Pas encore chargé</string>
@@ -629,7 +629,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="steps_admin_2">Dans « Emploi du temps », enregistrez tous les professeurs, leurs matières et leur WhatsApp : les classes leur sont réparties automatiquement selon les heures. Générez ensuite l\'emploi du temps de toutes les classes et validez-le ; celui de chaque classe s\'affiche dans la classe.</string>
     <string name="steps_admin_3">Dans « Partager les registres », envoyez à chaque professeur son fichier : listes de ses classes, matières et emploi du temps.</string>
     <string name="steps_admin_4">Demandez à chaque professeur d\'installer « دفتر الأستاذ DS », d\'y ouvrir le fichier, de saisir les notes de chaque trimestre et de vous les renvoyer.</string>
-    <string name="steps_admin_5">Trois façons d\'enregistrer les notes : (a) importer les registres : « Résultats » ← « Importer un registre » pour un fichier, ou « 📥 Importer plusieurs registres » pour sélectionner d\'un coup tous les fichiers reçus sur WhatsApp ; doublons ignorés, puis s\'affiche ce qui manque ou « complets » ; (b) saisie rapide par N° d\'appel, manuelle ou par photo ; (c) saisie manuelle : touchez la matière pour saisir ou corriger (ex. 0 → 10), après le dernier import de cette matière. Aucun calcul : tout est automatique.</string>
+    <string name="steps_admin_5">Trois façons d\'enregistrer les notes : (a) importer les registres : « Résultats » ← « Importer un registre » pour un fichier, ou « 📥 Importer plusieurs registres » pour sélectionner d\'un coup tous les fichiers reçus sur WhatsApp ; doublons ignorés, puis s\'affiche ce qui manque ou « complets » ; (b) saisie rapide par N° d\'appel ; (c) saisie manuelle : touchez la matière pour saisir ou corriger (ex. 0 → 10), après le dernier import de cette matière. Aucun calcul : tout est automatique.</string>
     <string name="steps_admin_6">Quand toutes les matières sont complètes, le bouton des bulletins s\'active.</string>
     <string name="steps_teacher_title">Étapes du professeur</string>
     <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier de classe » (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes et matières apparaissent. Votre emploi du temps est imprimé en page 2 du même fichier.</string>
@@ -640,8 +640,8 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="record_other_teacher">⚠️ Dans l\'emploi du temps, cette matière est attribuée à : %1$s. Vérifiez avant d\'importer.</string>
     <string name="doc_pick_subject">Choisissez la matière de ce devoir</string>
     <string name="qg_title">Saisie rapide par N° d\'appel</string>
-    <string name="qg_button">Saisie rapide par N° d\'appel (manuelle ou par photo de la feuille)</string>
-    <string name="qg_intro">Pour les feuilles rendues par le professeur avec les numéros d\'appel seulement. Choisissez le trimestre, puis la matière, puis la case : un tableau des numéros d\'appel apparaît. Tapez la note de chaque numéro, ou prenez une photo de la feuille pour remplir les cases. Vérifiez puis enregistrez.</string>
+    <string name="qg_button">Saisie rapide par N° d\'appel</string>
+    <string name="qg_intro">Pour les feuilles rendues par le professeur avec les numéros d\'appel seulement. Choisissez le trimestre, puis la matière, puis la case : un tableau des numéros d\'appel apparaît. Tapez la note de chaque numéro, puis vérifiez et enregistrez.</string>
     <string name="qg_term">T%1$d</string>
     <string name="qg_camera">Photographier</string>
     <string name="qg_gallery">Photo du téléphone</string>

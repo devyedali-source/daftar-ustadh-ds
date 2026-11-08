@@ -115,11 +115,6 @@ fun QuickGradesScreen(
     students: List<StudentEntity>,
     grades: List<GradeEntity>,
     initialSubject: String?,
-    ocrText: String?,
-    ocrBusy: Boolean,
-    onPhoto: () -> Unit,
-    onCamera: () -> Unit,
-    onOcrConsumed: () -> Unit,
     onSave: (subjectCode: String, slot: String, values: Map<String, Double>) -> Unit,
     onBack: () -> Unit
 ) {
@@ -134,23 +129,8 @@ fun QuickGradesScreen(
     val ready = slot != null && subject != null
     // ما كُتب في الجدول: رقم النداء ← النقطة كنص (يُفرَّغ عند تغيير المادة أو الخانة)
     val entries = remember(subject, slot) { mutableStateMapOf<Int, String>() }
-    // آخر نص قُرئ من صورة، والأسطر التي لم تُفهم منه
-    var lastOcr by rememberSaveable { mutableStateOf("") }
-    var ocrBad by remember { mutableStateOf<List<String>>(emptyList()) }
     val sorted = students.sortedBy { it.rollNumber }
     val byRoll = sorted.associateBy { it.rollNumber }
-
-    fun fillFrom(text: String) {
-        val parsed = parseRollGrades(text)
-        val good = parsed.filter { it.roll != null && it.grade != null && it.roll in byRoll }
-        good.forEach { entries[it.roll!!] = GradeMath.format(it.grade) }
-        ocrBad = parsed.filter { it !in good }.map { it.line }
-        saved = null
-    }
-    // نص الصورة يملأ خانات الجدول للمراجعة
-    LaunchedEffect(ocrText) {
-        if (ocrText != null) { lastOcr = ocrText; fillFrom(ocrText); onOcrConsumed() }
-    }
 
     val current = grades.filter { it.subjectCode == subject && it.slot == slot }.associateBy { it.studentId }
     val filled = entries.filterValues { it.isNotBlank() }
@@ -167,47 +147,20 @@ fun QuickGradesScreen(
                 item {
                     StepCombo(stringResource(R.string.qg_pick_term),
                         listOf("1" to stringResource(R.string.term_1), "2" to stringResource(R.string.term_2), "3" to stringResource(R.string.term_3)),
-                        term?.toString()) { term = it.toInt(); saved = null; ocrBad = emptyList() }
+                        term?.toString()) { term = it.toInt(); saved = null }
                 }
                 if (term != null) item {
                     StepCombo(stringResource(R.string.qg_pick_subject), subjects.map { it.code to subjectLabel(it) }, subject) {
-                        subject = it; saved = null; ocrBad = emptyList()
+                        subject = it; saved = null
                     }
                 }
                 if (term != null && subject != null) item {
                     StepCombo(stringResource(R.string.qg_pick_slot),
                         listOf("T" to stringResource(R.string.test_short), "E" to stringResource(R.string.exam_short)),
-                        exam?.let { if (it) "E" else "T" }) { exam = it == "E"; saved = null; ocrBad = emptyList() }
+                        exam?.let { if (it) "E" else "T" }) { exam = it == "E"; saved = null }
                 }
                 if (!ready) item {
                     Text(stringResource(R.string.qg_pick_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                }
-                if (ready) item {
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        OutlinedButton(onClick = onCamera, enabled = !ocrBusy, modifier = Modifier.weight(1f)) {
-                            Text("📷 " + stringResource(R.string.qg_camera), maxLines = 1, overflow = TextOverflow.Ellipsis)
-                        }
-                        OutlinedButton(onClick = onPhoto, enabled = !ocrBusy, modifier = Modifier.weight(1f)) {
-                            Text("🖼️ " + stringResource(R.string.qg_gallery), maxLines = 1, overflow = TextOverflow.Ellipsis)
-                        }
-                    }
-                    if (ocrBusy) Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(top = 6.dp)) {
-                        CircularProgressIndicator(Modifier.size(18.dp), strokeWidth = 2.dp)
-                        Text("  " + stringResource(R.string.qg_reading), fontSize = 13.sp)
-                    }
-                }
-                // إن قُرئت الورقة بالعكس (النقطة قبل الرقم): يُقلب أول وآخر عدد في كل سطر ويُعاد ملء الجدول
-                if (ready && lastOcr.isNotBlank()) item {
-                    TextButton(onClick = {
-                        lastOcr = lastOcr.lines().joinToString("\n") { line ->
-                            val nums = Regex("""\d+(?:[.,]\d+)?""").findAll(line).map { it.value }.toList()
-                            if (nums.size >= 2) "${nums.last()}  ${nums.first()}" else line
-                        }
-                        entries.clear(); fillFrom(lastOcr)
-                    }) { Text("⇄ " + stringResource(R.string.qg_swap), fontSize = 12.sp) }
-                }
-                if (ready && ocrBad.isNotEmpty()) item {
-                    Text(stringResource(R.string.qg_bad, ocrBad.joinToString(" | ")), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
                 }
                 // رأس الجدول
                 if (ready) item {
@@ -264,7 +217,7 @@ fun QuickGradesScreen(
                             subject?.let { s -> if (sl != null) {
                                 onSave(s, sl, values)
                                 saved = values.size
-                                entries.clear(); lastOcr = ""; ocrBad = emptyList()
+                                entries.clear()
                                 focus.clearFocus()
                             } }
                         },

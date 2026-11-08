@@ -1053,29 +1053,6 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                // ===== إدخال النتائج بأرقام النداء: قراءة صورة ورقة الأستاذ =====
-                var ocrText by remember { mutableStateOf<String?>(null) }
-                var ocrBusy by remember { mutableStateOf(false) }
-                fun readPhoto(uri: Uri) {
-                    ocrBusy = true
-                    scope.launch {
-                        val t = com.elyedali.daftarustadh.ocr.RollOcr.read(this@MainActivity, uri)
-                        ocrBusy = false
-                        if (t.isBlank()) android.widget.Toast.makeText(this@MainActivity, getString(R.string.qg_ocr_failed), android.widget.Toast.LENGTH_LONG).show()
-                        else ocrText = t
-                    }
-                }
-                val photoPicker = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) { uri -> if (uri != null) readPhoto(uri) }
-                var cameraUri by remember { mutableStateOf<Uri?>(null) }
-                val camera = rememberLauncherForActivityResult(ActivityResultContracts.TakePicture()) { ok -> if (ok) cameraUri?.let { readPhoto(it) } }
-                fun takePhoto() {
-                    val dir = java.io.File(cacheDir, "photos").apply { mkdirs(); listFiles()?.forEach { it.delete() } }
-                    val f = java.io.File(dir, "sheet-${System.currentTimeMillis()}.jpg")
-                    val uri = androidx.core.content.FileProvider.getUriForFile(this@MainActivity, "$packageName.files", f)
-                    cameraUri = uri
-                    try { camera.launch(uri) } catch (e: Exception) { photoPicker.launch("image/*") }
-                }
-
                 val chooserTitle = stringResource(R.string.share_chooser)
                 /** عنوان لائحة طلاب القسم في ملفات القسم وحزمة الأستاذ. */
                 fun studentListInfo(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity, full: Boolean) =
@@ -1395,11 +1372,6 @@ class MainActivity : AppCompatActivity() {
                             students = students,
                             grades = classGrades,
                             initialSubject = subjectCode,
-                            ocrText = ocrText,
-                            ocrBusy = ocrBusy,
-                            onPhoto = { photoPicker.launch("image/*") },
-                            onCamera = { takePhoto() },
-                            onOcrConsumed = { ocrText = null },
                             onSave = { code, slot, values ->
                                 scope.launch {
                                     val now = System.currentTimeMillis()
