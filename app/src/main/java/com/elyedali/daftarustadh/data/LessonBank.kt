@@ -87,7 +87,10 @@ object LessonBank {
     }
 
     /** نسخة الكتاب في ملفات التطبيق (PdfRenderer يحتاج ملفًا لا ملف assets). */
-    fun bookFile(context: Context, assetPath: String): File? = try {
+    fun bookFile(context: Context, assetPath: String): File? =
+        if (BookPack.bundledIn(context)) bundledBookFile(context, assetPath) else BookPack.file(context, assetPath)
+
+    private fun bundledBookFile(context: Context, assetPath: String): File? = try {
         val out = File(context.filesDir, assetPath)
         val size = context.assets.openFd(assetPath).use { it.length }
         if (!out.exists() || (size > 0 && out.length() != size)) {

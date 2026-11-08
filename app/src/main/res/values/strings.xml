@@ -800,6 +800,12 @@
     <string name="lesson_application">تطبيق صغير</string>
     <string name="lesson_show_answer">إظهار الإجابة</string>
     <string name="lesson_hide_answer">إخفاء الإجابة</string>
+    <string name="books_downloading">📥 جارٍ تحميل صور الكتب: %1$d%%</string>
+    <string name="books_pending">📥 جارٍ تجهيز تحميل صور الكتب…</string>
+    <string name="books_waiting_wifi">📶 صور الكتب تنتظر اتصال Wi-Fi لتُحمَّل.</string>
+    <string name="books_failed">⚠️ لم يكتمل تحميل صور الكتب. تأكد من الإنترنت وأن التطبيق مثبت من المتجر.</string>
+    <string name="books_retry">إعادة المحاولة</string>
+    <string name="books_not_ready">📥 صور الكتب ما زالت تُحمَّل. تابع نسبة التحميل في صفحة التخطيط السنوي.</string>
     <string name="lesson_book_missing">تعذر فتح الكتاب.</string>
     <string name="plan_lessons_hint">اضغط على عنوان الدرس لفتح التحضير ومحتوى الكتاب والسبورة.</string>
 </resources>

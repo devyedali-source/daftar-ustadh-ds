@@ -19,6 +19,7 @@ import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -86,7 +87,30 @@ fun PlanningTab(
             lessonSet?.bookOf(l).orEmpty(), lessonSet?.bookTitleOf(l).orEmpty()) { opened = null }
     }
 
+    // مؤشر تنزيل صور الكتب من المتجر (يختفي عند اكتمالها)
+    val bookStatus by com.elyedali.daftarustadh.data.BookPack.status.collectAsState()
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        if (bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.Ready) item {
+            val st = bookStatus
+            Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.secondaryContainer)
+                .padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Text(when (st) {
+                    is com.elyedali.daftarustadh.data.BookPack.Status.Downloading -> stringResource(R.string.books_downloading, st.percent)
+                    is com.elyedali.daftarustadh.data.BookPack.Status.WaitingWifi -> stringResource(R.string.books_waiting_wifi)
+                    is com.elyedali.daftarustadh.data.BookPack.Status.Failed -> stringResource(R.string.books_failed)
+                    else -> stringResource(R.string.books_pending)
+                }, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                if (st is com.elyedali.daftarustadh.data.BookPack.Status.Downloading)
+                    androidx.compose.material3.LinearProgressIndicator(progress = { st.percent / 100f }, modifier = Modifier.fillMaxWidth())
+                else if (st !is com.elyedali.daftarustadh.data.BookPack.Status.Failed)
+                    androidx.compose.material3.LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
+                if (st is com.elyedali.daftarustadh.data.BookPack.Status.Failed || st is com.elyedali.daftarustadh.data.BookPack.Status.WaitingWifi)
+                    Text("↻ " + stringResource(R.string.books_retry), fontSize = 12.sp, fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.clip(RoundedCornerShape(8.dp))
+                            .clickable { com.elyedali.daftarustadh.data.BookPack.retry(context) }.padding(vertical = 4.dp, horizontal = 6.dp))
+            }
+        }
         item {
             Text("🗓️ " + stringResource(R.string.plan_title), fontWeight = FontWeight.Black, fontSize = 17.sp,
                 color = MaterialTheme.colorScheme.primary)

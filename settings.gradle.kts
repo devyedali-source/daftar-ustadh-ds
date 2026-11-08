@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "DaftarUstadhDS"
 include(":app")
+include(":books")

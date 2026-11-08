@@ -38,9 +38,19 @@ android {
         generateLocaleConfig = false
     }
 
+    // صور الكتب في حزمة منفصلة «books» تنزّلها المتجر تلقائيًا بعد التثبيت (لتطبيق الأستاذ فقط).
+    // نسخة التجربة (APK من GitHub) لا تمر بالمتجر، فتُضمَّن فيها الكتب مباشرة لتعمل كما هي.
+    val buildingAdmin = gradle.startParameter.taskNames.any { it.contains("Admin") }
+    if (!buildingAdmin) assetPacks += ":books"
+    sourceSets {
+        getByName("teacherDebug") { assets.srcDir("../books/src/main/assets") }
+    }
+
     // R8: تصغير الشيفرة وحذف الموارد غير المستعملة (يُطبَّق على النسخة التي يبنيها GitHub)
     buildTypes {
         debug {
+            // نسخة التجربة لهواتف أندرويد الحقيقية فقط (أصغر حجمًا)؛ نسخة المتجر يقسّمها المتجر لكل هاتف تلقائيًا
+            ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -83,8 +93,11 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
 
-    // قراءة أرقام النداء والنقاط من صورة ورقة الأستاذ (على الهاتف، بلا إنترنت)
-    implementation("com.google.mlkit:text-recognition:16.0.1")
+    // قراءة أرقام النداء والنقاط من صورة ورقة الأستاذ (على الهاتف، بلا إنترنت) — في تطبيق الإدارة فقط
+    "adminImplementation"("com.google.mlkit:text-recognition:16.0.1")
+
+    // تنزيل حزمة الكتب من المتجر ومتابعة تقدّمها (تطبيق الأستاذ)
+    implementation("com.google.android.play:asset-delivery:2.2.2")
 
     // تدوير صور الطلاب حسب اتجاه الكاميرا
     implementation("androidx.exifinterface:exifinterface:1.3.7")

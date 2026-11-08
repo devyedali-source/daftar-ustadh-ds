@@ -161,6 +161,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // تطبيق الأستاذ: متابعة تنزيل صور الكتب من المتجر (تظهر نسبتها في التخطيط السنوي)
+        com.elyedali.daftarustadh.data.BookPack.start(this)
         // العربية هي اللغة الافتراضية عند أول تشغيل، بأرقام عادية (1 2 3) لا (١ ٢ ٣) في كل التطبيق
         val locales = AppCompatDelegate.getApplicationLocales()
         if (locales.isEmpty || locales.toLanguageTags() == "ar") {
