@@ -54,7 +54,8 @@ fun ClassHub(
                         selected = selected == i,
                         onClick = { onSelect(i) },
                         icon = { Icon(icons.getOrElse(i) { Icons.Filled.Star }, contentDescription = t) },
-                        label = { Text(t, fontSize = 9.sp, fontWeight = FontWeight.Bold, maxLines = 1) }
+                        label = { Text(t, fontSize = 9.sp, lineHeight = 10.sp, fontWeight = FontWeight.Bold, maxLines = 2,
+                            textAlign = androidx.compose.ui.text.style.TextAlign.Center) }
                     )
                 }
             }

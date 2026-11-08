@@ -84,35 +84,40 @@ fun ResultsStatusScreen(
                     Tab(selected = term == i + 1, onClick = { term = i + 1 }, text = { Text(stringResource(res)) })
                 }
             }
-            Text(stringResource(R.string.subjects_complete, completeCount, subjects.size), fontWeight = FontWeight.Bold)
-            LinearProgressIndicator(
-                progress = { if (subjects.isEmpty()) 0f else completeCount.toFloat() / subjects.size },
-                modifier = Modifier.fillMaxWidth()
-            )
-            if (subjects.isNotEmpty() && completeCount == subjects.size) {
-                Text(stringResource(R.string.all_subjects_complete), color = MaterialTheme.colorScheme.primary)
-                if (showGenerate) Button(onClick = { onGenerate(term) }, modifier = Modifier.fillMaxWidth()) {
-                    Text(stringResource(if (term == 3) R.string.generate_annual else R.string.generate_term))
+            // الصفحة كلها تُمرَّر معًا (الأزرار والمواد)، فلا يُقصّ زر ولا تختفي قائمة المواد في الشاشات الصغيرة
+            LazyColumn(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                item {
+                    Column(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.padding(bottom = 4.dp)) {
+                    Text(stringResource(R.string.subjects_complete, completeCount, subjects.size), fontWeight = FontWeight.Bold)
+                    LinearProgressIndicator(
+                        progress = { if (subjects.isEmpty()) 0f else completeCount.toFloat() / subjects.size },
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    if (subjects.isNotEmpty() && completeCount == subjects.size) {
+                        Text(stringResource(R.string.all_subjects_complete), color = MaterialTheme.colorScheme.primary)
+                        if (showGenerate) Button(onClick = { onGenerate(term) }, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) {
+                            Text(stringResource(if (term == 3) R.string.generate_annual else R.string.generate_term))
+                        }
+                    }
+                    if (showGenerate) TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
+                    // «ماذا ينقص؟»: الأساتذة الذين لم تكتمل نتائج موادهم في هذا الفصل، مع تذكيرهم عبر واتساب
+                    if (teacherOf != null && subjects.isNotEmpty() && completeCount < subjects.size)
+                        androidx.compose.material3.OutlinedButton(onClick = { showMissing = true }, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth(),
+                            colors = androidx.compose.material3.ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colorScheme.error)) {
+                            Text("❓ " + stringResource(R.string.mi_button, subjects.size - completeCount), fontWeight = FontWeight.Bold, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                        }
+                    Button(onClick = onUploadRecord, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record), textAlign = androidx.compose.ui.text.style.TextAlign.Center) }
+                    if (onUploadMany != null) androidx.compose.material3.OutlinedButton(onClick = onUploadMany, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) {
+                        Text("📥 " + stringResource(R.string.bu_button), textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                    }
+                    if (onUploadMany != null) Text(stringResource(R.string.bu_hint), style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    if (onQuickEntry != null) androidx.compose.material3.OutlinedButton(onClick = onQuickEntry, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) {
+                        Text("⚡ " + stringResource(R.string.qg_button), textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                    }
+                    Text(stringResource(R.string.upload_record_hint), style = MaterialTheme.typography.bodySmall)
+                    }
                 }
-            }
-            if (showGenerate) TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
-            // «ماذا ينقص؟»: الأساتذة الذين لم تكتمل نتائج موادهم في هذا الفصل، مع تذكيرهم عبر واتساب
-            if (teacherOf != null && subjects.isNotEmpty() && completeCount < subjects.size)
-                androidx.compose.material3.OutlinedButton(onClick = { showMissing = true }, modifier = Modifier.fillMaxWidth(),
-                    colors = androidx.compose.material3.ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colorScheme.error)) {
-                    Text("❓ " + stringResource(R.string.mi_button, subjects.size - completeCount), fontWeight = FontWeight.Bold)
-                }
-            Button(onClick = onUploadRecord, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record)) }
-            if (onUploadMany != null) androidx.compose.material3.OutlinedButton(onClick = onUploadMany, modifier = Modifier.fillMaxWidth()) {
-                Text("📥 " + stringResource(R.string.bu_button))
-            }
-            if (onUploadMany != null) Text(stringResource(R.string.bu_hint), style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant)
-            if (onQuickEntry != null) androidx.compose.material3.OutlinedButton(onClick = onQuickEntry, modifier = Modifier.fillMaxWidth()) {
-                Text("⚡ " + stringResource(R.string.qg_button))
-            }
-            Text(stringResource(R.string.upload_record_hint), style = MaterialTheme.typography.bodySmall)
-            LazyColumn(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 items(subjects, key = { it.code }) { sub ->
                     val miss = missing(sub.code)
                     val done = students.isNotEmpty() && miss == 0

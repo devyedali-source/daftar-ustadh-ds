@@ -84,7 +84,7 @@ fun AppTopBar(title: String, onMenu: (() -> Unit)?, onBack: (() -> Unit)?) {
             contentScale = ContentScale.Fit
         )
         Text(title, Modifier.weight(1f).padding(horizontal = 6.dp), color = Color.White, fontWeight = FontWeight.Black,
-            fontSize = 16.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            fontSize = 15.sp, lineHeight = 18.sp, maxLines = 2, overflow = TextOverflow.Ellipsis)
     }
 }
 
