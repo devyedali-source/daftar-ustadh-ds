@@ -56,3 +56,42 @@ fun SensitiveConfirmDialog(
         dismissButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.cancel)) } }
     )
 }
+
+/** رمز فتح إعدادات الجدول الزمني بعد اعتماده. */
+const val TIMETABLE_EDIT_CODE = "7777"
+
+/** نافذة تنبيه بالرمز: لا يُفعَّل زر المتابعة إلا بعد كتابة الرمز. */
+@Composable
+fun CodeConfirmDialog(
+    title: String,
+    message: String,
+    requiredCode: String,
+    confirmLabel: String,
+    onConfirm: () -> Unit,
+    onDismiss: () -> Unit
+) {
+    var code by remember { mutableStateOf("") }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(title) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Text(message)
+                Text(stringResource(R.string.type_code_to_continue, requiredCode), color = MaterialTheme.colorScheme.error)
+                OutlinedTextField(
+                    value = code,
+                    onValueChange = { v -> code = v.filter { it.isDigit() }.take(requiredCode.length) },
+                    singleLine = true,
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword),
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+        },
+        confirmButton = {
+            TextButton(enabled = code == requiredCode, onClick = onConfirm) {
+                Text(confirmLabel, color = MaterialTheme.colorScheme.error)
+            }
+        },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.cancel)) } }
+    )
+}

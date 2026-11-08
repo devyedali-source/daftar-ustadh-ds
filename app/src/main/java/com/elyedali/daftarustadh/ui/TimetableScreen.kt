@@ -120,12 +120,17 @@ fun TimetableScreen(
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(horizontal = 12.dp, vertical = 10.dp)) {
             ScreenHeader(stringResource(R.string.tt_title), onBack)
-            ScrollableTabRow(selectedTabIndex = tab, edgePadding = 0.dp, containerColor = MaterialTheme.colorScheme.background) {
-                listOf(R.string.tt_tab_generate, R.string.tt_tab_teachers, R.string.tt_tab_by_class, R.string.tt_tab_by_teacher)
-                    .forEachIndexed { i, res -> Tab(selected = tab == i, onClick = { tab = i }, text = { Text(stringResource(res)) }) }
+            // بعد الاعتماد تُقفل الإعدادات والأساتذة: تختفي من الشاشة، ولا تُفتح إلا من «الإعدادات» بالرمز 7777
+            val tabIds = if (approved) listOf(2, 3) else listOf(0, 1, 2, 3)
+            val shown = if (tab in tabIds) tab else tabIds.first()
+            val labels = listOf(R.string.tt_tab_generate, R.string.tt_tab_teachers, R.string.tt_tab_by_class, R.string.tt_tab_by_teacher)
+            ScrollableTabRow(selectedTabIndex = tabIds.indexOf(shown), edgePadding = 0.dp, containerColor = MaterialTheme.colorScheme.background) {
+                tabIds.forEach { i -> Tab(selected = shown == i, onClick = { tab = i }, text = { Text(stringResource(labels[i])) }) }
             }
+            if (approved) Text("🔒 " + stringResource(R.string.tt_locked_hint), fontSize = 11.sp,
+                color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(vertical = 4.dp))
             Box(Modifier.weight(1f).fillMaxWidth()) {
-                when (tab) {
+                when (shown) {
                     0 -> GenerateTab(classes, subjectsByClass, settings, assignments, slots, generating, lastResult, onSaveSettings, onGenerate,
                         problems, approved, onApprove, onGoTab = { tab = it }, manual = manual, onStartManual = onStartManual)
                     1 -> TeachersTab(classes, subjectsByClass, subjectLabel, assignments, teachers, onAssign, onSaveTeachers, onDistribute)

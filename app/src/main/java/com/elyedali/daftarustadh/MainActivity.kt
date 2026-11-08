@@ -291,6 +291,7 @@ class MainActivity : AppCompatActivity() {
                 var ttResult by remember { mutableStateOf<String?>(null) }
                 var ttInitialClass by rememberSaveable { mutableStateOf<String?>(null) }
                 var ttInitialTab by remember { mutableStateOf<Int?>(null) }
+                var askTtUnlock by remember { mutableStateOf(false) }
                 var recordsSent by remember { mutableStateOf(setOf<String>()) }
                 var printWorking by remember { mutableStateOf(false) }
                 // صفحة المشاركة مع الوراقة: BOOKS دفاتر الإدارة، RECORDS سجلات الأساتذة، TIMETABLES جداول الأساتذة
@@ -2140,6 +2141,11 @@ class MainActivity : AppCompatActivity() {
                             when (key) {
                                 "INSTITUTION" -> screen = Screen.INSTITUTION
                                 "TIMETABLE" -> { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                // إعدادات الجدول (التوليد والأساتذة): بعد الاعتماد لا تُفتح إلا بتنبيه والرمز 7777
+                                "TT_SETTINGS" -> {
+                                    if (ttApproved) askTtUnlock = true
+                                    else { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                }
                                 "SHARE_RECORDS" -> screen = Screen.SHARE_RECORDS
                                 "PRINT_SHOP" -> { printKind = "BOOKS"; screen = Screen.PRINT_SHOP }
                                 "PRINT_RECORDS" -> { printKind = "RECORDS"; screen = Screen.PRINT_SHOP }
@@ -2448,6 +2454,19 @@ class MainActivity : AppCompatActivity() {
                         dismissButton = { TextButton(onClick = { absenceCheck = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
+
+                if (askTtUnlock) com.elyedali.daftarustadh.ui.CodeConfirmDialog(
+                    title = stringResource(R.string.tt_settings_title),
+                    message = stringResource(R.string.tt_unlock_warning),
+                    requiredCode = com.elyedali.daftarustadh.ui.TIMETABLE_EDIT_CODE,
+                    confirmLabel = stringResource(R.string.tt_unlock_confirm),
+                    onConfirm = {
+                        askTtUnlock = false
+                        scope.launch { metaDao.put(AppMetaEntity(TT_APPROVED_KEY, "")) }
+                        ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.HOME; screen = Screen.TIMETABLE
+                    },
+                    onDismiss = { askTtUnlock = false }
+                )
 
                 if (showStaffShare) {
                     val staff = com.elyedali.daftarustadh.ui.AdminStaff.decode(staffText)

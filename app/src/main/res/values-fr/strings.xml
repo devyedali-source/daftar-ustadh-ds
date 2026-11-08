@@ -219,6 +219,11 @@
     <string name="staff_role_general">Directeur général</string>
     <string name="staff_role_supervisor">Surveillant général</string>
     <string name="staff_role_secretariat">Agent du secrétariat</string>
+    <string name="tt_settings_title">Réglages de l\'emploi du temps</string>
+    <string name="tt_locked_hint">Emploi du temps validé : ses réglages et les professeurs sont verrouillés. Pour les modifier : Réglages ← Réglages de l\'emploi du temps.</string>
+    <string name="tt_unlock_warning">⚠️ L\'emploi du temps est validé et a peut-être été envoyé aux professeurs. Ouvrir ses réglages annule la validation : aucun nouvel emploi du temps ne sera envoyé avant de le revoir et de le valider à nouveau.</string>
+    <string name="tt_unlock_confirm">Ouvrir les réglages</string>
+    <string name="type_code_to_continue">Pour continuer, tapez le code %1$s</string>
     <string name="menu_about">À propos de l\'application</string>
     <string name="about_soon">Cette page sera bientôt prête.</string>
     <string name="menu_books">Mes livres</string>

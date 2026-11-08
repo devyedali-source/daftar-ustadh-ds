@@ -224,7 +224,8 @@ fun HomeYearsScreen(
                                 ("📊 " + stringResource(R.string.statistics)) to listOf("STATS" to ""),
                                 ("⚙️ " + stringResource(R.string.home_group_settings)) to listOf(
                                     "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
-                                    "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title))),
+                                    "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title)),
+                                    "TT_SETTINGS" to ("🛠️ " + stringResource(R.string.tt_settings_title))),
                                 ("🤝 " + stringResource(R.string.home_group_share)) to listOf(
                                     "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
                                     "PRINT_RECORDS" to ("📒 " + stringResource(R.string.ps_records_title))),

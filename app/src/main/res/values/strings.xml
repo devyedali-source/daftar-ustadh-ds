@@ -219,6 +219,11 @@
     <string name="staff_role_general">المدير العام</string>
     <string name="staff_role_supervisor">المراقب العام</string>
     <string name="staff_role_secretariat">عامل في السكرتيريا</string>
+    <string name="tt_settings_title">إعدادات الجدول الزمني</string>
+    <string name="tt_locked_hint">الجدول معتمد: إعداداته والأساتذة مقفلة. لتعديلها: الإعدادات ← إعدادات الجدول الزمني.</string>
+    <string name="tt_unlock_warning">⚠️ الجدول الزمني معتمد وقد يكون أُرسل للأساتذة. فتح إعداداته يلغي اعتماده، فلا يُرسل جدول جديد حتى تراجعه وتعتمده من جديد.</string>
+    <string name="tt_unlock_confirm">فتح الإعدادات</string>
+    <string name="type_code_to_continue">للمتابعة اكتب الرمز %1$s</string>
     <string name="menu_about">حول التطبيق</string>
     <string name="about_soon">ستُجهَّز هذه الصفحة قريبًا.</string>
     <string name="menu_books">كتبي</string>
