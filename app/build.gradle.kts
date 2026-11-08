@@ -43,7 +43,7 @@ android {
     val buildingAdmin = gradle.startParameter.taskNames.any { it.contains("Admin") }
     if (!buildingAdmin) assetPacks += ":books"
     sourceSets {
-        getByName("teacherDebug") { assets.srcDir("../books/src/main/assets") }
+        maybeCreate("teacherDebug").apply { assets.srcDir("../books/src/main/assets") }
     }
 
     // R8: تصغير الشيفرة وحذف الموارد غير المستعملة (يُطبَّق على النسخة التي يبنيها GitHub)
