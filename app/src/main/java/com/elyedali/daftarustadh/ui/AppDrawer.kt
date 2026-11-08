@@ -64,7 +64,8 @@ fun AppDrawer(
         drawerShape = RoundedCornerShape(topStart = 24.dp, bottomStart = 24.dp),
         modifier = Modifier.width(310.dp)
     ) {
-        Column(Modifier.fillMaxSize()) {
+        // القائمة تُمرَّر في الشاشات الصغيرة فيظهر سطر الحقوق في أسفلها دائمًا
+        Column(Modifier.fillMaxSize().verticalScroll(androidx.compose.foundation.rememberScrollState())) {
             Box(
                 Modifier.fillMaxWidth()
                     .background(Brush.verticalGradient(listOf(MaterialTheme.colorScheme.primary, MaterialTheme.colorScheme.secondary)))
@@ -101,7 +102,7 @@ fun AppDrawer(
             if (!com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("📚", R.string.menu_books, false) { onItem("BOOKS") }
 
-            Spacer(Modifier.weight(1f))
+            Spacer(Modifier.height(16.dp))
             HorizontalDivider(Modifier.padding(vertical = 8.dp, horizontal = 16.dp))
 
             // المزامنة (Google Drive) كما في دفتر المعلم
