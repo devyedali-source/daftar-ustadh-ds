@@ -39,12 +39,9 @@ android {
     }
 
     // صور الكتب في حزمة منفصلة «books» تنزّلها المتجر تلقائيًا بعد التثبيت (لتطبيق الأستاذ فقط).
-    // نسخة التجربة (APK من GitHub) لا تمر بالمتجر، فتُضمَّن فيها الكتب مباشرة لتعمل كما هي.
+    // نسخة التجربة (APK من GitHub) بلا صور الكتب حتى يصغر تنزيلها (الإنترنت ضعيف)؛ تُضاف في نسخة المتجر.
     val buildingAdmin = gradle.startParameter.taskNames.any { it.contains("Admin") }
     if (!buildingAdmin) assetPacks += ":books"
-    sourceSets {
-        maybeCreate("teacherDebug").apply { assets.srcDir("../books/src/main/assets") }
-    }
 
     // R8: تصغير الشيفرة وحذف الموارد غير المستعملة (يُطبَّق على النسخة التي يبنيها GitHub)
     buildTypes {

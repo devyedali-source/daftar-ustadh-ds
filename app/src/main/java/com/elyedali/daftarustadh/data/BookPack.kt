@@ -24,6 +24,8 @@ object BookPack {
         object WaitingWifi : Status()
         object Pending : Status()
         object Failed : Status()
+        /** نسخة التجربة من GitHub: صور الكتب غير مضمّنة فيها (تأتي مع نسخة المتجر). */
+        object NotInTestBuild : Status()
     }
 
     private val _status = MutableStateFlow<Status>(Status.Pending)
@@ -72,6 +74,7 @@ object BookPack {
         val app = context.applicationContext
         appContext = app
         if (isBundled(app)) { _status.value = Status.Ready; return }
+        if (com.elyedali.daftarustadh.BuildConfig.DEBUG) { _status.value = Status.NotInTestBuild; return }
         try {
             val m = manager ?: AssetPackManagerFactory.getInstance(app).also { manager = it }
             if (m.getPackLocation(PACK) != null) { _status.value = Status.Ready; return }

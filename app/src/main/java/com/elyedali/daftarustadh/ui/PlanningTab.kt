@@ -90,7 +90,8 @@ fun PlanningTab(
     // مؤشر تنزيل صور الكتب من المتجر (يختفي عند اكتمالها)
     val bookStatus by com.elyedali.daftarustadh.data.BookPack.status.collectAsState()
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        if (bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.Ready) item {
+        if (bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.Ready &&
+            bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.NotInTestBuild) item {
             val st = bookStatus
             Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.secondaryContainer)
                 .padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {

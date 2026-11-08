@@ -231,9 +231,11 @@ private fun BookPages(asset: String, from: Int, to: Int, bookTitle: String) {
     }
     when (ready) {
         null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
-        false -> Text(stringResource(
-            if (com.elyedali.daftarustadh.data.BookPack.status.value is com.elyedali.daftarustadh.data.BookPack.Status.Ready)
-                R.string.lesson_book_missing else R.string.books_not_ready), Modifier.padding(16.dp), color = MaterialTheme.colorScheme.error)
+        false -> Text(stringResource(when (com.elyedali.daftarustadh.data.BookPack.status.value) {
+                is com.elyedali.daftarustadh.data.BookPack.Status.Ready -> R.string.lesson_book_missing
+                is com.elyedali.daftarustadh.data.BookPack.Status.NotInTestBuild -> R.string.books_test_build
+                else -> R.string.books_not_ready
+            }), Modifier.padding(16.dp), color = MaterialTheme.colorScheme.error)
         else -> LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             item { Text("📖 $bookTitle", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
             items((from..to).toList(), key = { it }) { p ->
