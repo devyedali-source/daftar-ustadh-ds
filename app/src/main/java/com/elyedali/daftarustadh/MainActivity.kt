@@ -45,6 +45,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.verticalScroll
 import com.elyedali.daftarustadh.data.TestsMode
 import com.elyedali.daftarustadh.data.SchoolDirectory
@@ -109,7 +110,7 @@ private const val TT_APPROVED_KEY = "timetable_approved"
 private const val TT_MANUAL_KEY = "timetable_manual"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES, ABOUT }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 /** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
@@ -1328,7 +1329,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.GENERAL_REMARKS -> BackHandler { screen = Screen.KASHF_SETTINGS }
                     Screen.IMPORT -> BackHandler { screen = importBack }
                     Screen.ADMIN_CLASS, Screen.TEACHER_HUB -> BackHandler { screen = hubBack }
-                    Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS -> BackHandler { screen = Screen.HOME }
+                    Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS, Screen.ABOUT -> BackHandler { screen = Screen.HOME }
                     Screen.ACTIVATION -> BackHandler { screen = activationBack }
                     Screen.TIMETABLE -> BackHandler { screen = ttBack }
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
@@ -1357,6 +1358,7 @@ class MainActivity : AppCompatActivity() {
                                     "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
                                     "EXCHANGES" -> screen = Screen.EXCHANGES
                                     "LEGISLATION" -> screen = Screen.LEGISLATION
+                                    "ABOUT" -> screen = Screen.ABOUT
                                     "BOOKS" -> openKoutoubi()
                                     "STATS" -> screen = Screen.STATS
                                     "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
@@ -1552,6 +1554,22 @@ class MainActivity : AppCompatActivity() {
                         onOpenFile = openFile,
                         onBack = { screen = Screen.HOME }
                     )
+
+                    // صفحة «حول التطبيق»: تُجهَّز لاحقًا
+                    screen == Screen.ABOUT -> androidx.compose.material3.Surface(Modifier.fillMaxSize(),
+                        color = androidx.compose.material3.MaterialTheme.colorScheme.background) {
+                        androidx.compose.foundation.layout.Column(Modifier.fillMaxSize().padding(16.dp),
+                            verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(16.dp)) {
+                            com.elyedali.daftarustadh.ui.ScreenHeader(stringResource(R.string.menu_about), { screen = Screen.HOME })
+                            Text(stringResource(R.string.app_name), fontWeight = androidx.compose.ui.text.font.FontWeight.Black,
+                                fontSize = 20.sp, modifier = Modifier.fillMaxWidth(), textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                            Text(stringResource(R.string.about_soon), modifier = Modifier.fillMaxWidth(),
+                                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                                color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text(stringResource(R.string.drawer_footer), modifier = Modifier.fillMaxWidth(), fontSize = 11.sp,
+                                textAlign = androidx.compose.ui.text.style.TextAlign.Center, color = androidx.compose.ui.graphics.Color.Gray)
+                        }
+                    }
 
                     screen == Screen.LEGISLATION -> com.elyedali.daftarustadh.ui.LegislationScreen(
                         title = stringResource(R.string.menu_legislation),

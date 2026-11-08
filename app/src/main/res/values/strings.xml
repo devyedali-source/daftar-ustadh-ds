@@ -198,6 +198,8 @@
     <string name="menu_home">الصفحة الرئيسية</string>
     <string name="menu_legislation">التشريع المدرسي</string>
     <string name="menu_exchanges">تبادلات الأساتذة</string>
+    <string name="menu_about">حول التطبيق</string>
+    <string name="about_soon">ستُجهَّز هذه الصفحة قريبًا.</string>
     <string name="menu_books">كتبي</string>
     <string name="coming_soon">سيُبنى هذا القسم لاحقًا.</string>
     <string name="tab_students">الطلاب</string>

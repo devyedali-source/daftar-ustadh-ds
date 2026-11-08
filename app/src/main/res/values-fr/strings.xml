@@ -198,6 +198,8 @@
     <string name="menu_home">Accueil</string>
     <string name="menu_legislation">Législation scolaire</string>
     <string name="menu_exchanges">Permutations des enseignants</string>
+    <string name="menu_about">À propos de l\'application</string>
+    <string name="about_soon">Cette page sera bientôt prête.</string>
     <string name="menu_books">Mes livres</string>
     <string name="coming_soon">Cette partie sera construite plus tard.</string>
     <string name="tab_students">Élèves</string>
