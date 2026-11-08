@@ -94,9 +94,12 @@ fun AppDrawer(
             Text(stringResource(R.string.drawer_menu), fontWeight = FontWeight.Bold, fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp))
             Item("🏫", R.string.drawer_home, current == "HOME") { onItem("HOME") }
-            Item("🤝", R.string.menu_exchanges, current == "EXCHANGES") { onItem("EXCHANGES") }
+            // التبادلات وكتبي في تطبيق الأستاذ فقط
+            if (!com.elyedali.daftarustadh.AppRole.isAdmin)
+                Item("🤝", R.string.menu_exchanges, current == "EXCHANGES") { onItem("EXCHANGES") }
             Item("⚖️", R.string.menu_legislation, current == "LEGISLATION") { onItem("LEGISLATION") }
-            Item("📚", R.string.menu_books, false) { onItem("BOOKS") }
+            if (!com.elyedali.daftarustadh.AppRole.isAdmin)
+                Item("📚", R.string.menu_books, false) { onItem("BOOKS") }
 
             Spacer(Modifier.weight(1f))
             HorizontalDivider(Modifier.padding(vertical = 8.dp, horizontal = 16.dp))
