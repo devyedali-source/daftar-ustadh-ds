@@ -37,7 +37,7 @@ class AdminFullFile(val json: JSONObject) {
         /** معلومات التطبيق التي تنتقل مع الملف (لا التفعيل ولا ما يخص هذا الهاتف وحده). */
         private val META_KEYS = listOf(
             "timetable_settings", "timetable_teachers", "timetable_approved", "timetable_manual",
-            "pass_thresholds", "general_remarks", "teacher_remarks"
+            "pass_thresholds", "general_remarks", "teacher_remarks", "admin_staff"
         )
         private const val META_PREFIX = "record_exported|"
 

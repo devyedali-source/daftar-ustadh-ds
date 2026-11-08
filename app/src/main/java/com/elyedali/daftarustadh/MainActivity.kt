@@ -200,6 +200,9 @@ class MainActivity : AppCompatActivity() {
                 var fileResult by remember { mutableStateOf<FileResult?>(null) }
                 // ملف الإدارة الكامل وصل من تطبيق إدارة آخر: يُعرض ملخصه ويُطلب التأكيد قبل إدراجه
                 var adminFilePending by remember { mutableStateOf<com.elyedali.daftarustadh.transfer.AdminFullFile?>(null) }
+                // طاقم الإدارة (أرقام واتساب) لإرسال ملف الإدارة الكامل مباشرة
+                var showStaffShare by remember { mutableStateOf(false) }
+                val staffText by remember { metaDao.observe(com.elyedali.daftarustadh.ui.AdminStaff.KEY) }.collectAsState(initial = null)
                 val inst = institution
                 // تطبيق الأستاذ: مؤسسات سجّلها بنفسه (عمله الفردي، دون ملف من الإدارة)
                 val selfSchoolIds = if (AppRole.isAdmin) emptySet() else institutions.filter { it.isOwn }.map { it.id }.toSet()
@@ -1341,14 +1344,7 @@ class MainActivity : AppCompatActivity() {
                                     "LEGISLATION" -> screen = Screen.LEGISLATION
                                     "ABOUT" -> screen = Screen.ABOUT
                                     // مشاركة كل معلومات الإدارة مع تطبيق إدارة آخر (المدير العام، المراقب العام، عامل مساعد)
-                                    "SHARE_ADMIN" -> scope.launch {
-                                        val name = institutions.firstOrNull { it.isOwn }?.schoolName.orEmpty()
-                                        val bytes = withContext(Dispatchers.IO) {
-                                            com.elyedali.daftarustadh.transfer.AdminFullFile.export(db, name, TransferCodec.FORMAT_NAME)
-                                        }
-                                        ShareHelper.share(this@MainActivity, bytes,
-                                            com.elyedali.daftarustadh.transfer.AdminFullFile.fileName(name), getString(R.string.share_chooser))
-                                    }
+                                    "SHARE_ADMIN" -> showStaffShare = true
                                     "BOOKS" -> openKoutoubi()
                                     "STATS" -> screen = Screen.STATS
                                     "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
@@ -2450,6 +2446,33 @@ class MainActivity : AppCompatActivity() {
                             }) { Text(stringResource(R.string.record_upload)) }
                         },
                         dismissButton = { TextButton(onClick = { absenceCheck = null }) { Text(stringResource(R.string.cancel)) } }
+                    )
+                }
+
+                if (showStaffShare) {
+                    val staff = com.elyedali.daftarustadh.ui.AdminStaff.decode(staffText)
+                    val schoolName = institutions.firstOrNull { it.isOwn }?.schoolName.orEmpty()
+                    suspend fun buildAdminFile() = withContext(Dispatchers.IO) {
+                        com.elyedali.daftarustadh.transfer.AdminFullFile.export(db, schoolName, TransferCodec.FORMAT_NAME)
+                    }
+                    val fileName = com.elyedali.daftarustadh.transfer.AdminFullFile.fileName(schoolName)
+                    com.elyedali.daftarustadh.ui.AdminStaffShareDialog(
+                        staff = staff,
+                        onSave = { list -> scope.launch { metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.ui.AdminStaff.KEY,
+                            com.elyedali.daftarustadh.ui.AdminStaff.encode(list))) } },
+                        onSendTo = { m ->
+                            showStaffShare = false
+                            scope.launch {
+                                val bytes = buildAdminFile()
+                                ShareHelper.shareToWhatsApp(this@MainActivity, bytes, fileName, m.phone,
+                                    getString(R.string.af_caption, schoolName), getString(R.string.share_chooser))
+                            }
+                        },
+                        onShareOther = {
+                            showStaffShare = false
+                            scope.launch { ShareHelper.share(this@MainActivity, buildAdminFile(), fileName, getString(R.string.share_chooser)) }
+                        },
+                        onDismiss = { showStaffShare = false }
                     )
                 }
 
