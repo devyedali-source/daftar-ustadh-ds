@@ -99,6 +99,8 @@ fun AppDrawer(
             if (!com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("🤝", R.string.menu_exchanges, current == "EXCHANGES") { onItem("EXCHANGES") }
             Item("⚖️", R.string.menu_legislation, current == "LEGISLATION") { onItem("LEGISLATION") }
+            if (com.elyedali.daftarustadh.AppRole.isAdmin)
+                Item("📤", R.string.af_share, false) { onItem("SHARE_ADMIN") }
             Item("ℹ️", R.string.menu_about, current == "ABOUT") { onItem("ABOUT") }
             if (!com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("📚", R.string.menu_books, false) { onItem("BOOKS") }

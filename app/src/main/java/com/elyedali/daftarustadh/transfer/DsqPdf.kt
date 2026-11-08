@@ -31,7 +31,7 @@ object DsqPdf {
         // التطبيق الذي يُفتح فيه الملف: سجلات الأساتذة وغيابهم وملف القسم الكامل لـ«إدارة DS»، والباقي لـ«دفتر الأستاذ DS»
         val app = try {
             when (val any = TransferCodec.decodeAny(data)) {
-                is RecordFile, is AbsenceFile -> AppRole.ADMIN_APP_NAME
+                is RecordFile, is AbsenceFile, is AdminFullFile -> AppRole.ADMIN_APP_NAME
                 is ClassFile -> if (any.type == ClassFileType.FULL) AppRole.ADMIN_APP_NAME else AppRole.TEACHER_APP_NAME
                 else -> AppRole.TEACHER_APP_NAME
             }

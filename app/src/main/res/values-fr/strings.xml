@@ -198,6 +198,13 @@
     <string name="menu_home">Accueil</string>
     <string name="menu_legislation">Législation scolaire</string>
     <string name="menu_exchanges">Permutations des enseignants</string>
+    <string name="af_share">Partager le fichier complet de l\'administration</string>
+    <string name="af_title">Fichier complet de l\'administration</string>
+    <string name="af_confirm">Fichier d\'une autre application d\'administration :\n%1$s\ndu %2$s\nClasses : %3$d — Élèves : %4$d\n\nSon contenu sera ajouté à votre application : classes, élèves, notes, professeurs, emplois du temps et réglages des bulletins. La note la plus récente est conservée : une note saisie chez vous après ce fichier n\'est pas effacée.</string>
+    <string name="af_import">Importer</string>
+    <string name="af_done">Fichier de l\'administration importé ✅\nClasses : %1$d — Élèves : %2$d — Notes nouvelles ou mises à jour : %3$d</string>
+    <string name="af_merged">Classes déjà présentes sous le même nom, fusionnées (élèves reconnus par N° d\'appel) : %1$s</string>
+    <string name="af_other_school">Ce fichier appartient à un autre établissement (%1$s) : il n\'a pas été importé.</string>
     <string name="menu_about">À propos de l\'application</string>
     <string name="about_soon">Cette page sera bientôt prête.</string>
     <string name="menu_books">Mes livres</string>

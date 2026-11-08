@@ -47,6 +47,7 @@ object TransferCodec {
     const val TYPE_ABSENCE = "teacher_absence"
     const val TYPE_TIMETABLE = "teacher_timetable"
     const val TYPE_BUNDLE = "teacher_bundle"
+    const val FORMAT_NAME = FORMAT
 
     private fun gzip(json: JSONObject): ByteArray {
         val out = ByteArrayOutputStream()
@@ -67,6 +68,7 @@ object TransferCodec {
             TYPE_ABSENCE -> AbsenceFile.fromJson(json)
             TYPE_TIMETABLE -> TimetableFile.fromJson(json)
             TYPE_BUNDLE -> TeacherBundle.fromJson(json)
+            AdminFullFile.TYPE -> AdminFullFile(json)
             else -> ClassFileCodec.decode(bytes)
         }
     }

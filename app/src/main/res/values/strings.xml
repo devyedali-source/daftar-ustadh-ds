@@ -198,6 +198,13 @@
     <string name="menu_home">الصفحة الرئيسية</string>
     <string name="menu_legislation">التشريع المدرسي</string>
     <string name="menu_exchanges">تبادلات الأساتذة</string>
+    <string name="af_share">مشاركة ملف الإدارة الكامل</string>
+    <string name="af_title">ملف الإدارة الكامل</string>
+    <string name="af_confirm">ملف من تطبيق إدارة آخر:\n%1$s\nبتاريخ %2$s\nالأقسام: %3$d — الطلاب: %4$d\n\nسيُضاف ما فيه إلى تطبيقك: الأقسام والطلاب والنتائج والأساتذة والجداول الزمنية وإعدادات الكشوف. النقطة الأحدث هي التي تبقى، فلا تُمحى نتيجة رصدتها بعد هذا الملف.</string>
+    <string name="af_import">إدراج</string>
+    <string name="af_done">تم إدراج ملف الإدارة ✅\nالأقسام: %1$d — الطلاب: %2$d — النقاط الجديدة أو المحدّثة: %3$d</string>
+    <string name="af_merged">أقسام كانت عندك بنفس الاسم فدُمجت فيها (طوبق الطلاب برقم النداء): %1$s</string>
+    <string name="af_other_school">هذا الملف لمؤسسة أخرى (%1$s) غير مؤسستك، فلم يُدرج.</string>
     <string name="menu_about">حول التطبيق</string>
     <string name="about_soon">ستُجهَّز هذه الصفحة قريبًا.</string>
     <string name="menu_books">كتبي</string>

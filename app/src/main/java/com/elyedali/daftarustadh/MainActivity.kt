@@ -198,6 +198,8 @@ class MainActivity : AppCompatActivity() {
                 var fromTeaching by rememberSaveable { mutableStateOf(false) }
                 var showSubjects by remember { mutableStateOf(false) }
                 var fileResult by remember { mutableStateOf<FileResult?>(null) }
+                // ملف الإدارة الكامل وصل من تطبيق إدارة آخر: يُعرض ملخصه ويُطلب التأكيد قبل إدراجه
+                var adminFilePending by remember { mutableStateOf<com.elyedali.daftarustadh.transfer.AdminFullFile?>(null) }
                 val inst = institution
                 // تطبيق الأستاذ: مؤسسات سجّلها بنفسه (عمله الفردي، دون ملف من الإدارة)
                 val selfSchoolIds = if (AppRole.isAdmin) emptySet() else institutions.filter { it.isOwn }.map { it.id }.toSet()
@@ -877,6 +879,7 @@ class MainActivity : AppCompatActivity() {
                             // كل ملف لتطبيقه: سجلات الأساتذة وغيابهم وملف القسم الكامل لتطبيق الإدارة،
                             // وحزمة الأستاذ وجدوله وملف القسم للأساتذة لتطبيق الأستاذ
                             val forAdmin = any is RecordFile || any is com.elyedali.daftarustadh.transfer.AbsenceFile ||
+                                any is com.elyedali.daftarustadh.transfer.AdminFullFile ||
                                 (any is ClassFile && any.type == ClassFileType.FULL)
                             val forTeacher = any is com.elyedali.daftarustadh.transfer.TeacherBundle || any is com.elyedali.daftarustadh.transfer.TimetableFile ||
                                 (any is ClassFile && any.type == ClassFileType.TEACHER)
@@ -925,6 +928,7 @@ class MainActivity : AppCompatActivity() {
                                     )
                                 }
                                 is ClassFile -> { importedYear = any.schoolClass.schoolYear; FileResult.Done(importer.save(any)) }
+                                is com.elyedali.daftarustadh.transfer.AdminFullFile -> { adminFilePending = any; null }
                                 else -> FileResult.Invalid
                             }
                         } catch (e: PdfNotImportableException) {
@@ -1336,6 +1340,15 @@ class MainActivity : AppCompatActivity() {
                                     "EXCHANGES" -> screen = Screen.EXCHANGES
                                     "LEGISLATION" -> screen = Screen.LEGISLATION
                                     "ABOUT" -> screen = Screen.ABOUT
+                                    // مشاركة كل معلومات الإدارة مع تطبيق إدارة آخر (المدير العام، المراقب العام، عامل مساعد)
+                                    "SHARE_ADMIN" -> scope.launch {
+                                        val name = institutions.firstOrNull { it.isOwn }?.schoolName.orEmpty()
+                                        val bytes = withContext(Dispatchers.IO) {
+                                            com.elyedali.daftarustadh.transfer.AdminFullFile.export(db, name, TransferCodec.FORMAT_NAME)
+                                        }
+                                        ShareHelper.share(this@MainActivity, bytes,
+                                            com.elyedali.daftarustadh.transfer.AdminFullFile.fileName(name), getString(R.string.share_chooser))
+                                    }
                                     "BOOKS" -> openKoutoubi()
                                     "STATS" -> screen = Screen.STATS
                                     "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
@@ -2437,6 +2450,34 @@ class MainActivity : AppCompatActivity() {
                             }) { Text(stringResource(R.string.record_upload)) }
                         },
                         dismissButton = { TextButton(onClick = { absenceCheck = null }) { Text(stringResource(R.string.cancel)) } }
+                    )
+                }
+
+                adminFilePending?.let { f ->
+                    val date = java.text.SimpleDateFormat("dd/MM/yyyy HH:mm", java.util.Locale.US).format(java.util.Date(f.exportedAt))
+                    AlertDialog(
+                        onDismissRequest = { adminFilePending = null },
+                        title = { Text(stringResource(R.string.af_title)) },
+                        text = { Text(stringResource(R.string.af_confirm, f.schoolName, date, f.classCount, f.studentCount)) },
+                        confirmButton = {
+                            TextButton(onClick = {
+                                adminFilePending = null
+                                scope.launch {
+                                    val out = try { withContext(Dispatchers.IO) { f.apply(db) } } catch (e: Exception) { null }
+                                    fileResult = when (out) {
+                                        is com.elyedali.daftarustadh.transfer.AdminFullFile.Outcome.Done -> {
+                                            screen = Screen.HOME
+                                            FileResult.Message(getString(R.string.af_done, out.classes, out.students, out.grades) +
+                                                if (out.merged.isEmpty()) "" else "\n" + getString(R.string.af_merged, out.merged.joinToString("، ")))
+                                        }
+                                        is com.elyedali.daftarustadh.transfer.AdminFullFile.Outcome.OtherInstitution ->
+                                            FileResult.Message(getString(R.string.af_other_school, out.schoolName))
+                                        null -> FileResult.Invalid
+                                    }
+                                }
+                            }) { Text(stringResource(R.string.af_import)) }
+                        },
+                        dismissButton = { TextButton(onClick = { adminFilePending = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
 
