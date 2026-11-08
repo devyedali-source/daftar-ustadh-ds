@@ -25,10 +25,13 @@ class ClassFileImporter(private val db: DaftarDatabase) {
         // مؤسسة القسم: تُضاف إن لم تكن موجودة، وتُحدَّث بيانات الملف (اسمها وولايتها كما سجّلتها إدارتها).
         // في تطبيق الإدارة لا تُمسّ مؤسسة المستخدم نفسه؛ في تطبيق الأستاذ ملف الإدارة هو المرجع دائمًا
         // (وإلا بقي اسم قديم لمؤسسة بنفس الرمز، مثل بيانات التجربة أو مؤسسة غيّرت اسمها).
+        // في تطبيق الأستاذ: مؤسسة وصلت في ملف من الإدارة ليست «عمله الفردي» أبدًا، حتى لو كان عنده سجل بنفس الرمز
+        // (مثل بيانات التجربة التي تحمل نفس الرمز في التطبيقين)
         val known = institutionDao.getById(file.institution.id)
-        if (known == null) institutionDao.save(file.institution)
-        else if (!known.isOwn || !com.elyedali.daftarustadh.AppRole.isAdmin)
-            institutionDao.save(file.institution.copy(createdAt = known.createdAt, isOwn = known.isOwn))
+        val isAdmin = com.elyedali.daftarustadh.AppRole.isAdmin
+        if (known == null) institutionDao.save(file.institution.copy(isOwn = false))
+        else if (!isAdmin) institutionDao.save(file.institution.copy(createdAt = known.createdAt, isOwn = false))
+        else if (!known.isOwn) institutionDao.save(file.institution.copy(createdAt = known.createdAt, isOwn = false))
 
         val existing = classDao.getById(incoming.id)
         if (existing == null) {
