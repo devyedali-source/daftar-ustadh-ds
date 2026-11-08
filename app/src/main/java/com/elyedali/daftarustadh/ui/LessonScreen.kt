@@ -131,7 +131,6 @@ private fun ViewButton(label: String, selected: Boolean, modifier: Modifier, onC
 /** التحضير القصير: الأهداف، المقدمة، الملخص، أهم النقاط، تطبيق صغير. */
 @Composable
 private fun PrepView(l: BookLesson) {
-    var showAnswer by rememberSaveable(l.title) { mutableStateOf(false) }
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(start = 12.dp, end = 12.dp, top = 12.dp, bottom = 40.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
@@ -145,12 +144,6 @@ private fun PrepView(l: BookLesson) {
         item {
             PrepCard("✍️ " + stringResource(R.string.lesson_application), Color(0xFFFFEBEE)) {
                 Text(l.applicationQ, fontSize = 14.sp, fontWeight = FontWeight.SemiBold, lineHeight = 22.sp)
-                if (l.applicationA.isNotBlank()) {
-                    TextButton(onClick = { showAnswer = !showAnswer }) {
-                        Text(stringResource(if (showAnswer) R.string.lesson_hide_answer else R.string.lesson_show_answer))
-                    }
-                    if (showAnswer) Text(l.applicationA, fontSize = 14.sp, color = Color(0xFF2E7D32), lineHeight = 22.sp)
-                }
             }
         }
     }
