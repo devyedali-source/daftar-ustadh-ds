@@ -116,6 +116,8 @@ fun QuickGradesScreen(
     grades: List<GradeEntity>,
     initialSubject: String?,
     onSave: (subjectCode: String, slot: String, values: Map<String, Double>) -> Unit,
+    /** بعد اختيار الفصل والمادة: يفتح جدول المادة بخاناته كلها (الاختبارات والامتحان) كما عند الأستاذ. */
+    onOpenTable: (subjectCode: String, term: Int) -> Unit,
     onBack: () -> Unit
 ) {
     // الاختيار خطوة بخطوة: الفصل ← المادة ← الخانة ← الجدول
@@ -153,14 +155,17 @@ fun QuickGradesScreen(
                         listOf("1" to stringResource(R.string.term_1), "2" to stringResource(R.string.term_2), "3" to stringResource(R.string.term_3)),
                         term?.toString()) {
                         term = it.toInt(); saved = null
+                        subject?.let { sc -> onOpenTable(sc, it.toInt()) }
                     }
                 }
                 if (term != null) item {
                     StepCombo(stringResource(R.string.qg_pick_subject), subjects.map { it.code to subjectLabel(it) }, subject) {
                         subject = it; saved = null
+                        term?.let { tm -> onOpenTable(it, tm) }
                     }
                 }
-                if (term != null && subject != null) item {
+                // لا اختيار للخانة: جدول المادة يُفتح بكل خاناته في صفحة واحدة
+                if (false) item {
                     val testLabel = stringResource(R.string.test_short)
                     val newTest = stringResource(R.string.add_test)
                     StepCombo(stringResource(R.string.qg_pick_slot),

@@ -72,10 +72,12 @@ fun GradesScreen(
     onPrintRecord: (blank: Boolean) -> Unit,
     /** null عند الإدارة: إرسال السجل خاص بالأستاذ. */
     onSendRecord: (() -> Unit)? = null,
+    /** الفصل الذي تُفتح عليه الصفحة (من الإدخال السريع عند الإدارة). */
+    initialTerm: Int = 1,
     onBack: () -> Unit
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
-    var term by rememberSaveable { mutableIntStateOf(1) }
+    var term by rememberSaveable { mutableIntStateOf(initialTerm) }
     val byStudent: Map<String, Map<String, Double>> = remember(grades) {
         grades.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.value } }
     }

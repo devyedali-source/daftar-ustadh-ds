@@ -291,6 +291,7 @@ class MainActivity : AppCompatActivity() {
                 var ttResult by remember { mutableStateOf<String?>(null) }
                 var ttInitialClass by rememberSaveable { mutableStateOf<String?>(null) }
                 var ttInitialTab by remember { mutableStateOf<Int?>(null) }
+                var gradesInitialTerm by remember { mutableStateOf(1) }
                 var askTtUnlock by remember { mutableStateOf(false) }
                 var recordsSent by remember { mutableStateOf(setOf<String>()) }
                 var printWorking by remember { mutableStateOf(false) }
@@ -1388,6 +1389,10 @@ class MainActivity : AppCompatActivity() {
                                     values.forEach { (sid, v) -> gradeDao.save(GradeEntity(sid, c.id, code, slot, v, now)) }
                                 }
                             },
+                            onOpenTable = { code, t ->
+                                subjectCode = code; gradesFromAdmin = true; gradesInitialTerm = t
+                                gradesBack = Screen.QUICK_GRADES; screen = Screen.GRADES
+                            },
                             onBack = { hubTab = 1; screen = Screen.ADMIN_CLASS }
                         )
                     }
@@ -1949,6 +1954,7 @@ class MainActivity : AppCompatActivity() {
                             ?.subjects?.firstOrNull { it.code == code }
                         val back = { screen = gradesBack }
                         if (subject == null) LaunchedEffect(Unit) { back() } else GradesScreen(
+                            initialTerm = if (gradesBack == Screen.QUICK_GRADES) gradesInitialTerm else 1,
                             schoolClass = c,
                             subject = subject,
                             students = students,

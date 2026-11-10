@@ -668,7 +668,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="doc_pick_subject">Choisissez la matière de ce devoir</string>
     <string name="qg_title">Saisie rapide par N° d\'appel</string>
     <string name="qg_button">Saisie rapide par N° d\'appel</string>
-    <string name="qg_intro">Pour saisir les notes de cette classe pour le trimestre et la matière choisis. Choisissez le trimestre puis la matière (au 3e trimestre, choisissez devoir ou examen) : un tableau des numéros d\'appel apparaît. Tapez la note de chaque numéro, puis vérifiez et enregistrez.</string>
+    <string name="qg_intro">Pour saisir les notes de cette classe : choisissez le trimestre puis la matière ; le tableau de la matière s\'ouvre avec toutes ses cases (devoirs et composition), comme chez le professeur, avec le bouton « Autre devoir ». Chaque note est enregistrée dès sa saisie.</string>
     <string name="qg_term">T%1$d</string>
     <string name="qg_camera">Photographier</string>
     <string name="qg_gallery">Photo du téléphone</string>
