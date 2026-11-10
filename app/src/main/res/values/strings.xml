@@ -147,7 +147,7 @@
     <string name="rec_file_name">سجل %1$s - %2$s - Relevé %3$s - %2$s - %4$s.pdf</string>
     <string name="share_record">إرسال سجل الأستاذ</string>
     <string name="rec_school_line">الولاية: %1$s — المؤسسة: %2$s</string>
-    <string name="send_record">إرسال سجلي إلى المكلّف بالقسم</string>
+    <string name="send_record">إرسال سجلي إلى الإدارة</string>
     <string name="send_record_incomplete">لم تكتمل كل الخانات بعد (%1$d من %2$d). أرسل السجل الآن؟ يمكنك إرسال نسخة محدّثة لاحقًا، فتحلّ محلّ هذه.</string>
     <string name="send">إرسال</string>
     <string name="class_results">النتائج والكشوف</string>

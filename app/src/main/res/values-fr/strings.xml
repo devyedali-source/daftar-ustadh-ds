@@ -147,7 +147,7 @@
     <string name="rec_file_name">سجل %1$s - %2$s - Relevé %3$s - %2$s - %4$s.pdf</string>
     <string name="share_record">Envoyer le relevé</string>
     <string name="rec_school_line">Wilaya : %1$s — Établissement : %2$s</string>
-    <string name="send_record">Envoyer mon relevé au responsable de la classe</string>
+    <string name="send_record">Envoyer mon relevé à l\'administration</string>
     <string name="send_record_incomplete">Toutes les cases ne sont pas remplies (%1$d sur %2$d). Envoyer quand même ? Vous pourrez envoyer une version à jour plus tard, qui remplacera celle-ci.</string>
     <string name="send">Envoyer</string>
     <string name="class_results">Notes et bulletins</string>
