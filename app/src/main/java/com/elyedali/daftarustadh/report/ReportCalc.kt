@@ -13,7 +13,7 @@ data class SubjectLine(
     val subject: CurriculumSubject,
     val e1: Double?, val e2: Double?, val e3: Double?,
     val testsAvg: Double?,
-    /** الاختبارات المدرجة حتى هذا الفصل في خانة واحدة (12.5/ 13/ 15.7): تُعرض في كشفي الفصلين الأول والثاني ولا تدخل في الحساب. */
+    /** اختبارات هذا الفصل في خانة واحدة (12.5/ 13/ 15.7): تُعرض في كشفي الفصلين الأول والثاني ولا تدخل في الحساب. */
     val testsShown: String = "",
     val average: Double?,          // معدل المادة لهذا الكشف
     val total: Double?,            // المعدل × الضارب
@@ -75,7 +75,8 @@ object ReportCalc {
                     subject = sub,
                     e1 = m[GradeSlot.E1], e2 = m[GradeSlot.E2], e3 = m[GradeSlot.E3],
                     testsAvg = GradeMath.testsAverage(m, mode),
-                    testsShown = (1..minOf(term, 2)).mapNotNull { m[GradeSlot.test(it)] }.joinToString("/ ") { GradeMath.format(it) },
+                    // اختبارات هذا الفصل وحده
+                    testsShown = if (term <= 2) listOfNotNull(m[GradeSlot.test(term)]).joinToString("/ ") { GradeMath.format(it) } else "",
                     average = avg,
                     total = avg?.let { GradeMath.round2(it * sub.coefficient) },
                     teacherName = rec?.teacherName.orEmpty()
