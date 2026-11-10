@@ -24,6 +24,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -137,12 +139,28 @@ fun GradesScreen(
                     )
                 }
             }
+            // عدد أعمدة الاختبار في هذا الفصل: ما أُدرج منها، أو أكثر إن أضاف الأستاذ «اختبارًا آخر»
+            var added by rememberSaveable(term) { mutableIntStateOf(0) }
+            val usedTests = byStudent.values.maxOfOrNull { g -> GradeSlot.testsOf(term, g).maxOfOrNull { GradeSlot.testIndex(it.first) } ?: 0 } ?: 0
+            val testCount = maxOf(1, usedTests) + added
+            androidx.compose.material3.OutlinedButton(onClick = { added++ },
+                shape = androidx.compose.foundation.shape.RoundedCornerShape(10.dp),
+                modifier = Modifier.padding(vertical = 2.dp)) { Text("➕ " + stringResource(R.string.add_test)) }
+            // الجدول يُمرَّر أفقيًا إن كثرت الاختبارات
+            val colW = 60.dp
+            val tableW = maxOf(LocalConfiguration.current.screenWidthDp.dp - 24.dp, 130.dp + colW * (testCount + 1) + 48.dp)
+            val hScroll = androidx.compose.foundation.rememberScrollState()
+            Column(Modifier.weight(1f).horizontalScroll(hScroll)) {
+            Column(Modifier.width(tableW)) {
             // رأس الجدول
             Row(Modifier.fillMaxWidth().padding(vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
                 Text(stringResource(R.string.student), Modifier.weight(1f), fontWeight = FontWeight.Bold)
-                Text(stringResource(R.string.test_short), Modifier.width(68.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold)
-                Text(stringResource(R.string.exam_short), Modifier.width(68.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold)
-                Text(stringResource(R.string.average_short), Modifier.width(48.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold)
+                (1..testCount).forEach { n ->
+                    Text(stringResource(R.string.test_short) + if (testCount > 1) " $n" else "", Modifier.width(colW),
+                        textAlign = TextAlign.Center, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                }
+                Text(stringResource(R.string.exam_short), Modifier.width(colW), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                Text(stringResource(R.string.average_short), Modifier.width(48.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold, fontSize = 13.sp)
             }
             HorizontalDivider()
             LazyColumn {
@@ -158,12 +176,17 @@ fun GradesScreen(
                             }
                         }
                         val mk = marksBy[s.id].orEmpty()
-                        GradeField(s.id, GradeSlot.test(term), g[GradeSlot.test(term)], mk[GradeSlot.test(term)], onSetGrade, Modifier.width(68.dp))
-                        GradeField(s.id, GradeSlot.exam(term), g[GradeSlot.exam(term)], mk[GradeSlot.exam(term)], onSetGrade, Modifier.width(68.dp))
+                        (1..testCount).forEach { n ->
+                            val ts = GradeSlot.test(term, n)
+                            GradeField(s.id, ts, g[ts], mk[ts], onSetGrade, Modifier.width(colW))
+                        }
+                        GradeField(s.id, GradeSlot.exam(term), g[GradeSlot.exam(term)], mk[GradeSlot.exam(term)], onSetGrade, Modifier.width(colW))
                         Text(GradeMath.format(avg), Modifier.width(48.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold)
                     }
                     HorizontalDivider()
                 }
+            }
+            }
             }
         }
     }

@@ -121,11 +121,15 @@ fun QuickGradesScreen(
     // الاختيار خطوة بخطوة: الفصل ← المادة ← الخانة ← الجدول
     var term by rememberSaveable { mutableStateOf<Int?>(null) }
     var subject by rememberSaveable { mutableStateOf(initialSubject?.takeIf { c -> subjects.any { it.code == c } }) }
-    var exam by rememberSaveable { mutableStateOf<Boolean?>(null) }
+    // الخانة المختارة: «E» للامتحان، أو رقم الاختبار في الفصل (1، 2، 3...)
+    var pick by rememberSaveable { mutableStateOf<String?>(null) }
     var saved by rememberSaveable { mutableStateOf<Int?>(null) }
     val t = term
-    val e = exam
-    val slot: String? = if (t == null || e == null) null else if (e) GradeSlot.exam(t) else GradeSlot.test(t)
+    val e = pick
+    val slot: String? = if (t == null || e == null) null else if (e == "E") GradeSlot.exam(t) else GradeSlot.test(t, e.toIntOrNull() ?: 1)
+    // اختبارات هذا الفصل المدرجة في المادة، ثم «اختبار جديد»
+    val usedTests = if (t == null) 0 else grades.filter { it.subjectCode == subject && GradeSlot.testTerm(it.slot) == t }
+        .maxOfOrNull { GradeSlot.testIndex(it.slot) } ?: 0
     val ready = slot != null && subject != null
     // ما كُتب في الجدول: رقم النداء ← النقطة كنص (يُفرَّغ عند تغيير المادة أو الخانة)
     val entries = remember(subject, slot) { mutableStateMapOf<Int, String>() }
@@ -157,9 +161,13 @@ fun QuickGradesScreen(
                     }
                 }
                 if (term != null && subject != null) item {
+                    val testLabel = stringResource(R.string.test_short)
+                    val newTest = stringResource(R.string.add_test)
                     StepCombo(stringResource(R.string.qg_pick_slot),
-                        listOf("T" to stringResource(R.string.test_short), "E" to stringResource(R.string.exam_short)),
-                        exam?.let { if (it) "E" else "T" }) { exam = it == "E"; saved = null }
+                        (1..usedTests).map { n -> n.toString() to "$testLabel $n" } +
+                            ((usedTests + 1).toString() to "➕ $newTest (${usedTests + 1})") +
+                            ("E" to stringResource(R.string.exam_short)),
+                        pick) { pick = it; saved = null }
                 }
                 if (!ready) item {
                     Text(stringResource(R.string.qg_pick_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)

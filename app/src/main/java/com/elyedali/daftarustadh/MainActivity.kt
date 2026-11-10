@@ -2315,7 +2315,7 @@ class MainActivity : AppCompatActivity() {
                     val byStudent = classGrades.filter { it.subjectCode == code }.groupBy { it.studentId }
                         .mapValues { e -> e.value.associate { it.slot to it.value } }
                     val started = (3 downTo 1).firstOrNull { t ->
-                        byStudent.values.any { it[GradeSlot.test(t)] != null || it[GradeSlot.exam(t)] != null }
+                        byStudent.values.any { g -> GradeSlot.testsOf(t, g).isNotEmpty() || g[GradeSlot.exam(t)] != null }
                     } ?: 0
                     val incomplete = if (started == 0) students else students.filter { st ->
                         (1..started).any { t -> !GradeMath.isComplete(t, byStudent[st.id].orEmpty()) }

@@ -115,6 +115,7 @@
     <string name="tests_mode_best">أفضل نتيجة اختبار</string>
     <string name="student">الطالب</string>
     <string name="test_short">اختبار</string>
+    <string name="add_test">اختبار آخر</string>
     <string name="exam_short">امتحان</string>
     <string name="average_short">المعدل</string>
     <string name="students_list">الطلاب</string>

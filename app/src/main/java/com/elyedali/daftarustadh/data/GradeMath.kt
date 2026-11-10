@@ -20,7 +20,8 @@ object GradeMath {
     fun round2(v: Double): Double = BigDecimal.valueOf(v).setScale(2, RoundingMode.HALF_UP).toDouble()
 
     fun testsAverage(grades: Map<String, Double>, mode: String): Double? {
-        val tests = listOf(1, 2, 3).mapNotNull { grades[GradeSlot.test(it)] }
+        // كل الاختبارات المدرجة في الفصول الثلاثة، بما فيها الاختبارات الإضافية
+        val tests = GradeSlot.allTests(grades)
         if (tests.isEmpty()) return null
         return round2(if (mode == TestsMode.BEST) tests.max() else tests.average())
     }
@@ -54,7 +55,7 @@ object GradeMath {
     fun isComplete(term: Int, grades: Map<String, Double>): Boolean = when (term) {
         1 -> grades[GradeSlot.E1] != null
         2 -> grades[GradeSlot.E2] != null
-        else -> listOf(1, 2, 3).any { grades[GradeSlot.test(it)] != null } &&
+        else -> GradeSlot.allTests(grades).isNotEmpty() &&
             grades[GradeSlot.E1] != null && grades[GradeSlot.E2] != null && grades[GradeSlot.E3] != null
     }
 }

@@ -131,16 +131,18 @@ class RecordImporter(private val db: DaftarDatabase) {
         val target: (String) -> String? = { fid -> (ready.mapping[fid] ?: fid).takeIf { it in ids } }
         val term = termOf(file)
         val S = com.elyedali.daftarustadh.data.GradeSlot
-        val owned = if (term >= 3) setOf(S.E3, S.T1, S.T2, S.T3) else setOf(S.exam(term))
+        // خانات هذا الفصل التي يحلّ فيها السجل محلّ السابق: امتحانه واختباراته (كلها في الفصل الأخير)
+        fun owns(slot: String) = slot == S.exam(term) ||
+            (S.isTest(slot) && (term >= 3 || S.testTerm(slot) == term))
         val existing = gradeDao.listSubject(c.id, file.subjectCode).groupBy { it.studentId }
             .mapValues { e -> e.value.associateBy { it.slot } }
         file.students.forEach { s ->
             val sid = target(s.id) ?: return@forEach
             val mine = existing[sid].orEmpty()
             // خانات هذا الفصل: تحلّ محلّ السابق (وتُفرَّغ إن لم تكن في السجل)
-            owned.forEach { slot -> if (slot !in s.grades) gradeDao.clear(sid, file.subjectCode, slot) }
+            (mine.keys + S.exam(term)).filter { owns(it) && it !in s.grades }.forEach { slot -> gradeDao.clear(sid, file.subjectCode, slot) }
             s.grades.forEach { (slot, v) ->
-                if (slot in owned || mine[slot] == null)
+                if (owns(slot) || mine[slot] == null)
                     gradeDao.save(GradeEntity(sid, c.id, file.subjectCode, slot, v, now, s.marks[slot]))
             }
         }

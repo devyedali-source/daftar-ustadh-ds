@@ -48,8 +48,27 @@ object GradeSlot {
     const val T2 = "T2"; const val E2 = "E2"
     const val T3 = "T3"; const val E3 = "E3"
     val ALL = listOf(T1, E1, T2, E2, T3, E3)
-    fun test(term: Int) = "T$term"
+    /** الاختبار رقم n في الفصل: الأول «T1» (كما كان)، والإضافية «T1.2» و«T1.3»... */
+    fun test(term: Int, n: Int = 1) = if (n <= 1) "T$term" else "T$term.$n"
     fun exam(term: Int) = "E$term"
+
+    private val TEST_RE = Regex("""T([123])(?:\.(\d+))?""")
+    fun isTest(slot: String) = TEST_RE.matches(slot)
+    /** الفصل الذي ينتمي إليه الاختبار، أو null إن لم تكن الخانة اختبارًا. */
+    fun testTerm(slot: String): Int? = TEST_RE.matchEntire(slot)?.groupValues?.get(1)?.toIntOrNull()
+    fun testIndex(slot: String): Int = TEST_RE.matchEntire(slot)?.groupValues?.get(2)?.toIntOrNull() ?: 1
+    /** خانة معروفة: امتحان أو اختبار (بما فيه الاختبارات الإضافية). */
+    fun isKnown(slot: String) = slot in ALL || isTest(slot)
+    /** اختبارات فصل واحد مرتبة: (الخانة، النقطة). */
+    fun testsOf(term: Int, grades: Map<String, Double>): List<Pair<String, Double>> =
+        grades.filterKeys { testTerm(it) == term }.toList().sortedBy { testIndex(it.first) }
+    /** كل الاختبارات المرتبة من الفصل الأول إلى الثالث. */
+    fun allTests(grades: Map<String, Double>): List<Double> = (1..3).flatMap { t -> testsOf(t, grades).map { it.second } }
+    /** ترتيب الخانات للعرض: اختبارات ف1 ثم امتحانه، ثم ف2... */
+    fun sortKey(slot: String): Int {
+        val t = testTerm(slot)
+        return if (t != null) t * 100 + testIndex(slot) else (slot.drop(1).toIntOrNull() ?: 9) * 100 + 99
+    }
 }
 
 /**

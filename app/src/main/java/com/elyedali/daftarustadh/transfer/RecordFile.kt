@@ -113,10 +113,10 @@ object TransferCodec {
             val students = (0 until arr.length()).map { k ->
                 val s = arr.getJSONObject(k)
                 val g = s.getJSONObject("grades")
-                val grades = GradeSlot.ALL.filter { g.has(it) }.associateWith { g.getDouble(it) }
+                val grades = g.keys().asSequence().filter { GradeSlot.isKnown(it) }.toList().associateWith { g.getDouble(it) }
                     .filterValues { it in 0.0..20.0 }
                 val mk = s.optJSONObject("marks")
-                val marks = if (mk == null) emptyMap() else GradeSlot.ALL.filter { mk.has(it) && it in grades }
+                val marks = if (mk == null) emptyMap() else grades.keys.filter { mk.has(it) }
                     .associateWith { mk.getString(it) }.filterValues { com.elyedali.daftarustadh.data.GradeMark.isValid(it) }
                 RecordStudent(s.getString("id"), s.optInt("roll"), s.optString("name"), grades, marks)
             }

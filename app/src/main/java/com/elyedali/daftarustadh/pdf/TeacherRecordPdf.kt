@@ -124,8 +124,15 @@ object TeacherRecordPdf {
             PdfText.draw(c, names, edges[2] + 3f, y, nameW - 6f, ROW, 8f, Layout.Alignment.ALIGN_NORMAL, maxLines = 2)
             // النقاط بترتيب الأعمدة: اختبار ف1، امتحان ف1، اختبار ف2، ...
             grades[s.id]?.let { g ->
-                com.elyedali.daftarustadh.data.GradeSlot.ALL.forEachIndexed { k, slot ->
-                    g[slot]?.let { v -> PdfText.draw(c, PdfCommon.num(v), edges[k + 3], y, gradeW, ROW, 9f, bold = slot.startsWith("E")) }
+                val S = com.elyedali.daftarustadh.data.GradeSlot
+                S.ALL.forEachIndexed { k, slot ->
+                    val t = S.testTerm(slot)
+                    if (t != null) {
+                        // خانة اختبار الفصل: كل اختباراته فيها (12,5/ 13)
+                        val tests = S.testsOf(t, g).map { it.second }
+                        if (tests.isNotEmpty()) PdfText.draw(c, tests.joinToString("/ ") { PdfCommon.num(it) }, edges[k + 3], y, gradeW, ROW,
+                            if (tests.size > 1) 7f else 9f, maxLines = 2)
+                    } else g[slot]?.let { v -> PdfText.draw(c, PdfCommon.num(v), edges[k + 3], y, gradeW, ROW, 9f, bold = true) }
                 }
             }
             y += ROW

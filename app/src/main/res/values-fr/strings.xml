@@ -115,6 +115,7 @@
     <string name="tests_mode_best">Meilleure note de devoir</string>
     <string name="student">Élève</string>
     <string name="test_short">Devoir</string>
+    <string name="add_test">Autre devoir</string>
     <string name="exam_short">Compo</string>
     <string name="average_short">Moy.</string>
     <string name="students_list">Élèves</string>

@@ -76,7 +76,8 @@ object ReportCalc {
                     e1 = m[GradeSlot.E1], e2 = m[GradeSlot.E2], e3 = m[GradeSlot.E3],
                     testsAvg = GradeMath.testsAverage(m, mode),
                     // كل الاختبارات المرفوعة حتى هذا الفصل (في ف2: اختبارات ف1 وف2)، شكلية لا تدخل في الحساب
-                    testsShown = if (term <= 2) (1..term).mapNotNull { m[GradeSlot.test(it)] }.joinToString("/ ") { GradeMath.format(it) } else "",
+                    testsShown = if (term <= 2) (1..term).flatMap { t -> GradeSlot.testsOf(t, m).map { it.second } }
+                        .joinToString("/ ") { GradeMath.format(it) } else "",
                     average = avg,
                     total = avg?.let { GradeMath.round2(it * sub.coefficient) },
                     teacherName = rec?.teacherName.orEmpty()
