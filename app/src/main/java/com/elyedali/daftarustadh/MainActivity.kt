@@ -263,7 +263,7 @@ class MainActivity : AppCompatActivity() {
                 val activatedClasses = remember(activatedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(activatedText) }
                 val requestedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY) }.collectAsState(initial = null)
                 val requestedClasses = remember(requestedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(requestedText) }
-                // تفعيل الأستاذ (120 أوقية للسنة): التخطيط والتحاضير للفصلين 2 و3، ونتائج الفصل الأخير للمستقل
+                // تفعيل الأستاذ (190 أوقية للسنة): التخطيط والتحاضير للفصلين 2 و3؛ رصد النتائج مجاني دائمًا
                 val teacherActText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TeacherActivation.KEY) }.collectAsState(initial = null)
                 val teacherActivated = remember(teacherActText) { com.elyedali.daftarustadh.data.TeacherActivation.decode(teacherActText) }
                 val teacherReqText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TeacherActivation.REQUESTED_KEY) }.collectAsState(initial = null)

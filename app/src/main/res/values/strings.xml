@@ -416,8 +416,8 @@
     <string name="act_explain">الفصلان الأول والثاني مجانيان. تفعيل الأقسام يفتح الفصل الأخير (الكشف السنوي) للسنة الدراسية.</string>
     <string name="act_prices_title">الأسعار (أوقية جديدة):</string>
     <string name="act_price_1">من 1 إلى 3 أقسام: %1$d</string>
-    <string name="act_price_3">من 4 إلى 6 أقسام: %1$d</string>
-    <string name="act_price_7">أكثر من 6 أقسام: %1$d</string>
+    <string name="act_price_3">من 4 إلى 7 أقسام: %1$d</string>
+    <string name="act_price_7">أكثر من 7 أقسام: %1$d</string>
     <string name="act_no_classes">لا توجد أقسام مسجلة في هذه السنة الدراسية.</string>
     <string name="act_code">كود القسم: %1$s</string>
     <string name="act_status_active">مفعّل</string>

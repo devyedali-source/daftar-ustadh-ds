@@ -8,7 +8,7 @@ object TeacherActivation {
     const val KEY = "teacher_activated_years"        // السنوات المفعّلة (تضعها الإدارة/الخادم)
     const val REQUESTED_KEY = "teacher_activation_requested"
     const val CODE_KEY = "teacher_install_code"
-    const val PRICE = 120
+    const val PRICE = 190
 
     fun decode(text: String?): Set<String> = ClassActivation.decode(text)
     fun encode(years: Set<String>): String = ClassActivation.encode(years)

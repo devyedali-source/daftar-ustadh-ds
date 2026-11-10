@@ -416,8 +416,8 @@
     <string name="act_explain">Les 1er et 2e trimestres sont gratuits. L\'activation ouvre le dernier trimestre (bulletin annuel) de l\'année scolaire.</string>
     <string name="act_prices_title">Tarifs (MRU) :</string>
     <string name="act_price_1">De 1 à 3 classes : %1$d</string>
-    <string name="act_price_3">De 4 à 6 classes : %1$d</string>
-    <string name="act_price_7">Plus de 6 classes : %1$d</string>
+    <string name="act_price_3">De 4 à 7 classes : %1$d</string>
+    <string name="act_price_7">Plus de 7 classes : %1$d</string>
     <string name="act_no_classes">Aucune classe enregistrée cette année scolaire.</string>
     <string name="act_code">Code de la classe : %1$s</string>
     <string name="act_status_active">Activée</string>
