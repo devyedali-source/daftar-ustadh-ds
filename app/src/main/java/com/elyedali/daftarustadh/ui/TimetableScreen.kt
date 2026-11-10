@@ -362,16 +362,24 @@ private fun TeacherListPane(
     var confirmDistribute by remember { mutableStateOf(false) }
     var deleting by remember { mutableStateOf<Int?>(null) }
     val order = listOf("IR", "AR", "HG", "PH", "IC", "FR", "ANG", "MATS", "SN", "PC", "TI", "LEG", "EPS")
-    // كل المواد الموجودة في أقسام المؤسسة
-    val allSubjects = remember(subjectsByClass) {
+    // مواد أقسام المؤسسة (لمعرفة المواد التي لا أستاذ لها)
+    val classSubjects = remember(subjectsByClass) {
         subjectsByClass.values.flatten().map { it.code }.distinct()
             .sortedBy { order.indexOf(it).let { i -> if (i < 0) 99 else i } }
+    }
+    // كل مواد المنهاج (الإعدادية والثانوية): يُسجَّل الأستاذ وموادّه ولو قبل إنشاء الأقسام
+    val ctx = LocalContext.current
+    val allSubjects = remember(subjectsByClass) {
+        val year = classes.firstOrNull()?.schoolYear ?: com.elyedali.daftarustadh.data.CurriculumRepository.availableYears(ctx).lastOrNull()
+        val curriculum = if (year == null) emptyList()
+            else com.elyedali.daftarustadh.data.CurriculumRepository.levels(ctx, year).flatMap { l -> l.subjects.map { it.code } }
+        (curriculum + classSubjects).distinct().sortedBy { order.indexOf(it).let { i -> if (i < 0) 99 else i } }
     }
     val hoursOf = remember(subjectsByClass) {
         subjectsByClass.flatMap { (cid, subs) -> subs.map { (cid to it.code) to it.weeklyHours } }.toMap()
     }
     val classNames = remember(classes) { classes.associate { it.id to it.name } }
-    val uncovered = allSubjects.filter { code -> teachers.none { code in it.all } }
+    val uncovered = classSubjects.filter { code -> teachers.none { code in it.all } }
 
     LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(vertical = 10.dp)) {
         item { Text(stringResource(R.string.tt_teachers_list_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
