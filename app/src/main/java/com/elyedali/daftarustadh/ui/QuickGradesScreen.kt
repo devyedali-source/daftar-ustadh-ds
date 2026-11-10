@@ -149,8 +149,6 @@ fun QuickGradesScreen(
                         listOf("1" to stringResource(R.string.term_1), "2" to stringResource(R.string.term_2), "3" to stringResource(R.string.term_3)),
                         term?.toString()) {
                         term = it.toInt(); saved = null
-                        // الفصلان الأول والثاني: الامتحان فقط (الاختبارات تُدخل في الفصل الأخير)
-                        exam = if (it.toInt() < 3) true else null
                     }
                 }
                 if (term != null) item {
@@ -158,7 +156,7 @@ fun QuickGradesScreen(
                         subject = it; saved = null
                     }
                 }
-                if (term == 3 && subject != null) item {
+                if (term != null && subject != null) item {
                     StepCombo(stringResource(R.string.qg_pick_slot),
                         listOf("T" to stringResource(R.string.test_short), "E" to stringResource(R.string.exam_short)),
                         exam?.let { if (it) "E" else "T" }) { exam = it == "E"; saved = null }

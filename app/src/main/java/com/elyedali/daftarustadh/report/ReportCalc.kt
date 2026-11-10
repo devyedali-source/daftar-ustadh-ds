@@ -13,6 +13,8 @@ data class SubjectLine(
     val subject: CurriculumSubject,
     val e1: Double?, val e2: Double?, val e3: Double?,
     val testsAvg: Double?,
+    /** اختبارا الفصلين الأول والثاني: يظهران في كشفي الفصلين للاطلاع فقط ولا يدخلان في معدلهما. */
+    val t1: Double? = null, val t2: Double? = null,
     val average: Double?,          // معدل المادة لهذا الكشف
     val total: Double?,            // المعدل × الضارب
     val teacherName: String
@@ -73,6 +75,7 @@ object ReportCalc {
                     subject = sub,
                     e1 = m[GradeSlot.E1], e2 = m[GradeSlot.E2], e3 = m[GradeSlot.E3],
                     testsAvg = GradeMath.testsAverage(m, mode),
+                    t1 = m[GradeSlot.T1], t2 = m[GradeSlot.T2],
                     average = avg,
                     total = avg?.let { GradeMath.round2(it * sub.coefficient) },
                     teacherName = rec?.teacherName.orEmpty()
