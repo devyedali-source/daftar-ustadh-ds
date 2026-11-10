@@ -81,7 +81,9 @@ class RecordImporter(private val db: DaftarDatabase) {
         // الوضع الحر (القسم عُرف باسمه): إن كان عدد التلاميذ مطابقًا يُطابقون حسب ترتيبهم في القائمة،
         // ولا يهم اختلاف أرقام النداء أو الأسماء
         var byOrder = false
-        if (classByName && file.students.isNotEmpty() && file.students.size == students.size && mapping.size < students.size) {
+        // لا تُستعمل إلا إذا لم يُطابق أي تلميذ برقمه الخفي ولا برقم النداء: المطابقة الجزئية برقم النداء أدق،
+        // والمطابقة بالترتيب فوقها قد تُزيح نقاط التلاميذ إن اختلف ترتيب القائمتين
+        if (classByName && file.students.isNotEmpty() && file.students.size == students.size && mapping.isEmpty()) {
             mapping.clear(); usedTargets.clear(); byRoll = 0
             file.students.sortedBy { it.roll }.zip(students.sortedBy { it.rollNumber }).forEach { (fs, st) ->
                 mapping[fs.id] = st.id; usedTargets += st.id

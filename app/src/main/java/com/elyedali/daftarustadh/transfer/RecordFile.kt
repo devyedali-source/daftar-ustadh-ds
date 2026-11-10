@@ -113,7 +113,9 @@ object TransferCodec {
             val students = (0 until arr.length()).map { k ->
                 val s = arr.getJSONObject(k)
                 val g = s.getJSONObject("grades")
-                val grades = g.keys().asSequence().filter { GradeSlot.isKnown(it) }.toList().associateWith { g.getDouble(it) }
+                // تُقبل فقط النقاط الصحيحة (من 0 إلى 20) في خانات معروفة؛ ما سواها يُهمل فلا يُفسد المعدلات
+                val grades = g.keys().asSequence().filter { GradeSlot.isKnown(it) }.toList()
+                    .associateWith { g.optDouble(it, Double.NaN) }.filterValues { !it.isNaN() && it in 0.0..20.0 }
                     .filterValues { it in 0.0..20.0 }
                 val mk = s.optJSONObject("marks")
                 val marks = if (mk == null) emptyMap() else grades.keys.filter { mk.has(it) }
