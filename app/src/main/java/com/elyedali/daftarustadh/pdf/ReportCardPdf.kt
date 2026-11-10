@@ -16,9 +16,9 @@ import java.io.ByteArrayOutputStream
 
 /**
  * كشوف الدرجات على هيئة الكشف الرسمي، كشف واحد في كل صفحة A4 طولية.
- * term = 1: امتحان الفصل الأول وحده (هو المعدل).
- * term = 2: يظهر امتحان الفصل الأول للاطلاع فقط، والمعدل = امتحان الفصل الثاني وحده.
- * الاختبارات لا تظهر إلا في الكشف السنوي (الفصل الأخير)، وفيه وحده تدخل في الحساب.
+ * term = 1: الاختبارات (للاطلاع) ثم امتحان الفصل الأول، وهو المعدل.
+ * term = 2: الاختبارات وامتحان الفصل الأول (للاطلاع)، والمعدل = امتحان الفصل الثاني وحده.
+ * الاختبارات كلها في خانة واحدة (12.5/ 13/ 15.7)، ولا تدخل في الحساب إلا في الكشف السنوي حيث يظهر معدلها فقط.
  * term = 3: الكشف السنوي: الامتحان الأول ×1، الثاني ×2، الثالث ×3، معدل الاختبارات ×3،
  * معدل المادة، الضارب، المجموع — والقيم تُكتب مضروبة كما في الكشف الرسمي.
  */
@@ -102,12 +102,14 @@ object ReportCardPdf {
             Col("الامتحان الثالث ×3", "3° Compo ×3", 44f), Col("معدل الاختبارات ×3", "Moy. Interrog ×3", 48f),
             Col("معدل المادة", "Moy. Discipl", 40f), Col("الضارب", "Coeff", 32f), Col("المجموع", "Total", 42f)
         ) else if (term == 1) listOf(
-            Col("المواد", "", 90f), Col("", "Matières", 90f),
-            Col("امتحان الفصل", "Composition", 60f), Col("الضارب", "Coeff", 40f), Col("المجموع", "Total", 55f)
+            Col("المواد", "", 80f), Col("", "Matières", 80f),
+            Col("الاختبارات", "Interrogations", 62f),
+            Col("امتحان الفصل", "Composition", 54f), Col("الضارب", "Coeff", 36f), Col("المجموع", "Total", 50f)
         ) else listOf(
-            Col("المواد", "", 82f), Col("", "Matières", 82f),
-            Col("امتحان الفصل الأول", "1° Compo", 52f),
-            Col("امتحان الفصل الثاني", "2° Compo", 54f), Col("الضارب", "Coeff", 36f), Col("المجموع", "Total", 50f)
+            Col("المواد", "", 72f), Col("", "Matières", 72f),
+            Col("الاختبارات", "Interrogations", 66f),
+            Col("امتحان الفصل الأول", "1° Compo", 48f),
+            Col("امتحان الفصل الثاني", "2° Compo", 50f), Col("الضارب", "Coeff", 32f), Col("المجموع", "Total", 46f)
         )
         val obsW = (W - 2 * M) - cols.sumOf { it.w.toDouble() }.toFloat()
         val allCols = cols + Col("ملاحظات الأساتذة", "Observations et Signature des Professeurs", obsW)
@@ -126,9 +128,9 @@ object ReportCardPdf {
                 num(ln.e1), num(ln.e2?.times(2)), num(ln.e3?.times(3)), num(ln.testsAvg?.times(3)),
                 num(ln.average), ln.subject.coefficient.toString(), num(ln.total)
             ) else if (term == 1) listOf(
-                num(ln.average), ln.subject.coefficient.toString(), num(ln.total)
+                ln.testsShown, num(ln.average), ln.subject.coefficient.toString(), num(ln.total)
             ) else listOf(
-                num(ln.e1), num(ln.average), ln.subject.coefficient.toString(), num(ln.total)
+                ln.testsShown, num(ln.e1), num(ln.average), ln.subject.coefficient.toString(), num(ln.total)
             )
             cell(c, ln.subject.nameAr, edges[1], y, allCols[0].w, rowH, 8.5f, align = Layout.Alignment.ALIGN_NORMAL)
             cell(c, ln.subject.nameFr, edges[2], y, allCols[1].w, rowH, 8f, align = Layout.Alignment.ALIGN_NORMAL)
