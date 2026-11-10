@@ -110,7 +110,7 @@ private const val TT_APPROVED_KEY = "timetable_approved"
 private const val TT_MANUAL_KEY = "timetable_manual"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES, ABOUT }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES, ABOUT, RECORDS_FOLLOW }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 /** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
@@ -437,12 +437,11 @@ class MainActivity : AppCompatActivity() {
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
                             ?.subjects?.firstOrNull { it.code == code } ?: return null
                         val list = studentDao.listByClass(c.id)
-                        val allGrades = gradeDao.listSubject(c.id, code).filter { g ->
-                            uptoTerm == null || (g.slot.drop(1).toIntOrNull() ?: 0) <= uptoTerm }
-                        // في الفصلين الأول والثاني يرسل الأستاذ نتائج الامتحانات فقط، ويحتفظ بالاختبارات عنده
-                        // حتى الفصل الأخير؛ عندها يرسل كل شيء (الاختبارات والامتحانات الثلاثة)
-                        val lastExamTerm = (3 downTo 1).firstOrNull { t -> allGrades.any { it.slot == GradeSlot.exam(t) } } ?: 0
-                        val g = if (lastExamTerm >= 3) allGrades else allGrades.filter { it.slot.startsWith("E") }
+                        // كل ما رصده الأستاذ حتى هذا الفصل: الامتحانات والاختبارات (بما فيها الإضافية)،
+                        // فتظهر الاختبارات في كشفي الفصلين الأول والثاني (شكليًا) وتُحسب في الكشف السنوي
+                        val g = gradeDao.listSubject(c.id, code).filter { gr ->
+                            val t = GradeSlot.testTerm(gr.slot) ?: gr.slot.drop(1).toIntOrNull() ?: 0
+                            uptoTerm == null || t <= uptoTerm }
                         val mode = mySubjects.firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE
                         val record = RecordFile(
                             institutionId = owner.id, wilaya = owner.wilaya, schoolName = owner.schoolName,
@@ -1320,6 +1319,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.TIMETABLE -> BackHandler { screen = ttBack }
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
                     Screen.QUICK_GRADES -> BackHandler { hubTab = 1; screen = Screen.ADMIN_CLASS }
+                    Screen.RECORDS_FOLLOW -> BackHandler { screen = Screen.HOME }
                     Screen.INSTITUTION -> BackHandler { if (addingSelfSchool) addingSelfSchool = false else if (inst == null) selectedYear = null; screen = Screen.HOME }
                     Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) selectedYear = null; screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
@@ -1394,6 +1394,25 @@ class MainActivity : AppCompatActivity() {
                                 gradesBack = Screen.QUICK_GRADES; screen = Screen.GRADES
                             },
                             onBack = { hubTab = 1; screen = Screen.ADMIN_CLASS }
+                        )
+                    }
+
+                    // متابعة سجلات الأساتذة: من أرسل نتائج كل أقسامه وموادّه في الفصل، ومن بقي
+                    screen == Screen.RECORDS_FOLLOW -> {
+                        val ids = managedClasses.map { it.id }
+                        val fGrades by remember(ids) { gradeDao.observeClasses(ids) }.collectAsState(initial = emptyList())
+                        val fStudents by remember(ids) { studentDao.observeByClasses(ids) }.collectAsState(initial = emptyList())
+                        com.elyedali.daftarustadh.ui.RecordsFollowScreen(
+                            classes = managedClasses,
+                            subjectsOf = { c -> com.elyedali.daftarustadh.report.ReportCalc.orderSubjects(
+                                CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()).map { it.code } },
+                            subjectLabel = { subjectName(it) },
+                            assignments = ttAssignments,
+                            students = fStudents,
+                            grades = fGrades,
+                            onUploadMany = openBatch,
+                            onGenerate = { c, t -> generateKashf(c, t) },
+                            onBack = { screen = Screen.HOME }
                         )
                     }
 
@@ -2157,6 +2176,7 @@ class MainActivity : AppCompatActivity() {
                                 "PRINT_RECORDS" -> { printKind = "RECORDS"; screen = Screen.PRINT_SHOP }
                                 "PRINT_TIMETABLES" -> { printKind = "TIMETABLES"; screen = Screen.PRINT_SHOP }
                                 "UPLOAD_MANY" -> openBatch()
+                                "RECORDS_FOLLOW" -> screen = Screen.RECORDS_FOLLOW
                                 "ABSENCE_CENTER" -> screen = Screen.ABSENCE_CENTER
                                 "STATS" -> screen = Screen.STATS
                                 "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }

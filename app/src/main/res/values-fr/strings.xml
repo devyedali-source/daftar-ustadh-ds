@@ -225,6 +225,17 @@
     <string name="tt_unlock_warning">⚠️ L\'emploi du temps est validé et a peut-être été envoyé aux professeurs. Ouvrir ses réglages annule la validation : aucun nouvel emploi du temps ne sera envoyé avant de le revoir et de le valider à nouveau.</string>
     <string name="tt_unlock_confirm">Ouvrir les réglages</string>
     <string name="type_code_to_continue">Pour continuer, tapez le code %1$s</string>
+    <string name="rf_title">Relevés des professeurs</string>
+    <string name="rf_no_teacher">Matières sans professeur affecté</string>
+    <string name="rf_teachers_done">Relevés complets reçus : %1$d sur %2$d professeurs</string>
+    <string name="rf_classes_ready">Classes prêtes pour les bulletins : %1$d sur %2$d</string>
+    <string name="rf_no_assignments">Aucun professeur affecté : affectez les matières dans l\'emploi du temps (Réglages) pour voir leurs noms ici.</string>
+    <string name="rf_ready_title">Classes complètes : bulletins prêts</string>
+    <string name="rf_generate">Bulletins de %1$s</string>
+    <string name="rf_count">%1$d / %2$d</string>
+    <string name="rf_state_done">complet</string>
+    <string name="rf_state_partial">incomplet %1$d / %2$d</string>
+    <string name="rf_state_missing">non reçu</string>
     <string name="menu_about">À propos de l\'application</string>
     <string name="about_soon">Cette page sera bientôt prête.</string>
     <string name="menu_books">Mes livres</string>

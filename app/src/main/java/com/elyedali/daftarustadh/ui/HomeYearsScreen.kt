@@ -221,18 +221,18 @@ fun HomeYearsScreen(
                             // صاحب الوضع وأدواته: المؤسسة وأدوات الإدارة، أو الأستاذ وأدواته
                             // كل زر إما أداة مباشرة، وإما مجموعة تفتح قائمة بأدواتها
                             val tools: List<Pair<String, List<Pair<String, String>>>> = if (mode == MODE_ADMIN) listOf(
-                                ("📊 " + stringResource(R.string.statistics)) to listOf("STATS" to ""),
+                                // الإعدادات: المؤسسة والتفعيل والجداول الزمنية كلها هنا
                                 ("⚙️ " + stringResource(R.string.home_group_settings)) to listOf(
                                     "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
                                     "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title)),
+                                    "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
+                                    "PRINT_TIMETABLES" to ("🗓️ " + stringResource(R.string.ps_timetables_title)),
                                     "TT_SETTINGS" to ("🛠️ " + stringResource(R.string.tt_settings_title))),
                                 ("🤝 " + stringResource(R.string.home_group_share)) to listOf(
                                     "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
                                     "PRINT_RECORDS" to ("📒 " + stringResource(R.string.ps_records_title))),
-                                ("📥 " + stringResource(R.string.bu_button)) to listOf("UPLOAD_MANY" to ""),
-                                ("📅 " + stringResource(R.string.home_group_timetables)) to listOf(
-                                    "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
-                                    "PRINT_TIMETABLES" to ("🗓️ " + stringResource(R.string.ps_timetables_title)))
+                                // ملفات نتائج الأساتذة: صفحة المتابعة (من أرسل ومن بقي) وفيها زر الرفع
+                                ("📥 " + stringResource(R.string.rf_title)) to listOf("RECORDS_FOLLOW" to "")
                             ) else listOf(
                                 ("👤 " + stringResource(R.string.tp_title)) to listOf("TEACHER_PROFILE" to ""),
                                 ("✏️ " + stringResource(R.string.remarks_settings)) to listOf("REMARKS" to "")
@@ -271,6 +271,7 @@ fun HomeYearsScreen(
                         item {
                             Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
                                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                                Column(Modifier.fillMaxWidth()) {
                                 Row(Modifier.fillMaxWidth().padding(14.dp), horizontalArrangement = Arrangement.SpaceEvenly) {
                                     MiniStat("🏫", yearClasses.size, stringResource(R.string.stat_classes))
                                     MiniStat("👥", total, stringResource(R.string.stat_students))
@@ -279,6 +280,12 @@ fun HomeYearsScreen(
                                         MiniStat("👦", boys, stringResource(R.string.stat_boys))
                                         MiniStat("👧", girls, stringResource(R.string.stat_girls))
                                     }
+                                }
+                                // الإدارة: زر الإحصائيات داخل بطاقة الإحصائيات
+                                if (mode == MODE_ADMIN) androidx.compose.material3.TextButton(onClick = { onTool("STATS") },
+                                    modifier = Modifier.align(Alignment.CenterHorizontally)) {
+                                    Text("📊 " + stringResource(R.string.statistics) + " ←", fontWeight = FontWeight.Bold)
+                                }
                                 }
                             }
                         }
