@@ -69,6 +69,8 @@ fun KashfTab(
     missingByTerm: Map<Int, Int>,   // عدد الطلاب الذين تنقصهم نتائج لكل كشف
     onGenerate: (Int) -> Unit,
     onOpenSettings: () -> Unit,
+    /** صفحة الملاحظات العامة حسب المعدل العام (تُكتب في أسفل كل كشف). */
+    onOpenGeneralRemarks: () -> Unit = {},
     locked: Boolean = false,          // القسم غير مفعّل: الكشف السنوي (الفصل الأخير) مقفل
     onActivate: () -> Unit = {}
 ) {
@@ -97,6 +99,10 @@ fun KashfTab(
                     }
                 }
             }
+        }
+        androidx.compose.material3.OutlinedButton(onClick = onOpenGeneralRemarks, modifier = Modifier.fillMaxWidth(),
+            shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp)) {
+            Text("✏️ " + stringResource(R.string.general_remarks))
         }
         TextButton(onClick = onOpenSettings) { Text(stringResource(R.string.kashf_settings)) }
     }

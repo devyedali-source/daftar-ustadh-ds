@@ -174,7 +174,7 @@ fun GradesScreen(
                         Column(Modifier.weight(1f)) {
                             Text("${s.rollNumber}. " + (if (isFr && s.nameFr.isNotBlank()) s.nameFr else s.nameAr.ifBlank { s.nameFr }), maxLines = 2)
                             if (remark != null) {
-                                Text(if (isFr) remark.textFr else remark.textAr, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.primary)
+                                Text(RemarkScale.textFor(remark, subject.code), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.primary)
                             }
                         }
                         val mk = marksBy[s.id].orEmpty()

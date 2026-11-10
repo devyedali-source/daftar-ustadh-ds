@@ -136,7 +136,8 @@ object ReportCardPdf {
             cell(c, ln.subject.nameFr, edges[2], y, allCols[1].w, rowH, 8f, align = Layout.Alignment.ALIGN_NORMAL)
             values.forEachIndexed { k, v -> cell(c, v, edges[k + 3], y, allCols[k + 2].w, rowH, 9f, bold = k == values.lastIndex) }
             val remark = RemarkScale.remarkFor(ln.average, info.subjectRemarks)
-            val obs = listOfNotNull(remark?.let { "${it.textAr} - ${it.textFr}" }, ln.teacherName.takeIf { it.isNotBlank() })
+            // ملاحظة المادة بلغة تدريسها وحدها (العربية أو الفرنسية)
+            val obs = listOfNotNull(remark?.let { RemarkScale.textFor(it, ln.subject.code) }, ln.teacherName.takeIf { it.isNotBlank() })
                 .joinToString("\n")
             cell(c, obs, edges[edges.size - 1], y, obsW, rowH, 7f)
             y += rowH

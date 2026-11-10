@@ -24,6 +24,12 @@ object RemarkScale {
         RemarkLevel(18.0, "ممتاز", "Excellent")
     )
 
+    /** المواد التي تُدرَّس بالفرنسية (أو بلغة أجنبية): ملاحظتها بالفرنسية فقط؛ وغيرها بالعربية فقط. */
+    private val FRENCH_TAUGHT = setOf("MATS", "PC", "SN", "FR", "ANG", "TI")
+    fun isFrenchTaught(subjectCode: String) = subjectCode in FRENCH_TAUGHT
+    /** نص ملاحظة المادة بلغة تدريسها. */
+    fun textFor(level: RemarkLevel, subjectCode: String): String = if (isFrenchTaught(subjectCode)) level.textFr else level.textAr
+
     fun remarkFor(avg: Double?, scale: List<RemarkLevel>): RemarkLevel? =
         if (avg == null) null else scale.sortedBy { it.min }.lastOrNull { avg >= it.min }
 

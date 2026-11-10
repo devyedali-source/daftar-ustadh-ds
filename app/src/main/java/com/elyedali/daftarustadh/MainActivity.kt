@@ -293,6 +293,7 @@ class MainActivity : AppCompatActivity() {
                 var ttInitialTab by remember { mutableStateOf<Int?>(null) }
                 var gradesInitialTerm by remember { mutableStateOf(1) }
                 var askTtUnlock by remember { mutableStateOf(false) }
+                var generalRemarksBack by remember { mutableStateOf(Screen.KASHF_SETTINGS) }
                 var recordsSent by remember { mutableStateOf(setOf<String>()) }
                 var printWorking by remember { mutableStateOf(false) }
                 // صفحة المشاركة مع الوراقة: BOOKS دفاتر الإدارة، RECORDS سجلات الأساتذة، TIMETABLES جداول الأساتذة
@@ -1311,7 +1312,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.RESULTS -> BackHandler { screen = Screen.STUDENTS }
                     Screen.STATS -> BackHandler { screen = Screen.HOME }
                     Screen.KASHF_SETTINGS -> BackHandler { screen = Screen.ADMIN_CLASS }
-                    Screen.GENERAL_REMARKS -> BackHandler { screen = Screen.KASHF_SETTINGS }
+                    Screen.GENERAL_REMARKS -> BackHandler { screen = generalRemarksBack }
                     Screen.IMPORT -> BackHandler { screen = importBack }
                     Screen.ADMIN_CLASS, Screen.TEACHER_HUB -> BackHandler { screen = hubBack }
                     Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS, Screen.ABOUT -> BackHandler { screen = Screen.HOME }
@@ -1809,6 +1810,7 @@ class MainActivity : AppCompatActivity() {
                                         missingByTerm = if (students.isEmpty()) mapOf(1 to -1, 2 to -1, 3 to -1).mapValues { 1 } else missing,
                                         onGenerate = { term -> generateKashf(c, term) },
                                         onOpenSettings = { screen = Screen.KASHF_SETTINGS },
+                                        onOpenGeneralRemarks = { generalRemarksBack = screen; screen = Screen.GENERAL_REMARKS },
                                         locked = c.id !in activatedClasses,
                                         onActivate = { activationBack = Screen.ADMIN_CLASS; screen = Screen.ACTIVATION }
                                     )
@@ -2063,7 +2065,7 @@ class MainActivity : AppCompatActivity() {
                                     screen = Screen.ADMIN_CLASS
                                 }
                             },
-                            onEditGeneralRemarks = { screen = Screen.GENERAL_REMARKS },
+                            onEditGeneralRemarks = { generalRemarksBack = Screen.KASHF_SETTINGS; screen = Screen.GENERAL_REMARKS },
                             onBack = { screen = Screen.ADMIN_CLASS }
                         )
                     }
@@ -2074,12 +2076,12 @@ class MainActivity : AppCompatActivity() {
                         onSave = { list, _ ->
                             scope.launch {
                                 metaDao.put(AppMetaEntity(KashfSettings.GENERAL_REMARKS_KEY, RemarkScale.encode(list)))
-                                screen = Screen.KASHF_SETTINGS
+                                screen = generalRemarksBack
                             }
                         },
                         title = stringResource(R.string.general_remarks),
                         defaults = KashfSettings.DEFAULT_GENERAL_REMARKS,
-                        onBack = { screen = Screen.KASHF_SETTINGS }
+                        onBack = { screen = generalRemarksBack }
                     )
 
                     // إعدادات سجل الأستاذ (وضع الأستاذ): ملاحظات المواد حسب المعدل؛ اسمه في «معلوماتي»
