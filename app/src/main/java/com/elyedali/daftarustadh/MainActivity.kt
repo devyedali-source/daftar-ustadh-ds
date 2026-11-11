@@ -1743,9 +1743,11 @@ class MainActivity : AppCompatActivity() {
                         requested = requestedClasses,
                         onRequest = { chosen, total -> scope.launch {
                             val owner = inst
+                            // سنة الأقسام المختارة (قد تكون غير سنة تسجيل المؤسسة)
+                            val reqYear = chosen.firstOrNull()?.schoolYear ?: adminYear ?: owner?.schoolYear.orEmpty()
                             val reqCode = kotlinx.coroutines.withTimeoutOrNull(20_000) {
                                 com.elyedali.daftarustadh.auth.DsSubscriptions.request(
-                                    com.elyedali.daftarustadh.auth.DsSubscriptions.APP_ADMIN, owner, owner?.schoolYear.orEmpty(),
+                                    com.elyedali.daftarustadh.auth.DsSubscriptions.APP_ADMIN, owner, reqYear,
                                     chosen.map { it.id }, chosen.map { it.name }, total)
                             }
                             // الطلب يجب أن يصل إلى الخادم أولًا، وإلا لا يمكن قبوله من لوحة التحكم
@@ -1758,7 +1760,7 @@ class MainActivity : AppCompatActivity() {
                                 if (owner != null) {
                                     append(getString(R.string.act_msg_school, owner.schoolName)).append('\n')
                                     append(getString(R.string.act_msg_wilaya, owner.wilaya)).append('\n')
-                                    append(getString(R.string.act_msg_year, owner.schoolYear)).append('\n')
+                                    append(getString(R.string.act_msg_year, reqYear)).append('\n')
                                 }
                                 append(getString(R.string.act_msg_classes, chosen.size)).append('\n')
                                 chosen.forEach { append("• ${it.name} — ${com.elyedali.daftarustadh.data.ClassActivation.code(it.id)}\n") }
