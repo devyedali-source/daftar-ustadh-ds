@@ -906,4 +906,21 @@
     <string name="inst_unnamed">مؤسسة لم تُسجَّل بعد</string>
     <string name="inst_current">مفتوحة الآن</string>
     <string name="act_expired_grades">🔒 انتهت سنة اشتراك هذا القسم: الكشوف تبقى متاحة، لكن رصد النتائج مقفل. للسنة الجديدة أنشئ أقسامها وفعّلها.</string>
+    <string name="about_version">الإصدار %1$s</string>
+    <string name="about_desc_teacher">دفتر الأستاذ للإعداديات والثانويات: أقسامك ولوائح تلاميذك، رصد النتائج وإرسالها للإدارة، الجدول الزمني، والتخطيط السنوي مع التحاضير ومحتوى السبورة.</string>
+    <string name="about_desc_admin">تطبيق الإدارة للإعداديات والثانويات: الأقسام والتلاميذ، الأساتذة والجدول الزمني، استقبال نتائج الأساتذة، وإنتاج كشوف الدرجات.</string>
+    <string name="about_channel_title">قناة التطبيق على واتساب</string>
+    <string name="about_channel_text">تابع القناة لتصلك أخبار التحديثات والشروحات أولًا بأول.</string>
+    <string name="about_channel_button">فتح قناة الواتساب</string>
+    <string name="about_dev_title">تواصل مع المطوّر</string>
+    <string name="about_dev_text">لديك فكرة ميزة تخدم الإدارة أو الأستاذ؟ راسل المطوّر، فاقتراحاتكم تُدرس وتُضاف مع التحديثات.</string>
+    <string name="about_dev_button">مراسلة المطوّر</string>
+    <string name="about_mail_subject">اقتراح ميزة — %1$s</string>
+    <string name="about_updates_title">تطوير المحتوى مستمر</string>
+    <string name="about_updates_text">المحتوى يُطوَّر باستمرار، ومن القادم مع التحديثات:</string>
+    <string name="about_upd_preps">التحاضير</string>
+    <string name="about_upd_board">محتوى السبورة</string>
+    <string name="about_upd_exercises">سلاسل التمارين</string>
+    <string name="about_upd_refs">المراجع اللازمة</string>
+    <string name="about_no_app">لا يوجد تطبيق على الهاتف لفتح هذا الرابط.</string>
 </resources>

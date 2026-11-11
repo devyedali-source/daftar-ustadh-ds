@@ -482,7 +482,7 @@ private fun ExchangeOfferCard(
                 Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Text("👨‍🏫 " + exchangeRoleLabel(ad.role), fontWeight = FontWeight.Bold, fontSize = 14.sp)
                     if (ad.specialties.isNotEmpty()) Text(
-                        stringResource(R.string.ex_specialty_line, ad.specialties.joinToString("، ") { labels[it] ?: it }),
+                        stringResource(R.string.ex_specialty_line, ad.specialties.joinToString(listSep()) { labels[it] ?: it }),
                         fontSize = 13.sp, fontWeight = FontWeight.SemiBold
                     )
                     if (ad.isMoughataaLevel) Badge("🏛️ " + stringResource(R.string.ex_moughataa_badge), Color(0xFFFFF3E0), Color(0xFFE65100))

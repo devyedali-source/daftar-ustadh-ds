@@ -182,7 +182,7 @@ fun ResultsStatusScreen(
                         }
                     }
                     if (noTeacher.isNotEmpty()) item {
-                        Text(stringResource(R.string.mi_no_teacher, noTeacher.joinToString("، ") { if (isFr) it.nameFr else it.nameAr }),
+                        Text(stringResource(R.string.mi_no_teacher, noTeacher.joinToString(listSep()) { if (isFr) it.nameFr else it.nameAr }),
                             color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
                     }
                 }

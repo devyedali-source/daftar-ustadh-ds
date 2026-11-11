@@ -906,4 +906,21 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="inst_unnamed">Établissement non encore enregistré</string>
     <string name="inst_current">Ouvert actuellement</string>
     <string name="act_expired_grades">🔒 L’année d’abonnement de cette classe est terminée : les bulletins restent disponibles, mais la saisie des notes est verrouillée. Pour la nouvelle année, créez ses classes et activez-les.</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_desc_teacher">Le cahier du professeur pour les collèges et lycées : vos classes et listes d’élèves, la saisie des notes et leur envoi à l’administration, l’emploi du temps, et la planification annuelle avec les préparations et le contenu du tableau.</string>
+    <string name="about_desc_admin">L’application de l’administration pour les collèges et lycées : classes et élèves, professeurs et emploi du temps, réception des notes des professeurs et production des bulletins.</string>
+    <string name="about_channel_title">Chaîne WhatsApp de l’application</string>
+    <string name="about_channel_text">Suivez la chaîne pour recevoir les nouveautés et les tutoriels au fur et à mesure.</string>
+    <string name="about_channel_button">Ouvrir la chaîne WhatsApp</string>
+    <string name="about_dev_title">Contacter le développeur</string>
+    <string name="about_dev_text">Vous avez une idée de fonctionnalité utile à l’administration ou au professeur ? Écrivez au développeur : vos suggestions sont étudiées et ajoutées dans les mises à jour.</string>
+    <string name="about_dev_button">Écrire au développeur</string>
+    <string name="about_mail_subject">Suggestion de fonctionnalité — %1$s</string>
+    <string name="about_updates_title">Le contenu évolue en continu</string>
+    <string name="about_updates_text">Le contenu est enrichi en continu ; prochainement avec les mises à jour :</string>
+    <string name="about_upd_preps">Les préparations</string>
+    <string name="about_upd_board">Le contenu du tableau</string>
+    <string name="about_upd_exercises">Les séries d’exercices</string>
+    <string name="about_upd_refs">Les références nécessaires</string>
+    <string name="about_no_app">Aucune application sur le téléphone pour ouvrir ce lien.</string>
 </resources>

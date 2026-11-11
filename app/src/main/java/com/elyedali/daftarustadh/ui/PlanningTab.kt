@@ -137,7 +137,7 @@ fun PlanningTab(
             }
         }
         if (missing.isNotEmpty()) item {
-            Text(stringResource(R.string.plan_missing, missing.joinToString("، ") { it.second }), fontSize = 12.sp,
+            Text(stringResource(R.string.plan_missing, missing.joinToString(listSep()) { it.second }), fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
         if (subject == null) {

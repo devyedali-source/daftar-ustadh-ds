@@ -162,3 +162,10 @@ fun ContactPhoneButton(onPicked: (String) -> Unit) {
         modifier = Modifier.fillMaxWidth()
     ) { Text("📇 " + androidx.compose.ui.res.stringResource(com.elyedali.daftarustadh.R.string.contact_pick)) }
 }
+
+/** فاصل القوائم حسب لغة التطبيق: «، » بالعربية و«, » بالفرنسية. */
+fun listSep(): String {
+    val lang = androidx.appcompat.app.AppCompatDelegate.getApplicationLocales().get(0)?.language
+        ?: java.util.Locale.getDefault().language
+    return if (lang == "fr") ", " else "، "
+}

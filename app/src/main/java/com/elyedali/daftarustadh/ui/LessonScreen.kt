@@ -96,7 +96,7 @@ fun LessonDialog(
                 Row(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.primary).padding(horizontal = 8.dp, vertical = 10.dp),
                     verticalAlignment = Alignment.CenterVertically) {
                     TextButton(onClick = { if (view != 0) view = 0 else onDismiss() }) {
-                        Text(if (ltr) "←" else "→", color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.Black)
+                        Text(if (androidx.compose.ui.platform.LocalLayoutDirection.current == androidx.compose.ui.unit.LayoutDirection.Ltr) "←" else "→", color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.Black)
                     }
                     Column(Modifier.weight(1f)) {
                         Text(lesson.title, color = Color.White, fontWeight = FontWeight.Black, fontSize = 17.sp, maxLines = 2)

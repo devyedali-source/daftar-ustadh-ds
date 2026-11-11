@@ -160,10 +160,10 @@ fun StatsScreen(
                                     Row(verticalAlignment = Alignment.CenterVertically) {
                                         Column(Modifier.weight(1f)) {
                                             Text(t.name, style = MaterialTheme.typography.titleMedium)
-                                            Text(subs.joinToString("، ") { subjectLabel(it) }, style = MaterialTheme.typography.bodySmall,
+                                            Text(subs.joinToString(listSep()) { subjectLabel(it) }, style = MaterialTheme.typography.bodySmall,
                                                 color = MaterialTheme.colorScheme.onSurfaceVariant)
                                             if (tPick != null && mine.isNotEmpty())
-                                                Text(mine.map { className[it.classId] ?: "" }.distinct().sorted().joinToString("، "),
+                                                Text(mine.map { className[it.classId] ?: "" }.distinct().sorted().joinToString(listSep()),
                                                     style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                                         }
                                         Num(mine.map { it.classId }.distinct().size.toString(), stringResource(R.string.stat_classes), MaterialTheme.colorScheme.secondary)
@@ -176,7 +176,7 @@ fun StatsScreen(
                                     Row(verticalAlignment = Alignment.CenterVertically) {
                                         Column(Modifier.weight(1f)) {
                                             Text(subjectLabel(code), style = MaterialTheme.typography.titleMedium)
-                                            Text(names.sorted().joinToString("، "), style = MaterialTheme.typography.bodySmall,
+                                            Text(names.sorted().joinToString(listSep()), style = MaterialTheme.typography.bodySmall,
                                                 color = MaterialTheme.colorScheme.onSurfaceVariant)
                                         }
                                         Num(names.size.toString(), stringResource(R.string.stat_teachers), MaterialTheme.colorScheme.secondary)

@@ -495,7 +495,7 @@ class MainActivity : AppCompatActivity() {
                             all.firstOrNull { it.code == (examSubject ?: mineCodes.singleOrNull()) } else null
                         val stamp = listOf(name) +
                             (if (subjects.isEmpty()) emptyList() else listOf(
-                                "أستاذ مادة: " + subjects.joinToString("، ") { it.nameAr },
+                                "أستاذ مادة: " + subjects.joinToString(com.elyedali.daftarustadh.ui.listSep()) { it.nameAr },
                                 "Professeur de : " + subjects.joinToString(", ") { it.nameFr }
                             ))
                         val info = DocumentPdf.Info(
@@ -725,7 +725,7 @@ class MainActivity : AppCompatActivity() {
                             append(getString(R.string.tt_result_ok, newSlots.size, result.teacherGaps))
                             if (result.unplaced.isNotEmpty()) {
                                 append('\n').append(getString(R.string.tt_result_unplaced,
-                                    result.unplaced.joinToString("، ") { "${names[it.classId]} ${subjectName(it.subjectCode)} (${it.hours})" }))
+                                    result.unplaced.joinToString(com.elyedali.daftarustadh.ui.listSep()) { "${names[it.classId]} ${subjectName(it.subjectCode)} (${it.hours})" }))
                             }
                         }
                         ttGenerating = false
@@ -881,7 +881,7 @@ class MainActivity : AppCompatActivity() {
                     // مواد بلا أستاذ: سطر لكل مادة مع أقسامها
                     ttManagedSlots.filter { it.teacherName.isBlank() }.groupBy { it.subjectCode }.forEach { (code, l) ->
                         val names = l.map { it.classId }.distinct().mapNotNull { id -> managedClasses.firstOrNull { it.id == id } }
-                            .sortedWith(compareBy({ it.levelCode }, { it.number })).joinToString("، ") { it.name }
+                            .sortedWith(compareBy({ it.levelCode }, { it.number })).joinToString(com.elyedali.daftarustadh.ui.listSep()) { it.name }
                         out += getString(R.string.tt_pb_no_teacher, subjectName(code), names)
                     }
                     // أستاذ في قسمين في نفس الحصة
@@ -1038,8 +1038,8 @@ class MainActivity : AppCompatActivity() {
                                         screen = Screen.HOME
                                     }
                                     FileResult.Message(
-                                        getString(R.string.sr_received, any.schoolName, out.saved.joinToString("، "), out.subjects, out.periods) +
-                                            if (out.conflicts.isEmpty()) "" else "\n\n" + getString(R.string.sr_received_conflicts, out.conflicts.joinToString("، "))
+                                        getString(R.string.sr_received, any.schoolName, out.saved.joinToString(com.elyedali.daftarustadh.ui.listSep()), out.subjects, out.periods) +
+                                            if (out.conflicts.isEmpty()) "" else "\n\n" + getString(R.string.sr_received_conflicts, out.conflicts.joinToString(com.elyedali.daftarustadh.ui.listSep()))
                                     )
                                 }
                                 is ClassFile -> { importedYear = any.schoolClass.schoolYear; FileResult.Done(importer.save(any)) }
@@ -1155,7 +1155,7 @@ class MainActivity : AppCompatActivity() {
                                 val n = sts.count { st -> !GradeMath.isComplete(term, g[sub.code]?.get(st.id).orEmpty()) }
                                 if (n > 0) "${if (isFrUi) sub.nameFr else sub.nameAr} (${getString(R.string.bu_missing_n, n)})" else null
                             }
-                            if (parts.isNotEmpty() && sts.isNotEmpty()) missing += "${c.name}: " + parts.joinToString("، ")
+                            if (parts.isNotEmpty() && sts.isNotEmpty()) missing += "${c.name}: " + parts.joinToString(com.elyedali.daftarustadh.ui.listSep())
                         }
                         batchWorking = false
                         if (older > 0) warnings += getString(R.string.record_older_skipped, older)
@@ -1215,7 +1215,7 @@ class MainActivity : AppCompatActivity() {
                         )
                         val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeBundle(bundle) }
                         val caption = getString(R.string.sr_caption, t.name, owner.schoolName,
-                            classes.joinToString("، ") { c -> c.name + " (" + mine.filter { it.classId == c.id }.joinToString("، ") { subjectName(it.subjectCode) } + ")" })
+                            classes.joinToString(com.elyedali.daftarustadh.ui.listSep()) { c -> c.name + " (" + mine.filter { it.classId == c.id }.joinToString(com.elyedali.daftarustadh.ui.listSep()) { subjectName(it.subjectCode) } + ")" })
                             // رابط تحميل تطبيق الأستاذ مع الملف (حين يُحدَّد)
                             .let { cap -> if (com.elyedali.daftarustadh.AppRole.TEACHER_APP_LINK.isBlank()) cap
                                 else cap + "\n\n" + getString(R.string.sr_app_link, com.elyedali.daftarustadh.AppRole.TEACHER_APP_LINK) }
@@ -1572,7 +1572,7 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     screen == Screen.PRINT_SHOP -> {
-                        val noStudents = classesWithoutStudents.joinToString("، ") { it.name }
+                        val noStudents = classesWithoutStudents.joinToString(com.elyedali.daftarustadh.ui.listSep()) { it.name }
                         val n = managedClasses.size
                         com.elyedali.daftarustadh.ui.PrintShopScreen(
                             title = getString(when (printKind) { "RECORDS" -> R.string.ps_records_title; "TIMETABLES" -> R.string.ps_timetables_title; else -> R.string.ps_books_title }),
@@ -1612,7 +1612,7 @@ class MainActivity : AppCompatActivity() {
                         blockers = buildList {
                             if (!ttApproved) add(getString(R.string.sr_block_timetable))
                             if (classesWithoutStudents.isNotEmpty())
-                                add(getString(R.string.sr_block_students, classesWithoutStudents.joinToString("، ") { it.name }))
+                                add(getString(R.string.sr_block_students, classesWithoutStudents.joinToString(com.elyedali.daftarustadh.ui.listSep()) { it.name }))
                         },
                         onOpenTimetable = { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.SHARE_RECORDS; screen = Screen.TIMETABLE },
                         onSend = { sendTeacherRecords(it) },
@@ -1700,20 +1700,7 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     // صفحة «حول التطبيق»: تُجهَّز لاحقًا
-                    screen == Screen.ABOUT -> androidx.compose.material3.Surface(Modifier.fillMaxSize(),
-                        color = androidx.compose.material3.MaterialTheme.colorScheme.background) {
-                        androidx.compose.foundation.layout.Column(Modifier.fillMaxSize().padding(16.dp),
-                            verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(16.dp)) {
-                            com.elyedali.daftarustadh.ui.ScreenHeader(stringResource(R.string.menu_about), { screen = Screen.HOME })
-                            Text(stringResource(R.string.app_name), fontWeight = androidx.compose.ui.text.font.FontWeight.Black,
-                                fontSize = 20.sp, modifier = Modifier.fillMaxWidth(), textAlign = androidx.compose.ui.text.style.TextAlign.Center)
-                            Text(stringResource(R.string.about_soon), modifier = Modifier.fillMaxWidth(),
-                                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
-                                color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant)
-                            Text(stringResource(R.string.drawer_footer), modifier = Modifier.fillMaxWidth(), fontSize = 11.sp,
-                                textAlign = androidx.compose.ui.text.style.TextAlign.Center, color = androidx.compose.ui.graphics.Color.Gray)
-                        }
-                    }
+                    screen == Screen.ABOUT -> com.elyedali.daftarustadh.ui.AboutScreen(onBack = { screen = Screen.HOME })
 
                     screen == Screen.LEGISLATION -> com.elyedali.daftarustadh.ui.LegislationScreen(
                         title = stringResource(R.string.menu_legislation),
@@ -2538,7 +2525,7 @@ class MainActivity : AppCompatActivity() {
                                 Text(
                                     if (started == 0) stringResource(R.string.send_blocked_empty)
                                     else stringResource(R.string.send_blocked_list, started, incomplete.size,
-                                        incomplete.sortedBy { it.rollNumber }.take(15).joinToString("، ") { "${it.rollNumber}. ${it.nameAr.ifBlank { it.nameFr }}" } +
+                                        incomplete.sortedBy { it.rollNumber }.take(15).joinToString(com.elyedali.daftarustadh.ui.listSep()) { "${it.rollNumber}. ${it.nameAr.ifBlank { it.nameFr }}" } +
                                             if (incomplete.size > 15) " …" else "")
                                 )
                             },
@@ -2606,9 +2593,9 @@ class MainActivity : AppCompatActivity() {
                                 else if (chk.classByName) Text(stringResource(R.string.record_by_name), color = androidx.compose.ui.graphics.Color(0xFFE65100))
                                 if (chk.byRoll > 0) Text(stringResource(R.string.record_by_roll, chk.byRoll), color = androidx.compose.ui.graphics.Color(0xFFE65100))
                                 if (chk.unknownStudents.isNotEmpty())
-                                    Text(stringResource(R.string.record_unknown, chk.unknownStudents.joinToString("، ")), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
+                                    Text(stringResource(R.string.record_unknown, chk.unknownStudents.joinToString(com.elyedali.daftarustadh.ui.listSep())), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 if (chk.missingStudents.isNotEmpty())
-                                    Text(stringResource(R.string.record_missing, chk.missingStudents.joinToString("، ")), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
+                                    Text(stringResource(R.string.record_missing, chk.missingStudents.joinToString(com.elyedali.daftarustadh.ui.listSep())), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
                                 if (chk.alreadyUploaded != null || chk.hasGrades)
                                     Text(stringResource(R.string.record_replace))
                             }
@@ -2716,7 +2703,7 @@ class MainActivity : AppCompatActivity() {
                                         is com.elyedali.daftarustadh.transfer.AdminFullFile.Outcome.Done -> {
                                             screen = Screen.HOME
                                             FileResult.Message(getString(R.string.af_done, out.classes, out.students, out.grades) +
-                                                if (out.merged.isEmpty()) "" else "\n" + getString(R.string.af_merged, out.merged.joinToString("، ")))
+                                                if (out.merged.isEmpty()) "" else "\n" + getString(R.string.af_merged, out.merged.joinToString(com.elyedali.daftarustadh.ui.listSep())))
                                         }
                                         is com.elyedali.daftarustadh.transfer.AdminFullFile.Outcome.OtherInstitution ->
                                             FileResult.Message(getString(R.string.af_other_school, out.schoolName))

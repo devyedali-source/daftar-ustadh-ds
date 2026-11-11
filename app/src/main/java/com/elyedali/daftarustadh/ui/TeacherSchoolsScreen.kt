@@ -107,7 +107,7 @@ fun TeacherSchoolsScreen(
                                                 fontWeight = FontWeight.Bold,
                                                 color = if (sc.self) Color(0xFFB26A00) else Color(0xFF2E7D32))
                                             Text(if (sc.classes.isEmpty()) stringResource(R.string.ts_no_classes_yet)
-                                                else stringResource(R.string.ts_classes, sc.classes.joinToString("، ")), fontSize = 12.sp,
+                                                else stringResource(R.string.ts_classes, sc.classes.joinToString(listSep())), fontSize = 12.sp,
                                                 color = MaterialTheme.colorScheme.onSurfaceVariant)
                                         }
                                     }

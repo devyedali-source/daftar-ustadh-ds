@@ -514,7 +514,7 @@ private fun TermProgressCard(progress: List<TeacherTermProgress>, onUpload: (Int
                         modifier = Modifier.fillMaxWidth().height(6.dp), color = color,
                         trackColor = MaterialTheme.colorScheme.surfaceVariant)
                     if (p.completed.isNotEmpty() && !done)
-                        Text(stringResource(R.string.tprog_done_list, p.completed.joinToString("، ")), fontSize = 11.sp,
+                        Text(stringResource(R.string.tprog_done_list, p.completed.joinToString(listSep())), fontSize = 11.sp,
                             color = MaterialTheme.colorScheme.onSurfaceVariant)
                     if (done) Button(onClick = { onUpload(p.term) }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp),
                         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2E7D32), contentColor = Color.White)) {

@@ -219,10 +219,10 @@ fun QuickGradesScreen(
                 }
                 if (ready) item { Text(stringResource(R.string.qg_table_hint), fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
                 if (invalid.isNotEmpty()) item {
-                    Text(stringResource(R.string.qg_invalid, invalid.sorted().joinToString("، ")), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
+                    Text(stringResource(R.string.qg_invalid, invalid.sorted().joinToString(listSep())), color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
                 }
                 if (values.isNotEmpty() && missing.isNotEmpty()) item {
-                    Text(stringResource(R.string.qg_missing, missing.joinToString("، ") { "${it.rollNumber}" }), fontSize = 12.sp,
+                    Text(stringResource(R.string.qg_missing, missing.joinToString(listSep()) { "${it.rollNumber}" }), fontSize = 12.sp,
                         color = Color(0xFFE65100))
                 }
                 if (ready) item {

@@ -123,7 +123,7 @@ fun ShareRecordsScreen(
                                 Text(stringResource(R.string.sr_no_classes), fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
                             } else {
                                 byClass.forEach { (cid, list) ->
-                                    Text("• ${classNames[cid]}: " + list.joinToString("، ") { subjectLabel(it.subjectCode) },
+                                    Text("• ${classNames[cid]}: " + list.joinToString(listSep()) { subjectLabel(it.subjectCode) },
                                         fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                                 }
                             }

@@ -195,7 +195,7 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
                                 Text("👤 ${r.name.ifBlank { "—" }} • ${r.email}", fontSize = 12.5.sp)
                                 if (isAdmin) Text("🏛️ ${r.institutionName} — ${r.wilaya}", fontSize = 12.5.sp)
                                 Text("📅 ${r.schoolYear}", fontSize = 12.5.sp)
-                                if (r.classNames.isNotEmpty()) Text("📚 " + stringResource(R.string.op_classes, r.classNames.size) + ": " + r.classNames.joinToString("، "), fontSize = 12.sp)
+                                if (r.classNames.isNotEmpty()) Text("📚 " + stringResource(R.string.op_classes, r.classNames.size) + ": " + r.classNames.joinToString(listSep()), fontSize = 12.sp)
                                 Text("💰 " + stringResource(R.string.op_year_amount, r.amount) + "   🕒 " + date(r.createdAt), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                                 if (r.status == "pending") Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 4.dp)) {
                                     Button(onClick = { confirm = r to true }, enabled = !busy, modifier = Modifier.weight(1f),

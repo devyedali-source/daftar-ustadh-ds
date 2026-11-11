@@ -245,7 +245,7 @@ fun AbsenceTab(
                             color = if (absent.isEmpty()) PresentGreen else AbsentRed, fontWeight = FontWeight.Bold, fontSize = 13.sp
                         )
                         if (absent.isNotEmpty()) Text(
-                            absent.mapNotNull { names[it.studentId] }.joinToString("، "),
+                            absent.mapNotNull { names[it.studentId] }.joinToString(listSep()),
                             fontSize = 12.sp, maxLines = 2, overflow = TextOverflow.Ellipsis,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )

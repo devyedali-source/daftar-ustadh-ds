@@ -258,7 +258,7 @@ private fun EntryTab(
                     isError = unknown.isNotEmpty(),
                     modifier = Modifier.fillMaxWidth()
                 )
-                if (unknown.isNotEmpty()) Text(stringResource(R.string.ac_unknown, unknown.joinToString("، ")),
+                if (unknown.isNotEmpty()) Text(stringResource(R.string.ac_unknown, unknown.joinToString(listSep())),
                     color = MaterialTheme.colorScheme.error, fontSize = 12.sp)
             } }
             item {

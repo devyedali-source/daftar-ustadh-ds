@@ -407,14 +407,14 @@ private fun TeacherListPane(
                             color = if (hours > t.maxHours) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.secondary)
                         TextButton(onClick = { deleting = i }) { Text("🗑️") }
                     }
-                    Text(t.subjects.joinToString("، ") { subjectLabel(it) }, fontSize = 12.sp, color = MaterialTheme.colorScheme.primary)
-                    if (t.extra.isNotEmpty()) Text(stringResource(R.string.tt_can_teach, t.extra.joinToString("، ") { subjectLabel(it) }),
+                    Text(t.subjects.joinToString(listSep()) { subjectLabel(it) }, fontSize = 12.sp, color = MaterialTheme.colorScheme.primary)
+                    if (t.extra.isNotEmpty()) Text(stringResource(R.string.tt_can_teach, t.extra.joinToString(listSep()) { subjectLabel(it) }),
                         fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     if (t.phone.isNotBlank()) Text("🟢 " + com.elyedali.daftarustadh.exchange.ExchangeAd.localPhone(t.phone), fontSize = 11.sp,
                         color = MaterialTheme.colorScheme.onSurfaceVariant)
                     if (mine.isNotEmpty()) Text(
                         mine.groupBy { it.subjectCode }.entries.joinToString(" — ") { (code, l) ->
-                            subjectLabel(code) + ": " + l.mapNotNull { classNames[it.classId] }.sorted().joinToString("، ")
+                            subjectLabel(code) + ": " + l.mapNotNull { classNames[it.classId] }.sorted().joinToString(listSep())
                         },
                         fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -422,7 +422,7 @@ private fun TeacherListPane(
             }
         }
         if (uncovered.isNotEmpty() && teachers.isNotEmpty()) item {
-            Text(stringResource(R.string.tt_uncovered, uncovered.joinToString("، ") { subjectLabel(it) }), fontSize = 12.sp,
+            Text(stringResource(R.string.tt_uncovered, uncovered.joinToString(listSep()) { subjectLabel(it) }), fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.error)
         }
     }
