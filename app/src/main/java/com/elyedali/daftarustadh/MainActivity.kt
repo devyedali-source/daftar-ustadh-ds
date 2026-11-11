@@ -189,6 +189,13 @@ class MainActivity : AppCompatActivity() {
 
         setContent {
             DaftarTheme {
+                // الدخول بحساب Google أولًا (مرة واحدة؛ يبقى الحساب محفوظًا ويعمل التطبيق بعدها بلا إنترنت)
+                var signedIn by remember { mutableStateOf(com.elyedali.daftarustadh.auth.DsAuth.user) }
+                if (signedIn == null) {
+                    com.elyedali.daftarustadh.ui.LoginScreen(onSignedIn = { signedIn = it })
+                    return@DaftarTheme
+                }
+                LaunchedEffect(signedIn?.uid) { signedIn?.let { com.elyedali.daftarustadh.auth.DsAuth.registerUser(it) } }
                 val scope = rememberCoroutineScope()
                 val institution by institutionDao.observe().collectAsState(initial = null)
                 val institutions by institutionDao.observeAll().collectAsState(initial = emptyList())
@@ -1340,7 +1347,7 @@ class MainActivity : AppCompatActivity() {
                                 when (key) {
                                     "HOME" -> { selectedYear = null; teacherSchool = null; screen = Screen.HOME }
                                     "SYNC" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_sync_later), android.widget.Toast.LENGTH_LONG).show()
-                                    "LOGOUT" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_logout_later), android.widget.Toast.LENGTH_LONG).show()
+                                    "LOGOUT" -> { com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null }
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                     "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
                                     "EXCHANGES" -> screen = Screen.EXCHANGES

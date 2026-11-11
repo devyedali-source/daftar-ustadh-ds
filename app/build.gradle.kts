@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.devtools.ksp")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -106,6 +107,13 @@ dependencies {
 
     // تدوير صور الطلاب حسب اتجاه الكاميرا
     implementation("androidx.exifinterface:exifinterface:1.3.7")
+
+    // الخادم: الدخول بحساب Google وقاعدة البيانات (مشروع Firebase خاص بـ DS)
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
 
     // أمثلة الكشوف (اختبار على المحاكي فقط، لا يدخل في التطبيق)
     androidTestImplementation("androidx.test.ext:junit:1.2.1")

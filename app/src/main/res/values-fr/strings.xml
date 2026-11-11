@@ -236,6 +236,9 @@
     <string name="rf_state_done">complet</string>
     <string name="rf_state_partial">incomplet %1$d / %2$d</string>
     <string name="rf_state_missing">non reçu</string>
+    <string name="login_google">Se connecter avec Google</string>
+    <string name="login_hint">Connectez-vous avec Google pour activer et conserver votre abonnement. Ensuite, l\'application fonctionne sans Internet.</string>
+    <string name="login_failed">Connexion impossible. Vérifiez Internet puis réessayez.</string>
     <string name="menu_about">À propos de l\'application</string>
     <string name="about_soon">Cette page sera bientôt prête.</string>
     <string name="menu_books">Mes livres</string>
