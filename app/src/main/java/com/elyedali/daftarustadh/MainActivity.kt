@@ -97,6 +97,7 @@ import com.elyedali.daftarustadh.ui.TeacherClassScreen
 import com.elyedali.daftarustadh.ui.TeachingClassesScreen
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.UUID
@@ -434,19 +435,22 @@ class MainActivity : AppCompatActivity() {
                         activationBack = screen; screen = Screen.ACTIVATION
                         return
                     }
-                    // لا كشف قبل اكتمال النتائج (حماية إضافية لما يعرضه التبويب)
-                    val subjectsNow = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
-                    if (students.isEmpty() || com.elyedali.daftarustadh.report.ReportCalc.missing(term, subjectsNow, students, classGrades).isNotEmpty()) {
-                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.kashf_blocked), android.widget.Toast.LENGTH_LONG).show()
-                        return
-                    }
                     scope.launch {
+                        // بيانات القسم المطلوب نفسه من القاعدة (قد يُطلب كشفه من صفحة متابعة السجلات وهو غير القسم المفتوح)
                         val owner = institutionDao.getById(c.institutionId) ?: return@launch
                         val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
                         val list = studentDao.listByClass(c.id)
+                        val cGrades = gradeDao.listClasses(listOf(c.id))
+                        val cRecords = gradeDao.observeRecords(c.id).first()
+                        val cMine = gradeDao.listTeacherSubjects(c.id)
+                        // لا كشف قبل اكتمال النتائج
+                        if (list.isEmpty() || com.elyedali.daftarustadh.report.ReportCalc.missing(term, subjects, list, cGrades).isNotEmpty()) {
+                            android.widget.Toast.makeText(this@MainActivity, getString(R.string.kashf_blocked), android.widget.Toast.LENGTH_LONG).show()
+                            return@launch
+                        }
                         val reports = ReportCalc.build(
-                            term, subjects, list, classGrades, records,
-                            mySubjects.associate { it.subjectCode to it.testsMode }
+                            term, subjects, list, cGrades, cRecords,
+                            cMine.associate { it.subjectCode to it.testsMode }
                         )
                         val info = ReportCardPdf.Info(
                             schoolYear = c.schoolYear,
@@ -546,7 +550,8 @@ class MainActivity : AppCompatActivity() {
                         val g = gradeDao.listSubject(c.id, code).filter { gr ->
                             val t = GradeSlot.testTerm(gr.slot) ?: gr.slot.drop(1).toIntOrNull() ?: 0
                             uptoTerm == null || t <= uptoTerm }
-                        val mode = mySubjects.firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE
+                        // اختيار الأستاذ (معدل الاختبارات أو أفضلها) لهذا القسم نفسه، لا للقسم المفتوح
+                        val mode = gradeDao.listTeacherSubjects(c.id).firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE
                         val record = RecordFile(
                             institutionId = owner.id, wilaya = owner.wilaya, schoolName = owner.schoolName,
                             schoolListId = owner.schoolListId, classId = c.id, schoolYear = c.schoolYear,
