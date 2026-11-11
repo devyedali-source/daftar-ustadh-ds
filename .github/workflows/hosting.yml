@@ -1,8 +1,11 @@
 name: نشر موقع دفتر الأستاذ (daftar-ustadh.web.app)
 
-# يُشغَّل يدويًا فقط (لا علاقة له ببناء التطبيق)
+# يُشغَّل فقط عند تعديل ملفات الموقع (لا علاقة له ببناء التطبيق)
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'hosting/**'
 
 jobs:
   deploy:
