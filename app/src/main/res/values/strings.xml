@@ -443,6 +443,8 @@
     <string name="act_msg_wilaya">الولاية: %1$s</string>
     <string name="act_msg_year">السنة الدراسية: %1$s</string>
     <string name="act_msg_classes">الأقسام (%1$d):</string>
+    <string name="act_msg_account">الحساب: %1$s</string>
+    <string name="act_msg_request">رمز الطلب: %1$s</string>
     <string name="act_msg_total">المبلغ: %1$d أوقية جديدة</string>
     <string name="day_0">الاثنين</string>
     <string name="day_1">الثلاثاء</string>

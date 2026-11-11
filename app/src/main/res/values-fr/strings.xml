@@ -443,6 +443,8 @@
     <string name="act_msg_wilaya">Wilaya : %1$s</string>
     <string name="act_msg_year">Année scolaire : %1$s</string>
     <string name="act_msg_classes">Classes (%1$d) :</string>
+    <string name="act_msg_account">Compte : %1$s</string>
+    <string name="act_msg_request">Code de la demande : %1$s</string>
     <string name="act_msg_total">Montant : %1$d MRU</string>
     <string name="day_0">Lundi</string>
     <string name="day_1">Mardi</string>

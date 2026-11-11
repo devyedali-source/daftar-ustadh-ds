@@ -195,7 +195,15 @@ class MainActivity : AppCompatActivity() {
                     com.elyedali.daftarustadh.ui.LoginScreen(onSignedIn = { signedIn = it })
                     return@DaftarTheme
                 }
-                LaunchedEffect(signedIn?.uid) { signedIn?.let { com.elyedali.daftarustadh.auth.DsAuth.registerUser(it) } }
+                LaunchedEffect(signedIn?.uid) {
+                    val me = signedIn ?: return@LaunchedEffect
+                    com.elyedali.daftarustadh.auth.TrustedClock.init(this@MainActivity)
+                    // الاشتراكات المحفوظة تُطبّق فورًا (بلا إنترنت)، ثم تُحدَّث من الخادم
+                    com.elyedali.daftarustadh.auth.DsSubscriptions.apply(db)
+                    com.elyedali.daftarustadh.auth.DsAuth.registerUser(me)
+                    withContext(Dispatchers.IO) { com.elyedali.daftarustadh.auth.TrustedClock.syncWithServer() }
+                    com.elyedali.daftarustadh.auth.DsSubscriptions.refresh(db)
+                }
                 val scope = rememberCoroutineScope()
                 val institution by institutionDao.observe().collectAsState(initial = null)
                 val institutions by institutionDao.observeAll().collectAsState(initial = emptyList())
@@ -1664,8 +1672,13 @@ class MainActivity : AppCompatActivity() {
                         classes = managedClasses.sortedBy { it.name },
                         activated = activatedClasses,
                         requested = requestedClasses,
-                        onRequest = { chosen, total ->
+                        onRequest = { chosen, total -> scope.launch {
                             val owner = inst
+                            val reqCode = kotlinx.coroutines.withTimeoutOrNull(10_000) {
+                                com.elyedali.daftarustadh.auth.DsSubscriptions.request(
+                                    com.elyedali.daftarustadh.auth.DsSubscriptions.APP_ADMIN, owner, owner?.schoolYear.orEmpty(),
+                                    chosen.map { it.id }, chosen.map { it.name }, total)
+                            }
                             val msg = buildString {
                                 append(getString(R.string.act_msg_intro)).append('\n')
                                 if (owner != null) {
@@ -1675,19 +1688,19 @@ class MainActivity : AppCompatActivity() {
                                 }
                                 append(getString(R.string.act_msg_classes, chosen.size)).append('\n')
                                 chosen.forEach { append("• ${it.name} — ${com.elyedali.daftarustadh.data.ClassActivation.code(it.id)}\n") }
-                                append(getString(R.string.act_msg_total, total))
+                                append(getString(R.string.act_msg_total, total)).append('\n')
+                                append(getString(R.string.act_msg_account, signedIn?.email.orEmpty()))
+                                if (reqCode != null) append('\n').append(getString(R.string.act_msg_request, reqCode))
                             }
                             val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                             try {
                                 startActivity(Intent(Intent.ACTION_VIEW, uri))
-                                scope.launch {
-                                    metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY,
-                                        com.elyedali.daftarustadh.data.ClassActivation.encode(requestedClasses + chosen.map { it.id })))
-                                }
+                                metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY,
+                                    com.elyedali.daftarustadh.data.ClassActivation.encode(requestedClasses + chosen.map { it.id })))
                             } catch (e: Exception) {
                                 android.widget.Toast.makeText(this@MainActivity, getString(R.string.ex_no_whatsapp), android.widget.Toast.LENGTH_SHORT).show()
                             }
-                        },
+                        } },
                         onBack = { screen = activationBack }
                     )
 
@@ -2278,7 +2291,15 @@ class MainActivity : AppCompatActivity() {
                                 teacherActivateYear = null
                                 scope.launch {
                                     val code = metaDao.get(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY) ?: com.elyedali.daftarustadh.data.TeacherActivation.newCode().also { metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY, it)) }
-                                    val msg = getString(R.string.tact_msg, (teacherProfile?.name ?: teacherName).orEmpty(), year, code, com.elyedali.daftarustadh.data.TeacherActivation.PRICE)
+                                    val tName = (teacherProfile?.name ?: teacherName).orEmpty()
+                                    val reqCode = kotlinx.coroutines.withTimeoutOrNull(10_000) {
+                                        com.elyedali.daftarustadh.auth.DsSubscriptions.request(
+                                            com.elyedali.daftarustadh.auth.DsSubscriptions.APP_TEACHER, null, year,
+                                            emptyList(), emptyList(), com.elyedali.daftarustadh.data.TeacherActivation.PRICE, tName)
+                                    }
+                                    val msg = getString(R.string.tact_msg, tName, year, code, com.elyedali.daftarustadh.data.TeacherActivation.PRICE) +
+                                        "\n" + getString(R.string.act_msg_account, signedIn?.email.orEmpty()) +
+                                        (reqCode?.let { "\n" + getString(R.string.act_msg_request, it) } ?: "")
                                     val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                                     try {
                                         startActivity(Intent(Intent.ACTION_VIEW, uri))
