@@ -2,38 +2,16 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>تفعيل — دفتر الأستاذ DS</title>
-<style>
-  :root{--g:#1B5E20;--g2:#2E7D32;--bg:#F1F8E9}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:#1a1a1a;
-       display:flex;min-height:100vh;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
-  .card{background:#fff;border-radius:18px;padding:26px 20px;max-width:420px;width:100%;text-align:center;box-shadow:0 4px 18px rgba(0,0,0,.08)}
-  h1{color:var(--g);font-size:22px;margin:6px 0 4px}
-  .code{font-size:26px;font-weight:800;letter-spacing:2px;color:var(--g2);background:var(--bg);border-radius:12px;padding:10px;margin:14px 0}
-  a.btn{display:block;text-decoration:none;color:#fff;background:var(--g2);border-radius:12px;padding:14px;margin:10px 0;font-weight:700}
-  a.btn.o{background:#1565C0}
-  p{line-height:1.8;color:#555;font-size:14px}
-</style>
+<meta name="robots" content="noindex">
+<title>دفتر الأستاذ DS</title>
+<style>body{margin:0;background:#fff}</style>
 </head>
 <body>
-<div class="card">
-  <div style="font-size:42px">👑</div>
-  <h1 id="t">طلب تفعيل</h1>
-  <div class="code" id="c">—</div>
-  <a class="btn" id="admin">فتح في تطبيق «إدارة DS»</a>
-  <a class="btn o" id="teacher">فتح في «دفتر الأستاذ DS»</a>
-  <p>هذا الرابط خاص بلوحة التحكم لصاحب التطبيق.</p>
-</div>
 <script>
-  var q = new URLSearchParams(location.search);
-  var r = q.get('r'), e = q.get('e');
-  var id = r || e || '';
-  if (e) document.getElementById('t').textContent = 'تفعيل إعلان تبادل';
-  document.getElementById('c').textContent = id ? id.substring(0, r ? 6 : 8).toUpperCase() : '—';
+  // صفحة فارغة: الرابط يُفتح مباشرة في التطبيق (لوحة تحكم صاحب التطبيق). إن وصل إلى المتصفح يُحوَّل إلى التطبيق دون عرض أي شيء.
   var path = 'daftar-ustadh.web.app/ds-activate' + location.search;
-  function intent(pkg){ return 'intent://' + path + '#Intent;scheme=https;package=' + pkg + ';end'; }
-  document.getElementById('admin').href = intent('com.elyedali.daftarustadh');
-  document.getElementById('teacher').href = intent('com.elyedali.daftarustadh.teacher');
+  location.replace('intent://' + path + '#Intent;scheme=https;package=com.elyedali.daftarustadh;S.browser_fallback_url=' +
+    encodeURIComponent('intent://' + path + '#Intent;scheme=https;package=com.elyedali.daftarustadh.teacher;end') + ';end');
 </script>
 </body>
 </html>
