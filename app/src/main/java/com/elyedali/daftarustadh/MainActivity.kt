@@ -201,7 +201,7 @@ class MainActivity : AppCompatActivity() {
                     // الاشتراكات المحفوظة تُطبّق فورًا (بلا إنترنت)، ثم تُحدَّث من الخادم
                     com.elyedali.daftarustadh.auth.DsSubscriptions.apply(db)
                     // حساب آخر على نفس الهاتف: لا تختلط البيانات
-                    if (com.elyedali.daftarustadh.sync.DriveSync.prepareAccount(this@MainActivity, db)) { recreate(); return@LaunchedEffect }
+                    if (com.elyedali.daftarustadh.sync.DriveSync.prepareAccount(this@MainActivity, db)) { restartFresh(); return@LaunchedEffect }
                     // بيانات تجريبية لحساب صاحب التطبيق فقط
                     withContext(Dispatchers.IO) {
                         // غير صاحب التطبيق: لا تبقى عنده أي بيانات تجريبية، فقط ما سجّله هو
@@ -285,7 +285,7 @@ class MainActivity : AppCompatActivity() {
                             if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
                                 kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
                             DaftarDatabase.switchTo(this@MainActivity, key)
-                            recreate()
+                            restartFresh()
                         }
                     },
                     onCreate = {
@@ -294,7 +294,7 @@ class MainActivity : AppCompatActivity() {
                             if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
                                 kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
                             DaftarDatabase.switchTo(this@MainActivity, com.elyedali.daftarustadh.data.Institutions.create(this@MainActivity))
-                            recreate()
+                            restartFresh()
                         }
                     },
                     onDismiss = { showInstitutions = false }
@@ -1842,6 +1842,10 @@ class MainActivity : AppCompatActivity() {
                         }
                         // حالة تفعيل منشوراتي من الخادم (بعد أن يفعّلها صاحب التطبيق)
                         LaunchedEffect(myPostsText != null) {
+                            // منشورات لم تصل إلى الخادم (بلا إنترنت عند نشرها): تُرسل الآن
+                            com.elyedali.daftarustadh.exchange.ExchangeAd.listFromJson(metaDao.get(EXCHANGE_POSTS_KEY)).filter { !it.isSynced }.forEach { ad ->
+                                com.elyedali.daftarustadh.exchange.FirestoreExchangeRepository.publish(ad)
+                            }
                             val status = com.elyedali.daftarustadh.exchange.FirestoreExchangeRepository.myStatus() ?: return@LaunchedEffect
                             val cur = com.elyedali.daftarustadh.exchange.ExchangeAd.listFromJson(metaDao.get(EXCHANGE_POSTS_KEY))
                             val upd = cur.map { a -> status[a.id]?.let { on -> a.copy(isSynced = true, isApproved = on) } ?: a }
@@ -2727,6 +2731,12 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    /** إعادة فتح التطبيق من الصفحة الرئيسية (بعد الانتقال إلى مؤسسة أخرى): لا تبقى شاشة تخص المؤسسة السابقة. */
+    private fun restartFresh() {
+        startActivity(Intent(this, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
+        finish()
     }
 
     /** عند الرجوع إلى التطبيق: تحديث الاشتراكات (تفعيل جديد من لوحة التحكم يظهر دون إعادة فتح التطبيق). */

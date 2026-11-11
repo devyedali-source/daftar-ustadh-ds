@@ -36,7 +36,7 @@ object DsAuth {
     /** إكمال الدخول بعد اختيار الحساب: Firebase ثم تسجيل المستخدم في الخادم. */
     suspend fun signInWithIdToken(idToken: String): FirebaseUser? {
         val result = FirebaseAuth.getInstance().signInWithCredential(GoogleAuthProvider.getCredential(idToken, null)).await()
-        result.user?.let { registerUser(it) }
+        // التسجيل في ds_users يتم بعد الدخول في الخلفية (لا ينتظره المستخدم مع إنترنت ضعيف)
         return result.user
     }
 
