@@ -35,11 +35,11 @@
                 <data android:mimeType="application/x-gzip" />
             </intent-filter>
             <!-- رابط التفعيل من واتساب: يفتح الطلب في لوحة التحكم (حساب صاحب التطبيق) -->
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="moctar-gratuit.web.app" android:pathPrefix="/ds-activate" />
+                <data android:scheme="https" android:host="daftar-ustadh.web.app" android:pathPrefix="/ds-activate" />
             </intent-filter>
             <!-- استقبال عدة ملفات معًا عبر «مشاركة» (سجلات الأساتذة من واتساب) -->
             <intent-filter>

@@ -1,0 +1,4 @@
+{
+  "projects": { "default": "moctar-gratuit" },
+  "targets": { "moctar-gratuit": { "hosting": { "ds": ["daftar-ustadh"] } } }
+}

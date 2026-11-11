@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "ds",
+    "public": "public",
+    "ignore": ["firebase.json", "**/node_modules/**"],
+    "cleanUrls": true,
+    "headers": [
+      { "source": "/.well-known/assetlinks.json", "headers": [{ "key": "Content-Type", "value": "application/json" }] }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.elyedali.daftarustadh",
+      "sha256_cert_fingerprints": ["EA:5C:68:53:1D:34:56:EE:A8:E4:69:72:3A:BA:77:65:AB:50:80:8D:C7:AB:CD:19:E0:87:19:4C:2F:8F:48:9C"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.elyedali.daftarustadh.teacher",
+      "sha256_cert_fingerprints": ["EA:5C:68:53:1D:34:56:EE:A8:E4:69:72:3A:BA:77:65:AB:50:80:8D:C7:AB:CD:19:E0:87:19:4C:2F:8F:48:9C"]
+    }
+  }
+]

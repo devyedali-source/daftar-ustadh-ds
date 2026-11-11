@@ -88,7 +88,7 @@ object DsSubscriptions {
 
     /** رابط التفعيل الذي يُرسل على واتساب: يفتح الطلب مباشرة في لوحة التحكم (كما في دفتر المعلم). */
     fun activationLink(requestId: String) = "https://$LINK_HOST$LINK_PATH?r=$requestId"
-    const val LINK_HOST = "moctar-gratuit.web.app"
+    const val LINK_HOST = "daftar-ustadh.web.app"
     const val LINK_PATH = "/ds-activate"
     /** رابط تفعيل إعلان التبادل. */
     fun exchangeLink(adId: String) = "https://$LINK_HOST$LINK_PATH?e=$adId"
