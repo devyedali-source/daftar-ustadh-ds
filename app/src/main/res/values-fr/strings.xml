@@ -905,4 +905,5 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="inst_new_hint">Une page vide s’ouvrira pour enregistrer le nouvel établissement et ses classes. L’établissement actuel reste intact ; vous y revenez depuis « Mes établissements ».</string>
     <string name="inst_unnamed">Établissement non encore enregistré</string>
     <string name="inst_current">Ouvert actuellement</string>
+    <string name="act_expired_grades">🔒 L’année d’abonnement de cette classe est terminée : les bulletins restent disponibles, mais la saisie des notes est verrouillée. Pour la nouvelle année, créez ses classes et activez-les.</string>
 </resources>

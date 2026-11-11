@@ -356,6 +356,14 @@ class MainActivity : AppCompatActivity() {
                 val teacherProfile = com.elyedali.daftarustadh.ui.TeacherProfile.decode(teacherProfileText)
                 val activatedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.KEY) }.collectAsState(initial = null)
                 val activatedClasses = remember(activatedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(activatedText) }
+                val expiredText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.EXPIRED_KEY) }.collectAsState(initial = null)
+                val expiredClasses = remember(expiredText) { com.elyedali.daftarustadh.data.ClassActivation.decode(expiredText) }
+                /** قسم انتهت سنة اشتراكه (تطبيق الإدارة): رصد النتائج مقفل. */
+                fun gradesLocked(classId: String): Boolean {
+                    val locked = AppRole.isAdmin && classId in expiredClasses
+                    if (locked) android.widget.Toast.makeText(this@MainActivity, getString(R.string.act_expired_grades), android.widget.Toast.LENGTH_LONG).show()
+                    return locked
+                }
                 val requestedText by remember { metaDao.observe(com.elyedali.daftarustadh.data.ClassActivation.REQUESTED_KEY) }.collectAsState(initial = null)
                 val requestedClasses = remember(requestedText) { com.elyedali.daftarustadh.data.ClassActivation.decode(requestedText) }
                 // تفعيل الأستاذ (190 أوقية للسنة): التخطيط والتحاضير للفصلين 2 و3؛ رصد النتائج مجاني دائمًا
@@ -987,7 +995,9 @@ class MainActivity : AppCompatActivity() {
                             if (!com.elyedali.daftarustadh.AppRole.isAdmin && forAdmin) throw WrongAppException(com.elyedali.daftarustadh.AppRole.ADMIN_APP_NAME)
                             when (any) {
                                 is RecordFile -> when (val chk = recordImporter.check(any)) {
-                                    is RecordCheck.Ready -> if (!subjectOfLevel(chk.schoolClass, any.subjectCode))
+                                    is RecordCheck.Ready -> if (AppRole.isAdmin && chk.schoolClass.id in expiredClasses)
+                                        FileResult.Message(getString(R.string.act_expired_grades))
+                                        else if (!subjectOfLevel(chk.schoolClass, any.subjectCode))
                                         FileResult.Message(getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name))
                                         else { recordCheck = chk; null }
                                     is RecordCheck.WrongClass -> FileResult.Message(
@@ -1083,6 +1093,8 @@ class MainActivity : AppCompatActivity() {
                                 when (val any = TransferCodec.decodeAny(data)) {
                                     is RecordFile -> when (val chk = recordImporter.check(any)) {
                                         is RecordCheck.Ready -> when {
+                                            chk.schoolClass.id in expiredClasses ->
+                                                rejected += "$name — " + getString(R.string.act_expired_grades)
                                             !subjectOfLevel(chk.schoolClass, any.subjectCode) ->
                                                 rejected += "$name — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
                                             // سجل أقدم من الذي رُفع لهذه المادة: يُتجاوز حتى لا تعود نقاط قديمة
@@ -1505,7 +1517,7 @@ class MainActivity : AppCompatActivity() {
                             grades = classGrades,
                             initialSubject = subjectCode,
                             onSave = { code, slot, values ->
-                                scope.launch {
+                                if (!gradesLocked(c.id)) scope.launch {
                                     val now = System.currentTimeMillis()
                                     values.forEach { (sid, v) -> gradeDao.save(GradeEntity(sid, c.id, code, slot, v, now)) }
                                 }
@@ -2132,7 +2144,7 @@ class MainActivity : AppCompatActivity() {
                                 ?: mySubjects.firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE,
                             scale = remarkScale,
                             onSetGrade = { studentId, slot, value, mark ->
-                                scope.launch {
+                                if (!gradesLocked(c.id)) scope.launch {
                                     if (value == null) gradeDao.clear(studentId, code, slot)
                                     else gradeDao.save(GradeEntity(studentId, c.id, code, slot, value, System.currentTimeMillis(), mark))
                                 }

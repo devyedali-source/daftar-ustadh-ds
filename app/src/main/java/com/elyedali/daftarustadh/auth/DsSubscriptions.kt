@@ -68,16 +68,20 @@ object DsSubscriptions {
         val text = db.appMetaDao().get(CACHE_KEY) ?: return   // لم يتصل بالخادم بعد: لا نغيّر شيئًا
         val now = TrustedClock.now()
         val arr = try { JSONArray(text) } catch (e: Exception) { return }
-        val classes = HashSet<String>(); val years = HashSet<String>()
+        val classes = HashSet<String>(); val expired = HashSet<String>(); val years = HashSet<String>()
         for (i in 0 until arr.length()) {
             val o = arr.getJSONObject(i)
-            if (o.optLong("expiresAt") <= now) continue
+            val valid = o.optLong("expiresAt") > now
             when (o.optString("app")) {
-                APP_ADMIN -> o.optJSONArray("classIds")?.let { a -> for (k in 0 until a.length()) classes += a.getString(k) }
-                APP_TEACHER -> years += o.optString("year")
+                APP_ADMIN -> o.optJSONArray("classIds")?.let { a -> for (k in 0 until a.length()) (if (valid) classes else expired) += a.getString(k) }
+                APP_TEACHER -> if (valid) years += o.optString("year")
             }
         }
-        if (com.elyedali.daftarustadh.AppRole.isAdmin) putIfChanged(db, ClassActivation.KEY, ClassActivation.encode(classes))
+        if (com.elyedali.daftarustadh.AppRole.isAdmin) {
+            // الكشوف تبقى متاحة للأقسام التي دُفع اشتراكها ولو انتهت سنتها، ورصد نتائجها يُقفل
+            putIfChanged(db, ClassActivation.EXPIRED_KEY, ClassActivation.encode(expired - classes))
+            putIfChanged(db, ClassActivation.KEY, ClassActivation.encode(classes + expired))
+        }
         else putIfChanged(db, TeacherActivation.KEY, TeacherActivation.encode(years))
     }
 

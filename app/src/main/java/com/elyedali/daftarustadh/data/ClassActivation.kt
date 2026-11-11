@@ -13,6 +13,11 @@ object ClassActivation {
     const val KEY = "activated_classes"          // معرّفات الأقسام المفعّلة (يضعها الخادم/الإدارة)
     const val REQUESTED_KEY = "activation_requested"  // أقسام أُرسل طلب تفعيلها وتنتظر
     const val ADMIN_PHONE = "22237786585"
+    /**
+     * أقسام انتهت سنة اشتراكها: كشوفها تبقى متاحة (كما في دفتر المعلم)، لكن رصد النتائج فيها مقفل،
+     * حتى لا يُعاد استعمال الأقسام المدفوعة لسنة جديدة بتغيير السنة الدراسية فقط.
+     */
+    const val EXPIRED_KEY = "expired_classes"
 
     // تفعيل الإدارة: للفصل الأخير فقط (الكشف السنوي)، حسب عدد الأقسام
     const val PRICE_UP_TO_3 = 700

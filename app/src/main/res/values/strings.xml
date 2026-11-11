@@ -905,4 +905,5 @@
     <string name="inst_new_hint">ستُفتح صفحة فارغة لتسجيل المؤسسة الجديدة وأقسامها. مؤسستك الحالية تبقى محفوظة كما هي وتعود إليها من «مؤسساتي».</string>
     <string name="inst_unnamed">مؤسسة لم تُسجَّل بعد</string>
     <string name="inst_current">مفتوحة الآن</string>
+    <string name="act_expired_grades">🔒 انتهت سنة اشتراك هذا القسم: الكشوف تبقى متاحة، لكن رصد النتائج مقفل. للسنة الجديدة أنشئ أقسامها وفعّلها.</string>
 </resources>
