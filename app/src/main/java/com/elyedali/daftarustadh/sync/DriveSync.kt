@@ -134,6 +134,12 @@ object DriveSync {
         restart
     }
 
+    /**
+     * كتابات تأتي من الخادم (حالة الاشتراكات والطلبات) لا تُحسب «تغييرًا من المستخدم»:
+     * وإلا صار الهاتف يدمج بدل أن يأخذ آخر نسخة من الهاتف الآخر، فيعود ما حُذف هناك.
+     */
+    fun quiet() { suppressUntil = maxOf(suppressUntil, System.currentTimeMillis() + 3_000) }
+
     private fun changedAt(c: Context, db: DaftarDatabase) = prefs(c).getLong("changed_${sfx(db)}", 0L)
     fun hasLocalChanges(c: Context, db: DaftarDatabase) = changedAt(c, db) > prefs(c).getLong("last_${sfx(db)}", 0L)
 
@@ -154,35 +160,46 @@ object DriveSync {
                 TrustedClock.syncWithServer()
                 val token = token(c)
                 val name = fileName(db)
-                val fileId = findFile(token, name)
                 val p = prefs(c)
                 val ek = sfx(db)
                 val last = p.getLong("last_$ek", 0L)
                 var devices = decodeDevices(p.getString("devices_$ek", null))
-                if (fileId != null) {
-                    val remote = JSONObject(gunzip(download(token, fileId)))
-                    if (remote.optInt("dbVersion") > db.openHelper.readableDatabase.version)
-                        throw SyncException("update")   // نسخة Drive من إصدار أحدث للتطبيق
-                    devices = mergeDevices(decodeDevices(remote.optJSONArray("devices")?.toString()), devices)
-                    val remoteAt = remote.optLong("savedAt")
-                    val remoteDevice = remote.optString("deviceId")
-                    if (remoteAt > last && remoteDevice != deviceId(c)) {
-                        val localChanged = changedAt(c, db)
-                        when {
-                            // أول مزامنة لهاتف فيه بيانات: دمج بلا حذف (لا يضيع شيء مما على الهاتف)
-                            last == 0L && hasData(db) -> restore(db, remote, replace = false, remoteWins = true)
-                            // لم يتغيّر شيء هنا منذ آخر مزامنة (أو هاتف جديد فارغ): نأخذ نسخة Drive كما هي
-                            localChanged <= last -> restore(db, remote, replace = true, remoteWins = true)
-                            // تغيّر على الهاتفين: دمج بلا حذف، والأحدث يغلب عند التعارض
-                            else -> restore(db, remote, replace = false, remoteWins = remoteAt > localChanged)
+                var attempt = 0
+                var id = ""
+                var size = -1L
+                var payload = ByteArray(0)
+                var now = 0L
+                while (true) {
+                    val fileId = findFile(token, name)
+                    val rev0 = fileId?.let { revision(token, it) }
+                    if (fileId != null) {
+                        val remote = JSONObject(gunzip(download(token, fileId)))
+                        if (remote.optInt("dbVersion") > db.openHelper.readableDatabase.version)
+                            throw SyncException("update")   // نسخة Drive من إصدار أحدث للتطبيق
+                        devices = mergeDevices(decodeDevices(remote.optJSONArray("devices")?.toString()), devices)
+                        val remoteAt = remote.optLong("savedAt")
+                        val remoteDevice = remote.optString("deviceId")
+                        if (remoteAt > last && remoteDevice != deviceId(c)) {
+                            val localChanged = changedAt(c, db)
+                            when {
+                                // أول مزامنة لهاتف فيه بيانات: دمج بلا حذف (لا يضيع شيء مما على الهاتف)
+                                last == 0L && hasData(db) -> restore(db, remote, replace = false, remoteWins = true)
+                                // لم يتغيّر شيء هنا منذ آخر مزامنة (أو هاتف جديد فارغ): نأخذ نسخة Drive كما هي
+                                localChanged <= last && attempt == 0 -> restore(db, remote, replace = true, remoteWins = true)
+                                // تغيّر على الهاتفين: دمج بلا حذف، والأحدث يغلب عند التعارض
+                                else -> restore(db, remote, replace = false, remoteWins = remoteAt > localChanged)
+                            }
                         }
                     }
+                    devices = mergeDevices(listOf(Device(deviceId(c), deviceName())), devices)
+                    now = TrustedClock.now()
+                    payload = gzip(snapshot(db, now, deviceId(c), devices).toString())
+                    // هاتف آخر رفع نسخته أثناء ذلك: نعيد الدمج معها قبل الرفع، فلا تمحو نسخةٌ الأخرى
+                    if (fileId != null && attempt < 3 && revision(token, fileId) != rev0) { attempt++; continue }
+                    id = fileId ?: createFile(token, name)
+                    size = upload(token, id, payload)
+                    break
                 }
-                devices = mergeDevices(listOf(Device(deviceId(c), deviceName())), devices)
-                val now = TrustedClock.now()
-                val payload = gzip(snapshot(db, now, deviceId(c), devices).toString())
-                val id = fileId ?: createFile(token, name)
-                val size = upload(token, id, payload)
                 if (size != payload.size.toLong()) throw SyncException("verify")
                 if (AppRole.isAdmin) {
                     try { describe(token, id, db); discover(c, token) } catch (e: Exception) { }
@@ -366,6 +383,11 @@ object DriveSync {
         val (_, b) = http("https://www.googleapis.com/upload/drive/v3/files/$id?uploadType=media&fields=id,size", "PATCH", token, data, "application/gzip")
         return JSONObject(String(b)).optString("size").toLongOrNull() ?: -1L
     }
+
+    /** رقم آخر نسخة من الملف في Drive (يتغيّر عند كل رفع). */
+    private fun revision(token: String, id: String): String? =
+        JSONObject(String(http("https://www.googleapis.com/drive/v3/files/$id?fields=headRevisionId", "GET", token).second))
+            .optString("headRevisionId").takeIf { it.isNotBlank() }
 
     private fun download(token: String, id: String): ByteArray =
         http("https://www.googleapis.com/drive/v3/files/$id?alt=media", "GET", token).second

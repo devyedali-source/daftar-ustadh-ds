@@ -83,7 +83,10 @@ object DsSubscriptions {
 
     /** لا يكتب إلا إذا تغيّرت القيمة (حتى لا تُحسب تغييرًا يحتاج مزامنة). */
     private suspend fun putIfChanged(db: DaftarDatabase, key: String, value: String) {
-        if (db.appMetaDao().get(key) != value) db.appMetaDao().put(AppMetaEntity(key, value))
+        if (db.appMetaDao().get(key) != value) {
+            com.elyedali.daftarustadh.sync.DriveSync.quiet()
+            db.appMetaDao().put(AppMetaEntity(key, value))
+        }
     }
 
     /** رابط التفعيل الذي يُرسل على واتساب: يفتح الطلب مباشرة في لوحة التحكم (كما في دفتر المعلم). */
