@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function isMe(uid) { return signedIn() && request.auth.uid == uid; }
+    function isOwner() {
+      return signedIn() && request.auth.token.email == 'elyedalimoctar@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+
+    // المستخدمون: كل مستخدم يكتب سجله فقط، وصاحب التطبيق يقرأ الجميع
+    match /ds_users/{uid} {
+      allow read: if isMe(uid) || isOwner();
+      allow create, update: if isMe(uid) || isOwner();
+      allow delete: if isOwner();
+    }
+
+    // الاشتراكات: يقرأ المستخدم اشتراكاته، ولا يكتبها إلا صاحب التطبيق
+    match /ds_subscriptions/{id} {
+      allow read: if isOwner() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow write: if isOwner();
+    }
+
+    // طلبات التفعيل: المستخدم ينشئ طلبه (معلّقًا) ويقرؤه، وصاحب التطبيق يقبله أو يحذفه
+    match /ds_activation_requests/{id} {
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'pending';
+      allow read: if isOwner() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow update, delete: if isOwner();
+    }
+
+    // إعلانات التبادلات: يقرؤها كل مسجّل؛ تُنشأ غير مفعّلة ولا يفعّلها إلا صاحب التطبيق
+    match /ds_exchanges/{id} {
+      allow read: if signedIn();
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid
+        && request.resource.data.active == false;
+      allow update: if isOwner() || (signedIn() && resource.data.uid == request.auth.uid
+        && request.resource.data.uid == resource.data.uid
+        && request.resource.data.active == resource.data.active);
+      allow delete: if isOwner() || (signedIn() && resource.data.uid == request.auth.uid);
+    }
+
+    // ما سوى ذلك مغلق
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
