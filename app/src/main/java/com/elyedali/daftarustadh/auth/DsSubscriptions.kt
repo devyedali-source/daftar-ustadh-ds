@@ -74,7 +74,13 @@ object DsSubscriptions {
         else db.appMetaDao().put(AppMetaEntity(TeacherActivation.KEY, TeacherActivation.encode(years)))
     }
 
-    /** ينشئ طلب تفعيل على الخادم ويعيد رمزه القصير (يُرسل على واتساب)، أو null بلا إنترنت. */
+    /** رابط التفعيل الذي يُرسل على واتساب: يفتح الطلب مباشرة في لوحة التحكم (كما في دفتر المعلم). */
+    fun activationLink(requestId: String) = "https://$LINK_HOST$LINK_PATH?r=$requestId"
+    const val LINK_HOST = "moctar-gratuit.web.app"
+    const val LINK_PATH = "/ds-activate"
+    fun shortCode(requestId: String) = requestId.take(6).uppercase()
+
+    /** ينشئ طلب تفعيل على الخادم ويعيد معرّفه (رمزه القصير = أول 6 أحرف)، أو null بلا إنترنت. */
     suspend fun request(
         app: String, inst: InstitutionEntity?, schoolYear: String,
         classIds: List<String>, classNames: List<String>, amount: Int, teacherName: String = ""
@@ -91,7 +97,7 @@ object DsSubscriptions {
                 "amount" to amount, "code" to ref.id.take(6).uppercase(),
                 "createdAt" to FieldValue.serverTimestamp()
             )).await()
-            ref.id.take(6).uppercase()
+            ref.id
         } catch (e: Exception) { null }
     }
 }

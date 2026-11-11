@@ -28,6 +28,8 @@ object DsAuth {
         GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(context.getString(R.string.default_web_client_id))
             .requestEmail()
+            // المزامنة مع Google Drive: ملفات التطبيق فقط
+            .requestScopes(com.google.android.gms.common.api.Scope("https://www.googleapis.com/auth/drive.file"))
             .build()
     )
 

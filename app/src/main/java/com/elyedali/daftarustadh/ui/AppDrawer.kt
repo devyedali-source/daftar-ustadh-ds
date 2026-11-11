@@ -56,7 +56,13 @@ fun AppDrawer(
     schoolYear: String?,
     current: String,
     lastSync: String?,
-    onItem: (String) -> Unit
+    onItem: (String) -> Unit,
+    /** سطر حالة المزامنة (جارية، بلا إنترنت، فشلت…)، أو null. */
+    syncNote: String? = null,
+    /** أسماء الأجهزة المتصلة بهذا الحساب. */
+    devices: List<String> = emptyList(),
+    syncing: Boolean = false,
+    isOwner: Boolean = false
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
     ModalDrawerSheet(
@@ -102,6 +108,7 @@ fun AppDrawer(
             if (com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("📤", R.string.af_share, false) { onItem("SHARE_ADMIN") }
             Item("ℹ️", R.string.menu_about, current == "ABOUT") { onItem("ABOUT") }
+            if (isOwner) Item("👑", R.string.menu_owner_panel, current == "OWNER_PANEL") { onItem("OWNER_PANEL") }
             if (!com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("📚", R.string.menu_books, false) { onItem("BOOKS") }
 
@@ -118,10 +125,16 @@ fun AppDrawer(
                     Text("☁️ " + stringResource(R.string.drawer_sync_title), fontWeight = FontWeight.ExtraBold, fontSize = 12.sp, color = Color(0xFF1B5E20))
                     Text(stringResource(R.string.drawer_last_sync, lastSync ?: stringResource(R.string.drawer_never_synced)),
                         fontSize = 10.5.sp, color = Color(0xFF33691E))
+                    if (syncNote != null) Text(syncNote, fontSize = 10.5.sp, color = Color(0xFFE65100), fontWeight = FontWeight.Bold)
+                    if (devices.isNotEmpty()) {
+                        Text(stringResource(R.string.sync_devices), fontSize = 10.5.sp, fontWeight = FontWeight.Bold, color = Color(0xFF1B5E20))
+                        devices.forEachIndexed { i, d -> Text((if (i == 0) "📱 " else "▫️ ") + d, fontSize = 10.5.sp, color = Color(0xFF33691E)) }
+                    }
                     Button(
+                        enabled = !syncing,
                         onClick = { onItem("SYNC") }, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(10.dp),
                         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2E7D32), contentColor = Color.White)
-                    ) { Text("🔄 " + stringResource(R.string.drawer_sync), fontWeight = FontWeight.Bold, fontSize = 12.sp) }
+                    ) { Text(if (syncing) "⏳ " + stringResource(R.string.sync_running) else "🔄 " + stringResource(R.string.drawer_sync), fontWeight = FontWeight.Bold, fontSize = 12.sp) }
                 }
             }
 

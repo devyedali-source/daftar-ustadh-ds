@@ -110,7 +110,7 @@ private const val TT_APPROVED_KEY = "timetable_approved"
 private const val TT_MANUAL_KEY = "timetable_manual"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES, ABOUT, RECORDS_FOLLOW }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES, ABOUT, RECORDS_FOLLOW, OWNER_PANEL }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 /** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
@@ -158,6 +158,8 @@ class MainActivity : AppCompatActivity() {
 
     /** ملف قسم فُتح من الواتساب أو من مدير الملفات، ينتظر المعالجة. */
     private val incomingFile = mutableStateOf<Uri?>(null)
+    /** معرّف طلب تفعيل وصل برابط من واتساب. */
+    private val activationLink = mutableStateOf<String?>(null)
     private val incomingFiles = mutableStateOf<List<Uri>>(emptyList())
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -182,8 +184,6 @@ class MainActivity : AppCompatActivity() {
         val absenceImporter = com.elyedali.daftarustadh.transfer.AbsenceImporter(db)
         val metaDao = db.appMetaDao()
         val importer = ClassFileImporter(db)
-        // بيانات تجريبية (نسخ التجربة فقط الآن؛ وبعد تسجيل الدخول لحساب صاحب التطبيق فقط)
-        lifecycleScope.launch(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db) }
         val recordImporter = RecordImporter(db)
         val bundleImporter = com.elyedali.daftarustadh.transfer.TeacherBundleImporter(db)
 
@@ -200,15 +200,36 @@ class MainActivity : AppCompatActivity() {
                     com.elyedali.daftarustadh.auth.TrustedClock.init(this@MainActivity)
                     // الاشتراكات المحفوظة تُطبّق فورًا (بلا إنترنت)، ثم تُحدَّث من الخادم
                     com.elyedali.daftarustadh.auth.DsSubscriptions.apply(db)
-                    com.elyedali.daftarustadh.auth.DsAuth.registerUser(me)
+                    // بيانات تجريبية لحساب صاحب التطبيق فقط
+                    withContext(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db, me.email.orEmpty()) }
+                    com.elyedali.daftarustadh.sync.DriveSync.init(this@MainActivity, db)
+                    launch { com.elyedali.daftarustadh.auth.DsAuth.registerUser(me) }   // لا ينتظر (بلا إنترنت لا يكتمل)
                     withContext(Dispatchers.IO) { com.elyedali.daftarustadh.auth.TrustedClock.syncWithServer() }
                     com.elyedali.daftarustadh.auth.DsSubscriptions.refresh(db)
+                    // مزامنة Drive صامتة عند فتح التطبيق
+                    com.elyedali.daftarustadh.sync.DriveSync.syncInBackground(this@MainActivity, db)
                 }
+                val syncState by com.elyedali.daftarustadh.sync.DriveSync.state.collectAsState()
+                val lastSyncMs by com.elyedali.daftarustadh.sync.DriveSync.lastSync.collectAsState()
+                val syncDevices by com.elyedali.daftarustadh.sync.DriveSync.devices.collectAsState()
+                val driveConsent = rememberLauncherForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { r ->
+                    if (r.resultCode == RESULT_OK) com.elyedali.daftarustadh.sync.DriveSync.syncInBackground(this@MainActivity, db)
+                }
+                var ownerFocus by remember { mutableStateOf<String?>(null) }
                 val scope = rememberCoroutineScope()
                 val institution by institutionDao.observe().collectAsState(initial = null)
                 val institutions by institutionDao.observeAll().collectAsState(initial = emptyList())
                 val schoolNames = institutions.associate { it.id to it.schoolName }
                 var screen by rememberSaveable { mutableStateOf(Screen.HOME) }
+                // رابط التفعيل من واتساب: يفتح الطلب في لوحة التحكم (لحساب صاحب التطبيق فقط)
+                val linkReq = activationLink.value
+                LaunchedEffect(linkReq) {
+                    if (linkReq != null) {
+                        activationLink.value = null
+                        if (com.elyedali.daftarustadh.auth.DsAuth.isOwner) { ownerFocus = linkReq; screen = Screen.OWNER_PANEL }
+                        else android.widget.Toast.makeText(this@MainActivity, getString(R.string.op_owner_only), android.widget.Toast.LENGTH_LONG).show()
+                    }
+                }
                 var classId by rememberSaveable { mutableStateOf<String?>(null) }
                 var fromTeaching by rememberSaveable { mutableStateOf(false) }
                 var showSubjects by remember { mutableStateOf(false) }
@@ -1349,13 +1370,36 @@ class MainActivity : AppCompatActivity() {
                             schoolName = inst?.schoolName,
                             schoolYear = inst?.schoolYear,
                             current = screen.name,
-                            lastSync = null,
+                            lastSync = if (lastSyncMs > 0) java.text.SimpleDateFormat("yyyy/MM/dd HH:mm", java.util.Locale.US).format(java.util.Date(lastSyncMs)) else null,
+                            syncing = syncState is com.elyedali.daftarustadh.sync.DriveSync.State.Running,
+                            devices = syncDevices.map { it.name },
+                            isOwner = com.elyedali.daftarustadh.auth.DsAuth.isOwner,
+                            syncNote = when (val st = syncState) {
+                                is com.elyedali.daftarustadh.sync.DriveSync.State.Offline -> stringResource(R.string.sync_offline)
+                                is com.elyedali.daftarustadh.sync.DriveSync.State.NeedsConsent -> stringResource(R.string.sync_consent)
+                                is com.elyedali.daftarustadh.sync.DriveSync.State.Failed -> stringResource(if (st.reason == "update") R.string.sync_update else R.string.sync_failed)
+                                else -> null
+                            },
                             onItem = { key ->
                                 scope.launch { drawerState.close() }
                                 when (key) {
                                     "HOME" -> { selectedYear = null; teacherSchool = null; screen = Screen.HOME }
-                                    "SYNC" -> android.widget.Toast.makeText(this@MainActivity, getString(R.string.drawer_sync_later), android.widget.Toast.LENGTH_LONG).show()
-                                    "LOGOUT" -> { com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null }
+                                    "SYNC" -> scope.launch {
+                                        val st = com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db)
+                                        when (st) {
+                                            is com.elyedali.daftarustadh.sync.DriveSync.State.NeedsConsent -> driveConsent.launch(st.intent)
+                                            is com.elyedali.daftarustadh.sync.DriveSync.State.Done ->
+                                                android.widget.Toast.makeText(this@MainActivity, getString(R.string.sync_ok), android.widget.Toast.LENGTH_SHORT).show()
+                                            else -> {}
+                                        }
+                                    }
+                                    "OWNER_PANEL" -> { ownerFocus = null; screen = Screen.OWNER_PANEL }
+                                    "LOGOUT" -> scope.launch {
+                                        // رفع آخر التغييرات قبل الخروج حتى لا يضيع شيء
+                                        if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity))
+                                            kotlinx.coroutines.withTimeoutOrNull(60_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
+                                        com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null
+                                    }
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                     "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
                                     "EXCHANGES" -> screen = Screen.EXCHANGES
@@ -1690,7 +1734,10 @@ class MainActivity : AppCompatActivity() {
                                 chosen.forEach { append("• ${it.name} — ${com.elyedali.daftarustadh.data.ClassActivation.code(it.id)}\n") }
                                 append(getString(R.string.act_msg_total, total)).append('\n')
                                 append(getString(R.string.act_msg_account, signedIn?.email.orEmpty()))
-                                if (reqCode != null) append('\n').append(getString(R.string.act_msg_request, reqCode))
+                                if (reqCode != null) {
+                                    append('\n').append(getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(reqCode)))
+                                    append('\n').append(getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode)))
+                                }
                             }
                             val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                             try {
@@ -1703,6 +1750,9 @@ class MainActivity : AppCompatActivity() {
                         } },
                         onBack = { screen = activationBack }
                     )
+
+                    screen == Screen.OWNER_PANEL && com.elyedali.daftarustadh.auth.DsAuth.isOwner ->
+                        com.elyedali.daftarustadh.ui.OwnerPanelScreen(focusRequestId = ownerFocus, onBack = { ownerFocus = null; screen = Screen.HOME })
 
                     screen == Screen.EXCHANGES -> {
                         val myPostsText by remember { metaDao.observe(EXCHANGE_POSTS_KEY) }.collectAsState(initial = null)
@@ -1723,6 +1773,13 @@ class MainActivity : AppCompatActivity() {
                             subjects.sortedBy { order.indexOf(it.code).let { i -> if (i < 0) 99 else i } }
                                 .map { com.elyedali.daftarustadh.ui.SpecialtyOption(it.code, if (isFr) it.nameFr else it.nameAr) }
                         }
+                        // حالة تفعيل منشوراتي من الخادم (بعد أن يفعّلها صاحب التطبيق)
+                        LaunchedEffect(myPostsText != null) {
+                            val status = com.elyedali.daftarustadh.exchange.FirestoreExchangeRepository.myStatus() ?: return@LaunchedEffect
+                            val cur = com.elyedali.daftarustadh.exchange.ExchangeAd.listFromJson(metaDao.get(EXCHANGE_POSTS_KEY))
+                            val upd = cur.map { a -> status[a.id]?.let { on -> a.copy(isSynced = true, isApproved = on) } ?: a }
+                            if (upd != cur) metaDao.put(AppMetaEntity(EXCHANGE_POSTS_KEY, com.elyedali.daftarustadh.exchange.ExchangeAd.listToJson(upd)))
+                        }
                         val owner = ownerId
                         if (owner != null) com.elyedali.daftarustadh.ui.ExchangesScreen(
                             title = stringResource(R.string.menu_exchanges),
@@ -1730,7 +1787,7 @@ class MainActivity : AppCompatActivity() {
                             specialties = specialtyOptions,
                             myPosts = myPosts,
                             ownerId = owner,
-                            repository = com.elyedali.daftarustadh.exchange.NotConnectedExchangeRepository,
+                            repository = com.elyedali.daftarustadh.exchange.FirestoreExchangeRepository,
                             onSaveMyPosts = { list -> metaDao.put(AppMetaEntity(EXCHANGE_POSTS_KEY, com.elyedali.daftarustadh.exchange.ExchangeAd.listToJson(list))) },
                             onBack = { screen = Screen.HOME }
                         )
@@ -2299,7 +2356,8 @@ class MainActivity : AppCompatActivity() {
                                     }
                                     val msg = getString(R.string.tact_msg, tName, year, code, com.elyedali.daftarustadh.data.TeacherActivation.PRICE) +
                                         "\n" + getString(R.string.act_msg_account, signedIn?.email.orEmpty()) +
-                                        (reqCode?.let { "\n" + getString(R.string.act_msg_request, it) } ?: "")
+                                        (reqCode?.let { "\n" + getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(it)) +
+                                            "\n" + getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(it)) } ?: "")
                                     val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                                     try {
                                         startActivity(Intent(Intent.ACTION_VIEW, uri))
@@ -2600,6 +2658,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /** عند الخروج من التطبيق: رفع التغييرات إلى Drive في الخلفية. */
+    override fun onStop() {
+        super.onStop()
+        if (com.elyedali.daftarustadh.auth.DsAuth.user != null)
+            com.elyedali.daftarustadh.sync.DriveSync.syncInBackground(this, DaftarDatabase.get(this), onlyIfChanged = true)
+    }
+
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         handleIntent(intent)
@@ -2612,6 +2677,10 @@ class MainActivity : AppCompatActivity() {
                 if (Build.VERSION.SDK_INT >= 33) intent.getParcelableExtra(Intent.EXTRA_STREAM, Uri::class.java)
                 else @Suppress("DEPRECATION") intent.getParcelableExtra<Uri>(Intent.EXTRA_STREAM)
             else -> null
+        }
+        if (intent?.action == Intent.ACTION_VIEW && uri != null && uri.host == com.elyedali.daftarustadh.auth.DsSubscriptions.LINK_HOST) {
+            uri.getQueryParameter("r")?.takeIf { it.isNotBlank() }?.let { activationLink.value = it }
+            return
         }
         if (uri != null) incomingFile.value = uri
         // عدة ملفات مُشاركة معًا من واتساب (تحديد عدة سجلات ثم «مشاركة»)
