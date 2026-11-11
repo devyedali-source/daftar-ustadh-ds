@@ -49,7 +49,15 @@ object DsSubscriptions {
                     .put("classIds", JSONArray((d.get("classIds") as? List<*>)?.map { it.toString() } ?: emptyList<String>()))
                     .put("expiresAt", d.getLong("expiresAt") ?: 0L))
             }
-            db.appMetaDao().put(AppMetaEntity(CACHE_KEY, arr.toString()))
+            putIfChanged(db, CACHE_KEY, arr.toString())
+            // الطلبات التي ما زالت تنتظر (المقبولة أو المرفوضة لا تبقى «⏳ قيد الانتظار»)
+            val pending = FirebaseFirestore.getInstance().collection("ds_activation_requests")
+                .whereEqualTo("uid", u.uid).get().await().documents.filter { it.getString("status") == "pending" }
+            if (com.elyedali.daftarustadh.AppRole.isAdmin)
+                putIfChanged(db, ClassActivation.REQUESTED_KEY, ClassActivation.encode(pending.filter { it.getString("app") == APP_ADMIN }
+                    .flatMap { (it.get("classIds") as? List<*>)?.map { x -> x.toString() }.orEmpty() }.toSet()))
+            else putIfChanged(db, TeacherActivation.REQUESTED_KEY, TeacherActivation.encode(pending.filter { it.getString("app") == APP_TEACHER }
+                .mapNotNull { it.getString("schoolYear") }.toSet()))
             apply(db)
             true
         } catch (e: Exception) { false }
@@ -69,15 +77,21 @@ object DsSubscriptions {
                 APP_TEACHER -> years += o.optString("year")
             }
         }
-        if (com.elyedali.daftarustadh.AppRole.isAdmin)
-            db.appMetaDao().put(AppMetaEntity(ClassActivation.KEY, ClassActivation.encode(classes)))
-        else db.appMetaDao().put(AppMetaEntity(TeacherActivation.KEY, TeacherActivation.encode(years)))
+        if (com.elyedali.daftarustadh.AppRole.isAdmin) putIfChanged(db, ClassActivation.KEY, ClassActivation.encode(classes))
+        else putIfChanged(db, TeacherActivation.KEY, TeacherActivation.encode(years))
+    }
+
+    /** لا يكتب إلا إذا تغيّرت القيمة (حتى لا تُحسب تغييرًا يحتاج مزامنة). */
+    private suspend fun putIfChanged(db: DaftarDatabase, key: String, value: String) {
+        if (db.appMetaDao().get(key) != value) db.appMetaDao().put(AppMetaEntity(key, value))
     }
 
     /** رابط التفعيل الذي يُرسل على واتساب: يفتح الطلب مباشرة في لوحة التحكم (كما في دفتر المعلم). */
     fun activationLink(requestId: String) = "https://$LINK_HOST$LINK_PATH?r=$requestId"
     const val LINK_HOST = "moctar-gratuit.web.app"
     const val LINK_PATH = "/ds-activate"
+    /** رابط تفعيل إعلان التبادل. */
+    fun exchangeLink(adId: String) = "https://$LINK_HOST$LINK_PATH?e=$adId"
     fun shortCode(requestId: String) = requestId.take(6).uppercase()
 
     /** ينشئ طلب تفعيل على الخادم ويعيد معرّفه (رمزه القصير = أول 6 أحرف)، أو null بلا إنترنت. */

@@ -60,9 +60,11 @@ import java.util.Locale
 fun OwnerPanelScreen(
     /** طلب وصل برابط التفعيل من واتساب: يُفتح مباشرة. */
     focusRequestId: String?,
+    /** إعلان تبادل وصل برابط التفعيل: يُفتح في تبويب التبادلات. */
+    focusExchangeId: String? = null,
     onBack: () -> Unit
 ) {
-    var tab by rememberSaveable { mutableIntStateOf(if (focusRequestId != null) 1 else 0) }
+    var tab by rememberSaveable { mutableIntStateOf(if (focusRequestId != null) 1 else if (focusExchangeId != null) 2 else 0) }
     var reload by remember { mutableIntStateOf(0) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(horizontal = 12.dp, vertical = 8.dp)) {
@@ -75,7 +77,7 @@ fun OwnerPanelScreen(
             when (tab) {
                 0 -> StatsTab(reload) { reload++ }
                 1 -> RequestsTab(focusRequestId, reload) { reload++ }
-                else -> ExchangesTab(reload) { reload++ }
+                else -> ExchangesTab(focusExchangeId, reload) { reload++ }
             }
         }
     }
@@ -230,7 +232,7 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
 }
 
 @Composable
-private fun ExchangesTab(reload: Int, onReload: () -> Unit) {
+private fun ExchangesTab(focusId: String?, reload: Int, onReload: () -> Unit) {
     val scope = rememberCoroutineScope()
     var active by rememberSaveable { mutableStateOf(false) }
     var list by remember { mutableStateOf<List<OwnerAdmin.Exchange>?>(null) }
@@ -253,9 +255,10 @@ private fun ExchangesTab(reload: Int, onReload: () -> Unit) {
             l == null -> Loading()
             else -> LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 6.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 val shown = l.filter { query.isBlank() || it.code.contains(query) || it.email.uppercase().contains(query) }
+                    .sortedByDescending { it.id == focusId }
                 if (shown.isEmpty()) item { Text(stringResource(R.string.op_none), color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(16.dp)) }
                 items(shown, key = { it.id }) { e ->
-                    Card(Modifier.fillMaxWidth()) {
+                    Card(Modifier.fillMaxWidth(), border = if (e.id == focusId) BorderStroke(2.dp, MaterialTheme.colorScheme.primary) else null) {
                         Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
                             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                                 Text("#${e.code}", fontWeight = FontWeight.Black, color = MaterialTheme.colorScheme.primary)

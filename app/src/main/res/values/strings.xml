@@ -894,4 +894,8 @@
     <string name="sync_devices">الأجهزة المتصلة بهذا الحساب:</string>
     <string name="sync_pending">توجد تغييرات لم تُرفع بعد</string>
     <string name="op_owner_only">رابط التفعيل خاص بحساب صاحب التطبيق.</string>
+    <string name="act_need_internet">تعذّر إرسال الطلب إلى الخادم. تأكد من الإنترنت ثم أعد المحاولة.</string>
+    <string name="sync_logout_blocked">بياناتك لم تُرفع إلى Google Drive بعد. اتصل بالإنترنت ثم اضغط «مزامنة الآن» قبل تسجيل الخروج حتى لا تضيع.</string>
+    <string name="sync_logout_title">الخروج قبل رفع البيانات؟</string>
+    <string name="sync_logout_anyway">خروج رغم ذلك</string>
 </resources>

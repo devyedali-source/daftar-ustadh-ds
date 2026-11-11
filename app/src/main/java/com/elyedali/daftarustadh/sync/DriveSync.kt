@@ -88,7 +88,7 @@ object DriveSync {
         observing = true
         scope.launch {
             try {
-                val tables = userTables(db).filter { it != "app_meta" }.toTypedArray()
+                val tables = userTables(db).toTypedArray()
                 if (tables.isEmpty()) return@launch
                 db.invalidationTracker.addObserver(object : InvalidationTracker.Observer(tables) {
                     override fun onInvalidated(tables: Set<String>) {
@@ -99,6 +99,27 @@ object DriveSync {
                 })
             } catch (e: Exception) { }
         }
+    }
+
+    /**
+     * هاتف يدخل إليه حساب آخر غير صاحب البيانات الموجودة: تُفرَّغ بيانات الحساب السابق من الهاتف
+     * (هي محفوظة في Drive حسابه)، ثم تأتي بيانات الحساب الجديد من Drive حسابه. لا تختلط بيانات حسابين أبدًا.
+     */
+    suspend fun prepareAccount(context: Context, db: DaftarDatabase) = withContext(Dispatchers.IO) {
+        val email = DsAuth.user?.email?.lowercase() ?: return@withContext
+        val p = prefs(context)
+        val owner = p.getString("db_owner", null)
+        if (owner == null) { p.edit().putString("db_owner", email).apply(); return@withContext }
+        if (owner == email) return@withContext
+        suppressUntil = System.currentTimeMillis() + 5_000
+        db.runInTransaction(Runnable {
+            val w = db.openHelper.writableDatabase
+            userTables(db).forEach { t -> w.execSQL("DELETE FROM `$t`") }
+        })
+        p.edit().putString("db_owner", email).apply()
+        _lastSync.value = 0L
+        p.edit().remove("last_${emailKey()}").remove("changed_${emailKey()}").apply()
+        _devices.value = emptyList()
     }
 
     private fun changedAt(c: Context) = prefs(c).getLong("changed_${emailKey()}", 0L)

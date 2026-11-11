@@ -191,7 +191,8 @@ fun sendExchangeActivation(context: android.content.Context, ad: ExchangeAd, mes
 }
 
 @Composable
-private fun activationMessage(ad: ExchangeAd): String = stringResource(R.string.ex_act_message, ad.code)
+private fun activationMessage(ad: ExchangeAd): String = stringResource(R.string.ex_act_message, ad.code) + "\n" +
+    stringResource(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.exchangeLink(ad.id))
 
 /** بعد نشر الإعلان: السعر، وملاحظة أنه لا يظهر للعامة إلا بعد التفعيل، وزر واتساب الإدارة. */
 @Composable

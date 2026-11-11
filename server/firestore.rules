@@ -32,7 +32,8 @@ service cloud.firestore {
 
     // إعلانات التبادلات: يقرؤها كل مسجّل؛ تُنشأ غير مفعّلة ولا يفعّلها إلا صاحب التطبيق
     match /ds_exchanges/{id} {
-      allow read: if signedIn();
+      // الإعلان غير المفعّل (ورقم واتساب صاحبه) لا يقرؤه إلا صاحبه وصاحب التطبيق
+      allow read: if isOwner() || (signedIn() && (resource == null || resource.data.active == true || resource.data.uid == request.auth.uid));
       allow create: if signedIn() && request.resource.data.uid == request.auth.uid
         && request.resource.data.active == false;
       allow update: if isOwner() || (signedIn() && resource.data.uid == request.auth.uid

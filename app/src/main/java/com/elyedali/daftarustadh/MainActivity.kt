@@ -200,6 +200,8 @@ class MainActivity : AppCompatActivity() {
                     com.elyedali.daftarustadh.auth.TrustedClock.init(this@MainActivity)
                     // الاشتراكات المحفوظة تُطبّق فورًا (بلا إنترنت)، ثم تُحدَّث من الخادم
                     com.elyedali.daftarustadh.auth.DsSubscriptions.apply(db)
+                    // حساب آخر على نفس الهاتف: لا تختلط البيانات
+                    com.elyedali.daftarustadh.sync.DriveSync.prepareAccount(this@MainActivity, db)
                     // بيانات تجريبية لحساب صاحب التطبيق فقط
                     withContext(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db, me.email.orEmpty()) }
                     com.elyedali.daftarustadh.sync.DriveSync.init(this@MainActivity, db)
@@ -210,12 +212,30 @@ class MainActivity : AppCompatActivity() {
                     com.elyedali.daftarustadh.sync.DriveSync.syncInBackground(this@MainActivity, db)
                 }
                 val syncState by com.elyedali.daftarustadh.sync.DriveSync.state.collectAsState()
+                var logoutUnsynced by remember { mutableStateOf(false) }
+                if (logoutUnsynced) androidx.compose.material3.AlertDialog(
+                    onDismissRequest = { logoutUnsynced = false },
+                    title = { Text(stringResource(R.string.sync_logout_title)) },
+                    text = { Text(stringResource(R.string.sync_logout_blocked)) },
+                    confirmButton = { TextButton(onClick = { logoutUnsynced = false }) { Text(stringResource(R.string.cancel)) } },
+                    dismissButton = { TextButton(onClick = {
+                        logoutUnsynced = false
+                        com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null
+                    }) { Text(stringResource(R.string.sync_logout_anyway), color = androidx.compose.material3.MaterialTheme.colorScheme.error) } }
+                )
+                // حساب قديم دخل قبل إضافة Drive: تُطلب الموافقة مرة واحدة تلقائيًا
+                var consentAsked by remember { mutableStateOf(false) }
                 val lastSyncMs by com.elyedali.daftarustadh.sync.DriveSync.lastSync.collectAsState()
                 val syncDevices by com.elyedali.daftarustadh.sync.DriveSync.devices.collectAsState()
                 val driveConsent = rememberLauncherForActivityResult(androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult()) { r ->
                     if (r.resultCode == RESULT_OK) com.elyedali.daftarustadh.sync.DriveSync.syncInBackground(this@MainActivity, db)
                 }
+                LaunchedEffect(syncState) {
+                    val st = syncState
+                    if (st is com.elyedali.daftarustadh.sync.DriveSync.State.NeedsConsent && !consentAsked) { consentAsked = true; driveConsent.launch(st.intent) }
+                }
                 var ownerFocus by remember { mutableStateOf<String?>(null) }
+                var ownerFocusEx by remember { mutableStateOf<String?>(null) }
                 val scope = rememberCoroutineScope()
                 val institution by institutionDao.observe().collectAsState(initial = null)
                 val institutions by institutionDao.observeAll().collectAsState(initial = emptyList())
@@ -226,7 +246,11 @@ class MainActivity : AppCompatActivity() {
                 LaunchedEffect(linkReq) {
                     if (linkReq != null) {
                         activationLink.value = null
-                        if (com.elyedali.daftarustadh.auth.DsAuth.isOwner) { ownerFocus = linkReq; screen = Screen.OWNER_PANEL }
+                        if (com.elyedali.daftarustadh.auth.DsAuth.isOwner) {
+                            if (linkReq.startsWith("e:")) { ownerFocus = null; ownerFocusEx = linkReq.removePrefix("e:") }
+                            else { ownerFocusEx = null; ownerFocus = linkReq.removePrefix("r:") }
+                            screen = Screen.OWNER_PANEL
+                        }
                         else android.widget.Toast.makeText(this@MainActivity, getString(R.string.op_owner_only), android.widget.Toast.LENGTH_LONG).show()
                     }
                 }
@@ -1393,12 +1417,13 @@ class MainActivity : AppCompatActivity() {
                                             else -> {}
                                         }
                                     }
-                                    "OWNER_PANEL" -> { ownerFocus = null; screen = Screen.OWNER_PANEL }
+                                    "OWNER_PANEL" -> { ownerFocus = null; ownerFocusEx = null; screen = Screen.OWNER_PANEL }
                                     "LOGOUT" -> scope.launch {
                                         // رفع آخر التغييرات قبل الخروج حتى لا يضيع شيء
                                         if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity))
                                             kotlinx.coroutines.withTimeoutOrNull(60_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
-                                        com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null
+                                        if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity)) logoutUnsynced = true
+                                        else { com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null }
                                     }
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                     "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
@@ -1718,10 +1743,15 @@ class MainActivity : AppCompatActivity() {
                         requested = requestedClasses,
                         onRequest = { chosen, total -> scope.launch {
                             val owner = inst
-                            val reqCode = kotlinx.coroutines.withTimeoutOrNull(10_000) {
+                            val reqCode = kotlinx.coroutines.withTimeoutOrNull(20_000) {
                                 com.elyedali.daftarustadh.auth.DsSubscriptions.request(
                                     com.elyedali.daftarustadh.auth.DsSubscriptions.APP_ADMIN, owner, owner?.schoolYear.orEmpty(),
                                     chosen.map { it.id }, chosen.map { it.name }, total)
+                            }
+                            // الطلب يجب أن يصل إلى الخادم أولًا، وإلا لا يمكن قبوله من لوحة التحكم
+                            if (reqCode == null) {
+                                android.widget.Toast.makeText(this@MainActivity, getString(R.string.act_need_internet), android.widget.Toast.LENGTH_LONG).show()
+                                return@launch
                             }
                             val msg = buildString {
                                 append(getString(R.string.act_msg_intro)).append('\n')
@@ -1734,10 +1764,8 @@ class MainActivity : AppCompatActivity() {
                                 chosen.forEach { append("• ${it.name} — ${com.elyedali.daftarustadh.data.ClassActivation.code(it.id)}\n") }
                                 append(getString(R.string.act_msg_total, total)).append('\n')
                                 append(getString(R.string.act_msg_account, signedIn?.email.orEmpty()))
-                                if (reqCode != null) {
-                                    append('\n').append(getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(reqCode)))
-                                    append('\n').append(getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode)))
-                                }
+                                append('\n').append(getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(reqCode)))
+                                append('\n').append(getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode)))
                             }
                             val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                             try {
@@ -1752,7 +1780,8 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     screen == Screen.OWNER_PANEL && com.elyedali.daftarustadh.auth.DsAuth.isOwner ->
-                        com.elyedali.daftarustadh.ui.OwnerPanelScreen(focusRequestId = ownerFocus, onBack = { ownerFocus = null; screen = Screen.HOME })
+                        com.elyedali.daftarustadh.ui.OwnerPanelScreen(focusRequestId = ownerFocus, focusExchangeId = ownerFocusEx,
+                            onBack = { ownerFocus = null; ownerFocusEx = null; screen = Screen.HOME })
 
                     screen == Screen.EXCHANGES -> {
                         val myPostsText by remember { metaDao.observe(EXCHANGE_POSTS_KEY) }.collectAsState(initial = null)
@@ -2349,15 +2378,19 @@ class MainActivity : AppCompatActivity() {
                                 scope.launch {
                                     val code = metaDao.get(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY) ?: com.elyedali.daftarustadh.data.TeacherActivation.newCode().also { metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY, it)) }
                                     val tName = (teacherProfile?.name ?: teacherName).orEmpty()
-                                    val reqCode = kotlinx.coroutines.withTimeoutOrNull(10_000) {
+                                    val reqCode = kotlinx.coroutines.withTimeoutOrNull(20_000) {
                                         com.elyedali.daftarustadh.auth.DsSubscriptions.request(
                                             com.elyedali.daftarustadh.auth.DsSubscriptions.APP_TEACHER, null, year,
                                             emptyList(), emptyList(), com.elyedali.daftarustadh.data.TeacherActivation.PRICE, tName)
                                     }
+                                    if (reqCode == null) {
+                                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.act_need_internet), android.widget.Toast.LENGTH_LONG).show()
+                                        return@launch
+                                    }
                                     val msg = getString(R.string.tact_msg, tName, year, code, com.elyedali.daftarustadh.data.TeacherActivation.PRICE) +
                                         "\n" + getString(R.string.act_msg_account, signedIn?.email.orEmpty()) +
-                                        (reqCode?.let { "\n" + getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(it)) +
-                                            "\n" + getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(it)) } ?: "")
+                                        "\n" + getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(reqCode)) +
+                                        "\n" + getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode))
                                     val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                                     try {
                                         startActivity(Intent(Intent.ACTION_VIEW, uri))
@@ -2658,6 +2691,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /** عند الرجوع إلى التطبيق: تحديث الاشتراكات (تفعيل جديد من لوحة التحكم يظهر دون إعادة فتح التطبيق). */
+    override fun onRestart() {
+        super.onRestart()
+        if (com.elyedali.daftarustadh.auth.DsAuth.user != null) lifecycleScope.launch {
+            com.elyedali.daftarustadh.auth.DsSubscriptions.refresh(DaftarDatabase.get(this@MainActivity))
+        }
+    }
+
     /** عند الخروج من التطبيق: رفع التغييرات إلى Drive في الخلفية. */
     override fun onStop() {
         super.onStop()
@@ -2679,7 +2720,8 @@ class MainActivity : AppCompatActivity() {
             else -> null
         }
         if (intent?.action == Intent.ACTION_VIEW && uri != null && uri.host == com.elyedali.daftarustadh.auth.DsSubscriptions.LINK_HOST) {
-            uri.getQueryParameter("r")?.takeIf { it.isNotBlank() }?.let { activationLink.value = it }
+            uri.getQueryParameter("r")?.takeIf { it.isNotBlank() }?.let { activationLink.value = "r:$it" }
+            uri.getQueryParameter("e")?.takeIf { it.isNotBlank() }?.let { activationLink.value = "e:$it" }
             return
         }
         if (uri != null) incomingFile.value = uri

@@ -894,4 +894,8 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="sync_devices">Appareils liés à ce compte :</string>
     <string name="sync_pending">Des modifications ne sont pas encore envoyées</string>
     <string name="op_owner_only">Ce lien d’activation est réservé au compte du propriétaire.</string>
+    <string name="act_need_internet">Envoi de la demande au serveur impossible. Vérifiez internet puis réessayez.</string>
+    <string name="sync_logout_blocked">Vos données ne sont pas encore envoyées sur Google Drive. Connectez-vous à internet et appuyez sur « Synchroniser » avant de vous déconnecter pour ne rien perdre.</string>
+    <string name="sync_logout_title">Se déconnecter sans envoyer ?</string>
+    <string name="sync_logout_anyway">Se déconnecter quand même</string>
 </resources>
