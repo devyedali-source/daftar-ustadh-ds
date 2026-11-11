@@ -237,7 +237,7 @@
     <string name="rf_state_partial">ناقص %1$d من %2$d</string>
     <string name="rf_state_missing">لم يصل</string>
     <string name="login_google">الدخول بحساب Google</string>
-    <string name="login_hint">سجّل الدخول بحساب Google لتفعيل اشتراكك وحفظه. بعد الدخول يعمل التطبيق بلا إنترنت.</string>
+    <string name="login_hint">سجّل الدخول بحساب Google لإدراج نتائج تلاميذك وتصفّح المراجع، وتبقى بياناتك محفوظة في حسابك. بعد الدخول يعمل التطبيق بلا إنترنت.</string>
     <string name="login_failed">تعذّر الدخول. تأكد من الإنترنت ثم أعد المحاولة.</string>
     <string name="menu_about">حول التطبيق</string>
     <string name="about_soon">ستُجهَّز هذه الصفحة قريبًا.</string>

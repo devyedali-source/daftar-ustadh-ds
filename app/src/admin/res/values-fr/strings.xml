@@ -3,4 +3,5 @@
     <string name="app_name">إدارة DS</string>
     <string name="home_choose_year_title">إدارة DS - Choix de l\'année 📅</string>
     <string name="drawer_footer">إدارة DS\nTous droits réservés © المختار اليدالى</string>
+    <string name="login_hint">Connectez-vous avec Google pour gérer les classes, les notes et les bulletins de votre établissement ; vos données restent sauvegardées dans votre compte. Ensuite, l\'application fonctionne sans Internet.</string>
 </resources>

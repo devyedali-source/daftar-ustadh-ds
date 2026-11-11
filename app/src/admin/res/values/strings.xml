@@ -3,4 +3,5 @@
     <string name="app_name">إدارة DS</string>
     <string name="home_choose_year_title">إدارة DS - اختيار السنة الدراسية 📅</string>
     <string name="drawer_footer">إدارة DS\nجميع الحقوق محفوظة © المختار اليدالى</string>
+    <string name="login_hint">سجّل الدخول بحساب Google لتسيير أقسام مؤسستك ونتائجها وكشوفها، وتبقى بياناتك محفوظة في حسابك. بعد الدخول يعمل التطبيق بلا إنترنت.</string>
 </resources>
