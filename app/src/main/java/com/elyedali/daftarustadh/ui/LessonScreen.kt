@@ -72,9 +72,23 @@ fun LessonDialog(
     week: String,
     bookAsset: String,
     bookTitle: String,
+    /** رمز المادة: الإنجليزية (ANG) تُعرض عناوينها بالإنجليزية، ومواد الفرنسية بالفرنسية. */
+    subjectCode: String? = null,
     onDismiss: () -> Unit
 ) {
     var view by rememberSaveable { mutableStateOf(0) }   // 0 التحضير، 1 الكتاب، 2 السبورة
+    // دروس الفرنسية والإنجليزية: كل العناوين بلغة الدرس (قد لا يفهم الأستاذ العربية)، والصفحة من اليسار إلى اليمين
+    val labels = lessonLabels(lesson, subjectCode)
+    val ltr = labels != null
+    androidx.compose.runtime.CompositionLocalProvider(
+        androidx.compose.ui.platform.LocalLayoutDirection provides
+            if (ltr) androidx.compose.ui.unit.LayoutDirection.Ltr else androidx.compose.ui.platform.LocalLayoutDirection.current
+    ) {
+    val L = labels ?: LessonLabels(
+        stringResource(R.string.lesson_prep), stringResource(R.string.lesson_book), stringResource(R.string.lesson_board),
+        stringResource(R.string.lesson_pages, lesson.pageFrom, lesson.pageTo), stringResource(R.string.lesson_objectives),
+        stringResource(R.string.lesson_intro), stringResource(R.string.lesson_summary), stringResource(R.string.lesson_points),
+        stringResource(R.string.lesson_application))
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
         Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
             // لا يختفي أسفل المحتوى (مثل زر «إظهار الإجابة») تحت أزرار الهاتف
@@ -82,31 +96,48 @@ fun LessonDialog(
                 Row(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.primary).padding(horizontal = 8.dp, vertical = 10.dp),
                     verticalAlignment = Alignment.CenterVertically) {
                     TextButton(onClick = { if (view != 0) view = 0 else onDismiss() }) {
-                        Text("→", color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.Black)
+                        Text(if (ltr) "←" else "→", color = Color.White, fontSize = 22.sp, fontWeight = FontWeight.Black)
                     }
                     Column(Modifier.weight(1f)) {
                         Text(lesson.title, color = Color.White, fontWeight = FontWeight.Black, fontSize = 17.sp, maxLines = 2)
-                        Text("$subjectLabel — $week", color = Color.White.copy(alpha = 0.85f), fontSize = 12.sp, maxLines = 1)
+                        Text(if (ltr) week else "$subjectLabel — $week", color = Color.White.copy(alpha = 0.85f), fontSize = 12.sp, maxLines = 1)
                     }
                 }
                 Row(Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    ViewButton("📝 " + stringResource(R.string.lesson_prep), view == 0, Modifier.weight(1f)) { view = 0 }
-                    ViewButton("📖 " + stringResource(R.string.lesson_book), view == 1, Modifier.weight(1f)) { view = 1 }
-                    ViewButton("🧑‍🏫 " + stringResource(R.string.lesson_board), view == 2, Modifier.weight(1f)) { view = 2 }
+                    ViewButton("📝 " + L.prep, view == 0, Modifier.weight(1f)) { view = 0 }
+                    ViewButton("📖 " + L.book, view == 1, Modifier.weight(1f)) { view = 1 }
+                    ViewButton("🧑‍🏫 " + L.board, view == 2, Modifier.weight(1f)) { view = 2 }
                 }
                 Box(Modifier.weight(1f)) {
                     when (view) {
                         1 -> BookPages(bookAsset, lesson.pageFrom, lesson.pageTo, bookTitle)
                         // دروس المواد التي تُدرَّس بالفرنسية أو الإنجليزية: السبورة تُكتب من اليسار إلى اليمين
-                        2 -> if (isLatinLesson(lesson)) androidx.compose.runtime.CompositionLocalProvider(
-                            androidx.compose.ui.platform.LocalLayoutDirection provides androidx.compose.ui.unit.LayoutDirection.Ltr
-                        ) { BoardView(lesson, bookAsset) } else BoardView(lesson, bookAsset)
-                        else -> PrepView(lesson)
+                        2 -> BoardView(lesson, bookAsset)
+                        else -> PrepView(lesson, L)
                     }
                 }
             }
         }
     }
+    }
+}
+
+/** عناوين صفحة الدرس. */
+private data class LessonLabels(
+    val prep: String, val book: String, val board: String, val pages: String,
+    val objectives: String, val intro: String, val summary: String, val points: String, val application: String
+)
+
+/** عناوين بلغة الدرس لدروس الفرنسية والإنجليزية، أو null لدروس العربية (تبقى بلغة التطبيق). */
+private fun lessonLabels(l: BookLesson, subjectCode: String?): LessonLabels? {
+    if (!isLatinLesson(l)) return null
+    val pages = "${l.pageFrom} – ${l.pageTo}"
+    return if (subjectCode == "ANG") LessonLabels(
+        "Lesson plan", "Textbook", "Board", "Lesson pages in the textbook: $pages",
+        "Objectives", "Introduction", "Summary", "Key points", "Short exercise")
+    else LessonLabels(
+        "Préparation", "Manuel", "Tableau", "Pages de la leçon dans le manuel : $pages",
+        "Objectifs", "Introduction", "Résumé", "Points essentiels", "Petite application")
 }
 
 /** الدرس مكتوب بحروف لاتينية (فرنسية أو إنجليزية): الحروف اللاتينية أكثر من العربية في عنوانه ومحتوى سبورته. */
@@ -130,19 +161,19 @@ private fun ViewButton(label: String, selected: Boolean, modifier: Modifier, onC
 
 /** التحضير القصير: الأهداف، المقدمة، الملخص، أهم النقاط، تطبيق صغير. */
 @Composable
-private fun PrepView(l: BookLesson) {
+private fun PrepView(l: BookLesson, L: LessonLabels) {
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(start = 12.dp, end = 12.dp, top = 12.dp, bottom = 40.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)) {
         item {
-            Text(stringResource(R.string.lesson_pages, l.pageFrom, l.pageTo), fontSize = 12.sp,
+            Text(L.pages, fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
-        item { PrepCard("🎯 " + stringResource(R.string.lesson_objectives), Color(0xFFE3F2FD)) { l.objectives.forEach { Text("• $it", fontSize = 14.sp) } } }
-        item { PrepCard("🚪 " + stringResource(R.string.lesson_intro), Color(0xFFE8F5E9)) { Text(l.intro, fontSize = 14.sp, lineHeight = 22.sp) } }
-        item { PrepCard("📄 " + stringResource(R.string.lesson_summary), Color(0xFFFFF8E1)) { Text(l.summary, fontSize = 14.sp, lineHeight = 22.sp) } }
-        item { PrepCard("⭐ " + stringResource(R.string.lesson_points), Color(0xFFF3E5F5)) { l.points.forEach { Text("• $it", fontSize = 14.sp, lineHeight = 21.sp) } } }
+        item { PrepCard("🎯 " + L.objectives, Color(0xFFE3F2FD)) { l.objectives.forEach { Text("• $it", fontSize = 14.sp) } } }
+        item { PrepCard("🚪 " + L.intro, Color(0xFFE8F5E9)) { Text(l.intro, fontSize = 14.sp, lineHeight = 22.sp) } }
+        item { PrepCard("📄 " + L.summary, Color(0xFFFFF8E1)) { Text(l.summary, fontSize = 14.sp, lineHeight = 22.sp) } }
+        item { PrepCard("⭐ " + L.points, Color(0xFFF3E5F5)) { l.points.forEach { Text("• $it", fontSize = 14.sp, lineHeight = 21.sp) } } }
         item {
-            PrepCard("✍️ " + stringResource(R.string.lesson_application), Color(0xFFFFEBEE)) {
+            PrepCard("✍️ " + L.application, Color(0xFFFFEBEE)) {
                 Text(l.applicationQ, fontSize = 14.sp, fontWeight = FontWeight.SemiBold, lineHeight = 22.sp)
             }
         }
