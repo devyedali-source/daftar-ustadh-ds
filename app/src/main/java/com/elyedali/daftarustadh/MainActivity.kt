@@ -201,9 +201,10 @@ class MainActivity : AppCompatActivity() {
                     // الاشتراكات المحفوظة تُطبّق فورًا (بلا إنترنت)، ثم تُحدَّث من الخادم
                     com.elyedali.daftarustadh.auth.DsSubscriptions.apply(db)
                     // حساب آخر على نفس الهاتف: لا تختلط البيانات
-                    com.elyedali.daftarustadh.sync.DriveSync.prepareAccount(this@MainActivity, db)
+                    if (com.elyedali.daftarustadh.sync.DriveSync.prepareAccount(this@MainActivity, db)) { recreate(); return@LaunchedEffect }
                     // بيانات تجريبية لحساب صاحب التطبيق فقط
-                    withContext(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db, me.email.orEmpty()) }
+                    if (db.instKey == com.elyedali.daftarustadh.data.Institutions.MAIN)
+                        withContext(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db, me.email.orEmpty()) }
                     com.elyedali.daftarustadh.sync.DriveSync.init(this@MainActivity, db)
                     launch { com.elyedali.daftarustadh.auth.DsAuth.registerUser(me) }   // لا ينتظر (بلا إنترنت لا يكتمل)
                     withContext(Dispatchers.IO) { com.elyedali.daftarustadh.auth.TrustedClock.syncWithServer() }
@@ -264,6 +265,36 @@ class MainActivity : AppCompatActivity() {
                 var showStaffShare by remember { mutableStateOf(false) }
                 val staffText by remember { metaDao.observe(com.elyedali.daftarustadh.ui.AdminStaff.KEY) }.collectAsState(initial = null)
                 val inst = institution
+                // تطبيق الإدارة: اسم المؤسسة المفتوحة في قائمة «مؤسساتي»
+                LaunchedEffect(inst?.schoolName, inst?.wilaya) {
+                    if (AppRole.isAdmin && inst != null)
+                        com.elyedali.daftarustadh.data.Institutions.rename(this@MainActivity, db.instKey, inst.schoolName, inst.wilaya)
+                }
+                var showInstitutions by remember { mutableStateOf(false) }
+                if (showInstitutions) com.elyedali.daftarustadh.ui.InstitutionsDialog(
+                    entries = com.elyedali.daftarustadh.data.Institutions.list(this@MainActivity),
+                    current = db.instKey,
+                    onOpen = { key ->
+                        showInstitutions = false
+                        if (key != db.instKey) scope.launch {
+                            // رفع تغييرات المؤسسة الحالية قبل الانتقال
+                            if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
+                                kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
+                            DaftarDatabase.switchTo(this@MainActivity, key)
+                            recreate()
+                        }
+                    },
+                    onCreate = {
+                        showInstitutions = false
+                        scope.launch {
+                            if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
+                                kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
+                            DaftarDatabase.switchTo(this@MainActivity, com.elyedali.daftarustadh.data.Institutions.create(this@MainActivity))
+                            recreate()
+                        }
+                    },
+                    onDismiss = { showInstitutions = false }
+                )
                 // تطبيق الأستاذ: مؤسسات سجّلها بنفسه (عمله الفردي، دون ملف من الإدارة)
                 val selfSchoolIds = if (AppRole.isAdmin) emptySet() else institutions.filter { it.isOwn }.map { it.id }.toSet()
                 var addingSelfSchool by rememberSaveable { mutableStateOf(false) }
@@ -1417,12 +1448,13 @@ class MainActivity : AppCompatActivity() {
                                             else -> {}
                                         }
                                     }
+                                    "INSTITUTIONS" -> showInstitutions = true
                                     "OWNER_PANEL" -> { ownerFocus = null; ownerFocusEx = null; screen = Screen.OWNER_PANEL }
                                     "LOGOUT" -> scope.launch {
                                         // رفع آخر التغييرات قبل الخروج حتى لا يضيع شيء
-                                        if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity))
+                                        if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
                                             kotlinx.coroutines.withTimeoutOrNull(60_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
-                                        if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity)) logoutUnsynced = true
+                                        if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db)) logoutUnsynced = true
                                         else { com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null }
                                     }
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }

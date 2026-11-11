@@ -72,29 +72,33 @@ object DriveSync {
     private val mutex = Mutex()
     @Volatile private var ctx: Context? = null
     @Volatile private var suppressUntil = 0L
-    private var observing = false
+    private var observedDb: DaftarDatabase? = null
 
     private fun prefs(c: Context) = c.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
     private fun emailKey() = (DsAuth.user?.email ?: "none").lowercase()
+    /** المؤسسة المفتوحة (تطبيق الإدارة: لكل مؤسسة نسختها في Drive). */
+    /** لاحقة مفاتيح الحفظ: لا شيء للمؤسسة الأولى (كما كانت)، ومفتاح المؤسسة لغيرها. */
+    private fun sfx(db: DaftarDatabase): String = emailKey() + db.instKey.let { if (it == com.elyedali.daftarustadh.data.Institutions.MAIN) "" else "__$it" }
     private fun appName() = if (AppRole.isAdmin) "admin" else "teacher"
 
     /** يبدأ متابعة التغييرات على الهاتف (لمعرفة هل تغيّر شيء منذ آخر مزامنة). */
     fun init(context: Context, db: DaftarDatabase) {
         ctx = context.applicationContext
         val p = prefs(context)
-        _lastSync.value = p.getLong("last_${emailKey()}", 0L)
-        _devices.value = decodeDevices(p.getString("devices_${emailKey()}", null))
-        if (observing) return
-        observing = true
+        _lastSync.value = p.getLong("last_${sfx(db)}", 0L)
+        _devices.value = decodeDevices(p.getString("devices_${sfx(db)}", null))
+        if (observedDb === db) return
+        observedDb = db
         scope.launch {
             try {
                 val tables = userTables(db).toTypedArray()
                 if (tables.isEmpty()) return@launch
+                val key = sfx(db)   // تغييرات هذه القاعدة تُحسب لمؤسستها هي
                 db.invalidationTracker.addObserver(object : InvalidationTracker.Observer(tables) {
                     override fun onInvalidated(tables: Set<String>) {
                         if (System.currentTimeMillis() < suppressUntil) return
                         val c = ctx ?: return
-                        prefs(c).edit().putLong("changed_${emailKey()}", TrustedClock.now()).apply()
+                        prefs(c).edit().putLong("changed_$key", TrustedClock.now()).apply()
                     }
                 })
             } catch (e: Exception) { }
@@ -104,31 +108,39 @@ object DriveSync {
     /**
      * هاتف يدخل إليه حساب آخر غير صاحب البيانات الموجودة: تُفرَّغ بيانات الحساب السابق من الهاتف
      * (هي محفوظة في Drive حسابه)، ثم تأتي بيانات الحساب الجديد من Drive حسابه. لا تختلط بيانات حسابين أبدًا.
-     */
-    suspend fun prepareAccount(context: Context, db: DaftarDatabase) = withContext(Dispatchers.IO) {
-        val email = DsAuth.user?.email?.lowercase() ?: return@withContext
+     * يرجع true إذا وجب إعادة فتح الشاشة (كانت مفتوحة على مؤسسة أخرى للحساب السابق). */
+    suspend fun prepareAccount(context: Context, db: DaftarDatabase): Boolean = withContext(Dispatchers.IO) {
+        val email = DsAuth.user?.email?.lowercase() ?: return@withContext false
         val p = prefs(context)
         val owner = p.getString("db_owner", null)
-        if (owner == null) { p.edit().putString("db_owner", email).apply(); return@withContext }
-        if (owner == email) return@withContext
+        if (owner == null) { p.edit().putString("db_owner", email).apply(); return@withContext false }
+        if (owner == email) return@withContext false
+        // مؤسسات الحساب السابق (الإضافية) تُحذف من الهاتف، ويُرجع إلى المؤسسة الأولى
+        val restart = DaftarDatabase.openKey != com.elyedali.daftarustadh.data.Institutions.MAIN
+        com.elyedali.daftarustadh.data.Institutions.resetAll(context)
+        val main = if (!restart) db else {
+            DaftarDatabase.switchTo(context, com.elyedali.daftarustadh.data.Institutions.MAIN)
+            DaftarDatabase.get(context)
+        }
         suppressUntil = System.currentTimeMillis() + 5_000
-        db.runInTransaction(Runnable {
-            val w = db.openHelper.writableDatabase
-            userTables(db).forEach { t -> w.execSQL("DELETE FROM `$t`") }
+        main.runInTransaction(Runnable {
+            val w = main.openHelper.writableDatabase
+            userTables(main).forEach { t -> w.execSQL("DELETE FROM `$t`") }
         })
         p.edit().putString("db_owner", email).apply()
         _lastSync.value = 0L
-        p.edit().remove("last_${emailKey()}").remove("changed_${emailKey()}").apply()
+        p.edit().remove("last_${sfx(main)}").remove("changed_${sfx(main)}").apply()
         _devices.value = emptyList()
+        restart
     }
 
-    private fun changedAt(c: Context) = prefs(c).getLong("changed_${emailKey()}", 0L)
-    fun hasLocalChanges(c: Context) = changedAt(c) > prefs(c).getLong("last_${emailKey()}", 0L)
+    private fun changedAt(c: Context, db: DaftarDatabase) = prefs(c).getLong("changed_${sfx(db)}", 0L)
+    fun hasLocalChanges(c: Context, db: DaftarDatabase) = changedAt(c, db) > prefs(c).getLong("last_${sfx(db)}", 0L)
 
     /** مزامنة في الخلفية (لا تُظهر شيئًا إن لم يكن هناك إنترنت). */
     fun syncInBackground(context: Context, db: DaftarDatabase, onlyIfChanged: Boolean = false) {
         if (DsAuth.user == null) return
-        if (onlyIfChanged && !hasLocalChanges(context)) return
+        if (onlyIfChanged && !hasLocalChanges(context, db)) return
         scope.launch { sync(context, db) }
     }
 
@@ -141,10 +153,10 @@ object DriveSync {
             val result = try {
                 TrustedClock.syncWithServer()
                 val token = token(c)
-                val name = fileName()
+                val name = fileName(db)
                 val fileId = findFile(token, name)
                 val p = prefs(c)
-                val ek = emailKey()
+                val ek = sfx(db)
                 val last = p.getLong("last_$ek", 0L)
                 var devices = decodeDevices(p.getString("devices_$ek", null))
                 if (fileId != null) {
@@ -155,7 +167,7 @@ object DriveSync {
                     val remoteAt = remote.optLong("savedAt")
                     val remoteDevice = remote.optString("deviceId")
                     if (remoteAt > last && remoteDevice != deviceId(c)) {
-                        val localChanged = changedAt(c)
+                        val localChanged = changedAt(c, db)
                         when {
                             // أول مزامنة لهاتف فيه بيانات: دمج بلا حذف (لا يضيع شيء مما على الهاتف)
                             last == 0L && hasData(db) -> restore(db, remote, replace = false, remoteWins = true)
@@ -172,7 +184,10 @@ object DriveSync {
                 val id = fileId ?: createFile(token, name)
                 val size = upload(token, id, payload)
                 if (size != payload.size.toLong()) throw SyncException("verify")
-                p.edit().putLong("last_$ek", now).putLong("changed_$ek", minOf(changedAt(c), now))
+                if (AppRole.isAdmin) {
+                    try { describe(token, id, db); discover(c, token) } catch (e: Exception) { }
+                }
+                p.edit().putLong("last_$ek", now).putLong("changed_$ek", minOf(changedAt(c, db), now))
                     .putString("devices_$ek", encodeDevices(devices)).apply()
                 _lastSync.value = now
                 _devices.value = devices
@@ -280,9 +295,36 @@ object DriveSync {
         return GoogleAuthUtil.getToken(c, account, SCOPE)
     }
 
-    private fun fileName(): String {
-        val clean = emailKey().replace(Regex("[^a-z0-9_]"), "_")
-        return "ds_${appName()}_backup_$clean.json.gz"
+    private fun cleanEmail() = emailKey().replace(Regex("[^a-z0-9_]"), "_")
+    private fun fileName(db: DaftarDatabase): String {
+        val k = db.instKey
+        return "ds_${appName()}_backup_${cleanEmail()}" + (if (k == com.elyedali.daftarustadh.data.Institutions.MAIN) "" else "__$k") + ".json.gz"
+    }
+
+    /** اسم المؤسسة المفتوحة وولايتها، يُكتبان مع نسخة Drive لتظهر في هاتف آخر لنفس الحساب. */
+    private suspend fun describe(token: String, id: String, db: DaftarDatabase) {
+        val own = db.institutionDao().getOwn() ?: return
+        val props = JSONObject().put("dsInst", db.instKey).put("instName", own.schoolName.take(100)).put("wilaya", own.wilaya.take(60))
+        http("https://www.googleapis.com/drive/v3/files/$id?fields=id", "PATCH", token,
+            JSONObject().put("appProperties", props).toString().toByteArray(), "application/json; charset=utf-8")
+    }
+
+    /** مؤسسات هذا الحساب الموجودة في Drive (تطبيق الإدارة): تُضاف إلى قائمة المؤسسات في هذا الهاتف. */
+    private fun discover(c: Context, token: String) {
+        val q = URLEncoder.encode("name contains 'ds_admin_backup_${cleanEmail()}' and trashed=false", "UTF-8")
+        val (_, b) = http("https://www.googleapis.com/drive/v3/files?q=$q&spaces=drive&fields=files(id,name,appProperties)", "GET", token)
+        val files = JSONObject(String(b)).optJSONArray("files") ?: return
+        for (i in 0 until files.length()) {
+            val f = files.getJSONObject(i)
+            val n = f.optString("name")
+            val prefix = "ds_admin_backup_${cleanEmail()}"
+            if (!n.startsWith(prefix) || !n.endsWith(".json.gz")) continue
+            val rest = n.removePrefix(prefix).removeSuffix(".json.gz")
+            if (rest.isNotEmpty() && !rest.startsWith("__")) continue   // حساب آخر يبدأ بنفس الحروف
+            val key = rest.removePrefix("__").ifBlank { com.elyedali.daftarustadh.data.Institutions.MAIN }
+            val p = f.optJSONObject("appProperties")
+            com.elyedali.daftarustadh.data.Institutions.addKnown(c, key, p?.optString("instName").orEmpty(), p?.optString("wilaya").orEmpty())
+        }
     }
 
     private fun http(url: String, method: String, token: String, body: ByteArray? = null, type: String? = null): Pair<Int, ByteArray> {

@@ -101,6 +101,8 @@ fun AppDrawer(
             Text(stringResource(R.string.drawer_menu), fontWeight = FontWeight.Bold, fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp))
             Item("🏫", R.string.drawer_home, current == "HOME") { onItem("HOME") }
+            if (com.elyedali.daftarustadh.AppRole.isAdmin)
+                Item("🏢", R.string.inst_my, false) { onItem("INSTITUTIONS") }
             // التبادلات وكتبي في تطبيق الأستاذ فقط
             if (!com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("🤝", R.string.menu_exchanges, current == "EXCHANGES") { onItem("EXCHANGES") }

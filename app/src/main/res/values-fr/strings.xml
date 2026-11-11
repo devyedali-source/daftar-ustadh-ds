@@ -898,4 +898,11 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="sync_logout_blocked">Vos données ne sont pas encore envoyées sur Google Drive. Connectez-vous à internet et appuyez sur « Synchroniser » avant de vous déconnecter pour ne rien perdre.</string>
     <string name="sync_logout_title">Se déconnecter sans envoyer ?</string>
     <string name="sync_logout_anyway">Se déconnecter quand même</string>
+    <string name="inst_my">Mes établissements</string>
+    <string name="inst_new">Nouvel établissement</string>
+    <string name="inst_create">Créer</string>
+    <string name="inst_hint">Chaque établissement a ses classes, élèves, professeurs, emploi du temps et son propre abonnement par année scolaire. Touchez un établissement pour l’ouvrir.</string>
+    <string name="inst_new_hint">Une page vide s’ouvrira pour enregistrer le nouvel établissement et ses classes. L’établissement actuel reste intact ; vous y revenez depuis « Mes établissements ».</string>
+    <string name="inst_unnamed">Établissement non encore enregistré</string>
+    <string name="inst_current">Ouvert actuellement</string>
 </resources>

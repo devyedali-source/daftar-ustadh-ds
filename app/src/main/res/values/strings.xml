@@ -898,4 +898,11 @@
     <string name="sync_logout_blocked">بياناتك لم تُرفع إلى Google Drive بعد. اتصل بالإنترنت ثم اضغط «مزامنة الآن» قبل تسجيل الخروج حتى لا تضيع.</string>
     <string name="sync_logout_title">الخروج قبل رفع البيانات؟</string>
     <string name="sync_logout_anyway">خروج رغم ذلك</string>
+    <string name="inst_my">مؤسساتي</string>
+    <string name="inst_new">مؤسسة جديدة</string>
+    <string name="inst_create">إنشاء</string>
+    <string name="inst_hint">كل مؤسسة لها أقسامها وتلاميذها وأساتذتها وجدولها، واشتراكها الخاص لكل سنة دراسية. اضغط على مؤسسة لفتحها.</string>
+    <string name="inst_new_hint">ستُفتح صفحة فارغة لتسجيل المؤسسة الجديدة وأقسامها. مؤسستك الحالية تبقى محفوظة كما هي وتعود إليها من «مؤسساتي».</string>
+    <string name="inst_unnamed">مؤسسة لم تُسجَّل بعد</string>
+    <string name="inst_current">مفتوحة الآن</string>
 </resources>

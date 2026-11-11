@@ -31,6 +31,9 @@ abstract class DaftarDatabase : RoomDatabase() {
     abstract fun absenceDao(): AbsenceDao
     abstract fun timetableDao(): TimetableDao
 
+    /** مفتاح المؤسسة التي تخص هذه القاعدة (تطبيق الإدارة). */
+    @Volatile var instKey: String = Institutions.MAIN
+
     companion object {
         @Volatile private var instance: DaftarDatabase? = null
 
@@ -186,13 +189,26 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** مفتاح المؤسسة التي فُتحت قاعدتها (تطبيق الإدارة: لكل مؤسسة قاعدة منفصلة). */
+        @Volatile var openKey: String? = null
+            private set
+
+        /** إغلاق القاعدة الحالية قبل الانتقال إلى مؤسسة أخرى (ثم يُعاد تشغيل الشاشة). */
+        fun switchTo(context: Context, key: String) = synchronized(this) {
+            Institutions.setActive(context, key)
+            // لا تُغلق القديمة فورًا (قد تكون شاشة ما زالت تقرأ منها)؛ تُترك ثم تُفتح قاعدة المؤسسة الأخرى
+            instance = null
+            openKey = null
+        }
+
         fun get(context: Context): DaftarDatabase =
             instance ?: synchronized(this) {
+                val key = Institutions.active(context)
                 instance ?: Room.databaseBuilder(
                     context.applicationContext,
                     DaftarDatabase::class.java,
-                    "daftar_ustadh_ds.db"
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12).build().also { instance = it }
+                    Institutions.dbName(key)
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12).build().also { it.instKey = key; instance = it; openKey = key }
             }
     }
 }
