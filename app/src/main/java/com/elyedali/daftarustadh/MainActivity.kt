@@ -203,8 +203,12 @@ class MainActivity : AppCompatActivity() {
                     // حساب آخر على نفس الهاتف: لا تختلط البيانات
                     if (com.elyedali.daftarustadh.sync.DriveSync.prepareAccount(this@MainActivity, db)) { recreate(); return@LaunchedEffect }
                     // بيانات تجريبية لحساب صاحب التطبيق فقط
-                    if (db.instKey == com.elyedali.daftarustadh.data.Institutions.MAIN)
-                        withContext(Dispatchers.IO) { com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db, me.email.orEmpty()) }
+                    withContext(Dispatchers.IO) {
+                        // غير صاحب التطبيق: لا تبقى عنده أي بيانات تجريبية، فقط ما سجّله هو
+                        com.elyedali.daftarustadh.data.DemoData.removeIfNotOwner(db, me.email)
+                        if (db.instKey == com.elyedali.daftarustadh.data.Institutions.MAIN)
+                            com.elyedali.daftarustadh.data.DemoData.seedIfNeeded(this@MainActivity, db, me.email.orEmpty())
+                    }
                     com.elyedali.daftarustadh.sync.DriveSync.init(this@MainActivity, db)
                     launch { com.elyedali.daftarustadh.auth.DsAuth.registerUser(me) }   // لا ينتظر (بلا إنترنت لا يكتمل)
                     withContext(Dispatchers.IO) { com.elyedali.daftarustadh.auth.TrustedClock.syncWithServer() }
@@ -1887,7 +1891,7 @@ class MainActivity : AppCompatActivity() {
                                         onShare = { type -> share(c, type) },
                                         showHeader = false,
                                         onCards = { shareClassCards(c) },
-                                        onDemo = if (com.elyedali.daftarustadh.data.DemoData.allowedFor(null)) ({
+                                        onDemo = if (com.elyedali.daftarustadh.data.DemoData.allowedFor(signedIn?.email)) ({
                                             scope.launch { studentDao.saveAll(com.elyedali.daftarustadh.data.DemoData.sampleStudents(c.id)) }
                                         }) else null
                                     )

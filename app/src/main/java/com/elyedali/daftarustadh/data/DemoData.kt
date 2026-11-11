@@ -1,7 +1,6 @@
 package com.elyedali.daftarustadh.data
 
 import android.content.Context
-import com.elyedali.daftarustadh.BuildConfig
 import kotlin.random.Random
 
 /**
@@ -16,8 +15,30 @@ object DemoData {
     private const val SEEDED_KEY = "demo_seeded"
     private const val YEAR = "2026-2027"
 
-    fun allowedFor(email: String?): Boolean =
-        if (email != null) email.equals(OWNER_EMAIL, ignoreCase = true) else BuildConfig.DEBUG
+    /** البيانات التجريبية لحساب صاحب التطبيق فقط، ولا أحد غيره (ولا في نسخ التجربة). */
+    fun allowedFor(email: String?): Boolean = email != null && email.equals(OWNER_EMAIL, ignoreCase = true)
+
+    /**
+     * أي حساب غير صاحب التطبيق: تُحذف البيانات التجريبية إن وُجدت في هاتفه (من نسخ تجربة سابقة)،
+     * فلا يبقى له إلا ما سجّله هو. كل معرّفاتها تبدأ بـ «demo-»، فلا يُمسّ شيء حقيقي.
+     */
+    fun removeIfNotOwner(db: DaftarDatabase, email: String?) {
+        if (allowedFor(email)) return
+        db.runInTransaction(Runnable {
+            val w = db.openHelper.writableDatabase
+            val tables = ArrayList<String>()
+            w.query("SELECT name FROM sqlite_master WHERE type='table'").use { c -> while (c.moveToNext()) tables += c.getString(0) }
+            for (t in tables) {
+                if (t.startsWith("sqlite_") || t == "android_metadata" || t == "room_master_table") continue
+                val cols = HashSet<String>()
+                w.query("PRAGMA table_info(`$t`)").use { c -> val i = c.getColumnIndex("name"); while (c.moveToNext()) cols += c.getString(i) }
+                listOf("id", "classId", "institutionId", "studentId").filter { it in cols }.forEach { col ->
+                    w.execSQL("DELETE FROM `$t` WHERE `$col` LIKE 'demo-%'")
+                }
+            }
+            w.execSQL("DELETE FROM app_meta WHERE `key` = '$SEEDED_KEY'")
+        })
+    }
 
     suspend fun seedIfNeeded(context: Context, db: DaftarDatabase, email: String? = null) {
         if (!allowedFor(email)) return
