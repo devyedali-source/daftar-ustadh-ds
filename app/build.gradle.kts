@@ -44,8 +44,19 @@ android {
     if (!buildingAdmin) assetPacks += ":books"
 
     // R8: تصغير الشيفرة وحذف الموارد غير المستعملة (يُطبَّق على النسخة التي يبنيها GitHub)
+    // مفتاح ثابت لنسخ التجربة: بصمته SHA-1 مسجلة في Firebase فيعمل الدخول بحساب Google في كل بناء
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     buildTypes {
         debug {
+            signingConfig = signingConfigs.getByName("debug")
             // نسخة التجربة لهواتف أندرويد الحقيقية فقط (أصغر حجمًا)؛ نسخة المتجر يقسّمها المتجر لكل هاتف تلقائيًا
             ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
             isMinifyEnabled = true

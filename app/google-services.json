@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "398146261006",
+    "project_id": "moctar-gratuit",
+    "storage_bucket": "moctar-gratuit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398146261006:android:dd23a248d674ecfe496c5f",
+        "android_client_info": {
+          "package_name": "com.elyedali.daftarustadh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398146261006-dta7dfe0qfptuqtkrbgk3j59ojmhjf2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfqjzkF9Yjv9RTG3jExL8yLng7FeZ8HIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398146261006-dta7dfe0qfptuqtkrbgk3j59ojmhjf2n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "398146261006-8r5p7ddv675j1ol8bqbmj9hcqor468ar.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elyedali.daftarustadh.teacher"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398146261006:android:8895e63528c6fc83496c5f",
+        "android_client_info": {
+          "package_name": "com.elyedali.daftarustadh.teacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398146261006-dta7dfe0qfptuqtkrbgk3j59ojmhjf2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfqjzkF9Yjv9RTG3jExL8yLng7FeZ8HIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398146261006-dta7dfe0qfptuqtkrbgk3j59ojmhjf2n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "398146261006-8r5p7ddv675j1ol8bqbmj9hcqor468ar.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elyedali.daftarustadh.teacher"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
