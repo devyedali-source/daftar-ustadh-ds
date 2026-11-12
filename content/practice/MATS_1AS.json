@@ -1,0 +1,123 @@
+{
+ "subject": "MATS",
+ "level": "1AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Mai S3",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision sur les activités numériques",
+   "covers": [
+    "Entiers naturels",
+    "Décimaux positifs",
+    "Fractions",
+    "Proportionnalité et pourcentage",
+    "Statistique"
+   ],
+   "items": [
+    {
+     "title": "Calculs sur les entiers naturels",
+     "text": "Calculer :\na = 245 + 78 − 63\nb = 1 000 − 357\nc = 25 × 4 × 17\nd = 1 248 ÷ 8",
+     "solution": "a = 323 − 63 = 260\nb = 643\nc = 100 × 17 = 1 700\nd = 156"
+    },
+    {
+     "title": "Priorités opératoires",
+     "text": "Calculer en respectant les priorités :\nA = 18 + 6 × 5\nB = (18 + 6) × 5\nC = 60 − 24 ÷ 4 + 3\nD = 7 × (9 − 4) − 2 × 5",
+     "solution": "A = 18 + 30 = 48\nB = 24 × 5 = 120\nC = 60 − 6 + 3 = 57\nD = 7 × 5 − 10 = 35 − 10 = 25"
+    },
+    {
+     "title": "Division euclidienne",
+     "text": "1) Effectuer la division euclidienne de 587 par 12, puis écrire l'égalité correspondante.\n2) Même question pour 1 000 et 37.",
+     "solution": "1) 587 = 12 × 48 + 11 (quotient 48, reste 11 < 12)\n2) 1 000 = 37 × 27 + 1 (quotient 27, reste 1)"
+    },
+    {
+     "title": "Critères de divisibilité",
+     "text": "On donne les nombres : 120 ; 135 ; 246 ; 315 ; 1 008.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier.",
+     "solution": "a) Par 2 (chiffre des unités pair) : 120 ; 246 ; 1 008.\nb) Par 3 (somme des chiffres multiple de 3) : tous (3 ; 9 ; 12 ; 9 ; 9).\nc) Par 5 (unités 0 ou 5) : 120 ; 135 ; 315.\nd) Par 9 (somme des chiffres multiple de 9) : 135 ; 315 ; 1 008."
+    },
+    {
+     "title": "Écriture des nombres décimaux",
+     "text": "1) Décomposer 45,302 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) douze unités et cinq centièmes ;\nb) trois cent quatre millièmes.\n3) Donner la partie entière et la partie décimale de 63,08.",
+     "solution": "1) 45,302 = 4 × 10 + 5 + 3/10 + 0/100 + 2/1 000\n2) a) 12,05  b) 0,304\n3) Partie entière : 63 ; partie décimale : 0,08."
+    },
+    {
+     "title": "Comparer et ranger des décimaux",
+     "text": "Ranger dans l'ordre croissant :\n4,5 ; 4,05 ; 4,505 ; 3,99 ; 4,055",
+     "solution": "3,99 < 4,05 < 4,055 < 4,5 < 4,505"
+    },
+    {
+     "title": "Arrondi et encadrement",
+     "text": "Soit le nombre 17,368.\n1) L'arrondir à l'unité, au dixième, puis au centième.\n2) L'encadrer par deux entiers consécutifs.",
+     "solution": "1) À l'unité : 17 ; au dixième : 17,4 ; au centième : 17,37.\n2) 17 < 17,368 < 18"
+    },
+    {
+     "title": "Opérations sur les décimaux",
+     "text": "Calculer :\na) 12,5 + 7,75\nb) 30 − 8,46\nc) 2,4 × 3,5\nd) 0,25 × 100\ne) 45,6 ÷ 10",
+     "solution": "a) 20,25  b) 21,54  c) 8,4  d) 25  e) 4,56"
+    },
+    {
+     "title": "Problème : achats à la librairie",
+     "text": "Aminata achète 3 cahiers à 25,5 MRU l'un et un stylo à 12,75 MRU. Elle paie avec un billet de 100 MRU.\nCombien lui rend-on ?",
+     "solution": "Cahiers : 3 × 25,5 = 76,5 MRU\nTotal : 76,5 + 12,75 = 89,25 MRU\nMonnaie : 100 − 89,25 = 10,75 MRU"
+    },
+    {
+     "title": "Simplifier des fractions",
+     "text": "1) Simplifier : 18/24 ; 45/60 ; 35/49.\n2) Compléter : 2/3 = …/12 ; 5/4 = 15/…",
+     "solution": "1) 18/24 = 3/4 ; 45/60 = 3/4 ; 35/49 = 5/7\n2) 2/3 = 8/12 ; 5/4 = 15/12"
+    },
+    {
+     "title": "Comparer des fractions",
+     "text": "Comparer :\na) 3/7 et 5/7\nb) 5/8 et 5/6\nc) 7/5 et 1\nd) 2/3 et 7/12",
+     "solution": "a) 3/7 < 5/7 (même dénominateur)\nb) 5/8 < 5/6 (même numérateur, le plus grand dénominateur donne la plus petite fraction)\nc) 7/5 > 1 (numérateur > dénominateur)\nd) 2/3 = 8/12 donc 2/3 > 7/12"
+    },
+    {
+     "title": "Addition et soustraction de fractions",
+     "text": "Calculer et simplifier si possible :\na) 2/9 + 5/9\nb) 7/10 − 3/10\nc) 1/4 + 3/8\nd) 5/6 − 1/3",
+     "solution": "a) 7/9\nb) 4/10 = 2/5\nc) 2/8 + 3/8 = 5/8\nd) 5/6 − 2/6 = 3/6 = 1/2"
+    },
+    {
+     "title": "Fraction d'une quantité",
+     "text": "1) Calculer les 3/4 de 60.\n2) Calculer les 2/5 de 350 MRU.\n3) Dans une classe de 40 élèves, les 3/8 sont des garçons. Combien y a-t-il de garçons ? de filles ?",
+     "solution": "1) 60 ÷ 4 × 3 = 45\n2) 350 ÷ 5 × 2 = 140 MRU\n3) Garçons : 40 ÷ 8 × 3 = 15 ; filles : 40 − 15 = 25"
+    },
+    {
+     "title": "Tableau de proportionnalité",
+     "text": "Le prix du riz est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 2 | 5 | 8 | …\nPrix (MRU) : 140 | … | … | 840",
+     "solution": "Prix d'un kilogramme : 140 ÷ 2 = 70 MRU\n5 kg → 350 MRU ; 8 kg → 560 MRU ; 840 ÷ 70 = 12 kg"
+    },
+    {
+     "title": "Reconnaître une situation de proportionnalité",
+     "text": "Les tableaux suivants sont-ils des tableaux de proportionnalité ? Justifier.\nTableau 1 : 3 → 6 ; 5 → 10 ; 7 → 15\nTableau 2 : 4 → 10 ; 6 → 15 ; 10 → 25",
+     "solution": "Tableau 1 : 6 ÷ 3 = 2 ; 10 ÷ 5 = 2 mais 15 ÷ 7 ≠ 2 : non proportionnel.\nTableau 2 : 10 ÷ 4 = 15 ÷ 6 = 25 ÷ 10 = 2,5 : proportionnel, coefficient 2,5."
+    },
+    {
+     "title": "Calculer un pourcentage",
+     "text": "1) Calculer 20 % de 450.\n2) Un vêtement coûte 2 000 MRU. Le vendeur accorde une remise de 15 %. Calculer le montant de la remise puis le nouveau prix.",
+     "solution": "1) 450 × 20 ÷ 100 = 90\n2) Remise : 2 000 × 15 ÷ 100 = 300 MRU ; nouveau prix : 2 000 − 300 = 1 700 MRU"
+    },
+    {
+     "title": "Exprimer un pourcentage",
+     "text": "Un collège compte 600 élèves dont 270 filles.\nQuel est le pourcentage de filles dans ce collège ?",
+     "solution": "270 ÷ 600 × 100 = 45 %"
+    },
+    {
+     "title": "Échelle d'une carte",
+     "text": "Une carte est à l'échelle 1/50 000.\n1) Deux villages sont distants de 6 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 12 km. Quelle distance les sépare sur la carte ?",
+     "solution": "1) 6 × 50 000 = 300 000 cm = 3 km\n2) 12 km = 1 200 000 cm ; 1 200 000 ÷ 50 000 = 24 cm"
+    },
+    {
+     "title": "Statistique : notes d'un devoir",
+     "text": "Voici les notes de 20 élèves :\n8 ; 10 ; 12 ; 10 ; 14 ; 8 ; 10 ; 12 ; 16 ; 10 ; 12 ; 14 ; 10 ; 8 ; 12 ; 10 ; 14 ; 12 ; 10 ; 16\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la note la plus fréquente ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 12 ?",
+     "solution": "1) 8 : 3 ; 10 : 7 ; 12 : 5 ; 14 : 3 ; 16 : 2 (total 20)\n2) 8 : 15 % ; 10 : 35 % ; 12 : 25 % ; 14 : 15 % ; 16 : 10 %\n3) La note 10 (effectif 7)\n4) (8×3 + 10×7 + 12×5 + 14×3 + 16×2) ÷ 20 = (24 + 70 + 60 + 42 + 32) ÷ 20 = 228 ÷ 20 = 11,4\n5) 5 + 3 + 2 = 10 élèves, soit 50 %"
+    },
+    {
+     "title": "Situation d'intégration : le commerçant",
+     "text": "Un commerçant achète 20 sacs de riz à 1 250 MRU le sac. Le transport lui coûte 600 MRU.\nIl revend chaque sac à 1 400 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 3/4 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondir au dixième).",
+     "solution": "1) 20 × 1 250 + 600 = 25 000 + 600 = 25 600 MRU\n2) 20 × 3/4 = 15 sacs ; 15 × 1 400 = 21 000 MRU\n3) Recette totale : 20 × 1 400 = 28 000 MRU ; bénéfice : 28 000 − 25 600 = 2 400 MRU\n4) 2 400 ÷ 25 600 × 100 = 9,375 ≈ 9,4 %"
+    }
+   ]
+  }
+ ],
+ "exams": []
+}
