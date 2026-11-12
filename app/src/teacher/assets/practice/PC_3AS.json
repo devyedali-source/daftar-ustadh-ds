@@ -1,0 +1,835 @@
+{
+ "subject": "PC",
+ "level": "3AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Semaine 9",
+   "term": 1,
+   "kind": "eval",
+   "title": "Série d'exercices — Évaluation",
+   "covers": [
+    "Réaction chimique : définition, réactifs et produits",
+    "Élément chimique : atomes, molécules",
+    "Écriture de l'équation bilan d'une réaction",
+    "Conservation du nombre d'atomes et de la nature de l'atome",
+    "Soluté, solvant, solution",
+    "Dissolution",
+    "Concentration massique d'une solution",
+    "Notion de dilution"
+   ],
+   "items": [
+    {
+     "title": "Mesurer le pH",
+     "text": "1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 10 mL d'une solution de concentration 100 g/L et on complète avec de l'eau jusqu'à 100 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 100 × 10 ÷ 100 = 10 g/L\n3) F = V2 ÷ V1 = 10"
+    },
+    {
+     "title": "Équilibrer une équation bilan",
+     "text": "Équilibrer les équations suivantes :\na) Na + Cl₂ → NaCl\nb) C + CuO → Cu + CO₂\nPourquoi faut-il équilibrer une équation ?",
+     "solution": "a) 2 Na + Cl₂ → 2 NaCl\nb) C + 2 CuO → 2 Cu + CO₂\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients."
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 59 g de sucre dans de l'eau pour obtenir 200 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 59 ÷ 0,2 = 295 g/L"
+    },
+    {
+     "title": "Transformation chimique ou physique ?",
+     "text": "Dire s'il s'agit d'une transformation chimique ou physique : la fusion de la glace ; la combustion du bois ; la rouille du fer ; la dissolution du sucre ; la cuisson d'un œuf.",
+     "solution": "Physiques : fusion de la glace, dissolution du sucre.\nChimiques (nouvelles substances) : combustion du bois, rouille du fer, cuisson d'un œuf."
+    },
+    {
+     "title": "Réactifs et produits",
+     "text": "Lors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?",
+     "solution": "1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux."
+    },
+    {
+     "title": "Conservation de la masse",
+     "text": "On fait réagir 12 g de carbone avec 32 g de dioxygène ; la réaction est totale.\n1) Quelle masse de dioxyde de carbone obtient-on ?\n2) Quelle loi utilise-t-on ?",
+     "solution": "1) 12 + 32 = 44 g\n2) La conservation de la masse (loi de Lavoisier) : la masse des réactifs consommés est égale à la masse des produits formés."
+    },
+    {
+     "title": "Solutions acides, basiques et neutres",
+     "text": "On mesure le pH de cinq solutions : S1 : 7 ; S2 : 5 ; S3 : 1 ; S4 : 9 ; S5 : 11\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "1) S1 neutre ; S2 acide ; S3 acide ; S4 basique ; S5 basique\n2) Plus acide : S3 (pH 1) ; plus basique : S5 (pH 11)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Soluté, solvant, solution",
+     "text": "1) Définir : soluté, solvant, solution.\n2) Qu'est-ce qu'une solution saturée ?\n3) Dans l'eau salée, identifier le soluté et le solvant.",
+     "solution": "1) Soluté : substance dissoute ; solvant : liquide qui dissout ; solution : mélange homogène obtenu.\n2) Une solution qui ne peut plus dissoudre de soluté (le soluté en excès reste au fond).\n3) Soluté : sel ; solvant : eau."
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 50 mL d'une solution de concentration 50 g/L et on complète avec de l'eau jusqu'à 200 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 50 × 50 ÷ 200 = 12,5 g/L\n3) F = V2 ÷ V1 = 4"
+    },
+    {
+     "title": "Équilibrer une équation bilan",
+     "text": "Équilibrer les équations suivantes :\na) N₂ + H₂ → NH₃\nb) CH₄ + O₂ → CO₂ + H₂O\nPourquoi faut-il équilibrer une équation ?",
+     "solution": "a) N₂ + 3 H₂ → 2 NH₃\nb) CH₄ + 2 O₂ → CO₂ + 2 H₂O\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients."
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 28 g de sucre dans de l'eau pour obtenir 250 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 28 ÷ 0,25 = 112 g/L"
+    },
+    {
+     "title": "Solutions acides, basiques et neutres",
+     "text": "On mesure le pH de cinq solutions : S1 : 13 ; S2 : 1 ; S3 : 9 ; S4 : 3 ; S5 : 12\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "1) S1 basique ; S2 acide ; S3 basique ; S4 acide ; S5 basique\n2) Plus acide : S2 (pH 1) ; plus basique : S1 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 20 mL d'une solution de concentration 50 g/L et on complète avec de l'eau jusqu'à 100 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 50 × 20 ÷ 100 = 10 g/L\n3) F = V2 ÷ V1 = 5"
+    },
+    {
+     "title": "Équilibrer une équation bilan",
+     "text": "Équilibrer les équations suivantes :\na) Fe + O₂ → Fe₃O₄\nb) Al + O₂ → Al₂O₃\nPourquoi faut-il équilibrer une équation ?",
+     "solution": "a) 3 Fe + 2 O₂ → Fe₃O₄\nb) 4 Al + 3 O₂ → 2 Al₂O₃\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients."
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 29 g de sucre dans de l'eau pour obtenir 200 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 29 ÷ 0,2 = 145 g/L"
+    },
+    {
+     "title": "Solutions acides, basiques et neutres",
+     "text": "On mesure le pH de cinq solutions : S1 : 13 ; S2 : 3 ; S3 : 1 ; S4 : 9 ; S5 : 8\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "1) S1 basique ; S2 acide ; S3 acide ; S4 basique ; S5 basique\n2) Plus acide : S3 (pH 1) ; plus basique : S1 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 10 mL d'une solution de concentration 40 g/L et on complète avec de l'eau jusqu'à 100 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 40 × 10 ÷ 100 = 4 g/L\n3) F = V2 ÷ V1 = 10"
+    },
+    {
+     "title": "Équilibrer une équation bilan",
+     "text": "Équilibrer les équations suivantes :\na) Na + Cl₂ → NaCl\nb) Fe + O₂ → Fe₃O₄\nPourquoi faut-il équilibrer une équation ?",
+     "solution": "a) 2 Na + Cl₂ → 2 NaCl\nb) 3 Fe + 2 O₂ → Fe₃O₄\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients."
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 30 g de sucre dans de l'eau pour obtenir 500 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 30 ÷ 0,5 = 60 g/L"
+    }
+   ]
+  },
+  {
+   "week": "Semaine 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Série d'exercices — Évaluation",
+   "covers": [
+    "Effet de la dilution sur le pH : solution acide, basique, neutre",
+    "Les différents états de la matière : mise en évidence",
+    "Propriétés physiques (état liquide)",
+    "Propriétés physiques (état solide, état gazeux)",
+    "Les changements d'état de la matière",
+    "Conservation de la masse",
+    "Variation du volume",
+    "Unités : masse (kg), volume (m3), température (°C)"
+   ],
+   "items": [
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 29 g de sucre dans de l'eau pour obtenir 100 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 29 ÷ 0,1 = 290 g/L"
+    },
+    {
+     "title": "Propriétés des états de la matière",
+     "text": "Compléter :\n1) Un solide a une forme … et un volume … .\n2) Un liquide a une forme … mais un volume … .\n3) Un gaz n'a ni forme ni volume … ; il est … .\n4) La surface libre d'un liquide au repos est … .",
+     "solution": "1) propre ; propre\n2) celle du récipient (pas de forme propre) ; propre\n3) propres ; compressible (et expansible)\n4) plane et horizontale"
+    },
+    {
+     "title": "Gravitation",
+     "text": "1) Qu'est-ce que la gravitation universelle ?\n2) De quoi dépend l'intensité de l'attraction entre deux corps ?\n3) Comment varie l'intensité de la pesanteur g quand on s'élève en altitude ?",
+     "solution": "1) L'attraction mutuelle que s'exercent deux corps ayant une masse.\n2) De leurs masses et de la distance qui les sépare (elle diminue quand la distance augmente).\n3) Elle diminue."
+    },
+    {
+     "title": "Solutions acides, basiques et neutres",
+     "text": "On mesure le pH de cinq solutions : S1 : 11 ; S2 : 13 ; S3 : 12 ; S4 : 4 ; S5 : 3\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "1) S1 basique ; S2 basique ; S3 basique ; S4 acide ; S5 acide\n2) Plus acide : S5 (pH 3) ; plus basique : S2 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Poids et masse",
+     "text": "Un sac a une masse de 24,5 kg.\n1) Calculer son poids sur la Terre (g = 9,8 N/kg).\n2) Calculer son poids sur la Lune (g = 1,6 N/kg).\n3) Sa masse change-t-elle sur la Lune ?",
+     "solution": "1) P = m × g = 24,5 × 9,8 = 240,1 N\n2) P = 24,5 × 1,6 = 39,2 N\n3) Non, la masse ne dépend pas du lieu."
+    },
+    {
+     "title": "Flotte ou coule ?",
+     "text": "Un objet a une masse de 176 g et un volume de 368 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "1) ρ = 176 ÷ 368 ≈ 0,48 g/cm³\n2) d ≈ 0,48\n3) Oui, car d < 1"
+    },
+    {
+     "title": "Masse et volume lors d'un changement d'état",
+     "text": "On fait fondre 200 g de glace.\n1) Quelle masse d'eau liquide obtient-on ? Justifier.\n2) Le volume change-t-il ?",
+     "solution": "1) 200 g : la masse se conserve lors d'un changement d'état.\n2) Oui : le volume de l'eau liquide est légèrement plus petit que celui de la glace."
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 20 mL d'une solution de concentration 80 g/L et on complète avec de l'eau jusqu'à 40 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 80 × 20 ÷ 40 = 40 g/L\n3) F = V2 ÷ V1 = 2"
+    },
+    {
+     "title": "Caractéristiques du poids",
+     "text": "Une pomme de masse 1 900 g est suspendue à un fil (g = 10 N/kg).\n1) Calculer son poids.\n2) Donner les caractéristiques du poids.\n3) Représenter le poids avec l'échelle 1 cm pour 10 N : quelle longueur de flèche ?",
+     "solution": "1) P = 1,9 × 10 = 19 N\n2) Point d'application : centre de gravité ; direction : verticale ; sens : vers le bas ; intensité : 19 N.\n3) 19 ÷ 10 = 1,9 cm"
+    },
+    {
+     "title": "Les changements d'état",
+     "text": "Nommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.",
+     "solution": "a) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation."
+    },
+    {
+     "title": "Masse volumique",
+     "text": "Un objet en eau a un volume de 381 cm³. La masse volumique du eau est 1 000 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "1) 381 cm³ = 0,000381 m³\n2) m = ρ × V = 1 000 × 0,000381 = 0,381 kg = 381 g\n3) d = 1 000 ÷ 1 000 = 1"
+    },
+    {
+     "title": "Palier de température",
+     "text": "On chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?",
+     "solution": "1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C)."
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 42 g de sucre dans de l'eau pour obtenir 500 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 42 ÷ 0,5 = 84 g/L"
+    },
+    {
+     "title": "Solutions acides, basiques et neutres",
+     "text": "On mesure le pH de cinq solutions : S1 : 8 ; S2 : 12 ; S3 : 9 ; S4 : 13 ; S5 : 2\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "1) S1 basique ; S2 basique ; S3 basique ; S4 basique ; S5 acide\n2) Plus acide : S5 (pH 2) ; plus basique : S4 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Poids et masse",
+     "text": "Un sac a une masse de 59,6 kg.\n1) Calculer son poids sur la Terre (g = 9,8 N/kg).\n2) Calculer son poids sur la Lune (g = 1,6 N/kg).\n3) Sa masse change-t-elle sur la Lune ?",
+     "solution": "1) P = m × g = 59,6 × 9,8 = 584,08 N\n2) P = 59,6 × 1,6 = 95,36 N\n3) Non, la masse ne dépend pas du lieu."
+    },
+    {
+     "title": "Flotte ou coule ?",
+     "text": "Un objet a une masse de 865 g et un volume de 749 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "1) ρ = 865 ÷ 749 ≈ 1,15 g/cm³\n2) d ≈ 1,15\n3) Non, car d > 1"
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 10 mL d'une solution de concentration 20 g/L et on complète avec de l'eau jusqu'à 100 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 20 × 10 ÷ 100 = 2 g/L\n3) F = V2 ÷ V1 = 10"
+    },
+    {
+     "title": "Caractéristiques du poids",
+     "text": "Une pomme de masse 4 000 g est suspendue à un fil (g = 10 N/kg).\n1) Calculer son poids.\n2) Donner les caractéristiques du poids.\n3) Représenter le poids avec l'échelle 1 cm pour 20 N : quelle longueur de flèche ?",
+     "solution": "1) P = 4 × 10 = 40 N\n2) Point d'application : centre de gravité ; direction : verticale ; sens : vers le bas ; intensité : 40 N.\n3) 40 ÷ 20 = 2 cm"
+    },
+    {
+     "title": "Masse volumique",
+     "text": "Un objet en huile a un volume de 211 cm³. La masse volumique du huile est 920 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "1) 211 cm³ = 0,000211 m³\n2) m = ρ × V = 920 × 0,000211 = 0,19412 kg = 194,12 g\n3) d = 920 ÷ 1 000 = 0,92"
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 38 g de sucre dans de l'eau pour obtenir 250 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 38 ÷ 0,25 = 152 g/L"
+    }
+   ]
+  },
+  {
+   "week": "Semaine 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Série d'exercices — Évaluation",
+   "covers": [
+    "Caractéristiques d'un dipôle ohmique : mesure, unité, loi d'Ohm",
+    "Caractéristiques d'un dipôle ohmique (suite)",
+    "Association des résistances : en série",
+    "Association des résistances : en dérivation",
+    "Puissance électrique (définition, unité, expression)",
+    "Puissance nominale",
+    "Énergie électrique (définition, unité, expression)",
+    "Réflexion de la lumière"
+   ],
+   "items": [
+    {
+     "title": "Loi d'Ohm",
+     "text": "Un conducteur ohmique de résistance R = 10 Ω est traversé par un courant d'intensité I = 61 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?",
+     "solution": "1) U = R × I (U en V, R en Ω, I en A).\n2) U = 10 × 0,061 = 0,61 V\n3) I = 6 ÷ 10 ≈ 0,6 A ≈ 600 mA"
+    },
+    {
+     "title": "Réflexion de la lumière",
+     "text": "Un rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 70°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 70°\n3) 90° − 70° = 20°"
+    },
+    {
+     "title": "Association de résistances",
+     "text": "On dispose de R1 = 100 Ω et R2 = 150 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.",
+     "solution": "1) Rs = 100 + 150 = 250 Ω\n2) 1/Rp = 1/100 + 1/150 ; Rp = 100 × 150 ÷ (100 + 150) = 60 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune."
+    },
+    {
+     "title": "Puissance et énergie électriques",
+     "text": "Sur un appareil on lit : 220 V – 60 W. Il fonctionne 2 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.",
+     "solution": "1) Tension nominale 220 V ; puissance nominale 60 W.\n2) I = P ÷ U = 60 ÷ 220 ≈ 0,27 A\n3) E = P × t = 0,06 kW × 2 h = 0,12 kWh\n4) 0,12 × 30 × 63 = 226,8 MRU"
+    },
+    {
+     "title": "Réfraction : de l'eau vers l'air",
+     "text": "Un rayon passe de l'eau vers l'air sous un angle d'incidence de 30°.\n1) L'angle de réfraction est-il plus grand ou plus petit que 30° ?\n2) Que se passe-t-il si l'angle d'incidence est très grand ?",
+     "solution": "1) Plus grand : le rayon s'éloigne de la normale en passant dans l'air.\n2) Il peut ne plus sortir : c'est la réflexion totale."
+    },
+    {
+     "title": "Puissance nominale",
+     "text": "1) Quelle est l'unité de la puissance électrique ?\n2) Écrire la relation entre P, U et I.\n3) Deux lampes de 60 W et 100 W sont alimentées sous leur tension nominale : laquelle brille le plus ?",
+     "solution": "1) Le watt (W).\n2) P = U × I.\n3) La lampe de 100 W (plus grande puissance)."
+    },
+    {
+     "title": "Caractéristique d'un dipôle ohmique",
+     "text": "On mesure U et I pour un conducteur ohmique :\nI (A) : 0,02 | 0,03 | 0,04 | 0,06\nU (V) : 1 | 1,5 | 2 | 3\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?",
+     "solution": "1) Oui : U ÷ I = 50 pour chaque mesure.\n2) R = 50 Ω\n3) Une droite passant par l'origine."
+    },
+    {
+     "title": "Réfraction de la lumière",
+     "text": "Un rayon passe de l'air dans l'eau.\n1) Qu'appelle-t-on réfraction ?\n2) Le rayon réfracté se rapproche-t-il ou s'éloigne-t-il de la normale ?\n3) Pourquoi un bâton plongé dans l'eau paraît-il brisé ?",
+     "solution": "1) Le changement de direction de la lumière lorsqu'elle traverse la surface de séparation de deux milieux transparents différents.\n2) Il se rapproche de la normale (l'eau est plus réfringente que l'air).\n3) À cause de la réfraction de la lumière à la surface de l'eau."
+    },
+    {
+     "title": "Loi d'Ohm",
+     "text": "Un conducteur ohmique de résistance R = 22 Ω est traversé par un courant d'intensité I = 7 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?",
+     "solution": "1) U = R × I (U en V, R en Ω, I en A).\n2) U = 22 × 0,007 = 0,154 V\n3) I = 6 ÷ 22 ≈ 0,2727 A ≈ 272,7 mA"
+    },
+    {
+     "title": "Réflexion de la lumière",
+     "text": "Un rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 62°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 62°\n3) 90° − 62° = 28°"
+    },
+    {
+     "title": "Association de résistances",
+     "text": "On dispose de R1 = 40 Ω et R2 = 60 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.",
+     "solution": "1) Rs = 40 + 60 = 100 Ω\n2) 1/Rp = 1/40 + 1/60 ; Rp = 40 × 60 ÷ (40 + 60) = 24 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune."
+    },
+    {
+     "title": "Puissance et énergie électriques",
+     "text": "Sur un appareil on lit : 220 V – 1500 W. Il fonctionne 5 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.",
+     "solution": "1) Tension nominale 220 V ; puissance nominale 1500 W.\n2) I = P ÷ U = 1500 ÷ 220 ≈ 6,82 A\n3) E = P × t = 1,5 kW × 5 h = 7,5 kWh\n4) 7,5 × 30 × 63 = 14 175 MRU"
+    },
+    {
+     "title": "Caractéristique d'un dipôle ohmique",
+     "text": "On mesure U et I pour un conducteur ohmique :\nI (A) : 0,01 | 0,04 | 0,09\nU (V) : 0,5 | 2 | 4,5\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?",
+     "solution": "1) Oui : U ÷ I = 50 pour chaque mesure.\n2) R = 50 Ω\n3) Une droite passant par l'origine."
+    },
+    {
+     "title": "Loi d'Ohm",
+     "text": "Un conducteur ohmique de résistance R = 220 Ω est traversé par un courant d'intensité I = 71 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?",
+     "solution": "1) U = R × I (U en V, R en Ω, I en A).\n2) U = 220 × 0,071 = 15,62 V\n3) I = 6 ÷ 220 ≈ 0,0273 A ≈ 27,3 mA"
+    },
+    {
+     "title": "Réflexion de la lumière",
+     "text": "Un rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 61°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 61°\n3) 90° − 61° = 29°"
+    },
+    {
+     "title": "Puissance et énergie électriques",
+     "text": "Sur un appareil on lit : 220 V – 1000 W. Il fonctionne 2 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.",
+     "solution": "1) Tension nominale 220 V ; puissance nominale 1000 W.\n2) I = P ÷ U = 1000 ÷ 220 ≈ 4,55 A\n3) E = P × t = 1 kW × 2 h = 2 kWh\n4) 2 × 30 × 63 = 3 780 MRU"
+    },
+    {
+     "title": "Caractéristique d'un dipôle ohmique",
+     "text": "On mesure U et I pour un conducteur ohmique :\nI (A) : 0,03 | 0,06 | 0,08\nU (V) : 1,5 | 3 | 4\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?",
+     "solution": "1) Oui : U ÷ I = 50 pour chaque mesure.\n2) R = 50 Ω\n3) Une droite passant par l'origine."
+    },
+    {
+     "title": "Loi d'Ohm",
+     "text": "Un conducteur ohmique de résistance R = 50 Ω est traversé par un courant d'intensité I = 73 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?",
+     "solution": "1) U = R × I (U en V, R en Ω, I en A).\n2) U = 50 × 0,073 = 3,65 V\n3) I = 6 ÷ 50 ≈ 0,12 A ≈ 120 mA"
+    },
+    {
+     "title": "Réflexion de la lumière",
+     "text": "Un rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 43°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 43°\n3) 90° − 43° = 47°"
+    },
+    {
+     "title": "Association de résistances",
+     "text": "On dispose de R1 = 20 Ω et R2 = 30 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.",
+     "solution": "1) Rs = 20 + 30 = 50 Ω\n2) 1/Rp = 1/20 + 1/30 ; Rp = 20 × 30 ÷ (20 + 30) = 12 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 36",
+   "term": 3,
+   "kind": "final",
+   "title": "Révision générale de l'année",
+   "covers": [
+    "Réaction chimique : définition, réactifs et produits",
+    "Élément chimique : atomes, molécules",
+    "Écriture de l'équation bilan d'une réaction",
+    "Conservation du nombre d'atomes et de la nature de l'atome",
+    "Soluté, solvant, solution",
+    "Dissolution",
+    "Concentration massique d'une solution",
+    "Notion de dilution"
+   ],
+   "items": [
+    {
+     "title": "Réflexion de la lumière",
+     "text": "Un rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 74°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 74°\n3) 90° − 74° = 16°"
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 50 mL d'une solution de concentration 40 g/L et on complète avec de l'eau jusqu'à 200 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 40 × 50 ÷ 200 = 10 g/L\n3) F = V2 ÷ V1 = 4"
+    },
+    {
+     "title": "Poids et masse",
+     "text": "Un sac a une masse de 14 kg.\n1) Calculer son poids sur la Terre (g = 9,8 N/kg).\n2) Calculer son poids sur la Lune (g = 1,6 N/kg).\n3) Sa masse change-t-elle sur la Lune ?",
+     "solution": "1) P = m × g = 14 × 9,8 = 137,2 N\n2) P = 14 × 1,6 = 22,4 N\n3) Non, la masse ne dépend pas du lieu."
+    },
+    {
+     "title": "Loi d'Ohm",
+     "text": "Un conducteur ohmique de résistance R = 50 Ω est traversé par un courant d'intensité I = 44 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?",
+     "solution": "1) U = R × I (U en V, R en Ω, I en A).\n2) U = 50 × 0,044 = 2,2 V\n3) I = 6 ÷ 50 ≈ 0,12 A ≈ 120 mA"
+    },
+    {
+     "title": "Solutions acides, basiques et neutres",
+     "text": "On mesure le pH de cinq solutions : S1 : 6 ; S2 : 4 ; S3 : 11 ; S4 : 2 ; S5 : 12\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "1) S1 acide ; S2 acide ; S3 basique ; S4 acide ; S5 basique\n2) Plus acide : S4 (pH 2) ; plus basique : S5 (pH 12)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Caractéristique d'un dipôle ohmique",
+     "text": "On mesure U et I pour un conducteur ohmique :\nI (A) : 0,01 | 0,02 | 0,03 | 0,04\nU (V) : 0,4 | 0,8 | 1,2 | 1,6\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?",
+     "solution": "1) Oui : U ÷ I = 40 pour chaque mesure.\n2) R = 40 Ω\n3) Une droite passant par l'origine."
+    },
+    {
+     "title": "Flotte ou coule ?",
+     "text": "Un objet a une masse de 370 g et un volume de 580 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "1) ρ = 370 ÷ 580 ≈ 0,64 g/cm³\n2) d ≈ 0,64\n3) Oui, car d < 1"
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 56 g de sucre dans de l'eau pour obtenir 250 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 56 ÷ 0,25 = 224 g/L"
+    },
+    {
+     "title": "Masse volumique",
+     "text": "Un objet en fer a un volume de 330 cm³. La masse volumique du fer est 7 800 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "1) 330 cm³ = 0,00033 m³\n2) m = ρ × V = 7 800 × 0,00033 = 2,574 kg = 2 574 g\n3) d = 7 800 ÷ 1 000 = 7,8"
+    },
+    {
+     "title": "Équilibrer une équation bilan",
+     "text": "Équilibrer les équations suivantes :\na) N₂ + H₂ → NH₃\nb) C₃H₈ + O₂ → CO₂ + H₂O\nPourquoi faut-il équilibrer une équation ?",
+     "solution": "a) N₂ + 3 H₂ → 2 NH₃\nb) C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients."
+    },
+    {
+     "title": "Caractéristiques du poids",
+     "text": "Une pomme de masse 1 600 g est suspendue à un fil (g = 10 N/kg).\n1) Calculer son poids.\n2) Donner les caractéristiques du poids.\n3) Représenter le poids avec l'échelle 1 cm pour 20 N : quelle longueur de flèche ?",
+     "solution": "1) P = 1,6 × 10 = 16 N\n2) Point d'application : centre de gravité ; direction : verticale ; sens : vers le bas ; intensité : 16 N.\n3) 16 ÷ 20 = 0,8 cm"
+    },
+    {
+     "title": "Puissance et énergie électriques",
+     "text": "Sur un appareil on lit : 230 V – 2000 W. Il fonctionne 2 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.",
+     "solution": "1) Tension nominale 230 V ; puissance nominale 2000 W.\n2) I = P ÷ U = 2000 ÷ 230 ≈ 8,7 A\n3) E = P × t = 2 kW × 2 h = 4 kWh\n4) 4 × 30 × 63 = 7 560 MRU"
+    },
+    {
+     "title": "Réflexion de la lumière",
+     "text": "Un rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 42°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 42°\n3) 90° − 42° = 48°"
+    },
+    {
+     "title": "Dilution",
+     "text": "On prélève 20 mL d'une solution de concentration 100 g/L et on complète avec de l'eau jusqu'à 100 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?",
+     "solution": "1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 100 × 20 ÷ 100 = 20 g/L\n3) F = V2 ÷ V1 = 5"
+    },
+    {
+     "title": "Poids et masse",
+     "text": "Un sac a une masse de 66,1 kg.\n1) Calculer son poids sur la Terre (g = 9,8 N/kg).\n2) Calculer son poids sur la Lune (g = 1,6 N/kg).\n3) Sa masse change-t-elle sur la Lune ?",
+     "solution": "1) P = m × g = 66,1 × 9,8 = 647,78 N\n2) P = 66,1 × 1,6 = 105,76 N\n3) Non, la masse ne dépend pas du lieu."
+    },
+    {
+     "title": "Loi d'Ohm",
+     "text": "Un conducteur ohmique de résistance R = 22 Ω est traversé par un courant d'intensité I = 44 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?",
+     "solution": "1) U = R × I (U en V, R en Ω, I en A).\n2) U = 22 × 0,044 = 0,968 V\n3) I = 6 ÷ 22 ≈ 0,2727 A ≈ 272,7 mA"
+    },
+    {
+     "title": "Solutions acides, basiques et neutres",
+     "text": "On mesure le pH de cinq solutions : S1 : 13 ; S2 : 5 ; S3 : 9 ; S4 : 3 ; S5 : 4\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "1) S1 basique ; S2 acide ; S3 basique ; S4 acide ; S5 acide\n2) Plus acide : S4 (pH 3) ; plus basique : S1 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Caractéristique d'un dipôle ohmique",
+     "text": "On mesure U et I pour un conducteur ohmique :\nI (A) : 0,01 | 0,02 | 0,09 | 0,12\nU (V) : 0,5 | 1 | 4,5 | 6\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?",
+     "solution": "1) Oui : U ÷ I = 50 pour chaque mesure.\n2) R = 50 Ω\n3) Une droite passant par l'origine."
+    },
+    {
+     "title": "Flotte ou coule ?",
+     "text": "Un objet a une masse de 131 g et un volume de 199 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "1) ρ = 131 ÷ 199 ≈ 0,66 g/cm³\n2) d ≈ 0,66\n3) Oui, car d < 1"
+    },
+    {
+     "title": "Concentration massique",
+     "text": "On dissout 19 g de sucre dans de l'eau pour obtenir 250 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.",
+     "solution": "1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 19 ÷ 0,25 = 76 g/L"
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Semaine 11",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du 1er trimestre",
+   "covers": [
+    "Réaction chimique : définition, réactifs et produits",
+    "Élément chimique : atomes, molécules",
+    "Écriture de l'équation bilan d'une réaction",
+    "Conservation du nombre d'atomes et de la nature de l'atome",
+    "Soluté, solvant, solution",
+    "Dissolution",
+    "Concentration massique d'une solution",
+    "Notion de dilution"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Transformation chimique ou physique ?\nDire s'il s'agit d'une transformation chimique ou physique : la fusion de la glace ; la combustion du bois ; la rouille du fer ; la dissolution du sucre ; la cuisson d'un œuf.\n\nExercice 2 : Concentration massique\nOn dissout 45 g de sucre dans de l'eau pour obtenir 100 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 11 ; S2 : 4 ; S3 : 3 ; S4 : 13 ; S5 : 6\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "Exercice 1\nPhysiques : fusion de la glace, dissolution du sucre.\nChimiques (nouvelles substances) : combustion du bois, rouille du fer, cuisson d'un œuf.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 45 ÷ 0,1 = 450 g/L\n\nExercice 3\n1) S1 basique ; S2 acide ; S3 acide ; S4 basique ; S5 acide\n2) Plus acide : S3 (pH 3) ; plus basique : S4 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Proposition 2 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Transformation chimique ou physique ?\nDire s'il s'agit d'une transformation chimique ou physique : la fusion de la glace ; la combustion du bois ; la rouille du fer ; la dissolution du sucre ; la cuisson d'un œuf.\n\nExercice 2 : Concentration massique\nOn dissout 37 g de sucre dans de l'eau pour obtenir 500 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "Exercice 1\nPhysiques : fusion de la glace, dissolution du sucre.\nChimiques (nouvelles substances) : combustion du bois, rouille du fer, cuisson d'un œuf.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 37 ÷ 0,5 = 74 g/L\n\nExercice 3\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Proposition 3 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Conservation de la masse\nOn fait réagir 12 g de carbone avec 32 g de dioxygène ; la réaction est totale.\n1) Quelle masse de dioxyde de carbone obtient-on ?\n2) Quelle loi utilise-t-on ?\n\nExercice 3 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) 12 + 32 = 44 g\n2) La conservation de la masse (loi de Lavoisier) : la masse des réactifs consommés est égale à la masse des produits formés.\n\nExercice 3\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Proposition 4 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Concentration massique\nOn dissout 45 g de sucre dans de l'eau pour obtenir 200 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 45 ÷ 0,2 = 225 g/L\n\nExercice 3\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Proposition 5 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Conservation de la masse\nOn fait réagir 12 g de carbone avec 32 g de dioxygène ; la réaction est totale.\n1) Quelle masse de dioxyde de carbone obtient-on ?\n2) Quelle loi utilise-t-on ?\n\nExercice 3 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 2 ; S2 : 6 ; S3 : 9 ; S4 : 1 ; S5 : 4\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) 12 + 32 = 44 g\n2) La conservation de la masse (loi de Lavoisier) : la masse des réactifs consommés est égale à la masse des produits formés.\n\nExercice 3\n1) S1 acide ; S2 acide ; S3 basique ; S4 acide ; S5 acide\n2) Plus acide : S4 (pH 1) ; plus basique : S3 (pH 9)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Proposition 6 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) H₂ + O₂ → H₂O\nb) Al + O₂ → Al₂O₃\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Concentration massique\nOn dissout 24 g de sucre dans de l'eau pour obtenir 500 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Soluté, solvant, solution\n1) Définir : soluté, solvant, solution.\n2) Qu'est-ce qu'une solution saturée ?\n3) Dans l'eau salée, identifier le soluté et le solvant.",
+     "solution": "Exercice 1\na) 2 H₂ + O₂ → 2 H₂O\nb) 4 Al + 3 O₂ → 2 Al₂O₃\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 24 ÷ 0,5 = 48 g/L\n\nExercice 3\n1) Soluté : substance dissoute ; solvant : liquide qui dissout ; solution : mélange homogène obtenu.\n2) Une solution qui ne peut plus dissoudre de soluté (le soluté en excès reste au fond).\n3) Soluté : sel ; solvant : eau."
+    },
+    {
+     "title": "Proposition 7 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Dilution\nOn prélève 20 mL d'une solution de concentration 40 g/L et on complète avec de l'eau jusqu'à 200 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?\n\nExercice 3 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 12 ; S2 : 9 ; S3 : 10 ; S4 : 13 ; S5 : 4\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 40 × 20 ÷ 200 = 4 g/L\n3) F = V2 ÷ V1 = 10\n\nExercice 3\n1) S1 basique ; S2 basique ; S3 basique ; S4 basique ; S5 acide\n2) Plus acide : S5 (pH 4) ; plus basique : S4 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Proposition 8 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) Al + O₂ → Al₂O₃\nb) Fe + O₂ → Fe₃O₄\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Concentration massique\nOn dissout 39 g de sucre dans de l'eau pour obtenir 250 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Soluté, solvant, solution\n1) Définir : soluté, solvant, solution.\n2) Qu'est-ce qu'une solution saturée ?\n3) Dans l'eau salée, identifier le soluté et le solvant.",
+     "solution": "Exercice 1\na) 4 Al + 3 O₂ → 2 Al₂O₃\nb) 3 Fe + 2 O₂ → Fe₃O₄\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 39 ÷ 0,25 = 156 g/L\n\nExercice 3\n1) Soluté : substance dissoute ; solvant : liquide qui dissout ; solution : mélange homogène obtenu.\n2) Une solution qui ne peut plus dissoudre de soluté (le soluté en excès reste au fond).\n3) Soluté : sel ; solvant : eau."
+    },
+    {
+     "title": "Proposition 9 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) C + CuO → Cu + CO₂\nb) Na + Cl₂ → NaCl\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Conservation de la masse\nOn fait réagir 12 g de carbone avec 32 g de dioxygène ; la réaction est totale.\n1) Quelle masse de dioxyde de carbone obtient-on ?\n2) Quelle loi utilise-t-on ?\n\nExercice 3 : Soluté, solvant, solution\n1) Définir : soluté, solvant, solution.\n2) Qu'est-ce qu'une solution saturée ?\n3) Dans l'eau salée, identifier le soluté et le solvant.",
+     "solution": "Exercice 1\na) C + 2 CuO → 2 Cu + CO₂\nb) 2 Na + Cl₂ → 2 NaCl\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) 12 + 32 = 44 g\n2) La conservation de la masse (loi de Lavoisier) : la masse des réactifs consommés est égale à la masse des produits formés.\n\nExercice 3\n1) Soluté : substance dissoute ; solvant : liquide qui dissout ; solution : mélange homogène obtenu.\n2) Une solution qui ne peut plus dissoudre de soluté (le soluté en excès reste au fond).\n3) Soluté : sel ; solvant : eau."
+    },
+    {
+     "title": "Proposition 10 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Transformation chimique ou physique ?\nDire s'il s'agit d'une transformation chimique ou physique : la fusion de la glace ; la combustion du bois ; la rouille du fer ; la dissolution du sucre ; la cuisson d'un œuf.\n\nExercice 2 : Conservation de la masse\nOn fait réagir 12 g de carbone avec 32 g de dioxygène ; la réaction est totale.\n1) Quelle masse de dioxyde de carbone obtient-on ?\n2) Quelle loi utilise-t-on ?\n\nExercice 3 : Soluté, solvant, solution\n1) Définir : soluté, solvant, solution.\n2) Qu'est-ce qu'une solution saturée ?\n3) Dans l'eau salée, identifier le soluté et le solvant.",
+     "solution": "Exercice 1\nPhysiques : fusion de la glace, dissolution du sucre.\nChimiques (nouvelles substances) : combustion du bois, rouille du fer, cuisson d'un œuf.\n\nExercice 2\n1) 12 + 32 = 44 g\n2) La conservation de la masse (loi de Lavoisier) : la masse des réactifs consommés est égale à la masse des produits formés.\n\nExercice 3\n1) Soluté : substance dissoute ; solvant : liquide qui dissout ; solution : mélange homogène obtenu.\n2) Une solution qui ne peut plus dissoudre de soluté (le soluté en excès reste au fond).\n3) Soluté : sel ; solvant : eau."
+    },
+    {
+     "title": "Proposition 11 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Concentration massique\nOn dissout 48 g de sucre dans de l'eau pour obtenir 500 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 48 ÷ 0,5 = 96 g/L\n\nExercice 3\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Proposition 12 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) C₃H₈ + O₂ → CO₂ + H₂O\nb) CH₄ + O₂ → CO₂ + H₂O\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Concentration massique\nOn dissout 50 g de sucre dans de l'eau pour obtenir 100 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "Exercice 1\na) C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O\nb) CH₄ + 2 O₂ → CO₂ + 2 H₂O\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 50 ÷ 0,1 = 500 g/L\n\nExercice 3\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Proposition 13 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) C + O₂ → CO₂\nb) C₃H₈ + O₂ → CO₂ + H₂O\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Concentration massique\nOn dissout 19 g de sucre dans de l'eau pour obtenir 200 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "Exercice 1\na) C + O₂ → CO₂ (déjà équilibrée)\nb) C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 19 ÷ 0,2 = 95 g/L\n\nExercice 3\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Proposition 14 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) Na + Cl₂ → NaCl\nb) C + O₂ → CO₂\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Concentration massique\nOn dissout 38 g de sucre dans de l'eau pour obtenir 200 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 13 ; S2 : 7 ; S3 : 5 ; S4 : 4 ; S5 : 10\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "Exercice 1\na) 2 Na + Cl₂ → 2 NaCl\nb) C + O₂ → CO₂ (déjà équilibrée)\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 38 ÷ 0,2 = 190 g/L\n\nExercice 3\n1) S1 basique ; S2 neutre ; S3 acide ; S4 acide ; S5 basique\n2) Plus acide : S4 (pH 4) ; plus basique : S1 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Proposition 15 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) C₃H₈ + O₂ → CO₂ + H₂O\nb) C + CuO → Cu + CO₂\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Conservation de la masse\nOn fait réagir 12 g de carbone avec 32 g de dioxygène ; la réaction est totale.\n1) Quelle masse de dioxyde de carbone obtient-on ?\n2) Quelle loi utilise-t-on ?\n\nExercice 3 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?",
+     "solution": "Exercice 1\na) C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O\nb) C + 2 CuO → 2 Cu + CO₂\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) 12 + 32 = 44 g\n2) La conservation de la masse (loi de Lavoisier) : la masse des réactifs consommés est égale à la masse des produits formés.\n\nExercice 3\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux."
+    },
+    {
+     "title": "Proposition 16 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Équilibrer une équation bilan\nÉquilibrer les équations suivantes :\na) C + CuO → Cu + CO₂\nb) CH₄ + O₂ → CO₂ + H₂O\nPourquoi faut-il équilibrer une équation ?\n\nExercice 2 : Concentration massique\nOn dissout 49 g de sucre dans de l'eau pour obtenir 100 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 3 ; S2 : 1 ; S3 : 6 ; S4 : 5 ; S5 : 10\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "Exercice 1\na) C + 2 CuO → 2 Cu + CO₂\nb) CH₄ + 2 O₂ → CO₂ + 2 H₂O\nAu cours d'une réaction, les atomes se conservent (même nombre et même nature) : on ajuste les coefficients.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 49 ÷ 0,1 = 490 g/L\n\nExercice 3\n1) S1 acide ; S2 acide ; S3 acide ; S4 acide ; S5 basique\n2) Plus acide : S2 (pH 1) ; plus basique : S5 (pH 10)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Proposition 17 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Concentration massique\nOn dissout 24 g de sucre dans de l'eau pour obtenir 200 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 9 ; S2 : 8 ; S3 : 7 ; S4 : 4 ; S5 : 11\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 24 ÷ 0,2 = 120 g/L\n\nExercice 3\n1) S1 basique ; S2 basique ; S3 neutre ; S4 acide ; S5 basique\n2) Plus acide : S4 (pH 4) ; plus basique : S5 (pH 11)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Proposition 18 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Concentration massique\nOn dissout 42 g de sucre dans de l'eau pour obtenir 100 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 12 ; S2 : 6 ; S3 : 9 ; S4 : 13 ; S5 : 2\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 42 ÷ 0,1 = 420 g/L\n\nExercice 3\n1) S1 basique ; S2 acide ; S3 basique ; S4 basique ; S5 acide\n2) Plus acide : S5 (pH 2) ; plus basique : S4 (pH 13)\n3) Il augmente et se rapproche de 7."
+    },
+    {
+     "title": "Proposition 19 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Dilution\nOn prélève 10 mL d'une solution de concentration 100 g/L et on complète avec de l'eau jusqu'à 100 mL.\n1) La masse de soluté change-t-elle ?\n2) Calculer la concentration de la solution diluée.\n3) Quel est le facteur de dilution ?\n\nExercice 3 : Soluté, solvant, solution\n1) Définir : soluté, solvant, solution.\n2) Qu'est-ce qu'une solution saturée ?\n3) Dans l'eau salée, identifier le soluté et le solvant.",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) Non, la masse de soluté se conserve.\n2) C2 = C1 × V1 ÷ V2 = 100 × 10 ÷ 100 = 10 g/L\n3) F = V2 ÷ V1 = 10\n\nExercice 3\n1) Soluté : substance dissoute ; solvant : liquide qui dissout ; solution : mélange homogène obtenu.\n2) Une solution qui ne peut plus dissoudre de soluté (le soluté en excès reste au fond).\n3) Soluté : sel ; solvant : eau."
+    },
+    {
+     "title": "Proposition 20 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Réactifs et produits\nLors de la combustion du carbone dans le dioxygène, il se forme du dioxyde de carbone.\n1) Nommer les réactifs et le produit.\n2) Écrire le bilan en mots puis l'équation bilan.\n3) Comment mettre en évidence le produit formé ?\n\nExercice 2 : Concentration massique\nOn dissout 54 g de sucre dans de l'eau pour obtenir 200 mL de solution.\n1) Nommer le soluté et le solvant.\n2) Calculer la concentration massique en g/L.\n\nExercice 3 : Soluté, solvant, solution\n1) Définir : soluté, solvant, solution.\n2) Qu'est-ce qu'une solution saturée ?\n3) Dans l'eau salée, identifier le soluté et le solvant.",
+     "solution": "Exercice 1\n1) Réactifs : carbone et dioxygène ; produit : dioxyde de carbone.\n2) carbone + dioxygène → dioxyde de carbone ; C + O₂ → CO₂\n3) Il trouble l'eau de chaux.\n\nExercice 2\n1) Soluté : sucre ; solvant : eau.\n2) Cm = m ÷ V = 54 ÷ 0,2 = 270 g/L\n\nExercice 3\n1) Soluté : substance dissoute ; solvant : liquide qui dissout ; solution : mélange homogène obtenu.\n2) Une solution qui ne peut plus dissoudre de soluté (le soluté en excès reste au fond).\n3) Soluté : sel ; solvant : eau."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du 2e trimestre",
+   "covers": [
+    "Les différents états de la matière : mise en évidence",
+    "Propriétés physiques (état liquide)",
+    "Propriétés physiques (état solide, état gazeux)",
+    "Les changements d'état de la matière",
+    "Conservation de la masse",
+    "Variation du volume",
+    "Unités : masse (kg), volume (m3), température (°C)",
+    "Température des changements d'état de l'eau"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Masse et volume lors d'un changement d'état\nOn fait fondre 200 g de glace.\n1) Quelle masse d'eau liquide obtient-on ? Justifier.\n2) Le volume change-t-il ?\n\nExercice 2 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 11 ; S2 : 9 ; S3 : 3 ; S4 : 4 ; S5 : 10\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?\n\nExercice 3 : Poids et masse\nUn sac a une masse de 72,2 kg.\n1) Calculer son poids sur la Terre (g = 9,8 N/kg).\n2) Calculer son poids sur la Lune (g = 1,6 N/kg).\n3) Sa masse change-t-elle sur la Lune ?",
+     "solution": "Exercice 1\n1) 200 g : la masse se conserve lors d'un changement d'état.\n2) Oui : le volume de l'eau liquide est légèrement plus petit que celui de la glace.\n\nExercice 2\n1) S1 basique ; S2 basique ; S3 acide ; S4 acide ; S5 basique\n2) Plus acide : S3 (pH 3) ; plus basique : S1 (pH 11)\n3) Il augmente et se rapproche de 7.\n\nExercice 3\n1) P = m × g = 72,2 × 9,8 = 707,56 N\n2) P = 72,2 × 1,6 = 115,52 N\n3) Non, la masse ne dépend pas du lieu."
+    },
+    {
+     "title": "Proposition 2 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Masse et volume lors d'un changement d'état\nOn fait fondre 200 g de glace.\n1) Quelle masse d'eau liquide obtient-on ? Justifier.\n2) Le volume change-t-il ?\n\nExercice 2 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?\n\nExercice 3 : Flotte ou coule ?\nUn objet a une masse de 714 g et un volume de 685 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "Exercice 1\n1) 200 g : la masse se conserve lors d'un changement d'état.\n2) Oui : le volume de l'eau liquide est légèrement plus petit que celui de la glace.\n\nExercice 2\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux.\n\nExercice 3\n1) ρ = 714 ÷ 685 ≈ 1,04 g/cm³\n2) d ≈ 1,04\n3) Non, car d > 1"
+    },
+    {
+     "title": "Proposition 3 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Propriétés des états de la matière\nCompléter :\n1) Un solide a une forme … et un volume … .\n2) Un liquide a une forme … mais un volume … .\n3) Un gaz n'a ni forme ni volume … ; il est … .\n4) La surface libre d'un liquide au repos est … .\n\nExercice 2 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?\n\nExercice 3 : Masse volumique\nUn objet en fer a un volume de 429 cm³. La masse volumique du fer est 7 800 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\n1) propre ; propre\n2) celle du récipient (pas de forme propre) ; propre\n3) propres ; compressible (et expansible)\n4) plane et horizontale\n\nExercice 2\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux.\n\nExercice 3\n1) 429 cm³ = 0,000429 m³\n2) m = ρ × V = 7 800 × 0,000429 = 3,3462 kg = 3 346,2 g\n3) d = 7 800 ÷ 1 000 = 7,8"
+    },
+    {
+     "title": "Proposition 4 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Masse et volume lors d'un changement d'état\nOn fait fondre 200 g de glace.\n1) Quelle masse d'eau liquide obtient-on ? Justifier.\n2) Le volume change-t-il ?\n\nExercice 2 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 7 ; S2 : 1 ; S3 : 11 ; S4 : 12 ; S5 : 2\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?\n\nExercice 3 : Masse volumique\nUn objet en fer a un volume de 201 cm³. La masse volumique du fer est 7 800 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\n1) 200 g : la masse se conserve lors d'un changement d'état.\n2) Oui : le volume de l'eau liquide est légèrement plus petit que celui de la glace.\n\nExercice 2\n1) S1 neutre ; S2 acide ; S3 basique ; S4 basique ; S5 acide\n2) Plus acide : S2 (pH 1) ; plus basique : S4 (pH 12)\n3) Il augmente et se rapproche de 7.\n\nExercice 3\n1) 201 cm³ = 0,000201 m³\n2) m = ρ × V = 7 800 × 0,000201 = 1,5678 kg = 1 567,8 g\n3) d = 7 800 ÷ 1 000 = 7,8"
+    },
+    {
+     "title": "Proposition 5 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Propriétés des états de la matière\nCompléter :\n1) Un solide a une forme … et un volume … .\n2) Un liquide a une forme … mais un volume … .\n3) Un gaz n'a ni forme ni volume … ; il est … .\n4) La surface libre d'un liquide au repos est … .\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Masse volumique\nUn objet en cuivre a un volume de 146 cm³. La masse volumique du cuivre est 8 900 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\n1) propre ; propre\n2) celle du récipient (pas de forme propre) ; propre\n3) propres ; compressible (et expansible)\n4) plane et horizontale\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) 146 cm³ = 0,000146 m³\n2) m = ρ × V = 8 900 × 0,000146 = 1,2994 kg = 1 299,4 g\n3) d = 8 900 ÷ 1 000 = 8,9"
+    },
+    {
+     "title": "Proposition 6 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Propriétés des états de la matière\nCompléter :\n1) Un solide a une forme … et un volume … .\n2) Un liquide a une forme … mais un volume … .\n3) Un gaz n'a ni forme ni volume … ; il est … .\n4) La surface libre d'un liquide au repos est … .\n\nExercice 2 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?\n\nExercice 3 : Gravitation\n1) Qu'est-ce que la gravitation universelle ?\n2) De quoi dépend l'intensité de l'attraction entre deux corps ?\n3) Comment varie l'intensité de la pesanteur g quand on s'élève en altitude ?",
+     "solution": "Exercice 1\n1) propre ; propre\n2) celle du récipient (pas de forme propre) ; propre\n3) propres ; compressible (et expansible)\n4) plane et horizontale\n\nExercice 2\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux.\n\nExercice 3\n1) L'attraction mutuelle que s'exercent deux corps ayant une masse.\n2) De leurs masses et de la distance qui les sépare (elle diminue quand la distance augmente).\n3) Elle diminue."
+    },
+    {
+     "title": "Proposition 7 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?\n\nExercice 3 : Flotte ou coule ?\nUn objet a une masse de 527 g et un volume de 599 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux.\n\nExercice 3\n1) ρ = 527 ÷ 599 ≈ 0,88 g/cm³\n2) d ≈ 0,88\n3) Oui, car d < 1"
+    },
+    {
+     "title": "Proposition 8 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?\n\nExercice 3 : Masse volumique\nUn objet en huile a un volume de 190 cm³. La masse volumique du huile est 920 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux.\n\nExercice 3\n1) 190 cm³ = 0,00019 m³\n2) m = ρ × V = 920 × 0,00019 = 0,1748 kg = 174,8 g\n3) d = 920 ÷ 1 000 = 0,92"
+    },
+    {
+     "title": "Proposition 9 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Gravitation\n1) Qu'est-ce que la gravitation universelle ?\n2) De quoi dépend l'intensité de l'attraction entre deux corps ?\n3) Comment varie l'intensité de la pesanteur g quand on s'élève en altitude ?",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) L'attraction mutuelle que s'exercent deux corps ayant une masse.\n2) De leurs masses et de la distance qui les sépare (elle diminue quand la distance augmente).\n3) Elle diminue."
+    },
+    {
+     "title": "Proposition 10 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Masse et volume lors d'un changement d'état\nOn fait fondre 200 g de glace.\n1) Quelle masse d'eau liquide obtient-on ? Justifier.\n2) Le volume change-t-il ?\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Flotte ou coule ?\nUn objet a une masse de 165 g et un volume de 112 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "Exercice 1\n1) 200 g : la masse se conserve lors d'un changement d'état.\n2) Oui : le volume de l'eau liquide est légèrement plus petit que celui de la glace.\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) ρ = 165 ÷ 112 ≈ 1,47 g/cm³\n2) d ≈ 1,47\n3) Non, car d > 1"
+    },
+    {
+     "title": "Proposition 11 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?\n\nExercice 3 : Masse volumique\nUn objet en eau a un volume de 235 cm³. La masse volumique du eau est 1 000 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux.\n\nExercice 3\n1) 235 cm³ = 0,000235 m³\n2) m = ρ × V = 1 000 × 0,000235 = 0,235 kg = 235 g\n3) d = 1 000 ÷ 1 000 = 1"
+    },
+    {
+     "title": "Proposition 12 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Flotte ou coule ?\nUn objet a une masse de 561 g et un volume de 629 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) ρ = 561 ÷ 629 ≈ 0,89 g/cm³\n2) d ≈ 0,89\n3) Oui, car d < 1"
+    },
+    {
+     "title": "Proposition 13 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Flotte ou coule ?\nUn objet a une masse de 219 g et un volume de 743 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) ρ = 219 ÷ 743 ≈ 0,29 g/cm³\n2) d ≈ 0,29\n3) Oui, car d < 1"
+    },
+    {
+     "title": "Proposition 14 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 12 ; S2 : 9 ; S3 : 4 ; S4 : 1 ; S5 : 3\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?\n\nExercice 3 : Gravitation\n1) Qu'est-ce que la gravitation universelle ?\n2) De quoi dépend l'intensité de l'attraction entre deux corps ?\n3) Comment varie l'intensité de la pesanteur g quand on s'élève en altitude ?",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) S1 basique ; S2 basique ; S3 acide ; S4 acide ; S5 acide\n2) Plus acide : S4 (pH 1) ; plus basique : S1 (pH 12)\n3) Il augmente et se rapproche de 7.\n\nExercice 3\n1) L'attraction mutuelle que s'exercent deux corps ayant une masse.\n2) De leurs masses et de la distance qui les sépare (elle diminue quand la distance augmente).\n3) Elle diminue."
+    },
+    {
+     "title": "Proposition 15 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Propriétés des états de la matière\nCompléter :\n1) Un solide a une forme … et un volume … .\n2) Un liquide a une forme … mais un volume … .\n3) Un gaz n'a ni forme ni volume … ; il est … .\n4) La surface libre d'un liquide au repos est … .\n\nExercice 2 : Mesurer le pH\n1) Citer deux moyens de mesurer le pH d'une solution.\n2) Donner un exemple de solution acide et un exemple de solution basique de la vie courante.\n3) Pourquoi faut-il porter des lunettes et des gants pour manipuler les acides et les bases concentrés ?\n\nExercice 3 : Masse volumique\nUn objet en aluminium a un volume de 198 cm³. La masse volumique du aluminium est 2 700 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\n1) propre ; propre\n2) celle du récipient (pas de forme propre) ; propre\n3) propres ; compressible (et expansible)\n4) plane et horizontale\n\nExercice 2\n1) Le papier pH et le pH-mètre.\n2) Acide : jus de citron, vinaigre ; basique : eau de Javel, savon.\n3) Ils sont corrosifs : ils peuvent brûler la peau et les yeux.\n\nExercice 3\n1) 198 cm³ = 0,000198 m³\n2) m = ρ × V = 2 700 × 0,000198 = 0,5346 kg = 534,6 g\n3) d = 2 700 ÷ 1 000 = 2,7"
+    },
+    {
+     "title": "Proposition 16 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Poids et masse\nUn sac a une masse de 49,7 kg.\n1) Calculer son poids sur la Terre (g = 9,8 N/kg).\n2) Calculer son poids sur la Lune (g = 1,6 N/kg).\n3) Sa masse change-t-elle sur la Lune ?",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) P = m × g = 49,7 × 9,8 = 487,06 N\n2) P = 49,7 × 1,6 = 79,52 N\n3) Non, la masse ne dépend pas du lieu."
+    },
+    {
+     "title": "Proposition 17 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Masse volumique\nUn objet en cuivre a un volume de 462 cm³. La masse volumique du cuivre est 8 900 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) 462 cm³ = 0,000462 m³\n2) m = ρ × V = 8 900 × 0,000462 = 4,1118 kg = 4 111,8 g\n3) d = 8 900 ÷ 1 000 = 8,9"
+    },
+    {
+     "title": "Proposition 18 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Propriétés des états de la matière\nCompléter :\n1) Un solide a une forme … et un volume … .\n2) Un liquide a une forme … mais un volume … .\n3) Un gaz n'a ni forme ni volume … ; il est … .\n4) La surface libre d'un liquide au repos est … .\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Gravitation\n1) Qu'est-ce que la gravitation universelle ?\n2) De quoi dépend l'intensité de l'attraction entre deux corps ?\n3) Comment varie l'intensité de la pesanteur g quand on s'élève en altitude ?",
+     "solution": "Exercice 1\n1) propre ; propre\n2) celle du récipient (pas de forme propre) ; propre\n3) propres ; compressible (et expansible)\n4) plane et horizontale\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) L'attraction mutuelle que s'exercent deux corps ayant une masse.\n2) De leurs masses et de la distance qui les sépare (elle diminue quand la distance augmente).\n3) Elle diminue."
+    },
+    {
+     "title": "Proposition 19 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Propriétés des états de la matière\nCompléter :\n1) Un solide a une forme … et un volume … .\n2) Un liquide a une forme … mais un volume … .\n3) Un gaz n'a ni forme ni volume … ; il est … .\n4) La surface libre d'un liquide au repos est … .\n\nExercice 2 : Solutions acides, basiques et neutres\nOn mesure le pH de cinq solutions : S1 : 3 ; S2 : 9 ; S3 : 13 ; S4 : 2 ; S5 : 5\n1) Classer ces solutions en acides, neutres et basiques.\n2) Quelle est la plus acide ? la plus basique ?\n3) On dilue une solution acide. Comment varie son pH ?\n\nExercice 3 : Masse volumique\nUn objet en cuivre a un volume de 319 cm³. La masse volumique du cuivre est 8 900 kg/m³.\n1) Convertir le volume en m³.\n2) Calculer la masse de l'objet en kg puis en g.\n3) Calculer sa densité par rapport à l'eau.",
+     "solution": "Exercice 1\n1) propre ; propre\n2) celle du récipient (pas de forme propre) ; propre\n3) propres ; compressible (et expansible)\n4) plane et horizontale\n\nExercice 2\n1) S1 acide ; S2 basique ; S3 basique ; S4 acide ; S5 acide\n2) Plus acide : S4 (pH 2) ; plus basique : S3 (pH 13)\n3) Il augmente et se rapproche de 7.\n\nExercice 3\n1) 319 cm³ = 0,000319 m³\n2) m = ρ × V = 8 900 × 0,000319 = 2,8391 kg = 2 839,1 g\n3) d = 8 900 ÷ 1 000 = 8,9"
+    },
+    {
+     "title": "Proposition 20 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Les changements d'état\nNommer les changements d'état suivants :\na) solide → liquide ;\nb) liquide → gaz ;\nc) gaz → liquide ;\nd) liquide → solide ;\ne) solide → gaz.\n\nExercice 2 : Palier de température\nOn chauffe de la glace à −10 °C jusqu'à obtenir de l'eau à 20 °C.\n1) À quelle température se fait la fusion ?\n2) Que devient la température pendant la fusion ?\n3) Que peut-on en conclure sur l'eau ?\n\nExercice 3 : Flotte ou coule ?\nUn objet a une masse de 838 g et un volume de 389 cm³.\n1) Calculer sa masse volumique en g/cm³ (arrondie au centième).\n2) Calculer sa densité par rapport à l'eau.\n3) Flotte-t-il sur l'eau ?",
+     "solution": "Exercice 1\na) Fusion ; b) vaporisation ; c) liquéfaction (condensation) ; d) solidification ; e) sublimation.\n\nExercice 2\n1) 0 °C.\n2) Elle reste constante (palier) tant que toute la glace n'a pas fondu.\n3) L'eau est un corps pur (palier de fusion à 0 °C).\n\nExercice 3\n1) ρ = 838 ÷ 389 ≈ 2,15 g/cm³\n2) d ≈ 2,15\n3) Non, car d > 1"
+    }
+   ]
+  },
+  {
+   "week": "Semaine 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du 3e trimestre",
+   "covers": [
+    "Caractéristiques d'un dipôle ohmique : mesure, unité, loi d'Ohm",
+    "Caractéristiques d'un dipôle ohmique (suite)",
+    "Association des résistances : en série",
+    "Association des résistances : en dérivation",
+    "Puissance électrique (définition, unité, expression)",
+    "Puissance nominale",
+    "Énergie électrique (définition, unité, expression)",
+    "Réflexion de la lumière"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 47 Ω est traversé par un courant d'intensité I = 33 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 230 V – 100 W. Il fonctionne 5 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 59 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 57°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 47 × 0,033 = 1,551 V\n3) I = 6 ÷ 47 ≈ 0,1277 A ≈ 127,7 mA\n\nExercice 2\n1) Tension nominale 230 V ; puissance nominale 100 W.\n2) I = P ÷ U = 100 ÷ 230 ≈ 0,43 A\n3) E = P × t = 0,1 kW × 5 h = 0,5 kWh\n4) 0,5 × 30 × 59 = 885 MRU\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 57°\n3) 90° − 57° = 33°"
+    },
+    {
+     "title": "Proposition 2 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,01 | 0,03 | 0,04 | 0,06\nU (V) : 0,2 | 0,6 | 0,8 | 1,2\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 12 Ω et R2 = 24 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réfraction : de l'eau vers l'air\nUn rayon passe de l'eau vers l'air sous un angle d'incidence de 30°.\n1) L'angle de réfraction est-il plus grand ou plus petit que 30° ?\n2) Que se passe-t-il si l'angle d'incidence est très grand ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 20 pour chaque mesure.\n2) R = 20 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Rs = 12 + 24 = 36 Ω\n2) 1/Rp = 1/12 + 1/24 ; Rp = 12 × 24 ÷ (12 + 24) = 8 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Plus grand : le rayon s'éloigne de la normale en passant dans l'air.\n2) Il peut ne plus sortir : c'est la réflexion totale."
+    },
+    {
+     "title": "Proposition 3 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 330 Ω est traversé par un courant d'intensité I = 43 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 100 Ω et R2 = 150 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réfraction : de l'eau vers l'air\nUn rayon passe de l'eau vers l'air sous un angle d'incidence de 30°.\n1) L'angle de réfraction est-il plus grand ou plus petit que 30° ?\n2) Que se passe-t-il si l'angle d'incidence est très grand ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 330 × 0,043 = 14,19 V\n3) I = 6 ÷ 330 ≈ 0,0182 A ≈ 18,2 mA\n\nExercice 2\n1) Rs = 100 + 150 = 250 Ω\n2) 1/Rp = 1/100 + 1/150 ; Rp = 100 × 150 ÷ (100 + 150) = 60 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Plus grand : le rayon s'éloigne de la normale en passant dans l'air.\n2) Il peut ne plus sortir : c'est la réflexion totale."
+    },
+    {
+     "title": "Proposition 4 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,02 | 0,03 | 0,08 | 0,09\nU (V) : 0,8 | 1,2 | 3,2 | 3,6\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 40 Ω et R2 = 60 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Puissance nominale\n1) Quelle est l'unité de la puissance électrique ?\n2) Écrire la relation entre P, U et I.\n3) Deux lampes de 60 W et 100 W sont alimentées sous leur tension nominale : laquelle brille le plus ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 40 pour chaque mesure.\n2) R = 40 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Rs = 40 + 60 = 100 Ω\n2) 1/Rp = 1/40 + 1/60 ; Rp = 40 × 60 ÷ (40 + 60) = 24 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le watt (W).\n2) P = U × I.\n3) La lampe de 100 W (plus grande puissance)."
+    },
+    {
+     "title": "Proposition 5 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,02 | 0,04 | 0,06\nU (V) : 1 | 2 | 3\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 220 V – 100 W. Il fonctionne 3 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Réfraction : de l'eau vers l'air\nUn rayon passe de l'eau vers l'air sous un angle d'incidence de 30°.\n1) L'angle de réfraction est-il plus grand ou plus petit que 30° ?\n2) Que se passe-t-il si l'angle d'incidence est très grand ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 50 pour chaque mesure.\n2) R = 50 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Tension nominale 220 V ; puissance nominale 100 W.\n2) I = P ÷ U = 100 ÷ 220 ≈ 0,45 A\n3) E = P × t = 0,1 kW × 3 h = 0,3 kWh\n4) 0,3 × 30 × 63 = 567 MRU\n\nExercice 3\n1) Plus grand : le rayon s'éloigne de la normale en passant dans l'air.\n2) Il peut ne plus sortir : c'est la réflexion totale."
+    },
+    {
+     "title": "Proposition 6 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,01 | 0,03 | 0,04 | 0,12\nU (V) : 0,2 | 0,6 | 0,8 | 2,4\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 220 V – 1500 W. Il fonctionne 2 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 59 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Réfraction de la lumière\nUn rayon passe de l'air dans l'eau.\n1) Qu'appelle-t-on réfraction ?\n2) Le rayon réfracté se rapproche-t-il ou s'éloigne-t-il de la normale ?\n3) Pourquoi un bâton plongé dans l'eau paraît-il brisé ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 20 pour chaque mesure.\n2) R = 20 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Tension nominale 220 V ; puissance nominale 1500 W.\n2) I = P ÷ U = 1500 ÷ 220 ≈ 6,82 A\n3) E = P × t = 1,5 kW × 2 h = 3 kWh\n4) 3 × 30 × 59 = 5 310 MRU\n\nExercice 3\n1) Le changement de direction de la lumière lorsqu'elle traverse la surface de séparation de deux milieux transparents différents.\n2) Il se rapproche de la normale (l'eau est plus réfringente que l'air).\n3) À cause de la réfraction de la lumière à la surface de l'eau."
+    },
+    {
+     "title": "Proposition 7 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,03 | 0,06 | 0,09 | 0,12\nU (V) : 3 | 6 | 9 | 12\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 220 V – 100 W. Il fonctionne 5 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Réfraction de la lumière\nUn rayon passe de l'air dans l'eau.\n1) Qu'appelle-t-on réfraction ?\n2) Le rayon réfracté se rapproche-t-il ou s'éloigne-t-il de la normale ?\n3) Pourquoi un bâton plongé dans l'eau paraît-il brisé ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 100 pour chaque mesure.\n2) R = 100 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Tension nominale 220 V ; puissance nominale 100 W.\n2) I = P ÷ U = 100 ÷ 220 ≈ 0,45 A\n3) E = P × t = 0,1 kW × 5 h = 0,5 kWh\n4) 0,5 × 30 × 63 = 945 MRU\n\nExercice 3\n1) Le changement de direction de la lumière lorsqu'elle traverse la surface de séparation de deux milieux transparents différents.\n2) Il se rapproche de la normale (l'eau est plus réfringente que l'air).\n3) À cause de la réfraction de la lumière à la surface de l'eau."
+    },
+    {
+     "title": "Proposition 8 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 10 Ω est traversé par un courant d'intensité I = 44 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 40 Ω et R2 = 60 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réfraction : de l'eau vers l'air\nUn rayon passe de l'eau vers l'air sous un angle d'incidence de 30°.\n1) L'angle de réfraction est-il plus grand ou plus petit que 30° ?\n2) Que se passe-t-il si l'angle d'incidence est très grand ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 10 × 0,044 = 0,44 V\n3) I = 6 ÷ 10 ≈ 0,6 A ≈ 600 mA\n\nExercice 2\n1) Rs = 40 + 60 = 100 Ω\n2) 1/Rp = 1/40 + 1/60 ; Rp = 40 × 60 ÷ (40 + 60) = 24 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Plus grand : le rayon s'éloigne de la normale en passant dans l'air.\n2) Il peut ne plus sortir : c'est la réflexion totale."
+    },
+    {
+     "title": "Proposition 9 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 50 Ω est traversé par un courant d'intensité I = 7 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 30 Ω et R2 = 60 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 67°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 50 × 0,007 = 0,35 V\n3) I = 6 ÷ 50 ≈ 0,12 A ≈ 120 mA\n\nExercice 2\n1) Rs = 30 + 60 = 90 Ω\n2) 1/Rp = 1/30 + 1/60 ; Rp = 30 × 60 ÷ (30 + 60) = 20 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 67°\n3) 90° − 67° = 23°"
+    },
+    {
+     "title": "Proposition 10 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,02 | 0,06 | 0,08 | 0,09\nU (V) : 0,4 | 1,2 | 1,6 | 1,8\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 230 V – 2000 W. Il fonctionne 3 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 59 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Réfraction de la lumière\nUn rayon passe de l'air dans l'eau.\n1) Qu'appelle-t-on réfraction ?\n2) Le rayon réfracté se rapproche-t-il ou s'éloigne-t-il de la normale ?\n3) Pourquoi un bâton plongé dans l'eau paraît-il brisé ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 20 pour chaque mesure.\n2) R = 20 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Tension nominale 230 V ; puissance nominale 2000 W.\n2) I = P ÷ U = 2000 ÷ 230 ≈ 8,7 A\n3) E = P × t = 2 kW × 3 h = 6 kWh\n4) 6 × 30 × 59 = 10 620 MRU\n\nExercice 3\n1) Le changement de direction de la lumière lorsqu'elle traverse la surface de séparation de deux milieux transparents différents.\n2) Il se rapproche de la normale (l'eau est plus réfringente que l'air).\n3) À cause de la réfraction de la lumière à la surface de l'eau."
+    },
+    {
+     "title": "Proposition 11 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 10 Ω est traversé par un courant d'intensité I = 73 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 40 Ω et R2 = 60 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Puissance nominale\n1) Quelle est l'unité de la puissance électrique ?\n2) Écrire la relation entre P, U et I.\n3) Deux lampes de 60 W et 100 W sont alimentées sous leur tension nominale : laquelle brille le plus ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 10 × 0,073 = 0,73 V\n3) I = 6 ÷ 10 ≈ 0,6 A ≈ 600 mA\n\nExercice 2\n1) Rs = 40 + 60 = 100 Ω\n2) 1/Rp = 1/40 + 1/60 ; Rp = 40 × 60 ÷ (40 + 60) = 24 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le watt (W).\n2) P = U × I.\n3) La lampe de 100 W (plus grande puissance)."
+    },
+    {
+     "title": "Proposition 12 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,02 | 0,03 | 0,04 | 0,06\nU (V) : 1 | 1,5 | 2 | 3\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 230 V – 2000 W. Il fonctionne 2 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Réfraction de la lumière\nUn rayon passe de l'air dans l'eau.\n1) Qu'appelle-t-on réfraction ?\n2) Le rayon réfracté se rapproche-t-il ou s'éloigne-t-il de la normale ?\n3) Pourquoi un bâton plongé dans l'eau paraît-il brisé ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 50 pour chaque mesure.\n2) R = 50 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Tension nominale 230 V ; puissance nominale 2000 W.\n2) I = P ÷ U = 2000 ÷ 230 ≈ 8,7 A\n3) E = P × t = 2 kW × 2 h = 4 kWh\n4) 4 × 30 × 63 = 7 560 MRU\n\nExercice 3\n1) Le changement de direction de la lumière lorsqu'elle traverse la surface de séparation de deux milieux transparents différents.\n2) Il se rapproche de la normale (l'eau est plus réfringente que l'air).\n3) À cause de la réfraction de la lumière à la surface de l'eau."
+    },
+    {
+     "title": "Proposition 13 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 47 Ω est traversé par un courant d'intensité I = 75 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 10 Ω et R2 = 15 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 42°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 47 × 0,075 = 3,525 V\n3) I = 6 ÷ 47 ≈ 0,1277 A ≈ 127,7 mA\n\nExercice 2\n1) Rs = 10 + 15 = 25 Ω\n2) 1/Rp = 1/10 + 1/15 ; Rp = 10 × 15 ÷ (10 + 15) = 6 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 42°\n3) 90° − 42° = 48°"
+    },
+    {
+     "title": "Proposition 14 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,02 | 0,03 | 0,12\nU (V) : 2 | 3 | 12\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 10 Ω et R2 = 15 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 33°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 100 pour chaque mesure.\n2) R = 100 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Rs = 10 + 15 = 25 Ω\n2) 1/Rp = 1/10 + 1/15 ; Rp = 10 × 15 ÷ (10 + 15) = 6 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 33°\n3) 90° − 33° = 57°"
+    },
+    {
+     "title": "Proposition 15 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 100 Ω est traversé par un courant d'intensité I = 63 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 100 Ω et R2 = 150 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 71°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 100 × 0,063 = 6,3 V\n3) I = 6 ÷ 100 ≈ 0,06 A ≈ 60 mA\n\nExercice 2\n1) Rs = 100 + 150 = 250 Ω\n2) 1/Rp = 1/100 + 1/150 ; Rp = 100 × 150 ÷ (100 + 150) = 60 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 71°\n3) 90° − 71° = 19°"
+    },
+    {
+     "title": "Proposition 16 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,01 | 0,06 | 0,08 | 0,09\nU (V) : 0,4 | 2,4 | 3,2 | 3,6\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 10 Ω et R2 = 15 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 56°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 40 pour chaque mesure.\n2) R = 40 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Rs = 10 + 15 = 25 Ω\n2) 1/Rp = 1/10 + 1/15 ; Rp = 10 × 15 ÷ (10 + 15) = 6 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 56°\n3) 90° − 56° = 34°"
+    },
+    {
+     "title": "Proposition 17 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 100 Ω est traversé par un courant d'intensité I = 64 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 220 V – 100 W. Il fonctionne 2 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 59 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Puissance nominale\n1) Quelle est l'unité de la puissance électrique ?\n2) Écrire la relation entre P, U et I.\n3) Deux lampes de 60 W et 100 W sont alimentées sous leur tension nominale : laquelle brille le plus ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 100 × 0,064 = 6,4 V\n3) I = 6 ÷ 100 ≈ 0,06 A ≈ 60 mA\n\nExercice 2\n1) Tension nominale 220 V ; puissance nominale 100 W.\n2) I = P ÷ U = 100 ÷ 220 ≈ 0,45 A\n3) E = P × t = 0,1 kW × 2 h = 0,2 kWh\n4) 0,2 × 30 × 59 = 354 MRU\n\nExercice 3\n1) Le watt (W).\n2) P = U × I.\n3) La lampe de 100 W (plus grande puissance)."
+    },
+    {
+     "title": "Proposition 18 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,03 | 0,04\nU (V) : 1,2 | 1,6\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 100 Ω et R2 = 150 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 56°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 40 pour chaque mesure.\n2) R = 40 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Rs = 100 + 150 = 250 Ω\n2) 1/Rp = 1/100 + 1/150 ; Rp = 100 × 150 ÷ (100 + 150) = 60 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 56°\n3) 90° − 56° = 34°"
+    },
+    {
+     "title": "Proposition 19 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Loi d'Ohm\nUn conducteur ohmique de résistance R = 330 Ω est traversé par un courant d'intensité I = 23 mA.\n1) Énoncer la loi d'Ohm.\n2) Calculer la tension à ses bornes.\n3) Quelle intensité le traverse sous 6 V ?\n\nExercice 2 : Association de résistances\nOn dispose de R1 = 100 Ω et R2 = 150 Ω.\n1) Calculer la résistance équivalente lorsqu'elles sont en série.\n2) Calculer la résistance équivalente lorsqu'elles sont en dérivation.\n3) Comparer chaque résultat à R1 et R2.\n\nExercice 3 : Réfraction de la lumière\nUn rayon passe de l'air dans l'eau.\n1) Qu'appelle-t-on réfraction ?\n2) Le rayon réfracté se rapproche-t-il ou s'éloigne-t-il de la normale ?\n3) Pourquoi un bâton plongé dans l'eau paraît-il brisé ?",
+     "solution": "Exercice 1\n1) U = R × I (U en V, R en Ω, I en A).\n2) U = 330 × 0,023 = 7,59 V\n3) I = 6 ÷ 330 ≈ 0,0182 A ≈ 18,2 mA\n\nExercice 2\n1) Rs = 100 + 150 = 250 Ω\n2) 1/Rp = 1/100 + 1/150 ; Rp = 100 × 150 ÷ (100 + 150) = 60 Ω\n3) Rs est plus grande que chacune ; Rp est plus petite que chacune.\n\nExercice 3\n1) Le changement de direction de la lumière lorsqu'elle traverse la surface de séparation de deux milieux transparents différents.\n2) Il se rapproche de la normale (l'eau est plus réfringente que l'air).\n3) À cause de la réfraction de la lumière à la surface de l'eau."
+    },
+    {
+     "title": "Proposition 20 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Caractéristique d'un dipôle ohmique\nOn mesure U et I pour un conducteur ohmique :\nI (A) : 0,02 | 0,06 | 0,08\nU (V) : 2 | 6 | 8\n1) U et I sont-ils proportionnels ? Justifier.\n2) En déduire la résistance R.\n3) Quelle est l'allure de la caractéristique U = f(I) ?\n\nExercice 2 : Puissance et énergie électriques\nSur un appareil on lit : 230 V – 100 W. Il fonctionne 3 h par jour.\n1) Que signifient ces indications ?\n2) Calculer l'intensité du courant qui le traverse (arrondie au centième).\n3) Calculer l'énergie consommée par jour en kWh.\n4) Le kWh coûte 63 MRU. Calculer le coût pour 30 jours.\n\nExercice 3 : Réflexion de la lumière\nUn rayon lumineux arrive sur un miroir plan avec un angle d'incidence de 43°.\n1) Énoncer les lois de la réflexion.\n2) Quel est l'angle de réflexion ?\n3) Quel angle fait le rayon réfléchi avec la surface du miroir ?",
+     "solution": "Exercice 1\n1) Oui : U ÷ I = 100 pour chaque mesure.\n2) R = 100 Ω\n3) Une droite passant par l'origine.\n\nExercice 2\n1) Tension nominale 230 V ; puissance nominale 100 W.\n2) I = P ÷ U = 100 ÷ 230 ≈ 0,43 A\n3) E = P × t = 0,1 kW × 3 h = 0,3 kWh\n4) 0,3 × 30 × 63 = 567 MRU\n\nExercice 3\n1) Le rayon réfléchi est dans le plan d'incidence ; l'angle de réflexion est égal à l'angle d'incidence.\n2) r = 43°\n3) 90° − 43° = 47°"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,948 @@
+{
+ "subject": "PC",
+ "level": "2AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Semaine 7",
+   "term": 1,
+   "kind": "eval",
+   "title": "Série d'exercices — Évaluation",
+   "covers": [
+    "Mélanges : définition",
+    "Mélanges homogènes et hétérogènes",
+    "Méthodes de séparation des mélanges liquides : décantation, filtration",
+    "Distillation",
+    "Mélanges gazeux : air",
+    "Composition de l'air",
+    "Masse d'un litre d'air",
+    "Pression atmosphérique : mise en évidence, mesure et unité"
+   ],
+   "items": [
+    {
+     "title": "Composition de l'air",
+     "text": "1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?",
+     "solution": "1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ)."
+    },
+    {
+     "title": "Définir un mélange",
+     "text": "1) Qu'est-ce qu'un mélange ?\n2) Donner deux exemples de mélanges de la vie quotidienne.\n3) Le lait est-il un corps pur ? Justifier.",
+     "solution": "1) Un mélange est constitué d'au moins deux constituants différents.\n2) Le thé sucré, l'eau boueuse, l'air…\n3) Non : le lait contient de l'eau, des matières grasses, des protéines… c'est un mélange."
+    },
+    {
+     "title": "La décantation",
+     "text": "On laisse reposer de l'eau boueuse dans un verre pendant une heure.\n1) Qu'observe-t-on ?\n2) Comment s'appelle cette méthode de séparation ?\n3) Le liquide obtenu est-il parfaitement limpide ? Que faut-il faire ensuite ?",
+     "solution": "1) Les particules solides tombent au fond du verre ; un liquide plus clair se trouve au-dessus.\n2) La décantation.\n3) Non, il peut rester de fines particules : on réalise une filtration."
+    },
+    {
+     "title": "Compressibilité de l'air",
+     "text": "On bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?",
+     "solution": "1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles."
+    },
+    {
+     "title": "Ordre des étapes",
+     "text": "Pour obtenir une eau limpide à partir d'une eau boueuse, un élève propose : filtration, puis décantation.\n1) L'ordre est-il judicieux ? Justifier.\n2) L'eau obtenue est-elle potable ? Pourquoi ?",
+     "solution": "1) Non : on décante d'abord (pour ne pas boucher le filtre), puis on filtre.\n2) Pas forcément : elle peut contenir des substances dissoutes et des microbes invisibles."
+    },
+    {
+     "title": "Choisir une méthode de séparation",
+     "text": "Indiquer la méthode qui permet de séparer :\na) l'huile et l'eau ;\nb) le sable et l'eau ;\nc) l'eau et le sel dissous ;\nd) les feuilles de thé et le thé.",
+     "solution": "a) Décantation (ampoule à décanter) ;\nb) décantation puis filtration ;\nc) distillation (ou évaporation pour récupérer le sel) ;\nd) filtration."
+    },
+    {
+     "title": "Schéma d'une distillation",
+     "text": "Légender un schéma de montage de distillation avec les mots : ballon, chauffe-ballon, thermomètre, réfrigérant, entrée d'eau froide, distillat.\nPourquoi l'eau froide entre-t-elle par le bas du réfrigérant ?",
+     "solution": "Le ballon est chauffé ; le thermomètre est en haut du ballon ; la vapeur passe dans le réfrigérant refroidi par l'eau froide ; le distillat est recueilli dans un erlenmeyer.\nL'eau froide entre par le bas pour que le réfrigérant soit entièrement rempli d'eau et refroidisse mieux."
+    },
+    {
+     "title": "La combustion consomme le dioxygène",
+     "text": "On renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?",
+     "solution": "1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place."
+    },
+    {
+     "title": "La pollution de l'air",
+     "text": "1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.",
+     "solution": "1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun."
+    },
+    {
+     "title": "L'air a une masse",
+     "text": "Un ballon vide pèse 520 g. Après l'avoir gonflé avec de l'air, il pèse 523 g.\n1) Quelle est la masse de l'air introduit ?\n2) Que peut-on en conclure ?",
+     "solution": "1) 523 − 520 = 3 g\n2) L'air, comme tout gaz, a une masse."
+    },
+    {
+     "title": "La distillation",
+     "text": "1) Quel est le but de la distillation ?\n2) Nommer les deux changements d'état qui se produisent lors d'une distillation.\n3) Comment s'appelle le liquide recueilli ?\n4) Comment obtenir de l'eau pure à partir d'eau de mer ?",
+     "solution": "1) Séparer les constituants d'un mélange homogène liquide (ou obtenir un liquide pur).\n2) La vaporisation (ébullition) puis la liquéfaction (condensation).\n3) Le distillat.\n4) Par distillation de l'eau de mer : la vapeur d'eau se condense, le sel reste dans le ballon."
+    },
+    {
+     "title": "Évaporation et cristallisation",
+     "text": "On chauffe doucement de l'eau salée dans une coupelle jusqu'à disparition de l'eau.\n1) Qu'obtient-on au fond de la coupelle ?\n2) Comment s'appelle cette méthode ?\n3) Comment produit-on le sel dans les salines ?",
+     "solution": "1) Des cristaux de sel.\n2) L'évaporation (cristallisation).\n3) L'eau de mer s'évapore au soleil dans des bassins et le sel se dépose."
+    },
+    {
+     "title": "L'air, un mélange",
+     "text": "1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?",
+     "solution": "1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux."
+    },
+    {
+     "title": "Mélange homogène ou hétérogène ?",
+     "text": "Classer les mélanges suivants en homogènes et hétérogènes :\neau + sel dissous ; eau + sable ; eau + huile ; eau + sucre dissous ; jus d'orange avec pulpe ; air filtré.",
+     "solution": "Homogènes : eau salée, eau sucrée, air filtré (on ne distingue pas les constituants à l'œil nu).\nHétérogènes : eau + sable, eau + huile, jus d'orange avec pulpe."
+    },
+    {
+     "title": "Volumes de diazote et de dioxygène",
+     "text": "Une pièce contient 120 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Diazote : 120 × 78 ÷ 100 = 93,6 m³\nDioxygène : 120 × 21 ÷ 100 = 25,2 m³"
+    },
+    {
+     "title": "La filtration",
+     "text": "1) Citer le matériel nécessaire pour réaliser une filtration.\n2) Comment appelle-t-on le liquide recueilli après filtration ?\n3) La filtration permet-elle de séparer le sel de l'eau salée ? Justifier.",
+     "solution": "1) Un entonnoir, un papier filtre, un support et un bécher (ou erlenmeyer).\n2) Le filtrat.\n3) Non : le sel est dissous, il traverse le filtre avec l'eau (mélange homogène)."
+    },
+    {
+     "title": "Mélange de liquides",
+     "text": "On verse de l'alcool dans l'eau, puis de l'huile dans l'eau.\n1) Dans quel cas obtient-on un mélange homogène ?\n2) Comment dit-on de deux liquides qui se mélangent ? qui ne se mélangent pas ?",
+     "solution": "1) Eau + alcool.\n2) Miscibles ; non miscibles."
+    },
+    {
+     "title": "Volumes de diazote et de dioxygène",
+     "text": "Une pièce contient 50 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Diazote : 50 × 78 ÷ 100 = 39 m³\nDioxygène : 50 × 21 ÷ 100 = 10,5 m³"
+    },
+    {
+     "title": "Volumes de diazote et de dioxygène",
+     "text": "Une pièce contient 250 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Diazote : 250 × 78 ÷ 100 = 195 m³\nDioxygène : 250 × 21 ÷ 100 = 52,5 m³"
+    },
+    {
+     "title": "Volumes de diazote et de dioxygène",
+     "text": "Une pièce contient 80 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Diazote : 80 × 78 ÷ 100 = 62,4 m³\nDioxygène : 80 × 21 ÷ 100 = 16,8 m³"
+    }
+   ]
+  },
+  {
+   "week": "Semaine 18",
+   "term": 2,
+   "kind": "eval",
+   "title": "Série d'exercices — Évaluation",
+   "covers": [
+    "Mélanges gazeux (suite)",
+    "Corps purs simples",
+    "Corps purs composés",
+    "Atome : nom et symbole de quelques atomes : H, O, C, N, Cl, Na, Fe, Cu, Ag, Au…",
+    "Molécule : formule moléculaire de quelques molécules : H2, O2, N2, Cl2, H2O, CO2",
+    "Éléments d'un circuit simple",
+    "Dipôles et symboles",
+    "Conducteurs et isolants"
+   ],
+   "items": [
+    {
+     "title": "Les dipôles et leurs symboles",
+     "text": "Dessiner le symbole normalisé de : une pile, une lampe, un interrupteur ouvert, un interrupteur fermé, un moteur, une DEL.",
+     "solution": "Pile : deux traits parallèles inégaux ; lampe : cercle avec une croix ; interrupteur ouvert : trait levé ; fermé : trait continu ; moteur : cercle avec M ; DEL : triangle-trait avec deux flèches sortantes."
+    },
+    {
+     "title": "Circuit fermé ou ouvert",
+     "text": "1) À quelle condition une lampe brille-t-elle dans un circuit ?\n2) Une lampe ne brille pas alors que le circuit est fermé. Donner deux causes possibles.",
+     "solution": "1) Le circuit doit être fermé : une boucle conductrice ininterrompue reliant les bornes du générateur.\n2) Lampe grillée, pile usée, mauvais contact, fil coupé."
+    },
+    {
+     "title": "Formules de molécules",
+     "text": "Donner la formule des molécules suivantes et le nombre d'atomes de chacune : dihydrogène, dioxygène, diazote, dichlore, eau, dioxyde de carbone.",
+     "solution": "H₂ (2 atomes) ; O₂ (2) ; N₂ (2) ; Cl₂ (2) ; H₂O (3 : 2 H et 1 O) ; CO₂ (3 : 1 C et 2 O)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 3,881 V en mV et 259 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 3,881 V = 3 881 mV ; 259 mV = 0,259 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Corps pur ou mélange ?",
+     "text": "Dire si chaque substance est un corps pur ou un mélange : eau distillée ; eau du robinet ; air ; fer ; jus de citron ; sel de cuisine (pur).",
+     "solution": "Corps purs : eau distillée, fer, sel de cuisine pur.\nMélanges : eau du robinet, air, jus de citron."
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 12 V. La tension aux bornes de la lampe est 8,5 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 12 − 8,5 = 3,5 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Atome ou molécule ?",
+     "text": "1) Quelle différence y a-t-il entre un atome et une molécule ?\n2) Classer : O ; O₂ ; Fe ; H₂O ; Cu ; N₂.",
+     "solution": "1) Une molécule est un assemblage d'atomes liés entre eux.\n2) Atomes : O, Fe, Cu. Molécules : O₂, H₂O, N₂."
+    },
+    {
+     "title": "Court-circuit",
+     "text": "1) Qu'est-ce qu'un court-circuit ?\n2) Pourquoi est-il dangereux ?\n3) Quel dispositif protège une installation contre les courts-circuits ?",
+     "solution": "1) Les bornes d'un dipôle (ou du générateur) sont reliées par un fil sans dipôle : le courant ne passe plus par le dipôle.\n2) Le courant devient très intense : échauffement des fils, risque d'incendie, pile détériorée.\n3) Un fusible ou un disjoncteur."
+    },
+    {
+     "title": "Noms et symboles",
+     "text": "Donner le symbole des atomes suivants : hydrogène, oxygène, carbone, azote, chlore, sodium, fer, cuivre, argent, or.",
+     "solution": "H ; O ; C ; N ; Cl ; Na ; Fe ; Cu ; Ag ; Au."
+    },
+    {
+     "title": "Corps purs simples et composés",
+     "text": "Classer : dioxygène O₂ ; eau H₂O ; fer Fe ; dioxyde de carbone CO₂ ; diazote N₂ ; chlorure de sodium NaCl.\nen corps purs simples et corps purs composés. Justifier.",
+     "solution": "Simples (un seul type d'atome) : O₂, Fe, N₂.\nComposés (plusieurs types d'atomes) : H₂O, CO₂, NaCl."
+    },
+    {
+     "title": "Lire une formule",
+     "text": "Pour chaque formule, indiquer la nature et le nombre d'atomes : H₂O ; CO₂ ; CH₄ ; NH₃.",
+     "solution": "H₂O : 2 hydrogène, 1 oxygène.\nCO₂ : 1 carbone, 2 oxygène.\nCH₄ : 1 carbone, 4 hydrogène.\nNH₃ : 1 azote, 3 hydrogène."
+    },
+    {
+     "title": "Règle d'écriture des symboles",
+     "text": "1) Quelle règle utilise-t-on pour écrire le symbole d'un atome ?\n2) Corriger les écritures fausses : co ; FE ; cL ; Ag ; NA.",
+     "solution": "1) La première lettre est une majuscule ; la deuxième (s'il y en a une) est une minuscule.\n2) Co (ou C et O selon le cas) ; Fe ; Cl ; Ag (correct) ; Na."
+    },
+    {
+     "title": "Unicité de la tension en dérivation",
+     "text": "Deux lampes sont montées en dérivation aux bornes d'une pile de 12 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?",
+     "solution": "1) 12 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 12 V (si la pile est idéale)."
+    },
+    {
+     "title": "Identifier un corps pur",
+     "text": "1) Quelle est la température d'ébullition de l'eau pure sous la pression normale ?\n2) Une eau commence à bouillir à 102 °C. Est-elle pure ? Justifier.",
+     "solution": "1) 100 °C.\n2) Non : un corps pur a une température d'ébullition fixe ; un écart indique la présence d'autres substances (par exemple du sel)."
+    },
+    {
+     "title": "Série ou parallèle ?",
+     "text": "Deux lampes L1 et L2 sont branchées avec une pile.\n1) Dans un premier montage, si L1 grille, L2 s'éteint. Comment sont-elles branchées ?\n2) Dans un second montage, si L1 grille, L2 continue de briller. Comment sont-elles branchées ?\n3) Quel montage utilise-t-on dans une maison ? Pourquoi ?",
+     "solution": "1) En série (une seule boucle).\n2) En dérivation (parallèle).\n3) En dérivation : chaque appareil fonctionne indépendamment des autres."
+    },
+    {
+     "title": "Loi d'unicité de l'intensité",
+     "text": "Un circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,25 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "1) 0,25 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,25 A = 250 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Des symboles aux noms",
+     "text": "Donner le nom de l'atome correspondant à chaque symbole : Na ; Cl ; Cu ; Ag ; Au ; Fe ; N.",
+     "solution": "Sodium ; chlore ; cuivre ; argent ; or ; fer ; azote."
+    },
+    {
+     "title": "Compter des atomes",
+     "text": "Combien d'atomes de chaque sorte y a-t-il dans 9 molécules de CO₂ ?",
+     "solution": "9 × CO₂ : 9 atomes de C, 18 atomes de O."
+    },
+    {
+     "title": "Trouver une intensité inconnue",
+     "text": "Dans un montage en dérivation à deux branches, l'ampèremètre de la branche principale indique 1,13 A et celui de la branche 1 indique 0,49 A.\nCalculer l'intensité dans la branche 2. En mA ?",
+     "solution": "I2 = 1,13 − 0,49 = 0,64 A = 640 mA"
+    },
+    {
+     "title": "Loi des nœuds",
+     "text": "Trois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,23 A, I2 = 0,4 A et I3 = 0,39 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,23 + 0,4 + 0,39 = 1,02 A\n3) I = 0,23 + 0,4 = 0,63 A"
+    }
+   ]
+  },
+  {
+   "week": "Semaine 25",
+   "term": 3,
+   "kind": "eval",
+   "title": "Série d'exercices — Révision",
+   "covers": [
+    "Tension : voltmètre, mesure, unité",
+    "Additivité des tensions dans un circuit série",
+    "Unicité de la tension dans un circuit dérivation",
+    "Additivité et unicité des tensions (suite)"
+   ],
+   "items": [
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 6 V. La tension aux bornes de la lampe est 3,8 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 6 − 3,8 = 2,2 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 2,549 V en mV et 399 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 2,549 V = 2 549 mV ; 399 mV = 0,399 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Loi d'unicité de l'intensité",
+     "text": "Un circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,74 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "1) 0,74 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,74 A = 740 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Loi des nœuds",
+     "text": "Trois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,51 A, I2 = 0,24 A et I3 = 0,39 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,51 + 0,24 + 0,39 = 1,14 A\n3) I = 0,51 + 0,24 = 0,75 A"
+    },
+    {
+     "title": "Unicité de la tension en dérivation",
+     "text": "Deux lampes sont montées en dérivation aux bornes d'une pile de 9 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?",
+     "solution": "1) 9 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 9 V (si la pile est idéale)."
+    },
+    {
+     "title": "Trouver une intensité inconnue",
+     "text": "Dans un montage en dérivation à deux branches, l'ampèremètre de la branche principale indique 0,8 A et celui de la branche 1 indique 0,62 A.\nCalculer l'intensité dans la branche 2. En mA ?",
+     "solution": "I2 = 0,8 − 0,62 = 0,18 A = 180 mA"
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 6 V. La tension aux bornes de la lampe est 4,1 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 6 − 4,1 = 1,9 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 7,69 V en mV et 844 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 7,69 V = 7 690 mV ; 844 mV = 0,844 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Loi d'unicité de l'intensité",
+     "text": "Un circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,91 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "1) 0,91 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,91 A = 910 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Loi des nœuds",
+     "text": "Trois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,31 A, I2 = 0,2 A et I3 = 0,19 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,31 + 0,2 + 0,19 = 0,7 A\n3) I = 0,31 + 0,2 = 0,51 A"
+    },
+    {
+     "title": "Trouver une intensité inconnue",
+     "text": "Dans un montage en dérivation à deux branches, l'ampèremètre de la branche principale indique 0,64 A et celui de la branche 1 indique 0,31 A.\nCalculer l'intensité dans la branche 2. En mA ?",
+     "solution": "I2 = 0,64 − 0,31 = 0,33 A = 330 mA"
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 9 V. La tension aux bornes de la lampe est 5,8 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 9 − 5,8 = 3,2 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 1,373 V en mV et 872 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 1,373 V = 1 373 mV ; 872 mV = 0,872 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Loi d'unicité de l'intensité",
+     "text": "Un circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,47 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "1) 0,47 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,47 A = 470 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Loi des nœuds",
+     "text": "Trois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,37 A, I2 = 0,44 A et I3 = 0,36 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,37 + 0,44 + 0,36 = 1,17 A\n3) I = 0,37 + 0,44 = 0,81 A"
+    },
+    {
+     "title": "Trouver une intensité inconnue",
+     "text": "Dans un montage en dérivation à deux branches, l'ampèremètre de la branche principale indique 0,88 A et celui de la branche 1 indique 0,16 A.\nCalculer l'intensité dans la branche 2. En mA ?",
+     "solution": "I2 = 0,88 − 0,16 = 0,72 A = 720 mA"
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 12 V. La tension aux bornes de la lampe est 5 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 12 − 5 = 7 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 5,965 V en mV et 342 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 5,965 V = 5 965 mV ; 342 mV = 0,342 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Loi d'unicité de l'intensité",
+     "text": "Un circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,18 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "1) 0,18 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,18 A = 180 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Loi des nœuds",
+     "text": "Trois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,52 A, I2 = 0,26 A et I3 = 0,14 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,52 + 0,26 + 0,14 = 0,92 A\n3) I = 0,52 + 0,26 = 0,78 A"
+    }
+   ]
+  },
+  {
+   "week": "Semaine 30",
+   "term": 3,
+   "kind": "eval",
+   "title": "Série d'exercices — Évaluation",
+   "covers": [
+    "Tension nominale",
+    "Surtension et sous-tension",
+    "Effets d'une force : effet statique et effet dynamique",
+    "Définition d'une force",
+    "Les différents types de forces",
+    "Caractéristiques d'une force",
+    "Représentation vectorielle d'une force"
+   ],
+   "items": [
+    {
+     "title": "Forces de contact et à distance",
+     "text": "Classer en forces de contact et forces à distance : la force du vent sur une voile ; l'attraction d'un aimant sur un clou ; le poids d'une pomme ; la poussée d'une main sur une porte ; la force d'un fil qui retient une lampe.",
+     "solution": "Contact : vent sur la voile, main sur la porte, fil sur la lampe.\nÀ distance : aimant sur le clou, poids de la pomme."
+    },
+    {
+     "title": "Caractéristiques d'une force",
+     "text": "Citer les quatre caractéristiques d'une force et l'unité de son intensité. Avec quel appareil mesure-t-on cette intensité ?",
+     "solution": "Point d'application, direction (droite d'action), sens, intensité. Unité : le newton (N). Appareil : le dynamomètre."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 4,431 V en mV et 618 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 4,431 V = 4 431 mV ; 618 mV = 0,618 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Représenter une force",
+     "text": "Une force d'intensité 15 N, verticale ou horizontale, dirigée vers le haut, s'exerce au point A.\nÉchelle : 1 cm pour 1 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.",
+     "solution": "1) 15 ÷ 1 = 15 cm\n2) Une flèche partant de A, dirigée vers le haut, de longueur 15 cm."
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 4,5 V. La tension aux bornes de la lampe est 2,5 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 4,5 − 2,5 = 2 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Tension nominale",
+     "text": "Sur le culot d'une lampe on lit « 12 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 15 V. Que se passe-t-il ?",
+     "solution": "1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 15 V > 12 V : surtension : la lampe brille trop et risque de griller."
+    },
+    {
+     "title": "Effets d'une force",
+     "text": "Pour chaque situation, préciser l'effet de la force (statique : déformation ; dynamique : mise en mouvement ou modification du mouvement) :\na) un joueur frappe un ballon ;\nb) on écrase une boule de pâte ;\nc) le frein ralentit un vélo ;\nd) un ressort s'allonge sous une charge.",
+     "solution": "a) Dynamique (mise en mouvement) ;\nb) statique (déformation) ;\nc) dynamique (modification du mouvement) ;\nd) statique (déformation)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 1,724 V en mV et 714 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 1,724 V = 1 724 mV ; 714 mV = 0,714 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Représenter une force",
+     "text": "Une force d'intensité 6 N, verticale ou horizontale, dirigée vers le bas, s'exerce au point A.\nÉchelle : 1 cm pour 1 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.",
+     "solution": "1) 6 ÷ 1 = 6 cm\n2) Une flèche partant de A, dirigée vers le bas, de longueur 6 cm."
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 4,5 V. La tension aux bornes de la lampe est 1 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 4,5 − 1 = 3,5 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Tension nominale",
+     "text": "Sur le culot d'une lampe on lit « 3,5 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 6,5 V. Que se passe-t-il ?",
+     "solution": "1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 6,5 V > 3,5 V : surtension : la lampe brille trop et risque de griller."
+    },
+    {
+     "title": "Unicité de la tension en dérivation",
+     "text": "Deux lampes sont montées en dérivation aux bornes d'une pile de 6 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?",
+     "solution": "1) 6 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 6 V (si la pile est idéale)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 6,402 V en mV et 97 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 6,402 V = 6 402 mV ; 97 mV = 0,097 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Représenter une force",
+     "text": "Une force d'intensité 10 N, verticale ou horizontale, dirigée vers la droite, s'exerce au point A.\nÉchelle : 1 cm pour 1 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.",
+     "solution": "1) 10 ÷ 1 = 10 cm\n2) Une flèche partant de A, dirigée vers la droite, de longueur 10 cm."
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 9 V. La tension aux bornes de la lampe est 3,4 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 9 − 3,4 = 5,6 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Tension nominale",
+     "text": "Sur le culot d'une lampe on lit « 6 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 8 V. Que se passe-t-il ?",
+     "solution": "1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 8 V > 6 V : surtension : la lampe brille trop et risque de griller."
+    },
+    {
+     "title": "Unicité de la tension en dérivation",
+     "text": "Deux lampes sont montées en dérivation aux bornes d'une pile de 4,5 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?",
+     "solution": "1) 4,5 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 4,5 V (si la pile est idéale)."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 6,485 V en mV et 4 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 6,485 V = 6 485 mV ; 4 mV = 0,004 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Représenter une force",
+     "text": "Une force d'intensité 20 N, verticale ou horizontale, dirigée vers la droite, s'exerce au point A.\nÉchelle : 1 cm pour 2 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.",
+     "solution": "1) 20 ÷ 2 = 10 cm\n2) Une flèche partant de A, dirigée vers la droite, de longueur 10 cm."
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 9 V. La tension aux bornes de la lampe est 5,6 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 9 − 5,6 = 3,4 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 36",
+   "term": 3,
+   "kind": "final",
+   "title": "Révision générale de l'année",
+   "covers": [
+    "Mélanges : définition",
+    "Mélanges homogènes et hétérogènes",
+    "Méthodes de séparation des mélanges liquides : décantation, filtration",
+    "Distillation",
+    "Mélanges gazeux : air",
+    "Composition de l'air",
+    "Masse d'un litre d'air",
+    "Pression atmosphérique : mise en évidence, mesure et unité"
+   ],
+   "items": [
+    {
+     "title": "Les éclipses",
+     "text": "1) Lors d'une éclipse de Soleil, quel astre se trouve entre la Terre et le Soleil ?\n2) Lors d'une éclipse de Lune, où se trouve la Terre ?\n3) Quelle propriété de la lumière ces phénomènes illustrent-ils ?",
+     "solution": "1) La Lune.\n2) Entre le Soleil et la Lune : la Lune est dans l'ombre de la Terre.\n3) La propagation rectiligne de la lumière."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 3,52 V en mV et 398 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 3,52 V = 3 520 mV ; 398 mV = 0,398 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Représenter une force",
+     "text": "Une force d'intensité 10 N, verticale ou horizontale, dirigée vers le bas, s'exerce au point A.\nÉchelle : 1 cm pour 1 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.",
+     "solution": "1) 10 ÷ 1 = 10 cm\n2) Une flèche partant de A, dirigée vers le bas, de longueur 10 cm."
+    },
+    {
+     "title": "Propagation rectiligne",
+     "text": "1) Comment la lumière se propage-t-elle dans un milieu transparent et homogène ?\n2) Comment représente-t-on un rayon lumineux ?\n3) Quels sont les trois types de faisceaux lumineux ?",
+     "solution": "1) En ligne droite.\n2) Par une droite munie d'une flèche indiquant le sens de propagation.\n3) Faisceaux convergent, divergent et parallèle."
+    },
+    {
+     "title": "Ombre propre et ombre portée",
+     "text": "Une balle éclairée par une lampe se trouve devant un mur.\n1) Qu'appelle-t-on ombre propre et ombre portée ?\n2) Pourquoi observe-t-on une pénombre avec une source étendue ?",
+     "solution": "1) Ombre propre : partie non éclairée de l'objet ; ombre portée : zone non éclairée sur l'écran derrière l'objet.\n2) Certaines zones reçoivent la lumière d'une partie seulement de la source : elles sont partiellement éclairées."
+    },
+    {
+     "title": "La chambre noire",
+     "text": "Un arbre de 9 m de haut est situé à 4 m d'une chambre noire de profondeur 18 cm.\n1) L'image est-elle droite ou renversée ?\n2) Calculer la hauteur de l'image (h'/h = d'/d).",
+     "solution": "1) Renversée.\n2) h' = 9 × 0,18 ÷ 4 = 0,405 m = 40,5 cm"
+    },
+    {
+     "title": "Tension nominale",
+     "text": "Sur le culot d'une lampe on lit « 2,5 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 2,5 V. Que se passe-t-il ?",
+     "solution": "1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 2,5 V = 2,5 V : fonctionnement normal."
+    },
+    {
+     "title": "Loi d'unicité de l'intensité",
+     "text": "Un circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,39 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "1) 0,39 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,39 A = 390 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 6 V. La tension aux bornes de la lampe est 2,4 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 6 − 2,4 = 3,6 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Compter des atomes",
+     "text": "Combien d'atomes de chaque sorte y a-t-il dans 2 molécules de CO₂ ?",
+     "solution": "2 × CO₂ : 2 atomes de C, 4 atomes de O."
+    },
+    {
+     "title": "Trouver une intensité inconnue",
+     "text": "Dans un montage en dérivation à deux branches, l'ampèremètre de la branche principale indique 1 A et celui de la branche 1 indique 0,36 A.\nCalculer l'intensité dans la branche 2. En mA ?",
+     "solution": "I2 = 1 − 0,36 = 0,64 A = 640 mA"
+    },
+    {
+     "title": "Loi des nœuds",
+     "text": "Trois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,39 A, I2 = 0,59 A et I3 = 0,19 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,39 + 0,59 + 0,19 = 1,17 A\n3) I = 0,39 + 0,59 = 0,98 A"
+    },
+    {
+     "title": "Sources de lumière",
+     "text": "Classer en sources primaires et sources secondaires (objets diffusants) : le Soleil ; la Lune ; une lampe allumée ; un miroir ; une bougie allumée ; un mur blanc éclairé.",
+     "solution": "Primaires (produisent leur lumière) : Soleil, lampe allumée, bougie.\nSecondaires (renvoient la lumière reçue) : Lune, miroir, mur éclairé."
+    },
+    {
+     "title": "Mesure et conversion de tensions",
+     "text": "1) Convertir 5,52 V en mV et 578 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "1) 5,52 V = 5 520 mV ; 578 mV = 0,578 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Représenter une force",
+     "text": "Une force d'intensité 2 N, verticale ou horizontale, dirigée vers le haut, s'exerce au point A.\nÉchelle : 1 cm pour 2 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.",
+     "solution": "1) 2 ÷ 2 = 1 cm\n2) Une flèche partant de A, dirigée vers le haut, de longueur 1 cm."
+    },
+    {
+     "title": "La chambre noire",
+     "text": "Un arbre de 5 m de haut est situé à 6 m d'une chambre noire de profondeur 39 cm.\n1) L'image est-elle droite ou renversée ?\n2) Calculer la hauteur de l'image (h'/h = d'/d).",
+     "solution": "1) Renversée.\n2) h' = 5 × 0,39 ÷ 6 = 0,325 m = 32,5 cm"
+    },
+    {
+     "title": "Tension nominale",
+     "text": "Sur le culot d'une lampe on lit « 6 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 9 V. Que se passe-t-il ?",
+     "solution": "1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 9 V > 6 V : surtension : la lampe brille trop et risque de griller."
+    },
+    {
+     "title": "Loi d'unicité de l'intensité",
+     "text": "Un circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,14 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "1) 0,14 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,14 A = 140 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Additivité des tensions",
+     "text": "Une lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 9 V. La tension aux bornes de la lampe est 2,3 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 9 − 2,3 = 6,7 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Compter des atomes",
+     "text": "Combien d'atomes de chaque sorte y a-t-il dans 6 molécules de CO₂ ?",
+     "solution": "6 × CO₂ : 6 atomes de C, 12 atomes de O."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Semaine 11",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du 1er trimestre",
+   "covers": [
+    "Mélanges : définition",
+    "Mélanges homogènes et hétérogènes",
+    "Méthodes de séparation des mélanges liquides : décantation, filtration",
+    "Distillation",
+    "Mélanges gazeux : air",
+    "Composition de l'air",
+    "Masse d'un litre d'air",
+    "Pression atmosphérique : mise en évidence, mesure et unité"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Choisir une méthode de séparation\nIndiquer la méthode qui permet de séparer :\na) l'huile et l'eau ;\nb) le sable et l'eau ;\nc) l'eau et le sel dissous ;\nd) les feuilles de thé et le thé.\n\nExercice 2 : Schéma d'une distillation\nLégender un schéma de montage de distillation avec les mots : ballon, chauffe-ballon, thermomètre, réfrigérant, entrée d'eau froide, distillat.\nPourquoi l'eau froide entre-t-elle par le bas du réfrigérant ?\n\nExercice 3 : Identifier un corps pur\n1) Quelle est la température d'ébullition de l'eau pure sous la pression normale ?\n2) Une eau commence à bouillir à 102 °C. Est-elle pure ? Justifier.",
+     "solution": "Exercice 1\na) Décantation (ampoule à décanter) ;\nb) décantation puis filtration ;\nc) distillation (ou évaporation pour récupérer le sel) ;\nd) filtration.\n\nExercice 2\nLe ballon est chauffé ; le thermomètre est en haut du ballon ; la vapeur passe dans le réfrigérant refroidi par l'eau froide ; le distillat est recueilli dans un erlenmeyer.\nL'eau froide entre par le bas pour que le réfrigérant soit entièrement rempli d'eau et refroidisse mieux.\n\nExercice 3\n1) 100 °C.\n2) Non : un corps pur a une température d'ébullition fixe ; un écart indique la présence d'autres substances (par exemple du sel)."
+    },
+    {
+     "title": "Proposition 2 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Définir un mélange\n1) Qu'est-ce qu'un mélange ?\n2) Donner deux exemples de mélanges de la vie quotidienne.\n3) Le lait est-il un corps pur ? Justifier.\n\nExercice 2 : L'air a une masse\nUn ballon vide pèse 520 g. Après l'avoir gonflé avec de l'air, il pèse 523 g.\n1) Quelle est la masse de l'air introduit ?\n2) Que peut-on en conclure ?\n\nExercice 3 : Identifier un corps pur\n1) Quelle est la température d'ébullition de l'eau pure sous la pression normale ?\n2) Une eau commence à bouillir à 102 °C. Est-elle pure ? Justifier.",
+     "solution": "Exercice 1\n1) Un mélange est constitué d'au moins deux constituants différents.\n2) Le thé sucré, l'eau boueuse, l'air…\n3) Non : le lait contient de l'eau, des matières grasses, des protéines… c'est un mélange.\n\nExercice 2\n1) 523 − 520 = 3 g\n2) L'air, comme tout gaz, a une masse.\n\nExercice 3\n1) 100 °C.\n2) Non : un corps pur a une température d'ébullition fixe ; un écart indique la présence d'autres substances (par exemple du sel)."
+    },
+    {
+     "title": "Proposition 3 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La décantation\nOn laisse reposer de l'eau boueuse dans un verre pendant une heure.\n1) Qu'observe-t-on ?\n2) Comment s'appelle cette méthode de séparation ?\n3) Le liquide obtenu est-il parfaitement limpide ? Que faut-il faire ensuite ?\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : Identifier un corps pur\n1) Quelle est la température d'ébullition de l'eau pure sous la pression normale ?\n2) Une eau commence à bouillir à 102 °C. Est-elle pure ? Justifier.",
+     "solution": "Exercice 1\n1) Les particules solides tombent au fond du verre ; un liquide plus clair se trouve au-dessus.\n2) La décantation.\n3) Non, il peut rester de fines particules : on réalise une filtration.\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\n1) 100 °C.\n2) Non : un corps pur a une température d'ébullition fixe ; un écart indique la présence d'autres substances (par exemple du sel)."
+    },
+    {
+     "title": "Proposition 4 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La décantation\nOn laisse reposer de l'eau boueuse dans un verre pendant une heure.\n1) Qu'observe-t-on ?\n2) Comment s'appelle cette méthode de séparation ?\n3) Le liquide obtenu est-il parfaitement limpide ? Que faut-il faire ensuite ?\n\nExercice 2 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 3 : Des symboles aux noms\nDonner le nom de l'atome correspondant à chaque symbole : Na ; Cl ; Cu ; Ag ; Au ; Fe ; N.",
+     "solution": "Exercice 1\n1) Les particules solides tombent au fond du verre ; un liquide plus clair se trouve au-dessus.\n2) La décantation.\n3) Non, il peut rester de fines particules : on réalise une filtration.\n\nExercice 2\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 3\nSodium ; chlore ; cuivre ; argent ; or ; fer ; azote."
+    },
+    {
+     "title": "Proposition 5 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Mélange homogène ou hétérogène ?\nClasser les mélanges suivants en homogènes et hétérogènes :\neau + sel dissous ; eau + sable ; eau + huile ; eau + sucre dissous ; jus d'orange avec pulpe ; air filtré.\n\nExercice 2 : Schéma d'une distillation\nLégender un schéma de montage de distillation avec les mots : ballon, chauffe-ballon, thermomètre, réfrigérant, entrée d'eau froide, distillat.\nPourquoi l'eau froide entre-t-elle par le bas du réfrigérant ?\n\nExercice 3 : Des symboles aux noms\nDonner le nom de l'atome correspondant à chaque symbole : Na ; Cl ; Cu ; Ag ; Au ; Fe ; N.",
+     "solution": "Exercice 1\nHomogènes : eau salée, eau sucrée, air filtré (on ne distingue pas les constituants à l'œil nu).\nHétérogènes : eau + sable, eau + huile, jus d'orange avec pulpe.\n\nExercice 2\nLe ballon est chauffé ; le thermomètre est en haut du ballon ; la vapeur passe dans le réfrigérant refroidi par l'eau froide ; le distillat est recueilli dans un erlenmeyer.\nL'eau froide entre par le bas pour que le réfrigérant soit entièrement rempli d'eau et refroidisse mieux.\n\nExercice 3\nSodium ; chlore ; cuivre ; argent ; or ; fer ; azote."
+    },
+    {
+     "title": "Proposition 6 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Mélange homogène ou hétérogène ?\nClasser les mélanges suivants en homogènes et hétérogènes :\neau + sel dissous ; eau + sable ; eau + huile ; eau + sucre dissous ; jus d'orange avec pulpe ; air filtré.\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : Identifier un corps pur\n1) Quelle est la température d'ébullition de l'eau pure sous la pression normale ?\n2) Une eau commence à bouillir à 102 °C. Est-elle pure ? Justifier.",
+     "solution": "Exercice 1\nHomogènes : eau salée, eau sucrée, air filtré (on ne distingue pas les constituants à l'œil nu).\nHétérogènes : eau + sable, eau + huile, jus d'orange avec pulpe.\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) 100 °C.\n2) Non : un corps pur a une température d'ébullition fixe ; un écart indique la présence d'autres substances (par exemple du sel)."
+    },
+    {
+     "title": "Proposition 7 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Définir un mélange\n1) Qu'est-ce qu'un mélange ?\n2) Donner deux exemples de mélanges de la vie quotidienne.\n3) Le lait est-il un corps pur ? Justifier.\n\nExercice 2 : Mélange de liquides\nOn verse de l'alcool dans l'eau, puis de l'huile dans l'eau.\n1) Dans quel cas obtient-on un mélange homogène ?\n2) Comment dit-on de deux liquides qui se mélangent ? qui ne se mélangent pas ?\n\nExercice 3 : Des symboles aux noms\nDonner le nom de l'atome correspondant à chaque symbole : Na ; Cl ; Cu ; Ag ; Au ; Fe ; N.",
+     "solution": "Exercice 1\n1) Un mélange est constitué d'au moins deux constituants différents.\n2) Le thé sucré, l'eau boueuse, l'air…\n3) Non : le lait contient de l'eau, des matières grasses, des protéines… c'est un mélange.\n\nExercice 2\n1) Eau + alcool.\n2) Miscibles ; non miscibles.\n\nExercice 3\nSodium ; chlore ; cuivre ; argent ; or ; fer ; azote."
+    },
+    {
+     "title": "Proposition 8 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Ordre des étapes\nPour obtenir une eau limpide à partir d'une eau boueuse, un élève propose : filtration, puis décantation.\n1) L'ordre est-il judicieux ? Justifier.\n2) L'eau obtenue est-elle potable ? Pourquoi ?\n\nExercice 2 : L'air a une masse\nUn ballon vide pèse 520 g. Après l'avoir gonflé avec de l'air, il pèse 523 g.\n1) Quelle est la masse de l'air introduit ?\n2) Que peut-on en conclure ?\n\nExercice 3 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?",
+     "solution": "Exercice 1\n1) Non : on décante d'abord (pour ne pas boucher le filtre), puis on filtre.\n2) Pas forcément : elle peut contenir des substances dissoutes et des microbes invisibles.\n\nExercice 2\n1) 523 − 520 = 3 g\n2) L'air, comme tout gaz, a une masse.\n\nExercice 3\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place."
+    },
+    {
+     "title": "Proposition 9 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La filtration\n1) Citer le matériel nécessaire pour réaliser une filtration.\n2) Comment appelle-t-on le liquide recueilli après filtration ?\n3) La filtration permet-elle de séparer le sel de l'eau salée ? Justifier.\n\nExercice 2 : Mélange de liquides\nOn verse de l'alcool dans l'eau, puis de l'huile dans l'eau.\n1) Dans quel cas obtient-on un mélange homogène ?\n2) Comment dit-on de deux liquides qui se mélangent ? qui ne se mélangent pas ?\n\nExercice 3 : Corps purs simples et composés\nClasser : dioxygène O₂ ; eau H₂O ; fer Fe ; dioxyde de carbone CO₂ ; diazote N₂ ; chlorure de sodium NaCl.\nen corps purs simples et corps purs composés. Justifier.",
+     "solution": "Exercice 1\n1) Un entonnoir, un papier filtre, un support et un bécher (ou erlenmeyer).\n2) Le filtrat.\n3) Non : le sel est dissous, il traverse le filtre avec l'eau (mélange homogène).\n\nExercice 2\n1) Eau + alcool.\n2) Miscibles ; non miscibles.\n\nExercice 3\nSimples (un seul type d'atome) : O₂, Fe, N₂.\nComposés (plusieurs types d'atomes) : H₂O, CO₂, NaCl."
+    },
+    {
+     "title": "Proposition 10 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La filtration\n1) Citer le matériel nécessaire pour réaliser une filtration.\n2) Comment appelle-t-on le liquide recueilli après filtration ?\n3) La filtration permet-elle de séparer le sel de l'eau salée ? Justifier.\n\nExercice 2 : Schéma d'une distillation\nLégender un schéma de montage de distillation avec les mots : ballon, chauffe-ballon, thermomètre, réfrigérant, entrée d'eau froide, distillat.\nPourquoi l'eau froide entre-t-elle par le bas du réfrigérant ?\n\nExercice 3 : Identifier un corps pur\n1) Quelle est la température d'ébullition de l'eau pure sous la pression normale ?\n2) Une eau commence à bouillir à 102 °C. Est-elle pure ? Justifier.",
+     "solution": "Exercice 1\n1) Un entonnoir, un papier filtre, un support et un bécher (ou erlenmeyer).\n2) Le filtrat.\n3) Non : le sel est dissous, il traverse le filtre avec l'eau (mélange homogène).\n\nExercice 2\nLe ballon est chauffé ; le thermomètre est en haut du ballon ; la vapeur passe dans le réfrigérant refroidi par l'eau froide ; le distillat est recueilli dans un erlenmeyer.\nL'eau froide entre par le bas pour que le réfrigérant soit entièrement rempli d'eau et refroidisse mieux.\n\nExercice 3\n1) 100 °C.\n2) Non : un corps pur a une température d'ébullition fixe ; un écart indique la présence d'autres substances (par exemple du sel)."
+    },
+    {
+     "title": "Proposition 11 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Mélange homogène ou hétérogène ?\nClasser les mélanges suivants en homogènes et hétérogènes :\neau + sel dissous ; eau + sable ; eau + huile ; eau + sucre dissous ; jus d'orange avec pulpe ; air filtré.\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?",
+     "solution": "Exercice 1\nHomogènes : eau salée, eau sucrée, air filtré (on ne distingue pas les constituants à l'œil nu).\nHétérogènes : eau + sable, eau + huile, jus d'orange avec pulpe.\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place."
+    },
+    {
+     "title": "Proposition 12 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Choisir une méthode de séparation\nIndiquer la méthode qui permet de séparer :\na) l'huile et l'eau ;\nb) le sable et l'eau ;\nc) l'eau et le sel dissous ;\nd) les feuilles de thé et le thé.\n\nExercice 2 : Évaporation et cristallisation\nOn chauffe doucement de l'eau salée dans une coupelle jusqu'à disparition de l'eau.\n1) Qu'obtient-on au fond de la coupelle ?\n2) Comment s'appelle cette méthode ?\n3) Comment produit-on le sel dans les salines ?\n\nExercice 3 : Corps purs simples et composés\nClasser : dioxygène O₂ ; eau H₂O ; fer Fe ; dioxyde de carbone CO₂ ; diazote N₂ ; chlorure de sodium NaCl.\nen corps purs simples et corps purs composés. Justifier.",
+     "solution": "Exercice 1\na) Décantation (ampoule à décanter) ;\nb) décantation puis filtration ;\nc) distillation (ou évaporation pour récupérer le sel) ;\nd) filtration.\n\nExercice 2\n1) Des cristaux de sel.\n2) L'évaporation (cristallisation).\n3) L'eau de mer s'évapore au soleil dans des bassins et le sel se dépose.\n\nExercice 3\nSimples (un seul type d'atome) : O₂, Fe, N₂.\nComposés (plusieurs types d'atomes) : H₂O, CO₂, NaCl."
+    },
+    {
+     "title": "Proposition 13 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La distillation\n1) Quel est le but de la distillation ?\n2) Nommer les deux changements d'état qui se produisent lors d'une distillation.\n3) Comment s'appelle le liquide recueilli ?\n4) Comment obtenir de l'eau pure à partir d'eau de mer ?\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.",
+     "solution": "Exercice 1\n1) Séparer les constituants d'un mélange homogène liquide (ou obtenir un liquide pur).\n2) La vaporisation (ébullition) puis la liquéfaction (condensation).\n3) Le distillat.\n4) Par distillation de l'eau de mer : la vapeur d'eau se condense, le sel reste dans le ballon.\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun."
+    },
+    {
+     "title": "Proposition 14 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Définir un mélange\n1) Qu'est-ce qu'un mélange ?\n2) Donner deux exemples de mélanges de la vie quotidienne.\n3) Le lait est-il un corps pur ? Justifier.\n\nExercice 2 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 3 : Corps pur ou mélange ?\nDire si chaque substance est un corps pur ou un mélange : eau distillée ; eau du robinet ; air ; fer ; jus de citron ; sel de cuisine (pur).",
+     "solution": "Exercice 1\n1) Un mélange est constitué d'au moins deux constituants différents.\n2) Le thé sucré, l'eau boueuse, l'air…\n3) Non : le lait contient de l'eau, des matières grasses, des protéines… c'est un mélange.\n\nExercice 2\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 3\nCorps purs : eau distillée, fer, sel de cuisine pur.\nMélanges : eau du robinet, air, jus de citron."
+    },
+    {
+     "title": "Proposition 15 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Définir un mélange\n1) Qu'est-ce qu'un mélange ?\n2) Donner deux exemples de mélanges de la vie quotidienne.\n3) Le lait est-il un corps pur ? Justifier.\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?",
+     "solution": "Exercice 1\n1) Un mélange est constitué d'au moins deux constituants différents.\n2) Le thé sucré, l'eau boueuse, l'air…\n3) Non : le lait contient de l'eau, des matières grasses, des protéines… c'est un mélange.\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place."
+    },
+    {
+     "title": "Proposition 16 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Définir un mélange\n1) Qu'est-ce qu'un mélange ?\n2) Donner deux exemples de mélanges de la vie quotidienne.\n3) Le lait est-il un corps pur ? Justifier.\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?",
+     "solution": "Exercice 1\n1) Un mélange est constitué d'au moins deux constituants différents.\n2) Le thé sucré, l'eau boueuse, l'air…\n3) Non : le lait contient de l'eau, des matières grasses, des protéines… c'est un mélange.\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place."
+    },
+    {
+     "title": "Proposition 17 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Ordre des étapes\nPour obtenir une eau limpide à partir d'une eau boueuse, un élève propose : filtration, puis décantation.\n1) L'ordre est-il judicieux ? Justifier.\n2) L'eau obtenue est-elle potable ? Pourquoi ?\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : Volumes de diazote et de dioxygène\nUne pièce contient 50 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Exercice 1\n1) Non : on décante d'abord (pour ne pas boucher le filtre), puis on filtre.\n2) Pas forcément : elle peut contenir des substances dissoutes et des microbes invisibles.\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\nDiazote : 50 × 78 ÷ 100 = 39 m³\nDioxygène : 50 × 21 ÷ 100 = 10,5 m³"
+    },
+    {
+     "title": "Proposition 18 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La filtration\n1) Citer le matériel nécessaire pour réaliser une filtration.\n2) Comment appelle-t-on le liquide recueilli après filtration ?\n3) La filtration permet-elle de séparer le sel de l'eau salée ? Justifier.\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.",
+     "solution": "Exercice 1\n1) Un entonnoir, un papier filtre, un support et un bécher (ou erlenmeyer).\n2) Le filtrat.\n3) Non : le sel est dissous, il traverse le filtre avec l'eau (mélange homogène).\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun."
+    },
+    {
+     "title": "Proposition 19 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La distillation\n1) Quel est le but de la distillation ?\n2) Nommer les deux changements d'état qui se produisent lors d'une distillation.\n3) Comment s'appelle le liquide recueilli ?\n4) Comment obtenir de l'eau pure à partir d'eau de mer ?\n\nExercice 2 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 3 : Règle d'écriture des symboles\n1) Quelle règle utilise-t-on pour écrire le symbole d'un atome ?\n2) Corriger les écritures fausses : co ; FE ; cL ; Ag ; NA.",
+     "solution": "Exercice 1\n1) Séparer les constituants d'un mélange homogène liquide (ou obtenir un liquide pur).\n2) La vaporisation (ébullition) puis la liquéfaction (condensation).\n3) Le distillat.\n4) Par distillation de l'eau de mer : la vapeur d'eau se condense, le sel reste dans le ballon.\n\nExercice 2\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 3\n1) La première lettre est une majuscule ; la deuxième (s'il y en a une) est une minuscule.\n2) Co (ou C et O selon le cas) ; Fe ; Cl ; Ag (correct) ; Na."
+    },
+    {
+     "title": "Proposition 20 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La filtration\n1) Citer le matériel nécessaire pour réaliser une filtration.\n2) Comment appelle-t-on le liquide recueilli après filtration ?\n3) La filtration permet-elle de séparer le sel de l'eau salée ? Justifier.\n\nExercice 2 : Mélange de liquides\nOn verse de l'alcool dans l'eau, puis de l'huile dans l'eau.\n1) Dans quel cas obtient-on un mélange homogène ?\n2) Comment dit-on de deux liquides qui se mélangent ? qui ne se mélangent pas ?\n\nExercice 3 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.",
+     "solution": "Exercice 1\n1) Un entonnoir, un papier filtre, un support et un bécher (ou erlenmeyer).\n2) Le filtrat.\n3) Non : le sel est dissous, il traverse le filtre avec l'eau (mélange homogène).\n\nExercice 2\n1) Eau + alcool.\n2) Miscibles ; non miscibles.\n\nExercice 3\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du 2e trimestre",
+   "covers": [
+    "Molécule : formule moléculaire de quelques molécules : H2, O2, N2, Cl2, H2O, CO2",
+    "Éléments d'un circuit simple",
+    "Dipôles et symboles",
+    "Conducteurs et isolants",
+    "Circuit ouvert, circuit fermé",
+    "Circuit série",
+    "Circuit parallèle",
+    "Fonctionnement d'une lampe torche"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?\n\nExercice 2 : Atome ou molécule ?\n1) Quelle différence y a-t-il entre un atome et une molécule ?\n2) Classer : O ; O₂ ; Fe ; H₂O ; Cu ; N₂.\n\nExercice 3 : Loi d'unicité de l'intensité\nUn circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,58 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "Exercice 1\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place.\n\nExercice 2\n1) Une molécule est un assemblage d'atomes liés entre eux.\n2) Atomes : O, Fe, Cu. Molécules : O₂, H₂O, N₂.\n\nExercice 3\n1) 0,58 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,58 A = 580 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Proposition 2 — Examen du 2e trimestre",
+     "text": "Exercice 1 : L'air a une masse\nUn ballon vide pèse 520 g. Après l'avoir gonflé avec de l'air, il pèse 523 g.\n1) Quelle est la masse de l'air introduit ?\n2) Que peut-on en conclure ?\n\nExercice 2 : Circuit fermé ou ouvert\n1) À quelle condition une lampe brille-t-elle dans un circuit ?\n2) Une lampe ne brille pas alors que le circuit est fermé. Donner deux causes possibles.\n\nExercice 3 : Mesure et conversion de tensions\n1) Convertir 2,264 V en mV et 672 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "Exercice 1\n1) 523 − 520 = 3 g\n2) L'air, comme tout gaz, a une masse.\n\nExercice 2\n1) Le circuit doit être fermé : une boucle conductrice ininterrompue reliant les bornes du générateur.\n2) Lampe grillée, pile usée, mauvais contact, fil coupé.\n\nExercice 3\n1) 2,264 V = 2 264 mV ; 672 mV = 0,672 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Proposition 3 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.\n\nExercice 2 : Lire une formule\nPour chaque formule, indiquer la nature et le nombre d'atomes : H₂O ; CO₂ ; CH₄ ; NH₃.\n\nExercice 3 : Trouver une intensité inconnue\nDans un montage en dérivation à deux branches, l'ampèremètre de la branche principale indique 1,48 A et celui de la branche 1 indique 0,88 A.\nCalculer l'intensité dans la branche 2. En mA ?",
+     "solution": "Exercice 1\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun.\n\nExercice 2\nH₂O : 2 hydrogène, 1 oxygène.\nCO₂ : 1 carbone, 2 oxygène.\nCH₄ : 1 carbone, 4 hydrogène.\nNH₃ : 1 azote, 3 hydrogène.\n\nExercice 3\nI2 = 1,48 − 0,88 = 0,6 A = 600 mA"
+    },
+    {
+     "title": "Proposition 4 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.\n\nExercice 2 : Formules de molécules\nDonner la formule des molécules suivantes et le nombre d'atomes de chacune : dihydrogène, dioxygène, diazote, dichlore, eau, dioxyde de carbone.\n\nExercice 3 : Mesure et conversion de tensions\n1) Convertir 2,219 V en mV et 621 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "Exercice 1\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun.\n\nExercice 2\nH₂ (2 atomes) ; O₂ (2) ; N₂ (2) ; Cl₂ (2) ; H₂O (3 : 2 H et 1 O) ; CO₂ (3 : 1 C et 2 O).\n\nExercice 3\n1) 2,219 V = 2 219 mV ; 621 mV = 0,621 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Proposition 5 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volumes de diazote et de dioxygène\nUne pièce contient 150 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.\n\nExercice 2 : Les dipôles et leurs symboles\nDessiner le symbole normalisé de : une pile, une lampe, un interrupteur ouvert, un interrupteur fermé, un moteur, une DEL.\n\nExercice 3 : Court-circuit\n1) Qu'est-ce qu'un court-circuit ?\n2) Pourquoi est-il dangereux ?\n3) Quel dispositif protège une installation contre les courts-circuits ?",
+     "solution": "Exercice 1\nDiazote : 150 × 78 ÷ 100 = 117 m³\nDioxygène : 150 × 21 ÷ 100 = 31,5 m³\n\nExercice 2\nPile : deux traits parallèles inégaux ; lampe : cercle avec une croix ; interrupteur ouvert : trait levé ; fermé : trait continu ; moteur : cercle avec M ; DEL : triangle-trait avec deux flèches sortantes.\n\nExercice 3\n1) Les bornes d'un dipôle (ou du générateur) sont reliées par un fil sans dipôle : le courant ne passe plus par le dipôle.\n2) Le courant devient très intense : échauffement des fils, risque d'incendie, pile détériorée.\n3) Un fusible ou un disjoncteur."
+    },
+    {
+     "title": "Proposition 6 — Examen du 2e trimestre",
+     "text": "Exercice 1 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 2 : Atome ou molécule ?\n1) Quelle différence y a-t-il entre un atome et une molécule ?\n2) Classer : O ; O₂ ; Fe ; H₂O ; Cu ; N₂.\n\nExercice 3 : Loi d'unicité de l'intensité\nUn circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,26 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "Exercice 1\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 2\n1) Une molécule est un assemblage d'atomes liés entre eux.\n2) Atomes : O, Fe, Cu. Molécules : O₂, H₂O, N₂.\n\nExercice 3\n1) 0,26 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,26 A = 260 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Proposition 7 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volumes de diazote et de dioxygène\nUne pièce contient 250 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.\n\nExercice 2 : Circuit fermé ou ouvert\n1) À quelle condition une lampe brille-t-elle dans un circuit ?\n2) Une lampe ne brille pas alors que le circuit est fermé. Donner deux causes possibles.\n\nExercice 3 : Loi des nœuds\nTrois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,15 A, I2 = 0,39 A et I3 = 0,34 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "Exercice 1\nDiazote : 250 × 78 ÷ 100 = 195 m³\nDioxygène : 250 × 21 ÷ 100 = 52,5 m³\n\nExercice 2\n1) Le circuit doit être fermé : une boucle conductrice ininterrompue reliant les bornes du générateur.\n2) Lampe grillée, pile usée, mauvais contact, fil coupé.\n\nExercice 3\n1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,15 + 0,39 + 0,34 = 0,88 A\n3) I = 0,15 + 0,39 = 0,54 A"
+    },
+    {
+     "title": "Proposition 8 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.\n\nExercice 2 : Les dipôles et leurs symboles\nDessiner le symbole normalisé de : une pile, une lampe, un interrupteur ouvert, un interrupteur fermé, un moteur, une DEL.\n\nExercice 3 : Loi d'unicité de l'intensité\nUn circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,53 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "Exercice 1\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun.\n\nExercice 2\nPile : deux traits parallèles inégaux ; lampe : cercle avec une croix ; interrupteur ouvert : trait levé ; fermé : trait continu ; moteur : cercle avec M ; DEL : triangle-trait avec deux flèches sortantes.\n\nExercice 3\n1) 0,53 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,53 A = 530 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Proposition 9 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volumes de diazote et de dioxygène\nUne pièce contient 300 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.\n\nExercice 2 : Les dipôles et leurs symboles\nDessiner le symbole normalisé de : une pile, une lampe, un interrupteur ouvert, un interrupteur fermé, un moteur, une DEL.\n\nExercice 3 : Court-circuit\n1) Qu'est-ce qu'un court-circuit ?\n2) Pourquoi est-il dangereux ?\n3) Quel dispositif protège une installation contre les courts-circuits ?",
+     "solution": "Exercice 1\nDiazote : 300 × 78 ÷ 100 = 234 m³\nDioxygène : 300 × 21 ÷ 100 = 63 m³\n\nExercice 2\nPile : deux traits parallèles inégaux ; lampe : cercle avec une croix ; interrupteur ouvert : trait levé ; fermé : trait continu ; moteur : cercle avec M ; DEL : triangle-trait avec deux flèches sortantes.\n\nExercice 3\n1) Les bornes d'un dipôle (ou du générateur) sont reliées par un fil sans dipôle : le courant ne passe plus par le dipôle.\n2) Le courant devient très intense : échauffement des fils, risque d'incendie, pile détériorée.\n3) Un fusible ou un disjoncteur."
+    },
+    {
+     "title": "Proposition 10 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.\n\nExercice 2 : Formules de molécules\nDonner la formule des molécules suivantes et le nombre d'atomes de chacune : dihydrogène, dioxygène, diazote, dichlore, eau, dioxyde de carbone.\n\nExercice 3 : Mesure et conversion de tensions\n1) Convertir 1,453 V en mV et 438 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "Exercice 1\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun.\n\nExercice 2\nH₂ (2 atomes) ; O₂ (2) ; N₂ (2) ; Cl₂ (2) ; H₂O (3 : 2 H et 1 O) ; CO₂ (3 : 1 C et 2 O).\n\nExercice 3\n1) 1,453 V = 1 453 mV ; 438 mV = 0,438 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Proposition 11 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 2 : Les dipôles et leurs symboles\nDessiner le symbole normalisé de : une pile, une lampe, un interrupteur ouvert, un interrupteur fermé, un moteur, une DEL.\n\nExercice 3 : Unicité de la tension en dérivation\nDeux lampes sont montées en dérivation aux bornes d'une pile de 4,5 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?",
+     "solution": "Exercice 1\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 2\nPile : deux traits parallèles inégaux ; lampe : cercle avec une croix ; interrupteur ouvert : trait levé ; fermé : trait continu ; moteur : cercle avec M ; DEL : triangle-trait avec deux flèches sortantes.\n\nExercice 3\n1) 4,5 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 4,5 V (si la pile est idéale)."
+    },
+    {
+     "title": "Proposition 12 — Examen du 2e trimestre",
+     "text": "Exercice 1 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 2 : Les dipôles et leurs symboles\nDessiner le symbole normalisé de : une pile, une lampe, un interrupteur ouvert, un interrupteur fermé, un moteur, une DEL.\n\nExercice 3 : Court-circuit\n1) Qu'est-ce qu'un court-circuit ?\n2) Pourquoi est-il dangereux ?\n3) Quel dispositif protège une installation contre les courts-circuits ?",
+     "solution": "Exercice 1\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 2\nPile : deux traits parallèles inégaux ; lampe : cercle avec une croix ; interrupteur ouvert : trait levé ; fermé : trait continu ; moteur : cercle avec M ; DEL : triangle-trait avec deux flèches sortantes.\n\nExercice 3\n1) Les bornes d'un dipôle (ou du générateur) sont reliées par un fil sans dipôle : le courant ne passe plus par le dipôle.\n2) Le courant devient très intense : échauffement des fils, risque d'incendie, pile détériorée.\n3) Un fusible ou un disjoncteur."
+    },
+    {
+     "title": "Proposition 13 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?\n\nExercice 2 : Formules de molécules\nDonner la formule des molécules suivantes et le nombre d'atomes de chacune : dihydrogène, dioxygène, diazote, dichlore, eau, dioxyde de carbone.\n\nExercice 3 : Trouver une intensité inconnue\nDans un montage en dérivation à deux branches, l'ampèremètre de la branche principale indique 0,86 A et celui de la branche 1 indique 0,53 A.\nCalculer l'intensité dans la branche 2. En mA ?",
+     "solution": "Exercice 1\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place.\n\nExercice 2\nH₂ (2 atomes) ; O₂ (2) ; N₂ (2) ; Cl₂ (2) ; H₂O (3 : 2 H et 1 O) ; CO₂ (3 : 1 C et 2 O).\n\nExercice 3\nI2 = 0,86 − 0,53 = 0,33 A = 330 mA"
+    },
+    {
+     "title": "Proposition 14 — Examen du 2e trimestre",
+     "text": "Exercice 1 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 2 : Lire une formule\nPour chaque formule, indiquer la nature et le nombre d'atomes : H₂O ; CO₂ ; CH₄ ; NH₃.\n\nExercice 3 : Additivité des tensions\nUne lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 4,5 V. La tension aux bornes de la lampe est 1,2 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "Exercice 1\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 2\nH₂O : 2 hydrogène, 1 oxygène.\nCO₂ : 1 carbone, 2 oxygène.\nCH₄ : 1 carbone, 4 hydrogène.\nNH₃ : 1 azote, 3 hydrogène.\n\nExercice 3\n1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 4,5 − 1,2 = 3,3 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Proposition 15 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 2 : Série ou parallèle ?\nDeux lampes L1 et L2 sont branchées avec une pile.\n1) Dans un premier montage, si L1 grille, L2 s'éteint. Comment sont-elles branchées ?\n2) Dans un second montage, si L1 grille, L2 continue de briller. Comment sont-elles branchées ?\n3) Quel montage utilise-t-on dans une maison ? Pourquoi ?\n\nExercice 3 : Loi d'unicité de l'intensité\nUn circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,33 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "Exercice 1\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 2\n1) En série (une seule boucle).\n2) En dérivation (parallèle).\n3) En dérivation : chaque appareil fonctionne indépendamment des autres.\n\nExercice 3\n1) 0,33 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,33 A = 330 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    },
+    {
+     "title": "Proposition 16 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 2 : Série ou parallèle ?\nDeux lampes L1 et L2 sont branchées avec une pile.\n1) Dans un premier montage, si L1 grille, L2 s'éteint. Comment sont-elles branchées ?\n2) Dans un second montage, si L1 grille, L2 continue de briller. Comment sont-elles branchées ?\n3) Quel montage utilise-t-on dans une maison ? Pourquoi ?\n\nExercice 3 : Mesure et conversion de tensions\n1) Convertir 6,441 V en mV et 712 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?",
+     "solution": "Exercice 1\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 2\n1) En série (une seule boucle).\n2) En dérivation (parallèle).\n3) En dérivation : chaque appareil fonctionne indépendamment des autres.\n\nExercice 3\n1) 6,441 V = 6 441 mV ; 712 mV = 0,712 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée)."
+    },
+    {
+     "title": "Proposition 17 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?\n\nExercice 2 : Série ou parallèle ?\nDeux lampes L1 et L2 sont branchées avec une pile.\n1) Dans un premier montage, si L1 grille, L2 s'éteint. Comment sont-elles branchées ?\n2) Dans un second montage, si L1 grille, L2 continue de briller. Comment sont-elles branchées ?\n3) Quel montage utilise-t-on dans une maison ? Pourquoi ?\n\nExercice 3 : Loi des nœuds\nTrois lampes sont montées en dérivation aux bornes d'un générateur. Elles sont traversées par I1 = 0,28 A, I2 = 0,18 A et I3 = 0,17 A.\n1) Énoncer la loi des nœuds.\n2) Calculer l'intensité I du courant dans la branche principale.\n3) On retire la lampe 3. Quelle est la nouvelle intensité principale ?",
+     "solution": "Exercice 1\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place.\n\nExercice 2\n1) En série (une seule boucle).\n2) En dérivation (parallèle).\n3) En dérivation : chaque appareil fonctionne indépendamment des autres.\n\nExercice 3\n1) La somme des intensités des courants qui arrivent à un nœud est égale à la somme des intensités qui en repartent.\n2) I = 0,28 + 0,18 + 0,17 = 0,63 A\n3) I = 0,28 + 0,18 = 0,46 A"
+    },
+    {
+     "title": "Proposition 18 — Examen du 2e trimestre",
+     "text": "Exercice 1 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?\n\nExercice 2 : Les dipôles et leurs symboles\nDessiner le symbole normalisé de : une pile, une lampe, un interrupteur ouvert, un interrupteur fermé, un moteur, une DEL.\n\nExercice 3 : Court-circuit\n1) Qu'est-ce qu'un court-circuit ?\n2) Pourquoi est-il dangereux ?\n3) Quel dispositif protège une installation contre les courts-circuits ?",
+     "solution": "Exercice 1\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place.\n\nExercice 2\nPile : deux traits parallèles inégaux ; lampe : cercle avec une croix ; interrupteur ouvert : trait levé ; fermé : trait continu ; moteur : cercle avec M ; DEL : triangle-trait avec deux flèches sortantes.\n\nExercice 3\n1) Les bornes d'un dipôle (ou du générateur) sont reliées par un fil sans dipôle : le courant ne passe plus par le dipôle.\n2) Le courant devient très intense : échauffement des fils, risque d'incendie, pile détériorée.\n3) Un fusible ou un disjoncteur."
+    },
+    {
+     "title": "Proposition 19 — Examen du 2e trimestre",
+     "text": "Exercice 1 : L'air a une masse\nUn ballon vide pèse 520 g. Après l'avoir gonflé avec de l'air, il pèse 523 g.\n1) Quelle est la masse de l'air introduit ?\n2) Que peut-on en conclure ?\n\nExercice 2 : Compter des atomes\nCombien d'atomes de chaque sorte y a-t-il dans 9 molécules de NH₃ ?\n\nExercice 3 : Additivité des tensions\nUne lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 4,5 V. La tension aux bornes de la lampe est 3,5 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?",
+     "solution": "Exercice 1\n1) 523 − 520 = 3 g\n2) L'air, comme tout gaz, a une masse.\n\nExercice 2\n9 × NH₃ : 9 atomes de N, 27 atomes de H.\n\nExercice 3\n1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 4,5 − 3,5 = 1 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM)."
+    },
+    {
+     "title": "Proposition 20 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volumes de diazote et de dioxygène\nUne pièce contient 80 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.\n\nExercice 2 : Formules de molécules\nDonner la formule des molécules suivantes et le nombre d'atomes de chacune : dihydrogène, dioxygène, diazote, dichlore, eau, dioxyde de carbone.\n\nExercice 3 : Loi d'unicité de l'intensité\nUn circuit série comporte une pile, une lampe et un moteur. Un ampèremètre placé avant la lampe indique 0,64 A.\n1) Quelle est l'intensité du courant qui traverse le moteur ? Justifier.\n2) Convertir cette intensité en mA.\n3) Comment branche-t-on un ampèremètre ?",
+     "solution": "Exercice 1\nDiazote : 80 × 78 ÷ 100 = 62,4 m³\nDioxygène : 80 × 21 ÷ 100 = 16,8 m³\n\nExercice 2\nH₂ (2 atomes) ; O₂ (2) ; N₂ (2) ; Cl₂ (2) ; H₂O (3 : 2 H et 1 O) ; CO₂ (3 : 1 C et 2 O).\n\nExercice 3\n1) 0,64 A : dans un circuit série, l'intensité est la même en tout point (loi d'unicité).\n2) 0,64 A = 640 mA\n3) En série, le courant entrant par la borne mA (ou A) et sortant par la borne COM."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du 3e trimestre",
+   "covers": [
+    "Tension nominale",
+    "Surtension et sous-tension",
+    "Effets d'une force : effet statique et effet dynamique",
+    "Définition d'une force",
+    "Les différents types de forces",
+    "Caractéristiques d'une force",
+    "Représentation vectorielle d'une force",
+    "Sources primaires de lumière (Soleil, lampe)"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Unicité de la tension en dérivation\nDeux lampes sont montées en dérivation aux bornes d'une pile de 9 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?\n\nExercice 2 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 3 : Sources de lumière\nClasser en sources primaires et sources secondaires (objets diffusants) : le Soleil ; la Lune ; une lampe allumée ; un miroir ; une bougie allumée ; un mur blanc éclairé.",
+     "solution": "Exercice 1\n1) 9 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 9 V (si la pile est idéale).\n\nExercice 2\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 3\nPrimaires (produisent leur lumière) : Soleil, lampe allumée, bougie.\nSecondaires (renvoient la lumière reçue) : Lune, miroir, mur éclairé."
+    },
+    {
+     "title": "Proposition 2 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Tension nominale\nSur le culot d'une lampe on lit « 6 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 4 V. Que se passe-t-il ?\n\nExercice 2 : Représenter une force\nUne force d'intensité 2 N, verticale ou horizontale, dirigée vers la droite, s'exerce au point A.\nÉchelle : 1 cm pour 1 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.\n\nExercice 3 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?",
+     "solution": "Exercice 1\n1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 4 V < 6 V : sous-tension : la lampe brille faiblement.\n\nExercice 2\n1) 2 ÷ 1 = 2 cm\n2) Une flèche partant de A, dirigée vers la droite, de longueur 2 cm.\n\nExercice 3\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place."
+    },
+    {
+     "title": "Proposition 3 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Additivité des tensions\nUne lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 6 V. La tension aux bornes de la lampe est 2 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.",
+     "solution": "Exercice 1\n1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 6 − 2 = 4 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM).\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun."
+    },
+    {
+     "title": "Proposition 4 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Additivité des tensions\nUne lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 9 V. La tension aux bornes de la lampe est 3,1 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?\n\nExercice 2 : Caractéristiques d'une force\nCiter les quatre caractéristiques d'une force et l'unité de son intensité. Avec quel appareil mesure-t-on cette intensité ?\n\nExercice 3 : La chambre noire\nUn arbre de 12 m de haut est situé à 8 m d'une chambre noire de profondeur 16 cm.\n1) L'image est-elle droite ou renversée ?\n2) Calculer la hauteur de l'image (h'/h = d'/d).",
+     "solution": "Exercice 1\n1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 9 − 3,1 = 5,9 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM).\n\nExercice 2\nPoint d'application, direction (droite d'action), sens, intensité. Unité : le newton (N). Appareil : le dynamomètre.\n\nExercice 3\n1) Renversée.\n2) h' = 12 × 0,16 ÷ 8 = 0,24 m = 24 cm"
+    },
+    {
+     "title": "Proposition 5 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Forces de contact et à distance\nClasser en forces de contact et forces à distance : la force du vent sur une voile ; l'attraction d'un aimant sur un clou ; le poids d'une pomme ; la poussée d'une main sur une porte ; la force d'un fil qui retient une lampe.\n\nExercice 2 : Caractéristiques d'une force\nCiter les quatre caractéristiques d'une force et l'unité de son intensité. Avec quel appareil mesure-t-on cette intensité ?\n\nExercice 3 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.",
+     "solution": "Exercice 1\nContact : vent sur la voile, main sur la porte, fil sur la lampe.\nÀ distance : aimant sur le clou, poids de la pomme.\n\nExercice 2\nPoint d'application, direction (droite d'action), sens, intensité. Unité : le newton (N). Appareil : le dynamomètre.\n\nExercice 3\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun."
+    },
+    {
+     "title": "Proposition 6 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Forces de contact et à distance\nClasser en forces de contact et forces à distance : la force du vent sur une voile ; l'attraction d'un aimant sur un clou ; le poids d'une pomme ; la poussée d'une main sur une porte ; la force d'un fil qui retient une lampe.\n\nExercice 2 : L'air a une masse\nUn ballon vide pèse 520 g. Après l'avoir gonflé avec de l'air, il pèse 523 g.\n1) Quelle est la masse de l'air introduit ?\n2) Que peut-on en conclure ?\n\nExercice 3 : Ombre propre et ombre portée\nUne balle éclairée par une lampe se trouve devant un mur.\n1) Qu'appelle-t-on ombre propre et ombre portée ?\n2) Pourquoi observe-t-on une pénombre avec une source étendue ?",
+     "solution": "Exercice 1\nContact : vent sur la voile, main sur la porte, fil sur la lampe.\nÀ distance : aimant sur le clou, poids de la pomme.\n\nExercice 2\n1) 523 − 520 = 3 g\n2) L'air, comme tout gaz, a une masse.\n\nExercice 3\n1) Ombre propre : partie non éclairée de l'objet ; ombre portée : zone non éclairée sur l'écran derrière l'objet.\n2) Certaines zones reçoivent la lumière d'une partie seulement de la source : elles sont partiellement éclairées."
+    },
+    {
+     "title": "Proposition 7 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Tension nominale\nSur le culot d'une lampe on lit « 6 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 5 V. Que se passe-t-il ?\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : La chambre noire\nUn arbre de 3 m de haut est situé à 5 m d'une chambre noire de profondeur 18 cm.\n1) L'image est-elle droite ou renversée ?\n2) Calculer la hauteur de l'image (h'/h = d'/d).",
+     "solution": "Exercice 1\n1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 5 V < 6 V : sous-tension : la lampe brille faiblement.\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\n1) Renversée.\n2) h' = 3 × 0,18 ÷ 5 = 0,108 m = 10,8 cm"
+    },
+    {
+     "title": "Proposition 8 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Mesure et conversion de tensions\n1) Convertir 2,106 V en mV et 509 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : Propagation rectiligne\n1) Comment la lumière se propage-t-elle dans un milieu transparent et homogène ?\n2) Comment représente-t-on un rayon lumineux ?\n3) Quels sont les trois types de faisceaux lumineux ?",
+     "solution": "Exercice 1\n1) 2,106 V = 2 106 mV ; 509 mV = 0,509 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée).\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) En ligne droite.\n2) Par une droite munie d'une flèche indiquant le sens de propagation.\n3) Faisceaux convergent, divergent et parallèle."
+    },
+    {
+     "title": "Proposition 9 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Forces de contact et à distance\nClasser en forces de contact et forces à distance : la force du vent sur une voile ; l'attraction d'un aimant sur un clou ; le poids d'une pomme ; la poussée d'une main sur une porte ; la force d'un fil qui retient une lampe.\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : Volumes de diazote et de dioxygène\nUne pièce contient 150 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Exercice 1\nContact : vent sur la voile, main sur la porte, fil sur la lampe.\nÀ distance : aimant sur le clou, poids de la pomme.\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\nDiazote : 150 × 78 ÷ 100 = 117 m³\nDioxygène : 150 × 21 ÷ 100 = 31,5 m³"
+    },
+    {
+     "title": "Proposition 10 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Mesure et conversion de tensions\n1) Convertir 7,15 V en mV et 182 mV en V.\n2) Quel calibre choisir pour mesurer une tension d'environ 4,5 V avec un voltmètre dont les calibres sont 200 mV, 2 V, 20 V, 200 V ?\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : Sources de lumière\nClasser en sources primaires et sources secondaires (objets diffusants) : le Soleil ; la Lune ; une lampe allumée ; un miroir ; une bougie allumée ; un mur blanc éclairé.",
+     "solution": "Exercice 1\n1) 7,15 V = 7 150 mV ; 182 mV = 0,182 V\n2) 20 V (le plus petit calibre supérieur à la valeur mesurée).\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\nPrimaires (produisent leur lumière) : Soleil, lampe allumée, bougie.\nSecondaires (renvoient la lumière reçue) : Lune, miroir, mur éclairé."
+    },
+    {
+     "title": "Proposition 11 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Effets d'une force\nPour chaque situation, préciser l'effet de la force (statique : déformation ; dynamique : mise en mouvement ou modification du mouvement) :\na) un joueur frappe un ballon ;\nb) on écrase une boule de pâte ;\nc) le frein ralentit un vélo ;\nd) un ressort s'allonge sous une charge.\n\nExercice 2 : L'air, un mélange\n1) L'air est-il un corps pur ou un mélange ? Justifier.\n2) Quel constituant de l'air est indispensable à la respiration et aux combustions ?\n3) Quel gaz est rejeté lors de la respiration ? Comment le mettre en évidence ?\n\nExercice 3 : Volumes de diazote et de dioxygène\nUne pièce contient 150 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Exercice 1\na) Dynamique (mise en mouvement) ;\nb) statique (déformation) ;\nc) dynamique (modification du mouvement) ;\nd) statique (déformation).\n\nExercice 2\n1) Un mélange : il est formé de plusieurs gaz.\n2) Le dioxygène.\n3) Le dioxyde de carbone ; il trouble l'eau de chaux.\n\nExercice 3\nDiazote : 150 × 78 ÷ 100 = 117 m³\nDioxygène : 150 × 21 ÷ 100 = 31,5 m³"
+    },
+    {
+     "title": "Proposition 12 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Additivité des tensions\nUne lampe et un moteur sont branchés en série aux bornes d'un générateur de tension 12 V. La tension aux bornes de la lampe est 8,1 V.\n1) Énoncer la loi d'additivité des tensions.\n2) Calculer la tension aux bornes du moteur.\n3) Comment branche-t-on un voltmètre ?\n\nExercice 2 : Représenter une force\nUne force d'intensité 6 N, verticale ou horizontale, dirigée vers le bas, s'exerce au point A.\nÉchelle : 1 cm pour 5 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.\n\nExercice 3 : Ombre propre et ombre portée\nUne balle éclairée par une lampe se trouve devant un mur.\n1) Qu'appelle-t-on ombre propre et ombre portée ?\n2) Pourquoi observe-t-on une pénombre avec une source étendue ?",
+     "solution": "Exercice 1\n1) Dans un circuit série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles.\n2) U_M = 12 − 8,1 = 3,9 V\n3) En dérivation, aux bornes du dipôle (borne V et borne COM).\n\nExercice 2\n1) 6 ÷ 5 = 1,2 cm\n2) Une flèche partant de A, dirigée vers le bas, de longueur 1,2 cm.\n\nExercice 3\n1) Ombre propre : partie non éclairée de l'objet ; ombre portée : zone non éclairée sur l'écran derrière l'objet.\n2) Certaines zones reçoivent la lumière d'une partie seulement de la source : elles sont partiellement éclairées."
+    },
+    {
+     "title": "Proposition 13 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Tension nominale\nSur le culot d'une lampe on lit « 3,5 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 3,5 V. Que se passe-t-il ?\n\nExercice 2 : Représenter une force\nUne force d'intensité 8 N, verticale ou horizontale, dirigée vers la droite, s'exerce au point A.\nÉchelle : 1 cm pour 5 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.\n\nExercice 3 : Ombre propre et ombre portée\nUne balle éclairée par une lampe se trouve devant un mur.\n1) Qu'appelle-t-on ombre propre et ombre portée ?\n2) Pourquoi observe-t-on une pénombre avec une source étendue ?",
+     "solution": "Exercice 1\n1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 3,5 V = 3,5 V : fonctionnement normal.\n\nExercice 2\n1) 8 ÷ 5 = 1,6 cm\n2) Une flèche partant de A, dirigée vers la droite, de longueur 1,6 cm.\n\nExercice 3\n1) Ombre propre : partie non éclairée de l'objet ; ombre portée : zone non éclairée sur l'écran derrière l'objet.\n2) Certaines zones reçoivent la lumière d'une partie seulement de la source : elles sont partiellement éclairées."
+    },
+    {
+     "title": "Proposition 14 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Forces de contact et à distance\nClasser en forces de contact et forces à distance : la force du vent sur une voile ; l'attraction d'un aimant sur un clou ; le poids d'une pomme ; la poussée d'une main sur une porte ; la force d'un fil qui retient une lampe.\n\nExercice 2 : Caractéristiques d'une force\nCiter les quatre caractéristiques d'une force et l'unité de son intensité. Avec quel appareil mesure-t-on cette intensité ?\n\nExercice 3 : La chambre noire\nUn arbre de 5 m de haut est situé à 9 m d'une chambre noire de profondeur 24 cm.\n1) L'image est-elle droite ou renversée ?\n2) Calculer la hauteur de l'image (h'/h = d'/d).",
+     "solution": "Exercice 1\nContact : vent sur la voile, main sur la porte, fil sur la lampe.\nÀ distance : aimant sur le clou, poids de la pomme.\n\nExercice 2\nPoint d'application, direction (droite d'action), sens, intensité. Unité : le newton (N). Appareil : le dynamomètre.\n\nExercice 3\n1) Renversée.\n2) h' = 5 × 0,24 ÷ 9 = 0,133 m = 13,3 cm"
+    },
+    {
+     "title": "Proposition 15 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Unicité de la tension en dérivation\nDeux lampes sont montées en dérivation aux bornes d'une pile de 6 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?\n\nExercice 2 : Composition de l'air\n1) Donner les deux principaux constituants de l'air et leurs proportions approximatives.\n2) Citer deux autres gaz présents dans l'air en faible quantité.\n3) Dans une salle de 200 m³, quel volume de dioxygène y a-t-il environ ?\n\nExercice 3 : Sources de lumière\nClasser en sources primaires et sources secondaires (objets diffusants) : le Soleil ; la Lune ; une lampe allumée ; un miroir ; une bougie allumée ; un mur blanc éclairé.",
+     "solution": "Exercice 1\n1) 6 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 6 V (si la pile est idéale).\n\nExercice 2\n1) Le diazote (environ 78 %, soit 4/5) et le dioxygène (environ 21 %, soit 1/5).\n2) Le dioxyde de carbone, la vapeur d'eau, l'argon…\n3) 200 × 21 ÷ 100 = 42 m³ (ou 200 ÷ 5 = 40 m³ environ).\n\nExercice 3\nPrimaires (produisent leur lumière) : Soleil, lampe allumée, bougie.\nSecondaires (renvoient la lumière reçue) : Lune, miroir, mur éclairé."
+    },
+    {
+     "title": "Proposition 16 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Tension nominale\nSur le culot d'une lampe on lit « 12 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 15 V. Que se passe-t-il ?\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : Propagation rectiligne\n1) Comment la lumière se propage-t-elle dans un milieu transparent et homogène ?\n2) Comment représente-t-on un rayon lumineux ?\n3) Quels sont les trois types de faisceaux lumineux ?",
+     "solution": "Exercice 1\n1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 15 V > 12 V : surtension : la lampe brille trop et risque de griller.\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) En ligne droite.\n2) Par une droite munie d'une flèche indiquant le sens de propagation.\n3) Faisceaux convergent, divergent et parallèle."
+    },
+    {
+     "title": "Proposition 17 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Effets d'une force\nPour chaque situation, préciser l'effet de la force (statique : déformation ; dynamique : mise en mouvement ou modification du mouvement) :\na) un joueur frappe un ballon ;\nb) on écrase une boule de pâte ;\nc) le frein ralentit un vélo ;\nd) un ressort s'allonge sous une charge.\n\nExercice 2 : Représenter une force\nUne force d'intensité 6 N, verticale ou horizontale, dirigée vers la droite, s'exerce au point A.\nÉchelle : 1 cm pour 5 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.\n\nExercice 3 : La combustion consomme le dioxygène\nOn renverse un bocal sur une bougie allumée posée dans une assiette d'eau.\n1) Qu'observe-t-on après quelques secondes ?\n2) Quel gaz a été consommé ?\n3) Pourquoi l'eau monte-t-elle dans le bocal ?",
+     "solution": "Exercice 1\na) Dynamique (mise en mouvement) ;\nb) statique (déformation) ;\nc) dynamique (modification du mouvement) ;\nd) statique (déformation).\n\nExercice 2\n1) 6 ÷ 5 = 1,2 cm\n2) Une flèche partant de A, dirigée vers la droite, de longueur 1,2 cm.\n\nExercice 3\n1) La bougie s'éteint et l'eau monte un peu dans le bocal.\n2) Le dioxygène.\n3) Une partie du gaz a disparu (consommée par la combustion), l'eau prend sa place."
+    },
+    {
+     "title": "Proposition 18 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Tension nominale\nSur le culot d'une lampe on lit « 12 V ».\n1) Que représente cette indication ?\n2) On l'alimente sous 10 V. Que se passe-t-il ?\n\nExercice 2 : Représenter une force\nUne force d'intensité 10 N, verticale ou horizontale, dirigée vers le bas, s'exerce au point A.\nÉchelle : 1 cm pour 1 N.\n1) Quelle longueur doit avoir la flèche ?\n2) Décrire la représentation.\n\nExercice 3 : Les éclipses\n1) Lors d'une éclipse de Soleil, quel astre se trouve entre la Terre et le Soleil ?\n2) Lors d'une éclipse de Lune, où se trouve la Terre ?\n3) Quelle propriété de la lumière ces phénomènes illustrent-ils ?",
+     "solution": "Exercice 1\n1) C'est sa tension nominale : la tension pour laquelle elle fonctionne normalement.\n2) 10 V < 12 V : sous-tension : la lampe brille faiblement.\n\nExercice 2\n1) 10 ÷ 1 = 10 cm\n2) Une flèche partant de A, dirigée vers le bas, de longueur 10 cm.\n\nExercice 3\n1) La Lune.\n2) Entre le Soleil et la Lune : la Lune est dans l'ombre de la Terre.\n3) La propagation rectiligne de la lumière."
+    },
+    {
+     "title": "Proposition 19 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Unicité de la tension en dérivation\nDeux lampes sont montées en dérivation aux bornes d'une pile de 9 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?\n\nExercice 2 : Caractéristiques d'une force\nCiter les quatre caractéristiques d'une force et l'unité de son intensité. Avec quel appareil mesure-t-on cette intensité ?\n\nExercice 3 : Volumes de diazote et de dioxygène\nUne pièce contient 120 m³ d'air.\nCalculer le volume de diazote (78 %) et de dioxygène (21 %) qu'elle contient.",
+     "solution": "Exercice 1\n1) 9 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 9 V (si la pile est idéale).\n\nExercice 2\nPoint d'application, direction (droite d'action), sens, intensité. Unité : le newton (N). Appareil : le dynamomètre.\n\nExercice 3\nDiazote : 120 × 78 ÷ 100 = 93,6 m³\nDioxygène : 120 × 21 ÷ 100 = 25,2 m³"
+    },
+    {
+     "title": "Proposition 20 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Unicité de la tension en dérivation\nDeux lampes sont montées en dérivation aux bornes d'une pile de 12 V.\n1) Quelle est la tension aux bornes de chaque lampe ? Justifier.\n2) On ajoute une troisième lampe en dérivation. La tension change-t-elle ?\n\nExercice 2 : Compressibilité de l'air\nOn bouche l'extrémité d'une seringue remplie d'air et on appuie sur le piston.\n1) Que se passe-t-il ?\n2) Quelle propriété des gaz cette expérience met-elle en évidence ?\n3) Peut-on faire la même chose avec de l'eau ?\n\nExercice 3 : La pollution de l'air\n1) Citer deux sources de pollution de l'air.\n2) Citer deux conséquences de cette pollution.\n3) Proposer deux gestes pour réduire la pollution de l'air.",
+     "solution": "Exercice 1\n1) 12 V pour chacune : les dipôles en dérivation ont la même tension à leurs bornes.\n2) Non, elle reste égale à 12 V (si la pile est idéale).\n\nExercice 2\n1) Le piston s'enfonce : le volume de l'air diminue.\n2) Les gaz sont compressibles.\n3) Non, les liquides sont pratiquement incompressibles.\n\nExercice 3\n1) Les gaz d'échappement des voitures, les fumées des usines, la combustion des déchets.\n2) Maladies respiratoires, effet de serre et réchauffement climatique.\n3) Planter des arbres, ne pas brûler les déchets, utiliser les transports en commun."
+    }
+   ]
+  }
+ ]
+}
