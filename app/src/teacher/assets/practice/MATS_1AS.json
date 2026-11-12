@@ -1,0 +1,800 @@
+{
+ "subject": "MATS",
+ "level": "1AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Mai S3",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision sur les activités numériques",
+   "covers": [
+    "Entiers naturels",
+    "Décimaux positifs",
+    "Fractions",
+    "Proportionnalité et pourcentage",
+    "Statistique"
+   ],
+   "items": [
+    {
+     "title": "Calculs sur les entiers naturels",
+     "text": "Calculer :\na = 245 + 78 − 63\nb = 1 000 − 357\nc = 25 × 4 × 17\nd = 1 248 ÷ 8",
+     "solution": "a = 323 − 63 = 260\nb = 643\nc = 100 × 17 = 1 700\nd = 156"
+    },
+    {
+     "title": "Priorités opératoires",
+     "text": "Calculer en respectant les priorités :\nA = 18 + 6 × 5\nB = (18 + 6) × 5\nC = 60 − 24 ÷ 4 + 3\nD = 7 × (9 − 4) − 2 × 5",
+     "solution": "A = 18 + 30 = 48\nB = 24 × 5 = 120\nC = 60 − 6 + 3 = 57\nD = 7 × 5 − 10 = 35 − 10 = 25"
+    },
+    {
+     "title": "Division euclidienne",
+     "text": "1) Effectuer la division euclidienne de 587 par 12, puis écrire l'égalité correspondante.\n2) Même question pour 1 000 et 37.",
+     "solution": "1) 587 = 12 × 48 + 11 (quotient 48, reste 11 < 12)\n2) 1 000 = 37 × 27 + 1 (quotient 27, reste 1)"
+    },
+    {
+     "title": "Critères de divisibilité",
+     "text": "On donne les nombres : 120 ; 135 ; 246 ; 315 ; 1 008.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier.",
+     "solution": "a) Par 2 (chiffre des unités pair) : 120 ; 246 ; 1 008.\nb) Par 3 (somme des chiffres multiple de 3) : tous (3 ; 9 ; 12 ; 9 ; 9).\nc) Par 5 (unités 0 ou 5) : 120 ; 135 ; 315.\nd) Par 9 (somme des chiffres multiple de 9) : 135 ; 315 ; 1 008."
+    },
+    {
+     "title": "Écriture des nombres décimaux",
+     "text": "1) Décomposer 45,302 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) douze unités et cinq centièmes ;\nb) trois cent quatre millièmes.\n3) Donner la partie entière et la partie décimale de 63,08.",
+     "solution": "1) 45,302 = 4 × 10 + 5 + 3/10 + 0/100 + 2/1 000\n2) a) 12,05  b) 0,304\n3) Partie entière : 63 ; partie décimale : 0,08."
+    },
+    {
+     "title": "Comparer et ranger des décimaux",
+     "text": "Ranger dans l'ordre croissant :\n4,5 ; 4,05 ; 4,505 ; 3,99 ; 4,055",
+     "solution": "3,99 < 4,05 < 4,055 < 4,5 < 4,505"
+    },
+    {
+     "title": "Arrondi et encadrement",
+     "text": "Soit le nombre 17,368.\n1) L'arrondir à l'unité, au dixième, puis au centième.\n2) L'encadrer par deux entiers consécutifs.",
+     "solution": "1) À l'unité : 17 ; au dixième : 17,4 ; au centième : 17,37.\n2) 17 < 17,368 < 18"
+    },
+    {
+     "title": "Opérations sur les décimaux",
+     "text": "Calculer :\na) 12,5 + 7,75\nb) 30 − 8,46\nc) 2,4 × 3,5\nd) 0,25 × 100\ne) 45,6 ÷ 10",
+     "solution": "a) 20,25  b) 21,54  c) 8,4  d) 25  e) 4,56"
+    },
+    {
+     "title": "Problème : achats à la librairie",
+     "text": "Aminata achète 3 cahiers à 25,5 MRU l'un et un stylo à 12,75 MRU. Elle paie avec un billet de 100 MRU.\nCombien lui rend-on ?",
+     "solution": "Cahiers : 3 × 25,5 = 76,5 MRU\nTotal : 76,5 + 12,75 = 89,25 MRU\nMonnaie : 100 − 89,25 = 10,75 MRU"
+    },
+    {
+     "title": "Simplifier des fractions",
+     "text": "1) Simplifier : 18/24 ; 45/60 ; 35/49.\n2) Compléter : 2/3 = …/12 ; 5/4 = 15/…",
+     "solution": "1) 18/24 = 3/4 ; 45/60 = 3/4 ; 35/49 = 5/7\n2) 2/3 = 8/12 ; 5/4 = 15/12"
+    },
+    {
+     "title": "Comparer des fractions",
+     "text": "Comparer :\na) 3/7 et 5/7\nb) 5/8 et 5/6\nc) 7/5 et 1\nd) 2/3 et 7/12",
+     "solution": "a) 3/7 < 5/7 (même dénominateur)\nb) 5/8 < 5/6 (même numérateur, le plus grand dénominateur donne la plus petite fraction)\nc) 7/5 > 1 (numérateur > dénominateur)\nd) 2/3 = 8/12 donc 2/3 > 7/12"
+    },
+    {
+     "title": "Addition et soustraction de fractions",
+     "text": "Calculer et simplifier si possible :\na) 2/9 + 5/9\nb) 7/10 − 3/10\nc) 1/4 + 3/8\nd) 5/6 − 1/3",
+     "solution": "a) 7/9\nb) 4/10 = 2/5\nc) 2/8 + 3/8 = 5/8\nd) 5/6 − 2/6 = 3/6 = 1/2"
+    },
+    {
+     "title": "Fraction d'une quantité",
+     "text": "1) Calculer les 3/4 de 60.\n2) Calculer les 2/5 de 350 MRU.\n3) Dans une classe de 40 élèves, les 3/8 sont des garçons. Combien y a-t-il de garçons ? de filles ?",
+     "solution": "1) 60 ÷ 4 × 3 = 45\n2) 350 ÷ 5 × 2 = 140 MRU\n3) Garçons : 40 ÷ 8 × 3 = 15 ; filles : 40 − 15 = 25"
+    },
+    {
+     "title": "Tableau de proportionnalité",
+     "text": "Le prix du riz est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 2 | 5 | 8 | …\nPrix (MRU) : 140 | … | … | 840",
+     "solution": "Prix d'un kilogramme : 140 ÷ 2 = 70 MRU\n5 kg → 350 MRU ; 8 kg → 560 MRU ; 840 ÷ 70 = 12 kg"
+    },
+    {
+     "title": "Reconnaître une situation de proportionnalité",
+     "text": "Les tableaux suivants sont-ils des tableaux de proportionnalité ? Justifier.\nTableau 1 : 3 → 6 ; 5 → 10 ; 7 → 15\nTableau 2 : 4 → 10 ; 6 → 15 ; 10 → 25",
+     "solution": "Tableau 1 : 6 ÷ 3 = 2 ; 10 ÷ 5 = 2 mais 15 ÷ 7 ≠ 2 : non proportionnel.\nTableau 2 : 10 ÷ 4 = 15 ÷ 6 = 25 ÷ 10 = 2,5 : proportionnel, coefficient 2,5."
+    },
+    {
+     "title": "Calculer un pourcentage",
+     "text": "1) Calculer 20 % de 450.\n2) Un vêtement coûte 2 000 MRU. Le vendeur accorde une remise de 15 %. Calculer le montant de la remise puis le nouveau prix.",
+     "solution": "1) 450 × 20 ÷ 100 = 90\n2) Remise : 2 000 × 15 ÷ 100 = 300 MRU ; nouveau prix : 2 000 − 300 = 1 700 MRU"
+    },
+    {
+     "title": "Exprimer un pourcentage",
+     "text": "Un collège compte 600 élèves dont 270 filles.\nQuel est le pourcentage de filles dans ce collège ?",
+     "solution": "270 ÷ 600 × 100 = 45 %"
+    },
+    {
+     "title": "Échelle d'une carte",
+     "text": "Une carte est à l'échelle 1/50 000.\n1) Deux villages sont distants de 6 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 12 km. Quelle distance les sépare sur la carte ?",
+     "solution": "1) 6 × 50 000 = 300 000 cm = 3 km\n2) 12 km = 1 200 000 cm ; 1 200 000 ÷ 50 000 = 24 cm"
+    },
+    {
+     "title": "Statistique : notes d'un devoir",
+     "text": "Voici les notes de 20 élèves :\n8 ; 10 ; 12 ; 10 ; 14 ; 8 ; 10 ; 12 ; 16 ; 10 ; 12 ; 14 ; 10 ; 8 ; 12 ; 10 ; 14 ; 12 ; 10 ; 16\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la note la plus fréquente ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 12 ?",
+     "solution": "1) 8 : 3 ; 10 : 7 ; 12 : 5 ; 14 : 3 ; 16 : 2 (total 20)\n2) 8 : 15 % ; 10 : 35 % ; 12 : 25 % ; 14 : 15 % ; 16 : 10 %\n3) La note 10 (effectif 7)\n4) (8×3 + 10×7 + 12×5 + 14×3 + 16×2) ÷ 20 = (24 + 70 + 60 + 42 + 32) ÷ 20 = 228 ÷ 20 = 11,4\n5) 5 + 3 + 2 = 10 élèves, soit 50 %"
+    },
+    {
+     "title": "Situation d'intégration : le commerçant",
+     "text": "Un commerçant achète 20 sacs de riz à 1 250 MRU le sac. Le transport lui coûte 600 MRU.\nIl revend chaque sac à 1 400 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 3/4 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondir au dixième).",
+     "solution": "1) 20 × 1 250 + 600 = 25 000 + 600 = 25 600 MRU\n2) 20 × 3/4 = 15 sacs ; 15 × 1 400 = 21 000 MRU\n3) Recette totale : 20 × 1 400 = 28 000 MRU ; bénéfice : 28 000 − 25 600 = 2 400 MRU\n4) 2 400 ÷ 25 600 × 100 = 9,375 ≈ 9,4 %"
+    }
+   ]
+  },
+  {
+   "week": "Mai S4",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision sur les activités géométriques",
+   "covers": [
+    "Droites et segments",
+    "Triangles et parallélogramme",
+    "Cercle et disque",
+    "Cube et pavé droit"
+   ],
+   "items": [
+    {
+     "title": "Points alignés et milieu",
+     "text": "Les points M, N et P sont alignés dans cet ordre avec MN = 5,5 cm et NP = 7,5 cm.\n1) Faire une figure.\n2) Calculer MP.\n3) M est le milieu de [MP]. Calculer MM, puis la distance MN.",
+     "solution": "2) MP = MN + NP = 5,5 + 7,5 = 13 cm\n3) MM = 13 ÷ 2 = 6,5 cm ; MN = |6,5 − 5,5| = 1 cm (M est entre N et P)"
+    },
+    {
+     "title": "Droites perpendiculaires et parallèles",
+     "text": "Tracer une droite (L) et un point P qui n'appartient pas à (L).\n1) Tracer la droite (L1) passant par P et perpendiculaire à (L).\n2) Tracer la droite (L2) passant par P et parallèle à (L).\n3) Que peut-on dire des droites (L1) et (L2) ? Justifier.",
+     "solution": "1) et 2) Construction à l'équerre et à la règle.\n3) (L2) // (L) et (L1) ⊥ (L) ; si deux droites sont parallèles, toute droite perpendiculaire à l'une est perpendiculaire à l'autre : (L1) ⊥ (L2)."
+    },
+    {
+     "title": "Médiatrice d'un segment",
+     "text": "1) Tracer un segment [MN] de longueur 8 cm et construire sa médiatrice (Δ). Elle coupe [MN] en I.\n2) Calculer MI.\n3) M est un point de (Δ) tel que MM = 9,5 cm. Calculer MN. Justifier.\n4) Quelle est la nature du triangle MMN ?",
+     "solution": "2) I est le milieu de [MN] : MI = 8 ÷ 2 = 4 cm\n3) Tout point de la médiatrice est équidistant des extrémités : MN = MM = 9,5 cm\n4) MM = MN : le triangle MMN est isocèle en M."
+    },
+    {
+     "title": "Somme des angles d'un triangle",
+     "text": "1) Dans le triangle PQR, on a : P̂ = 34° et Q̂ = 90°. Calculer R̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 80°. Calculer les deux angles à la base.",
+     "solution": "1) R̂ = 180° − (34° + 90°) = 56° ; le triangle est rectangle.\n2) (180° − 80°) ÷ 2 = 50° pour chacun des angles à la base."
+    },
+    {
+     "title": "Construire un triangle et le reconnaître",
+     "text": "1) Construire un triangle EFG tel que EF = EG = 9 cm et FG = 10 cm. Quelle est sa nature ?\n2) Construire un triangle équilatéral GFE de côté 10 cm. Combien mesure chacun de ses angles ?\n3) Calculer le périmètre de chacun des deux triangles.",
+     "solution": "1) EF = EG : triangle isocèle en E.\n2) Chaque angle mesure 60°.\n3) Périmètres : 9 + 9 + 10 = 28 cm et 3 × 10 = 30 cm"
+    },
+    {
+     "title": "Le parallélogramme",
+     "text": "EFGH est un parallélogramme tel que EF = 9 cm, FG = 6 cm et ∠HEF = 110°.\n1) Calculer GH et EH. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠EFG, ∠FGH et ∠GHE.\n4) Les diagonales se coupent en O. Que représente O pour [EG] et [FH] ?",
+     "solution": "1) Les côtés opposés ont même longueur : GH = 9 cm ; EH = 6 cm\n2) 2 × (9 + 6) = 30 cm\n3) Deux angles consécutifs sont supplémentaires : ∠EFG = 180° − 110° = 70° ; angles opposés égaux : ∠FGH = 110° ; ∠GHE = 70°\n4) O est le milieu commun des deux diagonales."
+    },
+    {
+     "title": "Périmètre et aire à partir du diamètre",
+     "text": "Une roue de vélo a un diamètre de 7 cm. On prend π ≈ 3,14.\n1) Calculer son rayon.\n2) Quelle distance parcourt la roue en un tour ?\n3) Quelle distance parcourt-elle en 100 tours (en m) ?",
+     "solution": "1) r = 7 ÷ 2 = 3,5 cm\n2) P = 3,14 × 7 = 21,98 cm\n3) 100 × 21,98 = 2 198 cm = 21,98 m"
+    },
+    {
+     "title": "Le pavé droit",
+     "text": "Un pavé droit a pour dimensions : longueur 11 cm, largeur 6 cm, hauteur 4 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.",
+     "solution": "1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 11 × 6 × 4 = 264 cm³\n3) A = 2 × (11×6 + 11×4 + 6×4) = 2 × (66 + 44 + 24) = 268 cm²\n4) 264 cm³ = 0,264 dm³"
+    },
+    {
+     "title": "Le cube",
+     "text": "Un cube a une arête de 7 cm.\n1) Calculer la longueur totale de ses arêtes.\n2) Calculer l'aire d'une face, puis l'aire totale.\n3) Calculer son volume.\n4) On double l'arête. Par combien est multiplié le volume ?",
+     "solution": "1) 12 × 7 = 84 cm\n2) Face : 7 × 7 = 49 cm² ; totale : 6 × 49 = 294 cm²\n3) V = 7³ = 343 cm³\n4) Nouvelle arête 14 cm : V = 2744 cm³, le volume est multiplié par 8."
+    },
+    {
+     "title": "Points alignés et milieu",
+     "text": "Les points P, Q et R sont alignés dans cet ordre avec PQ = 6,5 cm et QR = 8 cm.\n1) Faire une figure.\n2) Calculer PR.\n3) M est le milieu de [PR]. Calculer PM, puis la distance MQ.",
+     "solution": "2) PR = PQ + QR = 6,5 + 8 = 14,5 cm\n3) PM = 14,5 ÷ 2 = 7,25 cm ; MQ = |7,25 − 6,5| = 0,75 cm (M est entre Q et R)"
+    },
+    {
+     "title": "Droites perpendiculaires et parallèles",
+     "text": "Tracer une droite (D) et un point M qui n'appartient pas à (D).\n1) Tracer la droite (D1) passant par M et perpendiculaire à (D).\n2) Tracer la droite (D2) passant par M et parallèle à (D).\n3) Que peut-on dire des droites (D1) et (D2) ? Justifier.",
+     "solution": "1) et 2) Construction à l'équerre et à la règle.\n3) (D2) // (D) et (D1) ⊥ (D) ; si deux droites sont parallèles, toute droite perpendiculaire à l'une est perpendiculaire à l'autre : (D1) ⊥ (D2)."
+    },
+    {
+     "title": "Médiatrice d'un segment",
+     "text": "1) Tracer un segment [AB] de longueur 9 cm et construire sa médiatrice (Δ). Elle coupe [AB] en I.\n2) Calculer AI.\n3) M est un point de (Δ) tel que MA = 9 cm. Calculer MB. Justifier.\n4) Quelle est la nature du triangle MAB ?",
+     "solution": "2) I est le milieu de [AB] : AI = 9 ÷ 2 = 4,5 cm\n3) Tout point de la médiatrice est équidistant des extrémités : MB = MA = 9 cm\n4) MA = MB : le triangle MAB est isocèle en M."
+    },
+    {
+     "title": "Somme des angles d'un triangle",
+     "text": "1) Dans le triangle EFG, on a : Ê = 39° et F̂ = 48°. Calculer Ĝ. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 80°. Calculer les deux angles à la base.",
+     "solution": "1) Ĝ = 180° − (39° + 48°) = 93° ; le triangle est quelconque.\n2) (180° − 80°) ÷ 2 = 50° pour chacun des angles à la base."
+    },
+    {
+     "title": "Construire un triangle et le reconnaître",
+     "text": "1) Construire un triangle RST tel que RS = RT = 6 cm et ST = 7 cm. Quelle est sa nature ?\n2) Construire un triangle équilatéral TSR de côté 7 cm. Combien mesure chacun de ses angles ?\n3) Calculer le périmètre de chacun des deux triangles.",
+     "solution": "1) RS = RT : triangle isocèle en R.\n2) Chaque angle mesure 60°.\n3) Périmètres : 6 + 6 + 7 = 19 cm et 3 × 7 = 21 cm"
+    },
+    {
+     "title": "Le parallélogramme",
+     "text": "RSTU est un parallélogramme tel que RS = 8 cm, ST = 7,5 cm et ∠URS = 60°.\n1) Calculer TU et RU. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠RST, ∠STU et ∠TUR.\n4) Les diagonales se coupent en O. Que représente O pour [RT] et [SU] ?",
+     "solution": "1) Les côtés opposés ont même longueur : TU = 8 cm ; RU = 7,5 cm\n2) 2 × (8 + 7,5) = 31 cm\n3) Deux angles consécutifs sont supplémentaires : ∠RST = 180° − 60° = 120° ; angles opposés égaux : ∠STU = 60° ; ∠TUR = 120°\n4) O est le milieu commun des deux diagonales."
+    },
+    {
+     "title": "Périmètre et aire à partir du diamètre",
+     "text": "Une roue de vélo a un diamètre de 27 cm. On prend π ≈ 3,14.\n1) Calculer son rayon.\n2) Quelle distance parcourt la roue en un tour ?\n3) Quelle distance parcourt-elle en 100 tours (en m) ?",
+     "solution": "1) r = 27 ÷ 2 = 13,5 cm\n2) P = 3,14 × 27 = 84,78 cm\n3) 100 × 84,78 = 8 478 cm = 84,78 m"
+    },
+    {
+     "title": "Le pavé droit",
+     "text": "Un pavé droit a pour dimensions : longueur 7 cm, largeur 7 cm, hauteur 2 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.",
+     "solution": "1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 7 × 7 × 2 = 98 cm³\n3) A = 2 × (7×7 + 7×2 + 7×2) = 2 × (49 + 14 + 14) = 154 cm²\n4) 98 cm³ = 0,098 dm³"
+    },
+    {
+     "title": "Le cube",
+     "text": "Un cube a une arête de 4 cm.\n1) Calculer la longueur totale de ses arêtes.\n2) Calculer l'aire d'une face, puis l'aire totale.\n3) Calculer son volume.\n4) On double l'arête. Par combien est multiplié le volume ?",
+     "solution": "1) 12 × 4 = 48 cm\n2) Face : 4 × 4 = 16 cm² ; totale : 6 × 16 = 96 cm²\n3) V = 4³ = 64 cm³\n4) Nouvelle arête 8 cm : V = 512 cm³, le volume est multiplié par 8."
+    },
+    {
+     "title": "Situation d'intégration : le bassin circulaire",
+     "text": "Une place publique possède un bassin circulaire de 5 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 500 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "1) 2 × 3,14 × 5 = 31,4 m\n2) 31,4 × 500 = 15 700 MRU\n3) 3,14 × 5 × 5 = 78,5 m²"
+    },
+    {
+     "title": "Situation d'intégration : le réservoir d'eau",
+     "text": "Le réservoir d'eau d'une famille a la forme d'un pavé droit de 1,6 m × 1,4 m × 1,3 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 80 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 200 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "1) V = 1,6 × 1,4 × 1,3 = 2,912 m³ = 2 912 L\n2) 2 912 × 80 ÷ 100 = 2 329,6 L\n3) 2 329,6 ÷ 200 ≈ 11,65 : 11 jours entiers"
+    }
+   ]
+  },
+  {
+   "week": "Juin S1",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision générale (1)",
+   "covers": [
+    "Programme de l'année"
+   ],
+   "items": [
+    {
+     "title": "Calculs sur les entiers naturels",
+     "text": "Calculer :\na = 339 + 32 − 43\nb = 25 × 4 × 20\nc = 696 ÷ 6\nd = 8 000 − 339",
+     "solution": "a = 371 − 43 = 328\nb = 100 × 20 = 2 000\nc = 116\nd = 7 661"
+    },
+    {
+     "title": "Priorités opératoires",
+     "text": "Calculer en respectant les priorités :\nA = 23 + 8 × 6\nB = (23 + 8) × 6\nC = 90 − 12 ÷ 4 + 2\nD = 7 × (14 − 7) − 3 × 3",
+     "solution": "A = 23 + 48 = 71\nB = 31 × 6 = 186\nC = 90 − 3 + 2 = 89\nD = 7 × 7 − 9 = 49 − 9 = 40"
+    },
+    {
+     "title": "Division euclidienne",
+     "text": "1) Effectuer la division euclidienne de 731 par 32 et écrire l'égalité correspondante.\n2) Même question pour 611 et 23.\n3) Quel est le plus petit nombre à ajouter à 731 pour obtenir un multiple de 32 ?",
+     "solution": "1) 731 = 32 × 22 + 27 (reste 27 < 32)\n2) 611 = 23 × 26 + 13\n3) 32 − 27 = 5 (car 736 = 32 × 23)"
+    },
+    {
+     "title": "Critères de divisibilité",
+     "text": "On donne les nombres : 132 ; 280 ; 416 ; 420 ; 461.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.",
+     "solution": "Sommes des chiffres : 132 → 6 ; 280 → 10 ; 416 → 11 ; 420 → 6 ; 461 → 11\na) Par 2 (unités paires) : 132 ; 280 ; 416 ; 420\nb) Par 3 (somme multiple de 3) : 132 ; 420\nc) Par 5 (unités 0 ou 5) : 280 ; 420\nd) Par 9 (somme multiple de 9) : aucun"
+    },
+    {
+     "title": "Écriture des nombres décimaux",
+     "text": "1) Décomposer 395,473 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) 3 unités et 5 centièmes ;\nb) 483 millièmes.\n3) Donner la partie entière et la partie décimale de 395,473.",
+     "solution": "1) 395,473 = 3 × 100 + 9 × 10 + 5 + 4/10 + 7/100 + 3/1 000\n2) a) 3,05  b) 0,483\n3) Partie entière : 395 ; partie décimale : 0,473"
+    },
+    {
+     "title": "Comparer et ranger des décimaux",
+     "text": "Ranger dans l'ordre croissant :\n21,409 ; 21,4 ; 21,049 ; 21,04 ; 20,99\nPuis encadrer 21,049 par deux entiers consécutifs.",
+     "solution": "20,99 < 21,04 < 21,049 < 21,4 < 21,409\n21 < 21,049 < 22"
+    },
+    {
+     "title": "Valeurs approchées",
+     "text": "Soit le nombre 69,344.\n1) Donner son arrondi à l'unité, au dixième et au centième.\n2) Donner sa troncature au dixième.\n3) L'encadrer par deux décimaux consécutifs ayant un chiffre après la virgule.",
+     "solution": "1) Unité : 69 ; dixième : 69,3 ; centième : 69,34\n2) Troncature au dixième : 69,3\n3) 69,3 < 69,344 < 69,4"
+    },
+    {
+     "title": "Opérations sur les décimaux",
+     "text": "Calculer :\na) 37,7 + 1,77\nb) 69 − 1,38\nc) 4,9 × 2,7\nd) 1,27 × 10\ne) 322,3 ÷ 100",
+     "solution": "a) 39,47  b) 67,62  c) 13,23  d) 12,7  e) 3,223"
+    },
+    {
+     "title": "Simplifier des fractions",
+     "text": "1) Simplifier : 35/42 ; 15/18 ; 60/84.\n2) Compléter : 2/3 = …/12  ;  2/3 = 10/…",
+     "solution": "1) 35/42 = 5/6 ; 15/18 = 5/6 ; 60/84 = 5/7\n2) 2/3 = 8/12 ; 2/3 = 10/15"
+    },
+    {
+     "title": "Comparer des fractions",
+     "text": "Comparer :\na) 5/8 et 4/8\nb) 4/8 et 4/10\nc) 9/5 et 1\nd) 1/3 et 5/12",
+     "solution": "a) 5/8 > 4/8 (même dénominateur)\nb) 4/8 > 4/10 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 9/5 > 1 (numérateur > dénominateur)\nd) 1/3 = 4/12 donc 1/3 < 5/12"
+    },
+    {
+     "title": "Addition et soustraction de fractions",
+     "text": "Calculer et simplifier si possible :\na) 1/6 + 1/6\nb) 8/10 − 5/10\nc) 3/4 + 4/8\nd) 6/8 − 1/4",
+     "solution": "a) 2/6 = 1/3\nb) 3/10\nc) 6/8 + 4/8 = 10/8 = 5/4\nd) 6/8 − 2/8 = 4/8 = 1/2"
+    },
+    {
+     "title": "Fraction d'une quantité",
+     "text": "1) Calculer les 4/7 de 35.\n2) Calculer le 1/3 de 2 520 MRU.\n3) Dans une classe de 20 élèves, les 2/5 sont des garçons. Combien y a-t-il de garçons ? de filles ?",
+     "solution": "1) 35 ÷ 7 × 4 = 20\n2) 2 520 ÷ 3 × 1 = 840 MRU\n3) Garçons : 20 ÷ 5 × 2 = 8 ; filles : 20 − 8 = 12"
+    },
+    {
+     "title": "Points alignés et milieu",
+     "text": "Les points E, F et G sont alignés dans cet ordre avec EF = 5,5 cm et FG = 3,5 cm.\n1) Faire une figure.\n2) Calculer EG.\n3) M est le milieu de [EG]. Calculer EM, puis la distance MF.",
+     "solution": "2) EG = EF + FG = 5,5 + 3,5 = 9 cm\n3) EM = 9 ÷ 2 = 4,5 cm ; MF = |4,5 − 5,5| = 1 cm (M est entre E et F)"
+    },
+    {
+     "title": "Deux droites perpendiculaires à une même droite",
+     "text": "Tracer une droite (D). Placer deux points M et Q hors de (D).\n1) Tracer (D1) passant par M et perpendiculaire à (D).\n2) Tracer (D2) passant par Q et perpendiculaire à (D).\n3) Quelle est la position relative de (D1) et (D2) ? Justifier.",
+     "solution": "3) (D1) et (D2) sont perpendiculaires à la même droite (D) : elles sont parallèles (ou confondues si M, Q sont sur la même perpendiculaire)."
+    },
+    {
+     "title": "Médiatrice d'un segment",
+     "text": "1) Tracer un segment [RS] de longueur 8 cm et construire sa médiatrice (Δ). Elle coupe [RS] en I.\n2) Calculer RI.\n3) M est un point de (Δ) tel que MR = 7 cm. Calculer MS. Justifier.\n4) Quelle est la nature du triangle MRS ?",
+     "solution": "2) I est le milieu de [RS] : RI = 8 ÷ 2 = 4 cm\n3) Tout point de la médiatrice est équidistant des extrémités : MS = MR = 7 cm\n4) MR = MS : le triangle MRS est isocèle en M."
+    },
+    {
+     "title": "Somme des angles d'un triangle",
+     "text": "1) Dans le triangle RST, on a : R̂ = 52° et Ŝ = 39°. Calculer T̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 40°. Calculer les deux angles à la base.",
+     "solution": "1) T̂ = 180° − (52° + 39°) = 89° ; le triangle est quelconque.\n2) (180° − 40°) ÷ 2 = 70° pour chacun des angles à la base."
+    },
+    {
+     "title": "Construire un triangle et le reconnaître",
+     "text": "1) Construire un triangle IJK tel que IJ = IK = 4 cm et JK = 5 cm. Quelle est sa nature ?\n2) Construire un triangle équilatéral KJI de côté 5 cm. Combien mesure chacun de ses angles ?\n3) Calculer le périmètre de chacun des deux triangles.",
+     "solution": "1) IJ = IK : triangle isocèle en I.\n2) Chaque angle mesure 60°.\n3) Périmètres : 4 + 4 + 5 = 13 cm et 3 × 5 = 15 cm"
+    },
+    {
+     "title": "Le parallélogramme",
+     "text": "EFGH est un parallélogramme tel que EF = 8 cm, FG = 6,5 cm et ∠HEF = 75°.\n1) Calculer GH et EH. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠EFG, ∠FGH et ∠GHE.\n4) Les diagonales se coupent en O. Que représente O pour [EG] et [FH] ?",
+     "solution": "1) Les côtés opposés ont même longueur : GH = 8 cm ; EH = 6,5 cm\n2) 2 × (8 + 6,5) = 29 cm\n3) Deux angles consécutifs sont supplémentaires : ∠EFG = 180° − 75° = 105° ; angles opposés égaux : ∠FGH = 75° ; ∠GHE = 105°\n4) O est le milieu commun des deux diagonales."
+    },
+    {
+     "title": "Situation d'intégration : le commerçant",
+     "text": "Un commerçant achète 24 sacs de riz à 1 250 MRU le sac. Le transport lui coûte 800 MRU. Il revend chaque sac à 1 350 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 3/8 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondi au dixième).",
+     "solution": "1) 24 × 1 250 + 800 = 30 000 + 800 = 30 800 MRU\n2) 24 × 3/8 = 9 sacs ; 9 × 1 350 = 12 150 MRU\n3) Recette : 24 × 1 350 = 32 400 MRU ; bénéfice : 32 400 − 30 800 = 1 600 MRU\n4) 1 600 ÷ 30 800 × 100 ≈ 5,2 %"
+    },
+    {
+     "title": "Situation d'intégration : le jardin de l'école",
+     "text": "Le jardin de l'école est un rectangle de 32 m de long et 18 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 150 MRU le mètre. Calculer la dépense.\n3) Les 3/8 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "1) P = 2 × (32 + 18) = 100 m ; A = 32 × 18 = 576 m²\n2) 100 × 150 = 15 000 MRU\n3) 576 × 3/8 = 216 m²\n4) 5/8 = 62,5 %"
+    }
+   ]
+  },
+  {
+   "week": "Juin S2",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision générale (2)",
+   "covers": [
+    "Programme de l'année"
+   ],
+   "items": [
+    {
+     "title": "Lecture et représentation de données",
+     "text": "Le nombre d'absences dans un collège pendant une semaine est :\nLundi : 6 ; Mardi : 6 ; Mercredi : 6 ; Jeudi : 8 ; Vendredi : 2\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?",
+     "solution": "1) 28 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 28 ÷ 5 = 5,6\n4) Jeudi (8) : 8 ÷ 28 × 100 ≈ 28,6 %"
+    },
+    {
+     "title": "Statistique : notes d'un devoir",
+     "text": "Voici les notes de 20 élèves :\n9 ; 16 ; 17 ; 17 ; 9 ; 17 ; 16 ; 17 ; 9 ; 16 ; 16 ; 7 ; 16 ; 17 ; 11 ; 17 ; 17 ; 17 ; 9 ; 9\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la (les) note(s) la (les) plus fréquente(s) ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 11 ?",
+     "solution": "1) 7 : 1 ; 9 : 5 ; 11 : 1 ; 16 : 5 ; 17 : 8 (total 20)\n2) 7 : 5 % ; 9 : 25 % ; 11 : 5 % ; 16 : 25 % ; 17 : 40 %\n3) 17\n4) (7×1 + 9×5 + 11×1 + 16×5 + 17×8) ÷ 20 = 279 ÷ 20 = 13,95\n5) 14 élèves sur 20, soit 70 %"
+    },
+    {
+     "title": "Échelle d'une carte",
+     "text": "Une carte est à l'échelle 1/200 000.\n1) Deux villages sont distants de 13 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 20 km. Quelle distance les sépare sur la carte ?",
+     "solution": "1) 13 × 200 000 = 2 600 000 cm = 26 km\n2) 20 km = 2 000 000 cm ; 2 000 000 ÷ 200 000 = 10 cm"
+    },
+    {
+     "title": "Exprimer un pourcentage",
+     "text": "1) Un collège compte 500 élèves dont 100 filles. Quel est le pourcentage de filles ? de garçons ?\n2) Un élève a obtenu 20 bonnes réponses sur 25 questions. Exprimer ce résultat en pourcentage.",
+     "solution": "1) Filles : 100 ÷ 500 × 100 = 20 % ; garçons : 100 − 20 = 80 %\n2) 20 ÷ 25 × 100 = 80 %"
+    },
+    {
+     "title": "Calculer un pourcentage",
+     "text": "1) Un article coûte 1 600 MRU. Le vendeur accorde une remise de 20 %. Calculer la remise puis le nouveau prix.\n2) Un loyer de 800 MRU augmente de 5 %. Calculer le nouveau loyer.",
+     "solution": "1) Remise : 1 600 × 20 ÷ 100 = 320 MRU ; nouveau prix : 1 280 MRU\n2) Augmentation : 800 × 5 ÷ 100 = 40 MRU ; nouveau loyer : 840 MRU"
+    },
+    {
+     "title": "Tableau de proportionnalité",
+     "text": "Le prix du lait en poudre est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 3 | 5 | 8 | …\nPrix (MRU) : 450 | … | … | 2 250\nQuel est le coefficient de proportionnalité ?",
+     "solution": "Prix d'un kilogramme : 450 ÷ 3 = 150 MRU (coefficient 150)\n5 kg → 750 MRU ; 8 kg → 1 200 MRU ; 2 250 ÷ 150 = 15 kg"
+    },
+    {
+     "title": "Fraction d'une quantité",
+     "text": "1) Calculer les 2/5 de 30.\n2) Calculer les 3/10 de 4 600 MRU.\n3) Dans une classe de 32 élèves, les 3/8 sont des garçons. Combien y a-t-il de garçons ? de filles ?",
+     "solution": "1) 30 ÷ 5 × 2 = 12\n2) 4 600 ÷ 10 × 3 = 1 380 MRU\n3) Garçons : 32 ÷ 8 × 3 = 12 ; filles : 32 − 12 = 20"
+    },
+    {
+     "title": "Addition et soustraction de fractions",
+     "text": "Calculer et simplifier si possible :\na) 2/10 + 5/10\nb) 6/8 − 2/8\nc) 2/4 + 9/12\nd) 5/8 − 1/4",
+     "solution": "a) 7/10\nb) 4/8 = 1/2\nc) 6/12 + 9/12 = 15/12 = 5/4\nd) 5/8 − 2/8 = 3/8"
+    },
+    {
+     "title": "Comparer des fractions",
+     "text": "Comparer :\na) 6/9 et 3/9\nb) 5/6 et 5/10\nc) 6/2 et 1\nd) 2/4 et 7/16",
+     "solution": "a) 6/9 > 3/9 (même dénominateur)\nb) 5/6 > 5/10 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 6/2 > 1 (numérateur > dénominateur)\nd) 2/4 = 8/16 donc 2/4 > 7/16"
+    },
+    {
+     "title": "Simplifier des fractions",
+     "text": "1) Simplifier : 28/32 ; 21/28 ; 42/48.\n2) Compléter : 3/4 = …/20  ;  3/4 = 18/…",
+     "solution": "1) 28/32 = 7/8 ; 21/28 = 3/4 ; 42/48 = 7/8\n2) 3/4 = 15/20 ; 3/4 = 18/24"
+    },
+    {
+     "title": "Opérations sur les décimaux",
+     "text": "Calculer :\na) 63,2 + 6,76\nb) 86 − 1,01\nc) 1,7 × 1,1\nd) 9,88 × 10\ne) 121,1 ÷ 10",
+     "solution": "a) 69,96  b) 84,99  c) 1,87  d) 98,8  e) 12,11"
+    },
+    {
+     "title": "Valeurs approchées",
+     "text": "Soit le nombre 85,752.\n1) Donner son arrondi à l'unité, au dixième et au centième.\n2) Donner sa troncature au dixième.\n3) L'encadrer par deux décimaux consécutifs ayant un chiffre après la virgule.",
+     "solution": "1) Unité : 86 ; dixième : 85,8 ; centième : 85,75\n2) Troncature au dixième : 85,7\n3) 85,7 < 85,752 < 85,8"
+    },
+    {
+     "title": "Le cube",
+     "text": "Un cube a une arête de 12 cm.\n1) Calculer la longueur totale de ses arêtes.\n2) Calculer l'aire d'une face, puis l'aire totale.\n3) Calculer son volume.\n4) On double l'arête. Par combien est multiplié le volume ?",
+     "solution": "1) 12 × 12 = 144 cm\n2) Face : 12 × 12 = 144 cm² ; totale : 6 × 144 = 864 cm²\n3) V = 12³ = 1728 cm³\n4) Nouvelle arête 24 cm : V = 13824 cm³, le volume est multiplié par 8."
+    },
+    {
+     "title": "Le pavé droit",
+     "text": "Un pavé droit a pour dimensions : longueur 8 cm, largeur 5 cm, hauteur 4 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.",
+     "solution": "1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 8 × 5 × 4 = 160 cm³\n3) A = 2 × (8×5 + 8×4 + 5×4) = 2 × (40 + 32 + 20) = 184 cm²\n4) 160 cm³ = 0,16 dm³"
+    },
+    {
+     "title": "Cercle et disque",
+     "text": "Un cercle a pour rayon 5 cm. On prend π ≈ 3,14.\n1) Calculer son diamètre.\n2) Calculer son périmètre.\n3) Calculer l'aire du disque correspondant.",
+     "solution": "1) d = 2 × 5 = 10 cm\n2) P = 2 × 3,14 × 5 = 31,4 cm\n3) A = 3,14 × 5 × 5 = 78,5 cm²"
+    },
+    {
+     "title": "Le parallélogramme",
+     "text": "EFGH est un parallélogramme tel que EF = 10 cm, FG = 5,5 cm et ∠HEF = 60°.\n1) Calculer GH et EH. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠EFG, ∠FGH et ∠GHE.\n4) Les diagonales se coupent en O. Que représente O pour [EG] et [FH] ?",
+     "solution": "1) Les côtés opposés ont même longueur : GH = 10 cm ; EH = 5,5 cm\n2) 2 × (10 + 5,5) = 31 cm\n3) Deux angles consécutifs sont supplémentaires : ∠EFG = 180° − 60° = 120° ; angles opposés égaux : ∠FGH = 60° ; ∠GHE = 120°\n4) O est le milieu commun des deux diagonales."
+    },
+    {
+     "title": "Construire un triangle et le reconnaître",
+     "text": "1) Construire un triangle DEF tel que DE = DF = 7,5 cm et EF = 8,5 cm. Quelle est sa nature ?\n2) Construire un triangle équilatéral FED de côté 8,5 cm. Combien mesure chacun de ses angles ?\n3) Calculer le périmètre de chacun des deux triangles.",
+     "solution": "1) DE = DF : triangle isocèle en D.\n2) Chaque angle mesure 60°.\n3) Périmètres : 7,5 + 7,5 + 8,5 = 23,5 cm et 3 × 8,5 = 25,5 cm"
+    },
+    {
+     "title": "Somme des angles d'un triangle",
+     "text": "1) Dans le triangle DEF, on a : D̂ = 64° et Ê = 61°. Calculer F̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 70°. Calculer les deux angles à la base.",
+     "solution": "1) F̂ = 180° − (64° + 61°) = 55° ; le triangle est quelconque.\n2) (180° − 70°) ÷ 2 = 55° pour chacun des angles à la base."
+    },
+    {
+     "title": "Situation d'intégration : le budget familial",
+     "text": "Le revenu mensuel d'une famille est de 15 000 MRU. Elle dépense le 1/4 pour la nourriture, le 1/6 pour le loyer et épargne 15 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "1) Nourriture : 15 000 × 1/4 = 3 750 MRU ; loyer : 15 000 × 1/6 = 2 500 MRU ; épargne : 15 000 × 15 ÷ 100 = 2 250 MRU\n2) 15 000 − (3 750 + 2 500 + 2 250) = 6 500 MRU\n3) 6 500/15 000 = 13/30"
+    },
+    {
+     "title": "Situation d'intégration : le bassin circulaire",
+     "text": "Une place publique possède un bassin circulaire de 4 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 300 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "1) 2 × 3,14 × 4 = 25,12 m\n2) 25,12 × 300 = 7 536 MRU\n3) 3,14 × 4 × 4 = 50,24 m²"
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Décembre S3",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du 1er trimestre",
+   "covers": [
+    "Entiers naturels",
+    "Droites et segments",
+    "Décimaux positifs"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 128 ; 189 ; 258 ; 420 ; 621.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Écriture des nombres décimaux\n1) Décomposer 621,471 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) 28 unités et 7 centièmes ;\nb) 524 millièmes.\n3) Donner la partie entière et la partie décimale de 621,471.\n\nExercice 3 : Deux droites perpendiculaires à une même droite\nTracer une droite (D). Placer deux points P et Q hors de (D).\n1) Tracer (D1) passant par P et perpendiculaire à (D).\n2) Tracer (D2) passant par Q et perpendiculaire à (D).\n3) Quelle est la position relative de (D1) et (D2) ? Justifier.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 7 chemises.\nMagasin A : 140 MRU la chemise, plus 195 MRU de livraison.\nMagasin B : 150 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\nSommes des chiffres : 128 → 11 ; 189 → 18 ; 258 → 15 ; 420 → 6 ; 621 → 9\na) Par 2 (unités paires) : 128 ; 258 ; 420\nb) Par 3 (somme multiple de 3) : 189 ; 258 ; 420 ; 621\nc) Par 5 (unités 0 ou 5) : 420\nd) Par 9 (somme multiple de 9) : 189 ; 621\n\nExercice 2\n1) 621,471 = 6 × 100 + 2 × 10 + 1 + 4/10 + 7/100 + 1/1 000\n2) a) 28,07  b) 0,524\n3) Partie entière : 621 ; partie décimale : 0,471\n\nExercice 3\n3) (D1) et (D2) sont perpendiculaires à la même droite (D) : elles sont parallèles (ou confondues si P, Q sont sur la même perpendiculaire).\n\nExercice 4\nA : 7 × 140 + 195 = 1 175 MRU\nB : 7 × 150 = 1 050 MRU\nLe plus avantageux est le magasin B."
+    },
+    {
+     "title": "Proposition 2 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Calculs sur les entiers naturels\nCalculer :\na = 604 + 25 − 40\nb = 25 × 4 × 19\nc = 3 120 ÷ 12\nd = 7 000 − 604\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n29,048 ; 29,04 ; 29,4 ; 28,99 ; 29,408\nPuis encadrer 29,048 par deux entiers consécutifs.\n\nExercice 3 : Points alignés et milieu\nLes points P, Q et R sont alignés dans cet ordre avec PQ = 6,5 cm et QR = 7 cm.\n1) Faire une figure.\n2) Calculer PR.\n3) M est le milieu de [PR]. Calculer PM, puis la distance MQ.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 3 chemises.\nMagasin A : 89 MRU la chemise, plus 110 MRU de livraison.\nMagasin B : 98 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\na = 629 − 40 = 589\nb = 100 × 19 = 1 900\nc = 260\nd = 6 396\n\nExercice 2\n28,99 < 29,04 < 29,048 < 29,4 < 29,408\n29 < 29,048 < 30\n\nExercice 3\n2) PR = PQ + QR = 6,5 + 7 = 13,5 cm\n3) PM = 13,5 ÷ 2 = 6,75 cm ; MQ = |6,75 − 6,5| = 0,25 cm (M est entre Q et R)\n\nExercice 4\nA : 3 × 89 + 110 = 377 MRU\nB : 3 × 98 = 294 MRU\nLe plus avantageux est le magasin B."
+    },
+    {
+     "title": "Proposition 3 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 223 ; 358 ; 363 ; 444 ; 468.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n16,207 ; 16,027 ; 15,99 ; 16,2 ; 16,02\nPuis encadrer 16,027 par deux entiers consécutifs.\n\nExercice 3 : Points alignés et milieu\nLes points E, F et G sont alignés dans cet ordre avec EF = 4 cm et FG = 4 cm.\n1) Faire une figure.\n2) Calculer EG.\n3) M est le milieu de [EG]. Calculer EM, puis la distance MF.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 8 chemises.\nMagasin A : 114 MRU la chemise, plus 170 MRU de livraison.\nMagasin B : 125 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\nSommes des chiffres : 223 → 7 ; 358 → 16 ; 363 → 12 ; 444 → 12 ; 468 → 18\na) Par 2 (unités paires) : 358 ; 444 ; 468\nb) Par 3 (somme multiple de 3) : 363 ; 444 ; 468\nc) Par 5 (unités 0 ou 5) : aucun\nd) Par 9 (somme multiple de 9) : 468\n\nExercice 2\n15,99 < 16,02 < 16,027 < 16,2 < 16,207\n16 < 16,027 < 17\n\nExercice 3\n2) EG = EF + FG = 4 + 4 = 8 cm\n3) EM = 8 ÷ 2 = 4 cm ; MF = 0 cm (M et F sont confondus)\n\nExercice 4\nA : 8 × 114 + 170 = 1 082 MRU\nB : 8 × 125 = 1 000 MRU\nLe plus avantageux est le magasin B."
+    },
+    {
+     "title": "Proposition 4 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 218 ; 252 ; 288 ; 360 ; 460.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Valeurs approchées\nSoit le nombre 94,986.\n1) Donner son arrondi à l'unité, au dixième et au centième.\n2) Donner sa troncature au dixième.\n3) L'encadrer par deux décimaux consécutifs ayant un chiffre après la virgule.\n\nExercice 3 : Médiatrice d'un segment\n1) Tracer un segment [RS] de longueur 7,5 cm et construire sa médiatrice (Δ). Elle coupe [RS] en I.\n2) Calculer RI.\n3) M est un point de (Δ) tel que MR = 7,5 cm. Calculer MS. Justifier.\n4) Quelle est la nature du triangle MRS ?\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 7 chemises.\nMagasin A : 118 MRU la chemise, plus 55 MRU de livraison.\nMagasin B : 136 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\nSommes des chiffres : 218 → 11 ; 252 → 9 ; 288 → 18 ; 360 → 9 ; 460 → 10\na) Par 2 (unités paires) : 218 ; 252 ; 288 ; 360 ; 460\nb) Par 3 (somme multiple de 3) : 252 ; 288 ; 360\nc) Par 5 (unités 0 ou 5) : 360 ; 460\nd) Par 9 (somme multiple de 9) : 252 ; 288 ; 360\n\nExercice 2\n1) Unité : 95 ; dixième : 95 ; centième : 94,99\n2) Troncature au dixième : 94,9\n3) 94,9 < 94,986 < 95\n\nExercice 3\n2) I est le milieu de [RS] : RI = 7,5 ÷ 2 = 3,75 cm\n3) Tout point de la médiatrice est équidistant des extrémités : MS = MR = 7,5 cm\n4) MR = MS : le triangle MRS est isocèle en M.\n\nExercice 4\nA : 7 × 118 + 55 = 881 MRU\nB : 7 × 136 = 952 MRU\nLe plus avantageux est le magasin A."
+    },
+    {
+     "title": "Proposition 5 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 122 ; 242 ; 282 ; 360 ; 378.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n11,99 ; 12,207 ; 12,027 ; 12,2 ; 12,02\nPuis encadrer 12,027 par deux entiers consécutifs.\n\nExercice 3 : Points alignés et milieu\nLes points D, E et F sont alignés dans cet ordre avec DE = 7,5 cm et EF = 7 cm.\n1) Faire une figure.\n2) Calculer DF.\n3) M est le milieu de [DF]. Calculer DM, puis la distance ME.\n\nExercice 4 : Problème : achats\nCheikh achète 3 cahiers à 44,2 MRU l'un et une règle à 19,9 MRU. Il paie avec un billet de 200 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\nSommes des chiffres : 122 → 5 ; 242 → 8 ; 282 → 12 ; 360 → 9 ; 378 → 18\na) Par 2 (unités paires) : 122 ; 242 ; 282 ; 360 ; 378\nb) Par 3 (somme multiple de 3) : 282 ; 360 ; 378\nc) Par 5 (unités 0 ou 5) : 360\nd) Par 9 (somme multiple de 9) : 360 ; 378\n\nExercice 2\n11,99 < 12,02 < 12,027 < 12,2 < 12,207\n12 < 12,027 < 13\n\nExercice 3\n2) DF = DE + EF = 7,5 + 7 = 14,5 cm\n3) DM = 14,5 ÷ 2 = 7,25 cm ; ME = |7,25 − 7,5| = 0,25 cm (M est entre D et E)\n\nExercice 4\n1) 3 × 44,2 = 132,6 MRU\n2) 132,6 + 19,9 = 152,5 MRU\n3) 200 − 152,5 = 47,5 MRU"
+    },
+    {
+     "title": "Proposition 6 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 147 ; 305 ; 522 ; 801 ; 856.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Opérations sur les décimaux\nCalculer :\na) 15,5 + 5,59\nb) 68 − 8,57\nc) 1,4 × 4,8\nd) 1,13 × 100\ne) 709,1 ÷ 10\n\nExercice 3 : Deux droites parallèles à une même droite\nTracer une droite (D). Placer deux points P et Q hors de (D), de part et d'autre de (D).\n1) Tracer (D1) passant par P et parallèle à (D).\n2) Tracer (D2) passant par Q et parallèle à (D).\n3) Que peut-on dire de (D1) et (D2) ? Justifier.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 3 chemises.\nMagasin A : 126 MRU la chemise, plus 165 MRU de livraison.\nMagasin B : 133 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\nSommes des chiffres : 147 → 12 ; 305 → 8 ; 522 → 9 ; 801 → 9 ; 856 → 19\na) Par 2 (unités paires) : 522 ; 856\nb) Par 3 (somme multiple de 3) : 147 ; 522 ; 801\nc) Par 5 (unités 0 ou 5) : 305\nd) Par 9 (somme multiple de 9) : 522 ; 801\n\nExercice 2\na) 21,09  b) 59,43  c) 6,72  d) 113  e) 70,91\n\nExercice 3\n3) Deux droites parallèles à une même droite sont parallèles entre elles : (D1) // (D2).\n\nExercice 4\nA : 3 × 126 + 165 = 543 MRU\nB : 3 × 133 = 399 MRU\nLe plus avantageux est le magasin B."
+    },
+    {
+     "title": "Proposition 7 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Division euclidienne\n1) Effectuer la division euclidienne de 1 455 par 35 et écrire l'égalité correspondante.\n2) Même question pour 354 et 30.\n3) Quel est le plus petit nombre à ajouter à 1 455 pour obtenir un multiple de 35 ?\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n3,1 ; 3,017 ; 3,01 ; 3,107 ; 2,99\nPuis encadrer 3,017 par deux entiers consécutifs.\n\nExercice 3 : Points alignés et milieu\nLes points I, J et K sont alignés dans cet ordre avec IJ = 5 cm et JK = 3 cm.\n1) Faire une figure.\n2) Calculer IK.\n3) M est le milieu de [IK]. Calculer IM, puis la distance MJ.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 5 chemises.\nMagasin A : 114 MRU la chemise, plus 195 MRU de livraison.\nMagasin B : 132 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\n1) 1 455 = 35 × 41 + 20 (reste 20 < 35)\n2) 354 = 30 × 11 + 24\n3) 35 − 20 = 15 (car 1 470 = 35 × 42)\n\nExercice 2\n2,99 < 3,01 < 3,017 < 3,1 < 3,107\n3 < 3,017 < 4\n\nExercice 3\n2) IK = IJ + JK = 5 + 3 = 8 cm\n3) IM = 8 ÷ 2 = 4 cm ; MJ = |4 − 5| = 1 cm (M est entre I et J)\n\nExercice 4\nA : 5 × 114 + 195 = 765 MRU\nB : 5 × 132 = 660 MRU\nLe plus avantageux est le magasin B."
+    },
+    {
+     "title": "Proposition 8 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Calculs sur les entiers naturels\nCalculer :\na = 748 + 50 − 16\nb = 125 × 8 × 24\nc = 3 440 ÷ 8\nd = 8 000 − 748\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n6,99 ; 7,01 ; 7,1 ; 7,013 ; 7,103\nPuis encadrer 7,013 par deux entiers consécutifs.\n\nExercice 3 : Deux droites perpendiculaires à une même droite\nTracer une droite (D). Placer deux points M et Q hors de (D).\n1) Tracer (D1) passant par M et perpendiculaire à (D).\n2) Tracer (D2) passant par Q et perpendiculaire à (D).\n3) Quelle est la position relative de (D1) et (D2) ? Justifier.\n\nExercice 4 : Problème : achats\nCheikh achète 4 cahiers à 34,5 MRU l'un et une règle à 18,7 MRU. Il paie avec un billet de 200 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\na = 798 − 16 = 782\nb = 1000 × 24 = 24 000\nc = 430\nd = 7 252\n\nExercice 2\n6,99 < 7,01 < 7,013 < 7,1 < 7,103\n7 < 7,013 < 8\n\nExercice 3\n3) (D1) et (D2) sont perpendiculaires à la même droite (D) : elles sont parallèles (ou confondues si M, Q sont sur la même perpendiculaire).\n\nExercice 4\n1) 4 × 34,5 = 138 MRU\n2) 138 + 18,7 = 156,7 MRU\n3) 200 − 156,7 = 43,3 MRU"
+    },
+    {
+     "title": "Proposition 9 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 174 ; 630 ; 662 ; 725 ; 819.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Écriture des nombres décimaux\n1) Décomposer 433,267 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) 29 unités et 1 centièmes ;\nb) 189 millièmes.\n3) Donner la partie entière et la partie décimale de 433,267.\n\nExercice 3 : Points alignés et milieu\nLes points E, F et G sont alignés dans cet ordre avec EF = 4 cm et FG = 6,5 cm.\n1) Faire une figure.\n2) Calculer EG.\n3) M est le milieu de [EG]. Calculer EM, puis la distance MF.\n\nExercice 4 : Problème : achats\nMoussa achète 6 cahiers à 16,5 MRU l'un et une règle à 18,3 MRU. Il paie avec un billet de 200 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\nSommes des chiffres : 174 → 12 ; 630 → 9 ; 662 → 14 ; 725 → 14 ; 819 → 18\na) Par 2 (unités paires) : 174 ; 630 ; 662\nb) Par 3 (somme multiple de 3) : 174 ; 630 ; 819\nc) Par 5 (unités 0 ou 5) : 630 ; 725\nd) Par 9 (somme multiple de 9) : 630 ; 819\n\nExercice 2\n1) 433,267 = 4 × 100 + 3 × 10 + 3 + 2/10 + 6/100 + 7/1 000\n2) a) 29,01  b) 0,189\n3) Partie entière : 433 ; partie décimale : 0,267\n\nExercice 3\n2) EG = EF + FG = 4 + 6,5 = 10,5 cm\n3) EM = 10,5 ÷ 2 = 5,25 cm ; MF = |5,25 − 4| = 1,25 cm (M est entre F et G)\n\nExercice 4\n1) 6 × 16,5 = 99 MRU\n2) 99 + 18,3 = 117,3 MRU\n3) 200 − 117,3 = 82,7 MRU"
+    },
+    {
+     "title": "Proposition 10 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Priorités opératoires\nCalculer en respectant les priorités :\nA = 21 + 3 × 4\nB = (21 + 3) × 4\nC = 59 − 14 ÷ 2 + 3\nD = 3 × (15 − 7) − 4 × 3\n\nExercice 2 : Opérations sur les décimaux\nCalculer :\na) 46,2 + 9,52\nb) 35 − 7,57\nc) 2,9 × 4,9\nd) 2,19 × 1 000\ne) 910,9 ÷ 100\n\nExercice 3 : Médiatrice d'un segment\n1) Tracer un segment [AB] de longueur 7 cm et construire sa médiatrice (Δ). Elle coupe [AB] en I.\n2) Calculer AI.\n3) M est un point de (Δ) tel que MA = 7,5 cm. Calculer MB. Justifier.\n4) Quelle est la nature du triangle MAB ?\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 6 chemises.\nMagasin A : 127 MRU la chemise, plus 85 MRU de livraison.\nMagasin B : 145 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\nA = 21 + 12 = 33\nB = 24 × 4 = 96\nC = 59 − 7 + 3 = 55\nD = 3 × 8 − 12 = 24 − 12 = 12\n\nExercice 2\na) 55,72  b) 27,43  c) 14,21  d) 2 190  e) 9,109\n\nExercice 3\n2) I est le milieu de [AB] : AI = 7 ÷ 2 = 3,5 cm\n3) Tout point de la médiatrice est équidistant des extrémités : MB = MA = 7,5 cm\n4) MA = MB : le triangle MAB est isocèle en M.\n\nExercice 4\nA : 6 × 127 + 85 = 847 MRU\nB : 6 × 145 = 870 MRU\nLe plus avantageux est le magasin A."
+    },
+    {
+     "title": "Proposition 11 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Priorités opératoires\nCalculer en respectant les priorités :\nA = 5 + 7 × 8\nB = (5 + 7) × 8\nC = 46 − 40 ÷ 5 + 1\nD = 7 × (15 − 2) − 2 × 3\n\nExercice 2 : Écriture des nombres décimaux\n1) Décomposer 202,914 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) 32 unités et 8 centièmes ;\nb) 760 millièmes.\n3) Donner la partie entière et la partie décimale de 202,914.\n\nExercice 3 : Deux droites perpendiculaires à une même droite\nTracer une droite (d). Placer deux points K et Q hors de (d).\n1) Tracer (d1) passant par K et perpendiculaire à (d).\n2) Tracer (d2) passant par Q et perpendiculaire à (d).\n3) Quelle est la position relative de (d1) et (d2) ? Justifier.\n\nExercice 4 : Problème : achats\nMariem achète 3 cahiers à 26,3 MRU l'un et une règle à 7,1 MRU. Il paie avec un billet de 100 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\nA = 5 + 56 = 61\nB = 12 × 8 = 96\nC = 46 − 8 + 1 = 39\nD = 7 × 13 − 6 = 91 − 6 = 85\n\nExercice 2\n1) 202,914 = 2 × 100 + 0 × 10 + 2 + 9/10 + 1/100 + 4/1 000\n2) a) 32,08  b) 0,76\n3) Partie entière : 202 ; partie décimale : 0,914\n\nExercice 3\n3) (d1) et (d2) sont perpendiculaires à la même droite (d) : elles sont parallèles (ou confondues si K, Q sont sur la même perpendiculaire).\n\nExercice 4\n1) 3 × 26,3 = 78,9 MRU\n2) 78,9 + 7,1 = 86 MRU\n3) 100 − 86 = 14 MRU"
+    },
+    {
+     "title": "Proposition 12 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Division euclidienne\n1) Effectuer la division euclidienne de 2 251 par 14 et écrire l'égalité correspondante.\n2) Même question pour 557 et 16.\n3) Quel est le plus petit nombre à ajouter à 2 251 pour obtenir un multiple de 14 ?\n\nExercice 2 : Écriture des nombres décimaux\n1) Décomposer 855,436 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) 39 unités et 4 centièmes ;\nb) 985 millièmes.\n3) Donner la partie entière et la partie décimale de 855,436.\n\nExercice 3 : Points alignés et milieu\nLes points A, B et C sont alignés dans cet ordre avec AB = 5,5 cm et BC = 4 cm.\n1) Faire une figure.\n2) Calculer AC.\n3) M est le milieu de [AC]. Calculer AM, puis la distance MB.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 6 chemises.\nMagasin A : 81 MRU la chemise, plus 195 MRU de livraison.\nMagasin B : 100 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\n1) 2 251 = 14 × 160 + 11 (reste 11 < 14)\n2) 557 = 16 × 34 + 13\n3) 14 − 11 = 3 (car 2 254 = 14 × 161)\n\nExercice 2\n1) 855,436 = 8 × 100 + 5 × 10 + 5 + 4/10 + 3/100 + 6/1 000\n2) a) 39,04  b) 0,985\n3) Partie entière : 855 ; partie décimale : 0,436\n\nExercice 3\n2) AC = AB + BC = 5,5 + 4 = 9,5 cm\n3) AM = 9,5 ÷ 2 = 4,75 cm ; MB = |4,75 − 5,5| = 0,75 cm (M est entre A et B)\n\nExercice 4\nA : 6 × 81 + 195 = 681 MRU\nB : 6 × 100 = 600 MRU\nLe plus avantageux est le magasin B."
+    },
+    {
+     "title": "Proposition 13 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Division euclidienne\n1) Effectuer la division euclidienne de 2 173 par 28 et écrire l'égalité correspondante.\n2) Même question pour 1 418 et 28.\n3) Quel est le plus petit nombre à ajouter à 2 173 pour obtenir un multiple de 28 ?\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n7,075 ; 7,7 ; 7,07 ; 7,705 ; 6,99\nPuis encadrer 7,075 par deux entiers consécutifs.\n\nExercice 3 : Points alignés et milieu\nLes points A, B et C sont alignés dans cet ordre avec AB = 8 cm et BC = 5 cm.\n1) Faire une figure.\n2) Calculer AC.\n3) M est le milieu de [AC]. Calculer AM, puis la distance MB.\n\nExercice 4 : Problème : achats\nMoussa achète 5 cahiers à 29,2 MRU l'un et une règle à 23,2 MRU. Il paie avec un billet de 200 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\n1) 2 173 = 28 × 77 + 17 (reste 17 < 28)\n2) 1 418 = 28 × 50 + 18\n3) 28 − 17 = 11 (car 2 184 = 28 × 78)\n\nExercice 2\n6,99 < 7,07 < 7,075 < 7,7 < 7,705\n7 < 7,075 < 8\n\nExercice 3\n2) AC = AB + BC = 8 + 5 = 13 cm\n3) AM = 13 ÷ 2 = 6,5 cm ; MB = |6,5 − 8| = 1,5 cm (M est entre A et B)\n\nExercice 4\n1) 5 × 29,2 = 146 MRU\n2) 146 + 23,2 = 169,2 MRU\n3) 200 − 169,2 = 30,8 MRU"
+    },
+    {
+     "title": "Proposition 14 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 132 ; 174 ; 292 ; 562 ; 564.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Valeurs approchées\nSoit le nombre 31,872.\n1) Donner son arrondi à l'unité, au dixième et au centième.\n2) Donner sa troncature au dixième.\n3) L'encadrer par deux décimaux consécutifs ayant un chiffre après la virgule.\n\nExercice 3 : Médiatrice d'un segment\n1) Tracer un segment [AB] de longueur 11 cm et construire sa médiatrice (Δ). Elle coupe [AB] en I.\n2) Calculer AI.\n3) M est un point de (Δ) tel que MA = 9 cm. Calculer MB. Justifier.\n4) Quelle est la nature du triangle MAB ?\n\nExercice 4 : Problème : achats\nCheikh achète 5 cahiers à 17,6 MRU l'un et une règle à 5,3 MRU. Il paie avec un billet de 100 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\nSommes des chiffres : 132 → 6 ; 174 → 12 ; 292 → 13 ; 562 → 13 ; 564 → 15\na) Par 2 (unités paires) : 132 ; 174 ; 292 ; 562 ; 564\nb) Par 3 (somme multiple de 3) : 132 ; 174 ; 564\nc) Par 5 (unités 0 ou 5) : aucun\nd) Par 9 (somme multiple de 9) : aucun\n\nExercice 2\n1) Unité : 32 ; dixième : 31,9 ; centième : 31,87\n2) Troncature au dixième : 31,8\n3) 31,8 < 31,872 < 31,9\n\nExercice 3\n2) I est le milieu de [AB] : AI = 11 ÷ 2 = 5,5 cm\n3) Tout point de la médiatrice est équidistant des extrémités : MB = MA = 9 cm\n4) MA = MB : le triangle MAB est isocèle en M.\n\nExercice 4\n1) 5 × 17,6 = 88 MRU\n2) 88 + 5,3 = 93,3 MRU\n3) 100 − 93,3 = 6,7 MRU"
+    },
+    {
+     "title": "Proposition 15 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Calculs sur les entiers naturels\nCalculer :\na = 428 + 83 − 77\nb = 50 × 2 × 34\nc = 3 912 ÷ 12\nd = 5 000 − 428\n\nExercice 2 : Valeurs approchées\nSoit le nombre 94,329.\n1) Donner son arrondi à l'unité, au dixième et au centième.\n2) Donner sa troncature au dixième.\n3) L'encadrer par deux décimaux consécutifs ayant un chiffre après la virgule.\n\nExercice 3 : Deux droites parallèles à une même droite\nTracer une droite (D). Placer deux points P et Q hors de (D), de part et d'autre de (D).\n1) Tracer (D1) passant par P et parallèle à (D).\n2) Tracer (D2) passant par Q et parallèle à (D).\n3) Que peut-on dire de (D1) et (D2) ? Justifier.\n\nExercice 4 : Problème : achats\nAïcha achète 3 cahiers à 37,5 MRU l'un et une règle à 23 MRU. Il paie avec un billet de 200 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\na = 511 − 77 = 434\nb = 100 × 34 = 3 400\nc = 326\nd = 4 572\n\nExercice 2\n1) Unité : 94 ; dixième : 94,3 ; centième : 94,33\n2) Troncature au dixième : 94,3\n3) 94,3 < 94,329 < 94,4\n\nExercice 3\n3) Deux droites parallèles à une même droite sont parallèles entre elles : (D1) // (D2).\n\nExercice 4\n1) 3 × 37,5 = 112,5 MRU\n2) 112,5 + 23 = 135,5 MRU\n3) 200 − 135,5 = 64,5 MRU"
+    },
+    {
+     "title": "Proposition 16 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Calculs sur les entiers naturels\nCalculer :\na = 523 + 30 − 24\nb = 50 × 2 × 27\nc = 1 404 ÷ 6\nd = 6 000 − 523\n\nExercice 2 : Valeurs approchées\nSoit le nombre 41,893.\n1) Donner son arrondi à l'unité, au dixième et au centième.\n2) Donner sa troncature au dixième.\n3) L'encadrer par deux décimaux consécutifs ayant un chiffre après la virgule.\n\nExercice 3 : Droites perpendiculaires et parallèles\nTracer une droite (d) et un point M qui n'appartient pas à (d).\n1) Tracer la droite (d1) passant par M et perpendiculaire à (d).\n2) Tracer la droite (d2) passant par M et parallèle à (d).\n3) Que peut-on dire des droites (d1) et (d2) ? Justifier.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 8 chemises.\nMagasin A : 95 MRU la chemise, plus 95 MRU de livraison.\nMagasin B : 109 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\na = 553 − 24 = 529\nb = 100 × 27 = 2 700\nc = 234\nd = 5 477\n\nExercice 2\n1) Unité : 42 ; dixième : 41,9 ; centième : 41,89\n2) Troncature au dixième : 41,8\n3) 41,8 < 41,893 < 41,9\n\nExercice 3\n1) et 2) Construction à l'équerre et à la règle.\n3) (d2) // (d) et (d1) ⊥ (d) ; si deux droites sont parallèles, toute droite perpendiculaire à l'une est perpendiculaire à l'autre : (d1) ⊥ (d2).\n\nExercice 4\nA : 8 × 95 + 95 = 855 MRU\nB : 8 × 109 = 872 MRU\nLe plus avantageux est le magasin A."
+    },
+    {
+     "title": "Proposition 17 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Division euclidienne\n1) Effectuer la division euclidienne de 350 par 36 et écrire l'égalité correspondante.\n2) Même question pour 1 000 et 24.\n3) Quel est le plus petit nombre à ajouter à 350 pour obtenir un multiple de 36 ?\n\nExercice 2 : Opérations sur les décimaux\nCalculer :\na) 24,4 + 6,99\nb) 22 − 1,15\nc) 2,7 × 4,3\nd) 8 × 1 000\ne) 922,8 ÷ 100\n\nExercice 3 : Droites perpendiculaires et parallèles\nTracer une droite (L) et un point K qui n'appartient pas à (L).\n1) Tracer la droite (L1) passant par K et perpendiculaire à (L).\n2) Tracer la droite (L2) passant par K et parallèle à (L).\n3) Que peut-on dire des droites (L1) et (L2) ? Justifier.\n\nExercice 4 : Problème : achats\nMoussa achète 5 cahiers à 35,4 MRU l'un et une règle à 13,9 MRU. Il paie avec un billet de 200 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\n1) 350 = 36 × 9 + 26 (reste 26 < 36)\n2) 1 000 = 24 × 41 + 16\n3) 36 − 26 = 10 (car 360 = 36 × 10)\n\nExercice 2\na) 31,39  b) 20,85  c) 11,61  d) 8 000  e) 9,228\n\nExercice 3\n1) et 2) Construction à l'équerre et à la règle.\n3) (L2) // (L) et (L1) ⊥ (L) ; si deux droites sont parallèles, toute droite perpendiculaire à l'une est perpendiculaire à l'autre : (L1) ⊥ (L2).\n\nExercice 4\n1) 5 × 35,4 = 177 MRU\n2) 177 + 13,9 = 190,9 MRU\n3) 200 − 190,9 = 9,1 MRU"
+    },
+    {
+     "title": "Proposition 18 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 186 ; 472 ; 480 ; 549 ; 576.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Opérations sur les décimaux\nCalculer :\na) 12,7 + 8,4\nb) 61 − 4,56\nc) 1,1 × 2,4\nd) 8,4 × 1 000\ne) 703,1 ÷ 10\n\nExercice 3 : Points alignés et milieu\nLes points R, S et T sont alignés dans cet ordre avec RS = 6,5 cm et ST = 5 cm.\n1) Faire une figure.\n2) Calculer RT.\n3) M est le milieu de [RT]. Calculer RM, puis la distance MS.\n\nExercice 4 : Problème : comparer deux offres\nOn veut acheter 8 chemises.\nMagasin A : 82 MRU la chemise, plus 170 MRU de livraison.\nMagasin B : 102 MRU la chemise, livraison gratuite.\nQuel magasin est le plus avantageux ? Justifier.",
+     "solution": "Exercice 1\nSommes des chiffres : 186 → 15 ; 472 → 13 ; 480 → 12 ; 549 → 18 ; 576 → 18\na) Par 2 (unités paires) : 186 ; 472 ; 480 ; 576\nb) Par 3 (somme multiple de 3) : 186 ; 480 ; 549 ; 576\nc) Par 5 (unités 0 ou 5) : 480\nd) Par 9 (somme multiple de 9) : 549 ; 576\n\nExercice 2\na) 21,1  b) 56,44  c) 2,64  d) 8 400  e) 70,31\n\nExercice 3\n2) RT = RS + ST = 6,5 + 5 = 11,5 cm\n3) RM = 11,5 ÷ 2 = 5,75 cm ; MS = |5,75 − 6,5| = 0,75 cm (M est entre R et S)\n\nExercice 4\nA : 8 × 82 + 170 = 826 MRU\nB : 8 × 102 = 816 MRU\nLe plus avantageux est le magasin B."
+    },
+    {
+     "title": "Proposition 19 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Critères de divisibilité\nOn donne les nombres : 270 ; 405 ; 558 ; 646 ; 692.\nParmi ces nombres, lesquels sont divisibles :\na) par 2 ? b) par 3 ? c) par 5 ? d) par 9 ?\nJustifier à l'aide des critères de divisibilité.\n\nExercice 2 : Opérations sur les décimaux\nCalculer :\na) 28,4 + 6,61\nb) 77 − 8,03\nc) 4,2 × 3\nd) 5,69 × 1 000\ne) 917,6 ÷ 100\n\nExercice 3 : Points alignés et milieu\nLes points E, F et G sont alignés dans cet ordre avec EF = 6 cm et FG = 5,5 cm.\n1) Faire une figure.\n2) Calculer EG.\n3) M est le milieu de [EG]. Calculer EM, puis la distance MF.\n\nExercice 4 : Problème : achats\nCheikh achète 4 cahiers à 21,6 MRU l'un et une règle à 23 MRU. Il paie avec un billet de 200 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\nSommes des chiffres : 270 → 9 ; 405 → 9 ; 558 → 18 ; 646 → 16 ; 692 → 17\na) Par 2 (unités paires) : 270 ; 558 ; 646 ; 692\nb) Par 3 (somme multiple de 3) : 270 ; 405 ; 558\nc) Par 5 (unités 0 ou 5) : 270 ; 405\nd) Par 9 (somme multiple de 9) : 270 ; 405 ; 558\n\nExercice 2\na) 35,01  b) 68,97  c) 12,6  d) 5 690  e) 9,176\n\nExercice 3\n2) EG = EF + FG = 6 + 5,5 = 11,5 cm\n3) EM = 11,5 ÷ 2 = 5,75 cm ; MF = |5,75 − 6| = 0,25 cm (M est entre E et F)\n\nExercice 4\n1) 4 × 21,6 = 86,4 MRU\n2) 86,4 + 23 = 109,4 MRU\n3) 200 − 109,4 = 90,6 MRU"
+    },
+    {
+     "title": "Proposition 20 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Calculs sur les entiers naturels\nCalculer :\na = 132 + 90 − 28\nb = 25 × 4 × 14\nc = 1 772 ÷ 4\nd = 5 000 − 132\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n7,902 ; 6,99 ; 7,9 ; 7,09 ; 7,092\nPuis encadrer 7,092 par deux entiers consécutifs.\n\nExercice 3 : Points alignés et milieu\nLes points D, E et F sont alignés dans cet ordre avec DE = 6,5 cm et EF = 4 cm.\n1) Faire une figure.\n2) Calculer DF.\n3) M est le milieu de [DF]. Calculer DM, puis la distance ME.\n\nExercice 4 : Problème : achats\nKhadijetou achète 5 cahiers à 44,7 MRU l'un et une règle à 9,4 MRU. Il paie avec un billet de 500 MRU.\n1) Combien coûtent les cahiers ?\n2) Quel est le montant total ?\n3) Combien lui rend-on ?",
+     "solution": "Exercice 1\na = 222 − 28 = 194\nb = 100 × 14 = 1 400\nc = 443\nd = 4 868\n\nExercice 2\n6,99 < 7,09 < 7,092 < 7,9 < 7,902\n7 < 7,092 < 8\n\nExercice 3\n2) DF = DE + EF = 6,5 + 4 = 10,5 cm\n3) DM = 10,5 ÷ 2 = 5,25 cm ; ME = |5,25 − 6,5| = 1,25 cm (M est entre D et E)\n\nExercice 4\n1) 5 × 44,7 = 223,5 MRU\n2) 223,5 + 9,4 = 232,9 MRU\n3) 500 − 232,9 = 267,1 MRU"
+    }
+   ]
+  },
+  {
+   "week": "Mars S3",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du 2e trimestre",
+   "covers": [
+    "Fractions",
+    "Triangles et parallélogramme",
+    "Proportionnalité et pourcentage",
+    "Cercle et disque"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Fraction d'une quantité\n1) Calculer les 4/7 de 49.\n2) Calculer les 2/5 de 2 500 MRU.\n3) Dans une classe de 35 élèves, les 2/5 sont des garçons. Combien y a-t-il de garçons ? de filles ?\n\nExercice 2 : Échelle d'une carte\nUne carte est à l'échelle 1/200 000.\n1) Deux villages sont distants de 5 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 10 km. Quelle distance les sépare sur la carte ?\n\nExercice 3 : Le parallélogramme\nEFGH est un parallélogramme tel que EF = 5 cm, FG = 7 cm et ∠HEF = 120°.\n1) Calculer GH et EH. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠EFG, ∠FGH et ∠GHE.\n4) Les diagonales se coupent en O. Que représente O pour [EG] et [FH] ?\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 23 m de long et 20 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 200 MRU le mètre. Calculer la dépense.\n3) Le 1/4 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 49 ÷ 7 × 4 = 28\n2) 2 500 ÷ 5 × 2 = 1 000 MRU\n3) Garçons : 35 ÷ 5 × 2 = 14 ; filles : 35 − 14 = 21\n\nExercice 2\n1) 5 × 200 000 = 1 000 000 cm = 10 km\n2) 10 km = 1 000 000 cm ; 1 000 000 ÷ 200 000 = 5 cm\n\nExercice 3\n1) Les côtés opposés ont même longueur : GH = 5 cm ; EH = 7 cm\n2) 2 × (5 + 7) = 24 cm\n3) Deux angles consécutifs sont supplémentaires : ∠EFG = 180° − 120° = 60° ; angles opposés égaux : ∠FGH = 120° ; ∠GHE = 60°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) P = 2 × (23 + 20) = 86 m ; A = 23 × 20 = 460 m²\n2) 86 × 200 = 17 200 MRU\n3) 460 × 1/4 = 115 m²\n4) 3/4 = 75 %"
+    },
+    {
+     "title": "Proposition 2 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Simplifier des fractions\n1) Simplifier : 24/60 ; 50/70 ; 14/21.\n2) Compléter : 2/3 = …/18  ;  2/3 = 14/…\n\nExercice 2 : Tableau de proportionnalité\nLe prix du dattes est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 10 | 3 | 4 | …\nPrix (MRU) : 1 200 | … | … | 1 320\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle PQR, on a : P̂ = 46° et Q̂ = 48°. Calculer R̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 80°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 30 m de long et 16 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 200 MRU le mètre. Calculer la dépense.\n3) Les 2/5 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 24/60 = 2/5 ; 50/70 = 5/7 ; 14/21 = 2/3\n2) 2/3 = 12/18 ; 2/3 = 14/21\n\nExercice 2\nPrix d'un kilogramme : 1 200 ÷ 10 = 120 MRU (coefficient 120)\n3 kg → 360 MRU ; 4 kg → 480 MRU ; 1 320 ÷ 120 = 11 kg\n\nExercice 3\n1) R̂ = 180° − (46° + 48°) = 86° ; le triangle est quelconque.\n2) (180° − 80°) ÷ 2 = 50° pour chacun des angles à la base.\n\nExercice 4\n1) P = 2 × (30 + 16) = 92 m ; A = 30 × 16 = 480 m²\n2) 92 × 200 = 18 400 MRU\n3) 480 × 2/5 = 192 m²\n4) 3/5 = 60 %"
+    },
+    {
+     "title": "Proposition 3 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Simplifier des fractions\n1) Simplifier : 15/20 ; 30/42 ; 15/21.\n2) Compléter : 5/6 = …/30  ;  5/6 = 30/…\n\nExercice 2 : Exprimer un pourcentage\n1) Un collège compte 500 élèves dont 275 filles. Quel est le pourcentage de filles ? de garçons ?\n2) Un élève a obtenu 12 bonnes réponses sur 20 questions. Exprimer ce résultat en pourcentage.\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle IJK, on a : Î = 48° et Ĵ = 93°. Calculer K̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 70°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le bassin circulaire\nUne place publique possède un bassin circulaire de 4 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 300 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "Exercice 1\n1) 15/20 = 3/4 ; 30/42 = 5/7 ; 15/21 = 5/7\n2) 5/6 = 25/30 ; 5/6 = 30/36\n\nExercice 2\n1) Filles : 275 ÷ 500 × 100 = 55 % ; garçons : 100 − 55 = 45 %\n2) 12 ÷ 20 × 100 = 60 %\n\nExercice 3\n1) K̂ = 180° − (48° + 93°) = 39° ; le triangle est quelconque.\n2) (180° − 70°) ÷ 2 = 55° pour chacun des angles à la base.\n\nExercice 4\n1) 2 × 3,14 × 4 = 25,12 m\n2) 25,12 × 300 = 7 536 MRU\n3) 3,14 × 4 × 4 = 50,24 m²"
+    },
+    {
+     "title": "Proposition 4 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Simplifier des fractions\n1) Simplifier : 45/63 ; 84/96 ; 18/30.\n2) Compléter : 5/6 = …/18  ;  5/6 = 20/…\n\nExercice 2 : Calculer un pourcentage\n1) Un article coûte 2 000 MRU. Le vendeur accorde une remise de 25 %. Calculer la remise puis le nouveau prix.\n2) Un loyer de 800 MRU augmente de 20 %. Calculer le nouveau loyer.\n\nExercice 3 : Le parallélogramme\nMNPQ est un parallélogramme tel que MN = 5,5 cm, NP = 5 cm et ∠QMN = 50°.\n1) Calculer PQ et MQ. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠MNP, ∠NPQ et ∠PQM.\n4) Les diagonales se coupent en O. Que représente O pour [MP] et [NQ] ?\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 15 000 MRU. Elle dépense les 2/5 pour la nourriture, le 1/6 pour le loyer et épargne 15 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\n1) 45/63 = 5/7 ; 84/96 = 7/8 ; 18/30 = 3/5\n2) 5/6 = 15/18 ; 5/6 = 20/24\n\nExercice 2\n1) Remise : 2 000 × 25 ÷ 100 = 500 MRU ; nouveau prix : 1 500 MRU\n2) Augmentation : 800 × 20 ÷ 100 = 160 MRU ; nouveau loyer : 960 MRU\n\nExercice 3\n1) Les côtés opposés ont même longueur : PQ = 5,5 cm ; MQ = 5 cm\n2) 2 × (5,5 + 5) = 21 cm\n3) Deux angles consécutifs sont supplémentaires : ∠MNP = 180° − 50° = 130° ; angles opposés égaux : ∠NPQ = 50° ; ∠PQM = 130°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) Nourriture : 15 000 × 2/5 = 6 000 MRU ; loyer : 15 000 × 1/6 = 2 500 MRU ; épargne : 15 000 × 15 ÷ 100 = 2 250 MRU\n2) 15 000 − (6 000 + 2 500 + 2 250) = 4 250 MRU\n3) 4 250/15 000 = 17/60"
+    },
+    {
+     "title": "Proposition 5 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Simplifier des fractions\n1) Simplifier : 36/48 ; 20/45 ; 63/72.\n2) Compléter : 5/6 = …/30  ;  5/6 = 30/…\n\nExercice 2 : Calculer un pourcentage\n1) Un article coûte 2 000 MRU. Le vendeur accorde une remise de 15 %. Calculer la remise puis le nouveau prix.\n2) Un loyer de 3 200 MRU augmente de 5 %. Calculer le nouveau loyer.\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle RST, on a : R̂ = 66° et Ŝ = 68°. Calculer T̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 50°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 25 m de long et 19 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 250 MRU le mètre. Calculer la dépense.\n3) Les 3/5 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 36/48 = 3/4 ; 20/45 = 4/9 ; 63/72 = 7/8\n2) 5/6 = 25/30 ; 5/6 = 30/36\n\nExercice 2\n1) Remise : 2 000 × 15 ÷ 100 = 300 MRU ; nouveau prix : 1 700 MRU\n2) Augmentation : 3 200 × 5 ÷ 100 = 160 MRU ; nouveau loyer : 3 360 MRU\n\nExercice 3\n1) T̂ = 180° − (66° + 68°) = 46° ; le triangle est quelconque.\n2) (180° − 50°) ÷ 2 = 65° pour chacun des angles à la base.\n\nExercice 4\n1) P = 2 × (25 + 19) = 88 m ; A = 25 × 19 = 475 m²\n2) 88 × 250 = 22 000 MRU\n3) 475 × 3/5 = 285 m²\n4) 2/5 = 40 %"
+    },
+    {
+     "title": "Proposition 6 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Fraction d'une quantité\n1) Calculer les 2/5 de 65.\n2) Calculer les 2/5 de 3 600 MRU.\n3) Dans une classe de 56 élèves, les 3/8 sont des garçons. Combien y a-t-il de garçons ? de filles ?\n\nExercice 2 : Tableau de proportionnalité\nLe prix du riz est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 2 | 5 | 4 | …\nPrix (MRU) : 90 | … | … | 1 125\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Construire un triangle et le reconnaître\n1) Construire un triangle DEF tel que DE = DF = 8,5 cm et EF = 9,5 cm. Quelle est sa nature ?\n2) Construire un triangle équilatéral FED de côté 9,5 cm. Combien mesure chacun de ses angles ?\n3) Calculer le périmètre de chacun des deux triangles.\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 18 000 MRU. Elle dépense le 1/4 pour la nourriture, le 1/10 pour le loyer et épargne 15 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\n1) 65 ÷ 5 × 2 = 26\n2) 3 600 ÷ 5 × 2 = 1 440 MRU\n3) Garçons : 56 ÷ 8 × 3 = 21 ; filles : 56 − 21 = 35\n\nExercice 2\nPrix d'un kilogramme : 90 ÷ 2 = 45 MRU (coefficient 45)\n5 kg → 225 MRU ; 4 kg → 180 MRU ; 1 125 ÷ 45 = 25 kg\n\nExercice 3\n1) DE = DF : triangle isocèle en D.\n2) Chaque angle mesure 60°.\n3) Périmètres : 8,5 + 8,5 + 9,5 = 26,5 cm et 3 × 9,5 = 28,5 cm\n\nExercice 4\n1) Nourriture : 18 000 × 1/4 = 4 500 MRU ; loyer : 18 000 × 1/10 = 1 800 MRU ; épargne : 18 000 × 15 ÷ 100 = 2 700 MRU\n2) 18 000 − (4 500 + 1 800 + 2 700) = 9 000 MRU\n3) 9 000/18 000 = 1/2"
+    },
+    {
+     "title": "Proposition 7 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Fraction d'une quantité\n1) Calculer les 2/3 de 42.\n2) Calculer les 2/5 de 2 100 MRU.\n3) Dans une classe de 36 élèves, les 4/9 sont des garçons. Combien y a-t-il de garçons ? de filles ?\n\nExercice 2 : Tableau de proportionnalité\nLe prix du lait en poudre est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 6 | 8 | 3 | …\nPrix (MRU) : 420 | … | … | 1 260\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle IJK, on a : Î = 44° et Ĵ = 61°. Calculer K̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 40°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 35 m de long et 12 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 250 MRU le mètre. Calculer la dépense.\n3) Les 2/5 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 42 ÷ 3 × 2 = 28\n2) 2 100 ÷ 5 × 2 = 840 MRU\n3) Garçons : 36 ÷ 9 × 4 = 16 ; filles : 36 − 16 = 20\n\nExercice 2\nPrix d'un kilogramme : 420 ÷ 6 = 70 MRU (coefficient 70)\n8 kg → 560 MRU ; 3 kg → 210 MRU ; 1 260 ÷ 70 = 18 kg\n\nExercice 3\n1) K̂ = 180° − (44° + 61°) = 75° ; le triangle est quelconque.\n2) (180° − 40°) ÷ 2 = 70° pour chacun des angles à la base.\n\nExercice 4\n1) P = 2 × (35 + 12) = 94 m ; A = 35 × 12 = 420 m²\n2) 94 × 250 = 23 500 MRU\n3) 420 × 2/5 = 168 m²\n4) 3/5 = 60 %"
+    },
+    {
+     "title": "Proposition 8 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Comparer des fractions\nComparer :\na) 7/10 et 3/10\nb) 6/10 et 6/14\nc) 12/6 et 1\nd) 1/3 et 3/12\n\nExercice 2 : Tableau de proportionnalité\nLe prix du dattes est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 6 | 2 | 10 | …\nPrix (MRU) : 480 | … | … | 1 680\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Cercle et disque\nUn cercle a pour rayon 9 cm. On prend π ≈ 3,14.\n1) Calculer son diamètre.\n2) Calculer son périmètre.\n3) Calculer l'aire du disque correspondant.\n\nExercice 4 : Situation d'intégration : le bassin circulaire\nUne place publique possède un bassin circulaire de 3 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 300 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "Exercice 1\na) 7/10 > 3/10 (même dénominateur)\nb) 6/10 > 6/14 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 12/6 > 1 (numérateur > dénominateur)\nd) 1/3 = 4/12 donc 1/3 > 3/12\n\nExercice 2\nPrix d'un kilogramme : 480 ÷ 6 = 80 MRU (coefficient 80)\n2 kg → 160 MRU ; 10 kg → 800 MRU ; 1 680 ÷ 80 = 21 kg\n\nExercice 3\n1) d = 2 × 9 = 18 cm\n2) P = 2 × 3,14 × 9 = 56,52 cm\n3) A = 3,14 × 9 × 9 = 254,34 cm²\n\nExercice 4\n1) 2 × 3,14 × 3 = 18,84 m\n2) 18,84 × 300 = 5 652 MRU\n3) 3,14 × 3 × 3 = 28,26 m²"
+    },
+    {
+     "title": "Proposition 9 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Comparer des fractions\nComparer :\na) 7/8 et 5/8\nb) 2/3 et 2/5\nc) 6/2 et 1\nd) 3/4 et 11/16\n\nExercice 2 : Échelle d'une carte\nUne carte est à l'échelle 1/100 000.\n1) Deux villages sont distants de 3 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 6 km. Quelle distance les sépare sur la carte ?\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle DEF, on a : D̂ = 52° et Ê = 50°. Calculer F̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 50°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 15 000 MRU. Elle dépense le 1/3 pour la nourriture, le 1/10 pour le loyer et épargne 15 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\na) 7/8 > 5/8 (même dénominateur)\nb) 2/3 > 2/5 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 6/2 > 1 (numérateur > dénominateur)\nd) 3/4 = 12/16 donc 3/4 > 11/16\n\nExercice 2\n1) 3 × 100 000 = 300 000 cm = 3 km\n2) 6 km = 600 000 cm ; 600 000 ÷ 100 000 = 6 cm\n\nExercice 3\n1) F̂ = 180° − (52° + 50°) = 78° ; le triangle est quelconque.\n2) (180° − 50°) ÷ 2 = 65° pour chacun des angles à la base.\n\nExercice 4\n1) Nourriture : 15 000 × 1/3 = 5 000 MRU ; loyer : 15 000 × 1/10 = 1 500 MRU ; épargne : 15 000 × 15 ÷ 100 = 2 250 MRU\n2) 15 000 − (5 000 + 1 500 + 2 250) = 6 250 MRU\n3) 6 250/15 000 = 5/12"
+    },
+    {
+     "title": "Proposition 10 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Addition et soustraction de fractions\nCalculer et simplifier si possible :\na) 1/5 + 2/5\nb) 7/8 − 3/8\nc) 1/2 + 3/4\nd) 6/8 − 1/4\n\nExercice 2 : Calculer un pourcentage\n1) Un article coûte 2 400 MRU. Le vendeur accorde une remise de 15 %. Calculer la remise puis le nouveau prix.\n2) Un loyer de 1 500 MRU augmente de 10 %. Calculer le nouveau loyer.\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle PQR, on a : P̂ = 64° et Q̂ = 64°. Calculer R̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 70°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le bassin circulaire\nUne place publique possède un bassin circulaire de 6 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 500 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "Exercice 1\na) 3/5\nb) 4/8 = 1/2\nc) 2/4 + 3/4 = 5/4\nd) 6/8 − 2/8 = 4/8 = 1/2\n\nExercice 2\n1) Remise : 2 400 × 15 ÷ 100 = 360 MRU ; nouveau prix : 2 040 MRU\n2) Augmentation : 1 500 × 10 ÷ 100 = 150 MRU ; nouveau loyer : 1 650 MRU\n\nExercice 3\n1) R̂ = 180° − (64° + 64°) = 52° ; le triangle est isocèle.\n2) (180° − 70°) ÷ 2 = 55° pour chacun des angles à la base.\n\nExercice 4\n1) 2 × 3,14 × 6 = 37,68 m\n2) 37,68 × 500 = 18 840 MRU\n3) 3,14 × 6 × 6 = 113,04 m²"
+    },
+    {
+     "title": "Proposition 11 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Comparer des fractions\nComparer :\na) 4/7 et 2/7\nb) 7/8 et 7/10\nc) 7/5 et 1\nd) 4/5 et 15/20\n\nExercice 2 : Échelle d'une carte\nUne carte est à l'échelle 1/25 000.\n1) Deux villages sont distants de 3 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 2 km. Quelle distance les sépare sur la carte ?\n\nExercice 3 : Construire un triangle et le reconnaître\n1) Construire un triangle DEF tel que DE = DF = 5 cm et EF = 6 cm. Quelle est sa nature ?\n2) Construire un triangle équilatéral FED de côté 6 cm. Combien mesure chacun de ses angles ?\n3) Calculer le périmètre de chacun des deux triangles.\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 24 000 MRU. Elle dépense le 1/4 pour la nourriture, le 1/5 pour le loyer et épargne 10 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\na) 4/7 > 2/7 (même dénominateur)\nb) 7/8 > 7/10 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 7/5 > 1 (numérateur > dénominateur)\nd) 4/5 = 16/20 donc 4/5 > 15/20\n\nExercice 2\n1) 3 × 25 000 = 75 000 cm = 0,75 km\n2) 2 km = 200 000 cm ; 200 000 ÷ 25 000 = 8 cm\n\nExercice 3\n1) DE = DF : triangle isocèle en D.\n2) Chaque angle mesure 60°.\n3) Périmètres : 5 + 5 + 6 = 16 cm et 3 × 6 = 18 cm\n\nExercice 4\n1) Nourriture : 24 000 × 1/4 = 6 000 MRU ; loyer : 24 000 × 1/5 = 4 800 MRU ; épargne : 24 000 × 10 ÷ 100 = 2 400 MRU\n2) 24 000 − (6 000 + 4 800 + 2 400) = 10 800 MRU\n3) 10 800/24 000 = 9/20"
+    },
+    {
+     "title": "Proposition 12 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Comparer des fractions\nComparer :\na) 7/9 et 2/9\nb) 3/4 et 3/8\nc) 5/3 et 1\nd) 2/3 et 7/12\n\nExercice 2 : Exprimer un pourcentage\n1) Un collège compte 1 200 élèves dont 180 filles. Quel est le pourcentage de filles ? de garçons ?\n2) Un élève a obtenu 12 bonnes réponses sur 20 questions. Exprimer ce résultat en pourcentage.\n\nExercice 3 : Le parallélogramme\nRSTU est un parallélogramme tel que RS = 5 cm, ST = 6 cm et ∠URS = 60°.\n1) Calculer TU et RU. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠RST, ∠STU et ∠TUR.\n4) Les diagonales se coupent en O. Que représente O pour [RT] et [SU] ?\n\nExercice 4 : Situation d'intégration : le commerçant\nUn commerçant achète 16 sacs de riz à 1 250 MRU le sac. Le transport lui coûte 600 MRU. Il revend chaque sac à 1 350 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 3/8 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondi au dixième).",
+     "solution": "Exercice 1\na) 7/9 > 2/9 (même dénominateur)\nb) 3/4 > 3/8 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 5/3 > 1 (numérateur > dénominateur)\nd) 2/3 = 8/12 donc 2/3 > 7/12\n\nExercice 2\n1) Filles : 180 ÷ 1 200 × 100 = 15 % ; garçons : 100 − 15 = 85 %\n2) 12 ÷ 20 × 100 = 60 %\n\nExercice 3\n1) Les côtés opposés ont même longueur : TU = 5 cm ; RU = 6 cm\n2) 2 × (5 + 6) = 22 cm\n3) Deux angles consécutifs sont supplémentaires : ∠RST = 180° − 60° = 120° ; angles opposés égaux : ∠STU = 60° ; ∠TUR = 120°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) 16 × 1 250 + 600 = 20 000 + 600 = 20 600 MRU\n2) 16 × 3/8 = 6 sacs ; 6 × 1 350 = 8 100 MRU\n3) Recette : 16 × 1 350 = 21 600 MRU ; bénéfice : 21 600 − 20 600 = 1 000 MRU\n4) 1 000 ÷ 20 600 × 100 ≈ 4,9 %"
+    },
+    {
+     "title": "Proposition 13 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Simplifier des fractions\n1) Simplifier : 40/90 ; 8/20 ; 8/20.\n2) Compléter : 5/6 = …/18  ;  5/6 = 20/…\n\nExercice 2 : Exprimer un pourcentage\n1) Un collège compte 800 élèves dont 320 filles. Quel est le pourcentage de filles ? de garçons ?\n2) Un élève a obtenu 20 bonnes réponses sur 50 questions. Exprimer ce résultat en pourcentage.\n\nExercice 3 : Le parallélogramme\nMNPQ est un parallélogramme tel que MN = 6 cm, NP = 8 cm et ∠QMN = 75°.\n1) Calculer PQ et MQ. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠MNP, ∠NPQ et ∠PQM.\n4) Les diagonales se coupent en O. Que représente O pour [MP] et [NQ] ?\n\nExercice 4 : Situation d'intégration : le commerçant\nUn commerçant achète 16 sacs de riz à 1 150 MRU le sac. Le transport lui coûte 400 MRU. Il revend chaque sac à 1 350 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 5/8 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondi au dixième).",
+     "solution": "Exercice 1\n1) 40/90 = 4/9 ; 8/20 = 2/5 ; 8/20 = 2/5\n2) 5/6 = 15/18 ; 5/6 = 20/24\n\nExercice 2\n1) Filles : 320 ÷ 800 × 100 = 40 % ; garçons : 100 − 40 = 60 %\n2) 20 ÷ 50 × 100 = 40 %\n\nExercice 3\n1) Les côtés opposés ont même longueur : PQ = 6 cm ; MQ = 8 cm\n2) 2 × (6 + 8) = 28 cm\n3) Deux angles consécutifs sont supplémentaires : ∠MNP = 180° − 75° = 105° ; angles opposés égaux : ∠NPQ = 75° ; ∠PQM = 105°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) 16 × 1 150 + 400 = 18 400 + 400 = 18 800 MRU\n2) 16 × 5/8 = 10 sacs ; 10 × 1 350 = 13 500 MRU\n3) Recette : 16 × 1 350 = 21 600 MRU ; bénéfice : 21 600 − 18 800 = 2 800 MRU\n4) 2 800 ÷ 18 800 × 100 ≈ 14,9 %"
+    },
+    {
+     "title": "Proposition 14 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Fraction d'une quantité\n1) Calculer les 3/4 de 52.\n2) Calculer le 1/4 de 1 960 MRU.\n3) Dans une classe de 48 élèves, les 5/12 sont des garçons. Combien y a-t-il de garçons ? de filles ?\n\nExercice 2 : Tableau de proportionnalité\nLe prix du dattes est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 4 | 5 | 8 | …\nPrix (MRU) : 480 | … | … | 1 680\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Périmètre et aire à partir du diamètre\nUne roue de vélo a un diamètre de 21 cm. On prend π ≈ 3,14.\n1) Calculer son rayon.\n2) Quelle distance parcourt la roue en un tour ?\n3) Quelle distance parcourt-elle en 100 tours (en m) ?\n\nExercice 4 : Situation d'intégration : le bassin circulaire\nUne place publique possède un bassin circulaire de 4 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 500 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "Exercice 1\n1) 52 ÷ 4 × 3 = 39\n2) 1 960 ÷ 4 × 1 = 490 MRU\n3) Garçons : 48 ÷ 12 × 5 = 20 ; filles : 48 − 20 = 28\n\nExercice 2\nPrix d'un kilogramme : 480 ÷ 4 = 120 MRU (coefficient 120)\n5 kg → 600 MRU ; 8 kg → 960 MRU ; 1 680 ÷ 120 = 14 kg\n\nExercice 3\n1) r = 21 ÷ 2 = 10,5 cm\n2) P = 3,14 × 21 = 65,94 cm\n3) 100 × 65,94 = 6 594 cm = 65,94 m\n\nExercice 4\n1) 2 × 3,14 × 4 = 25,12 m\n2) 25,12 × 500 = 12 560 MRU\n3) 3,14 × 4 × 4 = 50,24 m²"
+    },
+    {
+     "title": "Proposition 15 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Addition et soustraction de fractions\nCalculer et simplifier si possible :\na) 6/11 + 2/11\nb) 8/10 − 3/10\nc) 2/4 + 8/12\nd) 5/6 − 1/3\n\nExercice 2 : Échelle d'une carte\nUne carte est à l'échelle 1/50 000.\n1) Deux villages sont distants de 7 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 5 km. Quelle distance les sépare sur la carte ?\n\nExercice 3 : Le parallélogramme\nMNPQ est un parallélogramme tel que MN = 5 cm, NP = 4,5 cm et ∠QMN = 120°.\n1) Calculer PQ et MQ. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠MNP, ∠NPQ et ∠PQM.\n4) Les diagonales se coupent en O. Que représente O pour [MP] et [NQ] ?\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 15 000 MRU. Elle dépense le 1/4 pour la nourriture, le 1/6 pour le loyer et épargne 20 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\na) 8/11\nb) 5/10 = 1/2\nc) 6/12 + 8/12 = 14/12 = 7/6\nd) 5/6 − 2/6 = 3/6 = 1/2\n\nExercice 2\n1) 7 × 50 000 = 350 000 cm = 3,5 km\n2) 5 km = 500 000 cm ; 500 000 ÷ 50 000 = 10 cm\n\nExercice 3\n1) Les côtés opposés ont même longueur : PQ = 5 cm ; MQ = 4,5 cm\n2) 2 × (5 + 4,5) = 19 cm\n3) Deux angles consécutifs sont supplémentaires : ∠MNP = 180° − 120° = 60° ; angles opposés égaux : ∠NPQ = 120° ; ∠PQM = 60°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) Nourriture : 15 000 × 1/4 = 3 750 MRU ; loyer : 15 000 × 1/6 = 2 500 MRU ; épargne : 15 000 × 20 ÷ 100 = 3 000 MRU\n2) 15 000 − (3 750 + 2 500 + 3 000) = 5 750 MRU\n3) 5 750/15 000 = 23/60"
+    },
+    {
+     "title": "Proposition 16 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Simplifier des fractions\n1) Simplifier : 50/60 ; 36/48 ; 8/12.\n2) Compléter : 5/6 = …/30  ;  5/6 = 30/…\n\nExercice 2 : Tableau de proportionnalité\nLe prix du lait en poudre est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 3 | 6 | 4 | …\nPrix (MRU) : 180 | … | … | 1 080\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle DEF, on a : D̂ = 43° et Ê = 91°. Calculer F̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 40°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 12 000 MRU. Elle dépense le 1/4 pour la nourriture, le 1/10 pour le loyer et épargne 20 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\n1) 50/60 = 5/6 ; 36/48 = 3/4 ; 8/12 = 2/3\n2) 5/6 = 25/30 ; 5/6 = 30/36\n\nExercice 2\nPrix d'un kilogramme : 180 ÷ 3 = 60 MRU (coefficient 60)\n6 kg → 360 MRU ; 4 kg → 240 MRU ; 1 080 ÷ 60 = 18 kg\n\nExercice 3\n1) F̂ = 180° − (43° + 91°) = 46° ; le triangle est quelconque.\n2) (180° − 40°) ÷ 2 = 70° pour chacun des angles à la base.\n\nExercice 4\n1) Nourriture : 12 000 × 1/4 = 3 000 MRU ; loyer : 12 000 × 1/10 = 1 200 MRU ; épargne : 12 000 × 20 ÷ 100 = 2 400 MRU\n2) 12 000 − (3 000 + 1 200 + 2 400) = 5 400 MRU\n3) 5 400/12 000 = 9/20"
+    },
+    {
+     "title": "Proposition 17 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Fraction d'une quantité\n1) Calculer les 5/6 de 66.\n2) Calculer le 1/4 de 2 960 MRU.\n3) Dans une classe de 25 élèves, les 2/5 sont des garçons. Combien y a-t-il de garçons ? de filles ?\n\nExercice 2 : Exprimer un pourcentage\n1) Un collège compte 500 élèves dont 175 filles. Quel est le pourcentage de filles ? de garçons ?\n2) Un élève a obtenu 12 bonnes réponses sur 20 questions. Exprimer ce résultat en pourcentage.\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle ABC, on a : Â = 55° et B̂ = 70°. Calculer Ĉ. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 40°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le bassin circulaire\nUne place publique possède un bassin circulaire de 3 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 300 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "Exercice 1\n1) 66 ÷ 6 × 5 = 55\n2) 2 960 ÷ 4 × 1 = 740 MRU\n3) Garçons : 25 ÷ 5 × 2 = 10 ; filles : 25 − 10 = 15\n\nExercice 2\n1) Filles : 175 ÷ 500 × 100 = 35 % ; garçons : 100 − 35 = 65 %\n2) 12 ÷ 20 × 100 = 60 %\n\nExercice 3\n1) Ĉ = 180° − (55° + 70°) = 55° ; le triangle est isocèle.\n2) (180° − 40°) ÷ 2 = 70° pour chacun des angles à la base.\n\nExercice 4\n1) 2 × 3,14 × 3 = 18,84 m\n2) 18,84 × 300 = 5 652 MRU\n3) 3,14 × 3 × 3 = 28,26 m²"
+    },
+    {
+     "title": "Proposition 18 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Comparer des fractions\nComparer :\na) 10/11 et 4/11\nb) 7/8 et 7/13\nc) 7/6 et 1\nd) 1/3 et 3/12\n\nExercice 2 : Exprimer un pourcentage\n1) Un collège compte 400 élèves dont 140 filles. Quel est le pourcentage de filles ? de garçons ?\n2) Un élève a obtenu 32 bonnes réponses sur 40 questions. Exprimer ce résultat en pourcentage.\n\nExercice 3 : Le parallélogramme\nEFGH est un parallélogramme tel que EF = 6,5 cm, FG = 6,5 cm et ∠HEF = 75°.\n1) Calculer GH et EH. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠EFG, ∠FGH et ∠GHE.\n4) Les diagonales se coupent en O. Que représente O pour [EG] et [FH] ?\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 32 m de long et 19 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 200 MRU le mètre. Calculer la dépense.\n3) Les 3/8 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\na) 10/11 > 4/11 (même dénominateur)\nb) 7/8 > 7/13 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 7/6 > 1 (numérateur > dénominateur)\nd) 1/3 = 4/12 donc 1/3 > 3/12\n\nExercice 2\n1) Filles : 140 ÷ 400 × 100 = 35 % ; garçons : 100 − 35 = 65 %\n2) 32 ÷ 40 × 100 = 80 %\n\nExercice 3\n1) Les côtés opposés ont même longueur : GH = 6,5 cm ; EH = 6,5 cm\n2) 2 × (6,5 + 6,5) = 26 cm\n3) Deux angles consécutifs sont supplémentaires : ∠EFG = 180° − 75° = 105° ; angles opposés égaux : ∠FGH = 75° ; ∠GHE = 105°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) P = 2 × (32 + 19) = 102 m ; A = 32 × 19 = 608 m²\n2) 102 × 200 = 20 400 MRU\n3) 608 × 3/8 = 228 m²\n4) 5/8 = 62,5 %"
+    },
+    {
+     "title": "Proposition 19 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Comparer des fractions\nComparer :\na) 7/12 et 6/12\nb) 4/9 et 4/10\nc) 11/6 et 1\nd) 1/5 et 3/10\n\nExercice 2 : Échelle d'une carte\nUne carte est à l'échelle 1/200 000.\n1) Deux villages sont distants de 3 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 18 km. Quelle distance les sépare sur la carte ?\n\nExercice 3 : Le parallélogramme\nMNPQ est un parallélogramme tel que MN = 10 cm, NP = 8 cm et ∠QMN = 110°.\n1) Calculer PQ et MQ. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠MNP, ∠NPQ et ∠PQM.\n4) Les diagonales se coupent en O. Que représente O pour [MP] et [NQ] ?\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 24 000 MRU. Elle dépense les 2/5 pour la nourriture, le 1/10 pour le loyer et épargne 15 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\na) 7/12 > 6/12 (même dénominateur)\nb) 4/9 > 4/10 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 11/6 > 1 (numérateur > dénominateur)\nd) 1/5 = 2/10 donc 1/5 < 3/10\n\nExercice 2\n1) 3 × 200 000 = 600 000 cm = 6 km\n2) 18 km = 1 800 000 cm ; 1 800 000 ÷ 200 000 = 9 cm\n\nExercice 3\n1) Les côtés opposés ont même longueur : PQ = 10 cm ; MQ = 8 cm\n2) 2 × (10 + 8) = 36 cm\n3) Deux angles consécutifs sont supplémentaires : ∠MNP = 180° − 110° = 70° ; angles opposés égaux : ∠NPQ = 110° ; ∠PQM = 70°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) Nourriture : 24 000 × 2/5 = 9 600 MRU ; loyer : 24 000 × 1/10 = 2 400 MRU ; épargne : 24 000 × 15 ÷ 100 = 3 600 MRU\n2) 24 000 − (9 600 + 2 400 + 3 600) = 8 400 MRU\n3) 8 400/24 000 = 7/20"
+    },
+    {
+     "title": "Proposition 20 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Comparer des fractions\nComparer :\na) 6/9 et 1/9\nb) 6/7 et 6/14\nc) 9/7 et 1\nd) 2/4 et 7/16\n\nExercice 2 : Calculer un pourcentage\n1) Un article coûte 2 000 MRU. Le vendeur accorde une remise de 15 %. Calculer la remise puis le nouveau prix.\n2) Un loyer de 1 500 MRU augmente de 10 %. Calculer le nouveau loyer.\n\nExercice 3 : Construire un triangle et le reconnaître\n1) Construire un triangle DEF tel que DE = DF = 4 cm et EF = 5 cm. Quelle est sa nature ?\n2) Construire un triangle équilatéral FED de côté 5 cm. Combien mesure chacun de ses angles ?\n3) Calculer le périmètre de chacun des deux triangles.\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 35 m de long et 18 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 200 MRU le mètre. Calculer la dépense.\n3) Les 3/5 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\na) 6/9 > 1/9 (même dénominateur)\nb) 6/7 > 6/14 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 9/7 > 1 (numérateur > dénominateur)\nd) 2/4 = 8/16 donc 2/4 > 7/16\n\nExercice 2\n1) Remise : 2 000 × 15 ÷ 100 = 300 MRU ; nouveau prix : 1 700 MRU\n2) Augmentation : 1 500 × 10 ÷ 100 = 150 MRU ; nouveau loyer : 1 650 MRU\n\nExercice 3\n1) DE = DF : triangle isocèle en D.\n2) Chaque angle mesure 60°.\n3) Périmètres : 4 + 4 + 5 = 13 cm et 3 × 5 = 15 cm\n\nExercice 4\n1) P = 2 × (35 + 18) = 106 m ; A = 35 × 18 = 630 m²\n2) 106 × 200 = 21 200 MRU\n3) 630 × 3/5 = 378 m²\n4) 2/5 = 40 %"
+    }
+   ]
+  },
+  {
+   "week": "Juin S3",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du 3e trimestre",
+   "covers": [
+    "Statistique",
+    "Cube et pavé droit",
+    "Révision de l'année"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique : notes d'un devoir\nVoici les notes de 25 élèves :\n7 ; 17 ; 17 ; 17 ; 14 ; 14 ; 14 ; 7 ; 16 ; 8 ; 16 ; 16 ; 17 ; 17 ; 14 ; 16 ; 17 ; 14 ; 17 ; 14 ; 16 ; 8 ; 7 ; 14 ; 7\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la (les) note(s) la (les) plus fréquente(s) ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 14 ?\n\nExercice 2 : Division euclidienne\n1) Effectuer la division euclidienne de 2 032 par 8 et écrire l'égalité correspondante.\n2) Même question pour 555 et 24.\n3) Quel est le plus petit nombre à ajouter à 2 032 pour obtenir un multiple de 8 ?\n\nExercice 3 : Retrouver le rayon\nUn cercle a un périmètre de 81,64 cm (π ≈ 3,14).\n1) Calculer son rayon.\n2) Calculer l'aire du disque.\n\nExercice 4 : Situation d'intégration : le bassin circulaire\nUne place publique possède un bassin circulaire de 8 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 400 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "Exercice 1\n1) 7 : 4 ; 8 : 2 ; 14 : 7 ; 16 : 5 ; 17 : 7 (total 25)\n2) 7 : 16 % ; 8 : 8 % ; 14 : 28 % ; 16 : 20 % ; 17 : 28 %\n3) 14 et 17\n4) (7×4 + 8×2 + 14×7 + 16×5 + 17×7) ÷ 25 = 341 ÷ 25 = 13,64\n5) 19 élèves sur 25, soit 76 %\n\nExercice 2\n1) 2 032 = 8 × 254 + 0 (reste 0 < 8)\n2) 555 = 24 × 23 + 3\n3) 2 032 est déjà un multiple de 8 : on ajoute 0.\n\nExercice 3\n1) r = 81,64 ÷ (2 × 3,14) = 13 cm\n2) A = 3,14 × 13 × 13 = 530,66 cm²\n\nExercice 4\n1) 2 × 3,14 × 8 = 50,24 m\n2) 50,24 × 400 = 20 096 MRU\n3) 3,14 × 8 × 8 = 200,96 m²"
+    },
+    {
+     "title": "Proposition 2 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 11 ; Mardi : 10 ; Mercredi : 12 ; Jeudi : 4 ; Vendredi : 2\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Exprimer un pourcentage\n1) Un collège compte 500 élèves dont 275 filles. Quel est le pourcentage de filles ? de garçons ?\n2) Un élève a obtenu 40 bonnes réponses sur 50 questions. Exprimer ce résultat en pourcentage.\n\nExercice 3 : Retrouver le rayon\nUn cercle a un périmètre de 37,68 cm (π ≈ 3,14).\n1) Calculer son rayon.\n2) Calculer l'aire du disque.\n\nExercice 4 : Situation d'intégration : le commerçant\nUn commerçant achète 16 sacs de riz à 1 250 MRU le sac. Le transport lui coûte 600 MRU. Il revend chaque sac à 1 350 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 3/8 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondi au dixième).",
+     "solution": "Exercice 1\n1) 39 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 39 ÷ 5 = 7,8\n4) Mercredi (12) : 12 ÷ 39 × 100 ≈ 30,8 %\n\nExercice 2\n1) Filles : 275 ÷ 500 × 100 = 55 % ; garçons : 100 − 55 = 45 %\n2) 40 ÷ 50 × 100 = 80 %\n\nExercice 3\n1) r = 37,68 ÷ (2 × 3,14) = 6 cm\n2) A = 3,14 × 6 × 6 = 113,04 cm²\n\nExercice 4\n1) 16 × 1 250 + 600 = 20 000 + 600 = 20 600 MRU\n2) 16 × 3/8 = 6 sacs ; 6 × 1 350 = 8 100 MRU\n3) Recette : 16 × 1 350 = 21 600 MRU ; bénéfice : 21 600 − 20 600 = 1 000 MRU\n4) 1 000 ÷ 20 600 × 100 ≈ 4,9 %"
+    },
+    {
+     "title": "Proposition 3 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique : notes d'un devoir\nVoici les notes de 20 élèves :\n9 ; 11 ; 9 ; 9 ; 9 ; 8 ; 13 ; 9 ; 9 ; 9 ; 9 ; 8 ; 13 ; 8 ; 8 ; 8 ; 10 ; 11 ; 8 ; 10\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la (les) note(s) la (les) plus fréquente(s) ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 10 ?\n\nExercice 2 : Tableau de proportionnalité\nLe prix du dattes est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 4 | 8 | 6 | …\nPrix (MRU) : 240 | … | … | 1 320\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Le pavé droit\nUn pavé droit a pour dimensions : longueur 13 cm, largeur 7 cm, hauteur 6 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 32 m de long et 14 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 250 MRU le mètre. Calculer la dépense.\n3) Les 3/8 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 8 : 6 ; 9 : 8 ; 10 : 2 ; 11 : 2 ; 13 : 2 (total 20)\n2) 8 : 30 % ; 9 : 40 % ; 10 : 10 % ; 11 : 10 % ; 13 : 10 %\n3) 9\n4) (8×6 + 9×8 + 10×2 + 11×2 + 13×2) ÷ 20 = 188 ÷ 20 = 9,4\n5) 6 élèves sur 20, soit 30 %\n\nExercice 2\nPrix d'un kilogramme : 240 ÷ 4 = 60 MRU (coefficient 60)\n8 kg → 480 MRU ; 6 kg → 360 MRU ; 1 320 ÷ 60 = 22 kg\n\nExercice 3\n1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 13 × 7 × 6 = 546 cm³\n3) A = 2 × (13×7 + 13×6 + 7×6) = 2 × (91 + 78 + 42) = 422 cm²\n4) 546 cm³ = 0,546 dm³\n\nExercice 4\n1) P = 2 × (32 + 14) = 92 m ; A = 32 × 14 = 448 m²\n2) 92 × 250 = 23 000 MRU\n3) 448 × 3/8 = 168 m²\n4) 5/8 = 62,5 %"
+    },
+    {
+     "title": "Proposition 4 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 11 ; Mardi : 5 ; Mercredi : 3 ; Jeudi : 8 ; Vendredi : 5\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Opérations sur les décimaux\nCalculer :\na) 66,4 + 2,46\nb) 31 − 6,64\nc) 3,6 × 2,7\nd) 1,72 × 10\ne) 771,1 ÷ 10\n\nExercice 3 : Cercle et disque\nUn cercle a pour rayon 4 cm. On prend π ≈ 3,14.\n1) Calculer son diamètre.\n2) Calculer son périmètre.\n3) Calculer l'aire du disque correspondant.\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 2,6 m × 1,3 m × 1,2 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 60 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 250 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 32 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 32 ÷ 5 = 6,4\n4) Lundi (11) : 11 ÷ 32 × 100 ≈ 34,4 %\n\nExercice 2\na) 68,86  b) 24,36  c) 9,72  d) 17,2  e) 77,11\n\nExercice 3\n1) d = 2 × 4 = 8 cm\n2) P = 2 × 3,14 × 4 = 25,12 cm\n3) A = 3,14 × 4 × 4 = 50,24 cm²\n\nExercice 4\n1) V = 2,6 × 1,3 × 1,2 = 4,056 m³ = 4 056 L\n2) 4 056 × 60 ÷ 100 = 2 433,6 L\n3) 2 433,6 ÷ 250 ≈ 9,73 : 9 jours entiers"
+    },
+    {
+     "title": "Proposition 5 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 8 ; Mardi : 12 ; Mercredi : 7 ; Jeudi : 4 ; Vendredi : 3\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Valeurs approchées\nSoit le nombre 32,739.\n1) Donner son arrondi à l'unité, au dixième et au centième.\n2) Donner sa troncature au dixième.\n3) L'encadrer par deux décimaux consécutifs ayant un chiffre après la virgule.\n\nExercice 3 : Le pavé droit\nUn pavé droit a pour dimensions : longueur 14 cm, largeur 6 cm, hauteur 3 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 1,5 m × 1,8 m × 1 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 60 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 150 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 34 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 34 ÷ 5 = 6,8\n4) Mardi (12) : 12 ÷ 34 × 100 ≈ 35,3 %\n\nExercice 2\n1) Unité : 33 ; dixième : 32,7 ; centième : 32,74\n2) Troncature au dixième : 32,7\n3) 32,7 < 32,739 < 32,8\n\nExercice 3\n1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 14 × 6 × 3 = 252 cm³\n3) A = 2 × (14×6 + 14×3 + 6×3) = 2 × (84 + 42 + 18) = 288 cm²\n4) 252 cm³ = 0,252 dm³\n\nExercice 4\n1) V = 1,5 × 1,8 × 1 = 2,7 m³ = 2 700 L\n2) 2 700 × 60 ÷ 100 = 1 620 L\n3) 1 620 ÷ 150 ≈ 10,8 : 10 jours entiers"
+    },
+    {
+     "title": "Proposition 6 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique : notes d'un devoir\nVoici les notes de 25 élèves :\n10 ; 15 ; 15 ; 14 ; 15 ; 14 ; 10 ; 15 ; 10 ; 10 ; 14 ; 15 ; 12 ; 12 ; 12 ; 13 ; 13 ; 14 ; 12 ; 10 ; 10 ; 12 ; 10 ; 14 ; 14\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la (les) note(s) la (les) plus fréquente(s) ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 13 ?\n\nExercice 2 : Tableau de proportionnalité\nLe prix du sucre est proportionnel à la masse achetée. Compléter le tableau :\nMasse (kg) : 8 | 4 | 10 | …\nPrix (MRU) : 480 | … | … | 780\nQuel est le coefficient de proportionnalité ?\n\nExercice 3 : Le parallélogramme\nEFGH est un parallélogramme tel que EF = 7,5 cm, FG = 5,5 cm et ∠HEF = 110°.\n1) Calculer GH et EH. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠EFG, ∠FGH et ∠GHE.\n4) Les diagonales se coupent en O. Que représente O pour [EG] et [FH] ?\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 2,4 m × 1,7 m × 1 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 80 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 250 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 10 : 7 ; 12 : 5 ; 13 : 2 ; 14 : 6 ; 15 : 5 (total 25)\n2) 10 : 28 % ; 12 : 20 % ; 13 : 8 % ; 14 : 24 % ; 15 : 20 %\n3) 10\n4) (10×7 + 12×5 + 13×2 + 14×6 + 15×5) ÷ 25 = 315 ÷ 25 = 12,6\n5) 13 élèves sur 25, soit 52 %\n\nExercice 2\nPrix d'un kilogramme : 480 ÷ 8 = 60 MRU (coefficient 60)\n4 kg → 240 MRU ; 10 kg → 600 MRU ; 780 ÷ 60 = 13 kg\n\nExercice 3\n1) Les côtés opposés ont même longueur : GH = 7,5 cm ; EH = 5,5 cm\n2) 2 × (7,5 + 5,5) = 26 cm\n3) Deux angles consécutifs sont supplémentaires : ∠EFG = 180° − 110° = 70° ; angles opposés égaux : ∠FGH = 110° ; ∠GHE = 70°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) V = 2,4 × 1,7 × 1 = 4,08 m³ = 4 080 L\n2) 4 080 × 80 ÷ 100 = 3 264 L\n3) 3 264 ÷ 250 ≈ 13,06 : 13 jours entiers"
+    },
+    {
+     "title": "Proposition 7 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique : notes d'un devoir\nVoici les notes de 20 élèves :\n12 ; 6 ; 6 ; 6 ; 12 ; 12 ; 11 ; 12 ; 11 ; 12 ; 17 ; 12 ; 6 ; 6 ; 10 ; 6 ; 12 ; 11 ; 11 ; 6\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la (les) note(s) la (les) plus fréquente(s) ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 11 ?\n\nExercice 2 : Comparer des fractions\nComparer :\na) 5/6 et 2/6\nb) 2/3 et 2/5\nc) 11/4 et 1\nd) 1/4 et 4/12\n\nExercice 3 : Périmètre et aire à partir du diamètre\nUne roue de vélo a un diamètre de 8 cm. On prend π ≈ 3,14.\n1) Calculer son rayon.\n2) Quelle distance parcourt la roue en un tour ?\n3) Quelle distance parcourt-elle en 100 tours (en m) ?\n\nExercice 4 : Situation d'intégration : le commerçant\nUn commerçant achète 40 sacs de riz à 1 300 MRU le sac. Le transport lui coûte 400 MRU. Il revend chaque sac à 1 400 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend le 1/2 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondi au dixième).",
+     "solution": "Exercice 1\n1) 6 : 7 ; 10 : 1 ; 11 : 4 ; 12 : 7 ; 17 : 1 (total 20)\n2) 6 : 35 % ; 10 : 5 % ; 11 : 20 % ; 12 : 35 % ; 17 : 5 %\n3) 6 et 12\n4) (6×7 + 10×1 + 11×4 + 12×7 + 17×1) ÷ 20 = 197 ÷ 20 = 9,85\n5) 12 élèves sur 20, soit 60 %\n\nExercice 2\na) 5/6 > 2/6 (même dénominateur)\nb) 2/3 > 2/5 (même numérateur : le plus petit dénominateur donne la plus grande fraction)\nc) 11/4 > 1 (numérateur > dénominateur)\nd) 1/4 = 3/12 donc 1/4 < 4/12\n\nExercice 3\n1) r = 8 ÷ 2 = 4 cm\n2) P = 3,14 × 8 = 25,12 cm\n3) 100 × 25,12 = 2 512 cm = 25,12 m\n\nExercice 4\n1) 40 × 1 300 + 400 = 52 000 + 400 = 52 400 MRU\n2) 40 × 1/2 = 20 sacs ; 20 × 1 400 = 28 000 MRU\n3) Recette : 40 × 1 400 = 56 000 MRU ; bénéfice : 56 000 − 52 400 = 3 600 MRU\n4) 3 600 ÷ 52 400 × 100 ≈ 6,9 %"
+    },
+    {
+     "title": "Proposition 8 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 7 ; Mardi : 2 ; Mercredi : 2 ; Jeudi : 3 ; Vendredi : 9\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Échelle d'une carte\nUne carte est à l'échelle 1/50 000.\n1) Deux villages sont distants de 11 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 1 km. Quelle distance les sépare sur la carte ?\n\nExercice 3 : Le cube\nUn cube a une arête de 6 cm.\n1) Calculer la longueur totale de ses arêtes.\n2) Calculer l'aire d'une face, puis l'aire totale.\n3) Calculer son volume.\n4) On double l'arête. Par combien est multiplié le volume ?\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 2,6 m × 1,9 m × 1,2 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 60 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 250 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 23 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 23 ÷ 5 = 4,6\n4) Vendredi (9) : 9 ÷ 23 × 100 ≈ 39,1 %\n\nExercice 2\n1) 11 × 50 000 = 550 000 cm = 5,5 km\n2) 1 km = 100 000 cm ; 100 000 ÷ 50 000 = 2 cm\n\nExercice 3\n1) 12 × 6 = 72 cm\n2) Face : 6 × 6 = 36 cm² ; totale : 6 × 36 = 216 cm²\n3) V = 6³ = 216 cm³\n4) Nouvelle arête 12 cm : V = 1728 cm³, le volume est multiplié par 8.\n\nExercice 4\n1) V = 2,6 × 1,9 × 1,2 = 5,928 m³ = 5 928 L\n2) 5 928 × 60 ÷ 100 = 3 556,8 L\n3) 3 556,8 ÷ 250 ≈ 14,23 : 14 jours entiers"
+    },
+    {
+     "title": "Proposition 9 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 8 ; Mardi : 7 ; Mercredi : 4 ; Jeudi : 8 ; Vendredi : 3\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Calculs sur les entiers naturels\nCalculer :\na = 272 + 92 − 69\nb = 25 × 4 × 29\nc = 872 ÷ 4\nd = 7 000 − 272\n\nExercice 3 : Le parallélogramme\nEFGH est un parallélogramme tel que EF = 8 cm, FG = 6 cm et ∠HEF = 65°.\n1) Calculer GH et EH. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠EFG, ∠FGH et ∠GHE.\n4) Les diagonales se coupent en O. Que représente O pour [EG] et [FH] ?\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 3 m × 1 m × 1,2 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 80 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 120 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 30 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 30 ÷ 5 = 6\n4) Lundi (8) : 8 ÷ 30 × 100 ≈ 26,7 %\n\nExercice 2\na = 364 − 69 = 295\nb = 100 × 29 = 2 900\nc = 218\nd = 6 728\n\nExercice 3\n1) Les côtés opposés ont même longueur : GH = 8 cm ; EH = 6 cm\n2) 2 × (8 + 6) = 28 cm\n3) Deux angles consécutifs sont supplémentaires : ∠EFG = 180° − 65° = 115° ; angles opposés égaux : ∠FGH = 65° ; ∠GHE = 115°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) V = 3 × 1 × 1,2 = 3,6 m³ = 3 600 L\n2) 3 600 × 80 ÷ 100 = 2 880 L\n3) 2 880 ÷ 120 = 24 : 24 jours entiers"
+    },
+    {
+     "title": "Proposition 10 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 6 ; Mardi : 7 ; Mercredi : 10 ; Jeudi : 3 ; Vendredi : 8\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Addition et soustraction de fractions\nCalculer et simplifier si possible :\na) 6/8 + 1/8\nb) 9/10 − 7/10\nc) 1/2 + 3/6\nd) 5/8 − 1/4\n\nExercice 3 : Le pavé droit\nUn pavé droit a pour dimensions : longueur 8 cm, largeur 10 cm, hauteur 6 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 30 000 MRU. Elle dépense les 2/5 pour la nourriture, le 1/10 pour le loyer et épargne 10 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\n1) 34 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 34 ÷ 5 = 6,8\n4) Mercredi (10) : 10 ÷ 34 × 100 ≈ 29,4 %\n\nExercice 2\na) 7/8\nb) 2/10 = 1/5\nc) 3/6 + 3/6 = 6/6 = 1\nd) 5/8 − 2/8 = 3/8\n\nExercice 3\n1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 8 × 10 × 6 = 480 cm³\n3) A = 2 × (8×10 + 8×6 + 10×6) = 2 × (80 + 48 + 60) = 376 cm²\n4) 480 cm³ = 0,48 dm³\n\nExercice 4\n1) Nourriture : 30 000 × 2/5 = 12 000 MRU ; loyer : 30 000 × 1/10 = 3 000 MRU ; épargne : 30 000 × 10 ÷ 100 = 3 000 MRU\n2) 30 000 − (12 000 + 3 000 + 3 000) = 12 000 MRU\n3) 12 000/30 000 = 2/5"
+    },
+    {
+     "title": "Proposition 11 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 4 ; Mardi : 10 ; Mercredi : 4 ; Jeudi : 2 ; Vendredi : 7\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Fraction d'une quantité\n1) Calculer les 3/4 de 44.\n2) Calculer le 1/3 de 2 280 MRU.\n3) Dans une classe de 20 élèves, les 2/5 sont des garçons. Combien y a-t-il de garçons ? de filles ?\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle EFG, on a : Ê = 48° et F̂ = 68°. Calculer Ĝ. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 30°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 2,4 m × 1,8 m × 1,3 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 90 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 150 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 27 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 27 ÷ 5 = 5,4\n4) Mardi (10) : 10 ÷ 27 × 100 ≈ 37 %\n\nExercice 2\n1) 44 ÷ 4 × 3 = 33\n2) 2 280 ÷ 3 × 1 = 760 MRU\n3) Garçons : 20 ÷ 5 × 2 = 8 ; filles : 20 − 8 = 12\n\nExercice 3\n1) Ĝ = 180° − (48° + 68°) = 64° ; le triangle est quelconque.\n2) (180° − 30°) ÷ 2 = 75° pour chacun des angles à la base.\n\nExercice 4\n1) V = 2,4 × 1,8 × 1,3 = 5,616 m³ = 5 616 L\n2) 5 616 × 90 ÷ 100 = 5 054,4 L\n3) 5 054,4 ÷ 150 ≈ 33,7 : 33 jours entiers"
+    },
+    {
+     "title": "Proposition 12 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique : notes d'un devoir\nVoici les notes de 20 élèves :\n11 ; 7 ; 10 ; 11 ; 15 ; 10 ; 10 ; 11 ; 12 ; 12 ; 10 ; 10 ; 10 ; 7 ; 12 ; 12 ; 15 ; 15 ; 11 ; 10\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la (les) note(s) la (les) plus fréquente(s) ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 11 ?\n\nExercice 2 : Comparer et ranger des décimaux\nRanger dans l'ordre croissant :\n19,99 ; 20,03 ; 20,302 ; 20,032 ; 20,3\nPuis encadrer 20,032 par deux entiers consécutifs.\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle EFG, on a : Ê = 77° et F̂ = 25°. Calculer Ĝ. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 70°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 2,5 m × 1 m × 1,5 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 60 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 200 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 7 : 2 ; 10 : 7 ; 11 : 4 ; 12 : 4 ; 15 : 3 (total 20)\n2) 7 : 10 % ; 10 : 35 % ; 11 : 20 % ; 12 : 20 % ; 15 : 15 %\n3) 10\n4) (7×2 + 10×7 + 11×4 + 12×4 + 15×3) ÷ 20 = 221 ÷ 20 = 11,05\n5) 11 élèves sur 20, soit 55 %\n\nExercice 2\n19,99 < 20,03 < 20,032 < 20,3 < 20,302\n20 < 20,032 < 21\n\nExercice 3\n1) Ĝ = 180° − (77° + 25°) = 78° ; le triangle est quelconque.\n2) (180° − 70°) ÷ 2 = 55° pour chacun des angles à la base.\n\nExercice 4\n1) V = 2,5 × 1 × 1,5 = 3,75 m³ = 3 750 L\n2) 3 750 × 60 ÷ 100 = 2 250 L\n3) 2 250 ÷ 200 ≈ 11,25 : 11 jours entiers"
+    },
+    {
+     "title": "Proposition 13 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 6 ; Mardi : 4 ; Mercredi : 5 ; Jeudi : 3 ; Vendredi : 11\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Échelle d'une carte\nUne carte est à l'échelle 1/200 000.\n1) Deux villages sont distants de 12 cm sur la carte. Quelle est la distance réelle en km ?\n2) Deux villes sont distantes de 6 km. Quelle distance les sépare sur la carte ?\n\nExercice 3 : Retrouver le rayon\nUn cercle a un périmètre de 69,08 cm (π ≈ 3,14).\n1) Calculer son rayon.\n2) Calculer l'aire du disque.\n\nExercice 4 : Situation d'intégration : le budget familial\nLe revenu mensuel d'une famille est de 24 000 MRU. Elle dépense le 1/3 pour la nourriture, le 1/6 pour le loyer et épargne 10 % du revenu.\n1) Calculer chacune de ces sommes.\n2) Quelle somme reste-t-il pour les autres dépenses ?\n3) Quelle fraction du revenu cette somme représente-t-elle ?",
+     "solution": "Exercice 1\n1) 29 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 29 ÷ 5 = 5,8\n4) Vendredi (11) : 11 ÷ 29 × 100 ≈ 37,9 %\n\nExercice 2\n1) 12 × 200 000 = 2 400 000 cm = 24 km\n2) 6 km = 600 000 cm ; 600 000 ÷ 200 000 = 3 cm\n\nExercice 3\n1) r = 69,08 ÷ (2 × 3,14) = 11 cm\n2) A = 3,14 × 11 × 11 = 379,94 cm²\n\nExercice 4\n1) Nourriture : 24 000 × 1/3 = 8 000 MRU ; loyer : 24 000 × 1/6 = 4 000 MRU ; épargne : 24 000 × 10 ÷ 100 = 2 400 MRU\n2) 24 000 − (8 000 + 4 000 + 2 400) = 9 600 MRU\n3) 9 600/24 000 = 2/5"
+    },
+    {
+     "title": "Proposition 14 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 10 ; Mardi : 5 ; Mercredi : 3 ; Jeudi : 2 ; Vendredi : 4\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Priorités opératoires\nCalculer en respectant les priorités :\nA = 5 + 4 × 4\nB = (5 + 4) × 4\nC = 79 − 36 ÷ 6 + 8\nD = 6 × (14 − 2) − 4 × 2\n\nExercice 3 : Le pavé droit\nUn pavé droit a pour dimensions : longueur 12 cm, largeur 7 cm, hauteur 7 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.\n\nExercice 4 : Situation d'intégration : le commerçant\nUn commerçant achète 16 sacs de riz à 1 250 MRU le sac. Le transport lui coûte 500 MRU. Il revend chaque sac à 1 400 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 3/8 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondi au dixième).",
+     "solution": "Exercice 1\n1) 24 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 24 ÷ 5 = 4,8\n4) Lundi (10) : 10 ÷ 24 × 100 ≈ 41,7 %\n\nExercice 2\nA = 5 + 16 = 21\nB = 9 × 4 = 36\nC = 79 − 6 + 8 = 81\nD = 6 × 12 − 8 = 72 − 8 = 64\n\nExercice 3\n1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 12 × 7 × 7 = 588 cm³\n3) A = 2 × (12×7 + 12×7 + 7×7) = 2 × (84 + 84 + 49) = 434 cm²\n4) 588 cm³ = 0,588 dm³\n\nExercice 4\n1) 16 × 1 250 + 500 = 20 000 + 500 = 20 500 MRU\n2) 16 × 3/8 = 6 sacs ; 6 × 1 400 = 8 400 MRU\n3) Recette : 16 × 1 400 = 22 400 MRU ; bénéfice : 22 400 − 20 500 = 1 900 MRU\n4) 1 900 ÷ 20 500 × 100 ≈ 9,3 %"
+    },
+    {
+     "title": "Proposition 15 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique : notes d'un devoir\nVoici les notes de 25 élèves :\n8 ; 10 ; 14 ; 8 ; 8 ; 15 ; 14 ; 14 ; 14 ; 8 ; 10 ; 15 ; 10 ; 10 ; 14 ; 10 ; 8 ; 10 ; 15 ; 14 ; 11 ; 8 ; 10 ; 14 ; 14\n1) Dresser le tableau des effectifs.\n2) Calculer la fréquence de chaque note en pourcentage.\n3) Quelle est la (les) note(s) la (les) plus fréquente(s) ?\n4) Calculer la moyenne de la classe.\n5) Quel pourcentage d'élèves a obtenu au moins 11 ?\n\nExercice 2 : Opérations sur les décimaux\nCalculer :\na) 99,3 + 8,45\nb) 21 − 3,6\nc) 3,9 × 3,6\nd) 6,85 × 1 000\ne) 931,8 ÷ 10\n\nExercice 3 : Le pavé droit\nUn pavé droit a pour dimensions : longueur 8 cm, largeur 6 cm, hauteur 2 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 22 m de long et 15 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 200 MRU le mètre. Calculer la dépense.\n3) Les 3/5 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 8 : 6 ; 10 : 7 ; 11 : 1 ; 14 : 8 ; 15 : 3 (total 25)\n2) 8 : 24 % ; 10 : 28 % ; 11 : 4 % ; 14 : 32 % ; 15 : 12 %\n3) 14\n4) (8×6 + 10×7 + 11×1 + 14×8 + 15×3) ÷ 25 = 286 ÷ 25 = 11,44\n5) 12 élèves sur 25, soit 48 %\n\nExercice 2\na) 107,75  b) 17,4  c) 14,04  d) 6 850  e) 93,18\n\nExercice 3\n1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 8 × 6 × 2 = 96 cm³\n3) A = 2 × (8×6 + 8×2 + 6×2) = 2 × (48 + 16 + 12) = 152 cm²\n4) 96 cm³ = 0,096 dm³\n\nExercice 4\n1) P = 2 × (22 + 15) = 74 m ; A = 22 × 15 = 330 m²\n2) 74 × 200 = 14 800 MRU\n3) 330 × 3/5 = 198 m²\n4) 2/5 = 40 %"
+    },
+    {
+     "title": "Proposition 16 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 10 ; Mardi : 5 ; Mercredi : 2 ; Jeudi : 5 ; Vendredi : 9\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Priorités opératoires\nCalculer en respectant les priorités :\nA = 23 + 7 × 5\nB = (23 + 7) × 5\nC = 63 − 24 ÷ 4 + 9\nD = 3 × (15 − 1) − 5 × 3\n\nExercice 3 : Le parallélogramme\nABCD est un parallélogramme tel que AB = 10 cm, BC = 6 cm et ∠DAB = 60°.\n1) Calculer CD et AD. Justifier.\n2) Calculer le périmètre du parallélogramme.\n3) Calculer les angles ∠ABC, ∠BCD et ∠CDA.\n4) Les diagonales se coupent en O. Que représente O pour [AC] et [BD] ?\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 28 m de long et 15 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 250 MRU le mètre. Calculer la dépense.\n3) Le 1/4 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 31 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 31 ÷ 5 = 6,2\n4) Lundi (10) : 10 ÷ 31 × 100 ≈ 32,3 %\n\nExercice 2\nA = 23 + 35 = 58\nB = 30 × 5 = 150\nC = 63 − 6 + 9 = 66\nD = 3 × 14 − 15 = 42 − 15 = 27\n\nExercice 3\n1) Les côtés opposés ont même longueur : CD = 10 cm ; AD = 6 cm\n2) 2 × (10 + 6) = 32 cm\n3) Deux angles consécutifs sont supplémentaires : ∠ABC = 180° − 60° = 120° ; angles opposés égaux : ∠BCD = 60° ; ∠CDA = 120°\n4) O est le milieu commun des deux diagonales.\n\nExercice 4\n1) P = 2 × (28 + 15) = 86 m ; A = 28 × 15 = 420 m²\n2) 86 × 250 = 21 500 MRU\n3) 420 × 1/4 = 105 m²\n4) 3/4 = 75 %"
+    },
+    {
+     "title": "Proposition 17 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 4 ; Mardi : 3 ; Mercredi : 5 ; Jeudi : 9 ; Vendredi : 4\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Priorités opératoires\nCalculer en respectant les priorités :\nA = 14 + 8 × 9\nB = (14 + 8) × 9\nC = 58 − 4 ÷ 2 + 1\nD = 7 × (15 − 1) − 2 × 2\n\nExercice 3 : Le pavé droit\nUn pavé droit a pour dimensions : longueur 12 cm, largeur 8 cm, hauteur 8 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.\n\nExercice 4 : Situation d'intégration : le bassin circulaire\nUne place publique possède un bassin circulaire de 3 m de rayon (π ≈ 3,14).\n1) Calculer la longueur du bord du bassin.\n2) On pose une bordure qui coûte 500 MRU le mètre. Calculer le prix de la bordure.\n3) Calculer l'aire du fond du bassin.",
+     "solution": "Exercice 1\n1) 25 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 25 ÷ 5 = 5\n4) Jeudi (9) : 9 ÷ 25 × 100 ≈ 36 %\n\nExercice 2\nA = 14 + 72 = 86\nB = 22 × 9 = 198\nC = 58 − 2 + 1 = 57\nD = 7 × 14 − 4 = 98 − 4 = 94\n\nExercice 3\n1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 12 × 8 × 8 = 768 cm³\n3) A = 2 × (12×8 + 12×8 + 8×8) = 2 × (96 + 96 + 64) = 512 cm²\n4) 768 cm³ = 0,768 dm³\n\nExercice 4\n1) 2 × 3,14 × 3 = 18,84 m\n2) 18,84 × 500 = 9 420 MRU\n3) 3,14 × 3 × 3 = 28,26 m²"
+    },
+    {
+     "title": "Proposition 18 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 7 ; Mardi : 3 ; Mercredi : 10 ; Jeudi : 3 ; Vendredi : 10\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Calculs sur les entiers naturels\nCalculer :\na = 282 + 50 − 13\nb = 25 × 4 × 37\nc = 4 860 ÷ 12\nd = 6 000 − 282\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle ABC, on a : Â = 64° et B̂ = 45°. Calculer Ĉ. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 40°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le jardin de l'école\nLe jardin de l'école est un rectangle de 30 m de long et 8 m de large.\n1) Calculer son périmètre et son aire.\n2) On veut l'entourer d'un grillage qui coûte 200 MRU le mètre. Calculer la dépense.\n3) Les 3/5 de la surface sont plantés de légumes. Calculer l'aire plantée.\n4) Quel pourcentage de la surface reste non planté ?",
+     "solution": "Exercice 1\n1) 33 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 33 ÷ 5 = 6,6\n4) Mercredi (10) : 10 ÷ 33 × 100 ≈ 30,3 %\n\nExercice 2\na = 332 − 13 = 319\nb = 100 × 37 = 3 700\nc = 405\nd = 5 718\n\nExercice 3\n1) Ĉ = 180° − (64° + 45°) = 71° ; le triangle est quelconque.\n2) (180° − 40°) ÷ 2 = 70° pour chacun des angles à la base.\n\nExercice 4\n1) P = 2 × (30 + 8) = 76 m ; A = 30 × 8 = 240 m²\n2) 76 × 200 = 15 200 MRU\n3) 240 × 3/5 = 144 m²\n4) 2/5 = 40 %"
+    },
+    {
+     "title": "Proposition 19 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 2 ; Mardi : 3 ; Mercredi : 3 ; Jeudi : 11 ; Vendredi : 11\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Simplifier des fractions\n1) Simplifier : 60/84 ; 63/72 ; 20/28.\n2) Compléter : 3/4 = …/12  ;  3/4 = 12/…\n\nExercice 3 : Le pavé droit\nUn pavé droit a pour dimensions : longueur 10 cm, largeur 3 cm, hauteur 7 cm.\n1) Combien a-t-il de faces, d'arêtes et de sommets ?\n2) Calculer son volume.\n3) Calculer l'aire totale de ses faces.\n4) Convertir le volume en dm³.\n\nExercice 4 : Situation d'intégration : le commerçant\nUn commerçant achète 40 sacs de riz à 1 250 MRU le sac. Le transport lui coûte 800 MRU. Il revend chaque sac à 1 450 MRU.\n1) Calculer le coût total de l'achat.\n2) Le premier mois, il vend les 3/4 des sacs. Combien de sacs a-t-il vendus ? Quelle somme a-t-il encaissée ?\n3) Il vend ensuite le reste au même prix. Calculer son bénéfice total.\n4) Exprimer ce bénéfice en pourcentage du coût total (arrondi au dixième).",
+     "solution": "Exercice 1\n1) 30 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 30 ÷ 5 = 6\n4) Jeudi (11) : 11 ÷ 30 × 100 ≈ 36,7 %\n\nExercice 2\n1) 60/84 = 5/7 ; 63/72 = 7/8 ; 20/28 = 5/7\n2) 3/4 = 9/12 ; 3/4 = 12/16\n\nExercice 3\n1) 6 faces, 12 arêtes, 8 sommets.\n2) V = 10 × 3 × 7 = 210 cm³\n3) A = 2 × (10×3 + 10×7 + 3×7) = 2 × (30 + 70 + 21) = 242 cm²\n4) 210 cm³ = 0,21 dm³\n\nExercice 4\n1) 40 × 1 250 + 800 = 50 000 + 800 = 50 800 MRU\n2) 40 × 3/4 = 30 sacs ; 30 × 1 450 = 43 500 MRU\n3) Recette : 40 × 1 450 = 58 000 MRU ; bénéfice : 58 000 − 50 800 = 7 200 MRU\n4) 7 200 ÷ 50 800 × 100 ≈ 14,2 %"
+    },
+    {
+     "title": "Proposition 20 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Lecture et représentation de données\nLe nombre d'absences dans un collège pendant une semaine est :\nLundi : 6 ; Mardi : 5 ; Mercredi : 4 ; Jeudi : 8 ; Vendredi : 8\n1) Calculer le nombre total d'absences.\n2) Représenter ces données par un diagramme en bâtons.\n3) Calculer la moyenne d'absences par jour.\n4) Quel jour a le plus d'absences ? Quel pourcentage du total représente-t-il ?\n\nExercice 2 : Écriture des nombres décimaux\n1) Décomposer 260,781 selon la valeur de ses chiffres.\n2) Écrire en chiffres :\na) 11 unités et 1 centièmes ;\nb) 236 millièmes.\n3) Donner la partie entière et la partie décimale de 260,781.\n\nExercice 3 : Somme des angles d'un triangle\n1) Dans le triangle PQR, on a : P̂ = 44° et Q̂ = 82°. Calculer R̂. Quelle est la nature du triangle ?\n2) Un triangle isocèle a un angle au sommet principal de 40°. Calculer les deux angles à la base.\n\nExercice 4 : Situation d'intégration : le réservoir d'eau\nLe réservoir d'eau d'une famille a la forme d'un pavé droit de 2,5 m × 1,3 m × 1,4 m.\n1) Calculer son volume en m³ puis en litres (1 m³ = 1 000 L).\n2) Il est rempli à 80 %. Quelle quantité d'eau contient-il ?\n3) La famille consomme 250 L par jour. Pendant combien de jours entiers peut-elle tenir sans nouvel apport ?",
+     "solution": "Exercice 1\n1) 31 absences\n2) Un bâton par jour, de hauteur égale au nombre d'absences.\n3) 31 ÷ 5 = 6,2\n4) Jeudi (8) : 8 ÷ 31 × 100 ≈ 25,8 %\n\nExercice 2\n1) 260,781 = 2 × 100 + 6 × 10 + 0 + 7/10 + 8/100 + 1/1 000\n2) a) 11,01  b) 0,236\n3) Partie entière : 260 ; partie décimale : 0,781\n\nExercice 3\n1) R̂ = 180° − (44° + 82°) = 54° ; le triangle est quelconque.\n2) (180° − 40°) ÷ 2 = 70° pour chacun des angles à la base.\n\nExercice 4\n1) V = 2,5 × 1,3 × 1,4 = 4,55 m³ = 4 550 L\n2) 4 550 × 80 ÷ 100 = 3 640 L\n3) 3 640 ÷ 250 ≈ 14,56 : 14 jours entiers"
+    }
+   ]
+  }
+ ]
+}

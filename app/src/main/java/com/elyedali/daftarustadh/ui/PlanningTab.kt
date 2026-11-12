@@ -81,6 +81,13 @@ fun PlanningTab(
     val holiday = stringResource(R.string.plan_holiday)
     // دروس الكتاب المرتبطة بعناوين التخطيط (محتوى الكتاب، السبورة، التحضير)
     val lessonSet = remember(subject, levelCode) { subject?.let { com.elyedali.daftarustadh.data.LessonBank.load(context, it, levelCode) } }
+    // سلاسل التمارين ومقترحات الامتحانات لأسابيع الإدماج والتقويم والامتحان
+    val practice = remember(subject, levelCode) { subject?.let { com.elyedali.daftarustadh.data.PracticeBank.load(context, it, levelCode) } }
+    var openedPractice by remember { mutableStateOf<com.elyedali.daftarustadh.data.PracticeBlock?>(null) }
+    openedPractice?.let { b ->
+        com.elyedali.daftarustadh.ui.PracticeDialog(b, practice?.lang ?: "ar",
+            available.firstOrNull { it.first == subject }?.second.orEmpty()) { openedPractice = null }
+    }
     var opened by remember { mutableStateOf<Pair<com.elyedali.daftarustadh.data.BookLesson, String>?>(null) }
     opened?.let { (l, week) ->
         LessonDialog(l, available.firstOrNull { it.first == subject }?.second.orEmpty(), week,
@@ -202,6 +209,18 @@ fun PlanningTab(
                                     .clickable { opened = l to r.label }.padding(vertical = 2.dp))
                             else Text("• $item", fontSize = 13.sp, color = fg,
                                 fontWeight = if (r.kind == "lesson") FontWeight.Normal else FontWeight.Bold)
+                        }
+                        // زر السلسلة أو مقترحات الامتحان لهذا الأسبوع
+                        val ps = practice
+                        ps?.forWeek(r.label)?.takeIf { r.kind != "lesson" }?.let { b ->
+                            val lang = ps.lang
+                            val label = when {
+                                b.kind == "exam" -> when (lang) { "fr" -> "📄 Propositions d'examen"; "en" -> "📄 Exam proposals"; else -> "📄 مقترحات الامتحان" }
+                                else -> when (lang) { "fr" -> "📝 Série d'exercices"; "en" -> "📝 Exercise series"; else -> "📝 سلسلة التمارين" }
+                            } + " (${b.items.size})"
+                            Text(label, fontSize = 13.sp, fontWeight = FontWeight.Black, color = Color.White,
+                                modifier = Modifier.padding(top = 4.dp).clip(RoundedCornerShape(8.dp)).background(fg)
+                                    .clickable { openedPractice = b }.padding(horizontal = 10.dp, vertical = 6.dp))
                         }
                     }
                 }

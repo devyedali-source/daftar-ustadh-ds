@@ -68,5 +68,6 @@ S1 = {
  ]
 }
 assert len(S1["items"]) == 20
-json.dump({"subject": "MATS", "level": "1AS", "lang": "fr", "series": [S1], "exams": []},
+if __name__ == "__main__":
+  json.dump({"subject": "MATS", "level": "1AS", "lang": "fr", "series": [S1], "exams": []},
           open("MATS_1AS.json", "w"), ensure_ascii=False, indent=1)
