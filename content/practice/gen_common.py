@@ -20,6 +20,7 @@ def stations(subject, level):
 def draw(bank_items, n, seed, used, partial=False):
     """n عنصر مختلف من قائمة عناصر/قوالب (القالب دالة تأخذ مولّدًا عشوائيًا)."""
     r = random.Random(seed); out = []; pool = list(bank_items); r.shuffle(pool); i = 0; guard = 0
+    if not pool: assert partial, 'empty bank'; return out
     while len(out) < n and guard < 5000:
         guard += 1
         it = pool[i % len(pool)]; i += 1

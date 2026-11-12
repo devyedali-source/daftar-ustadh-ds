@@ -1,0 +1,1057 @@
+{
+ "subject": "SN",
+ "level": "3AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Semaine 7",
+   "term": 1,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Appareil génital mâle : organisation, coupe de testicule, puberté, spermatozoïde",
+    "Appareil génital femelle : organisation, coupe d’ovaire, puberté, ovocyte",
+    "Fécondation : définition, conditions, étapes, zygote",
+    "Hygiène : IST et SIDA",
+    "Mesures de protection de l’appareil génital"
+   ],
+   "items": [
+    {
+     "title": "Conditions de la fécondation",
+     "text": "Citer deux conditions nécessaires à la fécondation.",
+     "solution": "La présence d'un ovocyte dans la trompe (période de l'ovulation) et de spermatozoïdes mobiles et en nombre suffisant."
+    },
+    {
+     "title": "Rôle de la testostérone",
+     "text": "1) Où est produite la testostérone ?\n2) Citer deux de ses effets.",
+     "solution": "1) Dans les testicules.\n2) Apparition des caractères sexuels secondaires (barbe, voix grave, musculature) et production de spermatozoïdes."
+    },
+    {
+     "title": "L'ovocyte",
+     "text": "Comparer l'ovocyte et le spermatozoïde (taille, mobilité, nombre produit).",
+     "solution": "L'ovocyte est gros, immobile, libéré un par cycle ; le spermatozoïde est très petit, mobile, produit par millions."
+    },
+    {
+     "title": "L'appareil génital masculin",
+     "text": "Citer les organes de l'appareil génital masculin et le rôle des testicules.",
+     "solution": "Testicules, épididymes, canaux déférents, vésicules séminales, prostate, urètre, pénis.\nLes testicules produisent les spermatozoïdes et l'hormone masculine (testostérone)."
+    },
+    {
+     "title": "Calcul de dates",
+     "text": "Un cycle de 28 jours commence le 1er mars. Quelle est la date probable de l'ovulation ?",
+     "solution": "Le 14 mars environ."
+    },
+    {
+     "title": "Coupe de testicule",
+     "text": "Dans quelle partie du testicule se forment les spermatozoïdes ? Où sont-ils stockés ?",
+     "solution": "Dans les tubes séminifères ; ils sont stockés dans l'épididyme."
+    },
+    {
+     "title": "Le sida",
+     "text": "1) Quel virus provoque le sida ?\n2) Citer ses modes de transmission.\n3) Le sida se transmet-il en serrant la main ?",
+     "solution": "1) Le VIH.\n2) Rapports sexuels non protégés, sang contaminé (seringues, objets tranchants), de la mère à l'enfant.\n3) Non."
+    },
+    {
+     "title": "Grossesse",
+     "text": "1) Quelle est la durée moyenne d'une grossesse ?\n2) Comment l'embryon reçoit-il nourriture et dioxygène ?\n3) Pourquoi la femme enceinte doit-elle éviter le tabac et les médicaments sans avis médical ?",
+     "solution": "1) Environ 9 mois (38 à 40 semaines).\n2) Par le placenta et le cordon ombilical.\n3) Ces substances passent au fœtus par le placenta et peuvent lui nuire."
+    },
+    {
+     "title": "Trajet de l'ovocyte",
+     "text": "Ranger dans l'ordre : utérus, ovaire, trompe. Où l'ovocyte peut-il rencontrer les spermatozoïdes ?",
+     "solution": "Ovaire → trompe → utérus. La rencontre a lieu dans la trompe."
+    },
+    {
+     "title": "La puberté chez la fille",
+     "text": "Citer trois transformations de la puberté chez la fille.",
+     "solution": "Développement des seins, élargissement du bassin, apparition des poils, début des règles."
+    },
+    {
+     "title": "Les IST",
+     "text": "1) Que signifie IST ?\n2) Citer deux IST.\n3) Comment s'en protéger ?",
+     "solution": "1) Infections sexuellement transmissibles.\n2) Le sida (VIH), la syphilis, la gonococcie, l'hépatite B.\n3) Fidélité, abstinence, préservatif, dépistage et traitement."
+    },
+    {
+     "title": "Le cycle féminin",
+     "text": "1) Quelle est la durée moyenne d'un cycle menstruel ?\n2) Vers quel jour a lieu l'ovulation ?\n3) Que sont les règles ?",
+     "solution": "1) Environ 28 jours.\n2) Vers le 14e jour.\n3) L'élimination de la muqueuse utérine avec du sang, en l'absence de fécondation."
+    },
+    {
+     "title": "Coupe d'ovaire",
+     "text": "Que contiennent les follicules de l'ovaire ? Que se passe-t-il lors de l'ovulation ?",
+     "solution": "Ils contiennent chacun un ovocyte en développement. À l'ovulation, un follicule mûr se rompt et libère son ovocyte."
+    },
+    {
+     "title": "Jumeaux",
+     "text": "Expliquer la différence entre de vrais jumeaux et de faux jumeaux.",
+     "solution": "Vrais jumeaux : une seule cellule-œuf qui se sépare en deux (identiques). Faux jumeaux : deux ovocytes fécondés par deux spermatozoïdes différents."
+    },
+    {
+     "title": "La puberté chez le garçon",
+     "text": "Citer trois transformations qui apparaissent à la puberté chez le garçon.",
+     "solution": "Mue de la voix, apparition de la barbe et des poils, développement des organes génitaux et de la musculature, production de spermatozoïdes."
+    },
+    {
+     "title": "La fécondation chez l'homme",
+     "text": "1) Où a lieu la fécondation ?\n2) Que devient la cellule-œuf ?\n3) Où se fixe l'embryon ?",
+     "solution": "1) Dans la trompe (tiers supérieur).\n2) Elle se divise et devient un embryon.\n3) Dans la muqueuse de l'utérus (nidation)."
+    },
+    {
+     "title": "Trajet des spermatozoïdes",
+     "text": "Ranger dans l'ordre le trajet des spermatozoïdes depuis leur lieu de production : urètre, testicule, canal déférent, épididyme.",
+     "solution": "Testicule → épididyme → canal déférent → urètre."
+    },
+    {
+     "title": "Le spermatozoïde",
+     "text": "Schématiser et légender un spermatozoïde. Quel est le rôle du flagelle ?",
+     "solution": "Tête (avec le noyau), pièce intermédiaire, flagelle.\nLe flagelle permet le déplacement du spermatozoïde."
+    },
+    {
+     "title": "L'appareil génital féminin",
+     "text": "Citer les organes de l'appareil génital féminin et le rôle de l'ovaire et de l'utérus.",
+     "solution": "Ovaires, trompes, utérus, vagin.\nOvaire : produit les ovocytes et les hormones féminines ; utérus : accueille et nourrit l'embryon."
+    },
+    {
+     "title": "Protéger l'appareil génital",
+     "text": "Citer trois mesures d'hygiène de l'appareil génital.",
+     "solution": "Toilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Système nerveux central : encéphale, moelle épinière",
+    "Système nerveux périphérique : nerfs (types et rôles)",
+    "Neurone : structure et propriétés",
+    "Réflexe inné et arc réflexe",
+    "Hygiène du système nerveux"
+   ],
+   "items": [
+    {
+     "title": "Les nerfs",
+     "text": "1) Différencier nerf sensitif et nerf moteur.\n2) Comment appelle-t-on un nerf qui contient les deux types de fibres ?",
+     "solution": "1) Sensitif : conduit le message des organes des sens vers les centres nerveux ; moteur : des centres vers les muscles.\n2) Un nerf mixte."
+    },
+    {
+     "title": "Le neurone",
+     "text": "Nommer les parties d'un neurone et indiquer le sens de circulation du message nerveux.",
+     "solution": "Corps cellulaire (avec noyau), dendrites, axone, arborisation terminale.\nDendrites → corps cellulaire → axone."
+    },
+    {
+     "title": "Réflexe ou acte volontaire ?",
+     "text": "Classer : cligner des yeux devant un objet qui approche ; écrire une lettre ; retirer le pied d'une épine ; réciter une sourate.",
+     "solution": "Réflexes : clignement, retrait du pied.\nVolontaires : écrire, réciter."
+    },
+    {
+     "title": "Accident et paralysie",
+     "text": "Une personne a la moelle épinière sectionnée au niveau du dos. Pourquoi ne peut-elle plus bouger les jambes ?",
+     "solution": "Les messages nerveux du cerveau ne peuvent plus passer vers les nerfs des jambes (et inversement)."
+    },
+    {
+     "title": "Vitesse du message nerveux",
+     "text": "Un message nerveux parcourt 1,2 m en 0,02 s. Calculer sa vitesse.",
+     "solution": "v = 1,2 ÷ 0,02 = 60 m/s."
+    },
+    {
+     "title": "Le sommeil",
+     "text": "Un élève de 14 ans dort 6 h par nuit au lieu des 9 h conseillées.\n1) Calculer le déficit de sommeil sur une semaine.\n2) Quelles conséquences sur ses études ?",
+     "solution": "1) (9 − 6) × 7 = 21 h.\n2) Fatigue, baisse d'attention et de mémoire, mauvais résultats."
+    },
+    {
+     "title": "Protéger son système nerveux",
+     "text": "Citer quatre règles d'hygiène du système nerveux.",
+     "solution": "Dormir suffisamment, éviter les drogues, l'alcool et le tabac, gérer le stress, porter un casque à moto, avoir une alimentation équilibrée."
+    },
+    {
+     "title": "Rôles de l'encéphale",
+     "text": "Associer : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Cerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Le système nerveux central",
+     "text": "1) Quels organes forment le système nerveux central ?\n2) Comment sont-ils protégés ?\n3) Quelle partie de l'encéphale contrôle l'équilibre ?",
+     "solution": "1) L'encéphale (cerveau, cervelet, bulbe rachidien) et la moelle épinière.\n2) Par le crâne, la colonne vertébrale et les méninges.\n3) Le cervelet."
+    },
+    {
+     "title": "Le réflexe",
+     "text": "1) Définir un réflexe inné.\n2) Citer les éléments d'un arc réflexe.\n3) Donner un exemple.",
+     "solution": "1) Une réponse involontaire, rapide et automatique à une stimulation.\n2) Récepteur, nerf sensitif, centre nerveux (moelle épinière), nerf moteur, effecteur (muscle).\n3) Retirer la main d'un objet brûlant, le réflexe rotulien."
+    },
+    {
+     "title": "Grossesse",
+     "text": "1) Quelle est la durée moyenne d'une grossesse ?\n2) Comment l'embryon reçoit-il nourriture et dioxygène ?\n3) Pourquoi la femme enceinte doit-elle éviter le tabac et les médicaments sans avis médical ?",
+     "solution": "1) Environ 9 mois (38 à 40 semaines).\n2) Par le placenta et le cordon ombilical.\n3) Ces substances passent au fœtus par le placenta et peuvent lui nuire."
+    },
+    {
+     "title": "Coupe d'ovaire",
+     "text": "Que contiennent les follicules de l'ovaire ? Que se passe-t-il lors de l'ovulation ?",
+     "solution": "Ils contiennent chacun un ovocyte en développement. À l'ovulation, un follicule mûr se rompt et libère son ovocyte."
+    },
+    {
+     "title": "Coupe de testicule",
+     "text": "Dans quelle partie du testicule se forment les spermatozoïdes ? Où sont-ils stockés ?",
+     "solution": "Dans les tubes séminifères ; ils sont stockés dans l'épididyme."
+    },
+    {
+     "title": "La puberté chez la fille",
+     "text": "Citer trois transformations de la puberté chez la fille.",
+     "solution": "Développement des seins, élargissement du bassin, apparition des poils, début des règles."
+    },
+    {
+     "title": "La puberté chez le garçon",
+     "text": "Citer trois transformations qui apparaissent à la puberté chez le garçon.",
+     "solution": "Mue de la voix, apparition de la barbe et des poils, développement des organes génitaux et de la musculature, production de spermatozoïdes."
+    },
+    {
+     "title": "L'ovocyte",
+     "text": "Comparer l'ovocyte et le spermatozoïde (taille, mobilité, nombre produit).",
+     "solution": "L'ovocyte est gros, immobile, libéré un par cycle ; le spermatozoïde est très petit, mobile, produit par millions."
+    },
+    {
+     "title": "Trajet des spermatozoïdes",
+     "text": "Ranger dans l'ordre le trajet des spermatozoïdes depuis leur lieu de production : urètre, testicule, canal déférent, épididyme.",
+     "solution": "Testicule → épididyme → canal déférent → urètre."
+    },
+    {
+     "title": "Rôle de la testostérone",
+     "text": "1) Où est produite la testostérone ?\n2) Citer deux de ses effets.",
+     "solution": "1) Dans les testicules.\n2) Apparition des caractères sexuels secondaires (barbe, voix grave, musculature) et production de spermatozoïdes."
+    },
+    {
+     "title": "Conditions de la fécondation",
+     "text": "Citer deux conditions nécessaires à la fécondation.",
+     "solution": "La présence d'un ovocyte dans la trompe (période de l'ovulation) et de spermatozoïdes mobiles et en nombre suffisant."
+    },
+    {
+     "title": "Protéger l'appareil génital",
+     "text": "Citer trois mesures d'hygiène de l'appareil génital.",
+     "solution": "Toilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 20",
+   "term": 2,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Le squelette : schéma, types d’os",
+    "Os long : structure, composition chimique, croissance",
+    "Muscles striés : structure, formes, propriétés",
+    "Articulations : définition et types",
+    "Hygiène de la motricité : accidents des os, des muscles et des articulations"
+   ],
+   "items": [
+    {
+     "title": "Structure d'un os long",
+     "text": "Nommer les parties d'un os long. Où se trouve la moelle rouge ?",
+     "solution": "Diaphyse, épiphyses, périoste, tissu compact, tissu spongieux, cavité médullaire.\nLa moelle rouge se trouve dans le tissu spongieux des épiphyses."
+    },
+    {
+     "title": "Composition de l'os",
+     "text": "On met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.",
+     "solution": "1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse)."
+    },
+    {
+     "title": "Croissance des os",
+     "text": "Où se fait la croissance en longueur d'un os long ? Pourquoi les enfants doivent-ils consommer du lait ?",
+     "solution": "Au niveau des cartilages de conjugaison. Le lait apporte du calcium nécessaire à la solidité et à la croissance des os."
+    },
+    {
+     "title": "Les articulations",
+     "text": "1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.",
+     "solution": "1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne)."
+    },
+    {
+     "title": "Bonne posture",
+     "text": "Pourquoi faut-il bien se tenir assis et porter le cartable sur les deux épaules ?",
+     "solution": "Pour éviter les déformations de la colonne vertébrale (scoliose) et les douleurs."
+    },
+    {
+     "title": "Les muscles",
+     "text": "1) Citer deux propriétés des muscles.\n2) Comment le muscle est-il fixé à l'os ?\n3) Expliquer le travail du biceps et du triceps lors de la flexion du bras.",
+     "solution": "1) Contractilité et élasticité (excitabilité).\n2) Par des tendons.\n3) Le biceps se contracte (raccourcit) et le triceps se relâche : ils sont antagonistes."
+    },
+    {
+     "title": "Le squelette",
+     "text": "1) Citer trois rôles du squelette.\n2) Citer les trois types d'os selon leur forme avec un exemple.",
+     "solution": "1) Soutien du corps, protection des organes, participation au mouvement.\n2) Os longs (fémur), os courts (vertèbres), os plats (crâne, omoplate)."
+    },
+    {
+     "title": "Accidents de l'appareil locomoteur",
+     "text": "Définir : fracture, entorse, luxation, crampe.",
+     "solution": "Fracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle."
+    },
+    {
+     "title": "Accident et paralysie",
+     "text": "Une personne a la moelle épinière sectionnée au niveau du dos. Pourquoi ne peut-elle plus bouger les jambes ?",
+     "solution": "Les messages nerveux du cerveau ne peuvent plus passer vers les nerfs des jambes (et inversement)."
+    },
+    {
+     "title": "Coupe de testicule",
+     "text": "Dans quelle partie du testicule se forment les spermatozoïdes ? Où sont-ils stockés ?",
+     "solution": "Dans les tubes séminifères ; ils sont stockés dans l'épididyme."
+    },
+    {
+     "title": "Conditions de la fécondation",
+     "text": "Citer deux conditions nécessaires à la fécondation.",
+     "solution": "La présence d'un ovocyte dans la trompe (période de l'ovulation) et de spermatozoïdes mobiles et en nombre suffisant."
+    },
+    {
+     "title": "Trajet de l'ovocyte",
+     "text": "Ranger dans l'ordre : utérus, ovaire, trompe. Où l'ovocyte peut-il rencontrer les spermatozoïdes ?",
+     "solution": "Ovaire → trompe → utérus. La rencontre a lieu dans la trompe."
+    },
+    {
+     "title": "Rôles de l'encéphale",
+     "text": "Associer : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Cerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Protéger l'appareil génital",
+     "text": "Citer trois mesures d'hygiène de l'appareil génital.",
+     "solution": "Toilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque."
+    },
+    {
+     "title": "La puberté chez la fille",
+     "text": "Citer trois transformations de la puberté chez la fille.",
+     "solution": "Développement des seins, élargissement du bassin, apparition des poils, début des règles."
+    },
+    {
+     "title": "L'ovocyte",
+     "text": "Comparer l'ovocyte et le spermatozoïde (taille, mobilité, nombre produit).",
+     "solution": "L'ovocyte est gros, immobile, libéré un par cycle ; le spermatozoïde est très petit, mobile, produit par millions."
+    },
+    {
+     "title": "Le sommeil",
+     "text": "Un élève de 14 ans dort 6 h par nuit au lieu des 9 h conseillées.\n1) Calculer le déficit de sommeil sur une semaine.\n2) Quelles conséquences sur ses études ?",
+     "solution": "1) (9 − 6) × 7 = 21 h.\n2) Fatigue, baisse d'attention et de mémoire, mauvais résultats."
+    },
+    {
+     "title": "Le système nerveux central",
+     "text": "1) Quels organes forment le système nerveux central ?\n2) Comment sont-ils protégés ?\n3) Quelle partie de l'encéphale contrôle l'équilibre ?",
+     "solution": "1) L'encéphale (cerveau, cervelet, bulbe rachidien) et la moelle épinière.\n2) Par le crâne, la colonne vertébrale et les méninges.\n3) Le cervelet."
+    },
+    {
+     "title": "Les nerfs",
+     "text": "1) Différencier nerf sensitif et nerf moteur.\n2) Comment appelle-t-on un nerf qui contient les deux types de fibres ?",
+     "solution": "1) Sensitif : conduit le message des organes des sens vers les centres nerveux ; moteur : des centres vers les muscles.\n2) Un nerf mixte."
+    },
+    {
+     "title": "L'appareil génital masculin",
+     "text": "Citer les organes de l'appareil génital masculin et le rôle des testicules.",
+     "solution": "Testicules, épididymes, canaux déférents, vésicules séminales, prostate, urètre, pénis.\nLes testicules produisent les spermatozoïdes et l'hormone masculine (testostérone)."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 28",
+   "term": 3,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Changements climatiques : causes et conséquences",
+    "Pollution de l’air, du sol, de l’eau et du littoral",
+    "Gestion des déchets",
+    "Catastrophes naturelles",
+    "Évaluation et soutien de l'unité 4",
+    "Roches magmatiques : définition et caractéristiques",
+    "Roches plutoniques : le granite",
+    "Roches volcaniques : le basalte"
+   ],
+   "items": [
+    {
+     "title": "Les changements climatiques",
+     "text": "1) Citer deux causes du réchauffement climatique.\n2) Citer deux conséquences en Mauritanie.",
+     "solution": "1) Les gaz à effet de serre (CO₂) dus aux combustibles fossiles, la déforestation.\n2) Avancée du désert, sécheresses, montée du niveau de la mer menaçant Nouakchott."
+    },
+    {
+     "title": "Classer des roches",
+     "text": "Classer : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.",
+     "solution": "Magmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss."
+    },
+    {
+     "title": "Le granite",
+     "text": "1) Citer les trois minéraux du granite.\n2) Pourquoi ses cristaux sont-ils visibles à l'œil nu ?",
+     "solution": "1) Quartz, feldspath, mica.\n2) Il s'est refroidi lentement en profondeur."
+    },
+    {
+     "title": "Les pollutions",
+     "text": "Pour chaque milieu (air, eau, sol, littoral), citer une source de pollution.",
+     "solution": "Air : fumées des véhicules ; eau : rejets des eaux usées ; sol : sacs plastiques et pesticides ; littoral : hydrocarbures et déchets des bateaux."
+    },
+    {
+     "title": "Catastrophes naturelles",
+     "text": "Citer trois catastrophes naturelles et une mesure de prévention pour chacune.",
+     "solution": "Inondation : éviter de construire dans les zones inondables ; sécheresse : stocker l'eau et le fourrage ; tempête de sable : planter des arbres (ceinture verte)."
+    },
+    {
+     "title": "Trier et recycler",
+     "text": "1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Le magma",
+     "text": "1) Qu'est-ce qu'un magma ?\n2) Où se forme-t-il ?\n3) Que devient-il en refroidissant ?",
+     "solution": "1) Une roche fondue (liquide) très chaude, contenant des gaz.\n2) En profondeur, dans le manteau ou la croûte.\n3) Une roche magmatique."
+    },
+    {
+     "title": "Effet de serre",
+     "text": "Expliquer simplement l'effet de serre. Est-il toujours néfaste ?",
+     "solution": "Certains gaz retiennent la chaleur renvoyée par la Terre. Naturel, il permet la vie ; renforcé par l'homme, il provoque un réchauffement."
+    },
+    {
+     "title": "Les sachets plastiques",
+     "text": "1) Pourquoi les sachets plastiques sont-ils dangereux pour le bétail ?\n2) Quelle mesure la Mauritanie a-t-elle prise ?",
+     "solution": "1) Les animaux les avalent, ce qui bloque leur digestion et peut les tuer.\n2) L'interdiction des sachets plastiques (2013)."
+    },
+    {
+     "title": "Granite ou basalte ?",
+     "text": "On observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.",
+     "solution": "Roche claire à gros cristaux : granite ; roche noire : basalte."
+    },
+    {
+     "title": "Les roches magmatiques",
+     "text": "1) Comment se forment les roches magmatiques ?\n2) Différencier roches plutoniques et volcaniques.",
+     "solution": "1) Par le refroidissement et la solidification d'un magma.\n2) Plutoniques : refroidissement lent en profondeur (gros cristaux) ; volcaniques : refroidissement rapide en surface (petits cristaux ou verre)."
+    },
+    {
+     "title": "Le basalte",
+     "text": "1) Décrire l'aspect du basalte.\n2) Où se forme-t-il ?",
+     "solution": "1) Une roche sombre, compacte, à très petits cristaux.\n2) En surface, par refroidissement rapide de la lave."
+    },
+    {
+     "title": "Les volcans",
+     "text": "1) Citer deux produits émis par un volcan.\n2) Pourquoi la lave refroidit-elle vite ?",
+     "solution": "1) La lave, les gaz, les cendres, les bombes volcaniques.\n2) Elle arrive en surface, au contact de l'air (ou de l'eau) froid."
+    },
+    {
+     "title": "Les articulations",
+     "text": "1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.",
+     "solution": "1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne)."
+    },
+    {
+     "title": "Les nerfs",
+     "text": "1) Différencier nerf sensitif et nerf moteur.\n2) Comment appelle-t-on un nerf qui contient les deux types de fibres ?",
+     "solution": "1) Sensitif : conduit le message des organes des sens vers les centres nerveux ; moteur : des centres vers les muscles.\n2) Un nerf mixte."
+    },
+    {
+     "title": "Croissance des os",
+     "text": "Où se fait la croissance en longueur d'un os long ? Pourquoi les enfants doivent-ils consommer du lait ?",
+     "solution": "Au niveau des cartilages de conjugaison. Le lait apporte du calcium nécessaire à la solidité et à la croissance des os."
+    },
+    {
+     "title": "Le réflexe",
+     "text": "1) Définir un réflexe inné.\n2) Citer les éléments d'un arc réflexe.\n3) Donner un exemple.",
+     "solution": "1) Une réponse involontaire, rapide et automatique à une stimulation.\n2) Récepteur, nerf sensitif, centre nerveux (moelle épinière), nerf moteur, effecteur (muscle).\n3) Retirer la main d'un objet brûlant, le réflexe rotulien."
+    },
+    {
+     "title": "Accidents de l'appareil locomoteur",
+     "text": "Définir : fracture, entorse, luxation, crampe.",
+     "solution": "Fracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle."
+    },
+    {
+     "title": "Trajet de l'ovocyte",
+     "text": "Ranger dans l'ordre : utérus, ovaire, trompe. Où l'ovocyte peut-il rencontrer les spermatozoïdes ?",
+     "solution": "Ovaire → trompe → utérus. La rencontre a lieu dans la trompe."
+    },
+    {
+     "title": "Rôle de la testostérone",
+     "text": "1) Où est produite la testostérone ?\n2) Citer deux de ses effets.",
+     "solution": "1) Dans les testicules.\n2) Apparition des caractères sexuels secondaires (barbe, voix grave, musculature) et production de spermatozoïdes."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Roches métamorphiques : définition, caractéristiques",
+    "Étude d’exemple : le gneiss",
+    "Le gneiss : localisation en Mauritanie, utilisation, autres exemples",
+    "Cycle des roches"
+   ],
+   "items": [
+    {
+     "title": "Le métamorphisme",
+     "text": "1) Définir une roche métamorphique.\n2) Quels facteurs provoquent le métamorphisme ?",
+     "solution": "1) Une roche transformée à l'état solide sous l'effet de fortes pressions et températures.\n2) La pression et la température élevées (en profondeur)."
+    },
+    {
+     "title": "Le gneiss",
+     "text": "1) Décrire l'aspect du gneiss.\n2) De quelle roche peut-il provenir ?",
+     "solution": "1) Une roche à bandes claires et sombres alternées (foliation).\n2) Du granite ou d'une roche sédimentaire argileuse transformés."
+    },
+    {
+     "title": "Du calcaire au marbre",
+     "text": "Le marbre provient de la transformation du calcaire.\n1) Quel type de roche est le marbre ?\n2) Quelles conditions ont permis cette transformation ?",
+     "solution": "1) Une roche métamorphique.\n2) Une forte pression et une température élevée, sans fusion."
+    },
+    {
+     "title": "Le gneiss en Mauritanie",
+     "text": "Citer une région de Mauritanie où l'on trouve des roches métamorphiques et une utilisation du gneiss.",
+     "solution": "La dorsale Reguibat (Tiris Zemmour) ; utilisation en construction (pierre de taille, granulats)."
+    },
+    {
+     "title": "Le cycle des roches",
+     "text": "Compléter le cycle : roche magmatique → (érosion) → … → (enfouissement) → … → (fusion) → magma.",
+     "solution": "Roche magmatique → sédiments → roche sédimentaire → roche métamorphique → magma."
+    },
+    {
+     "title": "Roches et utilisations",
+     "text": "Associer chaque roche à une utilisation : granite, argile, calcaire, sable / ciment, poterie, verre, dallage.",
+     "solution": "Granite → dallage ; argile → poterie ; calcaire → ciment ; sable → verre."
+    },
+    {
+     "title": "Le temps géologique",
+     "text": "Pourquoi ne voit-on pas les roches se transformer au cours d'une vie humaine ?",
+     "solution": "Les transformations des roches sont extrêmement lentes : elles durent des milliers à des millions d'années."
+    },
+    {
+     "title": "Protéger l'appareil génital",
+     "text": "Citer trois mesures d'hygiène de l'appareil génital.",
+     "solution": "Toilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque."
+    },
+    {
+     "title": "Classer des roches",
+     "text": "Classer : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.",
+     "solution": "Magmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss."
+    },
+    {
+     "title": "Le basalte",
+     "text": "1) Décrire l'aspect du basalte.\n2) Où se forme-t-il ?",
+     "solution": "1) Une roche sombre, compacte, à très petits cristaux.\n2) En surface, par refroidissement rapide de la lave."
+    },
+    {
+     "title": "Le magma",
+     "text": "1) Qu'est-ce qu'un magma ?\n2) Où se forme-t-il ?\n3) Que devient-il en refroidissant ?",
+     "solution": "1) Une roche fondue (liquide) très chaude, contenant des gaz.\n2) En profondeur, dans le manteau ou la croûte.\n3) Une roche magmatique."
+    },
+    {
+     "title": "Le cycle féminin",
+     "text": "1) Quelle est la durée moyenne d'un cycle menstruel ?\n2) Vers quel jour a lieu l'ovulation ?\n3) Que sont les règles ?",
+     "solution": "1) Environ 28 jours.\n2) Vers le 14e jour.\n3) L'élimination de la muqueuse utérine avec du sang, en l'absence de fécondation."
+    },
+    {
+     "title": "Trajet des spermatozoïdes",
+     "text": "Ranger dans l'ordre le trajet des spermatozoïdes depuis leur lieu de production : urètre, testicule, canal déférent, épididyme.",
+     "solution": "Testicule → épididyme → canal déférent → urètre."
+    },
+    {
+     "title": "Accident et paralysie",
+     "text": "Une personne a la moelle épinière sectionnée au niveau du dos. Pourquoi ne peut-elle plus bouger les jambes ?",
+     "solution": "Les messages nerveux du cerveau ne peuvent plus passer vers les nerfs des jambes (et inversement)."
+    },
+    {
+     "title": "Granite ou basalte ?",
+     "text": "On observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.",
+     "solution": "Roche claire à gros cristaux : granite ; roche noire : basalte."
+    },
+    {
+     "title": "Vitesse du message nerveux",
+     "text": "Un message nerveux parcourt 1,2 m en 0,02 s. Calculer sa vitesse.",
+     "solution": "v = 1,2 ÷ 0,02 = 60 m/s."
+    },
+    {
+     "title": "Le spermatozoïde",
+     "text": "Schématiser et légender un spermatozoïde. Quel est le rôle du flagelle ?",
+     "solution": "Tête (avec le noyau), pièce intermédiaire, flagelle.\nLe flagelle permet le déplacement du spermatozoïde."
+    },
+    {
+     "title": "Jumeaux",
+     "text": "Expliquer la différence entre de vrais jumeaux et de faux jumeaux.",
+     "solution": "Vrais jumeaux : une seule cellule-œuf qui se sépare en deux (identiques). Faux jumeaux : deux ovocytes fécondés par deux spermatozoïdes différents."
+    },
+    {
+     "title": "Conditions de la fécondation",
+     "text": "Citer deux conditions nécessaires à la fécondation.",
+     "solution": "La présence d'un ovocyte dans la trompe (période de l'ovulation) et de spermatozoïdes mobiles et en nombre suffisant."
+    },
+    {
+     "title": "Réflexe ou acte volontaire ?",
+     "text": "Classer : cligner des yeux devant un objet qui approche ; écrire une lettre ; retirer le pied d'une épine ; réciter une sourate.",
+     "solution": "Réflexes : clignement, retrait du pied.\nVolontaires : écrire, réciter."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 36",
+   "term": 3,
+   "kind": "final",
+   "title": "Révision générale de l'année",
+   "covers": [
+    "Appareil génital mâle : organisation, coupe de testicule, puberté, spermatozoïde",
+    "Appareil génital femelle : organisation, coupe d’ovaire, puberté, ovocyte",
+    "Fécondation : définition, conditions, étapes, zygote",
+    "Hygiène : IST et SIDA",
+    "Mesures de protection de l’appareil génital",
+    "Système nerveux central : encéphale, moelle épinière",
+    "Système nerveux périphérique : nerfs (types et rôles)",
+    "Neurone : structure et propriétés"
+   ],
+   "items": [
+    {
+     "title": "Le cycle des roches",
+     "text": "Compléter le cycle : roche magmatique → (érosion) → … → (enfouissement) → … → (fusion) → magma.",
+     "solution": "Roche magmatique → sédiments → roche sédimentaire → roche métamorphique → magma."
+    },
+    {
+     "title": "Le squelette",
+     "text": "1) Citer trois rôles du squelette.\n2) Citer les trois types d'os selon leur forme avec un exemple.",
+     "solution": "1) Soutien du corps, protection des organes, participation au mouvement.\n2) Os longs (fémur), os courts (vertèbres), os plats (crâne, omoplate)."
+    },
+    {
+     "title": "Le spermatozoïde",
+     "text": "Schématiser et légender un spermatozoïde. Quel est le rôle du flagelle ?",
+     "solution": "Tête (avec le noyau), pièce intermédiaire, flagelle.\nLe flagelle permet le déplacement du spermatozoïde."
+    },
+    {
+     "title": "Le système nerveux central",
+     "text": "1) Quels organes forment le système nerveux central ?\n2) Comment sont-ils protégés ?\n3) Quelle partie de l'encéphale contrôle l'équilibre ?",
+     "solution": "1) L'encéphale (cerveau, cervelet, bulbe rachidien) et la moelle épinière.\n2) Par le crâne, la colonne vertébrale et les méninges.\n3) Le cervelet."
+    },
+    {
+     "title": "La puberté chez le garçon",
+     "text": "Citer trois transformations qui apparaissent à la puberté chez le garçon.",
+     "solution": "Mue de la voix, apparition de la barbe et des poils, développement des organes génitaux et de la musculature, production de spermatozoïdes."
+    },
+    {
+     "title": "Le métamorphisme",
+     "text": "1) Définir une roche métamorphique.\n2) Quels facteurs provoquent le métamorphisme ?",
+     "solution": "1) Une roche transformée à l'état solide sous l'effet de fortes pressions et températures.\n2) La pression et la température élevées (en profondeur)."
+    },
+    {
+     "title": "Le temps géologique",
+     "text": "Pourquoi ne voit-on pas les roches se transformer au cours d'une vie humaine ?",
+     "solution": "Les transformations des roches sont extrêmement lentes : elles durent des milliers à des millions d'années."
+    },
+    {
+     "title": "Granite ou basalte ?",
+     "text": "On observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.",
+     "solution": "Roche claire à gros cristaux : granite ; roche noire : basalte."
+    },
+    {
+     "title": "Les nerfs",
+     "text": "1) Différencier nerf sensitif et nerf moteur.\n2) Comment appelle-t-on un nerf qui contient les deux types de fibres ?",
+     "solution": "1) Sensitif : conduit le message des organes des sens vers les centres nerveux ; moteur : des centres vers les muscles.\n2) Un nerf mixte."
+    },
+    {
+     "title": "Catastrophes naturelles",
+     "text": "Citer trois catastrophes naturelles et une mesure de prévention pour chacune.",
+     "solution": "Inondation : éviter de construire dans les zones inondables ; sécheresse : stocker l'eau et le fourrage ; tempête de sable : planter des arbres (ceinture verte)."
+    },
+    {
+     "title": "Le magma",
+     "text": "1) Qu'est-ce qu'un magma ?\n2) Où se forme-t-il ?\n3) Que devient-il en refroidissant ?",
+     "solution": "1) Une roche fondue (liquide) très chaude, contenant des gaz.\n2) En profondeur, dans le manteau ou la croûte.\n3) Une roche magmatique."
+    },
+    {
+     "title": "Bonne posture",
+     "text": "Pourquoi faut-il bien se tenir assis et porter le cartable sur les deux épaules ?",
+     "solution": "Pour éviter les déformations de la colonne vertébrale (scoliose) et les douleurs."
+    },
+    {
+     "title": "Les sachets plastiques",
+     "text": "1) Pourquoi les sachets plastiques sont-ils dangereux pour le bétail ?\n2) Quelle mesure la Mauritanie a-t-elle prise ?",
+     "solution": "1) Les animaux les avalent, ce qui bloque leur digestion et peut les tuer.\n2) L'interdiction des sachets plastiques (2013)."
+    },
+    {
+     "title": "Vitesse du message nerveux",
+     "text": "Un message nerveux parcourt 1,2 m en 0,02 s. Calculer sa vitesse.",
+     "solution": "v = 1,2 ÷ 0,02 = 60 m/s."
+    },
+    {
+     "title": "Effet de serre",
+     "text": "Expliquer simplement l'effet de serre. Est-il toujours néfaste ?",
+     "solution": "Certains gaz retiennent la chaleur renvoyée par la Terre. Naturel, il permet la vie ; renforcé par l'homme, il provoque un réchauffement."
+    },
+    {
+     "title": "Accidents de l'appareil locomoteur",
+     "text": "Définir : fracture, entorse, luxation, crampe.",
+     "solution": "Fracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle."
+    },
+    {
+     "title": "Protéger son système nerveux",
+     "text": "Citer quatre règles d'hygiène du système nerveux.",
+     "solution": "Dormir suffisamment, éviter les drogues, l'alcool et le tabac, gérer le stress, porter un casque à moto, avoir une alimentation équilibrée."
+    },
+    {
+     "title": "Le gneiss en Mauritanie",
+     "text": "Citer une région de Mauritanie où l'on trouve des roches métamorphiques et une utilisation du gneiss.",
+     "solution": "La dorsale Reguibat (Tiris Zemmour) ; utilisation en construction (pierre de taille, granulats)."
+    },
+    {
+     "title": "Les changements climatiques",
+     "text": "1) Citer deux causes du réchauffement climatique.\n2) Citer deux conséquences en Mauritanie.",
+     "solution": "1) Les gaz à effet de serre (CO₂) dus aux combustibles fossiles, la déforestation.\n2) Avancée du désert, sécheresses, montée du niveau de la mer menaçant Nouakchott."
+    },
+    {
+     "title": "Coupe d'ovaire",
+     "text": "Que contiennent les follicules de l'ovaire ? Que se passe-t-il lors de l'ovulation ?",
+     "solution": "Ils contiennent chacun un ovocyte en développement. À l'ovulation, un follicule mûr se rompt et libère son ovocyte."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Semaine 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du 1er trimestre",
+   "covers": [
+    "Appareil génital mâle : organisation, coupe de testicule, puberté, spermatozoïde",
+    "Appareil génital femelle : organisation, coupe d’ovaire, puberté, ovocyte",
+    "Fécondation : définition, conditions, étapes, zygote",
+    "Hygiène : IST et SIDA",
+    "Mesures de protection de l’appareil génital",
+    "Système nerveux central : encéphale, moelle épinière",
+    "Système nerveux périphérique : nerfs (types et rôles)",
+    "Neurone : structure et propriétés"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Trajet de l'ovocyte\nRanger dans l'ordre : utérus, ovaire, trompe. Où l'ovocyte peut-il rencontrer les spermatozoïdes ?\n\nExercice 2 : La fécondation chez l'homme\n1) Où a lieu la fécondation ?\n2) Que devient la cellule-œuf ?\n3) Où se fixe l'embryon ?\n\nExercice 3 : Rôles de l'encéphale\nAssocier : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Exercice 1\nOvaire → trompe → utérus. La rencontre a lieu dans la trompe.\n\nExercice 2\n1) Dans la trompe (tiers supérieur).\n2) Elle se divise et devient un embryon.\n3) Dans la muqueuse de l'utérus (nidation).\n\nExercice 3\nCerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Proposition 2 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Le cycle féminin\n1) Quelle est la durée moyenne d'un cycle menstruel ?\n2) Vers quel jour a lieu l'ovulation ?\n3) Que sont les règles ?\n\nExercice 2 : Grossesse\n1) Quelle est la durée moyenne d'une grossesse ?\n2) Comment l'embryon reçoit-il nourriture et dioxygène ?\n3) Pourquoi la femme enceinte doit-elle éviter le tabac et les médicaments sans avis médical ?\n\nExercice 3 : Le réflexe\n1) Définir un réflexe inné.\n2) Citer les éléments d'un arc réflexe.\n3) Donner un exemple.",
+     "solution": "Exercice 1\n1) Environ 28 jours.\n2) Vers le 14e jour.\n3) L'élimination de la muqueuse utérine avec du sang, en l'absence de fécondation.\n\nExercice 2\n1) Environ 9 mois (38 à 40 semaines).\n2) Par le placenta et le cordon ombilical.\n3) Ces substances passent au fœtus par le placenta et peuvent lui nuire.\n\nExercice 3\n1) Une réponse involontaire, rapide et automatique à une stimulation.\n2) Récepteur, nerf sensitif, centre nerveux (moelle épinière), nerf moteur, effecteur (muscle).\n3) Retirer la main d'un objet brûlant, le réflexe rotulien."
+    },
+    {
+     "title": "Proposition 3 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe d'ovaire\nQue contiennent les follicules de l'ovaire ? Que se passe-t-il lors de l'ovulation ?\n\nExercice 2 : La fécondation chez l'homme\n1) Où a lieu la fécondation ?\n2) Que devient la cellule-œuf ?\n3) Où se fixe l'embryon ?\n\nExercice 3 : Vitesse du message nerveux\nUn message nerveux parcourt 1,2 m en 0,02 s. Calculer sa vitesse.",
+     "solution": "Exercice 1\nIls contiennent chacun un ovocyte en développement. À l'ovulation, un follicule mûr se rompt et libère son ovocyte.\n\nExercice 2\n1) Dans la trompe (tiers supérieur).\n2) Elle se divise et devient un embryon.\n3) Dans la muqueuse de l'utérus (nidation).\n\nExercice 3\nv = 1,2 ÷ 0,02 = 60 m/s."
+    },
+    {
+     "title": "Proposition 4 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe d'ovaire\nQue contiennent les follicules de l'ovaire ? Que se passe-t-il lors de l'ovulation ?\n\nExercice 2 : Calcul de dates\nUn cycle de 28 jours commence le 1er mars. Quelle est la date probable de l'ovulation ?\n\nExercice 3 : Le réflexe\n1) Définir un réflexe inné.\n2) Citer les éléments d'un arc réflexe.\n3) Donner un exemple.",
+     "solution": "Exercice 1\nIls contiennent chacun un ovocyte en développement. À l'ovulation, un follicule mûr se rompt et libère son ovocyte.\n\nExercice 2\nLe 14 mars environ.\n\nExercice 3\n1) Une réponse involontaire, rapide et automatique à une stimulation.\n2) Récepteur, nerf sensitif, centre nerveux (moelle épinière), nerf moteur, effecteur (muscle).\n3) Retirer la main d'un objet brûlant, le réflexe rotulien."
+    },
+    {
+     "title": "Proposition 5 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe d'ovaire\nQue contiennent les follicules de l'ovaire ? Que se passe-t-il lors de l'ovulation ?\n\nExercice 2 : Protéger l'appareil génital\nCiter trois mesures d'hygiène de l'appareil génital.\n\nExercice 3 : Le sommeil\nUn élève de 14 ans dort 6 h par nuit au lieu des 9 h conseillées.\n1) Calculer le déficit de sommeil sur une semaine.\n2) Quelles conséquences sur ses études ?",
+     "solution": "Exercice 1\nIls contiennent chacun un ovocyte en développement. À l'ovulation, un follicule mûr se rompt et libère son ovocyte.\n\nExercice 2\nToilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque.\n\nExercice 3\n1) (9 − 6) × 7 = 21 h.\n2) Fatigue, baisse d'attention et de mémoire, mauvais résultats."
+    },
+    {
+     "title": "Proposition 6 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Rôle de la testostérone\n1) Où est produite la testostérone ?\n2) Citer deux de ses effets.\n\nExercice 2 : Le sida\n1) Quel virus provoque le sida ?\n2) Citer ses modes de transmission.\n3) Le sida se transmet-il en serrant la main ?\n\nExercice 3 : Rôles de l'encéphale\nAssocier : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Exercice 1\n1) Dans les testicules.\n2) Apparition des caractères sexuels secondaires (barbe, voix grave, musculature) et production de spermatozoïdes.\n\nExercice 2\n1) Le VIH.\n2) Rapports sexuels non protégés, sang contaminé (seringues, objets tranchants), de la mère à l'enfant.\n3) Non.\n\nExercice 3\nCerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Proposition 7 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La puberté chez le garçon\nCiter trois transformations qui apparaissent à la puberté chez le garçon.\n\nExercice 2 : Calcul de dates\nUn cycle de 28 jours commence le 1er mars. Quelle est la date probable de l'ovulation ?\n\nExercice 3 : Rôles de l'encéphale\nAssocier : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Exercice 1\nMue de la voix, apparition de la barbe et des poils, développement des organes génitaux et de la musculature, production de spermatozoïdes.\n\nExercice 2\nLe 14 mars environ.\n\nExercice 3\nCerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Proposition 8 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe de testicule\nDans quelle partie du testicule se forment les spermatozoïdes ? Où sont-ils stockés ?\n\nExercice 2 : Protéger l'appareil génital\nCiter trois mesures d'hygiène de l'appareil génital.\n\nExercice 3 : Rôles de l'encéphale\nAssocier : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Exercice 1\nDans les tubes séminifères ; ils sont stockés dans l'épididyme.\n\nExercice 2\nToilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque.\n\nExercice 3\nCerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Proposition 9 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Trajet des spermatozoïdes\nRanger dans l'ordre le trajet des spermatozoïdes depuis leur lieu de production : urètre, testicule, canal déférent, épididyme.\n\nExercice 2 : Calcul de dates\nUn cycle de 28 jours commence le 1er mars. Quelle est la date probable de l'ovulation ?\n\nExercice 3 : Protéger son système nerveux\nCiter quatre règles d'hygiène du système nerveux.",
+     "solution": "Exercice 1\nTesticule → épididyme → canal déférent → urètre.\n\nExercice 2\nLe 14 mars environ.\n\nExercice 3\nDormir suffisamment, éviter les drogues, l'alcool et le tabac, gérer le stress, porter un casque à moto, avoir une alimentation équilibrée."
+    },
+    {
+     "title": "Proposition 10 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe d'ovaire\nQue contiennent les follicules de l'ovaire ? Que se passe-t-il lors de l'ovulation ?\n\nExercice 2 : Le sida\n1) Quel virus provoque le sida ?\n2) Citer ses modes de transmission.\n3) Le sida se transmet-il en serrant la main ?\n\nExercice 3 : Le neurone\nNommer les parties d'un neurone et indiquer le sens de circulation du message nerveux.",
+     "solution": "Exercice 1\nIls contiennent chacun un ovocyte en développement. À l'ovulation, un follicule mûr se rompt et libère son ovocyte.\n\nExercice 2\n1) Le VIH.\n2) Rapports sexuels non protégés, sang contaminé (seringues, objets tranchants), de la mère à l'enfant.\n3) Non.\n\nExercice 3\nCorps cellulaire (avec noyau), dendrites, axone, arborisation terminale.\nDendrites → corps cellulaire → axone."
+    },
+    {
+     "title": "Proposition 11 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La puberté chez le garçon\nCiter trois transformations qui apparaissent à la puberté chez le garçon.\n\nExercice 2 : Calcul de dates\nUn cycle de 28 jours commence le 1er mars. Quelle est la date probable de l'ovulation ?\n\nExercice 3 : Le réflexe\n1) Définir un réflexe inné.\n2) Citer les éléments d'un arc réflexe.\n3) Donner un exemple.",
+     "solution": "Exercice 1\nMue de la voix, apparition de la barbe et des poils, développement des organes génitaux et de la musculature, production de spermatozoïdes.\n\nExercice 2\nLe 14 mars environ.\n\nExercice 3\n1) Une réponse involontaire, rapide et automatique à une stimulation.\n2) Récepteur, nerf sensitif, centre nerveux (moelle épinière), nerf moteur, effecteur (muscle).\n3) Retirer la main d'un objet brûlant, le réflexe rotulien."
+    },
+    {
+     "title": "Proposition 12 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Le cycle féminin\n1) Quelle est la durée moyenne d'un cycle menstruel ?\n2) Vers quel jour a lieu l'ovulation ?\n3) Que sont les règles ?\n\nExercice 2 : Grossesse\n1) Quelle est la durée moyenne d'une grossesse ?\n2) Comment l'embryon reçoit-il nourriture et dioxygène ?\n3) Pourquoi la femme enceinte doit-elle éviter le tabac et les médicaments sans avis médical ?\n\nExercice 3 : Le système nerveux central\n1) Quels organes forment le système nerveux central ?\n2) Comment sont-ils protégés ?\n3) Quelle partie de l'encéphale contrôle l'équilibre ?",
+     "solution": "Exercice 1\n1) Environ 28 jours.\n2) Vers le 14e jour.\n3) L'élimination de la muqueuse utérine avec du sang, en l'absence de fécondation.\n\nExercice 2\n1) Environ 9 mois (38 à 40 semaines).\n2) Par le placenta et le cordon ombilical.\n3) Ces substances passent au fœtus par le placenta et peuvent lui nuire.\n\nExercice 3\n1) L'encéphale (cerveau, cervelet, bulbe rachidien) et la moelle épinière.\n2) Par le crâne, la colonne vertébrale et les méninges.\n3) Le cervelet."
+    },
+    {
+     "title": "Proposition 13 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe de testicule\nDans quelle partie du testicule se forment les spermatozoïdes ? Où sont-ils stockés ?\n\nExercice 2 : Protéger l'appareil génital\nCiter trois mesures d'hygiène de l'appareil génital.\n\nExercice 3 : Le système nerveux central\n1) Quels organes forment le système nerveux central ?\n2) Comment sont-ils protégés ?\n3) Quelle partie de l'encéphale contrôle l'équilibre ?",
+     "solution": "Exercice 1\nDans les tubes séminifères ; ils sont stockés dans l'épididyme.\n\nExercice 2\nToilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque.\n\nExercice 3\n1) L'encéphale (cerveau, cervelet, bulbe rachidien) et la moelle épinière.\n2) Par le crâne, la colonne vertébrale et les méninges.\n3) Le cervelet."
+    },
+    {
+     "title": "Proposition 14 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La puberté chez le garçon\nCiter trois transformations qui apparaissent à la puberté chez le garçon.\n\nExercice 2 : Jumeaux\nExpliquer la différence entre de vrais jumeaux et de faux jumeaux.\n\nExercice 3 : Rôles de l'encéphale\nAssocier : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Exercice 1\nMue de la voix, apparition de la barbe et des poils, développement des organes génitaux et de la musculature, production de spermatozoïdes.\n\nExercice 2\nVrais jumeaux : une seule cellule-œuf qui se sépare en deux (identiques). Faux jumeaux : deux ovocytes fécondés par deux spermatozoïdes différents.\n\nExercice 3\nCerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Proposition 15 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Trajet de l'ovocyte\nRanger dans l'ordre : utérus, ovaire, trompe. Où l'ovocyte peut-il rencontrer les spermatozoïdes ?\n\nExercice 2 : Conditions de la fécondation\nCiter deux conditions nécessaires à la fécondation.\n\nExercice 3 : Rôles de l'encéphale\nAssocier : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Exercice 1\nOvaire → trompe → utérus. La rencontre a lieu dans la trompe.\n\nExercice 2\nLa présence d'un ovocyte dans la trompe (période de l'ovulation) et de spermatozoïdes mobiles et en nombre suffisant.\n\nExercice 3\nCerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    },
+    {
+     "title": "Proposition 16 — Examen du 1er trimestre",
+     "text": "Exercice 1 : L'appareil génital féminin\nCiter les organes de l'appareil génital féminin et le rôle de l'ovaire et de l'utérus.\n\nExercice 2 : Protéger l'appareil génital\nCiter trois mesures d'hygiène de l'appareil génital.\n\nExercice 3 : Vitesse du message nerveux\nUn message nerveux parcourt 1,2 m en 0,02 s. Calculer sa vitesse.",
+     "solution": "Exercice 1\nOvaires, trompes, utérus, vagin.\nOvaire : produit les ovocytes et les hormones féminines ; utérus : accueille et nourrit l'embryon.\n\nExercice 2\nToilette intime quotidienne, sous-vêtements propres, consulter un médecin en cas de douleur ou d'écoulement, éviter les comportements à risque.\n\nExercice 3\nv = 1,2 ÷ 0,02 = 60 m/s."
+    },
+    {
+     "title": "Proposition 17 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Trajet de l'ovocyte\nRanger dans l'ordre : utérus, ovaire, trompe. Où l'ovocyte peut-il rencontrer les spermatozoïdes ?\n\nExercice 2 : La fécondation chez l'homme\n1) Où a lieu la fécondation ?\n2) Que devient la cellule-œuf ?\n3) Où se fixe l'embryon ?\n\nExercice 3 : Le sommeil\nUn élève de 14 ans dort 6 h par nuit au lieu des 9 h conseillées.\n1) Calculer le déficit de sommeil sur une semaine.\n2) Quelles conséquences sur ses études ?",
+     "solution": "Exercice 1\nOvaire → trompe → utérus. La rencontre a lieu dans la trompe.\n\nExercice 2\n1) Dans la trompe (tiers supérieur).\n2) Elle se divise et devient un embryon.\n3) Dans la muqueuse de l'utérus (nidation).\n\nExercice 3\n1) (9 − 6) × 7 = 21 h.\n2) Fatigue, baisse d'attention et de mémoire, mauvais résultats."
+    },
+    {
+     "title": "Proposition 18 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe de testicule\nDans quelle partie du testicule se forment les spermatozoïdes ? Où sont-ils stockés ?\n\nExercice 2 : Les IST\n1) Que signifie IST ?\n2) Citer deux IST.\n3) Comment s'en protéger ?\n\nExercice 3 : Le système nerveux central\n1) Quels organes forment le système nerveux central ?\n2) Comment sont-ils protégés ?\n3) Quelle partie de l'encéphale contrôle l'équilibre ?",
+     "solution": "Exercice 1\nDans les tubes séminifères ; ils sont stockés dans l'épididyme.\n\nExercice 2\n1) Infections sexuellement transmissibles.\n2) Le sida (VIH), la syphilis, la gonococcie, l'hépatite B.\n3) Fidélité, abstinence, préservatif, dépistage et traitement.\n\nExercice 3\n1) L'encéphale (cerveau, cervelet, bulbe rachidien) et la moelle épinière.\n2) Par le crâne, la colonne vertébrale et les méninges.\n3) Le cervelet."
+    },
+    {
+     "title": "Proposition 19 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Coupe de testicule\nDans quelle partie du testicule se forment les spermatozoïdes ? Où sont-ils stockés ?\n\nExercice 2 : Les IST\n1) Que signifie IST ?\n2) Citer deux IST.\n3) Comment s'en protéger ?\n\nExercice 3 : Vitesse du message nerveux\nUn message nerveux parcourt 1,2 m en 0,02 s. Calculer sa vitesse.",
+     "solution": "Exercice 1\nDans les tubes séminifères ; ils sont stockés dans l'épididyme.\n\nExercice 2\n1) Infections sexuellement transmissibles.\n2) Le sida (VIH), la syphilis, la gonococcie, l'hépatite B.\n3) Fidélité, abstinence, préservatif, dépistage et traitement.\n\nExercice 3\nv = 1,2 ÷ 0,02 = 60 m/s."
+    },
+    {
+     "title": "Proposition 20 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Trajet des spermatozoïdes\nRanger dans l'ordre le trajet des spermatozoïdes depuis leur lieu de production : urètre, testicule, canal déférent, épididyme.\n\nExercice 2 : Calcul de dates\nUn cycle de 28 jours commence le 1er mars. Quelle est la date probable de l'ovulation ?\n\nExercice 3 : Rôles de l'encéphale\nAssocier : cerveau, cervelet, bulbe rachidien / respiration et rythme cardiaque, équilibre et coordination, pensée et mouvements volontaires.",
+     "solution": "Exercice 1\nTesticule → épididyme → canal déférent → urètre.\n\nExercice 2\nLe 14 mars environ.\n\nExercice 3\nCerveau → pensée et mouvements volontaires ; cervelet → équilibre ; bulbe → respiration et rythme cardiaque."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du 2e trimestre",
+   "covers": [
+    "Le squelette : schéma, types d’os",
+    "Os long : structure, composition chimique, croissance",
+    "Muscles striés : structure, formes, propriétés",
+    "Articulations : définition et types",
+    "Hygiène de la motricité : accidents des os, des muscles et des articulations",
+    "Changements climatiques : causes et conséquences",
+    "Pollution de l’air, du sol, de l’eau et du littoral",
+    "Gestion des déchets"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Bonne posture\nPourquoi faut-il bien se tenir assis et porter le cartable sur les deux épaules ?\n\nExercice 3 : Les sachets plastiques\n1) Pourquoi les sachets plastiques sont-ils dangereux pour le bétail ?\n2) Quelle mesure la Mauritanie a-t-elle prise ?",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\nPour éviter les déformations de la colonne vertébrale (scoliose) et les douleurs.\n\nExercice 3\n1) Les animaux les avalent, ce qui bloque leur digestion et peut les tuer.\n2) L'interdiction des sachets plastiques (2013)."
+    },
+    {
+     "title": "Proposition 2 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Le squelette\n1) Citer trois rôles du squelette.\n2) Citer les trois types d'os selon leur forme avec un exemple.\n\nExercice 2 : Les articulations\n1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.\n\nExercice 3 : Catastrophes naturelles\nCiter trois catastrophes naturelles et une mesure de prévention pour chacune.",
+     "solution": "Exercice 1\n1) Soutien du corps, protection des organes, participation au mouvement.\n2) Os longs (fémur), os courts (vertèbres), os plats (crâne, omoplate).\n\nExercice 2\n1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne).\n\nExercice 3\nInondation : éviter de construire dans les zones inondables ; sécheresse : stocker l'eau et le fourrage ; tempête de sable : planter des arbres (ceinture verte)."
+    },
+    {
+     "title": "Proposition 3 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Structure d'un os long\nNommer les parties d'un os long. Où se trouve la moelle rouge ?\n\nExercice 2 : Les articulations\n1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.\n\nExercice 3 : Trier et recycler\n1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "Exercice 1\nDiaphyse, épiphyses, périoste, tissu compact, tissu spongieux, cavité médullaire.\nLa moelle rouge se trouve dans le tissu spongieux des épiphyses.\n\nExercice 2\n1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne).\n\nExercice 3\n1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Proposition 4 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Accidents de l'appareil locomoteur\nDéfinir : fracture, entorse, luxation, crampe.\n\nExercice 3 : Trier et recycler\n1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\nFracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle.\n\nExercice 3\n1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Proposition 5 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Croissance des os\nOù se fait la croissance en longueur d'un os long ? Pourquoi les enfants doivent-ils consommer du lait ?\n\nExercice 2 : Accidents de l'appareil locomoteur\nDéfinir : fracture, entorse, luxation, crampe.\n\nExercice 3 : Trier et recycler\n1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "Exercice 1\nAu niveau des cartilages de conjugaison. Le lait apporte du calcium nécessaire à la solidité et à la croissance des os.\n\nExercice 2\nFracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle.\n\nExercice 3\n1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Proposition 6 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Bonne posture\nPourquoi faut-il bien se tenir assis et porter le cartable sur les deux épaules ?\n\nExercice 3 : Les pollutions\nPour chaque milieu (air, eau, sol, littoral), citer une source de pollution.",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\nPour éviter les déformations de la colonne vertébrale (scoliose) et les douleurs.\n\nExercice 3\nAir : fumées des véhicules ; eau : rejets des eaux usées ; sol : sacs plastiques et pesticides ; littoral : hydrocarbures et déchets des bateaux."
+    },
+    {
+     "title": "Proposition 7 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Les articulations\n1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.\n\nExercice 3 : Les sachets plastiques\n1) Pourquoi les sachets plastiques sont-ils dangereux pour le bétail ?\n2) Quelle mesure la Mauritanie a-t-elle prise ?",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\n1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne).\n\nExercice 3\n1) Les animaux les avalent, ce qui bloque leur digestion et peut les tuer.\n2) L'interdiction des sachets plastiques (2013)."
+    },
+    {
+     "title": "Proposition 8 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Les articulations\n1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.\n\nExercice 3 : Les changements climatiques\n1) Citer deux causes du réchauffement climatique.\n2) Citer deux conséquences en Mauritanie.",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\n1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne).\n\nExercice 3\n1) Les gaz à effet de serre (CO₂) dus aux combustibles fossiles, la déforestation.\n2) Avancée du désert, sécheresses, montée du niveau de la mer menaçant Nouakchott."
+    },
+    {
+     "title": "Proposition 9 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Le squelette\n1) Citer trois rôles du squelette.\n2) Citer les trois types d'os selon leur forme avec un exemple.\n\nExercice 2 : Bonne posture\nPourquoi faut-il bien se tenir assis et porter le cartable sur les deux épaules ?\n\nExercice 3 : Les sachets plastiques\n1) Pourquoi les sachets plastiques sont-ils dangereux pour le bétail ?\n2) Quelle mesure la Mauritanie a-t-elle prise ?",
+     "solution": "Exercice 1\n1) Soutien du corps, protection des organes, participation au mouvement.\n2) Os longs (fémur), os courts (vertèbres), os plats (crâne, omoplate).\n\nExercice 2\nPour éviter les déformations de la colonne vertébrale (scoliose) et les douleurs.\n\nExercice 3\n1) Les animaux les avalent, ce qui bloque leur digestion et peut les tuer.\n2) L'interdiction des sachets plastiques (2013)."
+    },
+    {
+     "title": "Proposition 10 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Structure d'un os long\nNommer les parties d'un os long. Où se trouve la moelle rouge ?\n\nExercice 2 : Bonne posture\nPourquoi faut-il bien se tenir assis et porter le cartable sur les deux épaules ?\n\nExercice 3 : Les sachets plastiques\n1) Pourquoi les sachets plastiques sont-ils dangereux pour le bétail ?\n2) Quelle mesure la Mauritanie a-t-elle prise ?",
+     "solution": "Exercice 1\nDiaphyse, épiphyses, périoste, tissu compact, tissu spongieux, cavité médullaire.\nLa moelle rouge se trouve dans le tissu spongieux des épiphyses.\n\nExercice 2\nPour éviter les déformations de la colonne vertébrale (scoliose) et les douleurs.\n\nExercice 3\n1) Les animaux les avalent, ce qui bloque leur digestion et peut les tuer.\n2) L'interdiction des sachets plastiques (2013)."
+    },
+    {
+     "title": "Proposition 11 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Les articulations\n1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.\n\nExercice 3 : Trier et recycler\n1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\n1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne).\n\nExercice 3\n1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Proposition 12 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Structure d'un os long\nNommer les parties d'un os long. Où se trouve la moelle rouge ?\n\nExercice 2 : Accidents de l'appareil locomoteur\nDéfinir : fracture, entorse, luxation, crampe.\n\nExercice 3 : Catastrophes naturelles\nCiter trois catastrophes naturelles et une mesure de prévention pour chacune.",
+     "solution": "Exercice 1\nDiaphyse, épiphyses, périoste, tissu compact, tissu spongieux, cavité médullaire.\nLa moelle rouge se trouve dans le tissu spongieux des épiphyses.\n\nExercice 2\nFracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle.\n\nExercice 3\nInondation : éviter de construire dans les zones inondables ; sécheresse : stocker l'eau et le fourrage ; tempête de sable : planter des arbres (ceinture verte)."
+    },
+    {
+     "title": "Proposition 13 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Les muscles\n1) Citer deux propriétés des muscles.\n2) Comment le muscle est-il fixé à l'os ?\n3) Expliquer le travail du biceps et du triceps lors de la flexion du bras.\n\nExercice 3 : Les changements climatiques\n1) Citer deux causes du réchauffement climatique.\n2) Citer deux conséquences en Mauritanie.",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\n1) Contractilité et élasticité (excitabilité).\n2) Par des tendons.\n3) Le biceps se contracte (raccourcit) et le triceps se relâche : ils sont antagonistes.\n\nExercice 3\n1) Les gaz à effet de serre (CO₂) dus aux combustibles fossiles, la déforestation.\n2) Avancée du désert, sécheresses, montée du niveau de la mer menaçant Nouakchott."
+    },
+    {
+     "title": "Proposition 14 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Les muscles\n1) Citer deux propriétés des muscles.\n2) Comment le muscle est-il fixé à l'os ?\n3) Expliquer le travail du biceps et du triceps lors de la flexion du bras.\n\nExercice 3 : Catastrophes naturelles\nCiter trois catastrophes naturelles et une mesure de prévention pour chacune.",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\n1) Contractilité et élasticité (excitabilité).\n2) Par des tendons.\n3) Le biceps se contracte (raccourcit) et le triceps se relâche : ils sont antagonistes.\n\nExercice 3\nInondation : éviter de construire dans les zones inondables ; sécheresse : stocker l'eau et le fourrage ; tempête de sable : planter des arbres (ceinture verte)."
+    },
+    {
+     "title": "Proposition 15 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Structure d'un os long\nNommer les parties d'un os long. Où se trouve la moelle rouge ?\n\nExercice 2 : Accidents de l'appareil locomoteur\nDéfinir : fracture, entorse, luxation, crampe.\n\nExercice 3 : Trier et recycler\n1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "Exercice 1\nDiaphyse, épiphyses, périoste, tissu compact, tissu spongieux, cavité médullaire.\nLa moelle rouge se trouve dans le tissu spongieux des épiphyses.\n\nExercice 2\nFracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle.\n\nExercice 3\n1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Proposition 16 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Croissance des os\nOù se fait la croissance en longueur d'un os long ? Pourquoi les enfants doivent-ils consommer du lait ?\n\nExercice 2 : Les articulations\n1) Définir une articulation.\n2) Citer les trois types d'articulations avec un exemple.\n\nExercice 3 : Trier et recycler\n1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "Exercice 1\nAu niveau des cartilages de conjugaison. Le lait apporte du calcium nécessaire à la solidité et à la croissance des os.\n\nExercice 2\n1) La jonction entre deux os.\n2) Mobiles (genou, coude), semi-mobiles (vertèbres), fixes (os du crâne).\n\nExercice 3\n1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Proposition 17 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Composition de l'os\nOn met un os dans du vinaigre pendant plusieurs jours : il devient souple. On calcine un autre os : il devient cassant.\n1) Que dissout le vinaigre ?\n2) Que détruit la calcination ?\n3) Conclure.\n\nExercice 2 : Les muscles\n1) Citer deux propriétés des muscles.\n2) Comment le muscle est-il fixé à l'os ?\n3) Expliquer le travail du biceps et du triceps lors de la flexion du bras.\n\nExercice 3 : Les pollutions\nPour chaque milieu (air, eau, sol, littoral), citer une source de pollution.",
+     "solution": "Exercice 1\n1) Les sels minéraux (calcium).\n2) La matière organique.\n3) L'os est formé de matière minérale (dureté) et de matière organique (souplesse).\n\nExercice 2\n1) Contractilité et élasticité (excitabilité).\n2) Par des tendons.\n3) Le biceps se contracte (raccourcit) et le triceps se relâche : ils sont antagonistes.\n\nExercice 3\nAir : fumées des véhicules ; eau : rejets des eaux usées ; sol : sacs plastiques et pesticides ; littoral : hydrocarbures et déchets des bateaux."
+    },
+    {
+     "title": "Proposition 18 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Le squelette\n1) Citer trois rôles du squelette.\n2) Citer les trois types d'os selon leur forme avec un exemple.\n\nExercice 2 : Accidents de l'appareil locomoteur\nDéfinir : fracture, entorse, luxation, crampe.\n\nExercice 3 : Les changements climatiques\n1) Citer deux causes du réchauffement climatique.\n2) Citer deux conséquences en Mauritanie.",
+     "solution": "Exercice 1\n1) Soutien du corps, protection des organes, participation au mouvement.\n2) Os longs (fémur), os courts (vertèbres), os plats (crâne, omoplate).\n\nExercice 2\nFracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle.\n\nExercice 3\n1) Les gaz à effet de serre (CO₂) dus aux combustibles fossiles, la déforestation.\n2) Avancée du désert, sécheresses, montée du niveau de la mer menaçant Nouakchott."
+    },
+    {
+     "title": "Proposition 19 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Le squelette\n1) Citer trois rôles du squelette.\n2) Citer les trois types d'os selon leur forme avec un exemple.\n\nExercice 2 : Accidents de l'appareil locomoteur\nDéfinir : fracture, entorse, luxation, crampe.\n\nExercice 3 : Trier et recycler\n1) Citer trois types de déchets ménagers.\n2) Qu'est-ce que le recyclage ?\n3) Proposer deux gestes à l'école.",
+     "solution": "Exercice 1\n1) Soutien du corps, protection des organes, participation au mouvement.\n2) Os longs (fémur), os courts (vertèbres), os plats (crâne, omoplate).\n\nExercice 2\nFracture : cassure d'un os ; entorse : étirement ou déchirure d'un ligament ; luxation : déboîtement d'une articulation ; crampe : contraction douloureuse et involontaire d'un muscle.\n\nExercice 3\n1) Organiques, plastiques, métalliques, papiers.\n2) La transformation d'un déchet en nouvelle matière première.\n3) Mettre des poubelles de tri, réutiliser le papier, faire du compost."
+    },
+    {
+     "title": "Proposition 20 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Structure d'un os long\nNommer les parties d'un os long. Où se trouve la moelle rouge ?\n\nExercice 2 : Les muscles\n1) Citer deux propriétés des muscles.\n2) Comment le muscle est-il fixé à l'os ?\n3) Expliquer le travail du biceps et du triceps lors de la flexion du bras.\n\nExercice 3 : Les changements climatiques\n1) Citer deux causes du réchauffement climatique.\n2) Citer deux conséquences en Mauritanie.",
+     "solution": "Exercice 1\nDiaphyse, épiphyses, périoste, tissu compact, tissu spongieux, cavité médullaire.\nLa moelle rouge se trouve dans le tissu spongieux des épiphyses.\n\nExercice 2\n1) Contractilité et élasticité (excitabilité).\n2) Par des tendons.\n3) Le biceps se contracte (raccourcit) et le triceps se relâche : ils sont antagonistes.\n\nExercice 3\n1) Les gaz à effet de serre (CO₂) dus aux combustibles fossiles, la déforestation.\n2) Avancée du désert, sécheresses, montée du niveau de la mer menaçant Nouakchott."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du 3e trimestre",
+   "covers": [
+    "Roches magmatiques : définition et caractéristiques",
+    "Roches plutoniques : le granite",
+    "Roches volcaniques : le basalte",
+    "Roches métamorphiques : définition, caractéristiques",
+    "Étude d’exemple : le gneiss",
+    "Le gneiss : localisation en Mauritanie, utilisation, autres exemples",
+    "Cycle des roches"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le magma\n1) Qu'est-ce qu'un magma ?\n2) Où se forme-t-il ?\n3) Que devient-il en refroidissant ?\n\nExercice 2 : Les volcans\n1) Citer deux produits émis par un volcan.\n2) Pourquoi la lave refroidit-elle vite ?\n\nExercice 3 : Le gneiss en Mauritanie\nCiter une région de Mauritanie où l'on trouve des roches métamorphiques et une utilisation du gneiss.",
+     "solution": "Exercice 1\n1) Une roche fondue (liquide) très chaude, contenant des gaz.\n2) En profondeur, dans le manteau ou la croûte.\n3) Une roche magmatique.\n\nExercice 2\n1) La lave, les gaz, les cendres, les bombes volcaniques.\n2) Elle arrive en surface, au contact de l'air (ou de l'eau) froid.\n\nExercice 3\nLa dorsale Reguibat (Tiris Zemmour) ; utilisation en construction (pierre de taille, granulats)."
+    },
+    {
+     "title": "Proposition 2 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le granite\n1) Citer les trois minéraux du granite.\n2) Pourquoi ses cristaux sont-ils visibles à l'œil nu ?\n\nExercice 2 : Le basalte\n1) Décrire l'aspect du basalte.\n2) Où se forme-t-il ?\n\nExercice 3 : Roches et utilisations\nAssocier chaque roche à une utilisation : granite, argile, calcaire, sable / ciment, poterie, verre, dallage.",
+     "solution": "Exercice 1\n1) Quartz, feldspath, mica.\n2) Il s'est refroidi lentement en profondeur.\n\nExercice 2\n1) Une roche sombre, compacte, à très petits cristaux.\n2) En surface, par refroidissement rapide de la lave.\n\nExercice 3\nGranite → dallage ; argile → poterie ; calcaire → ciment ; sable → verre."
+    },
+    {
+     "title": "Proposition 3 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Classer des roches\nClasser : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.\n\nExercice 2 : Le basalte\n1) Décrire l'aspect du basalte.\n2) Où se forme-t-il ?\n\nExercice 3 : Le temps géologique\nPourquoi ne voit-on pas les roches se transformer au cours d'une vie humaine ?",
+     "solution": "Exercice 1\nMagmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss.\n\nExercice 2\n1) Une roche sombre, compacte, à très petits cristaux.\n2) En surface, par refroidissement rapide de la lave.\n\nExercice 3\nLes transformations des roches sont extrêmement lentes : elles durent des milliers à des millions d'années."
+    },
+    {
+     "title": "Proposition 4 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le granite\n1) Citer les trois minéraux du granite.\n2) Pourquoi ses cristaux sont-ils visibles à l'œil nu ?\n\nExercice 2 : Les volcans\n1) Citer deux produits émis par un volcan.\n2) Pourquoi la lave refroidit-elle vite ?\n\nExercice 3 : Roches et utilisations\nAssocier chaque roche à une utilisation : granite, argile, calcaire, sable / ciment, poterie, verre, dallage.",
+     "solution": "Exercice 1\n1) Quartz, feldspath, mica.\n2) Il s'est refroidi lentement en profondeur.\n\nExercice 2\n1) La lave, les gaz, les cendres, les bombes volcaniques.\n2) Elle arrive en surface, au contact de l'air (ou de l'eau) froid.\n\nExercice 3\nGranite → dallage ; argile → poterie ; calcaire → ciment ; sable → verre."
+    },
+    {
+     "title": "Proposition 5 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Classer des roches\nClasser : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.\n\nExercice 2 : Granite ou basalte ?\nOn observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.\n\nExercice 3 : Le temps géologique\nPourquoi ne voit-on pas les roches se transformer au cours d'une vie humaine ?",
+     "solution": "Exercice 1\nMagmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss.\n\nExercice 2\nRoche claire à gros cristaux : granite ; roche noire : basalte.\n\nExercice 3\nLes transformations des roches sont extrêmement lentes : elles durent des milliers à des millions d'années."
+    },
+    {
+     "title": "Proposition 6 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Les roches magmatiques\n1) Comment se forment les roches magmatiques ?\n2) Différencier roches plutoniques et volcaniques.\n\nExercice 2 : Les volcans\n1) Citer deux produits émis par un volcan.\n2) Pourquoi la lave refroidit-elle vite ?\n\nExercice 3 : Le métamorphisme\n1) Définir une roche métamorphique.\n2) Quels facteurs provoquent le métamorphisme ?",
+     "solution": "Exercice 1\n1) Par le refroidissement et la solidification d'un magma.\n2) Plutoniques : refroidissement lent en profondeur (gros cristaux) ; volcaniques : refroidissement rapide en surface (petits cristaux ou verre).\n\nExercice 2\n1) La lave, les gaz, les cendres, les bombes volcaniques.\n2) Elle arrive en surface, au contact de l'air (ou de l'eau) froid.\n\nExercice 3\n1) Une roche transformée à l'état solide sous l'effet de fortes pressions et températures.\n2) La pression et la température élevées (en profondeur)."
+    },
+    {
+     "title": "Proposition 7 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Les roches magmatiques\n1) Comment se forment les roches magmatiques ?\n2) Différencier roches plutoniques et volcaniques.\n\nExercice 2 : Du calcaire au marbre\nLe marbre provient de la transformation du calcaire.\n1) Quel type de roche est le marbre ?\n2) Quelles conditions ont permis cette transformation ?\n\nExercice 3 : Le gneiss en Mauritanie\nCiter une région de Mauritanie où l'on trouve des roches métamorphiques et une utilisation du gneiss.",
+     "solution": "Exercice 1\n1) Par le refroidissement et la solidification d'un magma.\n2) Plutoniques : refroidissement lent en profondeur (gros cristaux) ; volcaniques : refroidissement rapide en surface (petits cristaux ou verre).\n\nExercice 2\n1) Une roche métamorphique.\n2) Une forte pression et une température élevée, sans fusion.\n\nExercice 3\nLa dorsale Reguibat (Tiris Zemmour) ; utilisation en construction (pierre de taille, granulats)."
+    },
+    {
+     "title": "Proposition 8 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Les roches magmatiques\n1) Comment se forment les roches magmatiques ?\n2) Différencier roches plutoniques et volcaniques.\n\nExercice 2 : Les volcans\n1) Citer deux produits émis par un volcan.\n2) Pourquoi la lave refroidit-elle vite ?\n\nExercice 3 : Le gneiss en Mauritanie\nCiter une région de Mauritanie où l'on trouve des roches métamorphiques et une utilisation du gneiss.",
+     "solution": "Exercice 1\n1) Par le refroidissement et la solidification d'un magma.\n2) Plutoniques : refroidissement lent en profondeur (gros cristaux) ; volcaniques : refroidissement rapide en surface (petits cristaux ou verre).\n\nExercice 2\n1) La lave, les gaz, les cendres, les bombes volcaniques.\n2) Elle arrive en surface, au contact de l'air (ou de l'eau) froid.\n\nExercice 3\nLa dorsale Reguibat (Tiris Zemmour) ; utilisation en construction (pierre de taille, granulats)."
+    },
+    {
+     "title": "Proposition 9 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le magma\n1) Qu'est-ce qu'un magma ?\n2) Où se forme-t-il ?\n3) Que devient-il en refroidissant ?\n\nExercice 2 : Du calcaire au marbre\nLe marbre provient de la transformation du calcaire.\n1) Quel type de roche est le marbre ?\n2) Quelles conditions ont permis cette transformation ?\n\nExercice 3 : Le temps géologique\nPourquoi ne voit-on pas les roches se transformer au cours d'une vie humaine ?",
+     "solution": "Exercice 1\n1) Une roche fondue (liquide) très chaude, contenant des gaz.\n2) En profondeur, dans le manteau ou la croûte.\n3) Une roche magmatique.\n\nExercice 2\n1) Une roche métamorphique.\n2) Une forte pression et une température élevée, sans fusion.\n\nExercice 3\nLes transformations des roches sont extrêmement lentes : elles durent des milliers à des millions d'années."
+    },
+    {
+     "title": "Proposition 10 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Classer des roches\nClasser : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.\n\nExercice 2 : Du calcaire au marbre\nLe marbre provient de la transformation du calcaire.\n1) Quel type de roche est le marbre ?\n2) Quelles conditions ont permis cette transformation ?\n\nExercice 3 : Le gneiss\n1) Décrire l'aspect du gneiss.\n2) De quelle roche peut-il provenir ?",
+     "solution": "Exercice 1\nMagmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss.\n\nExercice 2\n1) Une roche métamorphique.\n2) Une forte pression et une température élevée, sans fusion.\n\nExercice 3\n1) Une roche à bandes claires et sombres alternées (foliation).\n2) Du granite ou d'une roche sédimentaire argileuse transformés."
+    },
+    {
+     "title": "Proposition 11 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Classer des roches\nClasser : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.\n\nExercice 2 : Granite ou basalte ?\nOn observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.\n\nExercice 3 : Le cycle des roches\nCompléter le cycle : roche magmatique → (érosion) → … → (enfouissement) → … → (fusion) → magma.",
+     "solution": "Exercice 1\nMagmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss.\n\nExercice 2\nRoche claire à gros cristaux : granite ; roche noire : basalte.\n\nExercice 3\nRoche magmatique → sédiments → roche sédimentaire → roche métamorphique → magma."
+    },
+    {
+     "title": "Proposition 12 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Classer des roches\nClasser : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.\n\nExercice 2 : Du calcaire au marbre\nLe marbre provient de la transformation du calcaire.\n1) Quel type de roche est le marbre ?\n2) Quelles conditions ont permis cette transformation ?\n\nExercice 3 : Roches et utilisations\nAssocier chaque roche à une utilisation : granite, argile, calcaire, sable / ciment, poterie, verre, dallage.",
+     "solution": "Exercice 1\nMagmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss.\n\nExercice 2\n1) Une roche métamorphique.\n2) Une forte pression et une température élevée, sans fusion.\n\nExercice 3\nGranite → dallage ; argile → poterie ; calcaire → ciment ; sable → verre."
+    },
+    {
+     "title": "Proposition 13 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le granite\n1) Citer les trois minéraux du granite.\n2) Pourquoi ses cristaux sont-ils visibles à l'œil nu ?\n\nExercice 2 : Granite ou basalte ?\nOn observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.\n\nExercice 3 : Le gneiss\n1) Décrire l'aspect du gneiss.\n2) De quelle roche peut-il provenir ?",
+     "solution": "Exercice 1\n1) Quartz, feldspath, mica.\n2) Il s'est refroidi lentement en profondeur.\n\nExercice 2\nRoche claire à gros cristaux : granite ; roche noire : basalte.\n\nExercice 3\n1) Une roche à bandes claires et sombres alternées (foliation).\n2) Du granite ou d'une roche sédimentaire argileuse transformés."
+    },
+    {
+     "title": "Proposition 14 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Classer des roches\nClasser : granite, calcaire, basalte, gneiss, sable, argile en roches magmatiques, sédimentaires et métamorphiques.\n\nExercice 2 : Les volcans\n1) Citer deux produits émis par un volcan.\n2) Pourquoi la lave refroidit-elle vite ?\n\nExercice 3 : Le temps géologique\nPourquoi ne voit-on pas les roches se transformer au cours d'une vie humaine ?",
+     "solution": "Exercice 1\nMagmatiques : granite, basalte ; sédimentaires : calcaire, sable, argile ; métamorphique : gneiss.\n\nExercice 2\n1) La lave, les gaz, les cendres, les bombes volcaniques.\n2) Elle arrive en surface, au contact de l'air (ou de l'eau) froid.\n\nExercice 3\nLes transformations des roches sont extrêmement lentes : elles durent des milliers à des millions d'années."
+    },
+    {
+     "title": "Proposition 15 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Les roches magmatiques\n1) Comment se forment les roches magmatiques ?\n2) Différencier roches plutoniques et volcaniques.\n\nExercice 2 : Granite ou basalte ?\nOn observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.\n\nExercice 3 : Le gneiss en Mauritanie\nCiter une région de Mauritanie où l'on trouve des roches métamorphiques et une utilisation du gneiss.",
+     "solution": "Exercice 1\n1) Par le refroidissement et la solidification d'un magma.\n2) Plutoniques : refroidissement lent en profondeur (gros cristaux) ; volcaniques : refroidissement rapide en surface (petits cristaux ou verre).\n\nExercice 2\nRoche claire à gros cristaux : granite ; roche noire : basalte.\n\nExercice 3\nLa dorsale Reguibat (Tiris Zemmour) ; utilisation en construction (pierre de taille, granulats)."
+    },
+    {
+     "title": "Proposition 16 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le granite\n1) Citer les trois minéraux du granite.\n2) Pourquoi ses cristaux sont-ils visibles à l'œil nu ?\n\nExercice 2 : Du calcaire au marbre\nLe marbre provient de la transformation du calcaire.\n1) Quel type de roche est le marbre ?\n2) Quelles conditions ont permis cette transformation ?\n\nExercice 3 : Le métamorphisme\n1) Définir une roche métamorphique.\n2) Quels facteurs provoquent le métamorphisme ?",
+     "solution": "Exercice 1\n1) Quartz, feldspath, mica.\n2) Il s'est refroidi lentement en profondeur.\n\nExercice 2\n1) Une roche métamorphique.\n2) Une forte pression et une température élevée, sans fusion.\n\nExercice 3\n1) Une roche transformée à l'état solide sous l'effet de fortes pressions et températures.\n2) La pression et la température élevées (en profondeur)."
+    },
+    {
+     "title": "Proposition 17 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Les roches magmatiques\n1) Comment se forment les roches magmatiques ?\n2) Différencier roches plutoniques et volcaniques.\n\nExercice 2 : Le basalte\n1) Décrire l'aspect du basalte.\n2) Où se forme-t-il ?\n\nExercice 3 : Le métamorphisme\n1) Définir une roche métamorphique.\n2) Quels facteurs provoquent le métamorphisme ?",
+     "solution": "Exercice 1\n1) Par le refroidissement et la solidification d'un magma.\n2) Plutoniques : refroidissement lent en profondeur (gros cristaux) ; volcaniques : refroidissement rapide en surface (petits cristaux ou verre).\n\nExercice 2\n1) Une roche sombre, compacte, à très petits cristaux.\n2) En surface, par refroidissement rapide de la lave.\n\nExercice 3\n1) Une roche transformée à l'état solide sous l'effet de fortes pressions et températures.\n2) La pression et la température élevées (en profondeur)."
+    },
+    {
+     "title": "Proposition 18 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le magma\n1) Qu'est-ce qu'un magma ?\n2) Où se forme-t-il ?\n3) Que devient-il en refroidissant ?\n\nExercice 2 : Granite ou basalte ?\nOn observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.\n\nExercice 3 : Le gneiss\n1) Décrire l'aspect du gneiss.\n2) De quelle roche peut-il provenir ?",
+     "solution": "Exercice 1\n1) Une roche fondue (liquide) très chaude, contenant des gaz.\n2) En profondeur, dans le manteau ou la croûte.\n3) Une roche magmatique.\n\nExercice 2\nRoche claire à gros cristaux : granite ; roche noire : basalte.\n\nExercice 3\n1) Une roche à bandes claires et sombres alternées (foliation).\n2) Du granite ou d'une roche sédimentaire argileuse transformés."
+    },
+    {
+     "title": "Proposition 19 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le magma\n1) Qu'est-ce qu'un magma ?\n2) Où se forme-t-il ?\n3) Que devient-il en refroidissant ?\n\nExercice 2 : Le basalte\n1) Décrire l'aspect du basalte.\n2) Où se forme-t-il ?\n\nExercice 3 : Le cycle des roches\nCompléter le cycle : roche magmatique → (érosion) → … → (enfouissement) → … → (fusion) → magma.",
+     "solution": "Exercice 1\n1) Une roche fondue (liquide) très chaude, contenant des gaz.\n2) En profondeur, dans le manteau ou la croûte.\n3) Une roche magmatique.\n\nExercice 2\n1) Une roche sombre, compacte, à très petits cristaux.\n2) En surface, par refroidissement rapide de la lave.\n\nExercice 3\nRoche magmatique → sédiments → roche sédimentaire → roche métamorphique → magma."
+    },
+    {
+     "title": "Proposition 20 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le granite\n1) Citer les trois minéraux du granite.\n2) Pourquoi ses cristaux sont-ils visibles à l'œil nu ?\n\nExercice 2 : Granite ou basalte ?\nOn observe une roche claire à gros cristaux et une roche noire à cristaux invisibles. Identifier chacune.\n\nExercice 3 : Le cycle des roches\nCompléter le cycle : roche magmatique → (érosion) → … → (enfouissement) → … → (fusion) → magma.",
+     "solution": "Exercice 1\n1) Quartz, feldspath, mica.\n2) Il s'est refroidi lentement en profondeur.\n\nExercice 2\nRoche claire à gros cristaux : granite ; roche noire : basalte.\n\nExercice 3\nRoche magmatique → sédiments → roche sédimentaire → roche métamorphique → magma."
+    }
+   ]
+  }
+ ]
+}

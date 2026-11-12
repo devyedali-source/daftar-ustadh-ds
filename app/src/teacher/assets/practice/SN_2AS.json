@@ -1,0 +1,1176 @@
+{
+ "subject": "SN",
+ "level": "2AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Semaine 7",
+   "term": 1,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Reproduction : définition",
+    "Reproduction asexuée : division binaire (amibe, paramécie…)",
+    "Reproduction sexuée : gamètes et fécondation",
+    "Modes de reproduction : ovipare",
+    "Modes de reproduction : vivipare, ovovivipare"
+   ],
+   "items": [
+    {
+     "title": "Les ovipares",
+     "text": "1) Qu'est-ce qu'un animal ovipare ?\n2) Citer trois animaux ovipares.\n3) Quelle est la durée d'incubation d'un œuf de poule ?",
+     "solution": "1) Un animal qui pond des œufs dont le développement se fait à l'extérieur du corps de la mère.\n2) La poule, la tortue, le crocodile, le criquet.\n3) Environ 21 jours."
+    },
+    {
+     "title": "La reproduction",
+     "text": "1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.",
+     "solution": "1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée."
+    },
+    {
+     "title": "Fécondation interne ou externe",
+     "text": "1) Différencier fécondation interne et externe.\n2) Classer : poisson, poule, grenouille, chèvre.",
+     "solution": "1) Interne : dans le corps de la femelle ; externe : dans le milieu (souvent l'eau).\n2) Externe : poisson, grenouille ; interne : poule, chèvre."
+    },
+    {
+     "title": "Espèce",
+     "text": "1) Qu'est-ce qu'une espèce ?\n2) Un âne et une jument donnent un mulet stérile. Sont-ils de la même espèce ? Justifier.",
+     "solution": "1) Un ensemble d'individus semblables capables de se reproduire entre eux et de donner des descendants fertiles.\n2) Non : leur descendant (le mulet) n'est pas fertile."
+    },
+    {
+     "title": "L'œuf de poule",
+     "text": "Nommer les parties de l'œuf de poule et donner le rôle du jaune et du blanc.",
+     "solution": "Coquille, membranes coquillières, chambre à air, blanc (albumen), jaune (vitellus), germe.\nLe jaune et le blanc sont des réserves nutritives pour l'embryon."
+    },
+    {
+     "title": "La division binaire",
+     "text": "1) Comment se reproduit l'amibe ?\n2) Les deux cellules obtenues sont-elles identiques à la cellule mère ?\n3) Une bactérie se divise toutes les 20 minutes. Combien de bactéries obtient-on en 2 heures à partir d'une seule ?",
+     "solution": "1) Par division binaire : elle se partage en deux cellules filles.\n2) Oui, elles sont identiques (même information héréditaire).\n3) 2 h = 6 divisions : 2⁶ = 64 bactéries."
+    },
+    {
+     "title": "Gestation",
+     "text": "La gestation de la chamelle dure environ 13 mois, celle de la chèvre 5 mois.\n1) Qu'est-ce que la gestation ?\n2) Comment l'embryon est-il nourri ?",
+     "solution": "1) La période de développement du petit dans l'utérus de la mère.\n2) Par le placenta, grâce au sang de la mère (cordon ombilical)."
+    },
+    {
+     "title": "Taille des gamètes",
+     "text": "Le spermatozoïde est très petit et mobile, l'ovule est gros et immobile. Expliquer l'intérêt de chacun de ces caractères.",
+     "solution": "La mobilité permet au spermatozoïde de rejoindre l'ovule ; l'ovule contient des réserves nutritives pour le début du développement de l'embryon."
+    },
+    {
+     "title": "Êtres unicellulaires",
+     "text": "1) Qu'est-ce qu'un être unicellulaire ?\n2) Citer deux exemples.\n3) Quel avantage présente la reproduction asexuée ?",
+     "solution": "1) Un être vivant formé d'une seule cellule.\n2) L'amibe, la paramécie, les bactéries.\n3) Elle est rapide et ne nécessite pas de partenaire."
+    },
+    {
+     "title": "Gamètes et fécondation",
+     "text": "1) Comment appelle-t-on les gamètes mâle et femelle chez les animaux ?\n2) Définir la fécondation.\n3) Comment appelle-t-on la cellule obtenue ?",
+     "solution": "1) Le spermatozoïde et l'ovule.\n2) L'union d'un gamète mâle et d'un gamète femelle.\n3) La cellule-œuf (zygote)."
+    },
+    {
+     "title": "Vivipares et ovovivipares",
+     "text": "1) Définir vivipare et ovovivipare.\n2) Classer : chèvre, vipère, homme, requin, dromadaire.",
+     "solution": "1) Vivipare : le petit se développe dans l'utérus et naît vivant ; ovovivipare : l'œuf éclôt dans le corps de la mère.\n2) Vivipares : chèvre, homme, dromadaire ; ovovivipares : vipère, requin."
+    },
+    {
+     "title": "Diversité des descendants",
+     "text": "Pourquoi les enfants d'un même couple ne sont-ils pas identiques, alors que les deux amibes issues d'une division le sont ?",
+     "solution": "La reproduction sexuée associe les informations héréditaires des deux parents de façon différente à chaque fécondation ; la division binaire recopie la même information."
+    },
+    {
+     "title": "Croissance d'une population",
+     "text": "On place 1 paramécie dans un milieu favorable ; elle se divise toutes les 8 heures.\nCombien de paramécies y aura-t-il après 1 jour ? après 2 jours ?",
+     "solution": "1 jour = 3 divisions → 2³ = 8 ; 2 jours = 6 divisions → 2⁶ = 64."
+    },
+    {
+     "title": "Développement du criquet",
+     "text": "Le criquet pèlerin pond ses œufs dans le sable humide. Les larves qui éclosent ressemblent à l'adulte mais sans ailes.\n1) Le criquet est-il ovipare ?\n2) Comment s'appelle ce mode de développement par mues successives ?\n3) Pourquoi les pluies favorisent-elles les invasions ?",
+     "solution": "1) Oui.\n2) Un développement avec métamorphose incomplète (larves → mues → adulte ailé).\n3) Le sable humide permet l'éclosion des œufs et la végétation nourrit les larves."
+    },
+    {
+     "title": "Reproduction et milieu",
+     "text": "Pourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?",
+     "solution": "Parce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre."
+    },
+    {
+     "title": "Soins aux petits",
+     "text": "Une tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.",
+     "solution": "La tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit."
+    },
+    {
+     "title": "Puberté et reproduction",
+     "text": "À partir de quel moment un être humain devient-il capable de se reproduire ? Comment appelle-t-on cette période ?",
+     "solution": "À la puberté (vers 11–15 ans), quand les organes reproducteurs deviennent fonctionnels."
+    },
+    {
+     "title": "Vocabulaire",
+     "text": "Compléter : Les individus produits par la reproduction s'appellent des … . Chez les animaux, la reproduction sexuée fait intervenir un … et une … .",
+     "solution": "descendants ; mâle ; femelle."
+    },
+    {
+     "title": "Sexuée ou asexuée ?",
+     "text": "Classer : la division de l'amibe ; la ponte de la poule ; le bouturage du manioc ; la naissance d'un chevreau ; les rejets du palmier.",
+     "solution": "Sexuée : ponte de la poule, naissance du chevreau.\nAsexuée : division de l'amibe, bouturage du manioc, rejets du palmier."
+    },
+    {
+     "title": "Mode de reproduction",
+     "text": "Associer chaque animal à son mode : poule, chèvre, vipère, poisson tilapia, chamelle, tortue.",
+     "solution": "Ovipares : poule, tilapia, tortue ; vivipares : chèvre, chamelle ; ovovivipare : vipère."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Reproduction asexuée des végétaux : bourgeonnement, bouturage, marcottage, greffage",
+    "Plante à fleurs : organisation de la fleur",
+    "Pollinisation (définition et modes)",
+    "Gamètes et fécondation chez la plante à fleurs",
+    "Plante sans fleurs : étude du Fucus"
+   ],
+   "items": [
+    {
+     "title": "Le palmier dattier",
+     "text": "Le palmier dattier se multiplie par rejets.\n1) Est-ce une reproduction sexuée ou asexuée ?\n2) Quel avantage pour l'agriculteur ?",
+     "solution": "1) Asexuée (multiplication végétative).\n2) Le rejet est identique à la plante mère : on conserve les qualités de la variété (dattes)."
+    },
+    {
+     "title": "Les parties de la fleur",
+     "text": "Citer les quatre verticilles d'une fleur complète, de l'extérieur vers l'intérieur, et donner le rôle des étamines et du pistil.",
+     "solution": "Sépales (calice), pétales (corolle), étamines, pistil.\nÉtamines : organes mâles (produisent le pollen) ; pistil : organe femelle (contient les ovules)."
+    },
+    {
+     "title": "Le pistil",
+     "text": "Nommer les parties du pistil. Que devient l'ovaire après la fécondation ? et l'ovule ?",
+     "solution": "Stigmate, style, ovaire (avec les ovules).\nL'ovaire devient le fruit ; l'ovule devient la graine."
+    },
+    {
+     "title": "Le Fucus",
+     "text": "1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Graine et germination",
+     "text": "Citer les conditions nécessaires à la germination d'une graine.",
+     "solution": "De l'eau, de l'air (dioxygène) et une température convenable."
+    },
+    {
+     "title": "Pollinisation du palmier",
+     "text": "Les agriculteurs de l'Adrar placent des fleurs mâles sur les palmiers femelles.\n1) Comment s'appelle cette opération ?\n2) Pourquoi est-elle nécessaire ?",
+     "solution": "1) La pollinisation artificielle.\n2) Le palmier est dioïque (pieds mâles et femelles séparés) : sans pollen, pas de dattes."
+    },
+    {
+     "title": "La pollinisation",
+     "text": "1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Multiplication végétative",
+     "text": "Définir : bouturage, marcottage, greffage. Donner un exemple pour chacun.",
+     "solution": "Bouturage : planter un fragment de tige qui forme des racines (manioc, menthe).\nMarcottage : enterrer une tige encore attachée à la plante mère (vigne).\nGreffage : fixer un fragment d'une plante sur une autre (manguier, agrumes)."
+    },
+    {
+     "title": "Fécondation chez les plantes à fleurs",
+     "text": "1) Où se trouvent les gamètes mâles et femelles d'une plante à fleurs ?\n2) Comment le gamète mâle atteint-il l'ovule ?\n3) Que devient la fleur après la fécondation ?",
+     "solution": "1) Mâles : dans les grains de pollen ; femelles : dans les ovules de l'ovaire.\n2) Le grain de pollen germe sur le stigmate et forme un tube pollinique qui descend jusqu'à l'ovule.\n3) Les pétales tombent, l'ovaire se transforme en fruit et les ovules en graines."
+    },
+    {
+     "title": "Taille des gamètes",
+     "text": "Le spermatozoïde est très petit et mobile, l'ovule est gros et immobile. Expliquer l'intérêt de chacun de ces caractères.",
+     "solution": "La mobilité permet au spermatozoïde de rejoindre l'ovule ; l'ovule contient des réserves nutritives pour le début du développement de l'embryon."
+    },
+    {
+     "title": "Croissance d'une population",
+     "text": "On place 1 paramécie dans un milieu favorable ; elle se divise toutes les 8 heures.\nCombien de paramécies y aura-t-il après 1 jour ? après 2 jours ?",
+     "solution": "1 jour = 3 divisions → 2³ = 8 ; 2 jours = 6 divisions → 2⁶ = 64."
+    },
+    {
+     "title": "La division binaire",
+     "text": "1) Comment se reproduit l'amibe ?\n2) Les deux cellules obtenues sont-elles identiques à la cellule mère ?\n3) Une bactérie se divise toutes les 20 minutes. Combien de bactéries obtient-on en 2 heures à partir d'une seule ?",
+     "solution": "1) Par division binaire : elle se partage en deux cellules filles.\n2) Oui, elles sont identiques (même information héréditaire).\n3) 2 h = 6 divisions : 2⁶ = 64 bactéries."
+    },
+    {
+     "title": "Gamètes et fécondation",
+     "text": "1) Comment appelle-t-on les gamètes mâle et femelle chez les animaux ?\n2) Définir la fécondation.\n3) Comment appelle-t-on la cellule obtenue ?",
+     "solution": "1) Le spermatozoïde et l'ovule.\n2) L'union d'un gamète mâle et d'un gamète femelle.\n3) La cellule-œuf (zygote)."
+    },
+    {
+     "title": "Reproduction et milieu",
+     "text": "Pourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?",
+     "solution": "Parce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre."
+    },
+    {
+     "title": "Fécondation interne ou externe",
+     "text": "1) Différencier fécondation interne et externe.\n2) Classer : poisson, poule, grenouille, chèvre.",
+     "solution": "1) Interne : dans le corps de la femelle ; externe : dans le milieu (souvent l'eau).\n2) Externe : poisson, grenouille ; interne : poule, chèvre."
+    },
+    {
+     "title": "Puberté et reproduction",
+     "text": "À partir de quel moment un être humain devient-il capable de se reproduire ? Comment appelle-t-on cette période ?",
+     "solution": "À la puberté (vers 11–15 ans), quand les organes reproducteurs deviennent fonctionnels."
+    },
+    {
+     "title": "La reproduction",
+     "text": "1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.",
+     "solution": "1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée."
+    },
+    {
+     "title": "Les ovipares",
+     "text": "1) Qu'est-ce qu'un animal ovipare ?\n2) Citer trois animaux ovipares.\n3) Quelle est la durée d'incubation d'un œuf de poule ?",
+     "solution": "1) Un animal qui pond des œufs dont le développement se fait à l'extérieur du corps de la mère.\n2) La poule, la tortue, le crocodile, le criquet.\n3) Environ 21 jours."
+    },
+    {
+     "title": "Mode de reproduction",
+     "text": "Associer chaque animal à son mode : poule, chèvre, vipère, poisson tilapia, chamelle, tortue.",
+     "solution": "Ovipares : poule, tilapia, tortue ; vivipares : chèvre, chamelle ; ovovivipare : vipère."
+    },
+    {
+     "title": "Êtres unicellulaires",
+     "text": "1) Qu'est-ce qu'un être unicellulaire ?\n2) Citer deux exemples.\n3) Quel avantage présente la reproduction asexuée ?",
+     "solution": "1) Un être vivant formé d'une seule cellule.\n2) L'amibe, la paramécie, les bactéries.\n3) Elle est rapide et ne nécessite pas de partenaire."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 18",
+   "term": 2,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Composition du sang : globules rouges et blancs, plaquettes, plasma",
+    "Groupes sanguins",
+    "Anatomie du cœur",
+    "Appareil circulatoire : grande et petite circulation, artères et veines",
+    "Activité spontanée du cœur : cardiographe, révolution cardiaque",
+    "Hygiène de l’appareil circulatoire",
+    "TD"
+   ],
+   "items": [
+    {
+     "title": "Artères et veines",
+     "text": "Compléter : Les … transportent le sang du cœur vers les organes ; les … ramènent le sang des organes vers le cœur ; les … permettent les échanges avec les cellules.",
+     "solution": "artères ; veines ; capillaires."
+    },
+    {
+     "title": "La fréquence cardiaque",
+     "text": "Au repos, le cœur d'un élève bat 72 fois par minute ; il éjecte 70 mL de sang à chaque battement.\n1) Calculer le débit cardiaque en L/min.\n2) Combien de battements en une heure ?",
+     "solution": "1) 72 × 70 = 5 040 mL/min ≈ 5 L/min.\n2) 72 × 60 = 4 320 battements."
+    },
+    {
+     "title": "Maladies cardiovasculaires",
+     "text": "1) Citer deux maladies de l'appareil circulatoire.\n2) Citer trois facteurs de risque.\n3) Proposer trois règles d'hygiène.",
+     "solution": "1) L'hypertension artérielle, l'infarctus, les varices.\n2) Le tabac, l'excès de sel et de graisses, la sédentarité, l'obésité.\n3) Pratiquer une activité physique, manger équilibré et peu salé, ne pas fumer."
+    },
+    {
+     "title": "Compatibilité",
+     "text": "Ahmed est du groupe O, Mariem du groupe AB.\n1) Ahmed peut-il donner son sang à Mariem ?\n2) Mariem peut-elle donner son sang à Ahmed ?",
+     "solution": "1) Oui, O est donneur universel.\n2) Non, le groupe O ne peut recevoir que du sang O."
+    },
+    {
+     "title": "Volume de sang",
+     "text": "Un adulte a environ 5 L de sang ; le plasma en représente 55 %.\nCalculer le volume de plasma et le volume des éléments figurés.",
+     "solution": "Plasma : 5 × 55 ÷ 100 = 2,75 L ; éléments figurés : 5 − 2,75 = 2,25 L."
+    },
+    {
+     "title": "Groupes sanguins et transfusion",
+     "text": "1) Citer les quatre groupes sanguins du système ABO.\n2) Quel groupe est donneur universel ? receveur universel ?\n3) Une personne du groupe A peut-elle recevoir du sang du groupe B ?",
+     "solution": "1) A, B, AB, O.\n2) Donneur universel : O ; receveur universel : AB.\n3) Non (agglutination)."
+    },
+    {
+     "title": "Analyse de sang",
+     "text": "Les résultats d'une analyse indiquent 3,2 millions de globules rouges par mm³ (normale : 4,5 à 5,5 millions).\n1) Le résultat est-il normal ?\n2) Comment s'appelle ce trouble ?\n3) Quel conseil alimentaire donner ?",
+     "solution": "1) Non, il est inférieur à la normale.\n2) L'anémie.\n3) Manger des aliments riches en fer (viande, foie, lentilles, épinards)."
+    },
+    {
+     "title": "Le cœur",
+     "text": "1) Combien de cavités possède le cœur ? Les nommer.\n2) Quel est le rôle des valvules ?\n3) Pourquoi la paroi du ventricule gauche est-elle plus épaisse ?",
+     "solution": "1) Quatre : oreillette droite, oreillette gauche, ventricule droit, ventricule gauche.\n2) Elles empêchent le sang de refluer (circulation à sens unique).\n3) Il propulse le sang dans tout le corps (grande circulation), il doit être plus puissant."
+    },
+    {
+     "title": "Grande et petite circulation",
+     "text": "1) Décrire le trajet de la petite circulation.\n2) Décrire le trajet de la grande circulation.",
+     "solution": "1) Ventricule droit → artère pulmonaire → poumons → veines pulmonaires → oreillette gauche.\n2) Ventricule gauche → aorte → organes → veines caves → oreillette droite."
+    },
+    {
+     "title": "Les constituants du sang",
+     "text": "Citer les constituants du sang et le rôle de chacun.",
+     "solution": "Plasma : liquide qui transporte les nutriments et les déchets ; globules rouges : transport du dioxygène ; globules blancs : défense de l'organisme ; plaquettes : coagulation."
+    },
+    {
+     "title": "Effort et rythme",
+     "text": "Pendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.",
+     "solution": "Les muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin."
+    },
+    {
+     "title": "Sang riche et sang pauvre",
+     "text": "Dans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?",
+     "solution": "Riche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits."
+    },
+    {
+     "title": "La révolution cardiaque",
+     "text": "Nommer les trois phases de la révolution cardiaque dans l'ordre.",
+     "solution": "Systole auriculaire, systole ventriculaire, diastole générale."
+    },
+    {
+     "title": "Êtres unicellulaires",
+     "text": "1) Qu'est-ce qu'un être unicellulaire ?\n2) Citer deux exemples.\n3) Quel avantage présente la reproduction asexuée ?",
+     "solution": "1) Un être vivant formé d'une seule cellule.\n2) L'amibe, la paramécie, les bactéries.\n3) Elle est rapide et ne nécessite pas de partenaire."
+    },
+    {
+     "title": "La pollinisation",
+     "text": "1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Diversité des descendants",
+     "text": "Pourquoi les enfants d'un même couple ne sont-ils pas identiques, alors que les deux amibes issues d'une division le sont ?",
+     "solution": "La reproduction sexuée associe les informations héréditaires des deux parents de façon différente à chaque fécondation ; la division binaire recopie la même information."
+    },
+    {
+     "title": "Le Fucus",
+     "text": "1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Taille des gamètes",
+     "text": "Le spermatozoïde est très petit et mobile, l'ovule est gros et immobile. Expliquer l'intérêt de chacun de ces caractères.",
+     "solution": "La mobilité permet au spermatozoïde de rejoindre l'ovule ; l'ovule contient des réserves nutritives pour le début du développement de l'embryon."
+    },
+    {
+     "title": "Fécondation chez les plantes à fleurs",
+     "text": "1) Où se trouvent les gamètes mâles et femelles d'une plante à fleurs ?\n2) Comment le gamète mâle atteint-il l'ovule ?\n3) Que devient la fleur après la fécondation ?",
+     "solution": "1) Mâles : dans les grains de pollen ; femelles : dans les ovules de l'ovaire.\n2) Le grain de pollen germe sur le stigmate et forme un tube pollinique qui descend jusqu'à l'ovule.\n3) Les pétales tombent, l'ovaire se transforme en fruit et les ovules en graines."
+    },
+    {
+     "title": "Les parties de la fleur",
+     "text": "Citer les quatre verticilles d'une fleur complète, de l'extérieur vers l'intérieur, et donner le rôle des étamines et du pistil.",
+     "solution": "Sépales (calice), pétales (corolle), étamines, pistil.\nÉtamines : organes mâles (produisent le pollen) ; pistil : organe femelle (contient les ovules)."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Composition de l’urine",
+    "Organisation de l’appareil urinaire",
+    "Coupe de rein : les néphrons",
+    "Fonctions du rein : filtration, réabsorption, sécrétion",
+    "Hygiène de l’appareil urinaire",
+    "TD"
+   ],
+   "items": [
+    {
+     "title": "Le néphron",
+     "text": "1) Qu'est-ce qu'un néphron ?\n2) Nommer ses parties principales.",
+     "solution": "1) L'unité fonctionnelle du rein qui fabrique l'urine.\n2) Le glomérule (dans la capsule de Bowman), le tube contourné, l'anse de Henlé, le tube collecteur."
+    },
+    {
+     "title": "L'urine",
+     "text": "1) Quel est le principal déchet éliminé par l'urine ?\n2) Quel volume d'urine un adulte élimine-t-il par jour environ ?\n3) Que signifie la présence de glucose dans l'urine ?",
+     "solution": "1) L'urée.\n2) Environ 1,5 L.\n3) Une maladie possible : le diabète."
+    },
+    {
+     "title": "Hygiène urinaire",
+     "text": "Citer trois règles d'hygiène de l'appareil urinaire et une maladie qui l'atteint.",
+     "solution": "Boire suffisamment d'eau, ne pas retenir l'urine trop longtemps, réduire le sel, hygiène intime.\nMaladie : infection urinaire, calculs rénaux, bilharziose."
+    },
+    {
+     "title": "Plasma et urine",
+     "text": "Pour 1 L : Plasma : eau 900 g, glucose 1 g, urée 0,3 g, protéines 70 g. Urine : eau 950 g, glucose 0 g, urée 20 g, protéines 0 g.\n1) Quelles substances ne passent pas dans l'urine ?\n2) De combien de fois l'urée est-elle concentrée ?",
+     "solution": "1) Le glucose et les protéines.\n2) 20 ÷ 0,3 ≈ 67 fois."
+    },
+    {
+     "title": "L'appareil urinaire",
+     "text": "Citer dans l'ordre les organes de l'appareil urinaire traversés par l'urine.",
+     "solution": "Reins → uretères → vessie → urètre."
+    },
+    {
+     "title": "La bilharziose",
+     "text": "1) Comment attrape-t-on la bilharziose ?\n2) Comment s'en protéger ?",
+     "solution": "1) En se baignant dans des eaux douces stagnantes contaminées par des larves (vecteur : un mollusque).\n2) Éviter les baignades dans ces eaux, utiliser des latrines, se faire soigner."
+    },
+    {
+     "title": "Les fonctions du rein",
+     "text": "Définir : filtration, réabsorption, sécrétion.",
+     "solution": "Filtration : passage du plasma du sang vers le néphron (urine primitive).\nRéabsorption : retour dans le sang des substances utiles (eau, glucose).\nSécrétion : rejet de certaines substances du sang vers l'urine."
+    },
+    {
+     "title": "Urine primitive",
+     "text": "Les reins filtrent environ 180 L de plasma par jour mais l'on n'élimine qu'environ 1,5 L d'urine.\n1) Calculer le volume réabsorbé.\n2) Quel pourcentage est réabsorbé ?",
+     "solution": "1) 180 − 1,5 = 178,5 L.\n2) 178,5 ÷ 180 × 100 ≈ 99,2 %."
+    },
+    {
+     "title": "Diversité des descendants",
+     "text": "Pourquoi les enfants d'un même couple ne sont-ils pas identiques, alors que les deux amibes issues d'une division le sont ?",
+     "solution": "La reproduction sexuée associe les informations héréditaires des deux parents de façon différente à chaque fécondation ; la division binaire recopie la même information."
+    },
+    {
+     "title": "Le pistil",
+     "text": "Nommer les parties du pistil. Que devient l'ovaire après la fécondation ? et l'ovule ?",
+     "solution": "Stigmate, style, ovaire (avec les ovules).\nL'ovaire devient le fruit ; l'ovule devient la graine."
+    },
+    {
+     "title": "La division binaire",
+     "text": "1) Comment se reproduit l'amibe ?\n2) Les deux cellules obtenues sont-elles identiques à la cellule mère ?\n3) Une bactérie se divise toutes les 20 minutes. Combien de bactéries obtient-on en 2 heures à partir d'une seule ?",
+     "solution": "1) Par division binaire : elle se partage en deux cellules filles.\n2) Oui, elles sont identiques (même information héréditaire).\n3) 2 h = 6 divisions : 2⁶ = 64 bactéries."
+    },
+    {
+     "title": "La pollinisation",
+     "text": "1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Effort et rythme",
+     "text": "Pendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.",
+     "solution": "Les muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin."
+    },
+    {
+     "title": "Le Fucus",
+     "text": "1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Le palmier dattier",
+     "text": "Le palmier dattier se multiplie par rejets.\n1) Est-ce une reproduction sexuée ou asexuée ?\n2) Quel avantage pour l'agriculteur ?",
+     "solution": "1) Asexuée (multiplication végétative).\n2) Le rejet est identique à la plante mère : on conserve les qualités de la variété (dattes)."
+    },
+    {
+     "title": "Multiplication végétative",
+     "text": "Définir : bouturage, marcottage, greffage. Donner un exemple pour chacun.",
+     "solution": "Bouturage : planter un fragment de tige qui forme des racines (manioc, menthe).\nMarcottage : enterrer une tige encore attachée à la plante mère (vigne).\nGreffage : fixer un fragment d'une plante sur une autre (manguier, agrumes)."
+    },
+    {
+     "title": "Sexuée ou asexuée ?",
+     "text": "Classer : la division de l'amibe ; la ponte de la poule ; le bouturage du manioc ; la naissance d'un chevreau ; les rejets du palmier.",
+     "solution": "Sexuée : ponte de la poule, naissance du chevreau.\nAsexuée : division de l'amibe, bouturage du manioc, rejets du palmier."
+    },
+    {
+     "title": "Reproduction et milieu",
+     "text": "Pourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?",
+     "solution": "Parce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre."
+    },
+    {
+     "title": "Taille des gamètes",
+     "text": "Le spermatozoïde est très petit et mobile, l'ovule est gros et immobile. Expliquer l'intérêt de chacun de ces caractères.",
+     "solution": "La mobilité permet au spermatozoïde de rejoindre l'ovule ; l'ovule contient des réserves nutritives pour le début du développement de l'embryon."
+    },
+    {
+     "title": "Vocabulaire",
+     "text": "Compléter : Les individus produits par la reproduction s'appellent des … . Chez les animaux, la reproduction sexuée fait intervenir un … et une … .",
+     "solution": "descendants ; mâle ; femelle."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 29",
+   "term": 3,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Exemples d’écosystèmes : terrestres et océaniques",
+    "Aires protégées : PNBA, Parc National de Diawling",
+    "Zones humides : définition, importance, exemple",
+    "Chaînes alimentaires : définition, maillons, exemple",
+    "Notion de réseau trophique"
+   ],
+   "items": [
+    {
+     "title": "Le Parc National du Diawling",
+     "text": "1) Où se trouve le Parc du Diawling ?\n2) Quel type de milieu protège-t-il ?",
+     "solution": "1) Dans le delta du fleuve Sénégal, au sud-ouest du pays.\n2) Des zones humides (lagunes, mangroves) riches en oiseaux et en poissons."
+    },
+    {
+     "title": "Le Parc National du Banc d'Arguin",
+     "text": "1) Où se situe le PNBA ?\n2) Pourquoi est-il célèbre ?\n3) Pourquoi le protéger ?",
+     "solution": "1) Sur le littoral atlantique, entre Nouakchott et Nouadhibou.\n2) Il accueille des millions d'oiseaux migrateurs et c'est une zone de reproduction des poissons.\n3) Pour préserver la biodiversité et les ressources de pêche."
+    },
+    {
+     "title": "Décomposeurs",
+     "text": "Quel est le rôle des décomposeurs ? Citer deux exemples.",
+     "solution": "Ils transforment la matière organique morte en matière minérale utilisable par les plantes. Exemples : bactéries, champignons, vers de terre."
+    },
+    {
+     "title": "Construire une chaîne alimentaire",
+     "text": "Ranger dans une chaîne alimentaire : chacal, herbe, criquet, lézard. Nommer le producteur et les consommateurs.",
+     "solution": "Herbe → criquet → lézard → chacal.\nProducteur : herbe ; consommateurs : criquet (I), lézard (II), chacal (III)."
+    },
+    {
+     "title": "Chaîne marine",
+     "text": "Ranger : thon, phytoplancton, sardine, zooplancton.",
+     "solution": "Phytoplancton → zooplancton → sardine → thon."
+    },
+    {
+     "title": "Rupture d'une chaîne",
+     "text": "Dans la chaîne herbe → gazelle → guépard, que se passe-t-il si les gazelles disparaissent ?",
+     "solution": "Les guépards manquent de nourriture et diminuent ; l'herbe, moins consommée, se développe davantage."
+    },
+    {
+     "title": "Le réseau trophique",
+     "text": "1) Qu'est-ce qu'un réseau trophique ?\n2) Pourquoi est-il plus stable qu'une simple chaîne ?",
+     "solution": "1) L'ensemble des chaînes alimentaires reliées entre elles dans un écosystème.\n2) Un consommateur peut changer de proie si l'une d'elles disparaît."
+    },
+    {
+     "title": "Facteurs du milieu",
+     "text": "Citer trois facteurs physiques qui caractérisent un biotope désertique.",
+     "solution": "Faible pluviométrie, températures élevées, sol sableux, vents forts."
+    },
+    {
+     "title": "Les zones humides",
+     "text": "1) Définir une zone humide.\n2) Citer deux rôles des zones humides.\n3) Citer une zone humide de Mauritanie.",
+     "solution": "1) Un milieu couvert d'eau de façon permanente ou temporaire (lac, mare, delta…).\n2) Réserve d'eau, refuge pour les oiseaux, zone de reproduction des poissons.\n3) Le lac d'Aleg, le Diawling, la mare de Mahmouda."
+    },
+    {
+     "title": "Écosystèmes de Mauritanie",
+     "text": "Citer un écosystème terrestre et un écosystème océanique de Mauritanie et deux êtres vivants de chacun.",
+     "solution": "Terrestre : le désert (dromadaire, acacia) ; océanique : le littoral atlantique (mulet jaune, poulpe)."
+    },
+    {
+     "title": "Mode de reproduction",
+     "text": "Associer chaque animal à son mode : poule, chèvre, vipère, poisson tilapia, chamelle, tortue.",
+     "solution": "Ovipares : poule, tilapia, tortue ; vivipares : chèvre, chamelle ; ovovivipare : vipère."
+    },
+    {
+     "title": "Soins aux petits",
+     "text": "Une tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.",
+     "solution": "La tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit."
+    },
+    {
+     "title": "Pollinisation du palmier",
+     "text": "Les agriculteurs de l'Adrar placent des fleurs mâles sur les palmiers femelles.\n1) Comment s'appelle cette opération ?\n2) Pourquoi est-elle nécessaire ?",
+     "solution": "1) La pollinisation artificielle.\n2) Le palmier est dioïque (pieds mâles et femelles séparés) : sans pollen, pas de dattes."
+    },
+    {
+     "title": "Effort et rythme",
+     "text": "Pendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.",
+     "solution": "Les muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin."
+    },
+    {
+     "title": "Artères et veines",
+     "text": "Compléter : Les … transportent le sang du cœur vers les organes ; les … ramènent le sang des organes vers le cœur ; les … permettent les échanges avec les cellules.",
+     "solution": "artères ; veines ; capillaires."
+    },
+    {
+     "title": "Les parties de la fleur",
+     "text": "Citer les quatre verticilles d'une fleur complète, de l'extérieur vers l'intérieur, et donner le rôle des étamines et du pistil.",
+     "solution": "Sépales (calice), pétales (corolle), étamines, pistil.\nÉtamines : organes mâles (produisent le pollen) ; pistil : organe femelle (contient les ovules)."
+    },
+    {
+     "title": "La reproduction",
+     "text": "1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.",
+     "solution": "1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée."
+    },
+    {
+     "title": "L'appareil urinaire",
+     "text": "Citer dans l'ordre les organes de l'appareil urinaire traversés par l'urine.",
+     "solution": "Reins → uretères → vessie → urètre."
+    },
+    {
+     "title": "Le Fucus",
+     "text": "1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Sang riche et sang pauvre",
+     "text": "Dans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?",
+     "solution": "Riche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Série d'intégration et de remédiation",
+   "covers": [
+    "Roches sédimentaires : définitions, caractéristiques, origines",
+    "Processus de formation des roches sédimentaires",
+    "Roches siliceuses : le sable",
+    "Roches argileuses : l’argile",
+    "Roches carbonatées : les calcaires",
+    "Roches salines : le gypse",
+    "Roches carbonées : le pétrole"
+   ],
+   "items": [
+    {
+     "title": "Les roches sédimentaires",
+     "text": "1) Définir une roche sédimentaire.\n2) Citer deux caractéristiques.\n3) Citer trois roches sédimentaires.",
+     "solution": "1) Une roche formée par l'accumulation et la consolidation de sédiments.\n2) Elle est disposée en couches (strates) et peut contenir des fossiles.\n3) Le sable, l'argile, le calcaire, le gypse."
+    },
+    {
+     "title": "L'argile",
+     "text": "1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "Strates",
+     "text": "Dans une falaise, une couche A est située au-dessus d'une couche B. Laquelle s'est déposée en premier ? Quel principe utilise-t-on ?",
+     "solution": "La couche B (en dessous) ; principe de superposition."
+    },
+    {
+     "title": "Le gypse et le sel",
+     "text": "1) Comment se forment les roches salines ?\n2) Citer une roche saline et son utilisation.\n3) Où exploite-t-on le sel en Mauritanie ?",
+     "solution": "1) Par évaporation de l'eau de mer ou de lacs salés.\n2) Le gypse (plâtre) ou le sel gemme (alimentation).\n3) À la sebkha d'Idjil (et dans les salines du littoral)."
+    },
+    {
+     "title": "Le pétrole",
+     "text": "1) Quelle est l'origine du pétrole ?\n2) Pourquoi dit-on que c'est une énergie non renouvelable ?\n3) Citer deux produits tirés du pétrole.",
+     "solution": "1) La transformation de restes d'êtres vivants marins enfouis dans les sédiments pendant des millions d'années.\n2) Sa formation est très lente : les réserves s'épuisent.\n3) Essence, gasoil, gaz butane, plastiques."
+    },
+    {
+     "title": "Formation d'une roche sédimentaire",
+     "text": "Ranger dans l'ordre : transport, érosion, dépôt (sédimentation), consolidation (diagenèse).",
+     "solution": "Érosion → transport → dépôt → consolidation."
+    },
+    {
+     "title": "Test à l'acide",
+     "text": "On verse de l'acide chlorhydrique sur du sable et sur du calcaire. Qu'observe-t-on dans chaque cas ?",
+     "solution": "Sable : aucune réaction. Calcaire : effervescence (dégagement de CO₂)."
+    },
+    {
+     "title": "Le sable",
+     "text": "1) De quel minéral est principalement formé le sable ?\n2) Le sable est-il meuble ou consolidé ?\n3) Citer deux utilisations du sable.",
+     "solution": "1) Le quartz.\n2) Meuble.\n3) Construction (béton), fabrication du verre."
+    },
+    {
+     "title": "Le calcaire",
+     "text": "1) Comment reconnaître le calcaire ?\n2) Quelle est son origine ?\n3) Une utilisation ?",
+     "solution": "1) Il fait effervescence avec un acide.\n2) L'accumulation de coquilles et de squelettes calcaires d'êtres marins.\n3) Fabrication de la chaux et du ciment."
+    },
+    {
+     "title": "Analyse de sang",
+     "text": "Les résultats d'une analyse indiquent 3,2 millions de globules rouges par mm³ (normale : 4,5 à 5,5 millions).\n1) Le résultat est-il normal ?\n2) Comment s'appelle ce trouble ?\n3) Quel conseil alimentaire donner ?",
+     "solution": "1) Non, il est inférieur à la normale.\n2) L'anémie.\n3) Manger des aliments riches en fer (viande, foie, lentilles, épinards)."
+    },
+    {
+     "title": "Le pistil",
+     "text": "Nommer les parties du pistil. Que devient l'ovaire après la fécondation ? et l'ovule ?",
+     "solution": "Stigmate, style, ovaire (avec les ovules).\nL'ovaire devient le fruit ; l'ovule devient la graine."
+    },
+    {
+     "title": "Les ovipares",
+     "text": "1) Qu'est-ce qu'un animal ovipare ?\n2) Citer trois animaux ovipares.\n3) Quelle est la durée d'incubation d'un œuf de poule ?",
+     "solution": "1) Un animal qui pond des œufs dont le développement se fait à l'extérieur du corps de la mère.\n2) La poule, la tortue, le crocodile, le criquet.\n3) Environ 21 jours."
+    },
+    {
+     "title": "Sang riche et sang pauvre",
+     "text": "Dans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?",
+     "solution": "Riche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits."
+    },
+    {
+     "title": "Le Fucus",
+     "text": "1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Diversité des descendants",
+     "text": "Pourquoi les enfants d'un même couple ne sont-ils pas identiques, alors que les deux amibes issues d'une division le sont ?",
+     "solution": "La reproduction sexuée associe les informations héréditaires des deux parents de façon différente à chaque fécondation ; la division binaire recopie la même information."
+    },
+    {
+     "title": "Gamètes et fécondation",
+     "text": "1) Comment appelle-t-on les gamètes mâle et femelle chez les animaux ?\n2) Définir la fécondation.\n3) Comment appelle-t-on la cellule obtenue ?",
+     "solution": "1) Le spermatozoïde et l'ovule.\n2) L'union d'un gamète mâle et d'un gamète femelle.\n3) La cellule-œuf (zygote)."
+    },
+    {
+     "title": "Compatibilité",
+     "text": "Ahmed est du groupe O, Mariem du groupe AB.\n1) Ahmed peut-il donner son sang à Mariem ?\n2) Mariem peut-elle donner son sang à Ahmed ?",
+     "solution": "1) Oui, O est donneur universel.\n2) Non, le groupe O ne peut recevoir que du sang O."
+    },
+    {
+     "title": "La pollinisation",
+     "text": "1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Maladies cardiovasculaires",
+     "text": "1) Citer deux maladies de l'appareil circulatoire.\n2) Citer trois facteurs de risque.\n3) Proposer trois règles d'hygiène.",
+     "solution": "1) L'hypertension artérielle, l'infarctus, les varices.\n2) Le tabac, l'excès de sel et de graisses, la sédentarité, l'obésité.\n3) Pratiquer une activité physique, manger équilibré et peu salé, ne pas fumer."
+    },
+    {
+     "title": "Le cœur",
+     "text": "1) Combien de cavités possède le cœur ? Les nommer.\n2) Quel est le rôle des valvules ?\n3) Pourquoi la paroi du ventricule gauche est-elle plus épaisse ?",
+     "solution": "1) Quatre : oreillette droite, oreillette gauche, ventricule droit, ventricule gauche.\n2) Elles empêchent le sang de refluer (circulation à sens unique).\n3) Il propulse le sang dans tout le corps (grande circulation), il doit être plus puissant."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 36",
+   "term": 3,
+   "kind": "final",
+   "title": "Révision générale de l'année",
+   "covers": [
+    "Reproduction : définition",
+    "Reproduction asexuée : division binaire (amibe, paramécie…)",
+    "Reproduction sexuée : gamètes et fécondation",
+    "Modes de reproduction : ovipare",
+    "Modes de reproduction : vivipare, ovovivipare",
+    "Reproduction asexuée des végétaux : bourgeonnement, bouturage, marcottage, greffage",
+    "Plante à fleurs : organisation de la fleur",
+    "Pollinisation (définition et modes)"
+   ],
+   "items": [
+    {
+     "title": "Les fonctions du rein",
+     "text": "Définir : filtration, réabsorption, sécrétion.",
+     "solution": "Filtration : passage du plasma du sang vers le néphron (urine primitive).\nRéabsorption : retour dans le sang des substances utiles (eau, glucose).\nSécrétion : rejet de certaines substances du sang vers l'urine."
+    },
+    {
+     "title": "Croissance d'une population",
+     "text": "On place 1 paramécie dans un milieu favorable ; elle se divise toutes les 8 heures.\nCombien de paramécies y aura-t-il après 1 jour ? après 2 jours ?",
+     "solution": "1 jour = 3 divisions → 2³ = 8 ; 2 jours = 6 divisions → 2⁶ = 64."
+    },
+    {
+     "title": "Les zones humides",
+     "text": "1) Définir une zone humide.\n2) Citer deux rôles des zones humides.\n3) Citer une zone humide de Mauritanie.",
+     "solution": "1) Un milieu couvert d'eau de façon permanente ou temporaire (lac, mare, delta…).\n2) Réserve d'eau, refuge pour les oiseaux, zone de reproduction des poissons.\n3) Le lac d'Aleg, le Diawling, la mare de Mahmouda."
+    },
+    {
+     "title": "Le réseau trophique",
+     "text": "1) Qu'est-ce qu'un réseau trophique ?\n2) Pourquoi est-il plus stable qu'une simple chaîne ?",
+     "solution": "1) L'ensemble des chaînes alimentaires reliées entre elles dans un écosystème.\n2) Un consommateur peut changer de proie si l'une d'elles disparaît."
+    },
+    {
+     "title": "Sang riche et sang pauvre",
+     "text": "Dans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?",
+     "solution": "Riche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits."
+    },
+    {
+     "title": "Rupture d'une chaîne",
+     "text": "Dans la chaîne herbe → gazelle → guépard, que se passe-t-il si les gazelles disparaissent ?",
+     "solution": "Les guépards manquent de nourriture et diminuent ; l'herbe, moins consommée, se développe davantage."
+    },
+    {
+     "title": "La reproduction",
+     "text": "1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.",
+     "solution": "1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée."
+    },
+    {
+     "title": "Pollinisation du palmier",
+     "text": "Les agriculteurs de l'Adrar placent des fleurs mâles sur les palmiers femelles.\n1) Comment s'appelle cette opération ?\n2) Pourquoi est-elle nécessaire ?",
+     "solution": "1) La pollinisation artificielle.\n2) Le palmier est dioïque (pieds mâles et femelles séparés) : sans pollen, pas de dattes."
+    },
+    {
+     "title": "Les parties de la fleur",
+     "text": "Citer les quatre verticilles d'une fleur complète, de l'extérieur vers l'intérieur, et donner le rôle des étamines et du pistil.",
+     "solution": "Sépales (calice), pétales (corolle), étamines, pistil.\nÉtamines : organes mâles (produisent le pollen) ; pistil : organe femelle (contient les ovules)."
+    },
+    {
+     "title": "Les roches sédimentaires",
+     "text": "1) Définir une roche sédimentaire.\n2) Citer deux caractéristiques.\n3) Citer trois roches sédimentaires.",
+     "solution": "1) Une roche formée par l'accumulation et la consolidation de sédiments.\n2) Elle est disposée en couches (strates) et peut contenir des fossiles.\n3) Le sable, l'argile, le calcaire, le gypse."
+    },
+    {
+     "title": "Le Parc National du Diawling",
+     "text": "1) Où se trouve le Parc du Diawling ?\n2) Quel type de milieu protège-t-il ?",
+     "solution": "1) Dans le delta du fleuve Sénégal, au sud-ouest du pays.\n2) Des zones humides (lagunes, mangroves) riches en oiseaux et en poissons."
+    },
+    {
+     "title": "Reproduction et milieu",
+     "text": "Pourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?",
+     "solution": "Parce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre."
+    },
+    {
+     "title": "L'argile",
+     "text": "1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "La bilharziose",
+     "text": "1) Comment attrape-t-on la bilharziose ?\n2) Comment s'en protéger ?",
+     "solution": "1) En se baignant dans des eaux douces stagnantes contaminées par des larves (vecteur : un mollusque).\n2) Éviter les baignades dans ces eaux, utiliser des latrines, se faire soigner."
+    },
+    {
+     "title": "Chaîne marine",
+     "text": "Ranger : thon, phytoplancton, sardine, zooplancton.",
+     "solution": "Phytoplancton → zooplancton → sardine → thon."
+    },
+    {
+     "title": "Hygiène urinaire",
+     "text": "Citer trois règles d'hygiène de l'appareil urinaire et une maladie qui l'atteint.",
+     "solution": "Boire suffisamment d'eau, ne pas retenir l'urine trop longtemps, réduire le sel, hygiène intime.\nMaladie : infection urinaire, calculs rénaux, bilharziose."
+    },
+    {
+     "title": "Le néphron",
+     "text": "1) Qu'est-ce qu'un néphron ?\n2) Nommer ses parties principales.",
+     "solution": "1) L'unité fonctionnelle du rein qui fabrique l'urine.\n2) Le glomérule (dans la capsule de Bowman), le tube contourné, l'anse de Henlé, le tube collecteur."
+    },
+    {
+     "title": "La révolution cardiaque",
+     "text": "Nommer les trois phases de la révolution cardiaque dans l'ordre.",
+     "solution": "Systole auriculaire, systole ventriculaire, diastole générale."
+    },
+    {
+     "title": "Le gypse et le sel",
+     "text": "1) Comment se forment les roches salines ?\n2) Citer une roche saline et son utilisation.\n3) Où exploite-t-on le sel en Mauritanie ?",
+     "solution": "1) Par évaporation de l'eau de mer ou de lacs salés.\n2) Le gypse (plâtre) ou le sel gemme (alimentation).\n3) À la sebkha d'Idjil (et dans les salines du littoral)."
+    },
+    {
+     "title": "Artères et veines",
+     "text": "Compléter : Les … transportent le sang du cœur vers les organes ; les … ramènent le sang des organes vers le cœur ; les … permettent les échanges avec les cellules.",
+     "solution": "artères ; veines ; capillaires."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Semaine 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du 1er trimestre",
+   "covers": [
+    "Reproduction : définition",
+    "Reproduction asexuée : division binaire (amibe, paramécie…)",
+    "Reproduction sexuée : gamètes et fécondation",
+    "Modes de reproduction : ovipare",
+    "Modes de reproduction : vivipare, ovovivipare",
+    "Reproduction asexuée des végétaux : bourgeonnement, bouturage, marcottage, greffage",
+    "Plante à fleurs : organisation de la fleur",
+    "Pollinisation (définition et modes)"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Êtres unicellulaires\n1) Qu'est-ce qu'un être unicellulaire ?\n2) Citer deux exemples.\n3) Quel avantage présente la reproduction asexuée ?\n\nExercice 2 : Développement du criquet\nLe criquet pèlerin pond ses œufs dans le sable humide. Les larves qui éclosent ressemblent à l'adulte mais sans ailes.\n1) Le criquet est-il ovipare ?\n2) Comment s'appelle ce mode de développement par mues successives ?\n3) Pourquoi les pluies favorisent-elles les invasions ?\n\nExercice 3 : Mode de reproduction\nAssocier chaque animal à son mode : poule, chèvre, vipère, poisson tilapia, chamelle, tortue.",
+     "solution": "Exercice 1\n1) Un être vivant formé d'une seule cellule.\n2) L'amibe, la paramécie, les bactéries.\n3) Elle est rapide et ne nécessite pas de partenaire.\n\nExercice 2\n1) Oui.\n2) Un développement avec métamorphose incomplète (larves → mues → adulte ailé).\n3) Le sable humide permet l'éclosion des œufs et la végétation nourrit les larves.\n\nExercice 3\nOvipares : poule, tilapia, tortue ; vivipares : chèvre, chamelle ; ovovivipare : vipère."
+    },
+    {
+     "title": "Proposition 2 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Espèce\n1) Qu'est-ce qu'une espèce ?\n2) Un âne et une jument donnent un mulet stérile. Sont-ils de la même espèce ? Justifier.\n\nExercice 2 : Les ovipares\n1) Qu'est-ce qu'un animal ovipare ?\n2) Citer trois animaux ovipares.\n3) Quelle est la durée d'incubation d'un œuf de poule ?\n\nExercice 3 : Pollinisation du palmier\nLes agriculteurs de l'Adrar placent des fleurs mâles sur les palmiers femelles.\n1) Comment s'appelle cette opération ?\n2) Pourquoi est-elle nécessaire ?",
+     "solution": "Exercice 1\n1) Un ensemble d'individus semblables capables de se reproduire entre eux et de donner des descendants fertiles.\n2) Non : leur descendant (le mulet) n'est pas fertile.\n\nExercice 2\n1) Un animal qui pond des œufs dont le développement se fait à l'extérieur du corps de la mère.\n2) La poule, la tortue, le crocodile, le criquet.\n3) Environ 21 jours.\n\nExercice 3\n1) La pollinisation artificielle.\n2) Le palmier est dioïque (pieds mâles et femelles séparés) : sans pollen, pas de dattes."
+    },
+    {
+     "title": "Proposition 3 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Reproduction et milieu\nPourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?\n\nExercice 2 : Soins aux petits\nUne tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.\n\nExercice 3 : Le Fucus\n1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "Exercice 1\nParce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre.\n\nExercice 2\nLa tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit.\n\nExercice 3\n1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Proposition 4 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Croissance d'une population\nOn place 1 paramécie dans un milieu favorable ; elle se divise toutes les 8 heures.\nCombien de paramécies y aura-t-il après 1 jour ? après 2 jours ?\n\nExercice 2 : Les ovipares\n1) Qu'est-ce qu'un animal ovipare ?\n2) Citer trois animaux ovipares.\n3) Quelle est la durée d'incubation d'un œuf de poule ?\n\nExercice 3 : Le Fucus\n1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "Exercice 1\n1 jour = 3 divisions → 2³ = 8 ; 2 jours = 6 divisions → 2⁶ = 64.\n\nExercice 2\n1) Un animal qui pond des œufs dont le développement se fait à l'extérieur du corps de la mère.\n2) La poule, la tortue, le crocodile, le criquet.\n3) Environ 21 jours.\n\nExercice 3\n1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Proposition 5 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Êtres unicellulaires\n1) Qu'est-ce qu'un être unicellulaire ?\n2) Citer deux exemples.\n3) Quel avantage présente la reproduction asexuée ?\n\nExercice 2 : L'œuf de poule\nNommer les parties de l'œuf de poule et donner le rôle du jaune et du blanc.\n\nExercice 3 : Le Fucus\n1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "Exercice 1\n1) Un être vivant formé d'une seule cellule.\n2) L'amibe, la paramécie, les bactéries.\n3) Elle est rapide et ne nécessite pas de partenaire.\n\nExercice 2\nCoquille, membranes coquillières, chambre à air, blanc (albumen), jaune (vitellus), germe.\nLe jaune et le blanc sont des réserves nutritives pour l'embryon.\n\nExercice 3\n1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Proposition 6 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La reproduction\n1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.\n\nExercice 2 : Vivipares et ovovivipares\n1) Définir vivipare et ovovivipare.\n2) Classer : chèvre, vipère, homme, requin, dromadaire.\n\nExercice 3 : Mode de reproduction\nAssocier chaque animal à son mode : poule, chèvre, vipère, poisson tilapia, chamelle, tortue.",
+     "solution": "Exercice 1\n1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée.\n\nExercice 2\n1) Vivipare : le petit se développe dans l'utérus et naît vivant ; ovovivipare : l'œuf éclôt dans le corps de la mère.\n2) Vivipares : chèvre, homme, dromadaire ; ovovivipares : vipère, requin.\n\nExercice 3\nOvipares : poule, tilapia, tortue ; vivipares : chèvre, chamelle ; ovovivipare : vipère."
+    },
+    {
+     "title": "Proposition 7 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Reproduction et milieu\nPourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?\n\nExercice 2 : Les ovipares\n1) Qu'est-ce qu'un animal ovipare ?\n2) Citer trois animaux ovipares.\n3) Quelle est la durée d'incubation d'un œuf de poule ?\n\nExercice 3 : Le Fucus\n1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "Exercice 1\nParce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre.\n\nExercice 2\n1) Un animal qui pond des œufs dont le développement se fait à l'extérieur du corps de la mère.\n2) La poule, la tortue, le crocodile, le criquet.\n3) Environ 21 jours.\n\nExercice 3\n1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Proposition 8 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La reproduction\n1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.\n\nExercice 2 : Soins aux petits\nUne tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.\n\nExercice 3 : Graine et germination\nCiter les conditions nécessaires à la germination d'une graine.",
+     "solution": "Exercice 1\n1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée.\n\nExercice 2\nLa tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit.\n\nExercice 3\nDe l'eau, de l'air (dioxygène) et une température convenable."
+    },
+    {
+     "title": "Proposition 9 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La reproduction\n1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.\n\nExercice 2 : Diversité des descendants\nPourquoi les enfants d'un même couple ne sont-ils pas identiques, alors que les deux amibes issues d'une division le sont ?\n\nExercice 3 : La pollinisation\n1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "Exercice 1\n1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée.\n\nExercice 2\nLa reproduction sexuée associe les informations héréditaires des deux parents de façon différente à chaque fécondation ; la division binaire recopie la même information.\n\nExercice 3\n1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Proposition 10 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Sexuée ou asexuée ?\nClasser : la division de l'amibe ; la ponte de la poule ; le bouturage du manioc ; la naissance d'un chevreau ; les rejets du palmier.\n\nExercice 2 : L'œuf de poule\nNommer les parties de l'œuf de poule et donner le rôle du jaune et du blanc.\n\nExercice 3 : Fécondation chez les plantes à fleurs\n1) Où se trouvent les gamètes mâles et femelles d'une plante à fleurs ?\n2) Comment le gamète mâle atteint-il l'ovule ?\n3) Que devient la fleur après la fécondation ?",
+     "solution": "Exercice 1\nSexuée : ponte de la poule, naissance du chevreau.\nAsexuée : division de l'amibe, bouturage du manioc, rejets du palmier.\n\nExercice 2\nCoquille, membranes coquillières, chambre à air, blanc (albumen), jaune (vitellus), germe.\nLe jaune et le blanc sont des réserves nutritives pour l'embryon.\n\nExercice 3\n1) Mâles : dans les grains de pollen ; femelles : dans les ovules de l'ovaire.\n2) Le grain de pollen germe sur le stigmate et forme un tube pollinique qui descend jusqu'à l'ovule.\n3) Les pétales tombent, l'ovaire se transforme en fruit et les ovules en graines."
+    },
+    {
+     "title": "Proposition 11 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Reproduction et milieu\nPourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?\n\nExercice 2 : Développement du criquet\nLe criquet pèlerin pond ses œufs dans le sable humide. Les larves qui éclosent ressemblent à l'adulte mais sans ailes.\n1) Le criquet est-il ovipare ?\n2) Comment s'appelle ce mode de développement par mues successives ?\n3) Pourquoi les pluies favorisent-elles les invasions ?\n\nExercice 3 : La pollinisation\n1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "Exercice 1\nParce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre.\n\nExercice 2\n1) Oui.\n2) Un développement avec métamorphose incomplète (larves → mues → adulte ailé).\n3) Le sable humide permet l'éclosion des œufs et la végétation nourrit les larves.\n\nExercice 3\n1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Proposition 12 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Êtres unicellulaires\n1) Qu'est-ce qu'un être unicellulaire ?\n2) Citer deux exemples.\n3) Quel avantage présente la reproduction asexuée ?\n\nExercice 2 : Fécondation interne ou externe\n1) Différencier fécondation interne et externe.\n2) Classer : poisson, poule, grenouille, chèvre.\n\nExercice 3 : Gestation\nLa gestation de la chamelle dure environ 13 mois, celle de la chèvre 5 mois.\n1) Qu'est-ce que la gestation ?\n2) Comment l'embryon est-il nourri ?",
+     "solution": "Exercice 1\n1) Un être vivant formé d'une seule cellule.\n2) L'amibe, la paramécie, les bactéries.\n3) Elle est rapide et ne nécessite pas de partenaire.\n\nExercice 2\n1) Interne : dans le corps de la femelle ; externe : dans le milieu (souvent l'eau).\n2) Externe : poisson, grenouille ; interne : poule, chèvre.\n\nExercice 3\n1) La période de développement du petit dans l'utérus de la mère.\n2) Par le placenta, grâce au sang de la mère (cordon ombilical)."
+    },
+    {
+     "title": "Proposition 13 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La division binaire\n1) Comment se reproduit l'amibe ?\n2) Les deux cellules obtenues sont-elles identiques à la cellule mère ?\n3) Une bactérie se divise toutes les 20 minutes. Combien de bactéries obtient-on en 2 heures à partir d'une seule ?\n\nExercice 2 : Diversité des descendants\nPourquoi les enfants d'un même couple ne sont-ils pas identiques, alors que les deux amibes issues d'une division le sont ?\n\nExercice 3 : Le Fucus\n1) Le Fucus est-il une plante à fleurs ?\n2) Où vit-il ?\n3) Comment se fait sa fécondation ?",
+     "solution": "Exercice 1\n1) Par division binaire : elle se partage en deux cellules filles.\n2) Oui, elles sont identiques (même information héréditaire).\n3) 2 h = 6 divisions : 2⁶ = 64 bactéries.\n\nExercice 2\nLa reproduction sexuée associe les informations héréditaires des deux parents de façon différente à chaque fécondation ; la division binaire recopie la même information.\n\nExercice 3\n1) Non, c'est une algue brune.\n2) Sur les rochers du littoral marin.\n3) Les gamètes sont libérés dans l'eau de mer : la fécondation est externe."
+    },
+    {
+     "title": "Proposition 14 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Reproduction et milieu\nPourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?\n\nExercice 2 : Taille des gamètes\nLe spermatozoïde est très petit et mobile, l'ovule est gros et immobile. Expliquer l'intérêt de chacun de ces caractères.\n\nExercice 3 : Mode de reproduction\nAssocier chaque animal à son mode : poule, chèvre, vipère, poisson tilapia, chamelle, tortue.",
+     "solution": "Exercice 1\nParce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre.\n\nExercice 2\nLa mobilité permet au spermatozoïde de rejoindre l'ovule ; l'ovule contient des réserves nutritives pour le début du développement de l'embryon.\n\nExercice 3\nOvipares : poule, tilapia, tortue ; vivipares : chèvre, chamelle ; ovovivipare : vipère."
+    },
+    {
+     "title": "Proposition 15 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Êtres unicellulaires\n1) Qu'est-ce qu'un être unicellulaire ?\n2) Citer deux exemples.\n3) Quel avantage présente la reproduction asexuée ?\n\nExercice 2 : Soins aux petits\nUne tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.\n\nExercice 3 : Mode de reproduction\nAssocier chaque animal à son mode : poule, chèvre, vipère, poisson tilapia, chamelle, tortue.",
+     "solution": "Exercice 1\n1) Un être vivant formé d'une seule cellule.\n2) L'amibe, la paramécie, les bactéries.\n3) Elle est rapide et ne nécessite pas de partenaire.\n\nExercice 2\nLa tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit.\n\nExercice 3\nOvipares : poule, tilapia, tortue ; vivipares : chèvre, chamelle ; ovovivipare : vipère."
+    },
+    {
+     "title": "Proposition 16 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Sexuée ou asexuée ?\nClasser : la division de l'amibe ; la ponte de la poule ; le bouturage du manioc ; la naissance d'un chevreau ; les rejets du palmier.\n\nExercice 2 : Soins aux petits\nUne tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.\n\nExercice 3 : La pollinisation\n1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "Exercice 1\nSexuée : ponte de la poule, naissance du chevreau.\nAsexuée : division de l'amibe, bouturage du manioc, rejets du palmier.\n\nExercice 2\nLa tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit.\n\nExercice 3\n1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Proposition 17 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Reproduction et milieu\nPourquoi beaucoup d'animaux du Sahel se reproduisent-ils à la saison des pluies ?\n\nExercice 2 : Soins aux petits\nUne tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.\n\nExercice 3 : Pollinisation du palmier\nLes agriculteurs de l'Adrar placent des fleurs mâles sur les palmiers femelles.\n1) Comment s'appelle cette opération ?\n2) Pourquoi est-elle nécessaire ?",
+     "solution": "Exercice 1\nParce que la nourriture (herbe, insectes) et l'eau sont plus abondantes : les petits ont plus de chances de survivre.\n\nExercice 2\nLa tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit.\n\nExercice 3\n1) La pollinisation artificielle.\n2) Le palmier est dioïque (pieds mâles et femelles séparés) : sans pollen, pas de dattes."
+    },
+    {
+     "title": "Proposition 18 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Puberté et reproduction\nÀ partir de quel moment un être humain devient-il capable de se reproduire ? Comment appelle-t-on cette période ?\n\nExercice 2 : Soins aux petits\nUne tortue marine pond 100 œufs et les abandonne ; une chamelle a un seul petit qu'elle allaite longtemps. Expliquer ces différences de nombre de descendants.\n\nExercice 3 : Pollinisation du palmier\nLes agriculteurs de l'Adrar placent des fleurs mâles sur les palmiers femelles.\n1) Comment s'appelle cette opération ?\n2) Pourquoi est-elle nécessaire ?",
+     "solution": "Exercice 1\nÀ la puberté (vers 11–15 ans), quand les organes reproducteurs deviennent fonctionnels.\n\nExercice 2\nLa tortue ne protège pas ses petits : beaucoup meurent, d'où un grand nombre d'œufs. La chamelle protège et nourrit son petit : ses chances de survie sont grandes, un seul suffit.\n\nExercice 3\n1) La pollinisation artificielle.\n2) Le palmier est dioïque (pieds mâles et femelles séparés) : sans pollen, pas de dattes."
+    },
+    {
+     "title": "Proposition 19 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La division binaire\n1) Comment se reproduit l'amibe ?\n2) Les deux cellules obtenues sont-elles identiques à la cellule mère ?\n3) Une bactérie se divise toutes les 20 minutes. Combien de bactéries obtient-on en 2 heures à partir d'une seule ?\n\nExercice 2 : Diversité des descendants\nPourquoi les enfants d'un même couple ne sont-ils pas identiques, alors que les deux amibes issues d'une division le sont ?\n\nExercice 3 : La pollinisation\n1) Définir la pollinisation.\n2) Différencier autopollinisation et pollinisation croisée.\n3) Citer deux agents de pollinisation.",
+     "solution": "Exercice 1\n1) Par division binaire : elle se partage en deux cellules filles.\n2) Oui, elles sont identiques (même information héréditaire).\n3) 2 h = 6 divisions : 2⁶ = 64 bactéries.\n\nExercice 2\nLa reproduction sexuée associe les informations héréditaires des deux parents de façon différente à chaque fécondation ; la division binaire recopie la même information.\n\nExercice 3\n1) Le transport du pollen des étamines au stigmate.\n2) Auto : sur la même fleur (ou même plante) ; croisée : d'une plante à une autre.\n3) Le vent, les insectes (abeilles), les oiseaux, l'homme."
+    },
+    {
+     "title": "Proposition 20 — Examen du 1er trimestre",
+     "text": "Exercice 1 : La reproduction\n1) Définir la reproduction.\n2) Pourquoi est-elle indispensable à l'espèce ?\n3) Citer les deux grands types de reproduction.\n\nExercice 2 : Taille des gamètes\nLe spermatozoïde est très petit et mobile, l'ovule est gros et immobile. Expliquer l'intérêt de chacun de ces caractères.\n\nExercice 3 : Gestation\nLa gestation de la chamelle dure environ 13 mois, celle de la chèvre 5 mois.\n1) Qu'est-ce que la gestation ?\n2) Comment l'embryon est-il nourri ?",
+     "solution": "Exercice 1\n1) La fonction par laquelle les êtres vivants produisent de nouveaux individus de la même espèce.\n2) Elle assure la continuité de l'espèce (remplacement des individus qui meurent).\n3) La reproduction asexuée et la reproduction sexuée.\n\nExercice 2\nLa mobilité permet au spermatozoïde de rejoindre l'ovule ; l'ovule contient des réserves nutritives pour le début du développement de l'embryon.\n\nExercice 3\n1) La période de développement du petit dans l'utérus de la mère.\n2) Par le placenta, grâce au sang de la mère (cordon ombilical)."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du 2e trimestre",
+   "covers": [
+    "Composition du sang : globules rouges et blancs, plaquettes, plasma",
+    "Groupes sanguins",
+    "Anatomie du cœur",
+    "Appareil circulatoire : grande et petite circulation, artères et veines",
+    "Activité spontanée du cœur : cardiographe, révolution cardiaque",
+    "Hygiène de l’appareil circulatoire",
+    "TD",
+    "Composition de l’urine"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volume de sang\nUn adulte a environ 5 L de sang ; le plasma en représente 55 %.\nCalculer le volume de plasma et le volume des éléments figurés.\n\nExercice 2 : Maladies cardiovasculaires\n1) Citer deux maladies de l'appareil circulatoire.\n2) Citer trois facteurs de risque.\n3) Proposer trois règles d'hygiène.\n\nExercice 3 : Hygiène urinaire\nCiter trois règles d'hygiène de l'appareil urinaire et une maladie qui l'atteint.",
+     "solution": "Exercice 1\nPlasma : 5 × 55 ÷ 100 = 2,75 L ; éléments figurés : 5 − 2,75 = 2,25 L.\n\nExercice 2\n1) L'hypertension artérielle, l'infarctus, les varices.\n2) Le tabac, l'excès de sel et de graisses, la sédentarité, l'obésité.\n3) Pratiquer une activité physique, manger équilibré et peu salé, ne pas fumer.\n\nExercice 3\nBoire suffisamment d'eau, ne pas retenir l'urine trop longtemps, réduire le sel, hygiène intime.\nMaladie : infection urinaire, calculs rénaux, bilharziose."
+    },
+    {
+     "title": "Proposition 2 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Groupes sanguins et transfusion\n1) Citer les quatre groupes sanguins du système ABO.\n2) Quel groupe est donneur universel ? receveur universel ?\n3) Une personne du groupe A peut-elle recevoir du sang du groupe B ?\n\nExercice 2 : La révolution cardiaque\nNommer les trois phases de la révolution cardiaque dans l'ordre.\n\nExercice 3 : L'urine\n1) Quel est le principal déchet éliminé par l'urine ?\n2) Quel volume d'urine un adulte élimine-t-il par jour environ ?\n3) Que signifie la présence de glucose dans l'urine ?",
+     "solution": "Exercice 1\n1) A, B, AB, O.\n2) Donneur universel : O ; receveur universel : AB.\n3) Non (agglutination).\n\nExercice 2\nSystole auriculaire, systole ventriculaire, diastole générale.\n\nExercice 3\n1) L'urée.\n2) Environ 1,5 L.\n3) Une maladie possible : le diabète."
+    },
+    {
+     "title": "Proposition 3 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Compatibilité\nAhmed est du groupe O, Mariem du groupe AB.\n1) Ahmed peut-il donner son sang à Mariem ?\n2) Mariem peut-elle donner son sang à Ahmed ?\n\nExercice 2 : Sang riche et sang pauvre\nDans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?\n\nExercice 3 : Hygiène urinaire\nCiter trois règles d'hygiène de l'appareil urinaire et une maladie qui l'atteint.",
+     "solution": "Exercice 1\n1) Oui, O est donneur universel.\n2) Non, le groupe O ne peut recevoir que du sang O.\n\nExercice 2\nRiche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits.\n\nExercice 3\nBoire suffisamment d'eau, ne pas retenir l'urine trop longtemps, réduire le sel, hygiène intime.\nMaladie : infection urinaire, calculs rénaux, bilharziose."
+    },
+    {
+     "title": "Proposition 4 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Le cœur\n1) Combien de cavités possède le cœur ? Les nommer.\n2) Quel est le rôle des valvules ?\n3) Pourquoi la paroi du ventricule gauche est-elle plus épaisse ?\n\nExercice 2 : Effort et rythme\nPendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.\n\nExercice 3 : Urine primitive\nLes reins filtrent environ 180 L de plasma par jour mais l'on n'élimine qu'environ 1,5 L d'urine.\n1) Calculer le volume réabsorbé.\n2) Quel pourcentage est réabsorbé ?",
+     "solution": "Exercice 1\n1) Quatre : oreillette droite, oreillette gauche, ventricule droit, ventricule gauche.\n2) Elles empêchent le sang de refluer (circulation à sens unique).\n3) Il propulse le sang dans tout le corps (grande circulation), il doit être plus puissant.\n\nExercice 2\nLes muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin.\n\nExercice 3\n1) 180 − 1,5 = 178,5 L.\n2) 178,5 ÷ 180 × 100 ≈ 99,2 %."
+    },
+    {
+     "title": "Proposition 5 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Analyse de sang\nLes résultats d'une analyse indiquent 3,2 millions de globules rouges par mm³ (normale : 4,5 à 5,5 millions).\n1) Le résultat est-il normal ?\n2) Comment s'appelle ce trouble ?\n3) Quel conseil alimentaire donner ?\n\nExercice 2 : Effort et rythme\nPendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.\n\nExercice 3 : L'appareil urinaire\nCiter dans l'ordre les organes de l'appareil urinaire traversés par l'urine.",
+     "solution": "Exercice 1\n1) Non, il est inférieur à la normale.\n2) L'anémie.\n3) Manger des aliments riches en fer (viande, foie, lentilles, épinards).\n\nExercice 2\nLes muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin.\n\nExercice 3\nReins → uretères → vessie → urètre."
+    },
+    {
+     "title": "Proposition 6 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Compatibilité\nAhmed est du groupe O, Mariem du groupe AB.\n1) Ahmed peut-il donner son sang à Mariem ?\n2) Mariem peut-elle donner son sang à Ahmed ?\n\nExercice 2 : La fréquence cardiaque\nAu repos, le cœur d'un élève bat 72 fois par minute ; il éjecte 70 mL de sang à chaque battement.\n1) Calculer le débit cardiaque en L/min.\n2) Combien de battements en une heure ?\n\nExercice 3 : La bilharziose\n1) Comment attrape-t-on la bilharziose ?\n2) Comment s'en protéger ?",
+     "solution": "Exercice 1\n1) Oui, O est donneur universel.\n2) Non, le groupe O ne peut recevoir que du sang O.\n\nExercice 2\n1) 72 × 70 = 5 040 mL/min ≈ 5 L/min.\n2) 72 × 60 = 4 320 battements.\n\nExercice 3\n1) En se baignant dans des eaux douces stagnantes contaminées par des larves (vecteur : un mollusque).\n2) Éviter les baignades dans ces eaux, utiliser des latrines, se faire soigner."
+    },
+    {
+     "title": "Proposition 7 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volume de sang\nUn adulte a environ 5 L de sang ; le plasma en représente 55 %.\nCalculer le volume de plasma et le volume des éléments figurés.\n\nExercice 2 : Effort et rythme\nPendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.\n\nExercice 3 : Urine primitive\nLes reins filtrent environ 180 L de plasma par jour mais l'on n'élimine qu'environ 1,5 L d'urine.\n1) Calculer le volume réabsorbé.\n2) Quel pourcentage est réabsorbé ?",
+     "solution": "Exercice 1\nPlasma : 5 × 55 ÷ 100 = 2,75 L ; éléments figurés : 5 − 2,75 = 2,25 L.\n\nExercice 2\nLes muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin.\n\nExercice 3\n1) 180 − 1,5 = 178,5 L.\n2) 178,5 ÷ 180 × 100 ≈ 99,2 %."
+    },
+    {
+     "title": "Proposition 8 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Le cœur\n1) Combien de cavités possède le cœur ? Les nommer.\n2) Quel est le rôle des valvules ?\n3) Pourquoi la paroi du ventricule gauche est-elle plus épaisse ?\n\nExercice 2 : La révolution cardiaque\nNommer les trois phases de la révolution cardiaque dans l'ordre.\n\nExercice 3 : Le néphron\n1) Qu'est-ce qu'un néphron ?\n2) Nommer ses parties principales.",
+     "solution": "Exercice 1\n1) Quatre : oreillette droite, oreillette gauche, ventricule droit, ventricule gauche.\n2) Elles empêchent le sang de refluer (circulation à sens unique).\n3) Il propulse le sang dans tout le corps (grande circulation), il doit être plus puissant.\n\nExercice 2\nSystole auriculaire, systole ventriculaire, diastole générale.\n\nExercice 3\n1) L'unité fonctionnelle du rein qui fabrique l'urine.\n2) Le glomérule (dans la capsule de Bowman), le tube contourné, l'anse de Henlé, le tube collecteur."
+    },
+    {
+     "title": "Proposition 9 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Grande et petite circulation\n1) Décrire le trajet de la petite circulation.\n2) Décrire le trajet de la grande circulation.\n\nExercice 2 : Effort et rythme\nPendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.\n\nExercice 3 : Hygiène urinaire\nCiter trois règles d'hygiène de l'appareil urinaire et une maladie qui l'atteint.",
+     "solution": "Exercice 1\n1) Ventricule droit → artère pulmonaire → poumons → veines pulmonaires → oreillette gauche.\n2) Ventricule gauche → aorte → organes → veines caves → oreillette droite.\n\nExercice 2\nLes muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin.\n\nExercice 3\nBoire suffisamment d'eau, ne pas retenir l'urine trop longtemps, réduire le sel, hygiène intime.\nMaladie : infection urinaire, calculs rénaux, bilharziose."
+    },
+    {
+     "title": "Proposition 10 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Analyse de sang\nLes résultats d'une analyse indiquent 3,2 millions de globules rouges par mm³ (normale : 4,5 à 5,5 millions).\n1) Le résultat est-il normal ?\n2) Comment s'appelle ce trouble ?\n3) Quel conseil alimentaire donner ?\n\nExercice 2 : Sang riche et sang pauvre\nDans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?\n\nExercice 3 : Urine primitive\nLes reins filtrent environ 180 L de plasma par jour mais l'on n'élimine qu'environ 1,5 L d'urine.\n1) Calculer le volume réabsorbé.\n2) Quel pourcentage est réabsorbé ?",
+     "solution": "Exercice 1\n1) Non, il est inférieur à la normale.\n2) L'anémie.\n3) Manger des aliments riches en fer (viande, foie, lentilles, épinards).\n\nExercice 2\nRiche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits.\n\nExercice 3\n1) 180 − 1,5 = 178,5 L.\n2) 178,5 ÷ 180 × 100 ≈ 99,2 %."
+    },
+    {
+     "title": "Proposition 11 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volume de sang\nUn adulte a environ 5 L de sang ; le plasma en représente 55 %.\nCalculer le volume de plasma et le volume des éléments figurés.\n\nExercice 2 : Maladies cardiovasculaires\n1) Citer deux maladies de l'appareil circulatoire.\n2) Citer trois facteurs de risque.\n3) Proposer trois règles d'hygiène.\n\nExercice 3 : La bilharziose\n1) Comment attrape-t-on la bilharziose ?\n2) Comment s'en protéger ?",
+     "solution": "Exercice 1\nPlasma : 5 × 55 ÷ 100 = 2,75 L ; éléments figurés : 5 − 2,75 = 2,25 L.\n\nExercice 2\n1) L'hypertension artérielle, l'infarctus, les varices.\n2) Le tabac, l'excès de sel et de graisses, la sédentarité, l'obésité.\n3) Pratiquer une activité physique, manger équilibré et peu salé, ne pas fumer.\n\nExercice 3\n1) En se baignant dans des eaux douces stagnantes contaminées par des larves (vecteur : un mollusque).\n2) Éviter les baignades dans ces eaux, utiliser des latrines, se faire soigner."
+    },
+    {
+     "title": "Proposition 12 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Groupes sanguins et transfusion\n1) Citer les quatre groupes sanguins du système ABO.\n2) Quel groupe est donneur universel ? receveur universel ?\n3) Une personne du groupe A peut-elle recevoir du sang du groupe B ?\n\nExercice 2 : La fréquence cardiaque\nAu repos, le cœur d'un élève bat 72 fois par minute ; il éjecte 70 mL de sang à chaque battement.\n1) Calculer le débit cardiaque en L/min.\n2) Combien de battements en une heure ?\n\nExercice 3 : Le néphron\n1) Qu'est-ce qu'un néphron ?\n2) Nommer ses parties principales.",
+     "solution": "Exercice 1\n1) A, B, AB, O.\n2) Donneur universel : O ; receveur universel : AB.\n3) Non (agglutination).\n\nExercice 2\n1) 72 × 70 = 5 040 mL/min ≈ 5 L/min.\n2) 72 × 60 = 4 320 battements.\n\nExercice 3\n1) L'unité fonctionnelle du rein qui fabrique l'urine.\n2) Le glomérule (dans la capsule de Bowman), le tube contourné, l'anse de Henlé, le tube collecteur."
+    },
+    {
+     "title": "Proposition 13 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Analyse de sang\nLes résultats d'une analyse indiquent 3,2 millions de globules rouges par mm³ (normale : 4,5 à 5,5 millions).\n1) Le résultat est-il normal ?\n2) Comment s'appelle ce trouble ?\n3) Quel conseil alimentaire donner ?\n\nExercice 2 : La révolution cardiaque\nNommer les trois phases de la révolution cardiaque dans l'ordre.\n\nExercice 3 : La bilharziose\n1) Comment attrape-t-on la bilharziose ?\n2) Comment s'en protéger ?",
+     "solution": "Exercice 1\n1) Non, il est inférieur à la normale.\n2) L'anémie.\n3) Manger des aliments riches en fer (viande, foie, lentilles, épinards).\n\nExercice 2\nSystole auriculaire, systole ventriculaire, diastole générale.\n\nExercice 3\n1) En se baignant dans des eaux douces stagnantes contaminées par des larves (vecteur : un mollusque).\n2) Éviter les baignades dans ces eaux, utiliser des latrines, se faire soigner."
+    },
+    {
+     "title": "Proposition 14 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Volume de sang\nUn adulte a environ 5 L de sang ; le plasma en représente 55 %.\nCalculer le volume de plasma et le volume des éléments figurés.\n\nExercice 2 : Sang riche et sang pauvre\nDans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?\n\nExercice 3 : L'urine\n1) Quel est le principal déchet éliminé par l'urine ?\n2) Quel volume d'urine un adulte élimine-t-il par jour environ ?\n3) Que signifie la présence de glucose dans l'urine ?",
+     "solution": "Exercice 1\nPlasma : 5 × 55 ÷ 100 = 2,75 L ; éléments figurés : 5 − 2,75 = 2,25 L.\n\nExercice 2\nRiche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits.\n\nExercice 3\n1) L'urée.\n2) Environ 1,5 L.\n3) Une maladie possible : le diabète."
+    },
+    {
+     "title": "Proposition 15 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Grande et petite circulation\n1) Décrire le trajet de la petite circulation.\n2) Décrire le trajet de la grande circulation.\n\nExercice 2 : Artères et veines\nCompléter : Les … transportent le sang du cœur vers les organes ; les … ramènent le sang des organes vers le cœur ; les … permettent les échanges avec les cellules.\n\nExercice 3 : Les fonctions du rein\nDéfinir : filtration, réabsorption, sécrétion.",
+     "solution": "Exercice 1\n1) Ventricule droit → artère pulmonaire → poumons → veines pulmonaires → oreillette gauche.\n2) Ventricule gauche → aorte → organes → veines caves → oreillette droite.\n\nExercice 2\nartères ; veines ; capillaires.\n\nExercice 3\nFiltration : passage du plasma du sang vers le néphron (urine primitive).\nRéabsorption : retour dans le sang des substances utiles (eau, glucose).\nSécrétion : rejet de certaines substances du sang vers l'urine."
+    },
+    {
+     "title": "Proposition 16 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Groupes sanguins et transfusion\n1) Citer les quatre groupes sanguins du système ABO.\n2) Quel groupe est donneur universel ? receveur universel ?\n3) Une personne du groupe A peut-elle recevoir du sang du groupe B ?\n\nExercice 2 : Sang riche et sang pauvre\nDans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?\n\nExercice 3 : Hygiène urinaire\nCiter trois règles d'hygiène de l'appareil urinaire et une maladie qui l'atteint.",
+     "solution": "Exercice 1\n1) A, B, AB, O.\n2) Donneur universel : O ; receveur universel : AB.\n3) Non (agglutination).\n\nExercice 2\nRiche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits.\n\nExercice 3\nBoire suffisamment d'eau, ne pas retenir l'urine trop longtemps, réduire le sel, hygiène intime.\nMaladie : infection urinaire, calculs rénaux, bilharziose."
+    },
+    {
+     "title": "Proposition 17 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Groupes sanguins et transfusion\n1) Citer les quatre groupes sanguins du système ABO.\n2) Quel groupe est donneur universel ? receveur universel ?\n3) Une personne du groupe A peut-elle recevoir du sang du groupe B ?\n\nExercice 2 : La révolution cardiaque\nNommer les trois phases de la révolution cardiaque dans l'ordre.\n\nExercice 3 : Le néphron\n1) Qu'est-ce qu'un néphron ?\n2) Nommer ses parties principales.",
+     "solution": "Exercice 1\n1) A, B, AB, O.\n2) Donneur universel : O ; receveur universel : AB.\n3) Non (agglutination).\n\nExercice 2\nSystole auriculaire, systole ventriculaire, diastole générale.\n\nExercice 3\n1) L'unité fonctionnelle du rein qui fabrique l'urine.\n2) Le glomérule (dans la capsule de Bowman), le tube contourné, l'anse de Henlé, le tube collecteur."
+    },
+    {
+     "title": "Proposition 18 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Compatibilité\nAhmed est du groupe O, Mariem du groupe AB.\n1) Ahmed peut-il donner son sang à Mariem ?\n2) Mariem peut-elle donner son sang à Ahmed ?\n\nExercice 2 : Effort et rythme\nPendant une course, le rythme cardiaque passe de 70 à 140 battements par minute. Expliquer pourquoi.\n\nExercice 3 : L'appareil urinaire\nCiter dans l'ordre les organes de l'appareil urinaire traversés par l'urine.",
+     "solution": "Exercice 1\n1) Oui, O est donneur universel.\n2) Non, le groupe O ne peut recevoir que du sang O.\n\nExercice 2\nLes muscles consomment plus de dioxygène et de nutriments : le cœur bat plus vite pour augmenter le débit sanguin.\n\nExercice 3\nReins → uretères → vessie → urètre."
+    },
+    {
+     "title": "Proposition 19 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Compatibilité\nAhmed est du groupe O, Mariem du groupe AB.\n1) Ahmed peut-il donner son sang à Mariem ?\n2) Mariem peut-elle donner son sang à Ahmed ?\n\nExercice 2 : Sang riche et sang pauvre\nDans quelles cavités du cœur circule le sang riche en dioxygène ? le sang riche en CO₂ ?\n\nExercice 3 : Le néphron\n1) Qu'est-ce qu'un néphron ?\n2) Nommer ses parties principales.",
+     "solution": "Exercice 1\n1) Oui, O est donneur universel.\n2) Non, le groupe O ne peut recevoir que du sang O.\n\nExercice 2\nRiche en O₂ : oreillette et ventricule gauches. Riche en CO₂ : oreillette et ventricule droits.\n\nExercice 3\n1) L'unité fonctionnelle du rein qui fabrique l'urine.\n2) Le glomérule (dans la capsule de Bowman), le tube contourné, l'anse de Henlé, le tube collecteur."
+    },
+    {
+     "title": "Proposition 20 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Grande et petite circulation\n1) Décrire le trajet de la petite circulation.\n2) Décrire le trajet de la grande circulation.\n\nExercice 2 : Maladies cardiovasculaires\n1) Citer deux maladies de l'appareil circulatoire.\n2) Citer trois facteurs de risque.\n3) Proposer trois règles d'hygiène.\n\nExercice 3 : L'appareil urinaire\nCiter dans l'ordre les organes de l'appareil urinaire traversés par l'urine.",
+     "solution": "Exercice 1\n1) Ventricule droit → artère pulmonaire → poumons → veines pulmonaires → oreillette gauche.\n2) Ventricule gauche → aorte → organes → veines caves → oreillette droite.\n\nExercice 2\n1) L'hypertension artérielle, l'infarctus, les varices.\n2) Le tabac, l'excès de sel et de graisses, la sédentarité, l'obésité.\n3) Pratiquer une activité physique, manger équilibré et peu salé, ne pas fumer.\n\nExercice 3\nReins → uretères → vessie → urètre."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du 3e trimestre",
+   "covers": [
+    "Exemples d’écosystèmes : terrestres et océaniques",
+    "Aires protégées : PNBA, Parc National de Diawling",
+    "Zones humides : définition, importance, exemple",
+    "Chaînes alimentaires : définition, maillons, exemple",
+    "Notion de réseau trophique",
+    "Roches sédimentaires : définitions, caractéristiques, origines",
+    "Processus de formation des roches sédimentaires",
+    "Roches siliceuses : le sable"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Écosystèmes de Mauritanie\nCiter un écosystème terrestre et un écosystème océanique de Mauritanie et deux êtres vivants de chacun.\n\nExercice 2 : Formation d'une roche sédimentaire\nRanger dans l'ordre : transport, érosion, dépôt (sédimentation), consolidation (diagenèse).\n\nExercice 3 : Le gypse et le sel\n1) Comment se forment les roches salines ?\n2) Citer une roche saline et son utilisation.\n3) Où exploite-t-on le sel en Mauritanie ?",
+     "solution": "Exercice 1\nTerrestre : le désert (dromadaire, acacia) ; océanique : le littoral atlantique (mulet jaune, poulpe).\n\nExercice 2\nÉrosion → transport → dépôt → consolidation.\n\nExercice 3\n1) Par évaporation de l'eau de mer ou de lacs salés.\n2) Le gypse (plâtre) ou le sel gemme (alimentation).\n3) À la sebkha d'Idjil (et dans les salines du littoral)."
+    },
+    {
+     "title": "Proposition 2 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Écosystèmes de Mauritanie\nCiter un écosystème terrestre et un écosystème océanique de Mauritanie et deux êtres vivants de chacun.\n\nExercice 2 : Le réseau trophique\n1) Qu'est-ce qu'un réseau trophique ?\n2) Pourquoi est-il plus stable qu'une simple chaîne ?\n\nExercice 3 : L'argile\n1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "Exercice 1\nTerrestre : le désert (dromadaire, acacia) ; océanique : le littoral atlantique (mulet jaune, poulpe).\n\nExercice 2\n1) L'ensemble des chaînes alimentaires reliées entre elles dans un écosystème.\n2) Un consommateur peut changer de proie si l'une d'elles disparaît.\n\nExercice 3\n1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "Proposition 3 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Facteurs du milieu\nCiter trois facteurs physiques qui caractérisent un biotope désertique.\n\nExercice 2 : Les roches sédimentaires\n1) Définir une roche sédimentaire.\n2) Citer deux caractéristiques.\n3) Citer trois roches sédimentaires.\n\nExercice 3 : Le sable\n1) De quel minéral est principalement formé le sable ?\n2) Le sable est-il meuble ou consolidé ?\n3) Citer deux utilisations du sable.",
+     "solution": "Exercice 1\nFaible pluviométrie, températures élevées, sol sableux, vents forts.\n\nExercice 2\n1) Une roche formée par l'accumulation et la consolidation de sédiments.\n2) Elle est disposée en couches (strates) et peut contenir des fossiles.\n3) Le sable, l'argile, le calcaire, le gypse.\n\nExercice 3\n1) Le quartz.\n2) Meuble.\n3) Construction (béton), fabrication du verre."
+    },
+    {
+     "title": "Proposition 4 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Facteurs du milieu\nCiter trois facteurs physiques qui caractérisent un biotope désertique.\n\nExercice 2 : Décomposeurs\nQuel est le rôle des décomposeurs ? Citer deux exemples.\n\nExercice 3 : L'argile\n1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "Exercice 1\nFaible pluviométrie, températures élevées, sol sableux, vents forts.\n\nExercice 2\nIls transforment la matière organique morte en matière minérale utilisable par les plantes. Exemples : bactéries, champignons, vers de terre.\n\nExercice 3\n1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "Proposition 5 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Écosystèmes de Mauritanie\nCiter un écosystème terrestre et un écosystème océanique de Mauritanie et deux êtres vivants de chacun.\n\nExercice 2 : Les roches sédimentaires\n1) Définir une roche sédimentaire.\n2) Citer deux caractéristiques.\n3) Citer trois roches sédimentaires.\n\nExercice 3 : Le sable\n1) De quel minéral est principalement formé le sable ?\n2) Le sable est-il meuble ou consolidé ?\n3) Citer deux utilisations du sable.",
+     "solution": "Exercice 1\nTerrestre : le désert (dromadaire, acacia) ; océanique : le littoral atlantique (mulet jaune, poulpe).\n\nExercice 2\n1) Une roche formée par l'accumulation et la consolidation de sédiments.\n2) Elle est disposée en couches (strates) et peut contenir des fossiles.\n3) Le sable, l'argile, le calcaire, le gypse.\n\nExercice 3\n1) Le quartz.\n2) Meuble.\n3) Construction (béton), fabrication du verre."
+    },
+    {
+     "title": "Proposition 6 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Banc d'Arguin\n1) Où se situe le PNBA ?\n2) Pourquoi est-il célèbre ?\n3) Pourquoi le protéger ?\n\nExercice 2 : Décomposeurs\nQuel est le rôle des décomposeurs ? Citer deux exemples.\n\nExercice 3 : Le gypse et le sel\n1) Comment se forment les roches salines ?\n2) Citer une roche saline et son utilisation.\n3) Où exploite-t-on le sel en Mauritanie ?",
+     "solution": "Exercice 1\n1) Sur le littoral atlantique, entre Nouakchott et Nouadhibou.\n2) Il accueille des millions d'oiseaux migrateurs et c'est une zone de reproduction des poissons.\n3) Pour préserver la biodiversité et les ressources de pêche.\n\nExercice 2\nIls transforment la matière organique morte en matière minérale utilisable par les plantes. Exemples : bactéries, champignons, vers de terre.\n\nExercice 3\n1) Par évaporation de l'eau de mer ou de lacs salés.\n2) Le gypse (plâtre) ou le sel gemme (alimentation).\n3) À la sebkha d'Idjil (et dans les salines du littoral)."
+    },
+    {
+     "title": "Proposition 7 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Banc d'Arguin\n1) Où se situe le PNBA ?\n2) Pourquoi est-il célèbre ?\n3) Pourquoi le protéger ?\n\nExercice 2 : Chaîne marine\nRanger : thon, phytoplancton, sardine, zooplancton.\n\nExercice 3 : Strates\nDans une falaise, une couche A est située au-dessus d'une couche B. Laquelle s'est déposée en premier ? Quel principe utilise-t-on ?",
+     "solution": "Exercice 1\n1) Sur le littoral atlantique, entre Nouakchott et Nouadhibou.\n2) Il accueille des millions d'oiseaux migrateurs et c'est une zone de reproduction des poissons.\n3) Pour préserver la biodiversité et les ressources de pêche.\n\nExercice 2\nPhytoplancton → zooplancton → sardine → thon.\n\nExercice 3\nLa couche B (en dessous) ; principe de superposition."
+    },
+    {
+     "title": "Proposition 8 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Banc d'Arguin\n1) Où se situe le PNBA ?\n2) Pourquoi est-il célèbre ?\n3) Pourquoi le protéger ?\n\nExercice 2 : Formation d'une roche sédimentaire\nRanger dans l'ordre : transport, érosion, dépôt (sédimentation), consolidation (diagenèse).\n\nExercice 3 : L'argile\n1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "Exercice 1\n1) Sur le littoral atlantique, entre Nouakchott et Nouadhibou.\n2) Il accueille des millions d'oiseaux migrateurs et c'est une zone de reproduction des poissons.\n3) Pour préserver la biodiversité et les ressources de pêche.\n\nExercice 2\nÉrosion → transport → dépôt → consolidation.\n\nExercice 3\n1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "Proposition 9 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Banc d'Arguin\n1) Où se situe le PNBA ?\n2) Pourquoi est-il célèbre ?\n3) Pourquoi le protéger ?\n\nExercice 2 : Le réseau trophique\n1) Qu'est-ce qu'un réseau trophique ?\n2) Pourquoi est-il plus stable qu'une simple chaîne ?\n\nExercice 3 : Le pétrole\n1) Quelle est l'origine du pétrole ?\n2) Pourquoi dit-on que c'est une énergie non renouvelable ?\n3) Citer deux produits tirés du pétrole.",
+     "solution": "Exercice 1\n1) Sur le littoral atlantique, entre Nouakchott et Nouadhibou.\n2) Il accueille des millions d'oiseaux migrateurs et c'est une zone de reproduction des poissons.\n3) Pour préserver la biodiversité et les ressources de pêche.\n\nExercice 2\n1) L'ensemble des chaînes alimentaires reliées entre elles dans un écosystème.\n2) Un consommateur peut changer de proie si l'une d'elles disparaît.\n\nExercice 3\n1) La transformation de restes d'êtres vivants marins enfouis dans les sédiments pendant des millions d'années.\n2) Sa formation est très lente : les réserves s'épuisent.\n3) Essence, gasoil, gaz butane, plastiques."
+    },
+    {
+     "title": "Proposition 10 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Écosystèmes de Mauritanie\nCiter un écosystème terrestre et un écosystème océanique de Mauritanie et deux êtres vivants de chacun.\n\nExercice 2 : Le réseau trophique\n1) Qu'est-ce qu'un réseau trophique ?\n2) Pourquoi est-il plus stable qu'une simple chaîne ?\n\nExercice 3 : Strates\nDans une falaise, une couche A est située au-dessus d'une couche B. Laquelle s'est déposée en premier ? Quel principe utilise-t-on ?",
+     "solution": "Exercice 1\nTerrestre : le désert (dromadaire, acacia) ; océanique : le littoral atlantique (mulet jaune, poulpe).\n\nExercice 2\n1) L'ensemble des chaînes alimentaires reliées entre elles dans un écosystème.\n2) Un consommateur peut changer de proie si l'une d'elles disparaît.\n\nExercice 3\nLa couche B (en dessous) ; principe de superposition."
+    },
+    {
+     "title": "Proposition 11 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Construire une chaîne alimentaire\nRanger dans une chaîne alimentaire : chacal, herbe, criquet, lézard. Nommer le producteur et les consommateurs.\n\nExercice 2 : Décomposeurs\nQuel est le rôle des décomposeurs ? Citer deux exemples.\n\nExercice 3 : L'argile\n1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "Exercice 1\nHerbe → criquet → lézard → chacal.\nProducteur : herbe ; consommateurs : criquet (I), lézard (II), chacal (III).\n\nExercice 2\nIls transforment la matière organique morte en matière minérale utilisable par les plantes. Exemples : bactéries, champignons, vers de terre.\n\nExercice 3\n1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "Proposition 12 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Facteurs du milieu\nCiter trois facteurs physiques qui caractérisent un biotope désertique.\n\nExercice 2 : Formation d'une roche sédimentaire\nRanger dans l'ordre : transport, érosion, dépôt (sédimentation), consolidation (diagenèse).\n\nExercice 3 : Le calcaire\n1) Comment reconnaître le calcaire ?\n2) Quelle est son origine ?\n3) Une utilisation ?",
+     "solution": "Exercice 1\nFaible pluviométrie, températures élevées, sol sableux, vents forts.\n\nExercice 2\nÉrosion → transport → dépôt → consolidation.\n\nExercice 3\n1) Il fait effervescence avec un acide.\n2) L'accumulation de coquilles et de squelettes calcaires d'êtres marins.\n3) Fabrication de la chaux et du ciment."
+    },
+    {
+     "title": "Proposition 13 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Les zones humides\n1) Définir une zone humide.\n2) Citer deux rôles des zones humides.\n3) Citer une zone humide de Mauritanie.\n\nExercice 2 : Formation d'une roche sédimentaire\nRanger dans l'ordre : transport, érosion, dépôt (sédimentation), consolidation (diagenèse).\n\nExercice 3 : L'argile\n1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "Exercice 1\n1) Un milieu couvert d'eau de façon permanente ou temporaire (lac, mare, delta…).\n2) Réserve d'eau, refuge pour les oiseaux, zone de reproduction des poissons.\n3) Le lac d'Aleg, le Diawling, la mare de Mahmouda.\n\nExercice 2\nÉrosion → transport → dépôt → consolidation.\n\nExercice 3\n1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "Proposition 14 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Facteurs du milieu\nCiter trois facteurs physiques qui caractérisent un biotope désertique.\n\nExercice 2 : Rupture d'une chaîne\nDans la chaîne herbe → gazelle → guépard, que se passe-t-il si les gazelles disparaissent ?\n\nExercice 3 : Le pétrole\n1) Quelle est l'origine du pétrole ?\n2) Pourquoi dit-on que c'est une énergie non renouvelable ?\n3) Citer deux produits tirés du pétrole.",
+     "solution": "Exercice 1\nFaible pluviométrie, températures élevées, sol sableux, vents forts.\n\nExercice 2\nLes guépards manquent de nourriture et diminuent ; l'herbe, moins consommée, se développe davantage.\n\nExercice 3\n1) La transformation de restes d'êtres vivants marins enfouis dans les sédiments pendant des millions d'années.\n2) Sa formation est très lente : les réserves s'épuisent.\n3) Essence, gasoil, gaz butane, plastiques."
+    },
+    {
+     "title": "Proposition 15 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Banc d'Arguin\n1) Où se situe le PNBA ?\n2) Pourquoi est-il célèbre ?\n3) Pourquoi le protéger ?\n\nExercice 2 : Formation d'une roche sédimentaire\nRanger dans l'ordre : transport, érosion, dépôt (sédimentation), consolidation (diagenèse).\n\nExercice 3 : Le sable\n1) De quel minéral est principalement formé le sable ?\n2) Le sable est-il meuble ou consolidé ?\n3) Citer deux utilisations du sable.",
+     "solution": "Exercice 1\n1) Sur le littoral atlantique, entre Nouakchott et Nouadhibou.\n2) Il accueille des millions d'oiseaux migrateurs et c'est une zone de reproduction des poissons.\n3) Pour préserver la biodiversité et les ressources de pêche.\n\nExercice 2\nÉrosion → transport → dépôt → consolidation.\n\nExercice 3\n1) Le quartz.\n2) Meuble.\n3) Construction (béton), fabrication du verre."
+    },
+    {
+     "title": "Proposition 16 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Diawling\n1) Où se trouve le Parc du Diawling ?\n2) Quel type de milieu protège-t-il ?\n\nExercice 2 : Les roches sédimentaires\n1) Définir une roche sédimentaire.\n2) Citer deux caractéristiques.\n3) Citer trois roches sédimentaires.\n\nExercice 3 : Le gypse et le sel\n1) Comment se forment les roches salines ?\n2) Citer une roche saline et son utilisation.\n3) Où exploite-t-on le sel en Mauritanie ?",
+     "solution": "Exercice 1\n1) Dans le delta du fleuve Sénégal, au sud-ouest du pays.\n2) Des zones humides (lagunes, mangroves) riches en oiseaux et en poissons.\n\nExercice 2\n1) Une roche formée par l'accumulation et la consolidation de sédiments.\n2) Elle est disposée en couches (strates) et peut contenir des fossiles.\n3) Le sable, l'argile, le calcaire, le gypse.\n\nExercice 3\n1) Par évaporation de l'eau de mer ou de lacs salés.\n2) Le gypse (plâtre) ou le sel gemme (alimentation).\n3) À la sebkha d'Idjil (et dans les salines du littoral)."
+    },
+    {
+     "title": "Proposition 17 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Diawling\n1) Où se trouve le Parc du Diawling ?\n2) Quel type de milieu protège-t-il ?\n\nExercice 2 : Le réseau trophique\n1) Qu'est-ce qu'un réseau trophique ?\n2) Pourquoi est-il plus stable qu'une simple chaîne ?\n\nExercice 3 : Le sable\n1) De quel minéral est principalement formé le sable ?\n2) Le sable est-il meuble ou consolidé ?\n3) Citer deux utilisations du sable.",
+     "solution": "Exercice 1\n1) Dans le delta du fleuve Sénégal, au sud-ouest du pays.\n2) Des zones humides (lagunes, mangroves) riches en oiseaux et en poissons.\n\nExercice 2\n1) L'ensemble des chaînes alimentaires reliées entre elles dans un écosystème.\n2) Un consommateur peut changer de proie si l'une d'elles disparaît.\n\nExercice 3\n1) Le quartz.\n2) Meuble.\n3) Construction (béton), fabrication du verre."
+    },
+    {
+     "title": "Proposition 18 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Facteurs du milieu\nCiter trois facteurs physiques qui caractérisent un biotope désertique.\n\nExercice 2 : Chaîne marine\nRanger : thon, phytoplancton, sardine, zooplancton.\n\nExercice 3 : L'argile\n1) Donner deux propriétés de l'argile.\n2) Citer deux utilisations de l'argile en Mauritanie.",
+     "solution": "Exercice 1\nFaible pluviométrie, températures élevées, sol sableux, vents forts.\n\nExercice 2\nPhytoplancton → zooplancton → sardine → thon.\n\nExercice 3\n1) Elle devient plastique quand elle est mouillée et imperméable ; elle durcit à la cuisson.\n2) Briques, poterie, enduits des maisons traditionnelles."
+    },
+    {
+     "title": "Proposition 19 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Construire une chaîne alimentaire\nRanger dans une chaîne alimentaire : chacal, herbe, criquet, lézard. Nommer le producteur et les consommateurs.\n\nExercice 2 : Le réseau trophique\n1) Qu'est-ce qu'un réseau trophique ?\n2) Pourquoi est-il plus stable qu'une simple chaîne ?\n\nExercice 3 : Test à l'acide\nOn verse de l'acide chlorhydrique sur du sable et sur du calcaire. Qu'observe-t-on dans chaque cas ?",
+     "solution": "Exercice 1\nHerbe → criquet → lézard → chacal.\nProducteur : herbe ; consommateurs : criquet (I), lézard (II), chacal (III).\n\nExercice 2\n1) L'ensemble des chaînes alimentaires reliées entre elles dans un écosystème.\n2) Un consommateur peut changer de proie si l'une d'elles disparaît.\n\nExercice 3\nSable : aucune réaction. Calcaire : effervescence (dégagement de CO₂)."
+    },
+    {
+     "title": "Proposition 20 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Le Parc National du Diawling\n1) Où se trouve le Parc du Diawling ?\n2) Quel type de milieu protège-t-il ?\n\nExercice 2 : Chaîne marine\nRanger : thon, phytoplancton, sardine, zooplancton.\n\nExercice 3 : Test à l'acide\nOn verse de l'acide chlorhydrique sur du sable et sur du calcaire. Qu'observe-t-on dans chaque cas ?",
+     "solution": "Exercice 1\n1) Dans le delta du fleuve Sénégal, au sud-ouest du pays.\n2) Des zones humides (lagunes, mangroves) riches en oiseaux et en poissons.\n\nExercice 2\nPhytoplancton → zooplancton → sardine → thon.\n\nExercice 3\nSable : aucune réaction. Calcaire : effervescence (dégagement de CO₂)."
+    }
+   ]
+  }
+ ]
+}
