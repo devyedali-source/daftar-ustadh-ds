@@ -1,0 +1,807 @@
+{
+ "subject": "MATS",
+ "level": "2AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Mai S3",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision : activités numériques",
+   "covers": [
+    "Entiers relatifs",
+    "Décimaux",
+    "Nombres rationnels",
+    "Calcul littéral",
+    "Proportionnalité",
+    "Statistique"
+   ],
+   "items": [
+    {
+     "title": "Opérations sur les entiers relatifs",
+     "text": "Calculer :\nA = 11 + (−18)\nB = (−22) − 11\nC = 8 × 5\nD = (−14) ÷ 7\nE = 11 − (−18) + (−22)",
+     "solution": "A = −7\nB = (−22) + (−11) = −33\nC = 40\nD = −2\nE = 7"
+    },
+    {
+     "title": "Repérage sur un axe",
+     "text": "Sur un axe gradué, on place les points M(−8), N(−1), P(0) et Q(6).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.",
+     "solution": "1) −8 < −1 < 0 < 6\n2) MN = −1 − (−8) = 7 ; MQ = 14 ; NP = 1\n3) x(I) = (−8 + 6) ÷ 2 = −1\n4) 2 × 0 − (−1) = 1"
+    },
+    {
+     "title": "Nombres rationnels",
+     "text": "Calculer et donner le résultat sous forme irréductible :\nA = 7/9 × (−7/8)\nB = 1/5 ÷ 4/9\nC = −2/6 + 1/3",
+     "solution": "A = −49/72\nB = 1/5 × 9/4 = 9/20\nC = −6/18 + 6/18 = 0"
+    },
+    {
+     "title": "Calcul littéral",
+     "text": "1) Développer : A = 3(x + 1) ; B = −3(2x − 8).\n2) Réduire : C = 3x + 5 − 3x + 2x − 1.\n3) Factoriser : E = 3x + 3 ; F = 3y² − 15y.\n4) Calculer A pour x = 3.",
+     "solution": "1) A = 3x + 3 ; B = −6x + 24\n2) C = (3 − 3 + 2)x + 5 − 1 = 2x + 4\n3) E = 3(x + 1) ; F = 3y(y − 5)\n4) A = 3 × 3 + 3 = 12"
+    },
+    {
+     "title": "Proportionnalité : vitesse moyenne",
+     "text": "1) Un car roule à la vitesse moyenne de 90 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Boutilimit est 210 km ; le trajet dure 2 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 180 km à 90 km/h ?",
+     "solution": "1) d = 90 × 1,5 = 135 km\n2) v = 210 ÷ 2 = 105 km/h\n3) t = 180 ÷ 90 = 2 h"
+    },
+    {
+     "title": "Statistique",
+     "text": "Le tableau donne l'âge (en années) des membres d'un club :\nÂge : 12 | 13 | 16 | 17 | 18\nEffectif : 3 | 7 | 5 | 9 | 6\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?",
+     "solution": "1) N = 30\n2) 12 ans : 10 % ; 13 ans : 23,3 % ; 16 ans : 16,7 % ; 17 ans : 30 % ; 18 ans : 20 %\n3) (12×3 + 13×7 + 16×5 + 17×9 + 18×6) ÷ 30 ≈ 15,6 ans\n4) 17 ans"
+    },
+    {
+     "title": "Opérations sur les entiers relatifs",
+     "text": "Calculer :\nA = (−22) + (−5)\nB = (−22) − 7\nC = 4 × (−6)\nD = (−14) ÷ 2\nE = (−22) − (−5) + (−22)",
+     "solution": "A = −27\nB = (−22) + (−7) = −29\nC = −24\nD = −7\nE = −39"
+    },
+    {
+     "title": "Repérage sur un axe",
+     "text": "Sur un axe gradué, on place les points M(−8), N(−7), P(−3) et Q(−2).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.",
+     "solution": "1) −8 < −7 < −3 < −2\n2) MN = −7 − (−8) = 1 ; MQ = 6 ; NP = 4\n3) x(I) = (−8 + (−2)) ÷ 2 = −5\n4) 2 × (−3) − (−7) = 1"
+    },
+    {
+     "title": "Nombres rationnels",
+     "text": "Calculer et donner le résultat sous forme irréductible :\nA = 1/3 × (−2/2)\nB = 1/4 ÷ 5/6\nC = −3/6 + 1/3",
+     "solution": "A = −2/6 = −1/3\nB = 1/4 × 6/5 = 6/20 = 3/10\nC = −9/18 + 6/18 = −1/6"
+    },
+    {
+     "title": "Calcul littéral",
+     "text": "1) Développer : A = 3(x + 2) ; B = −7(2x − 2).\n2) Réduire : C = 7x + 5 − 3x + 3x − 2.\n3) Factoriser : E = 3x + 6 ; F = 7y² − 35y.\n4) Calculer A pour x = −2.",
+     "solution": "1) A = 3x + 6 ; B = −14x + 14\n2) C = (7 − 3 + 3)x + 5 − 2 = 7x + 3\n3) E = 3(x + 2) ; F = 7y(y − 5)\n4) A = 3 × (−2) + 6 = 0"
+    },
+    {
+     "title": "Proportionnalité : vitesse moyenne",
+     "text": "1) Un car roule à la vitesse moyenne de 50 km/h pendant 0,75 h. Quelle distance parcourt-il ?\n2) La distance entre Kiffa et Aïoun est 120 km ; le trajet dure 4 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 100 km à 50 km/h ?",
+     "solution": "1) d = 50 × 0,75 = 37,5 km\n2) v = 120 ÷ 4 = 30 km/h\n3) t = 100 ÷ 50 = 2 h"
+    },
+    {
+     "title": "Statistique",
+     "text": "Le tableau donne l'âge (en années) des membres d'un club :\nÂge : 9 | 10 | 14 | 16 | 18\nEffectif : 8 | 5 | 2 | 9 | 4\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?",
+     "solution": "1) N = 28\n2) 9 ans : 28,6 % ; 10 ans : 17,9 % ; 14 ans : 7,1 % ; 16 ans : 32,1 % ; 18 ans : 14,3 %\n3) (9×8 + 10×5 + 14×2 + 16×9 + 18×4) ÷ 28 ≈ 13,1 ans\n4) 16 ans"
+    },
+    {
+     "title": "Opérations sur les entiers relatifs",
+     "text": "Calculer :\nA = (−11) + 6\nB = (−18) − 19\nC = (−10) × (−9)\nD = 35 ÷ (−5)\nE = (−11) − 6 + (−18)",
+     "solution": "A = −5\nB = (−18) + (−19) = −37\nC = 90\nD = −7\nE = −35"
+    },
+    {
+     "title": "Repérage sur un axe",
+     "text": "Sur un axe gradué, on place les points A(−9), B(−5), C(0) et D(6).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.",
+     "solution": "1) −9 < −5 < 0 < 6\n2) AB = −5 − (−9) = 4 ; AD = 15 ; BC = 5\n3) x(I) = (−9 + 6) ÷ 2 = −1,5\n4) 2 × 0 − (−5) = 5"
+    },
+    {
+     "title": "Nombres rationnels",
+     "text": "Calculer et donner le résultat sous forme irréductible :\nA = 2/5 × (−2/5)\nB = 4/3 ÷ 1/2\nC = −3/4 + 1/3",
+     "solution": "A = −4/25\nB = 4/3 × 2/1 = 8/3\nC = −9/12 + 4/12 = −5/12"
+    },
+    {
+     "title": "Calcul littéral",
+     "text": "1) Développer : A = 7(x + 1) ; B = −4(2x − 9).\n2) Réduire : C = 4x + 2 − 7x + 2x − 1.\n3) Factoriser : E = 7x + 7 ; F = 4y² − 8y.\n4) Calculer A pour x = 2.",
+     "solution": "1) A = 7x + 7 ; B = −8x + 36\n2) C = (4 − 7 + 2)x + 2 − 1 = −x + 1\n3) E = 7(x + 1) ; F = 4y(y − 2)\n4) A = 7 × 2 + 7 = 21"
+    },
+    {
+     "title": "Proportionnalité : vitesse moyenne",
+     "text": "1) Un car roule à la vitesse moyenne de 90 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Boutilimit est 240 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 180 km à 90 km/h ?",
+     "solution": "1) d = 90 × 1,5 = 135 km\n2) v = 240 ÷ 3 = 80 km/h\n3) t = 180 ÷ 90 = 2 h"
+    },
+    {
+     "title": "Statistique",
+     "text": "Le tableau donne l'âge (en années) des membres d'un club :\nÂge : 8 | 9 | 13 | 16 | 18\nEffectif : 5 | 5 | 2 | 7 | 7\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?",
+     "solution": "1) N = 26\n2) 8 ans : 19,2 % ; 9 ans : 19,2 % ; 13 ans : 7,7 % ; 16 ans : 26,9 % ; 18 ans : 26,9 %\n3) (8×5 + 9×5 + 13×2 + 16×7 + 18×7) ÷ 26 ≈ 13,4 ans\n4) 16 ans et 18 ans"
+    },
+    {
+     "title": "Situation d'intégration : le terrain",
+     "text": "Un terrain rectangulaire a une longueur de (2x + 6) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "1) P = 2(2x + 6 + x) = 2(3x + 6) = 6x + 12\n2) A = x(2x + 6) = 2x² + 6x\n3) P = 6 × 4 + 12 = 36 m ; A = 2 × 16 + 6 × 4 = 56 m²"
+    },
+    {
+     "title": "Situation d'intégration : le voyage",
+     "text": "Une famille part en voiture à 6 h pour un trajet de 400 km à la vitesse moyenne de 80 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 12 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 55 MRU. Calculer la dépense.",
+     "solution": "1) 400 ÷ 80 = 5 h ; arrivée à 11 h\n2) 400 × 12 ÷ 100 = 48 L\n3) 48 × 55 = 2 640 MRU"
+    }
+   ]
+  },
+  {
+   "week": "Mai S4",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision : activités géométriques",
+   "covers": [
+    "Angles",
+    "Polygones",
+    "Projection orthogonale",
+    "Droites et cercles",
+    "Transformations",
+    "Cylindre et prisme droit"
+   ],
+   "items": [
+    {
+     "title": "Angles",
+     "text": "1) Calculer le complémentaire d'un angle de 46° et le supplémentaire d'un angle de 133°.\n2) Deux droites sécantes forment un angle de 111°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 111°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?",
+     "solution": "1) 90° − 46° = 44° ; 180° − 133° = 47°\n2) L'angle opposé par le sommet mesure 111° ; les deux autres mesurent 180° − 111° = 69°.\n3) Les angles alternes-internes ont la même mesure : 111° ; l'angle adjacent supplémentaire : 69°."
+    },
+    {
+     "title": "Polygones",
+     "text": "1) Dans le quadrilatère EFGH, ∠E = 89°, ∠F = 73° et ∠G = 94°. Calculer ∠H.\n2) Un polygone régulier a 5 côtés de 7 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.",
+     "solution": "1) La somme des angles d'un quadrilatère est 360° : ∠H = 360° − (89 + 73 + 94)° = 104°\n2) Périmètre : 5 × 7 = 35 cm ; angle : (5 − 2) × 180° ÷ 5 = 108°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires."
+    },
+    {
+     "title": "Projection orthogonale",
+     "text": "Tracer une droite (Δ) et un segment [EF] non parallèle à (Δ).\n1) Construire les projetés orthogonaux E' et F' de E et F sur (Δ).\n2) Que peut-on dire des droites (EE') et (FF') ? Justifier.\n3) Si [EF] est perpendiculaire à (Δ), que peut-on dire de E' et F' ?",
+     "solution": "1) On trace les perpendiculaires à (Δ) passant par E et F ; elles coupent (Δ) en E' et F'.\n2) (EE') et (FF') sont perpendiculaires à (Δ) : elles sont parallèles.\n3) E' et F' sont confondus."
+    },
+    {
+     "title": "Droites et cercles",
+     "text": "Un cercle (C) a pour centre O et pour rayon 5 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 3,3 cm, 5 cm et 6,5 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?",
+     "solution": "1) (d1) : sécante au cercle (deux points communs) ; (d2) : tangente au cercle (un point commun) ; (d3) : extérieure au cercle (aucun point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT]."
+    },
+    {
+     "title": "Symétrie centrale",
+     "text": "RST est un triangle tel que RS = 5 cm, RT = 5 cm et ∠SRT = 102°. O est le milieu de [ST].\n1) Construire R', le symétrique de R par rapport à O.\n2) Quelle est la nature du quadrilatère RSR'T ? Justifier.\n3) Donner R'T, R'S et ∠SR'T.",
+     "solution": "2) O est le milieu de [ST] et de [RR'] : les diagonales se coupent en leur milieu, RSR'T est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : R'T = RS = 5 cm ; R'S = RT = 5 cm ; ∠SR'T = 102°."
+    },
+    {
+     "title": "Cylindre et prisme droit",
+     "text": "1) Un cylindre a pour rayon 4 cm et pour hauteur 15 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 7 cm et 4 cm ; sa hauteur est 5 cm. Calculer l'aire de la base et le volume du prisme.",
+     "solution": "1) Aire latérale : 2 × 3,14 × 4 × 15 = 376,8 cm² ; volume : 3,14 × 4² × 15 = 753,6 cm³\n2) Base : 7 × 4 ÷ 2 = 14 cm² ; volume : 14 × 5 = 70 cm³"
+    },
+    {
+     "title": "Angles",
+     "text": "1) Calculer le complémentaire d'un angle de 32° et le supplémentaire d'un angle de 145°.\n2) Deux droites sécantes forment un angle de 105°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 105°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?",
+     "solution": "1) 90° − 32° = 58° ; 180° − 145° = 35°\n2) L'angle opposé par le sommet mesure 105° ; les deux autres mesurent 180° − 105° = 75°.\n3) Les angles alternes-internes ont la même mesure : 105° ; l'angle adjacent supplémentaire : 75°."
+    },
+    {
+     "title": "Polygones",
+     "text": "1) Dans le quadrilatère MNPQ, ∠M = 104°, ∠N = 70° et ∠P = 61°. Calculer ∠Q.\n2) Un polygone régulier a 5 côtés de 8 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.",
+     "solution": "1) La somme des angles d'un quadrilatère est 360° : ∠Q = 360° − (104 + 70 + 61)° = 125°\n2) Périmètre : 5 × 8 = 40 cm ; angle : (5 − 2) × 180° ÷ 5 = 108°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires."
+    },
+    {
+     "title": "Projection orthogonale",
+     "text": "Tracer une droite (D) et un segment [EF] non parallèle à (D).\n1) Construire les projetés orthogonaux E' et F' de E et F sur (D).\n2) Que peut-on dire des droites (EE') et (FF') ? Justifier.\n3) Si [EF] est perpendiculaire à (D), que peut-on dire de E' et F' ?",
+     "solution": "1) On trace les perpendiculaires à (D) passant par E et F ; elles coupent (D) en E' et F'.\n2) (EE') et (FF') sont perpendiculaires à (D) : elles sont parallèles.\n3) E' et F' sont confondus."
+    },
+    {
+     "title": "Droites et cercles",
+     "text": "Un cercle (C) a pour centre O et pour rayon 5 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 3,2 cm, 6,4 cm et 5 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?",
+     "solution": "1) (d1) : sécante au cercle (deux points communs) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT]."
+    },
+    {
+     "title": "Symétrie centrale",
+     "text": "IJK est un triangle tel que IJ = 4 cm, IK = 3 cm et ∠JIK = 104°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.",
+     "solution": "2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 4 cm ; I'J = IK = 3 cm ; ∠JI'K = 104°."
+    },
+    {
+     "title": "Cylindre et prisme droit",
+     "text": "1) Un cylindre a pour rayon 4 cm et pour hauteur 14 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 7 cm et 5 cm ; sa hauteur est 5 cm. Calculer l'aire de la base et le volume du prisme.",
+     "solution": "1) Aire latérale : 2 × 3,14 × 4 × 14 = 351,68 cm² ; volume : 3,14 × 4² × 14 = 703,36 cm³\n2) Base : 7 × 5 ÷ 2 = 17,5 cm² ; volume : 17,5 × 5 = 87,5 cm³"
+    },
+    {
+     "title": "Angles",
+     "text": "1) Calculer le complémentaire d'un angle de 44° et le supplémentaire d'un angle de 117°.\n2) Deux droites sécantes forment un angle de 43°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 43°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?",
+     "solution": "1) 90° − 44° = 46° ; 180° − 117° = 63°\n2) L'angle opposé par le sommet mesure 43° ; les deux autres mesurent 180° − 43° = 137°.\n3) Les angles alternes-internes ont la même mesure : 43° ; l'angle adjacent supplémentaire : 137°."
+    },
+    {
+     "title": "Polygones",
+     "text": "1) Dans le quadrilatère EFGH, ∠E = 69°, ∠F = 119° et ∠G = 60°. Calculer ∠H.\n2) Un polygone régulier a 8 côtés de 4 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.",
+     "solution": "1) La somme des angles d'un quadrilatère est 360° : ∠H = 360° − (69 + 119 + 60)° = 112°\n2) Périmètre : 8 × 4 = 32 cm ; angle : (8 − 2) × 180° ÷ 8 = 135°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires."
+    },
+    {
+     "title": "Projection orthogonale",
+     "text": "Tracer une droite (Δ) et un segment [MN] non parallèle à (Δ).\n1) Construire les projetés orthogonaux M' et N' de M et N sur (Δ).\n2) Que peut-on dire des droites (MM') et (NN') ? Justifier.\n3) Si [MN] est perpendiculaire à (Δ), que peut-on dire de M' et N' ?",
+     "solution": "1) On trace les perpendiculaires à (Δ) passant par M et N ; elles coupent (Δ) en M' et N'.\n2) (MM') et (NN') sont perpendiculaires à (Δ) : elles sont parallèles.\n3) M' et N' sont confondus."
+    },
+    {
+     "title": "Droites et cercles",
+     "text": "Un cercle (C) a pour centre O et pour rayon 7 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 8,1 cm, 5,1 cm et 7 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?",
+     "solution": "1) (d1) : extérieure au cercle (aucun point commun) ; (d2) : sécante au cercle (deux points communs) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT]."
+    },
+    {
+     "title": "Symétrie centrale",
+     "text": "DEF est un triangle tel que DE = 4 cm, DF = 7 cm et ∠EDF = 76°. O est le milieu de [EF].\n1) Construire D', le symétrique de D par rapport à O.\n2) Quelle est la nature du quadrilatère DED'F ? Justifier.\n3) Donner D'F, D'E et ∠ED'F.",
+     "solution": "2) O est le milieu de [EF] et de [DD'] : les diagonales se coupent en leur milieu, DED'F est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : D'F = DE = 4 cm ; D'E = DF = 7 cm ; ∠ED'F = 76°."
+    },
+    {
+     "title": "Cylindre et prisme droit",
+     "text": "1) Un cylindre a pour rayon 4 cm et pour hauteur 4 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 3 cm et 4 cm ; sa hauteur est 11 cm. Calculer l'aire de la base et le volume du prisme.",
+     "solution": "1) Aire latérale : 2 × 3,14 × 4 × 4 = 100,48 cm² ; volume : 3,14 × 4² × 4 = 200,96 cm³\n2) Base : 3 × 4 ÷ 2 = 6 cm² ; volume : 6 × 11 = 66 cm³"
+    },
+    {
+     "title": "Situation d'intégration : la citerne",
+     "text": "Une citerne cylindrique a un rayon de 0,7 m et une hauteur de 1,2 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 10 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "1) V = 3,14 × 0,7² × 1,2 = 1,84632 m³ = 1 846,32 L\n2) 1 846,32 ÷ 100 × 10 = 184,632 MRU\n3) 1 846,32 × 70 ÷ 100 = 1 292,424 L"
+    },
+    {
+     "title": "Situation d'intégration : la citerne",
+     "text": "Une citerne cylindrique a un rayon de 0,9 m et une hauteur de 1,3 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 10 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "1) V = 3,14 × 0,9² × 1,3 = 3,30642 m³ = 3 306,42 L\n2) 3 306,42 ÷ 100 × 10 = 330,642 MRU\n3) 3 306,42 × 70 ÷ 100 = 2 314,494 L"
+    }
+   ]
+  },
+  {
+   "week": "Juin S1",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision générale (1)",
+   "covers": [
+    "Programme de l'année"
+   ],
+   "items": [
+    {
+     "title": "Opérations sur les entiers relatifs",
+     "text": "Calculer :\nA = (−24) + 20\nB = 23 − (−19)\nC = 10 × (−7)\nD = 9 ÷ (−3)\nE = (−24) − 20 + 23",
+     "solution": "A = −4\nB = 23 + 19 = 42\nC = −70\nD = −3\nE = −21"
+    },
+    {
+     "title": "Repérage sur un axe",
+     "text": "Sur un axe gradué, on place les points A(−1), B(0), C(1) et D(4).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.",
+     "solution": "1) −1 < 0 < 1 < 4\n2) AB = 0 − (−1) = 1 ; AD = 5 ; BC = 1\n3) x(I) = (−1 + 4) ÷ 2 = 1,5\n4) 2 × 1 − 0 = 2"
+    },
+    {
+     "title": "Nombres rationnels",
+     "text": "Calculer et donner le résultat sous forme irréductible :\nA = 1/7 × (−3/3)\nB = 5/4 ÷ 3/9\nC = −3/6 + 1/3",
+     "solution": "A = −3/21 = −1/7\nB = 5/4 × 9/3 = 45/12 = 15/4\nC = −9/18 + 6/18 = −1/6"
+    },
+    {
+     "title": "Calcul littéral",
+     "text": "1) Développer : A = 5(x + 5) ; B = −6(2x − 9).\n2) Réduire : C = 6x + 4 − 5x + 3x − 5.\n3) Factoriser : E = 5x + 25 ; F = 6y² − 24y.\n4) Calculer A pour x = 2.",
+     "solution": "1) A = 5x + 25 ; B = −12x + 54\n2) C = (6 − 5 + 3)x + 4 − 5 = 4x − 1\n3) E = 5(x + 5) ; F = 6y(y − 4)\n4) A = 5 × 2 + 25 = 35"
+    },
+    {
+     "title": "Proportionnalité : vitesse moyenne",
+     "text": "1) Un car roule à la vitesse moyenne de 90 km/h pendant 2 h. Quelle distance parcourt-il ?\n2) La distance entre Kiffa et Aïoun est 240 km ; le trajet dure 2 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 180 km à 90 km/h ?",
+     "solution": "1) d = 90 × 2 = 180 km\n2) v = 240 ÷ 2 = 120 km/h\n3) t = 180 ÷ 90 = 2 h"
+    },
+    {
+     "title": "Statistique",
+     "text": "Le tableau donne l'âge (en années) des membres d'un club :\nÂge : 9 | 13 | 15 | 17 | 18\nEffectif : 9 | 3 | 3 | 9 | 5\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?",
+     "solution": "1) N = 29\n2) 9 ans : 31 % ; 13 ans : 10,3 % ; 15 ans : 10,3 % ; 17 ans : 31 % ; 18 ans : 17,2 %\n3) (9×9 + 13×3 + 15×3 + 17×9 + 18×5) ÷ 29 ≈ 14,1 ans\n4) 9 ans et 17 ans"
+    },
+    {
+     "title": "Opérations sur les entiers relatifs",
+     "text": "Calculer :\nA = (−21) + 11\nB = (−4) − 20\nC = (−9) × 5\nD = (−40) ÷ (−5)\nE = (−21) − 11 + (−4)",
+     "solution": "A = −10\nB = (−4) + (−20) = −24\nC = −45\nD = 8\nE = −36"
+    },
+    {
+     "title": "Repérage sur un axe",
+     "text": "Sur un axe gradué, on place les points E(−8), F(3), G(4) et H(6).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.",
+     "solution": "1) −8 < 3 < 4 < 6\n2) EF = 3 − (−8) = 11 ; EH = 14 ; FG = 1\n3) x(I) = (−8 + 6) ÷ 2 = −1\n4) 2 × 4 − 3 = 5"
+    },
+    {
+     "title": "Nombres rationnels",
+     "text": "Calculer et donner le résultat sous forme irréductible :\nA = 7/4 × (−7/5)\nB = 2/7 ÷ 1/2\nC = −5/6 + 1/3",
+     "solution": "A = −49/20\nB = 2/7 × 2/1 = 4/7\nC = −15/18 + 6/18 = −1/2"
+    },
+    {
+     "title": "Angles",
+     "text": "1) Calculer le complémentaire d'un angle de 29° et le supplémentaire d'un angle de 129°.\n2) Deux droites sécantes forment un angle de 120°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 120°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?",
+     "solution": "1) 90° − 29° = 61° ; 180° − 129° = 51°\n2) L'angle opposé par le sommet mesure 120° ; les deux autres mesurent 180° − 120° = 60°.\n3) Les angles alternes-internes ont la même mesure : 120° ; l'angle adjacent supplémentaire : 60°."
+    },
+    {
+     "title": "Polygones",
+     "text": "1) Dans le quadrilatère MNPQ, ∠M = 104°, ∠N = 115° et ∠P = 86°. Calculer ∠Q.\n2) Un polygone régulier a 12 côtés de 6 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.",
+     "solution": "1) La somme des angles d'un quadrilatère est 360° : ∠Q = 360° − (104 + 115 + 86)° = 55°\n2) Périmètre : 12 × 6 = 72 cm ; angle : (12 − 2) × 180° ÷ 12 = 150°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires."
+    },
+    {
+     "title": "Projection orthogonale",
+     "text": "Tracer une droite (D) et un segment [AB] non parallèle à (D).\n1) Construire les projetés orthogonaux A' et B' de A et B sur (D).\n2) Que peut-on dire des droites (AA') et (BB') ? Justifier.\n3) Si [AB] est perpendiculaire à (D), que peut-on dire de A' et B' ?",
+     "solution": "1) On trace les perpendiculaires à (D) passant par A et B ; elles coupent (D) en A' et B'.\n2) (AA') et (BB') sont perpendiculaires à (D) : elles sont parallèles.\n3) A' et B' sont confondus."
+    },
+    {
+     "title": "Droites et cercles",
+     "text": "Un cercle (C) a pour centre O et pour rayon 7 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 7 cm, 8 cm et 5,8 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?",
+     "solution": "1) (d1) : tangente au cercle (un point commun) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : sécante au cercle (deux points communs)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT]."
+    },
+    {
+     "title": "Symétrie centrale",
+     "text": "EFG est un triangle tel que EF = 5 cm, EG = 3 cm et ∠FEG = 56°. O est le milieu de [FG].\n1) Construire E', le symétrique de E par rapport à O.\n2) Quelle est la nature du quadrilatère EFE'G ? Justifier.\n3) Donner E'G, E'F et ∠FE'G.",
+     "solution": "2) O est le milieu de [FG] et de [EE'] : les diagonales se coupent en leur milieu, EFE'G est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : E'G = EF = 5 cm ; E'F = EG = 3 cm ; ∠FE'G = 56°."
+    },
+    {
+     "title": "Cylindre et prisme droit",
+     "text": "1) Un cylindre a pour rayon 9 cm et pour hauteur 11 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 7 cm et 5 cm ; sa hauteur est 6 cm. Calculer l'aire de la base et le volume du prisme.",
+     "solution": "1) Aire latérale : 2 × 3,14 × 9 × 11 = 621,72 cm² ; volume : 3,14 × 9² × 11 = 2 797,74 cm³\n2) Base : 7 × 5 ÷ 2 = 17,5 cm² ; volume : 17,5 × 6 = 105 cm³"
+    },
+    {
+     "title": "Angles",
+     "text": "1) Calculer le complémentaire d'un angle de 60° et le supplémentaire d'un angle de 122°.\n2) Deux droites sécantes forment un angle de 106°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 106°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?",
+     "solution": "1) 90° − 60° = 30° ; 180° − 122° = 58°\n2) L'angle opposé par le sommet mesure 106° ; les deux autres mesurent 180° − 106° = 74°.\n3) Les angles alternes-internes ont la même mesure : 106° ; l'angle adjacent supplémentaire : 74°."
+    },
+    {
+     "title": "Polygones",
+     "text": "1) Dans le quadrilatère ABCD, ∠A = 66°, ∠B = 73° et ∠C = 79°. Calculer ∠D.\n2) Un polygone régulier a 12 côtés de 7 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.",
+     "solution": "1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (66 + 73 + 79)° = 142°\n2) Périmètre : 12 × 7 = 84 cm ; angle : (12 − 2) × 180° ÷ 12 = 150°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires."
+    },
+    {
+     "title": "Situation d'intégration : la citerne",
+     "text": "Une citerne cylindrique a un rayon de 1 m et une hauteur de 1,6 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 5 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "1) V = 3,14 × 1² × 1,6 = 5,024 m³ = 5 024 L\n2) 5 024 ÷ 100 × 5 = 251,2 MRU\n3) 5 024 × 70 ÷ 100 = 3 516,8 L"
+    },
+    {
+     "title": "Situation d'intégration : le voyage",
+     "text": "Une famille part en voiture à 8 h pour un trajet de 300 km à la vitesse moyenne de 60 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 10 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 50 MRU. Calculer la dépense.",
+     "solution": "1) 300 ÷ 60 = 5 h ; arrivée à 13 h\n2) 300 × 10 ÷ 100 = 30 L\n3) 30 × 50 = 1 500 MRU"
+    },
+    {
+     "title": "Situation d'intégration : le terrain",
+     "text": "Un terrain rectangulaire a une longueur de (2x + 3) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 6.",
+     "solution": "1) P = 2(2x + 3 + x) = 2(3x + 3) = 6x + 6\n2) A = x(2x + 3) = 2x² + 3x\n3) P = 6 × 6 + 6 = 42 m ; A = 2 × 36 + 3 × 6 = 90 m²"
+    }
+   ]
+  },
+  {
+   "week": "Juin S2",
+   "term": 3,
+   "kind": "eval",
+   "title": "Révision générale (2)",
+   "covers": [
+    "Programme de l'année"
+   ],
+   "items": [
+    {
+     "title": "Statistique",
+     "text": "Le tableau donne l'âge (en années) des membres d'un club :\nÂge : 10 | 13 | 14 | 16 | 17\nEffectif : 4 | 9 | 6 | 8 | 2\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?",
+     "solution": "1) N = 29\n2) 10 ans : 13,8 % ; 13 ans : 31 % ; 14 ans : 20,7 % ; 16 ans : 27,6 % ; 17 ans : 6,9 %\n3) (10×4 + 13×9 + 14×6 + 16×8 + 17×2) ÷ 29 ≈ 13,9 ans\n4) 13 ans"
+    },
+    {
+     "title": "Proportionnalité : vitesse moyenne",
+     "text": "1) Un car roule à la vitesse moyenne de 90 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Rosso est 240 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 180 km à 90 km/h ?",
+     "solution": "1) d = 90 × 1,5 = 135 km\n2) v = 240 ÷ 3 = 80 km/h\n3) t = 180 ÷ 90 = 2 h"
+    },
+    {
+     "title": "Calcul littéral",
+     "text": "1) Développer : A = 3(x + 9) ; B = −7(2x − 8).\n2) Réduire : C = 7x + 5 − 3x + 4x − 9.\n3) Factoriser : E = 3x + 27 ; F = 7y² − 35y.\n4) Calculer A pour x = −2.",
+     "solution": "1) A = 3x + 27 ; B = −14x + 56\n2) C = (7 − 3 + 4)x + 5 − 9 = 8x − 4\n3) E = 3(x + 9) ; F = 7y(y − 5)\n4) A = 3 × (−2) + 27 = 21"
+    },
+    {
+     "title": "Nombres rationnels",
+     "text": "Calculer et donner le résultat sous forme irréductible :\nA = 1/6 × (−7/3)\nB = 1/3 ÷ 1/6\nC = −4/4 + 1/3",
+     "solution": "A = −7/18\nB = 1/3 × 6/1 = 6/3 = 2\nC = −12/12 + 4/12 = −2/3"
+    },
+    {
+     "title": "Repérage sur un axe",
+     "text": "Sur un axe gradué, on place les points E(−9), F(0), G(6) et H(8).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.",
+     "solution": "1) −9 < 0 < 6 < 8\n2) EF = 0 − (−9) = 9 ; EH = 17 ; FG = 6\n3) x(I) = (−9 + 8) ÷ 2 = −0,5\n4) 2 × 6 − 0 = 12"
+    },
+    {
+     "title": "Opérations sur les entiers relatifs",
+     "text": "Calculer :\nA = 15 + 18\nB = 15 − (−13)\nC = (−11) × (−4)\nD = 72 ÷ 9\nE = 15 − 18 + 15",
+     "solution": "A = 33\nB = 15 + 13 = 28\nC = 44\nD = 8\nE = 12"
+    },
+    {
+     "title": "Statistique",
+     "text": "Le tableau donne l'âge (en années) des membres d'un club :\nÂge : 10 | 13 | 15 | 16 | 18\nEffectif : 9 | 2 | 6 | 5 | 9\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?",
+     "solution": "1) N = 31\n2) 10 ans : 29 % ; 13 ans : 6,5 % ; 15 ans : 19,4 % ; 16 ans : 16,1 % ; 18 ans : 29 %\n3) (10×9 + 13×2 + 15×6 + 16×5 + 18×9) ÷ 31 ≈ 14,5 ans\n4) 10 ans et 18 ans"
+    },
+    {
+     "title": "Proportionnalité : vitesse moyenne",
+     "text": "1) Un car roule à la vitesse moyenne de 50 km/h pendant 2,5 h. Quelle distance parcourt-il ?\n2) La distance entre Atar et Akjoujt est 240 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 100 km à 50 km/h ?",
+     "solution": "1) d = 50 × 2,5 = 125 km\n2) v = 240 ÷ 3 = 80 km/h\n3) t = 100 ÷ 50 = 2 h"
+    },
+    {
+     "title": "Calcul littéral",
+     "text": "1) Développer : A = 9(x + 2) ; B = −5(2x − 9).\n2) Réduire : C = 5x + 3 − 9x + 6x − 2.\n3) Factoriser : E = 9x + 18 ; F = 5y² − 15y.\n4) Calculer A pour x = −3.",
+     "solution": "1) A = 9x + 18 ; B = −10x + 45\n2) C = (5 − 9 + 6)x + 3 − 2 = 2x + 1\n3) E = 9(x + 2) ; F = 5y(y − 3)\n4) A = 9 × (−3) + 18 = −9"
+    },
+    {
+     "title": "Cylindre et prisme droit",
+     "text": "1) Un cylindre a pour rayon 4 cm et pour hauteur 5 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 4 cm et 7 cm ; sa hauteur est 6 cm. Calculer l'aire de la base et le volume du prisme.",
+     "solution": "1) Aire latérale : 2 × 3,14 × 4 × 5 = 125,6 cm² ; volume : 3,14 × 4² × 5 = 251,2 cm³\n2) Base : 4 × 7 ÷ 2 = 14 cm² ; volume : 14 × 6 = 84 cm³"
+    },
+    {
+     "title": "Symétrie centrale",
+     "text": "IJK est un triangle tel que IJ = 8 cm, IK = 4 cm et ∠JIK = 78°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.",
+     "solution": "2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 8 cm ; I'J = IK = 4 cm ; ∠JI'K = 78°."
+    },
+    {
+     "title": "Droites et cercles",
+     "text": "Un cercle (C) a pour centre O et pour rayon 8 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 9,8 cm, 8 cm et 6,1 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?",
+     "solution": "1) (d1) : extérieure au cercle (aucun point commun) ; (d2) : tangente au cercle (un point commun) ; (d3) : sécante au cercle (deux points communs)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT]."
+    },
+    {
+     "title": "Projection orthogonale",
+     "text": "Tracer une droite (d) et un segment [EF] non parallèle à (d).\n1) Construire les projetés orthogonaux E' et F' de E et F sur (d).\n2) Que peut-on dire des droites (EE') et (FF') ? Justifier.\n3) Si [EF] est perpendiculaire à (d), que peut-on dire de E' et F' ?",
+     "solution": "1) On trace les perpendiculaires à (d) passant par E et F ; elles coupent (d) en E' et F'.\n2) (EE') et (FF') sont perpendiculaires à (d) : elles sont parallèles.\n3) E' et F' sont confondus."
+    },
+    {
+     "title": "Polygones",
+     "text": "1) Dans le quadrilatère ABCD, ∠A = 110°, ∠B = 79° et ∠C = 82°. Calculer ∠D.\n2) Un polygone régulier a 6 côtés de 6 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.",
+     "solution": "1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (110 + 79 + 82)° = 89°\n2) Périmètre : 6 × 6 = 36 cm ; angle : (6 − 2) × 180° ÷ 6 = 120°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires."
+    },
+    {
+     "title": "Angles",
+     "text": "1) Calculer le complémentaire d'un angle de 58° et le supplémentaire d'un angle de 152°.\n2) Deux droites sécantes forment un angle de 40°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 40°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?",
+     "solution": "1) 90° − 58° = 32° ; 180° − 152° = 28°\n2) L'angle opposé par le sommet mesure 40° ; les deux autres mesurent 180° − 40° = 140°.\n3) Les angles alternes-internes ont la même mesure : 40° ; l'angle adjacent supplémentaire : 140°."
+    },
+    {
+     "title": "Cylindre et prisme droit",
+     "text": "1) Un cylindre a pour rayon 4 cm et pour hauteur 13 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 7 cm et 7 cm ; sa hauteur est 8 cm. Calculer l'aire de la base et le volume du prisme.",
+     "solution": "1) Aire latérale : 2 × 3,14 × 4 × 13 = 326,56 cm² ; volume : 3,14 × 4² × 13 = 653,12 cm³\n2) Base : 7 × 7 ÷ 2 = 24,5 cm² ; volume : 24,5 × 8 = 196 cm³"
+    },
+    {
+     "title": "Symétrie centrale",
+     "text": "RST est un triangle tel que RS = 5 cm, RT = 6 cm et ∠SRT = 58°. O est le milieu de [ST].\n1) Construire R', le symétrique de R par rapport à O.\n2) Quelle est la nature du quadrilatère RSR'T ? Justifier.\n3) Donner R'T, R'S et ∠SR'T.",
+     "solution": "2) O est le milieu de [ST] et de [RR'] : les diagonales se coupent en leur milieu, RSR'T est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : R'T = RS = 5 cm ; R'S = RT = 6 cm ; ∠SR'T = 58°."
+    },
+    {
+     "title": "Situation d'intégration : le terrain",
+     "text": "Un terrain rectangulaire a une longueur de (2x + 5) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 7.",
+     "solution": "1) P = 2(2x + 5 + x) = 2(3x + 5) = 6x + 10\n2) A = x(2x + 5) = 2x² + 5x\n3) P = 6 × 7 + 10 = 52 m ; A = 2 × 49 + 5 × 7 = 133 m²"
+    },
+    {
+     "title": "Situation d'intégration : le voyage",
+     "text": "Une famille part en voiture à 8 h pour un trajet de 375 km à la vitesse moyenne de 75 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 8 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 55 MRU. Calculer la dépense.",
+     "solution": "1) 375 ÷ 75 = 5 h ; arrivée à 13 h\n2) 375 × 8 ÷ 100 = 30 L\n3) 30 × 55 = 1 650 MRU"
+    },
+    {
+     "title": "Situation d'intégration : la citerne",
+     "text": "Une citerne cylindrique a un rayon de 0,6 m et une hauteur de 2,5 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 10 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "1) V = 3,14 × 0,6² × 2,5 = 2,826 m³ = 2 826 L\n2) 2 826 ÷ 100 × 10 = 282,6 MRU\n3) 2 826 × 70 ÷ 100 = 1 978,2 L"
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Décembre S3",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du 1er trimestre",
+   "covers": [
+    "Entiers relatifs",
+    "Décimaux",
+    "Nombres rationnels",
+    "Calcul littéral",
+    "Repérage sur un axe"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 20 + (−5)\nB = (−2) − 10\nC = 8 × (−8)\nD = (−18) ÷ (−9)\nE = 20 − (−5) + (−2)\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 4/3 × (−4/3)\nB = 5/4 ÷ 5/9\nC = −1/4 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points A(0), B(1), C(3) et D(4).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 6) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "Exercice 1\nA = 15\nB = (−2) + (−10) = −12\nC = −64\nD = 2\nE = 23\n\nExercice 2\nA = −16/9\nB = 5/4 × 9/5 = 45/20 = 9/4\nC = −3/12 + 4/12 = 1/12\n\nExercice 3\n1) 0 < 1 < 3 < 4\n2) AB = 1 − 0 = 1 ; AD = 4 ; BC = 2\n3) x(I) = (0 + 4) ÷ 2 = 2\n4) 2 × 3 − 1 = 5\n\nExercice 4\n1) P = 2(2x + 6 + x) = 2(3x + 6) = 6x + 12\n2) A = x(2x + 6) = 2x² + 6x\n3) P = 6 × 4 + 12 = 36 m ; A = 2 × 16 + 6 × 4 = 56 m²"
+    },
+    {
+     "title": "Proposition 2 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points M(−3), N(0), P(6) et Q(7).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 5/7 × (−1/8)\nB = 2/7 ÷ 1/6\nC = −5/6 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points M(−8), N(−2), P(3) et Q(7).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 5) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 9.",
+     "solution": "Exercice 1\n1) −3 < 0 < 6 < 7\n2) MN = 0 − (−3) = 3 ; MQ = 10 ; NP = 6\n3) x(I) = (−3 + 7) ÷ 2 = 2\n4) 2 × 6 − 0 = 12\n\nExercice 2\nA = −5/56\nB = 2/7 × 6/1 = 12/7\nC = −15/18 + 6/18 = −1/2\n\nExercice 3\n1) −8 < −2 < 3 < 7\n2) MN = −2 − (−8) = 6 ; MQ = 15 ; NP = 5\n3) x(I) = (−8 + 7) ÷ 2 = −0,5\n4) 2 × 3 − (−2) = 8\n\nExercice 4\n1) P = 2(2x + 5 + x) = 2(3x + 5) = 6x + 10\n2) A = x(2x + 5) = 2x² + 5x\n3) P = 6 × 9 + 10 = 64 m ; A = 2 × 81 + 5 × 9 = 207 m²"
+    },
+    {
+     "title": "Proposition 3 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 18 + (−17)\nB = (−22) − (−3)\nC = (−6) × (−6)\nD = (−15) ÷ 5\nE = 18 − (−17) + (−22)\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 5/5 × (−6/3)\nB = 4/5 ÷ 3/6\nC = −2/4 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points M(−5), N(0), P(1) et Q(8).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 5) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "Exercice 1\nA = 1\nB = (−22) + 3 = −19\nC = 36\nD = −3\nE = 13\n\nExercice 2\nA = −30/15 = −2\nB = 4/5 × 6/3 = 24/15 = 8/5\nC = −6/12 + 4/12 = −1/6\n\nExercice 3\n1) −5 < 0 < 1 < 8\n2) MN = 0 − (−5) = 5 ; MQ = 13 ; NP = 1\n3) x(I) = (−5 + 8) ÷ 2 = 1,5\n4) 2 × 1 − 0 = 2\n\nExercice 4\n1) P = 2(2x + 5 + x) = 2(3x + 5) = 6x + 10\n2) A = x(2x + 5) = 2x² + 5x\n3) P = 6 × 4 + 10 = 34 m ; A = 2 × 16 + 5 × 4 = 52 m²"
+    },
+    {
+     "title": "Proposition 4 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points M(−5), N(−4), P(0) et Q(5).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 2 : Calcul littéral\n1) Développer : A = 3(x + 2) ; B = −7(2x − 7).\n2) Réduire : C = 7x + 2 − 3x + 6x − 2.\n3) Factoriser : E = 3x + 6 ; F = 7y² − 14y.\n4) Calculer A pour x = 3.\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 7/3 × (−3/2)\nB = 4/7 ÷ 3/6\nC = −1/4 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 6) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 9.",
+     "solution": "Exercice 1\n1) −5 < −4 < 0 < 5\n2) MN = −4 − (−5) = 1 ; MQ = 10 ; NP = 4\n3) x(I) = (−5 + 5) ÷ 2 = 0\n4) 2 × 0 − (−4) = 4\n\nExercice 2\n1) A = 3x + 6 ; B = −14x + 49\n2) C = (7 − 3 + 6)x + 2 − 2 = 10x\n3) E = 3(x + 2) ; F = 7y(y − 2)\n4) A = 3 × 3 + 6 = 15\n\nExercice 3\nA = −21/6 = −7/2\nB = 4/7 × 6/3 = 24/21 = 8/7\nC = −3/12 + 4/12 = 1/12\n\nExercice 4\n1) P = 2(2x + 6 + x) = 2(3x + 6) = 6x + 12\n2) A = x(2x + 6) = 2x² + 6x\n3) P = 6 × 9 + 12 = 66 m ; A = 2 × 81 + 6 × 9 = 216 m²"
+    },
+    {
+     "title": "Proposition 5 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points E(−2), F(1), G(7) et H(9).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 7/5 × (−4/3)\nB = 4/7 ÷ 1/9\nC = −2/6 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points E(−4), F(2), G(8) et H(9).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 3) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 8.",
+     "solution": "Exercice 1\n1) −2 < 1 < 7 < 9\n2) EF = 1 − (−2) = 3 ; EH = 11 ; FG = 6\n3) x(I) = (−2 + 9) ÷ 2 = 3,5\n4) 2 × 7 − 1 = 13\n\nExercice 2\nA = −28/15\nB = 4/7 × 9/1 = 36/7\nC = −6/18 + 6/18 = 0\n\nExercice 3\n1) −4 < 2 < 8 < 9\n2) EF = 2 − (−4) = 6 ; EH = 13 ; FG = 6\n3) x(I) = (−4 + 9) ÷ 2 = 2,5\n4) 2 × 8 − 2 = 14\n\nExercice 4\n1) P = 2(2x + 3 + x) = 2(3x + 3) = 6x + 6\n2) A = x(2x + 3) = 2x² + 3x\n3) P = 6 × 8 + 6 = 54 m ; A = 2 × 64 + 3 × 8 = 152 m²"
+    },
+    {
+     "title": "Proposition 6 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points A(−7), B(−5), C(1) et D(3).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 3/9 × (−7/8)\nB = 4/5 ÷ 1/2\nC = −4/4 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points A(−8), B(−5), C(2) et D(6).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 6) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "Exercice 1\n1) −7 < −5 < 1 < 3\n2) AB = −5 − (−7) = 2 ; AD = 10 ; BC = 6\n3) x(I) = (−7 + 3) ÷ 2 = −2\n4) 2 × 1 − (−5) = 7\n\nExercice 2\nA = −21/72 = −7/24\nB = 4/5 × 2/1 = 8/5\nC = −12/12 + 4/12 = −2/3\n\nExercice 3\n1) −8 < −5 < 2 < 6\n2) AB = −5 − (−8) = 3 ; AD = 14 ; BC = 7\n3) x(I) = (−8 + 6) ÷ 2 = −1\n4) 2 × 2 − (−5) = 9\n\nExercice 4\n1) P = 2(2x + 6 + x) = 2(3x + 6) = 6x + 12\n2) A = x(2x + 6) = 2x² + 6x\n3) P = 6 × 4 + 12 = 36 m ; A = 2 × 16 + 6 × 4 = 56 m²"
+    },
+    {
+     "title": "Proposition 7 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 10 + 21\nB = (−5) − 3\nC = (−11) × (−4)\nD = 20 ÷ 4\nE = 10 − 21 + (−5)\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 5/6 × (−5/2)\nB = 3/4 ÷ 3/9\nC = −3/6 + 1/3\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 5/9 × (−1/3)\nB = 1/4 ÷ 5/6\nC = −1/4 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 8.",
+     "solution": "Exercice 1\nA = 31\nB = (−5) + (−3) = −8\nC = 44\nD = 5\nE = −16\n\nExercice 2\nA = −25/12\nB = 3/4 × 9/3 = 27/12 = 9/4\nC = −9/18 + 6/18 = −1/6\n\nExercice 3\nA = −5/27\nB = 1/4 × 6/5 = 6/20 = 3/10\nC = −3/12 + 4/12 = 1/12\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 8 + 4 = 52 m ; A = 2 × 64 + 2 × 8 = 144 m²"
+    },
+    {
+     "title": "Proposition 8 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = (−14) + (−18)\nB = (−25) − (−24)\nC = (−8) × (−6)\nD = (−21) ÷ (−3)\nE = (−14) − (−18) + (−25)\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 6/5 × (−3/3)\nB = 3/7 ÷ 2/9\nC = −3/6 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points E(−2), F(1), G(4) et H(7).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 5.",
+     "solution": "Exercice 1\nA = −32\nB = (−25) + 24 = −1\nC = 48\nD = 7\nE = −21\n\nExercice 2\nA = −18/15 = −6/5\nB = 3/7 × 9/2 = 27/14\nC = −9/18 + 6/18 = −1/6\n\nExercice 3\n1) −2 < 1 < 4 < 7\n2) EF = 1 − (−2) = 3 ; EH = 9 ; FG = 3\n3) x(I) = (−2 + 7) ÷ 2 = 2,5\n4) 2 × 4 − 1 = 7\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 5 + 4 = 34 m ; A = 2 × 25 + 2 × 5 = 60 m²"
+    },
+    {
+     "title": "Proposition 9 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = (−18) + (−13)\nB = 23 − (−11)\nC = (−9) × (−8)\nD = 49 ÷ (−7)\nE = (−18) − (−13) + 23\n\nExercice 2 : Calcul littéral\n1) Développer : A = 2(x + 6) ; B = −2(2x − 2).\n2) Réduire : C = 2x + 5 − 2x + 6x − 6.\n3) Factoriser : E = 2x + 12 ; F = 2y² − 10y.\n4) Calculer A pour x = 4.\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 5/7 × (−5/8)\nB = 3/4 ÷ 2/2\nC = −1/6 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 3) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 9.",
+     "solution": "Exercice 1\nA = −31\nB = 23 + 11 = 34\nC = 72\nD = −7\nE = 18\n\nExercice 2\n1) A = 2x + 12 ; B = −4x + 4\n2) C = (2 − 2 + 6)x + 5 − 6 = 6x − 1\n3) E = 2(x + 6) ; F = 2y(y − 5)\n4) A = 2 × 4 + 12 = 20\n\nExercice 3\nA = −25/56\nB = 3/4 × 2/2 = 6/8 = 3/4\nC = −3/18 + 6/18 = 1/6\n\nExercice 4\n1) P = 2(2x + 3 + x) = 2(3x + 3) = 6x + 6\n2) A = x(2x + 3) = 2x² + 3x\n3) P = 6 × 9 + 6 = 60 m ; A = 2 × 81 + 3 × 9 = 189 m²"
+    },
+    {
+     "title": "Proposition 10 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = (−15) + (−25)\nB = (−20) − (−19)\nC = (−3) × 5\nD = (−35) ÷ 7\nE = (−15) − (−25) + (−20)\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 4/3 × (−4/2)\nB = 2/5 ÷ 2/2\nC = −1/4 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points M(−6), N(0), P(6) et Q(8).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 8.",
+     "solution": "Exercice 1\nA = −40\nB = (−20) + 19 = −1\nC = −15\nD = −5\nE = −10\n\nExercice 2\nA = −16/6 = −8/3\nB = 2/5 × 2/2 = 4/10 = 2/5\nC = −3/12 + 4/12 = 1/12\n\nExercice 3\n1) −6 < 0 < 6 < 8\n2) MN = 0 − (−6) = 6 ; MQ = 14 ; NP = 6\n3) x(I) = (−6 + 8) ÷ 2 = 1\n4) 2 × 6 − 0 = 12\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 8 + 4 = 52 m ; A = 2 × 64 + 2 × 8 = 144 m²"
+    },
+    {
+     "title": "Proposition 11 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points A(−7), B(−3), C(1) et D(5).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 2 : Calcul littéral\n1) Développer : A = 5(x + 9) ; B = −7(2x − 6).\n2) Réduire : C = 7x + 4 − 5x + 2x − 9.\n3) Factoriser : E = 5x + 45 ; F = 7y² − 28y.\n4) Calculer A pour x = 4.\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points M(−8), N(−5), P(−1) et Q(4).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 5) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 9.",
+     "solution": "Exercice 1\n1) −7 < −3 < 1 < 5\n2) AB = −3 − (−7) = 4 ; AD = 12 ; BC = 4\n3) x(I) = (−7 + 5) ÷ 2 = −1\n4) 2 × 1 − (−3) = 5\n\nExercice 2\n1) A = 5x + 45 ; B = −14x + 42\n2) C = (7 − 5 + 2)x + 4 − 9 = 4x − 5\n3) E = 5(x + 9) ; F = 7y(y − 4)\n4) A = 5 × 4 + 45 = 65\n\nExercice 3\n1) −8 < −5 < −1 < 4\n2) MN = −5 − (−8) = 3 ; MQ = 12 ; NP = 4\n3) x(I) = (−8 + 4) ÷ 2 = −2\n4) 2 × (−1) − (−5) = 3\n\nExercice 4\n1) P = 2(2x + 5 + x) = 2(3x + 5) = 6x + 10\n2) A = x(2x + 5) = 2x² + 5x\n3) P = 6 × 9 + 10 = 64 m ; A = 2 × 81 + 5 × 9 = 207 m²"
+    },
+    {
+     "title": "Proposition 12 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points E(−6), F(−2), G(8) et H(9).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.\n\nExercice 2 : Calcul littéral\n1) Développer : A = 9(x + 8) ; B = −6(2x − 7).\n2) Réduire : C = 6x + 5 − 9x + 6x − 8.\n3) Factoriser : E = 9x + 72 ; F = 6y² − 30y.\n4) Calculer A pour x = −2.\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 1/5 × (−5/5)\nB = 2/3 ÷ 1/2\nC = −3/4 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 5.",
+     "solution": "Exercice 1\n1) −6 < −2 < 8 < 9\n2) EF = −2 − (−6) = 4 ; EH = 15 ; FG = 10\n3) x(I) = (−6 + 9) ÷ 2 = 1,5\n4) 2 × 8 − (−2) = 18\n\nExercice 2\n1) A = 9x + 72 ; B = −12x + 42\n2) C = (6 − 9 + 6)x + 5 − 8 = 3x − 3\n3) E = 9(x + 8) ; F = 6y(y − 5)\n4) A = 9 × (−2) + 72 = 54\n\nExercice 3\nA = −5/25 = −1/5\nB = 2/3 × 2/1 = 4/3\nC = −9/12 + 4/12 = −5/12\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 5 + 4 = 34 m ; A = 2 × 25 + 2 × 5 = 60 m²"
+    },
+    {
+     "title": "Proposition 13 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points A(−4), B(−2), C(4) et D(8).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 2/4 × (−3/8)\nB = 3/4 ÷ 2/6\nC = −1/4 + 1/3\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 7/7 × (−3/5)\nB = 3/4 ÷ 3/9\nC = −2/4 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 5) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 6.",
+     "solution": "Exercice 1\n1) −4 < −2 < 4 < 8\n2) AB = −2 − (−4) = 2 ; AD = 12 ; BC = 6\n3) x(I) = (−4 + 8) ÷ 2 = 2\n4) 2 × 4 − (−2) = 10\n\nExercice 2\nA = −6/32 = −3/16\nB = 3/4 × 6/2 = 18/8 = 9/4\nC = −3/12 + 4/12 = 1/12\n\nExercice 3\nA = −21/35 = −3/5\nB = 3/4 × 9/3 = 27/12 = 9/4\nC = −6/12 + 4/12 = −1/6\n\nExercice 4\n1) P = 2(2x + 5 + x) = 2(3x + 5) = 6x + 10\n2) A = x(2x + 5) = 2x² + 5x\n3) P = 6 × 6 + 10 = 46 m ; A = 2 × 36 + 5 × 6 = 102 m²"
+    },
+    {
+     "title": "Proposition 14 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 18 + (−5)\nB = 12 − (−3)\nC = (−11) × (−4)\nD = 10 ÷ 2\nE = 18 − (−5) + 12\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 6/5 × (−1/2)\nB = 1/4 ÷ 1/2\nC = −1/6 + 1/3\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 5/7 × (−7/2)\nB = 5/4 ÷ 5/9\nC = −1/4 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 6.",
+     "solution": "Exercice 1\nA = 13\nB = 12 + 3 = 15\nC = 44\nD = 5\nE = 35\n\nExercice 2\nA = −6/10 = −3/5\nB = 1/4 × 2/1 = 2/4 = 1/2\nC = −3/18 + 6/18 = 1/6\n\nExercice 3\nA = −35/14 = −5/2\nB = 5/4 × 9/5 = 45/20 = 9/4\nC = −3/12 + 4/12 = 1/12\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 6 + 4 = 40 m ; A = 2 × 36 + 2 × 6 = 84 m²"
+    },
+    {
+     "title": "Proposition 15 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points A(−8), B(−5), C(4) et D(8).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 2 : Calcul littéral\n1) Développer : A = 2(x + 1) ; B = −4(2x − 5).\n2) Réduire : C = 4x + 4 − 2x + 5x − 1.\n3) Factoriser : E = 2x + 2 ; F = 4y² − 16y.\n4) Calculer A pour x = 2.\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points A(−8), B(−3), C(−2) et D(6).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 6) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "Exercice 1\n1) −8 < −5 < 4 < 8\n2) AB = −5 − (−8) = 3 ; AD = 16 ; BC = 9\n3) x(I) = (−8 + 8) ÷ 2 = 0\n4) 2 × 4 − (−5) = 13\n\nExercice 2\n1) A = 2x + 2 ; B = −8x + 20\n2) C = (4 − 2 + 5)x + 4 − 1 = 7x + 3\n3) E = 2(x + 1) ; F = 4y(y − 4)\n4) A = 2 × 2 + 2 = 6\n\nExercice 3\n1) −8 < −3 < −2 < 6\n2) AB = −3 − (−8) = 5 ; AD = 14 ; BC = 1\n3) x(I) = (−8 + 6) ÷ 2 = −1\n4) 2 × (−2) − (−3) = −1\n\nExercice 4\n1) P = 2(2x + 6 + x) = 2(3x + 6) = 6x + 12\n2) A = x(2x + 6) = 2x² + 6x\n3) P = 6 × 4 + 12 = 36 m ; A = 2 × 16 + 6 × 4 = 56 m²"
+    },
+    {
+     "title": "Proposition 16 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Repérage sur un axe\nSur un axe gradué, on place les points A(−9), B(−4), C(3) et D(6).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 5/9 × (−1/8)\nB = 4/3 ÷ 5/6\nC = −1/6 + 1/3\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 1/9 × (−4/2)\nB = 3/5 ÷ 2/2\nC = −4/4 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 3) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 9.",
+     "solution": "Exercice 1\n1) −9 < −4 < 3 < 6\n2) AB = −4 − (−9) = 5 ; AD = 15 ; BC = 7\n3) x(I) = (−9 + 6) ÷ 2 = −1,5\n4) 2 × 3 − (−4) = 10\n\nExercice 2\nA = −5/72\nB = 4/3 × 6/5 = 24/15 = 8/5\nC = −3/18 + 6/18 = 1/6\n\nExercice 3\nA = −4/18 = −2/9\nB = 3/5 × 2/2 = 6/10 = 3/5\nC = −12/12 + 4/12 = −2/3\n\nExercice 4\n1) P = 2(2x + 3 + x) = 2(3x + 3) = 6x + 6\n2) A = x(2x + 3) = 2x² + 3x\n3) P = 6 × 9 + 6 = 60 m ; A = 2 × 81 + 3 × 9 = 189 m²"
+    },
+    {
+     "title": "Proposition 17 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 15 + (−21)\nB = 18 − (−20)\nC = (−4) × (−3)\nD = (−18) ÷ 3\nE = 15 − (−21) + 18\n\nExercice 2 : Calcul littéral\n1) Développer : A = 9(x + 5) ; B = −6(2x − 4).\n2) Réduire : C = 6x + 2 − 9x + 6x − 5.\n3) Factoriser : E = 9x + 45 ; F = 6y² − 12y.\n4) Calculer A pour x = 2.\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points E(−8), F(−6), G(2) et H(7).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 4) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "Exercice 1\nA = −6\nB = 18 + 20 = 38\nC = 12\nD = −6\nE = 54\n\nExercice 2\n1) A = 9x + 45 ; B = −12x + 24\n2) C = (6 − 9 + 6)x + 2 − 5 = 3x − 3\n3) E = 9(x + 5) ; F = 6y(y − 2)\n4) A = 9 × 2 + 45 = 63\n\nExercice 3\n1) −8 < −6 < 2 < 7\n2) EF = −6 − (−8) = 2 ; EH = 15 ; FG = 8\n3) x(I) = (−8 + 7) ÷ 2 = −0,5\n4) 2 × 2 − (−6) = 10\n\nExercice 4\n1) P = 2(2x + 4 + x) = 2(3x + 4) = 6x + 8\n2) A = x(2x + 4) = 2x² + 4x\n3) P = 6 × 4 + 8 = 32 m ; A = 2 × 16 + 4 × 4 = 48 m²"
+    },
+    {
+     "title": "Proposition 18 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 2 + (−6)\nB = 7 − 19\nC = 10 × (−9)\nD = 18 ÷ (−9)\nE = 2 − (−6) + 7\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 7/7 × (−4/8)\nB = 4/3 ÷ 5/9\nC = −4/6 + 1/3\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points M(−9), N(−3), P(−2) et Q(7).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 6) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "Exercice 1\nA = −4\nB = 7 + (−19) = −12\nC = −90\nD = −2\nE = 15\n\nExercice 2\nA = −28/56 = −1/2\nB = 4/3 × 9/5 = 36/15 = 12/5\nC = −12/18 + 6/18 = −1/3\n\nExercice 3\n1) −9 < −3 < −2 < 7\n2) MN = −3 − (−9) = 6 ; MQ = 16 ; NP = 1\n3) x(I) = (−9 + 7) ÷ 2 = −1\n4) 2 × (−2) − (−3) = −1\n\nExercice 4\n1) P = 2(2x + 6 + x) = 2(3x + 6) = 6x + 12\n2) A = x(2x + 6) = 2x² + 6x\n3) P = 6 × 4 + 12 = 36 m ; A = 2 × 16 + 6 × 4 = 56 m²"
+    },
+    {
+     "title": "Proposition 19 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 21 + 20\nB = 20 − (−14)\nC = (−4) × 9\nD = 21 ÷ 7\nE = 21 − 20 + 20\n\nExercice 2 : Calcul littéral\n1) Développer : A = 9(x + 8) ; B = −6(2x − 6).\n2) Réduire : C = 6x + 7 − 9x + 3x − 8.\n3) Factoriser : E = 9x + 72 ; F = 6y² − 42y.\n4) Calculer A pour x = 4.\n\nExercice 3 : Repérage sur un axe\nSur un axe gradué, on place les points A(−7), B(−4), C(−2) et D(4).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 4) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 3.",
+     "solution": "Exercice 1\nA = 41\nB = 20 + 14 = 34\nC = −36\nD = 3\nE = 21\n\nExercice 2\n1) A = 9x + 72 ; B = −12x + 36\n2) C = (6 − 9 + 3)x + 7 − 8 = −1\n3) E = 9(x + 8) ; F = 6y(y − 7)\n4) A = 9 × 4 + 72 = 108\n\nExercice 3\n1) −7 < −4 < −2 < 4\n2) AB = −4 − (−7) = 3 ; AD = 11 ; BC = 2\n3) x(I) = (−7 + 4) ÷ 2 = −1,5\n4) 2 × (−2) − (−4) = 0\n\nExercice 4\n1) P = 2(2x + 4 + x) = 2(3x + 4) = 6x + 8\n2) A = x(2x + 4) = 2x² + 4x\n3) P = 6 × 3 + 8 = 26 m ; A = 2 × 9 + 4 × 3 = 30 m²"
+    },
+    {
+     "title": "Proposition 20 — Examen du 1er trimestre",
+     "text": "Exercice 1 : Opérations sur les entiers relatifs\nCalculer :\nA = 20 + 19\nB = (−16) − 14\nC = (−6) × 3\nD = (−36) ÷ (−4)\nE = 20 − 19 + (−16)\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 6/4 × (−4/8)\nB = 6/5 ÷ 2/9\nC = −4/4 + 1/3\n\nExercice 3 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 3/7 × (−5/3)\nB = 4/3 ÷ 1/2\nC = −3/6 + 1/3\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 3.",
+     "solution": "Exercice 1\nA = 39\nB = (−16) + (−14) = −30\nC = −18\nD = 9\nE = −15\n\nExercice 2\nA = −24/32 = −3/4\nB = 6/5 × 9/2 = 54/10 = 27/5\nC = −12/12 + 4/12 = −2/3\n\nExercice 3\nA = −15/21 = −5/7\nB = 4/3 × 2/1 = 8/3\nC = −9/18 + 6/18 = −1/6\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 3 + 4 = 22 m ; A = 2 × 9 + 2 × 3 = 24 m²"
+    }
+   ]
+  },
+  {
+   "week": "Mars S3",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du 2e trimestre",
+   "covers": [
+    "Angles",
+    "Polygones",
+    "Projection orthogonale",
+    "Droites et cercles",
+    "Transformations"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère EFGH, ∠E = 101°, ∠F = 90° et ∠G = 80°. Calculer ∠H.\n2) Un polygone régulier a 10 côtés de 9 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Projection orthogonale\nTracer une droite (d) et un segment [EF] non parallèle à (d).\n1) Construire les projetés orthogonaux E' et F' de E et F sur (d).\n2) Que peut-on dire des droites (EE') et (FF') ? Justifier.\n3) Si [EF] est perpendiculaire à (d), que peut-on dire de E' et F' ?\n\nExercice 3 : Symétrie centrale\nDEF est un triangle tel que DE = 5 cm, DF = 5 cm et ∠EDF = 48°. O est le milieu de [EF].\n1) Construire D', le symétrique de D par rapport à O.\n2) Quelle est la nature du quadrilatère DED'F ? Justifier.\n3) Donner D'F, D'E et ∠ED'F.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 24 + 17\nB = (−10) − 21\nC = 5 × (−6)\nD = (−21) ÷ 7\nE = 24 − 17 + (−10)",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠H = 360° − (101 + 90 + 80)° = 89°\n2) Périmètre : 10 × 9 = 90 cm ; angle : (10 − 2) × 180° ÷ 10 = 144°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) On trace les perpendiculaires à (d) passant par E et F ; elles coupent (d) en E' et F'.\n2) (EE') et (FF') sont perpendiculaires à (d) : elles sont parallèles.\n3) E' et F' sont confondus.\n\nExercice 3\n2) O est le milieu de [EF] et de [DD'] : les diagonales se coupent en leur milieu, DED'F est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : D'F = DE = 5 cm ; D'E = DF = 5 cm ; ∠ED'F = 48°.\n\nExercice 4\nA = 41\nB = (−10) + (−21) = −31\nC = −30\nD = −3\nE = −3"
+    },
+    {
+     "title": "Proposition 2 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère MNPQ, ∠M = 80°, ∠N = 104° et ∠P = 91°. Calculer ∠Q.\n2) Un polygone régulier a 8 côtés de 8 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 3 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 4,7 cm, 3 cm et 1,5 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nPQR est un triangle tel que PQ = 4 cm, PR = 7 cm et ∠QPR = 111°. O est le milieu de [QR].\n1) Construire P', le symétrique de P par rapport à O.\n2) Quelle est la nature du quadrilatère PQP'R ? Justifier.\n3) Donner P'R, P'Q et ∠QP'R.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 9(x + 6) ; B = −7(2x − 5).\n2) Réduire : C = 7x + 3 − 9x + 2x − 6.\n3) Factoriser : E = 9x + 54 ; F = 7y² − 21y.\n4) Calculer A pour x = 4.",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠Q = 360° − (80 + 104 + 91)° = 85°\n2) Périmètre : 8 × 8 = 64 cm ; angle : (8 − 2) × 180° ÷ 8 = 135°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) (d1) : extérieure au cercle (aucun point commun) ; (d2) : tangente au cercle (un point commun) ; (d3) : sécante au cercle (deux points communs)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [QR] et de [PP'] : les diagonales se coupent en leur milieu, PQP'R est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : P'R = PQ = 4 cm ; P'Q = PR = 7 cm ; ∠QP'R = 111°.\n\nExercice 4\n1) A = 9x + 54 ; B = −14x + 35\n2) C = (7 − 9 + 2)x + 3 − 6 = −3\n3) E = 9(x + 6) ; F = 7y(y − 3)\n4) A = 9 × 4 + 54 = 90"
+    },
+    {
+     "title": "Proposition 3 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère MNPQ, ∠M = 97°, ∠N = 120° et ∠P = 65°. Calculer ∠Q.\n2) Un polygone régulier a 12 côtés de 7 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 7 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 5,2 cm, 7 cm et 8,5 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nIJK est un triangle tel que IJ = 7 cm, IK = 3 cm et ∠JIK = 118°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 19 + (−9)\nB = 21 − (−10)\nC = (−6) × (−3)\nD = (−24) ÷ 8\nE = 19 − (−9) + 21",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠Q = 360° − (97 + 120 + 65)° = 78°\n2) Périmètre : 12 × 7 = 84 cm ; angle : (12 − 2) × 180° ÷ 12 = 150°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : tangente au cercle (un point commun) ; (d3) : extérieure au cercle (aucun point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 7 cm ; I'J = IK = 3 cm ; ∠JI'K = 118°.\n\nExercice 4\nA = 10\nB = 21 + 10 = 31\nC = 18\nD = −3\nE = 49"
+    },
+    {
+     "title": "Proposition 4 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère ABCD, ∠A = 63°, ∠B = 104° et ∠C = 60°. Calculer ∠D.\n2) Un polygone régulier a 10 côtés de 3 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 4 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 2,9 cm, 4 cm et 5,6 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nPQR est un triangle tel que PQ = 4 cm, PR = 7 cm et ∠QPR = 46°. O est le milieu de [QR].\n1) Construire P', le symétrique de P par rapport à O.\n2) Quelle est la nature du quadrilatère PQP'R ? Justifier.\n3) Donner P'R, P'Q et ∠QP'R.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 3(x + 8) ; B = −3(2x − 5).\n2) Réduire : C = 3x + 5 − 3x + 2x − 8.\n3) Factoriser : E = 3x + 24 ; F = 3y² − 15y.\n4) Calculer A pour x = 2.",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (63 + 104 + 60)° = 133°\n2) Périmètre : 10 × 3 = 30 cm ; angle : (10 − 2) × 180° ÷ 10 = 144°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : tangente au cercle (un point commun) ; (d3) : extérieure au cercle (aucun point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [QR] et de [PP'] : les diagonales se coupent en leur milieu, PQP'R est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : P'R = PQ = 4 cm ; P'Q = PR = 7 cm ; ∠QP'R = 46°.\n\nExercice 4\n1) A = 3x + 24 ; B = −6x + 15\n2) C = (3 − 3 + 2)x + 5 − 8 = 2x − 3\n3) E = 3(x + 8) ; F = 3y(y − 5)\n4) A = 3 × 2 + 24 = 30"
+    },
+    {
+     "title": "Proposition 5 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère ABCD, ∠A = 69°, ∠B = 80° et ∠C = 70°. Calculer ∠D.\n2) Un polygone régulier a 8 côtés de 5 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 4 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 3 cm, 5,2 cm et 4 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nEFG est un triangle tel que EF = 4 cm, EG = 6 cm et ∠FEG = 68°. O est le milieu de [FG].\n1) Construire E', le symétrique de E par rapport à O.\n2) Quelle est la nature du quadrilatère EFE'G ? Justifier.\n3) Donner E'G, E'F et ∠FE'G.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 9(x + 7) ; B = −7(2x − 6).\n2) Réduire : C = 7x + 7 − 9x + 4x − 7.\n3) Factoriser : E = 9x + 63 ; F = 7y² − 49y.\n4) Calculer A pour x = 3.",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (69 + 80 + 70)° = 141°\n2) Périmètre : 8 × 5 = 40 cm ; angle : (8 − 2) × 180° ÷ 8 = 135°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [FG] et de [EE'] : les diagonales se coupent en leur milieu, EFE'G est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : E'G = EF = 4 cm ; E'F = EG = 6 cm ; ∠FE'G = 68°.\n\nExercice 4\n1) A = 9x + 63 ; B = −14x + 42\n2) C = (7 − 9 + 4)x + 7 − 7 = 2x\n3) E = 9(x + 7) ; F = 7y(y − 7)\n4) A = 9 × 3 + 63 = 90"
+    },
+    {
+     "title": "Proposition 6 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 36° et le supplémentaire d'un angle de 122°.\n2) Deux droites sécantes forment un angle de 63°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 63°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Projection orthogonale\nTracer une droite (D) et un segment [EF] non parallèle à (D).\n1) Construire les projetés orthogonaux E' et F' de E et F sur (D).\n2) Que peut-on dire des droites (EE') et (FF') ? Justifier.\n3) Si [EF] est perpendiculaire à (D), que peut-on dire de E' et F' ?\n\nExercice 3 : Symétrie centrale\nDEF est un triangle tel que DE = 7 cm, DF = 5 cm et ∠EDF = 58°. O est le milieu de [EF].\n1) Construire D', le symétrique de D par rapport à O.\n2) Quelle est la nature du quadrilatère DED'F ? Justifier.\n3) Donner D'F, D'E et ∠ED'F.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 16 + 11\nB = 22 − 19\nC = (−12) × (−7)\nD = (−16) ÷ (−8)\nE = 16 − 11 + 22",
+     "solution": "Exercice 1\n1) 90° − 36° = 54° ; 180° − 122° = 58°\n2) L'angle opposé par le sommet mesure 63° ; les deux autres mesurent 180° − 63° = 117°.\n3) Les angles alternes-internes ont la même mesure : 63° ; l'angle adjacent supplémentaire : 117°.\n\nExercice 2\n1) On trace les perpendiculaires à (D) passant par E et F ; elles coupent (D) en E' et F'.\n2) (EE') et (FF') sont perpendiculaires à (D) : elles sont parallèles.\n3) E' et F' sont confondus.\n\nExercice 3\n2) O est le milieu de [EF] et de [DD'] : les diagonales se coupent en leur milieu, DED'F est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : D'F = DE = 7 cm ; D'E = DF = 5 cm ; ∠ED'F = 58°.\n\nExercice 4\nA = 27\nB = 22 + (−19) = 3\nC = 84\nD = 2\nE = 27"
+    },
+    {
+     "title": "Proposition 7 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 38° et le supplémentaire d'un angle de 142°.\n2) Deux droites sécantes forment un angle de 62°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 62°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 8 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 6,4 cm, 9,3 cm et 8 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nDEF est un triangle tel que DE = 3 cm, DF = 8 cm et ∠EDF = 88°. O est le milieu de [EF].\n1) Construire D', le symétrique de D par rapport à O.\n2) Quelle est la nature du quadrilatère DED'F ? Justifier.\n3) Donner D'F, D'E et ∠ED'F.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 2(x + 9) ; B = −3(2x − 7).\n2) Réduire : C = 3x + 5 − 2x + 5x − 9.\n3) Factoriser : E = 2x + 18 ; F = 3y² − 15y.\n4) Calculer A pour x = 2.",
+     "solution": "Exercice 1\n1) 90° − 38° = 52° ; 180° − 142° = 38°\n2) L'angle opposé par le sommet mesure 62° ; les deux autres mesurent 180° − 62° = 118°.\n3) Les angles alternes-internes ont la même mesure : 62° ; l'angle adjacent supplémentaire : 118°.\n\nExercice 2\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [EF] et de [DD'] : les diagonales se coupent en leur milieu, DED'F est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : D'F = DE = 3 cm ; D'E = DF = 8 cm ; ∠ED'F = 88°.\n\nExercice 4\n1) A = 2x + 18 ; B = −6x + 21\n2) C = (3 − 2 + 5)x + 5 − 9 = 6x − 4\n3) E = 2(x + 9) ; F = 3y(y − 5)\n4) A = 2 × 2 + 18 = 22"
+    },
+    {
+     "title": "Proposition 8 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère ABCD, ∠A = 84°, ∠B = 91° et ∠C = 81°. Calculer ∠D.\n2) Un polygone régulier a 8 côtés de 6 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Projection orthogonale\nTracer une droite (d) et un segment [MN] non parallèle à (d).\n1) Construire les projetés orthogonaux M' et N' de M et N sur (d).\n2) Que peut-on dire des droites (MM') et (NN') ? Justifier.\n3) Si [MN] est perpendiculaire à (d), que peut-on dire de M' et N' ?\n\nExercice 3 : Symétrie centrale\nIJK est un triangle tel que IJ = 4 cm, IK = 8 cm et ∠JIK = 114°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 6 + 11\nB = 8 − (−12)\nC = 10 × (−8)\nD = (−32) ÷ 8\nE = 6 − 11 + 8",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (84 + 91 + 81)° = 104°\n2) Périmètre : 8 × 6 = 48 cm ; angle : (8 − 2) × 180° ÷ 8 = 135°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) On trace les perpendiculaires à (d) passant par M et N ; elles coupent (d) en M' et N'.\n2) (MM') et (NN') sont perpendiculaires à (d) : elles sont parallèles.\n3) M' et N' sont confondus.\n\nExercice 3\n2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 4 cm ; I'J = IK = 8 cm ; ∠JI'K = 114°.\n\nExercice 4\nA = 17\nB = 8 + 12 = 20\nC = −80\nD = −4\nE = 3"
+    },
+    {
+     "title": "Proposition 9 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 23° et le supplémentaire d'un angle de 112°.\n2) Deux droites sécantes forment un angle de 101°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 101°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Projection orthogonale\nTracer une droite (D) et un segment [MN] non parallèle à (D).\n1) Construire les projetés orthogonaux M' et N' de M et N sur (D).\n2) Que peut-on dire des droites (MM') et (NN') ? Justifier.\n3) Si [MN] est perpendiculaire à (D), que peut-on dire de M' et N' ?\n\nExercice 3 : Symétrie centrale\nIJK est un triangle tel que IJ = 3 cm, IK = 8 cm et ∠JIK = 48°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 7(x + 7) ; B = −6(2x − 6).\n2) Réduire : C = 6x + 7 − 7x + 3x − 7.\n3) Factoriser : E = 7x + 49 ; F = 6y² − 42y.\n4) Calculer A pour x = 2.",
+     "solution": "Exercice 1\n1) 90° − 23° = 67° ; 180° − 112° = 68°\n2) L'angle opposé par le sommet mesure 101° ; les deux autres mesurent 180° − 101° = 79°.\n3) Les angles alternes-internes ont la même mesure : 101° ; l'angle adjacent supplémentaire : 79°.\n\nExercice 2\n1) On trace les perpendiculaires à (D) passant par M et N ; elles coupent (D) en M' et N'.\n2) (MM') et (NN') sont perpendiculaires à (D) : elles sont parallèles.\n3) M' et N' sont confondus.\n\nExercice 3\n2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 3 cm ; I'J = IK = 8 cm ; ∠JI'K = 48°.\n\nExercice 4\n1) A = 7x + 49 ; B = −12x + 36\n2) C = (6 − 7 + 3)x + 7 − 7 = 2x\n3) E = 7(x + 7) ; F = 6y(y − 7)\n4) A = 7 × 2 + 49 = 63"
+    },
+    {
+     "title": "Proposition 10 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère ABCD, ∠A = 86°, ∠B = 105° et ∠C = 87°. Calculer ∠D.\n2) Un polygone régulier a 6 côtés de 7 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 3 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 3 cm, 1,8 cm et 4,1 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nUVW est un triangle tel que UV = 5 cm, UW = 6 cm et ∠VUW = 41°. O est le milieu de [VW].\n1) Construire U', le symétrique de U par rapport à O.\n2) Quelle est la nature du quadrilatère UVU'W ? Justifier.\n3) Donner U'W, U'V et ∠VU'W.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = (−20) + (−7)\nB = 17 − (−2)\nC = (−2) × 5\nD = 24 ÷ 6\nE = (−20) − (−7) + 17",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (86 + 105 + 87)° = 82°\n2) Périmètre : 6 × 7 = 42 cm ; angle : (6 − 2) × 180° ÷ 6 = 120°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) (d1) : tangente au cercle (un point commun) ; (d2) : sécante au cercle (deux points communs) ; (d3) : extérieure au cercle (aucun point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [VW] et de [UU'] : les diagonales se coupent en leur milieu, UVU'W est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : U'W = UV = 5 cm ; U'V = UW = 6 cm ; ∠VU'W = 41°.\n\nExercice 4\nA = −27\nB = 17 + 2 = 19\nC = −10\nD = 4\nE = 4"
+    },
+    {
+     "title": "Proposition 11 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 43° et le supplémentaire d'un angle de 143°.\n2) Deux droites sécantes forment un angle de 37°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 37°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 4 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 4 cm, 2,4 cm et 5 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nIJK est un triangle tel que IJ = 5 cm, IK = 4 cm et ∠JIK = 61°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 19 + 20\nB = 14 − (−6)\nC = (−5) × 3\nD = (−36) ÷ (−6)\nE = 19 − 20 + 14",
+     "solution": "Exercice 1\n1) 90° − 43° = 47° ; 180° − 143° = 37°\n2) L'angle opposé par le sommet mesure 37° ; les deux autres mesurent 180° − 37° = 143°.\n3) Les angles alternes-internes ont la même mesure : 37° ; l'angle adjacent supplémentaire : 143°.\n\nExercice 2\n1) (d1) : tangente au cercle (un point commun) ; (d2) : sécante au cercle (deux points communs) ; (d3) : extérieure au cercle (aucun point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 5 cm ; I'J = IK = 4 cm ; ∠JI'K = 61°.\n\nExercice 4\nA = 39\nB = 14 + 6 = 20\nC = −15\nD = 6\nE = 13"
+    },
+    {
+     "title": "Proposition 12 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 67° et le supplémentaire d'un angle de 118°.\n2) Deux droites sécantes forment un angle de 124°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 124°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Projection orthogonale\nTracer une droite (D) et un segment [EF] non parallèle à (D).\n1) Construire les projetés orthogonaux E' et F' de E et F sur (D).\n2) Que peut-on dire des droites (EE') et (FF') ? Justifier.\n3) Si [EF] est perpendiculaire à (D), que peut-on dire de E' et F' ?\n\nExercice 3 : Symétrie centrale\nUVW est un triangle tel que UV = 5 cm, UW = 3 cm et ∠VUW = 53°. O est le milieu de [VW].\n1) Construire U', le symétrique de U par rapport à O.\n2) Quelle est la nature du quadrilatère UVU'W ? Justifier.\n3) Donner U'W, U'V et ∠VU'W.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 3(x + 2) ; B = −3(2x − 9).\n2) Réduire : C = 3x + 2 − 3x + 6x − 2.\n3) Factoriser : E = 3x + 6 ; F = 3y² − 6y.\n4) Calculer A pour x = 2.",
+     "solution": "Exercice 1\n1) 90° − 67° = 23° ; 180° − 118° = 62°\n2) L'angle opposé par le sommet mesure 124° ; les deux autres mesurent 180° − 124° = 56°.\n3) Les angles alternes-internes ont la même mesure : 124° ; l'angle adjacent supplémentaire : 56°.\n\nExercice 2\n1) On trace les perpendiculaires à (D) passant par E et F ; elles coupent (D) en E' et F'.\n2) (EE') et (FF') sont perpendiculaires à (D) : elles sont parallèles.\n3) E' et F' sont confondus.\n\nExercice 3\n2) O est le milieu de [VW] et de [UU'] : les diagonales se coupent en leur milieu, UVU'W est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : U'W = UV = 5 cm ; U'V = UW = 3 cm ; ∠VU'W = 53°.\n\nExercice 4\n1) A = 3x + 6 ; B = −6x + 27\n2) C = (3 − 3 + 6)x + 2 − 2 = 6x\n3) E = 3(x + 2) ; F = 3y(y − 2)\n4) A = 3 × 2 + 6 = 12"
+    },
+    {
+     "title": "Proposition 13 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère EFGH, ∠E = 93°, ∠F = 106° et ∠G = 99°. Calculer ∠H.\n2) Un polygone régulier a 5 côtés de 4 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Projection orthogonale\nTracer une droite (Δ) et un segment [AB] non parallèle à (Δ).\n1) Construire les projetés orthogonaux A' et B' de A et B sur (Δ).\n2) Que peut-on dire des droites (AA') et (BB') ? Justifier.\n3) Si [AB] est perpendiculaire à (Δ), que peut-on dire de A' et B' ?\n\nExercice 3 : Symétrie centrale\nDEF est un triangle tel que DE = 5 cm, DF = 5 cm et ∠EDF = 91°. O est le milieu de [EF].\n1) Construire D', le symétrique de D par rapport à O.\n2) Quelle est la nature du quadrilatère DED'F ? Justifier.\n3) Donner D'F, D'E et ∠ED'F.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 9(x + 6) ; B = −7(2x − 1).\n2) Réduire : C = 7x + 6 − 9x + 5x − 6.\n3) Factoriser : E = 9x + 54 ; F = 7y² − 42y.\n4) Calculer A pour x = −2.",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠H = 360° − (93 + 106 + 99)° = 62°\n2) Périmètre : 5 × 4 = 20 cm ; angle : (5 − 2) × 180° ÷ 5 = 108°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) On trace les perpendiculaires à (Δ) passant par A et B ; elles coupent (Δ) en A' et B'.\n2) (AA') et (BB') sont perpendiculaires à (Δ) : elles sont parallèles.\n3) A' et B' sont confondus.\n\nExercice 3\n2) O est le milieu de [EF] et de [DD'] : les diagonales se coupent en leur milieu, DED'F est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : D'F = DE = 5 cm ; D'E = DF = 5 cm ; ∠ED'F = 91°.\n\nExercice 4\n1) A = 9x + 54 ; B = −14x + 7\n2) C = (7 − 9 + 5)x + 6 − 6 = 3x\n3) E = 9(x + 6) ; F = 7y(y − 6)\n4) A = 9 × (−2) + 54 = 36"
+    },
+    {
+     "title": "Proposition 14 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 62° et le supplémentaire d'un angle de 146°.\n2) Deux droites sécantes forment un angle de 58°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 58°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 4 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 2,9 cm, 5,7 cm et 4 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nEFG est un triangle tel que EF = 8 cm, EG = 3 cm et ∠FEG = 96°. O est le milieu de [FG].\n1) Construire E', le symétrique de E par rapport à O.\n2) Quelle est la nature du quadrilatère EFE'G ? Justifier.\n3) Donner E'G, E'F et ∠FE'G.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 17 + 11\nB = 2 − (−21)\nC = 9 × 6\nD = (−14) ÷ (−2)\nE = 17 − 11 + 2",
+     "solution": "Exercice 1\n1) 90° − 62° = 28° ; 180° − 146° = 34°\n2) L'angle opposé par le sommet mesure 58° ; les deux autres mesurent 180° − 58° = 122°.\n3) Les angles alternes-internes ont la même mesure : 58° ; l'angle adjacent supplémentaire : 122°.\n\nExercice 2\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [FG] et de [EE'] : les diagonales se coupent en leur milieu, EFE'G est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : E'G = EF = 8 cm ; E'F = EG = 3 cm ; ∠FE'G = 96°.\n\nExercice 4\nA = 28\nB = 2 + 21 = 23\nC = 54\nD = 7\nE = 8"
+    },
+    {
+     "title": "Proposition 15 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère EFGH, ∠E = 74°, ∠F = 109° et ∠G = 61°. Calculer ∠H.\n2) Un polygone régulier a 10 côtés de 6 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Projection orthogonale\nTracer une droite (Δ) et un segment [AB] non parallèle à (Δ).\n1) Construire les projetés orthogonaux A' et B' de A et B sur (Δ).\n2) Que peut-on dire des droites (AA') et (BB') ? Justifier.\n3) Si [AB] est perpendiculaire à (Δ), que peut-on dire de A' et B' ?\n\nExercice 3 : Symétrie centrale\nUVW est un triangle tel que UV = 3 cm, UW = 6 cm et ∠VUW = 115°. O est le milieu de [VW].\n1) Construire U', le symétrique de U par rapport à O.\n2) Quelle est la nature du quadrilatère UVU'W ? Justifier.\n3) Donner U'W, U'V et ∠VU'W.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 13 + 20\nB = (−12) − (−17)\nC = (−3) × 4\nD = 18 ÷ 6\nE = 13 − 20 + (−12)",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠H = 360° − (74 + 109 + 61)° = 116°\n2) Périmètre : 10 × 6 = 60 cm ; angle : (10 − 2) × 180° ÷ 10 = 144°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) On trace les perpendiculaires à (Δ) passant par A et B ; elles coupent (Δ) en A' et B'.\n2) (AA') et (BB') sont perpendiculaires à (Δ) : elles sont parallèles.\n3) A' et B' sont confondus.\n\nExercice 3\n2) O est le milieu de [VW] et de [UU'] : les diagonales se coupent en leur milieu, UVU'W est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : U'W = UV = 3 cm ; U'V = UW = 6 cm ; ∠VU'W = 115°.\n\nExercice 4\nA = 33\nB = (−12) + 17 = 5\nC = −12\nD = 3\nE = −19"
+    },
+    {
+     "title": "Proposition 16 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 70° et le supplémentaire d'un angle de 116°.\n2) Deux droites sécantes forment un angle de 46°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 46°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 5 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 3,4 cm, 6,9 cm et 5 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nUVW est un triangle tel que UV = 4 cm, UW = 8 cm et ∠VUW = 59°. O est le milieu de [VW].\n1) Construire U', le symétrique de U par rapport à O.\n2) Quelle est la nature du quadrilatère UVU'W ? Justifier.\n3) Donner U'W, U'V et ∠VU'W.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 22 + (−12)\nB = 24 − (−19)\nC = (−3) × 2\nD = 21 ÷ 7\nE = 22 − (−12) + 24",
+     "solution": "Exercice 1\n1) 90° − 70° = 20° ; 180° − 116° = 64°\n2) L'angle opposé par le sommet mesure 46° ; les deux autres mesurent 180° − 46° = 134°.\n3) Les angles alternes-internes ont la même mesure : 46° ; l'angle adjacent supplémentaire : 134°.\n\nExercice 2\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [VW] et de [UU'] : les diagonales se coupent en leur milieu, UVU'W est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : U'W = UV = 4 cm ; U'V = UW = 8 cm ; ∠VU'W = 59°.\n\nExercice 4\nA = 10\nB = 24 + 19 = 43\nC = −6\nD = 3\nE = 58"
+    },
+    {
+     "title": "Proposition 17 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère ABCD, ∠A = 101°, ∠B = 87° et ∠C = 87°. Calculer ∠D.\n2) Un polygone régulier a 8 côtés de 8 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Projection orthogonale\nTracer une droite (d) et un segment [AB] non parallèle à (d).\n1) Construire les projetés orthogonaux A' et B' de A et B sur (d).\n2) Que peut-on dire des droites (AA') et (BB') ? Justifier.\n3) Si [AB] est perpendiculaire à (d), que peut-on dire de A' et B' ?\n\nExercice 3 : Symétrie centrale\nRST est un triangle tel que RS = 7 cm, RT = 5 cm et ∠SRT = 113°. O est le milieu de [ST].\n1) Construire R', le symétrique de R par rapport à O.\n2) Quelle est la nature du quadrilatère RSR'T ? Justifier.\n3) Donner R'T, R'S et ∠SR'T.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 7(x + 3) ; B = −4(2x − 6).\n2) Réduire : C = 4x + 4 − 7x + 3x − 3.\n3) Factoriser : E = 7x + 21 ; F = 4y² − 16y.\n4) Calculer A pour x = 2.",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (101 + 87 + 87)° = 85°\n2) Périmètre : 8 × 8 = 64 cm ; angle : (8 − 2) × 180° ÷ 8 = 135°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) On trace les perpendiculaires à (d) passant par A et B ; elles coupent (d) en A' et B'.\n2) (AA') et (BB') sont perpendiculaires à (d) : elles sont parallèles.\n3) A' et B' sont confondus.\n\nExercice 3\n2) O est le milieu de [ST] et de [RR'] : les diagonales se coupent en leur milieu, RSR'T est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : R'T = RS = 7 cm ; R'S = RT = 5 cm ; ∠SR'T = 113°.\n\nExercice 4\n1) A = 7x + 21 ; B = −8x + 24\n2) C = (4 − 7 + 3)x + 4 − 3 = 1\n3) E = 7(x + 3) ; F = 4y(y − 4)\n4) A = 7 × 2 + 21 = 35"
+    },
+    {
+     "title": "Proposition 18 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 53° et le supplémentaire d'un angle de 108°.\n2) Deux droites sécantes forment un angle de 138°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 138°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 3 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 4,5 cm, 3 cm et 1,3 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nRST est un triangle tel que RS = 7 cm, RT = 8 cm et ∠SRT = 65°. O est le milieu de [ST].\n1) Construire R', le symétrique de R par rapport à O.\n2) Quelle est la nature du quadrilatère RSR'T ? Justifier.\n3) Donner R'T, R'S et ∠SR'T.\n\nExercice 4 : Calcul littéral\n1) Développer : A = 5(x + 8) ; B = −6(2x − 7).\n2) Réduire : C = 6x + 4 − 5x + 6x − 8.\n3) Factoriser : E = 5x + 40 ; F = 6y² − 24y.\n4) Calculer A pour x = −3.",
+     "solution": "Exercice 1\n1) 90° − 53° = 37° ; 180° − 108° = 72°\n2) L'angle opposé par le sommet mesure 138° ; les deux autres mesurent 180° − 138° = 42°.\n3) Les angles alternes-internes ont la même mesure : 138° ; l'angle adjacent supplémentaire : 42°.\n\nExercice 2\n1) (d1) : extérieure au cercle (aucun point commun) ; (d2) : tangente au cercle (un point commun) ; (d3) : sécante au cercle (deux points communs)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [ST] et de [RR'] : les diagonales se coupent en leur milieu, RSR'T est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : R'T = RS = 7 cm ; R'S = RT = 8 cm ; ∠SR'T = 65°.\n\nExercice 4\n1) A = 5x + 40 ; B = −12x + 42\n2) C = (6 − 5 + 6)x + 4 − 8 = 7x − 4\n3) E = 5(x + 8) ; F = 6y(y − 4)\n4) A = 5 × (−3) + 40 = 25"
+    },
+    {
+     "title": "Proposition 19 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Polygones\n1) Dans le quadrilatère MNPQ, ∠M = 73°, ∠N = 97° et ∠P = 77°. Calculer ∠Q.\n2) Un polygone régulier a 12 côtés de 3 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 2 : Projection orthogonale\nTracer une droite (D) et un segment [EF] non parallèle à (D).\n1) Construire les projetés orthogonaux E' et F' de E et F sur (D).\n2) Que peut-on dire des droites (EE') et (FF') ? Justifier.\n3) Si [EF] est perpendiculaire à (D), que peut-on dire de E' et F' ?\n\nExercice 3 : Symétrie centrale\nIJK est un triangle tel que IJ = 8 cm, IK = 5 cm et ∠JIK = 40°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = (−13) + 14\nB = (−12) − (−3)\nC = 5 × (−7)\nD = (−14) ÷ 7\nE = (−13) − 14 + (−12)",
+     "solution": "Exercice 1\n1) La somme des angles d'un quadrilatère est 360° : ∠Q = 360° − (73 + 97 + 77)° = 113°\n2) Périmètre : 12 × 3 = 36 cm ; angle : (12 − 2) × 180° ÷ 12 = 150°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 2\n1) On trace les perpendiculaires à (D) passant par E et F ; elles coupent (D) en E' et F'.\n2) (EE') et (FF') sont perpendiculaires à (D) : elles sont parallèles.\n3) E' et F' sont confondus.\n\nExercice 3\n2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 8 cm ; I'J = IK = 5 cm ; ∠JI'K = 40°.\n\nExercice 4\nA = 1\nB = (−12) + 3 = −9\nC = −35\nD = −2\nE = −39"
+    },
+    {
+     "title": "Proposition 20 — Examen du 2e trimestre",
+     "text": "Exercice 1 : Angles\n1) Calculer le complémentaire d'un angle de 61° et le supplémentaire d'un angle de 131°.\n2) Deux droites sécantes forment un angle de 106°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 106°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 2 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 8 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 9,5 cm, 6,5 cm et 8 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 3 : Symétrie centrale\nIJK est un triangle tel que IJ = 3 cm, IK = 8 cm et ∠JIK = 98°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.\n\nExercice 4 : Opérations sur les entiers relatifs\nCalculer :\nA = 15 + 2\nB = 8 − 15\nC = 8 × 4\nD = 54 ÷ 9\nE = 15 − 2 + 8",
+     "solution": "Exercice 1\n1) 90° − 61° = 29° ; 180° − 131° = 49°\n2) L'angle opposé par le sommet mesure 106° ; les deux autres mesurent 180° − 106° = 74°.\n3) Les angles alternes-internes ont la même mesure : 106° ; l'angle adjacent supplémentaire : 74°.\n\nExercice 2\n1) (d1) : extérieure au cercle (aucun point commun) ; (d2) : sécante au cercle (deux points communs) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 3\n2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 3 cm ; I'J = IK = 8 cm ; ∠JI'K = 98°.\n\nExercice 4\nA = 17\nB = 8 + (−15) = −7\nC = 32\nD = 6\nE = 21"
+    }
+   ]
+  },
+  {
+   "week": "Juin S3",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du 3e trimestre",
+   "covers": [
+    "Proportionnalité",
+    "Statistique",
+    "Cylindre et prisme droit",
+    "Révision de l'année"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique\nLe tableau donne l'âge (en années) des membres d'un club :\nÂge : 9 | 10 | 11 | 13 | 14\nEffectif : 4 | 5 | 3 | 4 | 4\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?\n\nExercice 2 : Calcul littéral\n1) Développer : A = 2(x + 2) ; B = −3(2x − 6).\n2) Réduire : C = 3x + 6 − 2x + 6x − 2.\n3) Factoriser : E = 2x + 4 ; F = 3y² − 18y.\n4) Calculer A pour x = 3.\n\nExercice 3 : Cylindre et prisme droit\n1) Un cylindre a pour rayon 5 cm et pour hauteur 11 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 8 cm et 6 cm ; sa hauteur est 10 cm. Calculer l'aire de la base et le volume du prisme.\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 6 h pour un trajet de 320 km à la vitesse moyenne de 80 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 10 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 60 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) N = 20\n2) 9 ans : 20 % ; 10 ans : 25 % ; 11 ans : 15 % ; 13 ans : 20 % ; 14 ans : 20 %\n3) (9×4 + 10×5 + 11×3 + 13×4 + 14×4) ÷ 20 ≈ 11,4 ans\n4) 10 ans\n\nExercice 2\n1) A = 2x + 4 ; B = −6x + 18\n2) C = (3 − 2 + 6)x + 6 − 2 = 7x + 4\n3) E = 2(x + 2) ; F = 3y(y − 6)\n4) A = 2 × 3 + 4 = 10\n\nExercice 3\n1) Aire latérale : 2 × 3,14 × 5 × 11 = 345,4 cm² ; volume : 3,14 × 5² × 11 = 863,5 cm³\n2) Base : 8 × 6 ÷ 2 = 24 cm² ; volume : 24 × 10 = 240 cm³\n\nExercice 4\n1) 320 ÷ 80 = 4 h ; arrivée à 10 h\n2) 320 × 10 ÷ 100 = 32 L\n3) 32 × 60 = 1 920 MRU"
+    },
+    {
+     "title": "Proposition 2 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 70 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Boutilimit est 240 km ; le trajet dure 4 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 140 km à 70 km/h ?\n\nExercice 2 : Repérage sur un axe\nSur un axe gradué, on place les points M(−8), N(−1), P(4) et Q(5).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances MN, MQ et NP.\n3) Calculer l'abscisse du milieu I de [MQ].\n4) Donner l'abscisse du symétrique de N par rapport à P.\n\nExercice 3 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 3 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 1,8 cm, 3 cm et 4,2 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 9.",
+     "solution": "Exercice 1\n1) d = 70 × 1,5 = 105 km\n2) v = 240 ÷ 4 = 60 km/h\n3) t = 140 ÷ 70 = 2 h\n\nExercice 2\n1) −8 < −1 < 4 < 5\n2) MN = −1 − (−8) = 7 ; MQ = 13 ; NP = 5\n3) x(I) = (−8 + 5) ÷ 2 = −1,5\n4) 2 × 4 − (−1) = 9\n\nExercice 3\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : tangente au cercle (un point commun) ; (d3) : extérieure au cercle (aucun point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 9 + 4 = 58 m ; A = 2 × 81 + 2 × 9 = 180 m²"
+    },
+    {
+     "title": "Proposition 3 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique\nLe tableau donne l'âge (en années) des membres d'un club :\nÂge : 9 | 11 | 14 | 17 | 18\nEffectif : 4 | 3 | 6 | 6 | 2\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?\n\nExercice 2 : Calcul littéral\n1) Développer : A = 9(x + 7) ; B = −2(2x − 4).\n2) Réduire : C = 2x + 5 − 9x + 5x − 7.\n3) Factoriser : E = 9x + 63 ; F = 2y² − 10y.\n4) Calculer A pour x = 4.\n\nExercice 3 : Projection orthogonale\nTracer une droite (D) et un segment [AB] non parallèle à (D).\n1) Construire les projetés orthogonaux A' et B' de A et B sur (D).\n2) Que peut-on dire des droites (AA') et (BB') ? Justifier.\n3) Si [AB] est perpendiculaire à (D), que peut-on dire de A' et B' ?\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 7 h pour un trajet de 300 km à la vitesse moyenne de 75 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 12 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 60 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) N = 21\n2) 9 ans : 19 % ; 11 ans : 14,3 % ; 14 ans : 28,6 % ; 17 ans : 28,6 % ; 18 ans : 9,5 %\n3) (9×4 + 11×3 + 14×6 + 17×6 + 18×2) ÷ 21 ≈ 13,9 ans\n4) 14 ans et 17 ans\n\nExercice 2\n1) A = 9x + 63 ; B = −4x + 8\n2) C = (2 − 9 + 5)x + 5 − 7 = −2x − 2\n3) E = 9(x + 7) ; F = 2y(y − 5)\n4) A = 9 × 4 + 63 = 99\n\nExercice 3\n1) On trace les perpendiculaires à (D) passant par A et B ; elles coupent (D) en A' et B'.\n2) (AA') et (BB') sont perpendiculaires à (D) : elles sont parallèles.\n3) A' et B' sont confondus.\n\nExercice 4\n1) 300 ÷ 75 = 4 h ; arrivée à 11 h\n2) 300 × 12 ÷ 100 = 36 L\n3) 36 × 60 = 2 160 MRU"
+    },
+    {
+     "title": "Proposition 4 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique\nLe tableau donne l'âge (en années) des membres d'un club :\nÂge : 11 | 13 | 14 | 15 | 17\nEffectif : 5 | 6 | 5 | 9 | 6\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?\n\nExercice 2 : Repérage sur un axe\nSur un axe gradué, on place les points E(−5), F(2), G(5) et H(8).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.\n\nExercice 3 : Angles\n1) Calculer le complémentaire d'un angle de 38° et le supplémentaire d'un angle de 107°.\n2) Deux droites sécantes forment un angle de 117°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 117°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 6 h pour un trajet de 375 km à la vitesse moyenne de 75 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 10 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 50 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) N = 31\n2) 11 ans : 16,1 % ; 13 ans : 19,4 % ; 14 ans : 16,1 % ; 15 ans : 29 % ; 17 ans : 19,4 %\n3) (11×5 + 13×6 + 14×5 + 15×9 + 17×6) ÷ 31 ≈ 14,2 ans\n4) 15 ans\n\nExercice 2\n1) −5 < 2 < 5 < 8\n2) EF = 2 − (−5) = 7 ; EH = 13 ; FG = 3\n3) x(I) = (−5 + 8) ÷ 2 = 1,5\n4) 2 × 5 − 2 = 8\n\nExercice 3\n1) 90° − 38° = 52° ; 180° − 107° = 73°\n2) L'angle opposé par le sommet mesure 117° ; les deux autres mesurent 180° − 117° = 63°.\n3) Les angles alternes-internes ont la même mesure : 117° ; l'angle adjacent supplémentaire : 63°.\n\nExercice 4\n1) 375 ÷ 75 = 5 h ; arrivée à 11 h\n2) 375 × 10 ÷ 100 = 37,5 L\n3) 37,5 × 50 = 1 875 MRU"
+    },
+    {
+     "title": "Proposition 5 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique\nLe tableau donne l'âge (en années) des membres d'un club :\nÂge : 8 | 9 | 10 | 11 | 17\nEffectif : 6 | 9 | 5 | 5 | 8\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?\n\nExercice 2 : Calcul littéral\n1) Développer : A = 8(x + 3) ; B = −3(2x − 1).\n2) Réduire : C = 3x + 2 − 8x + 3x − 3.\n3) Factoriser : E = 8x + 24 ; F = 3y² − 6y.\n4) Calculer A pour x = −3.\n\nExercice 3 : Angles\n1) Calculer le complémentaire d'un angle de 39° et le supplémentaire d'un angle de 109°.\n2) Deux droites sécantes forment un angle de 39°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 39°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 4 : Situation d'intégration : la citerne\nUne citerne cylindrique a un rayon de 1,1 m et une hauteur de 1,9 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 10 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "Exercice 1\n1) N = 33\n2) 8 ans : 18,2 % ; 9 ans : 27,3 % ; 10 ans : 15,2 % ; 11 ans : 15,2 % ; 17 ans : 24,2 %\n3) (8×6 + 9×9 + 10×5 + 11×5 + 17×8) ÷ 33 ≈ 11,2 ans\n4) 9 ans\n\nExercice 2\n1) A = 8x + 24 ; B = −6x + 3\n2) C = (3 − 8 + 3)x + 2 − 3 = −2x − 1\n3) E = 8(x + 3) ; F = 3y(y − 2)\n4) A = 8 × (−3) + 24 = 0\n\nExercice 3\n1) 90° − 39° = 51° ; 180° − 109° = 71°\n2) L'angle opposé par le sommet mesure 39° ; les deux autres mesurent 180° − 39° = 141°.\n3) Les angles alternes-internes ont la même mesure : 39° ; l'angle adjacent supplémentaire : 141°.\n\nExercice 4\n1) V = 3,14 × 1,1² × 1,9 = 7,21886 m³ = 7 218,86 L\n2) 7 218,86 ÷ 100 × 10 = 721,886 MRU\n3) 7 218,86 × 70 ÷ 100 = 5 053,202 L"
+    },
+    {
+     "title": "Proposition 6 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 80 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Boutilimit est 150 km ; le trajet dure 2 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 160 km à 80 km/h ?\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 3/7 × (−1/3)\nB = 4/3 ÷ 4/9\nC = −5/6 + 1/3\n\nExercice 3 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 3 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 3 cm, 1,9 cm et 4 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 7 h pour un trajet de 270 km à la vitesse moyenne de 90 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 9 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 60 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) d = 80 × 1,5 = 120 km\n2) v = 150 ÷ 2 = 75 km/h\n3) t = 160 ÷ 80 = 2 h\n\nExercice 2\nA = −3/21 = −1/7\nB = 4/3 × 9/4 = 36/12 = 3\nC = −15/18 + 6/18 = −1/2\n\nExercice 3\n1) (d1) : tangente au cercle (un point commun) ; (d2) : sécante au cercle (deux points communs) ; (d3) : extérieure au cercle (aucun point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 4\n1) 270 ÷ 90 = 3 h ; arrivée à 10 h\n2) 270 × 9 ÷ 100 = 24,3 L\n3) 24,3 × 60 = 1 458 MRU"
+    },
+    {
+     "title": "Proposition 7 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 80 km/h pendant 2 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Boutilimit est 120 km ; le trajet dure 4 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 160 km à 80 km/h ?\n\nExercice 2 : Opérations sur les entiers relatifs\nCalculer :\nA = (−19) + (−4)\nB = (−2) − 16\nC = 9 × 4\nD = (−48) ÷ (−8)\nE = (−19) − (−4) + (−2)\n\nExercice 3 : Polygones\n1) Dans le quadrilatère ABCD, ∠A = 89°, ∠B = 74° et ∠C = 65°. Calculer ∠D.\n2) Un polygone régulier a 8 côtés de 4 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 2) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 4.",
+     "solution": "Exercice 1\n1) d = 80 × 2 = 160 km\n2) v = 120 ÷ 4 = 30 km/h\n3) t = 160 ÷ 80 = 2 h\n\nExercice 2\nA = −23\nB = (−2) + (−16) = −18\nC = 36\nD = 6\nE = −17\n\nExercice 3\n1) La somme des angles d'un quadrilatère est 360° : ∠D = 360° − (89 + 74 + 65)° = 132°\n2) Périmètre : 8 × 4 = 32 cm ; angle : (8 − 2) × 180° ÷ 8 = 135°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 4\n1) P = 2(2x + 2 + x) = 2(3x + 2) = 6x + 4\n2) A = x(2x + 2) = 2x² + 2x\n3) P = 6 × 4 + 4 = 28 m ; A = 2 × 16 + 2 × 4 = 40 m²"
+    },
+    {
+     "title": "Proposition 8 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 60 km/h pendant 2 h. Quelle distance parcourt-il ?\n2) La distance entre Atar et Akjoujt est 180 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 120 km à 60 km/h ?\n\nExercice 2 : Opérations sur les entiers relatifs\nCalculer :\nA = 18 + (−3)\nB = (−13) − (−11)\nC = (−11) × 5\nD = 15 ÷ (−5)\nE = 18 − (−3) + (−13)\n\nExercice 3 : Angles\n1) Calculer le complémentaire d'un angle de 25° et le supplémentaire d'un angle de 156°.\n2) Deux droites sécantes forment un angle de 56°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 56°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 8 h pour un trajet de 360 km à la vitesse moyenne de 90 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 12 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 60 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) d = 60 × 2 = 120 km\n2) v = 180 ÷ 3 = 60 km/h\n3) t = 120 ÷ 60 = 2 h\n\nExercice 2\nA = 15\nB = (−13) + 11 = −2\nC = −55\nD = −3\nE = 8\n\nExercice 3\n1) 90° − 25° = 65° ; 180° − 156° = 24°\n2) L'angle opposé par le sommet mesure 56° ; les deux autres mesurent 180° − 56° = 124°.\n3) Les angles alternes-internes ont la même mesure : 56° ; l'angle adjacent supplémentaire : 124°.\n\nExercice 4\n1) 360 ÷ 90 = 4 h ; arrivée à 12 h\n2) 360 × 12 ÷ 100 = 43,2 L\n3) 43,2 × 60 = 2 592 MRU"
+    },
+    {
+     "title": "Proposition 9 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique\nLe tableau donne l'âge (en années) des membres d'un club :\nÂge : 8 | 11 | 12 | 15 | 17\nEffectif : 9 | 7 | 2 | 4 | 3\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?\n\nExercice 2 : Calcul littéral\n1) Développer : A = 5(x + 4) ; B = −6(2x − 7).\n2) Réduire : C = 6x + 3 − 5x + 2x − 4.\n3) Factoriser : E = 5x + 20 ; F = 6y² − 18y.\n4) Calculer A pour x = −2.\n\nExercice 3 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 5 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 3,2 cm, 6,1 cm et 5 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 7 h pour un trajet de 360 km à la vitesse moyenne de 90 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 9 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 50 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) N = 25\n2) 8 ans : 36 % ; 11 ans : 28 % ; 12 ans : 8 % ; 15 ans : 16 % ; 17 ans : 12 %\n3) (8×9 + 11×7 + 12×2 + 15×4 + 17×3) ÷ 25 ≈ 11,4 ans\n4) 8 ans\n\nExercice 2\n1) A = 5x + 20 ; B = −12x + 42\n2) C = (6 − 5 + 2)x + 3 − 4 = 3x − 1\n3) E = 5(x + 4) ; F = 6y(y − 3)\n4) A = 5 × (−2) + 20 = 10\n\nExercice 3\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 4\n1) 360 ÷ 90 = 4 h ; arrivée à 11 h\n2) 360 × 9 ÷ 100 = 32,4 L\n3) 32,4 × 50 = 1 620 MRU"
+    },
+    {
+     "title": "Proposition 10 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 70 km/h pendant 3 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Boutilimit est 180 km ; le trajet dure 4 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 140 km à 70 km/h ?\n\nExercice 2 : Calcul littéral\n1) Développer : A = 4(x + 9) ; B = −3(2x − 5).\n2) Réduire : C = 3x + 3 − 4x + 5x − 9.\n3) Factoriser : E = 4x + 36 ; F = 3y² − 9y.\n4) Calculer A pour x = 4.\n\nExercice 3 : Cylindre et prisme droit\n1) Un cylindre a pour rayon 4 cm et pour hauteur 6 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 3 cm et 8 cm ; sa hauteur est 5 cm. Calculer l'aire de la base et le volume du prisme.\n\nExercice 4 : Situation d'intégration : la citerne\nUne citerne cylindrique a un rayon de 0,6 m et une hauteur de 1,8 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 15 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "Exercice 1\n1) d = 70 × 3 = 210 km\n2) v = 180 ÷ 4 = 45 km/h\n3) t = 140 ÷ 70 = 2 h\n\nExercice 2\n1) A = 4x + 36 ; B = −6x + 15\n2) C = (3 − 4 + 5)x + 3 − 9 = 4x − 6\n3) E = 4(x + 9) ; F = 3y(y − 3)\n4) A = 4 × 4 + 36 = 52\n\nExercice 3\n1) Aire latérale : 2 × 3,14 × 4 × 6 = 150,72 cm² ; volume : 3,14 × 4² × 6 = 301,44 cm³\n2) Base : 3 × 8 ÷ 2 = 12 cm² ; volume : 12 × 5 = 60 cm³\n\nExercice 4\n1) V = 3,14 × 0,6² × 1,8 = 2,03472 m³ = 2 034,72 L\n2) 2 034,72 ÷ 100 × 15 = 305,208 MRU\n3) 2 034,72 × 70 ÷ 100 = 1 424,304 L"
+    },
+    {
+     "title": "Proposition 11 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 50 km/h pendant 2 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Rosso est 150 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 100 km à 50 km/h ?\n\nExercice 2 : Calcul littéral\n1) Développer : A = 4(x + 7) ; B = −4(2x − 4).\n2) Réduire : C = 4x + 3 − 4x + 4x − 7.\n3) Factoriser : E = 4x + 28 ; F = 4y² − 12y.\n4) Calculer A pour x = −2.\n\nExercice 3 : Symétrie centrale\nPQR est un triangle tel que PQ = 4 cm, PR = 8 cm et ∠QPR = 76°. O est le milieu de [QR].\n1) Construire P', le symétrique de P par rapport à O.\n2) Quelle est la nature du quadrilatère PQP'R ? Justifier.\n3) Donner P'R, P'Q et ∠QP'R.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 4) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 5.",
+     "solution": "Exercice 1\n1) d = 50 × 2 = 100 km\n2) v = 150 ÷ 3 = 50 km/h\n3) t = 100 ÷ 50 = 2 h\n\nExercice 2\n1) A = 4x + 28 ; B = −8x + 16\n2) C = (4 − 4 + 4)x + 3 − 7 = 4x − 4\n3) E = 4(x + 7) ; F = 4y(y − 3)\n4) A = 4 × (−2) + 28 = 20\n\nExercice 3\n2) O est le milieu de [QR] et de [PP'] : les diagonales se coupent en leur milieu, PQP'R est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : P'R = PQ = 4 cm ; P'Q = PR = 8 cm ; ∠QP'R = 76°.\n\nExercice 4\n1) P = 2(2x + 4 + x) = 2(3x + 4) = 6x + 8\n2) A = x(2x + 4) = 2x² + 4x\n3) P = 6 × 5 + 8 = 38 m ; A = 2 × 25 + 4 × 5 = 70 m²"
+    },
+    {
+     "title": "Proposition 12 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 70 km/h pendant 2,5 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Boutilimit est 240 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 140 km à 70 km/h ?\n\nExercice 2 : Repérage sur un axe\nSur un axe gradué, on place les points E(−8), F(−4), G(−2) et H(0).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances EF, EH et FG.\n3) Calculer l'abscisse du milieu I de [EH].\n4) Donner l'abscisse du symétrique de F par rapport à G.\n\nExercice 3 : Cylindre et prisme droit\n1) Un cylindre a pour rayon 3 cm et pour hauteur 7 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 5 cm et 5 cm ; sa hauteur est 6 cm. Calculer l'aire de la base et le volume du prisme.\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 6 h pour un trajet de 300 km à la vitesse moyenne de 60 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 12 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 50 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) d = 70 × 2,5 = 175 km\n2) v = 240 ÷ 3 = 80 km/h\n3) t = 140 ÷ 70 = 2 h\n\nExercice 2\n1) −8 < −4 < −2 < 0\n2) EF = −4 − (−8) = 4 ; EH = 8 ; FG = 2\n3) x(I) = (−8 + 0) ÷ 2 = −4\n4) 2 × (−2) − (−4) = 0\n\nExercice 3\n1) Aire latérale : 2 × 3,14 × 3 × 7 = 131,88 cm² ; volume : 3,14 × 3² × 7 = 197,82 cm³\n2) Base : 5 × 5 ÷ 2 = 12,5 cm² ; volume : 12,5 × 6 = 75 cm³\n\nExercice 4\n1) 300 ÷ 60 = 5 h ; arrivée à 11 h\n2) 300 × 12 ÷ 100 = 36 L\n3) 36 × 50 = 1 800 MRU"
+    },
+    {
+     "title": "Proposition 13 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 70 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Atar et Akjoujt est 150 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 140 km à 70 km/h ?\n\nExercice 2 : Repérage sur un axe\nSur un axe gradué, on place les points A(−7), B(−6), C(−4) et D(9).\n1) Ranger leurs abscisses dans l'ordre croissant.\n2) Calculer les distances AB, AD et BC.\n3) Calculer l'abscisse du milieu I de [AD].\n4) Donner l'abscisse du symétrique de B par rapport à C.\n\nExercice 3 : Cylindre et prisme droit\n1) Un cylindre a pour rayon 5 cm et pour hauteur 8 cm (π ≈ 3,14). Calculer son aire latérale et son volume.\n2) Un prisme droit a pour base un triangle rectangle dont les côtés de l'angle droit mesurent 3 cm et 5 cm ; sa hauteur est 11 cm. Calculer l'aire de la base et le volume du prisme.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 5) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 5.",
+     "solution": "Exercice 1\n1) d = 70 × 1,5 = 105 km\n2) v = 150 ÷ 3 = 50 km/h\n3) t = 140 ÷ 70 = 2 h\n\nExercice 2\n1) −7 < −6 < −4 < 9\n2) AB = −6 − (−7) = 1 ; AD = 16 ; BC = 2\n3) x(I) = (−7 + 9) ÷ 2 = 1\n4) 2 × (−4) − (−6) = −2\n\nExercice 3\n1) Aire latérale : 2 × 3,14 × 5 × 8 = 251,2 cm² ; volume : 3,14 × 5² × 8 = 628 cm³\n2) Base : 3 × 5 ÷ 2 = 7,5 cm² ; volume : 7,5 × 11 = 82,5 cm³\n\nExercice 4\n1) P = 2(2x + 5 + x) = 2(3x + 5) = 6x + 10\n2) A = x(2x + 5) = 2x² + 5x\n3) P = 6 × 5 + 10 = 40 m ; A = 2 × 25 + 5 × 5 = 75 m²"
+    },
+    {
+     "title": "Proposition 14 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 80 km/h pendant 2,5 h. Quelle distance parcourt-il ?\n2) La distance entre Atar et Akjoujt est 240 km ; le trajet dure 2 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 160 km à 80 km/h ?\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 7/5 × (−6/3)\nB = 4/7 ÷ 5/2\nC = −1/4 + 1/3\n\nExercice 3 : Symétrie centrale\nABC est un triangle tel que AB = 7 cm, AC = 7 cm et ∠BAC = 98°. O est le milieu de [BC].\n1) Construire A', le symétrique de A par rapport à O.\n2) Quelle est la nature du quadrilatère ABA'C ? Justifier.\n3) Donner A'C, A'B et ∠BA'C.\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 8 h pour un trajet de 240 km à la vitesse moyenne de 80 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 8 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 55 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) d = 80 × 2,5 = 200 km\n2) v = 240 ÷ 2 = 120 km/h\n3) t = 160 ÷ 80 = 2 h\n\nExercice 2\nA = −42/15 = −14/5\nB = 4/7 × 2/5 = 8/35\nC = −3/12 + 4/12 = 1/12\n\nExercice 3\n2) O est le milieu de [BC] et de [AA'] : les diagonales se coupent en leur milieu, ABA'C est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : A'C = AB = 7 cm ; A'B = AC = 7 cm ; ∠BA'C = 98°.\n\nExercice 4\n1) 240 ÷ 80 = 3 h ; arrivée à 11 h\n2) 240 × 8 ÷ 100 = 19,2 L\n3) 19,2 × 55 = 1 056 MRU"
+    },
+    {
+     "title": "Proposition 15 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 40 km/h pendant 3 h. Quelle distance parcourt-il ?\n2) La distance entre Nouakchott et Rosso est 150 km ; le trajet dure 4 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 80 km à 40 km/h ?\n\nExercice 2 : Calcul littéral\n1) Développer : A = 3(x + 1) ; B = −7(2x − 6).\n2) Réduire : C = 7x + 4 − 3x + 4x − 1.\n3) Factoriser : E = 3x + 3 ; F = 7y² − 28y.\n4) Calculer A pour x = −2.\n\nExercice 3 : Symétrie centrale\nIJK est un triangle tel que IJ = 5 cm, IK = 7 cm et ∠JIK = 80°. O est le milieu de [JK].\n1) Construire I', le symétrique de I par rapport à O.\n2) Quelle est la nature du quadrilatère IJI'K ? Justifier.\n3) Donner I'K, I'J et ∠JI'K.\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 3) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 8.",
+     "solution": "Exercice 1\n1) d = 40 × 3 = 120 km\n2) v = 150 ÷ 4 = 37,5 km/h\n3) t = 80 ÷ 40 = 2 h\n\nExercice 2\n1) A = 3x + 3 ; B = −14x + 42\n2) C = (7 − 3 + 4)x + 4 − 1 = 8x + 3\n3) E = 3(x + 1) ; F = 7y(y − 4)\n4) A = 3 × (−2) + 3 = −3\n\nExercice 3\n2) O est le milieu de [JK] et de [II'] : les diagonales se coupent en leur milieu, IJI'K est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : I'K = IJ = 5 cm ; I'J = IK = 7 cm ; ∠JI'K = 80°.\n\nExercice 4\n1) P = 2(2x + 3 + x) = 2(3x + 3) = 6x + 6\n2) A = x(2x + 3) = 2x² + 3x\n3) P = 6 × 8 + 6 = 54 m ; A = 2 × 64 + 3 × 8 = 152 m²"
+    },
+    {
+     "title": "Proposition 16 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 80 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Kiffa et Aïoun est 210 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 160 km à 80 km/h ?\n\nExercice 2 : Opérations sur les entiers relatifs\nCalculer :\nA = (−20) + 3\nB = 21 − (−9)\nC = (−6) × (−4)\nD = 27 ÷ (−9)\nE = (−20) − 3 + 21\n\nExercice 3 : Droites et cercles\nUn cercle (C) a pour centre O et pour rayon 8 cm. Les distances du point O aux droites (d1), (d2) et (d3) sont respectivement 6,8 cm, 9,9 cm et 8 cm.\n1) Préciser la position de chaque droite par rapport au cercle.\n2) La droite tangente en T est-elle perpendiculaire au rayon [OT] ?\n\nExercice 4 : Situation d'intégration : le terrain\nUn terrain rectangulaire a une longueur de (2x + 6) m et une largeur de x m.\n1) Exprimer son périmètre P en fonction de x, puis le réduire.\n2) Exprimer son aire A en fonction de x (développer).\n3) Calculer P et A pour x = 8.",
+     "solution": "Exercice 1\n1) d = 80 × 1,5 = 120 km\n2) v = 210 ÷ 3 = 70 km/h\n3) t = 160 ÷ 80 = 2 h\n\nExercice 2\nA = −17\nB = 21 + 9 = 30\nC = 24\nD = −3\nE = −2\n\nExercice 3\n1) (d1) : sécante au cercle (deux points communs) ; (d2) : extérieure au cercle (aucun point commun) ; (d3) : tangente au cercle (un point commun)\n2) Oui : la tangente en T est perpendiculaire au rayon [OT].\n\nExercice 4\n1) P = 2(2x + 6 + x) = 2(3x + 6) = 6x + 12\n2) A = x(2x + 6) = 2x² + 6x\n3) P = 6 × 8 + 12 = 60 m ; A = 2 × 64 + 6 × 8 = 176 m²"
+    },
+    {
+     "title": "Proposition 17 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 60 km/h pendant 1,5 h. Quelle distance parcourt-il ?\n2) La distance entre Atar et Akjoujt est 120 km ; le trajet dure 3 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 120 km à 60 km/h ?\n\nExercice 2 : Opérations sur les entiers relatifs\nCalculer :\nA = (−22) + 6\nB = (−4) − (−7)\nC = (−5) × 4\nD = (−45) ÷ (−9)\nE = (−22) − 6 + (−4)\n\nExercice 3 : Symétrie centrale\nMNP est un triangle tel que MN = 4 cm, MP = 7 cm et ∠NMP = 59°. O est le milieu de [NP].\n1) Construire M', le symétrique de M par rapport à O.\n2) Quelle est la nature du quadrilatère MNM'P ? Justifier.\n3) Donner M'P, M'N et ∠NM'P.\n\nExercice 4 : Situation d'intégration : la citerne\nUne citerne cylindrique a un rayon de 0,8 m et une hauteur de 2 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 15 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "Exercice 1\n1) d = 60 × 1,5 = 90 km\n2) v = 120 ÷ 3 = 40 km/h\n3) t = 120 ÷ 60 = 2 h\n\nExercice 2\nA = −16\nB = (−4) + 7 = 3\nC = −20\nD = 5\nE = −32\n\nExercice 3\n2) O est le milieu de [NP] et de [MM'] : les diagonales se coupent en leur milieu, MNM'P est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : M'P = MN = 4 cm ; M'N = MP = 7 cm ; ∠NM'P = 59°.\n\nExercice 4\n1) V = 3,14 × 0,8² × 2 = 4,0192 m³ = 4 019,2 L\n2) 4 019,2 ÷ 100 × 15 = 602,88 MRU\n3) 4 019,2 × 70 ÷ 100 = 2 813,44 L"
+    },
+    {
+     "title": "Proposition 18 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 80 km/h pendant 2,5 h. Quelle distance parcourt-il ?\n2) La distance entre Kiffa et Aïoun est 120 km ; le trajet dure 2 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 160 km à 80 km/h ?\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 4/6 × (−6/5)\nB = 1/3 ÷ 4/9\nC = −5/4 + 1/3\n\nExercice 3 : Symétrie centrale\nDEF est un triangle tel que DE = 3 cm, DF = 6 cm et ∠EDF = 34°. O est le milieu de [EF].\n1) Construire D', le symétrique de D par rapport à O.\n2) Quelle est la nature du quadrilatère DED'F ? Justifier.\n3) Donner D'F, D'E et ∠ED'F.\n\nExercice 4 : Situation d'intégration : la citerne\nUne citerne cylindrique a un rayon de 1 m et une hauteur de 2,3 m (π ≈ 3,14).\n1) Calculer son volume en m³ puis en litres.\n2) L'eau est vendue 15 MRU les 100 litres. Quel est le prix de l'eau d'une citerne pleine ?\n3) On a déjà utilisé 30 % de l'eau. Combien de litres restent ?",
+     "solution": "Exercice 1\n1) d = 80 × 2,5 = 200 km\n2) v = 120 ÷ 2 = 60 km/h\n3) t = 160 ÷ 80 = 2 h\n\nExercice 2\nA = −24/30 = −4/5\nB = 1/3 × 9/4 = 9/12 = 3/4\nC = −15/12 + 4/12 = −11/12\n\nExercice 3\n2) O est le milieu de [EF] et de [DD'] : les diagonales se coupent en leur milieu, DED'F est un parallélogramme.\n3) La symétrie centrale conserve les longueurs et les angles : D'F = DE = 3 cm ; D'E = DF = 6 cm ; ∠ED'F = 34°.\n\nExercice 4\n1) V = 3,14 × 1² × 2,3 = 7,222 m³ = 7 222 L\n2) 7 222 ÷ 100 × 15 = 1 083,3 MRU\n3) 7 222 × 70 ÷ 100 = 5 055,4 L"
+    },
+    {
+     "title": "Proposition 19 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Proportionnalité : vitesse moyenne\n1) Un car roule à la vitesse moyenne de 40 km/h pendant 3 h. Quelle distance parcourt-il ?\n2) La distance entre Atar et Akjoujt est 180 km ; le trajet dure 2 h. Calculer la vitesse moyenne.\n3) Combien de temps faut-il pour parcourir 80 km à 40 km/h ?\n\nExercice 2 : Opérations sur les entiers relatifs\nCalculer :\nA = 9 + (−13)\nB = (−16) − 12\nC = 5 × (−4)\nD = 21 ÷ (−3)\nE = 9 − (−13) + (−16)\n\nExercice 3 : Polygones\n1) Dans le quadrilatère EFGH, ∠E = 99°, ∠F = 79° et ∠G = 90°. Calculer ∠H.\n2) Un polygone régulier a 6 côtés de 6 cm. Calculer son périmètre et la mesure de chacun de ses angles (somme des angles = (n − 2) × 180°).\n3) Citer deux propriétés des diagonales d'un losange.\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 6 h pour un trajet de 360 km à la vitesse moyenne de 90 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 12 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 50 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) d = 40 × 3 = 120 km\n2) v = 180 ÷ 2 = 90 km/h\n3) t = 80 ÷ 40 = 2 h\n\nExercice 2\nA = −4\nB = (−16) + (−12) = −28\nC = −20\nD = −7\nE = 6\n\nExercice 3\n1) La somme des angles d'un quadrilatère est 360° : ∠H = 360° − (99 + 79 + 90)° = 92°\n2) Périmètre : 6 × 6 = 36 cm ; angle : (6 − 2) × 180° ÷ 6 = 120°\n3) Les diagonales d'un losange se coupent en leur milieu et sont perpendiculaires.\n\nExercice 4\n1) 360 ÷ 90 = 4 h ; arrivée à 10 h\n2) 360 × 12 ÷ 100 = 43,2 L\n3) 43,2 × 50 = 2 160 MRU"
+    },
+    {
+     "title": "Proposition 20 — Examen du 3e trimestre",
+     "text": "Exercice 1 : Statistique\nLe tableau donne l'âge (en années) des membres d'un club :\nÂge : 10 | 11 | 13 | 14 | 16\nEffectif : 6 | 7 | 4 | 9 | 7\n1) Quel est l'effectif total ?\n2) Calculer les fréquences en pourcentage (arrondies au dixième).\n3) Calculer l'âge moyen (arrondi au dixième).\n4) Quel est le mode ?\n\nExercice 2 : Nombres rationnels\nCalculer et donner le résultat sous forme irréductible :\nA = 7/6 × (−7/2)\nB = 2/7 ÷ 1/2\nC = −2/6 + 1/3\n\nExercice 3 : Angles\n1) Calculer le complémentaire d'un angle de 62° et le supplémentaire d'un angle de 137°.\n2) Deux droites sécantes forment un angle de 56°. Calculer les trois autres angles formés.\n3) Deux droites parallèles sont coupées par une sécante. L'un des angles formés mesure 56°. Quelle est la mesure de l'angle alterne-interne correspondant ? Et celle de son angle adjacent supplémentaire ?\n\nExercice 4 : Situation d'intégration : le voyage\nUne famille part en voiture à 6 h pour un trajet de 180 km à la vitesse moyenne de 60 km/h.\n1) Combien de temps dure le trajet ? À quelle heure arrive-t-elle ?\n2) La voiture consomme 9 L aux 100 km. Combien de litres faut-il ?\n3) Le litre de carburant coûte 60 MRU. Calculer la dépense.",
+     "solution": "Exercice 1\n1) N = 33\n2) 10 ans : 18,2 % ; 11 ans : 21,2 % ; 13 ans : 12,1 % ; 14 ans : 27,3 % ; 16 ans : 21,2 %\n3) (10×6 + 11×7 + 13×4 + 14×9 + 16×7) ÷ 33 ≈ 12,9 ans\n4) 14 ans\n\nExercice 2\nA = −49/12\nB = 2/7 × 2/1 = 4/7\nC = −6/18 + 6/18 = 0\n\nExercice 3\n1) 90° − 62° = 28° ; 180° − 137° = 43°\n2) L'angle opposé par le sommet mesure 56° ; les deux autres mesurent 180° − 56° = 124°.\n3) Les angles alternes-internes ont la même mesure : 56° ; l'angle adjacent supplémentaire : 124°.\n\nExercice 4\n1) 180 ÷ 60 = 3 h ; arrivée à 9 h\n2) 180 × 9 ÷ 100 = 16,2 L\n3) 16,2 × 60 = 972 MRU"
+    }
+   ]
+  }
+ ]
+}
