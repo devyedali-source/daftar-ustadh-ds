@@ -90,7 +90,7 @@ fun PlanningTab(
     // مؤشر تنزيل صور الكتب من المتجر (يختفي عند اكتمالها)
     val bookStatus by com.elyedali.daftarustadh.data.BookPack.status.collectAsState()
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        if (bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.Ready &&
+        if (withPlan.isNotEmpty() && bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.Ready &&
             bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.NotInTestBuild) item {
             val st = bookStatus
             Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.secondaryContainer)
@@ -125,6 +125,21 @@ fun PlanningTab(
                         modifier = Modifier.clip(RoundedCornerShape(6.dp)).clickable(enabled = i > 0) { move(code, -1) }.padding(8.dp))
                     Text("▼", fontSize = 18.sp, color = if (i < available.size - 1) MaterialTheme.colorScheme.primary else Color.Gray,
                         modifier = Modifier.clip(RoundedCornerShape(6.dp)).clickable(enabled = i < available.size - 1) { move(code, 1) }.padding(8.dp))
+                }
+            }
+            return@LazyColumn
+        }
+        // مستوى لا تخطيط له بعد (الرابعة إعدادية والثانوي): رسالة واحدة واضحة
+        if (withPlan.isEmpty()) {
+            item {
+                androidx.compose.material3.Card(Modifier.fillMaxWidth().padding(top = 24.dp),
+                    colors = androidx.compose.material3.CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                    Column(Modifier.fillMaxWidth().padding(24.dp), horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Text("🛠️", fontSize = 40.sp)
+                        Text(stringResource(R.string.plan_level_in_progress), fontWeight = FontWeight.Bold, fontSize = 16.sp,
+                            textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                    }
                 }
             }
             return@LazyColumn

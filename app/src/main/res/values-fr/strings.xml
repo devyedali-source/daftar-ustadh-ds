@@ -923,4 +923,5 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="about_upd_exercises">Les séries d’exercices</string>
     <string name="about_upd_refs">Les références nécessaires</string>
     <string name="about_no_app">Aucune application sur le téléphone pour ouvrir ce lien.</string>
+    <string name="plan_level_in_progress">Le programme de ce niveau est en cours de préparation</string>
 </resources>

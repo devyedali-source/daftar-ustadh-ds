@@ -923,4 +923,5 @@
     <string name="about_upd_exercises">سلاسل التمارين</string>
     <string name="about_upd_refs">المراجع اللازمة</string>
     <string name="about_no_app">لا يوجد تطبيق على الهاتف لفتح هذا الرابط.</string>
+    <string name="plan_level_in_progress">جارٍ العمل على برنامج هذا المستوى</string>
 </resources>
