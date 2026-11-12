@@ -43,8 +43,8 @@ private fun labelsFor(lang: String) = when (lang) {
 
 /** سلسلة تمارين أسبوع الإدماج/التقويم/العلاج، أو مقترحات أسبوع الامتحان، مع الحلول. */
 @Composable
-fun PracticeDialog(block: PracticeBlock, lang: String, subjectLabel: String, onDismiss: () -> Unit) {
-    val L = labelsFor(lang)
+fun PracticeDialog(block: PracticeBlock, lang: String, subjectLabel: String, word: String = "", onDismiss: () -> Unit) {
+    val L = labelsFor(lang).let { if (word.isNotBlank()) it.copy(exercise = word) else it }
     val shown = remember { mutableStateMapOf<Int, Boolean>() }
     val isExam = block.kind == "exam"
     CompositionLocalProvider(LocalLayoutDirection provides if (lang == "ar") LocalLayoutDirection.current else LayoutDirection.Ltr) {

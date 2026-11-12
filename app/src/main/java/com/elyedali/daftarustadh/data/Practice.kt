@@ -10,7 +10,7 @@ data class PracticeItem(val title: String, val text: String, val solution: Strin
 data class PracticeBlock(val week: String, val term: Int, val kind: String, val title: String,
                          val covers: List<String>, val items: List<PracticeItem>)
 
-data class PracticeSet(val lang: String, val blocks: List<PracticeBlock>) {
+data class PracticeSet(val lang: String, val blocks: List<PracticeBlock>, /** «الوضعية» بدل «التمرين» في المواد الأدبية. */ val word: String = "") {
     /** سلسلة/مقترحات أسبوع من التخطيط (بنفس عنوان الأسبوع). */
     fun forWeek(label: String): PracticeBlock? = blocks.firstOrNull { it.week == label }
 }
@@ -32,7 +32,7 @@ object PracticeBank {
                             PracticeItem(x.optString("title"), x.optString("text"), x.optString("solution")) } })
                 }
             }.orEmpty()
-            PracticeSet(o.optString("lang", "ar"), blocks("series") + blocks("exams"))
+            PracticeSet(o.optString("lang", "ar"), blocks("series") + blocks("exams"), o.optString("word"))
         }.getOrNull()
     }
 }

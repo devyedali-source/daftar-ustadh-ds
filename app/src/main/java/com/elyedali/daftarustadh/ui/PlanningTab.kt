@@ -86,7 +86,7 @@ fun PlanningTab(
     var openedPractice by remember { mutableStateOf<com.elyedali.daftarustadh.data.PracticeBlock?>(null) }
     openedPractice?.let { b ->
         com.elyedali.daftarustadh.ui.PracticeDialog(b, practice?.lang ?: "ar",
-            available.firstOrNull { it.first == subject }?.second.orEmpty()) { openedPractice = null }
+            available.firstOrNull { it.first == subject }?.second.orEmpty(), practice?.word.orEmpty()) { openedPractice = null }
     }
     var opened by remember { mutableStateOf<Pair<com.elyedali.daftarustadh.data.BookLesson, String>?>(null) }
     opened?.let { (l, week) ->
@@ -216,7 +216,7 @@ fun PlanningTab(
                             val lang = ps.lang
                             val label = when {
                                 b.kind == "exam" -> when (lang) { "fr" -> "📄 Propositions d'examen"; "en" -> "📄 Exam proposals"; else -> "📄 مقترحات الامتحان" }
-                                else -> when (lang) { "fr" -> "📝 Série d'exercices"; "en" -> "📝 Exercise series"; else -> "📝 سلسلة التمارين" }
+                                else -> when (lang) { "fr" -> "📝 Série d'exercices"; "en" -> "📝 Exercise series"; else -> if (ps.word.isNotBlank()) "📝 سلسلة الوضعيات" else "📝 سلسلة التمارين" }
                             } + " (${b.items.size})"
                             Text(label, fontSize = 13.sp, fontWeight = FontWeight.Black, color = Color.White,
                                 modifier = Modifier.padding(top = 4.dp).clip(RoundedCornerShape(8.dp)).background(fg)
