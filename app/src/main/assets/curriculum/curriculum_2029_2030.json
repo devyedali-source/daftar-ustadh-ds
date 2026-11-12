@@ -1,0 +1,1494 @@
+{
+ "schema_version": 1,
+ "school_year": "2029-2030",
+ "notes": "الإعدادية: 1AS 2AS 3AS (النظام الجديد). الثانوية الجديدة 4 و5 و6 تحلّ تدريجيًا محل 5 و6 و7 القديمة، بنفس الشعب والمواد والضوارب: 4 مكان 5، و5 مكان 6، و6 مكان 7. تُحدَّث كل عطلة صيفية.",
+ "levels": [
+  {
+   "code": "1AS",
+   "stage": "college",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 3,
+     "weekly_hours": 4
+    },
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 4,
+     "weekly_hours": 5
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 1,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "TI",
+     "name_ar": "التكنولوجيا والمعلوماتية",
+     "name_fr": "Technologie et informatique",
+     "coefficient": 2,
+     "weekly_hours": 1
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 1
+    }
+   ],
+   "total_coefficient": 27,
+   "total_hours": 30
+  },
+  {
+   "code": "2AS",
+   "stage": "college",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 3,
+     "weekly_hours": 4
+    },
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 1,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "TI",
+     "name_ar": "التكنولوجيا والمعلوماتية",
+     "name_fr": "Technologie et informatique",
+     "coefficient": 2,
+     "weekly_hours": 1
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 1
+    }
+   ],
+   "total_coefficient": 28,
+   "total_hours": 30
+  },
+  {
+   "code": "3AS",
+   "stage": "college",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 3,
+     "weekly_hours": 4
+    },
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 1,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "TI",
+     "name_ar": "التكنولوجيا والمعلوماتية",
+     "name_fr": "Technologie et informatique",
+     "coefficient": 2,
+     "weekly_hours": 1
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 1
+    }
+   ],
+   "total_coefficient": 28,
+   "total_hours": 30
+  },
+  {
+   "code": "4A",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 29,
+   "total_hours": 31
+  },
+  {
+   "code": "4C",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "4D",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 4,
+     "weekly_hours": 5
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 6,
+     "weekly_hours": 5
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "4O",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 5,
+     "weekly_hours": 4
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 3,
+     "weekly_hours": 4
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 3,
+     "weekly_hours": 2
+    },
+    {
+     "code": "LEG",
+     "name_ar": "التشريع",
+     "name_fr": "Législation",
+     "coefficient": 4,
+     "weekly_hours": 5
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "5A",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 5,
+     "weekly_hours": 5
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 1,
+     "weekly_hours": 2
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 32
+  },
+  {
+   "code": "5C",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 7,
+     "weekly_hours": 7
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "5D",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 4,
+     "weekly_hours": 5
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 6,
+     "weekly_hours": 5
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "5O",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 6,
+     "weekly_hours": 5
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 1,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 3,
+     "weekly_hours": 4
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "IC",
+     "name_ar": "التربية المدنية",
+     "name_fr": "Éducation civique",
+     "coefficient": 1,
+     "weekly_hours": 1
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 1,
+     "weekly_hours": 2
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 1,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 3,
+     "weekly_hours": 2
+    },
+    {
+     "code": "LEG",
+     "name_ar": "التشريع",
+     "name_fr": "Législation",
+     "coefficient": 6,
+     "weekly_hours": 4
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "6A",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 4,
+     "weekly_hours": 3
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 5,
+     "weekly_hours": 6
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "6C",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 8,
+     "weekly_hours": 8
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 7,
+     "weekly_hours": 7
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "6D",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 6,
+     "weekly_hours": 5
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 7,
+     "weekly_hours": 7
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 8,
+     "weekly_hours": 7
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "6O",
+   "stage": "lycee",
+   "system": "new",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "LEG",
+     "name_ar": "التشريع",
+     "name_fr": "Législation",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "7A",
+   "stage": "lycee",
+   "system": "old",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 4,
+     "weekly_hours": 3
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 5,
+     "weekly_hours": 6
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "7C",
+   "stage": "lycee",
+   "system": "old",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 8,
+     "weekly_hours": 8
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 7,
+     "weekly_hours": 7
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "7D",
+   "stage": "lycee",
+   "system": "old",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 3
+    },
+    {
+     "code": "ANG",
+     "name_ar": "اللغة الإنجليزية",
+     "name_fr": "Anglais",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 6,
+     "weekly_hours": 5
+    },
+    {
+     "code": "PC",
+     "name_ar": "الفيزياء والكيمياء",
+     "name_fr": "Physique-Chimie",
+     "coefficient": 7,
+     "weekly_hours": 7
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 8,
+     "weekly_hours": 7
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  },
+  {
+   "code": "7O",
+   "stage": "lycee",
+   "system": "old",
+   "subjects": [
+    {
+     "code": "AR",
+     "name_ar": "اللغة العربية",
+     "name_fr": "Arabe",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "FR",
+     "name_ar": "اللغة الفرنسية",
+     "name_fr": "Français",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "PH",
+     "name_ar": "الفلسفة",
+     "name_fr": "Philosophie",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "IR",
+     "name_ar": "التربية الإسلامية",
+     "name_fr": "Éducation islamique",
+     "coefficient": 4,
+     "weekly_hours": 4
+    },
+    {
+     "code": "MATS",
+     "name_ar": "الرياضيات",
+     "name_fr": "Mathématiques",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "SN",
+     "name_ar": "العلوم الطبيعية",
+     "name_fr": "Sciences naturelles",
+     "coefficient": 2,
+     "weekly_hours": 2
+    },
+    {
+     "code": "HG",
+     "name_ar": "التاريخ والجغرافيا",
+     "name_fr": "Histoire-Géographie",
+     "coefficient": 3,
+     "weekly_hours": 3
+    },
+    {
+     "code": "LEG",
+     "name_ar": "التشريع",
+     "name_fr": "Législation",
+     "coefficient": 6,
+     "weekly_hours": 6
+    },
+    {
+     "code": "EPS",
+     "name_ar": "التربية البدنية",
+     "name_fr": "Éducation physique et sportive",
+     "coefficient": 1,
+     "weekly_hours": 2
+    }
+   ],
+   "total_coefficient": 30,
+   "total_hours": 31
+  }
+ ]
+}
