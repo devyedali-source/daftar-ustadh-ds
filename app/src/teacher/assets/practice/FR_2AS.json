@@ -1,0 +1,928 @@
+{
+ "subject": "FR",
+ "level": "2AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Semaine 10",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Expliquer simplement ses choix personnels et ses goûts",
+    "Expliquer le fonctionnement d'un appareil en usage dans son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique"
+   ],
+   "items": [
+    {
+     "title": "Accord de l'adjectif",
+     "text": "Accorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).",
+     "solution": "belles ; blanche ; attentifs/attentives."
+    },
+    {
+     "title": "Vocabulaire",
+     "text": "Donne le nom de l'action : brancher, allumer, régler, éteindre.",
+     "solution": "le branchement, l'allumage, le réglage, l'extinction."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Imparfait",
+     "text": "Conjugue à l'imparfait : nous (jouer), il (faire), vous (être).",
+     "solution": "nous jouions, il faisait, vous étiez."
+    },
+    {
+     "title": "Homophones",
+     "text": "Complète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.",
+     "solution": "a – à ; est – et."
+    },
+    {
+     "title": "Présent et passé composé",
+     "text": "Conjugue : je (finir) au présent ; nous (manger) au passé composé ; elles (partir) au passé composé.",
+     "solution": "je finis ; nous avons mangé ; elles sont parties."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Texte",
+     "text": "Lis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?",
+     "solution": "a) La couture. b) Parce qu'elle aime créer de beaux habits."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Justifier",
+     "text": "Justifie ton choix avec « parce que » : ta matière préférée.",
+     "solution": "Je préfère les mathématiques parce que j'aime résoudre des problèmes."
+    },
+    {
+     "title": "Pronoms",
+     "text": "Remplace le groupe souligné par un pronom : Je vois mes amis. Il parle à sa mère.",
+     "solution": "Je les vois. Il lui parle."
+    },
+    {
+     "title": "Ventilateur",
+     "text": "Explique le fonctionnement d'un ventilateur.",
+     "solution": "On le branche, on appuie sur le bouton, le moteur fait tourner les pales qui brassent l'air."
+    },
+    {
+     "title": "Impératif",
+     "text": "Mets à l'impératif : (brancher) l'appareil ; (appuyer) sur le bouton ; (attendre).",
+     "solution": "Branche/Branchez ; Appuie/Appuyez ; Attends/Attendez."
+    },
+    {
+     "title": "Rédaction",
+     "text": "Explique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.",
+     "solution": "Activités, raisons (parce que, car, puisque), conclusion."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Connecteurs de cause",
+     "text": "Complète avec parce que, car, grâce à : Il a réussi ___ son travail. Je reste ___ il pleut.",
+     "solution": "grâce à ; parce que / car."
+    },
+    {
+     "title": "Types de phrases",
+     "text": "Transforme en phrase interrogative puis négative : Tu aimes le football.",
+     "solution": "Aimes-tu le football ? / Tu n'aimes pas le football."
+    },
+    {
+     "title": "Mode d'emploi",
+     "text": "Explique en 4 étapes comment utiliser un téléphone pour appeler.",
+     "solution": "D'abord, déverrouille le téléphone ; ensuite, ouvre l'application ; puis compose le numéro ; enfin, appuie sur appeler."
+    },
+    {
+     "title": "Goûts",
+     "text": "Exprime tes goûts avec : j'aime, j'adore, je préfère, je déteste (4 phrases).",
+     "solution": "J'aime la lecture. J'adore le football. Je préfère le poisson à la viande. Je déteste le bruit."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Expliquer simplement ses choix personnels et ses goûts",
+    "Expliquer le fonctionnement d'un appareil en usage dans son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique"
+   ],
+   "items": [
+    {
+     "title": "Pronoms",
+     "text": "Remplace le groupe souligné par un pronom : Je vois mes amis. Il parle à sa mère.",
+     "solution": "Je les vois. Il lui parle."
+    },
+    {
+     "title": "Homophones",
+     "text": "Complète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.",
+     "solution": "a – à ; est – et."
+    },
+    {
+     "title": "Rédaction",
+     "text": "Explique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.",
+     "solution": "Activités, raisons (parce que, car, puisque), conclusion."
+    },
+    {
+     "title": "Justifier",
+     "text": "Justifie ton choix avec « parce que » : ta matière préférée.",
+     "solution": "Je préfère les mathématiques parce que j'aime résoudre des problèmes."
+    },
+    {
+     "title": "Impératif",
+     "text": "Mets à l'impératif : (brancher) l'appareil ; (appuyer) sur le bouton ; (attendre).",
+     "solution": "Branche/Branchez ; Appuie/Appuyez ; Attends/Attendez."
+    },
+    {
+     "title": "Mode d'emploi",
+     "text": "Explique en 4 étapes comment utiliser un téléphone pour appeler.",
+     "solution": "D'abord, déverrouille le téléphone ; ensuite, ouvre l'application ; puis compose le numéro ; enfin, appuie sur appeler."
+    },
+    {
+     "title": "Connecteurs de cause",
+     "text": "Complète avec parce que, car, grâce à : Il a réussi ___ son travail. Je reste ___ il pleut.",
+     "solution": "grâce à ; parce que / car."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Goûts",
+     "text": "Exprime tes goûts avec : j'aime, j'adore, je préfère, je déteste (4 phrases).",
+     "solution": "J'aime la lecture. J'adore le football. Je préfère le poisson à la viande. Je déteste le bruit."
+    },
+    {
+     "title": "Imparfait",
+     "text": "Conjugue à l'imparfait : nous (jouer), il (faire), vous (être).",
+     "solution": "nous jouions, il faisait, vous étiez."
+    },
+    {
+     "title": "Texte",
+     "text": "Lis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?",
+     "solution": "a) La couture. b) Parce qu'elle aime créer de beaux habits."
+    },
+    {
+     "title": "Vocabulaire",
+     "text": "Donne le nom de l'action : brancher, allumer, régler, éteindre.",
+     "solution": "le branchement, l'allumage, le réglage, l'extinction."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Accord de l'adjectif",
+     "text": "Accorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).",
+     "solution": "belles ; blanche ; attentifs/attentives."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Types de phrases",
+     "text": "Transforme en phrase interrogative puis négative : Tu aimes le football.",
+     "solution": "Aimes-tu le football ? / Tu n'aimes pas le football."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Présent et passé composé",
+     "text": "Conjugue : je (finir) au présent ; nous (manger) au passé composé ; elles (partir) au passé composé.",
+     "solution": "je finis ; nous avons mangé ; elles sont parties."
+    },
+    {
+     "title": "Ventilateur",
+     "text": "Explique le fonctionnement d'un ventilateur.",
+     "solution": "On le branche, on appuie sur le bouton, le moteur fait tourner les pales qui brassent l'air."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Expliquer les avantages/inconvénients d'un métier exercé dans son environnement",
+    "Activité parascolaire",
+    "Présentation du projet",
+    "Module 2 : Donner des consignes et instructions"
+   ],
+   "items": [
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Connecteurs d'opposition",
+     "text": "Complète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.",
+     "solution": "mais (ou cependant)."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Avantages / inconvénients",
+     "text": "Donne deux avantages et deux inconvénients du métier de commerçant.",
+     "solution": "Avantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail."
+    },
+    {
+     "title": "Rédaction",
+     "text": "Rédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.",
+     "solution": "Introduction ; avantages ; inconvénients (connecteurs) ; avis personnel."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Consignes",
+     "text": "Écris quatre consignes pour bien se tenir en classe.",
+     "solution": "Écoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Texte",
+     "text": "Lis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?",
+     "solution": "a) La couture. b) Parce qu'elle aime créer de beaux habits."
+    },
+    {
+     "title": "Homophones",
+     "text": "Complète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.",
+     "solution": "a – à ; est – et."
+    },
+    {
+     "title": "Imparfait",
+     "text": "Conjugue à l'imparfait : nous (jouer), il (faire), vous (être).",
+     "solution": "nous jouions, il faisait, vous étiez."
+    },
+    {
+     "title": "Présent et passé composé",
+     "text": "Conjugue : je (finir) au présent ; nous (manger) au passé composé ; elles (partir) au passé composé.",
+     "solution": "je finis ; nous avons mangé ; elles sont parties."
+    },
+    {
+     "title": "Mode d'emploi",
+     "text": "Explique en 4 étapes comment utiliser un téléphone pour appeler.",
+     "solution": "D'abord, déverrouille le téléphone ; ensuite, ouvre l'application ; puis compose le numéro ; enfin, appuie sur appeler."
+    },
+    {
+     "title": "Ventilateur",
+     "text": "Explique le fonctionnement d'un ventilateur.",
+     "solution": "On le branche, on appuie sur le bouton, le moteur fait tourner les pales qui brassent l'air."
+    },
+    {
+     "title": "Justifier",
+     "text": "Justifie ton choix avec « parce que » : ta matière préférée.",
+     "solution": "Je préfère les mathématiques parce que j'aime résoudre des problèmes."
+    },
+    {
+     "title": "Goûts",
+     "text": "Exprime tes goûts avec : j'aime, j'adore, je préfère, je déteste (4 phrases).",
+     "solution": "J'aime la lecture. J'adore le football. Je préfère le poisson à la viande. Je déteste le bruit."
+    },
+    {
+     "title": "Vocabulaire",
+     "text": "Donne le nom de l'action : brancher, allumer, régler, éteindre.",
+     "solution": "le branchement, l'allumage, le réglage, l'extinction."
+    },
+    {
+     "title": "Types de phrases",
+     "text": "Transforme en phrase interrogative puis négative : Tu aimes le football.",
+     "solution": "Aimes-tu le football ? / Tu n'aimes pas le football."
+    },
+    {
+     "title": "Connecteurs de cause",
+     "text": "Complète avec parce que, car, grâce à : Il a réussi ___ son travail. Je reste ___ il pleut.",
+     "solution": "grâce à ; parce que / car."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Donner des ordres",
+    "Donner des conseils et recommandations",
+    "Activité parascolaire"
+   ],
+   "items": [
+    {
+     "title": "Impératif",
+     "text": "Transforme en ordre : Tu fermes la porte. Vous écoutez. Nous partons.",
+     "solution": "Ferme la porte ! Écoutez ! Partons !"
+    },
+    {
+     "title": "Recommandations",
+     "text": "Rédige une liste de recommandations pour économiser l'eau.",
+     "solution": "Fermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller."
+    },
+    {
+     "title": "Situation",
+     "text": "Le chef du chantier donne des ordres aux ouvriers. Écris trois ordres.",
+     "solution": "Portez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !"
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Négation",
+     "text": "Mets à la forme négative : Parle ! Mangez en classe !",
+     "solution": "Ne parle pas ! Ne mangez pas en classe !"
+    },
+    {
+     "title": "Il faut / tu devrais",
+     "text": "Transforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.",
+     "solution": "Il faut boire de l'eau. Il faut se laver les mains."
+    },
+    {
+     "title": "Conseils",
+     "text": "Donne trois conseils à un camarade qui a peur de l'examen.",
+     "solution": "Tu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Présent et passé composé",
+     "text": "Conjugue : je (finir) au présent ; nous (manger) au passé composé ; elles (partir) au passé composé.",
+     "solution": "je finis ; nous avons mangé ; elles sont parties."
+    },
+    {
+     "title": "Justifier",
+     "text": "Justifie ton choix avec « parce que » : ta matière préférée.",
+     "solution": "Je préfère les mathématiques parce que j'aime résoudre des problèmes."
+    },
+    {
+     "title": "Connecteurs d'opposition",
+     "text": "Complète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.",
+     "solution": "mais (ou cependant)."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Vocabulaire",
+     "text": "Donne le nom de l'action : brancher, allumer, régler, éteindre.",
+     "solution": "le branchement, l'allumage, le réglage, l'extinction."
+    },
+    {
+     "title": "Types de phrases",
+     "text": "Transforme en phrase interrogative puis négative : Tu aimes le football.",
+     "solution": "Aimes-tu le football ? / Tu n'aimes pas le football."
+    },
+    {
+     "title": "Rédaction",
+     "text": "Explique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.",
+     "solution": "Activités, raisons (parce que, car, puisque), conclusion."
+    },
+    {
+     "title": "Pronoms",
+     "text": "Remplace le groupe souligné par un pronom : Je vois mes amis. Il parle à sa mère.",
+     "solution": "Je les vois. Il lui parle."
+    },
+    {
+     "title": "Texte",
+     "text": "Lis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?",
+     "solution": "a) La couture. b) Parce qu'elle aime créer de beaux habits."
+    },
+    {
+     "title": "Rédaction",
+     "text": "Rédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.",
+     "solution": "Introduction ; avantages ; inconvénients (connecteurs) ; avis personnel."
+    },
+    {
+     "title": "Mode d'emploi",
+     "text": "Explique en 4 étapes comment utiliser un téléphone pour appeler.",
+     "solution": "D'abord, déverrouille le téléphone ; ensuite, ouvre l'application ; puis compose le numéro ; enfin, appuie sur appeler."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 36",
+   "term": 3,
+   "kind": "final",
+   "title": "Révision générale de l'année",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Expliquer simplement ses choix personnels et ses goûts",
+    "Expliquer le fonctionnement d'un appareil en usage dans son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique",
+    "Expliquer les avantages/inconvénients d'un métier exercé dans son environnement",
+    "Présentation du projet",
+    "Module 2 : Donner des consignes et instructions",
+    "Donner des ordres",
+    "Donner des conseils et recommandations"
+   ],
+   "items": [
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Impératif",
+     "text": "Mets à l'impératif : (brancher) l'appareil ; (appuyer) sur le bouton ; (attendre).",
+     "solution": "Branche/Branchez ; Appuie/Appuyez ; Attends/Attendez."
+    },
+    {
+     "title": "Situation",
+     "text": "Le chef du chantier donne des ordres aux ouvriers. Écris trois ordres.",
+     "solution": "Portez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !"
+    },
+    {
+     "title": "Imparfait",
+     "text": "Conjugue à l'imparfait : nous (jouer), il (faire), vous (être).",
+     "solution": "nous jouions, il faisait, vous étiez."
+    },
+    {
+     "title": "Avantages / inconvénients",
+     "text": "Donne deux avantages et deux inconvénients du métier de commerçant.",
+     "solution": "Avantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail."
+    },
+    {
+     "title": "Texte",
+     "text": "Lis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?",
+     "solution": "a) La couture. b) Parce qu'elle aime créer de beaux habits."
+    },
+    {
+     "title": "Mode d'emploi",
+     "text": "Explique en 4 étapes comment utiliser un téléphone pour appeler.",
+     "solution": "D'abord, déverrouille le téléphone ; ensuite, ouvre l'application ; puis compose le numéro ; enfin, appuie sur appeler."
+    },
+    {
+     "title": "Justifier",
+     "text": "Justifie ton choix avec « parce que » : ta matière préférée.",
+     "solution": "Je préfère les mathématiques parce que j'aime résoudre des problèmes."
+    },
+    {
+     "title": "Accord de l'adjectif",
+     "text": "Accorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).",
+     "solution": "belles ; blanche ; attentifs/attentives."
+    },
+    {
+     "title": "Types de phrases",
+     "text": "Transforme en phrase interrogative puis négative : Tu aimes le football.",
+     "solution": "Aimes-tu le football ? / Tu n'aimes pas le football."
+    },
+    {
+     "title": "Consignes",
+     "text": "Écris quatre consignes pour bien se tenir en classe.",
+     "solution": "Écoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Homophones",
+     "text": "Complète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.",
+     "solution": "a – à ; est – et."
+    },
+    {
+     "title": "Goûts",
+     "text": "Exprime tes goûts avec : j'aime, j'adore, je préfère, je déteste (4 phrases).",
+     "solution": "J'aime la lecture. J'adore le football. Je préfère le poisson à la viande. Je déteste le bruit."
+    },
+    {
+     "title": "Conseils",
+     "text": "Donne trois conseils à un camarade qui a peur de l'examen.",
+     "solution": "Tu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas."
+    },
+    {
+     "title": "Rédaction",
+     "text": "Explique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.",
+     "solution": "Activités, raisons (parce que, car, puisque), conclusion."
+    },
+    {
+     "title": "Vocabulaire",
+     "text": "Donne le nom de l'action : brancher, allumer, régler, éteindre.",
+     "solution": "le branchement, l'allumage, le réglage, l'extinction."
+    },
+    {
+     "title": "Pronoms",
+     "text": "Remplace le groupe souligné par un pronom : Je vois mes amis. Il parle à sa mère.",
+     "solution": "Je les vois. Il lui parle."
+    },
+    {
+     "title": "Connecteurs de cause",
+     "text": "Complète avec parce que, car, grâce à : Il a réussi ___ son travail. Je reste ___ il pleut.",
+     "solution": "grâce à ; parce que / car."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Semaine 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du trimestre 1",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Expliquer simplement ses choix personnels et ses goûts",
+    "Expliquer le fonctionnement d'un appareil en usage dans son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 1",
+     "text": "Exercice 1 : Homophones\nComplète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.\n\nExercice 2 : Connecteurs de cause\nComplète avec parce que, car, grâce à : Il a réussi ___ son travail. Je reste ___ il pleut.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\na – à ; est – et.\n\nExercice 2\ngrâce à ; parce que / car.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 1",
+     "text": "Exercice 1 : Types de phrases\nTransforme en phrase interrogative puis négative : Tu aimes le football.\n\nExercice 2 : Justifier\nJustifie ton choix avec « parce que » : ta matière préférée.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nAimes-tu le football ? / Tu n'aimes pas le football.\n\nExercice 2\nJe préfère les mathématiques parce que j'aime résoudre des problèmes.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait\nConjugue à l'imparfait : nous (jouer), il (faire), vous (être).\n\nExercice 2 : Rédaction\nExplique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nnous jouions, il faisait, vous étiez.\n\nExercice 2\nActivités, raisons (parce que, car, puisque), conclusion.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord de l'adjectif\nAccorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).\n\nExercice 2 : Texte\nLis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nbelles ; blanche ; attentifs/attentives.\n\nExercice 2\na) La couture. b) Parce qu'elle aime créer de beaux habits.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 1",
+     "text": "Exercice 1 : Homophones\nComplète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.\n\nExercice 2 : Texte\nLis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?\n\nExercice 3 : Ventilateur\nExplique le fonctionnement d'un ventilateur.",
+     "solution": "Exercice 1\na – à ; est – et.\n\nExercice 2\na) La couture. b) Parce qu'elle aime créer de beaux habits.\n\nExercice 3\nOn le branche, on appuie sur le bouton, le moteur fait tourner les pales qui brassent l'air."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord de l'adjectif\nAccorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).\n\nExercice 2 : Rédaction\nExplique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.\n\nExercice 3 : Impératif\nMets à l'impératif : (brancher) l'appareil ; (appuyer) sur le bouton ; (attendre).",
+     "solution": "Exercice 1\nbelles ; blanche ; attentifs/attentives.\n\nExercice 2\nActivités, raisons (parce que, car, puisque), conclusion.\n\nExercice 3\nBranche/Branchez ; Appuie/Appuyez ; Attends/Attendez."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pronoms\nRemplace le groupe souligné par un pronom : Je vois mes amis. Il parle à sa mère.\n\nExercice 2 : Goûts\nExprime tes goûts avec : j'aime, j'adore, je préfère, je déteste (4 phrases).\n\nExercice 3 : Ventilateur\nExplique le fonctionnement d'un ventilateur.",
+     "solution": "Exercice 1\nJe les vois. Il lui parle.\n\nExercice 2\nJ'aime la lecture. J'adore le football. Je préfère le poisson à la viande. Je déteste le bruit.\n\nExercice 3\nOn le branche, on appuie sur le bouton, le moteur fait tourner les pales qui brassent l'air."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord de l'adjectif\nAccorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).\n\nExercice 2 : Justifier\nJustifie ton choix avec « parce que » : ta matière préférée.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nbelles ; blanche ; attentifs/attentives.\n\nExercice 2\nJe préfère les mathématiques parce que j'aime résoudre des problèmes.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait\nConjugue à l'imparfait : nous (jouer), il (faire), vous (être).\n\nExercice 2 : Rédaction\nExplique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.\n\nExercice 3 : Ventilateur\nExplique le fonctionnement d'un ventilateur.",
+     "solution": "Exercice 1\nnous jouions, il faisait, vous étiez.\n\nExercice 2\nActivités, raisons (parce que, car, puisque), conclusion.\n\nExercice 3\nOn le branche, on appuie sur le bouton, le moteur fait tourner les pales qui brassent l'air."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 1",
+     "text": "Exercice 1 : Homophones\nComplète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.\n\nExercice 2 : Justifier\nJustifie ton choix avec « parce que » : ta matière préférée.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\na – à ; est – et.\n\nExercice 2\nJe préfère les mathématiques parce que j'aime résoudre des problèmes.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 1",
+     "text": "Exercice 1 : Présent et passé composé\nConjugue : je (finir) au présent ; nous (manger) au passé composé ; elles (partir) au passé composé.\n\nExercice 2 : Texte\nLis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nje finis ; nous avons mangé ; elles sont parties.\n\nExercice 2\na) La couture. b) Parce qu'elle aime créer de beaux habits.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pronoms\nRemplace le groupe souligné par un pronom : Je vois mes amis. Il parle à sa mère.\n\nExercice 2 : Justifier\nJustifie ton choix avec « parce que » : ta matière préférée.\n\nExercice 3 : Impératif\nMets à l'impératif : (brancher) l'appareil ; (appuyer) sur le bouton ; (attendre).",
+     "solution": "Exercice 1\nJe les vois. Il lui parle.\n\nExercice 2\nJe préfère les mathématiques parce que j'aime résoudre des problèmes.\n\nExercice 3\nBranche/Branchez ; Appuie/Appuyez ; Attends/Attendez."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 1",
+     "text": "Exercice 1 : Types de phrases\nTransforme en phrase interrogative puis négative : Tu aimes le football.\n\nExercice 2 : Justifier\nJustifie ton choix avec « parce que » : ta matière préférée.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nAimes-tu le football ? / Tu n'aimes pas le football.\n\nExercice 2\nJe préfère les mathématiques parce que j'aime résoudre des problèmes.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 1",
+     "text": "Exercice 1 : Homophones\nComplète avec a / à, et / est : Il ___ un livre ___ la main. Le ciel ___ bleu ___ clair.\n\nExercice 2 : Justifier\nJustifie ton choix avec « parce que » : ta matière préférée.\n\nExercice 3 : Ventilateur\nExplique le fonctionnement d'un ventilateur.",
+     "solution": "Exercice 1\na – à ; est – et.\n\nExercice 2\nJe préfère les mathématiques parce que j'aime résoudre des problèmes.\n\nExercice 3\nOn le branche, on appuie sur le bouton, le moteur fait tourner les pales qui brassent l'air."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait\nConjugue à l'imparfait : nous (jouer), il (faire), vous (être).\n\nExercice 2 : Texte\nLis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nnous jouions, il faisait, vous étiez.\n\nExercice 2\na) La couture. b) Parce qu'elle aime créer de beaux habits.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pronoms\nRemplace le groupe souligné par un pronom : Je vois mes amis. Il parle à sa mère.\n\nExercice 2 : Texte\nLis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nJe les vois. Il lui parle.\n\nExercice 2\na) La couture. b) Parce qu'elle aime créer de beaux habits.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord de l'adjectif\nAccorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).\n\nExercice 2 : Texte\nLis : « Nafi aime la couture car elle aime créer de beaux habits. » a) Que préfère Nafi ? b) Pourquoi ?\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nbelles ; blanche ; attentifs/attentives.\n\nExercice 2\na) La couture. b) Parce qu'elle aime créer de beaux habits.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 1",
+     "text": "Exercice 1 : Présent et passé composé\nConjugue : je (finir) au présent ; nous (manger) au passé composé ; elles (partir) au passé composé.\n\nExercice 2 : Rédaction\nExplique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.\n\nExercice 3 : Impératif\nMets à l'impératif : (brancher) l'appareil ; (appuyer) sur le bouton ; (attendre).",
+     "solution": "Exercice 1\nje finis ; nous avons mangé ; elles sont parties.\n\nExercice 2\nActivités, raisons (parce que, car, puisque), conclusion.\n\nExercice 3\nBranche/Branchez ; Appuie/Appuyez ; Attends/Attendez."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord de l'adjectif\nAccorde : des fleurs (beau) ; une maison (blanc) ; des élèves (attentif).\n\nExercice 2 : Rédaction\nExplique en 6 lignes ce que tu aimes faire pendant les vacances et pourquoi.\n\nExercice 3 : Vocabulaire\nDonne le nom de l'action : brancher, allumer, régler, éteindre.",
+     "solution": "Exercice 1\nbelles ; blanche ; attentifs/attentives.\n\nExercice 2\nActivités, raisons (parce que, car, puisque), conclusion.\n\nExercice 3\nle branchement, l'allumage, le réglage, l'extinction."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 1",
+     "text": "Exercice 1 : Types de phrases\nTransforme en phrase interrogative puis négative : Tu aimes le football.\n\nExercice 2 : Goûts\nExprime tes goûts avec : j'aime, j'adore, je préfère, je déteste (4 phrases).\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nAimes-tu le football ? / Tu n'aimes pas le football.\n\nExercice 2\nJ'aime la lecture. J'adore le football. Je préfère le poisson à la viande. Je déteste le bruit.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du trimestre 2",
+   "covers": [
+    "Expliquer les avantages/inconvénients d'un métier exercé dans son environnement",
+    "Activité parascolaire",
+    "Présentation du projet",
+    "Module 2 : Donner des consignes et instructions"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 2",
+     "text": "Exercice 1 : Connecteurs d'opposition\nComplète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nmais (ou cependant).\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 2",
+     "text": "Exercice 1 : Connecteurs d'opposition\nComplète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nmais (ou cependant).\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 2",
+     "text": "Exercice 1 : Avantages / inconvénients\nDonne deux avantages et deux inconvénients du métier de commerçant.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nAvantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 2",
+     "text": "Exercice 1 : Connecteurs d'opposition\nComplète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nmais (ou cependant).\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 2",
+     "text": "Exercice 1 : Connecteurs d'opposition\nComplète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nmais (ou cependant).\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 2",
+     "text": "Exercice 1 : Rédaction\nRédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nIntroduction ; avantages ; inconvénients (connecteurs) ; avis personnel.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 2",
+     "text": "Exercice 1 : Rédaction\nRédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nIntroduction ; avantages ; inconvénients (connecteurs) ; avis personnel.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 2",
+     "text": "Exercice 1 : Connecteurs d'opposition\nComplète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nmais (ou cependant).\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 2",
+     "text": "Exercice 1 : Connecteurs d'opposition\nComplète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nmais (ou cependant).\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 2",
+     "text": "Exercice 1 : Rédaction\nRédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nIntroduction ; avantages ; inconvénients (connecteurs) ; avis personnel.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 2",
+     "text": "Exercice 1 : Avantages / inconvénients\nDonne deux avantages et deux inconvénients du métier de commerçant.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nAvantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 2",
+     "text": "Exercice 1 : Avantages / inconvénients\nDonne deux avantages et deux inconvénients du métier de commerçant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nAvantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 2",
+     "text": "Exercice 1 : Rédaction\nRédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nIntroduction ; avantages ; inconvénients (connecteurs) ; avis personnel.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 2",
+     "text": "Exercice 1 : Avantages / inconvénients\nDonne deux avantages et deux inconvénients du métier de commerçant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nAvantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 2",
+     "text": "Exercice 1 : Rédaction\nRédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nIntroduction ; avantages ; inconvénients (connecteurs) ; avis personnel.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 2",
+     "text": "Exercice 1 : Rédaction\nRédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nIntroduction ; avantages ; inconvénients (connecteurs) ; avis personnel.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 2",
+     "text": "Exercice 1 : Avantages / inconvénients\nDonne deux avantages et deux inconvénients du métier de commerçant.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nAvantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 2",
+     "text": "Exercice 1 : Avantages / inconvénients\nDonne deux avantages et deux inconvénients du métier de commerçant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nAvantages : indépendance, gains possibles ; inconvénients : risques de pertes, longues heures de travail.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 2",
+     "text": "Exercice 1 : Connecteurs d'opposition\nComplète avec mais, cependant, par contre : Ce métier est bien payé ___ il est fatigant.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Consignes\nÉcris quatre consignes pour bien se tenir en classe.",
+     "solution": "Exercice 1\nmais (ou cependant).\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nÉcoute le professeur. Lève la main avant de parler. Ne cours pas. Range tes affaires."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 2",
+     "text": "Exercice 1 : Rédaction\nRédige un paragraphe sur les avantages et inconvénients du métier d'enseignant.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nIntroduction ; avantages ; inconvénients (connecteurs) ; avis personnel.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Donner des ordres",
+    "Donner des conseils et recommandations",
+    "Activité parascolaire"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Impératif\nTransforme en ordre : Tu fermes la porte. Vous écoutez. Nous partons.\n\nExercice 2 : Recommandations\nRédige une liste de recommandations pour économiser l'eau.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nFerme la porte ! Écoutez ! Partons !\n\nExercice 2\nFermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Il faut / tu devrais\nTransforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nIl faut boire de l'eau. Il faut se laver les mains.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Il faut / tu devrais\nTransforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nIl faut boire de l'eau. Il faut se laver les mains.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Recommandations\nRédige une liste de recommandations pour économiser l'eau.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nFermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Conseils\nDonne trois conseils à un camarade qui a peur de l'examen.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nTu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Impératif\nTransforme en ordre : Tu fermes la porte. Vous écoutez. Nous partons.\n\nExercice 2 : Il faut / tu devrais\nTransforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nFerme la porte ! Écoutez ! Partons !\n\nExercice 2\nIl faut boire de l'eau. Il faut se laver les mains.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Négation\nMets à la forme négative : Parle ! Mangez en classe !\n\nExercice 2 : Recommandations\nRédige une liste de recommandations pour économiser l'eau.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nNe parle pas ! Ne mangez pas en classe !\n\nExercice 2\nFermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Impératif\nTransforme en ordre : Tu fermes la porte. Vous écoutez. Nous partons.\n\nExercice 2 : Il faut / tu devrais\nTransforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nFerme la porte ! Écoutez ! Partons !\n\nExercice 2\nIl faut boire de l'eau. Il faut se laver les mains.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Il faut / tu devrais\nTransforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nIl faut boire de l'eau. Il faut se laver les mains.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Impératif\nTransforme en ordre : Tu fermes la porte. Vous écoutez. Nous partons.\n\nExercice 2 : Il faut / tu devrais\nTransforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nFerme la porte ! Écoutez ! Partons !\n\nExercice 2\nIl faut boire de l'eau. Il faut se laver les mains.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Négation\nMets à la forme négative : Parle ! Mangez en classe !\n\nExercice 2 : Conseils\nDonne trois conseils à un camarade qui a peur de l'examen.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nNe parle pas ! Ne mangez pas en classe !\n\nExercice 2\nTu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Recommandations\nRédige une liste de recommandations pour économiser l'eau.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nFermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Négation\nMets à la forme négative : Parle ! Mangez en classe !\n\nExercice 2 : Conseils\nDonne trois conseils à un camarade qui a peur de l'examen.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nNe parle pas ! Ne mangez pas en classe !\n\nExercice 2\nTu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Impératif\nTransforme en ordre : Tu fermes la porte. Vous écoutez. Nous partons.\n\nExercice 2 : Conseils\nDonne trois conseils à un camarade qui a peur de l'examen.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nFerme la porte ! Écoutez ! Partons !\n\nExercice 2\nTu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Recommandations\nRédige une liste de recommandations pour économiser l'eau.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nFermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Négation\nMets à la forme négative : Parle ! Mangez en classe !\n\nExercice 2 : Recommandations\nRédige une liste de recommandations pour économiser l'eau.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nNe parle pas ! Ne mangez pas en classe !\n\nExercice 2\nFermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Impératif\nTransforme en ordre : Tu fermes la porte. Vous écoutez. Nous partons.\n\nExercice 2 : Recommandations\nRédige une liste de recommandations pour économiser l'eau.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nFerme la porte ! Écoutez ! Partons !\n\nExercice 2\nFermer le robinet ; réparer les fuites ; arroser le soir ; ne pas gaspiller.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Négation\nMets à la forme négative : Parle ! Mangez en classe !\n\nExercice 2 : Il faut / tu devrais\nTransforme en conseil avec « il faut » : Bois de l'eau. Lave tes mains.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nNe parle pas ! Ne mangez pas en classe !\n\nExercice 2\nIl faut boire de l'eau. Il faut se laver les mains.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Situation\nLe chef du chantier donne des ordres aux ouvriers. Écris trois ordres.\n\nExercice 2 : Conseils\nDonne trois conseils à un camarade qui a peur de l'examen.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nPortez vos casques ! Apportez le ciment ! Ne laissez pas les outils par terre !\n\nExercice 2\nTu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Négation\nMets à la forme négative : Parle ! Mangez en classe !\n\nExercice 2 : Conseils\nDonne trois conseils à un camarade qui a peur de l'examen.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nNe parle pas ! Ne mangez pas en classe !\n\nExercice 2\nTu devrais réviser chaque jour. Il faut bien dormir. Ne panique pas.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    }
+   ]
+  }
+ ]
+}

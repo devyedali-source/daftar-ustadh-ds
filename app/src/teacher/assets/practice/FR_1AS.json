@@ -1,0 +1,933 @@
+{
+ "subject": "FR",
+ "level": "1AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Semaine 10",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Informer sur soi et sur autrui",
+    "Informer sur son environnement",
+    "Demander des informations sur autrui et sur son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique"
+   ],
+   "items": [
+    {
+     "title": "Pluriel",
+     "text": "Mets au pluriel : un cheval, un enfant, un bijou, un journal.",
+     "solution": "des chevaux, des enfants, des bijoux, des journaux."
+    },
+    {
+     "title": "Présenter un camarade",
+     "text": "Lis : « Il s'appelle Amadou. Il a 13 ans. Il habite à Kaédi. Il aime le football. » Présente de la même façon une camarade.",
+     "solution": "Elle s'appelle … Elle a … ans. Elle habite à … Elle aime …"
+    },
+    {
+     "title": "Fiche d'identité",
+     "text": "Complète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.",
+     "solution": "Réponse personnelle avec des informations complètes et des majuscules aux noms propres."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Prépositions de lieu",
+     "text": "Complète avec sur, sous, devant, derrière : Le livre est ___ la table. Le chat est ___ le lit.",
+     "solution": "sur ; sous (réponses possibles)."
+    },
+    {
+     "title": "Phrase",
+     "text": "Remets en ordre : école / va / à / mon / l' / frère / matin / le",
+     "solution": "Mon frère va à l'école le matin."
+    },
+    {
+     "title": "Le présent",
+     "text": "Conjugue au présent : je (être) en classe ; nous (avoir) un livre ; ils (aller) à l'école ; tu (finir) ton devoir.",
+     "solution": "je suis ; nous avons ; ils vont ; tu finis."
+    },
+    {
+     "title": "Mon école",
+     "text": "Décris ton école (bâtiments, cour, nombre de classes).",
+     "solution": "Réponse personnelle avec phrases simples et vocabulaire du lieu."
+    },
+    {
+     "title": "Féminin",
+     "text": "Mets au féminin : un élève sérieux, un ami gentil, un voisin heureux.",
+     "solution": "une élève sérieuse, une amie gentille, une voisine heureuse."
+    },
+    {
+     "title": "Articles",
+     "text": "Complète avec un, une, des, le, la, les : J'ai ___ stylo. ___ soleil brille. Elle achète ___ oranges.",
+     "solution": "un ; Le ; des."
+    },
+    {
+     "title": "Mots interrogatifs",
+     "text": "Complète avec où, quand, comment, qui : ___ est ton professeur ? ___ vas-tu ? ___ t'appelles-tu ?",
+     "solution": "Qui ; Où ; Comment."
+    },
+    {
+     "title": "Est-ce que",
+     "text": "Transforme avec « est-ce que » : Tu as un frère ? Il y a une bibliothèque ?",
+     "solution": "Est-ce que tu as un frère ? Est-ce qu'il y a une bibliothèque ?"
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Dialogue",
+     "text": "Écris un dialogue de 6 répliques avec un nouvel élève.",
+     "solution": "Salutation ; nom ; âge ; ancienne école ; quartier ; formule de fin."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Questions",
+     "text": "Pose les questions : a) J'habite à Atar. b) J'ai 12 ans. c) Mon père est commerçant.",
+     "solution": "a) Où habites-tu ? b) Quel âge as-tu ? c) Que fait ton père ?"
+    },
+    {
+     "title": "Verbes être et avoir",
+     "text": "Complète : Je ___ mauritanien. Elle ___ douze ans. Nous ___ élèves.",
+     "solution": "suis ; a ; sommes."
+    },
+    {
+     "title": "Ma maison",
+     "text": "Décris ta maison en 5 phrases.",
+     "solution": "Ma maison est grande. Elle a trois chambres, un salon et une cuisine. Il y a une cour avec un arbre…"
+    },
+    {
+     "title": "Ponctuation",
+     "text": "Ponctue : où habites tu je habite à rosso",
+     "solution": "Où habites-tu ? J'habite à Rosso."
+    },
+    {
+     "title": "Il y a",
+     "text": "Complète avec « il y a » : Dans ma classe, ___ un tableau. ___ trente élèves.",
+     "solution": "il y a ; Il y a."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Informer sur soi et sur autrui",
+    "Informer sur son environnement",
+    "Demander des informations sur autrui et sur son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique"
+   ],
+   "items": [
+    {
+     "title": "Verbes être et avoir",
+     "text": "Complète : Je ___ mauritanien. Elle ___ douze ans. Nous ___ élèves.",
+     "solution": "suis ; a ; sommes."
+    },
+    {
+     "title": "Questions",
+     "text": "Pose les questions : a) J'habite à Atar. b) J'ai 12 ans. c) Mon père est commerçant.",
+     "solution": "a) Où habites-tu ? b) Quel âge as-tu ? c) Que fait ton père ?"
+    },
+    {
+     "title": "Prépositions de lieu",
+     "text": "Complète avec sur, sous, devant, derrière : Le livre est ___ la table. Le chat est ___ le lit.",
+     "solution": "sur ; sous (réponses possibles)."
+    },
+    {
+     "title": "Phrase",
+     "text": "Remets en ordre : école / va / à / mon / l' / frère / matin / le",
+     "solution": "Mon frère va à l'école le matin."
+    },
+    {
+     "title": "Ma maison",
+     "text": "Décris ta maison en 5 phrases.",
+     "solution": "Ma maison est grande. Elle a trois chambres, un salon et une cuisine. Il y a une cour avec un arbre…"
+    },
+    {
+     "title": "Féminin",
+     "text": "Mets au féminin : un élève sérieux, un ami gentil, un voisin heureux.",
+     "solution": "une élève sérieuse, une amie gentille, une voisine heureuse."
+    },
+    {
+     "title": "Fiche d'identité",
+     "text": "Complète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.",
+     "solution": "Réponse personnelle avec des informations complètes et des majuscules aux noms propres."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Articles",
+     "text": "Complète avec un, une, des, le, la, les : J'ai ___ stylo. ___ soleil brille. Elle achète ___ oranges.",
+     "solution": "un ; Le ; des."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Présenter un camarade",
+     "text": "Lis : « Il s'appelle Amadou. Il a 13 ans. Il habite à Kaédi. Il aime le football. » Présente de la même façon une camarade.",
+     "solution": "Elle s'appelle … Elle a … ans. Elle habite à … Elle aime …"
+    },
+    {
+     "title": "Mots interrogatifs",
+     "text": "Complète avec où, quand, comment, qui : ___ est ton professeur ? ___ vas-tu ? ___ t'appelles-tu ?",
+     "solution": "Qui ; Où ; Comment."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Dialogue",
+     "text": "Écris un dialogue de 6 répliques avec un nouvel élève.",
+     "solution": "Salutation ; nom ; âge ; ancienne école ; quartier ; formule de fin."
+    },
+    {
+     "title": "Se présenter",
+     "text": "Présente-toi en 5 phrases (nom, âge, ville, classe, loisir).",
+     "solution": "Je m'appelle … J'ai … ans. J'habite à … Je suis en 1re année. J'aime …"
+    },
+    {
+     "title": "Il y a",
+     "text": "Complète avec « il y a » : Dans ma classe, ___ un tableau. ___ trente élèves.",
+     "solution": "il y a ; Il y a."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Pluriel",
+     "text": "Mets au pluriel : un cheval, un enfant, un bijou, un journal.",
+     "solution": "des chevaux, des enfants, des bijoux, des journaux."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Ponctuation",
+     "text": "Ponctue : où habites tu je habite à rosso",
+     "solution": "Où habites-tu ? J'habite à Rosso."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Informer / s'informer sur un métier",
+    "Décrire une personne (physique/moral), un animal",
+    "Activité parascolaire",
+    "Présentation du projet"
+   ],
+   "items": [
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Interview",
+     "text": "Prépare quatre questions pour interviewer un artisan.",
+     "solution": "Quel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?"
+    },
+    {
+     "title": "Texte",
+     "text": "Lis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?",
+     "solution": "a) Pêcheur. b) Il part en mer avec sa pirogue."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Portrait",
+     "text": "Fais le portrait physique et moral de ton meilleur ami.",
+     "solution": "Taille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…"
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Métiers",
+     "text": "Associe : soigne les malades – enseigne – pêche – construit des maisons → maçon, médecin, pêcheur, professeur.",
+     "solution": "médecin ; professeur ; pêcheur ; maçon."
+    },
+    {
+     "title": "Adjectifs",
+     "text": "Donne le contraire : grand, gros, gentil, travailleur.",
+     "solution": "petit, mince, méchant, paresseux."
+    },
+    {
+     "title": "Animal",
+     "text": "Décris un chameau en 4 phrases.",
+     "solution": "Le chameau est un grand animal. Il a une bosse, de longues pattes et un long cou. Il supporte la soif. Il transporte les marchandises."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Pluriel",
+     "text": "Mets au pluriel : un cheval, un enfant, un bijou, un journal.",
+     "solution": "des chevaux, des enfants, des bijoux, des journaux."
+    },
+    {
+     "title": "Articles",
+     "text": "Complète avec un, une, des, le, la, les : J'ai ___ stylo. ___ soleil brille. Elle achète ___ oranges.",
+     "solution": "un ; Le ; des."
+    },
+    {
+     "title": "Il y a",
+     "text": "Complète avec « il y a » : Dans ma classe, ___ un tableau. ___ trente élèves.",
+     "solution": "il y a ; Il y a."
+    },
+    {
+     "title": "Phrase",
+     "text": "Remets en ordre : école / va / à / mon / l' / frère / matin / le",
+     "solution": "Mon frère va à l'école le matin."
+    },
+    {
+     "title": "Dialogue",
+     "text": "Écris un dialogue de 6 répliques avec un nouvel élève.",
+     "solution": "Salutation ; nom ; âge ; ancienne école ; quartier ; formule de fin."
+    },
+    {
+     "title": "Mon école",
+     "text": "Décris ton école (bâtiments, cour, nombre de classes).",
+     "solution": "Réponse personnelle avec phrases simples et vocabulaire du lieu."
+    },
+    {
+     "title": "Prépositions de lieu",
+     "text": "Complète avec sur, sous, devant, derrière : Le livre est ___ la table. Le chat est ___ le lit.",
+     "solution": "sur ; sous (réponses possibles)."
+    },
+    {
+     "title": "Présenter un camarade",
+     "text": "Lis : « Il s'appelle Amadou. Il a 13 ans. Il habite à Kaédi. Il aime le football. » Présente de la même façon une camarade.",
+     "solution": "Elle s'appelle … Elle a … ans. Elle habite à … Elle aime …"
+    },
+    {
+     "title": "Féminin",
+     "text": "Mets au féminin : un élève sérieux, un ami gentil, un voisin heureux.",
+     "solution": "une élève sérieuse, une amie gentille, une voisine heureuse."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Décrire un lieu / un paysage se trouvant dans son environnement",
+    "Décrire un objet (outil, appareil, matière) dans son environnement",
+    "Décrire et comparer quelques métiers de son environnement",
+    "Activité parascolaire"
+   ],
+   "items": [
+    {
+     "title": "Paysage",
+     "text": "Décris un paysage de ton pays (désert, fleuve ou mer).",
+     "solution": "Lieu, éléments (dunes, palmiers, eau), couleurs, impression personnelle."
+    },
+    {
+     "title": "Devinette",
+     "text": "Écris une devinette sur un objet de la maison.",
+     "solution": "« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge."
+    },
+    {
+     "title": "Localiser",
+     "text": "Complète avec : au loin, à gauche, au milieu, au premier plan.",
+     "solution": "Au premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes."
+    },
+    {
+     "title": "Texte",
+     "text": "Compare en 4 phrases le métier d'agriculteur et celui d'éleveur.",
+     "solution": "Ressemblances (travail en plein air, dépend de la pluie) ; différences (cultures / troupeaux)."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Adjectifs du paysage",
+     "text": "Trouve trois adjectifs pour décrire le désert.",
+     "solution": "vaste, sec, silencieux, doré…"
+    },
+    {
+     "title": "Matières",
+     "text": "De quelle matière sont faits : une table, une fenêtre, une marmite ?",
+     "solution": "bois ; verre ; métal (aluminium)."
+    },
+    {
+     "title": "Objet",
+     "text": "Décris ton cartable : forme, couleur, matière, utilité.",
+     "solution": "Mon cartable est rectangulaire, bleu, en tissu ; il sert à porter mes livres."
+    },
+    {
+     "title": "Comparer",
+     "text": "Compare avec plus… que, moins… que : le travail du maçon / du bureau (fatigant).",
+     "solution": "Le travail du maçon est plus fatigant que le travail de bureau."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Le présent",
+     "text": "Conjugue au présent : je (être) en classe ; nous (avoir) un livre ; ils (aller) à l'école ; tu (finir) ton devoir.",
+     "solution": "je suis ; nous avons ; ils vont ; tu finis."
+    },
+    {
+     "title": "Présenter un camarade",
+     "text": "Lis : « Il s'appelle Amadou. Il a 13 ans. Il habite à Kaédi. Il aime le football. » Présente de la même façon une camarade.",
+     "solution": "Elle s'appelle … Elle a … ans. Elle habite à … Elle aime …"
+    },
+    {
+     "title": "Portrait",
+     "text": "Fais le portrait physique et moral de ton meilleur ami.",
+     "solution": "Taille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…"
+    },
+    {
+     "title": "Prépositions de lieu",
+     "text": "Complète avec sur, sous, devant, derrière : Le livre est ___ la table. Le chat est ___ le lit.",
+     "solution": "sur ; sous (réponses possibles)."
+    },
+    {
+     "title": "Se présenter",
+     "text": "Présente-toi en 5 phrases (nom, âge, ville, classe, loisir).",
+     "solution": "Je m'appelle … J'ai … ans. J'habite à … Je suis en 1re année. J'aime …"
+    },
+    {
+     "title": "Adjectifs",
+     "text": "Donne le contraire : grand, gros, gentil, travailleur.",
+     "solution": "petit, mince, méchant, paresseux."
+    },
+    {
+     "title": "Verbes être et avoir",
+     "text": "Complète : Je ___ mauritanien. Elle ___ douze ans. Nous ___ élèves.",
+     "solution": "suis ; a ; sommes."
+    },
+    {
+     "title": "Féminin",
+     "text": "Mets au féminin : un élève sérieux, un ami gentil, un voisin heureux.",
+     "solution": "une élève sérieuse, une amie gentille, une voisine heureuse."
+    },
+    {
+     "title": "Fiche d'identité",
+     "text": "Complète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.",
+     "solution": "Réponse personnelle avec des informations complètes et des majuscules aux noms propres."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 36",
+   "term": 3,
+   "kind": "final",
+   "title": "Révision générale de l'année",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Informer sur soi et sur autrui",
+    "Informer sur son environnement",
+    "Demander des informations sur autrui et sur son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique",
+    "Informer / s'informer sur un métier",
+    "Décrire une personne (physique/moral), un animal",
+    "Présentation du projet",
+    "Décrire un lieu / un paysage se trouvant dans son environnement"
+   ],
+   "items": [
+    {
+     "title": "Adjectifs",
+     "text": "Donne le contraire : grand, gros, gentil, travailleur.",
+     "solution": "petit, mince, méchant, paresseux."
+    },
+    {
+     "title": "Animal",
+     "text": "Décris un chameau en 4 phrases.",
+     "solution": "Le chameau est un grand animal. Il a une bosse, de longues pattes et un long cou. Il supporte la soif. Il transporte les marchandises."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Métiers",
+     "text": "Associe : soigne les malades – enseigne – pêche – construit des maisons → maçon, médecin, pêcheur, professeur.",
+     "solution": "médecin ; professeur ; pêcheur ; maçon."
+    },
+    {
+     "title": "Texte",
+     "text": "Compare en 4 phrases le métier d'agriculteur et celui d'éleveur.",
+     "solution": "Ressemblances (travail en plein air, dépend de la pluie) ; différences (cultures / troupeaux)."
+    },
+    {
+     "title": "Il y a",
+     "text": "Complète avec « il y a » : Dans ma classe, ___ un tableau. ___ trente élèves.",
+     "solution": "il y a ; Il y a."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Le présent",
+     "text": "Conjugue au présent : je (être) en classe ; nous (avoir) un livre ; ils (aller) à l'école ; tu (finir) ton devoir.",
+     "solution": "je suis ; nous avons ; ils vont ; tu finis."
+    },
+    {
+     "title": "Devinette",
+     "text": "Écris une devinette sur un objet de la maison.",
+     "solution": "« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge."
+    },
+    {
+     "title": "Texte",
+     "text": "Lis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?",
+     "solution": "a) Pêcheur. b) Il part en mer avec sa pirogue."
+    },
+    {
+     "title": "Est-ce que",
+     "text": "Transforme avec « est-ce que » : Tu as un frère ? Il y a une bibliothèque ?",
+     "solution": "Est-ce que tu as un frère ? Est-ce qu'il y a une bibliothèque ?"
+    },
+    {
+     "title": "Dialogue",
+     "text": "Écris un dialogue de 6 répliques avec un nouvel élève.",
+     "solution": "Salutation ; nom ; âge ; ancienne école ; quartier ; formule de fin."
+    },
+    {
+     "title": "Fiche d'identité",
+     "text": "Complète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.",
+     "solution": "Réponse personnelle avec des informations complètes et des majuscules aux noms propres."
+    },
+    {
+     "title": "Phrase",
+     "text": "Remets en ordre : école / va / à / mon / l' / frère / matin / le",
+     "solution": "Mon frère va à l'école le matin."
+    },
+    {
+     "title": "Adjectifs du paysage",
+     "text": "Trouve trois adjectifs pour décrire le désert.",
+     "solution": "vaste, sec, silencieux, doré…"
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Mon école",
+     "text": "Décris ton école (bâtiments, cour, nombre de classes).",
+     "solution": "Réponse personnelle avec phrases simples et vocabulaire du lieu."
+    },
+    {
+     "title": "Ma maison",
+     "text": "Décris ta maison en 5 phrases.",
+     "solution": "Ma maison est grande. Elle a trois chambres, un salon et une cuisine. Il y a une cour avec un arbre…"
+    },
+    {
+     "title": "Ponctuation",
+     "text": "Ponctue : où habites tu je habite à rosso",
+     "solution": "Où habites-tu ? J'habite à Rosso."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Semaine 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du trimestre 1",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Informer sur soi et sur autrui",
+    "Informer sur son environnement",
+    "Demander des informations sur autrui et sur son environnement",
+    "Activité parascolaire",
+    "Projet pédagogique"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pluriel\nMets au pluriel : un cheval, un enfant, un bijou, un journal.\n\nExercice 2 : Mon école\nDécris ton école (bâtiments, cour, nombre de classes).\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\ndes chevaux, des enfants, des bijoux, des journaux.\n\nExercice 2\nRéponse personnelle avec phrases simples et vocabulaire du lieu.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 1",
+     "text": "Exercice 1 : Féminin\nMets au féminin : un élève sérieux, un ami gentil, un voisin heureux.\n\nExercice 2 : Verbes être et avoir\nComplète : Je ___ mauritanien. Elle ___ douze ans. Nous ___ élèves.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nune élève sérieuse, une amie gentille, une voisine heureuse.\n\nExercice 2\nsuis ; a ; sommes.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 1",
+     "text": "Exercice 1 : Articles\nComplète avec un, une, des, le, la, les : J'ai ___ stylo. ___ soleil brille. Elle achète ___ oranges.\n\nExercice 2 : Ma maison\nDécris ta maison en 5 phrases.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nun ; Le ; des.\n\nExercice 2\nMa maison est grande. Elle a trois chambres, un salon et une cuisine. Il y a une cour avec un arbre…\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ponctuation\nPonctue : où habites tu je habite à rosso\n\nExercice 2 : Fiche d'identité\nComplète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nOù habites-tu ? J'habite à Rosso.\n\nExercice 2\nRéponse personnelle avec des informations complètes et des majuscules aux noms propres.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ponctuation\nPonctue : où habites tu je habite à rosso\n\nExercice 2 : Mon école\nDécris ton école (bâtiments, cour, nombre de classes).\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nOù habites-tu ? J'habite à Rosso.\n\nExercice 2\nRéponse personnelle avec phrases simples et vocabulaire du lieu.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pluriel\nMets au pluriel : un cheval, un enfant, un bijou, un journal.\n\nExercice 2 : Mon école\nDécris ton école (bâtiments, cour, nombre de classes).\n\nExercice 3 : Mots interrogatifs\nComplète avec où, quand, comment, qui : ___ est ton professeur ? ___ vas-tu ? ___ t'appelles-tu ?",
+     "solution": "Exercice 1\ndes chevaux, des enfants, des bijoux, des journaux.\n\nExercice 2\nRéponse personnelle avec phrases simples et vocabulaire du lieu.\n\nExercice 3\nQui ; Où ; Comment."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 1",
+     "text": "Exercice 1 : Se présenter\nPrésente-toi en 5 phrases (nom, âge, ville, classe, loisir).\n\nExercice 2 : Fiche d'identité\nComplète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nJe m'appelle … J'ai … ans. J'habite à … Je suis en 1re année. J'aime …\n\nExercice 2\nRéponse personnelle avec des informations complètes et des majuscules aux noms propres.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 1",
+     "text": "Exercice 1 : Féminin\nMets au féminin : un élève sérieux, un ami gentil, un voisin heureux.\n\nExercice 2 : Présenter un camarade\nLis : « Il s'appelle Amadou. Il a 13 ans. Il habite à Kaédi. Il aime le football. » Présente de la même façon une camarade.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nune élève sérieuse, une amie gentille, une voisine heureuse.\n\nExercice 2\nElle s'appelle … Elle a … ans. Elle habite à … Elle aime …\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 1",
+     "text": "Exercice 1 : Le présent\nConjugue au présent : je (être) en classe ; nous (avoir) un livre ; ils (aller) à l'école ; tu (finir) ton devoir.\n\nExercice 2 : Prépositions de lieu\nComplète avec sur, sous, devant, derrière : Le livre est ___ la table. Le chat est ___ le lit.\n\nExercice 3 : Mots interrogatifs\nComplète avec où, quand, comment, qui : ___ est ton professeur ? ___ vas-tu ? ___ t'appelles-tu ?",
+     "solution": "Exercice 1\nje suis ; nous avons ; ils vont ; tu finis.\n\nExercice 2\nsur ; sous (réponses possibles).\n\nExercice 3\nQui ; Où ; Comment."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 1",
+     "text": "Exercice 1 : Articles\nComplète avec un, une, des, le, la, les : J'ai ___ stylo. ___ soleil brille. Elle achète ___ oranges.\n\nExercice 2 : Mon école\nDécris ton école (bâtiments, cour, nombre de classes).\n\nExercice 3 : Est-ce que\nTransforme avec « est-ce que » : Tu as un frère ? Il y a une bibliothèque ?",
+     "solution": "Exercice 1\nun ; Le ; des.\n\nExercice 2\nRéponse personnelle avec phrases simples et vocabulaire du lieu.\n\nExercice 3\nEst-ce que tu as un frère ? Est-ce qu'il y a une bibliothèque ?"
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ponctuation\nPonctue : où habites tu je habite à rosso\n\nExercice 2 : Prépositions de lieu\nComplète avec sur, sous, devant, derrière : Le livre est ___ la table. Le chat est ___ le lit.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nOù habites-tu ? J'habite à Rosso.\n\nExercice 2\nsur ; sous (réponses possibles).\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 1",
+     "text": "Exercice 1 : Féminin\nMets au féminin : un élève sérieux, un ami gentil, un voisin heureux.\n\nExercice 2 : Il y a\nComplète avec « il y a » : Dans ma classe, ___ un tableau. ___ trente élèves.\n\nExercice 3 : Mots interrogatifs\nComplète avec où, quand, comment, qui : ___ est ton professeur ? ___ vas-tu ? ___ t'appelles-tu ?",
+     "solution": "Exercice 1\nune élève sérieuse, une amie gentille, une voisine heureuse.\n\nExercice 2\nil y a ; Il y a.\n\nExercice 3\nQui ; Où ; Comment."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pluriel\nMets au pluriel : un cheval, un enfant, un bijou, un journal.\n\nExercice 2 : Fiche d'identité\nComplète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\ndes chevaux, des enfants, des bijoux, des journaux.\n\nExercice 2\nRéponse personnelle avec des informations complètes et des majuscules aux noms propres.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 1",
+     "text": "Exercice 1 : Le présent\nConjugue au présent : je (être) en classe ; nous (avoir) un livre ; ils (aller) à l'école ; tu (finir) ton devoir.\n\nExercice 2 : Verbes être et avoir\nComplète : Je ___ mauritanien. Elle ___ douze ans. Nous ___ élèves.\n\nExercice 3 : Est-ce que\nTransforme avec « est-ce que » : Tu as un frère ? Il y a une bibliothèque ?",
+     "solution": "Exercice 1\nje suis ; nous avons ; ils vont ; tu finis.\n\nExercice 2\nsuis ; a ; sommes.\n\nExercice 3\nEst-ce que tu as un frère ? Est-ce qu'il y a une bibliothèque ?"
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 1",
+     "text": "Exercice 1 : Se présenter\nPrésente-toi en 5 phrases (nom, âge, ville, classe, loisir).\n\nExercice 2 : Mon école\nDécris ton école (bâtiments, cour, nombre de classes).\n\nExercice 3 : Est-ce que\nTransforme avec « est-ce que » : Tu as un frère ? Il y a une bibliothèque ?",
+     "solution": "Exercice 1\nJe m'appelle … J'ai … ans. J'habite à … Je suis en 1re année. J'aime …\n\nExercice 2\nRéponse personnelle avec phrases simples et vocabulaire du lieu.\n\nExercice 3\nEst-ce que tu as un frère ? Est-ce qu'il y a une bibliothèque ?"
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 1",
+     "text": "Exercice 1 : Féminin\nMets au féminin : un élève sérieux, un ami gentil, un voisin heureux.\n\nExercice 2 : Il y a\nComplète avec « il y a » : Dans ma classe, ___ un tableau. ___ trente élèves.\n\nExercice 3 : Questions\nPose les questions : a) J'habite à Atar. b) J'ai 12 ans. c) Mon père est commerçant.",
+     "solution": "Exercice 1\nune élève sérieuse, une amie gentille, une voisine heureuse.\n\nExercice 2\nil y a ; Il y a.\n\nExercice 3\na) Où habites-tu ? b) Quel âge as-tu ? c) Que fait ton père ?"
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 1",
+     "text": "Exercice 1 : Se présenter\nPrésente-toi en 5 phrases (nom, âge, ville, classe, loisir).\n\nExercice 2 : Ma maison\nDécris ta maison en 5 phrases.\n\nExercice 3 : Dialogue\nÉcris un dialogue de 6 répliques avec un nouvel élève.",
+     "solution": "Exercice 1\nJe m'appelle … J'ai … ans. J'habite à … Je suis en 1re année. J'aime …\n\nExercice 2\nMa maison est grande. Elle a trois chambres, un salon et une cuisine. Il y a une cour avec un arbre…\n\nExercice 3\nSalutation ; nom ; âge ; ancienne école ; quartier ; formule de fin."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 1",
+     "text": "Exercice 1 : Féminin\nMets au féminin : un élève sérieux, un ami gentil, un voisin heureux.\n\nExercice 2 : Verbes être et avoir\nComplète : Je ___ mauritanien. Elle ___ douze ans. Nous ___ élèves.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nune élève sérieuse, une amie gentille, une voisine heureuse.\n\nExercice 2\nsuis ; a ; sommes.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 1",
+     "text": "Exercice 1 : Se présenter\nPrésente-toi en 5 phrases (nom, âge, ville, classe, loisir).\n\nExercice 2 : Fiche d'identité\nComplète la fiche d'identité d'un camarade : Nom, Prénom, Âge, Adresse, Nationalité.\n\nExercice 3 : Mots interrogatifs\nComplète avec où, quand, comment, qui : ___ est ton professeur ? ___ vas-tu ? ___ t'appelles-tu ?",
+     "solution": "Exercice 1\nJe m'appelle … J'ai … ans. J'habite à … Je suis en 1re année. J'aime …\n\nExercice 2\nRéponse personnelle avec des informations complètes et des majuscules aux noms propres.\n\nExercice 3\nQui ; Où ; Comment."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 1",
+     "text": "Exercice 1 : Phrase\nRemets en ordre : école / va / à / mon / l' / frère / matin / le\n\nExercice 2 : Verbes être et avoir\nComplète : Je ___ mauritanien. Elle ___ douze ans. Nous ___ élèves.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nMon frère va à l'école le matin.\n\nExercice 2\nsuis ; a ; sommes.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du trimestre 2",
+   "covers": [
+    "Informer / s'informer sur un métier",
+    "Décrire une personne (physique/moral), un animal",
+    "Activité parascolaire",
+    "Présentation du projet"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 2",
+     "text": "Exercice 1 : Interview\nPrépare quatre questions pour interviewer un artisan.\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nQuel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 2",
+     "text": "Exercice 1 : Interview\nPrépare quatre questions pour interviewer un artisan.\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nQuel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 2",
+     "text": "Exercice 1 : Métiers\nAssocie : soigne les malades – enseigne – pêche – construit des maisons → maçon, médecin, pêcheur, professeur.\n\nExercice 2 : Animal\nDécris un chameau en 4 phrases.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nmédecin ; professeur ; pêcheur ; maçon.\n\nExercice 2\nLe chameau est un grand animal. Il a une bosse, de longues pattes et un long cou. Il supporte la soif. Il transporte les marchandises.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 2",
+     "text": "Exercice 1 : Interview\nPrépare quatre questions pour interviewer un artisan.\n\nExercice 2 : Animal\nDécris un chameau en 4 phrases.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nQuel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?\n\nExercice 2\nLe chameau est un grand animal. Il a une bosse, de longues pattes et un long cou. Il supporte la soif. Il transporte les marchandises.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Animal\nDécris un chameau en 4 phrases.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\nLe chameau est un grand animal. Il a une bosse, de longues pattes et un long cou. Il supporte la soif. Il transporte les marchandises.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 2",
+     "text": "Exercice 1 : Interview\nPrépare quatre questions pour interviewer un artisan.\n\nExercice 2 : Animal\nDécris un chameau en 4 phrases.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nQuel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?\n\nExercice 2\nLe chameau est un grand animal. Il a une bosse, de longues pattes et un long cou. Il supporte la soif. Il transporte les marchandises.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Adjectifs\nDonne le contraire : grand, gros, gentil, travailleur.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\npetit, mince, méchant, paresseux.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Adjectifs\nDonne le contraire : grand, gros, gentil, travailleur.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\npetit, mince, méchant, paresseux.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Adjectifs\nDonne le contraire : grand, gros, gentil, travailleur.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\npetit, mince, méchant, paresseux.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 2",
+     "text": "Exercice 1 : Interview\nPrépare quatre questions pour interviewer un artisan.\n\nExercice 2 : Adjectifs\nDonne le contraire : grand, gros, gentil, travailleur.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nQuel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?\n\nExercice 2\npetit, mince, méchant, paresseux.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 2",
+     "text": "Exercice 1 : Métiers\nAssocie : soigne les malades – enseigne – pêche – construit des maisons → maçon, médecin, pêcheur, professeur.\n\nExercice 2 : Adjectifs\nDonne le contraire : grand, gros, gentil, travailleur.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nmédecin ; professeur ; pêcheur ; maçon.\n\nExercice 2\npetit, mince, méchant, paresseux.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 2",
+     "text": "Exercice 1 : Métiers\nAssocie : soigne les malades – enseigne – pêche – construit des maisons → maçon, médecin, pêcheur, professeur.\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nmédecin ; professeur ; pêcheur ; maçon.\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 2",
+     "text": "Exercice 1 : Interview\nPrépare quatre questions pour interviewer un artisan.\n\nExercice 2 : Adjectifs\nDonne le contraire : grand, gros, gentil, travailleur.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nQuel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?\n\nExercice 2\npetit, mince, méchant, paresseux.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 2",
+     "text": "Exercice 1 : Métiers\nAssocie : soigne les malades – enseigne – pêche – construit des maisons → maçon, médecin, pêcheur, professeur.\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nmédecin ; professeur ; pêcheur ; maçon.\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 2",
+     "text": "Exercice 1 : Interview\nPrépare quatre questions pour interviewer un artisan.\n\nExercice 2 : Adjectifs\nDonne le contraire : grand, gros, gentil, travailleur.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nQuel est votre métier ? Depuis quand l'exercez-vous ? Quels outils utilisez-vous ? Aimez-vous votre métier ?\n\nExercice 2\npetit, mince, méchant, paresseux.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 2",
+     "text": "Exercice 1 : Texte\nLis : « Mon oncle est pêcheur à Nouadhibou. Il part tôt le matin avec sa pirogue et revient le soir. » a) Quel est le métier de l'oncle ? b) Que fait-il le matin ?\n\nExercice 2 : Animal\nDécris un chameau en 4 phrases.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\na) Pêcheur. b) Il part en mer avec sa pirogue.\n\nExercice 2\nLe chameau est un grand animal. Il a une bosse, de longues pattes et un long cou. Il supporte la soif. Il transporte les marchandises.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 2",
+     "text": "Exercice 1 : Métiers\nAssocie : soigne les malades – enseigne – pêche – construit des maisons → maçon, médecin, pêcheur, professeur.\n\nExercice 2 : Portrait\nFais le portrait physique et moral de ton meilleur ami.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nmédecin ; professeur ; pêcheur ; maçon.\n\nExercice 2\nTaille, cheveux, yeux, vêtements ; qualités : gentil, courageux, drôle…\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Décrire un lieu / un paysage se trouvant dans son environnement",
+    "Décrire un objet (outil, appareil, matière) dans son environnement",
+    "Décrire et comparer quelques métiers de son environnement",
+    "Activité parascolaire"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Paysage\nDécris un paysage de ton pays (désert, fleuve ou mer).\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nLieu, éléments (dunes, palmiers, eau), couleurs, impression personnelle.\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Matières\nDe quelle matière sont faits : une table, une fenêtre, une marmite ?\n\nExercice 3 : Texte\nCompare en 4 phrases le métier d'agriculteur et celui d'éleveur.",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\nbois ; verre ; métal (aluminium).\n\nExercice 3\nRessemblances (travail en plein air, dépend de la pluie) ; différences (cultures / troupeaux)."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Matières\nDe quelle matière sont faits : une table, une fenêtre, une marmite ?\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\nbois ; verre ; métal (aluminium).\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Texte\nCompare en 4 phrases le métier d'agriculteur et celui d'éleveur.",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nRessemblances (travail en plein air, dépend de la pluie) ; différences (cultures / troupeaux)."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Objet\nDécris ton cartable : forme, couleur, matière, utilité.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\nMon cartable est rectangulaire, bleu, en tissu ; il sert à porter mes livres.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Paysage\nDécris un paysage de ton pays (désert, fleuve ou mer).\n\nExercice 2 : Matières\nDe quelle matière sont faits : une table, une fenêtre, une marmite ?\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nLieu, éléments (dunes, palmiers, eau), couleurs, impression personnelle.\n\nExercice 2\nbois ; verre ; métal (aluminium).\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adjectifs du paysage\nTrouve trois adjectifs pour décrire le désert.\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Texte\nCompare en 4 phrases le métier d'agriculteur et celui d'éleveur.",
+     "solution": "Exercice 1\nvaste, sec, silencieux, doré…\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nRessemblances (travail en plein air, dépend de la pluie) ; différences (cultures / troupeaux)."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adjectifs du paysage\nTrouve trois adjectifs pour décrire le désert.\n\nExercice 2 : Objet\nDécris ton cartable : forme, couleur, matière, utilité.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nvaste, sec, silencieux, doré…\n\nExercice 2\nMon cartable est rectangulaire, bleu, en tissu ; il sert à porter mes livres.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Objet\nDécris ton cartable : forme, couleur, matière, utilité.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\nMon cartable est rectangulaire, bleu, en tissu ; il sert à porter mes livres.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adjectifs du paysage\nTrouve trois adjectifs pour décrire le désert.\n\nExercice 2 : Matières\nDe quelle matière sont faits : une table, une fenêtre, une marmite ?\n\nExercice 3 : Comparer\nCompare avec plus… que, moins… que : le travail du maçon / du bureau (fatigant).",
+     "solution": "Exercice 1\nvaste, sec, silencieux, doré…\n\nExercice 2\nbois ; verre ; métal (aluminium).\n\nExercice 3\nLe travail du maçon est plus fatigant que le travail de bureau."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adjectifs du paysage\nTrouve trois adjectifs pour décrire le désert.\n\nExercice 2 : Objet\nDécris ton cartable : forme, couleur, matière, utilité.\n\nExercice 3 : Comparer\nCompare avec plus… que, moins… que : le travail du maçon / du bureau (fatigant).",
+     "solution": "Exercice 1\nvaste, sec, silencieux, doré…\n\nExercice 2\nMon cartable est rectangulaire, bleu, en tissu ; il sert à porter mes livres.\n\nExercice 3\nLe travail du maçon est plus fatigant que le travail de bureau."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Paysage\nDécris un paysage de ton pays (désert, fleuve ou mer).\n\nExercice 2 : Objet\nDécris ton cartable : forme, couleur, matière, utilité.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nLieu, éléments (dunes, palmiers, eau), couleurs, impression personnelle.\n\nExercice 2\nMon cartable est rectangulaire, bleu, en tissu ; il sert à porter mes livres.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Paysage\nDécris un paysage de ton pays (désert, fleuve ou mer).\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nLieu, éléments (dunes, palmiers, eau), couleurs, impression personnelle.\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adjectifs du paysage\nTrouve trois adjectifs pour décrire le désert.\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Exercice 1\nvaste, sec, silencieux, doré…\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adjectifs du paysage\nTrouve trois adjectifs pour décrire le désert.\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nvaste, sec, silencieux, doré…\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Paysage\nDécris un paysage de ton pays (désert, fleuve ou mer).\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Texte\nCompare en 4 phrases le métier d'agriculteur et celui d'éleveur.",
+     "solution": "Exercice 1\nLieu, éléments (dunes, palmiers, eau), couleurs, impression personnelle.\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nRessemblances (travail en plein air, dépend de la pluie) ; différences (cultures / troupeaux)."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Objet\nDécris ton cartable : forme, couleur, matière, utilité.\n\nExercice 3 : Comparer\nCompare avec plus… que, moins… que : le travail du maçon / du bureau (fatigant).",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\nMon cartable est rectangulaire, bleu, en tissu ; il sert à porter mes livres.\n\nExercice 3\nLe travail du maçon est plus fatigant que le travail de bureau."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Localiser\nComplète avec : au loin, à gauche, au milieu, au premier plan.\n\nExercice 2 : Devinette\nÉcris une devinette sur un objet de la maison.\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nAu premier plan, il y a un puits ; au milieu, des tentes ; au loin, des dunes.\n\nExercice 2\n« Je suis rond, je donne l'heure. Qui suis-je ? » — une horloge.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    }
+   ]
+  }
+ ]
+}

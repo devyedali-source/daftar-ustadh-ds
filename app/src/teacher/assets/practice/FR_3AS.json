@@ -1,0 +1,932 @@
+{
+ "subject": "FR",
+ "level": "3AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Semaine 10",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Décrire un phénomène de société : mode musicale, vestimentaire, coiffure (langage des jeunes)",
+    "Décrire un fait de société : cérémonie de mariage, de circoncision, baptême…",
+    "Décrire un phénomène naturel : inondation, invasion de criquets « pèlerins »…",
+    "Décrire des métiers en les comparant : enseignant, médecin, pilote, informaticien, architecte"
+   ],
+   "items": [
+    {
+     "title": "Imparfait / passé simple",
+     "text": "Complète : Il (pleuvoir) quand soudain la porte (s'ouvrir).",
+     "solution": "pleuvait ; s'ouvrit."
+    },
+    {
+     "title": "Inondation",
+     "text": "Décris une inondation : causes, déroulement, conséquences.",
+     "solution": "Fortes pluies ; montée des eaux ; maisons détruites, routes coupées ; aide aux sinistrés."
+    },
+    {
+     "title": "Cause / conséquence",
+     "text": "Relie : Il a beaucoup plu. Le fleuve a débordé. (donc, c'est pourquoi)",
+     "solution": "Il a beaucoup plu, c'est pourquoi le fleuve a débordé."
+    },
+    {
+     "title": "Connecteurs",
+     "text": "Complète avec d'abord, ensuite, enfin, mais : ___ j'ai révisé, ___ j'ai fait mes exercices, ___ je me suis reposé.",
+     "solution": "D'abord ; ensuite ; enfin."
+    },
+    {
+     "title": "Accord du participe",
+     "text": "Accorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).",
+     "solution": "arrivées ; écrites."
+    },
+    {
+     "title": "Temps du récit",
+     "text": "Conjugue au passé simple : il (prendre), ils (venir), elle (marcher).",
+     "solution": "il prit, ils vinrent, elle marcha."
+    },
+    {
+     "title": "Métier rêvé",
+     "text": "Quel métier parmi enseignant, médecin, pilote, informaticien, architecte choisirais-tu ? Justifie en le comparant à un autre.",
+     "solution": "Choix + deux raisons + comparaison avec plus/moins/aussi… que."
+    },
+    {
+     "title": "Langage des jeunes",
+     "text": "Cite deux expressions utilisées par les jeunes et explique-les.",
+     "solution": "Réponse personnelle avec explication du sens et du contexte."
+    },
+    {
+     "title": "Comparer",
+     "text": "Compare le métier de médecin et celui d'enseignant (formation, rôle, difficultés).",
+     "solution": "Ressemblances : service public, études longues ; différences : soins / enseignement."
+    },
+    {
+     "title": "Mode",
+     "text": "Décris en 6 lignes la mode vestimentaire des jeunes de ton quartier.",
+     "solution": "Vêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis."
+    },
+    {
+     "title": "Discours indirect",
+     "text": "Mets au discours indirect : Il dit : « Je viendrai demain. »",
+     "solution": "Il dit qu'il viendra le lendemain / demain."
+    },
+    {
+     "title": "Baptême",
+     "text": "Raconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Récit chronologique au passé composé avec connecteurs."
+    },
+    {
+     "title": "Champ lexical",
+     "text": "Relève cinq mots du champ lexical de la fête.",
+     "solution": "invités, musique, danse, repas, cadeaux, joie…"
+    },
+    {
+     "title": "Argumenter",
+     "text": "Donne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.",
+     "solution": "Thèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion."
+    },
+    {
+     "title": "Criquets",
+     "text": "Explique en 5 lignes les dégâts causés par l'invasion des criquets pèlerins.",
+     "solution": "Ils dévorent les cultures et les pâturages, provoquent la famine ; lutte par traitements."
+    },
+    {
+     "title": "Comparer deux fêtes",
+     "text": "Compare en 5 lignes un mariage en ville et un mariage à la campagne.",
+     "solution": "Ressemblances (joie, invités, repas) ; différences (lieu, dépenses, musique, durée)."
+    },
+    {
+     "title": "Subordonnée",
+     "text": "Relie avec une conjonction : Il est resté à la maison. Il était malade.",
+     "solution": "Il est resté à la maison parce qu'il était malade."
+    },
+    {
+     "title": "Cérémonie",
+     "text": "Décris une cérémonie de mariage traditionnelle en Mauritanie.",
+     "solution": "Préparatifs, lieu, invités, tenues, musique, repas, impressions."
+    },
+    {
+     "title": "Coiffure",
+     "text": "Décris une coiffure à la mode chez les jeunes et explique pourquoi elle plaît.",
+     "solution": "Description précise (forme, longueur, accessoires) ; raisons : imitation des stars, originalité, influence des réseaux."
+    },
+    {
+     "title": "Comparatifs",
+     "text": "Complète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "plus."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Décrire un phénomène de société : mode musicale, vestimentaire, coiffure (langage des jeunes)",
+    "Décrire un fait de société : cérémonie de mariage, de circoncision, baptême…",
+    "Décrire un phénomène naturel : inondation, invasion de criquets « pèlerins »…",
+    "Décrire des métiers en les comparant : enseignant, médecin, pilote, informaticien, architecte"
+   ],
+   "items": [
+    {
+     "title": "Discours indirect",
+     "text": "Mets au discours indirect : Il dit : « Je viendrai demain. »",
+     "solution": "Il dit qu'il viendra le lendemain / demain."
+    },
+    {
+     "title": "Accord du participe",
+     "text": "Accorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).",
+     "solution": "arrivées ; écrites."
+    },
+    {
+     "title": "Argumenter",
+     "text": "Donne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.",
+     "solution": "Thèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion."
+    },
+    {
+     "title": "Mode",
+     "text": "Décris en 6 lignes la mode vestimentaire des jeunes de ton quartier.",
+     "solution": "Vêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis."
+    },
+    {
+     "title": "Champ lexical",
+     "text": "Relève cinq mots du champ lexical de la fête.",
+     "solution": "invités, musique, danse, repas, cadeaux, joie…"
+    },
+    {
+     "title": "Cérémonie",
+     "text": "Décris une cérémonie de mariage traditionnelle en Mauritanie.",
+     "solution": "Préparatifs, lieu, invités, tenues, musique, repas, impressions."
+    },
+    {
+     "title": "Comparer deux fêtes",
+     "text": "Compare en 5 lignes un mariage en ville et un mariage à la campagne.",
+     "solution": "Ressemblances (joie, invités, repas) ; différences (lieu, dépenses, musique, durée)."
+    },
+    {
+     "title": "Criquets",
+     "text": "Explique en 5 lignes les dégâts causés par l'invasion des criquets pèlerins.",
+     "solution": "Ils dévorent les cultures et les pâturages, provoquent la famine ; lutte par traitements."
+    },
+    {
+     "title": "Cause / conséquence",
+     "text": "Relie : Il a beaucoup plu. Le fleuve a débordé. (donc, c'est pourquoi)",
+     "solution": "Il a beaucoup plu, c'est pourquoi le fleuve a débordé."
+    },
+    {
+     "title": "Coiffure",
+     "text": "Décris une coiffure à la mode chez les jeunes et explique pourquoi elle plaît.",
+     "solution": "Description précise (forme, longueur, accessoires) ; raisons : imitation des stars, originalité, influence des réseaux."
+    },
+    {
+     "title": "Connecteurs",
+     "text": "Complète avec d'abord, ensuite, enfin, mais : ___ j'ai révisé, ___ j'ai fait mes exercices, ___ je me suis reposé.",
+     "solution": "D'abord ; ensuite ; enfin."
+    },
+    {
+     "title": "Langage des jeunes",
+     "text": "Cite deux expressions utilisées par les jeunes et explique-les.",
+     "solution": "Réponse personnelle avec explication du sens et du contexte."
+    },
+    {
+     "title": "Inondation",
+     "text": "Décris une inondation : causes, déroulement, conséquences.",
+     "solution": "Fortes pluies ; montée des eaux ; maisons détruites, routes coupées ; aide aux sinistrés."
+    },
+    {
+     "title": "Comparatifs",
+     "text": "Complète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "plus."
+    },
+    {
+     "title": "Imparfait / passé simple",
+     "text": "Complète : Il (pleuvoir) quand soudain la porte (s'ouvrir).",
+     "solution": "pleuvait ; s'ouvrit."
+    },
+    {
+     "title": "Comparer",
+     "text": "Compare le métier de médecin et celui d'enseignant (formation, rôle, difficultés).",
+     "solution": "Ressemblances : service public, études longues ; différences : soins / enseignement."
+    },
+    {
+     "title": "Subordonnée",
+     "text": "Relie avec une conjonction : Il est resté à la maison. Il était malade.",
+     "solution": "Il est resté à la maison parce qu'il était malade."
+    },
+    {
+     "title": "Métier rêvé",
+     "text": "Quel métier parmi enseignant, médecin, pilote, informaticien, architecte choisirais-tu ? Justifie en le comparant à un autre.",
+     "solution": "Choix + deux raisons + comparaison avec plus/moins/aussi… que."
+    },
+    {
+     "title": "Temps du récit",
+     "text": "Conjugue au passé simple : il (prendre), ils (venir), elle (marcher).",
+     "solution": "il prit, ils vinrent, elle marcha."
+    },
+    {
+     "title": "Baptême",
+     "text": "Raconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Récit chronologique au passé composé avec connecteurs."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Décrire les modes de vie des différentes communautés humaines vivant dans son environnement (l'alimentation, l'habillement, l'habitat)",
+    "Activité parascolaire",
+    "Projet pédagogique",
+    "Module 2 : Raconter des événements fictifs (ou imaginaires)",
+    "Raconter des événements de la vie réelle (personnelle ou sociale)"
+   ],
+   "items": [
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Comparer",
+     "text": "Compare la vie en ville et la vie à la campagne.",
+     "solution": "Ville : services, bruit ; campagne : calme, nature, moins de services."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Souvenir",
+     "text": "Raconte un souvenir marquant de ton enfance.",
+     "solution": "Contexte, événement, émotions, leçon tirée ; temps du passé."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Suite de récit",
+     "text": "Continue le récit : « Ce soir-là, le vent soufflait fort quand un bruit étrange… »",
+     "solution": "Récit au passé simple et imparfait, péripéties, dénouement."
+    },
+    {
+     "title": "Modes de vie",
+     "text": "Décris le mode de vie nomade : habitat, alimentation, habillement.",
+     "solution": "Tente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa)."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Schéma narratif",
+     "text": "Cite les cinq étapes du schéma narratif.",
+     "solution": "Situation initiale, élément perturbateur, péripéties, dénouement, situation finale."
+    },
+    {
+     "title": "Imparfait / passé simple",
+     "text": "Complète : Il (pleuvoir) quand soudain la porte (s'ouvrir).",
+     "solution": "pleuvait ; s'ouvrit."
+    },
+    {
+     "title": "Champ lexical",
+     "text": "Relève cinq mots du champ lexical de la fête.",
+     "solution": "invités, musique, danse, repas, cadeaux, joie…"
+    },
+    {
+     "title": "Baptême",
+     "text": "Raconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Récit chronologique au passé composé avec connecteurs."
+    },
+    {
+     "title": "Accord du participe",
+     "text": "Accorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).",
+     "solution": "arrivées ; écrites."
+    },
+    {
+     "title": "Connecteurs",
+     "text": "Complète avec d'abord, ensuite, enfin, mais : ___ j'ai révisé, ___ j'ai fait mes exercices, ___ je me suis reposé.",
+     "solution": "D'abord ; ensuite ; enfin."
+    },
+    {
+     "title": "Métier rêvé",
+     "text": "Quel métier parmi enseignant, médecin, pilote, informaticien, architecte choisirais-tu ? Justifie en le comparant à un autre.",
+     "solution": "Choix + deux raisons + comparaison avec plus/moins/aussi… que."
+    },
+    {
+     "title": "Cérémonie",
+     "text": "Décris une cérémonie de mariage traditionnelle en Mauritanie.",
+     "solution": "Préparatifs, lieu, invités, tenues, musique, repas, impressions."
+    },
+    {
+     "title": "Inondation",
+     "text": "Décris une inondation : causes, déroulement, conséquences.",
+     "solution": "Fortes pluies ; montée des eaux ; maisons détruites, routes coupées ; aide aux sinistrés."
+    },
+    {
+     "title": "Criquets",
+     "text": "Explique en 5 lignes les dégâts causés par l'invasion des criquets pèlerins.",
+     "solution": "Ils dévorent les cultures et les pâturages, provoquent la famine ; lutte par traitements."
+    },
+    {
+     "title": "Discours indirect",
+     "text": "Mets au discours indirect : Il dit : « Je viendrai demain. »",
+     "solution": "Il dit qu'il viendra le lendemain / demain."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Raconter des faits historiques ou scientifiques",
+    "Raconter l'histoire de certains métiers dans son environnement",
+    "Activité parascolaire",
+    "Présentation du projet"
+   ],
+   "items": [
+    {
+     "title": "Fait historique",
+     "text": "Raconte en 6 lignes l'indépendance de la Mauritanie (28 novembre 1960).",
+     "solution": "Contexte, date, acteurs, signification ; récit chronologique au passé."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Indicateurs de temps",
+     "text": "Relève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.",
+     "solution": "En 1960 ; après plusieurs années ; ensuite ; enfin."
+    },
+    {
+     "title": "Invitation",
+     "text": "Rédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Destinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Découverte",
+     "text": "Raconte une découverte scientifique que tu connais.",
+     "solution": "Le savant, l'époque, la découverte, son importance."
+    },
+    {
+     "title": "Avant / maintenant",
+     "text": "Compare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).",
+     "solution": "Autrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement."
+    },
+    {
+     "title": "Histoire d'un métier",
+     "text": "Raconte l'évolution du métier de forgeron.",
+     "solution": "Autrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Exposé",
+     "text": "Prépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Introduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Temps du récit",
+     "text": "Conjugue au passé simple : il (prendre), ils (venir), elle (marcher).",
+     "solution": "il prit, ils vinrent, elle marcha."
+    },
+    {
+     "title": "Mode",
+     "text": "Décris en 6 lignes la mode vestimentaire des jeunes de ton quartier.",
+     "solution": "Vêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis."
+    },
+    {
+     "title": "Suite de récit",
+     "text": "Continue le récit : « Ce soir-là, le vent soufflait fort quand un bruit étrange… »",
+     "solution": "Récit au passé simple et imparfait, péripéties, dénouement."
+    },
+    {
+     "title": "Champ lexical",
+     "text": "Relève cinq mots du champ lexical de la fête.",
+     "solution": "invités, musique, danse, repas, cadeaux, joie…"
+    },
+    {
+     "title": "Coiffure",
+     "text": "Décris une coiffure à la mode chez les jeunes et explique pourquoi elle plaît.",
+     "solution": "Description précise (forme, longueur, accessoires) ; raisons : imitation des stars, originalité, influence des réseaux."
+    },
+    {
+     "title": "Schéma narratif",
+     "text": "Cite les cinq étapes du schéma narratif.",
+     "solution": "Situation initiale, élément perturbateur, péripéties, dénouement, situation finale."
+    },
+    {
+     "title": "Argumenter",
+     "text": "Donne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.",
+     "solution": "Thèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion."
+    },
+    {
+     "title": "Discours indirect",
+     "text": "Mets au discours indirect : Il dit : « Je viendrai demain. »",
+     "solution": "Il dit qu'il viendra le lendemain / demain."
+    },
+    {
+     "title": "Langage des jeunes",
+     "text": "Cite deux expressions utilisées par les jeunes et explique-les.",
+     "solution": "Réponse personnelle avec explication du sens et du contexte."
+    },
+    {
+     "title": "Cause / conséquence",
+     "text": "Relie : Il a beaucoup plu. Le fleuve a débordé. (donc, c'est pourquoi)",
+     "solution": "Il a beaucoup plu, c'est pourquoi le fleuve a débordé."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 36",
+   "term": 3,
+   "kind": "final",
+   "title": "Révision générale de l'année",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Décrire un phénomène de société : mode musicale, vestimentaire, coiffure (langage des jeunes)",
+    "Décrire un fait de société : cérémonie de mariage, de circoncision, baptême…",
+    "Décrire un phénomène naturel : inondation, invasion de criquets « pèlerins »…",
+    "Décrire des métiers en les comparant : enseignant, médecin, pilote, informaticien, architecte",
+    "Décrire les modes de vie des différentes communautés humaines vivant dans son environnement (l'alimentation, l'habillement, l'habitat)",
+    "Activité parascolaire",
+    "Projet pédagogique",
+    "Module 2 : Raconter des événements fictifs (ou imaginaires)",
+    "Raconter des événements de la vie réelle (personnelle ou sociale)"
+   ],
+   "items": [
+    {
+     "title": "Temps du récit",
+     "text": "Conjugue au passé simple : il (prendre), ils (venir), elle (marcher).",
+     "solution": "il prit, ils vinrent, elle marcha."
+    },
+    {
+     "title": "Projet de classe",
+     "text": "Présente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Titre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Langage des jeunes",
+     "text": "Cite deux expressions utilisées par les jeunes et explique-les.",
+     "solution": "Réponse personnelle avec explication du sens et du contexte."
+    },
+    {
+     "title": "Compte rendu",
+     "text": "Rédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Date et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Modes de vie",
+     "text": "Décris le mode de vie nomade : habitat, alimentation, habillement.",
+     "solution": "Tente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa)."
+    },
+    {
+     "title": "Comparer",
+     "text": "Compare le métier de médecin et celui d'enseignant (formation, rôle, difficultés).",
+     "solution": "Ressemblances : service public, études longues ; différences : soins / enseignement."
+    },
+    {
+     "title": "Subordonnée",
+     "text": "Relie avec une conjonction : Il est resté à la maison. Il était malade.",
+     "solution": "Il est resté à la maison parce qu'il était malade."
+    },
+    {
+     "title": "Fait historique",
+     "text": "Raconte en 6 lignes l'indépendance de la Mauritanie (28 novembre 1960).",
+     "solution": "Contexte, date, acteurs, signification ; récit chronologique au passé."
+    },
+    {
+     "title": "Cause / conséquence",
+     "text": "Relie : Il a beaucoup plu. Le fleuve a débordé. (donc, c'est pourquoi)",
+     "solution": "Il a beaucoup plu, c'est pourquoi le fleuve a débordé."
+    },
+    {
+     "title": "Connecteurs",
+     "text": "Complète avec d'abord, ensuite, enfin, mais : ___ j'ai révisé, ___ j'ai fait mes exercices, ___ je me suis reposé.",
+     "solution": "D'abord ; ensuite ; enfin."
+    },
+    {
+     "title": "Avant / maintenant",
+     "text": "Compare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).",
+     "solution": "Autrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement."
+    },
+    {
+     "title": "Cérémonie",
+     "text": "Décris une cérémonie de mariage traditionnelle en Mauritanie.",
+     "solution": "Préparatifs, lieu, invités, tenues, musique, repas, impressions."
+    },
+    {
+     "title": "Affiche",
+     "text": "Pour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).",
+     "solution": "Titre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine."
+    },
+    {
+     "title": "Suite de récit",
+     "text": "Continue le récit : « Ce soir-là, le vent soufflait fort quand un bruit étrange… »",
+     "solution": "Récit au passé simple et imparfait, péripéties, dénouement."
+    },
+    {
+     "title": "Baptême",
+     "text": "Raconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Récit chronologique au passé composé avec connecteurs."
+    },
+    {
+     "title": "Mode",
+     "text": "Décris en 6 lignes la mode vestimentaire des jeunes de ton quartier.",
+     "solution": "Vêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis."
+    },
+    {
+     "title": "Comparatifs",
+     "text": "Complète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "plus."
+    },
+    {
+     "title": "Criquets",
+     "text": "Explique en 5 lignes les dégâts causés par l'invasion des criquets pèlerins.",
+     "solution": "Ils dévorent les cultures et les pâturages, provoquent la famine ; lutte par traitements."
+    },
+    {
+     "title": "Accord du participe",
+     "text": "Accorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).",
+     "solution": "arrivées ; écrites."
+    },
+    {
+     "title": "Coiffure",
+     "text": "Décris une coiffure à la mode chez les jeunes et explique pourquoi elle plaît.",
+     "solution": "Description précise (forme, longueur, accessoires) ; raisons : imitation des stars, originalité, influence des réseaux."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Semaine 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du trimestre 1",
+   "covers": [
+    "Activités de remédiation, de révision…",
+    "Décrire un phénomène de société : mode musicale, vestimentaire, coiffure (langage des jeunes)",
+    "Décrire un fait de société : cérémonie de mariage, de circoncision, baptême…",
+    "Décrire un phénomène naturel : inondation, invasion de criquets « pèlerins »…",
+    "Décrire des métiers en les comparant : enseignant, médecin, pilote, informaticien, architecte"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord du participe\nAccorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).\n\nExercice 2 : Comparer deux fêtes\nCompare en 5 lignes un mariage en ville et un mariage à la campagne.\n\nExercice 3 : Cause / conséquence\nRelie : Il a beaucoup plu. Le fleuve a débordé. (donc, c'est pourquoi)",
+     "solution": "Exercice 1\narrivées ; écrites.\n\nExercice 2\nRessemblances (joie, invités, repas) ; différences (lieu, dépenses, musique, durée).\n\nExercice 3\nIl a beaucoup plu, c'est pourquoi le fleuve a débordé."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 1",
+     "text": "Exercice 1 : Subordonnée\nRelie avec une conjonction : Il est resté à la maison. Il était malade.\n\nExercice 2 : Mode\nDécris en 6 lignes la mode vestimentaire des jeunes de ton quartier.\n\nExercice 3 : Comparatifs\nComplète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "Exercice 1\nIl est resté à la maison parce qu'il était malade.\n\nExercice 2\nVêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis.\n\nExercice 3\nplus."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 1",
+     "text": "Exercice 1 : Connecteurs\nComplète avec d'abord, ensuite, enfin, mais : ___ j'ai révisé, ___ j'ai fait mes exercices, ___ je me suis reposé.\n\nExercice 2 : Argumenter\nDonne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.\n\nExercice 3 : Comparatifs\nComplète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "Exercice 1\nD'abord ; ensuite ; enfin.\n\nExercice 2\nThèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion.\n\nExercice 3\nplus."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait / passé simple\nComplète : Il (pleuvoir) quand soudain la porte (s'ouvrir).\n\nExercice 2 : Langage des jeunes\nCite deux expressions utilisées par les jeunes et explique-les.\n\nExercice 3 : Comparer\nCompare le métier de médecin et celui d'enseignant (formation, rôle, difficultés).",
+     "solution": "Exercice 1\npleuvait ; s'ouvrit.\n\nExercice 2\nRéponse personnelle avec explication du sens et du contexte.\n\nExercice 3\nRessemblances : service public, études longues ; différences : soins / enseignement."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord du participe\nAccorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).\n\nExercice 2 : Langage des jeunes\nCite deux expressions utilisées par les jeunes et explique-les.\n\nExercice 3 : Baptême\nRaconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Exercice 1\narrivées ; écrites.\n\nExercice 2\nRéponse personnelle avec explication du sens et du contexte.\n\nExercice 3\nRécit chronologique au passé composé avec connecteurs."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait / passé simple\nComplète : Il (pleuvoir) quand soudain la porte (s'ouvrir).\n\nExercice 2 : Argumenter\nDonne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.\n\nExercice 3 : Champ lexical\nRelève cinq mots du champ lexical de la fête.",
+     "solution": "Exercice 1\npleuvait ; s'ouvrit.\n\nExercice 2\nThèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion.\n\nExercice 3\ninvités, musique, danse, repas, cadeaux, joie…"
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 1",
+     "text": "Exercice 1 : Discours indirect\nMets au discours indirect : Il dit : « Je viendrai demain. »\n\nExercice 2 : Coiffure\nDécris une coiffure à la mode chez les jeunes et explique pourquoi elle plaît.\n\nExercice 3 : Baptême\nRaconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Exercice 1\nIl dit qu'il viendra le lendemain / demain.\n\nExercice 2\nDescription précise (forme, longueur, accessoires) ; raisons : imitation des stars, originalité, influence des réseaux.\n\nExercice 3\nRécit chronologique au passé composé avec connecteurs."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait / passé simple\nComplète : Il (pleuvoir) quand soudain la porte (s'ouvrir).\n\nExercice 2 : Mode\nDécris en 6 lignes la mode vestimentaire des jeunes de ton quartier.\n\nExercice 3 : Comparatifs\nComplète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "Exercice 1\npleuvait ; s'ouvrit.\n\nExercice 2\nVêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis.\n\nExercice 3\nplus."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 1",
+     "text": "Exercice 1 : Connecteurs\nComplète avec d'abord, ensuite, enfin, mais : ___ j'ai révisé, ___ j'ai fait mes exercices, ___ je me suis reposé.\n\nExercice 2 : Argumenter\nDonne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.\n\nExercice 3 : Baptême\nRaconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Exercice 1\nD'abord ; ensuite ; enfin.\n\nExercice 2\nThèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion.\n\nExercice 3\nRécit chronologique au passé composé avec connecteurs."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord du participe\nAccorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).\n\nExercice 2 : Mode\nDécris en 6 lignes la mode vestimentaire des jeunes de ton quartier.\n\nExercice 3 : Comparatifs\nComplète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "Exercice 1\narrivées ; écrites.\n\nExercice 2\nVêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis.\n\nExercice 3\nplus."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 1",
+     "text": "Exercice 1 : Temps du récit\nConjugue au passé simple : il (prendre), ils (venir), elle (marcher).\n\nExercice 2 : Langage des jeunes\nCite deux expressions utilisées par les jeunes et explique-les.\n\nExercice 3 : Criquets\nExplique en 5 lignes les dégâts causés par l'invasion des criquets pèlerins.",
+     "solution": "Exercice 1\nil prit, ils vinrent, elle marcha.\n\nExercice 2\nRéponse personnelle avec explication du sens et du contexte.\n\nExercice 3\nIls dévorent les cultures et les pâturages, provoquent la famine ; lutte par traitements."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 1",
+     "text": "Exercice 1 : Discours indirect\nMets au discours indirect : Il dit : « Je viendrai demain. »\n\nExercice 2 : Mode\nDécris en 6 lignes la mode vestimentaire des jeunes de ton quartier.\n\nExercice 3 : Champ lexical\nRelève cinq mots du champ lexical de la fête.",
+     "solution": "Exercice 1\nIl dit qu'il viendra le lendemain / demain.\n\nExercice 2\nVêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis.\n\nExercice 3\ninvités, musique, danse, repas, cadeaux, joie…"
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 1",
+     "text": "Exercice 1 : Subordonnée\nRelie avec une conjonction : Il est resté à la maison. Il était malade.\n\nExercice 2 : Mode\nDécris en 6 lignes la mode vestimentaire des jeunes de ton quartier.\n\nExercice 3 : Cause / conséquence\nRelie : Il a beaucoup plu. Le fleuve a débordé. (donc, c'est pourquoi)",
+     "solution": "Exercice 1\nIl est resté à la maison parce qu'il était malade.\n\nExercice 2\nVêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis.\n\nExercice 3\nIl a beaucoup plu, c'est pourquoi le fleuve a débordé."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 1",
+     "text": "Exercice 1 : Accord du participe\nAccorde : Les filles sont (arrivé). Les lettres que j'ai (écrit).\n\nExercice 2 : Mode\nDécris en 6 lignes la mode vestimentaire des jeunes de ton quartier.\n\nExercice 3 : Baptême\nRaconte un baptême auquel tu as assisté, au passé composé.",
+     "solution": "Exercice 1\narrivées ; écrites.\n\nExercice 2\nVêtements, couleurs, coiffure, influences (télévision, réseaux), ton avis.\n\nExercice 3\nRécit chronologique au passé composé avec connecteurs."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 1",
+     "text": "Exercice 1 : Connecteurs\nComplète avec d'abord, ensuite, enfin, mais : ___ j'ai révisé, ___ j'ai fait mes exercices, ___ je me suis reposé.\n\nExercice 2 : Langage des jeunes\nCite deux expressions utilisées par les jeunes et explique-les.\n\nExercice 3 : Métier rêvé\nQuel métier parmi enseignant, médecin, pilote, informaticien, architecte choisirais-tu ? Justifie en le comparant à un autre.",
+     "solution": "Exercice 1\nD'abord ; ensuite ; enfin.\n\nExercice 2\nRéponse personnelle avec explication du sens et du contexte.\n\nExercice 3\nChoix + deux raisons + comparaison avec plus/moins/aussi… que."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 1",
+     "text": "Exercice 1 : Discours indirect\nMets au discours indirect : Il dit : « Je viendrai demain. »\n\nExercice 2 : Langage des jeunes\nCite deux expressions utilisées par les jeunes et explique-les.\n\nExercice 3 : Métier rêvé\nQuel métier parmi enseignant, médecin, pilote, informaticien, architecte choisirais-tu ? Justifie en le comparant à un autre.",
+     "solution": "Exercice 1\nIl dit qu'il viendra le lendemain / demain.\n\nExercice 2\nRéponse personnelle avec explication du sens et du contexte.\n\nExercice 3\nChoix + deux raisons + comparaison avec plus/moins/aussi… que."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait / passé simple\nComplète : Il (pleuvoir) quand soudain la porte (s'ouvrir).\n\nExercice 2 : Langage des jeunes\nCite deux expressions utilisées par les jeunes et explique-les.\n\nExercice 3 : Comparatifs\nComplète : Le pilote voyage ___ que l'architecte. (plus)",
+     "solution": "Exercice 1\npleuvait ; s'ouvrit.\n\nExercice 2\nRéponse personnelle avec explication du sens et du contexte.\n\nExercice 3\nplus."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 1",
+     "text": "Exercice 1 : Temps du récit\nConjugue au passé simple : il (prendre), ils (venir), elle (marcher).\n\nExercice 2 : Argumenter\nDonne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.\n\nExercice 3 : Champ lexical\nRelève cinq mots du champ lexical de la fête.",
+     "solution": "Exercice 1\nil prit, ils vinrent, elle marcha.\n\nExercice 2\nThèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion.\n\nExercice 3\ninvités, musique, danse, repas, cadeaux, joie…"
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 1",
+     "text": "Exercice 1 : Imparfait / passé simple\nComplète : Il (pleuvoir) quand soudain la porte (s'ouvrir).\n\nExercice 2 : Argumenter\nDonne ton avis sur l'influence des réseaux sociaux sur la mode avec deux arguments.\n\nExercice 3 : Inondation\nDécris une inondation : causes, déroulement, conséquences.",
+     "solution": "Exercice 1\npleuvait ; s'ouvrit.\n\nExercice 2\nThèse ; argument 1 + exemple ; argument 2 + exemple ; conclusion.\n\nExercice 3\nFortes pluies ; montée des eaux ; maisons détruites, routes coupées ; aide aux sinistrés."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 1",
+     "text": "Exercice 1 : Subordonnée\nRelie avec une conjonction : Il est resté à la maison. Il était malade.\n\nExercice 2 : Coiffure\nDécris une coiffure à la mode chez les jeunes et explique pourquoi elle plaît.\n\nExercice 3 : Métier rêvé\nQuel métier parmi enseignant, médecin, pilote, informaticien, architecte choisirais-tu ? Justifie en le comparant à un autre.",
+     "solution": "Exercice 1\nIl est resté à la maison parce qu'il était malade.\n\nExercice 2\nDescription précise (forme, longueur, accessoires) ; raisons : imitation des stars, originalité, influence des réseaux.\n\nExercice 3\nChoix + deux raisons + comparaison avec plus/moins/aussi… que."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du trimestre 2",
+   "covers": [
+    "Décrire les modes de vie des différentes communautés humaines vivant dans son environnement (l'alimentation, l'habillement, l'habitat)",
+    "Activité parascolaire",
+    "Projet pédagogique",
+    "Module 2 : Raconter des événements fictifs (ou imaginaires)",
+    "Raconter des événements de la vie réelle (personnelle ou sociale)"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 2",
+     "text": "Exercice 1 : Comparer\nCompare la vie en ville et la vie à la campagne.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nVille : services, bruit ; campagne : calme, nature, moins de services.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 2",
+     "text": "Exercice 1 : Comparer\nCompare la vie en ville et la vie à la campagne.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Souvenir\nRaconte un souvenir marquant de ton enfance.",
+     "solution": "Exercice 1\nVille : services, bruit ; campagne : calme, nature, moins de services.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nContexte, événement, émotions, leçon tirée ; temps du passé."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 2",
+     "text": "Exercice 1 : Modes de vie\nDécris le mode de vie nomade : habitat, alimentation, habillement.\n\nExercice 2 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.\n\nExercice 3 : Souvenir\nRaconte un souvenir marquant de ton enfance.",
+     "solution": "Exercice 1\nTente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa).\n\nExercice 2\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu.\n\nExercice 3\nContexte, événement, émotions, leçon tirée ; temps du passé."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 2 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 2\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 2 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.\n\nExercice 3 : Souvenir\nRaconte un souvenir marquant de ton enfance.",
+     "solution": "Exercice 1\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 2\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu.\n\nExercice 3\nContexte, événement, émotions, leçon tirée ; temps du passé."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 2",
+     "text": "Exercice 1 : Comparer\nCompare la vie en ville et la vie à la campagne.\n\nExercice 2 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.\n\nExercice 3 : Schéma narratif\nCite les cinq étapes du schéma narratif.",
+     "solution": "Exercice 1\nVille : services, bruit ; campagne : calme, nature, moins de services.\n\nExercice 2\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu.\n\nExercice 3\nSituation initiale, élément perturbateur, péripéties, dénouement, situation finale."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Souvenir\nRaconte un souvenir marquant de ton enfance.",
+     "solution": "Exercice 1\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nContexte, événement, émotions, leçon tirée ; temps du passé."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 2",
+     "text": "Exercice 1 : Modes de vie\nDécris le mode de vie nomade : habitat, alimentation, habillement.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Schéma narratif\nCite les cinq étapes du schéma narratif.",
+     "solution": "Exercice 1\nTente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa).\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nSituation initiale, élément perturbateur, péripéties, dénouement, situation finale."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 2",
+     "text": "Exercice 1 : Comparer\nCompare la vie en ville et la vie à la campagne.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Schéma narratif\nCite les cinq étapes du schéma narratif.",
+     "solution": "Exercice 1\nVille : services, bruit ; campagne : calme, nature, moins de services.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nSituation initiale, élément perturbateur, péripéties, dénouement, situation finale."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Suite de récit\nContinue le récit : « Ce soir-là, le vent soufflait fort quand un bruit étrange… »",
+     "solution": "Exercice 1\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nRécit au passé simple et imparfait, péripéties, dénouement."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 2",
+     "text": "Exercice 1 : Comparer\nCompare la vie en ville et la vie à la campagne.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Suite de récit\nContinue le récit : « Ce soir-là, le vent soufflait fort quand un bruit étrange… »",
+     "solution": "Exercice 1\nVille : services, bruit ; campagne : calme, nature, moins de services.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nRécit au passé simple et imparfait, péripéties, dénouement."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 2",
+     "text": "Exercice 1 : Modes de vie\nDécris le mode de vie nomade : habitat, alimentation, habillement.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Schéma narratif\nCite les cinq étapes du schéma narratif.",
+     "solution": "Exercice 1\nTente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa).\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nSituation initiale, élément perturbateur, péripéties, dénouement, situation finale."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 2",
+     "text": "Exercice 1 : Modes de vie\nDécris le mode de vie nomade : habitat, alimentation, habillement.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Souvenir\nRaconte un souvenir marquant de ton enfance.",
+     "solution": "Exercice 1\nTente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa).\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nContexte, événement, émotions, leçon tirée ; temps du passé."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 2",
+     "text": "Exercice 1 : Modes de vie\nDécris le mode de vie nomade : habitat, alimentation, habillement.\n\nExercice 2 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nTente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa).\n\nExercice 2\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 2",
+     "text": "Exercice 1 : Comparer\nCompare la vie en ville et la vie à la campagne.\n\nExercice 2 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nVille : services, bruit ; campagne : calme, nature, moins de services.\n\nExercice 2\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 2",
+     "text": "Exercice 1 : Modes de vie\nDécris le mode de vie nomade : habitat, alimentation, habillement.\n\nExercice 2 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.\n\nExercice 3 : Suite de récit\nContinue le récit : « Ce soir-là, le vent soufflait fort quand un bruit étrange… »",
+     "solution": "Exercice 1\nTente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa).\n\nExercice 2\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu.\n\nExercice 3\nRécit au passé simple et imparfait, péripéties, dénouement."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 2",
+     "text": "Exercice 1 : Modes de vie\nDécris le mode de vie nomade : habitat, alimentation, habillement.\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nTente, déplacements avec les troupeaux, lait et viande, vêtements amples (boubou, melhfa).\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 2 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.\n\nExercice 3 : Suite de récit\nContinue le récit : « Ce soir-là, le vent soufflait fort quand un bruit étrange… »",
+     "solution": "Exercice 1\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 2\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation.\n\nExercice 3\nRécit au passé simple et imparfait, péripéties, dénouement."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 2",
+     "text": "Exercice 1 : Comparer\nCompare la vie en ville et la vie à la campagne.\n\nExercice 2 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.\n\nExercice 3 : Souvenir\nRaconte un souvenir marquant de ton enfance.",
+     "solution": "Exercice 1\nVille : services, bruit ; campagne : calme, nature, moins de services.\n\nExercice 2\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature.\n\nExercice 3\nContexte, événement, émotions, leçon tirée ; temps du passé."
+    }
+   ]
+  },
+  {
+   "week": "Semaine 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Raconter des faits historiques ou scientifiques",
+    "Raconter l'histoire de certains métiers dans son environnement",
+    "Activité parascolaire",
+    "Présentation du projet"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fait historique\nRaconte en 6 lignes l'indépendance de la Mauritanie (28 novembre 1960).\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nContexte, date, acteurs, signification ; récit chronologique au passé.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Avant / maintenant\nCompare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nAutrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Avant / maintenant\nCompare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nAutrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Histoire d'un métier\nRaconte l'évolution du métier de forgeron.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nAutrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Découverte\nRaconte une découverte scientifique que tu connais.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nLe savant, l'époque, la découverte, son importance.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Découverte\nRaconte une découverte scientifique que tu connais.\n\nExercice 2 : Histoire d'un métier\nRaconte l'évolution du métier de forgeron.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nLe savant, l'époque, la découverte, son importance.\n\nExercice 2\nAutrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Histoire d'un métier\nRaconte l'évolution du métier de forgeron.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nAutrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Découverte\nRaconte une découverte scientifique que tu connais.\n\nExercice 2 : Avant / maintenant\nCompare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nLe savant, l'époque, la découverte, son importance.\n\nExercice 2\nAutrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Découverte\nRaconte une découverte scientifique que tu connais.\n\nExercice 2 : Histoire d'un métier\nRaconte l'évolution du métier de forgeron.\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nLe savant, l'époque, la découverte, son importance.\n\nExercice 2\nAutrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fait historique\nRaconte en 6 lignes l'indépendance de la Mauritanie (28 novembre 1960).\n\nExercice 2 : Histoire d'un métier\nRaconte l'évolution du métier de forgeron.\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nContexte, date, acteurs, signification ; récit chronologique au passé.\n\nExercice 2\nAutrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fait historique\nRaconte en 6 lignes l'indépendance de la Mauritanie (28 novembre 1960).\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nContexte, date, acteurs, signification ; récit chronologique au passé.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Histoire d'un métier\nRaconte l'évolution du métier de forgeron.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nAutrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Affiche\nPour la journée de l'arbre, rédige une affiche (titre, slogan, date, lieu, deux consignes).\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nTitre : Plantons ensemble ! ; slogan : « Un arbre, une vie » ; date, lieu ; consignes : apporter un plant, arroser chaque semaine.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Avant / maintenant\nCompare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).\n\nExercice 3 : Exposé\nPrépare le plan d'un exposé sur un métier de ton choix.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nAutrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement.\n\nExercice 3\nIntroduction ; présentation du métier ; formation ; avantages et inconvénients ; conclusion."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fait historique\nRaconte en 6 lignes l'indépendance de la Mauritanie (28 novembre 1960).\n\nExercice 2 : Histoire d'un métier\nRaconte l'évolution du métier de forgeron.\n\nExercice 3 : Projet de classe\nPrésente en 6 lignes le projet de ta classe : titre, objectif, étapes, rôle de chacun.",
+     "solution": "Exercice 1\nContexte, date, acteurs, signification ; récit chronologique au passé.\n\nExercice 2\nAutrefois outils simples et forge traditionnelle ; aujourd'hui machines ; transmission familiale.\n\nExercice 3\nTitre clair ; objectif ; 3 étapes (préparation, réalisation, présentation) ; répartition des tâches ; résultat attendu."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Indicateurs de temps\nRelève les indicateurs de temps : En 1960, après plusieurs années, ensuite, enfin.\n\nExercice 2 : Avant / maintenant\nCompare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).\n\nExercice 3 : Compte rendu\nRédige en 6 lignes le compte rendu d'une sortie scolaire.",
+     "solution": "Exercice 1\nEn 1960 ; après plusieurs années ; ensuite ; enfin.\n\nExercice 2\nAutrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement.\n\nExercice 3\nDate et lieu, participants, déroulement, ce que vous avez appris, appréciation."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Découverte\nRaconte une découverte scientifique que tu connais.\n\nExercice 2 : Avant / maintenant\nCompare l'imprimerie d'hier et d'aujourd'hui en 4 phrases (imparfait / présent).\n\nExercice 3 : Invitation\nRédige une invitation à la fête de fin d'année de l'école.",
+     "solution": "Exercice 1\nLe savant, l'époque, la découverte, son importance.\n\nExercice 2\nAutrefois on imprimait à la main… aujourd'hui les machines numériques impriment rapidement.\n\nExercice 3\nDestinataire, objet, date, heure, lieu, programme, formule de politesse, signature."
+    }
+   ]
+  }
+ ]
+}
