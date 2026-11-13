@@ -470,7 +470,6 @@ class MainActivity : AppCompatActivity() {
                         ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.kashf_share), "application/pdf")
                     }
                 }
-                var askNameSends by remember { mutableStateOf(false) }
                 var askNameBlank by remember { mutableStateOf(false) }
                 var askNameDoc by remember { mutableStateOf<DocumentEntity?>(null) }
 
@@ -512,7 +511,6 @@ class MainActivity : AppCompatActivity() {
                         ShareHelper.share(this@MainActivity, bytes, fileName, getString(R.string.doc_pdf), "application/pdf")
                     }
                 }
-                var sendConfirm by remember { mutableStateOf<String?>(null) }
 
                 /** عناوين سجل نتائج مادة: ثنائي اللغة دائمًا (عربي وفرنسي)، مثل الكشوف الرسمية، أيًّا كانت لغة الواجهة. */
                 fun recordLabels(c: ClassEntity, owner: com.elyedali.daftarustadh.data.InstitutionEntity,
@@ -561,26 +559,6 @@ class MainActivity : AppCompatActivity() {
                         )
                         return RecordPart(record, list, recordLabels(c, owner, subject, name),
                             g.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.value } })
-                }
-
-                suspend fun buildRecordPdf(c: ClassEntity, code: String, name: String, uptoTerm: Int? = null): Pair<ByteArray, String>? {
-                        val p = buildRecordPart(c, code, name, uptoTerm) ?: return null
-                        val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeRecord(p.record) }
-                        // الصفحة الثانية من الملف: سجل المادة نفسه بأسماء الطلاب ونقاطهم، يُقرأ ويُطبع في الإدارة
-                        return withContext(Dispatchers.Default) {
-                            ShareHelper.wrapPdf(this@MainActivity, bytes, TransferCodec.recordFileName(p.record),
-                                extra = { doc, no -> TeacherRecordPdf.drawInto(doc, no, p.students, p.labels, p.grades) })
-                        }
-                }
-
-                /** إرسال سجل الأستاذ لمادة: ملف يحمل نتائجه وطابعه، يُرفع عند المكلّف بالقسم. */
-                fun sendRecord(c: ClassEntity, code: String, name: String) {
-                    scope.launch {
-                        val (bytes, fileName) = buildRecordPdf(c, code, name) ?: return@launch
-                        val file = java.io.File(ShareHelper.freshShareDir(this@MainActivity), fileName).apply { writeBytes(bytes) }
-                        ShareHelper.shareFiles(this@MainActivity, listOf(file), "application/pdf", getString(R.string.share_record),
-                            getString(R.string.dsq_caption))
-                    }
                 }
 
                 /**
@@ -2179,12 +2157,6 @@ class MainActivity : AppCompatActivity() {
                                     } else gradeDao.saveTeacherSubject(TeacherSubjectEntity(c.id, code, mode))
                                 }
                             },
-                            onSendRecord = if (gradesFromAdmin) null else {
-                                {
-                                    val n = teacherName
-                                    if (n.isNullOrBlank()) { askNameFor = code; askNameSends = true } else sendConfirm = code
-                                }
-                            },
                             onPrintRecord = { blank ->
                                 // الإدارة: اسم الأستاذ المسند للمادة في الجدول الزمني؛ الأستاذ: اسمه
                                 val n = if (gradesFromAdmin) ttAssignments.firstOrNull { it.classId == c.id && it.subjectCode == code }?.teacherName
@@ -2484,7 +2456,7 @@ class MainActivity : AppCompatActivity() {
                 askNameFor?.let { code ->
                     var typed by remember { mutableStateOf("") }
                     AlertDialog(
-                        onDismissRequest = { askNameFor = null; askNameSends = false; askNameAbsence = false },
+                        onDismissRequest = { askNameFor = null; askNameAbsence = false },
                         title = { Text(stringResource(R.string.teacher_name)) },
                         text = {
                             androidx.compose.foundation.layout.Column {
@@ -2501,7 +2473,6 @@ class MainActivity : AppCompatActivity() {
                                 when {
                                     askNameAbsence -> { askNameAbsence = false; currentClass?.let { sendAbsence(it, code, n) } }
                                     doc != null -> { askNameDoc = null; exportDocument(doc, n) }
-                                    askNameSends -> { askNameSends = false; sendConfirm = code }
                                     else -> currentClass?.let { printRecord(it, code, n, askNameBlank) }
                                 }
                             }) { Text(stringResource(R.string.save)) }
@@ -2529,39 +2500,6 @@ class MainActivity : AppCompatActivity() {
                         confirmButton = {},
                         dismissButton = { TextButton(onClick = { docSubjectChoice = null }) { Text(stringResource(R.string.cancel)) } }
                     )
-                }
-
-                sendConfirm?.let { code ->
-                    val c = currentClass
-                    val n = teacherName
-                    // لا يُرسل السجل إلا مكتملًا: آخر فصل بدأ رصده يجب أن يكتمل لكل الطلاب (وكذا الفصول قبله)
-                    val byStudent = classGrades.filter { it.subjectCode == code }.groupBy { it.studentId }
-                        .mapValues { e -> e.value.associate { it.slot to it.value } }
-                    val started = (3 downTo 1).firstOrNull { t ->
-                        byStudent.values.any { g -> GradeSlot.testsOf(t, g).isNotEmpty() || g[GradeSlot.exam(t)] != null }
-                    } ?: 0
-                    val incomplete = if (started == 0) students else students.filter { st ->
-                        (1..started).any { t -> !GradeMath.isComplete(t, byStudent[st.id].orEmpty()) }
-                    }
-                    if (c == null || n.isNullOrBlank()) {
-                        LaunchedEffect(code) { sendConfirm = null }
-                    } else if (students.isNotEmpty() && incomplete.isEmpty()) {
-                        LaunchedEffect(code) { sendConfirm = null; sendRecord(c, code, n) }
-                    } else {
-                        AlertDialog(
-                            onDismissRequest = { sendConfirm = null },
-                            title = { Text(stringResource(R.string.send_blocked_title)) },
-                            text = {
-                                Text(
-                                    if (started == 0) stringResource(R.string.send_blocked_empty)
-                                    else stringResource(R.string.send_blocked_list, started, incomplete.size,
-                                        incomplete.sortedBy { it.rollNumber }.take(15).joinToString(com.elyedali.daftarustadh.ui.listSep()) { "${it.rollNumber}. ${it.nameAr.ifBlank { it.nameFr }}" } +
-                                            if (incomplete.size > 15) " …" else "")
-                                )
-                            },
-                            confirmButton = { TextButton(onClick = { sendConfirm = null }) { Text(stringResource(R.string.ok)) } }
-                        )
-                    }
                 }
 
                 if (batchWorking) AlertDialog(

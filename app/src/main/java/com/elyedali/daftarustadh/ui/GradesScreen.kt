@@ -71,7 +71,6 @@ fun GradesScreen(
     /** true = سجل فارغ بـ70 خانة بلا أسماء؛ false = سجل بأسماء طلاب القسم وخانات فارغة. */
     onPrintRecord: (blank: Boolean) -> Unit,
     /** null عند الإدارة: إرسال السجل خاص بالأستاذ. */
-    onSendRecord: (() -> Unit)? = null,
     /** الفصل الذي تُفتح عليه الصفحة (من الإدخال السريع عند الإدارة). */
     initialTerm: Int = 1,
     onBack: () -> Unit
@@ -103,11 +102,6 @@ fun GradesScreen(
                         androidx.compose.material3.DropdownMenuItem(text = { Text(stringResource(R.string.print_blank_70)) },
                             onClick = { printMenu = false; onPrintRecord(true) })
                     }
-                }
-            }
-            if (onSendRecord != null) {
-                androidx.compose.material3.Button(onClick = onSendRecord, modifier = Modifier.fillMaxWidth()) {
-                    Text(stringResource(R.string.send_record))
                 }
             }
             TabRow(selectedTabIndex = term - 1) {
