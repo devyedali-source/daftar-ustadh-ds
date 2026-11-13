@@ -138,13 +138,19 @@ class RecordImporter(private val db: DaftarDatabase) {
             (S.isTest(slot) && (term >= 3 || S.testTerm(slot) == term))
         val existing = gradeDao.listSubject(c.id, file.subjectCode).groupBy { it.studentId }
             .mapValues { e -> e.value.associateBy { it.slot } }
+        // نقطة صحّحتها الإدارة بيدها بعد رفع السجل السابق (مثل الغائب بتبرير من 0 إلى 10):
+        // لا يمحوها سجل يصل بعد ذلك من الأستاذ، حتى لو أعاد إرسال سجل الفصل نفسه
+        // (السجل السابق من أستاذ؛ أما الإدخال اليدوي في الإدارة فيحلّ محله سجل الأستاذ حين يصل)
+        val prevReceived = gradeDao.getRecord(c.id, file.subjectCode)?.takeIf { it.teacherName.isNotBlank() }?.receivedAt
+        fun editedByAdmin(g: GradeEntity?) = g != null && prevReceived != null && g.updatedAt > prevReceived
         file.students.forEach { s ->
             val sid = target(s.id) ?: return@forEach
             val mine = existing[sid].orEmpty()
             // خانات هذا الفصل: تحلّ محلّ السابق (وتُفرَّغ إن لم تكن في السجل)
-            (mine.keys + S.exam(term)).filter { owns(it) && it !in s.grades }.forEach { slot -> gradeDao.clear(sid, file.subjectCode, slot) }
+            (mine.keys + S.exam(term)).filter { owns(it) && it !in s.grades && !editedByAdmin(mine[it]) }
+                .forEach { slot -> gradeDao.clear(sid, file.subjectCode, slot) }
             s.grades.forEach { (slot, v) ->
-                if (owns(slot) || mine[slot] == null)
+                if ((owns(slot) && !editedByAdmin(mine[slot])) || mine[slot] == null)
                     gradeDao.save(GradeEntity(sid, c.id, file.subjectCode, slot, v, now, s.marks[slot]))
             }
         }

@@ -79,15 +79,16 @@ object ReportCalc {
                     testsShown = if (term <= 2) (1..term).flatMap { t -> GradeSlot.testsOf(t, m).map { it.second } }
                         .joinToString("/ ") { GradeMath.format(it) } else "",
                     average = avg,
-                    total = avg?.let { GradeMath.round2(it * sub.coefficient) },
+                    total = avg?.let { java.math.BigDecimal.valueOf(it).multiply(java.math.BigDecimal(sub.coefficient)).setScale(2, java.math.RoundingMode.HALF_UP).toDouble() },
                     teacherName = rec?.teacherName.orEmpty()
                 )
             }
-            val total = GradeMath.round2(lines.sumOf { it.total ?: 0.0 })
+            val total = lines.fold(java.math.BigDecimal.ZERO) { a, l -> a + java.math.BigDecimal.valueOf(l.total ?: 0.0) }
+                .setScale(2, java.math.RoundingMode.HALF_UP).toDouble()
             Triple(s, lines, total)
         }
         // المعدل العام مقرّبًا لرقمين كما يُطبع، والرتبة عليه هو نفسه: المتساويان في الكشف متساويان في الرتبة
-        val averages = partial.map { (s, _, total) -> s.id to (if (coefSum == 0) 0.0 else GradeMath.round2(total / coefSum)) }.toMap()
+        val averages = partial.map { (s, _, total) -> s.id to (if (coefSum == 0) 0.0 else GradeMath.div2(java.math.BigDecimal.valueOf(total), coefSum)) }.toMap()
         val rounded = averages
         return partial.map { (s, lines, total) ->
             val mine = rounded.getValue(s.id)
