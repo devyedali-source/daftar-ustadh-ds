@@ -717,9 +717,9 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="gn_message">Bonjour,\nNous vous informons que l\'élève %1$s de la classe %2$s a été absent(e) %3$s.\nL\'administration de %4$s</string>
     <string name="ps_cards">Cartes d\'élèves de toutes les classes</string>
     <string name="ps_cards_note">Dix cartes par page : nom, RIM, classe, N° d\'appel et photo (%1$d élèves, dont %2$d avec photo).</string>
-    <string name="bu_button">Importer plusieurs registres à la fois</string>
+    <string name="bu_button">Importer les fichiers des enseignants</string>
     <string name="bu_working">Import et vérification des fichiers…</string>
-    <string name="bu_title">Résultat de l\'import</string>
+    <string name="bu_title">Résultat de l\'import des fichiers des enseignants</string>
     <string name="bu_imported">%1$d registres importés :</string>
     <string name="bu_duplicates">%1$d fichiers en double ignorés (le plus récent de chaque registre est retenu).</string>
     <string name="bu_rejected">%1$d fichiers non importés :</string>
@@ -729,7 +729,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="bu_missing_n">incomplet pour %1$d</string>
     <string name="bu_complete">Les résultats du %1$s sont complets dans toutes les classes et matières.</string>
     <string name="bu_still_missing">Il manque encore pour le %1$s :</string>
-    <string name="bu_hint">💡 Chaque enseignant envoie un seul fichier contenant les registres de toutes ses classes et matières. Beaucoup de fichiers reçus sur WhatsApp ? Touchez « Importer plusieurs registres » et sélectionnez-les tous d\'un coup dans le dossier « WhatsApp Documents » (appui long sur le premier, puis les autres), sans lire leurs noms. Les doublons sont ignorés, le plus récent de chaque matière est retenu, et un fichier qui n\'est pas de vos classes est refusé avec la raison. Ensuite s\'affiche seulement ce qui manque, ou « complets ». Moyennes et totaux sont automatiques. Si vous corrigez une note à la main (ex. 0 → 10 pour une absence justifiée), votre correction est conservée même si l\'enseignant renvoie son fichier.</string>
+    <string name="bu_hint">💡 Chaque enseignant envoie un seul fichier avec les notes de toutes ses classes et matières : vous recevez autant de fichiers que d\'enseignants. Touchez « Importer les fichiers des enseignants » et sélectionnez-les tous d\'un coup dans le dossier « WhatsApp Documents » (appui long sur le premier, puis les autres), ou ouvrez le fichier de chaque enseignant seul. Les doublons sont ignorés, le plus récent de chaque enseignant est retenu, et ce qui n\'est pas de vos classes est refusé avec la raison. Ensuite s\'affiche seulement ce qui manque, ou « complets ». Moyennes et totaux sont automatiques. Si vous corrigez une note à la main (ex. 0 → 10 pour une absence justifiée), votre correction est conservée même si l\'enseignant renvoie son fichier.</string>
     <string name="qg_pick_term">Trimestre</string>
     <string name="qg_pick_subject">Matière</string>
     <string name="qg_pick_slot">Case (devoir ou composition)</string>
@@ -779,7 +779,7 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="reg_with_names">Avec les noms des élèves</string>
     <string name="reg_blank">Vierge</string>
     <string name="reg_no_students">Aucun élève dans cette classe : enregistrez-les dans « Élèves » pour imprimer le registre avec leurs noms.</string>
-    <string name="bu_other_teacher">registre de %1$s, mais la matière est attribuée à %2$s dans l\'emploi du temps. Non enregistré : s\'il est correct, ouvrez-le seul.</string>
+    <string name="bu_other_teacher">registre de %1$s, mais la matière est attribuée à %2$s dans l\'emploi du temps. Non enregistré : corrigez l\'attribution dans l\'emploi du temps si c\'est bien cet enseignant, puis importez à nouveau son fichier.</string>
     <string name="plan_tab">Progression</string>
     <string name="plan_title">Progression annuelle</string>
     <string name="plan_holiday">Vacances</string>
@@ -924,4 +924,5 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="about_upd_refs">Les références nécessaires</string>
     <string name="about_no_app">Aucune application sur le téléphone pour ouvrir ce lien.</string>
     <string name="plan_level_in_progress">Le programme de ce niveau est en cours de préparation</string>
+    <string name="record_single_refused">Ce registre d\'une seule matière vient d\'une ancienne version de l\'application enseignant et n\'est pas importé. Demandez à l\'enseignant de mettre à jour son application et d\'envoyer son fichier complet avec « Envoyer les notes du trimestre ».</string>
 </resources>

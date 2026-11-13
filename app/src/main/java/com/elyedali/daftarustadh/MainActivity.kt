@@ -333,7 +333,6 @@ class MainActivity : AppCompatActivity() {
                 val drawerState = rememberDrawerState(DrawerValue.Closed)
                 val documentsFlow = remember(classId) { classId?.let { documentDao.observeByClass(it) } ?: flowOf(emptyList()) }
                 val documents by documentsFlow.collectAsState(initial = emptyList())
-                var recordCheck by remember { mutableStateOf<RecordCheck.Ready?>(null) }
                 var absenceCheck by remember { mutableStateOf<com.elyedali.daftarustadh.transfer.AbsenceCheck.Ready?>(null) }
                 val absenceSessionsFlow = remember(classId) { classId?.let { absenceDao.observeSessions(it) } ?: flowOf(emptyList()) }
                 val absenceSessions by absenceSessionsFlow.collectAsState(initial = emptyList())
@@ -998,17 +997,8 @@ class MainActivity : AppCompatActivity() {
                             when (any) {
                                 // ملف سجلات الأستاذ كلها: يُرفع مثل رفع الملفات دفعة واحدة (فحص كل سجل ثم ملخص)
                                 is com.elyedali.daftarustadh.transfer.RecordsBundle -> { processRecordsBatchRef?.invoke(listOf(uri)); null }
-                                is RecordFile -> when (val chk = recordImporter.check(any)) {
-                                    is RecordCheck.Ready -> if (AppRole.isAdmin && chk.schoolClass.id in expiredClasses)
-                                        FileResult.Message(getString(R.string.act_expired_grades))
-                                        else if (!subjectOfLevel(chk.schoolClass, any.subjectCode))
-                                        FileResult.Message(getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name))
-                                        else { recordCheck = chk; null }
-                                    is RecordCheck.WrongClass -> FileResult.Message(
-                                        getString(R.string.record_wrong_class, chk.file.schoolName, chk.file.className, chk.file.wilaya, chk.file.schoolYear)
-                                    )
-                                    is RecordCheck.NotManaged -> FileResult.Message(getString(R.string.record_not_managed, chk.file.className))
-                                }
+                                // سجل مادة واحدة (من نسخة قديمة من تطبيق الأستاذ): لا يُرفع؛ الإدارة ترفع ملف الأستاذ الكامل فقط
+                                is RecordFile -> FileResult.Message(getString(R.string.record_single_refused))
                                 is com.elyedali.daftarustadh.transfer.AbsenceFile -> when (val chk = absenceImporter.check(any)) {
                                     is com.elyedali.daftarustadh.transfer.AbsenceCheck.Ready -> { absenceCheck = chk; null }
                                     is com.elyedali.daftarustadh.transfer.AbsenceCheck.WrongClass -> FileResult.Message(
@@ -1098,10 +1088,10 @@ class MainActivity : AppCompatActivity() {
                                 // ملف سجلات الأستاذ كلها: كل سجل داخله يُفحص كأنه ملف مستقل
                                 val recs: List<RecordFile>? = when (decoded) {
                                     is com.elyedali.daftarustadh.transfer.RecordsBundle -> decoded.records
-                                    is RecordFile -> listOf(decoded)
                                     else -> null
                                 }
-                                if (recs == null) rejected += "$name — " + getString(R.string.bu_not_record)
+                                if (decoded is RecordFile) rejected += "$name — " + getString(R.string.record_single_refused)
+                                else if (recs == null) rejected += "$name — " + getString(R.string.bu_not_record)
                                 else for (any in recs) {
                                     val label = if (recs.size > 1) "$name (${any.className} — ${if (isFrUi) any.subjectNameFr else any.subjectNameAr})" else name
                                     when (val chk = recordImporter.check(any)) {
@@ -2536,52 +2526,6 @@ class MainActivity : AppCompatActivity() {
                             }
                         },
                         confirmButton = { TextButton(onClick = { batchResult = null }) { Text(stringResource(R.string.ok)) } }
-                    )
-                }
-
-                recordCheck?.let { chk ->
-                    val isFr = androidx.compose.ui.platform.LocalConfiguration.current.locales[0].language == "fr"
-                    val subjectName = if (isFr) chk.file.subjectNameFr else chk.file.subjectNameAr
-                    AlertDialog(
-                        onDismissRequest = { recordCheck = null },
-                        title = { Text(stringResource(R.string.record_check_title, subjectName, chk.file.className)) },
-                        text = {
-                            androidx.compose.foundation.layout.Column(
-                                Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState())
-                            ) {
-                                Text(stringResource(R.string.record_teacher, chk.file.teacherName))
-                                // الأستاذ المعيّن لهذه المادة في هذا القسم (الجدول الزمني) يختلف عن صاحب السجل؟
-                                val assigned = ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == chk.file.subjectCode }?.teacherName
-                                if (!assigned.isNullOrBlank() && !sameTeacher(assigned, chk.file.teacherName))
-                                    Text(stringResource(R.string.record_other_teacher, assigned), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
-                                Text(stringResource(R.string.record_matched, chk.matched))
-                                // القسم أُعيد إنشاؤه أو أُعيد تثبيت التطبيق بعد إرسال الملف للأستاذ: المطابقة بأرقام النداء
-                                if (chk.older) Text(stringResource(R.string.record_older), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
-                                if (chk.byOrder) Text(stringResource(R.string.record_by_order, chk.matched), color = androidx.compose.ui.graphics.Color(0xFFE65100))
-                                else if (chk.classByName) Text(stringResource(R.string.record_by_name), color = androidx.compose.ui.graphics.Color(0xFFE65100))
-                                if (chk.byRoll > 0) Text(stringResource(R.string.record_by_roll, chk.byRoll), color = androidx.compose.ui.graphics.Color(0xFFE65100))
-                                if (chk.unknownStudents.isNotEmpty())
-                                    Text(stringResource(R.string.record_unknown, chk.unknownStudents.joinToString(com.elyedali.daftarustadh.ui.listSep())), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
-                                if (chk.missingStudents.isNotEmpty())
-                                    Text(stringResource(R.string.record_missing, chk.missingStudents.joinToString(com.elyedali.daftarustadh.ui.listSep())), color = androidx.compose.material3.MaterialTheme.colorScheme.error)
-                                if (chk.alreadyUploaded != null || chk.hasGrades)
-                                    Text(stringResource(R.string.record_replace))
-                            }
-                        },
-                        confirmButton = {
-                            TextButton(enabled = chk.matched > 0, onClick = {
-                                recordCheck = null
-                                scope.launch {
-                                    recordImporter.apply(chk)
-                                    classId = chk.schoolClass.id
-                                    fromTeaching = false
-                                    hubTab = 1
-                                    screen = Screen.ADMIN_CLASS
-                                    fileResult = FileResult.Message(getString(R.string.record_done, subjectName, chk.file.className))
-                                }
-                            }) { Text(stringResource(R.string.record_upload)) }
-                        },
-                        dismissButton = { TextButton(onClick = { recordCheck = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
 
