@@ -1,0 +1,948 @@
+{
+ "subject": "TI",
+ "level": "1AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Leçon 7",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Ordinateur, unité centrale et souris",
+    "Clavier",
+    "Imprimante, moyens de stockage",
+    "Notion du système d'exploitation, gestion du bureau",
+    "Gestion de dossiers et de fenêtres"
+   ],
+   "items": [
+    {
+     "title": "Fenêtre",
+     "text": "Cite les trois boutons en haut à droite d'une fenêtre et leur rôle.",
+     "solution": "Réduire, Agrandir/Restaurer, Fermer."
+    },
+    {
+     "title": "Organisation",
+     "text": "Propose une arborescence de dossiers pour ranger tes travaux de 1AS.",
+     "solution": "1AS → Maths, Français, TI… ; chaque matière → Cours, Exercices."
+    },
+    {
+     "title": "Calcul",
+     "text": "Une clé USB de 8 Go contient déjà 5 Go. Peut-on y copier un dossier de 2 500 Mo ?",
+     "solution": "Espace libre = 3 Go ≈ 3 000 Mo > 2 500 Mo : oui."
+    },
+    {
+     "title": "Raccourcis",
+     "text": "Que font les raccourcis Ctrl+C, Ctrl+V, Ctrl+Z ?",
+     "solution": "Copier, coller, annuler."
+    },
+    {
+     "title": "Copier / déplacer",
+     "text": "Quelle différence entre copier et déplacer un fichier ? Donne les raccourcis.",
+     "solution": "Copier garde l'original et crée une copie (Ctrl+C puis Ctrl+V) ; déplacer change l'emplacement sans garder l'original (Ctrl+X puis Ctrl+V)."
+    },
+    {
+     "title": "Périphériques",
+     "text": "Classe en périphériques d'entrée et de sortie : clavier, écran, souris, imprimante, scanner, haut-parleurs.",
+     "solution": "Entrée : clavier, souris, scanner ; Sortie : écran, imprimante, haut-parleurs."
+    },
+    {
+     "title": "Renommer",
+     "text": "Comment renommer un dossier ?",
+     "solution": "Clic droit sur le dossier → Renommer → taper le nouveau nom → Entrée (ou touche F2)."
+    },
+    {
+     "title": "Unité centrale",
+     "text": "Cite trois composants de l'unité centrale et le rôle de chacun.",
+     "solution": "Processeur : exécute les instructions ; mémoire vive (RAM) : stocke temporairement les données ; disque dur : stocke les fichiers ; carte mère : relie les composants."
+    },
+    {
+     "title": "Système d'exploitation",
+     "text": "Qu'est-ce qu'un système d'exploitation ? Cite deux exemples.",
+     "solution": "Logiciel de base qui gère le matériel et permet d'utiliser les programmes ; Windows, Linux, Android, macOS."
+    },
+    {
+     "title": "Stockage",
+     "text": "Classe du plus petit au plus grand : Go, Ko, To, Mo.",
+     "solution": "Ko < Mo < Go < To."
+    },
+    {
+     "title": "Imprimantes",
+     "text": "Cite deux types d'imprimantes et un avantage de chacun.",
+     "solution": "Jet d'encre : bon marché, couleurs ; laser : rapide, économique pour beaucoup de pages."
+    },
+    {
+     "title": "Le bureau",
+     "text": "Cite quatre éléments du bureau de Windows.",
+     "solution": "Icônes, barre des tâches, bouton Démarrer, fond d'écran, zone de notification."
+    },
+    {
+     "title": "Dossier",
+     "text": "Décris les étapes pour créer un dossier nommé « Devoirs » sur le bureau.",
+     "solution": "Clic droit sur le bureau → Nouveau → Dossier → taper « Devoirs » → Entrée."
+    },
+    {
+     "title": "Supports",
+     "text": "Cite quatre moyens de stockage.",
+     "solution": "Disque dur, clé USB, carte mémoire, CD/DVD, stockage en ligne (cloud)."
+    },
+    {
+     "title": "La souris",
+     "text": "Cite trois actions possibles avec la souris et leur usage.",
+     "solution": "Clic gauche : sélectionner ; double-clic : ouvrir ; clic droit : menu contextuel ; glisser-déposer : déplacer."
+    },
+    {
+     "title": "Corbeille",
+     "text": "À quoi sert la corbeille ? Comment récupérer un fichier supprimé ?",
+     "solution": "Elle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer."
+    },
+    {
+     "title": "Démarrage",
+     "text": "Mets dans l'ordre : ouvrir un logiciel – allumer l'écran – appuyer sur le bouton de l'unité centrale – attendre l'affichage du bureau.",
+     "solution": "Allumer l'écran → appuyer sur le bouton de l'unité centrale → attendre le bureau → ouvrir un logiciel."
+    },
+    {
+     "title": "Touches",
+     "text": "Donne le rôle des touches : Entrée, Retour arrière (←), Maj (Shift), Verr. Maj, Barre d'espace.",
+     "solution": "Entrée : valider / nouvelle ligne ; Retour arrière : effacer à gauche ; Maj : majuscule temporaire ; Verr. Maj : majuscules permanentes ; Espace : insérer un espace."
+    },
+    {
+     "title": "Situation",
+     "text": "Un élève veut écrire « É » majuscule et le symbole « @ ». Comment fait-il ?",
+     "solution": "« É » : Verr. Maj puis la touche é (selon le clavier) ; « @ » : Alt Gr + touche 0 (ou à) sur clavier AZERTY."
+    },
+    {
+     "title": "Éteindre",
+     "text": "Pourquoi ne faut-il pas éteindre l'ordinateur en le débranchant ?",
+     "solution": "Risque de perte de données et d'endommager le système ; il faut passer par Démarrer → Arrêter."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 10",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Notion de système d'information",
+    "Notion de connexion à un réseau et programme informatique"
+   ],
+   "items": [
+    {
+     "title": "Programme",
+     "text": "Qu'est-ce qu'un programme informatique ?",
+     "solution": "Suite d'instructions écrites pour que l'ordinateur réalise une tâche."
+    },
+    {
+     "title": "Exemple",
+     "text": "Donne un exemple de système d'information dans ton établissement.",
+     "solution": "La gestion des notes et des absences des élèves."
+    },
+    {
+     "title": "Définition",
+     "text": "Qu'est-ce qu'un système d'information ?",
+     "solution": "Ensemble organisé de ressources (personnes, matériel, logiciels, données) pour collecter, stocker, traiter et diffuser l'information."
+    },
+    {
+     "title": "Réseau",
+     "text": "Qu'est-ce qu'un réseau informatique ? Donne un exemple.",
+     "solution": "Ensemble d'ordinateurs reliés pour partager des ressources ; Internet, réseau de la salle informatique."
+    },
+    {
+     "title": "Dossier",
+     "text": "Décris les étapes pour créer un dossier nommé « Devoirs » sur le bureau.",
+     "solution": "Clic droit sur le bureau → Nouveau → Dossier → taper « Devoirs » → Entrée."
+    },
+    {
+     "title": "Démarrage",
+     "text": "Mets dans l'ordre : ouvrir un logiciel – allumer l'écran – appuyer sur le bouton de l'unité centrale – attendre l'affichage du bureau.",
+     "solution": "Allumer l'écran → appuyer sur le bouton de l'unité centrale → attendre le bureau → ouvrir un logiciel."
+    },
+    {
+     "title": "Touches",
+     "text": "Donne le rôle des touches : Entrée, Retour arrière (←), Maj (Shift), Verr. Maj, Barre d'espace.",
+     "solution": "Entrée : valider / nouvelle ligne ; Retour arrière : effacer à gauche ; Maj : majuscule temporaire ; Verr. Maj : majuscules permanentes ; Espace : insérer un espace."
+    },
+    {
+     "title": "Corbeille",
+     "text": "À quoi sert la corbeille ? Comment récupérer un fichier supprimé ?",
+     "solution": "Elle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer."
+    },
+    {
+     "title": "Le bureau",
+     "text": "Cite quatre éléments du bureau de Windows.",
+     "solution": "Icônes, barre des tâches, bouton Démarrer, fond d'écran, zone de notification."
+    },
+    {
+     "title": "Copier / déplacer",
+     "text": "Quelle différence entre copier et déplacer un fichier ? Donne les raccourcis.",
+     "solution": "Copier garde l'original et crée une copie (Ctrl+C puis Ctrl+V) ; déplacer change l'emplacement sans garder l'original (Ctrl+X puis Ctrl+V)."
+    },
+    {
+     "title": "Calcul",
+     "text": "Une clé USB de 8 Go contient déjà 5 Go. Peut-on y copier un dossier de 2 500 Mo ?",
+     "solution": "Espace libre = 3 Go ≈ 3 000 Mo > 2 500 Mo : oui."
+    },
+    {
+     "title": "Zones du clavier",
+     "text": "Cite les principales zones du clavier.",
+     "solution": "Pavé alphanumérique, pavé numérique, touches de fonction (F1–F12), touches de direction, touches spéciales."
+    },
+    {
+     "title": "Fenêtre",
+     "text": "Cite les trois boutons en haut à droite d'une fenêtre et leur rôle.",
+     "solution": "Réduire, Agrandir/Restaurer, Fermer."
+    },
+    {
+     "title": "Périphériques",
+     "text": "Classe en périphériques d'entrée et de sortie : clavier, écran, souris, imprimante, scanner, haut-parleurs.",
+     "solution": "Entrée : clavier, souris, scanner ; Sortie : écran, imprimante, haut-parleurs."
+    },
+    {
+     "title": "Supports",
+     "text": "Cite quatre moyens de stockage.",
+     "solution": "Disque dur, clé USB, carte mémoire, CD/DVD, stockage en ligne (cloud)."
+    },
+    {
+     "title": "Stockage",
+     "text": "Classe du plus petit au plus grand : Go, Ko, To, Mo.",
+     "solution": "Ko < Mo < Go < To."
+    },
+    {
+     "title": "Situation",
+     "text": "Un élève veut écrire « É » majuscule et le symbole « @ ». Comment fait-il ?",
+     "solution": "« É » : Verr. Maj puis la touche é (selon le clavier) ; « @ » : Alt Gr + touche 0 (ou à) sur clavier AZERTY."
+    },
+    {
+     "title": "Organisation",
+     "text": "Propose une arborescence de dossiers pour ranger tes travaux de 1AS.",
+     "solution": "1AS → Maths, Français, TI… ; chaque matière → Cours, Exercices."
+    },
+    {
+     "title": "Système d'exploitation",
+     "text": "Qu'est-ce qu'un système d'exploitation ? Cite deux exemples.",
+     "solution": "Logiciel de base qui gère le matériel et permet d'utiliser les programmes ; Windows, Linux, Android, macOS."
+    },
+    {
+     "title": "Éteindre",
+     "text": "Pourquoi ne faut-il pas éteindre l'ordinateur en le débranchant ?",
+     "solution": "Risque de perte de données et d'endommager le système ; il faut passer par Démarrer → Arrêter."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 20",
+   "term": 2,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "L'objet technique et ses fonctions",
+    "Valeur et principe de fonctionnement d'un objet technique",
+    "Les matériaux",
+    "Interface de Microsoft Word",
+    "Introduction à la barre de menus et au ruban",
+    "La barre de menus et le ruban (suite)",
+    "Introduction à la mise en page",
+    "Mise en forme du texte",
+    "Insertion d'éléments visuels (image)",
+    "Organisation et structure d'un document"
+   ],
+   "items": [
+    {
+     "title": "Orientation",
+     "text": "Quand utiliser l'orientation paysage ?",
+     "solution": "Pour un tableau large, une affiche ou un graphique horizontal."
+    },
+    {
+     "title": "Valeur",
+     "text": "De quoi dépend la valeur d'un objet technique ?",
+     "solution": "Du coût des matériaux, de la fabrication, de la qualité, de la marque, de l'utilité."
+    },
+    {
+     "title": "Entête",
+     "text": "Que met-on souvent dans l'entête et le pied de page ? Comment les insérer ?",
+     "solution": "Nom de l'établissement, titre, date, numéro de page ; Insertion → En-tête / Pied de page."
+    },
+    {
+     "title": "Alignements",
+     "text": "Cite les quatre alignements d'un paragraphe.",
+     "solution": "Gauche, centré, droite, justifié."
+    },
+    {
+     "title": "Imprimer",
+     "text": "Décris les étapes pour imprimer seulement les pages 2 et 3 en 2 exemplaires.",
+     "solution": "Fichier → Imprimer → Pages : 2-3 → Copies : 2 → Imprimer (raccourci Ctrl+P)."
+    },
+    {
+     "title": "Image",
+     "text": "Comment insérer une image depuis l'ordinateur dans Word ?",
+     "solution": "Insertion → Images → Cet appareil → choisir l'image → Insérer."
+    },
+    {
+     "title": "Structure",
+     "text": "Cite les parties d'un exposé bien structuré.",
+     "solution": "Page de garde, introduction, développement (titres et sous-titres), conclusion, sources."
+    },
+    {
+     "title": "Aperçu",
+     "text": "Pourquoi utiliser l'aperçu avant impression ?",
+     "solution": "Pour vérifier la mise en page et éviter de gaspiller papier et encre."
+    },
+    {
+     "title": "Familles",
+     "text": "Classe : fer, bois, plastique, verre, coton, aluminium.\nMétaux / Organiques / Plastiques / Minéraux.",
+     "solution": "Métaux : fer, aluminium ; Organiques : bois, coton ; Plastiques : plastique ; Minéraux : verre."
+    },
+    {
+     "title": "Mise en page",
+     "text": "Cite trois réglages de mise en page.",
+     "solution": "Marges, orientation (portrait/paysage), taille du papier, colonnes."
+    },
+    {
+     "title": "Commandes",
+     "text": "Où trouve-t-on : insérer un tableau, changer les marges, vérifier l'orthographe ?",
+     "solution": "Insertion → Tableau ; Mise en page → Marges ; Révision → Orthographe et grammaire."
+    },
+    {
+     "title": "Objet technique",
+     "text": "Qu'est-ce qu'un objet technique ? Donne trois exemples.",
+     "solution": "Objet fabriqué par l'homme pour répondre à un besoin ; stylo, vélo, téléphone."
+    },
+    {
+     "title": "Onglets",
+     "text": "Cite trois onglets du ruban de Word et une commande de chacun.",
+     "solution": "Accueil : gras ; Insertion : image ; Mise en page : orientation."
+    },
+    {
+     "title": "Enregistrer",
+     "text": "Comment enregistrer un document Word sous le nom « Exposé » ?",
+     "solution": "Fichier → Enregistrer sous → choisir le dossier → taper « Exposé » → Enregistrer (ou Ctrl+S)."
+    },
+    {
+     "title": "Éléments",
+     "text": "Cite quatre éléments de l'interface de Word.",
+     "solution": "Barre de titre, ruban, zone de saisie, barre d'état, règle, barres de défilement."
+    },
+    {
+     "title": "Principe",
+     "text": "Explique le principe de fonctionnement d'une lampe de poche.",
+     "solution": "L'interrupteur ferme le circuit, le courant des piles traverse l'ampoule qui s'allume."
+    },
+    {
+     "title": "Mise en forme",
+     "text": "Décris les étapes pour mettre un titre en gras, centré, taille 16.",
+     "solution": "Sélectionner le titre → Accueil → G (gras) → Centrer → taille 16."
+    },
+    {
+     "title": "Propriétés",
+     "text": "Pourquoi les casseroles sont-elles en métal et leurs poignées en plastique ou bois ?",
+     "solution": "Le métal conduit bien la chaleur ; le plastique et le bois sont isolants et protègent la main."
+    },
+    {
+     "title": "Groupe",
+     "text": "Dans quel onglet et quel groupe trouve-t-on la police et la taille des caractères ?",
+     "solution": "Onglet Accueil, groupe Police."
+    },
+    {
+     "title": "Fonction d'estime",
+     "text": "Distingue fonction d'usage et fonction d'estime pour un téléphone.",
+     "solution": "Usage : communiquer ; estime : design, couleur, marque qui plaisent à l'utilisateur."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 25",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Les familles des objets techniques",
+    "Évolution technologique et étude de cas",
+    "Formes d'énergies utilisées pour le fonctionnement d'un objet",
+    "Impacts environnementaux des sources d'énergies",
+    "Choix des sites Internet éducatifs",
+    "Éloignement des sites indésirables",
+    "Respect d'autrui",
+    "Respect des normes éthiques de publication et de communication"
+   ],
+   "items": [
+    {
+     "title": "Éthique",
+     "text": "Un camarade copie un texte d'Internet et le présente comme le sien. Qu'en penses-tu ?",
+     "solution": "C'est du plagiat ; il faut citer la source ou reformuler avec ses propres mots."
+    },
+    {
+     "title": "Sites indésirables",
+     "text": "Que fais-tu si une page inappropriée s'ouvre pendant ta recherche ?",
+     "solution": "Je la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur)."
+    },
+    {
+     "title": "Familles",
+     "text": "Classe : vélo, radio, marteau, voiture, téléviseur, ciseaux.\nObjets de transport / communication / outils.",
+     "solution": "Transport : vélo, voiture ; Communication : radio, téléviseur ; Outils : marteau, ciseaux."
+    },
+    {
+     "title": "Respect en ligne",
+     "text": "Cite trois règles de respect d'autrui sur Internet.",
+     "solution": "Ne pas insulter, ne pas publier la photo de quelqu'un sans son accord, ne pas se moquer, respecter les opinions."
+    },
+    {
+     "title": "Énergies",
+     "text": "Quelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Électrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Impacts",
+     "text": "Cite deux impacts négatifs de l'utilisation du pétrole et du charbon.",
+     "solution": "Pollution de l'air, émission de gaz à effet de serre, réchauffement climatique, maladies respiratoires."
+    },
+    {
+     "title": "Solutions",
+     "text": "Propose deux gestes pour réduire l'impact énergétique à la maison.",
+     "solution": "Éteindre les lampes inutiles, utiliser des lampes LED, l'énergie solaire."
+    },
+    {
+     "title": "Critères",
+     "text": "Cite trois critères pour choisir un site éducatif fiable.",
+     "solution": "Auteur identifié, contenu à jour, source officielle (ministère, université), absence de publicité trompeuse."
+    },
+    {
+     "title": "Évolution",
+     "text": "Range dans l'ordre chronologique : smartphone, télégraphe, téléphone fixe, téléphone portable.",
+     "solution": "Télégraphe → téléphone fixe → téléphone portable → smartphone."
+    },
+    {
+     "title": "Cas",
+     "text": "Cite deux avantages de l'évolution de l'éclairage (lampe à pétrole → LED).",
+     "solution": "Moins de consommation d'énergie, plus de sécurité, meilleure durée de vie, moins de pollution."
+    },
+    {
+     "title": "Périphériques",
+     "text": "Classe en périphériques d'entrée et de sortie : clavier, écran, souris, imprimante, scanner, haut-parleurs.",
+     "solution": "Entrée : clavier, souris, scanner ; Sortie : écran, imprimante, haut-parleurs."
+    },
+    {
+     "title": "Fenêtre",
+     "text": "Cite les trois boutons en haut à droite d'une fenêtre et leur rôle.",
+     "solution": "Réduire, Agrandir/Restaurer, Fermer."
+    },
+    {
+     "title": "Exemple",
+     "text": "Donne un exemple de système d'information dans ton établissement.",
+     "solution": "La gestion des notes et des absences des élèves."
+    },
+    {
+     "title": "Orientation",
+     "text": "Quand utiliser l'orientation paysage ?",
+     "solution": "Pour un tableau large, une affiche ou un graphique horizontal."
+    },
+    {
+     "title": "Supports",
+     "text": "Cite quatre moyens de stockage.",
+     "solution": "Disque dur, clé USB, carte mémoire, CD/DVD, stockage en ligne (cloud)."
+    },
+    {
+     "title": "Programme",
+     "text": "Qu'est-ce qu'un programme informatique ?",
+     "solution": "Suite d'instructions écrites pour que l'ordinateur réalise une tâche."
+    },
+    {
+     "title": "Groupe",
+     "text": "Dans quel onglet et quel groupe trouve-t-on la police et la taille des caractères ?",
+     "solution": "Onglet Accueil, groupe Police."
+    },
+    {
+     "title": "Structure",
+     "text": "Cite les parties d'un exposé bien structuré.",
+     "solution": "Page de garde, introduction, développement (titres et sous-titres), conclusion, sources."
+    },
+    {
+     "title": "Éléments",
+     "text": "Cite quatre éléments de l'interface de Word.",
+     "solution": "Barre de titre, ruban, zone de saisie, barre d'état, règle, barres de défilement."
+    },
+    {
+     "title": "Valeur",
+     "text": "De quoi dépend la valeur d'un objet technique ?",
+     "solution": "Du coût des matériaux, de la fabrication, de la qualité, de la marque, de l'utilité."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 30",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Pages et sites Web",
+    "Navigateurs",
+    "Moteurs de recherche et recherche",
+    "Téléchargement"
+   ],
+   "items": [
+    {
+     "title": "Moteur de recherche",
+     "text": "Différence entre navigateur et moteur de recherche ?",
+     "solution": "Le navigateur affiche les pages ; le moteur de recherche (Google, Bing) trouve les pages à partir de mots-clés."
+    },
+    {
+     "title": "Mots-clés",
+     "text": "Propose des mots-clés pour trouver la population de la Mauritanie.",
+     "solution": "population Mauritanie (+ année)."
+    },
+    {
+     "title": "Téléchargement",
+     "text": "Cite deux précautions avant de télécharger un fichier.",
+     "solution": "Vérifier que le site est fiable, analyser le fichier avec un antivirus, respecter les droits d'auteur."
+    },
+    {
+     "title": "Adresse",
+     "text": "Décompose l'adresse https://www.exemple.mr/cours.",
+     "solution": "https : protocole sécurisé ; www.exemple.mr : nom de domaine (.mr : Mauritanie) ; /cours : page."
+    },
+    {
+     "title": "Navigateur",
+     "text": "Qu'est-ce qu'un navigateur ? Cite deux exemples.",
+     "solution": "Logiciel pour consulter des pages Web ; Chrome, Firefox, Edge, Safari."
+    },
+    {
+     "title": "Fonction d'estime",
+     "text": "Distingue fonction d'usage et fonction d'estime pour un téléphone.",
+     "solution": "Usage : communiquer ; estime : design, couleur, marque qui plaisent à l'utilisateur."
+    },
+    {
+     "title": "Énergies",
+     "text": "Quelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Électrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Familles",
+     "text": "Classe : fer, bois, plastique, verre, coton, aluminium.\nMétaux / Organiques / Plastiques / Minéraux.",
+     "solution": "Métaux : fer, aluminium ; Organiques : bois, coton ; Plastiques : plastique ; Minéraux : verre."
+    },
+    {
+     "title": "Aperçu",
+     "text": "Pourquoi utiliser l'aperçu avant impression ?",
+     "solution": "Pour vérifier la mise en page et éviter de gaspiller papier et encre."
+    },
+    {
+     "title": "Familles",
+     "text": "Classe : vélo, radio, marteau, voiture, téléviseur, ciseaux.\nObjets de transport / communication / outils.",
+     "solution": "Transport : vélo, voiture ; Communication : radio, téléviseur ; Outils : marteau, ciseaux."
+    },
+    {
+     "title": "Unité centrale",
+     "text": "Cite trois composants de l'unité centrale et le rôle de chacun.",
+     "solution": "Processeur : exécute les instructions ; mémoire vive (RAM) : stocke temporairement les données ; disque dur : stocke les fichiers ; carte mère : relie les composants."
+    },
+    {
+     "title": "Imprimer",
+     "text": "Décris les étapes pour imprimer seulement les pages 2 et 3 en 2 exemplaires.",
+     "solution": "Fichier → Imprimer → Pages : 2-3 → Copies : 2 → Imprimer (raccourci Ctrl+P)."
+    },
+    {
+     "title": "Solutions",
+     "text": "Propose deux gestes pour réduire l'impact énergétique à la maison.",
+     "solution": "Éteindre les lampes inutiles, utiliser des lampes LED, l'énergie solaire."
+    },
+    {
+     "title": "Principe",
+     "text": "Explique le principe de fonctionnement d'une lampe de poche.",
+     "solution": "L'interrupteur ferme le circuit, le courant des piles traverse l'ampoule qui s'allume."
+    },
+    {
+     "title": "Imprimantes",
+     "text": "Cite deux types d'imprimantes et un avantage de chacun.",
+     "solution": "Jet d'encre : bon marché, couleurs ; laser : rapide, économique pour beaucoup de pages."
+    },
+    {
+     "title": "Propriétés",
+     "text": "Pourquoi les casseroles sont-elles en métal et leurs poignées en plastique ou bois ?",
+     "solution": "Le métal conduit bien la chaleur ; le plastique et le bois sont isolants et protègent la main."
+    },
+    {
+     "title": "Fonction d'usage",
+     "text": "Donne la fonction d'usage : une lampe – un réfrigérateur – un ventilateur.",
+     "solution": "Éclairer – conserver les aliments au froid – brasser l'air / rafraîchir."
+    },
+    {
+     "title": "Réseau",
+     "text": "Qu'est-ce qu'un réseau informatique ? Donne un exemple.",
+     "solution": "Ensemble d'ordinateurs reliés pour partager des ressources ; Internet, réseau de la salle informatique."
+    },
+    {
+     "title": "Démarrage",
+     "text": "Mets dans l'ordre : ouvrir un logiciel – allumer l'écran – appuyer sur le bouton de l'unité centrale – attendre l'affichage du bureau.",
+     "solution": "Allumer l'écran → appuyer sur le bouton de l'unité centrale → attendre le bureau → ouvrir un logiciel."
+    },
+    {
+     "title": "Corbeille",
+     "text": "À quoi sert la corbeille ? Comment récupérer un fichier supprimé ?",
+     "solution": "Elle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Trimestre 1",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du trimestre 1",
+   "covers": [
+    "Ordinateur, unité centrale et souris",
+    "Clavier",
+    "Imprimante, moyens de stockage",
+    "Notion du système d'exploitation, gestion du bureau",
+    "Gestion de dossiers et de fenêtres",
+    "Notion de système d'information",
+    "Notion de connexion à un réseau et programme informatique",
+    "L'objet technique et ses fonctions",
+    "Valeur et principe de fonctionnement d'un objet technique",
+    "Les matériaux"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 1",
+     "text": "Exercice 1 : Situation\nUn élève veut écrire « É » majuscule et le symbole « @ ». Comment fait-il ?\n\nExercice 2 : Corbeille\nÀ quoi sert la corbeille ? Comment récupérer un fichier supprimé ?\n\nExercice 3 : Valeur\nDe quoi dépend la valeur d'un objet technique ?",
+     "solution": "Exercice 1\n« É » : Verr. Maj puis la touche é (selon le clavier) ; « @ » : Alt Gr + touche 0 (ou à) sur clavier AZERTY.\n\nExercice 2\nElle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer.\n\nExercice 3\nDu coût des matériaux, de la fabrication, de la qualité, de la marque, de l'utilité."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 1",
+     "text": "Exercice 1 : Touches\nDonne le rôle des touches : Entrée, Retour arrière (←), Maj (Shift), Verr. Maj, Barre d'espace.\n\nExercice 2 : Corbeille\nÀ quoi sert la corbeille ? Comment récupérer un fichier supprimé ?\n\nExercice 3 : Organisation\nPropose une arborescence de dossiers pour ranger tes travaux de 1AS.",
+     "solution": "Exercice 1\nEntrée : valider / nouvelle ligne ; Retour arrière : effacer à gauche ; Maj : majuscule temporaire ; Verr. Maj : majuscules permanentes ; Espace : insérer un espace.\n\nExercice 2\nElle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer.\n\nExercice 3\n1AS → Maths, Français, TI… ; chaque matière → Cours, Exercices."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 1",
+     "text": "Exercice 1 : La souris\nCite trois actions possibles avec la souris et leur usage.\n\nExercice 2 : Corbeille\nÀ quoi sert la corbeille ? Comment récupérer un fichier supprimé ?\n\nExercice 3 : Propriétés\nPourquoi les casseroles sont-elles en métal et leurs poignées en plastique ou bois ?",
+     "solution": "Exercice 1\nClic gauche : sélectionner ; double-clic : ouvrir ; clic droit : menu contextuel ; glisser-déposer : déplacer.\n\nExercice 2\nElle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer.\n\nExercice 3\nLe métal conduit bien la chaleur ; le plastique et le bois sont isolants et protègent la main."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 1",
+     "text": "Exercice 1 : La souris\nCite trois actions possibles avec la souris et leur usage.\n\nExercice 2 : Imprimantes\nCite deux types d'imprimantes et un avantage de chacun.\n\nExercice 3 : Fonction d'usage\nDonne la fonction d'usage : une lampe – un réfrigérateur – un ventilateur.",
+     "solution": "Exercice 1\nClic gauche : sélectionner ; double-clic : ouvrir ; clic droit : menu contextuel ; glisser-déposer : déplacer.\n\nExercice 2\nJet d'encre : bon marché, couleurs ; laser : rapide, économique pour beaucoup de pages.\n\nExercice 3\nÉclairer – conserver les aliments au froid – brasser l'air / rafraîchir."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 1",
+     "text": "Exercice 1 : Démarrage\nMets dans l'ordre : ouvrir un logiciel – allumer l'écran – appuyer sur le bouton de l'unité centrale – attendre l'affichage du bureau.\n\nExercice 2 : Éteindre\nPourquoi ne faut-il pas éteindre l'ordinateur en le débranchant ?\n\nExercice 3 : Fonction d'usage\nDonne la fonction d'usage : une lampe – un réfrigérateur – un ventilateur.",
+     "solution": "Exercice 1\nAllumer l'écran → appuyer sur le bouton de l'unité centrale → attendre le bureau → ouvrir un logiciel.\n\nExercice 2\nRisque de perte de données et d'endommager le système ; il faut passer par Démarrer → Arrêter.\n\nExercice 3\nÉclairer – conserver les aliments au froid – brasser l'air / rafraîchir."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 1",
+     "text": "Exercice 1 : Unité centrale\nCite trois composants de l'unité centrale et le rôle de chacun.\n\nExercice 2 : Corbeille\nÀ quoi sert la corbeille ? Comment récupérer un fichier supprimé ?\n\nExercice 3 : Réseau\nQu'est-ce qu'un réseau informatique ? Donne un exemple.",
+     "solution": "Exercice 1\nProcesseur : exécute les instructions ; mémoire vive (RAM) : stocke temporairement les données ; disque dur : stocke les fichiers ; carte mère : relie les composants.\n\nExercice 2\nElle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer.\n\nExercice 3\nEnsemble d'ordinateurs reliés pour partager des ressources ; Internet, réseau de la salle informatique."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 1",
+     "text": "Exercice 1 : Démarrage\nMets dans l'ordre : ouvrir un logiciel – allumer l'écran – appuyer sur le bouton de l'unité centrale – attendre l'affichage du bureau.\n\nExercice 2 : Corbeille\nÀ quoi sert la corbeille ? Comment récupérer un fichier supprimé ?\n\nExercice 3 : Familles\nClasse : fer, bois, plastique, verre, coton, aluminium.\nMétaux / Organiques / Plastiques / Minéraux.",
+     "solution": "Exercice 1\nAllumer l'écran → appuyer sur le bouton de l'unité centrale → attendre le bureau → ouvrir un logiciel.\n\nExercice 2\nElle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer.\n\nExercice 3\nMétaux : fer, aluminium ; Organiques : bois, coton ; Plastiques : plastique ; Minéraux : verre."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 1",
+     "text": "Exercice 1 : Situation\nUn élève veut écrire « É » majuscule et le symbole « @ ». Comment fait-il ?\n\nExercice 2 : Corbeille\nÀ quoi sert la corbeille ? Comment récupérer un fichier supprimé ?\n\nExercice 3 : Organisation\nPropose une arborescence de dossiers pour ranger tes travaux de 1AS.",
+     "solution": "Exercice 1\n« É » : Verr. Maj puis la touche é (selon le clavier) ; « @ » : Alt Gr + touche 0 (ou à) sur clavier AZERTY.\n\nExercice 2\nElle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer.\n\nExercice 3\n1AS → Maths, Français, TI… ; chaque matière → Cours, Exercices."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 1",
+     "text": "Exercice 1 : Périphériques\nClasse en périphériques d'entrée et de sortie : clavier, écran, souris, imprimante, scanner, haut-parleurs.\n\nExercice 2 : Le bureau\nCite quatre éléments du bureau de Windows.\n\nExercice 3 : Organisation\nPropose une arborescence de dossiers pour ranger tes travaux de 1AS.",
+     "solution": "Exercice 1\nEntrée : clavier, souris, scanner ; Sortie : écran, imprimante, haut-parleurs.\n\nExercice 2\nIcônes, barre des tâches, bouton Démarrer, fond d'écran, zone de notification.\n\nExercice 3\n1AS → Maths, Français, TI… ; chaque matière → Cours, Exercices."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 1",
+     "text": "Exercice 1 : Raccourcis\nQue font les raccourcis Ctrl+C, Ctrl+V, Ctrl+Z ?\n\nExercice 2 : Calcul\nUne clé USB de 8 Go contient déjà 5 Go. Peut-on y copier un dossier de 2 500 Mo ?\n\nExercice 3 : Définition\nQu'est-ce qu'un système d'information ?",
+     "solution": "Exercice 1\nCopier, coller, annuler.\n\nExercice 2\nEspace libre = 3 Go ≈ 3 000 Mo > 2 500 Mo : oui.\n\nExercice 3\nEnsemble organisé de ressources (personnes, matériel, logiciels, données) pour collecter, stocker, traiter et diffuser l'information."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 1",
+     "text": "Exercice 1 : Stockage\nClasse du plus petit au plus grand : Go, Ko, To, Mo.\n\nExercice 2 : Calcul\nUne clé USB de 8 Go contient déjà 5 Go. Peut-on y copier un dossier de 2 500 Mo ?\n\nExercice 3 : Organisation\nPropose une arborescence de dossiers pour ranger tes travaux de 1AS.",
+     "solution": "Exercice 1\nKo < Mo < Go < To.\n\nExercice 2\nEspace libre = 3 Go ≈ 3 000 Mo > 2 500 Mo : oui.\n\nExercice 3\n1AS → Maths, Français, TI… ; chaque matière → Cours, Exercices."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 1",
+     "text": "Exercice 1 : Supports\nCite quatre moyens de stockage.\n\nExercice 2 : Calcul\nUne clé USB de 8 Go contient déjà 5 Go. Peut-on y copier un dossier de 2 500 Mo ?\n\nExercice 3 : Propriétés\nPourquoi les casseroles sont-elles en métal et leurs poignées en plastique ou bois ?",
+     "solution": "Exercice 1\nDisque dur, clé USB, carte mémoire, CD/DVD, stockage en ligne (cloud).\n\nExercice 2\nEspace libre = 3 Go ≈ 3 000 Mo > 2 500 Mo : oui.\n\nExercice 3\nLe métal conduit bien la chaleur ; le plastique et le bois sont isolants et protègent la main."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 1",
+     "text": "Exercice 1 : Stockage\nClasse du plus petit au plus grand : Go, Ko, To, Mo.\n\nExercice 2 : Système d'exploitation\nQu'est-ce qu'un système d'exploitation ? Cite deux exemples.\n\nExercice 3 : Fonction d'estime\nDistingue fonction d'usage et fonction d'estime pour un téléphone.",
+     "solution": "Exercice 1\nKo < Mo < Go < To.\n\nExercice 2\nLogiciel de base qui gère le matériel et permet d'utiliser les programmes ; Windows, Linux, Android, macOS.\n\nExercice 3\nUsage : communiquer ; estime : design, couleur, marque qui plaisent à l'utilisateur."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 1",
+     "text": "Exercice 1 : Stockage\nClasse du plus petit au plus grand : Go, Ko, To, Mo.\n\nExercice 2 : Fenêtre\nCite les trois boutons en haut à droite d'une fenêtre et leur rôle.\n\nExercice 3 : Valeur\nDe quoi dépend la valeur d'un objet technique ?",
+     "solution": "Exercice 1\nKo < Mo < Go < To.\n\nExercice 2\nRéduire, Agrandir/Restaurer, Fermer.\n\nExercice 3\nDu coût des matériaux, de la fabrication, de la qualité, de la marque, de l'utilité."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 1",
+     "text": "Exercice 1 : Stockage\nClasse du plus petit au plus grand : Go, Ko, To, Mo.\n\nExercice 2 : Éteindre\nPourquoi ne faut-il pas éteindre l'ordinateur en le débranchant ?\n\nExercice 3 : Valeur\nDe quoi dépend la valeur d'un objet technique ?",
+     "solution": "Exercice 1\nKo < Mo < Go < To.\n\nExercice 2\nRisque de perte de données et d'endommager le système ; il faut passer par Démarrer → Arrêter.\n\nExercice 3\nDu coût des matériaux, de la fabrication, de la qualité, de la marque, de l'utilité."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 1",
+     "text": "Exercice 1 : Supports\nCite quatre moyens de stockage.\n\nExercice 2 : Calcul\nUne clé USB de 8 Go contient déjà 5 Go. Peut-on y copier un dossier de 2 500 Mo ?\n\nExercice 3 : Principe\nExplique le principe de fonctionnement d'une lampe de poche.",
+     "solution": "Exercice 1\nDisque dur, clé USB, carte mémoire, CD/DVD, stockage en ligne (cloud).\n\nExercice 2\nEspace libre = 3 Go ≈ 3 000 Mo > 2 500 Mo : oui.\n\nExercice 3\nL'interrupteur ferme le circuit, le courant des piles traverse l'ampoule qui s'allume."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 1",
+     "text": "Exercice 1 : Raccourcis\nQue font les raccourcis Ctrl+C, Ctrl+V, Ctrl+Z ?\n\nExercice 2 : Corbeille\nÀ quoi sert la corbeille ? Comment récupérer un fichier supprimé ?\n\nExercice 3 : Définition\nQu'est-ce qu'un système d'information ?",
+     "solution": "Exercice 1\nCopier, coller, annuler.\n\nExercice 2\nElle stocke les fichiers supprimés ; ouvrir la corbeille, clic droit sur le fichier → Restaurer.\n\nExercice 3\nEnsemble organisé de ressources (personnes, matériel, logiciels, données) pour collecter, stocker, traiter et diffuser l'information."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 1",
+     "text": "Exercice 1 : Supports\nCite quatre moyens de stockage.\n\nExercice 2 : Le bureau\nCite quatre éléments du bureau de Windows.\n\nExercice 3 : Programme\nQu'est-ce qu'un programme informatique ?",
+     "solution": "Exercice 1\nDisque dur, clé USB, carte mémoire, CD/DVD, stockage en ligne (cloud).\n\nExercice 2\nIcônes, barre des tâches, bouton Démarrer, fond d'écran, zone de notification.\n\nExercice 3\nSuite d'instructions écrites pour que l'ordinateur réalise une tâche."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 1",
+     "text": "Exercice 1 : La souris\nCite trois actions possibles avec la souris et leur usage.\n\nExercice 2 : Imprimantes\nCite deux types d'imprimantes et un avantage de chacun.\n\nExercice 3 : Familles\nClasse : fer, bois, plastique, verre, coton, aluminium.\nMétaux / Organiques / Plastiques / Minéraux.",
+     "solution": "Exercice 1\nClic gauche : sélectionner ; double-clic : ouvrir ; clic droit : menu contextuel ; glisser-déposer : déplacer.\n\nExercice 2\nJet d'encre : bon marché, couleurs ; laser : rapide, économique pour beaucoup de pages.\n\nExercice 3\nMétaux : fer, aluminium ; Organiques : bois, coton ; Plastiques : plastique ; Minéraux : verre."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 1",
+     "text": "Exercice 1 : Stockage\nClasse du plus petit au plus grand : Go, Ko, To, Mo.\n\nExercice 2 : Copier / déplacer\nQuelle différence entre copier et déplacer un fichier ? Donne les raccourcis.\n\nExercice 3 : Fonction d'estime\nDistingue fonction d'usage et fonction d'estime pour un téléphone.",
+     "solution": "Exercice 1\nKo < Mo < Go < To.\n\nExercice 2\nCopier garde l'original et crée une copie (Ctrl+C puis Ctrl+V) ; déplacer change l'emplacement sans garder l'original (Ctrl+X puis Ctrl+V).\n\nExercice 3\nUsage : communiquer ; estime : design, couleur, marque qui plaisent à l'utilisateur."
+    }
+   ]
+  },
+  {
+   "week": "Trimestre 2",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du trimestre 2",
+   "covers": [
+    "Interface de Microsoft Word",
+    "Introduction à la barre de menus et au ruban",
+    "La barre de menus et le ruban (suite)",
+    "Introduction à la mise en page",
+    "Mise en forme du texte",
+    "Insertion d'éléments visuels (image)",
+    "Organisation et structure d'un document",
+    "Entêtes et pieds de page",
+    "Impression",
+    "Les familles des objets techniques"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 2",
+     "text": "Exercice 1 : Onglets\nCite trois onglets du ruban de Word et une commande de chacun.\n\nExercice 2 : Image\nComment insérer une image depuis l'ordinateur dans Word ?\n\nExercice 3 : Familles\nClasse : vélo, radio, marteau, voiture, téléviseur, ciseaux.\nObjets de transport / communication / outils.",
+     "solution": "Exercice 1\nAccueil : gras ; Insertion : image ; Mise en page : orientation.\n\nExercice 2\nInsertion → Images → Cet appareil → choisir l'image → Insérer.\n\nExercice 3\nTransport : vélo, voiture ; Communication : radio, téléviseur ; Outils : marteau, ciseaux."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 2",
+     "text": "Exercice 1 : Enregistrer\nComment enregistrer un document Word sous le nom « Exposé » ?\n\nExercice 2 : Alignements\nCite les quatre alignements d'un paragraphe.\n\nExercice 3 : Cas\nCite deux avantages de l'évolution de l'éclairage (lampe à pétrole → LED).",
+     "solution": "Exercice 1\nFichier → Enregistrer sous → choisir le dossier → taper « Exposé » → Enregistrer (ou Ctrl+S).\n\nExercice 2\nGauche, centré, droite, justifié.\n\nExercice 3\nMoins de consommation d'énergie, plus de sécurité, meilleure durée de vie, moins de pollution."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 2",
+     "text": "Exercice 1 : Orientation\nQuand utiliser l'orientation paysage ?\n\nExercice 2 : Image\nComment insérer une image depuis l'ordinateur dans Word ?\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nPour un tableau large, une affiche ou un graphique horizontal.\n\nExercice 2\nInsertion → Images → Cet appareil → choisir l'image → Insérer.\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 2",
+     "text": "Exercice 1 : Éléments\nCite quatre éléments de l'interface de Word.\n\nExercice 2 : Entête\nQue met-on souvent dans l'entête et le pied de page ? Comment les insérer ?\n\nExercice 3 : Évolution\nRange dans l'ordre chronologique : smartphone, télégraphe, téléphone fixe, téléphone portable.",
+     "solution": "Exercice 1\nBarre de titre, ruban, zone de saisie, barre d'état, règle, barres de défilement.\n\nExercice 2\nNom de l'établissement, titre, date, numéro de page ; Insertion → En-tête / Pied de page.\n\nExercice 3\nTélégraphe → téléphone fixe → téléphone portable → smartphone."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 2",
+     "text": "Exercice 1 : Groupe\nDans quel onglet et quel groupe trouve-t-on la police et la taille des caractères ?\n\nExercice 2 : Image\nComment insérer une image depuis l'ordinateur dans Word ?\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nOnglet Accueil, groupe Police.\n\nExercice 2\nInsertion → Images → Cet appareil → choisir l'image → Insérer.\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 2",
+     "text": "Exercice 1 : Enregistrer\nComment enregistrer un document Word sous le nom « Exposé » ?\n\nExercice 2 : Image\nComment insérer une image depuis l'ordinateur dans Word ?\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nFichier → Enregistrer sous → choisir le dossier → taper « Exposé » → Enregistrer (ou Ctrl+S).\n\nExercice 2\nInsertion → Images → Cet appareil → choisir l'image → Insérer.\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 2",
+     "text": "Exercice 1 : Orientation\nQuand utiliser l'orientation paysage ?\n\nExercice 2 : Entête\nQue met-on souvent dans l'entête et le pied de page ? Comment les insérer ?\n\nExercice 3 : Familles\nClasse : vélo, radio, marteau, voiture, téléviseur, ciseaux.\nObjets de transport / communication / outils.",
+     "solution": "Exercice 1\nPour un tableau large, une affiche ou un graphique horizontal.\n\nExercice 2\nNom de l'établissement, titre, date, numéro de page ; Insertion → En-tête / Pied de page.\n\nExercice 3\nTransport : vélo, voiture ; Communication : radio, téléviseur ; Outils : marteau, ciseaux."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 2",
+     "text": "Exercice 1 : Groupe\nDans quel onglet et quel groupe trouve-t-on la police et la taille des caractères ?\n\nExercice 2 : Alignements\nCite les quatre alignements d'un paragraphe.\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nOnglet Accueil, groupe Police.\n\nExercice 2\nGauche, centré, droite, justifié.\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 2",
+     "text": "Exercice 1 : Onglets\nCite trois onglets du ruban de Word et une commande de chacun.\n\nExercice 2 : Mise en forme\nDécris les étapes pour mettre un titre en gras, centré, taille 16.\n\nExercice 3 : Évolution\nRange dans l'ordre chronologique : smartphone, télégraphe, téléphone fixe, téléphone portable.",
+     "solution": "Exercice 1\nAccueil : gras ; Insertion : image ; Mise en page : orientation.\n\nExercice 2\nSélectionner le titre → Accueil → G (gras) → Centrer → taille 16.\n\nExercice 3\nTélégraphe → téléphone fixe → téléphone portable → smartphone."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 2",
+     "text": "Exercice 1 : Onglets\nCite trois onglets du ruban de Word et une commande de chacun.\n\nExercice 2 : Entête\nQue met-on souvent dans l'entête et le pied de page ? Comment les insérer ?\n\nExercice 3 : Cas\nCite deux avantages de l'évolution de l'éclairage (lampe à pétrole → LED).",
+     "solution": "Exercice 1\nAccueil : gras ; Insertion : image ; Mise en page : orientation.\n\nExercice 2\nNom de l'établissement, titre, date, numéro de page ; Insertion → En-tête / Pied de page.\n\nExercice 3\nMoins de consommation d'énergie, plus de sécurité, meilleure durée de vie, moins de pollution."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 2",
+     "text": "Exercice 1 : Commandes\nOù trouve-t-on : insérer un tableau, changer les marges, vérifier l'orthographe ?\n\nExercice 2 : Mise en forme\nDécris les étapes pour mettre un titre en gras, centré, taille 16.\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nInsertion → Tableau ; Mise en page → Marges ; Révision → Orthographe et grammaire.\n\nExercice 2\nSélectionner le titre → Accueil → G (gras) → Centrer → taille 16.\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 2",
+     "text": "Exercice 1 : Enregistrer\nComment enregistrer un document Word sous le nom « Exposé » ?\n\nExercice 2 : Structure\nCite les parties d'un exposé bien structuré.\n\nExercice 3 : Aperçu\nPourquoi utiliser l'aperçu avant impression ?",
+     "solution": "Exercice 1\nFichier → Enregistrer sous → choisir le dossier → taper « Exposé » → Enregistrer (ou Ctrl+S).\n\nExercice 2\nPage de garde, introduction, développement (titres et sous-titres), conclusion, sources.\n\nExercice 3\nPour vérifier la mise en page et éviter de gaspiller papier et encre."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 2",
+     "text": "Exercice 1 : Éléments\nCite quatre éléments de l'interface de Word.\n\nExercice 2 : Imprimer\nDécris les étapes pour imprimer seulement les pages 2 et 3 en 2 exemplaires.\n\nExercice 3 : Impacts\nCite deux impacts négatifs de l'utilisation du pétrole et du charbon.",
+     "solution": "Exercice 1\nBarre de titre, ruban, zone de saisie, barre d'état, règle, barres de défilement.\n\nExercice 2\nFichier → Imprimer → Pages : 2-3 → Copies : 2 → Imprimer (raccourci Ctrl+P).\n\nExercice 3\nPollution de l'air, émission de gaz à effet de serre, réchauffement climatique, maladies respiratoires."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 2",
+     "text": "Exercice 1 : Enregistrer\nComment enregistrer un document Word sous le nom « Exposé » ?\n\nExercice 2 : Alignements\nCite les quatre alignements d'un paragraphe.\n\nExercice 3 : Aperçu\nPourquoi utiliser l'aperçu avant impression ?",
+     "solution": "Exercice 1\nFichier → Enregistrer sous → choisir le dossier → taper « Exposé » → Enregistrer (ou Ctrl+S).\n\nExercice 2\nGauche, centré, droite, justifié.\n\nExercice 3\nPour vérifier la mise en page et éviter de gaspiller papier et encre."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 2",
+     "text": "Exercice 1 : Commandes\nOù trouve-t-on : insérer un tableau, changer les marges, vérifier l'orthographe ?\n\nExercice 2 : Imprimer\nDécris les étapes pour imprimer seulement les pages 2 et 3 en 2 exemplaires.\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nInsertion → Tableau ; Mise en page → Marges ; Révision → Orthographe et grammaire.\n\nExercice 2\nFichier → Imprimer → Pages : 2-3 → Copies : 2 → Imprimer (raccourci Ctrl+P).\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 2",
+     "text": "Exercice 1 : Éléments\nCite quatre éléments de l'interface de Word.\n\nExercice 2 : Mise en forme\nDécris les étapes pour mettre un titre en gras, centré, taille 16.\n\nExercice 3 : Aperçu\nPourquoi utiliser l'aperçu avant impression ?",
+     "solution": "Exercice 1\nBarre de titre, ruban, zone de saisie, barre d'état, règle, barres de défilement.\n\nExercice 2\nSélectionner le titre → Accueil → G (gras) → Centrer → taille 16.\n\nExercice 3\nPour vérifier la mise en page et éviter de gaspiller papier et encre."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 2",
+     "text": "Exercice 1 : Groupe\nDans quel onglet et quel groupe trouve-t-on la police et la taille des caractères ?\n\nExercice 2 : Mise en forme\nDécris les étapes pour mettre un titre en gras, centré, taille 16.\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nOnglet Accueil, groupe Police.\n\nExercice 2\nSélectionner le titre → Accueil → G (gras) → Centrer → taille 16.\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 2",
+     "text": "Exercice 1 : Groupe\nDans quel onglet et quel groupe trouve-t-on la police et la taille des caractères ?\n\nExercice 2 : Imprimer\nDécris les étapes pour imprimer seulement les pages 2 et 3 en 2 exemplaires.\n\nExercice 3 : Solutions\nPropose deux gestes pour réduire l'impact énergétique à la maison.",
+     "solution": "Exercice 1\nOnglet Accueil, groupe Police.\n\nExercice 2\nFichier → Imprimer → Pages : 2-3 → Copies : 2 → Imprimer (raccourci Ctrl+P).\n\nExercice 3\nÉteindre les lampes inutiles, utiliser des lampes LED, l'énergie solaire."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 2",
+     "text": "Exercice 1 : Éléments\nCite quatre éléments de l'interface de Word.\n\nExercice 2 : Imprimer\nDécris les étapes pour imprimer seulement les pages 2 et 3 en 2 exemplaires.\n\nExercice 3 : Solutions\nPropose deux gestes pour réduire l'impact énergétique à la maison.",
+     "solution": "Exercice 1\nBarre de titre, ruban, zone de saisie, barre d'état, règle, barres de défilement.\n\nExercice 2\nFichier → Imprimer → Pages : 2-3 → Copies : 2 → Imprimer (raccourci Ctrl+P).\n\nExercice 3\nÉteindre les lampes inutiles, utiliser des lampes LED, l'énergie solaire."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 2",
+     "text": "Exercice 1 : Mise en page\nCite trois réglages de mise en page.\n\nExercice 2 : Habillage\nÀ quoi sert l'habillage d'une image ?\n\nExercice 3 : Énergies\nQuelle énergie fait fonctionner : une lampe torche, un vélo, une voiture, une calculatrice solaire ?",
+     "solution": "Exercice 1\nMarges, orientation (portrait/paysage), taille du papier, colonnes.\n\nExercice 2\nÀ définir la position de l'image par rapport au texte (aligné, carré, devant le texte…).\n\nExercice 3\nÉlectrique (piles) – musculaire – chimique (carburant) – solaire (lumineuse)."
+    }
+   ]
+  },
+  {
+   "week": "Trimestre 3",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Choix des sites Internet éducatifs",
+    "Éloignement des sites indésirables",
+    "Respect d'autrui",
+    "Respect des normes éthiques de publication et de communication",
+    "Pages et sites Web",
+    "Navigateurs",
+    "Moteurs de recherche et recherche",
+    "Téléchargement",
+    "Fonction de commande",
+    "Fonction d'alimentation"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Critères\nCite trois critères pour choisir un site éducatif fiable.\n\nExercice 2 : Téléchargement\nCite deux précautions avant de télécharger un fichier.\n\nExercice 3 : Classement\nClasse : sac plastique, panier en fibres, piles usagées, papier, huile de vidange.\nPolluants / peu polluants.",
+     "solution": "Exercice 1\nAuteur identifié, contenu à jour, source officielle (ministère, université), absence de publicité trompeuse.\n\nExercice 2\nVérifier que le site est fiable, analyser le fichier avec un antivirus, respecter les droits d'auteur.\n\nExercice 3\nPolluants : sac plastique, piles usagées, huile de vidange ; peu polluants : panier en fibres, papier."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adresse\nDécompose l'adresse https://www.exemple.mr/cours.\n\nExercice 2 : Commande\nDonne des exemples d'organes de commande sur des objets techniques.\n\nExercice 3 : Entrepreneur\nQu'est-ce qu'un entrepreneur ? Cite deux qualités nécessaires.",
+     "solution": "Exercice 1\nhttps : protocole sécurisé ; www.exemple.mr : nom de domaine (.mr : Mauritanie) ; /cours : page.\n\nExercice 2\nInterrupteur, bouton poussoir, télécommande, clavier, manette.\n\nExercice 3\nPersonne qui crée et gère une entreprise ; esprit d'initiative, persévérance, organisation, créativité."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Respect en ligne\nCite trois règles de respect d'autrui sur Internet.\n\nExercice 2 : Navigateur\nQu'est-ce qu'un navigateur ? Cite deux exemples.\n\nExercice 3 : Projet\nPropose une petite idée de projet réalisable dans ton quartier.",
+     "solution": "Exercice 1\nNe pas insulter, ne pas publier la photo de quelqu'un sans son accord, ne pas se moquer, respecter les opinions.\n\nExercice 2\nLogiciel pour consulter des pages Web ; Chrome, Firefox, Edge, Safari.\n\nExercice 3\nRéparation de téléphones, vente de jus locaux, cours de soutien… (idée justifiée)."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Éthique\nUn camarade copie un texte d'Internet et le présente comme le sien. Qu'en penses-tu ?\n\nExercice 2 : Navigateur\nQu'est-ce qu'un navigateur ? Cite deux exemples.\n\nExercice 3 : Entrepreneur\nQu'est-ce qu'un entrepreneur ? Cite deux qualités nécessaires.",
+     "solution": "Exercice 1\nC'est du plagiat ; il faut citer la source ou reformuler avec ses propres mots.\n\nExercice 2\nLogiciel pour consulter des pages Web ; Chrome, Firefox, Edge, Safari.\n\nExercice 3\nPersonne qui crée et gère une entreprise ; esprit d'initiative, persévérance, organisation, créativité."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adresse\nDécompose l'adresse https://www.exemple.mr/cours.\n\nExercice 2 : Commande\nDonne des exemples d'organes de commande sur des objets techniques.\n\nExercice 3 : Classement\nClasse : sac plastique, panier en fibres, piles usagées, papier, huile de vidange.\nPolluants / peu polluants.",
+     "solution": "Exercice 1\nhttps : protocole sécurisé ; www.exemple.mr : nom de domaine (.mr : Mauritanie) ; /cours : page.\n\nExercice 2\nInterrupteur, bouton poussoir, télécommande, clavier, manette.\n\nExercice 3\nPolluants : sac plastique, piles usagées, huile de vidange ; peu polluants : panier en fibres, papier."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Respect en ligne\nCite trois règles de respect d'autrui sur Internet.\n\nExercice 2 : Commande\nDonne des exemples d'organes de commande sur des objets techniques.\n\nExercice 3 : Projet\nPropose une petite idée de projet réalisable dans ton quartier.",
+     "solution": "Exercice 1\nNe pas insulter, ne pas publier la photo de quelqu'un sans son accord, ne pas se moquer, respecter les opinions.\n\nExercice 2\nInterrupteur, bouton poussoir, télécommande, clavier, manette.\n\nExercice 3\nRéparation de téléphones, vente de jus locaux, cours de soutien… (idée justifiée)."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adresse\nDécompose l'adresse https://www.exemple.mr/cours.\n\nExercice 2 : Mots-clés\nPropose des mots-clés pour trouver la population de la Mauritanie.\n\nExercice 3 : Classement\nClasse : sac plastique, panier en fibres, piles usagées, papier, huile de vidange.\nPolluants / peu polluants.",
+     "solution": "Exercice 1\nhttps : protocole sécurisé ; www.exemple.mr : nom de domaine (.mr : Mauritanie) ; /cours : page.\n\nExercice 2\npopulation Mauritanie (+ année).\n\nExercice 3\nPolluants : sac plastique, piles usagées, huile de vidange ; peu polluants : panier en fibres, papier."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adresse\nDécompose l'adresse https://www.exemple.mr/cours.\n\nExercice 2 : Navigateur\nQu'est-ce qu'un navigateur ? Cite deux exemples.\n\nExercice 3 : Projet\nPropose une petite idée de projet réalisable dans ton quartier.",
+     "solution": "Exercice 1\nhttps : protocole sécurisé ; www.exemple.mr : nom de domaine (.mr : Mauritanie) ; /cours : page.\n\nExercice 2\nLogiciel pour consulter des pages Web ; Chrome, Firefox, Edge, Safari.\n\nExercice 3\nRéparation de téléphones, vente de jus locaux, cours de soutien… (idée justifiée)."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Sites indésirables\nQue fais-tu si une page inappropriée s'ouvre pendant ta recherche ?\n\nExercice 2 : Moteur de recherche\nDifférence entre navigateur et moteur de recherche ?\n\nExercice 3 : Gestes\nCite quatre gestes pour protéger l'environnement.",
+     "solution": "Exercice 1\nJe la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur).\n\nExercice 2\nLe navigateur affiche les pages ; le moteur de recherche (Google, Bing) trouve les pages à partir de mots-clés.\n\nExercice 3\nNe pas jeter les déchets, trier, économiser l'eau et l'électricité, planter des arbres."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Sites indésirables\nQue fais-tu si une page inappropriée s'ouvre pendant ta recherche ?\n\nExercice 2 : Navigateur\nQu'est-ce qu'un navigateur ? Cite deux exemples.\n\nExercice 3 : Projet\nPropose une petite idée de projet réalisable dans ton quartier.",
+     "solution": "Exercice 1\nJe la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur).\n\nExercice 2\nLogiciel pour consulter des pages Web ; Chrome, Firefox, Edge, Safari.\n\nExercice 3\nRéparation de téléphones, vente de jus locaux, cours de soutien… (idée justifiée)."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Sites indésirables\nQue fais-tu si une page inappropriée s'ouvre pendant ta recherche ?\n\nExercice 2 : Moteur de recherche\nDifférence entre navigateur et moteur de recherche ?\n\nExercice 3 : Alimentation\nComment sont alimentés : une radio portable, un ordinateur de bureau, un panneau solaire d'éclairage ?",
+     "solution": "Exercice 1\nJe la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur).\n\nExercice 2\nLe navigateur affiche les pages ; le moteur de recherche (Google, Bing) trouve les pages à partir de mots-clés.\n\nExercice 3\nPiles/batterie – secteur (prise) – énergie solaire stockée dans une batterie."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Éthique\nUn camarade copie un texte d'Internet et le présente comme le sien. Qu'en penses-tu ?\n\nExercice 2 : Commande\nDonne des exemples d'organes de commande sur des objets techniques.\n\nExercice 3 : Alimentation\nComment sont alimentés : une radio portable, un ordinateur de bureau, un panneau solaire d'éclairage ?",
+     "solution": "Exercice 1\nC'est du plagiat ; il faut citer la source ou reformuler avec ses propres mots.\n\nExercice 2\nInterrupteur, bouton poussoir, télécommande, clavier, manette.\n\nExercice 3\nPiles/batterie – secteur (prise) – énergie solaire stockée dans une batterie."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Éthique\nUn camarade copie un texte d'Internet et le présente comme le sien. Qu'en penses-tu ?\n\nExercice 2 : Mots-clés\nPropose des mots-clés pour trouver la population de la Mauritanie.\n\nExercice 3 : Projet\nPropose une petite idée de projet réalisable dans ton quartier.",
+     "solution": "Exercice 1\nC'est du plagiat ; il faut citer la source ou reformuler avec ses propres mots.\n\nExercice 2\npopulation Mauritanie (+ année).\n\nExercice 3\nRéparation de téléphones, vente de jus locaux, cours de soutien… (idée justifiée)."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Sites indésirables\nQue fais-tu si une page inappropriée s'ouvre pendant ta recherche ?\n\nExercice 2 : Mots-clés\nPropose des mots-clés pour trouver la population de la Mauritanie.\n\nExercice 3 : Entrepreneur\nQu'est-ce qu'un entrepreneur ? Cite deux qualités nécessaires.",
+     "solution": "Exercice 1\nJe la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur).\n\nExercice 2\npopulation Mauritanie (+ année).\n\nExercice 3\nPersonne qui crée et gère une entreprise ; esprit d'initiative, persévérance, organisation, créativité."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Sites indésirables\nQue fais-tu si une page inappropriée s'ouvre pendant ta recherche ?\n\nExercice 2 : Mots-clés\nPropose des mots-clés pour trouver la population de la Mauritanie.\n\nExercice 3 : Projet\nPropose une petite idée de projet réalisable dans ton quartier.",
+     "solution": "Exercice 1\nJe la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur).\n\nExercice 2\npopulation Mauritanie (+ année).\n\nExercice 3\nRéparation de téléphones, vente de jus locaux, cours de soutien… (idée justifiée)."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Sites indésirables\nQue fais-tu si une page inappropriée s'ouvre pendant ta recherche ?\n\nExercice 2 : Commande\nDonne des exemples d'organes de commande sur des objets techniques.\n\nExercice 3 : Alimentation\nComment sont alimentés : une radio portable, un ordinateur de bureau, un panneau solaire d'éclairage ?",
+     "solution": "Exercice 1\nJe la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur).\n\nExercice 2\nInterrupteur, bouton poussoir, télécommande, clavier, manette.\n\nExercice 3\nPiles/batterie – secteur (prise) – énergie solaire stockée dans une batterie."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Éthique\nUn camarade copie un texte d'Internet et le présente comme le sien. Qu'en penses-tu ?\n\nExercice 2 : Mots-clés\nPropose des mots-clés pour trouver la population de la Mauritanie.\n\nExercice 3 : Classement\nClasse : sac plastique, panier en fibres, piles usagées, papier, huile de vidange.\nPolluants / peu polluants.",
+     "solution": "Exercice 1\nC'est du plagiat ; il faut citer la source ou reformuler avec ses propres mots.\n\nExercice 2\npopulation Mauritanie (+ année).\n\nExercice 3\nPolluants : sac plastique, piles usagées, huile de vidange ; peu polluants : panier en fibres, papier."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Éthique\nUn camarade copie un texte d'Internet et le présente comme le sien. Qu'en penses-tu ?\n\nExercice 2 : Mots-clés\nPropose des mots-clés pour trouver la population de la Mauritanie.\n\nExercice 3 : Entrepreneur\nQu'est-ce qu'un entrepreneur ? Cite deux qualités nécessaires.",
+     "solution": "Exercice 1\nC'est du plagiat ; il faut citer la source ou reformuler avec ses propres mots.\n\nExercice 2\npopulation Mauritanie (+ année).\n\nExercice 3\nPersonne qui crée et gère une entreprise ; esprit d'initiative, persévérance, organisation, créativité."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adresse\nDécompose l'adresse https://www.exemple.mr/cours.\n\nExercice 2 : Téléchargement\nCite deux précautions avant de télécharger un fichier.\n\nExercice 3 : Alimentation\nComment sont alimentés : une radio portable, un ordinateur de bureau, un panneau solaire d'éclairage ?",
+     "solution": "Exercice 1\nhttps : protocole sécurisé ; www.exemple.mr : nom de domaine (.mr : Mauritanie) ; /cours : page.\n\nExercice 2\nVérifier que le site est fiable, analyser le fichier avec un antivirus, respecter les droits d'auteur.\n\nExercice 3\nPiles/batterie – secteur (prise) – énergie solaire stockée dans une batterie."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Sites indésirables\nQue fais-tu si une page inappropriée s'ouvre pendant ta recherche ?\n\nExercice 2 : Mots-clés\nPropose des mots-clés pour trouver la population de la Mauritanie.\n\nExercice 3 : Alimentation\nComment sont alimentés : une radio portable, un ordinateur de bureau, un panneau solaire d'éclairage ?",
+     "solution": "Exercice 1\nJe la ferme immédiatement, je ne clique sur rien et j'informe un adulte (parent/professeur).\n\nExercice 2\npopulation Mauritanie (+ année).\n\nExercice 3\nPiles/batterie – secteur (prise) – énergie solaire stockée dans une batterie."
+    }
+   ]
+  }
+ ]
+}

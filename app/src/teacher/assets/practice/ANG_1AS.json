@@ -1,0 +1,945 @@
+{
+ "subject": "ANG",
+ "level": "1AS",
+ "lang": "en",
+ "series": [
+  {
+   "week": "Week 10",
+   "term": 1,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Different expressions of greetings",
+    "Leave taking expressions",
+    "Counting (1-50)",
+    "Introducing oneself, responding to introductions and asking for and giving personal information",
+    "The alphabet: sound and script",
+    "Demonstratives"
+   ],
+   "items": [
+    {
+     "title": "Correct",
+     "text": "Correct the mistakes: «These is my book.» – «That are my friends.»",
+     "solution": "This is my book. – Those are my friends."
+    },
+    {
+     "title": "Missing letters",
+     "text": "Complete: A B _ D E _ G H _ J",
+     "solution": "C, F, I"
+    },
+    {
+     "title": "Introduce yourself",
+     "text": "Write 5 sentences to introduce yourself (name, age, town, school, class).",
+     "solution": "My name is … I am … years old. I live in … I study at … I am in the first year."
+    },
+    {
+     "title": "Formal or informal",
+     "text": "Classify: Hi! – Good morning, sir. – Hey! – How do you do? – Hello.\nFormal / Informal.",
+     "solution": "Formal: Good morning, sir; How do you do? ; Informal: Hi!, Hey!, Hello."
+    },
+    {
+     "title": "Complete the dialogue",
+     "text": "Complete:\nAli: Hello, Fatima! How ___ you?\nFatima: I'm fine, ___ you. And you?\nAli: I'm ___, thanks.",
+     "solution": "are – thank – fine / good / OK"
+    },
+    {
+     "title": "Plural",
+     "text": "Put in the plural: This is a pen. – That is a chair.",
+     "solution": "These are pens. – Those are chairs."
+    },
+    {
+     "title": "Dialogue",
+     "text": "Put in order: a) See you tomorrow, Sidi. b) Bye, Ahmed! c) It's late. I must go home.",
+     "solution": "c – a – b"
+    },
+    {
+     "title": "Write in figures",
+     "text": "Write in figures: eleven – nineteen – forty-two – twenty-eight.",
+     "solution": "11 – 19 – 42 – 28"
+    },
+    {
+     "title": "Complete",
+     "text": "Complete: «See you ___ Monday.» – «Have a nice ___!» – «Take ___!»",
+     "solution": "on – day – care"
+    },
+    {
+     "title": "Missing numbers",
+     "text": "Complete: ten, twenty, ___, forty, ___.",
+     "solution": "thirty, fifty"
+    },
+    {
+     "title": "Order",
+     "text": "Put in alphabetical order: pen, apple, desk, ball, cat.",
+     "solution": "apple, ball, cat, desk, pen"
+    },
+    {
+     "title": "Sums",
+     "text": "Calculate and write the answer in letters: 12 + 8 = ? ; 25 + 15 = ? ; 30 − 9 = ?",
+     "solution": "twenty – forty – twenty-one"
+    },
+    {
+     "title": "Greetings and time",
+     "text": "Choose the right greeting: Good morning / Good afternoon / Good evening.\na) 8:00 a.m.  b) 3:00 p.m.  c) 8:00 p.m.",
+     "solution": "a) Good morning  b) Good afternoon  c) Good evening"
+    },
+    {
+     "title": "Spell",
+     "text": "Spell these words: book – pen – school.",
+     "solution": "B-O-O-K ; P-E-N ; S-C-H-O-O-L"
+    },
+    {
+     "title": "Questions",
+     "text": "Write the questions:\na) My name is Mariem.  b) I am 12.  c) I am from Atar.",
+     "solution": "a) What is your name?  b) How old are you?  c) Where are you from?"
+    },
+    {
+     "title": "Complete the card",
+     "text": "Read: «Hi! I'm Moussa. I'm 13. I'm from Kaédi. I'm a pupil.»\nComplete: Name: … / Age: … / Town: … / Job: …",
+     "solution": "Moussa / 13 / Kaédi / pupil"
+    },
+    {
+     "title": "Write in letters",
+     "text": "Write in letters: 7 – 13 – 20 – 34 – 50.",
+     "solution": "seven – thirteen – twenty – thirty-four – fifty"
+    },
+    {
+     "title": "Saying goodbye",
+     "text": "Write three ways to say goodbye.",
+     "solution": "Goodbye. – Bye! – See you later / See you tomorrow. – Good night. – Take care."
+    },
+    {
+     "title": "Questions",
+     "text": "Answer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "It is a ruler. – They are bags."
+    },
+    {
+     "title": "This or that",
+     "text": "Complete with this / that / these / those:\na) ___ book here is new.  b) ___ boys over there are my friends.  c) ___ pens here are blue.",
+     "solution": "a) This  b) Those  c) These"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Different expressions of greetings",
+    "Leave taking expressions",
+    "Counting (1-50)",
+    "Introducing oneself, responding to introductions and asking for and giving personal information",
+    "The alphabet: sound and script",
+    "Demonstratives"
+   ],
+   "items": [
+    {
+     "title": "Complete the card",
+     "text": "Read: «Hi! I'm Moussa. I'm 13. I'm from Kaédi. I'm a pupil.»\nComplete: Name: … / Age: … / Town: … / Job: …",
+     "solution": "Moussa / 13 / Kaédi / pupil"
+    },
+    {
+     "title": "Greetings and time",
+     "text": "Choose the right greeting: Good morning / Good afternoon / Good evening.\na) 8:00 a.m.  b) 3:00 p.m.  c) 8:00 p.m.",
+     "solution": "a) Good morning  b) Good afternoon  c) Good evening"
+    },
+    {
+     "title": "Plural",
+     "text": "Put in the plural: This is a pen. – That is a chair.",
+     "solution": "These are pens. – Those are chairs."
+    },
+    {
+     "title": "Vowels",
+     "text": "Write the five vowels of the English alphabet.",
+     "solution": "A, E, I, O, U"
+    },
+    {
+     "title": "Write in letters",
+     "text": "Write in letters: 7 – 13 – 20 – 34 – 50.",
+     "solution": "seven – thirteen – twenty – thirty-four – fifty"
+    },
+    {
+     "title": "Missing letters",
+     "text": "Complete: A B _ D E _ G H _ J",
+     "solution": "C, F, I"
+    },
+    {
+     "title": "Questions",
+     "text": "Answer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "It is a ruler. – They are bags."
+    },
+    {
+     "title": "Spell",
+     "text": "Spell these words: book – pen – school.",
+     "solution": "B-O-O-K ; P-E-N ; S-C-H-O-O-L"
+    },
+    {
+     "title": "Correct",
+     "text": "Correct the mistakes: «These is my book.» – «That are my friends.»",
+     "solution": "This is my book. – Those are my friends."
+    },
+    {
+     "title": "Answer",
+     "text": "How do you answer these?\na) How are you?  b) Nice to meet you.  c) Good morning!",
+     "solution": "a) I'm fine, thank you.  b) Nice to meet you too.  c) Good morning!"
+    },
+    {
+     "title": "Complete",
+     "text": "Complete: «See you ___ Monday.» – «Have a nice ___!» – «Take ___!»",
+     "solution": "on – day – care"
+    },
+    {
+     "title": "Missing numbers",
+     "text": "Complete: ten, twenty, ___, forty, ___.",
+     "solution": "thirty, fifty"
+    },
+    {
+     "title": "Formal or informal",
+     "text": "Classify: Hi! – Good morning, sir. – Hey! – How do you do? – Hello.\nFormal / Informal.",
+     "solution": "Formal: Good morning, sir; How do you do? ; Informal: Hi!, Hey!, Hello."
+    },
+    {
+     "title": "Sums",
+     "text": "Calculate and write the answer in letters: 12 + 8 = ? ; 25 + 15 = ? ; 30 − 9 = ?",
+     "solution": "twenty – forty – twenty-one"
+    },
+    {
+     "title": "Questions",
+     "text": "Write the questions:\na) My name is Mariem.  b) I am 12.  c) I am from Atar.",
+     "solution": "a) What is your name?  b) How old are you?  c) Where are you from?"
+    },
+    {
+     "title": "This or that",
+     "text": "Complete with this / that / these / those:\na) ___ book here is new.  b) ___ boys over there are my friends.  c) ___ pens here are blue.",
+     "solution": "a) This  b) Those  c) These"
+    },
+    {
+     "title": "Verb to be",
+     "text": "Complete with am / is / are: I ___ a pupil. She ___ my friend. We ___ in class 1.",
+     "solution": "am – is – are"
+    },
+    {
+     "title": "Order",
+     "text": "Put in alphabetical order: pen, apple, desk, ball, cat.",
+     "solution": "apple, ball, cat, desk, pen"
+    },
+    {
+     "title": "Introduce yourself",
+     "text": "Write 5 sentences to introduce yourself (name, age, town, school, class).",
+     "solution": "My name is … I am … years old. I live in … I study at … I am in the first year."
+    },
+    {
+     "title": "Write in figures",
+     "text": "Write in figures: eleven – nineteen – forty-two – twenty-eight.",
+     "solution": "11 – 19 – 42 – 28"
+    }
+   ]
+  },
+  {
+   "week": "Week 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Responding and giving classroom positive and negative commands/instructions",
+    "Telling and asking for the time",
+    "The seven days of the week",
+    "The twelve months of the year",
+    "Giving, asking for and writing the date",
+    "Asking for and giving one's family members' and friends' personal information",
+    "Demonstratives and relative pronouns",
+    "Ask about and say where people and things are located"
+   ],
+   "items": [
+    {
+     "title": "Describe",
+     "text": "Write 3 sentences to say where things are in your classroom.",
+     "solution": "The board is in front of us. The teacher's desk is next to the board. My bag is under my desk."
+    },
+    {
+     "title": "Birthday",
+     "text": "Ask and answer: When is your birthday?",
+     "solution": "When is your birthday? – My birthday is on the … of …"
+    },
+    {
+     "title": "Independence Day",
+     "text": "In which month is Mauritania's Independence Day? Which month comes after it?",
+     "solution": "November (28th) ; December"
+    },
+    {
+     "title": "Seasons",
+     "text": "Name the first and the last month of the year.",
+     "solution": "January ; December"
+    },
+    {
+     "title": "Question",
+     "text": "Write the question and answer: (10:00)",
+     "solution": "What time is it? It's ten o'clock."
+    },
+    {
+     "title": "Preposition",
+     "text": "Complete with the right preposition: I have English ___ Monday.",
+     "solution": "on"
+    },
+    {
+     "title": "Family text",
+     "text": "Read: «My name is Salma. My father is Ahmed. He is a teacher. My mother is Khadija. She is a nurse. I have two brothers.»\na) What is Salma's father's job?  b) How many brothers has she got?",
+     "solution": "a) He is a teacher.  b) She has got two brothers."
+    },
+    {
+     "title": "Days",
+     "text": "Write the days of the week in order starting with Monday.",
+     "solution": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
+    },
+    {
+     "title": "Commands",
+     "text": "Match: a) Open  b) Close  c) Sit  d) Listen — 1) down  2) the door  3) your book  4) to me",
+     "solution": "a-3, b-2, c-1, d-4"
+    },
+    {
+     "title": "Join",
+     "text": "Join with who/which: This is the girl. She helped me.",
+     "solution": "This is the girl who helped me."
+    },
+    {
+     "title": "Possessives",
+     "text": "Complete with his / her / their: Ali and ___ sister. Aminata and ___ brother. The children and ___ parents.",
+     "solution": "his – her – their"
+    },
+    {
+     "title": "Questions",
+     "text": "Answer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "It is a ruler. – They are bags."
+    },
+    {
+     "title": "Classroom language",
+     "text": "What does the pupil say?\na) He doesn't understand.  b) He wants to go out.  c) He didn't hear.",
+     "solution": "a) I don't understand.  b) May I go out, please?  c) Can you repeat, please?"
+    },
+    {
+     "title": "Ordinals",
+     "text": "Write the ordinal numbers: 1 – 2 – 3 – 5 – 12.",
+     "solution": "first – second – third – fifth – twelfth"
+    },
+    {
+     "title": "Who or which",
+     "text": "Complete with who / which: The man ___ teaches us is kind. The book ___ is on the desk is mine.",
+     "solution": "who ; which"
+    },
+    {
+     "title": "Write the date",
+     "text": "Write the dates in words: 28/11 – 01/01 – 03/05.",
+     "solution": "the twenty-eighth of November – the first of January – the third of May"
+    },
+    {
+     "title": "Plural",
+     "text": "Put in the plural: This is a pen. – That is a chair.",
+     "solution": "These are pens. – Those are chairs."
+    },
+    {
+     "title": "Before and after",
+     "text": "Complete: The day after Tuesday is ___. The day before Sunday is ___.",
+     "solution": "Wednesday ; Saturday"
+    },
+    {
+     "title": "Daily times",
+     "text": "Complete: I get up at ___ (6:30). School starts at ___ (8:00).",
+     "solution": "half past six ; eight o'clock"
+    },
+    {
+     "title": "Prepositions of place",
+     "text": "Complete with in / on / under / next to: The book is ___ the desk. The cat is ___ the bed. The pen is ___ the bag.",
+     "solution": "on – under – in (answers may vary)"
+    }
+   ]
+  },
+  {
+   "week": "Week 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Describing things giving their sizes, shapes, quality, colors, origin…",
+    "Describing people giving their height, weight, age, personal character, physical traits, state, clothing, body parts",
+    "Expressing what one can or can't do",
+    "Talking about routines and frequency of actions",
+    "Asking and answering questions about what one is presently doing",
+    "Asking and answering questions about what one likes/dislikes"
+   ],
+   "items": [
+    {
+     "title": "Describe a person",
+     "text": "Describe your best friend: height, age, hair, character.",
+     "solution": "My friend is tall and thin. He is 13. He has got short black hair. He is kind and funny."
+    },
+    {
+     "title": "Describe",
+     "text": "Describe your school bag (size, color, quality).",
+     "solution": "My bag is big and blue. It is new and strong."
+    },
+    {
+     "title": "Present continuous",
+     "text": "Complete: I ___ (read) now. They ___ (play) football. She ___ (write) a letter.",
+     "solution": "am reading – are playing – is writing"
+    },
+    {
+     "title": "Clothes",
+     "text": "What is he wearing? Write 2 sentences about a classmate.",
+     "solution": "He is wearing a white shirt and blue trousers."
+    },
+    {
+     "title": "Present simple",
+     "text": "Complete: She ___ (get) up at six. They ___ (go) to school by bus. He ___ (watch) TV every evening.",
+     "solution": "gets – go – watches"
+    },
+    {
+     "title": "Questions",
+     "text": "Complete: ___ you like milk? – Yes, I ___. / No, I ___.",
+     "solution": "Do – do – don't"
+    },
+    {
+     "title": "Questions",
+     "text": "Ask a question: (you – do – now)",
+     "solution": "What are you doing now?"
+    },
+    {
+     "title": "Third person",
+     "text": "Complete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "likes – doesn't like"
+    },
+    {
+     "title": "Likes and dislikes",
+     "text": "Write 2 things you like and 2 things you don't like.",
+     "solution": "I like football and rice with fish. I don't like rain and noise. (answers may vary)"
+    },
+    {
+     "title": "Questions",
+     "text": "Make questions: (you – play football) (she – cook)",
+     "solution": "Can you play football? – Can she cook?"
+    },
+    {
+     "title": "Adjectives",
+     "text": "Put the words in order: a) big / a / car / red  b) old / house / a / small",
+     "solution": "a) a big red car  b) a small old house"
+    },
+    {
+     "title": "Opposites",
+     "text": "Give the opposite: big – long – new – heavy.",
+     "solution": "small – short – old – light"
+    },
+    {
+     "title": "Frequency adverbs",
+     "text": "Put the adverb in the right place: I am late (never). She goes to the market (often).",
+     "solution": "I am never late. She often goes to the market."
+    },
+    {
+     "title": "Animals",
+     "text": "Complete with can or can't: A fish ___ swim. A cat ___ fly. A bird ___ fly.",
+     "solution": "can – can't – can"
+    },
+    {
+     "title": "Can / can't",
+     "text": "Write true sentences with can or can't: swim – ride a bike – speak French.",
+     "solution": "I can swim. I can't ride a bike. I can speak French. (answers may vary)"
+    },
+    {
+     "title": "My day",
+     "text": "Write 5 sentences about your daily routine.",
+     "solution": "I get up at six. I pray. I have breakfast. I go to school at half past seven. I do my homework in the evening."
+    },
+    {
+     "title": "Negative",
+     "text": "Make negative: He is sleeping. – We are watching TV.",
+     "solution": "He isn't sleeping. – We aren't watching TV."
+    },
+    {
+     "title": "Body parts",
+     "text": "Complete: We see with our ___. We hear with our ___. We walk with our ___.",
+     "solution": "eyes – ears – feet/legs"
+    },
+    {
+     "title": "Classroom language",
+     "text": "What does the pupil say?\na) He doesn't understand.  b) He wants to go out.  c) He didn't hear.",
+     "solution": "a) I don't understand.  b) May I go out, please?  c) Can you repeat, please?"
+    },
+    {
+     "title": "Write the date",
+     "text": "Write the dates in words: 28/11 – 01/01 – 03/05.",
+     "solution": "the twenty-eighth of November – the first of January – the third of May"
+    }
+   ]
+  },
+  {
+   "week": "Week 36",
+   "term": 3,
+   "kind": "final",
+   "title": "General revision of the year",
+   "covers": [
+    "Different expressions of greetings",
+    "Leave taking expressions",
+    "Counting (1-50)",
+    "Introducing oneself, responding to introductions and asking for and giving personal information",
+    "The alphabet: sound and script",
+    "Demonstratives",
+    "Responding and giving classroom positive and negative commands/instructions",
+    "Telling and asking for the time",
+    "The seven days of the week",
+    "The twelve months of the year"
+   ],
+   "items": [
+    {
+     "title": "Frequency adverbs",
+     "text": "Put the adverb in the right place: I am late (never). She goes to the market (often).",
+     "solution": "I am never late. She often goes to the market."
+    },
+    {
+     "title": "Negative commands",
+     "text": "Make negative: Talk! – Run in the classroom! – Eat in class!",
+     "solution": "Don't talk! – Don't run in the classroom! – Don't eat in class!"
+    },
+    {
+     "title": "Clothes",
+     "text": "What is he wearing? Write 2 sentences about a classmate.",
+     "solution": "He is wearing a white shirt and blue trousers."
+    },
+    {
+     "title": "Introduce yourself",
+     "text": "Write 5 sentences to introduce yourself (name, age, town, school, class).",
+     "solution": "My name is … I am … years old. I live in … I study at … I am in the first year."
+    },
+    {
+     "title": "Formal or informal",
+     "text": "Classify: Hi! – Good morning, sir. – Hey! – How do you do? – Hello.\nFormal / Informal.",
+     "solution": "Formal: Good morning, sir; How do you do? ; Informal: Hi!, Hey!, Hello."
+    },
+    {
+     "title": "Vowels",
+     "text": "Write the five vowels of the English alphabet.",
+     "solution": "A, E, I, O, U"
+    },
+    {
+     "title": "Good night or good evening",
+     "text": "When do we say «Good night»? When do we say «Good evening»?",
+     "solution": "«Good evening» when we meet someone in the evening ; «Good night» when we leave at night or go to bed."
+    },
+    {
+     "title": "Join",
+     "text": "Join with who/which: This is the girl. She helped me.",
+     "solution": "This is the girl who helped me."
+    },
+    {
+     "title": "Birthday",
+     "text": "Ask and answer: When is your birthday?",
+     "solution": "When is your birthday? – My birthday is on the … of …"
+    },
+    {
+     "title": "Adjectives",
+     "text": "Put the words in order: a) big / a / car / red  b) old / house / a / small",
+     "solution": "a) a big red car  b) a small old house"
+    },
+    {
+     "title": "Independence Day",
+     "text": "In which month is Mauritania's Independence Day? Which month comes after it?",
+     "solution": "November (28th) ; December"
+    },
+    {
+     "title": "Negative",
+     "text": "Make negative: He is sleeping. – We are watching TV.",
+     "solution": "He isn't sleeping. – We aren't watching TV."
+    },
+    {
+     "title": "Family text",
+     "text": "Read: «My name is Salma. My father is Ahmed. He is a teacher. My mother is Khadija. She is a nurse. I have two brothers.»\na) What is Salma's father's job?  b) How many brothers has she got?",
+     "solution": "a) He is a teacher.  b) She has got two brothers."
+    },
+    {
+     "title": "Complete the card",
+     "text": "Read: «Hi! I'm Moussa. I'm 13. I'm from Kaédi. I'm a pupil.»\nComplete: Name: … / Age: … / Town: … / Job: …",
+     "solution": "Moussa / 13 / Kaédi / pupil"
+    },
+    {
+     "title": "Saying goodbye",
+     "text": "Write three ways to say goodbye.",
+     "solution": "Goodbye. – Bye! – See you later / See you tomorrow. – Good night. – Take care."
+    },
+    {
+     "title": "Can / can't",
+     "text": "Write true sentences with can or can't: swim – ride a bike – speak French.",
+     "solution": "I can swim. I can't ride a bike. I can speak French. (answers may vary)"
+    },
+    {
+     "title": "Describe",
+     "text": "Write 3 sentences to say where things are in your classroom.",
+     "solution": "The board is in front of us. The teacher's desk is next to the board. My bag is under my desk."
+    },
+    {
+     "title": "Sums",
+     "text": "Calculate and write the answer in letters: 12 + 8 = ? ; 25 + 15 = ? ; 30 − 9 = ?",
+     "solution": "twenty – forty – twenty-one"
+    },
+    {
+     "title": "Write the date",
+     "text": "Write the dates in words: 28/11 – 01/01 – 03/05.",
+     "solution": "the twenty-eighth of November – the first of January – the third of May"
+    },
+    {
+     "title": "Days",
+     "text": "Write the days of the week in order starting with Monday.",
+     "solution": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Week 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Term 1 exam",
+   "covers": [
+    "Different expressions of greetings",
+    "Leave taking expressions",
+    "Counting (1-50)",
+    "Introducing oneself, responding to introductions and asking for and giving personal information",
+    "The alphabet: sound and script",
+    "Demonstratives"
+   ],
+   "items": [
+    {
+     "title": "Proposal 1 — Term 1 exam",
+     "text": "Exercise 1 : Answer\nHow do you answer these?\na) How are you?  b) Nice to meet you.  c) Good morning!\n\nExercise 2 : Sums\nCalculate and write the answer in letters: 12 + 8 = ? ; 25 + 15 = ? ; 30 − 9 = ?\n\nExercise 3 : Vowels\nWrite the five vowels of the English alphabet.",
+     "solution": "Exercise 1\na) I'm fine, thank you.  b) Nice to meet you too.  c) Good morning!\n\nExercise 2\ntwenty – forty – twenty-one\n\nExercise 3\nA, E, I, O, U"
+    },
+    {
+     "title": "Proposal 2 — Term 1 exam",
+     "text": "Exercise 1 : Answer\nHow do you answer these?\na) How are you?  b) Nice to meet you.  c) Good morning!\n\nExercise 2 : Sums\nCalculate and write the answer in letters: 12 + 8 = ? ; 25 + 15 = ? ; 30 − 9 = ?\n\nExercise 3 : Plural\nPut in the plural: This is a pen. – That is a chair.",
+     "solution": "Exercise 1\na) I'm fine, thank you.  b) Nice to meet you too.  c) Good morning!\n\nExercise 2\ntwenty – forty – twenty-one\n\nExercise 3\nThese are pens. – Those are chairs."
+    },
+    {
+     "title": "Proposal 3 — Term 1 exam",
+     "text": "Exercise 1 : Good night or good evening\nWhen do we say «Good night»? When do we say «Good evening»?\n\nExercise 2 : Complete the card\nRead: «Hi! I'm Moussa. I'm 13. I'm from Kaédi. I'm a pupil.»\nComplete: Name: … / Age: … / Town: … / Job: …\n\nExercise 3 : Correct\nCorrect the mistakes: «These is my book.» – «That are my friends.»",
+     "solution": "Exercise 1\n«Good evening» when we meet someone in the evening ; «Good night» when we leave at night or go to bed.\n\nExercise 2\nMoussa / 13 / Kaédi / pupil\n\nExercise 3\nThis is my book. – Those are my friends."
+    },
+    {
+     "title": "Proposal 4 — Term 1 exam",
+     "text": "Exercise 1 : Answer\nHow do you answer these?\na) How are you?  b) Nice to meet you.  c) Good morning!\n\nExercise 2 : Verb to be\nComplete with am / is / are: I ___ a pupil. She ___ my friend. We ___ in class 1.\n\nExercise 3 : Spell\nSpell these words: book – pen – school.",
+     "solution": "Exercise 1\na) I'm fine, thank you.  b) Nice to meet you too.  c) Good morning!\n\nExercise 2\nam – is – are\n\nExercise 3\nB-O-O-K ; P-E-N ; S-C-H-O-O-L"
+    },
+    {
+     "title": "Proposal 5 — Term 1 exam",
+     "text": "Exercise 1 : Complete the dialogue\nComplete:\nAli: Hello, Fatima! How ___ you?\nFatima: I'm fine, ___ you. And you?\nAli: I'm ___, thanks.\n\nExercise 2 : Questions\nWrite the questions:\na) My name is Mariem.  b) I am 12.  c) I am from Atar.\n\nExercise 3 : Order\nPut in alphabetical order: pen, apple, desk, ball, cat.",
+     "solution": "Exercise 1\nare – thank – fine / good / OK\n\nExercise 2\na) What is your name?  b) How old are you?  c) Where are you from?\n\nExercise 3\napple, ball, cat, desk, pen"
+    },
+    {
+     "title": "Proposal 6 — Term 1 exam",
+     "text": "Exercise 1 : Complete the dialogue\nComplete:\nAli: Hello, Fatima! How ___ you?\nFatima: I'm fine, ___ you. And you?\nAli: I'm ___, thanks.\n\nExercise 2 : Write in figures\nWrite in figures: eleven – nineteen – forty-two – twenty-eight.\n\nExercise 3 : Missing letters\nComplete: A B _ D E _ G H _ J",
+     "solution": "Exercise 1\nare – thank – fine / good / OK\n\nExercise 2\n11 – 19 – 42 – 28\n\nExercise 3\nC, F, I"
+    },
+    {
+     "title": "Proposal 7 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nPut in order: a) See you tomorrow, Sidi. b) Bye, Ahmed! c) It's late. I must go home.\n\nExercise 2 : Complete the card\nRead: «Hi! I'm Moussa. I'm 13. I'm from Kaédi. I'm a pupil.»\nComplete: Name: … / Age: … / Town: … / Job: …\n\nExercise 3 : Vowels\nWrite the five vowels of the English alphabet.",
+     "solution": "Exercise 1\nc – a – b\n\nExercise 2\nMoussa / 13 / Kaédi / pupil\n\nExercise 3\nA, E, I, O, U"
+    },
+    {
+     "title": "Proposal 8 — Term 1 exam",
+     "text": "Exercise 1 : Complete the dialogue\nComplete:\nAli: Hello, Fatima! How ___ you?\nFatima: I'm fine, ___ you. And you?\nAli: I'm ___, thanks.\n\nExercise 2 : Write in letters\nWrite in letters: 7 – 13 – 20 – 34 – 50.\n\nExercise 3 : Questions\nAnswer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "Exercise 1\nare – thank – fine / good / OK\n\nExercise 2\nseven – thirteen – twenty – thirty-four – fifty\n\nExercise 3\nIt is a ruler. – They are bags."
+    },
+    {
+     "title": "Proposal 9 — Term 1 exam",
+     "text": "Exercise 1 : Good night or good evening\nWhen do we say «Good night»? When do we say «Good evening»?\n\nExercise 2 : Questions\nWrite the questions:\na) My name is Mariem.  b) I am 12.  c) I am from Atar.\n\nExercise 3 : Spell\nSpell these words: book – pen – school.",
+     "solution": "Exercise 1\n«Good evening» when we meet someone in the evening ; «Good night» when we leave at night or go to bed.\n\nExercise 2\na) What is your name?  b) How old are you?  c) Where are you from?\n\nExercise 3\nB-O-O-K ; P-E-N ; S-C-H-O-O-L"
+    },
+    {
+     "title": "Proposal 10 — Term 1 exam",
+     "text": "Exercise 1 : Greetings and time\nChoose the right greeting: Good morning / Good afternoon / Good evening.\na) 8:00 a.m.  b) 3:00 p.m.  c) 8:00 p.m.\n\nExercise 2 : Introduce yourself\nWrite 5 sentences to introduce yourself (name, age, town, school, class).\n\nExercise 3 : Questions\nAnswer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "Exercise 1\na) Good morning  b) Good afternoon  c) Good evening\n\nExercise 2\nMy name is … I am … years old. I live in … I study at … I am in the first year.\n\nExercise 3\nIt is a ruler. – They are bags."
+    },
+    {
+     "title": "Proposal 11 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nPut in order: a) See you tomorrow, Sidi. b) Bye, Ahmed! c) It's late. I must go home.\n\nExercise 2 : Missing numbers\nComplete: ten, twenty, ___, forty, ___.\n\nExercise 3 : Correct\nCorrect the mistakes: «These is my book.» – «That are my friends.»",
+     "solution": "Exercise 1\nc – a – b\n\nExercise 2\nthirty, fifty\n\nExercise 3\nThis is my book. – Those are my friends."
+    },
+    {
+     "title": "Proposal 12 — Term 1 exam",
+     "text": "Exercise 1 : Answer\nHow do you answer these?\na) How are you?  b) Nice to meet you.  c) Good morning!\n\nExercise 2 : Sums\nCalculate and write the answer in letters: 12 + 8 = ? ; 25 + 15 = ? ; 30 − 9 = ?\n\nExercise 3 : Questions\nAnswer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "Exercise 1\na) I'm fine, thank you.  b) Nice to meet you too.  c) Good morning!\n\nExercise 2\ntwenty – forty – twenty-one\n\nExercise 3\nIt is a ruler. – They are bags."
+    },
+    {
+     "title": "Proposal 13 — Term 1 exam",
+     "text": "Exercise 1 : Complete the dialogue\nComplete:\nAli: Hello, Fatima! How ___ you?\nFatima: I'm fine, ___ you. And you?\nAli: I'm ___, thanks.\n\nExercise 2 : Questions\nWrite the questions:\na) My name is Mariem.  b) I am 12.  c) I am from Atar.\n\nExercise 3 : Plural\nPut in the plural: This is a pen. – That is a chair.",
+     "solution": "Exercise 1\nare – thank – fine / good / OK\n\nExercise 2\na) What is your name?  b) How old are you?  c) Where are you from?\n\nExercise 3\nThese are pens. – Those are chairs."
+    },
+    {
+     "title": "Proposal 14 — Term 1 exam",
+     "text": "Exercise 1 : Formal or informal\nClassify: Hi! – Good morning, sir. – Hey! – How do you do? – Hello.\nFormal / Informal.\n\nExercise 2 : Questions\nWrite the questions:\na) My name is Mariem.  b) I am 12.  c) I am from Atar.\n\nExercise 3 : Plural\nPut in the plural: This is a pen. – That is a chair.",
+     "solution": "Exercise 1\nFormal: Good morning, sir; How do you do? ; Informal: Hi!, Hey!, Hello.\n\nExercise 2\na) What is your name?  b) How old are you?  c) Where are you from?\n\nExercise 3\nThese are pens. – Those are chairs."
+    },
+    {
+     "title": "Proposal 15 — Term 1 exam",
+     "text": "Exercise 1 : Answer\nHow do you answer these?\na) How are you?  b) Nice to meet you.  c) Good morning!\n\nExercise 2 : Questions\nWrite the questions:\na) My name is Mariem.  b) I am 12.  c) I am from Atar.\n\nExercise 3 : Missing letters\nComplete: A B _ D E _ G H _ J",
+     "solution": "Exercise 1\na) I'm fine, thank you.  b) Nice to meet you too.  c) Good morning!\n\nExercise 2\na) What is your name?  b) How old are you?  c) Where are you from?\n\nExercise 3\nC, F, I"
+    },
+    {
+     "title": "Proposal 16 — Term 1 exam",
+     "text": "Exercise 1 : Formal or informal\nClassify: Hi! – Good morning, sir. – Hey! – How do you do? – Hello.\nFormal / Informal.\n\nExercise 2 : Write in figures\nWrite in figures: eleven – nineteen – forty-two – twenty-eight.\n\nExercise 3 : Spell\nSpell these words: book – pen – school.",
+     "solution": "Exercise 1\nFormal: Good morning, sir; How do you do? ; Informal: Hi!, Hey!, Hello.\n\nExercise 2\n11 – 19 – 42 – 28\n\nExercise 3\nB-O-O-K ; P-E-N ; S-C-H-O-O-L"
+    },
+    {
+     "title": "Proposal 17 — Term 1 exam",
+     "text": "Exercise 1 : Complete\nComplete: «See you ___ Monday.» – «Have a nice ___!» – «Take ___!»\n\nExercise 2 : Introduce yourself\nWrite 5 sentences to introduce yourself (name, age, town, school, class).\n\nExercise 3 : Correct\nCorrect the mistakes: «These is my book.» – «That are my friends.»",
+     "solution": "Exercise 1\non – day – care\n\nExercise 2\nMy name is … I am … years old. I live in … I study at … I am in the first year.\n\nExercise 3\nThis is my book. – Those are my friends."
+    },
+    {
+     "title": "Proposal 18 — Term 1 exam",
+     "text": "Exercise 1 : Greetings and time\nChoose the right greeting: Good morning / Good afternoon / Good evening.\na) 8:00 a.m.  b) 3:00 p.m.  c) 8:00 p.m.\n\nExercise 2 : Introduce yourself\nWrite 5 sentences to introduce yourself (name, age, town, school, class).\n\nExercise 3 : Spell\nSpell these words: book – pen – school.",
+     "solution": "Exercise 1\na) Good morning  b) Good afternoon  c) Good evening\n\nExercise 2\nMy name is … I am … years old. I live in … I study at … I am in the first year.\n\nExercise 3\nB-O-O-K ; P-E-N ; S-C-H-O-O-L"
+    },
+    {
+     "title": "Proposal 19 — Term 1 exam",
+     "text": "Exercise 1 : Saying goodbye\nWrite three ways to say goodbye.\n\nExercise 2 : Sums\nCalculate and write the answer in letters: 12 + 8 = ? ; 25 + 15 = ? ; 30 − 9 = ?\n\nExercise 3 : Plural\nPut in the plural: This is a pen. – That is a chair.",
+     "solution": "Exercise 1\nGoodbye. – Bye! – See you later / See you tomorrow. – Good night. – Take care.\n\nExercise 2\ntwenty – forty – twenty-one\n\nExercise 3\nThese are pens. – Those are chairs."
+    },
+    {
+     "title": "Proposal 20 — Term 1 exam",
+     "text": "Exercise 1 : Formal or informal\nClassify: Hi! – Good morning, sir. – Hey! – How do you do? – Hello.\nFormal / Informal.\n\nExercise 2 : Complete the card\nRead: «Hi! I'm Moussa. I'm 13. I'm from Kaédi. I'm a pupil.»\nComplete: Name: … / Age: … / Town: … / Job: …\n\nExercise 3 : Questions\nAnswer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "Exercise 1\nFormal: Good morning, sir; How do you do? ; Informal: Hi!, Hey!, Hello.\n\nExercise 2\nMoussa / 13 / Kaédi / pupil\n\nExercise 3\nIt is a ruler. – They are bags."
+    }
+   ]
+  },
+  {
+   "week": "Week 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Term 2 exam",
+   "covers": [
+    "Responding and giving classroom positive and negative commands/instructions",
+    "Telling and asking for the time",
+    "The seven days of the week",
+    "The twelve months of the year",
+    "Giving, asking for and writing the date",
+    "Asking for and giving one's family members' and friends' personal information",
+    "Demonstratives and relative pronouns",
+    "Ask about and say where people and things are located"
+   ],
+   "items": [
+    {
+     "title": "Proposal 1 — Term 2 exam",
+     "text": "Exercise 1 : Classroom language\nWhat does the pupil say?\na) He doesn't understand.  b) He wants to go out.  c) He didn't hear.\n\nExercise 2 : Ordinals\nWrite the ordinal numbers: 1 – 2 – 3 – 5 – 12.\n\nExercise 3 : Prepositions of place\nComplete with in / on / under / next to: The book is ___ the desk. The cat is ___ the bed. The pen is ___ the bag.",
+     "solution": "Exercise 1\na) I don't understand.  b) May I go out, please?  c) Can you repeat, please?\n\nExercise 2\nfirst – second – third – fifth – twelfth\n\nExercise 3\non – under – in (answers may vary)"
+    },
+    {
+     "title": "Proposal 2 — Term 2 exam",
+     "text": "Exercise 1 : Classroom language\nWhat does the pupil say?\na) He doesn't understand.  b) He wants to go out.  c) He didn't hear.\n\nExercise 2 : Months\nWrite the months of the year in order.\n\nExercise 3 : Questions\nAnswer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "Exercise 1\na) I don't understand.  b) May I go out, please?  c) Can you repeat, please?\n\nExercise 2\nJanuary, February, March, April, May, June, July, August, September, October, November, December\n\nExercise 3\nIt is a ruler. – They are bags."
+    },
+    {
+     "title": "Proposal 3 — Term 2 exam",
+     "text": "Exercise 1 : What time is it\nWrite the time in words: 7:00 – 9:30 – 4:15 – 11:45.\n\nExercise 2 : Family text\nRead: «My name is Salma. My father is Ahmed. He is a teacher. My mother is Khadija. She is a nurse. I have two brothers.»\na) What is Salma's father's job?  b) How many brothers has she got?\n\nExercise 3 : Questions\nAnswer: What is this? (a ruler) – What are those? (bags)",
+     "solution": "Exercise 1\nseven o'clock – half past nine – a quarter past four – a quarter to twelve\n\nExercise 2\na) He is a teacher.  b) She has got two brothers.\n\nExercise 3\nIt is a ruler. – They are bags."
+    },
+    {
+     "title": "Proposal 4 — Term 2 exam",
+     "text": "Exercise 1 : What time is it\nWrite the time in words: 7:00 – 9:30 – 4:15 – 11:45.\n\nExercise 2 : Months\nWrite the months of the year in order.\n\nExercise 3 : Prepositions of place\nComplete with in / on / under / next to: The book is ___ the desk. The cat is ___ the bed. The pen is ___ the bag.",
+     "solution": "Exercise 1\nseven o'clock – half past nine – a quarter past four – a quarter to twelve\n\nExercise 2\nJanuary, February, March, April, May, June, July, August, September, October, November, December\n\nExercise 3\non – under – in (answers may vary)"
+    },
+    {
+     "title": "Proposal 5 — Term 2 exam",
+     "text": "Exercise 1 : Before and after\nComplete: The day after Tuesday is ___. The day before Sunday is ___.\n\nExercise 2 : Independence Day\nIn which month is Mauritania's Independence Day? Which month comes after it?\n\nExercise 3 : Prepositions of place\nComplete with in / on / under / next to: The book is ___ the desk. The cat is ___ the bed. The pen is ___ the bag.",
+     "solution": "Exercise 1\nWednesday ; Saturday\n\nExercise 2\nNovember (28th) ; December\n\nExercise 3\non – under – in (answers may vary)"
+    },
+    {
+     "title": "Proposal 6 — Term 2 exam",
+     "text": "Exercise 1 : Preposition\nComplete with the right preposition: I have English ___ Monday.\n\nExercise 2 : Independence Day\nIn which month is Mauritania's Independence Day? Which month comes after it?\n\nExercise 3 : This or that\nComplete with this / that / these / those:\na) ___ book here is new.  b) ___ boys over there are my friends.  c) ___ pens here are blue.",
+     "solution": "Exercise 1\non\n\nExercise 2\nNovember (28th) ; December\n\nExercise 3\na) This  b) Those  c) These"
+    },
+    {
+     "title": "Proposal 7 — Term 2 exam",
+     "text": "Exercise 1 : Negative commands\nMake negative: Talk! – Run in the classroom! – Eat in class!\n\nExercise 2 : Seasons\nName the first and the last month of the year.\n\nExercise 3 : Join\nJoin with who/which: This is the girl. She helped me.",
+     "solution": "Exercise 1\nDon't talk! – Don't run in the classroom! – Don't eat in class!\n\nExercise 2\nJanuary ; December\n\nExercise 3\nThis is the girl who helped me."
+    },
+    {
+     "title": "Proposal 8 — Term 2 exam",
+     "text": "Exercise 1 : Preposition\nComplete with the right preposition: I have English ___ Monday.\n\nExercise 2 : Ordinals\nWrite the ordinal numbers: 1 – 2 – 3 – 5 – 12.\n\nExercise 3 : Plural\nPut in the plural: This is a pen. – That is a chair.",
+     "solution": "Exercise 1\non\n\nExercise 2\nfirst – second – third – fifth – twelfth\n\nExercise 3\nThese are pens. – Those are chairs."
+    },
+    {
+     "title": "Proposal 9 — Term 2 exam",
+     "text": "Exercise 1 : Days\nWrite the days of the week in order starting with Monday.\n\nExercise 2 : Birthday\nAsk and answer: When is your birthday?\n\nExercise 3 : This or that\nComplete with this / that / these / those:\na) ___ book here is new.  b) ___ boys over there are my friends.  c) ___ pens here are blue.",
+     "solution": "Exercise 1\nMonday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n\nExercise 2\nWhen is your birthday? – My birthday is on the … of …\n\nExercise 3\na) This  b) Those  c) These"
+    },
+    {
+     "title": "Proposal 10 — Term 2 exam",
+     "text": "Exercise 1 : Days\nWrite the days of the week in order starting with Monday.\n\nExercise 2 : Birthday\nAsk and answer: When is your birthday?\n\nExercise 3 : Where is it\nAsk and answer: (my bag – behind the door)",
+     "solution": "Exercise 1\nMonday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n\nExercise 2\nWhen is your birthday? – My birthday is on the … of …\n\nExercise 3\nWhere is your bag? It's behind the door."
+    },
+    {
+     "title": "Proposal 11 — Term 2 exam",
+     "text": "Exercise 1 : What time is it\nWrite the time in words: 7:00 – 9:30 – 4:15 – 11:45.\n\nExercise 2 : Family text\nRead: «My name is Salma. My father is Ahmed. He is a teacher. My mother is Khadija. She is a nurse. I have two brothers.»\na) What is Salma's father's job?  b) How many brothers has she got?\n\nExercise 3 : Join\nJoin with who/which: This is the girl. She helped me.",
+     "solution": "Exercise 1\nseven o'clock – half past nine – a quarter past four – a quarter to twelve\n\nExercise 2\na) He is a teacher.  b) She has got two brothers.\n\nExercise 3\nThis is the girl who helped me."
+    },
+    {
+     "title": "Proposal 12 — Term 2 exam",
+     "text": "Exercise 1 : Days\nWrite the days of the week in order starting with Monday.\n\nExercise 2 : Family words\nComplete: My father's son is my ___. My mother's mother is my ___.\n\nExercise 3 : Prepositions of place\nComplete with in / on / under / next to: The book is ___ the desk. The cat is ___ the bed. The pen is ___ the bag.",
+     "solution": "Exercise 1\nMonday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n\nExercise 2\nbrother ; grandmother\n\nExercise 3\non – under – in (answers may vary)"
+    },
+    {
+     "title": "Proposal 13 — Term 2 exam",
+     "text": "Exercise 1 : Before and after\nComplete: The day after Tuesday is ___. The day before Sunday is ___.\n\nExercise 2 : Family text\nRead: «My name is Salma. My father is Ahmed. He is a teacher. My mother is Khadija. She is a nurse. I have two brothers.»\na) What is Salma's father's job?  b) How many brothers has she got?\n\nExercise 3 : Describe\nWrite 3 sentences to say where things are in your classroom.",
+     "solution": "Exercise 1\nWednesday ; Saturday\n\nExercise 2\na) He is a teacher.  b) She has got two brothers.\n\nExercise 3\nThe board is in front of us. The teacher's desk is next to the board. My bag is under my desk."
+    },
+    {
+     "title": "Proposal 14 — Term 2 exam",
+     "text": "Exercise 1 : Classroom language\nWhat does the pupil say?\na) He doesn't understand.  b) He wants to go out.  c) He didn't hear.\n\nExercise 2 : Ordinals\nWrite the ordinal numbers: 1 – 2 – 3 – 5 – 12.\n\nExercise 3 : Who or which\nComplete with who / which: The man ___ teaches us is kind. The book ___ is on the desk is mine.",
+     "solution": "Exercise 1\na) I don't understand.  b) May I go out, please?  c) Can you repeat, please?\n\nExercise 2\nfirst – second – third – fifth – twelfth\n\nExercise 3\nwho ; which"
+    },
+    {
+     "title": "Proposal 15 — Term 2 exam",
+     "text": "Exercise 1 : Commands\nMatch: a) Open  b) Close  c) Sit  d) Listen — 1) down  2) the door  3) your book  4) to me\n\nExercise 2 : Seasons\nName the first and the last month of the year.\n\nExercise 3 : Prepositions of place\nComplete with in / on / under / next to: The book is ___ the desk. The cat is ___ the bed. The pen is ___ the bag.",
+     "solution": "Exercise 1\na-3, b-2, c-1, d-4\n\nExercise 2\nJanuary ; December\n\nExercise 3\non – under – in (answers may vary)"
+    },
+    {
+     "title": "Proposal 16 — Term 2 exam",
+     "text": "Exercise 1 : Before and after\nComplete: The day after Tuesday is ___. The day before Sunday is ___.\n\nExercise 2 : Seasons\nName the first and the last month of the year.\n\nExercise 3 : This or that\nComplete with this / that / these / those:\na) ___ book here is new.  b) ___ boys over there are my friends.  c) ___ pens here are blue.",
+     "solution": "Exercise 1\nWednesday ; Saturday\n\nExercise 2\nJanuary ; December\n\nExercise 3\na) This  b) Those  c) These"
+    },
+    {
+     "title": "Proposal 17 — Term 2 exam",
+     "text": "Exercise 1 : Commands\nMatch: a) Open  b) Close  c) Sit  d) Listen — 1) down  2) the door  3) your book  4) to me\n\nExercise 2 : Seasons\nName the first and the last month of the year.\n\nExercise 3 : Where is it\nAsk and answer: (my bag – behind the door)",
+     "solution": "Exercise 1\na-3, b-2, c-1, d-4\n\nExercise 2\nJanuary ; December\n\nExercise 3\nWhere is your bag? It's behind the door."
+    },
+    {
+     "title": "Proposal 18 — Term 2 exam",
+     "text": "Exercise 1 : Question\nWrite the question and answer: (10:00)\n\nExercise 2 : Write the date\nWrite the dates in words: 28/11 – 01/01 – 03/05.\n\nExercise 3 : Plural\nPut in the plural: This is a pen. – That is a chair.",
+     "solution": "Exercise 1\nWhat time is it? It's ten o'clock.\n\nExercise 2\nthe twenty-eighth of November – the first of January – the third of May\n\nExercise 3\nThese are pens. – Those are chairs."
+    },
+    {
+     "title": "Proposal 19 — Term 2 exam",
+     "text": "Exercise 1 : Daily times\nComplete: I get up at ___ (6:30). School starts at ___ (8:00).\n\nExercise 2 : Birthday\nAsk and answer: When is your birthday?\n\nExercise 3 : Prepositions of place\nComplete with in / on / under / next to: The book is ___ the desk. The cat is ___ the bed. The pen is ___ the bag.",
+     "solution": "Exercise 1\nhalf past six ; eight o'clock\n\nExercise 2\nWhen is your birthday? – My birthday is on the … of …\n\nExercise 3\non – under – in (answers may vary)"
+    },
+    {
+     "title": "Proposal 20 — Term 2 exam",
+     "text": "Exercise 1 : Classroom language\nWhat does the pupil say?\na) He doesn't understand.  b) He wants to go out.  c) He didn't hear.\n\nExercise 2 : Seasons\nName the first and the last month of the year.\n\nExercise 3 : This or that\nComplete with this / that / these / those:\na) ___ book here is new.  b) ___ boys over there are my friends.  c) ___ pens here are blue.",
+     "solution": "Exercise 1\na) I don't understand.  b) May I go out, please?  c) Can you repeat, please?\n\nExercise 2\nJanuary ; December\n\nExercise 3\na) This  b) Those  c) These"
+    }
+   ]
+  },
+  {
+   "week": "Week 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Term 3 exam",
+   "covers": [
+    "Describing things giving their sizes, shapes, quality, colors, origin…",
+    "Describing people giving their height, weight, age, personal character, physical traits, state, clothing, body parts",
+    "Expressing what one can or can't do",
+    "Talking about routines and frequency of actions",
+    "Asking and answering questions about what one is presently doing",
+    "Asking and answering questions about what one likes/dislikes"
+   ],
+   "items": [
+    {
+     "title": "Proposal 1 — Term 3 exam",
+     "text": "Exercise 1 : Body parts\nComplete: We see with our ___. We hear with our ___. We walk with our ___.\n\nExercise 2 : My day\nWrite 5 sentences about your daily routine.\n\nExercise 3 : Third person\nComplete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "Exercise 1\neyes – ears – feet/legs\n\nExercise 2\nI get up at six. I pray. I have breakfast. I go to school at half past seven. I do my homework in the evening.\n\nExercise 3\nlikes – doesn't like"
+    },
+    {
+     "title": "Proposal 2 — Term 3 exam",
+     "text": "Exercise 1 : Clothes\nWhat is he wearing? Write 2 sentences about a classmate.\n\nExercise 2 : Questions\nMake questions: (you – play football) (she – cook)\n\nExercise 3 : Negative\nMake negative: He is sleeping. – We are watching TV.",
+     "solution": "Exercise 1\nHe is wearing a white shirt and blue trousers.\n\nExercise 2\nCan you play football? – Can she cook?\n\nExercise 3\nHe isn't sleeping. – We aren't watching TV."
+    },
+    {
+     "title": "Proposal 3 — Term 3 exam",
+     "text": "Exercise 1 : Adjectives\nPut the words in order: a) big / a / car / red  b) old / house / a / small\n\nExercise 2 : My day\nWrite 5 sentences about your daily routine.\n\nExercise 3 : Third person\nComplete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "Exercise 1\na) a big red car  b) a small old house\n\nExercise 2\nI get up at six. I pray. I have breakfast. I go to school at half past seven. I do my homework in the evening.\n\nExercise 3\nlikes – doesn't like"
+    },
+    {
+     "title": "Proposal 4 — Term 3 exam",
+     "text": "Exercise 1 : Describe\nDescribe your school bag (size, color, quality).\n\nExercise 2 : My day\nWrite 5 sentences about your daily routine.\n\nExercise 3 : Questions\nComplete: ___ you like milk? – Yes, I ___. / No, I ___.",
+     "solution": "Exercise 1\nMy bag is big and blue. It is new and strong.\n\nExercise 2\nI get up at six. I pray. I have breakfast. I go to school at half past seven. I do my homework in the evening.\n\nExercise 3\nDo – do – don't"
+    },
+    {
+     "title": "Proposal 5 — Term 3 exam",
+     "text": "Exercise 1 : Body parts\nComplete: We see with our ___. We hear with our ___. We walk with our ___.\n\nExercise 2 : Animals\nComplete with can or can't: A fish ___ swim. A cat ___ fly. A bird ___ fly.\n\nExercise 3 : Likes and dislikes\nWrite 2 things you like and 2 things you don't like.",
+     "solution": "Exercise 1\neyes – ears – feet/legs\n\nExercise 2\ncan – can't – can\n\nExercise 3\nI like football and rice with fish. I don't like rain and noise. (answers may vary)"
+    },
+    {
+     "title": "Proposal 6 — Term 3 exam",
+     "text": "Exercise 1 : Describe a person\nDescribe your best friend: height, age, hair, character.\n\nExercise 2 : Frequency adverbs\nPut the adverb in the right place: I am late (never). She goes to the market (often).\n\nExercise 3 : Third person\nComplete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "Exercise 1\nMy friend is tall and thin. He is 13. He has got short black hair. He is kind and funny.\n\nExercise 2\nI am never late. She often goes to the market.\n\nExercise 3\nlikes – doesn't like"
+    },
+    {
+     "title": "Proposal 7 — Term 3 exam",
+     "text": "Exercise 1 : Clothes\nWhat is he wearing? Write 2 sentences about a classmate.\n\nExercise 2 : Present simple\nComplete: She ___ (get) up at six. They ___ (go) to school by bus. He ___ (watch) TV every evening.\n\nExercise 3 : Present continuous\nComplete: I ___ (read) now. They ___ (play) football. She ___ (write) a letter.",
+     "solution": "Exercise 1\nHe is wearing a white shirt and blue trousers.\n\nExercise 2\ngets – go – watches\n\nExercise 3\nam reading – are playing – is writing"
+    },
+    {
+     "title": "Proposal 8 — Term 3 exam",
+     "text": "Exercise 1 : Clothes\nWhat is he wearing? Write 2 sentences about a classmate.\n\nExercise 2 : Animals\nComplete with can or can't: A fish ___ swim. A cat ___ fly. A bird ___ fly.\n\nExercise 3 : Questions\nComplete: ___ you like milk? – Yes, I ___. / No, I ___.",
+     "solution": "Exercise 1\nHe is wearing a white shirt and blue trousers.\n\nExercise 2\ncan – can't – can\n\nExercise 3\nDo – do – don't"
+    },
+    {
+     "title": "Proposal 9 — Term 3 exam",
+     "text": "Exercise 1 : Clothes\nWhat is he wearing? Write 2 sentences about a classmate.\n\nExercise 2 : My day\nWrite 5 sentences about your daily routine.\n\nExercise 3 : Third person\nComplete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "Exercise 1\nHe is wearing a white shirt and blue trousers.\n\nExercise 2\nI get up at six. I pray. I have breakfast. I go to school at half past seven. I do my homework in the evening.\n\nExercise 3\nlikes – doesn't like"
+    },
+    {
+     "title": "Proposal 10 — Term 3 exam",
+     "text": "Exercise 1 : Adjectives\nPut the words in order: a) big / a / car / red  b) old / house / a / small\n\nExercise 2 : Can / can't\nWrite true sentences with can or can't: swim – ride a bike – speak French.\n\nExercise 3 : Third person\nComplete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "Exercise 1\na) a big red car  b) a small old house\n\nExercise 2\nI can swim. I can't ride a bike. I can speak French. (answers may vary)\n\nExercise 3\nlikes – doesn't like"
+    },
+    {
+     "title": "Proposal 11 — Term 3 exam",
+     "text": "Exercise 1 : Adjectives\nPut the words in order: a) big / a / car / red  b) old / house / a / small\n\nExercise 2 : Present simple\nComplete: She ___ (get) up at six. They ___ (go) to school by bus. He ___ (watch) TV every evening.\n\nExercise 3 : Present continuous\nComplete: I ___ (read) now. They ___ (play) football. She ___ (write) a letter.",
+     "solution": "Exercise 1\na) a big red car  b) a small old house\n\nExercise 2\ngets – go – watches\n\nExercise 3\nam reading – are playing – is writing"
+    },
+    {
+     "title": "Proposal 12 — Term 3 exam",
+     "text": "Exercise 1 : Describe\nDescribe your school bag (size, color, quality).\n\nExercise 2 : Questions\nMake questions: (you – play football) (she – cook)\n\nExercise 3 : Third person\nComplete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "Exercise 1\nMy bag is big and blue. It is new and strong.\n\nExercise 2\nCan you play football? – Can she cook?\n\nExercise 3\nlikes – doesn't like"
+    },
+    {
+     "title": "Proposal 13 — Term 3 exam",
+     "text": "Exercise 1 : Body parts\nComplete: We see with our ___. We hear with our ___. We walk with our ___.\n\nExercise 2 : Can / can't\nWrite true sentences with can or can't: swim – ride a bike – speak French.\n\nExercise 3 : Likes and dislikes\nWrite 2 things you like and 2 things you don't like.",
+     "solution": "Exercise 1\neyes – ears – feet/legs\n\nExercise 2\nI can swim. I can't ride a bike. I can speak French. (answers may vary)\n\nExercise 3\nI like football and rice with fish. I don't like rain and noise. (answers may vary)"
+    },
+    {
+     "title": "Proposal 14 — Term 3 exam",
+     "text": "Exercise 1 : Opposites\nGive the opposite: big – long – new – heavy.\n\nExercise 2 : Questions\nMake questions: (you – play football) (she – cook)\n\nExercise 3 : Third person\nComplete: My sister ___ (like) reading. My brother ___ (not like) vegetables.",
+     "solution": "Exercise 1\nsmall – short – old – light\n\nExercise 2\nCan you play football? – Can she cook?\n\nExercise 3\nlikes – doesn't like"
+    },
+    {
+     "title": "Proposal 15 — Term 3 exam",
+     "text": "Exercise 1 : Describe a person\nDescribe your best friend: height, age, hair, character.\n\nExercise 2 : Frequency adverbs\nPut the adverb in the right place: I am late (never). She goes to the market (often).\n\nExercise 3 : Questions\nComplete: ___ you like milk? – Yes, I ___. / No, I ___.",
+     "solution": "Exercise 1\nMy friend is tall and thin. He is 13. He has got short black hair. He is kind and funny.\n\nExercise 2\nI am never late. She often goes to the market.\n\nExercise 3\nDo – do – don't"
+    },
+    {
+     "title": "Proposal 16 — Term 3 exam",
+     "text": "Exercise 1 : Opposites\nGive the opposite: big – long – new – heavy.\n\nExercise 2 : Animals\nComplete with can or can't: A fish ___ swim. A cat ___ fly. A bird ___ fly.\n\nExercise 3 : Present continuous\nComplete: I ___ (read) now. They ___ (play) football. She ___ (write) a letter.",
+     "solution": "Exercise 1\nsmall – short – old – light\n\nExercise 2\ncan – can't – can\n\nExercise 3\nam reading – are playing – is writing"
+    },
+    {
+     "title": "Proposal 17 — Term 3 exam",
+     "text": "Exercise 1 : Opposites\nGive the opposite: big – long – new – heavy.\n\nExercise 2 : Frequency adverbs\nPut the adverb in the right place: I am late (never). She goes to the market (often).\n\nExercise 3 : Questions\nAsk a question: (you – do – now)",
+     "solution": "Exercise 1\nsmall – short – old – light\n\nExercise 2\nI am never late. She often goes to the market.\n\nExercise 3\nWhat are you doing now?"
+    },
+    {
+     "title": "Proposal 18 — Term 3 exam",
+     "text": "Exercise 1 : Opposites\nGive the opposite: big – long – new – heavy.\n\nExercise 2 : My day\nWrite 5 sentences about your daily routine.\n\nExercise 3 : Present continuous\nComplete: I ___ (read) now. They ___ (play) football. She ___ (write) a letter.",
+     "solution": "Exercise 1\nsmall – short – old – light\n\nExercise 2\nI get up at six. I pray. I have breakfast. I go to school at half past seven. I do my homework in the evening.\n\nExercise 3\nam reading – are playing – is writing"
+    },
+    {
+     "title": "Proposal 19 — Term 3 exam",
+     "text": "Exercise 1 : Describe\nDescribe your school bag (size, color, quality).\n\nExercise 2 : Can / can't\nWrite true sentences with can or can't: swim – ride a bike – speak French.\n\nExercise 3 : Negative\nMake negative: He is sleeping. – We are watching TV.",
+     "solution": "Exercise 1\nMy bag is big and blue. It is new and strong.\n\nExercise 2\nI can swim. I can't ride a bike. I can speak French. (answers may vary)\n\nExercise 3\nHe isn't sleeping. – We aren't watching TV."
+    },
+    {
+     "title": "Proposal 20 — Term 3 exam",
+     "text": "Exercise 1 : Describe\nDescribe your school bag (size, color, quality).\n\nExercise 2 : Animals\nComplete with can or can't: A fish ___ swim. A cat ___ fly. A bird ___ fly.\n\nExercise 3 : Present continuous\nComplete: I ___ (read) now. They ___ (play) football. She ___ (write) a letter.",
+     "solution": "Exercise 1\nMy bag is big and blue. It is new and strong.\n\nExercise 2\ncan – can't – can\n\nExercise 3\nam reading – are playing – is writing"
+    }
+   ]
+  }
+ ]
+}

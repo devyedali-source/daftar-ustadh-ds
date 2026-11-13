@@ -1,0 +1,929 @@
+{
+ "subject": "ANG",
+ "level": "2AS",
+ "lang": "en",
+ "series": [
+  {
+   "week": "Week 9",
+   "term": 1,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Different expressions of greetings",
+    "Different expressions of leave taking",
+    "Introducing one's family members, friends…, responding to introductions and asking for and giving personal information",
+    "Getting someone to clarify or repeat something they had said"
+   ],
+   "items": [
+    {
+     "title": "Formal / informal",
+     "text": "Rewrite in a formal way: «Hi! What's up?»",
+     "solution": "Good morning/afternoon. How are you?"
+    },
+    {
+     "title": "Right greeting",
+     "text": "What do you say?\na) You meet your teacher at 9 a.m.  b) You meet a friend.  c) You meet a visitor for the first time.",
+     "solution": "a) Good morning, sir/madam.  b) Hi! How are you?  c) How do you do? / Nice to meet you."
+    },
+    {
+     "title": "Family members",
+     "text": "Complete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "cousin – niece – grandfather"
+    },
+    {
+     "title": "Spell",
+     "text": "What do you say when you don't know how to write a name?",
+     "solution": "How do you spell it, please?"
+    },
+    {
+     "title": "Complete",
+     "text": "Complete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»",
+     "solution": "meeting/seeing – (no word) / next week ; to"
+    },
+    {
+     "title": "Speak slowly",
+     "text": "Your teacher speaks fast. What do you say politely?",
+     "solution": "Could you speak more slowly, please?"
+    },
+    {
+     "title": "Reply",
+     "text": "Reply to: «Long time no see!» – «How is your family?»",
+     "solution": "Yes, it's been a long time! – They are fine, thank you."
+    },
+    {
+     "title": "Reading",
+     "text": "Read: «I'm Aïcha. This is my brother Mohamed. He is 16 and he is a student at the lycée. He wants to be a doctor.»\na) How old is Mohamed? b) What does he want to be?",
+     "solution": "a) He is 16. b) He wants to be a doctor."
+    },
+    {
+     "title": "Dialogue",
+     "text": "Complete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.",
+     "solution": "Fine/I'm fine ; you ; thanks"
+    },
+    {
+     "title": "Respond",
+     "text": "How do you respond when someone says: «This is my brother, Ali.»?",
+     "solution": "Nice to meet you, Ali. / Pleased to meet you."
+    },
+    {
+     "title": "Personal questions",
+     "text": "Write questions for: a) His name is Omar. b) He lives in Nouadhibou. c) His phone number is 22 00 00 00.",
+     "solution": "a) What is his name? b) Where does he live? c) What is his phone number?"
+    },
+    {
+     "title": "Write",
+     "text": "Write a short dialogue (4 lines) where two friends say goodbye.",
+     "solution": "A: I must go now. B: OK, see you tomorrow. A: Bye, take care! B: You too!"
+    },
+    {
+     "title": "Dialogue order",
+     "text": "Put in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.",
+     "solution": "b – d – c – a"
+    },
+    {
+     "title": "Situations",
+     "text": "What do you say?\na) You leave your friend after school.  b) You go to bed.  c) Your friend is travelling.",
+     "solution": "a) See you tomorrow!  b) Good night!  c) Have a nice trip!"
+    },
+    {
+     "title": "Meaning",
+     "text": "Ask about the meaning of the word «brave».",
+     "solution": "What does «brave» mean?"
+    },
+    {
+     "title": "Introduce",
+     "text": "Introduce your friend Khadi (13, from Rosso, likes reading) to your teacher.",
+     "solution": "Sir, this is my friend Khadi. She is 13. She is from Rosso. She likes reading."
+    },
+    {
+     "title": "Clarify",
+     "text": "Write three ways to ask someone to repeat.",
+     "solution": "Pardon? – Can you repeat, please? – Could you say that again, please? – Sorry, I didn't understand."
+    },
+    {
+     "title": "Leave taking",
+     "text": "Write four expressions used to say goodbye.",
+     "solution": "Goodbye. – See you soon. – Take care. – Have a nice day. – Good night."
+    },
+    {
+     "title": "Dialogue",
+     "text": "Complete:\nA: My name is Yacoub.\nB: Sorry, ___ ?\nA: Yacoub. Y-A-C-O-U-B.\nB: Thank you.",
+     "solution": "Could you repeat, please? / How do you spell it?"
+    },
+    {
+     "title": "Greeting card",
+     "text": "Write a short Eid greeting message to a friend.",
+     "solution": "Eid Mubarak, dear …! I wish you and your family a happy Eid. Best wishes."
+    }
+   ]
+  },
+  {
+   "week": "Week 10",
+   "term": 1,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Different expressions of greetings",
+    "Different expressions of leave taking",
+    "Introducing one's family members, friends…, responding to introductions and asking for and giving personal information",
+    "Getting someone to clarify or repeat something they had said"
+   ],
+   "items": [
+    {
+     "title": "Personal questions",
+     "text": "Write questions for: a) His name is Omar. b) He lives in Nouadhibou. c) His phone number is 22 00 00 00.",
+     "solution": "a) What is his name? b) Where does he live? c) What is his phone number?"
+    },
+    {
+     "title": "Introduce",
+     "text": "Introduce your friend Khadi (13, from Rosso, likes reading) to your teacher.",
+     "solution": "Sir, this is my friend Khadi. She is 13. She is from Rosso. She likes reading."
+    },
+    {
+     "title": "Respond",
+     "text": "How do you respond when someone says: «This is my brother, Ali.»?",
+     "solution": "Nice to meet you, Ali. / Pleased to meet you."
+    },
+    {
+     "title": "Speak slowly",
+     "text": "Your teacher speaks fast. What do you say politely?",
+     "solution": "Could you speak more slowly, please?"
+    },
+    {
+     "title": "Situations",
+     "text": "What do you say?\na) You leave your friend after school.  b) You go to bed.  c) Your friend is travelling.",
+     "solution": "a) See you tomorrow!  b) Good night!  c) Have a nice trip!"
+    },
+    {
+     "title": "Family members",
+     "text": "Complete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "cousin – niece – grandfather"
+    },
+    {
+     "title": "Dialogue",
+     "text": "Complete:\nA: My name is Yacoub.\nB: Sorry, ___ ?\nA: Yacoub. Y-A-C-O-U-B.\nB: Thank you.",
+     "solution": "Could you repeat, please? / How do you spell it?"
+    },
+    {
+     "title": "Right greeting",
+     "text": "What do you say?\na) You meet your teacher at 9 a.m.  b) You meet a friend.  c) You meet a visitor for the first time.",
+     "solution": "a) Good morning, sir/madam.  b) Hi! How are you?  c) How do you do? / Nice to meet you."
+    },
+    {
+     "title": "Complete",
+     "text": "Complete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»",
+     "solution": "meeting/seeing – (no word) / next week ; to"
+    },
+    {
+     "title": "Dialogue order",
+     "text": "Put in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.",
+     "solution": "b – d – c – a"
+    },
+    {
+     "title": "Greeting card",
+     "text": "Write a short Eid greeting message to a friend.",
+     "solution": "Eid Mubarak, dear …! I wish you and your family a happy Eid. Best wishes."
+    },
+    {
+     "title": "Reading",
+     "text": "Read: «I'm Aïcha. This is my brother Mohamed. He is 16 and he is a student at the lycée. He wants to be a doctor.»\na) How old is Mohamed? b) What does he want to be?",
+     "solution": "a) He is 16. b) He wants to be a doctor."
+    },
+    {
+     "title": "Formal / informal",
+     "text": "Rewrite in a formal way: «Hi! What's up?»",
+     "solution": "Good morning/afternoon. How are you?"
+    },
+    {
+     "title": "Dialogue",
+     "text": "Complete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.",
+     "solution": "Fine/I'm fine ; you ; thanks"
+    },
+    {
+     "title": "Write",
+     "text": "Write a short dialogue (4 lines) where two friends say goodbye.",
+     "solution": "A: I must go now. B: OK, see you tomorrow. A: Bye, take care! B: You too!"
+    },
+    {
+     "title": "Spell",
+     "text": "What do you say when you don't know how to write a name?",
+     "solution": "How do you spell it, please?"
+    },
+    {
+     "title": "Leave taking",
+     "text": "Write four expressions used to say goodbye.",
+     "solution": "Goodbye. – See you soon. – Take care. – Have a nice day. – Good night."
+    },
+    {
+     "title": "Clarify",
+     "text": "Write three ways to ask someone to repeat.",
+     "solution": "Pardon? – Can you repeat, please? – Could you say that again, please? – Sorry, I didn't understand."
+    },
+    {
+     "title": "Reply",
+     "text": "Reply to: «Long time no see!» – «How is your family?»",
+     "solution": "Yes, it's been a long time! – They are fine, thank you."
+    },
+    {
+     "title": "Meaning",
+     "text": "Ask about the meaning of the word «brave».",
+     "solution": "What does «brave» mean?"
+    }
+   ]
+  },
+  {
+   "week": "Week 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Different expressions of greetings",
+    "Different expressions of leave taking",
+    "Introducing one's family members, friends…, responding to introductions and asking for and giving personal information",
+    "Getting someone to clarify or repeat something they had said"
+   ],
+   "items": [
+    {
+     "title": "Reply",
+     "text": "Reply to: «Long time no see!» – «How is your family?»",
+     "solution": "Yes, it's been a long time! – They are fine, thank you."
+    },
+    {
+     "title": "Dialogue",
+     "text": "Complete:\nA: My name is Yacoub.\nB: Sorry, ___ ?\nA: Yacoub. Y-A-C-O-U-B.\nB: Thank you.",
+     "solution": "Could you repeat, please? / How do you spell it?"
+    },
+    {
+     "title": "Family members",
+     "text": "Complete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "cousin – niece – grandfather"
+    },
+    {
+     "title": "Clarify",
+     "text": "Write three ways to ask someone to repeat.",
+     "solution": "Pardon? – Can you repeat, please? – Could you say that again, please? – Sorry, I didn't understand."
+    },
+    {
+     "title": "Introduce",
+     "text": "Introduce your friend Khadi (13, from Rosso, likes reading) to your teacher.",
+     "solution": "Sir, this is my friend Khadi. She is 13. She is from Rosso. She likes reading."
+    },
+    {
+     "title": "Meaning",
+     "text": "Ask about the meaning of the word «brave».",
+     "solution": "What does «brave» mean?"
+    },
+    {
+     "title": "Spell",
+     "text": "What do you say when you don't know how to write a name?",
+     "solution": "How do you spell it, please?"
+    },
+    {
+     "title": "Respond",
+     "text": "How do you respond when someone says: «This is my brother, Ali.»?",
+     "solution": "Nice to meet you, Ali. / Pleased to meet you."
+    },
+    {
+     "title": "Formal / informal",
+     "text": "Rewrite in a formal way: «Hi! What's up?»",
+     "solution": "Good morning/afternoon. How are you?"
+    },
+    {
+     "title": "Right greeting",
+     "text": "What do you say?\na) You meet your teacher at 9 a.m.  b) You meet a friend.  c) You meet a visitor for the first time.",
+     "solution": "a) Good morning, sir/madam.  b) Hi! How are you?  c) How do you do? / Nice to meet you."
+    },
+    {
+     "title": "Complete",
+     "text": "Complete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»",
+     "solution": "meeting/seeing – (no word) / next week ; to"
+    },
+    {
+     "title": "Dialogue order",
+     "text": "Put in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.",
+     "solution": "b – d – c – a"
+    },
+    {
+     "title": "Reading",
+     "text": "Read: «I'm Aïcha. This is my brother Mohamed. He is 16 and he is a student at the lycée. He wants to be a doctor.»\na) How old is Mohamed? b) What does he want to be?",
+     "solution": "a) He is 16. b) He wants to be a doctor."
+    },
+    {
+     "title": "Personal questions",
+     "text": "Write questions for: a) His name is Omar. b) He lives in Nouadhibou. c) His phone number is 22 00 00 00.",
+     "solution": "a) What is his name? b) Where does he live? c) What is his phone number?"
+    },
+    {
+     "title": "Speak slowly",
+     "text": "Your teacher speaks fast. What do you say politely?",
+     "solution": "Could you speak more slowly, please?"
+    },
+    {
+     "title": "Write",
+     "text": "Write a short dialogue (4 lines) where two friends say goodbye.",
+     "solution": "A: I must go now. B: OK, see you tomorrow. A: Bye, take care! B: You too!"
+    },
+    {
+     "title": "Dialogue",
+     "text": "Complete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.",
+     "solution": "Fine/I'm fine ; you ; thanks"
+    },
+    {
+     "title": "Leave taking",
+     "text": "Write four expressions used to say goodbye.",
+     "solution": "Goodbye. – See you soon. – Take care. – Have a nice day. – Good night."
+    },
+    {
+     "title": "Situations",
+     "text": "What do you say?\na) You leave your friend after school.  b) You go to bed.  c) Your friend is travelling.",
+     "solution": "a) See you tomorrow!  b) Good night!  c) Have a nice trip!"
+    },
+    {
+     "title": "Greeting card",
+     "text": "Write a short Eid greeting message to a friend.",
+     "solution": "Eid Mubarak, dear …! I wish you and your family a happy Eid. Best wishes."
+    }
+   ]
+  },
+  {
+   "week": "Week 34",
+   "term": 3,
+   "kind": "eval",
+   "title": "Integration, assessment and remediation",
+   "covers": [
+    "Talking about one's family members, friends, town, home…, and say where they are located",
+    "Talking and asking about religious, social and professional obligations",
+    "Comparing people and things using short and long adjectives",
+    "Counting (50-1000)",
+    "Expressing and asking about quantity using quantifiers (many, much, a lot of, few, a few, little, a little…)",
+    "Making and responding to orders",
+    "Making and responding to requests"
+   ],
+   "items": [
+    {
+     "title": "Numbers",
+     "text": "Write in letters: 65 – 100 – 248 – 999.",
+     "solution": "sixty-five – one hundred – two hundred and forty-eight – nine hundred and ninety-nine"
+    },
+    {
+     "title": "Requests",
+     "text": "Make polite requests: (open the window) (lend me your pen)",
+     "solution": "Could you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Correct",
+     "text": "Correct: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "My brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Orders",
+     "text": "Make polite orders: (a glass of water) (the bill)",
+     "solution": "Can I have a glass of water, please? – The bill, please."
+    },
+    {
+     "title": "At the restaurant",
+     "text": "Complete:\nWaiter: What would you ___?\nCustomer: I'd ___ rice with fish, please.\nWaiter: Anything to ___?",
+     "solution": "like – like – drink"
+    },
+    {
+     "title": "Comparatives",
+     "text": "Write the comparative: tall – big – happy – beautiful – good.",
+     "solution": "taller – bigger – happier – more beautiful – better"
+    },
+    {
+     "title": "Questions",
+     "text": "Make questions: (you – have to – wear a uniform)",
+     "solution": "Do you have to wear a uniform?"
+    },
+    {
+     "title": "Much / many",
+     "text": "Complete with much / many: How ___ books? How ___ water? There aren't ___ people.",
+     "solution": "many – much – many"
+    },
+    {
+     "title": "Some / any",
+     "text": "Complete: There is ___ bread. Are there ___ eggs? There isn't ___ rice.",
+     "solution": "some – any – any"
+    },
+    {
+     "title": "Figures",
+     "text": "Write in figures: three hundred and twelve – seven hundred and five.",
+     "solution": "312 – 705"
+    },
+    {
+     "title": "Must / have to",
+     "text": "Complete with must / mustn't: Muslims ___ pray five times a day. Pupils ___ cheat in exams.",
+     "solution": "must – mustn't"
+    },
+    {
+     "title": "Responding",
+     "text": "Respond positively and negatively: «Can you help me?»",
+     "solution": "Yes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "There is / there are",
+     "text": "Complete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .",
+     "solution": "there are – There is – Is there – there isn't"
+    },
+    {
+     "title": "Compare",
+     "text": "Compare: Nouakchott / Atar (big). A car / a bike (expensive).",
+     "solution": "Nouakchott is bigger than Atar. A car is more expensive than a bike."
+    },
+    {
+     "title": "My town",
+     "text": "Write 5 sentences about your town (name, location, places, people).",
+     "solution": "My town is Kiffa. It is in the south of Mauritania. There is a big market and a hospital. People are friendly."
+    },
+    {
+     "title": "Location",
+     "text": "Answer: Where is Nouakchott? (on the Atlantic coast)",
+     "solution": "It is on the Atlantic coast."
+    },
+    {
+     "title": "Few / little",
+     "text": "Complete with a few / a little: I have ___ friends. There is ___ milk.",
+     "solution": "a few – a little"
+    },
+    {
+     "title": "Prices",
+     "text": "A bag costs 450 MRU. Write the price in letters.",
+     "solution": "four hundred and fifty ouguiyas"
+    },
+    {
+     "title": "Responding",
+     "text": "How does a waiter respond to an order?",
+     "solution": "Certainly. / Here you are. / Right away."
+    },
+    {
+     "title": "Questions",
+     "text": "Ask about quantity: (sugar) (apples)",
+     "solution": "How much sugar is there? – How many apples are there?"
+    }
+   ]
+  },
+  {
+   "week": "Week 36",
+   "term": 3,
+   "kind": "final",
+   "title": "General revision of the year",
+   "covers": [
+    "Different expressions of greetings",
+    "Different expressions of leave taking",
+    "Introducing one's family members, friends…, responding to introductions and asking for and giving personal information",
+    "Getting someone to clarify or repeat something they had said",
+    "Talking about one's family members, friends, town, home…, and say where they are located",
+    "Talking and asking about religious, social and professional obligations",
+    "Comparing people and things using short and long adjectives",
+    "Counting (50-1000)",
+    "Expressing and asking about quantity using quantifiers (many, much, a lot of, few, a few, little, a little…)",
+    "Making and responding to orders"
+   ],
+   "items": [
+    {
+     "title": "Few / little",
+     "text": "Complete with a few / a little: I have ___ friends. There is ___ milk.",
+     "solution": "a few – a little"
+    },
+    {
+     "title": "Family members",
+     "text": "Complete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "cousin – niece – grandfather"
+    },
+    {
+     "title": "Questions",
+     "text": "Ask about quantity: (sugar) (apples)",
+     "solution": "How much sugar is there? – How many apples are there?"
+    },
+    {
+     "title": "My town",
+     "text": "Write 5 sentences about your town (name, location, places, people).",
+     "solution": "My town is Kiffa. It is in the south of Mauritania. There is a big market and a hospital. People are friendly."
+    },
+    {
+     "title": "Correct",
+     "text": "Correct: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "My brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Requests",
+     "text": "Make polite requests: (open the window) (lend me your pen)",
+     "solution": "Could you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Leave taking",
+     "text": "Write four expressions used to say goodbye.",
+     "solution": "Goodbye. – See you soon. – Take care. – Have a nice day. – Good night."
+    },
+    {
+     "title": "Personal questions",
+     "text": "Write questions for: a) His name is Omar. b) He lives in Nouadhibou. c) His phone number is 22 00 00 00.",
+     "solution": "a) What is his name? b) Where does he live? c) What is his phone number?"
+    },
+    {
+     "title": "Dialogue",
+     "text": "Complete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.",
+     "solution": "Fine/I'm fine ; you ; thanks"
+    },
+    {
+     "title": "Dialogue order",
+     "text": "Put in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.",
+     "solution": "b – d – c – a"
+    },
+    {
+     "title": "Clarify",
+     "text": "Write three ways to ask someone to repeat.",
+     "solution": "Pardon? – Can you repeat, please? – Could you say that again, please? – Sorry, I didn't understand."
+    },
+    {
+     "title": "Responding",
+     "text": "Respond positively and negatively: «Can you help me?»",
+     "solution": "Yes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Reading",
+     "text": "Read: «I'm Aïcha. This is my brother Mohamed. He is 16 and he is a student at the lycée. He wants to be a doctor.»\na) How old is Mohamed? b) What does he want to be?",
+     "solution": "a) He is 16. b) He wants to be a doctor."
+    },
+    {
+     "title": "Formal / informal",
+     "text": "Rewrite in a formal way: «Hi! What's up?»",
+     "solution": "Good morning/afternoon. How are you?"
+    },
+    {
+     "title": "Compare",
+     "text": "Compare: Nouakchott / Atar (big). A car / a bike (expensive).",
+     "solution": "Nouakchott is bigger than Atar. A car is more expensive than a bike."
+    },
+    {
+     "title": "There is / there are",
+     "text": "Complete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .",
+     "solution": "there are – There is – Is there – there isn't"
+    },
+    {
+     "title": "Complete",
+     "text": "Complete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»",
+     "solution": "meeting/seeing – (no word) / next week ; to"
+    },
+    {
+     "title": "Figures",
+     "text": "Write in figures: three hundred and twelve – seven hundred and five.",
+     "solution": "312 – 705"
+    },
+    {
+     "title": "Responding",
+     "text": "How does a waiter respond to an order?",
+     "solution": "Certainly. / Here you are. / Right away."
+    },
+    {
+     "title": "Numbers",
+     "text": "Write in letters: 65 – 100 – 248 – 999.",
+     "solution": "sixty-five – one hundred – two hundred and forty-eight – nine hundred and ninety-nine"
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Week 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Term 1 exam",
+   "covers": [
+    "Different expressions of greetings",
+    "Different expressions of leave taking",
+    "Introducing one's family members, friends…, responding to introductions and asking for and giving personal information",
+    "Getting someone to clarify or repeat something they had said"
+   ],
+   "items": [
+    {
+     "title": "Proposal 1 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nComplete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.\n\nExercise 2 : Dialogue order\nPut in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.\n\nExercise 3 : Family members\nComplete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "Exercise 1\nFine/I'm fine ; you ; thanks\n\nExercise 2\nb – d – c – a\n\nExercise 3\ncousin – niece – grandfather"
+    },
+    {
+     "title": "Proposal 2 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nComplete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.\n\nExercise 2 : Introduce\nIntroduce your friend Khadi (13, from Rosso, likes reading) to your teacher.\n\nExercise 3 : Reading\nRead: «I'm Aïcha. This is my brother Mohamed. He is 16 and he is a student at the lycée. He wants to be a doctor.»\na) How old is Mohamed? b) What does he want to be?",
+     "solution": "Exercise 1\nFine/I'm fine ; you ; thanks\n\nExercise 2\nSir, this is my friend Khadi. She is 13. She is from Rosso. She likes reading.\n\nExercise 3\na) He is 16. b) He wants to be a doctor."
+    },
+    {
+     "title": "Proposal 3 — Term 1 exam",
+     "text": "Exercise 1 : Leave taking\nWrite four expressions used to say goodbye.\n\nExercise 2 : Complete\nComplete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»\n\nExercise 3 : Meaning\nAsk about the meaning of the word «brave».",
+     "solution": "Exercise 1\nGoodbye. – See you soon. – Take care. – Have a nice day. – Good night.\n\nExercise 2\nmeeting/seeing – (no word) / next week ; to\n\nExercise 3\nWhat does «brave» mean?"
+    },
+    {
+     "title": "Proposal 4 — Term 1 exam",
+     "text": "Exercise 1 : Reply\nReply to: «Long time no see!» – «How is your family?»\n\nExercise 2 : Write\nWrite a short dialogue (4 lines) where two friends say goodbye.\n\nExercise 3 : Clarify\nWrite three ways to ask someone to repeat.",
+     "solution": "Exercise 1\nYes, it's been a long time! – They are fine, thank you.\n\nExercise 2\nA: I must go now. B: OK, see you tomorrow. A: Bye, take care! B: You too!\n\nExercise 3\nPardon? – Can you repeat, please? – Could you say that again, please? – Sorry, I didn't understand."
+    },
+    {
+     "title": "Proposal 5 — Term 1 exam",
+     "text": "Exercise 1 : Reply\nReply to: «Long time no see!» – «How is your family?»\n\nExercise 2 : Situations\nWhat do you say?\na) You leave your friend after school.  b) You go to bed.  c) Your friend is travelling.\n\nExercise 3 : Family members\nComplete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "Exercise 1\nYes, it's been a long time! – They are fine, thank you.\n\nExercise 2\na) See you tomorrow!  b) Good night!  c) Have a nice trip!\n\nExercise 3\ncousin – niece – grandfather"
+    },
+    {
+     "title": "Proposal 6 — Term 1 exam",
+     "text": "Exercise 1 : Formal / informal\nRewrite in a formal way: «Hi! What's up?»\n\nExercise 2 : Dialogue order\nPut in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.\n\nExercise 3 : Family members\nComplete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "Exercise 1\nGood morning/afternoon. How are you?\n\nExercise 2\nb – d – c – a\n\nExercise 3\ncousin – niece – grandfather"
+    },
+    {
+     "title": "Proposal 7 — Term 1 exam",
+     "text": "Exercise 1 : Greeting card\nWrite a short Eid greeting message to a friend.\n\nExercise 2 : Introduce\nIntroduce your friend Khadi (13, from Rosso, likes reading) to your teacher.\n\nExercise 3 : Family members\nComplete: My uncle's son is my ___. My sister's daughter is my ___. My father's father is my ___.",
+     "solution": "Exercise 1\nEid Mubarak, dear …! I wish you and your family a happy Eid. Best wishes.\n\nExercise 2\nSir, this is my friend Khadi. She is 13. She is from Rosso. She likes reading.\n\nExercise 3\ncousin – niece – grandfather"
+    },
+    {
+     "title": "Proposal 8 — Term 1 exam",
+     "text": "Exercise 1 : Leave taking\nWrite four expressions used to say goodbye.\n\nExercise 2 : Respond\nHow do you respond when someone says: «This is my brother, Ali.»?\n\nExercise 3 : Clarify\nWrite three ways to ask someone to repeat.",
+     "solution": "Exercise 1\nGoodbye. – See you soon. – Take care. – Have a nice day. – Good night.\n\nExercise 2\nNice to meet you, Ali. / Pleased to meet you.\n\nExercise 3\nPardon? – Can you repeat, please? – Could you say that again, please? – Sorry, I didn't understand."
+    },
+    {
+     "title": "Proposal 9 — Term 1 exam",
+     "text": "Exercise 1 : Leave taking\nWrite four expressions used to say goodbye.\n\nExercise 2 : Write\nWrite a short dialogue (4 lines) where two friends say goodbye.\n\nExercise 3 : Speak slowly\nYour teacher speaks fast. What do you say politely?",
+     "solution": "Exercise 1\nGoodbye. – See you soon. – Take care. – Have a nice day. – Good night.\n\nExercise 2\nA: I must go now. B: OK, see you tomorrow. A: Bye, take care! B: You too!\n\nExercise 3\nCould you speak more slowly, please?"
+    },
+    {
+     "title": "Proposal 10 — Term 1 exam",
+     "text": "Exercise 1 : Right greeting\nWhat do you say?\na) You meet your teacher at 9 a.m.  b) You meet a friend.  c) You meet a visitor for the first time.\n\nExercise 2 : Situations\nWhat do you say?\na) You leave your friend after school.  b) You go to bed.  c) Your friend is travelling.\n\nExercise 3 : Personal questions\nWrite questions for: a) His name is Omar. b) He lives in Nouadhibou. c) His phone number is 22 00 00 00.",
+     "solution": "Exercise 1\na) Good morning, sir/madam.  b) Hi! How are you?  c) How do you do? / Nice to meet you.\n\nExercise 2\na) See you tomorrow!  b) Good night!  c) Have a nice trip!\n\nExercise 3\na) What is his name? b) Where does he live? c) What is his phone number?"
+    },
+    {
+     "title": "Proposal 11 — Term 1 exam",
+     "text": "Exercise 1 : Reply\nReply to: «Long time no see!» – «How is your family?»\n\nExercise 2 : Complete\nComplete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»\n\nExercise 3 : Meaning\nAsk about the meaning of the word «brave».",
+     "solution": "Exercise 1\nYes, it's been a long time! – They are fine, thank you.\n\nExercise 2\nmeeting/seeing – (no word) / next week ; to\n\nExercise 3\nWhat does «brave» mean?"
+    },
+    {
+     "title": "Proposal 12 — Term 1 exam",
+     "text": "Exercise 1 : Right greeting\nWhat do you say?\na) You meet your teacher at 9 a.m.  b) You meet a friend.  c) You meet a visitor for the first time.\n\nExercise 2 : Situations\nWhat do you say?\na) You leave your friend after school.  b) You go to bed.  c) Your friend is travelling.\n\nExercise 3 : Spell\nWhat do you say when you don't know how to write a name?",
+     "solution": "Exercise 1\na) Good morning, sir/madam.  b) Hi! How are you?  c) How do you do? / Nice to meet you.\n\nExercise 2\na) See you tomorrow!  b) Good night!  c) Have a nice trip!\n\nExercise 3\nHow do you spell it, please?"
+    },
+    {
+     "title": "Proposal 13 — Term 1 exam",
+     "text": "Exercise 1 : Leave taking\nWrite four expressions used to say goodbye.\n\nExercise 2 : Introduce\nIntroduce your friend Khadi (13, from Rosso, likes reading) to your teacher.\n\nExercise 3 : Speak slowly\nYour teacher speaks fast. What do you say politely?",
+     "solution": "Exercise 1\nGoodbye. – See you soon. – Take care. – Have a nice day. – Good night.\n\nExercise 2\nSir, this is my friend Khadi. She is 13. She is from Rosso. She likes reading.\n\nExercise 3\nCould you speak more slowly, please?"
+    },
+    {
+     "title": "Proposal 14 — Term 1 exam",
+     "text": "Exercise 1 : Reply\nReply to: «Long time no see!» – «How is your family?»\n\nExercise 2 : Dialogue order\nPut in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.\n\nExercise 3 : Dialogue\nComplete:\nA: My name is Yacoub.\nB: Sorry, ___ ?\nA: Yacoub. Y-A-C-O-U-B.\nB: Thank you.",
+     "solution": "Exercise 1\nYes, it's been a long time! – They are fine, thank you.\n\nExercise 2\nb – d – c – a\n\nExercise 3\nCould you repeat, please? / How do you spell it?"
+    },
+    {
+     "title": "Proposal 15 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nComplete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.\n\nExercise 2 : Dialogue order\nPut in order: a) Bye! Take care. b) I have to go now. c) OK. See you later. d) Already? It's early.\n\nExercise 3 : Speak slowly\nYour teacher speaks fast. What do you say politely?",
+     "solution": "Exercise 1\nFine/I'm fine ; you ; thanks\n\nExercise 2\nb – d – c – a\n\nExercise 3\nCould you speak more slowly, please?"
+    },
+    {
+     "title": "Proposal 16 — Term 1 exam",
+     "text": "Exercise 1 : Right greeting\nWhat do you say?\na) You meet your teacher at 9 a.m.  b) You meet a friend.  c) You meet a visitor for the first time.\n\nExercise 2 : Complete\nComplete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»\n\nExercise 3 : Meaning\nAsk about the meaning of the word «brave».",
+     "solution": "Exercise 1\na) Good morning, sir/madam.  b) Hi! How are you?  c) How do you do? / Nice to meet you.\n\nExercise 2\nmeeting/seeing – (no word) / next week ; to\n\nExercise 3\nWhat does «brave» mean?"
+    },
+    {
+     "title": "Proposal 17 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nComplete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.\n\nExercise 2 : Complete\nComplete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»\n\nExercise 3 : Meaning\nAsk about the meaning of the word «brave».",
+     "solution": "Exercise 1\nFine/I'm fine ; you ; thanks\n\nExercise 2\nmeeting/seeing – (no word) / next week ; to\n\nExercise 3\nWhat does «brave» mean?"
+    },
+    {
+     "title": "Proposal 18 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nComplete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.\n\nExercise 2 : Complete\nComplete: «It was nice ___ you.» – «See you ___ next week.» – «Give my regards ___ your parents.»\n\nExercise 3 : Clarify\nWrite three ways to ask someone to repeat.",
+     "solution": "Exercise 1\nFine/I'm fine ; you ; thanks\n\nExercise 2\nmeeting/seeing – (no word) / next week ; to\n\nExercise 3\nPardon? – Can you repeat, please? – Could you say that again, please? – Sorry, I didn't understand."
+    },
+    {
+     "title": "Proposal 19 — Term 1 exam",
+     "text": "Exercise 1 : Dialogue\nComplete:\nA: Good afternoon, Mr. Ba. How are you?\nB: ___ , thank you. And ___?\nA: Very well, ___.\n\nExercise 2 : Situations\nWhat do you say?\na) You leave your friend after school.  b) You go to bed.  c) Your friend is travelling.\n\nExercise 3 : Personal questions\nWrite questions for: a) His name is Omar. b) He lives in Nouadhibou. c) His phone number is 22 00 00 00.",
+     "solution": "Exercise 1\nFine/I'm fine ; you ; thanks\n\nExercise 2\na) See you tomorrow!  b) Good night!  c) Have a nice trip!\n\nExercise 3\na) What is his name? b) Where does he live? c) What is his phone number?"
+    },
+    {
+     "title": "Proposal 20 — Term 1 exam",
+     "text": "Exercise 1 : Leave taking\nWrite four expressions used to say goodbye.\n\nExercise 2 : Write\nWrite a short dialogue (4 lines) where two friends say goodbye.\n\nExercise 3 : Spell\nWhat do you say when you don't know how to write a name?",
+     "solution": "Exercise 1\nGoodbye. – See you soon. – Take care. – Have a nice day. – Good night.\n\nExercise 2\nA: I must go now. B: OK, see you tomorrow. A: Bye, take care! B: You too!\n\nExercise 3\nHow do you spell it, please?"
+    }
+   ]
+  },
+  {
+   "week": "Week 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Term 2 exam",
+   "covers": [
+    "Talking about one's family members, friends, town, home…, and say where they are located",
+    "Talking and asking about religious, social and professional obligations",
+    "Comparing people and things using short and long adjectives",
+    "Counting (50-1000)"
+   ],
+   "items": [
+    {
+     "title": "Proposal 1 — Term 2 exam",
+     "text": "Exercise 1 : There is / there are\nComplete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .\n\nExercise 2 : Comparatives\nWrite the comparative: tall – big – happy – beautiful – good.\n\nExercise 3 : Prices\nA bag costs 450 MRU. Write the price in letters.",
+     "solution": "Exercise 1\nthere are – There is – Is there – there isn't\n\nExercise 2\ntaller – bigger – happier – more beautiful – better\n\nExercise 3\nfour hundred and fifty ouguiyas"
+    },
+    {
+     "title": "Proposal 2 — Term 2 exam",
+     "text": "Exercise 1 : There is / there are\nComplete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .\n\nExercise 2 : Obligations\nWrite two obligations of a doctor and two of a pupil.\n\nExercise 3 : Numbers\nWrite in letters: 65 – 100 – 248 – 999.",
+     "solution": "Exercise 1\nthere are – There is – Is there – there isn't\n\nExercise 2\nA doctor has to help sick people. He must be careful. A pupil has to do his homework. He must respect his teachers.\n\nExercise 3\nsixty-five – one hundred – two hundred and forty-eight – nine hundred and ninety-nine"
+    },
+    {
+     "title": "Proposal 3 — Term 2 exam",
+     "text": "Exercise 1 : There is / there are\nComplete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .\n\nExercise 2 : Questions\nMake questions: (you – have to – wear a uniform)\n\nExercise 3 : Numbers\nWrite in letters: 65 – 100 – 248 – 999.",
+     "solution": "Exercise 1\nthere are – There is – Is there – there isn't\n\nExercise 2\nDo you have to wear a uniform?\n\nExercise 3\nsixty-five – one hundred – two hundred and forty-eight – nine hundred and ninety-nine"
+    },
+    {
+     "title": "Proposal 4 — Term 2 exam",
+     "text": "Exercise 1 : My town\nWrite 5 sentences about your town (name, location, places, people).\n\nExercise 2 : Compare\nCompare: Nouakchott / Atar (big). A car / a bike (expensive).\n\nExercise 3 : Prices\nA bag costs 450 MRU. Write the price in letters.",
+     "solution": "Exercise 1\nMy town is Kiffa. It is in the south of Mauritania. There is a big market and a hospital. People are friendly.\n\nExercise 2\nNouakchott is bigger than Atar. A car is more expensive than a bike.\n\nExercise 3\nfour hundred and fifty ouguiyas"
+    },
+    {
+     "title": "Proposal 5 — Term 2 exam",
+     "text": "Exercise 1 : My town\nWrite 5 sentences about your town (name, location, places, people).\n\nExercise 2 : Compare\nCompare: Nouakchott / Atar (big). A car / a bike (expensive).\n\nExercise 3 : Correct\nCorrect: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "Exercise 1\nMy town is Kiffa. It is in the south of Mauritania. There is a big market and a hospital. People are friendly.\n\nExercise 2\nNouakchott is bigger than Atar. A car is more expensive than a bike.\n\nExercise 3\nMy brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Proposal 6 — Term 2 exam",
+     "text": "Exercise 1 : My town\nWrite 5 sentences about your town (name, location, places, people).\n\nExercise 2 : Obligations\nWrite two obligations of a doctor and two of a pupil.\n\nExercise 3 : Numbers\nWrite in letters: 65 – 100 – 248 – 999.",
+     "solution": "Exercise 1\nMy town is Kiffa. It is in the south of Mauritania. There is a big market and a hospital. People are friendly.\n\nExercise 2\nA doctor has to help sick people. He must be careful. A pupil has to do his homework. He must respect his teachers.\n\nExercise 3\nsixty-five – one hundred – two hundred and forty-eight – nine hundred and ninety-nine"
+    },
+    {
+     "title": "Proposal 7 — Term 2 exam",
+     "text": "Exercise 1 : Location\nAnswer: Where is Nouakchott? (on the Atlantic coast)\n\nExercise 2 : Comparatives\nWrite the comparative: tall – big – happy – beautiful – good.\n\nExercise 3 : Correct\nCorrect: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "Exercise 1\nIt is on the Atlantic coast.\n\nExercise 2\ntaller – bigger – happier – more beautiful – better\n\nExercise 3\nMy brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Proposal 8 — Term 2 exam",
+     "text": "Exercise 1 : Must / have to\nComplete with must / mustn't: Muslims ___ pray five times a day. Pupils ___ cheat in exams.\n\nExercise 2 : Comparatives\nWrite the comparative: tall – big – happy – beautiful – good.\n\nExercise 3 : Correct\nCorrect: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "Exercise 1\nmust – mustn't\n\nExercise 2\ntaller – bigger – happier – more beautiful – better\n\nExercise 3\nMy brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Proposal 9 — Term 2 exam",
+     "text": "Exercise 1 : Must / have to\nComplete with must / mustn't: Muslims ___ pray five times a day. Pupils ___ cheat in exams.\n\nExercise 2 : Comparatives\nWrite the comparative: tall – big – happy – beautiful – good.\n\nExercise 3 : Prices\nA bag costs 450 MRU. Write the price in letters.",
+     "solution": "Exercise 1\nmust – mustn't\n\nExercise 2\ntaller – bigger – happier – more beautiful – better\n\nExercise 3\nfour hundred and fifty ouguiyas"
+    },
+    {
+     "title": "Proposal 10 — Term 2 exam",
+     "text": "Exercise 1 : Must / have to\nComplete with must / mustn't: Muslims ___ pray five times a day. Pupils ___ cheat in exams.\n\nExercise 2 : Compare\nCompare: Nouakchott / Atar (big). A car / a bike (expensive).\n\nExercise 3 : Prices\nA bag costs 450 MRU. Write the price in letters.",
+     "solution": "Exercise 1\nmust – mustn't\n\nExercise 2\nNouakchott is bigger than Atar. A car is more expensive than a bike.\n\nExercise 3\nfour hundred and fifty ouguiyas"
+    },
+    {
+     "title": "Proposal 11 — Term 2 exam",
+     "text": "Exercise 1 : There is / there are\nComplete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .\n\nExercise 2 : Comparatives\nWrite the comparative: tall – big – happy – beautiful – good.\n\nExercise 3 : Figures\nWrite in figures: three hundred and twelve – seven hundred and five.",
+     "solution": "Exercise 1\nthere are – There is – Is there – there isn't\n\nExercise 2\ntaller – bigger – happier – more beautiful – better\n\nExercise 3\n312 – 705"
+    },
+    {
+     "title": "Proposal 12 — Term 2 exam",
+     "text": "Exercise 1 : My town\nWrite 5 sentences about your town (name, location, places, people).\n\nExercise 2 : Questions\nMake questions: (you – have to – wear a uniform)\n\nExercise 3 : Prices\nA bag costs 450 MRU. Write the price in letters.",
+     "solution": "Exercise 1\nMy town is Kiffa. It is in the south of Mauritania. There is a big market and a hospital. People are friendly.\n\nExercise 2\nDo you have to wear a uniform?\n\nExercise 3\nfour hundred and fifty ouguiyas"
+    },
+    {
+     "title": "Proposal 13 — Term 2 exam",
+     "text": "Exercise 1 : Must / have to\nComplete with must / mustn't: Muslims ___ pray five times a day. Pupils ___ cheat in exams.\n\nExercise 2 : Questions\nMake questions: (you – have to – wear a uniform)\n\nExercise 3 : Correct\nCorrect: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "Exercise 1\nmust – mustn't\n\nExercise 2\nDo you have to wear a uniform?\n\nExercise 3\nMy brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Proposal 14 — Term 2 exam",
+     "text": "Exercise 1 : Location\nAnswer: Where is Nouakchott? (on the Atlantic coast)\n\nExercise 2 : Questions\nMake questions: (you – have to – wear a uniform)\n\nExercise 3 : Correct\nCorrect: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "Exercise 1\nIt is on the Atlantic coast.\n\nExercise 2\nDo you have to wear a uniform?\n\nExercise 3\nMy brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Proposal 15 — Term 2 exam",
+     "text": "Exercise 1 : Location\nAnswer: Where is Nouakchott? (on the Atlantic coast)\n\nExercise 2 : Comparatives\nWrite the comparative: tall – big – happy – beautiful – good.\n\nExercise 3 : Prices\nA bag costs 450 MRU. Write the price in letters.",
+     "solution": "Exercise 1\nIt is on the Atlantic coast.\n\nExercise 2\ntaller – bigger – happier – more beautiful – better\n\nExercise 3\nfour hundred and fifty ouguiyas"
+    },
+    {
+     "title": "Proposal 16 — Term 2 exam",
+     "text": "Exercise 1 : There is / there are\nComplete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .\n\nExercise 2 : Questions\nMake questions: (you – have to – wear a uniform)\n\nExercise 3 : Correct\nCorrect: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "Exercise 1\nthere are – There is – Is there – there isn't\n\nExercise 2\nDo you have to wear a uniform?\n\nExercise 3\nMy brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Proposal 17 — Term 2 exam",
+     "text": "Exercise 1 : There is / there are\nComplete: In my house ___ three rooms. ___ a big kitchen. ___ any garden? No, ___ .\n\nExercise 2 : Comparatives\nWrite the comparative: tall – big – happy – beautiful – good.\n\nExercise 3 : Correct\nCorrect: «My brother is more tall than me.» «This exercise is easyer.»",
+     "solution": "Exercise 1\nthere are – There is – Is there – there isn't\n\nExercise 2\ntaller – bigger – happier – more beautiful – better\n\nExercise 3\nMy brother is taller than me. This exercise is easier."
+    },
+    {
+     "title": "Proposal 18 — Term 2 exam",
+     "text": "Exercise 1 : Must / have to\nComplete with must / mustn't: Muslims ___ pray five times a day. Pupils ___ cheat in exams.\n\nExercise 2 : Obligations\nWrite two obligations of a doctor and two of a pupil.\n\nExercise 3 : Figures\nWrite in figures: three hundred and twelve – seven hundred and five.",
+     "solution": "Exercise 1\nmust – mustn't\n\nExercise 2\nA doctor has to help sick people. He must be careful. A pupil has to do his homework. He must respect his teachers.\n\nExercise 3\n312 – 705"
+    },
+    {
+     "title": "Proposal 19 — Term 2 exam",
+     "text": "Exercise 1 : My town\nWrite 5 sentences about your town (name, location, places, people).\n\nExercise 2 : Questions\nMake questions: (you – have to – wear a uniform)\n\nExercise 3 : Numbers\nWrite in letters: 65 – 100 – 248 – 999.",
+     "solution": "Exercise 1\nMy town is Kiffa. It is in the south of Mauritania. There is a big market and a hospital. People are friendly.\n\nExercise 2\nDo you have to wear a uniform?\n\nExercise 3\nsixty-five – one hundred – two hundred and forty-eight – nine hundred and ninety-nine"
+    },
+    {
+     "title": "Proposal 20 — Term 2 exam",
+     "text": "Exercise 1 : Must / have to\nComplete with must / mustn't: Muslims ___ pray five times a day. Pupils ___ cheat in exams.\n\nExercise 2 : Obligations\nWrite two obligations of a doctor and two of a pupil.\n\nExercise 3 : Prices\nA bag costs 450 MRU. Write the price in letters.",
+     "solution": "Exercise 1\nmust – mustn't\n\nExercise 2\nA doctor has to help sick people. He must be careful. A pupil has to do his homework. He must respect his teachers.\n\nExercise 3\nfour hundred and fifty ouguiyas"
+    }
+   ]
+  },
+  {
+   "week": "Week 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Term 3 exam",
+   "covers": [
+    "Expressing and asking about quantity using quantifiers (many, much, a lot of, few, a few, little, a little…)",
+    "Making and responding to orders",
+    "Making and responding to requests"
+   ],
+   "items": [
+    {
+     "title": "Proposal 1 — Term 3 exam",
+     "text": "Exercise 1 : Questions\nAsk about quantity: (sugar) (apples)\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\nHow much sugar is there? – How many apples are there?\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Proposal 2 — Term 3 exam",
+     "text": "Exercise 1 : Few / little\nComplete with a few / a little: I have ___ friends. There is ___ milk.\n\nExercise 2 : Some / any\nComplete: There is ___ bread. Are there ___ eggs? There isn't ___ rice.\n\nExercise 3 : Responding\nRespond positively and negatively: «Can you help me?»",
+     "solution": "Exercise 1\na few – a little\n\nExercise 2\nsome – any – any\n\nExercise 3\nYes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Proposal 3 — Term 3 exam",
+     "text": "Exercise 1 : Questions\nAsk about quantity: (sugar) (apples)\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Responding\nRespond positively and negatively: «Can you help me?»",
+     "solution": "Exercise 1\nHow much sugar is there? – How many apples are there?\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nYes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Proposal 4 — Term 3 exam",
+     "text": "Exercise 1 : Few / little\nComplete with a few / a little: I have ___ friends. There is ___ milk.\n\nExercise 2 : At the restaurant\nComplete:\nWaiter: What would you ___?\nCustomer: I'd ___ rice with fish, please.\nWaiter: Anything to ___?\n\nExercise 3 : Write\nWrite a short dialogue (4 lines) in which you ask a friend for his notebook.",
+     "solution": "Exercise 1\na few – a little\n\nExercise 2\nlike – like – drink\n\nExercise 3\nA: Can I borrow your notebook, please? B: Sure, here you are. A: Thanks a lot. B: You're welcome."
+    },
+    {
+     "title": "Proposal 5 — Term 3 exam",
+     "text": "Exercise 1 : Much / many\nComplete with much / many: How ___ books? How ___ water? There aren't ___ people.\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Responding\nRespond positively and negatively: «Can you help me?»",
+     "solution": "Exercise 1\nmany – much – many\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nYes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Proposal 6 — Term 3 exam",
+     "text": "Exercise 1 : Questions\nAsk about quantity: (sugar) (apples)\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Responding\nHow does a waiter respond to an order?",
+     "solution": "Exercise 1\nHow much sugar is there? – How many apples are there?\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nCertainly. / Here you are. / Right away."
+    },
+    {
+     "title": "Proposal 7 — Term 3 exam",
+     "text": "Exercise 1 : Much / many\nComplete with much / many: How ___ books? How ___ water? There aren't ___ people.\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Responding\nHow does a waiter respond to an order?",
+     "solution": "Exercise 1\nmany – much – many\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nCertainly. / Here you are. / Right away."
+    },
+    {
+     "title": "Proposal 8 — Term 3 exam",
+     "text": "Exercise 1 : Questions\nAsk about quantity: (sugar) (apples)\n\nExercise 2 : At the restaurant\nComplete:\nWaiter: What would you ___?\nCustomer: I'd ___ rice with fish, please.\nWaiter: Anything to ___?\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\nHow much sugar is there? – How many apples are there?\n\nExercise 2\nlike – like – drink\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Proposal 9 — Term 3 exam",
+     "text": "Exercise 1 : Few / little\nComplete with a few / a little: I have ___ friends. There is ___ milk.\n\nExercise 2 : Some / any\nComplete: There is ___ bread. Are there ___ eggs? There isn't ___ rice.\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\na few – a little\n\nExercise 2\nsome – any – any\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Proposal 10 — Term 3 exam",
+     "text": "Exercise 1 : Questions\nAsk about quantity: (sugar) (apples)\n\nExercise 2 : Some / any\nComplete: There is ___ bread. Are there ___ eggs? There isn't ___ rice.\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\nHow much sugar is there? – How many apples are there?\n\nExercise 2\nsome – any – any\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Proposal 11 — Term 3 exam",
+     "text": "Exercise 1 : Few / little\nComplete with a few / a little: I have ___ friends. There is ___ milk.\n\nExercise 2 : At the restaurant\nComplete:\nWaiter: What would you ___?\nCustomer: I'd ___ rice with fish, please.\nWaiter: Anything to ___?\n\nExercise 3 : Responding\nHow does a waiter respond to an order?",
+     "solution": "Exercise 1\na few – a little\n\nExercise 2\nlike – like – drink\n\nExercise 3\nCertainly. / Here you are. / Right away."
+    },
+    {
+     "title": "Proposal 12 — Term 3 exam",
+     "text": "Exercise 1 : Few / little\nComplete with a few / a little: I have ___ friends. There is ___ milk.\n\nExercise 2 : At the restaurant\nComplete:\nWaiter: What would you ___?\nCustomer: I'd ___ rice with fish, please.\nWaiter: Anything to ___?\n\nExercise 3 : Responding\nRespond positively and negatively: «Can you help me?»",
+     "solution": "Exercise 1\na few – a little\n\nExercise 2\nlike – like – drink\n\nExercise 3\nYes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Proposal 13 — Term 3 exam",
+     "text": "Exercise 1 : Much / many\nComplete with much / many: How ___ books? How ___ water? There aren't ___ people.\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\nmany – much – many\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Proposal 14 — Term 3 exam",
+     "text": "Exercise 1 : Much / many\nComplete with much / many: How ___ books? How ___ water? There aren't ___ people.\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Write\nWrite a short dialogue (4 lines) in which you ask a friend for his notebook.",
+     "solution": "Exercise 1\nmany – much – many\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nA: Can I borrow your notebook, please? B: Sure, here you are. A: Thanks a lot. B: You're welcome."
+    },
+    {
+     "title": "Proposal 15 — Term 3 exam",
+     "text": "Exercise 1 : Questions\nAsk about quantity: (sugar) (apples)\n\nExercise 2 : At the restaurant\nComplete:\nWaiter: What would you ___?\nCustomer: I'd ___ rice with fish, please.\nWaiter: Anything to ___?\n\nExercise 3 : Responding\nRespond positively and negatively: «Can you help me?»",
+     "solution": "Exercise 1\nHow much sugar is there? – How many apples are there?\n\nExercise 2\nlike – like – drink\n\nExercise 3\nYes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Proposal 16 — Term 3 exam",
+     "text": "Exercise 1 : Much / many\nComplete with much / many: How ___ books? How ___ water? There aren't ___ people.\n\nExercise 2 : At the restaurant\nComplete:\nWaiter: What would you ___?\nCustomer: I'd ___ rice with fish, please.\nWaiter: Anything to ___?\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\nmany – much – many\n\nExercise 2\nlike – like – drink\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Proposal 17 — Term 3 exam",
+     "text": "Exercise 1 : Few / little\nComplete with a few / a little: I have ___ friends. There is ___ milk.\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\na few – a little\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    },
+    {
+     "title": "Proposal 18 — Term 3 exam",
+     "text": "Exercise 1 : Questions\nAsk about quantity: (sugar) (apples)\n\nExercise 2 : Some / any\nComplete: There is ___ bread. Are there ___ eggs? There isn't ___ rice.\n\nExercise 3 : Responding\nRespond positively and negatively: «Can you help me?»",
+     "solution": "Exercise 1\nHow much sugar is there? – How many apples are there?\n\nExercise 2\nsome – any – any\n\nExercise 3\nYes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Proposal 19 — Term 3 exam",
+     "text": "Exercise 1 : Few / little\nComplete with a few / a little: I have ___ friends. There is ___ milk.\n\nExercise 2 : Orders\nMake polite orders: (a glass of water) (the bill)\n\nExercise 3 : Responding\nRespond positively and negatively: «Can you help me?»",
+     "solution": "Exercise 1\na few – a little\n\nExercise 2\nCan I have a glass of water, please? – The bill, please.\n\nExercise 3\nYes, of course. / Sure. — Sorry, I can't. I'm busy."
+    },
+    {
+     "title": "Proposal 20 — Term 3 exam",
+     "text": "Exercise 1 : Much / many\nComplete with much / many: How ___ books? How ___ water? There aren't ___ people.\n\nExercise 2 : Some / any\nComplete: There is ___ bread. Are there ___ eggs? There isn't ___ rice.\n\nExercise 3 : Requests\nMake polite requests: (open the window) (lend me your pen)",
+     "solution": "Exercise 1\nmany – much – many\n\nExercise 2\nsome – any – any\n\nExercise 3\nCould you open the window, please? – Can you lend me your pen, please?"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1641 @@
+{
+ "subject": "TI",
+ "level": "3AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Leçon 9",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Introduction à PowerPoint et création d'une présentation",
+    "Ouverture, fermeture et enregistrement d'une présentation",
+    "Insertion et gestion des diapositives",
+    "Insertion de texte et mise en forme",
+    "Insertion d'images et objets graphiques",
+    "Déplacement et transition des diapositives",
+    "Exposition et finalisation de la présentation"
+   ],
+   "items": [
+    {
+     "title": "PowerPoint",
+     "text": "À quoi sert PowerPoint ? Cite deux situations d'utilisation.",
+     "solution": "Logiciel de présentation assistée par ordinateur (PréAO) ; exposé en classe, présentation d'un projet."
+    },
+    {
+     "title": "Nouvelle présentation",
+     "text": "Décris les étapes pour créer une nouvelle présentation avec un thème.",
+     "solution": "Ouvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème."
+    },
+    {
+     "title": "Interface",
+     "text": "Cite trois zones de l'interface de PowerPoint.",
+     "solution": "Volet des miniatures, diapositive en cours, zone de commentaires, ruban."
+    },
+    {
+     "title": "Extension",
+     "text": "Quelle est l'extension d'un fichier PowerPoint ? Comment l'enregistrer en PDF ?",
+     "solution": ".pptx ; Fichier → Enregistrer sous → type PDF."
+    },
+    {
+     "title": "Zone de texte",
+     "text": "Comment ajouter une zone de texte et changer sa couleur ?",
+     "solution": "Insertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police."
+    },
+    {
+     "title": "Image et taille",
+     "text": "Comment redimensionner une image sans la déformer dans PowerPoint ?",
+     "solution": "Tirer une poignée d'angle (en gardant les proportions)."
+    },
+    {
+     "title": "Transition / animation",
+     "text": "Différence entre transition et animation ?",
+     "solution": "Transition : effet entre deux diapositives ; animation : effet sur un objet à l'intérieur d'une diapositive."
+    },
+    {
+     "title": "Fermer sans perdre",
+     "text": "Que se passe-t-il si on ferme une présentation non enregistrée ?",
+     "solution": "PowerPoint demande d'enregistrer ; si on refuse, les modifications sont perdues."
+    },
+    {
+     "title": "Diaporama",
+     "text": "Comment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?",
+     "solution": "Touche F5 ; Maj + F5."
+    },
+    {
+     "title": "Conseil",
+     "text": "Pourquoi éviter trop d'animations ?",
+     "solution": "Elles distraient le public et font perdre du temps."
+    },
+    {
+     "title": "Préparer l'exposé",
+     "text": "Cite trois conseils pour présenter son exposé devant la classe.",
+     "solution": "Répéter avant, regarder le public, ne pas lire les diapositives, respecter le temps."
+    },
+    {
+     "title": "Règles",
+     "text": "Cite trois règles pour un texte lisible sur une diapositive.",
+     "solution": "Peu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond."
+    },
+    {
+     "title": "SmartArt",
+     "text": "Qu'est-ce qu'un SmartArt ? Donne un usage.",
+     "solution": "Un diagramme prêt à l'emploi ; représenter les étapes d'un processus ou une hiérarchie."
+    },
+    {
+     "title": "Puces",
+     "text": "À quoi servent les puces ? Comment les ajouter ?",
+     "solution": "À présenter les idées en liste ; Accueil → Paragraphe → Puces."
+    },
+    {
+     "title": "Diapositive",
+     "text": "Comment ajouter, dupliquer et supprimer une diapositive ?",
+     "solution": "Accueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr."
+    },
+    {
+     "title": "Ouvrir",
+     "text": "Comment ouvrir une présentation enregistrée sur une clé USB ?",
+     "solution": "Fichier → Ouvrir → Parcourir → sélectionner la clé USB → choisir le fichier → Ouvrir."
+    },
+    {
+     "title": "Insertion",
+     "text": "Cite trois objets qu'on peut insérer dans une diapositive.",
+     "solution": "Image, forme, SmartArt, graphique, tableau, vidéo."
+    },
+    {
+     "title": "Appliquer une transition",
+     "text": "Comment appliquer la même transition à toutes les diapositives ?",
+     "solution": "Onglet Transitions → choisir l'effet → Appliquer partout."
+    },
+    {
+     "title": "Disposition",
+     "text": "Qu'est-ce qu'une disposition ? Donne deux exemples.",
+     "solution": "L'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus."
+    },
+    {
+     "title": "Ordre",
+     "text": "Comment changer l'ordre des diapositives ?",
+     "solution": "Glisser-déposer les miniatures dans le volet de gauche ou utiliser la trieuse de diapositives."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Naviguer sur Internet en toute sécurité et avec éthique"
+   ],
+   "items": [
+    {
+     "title": "Wi-Fi public",
+     "text": "Quels risques en utilisant un Wi-Fi public ?",
+     "solution": "Interception des données ; éviter de se connecter à des comptes sensibles."
+    },
+    {
+     "title": "Éthique",
+     "text": "Un ami publie une photo humiliante d'un camarade. Que fais-tu ?",
+     "solution": "Je lui demande de la retirer, je ne la partage pas et je préviens un adulte si besoin."
+    },
+    {
+     "title": "Données personnelles",
+     "text": "Cite trois données personnelles à ne jamais publier.",
+     "solution": "Adresse, numéro de téléphone, mots de passe, photos privées, numéro de carte."
+    },
+    {
+     "title": "Insertion",
+     "text": "Cite trois objets qu'on peut insérer dans une diapositive.",
+     "solution": "Image, forme, SmartArt, graphique, tableau, vidéo."
+    },
+    {
+     "title": "Transition / animation",
+     "text": "Différence entre transition et animation ?",
+     "solution": "Transition : effet entre deux diapositives ; animation : effet sur un objet à l'intérieur d'une diapositive."
+    },
+    {
+     "title": "SmartArt",
+     "text": "Qu'est-ce qu'un SmartArt ? Donne un usage.",
+     "solution": "Un diagramme prêt à l'emploi ; représenter les étapes d'un processus ou une hiérarchie."
+    },
+    {
+     "title": "Interface",
+     "text": "Cite trois zones de l'interface de PowerPoint.",
+     "solution": "Volet des miniatures, diapositive en cours, zone de commentaires, ruban."
+    },
+    {
+     "title": "Nouvelle présentation",
+     "text": "Décris les étapes pour créer une nouvelle présentation avec un thème.",
+     "solution": "Ouvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème."
+    },
+    {
+     "title": "Puces",
+     "text": "À quoi servent les puces ? Comment les ajouter ?",
+     "solution": "À présenter les idées en liste ; Accueil → Paragraphe → Puces."
+    },
+    {
+     "title": "Préparer l'exposé",
+     "text": "Cite trois conseils pour présenter son exposé devant la classe.",
+     "solution": "Répéter avant, regarder le public, ne pas lire les diapositives, respecter le temps."
+    },
+    {
+     "title": "Zone de texte",
+     "text": "Comment ajouter une zone de texte et changer sa couleur ?",
+     "solution": "Insertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police."
+    },
+    {
+     "title": "Disposition",
+     "text": "Qu'est-ce qu'une disposition ? Donne deux exemples.",
+     "solution": "L'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus."
+    },
+    {
+     "title": "Image et taille",
+     "text": "Comment redimensionner une image sans la déformer dans PowerPoint ?",
+     "solution": "Tirer une poignée d'angle (en gardant les proportions)."
+    },
+    {
+     "title": "Ordre",
+     "text": "Comment changer l'ordre des diapositives ?",
+     "solution": "Glisser-déposer les miniatures dans le volet de gauche ou utiliser la trieuse de diapositives."
+    },
+    {
+     "title": "Fermer sans perdre",
+     "text": "Que se passe-t-il si on ferme une présentation non enregistrée ?",
+     "solution": "PowerPoint demande d'enregistrer ; si on refuse, les modifications sont perdues."
+    },
+    {
+     "title": "Conseil",
+     "text": "Pourquoi éviter trop d'animations ?",
+     "solution": "Elles distraient le public et font perdre du temps."
+    },
+    {
+     "title": "Appliquer une transition",
+     "text": "Comment appliquer la même transition à toutes les diapositives ?",
+     "solution": "Onglet Transitions → choisir l'effet → Appliquer partout."
+    },
+    {
+     "title": "PowerPoint",
+     "text": "À quoi sert PowerPoint ? Cite deux situations d'utilisation.",
+     "solution": "Logiciel de présentation assistée par ordinateur (PréAO) ; exposé en classe, présentation d'un projet."
+    },
+    {
+     "title": "Diapositive",
+     "text": "Comment ajouter, dupliquer et supprimer une diapositive ?",
+     "solution": "Accueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr."
+    },
+    {
+     "title": "Diaporama",
+     "text": "Comment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?",
+     "solution": "Touche F5 ; Maj + F5."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Introduction à la notion d'algorithme",
+    "Introduction à la notion de variables",
+    "Introduction à la notion de conditions",
+    "Écriture d'un algorithme simple",
+    "Test d'un algorithme simple",
+    "Introduction aux boucles",
+    "Utilisation des boucles dans un algorithme",
+    "Reconnaissance de la tâche faite par un algorithme",
+    "Création et test d'un algorithme final"
+   ],
+   "items": [
+    {
+     "title": "Que fait-il ? (2)",
+     "text": "Lire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Il affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Somme",
+     "text": "Écris un algorithme qui calcule la somme 1 + 2 + … + 100.",
+     "solution": "s ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050."
+    },
+    {
+     "title": "Ordre",
+     "text": "Écris l'algorithme pour préparer le thé en 4 étapes.",
+     "solution": "Début ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin."
+    },
+    {
+     "title": "Condition",
+     "text": "Écris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.",
+     "solution": "Si note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi"
+    },
+    {
+     "title": "Que fait-il ?",
+     "text": "p ← 1 ; Pour i de 1 à 5 Faire p ← p × i FinPour ; Afficher(p). Que fait cet algorithme et qu'affiche-t-il ?",
+     "solution": "Il calcule 5! (factorielle) ; affiche 120."
+    },
+    {
+     "title": "Table",
+     "text": "Écris un algorithme qui affiche la table de multiplication de 7.",
+     "solution": "Pour i de 1 à 10 Faire Afficher(7 × i) FinPour."
+    },
+    {
+     "title": "Erreur",
+     "text": "Trouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).",
+     "solution": "Division par zéro : impossible."
+    },
+    {
+     "title": "Affectation",
+     "text": "Après les instructions a ← 5 ; b ← a + 3 ; a ← b × 2, que valent a et b ?",
+     "solution": "b = 8 ; a = 16."
+    },
+    {
+     "title": "Tant que",
+     "text": "Différence entre boucle Pour et boucle Tant que ?",
+     "solution": "Pour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Algorithme",
+     "text": "Qu'est-ce qu'un algorithme ? Donne un exemple de la vie courante.",
+     "solution": "Suite finie et ordonnée d'instructions pour résoudre un problème ; une recette de cuisine."
+    },
+    {
+     "title": "Variable",
+     "text": "Qu'est-ce qu'une variable ? Cite deux types.",
+     "solution": "Une case mémoire nommée qui contient une valeur ; entier, réel, chaîne de caractères, booléen."
+    },
+    {
+     "title": "Échange",
+     "text": "Écris les instructions pour échanger les valeurs de x et y.",
+     "solution": "temp ← x ; x ← y ; y ← temp."
+    },
+    {
+     "title": "Moyenne",
+     "text": "Écris un algorithme qui calcule la moyenne de trois notes.",
+     "solution": "Lire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m)."
+    },
+    {
+     "title": "Structure",
+     "text": "Cite les trois parties d'un algorithme.",
+     "solution": "Déclaration (variables), début (instructions), fin."
+    },
+    {
+     "title": "Boucle Pour",
+     "text": "Écris une boucle qui affiche les nombres de 1 à 10.",
+     "solution": "Pour i de 1 à 10 Faire Afficher(i) FinPour"
+    },
+    {
+     "title": "Tracer",
+     "text": "Algorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?",
+     "solution": "y = 16 > 10 → « grand »."
+    },
+    {
+     "title": "Surface",
+     "text": "Écris un algorithme qui lit la longueur et la largeur d'un rectangle et affiche sa surface.",
+     "solution": "Variables L, l, S : réels ; Début Lire(L, l) ; S ← L × l ; Afficher(S) ; Fin."
+    },
+    {
+     "title": "Projet",
+     "text": "Écris un algorithme qui lit 5 notes, calcule la moyenne et affiche « Admis » ou « Ajourné ».",
+     "solution": "s ← 0 ; Pour i de 1 à 5 Faire Lire(n) ; s ← s + n FinPour ; m ← s / 5 ; Si m ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné »)."
+    },
+    {
+     "title": "Pair / impair",
+     "text": "Écris la condition pour savoir si un nombre n est pair.",
+     "solution": "Si n mod 2 = 0 Alors pair Sinon impair."
+    },
+    {
+     "title": "Wi-Fi public",
+     "text": "Quels risques en utilisant un Wi-Fi public ?",
+     "solution": "Interception des données ; éviter de se connecter à des comptes sensibles."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 28",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Introduction aux réseaux informatiques",
+    "Composantes d'un réseau simple",
+    "Fonctionnement et types de réseaux",
+    "Utilisation d'un réseau local simple"
+   ],
+   "items": [
+    {
+     "title": "Types",
+     "text": "Classe du plus petit au plus grand : WAN, LAN, PAN, MAN.",
+     "solution": "PAN < LAN < MAN < WAN."
+    },
+    {
+     "title": "Composants",
+     "text": "Cite quatre composants d'un réseau local.",
+     "solution": "Ordinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi."
+    },
+    {
+     "title": "Rôle",
+     "text": "Rôle du routeur et du switch ?",
+     "solution": "Routeur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux."
+    },
+    {
+     "title": "Adresse IP",
+     "text": "Qu'est-ce qu'une adresse IP ?",
+     "solution": "Un numéro qui identifie un appareil sur un réseau."
+    },
+    {
+     "title": "Réseau",
+     "text": "Cite deux avantages d'un réseau informatique.",
+     "solution": "Partage de fichiers et d'imprimantes, accès à Internet partagé, communication."
+    },
+    {
+     "title": "Partage",
+     "text": "Comment partager un dossier sur un réseau local ?",
+     "solution": "Clic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits."
+    },
+    {
+     "title": "Disposition",
+     "text": "Qu'est-ce qu'une disposition ? Donne deux exemples.",
+     "solution": "L'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus."
+    },
+    {
+     "title": "Algorithme",
+     "text": "Qu'est-ce qu'un algorithme ? Donne un exemple de la vie courante.",
+     "solution": "Suite finie et ordonnée d'instructions pour résoudre un problème ; une recette de cuisine."
+    },
+    {
+     "title": "Ouvrir",
+     "text": "Comment ouvrir une présentation enregistrée sur une clé USB ?",
+     "solution": "Fichier → Ouvrir → Parcourir → sélectionner la clé USB → choisir le fichier → Ouvrir."
+    },
+    {
+     "title": "Variable",
+     "text": "Qu'est-ce qu'une variable ? Cite deux types.",
+     "solution": "Une case mémoire nommée qui contient une valeur ; entier, réel, chaîne de caractères, booléen."
+    },
+    {
+     "title": "Somme",
+     "text": "Écris un algorithme qui calcule la somme 1 + 2 + … + 100.",
+     "solution": "s ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050."
+    },
+    {
+     "title": "Conseil",
+     "text": "Pourquoi éviter trop d'animations ?",
+     "solution": "Elles distraient le public et font perdre du temps."
+    },
+    {
+     "title": "Affectation",
+     "text": "Après les instructions a ← 5 ; b ← a + 3 ; a ← b × 2, que valent a et b ?",
+     "solution": "b = 8 ; a = 16."
+    },
+    {
+     "title": "Pair / impair",
+     "text": "Écris la condition pour savoir si un nombre n est pair.",
+     "solution": "Si n mod 2 = 0 Alors pair Sinon impair."
+    },
+    {
+     "title": "Appliquer une transition",
+     "text": "Comment appliquer la même transition à toutes les diapositives ?",
+     "solution": "Onglet Transitions → choisir l'effet → Appliquer partout."
+    },
+    {
+     "title": "Erreur",
+     "text": "Trouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).",
+     "solution": "Division par zéro : impossible."
+    },
+    {
+     "title": "Structure",
+     "text": "Cite les trois parties d'un algorithme.",
+     "solution": "Déclaration (variables), début (instructions), fin."
+    },
+    {
+     "title": "Ordre",
+     "text": "Écris l'algorithme pour préparer le thé en 4 étapes.",
+     "solution": "Début ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin."
+    },
+    {
+     "title": "Insertion",
+     "text": "Cite trois objets qu'on peut insérer dans une diapositive.",
+     "solution": "Image, forme, SmartArt, graphique, tableau, vidéo."
+    },
+    {
+     "title": "Règles",
+     "text": "Cite trois règles pour un texte lisible sur une diapositive.",
+     "solution": "Peu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 33",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Introduction à l'e-mail",
+    "Rédaction et envoi d'un e-mail",
+    "Ajouter une pièce jointe",
+    "Réception et gestion des e-mails"
+   ],
+   "items": [
+    {
+     "title": "Rédaction",
+     "text": "Cite les parties d'un e-mail formel.",
+     "solution": "Objet clair, formule d'appel, message, formule de politesse, signature."
+    },
+    {
+     "title": "Cci",
+     "text": "À quoi sert le champ Cci ?",
+     "solution": "Envoyer une copie cachée : les autres destinataires ne voient pas cette adresse."
+    },
+    {
+     "title": "Répondre / transférer",
+     "text": "Différence entre « Répondre » et « Transférer » ?",
+     "solution": "Répondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne."
+    },
+    {
+     "title": "Pièce jointe",
+     "text": "Comment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?",
+     "solution": "Cliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage."
+    },
+    {
+     "title": "Webmail",
+     "text": "Qu'est-ce qu'un webmail ? Donne deux exemples.",
+     "solution": "Une messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail."
+    },
+    {
+     "title": "Gestion",
+     "text": "Cite trois actions possibles sur un e-mail reçu.",
+     "solution": "Répondre, transférer, archiver, supprimer, marquer comme spam."
+    },
+    {
+     "title": "Diaporama",
+     "text": "Comment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?",
+     "solution": "Touche F5 ; Maj + F5."
+    },
+    {
+     "title": "Somme",
+     "text": "Écris un algorithme qui calcule la somme 1 + 2 + … + 100.",
+     "solution": "s ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050."
+    },
+    {
+     "title": "Boucle Pour",
+     "text": "Écris une boucle qui affiche les nombres de 1 à 10.",
+     "solution": "Pour i de 1 à 10 Faire Afficher(i) FinPour"
+    },
+    {
+     "title": "Fermer sans perdre",
+     "text": "Que se passe-t-il si on ferme une présentation non enregistrée ?",
+     "solution": "PowerPoint demande d'enregistrer ; si on refuse, les modifications sont perdues."
+    },
+    {
+     "title": "Que fait-il ?",
+     "text": "p ← 1 ; Pour i de 1 à 5 Faire p ← p × i FinPour ; Afficher(p). Que fait cet algorithme et qu'affiche-t-il ?",
+     "solution": "Il calcule 5! (factorielle) ; affiche 120."
+    },
+    {
+     "title": "Surface",
+     "text": "Écris un algorithme qui lit la longueur et la largeur d'un rectangle et affiche sa surface.",
+     "solution": "Variables L, l, S : réels ; Début Lire(L, l) ; S ← L × l ; Afficher(S) ; Fin."
+    },
+    {
+     "title": "PowerPoint",
+     "text": "À quoi sert PowerPoint ? Cite deux situations d'utilisation.",
+     "solution": "Logiciel de présentation assistée par ordinateur (PréAO) ; exposé en classe, présentation d'un projet."
+    },
+    {
+     "title": "Projet",
+     "text": "Écris un algorithme qui lit 5 notes, calcule la moyenne et affiche « Admis » ou « Ajourné ».",
+     "solution": "s ← 0 ; Pour i de 1 à 5 Faire Lire(n) ; s ← s + n FinPour ; m ← s / 5 ; Si m ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné »)."
+    },
+    {
+     "title": "Nouvelle présentation",
+     "text": "Décris les étapes pour créer une nouvelle présentation avec un thème.",
+     "solution": "Ouvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème."
+    },
+    {
+     "title": "Erreur",
+     "text": "Trouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).",
+     "solution": "Division par zéro : impossible."
+    },
+    {
+     "title": "Adresse IP",
+     "text": "Qu'est-ce qu'une adresse IP ?",
+     "solution": "Un numéro qui identifie un appareil sur un réseau."
+    },
+    {
+     "title": "Insertion",
+     "text": "Cite trois objets qu'on peut insérer dans une diapositive.",
+     "solution": "Image, forme, SmartArt, graphique, tableau, vidéo."
+    },
+    {
+     "title": "Diapositive",
+     "text": "Comment ajouter, dupliquer et supprimer une diapositive ?",
+     "solution": "Accueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr."
+    },
+    {
+     "title": "Image et taille",
+     "text": "Comment redimensionner une image sans la déformer dans PowerPoint ?",
+     "solution": "Tirer une poignée d'angle (en gardant les proportions)."
+    }
+   ]
+  },
+  {
+   "week": "Semaines 9-10",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Notion de cahier des charges",
+    "Environnement et fonctionnement de l'objet technique",
+    "Estimation du coût et limitations matérielles",
+    "Caractéristiques économiques des matériaux",
+    "Étude de cas : élaboration d'un cahier des charges",
+    "Cycle de vie d'un système technique"
+   ],
+   "items": [
+    {
+     "title": "Critères",
+     "text": "Cite trois critères économiques dans le choix d'un matériau.",
+     "solution": "Prix, disponibilité, facilité de mise en œuvre, possibilité de recyclage."
+    },
+    {
+     "title": "Cas",
+     "text": "Rédige un cahier des charges simplifié pour un porte-cartable.",
+     "solution": "Besoin : ranger les cartables ; fonctions : supporter 10 cartables ; contraintes : coût < 2 000 MRU, solide, sans angles coupants."
+    },
+    {
+     "title": "Contenu",
+     "text": "Cite quatre éléments d'un cahier des charges.",
+     "solution": "Le besoin, les fonctions de service, les contraintes (coût, délai, sécurité, environnement), les critères d'appréciation."
+    },
+    {
+     "title": "Fonctionnement",
+     "text": "Décris le fonctionnement d'un vélo de la pédale à la roue.",
+     "solution": "Les pédales font tourner le plateau, la chaîne transmet le mouvement au pignon qui entraîne la roue arrière."
+    },
+    {
+     "title": "Coût",
+     "text": "Une lampe nécessite : panneau 2 500 MRU, batterie 1 800 MRU, LED 300 MRU, boîtier 400 MRU. Calcule le coût des matériaux.",
+     "solution": "2 500 + 1 800 + 300 + 400 = 5 000 MRU."
+    },
+    {
+     "title": "Étapes",
+     "text": "Cite les étapes du cycle de vie d'un objet technique.",
+     "solution": "Extraction des matières premières, fabrication, distribution, utilisation, fin de vie (recyclage ou élimination)."
+    },
+    {
+     "title": "Prix de vente",
+     "text": "Si la main-d'œuvre coûte 1 000 MRU et la marge 20 % du coût total, quel est le prix de vente ?",
+     "solution": "Coût total = 6 000 ; marge = 1 200 ; prix = 7 200 MRU."
+    },
+    {
+     "title": "Interactions",
+     "text": "Comment la poussière du Sahara influence-t-elle la conception d'un ordinateur ?",
+     "solution": "Il faut des filtres, une bonne ventilation et une protection contre la poussière."
+    },
+    {
+     "title": "Comparaison",
+     "text": "Pourquoi utilise-t-on souvent le plastique plutôt que l'aluminium pour les seaux ?",
+     "solution": "Le plastique est moins cher, léger et facile à mouler."
+    },
+    {
+     "title": "Réduction",
+     "text": "Propose deux moyens de réduire le coût d'un objet.",
+     "solution": "Utiliser des matériaux locaux, simplifier la conception, produire en série."
+    },
+    {
+     "title": "Bête à cornes",
+     "text": "Applique l'outil « bête à cornes » à un ventilateur.",
+     "solution": "À qui rend-il service ? À l'utilisateur ; sur quoi agit-il ? L'air ; dans quel but ? Rafraîchir la pièce."
+    },
+    {
+     "title": "Fonction principale",
+     "text": "Donne la fonction principale d'un climatiseur et une fonction contrainte.",
+     "solution": "Principale : refroidir l'air de la pièce ; contrainte : consommer peu d'énergie / faire peu de bruit."
+    },
+    {
+     "title": "Cahier des charges",
+     "text": "Qu'est-ce qu'un cahier des charges ?",
+     "solution": "Document qui décrit les besoins, les fonctions et les contraintes d'un objet à concevoir."
+    },
+    {
+     "title": "Critères",
+     "text": "Pour un chargeur solaire de téléphone, donne un critère et son niveau.",
+     "solution": "Puissance : 5 W ; temps de charge : < 4 h ; poids : < 500 g."
+    },
+    {
+     "title": "Impact",
+     "text": "À quelle étape un téléphone pollue-t-il le plus ? Justifie.",
+     "solution": "Souvent la fabrication (extraction des métaux, énergie) et la fin de vie s'il n'est pas recyclé."
+    },
+    {
+     "title": "Recyclage",
+     "text": "Pourquoi le recyclage des matériaux réduit-il les coûts ?",
+     "solution": "Il économise les matières premières et l'énergie de fabrication."
+    },
+    {
+     "title": "Local",
+     "text": "Cite deux matériaux disponibles localement en Mauritanie utilisés dans la construction.",
+     "solution": "Sable, pierre, argile (banco), coquillages, bois local."
+    },
+    {
+     "title": "Fin de vie",
+     "text": "Que faire d'un vieux téléphone ?",
+     "solution": "Le réparer, le donner, ou le déposer dans un point de collecte pour recyclage."
+    },
+    {
+     "title": "Limitations",
+     "text": "Donne deux limitations matérielles possibles lors de la fabrication d'un objet.",
+     "solution": "Matériaux indisponibles localement, outils inadaptés, budget limité."
+    },
+    {
+     "title": "Contraintes",
+     "text": "Cite trois contraintes pour concevoir une lampe solaire d'étude.",
+     "solution": "Coût faible, autonomie de plusieurs heures, résistance à la chaleur et à la poussière, sécurité."
+    }
+   ]
+  },
+  {
+   "week": "Semaines 20-21",
+   "term": 2,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Conversion des énergies",
+    "Nature de l'énergie de fonctionnement",
+    "Fonction de synchronisation et fonction de signalisation",
+    "Fonction de transmission de mouvements"
+   ],
+   "items": [
+    {
+     "title": "Synchronisation",
+     "text": "Qu'est-ce que la synchronisation ? Donne un exemple.",
+     "solution": "Coordonner des actions dans le temps ; les feux tricolores d'un carrefour."
+    },
+    {
+     "title": "Signalisation",
+     "text": "Donne deux exemples de fonction de signalisation.",
+     "solution": "Le voyant d'un chargeur, le clignotant d'une voiture, la sonnerie d'un réveil."
+    },
+    {
+     "title": "Nature",
+     "text": "Quelle énergie fait fonctionner : un réveil à piles, une moto, une éolienne ?",
+     "solution": "Chimique (piles) → électrique ; chimique (carburant) ; éolienne (cinétique du vent)."
+    },
+    {
+     "title": "Transmission",
+     "text": "Cite trois systèmes de transmission de mouvement.",
+     "solution": "Engrenages, poulies et courroie, pignons et chaîne."
+    },
+    {
+     "title": "Conversion",
+     "text": "Donne la conversion d'énergie dans : un panneau solaire, un moteur électrique, une lampe.",
+     "solution": "Lumineuse → électrique ; électrique → mécanique ; électrique → lumineuse (+ thermique)."
+    },
+    {
+     "title": "Rapport",
+     "text": "Un pignon moteur de 10 dents entraîne une roue de 30 dents. La roue tourne-t-elle plus vite ou moins vite ?",
+     "solution": "Moins vite : 3 fois plus lentement (rapport 10/30 = 1/3)."
+    },
+    {
+     "title": "Rendement",
+     "text": "Un moteur reçoit 100 J et fournit 75 J de travail utile. Calcule son rendement.",
+     "solution": "η = 75 / 100 = 75 %."
+    },
+    {
+     "title": "Éthique",
+     "text": "Un ami publie une photo humiliante d'un camarade. Que fais-tu ?",
+     "solution": "Je lui demande de la retirer, je ne la partage pas et je préviens un adulte si besoin."
+    },
+    {
+     "title": "Milieu extérieur",
+     "text": "Cite les éléments du milieu extérieur d'un vélo.",
+     "solution": "L'utilisateur, la route, l'air (vent), la pluie, les autres usagers."
+    },
+    {
+     "title": "Prix de vente",
+     "text": "Si la main-d'œuvre coûte 1 000 MRU et la marge 20 % du coût total, quel est le prix de vente ?",
+     "solution": "Coût total = 6 000 ; marge = 1 200 ; prix = 7 200 MRU."
+    },
+    {
+     "title": "Que fait-il ? (2)",
+     "text": "Lire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Il affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Limitations",
+     "text": "Donne deux limitations matérielles possibles lors de la fabrication d'un objet.",
+     "solution": "Matériaux indisponibles localement, outils inadaptés, budget limité."
+    },
+    {
+     "title": "Affectation",
+     "text": "Après les instructions a ← 5 ; b ← a + 3 ; a ← b × 2, que valent a et b ?",
+     "solution": "b = 8 ; a = 16."
+    },
+    {
+     "title": "Que fait-il ?",
+     "text": "p ← 1 ; Pour i de 1 à 5 Faire p ← p × i FinPour ; Afficher(p). Que fait cet algorithme et qu'affiche-t-il ?",
+     "solution": "Il calcule 5! (factorielle) ; affiche 120."
+    },
+    {
+     "title": "Bête à cornes",
+     "text": "Applique l'outil « bête à cornes » à un ventilateur.",
+     "solution": "À qui rend-il service ? À l'utilisateur ; sur quoi agit-il ? L'air ; dans quel but ? Rafraîchir la pièce."
+    },
+    {
+     "title": "Zone de texte",
+     "text": "Comment ajouter une zone de texte et changer sa couleur ?",
+     "solution": "Insertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police."
+    },
+    {
+     "title": "Boucle Pour",
+     "text": "Écris une boucle qui affiche les nombres de 1 à 10.",
+     "solution": "Pour i de 1 à 10 Faire Afficher(i) FinPour"
+    },
+    {
+     "title": "Coût",
+     "text": "Une lampe nécessite : panneau 2 500 MRU, batterie 1 800 MRU, LED 300 MRU, boîtier 400 MRU. Calcule le coût des matériaux.",
+     "solution": "2 500 + 1 800 + 300 + 400 = 5 000 MRU."
+    },
+    {
+     "title": "Tracer",
+     "text": "Algorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?",
+     "solution": "y = 16 > 10 → « grand »."
+    },
+    {
+     "title": "Pair / impair",
+     "text": "Écris la condition pour savoir si un nombre n est pair.",
+     "solution": "Si n mod 2 = 0 Alors pair Sinon impair."
+    }
+   ]
+  },
+  {
+   "week": "Semaines 29-30",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Fonction de commande à distance",
+    "Publicité : définition, constituants, fonctions et méthodes"
+   ],
+   "items": [
+    {
+     "title": "Constituants",
+     "text": "Cite les constituants d'une affiche publicitaire.",
+     "solution": "Image, slogan, nom du produit/logo, texte informatif, coordonnées."
+    },
+    {
+     "title": "Télécommande",
+     "text": "Comment fonctionne une télécommande de téléviseur ?",
+     "solution": "Elle envoie un signal infrarouge codé reçu par le capteur du téléviseur."
+    },
+    {
+     "title": "Exemples",
+     "text": "Cite trois objets commandés à distance.",
+     "solution": "Téléviseur, portail automatique, drone, climatiseur."
+    },
+    {
+     "title": "Critique",
+     "text": "Pourquoi faut-il être critique face à la publicité ?",
+     "solution": "Elle peut exagérer les qualités et pousser à des achats inutiles."
+    },
+    {
+     "title": "Publicité",
+     "text": "Définis la publicité et cite deux de ses fonctions.",
+     "solution": "Message destiné à faire connaître et vendre un produit ; informer, persuader, fidéliser."
+    },
+    {
+     "title": "Diapositive",
+     "text": "Comment ajouter, dupliquer et supprimer une diapositive ?",
+     "solution": "Accueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr."
+    },
+    {
+     "title": "Zone de texte",
+     "text": "Comment ajouter une zone de texte et changer sa couleur ?",
+     "solution": "Insertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police."
+    },
+    {
+     "title": "Ordre",
+     "text": "Écris l'algorithme pour préparer le thé en 4 étapes.",
+     "solution": "Début ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin."
+    },
+    {
+     "title": "Affectation",
+     "text": "Après les instructions a ← 5 ; b ← a + 3 ; a ← b × 2, que valent a et b ?",
+     "solution": "b = 8 ; a = 16."
+    },
+    {
+     "title": "Tant que",
+     "text": "Différence entre boucle Pour et boucle Tant que ?",
+     "solution": "Pour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Réduction",
+     "text": "Propose deux moyens de réduire le coût d'un objet.",
+     "solution": "Utiliser des matériaux locaux, simplifier la conception, produire en série."
+    },
+    {
+     "title": "Fonction principale",
+     "text": "Donne la fonction principale d'un climatiseur et une fonction contrainte.",
+     "solution": "Principale : refroidir l'air de la pièce ; contrainte : consommer peu d'énergie / faire peu de bruit."
+    },
+    {
+     "title": "Erreur",
+     "text": "Trouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).",
+     "solution": "Division par zéro : impossible."
+    },
+    {
+     "title": "Réseau",
+     "text": "Cite deux avantages d'un réseau informatique.",
+     "solution": "Partage de fichiers et d'imprimantes, accès à Internet partagé, communication."
+    },
+    {
+     "title": "Adresse IP",
+     "text": "Qu'est-ce qu'une adresse IP ?",
+     "solution": "Un numéro qui identifie un appareil sur un réseau."
+    },
+    {
+     "title": "Somme",
+     "text": "Écris un algorithme qui calcule la somme 1 + 2 + … + 100.",
+     "solution": "s ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050."
+    },
+    {
+     "title": "Signalisation",
+     "text": "Donne deux exemples de fonction de signalisation.",
+     "solution": "Le voyant d'un chargeur, le clignotant d'une voiture, la sonnerie d'un réveil."
+    },
+    {
+     "title": "Pair / impair",
+     "text": "Écris la condition pour savoir si un nombre n est pair.",
+     "solution": "Si n mod 2 = 0 Alors pair Sinon impair."
+    },
+    {
+     "title": "Local",
+     "text": "Cite deux matériaux disponibles localement en Mauritanie utilisés dans la construction.",
+     "solution": "Sable, pierre, argile (banco), coquillages, bois local."
+    },
+    {
+     "title": "Milieu extérieur",
+     "text": "Cite les éléments du milieu extérieur d'un vélo.",
+     "solution": "L'utilisateur, la route, l'air (vent), la pluie, les autres usagers."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Leçon 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du trimestre 1",
+   "covers": [
+    "Introduction à PowerPoint et création d'une présentation",
+    "Ouverture, fermeture et enregistrement d'une présentation",
+    "Insertion et gestion des diapositives",
+    "Insertion de texte et mise en forme",
+    "Insertion d'images et objets graphiques",
+    "Déplacement et transition des diapositives",
+    "Exposition et finalisation de la présentation",
+    "Naviguer sur Internet en toute sécurité et avec éthique"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ouvrir\nComment ouvrir une présentation enregistrée sur une clé USB ?\n\nExercice 2 : Zone de texte\nComment ajouter une zone de texte et changer sa couleur ?\n\nExercice 3 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.",
+     "solution": "Exercice 1\nFichier → Ouvrir → Parcourir → sélectionner la clé USB → choisir le fichier → Ouvrir.\n\nExercice 2\nInsertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police.\n\nExercice 3\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 1",
+     "text": "Exercice 1 : Nouvelle présentation\nDécris les étapes pour créer une nouvelle présentation avec un thème.\n\nExercice 2 : Règles\nCite trois règles pour un texte lisible sur une diapositive.\n\nExercice 3 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.",
+     "solution": "Exercice 1\nOuvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème.\n\nExercice 2\nPeu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond.\n\nExercice 3\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ouvrir\nComment ouvrir une présentation enregistrée sur une clé USB ?\n\nExercice 2 : Disposition\nQu'est-ce qu'une disposition ? Donne deux exemples.\n\nExercice 3 : SmartArt\nQu'est-ce qu'un SmartArt ? Donne un usage.",
+     "solution": "Exercice 1\nFichier → Ouvrir → Parcourir → sélectionner la clé USB → choisir le fichier → Ouvrir.\n\nExercice 2\nL'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus.\n\nExercice 3\nUn diagramme prêt à l'emploi ; représenter les étapes d'un processus ou une hiérarchie."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 1",
+     "text": "Exercice 1 : Extension\nQuelle est l'extension d'un fichier PowerPoint ? Comment l'enregistrer en PDF ?\n\nExercice 2 : Ordre\nComment changer l'ordre des diapositives ?\n\nExercice 3 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.",
+     "solution": "Exercice 1\n.pptx ; Fichier → Enregistrer sous → type PDF.\n\nExercice 2\nGlisser-déposer les miniatures dans le volet de gauche ou utiliser la trieuse de diapositives.\n\nExercice 3\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 1",
+     "text": "Exercice 1 : Interface\nCite trois zones de l'interface de PowerPoint.\n\nExercice 2 : Règles\nCite trois règles pour un texte lisible sur une diapositive.\n\nExercice 3 : Wi-Fi public\nQuels risques en utilisant un Wi-Fi public ?",
+     "solution": "Exercice 1\nVolet des miniatures, diapositive en cours, zone de commentaires, ruban.\n\nExercice 2\nPeu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond.\n\nExercice 3\nInterception des données ; éviter de se connecter à des comptes sensibles."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 1",
+     "text": "Exercice 1 : Interface\nCite trois zones de l'interface de PowerPoint.\n\nExercice 2 : Puces\nÀ quoi servent les puces ? Comment les ajouter ?\n\nExercice 3 : Diaporama\nComment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?",
+     "solution": "Exercice 1\nVolet des miniatures, diapositive en cours, zone de commentaires, ruban.\n\nExercice 2\nÀ présenter les idées en liste ; Accueil → Paragraphe → Puces.\n\nExercice 3\nTouche F5 ; Maj + F5."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 1",
+     "text": "Exercice 1 : Interface\nCite trois zones de l'interface de PowerPoint.\n\nExercice 2 : Insertion\nCite trois objets qu'on peut insérer dans une diapositive.\n\nExercice 3 : Wi-Fi public\nQuels risques en utilisant un Wi-Fi public ?",
+     "solution": "Exercice 1\nVolet des miniatures, diapositive en cours, zone de commentaires, ruban.\n\nExercice 2\nImage, forme, SmartArt, graphique, tableau, vidéo.\n\nExercice 3\nInterception des données ; éviter de se connecter à des comptes sensibles."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 1",
+     "text": "Exercice 1 : Diapositive\nComment ajouter, dupliquer et supprimer une diapositive ?\n\nExercice 2 : Puces\nÀ quoi servent les puces ? Comment les ajouter ?\n\nExercice 3 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.",
+     "solution": "Exercice 1\nAccueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr.\n\nExercice 2\nÀ présenter les idées en liste ; Accueil → Paragraphe → Puces.\n\nExercice 3\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 1",
+     "text": "Exercice 1 : Fermer sans perdre\nQue se passe-t-il si on ferme une présentation non enregistrée ?\n\nExercice 2 : Disposition\nQu'est-ce qu'une disposition ? Donne deux exemples.\n\nExercice 3 : Appliquer une transition\nComment appliquer la même transition à toutes les diapositives ?",
+     "solution": "Exercice 1\nPowerPoint demande d'enregistrer ; si on refuse, les modifications sont perdues.\n\nExercice 2\nL'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus.\n\nExercice 3\nOnglet Transitions → choisir l'effet → Appliquer partout."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 1",
+     "text": "Exercice 1 : Extension\nQuelle est l'extension d'un fichier PowerPoint ? Comment l'enregistrer en PDF ?\n\nExercice 2 : Image et taille\nComment redimensionner une image sans la déformer dans PowerPoint ?\n\nExercice 3 : Wi-Fi public\nQuels risques en utilisant un Wi-Fi public ?",
+     "solution": "Exercice 1\n.pptx ; Fichier → Enregistrer sous → type PDF.\n\nExercice 2\nTirer une poignée d'angle (en gardant les proportions).\n\nExercice 3\nInterception des données ; éviter de se connecter à des comptes sensibles."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 1",
+     "text": "Exercice 1 : Extension\nQuelle est l'extension d'un fichier PowerPoint ? Comment l'enregistrer en PDF ?\n\nExercice 2 : Insertion\nCite trois objets qu'on peut insérer dans une diapositive.\n\nExercice 3 : SmartArt\nQu'est-ce qu'un SmartArt ? Donne un usage.",
+     "solution": "Exercice 1\n.pptx ; Fichier → Enregistrer sous → type PDF.\n\nExercice 2\nImage, forme, SmartArt, graphique, tableau, vidéo.\n\nExercice 3\nUn diagramme prêt à l'emploi ; représenter les étapes d'un processus ou une hiérarchie."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 1",
+     "text": "Exercice 1 : Interface\nCite trois zones de l'interface de PowerPoint.\n\nExercice 2 : Puces\nÀ quoi servent les puces ? Comment les ajouter ?\n\nExercice 3 : Conseil\nPourquoi éviter trop d'animations ?",
+     "solution": "Exercice 1\nVolet des miniatures, diapositive en cours, zone de commentaires, ruban.\n\nExercice 2\nÀ présenter les idées en liste ; Accueil → Paragraphe → Puces.\n\nExercice 3\nElles distraient le public et font perdre du temps."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 1",
+     "text": "Exercice 1 : Nouvelle présentation\nDécris les étapes pour créer une nouvelle présentation avec un thème.\n\nExercice 2 : Disposition\nQu'est-ce qu'une disposition ? Donne deux exemples.\n\nExercice 3 : Données personnelles\nCite trois données personnelles à ne jamais publier.",
+     "solution": "Exercice 1\nOuvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème.\n\nExercice 2\nL'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus.\n\nExercice 3\nAdresse, numéro de téléphone, mots de passe, photos privées, numéro de carte."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 1",
+     "text": "Exercice 1 : Diapositive\nComment ajouter, dupliquer et supprimer une diapositive ?\n\nExercice 2 : Zone de texte\nComment ajouter une zone de texte et changer sa couleur ?\n\nExercice 3 : SmartArt\nQu'est-ce qu'un SmartArt ? Donne un usage.",
+     "solution": "Exercice 1\nAccueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr.\n\nExercice 2\nInsertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police.\n\nExercice 3\nUn diagramme prêt à l'emploi ; représenter les étapes d'un processus ou une hiérarchie."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 1",
+     "text": "Exercice 1 : Extension\nQuelle est l'extension d'un fichier PowerPoint ? Comment l'enregistrer en PDF ?\n\nExercice 2 : Disposition\nQu'est-ce qu'une disposition ? Donne deux exemples.\n\nExercice 3 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.",
+     "solution": "Exercice 1\n.pptx ; Fichier → Enregistrer sous → type PDF.\n\nExercice 2\nL'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus.\n\nExercice 3\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 1",
+     "text": "Exercice 1 : Fermer sans perdre\nQue se passe-t-il si on ferme une présentation non enregistrée ?\n\nExercice 2 : Zone de texte\nComment ajouter une zone de texte et changer sa couleur ?\n\nExercice 3 : Éthique\nUn ami publie une photo humiliante d'un camarade. Que fais-tu ?",
+     "solution": "Exercice 1\nPowerPoint demande d'enregistrer ; si on refuse, les modifications sont perdues.\n\nExercice 2\nInsertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police.\n\nExercice 3\nJe lui demande de la retirer, je ne la partage pas et je préviens un adulte si besoin."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 1",
+     "text": "Exercice 1 : Diapositive\nComment ajouter, dupliquer et supprimer une diapositive ?\n\nExercice 2 : Insertion\nCite trois objets qu'on peut insérer dans une diapositive.\n\nExercice 3 : Données personnelles\nCite trois données personnelles à ne jamais publier.",
+     "solution": "Exercice 1\nAccueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr.\n\nExercice 2\nImage, forme, SmartArt, graphique, tableau, vidéo.\n\nExercice 3\nAdresse, numéro de téléphone, mots de passe, photos privées, numéro de carte."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 1",
+     "text": "Exercice 1 : Nouvelle présentation\nDécris les étapes pour créer une nouvelle présentation avec un thème.\n\nExercice 2 : Zone de texte\nComment ajouter une zone de texte et changer sa couleur ?\n\nExercice 3 : SmartArt\nQu'est-ce qu'un SmartArt ? Donne un usage.",
+     "solution": "Exercice 1\nOuvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème.\n\nExercice 2\nInsertion → Zone de texte → dessiner la zone → taper le texte → Accueil → couleur de police.\n\nExercice 3\nUn diagramme prêt à l'emploi ; représenter les étapes d'un processus ou une hiérarchie."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ouvrir\nComment ouvrir une présentation enregistrée sur une clé USB ?\n\nExercice 2 : Image et taille\nComment redimensionner une image sans la déformer dans PowerPoint ?\n\nExercice 3 : Diaporama\nComment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?",
+     "solution": "Exercice 1\nFichier → Ouvrir → Parcourir → sélectionner la clé USB → choisir le fichier → Ouvrir.\n\nExercice 2\nTirer une poignée d'angle (en gardant les proportions).\n\nExercice 3\nTouche F5 ; Maj + F5."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 1",
+     "text": "Exercice 1 : Nouvelle présentation\nDécris les étapes pour créer une nouvelle présentation avec un thème.\n\nExercice 2 : Règles\nCite trois règles pour un texte lisible sur une diapositive.\n\nExercice 3 : Diaporama\nComment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?",
+     "solution": "Exercice 1\nOuvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème.\n\nExercice 2\nPeu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond.\n\nExercice 3\nTouche F5 ; Maj + F5."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du trimestre 2",
+   "covers": [
+    "Introduction à la notion d'algorithme",
+    "Introduction à la notion de variables",
+    "Introduction à la notion de conditions",
+    "Écriture d'un algorithme simple",
+    "Test d'un algorithme simple",
+    "Introduction aux boucles",
+    "Utilisation des boucles dans un algorithme",
+    "Reconnaissance de la tâche faite par un algorithme",
+    "Création et test d'un algorithme final"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Tracer\nAlgorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?\n\nExercice 3 : Boucle Pour\nÉcris une boucle qui affiche les nombres de 1 à 10.",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\ny = 16 > 10 → « grand ».\n\nExercice 3\nPour i de 1 à 10 Faire Afficher(i) FinPour"
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Tracer\nAlgorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?\n\nExercice 3 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\ny = 16 > 10 → « grand ».\n\nExercice 3\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 2",
+     "text": "Exercice 1 : Variable\nQu'est-ce qu'une variable ? Cite deux types.\n\nExercice 2 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 3 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?",
+     "solution": "Exercice 1\nUne case mémoire nommée qui contient une valeur ; entier, réel, chaîne de caractères, booléen.\n\nExercice 2\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 3\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 3 : Que fait-il ? (2)\nLire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 3\nIl affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Surface\nÉcris un algorithme qui lit la longueur et la largeur d'un rectangle et affiche sa surface.\n\nExercice 3 : Table\nÉcris un algorithme qui affiche la table de multiplication de 7.",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nVariables L, l, S : réels ; Début Lire(L, l) ; S ← L × l ; Afficher(S) ; Fin.\n\nExercice 3\nPour i de 1 à 10 Faire Afficher(7 × i) FinPour."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Pair / impair\nÉcris la condition pour savoir si un nombre n est pair.\n\nExercice 3 : Table\nÉcris un algorithme qui affiche la table de multiplication de 7.",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nSi n mod 2 = 0 Alors pair Sinon impair.\n\nExercice 3\nPour i de 1 à 10 Faire Afficher(7 × i) FinPour."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 2",
+     "text": "Exercice 1 : Échange\nÉcris les instructions pour échanger les valeurs de x et y.\n\nExercice 2 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 3 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?",
+     "solution": "Exercice 1\ntemp ← x ; x ← y ; y ← temp.\n\nExercice 2\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 3\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affectation\nAprès les instructions a ← 5 ; b ← a + 3 ; a ← b × 2, que valent a et b ?\n\nExercice 2 : Erreur\nTrouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).\n\nExercice 3 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?",
+     "solution": "Exercice 1\nb = 8 ; a = 16.\n\nExercice 2\nDivision par zéro : impossible.\n\nExercice 3\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Erreur\nTrouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).\n\nExercice 3 : Que fait-il ? (2)\nLire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nDivision par zéro : impossible.\n\nExercice 3\nIl affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Erreur\nTrouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).\n\nExercice 3 : Que fait-il ?\np ← 1 ; Pour i de 1 à 5 Faire p ← p × i FinPour ; Afficher(p). Que fait cet algorithme et qu'affiche-t-il ?",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nDivision par zéro : impossible.\n\nExercice 3\nIl calcule 5! (factorielle) ; affiche 120."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 2",
+     "text": "Exercice 1 : Variable\nQu'est-ce qu'une variable ? Cite deux types.\n\nExercice 2 : Tracer\nAlgorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?\n\nExercice 3 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?",
+     "solution": "Exercice 1\nUne case mémoire nommée qui contient une valeur ; entier, réel, chaîne de caractères, booléen.\n\nExercice 2\ny = 16 > 10 → « grand ».\n\nExercice 3\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 2",
+     "text": "Exercice 1 : Algorithme\nQu'est-ce qu'un algorithme ? Donne un exemple de la vie courante.\n\nExercice 2 : Moyenne\nÉcris un algorithme qui calcule la moyenne de trois notes.\n\nExercice 3 : Que fait-il ? (2)\nLire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Exercice 1\nSuite finie et ordonnée d'instructions pour résoudre un problème ; une recette de cuisine.\n\nExercice 2\nLire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m).\n\nExercice 3\nIl affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Moyenne\nÉcris un algorithme qui calcule la moyenne de trois notes.\n\nExercice 3 : Boucle Pour\nÉcris une boucle qui affiche les nombres de 1 à 10.",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nLire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m).\n\nExercice 3\nPour i de 1 à 10 Faire Afficher(i) FinPour"
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 3 : Que fait-il ?\np ← 1 ; Pour i de 1 à 5 Faire p ← p × i FinPour ; Afficher(p). Que fait cet algorithme et qu'affiche-t-il ?",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 3\nIl calcule 5! (factorielle) ; affiche 120."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Moyenne\nÉcris un algorithme qui calcule la moyenne de trois notes.\n\nExercice 3 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\nLire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m).\n\nExercice 3\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 2",
+     "text": "Exercice 1 : Échange\nÉcris les instructions pour échanger les valeurs de x et y.\n\nExercice 2 : Surface\nÉcris un algorithme qui lit la longueur et la largeur d'un rectangle et affiche sa surface.\n\nExercice 3 : Que fait-il ?\np ← 1 ; Pour i de 1 à 5 Faire p ← p × i FinPour ; Afficher(p). Que fait cet algorithme et qu'affiche-t-il ?",
+     "solution": "Exercice 1\ntemp ← x ; x ← y ; y ← temp.\n\nExercice 2\nVariables L, l, S : réels ; Début Lire(L, l) ; S ← L × l ; Afficher(S) ; Fin.\n\nExercice 3\nIl calcule 5! (factorielle) ; affiche 120."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Tracer\nAlgorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?\n\nExercice 3 : Table\nÉcris un algorithme qui affiche la table de multiplication de 7.",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\ny = 16 > 10 → « grand ».\n\nExercice 3\nPour i de 1 à 10 Faire Afficher(7 × i) FinPour."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affectation\nAprès les instructions a ← 5 ; b ← a + 3 ; a ← b × 2, que valent a et b ?\n\nExercice 2 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 3 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?",
+     "solution": "Exercice 1\nb = 8 ; a = 16.\n\nExercice 2\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 3\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 2",
+     "text": "Exercice 1 : Algorithme\nQu'est-ce qu'un algorithme ? Donne un exemple de la vie courante.\n\nExercice 2 : Erreur\nTrouve l'erreur : Lire(a) ; b ← a / 0 ; Afficher(b).\n\nExercice 3 : Que fait-il ? (2)\nLire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Exercice 1\nSuite finie et ordonnée d'instructions pour résoudre un problème ; une recette de cuisine.\n\nExercice 2\nDivision par zéro : impossible.\n\nExercice 3\nIl affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Moyenne\nÉcris un algorithme qui calcule la moyenne de trois notes.\n\nExercice 3 : Somme\nÉcris un algorithme qui calcule la somme 1 + 2 + … + 100.",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\nLire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m).\n\nExercice 3\ns ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 34",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Introduction aux réseaux informatiques",
+    "Composantes d'un réseau simple",
+    "Fonctionnement et types de réseaux",
+    "Utilisation d'un réseau local simple",
+    "Introduction à l'e-mail",
+    "Rédaction et envoi d'un e-mail",
+    "Ajouter une pièce jointe",
+    "Réception et gestion des e-mails"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 3 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 3\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 3 : Gestion\nCite trois actions possibles sur un e-mail reçu.",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 3\nRépondre, transférer, archiver, supprimer, marquer comme spam."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Types\nClasse du plus petit au plus grand : WAN, LAN, PAN, MAN.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?",
+     "solution": "Exercice 1\nPAN < LAN < MAN < WAN.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Rôle\nRôle du routeur et du switch ?\n\nExercice 2 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 3 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?",
+     "solution": "Exercice 1\nRouteur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux.\n\nExercice 2\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 3\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Rôle\nRôle du routeur et du switch ?\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Gestion\nCite trois actions possibles sur un e-mail reçu.",
+     "solution": "Exercice 1\nRouteur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nRépondre, transférer, archiver, supprimer, marquer comme spam."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Adresse IP\nQu'est-ce qu'une adresse IP ?\n\nExercice 3 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nUn numéro qui identifie un appareil sur un réseau.\n\nExercice 3\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Adresse IP\nQu'est-ce qu'une adresse IP ?\n\nExercice 3 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nUn numéro qui identifie un appareil sur un réseau.\n\nExercice 3\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Types\nClasse du plus petit au plus grand : WAN, LAN, PAN, MAN.\n\nExercice 2 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 3 : Cci\nÀ quoi sert le champ Cci ?",
+     "solution": "Exercice 1\nPAN < LAN < MAN < WAN.\n\nExercice 2\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 3\nEnvoyer une copie cachée : les autres destinataires ne voient pas cette adresse."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 3 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 3\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Types\nClasse du plus petit au plus grand : WAN, LAN, PAN, MAN.\n\nExercice 2 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 3 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?",
+     "solution": "Exercice 1\nPAN < LAN < MAN < WAN.\n\nExercice 2\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 3\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Types\nClasse du plus petit au plus grand : WAN, LAN, PAN, MAN.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Gestion\nCite trois actions possibles sur un e-mail reçu.",
+     "solution": "Exercice 1\nPAN < LAN < MAN < WAN.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nRépondre, transférer, archiver, supprimer, marquer comme spam."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Rôle\nRôle du routeur et du switch ?\n\nExercice 2 : Adresse IP\nQu'est-ce qu'une adresse IP ?\n\nExercice 3 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?",
+     "solution": "Exercice 1\nRouteur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux.\n\nExercice 2\nUn numéro qui identifie un appareil sur un réseau.\n\nExercice 3\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Rôle\nRôle du routeur et du switch ?\n\nExercice 2 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 3 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?",
+     "solution": "Exercice 1\nRouteur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux.\n\nExercice 2\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 3\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 3 : Cci\nÀ quoi sert le champ Cci ?",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 3\nEnvoyer une copie cachée : les autres destinataires ne voient pas cette adresse."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 3 : Gestion\nCite trois actions possibles sur un e-mail reçu.",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 3\nRépondre, transférer, archiver, supprimer, marquer comme spam."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Adresse IP\nQu'est-ce qu'une adresse IP ?\n\nExercice 3 : Gestion\nCite trois actions possibles sur un e-mail reçu.",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nUn numéro qui identifie un appareil sur un réseau.\n\nExercice 3\nRépondre, transférer, archiver, supprimer, marquer comme spam."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Rôle\nRôle du routeur et du switch ?\n\nExercice 2 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 3 : Gestion\nCite trois actions possibles sur un e-mail reçu.",
+     "solution": "Exercice 1\nRouteur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux.\n\nExercice 2\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 3\nRépondre, transférer, archiver, supprimer, marquer comme spam."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Cci\nÀ quoi sert le champ Cci ?",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nEnvoyer une copie cachée : les autres destinataires ne voient pas cette adresse."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage."
+    }
+   ]
+  },
+  {
+   "week": "Semaines 11-12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du trimestre 1",
+   "covers": [
+    "Introduction à PowerPoint et création d'une présentation",
+    "Ouverture, fermeture et enregistrement d'une présentation",
+    "Insertion et gestion des diapositives",
+    "Insertion de texte et mise en forme",
+    "Insertion d'images et objets graphiques",
+    "Déplacement et transition des diapositives",
+    "Exposition et finalisation de la présentation",
+    "Naviguer sur Internet en toute sécurité et avec éthique",
+    "Notion de cahier des charges",
+    "Environnement et fonctionnement de l'objet technique"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 1",
+     "text": "Exercice 1 : Nouvelle présentation\nDécris les étapes pour créer une nouvelle présentation avec un thème.\n\nExercice 2 : Wi-Fi public\nQuels risques en utilisant un Wi-Fi public ?\n\nExercice 3 : Réduction\nPropose deux moyens de réduire le coût d'un objet.",
+     "solution": "Exercice 1\nOuvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème.\n\nExercice 2\nInterception des données ; éviter de se connecter à des comptes sensibles.\n\nExercice 3\nUtiliser des matériaux locaux, simplifier la conception, produire en série."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 1",
+     "text": "Exercice 1 : PowerPoint\nÀ quoi sert PowerPoint ? Cite deux situations d'utilisation.\n\nExercice 2 : Diaporama\nComment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?\n\nExercice 3 : Impact\nÀ quelle étape un téléphone pollue-t-il le plus ? Justifie.",
+     "solution": "Exercice 1\nLogiciel de présentation assistée par ordinateur (PréAO) ; exposé en classe, présentation d'un projet.\n\nExercice 2\nTouche F5 ; Maj + F5.\n\nExercice 3\nSouvent la fabrication (extraction des métaux, énergie) et la fin de vie s'il n'est pas recyclé."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ordre\nComment changer l'ordre des diapositives ?\n\nExercice 2 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.\n\nExercice 3 : Impact\nÀ quelle étape un téléphone pollue-t-il le plus ? Justifie.",
+     "solution": "Exercice 1\nGlisser-déposer les miniatures dans le volet de gauche ou utiliser la trieuse de diapositives.\n\nExercice 2\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps.\n\nExercice 3\nSouvent la fabrication (extraction des métaux, énergie) et la fin de vie s'il n'est pas recyclé."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 1",
+     "text": "Exercice 1 : Diapositive\nComment ajouter, dupliquer et supprimer une diapositive ?\n\nExercice 2 : Transition / animation\nDifférence entre transition et animation ?\n\nExercice 3 : Réduction\nPropose deux moyens de réduire le coût d'un objet.",
+     "solution": "Exercice 1\nAccueil → Nouvelle diapositive ; clic droit → Dupliquer ; sélectionner → touche Suppr.\n\nExercice 2\nTransition : effet entre deux diapositives ; animation : effet sur un objet à l'intérieur d'une diapositive.\n\nExercice 3\nUtiliser des matériaux locaux, simplifier la conception, produire en série."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 1",
+     "text": "Exercice 1 : Disposition\nQu'est-ce qu'une disposition ? Donne deux exemples.\n\nExercice 2 : Milieu extérieur\nCite les éléments du milieu extérieur d'un vélo.\n\nExercice 3 : Fonction principale\nDonne la fonction principale d'un climatiseur et une fonction contrainte.",
+     "solution": "Exercice 1\nL'organisation des zones d'une diapositive ; Titre seul, Titre et contenu, Deux contenus.\n\nExercice 2\nL'utilisateur, la route, l'air (vent), la pluie, les autres usagers.\n\nExercice 3\nPrincipale : refroidir l'air de la pièce ; contrainte : consommer peu d'énergie / faire peu de bruit."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 1",
+     "text": "Exercice 1 : Insertion\nCite trois objets qu'on peut insérer dans une diapositive.\n\nExercice 2 : Milieu extérieur\nCite les éléments du milieu extérieur d'un vélo.\n\nExercice 3 : Coût\nUne lampe nécessite : panneau 2 500 MRU, batterie 1 800 MRU, LED 300 MRU, boîtier 400 MRU. Calcule le coût des matériaux.",
+     "solution": "Exercice 1\nImage, forme, SmartArt, graphique, tableau, vidéo.\n\nExercice 2\nL'utilisateur, la route, l'air (vent), la pluie, les autres usagers.\n\nExercice 3\n2 500 + 1 800 + 300 + 400 = 5 000 MRU."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 1",
+     "text": "Exercice 1 : Extension\nQuelle est l'extension d'un fichier PowerPoint ? Comment l'enregistrer en PDF ?\n\nExercice 2 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.\n\nExercice 3 : Comparaison\nPourquoi utilise-t-on souvent le plastique plutôt que l'aluminium pour les seaux ?",
+     "solution": "Exercice 1\n.pptx ; Fichier → Enregistrer sous → type PDF.\n\nExercice 2\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps.\n\nExercice 3\nLe plastique est moins cher, léger et facile à mouler."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 1",
+     "text": "Exercice 1 : Règles\nCite trois règles pour un texte lisible sur une diapositive.\n\nExercice 2 : Wi-Fi public\nQuels risques en utilisant un Wi-Fi public ?\n\nExercice 3 : Prix de vente\nSi la main-d'œuvre coûte 1 000 MRU et la marge 20 % du coût total, quel est le prix de vente ?",
+     "solution": "Exercice 1\nPeu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond.\n\nExercice 2\nInterception des données ; éviter de se connecter à des comptes sensibles.\n\nExercice 3\nCoût total = 6 000 ; marge = 1 200 ; prix = 7 200 MRU."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 1",
+     "text": "Exercice 1 : Extension\nQuelle est l'extension d'un fichier PowerPoint ? Comment l'enregistrer en PDF ?\n\nExercice 2 : Diaporama\nComment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?\n\nExercice 3 : Coût\nUne lampe nécessite : panneau 2 500 MRU, batterie 1 800 MRU, LED 300 MRU, boîtier 400 MRU. Calcule le coût des matériaux.",
+     "solution": "Exercice 1\n.pptx ; Fichier → Enregistrer sous → type PDF.\n\nExercice 2\nTouche F5 ; Maj + F5.\n\nExercice 3\n2 500 + 1 800 + 300 + 400 = 5 000 MRU."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 1",
+     "text": "Exercice 1 : Nouvelle présentation\nDécris les étapes pour créer une nouvelle présentation avec un thème.\n\nExercice 2 : Milieu extérieur\nCite les éléments du milieu extérieur d'un vélo.\n\nExercice 3 : Local\nCite deux matériaux disponibles localement en Mauritanie utilisés dans la construction.",
+     "solution": "Exercice 1\nOuvrir PowerPoint → Nouvelle présentation → onglet Création → choisir un thème.\n\nExercice 2\nL'utilisateur, la route, l'air (vent), la pluie, les autres usagers.\n\nExercice 3\nSable, pierre, argile (banco), coquillages, bois local."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 1",
+     "text": "Exercice 1 : Image et taille\nComment redimensionner une image sans la déformer dans PowerPoint ?\n\nExercice 2 : Transition / animation\nDifférence entre transition et animation ?\n\nExercice 3 : Cas\nRédige un cahier des charges simplifié pour un porte-cartable.",
+     "solution": "Exercice 1\nTirer une poignée d'angle (en gardant les proportions).\n\nExercice 2\nTransition : effet entre deux diapositives ; animation : effet sur un objet à l'intérieur d'une diapositive.\n\nExercice 3\nBesoin : ranger les cartables ; fonctions : supporter 10 cartables ; contraintes : coût < 2 000 MRU, solide, sans angles coupants."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 1",
+     "text": "Exercice 1 : PowerPoint\nÀ quoi sert PowerPoint ? Cite deux situations d'utilisation.\n\nExercice 2 : Transition / animation\nDifférence entre transition et animation ?\n\nExercice 3 : Impact\nÀ quelle étape un téléphone pollue-t-il le plus ? Justifie.",
+     "solution": "Exercice 1\nLogiciel de présentation assistée par ordinateur (PréAO) ; exposé en classe, présentation d'un projet.\n\nExercice 2\nTransition : effet entre deux diapositives ; animation : effet sur un objet à l'intérieur d'une diapositive.\n\nExercice 3\nSouvent la fabrication (extraction des métaux, énergie) et la fin de vie s'il n'est pas recyclé."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 1",
+     "text": "Exercice 1 : Image et taille\nComment redimensionner une image sans la déformer dans PowerPoint ?\n\nExercice 2 : Appliquer une transition\nComment appliquer la même transition à toutes les diapositives ?\n\nExercice 3 : Prix de vente\nSi la main-d'œuvre coûte 1 000 MRU et la marge 20 % du coût total, quel est le prix de vente ?",
+     "solution": "Exercice 1\nTirer une poignée d'angle (en gardant les proportions).\n\nExercice 2\nOnglet Transitions → choisir l'effet → Appliquer partout.\n\nExercice 3\nCoût total = 6 000 ; marge = 1 200 ; prix = 7 200 MRU."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 1",
+     "text": "Exercice 1 : Image et taille\nComment redimensionner une image sans la déformer dans PowerPoint ?\n\nExercice 2 : Milieu extérieur\nCite les éléments du milieu extérieur d'un vélo.\n\nExercice 3 : Critères\nCite trois critères économiques dans le choix d'un matériau.",
+     "solution": "Exercice 1\nTirer une poignée d'angle (en gardant les proportions).\n\nExercice 2\nL'utilisateur, la route, l'air (vent), la pluie, les autres usagers.\n\nExercice 3\nPrix, disponibilité, facilité de mise en œuvre, possibilité de recyclage."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ordre\nComment changer l'ordre des diapositives ?\n\nExercice 2 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.\n\nExercice 3 : Comparaison\nPourquoi utilise-t-on souvent le plastique plutôt que l'aluminium pour les seaux ?",
+     "solution": "Exercice 1\nGlisser-déposer les miniatures dans le volet de gauche ou utiliser la trieuse de diapositives.\n\nExercice 2\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps.\n\nExercice 3\nLe plastique est moins cher, léger et facile à mouler."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 1",
+     "text": "Exercice 1 : Règles\nCite trois règles pour un texte lisible sur une diapositive.\n\nExercice 2 : Wi-Fi public\nQuels risques en utilisant un Wi-Fi public ?\n\nExercice 3 : Local\nCite deux matériaux disponibles localement en Mauritanie utilisés dans la construction.",
+     "solution": "Exercice 1\nPeu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond.\n\nExercice 2\nInterception des données ; éviter de se connecter à des comptes sensibles.\n\nExercice 3\nSable, pierre, argile (banco), coquillages, bois local."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 1",
+     "text": "Exercice 1 : Image et taille\nComment redimensionner une image sans la déformer dans PowerPoint ?\n\nExercice 2 : Transition / animation\nDifférence entre transition et animation ?\n\nExercice 3 : Prix de vente\nSi la main-d'œuvre coûte 1 000 MRU et la marge 20 % du coût total, quel est le prix de vente ?",
+     "solution": "Exercice 1\nTirer une poignée d'angle (en gardant les proportions).\n\nExercice 2\nTransition : effet entre deux diapositives ; animation : effet sur un objet à l'intérieur d'une diapositive.\n\nExercice 3\nCoût total = 6 000 ; marge = 1 200 ; prix = 7 200 MRU."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 1",
+     "text": "Exercice 1 : Règles\nCite trois règles pour un texte lisible sur une diapositive.\n\nExercice 2 : Préparer l'exposé\nCite trois conseils pour présenter son exposé devant la classe.\n\nExercice 3 : Cas\nRédige un cahier des charges simplifié pour un porte-cartable.",
+     "solution": "Exercice 1\nPeu de texte (mots-clés), police assez grande (≥ 24), bon contraste couleur texte/fond.\n\nExercice 2\nRépéter avant, regarder le public, ne pas lire les diapositives, respecter le temps.\n\nExercice 3\nBesoin : ranger les cartables ; fonctions : supporter 10 cartables ; contraintes : coût < 2 000 MRU, solide, sans angles coupants."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 1",
+     "text": "Exercice 1 : Insertion\nCite trois objets qu'on peut insérer dans une diapositive.\n\nExercice 2 : Diaporama\nComment lancer le diaporama depuis le début ? Depuis la diapositive actuelle ?\n\nExercice 3 : Interactions\nComment la poussière du Sahara influence-t-elle la conception d'un ordinateur ?",
+     "solution": "Exercice 1\nImage, forme, SmartArt, graphique, tableau, vidéo.\n\nExercice 2\nTouche F5 ; Maj + F5.\n\nExercice 3\nIl faut des filtres, une bonne ventilation et une protection contre la poussière."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 1",
+     "text": "Exercice 1 : Ouvrir\nComment ouvrir une présentation enregistrée sur une clé USB ?\n\nExercice 2 : Conseil\nPourquoi éviter trop d'animations ?\n\nExercice 3 : Interactions\nComment la poussière du Sahara influence-t-elle la conception d'un ordinateur ?",
+     "solution": "Exercice 1\nFichier → Ouvrir → Parcourir → sélectionner la clé USB → choisir le fichier → Ouvrir.\n\nExercice 2\nElles distraient le public et font perdre du temps.\n\nExercice 3\nIl faut des filtres, une bonne ventilation et une protection contre la poussière."
+    }
+   ]
+  },
+  {
+   "week": "Semaines 22-23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du trimestre 2",
+   "covers": [
+    "Introduction à la notion d'algorithme",
+    "Introduction à la notion de variables",
+    "Introduction à la notion de conditions",
+    "Écriture d'un algorithme simple",
+    "Test d'un algorithme simple",
+    "Introduction aux boucles",
+    "Utilisation des boucles dans un algorithme",
+    "Reconnaissance de la tâche faite par un algorithme",
+    "Création et test d'un algorithme final",
+    "Conversion des énergies"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 2",
+     "text": "Exercice 1 : Pair / impair\nÉcris la condition pour savoir si un nombre n est pair.\n\nExercice 2 : Surface\nÉcris un algorithme qui lit la longueur et la largeur d'un rectangle et affiche sa surface.\n\nExercice 3 : Projet\nÉcris un algorithme qui lit 5 notes, calcule la moyenne et affiche « Admis » ou « Ajourné ».",
+     "solution": "Exercice 1\nSi n mod 2 = 0 Alors pair Sinon impair.\n\nExercice 2\nVariables L, l, S : réels ; Début Lire(L, l) ; S ← L × l ; Afficher(S) ; Fin.\n\nExercice 3\ns ← 0 ; Pour i de 1 à 5 Faire Lire(n) ; s ← s + n FinPour ; m ← s / 5 ; Si m ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné »)."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 2",
+     "text": "Exercice 1 : Pair / impair\nÉcris la condition pour savoir si un nombre n est pair.\n\nExercice 2 : Somme\nÉcris un algorithme qui calcule la somme 1 + 2 + … + 100.\n\nExercice 3 : Rapport\nUn pignon moteur de 10 dents entraîne une roue de 30 dents. La roue tourne-t-elle plus vite ou moins vite ?",
+     "solution": "Exercice 1\nSi n mod 2 = 0 Alors pair Sinon impair.\n\nExercice 2\ns ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050.\n\nExercice 3\nMoins vite : 3 fois plus lentement (rapport 10/30 = 1/3)."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Boucle Pour\nÉcris une boucle qui affiche les nombres de 1 à 10.\n\nExercice 3 : Synchronisation\nQu'est-ce que la synchronisation ? Donne un exemple.",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nPour i de 1 à 10 Faire Afficher(i) FinPour\n\nExercice 3\nCoordonner des actions dans le temps ; les feux tricolores d'un carrefour."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 2",
+     "text": "Exercice 1 : Pair / impair\nÉcris la condition pour savoir si un nombre n est pair.\n\nExercice 2 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?\n\nExercice 3 : Rendement\nUn moteur reçoit 100 J et fournit 75 J de travail utile. Calcule son rendement.",
+     "solution": "Exercice 1\nSi n mod 2 = 0 Alors pair Sinon impair.\n\nExercice 2\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie.\n\nExercice 3\nη = 75 / 100 = 75 %."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?\n\nExercice 3 : Conversion\nDonne la conversion d'énergie dans : un panneau solaire, un moteur électrique, une lampe.",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie.\n\nExercice 3\nLumineuse → électrique ; électrique → mécanique ; électrique → lumineuse (+ thermique)."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 2",
+     "text": "Exercice 1 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 2 : Somme\nÉcris un algorithme qui calcule la somme 1 + 2 + … + 100.\n\nExercice 3 : Synchronisation\nQu'est-ce que la synchronisation ? Donne un exemple.",
+     "solution": "Exercice 1\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 2\ns ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050.\n\nExercice 3\nCoordonner des actions dans le temps ; les feux tricolores d'un carrefour."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?\n\nExercice 3 : Nature\nQuelle énergie fait fonctionner : un réveil à piles, une moto, une éolienne ?",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie.\n\nExercice 3\nChimique (piles) → électrique ; chimique (carburant) ; éolienne (cinétique du vent)."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 2",
+     "text": "Exercice 1 : Pair / impair\nÉcris la condition pour savoir si un nombre n est pair.\n\nExercice 2 : Moyenne\nÉcris un algorithme qui calcule la moyenne de trois notes.\n\nExercice 3 : Transmission\nCite trois systèmes de transmission de mouvement.",
+     "solution": "Exercice 1\nSi n mod 2 = 0 Alors pair Sinon impair.\n\nExercice 2\nLire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m).\n\nExercice 3\nEngrenages, poulies et courroie, pignons et chaîne."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Somme\nÉcris un algorithme qui calcule la somme 1 + 2 + … + 100.\n\nExercice 3 : Signalisation\nDonne deux exemples de fonction de signalisation.",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\ns ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050.\n\nExercice 3\nLe voyant d'un chargeur, le clignotant d'une voiture, la sonnerie d'un réveil."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 2",
+     "text": "Exercice 1 : Échange\nÉcris les instructions pour échanger les valeurs de x et y.\n\nExercice 2 : Table\nÉcris un algorithme qui affiche la table de multiplication de 7.\n\nExercice 3 : Transmission\nCite trois systèmes de transmission de mouvement.",
+     "solution": "Exercice 1\ntemp ← x ; x ← y ; y ← temp.\n\nExercice 2\nPour i de 1 à 10 Faire Afficher(7 × i) FinPour.\n\nExercice 3\nEngrenages, poulies et courroie, pignons et chaîne."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Somme\nÉcris un algorithme qui calcule la somme 1 + 2 + … + 100.\n\nExercice 3 : Que fait-il ? (2)\nLire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\ns ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050.\n\nExercice 3\nIl affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 2",
+     "text": "Exercice 1 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 2 : Table\nÉcris un algorithme qui affiche la table de multiplication de 7.\n\nExercice 3 : Que fait-il ? (2)\nLire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Exercice 1\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 2\nPour i de 1 à 10 Faire Afficher(7 × i) FinPour.\n\nExercice 3\nIl affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 2",
+     "text": "Exercice 1 : Algorithme\nQu'est-ce qu'un algorithme ? Donne un exemple de la vie courante.\n\nExercice 2 : Moyenne\nÉcris un algorithme qui calcule la moyenne de trois notes.\n\nExercice 3 : Projet\nÉcris un algorithme qui lit 5 notes, calcule la moyenne et affiche « Admis » ou « Ajourné ».",
+     "solution": "Exercice 1\nSuite finie et ordonnée d'instructions pour résoudre un problème ; une recette de cuisine.\n\nExercice 2\nLire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m).\n\nExercice 3\ns ← 0 ; Pour i de 1 à 5 Faire Lire(n) ; s ← s + n FinPour ; m ← s / 5 ; Si m ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné »)."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 2",
+     "text": "Exercice 1 : Ordre\nÉcris l'algorithme pour préparer le thé en 4 étapes.\n\nExercice 2 : Tant que\nDifférence entre boucle Pour et boucle Tant que ?\n\nExercice 3 : Synchronisation\nQu'est-ce que la synchronisation ? Donne un exemple.",
+     "solution": "Exercice 1\nDébut ; faire bouillir l'eau ; mettre le thé et le sucre ; laisser infuser puis servir ; Fin.\n\nExercice 2\nPour : nombre de répétitions connu ; Tant que : répète tant qu'une condition est vraie.\n\nExercice 3\nCoordonner des actions dans le temps ; les feux tricolores d'un carrefour."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 2",
+     "text": "Exercice 1 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 2 : Tracer\nAlgorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?\n\nExercice 3 : Conversion\nDonne la conversion d'énergie dans : un panneau solaire, un moteur électrique, une lampe.",
+     "solution": "Exercice 1\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 2\ny = 16 > 10 → « grand ».\n\nExercice 3\nLumineuse → électrique ; électrique → mécanique ; électrique → lumineuse (+ thermique)."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 2",
+     "text": "Exercice 1 : Affectation\nAprès les instructions a ← 5 ; b ← a + 3 ; a ← b × 2, que valent a et b ?\n\nExercice 2 : Tracer\nAlgorithme : x ← 4 ; y ← x × x ; Si y > 10 Alors Afficher(\"grand\") Sinon Afficher(\"petit\"). Qu'affiche-t-il ?\n\nExercice 3 : Signalisation\nDonne deux exemples de fonction de signalisation.",
+     "solution": "Exercice 1\nb = 8 ; a = 16.\n\nExercice 2\ny = 16 > 10 → « grand ».\n\nExercice 3\nLe voyant d'un chargeur, le clignotant d'une voiture, la sonnerie d'un réveil."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 2",
+     "text": "Exercice 1 : Condition\nÉcris une structure Si…Alors…Sinon qui affiche « Admis » si note ≥ 10.\n\nExercice 2 : Surface\nÉcris un algorithme qui lit la longueur et la largeur d'un rectangle et affiche sa surface.\n\nExercice 3 : Conversion\nDonne la conversion d'énergie dans : un panneau solaire, un moteur électrique, une lampe.",
+     "solution": "Exercice 1\nSi note ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné ») FinSi\n\nExercice 2\nVariables L, l, S : réels ; Début Lire(L, l) ; S ← L × l ; Afficher(S) ; Fin.\n\nExercice 3\nLumineuse → électrique ; électrique → mécanique ; électrique → lumineuse (+ thermique)."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 2",
+     "text": "Exercice 1 : Algorithme\nQu'est-ce qu'un algorithme ? Donne un exemple de la vie courante.\n\nExercice 2 : Table\nÉcris un algorithme qui affiche la table de multiplication de 7.\n\nExercice 3 : Synchronisation\nQu'est-ce que la synchronisation ? Donne un exemple.",
+     "solution": "Exercice 1\nSuite finie et ordonnée d'instructions pour résoudre un problème ; une recette de cuisine.\n\nExercice 2\nPour i de 1 à 10 Faire Afficher(7 × i) FinPour.\n\nExercice 3\nCoordonner des actions dans le temps ; les feux tricolores d'un carrefour."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 2",
+     "text": "Exercice 1 : Pair / impair\nÉcris la condition pour savoir si un nombre n est pair.\n\nExercice 2 : Moyenne\nÉcris un algorithme qui calcule la moyenne de trois notes.\n\nExercice 3 : Que fait-il ? (2)\nLire(a, b) ; Si a > b Alors Afficher(a) Sinon Afficher(b). Que fait cet algorithme ?",
+     "solution": "Exercice 1\nSi n mod 2 = 0 Alors pair Sinon impair.\n\nExercice 2\nLire(a, b, c) ; m ← (a + b + c) / 3 ; Afficher(m).\n\nExercice 3\nIl affiche le plus grand des deux nombres."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 2",
+     "text": "Exercice 1 : Structure\nCite les trois parties d'un algorithme.\n\nExercice 2 : Somme\nÉcris un algorithme qui calcule la somme 1 + 2 + … + 100.\n\nExercice 3 : Projet\nÉcris un algorithme qui lit 5 notes, calcule la moyenne et affiche « Admis » ou « Ajourné ».",
+     "solution": "Exercice 1\nDéclaration (variables), début (instructions), fin.\n\nExercice 2\ns ← 0 ; Pour i de 1 à 100 Faire s ← s + i FinPour ; Afficher(s) → 5050.\n\nExercice 3\ns ← 0 ; Pour i de 1 à 5 Faire Lire(n) ; s ← s + n FinPour ; m ← s / 5 ; Si m ≥ 10 Alors Afficher(« Admis ») Sinon Afficher(« Ajourné »)."
+    }
+   ]
+  },
+  {
+   "week": "Semaines 35-36",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Introduction aux réseaux informatiques",
+    "Composantes d'un réseau simple",
+    "Fonctionnement et types de réseaux",
+    "Utilisation d'un réseau local simple",
+    "Introduction à l'e-mail",
+    "Rédaction et envoi d'un e-mail",
+    "Ajouter une pièce jointe",
+    "Réception et gestion des e-mails",
+    "Fonction de commande à distance",
+    "Publicité : définition, constituants, fonctions et méthodes"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Rôle\nRôle du routeur et du switch ?\n\nExercice 2 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?\n\nExercice 3 : Pêche\nCite une technologie utilisée dans la pêche et une contrainte environnementale.",
+     "solution": "Exercice 1\nRouteur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux.\n\nExercice 2\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage.\n\nExercice 3\nGPS / sonar, chambres froides ; surpêche, pollution marine, respect des repos biologiques."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 2 : Exemples\nCite trois objets commandés à distance.\n\nExercice 3 : Mines\nQuelles contraintes environnementales pour une mine ?",
+     "solution": "Exercice 1\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 2\nTéléviseur, portail automatique, drone, climatiseur.\n\nExercice 3\nPoussière, consommation d'eau, gestion des déchets, réhabilitation du site."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Télécommande\nComment fonctionne une télécommande de téléviseur ?\n\nExercice 3 : Constituants\nCite les constituants d'une affiche publicitaire.",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nElle envoie un signal infrarouge codé reçu par le capteur du téléviseur.\n\nExercice 3\nImage, slogan, nom du produit/logo, texte informatif, coordonnées."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?\n\nExercice 3 : Types\nCite quatre énergies renouvelables.",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage.\n\nExercice 3\nSolaire, éolienne, hydraulique, biomasse, géothermique."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Exemples\nCite trois objets commandés à distance.\n\nExercice 3 : Stockage\nPourquoi faut-il stocker l'énergie solaire ? Comment ?",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nTéléviseur, portail automatique, drone, climatiseur.\n\nExercice 3\nCar le Soleil n'est pas disponible la nuit ; avec des batteries."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Types\nClasse du plus petit au plus grand : WAN, LAN, PAN, MAN.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Types\nCite quatre énergies renouvelables.",
+     "solution": "Exercice 1\nPAN < LAN < MAN < WAN.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nSolaire, éolienne, hydraulique, biomasse, géothermique."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Rôle\nRôle du routeur et du switch ?\n\nExercice 2 : Cci\nÀ quoi sert le champ Cci ?\n\nExercice 3 : Types\nCite quatre énergies renouvelables.",
+     "solution": "Exercice 1\nRouteur : relie le réseau local à Internet ; switch : relie les appareils du réseau local entre eux.\n\nExercice 2\nEnvoyer une copie cachée : les autres destinataires ne voient pas cette adresse.\n\nExercice 3\nSolaire, éolienne, hydraulique, biomasse, géothermique."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 2 : Gestion\nCite trois actions possibles sur un e-mail reçu.\n\nExercice 3 : Pêche\nCite une technologie utilisée dans la pêche et une contrainte environnementale.",
+     "solution": "Exercice 1\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 2\nRépondre, transférer, archiver, supprimer, marquer comme spam.\n\nExercice 3\nGPS / sonar, chambres froides ; surpêche, pollution marine, respect des repos biologiques."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Constituants\nCite les constituants d'une affiche publicitaire.",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nImage, slogan, nom du produit/logo, texte informatif, coordonnées."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 2 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?\n\nExercice 3 : Critique\nPourquoi faut-il être critique face à la publicité ?",
+     "solution": "Exercice 1\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 2\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne.\n\nExercice 3\nElle peut exagérer les qualités et pousser à des achats inutiles."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 2 : Exemples\nCite trois objets commandés à distance.\n\nExercice 3 : Critique\nPourquoi faut-il être critique face à la publicité ?",
+     "solution": "Exercice 1\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 2\nTéléviseur, portail automatique, drone, climatiseur.\n\nExercice 3\nElle peut exagérer les qualités et pousser à des achats inutiles."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?\n\nExercice 3 : Stockage\nPourquoi faut-il stocker l'énergie solaire ? Comment ?",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage.\n\nExercice 3\nCar le Soleil n'est pas disponible la nuit ; avec des batteries."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 2 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?\n\nExercice 3 : Types\nCite quatre énergies renouvelables.",
+     "solution": "Exercice 1\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 2\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage.\n\nExercice 3\nSolaire, éolienne, hydraulique, biomasse, géothermique."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Types\nClasse du plus petit au plus grand : WAN, LAN, PAN, MAN.\n\nExercice 2 : Télécommande\nComment fonctionne une télécommande de téléviseur ?\n\nExercice 3 : Stockage\nPourquoi faut-il stocker l'énergie solaire ? Comment ?",
+     "solution": "Exercice 1\nPAN < LAN < MAN < WAN.\n\nExercice 2\nElle envoie un signal infrarouge codé reçu par le capteur du téléviseur.\n\nExercice 3\nCar le Soleil n'est pas disponible la nuit ; avec des batteries."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Exemples\nCite trois objets commandés à distance.\n\nExercice 3 : Types\nCite quatre énergies renouvelables.",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nTéléviseur, portail automatique, drone, climatiseur.\n\nExercice 3\nSolaire, éolienne, hydraulique, biomasse, géothermique."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Composants\nCite quatre composants d'un réseau local.\n\nExercice 2 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?\n\nExercice 3 : Critique\nPourquoi faut-il être critique face à la publicité ?",
+     "solution": "Exercice 1\nOrdinateurs, câbles réseau, switch, routeur/box, carte réseau, point d'accès Wi-Fi.\n\nExercice 2\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage.\n\nExercice 3\nElle peut exagérer les qualités et pousser à des achats inutiles."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Adresse IP\nQu'est-ce qu'une adresse IP ?\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Critique\nPourquoi faut-il être critique face à la publicité ?",
+     "solution": "Exercice 1\nUn numéro qui identifie un appareil sur un réseau.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nElle peut exagérer les qualités et pousser à des achats inutiles."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Réseau\nCite deux avantages d'un réseau informatique.\n\nExercice 2 : Répondre / transférer\nDifférence entre « Répondre » et « Transférer » ?\n\nExercice 3 : Mines\nQuelles contraintes environnementales pour une mine ?",
+     "solution": "Exercice 1\nPartage de fichiers et d'imprimantes, accès à Internet partagé, communication.\n\nExercice 2\nRépondre : à l'expéditeur ; transférer : envoyer le message reçu à une autre personne.\n\nExercice 3\nPoussière, consommation d'eau, gestion des déchets, réhabilitation du site."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Partage\nComment partager un dossier sur un réseau local ?\n\nExercice 2 : Pièce jointe\nComment joindre un fichier à un e-mail ? Quelle limite faut-il respecter ?\n\nExercice 3 : Critique\nPourquoi faut-il être critique face à la publicité ?",
+     "solution": "Exercice 1\nClic droit sur le dossier → Propriétés → Partage → choisir les utilisateurs et les droits.\n\nExercice 2\nCliquer sur le trombone → choisir le fichier → Ouvrir ; respecter la taille maximale (souvent 25 Mo) ou utiliser un lien de partage.\n\nExercice 3\nElle peut exagérer les qualités et pousser à des achats inutiles."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Webmail\nQu'est-ce qu'un webmail ? Donne deux exemples.\n\nExercice 2 : Rédaction\nCite les parties d'un e-mail formel.\n\nExercice 3 : Mines\nQuelles contraintes environnementales pour une mine ?",
+     "solution": "Exercice 1\nUne messagerie utilisée via un navigateur ; Gmail, Outlook.com, Yahoo Mail.\n\nExercice 2\nObjet clair, formule d'appel, message, formule de politesse, signature.\n\nExercice 3\nPoussière, consommation d'eau, gestion des déchets, réhabilitation du site."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1066 @@
+{
+ "subject": "TI",
+ "level": "2AS",
+ "lang": "fr",
+ "series": [
+  {
+   "week": "Leçon 8",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Introduction aux images numériques",
+    "Création et enregistrement d'une image",
+    "Téléchargement et gestion d'images",
+    "Traitement simple d'une image : recadrage et redimensionnement",
+    "Retouches de base : luminosité, contraste et filtres",
+    "Projet final : création et gestion d'une image personnalisée"
+   ],
+   "items": [
+    {
+     "title": "Carte de vœux",
+     "text": "Tu dois créer une carte de vœux numérique de 1000 × 700 pixels. Quelles étapes et quels réglages choisis-tu ?",
+     "solution": "Nouvelle image 1000 × 700 → fond coloré → insérer une image libre redimensionnée → ajouter un texte → retoucher → enregistrer en JPEG ou PNG."
+    },
+    {
+     "title": "Conserver les proportions",
+     "text": "Pourquoi cocher « Conserver les proportions » ?",
+     "solution": "Pour éviter que l'image soit déformée (étirée ou écrasée)."
+    },
+    {
+     "title": "Retouches",
+     "text": "Une photo est trop sombre. Quel réglage utiliser ?",
+     "solution": "Augmenter la luminosité (et éventuellement le contraste)."
+    },
+    {
+     "title": "Matricielle / vectorielle",
+     "text": "Différence entre image matricielle et image vectorielle ?",
+     "solution": "Matricielle : faite de pixels, perd en qualité si on l'agrandit ; vectorielle : faite de formes mathématiques, s'agrandit sans perte."
+    },
+    {
+     "title": "Calcul",
+     "text": "Combien de pixels contient une image de 800 × 600 ?",
+     "solution": "800 × 600 = 480 000 pixels."
+    },
+    {
+     "title": "Organiser",
+     "text": "Propose une méthode pour organiser 200 photos de voyage.",
+     "solution": "Créer des dossiers par date ou par lieu, renommer les photos clairement, supprimer les doublons."
+    },
+    {
+     "title": "Renommer",
+     "text": "Pourquoi renommer les images téléchargées (ex. IMG_2031.jpg) ?",
+     "solution": "Pour les retrouver facilement : un nom clair comme « chinguetti_mosquee.jpg » décrit le contenu."
+    },
+    {
+     "title": "Outils",
+     "text": "Cite quatre outils de Paint.",
+     "solution": "Crayon, pinceau, gomme, pot de peinture, texte, formes, sélection."
+    },
+    {
+     "title": "Droits",
+     "text": "Peut-on utiliser n'importe quelle image d'Internet dans un exposé ? Explique.",
+     "solution": "Non, il faut respecter les droits d'auteur : utiliser des images libres de droits et citer la source."
+    },
+    {
+     "title": "Recadrer / redimensionner",
+     "text": "Quelle différence entre recadrer et redimensionner ?",
+     "solution": "Recadrer : couper une partie de l'image ; redimensionner : changer la taille de toute l'image."
+    },
+    {
+     "title": "Proportions",
+     "text": "Une image de 1200 × 800 est redimensionnée à 50 %. Quelles sont ses nouvelles dimensions ?",
+     "solution": "600 × 400."
+    },
+    {
+     "title": "Enregistrer sous",
+     "text": "Pourquoi utiliser « Enregistrer sous » plutôt que « Enregistrer » ?",
+     "solution": "Pour choisir un nouveau nom, un emplacement ou un format sans écraser l'original."
+    },
+    {
+     "title": "Télécharger",
+     "text": "Comment enregistrer une image trouvée sur Internet ?",
+     "solution": "Clic droit sur l'image → Enregistrer l'image sous → choisir le dossier → Enregistrer (en respectant les droits d'auteur)."
+    },
+    {
+     "title": "Pixel",
+     "text": "Qu'est-ce qu'un pixel ? Que signifie une image de 1920 × 1080 ?",
+     "solution": "Le plus petit point d'une image numérique ; l'image a 1920 pixels en largeur et 1080 en hauteur."
+    },
+    {
+     "title": "Formats",
+     "text": "Cite trois formats d'images et une caractéristique de chacun.",
+     "solution": "JPEG : photos, compressé ; PNG : transparence, sans perte ; GIF : animations simples ; BMP : non compressé, lourd."
+    },
+    {
+     "title": "Filtre",
+     "text": "Qu'est-ce qu'un filtre ? Donne deux exemples.",
+     "solution": "Effet appliqué à toute l'image ; noir et blanc, sépia, flou, netteté."
+    },
+    {
+     "title": "Contraste",
+     "text": "Qu'est-ce que le contraste d'une image ? Que se passe-t-il si on l'augmente trop ?",
+     "solution": "La différence entre zones claires et sombres ; trop de contraste fait perdre les détails (blancs brûlés, noirs bouchés)."
+    },
+    {
+     "title": "Projet",
+     "text": "Décris les étapes pour créer une affiche pour la journée de l'environnement.",
+     "solution": "Choisir une image libre → recadrer → ajouter un titre → ajuster luminosité → enregistrer en PNG → ranger dans le dossier du projet."
+    },
+    {
+     "title": "Paint",
+     "text": "Décris les étapes pour dessiner un rectangle rouge dans Paint et l'enregistrer en PNG.",
+     "solution": "Ouvrir Paint → choisir Formes → Rectangle → couleur rouge → dessiner → Fichier → Enregistrer sous → PNG → nommer → Enregistrer."
+    },
+    {
+     "title": "Taille du fichier",
+     "text": "Une même image est enregistrée en BMP (2,4 Mo) et en JPEG (250 Ko). Explique la différence.",
+     "solution": "Le JPEG compresse l'image donc le fichier est plus léger ; le BMP n'est pas compressé."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 11",
+   "term": 1,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Naviguer sur Internet de manière éducative et sécurisée",
+    "Respect et éthique sur Internet"
+   ],
+   "items": [
+    {
+     "title": "Mot de passe",
+     "text": "Parmi ces mots de passe, lequel est le plus sûr ? 123456 – ahmed – Ah!2026mr#",
+     "solution": "Ah!2026mr# : long, avec majuscules, chiffres et symboles."
+    },
+    {
+     "title": "Cyberharcèlement",
+     "text": "Qu'est-ce que le cyberharcèlement ? Que faire si on en est victime ?",
+     "solution": "Harcèlement répété en ligne ; ne pas répondre, garder les preuves, bloquer, en parler à un adulte."
+    },
+    {
+     "title": "Sécurité",
+     "text": "Cite quatre règles pour naviguer en sécurité.",
+     "solution": "Ne pas donner ses informations personnelles, vérifier le cadenas https, ne pas cliquer sur les liens suspects, utiliser un antivirus."
+    },
+    {
+     "title": "Proportions",
+     "text": "Une image de 1200 × 800 est redimensionnée à 50 %. Quelles sont ses nouvelles dimensions ?",
+     "solution": "600 × 400."
+    },
+    {
+     "title": "Retouches",
+     "text": "Une photo est trop sombre. Quel réglage utiliser ?",
+     "solution": "Augmenter la luminosité (et éventuellement le contraste)."
+    },
+    {
+     "title": "Conserver les proportions",
+     "text": "Pourquoi cocher « Conserver les proportions » ?",
+     "solution": "Pour éviter que l'image soit déformée (étirée ou écrasée)."
+    },
+    {
+     "title": "Calcul",
+     "text": "Combien de pixels contient une image de 800 × 600 ?",
+     "solution": "800 × 600 = 480 000 pixels."
+    },
+    {
+     "title": "Formats",
+     "text": "Cite trois formats d'images et une caractéristique de chacun.",
+     "solution": "JPEG : photos, compressé ; PNG : transparence, sans perte ; GIF : animations simples ; BMP : non compressé, lourd."
+    },
+    {
+     "title": "Droits",
+     "text": "Peut-on utiliser n'importe quelle image d'Internet dans un exposé ? Explique.",
+     "solution": "Non, il faut respecter les droits d'auteur : utiliser des images libres de droits et citer la source."
+    },
+    {
+     "title": "Projet",
+     "text": "Décris les étapes pour créer une affiche pour la journée de l'environnement.",
+     "solution": "Choisir une image libre → recadrer → ajouter un titre → ajuster luminosité → enregistrer en PNG → ranger dans le dossier du projet."
+    },
+    {
+     "title": "Télécharger",
+     "text": "Comment enregistrer une image trouvée sur Internet ?",
+     "solution": "Clic droit sur l'image → Enregistrer l'image sous → choisir le dossier → Enregistrer (en respectant les droits d'auteur)."
+    },
+    {
+     "title": "Taille du fichier",
+     "text": "Une même image est enregistrée en BMP (2,4 Mo) et en JPEG (250 Ko). Explique la différence.",
+     "solution": "Le JPEG compresse l'image donc le fichier est plus léger ; le BMP n'est pas compressé."
+    },
+    {
+     "title": "Recadrer / redimensionner",
+     "text": "Quelle différence entre recadrer et redimensionner ?",
+     "solution": "Recadrer : couper une partie de l'image ; redimensionner : changer la taille de toute l'image."
+    },
+    {
+     "title": "Renommer",
+     "text": "Pourquoi renommer les images téléchargées (ex. IMG_2031.jpg) ?",
+     "solution": "Pour les retrouver facilement : un nom clair comme « chinguetti_mosquee.jpg » décrit le contenu."
+    },
+    {
+     "title": "Enregistrer sous",
+     "text": "Pourquoi utiliser « Enregistrer sous » plutôt que « Enregistrer » ?",
+     "solution": "Pour choisir un nouveau nom, un emplacement ou un format sans écraser l'original."
+    },
+    {
+     "title": "Filtre",
+     "text": "Qu'est-ce qu'un filtre ? Donne deux exemples.",
+     "solution": "Effet appliqué à toute l'image ; noir et blanc, sépia, flou, netteté."
+    },
+    {
+     "title": "Contraste",
+     "text": "Qu'est-ce que le contraste d'une image ? Que se passe-t-il si on l'augmente trop ?",
+     "solution": "La différence entre zones claires et sombres ; trop de contraste fait perdre les détails (blancs brûlés, noirs bouchés)."
+    },
+    {
+     "title": "Pixel",
+     "text": "Qu'est-ce qu'un pixel ? Que signifie une image de 1920 × 1080 ?",
+     "solution": "Le plus petit point d'une image numérique ; l'image a 1920 pixels en largeur et 1080 en hauteur."
+    },
+    {
+     "title": "Outils",
+     "text": "Cite quatre outils de Paint.",
+     "solution": "Crayon, pinceau, gomme, pot de peinture, texte, formes, sélection."
+    },
+    {
+     "title": "Carte de vœux",
+     "text": "Tu dois créer une carte de vœux numérique de 1000 × 700 pixels. Quelles étapes et quels réglages choisis-tu ?",
+     "solution": "Nouvelle image 1000 × 700 → fond coloré → insérer une image libre redimensionnée → ajouter un texte → retoucher → enregistrer en JPEG ou PNG."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 22",
+   "term": 2,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Système technique",
+    "Caractéristiques physiques des matériaux",
+    "Fonction protection et réception",
+    "Découverte d'Excel et gestion des fichiers",
+    "Feuilles et cellules : organisation du tableur",
+    "Saisie et mise en forme de données",
+    "Ajout de formules de base",
+    "Utilisation des fonctions courantes",
+    "Mise en page et formatage avancé",
+    "Représentation graphique de données"
+   ],
+   "items": [
+    {
+     "title": "Excel",
+     "text": "Qu'est-ce qu'un tableur ? Cite un exemple.",
+     "solution": "Logiciel qui organise et calcule des données dans des tableaux ; Microsoft Excel, LibreOffice Calc."
+    },
+    {
+     "title": "Formules",
+     "text": "A1 = 12, A2 = 8. Écris les formules de la somme, de la différence et du produit.",
+     "solution": "=A1+A2 (20) ; =A1-A2 (4) ; =A1*A2 (96)."
+    },
+    {
+     "title": "Moyenne",
+     "text": "Notes en B2, B3, B4 : 12, 15, 9. Écris la formule de la moyenne et donne le résultat.",
+     "solution": "=(B2+B3+B4)/3 ou =MOYENNE(B2:B4) ; résultat 12."
+    },
+    {
+     "title": "Impression Excel",
+     "text": "Comment imprimer une feuille Excel sur une seule page ?",
+     "solution": "Mise en page → Ajuster → 1 page en largeur et en hauteur, puis aperçu et impression."
+    },
+    {
+     "title": "Signe égal",
+     "text": "Par quel signe commence toute formule ?",
+     "solution": "Le signe = ."
+    },
+    {
+     "title": "Saisie",
+     "text": "Comment saisir et valider une donnée dans une cellule ?",
+     "solution": "Cliquer sur la cellule, taper la donnée, appuyer sur Entrée."
+    },
+    {
+     "title": "Fonctions",
+     "text": "Donne la fonction Excel pour : la somme de C1 à C10, le maximum, le minimum.",
+     "solution": "=SOMME(C1:C10) ; =MAX(C1:C10) ; =MIN(C1:C10)."
+    },
+    {
+     "title": "Propriétés",
+     "text": "Définis : conductivité électrique, dureté, élasticité.",
+     "solution": "Conductivité : laisser passer le courant ; dureté : résister aux rayures ; élasticité : reprendre sa forme après déformation."
+    },
+    {
+     "title": "Classeur",
+     "text": "Différence entre classeur et feuille ?",
+     "solution": "Le classeur est le fichier ; il contient une ou plusieurs feuilles de calcul."
+    },
+    {
+     "title": "Protection",
+     "text": "Donne deux exemples de fonction de protection dans des objets techniques.",
+     "solution": "Le fusible protège le circuit ; la coque protège le téléphone ; le disjoncteur protège l'installation."
+    },
+    {
+     "title": "SI",
+     "text": "Écris une formule qui affiche « Admis » si la moyenne en D2 est ≥ 10, sinon « Ajourné ».",
+     "solution": "=SI(D2>=10;\"Admis\";\"Ajourné\")"
+    },
+    {
+     "title": "Graphiques",
+     "text": "Quel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Courbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Entrées / sorties",
+     "text": "Pour un ventilateur, donne l'énergie d'entrée et l'effet en sortie.",
+     "solution": "Entrée : énergie électrique ; sortie : mouvement de l'air (énergie mécanique)."
+    },
+    {
+     "title": "Système",
+     "text": "Qu'est-ce qu'un système technique ? Donne un exemple et ses éléments.",
+     "solution": "Ensemble d'éléments qui fonctionnent ensemble pour une fonction ; vélo : cadre, roues, pédalier, chaîne, freins."
+    },
+    {
+     "title": "Bordures",
+     "text": "Comment ajouter des bordures à un tableau dans Excel ?",
+     "solution": "Sélectionner le tableau → Accueil → Bordures → Toutes les bordures."
+    },
+    {
+     "title": "Mise en forme conditionnelle",
+     "text": "À quoi sert la mise en forme conditionnelle ? Donne un exemple.",
+     "solution": "À colorer automatiquement les cellules selon une condition ; ex. notes < 10 en rouge."
+    },
+    {
+     "title": "Choix",
+     "text": "Pourquoi les fils électriques sont-ils en cuivre recouvert de plastique ?",
+     "solution": "Le cuivre conduit bien l'électricité ; le plastique est isolant et protège."
+    },
+    {
+     "title": "Format",
+     "text": "Comment afficher un nombre avec deux décimales ?",
+     "solution": "Sélectionner → Accueil → Nombre → augmenter les décimales (ou Format de cellule → Nombre, 2 décimales)."
+    },
+    {
+     "title": "Plage",
+     "text": "Que désigne la plage A1:B3 ? Combien de cellules ?",
+     "solution": "Les cellules de A1 à B3 ; 2 colonnes × 3 lignes = 6 cellules."
+    },
+    {
+     "title": "Projet",
+     "text": "Crée le plan d'un tableau de suivi des dépenses de la classe (colonnes, formules).",
+     "solution": "Colonnes : Date, Objet, Montant ; total =SOMME(C2:C20) ; graphique des dépenses."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 28",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "L'entreprise et les secteurs d'activités économiques",
+    "Introduction aux moteurs de recherche",
+    "Fiabilité des sources et dangers du web",
+    "Téléchargement responsable et légal",
+    "Sécurité et gestion des fichiers téléchargés"
+   ],
+   "items": [
+    {
+     "title": "Légal",
+     "text": "Qu'est-ce qu'un téléchargement illégal ? Donne un exemple.",
+     "solution": "Télécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté."
+    },
+    {
+     "title": "Fiabilité",
+     "text": "Cite trois indices qu'une information sur Internet est fiable.",
+     "solution": "Auteur connu, source officielle, date récente, information confirmée par d'autres sources."
+    },
+    {
+     "title": "Recherche avancée",
+     "text": "Que fait la recherche entre guillemets « énergie solaire Mauritanie » ?",
+     "solution": "Elle cherche l'expression exacte dans cet ordre."
+    },
+    {
+     "title": "Virus",
+     "text": "Comment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?",
+     "solution": "Il peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus."
+    },
+    {
+     "title": "Mots-clés",
+     "text": "Transforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »",
+     "solution": "date indépendance Mauritanie."
+    },
+    {
+     "title": "Fausses nouvelles",
+     "text": "Que faire avant de partager une information choquante sur WhatsApp ?",
+     "solution": "Vérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager."
+    },
+    {
+     "title": "Secteurs",
+     "text": "Classe dans les secteurs primaire, secondaire, tertiaire : pêche, banque, usine de poisson, élevage, école, mine de fer.",
+     "solution": "Primaire : pêche, élevage, mine de fer (extraction) ; Secondaire : usine de poisson ; Tertiaire : banque, école."
+    },
+    {
+     "title": "Entreprise",
+     "text": "Qu'est-ce qu'une entreprise ? Cite deux types selon la taille.",
+     "solution": "Organisation qui produit des biens ou des services ; petite (PME), moyenne, grande entreprise."
+    },
+    {
+     "title": "Mise en forme conditionnelle",
+     "text": "À quoi sert la mise en forme conditionnelle ? Donne un exemple.",
+     "solution": "À colorer automatiquement les cellules selon une condition ; ex. notes < 10 en rouge."
+    },
+    {
+     "title": "Fonctions",
+     "text": "Donne la fonction Excel pour : la somme de C1 à C10, le maximum, le minimum.",
+     "solution": "=SOMME(C1:C10) ; =MAX(C1:C10) ; =MIN(C1:C10)."
+    },
+    {
+     "title": "Entrées / sorties",
+     "text": "Pour un ventilateur, donne l'énergie d'entrée et l'effet en sortie.",
+     "solution": "Entrée : énergie électrique ; sortie : mouvement de l'air (énergie mécanique)."
+    },
+    {
+     "title": "Cellule",
+     "text": "Qu'est-ce que la cellule C4 ?",
+     "solution": "La cellule à l'intersection de la colonne C et de la ligne 4."
+    },
+    {
+     "title": "Créer",
+     "text": "Décris les étapes pour créer un histogramme.",
+     "solution": "Sélectionner les données → Insertion → Graphiques → Histogramme → ajouter titre et légende."
+    },
+    {
+     "title": "Saisie",
+     "text": "Comment saisir et valider une donnée dans une cellule ?",
+     "solution": "Cliquer sur la cellule, taper la donnée, appuyer sur Entrée."
+    },
+    {
+     "title": "Propriétés",
+     "text": "Définis : conductivité électrique, dureté, élasticité.",
+     "solution": "Conductivité : laisser passer le courant ; dureté : résister aux rayures ; élasticité : reprendre sa forme après déformation."
+    },
+    {
+     "title": "Projet",
+     "text": "Décris les étapes pour créer une affiche pour la journée de l'environnement.",
+     "solution": "Choisir une image libre → recadrer → ajouter un titre → ajuster luminosité → enregistrer en PNG → ranger dans le dossier du projet."
+    },
+    {
+     "title": "Paint",
+     "text": "Décris les étapes pour dessiner un rectangle rouge dans Paint et l'enregistrer en PNG.",
+     "solution": "Ouvrir Paint → choisir Formes → Rectangle → couleur rouge → dessiner → Fichier → Enregistrer sous → PNG → nommer → Enregistrer."
+    },
+    {
+     "title": "Bordures",
+     "text": "Comment ajouter des bordures à un tableau dans Excel ?",
+     "solution": "Sélectionner le tableau → Accueil → Bordures → Toutes les bordures."
+    },
+    {
+     "title": "Organiser",
+     "text": "Propose une méthode pour organiser 200 photos de voyage.",
+     "solution": "Créer des dossiers par date ou par lieu, renommer les photos clairement, supprimer les doublons."
+    },
+    {
+     "title": "Filtre",
+     "text": "Qu'est-ce qu'un filtre ? Donne deux exemples.",
+     "solution": "Effet appliqué à toute l'image ; noir et blanc, sépia, flou, netteté."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 33",
+   "term": 3,
+   "kind": "eval",
+   "title": "Intégration, évaluation et remédiation",
+   "covers": [
+    "Introduction à la messagerie électronique (théorie)",
+    "Création et gestion d'une boîte électronique",
+    "Envoi et réception d'un courrier électronique",
+    "Sécurité et bonnes pratiques en messagerie électronique"
+   ],
+   "items": [
+    {
+     "title": "Avantages",
+     "text": "Cite trois avantages du courrier électronique.",
+     "solution": "Rapide, gratuit, envoi de pièces jointes, accessible partout."
+    },
+    {
+     "title": "Création",
+     "text": "Quelles informations faut-il pour créer une boîte e-mail ?",
+     "solution": "Nom, prénom, date de naissance, identifiant choisi, mot de passe solide, numéro de téléphone de récupération."
+    },
+    {
+     "title": "Hameçonnage",
+     "text": "Tu reçois un e-mail qui te demande ton mot de passe pour « gagner un prix ». Que fais-tu ?",
+     "solution": "C'est de l'hameçonnage (phishing) : je ne réponds pas, je ne clique pas sur le lien, je le supprime ou le signale."
+    },
+    {
+     "title": "Message",
+     "text": "Écris un court e-mail à ton professeur pour lui envoyer ton devoir.",
+     "solution": "Objet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom]."
+    },
+    {
+     "title": "Dossiers",
+     "text": "Cite quatre dossiers d'une boîte e-mail.",
+     "solution": "Boîte de réception, Envoyés, Brouillons, Spam (courrier indésirable), Corbeille."
+    },
+    {
+     "title": "Adresse",
+     "text": "Décompose l'adresse ahmed.ba@gmail.com.",
+     "solution": "ahmed.ba : identifiant ; @ : « at » (chez) ; gmail.com : nom de domaine du fournisseur."
+    },
+    {
+     "title": "Champs",
+     "text": "Rôle des champs : À, Cc, Objet.",
+     "solution": "À : destinataire principal ; Cc : copie à d'autres personnes ; Objet : sujet du message."
+    },
+    {
+     "title": "Entrées / sorties",
+     "text": "Pour un ventilateur, donne l'énergie d'entrée et l'effet en sortie.",
+     "solution": "Entrée : énergie électrique ; sortie : mouvement de l'air (énergie mécanique)."
+    },
+    {
+     "title": "Protection",
+     "text": "Donne deux exemples de fonction de protection dans des objets techniques.",
+     "solution": "Le fusible protège le circuit ; la coque protège le téléphone ; le disjoncteur protège l'installation."
+    },
+    {
+     "title": "Formats",
+     "text": "Cite trois formats d'images et une caractéristique de chacun.",
+     "solution": "JPEG : photos, compressé ; PNG : transparence, sans perte ; GIF : animations simples ; BMP : non compressé, lourd."
+    },
+    {
+     "title": "Mots-clés",
+     "text": "Transforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »",
+     "solution": "date indépendance Mauritanie."
+    },
+    {
+     "title": "Projet",
+     "text": "Crée le plan d'un tableau de suivi des dépenses de la classe (colonnes, formules).",
+     "solution": "Colonnes : Date, Objet, Montant ; total =SOMME(C2:C20) ; graphique des dépenses."
+    },
+    {
+     "title": "Légal",
+     "text": "Qu'est-ce qu'un téléchargement illégal ? Donne un exemple.",
+     "solution": "Télécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté."
+    },
+    {
+     "title": "Virus",
+     "text": "Comment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?",
+     "solution": "Il peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus."
+    },
+    {
+     "title": "Sécurité",
+     "text": "Cite quatre règles pour naviguer en sécurité.",
+     "solution": "Ne pas donner ses informations personnelles, vérifier le cadenas https, ne pas cliquer sur les liens suspects, utiliser un antivirus."
+    },
+    {
+     "title": "Excel",
+     "text": "Qu'est-ce qu'un tableur ? Cite un exemple.",
+     "solution": "Logiciel qui organise et calcule des données dans des tableaux ; Microsoft Excel, LibreOffice Calc."
+    },
+    {
+     "title": "Moyenne",
+     "text": "Notes en B2, B3, B4 : 12, 15, 9. Écris la formule de la moyenne et donne le résultat.",
+     "solution": "=(B2+B3+B4)/3 ou =MOYENNE(B2:B4) ; résultat 12."
+    },
+    {
+     "title": "Carte de vœux",
+     "text": "Tu dois créer une carte de vœux numérique de 1000 × 700 pixels. Quelles étapes et quels réglages choisis-tu ?",
+     "solution": "Nouvelle image 1000 × 700 → fond coloré → insérer une image libre redimensionnée → ajouter un texte → retoucher → enregistrer en JPEG ou PNG."
+    },
+    {
+     "title": "Format",
+     "text": "Comment afficher un nombre avec deux décimales ?",
+     "solution": "Sélectionner → Accueil → Nombre → augmenter les décimales (ou Format de cellule → Nombre, 2 décimales)."
+    },
+    {
+     "title": "Plage",
+     "text": "Que désigne la plage A1:B3 ? Combien de cellules ?",
+     "solution": "Les cellules de A1 à B3 ; 2 colonnes × 3 lignes = 6 cellules."
+    }
+   ]
+  }
+ ],
+ "exams": [
+  {
+   "week": "Leçon 12",
+   "term": 1,
+   "kind": "exam",
+   "title": "Examen du trimestre 1",
+   "covers": [
+    "Introduction aux images numériques",
+    "Création et enregistrement d'une image",
+    "Téléchargement et gestion d'images",
+    "Traitement simple d'une image : recadrage et redimensionnement",
+    "Retouches de base : luminosité, contraste et filtres",
+    "Projet final : création et gestion d'une image personnalisée",
+    "Naviguer sur Internet de manière éducative et sécurisée",
+    "Respect et éthique sur Internet",
+    "Système technique",
+    "Caractéristiques physiques des matériaux"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 1",
+     "text": "Exercice 1 : Renommer\nPourquoi renommer les images téléchargées (ex. IMG_2031.jpg) ?\n\nExercice 2 : Conserver les proportions\nPourquoi cocher « Conserver les proportions » ?\n\nExercice 3 : Système\nQu'est-ce qu'un système technique ? Donne un exemple et ses éléments.",
+     "solution": "Exercice 1\nPour les retrouver facilement : un nom clair comme « chinguetti_mosquee.jpg » décrit le contenu.\n\nExercice 2\nPour éviter que l'image soit déformée (étirée ou écrasée).\n\nExercice 3\nEnsemble d'éléments qui fonctionnent ensemble pour une fonction ; vélo : cadre, roues, pédalier, chaîne, freins."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 1",
+     "text": "Exercice 1 : Calcul\nCombien de pixels contient une image de 800 × 600 ?\n\nExercice 2 : Contraste\nQu'est-ce que le contraste d'une image ? Que se passe-t-il si on l'augmente trop ?\n\nExercice 3 : Système\nQu'est-ce qu'un système technique ? Donne un exemple et ses éléments.",
+     "solution": "Exercice 1\n800 × 600 = 480 000 pixels.\n\nExercice 2\nLa différence entre zones claires et sombres ; trop de contraste fait perdre les détails (blancs brûlés, noirs bouchés).\n\nExercice 3\nEnsemble d'éléments qui fonctionnent ensemble pour une fonction ; vélo : cadre, roues, pédalier, chaîne, freins."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 1",
+     "text": "Exercice 1 : Renommer\nPourquoi renommer les images téléchargées (ex. IMG_2031.jpg) ?\n\nExercice 2 : Organiser\nPropose une méthode pour organiser 200 photos de voyage.\n\nExercice 3 : Carte de vœux\nTu dois créer une carte de vœux numérique de 1000 × 700 pixels. Quelles étapes et quels réglages choisis-tu ?",
+     "solution": "Exercice 1\nPour les retrouver facilement : un nom clair comme « chinguetti_mosquee.jpg » décrit le contenu.\n\nExercice 2\nCréer des dossiers par date ou par lieu, renommer les photos clairement, supprimer les doublons.\n\nExercice 3\nNouvelle image 1000 × 700 → fond coloré → insérer une image libre redimensionnée → ajouter un texte → retoucher → enregistrer en JPEG ou PNG."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 1",
+     "text": "Exercice 1 : Outils\nCite quatre outils de Paint.\n\nExercice 2 : Droits\nPeut-on utiliser n'importe quelle image d'Internet dans un exposé ? Explique.\n\nExercice 3 : Système\nQu'est-ce qu'un système technique ? Donne un exemple et ses éléments.",
+     "solution": "Exercice 1\nCrayon, pinceau, gomme, pot de peinture, texte, formes, sélection.\n\nExercice 2\nNon, il faut respecter les droits d'auteur : utiliser des images libres de droits et citer la source.\n\nExercice 3\nEnsemble d'éléments qui fonctionnent ensemble pour une fonction ; vélo : cadre, roues, pédalier, chaîne, freins."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 1",
+     "text": "Exercice 1 : Enregistrer sous\nPourquoi utiliser « Enregistrer sous » plutôt que « Enregistrer » ?\n\nExercice 2 : Contraste\nQu'est-ce que le contraste d'une image ? Que se passe-t-il si on l'augmente trop ?\n\nExercice 3 : Propriétés\nDéfinis : conductivité électrique, dureté, élasticité.",
+     "solution": "Exercice 1\nPour choisir un nouveau nom, un emplacement ou un format sans écraser l'original.\n\nExercice 2\nLa différence entre zones claires et sombres ; trop de contraste fait perdre les détails (blancs brûlés, noirs bouchés).\n\nExercice 3\nConductivité : laisser passer le courant ; dureté : résister aux rayures ; élasticité : reprendre sa forme après déformation."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 1",
+     "text": "Exercice 1 : Paint\nDécris les étapes pour dessiner un rectangle rouge dans Paint et l'enregistrer en PNG.\n\nExercice 2 : Filtre\nQu'est-ce qu'un filtre ? Donne deux exemples.\n\nExercice 3 : Cyberharcèlement\nQu'est-ce que le cyberharcèlement ? Que faire si on en est victime ?",
+     "solution": "Exercice 1\nOuvrir Paint → choisir Formes → Rectangle → couleur rouge → dessiner → Fichier → Enregistrer sous → PNG → nommer → Enregistrer.\n\nExercice 2\nEffet appliqué à toute l'image ; noir et blanc, sépia, flou, netteté.\n\nExercice 3\nHarcèlement répété en ligne ; ne pas répondre, garder les preuves, bloquer, en parler à un adulte."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 1",
+     "text": "Exercice 1 : Enregistrer sous\nPourquoi utiliser « Enregistrer sous » plutôt que « Enregistrer » ?\n\nExercice 2 : Retouches\nUne photo est trop sombre. Quel réglage utiliser ?\n\nExercice 3 : Protection\nDonne deux exemples de fonction de protection dans des objets techniques.",
+     "solution": "Exercice 1\nPour choisir un nouveau nom, un emplacement ou un format sans écraser l'original.\n\nExercice 2\nAugmenter la luminosité (et éventuellement le contraste).\n\nExercice 3\nLe fusible protège le circuit ; la coque protège le téléphone ; le disjoncteur protège l'installation."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 1",
+     "text": "Exercice 1 : Enregistrer sous\nPourquoi utiliser « Enregistrer sous » plutôt que « Enregistrer » ?\n\nExercice 2 : Organiser\nPropose une méthode pour organiser 200 photos de voyage.\n\nExercice 3 : Projet\nDécris les étapes pour créer une affiche pour la journée de l'environnement.",
+     "solution": "Exercice 1\nPour choisir un nouveau nom, un emplacement ou un format sans écraser l'original.\n\nExercice 2\nCréer des dossiers par date ou par lieu, renommer les photos clairement, supprimer les doublons.\n\nExercice 3\nChoisir une image libre → recadrer → ajouter un titre → ajuster luminosité → enregistrer en PNG → ranger dans le dossier du projet."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 1",
+     "text": "Exercice 1 : Taille du fichier\nUne même image est enregistrée en BMP (2,4 Mo) et en JPEG (250 Ko). Explique la différence.\n\nExercice 2 : Retouches\nUne photo est trop sombre. Quel réglage utiliser ?\n\nExercice 3 : Propriétés\nDéfinis : conductivité électrique, dureté, élasticité.",
+     "solution": "Exercice 1\nLe JPEG compresse l'image donc le fichier est plus léger ; le BMP n'est pas compressé.\n\nExercice 2\nAugmenter la luminosité (et éventuellement le contraste).\n\nExercice 3\nConductivité : laisser passer le courant ; dureté : résister aux rayures ; élasticité : reprendre sa forme après déformation."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pixel\nQu'est-ce qu'un pixel ? Que signifie une image de 1920 × 1080 ?\n\nExercice 2 : Proportions\nUne image de 1200 × 800 est redimensionnée à 50 %. Quelles sont ses nouvelles dimensions ?\n\nExercice 3 : Choix\nPourquoi les fils électriques sont-ils en cuivre recouvert de plastique ?",
+     "solution": "Exercice 1\nLe plus petit point d'une image numérique ; l'image a 1920 pixels en largeur et 1080 en hauteur.\n\nExercice 2\n600 × 400.\n\nExercice 3\nLe cuivre conduit bien l'électricité ; le plastique est isolant et protège."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 1",
+     "text": "Exercice 1 : Matricielle / vectorielle\nDifférence entre image matricielle et image vectorielle ?\n\nExercice 2 : Droits\nPeut-on utiliser n'importe quelle image d'Internet dans un exposé ? Explique.\n\nExercice 3 : Projet\nDécris les étapes pour créer une affiche pour la journée de l'environnement.",
+     "solution": "Exercice 1\nMatricielle : faite de pixels, perd en qualité si on l'agrandit ; vectorielle : faite de formes mathématiques, s'agrandit sans perte.\n\nExercice 2\nNon, il faut respecter les droits d'auteur : utiliser des images libres de droits et citer la source.\n\nExercice 3\nChoisir une image libre → recadrer → ajouter un titre → ajuster luminosité → enregistrer en PNG → ranger dans le dossier du projet."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 1",
+     "text": "Exercice 1 : Outils\nCite quatre outils de Paint.\n\nExercice 2 : Conserver les proportions\nPourquoi cocher « Conserver les proportions » ?\n\nExercice 3 : Carte de vœux\nTu dois créer une carte de vœux numérique de 1000 × 700 pixels. Quelles étapes et quels réglages choisis-tu ?",
+     "solution": "Exercice 1\nCrayon, pinceau, gomme, pot de peinture, texte, formes, sélection.\n\nExercice 2\nPour éviter que l'image soit déformée (étirée ou écrasée).\n\nExercice 3\nNouvelle image 1000 × 700 → fond coloré → insérer une image libre redimensionnée → ajouter un texte → retoucher → enregistrer en JPEG ou PNG."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 1",
+     "text": "Exercice 1 : Taille du fichier\nUne même image est enregistrée en BMP (2,4 Mo) et en JPEG (250 Ko). Explique la différence.\n\nExercice 2 : Télécharger\nComment enregistrer une image trouvée sur Internet ?\n\nExercice 3 : Système\nQu'est-ce qu'un système technique ? Donne un exemple et ses éléments.",
+     "solution": "Exercice 1\nLe JPEG compresse l'image donc le fichier est plus léger ; le BMP n'est pas compressé.\n\nExercice 2\nClic droit sur l'image → Enregistrer l'image sous → choisir le dossier → Enregistrer (en respectant les droits d'auteur).\n\nExercice 3\nEnsemble d'éléments qui fonctionnent ensemble pour une fonction ; vélo : cadre, roues, pédalier, chaîne, freins."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 1",
+     "text": "Exercice 1 : Enregistrer sous\nPourquoi utiliser « Enregistrer sous » plutôt que « Enregistrer » ?\n\nExercice 2 : Filtre\nQu'est-ce qu'un filtre ? Donne deux exemples.\n\nExercice 3 : Entrées / sorties\nPour un ventilateur, donne l'énergie d'entrée et l'effet en sortie.",
+     "solution": "Exercice 1\nPour choisir un nouveau nom, un emplacement ou un format sans écraser l'original.\n\nExercice 2\nEffet appliqué à toute l'image ; noir et blanc, sépia, flou, netteté.\n\nExercice 3\nEntrée : énergie électrique ; sortie : mouvement de l'air (énergie mécanique)."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 1",
+     "text": "Exercice 1 : Calcul\nCombien de pixels contient une image de 800 × 600 ?\n\nExercice 2 : Proportions\nUne image de 1200 × 800 est redimensionnée à 50 %. Quelles sont ses nouvelles dimensions ?\n\nExercice 3 : Protection\nDonne deux exemples de fonction de protection dans des objets techniques.",
+     "solution": "Exercice 1\n800 × 600 = 480 000 pixels.\n\nExercice 2\n600 × 400.\n\nExercice 3\nLe fusible protège le circuit ; la coque protège le téléphone ; le disjoncteur protège l'installation."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 1",
+     "text": "Exercice 1 : Pixel\nQu'est-ce qu'un pixel ? Que signifie une image de 1920 × 1080 ?\n\nExercice 2 : Filtre\nQu'est-ce qu'un filtre ? Donne deux exemples.\n\nExercice 3 : Cyberharcèlement\nQu'est-ce que le cyberharcèlement ? Que faire si on en est victime ?",
+     "solution": "Exercice 1\nLe plus petit point d'une image numérique ; l'image a 1920 pixels en largeur et 1080 en hauteur.\n\nExercice 2\nEffet appliqué à toute l'image ; noir et blanc, sépia, flou, netteté.\n\nExercice 3\nHarcèlement répété en ligne ; ne pas répondre, garder les preuves, bloquer, en parler à un adulte."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 1",
+     "text": "Exercice 1 : Calcul\nCombien de pixels contient une image de 800 × 600 ?\n\nExercice 2 : Contraste\nQu'est-ce que le contraste d'une image ? Que se passe-t-il si on l'augmente trop ?\n\nExercice 3 : Protection\nDonne deux exemples de fonction de protection dans des objets techniques.",
+     "solution": "Exercice 1\n800 × 600 = 480 000 pixels.\n\nExercice 2\nLa différence entre zones claires et sombres ; trop de contraste fait perdre les détails (blancs brûlés, noirs bouchés).\n\nExercice 3\nLe fusible protège le circuit ; la coque protège le téléphone ; le disjoncteur protège l'installation."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 1",
+     "text": "Exercice 1 : Paint\nDécris les étapes pour dessiner un rectangle rouge dans Paint et l'enregistrer en PNG.\n\nExercice 2 : Retouches\nUne photo est trop sombre. Quel réglage utiliser ?\n\nExercice 3 : Cyberharcèlement\nQu'est-ce que le cyberharcèlement ? Que faire si on en est victime ?",
+     "solution": "Exercice 1\nOuvrir Paint → choisir Formes → Rectangle → couleur rouge → dessiner → Fichier → Enregistrer sous → PNG → nommer → Enregistrer.\n\nExercice 2\nAugmenter la luminosité (et éventuellement le contraste).\n\nExercice 3\nHarcèlement répété en ligne ; ne pas répondre, garder les preuves, bloquer, en parler à un adulte."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 1",
+     "text": "Exercice 1 : Formats\nCite trois formats d'images et une caractéristique de chacun.\n\nExercice 2 : Organiser\nPropose une méthode pour organiser 200 photos de voyage.\n\nExercice 3 : Propriétés\nDéfinis : conductivité électrique, dureté, élasticité.",
+     "solution": "Exercice 1\nJPEG : photos, compressé ; PNG : transparence, sans perte ; GIF : animations simples ; BMP : non compressé, lourd.\n\nExercice 2\nCréer des dossiers par date ou par lieu, renommer les photos clairement, supprimer les doublons.\n\nExercice 3\nConductivité : laisser passer le courant ; dureté : résister aux rayures ; élasticité : reprendre sa forme après déformation."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 1",
+     "text": "Exercice 1 : Formats\nCite trois formats d'images et une caractéristique de chacun.\n\nExercice 2 : Retouches\nUne photo est trop sombre. Quel réglage utiliser ?\n\nExercice 3 : Protection\nDonne deux exemples de fonction de protection dans des objets techniques.",
+     "solution": "Exercice 1\nJPEG : photos, compressé ; PNG : transparence, sans perte ; GIF : animations simples ; BMP : non compressé, lourd.\n\nExercice 2\nAugmenter la luminosité (et éventuellement le contraste).\n\nExercice 3\nLe fusible protège le circuit ; la coque protège le téléphone ; le disjoncteur protège l'installation."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 23",
+   "term": 2,
+   "kind": "exam",
+   "title": "Examen du trimestre 2",
+   "covers": [
+    "Découverte d'Excel et gestion des fichiers",
+    "Feuilles et cellules : organisation du tableur",
+    "Saisie et mise en forme de données",
+    "Ajout de formules de base",
+    "Utilisation des fonctions courantes",
+    "Mise en page et formatage avancé",
+    "Représentation graphique de données",
+    "Préparation à l'impression",
+    "Projet final : application des connaissances",
+    "L'entreprise et les secteurs d'activités économiques"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 2",
+     "text": "Exercice 1 : Classeur\nDifférence entre classeur et feuille ?\n\nExercice 2 : SI\nÉcris une formule qui affiche « Admis » si la moyenne en D2 est ≥ 10, sinon « Ajourné ».\n\nExercice 3 : Mise en forme conditionnelle\nÀ quoi sert la mise en forme conditionnelle ? Donne un exemple.",
+     "solution": "Exercice 1\nLe classeur est le fichier ; il contient une ou plusieurs feuilles de calcul.\n\nExercice 2\n=SI(D2>=10;\"Admis\";\"Ajourné\")\n\nExercice 3\nÀ colorer automatiquement les cellules selon une condition ; ex. notes < 10 en rouge."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 2",
+     "text": "Exercice 1 : Cellule\nQu'est-ce que la cellule C4 ?\n\nExercice 2 : SI\nÉcris une formule qui affiche « Admis » si la moyenne en D2 est ≥ 10, sinon « Ajourné ».\n\nExercice 3 : Graphiques\nQuel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Exercice 1\nLa cellule à l'intersection de la colonne C et de la ligne 4.\n\nExercice 2\n=SI(D2>=10;\"Admis\";\"Ajourné\")\n\nExercice 3\nCourbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 2",
+     "text": "Exercice 1 : Plage\nQue désigne la plage A1:B3 ? Combien de cellules ?\n\nExercice 2 : Formules\nA1 = 12, A2 = 8. Écris les formules de la somme, de la différence et du produit.\n\nExercice 3 : Graphiques\nQuel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Exercice 1\nLes cellules de A1 à B3 ; 2 colonnes × 3 lignes = 6 cellules.\n\nExercice 2\n=A1+A2 (20) ; =A1-A2 (4) ; =A1*A2 (96).\n\nExercice 3\nCourbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 2",
+     "text": "Exercice 1 : Classeur\nDifférence entre classeur et feuille ?\n\nExercice 2 : Formules\nA1 = 12, A2 = 8. Écris les formules de la somme, de la différence et du produit.\n\nExercice 3 : Secteurs\nClasse dans les secteurs primaire, secondaire, tertiaire : pêche, banque, usine de poisson, élevage, école, mine de fer.",
+     "solution": "Exercice 1\nLe classeur est le fichier ; il contient une ou plusieurs feuilles de calcul.\n\nExercice 2\n=A1+A2 (20) ; =A1-A2 (4) ; =A1*A2 (96).\n\nExercice 3\nPrimaire : pêche, élevage, mine de fer (extraction) ; Secondaire : usine de poisson ; Tertiaire : banque, école."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 2",
+     "text": "Exercice 1 : Cellule\nQu'est-ce que la cellule C4 ?\n\nExercice 2 : Moyenne\nNotes en B2, B3, B4 : 12, 15, 9. Écris la formule de la moyenne et donne le résultat.\n\nExercice 3 : Impression Excel\nComment imprimer une feuille Excel sur une seule page ?",
+     "solution": "Exercice 1\nLa cellule à l'intersection de la colonne C et de la ligne 4.\n\nExercice 2\n=(B2+B3+B4)/3 ou =MOYENNE(B2:B4) ; résultat 12.\n\nExercice 3\nMise en page → Ajuster → 1 page en largeur et en hauteur, puis aperçu et impression."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 2",
+     "text": "Exercice 1 : Cellule\nQu'est-ce que la cellule C4 ?\n\nExercice 2 : Signe égal\nPar quel signe commence toute formule ?\n\nExercice 3 : Impression Excel\nComment imprimer une feuille Excel sur une seule page ?",
+     "solution": "Exercice 1\nLa cellule à l'intersection de la colonne C et de la ligne 4.\n\nExercice 2\nLe signe = .\n\nExercice 3\nMise en page → Ajuster → 1 page en largeur et en hauteur, puis aperçu et impression."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 2",
+     "text": "Exercice 1 : Format\nComment afficher un nombre avec deux décimales ?\n\nExercice 2 : Formules\nA1 = 12, A2 = 8. Écris les formules de la somme, de la différence et du produit.\n\nExercice 3 : Graphiques\nQuel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Exercice 1\nSélectionner → Accueil → Nombre → augmenter les décimales (ou Format de cellule → Nombre, 2 décimales).\n\nExercice 2\n=A1+A2 (20) ; =A1-A2 (4) ; =A1*A2 (96).\n\nExercice 3\nCourbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 2",
+     "text": "Exercice 1 : Saisie\nComment saisir et valider une donnée dans une cellule ?\n\nExercice 2 : Bordures\nComment ajouter des bordures à un tableau dans Excel ?\n\nExercice 3 : Graphiques\nQuel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Exercice 1\nCliquer sur la cellule, taper la donnée, appuyer sur Entrée.\n\nExercice 2\nSélectionner le tableau → Accueil → Bordures → Toutes les bordures.\n\nExercice 3\nCourbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 2",
+     "text": "Exercice 1 : Cellule\nQu'est-ce que la cellule C4 ?\n\nExercice 2 : Bordures\nComment ajouter des bordures à un tableau dans Excel ?\n\nExercice 3 : Secteurs\nClasse dans les secteurs primaire, secondaire, tertiaire : pêche, banque, usine de poisson, élevage, école, mine de fer.",
+     "solution": "Exercice 1\nLa cellule à l'intersection de la colonne C et de la ligne 4.\n\nExercice 2\nSélectionner le tableau → Accueil → Bordures → Toutes les bordures.\n\nExercice 3\nPrimaire : pêche, élevage, mine de fer (extraction) ; Secondaire : usine de poisson ; Tertiaire : banque, école."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 2",
+     "text": "Exercice 1 : Cellule\nQu'est-ce que la cellule C4 ?\n\nExercice 2 : Bordures\nComment ajouter des bordures à un tableau dans Excel ?\n\nExercice 3 : Projet\nCrée le plan d'un tableau de suivi des dépenses de la classe (colonnes, formules).",
+     "solution": "Exercice 1\nLa cellule à l'intersection de la colonne C et de la ligne 4.\n\nExercice 2\nSélectionner le tableau → Accueil → Bordures → Toutes les bordures.\n\nExercice 3\nColonnes : Date, Objet, Montant ; total =SOMME(C2:C20) ; graphique des dépenses."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 2",
+     "text": "Exercice 1 : Plage\nQue désigne la plage A1:B3 ? Combien de cellules ?\n\nExercice 2 : SI\nÉcris une formule qui affiche « Admis » si la moyenne en D2 est ≥ 10, sinon « Ajourné ».\n\nExercice 3 : Graphiques\nQuel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Exercice 1\nLes cellules de A1 à B3 ; 2 colonnes × 3 lignes = 6 cellules.\n\nExercice 2\n=SI(D2>=10;\"Admis\";\"Ajourné\")\n\nExercice 3\nCourbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 2",
+     "text": "Exercice 1 : Excel\nQu'est-ce qu'un tableur ? Cite un exemple.\n\nExercice 2 : Fonctions\nDonne la fonction Excel pour : la somme de C1 à C10, le maximum, le minimum.\n\nExercice 3 : Secteurs\nClasse dans les secteurs primaire, secondaire, tertiaire : pêche, banque, usine de poisson, élevage, école, mine de fer.",
+     "solution": "Exercice 1\nLogiciel qui organise et calcule des données dans des tableaux ; Microsoft Excel, LibreOffice Calc.\n\nExercice 2\n=SOMME(C1:C10) ; =MAX(C1:C10) ; =MIN(C1:C10).\n\nExercice 3\nPrimaire : pêche, élevage, mine de fer (extraction) ; Secondaire : usine de poisson ; Tertiaire : banque, école."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 2",
+     "text": "Exercice 1 : Cellule\nQu'est-ce que la cellule C4 ?\n\nExercice 2 : Fonctions\nDonne la fonction Excel pour : la somme de C1 à C10, le maximum, le minimum.\n\nExercice 3 : Mise en forme conditionnelle\nÀ quoi sert la mise en forme conditionnelle ? Donne un exemple.",
+     "solution": "Exercice 1\nLa cellule à l'intersection de la colonne C et de la ligne 4.\n\nExercice 2\n=SOMME(C1:C10) ; =MAX(C1:C10) ; =MIN(C1:C10).\n\nExercice 3\nÀ colorer automatiquement les cellules selon une condition ; ex. notes < 10 en rouge."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 2",
+     "text": "Exercice 1 : Classeur\nDifférence entre classeur et feuille ?\n\nExercice 2 : Formules\nA1 = 12, A2 = 8. Écris les formules de la somme, de la différence et du produit.\n\nExercice 3 : Projet\nCrée le plan d'un tableau de suivi des dépenses de la classe (colonnes, formules).",
+     "solution": "Exercice 1\nLe classeur est le fichier ; il contient une ou plusieurs feuilles de calcul.\n\nExercice 2\n=A1+A2 (20) ; =A1-A2 (4) ; =A1*A2 (96).\n\nExercice 3\nColonnes : Date, Objet, Montant ; total =SOMME(C2:C20) ; graphique des dépenses."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 2",
+     "text": "Exercice 1 : Classeur\nDifférence entre classeur et feuille ?\n\nExercice 2 : Fonctions\nDonne la fonction Excel pour : la somme de C1 à C10, le maximum, le minimum.\n\nExercice 3 : Graphiques\nQuel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Exercice 1\nLe classeur est le fichier ; il contient une ou plusieurs feuilles de calcul.\n\nExercice 2\n=SOMME(C1:C10) ; =MAX(C1:C10) ; =MIN(C1:C10).\n\nExercice 3\nCourbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 2",
+     "text": "Exercice 1 : Format\nComment afficher un nombre avec deux décimales ?\n\nExercice 2 : Moyenne\nNotes en B2, B3, B4 : 12, 15, 9. Écris la formule de la moyenne et donne le résultat.\n\nExercice 3 : Projet\nCrée le plan d'un tableau de suivi des dépenses de la classe (colonnes, formules).",
+     "solution": "Exercice 1\nSélectionner → Accueil → Nombre → augmenter les décimales (ou Format de cellule → Nombre, 2 décimales).\n\nExercice 2\n=(B2+B3+B4)/3 ou =MOYENNE(B2:B4) ; résultat 12.\n\nExercice 3\nColonnes : Date, Objet, Montant ; total =SOMME(C2:C20) ; graphique des dépenses."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 2",
+     "text": "Exercice 1 : Classeur\nDifférence entre classeur et feuille ?\n\nExercice 2 : SI\nÉcris une formule qui affiche « Admis » si la moyenne en D2 est ≥ 10, sinon « Ajourné ».\n\nExercice 3 : Impression Excel\nComment imprimer une feuille Excel sur une seule page ?",
+     "solution": "Exercice 1\nLe classeur est le fichier ; il contient une ou plusieurs feuilles de calcul.\n\nExercice 2\n=SI(D2>=10;\"Admis\";\"Ajourné\")\n\nExercice 3\nMise en page → Ajuster → 1 page en largeur et en hauteur, puis aperçu et impression."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 2",
+     "text": "Exercice 1 : Saisie\nComment saisir et valider une donnée dans une cellule ?\n\nExercice 2 : Formules\nA1 = 12, A2 = 8. Écris les formules de la somme, de la différence et du produit.\n\nExercice 3 : Graphiques\nQuel graphique choisir pour : l'évolution de la température sur une semaine ; la répartition des élèves par sexe ?",
+     "solution": "Exercice 1\nCliquer sur la cellule, taper la donnée, appuyer sur Entrée.\n\nExercice 2\n=A1+A2 (20) ; =A1-A2 (4) ; =A1*A2 (96).\n\nExercice 3\nCourbe (graphique en ligne) ; secteurs (camembert)."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 2",
+     "text": "Exercice 1 : Excel\nQu'est-ce qu'un tableur ? Cite un exemple.\n\nExercice 2 : Bordures\nComment ajouter des bordures à un tableau dans Excel ?\n\nExercice 3 : Secteurs\nClasse dans les secteurs primaire, secondaire, tertiaire : pêche, banque, usine de poisson, élevage, école, mine de fer.",
+     "solution": "Exercice 1\nLogiciel qui organise et calcule des données dans des tableaux ; Microsoft Excel, LibreOffice Calc.\n\nExercice 2\nSélectionner le tableau → Accueil → Bordures → Toutes les bordures.\n\nExercice 3\nPrimaire : pêche, élevage, mine de fer (extraction) ; Secondaire : usine de poisson ; Tertiaire : banque, école."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 2",
+     "text": "Exercice 1 : Classeur\nDifférence entre classeur et feuille ?\n\nExercice 2 : Fonctions\nDonne la fonction Excel pour : la somme de C1 à C10, le maximum, le minimum.\n\nExercice 3 : Créer\nDécris les étapes pour créer un histogramme.",
+     "solution": "Exercice 1\nLe classeur est le fichier ; il contient une ou plusieurs feuilles de calcul.\n\nExercice 2\n=SOMME(C1:C10) ; =MAX(C1:C10) ; =MIN(C1:C10).\n\nExercice 3\nSélectionner les données → Insertion → Graphiques → Histogramme → ajouter titre et légende."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 34",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Introduction aux moteurs de recherche",
+    "Fiabilité des sources et dangers du web",
+    "Téléchargement responsable et légal",
+    "Sécurité et gestion des fichiers téléchargés",
+    "Introduction à la messagerie électronique (théorie)",
+    "Création et gestion d'une boîte électronique",
+    "Envoi et réception d'un courrier électronique",
+    "Sécurité et bonnes pratiques en messagerie électronique",
+    "Les critères et les leviers du développement durable",
+    "Les causes des changements climatiques"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Recherche avancée\nQue fait la recherche entre guillemets « énergie solaire Mauritanie » ?\n\nExercice 2 : Création\nQuelles informations faut-il pour créer une boîte e-mail ?\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\nElle cherche l'expression exacte dans cet ordre.\n\nExercice 2\nNom, prénom, date de naissance, identifiant choisi, mot de passe solide, numéro de téléphone de récupération.\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Mots-clés\nTransforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »\n\nExercice 2 : Création\nQuelles informations faut-il pour créer une boîte e-mail ?\n\nExercice 3 : Conséquences\nCite trois conséquences des changements climatiques en Mauritanie.",
+     "solution": "Exercice 1\ndate indépendance Mauritanie.\n\nExercice 2\nNom, prénom, date de naissance, identifiant choisi, mot de passe solide, numéro de téléphone de récupération.\n\nExercice 3\nSécheresses, avancée du désert, hausse du niveau de la mer menaçant Nouakchott, perte de pâturages."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Dossiers\nCite quatre dossiers d'une boîte e-mail.\n\nExercice 3 : Leviers\nPropose deux actions de développement durable dans ton école.",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nBoîte de réception, Envoyés, Brouillons, Spam (courrier indésirable), Corbeille.\n\nExercice 3\nÉconomiser l'eau et l'électricité, trier les déchets, planter des arbres."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fiabilité\nCite trois indices qu'une information sur Internet est fiable.\n\nExercice 2 : Avantages\nCite trois avantages du courrier électronique.\n\nExercice 3 : Mauritanie\nPourquoi l'énergie solaire est-elle adaptée à la Mauritanie ?",
+     "solution": "Exercice 1\nAuteur connu, source officielle, date récente, information confirmée par d'autres sources.\n\nExercice 2\nRapide, gratuit, envoi de pièces jointes, accessible partout.\n\nExercice 3\nFort ensoleillement toute l'année et grands espaces disponibles."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fiabilité\nCite trois indices qu'une information sur Internet est fiable.\n\nExercice 2 : Dossiers\nCite quatre dossiers d'une boîte e-mail.\n\nExercice 3 : Conséquences\nCite trois conséquences des changements climatiques en Mauritanie.",
+     "solution": "Exercice 1\nAuteur connu, source officielle, date récente, information confirmée par d'autres sources.\n\nExercice 2\nBoîte de réception, Envoyés, Brouillons, Spam (courrier indésirable), Corbeille.\n\nExercice 3\nSécheresses, avancée du désert, hausse du niveau de la mer menaçant Nouakchott, perte de pâturages."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Virus\nComment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Piliers\nCite les trois piliers du développement durable.",
+     "solution": "Exercice 1\nIl peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nÉconomique, social, environnemental."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Légal\nQu'est-ce qu'un téléchargement illégal ? Donne un exemple.\n\nExercice 2 : Adresse\nDécompose l'adresse ahmed.ba@gmail.com.\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\nTélécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté.\n\nExercice 2\nahmed.ba : identifiant ; @ : « at » (chez) ; gmail.com : nom de domaine du fournisseur.\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Virus\nComment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?\n\nExercice 2 : Avantages\nCite trois avantages du courrier électronique.\n\nExercice 3 : Piliers\nCite les trois piliers du développement durable.",
+     "solution": "Exercice 1\nIl peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus.\n\nExercice 2\nRapide, gratuit, envoi de pièces jointes, accessible partout.\n\nExercice 3\nÉconomique, social, environnemental."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Avantages\nCite trois avantages du courrier électronique.\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nRapide, gratuit, envoi de pièces jointes, accessible partout.\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Mots-clés\nTransforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Mauritanie\nPourquoi l'énergie solaire est-elle adaptée à la Mauritanie ?",
+     "solution": "Exercice 1\ndate indépendance Mauritanie.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nFort ensoleillement toute l'année et grands espaces disponibles."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Virus\nComment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Causes\nCite trois causes humaines des changements climatiques.",
+     "solution": "Exercice 1\nIl peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nCombustion du pétrole et du charbon, déforestation, transport, élevage intensif, industrie."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Recherche avancée\nQue fait la recherche entre guillemets « énergie solaire Mauritanie » ?\n\nExercice 2 : Avantages\nCite trois avantages du courrier électronique.\n\nExercice 3 : Leviers\nPropose deux actions de développement durable dans ton école.",
+     "solution": "Exercice 1\nElle cherche l'expression exacte dans cet ordre.\n\nExercice 2\nRapide, gratuit, envoi de pièces jointes, accessible partout.\n\nExercice 3\nÉconomiser l'eau et l'électricité, trier les déchets, planter des arbres."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Mots-clés\nTransforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »\n\nExercice 2 : Avantages\nCite trois avantages du courrier électronique.\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\ndate indépendance Mauritanie.\n\nExercice 2\nRapide, gratuit, envoi de pièces jointes, accessible partout.\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Création\nQuelles informations faut-il pour créer une boîte e-mail ?\n\nExercice 3 : Mauritanie\nPourquoi l'énergie solaire est-elle adaptée à la Mauritanie ?",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nNom, prénom, date de naissance, identifiant choisi, mot de passe solide, numéro de téléphone de récupération.\n\nExercice 3\nFort ensoleillement toute l'année et grands espaces disponibles."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Virus\nComment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?\n\nExercice 2 : Avantages\nCite trois avantages du courrier électronique.\n\nExercice 3 : Hameçonnage\nTu reçois un e-mail qui te demande ton mot de passe pour « gagner un prix ». Que fais-tu ?",
+     "solution": "Exercice 1\nIl peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus.\n\nExercice 2\nRapide, gratuit, envoi de pièces jointes, accessible partout.\n\nExercice 3\nC'est de l'hameçonnage (phishing) : je ne réponds pas, je ne clique pas sur le lien, je le supprime ou le signale."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fiabilité\nCite trois indices qu'une information sur Internet est fiable.\n\nExercice 2 : Adresse\nDécompose l'adresse ahmed.ba@gmail.com.\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\nAuteur connu, source officielle, date récente, information confirmée par d'autres sources.\n\nExercice 2\nahmed.ba : identifiant ; @ : « at » (chez) ; gmail.com : nom de domaine du fournisseur.\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fiabilité\nCite trois indices qu'une information sur Internet est fiable.\n\nExercice 2 : Avantages\nCite trois avantages du courrier électronique.\n\nExercice 3 : Leviers\nPropose deux actions de développement durable dans ton école.",
+     "solution": "Exercice 1\nAuteur connu, source officielle, date récente, information confirmée par d'autres sources.\n\nExercice 2\nRapide, gratuit, envoi de pièces jointes, accessible partout.\n\nExercice 3\nÉconomiser l'eau et l'électricité, trier les déchets, planter des arbres."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Recherche avancée\nQue fait la recherche entre guillemets « énergie solaire Mauritanie » ?\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Leviers\nPropose deux actions de développement durable dans ton école.",
+     "solution": "Exercice 1\nElle cherche l'expression exacte dans cet ordre.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nÉconomiser l'eau et l'électricité, trier les déchets, planter des arbres."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Légal\nQu'est-ce qu'un téléchargement illégal ? Donne un exemple.\n\nExercice 2 : Création\nQuelles informations faut-il pour créer une boîte e-mail ?\n\nExercice 3 : Hameçonnage\nTu reçois un e-mail qui te demande ton mot de passe pour « gagner un prix ». Que fais-tu ?",
+     "solution": "Exercice 1\nTélécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté.\n\nExercice 2\nNom, prénom, date de naissance, identifiant choisi, mot de passe solide, numéro de téléphone de récupération.\n\nExercice 3\nC'est de l'hameçonnage (phishing) : je ne réponds pas, je ne clique pas sur le lien, je le supprime ou le signale."
+    }
+   ]
+  },
+  {
+   "week": "Leçon 35",
+   "term": 3,
+   "kind": "exam",
+   "title": "Examen du trimestre 3",
+   "covers": [
+    "Introduction aux moteurs de recherche",
+    "Fiabilité des sources et dangers du web",
+    "Téléchargement responsable et légal",
+    "Sécurité et gestion des fichiers téléchargés",
+    "Introduction à la messagerie électronique (théorie)",
+    "Création et gestion d'une boîte électronique",
+    "Envoi et réception d'un courrier électronique",
+    "Sécurité et bonnes pratiques en messagerie électronique",
+    "Les critères et les leviers du développement durable",
+    "Les causes des changements climatiques"
+   ],
+   "items": [
+    {
+     "title": "Proposition 1 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Dossiers\nCite quatre dossiers d'une boîte e-mail.\n\nExercice 3 : Causes\nCite trois causes humaines des changements climatiques.",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nBoîte de réception, Envoyés, Brouillons, Spam (courrier indésirable), Corbeille.\n\nExercice 3\nCombustion du pétrole et du charbon, déforestation, transport, élevage intensif, industrie."
+    },
+    {
+     "title": "Proposition 2 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Champs\nRôle des champs : À, Cc, Objet.\n\nExercice 3 : Conséquences\nCite trois conséquences des changements climatiques en Mauritanie.",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nÀ : destinataire principal ; Cc : copie à d'autres personnes ; Objet : sujet du message.\n\nExercice 3\nSécheresses, avancée du désert, hausse du niveau de la mer menaçant Nouakchott, perte de pâturages."
+    },
+    {
+     "title": "Proposition 3 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Hameçonnage\nTu reçois un e-mail qui te demande ton mot de passe pour « gagner un prix ». Que fais-tu ?",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nC'est de l'hameçonnage (phishing) : je ne réponds pas, je ne clique pas sur le lien, je le supprime ou le signale."
+    },
+    {
+     "title": "Proposition 4 — Examen du trimestre 3",
+     "text": "Exercice 1 : Mots-clés\nTransforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »\n\nExercice 2 : Création\nQuelles informations faut-il pour créer une boîte e-mail ?\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\ndate indépendance Mauritanie.\n\nExercice 2\nNom, prénom, date de naissance, identifiant choisi, mot de passe solide, numéro de téléphone de récupération.\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 5 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fiabilité\nCite trois indices qu'une information sur Internet est fiable.\n\nExercice 2 : Adresse\nDécompose l'adresse ahmed.ba@gmail.com.\n\nExercice 3 : Conséquences\nCite trois conséquences des changements climatiques en Mauritanie.",
+     "solution": "Exercice 1\nAuteur connu, source officielle, date récente, information confirmée par d'autres sources.\n\nExercice 2\nahmed.ba : identifiant ; @ : « at » (chez) ; gmail.com : nom de domaine du fournisseur.\n\nExercice 3\nSécheresses, avancée du désert, hausse du niveau de la mer menaçant Nouakchott, perte de pâturages."
+    },
+    {
+     "title": "Proposition 6 — Examen du trimestre 3",
+     "text": "Exercice 1 : Recherche avancée\nQue fait la recherche entre guillemets « énergie solaire Mauritanie » ?\n\nExercice 2 : Champs\nRôle des champs : À, Cc, Objet.\n\nExercice 3 : Leviers\nPropose deux actions de développement durable dans ton école.",
+     "solution": "Exercice 1\nElle cherche l'expression exacte dans cet ordre.\n\nExercice 2\nÀ : destinataire principal ; Cc : copie à d'autres personnes ; Objet : sujet du message.\n\nExercice 3\nÉconomiser l'eau et l'électricité, trier les déchets, planter des arbres."
+    },
+    {
+     "title": "Proposition 7 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fiabilité\nCite trois indices qu'une information sur Internet est fiable.\n\nExercice 2 : Adresse\nDécompose l'adresse ahmed.ba@gmail.com.\n\nExercice 3 : Hameçonnage\nTu reçois un e-mail qui te demande ton mot de passe pour « gagner un prix ». Que fais-tu ?",
+     "solution": "Exercice 1\nAuteur connu, source officielle, date récente, information confirmée par d'autres sources.\n\nExercice 2\nahmed.ba : identifiant ; @ : « at » (chez) ; gmail.com : nom de domaine du fournisseur.\n\nExercice 3\nC'est de l'hameçonnage (phishing) : je ne réponds pas, je ne clique pas sur le lien, je le supprime ou le signale."
+    },
+    {
+     "title": "Proposition 8 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fiabilité\nCite trois indices qu'une information sur Internet est fiable.\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Causes\nCite trois causes humaines des changements climatiques.",
+     "solution": "Exercice 1\nAuteur connu, source officielle, date récente, information confirmée par d'autres sources.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nCombustion du pétrole et du charbon, déforestation, transport, élevage intensif, industrie."
+    },
+    {
+     "title": "Proposition 9 — Examen du trimestre 3",
+     "text": "Exercice 1 : Virus\nComment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?\n\nExercice 2 : Champs\nRôle des champs : À, Cc, Objet.\n\nExercice 3 : Mauritanie\nPourquoi l'énergie solaire est-elle adaptée à la Mauritanie ?",
+     "solution": "Exercice 1\nIl peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus.\n\nExercice 2\nÀ : destinataire principal ; Cc : copie à d'autres personnes ; Objet : sujet du message.\n\nExercice 3\nFort ensoleillement toute l'année et grands espaces disponibles."
+    },
+    {
+     "title": "Proposition 10 — Examen du trimestre 3",
+     "text": "Exercice 1 : Légal\nQu'est-ce qu'un téléchargement illégal ? Donne un exemple.\n\nExercice 2 : Dossiers\nCite quatre dossiers d'une boîte e-mail.\n\nExercice 3 : Piliers\nCite les trois piliers du développement durable.",
+     "solution": "Exercice 1\nTélécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté.\n\nExercice 2\nBoîte de réception, Envoyés, Brouillons, Spam (courrier indésirable), Corbeille.\n\nExercice 3\nÉconomique, social, environnemental."
+    },
+    {
+     "title": "Proposition 11 — Examen du trimestre 3",
+     "text": "Exercice 1 : Légal\nQu'est-ce qu'un téléchargement illégal ? Donne un exemple.\n\nExercice 2 : Dossiers\nCite quatre dossiers d'une boîte e-mail.\n\nExercice 3 : Mauritanie\nPourquoi l'énergie solaire est-elle adaptée à la Mauritanie ?",
+     "solution": "Exercice 1\nTélécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté.\n\nExercice 2\nBoîte de réception, Envoyés, Brouillons, Spam (courrier indésirable), Corbeille.\n\nExercice 3\nFort ensoleillement toute l'année et grands espaces disponibles."
+    },
+    {
+     "title": "Proposition 12 — Examen du trimestre 3",
+     "text": "Exercice 1 : Mots-clés\nTransforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Piliers\nCite les trois piliers du développement durable.",
+     "solution": "Exercice 1\ndate indépendance Mauritanie.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nÉconomique, social, environnemental."
+    },
+    {
+     "title": "Proposition 13 — Examen du trimestre 3",
+     "text": "Exercice 1 : Fausses nouvelles\nQue faire avant de partager une information choquante sur WhatsApp ?\n\nExercice 2 : Création\nQuelles informations faut-il pour créer une boîte e-mail ?\n\nExercice 3 : Effet de serre\nQu'est-ce que l'effet de serre ?",
+     "solution": "Exercice 1\nVérifier la source et chercher si des médias sérieux la confirment ; sinon ne pas la partager.\n\nExercice 2\nNom, prénom, date de naissance, identifiant choisi, mot de passe solide, numéro de téléphone de récupération.\n\nExercice 3\nRétention d'une partie de la chaleur du Soleil par certains gaz de l'atmosphère (CO₂…) ; son renforcement réchauffe la Terre."
+    },
+    {
+     "title": "Proposition 14 — Examen du trimestre 3",
+     "text": "Exercice 1 : Mots-clés\nTransforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Renouvelables\nCite trois énergies renouvelables et un avantage commun.",
+     "solution": "Exercice 1\ndate indépendance Mauritanie.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nSolaire, éolienne, hydraulique ; inépuisables et peu polluantes."
+    },
+    {
+     "title": "Proposition 15 — Examen du trimestre 3",
+     "text": "Exercice 1 : Légal\nQu'est-ce qu'un téléchargement illégal ? Donne un exemple.\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Effet de serre\nQu'est-ce que l'effet de serre ?",
+     "solution": "Exercice 1\nTélécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nRétention d'une partie de la chaleur du Soleil par certains gaz de l'atmosphère (CO₂…) ; son renforcement réchauffe la Terre."
+    },
+    {
+     "title": "Proposition 16 — Examen du trimestre 3",
+     "text": "Exercice 1 : Virus\nComment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?\n\nExercice 2 : Dossiers\nCite quatre dossiers d'une boîte e-mail.\n\nExercice 3 : Effet de serre\nQu'est-ce que l'effet de serre ?",
+     "solution": "Exercice 1\nIl peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus.\n\nExercice 2\nBoîte de réception, Envoyés, Brouillons, Spam (courrier indésirable), Corbeille.\n\nExercice 3\nRétention d'une partie de la chaleur du Soleil par certains gaz de l'atmosphère (CO₂…) ; son renforcement réchauffe la Terre."
+    },
+    {
+     "title": "Proposition 17 — Examen du trimestre 3",
+     "text": "Exercice 1 : Légal\nQu'est-ce qu'un téléchargement illégal ? Donne un exemple.\n\nExercice 2 : Champs\nRôle des champs : À, Cc, Objet.\n\nExercice 3 : Effet de serre\nQu'est-ce que l'effet de serre ?",
+     "solution": "Exercice 1\nTélécharger une œuvre protégée sans autorisation ; un film ou un logiciel payant piraté.\n\nExercice 2\nÀ : destinataire principal ; Cc : copie à d'autres personnes ; Objet : sujet du message.\n\nExercice 3\nRétention d'une partie de la chaleur du Soleil par certains gaz de l'atmosphère (CO₂…) ; son renforcement réchauffe la Terre."
+    },
+    {
+     "title": "Proposition 18 — Examen du trimestre 3",
+     "text": "Exercice 1 : Virus\nComment un fichier téléchargé peut-il infecter l'ordinateur ? Comment se protéger ?\n\nExercice 2 : Adresse\nDécompose l'adresse ahmed.ba@gmail.com.\n\nExercice 3 : Conséquences\nCite trois conséquences des changements climatiques en Mauritanie.",
+     "solution": "Exercice 1\nIl peut contenir un virus ; utiliser un antivirus à jour, télécharger sur des sites officiels, ne pas ouvrir les fichiers .exe inconnus.\n\nExercice 2\nahmed.ba : identifiant ; @ : « at » (chez) ; gmail.com : nom de domaine du fournisseur.\n\nExercice 3\nSécheresses, avancée du désert, hausse du niveau de la mer menaçant Nouakchott, perte de pâturages."
+    },
+    {
+     "title": "Proposition 19 — Examen du trimestre 3",
+     "text": "Exercice 1 : Recherche avancée\nQue fait la recherche entre guillemets « énergie solaire Mauritanie » ?\n\nExercice 2 : Champs\nRôle des champs : À, Cc, Objet.\n\nExercice 3 : Effet de serre\nQu'est-ce que l'effet de serre ?",
+     "solution": "Exercice 1\nElle cherche l'expression exacte dans cet ordre.\n\nExercice 2\nÀ : destinataire principal ; Cc : copie à d'autres personnes ; Objet : sujet du message.\n\nExercice 3\nRétention d'une partie de la chaleur du Soleil par certains gaz de l'atmosphère (CO₂…) ; son renforcement réchauffe la Terre."
+    },
+    {
+     "title": "Proposition 20 — Examen du trimestre 3",
+     "text": "Exercice 1 : Mots-clés\nTransforme la question en mots-clés : « Quelle est la date de l'indépendance de la Mauritanie ? »\n\nExercice 2 : Message\nÉcris un court e-mail à ton professeur pour lui envoyer ton devoir.\n\nExercice 3 : Leviers\nPropose deux actions de développement durable dans ton école.",
+     "solution": "Exercice 1\ndate indépendance Mauritanie.\n\nExercice 2\nObjet : Devoir de TI – Classe 2AS ; Bonjour Monsieur, veuillez trouver ci-joint mon devoir. Cordialement, [Nom].\n\nExercice 3\nÉconomiser l'eau et l'électricité, trier les déchets, planter des arbres."
+    }
+   ]
+  }
+ ]
+}
