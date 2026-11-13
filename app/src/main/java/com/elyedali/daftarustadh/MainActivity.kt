@@ -540,36 +540,36 @@ class MainActivity : AppCompatActivity() {
                  * سجل الأستاذ لمادة في صورة PDF يحمل البيانات: (المحتوى، اسم الملف).
                  * @param uptoTerm عند رفع نتائج فصل لكل الأقسام: لا يُرسل ما بعد هذا الفصل.
                  */
-                suspend fun buildRecordPdf(c: ClassEntity, code: String, name: String, uptoTerm: Int? = null): Pair<ByteArray, String>? {
+                suspend fun buildRecordPart(c: ClassEntity, code: String, name: String, uptoTerm: Int? = null): RecordPart? {
                         val owner = institutionDao.getById(c.institutionId) ?: return null
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
                             ?.subjects?.firstOrNull { it.code == code } ?: return null
                         val list = studentDao.listByClass(c.id)
-                        // كل ما رصده الأستاذ حتى هذا الفصل: الامتحانات والاختبارات (بما فيها الإضافية)،
-                        // فتظهر الاختبارات في كشفي الفصلين الأول والثاني (شكليًا) وتُحسب في الكشف السنوي
                         val g = gradeDao.listSubject(c.id, code).filter { gr ->
                             val t = GradeSlot.testTerm(gr.slot) ?: gr.slot.drop(1).toIntOrNull() ?: 0
                             uptoTerm == null || t <= uptoTerm }
-                        // اختيار الأستاذ (معدل الاختبارات أو أفضلها) لهذا القسم نفسه، لا للقسم المفتوح
                         val mode = gradeDao.listTeacherSubjects(c.id).firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE
                         val record = RecordFile(
                             institutionId = owner.id, wilaya = owner.wilaya, schoolName = owner.schoolName,
                             schoolListId = owner.schoolListId, classId = c.id, schoolYear = c.schoolYear,
                             levelCode = c.levelCode, number = c.number, subjectCode = code,
                             subjectNameAr = subject.nameAr, subjectNameFr = subject.nameFr,
-                            // الاسم الذي سجّلته به إدارة هذه المؤسسة (من ملفها)، فيطابق إسنادها ولا يُرفض عندها
                             teacherName = metaDao.get(com.elyedali.daftarustadh.transfer.TeacherBundleImporter.nameKey(owner.id))
                                 ?.takeIf { it.isNotBlank() } ?: name,
                             testsMode = mode,
                             students = TransferCodec.buildRecordStudents(list, g)
                         )
-                        val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeRecord(record) }
+                        return RecordPart(record, list, recordLabels(c, owner, subject, name),
+                            g.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.value } })
+                }
+
+                suspend fun buildRecordPdf(c: ClassEntity, code: String, name: String, uptoTerm: Int? = null): Pair<ByteArray, String>? {
+                        val p = buildRecordPart(c, code, name, uptoTerm) ?: return null
+                        val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeRecord(p.record) }
                         // الصفحة الثانية من الملف: سجل المادة نفسه بأسماء الطلاب ونقاطهم، يُقرأ ويُطبع في الإدارة
-                        val labels = recordLabels(c, owner, subject, name)
-                        val byStudent = g.groupBy { it.studentId }.mapValues { e -> e.value.associate { it.slot to it.value } }
                         return withContext(Dispatchers.Default) {
-                            ShareHelper.wrapPdf(this@MainActivity, bytes, TransferCodec.recordFileName(record),
-                                extra = { doc, no -> TeacherRecordPdf.drawInto(doc, no, list, labels, byStudent) })
+                            ShareHelper.wrapPdf(this@MainActivity, bytes, TransferCodec.recordFileName(p.record),
+                                extra = { doc, no -> TeacherRecordPdf.drawInto(doc, no, p.students, p.labels, p.grades) })
                         }
                 }
 
@@ -583,16 +583,32 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                /** رفع نتائج فصل للإدارة: سجلات كل مواد الأستاذ في كل الأقسام المكتملة، دفعة واحدة. */
+                /**
+                 * رفع نتائج فصل للإدارة: سجلات كل مواد الأستاذ في كل أقسامه المكتملة في ملف واحد،
+                 * وفيه صفحة سجل كل قسم للقراءة والطباعة. الإدارة تفتحه فتُرفع نتائجه كلها.
+                 * إن كانت الأقسام من مؤسسات مختلفة يُصنع ملف لكل مؤسسة.
+                 */
                 fun uploadTermRecords(term: Int, pairs: List<Pair<ClassEntity, String>>, name: String) {
                     scope.launch {
+                        val parts = pairs.mapNotNull { (c, code) -> buildRecordPart(c, code, name, uptoTerm = term) }
+                        if (parts.isEmpty()) return@launch
                         val dir = ShareHelper.freshShareDir(this@MainActivity)
-                        val files = pairs.mapNotNull { (c, code) ->
-                            buildRecordPdf(c, code, name, uptoTerm = term)?.let { (bytes, fileName) ->
-                                java.io.File(dir, fileName).apply { writeBytes(bytes) }
+                        val files = parts.groupBy { it.record.institutionId }.values.map { group ->
+                            val ordered = group.sortedWith(compareBy({ it.record.levelCode }, { it.record.number },
+                                { com.elyedali.daftarustadh.report.ReportCalc.officialIndex(it.record.subjectCode) }))
+                            val first = ordered.first().record
+                            val bundle = com.elyedali.daftarustadh.transfer.RecordsBundle(first.teacherName, first.schoolName, first.schoolYear,
+                                term, ordered.map { it.record })
+                            val bytes = withContext(Dispatchers.Default) { TransferCodec.encodeRecords(bundle) }
+                            val (pdf, fileName) = withContext(Dispatchers.Default) {
+                                ShareHelper.wrapPdf(this@MainActivity, bytes, TransferCodec.recordsFileName(bundle), extra = { doc, no ->
+                                    var next = no
+                                    ordered.forEach { p -> next = TeacherRecordPdf.drawInto(doc, next, p.students, p.labels, p.grades) }
+                                    next
+                                })
                             }
+                            java.io.File(dir, fileName).apply { writeBytes(pdf) }
                         }
-                        if (files.isEmpty()) return@launch
                         ShareHelper.shareFiles(this@MainActivity, files, "application/pdf", getString(R.string.share_record),
                             getString(R.string.dsq_caption))
                     }
@@ -976,6 +992,8 @@ class MainActivity : AppCompatActivity() {
                 fun subjectOfLevel(c: ClassEntity, code: String): Boolean =
                     CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty().any { it.code == code }
 
+                // رفع السجلات دفعة واحدة (معرَّف أسفل): يستعمله فتح ملف سجلات الأستاذ كلها
+                var processRecordsBatchRef: ((List<Uri>) -> Unit)? = null
                 // فتح ملف قسم: من الواتساب أو من زر «فتح ملف قسم»
                 fun processFile(uri: Uri) {
                     scope.launch {
@@ -991,7 +1009,8 @@ class MainActivity : AppCompatActivity() {
                             val any = TransferCodec.decodeAny(data)
                             // كل ملف لتطبيقه: سجلات الأساتذة وغيابهم وملف القسم الكامل لتطبيق الإدارة،
                             // وحزمة الأستاذ وجدوله وملف القسم للأساتذة لتطبيق الأستاذ
-                            val forAdmin = any is RecordFile || any is com.elyedali.daftarustadh.transfer.AbsenceFile ||
+                            val forAdmin = any is RecordFile || any is com.elyedali.daftarustadh.transfer.RecordsBundle ||
+                                any is com.elyedali.daftarustadh.transfer.AbsenceFile ||
                                 any is com.elyedali.daftarustadh.transfer.AdminFullFile ||
                                 (any is ClassFile && any.type == ClassFileType.FULL)
                             val forTeacher = any is com.elyedali.daftarustadh.transfer.TeacherBundle || any is com.elyedali.daftarustadh.transfer.TimetableFile ||
@@ -999,6 +1018,8 @@ class MainActivity : AppCompatActivity() {
                             if (com.elyedali.daftarustadh.AppRole.isAdmin && forTeacher) throw WrongAppException(com.elyedali.daftarustadh.AppRole.TEACHER_APP_NAME)
                             if (!com.elyedali.daftarustadh.AppRole.isAdmin && forAdmin) throw WrongAppException(com.elyedali.daftarustadh.AppRole.ADMIN_APP_NAME)
                             when (any) {
+                                // ملف سجلات الأستاذ كلها: يُرفع مثل رفع الملفات دفعة واحدة (فحص كل سجل ثم ملخص)
+                                is com.elyedali.daftarustadh.transfer.RecordsBundle -> { processRecordsBatchRef?.invoke(listOf(uri)); null }
                                 is RecordFile -> when (val chk = recordImporter.check(any)) {
                                     is RecordCheck.Ready -> if (AppRole.isAdmin && chk.schoolClass.id in expiredClasses)
                                         FileResult.Message(getString(R.string.act_expired_grades))
@@ -1095,26 +1116,34 @@ class MainActivity : AppCompatActivity() {
                                 if (!seenBytes.add(bytes.contentHashCode())) { duplicates++; continue }
                                 val data = if (com.elyedali.daftarustadh.transfer.DsqPdf.isPdf(bytes))
                                     com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException() else bytes
-                                when (val any = TransferCodec.decodeAny(data)) {
-                                    is RecordFile -> when (val chk = recordImporter.check(any)) {
+                                val decoded = TransferCodec.decodeAny(data)
+                                // ملف سجلات الأستاذ كلها: كل سجل داخله يُفحص كأنه ملف مستقل
+                                val recs: List<RecordFile>? = when (decoded) {
+                                    is com.elyedali.daftarustadh.transfer.RecordsBundle -> decoded.records
+                                    is RecordFile -> listOf(decoded)
+                                    else -> null
+                                }
+                                if (recs == null) rejected += "$name — " + getString(R.string.bu_not_record)
+                                else for (any in recs) {
+                                    val label = if (recs.size > 1) "$name (${any.className} — ${if (isFrUi) any.subjectNameFr else any.subjectNameAr})" else name
+                                    when (val chk = recordImporter.check(any)) {
                                         is RecordCheck.Ready -> when {
                                             chk.schoolClass.id in expiredClasses ->
-                                                rejected += "$name — " + getString(R.string.act_expired_grades)
+                                                rejected += "$label — " + getString(R.string.act_expired_grades)
                                             !subjectOfLevel(chk.schoolClass, any.subjectCode) ->
-                                                rejected += "$name — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
+                                                rejected += "$label — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
                                             // سجل أقدم من الذي رُفع لهذه المادة: يُتجاوز حتى لا تعود نقاط قديمة
                                             chk.older -> { older++; }
                                             // ليس الأستاذ المسند لهذه المادة في الجدول الزمني: لا يُرفع دفعة واحدة (يُرفع وحده بعد التأكد)
                                             ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }?.teacherName
                                                 ?.takeIf { it.isNotBlank() && !sameTeacher(it, any.teacherName) } != null ->
-                                                rejected += "$name — " + getString(R.string.bu_other_teacher, any.teacherName,
+                                                rejected += "$label — " + getString(R.string.bu_other_teacher, any.teacherName,
                                                     ttAssignments.first { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }.teacherName)
                                             else -> ready += chk
                                         }
-                                        is RecordCheck.WrongClass -> rejected += "$name — " + getString(R.string.bu_wrong_class, any.className)
-                                        is RecordCheck.NotManaged -> rejected += "$name — " + getString(R.string.record_not_managed, any.className)
+                                        is RecordCheck.WrongClass -> rejected += "$label — " + getString(R.string.bu_wrong_class, any.className)
+                                        is RecordCheck.NotManaged -> rejected += "$label — " + getString(R.string.record_not_managed, any.className)
                                     }
-                                    else -> rejected += "$name — " + getString(R.string.bu_not_record)
                                 }
                             } catch (e: Exception) {
                                 rejected += "$name — " + getString(R.string.bu_not_record)
@@ -1162,6 +1191,7 @@ class MainActivity : AppCompatActivity() {
                         batchResult = BatchResult(imported, duplicates, rejected, warnings, term, missing)
                     }
                 }
+                processRecordsBatchRef = { processRecordsBatch(it) }
                 val batchPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenMultipleDocuments()) { uris -> processRecordsBatch(uris) }
                 val openBatch = { batchPicker.launch(arrayOf("*/*")) }
                 // ملفات كثيرة وصلت معًا بـ«مشاركة» من واتساب: الإدارة ترفعها دفعة واحدة، والأستاذ يفتحها واحدًا واحدًا
@@ -2801,3 +2831,7 @@ class MainActivity : AppCompatActivity() {
         const val EXCHANGE_OWNER_KEY = "exchange_owner_id"
     }
 }
+
+/** سجل مادة في قسم كما رصده الأستاذ، مع ما يلزم لرسم صفحته في ملف السجلات. */
+private class RecordPart(val record: RecordFile, val students: List<com.elyedali.daftarustadh.data.StudentEntity>,
+                         val labels: TeacherRecordPdf.Labels, val grades: Map<String, Map<String, Double>>)

@@ -41,6 +41,9 @@ object ReportCalc {
     /** ترتيب المواد كما في كشف الدرجات الرسمي. */
     private val OFFICIAL_ORDER = listOf("IR", "AR", "HG", "PH", "IC", "FR", "ANG", "MATS", "SN", "PC", "TI", "LEG", "EPS")
 
+    /** رتبة المادة في الترتيب الرسمي (99 لغير المعروفة). */
+    fun officialIndex(code: String): Int = OFFICIAL_ORDER.indexOf(code).let { if (it < 0) 99 else it }
+
     fun orderSubjects(subjects: List<CurriculumSubject>): List<CurriculumSubject> =
         subjects.sortedBy { OFFICIAL_ORDER.indexOf(it.code).let { i -> if (i < 0) 99 else i } }
 

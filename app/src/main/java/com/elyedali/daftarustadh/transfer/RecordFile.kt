@@ -40,6 +40,15 @@ data class RecordFile(
     val className: String get() = "$levelCode$number"
 }
 
+/** سجلات أستاذ لكل أقسامه وموادّه في ملف واحد (رفع نتائج فصل). */
+data class RecordsBundle(
+    val teacherName: String,
+    val schoolName: String,
+    val schoolYear: String,
+    val term: Int,
+    val records: List<RecordFile>
+)
+
 /** يقرأ أي ملف ‎.dsq: ملف قسم، أو سجل نتائج أستاذ، أو سجل غياب أستاذ. */
 object TransferCodec {
     private const val FORMAT = "daftar-ustadh-ds"
@@ -47,6 +56,7 @@ object TransferCodec {
     const val TYPE_ABSENCE = "teacher_absence"
     const val TYPE_TIMETABLE = "teacher_timetable"
     const val TYPE_BUNDLE = "teacher_bundle"
+    const val TYPE_RECORDS = "teacher_records"
     const val FORMAT_NAME = FORMAT
 
     private fun gzip(json: JSONObject): ByteArray {
@@ -65,6 +75,7 @@ object TransferCodec {
         if (json.optString("format") != FORMAT) throw InvalidClassFileException()
         return when (json.optString("type")) {
             TYPE_RECORD -> decodeRecord(json)
+            TYPE_RECORDS -> decodeRecords(json)
             TYPE_ABSENCE -> AbsenceFile.fromJson(json)
             TYPE_TIMETABLE -> TimetableFile.fromJson(json)
             TYPE_BUNDLE -> TeacherBundle.fromJson(json)
@@ -79,10 +90,25 @@ object TransferCodec {
 
     fun encodeBundle(b: TeacherBundle): ByteArray = gzip(b.toJson(FORMAT, TYPE_BUNDLE))
 
-    fun encodeRecord(r: RecordFile): ByteArray = gzip(
+    fun encodeRecord(r: RecordFile): ByteArray = gzip(recordJson(r, System.currentTimeMillis()))
+
+    /**
+     * كل سجلات الأستاذ (كل أقسامه وموادّه) في ملف واحد: يرسله مرة واحدة، وتُرفع نتائجه كلها عند الإدارة دفعة واحدة.
+     * كل سجل داخله يحمل وقت إرسال الملف نفسه.
+     */
+    fun encodeRecords(b: RecordsBundle): ByteArray {
+        val now = System.currentTimeMillis()
+        return gzip(JSONObject()
+            .put("format", FORMAT).put("version", 1).put("type", TYPE_RECORDS)
+            .put("exportedAt", now)
+            .put("teacherName", b.teacherName).put("schoolName", b.schoolName).put("schoolYear", b.schoolYear).put("term", b.term)
+            .put("records", JSONArray().apply { b.records.forEach { put(recordJson(it, now)) } }))
+    }
+
+    private fun recordJson(r: RecordFile, exportedAt: Long): JSONObject =
         JSONObject()
             .put("format", FORMAT).put("version", 1).put("type", TYPE_RECORD)
-            .put("exportedAt", System.currentTimeMillis())
+            .put("exportedAt", exportedAt)
             .put("institution", JSONObject()
                 .put("id", r.institutionId).put("wilaya", r.wilaya).put("schoolName", r.schoolName)
                 .put("schoolListId", r.schoolListId ?: JSONObject.NULL))
@@ -102,7 +128,14 @@ object TransferCodec {
                     put(JSONObject().put("id", s.id).put("roll", s.roll).put("name", s.name).put("grades", g).put("marks", mk))
                 }
             })
-    )
+
+    private fun decodeRecords(json: JSONObject): RecordsBundle {
+        val arr = try { json.getJSONArray("records") } catch (e: Exception) { throw InvalidClassFileException() }
+        val records = (0 until arr.length()).map { decodeRecord(arr.getJSONObject(it)) }
+        if (records.isEmpty()) throw InvalidClassFileException()
+        return RecordsBundle(json.optString("teacherName"), json.optString("schoolName"), json.optString("schoolYear"),
+            json.optInt("term", 1), records)
+    }
 
     private fun decodeRecord(json: JSONObject): RecordFile {
         try {
@@ -151,6 +184,14 @@ object TransferCodec {
             RecordStudent(s.id, s.rollNumber, s.nameAr.ifBlank { s.nameFr }, mine.associate { it.slot to it.value },
                 mine.mapNotNull { g -> g.mark?.let { g.slot to it } }.toMap())
         }
+    }
+
+    /** اسم ملف سجلات الأستاذ كلها. */
+    fun recordsFileName(b: RecordsBundle): String {
+        val termAr = when (b.term) { 1 -> "الفصل الأول"; 2 -> "الفصل الثاني"; else -> "الفصل الثالث" }
+        val raw = "سجلات نتائج الأستاذ ${b.teacherName} - $termAr - ${b.schoolName} - " +
+            "Relevés de notes T${b.term} - ${b.schoolYear}"
+        return raw.replace(Regex("""[\\/:*?"<>|\r\n\t]"""), " ").replace(Regex("\\s+"), " ").trim().take(150) + ".dsq"
     }
 
     /** اسم كامل بالعربية والفرنسية حتى يعرف المتلقي محتواه من الواتساب. */
