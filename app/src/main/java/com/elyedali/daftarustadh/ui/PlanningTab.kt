@@ -49,8 +49,8 @@ private const val NO_PLAN = "EPS"
 fun PlanningTab(
     levelCode: String,
     mySubjects: List<Pair<String, String>>,
-    /** غير مفعّل: الفصل الأول مجاني، والفصلان الثاني والثالث مقفلان. */
-    locked: Boolean = false,
+    /** المادة غير مفعّلة في هذا المستوى: الفصل الأول مجاني، والفصلان الثاني والثالث مقفلان. */
+    lockedFor: (String) -> Boolean = { false },
     onActivate: () -> Unit = {}
 ) {
     val context = LocalContext.current
@@ -76,6 +76,7 @@ fun PlanningTab(
     val onlyNoPlan = available.isEmpty() && mySubjects.isNotEmpty() && mySubjects.all { it.first == NO_PLAN }
     var chosen by rememberSaveable { mutableStateOf(available.firstOrNull()?.first) }
     val subject = chosen?.takeIf { c -> available.any { it.first == c } } ?: available.firstOrNull()?.first
+    val locked = subject != null && lockedFor(subject)
     val rows = remember(subject, levelCode) { subject?.let { AnnualPlans.rows(context, it, levelCode) }.orEmpty() }
     val termNames = listOf("", stringResource(R.string.term_1), stringResource(R.string.term_2), stringResource(R.string.term_3))
     val holiday = stringResource(R.string.plan_holiday)
@@ -154,7 +155,9 @@ fun PlanningTab(
         if (available.size > 1) item {
             LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 items(available, key = { it.first }) { (code, label) ->
-                    FilterChip(selected = code == subject, onClick = { chosen = code }, label = { Text(label) })
+                    // ⭐ مادة مفعّلة في هذا المستوى، 🔒 الفصلان الثاني والثالث مقفلان
+                    FilterChip(selected = code == subject, onClick = { chosen = code },
+                        label = { Text((if (lockedFor(code)) "🔒 " else "⭐ ") + label) })
                 }
             }
         }

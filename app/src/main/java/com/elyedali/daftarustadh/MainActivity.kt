@@ -47,6 +47,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.clickable
 import com.elyedali.daftarustadh.data.TestsMode
 import com.elyedali.daftarustadh.data.SchoolDirectory
 import com.elyedali.daftarustadh.pdf.TeacherRecordPdf
@@ -369,6 +370,14 @@ class MainActivity : AppCompatActivity() {
                 // تفعيل الأستاذ (190 أوقية للسنة): التخطيط والتحاضير للفصلين 2 و3؛ رصد النتائج مجاني دائمًا
                 val teacherActText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TeacherActivation.KEY) }.collectAsState(initial = null)
                 val teacherActivated = remember(teacherActText) { com.elyedali.daftarustadh.data.TeacherActivation.decode(teacherActText) }
+                // تفعيلات الأستاذ السارية: 3 مواد في 4 مستويات لكل تفعيل، لكل سنة دراسية
+                val teacherPacksText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TeacherActivation.PACKS_KEY) }.collectAsState(initial = null)
+                val teacherPacks = remember(teacherPacksText, teacherActivated) {
+                    com.elyedali.daftarustadh.data.TeacherActivation.decodePacks(teacherPacksText).ifEmpty {
+                        // نسخة سابقة لم تحفظ التفاصيل بعد: السنوات المفعّلة كلها مفتوحة حتى أول تحديث من الخادم
+                        teacherActivated.map { com.elyedali.daftarustadh.data.TeacherActivation.Pack(it, emptySet(), emptySet()) }
+                    }
+                }
                 val teacherReqText by remember { metaDao.observe(com.elyedali.daftarustadh.data.TeacherActivation.REQUESTED_KEY) }.collectAsState(initial = null)
                 val teacherRequested = remember(teacherReqText) { com.elyedali.daftarustadh.data.TeacherActivation.decode(teacherReqText) }
                 var teacherActivateYear by remember { mutableStateOf<String?>(null) }
@@ -2050,7 +2059,7 @@ class MainActivity : AppCompatActivity() {
                                 )
                                 3 -> com.elyedali.daftarustadh.ui.PlanningTab(
                                     levelCode = c.levelCode,
-                                    locked = c.schoolYear !in teacherActivated,
+                                    lockedFor = { code -> !com.elyedali.daftarustadh.data.TeacherActivation.unlocked(teacherPacks, c.schoolYear, c.levelCode, code) },
                                     onActivate = { teacherActivateYear = c.schoolYear },
                                     // كل مواد المستوى تظهر في التخطيط، حتى لأستاذ المادة الواحدة
                                     mySubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
@@ -2334,6 +2343,14 @@ class MainActivity : AppCompatActivity() {
                         schoolNames = schoolNames,
                         ownInstitutionId = inst?.id,
                         activated = activatedClasses,
+                        // الأستاذ: القسم مفعّل إذا شمل تفعيلُ سنته مستواه وإحدى موادّه فيه (وصل من الإدارة أو أنشأه بنفسه)
+                        teacherActive = { c ->
+                            val set = com.elyedali.daftarustadh.data.TeacherActivation.subjectsFor(teacherPacks, c.schoolYear, c.levelCode)
+                            // موادّه في القسم (من الإدارة أو التي اختارها)؛ قسم حر بلا مواد محددة: مواد مستواه
+                            val codes = allMySubjects.filter { it.classId == c.id }.map { it.subjectCode }.ifEmpty {
+                                CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty().map { it.code } }
+                            set == null || codes.any { it in set }
+                        },
                         genderCounts = homeGenderCounts,
                         onSelectYear = {
                             selectedYear = it
@@ -2396,13 +2413,64 @@ class MainActivity : AppCompatActivity() {
 
                 // طلب تفعيل الأستاذ عبر واتساب الإدارة
                 teacherActivateYear?.let { year ->
+                    val TA = com.elyedali.daftarustadh.data.TeacherActivation
+                    // أقسام الأستاذ في هذه السنة: ما وصل من الإدارة وما أنشأه بنفسه
+                    val yearMine = allClasses.filter { it.schoolYear == year && (it.teaching || it.institutionId in selfSchoolIds) }
+                    val levelsAll = CurriculumRepository.levels(this@MainActivity, year)
+                    val myLevels = yearMine.map { it.levelCode }.distinct()
+                    val mySubs by remember { gradeDao.observeAllTeacherSubjects() }.collectAsState(initial = emptyList())
+                    val myCodes = mySubs.filter { t -> yearMine.any { it.id == t.classId } }.map { it.subjectCode }.distinct()
+                    val levelOpts = levelsAll.map { it.code }.sortedBy { if (it in myLevels) 0 else 1 }
+                    val subjectOpts = levelsAll.flatMap { it.subjects }.distinctBy { it.code }
+                        .let { com.elyedali.daftarustadh.report.ReportCalc.orderSubjects(it) }
+                        .filter { it.code != "EPS" }   // التربية البدنية ليس لها تخطيط
+                        .sortedBy { if (it.code in myCodes) 0 else 1 }
+                    var pickSubjects by remember(year) { mutableStateOf(myCodes.filter { c -> subjectOpts.any { it.code == c } }.take(TA.MAX_SUBJECTS).toSet()) }
+                    var pickLevels by remember(year) { mutableStateOf(myLevels.take(TA.MAX_LEVELS).toSet()) }
+                    // مواد الأستاذ تصل بعد فتح النافذة: تُختار تلقائيًا إن لم يختر شيئًا بعد
+                    LaunchedEffect(year, myCodes) {
+                        if (pickSubjects.isEmpty()) pickSubjects = myCodes.filter { c -> subjectOpts.any { it.code == c } }.take(TA.MAX_SUBJECTS).toSet()
+                        if (pickLevels.isEmpty()) pickLevels = myLevels.take(TA.MAX_LEVELS).toSet()
+                    }
+                    val current = teacherPacks.filter { it.year == year }
                     AlertDialog(
                         onDismissRequest = { teacherActivateYear = null },
                         title = { Text("⭐ " + stringResource(R.string.tact_title)) },
                         text = {
-                            androidx.compose.foundation.layout.Column(verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)) {
-                                Text(stringResource(R.string.tact_explain, com.elyedali.daftarustadh.data.TeacherActivation.PRICE, year))
+                            androidx.compose.foundation.layout.Column(
+                                Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState()),
+                                verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)) {
+                                Text(stringResource(R.string.tact_explain, TA.PRICE, year))
                                 Text("• " + stringResource(R.string.tact_item_planning))
+                                Text(stringResource(R.string.tact_scope_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
+                                current.forEach { p ->
+                                    Text("✅ " + stringResource(R.string.tact_current,
+                                        if (p.all) stringResource(R.string.tact_all) else p.subjects.joinToString(com.elyedali.daftarustadh.ui.listSep()) { subjectName(it) } +
+                                            " — " + p.levels.sorted().joinToString(com.elyedali.daftarustadh.ui.listSep())),
+                                        color = androidx.compose.ui.graphics.Color(0xFF2E7D32), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                                }
+                                Text(stringResource(R.string.tact_pick_subjects, TA.MAX_SUBJECTS, pickSubjects.size), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                                subjectOpts.forEach { sub ->
+                                    val on = sub.code in pickSubjects
+                                    androidx.compose.foundation.layout.Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()
+                                        .clickable(enabled = on || pickSubjects.size < TA.MAX_SUBJECTS) {
+                                            pickSubjects = if (on) pickSubjects - sub.code else pickSubjects + sub.code }) {
+                                        androidx.compose.material3.Checkbox(checked = on, onCheckedChange = null,
+                                            enabled = on || pickSubjects.size < TA.MAX_SUBJECTS)
+                                        Text(if (isFrUi) sub.nameFr else sub.nameAr)
+                                    }
+                                }
+                                Text(stringResource(R.string.tact_pick_levels, TA.MAX_LEVELS, pickLevels.size), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                                levelOpts.forEach { lv ->
+                                    val on = lv in pickLevels
+                                    androidx.compose.foundation.layout.Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()
+                                        .clickable(enabled = on || pickLevels.size < TA.MAX_LEVELS) {
+                                            pickLevels = if (on) pickLevels - lv else pickLevels + lv }) {
+                                        androidx.compose.material3.Checkbox(checked = on, onCheckedChange = null,
+                                            enabled = on || pickLevels.size < TA.MAX_LEVELS)
+                                        Text(lv + (if (lv in myLevels) " ★" else ""))
+                                    }
+                                }
                                 Text(stringResource(R.string.tact_free_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall,
                                     color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant)
                                 if (year in teacherRequested) Text("⏳ " + stringResource(R.string.act_status_requested),
@@ -2411,28 +2479,31 @@ class MainActivity : AppCompatActivity() {
                             }
                         },
                         confirmButton = {
-                            TextButton(onClick = {
+                            TextButton(enabled = pickSubjects.isNotEmpty() && pickLevels.isNotEmpty(), onClick = {
                                 teacherActivateYear = null
+                                val subjects = subjectOpts.map { it.code }.filter { it in pickSubjects }
+                                val levels = levelOpts.filter { it in pickLevels }.sorted()
                                 scope.launch {
-                                    val code = metaDao.get(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY) ?: com.elyedali.daftarustadh.data.TeacherActivation.newCode().also { metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.TeacherActivation.CODE_KEY, it)) }
+                                    val code = metaDao.get(TA.CODE_KEY) ?: TA.newCode().also { metaDao.put(AppMetaEntity(TA.CODE_KEY, it)) }
                                     val tName = (teacherProfile?.name ?: teacherName).orEmpty()
                                     val reqCode = kotlinx.coroutines.withTimeoutOrNull(20_000) {
                                         com.elyedali.daftarustadh.auth.DsSubscriptions.request(
                                             com.elyedali.daftarustadh.auth.DsSubscriptions.APP_TEACHER, null, year,
-                                            emptyList(), emptyList(), com.elyedali.daftarustadh.data.TeacherActivation.PRICE, tName)
+                                            emptyList(), emptyList(), TA.PRICE, tName, subjects, levels)
                                     }
                                     if (reqCode == null) {
                                         android.widget.Toast.makeText(this@MainActivity, getString(R.string.act_need_internet), android.widget.Toast.LENGTH_LONG).show()
                                         return@launch
                                     }
-                                    val msg = getString(R.string.tact_msg, tName, year, code, com.elyedali.daftarustadh.data.TeacherActivation.PRICE) +
+                                    val msg = getString(R.string.tact_msg, tName, year, code, TA.PRICE) +
+                                        "\n" + getString(R.string.tact_msg_pack, subjects.joinToString(" ، ") { subjectName(it) }, levels.joinToString(" ، ")) +
                                         "\n" + getString(R.string.act_msg_account, signedIn?.email.orEmpty()) +
                                         "\n" + getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(reqCode)) +
                                         "\n" + getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode))
                                     val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                                     try {
                                         startActivity(Intent(Intent.ACTION_VIEW, uri))
-                                        metaDao.put(AppMetaEntity(com.elyedali.daftarustadh.data.TeacherActivation.REQUESTED_KEY, com.elyedali.daftarustadh.data.TeacherActivation.encode(teacherRequested + year)))
+                                        metaDao.put(AppMetaEntity(TA.REQUESTED_KEY, TA.encode(teacherRequested + year)))
                                     } catch (e: Exception) {
                                         android.widget.Toast.makeText(this@MainActivity, getString(R.string.ex_no_whatsapp), android.widget.Toast.LENGTH_SHORT).show()
                                     }

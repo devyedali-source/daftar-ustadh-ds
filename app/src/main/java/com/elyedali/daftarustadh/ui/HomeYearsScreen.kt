@@ -107,6 +107,8 @@ fun HomeYearsScreen(
     schoolNames: Map<String, String>,
     ownInstitutionId: String?,
     activated: Set<String>,
+    /** الأستاذ: القسم مشمول بتفعيل التخطيط (مواده ومستواه) لسنته. */
+    teacherActive: (ClassEntity) -> Boolean = { false },
     genderCounts: List<ClassGenderCount>,
     onSelectYear: (String?) -> Unit,
     onOpenClass: (ClassEntity) -> Unit,
@@ -322,8 +324,8 @@ fun HomeYearsScreen(
                                     Column(Modifier.weight(1f).padding(horizontal = 12.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
                                         Text(c.name, fontWeight = FontWeight.Black, fontSize = 17.sp)
                                         Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                                            if (mode == MODE_ADMIN) {
-                                                val on = c.id in activated
+                                            if (mode == MODE_ADMIN || mode == MODE_TEACHER) {
+                                                val on = if (mode == MODE_ADMIN) c.id in activated else teacherActive(c)
                                                 Badge(
                                                     stringResource(if (on) R.string.act_status_active else R.string.act_status_inactive),
                                                     if (on) Color(0xFFE8F5E9) else Color(0xFFFFF3E0),

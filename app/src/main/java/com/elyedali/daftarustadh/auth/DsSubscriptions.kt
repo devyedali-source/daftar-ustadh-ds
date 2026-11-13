@@ -47,6 +47,7 @@ object DsSubscriptions {
                     .put("inst", d.getString("institutionKey") ?: "")
                     .put("year", d.getString("schoolYear") ?: "")
                     .put("classIds", JSONArray((d.get("classIds") as? List<*>)?.map { it.toString() } ?: emptyList<String>()))
+                    .put("packs", JSONArray((d.get("packs") as? List<*>)?.map { it.toString() } ?: emptyList<String>()))
                     .put("expiresAt", d.getLong("expiresAt") ?: 0L))
             }
             putIfChanged(db, CACHE_KEY, arr.toString())
@@ -69,12 +70,20 @@ object DsSubscriptions {
         val now = TrustedClock.now()
         val arr = try { JSONArray(text) } catch (e: Exception) { return }
         val classes = HashSet<String>(); val expired = HashSet<String>(); val years = HashSet<String>()
+        val packs = ArrayList<TeacherActivation.Pack>()
         for (i in 0 until arr.length()) {
             val o = arr.getJSONObject(i)
             val valid = o.optLong("expiresAt") > now
             when (o.optString("app")) {
                 APP_ADMIN -> o.optJSONArray("classIds")?.let { a -> for (k in 0 until a.length()) (if (valid) classes else expired) += a.getString(k) }
-                APP_TEACHER -> if (valid) years += o.optString("year")
+                APP_TEACHER -> if (valid) {
+                    val year = o.optString("year")
+                    years += year
+                    // كل تفعيل: 3 مواد في 4 مستويات؛ اشتراك بلا تفاصيل (قديم) يفتح كل المواد والمستويات
+                    val p = o.optJSONArray("packs")
+                    if (p == null || p.length() == 0) packs += TeacherActivation.Pack(year, emptySet(), emptySet())
+                    else for (k in 0 until p.length()) packs += TeacherActivation.parsePack(year, p.getString(k))
+                }
             }
         }
         if (com.elyedali.daftarustadh.AppRole.isAdmin) {
@@ -82,7 +91,10 @@ object DsSubscriptions {
             putIfChanged(db, ClassActivation.EXPIRED_KEY, ClassActivation.encode(expired - classes))
             putIfChanged(db, ClassActivation.KEY, ClassActivation.encode(classes + expired))
         }
-        else putIfChanged(db, TeacherActivation.KEY, TeacherActivation.encode(years))
+        else {
+            putIfChanged(db, TeacherActivation.PACKS_KEY, TeacherActivation.encodePacks(packs))
+            putIfChanged(db, TeacherActivation.KEY, TeacherActivation.encode(years))
+        }
     }
 
     /** لا يكتب إلا إذا تغيّرت القيمة (حتى لا تُحسب تغييرًا يحتاج مزامنة). */
@@ -104,7 +116,8 @@ object DsSubscriptions {
     /** ينشئ طلب تفعيل على الخادم ويعيد معرّفه (رمزه القصير = أول 6 أحرف)، أو null بلا إنترنت. */
     suspend fun request(
         app: String, inst: InstitutionEntity?, schoolYear: String,
-        classIds: List<String>, classNames: List<String>, amount: Int, teacherName: String = ""
+        classIds: List<String>, classNames: List<String>, amount: Int, teacherName: String = "",
+        subjects: List<String> = emptyList(), levels: List<String> = emptyList()
     ): String? {
         val u = DsAuth.user ?: return null
         return try {
@@ -116,6 +129,8 @@ object DsSubscriptions {
                 "institutionName" to (inst?.schoolName ?: ""), "wilaya" to (inst?.wilaya ?: ""),
                 "schoolYear" to schoolYear, "classIds" to classIds, "classNames" to classNames,
                 "amount" to amount, "code" to ref.id.take(6).uppercase(),
+                // تفعيل الأستاذ: المواد الثلاث والمستويات الأربع التي اختارها
+                "subjects" to subjects, "levels" to levels,
                 "createdAt" to FieldValue.serverTimestamp()
             )).await()
             ref.id

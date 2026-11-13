@@ -15,7 +15,8 @@ object OwnerAdmin {
         val id: String, val code: String, val uid: String, val email: String, val name: String,
         val app: String, val institutionKey: String, val institutionName: String, val wilaya: String,
         val schoolYear: String, val classIds: List<String>, val classNames: List<String>,
-        val amount: Int, val status: String, val createdAt: Long
+        val amount: Int, val status: String, val createdAt: Long,
+        val subjects: List<String> = emptyList(), val levels: List<String> = emptyList()
     )
 
     data class YearStat(val year: String, val admin: Int, val teacher: Int, val classes: Int, val amount: Int)
@@ -58,7 +59,8 @@ object OwnerAdmin {
                 d.getString("name").orEmpty(), d.getString("app").orEmpty(), d.getString("institutionKey").orEmpty(),
                 d.getString("institutionName").orEmpty(), d.getString("wilaya").orEmpty(), d.getString("schoolYear").orEmpty(),
                 (d.get("classIds") as? List<*>)?.map { it.toString() }.orEmpty(), (d.get("classNames") as? List<*>)?.map { it.toString() }.orEmpty(),
-                (d.getLong("amount") ?: 0L).toInt(), d.getString("status").orEmpty(), d.getTimestamp("createdAt")?.toDate()?.time ?: 0L)
+                (d.getLong("amount") ?: 0L).toInt(), d.getString("status").orEmpty(), d.getTimestamp("createdAt")?.toDate()?.time ?: 0L,
+                (d.get("subjects") as? List<*>)?.map { it.toString() }.orEmpty(), (d.get("levels") as? List<*>)?.map { it.toString() }.orEmpty())
         }.sortedByDescending { it.createdAt }
 
     suspend fun request(id: String): Request? = try {
@@ -82,6 +84,9 @@ object OwnerAdmin {
             "approvedAt" to FieldValue.serverTimestamp(), "lastRequest" to r.id
         )
         if (r.classIds.isNotEmpty()) data["classIds"] = FieldValue.arrayUnion(*r.classIds.toTypedArray())
+        // تفعيل الأستاذ: يُضاف (3 مواد في 4 مستويات) إلى تفعيلاته لهذه السنة
+        if (r.subjects.isNotEmpty() || r.levels.isNotEmpty())
+            data["packs"] = FieldValue.arrayUnion(com.elyedali.daftarustadh.data.TeacherActivation.packString(r.subjects, r.levels))
         batch.set(sub, data, SetOptions.merge())
         batch.update(fs.collection("ds_activation_requests").document(r.id),
             mapOf("status" to "approved", "decidedAt" to FieldValue.serverTimestamp()))

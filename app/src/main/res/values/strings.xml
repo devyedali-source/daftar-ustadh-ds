@@ -426,12 +426,12 @@
     <string name="act_status_active">مفعّل</string>
     <string name="act_status_requested">بانتظار التفعيل</string>
     <string name="tact_title">تفعيل الأستاذ</string>
-    <string name="tact_explain">تفعيل واحد بـ %1$d أوقية جديدة للسنة الدراسية %2$s يفتح:</string>
+    <string name="tact_explain">تفعيل واحد بـ %1$d أوقية جديدة للسنة الدراسية %2$s، لـ 3 مواد في 4 مستويات تختارها، يفتح:</string>
     <string name="tact_item_planning">تصفح التخطيط السنوي والتحاضير ومحتوى الكتب للفصلين الثاني والثالث (الفصل الأول مجاني).</string>
     <string name="tact_free_note">رصد النتائج وسحب السجلات وإرسالها مجاني دائمًا، سواء كنت تعمل مع إدارتك أو مستقلًا.</string>
     <string name="tact_msg">أريد تفعيل تطبيق دفتر الأستاذ DS.\nالأستاذ: %1$s\nالسنة الدراسية: %2$s\nكود الجهاز: %3$s\nالمبلغ: %4$d أوقية جديدة</string>
     <string name="tact_planning_locked">الفصلان الثاني والثالث يحتاجان التفعيل</string>
-    <string name="tact_planning_locked_hint">الفصل الأول مجاني. التفعيل (%1$d أوقية للسنة) يفتح التخطيط السنوي والتحاضير للفصلين الثاني والثالث.</string>
+    <string name="tact_planning_locked_hint">الفصل الأول مجاني. التفعيل (%1$d أوقية للسنة، لـ 3 مواد في 4 مستويات) يفتح التخطيط السنوي والتحاضير للفصلين الثاني والثالث.</string>
     <string name="act_status_inactive">غير مفعّل</string>
     <string name="act_total">الأقسام المختارة: %1$d — المبلغ: %2$d أوقية جديدة</string>
     <string name="act_send">إرسال طلب التفعيل عبر واتساب الإدارة</string>
@@ -925,4 +925,12 @@
     <string name="about_no_app">لا يوجد تطبيق على الهاتف لفتح هذا الرابط.</string>
     <string name="plan_level_in_progress">جارٍ العمل على برنامج هذا المستوى</string>
     <string name="record_single_refused">هذا سجل مادة واحدة من نسخة قديمة لتطبيق الأستاذ، ولا يُرفع. اطلب من الأستاذ تحديث تطبيقه وإرسال ملفه الكامل من زر «رفع نتائج الفصل».</string>
+    <string name="tact_scope_note">يسري التفعيل على كل أقسامك من المستويات المختارة، ما وصلك من الإدارة وما أنشأته بنفسك، لحسابك ولهذه السنة الدراسية.</string>
+    <string name="tact_current">مفعّل: %1$s</string>
+    <string name="tact_all">كل المواد والمستويات</string>
+    <string name="tact_pick_subjects">المواد (حتى %1$d) — اخترت %2$d:</string>
+    <string name="tact_pick_levels">المستويات (حتى %1$d) — اخترت %2$d:</string>
+    <string name="tact_msg_pack">المواد: %1$s\nالمستويات: %2$s</string>
+    <string name="op_subjects">المواد</string>
+    <string name="op_levels">المستويات</string>
 </resources>
