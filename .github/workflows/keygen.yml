@@ -1,0 +1,37 @@
+name: Generate upload key
+
+# مرة واحدة فقط: ينشئ مفتاح الرفع إلى المتجر (كما في دفتر المعلم).
+# يحتاج سرّين في GitHub قبل التشغيل: KEYSTORE_PASSWORD و KEY_PASSWORD
+on:
+  workflow_dispatch:
+
+jobs:
+  keygen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Create keystore
+        run: |
+          keytool -genkeypair -v -storetype JKS \
+            -keystore my-upload-key.jks -alias upload \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass "${{ secrets.KEYSTORE_PASSWORD }}" \
+            -keypass "${{ secrets.KEY_PASSWORD }}" \
+            -dname "CN=Daftar Ustadh DS, OU=Dev, O=Elyedali, L=Nouakchott, C=MR"
+      - name: Export certificate (PEM)
+        run: keytool -export -rfc -keystore my-upload-key.jks -alias upload -storepass "${{ secrets.KEYSTORE_PASSWORD }}" -file upload_certificate.pem
+      - name: Print fingerprints
+        run: keytool -list -v -keystore my-upload-key.jks -alias upload -storepass "${{ secrets.KEYSTORE_PASSWORD }}" | grep -E "SHA1|SHA256"
+      - name: Make base64 copy
+        run: base64 -w 0 my-upload-key.jks > keystore_base64.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: upload-key
+          path: |
+            my-upload-key.jks
+            upload_certificate.pem
+            keystore_base64.txt
+          retention-days: 30

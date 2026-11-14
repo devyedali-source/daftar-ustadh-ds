@@ -1,0 +1,43 @@
+name: Build store bundles (AAB)
+
+# نسخة المتجر: ملفا AAB موقّعان بمفتاح الرفع، واحد لكل تطبيق
+on:
+  workflow_dispatch:
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Restore upload key
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > my-upload-key.jks && test -s my-upload-key.jks
+      # كل تطبيق في أمر مستقل: حزمة صور الكتب تُضاف لتطبيق الأستاذ فقط
+      - name: Bundle admin (إدارة DS)
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks
+          STORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: gradle bundleAdminRelease --no-daemon
+      - name: Bundle teacher (دفتر الأستاذ DS)
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks
+          STORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: gradle bundleTeacherRelease --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: متجر-الإدارة-AAB
+          path: app/build/outputs/bundle/adminRelease/*.aab
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: متجر-الأستاذ-AAB
+          path: app/build/outputs/bundle/teacherRelease/*.aab
+          retention-days: 30

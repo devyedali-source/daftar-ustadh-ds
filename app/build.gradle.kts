@@ -53,6 +53,17 @@ android {
             keyAlias = "androiddebugkey"
             keyPassword = "android"
         }
+        // مفتاح الرفع إلى المتجر (كما في دفتر المعلم): يأتي من أسرار GitHub عند بناء نسخة المتجر فقط
+        create("release") {
+            val path = System.getenv("KEYSTORE_PATH")
+            val pass = System.getenv("STORE_PASSWORD")
+            if (path != null && file(path).exists() && !pass.isNullOrEmpty()) {
+                storeFile = file(path)
+                storePassword = pass
+                keyAlias = System.getenv("KEY_ALIAS") ?: "upload"
+                keyPassword = System.getenv("KEY_PASSWORD") ?: pass
+            }
+        }
     }
 
     buildTypes {
@@ -65,6 +76,7 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
         release {
+            if (System.getenv("KEYSTORE_PATH") != null) signingConfig = signingConfigs.getByName("release")
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
