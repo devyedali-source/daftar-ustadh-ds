@@ -104,6 +104,9 @@ dependencies {
 
     // تنزيل حزمة الكتب من المتجر ومتابعة تقدّمها (تطبيق الأستاذ)
     implementation("com.google.android.play:asset-delivery:2.2.2")
+    // تنبيه التحديث من متجر Google Play (كما في دفتر المعلم)
+    implementation("com.google.android.play:app-update:2.1.0")
+    implementation("com.google.android.play:app-update-ktx:2.1.0")
 
     // تدوير صور الطلاب حسب اتجاه الكاميرا
     implementation("androidx.exifinterface:exifinterface:1.3.7")

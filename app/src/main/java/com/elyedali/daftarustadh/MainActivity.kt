@@ -197,6 +197,9 @@ class MainActivity : AppCompatActivity() {
                     com.elyedali.daftarustadh.ui.LoginScreen(onSignedIn = { signedIn = it })
                     return@DaftarTheme
                 }
+                // تنبيه التحديث من المتجر: فحص مرة في كل تشغيل (كما في دفتر المعلم)
+                LaunchedEffect(Unit) { com.elyedali.daftarustadh.ui.InAppUpdateManager.checkOncePerSession(this@MainActivity) }
+                com.elyedali.daftarustadh.ui.InAppUpdateDialogs(this@MainActivity)
                 LaunchedEffect(signedIn?.uid) {
                     val me = signedIn ?: return@LaunchedEffect
                     com.elyedali.daftarustadh.auth.TrustedClock.init(this@MainActivity)
@@ -2724,6 +2727,12 @@ class MainActivity : AppCompatActivity() {
     private fun restartFresh() {
         startActivity(Intent(this, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
         finish()
+    }
+
+    /** تحديث نُزّل من المتجر في الخلفية: يُعرض «تثبيت الآن» عند الرجوع إلى التطبيق. */
+    override fun onResume() {
+        super.onResume()
+        com.elyedali.daftarustadh.ui.InAppUpdateManager.onResume()
     }
 
     /** عند الرجوع إلى التطبيق: تحديث الاشتراكات (تفعيل جديد من لوحة التحكم يظهر دون إعادة فتح التطبيق). */

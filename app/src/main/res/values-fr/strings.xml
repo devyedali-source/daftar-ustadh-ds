@@ -933,4 +933,11 @@ Les fichiers de données portent en première page : « Fichier de données pour
     <string name="tact_msg_pack">Matières : %1$s\nNiveaux : %2$s</string>
     <string name="op_subjects">Matières</string>
     <string name="op_levels">Niveaux</string>
+    <string name="upd_title">Nouvelle version disponible</string>
+    <string name="upd_text">Une nouvelle version de %1$s est disponible sur le Play Store. Nous recommandons la mise à jour pour profiter des dernières améliorations, corrections et contenus.</string>
+    <string name="upd_now">Mettre à jour</string>
+    <string name="upd_later">Plus tard</string>
+    <string name="upd_downloaded">Mise à jour téléchargée</string>
+    <string name="upd_downloaded_text">La nouvelle version est prête. Touchez « Installer » : l\'application redémarre avec la nouvelle version, vos données sont conservées.</string>
+    <string name="upd_install">Installer</string>
 </resources>

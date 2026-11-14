@@ -933,4 +933,11 @@
     <string name="tact_msg_pack">المواد: %1$s\nالمستويات: %2$s</string>
     <string name="op_subjects">المواد</string>
     <string name="op_levels">المستويات</string>
+    <string name="upd_title">يتوفر إصدار جديد</string>
+    <string name="upd_text">يتوفر إصدار جديد من تطبيق %1$s في المتجر. ننصح بالتحديث للحصول على أحدث التحسينات والإصلاحات والمحتوى.</string>
+    <string name="upd_now">تحديث الآن</string>
+    <string name="upd_later">لاحقًا</string>
+    <string name="upd_downloaded">تم تنزيل التحديث</string>
+    <string name="upd_downloaded_text">التحديث الجديد جاهز. اضغط «تثبيت الآن» ليُعاد فتح التطبيق بالإصدار الجديد، وبياناتك محفوظة.</string>
+    <string name="upd_install">تثبيت الآن</string>
 </resources>
