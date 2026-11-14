@@ -429,9 +429,7 @@
     <string name="tact_explain">تفعيل واحد بـ %1$d أوقية جديدة للسنة الدراسية %2$s، لـ 3 مواد في 4 مستويات تختارها، يفتح:</string>
     <string name="tact_item_planning">تصفح التخطيط السنوي والتحاضير ومحتوى الكتب للفصلين الثاني والثالث (الفصل الأول مجاني).</string>
     <string name="tact_free_note">رصد النتائج وسحب السجلات وإرسالها مجاني دائمًا، سواء كنت تعمل مع إدارتك أو مستقلًا.</string>
-    <string name="tact_msg">أريد تفعيل تطبيق دفتر الأستاذ DS.
-السنة الدراسية: %1$s
-المواد: %2$s</string>
+    <string name="tact_msg">أريد تفعيل تطبيق دفتر الأستاذ DS.\nالسنة الدراسية: %1$s\nالمواد: %2$s\nالمبلغ: %3$d أوقية جديدة</string>
     <string name="tact_planning_locked">الفصلان الثاني والثالث يحتاجان التفعيل</string>
     <string name="tact_planning_locked_hint">الفصل الأول مجاني. التفعيل (%1$d أوقية للسنة، لـ 3 مواد في 4 مستويات) يفتح التخطيط السنوي والتحاضير للفصلين الثاني والثالث.</string>
     <string name="act_status_inactive">غير مفعّل</string>
@@ -640,8 +638,7 @@
     <string name="ac_bad_range">تاريخ البداية بعد تاريخ النهاية.</string>
     <string name="ac_no_absence">لا غياب في هذه الفترة.</string>
     <string name="ac_roll">رقم النداء %1$d</string>
-    <string name="file_is_pdf">هذا ملف PDF عادي للقراءة أو الطباعة، وليس ملف بيانات.
-ملفات البيانات مكتوب في صفحتها الأولى: «ملف بيانات لتطبيق …».</string>
+    <string name="file_is_pdf">هذا ملف PDF عادي للقراءة أو الطباعة، وليس ملف بيانات.\nملفات البيانات مكتوب في صفحتها الأولى: «ملف بيانات لتطبيق …».</string>
     <string name="guide_title">أي وضع أختار؟</string>
     <string name="guide_short">اضغط هنا لتعرف الفرق بين الوضعين وكيف تتنقل بينهما.</string>
     <string name="guide_admin_title">🏫 وضع الإدارة — لمن يسيّر المؤسسة</string>

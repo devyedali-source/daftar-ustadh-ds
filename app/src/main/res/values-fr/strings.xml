@@ -429,9 +429,7 @@
     <string name="tact_explain">Une activation à %1$d MRU pour l\'année scolaire %2$s, pour 3 matières dans 4 niveaux de votre choix, ouvre :</string>
     <string name="tact_item_planning">La planification annuelle, les préparations et les manuels des trimestres 2 et 3 (le 1er trimestre est gratuit).</string>
     <string name="tact_free_note">La saisie des notes et les registres restent toujours gratuits, avec ou sans administration.</string>
-    <string name="tact_msg">Je veux activer دفتر الأستاذ DS.
-Année scolaire : %1$s
-Matières : %2$s</string>
+    <string name="tact_msg">Je veux activer دفتر الأستاذ DS.\nAnnée scolaire : %1$s\nMatières : %2$s\nMontant : %3$d MRU</string>
     <string name="tact_planning_locked">Les trimestres 2 et 3 nécessitent l\'activation</string>
     <string name="tact_planning_locked_hint">Le 1er trimestre est gratuit. L\'activation (%1$d MRU par an, pour 3 matières dans 4 niveaux) ouvre la planification et les préparations des trimestres 2 et 3.</string>
     <string name="act_status_inactive">Non activée</string>
@@ -640,8 +638,7 @@ Matières : %2$s</string>
     <string name="ac_bad_range">La date de début est après la date de fin.</string>
     <string name="ac_no_absence">Aucune absence sur cette période.</string>
     <string name="ac_roll">N° d\'appel %1$d</string>
-    <string name="file_is_pdf">Ce PDF est un document ordinaire (lecture ou impression), pas un fichier de données.
-Les fichiers de données portent en première page : « Fichier de données pour l\'application … ».</string>
+    <string name="file_is_pdf">Ce PDF est un document ordinaire (lecture ou impression), pas un fichier de données.\nLes fichiers de données portent en première page : « Fichier de données pour l\'application … ».</string>
     <string name="guide_title">Quel mode choisir ?</string>
     <string name="guide_short">Touchez ici pour comprendre la différence entre les deux modes et comment passer de l\'un à l\'autre.</string>
     <string name="guide_admin_title">🏫 Mode administration — pour qui gère l\'établissement</string>

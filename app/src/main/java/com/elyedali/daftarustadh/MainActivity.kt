@@ -2069,7 +2069,7 @@ class MainActivity : AppCompatActivity() {
                                     // كل مواد المستوى تظهر في التخطيط، حتى لأستاذ المادة الواحدة
                                     mySubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
                                         .sortedBy { s -> if (mySubjects.any { it.subjectCode == s.code }) 0 else 1 }
-                                        .map { it.code to (if (isFrUi) it.nameFr else it.nameAr) }
+                                        .map { it.code to com.elyedali.daftarustadh.data.SubjectNames.display(it, isFrUi) }
                                 )
                                 else -> DocumentsTab(
                                     classId = c.id,
@@ -2462,7 +2462,7 @@ class MainActivity : AppCompatActivity() {
                                             pickSubjects = if (on) pickSubjects - sub.code else pickSubjects + sub.code }) {
                                         androidx.compose.material3.Checkbox(checked = on, onCheckedChange = null,
                                             enabled = on || pickSubjects.size < TA.MAX_SUBJECTS)
-                                        Text(if (isFrUi) sub.nameFr else sub.nameAr)
+                                        Text(com.elyedali.daftarustadh.data.SubjectNames.display(sub, isFrUi))
                                     }
                                 }
                                 Text(stringResource(R.string.tact_pick_levels, TA.MAX_LEVELS, pickLevels.size), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
@@ -2501,7 +2501,9 @@ class MainActivity : AppCompatActivity() {
                                         return@launch
                                     }
                                     // الرسالة: السنة الدراسية والمواد ورابط التفعيل فقط (باقي التفاصيل محفوظة في الطلب على الخادم)
-                                    val msg = getString(R.string.tact_msg, year, subjects.joinToString(" ، ") { subjectName(it) }) +
+                                    val msg = getString(R.string.tact_msg, year,
+                                        subjects.joinToString(" ، ") { c -> subjectOpts.firstOrNull { it.code == c }?.let { com.elyedali.daftarustadh.data.SubjectNames.display(it, isFrUi) } ?: c },
+                                        TA.PRICE) +
                                         "\n" + getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode))
                                     val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                                     try {
@@ -2556,7 +2558,7 @@ class MainActivity : AppCompatActivity() {
                             androidx.compose.foundation.layout.Column {
                                 opts.forEach { sub ->
                                     TextButton(onClick = { docSubjectChoice = null; exportDocument(d, n, sub.code) }) {
-                                        Text(if (isFrUi) sub.nameFr else sub.nameAr)
+                                        Text(com.elyedali.daftarustadh.data.SubjectNames.display(sub, isFrUi))
                                     }
                                 }
                             }

@@ -12,6 +12,12 @@ data class CurriculumSubject(
     val weeklyHours: Int
 )
 
+/** المواد التي تُدرَّس بالفرنسية: يظهر اسمها بالفرنسية دائمًا، مهما كانت لغة التطبيق. */
+object SubjectNames {
+    val TAUGHT_IN_FRENCH = setOf("FR", "MATS", "PC", "SN", "TI")
+    fun display(s: CurriculumSubject, frUi: Boolean): String = if (frUi || s.code in TAUGHT_IN_FRENCH) s.nameFr else s.nameAr
+}
+
 /** مستوى دراسي (مثل 1AS أو 5C) ومواده. */
 data class CurriculumLevel(
     val code: String,
