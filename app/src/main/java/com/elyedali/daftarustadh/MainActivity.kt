@@ -2500,10 +2500,8 @@ class MainActivity : AppCompatActivity() {
                                         android.widget.Toast.makeText(this@MainActivity, getString(R.string.act_need_internet), android.widget.Toast.LENGTH_LONG).show()
                                         return@launch
                                     }
-                                    val msg = getString(R.string.tact_msg, tName, year, code, TA.PRICE) +
-                                        "\n" + getString(R.string.tact_msg_pack, subjects.joinToString(" ، ") { subjectName(it) }, levels.joinToString(" ، ")) +
-                                        "\n" + getString(R.string.act_msg_account, signedIn?.email.orEmpty()) +
-                                        "\n" + getString(R.string.act_msg_request, com.elyedali.daftarustadh.auth.DsSubscriptions.shortCode(reqCode)) +
+                                    // الرسالة: السنة الدراسية والمواد ورابط التفعيل فقط (باقي التفاصيل محفوظة في الطلب على الخادم)
+                                    val msg = getString(R.string.tact_msg, year, subjects.joinToString(" ، ") { subjectName(it) }) +
                                         "\n" + getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode))
                                     val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                                     try {
