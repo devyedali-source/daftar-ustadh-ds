@@ -54,6 +54,8 @@ fun PlanningTab(
     onActivate: () -> Unit = {}
 ) {
     val context = LocalContext.current
+    // ممنوع التقاط الشاشة وتسجيلها في التخطيط السنوي (إلا لحساب مدير الأقسام)
+    SecureScreen()
     val withPlan = remember(levelCode) { AnnualPlans.subjectsWithPlan(context, levelCode) }
     // ترتيب المواد يحدده الأستاذ بنفسه (يرفع مادة أو ينزلها) ويُحفظ على الجهاز
     val prefs = remember { context.getSharedPreferences("planning_order", android.content.Context.MODE_PRIVATE) }

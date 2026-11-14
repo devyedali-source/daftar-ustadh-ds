@@ -89,7 +89,7 @@ fun LessonDialog(
         stringResource(R.string.lesson_pages, lesson.pageFrom, lesson.pageTo), stringResource(R.string.lesson_objectives),
         stringResource(R.string.lesson_intro), stringResource(R.string.lesson_summary), stringResource(R.string.lesson_points),
         stringResource(R.string.lesson_application))
-    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false, securePolicy = ScreenSecurity.dialogPolicy)) {
         Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
             // لا يختفي أسفل المحتوى (مثل زر «إظهار الإجابة») تحت أزرار الهاتف
             Column(Modifier.fillMaxSize().systemBarsPadding()) {

@@ -48,7 +48,7 @@ fun PracticeDialog(block: PracticeBlock, lang: String, subjectLabel: String, wor
     val shown = remember { mutableStateMapOf<Int, Boolean>() }
     val isExam = block.kind == "exam"
     CompositionLocalProvider(LocalLayoutDirection provides if (lang == "ar") LocalLayoutDirection.current else LayoutDirection.Ltr) {
-        Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+        Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false, securePolicy = ScreenSecurity.dialogPolicy)) {
             Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                 Column(Modifier.fillMaxSize()) {
                     Row(Modifier.fillMaxWidth().background(if (isExam) Color(0xFFC62828) else Color(0xFFE65100))
