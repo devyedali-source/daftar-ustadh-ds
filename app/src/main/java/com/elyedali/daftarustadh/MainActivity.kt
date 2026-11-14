@@ -220,6 +220,8 @@ class MainActivity : AppCompatActivity() {
                     com.elyedali.daftarustadh.auth.DsSubscriptions.refresh(db)
                     // مزامنة Drive صامتة عند فتح التطبيق
                     com.elyedali.daftarustadh.sync.DriveSync.syncInBackground(this@MainActivity, db)
+                    // ومزامنة دورية في الخلفية كل 6 ساعات
+                    com.elyedali.daftarustadh.sync.DriveSyncWorker.schedule(this@MainActivity)
                 }
                 val syncState by com.elyedali.daftarustadh.sync.DriveSync.state.collectAsState()
                 var logoutUnsynced by remember { mutableStateOf(false) }
@@ -2738,8 +2740,10 @@ class MainActivity : AppCompatActivity() {
     /** عند الرجوع إلى التطبيق: تحديث الاشتراكات (تفعيل جديد من لوحة التحكم يظهر دون إعادة فتح التطبيق). */
     override fun onRestart() {
         super.onRestart()
-        if (com.elyedali.daftarustadh.auth.DsAuth.user != null) lifecycleScope.launch {
-            com.elyedali.daftarustadh.auth.DsSubscriptions.refresh(DaftarDatabase.get(this@MainActivity))
+        if (com.elyedali.daftarustadh.auth.DsAuth.user != null) {
+            lifecycleScope.launch { com.elyedali.daftarustadh.auth.DsSubscriptions.refresh(DaftarDatabase.get(this@MainActivity)) }
+            // جلب ما سُجّل على الهاتف الآخر عند الرجوع إلى التطبيق
+            com.elyedali.daftarustadh.sync.DriveSync.syncOnResume(this, DaftarDatabase.get(this))
         }
     }
 

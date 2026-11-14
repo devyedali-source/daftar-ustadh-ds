@@ -107,6 +107,8 @@ dependencies {
     // تنبيه التحديث من متجر Google Play (كما في دفتر المعلم)
     implementation("com.google.android.play:app-update:2.1.0")
     implementation("com.google.android.play:app-update-ktx:2.1.0")
+    // مزامنة Drive الدورية في الخلفية كل 6 ساعات (كما في دفتر المعلم)
+    implementation("androidx.work:work-runtime-ktx:2.9.1")
 
     // تدوير صور الطلاب حسب اتجاه الكاميرا
     implementation("androidx.exifinterface:exifinterface:1.3.7")

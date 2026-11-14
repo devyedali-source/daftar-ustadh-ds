@@ -39,6 +39,10 @@ import java.util.zip.GZIPOutputStream
  *  - هاتفان على نفس الحساب: إن لم يتغيّر شيء على هذا الهاتف تؤخذ نسخة Drive كما هي،
  *    وإن تغيّر على الهاتفين يُدمَج الاثنان فلا يضيع شيء (عند تعارض نفس السجل يُؤخذ الأحدث).
  *  - «آخر مزامنة» لا تُكتب إلا بعد التأكد من وصول الملف إلى Drive.
+ *  - ما حُذف على هاتف لا يعود عند الدمج: يُحفظ في الهاتف «ما كان موجودًا عند آخر مزامنة»،
+ *    فما اختفى منه في Drive حُذف هناك، وما اختفى منه في الهاتف حُذف هنا.
+ *  - إن تعذّرت كتابة أي سطر من نسخة Drive تُلغى المزامنة كلها ولا يُرفع شيء (لا ضياع صامت).
+ *  - مزامنة تلقائية أيضًا عند الرجوع إلى التطبيق، وكل 6 ساعات في الخلفية.
  */
 object DriveSync {
     private const val PREFS = "ds_drive_sync"
@@ -170,6 +174,11 @@ object DriveSync {
                 var size = -1L
                 var payload = ByteArray(0)
                 var now = 0L
+                var uploaded: JSONObject? = null
+                // ما كان موجودًا عند آخر مزامنة ناجحة (لمعرفة ما حُذف هنا وما حُذف في الهاتف الآخر)
+                val base = if (last > 0L) loadBase(c, ek) else null
+                // آخر تعديل من المستخدم في النسخة التي ستُرفع (لحسم التعارض بوقت التعديل لا بوقت الرفع)
+                var editedAt = changedAt(c, db)
                 while (true) {
                     val fileId = findFile(token, name)
                     val rev0 = fileId?.let { revision(token, it) }
@@ -179,6 +188,8 @@ object DriveSync {
                             throw SyncException("update")   // نسخة Drive من إصدار أحدث للتطبيق
                         devices = mergeDevices(decodeDevices(remote.optJSONArray("devices")?.toString()), devices)
                         val remoteAt = remote.optLong("savedAt")
+                        // وقت آخر تعديل على الهاتف الآخر (نسخ قديمة لا تحمله: وقت الرفع)
+                        val remoteEdited = remote.optLong("editedAt", remoteAt)
                         val remoteDevice = remote.optString("deviceId")
                         if (remoteAt > last && remoteDevice != deviceId(c)) {
                             val localChanged = changedAt(c, db)
@@ -187,14 +198,17 @@ object DriveSync {
                                 last == 0L && hasData(db) -> restore(db, remote, replace = false, remoteWins = true)
                                 // لم يتغيّر شيء هنا منذ آخر مزامنة (أو هاتف جديد فارغ): نأخذ نسخة Drive كما هي
                                 localChanged <= last && attempt == 0 -> restore(db, remote, replace = true, remoteWins = true)
-                                // تغيّر على الهاتفين: دمج بلا حذف، والأحدث يغلب عند التعارض
-                                else -> restore(db, remote, replace = false, remoteWins = remoteAt > localChanged)
+                                // تغيّر على الهاتفين: دمج، والأحدث يغلب عند التعارض، وما حُذف في أحدهما يُحذف من الآخر
+                                else -> restore(db, remote, replace = false, remoteWins = remoteEdited > localChanged, base = base)
                             }
+                            editedAt = maxOf(editedAt, remoteEdited)
                         }
                     }
                     devices = mergeDevices(listOf(Device(deviceId(c), deviceName())), devices)
                     now = TrustedClock.now()
-                    payload = gzip(snapshot(db, now, deviceId(c), devices).toString())
+                    val snap = snapshot(db, now, deviceId(c), devices).put("editedAt", maxOf(editedAt, changedAt(c, db)))
+                    uploaded = snap
+                    payload = gzip(snap.toString())
                     // هاتف آخر رفع نسخته أثناء ذلك: نعيد الدمج معها قبل الرفع، فلا تمحو نسخةٌ الأخرى
                     if (fileId != null && attempt < 3 && revision(token, fileId) != rev0) { attempt++; continue }
                     id = fileId ?: createFile(token, name)
@@ -202,6 +216,7 @@ object DriveSync {
                     break
                 }
                 if (size != payload.size.toLong()) throw SyncException("verify")
+                uploaded?.let { saveBase(c, ek, db, it) }
                 if (AppRole.isAdmin) {
                     try { describe(token, id, db); discover(c, token) } catch (e: Exception) { }
                 }
@@ -269,7 +284,8 @@ object DriveSync {
     }
 
     /** يكتب نسخة Drive في قاعدة الهاتف: replace = استبدال كامل، وإلا دمج (remoteWins: من يغلب عند التعارض). */
-    private fun restore(db: DaftarDatabase, remote: JSONObject, replace: Boolean, remoteWins: Boolean) {
+    private fun restore(db: DaftarDatabase, remote: JSONObject, replace: Boolean, remoteWins: Boolean,
+                        base: Map<String, Set<String>>? = null) {
         val tables = remote.optJSONObject("tables") ?: return
         val local = userTables(db).toSet()
         suppressUntil = System.currentTimeMillis() + 5_000
@@ -283,10 +299,28 @@ object DriveSync {
                     if (t == "app_meta") w.execSQL("DELETE FROM app_meta WHERE `key` NOT IN (${SKIP_META.joinToString { "'$it'" }})")
                     else w.execSQL("DELETE FROM `$t`")
                 }
+                // الدمج مع معرفة ما كان عند آخر مزامنة: الحذف في أي هاتف يسري على الآخر
+                val pk = pkCols(w, t)
+                var skip: Set<String> = emptySet()
+                val was = base?.get(t)
+                if (!replace && was != null && pk.isNotEmpty()) {
+                    val remoteKeys = HashSet<String>()
+                    for (k in 0 until rows.length()) remoteKeys += keyOf(rows.getJSONObject(k), pk)
+                    val localKeys = localKeys(w, t, pk)
+                    // كان موجودًا وما زال هنا، لكنه اختفى من Drive: حُذف في الهاتف الآخر
+                    for (key in was) if (key in localKeys && key !in remoteKeys) {
+                        val vals = key.split(KEY_SEP)
+                        if (t == "app_meta" && vals.first() in SKIP_META) continue
+                        w.execSQL("DELETE FROM `$t` WHERE " + pk.joinToString(" AND ") { "`$it` = ?" }, vals.toTypedArray())
+                    }
+                    // كان موجودًا واختفى من هنا: حُذف في هذا الهاتف، فلا يُعاد من Drive
+                    skip = was - localKeys
+                }
                 val verb = if (replace || remoteWins) "INSERT OR REPLACE" else "INSERT OR IGNORE"
                 for (k in 0 until rows.length()) {
                     val o = rows.getJSONObject(k)
                     if (t == "app_meta" && o.optString("key") in SKIP_META) continue
+                    if (skip.isNotEmpty() && keyOf(o, pk) in skip) continue
                     val names = o.keys().asSequence().filter { it in cols }.toList()
                     if (names.isEmpty()) continue
                     val args = names.map { n ->
@@ -297,13 +331,78 @@ object DriveSync {
                             else -> v
                         }
                     }.toTypedArray()
+                    // تعذّر سطر: يُلغى الاسترجاع كله (يُرجَع عن كل ما كُتب) ولا يُرفع شيء، بدل ضياع صامت
                     try {
                         w.execSQL("$verb INTO `$t` (${names.joinToString { "`$it`" }}) VALUES (${names.joinToString { "?" }})", args)
-                    } catch (e: Exception) { }
+                    } catch (e: Exception) { throw SyncException("restore $t") }
                 }
             }
         })
         suppressUntil = System.currentTimeMillis() + 3_000
+    }
+
+    private const val KEY_SEP = "\u0001"
+
+    /** أعمدة المفتاح الأساسي للجدول بترتيبها. */
+    private fun pkCols(w: androidx.sqlite.db.SupportSQLiteDatabase, t: String): List<String> {
+        val out = ArrayList<Pair<Int, String>>()
+        w.query("PRAGMA table_info(`$t`)").use { cur ->
+            val n = cur.getColumnIndex("name"); val k = cur.getColumnIndex("pk")
+            while (cur.moveToNext()) cur.getInt(k).let { if (it > 0) out += it to cur.getString(n) }
+        }
+        return out.sortedBy { it.first }.map { it.second }
+    }
+
+    private fun keyOf(o: JSONObject, pk: List<String>): String = pk.joinToString(KEY_SEP) { o.opt(it)?.toString() ?: "" }
+
+    private fun localKeys(w: androidx.sqlite.db.SupportSQLiteDatabase, t: String, pk: List<String>): Set<String> {
+        val out = HashSet<String>()
+        w.query("SELECT " + pk.joinToString { "`$it`" } + " FROM `$t`").use { cur ->
+            while (cur.moveToNext()) out += (0 until pk.size).joinToString(KEY_SEP) { i ->
+                when (cur.getType(i)) {
+                    android.database.Cursor.FIELD_TYPE_INTEGER -> cur.getLong(i).toString()
+                    android.database.Cursor.FIELD_TYPE_FLOAT -> cur.getDouble(i).toString()
+                    android.database.Cursor.FIELD_TYPE_NULL -> ""
+                    else -> cur.getString(i)
+                }
+            }
+        }
+        return out
+    }
+
+    private fun baseFile(c: Context, ek: String) = java.io.File(c.filesDir, "ds_sync_base_${appName()}_${ek.replace(Regex("[^A-Za-z0-9_]"), "_")}.json.gz")
+
+    /** يحفظ مفاتيح كل السطور التي رُفعت (ما كان موجودًا عند هذه المزامنة). */
+    private fun saveBase(c: Context, ek: String, db: DaftarDatabase, snap: JSONObject) {
+        try {
+            val tables = snap.optJSONObject("tables") ?: return
+            val w = db.openHelper.readableDatabase
+            val out = JSONObject()
+            for (t in tables.keys()) {
+                val pk = pkCols(w, t); if (pk.isEmpty()) continue
+                val rows = tables.getJSONArray(t)
+                out.put(t, JSONArray().apply { for (k in 0 until rows.length()) put(keyOf(rows.getJSONObject(k), pk)) })
+            }
+            val f = baseFile(c, ek); val tmp = java.io.File(f.path + ".tmp")
+            tmp.writeBytes(gzip(out.toString())); tmp.renameTo(f)
+        } catch (e: Exception) { }
+    }
+
+    private fun loadBase(c: Context, ek: String): Map<String, Set<String>>? = try {
+        val f = baseFile(c, ek)
+        if (!f.exists()) null else {
+            val o = JSONObject(gunzip(f.readBytes()))
+            o.keys().asSequence().associateWith { t -> val a = o.getJSONArray(t); (0 until a.length()).map { a.getString(it) }.toSet() }
+        }
+    } catch (e: Exception) { null }
+
+    /** رجوع إلى التطبيق: مزامنة صامتة لجلب ما سُجّل على الهاتف الآخر (مرة كل دقيقتين على الأكثر). */
+    @Volatile private var lastResumeSync = 0L
+    fun syncOnResume(context: Context, db: DaftarDatabase) {
+        val now = System.currentTimeMillis()
+        if (now - lastResumeSync < 120_000) return
+        lastResumeSync = now
+        syncInBackground(context, db)
     }
 
     // ———— Google Drive ————
