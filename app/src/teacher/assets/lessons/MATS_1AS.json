@@ -77,7 +77,17 @@
        "x + 0 = x",
        "x × 1 = x"
       ]
-     ]
+     ],
+     "fig": {
+      "page": 16,
+      "rect": [
+       0.07,
+       0.095,
+       0.935,
+       0.245
+      ],
+      "caption": "Programmes de calcul : distributivité"
+     }
     },
     {
      "h": "Priorités des opérations",
@@ -351,7 +361,17 @@
       "Une fraction a/b est le quotient d’un entier a par un entier b non nul : a est le numérateur, b le dénominateur.",
       "Une fraction de dénominateur 10, 100, 1000… est une fraction décimale.",
       "Tout décimal s’écrit sous forme de fraction décimale : 12,03 = 1203/100."
-     ]
+     ],
+     "fig": {
+      "page": 51,
+      "rect": [
+       0.07,
+       0.09,
+       0.935,
+       0.205
+      ],
+      "caption": "Partie hachurée d’une figure"
+     }
     },
     {
      "h": "Fractions égales et irréductibles",
@@ -366,7 +386,17 @@
       "Même dénominateur : la plus petite a le plus petit numérateur.",
       "Même numérateur : la plus petite a le plus grand dénominateur.",
       "Dénominateurs différents : on réduit au même dénominateur."
-     ]
+     ],
+     "fig": {
+      "page": 51,
+      "rect": [
+       0.07,
+       0.385,
+       0.935,
+       0.455
+      ],
+      "caption": "Fractions sur une demi-droite graduée"
+     }
     },
     {
      "h": "Opérations",
@@ -556,14 +586,34 @@
      "h": "Représentation graphique",
      "lines": [
       "Une situation de proportionnalité est représentée par des points alignés sur une droite qui passe par l’origine, et réciproquement."
-     ]
+     ],
+     "fig": {
+      "page": 87,
+      "rect": [
+       0.15,
+       0.08,
+       0.8,
+       0.235
+      ],
+      "caption": "Représentation graphique d’une situation de proportionnalité"
+     }
     },
     {
      "h": "Propriétés",
      "lines": [
       "À une somme (ou une différence) de valeurs de la 1ʳᵉ ligne correspond la somme (ou la différence) des valeurs associées.",
       "Au produit (ou quotient) d’une valeur par un nombre correspond le produit (ou quotient) de la valeur associée par ce nombre."
-     ]
+     ],
+     "fig": {
+      "page": 88,
+      "rect": [
+       0.07,
+       0.355,
+       0.935,
+       0.495
+      ],
+      "caption": "Propriétés de linéarité"
+     }
     },
     {
      "h": "Pourcentage",
@@ -741,7 +791,45 @@
        "36°",
        "180°"
       ]
-     ]
+     ],
+     "fig": {
+      "page": 123,
+      "rect": [
+       0.07,
+       0.61,
+       0.5,
+       0.765
+      ],
+      "caption": "Diagramme en bâtons"
+     }
+    },
+    {
+     "h": "Diagramme circulaire",
+     "lines": [],
+     "fig": {
+      "page": 124,
+      "rect": [
+       0.55,
+       0.745,
+       0.9,
+       0.925
+      ],
+      "caption": "Diagramme circulaire"
+     }
+    },
+    {
+     "h": "Histogramme",
+     "lines": [],
+     "fig": {
+      "page": 122,
+      "rect": [
+       0.05,
+       0.57,
+       0.5,
+       0.835
+      ],
+      "caption": "Histogramme"
+     }
     },
     {
      "h": "Moyenne et médiane",

@@ -184,7 +184,17 @@
       "Soustraire, c’est ajouter l’opposé ; diviser, c’est multiplier par l’inverse.",
       "a × b = 0 équivaut à a = 0 ou b = 0.",
       "Identités remarquables : (a + b)² = a² + 2ab + b² ; (a − b)² = a² − 2ab + b² ; (a + b)(a − b) = a² − b²."
-     ]
+     ],
+     "fig": {
+      "page": 36,
+      "rect": [
+       0.07,
+       0.395,
+       0.935,
+       0.535
+      ],
+      "caption": "Distributivité : aires de deux rectangles"
+     }
     },
     {
      "h": "Racine carrée",
@@ -222,7 +232,17 @@
       "Si a ≤ x ≤ b et a′ ≤ y ≤ b′, alors a + a′ ≤ x + y ≤ b + b′.",
       "[a ; b] : a ≤ x ≤ b ;  ]a ; b[ : a < x < b ;  [a ; +∞[ : x ≥ a ;  ]−∞ ; a] : x ≤ a.",
       "Amplitude : b − a ; centre : (a + b)/2 ; rayon : (b − a)/2."
-     ]
+     ],
+     "fig": {
+      "page": 53,
+      "rect": [
+       0.07,
+       0.505,
+       0.935,
+       0.815
+      ],
+      "caption": "Intervalles et leur représentation sur un axe"
+     }
     },
     {
      "h": "Valeur approchée, troncature, arrondi",
@@ -363,7 +383,17 @@
       "Multiplier ou diviser par un nombre strictement négatif : l’ordre change.",
       "Signe de ax + b : on cherche la valeur x = −b/a, puis on dresse un tableau de signes.",
       "Signe d’un produit ou d’un quotient : tableau de signes des facteurs (valeur interdite pour le dénominateur)."
-     ]
+     ],
+     "fig": {
+      "page": 85,
+      "rect": [
+       0.07,
+       0.07,
+       0.935,
+       0.215
+      ],
+      "caption": "Représentation graphique des solutions d’une inéquation"
+     }
     },
     {
      "h": "Résoudre un problème",
@@ -386,7 +416,17 @@
       "On trace la droite frontière (en remplaçant l’inégalité par =) ; elle partage le plan en deux demi-plans.",
       "On teste un point (souvent l’origine O) pour savoir quel demi-plan convient.",
       "Pour un système, la solution est la région commune aux demi-plans qui conviennent."
-     ]
+     ],
+     "fig": {
+      "page": 97,
+      "rect": [
+       0.07,
+       0.235,
+       0.935,
+       0.475
+      ],
+      "caption": "Résolution graphique : demi-plan solution"
+     }
     }
    ]
   },
@@ -543,7 +583,17 @@
       "Deux vecteurs sont égaux (même direction, même sens, même longueur) ou opposés (sens contraires).",
       "Deux vecteurs non nuls de même direction sont colinéaires.",
       "AB⃗ = DC⃗ ⟺ ABCD est un parallélogramme ;  AI⃗ = IB⃗ ⟺ I milieu de [AB]."
-     ]
+     ],
+     "fig": {
+      "page": 130,
+      "rect": [
+       0.07,
+       0.355,
+       0.935,
+       0.55
+      ],
+      "caption": "Vecteurs égaux et vecteurs opposés"
+     }
     },
     {
      "h": "Opérations sur les vecteurs",
@@ -554,7 +604,17 @@
       "ku⃗ : même direction que u⃗, longueur |k| × ‖u⃗‖, même sens si k > 0, sens opposé si k < 0.",
       "u⃗ et v⃗ sont colinéaires ⟺ il existe k tel que u⃗ = k × v⃗.",
       "A, B, C alignés ⟺ AB⃗ et AC⃗ colinéaires ; (AB) // (CD) ⟺ AB⃗ et CD⃗ colinéaires."
-     ]
+     ],
+     "fig": {
+      "page": 133,
+      "rect": [
+       0.07,
+       0.615,
+       0.935,
+       0.87
+      ],
+      "caption": "Somme de deux vecteurs : relation de Chasles"
+     }
     },
     {
      "h": "Calcul dans un repère",
@@ -564,7 +624,17 @@
       "u⃗ + v⃗ : (x + x′ ; y + y′) ;  ku⃗ : (kx ; ky).",
       "Distance (repère orthonormé) : AB = √((x_B − x_A)² + (y_B − y_A)²).",
       "Colinéarité : xy′ − yx′ = 0 ;  orthogonalité (repère orthonormé) : xx′ + yy′ = 0."
-     ]
+     ],
+     "fig": {
+      "page": 138,
+      "rect": [
+       0.07,
+       0.55,
+       0.935,
+       0.715
+      ],
+      "caption": "Composantes d’un vecteur dans un repère"
+     }
     },
     {
      "h": "Équations de droites",
@@ -573,7 +643,17 @@
       "Toute droite a une équation ax + by + c = 0 avec (a ; b) ≠ (0 ; 0) ; un vecteur directeur est (−b ; a).",
       "Équation réduite : y = mx + p (m : coefficient directeur, p : ordonnée à l’origine) ; ou x = a pour une droite parallèle à l’axe des ordonnées.",
       "m = (y_B − y_A)/(x_B − x_A)."
-     ]
+     ],
+     "fig": {
+      "page": 147,
+      "rect": [
+       0.07,
+       0.08,
+       0.935,
+       0.255
+      ],
+      "caption": "Droite (d) et vecteur directeur"
+     }
     },
     {
      "h": "Positions de deux droites",
@@ -581,7 +661,17 @@
       "ax + by + c = 0 et a′x + b′y + c′ = 0 sont parallèles ⟺ ab′ − a′b = 0.",
       "Elles sont perpendiculaires (repère orthonormé) ⟺ aa′ + bb′ = 0.",
       "y = mx + p et y = m′x + p′ : parallèles ⟺ m = m′ ; perpendiculaires ⟺ m × m′ = −1."
-     ]
+     ],
+     "fig": {
+      "page": 152,
+      "rect": [
+       0.07,
+       0.065,
+       0.935,
+       0.5
+      ],
+      "caption": "Équations de droites : tableau récapitulatif"
+     }
     }
    ]
   },

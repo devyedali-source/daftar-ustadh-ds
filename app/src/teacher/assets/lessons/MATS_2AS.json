@@ -38,7 +38,17 @@
       "+24 s’écrit aussi 24 ; −97 s’écrit aussi (−97).",
       "0 est à la fois positif et négatif : +0 = −0 = 0.",
       "ℕ est un sous-ensemble de ℤ : ℕ ⊂ ℤ."
-     ]
+     ],
+     "fig": {
+      "page": 8,
+      "rect": [
+       0.43,
+       0.235,
+       0.97,
+       0.4
+      ],
+      "caption": "Altitudes et profondeurs : nombres relatifs"
+     }
     },
     {
      "h": "Ordre dans ℤ",
@@ -47,7 +57,17 @@
       "Le plus grand est celui qui est le plus à droite sur la droite graduée.",
       "Tout entier strictement positif est supérieur à tout entier négatif.",
       "Deux positifs : le plus petit a la plus petite distance à zéro ; deux négatifs : le plus petit a la plus grande distance à zéro."
-     ]
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.07,
+       0.3,
+       0.935,
+       0.338
+      ],
+      "caption": "Entiers relatifs sur une droite graduée"
+     }
     },
     {
      "h": "Addition",
@@ -100,7 +120,17 @@
       "Un décimal relatif est un décimal précédé du signe + ou − ; l’ensemble est noté 𝔻.",
       "ℕ ⊂ ℤ ⊂ 𝔻.",
       "Exemple d’ordre croissant : −9,1 ; −8,2 ; −3 ; +4,8 ; +4,9 ; +6,7 ; +7,4."
-     ]
+     ],
+     "fig": {
+      "page": 22,
+      "rect": [
+       0.07,
+       0.358,
+       0.935,
+       0.395
+      ],
+      "caption": "Décimaux relatifs sur une droite graduée"
+     }
     },
     {
      "h": "Addition et soustraction",
@@ -254,7 +284,17 @@
       "k(x + y) = kx + ky ;  k(x − y) = kx − ky",
       "(a + b)(x + y) = ax + ay + bx + by",
       "(a − b)(x − y) = ax − ay − bx + by"
-     ]
+     ],
+     "fig": {
+      "page": 52,
+      "rect": [
+       0.07,
+       0.632,
+       0.935,
+       0.75
+      ],
+      "caption": "Calcul de l’aire de deux façons"
+     }
     },
     {
      "h": "Identités remarquables",
@@ -784,7 +824,17 @@
        "8",
        "3"
       ]
-     ]
+     ],
+     "fig": {
+      "page": 141,
+      "rect": [
+       0.07,
+       0.535,
+       0.935,
+       0.875
+      ],
+      "caption": "Polygones des effectifs cumulés croissants et décroissants"
+     }
     }
    ]
   },
