@@ -7,6 +7,7 @@ import com.elyedali.daftarustadh.data.InstitutionEntity
 import com.elyedali.daftarustadh.data.TeacherActivation
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.tasks.await
 import org.json.JSONArray
 import org.json.JSONObject
@@ -120,12 +121,36 @@ object DsSubscriptions {
         subjects: List<String> = emptyList(), levels: List<String> = emptyList()
     ): String? {
         val u = DsAuth.user ?: return null
+        // طلب واحد في كل مرة: ضغطات متكررة تنتظر الطلب الأول ولا تُنشئ طلبات جديدة
+        return requestLock.withLock { requestOnce(u, app, inst, schoolYear, classIds, classNames, amount, teacherName, subjects, levels) }
+    }
+
+    private val requestLock = kotlinx.coroutines.sync.Mutex()
+
+    private suspend fun requestOnce(
+        u: com.google.firebase.auth.FirebaseUser, app: String, inst: InstitutionEntity?, schoolYear: String,
+        classIds: List<String>, classNames: List<String>, amount: Int, teacherName: String,
+        subjects: List<String>, levels: List<String>
+    ): String? {
+        val instKey = if (app == APP_ADMIN) institutionKey(inst) else ""
+        // طلب معلّق مطابق من نفس الحساب (نفس التطبيق والمؤسسة والسنة والمحتوى): يُعاد استعماله ولا يتكرر في لوحة التحكم
+        try {
+            val mine = FirebaseFirestore.getInstance().collection("ds_activation_requests")
+                .whereEqualTo("uid", u.uid).get().await().documents
+            mine.firstOrNull { d ->
+                d.getString("status") == "pending" && d.getString("app") == app && d.getString("schoolYear") == schoolYear &&
+                    d.getString("institutionKey").orEmpty() == instKey &&
+                    (d.get("classIds") as? List<*>)?.map { it.toString() }.orEmpty().toSet() == classIds.toSet() &&
+                    (d.get("subjects") as? List<*>)?.map { it.toString() }.orEmpty().toSet() == subjects.toSet() &&
+                    (d.get("levels") as? List<*>)?.map { it.toString() }.orEmpty().toSet() == levels.toSet()
+            }?.let { return it.id }
+        } catch (e: Exception) { }
         return try {
             val ref = FirebaseFirestore.getInstance().collection("ds_activation_requests").document()
             ref.set(hashMapOf(
                 "uid" to u.uid, "email" to (u.email ?: ""), "name" to (u.displayName ?: teacherName),
                 "app" to app, "status" to "pending",
-                "institutionKey" to if (app == APP_ADMIN) institutionKey(inst) else "",
+                "institutionKey" to instKey,
                 "institutionName" to (inst?.schoolName ?: ""), "wilaya" to (inst?.wilaya ?: ""),
                 "schoolYear" to schoolYear, "classIds" to classIds, "classNames" to classNames,
                 "amount" to amount, "code" to ref.id.take(6).uppercase(),

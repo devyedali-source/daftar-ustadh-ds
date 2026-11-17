@@ -93,6 +93,19 @@ object OwnerAdmin {
         batch.commit().await()
     }
 
+    /** مفتاح الطلبات المكررة: نفس الحساب والتطبيق والمؤسسة والسنة والمحتوى. */
+    fun dupKey(r: Request) = listOf(r.uid, r.app, r.institutionKey, r.schoolYear,
+        r.classIds.sorted().joinToString(","), r.subjects.sorted().joinToString(","), r.levels.sorted().joinToString(",")).joinToString("|")
+
+    /** الطلبات المكررة لطلب قُبل أو رُفض: تُعلَّم «مكررة» فتختفي من المعلّقة. */
+    suspend fun closeDuplicates(dups: List<Request>) {
+        if (dups.isEmpty()) return
+        val batch = fs.batch()
+        dups.forEach { batch.update(fs.collection("ds_activation_requests").document(it.id),
+            mapOf("status" to "duplicate", "decidedAt" to FieldValue.serverTimestamp())) }
+        batch.commit().await()
+    }
+
     suspend fun reject(r: Request) {
         fs.collection("ds_activation_requests").document(r.id)
             .update(mapOf("status" to "rejected", "decidedAt" to FieldValue.serverTimestamp())).await()

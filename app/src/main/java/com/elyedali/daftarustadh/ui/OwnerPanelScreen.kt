@@ -157,6 +157,7 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
     var failed by remember { mutableStateOf(false) }
     var query by rememberSaveable { mutableStateOf("") }
     var confirm by remember { mutableStateOf<Pair<OwnerAdmin.Request, Boolean>?>(null) }
+    var confirmDups by remember { mutableStateOf<List<OwnerAdmin.Request>>(emptyList()) }
     var busy by remember { mutableStateOf(false) }
     var focused by remember { mutableStateOf<OwnerAdmin.Request?>(null) }
     LaunchedEffect(focusId) { if (focusId != null) focused = OwnerAdmin.request(focusId) }
@@ -177,7 +178,13 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
             failed -> ErrorBox(onReload)
             l == null -> Loading()
             else -> {
-                val shown = (listOfNotNull(focused?.takeIf { f -> f.status == status && l.none { it.id == f.id } }) + l)
+                // الطلبات المعلّقة المكررة من نفس المستخدم تُعرض طلبًا واحدًا (الأحدث) مع عدد التكرار
+                val all = listOfNotNull(focused?.takeIf { f -> f.status == status && l.none { it.id == f.id } }) + l
+                val groups = if (status == "pending") all.groupBy { OwnerAdmin.dupKey(it) } else all.associateBy { it.id }.mapValues { listOf(it.value) }
+                val picked = groups.values.map { g -> val pick = g.firstOrNull { it.id == focused?.id } ?: g.maxBy { it.createdAt }; pick to (g - pick) }
+                val dupsOf = picked.associate { (pick, rest) -> pick.id to rest }
+                val shown = picked.map { it.first }
+                    .sortedByDescending { it.createdAt }
                     .sortedByDescending { it.id == focused?.id }
                     .filter { query.isBlank() || it.code.contains(query) || it.email.uppercase().contains(query) || it.institutionName.uppercase().contains(query) }
                 LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 6.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -199,10 +206,12 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
                                 if (r.subjects.isNotEmpty()) Text("📘 " + stringResource(R.string.op_subjects) + ": " + r.subjects.joinToString(listSep()), fontSize = 12.sp)
                                 if (r.levels.isNotEmpty()) Text("🎓 " + stringResource(R.string.op_levels) + ": " + r.levels.joinToString(listSep()), fontSize = 12.sp)
                                 Text("💰 " + stringResource(R.string.op_year_amount, r.amount) + "   🕒 " + date(r.createdAt), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                                val d = dupsOf[r.id].orEmpty().size
+                                if (d > 0) Text("🔁 " + stringResource(R.string.op_duplicates, d), fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
                                 if (r.status == "pending") Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 4.dp)) {
-                                    Button(onClick = { confirm = r to true }, enabled = !busy, modifier = Modifier.weight(1f),
+                                    Button(onClick = { confirm = r to true; confirmDups = dupsOf[r.id].orEmpty() }, enabled = !busy, modifier = Modifier.weight(1f),
                                         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2E7D32))) { Text("✅ " + stringResource(R.string.op_approve)) }
-                                    OutlinedButton(onClick = { confirm = r to false }, enabled = !busy, modifier = Modifier.weight(1f)) {
+                                    OutlinedButton(onClick = { confirm = r to false; confirmDups = dupsOf[r.id].orEmpty() }, enabled = !busy, modifier = Modifier.weight(1f)) {
                                         Text("✖ " + stringResource(R.string.op_reject), color = MaterialTheme.colorScheme.error)
                                     }
                                 }
@@ -223,7 +232,11 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
                 TextButton(onClick = {
                     confirm = null; busy = true
                     scope.launch {
-                        try { if (ok) OwnerAdmin.approve(r) else OwnerAdmin.reject(r) } catch (e: Exception) { failed = true }
+                        val dups = confirmDups
+                        try {
+                            if (ok) OwnerAdmin.approve(r) else OwnerAdmin.reject(r)
+                            OwnerAdmin.closeDuplicates(dups.filter { it.id != r.id })
+                        } catch (e: Exception) { failed = true }
                         busy = false; focused = null; onReload()
                     }
                 }) { Text(stringResource(if (ok) R.string.op_approve else R.string.op_reject)) }
