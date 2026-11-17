@@ -37,7 +37,7 @@ private class EditableLevel(min: String, ar: String, fr: String) {
     var fr = androidx.compose.runtime.mutableStateOf(fr)
 }
 
-/** إعدادات سجل الأستاذ: ملاحظات المادة حسب معدلها. */
+/** إعدادات الملاحظات: ملاحظات المادة حسب معدلها. */
 @Composable
 fun RemarksSettingsScreen(
     scale: List<RemarkLevel>,

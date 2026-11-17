@@ -2343,7 +2343,7 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = generalRemarksBack }
                     )
 
-                    // إعدادات سجل الأستاذ (وضع الأستاذ): ملاحظات المواد حسب المعدل؛ اسمه في «معلوماتي»
+                    // إعدادات الملاحظات: ملاحظات المواد حسب المعدل؛ اسمه في «معلوماتي»
                     // إعدادات سجل مادة واحدة (من صفحة نتائجها): الملاحظات بلغة تدريس المادة فقط
                     screen == Screen.REMARKS && remarksSubject != null -> {
                         val code = remarksSubject!!

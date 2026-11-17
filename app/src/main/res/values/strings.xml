@@ -124,7 +124,7 @@
     <string name="choose_my_subjects_hint">اختر المادة أو المواد التي تدرّسها في هذا القسم.</string>
     <string name="subject_progress">الضارب %1$d — خانات مملوءة: %2$d من %3$d</string>
     <string name="pick_subject_to_enter">اضغط على مادة لإدخال نتائجها يدويًا</string>
-    <string name="remarks_settings">إعدادات سجل الأستاذ</string>
+    <string name="remarks_settings">إعدادات الملاحظات</string>
     <string name="remarks_help">الملاحظة تُكتب تلقائيًا أمام كل طالب حسب معدل المادة: من المعدل المكتوب حتى الدرجة التالية.</string>
     <string name="remarks_invalid">يجب أن تبدأ درجة من 0، وأن يكون لكل درجة معدل مختلف بين 0 و20 وملاحظة بالعربية.</string>
     <string name="add_level">درجة</string>
