@@ -30,6 +30,11 @@ object RemarkScale {
     /** نص ملاحظة المادة بلغة تدريسها. */
     fun textFor(level: RemarkLevel, subjectCode: String): String = if (isFrenchTaught(subjectCode)) level.textFr else level.textAr
 
+    /** ملاحظات كل مادة مستقلة: تُعدَّل من صفحة نتائج المادة نفسها. */
+    fun subjectKey(code: String) = "${KEY}_$code"
+    /** سلم ملاحظات المادة: الخاص بها، وإلا السلم القديم العام، وإلا الافتراضي. metas: مفتاح ← قيمة. */
+    fun forSubject(metas: Map<String, String>, code: String): List<RemarkLevel> = decode(metas[subjectKey(code)] ?: metas[KEY])
+
     fun remarkFor(avg: Double?, scale: List<RemarkLevel>): RemarkLevel? =
         if (avg == null) null else scale.sortedBy { it.min }.lastOrNull { avg >= it.min }
 

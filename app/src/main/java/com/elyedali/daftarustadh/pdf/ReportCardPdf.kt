@@ -31,7 +31,8 @@ object ReportCardPdf {
         val schoolName: String,
         val className: String,
         val passThreshold: Double,
-        val subjectRemarks: List<RemarkLevel>,
+        /** سلم ملاحظات كل مادة (رمز المادة ← السلم). */
+        val subjectRemarks: (String) -> List<RemarkLevel>,
         val generalRemarks: List<RemarkLevel>,
         val date: String,
         val seal: Bitmap?
@@ -135,7 +136,7 @@ object ReportCardPdf {
             cell(c, ln.subject.nameAr, edges[1], y, allCols[0].w, rowH, 8.5f, align = Layout.Alignment.ALIGN_NORMAL)
             cell(c, ln.subject.nameFr, edges[2], y, allCols[1].w, rowH, 8f, align = Layout.Alignment.ALIGN_NORMAL)
             values.forEachIndexed { k, v -> cell(c, v, edges[k + 3], y, allCols[k + 2].w, rowH, 9f, bold = k == values.lastIndex) }
-            val remark = RemarkScale.remarkFor(ln.average, info.subjectRemarks)
+            val remark = RemarkScale.remarkFor(ln.average, info.subjectRemarks(ln.subject.code))
             // ملاحظة المادة بلغة تدريسها وحدها (العربية أو الفرنسية)
             val obs = listOfNotNull(remark?.let { RemarkScale.textFor(it, ln.subject.code) }, ln.teacherName.takeIf { it.isNotBlank() })
                 .joinToString("\n")

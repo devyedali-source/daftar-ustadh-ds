@@ -73,6 +73,8 @@ fun GradesScreen(
     /** null عند الإدارة: إرسال السجل خاص بالأستاذ. */
     /** الفصل الذي تُفتح عليه الصفحة (من الإدخال السريع عند الإدارة). */
     initialTerm: Int = 1,
+    /** إعدادات سجل هذه المادة (ملاحظاتها حسب المعدل) بلغة تدريسها. */
+    onRemarksSettings: () -> Unit = {},
     onBack: () -> Unit
 ) {
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -93,6 +95,7 @@ fun GradesScreen(
                 if (isFr) subject.nameFr else subject.nameAr, onBack,
                 listOf("${schoolClass.name} — ${stringResource(R.string.coefficient)} ${subject.coefficient}")
             ) {
+                HeaderAction("⚙️ " + stringResource(R.string.remarks_settings)) { onRemarksSettings() }
                 var printMenu by remember { mutableStateOf(false) }
                 androidx.compose.foundation.layout.Box {
                     HeaderAction(stringResource(R.string.print_record)) { printMenu = true }

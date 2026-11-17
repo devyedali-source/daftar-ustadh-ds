@@ -390,9 +390,11 @@ class MainActivity : AppCompatActivity() {
                 val classGrades by classGradesFlow.collectAsState(initial = emptyList())
                 val mySubjectsFlow = remember(classId) { classId?.let { gradeDao.observeTeacherSubjects(it) } ?: flowOf(emptyList()) }
                 val mySubjects by mySubjectsFlow.collectAsState(initial = emptyList())
-                val allTeacherSubjects by remember { gradeDao.observeAllTeacherSubjects() }.collectAsState(initial = emptyList())
-                val remarksText by remember { metaDao.observe(RemarkScale.KEY) }.collectAsState(initial = null)
-                val remarkScale = remember(remarksText) { RemarkScale.decode(remarksText) }
+                // ملاحظات سجل الأستاذ: لكل مادة سلمها (يُعدَّل من صفحة نتائج المادة)
+                val remarkMetaList by remember { metaDao.observePrefix(RemarkScale.KEY) }.collectAsState(initial = emptyList())
+                val remarkMetas = remember(remarkMetaList) { remarkMetaList.associate { it.key to it.value } }
+                fun remarkScaleOf(code: String) = RemarkScale.forSubject(remarkMetas, code)
+                var remarksSubject by rememberSaveable { mutableStateOf<String?>(null) }
                 val teacherName by remember { metaDao.observe(TEACHER_NAME_KEY) }.collectAsState(initial = null)
                 val teacherProfileText by remember { metaDao.observe(com.elyedali.daftarustadh.ui.TeacherProfile.KEY) }.collectAsState(initial = null)
                 val teacherProfile = com.elyedali.daftarustadh.ui.TeacherProfile.decode(teacherProfileText)
@@ -507,7 +509,7 @@ class MainActivity : AppCompatActivity() {
                             schoolName = owner.schoolName,
                             className = c.name,
                             passThreshold = thresholds[c.levelCode] ?: KashfSettings.DEFAULT_THRESHOLD,
-                            subjectRemarks = remarkScale,
+                            subjectRemarks = { code -> remarkScaleOf(code) },
                             generalRemarks = generalRemarks,
                             date = java.text.SimpleDateFormat("dd/MM/yyyy", java.util.Locale.US).format(java.util.Date()),
                             seal = sealBitmap
@@ -1478,6 +1480,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
+                    Screen.REMARKS -> BackHandler { screen = Screen.GRADES }
                     Screen.RESULTS -> BackHandler { screen = Screen.STUDENTS }
                     Screen.STATS -> BackHandler { screen = Screen.HOME }
                     Screen.KASHF_SETTINGS -> BackHandler { screen = Screen.ADMIN_CLASS }
@@ -1551,7 +1554,6 @@ class MainActivity : AppCompatActivity() {
                                     "STATS" -> screen = Screen.STATS
                                     "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
                                     "INSTITUTION" -> screen = Screen.INSTITUTION
-                                    "REMARKS" -> screen = Screen.REMARKS
                                     "OPEN_FILE" -> openFile()
                                     "LANG_AR" -> AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(AR_LATN))
                                     "LANG_FR" -> AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("fr"))
@@ -2245,7 +2247,8 @@ class MainActivity : AppCompatActivity() {
                             grades = classGrades.filter { it.subjectCode == code },
                             testsMode = (if (gradesFromAdmin) records.firstOrNull { it.subjectCode == code }?.testsMode else null)
                                 ?: mySubjects.firstOrNull { it.subjectCode == code }?.testsMode ?: TestsMode.AVERAGE,
-                            scale = remarkScale,
+                            scale = remarkScaleOf(code),
+                            onRemarksSettings = { remarksSubject = code; screen = Screen.REMARKS },
                             onSetGrade = { studentId, slot, value, mark ->
                                 if (!gradesLocked(c.id)) scope.launch {
                                     if (value == null) gradeDao.clear(studentId, code, slot)
@@ -2341,22 +2344,25 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     // إعدادات سجل الأستاذ (وضع الأستاذ): ملاحظات المواد حسب المعدل؛ اسمه في «معلوماتي»
-                    screen == Screen.REMARKS -> RemarksSettingsScreen(
-                        scale = remarkScale,
-                        teacherName = null,
-                        // لغة الملاحظات = لغة تدريس مواد الأستاذ (مواده في أقسامه، أو ★ «موادي» في البرنامج السنوي)
-                        languages = remember(allTeacherSubjects) {
-                            val favs = getSharedPreferences("planning_order", MODE_PRIVATE).getStringSet("fav_subjects", emptySet()).orEmpty()
-                            (allTeacherSubjects.map { it.subjectCode } + favs).map { if (RemarkScale.isFrenchTaught(it)) "fr" else "ar" }.toSet()
-                        },
-                        onSave = { list, _ ->
-                            scope.launch {
-                                metaDao.put(AppMetaEntity(RemarkScale.KEY, RemarkScale.encode(list)))
-                                screen = Screen.HOME
-                            }
-                        },
-                        onBack = { screen = Screen.HOME }
-                    )
+                    // إعدادات سجل مادة واحدة (من صفحة نتائجها): الملاحظات بلغة تدريس المادة فقط
+                    screen == Screen.REMARKS && remarksSubject != null -> {
+                        val code = remarksSubject!!
+                        val subj = currentClass?.let { c -> CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects?.firstOrNull { it.code == code } }
+                        val fr = RemarkScale.isFrenchTaught(code)
+                        RemarksSettingsScreen(
+                            scale = remarkScaleOf(code),
+                            teacherName = null,
+                            onSave = { list, _ ->
+                                scope.launch {
+                                    metaDao.put(AppMetaEntity(RemarkScale.subjectKey(code), RemarkScale.encode(list)))
+                                    screen = Screen.GRADES
+                                }
+                            },
+                            title = stringResource(R.string.remarks_settings) + " — " + (subj?.let { if (fr) it.nameFr else it.nameAr } ?: code),
+                            languages = setOf(if (fr) "fr" else "ar"),
+                            onBack = { screen = Screen.GRADES }
+                        )
+                    }
 
                     screen == Screen.IMPORT && currentClass != null -> ImportStudentsScreen(
                         schoolClass = currentClass!!,
@@ -2478,7 +2484,6 @@ class MainActivity : AppCompatActivity() {
                                 "ABSENCE_CENTER" -> screen = Screen.ABSENCE_CENTER
                                 "STATS" -> screen = Screen.STATS
                                 "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
-                                "REMARKS" -> screen = Screen.REMARKS
                                 "TEACHER_PROFILE" -> screen = Screen.TEACHER_PROFILE
                                 "MY_TIMETABLE" -> { myTtInst = null; screen = Screen.MY_TIMETABLE }
                                 // صفحة مؤسسة الأستاذ: جدوله الزمني في هذه المؤسسة

@@ -282,8 +282,8 @@ fun HomeYearsScreen(
                                 // الجدول الزمني وإرسال ملفات الأساتذة ورفع نتائجهم: في «ترتيب العمل» أسفله
                                 ("📒 " + stringResource(R.string.ps_records_title)) to listOf("PRINT_RECORDS" to "")
                             ) else listOf(
-                                ("👤 " + stringResource(R.string.tp_title)) to listOf("TEACHER_PROFILE" to ""),
-                                ("✏️ " + stringResource(R.string.remarks_settings)) to listOf("REMARKS" to "")
+                                // إعدادات السجل (الملاحظات) لكل مادة داخل صفحة نتائجها
+                                ("👤 " + stringResource(R.string.tp_title)) to listOf("TEACHER_PROFILE" to "")
                             )
                             Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
                                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
