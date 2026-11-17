@@ -426,12 +426,12 @@
     <string name="act_status_active">Activée</string>
     <string name="act_status_requested">En attente</string>
     <string name="tact_title">Activation professeur</string>
-    <string name="tact_explain">Une activation à %1$d MRU pour l\'année scolaire %2$s, pour 3 matières dans 4 niveaux de votre choix, ouvre :</string>
+    <string name="tact_explain">Activation pour l\'année scolaire %3$s, pour 3 matières de votre choix du collège à %1$d MRU (lycée bientôt à %1$d MRU, les deux %2$d MRU). Elle ouvre :</string>
     <string name="tact_item_planning">La planification annuelle, les préparations et les manuels des trimestres 2 et 3 (le 1er trimestre est gratuit).</string>
     <string name="tact_free_note">La saisie des notes et les registres restent toujours gratuits, avec ou sans administration.</string>
     <string name="tact_msg">Je veux activer دفتر الأستاذ DS.\nAnnée scolaire : %1$s\nMatières : %2$s\nMontant : %3$d MRU</string>
     <string name="tact_planning_locked">Les trimestres 2 et 3 nécessitent l\'activation</string>
-    <string name="tact_planning_locked_hint">Le 1er trimestre est gratuit. L\'activation (%1$d MRU par an, pour 3 matières dans 4 niveaux) ouvre la planification et les préparations des trimestres 2 et 3.</string>
+    <string name="tact_planning_locked_hint">Le 1er trimestre est gratuit. L\'activation (%1$d MRU par an, pour 3 matières du cycle) ouvre la planification et les préparations des trimestres 2 et 3.</string>
     <string name="act_status_inactive">Non activée</string>
     <string name="act_total">Classes choisies : %1$d — Montant : %2$d MRU</string>
     <string name="act_send">Envoyer la demande via le WhatsApp de l\'administration</string>
@@ -924,7 +924,7 @@
     <string name="about_no_app">Aucune application sur le téléphone pour ouvrir ce lien.</string>
     <string name="plan_level_in_progress">Le programme de ce niveau est en cours de préparation</string>
     <string name="record_single_refused">Ce registre d\'une seule matière vient d\'une ancienne version de l\'application enseignant et n\'est pas importé. Demandez à l\'enseignant de mettre à jour son application et d\'envoyer son fichier complet avec « Envoyer les notes du trimestre ».</string>
-    <string name="tact_scope_note">L\'activation s\'applique à toutes vos classes des niveaux choisis, reçues de l\'administration ou créées par vous, pour votre compte et cette année scolaire.</string>
+    <string name="tact_scope_note">L\'activation s\'applique à toutes vos classes des niveaux du cycle choisi, reçues de l\'administration ou créées par vous, pour votre compte et cette année scolaire.</string>
     <string name="tact_current">Activé : %1$s</string>
     <string name="tact_all">toutes les matières et tous les niveaux</string>
     <string name="tact_pick_subjects">Matières (jusqu\'à %1$d) — %2$d choisie(s) :</string>
@@ -944,4 +944,10 @@
     <string name="act_error_title">Envoi impossible</string>
     <string name="act_no_internet">Désolé, le téléphone n\'est pas connecté à Internet. La demande d\'activation a besoin d\'Internet pour atteindre le serveur. Connectez-vous puis réessayez.</string>
     <string name="op_duplicates">Même demande envoyée %1$d fois de plus ; accepter ou refuser les ferme toutes</string>
+    <string name="tact_pick_stage">Cycle :</string>
+    <string name="tact_stage_college">Collège</string>
+    <string name="tact_stage_lycee">Lycée</string>
+    <string name="tact_amount">%1$d MRU</string>
+    <string name="tact_soon">bientôt</string>
+    <string name="tact_total">Montant : %1$d MRU</string>
 </resources>

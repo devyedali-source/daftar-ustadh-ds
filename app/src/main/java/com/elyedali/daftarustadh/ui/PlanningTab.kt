@@ -235,7 +235,7 @@ fun PlanningTab(
             androidx.compose.material3.Card(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     Text("🔒 " + stringResource(R.string.tact_planning_locked), fontWeight = FontWeight.Bold)
-                    Text(stringResource(R.string.tact_planning_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE), fontSize = 12.sp)
+                    Text(stringResource(R.string.tact_planning_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE_STAGE), fontSize = 12.sp)
                     androidx.compose.material3.Button(onClick = onActivate, modifier = Modifier.fillMaxWidth()) {
                         Text("⭐ " + stringResource(R.string.tact_title))
                     }

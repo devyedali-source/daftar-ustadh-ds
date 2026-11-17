@@ -2,8 +2,8 @@ package com.elyedali.daftarustadh.data
 
 /**
  * تفعيل الأستاذ للسنة الدراسية: التخطيط السنوي والتحاضير للفصلين الثاني والثالث (الفصل الأول مجاني).
- * التفعيل الواحد يشمل 3 مواد في 4 مستويات يختارها الأستاذ، لحسابه وللسنة الدراسية الواحدة،
- * ويسري على كل أقسامه من هذه المستويات: ما وصل من الإدارة وما أنشأه بنفسه في العمل الحر.
+ * التفعيل لحساب الأستاذ وللسنة الدراسية الواحدة: 3 مواد يختارها في مرحلة الإعدادية (190) أو الثانوية (190)
+ * أو المرحلتين معًا (350)، ويسري على كل أقسامه من مستويات المرحلة: ما وصل من الإدارة وما أنشأه بنفسه في العمل الحر.
  * رصد النتائج مجاني دائمًا للأستاذ.
  */
 object TeacherActivation {
@@ -15,6 +15,15 @@ object TeacherActivation {
     const val PACKS_KEY = "teacher_activation_packs"
     const val MAX_SUBJECTS = 3
     const val MAX_LEVELS = 4
+    const val PRICE_STAGE = 190
+    const val PRICE_BOTH = 350
+    const val STAGE_COLLEGE = "college"
+    const val STAGE_LYCEE = "lycee"
+    /** الثانوية لا تُعرض في التفعيل حتى يكتمل تخطيطها وتحاضيرها وكتبها. */
+    const val LYCEE_READY = false
+
+    /** مبلغ التفعيل حسب عدد المراحل المختارة. */
+    fun price(stages: Int) = if (stages >= 2) PRICE_BOTH else PRICE_STAGE
 
     /** تفعيل واحد: مواد ومستويات لسنة دراسية. بلا مواد ولا مستويات = كل المواد والمستويات (تفعيل قديم). */
     data class Pack(val year: String, val subjects: Set<String>, val levels: Set<String>) {

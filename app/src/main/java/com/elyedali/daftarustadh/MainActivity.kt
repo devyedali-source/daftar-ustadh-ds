@@ -2430,18 +2430,23 @@ class MainActivity : AppCompatActivity() {
                     val myLevels = yearMine.map { it.levelCode }.distinct()
                     val mySubs by remember { gradeDao.observeAllTeacherSubjects() }.collectAsState(initial = emptyList())
                     val myCodes = mySubs.filter { t -> yearMine.any { it.id == t.classId } }.map { it.subjectCode }.distinct()
-                    val levelOpts = levelsAll.map { it.code }.sortedBy { if (it in myLevels) 0 else 1 }
-                    val subjectOpts = levelsAll.flatMap { it.subjects }.distinctBy { it.code }
+                    // المرحلة: الإعدادية متاحة الآن؛ الثانوية «قريبًا» حتى يكتمل برنامجها
+                    val stageOpts = listOf(TA.STAGE_COLLEGE, TA.STAGE_LYCEE)
+                    fun stageReady(st: String) = st == TA.STAGE_COLLEGE || TA.LYCEE_READY
+                    var pickStages by remember(year) { mutableStateOf(setOf(TA.STAGE_COLLEGE)) }
+                    val levelOpts = levelsAll.filter { it.stage in pickStages }.map { it.code }
+                    val subjectOpts = levelsAll.filter { it.stage in pickStages }.flatMap { it.subjects }.distinctBy { it.code }
                         .let { com.elyedali.daftarustadh.report.ReportCalc.orderSubjects(it) }
                         .filter { it.code != "EPS" }   // التربية البدنية ليس لها تخطيط
                         .sortedBy { if (it.code in myCodes) 0 else 1 }
+                    val amount = TA.price(pickStages.size)
                     var pickSubjects by remember(year) { mutableStateOf(myCodes.filter { c -> subjectOpts.any { it.code == c } }.take(TA.MAX_SUBJECTS).toSet()) }
-                    var pickLevels by remember(year) { mutableStateOf(myLevels.take(TA.MAX_LEVELS).toSet()) }
                     // مواد الأستاذ تصل بعد فتح النافذة: تُختار تلقائيًا إن لم يختر شيئًا بعد
                     LaunchedEffect(year, myCodes) {
                         if (pickSubjects.isEmpty()) pickSubjects = myCodes.filter { c -> subjectOpts.any { it.code == c } }.take(TA.MAX_SUBJECTS).toSet()
-                        if (pickLevels.isEmpty()) pickLevels = myLevels.take(TA.MAX_LEVELS).toSet()
                     }
+                    // مادة لم تعد في المرحلة المختارة تُزال
+                    LaunchedEffect(pickStages) { pickSubjects = pickSubjects.filter { c -> subjectOpts.any { it.code == c } }.toSet() }
                     val current = teacherPacks.filter { it.year == year }
                     AlertDialog(
                         onDismissRequest = { teacherActivateYear = null },
@@ -2450,7 +2455,7 @@ class MainActivity : AppCompatActivity() {
                             androidx.compose.foundation.layout.Column(
                                 Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState()),
                                 verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)) {
-                                Text(stringResource(R.string.tact_explain, TA.PRICE, year))
+                                Text(stringResource(R.string.tact_explain, TA.PRICE_STAGE, TA.PRICE_BOTH, year))
                                 Text("• " + stringResource(R.string.tact_item_planning))
                                 Text(stringResource(R.string.tact_scope_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
                                 current.forEach { p ->
@@ -2458,6 +2463,18 @@ class MainActivity : AppCompatActivity() {
                                         if (p.all) stringResource(R.string.tact_all) else p.subjects.joinToString(com.elyedali.daftarustadh.ui.listSep()) { subjectName(it) } +
                                             " — " + p.levels.sorted().joinToString(com.elyedali.daftarustadh.ui.listSep())),
                                         color = androidx.compose.ui.graphics.Color(0xFF2E7D32), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                                }
+                                Text(stringResource(R.string.tact_pick_stage), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                                stageOpts.forEach { st ->
+                                    val ready = stageReady(st); val on = st in pickStages
+                                    androidx.compose.foundation.layout.Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()
+                                        .clickable(enabled = ready && !(on && pickStages.size == 1)) {
+                                            pickStages = if (on) pickStages - st else pickStages + st }) {
+                                        androidx.compose.material3.Checkbox(checked = on, onCheckedChange = null, enabled = ready)
+                                        Text(stringResource(if (st == TA.STAGE_COLLEGE) R.string.tact_stage_college else R.string.tact_stage_lycee) + " — " +
+                                            (if (ready) stringResource(R.string.tact_amount, TA.PRICE_STAGE) else stringResource(R.string.tact_soon)),
+                                            color = if (ready) androidx.compose.ui.graphics.Color.Unspecified else androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant)
+                                    }
                                 }
                                 Text(stringResource(R.string.tact_pick_subjects, TA.MAX_SUBJECTS, pickSubjects.size), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
                                 subjectOpts.forEach { sub ->
@@ -2470,17 +2487,7 @@ class MainActivity : AppCompatActivity() {
                                         Text(com.elyedali.daftarustadh.data.SubjectNames.display(sub, isFrUi))
                                     }
                                 }
-                                Text(stringResource(R.string.tact_pick_levels, TA.MAX_LEVELS, pickLevels.size), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
-                                levelOpts.forEach { lv ->
-                                    val on = lv in pickLevels
-                                    androidx.compose.foundation.layout.Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()
-                                        .clickable(enabled = on || pickLevels.size < TA.MAX_LEVELS) {
-                                            pickLevels = if (on) pickLevels - lv else pickLevels + lv }) {
-                                        androidx.compose.material3.Checkbox(checked = on, onCheckedChange = null,
-                                            enabled = on || pickLevels.size < TA.MAX_LEVELS)
-                                        Text(lv + (if (lv in myLevels) " ★" else ""))
-                                    }
-                                }
+                                Text(stringResource(R.string.tact_total, amount), fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
                                 Text(stringResource(R.string.tact_free_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall,
                                     color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant)
                                 if (year in teacherRequested) Text("⏳ " + stringResource(R.string.act_status_requested),
@@ -2489,10 +2496,10 @@ class MainActivity : AppCompatActivity() {
                             }
                         },
                         confirmButton = {
-                            TextButton(enabled = pickSubjects.isNotEmpty() && pickLevels.isNotEmpty(), onClick = {
+                            TextButton(enabled = pickSubjects.isNotEmpty() && levelOpts.isNotEmpty(), onClick = {
                                 teacherActivateYear = null
                                 val subjects = subjectOpts.map { it.code }.filter { it in pickSubjects }
-                                val levels = levelOpts.filter { it in pickLevels }.sorted()
+                                val levels = levelOpts.distinct().sorted()   // كل مستويات المرحلة المختارة
                                 scope.launch {
                                     val code = metaDao.get(TA.CODE_KEY) ?: TA.newCode().also { metaDao.put(AppMetaEntity(TA.CODE_KEY, it)) }
                                     val tName = (teacherProfile?.name ?: teacherName).orEmpty()
@@ -2502,14 +2509,14 @@ class MainActivity : AppCompatActivity() {
                                         kotlinx.coroutines.withTimeoutOrNull(25_000) {
                                             com.elyedali.daftarustadh.auth.DsSubscriptions.request(
                                                 com.elyedali.daftarustadh.auth.DsSubscriptions.APP_TEACHER, null, year,
-                                                emptyList(), emptyList(), TA.PRICE, tName, subjects, levels)
+                                                emptyList(), emptyList(), amount, tName, subjects, levels)
                                         }
                                     } finally { actRequesting = false }
                                     if (reqCode == null) { actError = getString(R.string.act_need_internet); return@launch }
                                     // الرسالة: السنة الدراسية والمواد ورابط التفعيل فقط (باقي التفاصيل محفوظة في الطلب على الخادم)
                                     val msg = getString(R.string.tact_msg, year,
                                         subjects.joinToString(" ، ") { c -> subjectOpts.firstOrNull { it.code == c }?.let { com.elyedali.daftarustadh.data.SubjectNames.display(it, isFrUi) } ?: c },
-                                        TA.PRICE) +
+                                        amount) +
                                         "\n" + getString(R.string.act_msg_link, com.elyedali.daftarustadh.auth.DsSubscriptions.activationLink(reqCode))
                                     val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
                                     try {

@@ -426,12 +426,12 @@
     <string name="act_status_active">مفعّل</string>
     <string name="act_status_requested">بانتظار التفعيل</string>
     <string name="tact_title">تفعيل الأستاذ</string>
-    <string name="tact_explain">تفعيل واحد بـ %1$d أوقية جديدة للسنة الدراسية %2$s، لـ 3 مواد في 4 مستويات تختارها، يفتح:</string>
+    <string name="tact_explain">التفعيل للسنة الدراسية %3$s، لـ 3 مواد تختارها في مرحلة الإعدادية بـ %1$d أوقية جديدة (الثانوية قريبًا بـ %1$d، والمرحلتان معًا %2$d). يفتح:</string>
     <string name="tact_item_planning">تصفح التخطيط السنوي والتحاضير ومحتوى الكتب للفصلين الثاني والثالث (الفصل الأول مجاني).</string>
     <string name="tact_free_note">رصد النتائج وسحب السجلات وإرسالها مجاني دائمًا، سواء كنت تعمل مع إدارتك أو مستقلًا.</string>
     <string name="tact_msg">أريد تفعيل تطبيق دفتر الأستاذ DS.\nالسنة الدراسية: %1$s\nالمواد: %2$s\nالمبلغ: %3$d أوقية جديدة</string>
     <string name="tact_planning_locked">الفصلان الثاني والثالث يحتاجان التفعيل</string>
-    <string name="tact_planning_locked_hint">الفصل الأول مجاني. التفعيل (%1$d أوقية للسنة، لـ 3 مواد في 4 مستويات) يفتح التخطيط السنوي والتحاضير للفصلين الثاني والثالث.</string>
+    <string name="tact_planning_locked_hint">الفصل الأول مجاني. التفعيل (%1$d أوقية للسنة، لـ 3 مواد في المرحلة) يفتح التخطيط السنوي والتحاضير للفصلين الثاني والثالث.</string>
     <string name="act_status_inactive">غير مفعّل</string>
     <string name="act_total">الأقسام المختارة: %1$d — المبلغ: %2$d أوقية جديدة</string>
     <string name="act_send">إرسال طلب التفعيل عبر واتساب الإدارة</string>
@@ -924,7 +924,7 @@
     <string name="about_no_app">لا يوجد تطبيق على الهاتف لفتح هذا الرابط.</string>
     <string name="plan_level_in_progress">جارٍ العمل على برنامج هذا المستوى</string>
     <string name="record_single_refused">هذا سجل مادة واحدة من نسخة قديمة لتطبيق الأستاذ، ولا يُرفع. اطلب من الأستاذ تحديث تطبيقه وإرسال ملفه الكامل من زر «رفع نتائج الفصل».</string>
-    <string name="tact_scope_note">يسري التفعيل على كل أقسامك من المستويات المختارة، ما وصلك من الإدارة وما أنشأته بنفسك، لحسابك ولهذه السنة الدراسية.</string>
+    <string name="tact_scope_note">يسري التفعيل على كل أقسامك من مستويات المرحلة المختارة، ما وصلك من الإدارة وما أنشأته بنفسك، لحسابك ولهذه السنة الدراسية.</string>
     <string name="tact_current">مفعّل: %1$s</string>
     <string name="tact_all">كل المواد والمستويات</string>
     <string name="tact_pick_subjects">المواد (حتى %1$d) — اخترت %2$d:</string>
@@ -944,4 +944,10 @@
     <string name="act_error_title">تعذّر إرسال الطلب</string>
     <string name="act_no_internet">نعتذر، الهاتف غير متصل بالإنترنت. طلب التفعيل يحتاج إلى الإنترنت ليصل إلى الخادم. اتصل بالإنترنت ثم أعد المحاولة.</string>
     <string name="op_duplicates">أرسل هذا المستخدم الطلب نفسه %1$d مرة إضافية؛ القبول أو الرفض يُغلقها كلها</string>
+    <string name="tact_pick_stage">المرحلة:</string>
+    <string name="tact_stage_college">الإعدادية</string>
+    <string name="tact_stage_lycee">الثانوية</string>
+    <string name="tact_amount">%1$d أوقية</string>
+    <string name="tact_soon">قريبًا</string>
+    <string name="tact_total">المبلغ: %1$d أوقية جديدة</string>
 </resources>
