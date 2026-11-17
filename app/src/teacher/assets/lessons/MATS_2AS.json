@@ -75,7 +75,11 @@
       "Même signe : on additionne les distances à zéro et on garde le signe commun.",
       "Signes contraires : on soustrait les distances à zéro et on met le signe du nombre qui a la plus grande distance à zéro.",
       "x + y = y + x ;  (x + y) + z = x + (y + z) ;  x + 0 = x ;  x + opp(x) = 0."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_addition_relatifs.png",
+      "caption": "Addition sur une droite graduée"
+     }
     },
     {
      "h": "Soustraction et somme algébrique",
@@ -302,7 +306,11 @@
       "(a + b)² = a² + 2ab + b²",
       "(a − b)² = a² − 2ab + b²",
       "(a − b)(a + b) = a² − b²"
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_identite_remarquable.png",
+      "caption": "(a + b)² par les aires"
+     }
     },
     {
      "h": "Factoriser",
@@ -348,7 +356,11 @@
       "Mesure algébrique : MN = x_N − x_M (abscisse du 2ᵉ point moins abscisse du 1ᵉʳ).",
       "Attention à l’ordre : AB et BA sont opposées.",
       "Milieu K de [MN] : x_K = (x_M + x_N)/2."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_axe.png",
+      "caption": "Abscisses et mesure algébrique"
+     }
     },
     {
      "h": "Vecteurs",
@@ -376,7 +388,11 @@
       "Relation de Chasles : AB⃗ + BC⃗ = AC⃗.",
       "AB⃗ + BA⃗ = 0⃗ : BA⃗ est l’opposé de AB⃗ ; on écrit BA⃗ = −AB⃗.",
       "Règle du parallélogramme : AB⃗ + AD⃗ = AC⃗ équivaut à ABCD parallélogramme."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_vecteurs_somme.png",
+      "caption": "Relation de Chasles et règle du parallélogramme"
+     }
     },
     {
      "h": "Repère du plan",
@@ -471,7 +487,11 @@
        "heptagone",
        "octogone"
       ]
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_polygone.png",
+      "caption": "Sommets, côtés et diagonale"
+     }
     },
     {
      "h": "Trapèze",
@@ -565,13 +585,21 @@
       "L’image d’un segment [AB] est un segment [A′B′] de D.",
       "L’image du milieu de [AB] est le milieu de [A′B′].",
       "Si (AB) ⊥ D, l’image de (AB) et de [AB] est réduite à un point de D."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_projection.png",
+      "caption": "Projection orthogonale sur une droite D"
+     }
     },
     {
      "h": "Projection et coordonnées",
      "lines": [
       "Dans un repère (O, I, J), l’abscisse et l’ordonnée d’un point M s’obtiennent en le projetant sur les deux axes."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_coordonnees.png",
+      "caption": "Coordonnées d’un point par projection"
+     }
     }
    ]
   },
@@ -606,7 +634,11 @@
      "lines": [
       "Pour tous points A, B, C : AC ≤ AB + BC.",
       "Si B ∈ [AC], alors AC = AB + BC."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_inegalite_triangulaire.png",
+      "caption": "Inégalité triangulaire"
+     }
     },
     {
      "h": "Distance d’un point à une droite",
@@ -615,7 +647,11 @@
       "AH est la distance de A à D.",
       "Distance de deux droites parallèles : distance d’un point de l’une à l’autre.",
       "Les points à la distance d de D forment deux droites parallèles à D."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_distance_droite.png",
+      "caption": "Distance d’un point à une droite"
+     }
     },
     {
      "h": "Cercle et droite",
@@ -706,7 +742,11 @@
      "lines": [
       "On trace en pointillés la demi-droite [AO) et on reporte OA à partir de O ; on code les segments égaux.",
       "Pour une figure : on construit le symétrique de chaque sommet, puis on relie les images dans le même ordre."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_symetrie_centrale.png",
+      "caption": "Symétrique d’un point par rapport à O"
+     }
     },
     {
      "h": "Symétrie axiale",
@@ -734,7 +774,11 @@
       "Elle conserve l’alignement, les longueurs, les milieux, les angles, le parallélisme et l’orthogonalité.",
       "Une droite a pour image une droite parallèle ; un cercle a pour image un cercle de même rayon.",
       "L’image d’une figure est une figure superposable."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_translation.png",
+      "caption": "Image d’un triangle par une translation"
+     }
     }
    ]
   },
@@ -916,7 +960,11 @@
      "lines": [
       "La boule B(O ; r) est l’ensemble des points M tels que OM ≤ r.",
       "La section d’une boule par un plan est un disque."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_2AS_boule.png",
+      "caption": "Boule et section par un plan"
+     }
     },
     {
      "h": "Formules",

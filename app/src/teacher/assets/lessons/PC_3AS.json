@@ -223,6 +223,14 @@
       "La masse molaire d’une molécule est la somme des masses molaires des atomes qui la constituent.",
       "À une masse m d’un produit correspond une quantité de matière (nombre de moles) : n = m / M."
      ]
+    },
+    {
+     "h": "Modèles moléculaires",
+     "lines": [],
+     "draw": {
+      "src": "draw/PC_3AS_modeles_molecules.png",
+      "caption": "Modèles de quelques molécules"
+     }
     }
    ]
   },

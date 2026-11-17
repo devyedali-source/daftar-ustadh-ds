@@ -190,7 +190,7 @@ private fun PrepCard(title: String, bg: Color, content: @Composable () -> Unit) 
     }
 }
 
-/** محتوى السبورة: لوح أخضر بخط الطباشير، مع الجداول والرسوم المأخوذة من الكتاب. */
+/** محتوى السبورة: لوح أخضر بخط الطباشير، مع الجداول والرسوم المأخوذة من الكتاب ورسوم الشرح المعدّة للسبورة. */
 @Composable
 private fun BoardView(l: BookLesson, bookAsset: String) {
     val chalk = Color(0xFFF5F5F0)
@@ -225,6 +225,19 @@ private fun BoardView(l: BookLesson, bookAsset: String) {
                         modifier = Modifier.fillMaxWidth().background(Color.White, RoundedCornerShape(6.dp)).padding(4.dp)
                             .aspectRatio(b.width.toFloat() / b.height), contentScale = ContentScale.FillWidth)
                     if (f.caption.isNotBlank()) Text(f.caption, color = chalk.copy(alpha = 0.85f), fontSize = 13.sp,
+                        textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
+                }
+                s.drawing?.let { d ->
+                    val bmp by produceState<Bitmap?>(initialValue = null, d.asset) {
+                        value = withContext(Dispatchers.IO) {
+                            try { context.assets.open(d.asset).use { android.graphics.BitmapFactory.decodeStream(it) } } catch (e: Exception) { null }
+                        }
+                    }
+                    val b = bmp
+                    if (b != null) Image(b.asImageBitmap(), contentDescription = d.caption,
+                        modifier = Modifier.fillMaxWidth().background(Color.White, RoundedCornerShape(6.dp)).padding(4.dp)
+                            .aspectRatio(b.width.toFloat() / b.height), contentScale = ContentScale.FillWidth)
+                    if (d.caption.isNotBlank()) Text("✏️ " + d.caption, color = chalk.copy(alpha = 0.85f), fontSize = 13.sp,
                         textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
                 }
             }

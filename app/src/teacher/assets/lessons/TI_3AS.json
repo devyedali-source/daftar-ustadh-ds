@@ -65,7 +65,11 @@
        "Barre d’état",
        "zoom, numéro de diapositive"
       ]
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_interface_powerpoint.png",
+      "caption": "L’interface de PowerPoint"
+     }
     },
     {
      "h": "Première diapositive",
@@ -596,7 +600,11 @@
      "h": "Exemple : préparer un thé",
      "lines": [
       "1. Faire chauffer l’eau ; 2. mettre le thé dans la tasse ; 3. verser l’eau chaude ; 4. attendre ; 5. ajouter du sucre."
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_algo_the.png",
+      "caption": "Organigramme : préparer un thé"
+     }
     },
     {
      "h": "Structure",
@@ -608,7 +616,11 @@
       "Afficher S",
       "Fin",
       "Lire : entrer une valeur ; ← : calcul / affectation ; Afficher : montrer le résultat."
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_algo_structure.png",
+      "caption": "Organigramme : somme de deux nombres"
+     }
     }
    ]
   },
@@ -643,7 +655,11 @@
      "lines": [
       "Une variable est un espace de la mémoire qui stocke une information.",
       "Elle a un nom, un type et une valeur qui peut changer."
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_variable.png",
+      "caption": "Une variable : nom, type et valeur"
+     }
     },
     {
      "h": "Les types",
@@ -731,7 +747,11 @@
       "Sinon",
       "   autre instruction",
       "FinSi"
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_condition.png",
+      "caption": "Organigramme de la condition Si … Alors … Sinon"
+     }
     },
     {
      "h": "Exemple",
@@ -742,7 +762,11 @@
       "Sinon",
       "   Afficher « Mineur »",
       "FinSi"
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_condition_age.png",
+      "caption": "Organigramme : majeur ou mineur"
+     }
     }
    ]
   },
@@ -794,7 +818,11 @@
       "   D ← N * 2",
       "   Écrire(« Le double est : », D)",
       "Fin"
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_algo_double.png",
+      "caption": "Organigramme : le double d’un nombre"
+     }
     }
    ]
   },
@@ -898,7 +926,11 @@
       "Pour i allant de 1 à 5",
       "   Afficher « Bonjour »",
       "FinPour"
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_boucle_pour.png",
+      "caption": "Organigramme de la boucle Pour"
+     }
     },
     {
      "h": "Boucle Tant que",
@@ -909,7 +941,11 @@
       "   Afficher i",
       "   i ← i + 1",
       "FinTantQue"
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_boucle_tantque.png",
+      "caption": "Organigramme de la boucle Tant que"
+     }
     }
    ]
   },
@@ -952,7 +988,11 @@
       "Pour i allant de 1 à 10 Faire",
       "   Écrire i",
       "FinPour"
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_boucle_1_10.png",
+      "caption": "Organigramme : afficher les nombres de 1 à 10"
+     }
     }
    ]
   },
@@ -995,7 +1035,11 @@
       "Si N mod 2 = 0 Alors Afficher « Nombre pair »",
       "Sinon Afficher « Nombre impair »",
       "Rôle : dire si un nombre est pair ou impair."
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_pair_impair.png",
+      "caption": "Organigramme : pair ou impair"
+     }
     },
     {
      "h": "Exemple 2",
@@ -1061,7 +1105,11 @@
        "Répétition",
        "répéter des instructions (boucle)"
       ]
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_trois_structures.png",
+      "caption": "Séquence, sélection et répétition"
+     }
     }
    ]
   },
@@ -1441,7 +1489,11 @@
       "À : professeur@ecole.com",
       "Objet : Demande d’information sur le projet",
       "Bonjour Monsieur, je vous écris pour avoir plus d’informations sur le projet de science. Cordialement. [Nom]"
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_email.png",
+      "caption": "Les parties d’un e-mail"
+     }
     },
     {
      "h": "À retenir",
@@ -1489,7 +1541,11 @@
      "h": "Étapes",
      "lines": [
       "1. Nouveau message ; 2. destinataire et objet ; 3. cliquer sur le trombone (Joindre un fichier) ; 4. choisir le fichier → Ouvrir ; 5. vérifier que son nom apparaît ; 6. Envoyer."
-     ]
+     ],
+     "draw": {
+      "src": "draw/TI_3AS_piece_jointe.png",
+      "caption": "Étapes pour joindre un fichier"
+     }
     },
     {
      "h": "Précautions",

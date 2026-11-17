@@ -991,6 +991,14 @@
      "lines": [
       "Ces modes de nutrition jouent un rôle essentiel dans le recyclage des matières organiques et l’équilibre des écosystèmes."
      ]
+    },
+    {
+     "h": "Structure d’un champignon",
+     "lines": [],
+     "draw": {
+      "src": "draw/SN_1AS_champignon.png",
+      "caption": "Les parties d’un champignon"
+     }
     }
    ]
   },

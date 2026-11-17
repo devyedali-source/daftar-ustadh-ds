@@ -12,8 +12,12 @@ data class BoardSection(
     val heading: String,
     val lines: List<String>,
     val table: List<List<String>> = emptyList(),
-    val figure: BoardFigure? = null
+    val figure: BoardFigure? = null,
+    val drawing: BoardDrawing? = null
 )
+
+/** رسم شرح أُعدّ للسبورة (ليس من الكتاب): صورة داخل ملفات التطبيق lessons/draw/… */
+data class BoardDrawing(val asset: String, val caption: String)
 
 /**
  * درس من الكتاب المدرسي مرتبط بعنوان في التخطيط السنوي:
@@ -72,12 +76,14 @@ object LessonBank {
                             val s = b!!.getJSONObject(j)
                             val t = s.optJSONArray("table")
                             val f = s.optJSONObject("fig")
+                            val dr = s.optJSONObject("draw")
                             BoardSection(s.optString("h"), strs(s.optJSONArray("lines")),
                                 (0 until (t?.length() ?: 0)).map { r -> strs(t!!.getJSONArray(r)) },
                                 f?.let { fo ->
                                     val r = fo.getJSONArray("rect")
                                     BoardFigure(fo.getInt("page"), (0 until r.length()).map { r.getDouble(it).toFloat() }, fo.optString("caption"))
-                                })
+                                },
+                                dr?.let { BoardDrawing("lessons/" + it.getString("src"), it.optString("caption")) })
                         },
                         book = l.optString("book"), bookTitle = l.optString("bookTitle")
                     )

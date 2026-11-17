@@ -174,7 +174,11 @@
       "Les rationnels et des nombres comme √2 ou π forment l’ensemble des réels ℝ.",
       "ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ ;  ℝ* = ℝ − {0} ;  ℝ = ℝ⁺ ∪ ℝ⁻.",
       "Tout point d’une droite graduée est repéré par un réel."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_ensembles.png",
+      "caption": "Les ensembles de nombres"
+     }
     },
     {
      "h": "Opérations dans ℝ",
@@ -257,7 +261,11 @@
       "|a| = a si a ≥ 0 ; |a| = −a si a ≤ 0 ;  |a| ≥ 0 ;  |a| = |−a| ;  |a| = 0 ⟺ a = 0.",
       "|a × b| = |a| × |b| ;  |a + b| ≤ |a| + |b|.",
       "|x| = m (m ≥ 0) ⟺ x = m ou x = −m ;  |x| ≤ m ⟺ x ∈ [−m ; m]."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_valeur_absolue.png",
+      "caption": "Valeur absolue : distance à zéro"
+     }
     }
    ]
   },
@@ -326,7 +334,11 @@
        "(a − b)² = a² − 2ab + b²",
        "(a + b)(a − b) = a² − b²"
       ]
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_identite_remarquable.png",
+      "caption": "(a + b)² par les aires"
+     }
     },
     {
      "h": "Factoriser",
@@ -399,7 +411,11 @@
      "h": "Résoudre un problème",
      "lines": [
       "1) Choix de l’inconnue ; 2) mise en équation ; 3) résolution ; 4) vérification et conclusion."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_probleme.png",
+      "caption": "Les étapes de résolution d’un problème"
+     }
     },
     {
      "h": "Systèmes de deux équations",
@@ -408,7 +424,11 @@
       "Résoudre un système, c’est trouver les couples qui vérifient les deux équations à la fois.",
       "Méthodes : substitution et combinaison.",
       "Exemple : x + 2y = 20 et 2x − y = 10."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_systeme.png",
+      "caption": "Résolution graphique du système"
+     }
     },
     {
      "h": "Inéquations à deux inconnues",
@@ -465,7 +485,11 @@
       "Longueur d’un arc : π × r × mesure (en degrés) / 180.",
       "Correspondance : degrés/180 = radians/π = grades/200. Exemple : 60° = π/3 rad.",
       "En radians : longueur de l’arc l = r × α."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_angle_centre.png",
+      "caption": "Angle au centre et arc intercepté"
+     }
     },
     {
      "h": "Angle inscrit",
@@ -520,7 +544,11 @@
       "Si un triangle est rectangle, son hypoténuse est un diamètre de son cercle circonscrit.",
       "Le milieu de l’hypoténuse est le centre du cercle ; la médiane issue de l’angle droit mesure la moitié de l’hypoténuse.",
       "Si un côté d’un triangle est un diamètre de son cercle circonscrit, ce triangle est rectangle."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_triangle_cercle.png",
+      "caption": "Triangle rectangle inscrit dans un cercle"
+     }
     },
     {
      "h": "Théorème de Pythagore",
@@ -709,7 +737,11 @@
       "cos B̂ = côté adjacent / hypoténuse = AB/BC",
       "sin B̂ = côté opposé / hypoténuse = AC/BC",
       "tan B̂ = côté opposé / côté adjacent = AC/AB"
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_trigonometrie.png",
+      "caption": "Côtés du triangle rectangle par rapport à B̂"
+     }
     },
     {
      "h": "Propriétés",
@@ -811,7 +843,11 @@
       "Si A ∉ Δ, son symétrique A′ est tel que Δ soit la médiatrice de [AA′] ; si A ∈ Δ, A est invariant.",
       "L’image d’un segment est un segment de même longueur ; une figure et son image sont superposables.",
       "Δ est axe de symétrie d’une figure si la figure est sa propre symétrique par rapport à Δ."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_symetrie_axiale.png",
+      "caption": "Symétrique d’un point par rapport à Δ"
+     }
     },
     {
      "h": "Symétrie centrale",
@@ -819,7 +855,11 @@
       "A′ est le symétrique de A par rapport à O si O est le milieu de [AA′].",
       "Un point et son image sont alignés avec le centre ; l’image d’une droite est une droite parallèle.",
       "O est centre de symétrie d’une figure si la figure est sa propre symétrique par rapport à O."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_symetrie_centrale.png",
+      "caption": "Symétrique d’un point par rapport à O"
+     }
     },
     {
      "h": "Translation",
@@ -947,7 +987,11 @@
        "a = 0",
        "f est constante"
       ]
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_sens_variation.png",
+      "caption": "Sens de variation d’une fonction affine"
+     }
     },
     {
      "h": "Fonctions affines par morceaux",
@@ -955,7 +999,11 @@
       "Elles sont définies par des fonctions affines sur plusieurs intervalles.",
       "Exemple : |x| = −x si x < 0 et |x| = x si x ≥ 0.",
       "Leur représentation graphique est formée de segments ou de demi-droites."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_3AS_affine_morceaux.png",
+      "caption": "Représentation de la fonction valeur absolue"
+     }
     }
    ]
   }

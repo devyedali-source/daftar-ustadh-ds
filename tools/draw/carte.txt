@@ -1,0 +1,53 @@
+# ملف|رقم الدرس|القسم (أو +قسم جديد)|الرسم|التعليق
+MATS_1AS|0|Comparer et ranger|MATS_1AS_comparer|Comparer sur une demi-droite graduée
+MATS_1AS|1|Demi-droite et droite|MATS_1AS_demidroite|Demi-droite [AB) et droite (AB)
+MATS_1AS|2|Comparer, encadrer, ranger|MATS_1AS_encadrer|Encadrement de 3,5 à l’unité près
+MATS_1AS|3|Fractions égales et irréductibles|MATS_1AS_fractions_egales|1/2 = 2/4
+MATS_1AS|4|Périmètre et aire du triangle|MATS_1AS_aire_triangle|Base et hauteur d’un triangle
+MATS_1AS|4|Parallélogrammes particuliers|MATS_1AS_parallelogrammes|Rectangle, losange et carré
+MATS_1AS|5|Pourcentage|MATS_1AS_pourcentage|Représenter 40 %
+MATS_1AS|8|Perspective cavalière|MATS_1AS_cube_cavaliere|Cube en perspective cavalière
+MATS_2AS|0|Addition|MATS_2AS_addition_relatifs|Addition sur une droite graduée
+MATS_2AS|3|Identités remarquables|MATS_identite_remarquable|(a + b)² par les aires
+MATS_2AS|4|Repérage sur un axe|MATS_2AS_axe|Abscisses et mesure algébrique
+MATS_2AS|4|Somme de vecteurs|MATS_vecteurs_somme|Relation de Chasles et règle du parallélogramme
+MATS_2AS|5|Polygones|MATS_2AS_polygone|Sommets, côtés et diagonale
+MATS_2AS|6|Propriétés|MATS_2AS_projection|Projection orthogonale sur une droite D
+MATS_2AS|6|Projection et coordonnées|MATS_2AS_coordonnees|Coordonnées d’un point par projection
+MATS_2AS|7|Inégalité triangulaire|MATS_2AS_inegalite_triangulaire|Inégalité triangulaire
+MATS_2AS|7|Distance d’un point à une droite|MATS_2AS_distance_droite|Distance d’un point à une droite
+MATS_2AS|8|Construire un symétrique|MATS_symetrie_centrale|Symétrique d’un point par rapport à O
+MATS_2AS|8|Translation|MATS_2AS_translation|Image d’un triangle par une translation
+MATS_2AS|10|Boule|MATS_2AS_boule|Boule et section par un plan
+MATS_3AS|1|L’ensemble ℝ|MATS_3AS_ensembles|Les ensembles de nombres
+MATS_3AS|1|Valeur absolue|MATS_3AS_valeur_absolue|Valeur absolue : distance à zéro
+MATS_3AS|2|Identités remarquables|MATS_identite_remarquable|(a + b)² par les aires
+MATS_3AS|3|Résoudre un problème|MATS_3AS_probleme|Les étapes de résolution d’un problème
+MATS_3AS|3|Systèmes de deux équations|MATS_3AS_systeme|Résolution graphique du système
+MATS_3AS|4|Angle au centre et arc|MATS_3AS_angle_centre|Angle au centre et arc intercepté
+MATS_3AS|5|Triangle rectangle et cercle|MATS_3AS_triangle_cercle|Triangle rectangle inscrit dans un cercle
+MATS_3AS|7|Dans le triangle rectangle|MATS_3AS_trigonometrie|Côtés du triangle rectangle par rapport à B̂
+MATS_3AS|8|Symétrie axiale|MATS_3AS_symetrie_axiale|Symétrique d’un point par rapport à Δ
+MATS_3AS|8|Symétrie centrale|MATS_symetrie_centrale|Symétrique d’un point par rapport à O
+MATS_3AS|9|Sens de variation|MATS_3AS_sens_variation|Sens de variation d’une fonction affine
+MATS_3AS|9|Fonctions affines par morceaux|MATS_3AS_affine_morceaux|Représentation de la fonction valeur absolue
+TI_3AS|0|L’interface|TI_3AS_interface_powerpoint|L’interface de PowerPoint
+TI_3AS|8|Exemple : préparer un thé|TI_3AS_algo_the|Organigramme : préparer un thé
+TI_3AS|8|Structure|TI_3AS_algo_structure|Organigramme : somme de deux nombres
+TI_3AS|9|Définition|TI_3AS_variable|Une variable : nom, type et valeur
+TI_3AS|10|Structure|TI_3AS_condition|Organigramme de la condition Si … Alors … Sinon
+TI_3AS|10|Exemple|TI_3AS_condition_age|Organigramme : majeur ou mineur
+TI_3AS|11|Exemple : le double d’un nombre|TI_3AS_algo_double|Organigramme : le double d’un nombre
+TI_3AS|13|Boucle Pour|TI_3AS_boucle_pour|Organigramme de la boucle Pour
+TI_3AS|13|Boucle Tant que|TI_3AS_boucle_tantque|Organigramme de la boucle Tant que
+TI_3AS|14|Exemple : afficher les nombres de 1 à 10|TI_3AS_boucle_1_10|Organigramme : afficher les nombres de 1 à 10
+TI_3AS|15|Exemple 1|TI_3AS_pair_impair|Organigramme : pair ou impair
+TI_3AS|16|Les trois structures de base|TI_3AS_trois_structures|Séquence, sélection et répétition
+TI_3AS|22|Exemple|TI_3AS_email|Les parties d’un e-mail
+TI_3AS|23|Étapes|TI_3AS_piece_jointe|Étapes pour joindre un fichier
+PC_3AS|1|+Modèles moléculaires|PC_3AS_modeles_molecules|Modèles de quelques molécules
+SN_1AS|13|+Structure d’un champignon|SN_1AS_champignon|Les parties d’un champignon
+SN_2AS|8|+Schéma de la fécondation|SN_2AS_fecondation|Le tube pollinique conduit le gamète mâle jusqu’à l’ovule
+HG_1AS|17|ثالثا: العوامل البشرية المؤثرة في المناخ|HG_1AS_facteurs_climat|خطاطة العوامل المؤثرة في المناخ
+HG_2AS|0|تمهيد|HG_2AS_islam_mauritanie|خط زمني: دخول الإسلام إلى موريتانيا
+HG_3AS|3|رابعا: الطريق إلى الاستقلال (1956 – 1960م)|HG_3AS_independance|خط زمني: الطريق إلى الاستقلال

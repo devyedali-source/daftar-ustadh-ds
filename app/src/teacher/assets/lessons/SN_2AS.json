@@ -644,6 +644,14 @@
       ],
       "caption": "Expériences sur la formation du fruit"
      }
+    },
+    {
+     "h": "Schéma de la fécondation",
+     "lines": [],
+     "draw": {
+      "src": "draw/SN_2AS_fecondation.png",
+      "caption": "Le tube pollinique conduit le gamète mâle jusqu’à l’ovule"
+     }
     }
    ]
   },

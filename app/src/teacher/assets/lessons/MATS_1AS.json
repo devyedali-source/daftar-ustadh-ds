@@ -47,7 +47,11 @@
       "S’ils ont le même nombre de chiffres, on compare les chiffres de même position, de gauche à droite.",
       "Symboles : < ; ≤ ; > ; ≥.",
       "Ordre croissant : du plus petit au plus grand ; ordre décroissant : du plus grand au plus petit."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_comparer.png",
+      "caption": "Comparer sur une demi-droite graduée"
+     }
     },
     {
      "h": "Propriétés des opérations",
@@ -212,7 +216,11 @@
       "La droite (AB) n’a pas de longueur ; on peut aussi la noter (D) ou (xy).",
       "Par deux points différents passe une seule droite.",
       "Trois points sur une même droite sont alignés, et réciproquement."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_demidroite.png",
+      "caption": "Demi-droite [AB) et droite (AB)"
+     }
     },
     {
      "h": "Droites sécantes et perpendiculaires",
@@ -314,7 +322,11 @@
       "On compare d’abord les parties entières ; si elles sont égales, on compare les parties décimales.",
       "Encadrement à l’unité près : 3 < 3,5 < 4 ; on peut encadrer au dixième, au centième… près.",
       "Ordre croissant : du plus petit au plus grand ; ordre décroissant : du plus grand au plus petit."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_encadrer.png",
+      "caption": "Encadrement de 3,5 à l’unité près"
+     }
     },
     {
      "h": "Opérations",
@@ -378,7 +390,11 @@
      "lines": [
       "Multiplier (ou diviser) le numérateur et le dénominateur par un même nombre non nul donne une fraction égale.",
       "a/b = x/y si et seulement si a × y = b × x (produits en croix)."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_fractions_egales.png",
+      "caption": "1/2 = 2/4"
+     }
     },
     {
      "h": "Comparer des fractions",
@@ -481,7 +497,11 @@
      "lines": [
       "P = AB + AC + BC",
       "Aire = (base × hauteur) / 2"
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_aire_triangle.png",
+      "caption": "Base et hauteur d’un triangle"
+     }
     },
     {
      "h": "Quadrilatères et parallélogramme",
@@ -528,7 +548,11 @@
        "rectangle dont la longueur et la largeur sont égales",
        "perpendiculaires, de même longueur et de même milieu"
       ]
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_parallelogrammes.png",
+      "caption": "Rectangle, losange et carré"
+     }
     }
    ]
   },
@@ -622,7 +646,11 @@
       "Exemple : 24 filles sur 60 élèves : 24/60 × 100 = 40 %.",
       "Prendre a % de M : a × M / 100.",
       "Augmenter M de a % : M + a × M / 100 ;  diminuer M de a % : M − a × M / 100."
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_pourcentage.png",
+      "caption": "Représenter 40 %"
+     }
     },
     {
      "h": "Échelle",
@@ -892,7 +920,11 @@
      "lines": [
       "1) Face avant en vraie grandeur ; 2) fuyantes parallèles, de même longueur mais raccourcies ; 3) arêtes visibles de la face arrière ; 4) arêtes cachées en pointillés.",
       "Angles de fuite usuels : 30°, 45° ou 60° ; coefficients de réduction usuels : 1/2, 1/3, 2/3…"
-     ]
+     ],
+     "draw": {
+      "src": "draw/MATS_1AS_cube_cavaliere.png",
+      "caption": "Cube en perspective cavalière"
+     }
     },
     {
      "h": "Le cube",
