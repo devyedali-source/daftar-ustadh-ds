@@ -46,8 +46,12 @@ fun RemarksSettingsScreen(
     onSave: (List<RemarkLevel>, String) -> Unit,
     title: String? = null,
     defaults: List<RemarkLevel> = RemarkScale.DEFAULT,
+    /** لغات الملاحظات المعروضة: «ar» و/أو «fr» حسب لغة تدريس مواد الأستاذ (فارغة = اللغتان). */
+    languages: Set<String> = emptySet(),
     onBack: () -> Unit
 ) {
+    val showAr = languages.isEmpty() || "ar" in languages
+    val showFr = languages.isEmpty() || "fr" in languages
     val rows = remember(scale) {
         mutableStateListOf<EditableLevel>().apply {
             scale.sortedBy { it.min }.forEach { add(EditableLevel(GradeMath.format(it.min), it.textAr, it.textFr)) }
@@ -56,7 +60,7 @@ fun RemarksSettingsScreen(
     val name = remember(teacherName) { androidx.compose.runtime.mutableStateOf(teacherName.orEmpty()) }
     val parsed = rows.map { r -> GradeMath.parse(r.min.value) }
     val valid = rows.isNotEmpty() && parsed.all { it != null } && parsed.contains(0.0) &&
-        parsed.toSet().size == parsed.size && rows.all { it.ar.value.isNotBlank() }
+        parsed.toSet().size == parsed.size && rows.all { (!showAr || it.ar.value.isNotBlank()) && (showAr || it.fr.value.isNotBlank()) }
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -72,7 +76,7 @@ fun RemarksSettingsScreen(
             if (!valid) Text(stringResource(R.string.remarks_invalid), color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 Button(enabled = valid, onClick = {
-                    onSave(rows.map { RemarkLevel(GradeMath.parse(it.min.value)!!, it.ar.value.trim(), it.fr.value.trim().ifBlank { it.ar.value.trim() }) }, name.value.trim())
+                    onSave(rows.map { RemarkLevel(GradeMath.parse(it.min.value)!!, it.ar.value.trim().ifBlank { it.fr.value.trim() }, it.fr.value.trim().ifBlank { it.ar.value.trim() }) }, name.value.trim())
                 }) { Text(stringResource(R.string.save)) }
                 OutlinedButton(onClick = { rows.add(EditableLevel("", "", "")) }) { Text("+  " + stringResource(R.string.add_level)) }
                 TextButton(onClick = {
@@ -91,8 +95,14 @@ fun RemarksSettingsScreen(
                                 modifier = Modifier.width(90.dp)
                             )
                             Column(Modifier.weight(1f).padding(horizontal = 6.dp)) {
-                                OutlinedTextField(r.ar.value, { r.ar.value = it }, label = { Text(stringResource(R.string.remark_ar)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                                OutlinedTextField(r.fr.value, { r.fr.value = it }, label = { Text(stringResource(R.string.remark_fr)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                                // لغة واحدة: لغة تدريس مواد الأستاذ؛ اللغتان إن كانت له مواد بالعربية وأخرى بالفرنسية
+                                if (showAr) OutlinedTextField(r.ar.value, { r.ar.value = it },
+                                    label = { Text(stringResource(if (showFr) R.string.remark_ar else R.string.remark_one)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                                if (showFr) androidx.compose.runtime.CompositionLocalProvider(
+                                    androidx.compose.ui.platform.LocalLayoutDirection provides androidx.compose.ui.unit.LayoutDirection.Ltr) {
+                                    OutlinedTextField(r.fr.value, { r.fr.value = it },
+                                        label = { Text(if (showAr) stringResource(R.string.remark_fr) else "Appréciation") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                                }
                             }
                             TextButton(onClick = { rows.removeAt(i) }) { Text("✕") }
                         }

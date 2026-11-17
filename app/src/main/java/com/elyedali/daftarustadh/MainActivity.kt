@@ -390,6 +390,7 @@ class MainActivity : AppCompatActivity() {
                 val classGrades by classGradesFlow.collectAsState(initial = emptyList())
                 val mySubjectsFlow = remember(classId) { classId?.let { gradeDao.observeTeacherSubjects(it) } ?: flowOf(emptyList()) }
                 val mySubjects by mySubjectsFlow.collectAsState(initial = emptyList())
+                val allTeacherSubjects by remember { gradeDao.observeAllTeacherSubjects() }.collectAsState(initial = emptyList())
                 val remarksText by remember { metaDao.observe(RemarkScale.KEY) }.collectAsState(initial = null)
                 val remarkScale = remember(remarksText) { RemarkScale.decode(remarksText) }
                 val teacherName by remember { metaDao.observe(TEACHER_NAME_KEY) }.collectAsState(initial = null)
@@ -2343,6 +2344,11 @@ class MainActivity : AppCompatActivity() {
                     screen == Screen.REMARKS -> RemarksSettingsScreen(
                         scale = remarkScale,
                         teacherName = null,
+                        // لغة الملاحظات = لغة تدريس مواد الأستاذ (مواده في أقسامه، أو ★ «موادي» في البرنامج السنوي)
+                        languages = remember(allTeacherSubjects) {
+                            val favs = getSharedPreferences("planning_order", MODE_PRIVATE).getStringSet("fav_subjects", emptySet()).orEmpty()
+                            (allTeacherSubjects.map { it.subjectCode } + favs).map { if (RemarkScale.isFrenchTaught(it)) "fr" else "ar" }.toSet()
+                        },
                         onSave = { list, _ ->
                             scope.launch {
                                 metaDao.put(AppMetaEntity(RemarkScale.KEY, RemarkScale.encode(list)))

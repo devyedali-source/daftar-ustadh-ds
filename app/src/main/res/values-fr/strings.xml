@@ -132,6 +132,7 @@
     <string name="from_average">À partir de</string>
     <string name="remark_ar">Appréciation en arabe</string>
     <string name="remark_fr">Appréciation en français</string>
+    <string name="remark_one">Appréciation</string>
     <string name="print_record">Imprimer le relevé</string>
     <string name="teacher_name">Nom de l\'enseignant</string>
     <string name="teacher_name_hint">Apparaît dans le cachet sous « Signature du professeur » sur vos relevés</string>

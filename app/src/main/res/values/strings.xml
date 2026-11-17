@@ -132,6 +132,7 @@
     <string name="from_average">من</string>
     <string name="remark_ar">الملاحظة بالعربية</string>
     <string name="remark_fr">الملاحظة بالفرنسية</string>
+    <string name="remark_one">الملاحظة</string>
     <string name="print_record">سحب السجل</string>
     <string name="teacher_name">اسم الأستاذ</string>
     <string name="teacher_name_hint">يظهر في الطابع أسفل «توقيع الأستاذ» في سجلاتك</string>
