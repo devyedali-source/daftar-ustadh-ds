@@ -277,6 +277,33 @@ class MainActivity : AppCompatActivity() {
                 var showStaffShare by remember { mutableStateOf(false) }
                 val staffText by remember { metaDao.observe(com.elyedali.daftarustadh.ui.AdminStaff.KEY) }.collectAsState(initial = null)
                 val inst = institution
+                var selectedYear by rememberSaveable { mutableStateOf<String?>(null) }
+                // الإدارة: بعد اختيار السنة تُختار المؤسسة، ثم تُفتح صفحتها
+                var adminInstChosen by rememberSaveable { mutableStateOf(false) }
+                // رجوع بعد الانتقال إلى مؤسسة أخرى (أُعيد فتح التطبيق): نفس السنة، وصفحة المؤسسة أو تعديل بياناتها
+                LaunchedEffect(Unit) {
+                    if (AppRole.isAdmin) com.elyedali.daftarustadh.data.Institutions.takePendingNav(this@MainActivity)?.let { (y, edit) ->
+                        selectedYear = y; adminInstChosen = true
+                        if (edit) screen = Screen.INSTITUTION
+                    }
+                }
+                /** فتح مؤسسة من صفحة اختيار المؤسسة (أو تعديل بياناتها)؛ مؤسسة أخرى تُفتح بقاعدتها الخاصة. */
+                fun openInstitution(key: String, edit: Boolean) {
+                    val entry = com.elyedali.daftarustadh.data.Institutions.list(this@MainActivity).firstOrNull { it.key == key }
+                    val mustEdit = edit || entry?.name.isNullOrBlank()
+                    if (key == db.instKey) {
+                        if (mustEdit || inst == null) { adminInstChosen = true; screen = Screen.INSTITUTION } else adminInstChosen = true
+                        return
+                    }
+                    scope.launch {
+                        // رفع تغييرات المؤسسة الحالية قبل الانتقال
+                        if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
+                            kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
+                        com.elyedali.daftarustadh.data.Institutions.setPendingNav(this@MainActivity, selectedYear, mustEdit)
+                        DaftarDatabase.switchTo(this@MainActivity, key)
+                        restartFresh()
+                    }
+                }
                 // تطبيق الإدارة: اسم المؤسسة المفتوحة في قائمة «مؤسساتي»
                 LaunchedEffect(inst?.schoolName, inst?.wilaya) {
                     if (AppRole.isAdmin && inst != null)
@@ -288,10 +315,13 @@ class MainActivity : AppCompatActivity() {
                     current = db.instKey,
                     onOpen = { key ->
                         showInstitutions = false
-                        if (key != db.instKey) scope.launch {
+                        if (key == db.instKey) { if (selectedYear != null) adminInstChosen = true }
+                        else scope.launch {
                             // رفع تغييرات المؤسسة الحالية قبل الانتقال
                             if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
                                 kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
+                            com.elyedali.daftarustadh.data.Institutions.setPendingNav(this@MainActivity, selectedYear,
+                                com.elyedali.daftarustadh.data.Institutions.list(this@MainActivity).firstOrNull { it.key == key }?.name.isNullOrBlank())
                             DaftarDatabase.switchTo(this@MainActivity, key)
                             restartFresh()
                         }
@@ -301,6 +331,7 @@ class MainActivity : AppCompatActivity() {
                         scope.launch {
                             if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
                                 kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
+                            com.elyedali.daftarustadh.data.Institutions.setPendingNav(this@MainActivity, selectedYear, true)
                             DaftarDatabase.switchTo(this@MainActivity, com.elyedali.daftarustadh.data.Institutions.create(this@MainActivity))
                             restartFresh()
                         }
@@ -316,7 +347,6 @@ class MainActivity : AppCompatActivity() {
                 val teachingClasses by remember { classDao.observeTeaching() }.collectAsState(initial = emptyList())
                 val allClasses by remember { classDao.observeAll() }.collectAsState(initial = emptyList())
                 val homeGenderCounts by remember { studentDao.observeGenderCounts() }.collectAsState(initial = emptyList())
-                var selectedYear by rememberSaveable { mutableStateOf<String?>(null) }
                 // وضع التطبيق ثابت: «إدارة DS» = الإدارة، «دفتر الأستاذ DS» = الأستاذ
                 val homeMode: String = com.elyedali.daftarustadh.ui.APP_MODE
                 // تطبيق الأستاذ: المؤسسة المختارة بعد السنة (قد يدرّس في أكثر من مؤسسة)
@@ -411,6 +441,7 @@ class MainActivity : AppCompatActivity() {
                 var ttInitialTab by remember { mutableStateOf<Int?>(null) }
                 var gradesInitialTerm by remember { mutableStateOf(1) }
                 var askTtUnlock by remember { mutableStateOf(false) }
+                var ttUnlockTab by remember { mutableStateOf(0) }
                 var generalRemarksBack by remember { mutableStateOf(Screen.KASHF_SETTINGS) }
                 var recordsSent by remember { mutableStateOf(setOf<String>()) }
                 var printWorking by remember { mutableStateOf(false) }
@@ -1432,7 +1463,9 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 when (screen) {
-                    Screen.HOME -> if (teacherSchool != null) BackHandler { teacherSchool = null } else if (selectedYear != null) BackHandler { selectedYear = null }
+                    Screen.HOME -> if (teacherSchool != null) BackHandler { teacherSchool = null }
+                        else if (selectedYear != null && AppRole.isAdmin && adminInstChosen) BackHandler { adminInstChosen = false }
+                        else if (selectedYear != null) BackHandler { selectedYear = null }
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
                     Screen.TEACHER_CLASS -> BackHandler { screen = Screen.TEACHING }
                     Screen.GRADES -> BackHandler { screen = gradesBack }
@@ -1448,7 +1481,10 @@ class MainActivity : AppCompatActivity() {
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
                     Screen.QUICK_GRADES -> BackHandler { hubTab = 1; screen = Screen.ADMIN_CLASS }
                     Screen.RECORDS_FOLLOW -> BackHandler { screen = Screen.HOME }
-                    Screen.INSTITUTION -> BackHandler { if (addingSelfSchool) addingSelfSchool = false else if (inst == null) selectedYear = null; screen = Screen.HOME }
+                    Screen.INSTITUTION -> BackHandler {
+                        if (addingSelfSchool) addingSelfSchool = false
+                        else if (inst == null) { if (AppRole.isAdmin) adminInstChosen = false else selectedYear = null }
+                        screen = Screen.HOME }
                     Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) selectedYear = null; screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
                 }
@@ -1474,7 +1510,7 @@ class MainActivity : AppCompatActivity() {
                             onItem = { key ->
                                 scope.launch { drawerState.close() }
                                 when (key) {
-                                    "HOME" -> { selectedYear = null; teacherSchool = null; screen = Screen.HOME }
+                                    "HOME" -> { selectedYear = null; adminInstChosen = false; teacherSchool = null; screen = Screen.HOME }
                                     "SYNC" -> scope.launch {
                                         val st = com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db)
                                         when (st) {
@@ -1520,10 +1556,16 @@ class MainActivity : AppCompatActivity() {
                             scope.launch {
                                 institutionDao.save(if (addingSelfSchool) s.copy(isOwn = true) else s)
                                 if (addingSelfSchool) { addingSelfSchool = false; teacherSchool = s.id }
+                                // الإدارة: بعد تسجيل بيانات المؤسسة تُفتح صفحتها
+                                if (AppRole.isAdmin && selectedYear != null) adminInstChosen = true
                                 screen = Screen.HOME
                             }
                         },
-                        onCancel = { if (addingSelfSchool) addingSelfSchool = false else if (inst == null) selectedYear = null; screen = Screen.HOME }
+                        onCancel = {
+                            if (addingSelfSchool) addingSelfSchool = false
+                            else if (inst == null) { if (AppRole.isAdmin) adminInstChosen = false else selectedYear = null }
+                            screen = Screen.HOME
+                        }
                     )
 
                     screen == Screen.QUICK_GRADES && currentClass != null -> {
@@ -2319,6 +2361,7 @@ class MainActivity : AppCompatActivity() {
                         onSelectMode = { m ->
                             if (m == null) {
                                 if (homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && teacherSchool != null) teacherSchool = null
+                                else if (homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN && adminInstChosen) adminInstChosen = false
                                 else selectedYear = null
                             }
                         },
@@ -2327,10 +2370,20 @@ class MainActivity : AppCompatActivity() {
                         onTool = { key ->
                             when (key) {
                                 "INSTITUTION" -> screen = Screen.INSTITUTION
-                                "TIMETABLE" -> { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                // ① الأساتذة: صفحة أساتذة المؤسسة (بعد اعتماد الجدول لا تُفتح إلا بتنبيه والرمز 7777)
+                                "TEACHERS" -> {
+                                    if (ttApproved) { ttUnlockTab = 1; askTtUnlock = true }
+                                    else { ttInitialClass = null; ttInitialTab = 1; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                }
+                                // ③ الجدول الزمني: بعد تسجيل الأساتذة والأقسام
+                                "TIMETABLE" -> if (ttTeachers.isEmpty() || managedClasses.isEmpty())
+                                    android.widget.Toast.makeText(this@MainActivity, getString(R.string.setup_tt_locked), android.widget.Toast.LENGTH_LONG).show()
+                                    else { ttInitialClass = null; ttInitialTab = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                 // إعدادات الجدول (التوليد والأساتذة): بعد الاعتماد لا تُفتح إلا بتنبيه والرمز 7777
                                 "TT_SETTINGS" -> {
-                                    if (ttApproved) askTtUnlock = true
+                                    if (ttTeachers.isEmpty() || managedClasses.isEmpty())
+                                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.setup_tt_locked), android.widget.Toast.LENGTH_LONG).show()
+                                    else if (ttApproved) { ttUnlockTab = 0; askTtUnlock = true }
                                     else { ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                 }
                                 "SHARE_RECORDS" -> screen = Screen.SHARE_RECORDS
@@ -2362,8 +2415,8 @@ class MainActivity : AppCompatActivity() {
                         onSelectYear = {
                             selectedYear = it
                             teacherSchool = null
-                            // أول دخول: الإدارة تسجّل معلومات المؤسسة، والأستاذ يسجّل معلوماته (مرة واحدة)
-                            if (homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN && inst == null) screen = Screen.INSTITUTION
+                            // الإدارة: بعد السنة صفحة اختيار المؤسسة (تُنشأ أو تُعدَّل بياناتها هناك)
+                            adminInstChosen = false
                             // الأستاذ لا يُطلب منه شيء: اسمه وموادّه تأتي من ملف الإدارة
                         },
                         onOpenClass = { c ->
@@ -2380,7 +2433,24 @@ class MainActivity : AppCompatActivity() {
                         onUploadTerm = { t ->
                             // اسم الأستاذ في السجل: الاسم الذي سجّلته به الإدارة (من ملفها) إن وُجد
                             uploadTermRecords(t, progPairs, (teacherProfile?.name ?: teacherName).orEmpty())
-                        }
+                        },
+                        adminInstitutions = if (AppRole.isAdmin) remember(inst?.schoolName, inst?.wilaya, selectedYear) {
+                            com.elyedali.daftarustadh.data.Institutions.list(this@MainActivity) } else emptyList(),
+                        activeInstKey = db.instKey,
+                        instChosen = !AppRole.isAdmin || adminInstChosen,
+                        onPickInstitution = { openInstitution(it, edit = false) },
+                        onEditInstitution = { openInstitution(it, edit = true) },
+                        onAddInstitution = {
+                            scope.launch {
+                                if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db))
+                                    kotlinx.coroutines.withTimeoutOrNull(30_000) { com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db) }
+                                com.elyedali.daftarustadh.data.Institutions.setPendingNav(this@MainActivity, selectedYear, true)
+                                DaftarDatabase.switchTo(this@MainActivity, com.elyedali.daftarustadh.data.Institutions.create(this@MainActivity))
+                                restartFresh()
+                            }
+                        },
+                        teachersCount = ttTeachers.size,
+                        timetableState = when { ttApproved -> 2; ttManagedSlots.isNotEmpty() -> 1; else -> 0 }
                     )
                     }
                 }
@@ -2675,7 +2745,7 @@ class MainActivity : AppCompatActivity() {
                     onConfirm = {
                         askTtUnlock = false
                         scope.launch { metaDao.put(AppMetaEntity(TT_APPROVED_KEY, "")) }
-                        ttInitialClass = null; ttInitialTab = 0; ttBack = Screen.HOME; screen = Screen.TIMETABLE
+                        ttInitialClass = null; ttInitialTab = ttUnlockTab; ttBack = Screen.HOME; screen = Screen.TIMETABLE
                     },
                     onDismiss = { askTtUnlock = false }
                 )

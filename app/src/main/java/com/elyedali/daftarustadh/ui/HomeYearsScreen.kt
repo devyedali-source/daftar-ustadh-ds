@@ -120,13 +120,26 @@ fun HomeYearsScreen(
     onMenu: () -> Unit,
     /** الأستاذ: تقدم رصد النتائج لكل فصل، ورفعها للإدارة بعد اكتمالها. */
     termProgress: List<TeacherTermProgress> = emptyList(),
-    onUploadTerm: (Int) -> Unit = {}
+    onUploadTerm: (Int) -> Unit = {},
+    /** الإدارة: بعد السنة تُختار المؤسسة (تُنشأ أو تُعدَّل هنا)، ثم صفحة المؤسسة النشطة. */
+    adminInstitutions: List<com.elyedali.daftarustadh.data.Institutions.Entry> = emptyList(),
+    activeInstKey: String = "",
+    instChosen: Boolean = true,
+    onPickInstitution: (String) -> Unit = {},
+    onEditInstitution: (String) -> Unit = {},
+    onAddInstitution: () -> Unit = {},
+    /** الإدارة: عدد الأساتذة المسجلين، وحال الجدول الزمني (0 لم يُنشأ، 1 أُنشئ، 2 معتمد). */
+    teachersCount: Int = 0,
+    timetableState: Int = 0
 ) {
     val current = SchoolYear.current()
     val years = remember(classes, currentInstitutionYear) {
-        (classes.map { it.schoolYear } + listOfNotNull(currentInstitutionYear)).distinct().sortedDescending()
+        // الإدارة: السنة الجارية تظهر دائمًا ولو لم يُسجَّل فيها شيء بعد
+        (classes.map { it.schoolYear } + listOfNotNull(currentInstitutionYear, current.takeIf { mode == MODE_ADMIN })).distinct().sortedDescending()
     }
     var toDelete by remember { mutableStateOf<ClassEntity?>(null) }
+    var confirmNewInst by remember { mutableStateOf(false) }
+    val pickingInst = mode == MODE_ADMIN && selectedYear != null && !instChosen
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Box(Modifier.fillMaxSize()) {
@@ -139,6 +152,7 @@ fun HomeYearsScreen(
                 AppTopBar(
                     title = when {
                         selectedYear == null -> stringResource(R.string.home_choose_year_title)
+                        pickingInst -> stringResource(R.string.inst_pick_title, "⁦$selectedYear⁩")
                         modeLabel == null -> stringResource(R.string.home_year_title, selectedYear)
                         else -> "$modeLabel — ⁦$selectedYear⁩"
                     },
@@ -210,6 +224,40 @@ fun HomeYearsScreen(
                         }
                         item { ModesGuide() }
                     }
+                } else if (pickingInst) {
+                    // اختيار المؤسسة: تُفتح أو تُعدَّل بياناتها، وزر «➕ مؤسسة» أسفل الصفحة لإنشاء أخرى
+                    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp, 16.dp, 16.dp, 110.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                        item {
+                            Text(stringResource(R.string.inst_pick_prompt), fontWeight = FontWeight.Bold, fontSize = 15.sp,
+                                color = MaterialTheme.colorScheme.primary)
+                        }
+                        items(adminInstitutions, key = { it.key }) { e ->
+                            val isCur = e.key == activeInstKey
+                            val registered = e.name.isNotBlank()
+                            Card(
+                                Modifier.fillMaxWidth().clickable { onPickInstitution(e.key) }, shape = RoundedCornerShape(18.dp),
+                                border = if (isCur) androidx.compose.foundation.BorderStroke(2.dp, MaterialTheme.colorScheme.primary) else null,
+                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+                                elevation = CardDefaults.cardElevation(2.dp)
+                            ) {
+                                Row(Modifier.padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                                    Box(Modifier.size(46.dp).background(MaterialTheme.colorScheme.secondaryContainer, CircleShape),
+                                        contentAlignment = Alignment.Center) { Text("🏫", fontSize = 22.sp) }
+                                    Column(Modifier.weight(1f).padding(horizontal = 12.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                                        Text(e.name.ifBlank { stringResource(R.string.inst_unnamed) }, fontWeight = FontWeight.Black, fontSize = 16.sp, maxLines = 2)
+                                        if (e.wilaya.isNotBlank()) Text(e.wilaya, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                        if (!registered) Text(stringResource(R.string.inst_tap_register), fontSize = 12.sp, color = Color(0xFFE65100), fontWeight = FontWeight.Bold)
+                                        else if (isCur) Text("● " + stringResource(R.string.inst_current), fontSize = 11.sp, color = Color(0xFF2E7D32), fontWeight = FontWeight.Bold)
+                                    }
+                                    if (registered) androidx.compose.material3.TextButton(onClick = { onEditInstitution(e.key) }) {
+                                        Text("✏️ " + stringResource(R.string.inst_edit), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                                    }
+                                }
+                            }
+                        }
+                        item { Text(stringResource(R.string.inst_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
+                    }
                 } else {
                     val yearClasses = classes.filter { it.schoolYear == selectedYear && (if (mode == MODE_ADMIN) it.managed else it.teaching) }
                         .sortedWith(compareBy({ it.levelCode }, { it.number }))
@@ -227,14 +275,10 @@ fun HomeYearsScreen(
                                 ("⚙️ " + stringResource(R.string.home_group_settings)) to listOf(
                                     "INSTITUTION" to ("🏛️ " + stringResource(R.string.drawer_institution)),
                                     "ACTIVATION" to ("⭐ " + stringResource(R.string.act_title)),
-                                    "TIMETABLE" to ("📅 " + stringResource(R.string.tt_title)),
                                     "PRINT_TIMETABLES" to ("🗓️ " + stringResource(R.string.ps_timetables_title)),
                                     "TT_SETTINGS" to ("🛠️ " + stringResource(R.string.tt_settings_title))),
-                                ("🤝 " + stringResource(R.string.home_group_share)) to listOf(
-                                    "SHARE_RECORDS" to ("📤 " + stringResource(R.string.sr_title)),
-                                    "PRINT_RECORDS" to ("📒 " + stringResource(R.string.ps_records_title))),
-                                // ملفات نتائج الأساتذة: صفحة المتابعة (من أرسل ومن بقي) وفيها زر الرفع
-                                ("📥 " + stringResource(R.string.rf_title)) to listOf("RECORDS_FOLLOW" to "")
+                                // الجدول الزمني وإرسال ملفات الأساتذة ورفع نتائجهم: في «ترتيب العمل» أسفله
+                                ("📒 " + stringResource(R.string.ps_records_title)) to listOf("PRINT_RECORDS" to "")
                             ) else listOf(
                                 ("👤 " + stringResource(R.string.tp_title)) to listOf("TEACHER_PROFILE" to ""),
                                 ("✏️ " + stringResource(R.string.remarks_settings)) to listOf("REMARKS" to "")
@@ -268,8 +312,8 @@ fun HomeYearsScreen(
                     }
                     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp, 16.dp, 16.dp, 110.dp),
                         verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                        // وضع الأستاذ: معلوماته أعلى الإحصائيات
-                        if (mode == MODE_TEACHER) item { ownerCard() }
+                        // معلومات صاحب الوضع أعلى الإحصائيات: المؤسسة النشطة (الإدارة) أو الأستاذ
+                        item { ownerCard() }
                         item {
                             Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
                                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
@@ -292,12 +336,10 @@ fun HomeYearsScreen(
                             }
                         }
                         if (mode == MODE_TEACHER && termProgress.isNotEmpty()) item { TermProgressCard(termProgress, onUploadTerm) }
-                        if (mode != MODE_TEACHER) item { ownerCard() }
-                        // خطوات العمل: ماذا تفعل الإدارة، وماذا يفعل الأستاذ
+                        // الإدارة: ترتيب العمل (الأساتذة ثم الأقسام ثم الجدول الزمني...)؛ الأستاذ: خطوات عمله
                         item {
-                            if (mode == MODE_ADMIN) StepsGuide(R.string.steps_admin_title, listOf(
-                                R.string.steps_admin_1, R.string.steps_admin_2, R.string.steps_admin_3,
-                                R.string.steps_admin_4, R.string.steps_admin_5, R.string.steps_admin_6), yearClasses.isEmpty())
+                            if (mode == MODE_ADMIN) AdminSetupCard(teachersCount, yearClasses.size, timetableState,
+                                onTeachers = { onTool("TEACHERS") }, onClasses = onCreateClass, onTool = onTool)
                             else StepsGuide(R.string.steps_teacher_title, listOf(
                                 R.string.steps_teacher_1, R.string.steps_teacher_2, R.string.steps_teacher_3,
                                 R.string.steps_teacher_4, R.string.steps_teacher_5), yearClasses.isEmpty())
@@ -350,7 +392,14 @@ fun HomeYearsScreen(
                 }
             }
             // الأزرار العائمة: إنشاء قسم في وضع الإدارة، وفتح ملف قسم في وضع الأستاذ
-            if (selectedYear == null || mode != null) Column(
+            if (pickingInst) ExtendedFloatingActionButton(
+                onClick = { confirmNewInst = true },
+                modifier = Modifier.align(Alignment.BottomEnd).padding(16.dp),
+                icon = { Icon(Icons.Filled.Add, contentDescription = null) },
+                text = { Text(stringResource(R.string.inst_add), fontWeight = FontWeight.Bold) },
+                containerColor = MaterialTheme.colorScheme.primary, contentColor = Color.White
+            )
+            else if ((selectedYear == null && mode != MODE_ADMIN) || (selectedYear != null && mode != null)) Column(
                 Modifier.align(Alignment.BottomEnd).padding(16.dp),
                 horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(10.dp)
             ) {
@@ -369,6 +418,13 @@ fun HomeYearsScreen(
             }
         }
     }
+    if (confirmNewInst) androidx.compose.material3.AlertDialog(
+        onDismissRequest = { confirmNewInst = false },
+        title = { Text(stringResource(R.string.inst_new)) },
+        text = { Text(stringResource(R.string.inst_new_hint)) },
+        confirmButton = { androidx.compose.material3.TextButton(onClick = { confirmNewInst = false; onAddInstitution() }) { Text(stringResource(R.string.inst_create)) } },
+        dismissButton = { androidx.compose.material3.TextButton(onClick = { confirmNewInst = false }) { Text(stringResource(R.string.cancel)) } }
+    )
     toDelete?.let { c ->
         SensitiveConfirmDialog(
             title = stringResource(R.string.delete_class_title, c.name),
@@ -426,6 +482,52 @@ private fun StepsGuide(title: Int, steps: List<Int>, startOpen: Boolean) {
                     Text(stringResource(res), fontSize = 13.sp)
                 }
             }
+        }
+    }
+}
+
+/**
+ * ترتيب عمل الإدارة في السنة: ① الأساتذة ② الأقسام (التلاميذ ليسوا شرطًا) ③ الجدول الزمني بعد اكتمالهما،
+ * ④ إرسال ملفات الأساتذة ⑤ رفع ملفات نتائجهم لإنشاء الكشوف (أو الإدخال اليدوي داخل القسم).
+ */
+@Composable
+private fun AdminSetupCard(teachers: Int, classes: Int, timetable: Int, onTeachers: () -> Unit, onClasses: () -> Unit, onTool: (String) -> Unit) {
+    val base = teachers > 0 && classes > 0
+    Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(1.dp)) {
+        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text("📘 " + stringResource(R.string.setup_title), fontWeight = FontWeight.Black, fontSize = 15.sp, color = Color(0xFF1B5E20))
+            SetupRow(1, "👨‍🏫 " + stringResource(R.string.setup_teachers), stringResource(R.string.setup_teachers_n, teachers),
+                stringResource(R.string.setup_teachers_desc), done = teachers > 0, enabled = true, onClick = onTeachers)
+            SetupRow(2, "🏫 " + stringResource(R.string.setup_classes), stringResource(R.string.setup_classes_n, classes),
+                stringResource(R.string.setup_classes_desc), done = classes > 0, enabled = true, onClick = onClasses)
+            SetupRow(3, "📅 " + stringResource(R.string.tt_title),
+                stringResource(when { !base -> R.string.setup_tt_locked; timetable == 2 -> R.string.setup_tt_approved; timetable == 1 -> R.string.setup_tt_generated; else -> R.string.setup_tt_none }),
+                stringResource(R.string.setup_tt_desc), done = timetable == 2, enabled = base, onClick = { onTool("TIMETABLE") })
+            SetupRow(4, "📤 " + stringResource(R.string.sr_title), if (base) null else stringResource(R.string.setup_tt_locked),
+                stringResource(R.string.setup_send_desc), done = false, enabled = base, onClick = { onTool("SHARE_RECORDS") })
+            SetupRow(5, "📥 " + stringResource(R.string.rf_title), null,
+                stringResource(R.string.setup_upload_desc), done = false, enabled = base, onClick = { onTool("RECORDS_FOLLOW") })
+        }
+    }
+}
+
+@Composable
+private fun SetupRow(n: Int, title: String, status: String?, desc: String, done: Boolean, enabled: Boolean, onClick: () -> Unit) {
+    val fg = if (enabled) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant
+    Card(Modifier.fillMaxWidth().clickable(enabled = enabled, onClick = onClick), shape = RoundedCornerShape(14.dp),
+        colors = CardDefaults.cardColors(containerColor = if (done) Color(0xFFE8F5E9) else if (enabled) MaterialTheme.colorScheme.surfaceVariant else MaterialTheme.colorScheme.surface),
+        border = if (enabled) null else androidx.compose.foundation.BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant)) {
+        Row(Modifier.padding(10.dp), verticalAlignment = Alignment.Top) {
+            Box(Modifier.size(28.dp).background(if (done) Color(0xFF2E7D32) else if (enabled) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline, CircleShape),
+                contentAlignment = Alignment.Center) { Text(if (done) "✓" else "$n", color = Color.White, fontWeight = FontWeight.Black, fontSize = 13.sp) }
+            Column(Modifier.weight(1f).padding(horizontal = 10.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text((if (enabled) "" else "🔒 ") + title, fontWeight = FontWeight.Black, fontSize = 14.sp, color = fg)
+                if (status != null) Text(status, fontSize = 12.sp, fontWeight = FontWeight.Bold,
+                    color = if (done) Color(0xFF2E7D32) else if (enabled) MaterialTheme.colorScheme.primary else Color(0xFFE65100))
+                Text(desc, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            if (enabled) Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
         }
     }
 }

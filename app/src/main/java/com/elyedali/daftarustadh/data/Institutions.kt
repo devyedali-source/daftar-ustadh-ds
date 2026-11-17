@@ -62,6 +62,21 @@ object Institutions {
 
     fun setActive(c: Context, key: String) { prefs(c).edit().putString(K_ACTIVE, key).commit() }
 
+    /** بعد الانتقال إلى مؤسسة (يُعاد فتح التطبيق): السنة المختارة، وهل تُفتح صفحة المؤسسة أو صفحة تعديل بياناتها. */
+    fun setPendingNav(c: Context, year: String?, edit: Boolean) {
+        prefs(c).edit().putString("nav_year", year).putBoolean("nav_edit", edit).putBoolean("nav_set", year != null).commit()
+    }
+
+    /** يُقرأ مرة واحدة عند الفتح ثم يُمسح: (السنة، تعديل البيانات؟). */
+    fun takePendingNav(c: Context): Pair<String, Boolean>? {
+        val p = prefs(c)
+        if (!p.getBoolean("nav_set", false)) return null
+        val year = p.getString("nav_year", null)
+        val edit = p.getBoolean("nav_edit", false)
+        p.edit().remove("nav_set").remove("nav_year").remove("nav_edit").commit()
+        return year?.let { it to edit }
+    }
+
     /** حساب آخر دخل إلى الهاتف: تُحذف قواعد المؤسسات الإضافية ويرجع إلى main فقط. */
     fun resetAll(c: Context) {
         list(c).filter { it.key != MAIN }.forEach { c.applicationContext.deleteDatabase(dbName(it.key)) }

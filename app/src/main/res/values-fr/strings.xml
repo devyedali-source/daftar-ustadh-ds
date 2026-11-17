@@ -156,7 +156,7 @@
     <string name="subjects_complete">Matières complètes : %1$d sur %2$d</string>
     <string name="all_subjects_complete">Toutes les matières de ce trimestre sont complètes.</string>
     <string name="upload_record">Charger un relevé d\'enseignant</string>
-    <string name="upload_record_hint">Saisie manuelle : saisie rapide par N° d\'appel, ou touchez une matière ci-dessous pour saisir ou corriger. Les fichiers des professeurs s\'importent depuis « 📥 Relevés des professeurs » sur l\'accueil, car chaque fichier couvre toutes ses classes.</string>
+    <string name="upload_record_hint">Saisie manuelle : saisie rapide par N° d\'appel, ou touchez une matière ci-dessous pour saisir ou corriger. Les fichiers des professeurs s\'importent depuis « 📥 Relevés des professeurs » sur la page de l\'établissement, car chaque fichier couvre toutes ses classes.</string>
     <string name="source_teacher">Chargé depuis le relevé de : %1$s</string>
     <string name="source_manual">Saisie manuelle</string>
     <string name="source_none">Pas encore chargé</string>
@@ -504,7 +504,7 @@
     <string name="tt_default_times">Horaires par défaut</string>
     <string name="tt_mode_teachers">Professeurs</string>
     <string name="tt_mode_by_class">Par classe</string>
-    <string name="tt_teachers_list_hint">Enregistrez tous les professeurs : nom et matières enseignées. L\'application répartit automatiquement les classes de chaque matière entre ses professeurs selon les heures de chaque classe, sans affectation manuelle. Après toute modification, régénérez l\'emploi du temps.</string>
+    <string name="tt_teachers_list_hint">Saisissez les noms des professeurs, leurs matières et leur numéro WhatsApp, pour leur envoyer leurs fichiers de travail d\'un seul geste ; ils les ouvrent dans l\'appli « دفتر الأستاذ DS » et y travaillent. Une fois terminé, ils renvoient leur travail à l\'administration, qui importe leurs fichiers d\'un seul geste pour produire les relevés de notes. Les notes peuvent aussi être saisies à la main si le professeur les remet sur papier. L\'appli répartit automatiquement les classes de chaque matière selon les heures prévues ; après toute modification des professeurs, régénérez l\'emploi du temps.</string>
     <string name="tt_add_teacher">Ajouter un professeur</string>
     <string name="tt_edit_teacher">Modifier le professeur</string>
     <string name="tt_no_teacher_list">Aucun professeur. Ajoutez les professeurs et leurs matières.</string>
@@ -950,4 +950,23 @@
     <string name="tact_amount">%1$d MRU</string>
     <string name="tact_soon">bientôt</string>
     <string name="tact_total">Montant : %1$d MRU</string>
+    <string name="inst_pick_title">Choix de l\'établissement — %1$s 🏫</string>
+    <string name="inst_pick_prompt">Choisissez l\'établissement pour cette année scolaire 🏫</string>
+    <string name="inst_tap_register">Touchez pour saisir ses informations</string>
+    <string name="inst_edit">Modifier</string>
+    <string name="inst_add">Établissement</string>
+    <string name="setup_title">Ordre de travail</string>
+    <string name="setup_teachers">Professeurs</string>
+    <string name="setup_teachers_n">Enregistrés : %1$d</string>
+    <string name="setup_teachers_desc">Saisissez les noms des professeurs, leurs matières et leur numéro WhatsApp.</string>
+    <string name="setup_classes">Classes</string>
+    <string name="setup_classes_n">Enregistrées : %1$d</string>
+    <string name="setup_classes_desc">Créez les classes concernées par l\'emploi du temps. Inscrire les élèves n\'est pas nécessaire pour le créer.</string>
+    <string name="setup_tt_locked">Enregistrez d\'abord les professeurs et les classes</string>
+    <string name="setup_tt_none">Pas encore créé</string>
+    <string name="setup_tt_generated">Créé, pas encore validé</string>
+    <string name="setup_tt_approved">Validé</string>
+    <string name="setup_tt_desc">Se crée une fois les professeurs et les classes enregistrés, puis se valide : l\'emploi du temps de chaque classe apparaît dans la classe.</string>
+    <string name="setup_send_desc">Envoyez à chaque professeur son fichier de travail d\'un geste par WhatsApp ; il l\'ouvre dans l\'appli « دفتر الأستاذ DS ».</string>
+    <string name="setup_upload_desc">Une fois leur travail terminé, les professeurs renvoient leurs fichiers : importez-les tous d\'un geste pour produire les relevés. Les notes remises sur papier se saisissent à la main dans « Résultats » de la classe.</string>
 </resources>
