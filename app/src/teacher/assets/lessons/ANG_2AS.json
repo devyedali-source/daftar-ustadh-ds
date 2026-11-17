@@ -81,6 +81,20 @@
       "Bill: paper showing the total amount to pay.",
       "a packet of tea, a kilo of sugar, a slice of bread, a loaf of bread, a bottle of water, a glass of milk."
      ]
+    },
+    {
+     "h": "Remember",
+     "lines": [
+      "Customer: I’d like… / I’ll have…"
+     ],
+     "auto": true
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete: Waiter: What would you like for the main course? – You: ____"
+     ],
+     "auto": true
     }
    ]
   },
@@ -176,6 +190,13 @@
       "To borrow: to take something with the intention of returning it — Can I borrow your phone?",
       "To lend: to give something for a short time — Can you lend me some money?"
      ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete: ____ you mind opening the window? – No, not at all."
+     ],
+     "auto": true
     }
    ]
   },
@@ -251,6 +272,21 @@
        "Did she buy any oil?"
       ]
      ]
+    },
+    {
+     "h": "Remember",
+     "lines": [
+      "a few (countable), a little (uncountable).",
+      "Containers: a bag of, a bottle of, a kilo of, a packet of."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Complete with many or much: How ____ eggs are there in your fridge? How ____ salt is there?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -332,6 +368,13 @@
       "Chili: a small red or green pepper with a very hot taste.",
       "Eggplant, lettuce, healthy."
      ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Give the comparative: Watermelons are (big) melons. Plums are (tasty – equality) pineapples."
+     ],
+     "auto": true
     }
    ]
   }

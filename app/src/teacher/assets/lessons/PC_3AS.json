@@ -74,6 +74,20 @@
       ],
       "caption": "Craie et acide : la masse se conserve"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Combustion du carbone : C + O₂ → CO₂."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans la combustion du carbone, quels sont les réactifs et le produit ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -231,6 +245,13 @@
       "src": "draw/PC_3AS_modeles_molecules.png",
       "caption": "Modèles de quelques molécules"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule la masse molaire de H₂O (H = 1 g/mol, O = 16 g/mol) et la quantité de matière dans 36 g d’eau."
+     ],
+     "auto": true
     }
    ]
   },
@@ -332,6 +353,21 @@
       ],
       "caption": "Combustion de la laine de fer dans le dioxygène"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Conservation de la nature des atomes.",
+      "On équilibre avec des coefficients devant les formules."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Équilibre : CH₄ + O₂ → CO₂ + H₂O."
+     ],
+     "auto": true
     }
    ]
   },
@@ -408,6 +444,20 @@
       ],
       "caption": "Préparation d’une solution par dissolution"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Préparation : pesée, dissolution, fiole jaugée."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "On dissout 10 g de sel dans de l’eau pour obtenir 0,5 L de solution. Calcule Cm."
+     ],
+     "auto": true
     }
    ]
   },
@@ -487,6 +537,13 @@
       ],
       "caption": "Solution mère et solution diluée"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "On veut 100 mL d’une solution à 2 g/L à partir d’une solution mère à 10 g/L. Quel volume prélever ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -579,6 +636,20 @@
       ],
       "caption": "pH de quelques solutions"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Précautions : ne pas toucher, goûter ni inhaler."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : jus de citron (pH = 2), eau pure (pH = 7), eau de javel (pH = 12)."
+     ],
+     "auto": true
     }
    ]
   },
@@ -669,6 +740,21 @@
       "Ne pas jeter ces solutions dans les cours d’eau.",
       "Porter gants, lunettes de protection et blouse."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Acide dilué : pH augmente vers 7.",
+      "Neutre dilué : pH reste 7."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une solution a un pH de 3. Après dilution, son pH peut-il être 9 ? Pourquoi ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -745,6 +831,20 @@
       ],
       "caption": "Seringue contenant un liquide"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Liquide incompressible et non expansible."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi l’eau versée dans une bouteille prend-elle la forme de la bouteille ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -851,6 +951,13 @@
        "air, vapeur"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : glace, farine, air, huile."
+     ],
+     "auto": true
     }
    ]
   },
@@ -945,6 +1052,13 @@
       ],
       "caption": "Schéma des changements d’état"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment s’appelle le passage de la vapeur d’eau à l’eau liquide sur une vitre froide ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1042,6 +1156,21 @@
       ],
       "caption": "Le cycle des états de l’eau"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Unités : kg, m³, °C.",
+      "Eau : 0 °C (fusion) et 100 °C (ébullition)."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une bouteille pleine d’eau fermée éclate au congélateur. Explique."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1132,6 +1261,20 @@
       "ρ = m / V  (m en kg, V en m³, ρ en kg/m³) ; on utilise aussi g/L ou g/cm³.",
       "Une espèce qui coule dans l’eau a une masse volumique plus grande que celle de l’eau ; une espèce qui flotte a une masse volumique plus petite."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Unités : kg/m³ ou g/cm³."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un cube d’acier de 1 dm³ a une masse de 7,7 kg. Calcule sa masse volumique en kg/m³."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1211,6 +1354,13 @@
       ],
       "caption": "Mesures sur la pièce métallique"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "L’huile a une masse volumique de 920 kg/m³. Calcule sa densité. Flotte-t-elle sur l’eau ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1299,6 +1449,13 @@
       "Elle se mesure avec un dynamomètre.",
       "Son unité est le newton (N)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Donne les quatre caractéristiques du poids d’un livre posé sur une table."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1406,6 +1563,21 @@
      "lines": [
       "Le poids est représenté par un vecteur (segment fléché) de même direction, sens et point d’application que P⃗, et de longueur proportionnelle à sa valeur."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Vecteur poids : vertical, vers le bas, origine G.",
+      "g ≈ 10 N/kg sur Terre."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule le poids d’un sac de riz de 25 kg (g = 10 N/kg)."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1481,6 +1653,21 @@
       ],
       "caption": "Corps à l’altitude h"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Forces réciproques de même intensité.",
+      "g diminue avec l’altitude."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment varie g quand on monte en altitude ? Justifie avec la formule."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1672,6 +1859,13 @@
        "9"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un conducteur ohmique de 20 Ω est traversé par un courant de 0,3 A. Calcule la tension à ses bornes."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1717,6 +1911,22 @@
       ],
       "caption": "Association en série et résistance équivalente"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "En série : l’une à la suite de l’autre.",
+      "Req = R₁ + R₂ + …",
+      "Req est plus grande que chaque résistance."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 20 Ω en série."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1763,6 +1973,22 @@
       ],
       "caption": "Association en parallèle et résistance équivalente"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "En dérivation : entre les deux mêmes points.",
+      "1/Req = 1/R₁ + 1/R₂ + …",
+      "Req plus petite que chaque résistance."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule la résistance équivalente de R₁ = 60 Ω et R₂ = 30 Ω en dérivation."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1865,6 +2091,13 @@
       ],
       "caption": "P = U × I = 12 × 2 = 24 W"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une lampe 220 V – 100 W fonctionne normalement. Calcule l’intensité qui la traverse."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1956,6 +2189,20 @@
       ],
       "caption": "Fusible et disjoncteur"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Unité légale : joule (J) — P en W, t en s."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un téléviseur de 100 W fonctionne 3 h par jour. Calcule l’énergie consommée en un jour en kWh."
+     ],
+     "auto": true
     }
    ]
   },
@@ -2086,6 +2333,13 @@
       ],
       "caption": "Champ d’observation d’un miroir plan"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un rayon arrive sur un miroir avec un angle d’incidence de 35°. Quel est l’angle de réflexion ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -2196,6 +2450,13 @@
       ],
       "caption": "Décomposition de la lumière par un prisme"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un rayon passe de l’air (n = 1) dans l’eau (n = 1,33) avec i₁ = 30°. Calcule sin i₂."
+     ],
+     "auto": true
     }
    ]
   }

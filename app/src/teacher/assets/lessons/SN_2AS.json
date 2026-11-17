@@ -63,6 +63,13 @@
        "Un mâle et une femelle produisent des cellules reproductrices qui s’unissent lors de la fécondation"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle est la différence entre reproduction asexuée et sexuée ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -128,6 +135,13 @@
       ],
       "caption": "Le bourgeonnement chez l’hydre"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux animaux qui se reproduisent par scissiparité."
+     ],
+     "auto": true
     }
    ]
   },
@@ -205,6 +219,20 @@
       ],
       "caption": "La fécondation"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Spermatozoïdes : petits, mobiles, nombreux (testicules)."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Où sont produits les spermatozoïdes et les ovules ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -293,6 +321,13 @@
       "Fécondation interne (oiseaux) ; développement externe dans un œuf pondu contenant des réserves ; éclosion hors du corps de la mère.",
       "Typique des oiseaux, des reptiles et de certains poissons."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "La fécondation chez la grenouille est-elle interne ou externe ? Justifie."
+     ],
+     "auto": true
     }
    ]
   },
@@ -368,6 +403,20 @@
       "Ils éclosent dans le ventre de la femelle : les petits naissent formés.",
       "Les échanges avec la mère sont limités (surtout des gaz)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Ovovivipare : œufs gardés dans l’oviducte (serpent)."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle est la différence entre un vivipare et un ovovivipare ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -457,6 +506,20 @@
       ],
       "caption": "Étapes du greffage chez le pommier"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Plantes identiques à la plante mère."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Qu’est-ce que le greffage ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -531,6 +594,13 @@
      "lines": [
       "La fleur est l’organe reproducteur des Spermaphytes ; calice + corolle = périanthe."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel est l’organe mâle de la fleur ? Que produit-il ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -599,6 +669,13 @@
      "lines": [
       "Le vent, les insectes (abeilles, papillons…), l’eau et d’autres animaux (chauves-souris…)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux agents de la pollinisation."
+     ],
+     "auto": true
     }
    ]
   },
@@ -652,6 +729,13 @@
       "src": "draw/SN_2AS_fecondation.png",
       "caption": "Le tube pollinique conduit le gamète mâle jusqu’à l’ovule"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment s’appelle le gamète femelle chez la plante à fleurs ? Où se trouve-t-il ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -697,6 +781,13 @@
       ],
       "caption": "Cycle de reproduction du Fucus"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "La fécondation du Fucus est-elle interne ou externe ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -772,6 +863,13 @@
       ],
       "caption": "Composition d’un vaisseau sanguin"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel est le rôle des globules blancs ? Et des plaquettes ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -853,6 +951,20 @@
       "Rh+ : antigène D présent ; Rh− : antigène D absent.",
       "La compatibilité des groupes est essentielle lors des transfusions."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Quatre groupes : A, B, AB, O."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel groupe est donneur universel ? Lequel est receveur universel ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -946,6 +1058,20 @@
       ],
       "caption": "Grande et petite circulation"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Grande circulation et petite circulation."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel est le trajet de la petite circulation ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1023,6 +1149,13 @@
       "Pouls : battement ressenti sur une artère superficielle.",
       "L’activité du cœur s’enregistre avec un électrocardiographe."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite dans l’ordre les trois phases de la révolution cardiaque."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1076,6 +1209,20 @@
       "Ne pas fumer.",
       "Limiter le stress et bien dormir."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Plus on fume, plus le risque augmente."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux facteurs défavorables au cœur et deux mesures d’hygiène."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1159,6 +1306,13 @@
      "lines": [
       "Deux analyses fréquentes : la recherche d’albumine et de glucose dans l’urine."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Que signifie la présence de glucose dans l’urine ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1229,6 +1383,20 @@
       "Deux pôles (le supérieur porte la glande surrénale), deux faces, deux bords.",
       "Le hile laisse passer l’artère et la veine rénales et les conduits excréteurs."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Urètre : évacuation."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel organe conduit l’urine du rein à la vessie ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1274,6 +1442,13 @@
       ],
       "caption": "Schéma d’un néphron"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite les deux parties du corpuscule rénal."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1335,6 +1510,20 @@
       "Rein → uretères → vessie → urètre (miction).",
       "Le besoin d’uriner apparaît vers 250 mL ; une augmentation anormale du volume urinaire est la polyurie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Les reins épurent le sang."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment s’appelle le liquide obtenu après la filtration du sang ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1378,6 +1567,13 @@
      "lines": [
       "Un mauvais fonctionnement des reins accumule des déchets toxiques dans le sang et dérègle l’eau et les sels du corps."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux mesures pour protéger les reins."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1460,6 +1656,21 @@
       ],
       "caption": "L’écosystème océanique"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Le soleil : source d’énergie.",
+      "Écosystèmes terrestres et océaniques."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite les trois catégories d’êtres vivants d’une biocénose."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1542,6 +1753,13 @@
       ],
       "caption": "Le parc national du Diawling"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "En quelle année a été créé le PNBA ? Quelle communauté y pêche ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1607,6 +1825,20 @@
      "lines": [
       "Ces lacs saisonniers maintiennent la biodiversité locale et les moyens de subsistance ; ils sont sensibles au climat et à la pression humaine."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Remplis pendant la saison des pluies."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux utilisations du lac d’Aleg par les populations."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1681,6 +1913,13 @@
        "Champignons, bactéries, vers"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans la chaîne herbe → gazelle → lion, quel est le consommateur primaire ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1775,6 +2014,20 @@
       ],
       "caption": "Parasitisme, symbiose, prédation"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Interactions intraspécifiques : même espèce."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Qu’est-ce qu’un réseau trophique ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1841,6 +2094,20 @@
       ],
       "caption": "Histoire d’une roche sédimentaire"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Sédiment : fragment transporté et déposé."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite les trois caractéristiques des roches sédimentaires."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1889,6 +2156,13 @@
       ],
       "caption": "Histoire d’une roche sédimentaire"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Range dans l’ordre : dépôt, altération, diagenèse, transport."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1964,6 +2238,20 @@
       "Construction, fonderie, verre, filtration, abrasif, agriculture.",
       "Autres roches siliceuses : grès, silex, diatomite (dures, cassure conchoïdale, étincelles au choc)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Dur, perméable, ne réagit pas avec l’acide."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Le sable fait-il effervescence avec l’acide chlorhydrique ? Pourquoi ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -2029,6 +2317,20 @@
       ],
       "caption": "Argile sèche fendillée"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Imperméable quand elle gonfle."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi utilise-t-on l’argile pour fabriquer des poteries ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -2093,6 +2395,22 @@
       ],
       "caption": "Calcaire coquillier"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Chauffé : donne la chaux.",
+      "Origine biologique ou chimique.",
+      "Fossilifère."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment reconnaître un calcaire avec de l’acide ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -2189,6 +2507,20 @@
       ],
       "caption": "Exploitation du sel"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Pas d’effervescence avec l’acide."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Que donne le gypse quand on le chauffe ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -2259,6 +2591,20 @@
       "Carburants (essence, gazole, fuel), bitume, goudron, lubrifiants, plastiques, textiles, cosmétiques, médicaments.",
       "Autres roches carbonées : houille, lignite, tourbe."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Formé à partir de restes organiques."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans un gisement, dans quel ordre se placent le gaz, le pétrole et l’eau ?"
+     ],
+     "auto": true
     }
    ]
   }

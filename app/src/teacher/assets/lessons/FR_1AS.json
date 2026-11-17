@@ -159,6 +159,20 @@
        "avant la réplique d’une autre personne"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "S’informer : Comment t’appelles-tu ? Quel âge as-tu ? Où habites-tu ?"
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Complète par a ou à : Il … faim. Je vais … Kiffa. Complète par on ou ont : Ils … de vieux vélos."
+     ],
+     "auto": true
     }
    ]
   },
@@ -307,6 +321,13 @@
       "er : infinitif du 1ᵉʳ groupe (danser) ; fin de noms (un cahier).",
       "ait / aient : imparfait aux 3ᵉˢ personnes (il marchait ; ils marchaient)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écris trois phrases pour décrire ta salle de classe avec : au milieu, à droite, au fond."
+     ],
+     "auto": true
     }
    ]
   },
@@ -418,6 +439,13 @@
       "Devant des noms « non comptables » (une partie d’un tout) : du = de + le ; des = de + les ; d’ devant une voyelle ou un h muet.",
       "Exemples : la dégradation du couvert ; le mouvement des jeunes ; les pluies d’hiver."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Complète par du, de la, des ou d’ : La dégradation … couvert végétal. Les pluies … hiver. Le mouvement … jeunes."
+     ],
+     "auto": true
     }
    ]
   }

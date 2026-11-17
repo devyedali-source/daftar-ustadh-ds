@@ -142,6 +142,21 @@
        "auront interdit"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Décrire une tenue : le boubou, le voile, le bazin, les nattes, les tresses.",
+      "Adapter la tenue à l’occasion : mariage, fête religieuse, fête nationale."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Mets au superlatif : « L’été est la saison (chaud +) de l’année. »"
+     ],
+     "auto": true
     }
    ]
   },
@@ -293,6 +308,20 @@
       ],
       "caption": "Le métier de pharmacien"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Défendre son choix de métier."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Complète : ____ il pleuve, je vais me promener. Salek est actif, ____ Salma est studieuse."
+     ],
+     "auto": true
     }
    ]
   }

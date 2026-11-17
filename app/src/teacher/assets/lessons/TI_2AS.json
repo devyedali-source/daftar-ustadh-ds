@@ -147,6 +147,20 @@
        "téléphones, ordinateurs, robots modernes"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Modélisation : schéma fonctionnel, diagramme de blocs, dessin technique."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Donne l’intrant et l’extrant d’une lampe de poche."
+     ],
+     "auto": true
     }
    ]
   },
@@ -285,6 +299,20 @@
       "Organiques : légers, isolants, faciles à façonner, moins résistants et sensibles au vieillissement.",
       "Composites : légers, résistants, durables, propriétés sur mesure."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Choix selon : résistance, conductivité, masse, coût."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi utilise-t-on le cuivre dans les fils électriques ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -365,6 +393,13 @@
       "Capteurs de température, de mouvement, de luminosité.",
       "Capteurs d’ouverture, alarmes, détecteurs de fumée."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel dispositif protège une maison contre la foudre ? Et contre un court-circuit ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -452,6 +487,13 @@
       "Gain de temps et de productivité ; travail moins pénible.",
       "Nouveaux métiers ; besoin de se former."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe par secteur : une mine de fer, une laiterie, une banque."
+     ],
+     "auto": true
     }
    ]
   },
@@ -535,6 +577,21 @@
       "Installer des panneaux solaires ; utiliser le vélo ou les transports en commun.",
       "Acheter local ; trier ses déchets ; protéger les espèces menacées."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Répondre aux besoins présents et futurs.",
+      "Énergies renouvelables : propres et inépuisables."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Associe : économie circulaire – biodiversité – énergie renouvelable."
+     ],
+     "auto": true
     }
    ]
   },
@@ -634,6 +691,13 @@
       ],
       "caption": "Industrie, transport, déforestation"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vrai ou faux : « Les volcans sont les principaux responsables du réchauffement climatique. »"
+     ],
+     "auto": true
     }
    ]
   },
@@ -692,6 +756,20 @@
       "Protéger les écosystèmes : lutter contre la déforestation, replanter des arbres.",
       "Consommer moins : réparer, recycler, acheter local, éviter le plastique."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Agir : énergies propres, transports doux, protéger les forêts."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Propose trois gestes pour limiter le réchauffement climatique."
+     ],
+     "auto": true
     }
    ]
   },
@@ -772,6 +850,22 @@
       "Presque pas de gaz à effet de serre.",
       "Diversité des ressources ; technologies en progrès."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Énergie renouvelable : source naturelle inépuisable.",
+      "Solaire : le soleil (panneaux photovoltaïques).",
+      "Durable et peu polluante."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Associe : éolienne, barrage, panneau photovoltaïque → leur source d’énergie."
+     ],
+     "auto": true
     }
    ]
   }

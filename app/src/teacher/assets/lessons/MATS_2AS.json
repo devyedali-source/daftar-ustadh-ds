@@ -88,6 +88,20 @@
       "Pour une somme algébrique : on transforme les soustractions en additions, on regroupe les termes de même signe, puis on calcule.",
       "Écriture simplifiée : on supprime les parenthèses autour des nombres, les signes d’addition et le + du début."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "L’addition est commutative et associative, 0 est l’élément neutre, et a + (–a) = 0."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule : (–7) + (+3) ; (–5) + (–4) ; (+6) – (–2)."
+     ],
+     "auto": true
     }
    ]
   },
@@ -168,6 +182,22 @@
       "10ⁿ × 10ᵖ = 10ⁿ⁺ᵖ ;  (10ⁿ)ᵖ = 10ⁿˣᵖ ;  10ⁿ/10ᵖ = 10ⁿ⁻ᵖ",
       "Écriture scientifique : a × 10ⁿ, n entier relatif. Exemples : 35,014 = 3,5014 × 10¹ ; −689,723 = −6,89723 × 10²."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "aⁿ × aᵐ = aⁿ⁺ᵐ ; (aⁿ)ᵐ = aⁿᵐ ; a⁰ = 1.",
+      "Puissance : aⁿ = a × a × … × a (n facteurs), a⁰ = 1, a⁻ⁿ = 1/aⁿ.",
+      "Propriétés : aⁿ × aᵐ = aⁿ⁺ᵐ ; (aⁿ)ᵐ = aⁿᵐ."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule (–2,5) × (–4) et donne l’écriture scientifique de 45 300."
+     ],
+     "auto": true
     }
    ]
   },
@@ -236,6 +266,23 @@
       "aⁿ⁺ᵖ = aⁿ × aᵖ ;  aⁿ/aᵖ = aⁿ⁻ᵖ ;  (aⁿ)ᵖ = aⁿˣᵖ ;  (a/b)ⁿ = aⁿ/bⁿ ;  (a × b)ⁿ = aⁿ × bⁿ",
       "Sans parenthèses : puissances, puis multiplications et divisions, enfin additions et soustractions."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Comparer : réduire au même dénominateur.",
+      "Un nombre rationnel est un nombre qui peut s’écrire a/b avec a et b entiers relatifs et b ≠ 0.",
+      "On ne change pas une fraction en multipliant (ou en divisant) son numérateur et son dénominateur par un même nombre non nul.",
+      "Produit : a/b × c/d = (a×c)/(b×d)."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Compare 2/5 et 3/7, puis calcule 2/5 + 3/7."
+     ],
+     "auto": true
     }
    ]
   },
@@ -318,6 +365,20 @@
       "Factoriser, c’est écrire une expression sous forme d’un produit : A + B = C × D.",
       "Mise en évidence d’un facteur commun : ax + ay = a(x + y)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Développer, c’est transformer un produit en somme : distributivité simple k(a + b) = ka + kb et k(a – b) = ka – kb ; distributivité double (a + b)(c + d) = ac + ad + bc + bd."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Développe 2(x + 3) puis factorise 5x + 15."
+     ],
+     "auto": true
     }
    ]
   },
@@ -412,6 +473,13 @@
       ],
       "caption": "Repère du plan"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "A(–2) et B(5) sur un axe : calcule AB et l’abscisse du milieu I."
+     ],
+     "auto": true
     }
    ]
   },
@@ -531,6 +599,20 @@
       ],
       "caption": "Pentagone régulier"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Parallélogramme : diagonales qui se coupent en leur milieu."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "ABCD est un parallélogramme de centre O avec AC = 8 cm. Calcule AO."
+     ],
+     "auto": true
     }
    ]
   },
@@ -600,6 +682,20 @@
       "src": "draw/MATS_2AS_coordonnees.png",
       "caption": "Coordonnées d’un point par projection"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Conservation du milieu."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Construis le projeté orthogonal H d’un point M sur une droite (D). Que vaut MH si M est sur (D) ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -688,6 +784,20 @@
       ],
       "caption": "Cercle inscrit dans un triangle"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "d > r : extérieure ; d = r : tangente ; d < r : sécante."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un cercle a pour rayon 3 cm ; la distance de son centre à une droite (D) est 3 cm. Quelle est la position de (D) ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -779,6 +889,13 @@
       "src": "draw/MATS_2AS_translation.png",
       "caption": "Image d’un triangle par une translation"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "A’ est le symétrique de A par rapport à O. Si OA = 4 cm, combien mesure AA’ ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -879,6 +996,21 @@
       ],
       "caption": "Polygones des effectifs cumulés croissants et décroissants"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Médiane : partage la série rangée en deux moitiés.",
+      "L’effectif d’une valeur est le nombre de fois où elle apparaît ; la fréquence est l’effectif divisé par l’effectif total."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Notes : 8, 10, 12, 12, 13. Calcule la moyenne, l’étendue et la médiane."
+     ],
+     "auto": true
     }
    ]
   },
@@ -973,6 +1105,13 @@
       "Volume de la boule : (4/3) × π × r³",
       "Exemple : boule de 72 mm de diamètre : V ≈ 195 432 mm³ ≈ 0,2 L."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule le volume d’un cylindre de rayon 2 cm et de hauteur 5 cm (π ≈ 3,14)."
+     ],
+     "auto": true
     }
    ]
   }

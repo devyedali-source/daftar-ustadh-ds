@@ -138,6 +138,13 @@
       "On peut aussi utiliser les divisions successives par 2.",
       "Addition et multiplication en binaire : même principe qu’en base 10 (1 + 1 = 10 : on pose 0 et on retient 1)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule PGCD(84 ; 60) par l’algorithme d’Euclide."
+     ],
+     "auto": true
     }
    ]
   },
@@ -266,6 +273,24 @@
       "src": "draw/MATS_3AS_valeur_absolue.png",
       "caption": "Valeur absolue : distance à zéro"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Multiplier par un négatif change le sens de l’inégalité.",
+      "|x| : distance de x à zéro.",
+      "L’ensemble des nombres réels ℝ correspond à tous les points d’un axe gradué.",
+      "Règles : √(a × b) = √a × √b ; √(a / b) = √a / √b (b > 0) ; (√a)² = a ; mais √(a + b) ≠ √a + √b.",
+      "Puissances : aⁿ × aᵐ = aⁿ⁺ᵐ ; (aⁿ)ᵐ = aⁿᵐ ; a⁻ⁿ = 1/aⁿ."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Simplifie √50 et calcule |–3,5|."
+     ],
+     "auto": true
     }
    ]
   },
@@ -347,6 +372,21 @@
       "Facteur commun : ax + ay = a(x + y).",
       "On peut aussi reconnaître le développement d’une identité remarquable."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Pour supprimer des parenthèses précédées du signe –, on change les signes des termes.",
+      "On factorise en mettant en évidence un facteur commun ou en reconnaissant une identité remarquable."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Factorise x² – 9 et développe (x + 3)²."
+     ],
+     "auto": true
     }
    ]
   },
@@ -447,6 +487,21 @@
       ],
       "caption": "Résolution graphique : demi-plan solution"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Solutions d’une inéquation : un intervalle.",
+      "Interprétation graphique : intersection de deux droites."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résous le système : x + y = 70 et 2x + y = 90."
+     ],
+     "auto": true
     }
    ]
   },
@@ -509,6 +564,20 @@
       ],
       "caption": "Angle inscrit BAC"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Un angle au centre a son sommet au centre du cercle ; un angle inscrit a son sommet sur le cercle et ses côtés coupent le cercle."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un angle au centre mesure 80°. Quelle est la mesure d’un angle inscrit qui intercepte le même arc ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -574,6 +643,13 @@
       "Si le carré du plus grand côté n’est pas égal à la somme des carrés des deux autres, le triangle n’est pas rectangle.",
       "Exemple : EF = 5, EG = 11, FG = 12 : 12² = 144 et 5² + 11² = 146 : EFG n’est pas rectangle."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule la hauteur atteinte par l’échelle (hypoténuse 5 m, base 3 m)."
+     ],
+     "auto": true
     }
    ]
   },
@@ -700,6 +776,13 @@
       ],
       "caption": "Équations de droites : tableau récapitulatif"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "A(1 ; 2) et B(5 ; 4) : calcule les coordonnées du milieu I et la distance AB."
+     ],
+     "auto": true
     }
    ]
   },
@@ -807,6 +890,22 @@
       ],
       "caption": "Cercle trigonométrique"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Le cosinus et le sinus d’un angle aigu sont compris entre 0 et 1.",
+      "Relations : cos² x + sin² x = 1 ; tan x = sin x / cos x.",
+      "La calculatrice permet de trouver la mesure d’un angle connaissant son cosinus, son sinus ou sa tangente."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans ABC rectangle en A, BC = 10 cm et l’angle B mesure 30°. Calcule AC."
+     ],
+     "auto": true
     }
    ]
   },
@@ -898,6 +997,21 @@
       ],
       "caption": "Agrandissement par homothétie"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Symétries et translation : conservent distances et angles.",
+      "|k| > 1 : agrandissement ; |k| < 1 : réduction."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un triangle d’aire 6 cm² subit une homothétie de rapport 3. Quelle est l’aire de son image ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1004,6 +1118,21 @@
       "src": "draw/MATS_3AS_affine_morceaux.png",
       "caption": "Représentation de la fonction valeur absolue"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Linéaire : f(x) = ax (proportionnalité).",
+      "Une fonction linéaire de coefficient a associe à tout nombre x le nombre ax : f(x) = ax."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "f est affine avec f(1) = 60 et f(3) = 140. Détermine a et b."
+     ],
+     "auto": true
     }
    ]
   }

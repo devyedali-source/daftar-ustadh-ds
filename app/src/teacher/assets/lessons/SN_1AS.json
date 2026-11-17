@@ -81,6 +81,13 @@
       "Écosystème : ensemble homogène et stable formé d’une communauté d’êtres vivants (biocénose) en relation avec un biotope.",
       "Biotope : milieu de vie délimité géographiquement où les conditions écologiques (température, humidité…) sont homogènes."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle branche étudie les fossiles ? Que forme une biocénose avec son biotope ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -127,6 +134,13 @@
       ],
       "caption": "Tableau : naît, se nourrit, grandit, meurt — vivant ou non vivant ?"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe en vivant ou non vivant : un caillou, un arbre, une chèvre, une cuillère."
+     ],
+     "auto": true
     }
    ]
   },
@@ -189,6 +203,13 @@
       ],
       "caption": "Tableau à compléter : règne animal / règne végétal"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Le palmier est-il un animal ou un végétal ? Justifie."
+     ],
+     "auto": true
     }
    ]
   },
@@ -258,6 +279,20 @@
       ],
       "caption": "Le microscope optique"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Unicellulaire / pluricellulaire."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Range dans l’ordre : famille, règne, espèce, classe."
+     ],
+     "auto": true
     }
    ]
   },
@@ -368,6 +403,13 @@
       ],
       "caption": "Patte postérieure et locomotion du lièvre"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "La chèvre marche sur des sabots : comment l’appelle-t-on ? Et l’homme ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -429,6 +471,20 @@
       ],
       "caption": "Déplacement du lombric"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Ramper : sans pattes en général."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment se déplace le lombric ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -488,6 +544,13 @@
       ],
       "caption": "Nage du thon et de l’anguille"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite trois nageoires du poisson et leur rôle général."
+     ],
+     "auto": true
     }
    ]
   },
@@ -550,6 +613,13 @@
       ],
       "caption": "Les phases du vol"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux adaptations de l’oiseau au vol."
+     ],
+     "auto": true
     }
    ]
   },
@@ -620,6 +690,13 @@
        "Eau et ions"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite les quatre types de constituants du sol."
+     ],
+     "auto": true
     }
    ]
   },
@@ -703,6 +780,13 @@
       ],
       "caption": "Feuille simple et feuille composée"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelles sont les trois parties d’une feuille ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -755,6 +839,20 @@
      "lines": [
       "Les substances prélevées par les racines forment la sève brute (eau + sels minéraux), transportée par les vaisseaux du xylème dans toute la plante."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "La racine fixe la plante."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment s’appelle le liquide absorbé par les racines ? Que contient-il ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -844,6 +942,13 @@
      "lines": [
       "Les substances organiques fabriquées (sucres) et l’eau forment la sève élaborée (sève nourricière)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelles sont les conditions nécessaires à la photosynthèse ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -915,6 +1020,13 @@
       ],
       "caption": "Coupe d’une tige : vaisseaux conducteurs"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel vaisseau transporte la sève élaborée ? Dans quel sens ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -999,6 +1111,13 @@
       "src": "draw/SN_1AS_champignon.png",
       "caption": "Les parties d’un champignon"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle est la différence entre la nutrition d’une plante verte et celle d’un champignon ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1098,6 +1217,20 @@
      "lines": [
       "Ingestion continue et non sélective de sol et de matière organique, liée à son activité de creusement ; il contribue à la santé du sol."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Il avale la terre et rejette des turricules."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite dans l’ordre les parties du tube digestif du lombric."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1180,6 +1313,13 @@
       ],
       "caption": "Appareil digestif du pigeon"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite les quatre compartiments de l’estomac de la vache."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1244,6 +1384,13 @@
       ],
       "caption": "Crâne et appareil digestif du chat"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi le tube digestif du chat est-il plus court que celui de la vache ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1326,6 +1473,13 @@
       ],
       "caption": "Coupe d’une dent et mâchoires de l’homme"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel est le rôle des incisives et des molaires ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1383,6 +1537,20 @@
       ],
       "caption": "Tableau : principales étapes de la digestion chez l’homme"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Action mécanique (broyage) et chimique (dissolution)."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment appelle-t-on les petits éléments solubles qui passent dans le sang ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1448,6 +1616,20 @@
      "lines": [
       "S’alimenter et s’hydrater correctement, bouger suffisamment et faire des exercices physiques."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Faire de l’exercice physique."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux maladies de l’appareil digestif et une règle d’hygiène."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1497,6 +1679,13 @@
      "lines": [
       "Un être vivant respire quand il prélève du dioxygène (O₂) dans son milieu et y rejette du dioxyde de carbone (CO₂)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Où ont lieu les échanges gazeux dans le poumon ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1569,6 +1758,13 @@
       "Le volume d’air échangé à chaque cycle (0,5 l) est faible par rapport aux 6 l contenus dans les poumons.",
       "Le rythme et l’amplitude dépendent des besoins des organes en dioxygène."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi respire-t-on plus vite après une course ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1630,6 +1826,13 @@
       ],
       "caption": "Composition de l’air inspiré et expiré, et du sang"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel gaz le sang reçoit-il dans les alvéoles ? Lequel rejette-t-il ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1683,6 +1886,20 @@
       "Faire des exercices physiques en milieu aéré.",
       "Vivre au grand air, sans fumer, sans gaz toxiques."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Bonne posture, exercices physiques."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite deux maladies respiratoires et deux règles d’hygiène."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1749,6 +1966,21 @@
       ],
       "caption": "Échanges gazeux au niveau d’une branchie"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Bouche ouverte : opercules abaissés.",
+      "Bouche fermée : opercules soulevés."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Que se passe-t-il au niveau des opercules quand le poisson ouvre la bouche ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1811,6 +2043,20 @@
       ],
       "caption": "Échanges gazeux respiratoires du criquet"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Mouvements de l’abdomen."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment s’appellent les orifices respiratoires du criquet ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1874,6 +2120,13 @@
       ],
       "caption": "Coupe de la peau de grenouille"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi la peau de la grenouille permet-elle la respiration ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1935,6 +2188,13 @@
       ],
       "caption": "Respiration des fruits : dégagement de CO₂"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi place-t-on la plante à l’obscurité pour étudier sa respiration ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -2003,6 +2263,20 @@
       "Les stomates régulent respiration, photosynthèse et transpiration.",
       "Chez les plantes aquatiques, les échanges se font entre les gaz dissous dans l’eau et les parties immergées."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Cellules gonflées : ostiole ouvert."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Que se passe-t-il quand le volume des cellules de garde augmente ?"
+     ],
+     "auto": true
     }
    ]
   }

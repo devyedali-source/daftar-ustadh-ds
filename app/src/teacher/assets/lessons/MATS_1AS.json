@@ -160,6 +160,21 @@
       "1 n’est pas premier ; 2 est le seul nombre premier pair.",
       "Décomposition en facteurs premiers : 60 = 2² × 3 × 5 ;  396 = 2² × 3² × 11."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "On compare et on range les entiers dans l’ordre croissant ou décroissant, et on peut les placer sur une demi-droite graduée.",
+      "L’addition est commutative (a + b = b + a), associative, et 0 est son élément neutre."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule astucieusement : 25 × 7 × 4 et 12 × 99 + 12."
+     ],
+     "auto": true
     }
    ]
   },
@@ -277,6 +292,13 @@
       ],
       "caption": "Construction de la médiatrice"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Trace un segment [AB] de 6 cm, place son milieu I et construis sa médiatrice."
+     ],
+     "auto": true
     }
    ]
   },
@@ -337,6 +359,20 @@
       "Multiplication : on calcule sans les virgules, puis on place la virgule selon la somme des nombres de décimales des facteurs.",
       "Le quotient de deux décimaux peut être un décimal (si la division s’arrête)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Pour additionner ou soustraire, on aligne les virgules."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Range dans l’ordre croissant : 3,5 ; 3,05 ; 3,45 ; 3,4."
+     ],
+     "auto": true
     }
    ]
   },
@@ -423,6 +459,20 @@
       "La soustraction se fait de la même manière (premier terme ≥ second).",
       "n × a/b = (n × a)/b ;   a/b × c/d = (a × c)/(b × d)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Pour additionner deux fractions de même dénominateur, on additionne les numérateurs ; sinon, on les réduit d’abord au même dénominateur."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Simplifie 12/18, puis calcule 2/7 + 3/7 et 2/3 × 4/5."
+     ],
+     "auto": true
     }
    ]
   },
@@ -553,6 +603,13 @@
       "src": "draw/MATS_1AS_parallelogrammes.png",
       "caption": "Rectangle, losange et carré"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un triangle a deux angles de 50° et 70°. Calcule le troisième angle."
+     ],
+     "auto": true
     }
    ]
   },
@@ -659,6 +716,13 @@
       "Échelle 1/100 : dimension sur le plan = dimension réelle × 1/100.",
       "Exemple : 5 cm sur une carte au 1/1 000 000 : 5 × 1 000 000 cm = 50 km."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule 15 % de 400 MRU."
+     ],
+     "auto": true
     }
    ]
   },
@@ -743,6 +807,13 @@
       ],
       "caption": "Disque de centre O et de rayon r"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule le périmètre d’un cercle de rayon 10 cm."
+     ],
+     "auto": true
     }
    ]
   },
@@ -885,6 +956,13 @@
        "3"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Notes : 8 ; 12 ; 12 ; 15 ; 13. Calcule la moyenne et donne le mode."
+     ],
+     "auto": true
     }
    ]
   },
@@ -993,6 +1071,20 @@
       ],
       "caption": "Prisme droit"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Patron : figure plane qui forme le solide."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calcule le volume d’un pavé droit de 5 cm × 3 cm × 2 cm."
+     ],
+     "auto": true
     }
    ]
   }

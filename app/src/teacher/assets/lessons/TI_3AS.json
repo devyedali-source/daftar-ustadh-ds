@@ -78,6 +78,20 @@
       "Ajouter une image : Insertion → Images ; redimensionner par les coins.",
       "Enregistrer : Ctrl + S ; formats : .pptx (modifiable), .pdf (lecture seule)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "PréAO : présentation assistée par ordinateur."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Crée une diapositive de titre « Mon école » avec ton nom en sous-titre et enregistre-la."
+     ],
+     "auto": true
     }
    ]
   },
@@ -144,6 +158,20 @@
       "Quitter PowerPoint : Fichier → Quitter, Alt + F4 ou la croix.",
       "Si PowerPoint demande d’enregistrer, répondre Oui."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Fermer : Fichier → Fermer, après avoir enregistré."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Ouvre ta présentation « Mon_ecole », ajoute une diapositive et enregistre une copie « Mon_ecole_v2 »."
+     ],
+     "auto": true
     }
    ]
   },
@@ -220,6 +248,20 @@
      "lines": [
       "Titre → Plan → Développement 1 → Développement 2 → Conclusion."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Déplacer : glisser la miniature (trieuse)."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Crée une présentation de 4 diapositives, déplace la dernière en 2e position et duplique la première."
+     ],
+     "auto": true
     }
    ]
   },
@@ -297,6 +339,21 @@
      "lines": [
       "Taille suffisante et couleurs contrastées."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Alignement et puces.",
+      "Peu de texte, lisible."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Crée une diapositive « Nos matières » avec une liste à puces de 5 matières, en taille 28 et centrée."
+     ],
+     "auto": true
     }
    ]
   },
@@ -369,6 +426,21 @@
        "ajouter un commentaire"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Redimensionner avec les poignées d’angle.",
+      "Insertion → Formes (flèches, rectangles…)."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Insère le logo de ton école sur la première diapositive et ajoute une flèche qui pointe vers le titre."
+     ],
+     "auto": true
     }
    ]
   },
@@ -440,6 +512,20 @@
       "Supprimer : choisir « Aucune ».",
       "La transition concerne le passage entre diapositives ; l’animation concerne les objets d’une diapositive."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Naviguer : flèches, clic ; Échap pour quitter."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Applique une transition « Fondu » à toutes les diapositives et lance le diaporama."
+     ],
+     "auto": true
     }
    ]
   },
@@ -510,6 +596,21 @@
        "partager en vidéo"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Exporter en PDF pour l’envoi.",
+      "Imprimer : Fichier → Imprimer."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Présente ta présentation en 3 minutes devant la classe, puis exporte-la en PDF."
+     ],
+     "auto": true
     }
    ]
   },
@@ -560,6 +661,21 @@
       "Ne pas insulter : c’est interdit et contraire à la netiquette.",
       "Droit à l’image : ne pas publier la photo d’une personne sans son accord."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Préférer les sites officiels et éducatifs.",
+      "Communiquer avec respect."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite trois règles pour naviguer sur Internet en toute sécurité."
+     ],
+     "auto": true
     }
    ]
   },
@@ -621,6 +737,21 @@
       "src": "draw/TI_3AS_algo_structure.png",
       "caption": "Organigramme : somme de deux nombres"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Instructions précises et ordonnées.",
+      "Il est traduit en programme."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écris l’algorithme pour se laver les mains."
+     ],
+     "auto": true
     }
    ]
   },
@@ -704,6 +835,13 @@
       "Fin",
       "La flèche ← signifie affectation."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Déclare une variable pour le nom d’un élève et une pour sa moyenne, puis affecte-leur des valeurs."
+     ],
+     "auto": true
     }
    ]
   },
@@ -767,6 +905,22 @@
       "src": "draw/TI_3AS_condition_age.png",
       "caption": "Organigramme : majeur ou mineur"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Condition : choix selon vrai ou faux.",
+      "Opérateurs : =, ≠, <, >, ≤, ≥.",
+      "Exemple : admis si moyenne ≥ 10."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écris un algorithme qui lit un nombre et affiche « positif » ou « négatif »."
+     ],
+     "auto": true
     }
    ]
   },
@@ -823,6 +977,13 @@
       "src": "draw/TI_3AS_algo_double.png",
       "caption": "Organigramme : le double d’un nombre"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écris un algorithme qui calcule l’aire d’un rectangle."
+     ],
+     "auto": true
     }
    ]
   },
@@ -884,6 +1045,23 @@
        "17"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Tester : exécuter avec des valeurs choisies.",
+      "Tableau de suivi : valeur des variables à chaque étape.",
+      "Comparer le résultat obtenu au résultat attendu.",
+      "Corriger en cas d’erreur."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Teste l’algorithme « Lire(a) ; Lire(b) ; s ← a + b ; Écrire(s) » avec a = 5 et b = 7."
+     ],
+     "auto": true
     }
    ]
   },
@@ -946,6 +1124,21 @@
       "src": "draw/TI_3AS_boucle_tantque.png",
       "caption": "Organigramme de la boucle Tant que"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Boucle : répéter des instructions.",
+      "Exemple : Pour i de 1 à 10 Faire …"
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écris une boucle qui affiche les nombres de 1 à 5."
+     ],
+     "auto": true
     }
    ]
   },
@@ -993,6 +1186,23 @@
       "src": "draw/TI_3AS_boucle_1_10.png",
       "caption": "Organigramme : afficher les nombres de 1 à 10"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "La boucle évite les répétitions d’instructions.",
+      "Initialiser les variables avant la boucle.",
+      "Somme : s ← s + i dans la boucle.",
+      "Vérifier que la boucle s’arrête."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écris un algorithme qui calcule la somme des nombres de 1 à 100."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1049,6 +1259,22 @@
       "Afficher Surface",
       "Rôle : calculer une valeur approchée de la surface d’un cercle."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Repérer les entrées (Lire).",
+      "Repérer le traitement (calculs).",
+      "Exécuter avec des exemples."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Que fait l’algorithme : Lire(n) ; Si n mod 2 = 0 Alors Écrire(\"pair\") Sinon Écrire(\"impair\") FinSi ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1110,6 +1336,20 @@
       "src": "draw/TI_3AS_trois_structures.png",
       "caption": "Séquence, sélection et répétition"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Analyser : données et résultat attendu."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écris et teste un algorithme qui lit trois notes, calcule leur moyenne et affiche « Admis » ou « Refusé »."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1168,6 +1408,21 @@
       "Routeur / box : relie le réseau local à Internet ; câbles Ethernet (RJ45) ou Wi-Fi.",
       "Internet est le « réseau des réseaux »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Équipements : serveur, clients, switch, routeur, câbles, WiFi.",
+      "Sécurité : mots de passe."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Cite trois avantages d’un réseau dans la salle informatique."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1241,6 +1496,22 @@
       ],
       "caption": "Schéma d’un réseau simple"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Serveur : stocke et partage les ressources.",
+      "Routeur : relie le réseau à Internet.",
+      "Câbles RJ45 ou WiFi ; carte réseau."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Associe : switch – routeur – serveur → leur rôle."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1316,6 +1587,21 @@
       ],
       "caption": "Le switch relie les appareils du réseau local"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "L’information circule en paquets.",
+      "PAN : réseau personnel."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : le réseau de ta salle informatique, Internet, la connexion Bluetooth entre ton téléphone et un écouteur."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1363,6 +1649,22 @@
       ],
       "caption": "Schéma d’un réseau local"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Explorateur → Réseau : ressources partagées.",
+      "Ouvrir ou copier un fichier partagé.",
+      "Respecter les fichiers des autres."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Copie un fichier depuis le dossier partagé de la classe vers ton dossier personnel."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1447,6 +1749,21 @@
      "lines": [
       "Vérifier l’adresse ; ne pas partager son mot de passe ; ne pas ouvrir un e-mail suspect ; être poli."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Adresse : nom@fournisseur.domaine.",
+      "@ : arobase."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Identifie les parties de l’adresse : sidi.ahmed@yahoo.fr."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1501,6 +1818,23 @@
       "Un e-mail a un destinataire, un objet et un corps.",
       "Cc pour informer d’autres personnes ; Cci pour les cacher."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Nouveau message.",
+      "À : destinataire ; Cc : copie ; Cci : copie cachée.",
+      "Formule d’appel, message, formule de politesse.",
+      "Relire puis Envoyer."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Rédige un e-mail à ton professeur pour lui demander le cours de la semaine dernière."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1554,6 +1888,20 @@
       "Ne pas ouvrir les pièces jointes des inconnus.",
       "Vérifier le destinataire et le bon fichier avant d’envoyer."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Attention à la taille des fichiers."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Envoie ton devoir (fichier Word) en pièce jointe à ton professeur."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1598,6 +1946,21 @@
       "Créer des dossiers (École, Travail) ; déplacer les messages ; supprimer les messages inutiles.",
       "Ranger aide à retrouver un message et garde la boîte propre."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Classer dans des dossiers.",
+      "Spam : courrier indésirable."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Crée un dossier « École » dans ta boîte mail et déplace-y un message de ton professeur."
+     ],
+     "auto": true
     }
    ]
   }

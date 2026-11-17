@@ -76,6 +76,13 @@
       ],
       "caption": "Eau + huile et eau boueuse"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : eau + sable ; eau + sucre ; eau + huile."
+     ],
+     "auto": true
     }
    ]
   },
@@ -139,6 +146,13 @@
       ],
       "caption": "Montage de filtration"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle méthode utiliser pour séparer le sable de l’eau ? Comment appelle-t-on le liquide obtenu après filtration ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -184,6 +198,20 @@
       ],
       "caption": "Montage de distillation"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Chauffage → vapeur → refroidissement → liquide."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment appelle-t-on l’eau obtenue par distillation ? Que reste-t-il dans le ballon ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -257,6 +285,13 @@
       ],
       "caption": "Le baromètre"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle est la masse de 10 L d’air dans les conditions normales ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -321,6 +356,13 @@
       ],
       "caption": "Modèles moléculaires : dioxygène, eau, dioxyde de carbone"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : O₂ ; H₂O ; N₂ ; CO₂."
+     ],
+     "auto": true
     }
    ]
   },
@@ -408,6 +450,13 @@
        "Au"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Donne le symbole de : fer, cuivre, sodium, or."
+     ],
+     "auto": true
     }
    ]
   },
@@ -487,6 +536,13 @@
       ],
       "caption": "Modèles moléculaires"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Combien d’atomes et de quelles sortes dans la molécule CO₂ ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -579,6 +635,21 @@
       ],
       "caption": "Test de conducteurs et d’isolants"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Circuit : générateur + récepteurs + fils, sans interruption.",
+      "Chaque dipôle a un symbole normalisé."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe en conducteurs et isolants : clou, gomme, fil de cuivre, règle en plastique."
+     ],
+     "auto": true
     }
    ]
   },
@@ -647,6 +718,21 @@
       ],
       "caption": "Nœuds et branches d’un circuit en dérivation"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Série : une panne arrête tout.",
+      "Dérivation : les autres appareils continuent de fonctionner."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Les lampes d’une maison sont-elles montées en série ou en dérivation ? Justifie."
+     ],
+     "auto": true
     }
    ]
   },
@@ -692,6 +778,13 @@
       ],
       "caption": "Ampèremètre branché en série"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment brancher un ampèremètre pour mesurer l’intensité qui traverse une lampe ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -775,6 +868,13 @@
       ],
       "caption": "Effet thermique : la laine de fer"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans un circuit en dérivation, I₁ = 0,25 A et I₂ = 0,10 A. Calcule I dans la branche principale."
+     ],
+     "auto": true
     }
    ]
   },
@@ -847,6 +947,13 @@
        "0 V"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Convertis : 4500 mV en V ; 2 kV en V."
+     ],
+     "auto": true
     }
    ]
   },
@@ -914,6 +1021,13 @@
      "lines": [
       "Dans un circuit en série, la tension aux bornes du générateur est égale à la somme des tensions aux bornes des autres dipôles : U(pile) = U(L) + U(M)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une pile de 4,5 V alimente en série une lampe (U₁ = 1,8 V) et un moteur. Calcule la tension U₂ du moteur."
+     ],
+     "auto": true
     }
    ]
   },
@@ -957,6 +1071,13 @@
       ],
       "caption": "Lampe et moteur en dérivation"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une lampe et un moteur sont montés en dérivation sur une pile de 4,5 V. Quelle est la tension aux bornes du moteur ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1027,6 +1148,13 @@
        "Fort : risque de griller"
       ]
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une lampe 3,5 V est branchée sur une pile de 9 V. Que se passe-t-il ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1098,6 +1226,13 @@
       "Une force est une action mécanique exercée par un objet (l’auteur) sur un autre objet (le receveur).",
       "Exemple : la main (auteur) pousse le mur (receveur)."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Indique l’effet : un joueur frappe un ballon ; on écrase une boîte en carton."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1155,6 +1290,20 @@
       ],
       "caption": "Un aimant attire des clous"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Forces de contact : auteur et receveur se touchent."
+     ],
+     "auto": true
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : action d’un aimant sur un clou ; action d’une main qui pousse un chariot."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1225,6 +1374,13 @@
       ],
       "caption": "Représentation du vecteur-force"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une force de 6 N est représentée à l’échelle 1 cm pour 2 N. Quelle est la longueur du vecteur ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1328,6 +1484,13 @@
       ],
       "caption": "Pellicule et chlorure d’argent"
      }
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : Soleil, Lune, bougie allumée, cahier éclairé."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1424,6 +1587,13 @@
       "Année-lumière : distance parcourue en un an ≈ 9,46·10¹⁵ m.",
       "Unité astronomique : distance Terre–Soleil = 150 millions de km."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classe : verre, papier calque, carton."
+     ],
+     "auto": true
     }
    ]
   },
@@ -1493,6 +1663,13 @@
       "L’ombre grandit si l’objet se rapproche de la source ou si l’écran s’éloigne.",
       "Pour une ombre nette : source ponctuelle, source éloignée de l’objet, objet proche de l’écran."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi une source ponctuelle ne donne-t-elle pas de pénombre ?"
+     ],
+     "auto": true
     }
    ]
   },
@@ -1547,6 +1724,13 @@
       "Plus l’objet est éloigné du trou, plus l’image est petite.",
       "Principe utilisé dans les appareils photo et les projecteurs."
      ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi l’image dans une chambre noire est-elle inversée ?"
+     ],
+     "auto": true
     }
    ]
   }
