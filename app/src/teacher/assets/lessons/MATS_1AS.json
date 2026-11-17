@@ -179,25 +179,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Un éleveur possède 1 248 chèvres. Peut-il les répartir en groupes égaux de 3 ? de 8 ? Combien de groupes dans chaque cas ?",
-      "2. Ahmed achète 3 cahiers à 25 MRU et un stylo à 10 MRU. Écris le calcul en une seule expression et calcule la dépense.",
-      "3. Une boîte contient 10 paquets ; chaque paquet contient 10 sachets de 10 bonbons. Écris le nombre de bonbons sous forme d’une puissance de 10."
+      "1. Écris en chiffres : quatre millions trois cent cinq mille vingt ; puis écris en lettres : 7 040 300.",
+      "2. Calcule en respectant les priorités : A = 18 − 3 × 4 + 2³ ; B = (18 − 3) × (4 + 2).",
+      "3. Parmi 105 ; 234 ; 360 ; 1 001, lesquels sont divisibles par 2 ? par 3 ? par 5 ? Décompose 360 en facteurs premiers."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un éleveur possède 1 248 chèvres. Peut-il les répartir en groupes égaux de 3 ? de 8 ? Combien de groupes dans chaque cas ?",
-     "a": "Oui : 1 + 2 + 4 + 8 = 15 est divisible par 3, donc 1 248 ÷ 3 = 416 groupes ; et 1 248 ÷ 8 = 156 groupes."
+     "q": "Écris en chiffres : quatre millions trois cent cinq mille vingt ; puis écris en lettres : 7 040 300.",
+     "a": "4 305 020 ; sept millions quarante mille trois cents."
     },
     {
-     "q": "Ahmed achète 3 cahiers à 25 MRU et un stylo à 10 MRU. Écris le calcul en une seule expression et calcule la dépense.",
-     "a": "3 × 25 + 10 = 75 + 10 = 85 MRU (la multiplication avant l’addition)."
+     "q": "Calcule en respectant les priorités : A = 18 − 3 × 4 + 2³ ; B = (18 − 3) × (4 + 2).",
+     "a": "A = 18 − 12 + 8 = 14 ; B = 15 × 6 = 90."
     },
     {
-     "q": "Une boîte contient 10 paquets ; chaque paquet contient 10 sachets de 10 bonbons. Écris le nombre de bonbons sous forme d’une puissance de 10.",
-     "a": "10 × 10 × 10 = 10³ = 1 000 bonbons."
+     "q": "Parmi 105 ; 234 ; 360 ; 1 001, lesquels sont divisibles par 2 ? par 3 ? par 5 ? Décompose 360 en facteurs premiers.",
+     "a": "Par 2 : 234 ; 360. Par 3 : 105 ; 234 ; 360. Par 5 : 105 ; 360. 360 = 2³ × 3² × 5."
     }
    ]
   },
@@ -326,25 +326,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Deux villages A et B sont reliés par une route droite de 8 km. On veut creuser un puits sur cette route, à égale distance des deux villages. Où le placer ?",
-      "2. On veut placer une borne-fontaine à égale distance de deux maisons A et B, pas forcément sur la route. Sur quelle ligne doit-elle se trouver ?",
-      "3. Observe une voie ferrée qui croise une route à angle droit. Comment sont les deux rails entre eux ? Et la route par rapport aux rails ?"
+      "1. Place trois points A, B, C non alignés. Trace le segment [AB], la demi-droite [AC) et la droite (BC).",
+      "2. Trace une droite (d) et un point M hors de (d). Construis la droite (d1) passant par M et perpendiculaire à (d), puis la droite (d2) passant par M et parallèle à (d).",
+      "3. Trace un segment [EF] de 8 cm. Place son milieu I et construis sa médiatrice (Δ). Place un point M sur (Δ) : compare ME et MF."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Deux villages A et B sont reliés par une route droite de 8 km. On veut creuser un puits sur cette route, à égale distance des deux villages. Où le placer ?",
-     "a": "Au milieu I du segment [AB] : AI = IB = 8 ÷ 2 = 4 km."
+     "q": "Place trois points A, B, C non alignés. Trace le segment [AB], la demi-droite [AC) et la droite (BC).",
+     "a": "[AB] est limité par A et B ; [AC) part de A et passe par C sans fin ; (BC) est illimitée des deux côtés."
     },
     {
-     "q": "On veut placer une borne-fontaine à égale distance de deux maisons A et B, pas forcément sur la route. Sur quelle ligne doit-elle se trouver ?",
-     "a": "Sur la médiatrice du segment [AB] : tout point de la médiatrice est à égale distance de A et de B."
+     "q": "Trace une droite (d) et un point M hors de (d). Construis la droite (d1) passant par M et perpendiculaire à (d), puis la droite (d2) passant par M et parallèle à (d).",
+     "a": "(d1) ⊥ (d) avec l’équerre ; (d2) // (d) ; on remarque que (d1) ⊥ (d2)."
     },
     {
-     "q": "Observe une voie ferrée qui croise une route à angle droit. Comment sont les deux rails entre eux ? Et la route par rapport aux rails ?",
-     "a": "Les deux rails sont parallèles ; la route est perpendiculaire aux rails."
+     "q": "Trace un segment [EF] de 8 cm. Place son milieu I et construis sa médiatrice (Δ). Place un point M sur (Δ) : compare ME et MF.",
+     "a": "EI = IF = 4 cm ; (Δ) passe par I et est perpendiculaire à (EF) ; ME = MF."
     }
    ]
   },
@@ -423,25 +423,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Au marché, Mariem achète 2,5 kg de riz à 38,5 MRU le kilogramme. Combien paie-t-elle ?",
-      "2. Trois élèves ont couru le 100 m en 14,25 s ; 14,3 s et 14,07 s. Range les temps du plus rapide au plus lent.",
-      "3. Une bouteille de 1,5 L d’eau est partagée également entre 4 personnes. Quelle quantité reçoit chacune ?"
+      "1. Donne la partie entière et la partie décimale de 237,58 ; écris-le sous forme de fraction décimale.",
+      "2. Encadre 7,386 à l’unité près, puis au dixième près.",
+      "3. Pose et calcule : 45,7 + 8,96 ; 52,3 − 17,45 ; 3,2 × 1,5."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Au marché, Mariem achète 2,5 kg de riz à 38,5 MRU le kilogramme. Combien paie-t-elle ?",
-     "a": "2,5 × 38,5 = 96,25 MRU."
+     "q": "Donne la partie entière et la partie décimale de 237,58 ; écris-le sous forme de fraction décimale.",
+     "a": "Partie entière 237 ; partie décimale 0,58 ; 237,58 = 23 758/100."
     },
     {
-     "q": "Trois élèves ont couru le 100 m en 14,25 s ; 14,3 s et 14,07 s. Range les temps du plus rapide au plus lent.",
-     "a": "14,07 s < 14,25 s < 14,3 s."
+     "q": "Encadre 7,386 à l’unité près, puis au dixième près.",
+     "a": "7 < 7,386 < 8 ; 7,3 < 7,386 < 7,4."
     },
     {
-     "q": "Une bouteille de 1,5 L d’eau est partagée également entre 4 personnes. Quelle quantité reçoit chacune ?",
-     "a": "1,5 ÷ 4 = 0,375 L."
+     "q": "Pose et calcule : 45,7 + 8,96 ; 52,3 − 17,45 ; 3,2 × 1,5.",
+     "a": "54,66 ; 34,85 ; 4,8."
     }
    ]
   },
@@ -546,25 +546,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Un champ est partagé : 2/5 pour le mil, 1/4 pour le maïs et le reste pour le haricot. Quelle fraction du champ reste pour le haricot ?",
-      "2. Dans une classe de 36 élèves, les 3/4 ont réussi l’examen. Combien d’élèves ont réussi ?",
-      "3. Ali a mangé 3/8 d’un gâteau et Fatou 2/8. Qui en a mangé le plus ? Quelle part ont-ils mangée ensemble ?"
+      "1. Simplifie jusqu’à obtenir une fraction irréductible : 24/36 ; 45/75.",
+      "2. Compare 5/8 et 7/12 (réduis au même dénominateur).",
+      "3. Calcule : 3/4 + 1/6 ; 5/6 − 1/4 ; 4/9 × 3/8."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un champ est partagé : 2/5 pour le mil, 1/4 pour le maïs et le reste pour le haricot. Quelle fraction du champ reste pour le haricot ?",
-     "a": "2/5 + 1/4 = 8/20 + 5/20 = 13/20 ; il reste 1 − 13/20 = 7/20 du champ."
+     "q": "Simplifie jusqu’à obtenir une fraction irréductible : 24/36 ; 45/75.",
+     "a": "24/36 = 2/3 ; 45/75 = 3/5."
     },
     {
-     "q": "Dans une classe de 36 élèves, les 3/4 ont réussi l’examen. Combien d’élèves ont réussi ?",
-     "a": "36 × 3/4 = 27 élèves."
+     "q": "Compare 5/8 et 7/12 (réduis au même dénominateur).",
+     "a": "5/8 = 15/24 et 7/12 = 14/24, donc 5/8 > 7/12."
     },
     {
-     "q": "Ali a mangé 3/8 d’un gâteau et Fatou 2/8. Qui en a mangé le plus ? Quelle part ont-ils mangée ensemble ?",
-     "a": "Ali, car 3/8 > 2/8 ; ensemble : 3/8 + 2/8 = 5/8 du gâteau."
+     "q": "Calcule : 3/4 + 1/6 ; 5/6 − 1/4 ; 4/9 × 3/8.",
+     "a": "9/12 + 2/12 = 11/12 ; 10/12 − 3/12 = 7/12 ; 12/72 = 1/6."
     }
    ]
   },
@@ -706,25 +706,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Un terrain triangulaire a une base de 40 m et une hauteur de 25 m. Calcule son aire.",
-      "2. Un jardin rectangulaire mesure 12 m sur 8 m. Quelle longueur de grillage faut-il pour l’entourer ?",
-      "3. Le pignon d’un toit a la forme d’un triangle isocèle ; chaque angle à la base mesure 35°. Calcule l’angle au sommet."
+      "1. Dans un triangle ABC, Â = 65° et B̂ = 45°. Calcule Ĉ. Quelle est la nature du triangle si, en plus, Ĉ = B̂ ?",
+      "2. Un triangle a une base de 9 cm et une hauteur relative de 6 cm. Calcule son aire.",
+      "3. ABCD est un parallélogramme avec AB = 7 cm, BC = 4 cm et Â = 110°. Donne CD, AD, Ĉ et B̂."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un terrain triangulaire a une base de 40 m et une hauteur de 25 m. Calcule son aire.",
-     "a": "Aire = (40 × 25) / 2 = 500 m²."
+     "q": "Dans un triangle ABC, Â = 65° et B̂ = 45°. Calcule Ĉ. Quelle est la nature du triangle si, en plus, Ĉ = B̂ ?",
+     "a": "Ĉ = 180° − 65° − 45° = 70°. Si Ĉ = B̂, le triangle est isocèle en A."
     },
     {
-     "q": "Un jardin rectangulaire mesure 12 m sur 8 m. Quelle longueur de grillage faut-il pour l’entourer ?",
-     "a": "Périmètre = 2 × (12 + 8) = 40 m."
+     "q": "Un triangle a une base de 9 cm et une hauteur relative de 6 cm. Calcule son aire.",
+     "a": "Aire = (9 × 6) / 2 = 27 cm²."
     },
     {
-     "q": "Le pignon d’un toit a la forme d’un triangle isocèle ; chaque angle à la base mesure 35°. Calcule l’angle au sommet.",
-     "a": "180° − 2 × 35° = 110°."
+     "q": "ABCD est un parallélogramme avec AB = 7 cm, BC = 4 cm et Â = 110°. Donne CD, AD, Ĉ et B̂.",
+     "a": "CD = 7 cm, AD = 4 cm (côtés opposés égaux) ; Ĉ = Â = 110° ; B̂ = 180° − 110° = 70°."
     }
    ]
   },
@@ -842,25 +842,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. 3 kg de sucre coûtent 120 MRU. Combien coûtent 7 kg ?",
-      "2. Un commerçant accorde une remise de 20 % sur un téléphone à 2 500 MRU. Quel est le nouveau prix ?",
-      "3. Sur une carte à l’échelle 1/1 000 000, deux villes sont séparées de 20 cm. Quelle est la distance réelle ?"
+      "1. Le tableau suivant est-il un tableau de proportionnalité ? 2 → 6 ; 5 → 15 ; 7 → 21. Donne le coefficient.",
+      "2. Calcule la quatrième proportionnelle x : 4 → 10 ; 6 → x.",
+      "3. Calcule 25 % de 640, puis augmente 640 de 25 %."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "3 kg de sucre coûtent 120 MRU. Combien coûtent 7 kg ?",
-     "a": "Prix d’un kilogramme : 120 ÷ 3 = 40 MRU ; 7 × 40 = 280 MRU."
+     "q": "Le tableau suivant est-il un tableau de proportionnalité ? 2 → 6 ; 5 → 15 ; 7 → 21. Donne le coefficient.",
+     "a": "Oui : 6/2 = 15/5 = 21/7 = 3 ; le coefficient est 3."
     },
     {
-     "q": "Un commerçant accorde une remise de 20 % sur un téléphone à 2 500 MRU. Quel est le nouveau prix ?",
-     "a": "Remise : 2 500 × 20/100 = 500 MRU ; nouveau prix : 2 500 − 500 = 2 000 MRU."
+     "q": "Calcule la quatrième proportionnelle x : 4 → 10 ; 6 → x.",
+     "a": "Produits en croix : 4 × x = 10 × 6, donc x = 60 ÷ 4 = 15."
     },
     {
-     "q": "Sur une carte à l’échelle 1/1 000 000, deux villes sont séparées de 20 cm. Quelle est la distance réelle ?",
-     "a": "20 × 1 000 000 = 20 000 000 cm = 200 km."
+     "q": "Calcule 25 % de 640, puis augmente 640 de 25 %.",
+     "a": "25 % de 640 = 160 ; 640 + 160 = 800."
     }
    ]
   },
@@ -956,25 +956,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Une roue de vélo a un rayon de 30 cm. Quelle distance parcourt-elle en un tour ? (π ≈ 3,14)",
-      "2. Une table ronde a un diamètre de 1,2 m. Calcule l’aire de son plateau. (π ≈ 3,14)",
-      "3. Une chèvre est attachée à un piquet par une corde de 5 m. Quelle surface d’herbe peut-elle brouter ? (π ≈ 3,14)"
+      "1. Un cercle a un diamètre de 14 cm. Donne son rayon et calcule son périmètre (π ≈ 3,14).",
+      "2. Calcule la longueur d’un demi-cercle et d’un quart de cercle de rayon 6 cm (π ≈ 3,14).",
+      "3. Calcule l’aire d’un disque de rayon 5 cm (π ≈ 3,14). Le point M tel que OM = 4 cm appartient-il au disque ?"
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Une roue de vélo a un rayon de 30 cm. Quelle distance parcourt-elle en un tour ? (π ≈ 3,14)",
-     "a": "Périmètre = 2 × 3,14 × 30 = 188,4 cm."
+     "q": "Un cercle a un diamètre de 14 cm. Donne son rayon et calcule son périmètre (π ≈ 3,14).",
+     "a": "r = 7 cm ; P = 3,14 × 14 = 43,96 cm."
     },
     {
-     "q": "Une table ronde a un diamètre de 1,2 m. Calcule l’aire de son plateau. (π ≈ 3,14)",
-     "a": "Rayon 0,6 m ; aire = 3,14 × 0,6 × 0,6 = 1,1304 m²."
+     "q": "Calcule la longueur d’un demi-cercle et d’un quart de cercle de rayon 6 cm (π ≈ 3,14).",
+     "a": "Demi-cercle : 3,14 × 6 = 18,84 cm ; quart : 18,84 ÷ 2 = 9,42 cm."
     },
     {
-     "q": "Une chèvre est attachée à un piquet par une corde de 5 m. Quelle surface d’herbe peut-elle brouter ? (π ≈ 3,14)",
-     "a": "Aire du disque = 3,14 × 5 × 5 = 78,5 m²."
+     "q": "Calcule l’aire d’un disque de rayon 5 cm (π ≈ 3,14). Le point M tel que OM = 4 cm appartient-il au disque ?",
+     "a": "A = 3,14 × 25 = 78,5 cm² ; oui, car OM = 4 ≤ 5."
     }
    ]
   },
@@ -1128,25 +1128,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Températures (°C) relevées pendant une semaine : 28 ; 30 ; 29 ; 31 ; 30 ; 32 ; 30. Calcule la moyenne et donne le mode.",
-      "2. Sur 40 élèves, 18 viennent à pied, 12 en voiture et 10 à vélo. Calcule la fréquence de chaque moyen de transport en pourcentage.",
-      "3. Avec les données précédentes, calcule l’angle de chaque secteur du diagramme circulaire."
+      "1. Notes de 10 élèves : 9 ; 12 ; 14 ; 9 ; 11 ; 15 ; 9 ; 12 ; 13 ; 16. Dresse le tableau des effectifs et donne le mode.",
+      "2. Avec la même série, calcule la fréquence de la note 12 et la moyenne.",
+      "3. Dans un diagramme circulaire d’une série d’effectif total 40, quel angle correspond à un effectif de 10 ?"
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Températures (°C) relevées pendant une semaine : 28 ; 30 ; 29 ; 31 ; 30 ; 32 ; 30. Calcule la moyenne et donne le mode.",
-     "a": "Somme = 210 ; moyenne = 210 ÷ 7 = 30 °C ; le mode est 30 °C (3 fois)."
+     "q": "Notes de 10 élèves : 9 ; 12 ; 14 ; 9 ; 11 ; 15 ; 9 ; 12 ; 13 ; 16. Dresse le tableau des effectifs et donne le mode.",
+     "a": "9 (3) ; 11 (1) ; 12 (2) ; 13 (1) ; 14 (1) ; 15 (1) ; 16 (1) ; le mode est 9."
     },
     {
-     "q": "Sur 40 élèves, 18 viennent à pied, 12 en voiture et 10 à vélo. Calcule la fréquence de chaque moyen de transport en pourcentage.",
-     "a": "À pied : 18/40 = 45 % ; en voiture : 12/40 = 30 % ; à vélo : 10/40 = 25 %."
+     "q": "Avec la même série, calcule la fréquence de la note 12 et la moyenne.",
+     "a": "Fréquence = 2/10 = 0,2 = 20 % ; moyenne = 120 ÷ 10 = 12."
     },
     {
-     "q": "Avec les données précédentes, calcule l’angle de chaque secteur du diagramme circulaire.",
-     "a": "À pied : 45 % × 360° = 162° ; voiture : 108° ; vélo : 90° (total 360°)."
+     "q": "Dans un diagramme circulaire d’une série d’effectif total 40, quel angle correspond à un effectif de 10 ?",
+     "a": "10/40 × 360° = 90°."
     }
    ]
   },
@@ -1273,25 +1273,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Un réservoir en forme de pavé droit mesure 2 m × 1,5 m × 1 m. Quel volume d’eau contient-il en litres ?",
-      "2. On veut recouvrir de papier toutes les faces d’une boîte cubique de 30 cm d’arête. Quelle surface de papier faut-il ?",
-      "3. Combien de petits cubes de 1 cm d’arête faut-il pour remplir un pavé de 4 cm × 3 cm × 2 cm ?"
+      "1. Un cube a 4 cm d’arête. Calcule l’aire d’une face, l’aire totale et le volume.",
+      "2. Un pavé droit mesure L = 6 cm, l = 4 cm, h = 3 cm. Calcule son aire totale et son volume.",
+      "3. Un prisme droit a pour base un triangle d’aire 12 cm² et pour hauteur 10 cm. Calcule son volume."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un réservoir en forme de pavé droit mesure 2 m × 1,5 m × 1 m. Quel volume d’eau contient-il en litres ?",
-     "a": "V = 2 × 1,5 × 1 = 3 m³ = 3 000 L."
+     "q": "Un cube a 4 cm d’arête. Calcule l’aire d’une face, l’aire totale et le volume.",
+     "a": "16 cm² ; 6 × 16 = 96 cm² ; 4³ = 64 cm³."
     },
     {
-     "q": "On veut recouvrir de papier toutes les faces d’une boîte cubique de 30 cm d’arête. Quelle surface de papier faut-il ?",
-     "a": "6 faces de 30 × 30 = 900 cm² : 6 × 900 = 5 400 cm²."
+     "q": "Un pavé droit mesure L = 6 cm, l = 4 cm, h = 3 cm. Calcule son aire totale et son volume.",
+     "a": "Aire = 2 × (24 + 18 + 12) = 108 cm² ; V = 6 × 4 × 3 = 72 cm³."
     },
     {
-     "q": "Combien de petits cubes de 1 cm d’arête faut-il pour remplir un pavé de 4 cm × 3 cm × 2 cm ?",
-     "a": "4 × 3 × 2 = 24 cubes."
+     "q": "Un prisme droit a pour base un triangle d’aire 12 cm² et pour hauteur 10 cm. Calcule son volume.",
+     "a": "V = aire de la base × hauteur = 12 × 10 = 120 cm³."
     }
    ]
   }

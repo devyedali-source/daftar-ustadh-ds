@@ -149,25 +149,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. On veut faire des bouquets identiques avec 84 roses et 60 tulipes en utilisant toutes les fleurs. Combien de bouquets au maximum ? Composition de chaque bouquet ?",
-      "2. Deux bus partent ensemble de la gare : l’un toutes les 12 min, l’autre toutes les 18 min. Au bout de combien de temps repartent-ils ensemble ?",
-      "3. On range 250 élèves en rangs de 12. Combien de rangs complets ? Combien d’élèves restent ?"
+      "1. Effectue la division euclidienne de 487 par 15.",
+      "2. Calcule PGCD(126 ; 90) par l’algorithme d’Euclide, puis PPCM(126 ; 90).",
+      "3. Écris 45 en base 2."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "On veut faire des bouquets identiques avec 84 roses et 60 tulipes en utilisant toutes les fleurs. Combien de bouquets au maximum ? Composition de chaque bouquet ?",
-     "a": "PGCD(84 ; 60) = 12 bouquets, chacun avec 7 roses et 5 tulipes."
+     "q": "Effectue la division euclidienne de 487 par 15.",
+     "a": "487 = 15 × 32 + 7 (0 ≤ 7 < 15)."
     },
     {
-     "q": "Deux bus partent ensemble de la gare : l’un toutes les 12 min, l’autre toutes les 18 min. Au bout de combien de temps repartent-ils ensemble ?",
-     "a": "PPCM(12 ; 18) = 36 minutes."
+     "q": "Calcule PGCD(126 ; 90) par l’algorithme d’Euclide, puis PPCM(126 ; 90).",
+     "a": "126 = 90 × 1 + 36 ; 90 = 36 × 2 + 18 ; 36 = 18 × 2 + 0 : PGCD = 18 ; PPCM = 126 × 90 ÷ 18 = 630."
     },
     {
-     "q": "On range 250 élèves en rangs de 12. Combien de rangs complets ? Combien d’élèves restent ?",
-     "a": "250 = 12 × 20 + 10 : 20 rangs complets et 10 élèves restants."
+     "q": "Écris 45 en base 2.",
+     "a": "45 = 32 + 8 + 4 + 1 = 2⁵ + 2³ + 2² + 2⁰ : (45)₁₀ = (101101)₂."
     }
    ]
   },
@@ -318,25 +318,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Un terrain carré a une aire de 50 m². Calcule la longueur de son côté (valeur exacte, puis arrondi au centimètre).",
-      "2. Pendant une journée, la température a varié de −4 °C à 6 °C. Écris l’intervalle des températures et calcule l’écart.",
-      "3. Une pièce doit mesurer 12 cm à 0,05 cm près. Écris la condition sur sa longueur L avec une valeur absolue, puis avec un encadrement."
+      "1. Simplifie : √72 ; √12 × √3 ; 2√5 + 3√5.",
+      "2. Écris sous forme d’intervalle : x ≥ −2 ; −1 < x ≤ 4 ; puis résous |x| ≤ 3.",
+      "3. Donne la troncature et l’arrondi à 10⁻² de 3,14159 et de 2,876."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un terrain carré a une aire de 50 m². Calcule la longueur de son côté (valeur exacte, puis arrondi au centimètre).",
-     "a": "c = √50 = 5√2 ≈ 7,07 m."
+     "q": "Simplifie : √72 ; √12 × √3 ; 2√5 + 3√5.",
+     "a": "√72 = 6√2 ; √36 = 6 ; 5√5."
     },
     {
-     "q": "Pendant une journée, la température a varié de −4 °C à 6 °C. Écris l’intervalle des températures et calcule l’écart.",
-     "a": "[−4 ; 6] ; écart : 6 − (−4) = 10 °C."
+     "q": "Écris sous forme d’intervalle : x ≥ −2 ; −1 < x ≤ 4 ; puis résous |x| ≤ 3.",
+     "a": "[−2 ; +∞[ ; ]−1 ; 4] ; x ∈ [−3 ; 3]."
     },
     {
-     "q": "Une pièce doit mesurer 12 cm à 0,05 cm près. Écris la condition sur sa longueur L avec une valeur absolue, puis avec un encadrement.",
-     "a": "|L − 12| ≤ 0,05, soit 11,95 ≤ L ≤ 12,05."
+     "q": "Donne la troncature et l’arrondi à 10⁻² de 3,14159 et de 2,876.",
+     "a": "3,14 et 3,14 ; 2,87 et 2,88."
     }
    ]
   },
@@ -437,25 +437,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Un carré de côté x cm est agrandi de 3 cm sur chaque côté. Exprime l’augmentation de son aire.",
-      "2. Calcule astucieusement 101² et 99 × 101 à l’aide des identités remarquables.",
-      "3. Un cadre carré de côté x entoure une image carrée de côté x − 4. Factorise l’aire du cadre x² − (x − 4)²."
+      "1. Réduis et ordonne : A = 4x² − 3x + 5 − x² + 7x − 8.",
+      "2. Développe : (2x − 3)² ; (x + 5)(x − 5) ; (3x + 1)(x − 2).",
+      "3. Factorise : 16x² − 9 ; x² + 10x + 25 ; (x + 1)(2x − 3) + (x + 1)(x + 4)."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un carré de côté x cm est agrandi de 3 cm sur chaque côté. Exprime l’augmentation de son aire.",
-     "a": "(x + 3)² − x² = x² + 6x + 9 − x² = 6x + 9."
+     "q": "Réduis et ordonne : A = 4x² − 3x + 5 − x² + 7x − 8.",
+     "a": "A = 3x² + 4x − 3."
     },
     {
-     "q": "Calcule astucieusement 101² et 99 × 101 à l’aide des identités remarquables.",
-     "a": "101² = (100 + 1)² = 10 201 ; 99 × 101 = (100 − 1)(100 + 1) = 10 000 − 1 = 9 999."
+     "q": "Développe : (2x − 3)² ; (x + 5)(x − 5) ; (3x + 1)(x − 2).",
+     "a": "4x² − 12x + 9 ; x² − 25 ; 3x² − 5x − 2."
     },
     {
-     "q": "Un cadre carré de côté x entoure une image carrée de côté x − 4. Factorise l’aire du cadre x² − (x − 4)².",
-     "a": "(x − x + 4)(x + x − 4) = 4(2x − 4) = 8(x − 2)."
+     "q": "Factorise : 16x² − 9 ; x² + 10x + 25 ; (x + 1)(2x − 3) + (x + 1)(x + 4).",
+     "a": "(4x − 3)(4x + 3) ; (x + 5)² ; (x + 1)(3x + 1)."
     }
    ]
   },
@@ -566,34 +566,27 @@
      "auto": true
     },
     {
-     "h": "Exercice d’application",
-     "lines": [
-      "Résous le système : x + y = 70 et 2x + y = 90."
-     ],
-     "auto": true
-    },
-    {
      "h": "Applications",
      "lines": [
-      "1. Un père a 40 ans et son fils 10 ans. Dans combien d’années l’âge du père sera-t-il le double de celui du fils ?",
-      "2. Dans une ferme il y a des poules et des moutons : 30 têtes et 80 pattes. Combien y a-t-il de poules et de moutons ?",
-      "3. Un taxi prend 50 MRU au départ plus 20 MRU par kilomètre. Avec 250 MRU au plus, combien de kilomètres peut-on parcourir ?"
+      "1. Résous l’équation : 5x − 7 = 2x + 8.",
+      "2. Résous l’inéquation −3x + 4 > 10 et représente les solutions sur un axe.",
+      "3. Résous le système : x + y = 12 et x − y = 4."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un père a 40 ans et son fils 10 ans. Dans combien d’années l’âge du père sera-t-il le double de celui du fils ?",
-     "a": "40 + x = 2(10 + x) ⟹ x = 20 ans."
+     "q": "Résous l’équation : 5x − 7 = 2x + 8.",
+     "a": "3x = 15, donc x = 5."
     },
     {
-     "q": "Dans une ferme il y a des poules et des moutons : 30 têtes et 80 pattes. Combien y a-t-il de poules et de moutons ?",
-     "a": "p + m = 30 et 2p + 4m = 80 ⟹ m = 10 moutons et p = 20 poules."
+     "q": "Résous l’inéquation −3x + 4 > 10 et représente les solutions sur un axe.",
+     "a": "−3x > 6, donc x < −2 (on change le sens) : S = ]−∞ ; −2[."
     },
     {
-     "q": "Un taxi prend 50 MRU au départ plus 20 MRU par kilomètre. Avec 250 MRU au plus, combien de kilomètres peut-on parcourir ?",
-     "a": "50 + 20x ≤ 250 ⟹ x ≤ 10 km."
+     "q": "Résous le système : x + y = 12 et x − y = 4.",
+     "a": "En additionnant : 2x = 16, x = 8 ; y = 4. Solution (8 ; 4)."
     }
    ]
   },
@@ -665,34 +658,27 @@
      "auto": true
     },
     {
-     "h": "Exercice d’application",
-     "lines": [
-      "Un angle au centre mesure 80°. Quelle est la mesure d’un angle inscrit qui intercepte le même arc ?"
-     ],
-     "auto": true
-    },
-    {
      "h": "Applications",
      "lines": [
-      "1. Une galette de rayon 15 cm est coupée en 6 parts égales. Quel est l’angle au centre de chaque part ? Quelle est la longueur du bord d’une part ? (π ≈ 3,14)",
-      "2. Sur une piste circulaire de rayon 50 m, un coureur parcourt un arc de 90°. Quelle distance parcourt-il ? (π ≈ 3,14)",
-      "3. Depuis le bord d’une place circulaire, on voit une porte sous un angle inscrit ; l’angle au centre qui intercepte le même arc mesure 70°. Sous quel angle voit-on la porte ?"
+      "1. Un cercle de rayon 6 cm : calcule la longueur de l’arc intercepté par un angle au centre de 120° (π ≈ 3,14).",
+      "2. Un angle au centre mesure 140°. Quelle est la mesure d’un angle inscrit qui intercepte le même arc ?",
+      "3. Convertis 45° en radians, puis 2π/3 rad en degrés."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Une galette de rayon 15 cm est coupée en 6 parts égales. Quel est l’angle au centre de chaque part ? Quelle est la longueur du bord d’une part ? (π ≈ 3,14)",
-     "a": "360° ÷ 6 = 60° ; ℓ = 3,14 × 15 × 60 ÷ 180 = 15,7 cm."
+     "q": "Un cercle de rayon 6 cm : calcule la longueur de l’arc intercepté par un angle au centre de 120° (π ≈ 3,14).",
+     "a": "ℓ = 3,14 × 6 × 120 ÷ 180 = 12,56 cm."
     },
     {
-     "q": "Sur une piste circulaire de rayon 50 m, un coureur parcourt un arc de 90°. Quelle distance parcourt-il ? (π ≈ 3,14)",
-     "a": "ℓ = 3,14 × 50 × 90 ÷ 180 = 78,5 m."
+     "q": "Un angle au centre mesure 140°. Quelle est la mesure d’un angle inscrit qui intercepte le même arc ?",
+     "a": "140° ÷ 2 = 70°."
     },
     {
-     "q": "Depuis le bord d’une place circulaire, on voit une porte sous un angle inscrit ; l’angle au centre qui intercepte le même arc mesure 70°. Sous quel angle voit-on la porte ?",
-     "a": "La moitié de l’angle au centre : 35°."
+     "q": "Convertis 45° en radians, puis 2π/3 rad en degrés.",
+     "a": "45° = π/4 rad ; 2π/3 rad = 120°."
     }
    ]
   },
@@ -769,25 +755,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Un écran de télévision mesure 80 cm de large et 60 cm de haut. Quelle est sa diagonale ?",
-      "2. Un maçon vérifie un angle : il mesure 3 m, 4 m et 5 m. L’angle est-il droit ?",
-      "3. Un poteau de 12 m est maintenu par un câble fixé au sol à 5 m de son pied. Quelle est la longueur du câble ?"
+      "1. ABC est rectangle en A, AB = 6 cm et AC = 8 cm. Calcule BC.",
+      "2. ABC est rectangle en B, AC = 13 cm et AB = 5 cm. Calcule BC.",
+      "3. Le triangle de côtés 7 cm, 24 cm et 25 cm est-il rectangle ?"
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Un écran de télévision mesure 80 cm de large et 60 cm de haut. Quelle est sa diagonale ?",
-     "a": "√(80² + 60²) = √10 000 = 100 cm."
+     "q": "ABC est rectangle en A, AB = 6 cm et AC = 8 cm. Calcule BC.",
+     "a": "BC² = 36 + 64 = 100, donc BC = 10 cm."
     },
     {
-     "q": "Un maçon vérifie un angle : il mesure 3 m, 4 m et 5 m. L’angle est-il droit ?",
-     "a": "3² + 4² = 9 + 16 = 25 = 5² : oui, l’angle est droit (réciproque de Pythagore)."
+     "q": "ABC est rectangle en B, AC = 13 cm et AB = 5 cm. Calcule BC.",
+     "a": "BC² = 169 − 25 = 144, donc BC = 12 cm."
     },
     {
-     "q": "Un poteau de 12 m est maintenu par un câble fixé au sol à 5 m de son pied. Quelle est la longueur du câble ?",
-     "a": "√(12² + 5²) = √169 = 13 m."
+     "q": "Le triangle de côtés 7 cm, 24 cm et 25 cm est-il rectangle ?",
+     "a": "7² + 24² = 49 + 576 = 625 = 25² : oui, il est rectangle (réciproque)."
     }
    ]
   },
@@ -925,25 +911,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Sur un plan (unité : 1 km), l’école est en E(1 ; 2) et le marché en M(4 ; 6). Calcule la distance EM.",
-      "2. On veut construire une boutique à mi-chemin entre E et M. Quelles sont ses coordonnées ?",
-      "3. Une route a pour équation y = 2x + 1. Passe-t-elle par le point P(3 ; 7) ?"
+      "1. A(−1 ; 2) et B(3 ; 5) : calcule les composantes du vecteur AB⃗ et la distance AB.",
+      "2. Calcule les coordonnées du milieu I de [AB] avec A(−1 ; 2) et B(3 ; 6).",
+      "3. Les droites (d) : y = 2x + 1 et (d′) : y = 2x − 3 sont-elles parallèles ? Et (d) et (d″) : y = −½x + 4 ?"
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Sur un plan (unité : 1 km), l’école est en E(1 ; 2) et le marché en M(4 ; 6). Calcule la distance EM.",
-     "a": "EM = √((4 − 1)² + (6 − 2)²) = √25 = 5 km."
+     "q": "A(−1 ; 2) et B(3 ; 5) : calcule les composantes du vecteur AB⃗ et la distance AB.",
+     "a": "AB⃗(4 ; 3) ; AB = √(16 + 9) = 5."
     },
     {
-     "q": "On veut construire une boutique à mi-chemin entre E et M. Quelles sont ses coordonnées ?",
-     "a": "I((1 + 4)/2 ; (2 + 6)/2) = I(2,5 ; 4)."
+     "q": "Calcule les coordonnées du milieu I de [AB] avec A(−1 ; 2) et B(3 ; 6).",
+     "a": "I(1 ; 4)."
     },
     {
-     "q": "Une route a pour équation y = 2x + 1. Passe-t-elle par le point P(3 ; 7) ?",
-     "a": "2 × 3 + 1 = 7 : oui, P est sur la route."
+     "q": "Les droites (d) : y = 2x + 1 et (d′) : y = 2x − 3 sont-elles parallèles ? Et (d) et (d″) : y = −½x + 4 ?",
+     "a": "(d) // (d′) (même coefficient 2) ; (d) ⊥ (d″) car 2 × (−½) = −1."
     }
    ]
   },
@@ -1071,25 +1057,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Une échelle de 6 m fait un angle de 60° avec le sol. À quelle hauteur touche-t-elle le mur ?",
-      "2. À 20 m du pied d’un minaret, on voit son sommet sous un angle de 45°. Quelle est sa hauteur ?",
-      "3. Une rampe d’accès de 10 m de long monte de 1 m. Quel angle fait-elle avec le sol ?"
+      "1. ABC est rectangle en A, BC = 10 cm et B̂ = 30°. Calcule AC et AB.",
+      "2. On sait que cos α = 0,8 (α aigu). Calcule sin α et tan α.",
+      "3. Sans calculatrice, donne : sin 60°, cos 45°, tan 45°."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Une échelle de 6 m fait un angle de 60° avec le sol. À quelle hauteur touche-t-elle le mur ?",
-     "a": "h = 6 × sin 60° = 3√3 ≈ 5,2 m."
+     "q": "ABC est rectangle en A, BC = 10 cm et B̂ = 30°. Calcule AC et AB.",
+     "a": "AC = 10 × sin 30° = 5 cm ; AB = 10 × cos 30° = 5√3 ≈ 8,66 cm."
     },
     {
-     "q": "À 20 m du pied d’un minaret, on voit son sommet sous un angle de 45°. Quelle est sa hauteur ?",
-     "a": "h = 20 × tan 45° = 20 m."
+     "q": "On sait que cos α = 0,8 (α aigu). Calcule sin α et tan α.",
+     "a": "sin² α = 1 − 0,64 = 0,36, donc sin α = 0,6 ; tan α = 0,6 ÷ 0,8 = 0,75."
     },
     {
-     "q": "Une rampe d’accès de 10 m de long monte de 1 m. Quel angle fait-elle avec le sol ?",
-     "a": "sin α = 1/10 = 0,1 ⟹ α ≈ 5,7°."
+     "q": "Sans calculatrice, donne : sin 60°, cos 45°, tan 45°.",
+     "a": "√3/2 ; √2/2 ; 1."
     }
    ]
   },
@@ -1200,25 +1186,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Une photo de 10 cm × 15 cm est agrandie avec un rapport 2. Quelles sont les dimensions et l’aire de la nouvelle photo ?",
-      "2. Sur un plan à l’échelle 1/100, une chambre mesure 4 cm × 3 cm. Quelles sont ses dimensions réelles ?",
-      "3. Un projecteur agrandit une image avec un rapport k = 5. Que devient un segment de 2 cm ?"
+      "1. Construis le symétrique d’un triangle ABC par rapport à une droite (Δ), puis compare les longueurs AB et A′B′.",
+      "2. Construis l’image d’un segment [AB] de 3 cm par la translation de vecteur v⃗. Quelle est la longueur de [A′B′] ?",
+      "3. Une homothétie de centre O et de rapport k = −2 transforme M en M′ avec OM = 3 cm. Calcule OM′ et précise la position de M′."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Une photo de 10 cm × 15 cm est agrandie avec un rapport 2. Quelles sont les dimensions et l’aire de la nouvelle photo ?",
-     "a": "20 cm × 30 cm ; aire 600 cm², soit 4 fois (2²) l’aire de départ (150 cm²)."
+     "q": "Construis le symétrique d’un triangle ABC par rapport à une droite (Δ), puis compare les longueurs AB et A′B′.",
+     "a": "A′B′ = AB : la symétrie axiale conserve les longueurs."
     },
     {
-     "q": "Sur un plan à l’échelle 1/100, une chambre mesure 4 cm × 3 cm. Quelles sont ses dimensions réelles ?",
-     "a": "4 × 100 = 400 cm = 4 m et 3 × 100 = 300 cm = 3 m."
+     "q": "Construis l’image d’un segment [AB] de 3 cm par la translation de vecteur v⃗. Quelle est la longueur de [A′B′] ?",
+     "a": "A′B′ = 3 cm et (A′B′) // (AB)."
     },
     {
-     "q": "Un projecteur agrandit une image avec un rapport k = 5. Que devient un segment de 2 cm ?",
-     "a": "2 × 5 = 10 cm."
+     "q": "Une homothétie de centre O et de rapport k = −2 transforme M en M′ avec OM = 3 cm. Calcule OM′ et précise la position de M′.",
+     "a": "OM′ = |−2| × 3 = 6 cm ; M′ est de l’autre côté de O (k < 0)."
     }
    ]
   },
@@ -1344,25 +1330,25 @@
     {
      "h": "Applications",
      "lines": [
-      "1. Le litre de carburant coûte 40 MRU. Exprime le prix p(x) de x litres. Quelle est la nature de p ? Calcule le prix de 25 L.",
-      "2. Un plombier facture 300 MRU de déplacement plus 150 MRU par heure. Exprime le coût f(x) pour x heures, puis calcule f(3).",
-      "3. Un réservoir de 500 L se vide de 20 L par minute. Exprime le volume V(t) après t minutes. V est-elle croissante ou décroissante ? Quand le réservoir est-il vide ?"
+      "1. f est la fonction linéaire telle que f(4) = 12. Détermine son coefficient et calcule f(−5).",
+      "2. g est affine : g(x) = −2x + 5. Calcule g(0) et g(3). g est-elle croissante ou décroissante ?",
+      "3. h est affine avec h(1) = 4 et h(3) = 10. Détermine h(x)."
      ],
      "auto": true
     }
    ],
    "applications": [
     {
-     "q": "Le litre de carburant coûte 40 MRU. Exprime le prix p(x) de x litres. Quelle est la nature de p ? Calcule le prix de 25 L.",
-     "a": "p(x) = 40x : fonction linéaire ; p(25) = 1 000 MRU."
+     "q": "f est la fonction linéaire telle que f(4) = 12. Détermine son coefficient et calcule f(−5).",
+     "a": "a = 12 ÷ 4 = 3 ; f(x) = 3x ; f(−5) = −15."
     },
     {
-     "q": "Un plombier facture 300 MRU de déplacement plus 150 MRU par heure. Exprime le coût f(x) pour x heures, puis calcule f(3).",
-     "a": "f(x) = 150x + 300 (affine) ; f(3) = 750 MRU."
+     "q": "g est affine : g(x) = −2x + 5. Calcule g(0) et g(3). g est-elle croissante ou décroissante ?",
+     "a": "g(0) = 5 ; g(3) = −1 ; décroissante car a = −2 < 0."
     },
     {
-     "q": "Un réservoir de 500 L se vide de 20 L par minute. Exprime le volume V(t) après t minutes. V est-elle croissante ou décroissante ? Quand le réservoir est-il vide ?",
-     "a": "V(t) = 500 − 20t : décroissante (a = −20 < 0) ; vide quand 500 − 20t = 0, soit t = 25 min."
+     "q": "h est affine avec h(1) = 4 et h(3) = 10. Détermine h(x).",
+     "a": "a = (10 − 4)/(3 − 1) = 3 ; b = 4 − 3 = 1 ; h(x) = 3x + 1."
     }
    ]
   }
