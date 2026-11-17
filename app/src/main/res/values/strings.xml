@@ -961,7 +961,7 @@
     <string name="setup_teachers_desc">اكتب أسماء الأساتذة ومواد تدريسهم ورقم واتساب كل واحد.</string>
     <string name="setup_classes">الأقسام</string>
     <string name="setup_classes_n">مسجّلة: %1$d</string>
-    <string name="setup_classes_desc">أنشئ الأقسام المعنية بالجدول الزمني. تسجيل التلاميذ ليس شرطًا لإنشاء الجدول.</string>
+    <string name="setup_classes_desc">أنشئ الأقسام المعنية بالجدول الزمني. تسجيل التلاميذ ليس شرطًا لإنشاء الجدول، لكنه ضروري قبل إرسال ملفات الأساتذة لأنها تحمل لوائح تلاميذهم.</string>
     <string name="setup_tt_locked">سجّل الأساتذة والأقسام أولًا</string>
     <string name="setup_tt_none">لم يُنشأ بعد</string>
     <string name="setup_tt_generated">أُنشئ ولم يُعتمد بعد</string>
@@ -978,4 +978,6 @@
     <string name="pb_levels_n">%1$d مستويات</string>
     <string name="pb_subjects_n">%1$d مواد</string>
     <string name="ts_my_timetable_here">جدولي الزمني في هذه المؤسسة</string>
+    <string name="setup_send_need_tt">يُفتح بعد اعتماد الجدول الزمني</string>
+    <string name="setup_send_need_students">أقسام بلا تلاميذ: %1$d — سجّل تلاميذها أولًا</string>
 </resources>

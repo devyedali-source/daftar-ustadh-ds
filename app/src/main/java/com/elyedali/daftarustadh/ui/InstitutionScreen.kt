@@ -58,7 +58,9 @@ import java.util.UUID
 fun InstitutionScreen(
     existing: InstitutionEntity?,
     onSave: (InstitutionEntity) -> Unit,
-    onCancel: (() -> Unit)?
+    onCancel: (() -> Unit)?,
+    /** السنة المختارة قبل هذه الصفحة: تُستعمل ولا يُطلب اختيارها مرة ثانية. */
+    fixedYear: String? = null
 ) {
     val context = LocalContext.current
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -69,7 +71,7 @@ fun InstitutionScreen(
     var schoolListId by rememberSaveable { mutableStateOf(existing?.schoolListId) }
     var manualEntry by rememberSaveable { mutableStateOf(existing != null && existing.schoolListId == null) }
     var stage by rememberSaveable { mutableStateOf(existing?.stage ?: "") }
-    var schoolYear by rememberSaveable { mutableStateOf(existing?.schoolYear ?: SchoolYear.current()) }
+    var schoolYear by rememberSaveable { mutableStateOf(fixedYear ?: existing?.schoolYear ?: SchoolYear.current()) }
     var showSchoolPicker by remember { mutableStateOf(false) }
     var wilayaMenu by remember { mutableStateOf(false) }
     var yearMenu by remember { mutableStateOf(false) }
@@ -158,13 +160,13 @@ fun InstitutionScreen(
             }
 
             // السنة الدراسية
-            ExposedDropdownMenuBox(expanded = yearMenu, onExpandedChange = { yearMenu = it }) {
+            ExposedDropdownMenuBox(expanded = yearMenu, onExpandedChange = { if (fixedYear == null) yearMenu = it }) {
                 OutlinedTextField(
                     value = schoolYear,
                     onValueChange = {},
                     readOnly = true,
                     label = { Text(stringResource(R.string.school_year)) },
-                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = yearMenu) },
+                    trailingIcon = { if (fixedYear == null) ExposedDropdownMenuDefaults.TrailingIcon(expanded = yearMenu) },
                     modifier = Modifier.fillMaxWidth().menuAnchor(MenuAnchorType.PrimaryNotEditable)
                 )
                 ExposedDropdownMenu(expanded = yearMenu, onDismissRequest = { yearMenu = false }) {

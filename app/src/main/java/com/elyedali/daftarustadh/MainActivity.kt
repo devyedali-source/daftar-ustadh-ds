@@ -1058,6 +1058,7 @@ class MainActivity : AppCompatActivity() {
                                 }
                                 is com.elyedali.daftarustadh.transfer.TimetableFile -> {
                                     timetableDao.replaceTeacherTimetable(any.institutionId, any.schoolYear, any.toEntities(System.currentTimeMillis()))
+                                    myTtInst = null
                                     screen = Screen.MY_TIMETABLE
                                     FileResult.Message(getString(R.string.tt_received, any.schoolName, any.entries.size))
                                 }
@@ -1074,6 +1075,7 @@ class MainActivity : AppCompatActivity() {
                                     if (out.saved.isNotEmpty()) {
                                         selectedYear = any.classes.first().first.schoolClass.schoolYear
                                         teacherSchool = null
+                                        teacherSection = "SCHOOLS"   // ملف الإدارة: يفتح على «مؤسساتي»
                                         screen = Screen.HOME
                                     }
                                     FileResult.Message(
@@ -1097,6 +1099,7 @@ class MainActivity : AppCompatActivity() {
                             // يفتح الصفحة الرئيسية على سنة القسم ووضعه (الأستاذ أو الإدارة)
                             val ok = result.outcome as ImportOutcome.Success
                             importedYear?.let { selectedYear = it }
+                            if (!AppRole.isAdmin) { teacherSection = "SCHOOLS"; teacherSchool = null }
                             screen = Screen.HOME
                         }
                     }
@@ -1534,7 +1537,9 @@ class MainActivity : AppCompatActivity() {
                                         if (com.elyedali.daftarustadh.sync.DriveSync.hasLocalChanges(this@MainActivity, db)) logoutUnsynced = true
                                         else { com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null }
                                     }
-                                    "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
+                                    "TIMETABLE" -> if (AppRole.isAdmin && (ttTeachers.isEmpty() || managedClasses.isEmpty()))
+                                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.setup_tt_locked), android.widget.Toast.LENGTH_LONG).show()
+                                        else { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                     "MY_TIMETABLE" -> { myTtInst = null; screen = Screen.MY_TIMETABLE }
                                     "EXCHANGES" -> screen = Screen.EXCHANGES
                                     "LEGISLATION" -> screen = Screen.LEGISLATION
@@ -1557,6 +1562,7 @@ class MainActivity : AppCompatActivity() {
                 when {
                     screen == Screen.INSTITUTION -> InstitutionScreen(
                         existing = if (addingSelfSchool) null else inst,
+                        fixedYear = selectedYear,
                         onSave = { s ->
                             scope.launch {
                                 institutionDao.save(if (addingSelfSchool) s.copy(isOwn = true) else s)
@@ -2482,6 +2488,7 @@ class MainActivity : AppCompatActivity() {
                             }
                         },
                         teachersCount = ttTeachers.size,
+                        classesWithoutStudents = classesWithoutStudents.size,
                         timetableState = when { ttApproved -> 2; ttManagedSlots.isNotEmpty() -> 1; else -> 0 }
                     )
                     }

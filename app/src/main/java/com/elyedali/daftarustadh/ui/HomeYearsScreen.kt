@@ -130,12 +130,14 @@ fun HomeYearsScreen(
     onAddInstitution: () -> Unit = {},
     /** الإدارة: عدد الأساتذة المسجلين، وحال الجدول الزمني (0 لم يُنشأ، 1 أُنشئ، 2 معتمد). */
     teachersCount: Int = 0,
-    timetableState: Int = 0
+    timetableState: Int = 0,
+    classesWithoutStudents: Int = 0
 ) {
     val current = SchoolYear.current()
     val years = remember(classes, currentInstitutionYear) {
         // الإدارة: السنة الجارية تظهر دائمًا ولو لم يُسجَّل فيها شيء بعد
-        (classes.map { it.schoolYear } + listOfNotNull(currentInstitutionYear, current.takeIf { mode == MODE_ADMIN })).distinct().sortedDescending()
+        // السنة الجارية تظهر دائمًا ولو لم يُسجَّل فيها شيء: الإدارة تبدأ منها، والأستاذ قد يستعمل البرنامج السنوي وحده
+        (classes.map { it.schoolYear } + listOfNotNull(currentInstitutionYear, current)).distinct().sortedDescending()
     }
     var toDelete by remember { mutableStateOf<ClassEntity?>(null) }
     var confirmNewInst by remember { mutableStateOf(false) }
@@ -345,7 +347,7 @@ fun HomeYearsScreen(
                         if (mode == MODE_TEACHER && termProgress.isNotEmpty()) item { TermProgressCard(termProgress, onUploadTerm) }
                         // الإدارة: ترتيب العمل (الأساتذة ثم الأقسام ثم الجدول الزمني...)؛ الأستاذ: خطوات عمله
                         item {
-                            if (mode == MODE_ADMIN) AdminSetupCard(teachersCount, yearClasses.size, timetableState,
+                            if (mode == MODE_ADMIN) AdminSetupCard(teachersCount, yearClasses.size, timetableState, classesWithoutStudents,
                                 onTeachers = { onTool("TEACHERS") }, onClasses = onCreateClass, onTool = onTool)
                             else StepsGuide(R.string.steps_teacher_title, listOf(
                                 R.string.steps_teacher_1, R.string.steps_teacher_2, R.string.steps_teacher_3,
@@ -498,7 +500,7 @@ private fun StepsGuide(title: Int, steps: List<Int>, startOpen: Boolean) {
  * ④ إرسال ملفات الأساتذة ⑤ رفع ملفات نتائجهم لإنشاء الكشوف (أو الإدخال اليدوي داخل القسم).
  */
 @Composable
-private fun AdminSetupCard(teachers: Int, classes: Int, timetable: Int, onTeachers: () -> Unit, onClasses: () -> Unit, onTool: (String) -> Unit) {
+private fun AdminSetupCard(teachers: Int, classes: Int, timetable: Int, noStudents: Int, onTeachers: () -> Unit, onClasses: () -> Unit, onTool: (String) -> Unit) {
     val base = teachers > 0 && classes > 0
     Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(18.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(1.dp)) {
@@ -511,8 +513,12 @@ private fun AdminSetupCard(teachers: Int, classes: Int, timetable: Int, onTeache
             SetupRow(3, "📅 " + stringResource(R.string.tt_title),
                 stringResource(when { !base -> R.string.setup_tt_locked; timetable == 2 -> R.string.setup_tt_approved; timetable == 1 -> R.string.setup_tt_generated; else -> R.string.setup_tt_none }),
                 stringResource(R.string.setup_tt_desc), done = timetable == 2, enabled = base, onClick = { onTool("TIMETABLE") })
-            SetupRow(4, "📤 " + stringResource(R.string.sr_title), if (base) null else stringResource(R.string.setup_tt_locked),
-                stringResource(R.string.setup_send_desc), done = false, enabled = base, onClick = { onTool("SHARE_RECORDS") })
+            // ملفات الأساتذة تحمل جدولهم ولوائح تلاميذهم: تُرسل بعد اعتماد الجدول وتسجيل تلاميذ كل الأقسام
+            val sendReady = base && timetable == 2 && noStudents == 0
+            SetupRow(4, "📤 " + stringResource(R.string.sr_title),
+                when { !base -> stringResource(R.string.setup_tt_locked); timetable != 2 -> stringResource(R.string.setup_send_need_tt)
+                    noStudents > 0 -> stringResource(R.string.setup_send_need_students, noStudents); else -> null },
+                stringResource(R.string.setup_send_desc), done = false, enabled = sendReady, onClick = { onTool("SHARE_RECORDS") })
             SetupRow(5, "📥 " + stringResource(R.string.rf_title), null,
                 stringResource(R.string.setup_upload_desc), done = false, enabled = base, onClick = { onTool("RECORDS_FOLLOW") })
         }

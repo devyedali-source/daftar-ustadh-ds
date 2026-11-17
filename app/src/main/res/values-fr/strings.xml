@@ -961,7 +961,7 @@
     <string name="setup_teachers_desc">Saisissez les noms des professeurs, leurs matières et leur numéro WhatsApp.</string>
     <string name="setup_classes">Classes</string>
     <string name="setup_classes_n">Enregistrées : %1$d</string>
-    <string name="setup_classes_desc">Créez les classes concernées par l\'emploi du temps. Inscrire les élèves n\'est pas nécessaire pour le créer.</string>
+    <string name="setup_classes_desc">Créez les classes concernées par l\'emploi du temps. Les élèves ne sont pas nécessaires pour le créer, mais le sont avant d\'envoyer les fichiers des professeurs, qui contiennent leurs listes.</string>
     <string name="setup_tt_locked">Enregistrez d\'abord les professeurs et les classes</string>
     <string name="setup_tt_none">Pas encore créé</string>
     <string name="setup_tt_generated">Créé, pas encore validé</string>
@@ -978,4 +978,6 @@
     <string name="pb_levels_n">%1$d niveaux</string>
     <string name="pb_subjects_n">%1$d matières</string>
     <string name="ts_my_timetable_here">Mon emploi du temps dans cet établissement</string>
+    <string name="setup_send_need_tt">Disponible après validation de l\'emploi du temps</string>
+    <string name="setup_send_need_students">Classes sans élèves : %1$d — inscrivez-les d\'abord</string>
 </resources>
