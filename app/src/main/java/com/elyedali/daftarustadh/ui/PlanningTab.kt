@@ -61,8 +61,15 @@ fun PlanningTab(
     val prefs = remember { context.getSharedPreferences("planning_order", android.content.Context.MODE_PRIVATE) }
     var order by remember { mutableStateOf(prefs.getString("order", "").orEmpty().split(",").filter { it.isNotBlank() }) }
     var reordering by rememberSaveable { mutableStateOf(false) }
+    // «موادي»: المواد التي يدرّسها الأستاذ (⭐) تأتي أولا في كل المستويات
+    var favs by remember { mutableStateOf(prefs.getStringSet("fav_subjects", emptySet()).orEmpty().toSet()) }
+    fun toggleFav(code: String) {
+        favs = if (code in favs) favs - code else favs + code
+        prefs.edit().putStringSet("fav_subjects", favs).apply()
+    }
     val available = mySubjects.filter { it.first in withPlan }.let { list ->
-        list.sortedBy { s -> order.indexOf(s.first).let { i -> if (i < 0) Int.MAX_VALUE else i } }
+        list.sortedWith(compareBy({ if (it.first in favs) 0 else 1 },
+            { s -> order.indexOf(s.first).let { i -> if (i < 0) Int.MAX_VALUE else i } }))
     }
     fun move(code: String, delta: Int) {
         val codes = available.map { it.first }.toMutableList()
@@ -122,14 +129,19 @@ fun PlanningTab(
                 color = MaterialTheme.colorScheme.primary)
         }
         if (available.size > 1) item {
-            Text(if (reordering) "✔ " + stringResource(R.string.plan_reorder_done) else "↕ " + stringResource(R.string.plan_reorder),
-                fontSize = 12.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.clip(RoundedCornerShape(8.dp)).clickable { reordering = !reordering }.padding(vertical = 4.dp, horizontal = 6.dp))
+            Text(if (reordering) "✔ " + stringResource(R.string.plan_reorder_done) else "⭐ " + stringResource(R.string.plan_reorder),
+                fontSize = 13.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.clip(RoundedCornerShape(8.dp)).background(MaterialTheme.colorScheme.primaryContainer)
+                    .clickable { reordering = !reordering }.padding(vertical = 6.dp, horizontal = 10.dp))
         }
         if (reordering && available.size > 1) {
+            item { Text(stringResource(R.string.plan_reorder_hint), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
             itemsIndexed(available, key = { _, it -> "ord_" + it.first }) { i, (code, label) ->
                 Row(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.surfaceVariant)
                     .padding(horizontal = 12.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text(if (code in favs) "★" else "☆", fontSize = 24.sp,
+                        color = if (code in favs) Color(0xFFF9A825) else MaterialTheme.colorScheme.outline,
+                        modifier = Modifier.clip(RoundedCornerShape(6.dp)).clickable { toggleFav(code) }.padding(horizontal = 6.dp))
                     Text("${i + 1}. " + label, Modifier.weight(1f), fontWeight = FontWeight.Bold)
                     Text("▲", fontSize = 18.sp, color = if (i > 0) MaterialTheme.colorScheme.primary else Color.Gray,
                         modifier = Modifier.clip(RoundedCornerShape(6.dp)).clickable(enabled = i > 0) { move(code, -1) }.padding(8.dp))
@@ -157,9 +169,9 @@ fun PlanningTab(
         if (available.size > 1) item {
             LazyRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 items(available, key = { it.first }) { (code, label) ->
-                    // ⭐ مادة مفعّلة في هذا المستوى، 🔒 الفصلان الثاني والثالث مقفلان
+                    // ★ من «موادي»، 🔒 الفصلان الثاني والثالث مقفلان
                     FilterChip(selected = code == subject, onClick = { chosen = code },
-                        label = { Text((if (lockedFor(code)) "🔒 " else "⭐ ") + label) })
+                        label = { Text((if (lockedFor(code)) "🔒 " else "") + (if (code in favs) "★ " else "") + label) })
                 }
             }
         }
