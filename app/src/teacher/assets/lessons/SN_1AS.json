@@ -948,7 +948,17 @@
      "h": "Une nutrition hétérotrophe",
      "lines": [
       "Les champignons ne produisent pas leur matière organique : ils l’absorbent dans leur milieu après une digestion externe grâce à des enzymes."
-     ]
+     ],
+     "fig": {
+      "page": 51,
+      "rect": [
+       0.03,
+       0.025,
+       0.97,
+       0.33
+      ],
+      "caption": "Expériences sur le développement de la moisissure"
+     }
     },
     {
      "h": "Les types de nutrition",

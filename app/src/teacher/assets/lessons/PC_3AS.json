@@ -144,7 +144,17 @@
        "Fer",
        "Fe"
       ]
-     ]
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.03,
+       0.285,
+       0.65,
+       0.48
+      ],
+      "caption": "Symboles de quelques éléments chimiques"
+     }
     },
     {
      "h": "La molécule",
@@ -194,7 +204,17 @@
        "C₆H₁₂O₆",
        "complexe"
       ]
-     ]
+     ],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.03,
+       0.69,
+       0.7,
+       0.96
+      ],
+      "caption": "Formules de quelques molécules"
+     }
     },
     {
      "h": "Masse molaire et quantité de matière",
@@ -344,7 +364,17 @@
       "Solution aqueuse : solution dont le solvant est l’eau.",
       "Soluté + solvant → solution ;  soluté + eau → solution aqueuse.",
       "Exemples : z’rig sucré, jus de bissap."
-     ]
+     ],
+     "fig": {
+      "page": 21,
+      "rect": [
+       0.25,
+       0.385,
+       0.75,
+       0.45
+      ],
+      "caption": "Soluté + solvant → solution"
+     }
     },
     {
      "h": "Ce que l’on peut dissoudre",
@@ -359,7 +389,17 @@
      "lines": [
       "Elle représente la masse de soluté dissous par litre de solution :  Cm = m / V",
       "m : masse de soluté (g) ; V : volume de la solution (L) ; Cm en g.L⁻¹."
-     ]
+     ],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.03,
+       0.025,
+       0.97,
+       0.67
+      ],
+      "caption": "Préparation d’une solution par dissolution"
+     }
     }
    ]
   },

@@ -1182,7 +1182,17 @@
        "Imprimante réseau",
        "partagée entre plusieurs utilisateurs"
       ]
-     ]
+     ],
+     "fig": {
+      "page": 100,
+      "rect": [
+       0.6,
+       0.1,
+       0.94,
+       0.42
+      ],
+      "caption": "Schéma d’un réseau simple"
+     }
     }
    ]
   },
@@ -1229,7 +1239,17 @@
        "WAN (réseau étendu)",
        "une ville, un pays, le monde"
       ]
-     ]
+     ],
+     "fig": {
+      "page": 101,
+      "rect": [
+       0.03,
+       0.865,
+       0.97,
+       0.955
+      ],
+      "caption": "Réseau local (LAN) et réseau étendu (WAN)"
+     }
     },
     {
      "h": "Le chemin de l’information",
@@ -1237,7 +1257,17 @@
       "Clients : demandent un service ; switch : dirige le trafic dans le réseau local ; routeur : porte de sortie vers Internet.",
       "Dans un même LAN, un fichier passe par le switch sans passer par Internet.",
       "Une adresse IP identifie un appareil sur le réseau."
-     ]
+     ],
+     "fig": {
+      "page": 102,
+      "rect": [
+       0.66,
+       0.65,
+       0.94,
+       0.8
+      ],
+      "caption": "Le switch relie les appareils du réseau local"
+     }
     }
    ]
   },
