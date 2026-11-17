@@ -90,7 +90,7 @@
     <string name="teacher_section">الأستاذ</string>
     <string name="admin_section">وضع الإدارة</string>
     <string name="my_classes">أقسامي</string>
-    <string name="open_class_file">فتح ملف قسم</string>
+    <string name="open_class_file">فتح ملف من إدارة مؤسسة</string>
     <string name="no_teaching_classes">لم يصلك أي قسم بعد. افتح ملف القسم الذي أرسله لك المكلّف بالقسم.</string>
     <string name="share_class">مشاركة ملف القسم</string>
     <string name="share_teacher_file">ملف القسم للأساتذة</string>
@@ -529,13 +529,13 @@
     <string name="home_year_title">السنة الدراسية: %1$s 🏫</string>
     <string name="home_choose_year_prompt">اختر السنة الدراسية للعمل عليها 📅</string>
     <string name="home_no_years">لا توجد سنوات دراسية مسجلة بعد</string>
-    <string name="home_no_years_desc">اضغط على زر «إنشاء قسم» العائم أسفل الشاشة لإنشاء أول قسم، أو «فتح ملف قسم» إن وصلك ملف من الإدارة.</string>
+    <string name="home_no_years_desc">اضغط على زر «إنشاء قسم» العائم أسفل الشاشة لإنشاء أول قسم، أو «فتح ملف من إدارة مؤسسة» إن وصلك ملف من الإدارة.</string>
     <string name="home_year_label">العام الدراسي: %1$s</string>
     <string name="home_year_ongoing">جارية</string>
     <string name="home_year_classes">عدد الأقسام المسجلة: %1$s</string>
     <string name="home_year_classes_title">الأقسام المسجلة لعام %1$s (%2$s)</string>
     <string name="home_no_classes_year">لا توجد أقسام مسجلة لهذا العام</string>
-    <string name="home_no_classes_year_desc">انقر على زر «إنشاء قسم» بالأسفل لإضافة قسم، أو «فتح ملف قسم».</string>
+    <string name="home_no_classes_year_desc">انقر على زر «إنشاء قسم» بالأسفل لإضافة قسم.</string>
     <string name="home_students_n">%1$s طالب</string>
     <string name="badge_admin">الإدارة</string>
     <string name="badge_teacher">أستاذ</string>
@@ -675,7 +675,7 @@
     <string name="steps_admin_5">تسجيل النتائج في الإدارة بثلاث طرق: (أ) رفع ملفات الأساتذة: من «📥 ملفات نتائج الأساتذة» في الصفحة الرئيسية ← «رفع ملفات الأساتذة»، واختر كل الملفات التي وصلتك في واتساب مرة واحدة؛ ملف كل أستاذ يشمل كل أقسامه وموادّه، والمكرر يُتجاوز، وبعدها يظهر ما ينقص فقط أو «اكتملت». (ب) الإدخال السريع بأرقام النداء داخل «النتائج» في القسم. (ج) الإدخال اليدوي داخل «النتائج» في القسم: اضغط على المادة واكتب النقاط أو صحّحها (مثل 0 إلى 10 للغائب بتبرير)، ويكون التصحيح بعد آخر رفع لسجل تلك المادة. لا تحسب شيئًا: المعدلات والمجاميع والرتب تُحسب تلقائيًا.</string>
     <string name="steps_admin_6">بعد اكتمال نتائج كل المواد يُفتح زر سحب الكشوف (الكشوف ← كشوف الدرجات).</string>
     <string name="steps_teacher_title">خطوات عمل الأستاذ</string>
-    <string name="steps_teacher_1">افتح الملف الذي أرسلته لك الإدارة عبر واتساب: اضغط «فتح ملف قسم» واختره (أو اضغط عليه في واتساب واختر دفتر الأستاذ DS). تظهر أقسامك وموادك. وجدولك الزمني مطبوع في الصفحة الثانية من الملف نفسه.</string>
+    <string name="steps_teacher_1">افتح الملف الذي أرسلته لك الإدارة عبر واتساب: اضغط «فتح ملف من إدارة مؤسسة» في صفحة المؤسسات واختره (أو اضغط عليه في واتساب واختر دفتر الأستاذ DS). تظهر أقسامك وموادك. وجدولك الزمني مطبوع في الصفحة الثانية من الملف نفسه.</string>
     <string name="steps_teacher_2">افتح القسم ← النتائج ← المادة، وارصد نقطة الاختبار والامتحان لكل طالب. الغائب تكتب له 0.</string>
     <string name="steps_teacher_3">لا تحسب معدلًا ولا مجموعًا: كل شيء يُحسب تلقائيًا.</string>
     <string name="steps_teacher_4">عندما يكتمل الفصل لكل الطلاب (✓ تحت المادة) اضغط «إرسال السجل» وأرسله للإدارة عبر واتساب.</string>

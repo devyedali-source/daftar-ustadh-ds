@@ -400,7 +400,7 @@ fun HomeYearsScreen(
                     }
                 }
             }
-            // الأزرار العائمة: إنشاء قسم في وضع الإدارة، وفتح ملف قسم في وضع الأستاذ
+            // الأزرار العائمة: إنشاء قسم، وفتح ملف الإدارة قبل اختيار السنة في وضع الأستاذ
             if (pickingInst) ExtendedFloatingActionButton(
                 onClick = { confirmNewInst = true },
                 modifier = Modifier.align(Alignment.BottomEnd).padding(16.dp),
@@ -412,7 +412,8 @@ fun HomeYearsScreen(
                 Modifier.align(Alignment.BottomEnd).padding(16.dp),
                 horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(10.dp)
             ) {
-                if (mode != MODE_ADMIN) SmallFloatingActionButton(onClick = onOpenFile, containerColor = MaterialTheme.colorScheme.secondaryContainer) {
+                // داخل المؤسسة لا يُفتح ملف: ملف الإدارة يُفتح من صفحة «اختر المؤسسة» (أو من واتساب) لأنه يحمل مؤسسته وأقسامه
+                if (mode != MODE_ADMIN && selectedYear == null) SmallFloatingActionButton(onClick = onOpenFile, containerColor = MaterialTheme.colorScheme.secondaryContainer) {
                     Row(Modifier.padding(horizontal = 12.dp), verticalAlignment = Alignment.CenterVertically) {
                         Icon(Icons.Filled.Share, contentDescription = null, modifier = Modifier.size(18.dp))
                         Text("  " + stringResource(R.string.open_class_file), fontSize = 12.sp, fontWeight = FontWeight.Bold)

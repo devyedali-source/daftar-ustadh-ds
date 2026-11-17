@@ -90,7 +90,7 @@
     <string name="teacher_section">Enseignant</string>
     <string name="admin_section">Mode administration</string>
     <string name="my_classes">Mes classes</string>
-    <string name="open_class_file">Ouvrir un fichier de classe</string>
+    <string name="open_class_file">Ouvrir un fichier d\'une administration</string>
     <string name="no_teaching_classes">Aucune classe reçue. Ouvrez le fichier envoyé par le responsable de la classe.</string>
     <string name="share_class">Partager le fichier de la classe</string>
     <string name="share_teacher_file">Fichier de classe pour les enseignants</string>
@@ -529,13 +529,13 @@
     <string name="home_year_title">Année scolaire : %1$s 🏫</string>
     <string name="home_choose_year_prompt">Choisissez l\'année scolaire 📅</string>
     <string name="home_no_years">Aucune année scolaire enregistrée</string>
-    <string name="home_no_years_desc">Appuyez sur « Créer une classe » en bas de l\'écran, ou « Ouvrir un fichier de classe » si vous en avez reçu un.</string>
+    <string name="home_no_years_desc">Appuyez sur « Créer une classe » en bas de l\'écran, ou « Ouvrir un fichier d\'une administration » si vous en avez reçu un.</string>
     <string name="home_year_label">Année scolaire : %1$s</string>
     <string name="home_year_ongoing">En cours</string>
     <string name="home_year_classes">Classes enregistrées : %1$s</string>
     <string name="home_year_classes_title">Classes de %1$s (%2$s)</string>
     <string name="home_no_classes_year">Aucune classe pour cette année</string>
-    <string name="home_no_classes_year_desc">Appuyez sur « Créer une classe » en bas, ou « Ouvrir un fichier de classe ».</string>
+    <string name="home_no_classes_year_desc">Appuyez sur « Créer une classe » en bas pour ajouter une classe.</string>
     <string name="home_students_n">%1$s élèves</string>
     <string name="badge_admin">Administration</string>
     <string name="badge_teacher">Professeur</string>
@@ -675,7 +675,7 @@
     <string name="steps_admin_5">Trois façons d\'enregistrer les notes : (a) fichiers des professeurs : « 📥 Relevés des professeurs » sur l\'accueil ← « Importer les fichiers », sélectionnez d\'un coup tous les fichiers reçus sur WhatsApp ; chaque fichier couvre toutes les classes et matières du professeur, doublons ignorés, puis s\'affiche ce qui manque ou « complets » ; (b) saisie rapide par N° d\'appel dans « Résultats » de la classe ; (c) saisie manuelle dans « Résultats » de la classe : touchez la matière pour saisir ou corriger (ex. 0 → 10), après le dernier import de cette matière. Aucun calcul : tout est automatique.</string>
     <string name="steps_admin_6">Quand toutes les matières sont complètes, le bouton des bulletins s\'active.</string>
     <string name="steps_teacher_title">Étapes du professeur</string>
-    <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier de classe » (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes et matières apparaissent. Votre emploi du temps est imprimé en page 2 du même fichier.</string>
+    <string name="steps_teacher_1">Ouvrez le fichier envoyé par l\'administration : « Ouvrir un fichier d\'une administration » dans la page des établissements (ou touchez-le dans WhatsApp et choisissez دفتر الأستاذ DS). Vos classes et matières apparaissent. Votre emploi du temps est imprimé en page 2 du même fichier.</string>
     <string name="steps_teacher_2">Classe ← Résultats ← matière : saisissez devoir et composition pour chaque élève. Pour un absent, saisissez 0.</string>
     <string name="steps_teacher_3">Ne calculez rien : tout est calculé automatiquement.</string>
     <string name="steps_teacher_4">Quand le trimestre est complet (✓ sous la matière), touchez « Envoyer le registre » et envoyez-le à l\'administration par WhatsApp.</string>
