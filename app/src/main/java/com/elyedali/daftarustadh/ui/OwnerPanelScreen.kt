@@ -190,12 +190,14 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
                 LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 6.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     if (shown.isEmpty()) item { Text(stringResource(R.string.op_none), color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(16.dp)) }
                     items(shown, key = { it.id }) { r ->
-                        val isAdmin = r.app == DsSubscriptions.APP_ADMIN
+                        val isEdit = r.app == DsSubscriptions.APP_EDIT
+                        val isAdmin = r.app == DsSubscriptions.APP_ADMIN || isEdit
                         val highlight = r.id == focused?.id
                         Card(Modifier.fillMaxWidth(), border = if (highlight) BorderStroke(2.dp, MaterialTheme.colorScheme.primary) else null) {
                             Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(3.dp)) {
                                 Row(verticalAlignment = Alignment.CenterVertically) {
-                                    Text((if (isAdmin) "🏫 " else "👨‍🏫 ") + stringResource(if (isAdmin) R.string.op_app_admin else R.string.op_app_teacher),
+                                    Text((if (isEdit) "✏️ " else if (isAdmin) "🏫 " else "👨‍🏫 ") +
+                                        stringResource(if (isEdit) R.string.op_app_edit else if (isAdmin) R.string.op_app_admin else R.string.op_app_teacher),
                                         fontWeight = FontWeight.Black, modifier = Modifier.weight(1f))
                                     Text("#${r.code}", fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
                                 }
@@ -205,7 +207,7 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
                                 if (r.classNames.isNotEmpty()) Text("📚 " + stringResource(R.string.op_classes, r.classNames.size) + ": " + r.classNames.joinToString(listSep()), fontSize = 12.sp)
                                 if (r.subjects.isNotEmpty()) Text("📘 " + stringResource(R.string.op_subjects) + ": " + r.subjects.joinToString(listSep()), fontSize = 12.sp)
                                 if (r.levels.isNotEmpty()) Text("🎓 " + stringResource(R.string.op_levels) + ": " + r.levels.joinToString(listSep()), fontSize = 12.sp)
-                                Text("💰 " + stringResource(R.string.op_year_amount, r.amount) + "   🕒 " + date(r.createdAt), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                                Text((if (isEdit) "" else "💰 " + stringResource(R.string.op_year_amount, r.amount) + "   ") + "🕒 " + date(r.createdAt), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                                 val d = dupsOf[r.id].orEmpty().size
                                 if (d > 0) Text("🔁 " + stringResource(R.string.op_duplicates, d), fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
                                 if (r.status == "pending") Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.padding(top = 4.dp)) {
@@ -227,7 +229,8 @@ private fun RequestsTab(focusId: String?, reload: Int, onReload: () -> Unit) {
             onDismissRequest = { confirm = null },
             title = { Text(stringResource(if (ok) R.string.op_approve_q else R.string.op_reject_q)) },
             text = { Text("#${r.code} • ${r.email}\n" + (if (r.institutionName.isNotBlank()) r.institutionName + "\n" else "") + r.schoolYear +
-                (if (ok) "\n\n" + stringResource(R.string.op_expires, r.schoolYear.substringAfter('-').trim()) else "")) },
+                (if (ok && r.app != DsSubscriptions.APP_EDIT) "\n\n" + stringResource(R.string.op_expires, r.schoolYear.substringAfter('-').trim()) else "") +
+                (if (ok && r.app == DsSubscriptions.APP_EDIT) "\n\n" + stringResource(R.string.op_edit_note) else "")) },
             confirmButton = {
                 TextButton(onClick = {
                     confirm = null; busy = true

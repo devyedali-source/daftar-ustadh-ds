@@ -980,4 +980,10 @@
     <string name="ts_my_timetable_here">جدولي الزمني في هذه المؤسسة</string>
     <string name="setup_send_need_tt">يُفتح بعد اعتماد الجدول الزمني</string>
     <string name="setup_send_need_students">أقسام بلا تلاميذ: %1$d — سجّل تلاميذها أولًا</string>
+    <string name="op_app_edit">تعديل بيانات مؤسسة</string>
+    <string name="op_edit_note">القبول يفتح لهذا المستخدم تعديل اسم المؤسسة وولايتها مرة واحدة، دون اشتراك ولا مبلغ.</string>
+    <string name="inst_locked">المؤسسة مفعّلة: اسمها وولايتها مقفلان. لتعديلهما أرسل طلبًا إلى مدير الأقسام، وبعد موافقته يُفتح التعديل مرة واحدة.</string>
+    <string name="inst_edit_request">طلب تعديل بيانات المؤسسة</string>
+    <string name="inst_edit_pending">طلبك قيد الانتظار. بعد الموافقة افتح هذه الصفحة من جديد فيُفتح التعديل.</string>
+    <string name="inst_edit_msg">أريد تعديل بيانات المؤسسة في تطبيق إدارة DS.\nالمؤسسة: %1$s\nالولاية: %2$s</string>
 </resources>

@@ -1560,11 +1560,52 @@ class MainActivity : AppCompatActivity() {
                     }
                 ) {
                 when {
-                    screen == Screen.INSTITUTION -> InstitutionScreen(
+                    screen == Screen.INSTITUTION -> {
+                    // بعد تفعيل أقسام المؤسسة: اسمها وولايتها لا يُعدَّلان إلا بطلب يقبله صاحب التطبيق (مرة واحدة لكل طلب)
+                    val DSS = com.elyedali.daftarustadh.auth.DsSubscriptions
+                    val editApprovedText by remember { metaDao.observe(DSS.EDIT_APPROVED_KEY) }.collectAsState(initial = null)
+                    val editPendingText by remember { metaDao.observe(DSS.EDIT_PENDING_KEY) }.collectAsState(initial = null)
+                    val editUsedText by remember { metaDao.observe(DSS.EDIT_USED_KEY) }.collectAsState(initial = null)
+                    val instKeyNow = DSS.institutionKey(inst)
+                    val editUsed = editUsedText.orEmpty().lines().filter { it.isNotBlank() }.toSet()
+                    val editGrant = editApprovedText.orEmpty().lines().filter { it.isNotBlank() }
+                        .firstOrNull { it.substringAfter('|') == instKeyNow && it.substringBefore('|') !in editUsed }?.substringBefore('|')
+                    val editPending = instKeyNow in editPendingText.orEmpty().lines()
+                    val instActivated = AppRole.isAdmin && !addingSelfSchool && inst != null && allClasses.any { it.id in activatedClasses }
+                    val identityLocked = instActivated && editGrant == null
+                    // قبول الطلب يصل من الخادم: يُحدَّث عند فتح الصفحة
+                    LaunchedEffect(instActivated) { if (instActivated) DSS.refresh(db) }
+                    InstitutionScreen(
                         existing = if (addingSelfSchool) null else inst,
                         fixedYear = selectedYear,
+                        identityLocked = identityLocked,
+                        editRequested = editPending,
+                        onRequestEdit = {
+                            val owner = inst
+                            if (owner != null) scope.launch {
+                                if (!hasInternet()) { actError = getString(R.string.act_no_internet); return@launch }
+                                actRequesting = true
+                                val reqCode = try {
+                                    kotlinx.coroutines.withTimeoutOrNull(25_000) {
+                                        DSS.request(DSS.APP_EDIT, owner, selectedYear ?: owner.schoolYear, emptyList(), emptyList(), 0)
+                                    }
+                                } finally { actRequesting = false }
+                                if (reqCode == null) { actError = getString(R.string.act_need_internet); return@launch }
+                                metaDao.put(AppMetaEntity(DSS.EDIT_PENDING_KEY, (editPendingText.orEmpty().lines().filter { it.isNotBlank() } + instKeyNow).distinct().joinToString("\n")))
+                                val msg = getString(R.string.inst_edit_msg, owner.schoolName, owner.wilaya) + "\n" +
+                                    getString(R.string.act_msg_link, DSS.activationLink(reqCode))
+                                val uri = Uri.parse("https://api.whatsapp.com/send?phone=${com.elyedali.daftarustadh.data.ClassActivation.ADMIN_PHONE}&text=" + Uri.encode(msg))
+                                try { startActivity(Intent(Intent.ACTION_VIEW, uri)) } catch (e: Exception) {
+                                    android.widget.Toast.makeText(this@MainActivity, getString(R.string.ex_no_whatsapp), android.widget.Toast.LENGTH_SHORT).show()
+                                }
+                            }
+                        },
                         onSave = { s ->
                             scope.launch {
+                                // تعديل الاسم أو الولاية بموافقة: تُستهلك الموافقة فلا تفتح التعديل مرة ثانية
+                                val o = inst
+                                if (editGrant != null && o != null && (o.schoolName != s.schoolName || o.wilaya != s.wilaya || o.schoolListId != s.schoolListId))
+                                    metaDao.put(AppMetaEntity(DSS.EDIT_USED_KEY, (editUsed + editGrant).sorted().joinToString("\n")))
                                 institutionDao.save(if (addingSelfSchool) s.copy(isOwn = true) else s)
                                 if (addingSelfSchool) { addingSelfSchool = false; teacherSchool = s.id }
                                 // الإدارة: بعد تسجيل بيانات المؤسسة تُفتح صفحتها
@@ -1578,6 +1619,7 @@ class MainActivity : AppCompatActivity() {
                             screen = Screen.HOME
                         }
                     )
+                    }
 
                     screen == Screen.QUICK_GRADES && currentClass != null -> {
                         val c = currentClass!!

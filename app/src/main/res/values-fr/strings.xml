@@ -980,4 +980,10 @@
     <string name="ts_my_timetable_here">Mon emploi du temps dans cet établissement</string>
     <string name="setup_send_need_tt">Disponible après validation de l\'emploi du temps</string>
     <string name="setup_send_need_students">Classes sans élèves : %1$d — inscrivez-les d\'abord</string>
+    <string name="op_app_edit">Modification d\'établissement</string>
+    <string name="op_edit_note">L\'acceptation permet à cet utilisateur de modifier une seule fois le nom et la wilaya de l\'établissement, sans abonnement ni montant.</string>
+    <string name="inst_locked">Établissement activé : son nom et sa wilaya sont verrouillés. Pour les modifier, envoyez une demande au gestionnaire ; après son accord, la modification est ouverte une seule fois.</string>
+    <string name="inst_edit_request">Demander la modification</string>
+    <string name="inst_edit_pending">Demande en attente. Après l\'accord, rouvrez cette page pour modifier.</string>
+    <string name="inst_edit_msg">Je veux modifier les informations de l\'établissement dans l\'appli إدارة DS.\nÉtablissement : %1$s\nWilaya : %2$s</string>
 </resources>

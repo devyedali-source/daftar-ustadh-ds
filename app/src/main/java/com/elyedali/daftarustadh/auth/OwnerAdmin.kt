@@ -74,6 +74,12 @@ object OwnerAdmin {
 
     /** قبول الطلب: يُنشئ الاشتراك (أو يضيف الأقسام إلى اشتراك المؤسسة نفسها) وينتهي آخر السنة الدراسية. */
     suspend fun approve(r: Request) {
+        // طلب تعديل بيانات المؤسسة: لا اشتراك ولا مبلغ، يُقبل فقط فيُفتح التعديل للمستخدم مرة واحدة
+        if (r.app == DsSubscriptions.APP_EDIT) {
+            fs.collection("ds_activation_requests").document(r.id)
+                .update(mapOf("status" to "approved", "decidedAt" to FieldValue.serverTimestamp())).await()
+            return
+        }
         val batch = fs.batch()
         val sub = fs.collection("ds_subscriptions").document(subId(r))
         val data = hashMapOf<String, Any>(

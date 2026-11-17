@@ -16,6 +16,10 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
@@ -60,7 +64,11 @@ fun InstitutionScreen(
     onSave: (InstitutionEntity) -> Unit,
     onCancel: (() -> Unit)?,
     /** السنة المختارة قبل هذه الصفحة: تُستعمل ولا يُطلب اختيارها مرة ثانية. */
-    fixedYear: String? = null
+    fixedYear: String? = null,
+    /** بعد تفعيل أقسام المؤسسة: اسمها وولايتها مقفلان، ولا يُعدَّلان إلا بموافقة صاحب التطبيق. */
+    identityLocked: Boolean = false,
+    editRequested: Boolean = false,
+    onRequestEdit: () -> Unit = {}
 ) {
     val context = LocalContext.current
     val isFr = LocalConfiguration.current.locales[0].language == "fr"
@@ -86,15 +94,22 @@ fun InstitutionScreen(
             verticalArrangement = Arrangement.spacedBy(14.dp)
         ) {
             ScreenHeader(stringResource(R.string.institution_title), onCancel)
+            if (identityLocked) Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF3E0))) {
+                Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text("🔒 " + stringResource(R.string.inst_locked), fontWeight = FontWeight.Bold, color = Color(0xFFE65100))
+                    if (editRequested) Text("⏳ " + stringResource(R.string.inst_edit_pending), fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
+                    else Button(onClick = onRequestEdit, modifier = Modifier.fillMaxWidth()) { Text("✏️ " + stringResource(R.string.inst_edit_request)) }
+                }
+            }
 
             // الولاية
-            ExposedDropdownMenuBox(expanded = wilayaMenu, onExpandedChange = { wilayaMenu = it }) {
+            ExposedDropdownMenuBox(expanded = wilayaMenu, onExpandedChange = { if (!identityLocked) wilayaMenu = it }) {
                 OutlinedTextField(
                     value = wilaya?.let { label(it) } ?: "",
                     onValueChange = {},
                     readOnly = true,
                     label = { Text(stringResource(R.string.wilaya)) },
-                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = wilayaMenu) },
+                    trailingIcon = { if (!identityLocked) ExposedDropdownMenuDefaults.TrailingIcon(expanded = wilayaMenu) },
                     modifier = Modifier.fillMaxWidth().menuAnchor(MenuAnchorType.PrimaryNotEditable)
                 )
                 ExposedDropdownMenu(expanded = wilayaMenu, onDismissRequest = { wilayaMenu = false }) {
@@ -125,7 +140,7 @@ fun InstitutionScreen(
                         disabledLabelColor = MaterialTheme.colorScheme.onSurfaceVariant,
                         disabledPlaceholderColor = MaterialTheme.colorScheme.onSurfaceVariant
                     ),
-                    modifier = Modifier.fillMaxWidth().clickable(enabled = wilaya != null) { showSchoolPicker = true }
+                    modifier = Modifier.fillMaxWidth().clickable(enabled = wilaya != null && !identityLocked) { showSchoolPicker = true }
                 )
                 if (wilaya == null) {
                     Text(stringResource(R.string.choose_wilaya_first), style = MaterialTheme.typography.bodySmall)
@@ -134,11 +149,12 @@ fun InstitutionScreen(
                 OutlinedTextField(
                     value = schoolName,
                     onValueChange = { schoolName = it; schoolListId = null },
+                    readOnly = identityLocked,
                     label = { Text(stringResource(R.string.school_manual)) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
-                TextButton(onClick = { manualEntry = false; schoolName = ""; schoolListId = null }) {
+                if (!identityLocked) TextButton(onClick = { manualEntry = false; schoolName = ""; schoolListId = null }) {
                     Text(stringResource(R.string.back_to_list))
                 }
             }

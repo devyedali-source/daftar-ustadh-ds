@@ -52,7 +52,7 @@ object DriveSync {
     private val SKIP_TABLES = setOf("android_metadata", "room_master_table", "sqlite_sequence", "room_table_modification_log")
     /** مفاتيح خاصة بهذا الهاتف أو تأتي من الخادم، لا تُنسخ. */
     private val SKIP_META = setOf(DsSubscriptions.CACHE_KEY, "activated_classes", "teacher_activated_years", "expired_classes",
-        com.elyedali.daftarustadh.data.TeacherActivation.PACKS_KEY)
+        com.elyedali.daftarustadh.data.TeacherActivation.PACKS_KEY, DsSubscriptions.EDIT_APPROVED_KEY, DsSubscriptions.EDIT_PENDING_KEY)
 
     sealed class State {
         object Idle : State()

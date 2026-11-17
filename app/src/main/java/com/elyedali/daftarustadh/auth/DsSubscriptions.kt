@@ -23,6 +23,13 @@ object DsSubscriptions {
     const val CACHE_KEY = "ds_subs_cache"
     const val APP_ADMIN = "admin"
     const val APP_TEACHER = "teacher"
+    /** طلب تعديل بيانات المؤسسة (اسمها وولايتها) بعد تفعيلها: يقبله صاحب التطبيق فيُفتح التعديل مرة واحدة. */
+    const val APP_EDIT = "edit_inst"
+    /** طلبات التعديل المقبولة لهذه المؤسسة («id|مفتاح المؤسسة» في كل سطر)، والمعلّقة. */
+    const val EDIT_APPROVED_KEY = "inst_edit_approved"
+    const val EDIT_PENDING_KEY = "inst_edit_pending"
+    /** طلبات التعديل التي استُعملت (حُفظ بها تعديل): لا تفتح التعديل مرة ثانية. */
+    const val EDIT_USED_KEY = "inst_edit_used"
 
     private fun norm(t: String?) = t.orEmpty().trim().replace(Regex("\\s+"), " ").lowercase()
 
@@ -53,8 +60,16 @@ object DsSubscriptions {
             }
             putIfChanged(db, CACHE_KEY, arr.toString())
             // الطلبات التي ما زالت تنتظر (المقبولة أو المرفوضة لا تبقى «⏳ قيد الانتظار»)
-            val pending = FirebaseFirestore.getInstance().collection("ds_activation_requests")
-                .whereEqualTo("uid", u.uid).get().await().documents.filter { it.getString("status") == "pending" }
+            val allReq = FirebaseFirestore.getInstance().collection("ds_activation_requests")
+                .whereEqualTo("uid", u.uid).get().await().documents
+            val pending = allReq.filter { it.getString("status") == "pending" }
+            if (com.elyedali.daftarustadh.AppRole.isAdmin) {
+                val edits = allReq.filter { it.getString("app") == APP_EDIT }
+                putIfChanged(db, EDIT_APPROVED_KEY, edits.filter { it.getString("status") == "approved" }
+                    .map { it.id + "|" + it.getString("institutionKey").orEmpty() }.sorted().joinToString("\n"))
+                putIfChanged(db, EDIT_PENDING_KEY, edits.filter { it.getString("status") == "pending" }
+                    .map { it.getString("institutionKey").orEmpty() }.distinct().sorted().joinToString("\n"))
+            }
             if (com.elyedali.daftarustadh.AppRole.isAdmin)
                 putIfChanged(db, ClassActivation.REQUESTED_KEY, ClassActivation.encode(pending.filter { it.getString("app") == APP_ADMIN }
                     .flatMap { (it.get("classIds") as? List<*>)?.map { x -> x.toString() }.orEmpty() }.toSet()))
