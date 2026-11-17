@@ -83,5 +83,5 @@ La saisie des notes est toujours gratuite, ainsi que le 1er trimestre de la plan
 - **الفئة:** التعليم (Éducation)
 - **البريد الإلكتروني للتواصل:** devyedali@gmail.com
 - **سياسة الخصوصية:** https://daftar-ustadh.web.app/privacy
-- **الأيقونة:** `store/icon-512.png`
+- **الأيقونة:** `store/teacher/icon-512.png` (خلفية صفراء)
 - **صورة الواجهة (Feature graphic):** `store/teacher/feature-graphic.png`

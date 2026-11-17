@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- دفتر الأستاذ DS: خلفية صفراء تميّزه عن إدارة DS (زرقاء) ودفتر المعلم (فاتحة) -->
+    <color name="ic_launcher_background">#FFC107</color>
+</resources>

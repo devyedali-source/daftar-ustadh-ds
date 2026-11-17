@@ -91,5 +91,5 @@ Téléchargement et essai gratuits ; activation par année scolaire selon le nom
 - **الفئة:** التعليم (Éducation)
 - **البريد الإلكتروني للتواصل:** devyedali@gmail.com
 - **سياسة الخصوصية:** https://daftar-ustadh.web.app/privacy
-- **الأيقونة:** `store/icon-512.png`
+- **الأيقونة:** `store/admin/icon-512.png` (خلفية زرقاء)
 - **صورة الواجهة (Feature graphic):** `store/admin/feature-graphic.png`
