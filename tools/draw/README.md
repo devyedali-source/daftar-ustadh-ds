@@ -12,3 +12,4 @@
 إعادة التوليد: `python3 mats.py && python3 autres.py && python3 arabe.py && python3 appliquer.py`
 - `textes_arabe.py` + `textes_arabe.txt` : نص القراءة من كتاب العربية في أول السبورة (72 درسا).
 - `completer_sabbura.py` : يضيف إلى السبورة ما في التحضير وليس عليها (أهم النقاط، وتعريفات الرياضيات، وتمرين التطبيق نفسه).
+- `content/applications/MATS.py` : تطبيقات الحياة اليومية للرياضيات (3 لكل درس مع الأجوبة).
