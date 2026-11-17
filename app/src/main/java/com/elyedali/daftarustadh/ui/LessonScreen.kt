@@ -135,10 +135,10 @@ private fun lessonLabels(l: BookLesson, subjectCode: String?): LessonLabels? {
     val pages = "${l.pageFrom} – ${l.pageTo}"
     return if (subjectCode == "ANG") LessonLabels(
         "Lesson plan", "Textbook", "Board", "Lesson pages in the textbook: $pages",
-        "Objectives", "Introduction", "Summary", "Key points", "Short exercise", "Real-life applications")
+        "Objectives", "Introduction", "Summary", "Key points", "Short exercise", "Applications")
     else LessonLabels(
         "Préparation", "Manuel", "Tableau", "Pages de la leçon dans le manuel : $pages",
-        "Objectifs", "Introduction", "Résumé", "Points essentiels", "Petite application", "Applications de la vie courante")
+        "Objectifs", "Introduction", "Résumé", "Points essentiels", "Petite application", "Applications")
 }
 
 /** الدرس مكتوب بحروف لاتينية (فرنسية أو إنجليزية): الحروف اللاتينية أكثر من العربية في عنوانه ومحتوى سبورته. */

@@ -35,7 +35,7 @@ data class BookLesson(
     val applicationQ: String,
     val applicationA: String,
     val board: List<BoardSection>,
-    /** تطبيقات من الحياة اليومية (سؤال، جواب) تظهر في التحضير وعلى السبورة. */
+    /** تطبيقات (سؤال، جواب) تظهر في التحضير وعلى السبورة. */
     val applications: List<Pair<String, String>> = emptyList(),
     /** كتاب الدرس إن كان للمادة أكثر من كتاب (مثل التاريخ والجغرافيا). */
     val book: String = "",

@@ -27,8 +27,8 @@ for path in sorted(glob.glob(D + '*.json')):
         q = l.get('application', {}).get('q', '').strip()
         if q and q[:25] not in board_text(b):
             b.append({'h': ha, 'lines': [q], 'auto': True}); na += 1
-    for l in d['lessons']:  # التطبيقات من الحياة اليومية في آخر السبورة
-        l['board'].sort(key=lambda x: x['h'] in ('Applications de la vie courante', 'تطبيقات من الحياة اليومية'))
+    for l in d['lessons']:  # التطبيقات في آخر السبورة
+        l['board'].sort(key=lambda x: x['h'] in ('Applications', 'تطبيقات'))
     json.dump(d, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     stats[f] = (len(d['lessons']), nr, na)
 for k, v in stats.items(): print(k, 'دروس', v[0], '| أضيف «ما يحفظ»', v[1], '| أضيف التطبيق', v[2])

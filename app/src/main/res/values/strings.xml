@@ -842,7 +842,7 @@
     <string name="lesson_summary">ملخص الدرس</string>
     <string name="lesson_points">أهم النقاط</string>
     <string name="lesson_application">تطبيق صغير</string>
-    <string name="lesson_reallife">تطبيقات من الحياة اليومية</string>
+    <string name="lesson_reallife">تطبيقات</string>
     <string name="lesson_show_answer">إظهار الإجابة</string>
     <string name="lesson_hide_answer">إخفاء الإجابة</string>
     <string name="books_downloading">📥 جارٍ تحميل صور الكتب: %1$d%%</string>

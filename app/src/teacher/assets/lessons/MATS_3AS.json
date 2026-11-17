@@ -147,7 +147,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. On veut faire des bouquets identiques avec 84 roses et 60 tulipes en utilisant toutes les fleurs. Combien de bouquets au maximum ? Composition de chaque bouquet ?",
       "2. Deux bus partent ensemble de la gare : l’un toutes les 12 min, l’autre toutes les 18 min. Au bout de combien de temps repartent-ils ensemble ?",
@@ -316,7 +316,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Un terrain carré a une aire de 50 m². Calcule la longueur de son côté (valeur exacte, puis arrondi au centimètre).",
       "2. Pendant une journée, la température a varié de −4 °C à 6 °C. Écris l’intervalle des températures et calcule l’écart.",
@@ -435,7 +435,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Un carré de côté x cm est agrandi de 3 cm sur chaque côté. Exprime l’augmentation de son aire.",
       "2. Calcule astucieusement 101² et 99 × 101 à l’aide des identités remarquables.",
@@ -573,7 +573,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Un père a 40 ans et son fils 10 ans. Dans combien d’années l’âge du père sera-t-il le double de celui du fils ?",
       "2. Dans une ferme il y a des poules et des moutons : 30 têtes et 80 pattes. Combien y a-t-il de poules et de moutons ?",
@@ -672,7 +672,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Une galette de rayon 15 cm est coupée en 6 parts égales. Quel est l’angle au centre de chaque part ? Quelle est la longueur du bord d’une part ? (π ≈ 3,14)",
       "2. Sur une piste circulaire de rayon 50 m, un coureur parcourt un arc de 90°. Quelle distance parcourt-il ? (π ≈ 3,14)",
@@ -767,7 +767,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Un écran de télévision mesure 80 cm de large et 60 cm de haut. Quelle est sa diagonale ?",
       "2. Un maçon vérifie un angle : il mesure 3 m, 4 m et 5 m. L’angle est-il droit ?",
@@ -923,7 +923,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Sur un plan (unité : 1 km), l’école est en E(1 ; 2) et le marché en M(4 ; 6). Calcule la distance EM.",
       "2. On veut construire une boutique à mi-chemin entre E et M. Quelles sont ses coordonnées ?",
@@ -1069,7 +1069,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Une échelle de 6 m fait un angle de 60° avec le sol. À quelle hauteur touche-t-elle le mur ?",
       "2. À 20 m du pied d’un minaret, on voit son sommet sous un angle de 45°. Quelle est sa hauteur ?",
@@ -1198,7 +1198,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Une photo de 10 cm × 15 cm est agrandie avec un rapport 2. Quelles sont les dimensions et l’aire de la nouvelle photo ?",
       "2. Sur un plan à l’échelle 1/100, une chambre mesure 4 cm × 3 cm. Quelles sont ses dimensions réelles ?",
@@ -1342,7 +1342,7 @@
      "auto": true
     },
     {
-     "h": "Applications de la vie courante",
+     "h": "Applications",
      "lines": [
       "1. Le litre de carburant coûte 40 MRU. Exprime le prix p(x) de x litres. Quelle est la nature de p ? Calcule le prix de 25 L.",
       "2. Un plombier facture 300 MRU de déplacement plus 150 MRU par heure. Exprime le coût f(x) pour x heures, puis calcule f(3).",

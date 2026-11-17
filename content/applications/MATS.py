@@ -1,4 +1,4 @@
-# تطبيقات من الحياة اليومية لدروس الرياضيات: ثلاثة لكل درس على الأقل (سؤال || جواب).
+# تطبيقات لدروس الرياضيات: ثلاثة لكل درس على الأقل (سؤال || جواب).
 A = {
 'MATS_1AS': [
  [("Un éleveur possède 1 248 chèvres. Peut-il les répartir en groupes égaux de 3 ? de 8 ? Combien de groupes dans chaque cas ?", "Oui : 1 + 2 + 4 + 8 = 15 est divisible par 3, donc 1 248 ÷ 3 = 416 groupes ; et 1 248 ÷ 8 = 156 groupes."),
