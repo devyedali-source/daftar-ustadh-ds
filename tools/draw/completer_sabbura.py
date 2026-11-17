@@ -14,8 +14,8 @@ for path in sorted(glob.glob(D + '*.json')):
     d = json.load(open(path, encoding='utf-8')); na = nr = 0
     for l in d['lessons']:
         b = l['board']
-        b[:] = [s for s in b if not s.get('auto')]  # إعادة التشغيل دون تكرار
-        B = toks(board_text(b)); add = []
+        b[:] = [s for s in b if not (s.get('auto') and s['h'] in (hr, ha))]  # إعادة التشغيل دون تكرار
+        B = toks(board_text([x for x in b if not x.get('auto')])); add = []
         cands = list(l['points'])
         if subj == 'MATS':
             cands += [x.strip() for x in re.split(r'(?<=\.)\s+', l['summary']) if len(x.strip()) > 20]
@@ -27,6 +27,8 @@ for path in sorted(glob.glob(D + '*.json')):
         q = l.get('application', {}).get('q', '').strip()
         if q and q[:25] not in board_text(b):
             b.append({'h': ha, 'lines': [q], 'auto': True}); na += 1
+    for l in d['lessons']:  # التطبيقات من الحياة اليومية في آخر السبورة
+        l['board'].sort(key=lambda x: x['h'] in ('Applications de la vie courante', 'تطبيقات من الحياة اليومية'))
     json.dump(d, open(path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     stats[f] = (len(d['lessons']), nr, na)
 for k, v in stats.items(): print(k, 'دروس', v[0], '| أضيف «ما يحفظ»', v[1], '| أضيف التطبيق', v[2])

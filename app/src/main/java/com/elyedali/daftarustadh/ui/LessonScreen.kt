@@ -88,7 +88,7 @@ fun LessonDialog(
         stringResource(R.string.lesson_prep), stringResource(R.string.lesson_book), stringResource(R.string.lesson_board),
         stringResource(R.string.lesson_pages, lesson.pageFrom, lesson.pageTo), stringResource(R.string.lesson_objectives),
         stringResource(R.string.lesson_intro), stringResource(R.string.lesson_summary), stringResource(R.string.lesson_points),
-        stringResource(R.string.lesson_application))
+        stringResource(R.string.lesson_application), stringResource(R.string.lesson_reallife))
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false, securePolicy = ScreenSecurity.dialogPolicy)) {
         Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
             // لا يختفي أسفل المحتوى (مثل زر «إظهار الإجابة») تحت أزرار الهاتف
@@ -125,7 +125,8 @@ fun LessonDialog(
 /** عناوين صفحة الدرس. */
 private data class LessonLabels(
     val prep: String, val book: String, val board: String, val pages: String,
-    val objectives: String, val intro: String, val summary: String, val points: String, val application: String
+    val objectives: String, val intro: String, val summary: String, val points: String, val application: String,
+    val reallife: String = ""
 )
 
 /** عناوين بلغة الدرس لدروس الفرنسية والإنجليزية، أو null لدروس العربية (تبقى بلغة التطبيق). */
@@ -134,10 +135,10 @@ private fun lessonLabels(l: BookLesson, subjectCode: String?): LessonLabels? {
     val pages = "${l.pageFrom} – ${l.pageTo}"
     return if (subjectCode == "ANG") LessonLabels(
         "Lesson plan", "Textbook", "Board", "Lesson pages in the textbook: $pages",
-        "Objectives", "Introduction", "Summary", "Key points", "Short exercise")
+        "Objectives", "Introduction", "Summary", "Key points", "Short exercise", "Real-life applications")
     else LessonLabels(
         "Préparation", "Manuel", "Tableau", "Pages de la leçon dans le manuel : $pages",
-        "Objectifs", "Introduction", "Résumé", "Points essentiels", "Petite application")
+        "Objectifs", "Introduction", "Résumé", "Points essentiels", "Petite application", "Applications de la vie courante")
 }
 
 /** الدرس مكتوب بحروف لاتينية (فرنسية أو إنجليزية): الحروف اللاتينية أكثر من العربية في عنوانه ومحتوى سبورته. */
@@ -175,6 +176,14 @@ private fun PrepView(l: BookLesson, L: LessonLabels) {
         item {
             PrepCard("✍️ " + L.application, Color(0xFFFFEBEE)) {
                 Text(l.applicationQ, fontSize = 14.sp, fontWeight = FontWeight.SemiBold, lineHeight = 22.sp)
+            }
+        }
+        if (l.applications.isNotEmpty()) item {
+            PrepCard("🌍 " + L.reallife, Color(0xFFE0F2F1)) {
+                l.applications.forEachIndexed { i, (q, a) ->
+                    Text("${i + 1}. $q", fontSize = 14.sp, fontWeight = FontWeight.SemiBold, lineHeight = 22.sp)
+                    Text("✔ $a", fontSize = 13.sp, lineHeight = 20.sp, color = Color(0xFF2E7D32))
+                }
             }
         }
     }

@@ -842,6 +842,7 @@
     <string name="lesson_summary">Résumé</string>
     <string name="lesson_points">Points essentiels</string>
     <string name="lesson_application">Petite application</string>
+    <string name="lesson_reallife">Applications de la vie courante</string>
     <string name="lesson_show_answer">Afficher la réponse</string>
     <string name="lesson_hide_answer">Masquer la réponse</string>
     <string name="books_downloading">📥 Téléchargement des manuels : %1$d%%</string>

@@ -35,6 +35,8 @@ data class BookLesson(
     val applicationQ: String,
     val applicationA: String,
     val board: List<BoardSection>,
+    /** تطبيقات من الحياة اليومية (سؤال، جواب) تظهر في التحضير وعلى السبورة. */
+    val applications: List<Pair<String, String>> = emptyList(),
     /** كتاب الدرس إن كان للمادة أكثر من كتاب (مثل التاريخ والجغرافيا). */
     val book: String = "",
     val bookTitle: String = ""
@@ -85,6 +87,9 @@ object LessonBank {
                                 },
                                 dr?.let { BoardDrawing("lessons/" + it.getString("src"), it.optString("caption")) })
                         },
+                        applications = l.optJSONArray("applications")?.let { a ->
+                            (0 until a.length()).map { k -> a.getJSONObject(k).let { it.optString("q") to it.optString("a") } }
+                        }.orEmpty(),
                         book = l.optString("book"), bookTitle = l.optString("bookTitle")
                     )
                 })

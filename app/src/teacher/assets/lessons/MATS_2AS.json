@@ -102,6 +102,29 @@
       "Calcule : (–7) + (+3) ; (–5) + (–4) ; (+6) – (–2)."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. À Atar, la température est de −2 °C la nuit et de 23 °C l’après-midi. De combien de degrés a-t-elle augmenté ?",
+      "2. Un plongeur est à −15 m ; il remonte de 9 m. À quelle profondeur se trouve-t-il ?",
+      "3. Le compte d’un commerçant est à −300 MRU ; il dépose 1 200 MRU puis retire 450 MRU. Quel est le solde ?"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "À Atar, la température est de −2 °C la nuit et de 23 °C l’après-midi. De combien de degrés a-t-elle augmenté ?",
+     "a": "23 − (−2) = 23 + 2 = 25 °C."
+    },
+    {
+     "q": "Un plongeur est à −15 m ; il remonte de 9 m. À quelle profondeur se trouve-t-il ?",
+     "a": "−15 + 9 = −6 : il est à 6 m sous la surface."
+    },
+    {
+     "q": "Le compte d’un commerçant est à −300 MRU ; il dépose 1 200 MRU puis retire 450 MRU. Quel est le solde ?",
+     "a": "−300 + 1 200 − 450 = 450 MRU."
     }
    ]
   },
@@ -198,6 +221,29 @@
       "Calcule (–2,5) × (–4) et donne l’écriture scientifique de 45 300."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Il fait 3 °C ; la température baisse de 1,5 °C chaque heure pendant 4 heures. Quelle est la température finale ?",
+      "2. La distance Terre–Soleil est d’environ 150 000 000 km. Écris-la en écriture scientifique.",
+      "3. Un compte enregistre les opérations : +250,5 ; −120,75 ; −80,25 (en MRU). Quel est le solde final ?"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Il fait 3 °C ; la température baisse de 1,5 °C chaque heure pendant 4 heures. Quelle est la température finale ?",
+     "a": "3 + 4 × (−1,5) = 3 − 6 = −3 °C."
+    },
+    {
+     "q": "La distance Terre–Soleil est d’environ 150 000 000 km. Écris-la en écriture scientifique.",
+     "a": "1,5 × 10⁸ km."
+    },
+    {
+     "q": "Un compte enregistre les opérations : +250,5 ; −120,75 ; −80,25 (en MRU). Quel est le solde final ?",
+     "a": "250,5 − 120,75 − 80,25 = 49,5 MRU."
     }
    ]
   },
@@ -283,6 +329,29 @@
       "Compare 2/5 et 3/7, puis calcule 2/5 + 3/7."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Un réservoir est plein aux 3/4. On utilise 1/3 de sa capacité. Quelle fraction de la capacité reste-t-il ?",
+      "2. Un terrain est partagé : 1/2 au premier frère, 1/3 au deuxième, le reste au troisième. Quelle part reçoit le troisième ?",
+      "3. Une recette demande 2/3 de verre de lait pour 4 personnes. Combien en faut-il pour 6 personnes ?"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Un réservoir est plein aux 3/4. On utilise 1/3 de sa capacité. Quelle fraction de la capacité reste-t-il ?",
+     "a": "3/4 − 1/3 = 9/12 − 4/12 = 5/12."
+    },
+    {
+     "q": "Un terrain est partagé : 1/2 au premier frère, 1/3 au deuxième, le reste au troisième. Quelle part reçoit le troisième ?",
+     "a": "1 − (1/2 + 1/3) = 1 − 5/6 = 1/6."
+    },
+    {
+     "q": "Une recette demande 2/3 de verre de lait pour 4 personnes. Combien en faut-il pour 6 personnes ?",
+     "a": "2/3 × 6/4 = 12/12 = 1 verre."
     }
    ]
   },
@@ -379,6 +448,29 @@
       "Développe 2(x + 3) puis factorise 5x + 15."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Un rectangle a pour longueur x + 5 et pour largeur 3. Exprime son aire, puis développe.",
+      "2. Un stylo coûte x MRU et un cahier 2x MRU. Exprime le prix de 3 stylos et 4 cahiers, puis calcule-le pour x = 15.",
+      "3. Le côté d’un carré mesure (a + 2) cm. Développe l’expression de son aire."
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Un rectangle a pour longueur x + 5 et pour largeur 3. Exprime son aire, puis développe.",
+     "a": "A = 3(x + 5) = 3x + 15."
+    },
+    {
+     "q": "Un stylo coûte x MRU et un cahier 2x MRU. Exprime le prix de 3 stylos et 4 cahiers, puis calcule-le pour x = 15.",
+     "a": "3x + 4 × 2x = 11x ; pour x = 15 : 165 MRU."
+    },
+    {
+     "q": "Le côté d’un carré mesure (a + 2) cm. Développe l’expression de son aire.",
+     "a": "(a + 2)² = a² + 4a + 4."
     }
    ]
   },
@@ -480,6 +572,29 @@
       "A(–2) et B(5) sur un axe : calcule AB et l’abscisse du milieu I."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Sur une route droite graduée en km, la boutique est à l’abscisse −3 et l’école à l’abscisse 5. Quelle distance les sépare ? Où placer un arrêt de bus à mi-chemin ?",
+      "2. Un bateau va du port A à l’île B, puis de B au port C. Quel vecteur représente le déplacement total ?",
+      "3. Dans un repère, la maison est en M(2 ; 3) et le puits en P(6 ; 3). À combien d’unités le puits est-il de la maison ?"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Sur une route droite graduée en km, la boutique est à l’abscisse −3 et l’école à l’abscisse 5. Quelle distance les sépare ? Où placer un arrêt de bus à mi-chemin ?",
+     "a": "5 − (−3) = 8 km ; milieu : (−3 + 5) ÷ 2 = 1."
+    },
+    {
+     "q": "Un bateau va du port A à l’île B, puis de B au port C. Quel vecteur représente le déplacement total ?",
+     "a": "AB⃗ + BC⃗ = AC⃗ (relation de Chasles)."
+    },
+    {
+     "q": "Dans un repère, la maison est en M(2 ; 3) et le puits en P(6 ; 3). À combien d’unités le puits est-il de la maison ?",
+     "a": "Même ordonnée : MP = 6 − 2 = 4 unités."
     }
    ]
   },
@@ -613,6 +728,29 @@
       "ABCD est un parallélogramme de centre O avec AC = 8 cm. Calcule AO."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Un terrain en forme de parallélogramme a des côtés de 30 m et 20 m. Quel est son périmètre ?",
+      "2. Un champ en forme de trapèze a des bases de 50 m et 30 m et une hauteur de 20 m. Calcule son aire.",
+      "3. Un panneau a la forme d’un hexagone régulier de 25 cm de côté. Calcule son périmètre."
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Un terrain en forme de parallélogramme a des côtés de 30 m et 20 m. Quel est son périmètre ?",
+     "a": "2 × (30 + 20) = 100 m."
+    },
+    {
+     "q": "Un champ en forme de trapèze a des bases de 50 m et 30 m et une hauteur de 20 m. Calcule son aire.",
+     "a": "Aire = (50 + 30) × 20 ÷ 2 = 800 m²."
+    },
+    {
+     "q": "Un panneau a la forme d’un hexagone régulier de 25 cm de côté. Calcule son périmètre.",
+     "a": "6 × 25 = 150 cm."
     }
    ]
   },
@@ -696,6 +834,29 @@
       "Construis le projeté orthogonal H d’un point M sur une droite (D). Que vaut MH si M est sur (D) ?"
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. À midi, le soleil est juste au-dessus d’un poteau vertical : son ombre au sol est réduite à un point. Explique avec la projection orthogonale.",
+      "2. Un câble [AB] est tendu au-dessus d’une route droite (D). A se projette en A′ et B en B′, avec A′B′ = 12 m. Où se projette le milieu du câble ?",
+      "3. Dans un repère, une lampe est au point L(4 ; 3). Quelles sont les coordonnées de ses projetés sur les deux axes ?"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "À midi, le soleil est juste au-dessus d’un poteau vertical : son ombre au sol est réduite à un point. Explique avec la projection orthogonale.",
+     "a": "Le poteau est perpendiculaire au sol : son projeté orthogonal sur le sol est réduit à un point."
+    },
+    {
+     "q": "Un câble [AB] est tendu au-dessus d’une route droite (D). A se projette en A′ et B en B′, avec A′B′ = 12 m. Où se projette le milieu du câble ?",
+     "a": "Au milieu de [A′B′], à 6 m de A′ (la projection conserve le milieu)."
+    },
+    {
+     "q": "Dans un repère, une lampe est au point L(4 ; 3). Quelles sont les coordonnées de ses projetés sur les deux axes ?",
+     "a": "Sur l’axe des abscisses : (4 ; 0) ; sur l’axe des ordonnées : (0 ; 3)."
     }
    ]
   },
@@ -798,6 +959,29 @@
       "Un cercle a pour rayon 3 cm ; la distance de son centre à une droite (D) est 3 cm. Quelle est la position de (D) ?"
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Peut-on construire un enclos triangulaire avec des côtés de 3 m, 4 m et 9 m ?",
+      "2. Un puits est à 3 m d’une route droite ; un arrosage circulaire de rayon 5 m est centré sur le puits. L’eau atteint-elle la route ?",
+      "3. Pour aller d’une maison jusqu’au bord droit d’une rivière par le chemin le plus court, quelle direction faut-il prendre ?"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Peut-on construire un enclos triangulaire avec des côtés de 3 m, 4 m et 9 m ?",
+     "a": "Non : 9 > 3 + 4, l’inégalité triangulaire n’est pas respectée."
+    },
+    {
+     "q": "Un puits est à 3 m d’une route droite ; un arrosage circulaire de rayon 5 m est centré sur le puits. L’eau atteint-elle la route ?",
+     "a": "Oui : la distance 3 m est inférieure au rayon 5 m, le cercle coupe la route (droite sécante)."
+    },
+    {
+     "q": "Pour aller d’une maison jusqu’au bord droit d’une rivière par le chemin le plus court, quelle direction faut-il prendre ?",
+     "a": "La perpendiculaire au bord : le plus court chemin mène au projeté orthogonal de la maison."
     }
    ]
   },
@@ -896,6 +1080,29 @@
       "A’ est le symétrique de A par rapport à O. Si OA = 4 cm, combien mesure AA’ ?"
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Les lettres A, M, T et U ont-elles un axe de symétrie ? Et la lettre N ?",
+      "2. On fait glisser un carreau de 30 cm vers la droite sans le tourner. Quelle transformation ? Sa forme ou ses dimensions changent-elles ?",
+      "3. Deux maisons sont symétriques par rapport au centre O d’une place. La première est à 40 m de O. Quelle distance sépare les deux maisons ?"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Les lettres A, M, T et U ont-elles un axe de symétrie ? Et la lettre N ?",
+     "a": "A, M, T et U ont un axe de symétrie vertical ; N n’a pas d’axe mais un centre de symétrie."
+    },
+    {
+     "q": "On fait glisser un carreau de 30 cm vers la droite sans le tourner. Quelle transformation ? Sa forme ou ses dimensions changent-elles ?",
+     "a": "C’est une translation ; elle conserve les formes et les longueurs."
+    },
+    {
+     "q": "Deux maisons sont symétriques par rapport au centre O d’une place. La première est à 40 m de O. Quelle distance sépare les deux maisons ?",
+     "a": "O est le milieu : 2 × 40 = 80 m."
     }
    ]
   },
@@ -1011,6 +1218,29 @@
       "Notes : 8, 10, 12, 12, 13. Calcule la moyenne, l’étendue et la médiane."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Une boutique a vendu en 5 jours : 120 ; 95 ; 110 ; 130 ; 95 pains. Calcule la moyenne, l’étendue et la médiane.",
+      "2. Une équipe compte 6 joueurs de 14 ans, 8 de 15 ans et 6 de 16 ans. Calcule l’âge moyen.",
+      "3. Avec les données précédentes, dresse les effectifs cumulés croissants."
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Une boutique a vendu en 5 jours : 120 ; 95 ; 110 ; 130 ; 95 pains. Calcule la moyenne, l’étendue et la médiane.",
+     "a": "Moyenne = 550 ÷ 5 = 110 ; étendue = 130 − 95 = 35 ; valeurs rangées 95 ; 95 ; 110 ; 120 ; 130 : médiane 110."
+    },
+    {
+     "q": "Une équipe compte 6 joueurs de 14 ans, 8 de 15 ans et 6 de 16 ans. Calcule l’âge moyen.",
+     "a": "(6 × 14 + 8 × 15 + 6 × 16) ÷ 20 = 300 ÷ 20 = 15 ans."
+    },
+    {
+     "q": "Avec les données précédentes, dresse les effectifs cumulés croissants.",
+     "a": "14 ans : 6 ; 15 ans : 14 ; 16 ans : 20."
     }
    ]
   },
@@ -1112,6 +1342,29 @@
       "Calcule le volume d’un cylindre de rayon 2 cm et de hauteur 5 cm (π ≈ 3,14)."
      ],
      "auto": true
+    },
+    {
+     "h": "Applications de la vie courante",
+     "lines": [
+      "1. Un fût cylindrique a un rayon de 30 cm et une hauteur de 90 cm. Quel volume d’eau contient-il en litres ? (π ≈ 3,14)",
+      "2. Un ballon a un rayon de 11 cm. Calcule l’aire de sa surface. (π ≈ 3,14)",
+      "3. Une boîte de conserve a un rayon de 4 cm et une hauteur de 10 cm. Quelle surface de métal faut-il pour sa face latérale ? (π ≈ 3,14)"
+     ],
+     "auto": true
+    }
+   ],
+   "applications": [
+    {
+     "q": "Un fût cylindrique a un rayon de 30 cm et une hauteur de 90 cm. Quel volume d’eau contient-il en litres ? (π ≈ 3,14)",
+     "a": "V = 3,14 × 30² × 90 = 254 340 cm³ ≈ 254,3 L."
+    },
+    {
+     "q": "Un ballon a un rayon de 11 cm. Calcule l’aire de sa surface. (π ≈ 3,14)",
+     "a": "4 × 3,14 × 11² = 1 519,76 cm²."
+    },
+    {
+     "q": "Une boîte de conserve a un rayon de 4 cm et une hauteur de 10 cm. Quelle surface de métal faut-il pour sa face latérale ? (π ≈ 3,14)",
+     "a": "2 × 3,14 × 4 × 10 = 251,2 cm²."
     }
    ]
   }
