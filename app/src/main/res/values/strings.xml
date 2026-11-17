@@ -969,4 +969,13 @@
     <string name="setup_tt_desc">يُنشأ بعد اكتمال تسجيل الأساتذة والأقسام، ثم يُعتمد فيظهر جدول كل قسم داخل القسم.</string>
     <string name="setup_send_desc">أرسل لكل أستاذ ملف عمله بضغطة زر عبر واتساب، فيفتحه في تطبيق «دفتر الأستاذ DS» ويعمل عليه.</string>
     <string name="setup_upload_desc">بعد اكتمال أعمالهم يرسل الأساتذة ملفاتهم، فترفعها كلها بضغطة زر لإنشاء كشوف الدرجات. ويمكن إدخال النتائج يدويًا من «النتائج» داخل القسم إذا قدّمها الأستاذ ورقيًا.</string>
+    <string name="tyh_plan_title">البرنامج السنوي</string>
+    <string name="tyh_plan_desc">التخطيط السنوي والتحاضير والكتب: اختر المرحلة ثم المستوى ثم المادة.</string>
+    <string name="tyh_schools_title">مؤسساتي: النتائج والجدول الزمني</string>
+    <string name="tyh_schools_desc">المؤسسات التي تعمل فيها: جدولك الزمني في كل مؤسسة، وأقسامك وموادك، ورصد نتائج التلاميذ ورفعها للإدارة لكل فصل، أو إنشاء أقسامك بنفسك إن لم يصلك ملف من الإدارة.</string>
+    <string name="pb_pick_stage">اختر المرحلة</string>
+    <string name="pb_pick_level">اختر المستوى (★ مستويات أقسامك)</string>
+    <string name="pb_levels_n">%1$d مستويات</string>
+    <string name="pb_subjects_n">%1$d مواد</string>
+    <string name="ts_my_timetable_here">جدولي الزمني في هذه المؤسسة</string>
 </resources>

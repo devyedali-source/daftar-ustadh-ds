@@ -969,4 +969,13 @@
     <string name="setup_tt_desc">Se crée une fois les professeurs et les classes enregistrés, puis se valide : l\'emploi du temps de chaque classe apparaît dans la classe.</string>
     <string name="setup_send_desc">Envoyez à chaque professeur son fichier de travail d\'un geste par WhatsApp ; il l\'ouvre dans l\'appli « دفتر الأستاذ DS ».</string>
     <string name="setup_upload_desc">Une fois leur travail terminé, les professeurs renvoient leurs fichiers : importez-les tous d\'un geste pour produire les relevés. Les notes remises sur papier se saisissent à la main dans « Résultats » de la classe.</string>
+    <string name="tyh_plan_title">Programme annuel</string>
+    <string name="tyh_plan_desc">Planification annuelle, préparations et manuels : choisissez le cycle, puis le niveau, puis la matière.</string>
+    <string name="tyh_schools_title">Mes établissements : notes et emploi du temps</string>
+    <string name="tyh_schools_desc">Les établissements où vous travaillez : votre emploi du temps dans chacun, vos classes et matières, la saisie des notes et leur envoi à l\'administration à chaque trimestre, ou vos propres classes si vous n\'avez pas reçu de fichier.</string>
+    <string name="pb_pick_stage">Choisissez le cycle</string>
+    <string name="pb_pick_level">Choisissez le niveau (★ niveaux de vos classes)</string>
+    <string name="pb_levels_n">%1$d niveaux</string>
+    <string name="pb_subjects_n">%1$d matières</string>
+    <string name="ts_my_timetable_here">Mon emploi du temps dans cet établissement</string>
 </resources>

@@ -351,6 +351,10 @@ class MainActivity : AppCompatActivity() {
                 val homeMode: String = com.elyedali.daftarustadh.ui.APP_MODE
                 // تطبيق الأستاذ: المؤسسة المختارة بعد السنة (قد يدرّس في أكثر من مؤسسة)
                 var teacherSchool by rememberSaveable { mutableStateOf<String?>(null) }
+                // تطبيق الأستاذ بعد السنة: null = الزران، "PLAN" = البرنامج السنوي، "SCHOOLS" = مؤسساته
+                var teacherSection by rememberSaveable { mutableStateOf<String?>(null) }
+                // جدول الأستاذ في مؤسسة واحدة (من صفحة المؤسسة)، أو null = كل المؤسسات
+                var myTtInst by rememberSaveable { mutableStateOf<String?>(null) }
                 /** سنة عمل الإدارة: السنة المختارة في وضع الإدارة، وإلا سنة المؤسسة. كل أدوات الإدارة تعمل عليها. */
                 val adminYear: String? = selectedYear?.takeIf { homeMode == com.elyedali.daftarustadh.ui.MODE_ADMIN } ?: inst?.schoolYear
                 val managedFlow = remember(inst?.id, adminYear) {
@@ -1464,6 +1468,7 @@ class MainActivity : AppCompatActivity() {
 
                 when (screen) {
                     Screen.HOME -> if (teacherSchool != null) BackHandler { teacherSchool = null }
+                        else if (selectedYear != null && !AppRole.isAdmin && teacherSection != null) BackHandler { teacherSection = null }
                         else if (selectedYear != null && AppRole.isAdmin && adminInstChosen) BackHandler { adminInstChosen = false }
                         else if (selectedYear != null) BackHandler { selectedYear = null }
                     Screen.STUDENTS -> BackHandler { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES }
@@ -1510,7 +1515,7 @@ class MainActivity : AppCompatActivity() {
                             onItem = { key ->
                                 scope.launch { drawerState.close() }
                                 when (key) {
-                                    "HOME" -> { selectedYear = null; adminInstChosen = false; teacherSchool = null; screen = Screen.HOME }
+                                    "HOME" -> { selectedYear = null; adminInstChosen = false; teacherSchool = null; teacherSection = null; screen = Screen.HOME }
                                     "SYNC" -> scope.launch {
                                         val st = com.elyedali.daftarustadh.sync.DriveSync.sync(this@MainActivity, db)
                                         when (st) {
@@ -1530,7 +1535,7 @@ class MainActivity : AppCompatActivity() {
                                         else { com.elyedali.daftarustadh.auth.DsAuth.signOut(this@MainActivity); signedIn = null }
                                     }
                                     "TIMETABLE" -> { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
-                                    "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
+                                    "MY_TIMETABLE" -> { myTtInst = null; screen = Screen.MY_TIMETABLE }
                                     "EXCHANGES" -> screen = Screen.EXCHANGES
                                     "LEGISLATION" -> screen = Screen.LEGISLATION
                                     "ABOUT" -> screen = Screen.ABOUT
@@ -1826,9 +1831,10 @@ class MainActivity : AppCompatActivity() {
                     )
 
                     screen == Screen.MY_TIMETABLE -> com.elyedali.daftarustadh.ui.TeacherTimetableView(
-                        entries = myTimetable,
+                        // من صفحة مؤسسة: جدوله في تلك المؤسسة لهذه السنة فقط
+                        entries = myTtInst?.let { id -> myTimetable.filter { it.institutionId == id && (selectedYear == null || it.schoolYear == selectedYear) } } ?: myTimetable,
                         highlightClass = null,
-                        highlightInstitution = null,
+                        highlightInstitution = myTtInst,
                         onOpenFile = openFile,
                         showHeader = true,
                         onBack = { screen = Screen.HOME }
@@ -2052,9 +2058,8 @@ class MainActivity : AppCompatActivity() {
 
                     screen == Screen.TEACHER_HUB && currentClass != null -> {
                         val c = currentClass!!
-                        // التخطيط والتحضير للأستاذ فقط: تطبيق الإدارة لا يعرض تبويب التخطيط.
-                        // يظهر لكل المستويات؛ والمستوى الذي لا تخطيط له بعد (الثانوي) يعرض «جارٍ العمل على برنامج هذا المستوى»
-                        val isCollege = !AppRole.isAdmin
+                        // البرنامج السنوي صار خارج الأقسام (زر «البرنامج السنوي» بعد السنة)، فلا يدخل الأستاذ أقسامه لتفقده
+                        val isCollege = false
                         ClassHub(
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
@@ -2306,7 +2311,37 @@ class MainActivity : AppCompatActivity() {
                         onBack = { screen = importBack }
                     )
 
-                    // تطبيق الأستاذ: بعد السنة، جدوله الشامل لكل المؤسسات ثم اختيار المؤسسة
+                    // تطبيق الأستاذ بعد السنة: زران — البرنامج السنوي، ومؤسساته (النتائج والجدول الزمني)
+                    screen == Screen.HOME && homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && selectedYear != null && teacherSchool == null && teacherSection == null ->
+                        com.elyedali.daftarustadh.ui.TeacherYearHub(
+                            year = selectedYear!!,
+                            onPlanning = { teacherSection = "PLAN" },
+                            onSchools = { teacherSection = "SCHOOLS" },
+                            onBack = { selectedYear = null },
+                            onMenu = { scope.launch { drawerState.open() } }
+                        )
+
+                    // البرنامج السنوي خارج الأقسام: المرحلة ← المستوى ← المواد (مواده أولًا)
+                    screen == Screen.HOME && homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && selectedYear != null && teacherSchool == null && teacherSection == "PLAN" -> {
+                        val year = selectedYear!!
+                        val mine = allClasses.filter { it.schoolYear == year && (it.teaching || it.institutionId in selfSchoolIds) }
+                        val subsAll by remember { gradeDao.observeAllTeacherSubjects() }.collectAsState(initial = emptyList())
+                        com.elyedali.daftarustadh.ui.PlanningBrowserScreen(
+                            year = year,
+                            myLevels = mine.map { it.levelCode }.toSet(),
+                            mySubjectsOf = { lv ->
+                                val ids = mine.filter { it.levelCode == lv }.map { it.id }.toSet()
+                                subsAll.filter { it.classId in ids }.map { it.subjectCode }.toSet()
+                            },
+                            isFr = isFrUi,
+                            lockedFor = { lv, code -> !com.elyedali.daftarustadh.data.TeacherActivation.unlocked(teacherPacks, year, lv, code) },
+                            onActivate = { teacherActivateYear = year },
+                            onBack = { teacherSection = null },
+                            onMenu = { scope.launch { drawerState.open() } }
+                        )
+                    }
+
+                    // مؤسسات الأستاذ: جدوله الشامل ثم اختيار المؤسسة
                     screen == Screen.HOME && homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && selectedYear != null && teacherSchool == null -> {
                         val year = selectedYear!!
                         val mine = allClasses.filter { it.schoolYear == year && (it.teaching || it.institutionId in selfSchoolIds) }
@@ -2322,7 +2357,7 @@ class MainActivity : AppCompatActivity() {
                             timetable = myTimetable.filter { it.schoolYear == year },
                             onPick = { teacherSchool = it },
                             onOpenFile = openFile,
-                            onBack = { selectedYear = null },
+                            onBack = { teacherSection = null },
                             onMenu = { scope.launch { drawerState.open() } }
                         )
                     }
@@ -2397,7 +2432,9 @@ class MainActivity : AppCompatActivity() {
                                 "ACTIVATION" -> { activationBack = Screen.HOME; screen = Screen.ACTIVATION }
                                 "REMARKS" -> screen = Screen.REMARKS
                                 "TEACHER_PROFILE" -> screen = Screen.TEACHER_PROFILE
-                                "MY_TIMETABLE" -> screen = Screen.MY_TIMETABLE
+                                "MY_TIMETABLE" -> { myTtInst = null; screen = Screen.MY_TIMETABLE }
+                                // صفحة مؤسسة الأستاذ: جدوله الزمني في هذه المؤسسة
+                                "MY_TIMETABLE_HERE" -> { myTtInst = teacherSchool; screen = Screen.MY_TIMETABLE }
                             }
                         },
                         schoolNames = schoolNames,
@@ -2415,6 +2452,7 @@ class MainActivity : AppCompatActivity() {
                         onSelectYear = {
                             selectedYear = it
                             teacherSchool = null
+                            teacherSection = null
                             // الإدارة: بعد السنة صفحة اختيار المؤسسة (تُنشأ أو تُعدَّل بياناتها هناك)
                             adminInstChosen = false
                             // الأستاذ لا يُطلب منه شيء: اسمه وموادّه تأتي من ملف الإدارة

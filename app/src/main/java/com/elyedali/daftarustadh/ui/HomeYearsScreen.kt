@@ -335,6 +335,13 @@ fun HomeYearsScreen(
                                 }
                             }
                         }
+                        // الأستاذ: جدوله الزمني في هذه المؤسسة، ثم تقدم رصد النتائج ورفعها للإدارة لكل فصل
+                        if (mode == MODE_TEACHER) item {
+                            androidx.compose.material3.OutlinedButton(onClick = { onTool("MY_TIMETABLE_HERE") }, modifier = Modifier.fillMaxWidth(),
+                                shape = RoundedCornerShape(14.dp)) {
+                                Text("🗓️ " + stringResource(R.string.ts_my_timetable_here), fontWeight = FontWeight.Bold)
+                            }
+                        }
                         if (mode == MODE_TEACHER && termProgress.isNotEmpty()) item { TermProgressCard(termProgress, onUploadTerm) }
                         // الإدارة: ترتيب العمل (الأساتذة ثم الأقسام ثم الجدول الزمني...)؛ الأستاذ: خطوات عمله
                         item {
