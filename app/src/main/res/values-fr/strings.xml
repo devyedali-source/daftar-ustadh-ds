@@ -974,7 +974,7 @@
     <string name="tyh_schools_title">Mes établissements : notes et emploi du temps</string>
     <string name="tyh_schools_desc">Les établissements où vous travaillez : votre emploi du temps dans chacun, vos classes et matières, la saisie des notes et leur envoi à l\'administration à chaque trimestre, ou vos propres classes si vous n\'avez pas reçu de fichier.</string>
     <string name="pb_pick_stage">Choisissez le cycle</string>
-    <string name="pb_pick_level">Choisissez le niveau (★ niveaux de vos classes)</string>
+    <string name="pb_pick_level">Choisissez le niveau. Touchez ☆ pour mettre vos niveaux en tête.</string>
     <string name="pb_levels_n">%1$d niveaux</string>
     <string name="pb_subjects_n">%1$d matières</string>
     <string name="ts_my_timetable_here">Mon emploi du temps dans cet établissement</string>

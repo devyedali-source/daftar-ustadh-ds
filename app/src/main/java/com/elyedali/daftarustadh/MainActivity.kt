@@ -2324,15 +2324,9 @@ class MainActivity : AppCompatActivity() {
                     // البرنامج السنوي خارج الأقسام: المرحلة ← المستوى ← المواد (مواده أولًا)
                     screen == Screen.HOME && homeMode == com.elyedali.daftarustadh.ui.MODE_TEACHER && selectedYear != null && teacherSchool == null && teacherSection == "PLAN" -> {
                         val year = selectedYear!!
-                        val mine = allClasses.filter { it.schoolYear == year && (it.teaching || it.institutionId in selfSchoolIds) }
-                        val subsAll by remember { gradeDao.observeAllTeacherSubjects() }.collectAsState(initial = emptyList())
+                        // البرنامج مستقل عن الأقسام: قد يستعمله الأستاذ وحده دون أي قسم
                         com.elyedali.daftarustadh.ui.PlanningBrowserScreen(
                             year = year,
-                            myLevels = mine.map { it.levelCode }.toSet(),
-                            mySubjectsOf = { lv ->
-                                val ids = mine.filter { it.levelCode == lv }.map { it.id }.toSet()
-                                subsAll.filter { it.classId in ids }.map { it.subjectCode }.toSet()
-                            },
                             isFr = isFrUi,
                             lockedFor = { lv, code -> !com.elyedali.daftarustadh.data.TeacherActivation.unlocked(teacherPacks, year, lv, code) },
                             onActivate = { teacherActivateYear = year },

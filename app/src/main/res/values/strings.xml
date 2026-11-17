@@ -974,7 +974,7 @@
     <string name="tyh_schools_title">مؤسساتي: النتائج والجدول الزمني</string>
     <string name="tyh_schools_desc">المؤسسات التي تعمل فيها: جدولك الزمني في كل مؤسسة، وأقسامك وموادك، ورصد نتائج التلاميذ ورفعها للإدارة لكل فصل، أو إنشاء أقسامك بنفسك إن لم يصلك ملف من الإدارة.</string>
     <string name="pb_pick_stage">اختر المرحلة</string>
-    <string name="pb_pick_level">اختر المستوى (★ مستويات أقسامك)</string>
+    <string name="pb_pick_level">اختر المستوى. ضع ☆ على مستوياتك فتأتي أول القائمة.</string>
     <string name="pb_levels_n">%1$d مستويات</string>
     <string name="pb_subjects_n">%1$d مواد</string>
     <string name="ts_my_timetable_here">جدولي الزمني في هذه المؤسسة</string>

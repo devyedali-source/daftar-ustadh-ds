@@ -84,15 +84,12 @@ private fun BigCard(icon: String, title: String, desc: String, bg: Color, fg: Co
 
 /**
  * البرنامج السنوي: المرحلة (الإعدادية/الثانوية) ← المستوى ← المواد (التخطيط والتحاضير والكتب).
- * مواد الأستاذ في أول القائمة، ويمكنه ترتيبها بنفسه داخل الصفحة.
+ * مستقل تمامًا عن الأقسام (قد يستعمل الأستاذ البرنامج وحده): يضع ☆ على المستويات التي تهمه فتأتي أولًا،
+ * ويرتّب المواد بنفسه داخل الصفحة («↕ ترتيب المواد»). الاختيار محفوظ على الجهاز.
  */
 @Composable
 fun PlanningBrowserScreen(
     year: String,
-    /** مستويات أقسام الأستاذ في هذه السنة (تُعلَّم ★). */
-    myLevels: Set<String>,
-    /** مواد الأستاذ في هذا المستوى (تأتي أول القائمة). */
-    mySubjectsOf: (String) -> Set<String>,
     isFr: Boolean,
     lockedFor: (level: String, subject: String) -> Boolean,
     onActivate: () -> Unit,
@@ -103,6 +100,13 @@ fun PlanningBrowserScreen(
     val levels = remember(year) { CurriculumRepository.levels(context, year) }
     var stage by rememberSaveable { mutableStateOf<String?>(null) }
     var level by rememberSaveable { mutableStateOf<String?>(null) }
+    // «مستوياتي»: يختارها الأستاذ بنفسه بالنجمة، لا من أقسامه
+    val prefs = remember { context.getSharedPreferences("planning_order", android.content.Context.MODE_PRIVATE) }
+    var myLevels by remember { mutableStateOf(prefs.getStringSet("fav_levels", emptySet()).orEmpty().toSet()) }
+    fun toggleLevel(code: String) {
+        myLevels = if (code in myLevels) myLevels - code else myLevels + code
+        prefs.edit().putStringSet("fav_levels", myLevels).apply()
+    }
     BackHandler(enabled = stage != null) { if (level != null) level = null else stage = null }
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
@@ -131,18 +135,17 @@ fun PlanningBrowserScreen(
                     // مستويات أقسام الأستاذ أولًا
                     items(levels.filter { it.stage == stage }.sortedBy { if (it.code in myLevels) 0 else 1 }, key = { it.code }) { l ->
                         val hasPlan = remember(l.code) { AnnualPlans.subjectsWithPlan(context, l.code).isNotEmpty() }
-                        ChoiceCard(l.code, levelDescription(l.code) + if (l.code in myLevels) "  ★" else "",
+                        ChoiceCard(l.code, levelDescription(l.code),
                             stringResource(R.string.pb_subjects_n, l.subjects.count { it.code != "EPS" }),
-                            if (hasPlan) null else stringResource(R.string.tact_soon)) { level = l.code }
+                            if (hasPlan) null else stringResource(R.string.tact_soon),
+                            star = l.code in myLevels, onStar = { toggleLevel(l.code) }) { level = l.code }
                     }
                 }
                 else -> Box(Modifier.weight(1f).fillMaxWidth().padding(horizontal = 12.dp)) {
                     val lv = level!!
-                    val mine = mySubjectsOf(lv)
                     PlanningTab(
                         levelCode = lv,
                         mySubjects = CurriculumRepository.level(context, year, lv)?.subjects.orEmpty()
-                            .sortedBy { if (it.code in mine) 0 else 1 }
                             .map { it.code to SubjectNames.display(it, isFr) },
                         lockedFor = { code -> lockedFor(lv, code) },
                         onActivate = onActivate
@@ -157,7 +160,8 @@ fun PlanningBrowserScreen(
 private fun stageName(st: String) = stringResource(if (st == "college") R.string.tact_stage_college else R.string.tact_stage_lycee)
 
 @Composable
-private fun ChoiceCard(badge: String, title: String, sub: String, note: String?, onClick: () -> Unit) {
+private fun ChoiceCard(badge: String, title: String, sub: String, note: String?,
+                       star: Boolean? = null, onStar: () -> Unit = {}, onClick: () -> Unit) {
     Card(Modifier.fillMaxWidth().clickable(onClick = onClick), shape = RoundedCornerShape(18.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface), elevation = CardDefaults.cardElevation(2.dp)) {
         Row(Modifier.padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -168,6 +172,9 @@ private fun ChoiceCard(badge: String, title: String, sub: String, note: String?,
                 Text(title, fontWeight = FontWeight.Black, fontSize = 16.sp)
                 Text(sub, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 if (note != null) Text(note, fontSize = 12.sp, fontWeight = FontWeight.Bold, color = Color(0xFFE65100))
+            }
+            if (star != null) androidx.compose.material3.IconButton(onClick = onStar) {
+                Text(if (star) "★" else "☆", fontSize = 24.sp, color = if (star) Color(0xFFF9A825) else MaterialTheme.colorScheme.outline)
             }
             Icon(Icons.AutoMirrored.Filled.ArrowForward, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
         }
