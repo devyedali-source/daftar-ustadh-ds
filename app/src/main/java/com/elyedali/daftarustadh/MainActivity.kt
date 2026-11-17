@@ -2012,12 +2012,13 @@ class MainActivity : AppCompatActivity() {
 
                     screen == Screen.TEACHER_HUB && currentClass != null -> {
                         val c = currentClass!!
-                        // التخطيط والتحضير للأستاذ فقط: تطبيق الإدارة لا يعرض تبويب التخطيط
-                        val isCollege = !AppRole.isAdmin && CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.stage == "college"
+                        // التخطيط والتحضير للأستاذ فقط: تطبيق الإدارة لا يعرض تبويب التخطيط.
+                        // يظهر لكل المستويات؛ والمستوى الذي لا تخطيط له بعد (الثانوي) يعرض «جارٍ العمل على برنامج هذا المستوى»
+                        val isCollege = !AppRole.isAdmin
                         ClassHub(
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
-                            // أقسام الإعدادية: صفحة التخطيط السنوي
+                            // صفحة التخطيط السنوي في كل أقسام الأستاذ
                             tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
                                 stringResource(R.string.tab_editor)) + (if (isCollege) listOf(stringResource(R.string.plan_tab)) else emptyList()),
                             icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
