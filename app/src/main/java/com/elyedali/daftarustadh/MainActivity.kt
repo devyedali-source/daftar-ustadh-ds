@@ -1929,8 +1929,6 @@ class MainActivity : AppCompatActivity() {
                                     students = students,
                                     grades = classGrades,
                                     records = records,
-                                    onUploadRecord = openFile,
-                                    onUploadMany = openBatch,
                                     onQuickEntry = { subjectCode = null; screen = Screen.QUICK_GRADES },
                                     teacherOf = { code ->
                                         val name = ttAssignments.firstOrNull { it.classId == c.id && it.subjectCode == code }?.teacherName?.takeIf { it.isNotBlank() }
@@ -2185,7 +2183,6 @@ class MainActivity : AppCompatActivity() {
                             students = students,
                             grades = classGrades,
                             records = records,
-                            onUploadRecord = openFile,
                             onOpenSubject = { code ->
                                 subjectCode = code; gradesFromAdmin = true; gradesBack = Screen.RESULTS; screen = Screen.GRADES
                             },

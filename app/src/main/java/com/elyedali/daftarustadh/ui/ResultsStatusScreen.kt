@@ -41,7 +41,7 @@ import com.elyedali.daftarustadh.data.GradeMath
 import com.elyedali.daftarustadh.data.StudentEntity
 import com.elyedali.daftarustadh.data.SubjectRecordEntity
 
-/** نتائج القسم عند الإدارة: شريط المواد المكتملة والمتبقية لكل فصل، ورفع سجلات الأساتذة. */
+/** نتائج القسم عند الإدارة: شريط المواد المكتملة والمتبقية لكل فصل، والإدخال اليدوي للنتائج. */
 @Composable
 fun ResultsStatusScreen(
     schoolClass: ClassEntity,
@@ -49,8 +49,6 @@ fun ResultsStatusScreen(
     students: List<StudentEntity>,
     grades: List<GradeEntity>,
     records: List<SubjectRecordEntity>,
-    onUploadRecord: () -> Unit,
-    onUploadMany: (() -> Unit)? = null,
     onQuickEntry: (() -> Unit)? = null,
     /** أستاذ المادة في هذا القسم: (الاسم، رقم واتساب) من «أساتذة المواد»، أو null. */
     teacherOf: ((subjectCode: String) -> Pair<String, String>?)? = null,
@@ -106,12 +104,7 @@ fun ResultsStatusScreen(
                             colors = androidx.compose.material3.ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colorScheme.error)) {
                             Text("❓ " + stringResource(R.string.mi_button, subjects.size - completeCount), fontWeight = FontWeight.Bold, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
                         }
-                    Button(onClick = onUploadRecord, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.upload_record), textAlign = androidx.compose.ui.text.style.TextAlign.Center) }
-                    if (onUploadMany != null) androidx.compose.material3.OutlinedButton(onClick = onUploadMany, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) {
-                        Text("📥 " + stringResource(R.string.bu_button), textAlign = androidx.compose.ui.text.style.TextAlign.Center)
-                    }
-                    if (onUploadMany != null) Text(stringResource(R.string.bu_hint), style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    // ملفات الأساتذة تُرفع من «ملفات نتائج الأساتذة» فقط (الملف الواحد يشمل كل أقسام الأستاذ)؛ هنا الإدخال اليدوي
                     if (onQuickEntry != null) androidx.compose.material3.OutlinedButton(onClick = onQuickEntry, shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp), modifier = Modifier.fillMaxWidth()) {
                         Text("⚡ " + stringResource(R.string.qg_button), textAlign = androidx.compose.ui.text.style.TextAlign.Center)
                     }
