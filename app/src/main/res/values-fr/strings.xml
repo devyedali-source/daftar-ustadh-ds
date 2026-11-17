@@ -939,4 +939,8 @@
     <string name="upd_downloaded">Mise à jour téléchargée</string>
     <string name="upd_downloaded_text">La nouvelle version est prête. Touchez « Installer » : l\'application redémarre avec la nouvelle version, vos données sont conservées.</string>
     <string name="upd_install">Installer</string>
+    <string name="act_creating_title">Création de la demande…</string>
+    <string name="act_creating_text">La demande d\'activation est envoyée au serveur, puis WhatsApp s\'ouvre. Patientez, cela peut prendre du temps avec un réseau faible.</string>
+    <string name="act_error_title">Envoi impossible</string>
+    <string name="act_no_internet">Désolé, le téléphone n\'est pas connecté à Internet. La demande d\'activation a besoin d\'Internet pour atteindre le serveur. Connectez-vous puis réessayez.</string>
 </resources>

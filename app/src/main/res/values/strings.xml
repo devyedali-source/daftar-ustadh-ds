@@ -939,4 +939,8 @@
     <string name="upd_downloaded">تم تنزيل التحديث</string>
     <string name="upd_downloaded_text">التحديث الجديد جاهز. اضغط «تثبيت الآن» ليُعاد فتح التطبيق بالإصدار الجديد، وبياناتك محفوظة.</string>
     <string name="upd_install">تثبيت الآن</string>
+    <string name="act_creating_title">جارِ إنشاء الطلب…</string>
+    <string name="act_creating_text">يُرسَل طلب التفعيل إلى الخادم، ثم يُفتح واتساب. انتظر قليلًا، قد يستغرق ذلك وقتًا مع شبكة ضعيفة.</string>
+    <string name="act_error_title">تعذّر إرسال الطلب</string>
+    <string name="act_no_internet">نعتذر، الهاتف غير متصل بالإنترنت. طلب التفعيل يحتاج إلى الإنترنت ليصل إلى الخادم. اتصل بالإنترنت ثم أعد المحاولة.</string>
 </resources>

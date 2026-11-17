@@ -44,6 +44,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.verticalScroll
@@ -1077,6 +1078,8 @@ class MainActivity : AppCompatActivity() {
                 // ===== رفع ملفات النتائج دفعة واحدة =====
                 var batchResult by remember { mutableStateOf<BatchResult?>(null) }
                 var batchWorking by remember { mutableStateOf(false) }
+                var actRequesting by remember { mutableStateOf(false) }
+                var actError by remember { mutableStateOf<String?>(null) }
                 fun processRecordsBatch(uris: List<Uri>) {
                     if (uris.isEmpty()) return
                     batchWorking = true
@@ -1797,16 +1800,17 @@ class MainActivity : AppCompatActivity() {
                             val owner = inst
                             // سنة الأقسام المختارة (قد تكون غير سنة تسجيل المؤسسة)
                             val reqYear = chosen.firstOrNull()?.schoolYear ?: adminYear ?: owner?.schoolYear.orEmpty()
-                            val reqCode = kotlinx.coroutines.withTimeoutOrNull(20_000) {
-                                com.elyedali.daftarustadh.auth.DsSubscriptions.request(
-                                    com.elyedali.daftarustadh.auth.DsSubscriptions.APP_ADMIN, owner, reqYear,
-                                    chosen.map { it.id }, chosen.map { it.name }, total)
-                            }
+                            if (!hasInternet()) { actError = getString(R.string.act_no_internet); return@launch }
+                            actRequesting = true
+                            val reqCode = try {
+                                kotlinx.coroutines.withTimeoutOrNull(25_000) {
+                                    com.elyedali.daftarustadh.auth.DsSubscriptions.request(
+                                        com.elyedali.daftarustadh.auth.DsSubscriptions.APP_ADMIN, owner, reqYear,
+                                        chosen.map { it.id }, chosen.map { it.name }, total)
+                                }
+                            } finally { actRequesting = false }
                             // الطلب يجب أن يصل إلى الخادم أولًا، وإلا لا يمكن قبوله من لوحة التحكم
-                            if (reqCode == null) {
-                                android.widget.Toast.makeText(this@MainActivity, getString(R.string.act_need_internet), android.widget.Toast.LENGTH_LONG).show()
-                                return@launch
-                            }
+                            if (reqCode == null) { actError = getString(R.string.act_need_internet); return@launch }
                             val msg = buildString {
                                 append(getString(R.string.act_msg_intro)).append('\n')
                                 if (owner != null) {
@@ -2491,15 +2495,16 @@ class MainActivity : AppCompatActivity() {
                                 scope.launch {
                                     val code = metaDao.get(TA.CODE_KEY) ?: TA.newCode().also { metaDao.put(AppMetaEntity(TA.CODE_KEY, it)) }
                                     val tName = (teacherProfile?.name ?: teacherName).orEmpty()
-                                    val reqCode = kotlinx.coroutines.withTimeoutOrNull(20_000) {
-                                        com.elyedali.daftarustadh.auth.DsSubscriptions.request(
-                                            com.elyedali.daftarustadh.auth.DsSubscriptions.APP_TEACHER, null, year,
-                                            emptyList(), emptyList(), TA.PRICE, tName, subjects, levels)
-                                    }
-                                    if (reqCode == null) {
-                                        android.widget.Toast.makeText(this@MainActivity, getString(R.string.act_need_internet), android.widget.Toast.LENGTH_LONG).show()
-                                        return@launch
-                                    }
+                                    if (!hasInternet()) { actError = getString(R.string.act_no_internet); return@launch }
+                                    actRequesting = true
+                                    val reqCode = try {
+                                        kotlinx.coroutines.withTimeoutOrNull(25_000) {
+                                            com.elyedali.daftarustadh.auth.DsSubscriptions.request(
+                                                com.elyedali.daftarustadh.auth.DsSubscriptions.APP_TEACHER, null, year,
+                                                emptyList(), emptyList(), TA.PRICE, tName, subjects, levels)
+                                        }
+                                    } finally { actRequesting = false }
+                                    if (reqCode == null) { actError = getString(R.string.act_need_internet); return@launch }
                                     // الرسالة: السنة الدراسية والمواد ورابط التفعيل فقط (باقي التفاصيل محفوظة في الطلب على الخادم)
                                     val msg = getString(R.string.tact_msg, year,
                                         subjects.joinToString(" ، ") { c -> subjectOpts.firstOrNull { it.code == c }?.let { com.elyedali.daftarustadh.data.SubjectNames.display(it, isFrUi) } ?: c },
@@ -2568,6 +2573,27 @@ class MainActivity : AppCompatActivity() {
                     )
                 }
 
+                // طلب التفعيل: مؤشر «جارِ إنشاء الطلب» ثم اعتذار واضح إن لم يصل إلى الخادم
+                if (actRequesting) AlertDialog(
+                    onDismissRequest = { },
+                    title = { Text(stringResource(R.string.act_creating_title)) },
+                    text = {
+                        androidx.compose.foundation.layout.Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+                            horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(16.dp)) {
+                            androidx.compose.material3.CircularProgressIndicator(modifier = Modifier.size(28.dp))
+                            Text(stringResource(R.string.act_creating_text))
+                        }
+                    },
+                    confirmButton = { }
+                )
+                actError?.let { err ->
+                    AlertDialog(
+                        onDismissRequest = { actError = null },
+                        title = { Text("📶 " + stringResource(R.string.act_error_title)) },
+                        text = { Text(err) },
+                        confirmButton = { TextButton(onClick = { actError = null }) { Text(stringResource(R.string.ok)) } }
+                    )
+                }
                 if (batchWorking) AlertDialog(
                     onDismissRequest = {},
                     text = { Text(stringResource(R.string.bu_working)) },
@@ -2730,6 +2756,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
         finish()
     }
+
+    /** هل الهاتف متصل بالإنترنت؟ (لإظهار اعتذار فوري بدل الانتظار) */
+    private fun hasInternet(): Boolean = try {
+        val cm = getSystemService(android.content.Context.CONNECTIVITY_SERVICE) as android.net.ConnectivityManager
+        cm.getNetworkCapabilities(cm.activeNetwork)?.hasCapability(android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET) == true
+    } catch (e: Exception) { true }
 
     /** تحديث نُزّل من المتجر في الخلفية: يُعرض «تثبيت الآن» عند الرجوع إلى التطبيق. */
     override fun onResume() {
