@@ -4,3 +4,5 @@ com.elyedali.daftarustadh SHA_1 C1:60:C9:3A:82:4A:01:D8:AF:7E:11:FB:FF:1D:A0:0C:
 com.elyedali.daftarustadh SHA_256 52:31:A0:18:0D:B0:46:CE:F6:59:18:51:AA:D8:04:96:AA:EB:01:78:E2:40:7B:32:F9:3E:BB:02:8C:23:1A:A2
 com.elyedali.daftarustadh.teacher SHA_1 C1:60:C9:3A:82:4A:01:D8:AF:7E:11:FB:FF:1D:A0:0C:A1:96:D6:46
 com.elyedali.daftarustadh.teacher SHA_256 52:31:A0:18:0D:B0:46:CE:F6:59:18:51:AA:D8:04:96:AA:EB:01:78:E2:40:7B:32:F9:3E:BB:02:8C:23:1A:A2
+com.elyedali.daftarustadh.teacher SHA_1 6D:FC:F1:17:BD:73:C1:C9:C9:7F:37:52:39:5A:DC:DF:5F:EF:FE:01
+com.elyedali.daftarustadh.teacher SHA_256 86:4F:B1:98:BD:EB:D0:18:93:FA:55:F0:A3:2D:B3:74:A6:82:D0:B5:D1:AB:68:17:31:4B:B5:FE:A0:3A:4B:3B
