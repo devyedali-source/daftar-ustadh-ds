@@ -67,14 +67,14 @@ class TeacherStoreScreens {
     @Test fun t2_prep() {
         val set = LessonBank.load(ctx, "IR", level)!!
         val l = set.lessons.first()
-        show { LessonDialog(l, nameOf("IR"), "الأسبوع 1", set.bookOf(l), set.bookTitleOf(l), "IR") {} }
+        show { LessonDialog(l, nameOf("IR"), "الأسبوع 3", set.bookOf(l), set.bookTitleOf(l), "IR") {} }
         save("2-prep", dialog = true)
     }
 
     @Test fun t3_board() {
         val set = LessonBank.load(ctx, "MATS", level)!!
         val l = set.lessons.first { it.title.startsWith("Chapitre 9") }
-        show { LessonDialog(l, nameOf("MATS"), "Semaine 24", set.bookOf(l), set.bookTitleOf(l), "MATS") {} }
+        show { LessonDialog(l, nameOf("MATS"), "Mai S1", set.bookOf(l), set.bookTitleOf(l), "MATS") {} }
         rule.onNodeWithText("🧑‍🏫", substring = true).performClick()
         save("3-board", dialog = true)
     }
