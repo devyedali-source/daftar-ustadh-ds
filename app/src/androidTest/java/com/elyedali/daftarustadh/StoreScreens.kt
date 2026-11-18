@@ -32,7 +32,7 @@ class StoreScreens {
     private val ctx get() = InstrumentationRegistry.getInstrumentation().targetContext
     private val out by lazy { File(ctx.filesDir, "store").apply { mkdirs() } }
 
-    private val year by lazy { CurriculumRepository.availableYears(ctx).last() }
+    private val year = "2026-2027" // السنة الدراسية الحالية
     private val subjects by lazy { CurriculumRepository.level(ctx, year, "3AS")!!.subjects }
     private val cls by lazy { ClassEntity("c1", "main", year, "3AS", 2, 0L) }
     private val names = listOf("آمنة أحمد" to "Amna Ahmed", "إبراهيم محمد" to "Ibrahim Mohamed", "أم كلثوم سيدي" to "Oumkelthoum Sidi",

@@ -8,13 +8,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
@@ -95,7 +95,6 @@ fun GradesScreen(
                 if (isFr) subject.nameFr else subject.nameAr, onBack,
                 listOf("${schoolClass.name} — ${stringResource(R.string.coefficient)} ${subject.coefficient}")
             ) {
-                HeaderAction("⚙️ " + stringResource(R.string.remarks_settings)) { onRemarksSettings() }
                 var printMenu by remember { mutableStateOf(false) }
                 androidx.compose.foundation.layout.Box {
                     HeaderAction(stringResource(R.string.print_record)) { printMenu = true }
@@ -107,6 +106,8 @@ fun GradesScreen(
                     }
                 }
             }
+            // تحت الرأس (لا داخله) حتى لا يضيق اسم المادة فينكسر على سطرين
+            TextButton(onClick = onRemarksSettings) { Text("⚙️ " + stringResource(R.string.remarks_settings)) }
             TabRow(selectedTabIndex = term - 1) {
                 listOf(R.string.term_1, R.string.term_2, R.string.term_3).forEachIndexed { i, res ->
                     Tab(selected = term == i + 1, onClick = { term = i + 1 }, text = { Text(stringResource(res)) })
@@ -211,23 +212,34 @@ private fun GradeField(
     var text by remember(studentId, slot) { mutableStateOf(GradeMath.format(value)) }
     val shown = if (focused) text else markLabel ?: GradeMath.format(value)
     val invalid = focused && text.isNotBlank() && GradeMath.parse(text) == null
-    OutlinedTextField(
+    // حشوة داخلية صغيرة: الحقل ضيّق (60dp) والحشوة الافتراضية (16dp لكل جانب) كانت تُخفي النقاط العشرية مثل 12.75
+    val interaction = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }
+    val textStyle = MaterialTheme.typography.bodyMedium.copy(textAlign = TextAlign.Center, color = MaterialTheme.colorScheme.onSurface)
+    androidx.compose.foundation.text.BasicTextField(
         value = shown,
         onValueChange = { v ->
             val t = v.take(5)
             // لا تُقبل كتابة نقطة خارج 0–20 (مثل 30): يبقى ما كان مكتوبًا ولا تُحفظ نقطة خاطئة
-            if (t.isNotBlank() && GradeMath.parse(t) == null) return@OutlinedTextField
+            if (t.isNotBlank() && GradeMath.parse(t) == null) return@BasicTextField
             text = t
             if (text.isBlank()) onSetGrade(studentId, slot, null, null)
             else GradeMath.parse(text)?.let { onSetGrade(studentId, slot, it, null) }
         },
         singleLine = true,
-        isError = invalid,
-        textStyle = MaterialTheme.typography.bodyMedium.copy(textAlign = TextAlign.Center),
+        textStyle = textStyle,
+        cursorBrush = androidx.compose.ui.graphics.SolidColor(MaterialTheme.colorScheme.primary),
+        interactionSource = interaction,
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal, imeAction = ImeAction.Next),
-        modifier = modifier.padding(horizontal = 2.dp).onFocusChanged { f ->
+        modifier = modifier.padding(horizontal = 2.dp).heightIn(min = 52.dp).onFocusChanged { f ->
             if (f.isFocused && !focused) text = if (mark != null) "" else GradeMath.format(value)
             focused = f.isFocused
         }
-    )
-}
+    ) { inner ->
+        androidx.compose.material3.OutlinedTextFieldDefaults.DecorationBox(
+            value = shown, innerTextField = inner, enabled = true, singleLine = true,
+            visualTransformation = androidx.compose.ui.text.input.VisualTransformation.None,
+            interactionSource = interaction, isError = invalid,
+            contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 2.dp, vertical = 14.dp)
+        )
+    }
+}}
