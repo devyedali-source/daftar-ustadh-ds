@@ -192,6 +192,7 @@ fun GradesScreen(
     }
 }
 
+@OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 @Composable
 private fun GradeField(
     studentId: String,
