@@ -9,8 +9,8 @@ import androidx.compose.ui.test.captureToImage
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.hasScrollAction
-import androidx.compose.ui.test.hasText
-import androidx.compose.ui.test.performScrollToNode
+import androidx.compose.ui.test.performTouchInput
+import androidx.compose.ui.test.swipeUp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.elyedali.daftarustadh.data.BookPack
@@ -52,7 +52,7 @@ class BookPacksTest {
     private fun shot(name: String) {
         // النزول إلى «حالة كتبي» حتى تظهر الكتب وحالاتها في اللقطة
         rule.waitForIdle()
-        try { rule.onNode(hasScrollAction()).performScrollToNode(hasText("حالة كتبي")) } catch (e: Throwable) { }
+        repeat(4) { try { rule.onNode(hasScrollAction()).performTouchInput { swipeUp() } } catch (e: Throwable) { } }
         rule.waitForIdle(); Thread.sleep(800); rule.waitForIdle()
         val bmp = rule.onRoot().captureToImage().asAndroidBitmap()
         val out = File(ctx.filesDir, "store").apply { mkdirs() }
