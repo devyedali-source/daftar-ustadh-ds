@@ -69,6 +69,7 @@ fun BooksScreen(firstTime: Boolean, isFr: Boolean, onDone: () -> Unit, onMenu: (
     val wanted = packs.filter { it.subject in subjects && it.level in levels }
     val toDownload = wanted.filter { states[it.name] !is BookPack.Status.Ready }
     val onPhone = packs.filter { it.name in selected || states[it.name] !is BookPack.Status.NotDownloaded && states[it.name] !is BookPack.Status.NotInTestBuild && states[it.name] != null }
+        .sortedWith(compareBy({ levelOrder.indexOf(it.level) }, { subjectOrder.indexOf(it.subject) }))
 
     toRemove?.let { p ->
         AlertDialog(onDismissRequest = { toRemove = null },
