@@ -10,7 +10,11 @@ import androidx.compose.ui.window.SecureFlagPolicy
  * يُستثنى حساب مدير الأقسام (صاحب التطبيق) وحده.
  */
 object ScreenSecurity {
-    fun captureAllowed(): Boolean = try { com.elyedali.daftarustadh.auth.DsAuth.isOwner } catch (e: Exception) { false }
+    /** لاختبار لقطات المتجر فقط (لا يغيّره التطبيق أبدًا). */
+    @Volatile var allowForStoreShots = false
+
+    fun captureAllowed(): Boolean = allowForStoreShots ||
+        try { com.elyedali.daftarustadh.auth.DsAuth.isOwner } catch (e: Exception) { false }
 
     /** للنوافذ المنبثقة (لها نافذة خاصة لا ترث منع الشاشة الرئيسية). */
     val dialogPolicy: SecureFlagPolicy get() = if (captureAllowed()) SecureFlagPolicy.Inherit else SecureFlagPolicy.SecureOn

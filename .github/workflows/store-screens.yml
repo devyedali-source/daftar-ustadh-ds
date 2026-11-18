@@ -4,7 +4,7 @@ name: Store screenshots (admin)
 on:
   workflow_dispatch:
   push:
-    branches: [run-store-screens]
+    branches: [run-store-screens, run-store-screens-teacher]
 
 permissions:
   contents: write
@@ -12,6 +12,13 @@ permissions:
 jobs:
   screens:
     runs-on: ubuntu-latest
+    env:
+      # فرع run-store-screens-teacher = لقطات «دفتر الأستاذ DS»، وإلا لقطات «إدارة DS»
+      FLAVOR: ${{ github.ref_name == 'run-store-screens-teacher' && 'Teacher' || 'Admin' }}
+      TEST: ${{ github.ref_name == 'run-store-screens-teacher' && 'TeacherStoreScreens' || 'StoreScreens' }}
+      PKG: ${{ github.ref_name == 'run-store-screens-teacher' && 'com.elyedali.daftarustadh.teacher' || 'com.elyedali.daftarustadh' }}
+      SHOTS: ${{ github.ref_name == 'run-store-screens-teacher' && '1-planning 2-prep 3-board 4-practice 5-grades' || '1-institution 2-results 3-grades 4-kashf' }}
+      OUT_BRANCH: ${{ github.ref_name == 'run-store-screens-teacher' && 'store-screens-teacher' || 'store-screens' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -35,15 +42,15 @@ jobs:
           profile: Nexus 5X
           disable-animations: true
           script: |
-            gradle connectedAdminDebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.StoreScreens -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
-            mkdir -p out && for f in 1-institution 2-results 3-grades 4-kashf; do adb exec-out run-as com.elyedali.daftarustadh cat files/store/$f.png > out/$f.png; done; ls -la out
+            gradle connected${FLAVOR}DebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.${TEST} -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
+            mkdir -p out && for f in $SHOTS; do adb exec-out run-as $PKG cat files/store/$f.png > out/$f.png; done; ls -la out
       - name: Push screenshots
         run: |
           git config user.name "screens-bot"
           git config user.email "screens-bot@users.noreply.github.com"
-          git checkout --orphan store-screens
+          git checkout --orphan "$OUT_BRANCH"
           git rm -rf --cached . > /dev/null
           cp out/*.png .
           git add *.png
           git commit -m "Store screenshots"
-          git push -f origin store-screens
+          git push -f origin "$OUT_BRANCH"
