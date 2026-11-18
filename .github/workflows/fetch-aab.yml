@@ -1,0 +1,38 @@
+name: Copy store bundles to branch
+
+# بلا بناء: ينسخ ملفات AAB من عملية بناء سابقة إلى فرع store-aab (لتنزيلها دون صفحة Artifacts).
+# ملف الأستاذ أكبر من حد GitHub (100 ميغا للملف) فيُقسَّم إلى أجزاء.
+on:
+  push:
+    branches: [run-fetch-aab]
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read run id
+        id: rid
+        run: echo "id=$(cat .github/aab-run-id)" >> "$GITHUB_OUTPUT"
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ steps.rid.outputs.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Push to store-aab
+        run: |
+          mkdir out
+          find dl -name "*.aab" -exec cp {} out/ \;
+          cd out
+          for f in *teacher*.aab; do [ -f "$f" ] && split -b 90m -d "$f" "$f.part" && rm "$f"; done
+          ls -la
+          git init -q -b store-aab
+          git config user.name "aab-bot"
+          git config user.email "aab-bot@users.noreply.github.com"
+          git add .
+          git commit -qm "Store bundles from run ${{ steps.rid.outputs.id }}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" store-aab
