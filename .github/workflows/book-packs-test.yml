@@ -1,7 +1,7 @@
 name: Book packs test (local testing)
 
 # يدوي فقط: يختبر تنزيل الكتب حسب اختيار الأستاذ بنظام المتجر نفسه في وضع الاختبار المحلي
-# (bundletool --local-testing) على محاكي، ويضع لقطات صفحة «كتبي على الهاتف» في فرع book-packs-shots.
+# (bundletool --local-testing) على محاكي أندرويد 10 (أندرويد 11 يمنع bundletool من نسخ الحزم)، ويضع لقطات صفحة «كتبي على الهاتف» في فرع book-packs-shots.
 on:
   workflow_dispatch:
   push:
@@ -42,7 +42,7 @@ jobs:
       - name: Run on emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
+          api-level: 29
           arch: x86_64
           target: default
           profile: Nexus 5X
