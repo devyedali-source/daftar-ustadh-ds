@@ -1,5 +1,6 @@
 package com.elyedali.daftarustadh.data
 
+import androidx.room.ColumnInfo
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Entity
@@ -10,7 +11,11 @@ import androidx.room.PrimaryKey
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
-/** وثيقة يكتبها الأستاذ في قسم (امتحان، طلب، درس...) ويسحبها PDF بالرأسية وطابعه. */
+/**
+ * «تحريراتي»: وثيقة يكتبها الأستاذ (امتحان، طلب، درس...) لمستوى دراسي، في البرنامج السنوي لذلك المستوى،
+ * ويسحبها PDF بطابعه. levelCode = المستوى (1AS...)، وsubjectCode = مادة الامتحان إن وُجدت.
+ * classId: للوثائق القديمة التي كُتبت داخل قسم (تبقى، وتظهر في مستوى ذلك القسم).
+ */
 @Entity(tableName = "document", indices = [Index(value = ["classId"])])
 data class DocumentEntity(
     @PrimaryKey val id: String,
@@ -18,7 +23,9 @@ data class DocumentEntity(
     val type: String,       // exam | request | lesson | other
     val title: String,
     val body: String,
-    val updatedAt: Long
+    val updatedAt: Long,
+    @ColumnInfo(defaultValue = "") val levelCode: String = "",
+    @ColumnInfo(defaultValue = "") val subjectCode: String = ""
 )
 
 object DocType {
@@ -34,13 +41,18 @@ interface DocumentDao {
     @Query("SELECT * FROM document WHERE classId = :classId ORDER BY updatedAt DESC")
     fun observeByClass(classId: String): Flow<List<DocumentEntity>>
 
+    /** تحريرات الأستاذ لمستوى، الأحدث أولًا. */
+    @Query("SELECT * FROM document WHERE levelCode = :level ORDER BY updatedAt DESC")
+    fun observeByLevel(level: String): Flow<List<DocumentEntity>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun save(d: DocumentEntity)
 
     @Delete
     suspend fun delete(d: DocumentEntity)
 
-    @Query("DELETE FROM document WHERE classId = :classId")
+    /** عند حذف قسم: وثائقه تبقى للأستاذ في مستواه (تحريراته لا تُحذف مع القسم). */
+    @Query("UPDATE document SET classId = '' WHERE classId = :classId")
     suspend fun deleteByClass(classId: String)
 
     @Query("UPDATE document SET classId = :to WHERE classId = :from")

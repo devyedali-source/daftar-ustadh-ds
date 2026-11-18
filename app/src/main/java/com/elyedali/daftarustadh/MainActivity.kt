@@ -72,7 +72,6 @@ import com.elyedali.daftarustadh.ui.AbsenceSubject
 import com.elyedali.daftarustadh.ui.TextbookTab
 import com.elyedali.daftarustadh.ui.HomeYearsScreen
 import com.elyedali.daftarustadh.ui.ComingSoon
-import com.elyedali.daftarustadh.ui.DocumentsTab
 import com.elyedali.daftarustadh.ui.KashfTab
 import com.elyedali.daftarustadh.data.DocumentEntity
 import com.elyedali.daftarustadh.pdf.DocumentPdf
@@ -105,6 +104,8 @@ import kotlinx.coroutines.withContext
 import java.util.UUID
 
 private const val TEACHER_NAME_KEY = "teacher_name"
+/** طابع الأستاذ في «تحريراتي» (أسطر يكتبها بنفسه). */
+private const val DOC_STAMP_KEY = "doc_stamp"
 /** العربية بأرقام لاتينية. */
 private const val AR_LATN = "ar-u-nu-latn"
 /** بصمة الجدول الزمني المعتمد. */
@@ -522,6 +523,29 @@ class MainActivity : AppCompatActivity() {
                         ShareHelper.share(this@MainActivity, bytes, name, getString(R.string.kashf_share), "application/pdf")
                     }
                 }
+                // طابع الأستاذ في «تحريراتي»: يكتبه مرة ويعدّله متى شاء، ويظهر أسفل كل تحرير وفي الـPDF
+                val docStamp by remember { metaDao.observe(DOC_STAMP_KEY) }.collectAsState(initial = null)
+
+                /** سحب تحرير مستوى PDF: المستوى (ومادة الامتحان)، العنوان والنص، والتوقيع والطابع أسفل الصفحة. */
+                fun exportLevelDocument(d: DocumentEntity, stamp: String, year: String) {
+                    scope.launch {
+                        val sub = d.subjectCode.takeIf { it.isNotBlank() }?.let { code ->
+                            CurriculumRepository.level(this@MainActivity, year, d.levelCode)?.subjects?.firstOrNull { it.code == code } }
+                        val info = DocumentPdf.Info(
+                            infoLineAr = "المستوى: ⁦${d.levelCode}⁩",
+                            infoLineFr = "Niveau : ${d.levelCode}",
+                            subjectLine = sub?.let { "المادة: ${it.nameAr} — Matière : ${it.nameFr}" },
+                            title = d.title,
+                            body = d.body,
+                            stampLines = stamp.lines().map { it.trim() }.filter { it.isNotEmpty() }
+                        )
+                        val bytes = withContext(Dispatchers.Default) { DocumentPdf.build(info) }
+                        val fileName = ("${d.title.ifBlank { "Document" }} - ${d.levelCode}.pdf")
+                            .replace(Regex("[\\\\/:*?\"<>|]"), " ")
+                        ShareHelper.share(this@MainActivity, bytes, fileName, getString(R.string.doc_pdf), "application/pdf")
+                    }
+                }
+
                 var askNameBlank by remember { mutableStateOf(false) }
                 var askNameDoc by remember { mutableStateOf<DocumentEntity?>(null) }
 
@@ -2122,16 +2146,14 @@ class MainActivity : AppCompatActivity() {
                     screen == Screen.TEACHER_HUB && currentClass != null -> {
                         val c = currentClass!!
                         // البرنامج السنوي صار خارج الأقسام (زر «البرنامج السنوي» بعد السنة)، فلا يدخل الأستاذ أقسامه لتفقده
-                        val isCollege = false
                         ClassHub(
                             title = c.name,
                             subtitles = listOfNotNull(stringResource(R.string.mode_teacher), schoolNames[c.institutionId], c.schoolYear),
                             // صفحة التخطيط السنوي في كل أقسام الأستاذ
-                            tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results),
-                                stringResource(R.string.tab_editor)) + (if (isCollege) listOf(stringResource(R.string.plan_tab)) else emptyList()),
-                            icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit,
-                                androidx.compose.material.icons.Icons.Filled.Create) + (if (isCollege) listOf(androidx.compose.material.icons.Icons.Filled.DateRange) else emptyList()),
-                            selected = hubTab,
+                            // القسم: الطلاب والنتائج فقط؛ «تحريراتي» صارت في البرنامج السنوي حسب المستوى
+                            tabs = listOf(stringResource(R.string.tab_students), stringResource(R.string.tab_results)),
+                            icons = listOf(androidx.compose.material.icons.Icons.Filled.Person, androidx.compose.material.icons.Icons.Filled.Edit),
+                            selected = hubTab.coerceIn(0, 1),
                             onSelect = { hubTab = it },
                             onBack = { screen = hubBack }
                         ) {
@@ -2155,7 +2177,7 @@ class MainActivity : AppCompatActivity() {
                                     readOnly = true,
                                     showHeader = false
                                 )
-                                1 -> TeacherClassScreen(
+                                else -> TeacherClassScreen(
                                     schoolClass = c,
                                     subjectsFromAdmin = bundleSubjectsOf(c.id) != null,
                                     schoolName = schoolNames[c.institutionId],
@@ -2174,26 +2196,6 @@ class MainActivity : AppCompatActivity() {
                                     onShowStudents = { hubTab = 0 },
                                     onBack = { screen = hubBack },
                                     showHeader = false
-                                )
-                                3 -> com.elyedali.daftarustadh.ui.PlanningTab(
-                                    levelCode = c.levelCode,
-                                    schoolYear = c.schoolYear,
-                                    lockedFor = { code -> !com.elyedali.daftarustadh.data.TeacherActivation.unlocked(teacherPacks, c.schoolYear, c.levelCode, code) },
-                                    onActivate = { teacherActivateYear = c.schoolYear },
-                                    // كل مواد المستوى تظهر في التخطيط، حتى لأستاذ المادة الواحدة
-                                    mySubjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
-                                        .sortedBy { s -> if (mySubjects.any { it.subjectCode == s.code }) 0 else 1 }
-                                        .map { it.code to com.elyedali.daftarustadh.data.SubjectNames.display(it, isFrUi) }
-                                )
-                                else -> DocumentsTab(
-                                    classId = c.id,
-                                    documents = documents,
-                                    onSave = { d -> scope.launch { documentDao.save(d) } },
-                                    onDelete = { d -> scope.launch { documentDao.delete(d) } },
-                                    onExport = { d ->
-                                        val n = teacherName
-                                        if (n.isNullOrBlank()) { askNameDoc = d; askNameFor = "" } else exportDocument(d, n)
-                                    }
                                 )
                             }
                         }
@@ -2404,7 +2406,17 @@ class MainActivity : AppCompatActivity() {
                             lockedFor = { lv, code -> !com.elyedali.daftarustadh.data.TeacherActivation.unlocked(teacherPacks, year, lv, code) },
                             onActivate = { teacherActivateYear = year },
                             onBack = { teacherSection = null },
-                            onMenu = { scope.launch { drawerState.open() } }
+                            onMenu = { scope.launch { drawerState.open() } },
+                            documents = { lv, subs ->
+                                val docs by remember(lv) { documentDao.observeByLevel(lv) }.collectAsState(initial = emptyList())
+                                com.elyedali.daftarustadh.ui.LevelDocuments(
+                                    level = lv, levelSubjects = subs, documents = docs, stamp = docStamp.orEmpty(),
+                                    onSaveStamp = { st -> scope.launch { metaDao.put(AppMetaEntity(DOC_STAMP_KEY, st)) } },
+                                    onSave = { d -> scope.launch { documentDao.save(d) } },
+                                    onDelete = { d -> scope.launch { documentDao.delete(d) } },
+                                    onExport = { d -> exportLevelDocument(d, docStamp.orEmpty(), year) }
+                                )
+                            }
                         )
                     }
 

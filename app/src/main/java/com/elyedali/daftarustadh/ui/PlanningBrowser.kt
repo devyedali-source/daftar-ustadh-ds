@@ -94,7 +94,9 @@ fun PlanningBrowserScreen(
     lockedFor: (level: String, subject: String) -> Boolean,
     onActivate: () -> Unit,
     onBack: () -> Unit,
-    onMenu: () -> Unit
+    onMenu: () -> Unit,
+    /** «تحريراتي» لهذا المستوى (الوثائق وطابع الأستاذ، تأتي من MainActivity). */
+    documents: @Composable (level: String, subjects: List<Pair<String, String>>) -> Unit = { _, _ -> }
 ) {
     val context = LocalContext.current
     val levels = remember(year) { CurriculumRepository.levels(context, year) }
@@ -141,16 +143,28 @@ fun PlanningBrowserScreen(
                             star = l.code in myLevels, onStar = { toggleLevel(l.code) }) { level = l.code }
                     }
                 }
-                else -> Box(Modifier.weight(1f).fillMaxWidth().padding(horizontal = 12.dp)) {
+                else -> Column(Modifier.weight(1f).fillMaxWidth()) {
                     val lv = level!!
-                    PlanningTab(
-                        levelCode = lv,
-                        schoolYear = year,
-                        mySubjects = CurriculumRepository.level(context, year, lv)?.subjects.orEmpty()
-                            .map { it.code to SubjectNames.display(it, isFr) },
-                        lockedFor = { code -> lockedFor(lv, code) },
-                        onActivate = onActivate
-                    )
+                    val subjects = CurriculumRepository.level(context, year, lv)?.subjects.orEmpty()
+                        .map { it.code to SubjectNames.display(it, isFr) }
+                    // في المستوى: التخطيط السنوي، و«تحريراتي» لهذا المستوى
+                    var docsTab by rememberSaveable(lv) { mutableStateOf(false) }
+                    androidx.compose.material3.TabRow(selectedTabIndex = if (docsTab) 1 else 0) {
+                        androidx.compose.material3.Tab(selected = !docsTab, onClick = { docsTab = false },
+                            text = { Text("🗓️ " + stringResource(R.string.plan_tab), fontWeight = FontWeight.Bold) })
+                        androidx.compose.material3.Tab(selected = docsTab, onClick = { docsTab = true },
+                            text = { Text("✍️ " + stringResource(R.string.doc_tab_mine), fontWeight = FontWeight.Bold) })
+                    }
+                    Box(Modifier.weight(1f).fillMaxWidth().padding(horizontal = 12.dp)) {
+                        if (docsTab) documents(lv, subjects.filter { it.first != "EPS" })
+                        else PlanningTab(
+                            levelCode = lv,
+                            schoolYear = year,
+                            mySubjects = subjects,
+                            lockedFor = { code -> lockedFor(lv, code) },
+                            onActivate = onActivate
+                        )
+                    }
                 }
             }
         }

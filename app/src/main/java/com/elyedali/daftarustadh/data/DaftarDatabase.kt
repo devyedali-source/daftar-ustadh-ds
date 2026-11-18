@@ -18,7 +18,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         GradeEntity::class, TeacherSubjectEntity::class, SubjectRecordEntity::class,
         DocumentEntity::class, AbsenceSessionEntity::class, AbsenceEntity::class,
         TimetableAssignmentEntity::class, TimetableSlotEntity::class, TeacherTimetableEntity::class],
-    version = 12,
+    version = 13,
     exportSchema = false
 )
 abstract class DaftarDatabase : RoomDatabase() {
@@ -164,6 +164,16 @@ abstract class DaftarDatabase : RoomDatabase() {
             }
         }
 
+        /** 12 → 13: «تحريراتي» صارت حسب المستوى (في البرنامج السنوي) لا داخل القسم؛ الوثائق القديمة تنتقل إلى مستوى قسمها. */
+        private val MIGRATION_12_13 = object : Migration(12, 13) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE `document` ADD COLUMN `levelCode` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE `document` ADD COLUMN `subjectCode` TEXT NOT NULL DEFAULT ''")
+                db.execSQL("UPDATE `document` SET `levelCode` = COALESCE((SELECT `levelCode` FROM `school_class` " +
+                    "WHERE `school_class`.`id` = `document`.`classId`), '') WHERE `levelCode` = ''")
+            }
+        }
+
         /** 10 → 11: الجدول الزمني (تعيين الأساتذة، حصص الأقسام، وجدول الأستاذ المستلَم). */
         private val MIGRATION_10_11 = object : Migration(10, 11) {
             override fun migrate(db: SupportSQLiteDatabase) {
@@ -208,7 +218,7 @@ abstract class DaftarDatabase : RoomDatabase() {
                     context.applicationContext,
                     DaftarDatabase::class.java,
                     Institutions.dbName(key)
-                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12).build().also { it.instKey = key; instance = it; openKey = key }
+                ).addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11, MIGRATION_11_12, MIGRATION_12_13).build().also { it.instKey = key; instance = it; openKey = key }
             }
     }
 }

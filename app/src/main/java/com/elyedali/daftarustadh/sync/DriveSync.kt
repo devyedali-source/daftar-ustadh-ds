@@ -337,6 +337,9 @@ object DriveSync {
                     } catch (e: Exception) { throw SyncException("restore $t") }
                 }
             }
+            // نسخة Drive قديمة (قبل «تحريراتي» حسب المستوى): الوثائق تأخذ مستوى قسمها
+            if ("document" in local) w.execSQL("UPDATE `document` SET `levelCode` = COALESCE((SELECT `levelCode` FROM `school_class` " +
+                "WHERE `school_class`.`id` = `document`.`classId`), '') WHERE `levelCode` = ''")
         })
         suppressUntil = System.currentTimeMillis() + 3_000
     }
