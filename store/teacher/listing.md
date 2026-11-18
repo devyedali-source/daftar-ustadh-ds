@@ -94,3 +94,4 @@ La saisie des notes est toujours gratuite, ainsi que le 1er trimestre de la plan
 - **سياسة الخصوصية:** https://daftar-ustadh.web.app/privacy
 - **الأيقونة:** `store/teacher/icon-512.png` (خلفية صفراء)
 - **صورة الواجهة (Feature graphic):** `store/teacher/feature-graphic.png`
+- **لقطات الهاتف (حقيقية، بالترتيب):** `store/teacher/screens/1-planning.png` … `5-grades.png`
