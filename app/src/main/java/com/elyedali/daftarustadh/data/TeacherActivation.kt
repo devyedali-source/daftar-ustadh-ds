@@ -63,7 +63,7 @@ object TeacherActivation {
     fun decode(text: String?): Set<String> = ClassActivation.decode(text)
     fun encode(years: Set<String>): String = ClassActivation.encode(years)
 
-    /** سنوات يكون فيها الفصل الثاني مجانيًا أيضًا (سنة إطلاق التطبيق: الفصل الأول يقارب نهايته عند النشر). */
+    /** سنوات يُفتح فيها الفصل الثاني دون تفعيل (سنة إطلاق التطبيق)، بلا أي رسالة: الرسائل تبقى «الفصلان الثاني والثالث يحتاجان التفعيل». */
     val FREE_TERM2_YEARS = setOf("2026-2027")
 
     /** أول فصل يحتاج تفعيلًا في هذه السنة: 2 عادةً، و3 في سنوات FREE_TERM2_YEARS. */

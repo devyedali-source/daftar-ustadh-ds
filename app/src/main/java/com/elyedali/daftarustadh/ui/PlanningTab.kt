@@ -248,9 +248,8 @@ fun PlanningTab(
         if (locked && rows.any { com.elyedali.daftarustadh.data.TeacherActivation.planningNeedsActivation(it.term, schoolYear) }) item {
             androidx.compose.material3.Card(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                    val t3Only = com.elyedali.daftarustadh.data.TeacherActivation.firstPaidTerm(schoolYear) == 3
-                    Text("🔒 " + stringResource(if (t3Only) R.string.tact_planning_locked_t3 else R.string.tact_planning_locked), fontWeight = FontWeight.Bold)
-                    Text(stringResource(if (t3Only) R.string.tact_planning_locked_hint_t3 else R.string.tact_planning_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE_STAGE), fontSize = 12.sp)
+                    Text("🔒 " + stringResource(R.string.tact_planning_locked), fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.tact_planning_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE_STAGE), fontSize = 12.sp)
                     androidx.compose.material3.Button(onClick = onActivate, modifier = Modifier.fillMaxWidth()) {
                         Text("⭐ " + stringResource(R.string.tact_title))
                     }
