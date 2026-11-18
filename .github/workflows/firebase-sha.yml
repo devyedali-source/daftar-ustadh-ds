@@ -1,0 +1,37 @@
+name: Firebase - add signing fingerprints
+
+# يضيف بصمات توقيع Google Play (ليست سرًّا) إلى تطبيقَي Firebase حتى يعمل الدخول بحساب Google
+# عند من يثبّت من المتجر. البصمات في .github/play-sha.txt بصيغة: <package> <SHA_1|SHA_256> <البصمة>
+on:
+  push:
+    branches: [run-firebase-sha]
+
+jobs:
+  sha:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Add fingerprints
+        run: |
+          set -e
+          TOKEN=$(gcloud auth print-access-token)
+          P=moctar-gratuit
+          declare -A APP=(
+            [com.elyedali.daftarustadh]=1:398146261006:android:dd23a248d674ecfe496c5f
+            [com.elyedali.daftarustadh.teacher]=1:398146261006:android:8895e63528c6fc83496c5f )
+          while read -r pkg typ sha; do
+            [ -z "$pkg" ] && continue
+            id=${APP[$pkg]}
+            h=$(echo "$sha" | tr -d ':' | tr 'A-F' 'a-f')
+            base="https://firebase.googleapis.com/v1beta1/projects/$P/androidApps/$id/sha"
+            existing=$(curl -s -H "Authorization: Bearer $TOKEN" "$base")
+            echo "== $pkg : existing"; echo "$existing" | grep -o '"shaHash": "[0-9a-f]*"' || true
+            if echo "$existing" | grep -q "$h"; then echo "already present"; continue; fi
+            curl -s -f -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+              -d "{\"shaHash\":\"$h\",\"certType\":\"$typ\"}" "$base"
+            echo; echo "added $h to $pkg"
+          done < .github/play-sha.txt

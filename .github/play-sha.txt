@@ -1,0 +1,2 @@
+com.elyedali.daftarustadh SHA_1 2B:F5:8C:97:60:45:CA:AB:56:7F:F4:D9:04:A0:9E:D2:DB:C8:9E:87
+com.elyedali.daftarustadh SHA_256 40:CC:EA:BE:50:FF:25:56:CD:36:AD:D9:67:6A:3D:E7:0F:2C:1A:D4:16:E4:11:75:84:97:80:62:86:12:05:7E
