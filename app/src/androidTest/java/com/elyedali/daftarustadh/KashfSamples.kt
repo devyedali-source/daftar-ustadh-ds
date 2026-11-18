@@ -47,7 +47,7 @@ class KashfSamples {
             val info = ReportCardPdf.Info(
                 schoolYear = year, schoolName = "إعدادية البنات", className = "1AS1",
                 passThreshold = KashfSettings.DEFAULT_THRESHOLD,
-                subjectRemarks = RemarkScale.DEFAULT, generalRemarks = KashfSettings.DEFAULT_GENERAL_REMARKS,
+                subjectRemarks = { RemarkScale.DEFAULT }, generalRemarks = KashfSettings.DEFAULT_GENERAL_REMARKS,
                 date = "02/11/2026", seal = seal
             )
             File(out, "$name.pdf").writeBytes(ReportCardPdf.build(term, reports, info))

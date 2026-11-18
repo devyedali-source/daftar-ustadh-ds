@@ -135,4 +135,8 @@ dependencies {
     // أمثلة الكشوف (اختبار على المحاكي فقط، لا يدخل في التطبيق)
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test:runner:1.6.2")
+    // لقطات المتجر من الشاشات الحقيقية (على المحاكي فقط)
+    androidTestImplementation(composeBom)
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }

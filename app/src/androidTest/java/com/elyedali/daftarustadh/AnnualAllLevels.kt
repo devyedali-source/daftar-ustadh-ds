@@ -41,7 +41,7 @@ class AnnualAllLevels {
             val reports = ReportCalc.build(3, lvl.subjects, students, grades, emptyList(), emptyMap()).take(1)
             val info = ReportCardPdf.Info(
                 schoolYear = year, schoolName = if (lvl.stage == "lycee") "ثانوية البنات" else "إعدادية البنات", className = cls,
-                passThreshold = KashfSettings.DEFAULT_THRESHOLD, subjectRemarks = RemarkScale.DEFAULT,
+                passThreshold = KashfSettings.DEFAULT_THRESHOLD, subjectRemarks = { RemarkScale.DEFAULT },
                 generalRemarks = KashfSettings.DEFAULT_GENERAL_REMARKS, date = "02/11/2026", seal = seal
             )
             no = ReportCardPdf.drawInto(doc, no, 3, reports, info)
