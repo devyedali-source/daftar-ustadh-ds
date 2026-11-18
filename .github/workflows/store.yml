@@ -3,6 +3,9 @@ name: Build store bundles (AAB)
 # نسخة المتجر: ملفا AAB موقّعان بمفتاح الرفع، واحد لكل تطبيق
 on:
   workflow_dispatch:
+  # أو بدفع إلى فرع run-store-bundle (بأمر صاحب المشروع فقط)
+  push:
+    branches: [run-store-bundle]
 
 jobs:
   bundle:
