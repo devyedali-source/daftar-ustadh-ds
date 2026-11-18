@@ -34,4 +34,4 @@ jobs:
             my-upload-key.jks
             upload_certificate.pem
             keystore_base64.txt
-          retention-days: 30
+          retention-days: 1  # المشروع عام: يُحذف الملف بعد يوم (ويُفضَّل حذفه يدويًا فور تنزيله)
