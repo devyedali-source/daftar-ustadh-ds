@@ -145,6 +145,7 @@ fun PlanningBrowserScreen(
                     val lv = level!!
                     PlanningTab(
                         levelCode = lv,
+                        schoolYear = year,
                         mySubjects = CurriculumRepository.level(context, year, lv)?.subjects.orEmpty()
                             .map { it.code to SubjectNames.display(it, isFr) },
                         lockedFor = { code -> lockedFor(lv, code) },

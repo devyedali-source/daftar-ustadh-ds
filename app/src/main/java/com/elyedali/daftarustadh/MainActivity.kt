@@ -2165,6 +2165,7 @@ class MainActivity : AppCompatActivity() {
                                 )
                                 3 -> com.elyedali.daftarustadh.ui.PlanningTab(
                                     levelCode = c.levelCode,
+                                    schoolYear = c.schoolYear,
                                     lockedFor = { code -> !com.elyedali.daftarustadh.data.TeacherActivation.unlocked(teacherPacks, c.schoolYear, c.levelCode, code) },
                                     onActivate = { teacherActivateYear = c.schoolYear },
                                     // كل مواد المستوى تظهر في التخطيط، حتى لأستاذ المادة الواحدة
@@ -2615,7 +2616,7 @@ class MainActivity : AppCompatActivity() {
                                 Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState()),
                                 verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)) {
                                 Text(stringResource(R.string.tact_explain, TA.PRICE_STAGE, TA.PRICE_BOTH, year))
-                                Text("• " + stringResource(R.string.tact_item_planning))
+                                Text("• " + stringResource(if (TA.firstPaidTerm(year) == 3) R.string.tact_item_planning_t3 else R.string.tact_item_planning))
                                 Text(stringResource(R.string.tact_scope_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
                                 current.forEach { p ->
                                     Text("✅ " + stringResource(R.string.tact_current,

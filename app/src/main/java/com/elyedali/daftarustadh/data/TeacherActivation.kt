@@ -63,8 +63,14 @@ object TeacherActivation {
     fun decode(text: String?): Set<String> = ClassActivation.decode(text)
     fun encode(years: Set<String>): String = ClassActivation.encode(years)
 
-    /** التخطيط والتحاضير: الفصل الأول مجاني. */
-    fun planningNeedsActivation(term: Int) = term >= 2
+    /** سنوات يكون فيها الفصل الثاني مجانيًا أيضًا (سنة إطلاق التطبيق: الفصل الأول يقارب نهايته عند النشر). */
+    val FREE_TERM2_YEARS = setOf("2026-2027")
+
+    /** أول فصل يحتاج تفعيلًا في هذه السنة: 2 عادةً، و3 في سنوات FREE_TERM2_YEARS. */
+    fun firstPaidTerm(year: String) = if (year in FREE_TERM2_YEARS) 3 else 2
+
+    /** التخطيط والتحاضير: الفصل الأول مجاني دائمًا، والثاني مجاني أيضًا في سنة الإطلاق. */
+    fun planningNeedsActivation(term: Int, year: String) = term >= firstPaidTerm(year)
 
     /** كود قصير لهذا الجهاز يُرسل في طلب التفعيل. */
     fun newCode(): String = java.util.UUID.randomUUID().toString().replace("-", "").take(8).uppercase()

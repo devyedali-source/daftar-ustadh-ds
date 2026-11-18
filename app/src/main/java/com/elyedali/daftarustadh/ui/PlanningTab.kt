@@ -48,6 +48,8 @@ private const val NO_PLAN = "EPS"
 @Composable
 fun PlanningTab(
     levelCode: String,
+    /** السنة الدراسية: تحدد أي الفصول مجانية (في سنة الإطلاق الفصلان الأول والثاني). */
+    schoolYear: String,
     mySubjects: List<Pair<String, String>>,
     /** المادة غير مفعّلة في هذا المستوى: الفصل الأول مجاني، والفصلان الثاني والثالث مقفلان. */
     lockedFor: (String) -> Boolean = { false },
@@ -191,7 +193,7 @@ fun PlanningTab(
                 color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold)
         }
         // غير مفعّل: يُعرض الفصل الأول فقط، وتحل محل الفصلين الثاني والثالث بطاقة التفعيل
-        val shownRows = if (locked) rows.filter { !com.elyedali.daftarustadh.data.TeacherActivation.planningNeedsActivation(it.term) } else rows
+        val shownRows = if (locked) rows.filter { !com.elyedali.daftarustadh.data.TeacherActivation.planningNeedsActivation(it.term, schoolYear) } else rows
         itemsIndexed(shownRows) { i, r ->
             val prev = shownRows.getOrNull(i - 1)
             // كم مرة ورد كل عنوان قبل هذا الأسبوع (لربط العناوين المكررة بدروس مختلفة)
@@ -243,11 +245,12 @@ fun PlanningTab(
                 }
             }
         }
-        if (locked && rows.any { com.elyedali.daftarustadh.data.TeacherActivation.planningNeedsActivation(it.term) }) item {
+        if (locked && rows.any { com.elyedali.daftarustadh.data.TeacherActivation.planningNeedsActivation(it.term, schoolYear) }) item {
             androidx.compose.material3.Card(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                    Text("🔒 " + stringResource(R.string.tact_planning_locked), fontWeight = FontWeight.Bold)
-                    Text(stringResource(R.string.tact_planning_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE_STAGE), fontSize = 12.sp)
+                    val t3Only = com.elyedali.daftarustadh.data.TeacherActivation.firstPaidTerm(schoolYear) == 3
+                    Text("🔒 " + stringResource(if (t3Only) R.string.tact_planning_locked_t3 else R.string.tact_planning_locked), fontWeight = FontWeight.Bold)
+                    Text(stringResource(if (t3Only) R.string.tact_planning_locked_hint_t3 else R.string.tact_planning_locked_hint, com.elyedali.daftarustadh.data.TeacherActivation.PRICE_STAGE), fontSize = 12.sp)
                     androidx.compose.material3.Button(onClick = onActivate, modifier = Modifier.fillMaxWidth()) {
                         Text("⭐ " + stringResource(R.string.tact_title))
                     }

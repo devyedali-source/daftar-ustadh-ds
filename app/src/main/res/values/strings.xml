@@ -431,6 +431,9 @@
     <string name="tact_item_planning">تصفح التخطيط السنوي والتحاضير ومحتوى الكتب للفصلين الثاني والثالث (الفصل الأول مجاني).</string>
     <string name="tact_free_note">رصد النتائج وسحب السجلات وإرسالها مجاني دائمًا، سواء كنت تعمل مع إدارتك أو مستقلًا.</string>
     <string name="tact_msg">أريد تفعيل تطبيق دفتر الأستاذ DS.\nالسنة الدراسية: %1$s\nالمواد: %2$s\nالمبلغ: %3$d أوقية جديدة</string>
+    <string name="tact_item_planning_t3">تصفح التخطيط السنوي والتحاضير ومحتوى الكتب للفصل الثالث (الفصلان الأول والثاني مجانيان هذه السنة).</string>
+    <string name="tact_planning_locked_t3">الفصل الثالث يحتاج التفعيل</string>
+    <string name="tact_planning_locked_hint_t3">الفصلان الأول والثاني مجانيان هذه السنة. التفعيل (%1$d أوقية للسنة، لـ 3 مواد في المرحلة) يفتح التخطيط السنوي والتحاضير للفصل الثالث.</string>
     <string name="tact_planning_locked">الفصلان الثاني والثالث يحتاجان التفعيل</string>
     <string name="tact_planning_locked_hint">الفصل الأول مجاني. التفعيل (%1$d أوقية للسنة، لـ 3 مواد في المرحلة) يفتح التخطيط السنوي والتحاضير للفصلين الثاني والثالث.</string>
     <string name="act_status_inactive">غير مفعّل</string>
