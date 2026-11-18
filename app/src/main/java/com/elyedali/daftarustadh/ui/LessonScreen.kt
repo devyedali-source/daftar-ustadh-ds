@@ -33,6 +33,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -54,6 +55,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.elyedali.daftarustadh.R
+import com.elyedali.daftarustadh.data.BookPack
 import com.elyedali.daftarustadh.data.BookLesson
 import com.elyedali.daftarustadh.data.LessonBank
 import kotlinx.coroutines.Dispatchers
@@ -208,7 +210,10 @@ private fun BoardView(l: BookLesson, bookAsset: String) {
     val hasFig = l.board.any { it.figure != null }
     val holder = remember(bookAsset) { RendererHolder() }
     DisposableEffect(bookAsset) { onDispose { holder.close() } }
-    val ready by produceState(initialValue = false, bookAsset, hasFig) {
+    // الكتاب قد يصل أثناء فتح الدرس (تنزيل من المتجر): تُعاد المحاولة عند تغيّر حالته
+    val bookStates by com.elyedali.daftarustadh.data.BookPack.states.collectAsState()
+    val bookOnPhone = bookStates[com.elyedali.daftarustadh.data.BookPack.packOf(bookAsset)] is com.elyedali.daftarustadh.data.BookPack.Status.Ready
+    val ready by produceState(initialValue = false, bookAsset, hasFig, bookOnPhone) {
         if (hasFig) value = withContext(Dispatchers.IO) { LessonBank.bookFile(context, bookAsset)?.let { holder.open(it) } ?: false }
     }
     LazyColumn(Modifier.fillMaxSize().padding(8.dp).background(Color(0xFF6D4C41), RoundedCornerShape(12.dp)).padding(8.dp)
@@ -233,6 +238,8 @@ private fun BoardView(l: BookLesson, bookAsset: String) {
                     if (b != null) Image(b.asImageBitmap(), contentDescription = f.caption,
                         modifier = Modifier.fillMaxWidth().background(Color.White, RoundedCornerShape(6.dp)).padding(4.dp)
                             .aspectRatio(b.width.toFloat() / b.height), contentScale = ContentScale.FillWidth)
+                    if (b == null && !ready) Text("📖 " + stringResource(R.string.bk_fig_needs_book), color = yellow, fontSize = 13.sp,
+                        textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
                     if (f.caption.isNotBlank()) Text(f.caption, color = chalk.copy(alpha = 0.85f), fontSize = 13.sp,
                         textAlign = TextAlign.Center, modifier = Modifier.fillMaxWidth())
                 }
@@ -280,19 +287,34 @@ private fun BookPages(asset: String, from: Int, to: Int, bookTitle: String) {
     val context = LocalContext.current
     val holder = remember(asset) { RendererHolder() }
     DisposableEffect(asset) { onDispose { holder.close() } }
-    val ready by produceState<Boolean?>(initialValue = null, asset) {
+    val states by BookPack.states.collectAsState()
+    val st = states[BookPack.packOf(asset)]
+    val ready by produceState<Boolean?>(initialValue = null, asset, st is BookPack.Status.Ready) {
         value = withContext(Dispatchers.IO) {
             val f = LessonBank.bookFile(context, asset) ?: return@withContext false
             holder.open(f)
         }
     }
+    val confirmLauncher = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.StartIntentSenderForResult()) {}
     when (ready) {
         null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
-        false -> Text(stringResource(when (com.elyedali.daftarustadh.data.BookPack.status.value) {
-                is com.elyedali.daftarustadh.data.BookPack.Status.Ready -> R.string.lesson_book_missing
-                is com.elyedali.daftarustadh.data.BookPack.Status.NotInTestBuild -> R.string.books_test_build
-                else -> R.string.books_not_ready
-            }), Modifier.padding(16.dp), color = MaterialTheme.colorScheme.error)
+        // الكتاب ليس على الهاتف: تنزيله وحده (بلا إعادة توجيه)، أو حالته إن كان يُنزَّل
+        false -> Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            when {
+                BookPack.bundledIn(context) || st is BookPack.Status.Ready ->
+                    Text(stringResource(R.string.lesson_book_missing), color = MaterialTheme.colorScheme.error)
+                st is BookPack.Status.NotInTestBuild -> Text(stringResource(R.string.books_test_build))
+                else -> {
+                    val pack = BookPack.packFor(context, asset)
+                    Text("📖 " + stringResource(R.string.bk_lesson_missing) + (pack?.let { "  (" + megaBytes(it.bytes) + ")" } ?: ""),
+                        fontWeight = FontWeight.Bold)
+                    BookStatusLine(st ?: BookPack.Status.NotDownloaded,
+                        onDownload = { BookPack.download(context, BookPack.packOf(asset)) },
+                        onConfirm = { BookPack.confirm(confirmLauncher) })
+                }
+            }
+        }
         else -> LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             item { Text("📖 $bookTitle", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant) }
             items((from..to).toList(), key = { it }) { p ->

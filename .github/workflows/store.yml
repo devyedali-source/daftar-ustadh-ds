@@ -19,9 +19,11 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.13"
+      - name: Check book packs index (فهرس الكتب يطابق الحزم)
+        run: python3 tools/books/packs.py check
       - name: Restore upload key
         run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > my-upload-key.jks && test -s my-upload-key.jks
-      # كل تطبيق في أمر مستقل: حزمة صور الكتب تُضاف لتطبيق الأستاذ فقط
+      # كل تطبيق في أمر مستقل: حزم الكتب تُضاف لتطبيق الأستاذ فقط
       - name: Bundle admin (إدارة DS)
         env:
           KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks

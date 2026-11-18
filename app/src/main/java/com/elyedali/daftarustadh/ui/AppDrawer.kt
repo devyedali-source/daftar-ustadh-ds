@@ -106,6 +106,9 @@ fun AppDrawer(
             // التبادلات وكتبي في تطبيق الأستاذ فقط
             if (!com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("🤝", R.string.menu_exchanges, current == "EXCHANGES") { onItem("EXCHANGES") }
+            // كتب المواد على الهاتف (تُنزَّل حسب مواد الأستاذ ومستوياته)
+            if (!com.elyedali.daftarustadh.AppRole.isAdmin)
+                Item("📥", R.string.menu_phone_books, current == "PHONE_BOOKS") { onItem("PHONE_BOOKS") }
             Item("⚖️", R.string.menu_legislation, current == "LEGISLATION") { onItem("LEGISLATION") }
             if (com.elyedali.daftarustadh.AppRole.isAdmin)
                 Item("📤", R.string.af_share, false) { onItem("SHARE_ADMIN") }

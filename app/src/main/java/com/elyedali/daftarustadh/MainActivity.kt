@@ -113,7 +113,7 @@ private const val TT_APPROVED_KEY = "timetable_approved"
 private const val TT_MANUAL_KEY = "timetable_manual"
 
 private enum class Screen { HOME, INSTITUTION, CLASSES, TEACHING, TEACHER_CLASS, STUDENTS, IMPORT, GRADES, REMARKS, RESULTS, KASHF_SETTINGS, GENERAL_REMARKS, STATS,
-    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES, ABOUT, RECORDS_FOLLOW, OWNER_PANEL }
+    ALL_CLASSES, ADMIN_CLASS, TEACHER_HUB, LEGISLATION, EXCHANGES, BOOKS, PHONE_BOOKS, ACTIVATION, TIMETABLE, MY_TIMETABLE, TEACHER_PROFILE, SHARE_RECORDS, PRINT_SHOP, ABSENCE_CENTER, QUICK_GRADES, ABOUT, RECORDS_FOLLOW, OWNER_PANEL }
 
 /** نتيجة فتح ملف قسم، تُعرض في نافذة. */
 /** فتح ملف PDF بزر «فتح ملف»: ملفات PDF للطباعة فقط، والتطبيق يفتح ملفات ‎.dsq. */
@@ -1487,7 +1487,7 @@ class MainActivity : AppCompatActivity() {
                     Screen.GENERAL_REMARKS -> BackHandler { screen = generalRemarksBack }
                     Screen.IMPORT -> BackHandler { screen = importBack }
                     Screen.ADMIN_CLASS, Screen.TEACHER_HUB -> BackHandler { screen = hubBack }
-                    Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS, Screen.ABOUT -> BackHandler { screen = Screen.HOME }
+                    Screen.ALL_CLASSES, Screen.LEGISLATION, Screen.EXCHANGES, Screen.BOOKS, Screen.PHONE_BOOKS, Screen.ABOUT -> BackHandler { screen = Screen.HOME }
                     Screen.ACTIVATION -> BackHandler { screen = activationBack }
                     Screen.TIMETABLE -> BackHandler { screen = ttBack }
                     Screen.MY_TIMETABLE -> BackHandler { screen = Screen.HOME }
@@ -1499,6 +1499,13 @@ class MainActivity : AppCompatActivity() {
                         screen = Screen.HOME }
                     Screen.TEACHER_PROFILE -> BackHandler { if (teacherProfile == null) selectedYear = null; screen = Screen.HOME }
                     else -> BackHandler { screen = Screen.HOME }
+                }
+
+                // تطبيق الأستاذ، أول دخول: يختار موادّه ومستوياته فلا يُنزَّل إلا كتبها (مرة واحدة، وتبقى في القائمة)
+                var booksFirstPick by remember { mutableStateOf(com.elyedali.daftarustadh.data.BookPack.needsFirstPick(this@MainActivity)) }
+                if (booksFirstPick) {
+                    com.elyedali.daftarustadh.ui.BooksScreen(firstTime = true, isFr = isFrUi, onDone = { booksFirstPick = false }, onMenu = null)
+                    return@DaftarTheme
                 }
 
                 ModalNavigationDrawer(
@@ -1546,6 +1553,7 @@ class MainActivity : AppCompatActivity() {
                                         else { ttInitialClass = null; ttBack = Screen.HOME; screen = Screen.TIMETABLE }
                                     "MY_TIMETABLE" -> { myTtInst = null; screen = Screen.MY_TIMETABLE }
                                     "EXCHANGES" -> screen = Screen.EXCHANGES
+                                    "PHONE_BOOKS" -> screen = Screen.PHONE_BOOKS
                                     "LEGISLATION" -> screen = Screen.LEGISLATION
                                     "ABOUT" -> screen = Screen.ABOUT
                                     // مشاركة كل معلومات الإدارة مع تطبيق إدارة آخر (المدير العام، المراقب العام، عامل مساعد)
@@ -1814,6 +1822,10 @@ class MainActivity : AppCompatActivity() {
 
                     // صفحة «حول التطبيق»: تُجهَّز لاحقًا
                     screen == Screen.ABOUT -> com.elyedali.daftarustadh.ui.AboutScreen(onBack = { screen = Screen.HOME })
+
+                    // «كتبي على الهاتف»: تعديل مواد الأستاذ ومستوياته وحالة كل كتاب
+                    screen == Screen.PHONE_BOOKS -> com.elyedali.daftarustadh.ui.BooksScreen(firstTime = false, isFr = isFrUi,
+                        onDone = { screen = Screen.HOME }, onMenu = { scope.launch { drawerState.open() } })
 
                     screen == Screen.LEGISLATION -> com.elyedali.daftarustadh.ui.LegislationScreen(
                         title = stringResource(R.string.menu_legislation),

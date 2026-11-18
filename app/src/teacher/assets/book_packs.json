@@ -1,0 +1,259 @@
+{
+ "packs": [
+  {
+   "name": "b_ang_1as",
+   "subject": "ANG",
+   "level": "1AS",
+   "files": [
+    "books/ANG_1AS.pdf"
+   ],
+   "bytes": 3226085
+  },
+  {
+   "name": "b_ang_2as",
+   "subject": "ANG",
+   "level": "2AS",
+   "files": [
+    "books/ANG_2AS.pdf"
+   ],
+   "bytes": 1265483
+  },
+  {
+   "name": "b_ang_3as",
+   "subject": "ANG",
+   "level": "3AS",
+   "files": [
+    "books/ANG_3AS.pdf"
+   ],
+   "bytes": 1049870
+  },
+  {
+   "name": "b_ar_1as",
+   "subject": "AR",
+   "level": "1AS",
+   "files": [
+    "books/AR_1AS.pdf"
+   ],
+   "bytes": 4373625
+  },
+  {
+   "name": "b_ar_2as",
+   "subject": "AR",
+   "level": "2AS",
+   "files": [
+    "books/AR_2AS.pdf"
+   ],
+   "bytes": 1254176
+  },
+  {
+   "name": "b_ar_3as",
+   "subject": "AR",
+   "level": "3AS",
+   "files": [
+    "books/AR_3AS.pdf"
+   ],
+   "bytes": 1233769
+  },
+  {
+   "name": "b_fr_1as",
+   "subject": "FR",
+   "level": "1AS",
+   "files": [
+    "books/FR_1AS.pdf"
+   ],
+   "bytes": 5789407
+  },
+  {
+   "name": "b_fr_2as",
+   "subject": "FR",
+   "level": "2AS",
+   "files": [
+    "books/FR_2AS.pdf"
+   ],
+   "bytes": 1682098
+  },
+  {
+   "name": "b_fr_3as",
+   "subject": "FR",
+   "level": "3AS",
+   "files": [
+    "books/FR_3AS.pdf"
+   ],
+   "bytes": 2386437
+  },
+  {
+   "name": "b_hg_1as",
+   "subject": "HG",
+   "level": "1AS",
+   "files": [
+    "books/HG_1AS_GEO.pdf",
+    "books/HG_1AS_HIS.pdf"
+   ],
+   "bytes": 17015814
+  },
+  {
+   "name": "b_hg_2as",
+   "subject": "HG",
+   "level": "2AS",
+   "files": [
+    "books/HG_2AS_GEO.pdf",
+    "books/HG_2AS_HIS.pdf"
+   ],
+   "bytes": 16824819
+  },
+  {
+   "name": "b_hg_3as",
+   "subject": "HG",
+   "level": "3AS",
+   "files": [
+    "books/HG_3AS_GEO.pdf",
+    "books/HG_3AS_HIS.pdf"
+   ],
+   "bytes": 6991249
+  },
+  {
+   "name": "b_ic_1as",
+   "subject": "IC",
+   "level": "1AS",
+   "files": [
+    "books/IC_1AS.pdf"
+   ],
+   "bytes": 5886787
+  },
+  {
+   "name": "b_ic_2as",
+   "subject": "IC",
+   "level": "2AS",
+   "files": [
+    "books/IC_2AS.pdf"
+   ],
+   "bytes": 2323374
+  },
+  {
+   "name": "b_ic_3as",
+   "subject": "IC",
+   "level": "3AS",
+   "files": [
+    "books/IC_3AS.pdf"
+   ],
+   "bytes": 9206633
+  },
+  {
+   "name": "b_ir_1as",
+   "subject": "IR",
+   "level": "1AS",
+   "files": [
+    "books/IR_1AS.pdf"
+   ],
+   "bytes": 14949437
+  },
+  {
+   "name": "b_ir_2as",
+   "subject": "IR",
+   "level": "2AS",
+   "files": [
+    "books/IR_2AS.pdf"
+   ],
+   "bytes": 13061277
+  },
+  {
+   "name": "b_ir_3as",
+   "subject": "IR",
+   "level": "3AS",
+   "files": [
+    "books/IR_3AS.pdf"
+   ],
+   "bytes": 4147686
+  },
+  {
+   "name": "b_mats_1as",
+   "subject": "MATS",
+   "level": "1AS",
+   "files": [
+    "books/MATS_1AS.pdf"
+   ],
+   "bytes": 7903382
+  },
+  {
+   "name": "b_mats_2as",
+   "subject": "MATS",
+   "level": "2AS",
+   "files": [
+    "books/MATS_2AS.pdf"
+   ],
+   "bytes": 9420187
+  },
+  {
+   "name": "b_mats_3as",
+   "subject": "MATS",
+   "level": "3AS",
+   "files": [
+    "books/MATS_3AS.pdf"
+   ],
+   "bytes": 9495662
+  },
+  {
+   "name": "b_pc_2as",
+   "subject": "PC",
+   "level": "2AS",
+   "files": [
+    "books/PC_2AS.pdf"
+   ],
+   "bytes": 2566216
+  },
+  {
+   "name": "b_pc_3as",
+   "subject": "PC",
+   "level": "3AS",
+   "files": [
+    "books/PC_3AS.pdf"
+   ],
+   "bytes": 5311017
+  },
+  {
+   "name": "b_sn_1as",
+   "subject": "SN",
+   "level": "1AS",
+   "files": [
+    "books/SN_1AS.pdf"
+   ],
+   "bytes": 8143961
+  },
+  {
+   "name": "b_sn_2as",
+   "subject": "SN",
+   "level": "2AS",
+   "files": [
+    "books/SN_2AS.pdf"
+   ],
+   "bytes": 7680594
+  },
+  {
+   "name": "b_sn_3as",
+   "subject": "SN",
+   "level": "3AS",
+   "files": [
+    "books/SN_3AS.pdf"
+   ],
+   "bytes": 6752352
+  },
+  {
+   "name": "b_ti_2as",
+   "subject": "TI",
+   "level": "2AS",
+   "files": [
+    "books/TI_2AS.pdf"
+   ],
+   "bytes": 1605432
+  },
+  {
+   "name": "b_ti_3as",
+   "subject": "TI",
+   "level": "3AS",
+   "files": [
+    "books/TI_3AS.pdf"
+   ],
+   "bytes": 1157105
+  }
+ ]
+}

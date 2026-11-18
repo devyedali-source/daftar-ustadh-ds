@@ -14,7 +14,7 @@ android {
         applicationId = "com.elyedali.daftarustadh"
         minSdk = 24
         targetSdk = 36
-        versionCode = 2
+        versionCode = 3
         versionName = "0.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -39,10 +39,12 @@ android {
         generateLocaleConfig = false
     }
 
-    // صور الكتب في حزمة منفصلة «books» تنزّلها المتجر تلقائيًا بعد التثبيت (لتطبيق الأستاذ فقط).
-    // نسخة التجربة (APK من GitHub) بلا صور الكتب حتى يصغر تنزيلها (الإنترنت ضعيف)؛ تُضاف في نسخة المتجر.
+    // كتب تطبيق الأستاذ: حزمة لكل (مادة، مستوى) في bookpacks/، يختار الأستاذ ما يُنزَّل منها (BookPack).
+    // نسخة التجربة (APK من GitHub) بلا كتب حتى يصغر تنزيلها (الإنترنت ضعيف)؛ الكتب تأتي من المتجر.
     val buildingAdmin = gradle.startParameter.taskNames.any { it.contains("Admin") }
-    if (!buildingAdmin) assetPacks += ":books"
+    if (!buildingAdmin) assetPacks += rootProject.file("bookpacks")
+        .listFiles { f -> f.isDirectory && File(f, "build.gradle.kts").exists() }.orEmpty()
+        .map { ":" + it.name }.sorted()
 
     // R8: تصغير الشيفرة وحذف الموارد غير المستعملة (يُطبَّق على النسخة التي يبنيها GitHub)
     // مفتاح ثابت لنسخ التجربة: بصمته SHA-1 مسجلة في Firebase فيعمل الدخول بحساب Google في كل بناء

@@ -106,24 +106,23 @@ fun PlanningTab(
             lessonSet?.bookOf(l).orEmpty(), lessonSet?.bookTitleOf(l).orEmpty(), subject) { opened = null }
     }
 
-    // مؤشر تنزيل صور الكتب من المتجر (يختفي عند اكتمالها)
-    val bookStatus by com.elyedali.daftarustadh.data.BookPack.status.collectAsState()
+    // كتاب المادة المعروضة: إن لم يكن على الهاتف تظهر حالته أو زر تنزيله وحده (يختفي عند اكتماله)
+    val books = com.elyedali.daftarustadh.data.BookPack
+    val bookStates by books.states.collectAsState()
+    val coursePack = remember(subject, levelCode) { books.packs(context).firstOrNull { it.subject == subject && it.level == levelCode } }
+    val courseState = coursePack?.let { bookStates[it.name] }
+    val confirmLauncher = androidx.activity.compose.rememberLauncherForActivityResult(
+        androidx.activity.result.contract.ActivityResultContracts.StartIntentSenderForResult()) {}
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        if (withPlan.isNotEmpty() && bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.Ready &&
-            bookStatus !is com.elyedali.daftarustadh.data.BookPack.Status.NotInTestBuild) item {
-            val st = bookStatus
+        if (withPlan.isNotEmpty() && coursePack != null && courseState != null &&
+            courseState !is com.elyedali.daftarustadh.data.BookPack.Status.Ready &&
+            courseState !is com.elyedali.daftarustadh.data.BookPack.Status.NotInTestBuild) item {
             Column(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.secondaryContainer)
                 .padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                Text(when (st) {
-                    is com.elyedali.daftarustadh.data.BookPack.Status.Downloading -> stringResource(R.string.books_downloading, st.percent)
-                    is com.elyedali.daftarustadh.data.BookPack.Status.WaitingWifi -> stringResource(R.string.books_waiting_wifi)
-                    is com.elyedali.daftarustadh.data.BookPack.Status.Failed -> stringResource(R.string.books_failed)
-                    else -> stringResource(R.string.books_pending)
-                }, fontWeight = FontWeight.Bold, fontSize = 13.sp)
-                if (st is com.elyedali.daftarustadh.data.BookPack.Status.Downloading)
-                    androidx.compose.material3.LinearProgressIndicator(progress = { st.percent / 100f }, modifier = Modifier.fillMaxWidth())
-                else
-                    androidx.compose.material3.LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
+                Text("📖 " + stringResource(R.string.bk_plan_missing) + "  (" + megaBytes(coursePack.bytes) + ")", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                BookStatusLine(courseState,
+                    onDownload = { books.download(context, coursePack.name) },
+                    onConfirm = { books.confirm(confirmLauncher) })
             }
         }
         item {
