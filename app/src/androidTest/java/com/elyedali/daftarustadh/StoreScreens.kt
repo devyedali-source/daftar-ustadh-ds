@@ -80,7 +80,7 @@ class StoreScreens {
     }
 
     @Test fun s3_grades() = shoot("3-grades") {
-        GradesScreen(schoolClass = cls, subject = subjects.first { it.code == "MATS" }, students = students, grades = grades(true),
+        GradesScreen(schoolClass = cls, subject = subjects.first { it.code == "MATS" }, students = students, grades = grades(true).filter { it.subjectCode == "MATS" },
             testsMode = TestsMode.AVERAGE, scale = RemarkScale.DEFAULT, onSetGrade = { _, _, _, _ -> }, onTestsMode = {}, onPrintRecord = {}, onBack = {})
     }
 
