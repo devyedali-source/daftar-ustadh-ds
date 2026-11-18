@@ -36,6 +36,14 @@ fun bookSubjectName(context: android.content.Context, subject: String, level: St
     return s?.let { SubjectNames.display(it, isFr) } ?: subject
 }
 
+/** المواد بترتيب المنهاج (التربية الإسلامية، العربية، الفرنسية…) لا بالترتيب الأبجدي. */
+private fun bookSubjectOrder(context: android.content.Context, packs: List<BookPack.Pack>): List<String> {
+    val years = CurriculumRepository.availableYears(context)
+    val year = SchoolYear.current().let { cur -> years.lastOrNull { it <= cur } ?: years.firstOrNull() }
+    val order = year?.let { y -> CurriculumRepository.levels(context, y).flatMap { l -> l.subjects.map { it.code } }.distinct() }.orEmpty()
+    return packs.map { it.subject }.distinct().sortedBy { order.indexOf(it).let { i -> if (i < 0) Int.MAX_VALUE else i } }
+}
+
 /**
  * «كتبي على الهاتف»: يختار الأستاذ موادّه (حتى 3) ومستوياته فلا يُنزَّل إلا كتبها،
  * ويرى حالة كل كتاب ويحذف ما لا يحتاجه. تظهر وحدها عند أول دخول، وتبقى في القائمة.
@@ -53,7 +61,7 @@ fun BooksScreen(firstTime: Boolean, isFr: Boolean, onDone: () -> Unit, onMenu: (
     val confirmLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartIntentSenderForResult()) {}
 
     // ترتيب المواد كما في المنهاج، والمستويات حسب المرحلة
-    val subjectOrder = remember { packs.map { it.subject }.distinct() }
+    val subjectOrder = remember { bookSubjectOrder(context, packs) }
     val levelOrder = remember { packs.map { it.level }.distinct().sortedWith(compareBy({ it.firstOrNull { c -> c.isDigit() } }, { it })) }
     val names = remember(isFr) { subjectOrder.associateWith { s -> bookSubjectName(context, s, packs.first { it.subject == s }.level, isFr) } }
     val testBuild = states.values.any { it is BookPack.Status.NotInTestBuild }
