@@ -18,7 +18,7 @@ jobs:
           java-version: "17"
       - uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: "8.9"
+          gradle-version: "8.13"
       - name: Restore upload key
         run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > my-upload-key.jks && test -s my-upload-key.jks
       # كل تطبيق في أمر مستقل: حزمة صور الكتب تُضاف لتطبيق الأستاذ فقط
