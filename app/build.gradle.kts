@@ -70,9 +70,11 @@ android {
         debug {
             signingConfig = signingConfigs.getByName("debug")
             // نسخة التجربة لهواتف أندرويد الحقيقية فقط (أصغر حجمًا)؛ نسخة المتجر يقسّمها المتجر لكل هاتف تلقائيًا
-            ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
-            isMinifyEnabled = true
-            isShrinkResources = true
+            // لقطات المتجر على المحاكي (-PstoreShots): بلا تقليص وبكل المعماريات
+            val storeShots = project.hasProperty("storeShots")
+            if (!storeShots) ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
+            isMinifyEnabled = !storeShots
+            isShrinkResources = !storeShots
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
         release {

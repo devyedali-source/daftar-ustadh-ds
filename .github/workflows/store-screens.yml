@@ -35,7 +35,7 @@ jobs:
           profile: Nexus 5X
           disable-animations: true
           script: |
-            gradle connectedAdminDebugAndroidTest --no-daemon -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.StoreScreens -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
+            gradle connectedAdminDebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.StoreScreens -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true
             mkdir -p out && for f in 1-institution 2-results 3-grades 4-kashf; do adb exec-out run-as com.elyedali.daftarustadh cat files/store/$f.png > out/$f.png; done; ls -la out
       - name: Push screenshots
         run: |
