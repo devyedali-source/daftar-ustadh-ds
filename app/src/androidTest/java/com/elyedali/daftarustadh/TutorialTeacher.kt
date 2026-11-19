@@ -57,9 +57,9 @@ class TutorialTeacher {
     @Before fun setup() {
         ScreenSecurity.allowForStoreShots = true
         ctx.getSharedPreferences("planning_order", Context.MODE_PRIVATE).edit()
-            .putStringSet("fav_subjects", setOf("MATS", "PC")).putStringSet("fav_levels", setOf("1AS", "2AS")).apply()
+            .putStringSet("fav_subjects", setOf("MATS", "SN")).putStringSet("fav_levels", setOf("1AS", "2AS")).apply()
         ctx.getSharedPreferences("book_packs", Context.MODE_PRIVATE).edit()
-            .putStringSet("subjects", setOf("MATS", "PC")).putStringSet("levels", setOf("1AS", "2AS")).apply()
+            .putStringSet("subjects", setOf("MATS", "SN")).putStringSet("levels", setOf("1AS", "2AS")).apply()
     }
 
     private fun show(content: @Composable () -> Unit) {
@@ -80,9 +80,9 @@ class TutorialTeacher {
 
     private fun grades(partial: Boolean): List<GradeEntity> {
         val rnd = Random(5)
-        return students.flatMap { s -> listOf("MATS", "PC").flatMap { code ->
+        return students.flatMap { s -> listOf("MATS", "SN").flatMap { code ->
             listOf(GradeSlot.T1, GradeSlot.E1).mapNotNull { slot ->
-                if (partial && code == "PC" && slot == GradeSlot.E1 && s.rollNumber > 6) null
+                if (partial && code == "SN" && slot == GradeSlot.E1 && s.rollNumber > 6) null
                 else GradeEntity(s.id, "c1", code, slot, rnd.nextInt(30, 78) / 4.0, 0L)
             } } }
     }
@@ -160,7 +160,7 @@ class TutorialTeacher {
 
     private val timetable by lazy {
         listOf(0 to 0, 0 to 1, 1 to 2, 1 to 3, 2 to 0, 2 to 1, 3 to 4, 3 to 5, 4 to 0, 4 to 1, 5 to 2, 5 to 3).mapIndexed { i, (d, p) ->
-            val cls = if (i % 2 == 0) "1AS1" else "2AS2"; val code = if (i % 4 < 2) "MATS" else "PC"
+            val cls = if (i % 2 == 0) "1AS1" else "2AS2"; val code = if (i % 4 < 2) "MATS" else "SN"
             val t = TimetableSettings().times[p]
             TeacherTimetableEntity("inst1|$year|$d|$p", "inst1", school, year, "محمد أحمد", d, p,
                 "%02d:%02d".format(t.first / 60, t.first % 60), "%02d:%02d".format(t.second / 60, t.second % 60),
@@ -188,14 +188,14 @@ class TutorialTeacher {
     @Test fun t13_classes() { classesHome(false); save("t13-classes") }
 
     @Test fun t14_class() {
-        show { TeacherClassScreen(c1, school, subj1, setOf("MATS", "PC"), grades(true), students.size, onSetMySubjects = {},
+        show { TeacherClassScreen(c1, school, subj1, setOf("MATS", "SN"), grades(true), students.size, onSetMySubjects = {},
             onOpenSubject = {}, onShowStudents = {}, onBack = {}, subjectsFromAdmin = true) }
         save("t14-class")
     }
 
     @Test fun t15_grades() {
-        show { GradesScreen(schoolClass = c1, subject = subj1.first { it.code == "PC" }, students = students,
-            grades = grades(true).filter { it.subjectCode == "PC" && (it.slot != GradeSlot.E1 || it.studentId.removePrefix("s").toInt() < 6) },
+        show { GradesScreen(schoolClass = c1, subject = subj1.first { it.code == "SN" }, students = students,
+            grades = grades(true).filter { it.subjectCode == "SN" && (it.slot != GradeSlot.E1 || it.studentId.removePrefix("s").toInt() < 6) },
             testsMode = TestsMode.AVERAGE, scale = RemarkScale.DEFAULT, onSetGrade = { _, _, _, _ -> }, onTestsMode = {}, onPrintRecord = {}, onBack = {}) }
         save("t15-grades")
     }
