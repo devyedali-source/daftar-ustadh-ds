@@ -270,6 +270,7 @@
     <string name="doc_tab_mine">تحريراتي</string>
     <string name="busy_working">جارٍ التجهيز… انتظر قليلًا</string>
     <string name="ex_sending">جارٍ الإرسال إلى الخادم… قد يطول ذلك مع شبكة ضعيفة</string>
+    <string name="up_nothing">لا توجد نتائج لإرسالها: تأكد أن لك مواد في أقسامك وأن نتائجها مسجّلة.</string>
     <string name="doc_exam">امتحان</string>
     <string name="doc_request">طلب</string>
     <string name="doc_lesson">درس</string>

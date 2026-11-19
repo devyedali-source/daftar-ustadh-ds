@@ -270,6 +270,7 @@
     <string name="doc_tab_mine">Mes rédactions</string>
     <string name="busy_working">Préparation en cours… patientez</string>
     <string name="ex_sending">Envoi au serveur… cela peut prendre du temps avec un réseau faible</string>
+    <string name="up_nothing">Aucun résultat à envoyer : vérifiez que vous avez des matières dans vos classes et que leurs notes sont saisies.</string>
     <string name="doc_exam">Examen</string>
     <string name="doc_request">Demande</string>
     <string name="doc_lesson">Cours</string>

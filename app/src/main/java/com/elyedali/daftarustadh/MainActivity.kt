@@ -464,6 +464,8 @@ class MainActivity : AppCompatActivity() {
                 var printKind by rememberSaveable { mutableStateOf("BOOKS") }
                 var ttBack by rememberSaveable { mutableStateOf(Screen.HOME) }
                 var askNameFor by remember { mutableStateOf<String?>(null) }
+                /** رفع نتائج الفصل ينتظر اسم الأستاذ (قسم في عمله الحر ولا اسم محفوظ): بلا اسم تحسبه الإدارة إدخالًا يدويًا. */
+                var askNameUpload by remember { mutableStateOf<Pair<Int, List<Pair<ClassEntity, String>>>?>(null) }
                 val thresholdsText by remember { metaDao.observe(KashfSettings.THRESHOLDS_KEY) }.collectAsState(initial = null)
                 val thresholds = remember(thresholdsText) { KashfSettings.decodeThresholds(thresholdsText) }
                 val generalText by remember { metaDao.observe(KashfSettings.GENERAL_REMARKS_KEY) }.collectAsState(initial = null)
@@ -652,7 +654,10 @@ class MainActivity : AppCompatActivity() {
                 fun uploadTermRecords(term: Int, pairs: List<Pair<ClassEntity, String>>, name: String) {
                     busy {
                         val parts = pairs.mapNotNull { (c, code) -> buildRecordPart(c, code, name, uptoTerm = term) }
-                        if (parts.isEmpty()) return@busy
+                        if (parts.isEmpty()) {
+                            android.widget.Toast.makeText(this@MainActivity, getString(R.string.up_nothing), android.widget.Toast.LENGTH_LONG).show()
+                            return@busy
+                        }
                         val dir = ShareHelper.freshShareDir(this@MainActivity)
                         val files = parts.groupBy { it.record.institutionId }.values.map { group ->
                             val ordered = group.sortedWith(compareBy({ it.record.levelCode }, { it.record.number },
@@ -2555,7 +2560,8 @@ class MainActivity : AppCompatActivity() {
                         termProgress = termProgress,
                         onUploadTerm = { t ->
                             // اسم الأستاذ في السجل: الاسم الذي سجّلته به الإدارة (من ملفها) إن وُجد
-                            uploadTermRecords(t, progPairs, (teacherProfile?.name ?: teacherName).orEmpty())
+                            val n = (teacherProfile?.name ?: teacherName).orEmpty()
+                            if (n.isBlank()) { askNameUpload = t to progPairs; askNameFor = "" } else uploadTermRecords(t, progPairs, n)
                         },
                         adminInstitutions = if (AppRole.isAdmin) remember(inst?.schoolName, inst?.wilaya, selectedYear) {
                             com.elyedali.daftarustadh.data.Institutions.list(this@MainActivity) } else emptyList(),
@@ -2726,7 +2732,7 @@ class MainActivity : AppCompatActivity() {
                 askNameFor?.let { code ->
                     var typed by remember { mutableStateOf("") }
                     AlertDialog(
-                        onDismissRequest = { askNameFor = null; askNameAbsence = false },
+                        onDismissRequest = { askNameFor = null; askNameAbsence = false; askNameUpload = null },
                         title = { Text(stringResource(R.string.teacher_name)) },
                         text = {
                             androidx.compose.foundation.layout.Column {
@@ -2740,14 +2746,16 @@ class MainActivity : AppCompatActivity() {
                                 askNameFor = null
                                 scope.launch { metaDao.put(AppMetaEntity(TEACHER_NAME_KEY, n)) }
                                 val doc = askNameDoc
+                                val up = askNameUpload
                                 when {
+                                    up != null -> { askNameUpload = null; uploadTermRecords(up.first, up.second, n) }
                                     askNameAbsence -> { askNameAbsence = false; currentClass?.let { sendAbsence(it, code, n) } }
                                     doc != null -> { askNameDoc = null; exportDocument(doc, n) }
                                     else -> currentClass?.let { printRecord(it, code, n, askNameBlank) }
                                 }
                             }) { Text(stringResource(R.string.save)) }
                         },
-                        dismissButton = { TextButton(onClick = { askNameFor = null }) { Text(stringResource(R.string.cancel)) } }
+                        dismissButton = { TextButton(onClick = { askNameFor = null; askNameUpload = null }) { Text(stringResource(R.string.cancel)) } }
                     )
                 }
 
