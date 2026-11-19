@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.elyedali.daftarustadh.TutorialAdmin" tests="16" failures="0" errors="0" skipped="0" time="33.696" timestamp="2026-11-19T10:59:23" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 11" />
+    <property name="flavor" value="admin" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="a08_home_ready" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.232" />
+  <testcase name="a12_manual" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.366" />
+  <testcase name="a04_home" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.097" />
+  <testcase name="a02_years" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.177" />
+  <testcase name="a07_grid" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.322" />
+  <testcase name="a10_follow" classname="com.elyedali.daftarustadh.TutorialAdmin" time="1.976" />
+  <testcase name="a06_generate" classname="com.elyedali.daftarustadh.TutorialAdmin" time="1.93" />
+  <testcase name="a16_kashf" classname="com.elyedali.daftarustadh.TutorialAdmin" time="0.901" />
+  <testcase name="a15_general_remarks" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.012" />
+  <testcase name="a03_institution" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.1" />
+  <testcase name="a05_teachers" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.181" />
+  <testcase name="a13_results_ready" classname="com.elyedali.daftarustadh.TutorialAdmin" time="1.999" />
+  <testcase name="a11_results_missing" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.168" />
+  <testcase name="a01_login" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.018" />
+  <testcase name="a09_send_files" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.193" />
+  <testcase name="a14_kashf_settings" classname="com.elyedali.daftarustadh.TutorialAdmin" time="2.068" />
+</testsuite>

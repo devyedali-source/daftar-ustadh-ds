@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.elyedali.daftarustadh.TutorialTeacher" tests="16" failures="0" errors="0" skipped="0" time="47.458" timestamp="2026-11-19T10:57:23" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 11" />
+    <property name="flavor" value="teacher" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="t13_classes" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.657" />
+  <testcase name="t02_years" classname="com.elyedali.daftarustadh.TutorialTeacher" time="1.973" />
+  <testcase name="t08_prep_board" classname="com.elyedali.daftarustadh.TutorialTeacher" time="3.729" />
+  <testcase name="t06_documents" classname="com.elyedali.daftarustadh.TutorialTeacher" time="6.16" />
+  <testcase name="t03_books" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.189" />
+  <testcase name="t15_grades" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.36" />
+  <testcase name="t07_new_document" classname="com.elyedali.daftarustadh.TutorialTeacher" time="5.197" />
+  <testcase name="t11_file_received" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.147" />
+  <testcase name="t12_schools" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.154" />
+  <testcase name="t04_hub" classname="com.elyedali.daftarustadh.TutorialTeacher" time="1.901" />
+  <testcase name="t16_upload" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.167" />
+  <testcase name="t05_planning" classname="com.elyedali.daftarustadh.TutorialTeacher" time="5.156" />
+  <testcase name="t01_login" classname="com.elyedali.daftarustadh.TutorialTeacher" time="1.877" />
+  <testcase name="t10_schools_empty" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.025" />
+  <testcase name="t14_class" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.147" />
+  <testcase name="t09_practice" classname="com.elyedali.daftarustadh.TutorialTeacher" time="2.69" />
+</testsuite>

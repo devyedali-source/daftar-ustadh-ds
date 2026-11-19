@@ -1,0 +1,58 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.elyedali.daftarustadh"
+    test_package: "com.elyedali.daftarustadh.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.elyedali.daftarustadh/additional_test_output"
+    }
+    args_map {
+      key: "class"
+      value: "com.elyedali.daftarustadh.TutorialAdmin"
+    }
+    args_map {
+      key: "lang"
+      value: "fr"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
+  apk_paths: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/apk/admin/debug/app-admin-debug.apk"
+  install_options {
+  }
+}
+apks_to_install {
+  apk_paths: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/apk/androidTest/admin/debug/app-admin-debug-androidTest.apk"
+  install_options {
+  }
+}
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/apk/admin/debug/app-admin-debug.apk] on device emulator-5554.
+INFO: Installing [/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/apk/androidTest/admin/debug/app-admin-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Copying files from device to host: /sdcard/Android/media/com.elyedali.daftarustadh/additional_test_output to /home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/connected_android_test_additional_output/adminDebugAndroidTest/connected/emulator-5554 - 11
+INFO: Stop logcat streaming.
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a08_home_ready: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a12_manual: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a04_home: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a02_years: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a07_grid: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a10_follow: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a06_generate: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a16_kashf: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a15_general_remarks: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a03_institution: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a05_teachers: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a13_results_ready: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a11_results_missing: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a01_login: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a09_send_files: PASSED
+INFO: Execute com.elyedali.daftarustadh.TutorialAdmin.a14_kashf_settings: PASSED

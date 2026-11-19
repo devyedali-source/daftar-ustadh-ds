@@ -1,0 +1,133 @@
+
+Welcome to Gradle 8.13!
+
+Here are the highlights of this release:
+ - Daemon JVM auto-provisioning
+ - Enhancements for Scala plugin and JUnit testing
+ - Improvements for build authors and plugin developers
+
+For more details see https://docs.gradle.org/8.13/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+Passing custom test runner argument android.testInstrumentationRunnerArguments.lang from gradle.properties or command line is not compatible with configuration caching. Please specify this argument using android gradle dsl.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preTeacherDebugBuild UP-TO-DATE
+> Task :app:generateTeacherDebugBuildConfig
+> Task :app:generateTeacherDebugResValues
+> Task :app:processTeacherDebugGoogleServices
+> Task :app:checkTeacherDebugAarMetadata
+> Task :app:mapTeacherDebugSourceSetPaths
+> Task :app:generateTeacherDebugResources
+> Task :app:packageTeacherDebugResources
+> Task :app:mergeTeacherDebugResources
+> Task :app:createTeacherDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksTeacherDebug
+> Task :app:parseTeacherDebugLocalResources
+> Task :app:processTeacherDebugMainManifest
+> Task :app:processTeacherDebugManifest
+> Task :app:preTeacherDebugAndroidTestBuild SKIPPED
+> Task :app:javaPreCompileTeacherDebug
+> Task :app:processTeacherDebugAndroidTestManifest
+> Task :app:generateTeacherDebugAndroidTestBuildConfig
+> Task :app:checkTeacherDebugAndroidTestAarMetadata
+> Task :app:generateTeacherDebugAndroidTestResValues
+> Task :app:mapTeacherDebugAndroidTestSourceSetPaths
+> Task :app:generateTeacherDebugAndroidTestResources
+> Task :app:javaPreCompileTeacherDebugAndroidTest
+> Task :app:mergeTeacherDebugShaders
+> Task :app:compileTeacherDebugShaders NO-SOURCE
+> Task :app:processTeacherDebugManifestForPackage
+> Task :app:mergeTeacherDebugAndroidTestResources
+> Task :app:generateTeacherDebugAssets UP-TO-DATE
+> Task :app:processTeacherDebugAndroidTestResources
+> Task :app:mergeTeacherDebugAssets
+> Task :app:compressTeacherDebugAssets
+> Task :app:processTeacherDebugResources
+> Task :app:checkTeacherDebugDuplicateClasses
+> Task :app:desugarTeacherDebugFileDependencies
+
+> Task :app:kspTeacherDebugKotlin
+e: The daemon has terminated unexpectedly on startup attempt #1 with error code: 0. The daemon process output:
+    1. Kotlin compile daemon is ready
+
+> Task :app:mergeExtDexTeacherDebug
+> Task :app:mergeLibDexTeacherDebug
+> Task :app:mergeTeacherDebugJniLibFolders
+> Task :app:validateSigningTeacherDebug
+> Task :app:mergeTeacherDebugNativeLibs
+> Task :app:writeTeacherDebugAppMetadata
+> Task :app:writeTeacherDebugSigningConfigVersions
+
+> Task :app:stripTeacherDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:mergeTeacherDebugAndroidTestShaders
+> Task :app:compileTeacherDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateTeacherDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeTeacherDebugAndroidTestAssets
+> Task :app:compressTeacherDebugAndroidTestAssets
+> Task :app:checkTeacherDebugAndroidTestDuplicateClasses
+> Task :app:desugarTeacherDebugAndroidTestFileDependencies
+> Task :app:mergeExtDexTeacherDebugAndroidTest
+> Task :app:mergeLibDexTeacherDebugAndroidTest
+> Task :app:mergeTeacherDebugAndroidTestJniLibFolders
+> Task :app:mergeTeacherDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripTeacherDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningTeacherDebugAndroidTest
+> Task :app:writeTeacherDebugAndroidTestSigningConfigVersions
+> Task :app:compileTeacherDebugKotlin
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/MainActivity.kt:2046:136 'val Icons.Filled.List: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.List.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/auth/DsAuth.kt:6:8 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/auth/DsAuth.kt:26:42 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/sync/DriveSync.kt:16:8 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/sync/DriveSync.kt:414:23 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/ui/LoginScreen.kt:36:8 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/ui/LoginScreen.kt:51:27 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/ui/QuickGradesScreen.kt:232:53 Condition is always 'true'.
+
+> Task :app:compileTeacherDebugJavaWithJavac
+> Task :app:bundleTeacherDebugClassesToCompileJar
+> Task :app:dexBuilderTeacherDebug
+> Task :app:processTeacherDebugJavaRes
+> Task :app:kspTeacherDebugAndroidTestKotlin
+> Task :app:mergeTeacherDebugGlobalSynthetics
+> Task :app:mergeProjectDexTeacherDebug
+> Task :app:mergeTeacherDebugJavaResource
+> Task :app:packageTeacherDebug
+> Task :app:createTeacherDebugApkListingFileRedirect
+> Task :app:compileTeacherDebugAndroidTestKotlin
+> Task :app:compileTeacherDebugAndroidTestJavaWithJavac
+> Task :app:dexBuilderTeacherDebugAndroidTest
+> Task :app:mergeTeacherDebugAndroidTestGlobalSynthetics
+> Task :app:processTeacherDebugAndroidTestJavaRes
+> Task :app:mergeProjectDexTeacherDebugAndroidTest
+> Task :app:mergeTeacherDebugAndroidTestJavaResource
+> Task :app:packageTeacherDebugAndroidTest
+> Task :app:createTeacherDebugAndroidTestApkListingFileRedirect
+[EmulatorConsole]: Failed to start Emulator console for 5554
+
+> Task :app:connectedTeacherDebugAndroidTest
+Starting 16 tests on emulator-5554 - 11
+
+emulator-5554 - 11 Tests 3/16 completed. (0 skipped) (0 failed)
+emulator-5554 - 11 Tests 6/16 completed. (0 skipped) (0 failed)
+emulator-5554 - 11 Tests 9/16 completed. (0 skipped) (0 failed)
+emulator-5554 - 11 Tests 13/16 completed. (0 skipped) (0 failed)
+Finished 16 tests on emulator-5554 - 11
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__reactivecircus_android-emulator-runner-1795085602972.json
+
+[Incubating] Problems report is available at: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 4m 5s
+70 actionable tasks: 70 executed

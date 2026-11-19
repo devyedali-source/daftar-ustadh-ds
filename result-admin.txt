@@ -1,0 +1,118 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+Passing custom test runner argument android.testInstrumentationRunnerArguments.lang from gradle.properties or command line is not compatible with configuration caching. Please specify this argument using android gradle dsl.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preAdminDebugBuild UP-TO-DATE
+> Task :app:generateAdminDebugBuildConfig
+> Task :app:generateAdminDebugResValues
+> Task :app:processAdminDebugGoogleServices
+> Task :app:checkAdminDebugAarMetadata
+> Task :app:mapAdminDebugSourceSetPaths
+> Task :app:generateAdminDebugResources
+> Task :app:packageAdminDebugResources
+> Task :app:createAdminDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksAdminDebug
+> Task :app:parseAdminDebugLocalResources
+> Task :app:mergeAdminDebugResources
+> Task :app:processAdminDebugMainManifest
+> Task :app:processAdminDebugManifest
+> Task :app:preAdminDebugAndroidTestBuild SKIPPED
+> Task :app:javaPreCompileAdminDebug
+> Task :app:processAdminDebugAndroidTestManifest
+> Task :app:generateAdminDebugAndroidTestBuildConfig
+> Task :app:processAdminDebugManifestForPackage
+> Task :app:checkAdminDebugAndroidTestAarMetadata
+> Task :app:generateAdminDebugAndroidTestResValues
+> Task :app:mapAdminDebugAndroidTestSourceSetPaths
+> Task :app:generateAdminDebugAndroidTestResources
+> Task :app:javaPreCompileAdminDebugAndroidTest
+> Task :app:mergeAdminDebugShaders
+> Task :app:mergeAdminDebugAndroidTestResources
+> Task :app:compileAdminDebugShaders NO-SOURCE
+> Task :app:generateAdminDebugAssets UP-TO-DATE
+> Task :app:mergeAdminDebugAssets
+> Task :app:processAdminDebugResources
+> Task :app:processAdminDebugAndroidTestResources
+> Task :app:compressAdminDebugAssets
+> Task :app:desugarAdminDebugFileDependencies
+> Task :app:mergeAdminDebugJniLibFolders
+> Task :app:checkAdminDebugDuplicateClasses
+> Task :app:mergeAdminDebugNativeLibs
+
+> Task :app:stripAdminDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:mergeLibDexAdminDebug
+> Task :app:validateSigningAdminDebug
+> Task :app:writeAdminDebugAppMetadata
+> Task :app:writeAdminDebugSigningConfigVersions
+> Task :app:mergeAdminDebugAndroidTestShaders
+> Task :app:compileAdminDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateAdminDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeAdminDebugAndroidTestAssets
+> Task :app:compressAdminDebugAndroidTestAssets
+> Task :app:desugarAdminDebugAndroidTestFileDependencies
+> Task :app:checkAdminDebugAndroidTestDuplicateClasses
+> Task :app:mergeAdminDebugAndroidTestJniLibFolders
+> Task :app:mergeLibDexAdminDebugAndroidTest
+> Task :app:mergeExtDexAdminDebugAndroidTest
+> Task :app:mergeAdminDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripAdminDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningAdminDebugAndroidTest
+> Task :app:writeAdminDebugAndroidTestSigningConfigVersions
+> Task :app:mergeExtDexAdminDebug
+> Task :app:kspAdminDebugKotlin
+> Task :app:compileAdminDebugKotlin
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/MainActivity.kt:2046:136 'val Icons.Filled.List: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.List.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/auth/DsAuth.kt:6:8 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/auth/DsAuth.kt:26:42 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/sync/DriveSync.kt:16:8 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/sync/DriveSync.kt:414:23 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/ui/LoginScreen.kt:36:8 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/ui/LoginScreen.kt:51:27 'class GoogleSignIn : Any' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/src/main/java/com/elyedali/daftarustadh/ui/QuickGradesScreen.kt:232:53 Condition is always 'true'.
+
+> Task :app:compileAdminDebugJavaWithJavac
+> Task :app:bundleAdminDebugClassesToCompileJar
+> Task :app:dexBuilderAdminDebug
+> Task :app:mergeAdminDebugGlobalSynthetics
+> Task :app:processAdminDebugJavaRes
+> Task :app:kspAdminDebugAndroidTestKotlin
+> Task :app:mergeProjectDexAdminDebug
+> Task :app:mergeAdminDebugJavaResource
+> Task :app:packageAdminDebug
+> Task :app:createAdminDebugApkListingFileRedirect
+> Task :app:compileAdminDebugAndroidTestKotlin
+> Task :app:compileAdminDebugAndroidTestJavaWithJavac
+> Task :app:dexBuilderAdminDebugAndroidTest
+> Task :app:mergeAdminDebugAndroidTestGlobalSynthetics
+> Task :app:processAdminDebugAndroidTestJavaRes
+> Task :app:mergeProjectDexAdminDebugAndroidTest
+> Task :app:mergeAdminDebugAndroidTestJavaResource
+> Task :app:packageAdminDebugAndroidTest
+> Task :app:createAdminDebugAndroidTestApkListingFileRedirect
+[EmulatorConsole]: Failed to start Emulator console for 5554
+
+> Task :app:connectedAdminDebugAndroidTest
+Starting 16 tests on emulator-5554 - 11
+
+emulator-5554 - 11 Tests 4/16 completed. (0 skipped) (0 failed)
+emulator-5554 - 11 Tests 9/16 completed. (0 skipped) (0 failed)
+emulator-5554 - 11 Tests 14/16 completed. (0 skipped) (0 failed)
+Finished 16 tests on emulator-5554 - 11
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__reactivecircus_android-emulator-runner-1795085846712.json
+
+[Incubating] Problems report is available at: file:///home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m
+70 actionable tasks: 70 executed

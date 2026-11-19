@@ -1,0 +1,917 @@
+# proto-message: google.testing.platform.proto.api.core.TestSuiteResult
+# 2026-11-19T10:59:23.841813610Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 16
+  device {
+    id: "emulator-5554"
+    friendly_name: "primary"
+  }
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a08_home_ready"
+    start_time {
+      seconds: 1795085930
+      nanos: 78000000
+    }
+    end_time {
+      seconds: 1795085932
+      nanos: 335000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a08_home_ready.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a12_manual"
+    start_time {
+      seconds: 1795085932
+      nanos: 352000000
+    }
+    end_time {
+      seconds: 1795085934
+      nanos: 721000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a12_manual.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a04_home"
+    start_time {
+      seconds: 1795085934
+      nanos: 756000000
+    }
+    end_time {
+      seconds: 1795085936
+      nanos: 853000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a04_home.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a02_years"
+    start_time {
+      seconds: 1795085936
+      nanos: 863000000
+    }
+    end_time {
+      seconds: 1795085939
+      nanos: 34000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a02_years.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a07_grid"
+    start_time {
+      seconds: 1795085939
+      nanos: 44000000
+    }
+    end_time {
+      seconds: 1795085941
+      nanos: 441000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a07_grid.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a10_follow"
+    start_time {
+      seconds: 1795085941
+      nanos: 447000000
+    }
+    end_time {
+      seconds: 1795085943
+      nanos: 424000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a10_follow.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a06_generate"
+    start_time {
+      seconds: 1795085943
+      nanos: 432000000
+    }
+    end_time {
+      seconds: 1795085945
+      nanos: 354000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a06_generate.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a16_kashf"
+    start_time {
+      seconds: 1795085945
+      nanos: 363000000
+    }
+    end_time {
+      seconds: 1795085946
+      nanos: 259000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a16_kashf.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a15_general_remarks"
+    start_time {
+      seconds: 1795085946
+      nanos: 261000000
+    }
+    end_time {
+      seconds: 1795085948
+      nanos: 280000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a15_general_remarks.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a03_institution"
+    start_time {
+      seconds: 1795085948
+      nanos: 285000000
+    }
+    end_time {
+      seconds: 1795085950
+      nanos: 385000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a03_institution.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a05_teachers"
+    start_time {
+      seconds: 1795085950
+      nanos: 437000000
+    }
+    end_time {
+      seconds: 1795085952
+      nanos: 618000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a05_teachers.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a13_results_ready"
+    start_time {
+      seconds: 1795085952
+      nanos: 623000000
+    }
+    end_time {
+      seconds: 1795085954
+      nanos: 622000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a13_results_ready.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a11_results_missing"
+    start_time {
+      seconds: 1795085954
+      nanos: 623000000
+    }
+    end_time {
+      seconds: 1795085956
+      nanos: 796000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a11_results_missing.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a01_login"
+    start_time {
+      seconds: 1795085956
+      nanos: 823000000
+    }
+    end_time {
+      seconds: 1795085958
+      nanos: 847000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a01_login.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a09_send_files"
+    start_time {
+      seconds: 1795085958
+      nanos: 901000000
+    }
+    end_time {
+      seconds: 1795085961
+      nanos: 88000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a09_send_files.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "TutorialAdmin"
+    test_package: "com.elyedali.daftarustadh"
+    test_method: "a14_kashf_settings"
+    start_time {
+      seconds: 1795085961
+      nanos: 90000000
+    }
+    end_time {
+      seconds: 1795085963
+      nanos: 165000000
+    }
+    device {
+      id: "emulator-5554"
+      friendly_name: "primary"
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/logcat-com.elyedali.daftarustadh.TutorialAdmin-a14_kashf_settings.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/home/runner/work/daftar-ustadh-ds/daftar-ustadh-ds/app/build/outputs/androidTest-results/connected/debug/flavors/admin/emulator-5554 - 11/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
