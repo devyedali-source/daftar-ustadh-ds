@@ -35,7 +35,7 @@ jobs:
           profile: Nexus 5X
           disable-animations: true
           script: |
-            gradle connectedTeacherDebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.$(cat .github/test-class) -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true > result.txt 2>&1 || echo FAILED >> result.txt
+            if [ -s .github/test-class ]; then gradle connectedTeacherDebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.$(cat .github/test-class) -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true > result.txt 2>&1 || echo FAILED >> result.txt; fi
             mkdir -p out && for f in $(adb shell run-as com.elyedali.daftarustadh.teacher ls files/store | tr -d '\r'); do adb exec-out run-as com.elyedali.daftarustadh.teacher cat files/store/$f > out/$f || true; done; ls -la out
             if [ -s .github/test-admin-class ]; then gradle connectedAdminDebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.$(cat .github/test-admin-class) -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true > result-admin.txt 2>&1 || echo FAILED >> result-admin.txt; fi
             if [ -s .github/test-admin-class ]; then mkdir -p out/admin && for f in $(adb shell run-as com.elyedali.daftarustadh ls files/store | tr -d '\r'); do adb exec-out run-as com.elyedali.daftarustadh cat files/store/$f > out/admin/$f || true; done; ls -la out/admin; fi

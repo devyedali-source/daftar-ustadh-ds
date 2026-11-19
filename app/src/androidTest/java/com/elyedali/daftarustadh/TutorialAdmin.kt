@@ -51,7 +51,7 @@ class TutorialAdmin {
         "خديجة سيدي", "يحيى عبد الله", "زينب محمد", "الحسن أحمد", "أم كلثوم")
     private val allCodes by lazy { subjectsByClass.values.flatten().map { it.code }.distinct() }
     private val teachers by lazy { allCodes.mapIndexed { i, code ->
-        TimetableTeacher(teacherNames[i % teacherNames.size], listOf(code), "2224${1000 + i * 37}") } }
+        TimetableTeacher(teacherNames[i % teacherNames.size], listOf(code), "2224${1000 + i * 37}", maxHours = 24) } }
     private val assignments by lazy { classes.flatMap { c -> subjectsByClass[c.id]!!.map { s ->
         TimetableAssignmentEntity(c.id, s.code, teachers.first { s.code in it.subjects }.name) } } }
     private val names = listOf("آمنة أحمد" to "Amna Ahmed", "إبراهيم محمد" to "Ibrahim Mohamed", "أم كلثوم سيدي" to "Oumkelthoum Sidi",
@@ -99,7 +99,7 @@ class TutorialAdmin {
     }
 
     @Test fun a03_institution() {
-        show { InstitutionScreen(existing = InstitutionEntity("main", "نواكشوط الغربية", school, null, Stage.COLLEGE, year, 0L),
+        show { InstitutionScreen(existing = InstitutionEntity("main", "انواكشوط 2 (الغربية)", school, null, Stage.COLLEGE, year, 0L),
             onSave = {}, onCancel = {}, fixedYear = year) }
         save("a03-institution")
     }
@@ -109,7 +109,7 @@ class TutorialAdmin {
             institutionName = school, teacherName = null, onTool = {}, schoolNames = emptyMap(), ownInstitutionId = "main",
             activated = setOf(year), genderCounts = classes.flatMap { listOf(ClassGenderCount(it.id, "F", 18), ClassGenderCount(it.id, "M", 16)) },
             onSelectYear = {}, onOpenClass = {}, onDeleteClass = {}, onCreateClass = {}, onOpenFile = {}, onMenu = {},
-            adminInstitutions = listOf(Institutions.Entry("main", school, "نواكشوط الغربية")), activeInstKey = "main", instChosen = true,
+            adminInstitutions = listOf(Institutions.Entry("main", school, "انواكشوط 2 (الغربية)")), activeInstKey = "main", instChosen = true,
             teachersCount = teachersCount, timetableState = tt, classesWithoutStudents = 0)
     }
 
@@ -157,10 +157,12 @@ class TutorialAdmin {
         save("a11-results-missing")
     }
 
-    @Test fun a12_quick() {
-        show { QuickGradesScreen(className = cls.name, subjects = subjects, subjectLabel = { SubjectNames.display(it, false) }, students = students,
-            grades = grades(true), initialSubject = subjects[2].code, onSave = { _, _, _ -> }, onOpenTable = { _, _ -> }, onBack = {}) }
-        save("a12-quick")
+    @Test fun a12_manual() {
+        val fr = subjects[2]
+        show { GradesScreen(schoolClass = cls, subject = fr, students = students,
+            grades = grades(false).filter { it.subjectCode == fr.code && (it.slot == GradeSlot.T1 || it.studentId.removePrefix("s").toInt() < 4) },
+            testsMode = TestsMode.AVERAGE, scale = RemarkScale.DEFAULT, onSetGrade = { _, _, _, _ -> }, onTestsMode = {}, onPrintRecord = {}, onBack = {}) }
+        save("a12-manual")
     }
 
     @Test fun a13_results_ready() {
