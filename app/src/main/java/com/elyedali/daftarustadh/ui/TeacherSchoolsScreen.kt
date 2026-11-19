@@ -52,7 +52,7 @@ fun TeacherSchoolsScreen(
     var showTimetable by androidx.compose.runtime.saveable.rememberSaveable { androidx.compose.runtime.mutableStateOf(false) }
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize()) {
-            AppTopBar(title = stringResource(R.string.mode_teacher) + " — " + year, onMenu = onMenu, onBack = onBack)
+            AppTopBar(title = stringResource(R.string.mode_teacher) + " — ⁦$year⁩", onMenu = onMenu, onBack = onBack)
             Box(Modifier.weight(1f).padding(horizontal = 12.dp)) {
                 TeacherTimetableView(
                     entries = timetable,

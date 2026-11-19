@@ -44,15 +44,15 @@ class TutorialTeacher {
     private val out by lazy { File(ctx.filesDir, "store").apply { mkdirs() } }
     private val year = "2026-2027"
     private val school = "إعدادية النجاح"
-    private val c1 by lazy { ClassEntity("c1", "inst1", year, "1AS", 1, 0L) }
-    private val c2 by lazy { ClassEntity("c2", "inst1", year, "2AS", 2, 1L) }
+    private val c1 by lazy { ClassEntity("c1", "inst1", year, "1AS", 1, 0L, managed = false, teaching = true) }
+    private val c2 by lazy { ClassEntity("c2", "inst1", year, "2AS", 2, 1L, managed = false, teaching = true) }
     private val subj1 by lazy { CurriculumRepository.level(ctx, year, "1AS")!!.subjects }
     private val names = listOf("آمنة أحمد" to "Amna Ahmed", "إبراهيم محمد" to "Ibrahim Mohamed", "أم كلثوم سيدي" to "Oumkelthoum Sidi",
         "الحسن عبد الله" to "Lehssen Abdallahi", "خديجة محمد الأمين" to "Khadijetou Mohamed Lemine", "زينب أحمد سالم" to "Zeinebou Ahmed Salem",
         "سيدي محمد" to "Sidi Mohamed", "عائشة يحيى" to "Aichetou Yahya", "محمد المختار" to "Mohamed El Moctar", "مريم الشيخ" to "Mariem Cheikh")
     private val students by lazy { names.mapIndexed { i, (ar, fr) ->
         StudentEntity("s$i", "c1", i + 1, ar, fr, "2201${i}45", "", "", "", 0L, if (i % 2 == 0) "F" else "M") } }
-    private val stamp = "الأستاذ: محمد أحمد\nأستاذ مادتي الرياضيات والفيزياء\n$school"
+    private val stamp = "الأستاذ: محمد أحمد\nأستاذ مادتي الرياضيات والعلوم الطبيعية\n$school"
 
     @Before fun setup() {
         ScreenSecurity.allowForStoreShots = true
@@ -164,8 +164,8 @@ class TutorialTeacher {
             val t = TimetableSettings().times[p]
             TeacherTimetableEntity("inst1|$year|$d|$p", "inst1", school, year, "محمد أحمد", d, p,
                 "%02d:%02d".format(t.first / 60, t.first % 60), "%02d:%02d".format(t.second / 60, t.second % 60),
-                cls, code, if (code == "MATS") "الرياضيات" else "الفيزياء والكيمياء",
-                if (code == "MATS") "Mathématiques" else "Physique-Chimie", 0L)
+                cls, code, if (code == "MATS") "الرياضيات" else "العلوم الطبيعية",
+                if (code == "MATS") "Mathématiques" else "Sciences naturelles", 0L)
         }
     }
 
@@ -181,7 +181,7 @@ class TutorialTeacher {
             activated = emptySet(), genderCounts = listOf(ClassGenderCount("c1", "F", 18), ClassGenderCount("c1", "M", 16),
                 ClassGenderCount("c2", "F", 17), ClassGenderCount("c2", "M", 15)),
             onSelectYear = {}, onOpenClass = {}, onDeleteClass = {}, onCreateClass = {}, onOpenFile = {}, canCreateClass = false, onMenu = {},
-            termProgress = listOf(TeacherTermProgress(1, if (done) listOf("1AS1 الرياضيات", "1AS1 الفيزياء", "2AS2 الرياضيات", "2AS2 الفيزياء")
+            termProgress = listOf(TeacherTermProgress(1, if (done) listOf("1AS1 الرياضيات", "1AS1 العلوم الطبيعية", "2AS2 الرياضيات", "2AS2 العلوم الطبيعية")
                 else listOf("1AS1 الرياضيات", "2AS2 الرياضيات"), 4)))
     }
 
