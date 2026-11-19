@@ -43,7 +43,7 @@ class TutorialTeacher {
     private val ctx get() = rule.activity
     private val out by lazy { File(ctx.filesDir, "store").apply { mkdirs() } }
     private val year = "2026-2027"
-    private val school = "إعدادية النجاح"
+    private val school = TutorialLang.s("إعدادية النجاح", "Collège En-Najah")
     private val c1 by lazy { ClassEntity("c1", "inst1", year, "1AS", 1, 0L, managed = false, teaching = true) }
     private val c2 by lazy { ClassEntity("c2", "inst1", year, "2AS", 2, 1L, managed = false, teaching = true) }
     private val subj1 by lazy { CurriculumRepository.level(ctx, year, "1AS")!!.subjects }
@@ -52,10 +52,12 @@ class TutorialTeacher {
         "سيدي محمد" to "Sidi Mohamed", "عائشة يحيى" to "Aichetou Yahya", "محمد المختار" to "Mohamed El Moctar", "مريم الشيخ" to "Mariem Cheikh")
     private val students by lazy { names.mapIndexed { i, (ar, fr) ->
         StudentEntity("s$i", "c1", i + 1, ar, fr, "2201${i}45", "", "", "", 0L, if (i % 2 == 0) "F" else "M") } }
-    private val stamp = "الأستاذ: محمد أحمد\nأستاذ مادتي الرياضيات والعلوم الطبيعية\n$school"
+    private val teacher = TutorialLang.s("محمد أحمد", "Mohamed Ahmed")
+    private val stamp = TutorialLang.s("الأستاذ: محمد أحمد\nأستاذ مادتي الرياضيات والعلوم الطبيعية", "Professeur : Mohamed Ahmed\nMathématiques et Sciences naturelles") + "\n$school"
 
     @Before fun setup() {
         ScreenSecurity.allowForStoreShots = true
+        TutorialLang.apply(ctx, ctx.applicationContext)
         ctx.getSharedPreferences("planning_order", Context.MODE_PRIVATE).edit()
             .putStringSet("fav_subjects", setOf("MATS", "SN")).putStringSet("fav_levels", setOf("1AS", "2AS")).apply()
         ctx.getSharedPreferences("book_packs", Context.MODE_PRIVATE).edit()
@@ -64,7 +66,7 @@ class TutorialTeacher {
 
     private fun show(content: @Composable () -> Unit) {
         rule.setContent {
-            CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
+            CompositionLocalProvider(LocalLayoutDirection provides TutorialLang.direction) {
                 DaftarTheme { Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) { content() } }
             }
         }
@@ -99,17 +101,18 @@ class TutorialTeacher {
         save("t02-years")
     }
 
-    @Test fun t03_books() { show { BooksScreen(firstTime = true, isFr = false, onDone = {}, onMenu = null) }; save("t03-books") }
+    @Test fun t03_books() { show { BooksScreen(firstTime = true, isFr = TutorialLang.fr, onDone = {}, onMenu = null) }; save("t03-books") }
 
     @Test fun t04_hub() { show { TeacherYearHub(year, onPlanning = {}, onSchools = {}, onBack = {}, onMenu = {}) }; save("t04-hub") }
 
+    private val docTitle = TutorialLang.s("اختبار الفصل الأول", "Devoir du 1er trimestre")
     private val docs = listOf(
-        DocumentEntity("a", "", DocType.EXAM, "اختبار الفصل الأول", "التمرين الأول:\nأحسب ما يلي ...\n\nالتمرين الثاني:\nحل المعادلة ...",
+        DocumentEntity("a", "", DocType.EXAM, docTitle, TutorialLang.s("التمرين الأول:\nأحسب ما يلي ...\n\nالتمرين الثاني:\nحل المعادلة ...", "Exercice 1 :\nCalculer ...\n\nExercice 2 :\nRésoudre l'équation ..."),
             1795000000000, levelCode = "1AS", subjectCode = "MATS"),
-        DocumentEntity("b", "", DocType.LESSON, "ملخص درس الكسور", "الكسر هو ...", 1794000000000, levelCode = "1AS"))
+        DocumentEntity("b", "", DocType.LESSON, TutorialLang.s("ملخص درس الكسور", "Résumé : les fractions"), TutorialLang.s("الكسر هو ...", "Une fraction est ..."), 1794000000000, levelCode = "1AS"))
 
     private fun planning() = show {
-        PlanningBrowserScreen(year = year, isFr = false, lockedFor = { _, _ -> false }, onActivate = {}, onBack = {}, onMenu = {},
+        PlanningBrowserScreen(year = year, isFr = TutorialLang.fr, lockedFor = { _, _ -> false }, onActivate = {}, onBack = {}, onMenu = {},
             documents = { lv, subs -> LevelDocuments(lv, subs, docs.filter { it.levelCode == lv }, stamp, {}, {}, {}, {}) })
     }
 
@@ -122,7 +125,7 @@ class TutorialTeacher {
     @Test fun t06_documents() {
         planning(); click(ctx.getString(R.string.tact_stage_college)); click("1AS")
         click(ctx.getString(R.string.doc_tab_mine)); save("t06a-docs")
-        click("اختبار الفصل الأول"); save("t06b-doc-view")
+        click(docTitle); save("t06b-doc-view")
     }
 
     @Test fun t07_new_document() {
@@ -152,7 +155,7 @@ class TutorialTeacher {
 
     @Test fun t11_file_received() {
         show {
-            AlertDialog(onDismissRequest = {}, text = { Text(ctx.getString(R.string.sr_received, school, "1AS1، 2AS2", 4, 12)) },
+            AlertDialog(onDismissRequest = {}, text = { Text(ctx.getString(R.string.sr_received, school, TutorialLang.s("1AS1، 2AS2", "1AS1, 2AS2"), 4, 12)) },
                 confirmButton = { TextButton(onClick = {}) { Text(ctx.getString(R.string.ok)) } })
         }
         save("t11-received", dialog = true)
@@ -162,7 +165,7 @@ class TutorialTeacher {
         listOf(0 to 0, 0 to 1, 1 to 2, 1 to 3, 2 to 0, 2 to 1, 3 to 4, 3 to 5, 4 to 0, 4 to 1, 5 to 2, 5 to 3).mapIndexed { i, (d, p) ->
             val cls = if (i % 2 == 0) "1AS1" else "2AS2"; val code = if (i % 4 < 2) "MATS" else "SN"
             val t = TimetableSettings().times[p]
-            TeacherTimetableEntity("inst1|$year|$d|$p", "inst1", school, year, "محمد أحمد", d, p,
+            TeacherTimetableEntity("inst1|$year|$d|$p", "inst1", school, year, teacher, d, p,
                 "%02d:%02d".format(t.first / 60, t.first % 60), "%02d:%02d".format(t.second / 60, t.second % 60),
                 cls, code, if (code == "MATS") "الرياضيات" else "العلوم الطبيعية",
                 if (code == "MATS") "Mathématiques" else "Sciences naturelles", 0L)
@@ -175,14 +178,16 @@ class TutorialTeacher {
         save("t12-schools")
     }
 
+    private val math = TutorialLang.s("الرياضيات", "Mathématiques")
+    private val sn = TutorialLang.s("العلوم الطبيعية", "Sciences naturelles")
     private fun classesHome(done: Boolean) = show {
         HomeYearsScreen(classes = listOf(c1, c2), currentInstitutionYear = year, selectedYear = year, mode = "teacher", onSelectMode = {},
-            institutionName = school, teacherName = "محمد أحمد", onTool = {}, schoolNames = mapOf("inst1" to school), ownInstitutionId = null,
+            institutionName = school, teacherName = teacher, onTool = {}, schoolNames = mapOf("inst1" to school), ownInstitutionId = null,
             activated = emptySet(), genderCounts = listOf(ClassGenderCount("c1", "F", 18), ClassGenderCount("c1", "M", 16),
                 ClassGenderCount("c2", "F", 17), ClassGenderCount("c2", "M", 15)),
             onSelectYear = {}, onOpenClass = {}, onDeleteClass = {}, onCreateClass = {}, onOpenFile = {}, canCreateClass = false, onMenu = {},
-            termProgress = listOf(TeacherTermProgress(1, if (done) listOf("1AS1 الرياضيات", "1AS1 العلوم الطبيعية", "2AS2 الرياضيات", "2AS2 العلوم الطبيعية")
-                else listOf("1AS1 الرياضيات", "2AS2 الرياضيات"), 4)))
+            termProgress = listOf(TeacherTermProgress(1, if (done) listOf("1AS1 $math", "1AS1 $sn", "2AS2 $math", "2AS2 $sn")
+                else listOf("1AS1 $math", "2AS2 $math"), 4)))
     }
 
     @Test fun t13_classes() { classesHome(false); save("t13-classes") }

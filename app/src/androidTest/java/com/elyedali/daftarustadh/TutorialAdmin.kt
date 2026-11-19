@@ -42,12 +42,13 @@ class TutorialAdmin {
     private val ctx get() = rule.activity
     private val out by lazy { File(ctx.filesDir, "store").apply { mkdirs() } }
     private val year = "2026-2027"
-    private val school = "إعدادية النجاح"
+    private val school = TutorialLang.s("إعدادية النجاح", "Collège En-Najah")
     private val classes by lazy { listOf("1AS" to 1, "1AS" to 2, "2AS" to 1, "3AS" to 1)
         .mapIndexed { i, (l, n) -> ClassEntity("k$i", "main", year, l, n, i.toLong()) } }
     private val subjectsByClass by lazy { classes.associate { it.id to CurriculumRepository.level(ctx, year, it.levelCode)!!.subjects } }
-    private fun label(code: String) = subjectsByClass.values.flatten().firstOrNull { it.code == code }?.let { SubjectNames.display(it, false) } ?: code
-    private val teacherNames = listOf("محمد أحمد", "مريم سالم", "سيدي محمد", "فاطمة الزهراء", "أحمد عالي", "عائشة يحيى", "الشيخ محمد",
+    private fun label(code: String) = subjectsByClass.values.flatten().firstOrNull { it.code == code }?.let { SubjectNames.display(it, TutorialLang.fr) } ?: code
+    private val teacherNames = if (TutorialLang.fr) listOf("Mohamed Ahmed", "Mariem Salem", "Sidi Mohamed", "Fatimetou Zahra", "Ahmed Aly", "Aichetou Yahya", "Cheikh Mohamed",
+        "Khadijetou Sidi", "Yahya Abdallahi", "Zeinebou Mohamed", "Lehssen Ahmed", "Oumkelthoum") else listOf("محمد أحمد", "مريم سالم", "سيدي محمد", "فاطمة الزهراء", "أحمد عالي", "عائشة يحيى", "الشيخ محمد",
         "خديجة سيدي", "يحيى عبد الله", "زينب محمد", "الحسن أحمد", "أم كلثوم")
     private val allCodes by lazy { subjectsByClass.values.flatten().map { it.code }.distinct() }
     private val teachers by lazy { allCodes.mapIndexed { i, code ->
@@ -73,8 +74,9 @@ class TutorialAdmin {
 
     private fun show(content: @Composable () -> Unit) {
         ScreenSecurity.allowForStoreShots = true
+        TutorialLang.apply(ctx, ctx.applicationContext)
         rule.setContent {
-            CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
+            CompositionLocalProvider(LocalLayoutDirection provides TutorialLang.direction) {
                 DaftarTheme { Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) { content() } }
             }
         }
