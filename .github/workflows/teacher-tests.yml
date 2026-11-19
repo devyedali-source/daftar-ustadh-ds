@@ -37,10 +37,12 @@ jobs:
           script: |
             gradle connectedTeacherDebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.$(cat .github/test-class) -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true > result.txt 2>&1 || echo FAILED >> result.txt
             mkdir -p out && for f in $(adb shell run-as com.elyedali.daftarustadh.teacher ls files/store | tr -d '\r'); do adb exec-out run-as com.elyedali.daftarustadh.teacher cat files/store/$f > out/$f || true; done; ls -la out
+            if [ -s .github/test-admin-class ]; then gradle connectedAdminDebugAndroidTest --no-daemon -PstoreShots -Pandroid.testInstrumentationRunnerArguments.class=com.elyedali.daftarustadh.$(cat .github/test-admin-class) -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true > result-admin.txt 2>&1 || echo FAILED >> result-admin.txt; fi
+            if [ -s .github/test-admin-class ]; then mkdir -p out/admin && for f in $(adb shell run-as com.elyedali.daftarustadh ls files/store | tr -d '\r'); do adb exec-out run-as com.elyedali.daftarustadh cat files/store/$f > out/admin/$f || true; done; ls -la out/admin; fi
       - name: Push results
         if: always()
         run: |
-          mkdir -p out && cp result.txt out/ 2>/dev/null || true
+          mkdir -p out && cp result.txt result-admin.txt out/ 2>/dev/null || true
           cp -r app/build/outputs/androidTest-results/connected out/connected 2>/dev/null || true
           git config user.name "tests-bot"
           git config user.email "tests-bot@users.noreply.github.com"
@@ -51,4 +53,4 @@ jobs:
           git add -A
           git commit -m "Teacher tests" || true
           git push -f origin teacher-tests-out
-          grep -q "FAILED" result.txt && exit 1 || true
+          cat result*.txt | grep -q "FAILED" && exit 1 || true
