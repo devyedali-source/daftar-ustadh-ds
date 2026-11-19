@@ -268,6 +268,8 @@
     <string name="doc_signature">توقيع الأستاذ — Signature du professeur</string>
     <string name="doc_exam_subject">مادة الامتحان</string>
     <string name="doc_tab_mine">تحريراتي</string>
+    <string name="busy_working">جارٍ التجهيز… انتظر قليلًا</string>
+    <string name="ex_sending">جارٍ الإرسال إلى الخادم… قد يطول ذلك مع شبكة ضعيفة</string>
     <string name="doc_exam">امتحان</string>
     <string name="doc_request">طلب</string>
     <string name="doc_lesson">درس</string>
@@ -429,7 +431,7 @@
     <string name="ex_act_button">تفعيل 💬</string>
     <string name="ex_act_message">أريد نشر وتفعيل إعلان تبادل بين جمهور الأساتذة (تطبيق دفتر الأستاذ DS).\n🔑 رقم الإعلان (كود الإعلان):\n%1$s</string>
     <string name="act_title">تفعيل الأقسام</string>
-    <string name="home_activation_desc">الفصل الأول مجاني؛ التفعيل يفتح الفصلين الثاني والثالث</string>
+    <string name="home_activation_desc">الفصلان الأول والثاني مجانيان؛ التفعيل يفتح الكشف السنوي (الفصل الأخير)</string>
     <string name="act_explain">الفصلان الأول والثاني مجانيان. تفعيل الأقسام يفتح الفصل الأخير (الكشف السنوي) للسنة الدراسية.</string>
     <string name="act_prices_title">الأسعار (أوقية جديدة):</string>
     <string name="act_price_1">من 1 إلى 3 أقسام: %1$d</string>

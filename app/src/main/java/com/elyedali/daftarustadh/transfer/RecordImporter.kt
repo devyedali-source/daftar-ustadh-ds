@@ -1,5 +1,7 @@
 package com.elyedali.daftarustadh.transfer
 
+import androidx.room.withTransaction
+
 import com.elyedali.daftarustadh.data.ClassEntity
 import com.elyedali.daftarustadh.data.DaftarDatabase
 import com.elyedali.daftarustadh.data.GradeEntity
@@ -123,7 +125,10 @@ class RecordImporter(private val db: DaftarDatabase) {
      * خانات الفصول السابقة في السجل لا تُكتب إلا إذا كانت فارغة عند الإدارة، فلا يُمسّ ما صحّحته الإدارة
      * (مثل الغائب بتبرير من 0 إلى 10) حين يصل سجل الفصل الموالي.
      */
-    suspend fun apply(ready: RecordCheck.Ready) {
+    suspend fun apply(ready: RecordCheck.Ready) = db.withTransaction { applyNow(ready) }
+
+    /** كل الرفع في معاملة واحدة: إن توقف التطبيق في منتصفه لا يبقى سجل نصف مرفوع. */
+    private suspend fun applyNow(ready: RecordCheck.Ready) {
         val gradeDao = db.gradeDao()
         val c = ready.schoolClass
         val file = ready.file

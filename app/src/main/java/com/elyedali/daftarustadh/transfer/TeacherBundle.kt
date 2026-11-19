@@ -1,5 +1,7 @@
 package com.elyedali.daftarustadh.transfer
 
+import androidx.room.withTransaction
+
 import com.elyedali.daftarustadh.data.DaftarDatabase
 import com.elyedali.daftarustadh.data.GradeEntity
 import com.elyedali.daftarustadh.data.TeacherSubjectEntity
@@ -102,11 +104,15 @@ class TeacherBundleImporter(private val db: DaftarDatabase) {
         return moved
     }
 
+    private class ConflictAbort(val className: String) : Exception()
+
     suspend fun save(bundle: TeacherBundle): BundleOutcome {
         val saved = ArrayList<String>()
         val conflicts = ArrayList<String>()
         var subjects = 0
-        bundle.classes.forEach { (file, codes) ->
+        // كل قسم في معاملة واحدة: إن رُفض (قسم آخر بنفس الرقم من مصدر آخر) يُرجَع كل شيء،
+        // فلا يُحذف القسم القديم ولا تضيع نقاط الأستاذ التي كانت ستُنقل
+        bundle.classes.forEach { (file, codes) -> try { db.withTransaction {
             val moved = replaceOld(file)
             when (val r = classImporter.save(file)) {
                 is ImportOutcome.Success -> {
@@ -118,9 +124,9 @@ class TeacherBundleImporter(private val db: DaftarDatabase) {
                     moved.forEach { db.gradeDao().save(it) }
                     db.appMetaDao().put(com.elyedali.daftarustadh.data.AppMetaEntity(subjectsKey(file.schoolClass.id), codes.joinToString(",")))
                 }
-                is ImportOutcome.ConflictingSource -> conflicts += r.className
+                is ImportOutcome.ConflictingSource -> throw ConflictAbort(r.className)
             }
-        }
+        } } catch (e: ConflictAbort) { conflicts += e.className } }
         // اسم الأستاذ كما سجّلته إدارة هذه المؤسسة: يُكتب في سجلاته التي يرسلها إليها، فتتطابق مع إسنادها
         if (bundle.teacherName.isNotBlank()) bundle.classes.map { it.first.institution.id }.distinct().forEach { id ->
             db.appMetaDao().put(com.elyedali.daftarustadh.data.AppMetaEntity(nameKey(id), bundle.teacherName))

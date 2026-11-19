@@ -251,6 +251,13 @@ class MainActivity : AppCompatActivity() {
                 var ownerFocus by remember { mutableStateOf<String?>(null) }
                 var ownerFocusEx by remember { mutableStateOf<String?>(null) }
                 val scope = rememberCoroutineScope()
+                // عملية قد تطول (تجهيز ملف PDF، قراءة ملف وصل، إرسال سجلات…): نافذة «جارٍ التجهيز…» حتى تنتهي،
+                // فلا يظن المستخدم أن التطبيق توقف، ولا يضغط الزر مرتين
+                var busyCount by remember { mutableStateOf(0) }
+                fun busy(job: suspend kotlinx.coroutines.CoroutineScope.() -> Unit) = scope.launch {
+                    busyCount++
+                    try { job() } finally { busyCount-- }
+                }
                 val institution by institutionDao.observe().collectAsState(initial = null)
                 val institutions by institutionDao.observeAll().collectAsState(initial = emptyList())
                 val schoolNames = institutions.associate { it.id to it.schoolName }
@@ -483,14 +490,14 @@ class MainActivity : AppCompatActivity() {
 
                 /** إنتاج كشوف الدرجات لقسم: ملف PDF واحد، كشف في كل صفحة، يُرسل للوراقة. */
                 fun generateKashf(c: ClassEntity, term: Int) {
-                    // الفصل الأول مجاني؛ كشف الفصل الثاني والسنوي يحتاجان تفعيل القسم
+                    // الفصلان الأول والثاني مجانيان؛ الكشف السنوي (الفصل الأخير) يحتاج تفعيل القسم
                     if (com.elyedali.daftarustadh.data.ClassActivation.needsActivation(term) && c.id !in activatedClasses) {
                         activationBack = screen; screen = Screen.ACTIVATION
                         return
                     }
-                    scope.launch {
+                    busy {
                         // بيانات القسم المطلوب نفسه من القاعدة (قد يُطلب كشفه من صفحة متابعة السجلات وهو غير القسم المفتوح)
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val subjects = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
                         val list = studentDao.listByClass(c.id)
                         val cGrades = gradeDao.listClasses(listOf(c.id))
@@ -499,7 +506,7 @@ class MainActivity : AppCompatActivity() {
                         // لا كشف قبل اكتمال النتائج
                         if (list.isEmpty() || com.elyedali.daftarustadh.report.ReportCalc.missing(term, subjects, list, cGrades).isNotEmpty()) {
                             android.widget.Toast.makeText(this@MainActivity, getString(R.string.kashf_blocked), android.widget.Toast.LENGTH_LONG).show()
-                            return@launch
+                            return@busy
                         }
                         val reports = ReportCalc.build(
                             term, subjects, list, cGrades, cRecords,
@@ -528,7 +535,7 @@ class MainActivity : AppCompatActivity() {
 
                 /** سحب تحرير مستوى PDF: المستوى (ومادة الامتحان)، العنوان والنص، والتوقيع والطابع أسفل الصفحة. */
                 fun exportLevelDocument(d: DocumentEntity, stamp: String, year: String) {
-                    scope.launch {
+                    busy {
                         val sub = d.subjectCode.takeIf { it.isNotBlank() }?.let { code ->
                             CurriculumRepository.level(this@MainActivity, year, d.levelCode)?.subjects?.firstOrNull { it.code == code } }
                         val info = DocumentPdf.Info(
@@ -561,9 +568,9 @@ class MainActivity : AppCompatActivity() {
                         docSubjectChoice = d to name
                         return
                     }
-                    scope.launch {
-                        val c = classDao.getById(d.classId) ?: return@launch
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val c = classDao.getById(d.classId) ?: return@busy
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val all = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)?.subjects.orEmpty()
                         val subjects = all.filter { s -> s.code in mineCodes }
                         val examSub = if (d.type == com.elyedali.daftarustadh.data.DocType.EXAM)
@@ -643,9 +650,9 @@ class MainActivity : AppCompatActivity() {
                  * إن كانت الأقسام من مؤسسات مختلفة يُصنع ملف لكل مؤسسة.
                  */
                 fun uploadTermRecords(term: Int, pairs: List<Pair<ClassEntity, String>>, name: String) {
-                    scope.launch {
+                    busy {
                         val parts = pairs.mapNotNull { (c, code) -> buildRecordPart(c, code, name, uptoTerm = term) }
-                        if (parts.isEmpty()) return@launch
+                        if (parts.isEmpty()) return@busy
                         val dir = ShareHelper.freshShareDir(this@MainActivity)
                         val files = parts.groupBy { it.record.institutionId }.values.map { group ->
                             val ordered = group.sortedWith(compareBy({ it.record.levelCode }, { it.record.number },
@@ -670,10 +677,10 @@ class MainActivity : AppCompatActivity() {
 
                 /** إرسال غياب مادة الأستاذ في القسم إلى الإدارة (ملف ‎.dsq عبر الواتساب). */
                 fun sendAbsence(c: ClassEntity, code: String, name: String) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
-                            ?.subjects?.firstOrNull { it.code == code } ?: return@launch
+                            ?.subjects?.firstOrNull { it.code == code } ?: return@busy
                         val sessions = absenceDao.listSessions(c.id, code).map { s ->
                             com.elyedali.daftarustadh.transfer.AbsenceFileSession(
                                 s.date, s.period, absenceDao.listAbsences(s.id).map { it.studentId }
@@ -859,8 +866,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 fun shareClassTimetable(c: ClassEntity) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val at = ttSlots.filter { it.classId == c.id }.associateBy { it.day to it.period }
                         val bytes = withContext(Dispatchers.Default) {
                             timetablePdf(
@@ -877,11 +884,11 @@ class MainActivity : AppCompatActivity() {
 
                 /** الجدول العام: جداول جميع الأقسام في جدول واحد (PDF). */
                 fun shareAllClassesTimetable() {
-                    scope.launch {
-                        val owner = inst ?: return@launch
+                    busy {
+                        val owner = inst ?: return@busy
                         val year = adminYear ?: owner.schoolYear
                         val cls = managedClasses.filter { it.schoolYear == year }.sortedWith(compareBy({ it.levelCode }, { it.number }))
-                        if (cls.isEmpty()) return@launch
+                        if (cls.isEmpty()) return@busy
                         val st = ttSettings
                         val dayAr = listOf("الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد")
                         val dayFr = listOf("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche")
@@ -913,8 +920,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 fun shareTeacherTimetablePdf(teacher: String) {
-                    scope.launch {
-                        val owner = inst ?: return@launch
+                    busy {
+                        val owner = inst ?: return@busy
                         val names = managedClasses.associate { it.id to it.name }
                         val mine = ttSlots.filter { it.teacherName == teacher }.groupBy { it.day to it.period }
                         val bytes = withContext(Dispatchers.Default) {
@@ -1016,8 +1023,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 fun printTextbook(c: ClassEntity, pages: Int) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val info = textbookInfo(c, owner)
                         val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.TextbookPdf.build(pages, info) }
                         val name = "دفتر النصوص - Cahier de textes - ${c.name} - ${owner.schoolName} - ${c.schoolYear}.pdf"
@@ -1029,10 +1036,10 @@ class MainActivity : AppCompatActivity() {
 
                 /** سحب سجل الأستاذ لمادة: PDF فارغ الخانات، يُرسل أو يُطبع من نافذة المشاركة. */
                 fun printRecord(c: ClassEntity, code: String, name: String, blank: Boolean = false) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val subject = CurriculumRepository.level(this@MainActivity, c.schoolYear, c.levelCode)
-                            ?.subjects?.firstOrNull { it.code == code } ?: return@launch
+                            ?.subjects?.firstOrNull { it.code == code } ?: return@busy
                         val list = if (blank) TeacherRecordPdf.blankRows(70) else studentDao.listByClass(c.id)
                         val labels = recordLabels(c, owner, subject, name)
                         val bytes = withContext(Dispatchers.Default) { TeacherRecordPdf.build(list, labels) }
@@ -1050,7 +1057,7 @@ class MainActivity : AppCompatActivity() {
                 var processRecordsBatchRef: ((List<Uri>) -> Unit)? = null
                 // فتح ملف قسم: من الواتساب أو من زر «فتح ملف قسم»
                 fun processFile(uri: Uri) {
-                    scope.launch {
+                    busy {
                         var importedYear: String? = null
                         val result: FileResult? = try {
                             val bytes = withContext(Dispatchers.IO) {
@@ -1184,7 +1191,7 @@ class MainActivity : AppCompatActivity() {
                                                 rejected += "$label — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
                                             // سجل أقدم من الذي رُفع لهذه المادة: يُتجاوز حتى لا تعود نقاط قديمة
                                             chk.older -> { older++; }
-                                            // ليس الأستاذ المسند لهذه المادة في الجدول الزمني: لا يُرفع دفعة واحدة (يُرفع وحده بعد التأكد)
+                                            // ليس الأستاذ المسند لهذه المادة في الجدول الزمني: لا يُرفع حتى تُصحّح الإدارة الإسناد ثم يُرفع الملف من جديد
                                             ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }?.teacherName
                                                 ?.takeIf { it.isNotBlank() && !sameTeacher(it, any.teacherName) } != null ->
                                                 rejected += "$label — " + getString(R.string.bu_other_teacher, any.teacherName,
@@ -1263,8 +1270,8 @@ class MainActivity : AppCompatActivity() {
                         full = full
                     )
                 fun share(c: ClassEntity, type: ClassFileType) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val list = studentDao.listByClass(c.id)
                         val file = ClassFile(type, owner, c, list)
                         val bytes = withContext(Dispatchers.Default) { ClassFileCodec.encode(file) }
@@ -1284,7 +1291,7 @@ class MainActivity : AppCompatActivity() {
                     if (classes.isEmpty() || t.phone.isBlank()) return
                     if (!ttApproved || classesWithoutStudents.isNotEmpty()) return
                     val timetable = buildTeacherTimetable(t.name)
-                    scope.launch {
+                    busy {
                         val bundle = com.elyedali.daftarustadh.transfer.TeacherBundle(
                             teacherName = t.name, schoolName = owner.schoolName, schoolYear = adminYear ?: owner.schoolYear,
                             classes = classes.map { c ->
@@ -1376,8 +1383,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 fun printAbsenceRegister(c: ClassEntity, blank: Boolean) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val list = studentDao.listByClass(c.id)
                         val info = absenceRegisterInfo(c, owner, list, blank)
                         val bytes = withContext(Dispatchers.Default) { com.elyedali.daftarustadh.pdf.AbsencePdf.build(info) }
@@ -1480,10 +1487,10 @@ class MainActivity : AppCompatActivity() {
 
                 /** بطاقات طلاب القسم (PDF): عشر بطاقات في كل صفحة، لمشاركتها مع الوراقة. */
                 fun shareClassCards(c: ClassEntity) {
-                    scope.launch {
-                        val owner = institutionDao.getById(c.institutionId) ?: return@launch
+                    busy {
+                        val owner = institutionDao.getById(c.institutionId) ?: return@busy
                         val list = studentDao.listByClass(c.id).sortedBy { it.rollNumber }
-                        if (list.isEmpty()) return@launch
+                        if (list.isEmpty()) return@busy
                         val info = com.elyedali.daftarustadh.pdf.StudentCardPdf.Info(owner.schoolName, c.schoolYear, sealBitmap)
                         val cards = list.map { s ->
                             com.elyedali.daftarustadh.pdf.StudentCardPdf.Card(
@@ -2786,6 +2793,18 @@ class MainActivity : AppCompatActivity() {
                         confirmButton = { TextButton(onClick = { actError = null }) { Text(stringResource(R.string.ok)) } }
                     )
                 }
+                if (busyCount > 0) AlertDialog(
+                    onDismissRequest = {},
+                    properties = androidx.compose.ui.window.DialogProperties(dismissOnBackPress = false, dismissOnClickOutside = false),
+                    confirmButton = {},
+                    text = {
+                        androidx.compose.foundation.layout.Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+                            horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(14.dp)) {
+                            androidx.compose.material3.CircularProgressIndicator(modifier = Modifier.size(28.dp))
+                            Text(stringResource(R.string.busy_working))
+                        }
+                    }
+                )
                 if (batchWorking) AlertDialog(
                     onDismissRequest = {},
                     text = { Text(stringResource(R.string.bu_working)) },
@@ -2880,7 +2899,7 @@ class MainActivity : AppCompatActivity() {
                             com.elyedali.daftarustadh.ui.AdminStaff.encode(list))) } },
                         onSendTo = { m ->
                             showStaffShare = false
-                            scope.launch {
+                            busy {
                                 val bytes = buildAdminFile()
                                 ShareHelper.shareToWhatsApp(this@MainActivity, bytes, fileName, m.phone,
                                     getString(R.string.af_caption, schoolName), getString(R.string.share_chooser))
@@ -2888,7 +2907,7 @@ class MainActivity : AppCompatActivity() {
                         },
                         onShareOther = {
                             showStaffShare = false
-                            scope.launch { ShareHelper.share(this@MainActivity, buildAdminFile(), fileName, getString(R.string.share_chooser)) }
+                            busy { ShareHelper.share(this@MainActivity, buildAdminFile(), fileName, getString(R.string.share_chooser)) }
                         },
                         onDismiss = { showStaffShare = false }
                     )
@@ -2903,7 +2922,7 @@ class MainActivity : AppCompatActivity() {
                         confirmButton = {
                             TextButton(onClick = {
                                 adminFilePending = null
-                                scope.launch {
+                                busy {
                                     val out = try { withContext(Dispatchers.IO) { f.apply(db) } } catch (e: Exception) { null }
                                     fileResult = when (out) {
                                         is com.elyedali.daftarustadh.transfer.AdminFullFile.Outcome.Done -> {

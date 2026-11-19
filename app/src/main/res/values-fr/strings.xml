@@ -268,6 +268,8 @@
     <string name="doc_signature">توقيع الأستاذ — Signature du professeur</string>
     <string name="doc_exam_subject">Matière de l\'examen</string>
     <string name="doc_tab_mine">Mes rédactions</string>
+    <string name="busy_working">Préparation en cours… patientez</string>
+    <string name="ex_sending">Envoi au serveur… cela peut prendre du temps avec un réseau faible</string>
     <string name="doc_exam">Examen</string>
     <string name="doc_request">Demande</string>
     <string name="doc_lesson">Cours</string>
@@ -429,7 +431,7 @@
     <string name="ex_act_button">Activer 💬</string>
     <string name="ex_act_message">Je veux publier et activer une annonce d\'échange (application دفتر الأستاذ DS).\n🔑 Code de l\'annonce :\n%1$s</string>
     <string name="act_title">Activation des classes</string>
-    <string name="home_activation_desc">Trimestre 1 gratuit ; l\'activation ouvre les trimestres 2 et 3</string>
+    <string name="home_activation_desc">Trimestres 1 et 2 gratuits ; l\'activation ouvre le bulletin annuel (dernier trimestre)</string>
     <string name="act_explain">Les 1er et 2e trimestres sont gratuits. L\'activation ouvre le dernier trimestre (bulletin annuel) de l\'année scolaire.</string>
     <string name="act_prices_title">Tarifs (MRU) :</string>
     <string name="act_price_1">De 1 à 3 classes : %1$d</string>

@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -132,21 +133,41 @@ fun ExchangesScreen(
     var activationFor by remember { mutableStateOf<ExchangeAd?>(null) }
 
     // يحفظ المنشور على الهاتف ثم يحاول إرساله إلى الخادم.
+    // الإرسال إلى الخادم قد يطول مع شبكة ضعيفة: نافذة «جارٍ الإرسال…» حتى ينتهي
+    var sending by remember { mutableStateOf(false) }
     val savePost: (ExchangeAd) -> Unit = { ad ->
         scope.launch {
-            val others = myPosts.filter { it.id != ad.id }
-            onSaveMyPosts(listOf(ad) + others)
-            val ok = runCatching { repository.publish(ad) }.getOrDefault(false)
-            if (ok) onSaveMyPosts(listOf(ad.copy(isSynced = true)) + others)
-            Toast.makeText(context, if (ok) publishedMsg else savedLocalMsg, Toast.LENGTH_LONG).show()
+            sending = true
+            try {
+                val others = myPosts.filter { it.id != ad.id }
+                onSaveMyPosts(listOf(ad) + others)
+                val ok = runCatching { repository.publish(ad) }.getOrDefault(false)
+                if (ok) onSaveMyPosts(listOf(ad.copy(isSynced = true)) + others)
+                Toast.makeText(context, if (ok) publishedMsg else savedLocalMsg, Toast.LENGTH_LONG).show()
+            } finally { sending = false }
         }
     }
     val deletePost: (ExchangeAd) -> Unit = { ad ->
         scope.launch {
-            runCatching { repository.delete(ad.id) }
-            onSaveMyPosts(myPosts.filter { it.id != ad.id })
+            sending = true
+            try {
+                runCatching { repository.delete(ad.id) }
+                onSaveMyPosts(myPosts.filter { it.id != ad.id })
+            } finally { sending = false }
         }
     }
+    if (sending) androidx.compose.material3.AlertDialog(
+        onDismissRequest = {},
+        properties = androidx.compose.ui.window.DialogProperties(dismissOnBackPress = false, dismissOnClickOutside = false),
+        confirmButton = {},
+        text = {
+            androidx.compose.foundation.layout.Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+                androidx.compose.material3.CircularProgressIndicator(modifier = Modifier.size(28.dp))
+                Text(stringResource(R.string.ex_sending))
+            }
+        }
+    )
 
     Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         Column(Modifier.fillMaxSize().padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
