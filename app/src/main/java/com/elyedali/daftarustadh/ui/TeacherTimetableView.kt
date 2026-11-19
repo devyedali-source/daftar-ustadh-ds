@@ -72,11 +72,7 @@ fun TeacherTimetableView(
                 before()
                 // مطويّ: يظهر العنوان فقط (قبل) وما بعده
                 if (collapsed) { after(); return@LazyColumn }
-                if (showOpenFile) item {
-                    OutlinedButton(onClick = onOpenFile, modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp)) {
-                        Text("📥 " + stringResource(R.string.tt_open_file))
-                    }
-                }
+                // لا زر فتح ملف هنا: الجدول يصل داخل الملف الكامل من الإدارة (زر «فتح ملف من إدارة مؤسسة»)
                 if (entries.isEmpty()) {
                     item { Text(stringResource(R.string.tt_teacher_empty), color = MaterialTheme.colorScheme.onSurfaceVariant) }
                     after()

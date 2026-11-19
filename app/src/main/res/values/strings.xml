@@ -502,8 +502,7 @@
     <string name="tt_teacher_hours">%1$s: %2$d ساعة في الأسبوع</string>
     <string name="tt_teacher_pdf">سحب جدول الأستاذ (PDF)</string>
     <string name="tt_open_institution">فتح الجدول الزمني للمؤسسة</string>
-    <string name="tt_open_file">فتح ملف جدول وصلني من الإدارة</string>
-    <string name="tt_teacher_empty">لم يصلك أي جدول بعد. عندما ترسل لك الإدارة ملف جدولك افتحه هنا.</string>
+    <string name="tt_teacher_empty">يصلك جدولك داخل الملف الكامل الذي ترسله لك الإدارة. افتحه من زر «فتح ملف من إدارة مؤسسة»، فيظهر جدولك هنا تلقائيًا.</string>
     <string name="tt_all_schools">كل المؤسسات</string>
     <string name="tt_week_hours">حصصي في الأسبوع: %1$d</string>
     <string name="tt_clash">توجد حصص متداخلة بين مؤسستين (باللون الأحمر). تواصل مع الإدارة.</string>

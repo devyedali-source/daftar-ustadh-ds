@@ -502,8 +502,7 @@
     <string name="tt_teacher_hours">%1$s : %2$d h par semaine</string>
     <string name="tt_teacher_pdf">Emploi du temps du professeur (PDF)</string>
     <string name="tt_open_institution">Ouvrir l\'emploi du temps de l\'établissement</string>
-    <string name="tt_open_file">Ouvrir un fichier d\'emploi du temps reçu</string>
-    <string name="tt_teacher_empty">Aucun emploi du temps reçu. Ouvrez ici le fichier envoyé par l\'administration.</string>
+    <string name="tt_teacher_empty">Votre emploi du temps arrive dans le fichier complet envoyé par l\'administration. Ouvrez-le avec le bouton « Ouvrir un fichier d\'une administration » : il s\'affichera ici automatiquement.</string>
     <string name="tt_all_schools">Tous les établissements</string>
     <string name="tt_week_hours">Mes séances par semaine : %1$d</string>
     <string name="tt_clash">Des séances se chevauchent entre deux établissements (en rouge). Contactez l\'administration.</string>
