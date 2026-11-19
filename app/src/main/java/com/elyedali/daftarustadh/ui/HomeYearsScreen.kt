@@ -155,7 +155,7 @@ fun HomeYearsScreen(
                     title = when {
                         selectedYear == null -> stringResource(R.string.home_choose_year_title)
                         pickingInst -> stringResource(R.string.inst_pick_title, "⁦$selectedYear⁩")
-                        modeLabel == null -> stringResource(R.string.home_year_title, selectedYear)
+                        modeLabel == null -> stringResource(R.string.home_year_title, "⁦$selectedYear⁩")
                         else -> "$modeLabel — ⁦$selectedYear⁩"
                     },
                     onMenu = onMenu,
@@ -354,7 +354,7 @@ fun HomeYearsScreen(
                                 R.string.steps_teacher_4, R.string.steps_teacher_5), yearClasses.isEmpty())
                         }
                         item {
-                            Text(stringResource(R.string.home_year_classes_title, selectedYear, yearClasses.size.toString()),
+                            Text(stringResource(R.string.home_year_classes_title, "⁦$selectedYear⁩", yearClasses.size.toString()),
                                 fontWeight = FontWeight.Bold, fontSize = 15.sp, color = MaterialTheme.colorScheme.primary)
                         }
                         if (yearClasses.isEmpty()) item {

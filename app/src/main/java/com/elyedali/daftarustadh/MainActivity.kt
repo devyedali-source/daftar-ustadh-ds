@@ -2652,7 +2652,7 @@ class MainActivity : AppCompatActivity() {
                             androidx.compose.foundation.layout.Column(
                                 Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState()),
                                 verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)) {
-                                Text(stringResource(R.string.tact_explain, TA.PRICE_STAGE, TA.PRICE_BOTH, year))
+                                Text(stringResource(R.string.tact_explain, TA.PRICE_STAGE, TA.PRICE_BOTH, "⁦$year⁩"))
                                 Text("• " + stringResource(R.string.tact_item_planning))
                                 Text(stringResource(R.string.tact_scope_note), style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
                                 current.forEach { p ->
