@@ -43,6 +43,11 @@
 التطبيق مجاني للتنزيل والتجربة، ويُفعَّل لكل سنة دراسية حسب عدد الأقسام عبر واتساب.
 
 📢 تابع قناة التطبيق على واتساب لتصلك التحديثات والشروحات.
+
+🏛️ المصادر الرسمية
+النصوص التشريعية والضوارب الرسمية ولوائح المؤسسات في التطبيق مأخوذة من مصادرها الرسمية:
+• الجريدة الرسمية للجمهورية الإسلامية الموريتانية ووزارة التهذيب الوطني: https://www.education.gov.mr
+• لوائح المؤسسات: مديرية الامتحانات والمسابقات https://dec.education.gov.mr
 ```
 
 ## Français
@@ -85,6 +90,11 @@ Gestion des collèges et lycées : classes, élèves, notes et bulletins
 
 🔑 Activation
 Téléchargement et essai gratuits ; activation par année scolaire selon le nombre de classes, via WhatsApp.
+
+🏛️ Sources officielles
+Les textes réglementaires, les coefficients officiels et les listes d'établissements de l'application proviennent de leurs sources officielles :
+• Journal officiel de la République Islamique de Mauritanie et ministère de l'Éducation nationale : https://www.education.gov.mr
+• Listes des établissements : Direction des examens et concours https://dec.education.gov.mr
 ```
 
 ## معلومات أخرى
