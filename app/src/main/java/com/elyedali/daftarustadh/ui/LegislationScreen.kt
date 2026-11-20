@@ -57,7 +57,7 @@ import java.io.File
 /* ---------- البيانات ---------- */
 
 data class LegArticle(val title: String, val chapter: String, val text: String)
-data class LegDoc(val title: String, val ref: String, val part: String, val articles: List<LegArticle>)
+data class LegDoc(val title: String, val ref: String, val part: String, val articles: List<LegArticle>, val source: String = "")
 
 object LegislationRepository {
     private const val ASSET = "legislation/legislation.json"
@@ -79,6 +79,7 @@ object LegislationRepository {
                     title = doc.getString("title"),
                     ref = doc.optString("ref"),
                     part = partTitle,
+                    source = doc.optString("source"),
                     articles = (0 until arts.length()).map { i ->
                         val a = arts.getJSONObject(i)
                         LegArticle(a.getString("title"), a.optString("chapter"), a.getString("text"))
@@ -199,6 +200,7 @@ private fun DocList(
     ScreenHeader(title, onBack, listOf(stringResource(R.string.leg_summary, docs.size, total))) {
         HeaderAction(stringResource(R.string.leg_original_pdf), onPdf)
     }
+    OfficialSourcesCard()
     OutlinedTextField(
         value = query,
         onValueChange = onQuery,
@@ -246,6 +248,8 @@ private fun DocList(
                         Text(doc.title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                         if (doc.ref.isNotBlank()) Text(doc.ref, style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 3, overflow = TextOverflow.Ellipsis)
+                        if (doc.source.isNotBlank()) Text(stringResource(R.string.leg_source, doc.source),
+                            style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.primary)
                         Text(stringResource(R.string.leg_articles_count, doc.articles.size),
                             style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.secondary)
                     }
@@ -262,6 +266,10 @@ private fun ArticleList(doc: LegDoc, onOpen: (Int) -> Unit, onBack: () -> Unit) 
         if (doc.ref.isNotBlank()) item(key = "ref") {
             Text(doc.ref, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(horizontal = 4.dp, vertical = 2.dp))
+        }
+        if (doc.source.isNotBlank()) item(key = "src") {
+            Text(stringResource(R.string.leg_source, doc.source), style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.primary, modifier = Modifier.padding(horizontal = 4.dp, vertical = 2.dp))
         }
         var lastChapter = ""
         doc.articles.forEachIndexed { i, art ->
@@ -302,7 +310,8 @@ private fun ColumnScope.ArticleReader(doc: LegDoc, index: Int, onIndex: (Int) ->
     var fontSize by rememberSaveable { mutableIntStateOf(18) }
     val scroll = rememberScrollState()
     LaunchedEffect(index) { scroll.scrollTo(0) }
-    val fullText = remember(art, doc) { "${doc.title}\n${art.title}\n\n${art.text}" }
+    val sourceLine = if (doc.source.isNotBlank()) stringResource(R.string.leg_source, doc.source) else ""
+    val fullText = remember(art, doc, sourceLine) { "${doc.title}\n${art.title}\n\n${art.text}" + if (sourceLine.isNotBlank()) "\n\n$sourceLine" else "" }
     val copiedMsg = stringResource(R.string.leg_copied)
     val shareTitle = stringResource(R.string.share)
 
@@ -323,6 +332,13 @@ private fun ColumnScope.ArticleReader(doc: LegDoc, index: Int, onIndex: (Int) ->
             HorizontalDivider()
             SelectionContainer {
                 Text(art.text, fontSize = fontSize.sp, lineHeight = (fontSize * 1.7f).sp)
+            }
+            if (doc.source.isNotBlank()) {
+                HorizontalDivider()
+                Text(stringResource(R.string.leg_source, doc.source), style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.primary)
+                if (doc.ref.isNotBlank()) Text(doc.ref, style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
     }

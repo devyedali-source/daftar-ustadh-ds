@@ -89,6 +89,8 @@ fun AboutScreen(onBack: () -> Unit) {
                         .forEach { Text("• " + stringResource(it), fontSize = 13.sp, lineHeight = 20.sp) }
                 }
 
+                OfficialSourcesCard()
+
                 Text(stringResource(R.string.drawer_footer), fontSize = 11.sp, color = Color.Gray, textAlign = TextAlign.Center,
                     modifier = Modifier.fillMaxWidth().padding(top = 8.dp))
             }

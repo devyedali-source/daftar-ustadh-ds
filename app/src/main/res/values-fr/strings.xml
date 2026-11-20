@@ -1025,4 +1025,10 @@
     <string name="inst_edit_request">Demander la modification</string>
     <string name="inst_edit_pending">Demande en attente. Après l\'accord, rouvrez cette page pour modifier.</string>
     <string name="inst_edit_msg">Je veux modifier les informations de l\'établissement dans l\'appli إدارة DS.\nÉtablissement : %1$s\nWilaya : %2$s</string>
+    <string name="leg_source">🏛️ Source : %1$s</string>
+    <string name="src_title">Sources officielles</string>
+    <string name="src_text">Les textes officiels, les coefficients et les listes d\'établissements de l\'application proviennent de leurs sources officielles, consultables directement :</string>
+    <string name="src_ministry">Site du ministère de l\'Éducation nationale</string>
+    <string name="src_exams">Site de la Direction des examens et concours (listes des établissements)</string>
+    <string name="src_schools">La liste des établissements provient du site officiel :</string>
 </resources>

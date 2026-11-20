@@ -1025,4 +1025,10 @@
     <string name="inst_edit_request">طلب تعديل بيانات المؤسسة</string>
     <string name="inst_edit_pending">طلبك قيد الانتظار. بعد الموافقة افتح هذه الصفحة من جديد فيُفتح التعديل.</string>
     <string name="inst_edit_msg">أريد تعديل بيانات المؤسسة في تطبيق إدارة DS.\nالمؤسسة: %1$s\nالولاية: %2$s</string>
+    <string name="leg_source">🏛️ المصدر: %1$s</string>
+    <string name="src_title">المصادر الرسمية</string>
+    <string name="src_text">النصوص الرسمية والضوارب ولوائح المؤسسات في التطبيق مأخوذة من مصادرها الرسمية، ويمكنك الرجوع إليها مباشرة:</string>
+    <string name="src_ministry">موقع وزارة التهذيب الوطني</string>
+    <string name="src_exams">موقع مديرية الامتحانات والمسابقات (لوائح المؤسسات)</string>
+    <string name="src_schools">لائحة المؤسسات مأخوذة من الموقع الرسمي:</string>
 </resources>

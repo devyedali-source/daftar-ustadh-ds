@@ -254,6 +254,8 @@ private fun SchoolPickerDialog(
                     modifier = Modifier.fillMaxWidth()
                 )
                 TextButton(onClick = onManual) { Text(stringResource(R.string.school_not_found)) }
+                Text(stringResource(R.string.src_schools), style = MaterialTheme.typography.bodySmall)
+                SourceLink(stringResource(R.string.src_exams), OfficialSources.EXAMS)
                 HorizontalDivider()
                 LazyColumn(Modifier.fillMaxWidth().heightIn(max = 420.dp)) {
                     items(filtered, key = { it.id }) { s ->
