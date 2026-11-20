@@ -48,6 +48,7 @@
 النصوص التشريعية والضوارب الرسمية ولوائح المؤسسات في التطبيق مأخوذة من مصادرها الرسمية:
 • الجريدة الرسمية للجمهورية الإسلامية الموريتانية ووزارة التهذيب الوطني: https://www.education.gov.mr
 • لوائح المؤسسات: مديرية الامتحانات والمسابقات https://dec.education.gov.mr
+إدارة DS تطبيق مستقل، لا يمثل وزارة التهذيب الوطني ولا أي جهة حكومية.
 ```
 
 ## Français
@@ -95,6 +96,7 @@ Téléchargement et essai gratuits ; activation par année scolaire selon le nom
 Les textes réglementaires, les coefficients officiels et les listes d'établissements de l'application proviennent de leurs sources officielles :
 • Journal officiel de la République Islamique de Mauritanie et ministère de l'Éducation nationale : https://www.education.gov.mr
 • Listes des établissements : Direction des examens et concours https://dec.education.gov.mr
+إدارة DS est une application indépendante ; elle ne représente ni le ministère de l'Éducation nationale ni aucune entité gouvernementale.
 ```
 
 ## معلومات أخرى
