@@ -109,7 +109,9 @@ fun PlanningTab(
     // كتاب المادة المعروضة: إن لم يكن على الهاتف تظهر حالته أو زر تنزيله وحده (يختفي عند اكتماله)
     val books = com.elyedali.daftarustadh.data.BookPack
     val bookStates by books.states.collectAsState()
-    val coursePack = remember(subject, levelCode) { books.packs(context).firstOrNull { it.subject == subject && it.level == levelCode } }
+    // قد يكون للمادة أكثر من كتاب في المستوى (الفيزياء والكيمياء، التاريخ والجغرافيا): يظهر أول كتاب غير جاهز
+    val coursePacks = remember(subject, levelCode) { books.packs(context).filter { it.subject == subject && levelCode in it.levels } }
+    val coursePack = coursePacks.firstOrNull { bookStates[it.name] !is com.elyedali.daftarustadh.data.BookPack.Status.Ready } ?: coursePacks.firstOrNull()
     val courseState = coursePack?.let { bookStates[it.name] }
     val confirmLauncher = androidx.activity.compose.rememberLauncherForActivityResult(
         androidx.activity.result.contract.ActivityResultContracts.StartIntentSenderForResult()) {}

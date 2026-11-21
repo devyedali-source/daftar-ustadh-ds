@@ -20,7 +20,12 @@ import java.io.File
  */
 object BookPack {
     /** حزمة كتاب: مادة ومستوى، وملفاتها (التاريخ والجغرافيا ملفان في حزمة واحدة). */
-    data class Pack(val name: String, val subject: String, val level: String, val files: List<String>, val bytes: Long)
+    /** level: رمز الحزمة؛ levels: المستويات (الشعب) التي يخدمها الكتاب — كتاب الثانوية قد يشترك فيه أكثر من شعبة. */
+    data class Pack(val name: String, val subject: String, val level: String, val files: List<String>, val bytes: Long,
+                    val levels: List<String> = listOf(level)) {
+        fun serves(chosen: Collection<String>) = levels.any { it in chosen }
+        val levelsLabel: String get() = levels.joinToString(" · ")
+    }
 
     sealed class Status {
         object Ready : Status()
@@ -62,8 +67,10 @@ object BookPack {
         (0 until arr.length()).map { i ->
             val o = arr.getJSONObject(i)
             val f = o.getJSONArray("files")
+            val lv = o.optJSONArray("levels")
             Pack(o.getString("name"), o.getString("subject"), o.getString("level"),
-                (0 until f.length()).map { f.getString(it) }, o.getLong("bytes"))
+                (0 until f.length()).map { f.getString(it) }, o.getLong("bytes"),
+                lv?.let { a -> (0 until a.length()).map { a.getString(it) } } ?: listOf(o.getString("level")))
         }
     } catch (e: Exception) { emptyList() }.also { packs = it }
 
@@ -92,7 +99,7 @@ object BookPack {
      * (يحذفها الأستاذ بنفسه إن أراد) حتى لا يضيع ما نزل بإنترنت ضعيف.
      */
     fun choose(c: Context, subjects: Set<String>, levels: Set<String>) {
-        val wanted = packs(c).filter { it.subject in subjects && it.level in levels }.map { it.name }.toSet()
+        val wanted = packs(c).filter { it.subject in subjects && it.serves(levels) }.map { it.name }.toSet()
         prefs(c).edit().putStringSet(KEY_SUBJECTS, subjects).putStringSet(KEY_LEVELS, levels)
             .putStringSet(KEY_SELECTED, selected(c) + wanted).putBoolean(KEY_PICKED, true).apply()
         fetch(c, wanted)

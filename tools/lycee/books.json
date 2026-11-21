@@ -1,0 +1,749 @@
+[
+ {
+  "src": "ANG-5AS-M.pdf",
+  "asset": "books/ANG_5ACDO.pdf",
+  "subject": "ANG",
+  "key": "5ACDO",
+  "levels": [
+   "5A",
+   "5C",
+   "5D",
+   "5O"
+  ],
+  "title": "Study English — 5th Year"
+ },
+ {
+  "src": "AR-5AS-CD.pdf",
+  "asset": "books/AR_5CD.pdf",
+  "subject": "AR",
+  "key": "5CD",
+  "levels": [
+   "5C",
+   "5D"
+  ],
+  "title": "اللغة العربية — الشعبة العلمية"
+ },
+ {
+  "src": "AR-5AS-LM.pdf",
+  "asset": "books/AR_5AO.pdf",
+  "subject": "AR",
+  "key": "5AO",
+  "levels": [
+   "5A",
+   "5O"
+  ],
+  "title": "اللغة العربية — الشعبة الأدبية"
+ },
+ {
+  "src": "CHI-5AS-M.pdf",
+  "asset": "books/PC_5CD_CHI.pdf",
+  "subject": "PC",
+  "key": "5CD",
+  "levels": [
+   "5C",
+   "5D"
+  ],
+  "title": "Chimie 5ème AS"
+ },
+ {
+  "src": "FR-5AS-CD.pdf",
+  "asset": "books/FR_5CD.pdf",
+  "subject": "FR",
+  "key": "5CD",
+  "levels": [
+   "5C",
+   "5D"
+  ],
+  "title": "Français 5ème (C et D)"
+ },
+ {
+  "src": "FR-5AS-LM.pdf",
+  "asset": "books/FR_5AO.pdf",
+  "subject": "FR",
+  "key": "5AO",
+  "levels": [
+   "5A",
+   "5O"
+  ],
+  "title": "Français 5ème (Lettres)"
+ },
+ {
+  "src": "GEO-5AS-LM.pdf",
+  "asset": "books/HG_5A_GEO.pdf",
+  "subject": "HG",
+  "key": "5A",
+  "levels": [
+   "5A"
+  ],
+  "title": "الجغرافيا — آداب عصرية"
+ },
+ {
+  "src": "HIS-5AS-M.pdf",
+  "asset": "books/HG_5ACDO_HIS.pdf",
+  "subject": "HG",
+  "key": "5ACDO",
+  "levels": [
+   "5A",
+   "5C",
+   "5D",
+   "5O"
+  ],
+  "title": "التاريخ"
+ },
+ {
+  "src": "IMR-5AS-M.pdf",
+  "asset": "books/IR_5ACDO.pdf",
+  "subject": "IR",
+  "key": "5ACDO",
+  "levels": [
+   "5A",
+   "5C",
+   "5D",
+   "5O"
+  ],
+  "title": "التربية الإسلامية"
+ },
+ {
+  "src": "IC-5AS-M.pdf",
+  "asset": "books/IC_5ACDO.pdf",
+  "subject": "IC",
+  "key": "5ACDO",
+  "levels": [
+   "5A",
+   "5C",
+   "5D",
+   "5O"
+  ],
+  "title": "التربية المدنية"
+ },
+ {
+  "src": "MA-5AS-M.pdf",
+  "asset": "books/MATS_5C.pdf",
+  "subject": "MATS",
+  "key": "5C",
+  "levels": [
+   "5C"
+  ],
+  "title": "Mathématiques 5ème M"
+ },
+ {
+  "src": "MA-5AS-D.pdf",
+  "asset": "books/MATS_5D.pdf",
+  "subject": "MATS",
+  "key": "5D",
+  "levels": [
+   "5D"
+  ],
+  "title": "Mathématiques 5ème SN"
+ },
+ {
+  "src": "MA-5AS-LM.pdf",
+  "asset": "books/MATS_5A.pdf",
+  "subject": "MATS",
+  "key": "5A",
+  "levels": [
+   "5A"
+  ],
+  "title": "Mathématiques 5ème LM"
+ },
+ {
+  "src": "MA-5AS-LO.pdf",
+  "asset": "books/MATS_5O.pdf",
+  "subject": "MATS",
+  "key": "5O",
+  "levels": [
+   "5O"
+  ],
+  "title": "Mathématiques 5ème LO"
+ },
+ {
+  "src": "PHI-5AS-M.pdf",
+  "asset": "books/PH_5AO.pdf",
+  "subject": "PH",
+  "key": "5AO",
+  "levels": [
+   "5A",
+   "5O"
+  ],
+  "title": "الفلسفة — الشعب الأدبية"
+ },
+ {
+  "src": "PHI-5AS-CD.pdf",
+  "asset": "books/PH_5CD.pdf",
+  "subject": "PH",
+  "key": "5CD",
+  "levels": [
+   "5C",
+   "5D"
+  ],
+  "title": "الفلسفة — الشعب العلمية"
+ },
+ {
+  "src": "PHY-5AS-M.pdf",
+  "asset": "books/PC_5C_PHY.pdf",
+  "subject": "PC",
+  "key": "5C",
+  "levels": [
+   "5C"
+  ],
+  "title": "Physique 5ème M"
+ },
+ {
+  "src": "PHY-5AS-D.pdf",
+  "asset": "books/PC_5D_PHY.pdf",
+  "subject": "PC",
+  "key": "5D",
+  "levels": [
+   "5D"
+  ],
+  "title": "Physique 5ème SN"
+ },
+ {
+  "src": "PHY-5AS-LM.pdf",
+  "asset": "books/PC_5A.pdf",
+  "subject": "PC",
+  "key": "5A",
+  "levels": [
+   "5A"
+  ],
+  "title": "Physique & Chimie 5ème LM"
+ },
+ {
+  "src": "PHY-5AS-LO.pdf",
+  "asset": "books/PC_5O.pdf",
+  "subject": "PC",
+  "key": "5O",
+  "levels": [
+   "5O"
+  ],
+  "title": "الفيزياء — الشعب الأصلية"
+ },
+ {
+  "src": "SN-5AS-M.pdf",
+  "asset": "books/SN_5C.pdf",
+  "subject": "SN",
+  "key": "5C",
+  "levels": [
+   "5C"
+  ],
+  "title": "Sciences de la Vie et de la Terre 5ème M"
+ },
+ {
+  "src": "SN-5AS-D.pdf",
+  "asset": "books/SN_5D.pdf",
+  "subject": "SN",
+  "key": "5D",
+  "levels": [
+   "5D"
+  ],
+  "title": "Sciences Naturelles 5ème SN"
+ },
+ {
+  "src": "SN-5AS-LM.pdf",
+  "asset": "books/SN_5A.pdf",
+  "subject": "SN",
+  "key": "5A",
+  "levels": [
+   "5A"
+  ],
+  "title": "Sciences Naturelles 5ème LM"
+ },
+ {
+  "src": "SN-5AS-LO.pdf",
+  "asset": "books/SN_5O.pdf",
+  "subject": "SN",
+  "key": "5O",
+  "levels": [
+   "5O"
+  ],
+  "title": "Sciences Naturelles 5ème LO"
+ },
+ {
+  "src": "ANG-6AS-M.pdf",
+  "asset": "books/ANG_6ACDO.pdf",
+  "subject": "ANG",
+  "key": "6ACDO",
+  "levels": [
+   "6A",
+   "6C",
+   "6D",
+   "6O"
+  ],
+  "title": "Study English — 6th Year"
+ },
+ {
+  "src": "AR-6AS-M.pdf",
+  "asset": "books/AR_6CD.pdf",
+  "subject": "AR",
+  "key": "6CD",
+  "levels": [
+   "6C",
+   "6D"
+  ],
+  "title": "اللغة العربية — الشعب العلمية"
+ },
+ {
+  "src": "AR-6AS-LM.pdf",
+  "asset": "books/AR_6AO.pdf",
+  "subject": "AR",
+  "key": "6AO",
+  "levels": [
+   "6A",
+   "6O"
+  ],
+  "title": "اللغة العربية — الشعب الأدبية"
+ },
+ {
+  "src": "CHI-6AS-M.pdf",
+  "asset": "books/PC_6CD_CHI.pdf",
+  "subject": "PC",
+  "key": "6CD",
+  "levels": [
+   "6C",
+   "6D"
+  ],
+  "title": "Chimie 6ème C et D"
+ },
+ {
+  "src": "FR-6AS-CD.pdf",
+  "asset": "books/FR_6CD.pdf",
+  "subject": "FR",
+  "key": "6CD",
+  "levels": [
+   "6C",
+   "6D"
+  ],
+  "title": "Français 6ème (C et D)"
+ },
+ {
+  "src": "FR-6AS-LM.pdf",
+  "asset": "books/FR_6AO.pdf",
+  "subject": "FR",
+  "key": "6AO",
+  "levels": [
+   "6A",
+   "6O"
+  ],
+  "title": "Français 6ème (Lettres)"
+ },
+ {
+  "src": "GEO-6AS-CD.pdf",
+  "asset": "books/HG_6A_GEO.pdf",
+  "subject": "HG",
+  "key": "6A",
+  "levels": [
+   "6A"
+  ],
+  "title": "الجغرافيا — آداب عصرية"
+ },
+ {
+  "src": "HIS-6AS-M.pdf",
+  "asset": "books/HG_6ACDO_HIS.pdf",
+  "subject": "HG",
+  "key": "6ACDO",
+  "levels": [
+   "6A",
+   "6C",
+   "6D",
+   "6O"
+  ],
+  "title": "التاريخ"
+ },
+ {
+  "src": "IMR-6AS-M.pdf",
+  "asset": "books/IR_6ACDO.pdf",
+  "subject": "IR",
+  "key": "6ACDO",
+  "levels": [
+   "6A",
+   "6C",
+   "6D",
+   "6O"
+  ],
+  "title": "التربية الإسلامية"
+ },
+ {
+  "src": "IC-6AS-M.pdf",
+  "asset": "books/IC_6ACDO.pdf",
+  "subject": "IC",
+  "key": "6ACDO",
+  "levels": [
+   "6A",
+   "6C",
+   "6D",
+   "6O"
+  ],
+  "title": "التربية المدنية"
+ },
+ {
+  "src": "MA-6AS-C.pdf",
+  "asset": "books/MATS_6C.pdf",
+  "subject": "MATS",
+  "key": "6C",
+  "levels": [
+   "6C"
+  ],
+  "title": "Mathématiques 6ème M"
+ },
+ {
+  "src": "MA-6AS-D.pdf",
+  "asset": "books/MATS_6D.pdf",
+  "subject": "MATS",
+  "key": "6D",
+  "levels": [
+   "6D"
+  ],
+  "title": "Mathématiques 6ème D"
+ },
+ {
+  "src": "MA-6AS-LM.pdf",
+  "asset": "books/MATS_6A.pdf",
+  "subject": "MATS",
+  "key": "6A",
+  "levels": [
+   "6A"
+  ],
+  "title": "Mathématiques 6ème LM"
+ },
+ {
+  "src": "MA-6AS-LO.pdf",
+  "asset": "books/MATS_6O.pdf",
+  "subject": "MATS",
+  "key": "6O",
+  "levels": [
+   "6O"
+  ],
+  "title": "Mathématiques 6ème LO"
+ },
+ {
+  "src": "PHI-6AS-M.pdf",
+  "asset": "books/PH_6A.pdf",
+  "subject": "PH",
+  "key": "6A",
+  "levels": [
+   "6A"
+  ],
+  "title": "الفلسفة — آداب عصرية"
+ },
+ {
+  "src": "Philo_6AS_D_.pdf",
+  "asset": "books/PH_6CD.pdf",
+  "subject": "PH",
+  "key": "6CD",
+  "levels": [
+   "6C",
+   "6D"
+  ],
+  "title": "الفلسفة — الشعب العلمية"
+ },
+ {
+  "src": "PHY-6AS-M.pdf",
+  "asset": "books/PC_6C_PHY.pdf",
+  "subject": "PC",
+  "key": "6C",
+  "levels": [
+   "6C"
+  ],
+  "title": "Physique 6ème M"
+ },
+ {
+  "src": "PHY-6AS-D.pdf",
+  "asset": "books/PC_6D_PHY.pdf",
+  "subject": "PC",
+  "key": "6D",
+  "levels": [
+   "6D"
+  ],
+  "title": "Physique 6ème SN"
+ },
+ {
+  "src": "PHY-6AS-LM.pdf",
+  "asset": "books/PC_6A.pdf",
+  "subject": "PC",
+  "key": "6A",
+  "levels": [
+   "6A"
+  ],
+  "title": "Physique 6ème LM"
+ },
+ {
+  "src": "PHY-6AS-LO.pdf",
+  "asset": "books/PC_6O.pdf",
+  "subject": "PC",
+  "key": "6O",
+  "levels": [
+   "6O"
+  ],
+  "title": "Physique 6ème LO"
+ },
+ {
+  "src": "SN-6AS-M.pdf",
+  "asset": "books/SN_6C.pdf",
+  "subject": "SN",
+  "key": "6C",
+  "levels": [
+   "6C"
+  ],
+  "title": "Sciences Naturelles 6ème M"
+ },
+ {
+  "src": "SN-6AS-D.pdf",
+  "asset": "books/SN_6D.pdf",
+  "subject": "SN",
+  "key": "6D",
+  "levels": [
+   "6D"
+  ],
+  "title": "Sciences Naturelles 6ème SN"
+ },
+ {
+  "src": "SN-6AS-LM.pdf",
+  "asset": "books/SN_6A.pdf",
+  "subject": "SN",
+  "key": "6A",
+  "levels": [
+   "6A"
+  ],
+  "title": "Sciences Naturelles 6ème LM"
+ },
+ {
+  "src": "SN-6AS-LO.pdf",
+  "asset": "books/SN_6O.pdf",
+  "subject": "SN",
+  "key": "6O",
+  "levels": [
+   "6O"
+  ],
+  "title": "Sciences Naturelles 6ème LO"
+ },
+ {
+  "src": "ANG-7AS-M.pdf",
+  "asset": "books/ANG_7ACD.pdf",
+  "subject": "ANG",
+  "key": "7ACD",
+  "levels": [
+   "7A",
+   "7C",
+   "7D"
+  ],
+  "title": "Study English — 7th Year"
+ },
+ {
+  "src": "AR-7AS-CD.pdf",
+  "asset": "books/AR_7CD.pdf",
+  "subject": "AR",
+  "key": "7CD",
+  "levels": [
+   "7C",
+   "7D"
+  ],
+  "title": "اللغة العربية — الشعبة العلمية"
+ },
+ {
+  "src": "AR-7AS-LM.pdf",
+  "asset": "books/AR_7AO.pdf",
+  "subject": "AR",
+  "key": "7AO",
+  "levels": [
+   "7A",
+   "7O"
+  ],
+  "title": "اللغة العربية — الشعبة الأدبية"
+ },
+ {
+  "src": "CHI-7AS-M.pdf",
+  "asset": "books/PC_7CD_CHI.pdf",
+  "subject": "PC",
+  "key": "7CD",
+  "levels": [
+   "7C",
+   "7D"
+  ],
+  "title": "Chimie 7ème"
+ },
+ {
+  "src": "FR-7AS-M.pdf",
+  "asset": "books/FR_7CD.pdf",
+  "subject": "FR",
+  "key": "7CD",
+  "levels": [
+   "7C",
+   "7D"
+  ],
+  "title": "Français 7ème M et SN"
+ },
+ {
+  "src": "FR-7AS-LM.pdf",
+  "asset": "books/FR_7AO.pdf",
+  "subject": "FR",
+  "key": "7AO",
+  "levels": [
+   "7A",
+   "7O"
+  ],
+  "title": "Français 7ème (Lettres)"
+ },
+ {
+  "src": "GEO-7AS-LM.pdf",
+  "asset": "books/HG_7A_GEO.pdf",
+  "subject": "HG",
+  "key": "7A",
+  "levels": [
+   "7A"
+  ],
+  "title": "الجغرافيا — آداب عصرية"
+ },
+ {
+  "src": "HIS-7AS-A.pdf",
+  "asset": "books/HG_7AO_HIS.pdf",
+  "subject": "HG",
+  "key": "7AO",
+  "levels": [
+   "7A",
+   "7O"
+  ],
+  "title": "التاريخ — آداب"
+ },
+ {
+  "src": "L.G-7AS-M.pdf",
+  "asset": "books/LEG_7O.pdf",
+  "subject": "LEG",
+  "key": "7O",
+  "levels": [
+   "7O"
+  ],
+  "title": "الفقه والأصول — آداب أصلية"
+ },
+ {
+  "src": "Coran_and_Hadith-7AS-LM.pdf",
+  "asset": "books/IR_7O.pdf",
+  "subject": "IR",
+  "key": "7O",
+  "levels": [
+   "7O"
+  ],
+  "title": "القرآن والحديث — آداب أصلية"
+ },
+ {
+  "src": "IMR-7AS-M.pdf",
+  "asset": "books/IR_7ACD.pdf",
+  "subject": "IR",
+  "key": "7ACD",
+  "levels": [
+   "7A",
+   "7C",
+   "7D"
+  ],
+  "title": "التربية الإسلامية — الشعبة العامة"
+ },
+ {
+  "src": "MA-7AS-C.pdf",
+  "asset": "books/MATS_7C.pdf",
+  "subject": "MATS",
+  "key": "7C",
+  "levels": [
+   "7C"
+  ],
+  "title": "Mathématiques 7ème C"
+ },
+ {
+  "src": "MA-7AS-D.pdf",
+  "asset": "books/MATS_7D.pdf",
+  "subject": "MATS",
+  "key": "7D",
+  "levels": [
+   "7D"
+  ],
+  "title": "Mathématiques 7ème D"
+ },
+ {
+  "src": "MA-7AS-LM.pdf",
+  "asset": "books/MATS_7A.pdf",
+  "subject": "MATS",
+  "key": "7A",
+  "levels": [
+   "7A"
+  ],
+  "title": "Mathématiques 7ème LM"
+ },
+ {
+  "src": "MA-7AS-LO.pdf",
+  "asset": "books/MATS_7O.pdf",
+  "subject": "MATS",
+  "key": "7O",
+  "levels": [
+   "7O"
+  ],
+  "title": "Mathématiques 7ème LO"
+ },
+ {
+  "src": "PHI-7AS-A.pdf",
+  "asset": "books/PH_7O.pdf",
+  "subject": "PH",
+  "key": "7O",
+  "levels": [
+   "7O"
+  ],
+  "title": "الفلسفة — آداب أصلية"
+ },
+ {
+  "src": "PHI-7AS-M.pdf",
+  "asset": "books/PH_7A.pdf",
+  "subject": "PH",
+  "key": "7A",
+  "levels": [
+   "7A"
+  ],
+  "title": "الفلسفة — آداب عصرية"
+ },
+ {
+  "src": "PHY-7AS-C.pdf",
+  "asset": "books/PC_7C_PHY.pdf",
+  "subject": "PC",
+  "key": "7C",
+  "levels": [
+   "7C"
+  ],
+  "title": "Physique 7ème M"
+ },
+ {
+  "src": "PHY-7AS-D.pdf",
+  "asset": "books/PC_7D_PHY.pdf",
+  "subject": "PC",
+  "key": "7D",
+  "levels": [
+   "7D"
+  ],
+  "title": "Physique 7ème SN"
+ },
+ {
+  "src": "SN-7AS-C.pdf",
+  "asset": "books/SN_7C.pdf",
+  "subject": "SN",
+  "key": "7C",
+  "levels": [
+   "7C"
+  ],
+  "title": "Sciences Naturelles 7ème M"
+ },
+ {
+  "src": "SN-7AS-D.pdf",
+  "asset": "books/SN_7D.pdf",
+  "subject": "SN",
+  "key": "7D",
+  "levels": [
+   "7D"
+  ],
+  "title": "Sciences Naturelles 7ème SN"
+ },
+ {
+  "src": "SN-7AS-LO.pdf",
+  "asset": "books/SN_7O.pdf",
+  "subject": "SN",
+  "key": "7O",
+  "levels": [
+   "7O"
+  ],
+  "title": "Sciences Naturelles 7ème LO"
+ }
+]

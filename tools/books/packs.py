@@ -2,6 +2,7 @@
 """حزم كتب تطبيق الأستاذ: حزمة مستقلة لكل (مادة، مستوى) تُنزَّل عند الطلب من المتجر.
 
 اسم ملف الكتاب: <المادة>_<المستوى>[_<جزء>].pdf  مثل MATS_1AS.pdf أو HG_1AS_GEO.pdf
+في الثانوية يكون المستوى رمز الشعب التي يخدمها الكتاب: MATS_5C.pdf أو AR_5CD.pdf أو IR_5ACDO.pdf (كتاب مشترك = حزمة واحدة).
 فيذهب إلى الحزمة b_<مادة>_<مستوى> (بحروف صغيرة)، والأجزاء (التاريخ/الجغرافيا) في نفس الحزمة.
 
 الاستعمال:
@@ -84,11 +85,25 @@ def scan():
     return out
 
 
+LYCEE_KEY = re.compile(r"^([567])([ACDO]+)$")
+
+
+def levels_of(key):
+    """رمز كتاب الثانوية المشترك يُفكّ إلى شعبه: 5CD → 5C و5D، و5ACDO → كل شعب الخامسة."""
+    m = LYCEE_KEY.match(key)
+    return [m.group(1) + c for c in m.group(2)] if m else [key]
+
+
 def index_data(packs):
-    return {"packs": [
-        {"name": n, "subject": v["subject"], "level": v["level"],
-         "files": [p for p, _ in v["files"]], "bytes": sum(b for _, b in v["files"])}
-        for n, v in sorted(packs.items())]}
+    out = []
+    for n, v in sorted(packs.items()):
+        e = {"name": n, "subject": v["subject"], "level": v["level"],
+             "files": [p for p, _ in v["files"]], "bytes": sum(b for _, b in v["files"])}
+        lv = levels_of(v["level"])
+        if lv != [v["level"]]:
+            e["levels"] = lv
+        out.append(e)
+    return {"packs": out}
 
 
 def limits(packs):

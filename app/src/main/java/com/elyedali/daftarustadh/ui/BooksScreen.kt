@@ -62,19 +62,19 @@ fun BooksScreen(firstTime: Boolean, isFr: Boolean, onDone: () -> Unit, onMenu: (
 
     // ترتيب المواد كما في المنهاج، والمستويات حسب المرحلة
     val subjectOrder = remember { bookSubjectOrder(context, packs) }
-    val levelOrder = remember { packs.map { it.level }.distinct().sortedWith(compareBy({ it.firstOrNull { c -> c.isDigit() } }, { it })) }
+    val levelOrder = remember { packs.flatMap { it.levels }.distinct().sortedWith(compareBy({ it.firstOrNull { c -> c.isDigit() } }, { it })) }
     val names = remember(isFr) { subjectOrder.associateWith { s -> bookSubjectName(context, s, packs.first { it.subject == s }.level, isFr) } }
     val testBuild = states.values.any { it is BookPack.Status.NotInTestBuild }
 
-    val wanted = packs.filter { it.subject in subjects && it.level in levels }
+    val wanted = packs.filter { it.subject in subjects && it.serves(levels) }
     val toDownload = wanted.filter { states[it.name] !is BookPack.Status.Ready }
     val onPhone = packs.filter { it.name in selected || states[it.name] !is BookPack.Status.NotDownloaded && states[it.name] !is BookPack.Status.NotInTestBuild && states[it.name] != null }
-        .sortedWith(compareBy({ levelOrder.indexOf(it.level) }, { subjectOrder.indexOf(it.subject) }))
+        .sortedWith(compareBy({ levelOrder.indexOf(it.levels.first()) }, { subjectOrder.indexOf(it.subject) }))
 
     toRemove?.let { p ->
         AlertDialog(onDismissRequest = { toRemove = null },
             title = { Text(stringResource(R.string.bk_remove_title)) },
-            text = { Text(stringResource(R.string.bk_remove_body, names[p.subject].orEmpty() + " — " + p.level)) },
+            text = { Text(stringResource(R.string.bk_remove_body, names[p.subject].orEmpty() + " — " + p.levelsLabel)) },
             confirmButton = { TextButton(onClick = { BookPack.remove(context, p.name); selected = BookPack.selected(context); toRemove = null }) {
                 Text(stringResource(R.string.bk_remove_yes), color = MaterialTheme.colorScheme.error) } },
             dismissButton = { TextButton(onClick = { toRemove = null }) { Text(stringResource(R.string.cancel)) } })
@@ -135,7 +135,7 @@ fun BooksScreen(firstTime: Boolean, isFr: Boolean, onDone: () -> Unit, onMenu: (
                     item { HorizontalDivider() }
                     item { Text(stringResource(R.string.bk_on_phone), fontWeight = FontWeight.Bold) }
                     items(onPhone, key = { it.name }) { p ->
-                        BookRow(names[p.subject].orEmpty() + " — " + p.level, megaBytes(p.bytes), states[p.name] ?: BookPack.Status.NotDownloaded,
+                        BookRow(names[p.subject].orEmpty() + " — " + p.levelsLabel, megaBytes(p.bytes), states[p.name] ?: BookPack.Status.NotDownloaded,
                             onRetry = { BookPack.download(context, p.name) },
                             onConfirm = { BookPack.confirm(confirmLauncher) },
                             onRemove = { toRemove = p })

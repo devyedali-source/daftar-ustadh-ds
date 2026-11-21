@@ -28,6 +28,50 @@
    "bytes": 1049870
   },
   {
+   "name": "b_ang_5acdo",
+   "subject": "ANG",
+   "level": "5ACDO",
+   "files": [
+    "books/ANG_5ACDO.pdf"
+   ],
+   "bytes": 4403878,
+   "levels": [
+    "5A",
+    "5C",
+    "5D",
+    "5O"
+   ]
+  },
+  {
+   "name": "b_ang_6acdo",
+   "subject": "ANG",
+   "level": "6ACDO",
+   "files": [
+    "books/ANG_6ACDO.pdf"
+   ],
+   "bytes": 5400723,
+   "levels": [
+    "6A",
+    "6C",
+    "6D",
+    "6O"
+   ]
+  },
+  {
+   "name": "b_ang_7acd",
+   "subject": "ANG",
+   "level": "7ACD",
+   "files": [
+    "books/ANG_7ACD.pdf"
+   ],
+   "bytes": 1440289,
+   "levels": [
+    "7A",
+    "7C",
+    "7D"
+   ]
+  },
+  {
    "name": "b_ar_1as",
    "subject": "AR",
    "level": "1AS",
@@ -55,6 +99,84 @@
    "bytes": 1233769
   },
   {
+   "name": "b_ar_5ao",
+   "subject": "AR",
+   "level": "5AO",
+   "files": [
+    "books/AR_5AO.pdf"
+   ],
+   "bytes": 2787804,
+   "levels": [
+    "5A",
+    "5O"
+   ]
+  },
+  {
+   "name": "b_ar_5cd",
+   "subject": "AR",
+   "level": "5CD",
+   "files": [
+    "books/AR_5CD.pdf"
+   ],
+   "bytes": 1561709,
+   "levels": [
+    "5C",
+    "5D"
+   ]
+  },
+  {
+   "name": "b_ar_6ao",
+   "subject": "AR",
+   "level": "6AO",
+   "files": [
+    "books/AR_6AO.pdf"
+   ],
+   "bytes": 1130858,
+   "levels": [
+    "6A",
+    "6O"
+   ]
+  },
+  {
+   "name": "b_ar_6cd",
+   "subject": "AR",
+   "level": "6CD",
+   "files": [
+    "books/AR_6CD.pdf"
+   ],
+   "bytes": 692537,
+   "levels": [
+    "6C",
+    "6D"
+   ]
+  },
+  {
+   "name": "b_ar_7ao",
+   "subject": "AR",
+   "level": "7AO",
+   "files": [
+    "books/AR_7AO.pdf"
+   ],
+   "bytes": 2637108,
+   "levels": [
+    "7A",
+    "7O"
+   ]
+  },
+  {
+   "name": "b_ar_7cd",
+   "subject": "AR",
+   "level": "7CD",
+   "files": [
+    "books/AR_7CD.pdf"
+   ],
+   "bytes": 1562760,
+   "levels": [
+    "7C",
+    "7D"
+   ]
+  },
+  {
    "name": "b_fr_1as",
    "subject": "FR",
    "level": "1AS",
@@ -80,6 +202,84 @@
     "books/FR_3AS.pdf"
    ],
    "bytes": 2386437
+  },
+  {
+   "name": "b_fr_5ao",
+   "subject": "FR",
+   "level": "5AO",
+   "files": [
+    "books/FR_5AO.pdf"
+   ],
+   "bytes": 2477567,
+   "levels": [
+    "5A",
+    "5O"
+   ]
+  },
+  {
+   "name": "b_fr_5cd",
+   "subject": "FR",
+   "level": "5CD",
+   "files": [
+    "books/FR_5CD.pdf"
+   ],
+   "bytes": 1285137,
+   "levels": [
+    "5C",
+    "5D"
+   ]
+  },
+  {
+   "name": "b_fr_6ao",
+   "subject": "FR",
+   "level": "6AO",
+   "files": [
+    "books/FR_6AO.pdf"
+   ],
+   "bytes": 2002974,
+   "levels": [
+    "6A",
+    "6O"
+   ]
+  },
+  {
+   "name": "b_fr_6cd",
+   "subject": "FR",
+   "level": "6CD",
+   "files": [
+    "books/FR_6CD.pdf"
+   ],
+   "bytes": 1466255,
+   "levels": [
+    "6C",
+    "6D"
+   ]
+  },
+  {
+   "name": "b_fr_7ao",
+   "subject": "FR",
+   "level": "7AO",
+   "files": [
+    "books/FR_7AO.pdf"
+   ],
+   "bytes": 12839420,
+   "levels": [
+    "7A",
+    "7O"
+   ]
+  },
+  {
+   "name": "b_fr_7cd",
+   "subject": "FR",
+   "level": "7CD",
+   "files": [
+    "books/FR_7CD.pdf"
+   ],
+   "bytes": 2817170,
+   "levels": [
+    "7C",
+    "7D"
+   ]
   },
   {
    "name": "b_hg_1as",
@@ -112,6 +312,76 @@
    "bytes": 6991249
   },
   {
+   "name": "b_hg_5a",
+   "subject": "HG",
+   "level": "5A",
+   "files": [
+    "books/HG_5A_GEO.pdf"
+   ],
+   "bytes": 3217391
+  },
+  {
+   "name": "b_hg_5acdo",
+   "subject": "HG",
+   "level": "5ACDO",
+   "files": [
+    "books/HG_5ACDO_HIS.pdf"
+   ],
+   "bytes": 9826399,
+   "levels": [
+    "5A",
+    "5C",
+    "5D",
+    "5O"
+   ]
+  },
+  {
+   "name": "b_hg_6a",
+   "subject": "HG",
+   "level": "6A",
+   "files": [
+    "books/HG_6A_GEO.pdf"
+   ],
+   "bytes": 3072802
+  },
+  {
+   "name": "b_hg_6acdo",
+   "subject": "HG",
+   "level": "6ACDO",
+   "files": [
+    "books/HG_6ACDO_HIS.pdf"
+   ],
+   "bytes": 15845313,
+   "levels": [
+    "6A",
+    "6C",
+    "6D",
+    "6O"
+   ]
+  },
+  {
+   "name": "b_hg_7a",
+   "subject": "HG",
+   "level": "7A",
+   "files": [
+    "books/HG_7A_GEO.pdf"
+   ],
+   "bytes": 26994755
+  },
+  {
+   "name": "b_hg_7ao",
+   "subject": "HG",
+   "level": "7AO",
+   "files": [
+    "books/HG_7AO_HIS.pdf"
+   ],
+   "bytes": 5189340,
+   "levels": [
+    "7A",
+    "7O"
+   ]
+  },
+  {
    "name": "b_ic_1as",
    "subject": "IC",
    "level": "1AS",
@@ -137,6 +407,36 @@
     "books/IC_3AS.pdf"
    ],
    "bytes": 9206633
+  },
+  {
+   "name": "b_ic_5acdo",
+   "subject": "IC",
+   "level": "5ACDO",
+   "files": [
+    "books/IC_5ACDO.pdf"
+   ],
+   "bytes": 2082833,
+   "levels": [
+    "5A",
+    "5C",
+    "5D",
+    "5O"
+   ]
+  },
+  {
+   "name": "b_ic_6acdo",
+   "subject": "IC",
+   "level": "6ACDO",
+   "files": [
+    "books/IC_6ACDO.pdf"
+   ],
+   "bytes": 3101436,
+   "levels": [
+    "6A",
+    "6C",
+    "6D",
+    "6O"
+   ]
   },
   {
    "name": "b_ir_1as",
@@ -166,6 +466,68 @@
    "bytes": 4147686
   },
   {
+   "name": "b_ir_5acdo",
+   "subject": "IR",
+   "level": "5ACDO",
+   "files": [
+    "books/IR_5ACDO.pdf"
+   ],
+   "bytes": 2988691,
+   "levels": [
+    "5A",
+    "5C",
+    "5D",
+    "5O"
+   ]
+  },
+  {
+   "name": "b_ir_6acdo",
+   "subject": "IR",
+   "level": "6ACDO",
+   "files": [
+    "books/IR_6ACDO.pdf"
+   ],
+   "bytes": 3034605,
+   "levels": [
+    "6A",
+    "6C",
+    "6D",
+    "6O"
+   ]
+  },
+  {
+   "name": "b_ir_7acd",
+   "subject": "IR",
+   "level": "7ACD",
+   "files": [
+    "books/IR_7ACD.pdf"
+   ],
+   "bytes": 5688721,
+   "levels": [
+    "7A",
+    "7C",
+    "7D"
+   ]
+  },
+  {
+   "name": "b_ir_7o",
+   "subject": "IR",
+   "level": "7O",
+   "files": [
+    "books/IR_7O.pdf"
+   ],
+   "bytes": 5207935
+  },
+  {
+   "name": "b_leg_7o",
+   "subject": "LEG",
+   "level": "7O",
+   "files": [
+    "books/LEG_7O.pdf"
+   ],
+   "bytes": 3278764
+  },
+  {
    "name": "b_mats_1as",
    "subject": "MATS",
    "level": "1AS",
@@ -193,6 +555,114 @@
    "bytes": 9495662
   },
   {
+   "name": "b_mats_5a",
+   "subject": "MATS",
+   "level": "5A",
+   "files": [
+    "books/MATS_5A.pdf"
+   ],
+   "bytes": 4175174
+  },
+  {
+   "name": "b_mats_5c",
+   "subject": "MATS",
+   "level": "5C",
+   "files": [
+    "books/MATS_5C.pdf"
+   ],
+   "bytes": 10677274
+  },
+  {
+   "name": "b_mats_5d",
+   "subject": "MATS",
+   "level": "5D",
+   "files": [
+    "books/MATS_5D.pdf"
+   ],
+   "bytes": 8150434
+  },
+  {
+   "name": "b_mats_5o",
+   "subject": "MATS",
+   "level": "5O",
+   "files": [
+    "books/MATS_5O.pdf"
+   ],
+   "bytes": 6448396
+  },
+  {
+   "name": "b_mats_6a",
+   "subject": "MATS",
+   "level": "6A",
+   "files": [
+    "books/MATS_6A.pdf"
+   ],
+   "bytes": 2949931
+  },
+  {
+   "name": "b_mats_6c",
+   "subject": "MATS",
+   "level": "6C",
+   "files": [
+    "books/MATS_6C.pdf"
+   ],
+   "bytes": 20890870
+  },
+  {
+   "name": "b_mats_6d",
+   "subject": "MATS",
+   "level": "6D",
+   "files": [
+    "books/MATS_6D.pdf"
+   ],
+   "bytes": 10030784
+  },
+  {
+   "name": "b_mats_6o",
+   "subject": "MATS",
+   "level": "6O",
+   "files": [
+    "books/MATS_6O.pdf"
+   ],
+   "bytes": 1954356
+  },
+  {
+   "name": "b_mats_7a",
+   "subject": "MATS",
+   "level": "7A",
+   "files": [
+    "books/MATS_7A.pdf"
+   ],
+   "bytes": 3510781
+  },
+  {
+   "name": "b_mats_7c",
+   "subject": "MATS",
+   "level": "7C",
+   "files": [
+    "books/MATS_7C.pdf"
+   ],
+   "bytes": 6940372
+  },
+  {
+   "name": "b_mats_7d",
+   "subject": "MATS",
+   "level": "7D",
+   "files": [
+    "books/MATS_7D.pdf"
+   ],
+   "bytes": 3096986
+  },
+  {
+   "name": "b_mats_7o",
+   "subject": "MATS",
+   "level": "7O",
+   "files": [
+    "books/MATS_7O.pdf"
+   ],
+   "bytes": 5045228
+  },
+  {
    "name": "b_pc_2as",
    "subject": "PC",
    "level": "2AS",
@@ -209,6 +679,201 @@
     "books/PC_3AS.pdf"
    ],
    "bytes": 5311017
+  },
+  {
+   "name": "b_pc_5a",
+   "subject": "PC",
+   "level": "5A",
+   "files": [
+    "books/PC_5A.pdf"
+   ],
+   "bytes": 3249041
+  },
+  {
+   "name": "b_pc_5c",
+   "subject": "PC",
+   "level": "5C",
+   "files": [
+    "books/PC_5C_PHY.pdf"
+   ],
+   "bytes": 11632655
+  },
+  {
+   "name": "b_pc_5cd",
+   "subject": "PC",
+   "level": "5CD",
+   "files": [
+    "books/PC_5CD_CHI.pdf"
+   ],
+   "bytes": 3462127,
+   "levels": [
+    "5C",
+    "5D"
+   ]
+  },
+  {
+   "name": "b_pc_5d",
+   "subject": "PC",
+   "level": "5D",
+   "files": [
+    "books/PC_5D_PHY.pdf"
+   ],
+   "bytes": 11163772
+  },
+  {
+   "name": "b_pc_5o",
+   "subject": "PC",
+   "level": "5O",
+   "files": [
+    "books/PC_5O.pdf"
+   ],
+   "bytes": 2002852
+  },
+  {
+   "name": "b_pc_6a",
+   "subject": "PC",
+   "level": "6A",
+   "files": [
+    "books/PC_6A.pdf"
+   ],
+   "bytes": 2929504
+  },
+  {
+   "name": "b_pc_6c",
+   "subject": "PC",
+   "level": "6C",
+   "files": [
+    "books/PC_6C_PHY.pdf"
+   ],
+   "bytes": 4390566
+  },
+  {
+   "name": "b_pc_6cd",
+   "subject": "PC",
+   "level": "6CD",
+   "files": [
+    "books/PC_6CD_CHI.pdf"
+   ],
+   "bytes": 19650669,
+   "levels": [
+    "6C",
+    "6D"
+   ]
+  },
+  {
+   "name": "b_pc_6d",
+   "subject": "PC",
+   "level": "6D",
+   "files": [
+    "books/PC_6D_PHY.pdf"
+   ],
+   "bytes": 5566655
+  },
+  {
+   "name": "b_pc_6o",
+   "subject": "PC",
+   "level": "6O",
+   "files": [
+    "books/PC_6O.pdf"
+   ],
+   "bytes": 1413408
+  },
+  {
+   "name": "b_pc_7c",
+   "subject": "PC",
+   "level": "7C",
+   "files": [
+    "books/PC_7C_PHY.pdf"
+   ],
+   "bytes": 57412021
+  },
+  {
+   "name": "b_pc_7cd",
+   "subject": "PC",
+   "level": "7CD",
+   "files": [
+    "books/PC_7CD_CHI.pdf"
+   ],
+   "bytes": 8183734,
+   "levels": [
+    "7C",
+    "7D"
+   ]
+  },
+  {
+   "name": "b_pc_7d",
+   "subject": "PC",
+   "level": "7D",
+   "files": [
+    "books/PC_7D_PHY.pdf"
+   ],
+   "bytes": 14120069
+  },
+  {
+   "name": "b_ph_5ao",
+   "subject": "PH",
+   "level": "5AO",
+   "files": [
+    "books/PH_5AO.pdf"
+   ],
+   "bytes": 1901298,
+   "levels": [
+    "5A",
+    "5O"
+   ]
+  },
+  {
+   "name": "b_ph_5cd",
+   "subject": "PH",
+   "level": "5CD",
+   "files": [
+    "books/PH_5CD.pdf"
+   ],
+   "bytes": 1295741,
+   "levels": [
+    "5C",
+    "5D"
+   ]
+  },
+  {
+   "name": "b_ph_6a",
+   "subject": "PH",
+   "level": "6A",
+   "files": [
+    "books/PH_6A.pdf"
+   ],
+   "bytes": 1176309
+  },
+  {
+   "name": "b_ph_6cd",
+   "subject": "PH",
+   "level": "6CD",
+   "files": [
+    "books/PH_6CD.pdf"
+   ],
+   "bytes": 1151966,
+   "levels": [
+    "6C",
+    "6D"
+   ]
+  },
+  {
+   "name": "b_ph_7a",
+   "subject": "PH",
+   "level": "7A",
+   "files": [
+    "books/PH_7A.pdf"
+   ],
+   "bytes": 2064647
+  },
+  {
+   "name": "b_ph_7o",
+   "subject": "PH",
+   "level": "7O",
+   "files": [
+    "books/PH_7O.pdf"
+   ],
+   "bytes": 2844401
   },
   {
    "name": "b_sn_1as",
@@ -236,6 +901,105 @@
     "books/SN_3AS.pdf"
    ],
    "bytes": 6752352
+  },
+  {
+   "name": "b_sn_5a",
+   "subject": "SN",
+   "level": "5A",
+   "files": [
+    "books/SN_5A.pdf"
+   ],
+   "bytes": 2934787
+  },
+  {
+   "name": "b_sn_5c",
+   "subject": "SN",
+   "level": "5C",
+   "files": [
+    "books/SN_5C.pdf"
+   ],
+   "bytes": 9548654
+  },
+  {
+   "name": "b_sn_5d",
+   "subject": "SN",
+   "level": "5D",
+   "files": [
+    "books/SN_5D.pdf"
+   ],
+   "bytes": 11406110
+  },
+  {
+   "name": "b_sn_5o",
+   "subject": "SN",
+   "level": "5O",
+   "files": [
+    "books/SN_5O.pdf"
+   ],
+   "bytes": 9321627
+  },
+  {
+   "name": "b_sn_6a",
+   "subject": "SN",
+   "level": "6A",
+   "files": [
+    "books/SN_6A.pdf"
+   ],
+   "bytes": 2580665
+  },
+  {
+   "name": "b_sn_6c",
+   "subject": "SN",
+   "level": "6C",
+   "files": [
+    "books/SN_6C.pdf"
+   ],
+   "bytes": 9617433
+  },
+  {
+   "name": "b_sn_6d",
+   "subject": "SN",
+   "level": "6D",
+   "files": [
+    "books/SN_6D.pdf"
+   ],
+   "bytes": 13583657
+  },
+  {
+   "name": "b_sn_6o",
+   "subject": "SN",
+   "level": "6O",
+   "files": [
+    "books/SN_6O.pdf"
+   ],
+   "bytes": 3292725
+  },
+  {
+   "name": "b_sn_7c",
+   "subject": "SN",
+   "level": "7C",
+   "files": [
+    "books/SN_7C.pdf"
+   ],
+   "bytes": 11457871
+  },
+  {
+   "name": "b_sn_7d",
+   "subject": "SN",
+   "level": "7D",
+   "files": [
+    "books/SN_7D.pdf"
+   ],
+   "bytes": 95328890
+  },
+  {
+   "name": "b_sn_7o",
+   "subject": "SN",
+   "level": "7O",
+   "files": [
+    "books/SN_7O.pdf"
+   ],
+   "bytes": 3614312
   },
   {
    "name": "b_ti_2as",
