@@ -23,7 +23,11 @@ object AnnualPlans {
         return plans.keys().asSequence().filter { plans.getJSONObject(it).has(levelCode) }.toSet()
     }
 
-    fun source(context: Context, subject: String): String = root(context)?.optJSONObject("source")?.optString(subject).orEmpty()
+    /** مصدر التخطيط: للمستوى إن وُجد (الثانوية: «MATS_5C»)، وإلا للمادة (الإعدادية). */
+    fun source(context: Context, subject: String, level: String = ""): String {
+        val src = root(context)?.optJSONObject("source") ?: return ""
+        return src.optString("${subject}_$level").ifBlank { src.optString(subject) }
+    }
 
     /**
      * أسطر تخطيط المادة للمستوى. أسبوع العطلة يأتي بعد أسبوع اختبار الفصل (الأول والثاني):

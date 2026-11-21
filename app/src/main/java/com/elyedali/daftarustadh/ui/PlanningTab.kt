@@ -188,7 +188,7 @@ fun PlanningTab(
         }
         item {
             Text(available.first { it.first == subject }.second + " — " + levelCode, fontWeight = FontWeight.Bold, fontSize = 15.sp)
-            val src = AnnualPlans.source(context, subject)
+            val src = AnnualPlans.source(context, subject, levelCode)
             if (src.isNotBlank()) Text("📄 " + src, fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
             if (lessonSet != null) Text("📖 " + stringResource(R.string.plan_lessons_hint), fontSize = 12.sp,
                 color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold)
