@@ -1,0 +1,348 @@
+{
+ "subject": "SN",
+ "book": "books/SN_5A.pdf",
+ "bookTitle": "Sciences Naturelles 5ème LM",
+ "lessons": [
+  {
+   "title": "Unité I : Les échanges cellulaires — échanges d’eau (osmose)",
+   "match": [
+    "Les échanges cellulaires — échanges d’eau (osmose)"
+   ],
+   "pages": [
+    9,
+    16
+   ],
+   "objectives": [
+    "Mettre en évidence les échanges d’eau chez la cellule végétale et animale (à l’œil nu et au microscope).",
+    "Définir turgescence, isotonie, plasmolyse, hémolyse.",
+    "Relier le sens des échanges d’eau aux concentrations des milieux."
+   ],
+   "intro": "Pourquoi la salade se ramollit-elle quand on la sale trop tôt ?",
+   "summary": "Des cylindres de pomme de terre placés dans l’eau distillée ou du saccharose à 10 % s’allongent, gardent leur longueur à 20 % et raccourcissent à 30 et 40 %. Au microscope, l’épiderme d’oignon violet montre : dans un milieu moins concentré que la vacuole (hypotonique), l’eau entre, la vacuole gonfle, la cellule est turgescente ; dans un milieu de même concentration (isotonique), pas d’échange net ; dans un milieu plus concentré (hypertonique), l’eau sort, la vacuole se fragmente, le cytoplasme se décolle de la paroi : la cellule est plasmolysée. Chez les globules rouges : dans l’eau distillée ils éclatent (hémolyse), dans NaCl à 8 g/L ils restent normaux (isotonie), à 100 g/L ils se ratatinent (crénelés). La plasmolyse est réversible (déplasmolyse). L’eau se déplace du milieu le moins concentré vers le plus concentré : c’est l’osmose.",
+   "points": [
+    "Osmose : l’eau va du milieu le moins concentré vers le plus concentré.",
+    "Hypotonique → turgescence (végétal) ou hémolyse (globule rouge).",
+    "Isotonique → aucun échange net.",
+    "Hypertonique → plasmolyse / hématies crénelées.",
+    "La plasmolyse est réversible (déplasmolyse)."
+   ],
+   "application": {
+    "q": "Un globule rouge placé dans l’eau distillée : que se passe-t-il ? Pourquoi ?",
+    "a": "Il éclate (hémolyse) : l’eau entre car le milieu est moins concentré que le cytoplasme."
+   },
+   "applications": [
+    {
+     "q": "Que devient une cellule plasmolysée replacée dans l’eau distillée ?",
+     "a": "Elle se déplasmolyse et redevient turgescente."
+    },
+    {
+     "q": "Quelle concentration de saccharose est isotonique pour la pomme de terre ?",
+     "a": "Environ 20 %."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Cellule végétale à l’œil nu (pomme de terre)",
+     "lines": [],
+     "table": [
+      [
+       "Milieu",
+       "Longueur du cylindre"
+      ],
+      [
+       "Eau distillée",
+       "augmente"
+      ],
+      [
+       "Saccharose 10 %",
+       "augmente légèrement"
+      ],
+      [
+       "Saccharose 20 %",
+       "constante"
+      ],
+      [
+       "Saccharose 30 % et 40 %",
+       "diminue"
+      ]
+     ]
+    },
+    {
+     "h": "II. Cellule végétale au microscope (oignon violet)",
+     "lines": [
+      "NaCl 2 g/L : cellule turgescente (vacuole gonflée).",
+      "NaCl 9 g/L : isotonie.",
+      "NaCl 20 g/L : plasmolyse (vacuole fragmentée, cytoplasme décollé)."
+     ]
+    },
+    {
+     "h": "III. Cellule animale (globules rouges de mouton)",
+     "lines": [
+      "Eau distillée : hémolyse (solution rose transparente d’hémoglobine).",
+      "NaCl 8 g/L : isotonie.",
+      "NaCl 100 g/L : hématies crénelées (perte d’eau)."
+     ]
+    },
+    {
+     "h": "Conclusion",
+     "lines": [
+      "La cellule vivante échange de l’eau avec son milieu par osmose ; le sens dépend des concentrations."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Substances dissoutes, transport membranaire, endocytose",
+   "match": [
+    "Substances dissoutes, transport membranaire, endocytose"
+   ],
+   "pages": [
+    17,
+    28
+   ],
+   "objectives": [
+    "Mettre en évidence les échanges de substances dissoutes (diffusion).",
+    "Interpréter avec l’osmomètre de Dutrochet et calculer une pression osmotique.",
+    "Distinguer diffusion libre, facilitée, transport actif ; perméabilité ; endocytose et exocytose."
+   ],
+   "intro": "Pourquoi une cellule plasmolysée dans l’acétate d’ammonium redevient-elle turgescente ?",
+   "summary": "Dans l’acétate d’ammonium à 4 %, les cellules de chou rouge se plasmolysent puis redeviennent turgescentes et leurs vacuoles virent au bleu : la substance dissoute a pénétré dans la cellule (diffusion du milieu le plus concentré vers le moins concentré). L’osmomètre de Dutrochet montre que l’eau traverse une membrane semi-perméable vers la solution la plus concentrée ; la pression osmotique se calcule par P = i·C·R·T (C en mol/L, R = 0,082 L·atm/mol/K, T en kelvins, i = nombre de particules libérées). La diffusion libre suit le gradient de concentration sans dépense d’énergie ; la diffusion facilitée utilise des protéines transporteuses ; le transport actif se fait contre le gradient et consomme de l’énergie (pompe Na⁺/K⁺). La membrane est sélective : sa perméabilité varie selon les substances. Les grosses particules entrent par endocytose (phagocytose, pinocytose) et sortent par exocytose.",
+   "points": [
+    "Diffusion : du plus concentré vers le moins concentré.",
+    "Pression osmotique : P = i·C·R·T.",
+    "Diffusion libre et facilitée : passives, sans énergie.",
+    "Transport actif : contre le gradient, avec énergie.",
+    "Endocytose (entrée) / exocytose (sortie) de grosses particules."
+   ],
+   "application": {
+    "q": "Pression osmotique d’une solution de glucose à 0,3 mol/L à 27 °C (R = 0,082) ?",
+    "a": "P = 1 × 0,3 × 0,082 × 300 ≈ 7,38 atm (le glucose ne se dissocie pas : i = 1)."
+   },
+   "applications": [
+    {
+     "q": "Pression osmotique de NaCl à 0,15 mol/L à 27 °C ?",
+     "a": "NaCl → Na⁺ + Cl⁻ (i = 2) : P = 2 × 0,15 × 0,082 × 300 ≈ 7,38 atm."
+    },
+    {
+     "q": "Quel mode de transport consomme de l’énergie ?",
+     "a": "Le transport actif."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Échanges de substances dissoutes",
+     "lines": [
+      "Chou rouge + acétate d’ammonium 4 % : plasmolyse puis turgescence, vacuoles rouges → bleues.",
+      "L’acétate d’ammonium est entré dans la vacuole : diffusion."
+     ]
+    },
+    {
+     "h": "II. Osmomètre de Dutrochet",
+     "lines": [
+      "Membrane semi-perméable : l’eau passe vers la solution la plus concentrée ; le niveau monte jusqu’à l’équilibre.",
+      "Pression osmotique : P = i·C·R·T."
+     ]
+    },
+    {
+     "h": "III. Modes de transport",
+     "lines": [],
+     "table": [
+      [
+       "Mode",
+       "Sens",
+       "Énergie"
+      ],
+      [
+       "Diffusion libre",
+       "selon le gradient",
+       "non"
+      ],
+      [
+       "Diffusion facilitée",
+       "selon le gradient (transporteurs)",
+       "non"
+      ],
+      [
+       "Transport actif",
+       "contre le gradient",
+       "oui (ATP)"
+      ]
+     ]
+    },
+    {
+     "h": "IV. Perméabilité",
+     "lines": [
+      "La membrane est semi-perméable et sélective : elle laisse passer certaines substances et pas d’autres."
+     ]
+    },
+    {
+     "h": "V. Endocytose et exocytose",
+     "lines": [
+      "Endocytose : la membrane entoure une particule et l’amène dans la cellule (phagocytose, pinocytose).",
+      "Exocytose : des vésicules fusionnent avec la membrane et libèrent leur contenu à l’extérieur."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : L’alimentation",
+   "match": [
+    "L’alimentation"
+   ],
+   "pages": [
+    29,
+    40
+   ],
+   "objectives": [
+    "Mettre en évidence les constituants organiques et minéraux du lait.",
+    "Classer les aliments (simples, composés) et connaître leurs rôles.",
+    "Définir la ration alimentaire, l’alimentation équilibrée et le métabolisme de base."
+   ],
+   "intro": "Le lait suffit-il à nourrir un nourrisson ? Pourquoi ?",
+   "summary": "Le lait contient des substances organiques (glucides, protides, lipides) et minérales (eau, sels minéraux) ; le petit-lait contient beaucoup d’eau, des sels minéraux (calcium, chlorures, potassium, phosphates) et du lactose ; sa légère coloration est due à la vitamine B2. Eau, sels minéraux, glucides, lipides, protides et vitamines sont des aliments simples ; le lait, qui en contient plusieurs, est un aliment composé. Rôles : énergétiques (glucides, lipides), bâtisseurs ou plastiques (protides, eau, sels minéraux), protecteurs ou fonctionnels (vitamines, oligoéléments). La ration alimentaire est la quantité minimale et équilibrée d’aliments à consommer chaque jour ; elle varie avec l’âge, la grossesse, l’activité. Le métabolisme de base d’un adulte de 70 kg au repos est d’environ 6 700 kJ (1 600 kcal) par jour.",
+   "points": [
+    "Lait : glucides, lipides, protides, eau, sels minéraux, vitamines.",
+    "Aliments simples / aliment composé.",
+    "Énergétiques : glucides, lipides ; bâtisseurs : protides, eau, sels ; protecteurs : vitamines.",
+    "Ration alimentaire : quantité minimale et équilibrée par jour.",
+    "Métabolisme de base ≈ 6 700 kJ/jour (adulte de 70 kg)."
+   ],
+   "application": {
+    "q": "Pourquoi dit-on que le lait est un aliment composé ?",
+    "a": "Parce qu’il contient plusieurs aliments simples (eau, sels minéraux, glucides, lipides, protides, vitamines)."
+   },
+   "applications": [
+    {
+     "q": "Citer deux aliments énergétiques.",
+     "a": "Les glucides et les lipides."
+    },
+    {
+     "q": "Qu’est-ce que le métabolisme de base ?",
+     "a": "La dépense énergétique minimale nécessaire aux fonctions vitales au repos complet."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Étude d’un aliment : le lait",
+     "lines": [
+      "Matières organiques : caséine (protide), matière grasse (lipides), lactose (glucide).",
+      "Matières minérales : eau, sels de calcium, chlorures, phosphates ; vitamine B2 (couleur du petit-lait)."
+     ]
+    },
+    {
+     "h": "II. Types et rôles des aliments",
+     "lines": [],
+     "table": [
+      [
+       "Rôle",
+       "Aliments simples"
+      ],
+      [
+       "Énergétique",
+       "glucides, lipides"
+      ],
+      [
+       "Bâtisseur (plastique)",
+       "protides, eau, sels minéraux"
+      ],
+      [
+       "Protecteur (fonctionnel)",
+       "vitamines, oligoéléments"
+      ]
+     ]
+    },
+    {
+     "h": "III. Alimentation équilibrée",
+     "lines": [
+      "Couvrir sans excès ni défaut les dépenses de l’organisme ; aliments variés.",
+      "Ration d’entretien, ration de croissance ; selon âge, grossesse, activité, habitudes.",
+      "Métabolisme de base : dépense minimale au repos, à jeun, à 20 °C ≈ 6 700 kJ (1 600 kcal)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : La digestion chez l’homme et l’hygiène alimentaire",
+   "match": [
+    "La digestion chez l’homme et l’hygiène alimentaire"
+   ],
+   "pages": [
+    41,
+    59
+   ],
+   "objectives": [
+    "Définir la digestion (mécanique et chimique) et les enzymes.",
+    "Décrire les étapes de la digestion (bouche, estomac, intestin grêle).",
+    "Expliquer l’absorption intestinale et l’hygiène de l’appareil digestif."
+   ],
+   "intro": "Que devient le pain que nous mangeons ?",
+   "summary": "Dans le tube digestif, les aliments subissent une fragmentation mécanique (humidification, broyage, brassage) et des transformations chimiques par les enzymes des sucs digestifs, qui hydrolysent les grosses molécules en petites. Les enzymes sont des protéines qui catalysent spécifiquement une réaction ; elles exigent un substrat donné, une température et un pH convenables. La digestion commence dans la bouche (mastication ; l’amylase salivaire hydrolyse l’amidon cuit en maltose), se poursuit dans l’estomac (brassage, suc gastrique) et s’achève dans l’intestin grêle, avec la formation de nutriments : glucose, acides aminés, acides gras et glycérol, eau, sels minéraux. Les nutriments traversent la paroi de l’intestin grêle (villosités) : c’est l’absorption ; ils passent dans le sang ou la lymphe. Une bonne hygiène (mastication, régularité des repas, propreté) protège l’appareil digestif.",
+   "points": [
+    "Digestion mécanique + chimique (enzymes).",
+    "Enzyme : spécifique, sensible à la température et au pH.",
+    "Bouche : amylase salivaire : amidon → maltose.",
+    "Intestin grêle : nutriments (glucose, acides aminés, acides gras).",
+    "Absorption au niveau des villosités intestinales."
+   ],
+   "application": {
+    "q": "Qu’obtient-on en mettant de l’empois d’amidon avec de la salive à 37 °C ?",
+    "a": "L’amidon est hydrolysé en maltose (test à l’eau iodée négatif, liqueur de Fehling positive)."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi l’amylase n’agit-elle plus à 0 °C ni à 100 °C ?",
+     "a": "À 0 °C elle est inactive ; à 100 °C elle est détruite (dénaturée)."
+    },
+    {
+     "q": "Où se fait l’absorption des nutriments ?",
+     "a": "Au niveau des villosités de l’intestin grêle."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Notion d’enzyme",
+     "lines": [
+      "Protéine qui catalyse une réaction précise (spécificité).",
+      "Conditions : substrat, température optimale (≈ 37 °C), pH convenable."
+     ]
+    },
+    {
+     "h": "II. Étapes de la digestion",
+     "lines": [],
+     "table": [
+      [
+       "Organe",
+       "Action"
+      ],
+      [
+       "Bouche",
+       "mastication ; amylase salivaire : amidon → maltose"
+      ],
+      [
+       "Estomac",
+       "brassage ; suc gastrique (début de la digestion des protides)"
+      ],
+      [
+       "Intestin grêle",
+       "sucs pancréatique et intestinal, bile : nutriments"
+      ]
+     ]
+    },
+    {
+     "h": "III. Devenir des nutriments",
+     "lines": [
+      "Absorption à travers la paroi intestinale (villosités) vers le sang et la lymphe.",
+      "Nutriments : glucose, acides aminés, acides gras, glycérol, eau, sels minéraux, vitamines."
+     ]
+    },
+    {
+     "h": "IV. Hygiène de l’appareil digestif",
+     "lines": [
+      "Bien mastiquer, manger à heures régulières, éviter les excès, hygiène des mains et des aliments."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "5A"
+}

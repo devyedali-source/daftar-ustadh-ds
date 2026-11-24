@@ -45,7 +45,11 @@
   "PC_5C": "Progression établie d’après le manuel « Chimie 5ème AS » ; « Physique 5ème M » (IPN), dans l’ordre des chapitres",
   "PC_5D": "Progression établie d’après le manuel « Chimie 5ème AS » ; « Physique 5ème SN » (IPN), dans l’ordre des chapitres",
   "PC_5A": "Progression établie d’après le manuel « Physique & Chimie 5ème LM » (IPN), dans l’ordre des chapitres",
-  "PC_5O": "توزيع دروس الكتاب المدرسي « الفيزياء — الشعب الأصلية » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب"
+  "PC_5O": "توزيع دروس الكتاب المدرسي « الفيزياء — الشعب الأصلية » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
+  "SN_5A": "Progression établie d’après le manuel « Sciences Naturelles 5ème LM » (IPN), dans l’ordre des chapitres",
+  "SN_5C": "Progression établie d’après le manuel « Sciences de la Vie et de la Terre 5ème M » (IPN), dans l’ordre des chapitres",
+  "SN_5D": "Progression établie d’après le manuel « Sciences Naturelles 5ème SN » (IPN), dans l’ordre des chapitres",
+  "SN_5O": "توزيع دروس الكتاب المدرسي « Sciences Naturelles 5ème LO » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب"
  },
  "plans": {
   "AR": {
@@ -18593,6 +18597,1338 @@
      "k": "final",
      "i": [
       "Validation des acquis ou certification"
+     ]
+    }
+   ],
+   "5A": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — échanges d’eau (osmose)"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — échanges d’eau (osmose)"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — échanges d’eau (osmose)"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — échanges d’eau (osmose)"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — échanges d’eau (osmose)"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, transport membranaire, endocytose"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, transport membranaire, endocytose"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, transport membranaire, endocytose"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, transport membranaire, endocytose"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, transport membranaire, endocytose"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, transport membranaire, endocytose"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion chez l’homme et l’hygiène alimentaire"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "5C": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — les échanges d’eau"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — les échanges d’eau"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — les échanges d’eau"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation de l’homme"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation de l’homme"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation de l’homme"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation de l’homme"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation de l’homme"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "5D": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — les échanges d’eau"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les échanges cellulaires — les échanges d’eau"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation de l’homme"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "L’alimentation de l’homme"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nutrition des plantes — eau, sels minéraux et besoins"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nutrition des plantes — eau, sels minéraux et besoins"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Échanges gazeux chlorophylliens et photosynthèse"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Échanges gazeux chlorophylliens et photosynthèse"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Échanges gazeux chlorophylliens et photosynthèse"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Échanges gazeux chlorophylliens et photosynthèse"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Mobilité des plaques lithosphériques — séismes et volcans"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Mobilité des plaques lithosphériques — séismes et volcans"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Mobilité des plaques lithosphériques — séismes et volcans"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Mobilité des plaques lithosphériques — séismes et volcans"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Mobilité des plaques lithosphériques — séismes et volcans"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Ensembles géologiques et potentialités de la Mauritanie"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Ensembles géologiques et potentialités de la Mauritanie"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Ensembles géologiques et potentialités de la Mauritanie"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Ensembles géologiques et potentialités de la Mauritanie"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "5O": [
+    {
+     "l": "الأسبوع 1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "استقبال الطلاب",
+      "التقويم التشخيصي"
+     ]
+    },
+    {
+     "l": "الأسبوع 2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المبادلات الخلوية — مبادلات الماء (الأسموز)"
+     ]
+    },
+    {
+     "l": "الأسبوع 3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المبادلات الخلوية — مبادلات الماء (الأسموز)"
+     ]
+    },
+    {
+     "l": "الأسبوع 4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المبادلات الخلوية — مبادلات الماء (الأسموز)"
+     ]
+    },
+    {
+     "l": "الأسبوع 5",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المبادلات الخلوية — مبادلات الماء (الأسموز)"
+     ]
+    },
+    {
+     "l": "الأسبوع 6",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المواد المذابة، الضغط الأسموزي والنفاذية"
+     ]
+    },
+    {
+     "l": "الأسبوع 7",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المواد المذابة، الضغط الأسموزي والنفاذية"
+     ]
+    },
+    {
+     "l": "الأسبوع 8",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المواد المذابة، الضغط الأسموزي والنفاذية"
+     ]
+    },
+    {
+     "l": "الأسبوع 9",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المواد المذابة، الضغط الأسموزي والنفاذية"
+     ]
+    },
+    {
+     "l": "الأسبوع 10",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "المواد المذابة، الضغط الأسموزي والنفاذية"
+     ]
+    },
+    {
+     "l": "الأسبوع 11",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "اختبارات الفصل الأول"
+     ]
+    },
+    {
+     "l": "الأسبوع 12",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "عطلة"
+     ]
+    },
+    {
+     "l": "الأسبوع 13",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "التغذية والتغذية المتوازنة"
+     ]
+    },
+    {
+     "l": "الأسبوع 14",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "التغذية والتغذية المتوازنة"
+     ]
+    },
+    {
+     "l": "الأسبوع 15",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "التغذية والتغذية المتوازنة"
+     ]
+    },
+    {
+     "l": "الأسبوع 16",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "التغذية والتغذية المتوازنة"
+     ]
+    },
+    {
+     "l": "الأسبوع 17",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "التغذية والتغذية المتوازنة"
+     ]
+    },
+    {
+     "l": "الأسبوع 18",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 19",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 20",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 21",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 22",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 23",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "اختبارات الفصل الثاني"
+     ]
+    },
+    {
+     "l": "الأسبوع 24",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "عطلة"
+     ]
+    },
+    {
+     "l": "الأسبوع 25",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 26",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 27",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 28",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 29",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 30",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 31",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "الهضم عند الإنسان ومصير المواد البسيطة"
+     ]
+    },
+    {
+     "l": "الأسبوع 32",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "مراجعة عامة"
+     ]
+    },
+    {
+     "l": "الأسبوع 33",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "اختبارات الفصل الثالث"
      ]
     }
    ]

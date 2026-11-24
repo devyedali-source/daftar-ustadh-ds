@@ -1,0 +1,695 @@
+{
+ "subject": "SN",
+ "book": "books/SN_5D.pdf",
+ "bookTitle": "Sciences Naturelles 5ème SN",
+ "lessons": [
+  {
+   "title": "Chapitre I : Les échanges cellulaires — les échanges d’eau",
+   "match": [
+    "Les échanges cellulaires — les échanges d’eau"
+   ],
+   "pages": [
+    12,
+    15
+   ],
+   "objectives": [
+    "Mettre en évidence les échanges d’eau chez la cellule végétale et animale (à l’œil nu et au microscope).",
+    "Définir turgescence, isotonie, plasmolyse, hémolyse.",
+    "Relier le sens des échanges d’eau aux concentrations des milieux."
+   ],
+   "intro": "Pourquoi la salade se ramollit-elle quand on la sale trop tôt ?",
+   "summary": "Des cylindres de pomme de terre placés dans l’eau distillée ou du saccharose à 10 % s’allongent, gardent leur longueur à 20 % et raccourcissent à 30 et 40 %. Au microscope, l’épiderme d’oignon violet montre : dans un milieu moins concentré que la vacuole (hypotonique), l’eau entre, la vacuole gonfle, la cellule est turgescente ; dans un milieu de même concentration (isotonique), pas d’échange net ; dans un milieu plus concentré (hypertonique), l’eau sort, la vacuole se fragmente, le cytoplasme se décolle de la paroi : la cellule est plasmolysée. Chez les globules rouges : dans l’eau distillée ils éclatent (hémolyse), dans NaCl à 8 g/L ils restent normaux (isotonie), à 100 g/L ils se ratatinent (crénelés). La plasmolyse est réversible (déplasmolyse). L’eau se déplace du milieu le moins concentré vers le plus concentré : c’est l’osmose.",
+   "points": [
+    "Osmose : l’eau va du milieu le moins concentré vers le plus concentré.",
+    "Hypotonique → turgescence (végétal) ou hémolyse (globule rouge).",
+    "Isotonique → aucun échange net.",
+    "Hypertonique → plasmolyse / hématies crénelées.",
+    "La plasmolyse est réversible (déplasmolyse)."
+   ],
+   "application": {
+    "q": "Un globule rouge placé dans l’eau distillée : que se passe-t-il ? Pourquoi ?",
+    "a": "Il éclate (hémolyse) : l’eau entre car le milieu est moins concentré que le cytoplasme."
+   },
+   "applications": [
+    {
+     "q": "Que devient une cellule plasmolysée replacée dans l’eau distillée ?",
+     "a": "Elle se déplasmolyse et redevient turgescente."
+    },
+    {
+     "q": "Quelle concentration de saccharose est isotonique pour la pomme de terre ?",
+     "a": "Environ 20 %."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Cellule végétale à l’œil nu (pomme de terre)",
+     "lines": [],
+     "table": [
+      [
+       "Milieu",
+       "Longueur du cylindre"
+      ],
+      [
+       "Eau distillée",
+       "augmente"
+      ],
+      [
+       "Saccharose 10 %",
+       "augmente légèrement"
+      ],
+      [
+       "Saccharose 20 %",
+       "constante"
+      ],
+      [
+       "Saccharose 30 % et 40 %",
+       "diminue"
+      ]
+     ]
+    },
+    {
+     "h": "II. Cellule végétale au microscope (oignon violet)",
+     "lines": [
+      "NaCl 2 g/L : cellule turgescente (vacuole gonflée).",
+      "NaCl 9 g/L : isotonie.",
+      "NaCl 20 g/L : plasmolyse (vacuole fragmentée, cytoplasme décollé)."
+     ]
+    },
+    {
+     "h": "III. Cellule animale (globules rouges de mouton)",
+     "lines": [
+      "Eau distillée : hémolyse (solution rose transparente d’hémoglobine).",
+      "NaCl 8 g/L : isotonie.",
+      "NaCl 100 g/L : hématies crénelées (perte d’eau)."
+     ]
+    },
+    {
+     "h": "Conclusion",
+     "lines": [
+      "La cellule vivante échange de l’eau avec son milieu par osmose ; le sens dépend des concentrations."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : Substances dissoutes, pression osmotique et perméabilité",
+   "match": [
+    "Substances dissoutes, pression osmotique et perméabilité"
+   ],
+   "pages": [
+    15,
+    31
+   ],
+   "objectives": [
+    "Mettre en évidence les échanges de substances dissoutes (diffusion).",
+    "Interpréter avec l’osmomètre de Dutrochet et calculer une pression osmotique.",
+    "Distinguer diffusion libre, facilitée, transport actif ; perméabilité ; endocytose et exocytose."
+   ],
+   "intro": "Pourquoi une cellule plasmolysée dans l’acétate d’ammonium redevient-elle turgescente ?",
+   "summary": "Dans l’acétate d’ammonium à 4 %, les cellules de chou rouge se plasmolysent puis redeviennent turgescentes et leurs vacuoles virent au bleu : la substance dissoute a pénétré dans la cellule (diffusion du milieu le plus concentré vers le moins concentré). L’osmomètre de Dutrochet montre que l’eau traverse une membrane semi-perméable vers la solution la plus concentrée ; la pression osmotique se calcule par P = i·C·R·T (C en mol/L, R = 0,082 L·atm/mol/K, T en kelvins, i = nombre de particules libérées). La diffusion libre suit le gradient de concentration sans dépense d’énergie ; la diffusion facilitée utilise des protéines transporteuses ; le transport actif se fait contre le gradient et consomme de l’énergie (pompe Na⁺/K⁺). La membrane est sélective : sa perméabilité varie selon les substances. Les grosses particules entrent par endocytose (phagocytose, pinocytose) et sortent par exocytose.",
+   "points": [
+    "Diffusion : du plus concentré vers le moins concentré.",
+    "Pression osmotique : P = i·C·R·T.",
+    "Diffusion libre et facilitée : passives, sans énergie.",
+    "Transport actif : contre le gradient, avec énergie.",
+    "Endocytose (entrée) / exocytose (sortie) de grosses particules."
+   ],
+   "application": {
+    "q": "Pression osmotique d’une solution de glucose à 0,3 mol/L à 27 °C (R = 0,082) ?",
+    "a": "P = 1 × 0,3 × 0,082 × 300 ≈ 7,38 atm (le glucose ne se dissocie pas : i = 1)."
+   },
+   "applications": [
+    {
+     "q": "Pression osmotique de NaCl à 0,15 mol/L à 27 °C ?",
+     "a": "NaCl → Na⁺ + Cl⁻ (i = 2) : P = 2 × 0,15 × 0,082 × 300 ≈ 7,38 atm."
+    },
+    {
+     "q": "Quel mode de transport consomme de l’énergie ?",
+     "a": "Le transport actif."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Échanges de substances dissoutes",
+     "lines": [
+      "Chou rouge + acétate d’ammonium 4 % : plasmolyse puis turgescence, vacuoles rouges → bleues.",
+      "L’acétate d’ammonium est entré dans la vacuole : diffusion."
+     ]
+    },
+    {
+     "h": "II. Osmomètre de Dutrochet",
+     "lines": [
+      "Membrane semi-perméable : l’eau passe vers la solution la plus concentrée ; le niveau monte jusqu’à l’équilibre.",
+      "Pression osmotique : P = i·C·R·T."
+     ]
+    },
+    {
+     "h": "III. Modes de transport",
+     "lines": [],
+     "table": [
+      [
+       "Mode",
+       "Sens",
+       "Énergie"
+      ],
+      [
+       "Diffusion libre",
+       "selon le gradient",
+       "non"
+      ],
+      [
+       "Diffusion facilitée",
+       "selon le gradient (transporteurs)",
+       "non"
+      ],
+      [
+       "Transport actif",
+       "contre le gradient",
+       "oui (ATP)"
+      ]
+     ]
+    },
+    {
+     "h": "IV. Perméabilité",
+     "lines": [
+      "La membrane est semi-perméable et sélective : elle laisse passer certaines substances et pas d’autres."
+     ]
+    },
+    {
+     "h": "V. Endocytose et exocytose",
+     "lines": [
+      "Endocytose : la membrane entoure une particule et l’amène dans la cellule (phagocytose, pinocytose).",
+      "Exocytose : des vésicules fusionnent avec la membrane et libèrent leur contenu à l’extérieur."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre II : L’alimentation de l’homme",
+   "match": [
+    "L’alimentation de l’homme"
+   ],
+   "pages": [
+    32,
+    40
+   ],
+   "objectives": [
+    "Mettre en évidence les constituants organiques et minéraux du lait.",
+    "Classer les aliments (simples, composés) et connaître leurs rôles.",
+    "Définir la ration alimentaire, l’alimentation équilibrée et le métabolisme de base."
+   ],
+   "intro": "Le lait suffit-il à nourrir un nourrisson ? Pourquoi ?",
+   "summary": "Le lait contient des substances organiques (glucides, protides, lipides) et minérales (eau, sels minéraux) ; le petit-lait contient beaucoup d’eau, des sels minéraux (calcium, chlorures, potassium, phosphates) et du lactose ; sa légère coloration est due à la vitamine B2. Eau, sels minéraux, glucides, lipides, protides et vitamines sont des aliments simples ; le lait, qui en contient plusieurs, est un aliment composé. Rôles : énergétiques (glucides, lipides), bâtisseurs ou plastiques (protides, eau, sels minéraux), protecteurs ou fonctionnels (vitamines, oligoéléments). La ration alimentaire est la quantité minimale et équilibrée d’aliments à consommer chaque jour ; elle varie avec l’âge, la grossesse, l’activité. Le métabolisme de base d’un adulte de 70 kg au repos est d’environ 6 700 kJ (1 600 kcal) par jour.",
+   "points": [
+    "Lait : glucides, lipides, protides, eau, sels minéraux, vitamines.",
+    "Aliments simples / aliment composé.",
+    "Énergétiques : glucides, lipides ; bâtisseurs : protides, eau, sels ; protecteurs : vitamines.",
+    "Ration alimentaire : quantité minimale et équilibrée par jour.",
+    "Métabolisme de base ≈ 6 700 kJ/jour (adulte de 70 kg)."
+   ],
+   "application": {
+    "q": "Pourquoi dit-on que le lait est un aliment composé ?",
+    "a": "Parce qu’il contient plusieurs aliments simples (eau, sels minéraux, glucides, lipides, protides, vitamines)."
+   },
+   "applications": [
+    {
+     "q": "Citer deux aliments énergétiques.",
+     "a": "Les glucides et les lipides."
+    },
+    {
+     "q": "Qu’est-ce que le métabolisme de base ?",
+     "a": "La dépense énergétique minimale nécessaire aux fonctions vitales au repos complet."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Étude d’un aliment : le lait",
+     "lines": [
+      "Matières organiques : caséine (protide), matière grasse (lipides), lactose (glucide).",
+      "Matières minérales : eau, sels de calcium, chlorures, phosphates ; vitamine B2 (couleur du petit-lait)."
+     ]
+    },
+    {
+     "h": "II. Types et rôles des aliments",
+     "lines": [],
+     "table": [
+      [
+       "Rôle",
+       "Aliments simples"
+      ],
+      [
+       "Énergétique",
+       "glucides, lipides"
+      ],
+      [
+       "Bâtisseur (plastique)",
+       "protides, eau, sels minéraux"
+      ],
+      [
+       "Protecteur (fonctionnel)",
+       "vitamines, oligoéléments"
+      ]
+     ]
+    },
+    {
+     "h": "III. Alimentation équilibrée",
+     "lines": [
+      "Couvrir sans excès ni défaut les dépenses de l’organisme ; aliments variés.",
+      "Ration d’entretien, ration de croissance ; selon âge, grossesse, activité, habitudes.",
+      "Métabolisme de base : dépense minimale au repos, à jeun, à 20 °C ≈ 6 700 kJ (1 600 kcal)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre II : La digestion et le devenir des nutriments",
+   "match": [
+    "La digestion et le devenir des nutriments"
+   ],
+   "pages": [
+    41,
+    65
+   ],
+   "objectives": [
+    "Définir la digestion (mécanique et chimique) et les enzymes.",
+    "Décrire les étapes de la digestion (bouche, estomac, intestin grêle).",
+    "Expliquer l’absorption intestinale et l’hygiène de l’appareil digestif."
+   ],
+   "intro": "Que devient le pain que nous mangeons ?",
+   "summary": "Dans le tube digestif, les aliments subissent une fragmentation mécanique (humidification, broyage, brassage) et des transformations chimiques par les enzymes des sucs digestifs, qui hydrolysent les grosses molécules en petites. Les enzymes sont des protéines qui catalysent spécifiquement une réaction ; elles exigent un substrat donné, une température et un pH convenables. La digestion commence dans la bouche (mastication ; l’amylase salivaire hydrolyse l’amidon cuit en maltose), se poursuit dans l’estomac (brassage, suc gastrique) et s’achève dans l’intestin grêle, avec la formation de nutriments : glucose, acides aminés, acides gras et glycérol, eau, sels minéraux. Les nutriments traversent la paroi de l’intestin grêle (villosités) : c’est l’absorption ; ils passent dans le sang ou la lymphe. Une bonne hygiène (mastication, régularité des repas, propreté) protège l’appareil digestif.",
+   "points": [
+    "Digestion mécanique + chimique (enzymes).",
+    "Enzyme : spécifique, sensible à la température et au pH.",
+    "Bouche : amylase salivaire : amidon → maltose.",
+    "Intestin grêle : nutriments (glucose, acides aminés, acides gras).",
+    "Absorption au niveau des villosités intestinales."
+   ],
+   "application": {
+    "q": "Qu’obtient-on en mettant de l’empois d’amidon avec de la salive à 37 °C ?",
+    "a": "L’amidon est hydrolysé en maltose (test à l’eau iodée négatif, liqueur de Fehling positive)."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi l’amylase n’agit-elle plus à 0 °C ni à 100 °C ?",
+     "a": "À 0 °C elle est inactive ; à 100 °C elle est détruite (dénaturée)."
+    },
+    {
+     "q": "Où se fait l’absorption des nutriments ?",
+     "a": "Au niveau des villosités de l’intestin grêle."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Notion d’enzyme",
+     "lines": [
+      "Protéine qui catalyse une réaction précise (spécificité).",
+      "Conditions : substrat, température optimale (≈ 37 °C), pH convenable."
+     ]
+    },
+    {
+     "h": "II. Étapes de la digestion",
+     "lines": [],
+     "table": [
+      [
+       "Organe",
+       "Action"
+      ],
+      [
+       "Bouche",
+       "mastication ; amylase salivaire : amidon → maltose"
+      ],
+      [
+       "Estomac",
+       "brassage ; suc gastrique (début de la digestion des protides)"
+      ],
+      [
+       "Intestin grêle",
+       "sucs pancréatique et intestinal, bile : nutriments"
+      ]
+     ]
+    },
+    {
+     "h": "III. Devenir des nutriments",
+     "lines": [
+      "Absorption à travers la paroi intestinale (villosités) vers le sang et la lymphe.",
+      "Nutriments : glucose, acides aminés, acides gras, glycérol, eau, sels minéraux, vitamines."
+     ]
+    },
+    {
+     "h": "IV. Hygiène de l’appareil digestif",
+     "lines": [
+      "Bien mastiquer, manger à heures régulières, éviter les excès, hygiène des mains et des aliments."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Nutrition des plantes — eau, sels minéraux et besoins",
+   "match": [
+    "Nutrition des plantes — eau, sels minéraux et besoins"
+   ],
+   "pages": [
+    66,
+    75
+   ],
+   "objectives": [
+    "Localiser l’absorption de l’eau et des sels minéraux (poils absorbants).",
+    "Distinguer sève brute (xylème) et sève élaborée (phloème).",
+    "Montrer que les plantes vertes sont autotrophes (milieu de Knop)."
+   ],
+   "intro": "Pourquoi arrose-t-on le pied d’une plante et non ses feuilles ?",
+   "summary": "L’absorption de l’eau et des sels minéraux se fait au niveau de la zone pilifère de la racine, garnie de très nombreux poils absorbants. Deux types de vaisseaux conduisent deux sèves : le xylème conduit la sève brute (eau et sels minéraux), ascendante ; le phloème conduit la sève élaborée (produits de la photosynthèse), descendante. La transpiration foliaire, par les stomates, participe à l’ascension de la sève brute. Les plantes vertes peuvent se développer sur un milieu exclusivement minéral (solution de Knop) : elles sont autotrophes, contrairement aux hétérotrophes.",
+   "points": [
+    "Absorption : zone pilifère (poils absorbants).",
+    "Xylème : sève brute ascendante (eau + sels).",
+    "Phloème : sève élaborée descendante.",
+    "Transpiration par les stomates.",
+    "Plante verte autotrophe (milieu de Knop)."
+   ],
+   "application": {
+    "q": "Pourquoi dit-on qu’une plante verte est autotrophe ?",
+    "a": "Parce qu’elle fabrique sa matière organique à partir de substances uniquement minérales (eau, sels, CO₂) et de la lumière."
+   },
+   "applications": [
+    {
+     "q": "Vrai ou faux : la transpiration foliaire se fait essentiellement au niveau des stomates.",
+     "a": "Vrai."
+    },
+    {
+     "q": "Quel vaisseau conduit la sève brute ?",
+     "a": "Le xylème."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Absorption de l’eau et des sels minéraux",
+     "lines": [
+      "Zone pilifère de la racine : poils absorbants très nombreux (grande surface d’échange)."
+     ]
+    },
+    {
+     "h": "II. Les sèves",
+     "lines": [],
+     "table": [
+      [
+       "Vaisseau",
+       "Sève",
+       "Composition",
+       "Sens"
+      ],
+      [
+       "Xylème",
+       "brute",
+       "eau + sels minéraux",
+       "ascendante"
+      ],
+      [
+       "Phloème",
+       "élaborée",
+       "produits de la photosynthèse",
+       "descendante"
+      ]
+     ]
+    },
+    {
+     "h": "III. Besoins nutritifs",
+     "lines": [
+      "Culture sur solution de Knop (milieu minéral) : la plante se développe : autotrophie.",
+      "Les hétérotrophes (animaux) ont besoin de matière organique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Échanges gazeux chlorophylliens et photosynthèse",
+   "match": [
+    "Échanges gazeux chlorophylliens et photosynthèse"
+   ],
+   "pages": [
+    76,
+    96
+   ],
+   "objectives": [
+    "Mettre en évidence les échanges gazeux chlorophylliens et leurs facteurs (loi du minimum).",
+    "Connaître la chlorophylle et son spectre d’absorption.",
+    "Écrire l’équation globale de la photosynthèse et ses deux phases ; son importance."
+   ],
+   "intro": "D’où vient l’oxygène que nous respirons ?",
+   "summary": "À la lumière, les végétaux chlorophylliens absorbent le CO₂ et dégagent le O₂. L’intensité chlorophyllienne est le volume de CO₂ absorbé (ou de O₂ dégagé) par unité de masse et de temps ; le quotient chlorophyllien est O₂ rejeté/CO₂ absorbé. Lumière, taux de CO₂ et température influencent ces échanges : un facteur insuffisant limite le phénomène (loi du facteur limitant). La chlorophylle brute, dans les chloroplastes, est soluble dans les solvants organiques et formée de chlorophylles a et b, xanthophylles et carotène ; elle absorbe surtout le rouge et le bleu-violet. La photosynthèse fabrique la matière organique : 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (énergie lumineuse, chlorophylle), en deux phases : phase claire (photochimique : 12H₂O → 6O₂ + énergie chimique) et phase sombre (cycle de Calvin : 6CO₂ + énergie chimique → C₆H₁₂O₆ + 6H₂O). Les végétaux sont les producteurs primaires et enrichissent l’atmosphère en O₂.",
+   "points": [
+    "Lumière : absorption de CO₂, rejet de O₂.",
+    "Quotient chlorophyllien = O₂/CO₂.",
+    "Loi du minimum (facteur limitant).",
+    "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂.",
+    "Phase claire (photochimique) et phase sombre (cycle de Calvin)."
+   ],
+   "application": {
+    "q": "Pourquoi les radiations rouges et bleues sont-elles les plus efficaces pour la photosynthèse ?",
+    "a": "Parce que ce sont les plus absorbées par la chlorophylle (spectre d’absorption)."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce que la loi du minimum ?",
+     "a": "Un facteur insuffisant limite la photosynthèse même si les autres sont abondants."
+    },
+    {
+     "q": "Dans quelle phase est produit le dioxygène ?",
+     "a": "Dans la phase claire (photochimique)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Échanges gazeux chlorophylliens",
+     "lines": [
+      "À la lumière : absorption de CO₂, rejet de O₂.",
+      "Intensité chlorophyllienne ; quotient chlorophyllien QC = V(O₂)/V(CO₂)."
+     ]
+    },
+    {
+     "h": "II. Facteurs et loi du minimum",
+     "lines": [
+      "Lumière, CO₂, température : le facteur insuffisant limite le phénomène."
+     ]
+    },
+    {
+     "h": "III. La chlorophylle",
+     "lines": [
+      "Chlorophylle brute soluble dans l’alcool, l’acétone, le benzène ; pigments : chlorophylles a et b, xanthophylles, carotène.",
+      "Absorbe surtout le rouge et le bleu-violet."
+     ]
+    },
+    {
+     "h": "IV. Mécanisme de la photosynthèse",
+     "lines": [
+      "Globale : 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (lumière, chlorophylle).",
+      "Phase claire : 12H₂O + lumière → 6O₂ + énergie chimique (NADPH, H⁺ et ATP).",
+      "Phase sombre : 6CO₂ + énergie chimique → C₆H₁₂O₆ + 6H₂O."
+     ]
+    },
+    {
+     "h": "V. Importance",
+     "lines": [
+      "Producteurs primaires de matière organique ; enrichissement de l’air en O₂ et appauvrissement en CO₂."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre IV : Mobilité des plaques lithosphériques — séismes et volcans",
+   "match": [
+    "Mobilité des plaques lithosphériques — séismes et volcans"
+   ],
+   "pages": [
+    97,
+    127
+   ],
+   "objectives": [
+    "Expliquer la tectonique des plaques (divergence, convergence, subduction, obduction, collision).",
+    "Distinguer failles et plis.",
+    "Décrire un séisme (foyer, épicentre, ondes P, S, L) et le volcanisme ; la structure du globe."
+   ],
+   "intro": "Pourquoi les séismes et les volcans se concentrent-ils dans certaines régions du globe ?",
+   "summary": "La lithosphère est découpée en plaques rigides qui se déplacent sur l’asthénosphère visqueuse. Aux dorsales, les plaques s’écartent (expansion océanique) ; aux zones de convergence, elles se rencontrent : subduction (une plaque océanique s’enfonce, volcanisme et séismes de profondeur croissante), obduction (croûte océanique chevauchant une croûte continentale : ophiolites), collision (deux croûtes continentales : chaînes de montagnes). La croûte se déforme de façon cassante (failles normale, inverse, coulissante) ou souple (plis : anticlinaux, synclinaux). Un séisme est un ébranlement brusque du sol dû à une rupture des roches en profondeur (foyer) ; l’épicentre est le point de la surface où la secousse est la plus forte ; ondes P (compression, tous milieux), S (cisaillement, solides seulement), L (surface) ; enregistrement : sismogramme. Le volcanisme émet magma et gaz ; on classe les volcans selon la viscosité de la lave (effusifs, explosifs).",
+   "points": [
+    "Plaques rigides sur l’asthénosphère.",
+    "Dorsale (divergence) ; subduction, obduction, collision (convergence).",
+    "Failles (normale, inverse, coulissante) ; plis (anticlinal, synclinal).",
+    "Séisme : foyer, épicentre, ondes P, S, L.",
+    "Volcans : selon la viscosité de la lave."
+   ],
+   "application": {
+    "q": "Quelle différence entre foyer et épicentre ?",
+    "a": "Le foyer est le lieu de rupture en profondeur ; l’épicentre est le point de la surface situé à sa verticale, où la secousse est la plus forte."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi les ondes S ne traversent-elles pas le noyau externe ?",
+     "a": "Parce qu’elles ne se propagent que dans les solides et que le noyau externe est liquide."
+    },
+    {
+     "q": "Quelle déformation correspond à une compression ?",
+     "a": "La faille inverse (ou les plis)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Tectonique des plaques",
+     "lines": [],
+     "table": [
+      [
+       "Frontière",
+       "Mouvement",
+       "Conséquence"
+      ],
+      [
+       "Dorsale",
+       "écartement",
+       "expansion océanique"
+      ],
+      [
+       "Subduction",
+       "plaque océanique qui s’enfonce",
+       "volcans, séismes profonds"
+      ],
+      [
+       "Obduction",
+       "croûte océanique sur continentale",
+       "ophiolites"
+      ],
+      [
+       "Collision",
+       "deux continents",
+       "chaînes de montagnes"
+      ]
+     ]
+    },
+    {
+     "h": "II. Déformations",
+     "lines": [
+      "Cassantes : faille normale (distension), inverse (compression), coulissante (décrochement).",
+      "Souples : plis (anticlinal = bombement ; synclinal = cuvette)."
+     ]
+    },
+    {
+     "h": "III. Séisme",
+     "lines": [
+      "Phases : signes précurseurs, paroxysme, répliques ; isoséistes.",
+      "Ondes P (compression), S (cisaillement, solides), L (surface) ; sismographe, sismogramme."
+     ]
+    },
+    {
+     "h": "IV. Volcanisme",
+     "lines": [
+      "Émission de magma et de gaz par une cheminée ; produits solides, liquides, gazeux.",
+      "Classement selon la viscosité de la lave."
+     ]
+    },
+    {
+     "h": "V. Structure du globe",
+     "lines": [
+      "Croûte, manteau (lithosphère, asthénosphère), noyau."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre V : Ensembles géologiques et potentialités de la Mauritanie",
+   "match": [
+    "Ensembles géologiques et potentialités de la Mauritanie"
+   ],
+   "pages": [
+    128,
+    152
+   ],
+   "objectives": [
+    "Situer les grands ensembles géologiques de la Mauritanie.",
+    "Citer les ressources minières (gisements, indices) et énergétiques (pétrole, gaz).",
+    "Décrire les ressources en eau (surface et souterraines)."
+   ],
+   "intro": "D’où vient le fer exporté par Nouadhibou ?",
+   "summary": "Du plus ancien au plus récent : la Dorsale Réguibat au nord (formations précambriennes sédimentaires, volcaniques, plutoniques et métamorphiques) ; le bassin de Taoudéni au centre et à l’est (roches sédimentaires du Précambrien supérieur à l’actuel) ; le bassin de Tindouf au nord (formations gréseuses) ; la chaîne des Mauritanides à l’ouest du Taoudéni (du Sahara occidental à la Sierra Leone) ; le bassin côtier sénégalo-mauritanien (sables récents, transgressions marines dont le Nouakchottien, 6800–4200 B.P.). Ressources : gisements (exploitation justifiée) et indices. Fer du Tiris (Zouerate), cuivre de Guelb Moghrein (Akjoujt), or (Tasiast) ; sel (N’Terert, Kédia d’Idjil), gypse (N’Drahmcha), phosphate de Bofal ; indices de terres rares, uranium, diamant… Hydrocarbures : Chinguetti (2001), Banda, Tevet ; gaz d’Ahmeyim à la frontière sénégalaise. L’eau : eaux de surface (fleuve Sénégal et ses affluents Karakoro, Gorgol) et eaux souterraines.",
+   "points": [
+    "Dorsale Réguibat (Précambrien), Taoudéni, Tindouf, Mauritanides, bassin côtier.",
+    "Gisement (exploité) ≠ indice.",
+    "Fer (Zouerate), cuivre et or (Akjoujt, Tasiast), sel, gypse, phosphate.",
+    "Pétrole : Chinguetti (2001) ; gaz : Ahmeyim.",
+    "Eau de surface (fleuve Sénégal) et souterraine."
+   ],
+   "application": {
+    "q": "Quelle différence entre un gisement et un indice ?",
+    "a": "Un gisement a une qualité et une quantité de minerai qui justifient l’exploitation ; un indice non."
+   },
+   "applications": [
+    {
+     "q": "Où se trouve le gisement de cuivre de Guelb Moghrein ?",
+     "a": "À Akjoujt."
+    },
+    {
+     "q": "Quel est l’ensemble géologique le plus ancien ?",
+     "a": "La Dorsale Réguibat (Précambrien)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Les ensembles géologiques",
+     "lines": [],
+     "table": [
+      [
+       "Ensemble",
+       "Situation",
+       "Roches"
+      ],
+      [
+       "Dorsale Réguibat",
+       "nord",
+       "précambriennes variées (granite, gneiss…)"
+      ],
+      [
+       "Bassin de Taoudéni",
+       "centre et est",
+       "sédimentaires (argiles, calcaires)"
+      ],
+      [
+       "Bassin de Tindouf",
+       "nord",
+       "gréseuses"
+      ],
+      [
+       "Mauritanides",
+       "ouest du Taoudéni",
+       "cristallines, métamorphiques, sédimentaires"
+      ],
+      [
+       "Bassin côtier",
+       "littoral",
+       "sables mio-plio-quaternaires"
+      ]
+     ]
+    },
+    {
+     "h": "II. Ressources minières",
+     "lines": [
+      "Métallifères : fer du Tiris (Zouerate), cuivre de Guelb Moghrein, or (Tasiast).",
+      "Non métallifères : sel (N’Terert, Kédia d’Idjil), gypse (N’Drahmcha), phosphate (Bofal).",
+      "Indices : terres rares (Bou Naga), uranium, diamant, lithium…"
+     ]
+    },
+    {
+     "h": "III. Hydrocarbures",
+     "lines": [
+      "Pétrole : Chinguetti (16 mai 2001), Banda (2002), Oualata (2003), Tevet (2004).",
+      "Gaz : champ offshore Ahmeyim (frontière Mauritanie–Sénégal)."
+     ]
+    },
+    {
+     "h": "IV. Ressources en eau",
+     "lines": [
+      "Eaux de surface : fleuve Sénégal et affluents (Karakoro, Gorgol)…",
+      "Eaux souterraines (nappes)."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "5D"
+}
