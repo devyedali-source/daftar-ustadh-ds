@@ -1,0 +1,828 @@
+{
+ "subject": "PC",
+ "book": "books/PC_6A.pdf",
+ "bookTitle": "Physique 6ème LM",
+ "lessons": [
+  {
+   "title": "Physique – Chapitre 1 : Travail d’une force",
+   "match": [
+    "Travail d’une force"
+   ],
+   "pages": [
+    10,
+    15
+   ],
+   "objectives": [
+    "Connaître la définition d’une force constante.",
+    "Calculer le travail d’une force constante.",
+    "Calculer le travail du poids et d’une force de frottement."
+   ],
+   "intro": "Un élève qui porte son sac sans bouger travaille-t-il au sens du physicien ?",
+   "summary": "Une force appliquée à un solide peut le déplacer, le faire tourner ou le déformer. On dit qu’une force travaille lorsque son point d’application se déplace. Une force est constante si elle garde la même direction, le même sens et la même intensité. Pour un solide en translation rectiligne de A à B, le travail d’une force constante est le produit scalaire W(F) = F · AB = F · AB · cos α, avec α = (F, AB). L’unité est le joule : 1 J = 1 N·m. Le travail est moteur (α < 90°), nul (α = 90°) ou résistant (α > 90°). Le travail du poids ne dépend que de la différence d’altitude : W(P) = m g (z_A − z_B). La réaction d’un support lisse ne travaille pas (elle est perpendiculaire au déplacement) ; une force de frottement f a un travail résistant : W(f) = −f · AB.",
+   "points": [
+    "Travail ⇔ le point d’application se déplace.",
+    "W = F · AB · cos α (joule).",
+    "Moteur, nul ou résistant selon α.",
+    "W(P) = m g (z_A − z_B).",
+    "W(f) = −f · AB."
+   ],
+   "application": {
+    "q": "Moussa tire un traîneau sur 35 m ; la corde fait 25° avec le sol ; tension 94 N. Travail ?",
+    "a": "W = 94 × 35 × cos 25° ≈ 2 982 J (travail moteur)."
+   },
+   "applications": [
+    {
+     "q": "Une grue soulève un objet de 1200 kg à 6 m (g = 10 N/kg). Travail du poids ?",
+     "a": "W = −m g h = −1200 × 10 × 6 = −72 000 J (résistant)."
+    },
+    {
+     "q": "F = 250 N, AB = 100 m, α = 60° : travail ?",
+     "a": "W = 250 × 100 × 0,5 = 12 500 J."
+    }
+   ],
+   "board": [
+    {
+     "h": "Effets d’une force",
+     "lines": [
+      "Voiture poussée : déplacement ; volant : rotation ; règle : déformation ; freins : changement de vitesse."
+     ]
+    },
+    {
+     "h": "Nature du travail",
+     "lines": [],
+     "table": [
+      [
+       "Angle α",
+       "Travail"
+      ],
+      [
+       "0 ≤ α < 90°",
+       "moteur (W > 0)"
+      ],
+      [
+       "α = 90°",
+       "nul"
+      ],
+      [
+       "90° < α ≤ 180°",
+       "résistant (W < 0)"
+      ]
+     ]
+    },
+    {
+     "h": "Application 2 du manuel",
+     "lines": [
+      "Caisse de 20 kg poussée sur 50 m par F = 100 N à 20° ; frottement f = 15 N.",
+      "W(F) = 100 × 50 × cos 20° ≈ 4 698 J ; W(P) = W(R) = 0 ; W(f) = −15 × 50 = −750 J.",
+      "Travail net : 4 698 − 750 ≈ 3 948 J."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Physique – Chapitre 1 : Puissance d’une force",
+   "match": [
+    "Puissance d’une force"
+   ],
+   "pages": [
+    14,
+    19
+   ],
+   "objectives": [
+    "Calculer la puissance moyenne d’une force.",
+    "Calculer la puissance instantanée.",
+    "Convertir les unités (W, kW, kJ)."
+   ],
+   "intro": "Deux élèves montent le même escalier, l’un en courant, l’autre en marchant. Lequel est le plus puissant ?",
+   "summary": "La puissance dépend du travail et de la durée de sa réalisation. Puissance moyenne : P = W/Δt (W en joules, Δt en secondes, P en watts). Puissance instantanée d’une force constante appliquée à un solide en translation : P = F · v = F · v · cos α ; c’est une grandeur algébrique dont le signe dépend de cos α.",
+   "points": [
+    "P = W/Δt (watt).",
+    "P = F · v · cos α.",
+    "1 W = 1 J/s ; 1 kW = 1000 W."
+   ],
+   "application": {
+    "q": "Un moteur fournit 72 kJ en 3 minutes. Puissance ?",
+    "a": "P = 72 000/180 = 400 W."
+   },
+   "applications": [
+    {
+     "q": "Élève de 65 kg montant 2 étages de 3,5 m en 30 s (g = 10) : puissance du poids ?",
+     "a": "W = −65 × 10 × 7 = −4 550 J ; P ≈ −152 W (en valeur 152 W)."
+    },
+    {
+     "q": "Un enfant fournit 2,0 kJ en une demi-minute : puissance moyenne ?",
+     "a": "P = 2000/30 ≈ 67 W."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemples (QCM du manuel)",
+     "lines": [
+      "Machine de 15 kW pendant 1 min : W = 15 000 × 60 = 9·10⁵ J."
+     ]
+    },
+    {
+     "h": "Application 1 du manuel",
+     "lines": [
+      "W = 2 981,75 J ; P = W/Δt = 2 981,75/120 ≈ 24,85 W.",
+      "(Correction : l’énoncé ne donne pas la durée ; le corrigé utilise Δt = 120 s.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Physique – Chapitre 2 : Radioactivité — noyau et lois de conservation",
+   "match": [
+    "Radioactivité — noyau et lois de conservation"
+   ],
+   "pages": [
+    20,
+    27
+   ],
+   "objectives": [
+    "Connaître la composition du noyau et la notation des nucléides.",
+    "Définir les isotopes.",
+    "Énoncer les lois de conservation d’une réaction nucléaire."
+   ],
+   "intro": "La radioactivité est-elle une invention humaine ou un phénomène naturel ?",
+   "summary": "La radioactivité, phénomène naturel découvert par Henri Becquerel (1896) puis étudié par Pierre et Marie Curie, vient de noyaux instables. Rutherford (1909) a montré que la charge positive de l’atome est concentrée dans un noyau minuscule et que l’atome a une structure lacunaire. Un noyau contient A nucléons : Z protons et N = A − Z neutrons ; on le note ᴬ_Z X. Un élément chimique est caractérisé par Z ; les isotopes ont le même Z et des A différents (¹H, ²H, ³H). Lors d’une désintégration, il y a conservation du nombre de masse A, du nombre de charge Z et de l’énergie totale (une partie de la masse se transforme en énergie : E = m c²).",
+   "points": [
+    "Noyau ᴬ_Z X : Z protons, A − Z neutrons.",
+    "Isotopes : même Z, A différents.",
+    "Conservation de A et de Z.",
+    "Conservation de l’énergie (E = m c²)."
+   ],
+   "application": {
+    "q": "Composition du noyau ²³⁸₉₂U ?",
+    "a": "Z = 92 protons ; N = 238 − 92 = 146 neutrons."
+   },
+   "applications": [
+    {
+     "q": "²³⁴₉₂U → ᴬ_Z X + ²³⁰₉₀Th : trouver A, Z et X.",
+     "a": "A = 4, Z = 2 : X = ⁴₂He (radioactivité α). (Correction : il s’agit de l’uranium 234, non 238.)"
+    },
+    {
+     "q": "Combien de neutrons dans ¹⁴₆C ?",
+     "a": "8 neutrons."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemples",
+     "lines": [
+      "¹²₆C : Z = 6, N = 6.",
+      "²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He : 226 = 222 + 4 et 88 = 86 + 2.",
+      "(Correction : p. 24, l’exemple s’écrit ²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂He et non 236/232.)"
+     ]
+    },
+    {
+     "h": "Pourquoi ces lois ?",
+     "lines": [
+      "Vérifier l’équilibre d’une réaction nucléaire ; prédire les produits d’une désintégration."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Physique – Chapitre 2 : Radioactivité — émissions α, β⁻, β⁺, γ et enjeux",
+   "match": [
+    "Radioactivité — émissions α, β⁻, β⁺, γ et enjeux"
+   ],
+   "pages": [
+    24,
+    32
+   ],
+   "objectives": [
+    "Écrire les équations des désintégrations α, β⁻, β⁺ et l’émission γ.",
+    "Identifier un noyau fils.",
+    "Débattre des usages et des dangers de la radioactivité."
+   ],
+   "intro": "La Mauritanie possède des gisements d’uranium. À quoi sert-il et quels sont les risques ?",
+   "summary": "Radioactivité α (noyaux lourds, A > 200) : ᴬ_Z X → ᴬ⁻⁴_(Z−2) Y + ⁴₂He ; les particules α sont arrêtées par une feuille de papier. Radioactivité β⁻ (émission d’un électron) : ᴬ_Z X → ᴬ_(Z+1) Y + ⁰₋₁e. Radioactivité β⁺ (émission d’un positon, même masse que l’électron mais charge positive) : ᴬ_Z X → ᴬ_(Z−1) Y + ⁰₁e. Le noyau fils est souvent obtenu dans un état excité Y* ; en revenant à l’état fondamental, il émet un rayonnement électromagnétique γ très énergétique. Le noyau fils s’identifie par son numéro Z dans la classification périodique. Usages : énergie (centrales), médecine (technétium 99m, radiothérapie) ; dangers : accidents (Tchernobyl 1986, Fukushima 2011), déchets à très longue durée de vie.",
+   "points": [
+    "α : ⁴₂He ; Z − 2, A − 4.",
+    "β⁻ : ⁰₋₁e ; Z + 1.",
+    "β⁺ : ⁰₁e ; Z − 1.",
+    "γ : désexcitation du noyau fils.",
+    "Usages médicaux et énergétiques ; risques."
+   ],
+   "application": {
+    "q": "Le carbone 14 est radioactif β⁻. Écrire l’équation.",
+    "a": "¹⁴₆C → ¹⁴₇N + ⁰₋₁e."
+   },
+   "applications": [
+    {
+     "q": "Le plomb 185 (Z = 82) donne du mercure 181 et un noyau d’hélium. Équation ?",
+     "a": "¹⁸⁵₈₂Pb → ¹⁸¹₈₀Hg + ⁴₂He."
+    },
+    {
+     "q": "Le polonium 210 (Z = 84) donne du plomb et un noyau d’hélium. Équation ?",
+     "a": "²¹⁰₈₄Po → ²⁰⁶₈₂Pb + ⁴₂He."
+    }
+   ],
+   "board": [
+    {
+     "h": "Tableau des émissions",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Particule",
+       "Équation"
+      ],
+      [
+       "α",
+       "⁴₂He",
+       "ᴬ_Z X → ᴬ⁻⁴_(Z−2) Y + ⁴₂He"
+      ],
+      [
+       "β⁻",
+       "électron ⁰₋₁e",
+       "ᴬ_Z X → ᴬ_(Z+1) Y + ⁰₋₁e"
+      ],
+      [
+       "β⁺",
+       "positon ⁰₁e",
+       "ᴬ_Z X → ᴬ_(Z−1) Y + ⁰₁e"
+      ],
+      [
+       "γ",
+       "rayonnement",
+       "Y* → Y + γ"
+      ]
+     ]
+    },
+    {
+     "h": "Exemples du manuel",
+     "lines": [
+      "²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He.",
+      "¹³₇N → ¹³₆C + ⁰₁e ; ¹⁹₁₀Ne → ¹⁹₉F + ⁰₁e.",
+      "²¹⁰₈₃Bi → ²¹⁰₈₄Po + ⁰₋₁e ; ⁶⁰₂₇Co → ⁶⁰₂₈Ni + ⁰₋₁e."
+     ]
+    },
+    {
+     "h": "Mauritanie",
+     "lines": [
+      "Gisements d’uranium (Tiris Zemmour : Oued El Foule, Ain Sder) découverts par Aura Energy (2019)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Physique – Chapitre 3 : Sources et formes d’énergie",
+   "match": [
+    "Sources et formes d’énergie"
+   ],
+   "pages": [
+    33,
+    37
+   ],
+   "objectives": [
+    "Connaître et classer les sources d’énergie.",
+    "Distinguer source et forme d’énergie.",
+    "Établir la chaîne d’énergie d’un objet technique."
+   ],
+   "intro": "Une lampe de poche s’allume : d’où vient l’énergie et sous quelles formes passe-t-elle ?",
+   "summary": "L’énergie ne se crée pas et ne disparaît pas : elle se transforme. Une source d’énergie est une réserve naturelle (soleil, vent, eau, biomasse, géothermie) ou artificielle (carburants, batteries, piles, réacteurs nucléaires). Elle est renouvelable si elle se reconstitue rapidement (soleil, vent, eau, bois, marée), non renouvelable si elle met des millions d’années à se former (pétrole, charbon, gaz naturel, uranium). L’énergie se manifeste sous cinq formes : chimique, thermique, rayonnante, mécanique (cinétique ou potentielle) et électrique. Dans un objet technique elle suit une chaîne : source → stockage → distribution → transformation → transmission → action.",
+   "points": [
+    "L’énergie se conserve, elle se transforme.",
+    "Sources renouvelables / non renouvelables.",
+    "Formes : chimique, thermique, rayonnante, mécanique, électrique.",
+    "Chaîne d’énergie."
+   ],
+   "application": {
+    "q": "Chaîne d’énergie d’une lampe de poche ?",
+    "a": "Pile (énergie chimique) → stockage → distribution du courant (interrupteur) → transformation en lumière (diode) → émission lumineuse."
+   },
+   "applications": [
+    {
+     "q": "Donner un objet qui transforme l’énergie mécanique en énergie électrique.",
+     "a": "Une dynamo de vélo."
+    },
+    {
+     "q": "Pourquoi favoriser les énergies renouvelables ?",
+     "a": "Elles sont inépuisables, moins polluantes, réduisent la dépendance aux fossiles et limitent le réchauffement."
+    }
+   ],
+   "board": [
+    {
+     "h": "Classement des sources",
+     "lines": [],
+     "table": [
+      [
+       "Renouvelables",
+       "Non renouvelables"
+      ],
+      [
+       "soleil, vent, eau, bois (biomasse), marée",
+       "pétrole, charbon, gaz naturel, uranium"
+      ]
+     ]
+    },
+    {
+     "h": "Remarque",
+     "lines": [
+      "La batterie et la pile ne sont pas des sources primaires : ce sont des réserves (stockage) d’énergie."
+     ]
+    },
+    {
+     "h": "Exemple : voiture électrique",
+     "lines": [
+      "Batterie → distribution du courant → moteur (énergie mécanique) → roues → mouvement."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Physique – Chapitre 3 : Énergie et développement durable (Mauritanie et monde)",
+   "match": [
+    "Énergie et développement durable (Mauritanie et monde)"
+   ],
+   "pages": [
+    38,
+    44
+   ],
+   "objectives": [
+    "Analyser des documents sur la production d’énergie.",
+    "Identifier les atouts énergétiques de la Mauritanie.",
+    "Argumenter sur la transition énergétique."
+   ],
+   "intro": "La Mauritanie a plus de 3 000 heures de soleil par an. Comment en profiter ?",
+   "summary": "Les superpuissances cherchent une énergie bon marché pour rester compétitives et indépendantes, mais les énergies fossiles polluent, le nucléaire comporte des risques et les renouvelables sont intermittentes. À l’horizon 2035, il faut décarboner la production, améliorer l’efficacité énergétique et assurer une justice énergétique. La Mauritanie dispose d’un fort potentiel : solaire (plus de 3 000 h/an), éolien (côte atlantique), hydraulique (fleuve Sénégal, OMVS), gaz offshore (GTA avec le Sénégal) et projets d’hydrogène vert ; ses défis sont l’accès inégal à l’électricité, la dépendance aux fossiles importés et la formation.",
+   "points": [
+    "Fossiles : dominants mais polluants.",
+    "Renouvelables : en essor mais intermittentes.",
+    "2035 : décarboner, économiser, partager.",
+    "Mauritanie : soleil, vent, fleuve, gaz, hydrogène vert."
+   ],
+   "application": {
+    "q": "Citer un inconvénient des combustibles fossiles.",
+    "a": "Ils s’épuisent et leur combustion émet des gaz à effet de serre (CO₂)."
+   },
+   "applications": [
+    {
+     "q": "Une batterie de tablette qui se charge convertit quelle énergie en quelle autre ?",
+     "a": "Énergie électrique → énergie chimique."
+    },
+    {
+     "q": "Classer « éolienne, charbon, panneau solaire » en polluant / non polluant.",
+     "a": "Charbon : polluant ; éolienne et panneau solaire : non polluants."
+    }
+   ],
+   "board": [
+    {
+     "h": "Atouts de la Mauritanie",
+     "lines": [],
+     "table": [
+      [
+       "Ressource",
+       "Exemple"
+      ],
+      [
+       "Solaire",
+       "plus de 3 000 h d’ensoleillement par an"
+      ],
+      [
+       "Éolien",
+       "Nouadhibou, côte atlantique"
+      ],
+      [
+       "Hydraulique",
+       "fleuve Sénégal (OMVS)"
+      ],
+      [
+       "Gaz",
+       "Grand Tortue Ahmeyim"
+      ],
+      [
+       "Hydrogène vert",
+       "projets en cours"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 1 : Les alcanes",
+   "match": [
+    "Les alcanes"
+   ],
+   "pages": [
+    46,
+    52
+   ],
+   "objectives": [
+    "Connaître la structure et la formule générale des alcanes.",
+    "Nommer un alcane linéaire ou ramifié.",
+    "Reconnaître des isomères."
+   ],
+   "intro": "Le gaz des bouteilles utilisées à Nouakchott contient surtout du butane. Qu’est-ce que c’est ?",
+   "summary": "Les alcanes sont des hydrocarbures saturés (liaisons simples) à chaîne ouverte, de formule générale CₙH₂ₙ₊₂. Les quatre premiers ont des noms usuels : méthane CH₄, éthane C₂H₆, propane C₃H₈, butane C₄H₁₀ ; ensuite on utilise un préfixe numérique suivi de « ane ». Un groupe alkyle CₙH₂ₙ₊₁– s’obtient en retirant un H (méthyle, éthyle, propyle). Nomenclature d’un alcane ramifié : chaîne la plus longue (principale), numérotation donnant les plus petits indices aux ramifications, nom = indices + noms des groupes + nom de la chaîne principale. Des composés de même formule brute et de formules semi-développées différentes sont des isomères (butane et méthylpropane, C₄H₁₀).",
+   "points": [
+    "Alcane : CₙH₂ₙ₊₂, liaisons simples.",
+    "Méthane, éthane, propane, butane.",
+    "Groupe alkyle CₙH₂ₙ₊₁–.",
+    "Chaîne principale + plus petits indices.",
+    "Isomères : même formule brute."
+   ],
+   "application": {
+    "q": "Le propane C₃H₈ est-il un alcane ? Formule semi-développée ?",
+    "a": "Oui : 2 × 3 + 2 = 8 ; CH₃–CH₂–CH₃."
+   },
+   "applications": [
+    {
+     "q": "Formules semi-développées des 3 isomères de C₅H₁₂ ?",
+     "a": "Pentane CH₃–(CH₂)₃–CH₃ ; 2-méthylbutane CH₃–CH(CH₃)–CH₂–CH₃ ; 2,2-diméthylpropane C(CH₃)₄."
+    },
+    {
+     "q": "Quels risques présente le gaz butane mal utilisé ?",
+     "a": "Incendie ou explosion ; monoxyde de carbone (combustion incomplète) ; asphyxie en milieu fermé."
+    }
+   ],
+   "board": [
+    {
+     "h": "Isomères de C₄H₁₀",
+     "lines": [
+      "Butane : CH₃–CH₂–CH₂–CH₃ (chaîne linéaire).",
+      "Méthylpropane : CH₃–CH(CH₃)–CH₃ (chaîne ramifiée)."
+     ]
+    },
+    {
+     "h": "Masse molaire",
+     "lines": [
+      "M(CₙH₂ₙ₊₂) = 14n + 2 ; M = 114 g/mol ⇒ n = 8 : C₈H₁₈ (octane)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 1 : Alcènes, alcynes et composés aromatiques",
+   "match": [
+    "Alcènes, alcynes et composés aromatiques"
+   ],
+   "pages": [
+    52,
+    58
+   ],
+   "objectives": [
+    "Identifier et nommer les alcènes et les alcynes.",
+    "Connaître la structure du benzène.",
+    "Réfléchir aux risques du benzène pour la santé."
+   ],
+   "intro": "Le benzène se trouve dans l’essence et les peintures. Pourquoi l’OMS le juge-t-elle dangereux ?",
+   "summary": "Les alcènes sont des hydrocarbures insaturés à chaîne ouverte avec une double liaison C=C, de formule CₙH₂ₙ (n ≥ 2), nommés avec le suffixe « ène » : éthène (éthylène) CH₂=CH₂, propène, 2-méthylprop-1-ène. Les alcynes possèdent une triple liaison C≡C, formule CₙH₂ₙ₋₂, suffixe « yne » : éthyne (acétylène) CH≡CH, propyne, 3-méthylbut-1-yne. La numérotation donne les plus petits indices aux carbones de la liaison multiple. Le benzène C₆H₆ est une molécule plane et cyclique (hexagone régulier) dont six électrons sont délocalisés : c’est le noyau benzénique. Tout composé comportant ce noyau est aromatique (toluène, xylènes ortho, méta, para, phénol, aniline). Le benzène est toxique (leucémie) et peut polluer l’air et l’eau autour des sites pétroliers et portuaires.",
+   "points": [
+    "Alcène : C=C, CₙH₂ₙ, « ène ».",
+    "Alcyne : C≡C, CₙH₂ₙ₋₂, « yne ».",
+    "Benzène C₆H₆ : cycle plan, électrons délocalisés.",
+    "Aromatique : noyau benzénique.",
+    "Benzène toxique (leucémie)."
+   ],
+   "application": {
+    "q": "Formule brute et famille de l’éthène et du butyne ?",
+    "a": "Éthène C₂H₄ : alcène ; butyne C₄H₆ : alcyne."
+   },
+   "applications": [
+    {
+     "q": "Alcènes de masse molaire 70 g/mol ?",
+     "a": "14n = 70 ⇒ n = 5 : C₅H₁₀ (pent-1-ène, pent-2-ène, méthylbutènes)."
+    },
+    {
+     "q": "Quelles sont les trois formes du xylène C₆H₄(CH₃)₂ ?",
+     "a": "Ortho (groupes voisins), méta (séparés par un carbone), para (opposés)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Familles d’hydrocarbures",
+     "lines": [],
+     "table": [
+      [
+       "Famille",
+       "Liaison",
+       "Formule",
+       "Exemple"
+      ],
+      [
+       "Alcane",
+       "simple",
+       "CₙH₂ₙ₊₂",
+       "propane"
+      ],
+      [
+       "Alcène",
+       "double C=C",
+       "CₙH₂ₙ",
+       "propène CH₃–CH=CH₂"
+      ],
+      [
+       "Alcyne",
+       "triple C≡C",
+       "CₙH₂ₙ₋₂",
+       "propyne CH₃–C≡CH"
+      ],
+      [
+       "Aromatique",
+       "cycle benzénique",
+       "C₆H₆…",
+       "benzène, xylène"
+      ]
+     ]
+    },
+    {
+     "h": "Corrections",
+     "lines": [
+      "(Correction : p. 52, le propyne s’écrit CH₃–C≡CH.)",
+      "(Correction : p. 58, les formules d) et e) de l’exercice 5 sont impossibles : un carbone ne peut pas former 5 liaisons.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 2 : Combustion et substitution",
+   "match": [
+    "Combustion et substitution"
+   ],
+   "pages": [
+    59,
+    64
+   ],
+   "objectives": [
+    "Écrire les équations de combustion complète et incomplète.",
+    "Écrire les équations de substitution (chloration du méthane)."
+   ],
+   "intro": "Le méthane brûle dans la cuisinière ; avec le dichlore à la lumière, il donne d’autres produits. Lesquels ?",
+   "summary": "Les alcanes sont peu réactifs. Combustion complète (dioxygène en excès) : CO₂ et H₂O, réaction exothermique : CH₄ + 2 O₂ → CO₂ + 2 H₂O ; C₄H₁₀ + 13/2 O₂ → 4 CO₂ + 5 H₂O. Combustion incomplète (dioxygène en défaut) : carbone et eau : CH₄ + O₂ → C + 2 H₂O. Les alcanes servent de combustibles (méthane, propane, butane, fuels) et de carburants (essences, gas-oil, kérosène). Substitution : un ou plusieurs atomes monovalents remplacent des atomes d’hydrogène sans détruire la chaîne. À la lumière (réaction photochimique), le méthane et le dichlore donnent successivement CH₃Cl, CH₂Cl₂, CHCl₃ et CCl₄ avec HCl.",
+   "points": [
+    "Combustion complète : CO₂ + H₂O.",
+    "Combustion incomplète : C + H₂O.",
+    "Substitution : H remplacé par Cl.",
+    "Chloration du méthane : 4 produits successifs.",
+    "Réaction photochimique (lumière)."
+   ],
+   "application": {
+    "q": "Écrire la combustion complète du propane.",
+    "a": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O."
+   },
+   "applications": [
+    {
+     "q": "3,6 g d’un alcane donnent 11 g de CO₂ et 5,4 g d’eau. Formule ?",
+     "a": "n(C) = 0,25 mol ; n(H) = 0,6 mol ⇒ C₅H₁₂."
+    },
+    {
+     "q": "Ce C₅H₁₂ ne donne qu’un seul dérivé monochloré. Lequel ?",
+     "a": "2,2-diméthylpropane ; dérivé : 1-chloro-2,2-diméthylpropane."
+    }
+   ],
+   "board": [
+    {
+     "h": "Chloration du méthane",
+     "lines": [
+      "CH₄ + Cl₂ → CH₃Cl + HCl",
+      "CH₃Cl + Cl₂ → CH₂Cl₂ + HCl",
+      "CH₂Cl₂ + Cl₂ → CHCl₃ + HCl",
+      "CHCl₃ + Cl₂ → CCl₄ + HCl",
+      "(Correction : CCl₄ est le tétrachlorométhane, pas le « tétrachloréthane ».)"
+     ]
+    },
+    {
+     "h": "Observations",
+     "lines": [
+      "Dans l’obscurité : rien. À la lumière : l’eau salée monte, la couleur verte du dichlore disparaît, des gouttelettes huileuses se forment, l’eau devient acide."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 2 : Addition et polymérisation",
+   "match": [
+    "Addition et polymérisation"
+   ],
+   "pages": [
+    65,
+    71
+   ],
+   "objectives": [
+    "Écrire les réactions d’addition (H₂, Cl₂, Br₂, HCl, H₂O) sur les alcènes et alcynes.",
+    "Écrire les réactions de polymérisation (polyéthylène, PVC)."
+   ],
+   "intro": "Les sacs plastiques et les tuyaux en PVC viennent de petites molécules gazeuses. Comment ?",
+   "summary": "Addition : une molécule se fixe sur les deux carbones de la liaison multiple, qui s’ouvre. Hydrogénation (Ni ou Pt) : alcène → alcane ; alcyne → alcène (palladium désactivé) ou alcane (Ni, Pt). Dichlore et dibrome : CH₂=CH₂ + Cl₂ → CH₂Cl–CH₂Cl (1,2-dichloroéthane) ; le dibrome est le réactif test des alcènes (décoloration). HCl : CH₂=CH₂ + HCl → CH₃–CH₂Cl ; avec le propène on obtient surtout le 2-chloropropane ; sur l’acétylène : chlorure de vinyle puis 1,1-dichloroéthane. Hydratation (H₂SO₄) : éthylène → éthanol ; un alcène dissymétrique donne deux alcools (propène → surtout propan-2-ol). L’hydratation de l’acétylène donne l’éthanal. Polymérisation : addition d’un grand nombre de monomères : n CH₂=CH₂ → –(CH₂–CH₂)ₙ– (polyéthylène, sacs) ; n CH₂=CHCl → –(CH₂–CHCl)ₙ– (PVC, tuyaux).",
+   "points": [
+    "Addition : ouverture de la liaison multiple.",
+    "Hydrogénation, halogénation, HCl, hydratation.",
+    "Dibrome : test des alcènes.",
+    "Polymérisation : n monomères → polymère.",
+    "PE (sacs), PVC (tuyaux)."
+   ],
+   "application": {
+    "q": "Équation de l’hydrogénation de l’éthylène ?",
+    "a": "CH₂=CH₂ + H₂ → CH₃–CH₃ (catalyseur Ni ou Pt)."
+   },
+   "applications": [
+    {
+     "q": "Polymère : M = 93 750 g/mol, n = 1500, 56,8 % de Cl. Monomère ?",
+     "a": "M = 62,5 g/mol : C₂H₃Cl (chlorure de vinyle) ; polymère : PVC."
+    },
+    {
+     "q": "Bromation d’un alcène : produit de 202 g/mol. Alcène ?",
+     "a": "14n + 160 = 202 ⇒ n = 3 : propène ; B = 1,2-dibromopropane."
+    }
+   ],
+   "board": [
+    {
+     "h": "Réactions d’addition",
+     "lines": [],
+     "table": [
+      [
+       "Réactif",
+       "Sur l’éthylène",
+       "Produit"
+      ],
+      [
+       "H₂ (Ni)",
+       "CH₂=CH₂ + H₂",
+       "éthane"
+      ],
+      [
+       "Cl₂",
+       "CH₂=CH₂ + Cl₂",
+       "1,2-dichloroéthane"
+      ],
+      [
+       "Br₂",
+       "CH₂=CH₂ + Br₂",
+       "1,2-dibromoéthane"
+      ],
+      [
+       "HCl",
+       "CH₂=CH₂ + HCl",
+       "chloroéthane"
+      ],
+      [
+       "H₂O (H₂SO₄)",
+       "CH₂=CH₂ + H₂O",
+       "éthanol"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 65, avec le palladium désactivé, l’hydrogénation d’un alcyne conduit à un alcène, et non à un alcyne.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 3 : Les alcools",
+   "match": [
+    "Les alcools"
+   ],
+   "pages": [
+    72,
+    81
+   ],
+   "objectives": [
+    "Nommer un alcool et reconnaître sa classe.",
+    "Connaître l’oxydation ménagée selon la classe.",
+    "Écrire la déshydratation, l’hydratation et la combustion."
+   ],
+   "intro": "Pourquoi le méthanol est-il dangereux alors qu’il ressemble à l’éthanol ?",
+   "summary": "Un alcool possède un groupe hydroxyle –OH porté par un carbone tétragonal ; formule générale R–OH, formule brute CₙH₂ₙ₊₂O, masse molaire 14n + 18. On numérote la chaîne la plus longue contenant –OH de façon que le carbone porteur ait le plus petit indice (suffixe « ol »). Classes : primaire (carbone fonctionnel lié à un seul carbone, ex. éthanol), secondaire (deux carbones, ex. propan-2-ol), tertiaire (trois carbones, ex. 2-méthylpropan-2-ol). Oxydation ménagée : primaire → aldéhyde puis acide carboxylique ; secondaire → cétone ; tertiaire : pas d’oxydation ménagée. Déshydratation intramoléculaire → alcène + eau (propan-2-ol → propène) ; intermoléculaire → éther. Combustion complète : CH₃–CH₂–OH + 3 O₂ → 2 CO₂ + 3 H₂O. Usages : désinfectants, parfums, carburants (bioéthanol), antigels ; en Mauritanie la vente et la consommation d’alcool sont interdites ; le méthanol est toxique.",
+   "points": [
+    "R–OH ; CₙH₂ₙ₊₂O ; M = 14n + 18.",
+    "Primaire, secondaire, tertiaire.",
+    "Oxydation : aldéhyde/acide ; cétone ; rien.",
+    "Déshydratation → alcène (ou éther).",
+    "Combustion → CO₂ + H₂O."
+   ],
+   "application": {
+    "q": "Formule brute d’un alcool de masse molaire 60 g/mol ?",
+    "a": "14n + 18 = 60 ⇒ n = 3 : C₃H₈O."
+   },
+   "applications": [
+    {
+     "q": "0,1 mol d’alcool saturé donne 8,96 L de CO₂ (Vm = 22,4 L/mol). Formule brute ?",
+     "a": "n(CO₂) = 0,4 mol ⇒ n = 4 : C₄H₁₀O."
+    },
+    {
+     "q": "Nom et classe de CH₃–CHOH–CH₂–CH₃ ?",
+     "a": "Butan-2-ol, alcool secondaire."
+    }
+   ],
+   "board": [
+    {
+     "h": "Classes d’alcools",
+     "lines": [],
+     "table": [
+      [
+       "Classe",
+       "Exemple",
+       "Oxydation ménagée"
+      ],
+      [
+       "Primaire",
+       "éthanol CH₃–CH₂OH",
+       "aldéhyde puis acide"
+      ],
+      [
+       "Secondaire",
+       "propan-2-ol CH₃–CHOH–CH₃",
+       "cétone (propanone)"
+      ],
+      [
+       "Tertiaire",
+       "2-méthylpropan-2-ol",
+       "aucune"
+      ]
+     ]
+    },
+    {
+     "h": "Exemple 2 du manuel",
+     "lines": [
+      "Alcool à 50 % d’oxygène : M = 1600/50 = 32 g/mol ⇒ n = 1 : CH₃OH (méthanol)."
+     ]
+    },
+    {
+     "h": "Corrections",
+     "lines": [
+      "(Correction : p. 77, la déshydratation intramoléculaire d’un alcool conduit à un alcène, pas à « un éthène ».)",
+      "(Correction : p. 80, QCM 7 : il s’agit de l’hydratation d’un alcène dissymétrique, pas de sa « déshydratation ».)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 4 : Les engrais",
+   "match": [
+    "Les engrais"
+   ],
+   "pages": [
+    82,
+    93
+   ],
+   "objectives": [
+    "Comprendre le rôle d’un engrais.",
+    "Distinguer engrais organiques et minéraux ; lire une formule NPK.",
+    "Identifier les impacts environnementaux et les enjeux pour la Mauritanie."
+   ],
+   "intro": "Pourquoi les agriculteurs de la vallée du fleuve ajoutent-ils du compost ou de l’engrais à leurs champs ?",
+   "summary": "Les engrais sont des substances qui apportent aux plantes des éléments nutritifs pour améliorer leur croissance et le rendement des cultures (fertilisation). Les trois éléments principaux sont l’azote N (feuilles et tiges), le phosphore P (racines et floraison) et le potassium K (résistance aux maladies, maturation des fruits) ; la formule NPK indique leurs proportions. Engrais organiques (fumier, compost) : améliorent la structure du sol, libération lente. Engrais minéraux (industriels) : action rapide, dosage précis, mais risque de pollution. L’usage excessif provoque l’eutrophisation des eaux, la contamination des sols et des gaz à effet de serre : il faut une fertilisation raisonnée. Les plantes absorbent les éléments sous forme d’ions retenus par le complexe argilo-humique. En Mauritanie, le gisement de phosphate de Bofal (Brakna), estimé à plus de 60 millions de tonnes, reste non exploité.",
+   "points": [
+    "Engrais : apport de nutriments.",
+    "N : feuilles ; P : racines ; K : fruits et résistance.",
+    "Organiques (lents) / minéraux (rapides).",
+    "Excès : eutrophisation, pollution.",
+    "Bofal : phosphate mauritanien."
+   ],
+   "application": {
+    "q": "Un engrais 0-20-0 est-il riche en potassium ?",
+    "a": "Non : il ne contient que du phosphore (20 %) ; N = 0 et K = 0."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi ne pas sur-fertiliser ?",
+     "a": "Pollution des eaux (eutrophisation), dégradation des sols, gaspillage et coût."
+    },
+    {
+     "q": "Solution locale proposée en Mauritanie (PMAD) ?",
+     "a": "Le compost à base de déchets agricoles ou ménagers."
+    }
+   ],
+   "board": [
+    {
+     "h": "Organiques et minéraux",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Exemples",
+       "Avantages",
+       "Inconvénients"
+      ],
+      [
+       "Organique",
+       "fumier, compost",
+       "améliore le sol, libération lente",
+       "action lente"
+      ],
+      [
+       "Minéral",
+       "NPK, DAP, TSP",
+       "action rapide, dosage précis",
+       "pollution (eutrophisation)"
+      ]
+     ]
+    },
+    {
+     "h": "Chaîne de valeur (Bofal)",
+     "lines": [
+      "Extraction du phosphate → acide sulfurique + phosphate → acide phosphorique → engrais (DAP, TSP, NPK) → distribution aux coopératives."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "6A"
+}
