@@ -1,0 +1,2632 @@
+{
+ "subject": "ANG",
+ "book": "books/ANG_5ACDO.pdf",
+ "bookTitle": "Study English — 5th Year",
+ "lessons": [
+  {
+   "title": "Unit 1 – Lesson 1: A fire at Mariem’s building",
+   "match": [
+    "Unit 1 – Lesson 1: A fire at Mariem’s building"
+   ],
+   "pages": [
+    7,
+    9
+   ],
+   "objectives": [
+    "Talk and ask about past actions and events.",
+    "Form the simple past of regular and irregular verbs.",
+    "Tell a past experience in a short paragraph."
+   ],
+   "intro": "Have you ever seen a fire? What happened?",
+   "summary": "At the office, Mariem tells Moctar and Abdoul that there was a fire in her building the night before: some old stuff in the basement burned. She smelt something burning while she was coming close to the building, saw smoke as she was getting in, and called the firemen. They asked everybody to evacuate the building and dealt with the fire. Luckily, there was no serious damage.",
+   "points": [
+    "Simple past: regular verbs + -ed (called, played).",
+    "Spelling: carry → carried; like → liked.",
+    "Irregular verbs: break → broke, get → got, go → went, see → saw.",
+    "Question: How did it happen? / Negative: It didn’t …"
+   ],
+   "application": {
+    "q": "What did Mariem tell Moctar and Abdoul?",
+    "a": "That there was a fire in her building."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 7,
+      "rect": [
+       0.06,
+       0.18,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "To guess",
+       "to imagine"
+      ],
+      [
+       "To burn",
+       "to catch fire"
+      ],
+      [
+       "Stuff",
+       "accumulation of objects"
+      ],
+      [
+       "Basement",
+       "bottom of a building"
+      ],
+      [
+       "Damage",
+       "harm"
+      ],
+      [
+       "To smell",
+       "to perceive the odour of something"
+      ],
+      [
+       "To get in",
+       "to enter"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What did Mariem tell Moctar and Abdoul?",
+       "That there was a fire in her building."
+      ],
+      [
+       "When did it happen?",
+       "Last night (the previous night)."
+      ],
+      [
+       "Did Mariem see the fire?",
+       "She smelt something burning and saw some smoke."
+      ],
+      [
+       "Where did the fire start?",
+       "In the basement (some old stuff burned up)."
+      ],
+      [
+       "What did the firemen do before dealing with the fire?",
+       "They asked everybody to evacuate the building."
+      ]
+     ]
+    },
+    {
+     "h": "True or False",
+     "lines": [],
+     "table": [
+      [
+       "Statement",
+       "Answer"
+      ],
+      [
+       "a. Electricity went off in Mariem’s building.",
+       "False"
+      ],
+      [
+       "b. The fire started in an old apartment.",
+       "False (in the basement)"
+      ],
+      [
+       "c. Moctar didn’t know about the fire.",
+       "True"
+      ],
+      [
+       "d. Mariem called the firemen.",
+       "True"
+      ],
+      [
+       "e. The firemen extinguished the fire.",
+       "True (they dealt with it; no serious damage)"
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Regular verbs: base + -ed (call → called, wash → washed).",
+      "Consonant + y → -ied (carry → carried, study → studied, worry → worried).",
+      "Verbs ending in -e → add -d (move → moved, like → liked, hate → hated).",
+      "Irregular: break → broke, get → got, go → went, put → put, run → ran, see → saw."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "a. The old woman (to carry) her cat.",
+       "carried"
+      ],
+      [
+       "b. People (to go) in the building. – negative",
+       "didn’t go"
+      ],
+      [
+       "c. The firemen (to break) the windows. – interrogative",
+       "Did the firemen break the windows?"
+      ],
+      [
+       "d. Mariem (to get) home early.",
+       "got"
+      ],
+      [
+       "e. Some old stuff (to burn) out. – negative",
+       "didn’t burn"
+      ],
+      [
+       "f. They (to move) to Atar. – interrogative",
+       "Did they move to Atar?"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: In groups, talk about a fire you saw or heard about (a house, a market, the bush) and take notes.",
+      "Writing: Use your notes to write a short paragraph about that experience."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 1 – Lesson 2: At work",
+   "match": [
+    "Unit 1 – Lesson 2: At work"
+   ],
+   "pages": [
+    10,
+    12
+   ],
+   "objectives": [
+    "Talk about past actions in progress.",
+    "Use the past continuous tense.",
+    "Summarize a text in two or three lines."
+   ],
+   "intro": "Is it a problem to be late at school or at work? Why?",
+   "summary": "At 10 o’clock, Mohamed, a clerk, was standing in front of the office of Mr Brahim, the company manager. He was late as usual, tense and afraid. When he got in, the boss, who was writing at his desk, stared at him and asked why he was always late. Mohamed explained that he had come at eight, prepared the letters for the customers and gone out to have tea. The boss accepted but reminded him that he should always inform the secretary before going out.",
+   "points": [
+    "Past continuous: was/were + verb-ing.",
+    "Used for an action in progress in the past: Mohamed was standing…",
+    "Opposites: in front of ≠ behind, to get in ≠ to get out."
+   ],
+   "application": {
+    "q": "What time was Mohamed waiting at the door?",
+    "a": "At 10 o’clock."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 10,
+      "rect": [
+       0.06,
+       0.18,
+       0.94,
+       0.765
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Boss",
+       "head, chief"
+      ],
+      [
+       "As usual",
+       "as habitual"
+      ],
+      [
+       "To be tense",
+       "to be nervous"
+      ],
+      [
+       "To raise one’s eyes",
+       "to look up at someone"
+      ],
+      [
+       "To stare at",
+       "to look fixedly"
+      ],
+      [
+       "Matter",
+       "issue, problem"
+      ],
+      [
+       "Goods",
+       "merchandise"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What time was Mohamed waiting at the door?",
+       "At 10 o’clock."
+      ],
+      [
+       "Who was the man sitting at the desk?",
+       "Mr Brahim, the company manager (Mohamed’s boss)."
+      ],
+      [
+       "Why was Mohamed tense?",
+       "Because he was late as usual and afraid of the meeting with his boss."
+      ],
+      [
+       "Why did the boss stare at Mohamed?",
+       "Because he was always late and the boss had been looking for him urgently."
+      ],
+      [
+       "Another title?",
+       "E.g. “Late again!” / “The late clerk”."
+      ]
+     ]
+    },
+    {
+     "h": "True or False",
+     "lines": [],
+     "table": [
+      [
+       "Statement",
+       "Answer"
+      ],
+      [
+       "a. At 10 o’clock Mohamed wasn’t standing in front of Mr Brahim’s office.",
+       "False"
+      ],
+      [
+       "b. When the door opened Mohamed wasn’t face to face with his boss.",
+       "False"
+      ],
+      [
+       "c. The clerk said that he was preparing letters for his boss.",
+       "False (letters for the customers)"
+      ],
+      [
+       "d. The boss replied that they can’t go out without telling the secretary.",
+       "True"
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Subject + was/were + verb-ing.",
+      "I was learning English in a private centre.",
+      "My brother was studying at the university.",
+      "The schoolboys were singing the national anthem."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Match: 1. to be nowhere",
+       "e. to be everywhere"
+      ],
+      [
+       "2. in front of",
+       "d. behind"
+      ],
+      [
+       "3. to get in",
+       "b. to get out"
+      ],
+      [
+       "4. to ask",
+       "c. to answer"
+      ],
+      [
+       "5. to raise one’s eyes",
+       "a. to look down"
+      ],
+      [
+       "Past continuous in the text",
+       "was standing, was sitting / writing, were waiting, was looking"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Why is coming late to school or work a bad habit? Discuss with your neighbour.",
+      "Writing: Summarize the text in two or three lines."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 1 – Lesson 3: A job interview",
+   "match": [
+    "Unit 1 – Lesson 3: A job interview"
+   ],
+   "pages": [
+    13,
+    16
+   ],
+   "objectives": [
+    "Ask and answer about past experiences.",
+    "Use the present perfect (ever, never, for, since, yet…).",
+    "Take part in a job interview."
+   ],
+   "intro": "What questions does an employer ask in a job interview?",
+   "summary": "An applicant has an interview with a TV manager for a job as a TV reporter. The manager has examined his diplomas and résumé. The applicant has worked for Mauritania National Radio as an announcer for six years, has recently worked for an international radio corporation and has done radio reports for the BBC, DW and Radio Monte Carlo. He has visited several countries. He hasn’t got married yet. The manager will contact him in about a week.",
+   "points": [
+    "Present perfect: have/has + past participle.",
+    "For recent past actions with unspecified time.",
+    "Adverbs: already, recently, never, yet, just, ever, once, twice, for, since."
+   ],
+   "application": {
+    "q": "Who has the applicant worked for before?",
+    "a": "For Mauritania National Radio, an international radio corporation and private international radio stations (BBC, DW, Radio Monte Carlo)."
+   },
+   "board": [
+    {
+     "h": "Dialogue (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 13,
+      "rect": [
+       0.06,
+       0.19,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Dialogue (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.06,
+       0.06,
+       0.94,
+       0.37
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Applicant",
+       "candidate"
+      ],
+      [
+       "Résumé",
+       "curriculum vitae (CV)"
+      ],
+      [
+       "Corporation",
+       "company, business, agency"
+      ],
+      [
+       "Recently",
+       "lately, not long ago"
+      ],
+      [
+       "Abroad",
+       "in or to a foreign country"
+      ],
+      [
+       "Such as",
+       "like"
+      ],
+      [
+       "Area of",
+       "domain, field"
+      ],
+      [
+       "To make money",
+       "to make a profit"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "Who has the applicant worked for before?",
+       "For Mauritania National Radio, an international radio corporation and private international radio stations (BBC, DW, Radio Monte Carlo)."
+      ],
+      [
+       "Has he ever worked as a TV reporter?",
+       "No, he has worked in radio."
+      ],
+      [
+       "How long has he worked for Mauritania National Radio?",
+       "For six years."
+      ],
+      [
+       "Has he ever been out of his country?",
+       "Yes, he has visited several countries."
+      ],
+      [
+       "When will he get the result?",
+       "In about a week."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Affirmative: I have (I’ve) visited Chinguetti several times.",
+      "Negative: I haven’t got married yet.",
+      "Interrogative: Have you ever travelled abroad?",
+      "Time adverbs: already, recently, lately, never, yet, just, ever, once, twice, for, since."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Complete: a. BBC is an international …",
+       "corporation"
+      ],
+      [
+       "b. Moussa has never travelled …",
+       "abroad"
+      ],
+      [
+       "c. My brother has found a good job …",
+       "recently"
+      ],
+      [
+       "d. Bring a … to complete your file.",
+       "résumé"
+      ],
+      [
+       "e. … in the … aids",
+       "area of"
+      ],
+      [
+       "f. a public or … company",
+       "private"
+      ],
+      [
+       "g. I usually wake up … to pray.",
+       "early"
+      ],
+      [
+       "Present perfect: a. You (be) ever to Montreal?",
+       "Have you ever been to Montreal?"
+      ],
+      [
+       "b. He (play) golf for several years.",
+       "He has played golf for several years."
+      ],
+      [
+       "c. She (go) to London twice. – negative",
+       "She hasn’t gone (been) to London twice."
+      ],
+      [
+       "d. They (have) just breakfast.",
+       "They have just had breakfast."
+      ],
+      [
+       "e. I (live) in Ksar since 2001. – negative",
+       "I haven’t lived in Ksar since 2001."
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: In pairs, ask about past experiences: “Have you ever…?” / “Did you…?” (drink tea, play football, study English, work for a private company…).",
+      "Writing: Write sentences about your experiences with already, yet, recently, for, never, once, twice, many times."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 2 – Lesson 1: Brahim’s hometown",
+   "match": [
+    "Unit 2 – Lesson 1: Brahim’s hometown"
+   ],
+   "pages": [
+    17,
+    20
+   ],
+   "objectives": [
+    "Describe a place and people in the past.",
+    "Use the past progressive (affirmative, negative, questions).",
+    "Write about one’s hometown."
+   ],
+   "intro": "What do you know about Chinguetti?",
+   "summary": "Brahim lives in Nouakchott, but when he was young he used to live in Chinguetti, an ancient Islamic town in northern Mauritania. It was pretty and clean; there were beautiful old houses, many old and famous libraries and a splendid mosque of stone and mud, visited by people from remote places. People were friendly and open-minded, and there were lovely small inns for tourists. But being in the desert, most houses of the ancient section were almost buried under dunes, and people were always pushing the dunes back while sand storms kept covering the town.",
+   "points": [
+    "Past progressive: was/were + verb-ing.",
+    "Negative: was not (wasn’t) / were not (weren’t).",
+    "Questions: Were you speaking? – Yes, I was / No, I wasn’t.",
+    "Used to + verb: past habit (I used to live in Chinguetti)."
+   ],
+   "application": {
+    "q": "Name of Brahim’s hometown?",
+    "a": "Chinguetti."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 17,
+      "rect": [
+       0.06,
+       0.2,
+       0.94,
+       0.735
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Pretty",
+       "beautiful"
+      ],
+      [
+       "Stone",
+       "pieces of rock"
+      ],
+      [
+       "Clean",
+       "free from dirt"
+      ],
+      [
+       "Mud",
+       "soft matter from earth mixed with water"
+      ],
+      [
+       "Famous",
+       "well-known"
+      ],
+      [
+       "Splendid",
+       "magnificent, superb"
+      ],
+      [
+       "Open-minded",
+       "receptive"
+      ],
+      [
+       "Desperately",
+       "hopelessly"
+      ],
+      [
+       "Inns",
+       "guest houses"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "Name of Brahim’s hometown?",
+       "Chinguetti."
+      ],
+      [
+       "Where is it located?",
+       "In northern Mauritania, in the desert."
+      ],
+      [
+       "How was it?",
+       "Pretty and clean, with old houses, famous libraries and a splendid mosque."
+      ],
+      [
+       "How were the people?",
+       "Very friendly and open-minded."
+      ],
+      [
+       "What were people doing permanently?",
+       "Sweeping inside and outside their houses and pushing the dunes back."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Affirmative: I/he/she/it was speaking; we/you/they were speaking.",
+      "Negative: I was not speaking; they were not speaking.",
+      "Questions: Was Aly talking on the phone? – Yes, he was / No, he wasn’t."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Opposites: dirty",
+       "clean"
+      ],
+      [
+       "unknown",
+       "famous"
+      ],
+      [
+       "ugly",
+       "pretty"
+      ],
+      [
+       "narrow-minded",
+       "open-minded"
+      ],
+      [
+       "new",
+       "old (ancient)"
+      ],
+      [
+       "a. Mohamed (go) slowly. – negative",
+       "Mohamed wasn’t going slowly."
+      ],
+      [
+       "b. The police (chase) him.",
+       "The police were chasing him."
+      ],
+      [
+       "c. The girls (stand) next to the traffic light? ",
+       "Were the girls standing next to the traffic light?"
+      ],
+      [
+       "d. They (look) for a bus.",
+       "They were looking for a bus."
+      ],
+      [
+       "e. The woman (write) a check. – negative",
+       "The woman wasn’t writing a check."
+      ],
+      [
+       "f. The bell (ring)?",
+       "Was the bell ringing?"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Would you like to live in a town like Chinguetti? Why or why not?",
+      "Writing: Write a paragraph about your hometown or neighbourhood: what it is like, its problems, whether you like living there."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 2 – Lesson 2: The two friends",
+   "match": [
+    "Unit 2 – Lesson 2: The two friends"
+   ],
+   "pages": [
+    21,
+    23
+   ],
+   "objectives": [
+    "Describe people’s appearance and character.",
+    "Form adverbs of manner (adjective + -ly).",
+    "Compare two people."
+   ],
+   "intro": "Describe your best friend in three words.",
+   "summary": "Mohamed and Ali, from Nouakchott, are neighbours and classmates, about 17 years old; they speak English fluently. Mohamed is tall with long black hair; Ali is rather short with curly bushy hair. Their characters differ: Mohamed is shy, speaks slowly, moves carefully, seldom gets angry, but has a strong character; he is kind, generous, prays at the mosque and obeys his parents. Ali is good-looking, always smiling, daring and stubborn; he is sometimes aggressive, but kind and obedient to his mother. Both recited the Koran young, and they are inseparable.",
+   "points": [
+    "Physical description: tall, short, long black hair, curly hair.",
+    "Character: shy, kind, generous, daring, stubborn, obedient.",
+    "Contrast: whereas, however, but.",
+    "Adverbs of manner: fluent → fluently, careful → carefully."
+   ],
+   "application": {
+    "q": "Relationship between Mohamed and Ali?",
+    "a": "They are neighbours, classmates and close friends."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 21,
+      "rect": [
+       0.06,
+       0.185,
+       0.94,
+       0.79
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Fluently",
+       "very well"
+      ],
+      [
+       "Convinced",
+       "persuaded"
+      ],
+      [
+       "Beggar",
+       "very poor person who lives by asking for money or food"
+      ],
+      [
+       "Obedient",
+       "compliant, dutiful"
+      ],
+      [
+       "Daring",
+       "audacious"
+      ],
+      [
+       "Stubborn",
+       "headstrong"
+      ],
+      [
+       "Bully",
+       "intimidator, oppressor"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "Relationship between Mohamed and Ali?",
+       "They are neighbours, classmates and close friends."
+      ],
+      [
+       "Same age?",
+       "Yes."
+      ],
+      [
+       "How old exactly?",
+       "About 17 (the text does not give the exact age)."
+      ],
+      [
+       "How do they dress?",
+       "They wear blue jeans, like most youngsters of their age."
+      ],
+      [
+       "Big difference between them?",
+       "Yes, in appearance and character (Mohamed is shy and calm; Ali is daring and stubborn)."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Adjective + -ly = adverb of manner.",
+      "fluent → fluently: Aichetou speaks Hassaniya fluently.",
+      "beautiful → beautifully: she sings very beautifully."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "a. The hunter didn’t run away… he was very …",
+       "daring"
+      ],
+      [
+       "b. He speaks Spanish very …",
+       "fluently"
+      ],
+      [
+       "c. Fatou is very … She never obeys orders.",
+       "stubborn"
+      ],
+      [
+       "d. a lot of … in front of mosques",
+       "beggars"
+      ],
+      [
+       "e. youngsters are not as … as in the past",
+       "obedient"
+      ],
+      [
+       "Chart: careful / exact / proper / shy / quick",
+       "carefully / exactly / properly / shyly / quickly"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Which of the two boys do you find more sympathetic? Why?",
+      "Writing: In a few lines, compare two friends, relatives or people you know."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 2 – Lesson 3: Visiting Nouakchott",
+   "match": [
+    "Unit 2 – Lesson 3: Visiting Nouakchott"
+   ],
+   "pages": [
+    24,
+    26
+   ],
+   "objectives": [
+    "Describe places with adjectives and actions with adverbs.",
+    "Understand basic facts about HIV and its prevention.",
+    "Write a short paragraph on prevention."
+   ],
+   "intro": "What important places would you show a visitor in Nouakchott?",
+   "summary": "Meima visits her cousin Aissata in Nouakchott. Driving to the beach, they pass the National Hospital (big compared to the village dispensary), the tuberculosis centre and the HIV centre. Aissata explains that being infected does not necessarily mean being sick: one can live with the virus without symptoms; HIV-positive people must take their medicines regularly to slow down the disease, and AIDS treatment is free. The virus is transmitted through blood transfusion or sexual intercourse. To avoid it: religion forbids sexual intercourse outside marriage, and doctors advise prevention methods; radio and TV programmes deal with the issue.",
+   "points": [
+    "Adjectives describe things: big, good, beautiful.",
+    "Adverbs of manner describe actions: carefully, slowly, regularly.",
+    "HIV: infected ≠ always sick; treatment is free.",
+    "Prevention: religion, medical advice, awareness programmes."
+   ],
+   "application": {
+    "q": "Who is Meima?",
+    "a": "Aissata’s cousin, visiting Nouakchott from her village."
+   },
+   "board": [
+    {
+     "h": "Dialogue (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 24,
+      "rect": [
+       0.06,
+       0.165,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Dialogue (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 25,
+      "rect": [
+       0.06,
+       0.06,
+       0.94,
+       0.24
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Beach",
+       "seaside, seashore, coast"
+      ],
+      [
+       "HIV positive",
+       "person infected with the AIDS virus"
+      ],
+      [
+       "Symptom",
+       "sign, indicator"
+      ],
+      [
+       "Free of charge",
+       "for free"
+      ],
+      [
+       "Prevention",
+       "precaution, avoidance"
+      ],
+      [
+       "To occur",
+       "to happen"
+      ],
+      [
+       "First of all",
+       "firstly, at first"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "Who is Meima?",
+       "Aissata’s cousin, visiting Nouakchott from her village."
+      ],
+      [
+       "What did she want to do?",
+       "To see and know everything about Nouakchott."
+      ],
+      [
+       "Where is the HIV centre?",
+       "Near the National Hospital and the tuberculosis centre, on the way to the beach."
+      ],
+      [
+       "Many visitors at the HIV centre?",
+       "Yes, Meima saw many people there."
+      ],
+      [
+       "What must HIV-positive people do?",
+       "Take their medicines regularly to slow down the disease."
+      ],
+      [
+       "Do they pay for treatment?",
+       "No, AIDS treatment is usually free of charge."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Adjectives of description: big, good, beautiful, intelligent… – The National Hospital is big!",
+      "Adverbs of manner: carefully, nicely, happily… – He has to carefully follow his doctor’s prescriptions."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Happy / big / intelligent",
+       "e.g. People in my neighbourhood are happy. The market is big. My cousin is intelligent."
+      ],
+      [
+       "Carefully / happily / sadly",
+       "e.g. Drivers must drive carefully. The children play happily. He left sadly."
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: In groups: why has HIV spread so rapidly through the world?",
+      "Writing: Write a short paragraph about the best methods of prevention from HIV/AIDS."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 2 – Lesson 4: The electoral campaign",
+   "match": [
+    "Unit 2 – Lesson 4: The electoral campaign"
+   ],
+   "pages": [
+    27,
+    30
+   ],
+   "objectives": [
+    "Report what someone said (reported speech with tense changes).",
+    "Talk about an election campaign.",
+    "Give and justify an opinion."
+   ],
+   "intro": "What do candidates usually promise during a campaign?",
+   "summary": "Aicha attended a presidential campaign meeting of the opposition; Leila couldn’t go because she wasn’t feeling well. Aicha says the meeting was crowded and exciting and the candidate brilliant. He said he would improve living conditions (lower food prices, higher salaries), build schools, roads and hospitals, reinforce security, national unity, justice and equality, and pay more attention to girls’ schooling and women’s participation. Leila doesn’t believe politicians’ promises because once elected they often forget them; Aicha thinks some are honest.",
+   "points": [
+    "Reported speech: the tense goes one step back after a past reporting verb.",
+    "will → would; am → was; has gone → had gone.",
+    "Pronouns change: “I am ready” → he said he was ready."
+   ],
+   "application": {
+    "q": "What was the meeting about?",
+    "a": "The next presidential elections (an opposition campaign meeting)."
+   },
+   "board": [
+    {
+     "h": "Dialogue (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 27,
+      "rect": [
+       0.06,
+       0.175,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Dialogue (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 28,
+      "rect": [
+       0.06,
+       0.06,
+       0.94,
+       0.355
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "To improve",
+       "to make better"
+      ],
+      [
+       "To perform",
+       "to do, to act"
+      ],
+      [
+       "To reinforce",
+       "to strengthen"
+      ],
+      [
+       "Citizen",
+       "a national"
+      ],
+      [
+       "Pessimistic",
+       "negative"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What was the meeting about?",
+       "The next presidential elections (an opposition campaign meeting)."
+      ],
+      [
+       "Did Leila want to attend?",
+       "Yes, but she couldn’t because she wasn’t feeling well."
+      ],
+      [
+       "Was the meeting crowded?",
+       "Yes, there were too many people."
+      ],
+      [
+       "Aicha’s opinion of the candidate?",
+       "He was brilliant and would be a good president."
+      ],
+      [
+       "His promises?",
+       "Better living conditions, lower food prices, higher salaries, schools, roads, hospitals, security, national unity, justice, equality, girls’ schooling, women’s participation."
+      ],
+      [
+       "Why doesn’t Leila believe politicians?",
+       "Because once elected they never keep their promises and forget their supporters."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Simple present → simple past: “I am ready.” → He said he was ready.",
+      "Present continuous → past continuous.",
+      "Present perfect / simple past → past perfect.",
+      "Will → would: “I’ll go home.” → She said she would go home."
+     ],
+     "table": [
+      [
+       "Direct",
+       "Reported"
+      ],
+      [
+       "am / is",
+       "was"
+      ],
+      [
+       "am enjoying",
+       "was enjoying"
+      ],
+      [
+       "has gone",
+       "had gone"
+      ],
+      [
+       "went",
+       "had gone"
+      ],
+      [
+       "will",
+       "would"
+      ]
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "a. Penda said, “I am enjoying my new job.”",
+       "Penda said (that) she was enjoying her new job."
+      ],
+      [
+       "b. Ahmed said, “My sister has gone to Nouadhibou.”",
+       "Ahmed said (that) his sister had gone to Nouadhibou."
+      ],
+      [
+       "c. Saly said, “I don’t like the new boss.”",
+       "Saly said (that) she didn’t like the new boss."
+      ],
+      [
+       "d. “I’ll send you a postcard,” Omar said to his sister.",
+       "Omar told his sister (that) he would send her a postcard."
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Talk with a friend about the last election campaign you attended.",
+      "Writing: In a few lines, write about an election campaign in your village or neighbourhood."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 3 – Lesson 1: The job applicants",
+   "match": [
+    "Unit 3 – Lesson 1: The job applicants"
+   ],
+   "pages": [
+    31,
+    33
+   ],
+   "objectives": [
+    "Ask for and give opinions; agree and disagree.",
+    "Join clauses with connectors (and, but, because, however, besides).",
+    "Justify a choice."
+   ],
+   "intro": "What makes a good candidate for a job?",
+   "summary": "Oumou, Hassan and Cheikh run a fishing company and need an accountant. Two applicants, Samba and Zeinab, are both good. Oumou prefers Zeinab; Hassan wants Samba, who is younger and works faster; Cheikh disagrees: Zeinab has more education and more experience. Finally Oumou agrees with Cheikh: Zeinab can have the job.",
+   "points": [
+    "Asking: How do you feel about…? What’s your opinion?",
+    "Giving: In my opinion…, I think…",
+    "Agreeing / disagreeing: You are right! / I’m sorry but I don’t agree.",
+    "Connectors: and, but, because, however, besides."
+   ],
+   "application": {
+    "q": "Another title?",
+    "a": "E.g. “Choosing an accountant”."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 31,
+      "rect": [
+       0.06,
+       0.18,
+       0.94,
+       0.845
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Accountant",
+       "someone who keeps the records of money of a company or person"
+      ],
+      [
+       "To hire",
+       "to recruit"
+      ],
+      [
+       "According to",
+       "based on"
+      ],
+      [
+       "How do you feel about…?",
+       "What’s your opinion about…?"
+      ],
+      [
+       "As far as",
+       "regarding, concerning"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "Another title?",
+       "E.g. “Choosing an accountant”."
+      ],
+      [
+       "What do Oumou, Hassan and Cheikh do?",
+       "They run a fishing company."
+      ],
+      [
+       "Who is right, Hassan or Cheikh?",
+       "Personal answer; e.g. Cheikh, because education and experience matter more than age."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Main clause + connector + subordinate clause.",
+      "We didn’t have class because the teacher was absent.",
+      "She is very kind with everybody; besides, she is intelligent."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. … doctors, we should eat more vegetables",
+       "According to"
+      ],
+      [
+       "2. … women’s liberation in the Islamic society?",
+       "How do you feel about"
+      ],
+      [
+       "3. … Mustafa, the results will be out next week.",
+       "According to"
+      ],
+      [
+       "4. Last month, my neighbours … a new maid.",
+       "hired"
+      ],
+      [
+       "Connectors",
+       "e.g. I was tired, but I finished my homework. I stayed home because it was raining."
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: In groups, choose the classmate most qualified to represent your class.",
+      "Writing: In a few lines, give your opinion about your choice."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 3 – Lesson 2: Summer holidays plan",
+   "match": [
+    "Unit 3 – Lesson 2: Summer holidays plan"
+   ],
+   "pages": [
+    34,
+    38
+   ],
+   "objectives": [
+    "Ask for and give opinions about plans.",
+    "Form adverbs of manner and superlatives.",
+    "Compare life in the city and in the countryside."
+   ],
+   "intro": "Where would you like to spend your summer holidays?",
+   "summary": "After passing their exams, Mohamed and Haroun plan their holidays. Mohamed refuses to stay in Nouakchott: last year was a mess, they were penniless, and Nouakchott has become a consumer society where everything costs money. He prefers the countryside: fresh air, traditional food, mineral water, beautiful landscapes, and money is not everything there. They choose the east, the Hodhs; Mohamed says people there are hospitable and helpful, and they plan to leave on Monday.",
+   "points": [
+    "Adverbs: adjective + -ly (honest → honestly); happy → happily.",
+    "Irregular: good → well, fast → fast, hard → hard.",
+    "Superlatives: the + adj-est (the smallest); the most + long adj (the most comfortable).",
+    "Irregular: good → the best, bad → the worst, far → the farthest/furthest."
+   ],
+   "application": {
+    "q": "What did they decide to do after the exams?",
+    "a": "To decide where to spend their summer holidays."
+   },
+   "board": [
+    {
+     "h": "Dialogue (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 34,
+      "rect": [
+       0.06,
+       0.18,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Dialogue (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 35,
+      "rect": [
+       0.06,
+       0.06,
+       0.94,
+       0.26
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Mess",
+       "not organized"
+      ],
+      [
+       "Can afford",
+       "can handle (the cost)"
+      ],
+      [
+       "To spare",
+       "to put aside, to save"
+      ],
+      [
+       "Countryside",
+       "inner region"
+      ],
+      [
+       "Frankly",
+       "truly, sincerely"
+      ],
+      [
+       "Landscape",
+       "terrain"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What did they decide to do after the exams?",
+       "To decide where to spend their summer holidays."
+      ],
+      [
+       "Why not Nouakchott?",
+       "Last year was a mess, they had no money, and in Nouakchott everything costs money."
+      ],
+      [
+       "Why the countryside?",
+       "Fresh air, traditional food, mineral water, beautiful landscapes, and money is not everything there."
+      ],
+      [
+       "Where are they going?",
+       "To the east, the Hodhs."
+      ],
+      [
+       "Do they need a lot of money there?",
+       "No, people there are hospitable and helpful."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "successful → successfully, honest → honestly, exact → exactly, polite → politely.",
+      "happy → happily, angry → angrily, easy → easily.",
+      "small → the smallest; comfortable → the most comfortable.",
+      "good → the best; bad → the worst; far → the farthest/furthest."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Opposites: mess / penniless / consumer / reasonable / beautiful",
+       "order / rich / producer / unreasonable / ugly"
+      ],
+      [
+       "a. Mauritania has various beautiful …",
+       "landscapes"
+      ],
+      [
+       "b. I … buying this computer.",
+       "can’t afford"
+      ],
+      [
+       "c. The traditional society is …",
+       "hospitable"
+      ],
+      [
+       "d. Ali is weak, however he … to pass",
+       "managed"
+      ],
+      [
+       "e. … that’s why it is a …",
+       "mess"
+      ],
+      [
+       "A. a. That is … what I was looking for.",
+       "exactly"
+      ],
+      [
+       "b. We spent our holidays …",
+       "perfectly"
+      ],
+      [
+       "c. They will go … to the countryside.",
+       "straight"
+      ],
+      [
+       "d. … but they work …",
+       "hard"
+      ],
+      [
+       "B. a. sleeping / b. drives / c. speak / d. choose / e. runs",
+       "deeply / carefully / politely / blindly / fast"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: In groups, discuss life in the city and in the countryside.",
+      "Writing: In no less than six lines, talk about your last summer holidays."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 4: A frightening experience",
+   "match": [
+    "Unit 4: A frightening experience"
+   ],
+   "pages": [
+    39,
+    42
+   ],
+   "objectives": [
+    "Express simultaneous past actions.",
+    "Use while / when with the past continuous and the simple past.",
+    "Conduct and write an interview."
+   ],
+   "intro": "Have you ever been really frightened? What happened?",
+   "summary": "Fatma tells Noura about her frightening night. She was watching TV when she heard a scream and a crash: someone had broken into the flat and surprised her maid Amy, who fell unconscious. While Fatma was calling her neighbour Ali, a policeman, she heard footsteps coming towards her room. She called her maid’s name, in vain. Then she saw her husband Salem and was relieved: while he was visiting his parents, his boss had called him back, and he couldn’t phone because the network was bad.",
+   "points": [
+    "Past continuous: long action in progress; simple past: short event.",
+    "While + past continuous (+ past continuous or simple past).",
+    "When + simple past: I was sleeping when the phone rang."
+   ],
+   "application": {
+    "q": "What happened to Fatma?",
+    "a": "She had a frightening experience: someone broke into the flat."
+   },
+   "board": [
+    {
+     "h": "Dialogue (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 39,
+      "rect": [
+       0.06,
+       0.17,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Dialogue (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 40,
+      "rect": [
+       0.06,
+       0.06,
+       0.94,
+       0.235
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Frightening",
+       "scary"
+      ],
+      [
+       "Sharp",
+       "loud"
+      ],
+      [
+       "Scream",
+       "shout"
+      ],
+      [
+       "Loud",
+       "noisy"
+      ],
+      [
+       "Maid",
+       "servant"
+      ],
+      [
+       "Oh my God! / Good heavens!",
+       "expressions of surprise or fear"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What happened to Fatma?",
+       "She had a frightening experience: someone broke into the flat."
+      ],
+      [
+       "What was she watching?",
+       "A TV programme."
+      ],
+      [
+       "Who fell unconscious?",
+       "Amy, the maid."
+      ],
+      [
+       "Why was Fatma relieved?",
+       "Because the person coming was her husband Salem."
+      ],
+      [
+       "Why didn’t Salem call?",
+       "The network was bad."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "While the teacher was explaining the lesson, Ali wasn’t listening.",
+      "While we were having dinner, the light went off.",
+      "When it began to rain, we were waiting for the bus."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Fill in: a / b / c / d",
+       "loud crash / broke into / in vain / soap operas"
+      ],
+      [
+       "a. While I (take) a shower, the doorbell (ring).",
+       "was taking / rang"
+      ],
+      [
+       "b. He (watch) TV when the light went off.",
+       "was watching"
+      ],
+      [
+       "c. The burglar (try) to run away when the policeman (stop) him.",
+       "was trying / stopped"
+      ],
+      [
+       "Fatou / her pen",
+       "Fatou was writing a letter when her pen broke."
+      ],
+      [
+       "Ahmed / his sister",
+       "Ahmed was watering the garden when his sister turned the tap off."
+      ],
+      [
+       "She / her husband",
+       "She was making tea while her husband was watching the news on TV."
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: You are a reporter: interview your neighbour, a football player injured in the stadium last week.",
+      "Writing: Write the interview as a dialogue."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 5: At the doctor’s",
+   "match": [
+    "Unit 5: At the doctor’s"
+   ],
+   "pages": [
+    43,
+    45
+   ],
+   "objectives": [
+    "Quote and report speech with a present reporting verb.",
+    "Talk about health problems with a doctor.",
+    "Describe what you did during a blackout."
+   ],
+   "intro": "What do you say to a doctor when you are hurt?",
+   "summary": "Doudou doesn’t go to work; he goes to see Dr Amadou. He hurt his foot during the blackout last night when he fell over his son’s toy truck. His wife thinks a bone may be broken, but the doctor says it is just a sprain, an X-ray isn’t necessary, and he will recommend something to calm the pain; all will be fine in a few days. (Humour: Doudou thinks the doctor asks if he broke the truck.)",
+   "points": [
+    "Quoted speech: exact words in quotation marks.",
+    "Reported speech: the idea, no quotation marks.",
+    "With a present reporting verb (says), the tense does not change; pronouns change."
+   ],
+   "application": {
+    "q": "What’s wrong with Doudou?",
+    "a": "He hurt his foot."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.06,
+       0.18,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Instead",
+       "in place of"
+      ],
+      [
+       "To hurt",
+       "to injure, damage"
+      ],
+      [
+       "Blackout",
+       "electricity cut"
+      ],
+      [
+       "Toy",
+       "plaything"
+      ],
+      [
+       "Truck",
+       "pickup"
+      ],
+      [
+       "Sprain",
+       "injury"
+      ],
+      [
+       "To recommend",
+       "to suggest"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "What’s wrong with Doudou?",
+       "He hurt his foot."
+      ],
+      [
+       "What does his wife say?",
+       "That maybe there’s a broken bone."
+      ],
+      [
+       "Is it true?",
+       "No, it’s just a sprain."
+      ],
+      [
+       "What happened to his foot?",
+       "He fell over his son’s toy truck during the blackout and sprained it."
+      ],
+      [
+       "Is an X-ray necessary?",
+       "No."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Moussa says, “I am hungry.” → Moussa says (that) he is hungry.",
+      "Fatou says, “I need my pen.” → Fatou says (that) she needs her pen."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "a. Sidi says, “I am sleepy.”",
+       "Sidi says (that) he is sleepy."
+      ],
+      [
+       "b. Salma says, “I don’t like chocolate.”",
+       "Salma says (that) she doesn’t like chocolate."
+      ],
+      [
+       "c. The man says, “I’m planning to take a trip.”",
+       "The man says he is planning to take a trip."
+      ],
+      [
+       "d. The woman says, “I call my doctor.”",
+       "The woman says she calls her doctor."
+      ],
+      [
+       "e. My brother says, “I’ll come to the meeting.”",
+       "My brother says he will come to the meeting."
+      ],
+      [
+       "f. They say, “We can’t afford buying a new car.”",
+       "They say they can’t afford buying a new car."
+      ],
+      [
+       "g. Demba says, “I wrote the letter last night.”",
+       "Demba says he wrote the letter last night."
+      ],
+      [
+       "h. The students say, “Our teacher is late again.”",
+       "The students say their teacher is late again."
+      ],
+      [
+       "Fill in: a / b / c / d / e",
+       "fell over / truck / blackout / hurts / toy"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: If you were Doudou, would you follow Dr Amadou’s advice or see another doctor? Why?",
+      "Writing: There was a blackout in your neighbourhood: in at least five lines, say what you did."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 6 – Lesson 1: Sidi’s evening",
+   "match": [
+    "Unit 6 – Lesson 1: Sidi’s evening"
+   ],
+   "pages": [
+    46,
+    48
+   ],
+   "objectives": [
+    "Express duration in the past (past continuous).",
+    "Use adverbs of manner.",
+    "Describe a family scene."
+   ],
+   "intro": "What does your family usually do in the evening?",
+   "summary": "Yesterday at eight, Mr Sidi was reading a newspaper while his wife Aicha was cleaning the tea set; their daughters Leila and Navissa were reciting Koran verses written on their tablets. Sidi’s friend Camara came in and was welcomed warmly. While the two men were chatting about social issues, Aicha was preparing tea in another room. The baby Ahmed woke up and cried because he didn’t see his mother; disturbed, the men went to the garden to talk peacefully.",
+   "points": [
+    "Past continuous: was/were + verb-ing for actions in progress.",
+    "While + past continuous for simultaneous actions.",
+    "Adverbs of manner: warmly, calmly, peacefully."
+   ],
+   "application": {
+    "q": "When were Sidi and Aicha in the living room?",
+    "a": "Yesterday evening at eight o’clock."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 46,
+      "rect": [
+       0.06,
+       0.18,
+       0.94,
+       0.71
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Tea set",
+       "vessels used to make and serve tea"
+      ],
+      [
+       "Tablets",
+       "wooden boards Koran learners write on"
+      ],
+      [
+       "Verses",
+       "lines, ayat"
+      ],
+      [
+       "Warmly",
+       "kindly, with a smile"
+      ],
+      [
+       "To retire",
+       "to leave (here: to withdraw to another place)"
+      ],
+      [
+       "Peacefully",
+       "calmly"
+      ],
+      [
+       "To keep on",
+       "to continue"
+      ],
+      [
+       "Issues",
+       "problems, matters"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "When were Sidi and Aicha in the living room?",
+       "Yesterday evening at eight o’clock."
+      ],
+      [
+       "What was Aicha doing?",
+       "Cleaning the tea set to make tea."
+      ],
+      [
+       "What were the daughters doing?",
+       "Reciting the Koran verses written on their tablets."
+      ],
+      [
+       "How was Camara welcomed?",
+       "Warmly."
+      ],
+      [
+       "Where was Aicha making tea?",
+       "In another room."
+      ],
+      [
+       "Why was the baby crying?",
+       "Because he didn’t see his mother around."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "They were sitting. I was riding my bike when I fell off.",
+      "Adverbs: warmly, calmly… You must work hard."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "a. Ali (read) while his brother (draw)",
+       "was reading / was drawing"
+      ],
+      [
+       "b. While the boys (play) soccer, the girls (applaud)",
+       "were playing / were applauding"
+      ],
+      [
+       "c. While the teacher (explain), his students (listen)",
+       "was explaining / were listening"
+      ],
+      [
+       "d. I (shake) while my friend (feel) hot",
+       "was shaking / was feeling"
+      ],
+      [
+       "Adverbs: a / b / c",
+       "hard / fast / silently"
+      ],
+      [
+       "Fill in: a / b / c",
+       "verses / keep on / conversation"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: In pairs: does Sidi’s family represent the Mauritanian family model?",
+      "Writing: Write about a day with friends: when each one did his task and how well."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 6 – Lesson 2: Mustafa’s life",
+   "match": [
+    "Unit 6 – Lesson 2: Mustafa’s life"
+   ],
+   "pages": [
+    49,
+    51
+   ],
+   "objectives": [
+    "Express duration with the present perfect (for, since).",
+    "Use already and yet.",
+    "Tell where one used to live and lives now."
+   ],
+   "intro": "Would you prefer to live in the city or in your village later?",
+   "summary": "Mustafa grew up in the south. After high school he studied at the University of Nouakchott, got a scholarship to study abroad, and came back to teach at the University of Nouakchott. His hobby was gardening (his friends called him the “amateur gardener”); it reminded him of the countryside. Married, he planted his first real garden in his big house. He has taught at the university for eight years and is well-known, but now he is tired of fame; he hasn’t decided yet to move to the countryside, but he has already chosen a place near Mederdra, his hometown.",
+   "points": [
+    "Present perfect + already (positive) / yet (negative, questions).",
+    "For + length of time; since + starting point.",
+    "Mauritania has been independent since 1960."
+   ],
+   "application": {
+    "q": "Where is Mustafa from?",
+    "a": "Mederdra, in the south."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 49,
+      "rect": [
+       0.06,
+       0.165,
+       0.94,
+       0.64
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "To graduate",
+       "to receive an academic diploma"
+      ],
+      [
+       "Scholarship",
+       "bursary"
+      ],
+      [
+       "Hobby",
+       "pastime"
+      ],
+      [
+       "To remind",
+       "to help remember"
+      ],
+      [
+       "To enjoy",
+       "to like, love"
+      ],
+      [
+       "To settle",
+       "to live permanently"
+      ],
+      [
+       "Hometown",
+       "birthplace"
+      ],
+      [
+       "Well-known",
+       "famous"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "Where is Mustafa from?",
+       "Mederdra, in the south."
+      ],
+      [
+       "Where did he grow up?",
+       "In the south of the country."
+      ],
+      [
+       "Where does he plan to live?",
+       "Near Mederdra, his hometown, in the countryside."
+      ],
+      [
+       "Favourite pastime?",
+       "Gardening."
+      ],
+      [
+       "How long has he taught at the university?",
+       "For eight years."
+      ],
+      [
+       "Where did he plant his first real garden?",
+       "In the big house he bought after he got married."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "I have already done my homework. / I haven’t bought a car yet.",
+      "Has she finished yet? – Yes, she has / No, she hasn’t.",
+      "They’ve been here for six hours / since 10:00."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "a. Collecting stamps is my favourite …",
+       "hobby"
+      ],
+      [
+       "b. I … listening to music",
+       "enjoy"
+      ],
+      [
+       "c. … decided to … in Kaedi",
+       "settle"
+      ],
+      [
+       "d. go on a … to study in Canada",
+       "scholarship"
+      ],
+      [
+       "e. Aioun is not my …",
+       "hometown"
+      ],
+      [
+       "f. can you … me an hour earlier",
+       "remind"
+      ],
+      [
+       "already / yet",
+       "e.g. I have already finished. She hasn’t visited Atar yet. Have you eaten yet?"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: How do you feel about Mustafa’s idea to leave Nouakchott and grow plants in the south?",
+      "Writing: In at least seven lines: where you used to live, how long, when and why you moved, how long you have lived where you are now."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 6 – Lesson 3: Pollution",
+   "match": [
+    "Unit 6 – Lesson 3: Pollution"
+   ],
+   "pages": [
+    52,
+    54
+   ],
+   "objectives": [
+    "Use the past perfect tense.",
+    "Explain the causes and effects of pollution.",
+    "Write a paragraph about reducing pollution."
+   ],
+   "intro": "What pollutes the air and the water in your town?",
+   "summary": "Aly, who used to live in a remote area of the countryside, now lives in Nouakchott and is amazed by all the fuss about pollution. His elder sister Amy explains: pollution is the fumes and chemical substances in the air we breathe, the water we drink and the products we eat, which threaten our lives. They come from plants, factories, car and plane exhausts. Dead fish floating on the sea show sea pollution; air pollution causes respiratory problems (asthma, bronchitis); land pollution destroys forests and vegetation. Aly agrees that something must be done.",
+   "points": [
+    "Past perfect: had + past participle.",
+    "Negative: had not; question: Had they…?",
+    "Pollution: air, water (sea), land.",
+    "Causes: factories, cars, planes, chemical substances."
+   ],
+   "application": {
+    "q": "Where did Aly use to live?",
+    "a": "In a remote area in the countryside."
+   },
+   "board": [
+    {
+     "h": "Dialogue (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 52,
+      "rect": [
+       0.06,
+       0.165,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Dialogue (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 53,
+      "rect": [
+       0.06,
+       0.06,
+       0.94,
+       0.18
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "Issue",
+       "matter, problem"
+      ],
+      [
+       "To be amazed",
+       "to be surprised"
+      ],
+      [
+       "Fuss",
+       "uproar, ado"
+      ],
+      [
+       "To breathe",
+       "to take air into the lungs and let it out"
+      ],
+      [
+       "Fumes",
+       "smoke, gases"
+      ],
+      [
+       "To threaten",
+       "to endanger"
+      ],
+      [
+       "Exhausts",
+       "waste gases from engines (the book’s “extremely tired” is the adjective “exhausted”)"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "Where did Aly use to live?",
+       "In a remote area in the countryside."
+      ],
+      [
+       "What would happen if he breathed polluted air?",
+       "He would certainly die (it threatens life)."
+      ],
+      [
+       "Why was Aly amazed?",
+       "By all the fuss about pollution everywhere."
+      ],
+      [
+       "How can air be polluted?",
+       "By fumes from plants, factories, car and plane exhausts."
+      ],
+      [
+       "How can water be polluted?",
+       "By chemical substances poured into the sea."
+      ],
+      [
+       "Is pollution serious?",
+       "Yes, very serious."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Affirmative: They had lived in Atar for a long time.",
+      "Negative: They had not lived in Atar for a long time.",
+      "Question: Had they lived in Atar for a long time?"
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Fill in: a / b / c",
+       "issue / countryside / amazed … fuss"
+      ],
+      [
+       "a. He (walk) along the street.",
+       "He had walked along the street."
+      ],
+      [
+       "b. The man (drive) a hundred km. – negative",
+       "The man had not driven a hundred kilometres."
+      ],
+      [
+       "c. He (write) the letter last night? ",
+       "Had he written the letter last night?"
+      ],
+      [
+       "d. I (lock) the doors before I went to sleep.",
+       "I had locked the doors…"
+      ],
+      [
+       "e. She (wash) all the dishes. – negative",
+       "She had not washed all the dishes."
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With a partner, discuss the impact of pollution on our environment.",
+      "Writing: Write a paragraph: what pollution is, how bad it is, health problems it causes, what we can do."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 7: Planning to go to the university",
+   "match": [
+    "Unit 7: Planning to go to the university"
+   ],
+   "pages": [
+    55,
+    57
+   ],
+   "objectives": [
+    "Express unreal conditions (If + past, would + verb).",
+    "Talk about university plans.",
+    "Write about one’s future studies."
+   ],
+   "intro": "What would you like to study after the baccalaureate?",
+   "summary": "Kader and Cherif have just finished high school. Cherif will enrol in the faculty of law and economics to become a lawyer; Kader says that if he were him he would study English, which is more and more important. Cherif will attend English evening classes. Kader wants to study abroad: if the government gave him the scholarship he applied for, he would enrol in a famous university to study international relations; he dreams of working for an international institution or becoming a diplomat.",
+   "points": [
+    "Unreal conditional: If + simple past, would/could + verb.",
+    "If I were you, I would…",
+    "Real future plans: I will enrol…"
+   ],
+   "application": {
+    "q": "After university graduation?",
+    "a": "No, after they graduated from high school."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 55,
+      "rect": [
+       0.06,
+       0.18,
+       0.94,
+       0.94
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "To enrol",
+       "to register"
+      ],
+      [
+       "Field",
+       "domain, subject"
+      ],
+      [
+       "To be aware of",
+       "to know about"
+      ],
+      [
+       "Lawyer",
+       "attorney"
+      ],
+      [
+       "To apply for",
+       "to request"
+      ],
+      [
+       "Demanding",
+       "requiring much effort"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "After university graduation?",
+       "No, after they graduated from high school."
+      ],
+      [
+       "Where will Cherif study?",
+       "At the faculty of law and economics."
+      ],
+      [
+       "What does Kader plan to study?",
+       "International relations."
+      ],
+      [
+       "Will Kader go to the University of Nouakchott?",
+       "No, he wants to study abroad if he gets the scholarship."
+      ],
+      [
+       "Is Cherif going to learn English at the university?",
+       "No, he will attend English evening classes while studying law."
+      ],
+      [
+       "Kader’s dream?",
+       "To work for an international institution or become a diplomat."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "If I could help you, I would be glad to do it.",
+      "If I were you, I wouldn’t go out late at night.",
+      "If I knew how to drive, I would buy a car."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "Fill in: a / b / c / d",
+       "apply / demanding / enrol / aware of"
+      ],
+      [
+       "a. If it (not rain), people… would suffer",
+       "didn’t rain"
+      ],
+      [
+       "b. If you asked him…, he (not do) it.",
+       "wouldn’t do"
+      ],
+      [
+       "c. If they (play) well, they could win.",
+       "played"
+      ],
+      [
+       "d. If you (speak) English well, you (can) get a good job.",
+       "spoke / could"
+      ],
+      [
+       "e. If I (be) you, I wouldn’t spend…",
+       "were"
+      ]
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Discuss with a classmate the subjects you would like to study at university.",
+      "Writing: Write a short paragraph: what and where you would study if you got the baccalaureate."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "5A"
+}
