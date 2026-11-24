@@ -1,0 +1,1413 @@
+{
+ "subject": "SN",
+ "book": "books/SN_6C.pdf",
+ "bookTitle": "Sciences Naturelles 6ème M",
+ "lessons": [
+  {
+   "title": "Unité I : Localisation de l’information génétique",
+   "match": [
+    "Localisation de l’information génétique"
+   ],
+   "pages": [
+    9,
+    13
+   ],
+   "objectives": [
+    "Exploiter des expériences de mérotomie et de greffe de noyau.",
+    "Montrer que le noyau contient l’information génétique."
+   ],
+   "intro": "Un fragment de cellule sans noyau peut-il survivre et se reproduire ?",
+   "summary": "Chez l’amibe, un fragment qui garde le noyau régénère la partie manquante et se divise ; un fragment anucléé meurt en quelques jours sans se régénérer. La greffe d’un noyau dans une amibe énucléée de la même espèce assure sa survie ; si le noyau vient d’une autre espèce, la cellule survit peu et ne se divise pas. Chez l’acétabulaire (algue unicellulaire), seul le rhizoïde, qui contient le noyau, survit et régénère l’algue. Après greffe croisée de noyaux entre Acetabularia mediterranea (chapeau lisse) et A. crenulata (chapeau crénelé), le chapeau régénéré a la forme de l’espèce qui a fourni le noyau. Gurdon (1960) transplante des noyaux de cellules intestinales de têtard de xénope albinos dans des ovules irradiés de xénope sauvage : les xénopes obtenus sont albinos. Bilan : l’information génétique qui détermine les caractères héréditaires est localisée dans le noyau chez les eucaryotes.",
+   "points": [
+    "Fragment sans noyau : ni régénération ni division.",
+    "Greffe de noyau : seulement entre cellules de même espèce.",
+    "Acétabulaire : le chapeau suit l’espèce du noyau.",
+    "Gurdon : le xénope ressemble au donneur du noyau.",
+    "Le noyau contient l’information génétique."
+   ],
+   "application": {
+    "q": "On greffe le noyau d’A. mediterranea dans le rhizoïde énucléé d’A. crenulata. Quel chapeau se forme ?",
+    "a": "Un chapeau lisse (type mediterranea) : le caractère dépend du noyau."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi Gurdon irradie-t-il les ovules aux ultraviolets ?",
+     "a": "Pour détruire leur noyau."
+    },
+    {
+     "q": "Que devient une amibe recevant le noyau d’une autre espèce ?",
+     "a": "Elle survit peu de temps et ne se divise pas."
+    }
+   ],
+   "board": [
+    {
+     "h": "Expériences",
+     "lines": [],
+     "table": [
+      [
+       "Expérience",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Mérotomie de l’amibe",
+       "seul le fragment nucléé survit et se divise",
+       "le noyau est indispensable"
+      ],
+      [
+       "Section de l’acétabulaire",
+       "le rhizoïde (avec noyau) régénère l’algue",
+       "le noyau dirige la régénération"
+      ],
+      [
+       "Greffe croisée de noyaux",
+       "chapeau de l’espèce donneuse du noyau",
+       "le noyau porte les caractères"
+      ],
+      [
+       "Gurdon (xénopes)",
+       "xénopes albinos comme le donneur",
+       "l’information est dans le noyau"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Chromosomes, caryotype et ADN",
+   "match": [
+    "Chromosomes, caryotype et ADN"
+   ],
+   "pages": [
+    14,
+    22
+   ],
+   "objectives": [
+    "Établir et lire un caryotype.",
+    "Décrire la structure et la composition chimique de l’ADN.",
+    "Montrer que l’ADN est le support de l’information génétique et expliquer sa réplication semi-conservative."
+   ],
+   "intro": "Comment deux mètres d’ADN tiennent-ils dans un noyau de quelques micromètres ?",
+   "summary": "Le caryotype est la représentation (photographie ou dessin) de l’ensemble des chromosomes d’une cellule, classés par paires selon leur taille et la position du centromère. L’Homme possède 46 chromosomes (23 paires) : 22 paires d’autosomes et une paire de chromosomes sexuels (XX ou XY) ; chaque paire comprend un chromosome paternel et un maternel. Le vert de méthyle colore l’ADN du noyau. L’expérience de transformation bactérienne (bactéries R et S) montre, grâce aux enzymes (protéase, ribonucléase, ADNase), que seul l’ADN transmet le caractère « capsule ». L’ADN est formé de deux brins antiparallèles enroulés en double hélice (Watson et Crick, 1953) ; chaque brin est une suite de nucléotides (phosphate + désoxyribose C₅H₁₀O₄ + base azotée A, T, G ou C). Les bases sont complémentaires (A–T, C–G) et liées par des liaisons hydrogène. Un tour d’hélice contient environ 10,5 paires de bases (3,4 nm). La réplication est semi-conservative (Meselson et Stahl, 1958) : chaque brin sert de matrice ; l’ADN polymérase assemble un brin complémentaire.",
+   "points": [
+    "Caryotype humain : 46 chromosomes (2n).",
+    "Nucléotide : phosphate + désoxyribose + base.",
+    "A–T et C–G ; brins antiparallèles.",
+    "Transformation bactérienne : l’ADN porte l’information.",
+    "Réplication semi-conservative."
+   ],
+   "application": {
+    "q": "Un brin d’ADN a la séquence ATG CCA TGA. Brin complémentaire ?",
+    "a": "TAC GGT ACT."
+   },
+   "applications": [
+    {
+     "q": "Combien de chromosomes dans un gamète humain ?",
+     "a": "23 (n)."
+    },
+    {
+     "q": "Pourquoi l’ADNase empêche-t-elle la transformation des bactéries R en S ?",
+     "a": "Elle détruit l’ADN, qui est la substance responsable de la transformation."
+    }
+   ],
+   "board": [
+    {
+     "h": "Meselson et Stahl (azote ¹⁵N puis ¹⁴N)",
+     "lines": [],
+     "table": [
+      [
+       "Génération",
+       "ADN obtenu",
+       "Interprétation"
+      ],
+      [
+       "0",
+       "100 % lourd (¹⁵N)",
+       "départ"
+      ],
+      [
+       "1",
+       "100 % hybride",
+       "élimine le modèle conservatif"
+      ],
+      [
+       "2",
+       "50 % hybride, 50 % léger",
+       "valide le modèle semi-conservatif"
+      ]
+     ]
+    },
+    {
+     "h": "Extraction de l’ADN (oignon ou kiwi)",
+     "lines": [
+      "Broyer avec du sel (éclate les membranes), filtrer, verser doucement de l’alcool froid : l’ADN apparaît en filaments blancs."
+     ]
+    },
+    {
+     "h": "Gène et allèles",
+     "lines": [
+      "Gène : fragment d’ADN situé à un locus précis, codant une protéine (environ 20 000 gènes chez l’Homme).",
+      "Allèles : versions d’un même gène, l’une d’origine paternelle, l’autre maternelle."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Expression de l’information génétique — ARN et code génétique",
+   "match": [
+    "Expression de l’information génétique — ARN et code génétique"
+   ],
+   "pages": [
+    23,
+    29
+   ],
+   "objectives": [
+    "Distinguer ADN et ARN ; connaître les types d’ARN.",
+    "Définir le codon et le code génétique et ses propriétés."
+   ],
+   "intro": "Comment une suite de 4 bases peut-elle commander l’ordre de 20 acides aminés ?",
+   "summary": "Le phénotype dépend des protéines, dont la séquence d’acides aminés est codée par les gènes. L’expression passe par l’ARN. Les ARN sont formés de nucléotides comme l’ADN, mais leur sucre est le ribose (C₅H₁₀O₅), l’uracile (U) remplace la thymine, ils n’ont qu’un seul brin, sont plus courts et surtout localisés dans le cytoplasme. Trois types : ARN messager (copie d’un gène), ARN de transfert (porte un acide aminé et un anticodon), ARN ribosomique (constituant des ribosomes). Le code génétique est la correspondance entre les codons (triplets de nucléotides de l’ARNm) et les acides aminés : 4³ = 64 codons pour 20 acides aminés. Il est redondant (dégénéré), univoque (un codon → un seul acide aminé), ponctué (AUG = codon d’initiation, méthionine ; UAA, UAG, UGA = codons stop) et universel.",
+   "points": [
+    "ARN : ribose, uracile, un seul brin.",
+    "ARNm, ARNt, ARNr.",
+    "Codon = 3 nucléotides ; 64 codons.",
+    "Code : redondant, univoque, ponctué, universel.",
+    "AUG : initiation ; UAA, UAG, UGA : stop."
+   ],
+   "application": {
+    "q": "Pourquoi le code génétique est-il dit « universel » ?",
+    "a": "Parce qu’un même codon correspond au même acide aminé chez tous les êtres vivants ; une cellule peut lire un gène d’une autre espèce."
+   },
+   "applications": [
+    {
+     "q": "Combien de combinaisons de 3 bases avec 4 bases ?",
+     "a": "4³ = 64 codons."
+    },
+    {
+     "q": "Quel ARN porte l’anticodon ?",
+     "a": "L’ARN de transfert (ARNt)."
+    }
+   ],
+   "board": [
+    {
+     "h": "ADN et ARN",
+     "lines": [],
+     "table": [
+      [
+       "Caractère",
+       "ADN",
+       "ARN"
+      ],
+      [
+       "Sucre",
+       "désoxyribose",
+       "ribose"
+      ],
+      [
+       "Bases",
+       "A, T, G, C",
+       "A, U, G, C"
+      ],
+      [
+       "Brins",
+       "deux (double hélice)",
+       "un seul"
+      ],
+      [
+       "Localisation",
+       "noyau",
+       "surtout cytoplasme"
+      ]
+     ]
+    },
+    {
+     "h": "Propriétés du code",
+     "lines": [
+      "Redondant : plusieurs codons pour un même acide aminé.",
+      "Univoque : un codon → un seul acide aminé.",
+      "Ponctué : codon initiateur AUG et 3 codons stop.",
+      "Universel : le même chez tous les êtres vivants."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Biosynthèse des protéines — transcription et traduction",
+   "match": [
+    "Biosynthèse des protéines — transcription et traduction"
+   ],
+   "pages": [
+    30,
+    33
+   ],
+   "objectives": [
+    "Décrire la transcription dans le noyau.",
+    "Décrire les étapes de la traduction dans le cytoplasme.",
+    "Traduire une séquence à l’aide du code génétique."
+   ],
+   "intro": "Où et comment la cellule fabrique-t-elle l’insuline à partir de son gène ?",
+   "summary": "La transcription a lieu dans le noyau : l’ARN polymérase se fixe au promoteur, ouvre la double hélice sur une courte portion et assemble des ribonucléotides complémentaires d’un seul brin de l’ADN (brin transcrit) ; on obtient un pré-ARNm qui subit une maturation (coiffe, épissage : excision des introns et assemblage des exons) puis l’ARNm sort par les pores nucléaires. La traduction a lieu dans le cytoplasme, au niveau des ribosomes, et nécessite ARNm, ARNt, acides aminés, enzymes et énergie. Initiation : les sous-unités du ribosome s’assemblent sur l’ARNm au codon AUG (méthionine). Élongation : chaque ARNt, dont l’anticodon est complémentaire du codon lu, apporte son acide aminé ; des liaisons peptidiques s’établissent. Terminaison : au codon stop (UAA, UAG, UGA), le ribosome se dissocie et la protéine est libérée. Plusieurs ribosomes peuvent lire le même ARNm (polysome).",
+   "points": [
+    "Transcription : noyau, ARN polymérase, brin transcrit.",
+    "Maturation : épissage des introns.",
+    "Traduction : ribosome, ARNt, anticodon.",
+    "Initiation (AUG), élongation, terminaison (stop).",
+    "Liaison peptidique entre acides aminés."
+   ],
+   "application": {
+    "q": "Brin transcrit de l’ADN : TAC AAA CCG ATT. ARNm ?",
+    "a": "AUG UUU GGC UAA → Met – Phe – Gly – stop."
+   },
+   "applications": [
+    {
+     "q": "Quel est l’anticodon de l’ARNt correspondant au codon GCU ?",
+     "a": "CGA."
+    },
+    {
+     "q": "Pourquoi un même ARNm peut-il donner 10 à 20 protéines ?",
+     "a": "Parce qu’il est lu simultanément ou successivement par plusieurs ribosomes avant d’être détruit."
+    }
+   ],
+   "board": [
+    {
+     "h": "Deux étapes",
+     "lines": [],
+     "table": [
+      [
+       "Étape",
+       "Lieu",
+       "Matrice",
+       "Produit"
+      ],
+      [
+       "Transcription",
+       "noyau",
+       "un brin d’ADN",
+       "ARNm"
+      ],
+      [
+       "Traduction",
+       "cytoplasme (ribosomes)",
+       "ARNm",
+       "chaîne polypeptidique"
+      ]
+     ]
+    },
+    {
+     "h": "Étapes de la traduction",
+     "lines": [
+      "1) Initiation : ribosome + ARNm + ARNt-méthionine au codon AUG.",
+      "2) Élongation : lecture codon par codon, liaison peptidique.",
+      "3) Terminaison : codon stop, libération de la protéine."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Les mutations",
+   "match": [
+    "Les mutations"
+   ],
+   "pages": [
+    34,
+    37
+   ],
+   "objectives": [
+    "Définir une mutation.",
+    "Distinguer les types de mutations ponctuelles.",
+    "Prévoir les conséquences d’une mutation sur la protéine."
+   ],
+   "intro": "Comment un nouvel allèle peut-il apparaître ?",
+   "summary": "Une mutation est une modification accidentelle et irréversible de la séquence des nucléotides de l’ADN ; elle crée un nouvel allèle et peut modifier la structure primaire, donc la forme et les propriétés, de la protéine. Les mutations ponctuelles se produisent au hasard : substitution (un nucléotide remplacé par un autre), délétion ou insertion (décalage du cadre de lecture), inversion d’une séquence. Conséquences : mutation silencieuse (même acide aminé grâce à la redondance du code), faux-sens (un acide aminé différent), non-sens (apparition d’un codon stop : chaîne raccourcie), neutre (acide aminé changé sans effet sur l’activité). La variabilité de l’information génétique est due aux mutations.",
+   "points": [
+    "Mutation : modification accidentelle et irréversible de l’ADN.",
+    "Substitution, délétion, insertion, inversion.",
+    "Silencieuse, faux-sens, non-sens, neutre.",
+    "Délétion/insertion : décalage du cadre de lecture."
+   ],
+   "application": {
+    "q": "Le codon GAA (Glu) devient GAG. Conséquence ?",
+    "a": "GAG code aussi Glu : mutation silencieuse."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi une délétion d’un nucléotide est-elle souvent grave ?",
+     "a": "Elle décale le cadre de lecture : tous les codons suivants changent."
+    },
+    {
+     "q": "UAC (Tyr) devient UAA. Type de mutation ?",
+     "a": "Non-sens : UAA est un codon stop."
+    }
+   ],
+   "board": [
+    {
+     "h": "Conséquences d’une substitution",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Effet sur la protéine"
+      ],
+      [
+       "Silencieuse",
+       "même acide aminé"
+      ],
+      [
+       "Faux-sens",
+       "un acide aminé remplacé"
+      ],
+      [
+       "Non-sens",
+       "codon stop : chaîne plus courte"
+      ],
+      [
+       "Neutre",
+       "acide aminé changé, activité conservée"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 30, une mutation non-sens ne change pas « un seul acide aminé » : elle fait apparaître un codon stop et raccourcit la chaîne.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Transfert de gènes — le génie génétique",
+   "match": [
+    "Transfert de gènes — le génie génétique"
+   ],
+   "pages": [
+    38,
+    51
+   ],
+   "objectives": [
+    "Définir le génie génétique et la transgénèse.",
+    "Connaître les outils : enzymes de restriction, ligase, plasmides, vecteurs, sondes.",
+    "Décrire les étapes de la production d’insuline par une bactérie."
+   ],
+   "intro": "Comment fait-on fabriquer de l’insuline humaine par une bactérie ?",
+   "summary": "Le génie génétique est l’ensemble des techniques de biologie moléculaire permettant d’identifier, d’isoler, de modifier, de cloner et de transférer de façon contrôlée des gènes. Comme l’ADN et le code génétique sont universels, un gène d’une espèce peut s’exprimer dans une autre : c’est la transgénèse, qui produit des organismes génétiquement modifiés (OGM). Outils : enzymes de restriction (coupent l’ADN à des séquences précises, ex. EcoRI entre G et A de GAATTC, donnant des extrémités cohésives ou franches) ; ADN ligase (soude les fragments, consomme de l’ATP) ; ADN polymérases ; transcriptase inverse (ARN → ADNc) ; plasmides (petits ADN circulaires bactériens, vecteurs de clonage) ; virus modifiés ; sondes moléculaires marquées. Étapes (insuline) : extraire le gène humain, ouvrir un plasmide d’Escherichia coli avec la même enzyme de restriction, insérer le gène (ligase), réintroduire le plasmide recombiné dans la bactérie, cultiver (clonage) puis récolter l’insuline. Applications : médecine (insuline, hormone de croissance, vaccins), agriculture, environnement, recherche.",
+   "points": [
+    "Génie génétique : isoler, couper, coller, transférer des gènes.",
+    "Enzymes de restriction et ligase.",
+    "Plasmide = vecteur.",
+    "Transgénèse → OGM.",
+    "Insuline produite par E. coli."
+   ],
+   "application": {
+    "q": "Pourquoi utilise-t-on la même enzyme de restriction pour le gène et le plasmide ?",
+    "a": "Pour obtenir des extrémités cohésives complémentaires qui s’assemblent ; la ligase les soude."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce qu’un OGM ?",
+     "a": "Un organisme dont le patrimoine génétique a été modifié par l’introduction d’un gène étranger (transgène)."
+    },
+    {
+     "q": "Citer deux applications médicales du génie génétique.",
+     "a": "Production d’insuline et d’hormone de croissance (ou de vaccins)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Étapes du transfert d’un gène",
+     "lines": [
+      "1) Isoler le gène d’intérêt (enzyme de restriction).",
+      "2) Ouvrir le plasmide vecteur avec la même enzyme.",
+      "3) Recombiner : insérer le gène, souder par la ligase.",
+      "4) Transformer la bactérie hôte et la cultiver (clonage).",
+      "5) Sélectionner et récupérer la protéine produite."
+     ]
+    },
+    {
+     "h": "Outils",
+     "lines": [],
+     "table": [
+      [
+       "Outil",
+       "Rôle"
+      ],
+      [
+       "Enzyme de restriction",
+       "couper l’ADN à un site précis"
+      ],
+      [
+       "ADN ligase",
+       "souder deux fragments"
+      ],
+      [
+       "Transcriptase inverse",
+       "ARN → ADN complémentaire"
+      ],
+      [
+       "Plasmide / virus",
+       "vecteur du gène"
+      ],
+      [
+       "Sonde",
+       "repérer une séquence"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : La mitose et le cycle cellulaire",
+   "match": [
+    "La mitose et le cycle cellulaire"
+   ],
+   "pages": [
+    52,
+    55
+   ],
+   "objectives": [
+    "Décrire les phases de la mitose.",
+    "Expliquer la variation de la quantité d’ADN au cours du cycle cellulaire."
+   ],
+   "intro": "Comment une cellule-œuf devient-elle un organisme de milliards de cellules identiques ?",
+   "summary": "La mitose est une division conforme : une cellule mère donne deux cellules filles génétiquement identiques. Prophase : la chromatine se condense en chromosomes à deux chromatides réunies par le centromère ; l’enveloppe nucléaire et le nucléole disparaissent ; le fuseau se forme. Métaphase : chromosomes condensés au maximum, alignés sur la plaque équatoriale. Anaphase : clivage des centromères, les chromatides sœurs migrent vers les pôles opposés (ascension polaire). Télophase : décondensation, réapparition de l’enveloppe nucléaire et du nucléole, disparition du fuseau, division du cytoplasme. Le cycle cellulaire = interphase (G1, S, G2) + mitose. En phase S, l’ADN se réplique : la quantité d’ADN passe de q à 2q (chromosomes à deux chromatides) ; elle revient à q à la fin de la mitose.",
+   "points": [
+    "Mitose : 1 cellule → 2 cellules identiques.",
+    "Prophase, métaphase, anaphase, télophase.",
+    "Anaphase : séparation des chromatides.",
+    "Phase S : réplication (q → 2q).",
+    "Cycle = interphase + mitose."
+   ],
+   "application": {
+    "q": "Une cellule à 2n = 46 entre en mitose. Nombre de chromosomes de chaque cellule fille ?",
+    "a": "46 chromosomes (à une chromatide) : la mitose conserve le nombre."
+   },
+   "applications": [
+    {
+     "q": "À quelle phase les chromosomes sont-ils le mieux visibles ?",
+     "a": "En métaphase."
+    },
+    {
+     "q": "Que se passe-t-il pendant la phase S ?",
+     "a": "La réplication de l’ADN : chaque chromosome passe à deux chromatides."
+    }
+   ],
+   "board": [
+    {
+     "h": "Phases de la mitose",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Événements"
+      ],
+      [
+       "Prophase",
+       "condensation, disparition de l’enveloppe nucléaire, fuseau"
+      ],
+      [
+       "Métaphase",
+       "plaque équatoriale"
+      ],
+      [
+       "Anaphase",
+       "séparation et migration des chromatides"
+      ],
+      [
+       "Télophase",
+       "décondensation, deux noyaux, cytodiérèse"
+      ]
+     ]
+    },
+    {
+     "h": "Quantité d’ADN",
+     "lines": [
+      "G1 : q ; phase S : q → 2q ; G2 et mitose : 2q ; fin de télophase : q dans chaque cellule fille."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : La méiose et le brassage génétique",
+   "match": [
+    "La méiose et le brassage génétique"
+   ],
+   "pages": [
+    56,
+    61
+   ],
+   "objectives": [
+    "Décrire les deux divisions de la méiose.",
+    "Expliquer la réduction chromatique (2n → n).",
+    "Expliquer les brassages inter- et intrachromosomiques."
+   ],
+   "intro": "Comment deux gamètes à 23 chromosomes donnent-ils un individu à 46 chromosomes ?",
+   "summary": "La méiose est une succession de deux divisions qui transforme une cellule diploïde (2n) en quatre cellules haploïdes (n) : les gamètes. Division I (réductionnelle) : en prophase I, les homologues s’apparient en n bivalents (tétrades) et forment des chiasmas ; en métaphase I, les bivalents se placent de part et d’autre du plan équatorial ; en anaphase I, les chromosomes homologues se séparent (2n → n). Division II (équationnelle) : comme une mitose, les chromatides sœurs se séparent. Brassage intrachromosomique : au niveau des chiasmas, le crossing-over échange des morceaux de chromatides entre homologues (prophase I). Brassage interchromosomique : en anaphase I, chaque paire se sépare au hasard indépendamment des autres : un humain peut produire plus de 8 millions (2²³) de gamètes différents.",
+   "points": [
+    "Méiose : 2n → 4 cellules n.",
+    "Division I réductionnelle : séparation des homologues.",
+    "Division II équationnelle : séparation des chromatides.",
+    "Crossing-over : brassage intrachromosomique.",
+    "Anaphase I : brassage interchromosomique (2ⁿ combinaisons)."
+   ],
+   "application": {
+    "q": "Combien de gamètes différents (sans crossing-over) pour 2n = 6 ?",
+    "a": "2³ = 8 combinaisons."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi la méiose est-elle une division non conforme ?",
+     "a": "Les cellules filles sont haploïdes et génétiquement différentes de la cellule mère."
+    },
+    {
+     "q": "Quand a lieu le crossing-over ?",
+     "a": "En prophase I, au niveau des chiasmas."
+    }
+   ],
+   "board": [
+    {
+     "h": "Méiose I et II",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Division I",
+       "Division II"
+      ],
+      [
+       "Prophase",
+       "appariement, bivalents, chiasmas",
+       "brève"
+      ],
+      [
+       "Métaphase",
+       "bivalents de part et d’autre de l’équateur",
+       "chromosomes sur la plaque équatoriale"
+      ],
+      [
+       "Anaphase",
+       "séparation des homologues (2n → n)",
+       "séparation des chromatides"
+      ],
+      [
+       "Résultat",
+       "2 cellules n (2 chromatides)",
+       "4 cellules n (1 chromatide)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : La fécondation",
+   "match": [
+    "La fécondation"
+   ],
+   "pages": [
+    62,
+    67
+   ],
+   "objectives": [
+    "Décrire les étapes de la fécondation (exemple de l’oursin).",
+    "Expliquer le rétablissement de la diploïdie et la détermination du sexe.",
+    "Montrer le rôle de la fécondation dans la diversité génétique."
+   ],
+   "intro": "Pourquoi deux frères n’ont-ils pas le même patrimoine génétique ?",
+   "summary": "Chez l’oursin, la fécondation est externe. L’ovule attire les spermatozoïdes par des substances chimiques (fertilisines) : chimiotactisme positif. Au contact de l’ovule, l’acrosome libère ses enzymes (réaction acrosomique), un cône de fécondation se forme et un seul spermatozoïde pénètre. L’ovule est activé : une membrane de fécondation se forme et empêche l’entrée d’autres spermatozoïdes. Les pronucléi mâle et femelle se rapprochent et fusionnent (caryogamie) : la cellule-œuf (zygote) a 2n chromosomes, n paternels et n maternels. Un spermatozoïde X donne un œuf XX (femelle), un spermatozoïde Y un œuf XY (mâle) : la fécondation détermine le sexe. La rencontre au hasard des gamètes amplifie le brassage génétique de la méiose : chaque individu est génétiquement unique.",
+   "points": [
+    "Chimiotactisme, réaction acrosomique, pénétration.",
+    "Membrane de fécondation : un seul spermatozoïde.",
+    "Caryogamie : n + n = 2n.",
+    "X + X → fille ; X + Y → garçon.",
+    "Fécondation au hasard : diversité."
+   ],
+   "application": {
+    "q": "Un ovule humain (n = 23) est fécondé par un spermatozoïde Y. Formule de l’œuf ?",
+    "a": "2n = 46, XY : un garçon."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce que la caryogamie ?",
+     "a": "La fusion des noyaux (pronucléi) mâle et femelle."
+    },
+    {
+     "q": "Qui détermine le sexe chez l’Homme ?",
+     "a": "Le spermatozoïde (X ou Y)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Étapes chez l’oursin",
+     "lines": [
+      "1) Attraction des spermatozoïdes (fertilisines).",
+      "2) Réaction acrosomique et cône de fécondation.",
+      "3) Activation de l’ovule : membrane de fécondation.",
+      "4) Rapprochement et fusion des pronucléi : zygote 2n.",
+      "5) Première mitose de segmentation."
+     ]
+    },
+    {
+     "h": "Rôles de la fécondation",
+     "lines": [
+      "Rétablir la diploïdie ; transmettre les caractères des deux parents ; activer l’œuf ; augmenter la diversité génétique."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Cycles de développement et cycles chromosomiques",
+   "match": [
+    "Cycles de développement et cycles chromosomiques"
+   ],
+   "pages": [
+    68,
+    80
+   ],
+   "objectives": [
+    "Situer la méiose et la fécondation dans un cycle de développement.",
+    "Distinguer cycles diplophasique, haplophasique et haplo-diplophasique."
+   ],
+   "intro": "Chez une fougère, la plante que l’on voit est-elle haploïde ou diploïde ?",
+   "summary": "L’alternance méiose–fécondation assure la stabilité du nombre de chromosomes d’une espèce : la méiose fait passer de 2n à n, la fécondation rétablit 2n. Elle définit deux phases : l’haplophase (n) et la diplophase (2n). Cycle diplophasique : l’individu est diploïde, seuls les gamètes sont haploïdes (Homme, animaux, Fucus). Cycle haplophasique : l’individu est haploïde, seul le zygote est diploïde ; la méiose suit immédiatement la fécondation (Spirogyre, algue verte qui se reproduit par conjugaison quand les conditions deviennent défavorables). Cycle haplo-diplophasique : alternance de deux générations, un sporophyte diploïde et un gamétophyte haploïde (Polypode : la fougère est le sporophyte ; ses spores germent en un prothalle haploïde portant anthéridies et archégones).",
+   "points": [
+    "Méiose : 2n → n ; fécondation : n → 2n.",
+    "Haplophase / diplophase.",
+    "Diplophasique : Homme, Fucus.",
+    "Haplophasique : Spirogyre.",
+    "Haplo-diplophasique : Polypode (fougère)."
+   ],
+   "application": {
+    "q": "Dans quel cycle la méiose suit-elle immédiatement la fécondation ?",
+    "a": "Dans le cycle haplophasique (ex. la Spirogyre)."
+   },
+   "applications": [
+    {
+     "q": "Le prothalle du Polypode est-il haploïde ou diploïde ?",
+     "a": "Haploïde (n) : c’est le gamétophyte."
+    },
+    {
+     "q": "Quel est le rôle de l’alternance méiose–fécondation ?",
+     "a": "Maintenir constant le nombre de chromosomes de l’espèce."
+    }
+   ],
+   "board": [
+    {
+     "h": "Trois cycles",
+     "lines": [],
+     "table": [
+      [
+       "Cycle",
+       "Phase dominante",
+       "Exemple"
+      ],
+      [
+       "Diplophasique",
+       "diploïde (2n)",
+       "Homme, Fucus"
+      ],
+      [
+       "Haplophasique",
+       "haploïde (n)",
+       "Spirogyre"
+      ],
+      [
+       "Haplo-diplophasique",
+       "alternance sporophyte 2n / gamétophyte n",
+       "Polypode"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Ultrastructure de la cellule musculaire striée",
+   "match": [
+    "Ultrastructure de la cellule musculaire striée"
+   ],
+   "pages": [
+    83,
+    86
+   ],
+   "objectives": [
+    "Comparer les cellules musculaires squelettiques et cardiaques.",
+    "Décrire le sarcomère et les myofilaments d’actine et de myosine."
+   ],
+   "intro": "Pourquoi le muscle de la cuisse et le cœur paraissent-ils striés au microscope ?",
+   "summary": "La fibre musculaire squelettique est une cellule géante plurinucléée (syncytium) à noyaux périphériques ; son cytoplasme (sarcoplasme) est occupé par des myofibrilles parallèles qui montrent une alternance de bandes sombres (A) et claires (I). Les myofibrilles sont formées de myofilaments épais de myosine et fins d’actine ; l’unité contractile est le sarcomère, compris entre deux stries Z. La membrane (sarcolemme) forme des tubules T en contact avec le réticulum sarcoplasmique très développé (triades) ; les mitochondries sont nombreuses. La cellule cardiaque (cardiomyocyte) est striée mais a un seul noyau central ; les cellules sont reliées par des disques intercalaires (desmosomes et jonctions communicantes) ; le cœur se contracte de façon rythmique et spontanée.",
+   "points": [
+    "Fibre squelettique : plurinucléée, noyaux périphériques.",
+    "Cardiomyocyte : un noyau central, disques intercalaires.",
+    "Myofibrilles : actine (fins) et myosine (épais).",
+    "Sarcomère : entre deux stries Z.",
+    "Réticulum sarcoplasmique, tubules T, mitochondries."
+   ],
+   "application": {
+    "q": "Citer deux différences entre fibre squelettique et cardiomyocyte.",
+    "a": "La fibre squelettique est plurinucléée à noyaux périphériques ; le cardiomyocyte a un noyau central et des disques intercalaires."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce qu’un sarcomère ?",
+     "a": "L’unité contractile de la myofibrille, entre deux stries Z."
+    },
+    {
+     "q": "Rôle des jonctions communicantes du cœur ?",
+     "a": "Transmettre les potentiels d’action d’une cellule à l’autre."
+    }
+   ],
+   "board": [
+    {
+     "h": "Comparaison",
+     "lines": [],
+     "table": [
+      [
+       "Caractère",
+       "Fibre squelettique",
+       "Fibre cardiaque"
+      ],
+      [
+       "Striation",
+       "oui (actine/myosine)",
+       "oui"
+      ],
+      [
+       "Noyaux",
+       "nombreux, périphériques",
+       "un seul, central"
+      ],
+      [
+       "Jonctions",
+       "—",
+       "disques intercalaires"
+      ],
+      [
+       "Contraction",
+       "volontaire",
+       "rythmique, spontanée"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 211, le diamètre d’une fibre est de 10 à 100 µm, et non 10 à 100 nm.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Glycolyse et respiration cellulaire",
+   "match": [
+    "Glycolyse et respiration cellulaire"
+   ],
+   "pages": [
+    87,
+    94
+   ],
+   "objectives": [
+    "Décrire la glycolyse et son bilan.",
+    "Décrire les étapes de la respiration (cycle de Krebs, chaîne respiratoire) et leur localisation.",
+    "Établir le bilan énergétique de la respiration."
+   ],
+   "intro": "D’où vient l’énergie que le muscle utilise pendant une course ?",
+   "summary": "La glycolyse se déroule dans le hyaloplasme (cytoplasme) : le glucose (C₆) est oxydé en deux pyruvates (C₃), avec formation de 2 ATP et réduction de 2 transporteurs (NAD⁺ → NADH,H⁺) ; elle ne nécessite pas d’O₂. En aérobiose, le pyruvate entre dans la mitochondrie : dans la matrice, il est décarboxylé et oxydé en acétyl-CoA (C₂) qui entre dans le cycle de Krebs (décarboxylations et déshydrogénations : CO₂, transporteurs réduits, 1 ATP par tour). Dans la membrane interne (crêtes), la chaîne respiratoire réoxyde les transporteurs ; l’O₂ est l’accepteur final des électrons et des protons (formation d’eau) ; le gradient de protons permet la synthèse d’ATP (phosphorylation oxydative). Bilan : C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + 38 ATP (2 de la glycolyse + 36 dans la mitochondrie). Le CO₂ vient de la matière organique dégradée, l’eau formée de l’O₂ respiré.",
+   "points": [
+    "Glycolyse : hyaloplasme ; glucose → 2 pyruvates + 2 ATP.",
+    "Cycle de Krebs : matrice ; CO₂ + transporteurs réduits.",
+    "Chaîne respiratoire : crêtes ; O₂ accepteur final.",
+    "Respiration : 36 ATP mitochondriaux + 2.",
+    "L’ATP est la source d’énergie directe de la cellule."
+   ],
+   "application": {
+    "q": "Bilan global de la respiration d’une molécule de glucose ?",
+    "a": "C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O ; 38 ATP au total."
+   },
+   "applications": [
+    {
+     "q": "Où se déroule le cycle de Krebs ?",
+     "a": "Dans la matrice mitochondriale."
+    },
+    {
+     "q": "Quel est l’accepteur final des électrons dans la chaîne respiratoire ?",
+     "a": "Le dioxygène (O₂)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Étapes de la respiration",
+     "lines": [],
+     "table": [
+      [
+       "Étape",
+       "Lieu",
+       "Bilan"
+      ],
+      [
+       "Glycolyse",
+       "hyaloplasme",
+       "2 pyruvates, 2 ATP, 2 NADH,H⁺"
+      ],
+      [
+       "Cycle de Krebs",
+       "matrice mitochondriale",
+       "CO₂, transporteurs réduits, ATP"
+      ],
+      [
+       "Phosphorylation oxydative",
+       "membrane interne (crêtes)",
+       "H₂O, environ 36 ATP"
+      ]
+     ]
+    },
+    {
+     "h": "Expérience (levure + glucose marqué au ¹⁴C)",
+     "lines": [
+      "Après ajout de glucose, la consommation d’O₂ et le rejet de CO₂ augmentent : la respiration dégrade le glucose.",
+      "Le ¹⁴C se retrouve dans le pyruvate (hyaloplasme), puis dans les acides du cycle de Krebs et le CO₂ (mitochondrie)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Les fermentations",
+   "match": [
+    "Les fermentations"
+   ],
+   "pages": [
+    94,
+    97
+   ],
+   "objectives": [
+    "Décrire les fermentations lactique et alcoolique.",
+    "Comparer le rendement énergétique de la fermentation et de la respiration."
+   ],
+   "intro": "Pourquoi le lait caillé est-il acide et la pâte du pain gonfle-t-elle ?",
+   "summary": "La fermentation est une dégradation incomplète du glucose en l’absence d’O₂ (anaérobiose), dans le cytoplasme. Elle commence par la glycolyse (glucose → 2 pyruvates + 2 ATP + 2 NADH,H⁺) ; le pyruvate est ensuite réduit pour régénérer les transporteurs. Fermentation lactique (bactéries du lait, muscle en effort intense) : pyruvate → acide lactique ; dans le lait à 40 °C, le pH baisse, il se forme de l’acide lactique sans CO₂. Fermentation alcoolique (levures) : pyruvate → éthanal + CO₂ puis éthanol : C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂ ; le bichromate de potassium vire au vert en présence d’éthanol. Fermentation butyrique (bactéries de la litière) : acides acétique et butyrique, CO₂, H₂. Bilan : seulement 2 ATP par glucose, contre 38 pour la respiration ; les produits (éthanol, acide lactique) restent riches en énergie.",
+   "points": [
+    "Fermentation : anaérobie, cytoplasme.",
+    "Lactique : acide lactique (lait, muscle).",
+    "Alcoolique : éthanol + CO₂ (levures).",
+    "Butyrique : acides acétique et butyrique.",
+    "2 ATP seulement par glucose."
+   ],
+   "application": {
+    "q": "Écrire le bilan de la fermentation alcoolique.",
+    "a": "C₆H₁₂O₆ → 2 CH₃CH₂OH + 2 CO₂ + 2 ATP."
+   },
+   "applications": [
+    {
+     "q": "Quel test met en évidence l’éthanol ?",
+     "a": "Le bichromate de potassium, qui vire à la couleur verte."
+    },
+    {
+     "q": "Pourquoi la cellule musculaire préfère-t-elle la respiration en aérobiose ?",
+     "a": "Elle produit 38 ATP contre 2 pour la fermentation."
+    }
+   ],
+   "board": [
+    {
+     "h": "Respiration et fermentation",
+     "lines": [],
+     "table": [
+      [
+       "Critère",
+       "Respiration",
+       "Fermentation"
+      ],
+      [
+       "O₂",
+       "nécessaire",
+       "absent"
+      ],
+      [
+       "Lieu",
+       "cytoplasme + mitochondrie",
+       "cytoplasme"
+      ],
+      [
+       "Dégradation",
+       "complète (CO₂ + H₂O)",
+       "incomplète (éthanol, acide lactique)"
+      ],
+      [
+       "ATP par glucose",
+       "38",
+       "2"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Utilisation de l’ATP et mécanisme de la contraction",
+   "match": [
+    "Utilisation de l’ATP et mécanisme de la contraction"
+   ],
+   "pages": [
+    97,
+    103
+   ],
+   "objectives": [
+    "Montrer que l’ATP est la source directe d’énergie de la contraction.",
+    "Connaître les voies de régénération de l’ATP.",
+    "Expliquer le glissement des filaments et le rôle du calcium."
+   ],
+   "intro": "Un muscle dont la glycolyse est bloquée peut-il encore se contracter ?",
+   "summary": "Un muscle intact qui se contracte consomme du glycogène, mais sa teneur en ATP reste constante (2) ; traité par l’acide monoiodoacétique (glycolyse bloquée), il se contracte encore et consomme de la phosphocréatine (1,5 → 0,4) ; si l’on bloque aussi l’utilisation de la phosphocréatine, la contraction s’arrête vite et l’ATP diminue. L’ATP, hydrolysé par l’ATPase de la myosine (ATP + H₂O → ADP + Pi + énergie), est la source directe d’énergie. Régénération rapide : phosphocréatine + ADP → ATP + créatine ; ADP + ADP → ATP + AMP. Régénération lente : glycolyse, respiration (exercice modéré) ou fermentation lactique (exercice intense). Contraction : le potentiel d’action libère le Ca²⁺ du réticulum sarcoplasmique ; le Ca²⁺ se fixe sur la troponine, la tropomyosine libère les sites de l’actine, les têtes de myosine s’y fixent, pivotent grâce à l’énergie de l’ATP et font glisser les filaments d’actine vers le centre du sarcomère : les bandes I et H raccourcissent, la bande A garde sa longueur. Une nouvelle molécule d’ATP détache la myosine ; le Ca²⁺ est repompé et le muscle se relâche.",
+   "points": [
+    "ATP : source directe d’énergie.",
+    "Phosphocréatine : régénération rapide.",
+    "Ca²⁺ libéré par le réticulum.",
+    "Glissement de l’actine sur la myosine.",
+    "Bandes I et H raccourcissent ; A constante."
+   ],
+   "application": {
+    "q": "Pourquoi la teneur en ATP reste-t-elle constante pendant la contraction ?",
+    "a": "L’ATP consommé est aussitôt régénéré (phosphocréatine, glycolyse, respiration)."
+   },
+   "applications": [
+    {
+     "q": "Quel ion déclenche la contraction ?",
+     "a": "Le calcium Ca²⁺, libéré par le réticulum sarcoplasmique."
+    },
+    {
+     "q": "Que devient la bande A lors de la contraction ?",
+     "a": "Sa longueur reste constante ; seules les bandes I et H raccourcissent."
+    }
+   ],
+   "board": [
+    {
+     "h": "Expériences sur le muscle",
+     "lines": [],
+     "table": [
+      [
+       "Muscle",
+       "Glycogène",
+       "ATP",
+       "Phosphocréatine"
+      ],
+      [
+       "Intact",
+       "1,62 → 1,21",
+       "2 → 2",
+       "1,5 → 1,5"
+      ],
+      [
+       "Glycolyse bloquée",
+       "1,62 → 1,62",
+       "2 → 2",
+       "1,5 → 0,4"
+      ]
+     ]
+    },
+    {
+     "h": "Régénération de l’ATP",
+     "lines": [
+      "PC + ADP → ATP + C (rapide).",
+      "Exercice modéré : glucose → 6 CO₂ + 6 H₂O + 38 ATP.",
+      "Exercice intense : glucose → 2 acides lactiques + 2 ATP.",
+      "(Correction : p. 204, la respiration produit 6 H₂O et non « H₂O ».)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Phénomènes thermiques de la contraction musculaire",
+   "match": [
+    "Phénomènes thermiques de la contraction musculaire"
+   ],
+   "pages": [
+    103,
+    112
+   ],
+   "objectives": [
+    "Distinguer chaleur initiale et chaleur retardée.",
+    "Expliquer le rendement du muscle."
+   ],
+   "intro": "Pourquoi a-t-on chaud et transpire-t-on pendant l’effort ?",
+   "summary": "Toute contraction s’accompagne d’un dégagement de chaleur en deux parties. La chaleur initiale, libérée pendant la secousse en une fraction de seconde, est de grande amplitude ; elle comprend la chaleur de contraction, de maintien et de relâchement ; elle provient de réactions anaérobies (hydrolyse de l’ATP et de la phosphocréatine). La chaleur retardée, plus faible mais plus durable (plusieurs minutes), suit la secousse ; elle accompagne la régénération des réserves par des réactions surtout aérobies (respiration). Le rendement du muscle est faible : environ 20 % de l’énergie devient énergie mécanique et 80 % chaleur, éliminée en partie par la sueur.",
+   "points": [
+    "Chaleur initiale : brève, anaérobie.",
+    "Chaleur retardée : durable, aérobie.",
+    "Rendement ≈ 20 % mécanique.",
+    "80 % de chaleur, évacuée par la sueur."
+   ],
+   "application": {
+    "q": "Un muscle libère 1000 J. Quelle part devient travail mécanique ?",
+    "a": "Environ 20 %, soit 200 J ; 800 J sont dégagés en chaleur."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi le rendement du muscle est-il faible ?",
+     "a": "Parce que 80 % de l’énergie est perdue sous forme de chaleur."
+    },
+    {
+     "q": "Quelle chaleur dépend de l’O₂ ?",
+     "a": "La chaleur retardée."
+    }
+   ],
+   "board": [
+    {
+     "h": "Deux types de chaleur",
+     "lines": [],
+     "table": [
+      [
+       "Chaleur",
+       "Moment",
+       "Origine"
+      ],
+      [
+       "Initiale",
+       "pendant la secousse",
+       "hydrolyse de l’ATP et de la phosphocréatine (anaérobie)"
+      ],
+      [
+       "Retardée",
+       "après la secousse, plusieurs minutes",
+       "régénération par la respiration (aérobie)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité III : Plaques lithosphériques, convection et frontières",
+   "match": [
+    "Plaques lithosphériques, convection et frontières"
+   ],
+   "pages": [
+    113,
+    118
+   ],
+   "objectives": [
+    "Définir la tectonique des plaques et une plaque lithosphérique.",
+    "Expliquer le rôle des courants de convection du manteau.",
+    "Distinguer les frontières divergentes, convergentes et transformantes."
+   ],
+   "intro": "Pourquoi les séismes et les volcans se concentrent-ils sur certaines lignes du globe ?",
+   "summary": "La tectonique étudie les déformations des roches ; la tectonique des plaques est une théorie unificatrice selon laquelle la lithosphère est découpée en plaques. Une plaque lithosphérique est une portion rigide formée de croûte (continentale et/ou océanique) et de la partie supérieure du manteau ; elle repose sur l’asthénosphère, plus ductile, et se déplace lentement (quelques centimètres par an). On compte 12 plaques principales (africaine, eurasienne, nord-américaine, sud-américaine, pacifique…) et des plaques secondaires. Le moteur est la convection du manteau : la chaleur, issue notamment de la désintégration d’éléments radioactifs, crée des courants ascendants et descendants qui entraînent les plaques ; la direction dépend du sens des courants, la vitesse de leur intensité. Trois types de frontières : divergentes (dorsales, création de croûte océanique ; ex. dorsale médio-atlantique), convergentes (subduction ou collision ; ex. plaque de Nazca sous la plaque sud-américaine), transformantes (coulissage horizontal le long de failles transformantes).",
+   "points": [
+    "Plaque = croûte + manteau supérieur, rigide.",
+    "Elle se déplace sur l’asthénosphère.",
+    "Moteur : convection du manteau.",
+    "Vitesse : quelques cm/an.",
+    "Frontières : divergentes, convergentes, transformantes."
+   ],
+   "application": {
+    "q": "Les plaques se déplacent-elles de quelques km/an ?",
+    "a": "Non : de quelques centimètres par an."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce que l’asthénosphère ?",
+     "a": "La couche du manteau, plus ductile, sur laquelle glissent les plaques."
+    },
+    {
+     "q": "D’où vient l’énergie de la convection ?",
+     "a": "De la chaleur interne, notamment de la désintégration d’éléments radioactifs."
+    }
+   ],
+   "board": [
+    {
+     "h": "Types de frontières",
+     "lines": [],
+     "table": [
+      [
+       "Frontière",
+       "Mouvement",
+       "Exemple"
+      ],
+      [
+       "Divergente (dorsale)",
+       "éloignement, création de croûte",
+       "dorsale médio-atlantique"
+      ],
+      [
+       "Convergente",
+       "rapprochement : subduction, collision",
+       "Nazca sous l’Amérique du Sud ; Himalaya"
+      ],
+      [
+       "Transformante",
+       "coulissage horizontal",
+       "failles transformantes des dorsales"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité III : Mouvements de divergence — dorsales et ouverture océanique",
+   "match": [
+    "Mouvements de divergence — dorsales et ouverture océanique"
+   ],
+   "pages": [
+    119,
+    120
+   ],
+   "objectives": [
+    "Définir le mouvement de divergence.",
+    "Décrire une dorsale océanique et ses manifestations.",
+    "Expliquer la naissance d’un océan à partir d’un rift."
+   ],
+   "intro": "L’océan Atlantique s’élargit-il encore aujourd’hui ?",
+   "summary": "La divergence est l’éloignement de deux plaques sous l’effet des courants de convection ascendants. Exemples : dorsale médio-atlantique (sépare les plaques nord-américaine et eurasienne, sud-américaine et africaine), dorsale de l’océan Indien. Les dorsales sont des reliefs sous-marins longs de dizaines de milliers de kilomètres, dont le sommet est à 2,5–3 km de profondeur, environ 2 km au-dessus des fonds moyens. En leur milieu, un fossé d’effondrement (rift) témoigne de la distension. On y observe un volcanisme basaltique effusif (laves en coussins ou pillow-lavas) et une sismicité à foyers superficiels ; la croûte océanique formée s’écarte de part et d’autre de l’axe. Les dorsales sont découpées par des failles transformantes. La séparation de deux continents commence par un rift continental, qui évolue en océan.",
+   "points": [
+    "Divergence : éloignement des plaques.",
+    "Dorsale : relief sous-marin avec rift axial.",
+    "Volcanisme basaltique effusif (pillow-lavas).",
+    "Séismes superficiels.",
+    "Rift continental → océan."
+   ],
+   "application": {
+    "q": "Pourquoi dit-on que le volcanisme des dorsales est effusif ?",
+    "a": "Le magma basaltique fluide s’épanche en coulées (laves en coussins) sans explosions."
+   },
+   "applications": [
+    {
+     "q": "Quelles plaques la dorsale médio-atlantique sépare-t-elle ?",
+     "a": "Les plaques nord-américaine et eurasienne, et sud-américaine et africaine."
+    },
+    {
+     "q": "Au niveau d’une dorsale, le volcanisme est-il explosif ?",
+     "a": "Non, il est effusif."
+    }
+   ],
+   "board": [
+    {
+     "h": "Caractères d’une dorsale",
+     "lines": [
+      "Relief : sommet à 2,5–3 km de profondeur ; rift central.",
+      "Volcanisme basaltique effusif ; séismes à foyer superficiel.",
+      "Création et écartement de la croûte océanique.",
+      "Recoupée par des failles transformantes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité III : Mouvements de convergence — subduction, obduction, collision",
+   "match": [
+    "Mouvements de convergence — subduction, obduction, collision"
+   ],
+   "pages": [
+    120,
+    124
+   ],
+   "objectives": [
+    "Définir et caractériser la subduction.",
+    "Définir l’obduction et les ophiolites.",
+    "Expliquer la collision continentale (Himalaya)."
+   ],
+   "intro": "Comment s’est formée la chaîne de l’Himalaya ?",
+   "summary": "Subduction : une plaque océanique, plus dense (d ≈ 3,2), plonge sous une plaque moins dense (continentale, d ≈ 2,7, ou océanique) au niveau d’une fosse océanique ; en profondeur elle fond partiellement et le magma alimente des volcans explosifs (cordillères, arcs insulaires) ; des séismes de plus en plus profonds se produisent le long du plan de plongée. Obduction (inverse de la subduction) : un fragment de croûte océanique chevauche une croûte continentale ; il en reste des ophiolites, témoins d’anciens océans (ophiolite de Semail en Oman, Nouvelle-Calédonie). Collision : après la fermeture d’un océan (Téthys), deux masses continentales de faible densité s’affrontent sans subduction (plaque indienne contre plaque eurasienne → Himalaya) ; on observe plis, failles inverses, charriages, épaississement de la croûte, sutures ophiolitiques, métamorphisme et granites, et de violents séismes.",
+   "points": [
+    "Subduction : plaque dense plonge sous une autre.",
+    "Fosse océanique, volcanisme explosif, séismes profonds.",
+    "Obduction : croûte océanique sur croûte continentale (ophiolites).",
+    "Collision : affrontement continental (Himalaya).",
+    "Plis, failles inverses, charriages."
+   ],
+   "application": {
+    "q": "Pourquoi la plaque océanique plonge-t-elle sous la plaque continentale ?",
+    "a": "Parce qu’elle est plus dense (3,2 contre 2,7)."
+   },
+   "applications": [
+    {
+     "q": "Que sont les ophiolites ?",
+     "a": "Des fragments d’ancienne croûte océanique charriés sur un continent."
+    },
+    {
+     "q": "Au niveau d’une fosse océanique, que se passe-t-il ?",
+     "a": "Une plaque plonge sous une autre (subduction)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Trois types de convergence",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Mécanisme",
+       "Exemple"
+      ],
+      [
+       "Subduction",
+       "plongée d’une plaque océanique",
+       "Nazca sous l’Amérique du Sud (Andes)"
+      ],
+      [
+       "Obduction",
+       "chevauchement de croûte océanique sur un continent",
+       "ophiolite de Semail (Oman)"
+      ],
+      [
+       "Collision",
+       "affrontement de deux continents",
+       "Inde-Eurasie : Himalaya"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 123, la consigne de l’activité 7 demande de définir la collision, et non la subduction.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité III : Déformations de la croûte — les plis",
+   "match": [
+    "Déformations de la croûte — les plis"
+   ],
+   "pages": [
+    124,
+    127
+   ],
+   "objectives": [
+    "Définir un pli et ses éléments.",
+    "Distinguer anticlinal et synclinal.",
+    "Classer les plis selon le plan axial (droit, déjeté, déversé, couché)."
+   ],
+   "intro": "Pourquoi voit-on des couches de roches ondulées dans les montagnes ?",
+   "summary": "Un pli est une déformation souple et continue de couches initialement planes, sous l’effet d’une compression ; il se forme surtout en profondeur, où chaleur et pression rendent les roches plastiques. Anticlinal : pli convexe (en voûte) dont le cœur contient les couches les plus anciennes ; synclinal : pli concave (en creux) dont le cœur contient les couches les plus récentes. Éléments : charnière (zone de courbure maximale), flancs, plan (surface) axial passant par les charnières, axe du pli ; on mesure la longueur d’onde et l’amplitude. Selon le plan axial : pli droit (plan vertical, flancs symétriques), pli déjeté (plan incliné, flancs pendant en sens opposés et inégaux), pli déversé (plan incliné, flancs pendant dans le même sens), pli couché (plan presque horizontal, flanc inverse étiré) ; le pli-faille apparaît quand le flanc inverse disparaît.",
+   "points": [
+    "Pli : déformation souple (compression).",
+    "Anticlinal : cœur ancien ; synclinal : cœur récent.",
+    "Charnière, flancs, plan axial.",
+    "Droit, déjeté, déversé, couché.",
+    "Pli-faille : flanc inverse rompu."
+   ],
+   "application": {
+    "q": "Dans un synclinal érodé, où trouve-t-on les couches les plus récentes ?",
+    "a": "Au cœur du pli."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce que la charnière d’un pli ?",
+     "a": "La zone de courbure maximale."
+    },
+    {
+     "q": "Le plan axial passe-t-il par les charnières de toutes les couches ?",
+     "a": "Oui, il passe par toutes les charnières des couches plissées."
+    }
+   ],
+   "board": [
+    {
+     "h": "Types de plis",
+     "lines": [],
+     "table": [
+      [
+       "Pli",
+       "Plan axial",
+       "Flancs"
+      ],
+      [
+       "Droit",
+       "vertical",
+       "symétriques"
+      ],
+      [
+       "Déjeté",
+       "incliné",
+       "pendages opposés, inégaux"
+      ],
+      [
+       "Déversé",
+       "incliné",
+       "pendent dans le même sens"
+      ],
+      [
+       "Couché",
+       "presque horizontal",
+       "presque parallèles, flanc inverse étiré"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 127, un pli déjeté a des flancs dissymétriques, non « symétriques », comme l’indique la p. 126.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité III : Déformations de la croûte — les failles",
+   "match": [
+    "Déformations de la croûte — les failles"
+   ],
+   "pages": [
+    127,
+    133
+   ],
+   "objectives": [
+    "Définir une faille et ses éléments.",
+    "Distinguer faille normale, faille inverse et décrochement.",
+    "Relier failles et contraintes (distension, compression)."
+   ],
+   "intro": "Qu’est-ce qui distingue une faille d’une simple fissure ?",
+   "summary": "Une faille est une déformation cassante : une cassure des couches le long de laquelle deux compartiments se sont déplacés l’un par rapport à l’autre (une diaclase est une cassure sans déplacement). Elle se forme surtout dans les parties superficielles de l’écorce. Éléments : plan de faille (souvent poli : miroir de faille), deux compartiments (le toit, au-dessus du plan, et le mur, au-dessous), le rejet (déplacement). Faille normale : produite par une distension ; le toit descend par rapport au mur ; allongement horizontal ; elle forme des fossés d’effondrement (grabens) et des horsts (rift africain, fossé rhénan, rifts des dorsales). Faille inverse : produite par une compression ; le toit monte et chevauche le mur ; raccourcissement ; chevauchements dans les chaînes de montagnes. Décrochement : déplacement horizontal des compartiments.",
+   "points": [
+    "Faille : cassure avec déplacement.",
+    "Toit (au-dessus), mur (au-dessous), plan de faille.",
+    "Normale : distension, toit qui descend.",
+    "Inverse : compression, toit qui monte.",
+    "Graben et horst ; décrochement."
+   ],
+   "application": {
+    "q": "Un fossé d’effondrement est-il dû à des failles normales ou inverses ?",
+    "a": "À des failles normales (distension)."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce qu’une diaclase ?",
+     "a": "Une cassure sans déplacement des compartiments."
+    },
+    {
+     "q": "Quelle contrainte produit une faille inverse ?",
+     "a": "Une compression."
+    }
+   ],
+   "board": [
+    {
+     "h": "Types de failles",
+     "lines": [],
+     "table": [
+      [
+       "Faille",
+       "Contrainte",
+       "Mouvement du toit",
+       "Exemple"
+      ],
+      [
+       "Normale",
+       "distension",
+       "descend",
+       "rift africain, fossé rhénan"
+      ],
+      [
+       "Inverse",
+       "compression",
+       "monte (chevauchement)",
+       "chaînes de montagnes"
+      ],
+      [
+       "Décrochement",
+       "cisaillement",
+       "déplacement horizontal",
+       "failles transformantes"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 128, le pendage du plan de faille se mesure par rapport à l’horizontale ; le toit est le compartiment situé au-dessus du plan et le mur celui situé au-dessous, quel que soit le compartiment soulevé.)"
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "6C"
+}

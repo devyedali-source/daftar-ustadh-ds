@@ -1,0 +1,59 @@
+# Sciences naturelles 6e C (Mathématiques) — IPN. Les unités I (information génétique) et II (énergie des muscles striés)
+# ont le même contenu que le manuel de 6e D : on reprend ces leçons avec les pages du manuel 6C ; l’unité III (tectonique) est propre au 6C.
+import importlib.util as _u, os as _os
+
+BOOK = "SN_6C"
+_s = _u.spec_from_file_location("_sn6d", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "SN_6D.py"))
+_d = _u.module_from_spec(_s)
+_s.loader.exec_module(_d)
+S, L = _d.S, _d.L
+
+PG = {"loc": [9, 13], "adn": [14, 22], "arn": [23, 29], "prot": [30, 33], "mut": [34, 37], "genie": [38, 51],
+      "mitose": [52, 55], "meiose": [56, 61], "fec": [62, 67], "cycle": [68, 80]}
+PE = {"ultra": [83, 86], "resp": [87, 94], "ferm": [94, 97], "contr": [97, 103], "therm": [103, 112]}
+
+LESSONS = _d.genetique(PG, "Unité I") + _d.energie(PE, "Unité II") + [
+L("Unité III : Plaques lithosphériques, convection et frontières", [113, 118],
+  ["Définir la tectonique des plaques et une plaque lithosphérique.", "Expliquer le rôle des courants de convection du manteau.", "Distinguer les frontières divergentes, convergentes et transformantes."],
+  "Pourquoi les séismes et les volcans se concentrent-ils sur certaines lignes du globe ?",
+  "La tectonique étudie les déformations des roches ; la tectonique des plaques est une théorie unificatrice selon laquelle la lithosphère est découpée en plaques. Une plaque lithosphérique est une portion rigide formée de croûte (continentale et/ou océanique) et de la partie supérieure du manteau ; elle repose sur l’asthénosphère, plus ductile, et se déplace lentement (quelques centimètres par an). On compte 12 plaques principales (africaine, eurasienne, nord-américaine, sud-américaine, pacifique…) et des plaques secondaires. Le moteur est la convection du manteau : la chaleur, issue notamment de la désintégration d’éléments radioactifs, crée des courants ascendants et descendants qui entraînent les plaques ; la direction dépend du sens des courants, la vitesse de leur intensité. Trois types de frontières : divergentes (dorsales, création de croûte océanique ; ex. dorsale médio-atlantique), convergentes (subduction ou collision ; ex. plaque de Nazca sous la plaque sud-américaine), transformantes (coulissage horizontal le long de failles transformantes).",
+  ["Plaque = croûte + manteau supérieur, rigide.", "Elle se déplace sur l’asthénosphère.", "Moteur : convection du manteau.", "Vitesse : quelques cm/an.", "Frontières : divergentes, convergentes, transformantes."],
+  ("Les plaques se déplacent-elles de quelques km/an ?", "Non : de quelques centimètres par an."),
+  [S("Types de frontières", table=[["Frontière", "Mouvement", "Exemple"], ["Divergente (dorsale)", "éloignement, création de croûte", "dorsale médio-atlantique"], ["Convergente", "rapprochement : subduction, collision", "Nazca sous l’Amérique du Sud ; Himalaya"], ["Transformante", "coulissage horizontal", "failles transformantes des dorsales"]])],
+  apps=[("Qu’est-ce que l’asthénosphère ?", "La couche du manteau, plus ductile, sur laquelle glissent les plaques."), ("D’où vient l’énergie de la convection ?", "De la chaleur interne, notamment de la désintégration d’éléments radioactifs.")]),
+L("Unité III : Mouvements de divergence — dorsales et ouverture océanique", [119, 120],
+  ["Définir le mouvement de divergence.", "Décrire une dorsale océanique et ses manifestations.", "Expliquer la naissance d’un océan à partir d’un rift."],
+  "L’océan Atlantique s’élargit-il encore aujourd’hui ?",
+  "La divergence est l’éloignement de deux plaques sous l’effet des courants de convection ascendants. Exemples : dorsale médio-atlantique (sépare les plaques nord-américaine et eurasienne, sud-américaine et africaine), dorsale de l’océan Indien. Les dorsales sont des reliefs sous-marins longs de dizaines de milliers de kilomètres, dont le sommet est à 2,5–3 km de profondeur, environ 2 km au-dessus des fonds moyens. En leur milieu, un fossé d’effondrement (rift) témoigne de la distension. On y observe un volcanisme basaltique effusif (laves en coussins ou pillow-lavas) et une sismicité à foyers superficiels ; la croûte océanique formée s’écarte de part et d’autre de l’axe. Les dorsales sont découpées par des failles transformantes. La séparation de deux continents commence par un rift continental, qui évolue en océan.",
+  ["Divergence : éloignement des plaques.", "Dorsale : relief sous-marin avec rift axial.", "Volcanisme basaltique effusif (pillow-lavas).", "Séismes superficiels.", "Rift continental → océan."],
+  ("Pourquoi dit-on que le volcanisme des dorsales est effusif ?", "Le magma basaltique fluide s’épanche en coulées (laves en coussins) sans explosions."),
+  [S("Caractères d’une dorsale", ["Relief : sommet à 2,5–3 km de profondeur ; rift central.", "Volcanisme basaltique effusif ; séismes à foyer superficiel.", "Création et écartement de la croûte océanique.", "Recoupée par des failles transformantes."])],
+  apps=[("Quelles plaques la dorsale médio-atlantique sépare-t-elle ?", "Les plaques nord-américaine et eurasienne, et sud-américaine et africaine."), ("Au niveau d’une dorsale, le volcanisme est-il explosif ?", "Non, il est effusif.")]),
+L("Unité III : Mouvements de convergence — subduction, obduction, collision", [120, 124],
+  ["Définir et caractériser la subduction.", "Définir l’obduction et les ophiolites.", "Expliquer la collision continentale (Himalaya)."],
+  "Comment s’est formée la chaîne de l’Himalaya ?",
+  "Subduction : une plaque océanique, plus dense (d ≈ 3,2), plonge sous une plaque moins dense (continentale, d ≈ 2,7, ou océanique) au niveau d’une fosse océanique ; en profondeur elle fond partiellement et le magma alimente des volcans explosifs (cordillères, arcs insulaires) ; des séismes de plus en plus profonds se produisent le long du plan de plongée. Obduction (inverse de la subduction) : un fragment de croûte océanique chevauche une croûte continentale ; il en reste des ophiolites, témoins d’anciens océans (ophiolite de Semail en Oman, Nouvelle-Calédonie). Collision : après la fermeture d’un océan (Téthys), deux masses continentales de faible densité s’affrontent sans subduction (plaque indienne contre plaque eurasienne → Himalaya) ; on observe plis, failles inverses, charriages, épaississement de la croûte, sutures ophiolitiques, métamorphisme et granites, et de violents séismes.",
+  ["Subduction : plaque dense plonge sous une autre.", "Fosse océanique, volcanisme explosif, séismes profonds.", "Obduction : croûte océanique sur croûte continentale (ophiolites).", "Collision : affrontement continental (Himalaya).", "Plis, failles inverses, charriages."],
+  ("Pourquoi la plaque océanique plonge-t-elle sous la plaque continentale ?", "Parce qu’elle est plus dense (3,2 contre 2,7)."),
+  [S("Trois types de convergence", table=[["Type", "Mécanisme", "Exemple"], ["Subduction", "plongée d’une plaque océanique", "Nazca sous l’Amérique du Sud (Andes)"], ["Obduction", "chevauchement de croûte océanique sur un continent", "ophiolite de Semail (Oman)"], ["Collision", "affrontement de deux continents", "Inde-Eurasie : Himalaya"]]),
+   S("Correction", ["(Correction : p. 123, la consigne de l’activité 7 demande de définir la collision, et non la subduction.)"])],
+  apps=[("Que sont les ophiolites ?", "Des fragments d’ancienne croûte océanique charriés sur un continent."), ("Au niveau d’une fosse océanique, que se passe-t-il ?", "Une plaque plonge sous une autre (subduction).")]),
+L("Unité III : Déformations de la croûte — les plis", [124, 127],
+  ["Définir un pli et ses éléments.", "Distinguer anticlinal et synclinal.", "Classer les plis selon le plan axial (droit, déjeté, déversé, couché)."],
+  "Pourquoi voit-on des couches de roches ondulées dans les montagnes ?",
+  "Un pli est une déformation souple et continue de couches initialement planes, sous l’effet d’une compression ; il se forme surtout en profondeur, où chaleur et pression rendent les roches plastiques. Anticlinal : pli convexe (en voûte) dont le cœur contient les couches les plus anciennes ; synclinal : pli concave (en creux) dont le cœur contient les couches les plus récentes. Éléments : charnière (zone de courbure maximale), flancs, plan (surface) axial passant par les charnières, axe du pli ; on mesure la longueur d’onde et l’amplitude. Selon le plan axial : pli droit (plan vertical, flancs symétriques), pli déjeté (plan incliné, flancs pendant en sens opposés et inégaux), pli déversé (plan incliné, flancs pendant dans le même sens), pli couché (plan presque horizontal, flanc inverse étiré) ; le pli-faille apparaît quand le flanc inverse disparaît.",
+  ["Pli : déformation souple (compression).", "Anticlinal : cœur ancien ; synclinal : cœur récent.", "Charnière, flancs, plan axial.", "Droit, déjeté, déversé, couché.", "Pli-faille : flanc inverse rompu."],
+  ("Dans un synclinal érodé, où trouve-t-on les couches les plus récentes ?", "Au cœur du pli."),
+  [S("Types de plis", table=[["Pli", "Plan axial", "Flancs"], ["Droit", "vertical", "symétriques"], ["Déjeté", "incliné", "pendages opposés, inégaux"], ["Déversé", "incliné", "pendent dans le même sens"], ["Couché", "presque horizontal", "presque parallèles, flanc inverse étiré"]]),
+   S("Correction", ["(Correction : p. 127, un pli déjeté a des flancs dissymétriques, non « symétriques », comme l’indique la p. 126.)"])],
+  apps=[("Qu’est-ce que la charnière d’un pli ?", "La zone de courbure maximale."), ("Le plan axial passe-t-il par les charnières de toutes les couches ?", "Oui, il passe par toutes les charnières des couches plissées.")]),
+L("Unité III : Déformations de la croûte — les failles", [127, 133],
+  ["Définir une faille et ses éléments.", "Distinguer faille normale, faille inverse et décrochement.", "Relier failles et contraintes (distension, compression)."],
+  "Qu’est-ce qui distingue une faille d’une simple fissure ?",
+  "Une faille est une déformation cassante : une cassure des couches le long de laquelle deux compartiments se sont déplacés l’un par rapport à l’autre (une diaclase est une cassure sans déplacement). Elle se forme surtout dans les parties superficielles de l’écorce. Éléments : plan de faille (souvent poli : miroir de faille), deux compartiments (le toit, au-dessus du plan, et le mur, au-dessous), le rejet (déplacement). Faille normale : produite par une distension ; le toit descend par rapport au mur ; allongement horizontal ; elle forme des fossés d’effondrement (grabens) et des horsts (rift africain, fossé rhénan, rifts des dorsales). Faille inverse : produite par une compression ; le toit monte et chevauche le mur ; raccourcissement ; chevauchements dans les chaînes de montagnes. Décrochement : déplacement horizontal des compartiments.",
+  ["Faille : cassure avec déplacement.", "Toit (au-dessus), mur (au-dessous), plan de faille.", "Normale : distension, toit qui descend.", "Inverse : compression, toit qui monte.", "Graben et horst ; décrochement."],
+  ("Un fossé d’effondrement est-il dû à des failles normales ou inverses ?", "À des failles normales (distension)."),
+  [S("Types de failles", table=[["Faille", "Contrainte", "Mouvement du toit", "Exemple"], ["Normale", "distension", "descend", "rift africain, fossé rhénan"], ["Inverse", "compression", "monte (chevauchement)", "chaînes de montagnes"], ["Décrochement", "cisaillement", "déplacement horizontal", "failles transformantes"]]),
+   S("Correction", ["(Correction : p. 128, le pendage du plan de faille se mesure par rapport à l’horizontale ; le toit est le compartiment situé au-dessus du plan et le mur celui situé au-dessous, quel que soit le compartiment soulevé.)"])],
+  apps=[("Qu’est-ce qu’une diaclase ?", "Une cassure sans déplacement des compartiments."), ("Quelle contrainte produit une faille inverse ?", "Une compression.")]),
+]
