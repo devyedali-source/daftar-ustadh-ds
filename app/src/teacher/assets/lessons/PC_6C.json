@@ -1,0 +1,829 @@
+{
+ "subject": "PC",
+ "book": "books/PC_6CD_CHI.pdf",
+ "bookTitle": "Chimie 6ème C et D",
+ "lessons": [
+  {
+   "title": "Chimie – Chapitre I : Ressources organiques naturelles et analyse élémentaire",
+   "match": [
+    "Ressources organiques naturelles et analyse élémentaire"
+   ],
+   "pages": [
+    9,
+    18
+   ],
+   "objectives": [
+    "Définir une ressource naturelle et un composé organique.",
+    "Connaître le pétrole, ses dérivés et ses usages.",
+    "Déterminer une composition centésimale et une formule brute."
+   ],
+   "intro": "D’où viennent l’essence, le gaz butane et les matières plastiques que nous utilisons chaque jour ?",
+   "summary": "Une ressource naturelle est une substance, un organisme, un milieu ou un objet présent dans la nature et utilisé pour satisfaire les besoins (énergie, alimentation, construction…). Les molécules organiques contiennent le plus souvent au moins un atome de carbone lié à un atome d’hydrogène. Houilles, pétroles et gaz naturels sont d’origine organique : ils se sont formés par décomposition anaérobie d’organismes. Le pétrole brut, mélange d’hydrocarbures, n’est pas utilisable tel quel : on le raffine (distillation fractionnée) pour obtenir carburants (essence, gazole, GPL, kérosène), fioul et matières premières des polymères. L’analyse qualitative met en évidence les éléments (la buée révèle H, l’eau de chaux troublée révèle C). L’analyse quantitative donne les pourcentages massiques : pour CxHyOz de masse molaire M, 12x/%C = y/%H = 16z/%O = M/100 ; à partir d’une combustion, m(C) = m(CO₂) × 12/44 et m(H) = m(H₂O) × 2/18.",
+   "points": [
+    "Composé organique : C lié à H (le plus souvent).",
+    "Combustibles fossiles d’origine organique.",
+    "Raffinage : distillation fractionnée.",
+    "Buée ⇒ H ; eau de chaux ⇒ C.",
+    "12x/%C = y/%H = 16z/%O = M/100."
+   ],
+   "application": {
+    "q": "3,6 g de CxHyOz donnent 8,7 g de CO₂ et 3,7 g d’eau ; d(vapeur) = 2,48. Formule brute ?",
+    "a": "m(C) = 8,7 × 12/44 = 2,4 g (66,7 %) ; m(H) = 3,7 × 2/18 = 0,4 g (11,1 %) ; %O = 22,2 % ; M = 29 × 2,48 = 72 g/mol ⇒ x = 4, y = 8, z = 1 : C₄H₈O."
+   },
+   "applications": [
+    {
+     "q": "Le méthane CH₄ est-il organique ?",
+     "a": "Oui : il contient du carbone lié à l’hydrogène."
+    },
+    {
+     "q": "Composition centésimale du saccharose C₁₂H₂₂O₁₁ (M = 342 g/mol) ?",
+     "a": "%C = 144/342 ≈ 42,1 % ; %H = 22/342 ≈ 6,4 % ; %O = 176/342 ≈ 51,5 %."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le pétrole et ses dérivés",
+     "lines": [
+      "Carburants : essence, gazole, GPL, kérosène ; fioul domestique ; matières premières des polymères.",
+      "Près de la moitié des produits pétroliers sert aux transports."
+     ]
+    },
+    {
+     "h": "Analyse quantitative",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "C",
+       "H",
+       "O"
+      ],
+      [
+       "1 mole (M)",
+       "12x",
+       "y",
+       "16z"
+      ],
+      [
+       "100 g",
+       "%C",
+       "%H",
+       "%O"
+      ]
+     ]
+    },
+    {
+     "h": "Composition centésimale de l’éthanol C₂H₆O",
+     "lines": [
+      "M = 46 g/mol ; %C = 24/46 ≈ 52,2 % ; %H = 6/46 ≈ 13,0 % ; %O = 16/46 ≈ 34,8 %.",
+      "(Correction : le manuel donne 52,14 % et 13,13 % ; les valeurs exactes sont 52,17 % et 13,04 %.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre II : Les alcanes",
+   "match": [
+    "Les alcanes"
+   ],
+   "pages": [
+    19,
+    33
+   ],
+   "objectives": [
+    "Connaître la formule générale et la nomenclature des alcanes.",
+    "Reconnaître des isomères de constitution.",
+    "Écrire les réactions de combustion et de substitution."
+   ],
+   "intro": "Le gaz de nos cuisinières est du butane. Pourquoi brûle-t-il si bien ? Que se passe-t-il si l’air manque ?",
+   "summary": "Les alcanes sont des hydrocarbures saturés (liaisons simples) de formule générale CnH2n+2 : méthane, éthane, propane, butane, pentane, hexane, heptane, octane, nonane, décane. Un groupe alkyle CnH2n+1– (méthyle, éthyle…) dérive de l’alcane. Nomenclature des alcanes ramifiés : chaîne la plus longue, numérotation donnant les plus petits indices aux substituants, préfixes di-, tri-… Des isomères ont même formule brute mais des formules développées différentes (butane et méthylpropane). Propriétés physiques : gaz jusqu’à 4 C, liquides de 5 à 16 C, solides au-delà ; insolubles dans l’eau. Combustion complète : CnH2n+2 + (3n + 1)/2 O₂ → n CO₂ + (n + 1) H₂O ; incomplète (défaut de O₂) : formation de carbone ou de CO. Substitution par le dichlore à la lumière : CH₄ + Cl₂ → CH₃Cl + HCl, puis CH₂Cl₂, CHCl₃ (chloroforme), CCl₄. Les cycloalcanes ont pour formule CnH2n.",
+   "points": [
+    "CnH2n+2 ; liaisons simples.",
+    "Nomenclature : chaîne principale, indices minimaux.",
+    "Isomères : même formule brute.",
+    "Combustion : CO₂ + H₂O (complète).",
+    "Substitution : CH₄ + Cl₂ → CH₃Cl + HCl."
+   ],
+   "application": {
+    "q": "Équation de la combustion complète du butane.",
+    "a": "2 C₄H₁₀ + 13 O₂ → 8 CO₂ + 10 H₂O."
+   },
+   "applications": [
+    {
+     "q": "Formule brute d’un alcane de masse molaire 72 g/mol ?",
+     "a": "14n + 2 = 72 ⇒ n = 5 : C₅H₁₂ (pentane, méthylbutane, diméthylpropane)."
+    },
+    {
+     "q": "Nommer CH₃–CH(CH₃)–CH₃.",
+     "a": "Méthylpropane."
+    }
+   ],
+   "board": [
+    {
+     "h": "Alcanes linéaires",
+     "lines": [],
+     "table": [
+      [
+       "n",
+       "Formule",
+       "Nom"
+      ],
+      [
+       "1",
+       "CH₄",
+       "méthane"
+      ],
+      [
+       "2",
+       "C₂H₆",
+       "éthane"
+      ],
+      [
+       "3",
+       "C₃H₈",
+       "propane"
+      ],
+      [
+       "4",
+       "C₄H₁₀",
+       "butane"
+      ],
+      [
+       "5",
+       "C₅H₁₂",
+       "pentane"
+      ],
+      [
+       "6",
+       "C₆H₁₄",
+       "hexane"
+      ]
+     ]
+    },
+    {
+     "h": "Exercice d’application (propane)",
+     "lines": [
+      "7 kg de propane liquide dans 10 L : ρ = 700 kg/m³ ; gaz : ρ = 0,044/0,0224 ≈ 1,96 kg/m³ ; d = 44/29 ≈ 1,52 > 1 (plus dense que l’air).",
+      "n = 7000/44 ≈ 159 mol ⇒ V ≈ 22,4 × 159 ≈ 3562 L ; O₂ nécessaire : 5 × 159 = 795 mol ≈ 17,8 m³."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre III : Les alcènes",
+   "match": [
+    "Les alcènes"
+   ],
+   "pages": [
+    35,
+    43
+   ],
+   "objectives": [
+    "Connaître la formule générale et la nomenclature des alcènes.",
+    "Distinguer les isomères Z et E.",
+    "Écrire les réactions d’addition et de polymérisation de l’éthylène."
+   ],
+   "intro": "Les sacs plastiques sont faits de polyéthylène. Comment passe-t-on d’un petit gaz, l’éthylène, à un long polymère ?",
+   "summary": "Les alcènes sont des hydrocarbures insaturés non cycliques de formule CnH2n (n ≥ 2) comportant une double liaison C=C. Nom : celui de l’alcane en remplaçant « ane » par « ène », précédé de l’indice du premier carbone de la double liaison (but-2-ène). Si chaque carbone de la double liaison porte deux groupes différents, il existe deux diastéréoisomères Z (cis) et E (trans). L’éthylène C₂H₄ (CH₂=CH₂) est plan, angles ≈ 120°, M = 28 g/mol, d ≈ 0,97 ; c’est le composé le plus important de l’industrie chimique. Réactions : combustion (C₂H₄ + 3 O₂ → 2 CO₂ + 2 H₂O) ; additions : dihalogène (CH₂Cl–CH₂Cl), dihydrogène sur Ni (éthane), eau en milieu acide (éthanol), HCl (chloroéthane) ; règle de Markovnikov pour les alcènes dissymétriques ; polymérisation : n CH₂=CH₂ → –(CH₂–CH₂)n–.",
+   "points": [
+    "CnH2n ; double liaison C=C.",
+    "Suffixe « ène » + indice.",
+    "Isomères Z / E.",
+    "Additions : X₂, H₂, H₂O, HX.",
+    "Polymérisation : polyéthylène."
+   ],
+   "application": {
+    "q": "Produit de l’addition de l’eau sur le propène (H₂SO₄) ?",
+    "a": "Majoritaire : propan-2-ol CH₃–CHOH–CH₃ (Markovnikov) ; minoritaire : propan-1-ol."
+   },
+   "applications": [
+    {
+     "q": "Formule de l’alcène à 5 C ?",
+     "a": "C₅H₁₀."
+    },
+    {
+     "q": "Le but-1-ène a-t-il des isomères Z/E ?",
+     "a": "Non : le carbone 1 porte deux H."
+    }
+   ],
+   "board": [
+    {
+     "h": "Nomenclature",
+     "lines": [],
+     "table": [
+      [
+       "Formule",
+       "Nom"
+      ],
+      [
+       "C₂H₄",
+       "éthène (éthylène)"
+      ],
+      [
+       "C₃H₆",
+       "propène (propylène)"
+      ],
+      [
+       "C₄H₈",
+       "butène"
+      ],
+      [
+       "CH₃–CH=CH–CH₃",
+       "but-2-ène (Z ou E)"
+      ]
+     ]
+    },
+    {
+     "h": "Réactions de l’éthylène",
+     "lines": [
+      "CH₂=CH₂ + Cl₂ → CH₂Cl–CH₂Cl (1,2-dichloroéthane).",
+      "CH₂=CH₂ + H₂ → CH₃–CH₃ (Ni).",
+      "CH₂=CH₂ + H₂O → CH₃–CH₂–OH (H₂SO₄).",
+      "n CH₂=CH₂ → –(CH₂–CH₂)n– (polyéthylène)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre III : Les alcynes",
+   "match": [
+    "Les alcynes"
+   ],
+   "pages": [
+    44,
+    53
+   ],
+   "objectives": [
+    "Connaître la formule générale et la nomenclature des alcynes.",
+    "Connaître la structure et les propriétés de l’acétylène.",
+    "Écrire les réactions d’addition des alcynes."
+   ],
+   "intro": "Le chalumeau des soudeurs brûle de l’acétylène. Pourquoi cette flamme est-elle si chaude ?",
+   "summary": "Les alcynes sont des hydrocarbures insaturés non cycliques de formule CnH2n−2 (n ≥ 2) comportant une triple liaison C≡C ; on les nomme comme les alcènes en remplaçant « ène » par « yne » (propyne, but-2-yne). L’acétylène (éthyne) C₂H₂, H–C≡C–H, est linéaire ; c’est un gaz incolore, M = 26 g/mol, ρ = 26/22,4 ≈ 1,16 kg/m³, d ≈ 0,9 ; facile à liquéfier mais dangereux, peu soluble dans l’eau, très soluble dans les cétones. Réactions : combustion C₂H₂ + 5/2 O₂ → 2 CO₂ + H₂O (flamme très chaude) ; additions : 2 Cl₂ (tétrachloroéthane), 2 H₂ sur Ni (éthane), H₂O en milieu acide (éthanal).",
+   "points": [
+    "CnH2n−2 ; triple liaison C≡C.",
+    "Suffixe « yne ».",
+    "Acétylène : linéaire, M = 26 g/mol.",
+    "Additions : Cl₂, H₂, H₂O."
+   ],
+   "application": {
+    "q": "Équation de la combustion complète de l’acétylène.",
+    "a": "2 C₂H₂ + 5 O₂ → 4 CO₂ + 2 H₂O."
+   },
+   "applications": [
+    {
+     "q": "Formule de l’alcyne à 4 C ?",
+     "a": "C₄H₆."
+    },
+    {
+     "q": "L’acétylène est-il plus dense que l’air ?",
+     "a": "Non : d ≈ 0,9 < 1."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemples",
+     "lines": [],
+     "table": [
+      [
+       "Formule",
+       "Nom"
+      ],
+      [
+       "CH≡CH",
+       "éthyne (acétylène)"
+      ],
+      [
+       "CH≡C–CH₃",
+       "propyne"
+      ],
+      [
+       "CH₃–C≡C–CH₃",
+       "but-2-yne"
+      ],
+      [
+       "CH₃–C≡C–CH₂–CH₃",
+       "pent-2-yne"
+      ]
+     ]
+    },
+    {
+     "h": "Additions sur l’acétylène",
+     "lines": [
+      "CH≡CH + 2 Cl₂ → CHCl₂–CHCl₂.",
+      "CH≡CH + 2 H₂ → CH₃–CH₃ (Ni).",
+      "CH≡CH + H₂O → CH₃–CHO (éthanal)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre IV : Les composés aromatiques",
+   "match": [
+    "Les composés aromatiques"
+   ],
+   "pages": [
+    55,
+    66
+   ],
+   "objectives": [
+    "Connaître la structure du benzène.",
+    "Écrire les réactions d’addition et de substitution du benzène.",
+    "Reconnaître quelques dérivés aromatiques (toluène, phénol, TNT, aniline)."
+   ],
+   "intro": "Pourquoi le benzène, très insaturé, réagit-il plutôt par substitution que par addition ?",
+   "summary": "Le benzène C₆H₆ est un hydrocarbure cyclique ; la formule générale des aromatiques de cette série est CnH2n−6 (n ≥ 6). La molécule est plane, les angles sont de 120°, d(C–C) = 1,40 Å, d(C–H) = 1,08 Å ; M = 78 g/mol, densité de vapeur 2,69. Réactions : combustion C₆H₆ + 15/2 O₂ → 6 CO₂ + 3 H₂O ; additions : 3 H₂ (Ni) → cyclohexane C₆H₁₂ ; 3 Cl₂ à la lumière → hexachlorocyclohexane C₆H₆Cl₆ ; substitution (catalyseur FeCl₃) : C₆H₆ + Cl₂ → C₆H₅Cl + HCl, jusqu’à C₆Cl₆ ; le dichlorobenzène existe en trois isomères ortho (1,2), méta (1,3) et para (1,4). Dérivés : toluène C₇H₈, phénol C₆H₆O, TNT C₇H₅N₃O₆, acide benzoïque C₇H₆O₂, aniline C₆H₇N.",
+   "points": [
+    "C₆H₆ : plan, 120°, cycle.",
+    "Addition : H₂ → cyclohexane ; Cl₂ → C₆H₆Cl₆.",
+    "Substitution (FeCl₃) : C₆H₅Cl…",
+    "Isomères ortho, méta, para.",
+    "Dérivés : toluène, phénol, TNT, aniline."
+   ],
+   "application": {
+    "q": "Équation de la monochloration du benzène.",
+    "a": "C₆H₆ + Cl₂ → C₆H₅Cl + HCl (catalyseur FeCl₃)."
+   },
+   "applications": [
+    {
+     "q": "Combien d’isomères pour le dichlorobenzène ?",
+     "a": "Trois : ortho, méta, para."
+    },
+    {
+     "q": "Produit de l’hydrogénation complète du benzène ?",
+     "a": "Le cyclohexane C₆H₁₂."
+    }
+   ],
+   "board": [
+    {
+     "h": "Fiche du benzène",
+     "lines": [],
+     "table": [
+      [
+       "Propriété",
+       "Valeur"
+      ],
+      [
+       "Formule brute",
+       "C₆H₆"
+      ],
+      [
+       "Masse molaire",
+       "78 g/mol"
+      ],
+      [
+       "Densité de vapeur",
+       "78/29 ≈ 2,69"
+      ],
+      [
+       "Géométrie",
+       "plane, angles 120°"
+      ],
+      [
+       "d(C–C)",
+       "1,40 Å"
+      ]
+     ]
+    },
+    {
+     "h": "Dérivés",
+     "lines": [
+      "Toluène C₇H₈ ; phénol C₆H₆O ; TNT C₇H₅N₃O₆ ; acide benzoïque C₇H₆O₂ ; aniline C₆H₅–NH₂."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre V : Fonctions oxygénées et amines",
+   "match": [
+    "Fonctions oxygénées et amines"
+   ],
+   "pages": [
+    67,
+    73
+   ],
+   "objectives": [
+    "Reconnaître alcools, aldéhydes, cétones, acides carboxyliques, esters et amines.",
+    "Nommer ces composés.",
+    "Déterminer la classe d’un alcool ou d’une amine."
+   ],
+   "intro": "L’alcool à 90°, le vinaigre et l’acétone ont tous de l’oxygène. Qu’est-ce qui les différencie ?",
+   "summary": "Alcool : groupe hydroxyle –OH porté par un carbone tétragonal ; formule CnH2n+2O ; nom : alcane → « ol » avec l’indice du carbone fonctionnel ; classe primaire (carbone lié à au plus un carbone), secondaire (deux), tertiaire (trois). Aldéhyde : groupe –CHO en bout de chaîne, CnH2nO, suffixe « al » (méthanal, éthanal, propanal). Cétone : groupe carbonyle C=O lié à deux groupes alkyles, CnH2nO, suffixe « one » avec indice (propanone). Acide carboxylique : –COOH, suffixe « oïque ». Amines : dérivées de NH₃ par substitution de H par des groupes alkyles ; formule CnH2n+3N ; primaires (–NH₂), secondaires (–NH–), tertiaires ; nom : alkylamine ou alcanamine (méthylamine, éthanamine, propan-1-amine).",
+   "points": [
+    "Alcool R–OH : suffixe « ol » ; classes I, II, III.",
+    "Aldéhyde R–CHO : « al ».",
+    "Cétone R–CO–R’ : « one ».",
+    "Acide R–COOH : « oïque ».",
+    "Amine : dérivée de NH₃ ; classes."
+   ],
+   "application": {
+    "q": "Classe du propan-2-ol ?",
+    "a": "Secondaire : le carbone porteur de –OH est lié à deux carbones."
+   },
+   "applications": [
+    {
+     "q": "Nommer CH₃–CH₂–CHO.",
+     "a": "Propanal."
+    },
+    {
+     "q": "Classe de (CH₃)₂NH ?",
+     "a": "Amine secondaire (N-méthylméthanamine)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Groupes fonctionnels",
+     "lines": [],
+     "table": [
+      [
+       "Famille",
+       "Groupe",
+       "Suffixe",
+       "Exemple"
+      ],
+      [
+       "Alcool",
+       "–OH",
+       "-ol",
+       "éthanol CH₃–CH₂OH"
+      ],
+      [
+       "Aldéhyde",
+       "–CHO",
+       "-al",
+       "éthanal CH₃–CHO"
+      ],
+      [
+       "Cétone",
+       "–CO–",
+       "-one",
+       "propanone CH₃–CO–CH₃"
+      ],
+      [
+       "Acide",
+       "–COOH",
+       "acide -oïque",
+       "acide éthanoïque"
+      ],
+      [
+       "Amine",
+       "–NH₂",
+       "-amine",
+       "méthylamine CH₃–NH₂"
+      ]
+     ]
+    },
+    {
+     "h": "Exemples du manuel",
+     "lines": [
+      "CH₃–CH(CH₃)–CH(CH₃)–CH₂–CHO : 3,4-diméthylpentanal.",
+      "CH₃–CH₂–CH₂–CO–CH(CH₃)–CH₃ : 2-méthylhexan-3-one."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre V : Isomérie",
+   "match": [
+    "Isomérie"
+   ],
+   "pages": [
+    74,
+    78
+   ],
+   "objectives": [
+    "Définir l’isomérie de constitution (chaîne, position, fonction).",
+    "Définir la stéréo-isomérie (énantiomères, Z/E).",
+    "Repérer un carbone asymétrique."
+   ],
+   "intro": "Pourquoi nos deux mains, pourtant semblables, ne se superposent-elles pas ?",
+   "summary": "Deux molécules sont isomères si elles ont la même formule brute mais des formules développées ou semi-développées différentes ; elles ont des propriétés différentes. Isomérie de constitution : de chaîne (butane / méthylpropane), de position (propan-1-ol / propan-2-ol), de fonction (éthanol / méthoxyméthane ; aldéhyde / cétone). Stéréo-isomérie : même enchaînement mais disposition spatiale différente. Énantiomères : images l’un de l’autre dans un miroir, non superposables ; la molécule est chirale, à cause d’un carbone asymétrique C* lié à quatre groupes différents (acide lactique CH₃–C*H(OH)–COOH). Diastéréoisomères Z/E : rotation impossible autour de la double liaison ; Z si les H (ou groupes prioritaires) sont du même côté, E s’ils sont de part et d’autre.",
+   "points": [
+    "Isomères : même formule brute.",
+    "Constitution : chaîne, position, fonction.",
+    "Énantiomères : images miroir non superposables.",
+    "C* : quatre groupes différents.",
+    "Z / E autour de C=C."
+   ],
+   "application": {
+    "q": "L’acide lactique est-il chiral ?",
+    "a": "Oui : son carbone central porte CH₃, H, OH et COOH (carbone asymétrique)."
+   },
+   "applications": [
+    {
+     "q": "Le propanal et la propanone sont-ils isomères ?",
+     "a": "Oui (C₃H₆O) : isomérie de fonction."
+    },
+    {
+     "q": "Le 2-chlorobutane a-t-il un carbone asymétrique ?",
+     "a": "Oui : C2 porte H, Cl, CH₃ et C₂H₅."
+    }
+   ],
+   "board": [
+    {
+     "h": "Types d’isomérie",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Exemple"
+      ],
+      [
+       "de chaîne",
+       "butane / méthylpropane"
+      ],
+      [
+       "de position",
+       "propan-1-ol / propan-2-ol"
+      ],
+      [
+       "de fonction",
+       "éthanol / méthoxyméthane"
+      ],
+      [
+       "Z / E",
+       "(Z)-but-2-ène / (E)-but-2-ène"
+      ],
+      [
+       "énantiomères",
+       "deux formes de l’acide lactique"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre VI : Oxydoréduction — définitions et couples",
+   "match": [
+    "Oxydoréduction — définitions et couples"
+   ],
+   "pages": [
+    79,
+    89
+   ],
+   "objectives": [
+    "Connaître les métaux et leurs ions.",
+    "Définir oxydant, réducteur, oxydation, réduction et couple rédox.",
+    "Écrire des demi-équations et l’équation-bilan ; utiliser les nombres d’oxydation."
+   ],
+   "intro": "Une lame de zinc plongée dans l’acide chlorhydrique se recouvre de bulles et disparaît. Que deviennent les atomes de zinc ?",
+   "summary": "Les métaux sont formés d’atomes ordonnés (structure cristalline) avec des électrons libres responsables des conductibilités électrique et thermique ; ils donnent des cations Mⁿ⁺. Réaction entre le zinc et l’acide chlorhydrique : Zn + 2 H⁺ → Zn²⁺ + H₂ : le zinc perd des électrons. Un réducteur est une espèce capable de céder des électrons, un oxydant une espèce capable d’en capter ; une oxydation est une perte d’électrons, une réduction un gain ; une réaction d’oxydoréduction est un transfert d’électrons du réducteur d’un couple vers l’oxydant d’un autre. Un couple oxydant/réducteur s’écrit Ox/Red avec la demi-équation Ox + n e⁻ ⇄ Red. Nombre d’oxydation : un élément est oxydé si son n.o. augmente, réduit s’il diminue.",
+   "points": [
+    "Réducteur : cède des électrons ; oxydant : en capte.",
+    "Oxydation = perte d’électrons ; réduction = gain.",
+    "Couple Ox/Red : Ox + n e⁻ ⇄ Red.",
+    "Équation-bilan : combiner deux demi-équations (mêmes électrons).",
+    "n.o. augmente : oxydation."
+   ],
+   "application": {
+    "q": "Écrire l’équation de la réaction entre Fe et Cu²⁺.",
+    "a": "Fe → Fe²⁺ + 2 e⁻ ; Cu²⁺ + 2 e⁻ → Cu ⇒ Cu²⁺ + Fe → Fe²⁺ + Cu."
+   },
+   "applications": [
+    {
+     "q": "Dans Cu²⁺ + Zn → Cu + Zn²⁺, quel est l’oxydant ?",
+     "a": "Cu²⁺ (il est réduit)."
+    },
+    {
+     "q": "Demi-équation du couple Ag⁺/Ag ?",
+     "a": "Ag⁺ + e⁻ ⇄ Ag."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemple : zinc et acide",
+     "lines": [
+      "Zn → Zn²⁺ + 2 e⁻ (oxydation) ; 2 H⁺ + 2 e⁻ → H₂ (réduction).",
+      "Bilan : Zn + 2 H⁺ → Zn²⁺ + H₂ ; couples Zn²⁺/Zn et H⁺/H₂."
+     ]
+    },
+    {
+     "h": "Vocabulaire",
+     "lines": [],
+     "table": [
+      [
+       "Terme",
+       "Définition"
+      ],
+      [
+       "Oxydant",
+       "capte des électrons"
+      ],
+      [
+       "Réducteur",
+       "cède des électrons"
+      ],
+      [
+       "Oxydation",
+       "perte d’électrons (n.o. augmente)"
+      ],
+      [
+       "Réduction",
+       "gain d’électrons (n.o. diminue)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre VI : Classification des couples et prévision des réactions",
+   "match": [
+    "Classification des couples et prévision des réactions"
+   ],
+   "pages": [
+    90,
+    99
+   ],
+   "objectives": [
+    "Comparer la force de deux couples ion métallique/métal par l’expérience.",
+    "Établir une classification qualitative.",
+    "Prévoir une réaction naturelle avec la règle du gamma."
+   ],
+   "intro": "Une lame de fer dans une solution de sulfate de cuivre se couvre de cuivre. Une lame de cuivre dans une solution de sulfate de fer ne change pas. Pourquoi ?",
+   "summary": "Lame de fer dans CuSO₄ : la solution bleue se décolore et du cuivre se dépose : Cu²⁺ + Fe → Fe²⁺ + Cu ; le fer a réduit Cu²⁺. Lame de cuivre dans FeSO₄ : aucune réaction. Donc Cu²⁺ est un oxydant plus fort que Fe²⁺ et Fe un réducteur plus fort que Cu. On classe ainsi les couples ion métallique/métal sur un axe (oxydants à gauche, réducteurs à droite, pouvoir oxydant croissant vers le haut). Une réaction d’oxydoréduction est naturelle (spontanée) si elle a lieu entre l’oxydant le plus fort et le réducteur le plus fort, pour donner l’oxydant le plus faible et le réducteur le plus faible : c’est la règle du gamma (γ).",
+   "points": [
+    "Expérience Fe / Cu²⁺ : dépôt de cuivre.",
+    "Cu²⁺ oxydant plus fort que Fe²⁺.",
+    "Classification sur un axe vertical.",
+    "Règle du gamma : oxydant fort + réducteur fort."
+   ],
+   "application": {
+    "q": "Une lame de zinc réagit-elle avec Cu²⁺ ?",
+    "a": "Oui : Cu²⁺ est un oxydant plus fort que Zn²⁺ ⇒ Cu²⁺ + Zn → Cu + Zn²⁺."
+   },
+   "applications": [
+    {
+     "q": "Le cuivre réagit-il avec l’acide chlorhydrique ?",
+     "a": "Non : H⁺ est un oxydant plus faible que Cu²⁺."
+    },
+    {
+     "q": "Le fer réagit-il avec les ions Ag⁺ ?",
+     "a": "Oui : 2 Ag⁺ + Fe → 2 Ag + Fe²⁺."
+    }
+   ],
+   "board": [
+    {
+     "h": "Règle du gamma",
+     "lines": [
+      "On place le couple dont l’oxydant est le plus fort en haut ; on relie l’oxydant le plus fort (en haut à gauche) au réducteur le plus fort (en bas à droite) par la branche descendante du γ."
+     ]
+    },
+    {
+     "h": "Exemple de classification",
+     "lines": [],
+     "table": [
+      [
+       "Oxydant",
+       "Réducteur"
+      ],
+      [
+       "Ag⁺",
+       "Ag"
+      ],
+      [
+       "Cu²⁺",
+       "Cu"
+      ],
+      [
+       "H⁺",
+       "H₂"
+      ],
+      [
+       "Fe²⁺",
+       "Fe"
+      ],
+      [
+       "Zn²⁺",
+       "Zn"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre VII : Piles et potentiels d’oxydoréduction",
+   "match": [
+    "Piles et potentiels d’oxydoréduction"
+   ],
+   "pages": [
+    100,
+    108
+   ],
+   "objectives": [
+    "Décrire une pile électrochimique (pile Daniell).",
+    "Définir le potentiel standard et l’électrode standard à hydrogène.",
+    "Calculer la f.é.m. d’une pile et l’énergie fournie."
+   ],
+   "intro": "Comment transformer une réaction chimique en courant électrique pour allumer une lampe ?",
+   "summary": "Une pile électrochimique sépare physiquement les deux couples d’une réaction d’oxydoréduction spontanée et fait circuler les électrons par un circuit extérieur ; elle transforme l’énergie chimique en énergie électrique. Pile Daniell : lame de zinc dans ZnSO₄ et lame de cuivre dans CuSO₄, reliées par un pont salin ; le zinc (pôle −) est oxydé, Cu²⁺ est réduit sur le cuivre (pôle +). Le potentiel d’un couple Mⁿ⁺/M est mesuré par rapport à l’électrode standard à hydrogène (E°(H⁺/H₂) = 0 V). La f.é.m. d’une pile est la différence entre le potentiel du couple au pôle + et celui du couple au pôle −. Énergie électrique fournie : W = n F E (F = 96 500 C, n électrons échangés).",
+   "points": [
+    "Pile : deux demi-piles + pont salin.",
+    "Pôle − : oxydation ; pôle + : réduction.",
+    "E°(H⁺/H₂) = 0 V (référence).",
+    "f.é.m. e = E(pôle +) − E(pôle −).",
+    "W = n F E ; F = 96 500 C."
+   ],
+   "application": {
+    "q": "f.é.m. de la pile Ni/Ag (E°(Ag⁺/Ag) = 0,80 V ; E°(Ni²⁺/Ni) = −0,23 V) ?",
+    "a": "e = 0,80 − (−0,23) = 1,03 V ; bilan : 2 Ag⁺ + Ni → 2 Ag + Ni²⁺."
+   },
+   "applications": [
+    {
+     "q": "Quel est le pôle positif de la pile Daniell ?",
+     "a": "L’électrode de cuivre."
+    },
+    {
+     "q": "Énergie fournie par une pile de 1,1 V qui débite 2 mol d’électrons ?",
+     "a": "W = 2 × 96 500 × 1,1 ≈ 2,1·10⁵ J."
+    }
+   ],
+   "board": [
+    {
+     "h": "Pile Daniell",
+     "lines": [
+      "Pôle − (zinc) : Zn → Zn²⁺ + 2 e⁻ ; pôle + (cuivre) : Cu²⁺ + 2 e⁻ → Cu.",
+      "Bilan : Zn + Cu²⁺ → Zn²⁺ + Cu ; f.é.m. ≈ 1,10 V."
+     ]
+    },
+    {
+     "h": "Pile nickel-argent (exemple du manuel)",
+     "lines": [
+      "Électrode de nickel : Ni → Ni²⁺ + 2 e⁻ ; électrode d’argent : Ag⁺ + e⁻ → Ag.",
+      "e = 1,03 V."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre VII : Électrolyse",
+   "match": [
+    "Électrolyse"
+   ],
+   "pages": [
+    109,
+    120
+   ],
+   "objectives": [
+    "Définir l’électrolyse comme une réaction forcée.",
+    "Identifier les réactions à l’anode et à la cathode.",
+    "Connaître les applications industrielles."
+   ],
+   "intro": "Comment obtient-on l’aluminium pur à partir de son minerai ?",
+   "summary": "L’électrolyse est l’ensemble des réactions qui se produisent lors du passage d’un courant électrique dans une solution (ou un composé fondu). Elle ne commence que si la tension aux bornes des électrodes atteint une valeur liée aux potentiels des couples présents. C’est une réaction d’oxydoréduction forcée, inverse de la réaction spontanée prévisible : à la cathode (reliée au pôle −) a lieu une réduction, à l’anode (reliée au pôle +) une oxydation. Applications : préparation de métaux (zinc, aluminium), purification du cuivre par électrolyse à anode soluble, préparation de non-métaux (dichlore, dihydrogène), dépôts métalliques (galvanoplastie).",
+   "points": [
+    "Électrolyse : réaction forcée par un générateur.",
+    "Cathode : réduction ; anode : oxydation.",
+    "Tension minimale nécessaire.",
+    "Applications : Zn, Al, Cu pur, Cl₂, H₂."
+   ],
+   "application": {
+    "q": "Électrolyse d’une solution de CuSO₄ avec électrodes de cuivre : que se passe-t-il ?",
+    "a": "Cathode : Cu²⁺ + 2 e⁻ → Cu (dépôt) ; anode : Cu → Cu²⁺ + 2 e⁻ (anode soluble) : le cuivre est transporté et purifié."
+   },
+   "applications": [
+    {
+     "q": "À quelle électrode se dépose un métal ?",
+     "a": "À la cathode (réduction des cations)."
+    },
+    {
+     "q": "Pourquoi faut-il une tension minimale ?",
+     "a": "Pour forcer la réaction inverse de la réaction spontanée."
+    }
+   ],
+   "board": [
+    {
+     "h": "Comparaison pile / électrolyse",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Pile",
+       "Électrolyse"
+      ],
+      [
+       "Réaction",
+       "spontanée",
+       "forcée"
+      ],
+      [
+       "Énergie",
+       "chimique → électrique",
+       "électrique → chimique"
+      ],
+      [
+       "Anode",
+       "pôle −, oxydation",
+       "pôle +, oxydation"
+      ],
+      [
+       "Cathode",
+       "pôle +, réduction",
+       "pôle −, réduction"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "6C"
+}
