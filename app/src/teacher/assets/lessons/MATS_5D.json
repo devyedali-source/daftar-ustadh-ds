@@ -1,0 +1,1318 @@
+{
+ "subject": "MATS",
+ "book": "books/MATS_5D.pdf",
+ "bookTitle": "Mathématiques 5ème SN",
+ "lessons": [
+  {
+   "title": "Chapitre 1 : Calcul dans ℝ",
+   "match": [
+    "Calcul dans ℝ"
+   ],
+   "pages": [
+    9,
+    16
+   ],
+   "objectives": [
+    "Reconnaître les ensembles ℕ, ℤ, 𝔻, ℚ, ℝ et le plus petit ensemble auquel appartient un nombre.",
+    "Calculer avec les racines carrées et rendre rationnel un dénominateur (expression conjuguée).",
+    "Passer d’une inégalité à un intervalle, à une valeur absolue et à une distance.",
+    "Utiliser les règles de l’ordre et de la valeur absolue pour résoudre équations et inéquations."
+   ],
+   "intro": "J’écris au tableau : 3√64 ; 5π/4π ; 4 − 10 ; 8/3 ; 10⁻⁴. Je demande aux élèves de dire pour chaque nombre le plus petit ensemble (ℕ, ℤ, 𝔻, ℚ ou ℝ) auquel il appartient, puis je leur montre que certains nombres « déguisés » sont en fait des entiers.",
+   "summary": "On rappelle les ensembles de nombres ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ : un nombre est irrationnel lorsque son développement décimal est illimité et non périodique ; tout décimal périodique s’écrit sous forme de fraction. Pour a ≥ 0, √a est le seul réel positif dont le carré est a ; √(ab) = √a·√b, √(a/b) = √a/√b et √(a²) = |a|. On supprime le radical d’un dénominateur en multipliant par l’expression conjuguée. Un intervalle est un sous-ensemble de ℝ défini par des inégalités ; |x − a| ≤ r ⇔ x ∈ [a − r ; a + r] (centre a, rayon r), et d(a ; b) = |a − b|. L’ordre se conserve en ajoutant un réel ou en multipliant par un réel positif, il change en multipliant par un réel négatif.",
+   "points": [
+    "ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ ; irrationnel : développement décimal illimité non périodique (√2, π).",
+    "√(a²) = |a| ; √(a×b) = √a × √b ; √(a/b) = √a/√b ; √(a + b) ≤ √a + √b.",
+    "x² = a : deux solutions √a et −√a si a > 0 ; une solution 0 si a = 0 ; aucune si a < 0.",
+    "a ≤ x ≤ b ⇔ |x − (a+b)/2| ≤ (b−a)/2 : centre (a+b)/2, rayon (b−a)/2.",
+    "|x| ≤ a ⇔ −a ≤ x ≤ a ; |x| ≥ a ⇔ x ≤ −a ou x ≥ a ; d(a ; b) = |a − b|."
+   ],
+   "application": {
+    "q": "Écrire sans radical au dénominateur : A = 1/(√3 + 2).",
+    "a": "A = (√3 − 2)/((√3 + 2)(√3 − 2)) = (√3 − 2)/(3 − 4) = 2 − √3."
+   },
+   "applications": [
+    {
+     "q": "Donner l’écriture fractionnaire de x = 4,735735… (735 se répète).",
+     "a": "1000x = 4735,735… = 4731 + x ⇒ 999x = 4731 ⇒ x = 4731/999 = 1577/333."
+    },
+    {
+     "q": "Simplifier S = 5√48 − 2√75 + √27.",
+     "a": "S = 5×4√3 − 2×5√3 + 3√3 = 20√3 − 10√3 + 3√3 = 13√3."
+    },
+    {
+     "q": "Résoudre dans ℝ : |x − 5| < 2 puis |x + 1| ≥ 7.",
+     "a": "|x − 5| < 2 ⇔ 3 < x < 7, S = ]3 ; 7[. |x + 1| ≥ 7 ⇔ x ≤ −8 ou x ≥ 6, S = ]−∞ ; −8] ∪ [6 ; +∞[."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Les ensembles de nombres",
+     "lines": [
+      "ℕ = {0 ; 1 ; 2 ; …} : entiers naturels ; ℤ = {… ; −2 ; −1 ; 0 ; 1 ; 2 ; …} : entiers relatifs.",
+      "𝔻 = {a × 10ⁿ ; a ∈ ℤ et n ∈ ℤ} : décimaux ; ℚ = {a/p ; a ∈ ℤ et p ∈ ℤ*} : rationnels.",
+      "Les réels qui n’appartiennent pas à ℚ sont irrationnels : leur développement décimal est illimité et non périodique (√2 ; π).",
+      "ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ ; ℝ = ℝ₊ ∪ ℝ₋ et ℝ₊ ∩ ℝ₋ = {0} ; ℝ* = ℝ ∖ {0}.",
+      "ℝ est l’ensemble des abscisses des points d’une droite graduée."
+     ]
+    },
+    {
+     "h": "Écriture fractionnaire d’un décimal périodique",
+     "lines": [
+      "x = 4,735735… ⇒ 1000x = 4735,735… = 4731 + x",
+      "⇒ 999x = 4731 ⇒ x = 4731/999 = 1577/333."
+     ]
+    },
+    {
+     "h": "II. Les racines carrées",
+     "lines": [
+      "Pour a ≥ 0, √a est le seul réel positif dont le carré est a : (√a)² = a.",
+      "Pour a ≥ 0 et b ≥ 0 : √(a × b) = √a × √b ; √(a/b) = √a/√b (b ≠ 0) ; √(a + b) ≤ √a + √b.",
+      "Pour tout réel a : √(a²) = |a|.",
+      "L’expression conjuguée de √5 + √7 est √5 − √7 ; celle de 3 − 4√5 est 3 + 4√5.",
+      "Équation x² = a : si a > 0, deux solutions √a et −√a ; si a = 0, une solution 0 ; si a < 0, pas de solution."
+     ]
+    },
+    {
+     "h": "Exemple",
+     "lines": [
+      "S₁ = 5√45 − √80 + 2√180 = 15√5 − 4√5 + 12√5 = 23√5.",
+      "B = 2√3/(√7 − √3) = 2√3(√7 + √3)/(7 − 3) = (√21 + 3)/2."
+     ]
+    },
+    {
+     "h": "III. Intervalles et encadrements",
+     "lines": [
+      "Un intervalle est un sous-ensemble de ℝ défini par des inégalités : a ≤ x ≤ b ⇔ x ∈ [a ; b] ; a < x ≤ b ⇔ x ∈ ]a ; b] ; x ≥ a ⇔ x ∈ [a ; +∞[ ; x < a ⇔ x ∈ ]−∞ ; a[.",
+      "Centre et rayon : |x − a| ≤ r ⇔ a − r ≤ x ≤ a + r ⇔ x ∈ [a − r ; a + r].",
+      "a ≤ x ≤ b ⇔ |x − (a + b)/2| ≤ (b − a)/2 : centre (a + b)/2, rayon (b − a)/2.",
+      "Distance : d(a ; b) = AB = |a − b| ; d(x ; 0) = |x| = OM."
+     ]
+    },
+    {
+     "h": "IV. Ordre dans ℝ",
+     "lines": [
+      "a ≤ b signifie que b − a ≥ 0.",
+      "a ≤ b et b ≤ c ⇒ a ≤ c ; x ≤ y ⇔ x + a ≤ y + a.",
+      "x ≤ y ⇔ x × a ≤ y × a si a > 0 ; x ≤ y ⇔ x × a ≥ y × a si a < 0.",
+      "0 < a < b ⇔ 0 < 1/b < 1/a ; 0 ≤ x ≤ y ⇔ x² ≤ y² ⇔ √x ≤ √y."
+     ]
+    },
+    {
+     "h": "V. Valeur absolue",
+     "lines": [
+      "|x| = x si x ≥ 0 ; |x| = −x si x ≤ 0.",
+      "|x| ≥ 0 ; |−x| = |x| ; |x × y| = |x| × |y| ; |x/y| = |x|/|y| ; |x + y| ≤ |x| + |y|.",
+      "|x| = |y| ⇔ x = y ou x = −y ; |x| ≤ a ⇔ −a ≤ x ≤ a ; |x| ≥ a ⇔ x ≤ −a ou x ≥ a.",
+      "|x − a| ≤ b ⇔ a − b ≤ x ≤ a + b."
+     ]
+    },
+    {
+     "h": "Exemple",
+     "lines": [
+      "|x − 4| = 1 ⇔ x − 4 = −1 ou x − 4 = 1 ⇒ S = {3 ; 5}.",
+      "|x − 5| < 2 ⇔ −2 < x − 5 < 2 ⇔ 3 < x < 7 ⇒ S = ]3 ; 7[.",
+      "|3 − √13| = √13 − 3 car 3 < √13."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 2 : Polynômes",
+   "match": [
+    "Polynômes"
+   ],
+   "pages": [
+    17,
+    20
+   ],
+   "objectives": [
+    "Reconnaître un monôme, un polynôme, son degré et sa suite caractéristique.",
+    "Réduire et ordonner un polynôme ; additionner et multiplier des polynômes.",
+    "Reconnaître une racine d’un polynôme et factoriser par (x − α) : division euclidienne, identification, Hörner."
+   ],
+   "intro": "J’écris P(x) = x³ − 3x − 18 et je demande aux élèves de calculer P(3). Ils trouvent 0 : je leur annonce qu’on peut alors écrire P(x) = (x − 3) × (un polynôme du second degré) et qu’aujourd’hui nous allons apprendre à le trouver.",
+   "summary": "Un monôme est une fonction F(x) = axⁿ (a réel, n entier naturel) : a est le coefficient et n le degré. Un polynôme est une somme algébrique de monômes ; on le simplifie en regroupant les monômes de même degré, puis on l’ordonne suivant les puissances croissantes ou décroissantes. La suite caractéristique (a₀ ; a₁ ; … ; aₙ) est la suite des coefficients, les puissances absentes ayant le coefficient 0 ; deux polynômes sont égaux si et seulement si leurs suites caractéristiques sont égales. Le degré d’un produit est la somme des degrés. Un réel α est une racine (zéro) de P si P(α) = 0 ; alors P(x) = (x − α) × R(x) avec R de degré n − 1, qu’on obtient par division euclidienne, par identification ou par la méthode de Hörner.",
+   "points": [
+    "Monôme : axⁿ (a coefficient, n degré) ; polynôme : somme de monômes.",
+    "Polynôme réduit et ordonné : P(x) = a₀ + a₁x + … + aₙxⁿ ; suite caractéristique (a₀ ; a₁ ; … ; aₙ).",
+    "Deux polynômes sont égaux ⇔ ils ont la même suite caractéristique ; un polynôme est nul ⇔ tous ses coefficients sont nuls.",
+    "deg(P × R) = deg P + deg R ; deg(P + R) ≤ le plus grand des deux degrés.",
+    "α racine de P ⇔ P(α) = 0 ⇔ P(x) = (x − α)R(x) avec deg R = deg P − 1."
+   ],
+   "application": {
+    "q": "P(x) = x³ − 3x − 18. Vérifier que 3 est une racine de P puis factoriser P.",
+    "a": "P(3) = 27 − 9 − 18 = 0. Par identification : P(x) = (x − 3)(x² + ax + b) = x³ + (a − 3)x² + (b − 3a)x − 3b, donc a − 3 = 0, b − 3a = −3, −3b = −18 : a = 3, b = 6. P(x) = (x − 3)(x² + 3x + 6), et x² + 3x + 6 ne se factorise pas (Δ = 9 − 24 = −15 < 0)."
+   },
+   "applications": [
+    {
+     "q": "Simplifier et ordonner suivant les puissances croissantes : P(x) = −12x² + 8 − 7x − 5x³ + 4x² + 8x − 16 + x³ − 2x⁵.",
+     "a": "P(x) = −8 + x − 8x² − 4x³ − 2x⁵."
+    },
+    {
+     "q": "Donner la suite caractéristique de P(x) = −1 + 5x − (2/3)x³ + 4√3x⁵ − x⁶ − 2x⁷.",
+     "a": "(−1 ; 5 ; 0 ; −2/3 ; 0 ; 4√3 ; −1 ; −2)."
+    },
+    {
+     "q": "Écrire f(x) = x⁴ + 4 comme produit de deux polynômes du second degré (on écrira f(x) = x⁴ + 4x² + 4 − 4x²).",
+     "a": "f(x) = (x² + 2)² − (2x)² = (x² + 2x + 2)(x² − 2x + 2)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Monômes et polynômes",
+     "lines": [
+      "Une fonction monôme est une fonction de la forme F(x) = axⁿ avec a ∈ ℝ et n ∈ ℕ : a est le coefficient et n le degré.",
+      "Exemple : A(x) = 5x² (degré 2) ; B(x) = −√3x (degré 1) ; D(x) = 13 (degré 0).",
+      "Une fonction polynôme est une somme algébrique de fonctions monômes.",
+      "Pour simplifier un polynôme, on additionne les monômes de même degré."
+     ]
+    },
+    {
+     "h": "II. Polynôme réduit et ordonné",
+     "lines": [
+      "Ordre croissant : P(x) = a₀ + a₁x + a₂x² + … + aₙxⁿ.",
+      "Ordre décroissant : P(x) = aₙxⁿ + … + a₂x² + a₁x + a₀.",
+      "Exemple : F(x) = −7x + 3x² − 8 + 21x⁵ − 11x + 5 − 7x² + 2x⁴ − 6x⁵ = −3 − 18x − 4x² + 2x⁴ + 15x⁵."
+     ]
+    },
+    {
+     "h": "III. Suite caractéristique",
+     "lines": [
+      "La suite (a₀ ; a₁ ; a₂ ; … ; aₙ) des coefficients de P ordonné suivant les puissances croissantes est sa suite caractéristique.",
+      "Les puissances qui n’apparaissent pas ont le coefficient 0.",
+      "Exemple : P(x) = 4x + 7x² − 12x⁵ + 9x⁷ − 2x¹⁰ a pour suite (0 ; 4 ; 7 ; 0 ; 0 ; −12 ; 0 ; 9 ; 0 ; 0 ; −2).",
+      "Deux polynômes sont égaux ⇔ leurs suites caractéristiques sont égales ; un polynôme est nul ⇔ sa suite n’a que des zéros."
+     ]
+    },
+    {
+     "h": "IV. Opérations",
+     "lines": [
+      "Somme (différence) : on additionne (on soustrait) les monômes de même degré.",
+      "Le degré de la somme de deux polynômes de degrés différents est le plus grand des deux degrés.",
+      "Produit : on multiplie chaque monôme de P par chaque monôme de R puis on réduit.",
+      "Le degré du produit est la somme des degrés des deux polynômes."
+     ]
+    },
+    {
+     "h": "V. Racine d’un polynôme — Factorisation",
+     "lines": [
+      "α est une racine (un zéro) de P si P(α) = 0.",
+      "Si α est une racine de P de degré n ≥ 1, alors P(x) = (x − α) × R(x) avec R de degré n − 1.",
+      "Si α₁ ; α₂ ; … ; αₙ sont n racines de P(x) = aₙxⁿ + … + a₀, alors P(x) = aₙ(x − α₁)(x − α₂)…(x − αₙ).",
+      "Pour trouver R : division euclidienne, identification des coefficients ou méthode de Hörner."
+     ]
+    },
+    {
+     "h": "Exemple : P(x) = x³ − 3x − 18",
+     "lines": [
+      "P(3) = 27 − 9 − 18 = 0, donc 3 est une racine de P.",
+      "P(x) = (x − 3)(x² + ax + b) = x³ + (a − 3)x² + (b − 3a)x − 3b.",
+      "Par identification : a − 3 = 0 ; b − 3a = −3 ; −3b = −18 ⇒ a = 3 et b = 6.",
+      "P(x) = (x − 3)(x² + 3x + 6) ; Δ = 9 − 24 = −15 < 0 : x² + 3x + 6 ne se factorise pas."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 3 : Calcul vectoriel",
+   "match": [
+    "Calcul vectoriel"
+   ],
+   "pages": [
+    21,
+    26
+   ],
+   "objectives": [
+    "Caractériser un vecteur (direction, sens, longueur) et utiliser la relation de Chasles.",
+    "Traduire vectoriellement milieu, milieux des côtés d’un triangle, centre de gravité et parallélogramme.",
+    "Utiliser la colinéarité (Thalès vectoriel) pour démontrer un alignement ou un parallélisme.",
+    "Calculer avec le produit d’un vecteur par un réel et la norme d’un vecteur."
+   ],
+   "intro": "Je trace un triangle ABC et je demande : « Pour aller de A à C, est-ce la même chose d’aller directement ou de passer par B ? » J’écris alors AB→ + BC→ = AC→ et j’annonce que les vecteurs vont nous permettre de démontrer des alignements et des parallélismes par le calcul.",
+   "summary": "Un vecteur u→ = AB→ (A ≠ B) est défini par une direction (celle de (AB)), un sens (de A vers B) et une longueur AB appelée norme ; si A = B c’est le vecteur nul. Deux vecteurs sont égaux s’ils ont même direction, même sens et même longueur ; BA→ = −AB→. Relation de Chasles : AB→ + BC→ = AC→ et, pour tout O, AC→ = OC→ − OA→. I est le milieu de [AB] ⇔ IA→ + IB→ = 0→ ⇔ MA→ + MB→ = 2MI→ pour tout M ; dans un triangle, le segment joignant les milieux de deux côtés vaut la moitié du troisième côté (IJ→ = ½BC→) ; G centre de gravité ⇔ GA→ + GB→ + GC→ = 0→ ⇔ AG→ = (2/3)AA′→. ABCD est un parallélogramme ⇔ AB→ = DC→ ⇔ AC→ = AB→ + AD→. Deux vecteurs non nuls sont colinéaires s’il existe k réel tel que v→ = k u→ ; c’est l’outil de Thalès vectoriel : OA′→ = x OA→ et OB′→ = x OB→ ⇔ (AB) // (A′B′). La norme vérifie ‖k u→‖ = |k| ‖u→‖ et ‖u→ + v→‖ ≤ ‖u→‖ + ‖v→‖.",
+   "points": [
+    "Vecteur AB→ : direction (AB), sens de A vers B, norme AB ; BA→ = −AB→.",
+    "Chasles : AB→ + BC→ = AC→ ; AC→ = OC→ − OA→.",
+    "I milieu de [AB] ⇔ IA→ + IB→ = 0→ ⇔ MA→ + MB→ = 2MI→.",
+    "G centre de gravité de ABC ⇔ GA→ + GB→ + GC→ = 0→ ; AG→ = (2/3)AA′→ ; MA→ + MB→ + MC→ = 3MG→.",
+    "u→ et v→ colinéaires ⇔ v→ = k u→ ; trois points A, B, C alignés ⇔ AB→ et AC→ colinéaires."
+   ],
+   "application": {
+    "q": "A, B, C sont trois points distincts et M un point tel que 5MA→ = −2MB→ + 7MC→. Montrer que A, B, C sont alignés.",
+    "a": "5MA→ = −2MA→ − 2AB→ + 7MA→ + 7AC→ = 5MA→ − 2AB→ + 7AC→, donc −2AB→ + 7AC→ = 0→, soit AB→ = (7/2)AC→ : AB→ et AC→ sont colinéaires, donc A, B, C sont alignés."
+   },
+   "applications": [
+    {
+     "q": "ABC est un triangle, I et J les milieux de [AB] et [AC]. Exprimer IJ→ en fonction de BC→.",
+     "a": "IJ→ = IA→ + AJ→ = ½BA→ + ½AC→ = ½(BA→ + AC→) = ½BC→."
+    },
+    {
+     "q": "ABCD est un parallélogramme de centre O. Exprimer AC→ en fonction de AB→ et AD→, puis AO→.",
+     "a": "AC→ = AB→ + BC→ = AB→ + AD→ (car BC→ = AD→) ; AO→ = ½AC→ = ½(AB→ + AD→)."
+    },
+    {
+     "q": "Soit w→ = 2u→ − 3v→. Montrer que ‖w→‖ ≤ 2‖u→‖ + 3‖v→‖.",
+     "a": "‖w→‖ = ‖2u→ + (−3v→)‖ ≤ ‖2u→‖ + ‖−3v→‖ = |2|‖u→‖ + |−3|‖v→‖ = 2‖u→‖ + 3‖v→‖."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Notion de vecteur",
+     "lines": [
+      "Si A ≠ B, le vecteur u→ = AB→ est déterminé par : une longueur AB (la norme de u→), une direction (celle de la droite (AB)) et un sens (de A vers B).",
+      "Si A = B, AA→ = 0→ est le vecteur nul : il n’a pas de direction ni de sens, sa longueur est nulle.",
+      "Deux vecteurs égaux ont même longueur, même direction et même sens ; deux vecteurs opposés ont même longueur, même direction et des sens contraires : BA→ = −AB→."
+     ]
+    },
+    {
+     "h": "Somme de vecteurs — Relation de Chasles",
+     "lines": [
+      "Pour tous points A, B, C du plan : AB→ + BC→ = AC→.",
+      "Pour tout point O : AC→ = OC→ − OA→."
+     ]
+    },
+    {
+     "h": "Milieu et centre de gravité",
+     "lines": [
+      "I milieu de [AB] : AI→ = IB→ = ½AB→ ; IA→ + IB→ = 0→ ; pour tout M, MA→ + MB→ = 2MI→.",
+      "Dans un triangle ABC, si I et J sont les milieux de [AB] et [AC] : IJ→ = ½BC→.",
+      "G centre de gravité de ABC, A′ milieu de [BC] : GA→ + GB→ + GC→ = 0→ ; GA→ = −2GA′→ ; AG→ = (2/3)AA′→.",
+      "Pour tout point M : MA→ + MB→ + MC→ = 3MG→."
+     ]
+    },
+    {
+     "h": "Parallélogramme",
+     "lines": [
+      "ABCD est un parallélogramme de centre O ⇔ AB→ = DC→ et AD→ = BC→.",
+      "⇔ AC→ = AB→ + AD→ ⇔ AO→ = OC→ et DO→ = OB→."
+     ]
+    },
+    {
+     "h": "Produit d’un vecteur par un réel — Colinéarité",
+     "lines": [
+      "0·u→ = 0→ ; 1·u→ = u→ ; (−1)·u→ = −u→ ; α(βu→) = (αβ)u→ ; (α + β)u→ = αu→ + βu→ ; α(u→ + v→) = αu→ + αv→.",
+      "u→ et v→ non nuls sont colinéaires lorsqu’ils ont la même direction : v→ = k u→ (k ∈ ℝ). Si k > 0 ils ont même sens ; si k < 0 ils sont de sens contraires.",
+      "Le vecteur nul est colinéaire à tout vecteur. A, B, C alignés ⇔ AB→ et AC→ colinéaires.",
+      "αu→ + βv→ est une combinaison linéaire de u→ et v→."
+     ]
+    },
+    {
+     "h": "Thalès vectoriel",
+     "lines": [
+      "Deux droites (AA′) et (BB′) sont sécantes en O, avec OA′→ = x OA→ et OB′→ = y OB→.",
+      "(AB) // (A′B′) ⇔ x = y ; dans ce cas A′B′→ = x AB→."
+     ]
+    },
+    {
+     "h": "Norme d’un vecteur",
+     "lines": [
+      "La norme de u→ = AB→ est la distance AB : ‖u→‖ = ‖AB→‖ = AB.",
+      "‖u→‖ ≥ 0 ; ‖u→‖ = 0 ⇔ u→ = 0→ ; ‖−u→‖ = ‖u→‖ ; ‖k u→‖ = |k| ‖u→‖.",
+      "Inégalité triangulaire : ‖u→ + v→‖ ≤ ‖u→‖ + ‖v→‖."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 4 : Géométrie analytique",
+   "match": [
+    "Géométrie analytique"
+   ],
+   "pages": [
+    27,
+    34
+   ],
+   "objectives": [
+    "Utiliser les coordonnées d’un vecteur dans une base et le déterminant pour tester la colinéarité.",
+    "Calculer dans un repère : coordonnées d’un vecteur AB→, du milieu, du centre de gravité, distance, orthogonalité.",
+    "Déterminer une équation cartésienne, l’équation réduite, une représentation paramétrique d’une droite.",
+    "Reconnaître l’équation d’un cercle et en donner le centre et le rayon."
+   ],
+   "intro": "Je place dans un repère les points A(6 ; −7) et B(3 ; −3) et je demande comment trouver, par le calcul seulement, si le point M(0 ; 1) est sur la droite (AB). J’annonce qu’on va apprendre à traduire la géométrie en calculs sur les coordonnées.",
+   "summary": "Deux vecteurs non nuls et non colinéaires (u→ ; v→) forment une base : tout vecteur w→ s’écrit de façon unique w→ = x u→ + y v→, (x ; y) sont ses coordonnées. Le déterminant de u→(x ; y) et v→(x′ ; y′) est det(u→ ; v→) = xy′ − x′y ; u→ et v→ sont colinéaires ⇔ det(u→ ; v→) = 0. Dans un repère (O ; i→ ; j→) : AB→(x_B − x_A ; y_B − y_A), milieu I((x_A + x_B)/2 ; (y_A + y_B)/2), centre de gravité G((x_A + x_B + x_C)/3 ; (y_A + y_B + y_C)/3). Dans un repère orthonormé : ‖u→‖ = √(x² + y²), AB = √((x_B − x_A)² + (y_B − y_A)²) et u→ ⊥ v→ ⇔ xx′ + yy′ = 0. Une droite a une équation cartésienne ax + by + c = 0 de vecteur directeur u→(−b ; a) et de vecteur normal n→(a ; b) ; si elle n’est pas parallèle à (Oy) son équation réduite est y = mx + p (m coefficient directeur). (D) // (D′) ⇔ m = m′ ; (D) ⊥ (D′) ⇔ mm′ = −1. Le cercle de centre Ω(x₀ ; y₀) et de rayon R a pour équation (x − x₀)² + (y − y₀)² = R².",
+   "points": [
+    "det(u→ ; v→) = xy′ − x′y ; u→ et v→ colinéaires ⇔ det(u→ ; v→) = 0.",
+    "AB→(x_B − x_A ; y_B − y_A) ; milieu ((x_A + x_B)/2 ; (y_A + y_B)/2) ; AB = √((x_B − x_A)² + (y_B − y_A)²).",
+    "u→ ⊥ v→ ⇔ xx′ + yy′ = 0 (base orthonormée).",
+    "(D) : ax + by + c = 0 ; vecteur directeur u→(−b ; a) ; vecteur normal n→(a ; b) ; y = mx + p.",
+    "Cercle de centre Ω(x₀ ; y₀) et de rayon R : (x − x₀)² + (y − y₀)² = R²."
+   ],
+   "application": {
+    "q": "Donner une équation cartésienne de la droite (D) passant par A(6 ; −7) et de vecteur directeur u→(−3 ; 4).",
+    "a": "M(x ; y) ∈ (D) ⇔ det(AM→ ; u→) = 0 ⇔ 4(x − 6) − (−3)(y + 7) = 0 ⇔ 4x − 24 + 3y + 21 = 0 ⇔ 4x + 3y − 3 = 0."
+   },
+   "applications": [
+    {
+     "q": "Dans un repère orthonormé, A(−13 ; 4) et B(−7 ; 9). Calculer AB.",
+     "a": "AB = √((−7 + 13)² + (9 − 4)²) = √(36 + 25) = √61."
+    },
+    {
+     "q": "(D) : 4x − 2y + 6 = 0 et (D′) : x + 2y − 4 = 0. Donner leurs équations réduites et leur position relative.",
+     "a": "(D) : y = 2x + 3 et (D′) : y = −½x + 2 ; m × m′ = 2 × (−½) = −1, donc (D) ⊥ (D′)."
+    },
+    {
+     "q": "Reconnaître l’ensemble des points M(x ; y) tels que x² + y² − 2x + 4y + 1 = 0.",
+     "a": "(x − 1)² − 1 + (y + 2)² − 4 + 1 = 0 ⇔ (x − 1)² + (y + 2)² = 2² : cercle de centre Ω(1 ; −2) et de rayon 2."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Coordonnées d’un vecteur dans une base",
+     "lines": [
+      "Tout couple (u→ ; v→) de vecteurs non nuls et non colinéaires est une base de V.",
+      "Pour tout vecteur w→, il existe un seul couple (x ; y) tel que w→ = x u→ + y v→ : ce sont les coordonnées de w→, notées w→(x ; y).",
+      "Si u→(x ; y) et v→(x′ ; y′) : u→ = v→ ⇔ x = x′ et y = y′ ; u→ + v→(x + x′ ; y + y′) ; αu→(αx ; αy)."
+     ]
+    },
+    {
+     "h": "II. Déterminant de deux vecteurs",
+     "lines": [
+      "det(u→ ; v→) = | x  x′ ; y  y′ | = xy′ − x′y.",
+      "u→ et v→ sont colinéaires ⇔ det(u→ ; v→) = 0 ; (u→ ; v→) est une base ⇔ det(u→ ; v→) ≠ 0.",
+      "Exemple : u→(6 ; −7) et v→(−5 ; 3) : det = 6 × 3 − (−5)(−7) = 18 − 35 = −17 ≠ 0."
+     ]
+    },
+    {
+     "h": "III. Repère du plan",
+     "lines": [
+      "M(x ; y) dans le repère (O ; i→ ; j→) signifie OM→ = x i→ + y j→.",
+      "AB→(x_B − x_A ; y_B − y_A) ; A, B, C alignés ⇔ det(AB→ ; AC→) = 0.",
+      "Milieu de [AB] : I((x_A + x_B)/2 ; (y_A + y_B)/2).",
+      "Centre de gravité de ABC : G((x_A + x_B + x_C)/3 ; (y_A + y_B + y_C)/3)."
+     ]
+    },
+    {
+     "h": "Repère orthonormé : norme, distance, orthogonalité",
+     "lines": [
+      "(i→ ; j→) orthonormée : i→ ⊥ j→ et ‖i→‖ = ‖j→‖ = 1.",
+      "‖u→‖ = √(x² + y²) ; AB = √((x_B − x_A)² + (y_B − y_A)²).",
+      "u→(x ; y) ⊥ v→(x′ ; y′) ⇔ xx′ + yy′ = 0.",
+      "Vecteur unitaire associé à u→ : u→/‖u→‖."
+     ]
+    },
+    {
+     "h": "IV. Droites",
+     "lines": [
+      "Tout vecteur non nul ayant la direction de (D) est un vecteur directeur de (D).",
+      "(D) passant par A et de vecteur directeur u→ : M ∈ (D) ⇔ AM→ et u→ colinéaires ⇔ det(AM→ ; u→) = 0.",
+      "Équation cartésienne : ax + by + c = 0 avec (a ; b) ≠ (0 ; 0) ; u→(−b ; a) est un vecteur directeur.",
+      "Équation réduite (droite non parallèle à (Oy)) : y = mx + p ; m coefficient directeur, p ordonnée à l’origine, u→(1 ; m) vecteur directeur.",
+      "(D) // (D′) ⇔ m = m′ ; (D) ⊥ (D′) ⇔ m × m′ = −1."
+     ]
+    },
+    {
+     "h": "Représentation paramétrique — Vecteur normal",
+     "lines": [
+      "(D) passant par A(x₀ ; y₀) de vecteur directeur u→(a ; b) : x = x₀ + at ; y = y₀ + bt (t ∈ ℝ).",
+      "Un vecteur normal à (D) est un vecteur non nul orthogonal à sa direction ; (D) : ax + by + c = 0 a pour vecteur normal n→(a ; b).",
+      "(D) // (D′) ⇔ n→ et n′→ colinéaires ; (D) ⊥ (D′) ⇔ n→ et n′→ orthogonaux."
+     ]
+    },
+    {
+     "h": "V. Le cercle",
+     "lines": [
+      "Le cercle 𝒞 de centre Ω(x₀ ; y₀) et de rayon R a pour équation (x − x₀)² + (y − y₀)² = R².",
+      "x² + y² = R² : cercle de centre O et de rayon R.",
+      "Exemple : x² + y² − 2x − 3 = 0 ⇔ (x − 1)² + y² = 2² : cercle de centre Ω(1 ; 0) et de rayon 2."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 5 : Équations et systèmes",
+   "match": [
+    "Équations et systèmes"
+   ],
+   "pages": [
+    35,
+    40
+   ],
+   "objectives": [
+    "Résoudre une équation du premier degré et mettre un problème en équation.",
+    "Résoudre une équation du second degré (cas particuliers, discriminant Δ, somme et produit des racines).",
+    "Résoudre un système linéaire de deux équations à deux inconnues (combinaison, substitution, déterminants, méthode graphique)."
+   ],
+   "intro": "Je pose le problème du livre : « Un père a 35 ans et son fils 7 ans. Dans combien d’années l’âge du père sera-t-il le double de celui du fils ? » Les élèves cherchent, puis je montre qu’en appelant x le nombre d’années on obtient une équation qui donne la réponse sans tâtonner.",
+   "summary": "Une équation du premier degré s’écrit ax + b = 0 (a ≠ 0) et a pour solution x = −b/a. Une équation du second degré s’écrit ax² + bx + c = 0 (a ≠ 0) ; on calcule le discriminant Δ = b² − 4ac : si Δ > 0 il y a deux solutions x₁ = (−b − √Δ)/2a et x₂ = (−b + √Δ)/2a ; si Δ = 0 une solution double x₀ = −b/2a ; si Δ < 0 aucune solution réelle. Si a + b + c = 0 les solutions sont 1 et c/a ; si a − b + c = 0 ce sont −1 et −c/a. Les racines vérifient S = x₁ + x₂ = −b/a et P = x₁x₂ = c/a, et ax² + bx + c = a(x − x₁)(x − x₂) ; deux nombres de somme S et de produit P sont les solutions de X² − SX + P = 0. Un système ax + by = c ; a′x + b′y = c′ se résout par combinaison, substitution, déterminants (Cramer) ou graphiquement : si Δ = ab′ − a′b ≠ 0 il a une solution unique x = Δx/Δ, y = Δy/Δ (droites sécantes) ; sinon il n’a pas de solution (droites parallèles) ou une infinité (droites confondues).",
+   "points": [
+    "ax + b = 0 (a ≠ 0) ⇔ x = −b/a.",
+    "Δ = b² − 4ac : Δ > 0 deux solutions (−b ± √Δ)/2a ; Δ = 0 solution double −b/2a ; Δ < 0 pas de solution.",
+    "a + b + c = 0 ⇒ solutions 1 et c/a ; a − b + c = 0 ⇒ solutions −1 et −c/a.",
+    "S = x₁ + x₂ = −b/a ; P = x₁x₂ = c/a ; ax² + bx + c = a(x − x₁)(x − x₂).",
+    "Système : Δ = ab′ − a′b ; si Δ ≠ 0, x = Δx/Δ et y = Δy/Δ (Δx = cb′ − c′b ; Δy = ac′ − a′c)."
+   ],
+   "application": {
+    "q": "Déterminer les dimensions d’un rectangle d’aire 15 et de périmètre 16.",
+    "a": "x + y = 8 et xy = 15 : x et y sont les solutions de X² − 8X + 15 = 0. Δ = 64 − 60 = 4, √Δ = 2 : X = (8 − 2)/2 = 3 ou X = (8 + 2)/2 = 5. Les dimensions sont 3 et 5."
+   },
+   "applications": [
+    {
+     "q": "Résoudre dans ℝ : x² − 2x − 1 = 0.",
+     "a": "Δ = 4 + 4 = 8, √Δ = 2√2 : x₁ = 1 − √2 et x₂ = 1 + √2 ; S = {1 − √2 ; 1 + √2}."
+    },
+    {
+     "q": "Résoudre dans ℝ : x⁴ − 5x² + 6 = 0 (poser X = x²).",
+     "a": "X² − 5X + 6 = 0 donne X = 2 ou X = 3, donc x² = 2 ou x² = 3 : S = {−√3 ; −√2 ; √2 ; √3}."
+    },
+    {
+     "q": "Résoudre par les déterminants : 5x + 3y − 4 = 0 ; 2x − 7y + 11 = 0.",
+     "a": "5x + 3y = 4 ; 2x − 7y = −11. Δ = 5×(−7) − 2×3 = −41 ; Δx = 4×(−7) − (−11)×3 = 5 ; Δy = 5×(−11) − 2×4 = −63. x = 5/(−41) = −5/41 ; y = −63/(−41) = 63/41."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Équation du premier degré",
+     "lines": [
+      "Forme générale : ax + b = 0 (a ≠ 0) ⇔ x = −b/a.",
+      "Si a = 0 et b = 0 : S = ℝ ; si a = 0 et b ≠ 0 : S = ∅.",
+      "Exemple : 35 + x = 2(7 + x) ⇔ 35 + x = 14 + 2x ⇔ x = 21 : dans 21 ans."
+     ]
+    },
+    {
+     "h": "II. Équation du second degré : ax² + bx + c = 0 (a ≠ 0)",
+     "lines": [
+      "Cas particuliers : ax² = 0 ⇔ x = 0 ; ax² + c = 0 a deux solutions ±√(−c/a) si a et c sont de signes contraires, aucune sinon ; ax² + bx = 0 ⇔ x(ax + b) = 0 ⇔ x = 0 ou x = −b/a.",
+      "Cas général : Δ = b² − 4ac (forme canonique : a[(x + b/2a)² − Δ/4a²]).",
+      "Δ > 0 : x₁ = (−b − √Δ)/2a et x₂ = (−b + √Δ)/2a.",
+      "Δ = 0 : une solution double x₀ = −b/2a.",
+      "Δ < 0 : pas de solution dans ℝ."
+     ]
+    },
+    {
+     "h": "Somme et produit des racines",
+     "lines": [
+      "Si a + b + c = 0 : x₁ = 1 et x₂ = c/a ; si a − b + c = 0 : x₁ = −1 et x₂ = −c/a.",
+      "S = x₁ + x₂ = −b/a et P = x₁ × x₂ = c/a ; ax² + bx + c = a(x − x₁)(x − x₂).",
+      "Deux nombres de somme S et de produit P sont les solutions de X² − SX + P = 0."
+     ]
+    },
+    {
+     "h": "III. Système linéaire de deux équations à deux inconnues",
+     "lines": [
+      "ax + by = c ; a′x + b′y = c′. Méthodes : combinaison, substitution, déterminants (Cramer), méthode graphique.",
+      "Δ = ab′ − a′b ; Δx = cb′ − c′b ; Δy = ac′ − a′c.",
+      "Si Δ ≠ 0 : solution unique x = Δx/Δ ; y = Δy/Δ.",
+      "Si Δ = 0 et (Δx ≠ 0 ou Δy ≠ 0) : pas de solution ; si Δ = Δx = Δy = 0 : infinité de solutions."
+     ]
+    },
+    {
+     "h": "Interprétation graphique",
+     "lines": [
+      "Chaque équation est celle d’une droite : droites sécantes → solution unique (le point commun) ; strictement parallèles → aucune solution ; confondues → infinité de solutions."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 5 (suite) : Inéquations",
+   "match": [
+    "Inéquations"
+   ],
+   "pages": [
+    41,
+    46
+   ],
+   "objectives": [
+    "Résoudre une inéquation du premier degré à l’aide du signe de ax + b.",
+    "Étudier le signe de ax² + bx + c et résoudre une inéquation du second degré.",
+    "Résoudre une inéquation produit ou quotient par un tableau de signes.",
+    "Représenter graphiquement les solutions d’une inéquation ou d’un système d’inéquations à deux inconnues."
+   ],
+   "intro": "Je demande : « Pour quelles valeurs de x a-t-on 5x − 4 ≥ 0 ? » puis « et 2x² − 5x + 2 ≤ 0 ? ». La première est facile, la seconde non : j’annonce qu’on va apprendre à utiliser les tableaux de signes.",
+   "summary": "Une inéquation fait intervenir <, ≤, > ou ≥ ; la résoudre, c’est trouver l’ensemble des réels qui la vérifient. ax + b est du signe de −a avant −b/a et du signe de a après. Pour ax² + bx + c : si Δ > 0, le trinôme est du signe de a à l’extérieur des racines et du signe contraire entre les racines ; si Δ = 0 il est du signe de a et s’annule en −b/2a ; si Δ < 0 il est toujours du signe de a. Pour une inéquation produit ou quotient, on cherche les racines de chaque facteur (les valeurs qui annulent le dénominateur sont exclues), on dresse un tableau de signes et on lit les intervalles solutions. Une inéquation ax + by + c ≤ 0 a pour solutions un demi-plan limité par la droite ax + by + c = 0 ; on le trouve en testant un point (souvent O) ; un système d’inéquations a pour solution l’intersection des demi-plans.",
+   "points": [
+    "ax + b : signe de −a avant −b/a, signe de a après.",
+    "ax² + bx + c avec Δ > 0 : signe de a à l’extérieur des racines, signe de −a entre les racines.",
+    "Δ = 0 : signe de a (nul en −b/2a) ; Δ < 0 : toujours du signe de a.",
+    "Inéquation produit ou quotient : tableau de signes de chaque facteur ; on exclut les valeurs interdites.",
+    "ax + by + c ≤ 0 : demi-plan de frontière la droite ax + by + c = 0 ; on teste un point."
+   ],
+   "application": {
+    "q": "Résoudre dans ℝ : 2x² − 5x + 2 ≤ 0.",
+    "a": "Δ = 25 − 16 = 9, √Δ = 3 : x₁ = (5 − 3)/4 = ½ et x₂ = (5 + 3)/4 = 2. Le trinôme (a = 2 > 0) est négatif entre les racines : S = [½ ; 2]."
+   },
+   "applications": [
+    {
+     "q": "Résoudre dans ℝ : −33 ≤ 4x + 7 < 27.",
+     "a": "−40 ≤ 4x < 20 ⇔ −10 ≤ x < 5 : S = [−10 ; 5[."
+    },
+    {
+     "q": "Résoudre dans ℝ : 3x² − 4x + 12 > 0.",
+     "a": "Δ = 16 − 144 = −128 < 0 : le trinôme est toujours du signe de a = 3 > 0, donc S = ℝ."
+    },
+    {
+     "q": "Résoudre dans ℝ : (2x − 1)(x + 1) ≥ 0.",
+     "a": "Les racines sont −1 et ½ ; tableau de signes : le produit est positif ou nul pour x ≤ −1 ou x ≥ ½ : S = ]−∞ ; −1] ∪ [½ ; +∞[."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Inéquations du premier degré",
+     "lines": [
+      "Formes : ax + b < 0 ; ax + b ≤ 0 ; ax + b > 0 ; ax + b ≥ 0 (a ≠ 0).",
+      "ax + b < 0 ⇔ x < −b/a si a > 0 ; x > −b/a si a < 0.",
+      "Signe de ax + b : signe de −a pour x < −b/a ; 0 en −b/a ; signe de a pour x > −b/a.",
+      "Exemple : 5x − 4 ≥ 0 ⇔ x ≥ 4/5 : S = [4/5 ; +∞[."
+     ]
+    },
+    {
+     "h": "II. Inéquations du second degré : signe de ax² + bx + c",
+     "lines": [
+      "Δ > 0 : signe de a à l’extérieur de [x₁ ; x₂], signe de −a entre x₁ et x₂.",
+      "Δ = 0 : signe de a, nul en x₀ = −b/2a.",
+      "Δ < 0 : toujours du signe de a.",
+      "On résout d’abord l’équation associée, puis on lit le tableau de signes."
+     ]
+    },
+    {
+     "h": "III. Inéquation produit — inéquation quotient",
+     "lines": [
+      "On résout l’équation associée à chaque facteur (numérateur et dénominateur).",
+      "On dresse un tableau des signes de chaque facteur puis du produit (ou du quotient).",
+      "Les valeurs qui annulent le dénominateur sont exclues de l’ensemble des solutions.",
+      "Exemple : (x² + x + 1)(1 − x²) > 0 : x² + x + 1 > 0 toujours ; 1 − x² > 0 ⇔ −1 < x < 1 : S = ]−1 ; 1[."
+     ]
+    },
+    {
+     "h": "IV. Inéquations à deux inconnues",
+     "lines": [
+      "La droite ax + by + c = 0 partage le plan en deux demi-plans ; l’un est l’ensemble des solutions de ax + by + c ≤ 0.",
+      "On teste un point : 5x − 3y + 15 ≤ 0 ; avec O(0 ; 0) : 15 ≤ 0 est faux, donc la solution est le demi-plan fermé de frontière (AB) ne contenant pas O.",
+      "Un système d’inéquations a pour solution l’intersection des demi-plans."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 6 : Barycentre",
+   "match": [
+    "Barycentre"
+   ],
+   "pages": [
+    47,
+    52
+   ],
+   "objectives": [
+    "Définir le barycentre de deux ou trois points pondérés et connaître la condition d’existence.",
+    "Construire un barycentre (abscisse, méthode du parallélogramme, méthode des parallèles).",
+    "Utiliser l’homogénéité et l’associativité.",
+    "Calculer les coordonnées d’un barycentre et l’utiliser pour l’alignement et le concours de droites."
+   ],
+   "intro": "Je pose une règle sur un doigt avec deux objets de masses différentes aux extrémités et je demande où placer le doigt pour qu’elle reste en équilibre. Les élèves voient que le point d’équilibre est plus proche de la masse la plus lourde : c’est le barycentre.",
+   "summary": "Un point pondéré (A ; α) est un point affecté d’un coefficient réel α. Si α + β ≠ 0, il existe un unique point G tel que αGA→ + βGB→ = 0→ : c’est le barycentre de (A ; α) et (B ; β), noté G = bar{(A ; α) ; (B ; β)} ; on a AG→ = β/(α + β) AB→, donc G ∈ (AB) et, dans le repère (A ; AB→), G a pour abscisse β/(α + β). Le barycentre ne change pas si on multiplie les coefficients par un même réel non nul (homogénéité) ; l’isobarycentre (coefficients égaux) est le milieu. Pour trois points, si α + β + γ ≠ 0, G vérifie αGA→ + βGB→ + γGC→ = 0→ et AG→ = (β AB→ + γ AC→)/(α + β + γ) ; on peut remplacer deux points par leur barycentre partiel affecté de la somme de leurs coefficients (associativité) ; l’isobarycentre de trois points est le centre de gravité. Coordonnées : x_G = (αx_A + βx_B + γx_C)/(α + β + γ), de même pour y_G.",
+   "points": [
+    "G = bar{(A ; α) ; (B ; β)} (α + β ≠ 0) ⇔ αGA→ + βGB→ = 0→ ⇔ AG→ = β/(α + β) AB→.",
+    "Homogénéité : on peut multiplier ou diviser tous les coefficients par un même réel non nul.",
+    "Isobarycentre de A et B : milieu de [AB] ; de A, B, C : centre de gravité.",
+    "Associativité : on remplace des points par leur barycentre partiel affecté de la somme de leurs coefficients.",
+    "Coordonnées : x_G = (αx_A + βx_B + γx_C)/(α + β + γ)."
+   ],
+   "application": {
+    "q": "A et B sont deux points distincts. Placer G = bar{(A ; 2) ; (B ; 3)} et donner son abscisse dans le repère (A ; AB→).",
+    "a": "AG→ = 3/(2 + 3) AB→ = (3/5)AB→ : G est sur [AB], aux 3/5 de A, et son abscisse est 3/5."
+   },
+   "applications": [
+    {
+     "q": "Donner l’abscisse de G = bar{(A ; −5) ; (B ; 4)} dans le repère (A ; AB→).",
+     "a": "AG→ = 4/(−5 + 4) AB→ = −4AB→ : G a pour abscisse −4 (G est en dehors de [AB], du côté de A)."
+    },
+    {
+     "q": "A(1 ; 2), B(3 ; −1), C(−2 ; 4). Calculer les coordonnées de G = bar{(A ; 1) ; (B ; 2) ; (C ; 1)}.",
+     "a": "x_G = (1 + 6 − 2)/4 = 5/4 ; y_G = (2 − 2 + 4)/4 = 1 : G(5/4 ; 1)."
+    },
+    {
+     "q": "G = bar{(A ; 4) ; (B ; 5) ; (C ; 3)}. Montrer, en utilisant l’associativité, que G est sur la droite (CH) où H = bar{(A ; 4) ; (B ; 5)}.",
+     "a": "On remplace (A ; 4) et (B ; 5) par (H ; 9) : G = bar{(H ; 9) ; (C ; 3)}, donc G appartient à la droite (CH)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Barycentre de deux points",
+     "lines": [
+      "Un point pondéré (A ; α) est un point A affecté du coefficient réel α.",
+      "Si α + β ≠ 0, il existe un unique point G tel que αGA→ + βGB→ = 0→ : G = bar{(A ; α) ; (B ; β)}.",
+      "AG→ = β/(α + β) AB→ et BG→ = α/(α + β) BA→ : G ∈ (AB) ; dans le repère (A ; AB→), G a pour abscisse β/(α + β).",
+      "Exemple : G = bar{(A ; 3) ; (B ; 2)} ⇔ 3GA→ + 2GB→ = 0→ ⇔ AG→ = (2/5)AB→."
+     ]
+    },
+    {
+     "h": "Construction",
+     "lines": [
+      "Par l’abscisse : on place G sur (AB) tel que AG→ = β/(α + β) AB→.",
+      "Méthode du parallélogramme : P ∉ (AB), PP₁→ = αPA→ et PP₂→ = βPB→ ; si PP₁SP₂ est un parallélogramme, PS→ = (α + β)PG→ et G = (AB) ∩ (PS).",
+      "Si α > β > 0, G est plus proche de A que de B."
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "Homogénéité : bar{(A ; α) ; (B ; β)} = bar{(A ; kα) ; (B ; kβ)} pour tout k ≠ 0.",
+      "Isobarycentre : bar{(A ; 1) ; (B ; 1)} = I, milieu de [AB].",
+      "L’ensemble des barycentres de A et B (A ≠ B) est la droite (AB) ; trois points sont alignés si l’un est barycentre des deux autres.",
+      "La projection conserve le barycentre.",
+      "Pour tout point M : (α + β)MG→ = αMA→ + βMB→."
+     ]
+    },
+    {
+     "h": "II. Barycentre de trois points",
+     "lines": [
+      "Si α + β + γ ≠ 0, il existe un unique point G tel que αGA→ + βGB→ + γGC→ = 0→ : G = bar{(A ; α) ; (B ; β) ; (C ; γ)}.",
+      "AG→ = β/(α + β + γ) AB→ + γ/(α + β + γ) AC→ : G a pour coordonnées (β/(α + β + γ) ; γ/(α + β + γ)) dans le repère (A ; AB→ ; AC→).",
+      "Associativité : si α + β ≠ 0 et H = bar{(A ; α) ; (B ; β)}, alors G = bar{(H ; α + β) ; (C ; γ)}.",
+      "L’isobarycentre de trois points non alignés est le centre de gravité du triangle."
+     ]
+    },
+    {
+     "h": "Barycentre et coordonnées",
+     "lines": [
+      "Dans un repère : x_G = (αx_A + βx_B + γx_C)/(α + β + γ) ; y_G = (αy_A + βy_B + γy_C)/(α + β + γ).",
+      "Centre d’inertie : le centre d’inertie d’une plaque homogène est le barycentre des centres d’inertie de ses parties affectés de leurs masses (ou de leurs aires)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 7 : Angles orientés — Trigonométrie",
+   "match": [
+    "Angles orientés — Trigonométrie"
+   ],
+   "pages": [
+    53,
+    60
+   ],
+   "objectives": [
+    "Convertir des mesures d’angles (degré, radian, grade) et utiliser le cercle trigonométrique.",
+    "Déterminer la mesure principale d’un angle orienté et utiliser la relation de Chasles.",
+    "Connaître cos x, sin x, tan x, les angles associés et les valeurs remarquables.",
+    "Résoudre les équations sin x = a, cos x = a et tan x = a."
+   ],
+   "intro": "J’enroule une ficelle graduée autour d’un cercle de rayon 1 et je demande à quel point du cercle arrive la graduation π, puis 2π, puis −π/2. Les élèves découvrent qu’à chaque réel correspond un point du cercle, et que x et x + 2π donnent le même point.",
+   "summary": "Le cercle trigonométrique est le cercle de centre O et de rayon 1, orienté dans le sens direct (contraire des aiguilles d’une montre). Les mesures d’un angle sont proportionnelles : y(rad) = π x(degrés)/180 et z(grades) = 10x/9 ; un cercle de rayon R a pour périmètre 2πR et un arc intercepté par un angle au centre α (radians) mesure Rα. À tout réel x correspond un point M du cercle ; x est une mesure de l’angle orienté (OA→ ; OM→), dont les mesures sont x + 2kπ (k ∈ ℤ) ; la mesure principale est celle qui appartient à ]−π ; π]. Relation de Chasles : (u→ ; v→) + (v→ ; w→) = (u→ ; w→) [2π]. cos x est l’abscisse et sin x l’ordonnée de M : −1 ≤ cos x ≤ 1, −1 ≤ sin x ≤ 1 et cos²x + sin²x = 1 ; tan x = sin x / cos x. Angles associés : cos(−x) = cos x, sin(−x) = −sin x, cos(π − x) = −cos x, sin(π − x) = sin x, cos(π + x) = −cos x, sin(π + x) = −sin x, cos(π/2 − x) = sin x, sin(π/2 − x) = cos x. Équations : sin x = sin α ⇔ x = α + 2kπ ou x = π − α + 2kπ ; cos x = cos α ⇔ x = α + 2kπ ou x = −α + 2kπ ; tan x = tan α ⇔ x = α + kπ.",
+   "points": [
+    "180° = π rad = 200 gr ; y = πx/180 ; z = 10x/9.",
+    "Mesures de (OA→ ; OM→) : x + 2kπ ; mesure principale dans ]−π ; π] ; Chasles : (u→ ; v→) + (v→ ; w→) = (u→ ; w→) [2π].",
+    "cos²x + sin²x = 1 ; −1 ≤ cos x ≤ 1 ; −1 ≤ sin x ≤ 1 ; tan x = sin x/cos x.",
+    "Angles associés : −x, π − x, π + x, π/2 − x, π/2 + x.",
+    "sin x = sin α ⇔ x = α + 2kπ ou π − α + 2kπ ; cos x = cos α ⇔ x = ±α + 2kπ ; tan x = tan α ⇔ x = α + kπ."
+   ],
+   "application": {
+    "q": "Donner la mesure principale de l’angle orienté de mesure 25π/2.",
+    "a": "25π/2 = 24π/2 + π/2 = 12π + π/2 = 6 × 2π + π/2 : la mesure principale est π/2."
+   },
+   "applications": [
+    {
+     "q": "Calculer cos(5π/6) et sin(5π/6).",
+     "a": "5π/6 = π − π/6 : cos(5π/6) = −cos(π/6) = −√3/2 et sin(5π/6) = sin(π/6) = 1/2."
+    },
+    {
+     "q": "Résoudre dans ℝ : sin x = √2/2.",
+     "a": "√2/2 = sin(π/4) : x = π/4 + 2kπ ou x = π − π/4 + 2kπ = 3π/4 + 2kπ (k ∈ ℤ)."
+    },
+    {
+     "q": "Résoudre dans ℝ : tan x = √3.",
+     "a": "√3 = tan(π/3) : x = π/3 + kπ (k ∈ ℤ)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Mesures d’angles",
+     "lines": [
+      "Le cercle trigonométrique (Γ) est le cercle de centre O (origine du repère) et de rayon 1.",
+      "La mesure en radian de l’angle BAC est la longueur de l’arc intercepté sur le cercle de centre A et de rayon 1.",
+      "Correspondance : 180° = π rad = 200 grades ; y = (π/180) x ; z = (10/9) x.",
+      "Sur un cercle de rayon R, l’arc intercepté par un angle au centre α (en radian) mesure Rα ; le périmètre est 2πR.",
+      "Sens direct (positif) : contraire des aiguilles d’une montre ; sens indirect : celui des aiguilles."
+     ]
+    },
+    {
+     "h": "Angles orientés",
+     "lines": [
+      "À tout réel x correspond un seul point M de (Γ) : x est une mesure en radian de l’angle (OA→ ; OM→).",
+      "Les mesures de cet angle sont les réels x + 2kπ (k ∈ ℤ) : (OA→ ; OB→) = x [2π].",
+      "Mesure principale : l’unique mesure α telle que −π < α ≤ π.",
+      "Relation de Chasles : (u→ ; v→) + (v→ ; w→) = (u→ ; w→) [2π].",
+      "Exemple : −31π/5 = −6π − π/5 : mesure principale −π/5."
+     ]
+    },
+    {
+     "h": "II. Cosinus et sinus d’un réel",
+     "lines": [
+      "Si M est le point de (Γ) tel que (OA→ ; OM→) = x : cos x est l’abscisse de M et sin x son ordonnée.",
+      "−1 ≤ cos x ≤ 1 ; −1 ≤ sin x ≤ 1 ; cos²x + sin²x = 1.",
+      "cos x = cos y et sin x = sin y ⇔ x = y + 2kπ.",
+      "tan x = sin x / cos x (cos x ≠ 0) ; cotan x = cos x / sin x (sin x ≠ 0)."
+     ]
+    },
+    {
+     "h": "Angles associés",
+     "lines": [
+      "cos(−x) = cos x ; sin(−x) = −sin x.",
+      "cos(π − x) = −cos x ; sin(π − x) = sin x.",
+      "cos(π + x) = −cos x ; sin(π + x) = −sin x.",
+      "cos(π/2 − x) = sin x ; sin(π/2 − x) = cos x ; cos(π/2 + x) = −sin x ; sin(π/2 + x) = cos x."
+     ]
+    },
+    {
+     "h": "Valeurs remarquables",
+     "lines": [
+      "cos 0 = 1 ; cos(π/6) = √3/2 ; cos(π/4) = √2/2 ; cos(π/3) = 1/2 ; cos(π/2) = 0.",
+      "sin 0 = 0 ; sin(π/6) = 1/2 ; sin(π/4) = √2/2 ; sin(π/3) = √3/2 ; sin(π/2) = 1.",
+      "tan(π/6) = √3/3 ; tan(π/4) = 1 ; tan(π/3) = √3."
+     ]
+    },
+    {
+     "h": "III. Équations trigonométriques",
+     "lines": [
+      "sin x = a : si a ∉ [−1 ; 1], pas de solution ; sinon on écrit a = sin α : x = α + 2kπ ou x = π − α + 2kπ.",
+      "cos x = a : si a ∉ [−1 ; 1], pas de solution ; sinon a = cos α : x = α + 2kπ ou x = −α + 2kπ.",
+      "tan x = a : a = tan α : x = α + kπ (k ∈ ℤ).",
+      "Exemple : sin x = −1/2 = sin(−π/6) : x = −π/6 + 2kπ ou x = 7π/6 + 2kπ."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 8 : Généralités sur les fonctions",
+   "match": [
+    "Généralités sur les fonctions"
+   ],
+   "pages": [
+    61,
+    69
+   ],
+   "objectives": [
+    "Déterminer l’ensemble de définition d’une fonction, des images et des antécédents.",
+    "Étudier la parité, les éléments de symétrie et la périodicité ; en déduire un domaine d’étude.",
+    "Étudier le sens de variation à l’aide du taux d’accroissement ; reconnaître les extremums.",
+    "Lire graphiquement images, variations et solutions d’équations ou d’inéquations."
+   ],
+   "intro": "Je trace au tableau la courbe d’une fonction et je pose trois questions : « Quelle est l’image de 2 ? Pour quelles valeurs la fonction vaut-elle 0 ? Où monte-t-elle ? » Puis j’annonce qu’on va apprendre à répondre à ces questions aussi par le calcul.",
+   "summary": "Une fonction f de D vers ℝ associe à tout réel x de D un réel unique f(x) : f(x) est l’image de x et x un antécédent de f(x). L’ensemble de définition Df est l’ensemble des réels qui ont une image (on exclut les valeurs qui annulent un dénominateur et celles qui rendent négatif ce qui est sous une racine). La courbe Cf est l’ensemble des points M(x ; f(x)). Cf est symétrique par rapport à A(a ; b) si pour tout x de Df, 2a − x ∈ Df et f(2a − x) + f(x) = 2b ; par rapport à la droite x = a si f(2a − x) = f(x). f est paire si f(−x) = f(x) (Cf symétrique par rapport à (Oy)), impaire si f(−x) = −f(x) (Cf symétrique par rapport à O). f est périodique de période T si f(x + T) = f(x). f est croissante sur I si a < b ⇒ f(a) ≤ f(b), décroissante si a < b ⇒ f(a) ≥ f(b) ; le signe du taux d’accroissement (f(x₂) − f(x₁))/(x₂ − x₁) donne le sens de variation. M est un maximum (minimum) de f sur I s’il existe a ∈ I tel que f(x) ≤ f(a) (f(x) ≥ f(a)) pour tout x de I.",
+   "points": [
+    "Df : on exclut les valeurs qui annulent un dénominateur ; sous une racine, l’expression doit être positive ou nulle.",
+    "Paire : f(−x) = f(x), symétrie par rapport à (Oy) ; impaire : f(−x) = −f(x), symétrie par rapport à O.",
+    "Centre A(a ; b) : f(2a − x) + f(x) = 2b ; axe x = a : f(2a − x) = f(x).",
+    "Périodique de période T : f(x + T) = f(x) ; on étudie sur un intervalle de longueur T.",
+    "Taux d’accroissement (f(x₂) − f(x₁))/(x₂ − x₁) > 0 sur I ⇔ f strictement croissante sur I ; < 0 ⇔ strictement décroissante."
+   ],
+   "application": {
+    "q": "Déterminer l’ensemble de définition de f(x) = (−5x² + 4x + 1)/(x(x − 3)(x + 2)).",
+    "a": "Le dénominateur s’annule pour x = 0, x = 3 et x = −2 : Df = ℝ ∖ {−2 ; 0 ; 3}."
+   },
+   "applications": [
+    {
+     "q": "Étudier la parité de f(x) = x³ − 2x définie sur ℝ.",
+     "a": "Pour tout x réel, −x ∈ ℝ et f(−x) = −x³ + 2x = −(x³ − 2x) = −f(x) : f est impaire, sa courbe est symétrique par rapport à l’origine."
+    },
+    {
+     "q": "Soit f(x) = x² − 4x + 1. Montrer que la droite d’équation x = 2 est un axe de symétrie de Cf.",
+     "a": "f(4 − x) = (4 − x)² − 4(4 − x) + 1 = 16 − 8x + x² − 16 + 4x + 1 = x² − 4x + 1 = f(x) : la droite x = 2 est un axe de symétrie."
+    },
+    {
+     "q": "Montrer que f(x) = 2x + 3 est strictement croissante sur ℝ à l’aide du taux d’accroissement.",
+     "a": "Pour x₁ ≠ x₂ : (f(x₂) − f(x₁))/(x₂ − x₁) = 2(x₂ − x₁)/(x₂ − x₁) = 2 > 0, donc f est strictement croissante sur ℝ."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Notion de fonction",
+     "lines": [
+      "Une fonction f de D vers ℝ associe à tout x de D un réel unique f(x) : f : x ↦ f(x).",
+      "f(x) est l’image de x ; x est un antécédent de f(x).",
+      "Fonction affine : f(x) = ax + b (si b = 0 linéaire, si a = 0 constante) ; croissante si a > 0, décroissante si a < 0.",
+      "L’ensemble de définition Df est l’ensemble des réels qui ont une image par f.",
+      "Exemple : g(x) = √(3x² + 5x − 2) est définie lorsque 3x² + 5x − 2 ≥ 0 : Dg = ]−∞ ; −2] ∪ [1/3 ; +∞[."
+     ]
+    },
+    {
+     "h": "II. Représentation graphique",
+     "lines": [
+      "Dans un repère (O ; i→ ; j→), la courbe représentative de f est Cf = {M(x ; y) / x ∈ Df et y = f(x)}.",
+      "Une courbe représente une fonction si toute parallèle à l’axe des ordonnées la coupe au plus en un point."
+     ]
+    },
+    {
+     "h": "III. Éléments de symétrie",
+     "lines": [
+      "Cf est symétrique par rapport au point A(a ; b) ⇔ pour tout x ∈ Df : 2a − x ∈ Df et f(2a − x) + f(x) = 2b.",
+      "Cf est symétrique par rapport à la droite Δ : x = a ⇔ pour tout x ∈ Df : 2a − x ∈ Df et f(2a − x) = f(x).",
+      "f est paire ⇔ pour tout x ∈ Df : −x ∈ Df et f(−x) = f(x) : Cf est symétrique par rapport à (Oy).",
+      "f est impaire ⇔ pour tout x ∈ Df : −x ∈ Df et f(−x) = −f(x) : Cf est symétrique par rapport à O."
+     ]
+    },
+    {
+     "h": "IV. Périodicité — Domaine d’étude",
+     "lines": [
+      "f est périodique de période T (T > 0) si pour tout x ∈ Df : x + T ∈ Df et f(x + T) = f(x).",
+      "sin et cos sont périodiques de période 2π ; tan de période π.",
+      "Si f est paire ou impaire, on l’étudie sur Df ∩ [0 ; +∞[ et on complète par symétrie.",
+      "Si f est périodique de période T, on l’étudie sur un intervalle de longueur T et on complète par translations de vecteur kT i→."
+     ]
+    },
+    {
+     "h": "V. Sens de variation",
+     "lines": [
+      "f est croissante sur I si pour tous a, b de I : a < b ⇒ f(a) ≤ f(b) (strictement : f(a) < f(b)).",
+      "f est décroissante sur I si : a < b ⇒ f(a) ≥ f(b) (strictement : f(a) > f(b)).",
+      "f est constante sur I si f(a) = f(b) pour tous a, b de I.",
+      "Taux d’accroissement : T = (f(x₂) − f(x₁))/(x₂ − x₁) ; T > 0 sur I ⇒ f strictement croissante ; T < 0 ⇒ strictement décroissante.",
+      "Une fonction croissante conserve l’ordre ; une fonction décroissante inverse l’ordre."
+     ]
+    },
+    {
+     "h": "Extremums",
+     "lines": [
+      "f admet un maximum M en a sur I si f(x) ≤ f(a) = M pour tout x ∈ I ; un minimum m en a si f(x) ≥ f(a) = m.",
+      "Maximum (minimum) relatif ou local : vérifié seulement sur un intervalle ouvert contenant a.",
+      "Lecture graphique : les solutions de f(x) = k sont les abscisses des points d’intersection de Cf et de la droite y = k ; celles de f(x) < g(x) sont les abscisses des points de Cf situés au-dessous de Cg."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 8 (suite) : Fonctions de référence",
+   "match": [
+    "Fonctions de référence"
+   ],
+   "pages": [
+    70,
+    78
+   ],
+   "objectives": [
+    "Étudier les fonctions de base : x ↦ ax², x ↦ x³, x ↦ √x, x ↦ 1/x.",
+    "Suivre le plan d’étude : ensemble de définition, domaine d’étude, variations, représentation graphique.",
+    "Étudier les fonctions sin et cos et tracer leurs courbes."
+   ],
+   "intro": "Je demande aux élèves de compléter un tableau de valeurs de x², x³, √x et 1/x pour x = 0,5 ; 1 ; 2 ; 4, puis de deviner l’allure de chaque courbe. Nous les comparons ensuite avec les courbes du livre.",
+   "summary": "Pour étudier une fonction, on détermine son ensemble de définition, son domaine d’étude (grâce à la parité et à la période), ses variations, puis on trace sa courbe. La fonction carré x ↦ x² est définie sur ℝ, paire, décroissante sur ]−∞ ; 0] et croissante sur [0 ; +∞[, sa courbe est une parabole de sommet O ; plus généralement x ↦ ax² est croissante sur [0 ; +∞[ si a > 0. La fonction cube x ↦ x³ est impaire et croissante sur ℝ. La fonction racine carrée x ↦ √x est définie et croissante sur [0 ; +∞[. La fonction inverse x ↦ 1/x est définie sur ℝ*, impaire, décroissante sur ]−∞ ; 0[ et sur ]0 ; +∞[, sa courbe est une hyperbole de centre O. Les fonctions sin et cos sont définies sur ℝ et périodiques de période 2π ; sin est impaire, cos est paire ; on les étudie sur [0 ; π] puis on complète par symétrie et translation.",
+   "points": [
+    "Plan d’étude : Df, domaine d’étude, variations, représentation graphique.",
+    "x² : paire, décroissante sur ]−∞ ; 0], croissante sur [0 ; +∞[ ; parabole de sommet O.",
+    "x³ : impaire, croissante sur ℝ ; √x : définie et croissante sur [0 ; +∞[.",
+    "1/x : définie sur ℝ*, impaire, décroissante sur ]−∞ ; 0[ et sur ]0 ; +∞[ ; hyperbole de centre O.",
+    "sin (impaire) et cos (paire) : période 2π, valeurs entre −1 et 1."
+   ],
+   "application": {
+    "q": "Étudier les variations de f(x) = 1/x sur ]0 ; +∞[.",
+    "a": "Pour 0 < x₁ < x₂ : f(x₂) − f(x₁) = 1/x₂ − 1/x₁ = (x₁ − x₂)/(x₁x₂) < 0, car x₁ − x₂ < 0 et x₁x₂ > 0 : f est strictement décroissante sur ]0 ; +∞[."
+   },
+   "applications": [
+    {
+     "q": "Comparer sans calculatrice (1,7)² et (1,72)², puis √0,5 et √0,6.",
+     "a": "x ↦ x² est croissante sur [0 ; +∞[ et 1,7 < 1,72, donc (1,7)² < (1,72)² ; x ↦ √x est croissante et 0,5 < 0,6, donc √0,5 < √0,6."
+    },
+    {
+     "q": "Résoudre graphiquement puis par le calcul : x² ≤ 4.",
+     "a": "La parabole y = x² est au-dessous de la droite y = 4 pour −2 ≤ x ≤ 2 : S = [−2 ; 2]."
+    },
+    {
+     "q": "Sur quel intervalle de longueur suffit-il d’étudier la fonction sin ? Pourquoi ?",
+     "a": "sin est périodique de période 2π et impaire : on l’étudie sur [0 ; π], on complète sur [−π ; 0] par symétrie par rapport à O, puis par translations de vecteur 2kπ i→."
+    }
+   ],
+   "board": [
+    {
+     "h": "Plan d’étude d’une fonction",
+     "lines": [
+      "1. Ensemble de définition Df.",
+      "2. Domaine d’étude (parité, période).",
+      "3. Sens de variation (taux d’accroissement) et tableau de variations.",
+      "4. Représentation graphique (tableau de valeurs, symétries)."
+     ]
+    },
+    {
+     "h": "Fonction carré : f(x) = x²",
+     "lines": [
+      "Df = ℝ ; f est paire : on l’étudie sur [0 ; +∞[.",
+      "Pour 0 ≤ x₁ < x₂ : x₂² − x₁² = (x₂ − x₁)(x₂ + x₁) > 0 : f est croissante sur [0 ; +∞[ et décroissante sur ]−∞ ; 0].",
+      "Sa courbe est une parabole de sommet O et d’axe (Oy) ; f(x) = ax² est croissante sur [0 ; +∞[ si a > 0 et décroissante si a < 0."
+     ]
+    },
+    {
+     "h": "Fonction cube : f(x) = x³",
+     "lines": [
+      "Df = ℝ ; f est impaire ; f est strictement croissante sur ℝ.",
+      "Sa courbe est symétrique par rapport à l’origine O."
+     ]
+    },
+    {
+     "h": "Fonction racine carrée : f(x) = √x",
+     "lines": [
+      "Df = [0 ; +∞[ ; f est strictement croissante sur [0 ; +∞[.",
+      "Pour 0 ≤ x₁ < x₂ : √x₂ − √x₁ = (x₂ − x₁)/(√x₂ + √x₁) > 0."
+     ]
+    },
+    {
+     "h": "Fonction inverse : f(x) = 1/x",
+     "lines": [
+      "Df = ℝ* = ]−∞ ; 0[ ∪ ]0 ; +∞[ ; f est impaire.",
+      "f est strictement décroissante sur ]−∞ ; 0[ et sur ]0 ; +∞[.",
+      "Sa courbe est une hyperbole de centre O ; ses asymptotes sont les axes du repère."
+     ]
+    },
+    {
+     "h": "Fonctions trigonométriques",
+     "lines": [
+      "sin et cos sont définies sur ℝ, périodiques de période 2π ; −1 ≤ sin x ≤ 1 et −1 ≤ cos x ≤ 1.",
+      "sin est impaire : on l’étudie sur [0 ; π] ; elle est croissante sur [0 ; π/2] et décroissante sur [π/2 ; π].",
+      "cos est paire : elle est décroissante sur [0 ; π].",
+      "On complète la courbe par symétrie puis par translations de vecteur 2kπ i→."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 9 : Produit scalaire",
+   "match": [
+    "Produit scalaire"
+   ],
+   "pages": [
+    79,
+    84
+   ],
+   "objectives": [
+    "Calculer un produit scalaire avec le cosinus, avec la projection orthogonale et avec les normes.",
+    "Utiliser les propriétés (bilinéarité, symétrie, identités remarquables, orthogonalité).",
+    "Utiliser l’expression analytique dans une base orthonormée : xx′ + yy′ et la norme.",
+    "Appliquer les relations métriques du triangle rectangle."
+   ],
+   "intro": "Je dessine deux vecteurs AB→ et AC→ et je projette C sur (AB) en C′. Je demande : « Que vaut AB × AC′ comparé à AB × AC × cos A ? » Après le calcul, les élèves voient que c’est le même nombre : c’est le produit scalaire.",
+   "summary": "Le produit scalaire de deux vecteurs u→ et v→ est le réel u→·v→ = ‖u→‖ × ‖v→‖ × cos(u→ ; v→) (et 0 si l’un est nul). Si u→ = AB→ et v→ = AC→, on a AB→·AC→ = AB × AC × cos BAC, et si C′ est le projeté orthogonal de C sur (AB), AB→·AC→ = AB→·AC′→ (= AB × AC′ si même sens, −AB × AC′ sinon). u→ ⊥ v→ ⇔ u→·v→ = 0 ; u→·u→ = ‖u→‖² et AB→² = AB². Le produit scalaire est symétrique et bilinéaire, d’où (u→ + v→)² = ‖u→‖² + 2u→·v→ + ‖v→‖², (u→ − v→)² = ‖u→‖² − 2u→·v→ + ‖v→‖² et u→·v→ = ½(‖u→ + v→‖² − ‖u→‖² − ‖v→‖²). Dans une base orthonormée, u→(x ; y)·v→(x′ ; y′) = xx′ + yy′ et ‖u→‖ = √(x² + y²). Dans un triangle ABC rectangle en A de hauteur [AH] : AB² = BH × BC, AC² = CH × CB et AH² = HB × HC.",
+   "points": [
+    "u→·v→ = ‖u→‖ ‖v→‖ cos(u→ ; v→) ; AB→·AC→ = AB × AC × cos A.",
+    "Projection : AB→·AC→ = AB→·AC′→ (C′ projeté orthogonal de C sur (AB)).",
+    "u→ ⊥ v→ ⇔ u→·v→ = 0 ; u→² = ‖u→‖².",
+    "Base orthonormée : u→·v→ = xx′ + yy′ ; ‖u→‖ = √(x² + y²).",
+    "Médiane : MA² + MB² = 2MI² + AB²/2 ; triangle rectangle : AB² = BH × BC ; AH² = HB × HC."
+   ],
+   "application": {
+    "q": "‖u→‖ = 5, ‖v→‖ = 4 et u→·v→ = −6. Calculer (u→ + v→)·(3u→ − v→) puis cos(u→ ; v→).",
+    "a": "(u→ + v→)·(3u→ − v→) = 3‖u→‖² − u→·v→ + 3u→·v→ − ‖v→‖² = 75 + 2×(−6) − 16 = 47. cos(u→ ; v→) = u→·v→/(‖u→‖‖v→‖) = −6/20 = −3/10."
+   },
+   "applications": [
+    {
+     "q": "Calculer u→·v→ pour u→(3,6 ; −4,8) et v→(−6,4 ; −4,5) dans une base orthonormée.",
+     "a": "u→·v→ = 3,6 × (−6,4) + (−4,8)(−4,5) = −23,04 + 21,6 = −1,44."
+    },
+    {
+     "q": "ABC est un triangle avec AB = 4, AC = 3, BC = 2 et I le milieu de [AB]. Calculer CI.",
+     "a": "CA² + CB² = 2CI² + AB²/2 ⇒ 9 + 4 = 2CI² + 8 ⇒ CI² = 5/2 ⇒ CI = √(5/2)."
+    },
+    {
+     "q": "ABC est rectangle en A avec AB = 6 cm, AC = 8 cm et H le projeté orthogonal de A sur (BC). Calculer BC, BH et AH.",
+     "a": "BC = √(36 + 64) = 10 cm ; AB² = BH × BC ⇒ BH = 36/10 = 3,6 cm ; CH = 10 − 3,6 = 6,4 cm ; AH² = BH × CH = 23,04 ⇒ AH = 4,8 cm."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Définitions du produit scalaire",
+     "lines": [
+      "u→·v→ = 0 si u→ = 0→ ou v→ = 0→ ; sinon u→·v→ = ‖u→‖ × ‖v→‖ × cos(u→ ; v→).",
+      "Avec des points : AB→·AC→ = AB × AC × cos BAC.",
+      "u→ et v→ colinéaires de même sens : u→·v→ = ‖u→‖‖v→‖ ; de sens contraires : u→·v→ = −‖u→‖‖v→‖.",
+      "u→ ⊥ v→ ⇔ u→·v→ = 0.",
+      "Carré scalaire : u→² = u→·u→ = ‖u→‖² ; AB→² = AB²."
+     ]
+    },
+    {
+     "h": "Produit scalaire et projection",
+     "lines": [
+      "Si C′ est le projeté orthogonal de C sur (AB) : AB→·AC→ = AB→·AC′→.",
+      "AB→·AC→ = AB × AC′ si AB→ et AC′→ sont de même sens ; = −AB × AC′ s’ils sont de sens contraires ; = 0 si C′ = A."
+     ]
+    },
+    {
+     "h": "Propriétés",
+     "lines": [
+      "u→·v→ = v→·u→ ; u→·(kv→) = k(u→·v→) ; u→·(v→ + w→) = u→·v→ + u→·w→.",
+      "(u→ + v→)² = ‖u→‖² + 2u→·v→ + ‖v→‖² ; (u→ − v→)² = ‖u→‖² − 2u→·v→ + ‖v→‖².",
+      "(u→ + v→)·(u→ − v→) = ‖u→‖² − ‖v→‖².",
+      "u→·v→ = ½(‖u→ + v→‖² − ‖u→‖² − ‖v→‖²).",
+      "Pythagore : u→ ⊥ v→ ⇔ ‖u→ + v→‖² = ‖u→‖² + ‖v→‖²."
+     ]
+    },
+    {
+     "h": "II. Expression analytique (base orthonormée)",
+     "lines": [
+      "u→(x ; y) et v→(x′ ; y′) : u→·v→ = xx′ + yy′.",
+      "‖u→‖ = √(x² + y²) ; u→ ⊥ v→ ⇔ xx′ + yy′ = 0.",
+      "cos(u→ ; v→) = (xx′ + yy′)/(‖u→‖ × ‖v→‖)."
+     ]
+    },
+    {
+     "h": "IV. Triangle rectangle",
+     "lines": [
+      "ABC rectangle en A et H projeté orthogonal de A sur (BC) :",
+      "AB² = BH × BC ; AC² = CH × CB ; AH² = HB × HC."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 10 : Applications",
+   "match": [
+    "Applications"
+   ],
+   "pages": [
+    85,
+    88
+   ],
+   "objectives": [
+    "Définir une application, son ensemble de départ et d’arrivée, images et antécédents ; distinguer application et fonction.",
+    "Reconnaître une application injective, surjective, bijective (diagrammes sagittaux et expressions).",
+    "Définir l’application réciproque d’une bijection, la restriction et la composée d’applications."
+   ],
+   "intro": "Je dessine deux ensembles d’élèves et de tables avec des flèches et je demande : « Chaque élève a-t-il une table ? Chaque table est-elle occupée ? Deux élèves partagent-ils une table ? » Ces trois questions correspondent aux trois notions de la leçon.",
+   "summary": "Une application f de E vers F associe à tout élément x de l’ensemble de départ E un unique élément f(x) de l’ensemble d’arrivée F ; on la représente par un diagramme sagittal ou par une expression. Une fonction associe à chaque élément de E au plus un élément : son domaine de définition Df peut être plus petit que E ; une fonction est une application lorsque Df = E, et la restriction d’une fonction à son domaine de définition est une application. L’application identité Id_E associe x à x. f est surjective si tout élément de F a au moins un antécédent dans E ; injective si tout élément de F a au plus un antécédent (deux éléments distincts ont des images distinctes : f(x) = f(y) ⇒ x = y) ; bijective si elle est à la fois injective et surjective, c’est-à-dire si tout élément de F a exactement un antécédent. Une bijection f admet une application réciproque f⁻¹ : F → E telle que f⁻¹(y) = x ⇔ f(x) = y, et f⁻¹ est aussi bijective.",
+   "points": [
+    "Application : tout élément de E a une et une seule image dans F.",
+    "Fonction : au plus une image ; c’est une application lorsque Df = E.",
+    "Surjective : tout y de F a au moins un antécédent ; injective : au plus un antécédent (f(x) = f(y) ⇒ x = y).",
+    "Bijective : exactement un antécédent ; elle admet une réciproque f⁻¹ : f⁻¹(y) = x ⇔ f(x) = y.",
+    "En changeant l’ensemble de départ ou d’arrivée, on peut rendre une application injective ou surjective (x ↦ x² de ℝ⁺ vers ℝ⁺ est bijective)."
+   ],
+   "application": {
+    "q": "f : ℝ → ℝ, x ↦ x². f est-elle surjective ? injective ? Et f : ℝ⁺ → ℝ⁺, x ↦ x² ?",
+    "a": "De ℝ vers ℝ : −1 n’a pas d’antécédent (pas surjective) et f(−2) = f(2) = 4 (pas injective). De ℝ⁺ vers ℝ⁺ : tout y ≥ 0 a un seul antécédent √y, donc f est bijective."
+   },
+   "applications": [
+    {
+     "q": "f : ℝ → ℝ, x ↦ 3x + 2. Donner l’image de −2 et l’antécédent de −7.",
+     "a": "f(−2) = −6 + 2 = −4 ; 3x + 2 = −7 ⇔ x = −3 : l’antécédent de −7 est −3."
+    },
+    {
+     "q": "f(x) = 1/(x − 2) définit-elle une application de ℝ vers ℝ ?",
+     "a": "Non : 2 n’a pas d’image car x − 2 = 0. Sa restriction g : ℝ ∖ {2} → ℝ, x ↦ 1/(x − 2), est une application."
+    },
+    {
+     "q": "f : E → F est bijective et f(4) = 3. Que vaut f⁻¹(3) ?",
+     "a": "f⁻¹(3) = 4, car f⁻¹(y) = x ⇔ f(x) = y."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Définition et vocabulaire",
+     "lines": [
+      "Une application est une correspondance entre un ensemble de départ E et un ensemble d’arrivée F qui à tout élément de E associe un unique élément de F.",
+      "Si f(x) = y : y est l’image de x et x est un antécédent de y.",
+      "Représentation : diagramme sagittal (une flèche de chaque élément de E vers son image) ou expression (f : ℝ → ℝ, x ↦ 3x + 2).",
+      "L’application identité de E : Id_E : E → E, x ↦ x."
+     ]
+    },
+    {
+     "h": "II. Applications et fonctions",
+     "lines": [
+      "Une fonction associe à tout élément de E au plus un élément de F.",
+      "f(x) = 1/(x − 2) : 2 n’a pas d’image ; f est une fonction mais pas une application de ℝ vers ℝ.",
+      "Une fonction est une application si son ensemble de définition est égal à l’ensemble de départ.",
+      "Restriction : on garde la correspondance et l’ensemble d’arrivée, et on réduit l’ensemble de départ."
+     ]
+    },
+    {
+     "h": "III. Injection, surjection, bijection",
+     "lines": [
+      "f : E → F est surjective si tout élément de F a au moins un antécédent dans E.",
+      "f est injective si tout élément de F a au plus un antécédent : x ≠ y ⇒ f(x) ≠ f(y) (ou f(x) = f(y) ⇒ x = y).",
+      "f est bijective si elle est injective et surjective : tout élément de F a exactement un antécédent."
+     ]
+    },
+    {
+     "h": "IV. Application réciproque",
+     "lines": [
+      "Si f : E → F est bijective, sa réciproque f⁻¹ : F → E associe à tout y de F son unique antécédent : f⁻¹(y) = x ⇔ f(x) = y.",
+      "Une application non bijective n’a pas de réciproque ; la réciproque d’une bijection est bijective.",
+      "Exemple : h : [0 ; π] → [−1 ; 1], x ↦ cos x est bijective."
+     ]
+    },
+    {
+     "h": "V. Composition des applications",
+     "lines": [
+      "f : E → F et g : G → H ; on définit f ∘ g (lire « f rond g ») par (f ∘ g)(x) = f(g(x)).",
+      "Exemple : f(x) = √(x + 1) et g(x) = 1/(x² + 1) : f ∘ g(x) = √((x² + 2)/(x² + 1)) et g ∘ f(x) = 1/(x + 2).",
+      "f ∘ (g ∘ h) = (f ∘ g) ∘ h ; en général f ∘ g ≠ g ∘ f.",
+      "La composée d’une bijection et de sa réciproque est l’identité : f ∘ f⁻¹ = Id_F et f⁻¹ ∘ f = Id_E."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 11 : Dénombrement",
+   "match": [
+    "Dénombrement"
+   ],
+   "pages": [
+    89,
+    94
+   ],
+   "objectives": [
+    "Utiliser le langage des ensembles : cardinal, réunion, intersection, complémentaire, produit cartésien.",
+    "Dénombrer les p-listes, les arrangements, les permutations et les combinaisons.",
+    "Reconnaître le type de tirage (successif avec ou sans remise, simultané).",
+    "Utiliser les propriétés des Cₙᵖ, la formule du binôme de Newton et le triangle de Pascal."
+   ],
+   "intro": "Je demande : « De combien de façons peut-on ranger 5 voitures dans 5 garages ? » puis « et si on choisit seulement 3 élèves parmi 29 pour une commission ? » Les élèves essaient de compter un par un et voient qu’il faut des formules.",
+   "summary": "Le cardinal card(E) d’un ensemble fini est le nombre de ses éléments ; card(A ∪ B) = card(A) + card(B) − card(A ∩ B) et card(Ā) = card(Ω) − card(A) ; card(A × B) = card(A) × card(B). Le nombre de p-listes (tirages successifs avec remise) d’un ensemble à n éléments est nᵖ. Le nombre d’arrangements de p éléments parmi n (tirages successifs sans remise, l’ordre compte) est Aₙᵖ = n(n − 1)…(n − p + 1) = n!/(n − p)! ; une permutation de n éléments est un arrangement de n parmi n : il y en a n! (avec 0! = 1). Le nombre de combinaisons de p éléments parmi n (tirages simultanés, parties à p éléments) est Cₙᵖ = n!/(p!(n − p)!) = Aₙᵖ/p!. Propriétés : Cₙ⁰ = Cₙⁿ = 1, Cₙᵖ = Cₙⁿ⁻ᵖ, Cₙᵖ + Cₙᵖ⁺¹ = Cₙ₊₁ᵖ⁺¹ (triangle de Pascal), et un ensemble à n éléments a 2ⁿ parties. Binôme de Newton : (a + b)ⁿ = Σ Cₙᵏ aⁿ⁻ᵏ bᵏ pour k de 0 à n.",
+   "points": [
+    "card(A ∪ B) = card(A) + card(B) − card(A ∩ B) ; card(A × B) = card(A) × card(B).",
+    "Successif avec remise : nᵖ ; successif sans remise : Aₙᵖ = n!/(n − p)! (p ≤ n) ; simultané : Cₙᵖ = n!/(p!(n − p)!).",
+    "Permutations : n! = n × (n − 1) × … × 2 × 1 ; 0! = 1.",
+    "Cₙᵖ = Cₙⁿ⁻ᵖ ; Cₙᵖ + Cₙᵖ⁺¹ = Cₙ₊₁ᵖ⁺¹ ; nombre de parties : 2ⁿ.",
+    "(a + b)ⁿ = Σₖ₌₀ⁿ Cₙᵏ aⁿ⁻ᵏ bᵏ ; coefficients lus dans le triangle de Pascal."
+   ],
+   "application": {
+    "q": "Une classe de 29 élèves (dont 22 garçons et 7 filles) choisit une commission de 3 membres. Combien de commissions possibles ? Combien comportent exactement 2 garçons ?",
+    "a": "C₂₉³ = 29!/(3! × 26!) = (29 × 28 × 27)/6 = 3 654. Avec exactement 2 garçons : C₂₂² × C₇¹ = 231 × 7 = 1 617."
+   },
+   "applications": [
+    {
+     "q": "De combien de façons peut-on garer 5 voitures numérotées dans 5 garages numérotés (une voiture par garage) ?",
+     "a": "C’est une permutation de 5 éléments : 5! = 120."
+    },
+    {
+     "q": "On tire successivement et sans remise 4 cartes d’un jeu de 32. Combien de tirages possibles ?",
+     "a": "A₃₂⁴ = 32 × 31 × 30 × 29 = 863 040."
+    },
+    {
+     "q": "Développer (a + b)⁴ à l’aide du triangle de Pascal.",
+     "a": "Les coefficients sont 1, 4, 6, 4, 1 : (a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Langage des ensembles",
+     "lines": [
+      "Le cardinal d’un ensemble fini E, noté card(E), est le nombre de ses éléments ; card(∅) = 0.",
+      "A ⊂ Ω : Ā (complémentaire de A dans Ω) ; card(Ā) = card(Ω) − card(A).",
+      "card(A ∪ B) = card(A) + card(B) − card(A ∩ B) ; si A ∩ B = ∅ : card(A ∪ B) = card(A) + card(B).",
+      "Produit cartésien : A × B = {(a ; b) / a ∈ A et b ∈ B} ; card(A × B) = card(A) × card(B)."
+     ]
+    },
+    {
+     "h": "II. Permutations",
+     "lines": [
+      "Une permutation de E (card(E) = n) est une façon d’ordonner tous ses éléments ; il y en a n! = n × (n − 1) × … × 2 × 1.",
+      "Par convention 0! = 1 ; (n + 1)! = (n + 1) × n!.",
+      "Exemple : 5 voitures dans 5 garages : 5! = 120."
+     ]
+    },
+    {
+     "h": "III. p-listes et arrangements",
+     "lines": [
+      "Une p-liste de E est une suite ordonnée de p éléments de E, distincts ou non : il y en a nᵖ (tirages successifs avec remise).",
+      "Un arrangement de p éléments parmi n est une p-liste d’éléments distincts : Aₙᵖ = n(n − 1)…(n − p + 1) = n!/(n − p)! avec p ≤ n (tirages successifs sans remise).",
+      "Exemple : A₇³ = 7 × 6 × 5 = 210 ; Aₙⁿ = n!."
+     ]
+    },
+    {
+     "h": "IV. Combinaisons",
+     "lines": [
+      "Une combinaison de p éléments parmi n est une partie de E à p éléments (l’ordre ne compte pas) : Cₙᵖ = n!/(p!(n − p)!) = Aₙᵖ/p!.",
+      "Exemple : C₄³ = 4 ; C₂₉³ = 3 654.",
+      "Cₙ⁰ = Cₙⁿ = 1 ; Cₙ¹ = n ; Cₙᵖ = Cₙⁿ⁻ᵖ ; Cₙᵖ + Cₙᵖ⁺¹ = Cₙ₊₁ᵖ⁺¹.",
+      "Un ensemble à n éléments possède 2ⁿ parties."
+     ]
+    },
+    {
+     "h": "V. Binôme de Newton — Triangle de Pascal",
+     "lines": [
+      "(a + b)ⁿ = Σₖ₌₀ⁿ Cₙᵏ aⁿ⁻ᵏ bᵏ = aⁿ + Cₙ¹aⁿ⁻¹b + … + Cₙⁿ⁻¹abⁿ⁻¹ + bⁿ.",
+      "(a − b)ⁿ = Σₖ₌₀ⁿ (−1)ᵏ Cₙᵏ aⁿ⁻ᵏ bᵏ.",
+      "Triangle de Pascal : chaque nombre est la somme des deux nombres situés au-dessus (Cₙᵖ + Cₙᵖ⁺¹ = Cₙ₊₁ᵖ⁺¹).",
+      "Ligne 4 : 1 4 6 4 1 ; ligne 5 : 1 5 10 10 5 1."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 12 : Statistiques",
+   "match": [
+    "Statistiques"
+   ],
+   "pages": [
+    95,
+    104
+   ],
+   "objectives": [
+    "Utiliser le vocabulaire statistique : population, caractère, classe, effectif, fréquence, effectifs et fréquences cumulés.",
+    "Calculer les caractéristiques de position : étendue, mode (classe modale), médiane, moyenne.",
+    "Calculer les caractéristiques de dispersion : variance et écart type.",
+    "Représenter une série : diagramme en bâtons, histogramme, polygone des effectifs, diagramme polaire."
+   ],
+   "intro": "J’écris au tableau les notes d’un devoir de la classe (sans les noms) et je demande : « La classe a-t-elle bien réussi ? » Les élèves proposent la moyenne, la meilleure note, la note la plus fréquente… Chaque réponse correspond à un outil que nous allons définir.",
+   "summary": "La population est l’ensemble étudié et le caractère ce qu’on observe ; il est quantitatif (discret ou continu, regroupé en classes) ou qualitatif. L’effectif nᵢ d’une valeur est le nombre d’individus qui la présentent ; sa fréquence est fᵢ = nᵢ/N (N effectif total), et le pourcentage 100fᵢ ; les effectifs et fréquences cumulés croissants s’obtiennent en additionnant de proche en proche. L’étendue est la différence entre les valeurs extrêmes ; le mode est la valeur de plus grand effectif (classe modale pour un caractère continu) ; la médiane partage la série ordonnée en deux groupes de même effectif : si N est impair c’est la valeur de rang (N + 1)/2, si N est pair la demi-somme des valeurs de rangs N/2 et N/2 + 1. La moyenne est x̄ = (n₁x₁ + … + nₚxₚ)/N = f₁x₁ + … + fₚxₚ (pour des classes, on prend les centres). La variance est V = (Σ nᵢ(xᵢ − x̄)²)/N et l’écart type σ = √V. On représente un caractère discret par un diagramme en bâtons (ou le polygone des effectifs), un caractère continu par un histogramme dont l’aire des rectangles est proportionnelle à l’effectif.",
+   "points": [
+    "Fréquence fᵢ = nᵢ/N ; pourcentage p = 100 × fᵢ ; somme des fréquences = 1.",
+    "Étendue = plus grande valeur − plus petite ; mode : valeur (ou classe) de plus grand effectif.",
+    "Médiane : rang (N + 1)/2 si N impair ; moyenne des rangs N/2 et N/2 + 1 si N pair.",
+    "Moyenne x̄ = Σ nᵢxᵢ/N = Σ fᵢxᵢ (centres des classes pour un caractère continu).",
+    "Variance V = Σ nᵢ(xᵢ − x̄)²/N ; écart type σ = √V."
+   ],
+   "application": {
+    "q": "Notes sur 10 de 36 élèves : 3 (1), 4 (4), 5 (8), 6 (9), 7 (7), 8 (5), 9 (2). Calculer la moyenne et la médiane.",
+    "a": "x̄ = (3 + 16 + 40 + 54 + 49 + 40 + 18)/36 = 220/36 ≈ 6,1. N = 36 est pair : la médiane est la moyenne des 18ᵉ et 19ᵉ valeurs ; les effectifs cumulés sont 1, 5, 13, 22… donc ces deux valeurs valent 6 et la médiane est 6."
+   },
+   "applications": [
+    {
+     "q": "Série : 2 ; 3 ; 5 ; 10 ; 12 ; 19 ; 20. Donner l’étendue et la médiane.",
+     "a": "Étendue = 20 − 2 = 18. N = 7 impair : la médiane est la 4ᵉ valeur, 10."
+    },
+    {
+     "q": "Poids (kg) de 60 personnes : ]40 ; 45] : 6 ; ]45 ; 50] : 10 ; ]50 ; 55] : 12 ; ]55 ; 60] : 19 ; ]60 ; 65] : 9 ; ]65 ; 70] : 4. Donner l’étendue et la classe modale.",
+     "a": "Étendue = 70 − 40 = 30 kg ; la classe modale est ]55 ; 60] (effectif 19)."
+    },
+    {
+     "q": "Série : 4 ; 6 ; 8 (effectifs 1 chacun). Calculer la variance et l’écart type.",
+     "a": "x̄ = 6 ; V = ((4 − 6)² + 0 + (8 − 6)²)/3 = 8/3 ; σ = √(8/3) ≈ 1,63."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Le langage statistique",
+     "lines": [
+      "Population : ensemble étudié ; ses éléments sont les individus. Échantillon : partie de la population.",
+      "Caractère : ce qu’on étudie ; quantitatif (discret ou continu) ou qualitatif.",
+      "Classe : intervalle regroupant des valeurs d’un caractère continu.",
+      "Effectif nᵢ : nombre d’individus ayant la valeur xᵢ ; fréquence fᵢ = nᵢ/N ; pourcentage p = 100 × nᵢ/N.",
+      "Effectif cumulé croissant (décroissant) : nombre d’individus ayant une valeur inférieure (supérieure) ou égale à x ; fréquence cumulée = effectif cumulé/N."
+     ]
+    },
+    {
+     "h": "II. Caractéristiques de position",
+     "lines": [
+      "Étendue : différence entre la plus grande et la plus petite valeur.",
+      "Mode : valeur de plus grand effectif ; pour un caractère continu, classe modale.",
+      "Médiane M : au moins la moitié des valeurs sont ≤ M et au moins la moitié sont ≥ M.",
+      "N impair : valeur de rang (N + 1)/2 ; N pair : demi-somme des valeurs de rangs N/2 et N/2 + 1.",
+      "Exemple : 2 ; 3 ; 5 ; 10 ; 12 ; 19 : médiane = (5 + 10)/2 = 7,5."
+     ]
+    },
+    {
+     "h": "Moyenne arithmétique",
+     "lines": [
+      "x̄ = (n₁x₁ + n₂x₂ + … + nₚxₚ)/N = f₁x₁ + f₂x₂ + … + fₚxₚ.",
+      "Pour un caractère continu, xᵢ est le centre de la classe.",
+      "Linéarité : si on multiplie toutes les valeurs par k, la moyenne est multipliée par k ; si on ajoute deux caractères, les moyennes s’ajoutent."
+     ]
+    },
+    {
+     "h": "III. Caractéristiques de dispersion",
+     "lines": [
+      "Variance : V = [n₁(x₁ − x̄)² + n₂(x₂ − x̄)² + … + nₚ(xₚ − x̄)²]/N.",
+      "Écart type : σ = √V.",
+      "Plus l’écart type est grand, plus les valeurs sont dispersées autour de la moyenne."
+     ]
+    },
+    {
+     "h": "IV. Représentations graphiques",
+     "lines": [
+      "Diagramme en bâtons (caractère discret) : la hauteur de chaque bâton est proportionnelle à l’effectif ; en joignant les sommets on obtient le polygone des effectifs.",
+      "Histogramme (caractère continu) : rectangles dont l’aire est proportionnelle à l’effectif ; si les classes ont la même amplitude, les hauteurs sont proportionnelles aux effectifs.",
+      "Diagramme polaire (radar) : un axe par modalité, chaque effectif représenté par un point."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "5D"
+}
