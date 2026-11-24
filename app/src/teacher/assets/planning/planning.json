@@ -32,7 +32,9 @@
   "IC_5D": "توزيع دروس الكتاب المدرسي « التربية المدنية » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
   "IC_5O": "توزيع دروس الكتاب المدرسي « التربية المدنية » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
   "FR_5C": "Progression établie d’après le manuel « Français 5ème (C et D) » (IPN), dans l’ordre des chapitres",
-  "FR_5D": "Progression établie d’après le manuel « Français 5ème (C et D) » (IPN), dans l’ordre des chapitres"
+  "FR_5D": "Progression établie d’après le manuel « Français 5ème (C et D) » (IPN), dans l’ordre des chapitres",
+  "FR_5A": "Progression établie d’après le manuel « Français 5ème (Lettres) » (IPN), dans l’ordre des chapitres",
+  "FR_5O": "Progression établie d’après le manuel « Français 5ème (Lettres) » (IPN), dans l’ordre des chapitres"
  },
  "plans": {
   "AR": {
@@ -7236,6 +7238,716 @@
      "k": "lesson",
      "i": [
       "Partie II – Sujets types : santé et investigation scientifique ; lectures"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "5A": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Le monde du travail – Texte 1 : Les métiers de l’enseignement",
+      "Le monde du travail – Texte 2 : Le travail des enfants"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Le monde du travail – Texte 3 : Écoute… (B. Dadié, Climbié)",
+      "Le monde du travail – Texte 4 : Le métier de sapeur-pompier"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Le monde du travail – Texte 5 : Avantages et inconvénients du métier d’infirmière",
+      "Le monde du travail – Texte 6 : L’angoisse de l’ouvrier (G. Navel)"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sciences et techniques – Texte 1 : Pourquoi a-t-on inventé les conserves ?",
+      "Sciences et techniques – Texte 2 : Téléphones portables : danger !"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sciences et techniques – Texte 3 : La machine et l’homme (Saint-Exupéry)",
+      "Sciences et techniques – Texte 4 : Les robots"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sciences et techniques – Texte 5 : Les machines (poème de M. Carême)",
+      "Sciences et techniques – Texte 6 : Le téléphone portable (poème)"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 1 : Durable ou non, le choix nous appartient"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 2 : Effet de notre mode de vie non durable",
+      "Développement durable – Texte 3 : L’homme et la nature (J. Rostand)"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 4 : Les matières plastiques",
+      "Développement durable – Texte 5 : Les barrages (Manantali)"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 6 : Les criquets (O. Bhêly-Quenum)",
+      "Information et média – Texte 1 : Télévision et vie de famille"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Information et média – Texte 2 : La radio en Afrique",
+      "Information et média – Texte 3 : La télévision"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Information et média – Texte 4 : La presse écrite, reflet de la vie",
+      "Information et média – Texte 5 : Texte et photo"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Femmes et société – Texte 1 : Femmes au travail (J. Ki-Zerbo)"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Femmes et société – Texte 2 : Elle était jeune (Kidé Fatimata)",
+      "Femmes et société – Texte 3 : Cruauté du mariage forcé"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Femmes et société – Texte 4 : Blanchissement de la peau",
+      "Femmes et société – Texte 5 : Femmes créatrices de richesses et d’emplois en Mauritanie"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sport et culture – Texte 1 : Portrait d’une star de football (Maradona)",
+      "Sport et culture – Texte 2 : La violence dans le football"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sport et culture – Texte 3 : Décoration des mains au henné",
+      "Sport et culture – Texte 4 : La revendication du loisir (G. Hourdin)"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Tradition et modernité – Texte 1 : La Guetna",
+      "Tradition et modernité – Texte 2 : L’obésité"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Tradition et modernité – Texte 3 : La parole du griot (D. T. Niane, Soundjata)",
+      "Tradition et modernité – Texte 4 : Le fou et le baigneur (conte)"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 1 : La diarrhée infantile"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 2 : Le coronavirus (Covid-19)",
+      "Maladies infectieuses – Texte 3 : Le SIDA"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 4 : La syphilis",
+      "Maladies infectieuses – Texte 5 : La gonorrhée"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 6 : L’herpès génital",
+      "Écrits professionnels – 1 : La lettre de demande"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Écrits professionnels – 2 : Le curriculum vitae (CV)",
+      "Écrits professionnels – 3 : La lettre de motivation"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Écrits professionnels – 4 : Le procès-verbal (PV)",
+      "Annexes – Les types de textes et leurs caractéristiques"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Annexes – Quelques éléments de versification"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "5O": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Le monde du travail – Texte 1 : Les métiers de l’enseignement",
+      "Le monde du travail – Texte 2 : Le travail des enfants"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Le monde du travail – Texte 3 : Écoute… (B. Dadié, Climbié)",
+      "Le monde du travail – Texte 4 : Le métier de sapeur-pompier"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Le monde du travail – Texte 5 : Avantages et inconvénients du métier d’infirmière",
+      "Le monde du travail – Texte 6 : L’angoisse de l’ouvrier (G. Navel)"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sciences et techniques – Texte 1 : Pourquoi a-t-on inventé les conserves ?",
+      "Sciences et techniques – Texte 2 : Téléphones portables : danger !"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sciences et techniques – Texte 3 : La machine et l’homme (Saint-Exupéry)",
+      "Sciences et techniques – Texte 4 : Les robots"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sciences et techniques – Texte 5 : Les machines (poème de M. Carême)",
+      "Sciences et techniques – Texte 6 : Le téléphone portable (poème)"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 1 : Durable ou non, le choix nous appartient"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 2 : Effet de notre mode de vie non durable",
+      "Développement durable – Texte 3 : L’homme et la nature (J. Rostand)"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 4 : Les matières plastiques",
+      "Développement durable – Texte 5 : Les barrages (Manantali)"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Développement durable – Texte 6 : Les criquets (O. Bhêly-Quenum)",
+      "Information et média – Texte 1 : Télévision et vie de famille"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Information et média – Texte 2 : La radio en Afrique",
+      "Information et média – Texte 3 : La télévision"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Information et média – Texte 4 : La presse écrite, reflet de la vie",
+      "Information et média – Texte 5 : Texte et photo"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Femmes et société – Texte 1 : Femmes au travail (J. Ki-Zerbo)"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Femmes et société – Texte 2 : Elle était jeune (Kidé Fatimata)",
+      "Femmes et société – Texte 3 : Cruauté du mariage forcé"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Femmes et société – Texte 4 : Blanchissement de la peau",
+      "Femmes et société – Texte 5 : Femmes créatrices de richesses et d’emplois en Mauritanie"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sport et culture – Texte 1 : Portrait d’une star de football (Maradona)",
+      "Sport et culture – Texte 2 : La violence dans le football"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Sport et culture – Texte 3 : Décoration des mains au henné",
+      "Sport et culture – Texte 4 : La revendication du loisir (G. Hourdin)"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Tradition et modernité – Texte 1 : La Guetna",
+      "Tradition et modernité – Texte 2 : L’obésité"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Tradition et modernité – Texte 3 : La parole du griot (D. T. Niane, Soundjata)",
+      "Tradition et modernité – Texte 4 : Le fou et le baigneur (conte)"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 1 : La diarrhée infantile"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 2 : Le coronavirus (Covid-19)",
+      "Maladies infectieuses – Texte 3 : Le SIDA"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 4 : La syphilis",
+      "Maladies infectieuses – Texte 5 : La gonorrhée"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Maladies infectieuses – Texte 6 : L’herpès génital",
+      "Écrits professionnels – 1 : La lettre de demande"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Écrits professionnels – 2 : Le curriculum vitae (CV)",
+      "Écrits professionnels – 3 : La lettre de motivation"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Écrits professionnels – 4 : Le procès-verbal (PV)",
+      "Annexes – Les types de textes et leurs caractéristiques"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Annexes – Quelques éléments de versification"
      ]
     },
     {

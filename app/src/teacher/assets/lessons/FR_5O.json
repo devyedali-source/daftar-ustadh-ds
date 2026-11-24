@@ -1,0 +1,4657 @@
+{
+ "subject": "FR",
+ "book": "books/FR_5AO.pdf",
+ "bookTitle": "Français 5ème (Lettres)",
+ "lessons": [
+  {
+   "title": "Le monde du travail – Texte 1 : Les métiers de l’enseignement",
+   "match": [
+    "Le monde du travail – Texte 1 : Les métiers de l’enseignement"
+   ],
+   "pages": [
+    8,
+    9
+   ],
+   "objectives": [
+    "Relever les avantages et les difficultés du métier d’enseignant.",
+    "Expliquer une phrase du texte.",
+    "Développer une idée dans un paragraphe de 8 à 10 lignes."
+   ],
+   "intro": "Aimeriez-vous devenir enseignant ? Pourquoi ?",
+   "summary": "« Enseigner, quel beau métier ! » : l’adage cache des réalités plus dures. Le choix d’enseigner suppose un équilibre entre avantages et difficultés, la vocation et un sens aigu de la pédagogie. Avantages : le statut de fonctionnaire de l’État (sécurité de l’emploi) et des vacances plus longues que dans toute autre profession. Difficultés : on donne beaucoup de soi sans forcément recevoir en échange ; les conditions varient selon les villes et les établissements ; violence physique et surtout morale de certains élèves ; débuts de carrière difficiles ; il faut parfois créer des liens affectifs avec les élèves pour restaurer un lien familial défait. Sans vocation, l’enseignement devient une tâche impossible : les enseignants réclament une refonte de la formation.",
+   "points": [
+    "Adage : « Enseigner, quel beau métier ! »",
+    "Avantages : statut, sécurité de l’emploi, vacances.",
+    "Difficultés : don de soi, violence, débuts difficiles.",
+    "La vocation et la pédagogie sont indispensables.",
+    "Revendication : une refonte de la formation."
+   ],
+   "application": {
+    "q": "Quel adage ?",
+    "a": "« Enseigner, quel beau métier ! »"
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 8,
+      "rect": [
+       0.07,
+       0.105,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 9,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.185
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Quel adage ?",
+       "« Enseigner, quel beau métier ! »"
+      ],
+      [
+       "Rend-il compte des difficultés ?",
+       "Non : « Les réalités de l’enseignement sont plus dures que ne le veut l’adage. »"
+      ],
+      [
+       "Un avantage, un inconvénient ?",
+       "Avantage : la sécurité de l’emploi (ou les longues vacances) ; inconvénient : la violence physique et morale de certains élèves."
+      ],
+      [
+       "« Créer des liens affectifs… lien familial défait » ?",
+       "L’enseignant doit parfois remplacer auprès de l’élève l’affection que sa famille, désunie, ne lui donne plus."
+      ],
+      [
+       "Que revendiquent les enseignants ?",
+       "Une refonte de la formation, pour l’adapter aux réalités pratiques du métier."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "L’adage",
+       "ce qu’on a l’habitude de dire"
+      ],
+      [
+       "La vocation",
+       "ce qu’on fait parce qu’on l’aime"
+      ],
+      [
+       "Sens aigu de la pédagogie",
+       "bonne connaissance des techniques d’enseignement"
+      ],
+      [
+       "Un statut",
+       "une situation administrative"
+      ],
+      [
+       "Inhérents à",
+       "fortement liés à"
+      ],
+      [
+       "Génèrent",
+       "causent"
+      ],
+      [
+       "Une refonte",
+       "une amélioration, un changement"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : deux paragraphes de 8 à 10 lignes : « L’enseignement est un beau métier » / « L’enseignement est un métier difficile ».",
+      "Oral : débat « Enseigner est un beau métier » ; enquête sur les conditions de vie et de travail des enseignants."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le monde du travail – Texte 2 : Le travail des enfants",
+   "match": [
+    "Le monde du travail – Texte 2 : Le travail des enfants"
+   ],
+   "pages": [
+    10,
+    11
+   ],
+   "objectives": [
+    "Définir le travail des enfants et en distinguer les formes.",
+    "Identifier le but de l’auteur (informer).",
+    "Apprendre à prendre des notes."
+   ],
+   "intro": "Connaissez-vous des enfants qui travaillent ? Que font-ils ?",
+   "summary": "Le travail des enfants est la participation de mineurs à des activités économiques proches de la profession d’un adulte ; l’OIT le définit en comparant l’âge à la pénibilité de la tâche. On distingue le travail « acceptable » (léger, intégré à l’éducation et à la vie familiale, permettant la scolarisation) et le travail « inacceptable » (trop longtemps, trop jeune, trop dangereux). Environ 350 millions d’enfants sont concernés ; plus de 8 millions subissent les « pires formes » (enfants soldats, travail forcé, trafics…). Contrairement aux idées reçues, il existe presque partout, même dans les pays développés, et plus des trois quarts de ce travail se trouve dans l’agriculture et les activités domestiques. L’élimination des pires formes fait consensus ; l’abolition totale reste débattue.",
+   "points": [
+    "Définition (OIT) : âge comparé à la pénibilité.",
+    "Travail acceptable / inacceptable.",
+    "350 millions d’enfants ; 8 millions dans les pires formes.",
+    "Surtout agriculture et travail domestique.",
+    "Texte informatif (source : Wikipédia)."
+   ],
+   "application": {
+    "q": "Qu’est-ce que le travail des enfants ?",
+    "a": "La participation de mineurs à des activités à finalité économique, comparables au travail d’un adulte."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 10,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.902
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Qu’est-ce que le travail des enfants ?",
+       "La participation de mineurs à des activités à finalité économique, comparables au travail d’un adulte."
+      ],
+      [
+       "Ses formes ?",
+       "Le travail « acceptable » et le travail « inacceptable », dont les « pires formes » : enfants soldats, travail forcé, trafics, activités illicites…"
+      ],
+      [
+       "Comment le justifie-t-on ?",
+       "Certains le jugent acceptable quand il est léger, intégré à l’éducation et à la vie familiale, et permet la scolarisation ; la pauvreté l’explique aussi."
+      ],
+      [
+       "But de l’auteur ?",
+       "Informer (et expliquer)."
+      ],
+      [
+       "Parties ?",
+       "1) Définition et formes ; 2) les chiffres et les idées reçues ; 3) le débat sur l’abolition."
+      ]
+     ]
+    },
+    {
+     "h": "Méthode : prendre des notes",
+     "lines": [
+      "Abréger les mots courants (svt, lgue), garder les lettres significatives (rép. : réponse).",
+      "Utiliser des signes (<, >, =) et toujours les mêmes pour la même notion.",
+      "Supprimer les redondances et reformuler avec concision (nominalisation)."
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte en une dizaine de lignes.",
+      "Oral : enquête sur le travail des enfants dans votre ville ou village (âge, conditions, type de travail, rémunération…)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le monde du travail – Texte 3 : Écoute… (B. Dadié, Climbié)",
+   "match": [
+    "Le monde du travail – Texte 3 : Écoute… (B. Dadié, Climbié)"
+   ],
+   "pages": [
+    12,
+    13
+   ],
+   "objectives": [
+    "Relever les difficultés du travail du planteur.",
+    "Expliquer des expressions imagées.",
+    "Dégager la leçon de morale d’un texte."
+   ],
+   "intro": "Le travail de la terre est-il facile ? Que vous ont raconté vos grands-parents ?",
+   "summary": "Le vieux planteur Assouan Koffi parle à son neveu Climbié : après les funérailles de N’dabian, « la brousse avait repris ses droits » et il a fallu tout recommencer. Chaque jour il lutte contre les lianes, les ronces, la pluie, le vent, le soleil, les insectes, les singes maraudeurs ; un vent trop fort, une pluie précoce ou tardive, un arbre qui tombe menacent la récolte, d’où la famine. « La tête travaille aussi bien que les bras. » Sans argent, personne ne l’aide. Il ne se presse pas car il veut que Climbié continue son œuvre. Leçon : « Le travail ! Et après le travail, l’indépendance… N’être à la charge de personne » ; fuir l’homme qui n’aime pas le travail.",
+   "points": [
+    "Narrateur : le vieux planteur Assouan Koffi.",
+    "Dangers : nature hostile, climat, animaux.",
+    "Le travail exige effort physique et réflexion.",
+    "Morale : le travail mène à l’indépendance."
+   ],
+   "application": {
+    "q": "« La brousse avait repris ses droits » ?",
+    "a": "La végétation sauvage avait de nouveau envahi la plantation abandonnée."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 12,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.863
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "« La brousse avait repris ses droits » ?",
+       "La végétation sauvage avait de nouveau envahi la plantation abandonnée."
+      ],
+      [
+       "« La tête travaille aussi bien que les bras » ?",
+       "Le planteur doit sans cesse réfléchir, prévoir et surveiller, pas seulement travailler physiquement."
+      ],
+      [
+       "Risques et dangers ?",
+       "Lianes, herbes, ronces, pluie, vent, soleil, insectes, singes maraudeurs, animaux nuisibles, arbres qui tombent ; famine si la pluie est précoce ou tardive."
+      ],
+      [
+       "Leçon de morale ?",
+       "Travailler pour être indépendant, n’être à la charge de personne, et fuir l’homme qui n’aime pas le travail."
+      ],
+      [
+       "« Toutes mes privations doivent porter leurs fruits » ?",
+       "Ses sacrifices doivent donner des résultats : une plantation que Climbié continuera."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Maraudeurs",
+       "voleurs"
+      ],
+      [
+       "Sur le qui-vive",
+       "aux aguets, prêt à intervenir"
+      ],
+      [
+       "Vivrières",
+       "plantes destinées à nourrir la famille (opposées aux produits vendus : cacao, café)"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : expliquer le dernier paragraphe (10 lignes) puis dire si on partage cette opinion (15 à 20 lignes).",
+      "Oral : sketch entre deux jeunes (pour / contre le travail) ; interview d’un vieux paysan."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le monde du travail – Texte 4 : Le métier de sapeur-pompier",
+   "match": [
+    "Le monde du travail – Texte 4 : Le métier de sapeur-pompier"
+   ],
+   "pages": [
+    14,
+    16
+   ],
+   "objectives": [
+    "Relever le rôle, les catégories et les conditions d’accès d’un métier.",
+    "Identifier un texte informatif et son plan.",
+    "Présenter un métier en suivant le même plan."
+   ],
+   "intro": "Avez-vous déjà vu des pompiers intervenir ? Que faisaient-ils ?",
+   "summary": "Le sapeur-pompier combat le feu, préserve la sécurité publique (incendies, accidents), apporte les premiers secours et protège aussi la faune lors des inondations et tempêtes ; il doit connaître le secourisme et être en bonne forme. Trois catégories : les jeunes sapeurs-pompiers (10 à 18 ans, examen avec course, natation et résultats scolaires), les volontaires (18 à 45 ans, taille minimale 1,60 m pour un homme, 1,55 m pour une femme, visite médicale, engagement de 5 ans, lettre de motivation et déclaration de jouissance des droits civiques) et les professionnels, rémunérés (pompier de 2e classe, lieutenant, capitaine). Le corps comprend aussi un personnel médical.",
+   "points": [
+    "Rôle : combattre le feu, secourir, protéger.",
+    "Trois catégories : juniors, volontaires, professionnels.",
+    "Conditions : âge, taille, santé, formation.",
+    "Texte informatif, organisé par intertitres."
+   ],
+   "application": {
+    "q": "Une fonction principale ?",
+    "a": "Combattre le feu."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 15,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.332
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Une fonction principale ?",
+       "Combattre le feu."
+      ],
+      [
+       "Une seule catégorie ?",
+       "Non, trois : jeunes sapeurs-pompiers, volontaires et professionnels."
+      ],
+      [
+       "Conditions ?",
+       "Âge (10-18 ans ou 18-45 ans), taille minimale, visite médicale, épreuves (course, natation), formation, engagement de 5 ans pour les volontaires."
+      ],
+      [
+       "Phrase qui résume le rôle ?",
+       "« Les sapeurs-pompiers sont un corps dont le rôle est de préserver la sécurité publique contre les éventuels problèmes ou dangers… »"
+      ],
+      [
+       "Documents du volontaire ?",
+       "Une lettre de motivation et une déclaration manuscrite de jouissance des droits civiques."
+      ],
+      [
+       "Type de texte ?",
+       "Informatif : il présente objectivement un métier, avec des intertitres et des données précises."
+      ]
+     ]
+    },
+    {
+     "h": "Méthode : le compte rendu",
+     "lines": [
+      "Donner oralement ou par écrit des informations sur une activité, une réunion, une lecture.",
+      "Prendre des notes puis les structurer.",
+      "Fiche de lecture : auteur, genre, résumé, personnages, style ; visite ou réunion : présentation, déroulement, résultats, points de vue."
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : présenter un métier à un parent ou ami (15 à 20 lignes) avec le même plan : le métier – informations essentielles – qu’est-ce qu’un… – les critères.",
+      "Oral : débat sur les conditions de travail des sapeurs-pompiers mauritaniens ; enquête auprès des travailleurs."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le monde du travail – Texte 5 : Avantages et inconvénients du métier d’infirmière",
+   "match": [
+    "Le monde du travail – Texte 5 : Avantages et inconvénients du métier d’infirmière"
+   ],
+   "pages": [
+    17,
+    18
+   ],
+   "objectives": [
+    "Classer avantages et inconvénients d’un métier.",
+    "Identifier la structure d’une fiche-métier.",
+    "Rédiger une fiche sur un autre métier."
+   ],
+   "intro": "Quelles qualités faut-il pour soigner les malades ?",
+   "summary": "Avantages : la sécurité de l’emploi (on manque d’infirmiers : pas de chômage), le travail en équipe, la relation humaine (elle s’occupe des patients, les aide et leur parle), la diversité du travail et des carrières (spécialisations comme puéricultrice). Inconvénients : des horaires contraignants (nuit, week-end), une lourde charge administrative, la responsabilité dans l’administration des médicaments (une erreur peut être fatale), l’usure physique et psychologique.",
+   "points": [
+    "Fiche en deux parties : avantages / inconvénients.",
+    "Avantages : emploi sûr, équipe, relation humaine, diversité.",
+    "Inconvénients : horaires, administration, responsabilité, usure.",
+    "Texte informatif (exemples entre parenthèses)."
+   ],
+   "application": {
+    "q": "Quel métier ?",
+    "a": "Le métier d’infirmière (infirmier)."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 17,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.841
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Quel métier ?",
+       "Le métier d’infirmière (infirmier)."
+      ],
+      [
+       "Se limite-t-il à soigner ?",
+       "Non : « elle s’occupe des patients, elle les aide, et leur parle » ; elle noue des liens avec les malades."
+      ],
+      [
+       "Pourquoi pas de chômage ?",
+       "Parce qu’on manque d’infirmiers et d’infirmières."
+      ],
+      [
+       "Inconvénient le plus marquant ?",
+       "Réponse personnelle (ex. : la responsabilité dans les médicaments, car une erreur peut être fatale)."
+      ],
+      [
+       "Type de texte ?",
+       "Informatif, sous forme de fiche avec deux parties."
+      ]
+     ]
+    },
+    {
+     "h": "Avantages / inconvénients",
+     "lines": [],
+     "table": [
+      [
+       "Avantages",
+       "Inconvénients"
+      ],
+      [
+       "sécurité de l’emploi",
+       "horaires contraignants"
+      ],
+      [
+       "travail en équipe",
+       "charge administrative"
+      ],
+      [
+       "relation humaine",
+       "responsabilité (médicaments)"
+      ],
+      [
+       "diversité du travail et des carrières",
+       "usure physique et psychologique"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : sur le modèle de cette fiche, avantages et inconvénients d’un métier de votre choix.",
+      "Oral : débat sur deux ou trois métiers de votre environnement ; enquête-interview auprès des travailleurs."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Le monde du travail – Texte 6 : L’angoisse de l’ouvrier (G. Navel)",
+   "match": [
+    "Le monde du travail – Texte 6 : L’angoisse de l’ouvrier (G. Navel)"
+   ],
+   "pages": [
+    19,
+    20
+   ],
+   "objectives": [
+    "Relever les causes de l’angoisse ouvrière.",
+    "Comparer la condition de l’ouvrier et celle du paysan.",
+    "Raconter ses angoisses dans un récit personnel."
+   ],
+   "intro": "Que ressent-on quand on cherche du travail sans en trouver ?",
+   "summary": "Georges Navel analyse l’angoisse de l’ouvrier, qui craint de perdre son travail, sa seule source de revenu. Cette angoisse de la recherche du travail ressemble à celle du chemineau qui cherche un abri le soir, ou du paysan quand la sécheresse se prolonge : devant l’angoisse de la nourriture, ouvrier ou paysan, l’homme n’est guère différent. La banlieue parisienne est déprimante : usines, air empuanti par les cheminées, « laideur industrielle ». En allant vers l’embauche, l’ouvrier réalise que rien ne lui appartient sauf ses vêtements : le toit et la nourriture peuvent se dérober ; il sent la précarité de sa condition et chasse « le cafard » d’un sourire forcé.",
+   "points": [
+    "Angoisse : perdre son travail, unique ressource.",
+    "Points communs : ouvrier, chemineau, paysan face au besoin.",
+    "Décor : la laideur industrielle de la banlieue.",
+    "Précarité : rien ne lui appartient."
+   ],
+   "application": {
+    "q": "Pourquoi l’ouvrier est-il angoissé ?",
+    "a": "Il peut perdre son travail, sa seule source de revenu, et se trouver démuni de tout."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 19,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.712
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Pourquoi l’ouvrier est-il angoissé ?",
+       "Il peut perdre son travail, sa seule source de revenu, et se trouver démuni de tout."
+      ],
+      [
+       "Point commun ouvrier / paysan / chemineau ?",
+       "La même angoisse du besoin (nourriture, abri, travail)."
+      ],
+      [
+       "Pourquoi la banlieue est-elle déprimante ?",
+       "Usines, air empuanti par les cheminées, rives de la Seine sales : la « laideur industrielle »."
+      ],
+      [
+       "Pourquoi se sent-il misérable ?",
+       "Il réalise que rien ne lui appartient sauf ses vêtements."
+      ],
+      [
+       "Quand ressent-il la précarité ?",
+       "Quand il va vers l’embauche, souvent en vain."
+      ],
+      [
+       "Pourquoi le paysan serait-il plus heureux ?",
+       "Il vit de sa terre, dans la nature ; mais le texte montre que, face au besoin, « l’homme n’est guère différent »."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : vous venez de passer un entretien d’embauche sans être sûr d’avoir convaincu : racontez vos angoisses (15 à 20 lignes).",
+      "Oral : exposé comparant la condition des ouvriers du texte à celle des ouvriers que vous connaissez."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sciences et techniques – Texte 1 : Pourquoi a-t-on inventé les conserves ?",
+   "match": [
+    "Sciences et techniques – Texte 1 : Pourquoi a-t-on inventé les conserves ?"
+   ],
+   "pages": [
+    22,
+    23
+   ],
+   "objectives": [
+    "Relever l’histoire des techniques de conservation.",
+    "Repérer les articulations qui marquent un changement d’idée.",
+    "Résumer un paragraphe."
+   ],
+   "intro": "Comment conservait-on la viande et les dattes autrefois chez nous ?",
+   "summary": "Pour l’auteur, conserves et civilisation sont indissociables. Les peuples de chasse et de cueillette puisent dans la nature selon leurs besoins et changent de territoire quand les ressources s’épuisent : produits frais et nomadisme vont de pair (boucanage, froid). À l’inverse, la sédentarisation n’a été possible que grâce à une conserve naturelle, la graine de céréale ; les premières conserves artificielles furent les greniers à blé. L’agriculture reste fragile (sécheresse, épidémie, disette) : il faut être prévoyant et perfectionner la conservation : séchage, fumage, salage, matières grasses, endroits frais ; aujourd’hui pasteurisation, congélation, lyophilisation.",
+   "points": [
+    "Nomadisme ↔ produits frais.",
+    "Sédentarisation ↔ graine de céréale (conserve naturelle).",
+    "Premières conserves artificielles : les greniers à blé.",
+    "Techniques anciennes : séchage, fumage, salage.",
+    "Techniques modernes : pasteurisation, congélation, lyophilisation."
+   ],
+   "application": {
+    "q": "Peut-on se passer des conserves ?",
+    "a": "Non : « conserves et civilisation sont indissociables »."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 22,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.279
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Peut-on se passer des conserves ?",
+       "Non : « conserves et civilisation sont indissociables »."
+      ],
+      [
+       "Peuples qui s’en passent ?",
+       "Les chasseurs-cueilleurs ; ils risquent l’épuisement des ressources et doivent changer de territoire (nomadisme), en boucanant ou en conservant par le froid."
+      ],
+      [
+       "Expression du changement d’idée ?",
+       "« Tout à l’inverse »."
+      ],
+      [
+       "Ce qui garantit la sédentarisation ?",
+       "La graine de céréale, qu’on peut stocker et consommer toute l’année ; mais il faut éviter qu’elle germe ou pourrisse."
+      ],
+      [
+       "Première conserve ? Risques ? Précautions ?",
+       "Les greniers à blé (vie agricole) ; sécheresse, épidémies, disette ; perfectionner la conservation (séchage, fumage, salage…)."
+      ],
+      [
+       "Techniques contemporaines ?",
+       "La pasteurisation, la congélation, la lyophilisation."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Disette",
+       "famine"
+      ],
+      [
+       "Pasteurisation",
+       "chauffage d’un liquide pour éliminer les microbes"
+      ],
+      [
+       "Lyophilisation",
+       "réduction en poudre d’une solution liquide"
+      ],
+      [
+       "Gamme",
+       "catégorie"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer les idées essentielles du 2e paragraphe en 4 à 6 lignes.",
+      "Oral (débat) : « L’alimentation en conserves serait une des plaies de notre époque » ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sciences et techniques – Texte 2 : Téléphones portables : danger !",
+   "match": [
+    "Sciences et techniques – Texte 2 : Téléphones portables : danger !"
+   ],
+   "pages": [
+    24,
+    25
+   ],
+   "objectives": [
+    "Identifier l’interview et ses caractéristiques.",
+    "Relever les conseils et les risques sanitaires.",
+    "Rédiger un texte sur les avantages du portable."
+   ],
+   "intro": "Combien de temps passez-vous au téléphone chaque jour ?",
+   "summary": "Dans cette interview, le Dr Denis Zmirou ne conseille pas d’abandonner le portable mais d’en limiter l’usage : communications rapides (5 à 10 minutes), messages urgents, lieux ouverts, kit mains libres en voiture et en train, ne pas le porter près des organes de reproduction. Effets biologiques avérés : modifications de l’électro-encéphalogramme et des fonctions cognitives, augmentation d’une enzyme (l’ODC) ; maux de tête, échauffement. Les études sur l’effet cancérogène ne sont pas concluantes : il faut rester vigilant. Les puissances des appareils varient de 1 à 18 : il recommande de les indiquer sur les emballages.",
+   "points": [
+    "Type : interview (questions / réponses).",
+    "Usage limité et prudent, pas d’abandon.",
+    "Effets : cerveau, mémoire, maux de tête.",
+    "Études non concluantes : vigilance.",
+    "Indiquer la puissance des appareils."
+   ],
+   "application": {
+    "q": "Type de texte ?",
+    "a": "Une interview (entretien)."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 24,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 25,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.295
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Type de texte ?",
+       "Une interview (entretien)."
+      ],
+      [
+       "Quand utiliser le portable ?",
+       "Pour des communications rapides et urgentes, dans des lieux ouverts."
+      ],
+      [
+       "Conseille-t-il son abandon ?",
+       "Non : un usage modéré (kit mains libres, lieux ouverts…)."
+      ],
+      [
+       "Risques sanitaires ?",
+       "Modifications de l’électro-encéphalogramme et des fonctions cognitives, augmentation de l’ODC, maux de tête, échauffement."
+      ],
+      [
+       "Études ? Conclusions ?",
+       "Oui, mais elles ne sont pas concluantes ; il faut rester vigilant."
+      ],
+      [
+       "Recommandations ?",
+       "Afficher la puissance des appareils pour permettre le choix et pousser les industriels à la réduire."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : à l’inverse des critiques, rédiger un texte (15 à 20 lignes) sur les avantages du téléphone portable."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sciences et techniques – Texte 3 : La machine et l’homme (Saint-Exupéry)",
+   "match": [
+    "Sciences et techniques – Texte 3 : La machine et l’homme (Saint-Exupéry)"
+   ],
+   "pages": [
+    26,
+    27
+   ],
+   "objectives": [
+    "Distinguer but et moyen dans l’argumentation de l’auteur.",
+    "Expliquer la métaphore de la « maison nouvelle » et des « émigrants ».",
+    "Défendre une idée dans un paragraphe argumentatif."
+   ],
+   "intro": "La machine est-elle une menace pour l’homme ou un simple outil ? Donnez un exemple.",
+   "summary": "Pour Saint-Exupéry, ceux qui s’effraient du progrès technique confondent but et moyen : la machine n’est pas un but mais un outil, « l’avion est un outil comme la charrue ». Si nous croyons que la machine abîme l’homme, c’est que nous manquons de recul : cent ans de machine contre deux cent mille ans d’histoire humaine. Nous commençons à peine à habiter cette « maison nouvelle » (le monde moderne) que nous n’avons pas fini de bâtir ; tout a changé si vite (rapports humains, travail, coutumes) que nous utilisons un langage d’hier pour un monde d’aujourd’hui. Nous sommes « des émigrants qui n’ont pas encore fondé leur patrie ».",
+   "points": [
+    "But ≠ moyen : la machine est un moyen (un outil).",
+    "Avertissement : ne pas confondre but et moyen.",
+    "On manque de recul pour juger la machine.",
+    "La « maison nouvelle » = le monde moderne transformé par la technique.",
+    "Image finale : des émigrants sans patrie encore fondée."
+   ],
+   "application": {
+    "q": "Différence entre but et moyen ? Synonyme de moyen ?",
+    "a": "Le but est la fin recherchée, le moyen ce qui permet de l’atteindre ; synonyme dans le texte : « outil »."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 26,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.661
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Différence entre but et moyen ? Synonyme de moyen ?",
+       "Le but est la fin recherchée, le moyen ce qui permet de l’atteindre ; synonyme dans le texte : « outil »."
+      ],
+      [
+       "Quel avertissement l’auteur donne-t-il ?",
+       "Ne pas confondre but et moyen : la machine n’est pas un but."
+      ],
+      [
+       "Pourquoi ne faut-il plus critiquer la machine ?",
+       "Parce que nous manquons de recul : cent années de machine face à deux cent mille ans d’histoire humaine."
+      ],
+      [
+       "Qu’est-ce que la nouvelle maison ?",
+       "Le monde moderne transformé par la technique, que nous commençons à peine à habiter."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : paragraphe (10 à 15 lignes) : « L’avion est un outil comme la charrue » ; ou : « Ainsi, on peut dire que les progrès scientifiques et techniques ont profondément transformé les conditions de travail » ; résumer en une phrase le 1er paragraphe.",
+      "Oral (exposé-débat) : avantages et inconvénients d’une invention technologique très utilisée dans votre environnement."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sciences et techniques – Texte 4 : Les robots",
+   "match": [
+    "Sciences et techniques – Texte 4 : Les robots"
+   ],
+   "pages": [
+    28,
+    29
+   ],
+   "objectives": [
+    "Comprendre la différence entre l’homme et le robot.",
+    "Identifier le type de texte (explicatif).",
+    "Dégager la structure d’un texte et le résumer."
+   ],
+   "intro": "Avez-vous déjà vu un robot ? Peut-il faire tout ce que fait un homme ?",
+   "summary": "Construire un robot qui ferait le ménage et la cuisine est très compliqué : un ami sait préparer une tartine parce qu’il l’a vu faire, alors que le robot n’a d’autres connaissances que celles qu’on lui transmet ; il faut tout lui expliquer, étape par étape (programmation). La description est ennuyeuse et longue ; mais une fois programmé, il saura le faire pour toujours. Il faut programmer avec une minutie absolue, car l’ordinateur ne sait pas s’adapter aux imprévus ; les savants espèrent améliorer « l’intelligence artificielle » pour rendre les robots plus autonomes.",
+   "points": [
+    "L’homme apprend en observant ; le robot ne sait que ce qu’on lui transmet.",
+    "Il faut tout expliquer au robot : c’est la programmation.",
+    "Critique : le robot ne s’adapte pas aux imprévus.",
+    "Espoir : l’intelligence artificielle.",
+    "Type : texte explicatif."
+   ],
+   "application": {
+    "q": "Qu’est-ce qui différencie le robot de l’homme ?",
+    "a": "L’homme sait déjà faire les choses pour les avoir vues ; le robot n’a d’autres connaissances que celles qu’on lui transmet."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 28,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.93
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Qu’est-ce qui différencie le robot de l’homme ?",
+       "L’homme sait déjà faire les choses pour les avoir vues ; le robot n’a d’autres connaissances que celles qu’on lui transmet."
+      ],
+      [
+       "Que faut-il faire pour qu’il réponde à notre demande ?",
+       "Tout lui expliquer avec minutie, étape par étape."
+      ],
+      [
+       "Comment s’appelle cette opération ?",
+       "La programmation."
+      ],
+      [
+       "Quelle critique fait l’auteur ?",
+       "L’ordinateur ne sait pas adapter son comportement aux événements imprévus ; tout décrire est long et ennuyeux."
+      ],
+      [
+       "Surnom donné à l’ordinateur et au robot ?",
+       "« L’intelligence artificielle »."
+      ],
+      [
+       "Type de texte ?",
+       "Explicatif : il explique comment fonctionne un robot à l’aide d’un exemple (la tartine)."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : relever l’idée générale de chaque paragraphe puis résumer en 6 à 8 lignes.",
+      "Oral (débat-exposé) : quelles innovations techniques facilitent la vie quotidienne dans votre milieu ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sciences et techniques – Texte 5 : Les machines (poème de M. Carême)",
+   "match": [
+    "Sciences et techniques – Texte 5 : Les machines (poème de M. Carême)"
+   ],
+   "pages": [
+    30,
+    31
+   ],
+   "objectives": [
+    "Étudier l’évolution des machines à travers les comparaisons d’un poème.",
+    "Relever les articulateurs chronologiques.",
+    "Débattre de la place de l’ordinateur aujourd’hui."
+   ],
+   "intro": "Les machines sont-elles nos amies ou nos maîtres ?",
+   "summary": "Dans ce poème, Maurice Carême raconte l’évolution des machines comme une croissance humaine : d’abord elles « riaient comme des enfants » et semblaient vouloir amuser les gens ; puis elles grandirent, devinrent des adolescents, puis des hommes munis d’outils ; enfin, profitant du silence et de l’indifférence de leurs utilisateurs, elles devinrent « ces lourds géants / qui nous broient dans leurs rets ». Les articulateurs (puis, enfin, lentement) marquent cette transformation : de l’amusement à la domination de l’homme.",
+   "points": [
+    "Comparaisons : enfants → adolescents → hommes → géants.",
+    "Articulateurs : puis, enfin, lentement.",
+    "Les utilisateurs : silence et morne indifférence.",
+    "Fin : les machines dominent l’homme (« nous broient dans leurs rets »)."
+   ],
+   "application": {
+    "q": "À quoi sont comparées les machines ?",
+    "a": "À des enfants, puis à des adolescents, puis à des hommes munis d’outils, enfin à de lourds géants."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 30,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.93
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "À quoi sont comparées les machines ?",
+       "À des enfants, puis à des adolescents, puis à des hommes munis d’outils, enfin à de lourds géants."
+      ],
+      [
+       "Articulateurs de la transformation ?",
+       "« Puis », « enfin », « lentement »."
+      ],
+      [
+       "1re strophe : réaction des machines ? Verbes ?",
+       "Elles amusaient les gens : « rire », « amuser »."
+      ],
+      [
+       "3e strophe : réaction des utilisateurs ?",
+       "Le silence et la « morne indifférence »."
+      ],
+      [
+       "4e strophe : que sont devenues les machines ?",
+       "De lourds géants qui écrasent l’homme : l’homme est devenu prisonnier de ses machines."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : l’homme peut-il vivre aujourd’hui sans les machines ? Justifiez avec des exemples précis.",
+      "Oral (débat) : peut-on se passer aujourd’hui des ordinateurs ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sciences et techniques – Texte 6 : Le téléphone portable (poème)",
+   "match": [
+    "Sciences et techniques – Texte 6 : Le téléphone portable (poème)"
+   ],
+   "pages": [
+    32,
+    34
+   ],
+   "objectives": [
+    "Comprendre la critique sociale du portable dans un poème mauritanien.",
+    "Identifier une figure de style (jeu de mots / paronomase).",
+    "Exprimer un point de vue opposé dans un poème."
+   ],
+   "intro": "Le portable coûte-t-il cher à votre famille ? Qu’achète-t-on en premier : du crédit ou de la nourriture ?",
+   "summary": "Dans ce poème, Djibril Zakaria Sall montre que l’arrivée du portable, avec « un lot de mots et de maux », a ruiné les familles : les économies fondent, la cuisine chancelle, on emprunte pour charger le portable alors que les ventres sont creux ; tout le monde parle sans se soucier de la durée, appelle Paris et New York pour des futilités. « Sonne le portable / Sonne le glas de l’argent » : le portable conduit la famille à l’adversité. L’auteur emploie le pronom indéfini « on » pour généraliser le comportement à tous.",
+   "points": [
+    "Le portable : source de « mots et de maux » (jeu de mots).",
+    "Maux : dépenses inutiles, dettes, faim, futilités.",
+    "Comportement des utilisateurs : irresponsable, dépensier.",
+    "Pronom « on » : généralisation.",
+    "« Sonne le glas de l’argent » : ruine de la famille."
+   ],
+   "application": {
+    "q": "Autre titre au poème ?",
+    "a": "Par exemple : « Le portable ruine la famille »."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 32,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.551
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Autre titre au poème ?",
+       "Par exemple : « Le portable ruine la famille »."
+      ],
+      [
+       "Que représente l’apparition du portable ?",
+       "Une source de malheurs et de dépenses inutiles pour les familles."
+      ],
+      [
+       "Expliquez le 4e vers. Figure de style ?",
+       "« Avec un lot de mots et de maux » : le portable apporte des paroles et des souffrances ; c’est un jeu sur les sons (paronomase)."
+      ],
+      [
+       "Quels maux provoque le portable ?",
+       "Les économies fondent, la cuisine s’arrête, on emprunte, on a faim, l’argent part en futilités."
+      ],
+      [
+       "Comportement des utilisateurs ?",
+       "Irresponsable et dépensier."
+      ],
+      [
+       "Pronom indéfini utilisé ? Pourquoi ?",
+       "« On » : pour généraliser à tout le monde."
+      ],
+      [
+       "Sens du dernier vers ?",
+       "La famille s’enfonce dans la pauvreté et les difficultés."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : contrairement à l’auteur, rédiger un poème sur les aspects positifs du téléphone portable.",
+      "Oral : chacun raconte son expérience personnelle avec le téléphone portable."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Développement durable – Texte 1 : Durable ou non, le choix nous appartient",
+   "match": [
+    "Développement durable – Texte 1 : Durable ou non, le choix nous appartient"
+   ],
+   "pages": [
+    37,
+    38
+   ],
+   "objectives": [
+    "Définir le développement durable et ses dimensions.",
+    "Relever les actions possibles pour réduire l’empreinte écologique.",
+    "Développer une idée directrice dans un paragraphe."
+   ],
+   "intro": "Que pouvez-vous faire, chez vous et à l’école, pour moins gaspiller ?",
+   "summary": "Aperçu du thème : le développement durable est « un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures de répondre aux leurs ». Il a trois aspects : environnemental, économique et sociologique (Ignacy Sachs en distingue cinq : sociale, économique, écologique, spatiale, culturelle). Le texte montre que chacun peut agir pour diminuer son impact sur l’environnement : le développement durable exige de changer notre système économique et nos modes de vie pour réduire la consommation des ressources naturelles, tout en recherchant une meilleure répartition des richesses à l’échelle planétaire. Plus de la moitié de l’empreinte écologique humaine vient de la consommation d’énergies (déplacements, transport, chauffage), puis de l’alimentation. À l’école aussi on peut agir : papier recyclé, deux faces des feuilles, tri des déchets, choix des menus, venir à pied, en vélo ou en bus.",
+   "points": [
+    "Développement durable = répondre aux besoins du présent sans compromettre ceux des générations futures.",
+    "Trois aspects : environnemental, économique, social.",
+    "Empreinte écologique : d’abord l’énergie, puis l’alimentation.",
+    "Chacun peut agir à son échelle, y compris à l’école."
+   ],
+   "application": {
+    "q": "L’homme peut-il améliorer son comportement ?",
+    "a": "Oui : « Nous avons tous la possibilité d’agir pour diminuer notre impact sur l’environnement. »"
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 37,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.665
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "L’homme peut-il améliorer son comportement ?",
+       "Oui : « Nous avons tous la possibilité d’agir pour diminuer notre impact sur l’environnement. »"
+      ],
+      [
+       "Que faut-il faire ?",
+       "Changer notre système économique et nos modes de vie pour réduire la consommation de ressources naturelles."
+      ],
+      [
+       "Vise-t-il seulement le bien-être actuel ?",
+       "Non : il pense « à l’avenir de chaque habitant de notre planète » et à une meilleure répartition des richesses."
+      ],
+      [
+       "Comment l’homme participe-t-il à l’empreinte écologique ?",
+       "Surtout par la consommation d’énergies (déplacements, transport, chauffage), puis par l’alimentation."
+      ],
+      [
+       "Agir à l’école ?",
+       "Papier recyclé, deux faces des feuilles, tri des déchets, choix des menus, venir à pied, en vélo ou en bus."
+      ],
+      [
+       "Définition simple ?",
+       "Un développement qui satisfait nos besoins sans priver les générations futures de satisfaire les leurs."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Notre impact",
+       "nos mauvais agissements sur l’environnement"
+      ],
+      [
+       "À l’échelle planétaire",
+       "au niveau de toute la planète"
+      ],
+      [
+       "Des experts",
+       "des spécialistes de l’environnement"
+      ],
+      [
+       "L’empreinte écologique",
+       "notre manière de nuire à l’environnement en utilisant les ressources naturelles"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : développer en 10 lignes : « À l’école aussi, on peut agir pour le développement durable. »",
+      "Oral : dialogue entre un défenseur de la voiture et un critique de sa nuisance ; débat : quel rôle pouvez-vous jouer pour protéger l’environnement dans votre localité ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Développement durable – Texte 2 : Effet de notre mode de vie non durable",
+   "match": [
+    "Développement durable – Texte 2 : Effet de notre mode de vie non durable"
+   ],
+   "pages": [
+    39,
+    40
+   ],
+   "objectives": [
+    "Distinguer ressources finies et ressources renouvelables.",
+    "Relever les risques de leur surexploitation et un exemple chiffré.",
+    "Développer une idée directrice avec d’autres exemples."
+   ],
+   "intro": "Le poisson de nos côtes est-il inépuisable ?",
+   "summary": "Les ressources naturelles sont de deux catégories. Les ressources finies (pétrole, métaux) ne se renouvellent pas et s’épuiseront, probablement d’ici la fin du siècle au rythme actuel. Les ressources renouvelables (animaux, poissons, eaux douces, terres cultivables) se renouvellent si l’on n’en prélève qu’une petite partie ; sinon elles s’épuisent : la pêche mondiale est passée de 20 millions de tonnes en 1950 à presque 100 millions en 2004, et selon la FAO 1/4 des stocks de poissons est surexploité ou appauvri (jusqu’à 60 % des espèces dans certaines régions). Les terres et les eaux sont aussi dégradées par une mauvaise exploitation : pollution, déboisement menant à la désertification, engrais et pesticides.",
+   "points": [
+    "Ressources finies : pétrole, métaux (épuisement).",
+    "Ressources renouvelables : poissons, eau, terres (à condition de respecter l’équilibre).",
+    "Exemple chiffré : la surpêche (FAO).",
+    "Mauvaise exploitation : pollution, désertification, engrais, pesticides."
+   ],
+   "application": {
+    "q": "De quelles ressources l’homme dispose-t-il ?",
+    "a": "Des ressources finies et des ressources renouvelables."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 39,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.902
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "De quelles ressources l’homme dispose-t-il ?",
+       "Des ressources finies et des ressources renouvelables."
+      ],
+      [
+       "Différence ?",
+       "Les finies ne se renouvellent pas et finiront par s’épuiser ; les renouvelables se renouvellent d’elles-mêmes si l’on en prélève peu à la fois."
+      ],
+      [
+       "Risques ?",
+       "Épuisement des ressources finies (probablement d’ici la fin du siècle) ; disparition des ressources renouvelables surexploitées."
+      ],
+      [
+       "Exemple concret ?",
+       "La pêche : de 20 millions de tonnes (1950) à presque 100 millions (2004) ; 1/4 des stocks surexploités ou appauvris selon la FAO."
+      ],
+      [
+       "Problèmes des terres cultivables ?",
+       "Pollution du sol, déboisement et désertification ; agriculture intensive avec engrais et pesticides."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : développer en 15 lignes : « Si on ne respecte pas l’équilibre naturel et qu’on en prélève trop, trop rapidement, les ressources renouvelables peuvent s’épuiser et disparaître. »",
+      "Oral : dialogue agriculture biologique / OGM ; débat : comment nos modes de vie en Mauritanie nuisent-ils à l’environnement ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Développement durable – Texte 3 : L’homme et la nature (J. Rostand)",
+   "match": [
+    "Développement durable – Texte 3 : L’homme et la nature (J. Rostand)"
+   ],
+   "pages": [
+    41,
+    42
+   ],
+   "objectives": [
+    "Comprendre pourquoi l’homme doit protéger la nature.",
+    "Distinguer les motifs (hygiène planétaire, point de vue des biologistes).",
+    "Mener une enquête et une interview."
+   ],
+   "intro": "Les ressources de la nature sont-elles inépuisables ?",
+   "summary": "Longtemps l’homme a cru inépuisables les ressources de la nature. Depuis quelques décennies, la situation se retourne : à cause de la prolifération des humains, de l’extension des besoins et des pouvoirs nés du progrès des sciences et des techniques, l’homme devient un adversaire pour la nature : il en épuise les ressources ou y introduit détérioration et déséquilibre. Il doit donc surveiller sa conduite et protéger la nature contre lui-même. Ce souci concerne désormais hygiénistes, médecins, sociologues, économistes, partis politiques et chefs d’État. Motifs : en défendant la nature, l’homme se défend lui-même (santé, patrimoine héréditaire) : c’est une tâche d’hygiène planétaire ; et les biologistes refusent la disparition de tant d’espèces vivantes.",
+   "points": [
+    "Erreur passée : croire la nature inépuisable.",
+    "Causes : surpopulation, besoins accrus, puissance technique.",
+    "Motif 1 : hygiène planétaire (l’homme se protège lui-même).",
+    "Motif 2 : préserver les espèces (biologistes)."
+   ],
+   "application": {
+    "q": "Quelle erreur l’homme faisait-il ?",
+    "a": "Il croyait les ressources de la nature inépuisables et ne pensait pas à la protéger."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 41,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.914
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Quelle erreur l’homme faisait-il ?",
+       "Il croyait les ressources de la nature inépuisables et ne pensait pas à la protéger."
+      ],
+      [
+       "Pourquoi faut-il la protéger ?",
+       "La prolifération humaine, l’extension des besoins et la puissance des techniques font de l’homme un destructeur de la nature."
+      ],
+      [
+       "D’autres motifs ?",
+       "Le texte en donne deux : la santé de l’homme (hygiène planétaire) et la préservation des espèces ; on peut ajouter la beauté des paysages, l’économie (pêche, agriculture)…"
+      ],
+      [
+       "Des actions dans notre pays ?",
+       "Réponse personnelle (ex. : la Grande Muraille Verte, la lutte contre l’ensablement, la protection du Banc d’Arguin…)."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Prolifération effrénée",
+       "augmentation très rapide"
+      ],
+      [
+       "Extension des besoins",
+       "augmentation très importante des besoins"
+      ],
+      [
+       "Un adversaire",
+       "un ennemi, un destructeur"
+      ],
+      [
+       "Détérioration",
+       "dégradation"
+      ],
+      [
+       "Naturalistes",
+       "personnes qui aiment la nature"
+      ],
+      [
+       "Biologistes",
+       "scientifiques qui étudient les êtres vivants"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : développer en 10 lignes : « En défendant la nature, l’homme se défend lui-même. »",
+      "Oral : enquête auprès des agents de protection de la nature ; interview d’un agent des eaux et forêts."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Développement durable – Texte 4 : Les matières plastiques",
+   "match": [
+    "Développement durable – Texte 4 : Les matières plastiques"
+   ],
+   "pages": [
+    43,
+    44
+   ],
+   "objectives": [
+    "Repérer la phrase qui annonce le plan d’un texte.",
+    "Relever les articulations logiques.",
+    "Classer avantages et inconvénients dans un tableau."
+   ],
+   "intro": "Comptez les objets en plastique autour de vous en classe.",
+   "summary": "Le texte fait l’inventaire des objets en plastique de la cuisine et montre que nous vivons à « l’âge du plastique ». La phrase « Beaucoup d’avantages, mais aussi beaucoup de défauts » annonce sa structure. Avantages : léger, résistant aux chocs, durable, rigide ou flexible, transparent ou opaque, il remplace le papier, le verre…, et coûte généralement moins cher. Défauts : facilement inflammable, la plupart ne sont pas biodégradables ; jetés le long des routes et sur les plages, ils dégradent l’environnement. Des recherches visent des plastiques biodégradables et le recyclage, mais sans résultats encore probants.",
+   "points": [
+    "Phrase-annonce : « Beaucoup d’avantages, mais aussi beaucoup de défauts. »",
+    "Articulations : ainsi, mais, de ce fait, enfin, par ailleurs.",
+    "Plan : 1) présence du plastique 2) avantages 3) défauts 4) recherches.",
+    "Biodégradable : détruit par l’action des éléments naturels."
+   ],
+   "application": {
+    "q": "Phrase qui annonce la structure ?",
+    "a": "« Beaucoup d’avantages, mais aussi beaucoup de défauts. »"
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.785
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Phrase qui annonce la structure ?",
+       "« Beaucoup d’avantages, mais aussi beaucoup de défauts. »"
+      ],
+      [
+       "Articulations logiques ?",
+       "Ainsi (conséquence), mais (opposition), de ce fait (conséquence), enfin (dernier argument), par ailleurs (ajout)."
+      ],
+      [
+       "Unités de sens ?",
+       "1) Le plastique partout (« l’âge du plastique ») ; 2) ses avantages ; 3) ses défauts ; 4) les recherches de solutions."
+      ],
+      [
+       "« L’âge du plastique » ?",
+       "Notre époque, où le plastique est présent dans tous les domaines."
+      ],
+      [
+       "« Matières plastiques biodégradables » ?",
+       "Plastiques que la lumière et la chaleur du soleil peuvent détruire et transformer en substances réutilisables."
+      ]
+     ]
+    },
+    {
+     "h": "Avantages / inconvénients",
+     "lines": [],
+     "table": [
+      [
+       "Avantages",
+       "Inconvénients"
+      ],
+      [
+       "léger, résistant aux chocs",
+       "facilement inflammable"
+      ],
+      [
+       "durable, rigide ou flexible",
+       "pas biodégradable (la plupart)"
+      ],
+      [
+       "transparent ou opaque, remplace papier et verre",
+       "s’accumule et dégrade l’environnement"
+      ],
+      [
+       "moins cher",
+       "recyclage encore peu probant"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : reformuler l’idée directrice de chaque paragraphe puis résumer en 3 ou 4 phrases.",
+      "Oral : dialogue ingénieur / membre d’une ONG ; débat : la sanction est-elle le meilleur moyen de lutter contre la dégradation de l’environnement ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Développement durable – Texte 5 : Les barrages (Manantali)",
+   "match": [
+    "Développement durable – Texte 5 : Les barrages (Manantali)"
+   ],
+   "pages": [
+    45,
+    47
+   ],
+   "objectives": [
+    "Relever les usages des barrages et les problèmes du barrage de Manantali.",
+    "Dégager l’idée directrice et le plan d’un texte.",
+    "Résumer un texte en 8 à 10 lignes."
+   ],
+   "intro": "Que savez-vous de l’OMVS et des barrages de Diama et de Manantali ?",
+   "summary": "Les barrages produisent de l’électricité, fournissent l’eau potable et l’eau d’irrigation, régulent les crues et la navigation ; l’électricité ne doit pas être privilégiée au détriment des besoins des populations locales (pêche, irrigation). Après des sécheresses, le Sénégal, la Mauritanie et le Mali ont décidé de construire le barrage de Manantali (sur le Bafing, au Mali) et le barrage anti-sel de Diama. Mais l’irrigation a tardé, aucun bateau n’est passé par l’écluse de Diama, et la culture de décrue et la pêche (environ quinze mille personnes) ont été perturbées : les crues artificielles ont été mal gérées, des agriculteurs ont afflué vers les villes. Avec la centrale (lignes vers Bamako, Dakar, Nouakchott), il faut partager l’eau entre énergie et crue ; la gestion d’un tel ouvrage exige la concertation de tous.",
+   "points": [
+    "Usages : électricité, eau potable, irrigation, régulation des crues, navigation.",
+    "Manantali (Mali, Bafing) et Diama (anti-sel).",
+    "Problèmes : irrigation en retard, navigation nulle, crues artificielles mal gérées.",
+    "Idée directrice : un barrage doit servir les intérêts de tous, par la concertation."
+   ],
+   "application": {
+    "q": "Titre ?",
+    "a": "Ex. : « Manantali : un barrage au service de qui ? »"
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 45,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 46,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.39
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Titre ?",
+       "Ex. : « Manantali : un barrage au service de qui ? »"
+      ],
+      [
+       "À quoi servent les barrages ?",
+       "Produire du courant, fournir l’eau potable et l’eau d’irrigation, réguler les crues et la navigation."
+      ],
+      [
+       "Problèmes de Manantali ?",
+       "Retard de l’irrigation, pas de navigation, crues artificielles mal gérées qui ont perturbé la culture de décrue et la pêche ; exode des agriculteurs ; partage de l’eau avec la centrale."
+      ],
+      [
+       "Idée directrice ?",
+       "L’électricité ne doit pas passer avant les besoins des populations ; la gestion d’un barrage exige la concertation de tous."
+      ],
+      [
+       "Parties ?",
+       "1) Usages des barrages ; 2) le projet Manantali-Diama ; 3) ses échecs ; 4) le problème de la centrale ; 5) les solutions proposées."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : idée principale de chaque paragraphe puis résumé en 8 à 10 lignes ; développer : « La production d’électricité ne doit pas être systématiquement privilégiée au détriment des besoins des populations locales. »",
+      "Oral (enquête) : un problème d’environnement chez nous (avancée du désert, réchauffement, barrages) : causes et solutions."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Développement durable – Texte 6 : Les criquets (O. Bhêly-Quenum)",
+   "match": [
+    "Développement durable – Texte 6 : Les criquets (O. Bhêly-Quenum)"
+   ],
+   "pages": [
+    48,
+    49
+   ],
+   "objectives": [
+    "Relever les procédés qui montrent le nombre et les ravages des criquets.",
+    "Analyser les sentiments des personnages.",
+    "Raconter et décrire une catastrophe."
+   ],
+   "intro": "Avez-vous déjà vu une invasion de criquets ? Que s’est-il passé ?",
+   "summary": "Le narrateur, un enfant, raconte l’invasion de criquets dans les champs du village : affolés, les gens prennent récipients, fers de houes et bâtons pour faire un vacarme assourdissant ; sa mère se démène, son père, bras levés, crie et invoque Allah. L’enfant prend son arc et ses flèches, mais son père, ému, lui explique que seuls les coups de bâton, de talon et le tapage peuvent agir. Les criquets couvrent tout le champ ; leurs bruits sont comparés à des craquements, des noix cassées, des ciseaux, du calicot déchiré. Malgré les efforts, « peine perdue » : le champ est dévasté et les criquets repartent ; « ce fut la misère dans toute sa puissance ».",
+   "points": [
+    "Récit à la 1re personne (le narrateur enfant).",
+    "Nombre : répétitions, énumérations, « il y en avait partout ».",
+    "Lutte : vacarme, bâtons, écrasement ; inefficace.",
+    "Sentiments : affolement, détresse, courage, déception, misère."
+   ],
+   "application": {
+    "q": "Les criquets sont-ils nombreux ?",
+    "a": "Oui : « le champ en était couvert », « des centaines et des centaines de milliers… », ils « semblaient se multiplier »."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 48,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 49,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.251
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Les criquets sont-ils nombreux ?",
+       "Oui : « le champ en était couvert », « des centaines et des centaines de milliers… », ils « semblaient se multiplier »."
+      ],
+      [
+       "Que font les villageois, l’enfant, ses parents ?",
+       "Ils font du vacarme et frappent les criquets ; la mère se démène, le père crie et invoque Allah ; l’enfant prend son arc et ses flèches."
+      ],
+      [
+       "La lutte a-t-elle été efficace ?",
+       "Non : « Peine perdue ! » Le champ est entièrement dévasté."
+      ],
+      [
+       "Sentiments des cultivateurs ?",
+       "Affolement, détresse, colère, puis désespoir et misère."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : raconter une invasion de criquets vécue (15 à 20 lignes) ; décrire un paysage ou un quartier dévasté après une tempête.",
+      "Oral : enquête sur les catastrophes naturelles en Mauritanie (causes, risques, prévisions)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Information et média – Texte 1 : Télévision et vie de famille",
+   "match": [
+    "Information et média – Texte 1 : Télévision et vie de famille"
+   ],
+   "pages": [
+    52,
+    53
+   ],
+   "objectives": [
+    "Comprendre l’influence de la télévision sur la vie familiale.",
+    "Relever les dangers de la télévision.",
+    "Argumenter sur la place de la télévision dans la famille mauritanienne."
+   ],
+   "intro": "Chez vous, regarde-t-on la télévision pendant les repas ? Que se passe-t-il alors ?",
+   "summary": "Une mère de famille raconte que ses voisins, les Fournier, formaient la famille la plus unie : au dîner chacun racontait sa journée. Depuis qu’ils ont installé un téléviseur dans la salle à manger, personne ne remarque plus la cuisine de Mme Fournier ; le choix des programmes est devenu le seul sujet de conversation et le père s’isole. Sa propre famille a mis le poste au salon pour protéger le repas, mais la situation est pire : les enfants mangent froid ou quittent la table pour un western ou un feuilleton, ne font plus de sport, et leur travail scolaire et leur santé en souffrent. Un soir sans télé devient une soirée triste. « Si c’était à refaire… » : elle regrette l’achat.",
+   "points": [
+    "La télévision a détruit l’harmonie et le dialogue familiaux.",
+    "Dangers : fin des conversations, isolement, repas perturbés, plus de sport, baisse des résultats scolaires et de la santé.",
+    "Dépendance : sans télé, les enfants s’ennuient.",
+    "Regret final : « Si c’était à refaire… »."
+   ],
+   "application": {
+    "q": "Le titre correspond-il à l’idée essentielle ?",
+    "a": "Oui : le texte montre comment la télévision transforme (et dégrade) la vie de famille."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 52,
+      "rect": [
+       0.07,
+       0.17,
+       0.93,
+       0.84
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Le titre correspond-il à l’idée essentielle ?",
+       "Oui : le texte montre comment la télévision transforme (et dégrade) la vie de famille."
+      ],
+      [
+       "Quels sont les dangers de la télévision ?",
+       "Fin du dialogue familial, repas perturbés, abandon du sport, travail scolaire et santé qui souffrent, dépendance."
+      ],
+      [
+       "La télévision est-elle adaptée à la vie de famille ?",
+       "Non, d’après le texte : elle divise la famille et détruit l’harmonie du repas."
+      ],
+      [
+       "Que créait l’absence de téléviseur chez les Fournier ?",
+       "L’unité familiale : conversations au dîner, humour du père, intérêt pour la cuisine de la mère."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : la télévision modifie-t-elle la vie d’une famille mauritanienne ? (15 à 20 lignes)",
+      "Oral (débat) : d’autres raisons de ne pas aimer la télévision ? « La TV réduit le temps de lecture » : est-ce vrai pour vous ?",
+      "Méthode (le récit) : faits réels ou imaginaires, 3e personne, temps du passé, repères chronologiques."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Information et média – Texte 2 : La radio en Afrique",
+   "match": [
+    "Information et média – Texte 2 : La radio en Afrique"
+   ],
+   "pages": [
+    54,
+    55
+   ],
+   "objectives": [
+    "Dégager l’idée principale et la structure d’un texte.",
+    "Relever les mots de liaison.",
+    "Résumer un texte en 6 à 8 lignes."
+   ],
+   "intro": "Qui écoute encore la radio dans votre famille ? Quelles émissions ?",
+   "summary": "Pour l’Africain, le transistor est plus qu’un symbole de standing : c’est un des moyens de communication les plus importants du continent, car la tradition orale est « l’artère vitale » de l’information. La radio n’est qu’une tradition améliorée par la technique : autrefois les griots allaient de village en village apporter les nouvelles et raconter le passé ; ces « livres d’histoire ambulants » assuraient l’échange d’informations. Avec le partage de l’Afrique en nations (fin du XIXe siècle) puis les premières radios (années 40), leur rôle a décliné. Aujourd’hui la « radio de la brousse » atteint les régions les plus éloignées, même les nomades : elle devient un instrument de progrès et de développement.",
+   "points": [
+    "Idée principale : la radio, héritière des griots, est le média majeur de l’Afrique.",
+    "Plan : 1) importance de la radio ; 2) les griots d’autrefois ; 3) leur déclin ; 4) la « radio de la brousse », instrument de progrès.",
+    "« Artère vitale » : canal essentiel, comme l’artère qui porte le sang."
+   ],
+   "application": {
+    "q": "Idée principale ?",
+    "a": "La radio, qui a pris le relais des griots, est le moyen d’information le plus important en Afrique et un instrument de progrès."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 54,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.93
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Idée principale ?",
+       "La radio, qui a pris le relais des griots, est le moyen d’information le plus important en Afrique et un instrument de progrès."
+      ],
+      [
+       "Mots de liaison ?",
+       "En fait, par exemple, au contraire, mais, et après, actuellement…"
+      ],
+      [
+       "Structure ?",
+       "1) La radio, moyen de communication essentiel ; 2) les griots, transmetteurs d’information ; 3) le déclin des griots ; 4) la radio de la brousse, instrument de développement."
+      ],
+      [
+       "« Artère vitale » ?",
+       "Le canal essentiel par lequel passe l’information, comme le sang dans une artère."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : relever les idées essentielles puis résumer le texte en 6 à 8 lignes.",
+      "Oral (enquête) : écoute-t-on encore la radio ? Quelles émissions écoutent vos parents ? Pourquoi ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Information et média – Texte 3 : La télévision",
+   "match": [
+    "Information et média – Texte 3 : La télévision"
+   ],
+   "pages": [
+    56,
+    57
+   ],
+   "objectives": [
+    "Définir la télévision comme média de masse et ses modes de diffusion.",
+    "Relever les fonctions de la télévision.",
+    "Discuter le rôle de la télévision dans le développement d’un pays."
+   ],
+   "intro": "Quelle émission regardez-vous le plus ? Vous informe-t-elle, vous éduque-t-elle ou vous divertit-elle ?",
+   "summary": "La télévision est un média de masse qui permet à un grand nombre de gens de capter chez eux des émissions ; sa particularité est de combiner l’image et le son. Elle a deux modes de diffusion : le direct (l’événement est vu au moment où il se passe) et le différé (l’émission est préparée, enregistrée et diffusée plus tard). Le plus puissant des médias électroniques, elle remplit plusieurs fonctions : informative (journal télévisé, actualités, magazines) et éducative (flore, faune, hygiène, civisme, code de la route, langues, alphabétisation…). Le sens d’une émission dépend moins de l’intention des auteurs que de l’esprit du téléspectateur : il faut la regarder intelligemment, avec esprit critique ; ainsi elle peut être un puissant facteur de développement et d’unité nationale.",
+   "points": [
+    "Particularité : image + son.",
+    "Direct : en même temps que l’événement ; différé : préparé et diffusé plus tard.",
+    "Fonctions : informative, éducative.",
+    "Le sens dépend du téléspectateur : refuser la passivité, garder l’esprit critique.",
+    "La TV peut être un facteur de développement et d’unité nationale."
+   ],
+   "application": {
+    "q": "Particularité de ce média ?",
+    "a": "Il combine en même temps l’image (vidéo) et le son (audio)."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 56,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 57,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.275
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Particularité de ce média ?",
+       "Il combine en même temps l’image (vidéo) et le son (audio)."
+      ],
+      [
+       "Diffusion directe / différée ?",
+       "Directe : l’événement est vu au moment même où il se passe ; différée : l’émission est montée, enregistrée et diffusée ultérieurement."
+      ],
+      [
+       "Principales fonctions de la télévision ?",
+       "La fonction informative et la fonction éducative."
+      ],
+      [
+       "Le sens d’une émission dépend-il de l’auteur ou du téléspectateur ?",
+       "Du téléspectateur : il dépend de son esprit et du sens qu’il lui attribue ; d’où l’intérêt des discussions après l’émission."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : vous aimez la télévision : expliquez pourquoi (15 à 20 lignes) ; arguments d’un partisan puis d’un adversaire ; expliquer et discuter : « La TV peut constituer un puissant facteur de développement et d’unité nationale. »",
+      "Oral (débat) : la TVM est apparue en 1981, 21 ans après l’indépendance : apparition tardive ou précoce ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Information et média – Texte 4 : La presse écrite, reflet de la vie",
+   "match": [
+    "Information et média – Texte 4 : La presse écrite, reflet de la vie"
+   ],
+   "pages": [
+    58,
+    59
+   ],
+   "objectives": [
+    "Retracer l’histoire de la presse écrite.",
+    "Définir l’information objective et la censure.",
+    "Construire un paragraphe argumentatif."
+   ],
+   "intro": "Quels journaux connaissez-vous en Mauritanie ? Les lisez-vous ?",
+   "summary": "Longtemps, l’homme n’a communiqué que par la parole ; mais « les paroles s’envolent », d’où la naissance de l’écriture et la recherche du support idéal : pierre, os, peau, papyrus, puis papier inventé par les Chinois au IIe siècle av. J.-C. L’imprimerie de Gutenberg (XVe siècle) a permis de reproduire rapidement textes et illustrations ; apparaissent alors les périodiques (mensuels, hebdomadaires puis quotidiens) qui commentent les faits. La liberté de la presse permet la libre communication des opinions, mais une partie de la presse reste soumise à la censure. Des journaux spécialisés (sport, jeunes, femmes) attirent les publicitaires. La situation diffère selon le niveau de vie, d’alphabétisation et d’industrialisation ; la mission de la presse reste d’informer le plus objectivement possible.",
+   "points": [
+    "Parole → écriture → supports (pierre, os, peau, papyrus, papier).",
+    "Gutenberg (XVe s.) : l’imprimerie et les premiers périodiques.",
+    "Liberté de la presse / censure.",
+    "Presse spécialisée et publicité.",
+    "Mission : informer objectivement."
+   ],
+   "application": {
+    "q": "« Les paroles s’envolent… » : sens ?",
+    "a": "Ce qui est dit oralement s’oublie, alors que l’écrit reste ; on peut nuancer : la tradition orale a longtemps transmis les connaissances."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 58,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.911
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "« Les paroles s’envolent… » : sens ?",
+       "Ce qui est dit oralement s’oublie, alors que l’écrit reste ; on peut nuancer : la tradition orale a longtemps transmis les connaissances."
+      ],
+      [
+       "Origine de la presse écrite ?",
+       "Le besoin de fixer les connaissances (l’écriture), puis l’imprimerie de Gutenberg au XVe siècle."
+      ],
+      [
+       "Presse qui paraît chaque jour ?",
+       "Les quotidiens."
+      ],
+      [
+       "Information objective ?",
+       "Une information qui présente les faits tels qu’ils sont, sans parti pris."
+      ],
+      [
+       "La censure ?",
+       "Le contrôle et l’interdiction de certaines informations par une autorité, souvent pour empêcher la critique."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : paragraphe argumentatif de 10 lignes : « La presse écrite est le reflet de la vie. »",
+      "Oral : quel doit être le combat de la presse écrite ? Enquête : presse écrite / presse orale."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Information et média – Texte 5 : Texte et photo",
+   "match": [
+    "Information et média – Texte 5 : Texte et photo"
+   ],
+   "pages": [
+    60,
+    61
+   ],
+   "objectives": [
+    "Comparer l’écriture photographique et l’écriture alphabétique.",
+    "Relever les avantages de la photo.",
+    "Repérer les idées essentielles et résumer un texte."
+   ],
+   "intro": "Une photo ou un long article : lequel vous touche le plus ? Pourquoi ?",
+   "summary": "Paul Almazy présente les avantages de la photo sur le texte : la rapidité et la facilité de lecture (prise de connaissance immédiate, comme les panneaux routiers) ; la densité sémantique (une petite photo contient beaucoup d’informations) ; la mémorisation (on se souvient mieux de ce qu’on a vu que de ce qu’on a lu) ; et surtout le pouvoir de sensibilisation, infiniment plus fort. Exemple : en France, un appel aux dons pour rendre les bâtiments publics accessibles aux handicapés reste sans succès, mais dès que le journal publie la photo d’un handicapé bloqué devant l’escalier de la mairie, les dons pleuvent.",
+   "points": [
+    "Avantage 1 : rapidité et facilité de lecture.",
+    "Avantage 2 : densité sémantique.",
+    "Avantage 3 : meilleure mémorisation.",
+    "Avantage essentiel : pouvoir de sensibilisation.",
+    "Exemple : la photo du handicapé déclenche les dons."
+   ],
+   "application": {
+    "q": "« On ouvre le portefeuille du lecteur » ?",
+    "a": "On pousse le lecteur à donner de l’argent."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 60,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.911
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "« On ouvre le portefeuille du lecteur » ?",
+       "On pousse le lecteur à donner de l’argent."
+      ],
+      [
+       "« Écriture photographique » / « photo bien rédigée » ?",
+       "Communiquer une information par l’image ; une photo bien composée qui transmet clairement son message."
+      ],
+      [
+       "À quoi servent les parenthèses ?",
+       "À ajouter des précisions ou des exemples (panneaux routiers, mémorisation)."
+      ],
+      [
+       "De quel média parle-t-on ?",
+       "De la presse (photojournalisme)."
+      ],
+      [
+       "3 avantages de la photo ?",
+       "Rapidité de lecture, densité sémantique, pouvoir de sensibilisation (et mémorisation)."
+      ],
+      [
+       "Pourquoi la photo est-elle plus facile à comprendre ?",
+       "Elle permet une prise de connaissance immédiate, sans lire tout un texte."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : repérer les idées essentielles puis résumer en 6 à 8 lignes.",
+      "Oral (discussion-débat) : « On se souvient généralement mieux et plus longtemps de ce qu’on a vu que de ce qu’on a lu. »"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Femmes et société – Texte 1 : Femmes au travail (J. Ki-Zerbo)",
+   "match": [
+    "Femmes et société – Texte 1 : Femmes au travail (J. Ki-Zerbo)"
+   ],
+   "pages": [
+    64,
+    66
+   ],
+   "objectives": [
+    "Relever la division du travail entre hommes et femmes en Afrique.",
+    "Expliquer des phrases du texte.",
+    "Discuter le rôle du travail dans l’émancipation de la femme."
+   ],
+   "intro": "Quelles tâches les femmes accomplissent-elles dans votre entourage ?",
+   "summary": "En Afrique, il existe un monde des femmes en marge de celui des hommes. La division du travail laisse aux hommes les tâches qui demandent audace et force (défrichement, chasse, grande pêche, construction) et aux femmes celles qui demandent de la patience (cueillette, cuisine, bois, poterie, petite pêche). Parfois la différence biologique ne joue pas : les femmes font des travaux agricoles au-dessus de leurs forces. Faute d’équipement, la préparation des repas (le tô : battre, vanner, piler, laver, sécher, moudre le mil) est un fardeau très lourd. Cependant la condition de la femme africaine n’est pas misérable : elle jouit d’une autonomie économique appréciable (petits champs, vente du fil, commerce), surtout chez les peuples côtiers, au point d’entretenir parfois son mari.",
+   "points": [
+    "Division du travail : force pour les hommes, patience pour les femmes.",
+    "Travaux pénibles et manque d’équipement.",
+    "Autonomie économique de la femme.",
+    "Le travail peut contribuer à l’émancipation."
+   ],
+   "application": {
+    "q": "Problème évoqué ?",
+    "a": "La place et le travail de la femme dans la société africaine traditionnelle."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 64,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 65,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.251
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Problème évoqué ?",
+       "La place et le travail de la femme dans la société africaine traditionnelle."
+      ],
+      [
+       "Tâches des femmes ?",
+       "Cueillette, préparation des aliments, ramassage du bois, récolte, cuisine, fabrication de l’huile, petite pêche, poterie."
+      ],
+      [
+       "« Parfois la différenciation biologique… ne semble pas jouer » ?",
+       "Parfois on ne tient pas compte de la différence de force physique : les femmes font des travaux trop durs pour elles."
+      ],
+      [
+       "Pourquoi la cuisine est-elle un fardeau ?",
+       "Par manque d’équipement : il faut battre, vanner, piler, laver, sécher et moudre le mil avant de cuire longtemps."
+      ],
+      [
+       "Comment le travail améliore-t-il sa condition ?",
+       "Elle a ses propres champs, vend son fil, fait du commerce et gagne de l’argent qui lui revient."
+      ],
+      [
+       "« La femme jouit d’une autonomie appréciable » ?",
+       "Sur le plan économique, elle est assez libre et indépendante."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Requérir",
+       "demander expressément"
+      ],
+      [
+       "Différenciation biologique",
+       "différence de constitution physique entre l’homme et la femme"
+      ],
+      [
+       "Travaux culinaires",
+       "préparation des repas"
+      ],
+      [
+       "Autonomie",
+       "liberté, indépendance"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte en 8 lignes environ.",
+      "Oral : débat : la femme mauritanienne joue-t-elle un rôle important dans le développement ? Enquête sur les activités économiques des femmes rurales."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Femmes et société – Texte 2 : Elle était jeune (Kidé Fatimata)",
+   "match": [
+    "Femmes et société – Texte 2 : Elle était jeune (Kidé Fatimata)"
+   ],
+   "pages": [
+    67,
+    68
+   ],
+   "objectives": [
+    "Identifier le problème social posé par une nouvelle.",
+    "Analyser les sentiments et les qualités du personnage.",
+    "Rédiger un paragraphe argumentatif."
+   ],
+   "intro": "Pourquoi certaines victimes se taisent-elles ?",
+   "summary": "Extrait de « Nouvelles mauritaniennes » : une jeune et belle Mauritanienne d’origine malienne, mariée par convenance, est battue par son mari pour un rien (chemise mal repassée, plat trop salé). Elle subit en silence, sans crier ni pleurer ; ses enfants qui ont voulu la défendre ont été frappés aussi ; elle a fait des dizaines de séjours à l’hôpital. Elle ne demande pas le divorce, par amour pour ses enfants et parce que sa famille voit le divorce d’un mauvais œil. Tout le monde sait mais feint l’ignorance.",
+   "points": [
+    "Problème : la violence conjugale.",
+    "Responsable : le mari ; complicité silencieuse de l’entourage.",
+    "Qualités : patience, courage, amour maternel.",
+    "Questions rhétoriques et répétitions (« Combien de fois… »)."
+   ],
+   "application": {
+    "q": "Problème posé ?",
+    "a": "La violence faite aux femmes (la femme battue par son mari)."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 67,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.781
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Problème posé ?",
+       "La violence faite aux femmes (la femme battue par son mari)."
+      ],
+      [
+       "Où et qui est responsable ?",
+       "En Mauritanie ; le mari violent, avec le silence de l’entourage."
+      ],
+      [
+       "Pourquoi ce titre ?",
+       "Il insiste sur la jeunesse et la beauté gâchées par la violence (le livre pose la question avec « Elle était belle », mais le titre du texte est « Elle était jeune »)."
+      ],
+      [
+       "Qualités de la femme ?",
+       "Patience, courage, résignation, amour pour ses enfants : elle reste pour eux."
+      ],
+      [
+       "La violence est-elle justifiée ?",
+       "Non : il la frappe « pour une chemise mal repassée, un plat un peu trop salé, un petit détail oublié »."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : paragraphe argumentatif (15 à 20 lignes) : « On ne doit pas infliger de mauvais traitements aux femmes. »",
+      "Oral : discussion « Les coups font moins mal que les mots » ; enquête sur les violences faites aux femmes en Mauritanie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Femmes et société – Texte 3 : Cruauté du mariage forcé",
+   "match": [
+    "Femmes et société – Texte 3 : Cruauté du mariage forcé"
+   ],
+   "pages": [
+    69,
+    70
+   ],
+   "objectives": [
+    "Relever les étapes d’un récit.",
+    "Justifier le titre d’un texte.",
+    "Argumenter dans un débat."
+   ],
+   "intro": "Une fille doit-elle choisir elle-même son mari ?",
+   "summary": "Zara, jeune fille fine et belle, est conduite chez son mari dont on ne lui a pas dit le nom ; les accompagnatrices lui conseillent soumission et docilité. Une vieille femme lui apprend que son mari est un marabout vieux et laid, qui a deux femmes et douze enfants. Zara refuse (« Je préfère me jeter dans un puits »), s’enfuit en brousse ; retrouvée, elle est battue par son père en colère, tandis que sa mère, résignée, se retire en pleurant. La coépouse de sa mère la soigne ; le quatrième jour, on la reconduit chez son mari.",
+   "points": [
+    "Personnage principal : Zara.",
+    "Plan : le cortège ; la révélation ; la fuite ; la punition ; le retour forcé.",
+    "Titre : la cruauté du mariage imposé sans consentement.",
+    "Sentiments : tristesse, révolte, résignation."
+   ],
+   "application": {
+    "q": "Personnage principal ? Que lui arrive-t-il ?",
+    "a": "Zara, mariée de force à un vieux marabout qu’elle n’a pas choisi."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 69,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 70,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.205
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Personnage principal ? Que lui arrive-t-il ?",
+       "Zara, mariée de force à un vieux marabout qu’elle n’a pas choisi."
+      ],
+      [
+       "Que fait-elle ?",
+       "Elle pleure, refuse, s’enfuit en brousse."
+      ],
+      [
+       "Justifiez le titre.",
+       "Zara est mariée sans son consentement, battue par son père et reconduite de force : c’est cruel."
+      ],
+      [
+       "Que ressentez-vous ?",
+       "Réponse personnelle (pitié, indignation…)."
+      ],
+      [
+       "Plan ?",
+       "1) Le cortège ; 2) la révélation du mari ; 3) la fuite et la punition ; 4) le retour chez le mari."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : vous avez été témoin d’un mariage forcé : racontez votre réaction (15 à 20 lignes).",
+      "Oral (débat) : « L’essentiel pour une fille, c’est de se marier avec quelqu’un qui peut subvenir à ses besoins… » — « Ah non ! Je ne suis pas d’accord… »"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Femmes et société – Texte 4 : Blanchissement de la peau",
+   "match": [
+    "Femmes et société – Texte 4 : Blanchissement de la peau"
+   ],
+   "pages": [
+    71,
+    72
+   ],
+   "objectives": [
+    "Repérer un début de texte en forme de conte.",
+    "Relever les causes et les dangers d’un phénomène.",
+    "Rédiger un texte pour convaincre."
+   ],
+   "intro": "Pourquoi certaines personnes veulent-elles changer la couleur de leur peau ?",
+   "summary": "En Inde, le marché des produits blanchissants croît très vite : la publicité répète que pour être beau et riche il faut être blanc (ex. : la jeune fille au chômage qui trouve emploi et fierté de son père grâce à une crème). Explications : culturellement, une peau blanche est jugée plus belle ; les dominateurs de l’Inde (Aryens, colons britanniques) étaient blancs, donc la pâleur est associée au pouvoir et au statut social, jusque sur les sites matrimoniaux. La moitié des soins pour la peau sont blanchissants ; les hommes représentent 35 % du marché. Mais ces produits sont dangereux : vendus comme cosmétiques pour éviter le contrôle des médicaments, ils réduisent la mélanine, qui protège des rayons UV responsables du cancer de la peau, et leurs ingrédients ne sont pas indiqués.",
+   "points": [
+    "Début en forme de conte (« Il était une fois ») : la publicité.",
+    "Causes : culture, histoire, statut social, publicité.",
+    "Responsables : publicité et marques de cosmétiques.",
+    "Danger : moins de mélanine → risque de cancer de la peau."
+   ],
+   "application": {
+    "q": "Où se passe le phénomène ?",
+    "a": "En Inde."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 71,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 72,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.344
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Où se passe le phénomène ?",
+       "En Inde."
+      ],
+      [
+       "Début du texte ?",
+       "Il fait penser à un conte (« Il était une fois… ») : c’est une publicité présentée comme un conte de fée moderne, pour accrocher le lecteur."
+      ],
+      [
+       "Titres des paragraphes ?",
+       "Ex. : 1) un conte publicitaire ; 2) la blancheur, critère de beauté ; 3) une raison historique et sociale ; 4) un marché en croissance ; 5) des produits dangereux."
+      ],
+      [
+       "Pourquoi se blanchit-on la peau ?",
+       "Pour être jugé beau, riche, avoir un emploi, un meilleur statut et plus de valeur sur le « marché du mariage »."
+      ],
+      [
+       "Responsable ?",
+       "La publicité (matraquage médiatique) et les marques de cosmétiques."
+      ],
+      [
+       "Est-ce dangereux ?",
+       "Oui : les crèmes réduisent la mélanine qui protège contre les UV, responsables du cancer de la peau."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : convaincre des femmes mauritaniennes d’abandonner cette pratique (15 à 20 lignes).",
+      "Oral : faut-il transformer son aspect physique pour être beau ou belle ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Femmes et société – Texte 5 : Femmes créatrices de richesses et d’emplois en Mauritanie",
+   "match": [
+    "Femmes et société – Texte 5 : Femmes créatrices de richesses et d’emplois en Mauritanie"
+   ],
+   "pages": [
+    73,
+    74
+   ],
+   "objectives": [
+    "Relever les caractéristiques et les secteurs d’activité de la femme mauritanienne.",
+    "Mesurer l’impact de son activité.",
+    "Donner son avis sur le travail des femmes."
+   ],
+   "intro": "Qui tient les boutiques des marchés de votre ville ?",
+   "summary": "Attachée à sa culture islamique et à la melahfa, la Mauritanienne reste ouverte, libre d’initiative et entreprenante : la société lui laisse une grande liberté économique. Le commerce est son secteur préféré : certains secteurs sont dominés par les femmes (bijouterie, vêtements et voiles, parfumerie) et d’autres presque à 100 % (cultures maraîchères, cuir, laine). Elles détiennent 23,3 % du commerce général, tiennent la moitié des boutiques des grands marchés et ont construit le « marché des femmes » (Marché Chinguetti) ; elles voyagent jusqu’à Dubaï et en Asie. En milieu rural, leurs coopératives (maraîchage, artisanat, pharmacies rurales) jouent un rôle crucial dans la réduction de la pauvreté.",
+   "points": [
+    "Caractéristiques : attachée à la tradition, ouverte, entreprenante.",
+    "Secteur principal : le commerce.",
+    "Chiffres : 23,3 % du commerce, la moitié des boutiques.",
+    "Milieu rural : coopératives contre la pauvreté."
+   ],
+   "application": {
+    "q": "Caractéristiques ?",
+    "a": "Attachée à sa culture islamique et à la melahfa, mais ouverte d’esprit, libre d’initiative et entreprenante."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 73,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 74,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.321
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Caractéristiques ?",
+       "Attachée à sa culture islamique et à la melahfa, mais ouverte d’esprit, libre d’initiative et entreprenante."
+      ],
+      [
+       "Secteur ?",
+       "Surtout le commerce (et l’artisanat, le maraîchage)."
+      ],
+      [
+       "Impact positif ? Domaines ?",
+       "Oui : revenus des ménages, emplois créés, réduction de la pauvreté dans les villages."
+      ],
+      [
+       "Conclusion ?",
+       "Les femmes mauritaniennes sont de véritables actrices du développement économique et social."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : la femme doit-elle travailler ou rester aux bons soins de son mari ? (15 à 20 lignes)",
+      "Oral : la femme mauritanienne a-t-elle évolué sur le plan économique et social ? Exemples."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sport et culture – Texte 1 : Portrait d’une star de football (Maradona)",
+   "match": [
+    "Sport et culture – Texte 1 : Portrait d’une star de football (Maradona)"
+   ],
+   "pages": [
+    77,
+    79
+   ],
+   "objectives": [
+    "Relever les étapes d’une biographie.",
+    "Faire le portrait physique et moral d’un sportif.",
+    "Débattre du départ des joueurs africains vers l’Europe."
+   ],
+   "intro": "Quel est votre joueur préféré ? Pourquoi ?",
+   "summary": "Diego Maradona, né le 30 octobre 1960 à Lanús (Argentine), dans une famille modeste, joue dans les rues de son bidonville. À 10 ans, il est remarqué par un recruteur d’Argentinos Juniors et intègre l’équipe junior des Cebollitas ; ses jongleries attirent public et médias ; à 12 ans il déclare rêver de gagner la Coupe du monde avec l’Argentine. Professionnel à presque 16 ans (115 buts en 166 matchs), il passe à Boca Juniors (1981) puis au FC Barcelone (1982). En 1986, capitaine, il mène l’Argentine au titre : contre l’Angleterre, il marque de la main (« la Main de Dieu », une tricherie) puis l’un des plus beaux buts de l’histoire ; en finale, il offre le but de la victoire (3-2). Il meurt le 25 novembre 2020.",
+   "points": [
+    "Biographie chronologique : enfance, débuts, transferts, Coupe du monde 1986.",
+    "Rêve d’enfant réalisé en 1986.",
+    "Valeur : buts, transferts, but légendaire.",
+    "La « Main de Dieu » : une tricherie."
+   ],
+   "application": {
+    "q": "Quel footballeur ?",
+    "a": "Diego Maradona, footballeur argentin."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 77,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 78,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.482
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Quel footballeur ?",
+       "Diego Maradona, footballeur argentin."
+      ],
+      [
+       "Où a-t-il commencé ?",
+       "Dans les rues et sur une esplanade de son bidonville."
+      ],
+      [
+       "Comment intègre-t-il les Cebollitas ?",
+       "À 10 ans, il est repéré par le recruteur Francis Cornejo lors des journées de détection d’Argentinos Juniors."
+      ],
+      [
+       "Ce qui attire public et médias ?",
+       "Son talent et ses jongleries avec le ballon à la mi-temps des matchs."
+      ],
+      [
+       "Son rêve ?",
+       "Disputer et gagner la Coupe du monde avec l’Argentine ; réalisé en 1986 (finale gagnée 3-2 contre la RFA)."
+      ],
+      [
+       "Preuves de sa valeur ?",
+       "115 buts en 166 matchs ; transfert à Barcelone pour 7,3 millions de dollars ; but légendaire contre l’Angleterre."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : portrait physique et moral de votre joueur préféré (15 à 20 lignes) ou résumé du texte en 8 lignes.",
+      "Oral (débats) : les clubs européens qui paient cher les joueurs africains ; l’exil des footballeurs africains en Europe."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sport et culture – Texte 2 : La violence dans le football",
+   "match": [
+    "Sport et culture – Texte 2 : La violence dans le football"
+   ],
+   "pages": [
+    80,
+    81
+   ],
+   "objectives": [
+    "Relever exemples et causes de la violence dans le sport.",
+    "Distinguer répression et prévention.",
+    "Construire un paragraphe argumentatif."
+   ],
+   "intro": "Avez-vous déjà vu un match se terminer par une bagarre ?",
+   "summary": "La violence envahit les stades, et le football, très populaire, est le plus exposé. Exemples : en 1982, à Séville, la France a frémi en voyant Patrick Battiston (« Batiston » dans le livre) évacué dans le coma après l’agression du gardien allemand ; Maradona a failli voir sa carrière brisée par une fracture. Mais la violence touche surtout les divisions inférieures : manque de qualités physiques et techniques, entraînement insuffisant, absence de tactique font dégénérer l’engagement en violence. Répression : la commission de la Fédération sanctionne clubs et joueurs. Solution proposée : la prévention, l’éducation par les éducateurs et les clubs, et ne pas sacraliser la victoire. « L’important, c’est de participer. »",
+   "points": [
+    "Exemples : Battiston (1982), Maradona.",
+    "Causes : manque de technique, d’entraînement, de tactique.",
+    "Répression : sanctions (matchs de suspension).",
+    "Prévention : éducation, formation ; « le sport est un jeu et non une forme de guerre »."
+   ],
+   "application": {
+    "q": "Événement qui a fait frémir la France ?",
+    "a": "La demi-finale de la Coupe du monde 1982 à Séville : Patrick Battiston évacué dans le coma après l’agression du gardien allemand."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 80,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.834
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Événement qui a fait frémir la France ?",
+       "La demi-finale de la Coupe du monde 1982 à Séville : Patrick Battiston évacué dans le coma après l’agression du gardien allemand."
+      ],
+      [
+       "Deux exemples ?",
+       "Battiston dans le coma ; Maradona et sa fracture de la jambe."
+      ],
+      [
+       "Ce qui fait dégénérer l’engagement ?",
+       "Le manque de qualités physiques ou techniques, l’entraînement insuffisant, l’absence de tactique."
+      ],
+      [
+       "Moyen de lutte ? Efficace ?",
+       "La répression (sanctions de la commission) ; elle ne suffit pas, puisque des dossiers arrivent chaque semaine."
+      ],
+      [
+       "Proposition de l’auteur ?",
+       "La prévention : éduquer et former, désacraliser la victoire."
+      ],
+      [
+       "Autre titre ?",
+       "Ex. : « Le sport, un jeu et non une guerre »."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : paragraphe (15 lignes) : « Le sport est un jeu et non une forme de guerre » ; ou causes et remèdes de l’insécurité dans les stades (deux paragraphes).",
+      "Oral : pour ou contre les manifestations sportives."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sport et culture – Texte 3 : Décoration des mains au henné",
+   "match": [
+    "Sport et culture – Texte 3 : Décoration des mains au henné"
+   ],
+   "pages": [
+    82,
+    83
+   ],
+   "objectives": [
+    "Relever les étapes d’un procédé (texte explicatif).",
+    "Utiliser le lexique pour comprendre un texte.",
+    "Rédiger une recette en respectant l’ordre chronologique."
+   ],
+   "intro": "Comment se prépare le henné dans votre famille ?",
+   "summary": "À Kiffa, en 1949, l’auteur remarque que des femmes maures décorent l’intérieur de leurs mains au henné non par simple application, mais par des dessins géométriques. Une femme explique le procédé : on dessine avec un bâton, à l’aide d’un mélange de cendre mouillée et de gomme ou de lait d’euphorbe, les endroits qui doivent rester blancs ; on applique le henné sur toute la main, qu’on enveloppe de larges feuilles de tourja (calotropis procera) ; en dégageant la main, les dessins ressortent en rouge sur fond blanc. Le henné est local ; un henné particulier vient des cultures irriguées dans le lit des oueds entre Kiffa et Néma.",
+   "points": [
+    "Source : R. Mauny, Revue de l’IFAN (Dakar).",
+    "Étapes : dessiner (cendre + gomme/euphorbe) → appliquer le henné → envelopper (tourja) → dégager.",
+    "Résultat : dessins rouges sur fond blanc.",
+    "Henné cultivé entre Kiffa et Néma."
+   ],
+   "application": {
+    "q": "Où cultive-t-on le henné ?",
+    "a": "Dans le lit des oueds, en cultures irriguées, entre Kiffa et Néma."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 82,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.576
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Où cultive-t-on le henné ?",
+       "Dans le lit des oueds, en cultures irriguées, entre Kiffa et Néma."
+      ],
+      [
+       "D’où est tiré le texte ?",
+       "De la Revue de l’IFAN (Dakar), d’après Raymond Mauny."
+      ],
+      [
+       "Comment décorent-elles leurs mains ?",
+       "Par des dessins géométriques, et non par une simple application."
+      ],
+      [
+       "Le procédé ?",
+       "Dessiner les parties à garder blanches avec cendre mouillée et gomme ou lait d’euphorbe, appliquer le henné, envelopper la main de feuilles de tourja, puis dégager."
+      ],
+      [
+       "Ingrédients ?",
+       "Cendre mouillée, gomme ou lait d’euphorbe, henné, feuilles de tourja."
+      ],
+      [
+       "Étapes de la préparation ?",
+       "1) dessiner ; 2) appliquer le henné ; 3) envelopper ; 4) dégager la main."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Décorer",
+       "embellir, orner"
+      ],
+      [
+       "Coutume",
+       "tradition, usage commun à un groupe"
+      ],
+      [
+       "Du plus bel effet",
+       "très joli"
+      ],
+      [
+       "Euphorbe",
+       "plante à liquide laiteux"
+      ],
+      [
+       "Calotropis procera",
+       "nom scientifique de la tourja"
+      ],
+      [
+       "Ressortir",
+       "paraître nettement par contraste"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : rédiger une recette de henné de votre localité (15 à 20 lignes) en respectant l’ordre chronologique.",
+      "Oral : enquête puis exposé en classe."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sport et culture – Texte 4 : La revendication du loisir (G. Hourdin)",
+   "match": [
+    "Sport et culture – Texte 4 : La revendication du loisir (G. Hourdin)"
+   ],
+   "pages": [
+    84,
+    86
+   ],
+   "objectives": [
+    "Définir la notion de loisir.",
+    "Expliquer des expressions du texte.",
+    "Préparer et réaliser une enquête-interview."
+   ],
+   "intro": "Que faites-vous de votre temps libre ?",
+   "summary": "La montre individuelle n’apparaît qu’au XVIe siècle ; avec la bourgeoisie et l’industrialisation, l’emploi des journées est compté très étroitement. Contre ce travail rationalisé et monotone naît la revendication du loisir : un temps libre, « non socialement découpé », un temps à soi dont on ne rend compte à personne. Le salarié qui sort de son travail le vendredi soir ressent une « espèce d’ivresse » : il lève la tête, sourit aux passants, respire à pleins poumons, il est libre. Les loisirs sont le temps dont on dispose librement une fois accomplies les tâches professionnelles obligatoires.",
+   "points": [
+    "Loisir : temps libre, à soi, après le travail obligatoire.",
+    "Né de l’industrialisation et du temps compté.",
+    "Transformation du travailleur : physique et psychologique.",
+    "Dans une société industrialisée, le loisir est une nécessité."
+   ],
+   "application": {
+    "q": "Qu’appelle-t-on loisir ?",
+    "a": "Le temps dont on dispose librement, légitimement, après avoir accompli ses tâches professionnelles."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 84,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.789
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Qu’appelle-t-on loisir ?",
+       "Le temps dont on dispose librement, légitimement, après avoir accompli ses tâches professionnelles."
+      ],
+      [
+       "Intérêt de la précision sur la montre ?",
+       "Son apparition tardive (XVIe siècle) montre que le temps n’a été compté strictement que récemment."
+      ],
+      [
+       "« Du temps non socialement découpé » / « cette espèce d’ivresse » ?",
+       "Un temps qui n’est pas organisé par la société ou le travail / une joie très forte, presque enivrante."
+      ],
+      [
+       "Transformation du travailleur ?",
+       "« Il lève la tête vers le ciel », « regarde les passants avec une soudaine sympathie », « respire à pleins poumons »."
+      ],
+      [
+       "Luxe ou nécessité ?",
+       "Une nécessité : il faut se reposer d’un travail monotone et rationalisé."
+      ]
+     ]
+    },
+    {
+     "h": "Méthode : préparer et réaliser une enquête-interview",
+     "lines": [
+      "Préparation : objectifs, terrain, personnes interrogées, questionnaire, partage des rôles.",
+      "Réalisation : se présenter, expliquer le but, écouter et enregistrer (avec accord) sans interrompre.",
+      "Exploitation : regrouper, trier, classer, organiser et interpréter les informations, puis réaliser un document."
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : votre opinion sur les loisirs en Mauritanie (15 à 20 lignes).",
+      "Oral (débat) : « Je n’ai pas le temps de m’amuser, il me faut le bac » / « Tu risques de te surmener » ; enquête sur les loisirs des habitants."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tradition et modernité – Texte 1 : La Guetna",
+   "match": [
+    "Tradition et modernité – Texte 1 : La Guetna"
+   ],
+   "pages": [
+    89,
+    90
+   ],
+   "objectives": [
+    "Relever les aspects sociaux, sanitaires et festifs d’une tradition.",
+    "Expliquer des expressions du texte.",
+    "Présenter une tradition mauritanienne."
+   ],
+   "intro": "Avez-vous déjà passé la Guetna dans l’Adrar ?",
+   "summary": "La Guetna (saison des dattes dans l’Adrar) efface les préjugés de classe : un seul habit (boubou de chega, voile teint de nila), un seul repas (riz à la viande sans assaisonnement, précédé de dattes fraîches), un seul luxe (l’ombre des palmiers et la musique de l’eau). C’est aussi une cure : on mange naturel et léger, et la chaleur sèche fortifie l’organisme. C’est une saison de fêtes : grands mariages, réunions tribales, championnats de tir. La Guetna 2006 a été bonne (récolte abondante, datte à 200 ouguiya le kg à Atar), malgré la baisse à Teyarett. Les « gueytanas » boudent hôtels et auberges : la Guetna, c’est la tradition, un retour sur soi.",
+   "points": [
+    "Égalité : même habit, même repas, même luxe.",
+    "Cure de santé : alimentation naturelle, chaleur sèche.",
+    "Fête : mariages, réunions, tir.",
+    "Tradition contre modernité (hôtels)."
+   ],
+   "application": {
+    "q": "Comment efface-t-elle la différence riches/pauvres ?",
+    "a": "Tous portent le même habit modeste, mangent le même repas et partagent le même luxe : l’ombre des palmiers."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 89,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 90,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.282
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Comment efface-t-elle la différence riches/pauvres ?",
+       "Tous portent le même habit modeste, mangent le même repas et partagent le même luxe : l’ombre des palmiers."
+      ],
+      [
+       "Différences factices ?",
+       "Ex. : maisons climatisées, vêtements de luxe, voitures, repas raffinés…"
+      ],
+      [
+       "Aliments ?",
+       "Dattes, riz à la viande sans assaisonnement, repas chauds : naturels, légers, qui adoucissent l’estomac."
+      ],
+      [
+       "La chaleur est-elle négative ?",
+       "Non : la forte chaleur sèche fortifie l’organisme et fait perdre les kilos superflus."
+      ],
+      [
+       "Manifestations ?",
+       "Grands mariages, réunions tribales, rencontres, championnats de tir."
+      ],
+      [
+       "Modernité boudée ?",
+       "Les maisons climatisées, les hôtels et auberges, les aliments trop gras des citadins."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : présenter une tradition qui persiste en Mauritanie (15 à 20 lignes).",
+      "Oral (débat) : nos traditions sont-elles désuètes ou méritent-elles d’être conservées ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tradition et modernité – Texte 2 : L’obésité",
+   "match": [
+    "Tradition et modernité – Texte 2 : L’obésité"
+   ],
+   "pages": [
+    91,
+    93
+   ],
+   "objectives": [
+    "Relever l’évolution de la perception d’une pratique.",
+    "Résumer un texte au quart.",
+    "Connaître la méthode du résumé et de la discussion."
+   ],
+   "intro": "Les critères de beauté changent-ils avec le temps ?",
+   "summary": "Autrefois signe de beauté, de bonne santé et de rang social, l’obésité est devenue aujourd’hui une tare en Mauritanie, accusée d’être « un frein au développement » ; les autorités lui ont déclaré la guerre par une campagne nationale. Les femmes ont investi des métiers réservés aux hommes (aviation, corps paramilitaires, barreau, enseignement supérieur) ; la scolarisation des filles et le travail des femmes leur imposent de garder la ligne, et devenues mères elles ne pratiqueront peut-être plus le gavage. Mais les femmes demandent que les hommes changent aussi leurs canons de beauté, car beaucoup restent attachés à la tradition.",
+   "points": [
+    "Hier : critère de beauté et de rang social.",
+    "Aujourd’hui : obstacle au développement.",
+    "Lutte : autorités, école, travail des femmes.",
+    "Les hommes restent du côté de la tradition."
+   ],
+   "application": {
+    "q": "Perception passée ?",
+    "a": "Un signe extérieur de beauté et de bonne santé, qui préparait la fille au mariage."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 91,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.762
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Perception passée ?",
+       "Un signe extérieur de beauté et de bonne santé, qui préparait la fille au mariage."
+      ],
+      [
+       "Reproche actuel ?",
+       "C’est « un frein au développement »."
+      ],
+      [
+       "Position des autorités ?",
+       "Elles lui ont déclaré la guerre par une campagne nationale."
+      ],
+      [
+       "Métiers autrefois réservés aux hommes ?",
+       "Aviation, corps paramilitaires, barreau, enseignement supérieur."
+      ],
+      [
+       "Rôle de l’école et du travail ?",
+       "Ils imposent aux femmes de garder la ligne ; devenues mères, elles abandonneront peut-être le gavage."
+      ],
+      [
+       "Les hommes ?",
+       "Du côté de la tradition : ils préfèrent toujours les femmes d’un certain embonpoint."
+      ]
+     ]
+    },
+    {
+     "h": "Méthode du résumé",
+     "lines": [
+      "Réduire au quart (sauf consigne précise), dans ses propres mots.",
+      "Rester fidèle : idées principales, sans idées secondaires.",
+      "Respecter l’enchaînement des idées et les articulations.",
+      "Rester neutre : ni introduction, ni commentaire."
+     ]
+    },
+    {
+     "h": "La discussion",
+     "lines": [
+      "Introduction ; 1re partie qui explique le problème posé ; 2e partie : réflexions personnelles avec exemples précis ; conclusion-synthèse.",
+      "Séparer les parties par une ligne blanche."
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte au 1/4 ; expliquer et discuter : « L’obésité constitue un obstacle au développement. »",
+      "Oral (débat) : pour ou contre le gavage."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tradition et modernité – Texte 3 : La parole du griot (D. T. Niane, Soundjata)",
+   "match": [
+    "Tradition et modernité – Texte 3 : La parole du griot (D. T. Niane, Soundjata)"
+   ],
+   "pages": [
+    94,
+    96
+   ],
+   "objectives": [
+    "Identifier le narrateur et le type de portrait (autoportrait).",
+    "Relever le rôle social du griot.",
+    "Associer idées et exemples."
+   ],
+   "intro": "Quel est le rôle du griot dans notre société ?",
+   "summary": "Ce texte ouvre « Soundjata ou l’épopée mandingue », adaptation écrite par Djibril Tamsir Niane d’une épopée orale recueillie auprès d’un griot malinké. Le griot Djeli Mamadou Kouyaté se présente : maître dans l’art de parler, sa famille sert depuis toujours les princes Keita du Manding. Les griots sont « les sacs à paroles », « la mémoire des hommes » : sans eux les noms des rois tomberaient dans l’oubli. Il tient sa science de son père ; il connaît la liste des souverains, l’origine des tribus et le sens des noms ; il enseigne aux rois l’histoire de leurs ancêtres, car « l’avenir sort du passé » ; il tranche les querelles entre tribus. Il annonce l’histoire de Soundjata.",
+   "points": [
+    "Narrateur : le griot lui-même (autoportrait).",
+    "Origine : le Manding (Mali) ; il sert les Keita.",
+    "Art : la parole ; rôle : mémoire du peuple.",
+    "Rôle social : trancher les querelles entre tribus."
+   ],
+   "application": {
+    "q": "Narrateur ? Portrait de qui ?",
+    "a": "Le griot Djeli Mamadou Kouyaté ; il fait son propre portrait."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 94,
+      "rect": [
+       0.07,
+       0.24,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 95,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.233
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Narrateur ? Portrait de qui ?",
+       "Le griot Djeli Mamadou Kouyaté ; il fait son propre portrait."
+      ],
+      [
+       "Type de portrait ?",
+       "Un autoportrait."
+      ],
+      [
+       "Pays ? Familles servies ?",
+       "Le Manding (Mali) ; les princes Keita."
+      ],
+      [
+       "Art revendiqué ? Utilité ?",
+       "L’art de parler ; conserver la mémoire des rois et la transmettre aux jeunes générations."
+      ],
+      [
+       "De qui tient-il son art ?",
+       "De son père, Djeli Kedian, qui le tenait de son père."
+      ],
+      [
+       "Rôle social de l’avant-dernier paragraphe ?",
+       "Trancher les différends entre tribus, car les griots gardent les serments des Ancêtres."
+      ],
+      [
+       "Roman ?",
+       "« Soundjata ou l’épopée mandingue » de D. T. Niane (indication en bas du texte)."
+      ]
+     ]
+    },
+    {
+     "h": "Méthode : associer idées et exemples",
+     "lines": [
+      "L’exemple illustre et rend concrète l’idée ; il sert de preuve.",
+      "Sources : souvenirs, expérience, lectures, histoire, actualité.",
+      "Connecteurs : c’est ainsi que, par exemple, à titre d’exemple, c’est notamment le cas de…"
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : à la manière du griot, rédiger votre autoportrait lié à un métier ou une activité (15 à 20 lignes).",
+      "Oral : interview d’un griot ; débat sur les castes aujourd’hui."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tradition et modernité – Texte 4 : Le fou et le baigneur (conte)",
+   "match": [
+    "Tradition et modernité – Texte 4 : Le fou et le baigneur (conte)"
+   ],
+   "pages": [
+    97,
+    98
+   ],
+   "objectives": [
+    "Relever les éléments du schéma narratif d’un conte.",
+    "Distinguer le récit et la morale.",
+    "Illustrer un proverbe par un conte."
+   ],
+   "intro": "Connaissez-vous un conte qui se termine par une leçon ?",
+   "summary": "Un villageois se baigne dans la rivière et laisse ses habits sur la berge. Le fou du village, qui d’ordinaire va nu, les prend, s’en habille et va au village. Le baigneur, nu, le poursuit en criant « Arrêtez le voleur ! ». Les villageois, qui ont toujours vu le fou nu, croient que l’homme habillé est un voisin normal : ils le protègent et ligotent le baigneur sans le laisser s’expliquer. Morale : « il ne faut jamais s’emballer dans une affaire, mais agir toujours avec calme, sans quoi on risque d’avoir tort même lorsqu’on a raison ».",
+   "points": [
+    "Personnages : le fou, le baigneur, les villageois.",
+    "Situation initiale : un fou vit parmi des gens sensés.",
+    "Situation finale : le baigneur est pris pour le fou.",
+    "Le dernier paragraphe = la morale (hors récit)."
+   ],
+   "application": {
+    "q": "Personnages ?",
+    "a": "Le fou, le baigneur et les gens du village."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 97,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.822
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Personnages ?",
+       "Le fou, le baigneur et les gens du village."
+      ],
+      [
+       "Temps dominant ?",
+       "Le passé simple (avec l’imparfait) au début, puis le présent de narration pour rendre la poursuite plus vivante."
+      ],
+      [
+       "Situation initiale ?",
+       "Un fou vivait au milieu des gens sensés ; un villageois va se baigner."
+      ],
+      [
+       "Situation finale ?",
+       "Le baigneur est ligoté comme un fou, et le fou est protégé."
+      ],
+      [
+       "Signes de la folie ?",
+       "Être nu, courir hors de soi en criant."
+      ],
+      [
+       "Le dernier paragraphe ? La morale ?",
+       "Il ne fait pas partie du récit : c’est la conclusion du conteur ; agir avec calme, ne jamais s’emballer."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : expliquer la sagesse « Il ne faut jamais s’emballer… » et l’illustrer par une histoire (15 à 20 lignes) ; illustrer un proverbe par un conte (situation initiale, péripéties, situation finale).",
+      "Oral : enquête pour recueillir des proverbes de chez nous et constituer un recueil."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Maladies infectieuses – Texte 1 : La diarrhée infantile",
+   "match": [
+    "Maladies infectieuses – Texte 1 : La diarrhée infantile"
+   ],
+   "pages": [
+    101,
+    103
+   ],
+   "objectives": [
+    "Comprendre un texte informatif sur une maladie infantile.",
+    "Relever signes, causes, dangers et traitement.",
+    "Résumer un texte au tiers de sa longueur."
+   ],
+   "intro": "Quels conseils donne-t-on chez vous à une maman dont l’enfant a la diarrhée ?",
+   "summary": "La diarrhée est très fréquente chez les nourrissons et les enfants : selles plus fréquentes, moins formées et plus liquides, parfois avec fièvre, perte d’appétit, nausées, vomissements, maux de ventre. Elle est dangereuse car elle draine l’eau et les sels minéraux du corps : sans remplacement rapide, l’enfant se déshydrate. La diarrhée aiguë est brutale et de courte durée, la chronique dure des semaines voire des mois ; la diarrhée aiguë est une des causes majeures de mortalité infantile, surtout là où l’hygiène est mauvaise. Causes : virus (rotavirus), bactéries (intoxication alimentaire), parasites, champignons, transmis par les selles, la salive, les mains, les aliments contaminés. Traitement : la réhydratation par les solutions de réhydratation orale (SRO) et des liquides (eau sucrée et salée, eau de riz, bouillon…), en évitant lait et jus purs ; si elle persiste, médicaments ou hospitalisation.",
+   "points": [
+    "Signes : selles fréquentes et liquides, fièvre, vomissements…",
+    "Danger : la déshydratation.",
+    "Aiguë (courte) ≠ chronique (semaines, mois).",
+    "Causes : virus, bactéries, parasites, champignons.",
+    "Traitement essentiel : réhydratation (SRO)."
+   ],
+   "application": {
+    "q": "Comment se manifeste la diarrhée ?",
+    "a": "Selles plus fréquentes, moins formées et plus liquides ; fièvre, perte d’appétit, nausées, vomissements, maux de ventre, crampes."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 101,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 102,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.454
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Comment se manifeste la diarrhée ?",
+       "Selles plus fréquentes, moins formées et plus liquides ; fièvre, perte d’appétit, nausées, vomissements, maux de ventre, crampes."
+      ],
+      [
+       "Pourquoi est-elle dangereuse ?",
+       "Elle draine l’eau et les sels minéraux du corps : l’enfant peut se déshydrater."
+      ],
+      [
+       "Diarrhée aiguë / chronique ?",
+       "L’aiguë est brutale et de courte durée ; la chronique dure des semaines, voire des mois."
+      ],
+      [
+       "Deux causes ?",
+       "Les virus (rotavirus) et les bactéries (intoxication alimentaire) ; aussi parasites et champignons."
+      ],
+      [
+       "Solution essentielle ? Suffit-elle toujours ?",
+       "La réhydratation par les SRO ; non : « si la maladie est persistante, la prise de médicaments ou l’hospitalisation sont parfois nécessaires »."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Symptômes",
+       "signes par lesquels se manifeste une maladie"
+      ],
+      [
+       "Prise en charge",
+       "soignée"
+      ],
+      [
+       "Se déshydrater",
+       "perdre les liquides contenus dans le corps"
+      ],
+      [
+       "Administrer",
+       "donner"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte au 1/3 de sa longueur.",
+      "Oral (enquête-interview) : interroger des agents de santé sur les maladies infantiles en Mauritanie (nombre de cas, prise en charge, traitements, moyens)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Maladies infectieuses – Texte 2 : Le coronavirus (Covid-19)",
+   "match": [
+    "Maladies infectieuses – Texte 2 : Le coronavirus (Covid-19)"
+   ],
+   "pages": [
+    104,
+    106
+   ],
+   "objectives": [
+    "Relever les causes, la transmission, les symptômes et la prévention de la Covid-19.",
+    "Résumer un texte informatif.",
+    "Organiser une campagne de sensibilisation."
+   ],
+   "intro": "Vous souvenez-vous de la période du confinement ? Qu’avez-vous appris sur la protection contre les maladies ?",
+   "summary": "La Covid-19 est une pneumonie causée par un virus de la famille des coronavirus, le SARS-CoV-2. Le réservoir est probablement animal : il est très proche d’un virus de chauve-souris, et le pangolin pourrait être un hôte intermédiaire, mais l’animal n’a pas été identifié avec certitude. Le virus se transmet par les gouttelettes respiratoires (toux, éternuement) et les surfaces contaminées. Symptômes fréquents : fièvre, toux sèche, fatigue ; d’autres moins courants. Environ 80 % des patients guérissent sans hospitalisation ; une personne sur cinq présente des symptômes graves, surtout les personnes âgées et malades. Protection : ne pas se toucher les yeux, le nez, la bouche avec des mains sales ; mesures « barrières » : lavage des mains, tousser dans son coude, mouchoirs à usage unique, ne pas se serrer la main ; désinfecter les surfaces.",
+   "points": [
+    "Virus : SARS-CoV-2.",
+    "Origine animale probable (chauve-souris, pangolin), non certaine.",
+    "Transmission : gouttelettes et surfaces.",
+    "Symptômes : fièvre, toux sèche, fatigue.",
+    "Prévention : gestes barrières et désinfection."
+   ],
+   "application": {
+    "q": "Nom du virus ?",
+    "a": "Le SARS-CoV-2."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 104,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 105,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.38
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Nom du virus ?",
+       "Le SARS-CoV-2."
+      ],
+      [
+       "Animaux soupçonnés ?",
+       "La chauve-souris et le pangolin (hôte intermédiaire)."
+      ],
+      [
+       "Est-ce établi avec certitude ?",
+       "Non : « l’animal à l’origine de la transmission à l’homme n’a pas encore été identifié avec certitude »."
+      ],
+      [
+       "Manifestation et transmission ?",
+       "Fièvre, toux sèche, fatigue… ; transmission par les gouttelettes respiratoires et les surfaces contaminées."
+      ],
+      [
+       "Comment se protéger ?",
+       "Mains propres, mesures barrières (laver les mains, tousser dans le coude, mouchoirs jetables, pas de poignée de main), désinfection des surfaces."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte au 1/4 de sa longueur.",
+      "Oral : interview d’un spécialiste de la santé sur la Covid-19 en Mauritanie ; débat sur le confinement."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Maladies infectieuses – Texte 3 : Le SIDA",
+   "match": [
+    "Maladies infectieuses – Texte 3 : Le SIDA"
+   ],
+   "pages": [
+    107,
+    108
+   ],
+   "objectives": [
+    "Définir le SIDA et le VIH.",
+    "Relever les modes de transmission, les signes, la prévention et le traitement.",
+    "Identifier le type de texte (informatif / explicatif)."
+   ],
+   "intro": "Pourquoi est-il important d’être bien informé sur les maladies graves comme le SIDA ?",
+   "summary": "Le SIDA (syndrome d’immunodéficience acquise) est causé par le VIH (virus de l’immunodéficience humaine), qui détruit les cellules T CD4, défenses naturelles du corps : des infections anodines peuvent alors s’aggraver ou entraîner le décès, et le risque de cancer augmente. Le VIH se transmet par les liquides corporels (sang, sperme, sécrétions vaginales, lait maternel) au contact d’une muqueuse ; le plus souvent lors de rapports non protégés ou par l’échange de seringues ; pas par les baisers. Les symptômes apparaissent 2 à 12 semaines après la contamination et ressemblent à ceux de la grippe ; seul un test de séropositivité permet de déceler le virus. Prévention : protection lors des rapports, limitation des partenaires, ne pas réutiliser seringues, lames de rasoir, couteaux. Traitement : la polythérapie antirétrovirale (au moins 3 médicaments), qui ne guérit pas mais réduit le virus et renforce le système immunitaire.",
+   "points": [
+    "SIDA = syndrome d’immunodéficience acquise ; virus : VIH.",
+    "Le VIH détruit les défenses immunitaires (cellules T CD4).",
+    "Transmission : sang, liquides sexuels, lait maternel ; seringues.",
+    "Signes semblables à la grippe ; seul le test permet le diagnostic.",
+    "Traitement : polythérapie, qui ne guérit pas."
+   ],
+   "application": {
+    "q": "Que signifie SIDA ? Quel virus ?",
+    "a": "Syndrome d’immunodéficience acquise ; le VIH."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 107,
+      "rect": [
+       0.07,
+       0.15,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 108,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.25
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Que signifie SIDA ? Quel virus ?",
+       "Syndrome d’immunodéficience acquise ; le VIH."
+      ],
+      [
+       "Comment le virus agit-il ?",
+       "Il détruit les cellules T CD4, défenses naturelles du corps contre la maladie."
+      ],
+      [
+       "Transmission et signes ?",
+       "Par les liquides corporels au contact d’une muqueuse (rapports non protégés, seringues) ; signes semblables à ceux de la grippe (fièvre, fatigue, maux de tête…)."
+      ],
+      [
+       "Prévention et traitement ?",
+       "Protection lors des rapports, limiter les partenaires, ne pas réutiliser seringues et lames ; polythérapie antirétrovirale."
+      ],
+      [
+       "Type de texte ?",
+       "Informatif/explicatif : il donne des informations scientifiques organisées en questions-réponses."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte au 1/4 de sa longueur.",
+      "Oral : interview d’un médecin infectiologue ; exposé sur le SIDA en Mauritanie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Maladies infectieuses – Texte 4 : La syphilis",
+   "match": [
+    "Maladies infectieuses – Texte 4 : La syphilis"
+   ],
+   "pages": [
+    109,
+    111
+   ],
+   "objectives": [
+    "Relever l’agent responsable, la transmission, l’évolution et le traitement de la syphilis.",
+    "Identifier le type de texte.",
+    "Résumer au tiers."
+   ],
+   "intro": "Quelle découverte de 1945 a changé la lutte contre de nombreuses infections ?",
+   "summary": "La syphilis est une infection sexuellement transmissible causée par une bactérie, Treponema pallidum. Elle se transmet lors de relations sexuelles avec un partenaire infecté, plus rarement par l’échange de seringues ou une lésion cutanée, et de la mère à l’enfant pendant la grossesse. Au stade primaire, une ulcération non douloureuse apparaît en général 3 semaines après la contamination ; le stade secondaire apparaît 3 à 10 semaines après et dure de 4 mois à 2-3 ans, avec des éruptions sur la peau. Non traitée, elle peut atteindre le cœur et le cerveau et causer la mort. Elle est beaucoup moins répandue depuis la découverte des antibiotiques en 1945.",
+   "points": [
+    "Agent : une bactérie (Treponema pallidum).",
+    "Transmission : sexuelle, seringues, mère-enfant.",
+    "Stade primaire puis secondaire (4 mois à 2-3 ans).",
+    "Complications : cœur, cerveau, décès.",
+    "Remède : les antibiotiques (1945)."
+   ],
+   "application": {
+    "q": "Agent responsable ?",
+    "a": "Une bactérie : Treponema pallidum (la question parle de « virus », mais le texte dit bien « bactérie »)."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 109,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 110,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.385
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Agent responsable ?",
+       "Une bactérie : Treponema pallidum (la question parle de « virus », mais le texte dit bien « bactérie »)."
+      ],
+      [
+       "Manifestation et transmission ?",
+       "Ulcération non douloureuse ; transmission sexuelle, par seringues, lésion cutanée ou de la mère à l’enfant."
+      ],
+      [
+       "Stade secondaire ?",
+       "Il apparaît 3 à 10 semaines après le chancre et dure de 4 mois à 2-3 ans, avec des éruptions sur la peau et les muqueuses."
+      ],
+      [
+       "Conséquences graves ?",
+       "Atteinte du cœur et du cerveau ; parfois le décès."
+      ],
+      [
+       "Remède ?",
+       "Les antibiotiques, découverts en 1945."
+      ],
+      [
+       "Type de texte ?",
+       "Informatif/explicatif (vocabulaire scientifique, données objectives)."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte au 1/3 de sa longueur.",
+      "Oral : interview d’un médecin infectiologue sur la syphilis en Mauritanie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Maladies infectieuses – Texte 5 : La gonorrhée",
+   "match": [
+    "Maladies infectieuses – Texte 5 : La gonorrhée"
+   ],
+   "pages": [
+    112,
+    113
+   ],
+   "objectives": [
+    "Relever l’agent responsable, la transmission et les complications de la gonorrhée.",
+    "Expliquer pourquoi les complications sont plus graves chez la femme.",
+    "Résumer au tiers."
+   ],
+   "intro": "Pourquoi une maladie sans symptômes peut-elle être plus dangereuse qu’une maladie visible ?",
+   "summary": "La gonorrhée (aussi appelée blennorragie) est une infection sexuellement transmissible qui touche surtout les moins de trente ans, en particulier les hommes. Elle est due à une bactérie, le gonocoque, transmise lors de rapports non protégés. Elle peut ne provoquer aucun symptôme tout en restant contagieuse ; sinon, elle cause des brûlures en urinant et des écoulements. Non traitée, elle peut provoquer des inflammations à l’origine d’infertilité. Les complications sont plus fréquentes chez la femme car la maladie y est souvent sans symptôme, donc découverte tard.",
+   "points": [
+    "Agent : une bactérie, le gonocoque.",
+    "Touche surtout les moins de 30 ans.",
+    "Souvent sans symptôme mais contagieuse.",
+    "Complication principale : l’infertilité.",
+    "Plus grave chez la femme : souvent sans signe, donc non traitée."
+   ],
+   "application": {
+    "q": "Noms et âge touché ?",
+    "a": "Gonorrhée ou blennorragie ; surtout les moins de trente ans."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 112,
+      "rect": [
+       0.07,
+       0.2,
+       0.93,
+       0.93
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Noms et âge touché ?",
+       "Gonorrhée ou blennorragie ; surtout les moins de trente ans."
+      ],
+      [
+       "Microbe et transmission ?",
+       "Le gonocoque (bactérie), transmis lors de rapports non protégés."
+      ],
+      [
+       "Conséquences graves ?",
+       "Inflammations pouvant entraîner l’infertilité."
+      ],
+      [
+       "Pourquoi plus grave chez la femme ?",
+       "Parce qu’elle est souvent sans symptôme chez la femme, donc découverte et soignée tard."
+      ],
+      [
+       "Type de texte ?",
+       "Informatif/explicatif."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte au 1/3 de sa longueur.",
+      "Oral : interview d’un médecin infectiologue sur les IST en Mauritanie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Maladies infectieuses – Texte 6 : L’herpès génital",
+   "match": [
+    "Maladies infectieuses – Texte 6 : L’herpès génital"
+   ],
+   "pages": [
+    114,
+    116
+   ],
+   "objectives": [
+    "Relever les données chiffrées et leur rôle dans un texte informatif.",
+    "Relever la transmission, le traitement et la prévention.",
+    "Résumer au tiers."
+   ],
+   "intro": "À quoi servent les chiffres dans un article scientifique ?",
+   "summary": "L’infection au virus HSV-2 se transmet par voie sexuelle et cause l’herpès génital ; elle perdure toute la vie. Selon l’OMS, elle touchait 417 millions de personnes en 2012 (267 millions de femmes, 150 millions d’hommes), surtout en Afrique (31,5 %) puis en Amérique (14,4 %). Elle est très souvent asymptomatique : la plupart des porteurs ignorent leur état ; seuls 10 à 20 % ont eu un diagnostic. Le traitement antiviral (acyclovir) réduit la gravité et la fréquence des symptômes sans guérir l’herpès, car il n’élimine pas les virus « dormants ». Prévention : le préservatif correctement utilisé ; les femmes enceintes doivent alerter les professionnels de santé.",
+   "points": [
+    "Virus : HSV-2.",
+    "Chiffres OMS (2012) : 417 millions ; Afrique 31,5 %, Amérique 14,4 %.",
+    "Souvent asymptomatique.",
+    "Traitement antiviral qui ne guérit pas.",
+    "Rôle des chiffres : rendre l’information précise et crédible."
+   ],
+   "application": {
+    "q": "Virus responsable ?",
+    "a": "Le HSV-2."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 114,
+      "rect": [
+       0.07,
+       0.12,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 115,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.43
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Virus responsable ?",
+       "Le HSV-2."
+      ],
+      [
+       "Transmission et continents touchés ?",
+       "Par voie sexuelle ; surtout l’Afrique (31,5 %) puis l’Amérique (14,4 %)."
+      ],
+      [
+       "Pourquoi des chiffres ?",
+       "Pour donner une information précise, objective et crédible (source : OMS)."
+      ],
+      [
+       "Le traitement guérit-il ?",
+       "Non : « il permet de réduire la gravité et la fréquence des symptômes sans toutefois guérir l’herpès »."
+      ],
+      [
+       "Type de texte ?",
+       "Informatif (données chiffrées, source scientifique)."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : résumer le texte au 1/3 de sa longueur.",
+      "Oral : interview d’un médecin infectiologue."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Écrits professionnels – 1 : La lettre de demande",
+   "match": [
+    "Écrits professionnels – 1 : La lettre de demande"
+   ],
+   "pages": [
+    119,
+    119
+   ],
+   "objectives": [
+    "Identifier l’en-tête, l’objet, le corps et la formule de politesse d’une lettre administrative.",
+    "Reconnaître une lettre de demande (candidature).",
+    "Rédiger une demande adaptée à une autre situation."
+   ],
+   "intro": "À qui écrit-on pour demander une bourse ou un congé ?",
+   "summary": "Moussa Sarr, bachelier de la série D (2020), écrit de Rosso au Directeur général de l’Enseignement secondaire pour se porter candidat au concours de l’ENI (École normale des instituteurs). Il explique son intérêt pour l’enseignement, joint les pièces d’état civil et le certificat médical, et termine par une formule de politesse.",
+   "points": [
+    "En-tête : expéditeur (nom, adresse, téléphone, courriel), lieu et date, destinataire.",
+    "Objet : candidature au concours de l’ENI.",
+    "Corps : demande, justification (diplôme, motivation), pièces jointes.",
+    "Formule de politesse et signature."
+   ],
+   "application": {
+    "q": "Qui écrit ? Pourquoi ? À qui ?",
+    "a": "Moussa Sarr, pour être candidat au concours de l’ENI ; au Directeur général de l’Enseignement secondaire."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 119,
+      "rect": [
+       0.07,
+       0.08,
+       0.93,
+       0.543
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Qui écrit ? Pourquoi ? À qui ?",
+       "Moussa Sarr, pour être candidat au concours de l’ENI ; au Directeur général de l’Enseignement secondaire."
+      ],
+      [
+       "Éléments de l’en-tête ?",
+       "Nom, adresse, téléphone et courriel de l’expéditeur ; lieu et date ; destinataire ; objet."
+      ],
+      [
+       "Parties du corps ?",
+       "1) La demande (« J’ai l’honneur de solliciter… ») ; 2) la justification (diplôme, intérêt pour l’enseignement) ; 3) les pièces jointes ; 4) la formule de politesse."
+      ],
+      [
+       "Type de document ?",
+       "Une lettre administrative de demande (de candidature)."
+      ],
+      [
+       "Autres situations ?",
+       "Demande d’emploi, de congé, de permission, de bourse, de stage…"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : sur ce modèle, rédiger une demande d’emploi, de permission ou de congé, ou de bourse d’études."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Écrits professionnels – 2 : Le curriculum vitae (CV)",
+   "match": [
+    "Écrits professionnels – 2 : Le curriculum vitae (CV)"
+   ],
+   "pages": [
+    120,
+    123
+   ],
+   "objectives": [
+    "Définir le CV et ses rubriques.",
+    "Comparer le CV d’un professionnel et celui d’un étudiant.",
+    "Rédiger son propre CV."
+   ],
+   "intro": "Que faut-il écrire pour présenter son parcours à un employeur ?",
+   "summary": "Le CV présente en peu de lignes le parcours d’une personne. CV 1 (Idoumou Ould Mohamed, professeur de français) : état civil et statut familial, études et diplômes (brevet, bac, licence, CAPES), postes et emplois, formation pédagogique, langues. CV 2 (Amadou Moctar Sow, étudiant en gestion) : état civil, études (Master 1 et 2), langues, informatique, loisirs, activités associatives ; sans expérience professionnelle, il met en valeur ses compétences informatiques et associatives.",
+   "points": [
+    "Rubriques : état civil, études et diplômes, expérience, formation, langues.",
+    "CV d’étudiant : compétences, loisirs, activités associatives.",
+    "Présentation chronologique, phrases nominales.",
+    "Usages : candidature à un emploi, un stage, une bourse."
+   ],
+   "application": {
+    "q": "Qu’est-ce qu’un CV ?",
+    "a": "Un document qui résume l’identité, les études, les diplômes, l’expérience et les compétences d’une personne."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 120,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.684
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 122,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.77
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Qu’est-ce qu’un CV ?",
+       "Un document qui résume l’identité, les études, les diplômes, l’expérience et les compétences d’une personne."
+      ],
+      [
+       "Informations d’un CV ?",
+       "État civil, études et diplômes, postes occupés, formations, langues (et compétences, loisirs, activités)."
+      ],
+      [
+       "Lieux de travail (CV 1) ?",
+       "Dans la rubrique « Postes et emplois »."
+      ],
+      [
+       "Identité ?",
+       "Dans la rubrique « État civil et statut familial »."
+      ],
+      [
+       "Différences CV 1 / CV 2 ?",
+       "Le 1er (professeur) met en avant l’expérience ; le 2e (étudiant) n’en a pas et met en avant l’informatique, les loisirs et la vie associative."
+      ],
+      [
+       "Comment Amadou comble-t-il ses manques ?",
+       "Par ses compétences informatiques, ses langues et ses activités associatives (vice-président du bureau des étudiants)."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : rédiger votre propre CV ; rédiger un CV pour un étudiant diplômé en droit, en sociologie ou en médecine."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Écrits professionnels – 3 : La lettre de motivation",
+   "match": [
+    "Écrits professionnels – 3 : La lettre de motivation"
+   ],
+   "pages": [
+    124,
+    127
+   ],
+   "objectives": [
+    "Repérer la structure d’une lettre de motivation.",
+    "Comparer deux lettres (expérimenté / premier emploi).",
+    "Rédiger une lettre de motivation."
+   ],
+   "intro": "Pourquoi joindre une lettre à son CV ?",
+   "summary": "Lettre 1 : Mohamed Lemine, qui a déjà travaillé dans plusieurs hôtels, postule au poste de réceptionniste de l’hôtel Étoiles polaires après une annonce ; il met en avant son expérience (accueil, orientation), sa rigueur, son sens relationnel, son dynamisme, et demande un entretien. Lettre 2 : Michel Thomas, à Amiens (France), titulaire d’un bac pro commerce, fait une candidature spontanée d’employé polyvalent au supermarché Géant Casino ; il cite ses 22 semaines de stage et ses qualités (rigueur, organisation, autonomie, humeur joviale, sens du service). La lettre de motivation, souvent jointe au CV, valorise les qualités personnelles face aux autres candidats.",
+   "points": [
+    "Structure : en-tête, objet, salutation, accroche, expérience et compétences, qualités, demande d’entretien, politesse, signature.",
+    "Lettre 1 : candidat expérimenté, réponse à une annonce.",
+    "Lettre 2 : premier emploi, candidature spontanée.",
+    "But : valoriser ses qualités et obtenir un entretien."
+   ],
+   "application": {
+    "q": "Qui écrit (lettre 1) ? À qui ? Pourquoi ?",
+    "a": "Mohamed Lemine, au gérant de l’hôtel Étoiles polaires, pour le poste de réceptionniste."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 124,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.791
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 126,
+      "rect": [
+       0.07,
+       0.08,
+       0.93,
+       0.791
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Qui écrit (lettre 1) ? À qui ? Pourquoi ?",
+       "Mohamed Lemine, au gérant de l’hôtel Étoiles polaires, pour le poste de réceptionniste."
+      ],
+      [
+       "À quoi sert une lettre de motivation ?",
+       "À présenter sa candidature, valoriser son expérience et ses qualités, et obtenir un entretien."
+      ],
+      [
+       "Qualités de Mohamed Lemine ?",
+       "Rigueur, sens relationnel, dynamisme, motivation."
+      ],
+      [
+       "Lettre 2 : qui, à qui, quoi ?",
+       "Michel Thomas, au directeur du Géant Casino, pour un poste d’employé polyvalent en libre-service."
+      ],
+      [
+       "Différence de profils ?",
+       "Le 1er a une expérience professionnelle ; le 2e sort de formation et cherche son premier emploi."
+      ],
+      [
+       "Pays de Michel Thomas ?",
+       "La France : Amiens 80000, numéro 07…, enseigne Géant Casino, bac pro."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : lettre de motivation pour un candidat expérimenté ; lettre pour un jeune diplômé cherchant un premier emploi.",
+      "Oral : exposé sur les lettres de motivation (origine, utilité, formes, exemples)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Écrits professionnels – 4 : Le procès-verbal (PV)",
+   "match": [
+    "Écrits professionnels – 4 : Le procès-verbal (PV)"
+   ],
+   "pages": [
+    128,
+    130
+   ],
+   "objectives": [
+    "Repérer l’organisation d’un procès-verbal.",
+    "Distinguer procès-verbal et compte rendu.",
+    "Rédiger le PV d’une réunion."
+   ],
+   "intro": "Comment garde-t-on une trace officielle d’une réunion ?",
+   "summary": "Procès-verbal de l’assemblée constitutive de l’AJRT (Association des jeunes ruraux du Trarza), le 26/02/2020 à Tevragh Zeina : présidée par Sidi Ould Hamid, rédigée par le secrétaire général Ousmane Ndiaye. On y trouve : lieu, date, heure, ordre du jour (adoption de l’ordre du jour, lecture et adoption des statuts, élection du comité exécutif, divers), présents, absents, excusés, déroulement de chaque point, composition du bureau élu, heure de clôture et signatures. Le compte rendu est une synthèse sans valeur juridique ; le procès-verbal est un document officiel qui consigne les décisions et peut servir en cas de litige.",
+   "points": [
+    "En-tête : lieu, date, heure, président, secrétaire.",
+    "Ordre du jour puis traitement point par point.",
+    "Présents, absents, excusés ; décisions ; signatures.",
+    "PV (officiel, valeur juridique) ≠ compte rendu (synthèse)."
+   ],
+   "application": {
+    "q": "Nom du document ?",
+    "a": "Un procès-verbal (de l’assemblée constitutive de l’AJRT)."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 128,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 129,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.543
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Nom du document ?",
+       "Un procès-verbal (de l’assemblée constitutive de l’AJRT)."
+      ],
+      [
+       "À quoi sert-il ?",
+       "À consigner officiellement le déroulement et les décisions d’une réunion."
+      ],
+      [
+       "Organisation ?",
+       "En-tête, ordre du jour, présents/absents/excusés, points traités dans l’ordre, clôture, signatures."
+      ],
+      [
+       "But de l’assemblée ?",
+       "Adopter les statuts et élire le comité exécutif de l’association."
+      ],
+      [
+       "Objectif des jeunes ?",
+       "Participer activement au développement des activités agricoles du Trarza."
+      ],
+      [
+       "Accord final ?",
+       "Mettre au point un programme d’action réalisable."
+      ]
+     ]
+    },
+    {
+     "h": "Lexique",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "Ordre du jour",
+       "points à discuter"
+      ],
+      [
+       "Statuts",
+       "règlement de l’association"
+      ],
+      [
+       "Comité exécutif",
+       "comité qui dirige l’association"
+      ],
+      [
+       "Sans amendement",
+       "sans modification"
+      ],
+      [
+       "Avis divergents",
+       "idées contradictoires"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : rédiger le PV d’une réunion de votre choix (création d’une coopérative, élection du conseil des élèves, réunion des parents d’élèves…)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Annexes – Les types de textes et leurs caractéristiques",
+   "match": [
+    "Annexes – Les types de textes et leurs caractéristiques"
+   ],
+   "pages": [
+    133,
+    134
+   ],
+   "objectives": [
+    "Reconnaître le type dominant d’un texte.",
+    "Relier chaque type à son lexique, sa syntaxe et ses articulations.",
+    "Justifier le type d’un texte étudié."
+   ],
+   "intro": "Un conte, une recette, un article sur une maladie : ont-ils le même but ?",
+   "summary": "Pour déterminer le type dominant d’un texte, on observe son lexique, sa syntaxe (temps, pronoms) et ses articulations ; un texte peut avoir une dominante et des sous-dominantes. Narratif : axe temporel, personnages, temps du passé, indicateurs de temps. Informatif : présente des informations, tournures impersonnelles, reprises. Explicatif : répond à une question, connecteurs de commentaire (car, c’est-à-dire), articulateurs chronologiques. Injonctif : conseils, recettes, ordres ; infinitifs, impératifs, verbes d’obligation, indicateurs d’ordre. Argumentatif : convaincre, connecteurs de cause, conséquence, opposition, indicateurs d’ordre des idées.",
+   "points": [
+    "Narratif : raconter.",
+    "Informatif : informer.",
+    "Explicatif : faire comprendre.",
+    "Injonctif : faire agir (conseils, ordres).",
+    "Argumentatif : convaincre."
+   ],
+   "application": {
+    "q": "« Le fou et le baigneur » ?",
+    "a": "Narratif (passé simple, personnages, morale)."
+   },
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 133,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.935
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 134,
+      "rect": [
+       0.07,
+       0.07,
+       0.93,
+       0.645
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "« Le fou et le baigneur » ?",
+       "Narratif (passé simple, personnages, morale)."
+      ],
+      [
+       "« Le métier de sapeur-pompier » ?",
+       "Informatif."
+      ],
+      [
+       "Une recette de henné ?",
+       "Injonctif (étapes, impératif ou infinitif)."
+      ],
+      [
+       "« La violence dans le football » ?",
+       "Argumentatif (causes, solutions, connecteurs)."
+      ],
+      [
+       "Le texte sur le SIDA (questions-réponses) ?",
+       "Explicatif / informatif."
+      ]
+     ]
+    },
+    {
+     "h": "Tableau",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "But",
+       "Marques"
+      ],
+      [
+       "Narratif",
+       "raconter",
+       "passé simple/imparfait, indicateurs de temps"
+      ],
+      [
+       "Informatif",
+       "informer",
+       "tournures impersonnelles, données"
+      ],
+      [
+       "Explicatif",
+       "expliquer",
+       "car, c’est-à-dire, d’abord, ensuite"
+      ],
+      [
+       "Injonctif",
+       "faire agir",
+       "impératif, infinitif, il faut, on doit"
+      ],
+      [
+       "Argumentatif",
+       "convaincre",
+       "car, donc, mais, d’une part… d’autre part"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Écrit : choisir trois textes du manuel et justifier leur type dominant à l’aide du tableau."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Annexes – Quelques éléments de versification",
+   "match": [
+    "Annexes – Quelques éléments de versification"
+   ],
+   "pages": [
+    135,
+    135
+   ],
+   "objectives": [
+    "Connaître les formes poétiques (sonnet, quatrain, tercet).",
+    "Identifier les rimes et leur disposition.",
+    "Compter les syllabes d’un vers (e muet)."
+   ],
+   "intro": "Qu’est-ce qui distingue un poème d’un texte en prose ?",
+   "summary": "Le sonnet compte deux quatrains (strophes de quatre vers) suivis de deux tercets (strophes de trois vers ; le livre écrit « tiercé »), avec les mêmes rimes dans les deux quatrains. La rime est la répétition de sons identiques en fin de vers : riche si elle porte sur au moins trois sons ; féminine si elle se termine par un e muet, masculine sinon. Disposition : AABB (plates ou suivies), ABAB (croisées), ABBA (embrassées). La mesure est le nombre de syllabes : l’alexandrin en compte douze (« La courbe de tes yeux fait le tour de mon cœur », Paul Éluard). Le e muet ne se compte pas en fin de vers ni quand il est élidé.",
+   "points": [
+    "Sonnet : 2 quatrains + 2 tercets.",
+    "Rimes plates AABB, croisées ABAB, embrassées ABBA.",
+    "Rime riche (3 sons), féminine (e muet) / masculine.",
+    "Alexandrin : 12 syllabes ; e muet élidé non compté."
+   ],
+   "application": {
+    "q": "Strophe de 4 vers ? de 3 vers ?",
+    "a": "Un quatrain ; un tercet."
+   },
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 135,
+      "rect": [
+       0.07,
+       0.1,
+       0.93,
+       0.651
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "Strophe de 4 vers ? de 3 vers ?",
+       "Un quatrain ; un tercet."
+      ],
+      [
+       "ABAB ?",
+       "Des rimes croisées."
+      ],
+      [
+       "« ensemble / ressemble » ?",
+       "Une rime riche (et féminine)."
+      ],
+      [
+       "Syllabes de « La cigogne au long bec » ?",
+       "La/ci/go/gne au/long/bec = 6 (le e de « cigogne » est élidé)."
+      ],
+      [
+       "Combien de syllabes dans un alexandrin ?",
+       "Douze."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Exercice : relever la disposition des rimes et la mesure des vers dans le poème « Les machines » (M. Carême)."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "5O"
+}
