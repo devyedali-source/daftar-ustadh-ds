@@ -70,7 +70,9 @@
   "PH_6D": "توزيع دروس الكتاب المدرسي « الفلسفة — الشعب العلمية » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
   "PH_6A": "توزيع دروس الكتاب المدرسي « الفلسفة — آداب عصرية » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
   "FR_6C": "Progression établie d’après le manuel « Français 6ème (C et D) » (IPN), dans l’ordre des chapitres",
-  "FR_6D": "Progression établie d’après le manuel « Français 6ème (C et D) » (IPN), dans l’ordre des chapitres"
+  "FR_6D": "Progression établie d’après le manuel « Français 6ème (C et D) » (IPN), dans l’ordre des chapitres",
+  "FR_6A": "Progression établie d’après le manuel « Français 6ème (Lettres) » (IPN), dans l’ordre des chapitres",
+  "FR_6O": "Progression établie d’après le manuel « Français 6ème (Lettres) » (IPN), dans l’ordre des chapitres"
  },
  "plans": {
   "AR": {
@@ -12666,6 +12668,754 @@
      "k": "lesson",
      "i": [
       "Techniques : la discussion et la dissertation"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "6A": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 1 – Texte 1 : L’esprit critique, essai de définition",
+      "Thème 1 – Texte 2 : Esprit critique, esprit scientifique (P. Bayle)",
+      "Thème 1 – Texte 3 : La dent d’or (Fontenelle)"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 1 – Texte 4 : Fanatisme (Voltaire)",
+      "Thème 2 – Texte 1 : Les satellites, porteurs de santé",
+      "Thème 2 – Texte 2 : Les applications de la science moderne (Heisenberg)"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 2 – Texte 3 : Des scientifiques sans cœur ? (F. Jacob)",
+      "Thème 2 – Texte 4 : Dangers des sciences (Montesquieu)"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 2 – Texte 5 : Faut-il se méfier de la télévision ?",
+      "Thème 2 – Texte 6 : Déclaration sur la science et l’utilisation du savoir scientifique",
+      "Thème 3 – Texte 1 : Informatique, définition et rôle"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 3 – Texte 2 : Qu’est-ce que l’informatique ? (Le Monde, 1967)",
+      "Thème 3 – Texte 3 : Aux bons soins de l’ordinateur (texte d’anticipation)"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 3 – Texte 4 : Avantages et inconvénients de l’informatique",
+      "Thème 4 – Texte 1 : La Covid 19",
+      "Thème 4 – Texte 2 : Le Sida dans le monde (ONUSIDA)"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 3 : L’urbanisation du Tiers-monde ne favorise pas le développement",
+      "Thème 4 – Texte 4 : Lettre à mon fils (G. Sinoué)",
+      "Thème 4 – Texte 5 : Violence à l’égard des femmes"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 6 : La faim dans le monde",
+      "Thème 4 – Texte 7 : La mondialisation"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 8 : La vie du « Almoudo » (Kadia Sall)",
+      "Thème 4 – Texte 9 : Azel (T. Ben Jelloun, Partir)",
+      "Thème 4 – Texte 10 : Les formes de travail des enfants"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 11 : Le bonheur et l’argent (Th. Wiseman)",
+      "Thème 4 – Texte 12 : L’Afrique responsable de son propre malheur ? (J. de Barrin)"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 13 : Civilisation en péril (F. Monique)",
+      "Thème 4 – Texte 14 : Discours de M. Ban Ki-moon (abolition de l’esclavage)",
+      "Thème 5 – Texte 1 : Cent millions de sans-abris"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 5 – Texte 2 : Pays pauvres, pays riches : le gaspillage des énergies",
+      "Thème 5 – Texte 3 : Clefs en mains et transfert de technologie (J.-P. Gardinier)"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 5 – Texte 4 : La pêche mauritanienne",
+      "Thème 5 – Texte 5 : La science pour le développement",
+      "Thème 5 – Texte 6 : Le développement durable"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 5 – Texte 7 : Artisanat mauritanien et développement",
+      "Thème 6 – Texte 1 : Les adolescents et la lecture (B. Brecout)",
+      "Thème 6 – Texte 2 : Le cinéma et l’éducation (J.M.L. Peters)"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 6 – Texte 3 : Sauver les jeux traditionnels (A. Ould Doua)",
+      "Thème 6 – Texte 4 : L’artisanat mauritanien (le cuir)"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 6 – Texte 5 : Mariage au campement (El Ghassem Ould Ahmedou)",
+      "Thème 6 – Texte 6 : Un patient très patient (Habib Ould Mahfoudh)",
+      "Thème 6 – Texte 7 : Kaya Maghan et Kerfa le fou (Sia Yatabéré)"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 6 – Texte 8 : Information et culture (M. Druon)",
+      "Thème 6 – Texte 9 : Rencontre des cultures (P. Ricœur)"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 1 : Une vieille ville mauritanienne (Kaédi)",
+      "Thème 7 – Texte 2 : Un beau souvenir d’enfance",
+      "Thème 7 – Texte 3 : Mon père (A. Ernaux, La Place)"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 4 : Une mère laborieuse (A. Césaire)",
+      "Thème 7 – Texte 5 : Correspondances (Baudelaire)"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 6 : Art poétique (Verlaine)",
+      "Thème 7 – Texte 7 : Le temps de vivre (B. Vian)",
+      "Thème 7 – Texte 8 : Barbara (J. Prévert)"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 9 : À tous les enfants (B. Vian)",
+      "Thème 7 – Texte 10 : Nuit de Sine (L. S. Senghor)",
+      "Thème 8 – Texte 1 : La cardiologie"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 8 – Texte 2 : La pédopsychiatrie",
+      "Thème 8 – Texte 3 : Le métier de sage-femme"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 8 – Texte 4 : Le métier d’interprète",
+      "Thème 8 – Texte 5 : La profession d’avocat",
+      "Thème 8 – Texte 6 : Le métier de journaliste (interview)"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 9 – Document 1 : La demande de candidature",
+      "Thème 9 – Document 2 : Le curriculum vitae (CV)"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 9 – Document 3 : La lettre de motivation",
+      "Thème 9 – Document 4 : Le procès-verbal de réunion",
+      "Annexe : déterminer le type dominant d’un texte"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Annexe : les figures de style",
+      "Annexe : quelques éléments de versification"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "6O": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 1 – Texte 1 : L’esprit critique, essai de définition",
+      "Thème 1 – Texte 2 : Esprit critique, esprit scientifique (P. Bayle)",
+      "Thème 1 – Texte 3 : La dent d’or (Fontenelle)"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 1 – Texte 4 : Fanatisme (Voltaire)",
+      "Thème 2 – Texte 1 : Les satellites, porteurs de santé",
+      "Thème 2 – Texte 2 : Les applications de la science moderne (Heisenberg)"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 2 – Texte 3 : Des scientifiques sans cœur ? (F. Jacob)",
+      "Thème 2 – Texte 4 : Dangers des sciences (Montesquieu)"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 2 – Texte 5 : Faut-il se méfier de la télévision ?",
+      "Thème 2 – Texte 6 : Déclaration sur la science et l’utilisation du savoir scientifique",
+      "Thème 3 – Texte 1 : Informatique, définition et rôle"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 3 – Texte 2 : Qu’est-ce que l’informatique ? (Le Monde, 1967)",
+      "Thème 3 – Texte 3 : Aux bons soins de l’ordinateur (texte d’anticipation)"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 3 – Texte 4 : Avantages et inconvénients de l’informatique",
+      "Thème 4 – Texte 1 : La Covid 19",
+      "Thème 4 – Texte 2 : Le Sida dans le monde (ONUSIDA)"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 3 : L’urbanisation du Tiers-monde ne favorise pas le développement",
+      "Thème 4 – Texte 4 : Lettre à mon fils (G. Sinoué)",
+      "Thème 4 – Texte 5 : Violence à l’égard des femmes"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 6 : La faim dans le monde",
+      "Thème 4 – Texte 7 : La mondialisation"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 8 : La vie du « Almoudo » (Kadia Sall)",
+      "Thème 4 – Texte 9 : Azel (T. Ben Jelloun, Partir)",
+      "Thème 4 – Texte 10 : Les formes de travail des enfants"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 11 : Le bonheur et l’argent (Th. Wiseman)",
+      "Thème 4 – Texte 12 : L’Afrique responsable de son propre malheur ? (J. de Barrin)"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 4 – Texte 13 : Civilisation en péril (F. Monique)",
+      "Thème 4 – Texte 14 : Discours de M. Ban Ki-moon (abolition de l’esclavage)",
+      "Thème 5 – Texte 1 : Cent millions de sans-abris"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 5 – Texte 2 : Pays pauvres, pays riches : le gaspillage des énergies",
+      "Thème 5 – Texte 3 : Clefs en mains et transfert de technologie (J.-P. Gardinier)"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 5 – Texte 4 : La pêche mauritanienne",
+      "Thème 5 – Texte 5 : La science pour le développement",
+      "Thème 5 – Texte 6 : Le développement durable"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 5 – Texte 7 : Artisanat mauritanien et développement",
+      "Thème 6 – Texte 1 : Les adolescents et la lecture (B. Brecout)",
+      "Thème 6 – Texte 2 : Le cinéma et l’éducation (J.M.L. Peters)"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 6 – Texte 3 : Sauver les jeux traditionnels (A. Ould Doua)",
+      "Thème 6 – Texte 4 : L’artisanat mauritanien (le cuir)"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 6 – Texte 5 : Mariage au campement (El Ghassem Ould Ahmedou)",
+      "Thème 6 – Texte 6 : Un patient très patient (Habib Ould Mahfoudh)",
+      "Thème 6 – Texte 7 : Kaya Maghan et Kerfa le fou (Sia Yatabéré)"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 6 – Texte 8 : Information et culture (M. Druon)",
+      "Thème 6 – Texte 9 : Rencontre des cultures (P. Ricœur)"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 1 : Une vieille ville mauritanienne (Kaédi)",
+      "Thème 7 – Texte 2 : Un beau souvenir d’enfance",
+      "Thème 7 – Texte 3 : Mon père (A. Ernaux, La Place)"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 4 : Une mère laborieuse (A. Césaire)",
+      "Thème 7 – Texte 5 : Correspondances (Baudelaire)"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 6 : Art poétique (Verlaine)",
+      "Thème 7 – Texte 7 : Le temps de vivre (B. Vian)",
+      "Thème 7 – Texte 8 : Barbara (J. Prévert)"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 7 – Texte 9 : À tous les enfants (B. Vian)",
+      "Thème 7 – Texte 10 : Nuit de Sine (L. S. Senghor)",
+      "Thème 8 – Texte 1 : La cardiologie"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 8 – Texte 2 : La pédopsychiatrie",
+      "Thème 8 – Texte 3 : Le métier de sage-femme"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 8 – Texte 4 : Le métier d’interprète",
+      "Thème 8 – Texte 5 : La profession d’avocat",
+      "Thème 8 – Texte 6 : Le métier de journaliste (interview)"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 9 – Document 1 : La demande de candidature",
+      "Thème 9 – Document 2 : Le curriculum vitae (CV)"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Thème 9 – Document 3 : La lettre de motivation",
+      "Thème 9 – Document 4 : Le procès-verbal de réunion",
+      "Annexe : déterminer le type dominant d’un texte"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Annexe : les figures de style",
+      "Annexe : quelques éléments de versification"
      ]
     },
     {
