@@ -1,0 +1,1076 @@
+{
+ "subject": "SN",
+ "book": "books/SN_6A.pdf",
+ "bookTitle": "Sciences Naturelles 6ème LM",
+ "lessons": [
+  {
+   "title": "Unité I : Les appareils reproducteurs de l’homme et de la femme",
+   "match": [
+    "Les appareils reproducteurs de l’homme et de la femme"
+   ],
+   "pages": [
+    11,
+    13
+   ],
+   "objectives": [
+    "Nommer les organes des appareils génitaux masculin et féminin.",
+    "Préciser le rôle de chaque organe."
+   ],
+   "intro": "Quels organes interviennent dans la reproduction humaine ?",
+   "summary": "La reproduction humaine est sexuée : elle fait intervenir deux individus de sexe opposé et aboutit, par la fécondation, à une cellule-œuf (zygote) diploïde. Elle commence à la puberté. L’appareil reproducteur de l’homme comprend : deux testicules (gonades) qui fabriquent les spermatozoïdes et la testostérone ; les voies génitales (épididymes, canaux déférents, urètre) qui conduisent le sperme ; les glandes annexes (vésicules séminales, prostate, glandes de Cowper) dont les sécrétions forment le liquide du sperme ; le pénis (organe copulateur). L’appareil de la femme comprend : deux ovaires (gonades) qui produisent les ovocytes et les hormones ovariennes ; les voies génitales (pavillons, trompes, utérus, vagin) ; la vulve ; des organes annexes (glandes mammaires, glandes du col…).",
+   "points": [
+    "Gonades : testicules / ovaires.",
+    "Voies génitales : conduisent les gamètes.",
+    "Glandes annexes : liquide du sperme.",
+    "Organe copulateur.",
+    "Reproduction sexuée : zygote diploïde."
+   ],
+   "application": {
+    "q": "Quel est le double rôle des testicules ?",
+    "a": "Produire les spermatozoïdes (rôle exocrine) et la testostérone (rôle endocrine)."
+   },
+   "applications": [
+    {
+     "q": "Où se forme le zygote ?",
+     "a": "Dans la trompe (après la fécondation)."
+    },
+    {
+     "q": "Citer deux glandes annexes masculines.",
+     "a": "La prostate et les vésicules séminales."
+    }
+   ],
+   "board": [
+    {
+     "h": "Organes et rôles",
+     "lines": [],
+     "table": [
+      [
+       "Appareil",
+       "Organes",
+       "Rôle"
+      ],
+      [
+       "Masculin",
+       "testicules",
+       "spermatozoïdes et testostérone"
+      ],
+      [
+       "",
+       "épididymes, canaux déférents, urètre",
+       "conduire le sperme"
+      ],
+      [
+       "",
+       "vésicules séminales, prostate, Cowper",
+       "liquide séminal"
+      ],
+      [
+       "Féminin",
+       "ovaires",
+       "ovocytes et hormones"
+      ],
+      [
+       "",
+       "trompes, utérus, vagin",
+       "fécondation, gestation, accouplement"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 12, les vésicules séminales, la prostate et les glandes de Cowper produisent le liquide du sperme, et non des hormones génitales.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : La spermatogenèse — fonction exocrine du testicule",
+   "match": [
+    "La spermatogenèse — fonction exocrine du testicule"
+   ],
+   "pages": [
+    13,
+    15
+   ],
+   "objectives": [
+    "Décrire les phases de la spermatogenèse.",
+    "Décrire la structure du spermatozoïde."
+   ],
+   "intro": "Comment un homme produit-il des millions de spermatozoïdes chaque jour ?",
+   "summary": "Chaque testicule contient 200 à 300 lobules renfermant des tubes séminifères où se déroule la spermatogenèse, de la paroi vers la lumière du tube. Phase de multiplication : les spermatogonies (2n) se divisent par mitoses. Phase d’accroissement : elles grossissent et deviennent des spermatocytes I (2n). Phase de maturation (méiose) : un spermatocyte I donne 2 spermatocytes II (n) par division réductionnelle, puis 4 spermatides (n) par division équationnelle. Phase de différenciation (spermiogenèse) : la spermatide forme un flagelle, un acrosome (vésicules golgiennes), son noyau se condense, les mitochondries se regroupent à la base du flagelle. Le spermatozoïde comprend une tête (noyau à n chromosomes coiffé de l’acrosome), une pièce intermédiaire riche en mitochondries et un flagelle.",
+   "points": [
+    "Lieu : tubes séminifères.",
+    "Multiplication, accroissement, maturation, différenciation.",
+    "1 spermatocyte I → 4 spermatides.",
+    "Spermiogenèse : acrosome, flagelle.",
+    "Spermatozoïde : tête, pièce intermédiaire, flagelle."
+   ],
+   "application": {
+    "q": "Combien de spermatozoïdes donne un spermatocyte I ?",
+    "a": "Quatre (4 spermatides, n chromosomes)."
+   },
+   "applications": [
+    {
+     "q": "Quel est le rôle des mitochondries de la pièce intermédiaire ?",
+     "a": "Fournir l’énergie nécessaire aux mouvements du flagelle."
+    },
+    {
+     "q": "Rôle de l’acrosome ?",
+     "a": "Contenir les enzymes qui permettent au spermatozoïde de pénétrer l’ovocyte."
+    }
+   ],
+   "board": [
+    {
+     "h": "Phases de la spermatogenèse",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Cellules",
+       "Chromosomes"
+      ],
+      [
+       "Multiplication",
+       "spermatogonies",
+       "2n"
+      ],
+      [
+       "Accroissement",
+       "spermatocytes I",
+       "2n"
+      ],
+      [
+       "Maturation (méiose)",
+       "spermatocytes II puis spermatides",
+       "n"
+      ],
+      [
+       "Différenciation",
+       "spermatozoïdes",
+       "n"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Fonction endocrine du testicule et sa régulation",
+   "match": [
+    "Fonction endocrine du testicule et sa régulation"
+   ],
+   "pages": [
+    16,
+    21
+   ],
+   "objectives": [
+    "Exploiter des expériences de castration, greffe et injection.",
+    "Connaître le rôle de la testostérone.",
+    "Expliquer la régulation par l’axe hypothalamo-hypophysaire."
+   ],
+   "intro": "Pourquoi un animal castré jeune ne présente-t-il jamais les caractères sexuels de l’adulte ?",
+   "summary": "La castration d’un animal impubère empêche l’apparition des caractères sexuels secondaires et entraîne la stérilité ; chez l’adulte, elle provoque la régression de ces caractères. La greffe d’un testicule ou l’injection d’extraits testiculaires ou de testostérone restaure les caractères : le testicule agit par voie sanguine, au moyen d’une hormone. L’irradiation aux rayons X détruit les tubes séminifères (stérilité) mais conserve les caractères sexuels : la testostérone est produite par les cellules interstitielles de Leydig. La lésion de l’hypothalamus ou la section de la tige pituitaire arrête la sécrétion des gonadostimulines FSH et LH et entraîne l’atrophie des testicules. L’hypothalamus sécrète la GnRH (de façon pulsatile, un pulse toutes les 90 min) qui stimule l’hypophyse. La LH agit sur les cellules de Leydig (testostérone) ; la FSH agit sur les cellules de Sertoli (protéine ABP, inhibine) et active la spermatogenèse. La testostérone exerce un rétrocontrôle négatif sur l’hypothalamus et l’hypophyse, ce qui stabilise son taux.",
+   "points": [
+    "Testostérone : cellules de Leydig.",
+    "Caractères sexuels secondaires et spermatogenèse.",
+    "GnRH (hypothalamus) → FSH, LH (hypophyse).",
+    "LH → Leydig ; FSH → Sertoli.",
+    "Rétrocontrôle négatif de la testostérone."
+   ],
+   "application": {
+    "q": "Un rat dont les tubes séminifères ont été détruits garde ses caractères sexuels. Pourquoi ?",
+    "a": "Les cellules de Leydig, intactes, continuent de produire la testostérone."
+   },
+   "applications": [
+    {
+     "q": "Quelle hormone agit sur les cellules de Leydig ?",
+     "a": "La LH."
+    },
+    {
+     "q": "Que se passe-t-il si le taux de testostérone augmente ?",
+     "a": "Le freinage de l’hypothalamus et de l’hypophyse augmente ; la sécrétion de testostérone diminue."
+    }
+   ],
+   "board": [
+    {
+     "h": "Expériences",
+     "lines": [],
+     "table": [
+      [
+       "Expérience",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Castration de l’impubère",
+       "pas de puberté, stérilité",
+       "les testicules déclenchent la puberté"
+      ],
+      [
+       "Castration de l’adulte",
+       "régression des caractères sexuels",
+       "les testicules les maintiennent"
+      ],
+      [
+       "Greffe / injection de testostérone",
+       "restauration",
+       "action hormonale par le sang"
+      ],
+      [
+       "Lésion de l’hypothalamus",
+       "atrophie des testicules",
+       "contrôle hypothalamo-hypophysaire"
+      ]
+     ]
+    },
+    {
+     "h": "Régulation",
+     "lines": [
+      "Hypothalamus → GnRH → hypophyse → FSH et LH → testicule → testostérone.",
+      "Testostérone élevée → freinage de GnRH, FSH et LH (rétrocontrôle négatif)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : L’ovaire — folliculogenèse et ovogenèse",
+   "match": [
+    "L’ovaire — folliculogenèse et ovogenèse"
+   ],
+   "pages": [
+    22,
+    24
+   ],
+   "objectives": [
+    "Décrire l’évolution des follicules ovariens.",
+    "Décrire les phases de l’ovogenèse."
+   ],
+   "intro": "Une femme naît-elle avec tous ses ovocytes ?",
+   "summary": "L’ovaire comprend une zone médullaire (nerfs, vaisseaux) et une zone corticale contenant des follicules de tailles différentes. La folliculogenèse est l’évolution d’un follicule primordial en follicule primaire, secondaire, tertiaire (cavitaire) puis mûr (follicule de De Graaf) ; après l’ovulation, le follicule rompu devient le corps jaune. L’ovogenèse comprend : une phase de multiplication pendant la vie embryonnaire (les ovogonies 2n se multiplient par mitoses jusqu’à environ 7 millions vers le 4e mois de grossesse), une phase d’accroissement (ovocytes I à 2n) et une phase de maturation (méiose) : l’ovocyte I reprend sa méiose peu avant l’ovulation et donne un ovocyte II (n) et un petit globule polaire ; la deuxième division ne s’achève qu’en cas de fécondation. Chaque cellule mère ne donne qu’un seul ovocyte.",
+   "points": [
+    "Follicule primordial → … → follicule de De Graaf.",
+    "Après l’ovulation : corps jaune.",
+    "Ovogenèse commence avant la naissance.",
+    "Ovocyte I (2n) → ovocyte II (n) + globule polaire.",
+    "Un seul gamète par cellule mère."
+   ],
+   "application": {
+    "q": "Comparer le nombre de gamètes produits par un spermatocyte I et par un ovocyte I.",
+    "a": "Spermatocyte I : 4 spermatozoïdes ; ovocyte I : 1 seul ovocyte (et des globules polaires)."
+   },
+   "applications": [
+    {
+     "q": "Que devient le follicule après l’ovulation ?",
+     "a": "Le corps jaune."
+    },
+    {
+     "q": "Quand l’ovogenèse débute-t-elle ?",
+     "a": "Avant la naissance, pendant la vie embryonnaire."
+    }
+   ],
+   "board": [
+    {
+     "h": "Étapes de la folliculogenèse",
+     "lines": [
+      "Follicule primordial → primaire → secondaire → tertiaire (cavitaire) → mûr (De Graaf) → ovulation → corps jaune."
+     ]
+    },
+    {
+     "h": "Spermatogenèse et ovogenèse",
+     "lines": [],
+     "table": [
+      [
+       "Critère",
+       "Spermatogenèse",
+       "Ovogenèse"
+      ],
+      [
+       "Début",
+       "puberté",
+       "vie embryonnaire"
+      ],
+      [
+       "Durée",
+       "continue jusqu’à la fin de la vie",
+       "cyclique jusqu’à la ménopause"
+      ],
+      [
+       "Produit d’une cellule mère",
+       "4 spermatozoïdes",
+       "1 ovocyte"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Hormones ovariennes et cycles sexuels de la femme",
+   "match": [
+    "Hormones ovariennes et cycles sexuels de la femme"
+   ],
+   "pages": [
+    24,
+    34
+   ],
+   "objectives": [
+    "Montrer la fonction endocrine de l’ovaire.",
+    "Décrire les cycles ovarien, utérin, de la glaire et de la température.",
+    "Connaître les rôles des œstrogènes et de la progestérone."
+   ],
+   "intro": "Pourquoi les règles reviennent-elles environ tous les 28 jours ?",
+   "summary": "L’ablation des ovaires arrête les cycles utérins (atrophie de l’utérus) et fait régresser les caractères sexuels ; la greffe d’ovaire rétablit le cycle : l’ovaire agit par voie sanguine. L’ovaire est une glande mixte : fonction exocrine (ovogenèse) et endocrine (œstrogènes et progestérone). Le cycle débute le premier jour des règles et dure en moyenne 28 jours. Cycle ovarien : phase folliculaire (14 ± 3 jours, un seul follicule mûrit, les autres dégénèrent : atrésie), ovulation vers le 14e jour, phase lutéale (corps jaune). Cycle utérin : phase menstruelle (destruction de la couche superficielle de l’endomètre, 4 à 5 jours), phase post-menstruelle (épaississement), phase prémenstruelle (épaisseur maximale, artérioles spiralées, glandes en dentelle). Glaire cervicale : dense et acide hors ovulation, filante et perméable aux spermatozoïdes au moment de l’ovulation. Température : légèrement inférieure à 37 °C en phase folliculaire, supérieure après l’ovulation (progestérone). Les œstrogènes (thèque interne et granulosa) présentent un pic avant l’ovulation et un second vers le 21e jour ; la progestérone, sécrétée par le corps jaune, a un pic vers le 21e jour.",
+   "points": [
+    "Ovaire : glande mixte.",
+    "Cycle de 28 jours ; ovulation vers le 14e jour.",
+    "Endomètre : menstruel, prolifératif, sécrétoire.",
+    "Glaire perméable à l’ovulation.",
+    "Œstrogènes (phase folliculaire), progestérone (corps jaune)."
+   ],
+   "application": {
+    "q": "Pourquoi la température s’élève-t-elle après l’ovulation ?",
+    "a": "À cause de la progestérone sécrétée par le corps jaune."
+   },
+   "applications": [
+    {
+     "q": "Quelle structure sécrète la progestérone ?",
+     "a": "Le corps jaune."
+    },
+    {
+     "q": "Quand la glaire est-elle perméable aux spermatozoïdes ?",
+     "a": "Au moment de l’ovulation."
+    }
+   ],
+   "board": [
+    {
+     "h": "Cycles de la femme (28 jours)",
+     "lines": [],
+     "table": [
+      [
+       "Cycle",
+       "Phase folliculaire (J1–J14)",
+       "Phase lutéale (J15–J28)"
+      ],
+      [
+       "Ovarien",
+       "croissance d’un follicule",
+       "corps jaune"
+      ],
+      [
+       "Utérin",
+       "règles puis épaississement",
+       "épaisseur maximale, glandes"
+      ],
+      [
+       "Glaire",
+       "dense puis filante (ovulation)",
+       "dense"
+      ],
+      [
+       "Température",
+       "< 37 °C",
+       "> 37 °C"
+      ],
+      [
+       "Hormones",
+       "œstrogènes",
+       "progestérone + œstrogènes"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 30, l’utérus a une couche musculaire (myomètre) et une muqueuse (endomètre) : l’endomètre n’est pas un muscle.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Régulation hormonale chez la femme — hypophyse et rétrocontrôles",
+   "match": [
+    "Régulation hormonale chez la femme — hypophyse et rétrocontrôles"
+   ],
+   "pages": [
+    35,
+    37
+   ],
+   "objectives": [
+    "Montrer le rôle de l’hypophyse (FSH, LH).",
+    "Distinguer rétrocontrôle négatif et positif des œstrogènes."
+   ],
+   "intro": "Qu’est-ce qui déclenche l’ovulation au 14e jour ?",
+   "summary": "L’ablation de l’hypophyse chez l’adolescente empêche le développement des ovaires ; chez l’adulte, les ovaires s’atrophient et les cycles disparaissent ; la greffe ou l’injection d’extraits hypophysaires rétablit les cycles. L’hypophyse commande les ovaires par deux gonadostimulines : la FSH (croissance des follicules) et la LH (ovulation, formation du corps jaune) ; elle est elle-même commandée par la GnRH de l’hypothalamus. Les hormones ovariennes agissent en retour : l’ablation des ovaires provoque une hypertrophie de l’hypophyse ; de faibles quantités d’œstrogènes inhibent la sécrétion de GnRH et des gonadostimulines (rétrocontrôle négatif) ; un taux élevé d’œstrogènes en fin de phase folliculaire stimule une décharge massive de LH (pic de LH) qui déclenche l’ovulation (rétrocontrôle positif) ; la progestérone associée aux œstrogènes freine l’axe et bloque les cycles.",
+   "points": [
+    "Hypothalamus : GnRH.",
+    "Hypophyse : FSH (follicules), LH (ovulation).",
+    "Faibles œstrogènes : rétrocontrôle négatif.",
+    "Forts œstrogènes : pic de LH, ovulation (rétrocontrôle positif).",
+    "Progestérone + œstrogènes : freinage."
+   ],
+   "application": {
+    "q": "Pourquoi l’ablation des ovaires fait-elle grossir l’hypophyse ?",
+    "a": "Les hormones ovariennes ne freinent plus l’hypophyse, qui devient hyperactive."
+   },
+   "applications": [
+    {
+     "q": "Quelle hormone hypophysaire déclenche l’ovulation ?",
+     "a": "La LH (pic de LH)."
+    },
+    {
+     "q": "Sur quel principe repose la pilule contraceptive ?",
+     "a": "Les hormones de synthèse freinent l’axe hypothalamo-hypophysaire et empêchent l’ovulation."
+    }
+   ],
+   "board": [
+    {
+     "h": "Expériences sur l’hypophyse",
+     "lines": [],
+     "table": [
+      [
+       "Expérience",
+       "Adolescente",
+       "Adulte"
+      ],
+      [
+       "Hypophysectomie",
+       "ovaires non développés",
+       "atrophie, plus de cycles"
+      ],
+      [
+       "Hypophysectomie + extraits",
+       "croissance des ovaires",
+       "reprise des cycles"
+      ]
+     ]
+    },
+    {
+     "h": "Rétrocontrôles",
+     "lines": [],
+     "table": [
+      [
+       "Injection dans l’hypothalamus",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Faibles doses d’œstrogènes",
+       "pas d’ovulation",
+       "rétrocontrôle négatif"
+      ],
+      [
+       "Fortes doses d’œstrogènes",
+       "pic de LH, ovulation",
+       "rétrocontrôle positif"
+      ],
+      [
+       "Progestérone + œstrogènes",
+       "arrêt des cycles",
+       "freinage de l’axe"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Fécondation, nidation et rôle du placenta",
+   "match": [
+    "Fécondation, nidation et rôle du placenta"
+   ],
+   "pages": [
+    38,
+    42
+   ],
+   "objectives": [
+    "Citer les conditions et les conséquences de la fécondation.",
+    "Décrire la nidation.",
+    "Connaître les rôles du placenta et de l’HCG."
+   ],
+   "intro": "Pourquoi les règles disparaissent-elles pendant la grossesse ?",
+   "summary": "Conditions de la fécondation : un sperme normal (3 à 5 mL, pH 7 à 8, spermatozoïdes nombreux et mobiles), des spermatozoïdes capacités, un rapport pendant la période de fécondité, une glaire perméable, un ovocyte II fécondable et des voies génitales saines. Conséquences : activation de l’ovocyte II, rétablissement de la diploïdie, détermination du sexe. La cellule-œuf se divise en descendant la trompe ; le blastocyste s’implante dans l’endomètre environ 7 jours après la fécondation (nidation). Le trophoblaste forme le placenta, relié au fœtus par le cordon ombilical. Il a trois rôles : trophique (nutriments et O₂ vers le fœtus, déchets et CO₂ vers la mère, sans mélange des sangs), protecteur (barrière contre de nombreux microbes) et endocrine (HCG, œstrogènes, progestérone). L’HCG, voisine de la LH, maintient le corps jaune, qui continue de sécréter la progestérone : l’endomètre est maintenu et il n’y a pas de règles.",
+   "points": [
+    "Conditions : sperme normal, glaire perméable, ovocyte fécondable.",
+    "Conséquences : activation, diploïdie, sexe.",
+    "Nidation : vers le 7e jour.",
+    "Placenta : trophique, protecteur, endocrine.",
+    "HCG : maintient le corps jaune."
+   ],
+   "application": {
+    "q": "Pourquoi les tests de grossesse recherchent-ils l’HCG ?",
+    "a": "Parce que l’HCG n’est sécrétée que par le trophoblaste d’un embryon."
+   },
+   "applications": [
+    {
+     "q": "Où a lieu la nidation ?",
+     "a": "Dans la muqueuse utérine (endomètre)."
+    },
+    {
+     "q": "Le sang de la mère et celui du fœtus se mélangent-ils ?",
+     "a": "Non, les échanges se font à travers le placenta."
+    }
+   ],
+   "board": [
+    {
+     "h": "Rôles du placenta",
+     "lines": [],
+     "table": [
+      [
+       "Rôle",
+       "Exemple"
+      ],
+      [
+       "Trophique",
+       "nutriments et O₂ vers le fœtus ; CO₂ et déchets vers la mère"
+      ],
+      [
+       "Protecteur",
+       "filtre contre de nombreux microbes"
+      ],
+      [
+       "Endocrine",
+       "HCG, œstrogènes, progestérone"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Accouchement, lactation et diagnostic prénatal",
+   "match": [
+    "Accouchement, lactation et diagnostic prénatal"
+   ],
+   "pages": [
+    43,
+    45
+   ],
+   "objectives": [
+    "Expliquer le déclenchement de l’accouchement.",
+    "Expliquer la lactation.",
+    "Connaître des techniques de diagnostic prénatal."
+   ],
+   "intro": "Qu’est-ce qui déclenche l’accouchement après neuf mois ?",
+   "summary": "À la fin de la grossesse, l’ACTH de l’hypophyse maternelle stimule les corticosurrénales du fœtus, qui sécrètent du cortisol ; le placenta sécrète alors moins de progestérone et plus d’œstrogènes : le myomètre se contracte. L’ocytocine (posthypophyse) et les prostaglandines renforcent les contractions. L’accouchement (parturition) comporte les contractions utérines, la dilatation du col puis l’expulsion du bébé et du placenta. La lactation est la production de lait par les glandes mammaires après la naissance ; elle est stimulée par la prolactine (hypophyse) ; l’ocytocine provoque l’éjection du lait lors de la tétée ; la succion entretient ce réflexe. Le lait maternel contient eau, graisses, protéines, sucres et anticorps. Le diagnostic prénatal dépiste les anomalies chromosomiques (trisomie 21), des maladies héréditaires et des malformations : échographie (ultrasons, années 1970), amniocentèse (prélèvement de liquide amniotique).",
+   "points": [
+    "Cortisol fœtal → baisse de progestérone.",
+    "Ocytocine et prostaglandines : contractions.",
+    "Prolactine : production du lait.",
+    "Ocytocine : éjection du lait.",
+    "Échographie et amniocentèse."
+   ],
+   "application": {
+    "q": "Pourquoi l’allaitement entretient-il la production de lait ?",
+    "a": "La succion stimule la sécrétion de prolactine et d’ocytocine."
+   },
+   "applications": [
+    {
+     "q": "Que permet l’échographie ?",
+     "a": "Surveiller la croissance du fœtus et dépister certaines malformations."
+    },
+    {
+     "q": "Quelle hormone déclenche la sécrétion de lait ?",
+     "a": "La prolactine."
+    }
+   ],
+   "board": [
+    {
+     "h": "Hormones de la naissance",
+     "lines": [],
+     "table": [
+      [
+       "Hormone",
+       "Origine",
+       "Rôle"
+      ],
+      [
+       "Cortisol",
+       "corticosurrénales du fœtus",
+       "modifie la sécrétion du placenta"
+      ],
+      [
+       "Ocytocine",
+       "posthypophyse",
+       "contractions utérines, éjection du lait"
+      ],
+      [
+       "Prolactine",
+       "hypophyse",
+       "production du lait"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité I : Maîtrise de la procréation — méthodes contraceptives",
+   "match": [
+    "Maîtrise de la procréation — méthodes contraceptives"
+   ],
+   "pages": [
+    46,
+    48
+   ],
+   "objectives": [
+    "Classer les méthodes contraceptives.",
+    "Expliquer leur mode d’action."
+   ],
+   "intro": "Comment un couple peut-il espacer les naissances ?",
+   "summary": "Chez l’Homme, l’activité sexuelle peut être dissociée de la procréation ; les connaissances sur la régulation hormonale ont permis de mettre au point des méthodes de maîtrise de la procréation. Méthodes mécaniques : préservatif masculin ou féminin (empêche la rencontre des gamètes ; protège aussi contre les IST), diaphragme avec spermicide, stérilet ou dispositif intra-utérin (empêche la nidation). Méthodes hormonales : pilule (hormones de synthèse qui bloquent l’ovulation par rétrocontrôle), implant, patch. Méthodes naturelles fondées sur l’observation du cycle (moins fiables). Méthodes définitives : vasectomie, ligature des trompes. La contragestion regroupe des méthodes qui empêchent la poursuite d’une grossesse déjà commencée ; une fausse couche peut aussi survenir spontanément.",
+   "points": [
+    "Mécaniques : préservatif, diaphragme, stérilet.",
+    "Hormonales : pilule, implant, patch.",
+    "Naturelles : moins fiables.",
+    "Définitives : vasectomie, ligature des trompes.",
+    "Préservatif : protège aussi des IST."
+   ],
+   "application": {
+    "q": "Comment agit la pilule contraceptive ?",
+    "a": "Ses hormones freinent l’hypothalamus et l’hypophyse : il n’y a pas d’ovulation."
+   },
+   "applications": [
+    {
+     "q": "Quelle méthode protège aussi contre les IST ?",
+     "a": "Le préservatif."
+    },
+    {
+     "q": "Où est placé le stérilet ?",
+     "a": "Dans l’utérus."
+    }
+   ],
+   "board": [
+    {
+     "h": "Méthodes contraceptives",
+     "lines": [],
+     "table": [
+      [
+       "Méthode",
+       "Mode d’action"
+      ],
+      [
+       "Préservatif",
+       "empêche la rencontre des gamètes"
+      ],
+      [
+       "Stérilet",
+       "empêche la nidation"
+      ],
+      [
+       "Pilule",
+       "bloque l’ovulation"
+      ],
+      [
+       "Ligature des trompes / vasectomie",
+       "définitives"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Notions de base de génétique",
+   "match": [
+    "Notions de base de génétique"
+   ],
+   "pages": [
+    69,
+    72
+   ],
+   "objectives": [
+    "Définir génétique, gène, allèle, génotype, phénotype.",
+    "Définir locus et caryotype ; distinguer autosomes et gonosomes."
+   ],
+   "intro": "Pourquoi un enfant ressemble-t-il à la fois à son père et à sa mère ?",
+   "summary": "La génétique est la science de l’hérédité : elle étudie les caractères héréditaires et leur transmission. Les cellules contiennent le génome, ensemble des gènes. Un gène est une portion d’ADN qui détermine un caractère (taille, couleur…) ; il occupe une position précise sur un chromosome, son locus. Un allèle est une version d’un gène ; chaque individu possède deux allèles de chaque gène, l’un maternel, l’autre paternel. Le génotype est l’écriture des allèles d’un individu ; le phénotype est le caractère exprimé. Le chromosome est une forme condensée de l’ADN visible pendant la division. Le caryotype est la représentation ordonnée des chromosomes d’une cellule : diploïde (2n) ou haploïde (n) ; on distingue autosomes et gonosomes (chromosomes sexuels). Formules : Homme 2n = 46, chien 78, cheval 64, âne 66, palmier dattier 36.",
+   "points": [
+    "Gène, allèle, locus.",
+    "Génotype (allèles) / phénotype (caractère exprimé).",
+    "Caryotype : 2n ou n.",
+    "Autosomes / gonosomes.",
+    "Homme : 2n = 46."
+   ],
+   "application": {
+    "q": "Quelle est la différence entre génotype et phénotype ?",
+    "a": "Le génotype est la combinaison des allèles ; le phénotype est le caractère observable."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce qu’un locus ?",
+     "a": "La position précise d’un gène sur un chromosome."
+    },
+    {
+     "q": "Combien de chromosomes dans un gamète de cheval ?",
+     "a": "32 (n)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Formules chromosomiques",
+     "lines": [],
+     "table": [
+      [
+       "Espèce",
+       "2n"
+      ],
+      [
+       "Homme",
+       "46"
+      ],
+      [
+       "Chien",
+       "78"
+      ],
+      [
+       "Cheval",
+       "64"
+      ],
+      [
+       "Âne",
+       "66"
+      ],
+      [
+       "Palmier dattier",
+       "36"
+      ]
+     ]
+    },
+    {
+     "h": "Vocabulaire",
+     "lines": [
+      "Homozygote : deux allèles identiques ; hétérozygote : deux allèles différents.",
+      "Dominant : s’exprime chez l’hétérozygote ; récessif : masqué.",
+      "Autosomique : gène sur un autosome ; gonosomique : sur un chromosome sexuel."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Monohybridisme avec dominance — les expériences de Mendel",
+   "match": [
+    "Monohybridisme avec dominance — les expériences de Mendel"
+   ],
+   "pages": [
+    72,
+    76
+   ],
+   "objectives": [
+    "Interpréter le croisement de Mendel (graines lisses × ridées).",
+    "Énoncer les deux premières lois de Mendel.",
+    "Utiliser l’échiquier de croisement."
+   ],
+   "intro": "Pourquoi le caractère « ridé » disparaît-il en F1 et réapparaît-il en F2 ?",
+   "summary": "Le monohybridisme est le croisement de deux individus qui diffèrent par un seul caractère (un gène, deux allèles). Mendel croise deux lignées pures de pois : graines lisses × graines ridées ; toute la F1 est lisse : le lisse est dominant (L), le ridé récessif (r). Première loi : uniformité des hybrides de F1. En F2 (F1 × F1), il obtient 787 graines lisses et 277 ridées, soit environ 3/4 et 1/4. Les hybrides Lr produisent deux types de gamètes purs (L ou r) en proportions égales : c’est la deuxième loi, de la pureté des gamètes (disjonction des allèles). L’échiquier de croisement donne 1/4 LL, 2/4 Lr, 1/4 rr, soit 3/4 [L] et 1/4 [r]. Le croisement-test (avec l’homozygote récessif) révèle le génotype d’un individu au phénotype dominant.",
+   "points": [
+    "F1 homogène : 1ʳᵉ loi (uniformité).",
+    "Gamètes purs : 2ᵉ loi (disjonction).",
+    "F2 : 3/4 dominant, 1/4 récessif.",
+    "Génotypes F2 : 1/4, 2/4, 1/4.",
+    "Croisement-test avec l’homozygote récessif."
+   ],
+   "application": {
+    "q": "Une souris grise de génotype inconnu croisée avec une blanche (récessive) donne 50 % de grises et 50 % de blanches. Génotype ?",
+    "a": "Hétérozygote (Gb)."
+   },
+   "applications": [
+    {
+     "q": "13 souris grises et 4 blanches en F2 : quel rapport ?",
+     "a": "Environ 3/4 et 1/4 : monohybridisme avec dominance du gris."
+    },
+    {
+     "q": "Comment savoir si une souris grise est de lignée pure ?",
+     "a": "Faire un croisement-test avec une souris blanche : si toute la descendance est grise, elle est homozygote."
+    }
+   ],
+   "board": [
+    {
+     "h": "Échiquier de la F2 (Lr × Lr)",
+     "lines": [],
+     "table": [
+      [
+       "♂ \\ ♀",
+       "L",
+       "r"
+      ],
+      [
+       "L",
+       "LL [L]",
+       "Lr [L]"
+      ],
+      [
+       "r",
+       "Lr [L]",
+       "rr [r]"
+      ]
+     ]
+    },
+    {
+     "h": "Correction",
+     "lines": [
+      "(Correction : p. 76, la 2ᵉ loi de Mendel est la loi de pureté des gamètes (ségrégation des allèles) ; la ségrégation indépendante de plusieurs caractères est la 3ᵉ loi.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Codominance (absence de dominance)",
+   "match": [
+    "Codominance (absence de dominance)"
+   ],
+   "pages": [
+    77,
+    79
+   ],
+   "objectives": [
+    "Reconnaître un cas de codominance.",
+    "Interpréter les proportions 1/4, 2/4, 1/4."
+   ],
+   "intro": "Comment un croisement de fleurs rouges et blanches peut-il donner des fleurs roses ?",
+   "summary": "Il y a codominance lorsque les deux allèles s’expriment ensemble chez l’hétérozygote, sans dominance de l’un sur l’autre ; l’hybride a un phénotype nouveau (intermédiaire ou mélangé). Muflier : rouges × blanches → F1 100 % roses ; F2 : 1/4 rouges, 2/4 roses, 1/4 blanches. Bovins : vache rouge (RR) × taureau blanc (BB) → F1 tachetés de rouge et blanc (RB) ; F2 : 1/4 rouges, 2/4 tachetés, 1/4 blancs. Les deux lois de Mendel restent vérifiées ; le rapport 1 : 2 : 1 remplace 3 : 1 et chaque phénotype révèle directement le génotype.",
+   "points": [
+    "Codominance : les deux allèles s’expriment.",
+    "F1 : phénotype nouveau.",
+    "F2 : 1/4 – 2/4 – 1/4.",
+    "Le phénotype révèle le génotype."
+   ],
+   "application": {
+    "q": "Poulets gris × gris → 49 blancs, 100 gris, 51 noirs. Interprétation ?",
+    "a": "Rapport 1 : 2 : 1 : codominance ; les gris sont hétérozygotes (BN)."
+   },
+   "applications": [
+    {
+     "q": "Que donne le croisement rose × blanc chez le muflier ?",
+     "a": "1/2 roses et 1/2 blanches."
+    },
+    {
+     "q": "Pourquoi le rapport n’est-il pas 3 : 1 ?",
+     "a": "Parce qu’aucun allèle ne masque l’autre : l’hétérozygote a son propre phénotype."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemple des bovins",
+     "lines": [],
+     "table": [
+      [
+       "Génération",
+       "Génotypes",
+       "Phénotypes"
+      ],
+      [
+       "Parents",
+       "RR × BB",
+       "rouge × blanc"
+      ],
+      [
+       "F1",
+       "RB",
+       "100 % tachetés"
+      ],
+      [
+       "F2",
+       "1/4 RR, 2/4 RB, 1/4 BB",
+       "1/4 rouges, 2/4 tachetés, 1/4 blancs"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Hérédité liée au sexe (chromosome X et chromosome Z)",
+   "match": [
+    "Hérédité liée au sexe (chromosome X et chromosome Z)"
+   ],
+   "pages": [
+    79,
+    81
+   ],
+   "objectives": [
+    "Reconnaître une transmission gonosomique (croisements réciproques différents).",
+    "Interpréter un gène porté par X (drosophile) et par Z (oiseaux)."
+   ],
+   "intro": "Pourquoi le résultat d’un croisement change-t-il quand on inverse le sexe des parents ?",
+   "summary": "Si deux croisements réciproques donnent des résultats différents et que les phénotypes dépendent du sexe, le gène est gonosomique. Chez la drosophile (mâle XY, femelle XX), un mâle aux yeux rouges croisé avec une femelle aux yeux blancs donne des femelles aux yeux rouges et des mâles aux yeux blancs ; le croisement inverse donne une F1 homogène aux yeux rouges : le gène est porté par X et l’allèle rouge (R) domine blanc (b). Le mâle, qui n’a qu’un X, est hémizygote. Chez les oiseaux, le mâle est homogamétique (ZZ) et la femelle hétérogamétique (ZW). Pigeons : mâle bleu × femelle brune → 100 % bleus ; mâle brun × femelle bleue → mâles bleus, femelles brunes : le gène est porté par Z et bleu domine brun.",
+   "points": [
+    "Croisements réciproques différents → gonosomique.",
+    "Drosophile : XX femelle, XY mâle.",
+    "Mâle hémizygote pour X.",
+    "Oiseaux : ZZ mâle, ZW femelle.",
+    "Les fils reçoivent leur X de la mère."
+   ],
+   "application": {
+    "q": "Femelle Xᵇ Xᵇ × mâle Xᴿ Y : descendance ?",
+    "a": "Femelles Xᴿ Xᵇ (yeux rouges), mâles Xᵇ Y (yeux blancs)."
+   },
+   "applications": [
+    {
+     "q": "Un gène porté par Y est transmis de qui à qui ?",
+     "a": "Du père à tous ses fils."
+    },
+    {
+     "q": "Chez les oiseaux, quel sexe est hétérogamétique ?",
+     "a": "La femelle (ZW)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Drosophile (gène porté par X)",
+     "lines": [],
+     "table": [
+      [
+       "Croisement",
+       "Femelles F1",
+       "Mâles F1"
+      ],
+      [
+       "♀ Xᵇ Xᵇ × ♂ Xᴿ Y",
+       "Xᴿ Xᵇ [rouge]",
+       "Xᵇ Y [blanc]"
+      ],
+      [
+       "♀ Xᴿ Xᴿ × ♂ Xᵇ Y",
+       "Xᴿ Xᵇ [rouge]",
+       "Xᴿ Y [rouge]"
+      ]
+     ]
+    },
+    {
+     "h": "Pigeons (gène porté par Z)",
+     "lines": [
+      "♂ Zᴮ Zᴮ × ♀ Zᵇ W → tous bleus.",
+      "♂ Zᵇ Zᵇ × ♀ Zᴮ W → mâles Zᴮ Zᵇ bleus, femelles Zᵇ W brunes.",
+      "(Correction : p. 80, dans le croisement 2, ce sont les femelles de F1 qui ont le phénotype du père ; les mâles ont celui de la mère.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Cas particuliers — gène létal et gène influencé par le sexe",
+   "match": [
+    "Cas particuliers — gène létal et gène influencé par le sexe"
+   ],
+   "pages": [
+    81,
+    83
+   ],
+   "objectives": [
+    "Reconnaître un gène létal (proportions 2/3 – 1/3).",
+    "Interpréter un gène influencé par le sexe.",
+    "Faire le bilan des proportions caractéristiques."
+   ],
+   "intro": "Pourquoi le croisement de souris jaunes ne donne-t-il jamais de souris jaunes de lignée pure ?",
+   "summary": "Un gène létal entraîne la mort de l’individu qui le porte (souvent à l’état homozygote). Souris jaune × souris jaune → 2/3 jaunes et 1/3 noires (au lieu de 3/4 – 1/4) : l’allèle jaune J est dominant pour la couleur mais létal à l’état homozygote ; les individus JJ meurent avant la naissance. Un gène influencé par le sexe est autosomique, mais la dominance varie selon le sexe à cause des hormones : chez les moutons, Dorset (cornes) × Suffolk (sans cornes) donne, dans les deux sens, des mâles F1 à cornes et des femelles sans cornes ; en F2 : mâles 3/4 à cornes, femelles 3/4 sans cornes. Bilan : 100 % homogène → parents purs ; 3/4 – 1/4 → dominance ; 1/4 – 2/4 – 1/4 → codominance ; 2/3 – 1/3 → gène létal ; résultats différents selon le sexe dans les croisements réciproques → gène gonosomique.",
+   "points": [
+    "Gène létal : 2/3 – 1/3.",
+    "JJ meurent avant la naissance.",
+    "Influencé par le sexe : autosomique, dominance selon le sexe.",
+    "Le bilan des proportions identifie le cas."
+   ],
+   "application": {
+    "q": "Taureau et vache normaux (Aa) donnent un veau amputé (aa). Probabilité d’un autre veau amputé ?",
+    "a": "1/4."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi obtient-on 2/3 et 1/3 avec un gène létal ?",
+     "a": "Le quart homozygote dominant meurt ; il reste 2 hétérozygotes pour 1 homozygote récessif."
+    },
+    {
+     "q": "Un gène influencé par le sexe est-il porté par X ?",
+     "a": "Non, il est autosomique ; son expression dépend des hormones."
+    }
+   ],
+   "board": [
+    {
+     "h": "Bilan des proportions",
+     "lines": [],
+     "table": [
+      [
+       "Proportions",
+       "Cas"
+      ],
+      [
+       "100 % homogène en F1",
+       "parents de lignées pures"
+      ],
+      [
+       "3/4 – 1/4",
+       "dominance"
+      ],
+      [
+       "1/4 – 2/4 – 1/4",
+       "codominance"
+      ],
+      [
+       "2/3 – 1/3",
+       "gène létal"
+      ],
+      [
+       "différent selon le sexe (croisements réciproques)",
+       "gène gonosomique"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unité II : Mendel et les lois de l’hérédité (documents)",
+   "match": [
+    "Mendel et les lois de l’hérédité (documents)"
+   ],
+   "pages": [
+    90,
+    100
+   ],
+   "objectives": [
+    "Connaître la démarche de Mendel.",
+    "Énoncer les trois lois de Mendel.",
+    "Distinguer dominance complète et dominance incomplète."
+   ],
+   "intro": "Comment un moine du XIXᵉ siècle a-t-il découvert les lois de l’hérédité ?",
+   "summary": "Gregor Mendel, moine, publie il y a environ 150 ans les résultats de croisements de pois. Il choisit des lignées pures, étudie des caractères simples et nets (forme et couleur des graines, couleur des fleurs…), réalise des fécondations contrôlées et compte les descendants sur de grands nombres. Ses trois lois : 1) uniformité des hybrides de première génération ; 2) pureté des gamètes (chaque gamète ne reçoit qu’un allèle de chaque gène, d’où la ségrégation en F2) ; 3) ségrégation indépendante des caractères (pour deux gènes différents). Il nomme dominant le caractère exprimé en F1 et récessif celui qui est masqué. Lorsqu’aucun allèle ne domine, un mélange peut apparaître : dominance incomplète. Le croisement-test (individu dominant × homozygote récessif) permet de connaître le génotype d’un individu.",
+   "points": [
+    "Mendel : pois, lignées pures, grands nombres.",
+    "1ʳᵉ loi : uniformité de F1.",
+    "2ᵉ loi : pureté des gamètes.",
+    "3ᵉ loi : indépendance des caractères.",
+    "Croisement-test."
+   ],
+   "application": {
+    "q": "Pourquoi Mendel utilisait-il des lignées pures ?",
+    "a": "Pour être sûr que les parents sont homozygotes et interpréter les résultats."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce qu’un croisement-test ?",
+     "a": "Le croisement d’un individu de phénotype dominant avec un homozygote récessif."
+    },
+    {
+     "q": "Le génotype détermine-t-il toujours entièrement le phénotype ?",
+     "a": "Non, le milieu peut aussi influencer le phénotype."
+    }
+   ],
+   "board": [
+    {
+     "h": "Les trois lois de Mendel",
+     "lines": [],
+     "table": [
+      [
+       "Loi",
+       "Énoncé"
+      ],
+      [
+       "1ʳᵉ",
+       "uniformité des hybrides F1"
+      ],
+      [
+       "2ᵉ",
+       "pureté des gamètes (disjonction des allèles)"
+      ],
+      [
+       "3ᵉ",
+       "ségrégation indépendante des caractères"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "6A"
+}
