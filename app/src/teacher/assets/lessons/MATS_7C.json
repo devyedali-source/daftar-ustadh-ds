@@ -1,0 +1,1345 @@
+{
+ "subject": "MATS",
+ "book": "books/MATS_7C.pdf",
+ "bookTitle": "Mathématiques 7ème C",
+ "lessons": [
+  {
+   "title": "Chapitre 1 : Systèmes linéaires et méthode de Gauss",
+   "match": [
+    "Systèmes linéaires et méthode de Gauss"
+   ],
+   "pages": [
+    7,
+    9
+   ],
+   "objectives": [
+    "Reconnaître un système linéaire, carré, triangulaire.",
+    "Utiliser les opérations élémentaires sur les lignes.",
+    "Résoudre un système par la méthode du pivot de Gauss."
+   ],
+   "intro": "Comment résoudre rapidement un système de 4 équations à 4 inconnues ?",
+   "summary": "Un système linéaire de n équations à p inconnues s’écrit ai1x1 + … + aipxp = bi ; il est carré si n = p, triangulaire supérieur si les coefficients sous la diagonale sont nuls. Une solution est un p-uplet vérifiant toutes les équations ; deux systèmes sont équivalents s’ils ont les mêmes solutions. On obtient un système équivalent en échangeant deux lignes (Li ↔ Lj), en multipliant une ligne par un réel non nul (Li ← αLi), en ajoutant à une ligne un multiple d’une autre (Li ← Li + βLj), en échangeant l’ordre des inconnues ou en supprimant une ligne répétée. Méthode de Gauss : on choisit un pivot (coefficient non nul de x1) en L1, on élimine x1 des autres lignes, puis on recommence avec x2… jusqu’à un système triangulaire qu’on résout par substitution en remontant.",
+   "points": [
+    "Système carré, triangulaire.",
+    "Opérations élémentaires : Li ↔ Lj ; Li ← αLi ; Li ← Li + βLj.",
+    "Pivot de Gauss → système triangulaire.",
+    "Résolution par remontée."
+   ],
+   "application": {
+    "q": "Résoudre x + y + z = 5 ; y − z = 4 ; 2z = −6.",
+    "a": "z = −3, y = 1, x = 7 : solution (7 ; 1 ; −3)."
+   },
+   "applications": [
+    {
+     "q": "Résoudre x + y − 2z = −7 ; 2x − y + z = 0 ; 2x + y + z = 8.",
+     "a": "z = 26/5, y = 4, x = −3/5."
+    },
+    {
+     "q": "Deux systèmes sont-ils équivalents s’ils ont le même nombre d’équations ?",
+     "a": "Non : ils doivent avoir le même ensemble de solutions."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemple du manuel (4 inconnues)",
+     "lines": [
+      "x + y + z + t = 1 ; x + y + 2z + 2t = 1 ; x + 3y + 3z + t = 3 ; 2x + 3y + z + t = 4.",
+      "L2 ← L2 − L1 ; L3 ← L3 − L1 ; L4 ← L4 − 2L1, puis réorganisation → système triangulaire.",
+      "Solution unique : (−1 ; 2 ; −1 ; 1)."
+     ]
+    },
+    {
+     "h": "Codage des opérations",
+     "lines": [],
+     "table": [
+      [
+       "Opération",
+       "Codage"
+      ],
+      [
+       "Échanger deux lignes",
+       "Li ↔ Lj"
+      ],
+      [
+       "Multiplier par α ≠ 0",
+       "Li ← αLi"
+      ],
+      [
+       "Ajouter un multiple",
+       "Li ← Li + βLj"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 1 : Matrices, déterminants et inverse",
+   "match": [
+    "Matrices, déterminants et inverse"
+   ],
+   "pages": [
+    9,
+    24
+   ],
+   "objectives": [
+    "Calculer avec les matrices (somme, produit, transposée).",
+    "Calculer un déterminant d’ordre 2 ou 3 (Sarrus, cofacteurs).",
+    "Calculer l’inverse d’une matrice et résoudre AX = B."
+   ],
+   "intro": "Comment écrire un système sous la forme d’une seule égalité AX = B ?",
+   "summary": "Une matrice n × m est un tableau de n lignes et m colonnes ; elle est carrée si n = m ; I2, I3 sont les matrices unités. Somme et produit par un réel se font terme à terme ; la transposée échange lignes et colonnes. Le produit AB (A de format n × m, B de format m × p) est la matrice n × p de terme cij = Σ aik bkj : il existe si le nombre de colonnes de A égale le nombre de lignes de B ; en général AB ≠ BA. Déterminant d’ordre 2 : ad − bc. Ordre 3 : règle de Sarrus ou développement selon une ligne ou une colonne avec les cofacteurs Cij = (−1)^(i+j) Mij (Mij mineur). La comatrice com(A) est la matrice des cofacteurs. A est inversible si et seulement si det A ≠ 0, et A⁻¹ = (1/det A) · ᵗcom(A) ; on peut aussi obtenir A⁻¹ par la méthode du pivot de Gauss appliquée à (A | I3). Un système s’écrit AX = B ; si A est inversible, X = A⁻¹B.",
+   "points": [
+    "Produit : ligne × colonne ; AB ≠ BA.",
+    "det (2×2) = ad − bc ; Sarrus pour 3×3.",
+    "Cofacteur Cij = (−1)^(i+j) Mij.",
+    "A inversible ⇔ det A ≠ 0 ; A⁻¹ = ᵗcom(A)/det A.",
+    "AX = B ⇒ X = A⁻¹B."
+   ],
+   "application": {
+    "q": "Inverse de A = [[0, 3], [1, 1]] ?",
+    "a": "det A = −3 ; com(A) = [[1, −1], [−3, 0]] ; A⁻¹ = −(1/3)[[1, −3], [−1, 0]] = [[−1/3, 1], [1/3, 0]]."
+   },
+   "applications": [
+    {
+     "q": "Le produit d’une matrice 2 × 3 par une matrice 2 × 3 existe-t-il ?",
+     "a": "Non : il faut 3 lignes pour la seconde matrice."
+    },
+    {
+     "q": "det [[2, 1], [5, 3]] ?",
+     "a": "2·3 − 1·5 = 1 : la matrice est inversible."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemple 3 × 3 du manuel",
+     "lines": [
+      "A = [[1, 1, 2], [0, 3, 1], [2, −1, −2]].",
+      "Développement selon L2 : M21 = 0, M22 = −6, M23 = −3 ; C21 = 0, C22 = −6, C23 = 3.",
+      "det A = 0·0 + 3·(−6) + 1·3 = −15.",
+      "com(A) = [[−5, 2, −6], [0, −6, 3], [−5, −1, 3]] ; A⁻¹ = −(1/15) ᵗcom(A)."
+     ]
+    },
+    {
+     "h": "Résolution par l’inverse",
+     "lines": [
+      "A = [[1, 3, 1], [2, 5, 2], [−1, 4, −3]] ; det A = 2.",
+      "A⁻¹ = [[−23/2, 13/2, 1/2], [2, −1, 0], [13/2, −7/2, −1/2]].",
+      "AX = (1 ; 0 ; 1) ⇒ X = (−11 ; 2 ; 6)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 2 : Divisibilité, division euclidienne, nombres premiers, PGCD",
+   "match": [
+    "Divisibilité, division euclidienne, nombres premiers, PGCD"
+   ],
+   "pages": [
+    25,
+    28
+   ],
+   "objectives": [
+    "Utiliser les propriétés de la divisibilité dans ℤ.",
+    "Effectuer une division euclidienne dans ℤ.",
+    "Reconnaître un nombre premier ; décomposer en facteurs premiers ; calculer un PGCD par l’algorithme d’Euclide."
+   ],
+   "intro": "Comment savoir si 101 est premier sans essayer tous les diviseurs ?",
+   "summary": "a divise b (a | b) s’il existe q ∈ ℤ tel que b = aq. Si a | b et b | c alors a | c ; si a | b et a | c alors a | (kb + lc). Division euclidienne : pour b ≠ 0, il existe un unique couple (q ; r) tel que a = bq + r et 0 ≤ r < |b|. Un entier p ≥ 2 est premier si ses seuls diviseurs positifs sont 1 et p ; il existe une infinité de nombres premiers ; pour tester a, on le divise par les nombres premiers b tant que b² ≤ a. Le crible d’Ératosthène donne les premiers dans l’ordre. Tout entier n > 1 se décompose de façon unique (à l’ordre près) en produit de facteurs premiers. Le PGCD de a et b est le plus grand diviseur commun ; le PPCM le plus petit multiple commun non nul ; l’algorithme d’Euclide donne le PGCD (dernier reste non nul). Les diviseurs communs sont les diviseurs du PGCD.",
+   "points": [
+    "a | b ⇔ b = aq.",
+    "a = bq + r, 0 ≤ r < |b|.",
+    "Test de primalité : diviseurs premiers b avec b² ≤ a.",
+    "Décomposition unique en facteurs premiers.",
+    "Algorithme d’Euclide : PGCD = dernier reste non nul."
+   ],
+   "application": {
+    "q": "Division euclidienne de −12 par 5 ?",
+    "a": "−12 = 5 × (−3) + 3 : q = −3, r = 3."
+   },
+   "applications": [
+    {
+     "q": "91 est-il premier ?",
+     "a": "Non : 91 = 7 × 13."
+    },
+    {
+     "q": "Divisions de 12 par −5 ?",
+     "a": "12 = (−5)(−2) + 2."
+    }
+   ],
+   "board": [
+    {
+     "h": "Algorithme d’Euclide : PGCD(385 ; 324)",
+     "lines": [],
+     "table": [
+      [
+       "Dividende",
+       "Diviseur",
+       "Quotient",
+       "Reste"
+      ],
+      [
+       "385",
+       "324",
+       "1",
+       "61"
+      ],
+      [
+       "324",
+       "61",
+       "5",
+       "19"
+      ],
+      [
+       "61",
+       "19",
+       "3",
+       "4"
+      ],
+      [
+       "19",
+       "4",
+       "4",
+       "3"
+      ],
+      [
+       "4",
+       "3",
+       "1",
+       "1"
+      ],
+      [
+       "3",
+       "1",
+       "3",
+       "0"
+      ]
+     ]
+    },
+    {
+     "h": "Décompositions",
+     "lines": [
+      "180 = 2² × 3² × 5 ; 385 = 5 × 7 × 11 ; 324 = 2² × 3⁴ : PGCD(385 ; 324) = 1."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 2 : Bézout, Gauss, congruences, Fermat et équations diophantiennes",
+   "match": [
+    "Bézout, Gauss, congruences, Fermat et équations diophantiennes"
+   ],
+   "pages": [
+    29,
+    36
+   ],
+   "objectives": [
+    "Utiliser les théorèmes de Bézout et de Gauss.",
+    "Calculer avec les congruences.",
+    "Appliquer le petit théorème de Fermat ; résoudre ax + by = c ; changer de base."
+   ],
+   "intro": "Comment trouver tous les couples d’entiers (x ; y) tels que 62x + 43y = 1 ?",
+   "summary": "a et b sont premiers entre eux si PGCD(a ; b) = 1. Théorème de Bézout : a et b sont premiers entre eux si et seulement s’il existe u, v ∈ ℤ tels que au + bv = 1. Théorème de Gauss : si c divise ab et si c est premier avec a, alors c divise b. Congruences : a ≡ b [n] si n divise a − b, c’est-à-dire si a et b ont le même reste dans la division par n ; elles sont compatibles avec l’addition, la soustraction, la multiplication et les puissances (ex. 10 ≡ −1 [11] donne le critère de divisibilité par 11). Petit théorème de Fermat : si p est premier, aᵖ ≡ a [p] pour tout entier a, et aᵖ⁻¹ ≡ 1 [p] si p ne divise pas a. Équation ax + by = c : soit d = PGCD(a ; b) ; si d ne divise pas c, pas de solution ; sinon on trouve une solution particulière (algorithme d’Euclide « remonté ») puis la solution générale par le théorème de Gauss. Numération : pour écrire un nombre en base B, on fait des divisions successives par B et on lit les restes à l’envers.",
+   "points": [
+    "Bézout : au + bv = 1 ⇔ PGCD = 1.",
+    "Gauss : c | ab et PGCD(c ; a) = 1 ⇒ c | b.",
+    "a ≡ b [n] ⇔ même reste.",
+    "Fermat : aᵖ ≡ a [p].",
+    "ax + by = c : solution particulière + Gauss."
+   ],
+   "application": {
+    "q": "Résoudre 62x + 43y = 1 dans ℤ².",
+    "a": "62(−9) + 43(13) = 1 ; solutions (−9 + 43k ; 13 − 62k), k ∈ ℤ."
+   },
+   "applications": [
+    {
+     "q": "Écrire 13 en base 2.",
+     "a": "13 = 1101 (base 2)."
+    },
+    {
+     "q": "Reste de 10¹⁰⁰ dans la division par 11 ?",
+     "a": "10 ≡ −1 [11] ⇒ 10¹⁰⁰ ≡ 1 [11] : reste 1."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemple : n⁵ − n est divisible par 30",
+     "lines": [
+      "Fermat (p = 5) : 5 | n⁵ − n.",
+      "n⁵ − n = n(n − 1)(n + 1)(n² + 1) : 2 et 3 divisent n(n − 1)(n + 1).",
+      "2, 3, 5 premiers entre eux deux à deux ⇒ 30 | n⁵ − n."
+     ]
+    },
+    {
+     "h": "Algorithme d’Euclide pour 62 et 43",
+     "lines": [
+      "62 = 43 × 1 + 19 ; 43 = 19 × 2 + 5 ; 19 = 5 × 3 + 4 ; 5 = 4 × 1 + 1.",
+      "En remontant : 62 × (−9) + 43 × 13 = 1."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 3 : Nombres complexes — forme algébrique, module, argument, équations",
+   "match": [
+    "Nombres complexes — forme algébrique, module, argument, équations"
+   ],
+   "pages": [
+    37,
+    44
+   ],
+   "objectives": [
+    "Utiliser la forme algébrique, le conjugué, le module et l’argument.",
+    "Passer à la forme trigonométrique.",
+    "Résoudre une équation du second degré dans ℂ."
+   ],
+   "intro": "L’équation x² + x + 1 = 0 n’a pas de solution réelle. En a-t-elle d’autres ?",
+   "summary": "ℂ est l’ensemble des nombres z = x + iy (x, y réels) avec i² = −1 ; x = Re(z), y = Im(z) ; z est réel si Im(z) = 0, imaginaire pur si Re(z) = 0. Dans un repère orthonormé direct, z est l’affixe du point M(x ; y). Conjugué : z̄ = x − iy ; il est compatible avec les opérations. Module : |z| = OM = √(x² + y²) ; |zz’| = |z||z’| ; |z + z’| ≤ |z| + |z’| ; AB = |zB − zA|. Argument : arg z = (u⃗ ; OM⃗) [2π] ; arg(zz’) = arg z + arg z’ ; arg(z/z’) = arg z − arg z’ ; arg(zⁿ) = n arg z. Forme trigonométrique : z = r(cos θ + i sin θ) avec r = |z|, θ = arg z. Équation az² + bz + c = 0 (a ≠ 0) : Δ = b² − 4ac ; si δ est une racine carrée de Δ, les solutions sont (−b ± δ)/(2a) ; à coefficients réels et Δ < 0, les solutions sont conjuguées (−b ± i√(−Δ))/(2a).",
+   "points": [
+    "z = x + iy ; i² = −1.",
+    "|z| = √(x² + y²) ; AB = |zB − zA|.",
+    "arg(zz’) = arg z + arg z’.",
+    "z = r(cos θ + i sin θ).",
+    "Δ < 0 (réels) : solutions conjuguées."
+   ],
+   "application": {
+    "q": "Forme trigonométrique de 1 + i et 1 − i ?",
+    "a": "1 + i = √2(cos π/4 + i sin π/4) ; 1 − i = √2(cos(−π/4) + i sin(−π/4))."
+   },
+   "applications": [
+    {
+     "q": "Module de 3 + 4i ?",
+     "a": "5."
+    },
+    {
+     "q": "Résoudre z² + z + 1 = 0.",
+     "a": "Δ = −3 ⇒ z = (−1 ± i√3)/2."
+    }
+   ],
+   "board": [
+    {
+     "h": "Équations du second degré (exemples du manuel)",
+     "lines": [
+      "z² − 2z cos θ + 1 = 0 : Δ’ = −sin² θ ⇒ z = cos θ ± i sin θ.",
+      "3x² + 2x + 2 = 0 : Δ’ = 1 − 6 = −5 ⇒ x = (−1 ± i√5)/3."
+     ]
+    },
+    {
+     "h": "Propriétés du module et de l’argument",
+     "lines": [],
+     "table": [
+      [
+       "Opération",
+       "Module",
+       "Argument"
+      ],
+      [
+       "zz’",
+       "|z||z’|",
+       "arg z + arg z’"
+      ],
+      [
+       "z/z’",
+       "|z|/|z’|",
+       "arg z − arg z’"
+      ],
+      [
+       "zⁿ",
+       "|z|ⁿ",
+       "n arg z"
+      ],
+      [
+       "z̄",
+       "|z|",
+       "−arg z"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 4 : Nombres complexes — forme exponentielle, géométrie, racines n-ièmes",
+   "match": [
+    "Nombres complexes — forme exponentielle, géométrie, racines n-ièmes"
+   ],
+   "pages": [
+    45,
+    62
+   ],
+   "objectives": [
+    "Utiliser la notation e^(iθ), les formules d’Euler et de Moivre.",
+    "Interpréter géométriquement (c − a)/(b − a) ; reconnaître translations et rotations.",
+    "Calculer les racines n-ièmes de l’unité et d’un complexe."
+   ],
+   "intro": "Comment trouver les trois nombres complexes dont le cube vaut 1 ?",
+   "summary": "On note e^(iθ) = cos θ + i sin θ ; tout complexe non nul s’écrit z = re^(iθ) (forme exponentielle), et e^(iθ)e^(iθ’) = e^(i(θ+θ’)). Formules d’Euler : cos θ = (e^(iθ) + e^(−iθ))/2, sin θ = (e^(iθ) − e^(−iθ))/(2i) (linéarisation) ; formule de Moivre : (cos θ + i sin θ)ⁿ = cos nθ + i sin nθ. Si A, B, C ont pour affixes a, b, c : |(c − a)/(b − a)| = AC/AB et arg((c − a)/(b − a)) = (AB⃗ ; AC⃗). Ensembles de points : |(z − b)/(z − a)| = 1 ⇔ M sur la médiatrice de [AB] ; argument 0 ou π : droite (AB) privée de A, B ; ±π/2 : cercle de diamètre [AB] privé de A et B. z’ = z + a est une translation ; z’ = e^(iθ)z une rotation de centre O d’angle θ (z’ = iz : quart de tour direct ; z’ = −z : symétrie centrale). Racines n-ièmes de l’unité : e^(2ikπ/n), k = 0, …, n − 1 ; leur somme est nulle ; leurs images forment un polygone régulier. Pour n = 3 : 1, j, j² avec 1 + j + j² = 0. Tout complexe Z = |Z|e^(iθ) ≠ 0 a n racines n-ièmes : ⁿ√|Z| · e^(i(θ/n + 2kπ/n)).",
+   "points": [
+    "z = re^(iθ).",
+    "Euler et Moivre.",
+    "arg((c − a)/(b − a)) = (AB⃗ ; AC⃗).",
+    "Racines n-ièmes de 1 : e^(2ikπ/n), somme nulle.",
+    "1 + j + j² = 0."
+   ],
+   "application": {
+    "q": "Racines cubiques de 1 + i ?",
+    "a": "1 + i = √2 e^(iπ/4) ; racines : 2^(1/6) e^(iπ/12), 2^(1/6) e^(i3π/4), 2^(1/6) e^(i17π/12)."
+   },
+   "applications": [
+    {
+     "q": "Racines carrées de l’unité ?",
+     "a": "1 et −1."
+    },
+    {
+     "q": "Linéariser cos² θ.",
+     "a": "cos² θ = (1 + cos 2θ)/2."
+    }
+   ],
+   "board": [
+    {
+     "h": "Ensembles de points (Z = (z − b)/(z − a))",
+     "lines": [],
+     "table": [
+      [
+       "Condition",
+       "Ensemble"
+      ],
+      [
+       "|Z| = 1",
+       "médiatrice de [AB]"
+      ],
+      [
+       "arg Z = 0 [π]",
+       "droite (AB) privée de A et B"
+      ],
+      [
+       "arg Z = π/2 [π]",
+       "cercle de diamètre [AB] privé de A et B"
+      ]
+     ]
+    },
+    {
+     "h": "Transformations",
+     "lines": [],
+     "table": [
+      [
+       "Écriture",
+       "Transformation"
+      ],
+      [
+       "z’ = z + a",
+       "translation de vecteur d’affixe a"
+      ],
+      [
+       "z’ = e^(iθ) z",
+       "rotation de centre O, d’angle θ"
+      ],
+      [
+       "z’ = iz",
+       "quart de tour direct"
+      ],
+      [
+       "z’ = −z",
+       "symétrie de centre O"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 5 : Généralités sur les fonctions — parité, symétries, limites, asymptotes",
+   "match": [
+    "Généralités sur les fonctions — parité, symétries, limites, asymptotes"
+   ],
+   "pages": [
+    63,
+    66
+   ],
+   "objectives": [
+    "Déterminer le domaine de définition, la parité, la périodicité.",
+    "Montrer qu’une droite ou un point est élément de symétrie.",
+    "Calculer des limites et déterminer les asymptotes."
+   ],
+   "intro": "Comment savoir qu’une courbe a un axe de symétrie sans la tracer ?",
+   "summary": "Df est l’ensemble des réels x pour lesquels f(x) existe. f est paire si Df est symétrique par rapport à 0 et f(−x) = f(x) ; impaire si f(−x) = −f(x) ; périodique de période T si f(x + T) = f(x). La droite x = a est axe de symétrie de C si f(2a − x) = f(x) (ou si f est paire dans le repère d’origine O’(a ; 0)) ; le point (a ; b) est centre de symétrie si f(2a − x) + f(x) = 2b. Les théorèmes sur les limites d’une somme, d’un produit et d’un quotient laissent des formes indéterminées (∞ − ∞, 0 × ∞, ∞/∞, 0/0). Asymptotes : si lim(x→x0) f(x) = ±∞, la droite x = x0 est asymptote verticale ; si lim(x→±∞) f(x) = l, la droite y = l est asymptote horizontale ; si lim [f(x) − (ax + b)] = 0, la droite y = ax + b est asymptote oblique. Si f(x)/x tend vers ±∞, la courbe a une branche parabolique de direction (Oy).",
+   "points": [
+    "Paire : f(−x) = f(x) ; impaire : f(−x) = −f(x).",
+    "Axe x = a : f(2a − x) = f(x).",
+    "Centre (a ; b) : f(2a − x) + f(x) = 2b.",
+    "Formes indéterminées.",
+    "Asymptotes verticale, horizontale, oblique."
+   ],
+   "application": {
+    "q": "Montrer que x = 2 est axe de symétrie de la courbe de f(x) = 4/(x(x − 4)).",
+    "a": "f(4 − x) = 4/((4 − x)(−x)) = 4/(x(x − 4)) = f(x)."
+   },
+   "applications": [
+    {
+     "q": "f(x) = x³ est-elle paire ou impaire ?",
+     "a": "Impaire : (−x)³ = −x³."
+    },
+    {
+     "q": "Que signifie lim(x→±∞) f(x)/x = ±∞ ?",
+     "a": "La courbe a une branche parabolique de direction (Oy)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemples d’asymptotes",
+     "lines": [],
+     "table": [
+      [
+       "Fonction",
+       "Limite",
+       "Asymptote"
+      ],
+      [
+       "1/x²",
+       "→ +∞ en 0",
+       "x = 0"
+      ],
+      [
+       "2 − 1/x",
+       "→ 2 en ±∞",
+       "y = 2"
+      ],
+      [
+       "x + 1 − 1/(x − 3)",
+       "f(x) − (x + 1) → 0",
+       "y = x + 1"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 5 : Continuité, dérivabilité, point d’inflexion, bijection réciproque",
+   "match": [
+    "Continuité, dérivabilité, point d’inflexion, bijection réciproque"
+   ],
+   "pages": [
+    67,
+    78
+   ],
+   "objectives": [
+    "Utiliser le théorème des valeurs intermédiaires.",
+    "Étudier la dérivabilité (à droite, à gauche) et interpréter géométriquement.",
+    "Calculer la dérivée d’une composée et d’une réciproque ; trouver un point d’inflexion."
+   ],
+   "intro": "Une fonction continue qui change de signe s’annule-t-elle forcément ?",
+   "summary": "f est continue en a si lim(x→a) f(x) = f(a) ; si f n’est pas définie en a mais a une limite finie l, son prolongement par continuité vaut l en a. L’image d’un intervalle par une fonction continue est un intervalle (d’un segment, un segment [m ; M]). Théorème des valeurs intermédiaires : si f est continue sur [a ; b], tout réel k entre f(a) et f(b) a au moins un antécédent ; si de plus f est strictement monotone, il est unique ; en particulier si f(a)f(b) < 0, f s’annule. f est dérivable en x0 si [f(x0 + h) − f(x0)]/h a une limite finie f’(x0) : la tangente a pour pente f’(x0) ; une limite infinie donne une tangente verticale ; des dérivées à droite et à gauche différentes donnent un point anguleux. (g ∘ f)’ = f’ × g’ ∘ f. Si f’’ s’annule en a en changeant de signe, le point d’abscisse a est un point d’inflexion. Une fonction continue strictement monotone sur I est une bijection de I sur f(I) ; si f’(x0) ≠ 0, (f⁻¹)’(y0) = 1/f’(f⁻¹(y0)).",
+   "points": [
+    "TVI : f continue, k entre f(a) et f(b).",
+    "Monotone stricte : solution unique.",
+    "Dérivée à droite ≠ à gauche : point anguleux.",
+    "f’’ change de signe : point d’inflexion.",
+    "(f⁻¹)’(y0) = 1/f’(x0)."
+   ],
+   "application": {
+    "q": "f(x) = x⁵ + x + 1 : calculer (f⁻¹)’(3).",
+    "a": "f(1) = 3 ; f’(x) = 5x⁴ + 1 ⇒ f’(1) = 6 ; (f⁻¹)’(3) = 1/6."
+   },
+   "applications": [
+    {
+     "q": "(f⁻¹)’(1) pour f(x) = x⁵ + x + 1 ?",
+     "a": "f(0) = 1, f’(0) = 1 ⇒ (f⁻¹)’(1) = 1."
+    },
+    {
+     "q": "Pourquoi x³ − x − 1 = 0 a-t-elle une solution entre 1 et 2 ?",
+     "a": "f(1) = −1 < 0, f(2) = 5 > 0 et f est continue : TVI."
+    }
+   ],
+   "board": [
+    {
+     "h": "Dérivées successives",
+     "lines": [],
+     "table": [
+      [
+       "f(x)",
+       "f⁽ⁿ⁾(x)"
+      ],
+      [
+       "xⁿ",
+       "n!"
+      ],
+      [
+       "sin x",
+       "sin(x + nπ/2)"
+      ],
+      [
+       "cos x",
+       "cos(x + nπ/2)"
+      ]
+     ]
+    },
+    {
+     "h": "Dérivée d’une composée",
+     "lines": [
+      "h(x) = √(x² + x + 1) : h’(x) = (2x + 1)/(2√(x² + x + 1))."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 6 : Fonctions logarithme népérien et exponentielle",
+   "match": [
+    "Fonctions logarithme népérien et exponentielle"
+   ],
+   "pages": [
+    79,
+    86
+   ],
+   "objectives": [
+    "Connaître les propriétés algébriques, les limites et les dérivées de ln et exp.",
+    "Utiliser les puissances réelles aᵇ = e^(b ln a).",
+    "Connaître les croissances comparées."
+   ],
+   "intro": "Pourquoi ln transforme-t-elle les produits en sommes ?",
+   "summary": "ln est la fonction dérivable sur ]0 ; +∞[ de dérivée 1/x qui s’annule en 1 ; elle est strictement croissante, négative sur ]0 ; 1[, positive sur ]1 ; +∞[. ln(ab) = ln a + ln b ; ln(a/b) = ln a − ln b ; ln(aᵖ) = p ln a ; ln √a = ½ ln a. ln est une bijection de ]0 ; +∞[ sur ℝ ; e est le réel tel que ln e = 1 (e ≈ 2,718). Limites : ln x → +∞ en +∞, → −∞ en 0⁺ ; ln x/x → 0 ; x ln x → 0 en 0⁺ ; ln(1 + h)/h → 1. (ln u)’ = u’/u ; u’/u a pour primitive ln|u|. exp est la réciproque de ln : y = eˣ ⇔ x = ln y ; eˣ > 0 ; e^(a+b) = eᵃeᵇ ; (eˣ)’ = eˣ ; (eᵘ)’ = u’eᵘ ; eˣ → +∞ en +∞, → 0 en −∞ ; eˣ/x → +∞ ; xeˣ → 0 en −∞. Pour a > 0 : aᵇ = e^(b ln a) ; (aˣ)’ = (ln a)aˣ ; log_a x = ln x / ln a. Croissances comparées : eˣ/xⁿ → +∞ et ln x/xⁿ → 0 en +∞.",
+   "points": [
+    "(ln x)’ = 1/x ; ln(ab) = ln a + ln b.",
+    "(eˣ)’ = eˣ ; e^(a+b) = eᵃeᵇ.",
+    "(ln u)’ = u’/u ; (eᵘ)’ = u’eᵘ.",
+    "aᵇ = e^(b ln a).",
+    "Croissances comparées : l’exponentielle l’emporte, le logarithme est dominé."
+   ],
+   "application": {
+    "q": "Résoudre ln(2x − 1) = 0.",
+    "a": "2x − 1 = 1 ⇒ x = 1 (avec 2x − 1 > 0)."
+   },
+   "applications": [
+    {
+     "q": "Dérivée de ln(x² + 1) ?",
+     "a": "2x/(x² + 1)."
+    },
+    {
+     "q": "Écrire 2^√3 avec l’exponentielle.",
+     "a": "2^√3 = e^(√3 ln 2)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Tableau de variations de ln",
+     "lines": [],
+     "table": [
+      [
+       "x",
+       "0",
+       "1",
+       "e",
+       "+∞"
+      ],
+      [
+       "ln x",
+       "−∞",
+       "0",
+       "1",
+       "+∞"
+      ]
+     ]
+    },
+    {
+     "h": "Limites usuelles",
+     "lines": [
+      "lim(x→+∞) ln x/x = 0 ; lim(x→0⁺) x ln x = 0 ; lim(h→0) ln(1 + h)/h = 1.",
+      "lim(x→+∞) eˣ/x = +∞ ; lim(x→−∞) xeˣ = 0 ; approximation : eʰ ≈ 1 + h près de 0."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 7 : Primitives et intégrale",
+   "match": [
+    "Primitives et intégrale"
+   ],
+   "pages": [
+    87,
+    90
+   ],
+   "objectives": [
+    "Déterminer des primitives (fonctions usuelles et composées).",
+    "Définir l’intégrale par une primitive ; utiliser la relation de Chasles et la linéarité.",
+    "Interpréter l’intégrale comme une aire ; inégalité de la moyenne ; valeur moyenne."
+   ],
+   "intro": "Comment calculer l’aire sous la courbe de eˣ entre 0 et 1 ?",
+   "summary": "F est une primitive de f sur I si F’ = f. Toute fonction continue sur un intervalle a des primitives ; elles diffèrent d’une constante ; une seule vérifie F(x0) = y0. Primitives de composées : U’Uⁿ → Uⁿ⁺¹/(n + 1) ; U’/Uⁿ → −1/((n − 1)Uⁿ⁻¹) ; U’/√U → 2√U ; U’/U → ln|U| ; U’eᵁ → eᵁ ; U’cos U → sin U ; U’sin U → −cos U ; U’(1 + tan² U) → tan U. L’intégrale ∫ₐᵇ f(t)dt = F(b) − F(a) ; relation de Chasles, linéarité ; si f ≥ 0 elle mesure l’aire entre la courbe, l’axe (Ox) et les droites x = a, x = b. Positivité, comparaison, |∫f| ≤ ∫|f|. Inégalité de la moyenne : si m ≤ f ≤ M sur [a ; b], m ≤ (1/(b − a))∫ₐᵇ f ≤ M ; la valeur moyenne est (1/(b − a))∫ₐᵇ f. F(x) = ∫_{u(x)}^{v(x)} f(t)dt a pour dérivée v’(x)f(v(x)) − u’(x)f(u(x)).",
+   "points": [
+    "F’ = f ; primitives à une constante près.",
+    "U’Uⁿ → Uⁿ⁺¹/(n + 1) ; U’/U → ln|U|.",
+    "∫ₐᵇ f = F(b) − F(a).",
+    "f ≥ 0 : intégrale = aire.",
+    "Valeur moyenne : (1/(b − a))∫ₐᵇ f."
+   ],
+   "application": {
+    "q": "Primitive F de f(x) = (2x − 1)(x² − x + 1)⁴ telle que F(1) = 2.",
+    "a": "f = U’U⁴ avec U = x² − x + 1 ⇒ F = U⁵/5 + k ; F(1) = 1/5 + k = 2 ⇒ k = 9/5."
+   },
+   "applications": [
+    {
+     "q": "∫₀¹ eˣ dx ?",
+     "a": "e − 1."
+    },
+    {
+     "q": "Valeur moyenne de x² sur [0 ; 3] ?",
+     "a": "(1/3) × 9 = 3."
+    }
+   ],
+   "board": [
+    {
+     "h": "Primitives des composées",
+     "lines": [],
+     "table": [
+      [
+       "f",
+       "F"
+      ],
+      [
+       "U’Uⁿ (n ≠ −1)",
+       "Uⁿ⁺¹/(n + 1)"
+      ],
+      [
+       "U’/U",
+       "ln|U|"
+      ],
+      [
+       "U’/√U",
+       "2√U"
+      ],
+      [
+       "U’eᵁ",
+       "eᵁ"
+      ],
+      [
+       "U’cos U",
+       "sin U"
+      ],
+      [
+       "U’sin U",
+       "−cos U"
+      ]
+     ]
+    },
+    {
+     "h": "Exemple : dérivée d’une intégrale",
+     "lines": [
+      "F(x) = ∫_{cos x}^{sin x} √(1 − t²) dt ⇒ F’(x) = cos x·|cos x| + sin x·|sin x| ; sur [0 ; π/2], F’(x) = cos² x + sin² x = 1."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 7 : Techniques d’intégration, aires et volumes",
+   "match": [
+    "Techniques d’intégration, aires et volumes"
+   ],
+   "pages": [
+    91,
+    105
+   ],
+   "objectives": [
+    "Calculer une intégrale par changement de variable affine et par parties.",
+    "Calculer l’aire entre deux courbes.",
+    "Calculer le volume d’un solide de révolution."
+   ],
+   "intro": "Comment calculer ∫₀^π x sin x dx alors qu’on ne connaît pas de primitive évidente ?",
+   "summary": "Si F est une primitive de f, x ↦ F(λx + μ)/λ est une primitive de x ↦ f(λx + μ) (λ ≠ 0). Intégration par parties : ∫ₐᵇ f(t)g’(t)dt = [f(t)g(t)]ₐᵇ − ∫ₐᵇ f’(t)g(t)dt (f, g dérivables à dérivées continues). Aire entre deux courbes : si f ≤ g sur [a ; b], l’aire du domaine limité par les deux courbes et les droites x = a, x = b est ∫ₐᵇ (g − f)(x)dx (en unités d’aire). Volume d’un solide de révolution engendré par la rotation autour de (Ox) du domaine sous la courbe de f entre a et b : V = π∫ₐᵇ f(x)² dx.",
+   "points": [
+    "Changement de variable affine.",
+    "Par parties : ∫fg’ = [fg] − ∫f’g.",
+    "Aire entre courbes : ∫(g − f).",
+    "Volume : π∫f²."
+   ],
+   "application": {
+    "q": "Calculer I = ∫₀^π x sin x dx.",
+    "a": "f = x, g’ = sin x : I = [−x cos x]₀^π + ∫₀^π cos x dx = π."
+   },
+   "applications": [
+    {
+     "q": "∫₀¹ xeˣ dx ?",
+     "a": "Par parties : [xeˣ]₀¹ − ∫₀¹ eˣ dx = e − (e − 1) = 1."
+    },
+    {
+     "q": "Volume engendré par y = √x sur [0 ; 4] autour de (Ox) ?",
+     "a": "π∫₀⁴ x dx = 8π."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemples du manuel",
+     "lines": [
+      "J = ∫₁² x ln x dx = [x²/2 · ln x]₁² − ∫₁² x/2 dx = 2 ln 2 − 3/4.",
+      "Aire entre y = x² − 2x + 2 et y = −x² + 6 (points A(−1 ; 5), B(2 ; 2)) : ∫₋₁² (−2x² + 2x + 4)dx = 9 u.a.",
+      "Volume engendré par y = eˣ sur [−1 ; 1] : π∫₋₁¹ e²ˣ dx = (π/2)(e² − e⁻²) ≈ 11,394 u.v."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 8 : Équations différentielles",
+   "match": [
+    "Équations différentielles"
+   ],
+   "pages": [
+    106,
+    115
+   ],
+   "objectives": [
+    "Résoudre y’ + ay = 0 avec condition initiale.",
+    "Résoudre y’’ + ay’ + by = 0 à l’aide de l’équation caractéristique.",
+    "Résoudre une équation avec second membre à l’aide d’une solution particulière."
+   ],
+   "intro": "Quelle fonction est égale à sa propre dérivée et vaut 1 en 0 ?",
+   "summary": "Une équation différentielle lie une fonction inconnue y à ses dérivées ; son ordre est celui de la dérivée la plus élevée. Les solutions de y’ + ay = 0 sont x ↦ Ae^(−ax) ; la solution telle que y(x0) = y0 est y0e^(−a(x − x0)). Pour y’’ + ay’ + by = 0, on résout l’équation caractéristique r² + ar + b = 0 : deux racines réelles r1, r2 : y = Ae^(r1x) + Be^(r2x) ; racine double r : y = (Ax + B)e^(rx) ; racines complexes α ± iβ : y = e^(αx)(A cos βx + B sin βx). Il existe une unique solution vérifiant y(x0) = y0 et y’(x0) = y’0. Avec un second membre : si g est une solution particulière, f est solution si et seulement si f − g est solution de l’équation sans second membre.",
+   "points": [
+    "y’ + ay = 0 ⇒ y = Ae^(−ax).",
+    "Équation caractéristique r² + ar + b = 0.",
+    "Δ > 0, Δ = 0, Δ < 0 : trois formes.",
+    "Conditions initiales : solution unique.",
+    "Second membre : solution particulière + solutions homogènes."
+   ],
+   "application": {
+    "q": "Résoudre y’’ − y’ − 6y = −6x − 1.",
+    "a": "Solution particulière g(x) = x ; r² − r − 6 = 0 ⇒ r = 3 ou −2 ; y = Ae^(3x) + Be^(−2x) + x."
+   },
+   "applications": [
+    {
+     "q": "Résoudre y’’ + 4y = 0.",
+     "a": "r = ±2i ⇒ y = A cos 2x + B sin 2x."
+    },
+    {
+     "q": "Solution de y’ + 3y = 0 avec y(0) = 2 ?",
+     "a": "y = 2e^(−3x)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Solutions de y’’ + ay’ + by = 0",
+     "lines": [],
+     "table": [
+      [
+       "Racines de r² + ar + b = 0",
+       "Solutions"
+      ],
+      [
+       "r1 ≠ r2 réelles",
+       "Ae^(r1x) + Be^(r2x)"
+      ],
+      [
+       "r double",
+       "(Ax + B)e^(rx)"
+      ],
+      [
+       "α ± iβ",
+       "e^(αx)(A cos βx + B sin βx)"
+      ]
+     ]
+    },
+    {
+     "h": "Exemple du manuel : y’ − 2y = eˣ",
+     "lines": [
+      "g(x) = −eˣ est solution particulière : g’ − 2g = −eˣ + 2eˣ = eˣ.",
+      "Solutions : y = Ae^(2x) − eˣ."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 9 : Angles orientés, cocyclicité, barycentre, déterminant",
+   "match": [
+    "Angles orientés, cocyclicité, barycentre, déterminant"
+   ],
+   "pages": [
+    116,
+    123
+   ],
+   "objectives": [
+    "Utiliser les angles orientés de vecteurs et de droites.",
+    "Utiliser le théorème de l’angle inscrit et le critère de cocyclicité.",
+    "Utiliser le barycentre (réduction de Σ αk MA⃗k) et le déterminant (colinéarité, aires)."
+   ],
+   "intro": "Comment prouver que quatre points sont sur un même cercle ?",
+   "summary": "Les angles orientés de vecteurs se mesurent modulo 2π, ceux de droites modulo π ; 2(u⃗ ; v⃗) est défini modulo 2π. u⃗ et v⃗ colinéaires ⇔ 2(u⃗ ; v⃗) = 0 [2π] ; orthogonaux ⇔ 2(u⃗ ; v⃗) = π [2π]. Angle inscrit : 2(MA⃗ ; MB⃗) = (OA⃗ ; OB⃗) [2π]. Quatre points A, B, C, D sont cocycliques ou alignés si et seulement si (CA ; CB) = (DA ; DB) [π] ; deux triangles rectangles de même hypoténuse ont leurs sommets cocycliques. Barycentre : si Σαk ≠ 0, G = bar{(Ak ; αk)} vérifie Σ αk GA⃗k = 0⃗ et Σ αk MA⃗k = (Σαk) MG⃗ ; si Σαk = 0, ce vecteur est indépendant de M. Pour deux points : AG⃗ = β/(α + β) AB⃗. L’affixe de G est zG = Σαk zk / Σαk. Déterminant : det(u⃗ ; v⃗) = xy’ − x’y ; nul ⇔ vecteurs colinéaires ; en base orthonormale det(u⃗ ; v⃗) = ‖u⃗‖‖v⃗‖ sin(u⃗ ; v⃗) ; aire d’un triangle ABC = ½|det(AB⃗ ; AC⃗)|.",
+   "points": [
+    "Vecteurs : modulo 2π ; droites : modulo π.",
+    "Angle inscrit : 2(MA⃗ ; MB⃗) = (OA⃗ ; OB⃗).",
+    "Cocyclicité : (CA ; CB) = (DA ; DB) [π].",
+    "Σ αk MA⃗k = (Σαk) MG⃗.",
+    "Aire = ½|det(AB⃗ ; AC⃗)|."
+   ],
+   "application": {
+    "q": "Réduire MA⃗ + 2MB⃗ + MC⃗ + MD⃗.",
+    "a": "5MG⃗ avec G = bar{(A ; 1), (B ; 2), (C ; 1), (D ; 1)}."
+   },
+   "applications": [
+    {
+     "q": "Les vecteurs (2 ; 3) et (4 ; 6) sont-ils colinéaires ?",
+     "a": "det = 2 × 6 − 4 × 3 = 0 : oui."
+    },
+    {
+     "q": "Aire du triangle A(0 ; 0), B(4 ; 0), C(0 ; 3) ?",
+     "a": "½|4 × 3 − 0| = 6."
+    }
+   ],
+   "board": [
+    {
+     "h": "Barycentre de deux points",
+     "lines": [
+      "G = bar{(A ; α), (B ; β)}, α + β ≠ 0 ⇔ αGA⃗ + βGB⃗ = 0⃗ ⇔ AG⃗ = β/(α + β) AB⃗ : G ∈ (AB)."
+     ]
+    },
+    {
+     "h": "Déterminant",
+     "lines": [
+      "det(u⃗ ; v⃗) = xy’ − x’y ; det(v⃗ ; u⃗) = −det(u⃗ ; v⃗).",
+      "Aire du triangle ABC = ½|det(AB⃗ ; AC⃗)| ; aire du parallélogramme ABCD = |det(AB⃗ ; AD⃗)|."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 10 : Produit scalaire, géométrie de l’espace, produit vectoriel",
+   "match": [
+    "Produit scalaire, géométrie de l’espace, produit vectoriel"
+   ],
+   "pages": [
+    124,
+    135
+   ],
+   "objectives": [
+    "Utiliser le produit scalaire (orthogonalité, distances, lignes de niveau).",
+    "Écrire des équations de droites, plans, cercles, sphères ; représentations paramétriques.",
+    "Étudier les positions relatives ; utiliser le produit vectoriel et les projections."
+   ],
+   "intro": "Comment calculer la distance d’un point à un plan ?",
+   "summary": "u⃗ · v⃗ = ‖u⃗‖‖v⃗‖ cos(u⃗ ; v⃗) = xx’ + yy’ (+ zz’ dans l’espace) ; u⃗ ⊥ v⃗ ⇔ u⃗ · v⃗ = 0. Une droite du plan de vecteur normal n⃗(a ; b) a une équation ax + by + c = 0 ; un plan de l’espace de vecteur normal n⃗(a ; b ; c) : ax + by + cz + d = 0. Distance de A(x0 ; y0) à la droite : |ax0 + by0 + c|/√(a² + b²) ; de A(x0 ; y0 ; z0) au plan : |ax0 + by0 + cz0 + d|/√(a² + b² + c²). Cercle : (x − x0)² + (y − y0)² = R² ; sphère : (x − x0)² + (y − y0)² + (z − z0)² = R². Droite de l’espace : x = x0 + at, y = y0 + bt, z = z0 + ct ; plan : deux paramètres. Positions relatives de droites (sécantes, parallèles, non coplanaires), de plans, d’une droite et d’un plan, d’une sphère et d’un plan (selon ΩH comparé à R). Produit vectoriel u⃗ ∧ v⃗ : normal au plan (u⃗ ; v⃗), (u⃗ ; v⃗ ; u⃗ ∧ v⃗) direct, ‖u⃗ ∧ v⃗‖ = ‖u⃗‖‖v⃗‖|sin(u⃗ ; v⃗)| ; nul si les vecteurs sont colinéaires ; aire du triangle ABC = ½‖AB⃗ ∧ AC⃗‖. Les projections conservent le barycentre.",
+   "points": [
+    "u⃗ · v⃗ = xx’ + yy’ + zz’.",
+    "Plan : ax + by + cz + d = 0, n⃗(a ; b ; c).",
+    "d(A ; P) = |ax0 + by0 + cz0 + d|/√(a² + b² + c²).",
+    "Sphère et plan : ΩH < R, = R, > R.",
+    "Aire = ½‖AB⃗ ∧ AC⃗‖."
+   ],
+   "application": {
+    "q": "Distance de A(1 ; 2 ; 3) au plan x + 2y + 2z − 2 = 0 ?",
+    "a": "|1 + 4 + 6 − 2|/3 = 3."
+   },
+   "applications": [
+    {
+     "q": "Les vecteurs (1 ; 2 ; −1) et (3 ; −1 ; 1) sont-ils orthogonaux ?",
+     "a": "3 − 2 − 1 = 0 : oui."
+    },
+    {
+     "q": "Équation de la sphère de centre (1 ; 0 ; −2) et de rayon 3 ?",
+     "a": "(x − 1)² + y² + (z + 2)² = 9."
+    }
+   ],
+   "board": [
+    {
+     "h": "Sphère S(Ω ; R) et plan P (H projeté de Ω)",
+     "lines": [],
+     "table": [
+      [
+       "ΩH",
+       "Intersection"
+      ],
+      [
+       "ΩH > R",
+       "vide"
+      ],
+      [
+       "ΩH = R",
+       "le point H (plan tangent)"
+      ],
+      [
+       "ΩH < R",
+       "un cercle"
+      ]
+     ]
+    },
+    {
+     "h": "Positions de deux droites de l’espace",
+     "lines": [
+      "Coplanaires : sécantes, strictement parallèles ou confondues ; sinon non coplanaires."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 11 : Transformations du plan — translations, homothéties, réflexions, rotations",
+   "match": [
+    "Transformations du plan — translations, homothéties, réflexions, rotations"
+   ],
+   "pages": [
+    136,
+    146
+   ],
+   "objectives": [
+    "Connaître les éléments caractéristiques et propriétés des transformations usuelles.",
+    "Utiliser leur écriture complexe.",
+    "Composer des translations, homothéties et rotations."
+   ],
+   "intro": "Que donne la composée de deux rotations de centres différents ?",
+   "summary": "Une transformation est une bijection du plan ; sa réciproque et la composée de deux transformations sont des transformations (la composition est associative mais non commutative). Translation t_u⃗ : MM’⃗ = u⃗ ; (t_u⃗)⁻¹ = t_−u⃗. Homothétie H(Ω ; k) : ΩM’⃗ = kΩM⃗ ; H(Ω ; −1) est la symétrie centrale. Réflexion S_Δ : Δ est la médiatrice de [MM’] ; S_Δ ∘ S_Δ = id. Rotation R(Ω ; θ) : ΩM’ = ΩM et (ΩM⃗ ; ΩM’⃗) = θ. Ces transformations conservent le parallélisme, l’orthogonalité, le barycentre, le milieu, l’alignement, les angles géométriques et le contact ; elles transforment droites, segments et cercles en droites, segments et cercles. Écritures complexes : z’ = z + b (translation) ; z’ = kz + b, k réel ≠ 1 (homothétie de centre ω = b/(1 − k)) ; z’ = az + b, |a| = 1, a ≠ 1 (rotation d’angle arg a, de centre ω = b/(1 − a)). Composées : t_u⃗ ∘ t_v⃗ = t_(u⃗+v⃗) ; deux homothéties de même centre : H(Ω ; k1k2) ; de centres différents : homothétie de rapport k1k2 (translation si k1k2 = 1) ; deux rotations : rotation d’angle θ1 + θ2, ou translation si θ1 + θ2 = 0 [2π] ; translation ∘ rotation d’angle θ : rotation d’angle θ.",
+   "points": [
+    "Translation, homothétie, réflexion, rotation.",
+    "Conservation : alignement, barycentre, angles.",
+    "z’ = az + b : rotation si |a| = 1 ; homothétie si a réel.",
+    "Centre : ω = b/(1 − a).",
+    "Rotations composées : angle θ1 + θ2."
+   ],
+   "application": {
+    "q": "Nature de z’ = iz + 1 + i ?",
+    "a": "Rotation d’angle π/2, de centre ω = (1 + i)/(1 − i) = i."
+   },
+   "applications": [
+    {
+     "q": "Nature de z’ = −2z + 3 ?",
+     "a": "Homothétie de rapport −2, de centre 3/(1 + 2) = 1."
+    },
+    {
+     "q": "Que vaut S_Δ ∘ S_Δ ?",
+     "a": "L’identité."
+    }
+   ],
+   "board": [
+    {
+     "h": "Écritures complexes",
+     "lines": [],
+     "table": [
+      [
+       "Écriture",
+       "Transformation"
+      ],
+      [
+       "z’ = z + b",
+       "translation"
+      ],
+      [
+       "z’ = kz + b (k réel ≠ 1)",
+       "homothétie de rapport k, centre b/(1 − k)"
+      ],
+      [
+       "z’ = e^(iθ)z + b (θ ≠ 0)",
+       "rotation d’angle θ, centre b/(1 − e^(iθ))"
+      ]
+     ]
+    },
+    {
+     "h": "Composées",
+     "lines": [
+      "R(Ω1 ; θ1) ∘ R(Ω2 ; θ2) : rotation d’angle θ1 + θ2, ou translation si θ1 + θ2 = 0 [2π].",
+      "H1 ∘ H2 : homothétie de rapport k1k2, ou translation si k1k2 = 1."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 12 : Isométries, déplacements et similitudes",
+   "match": [
+    "Isométries, déplacements et similitudes"
+   ],
+   "pages": [
+    147,
+    158
+   ],
+   "objectives": [
+    "Classer les isométries du plan ; reconnaître un déplacement.",
+    "Définir une similitude directe et ses éléments caractéristiques.",
+    "Utiliser l’écriture complexe z’ = az + b."
+   ],
+   "intro": "Quelle transformation envoie un segment [AB] sur un segment [A’B’] quelconque ?",
+   "summary": "Une isométrie conserve les distances (translations, rotations, réflexions, symétries glissantes) ; elle conserve aussi l’aire et le produit scalaire ; une isométrie qui fixe trois points non alignés est l’identité ; si elle fixe deux points A et B, c’est l’identité ou la réflexion d’axe (AB). Toute isométrie est une translation, une rotation, une réflexion ou une symétrie glissante. Un déplacement est une isométrie qui conserve les angles orientés : c’est une translation ou une rotation, d’écriture z’ = e^(iθ)z + b. Une similitude directe de rapport k est la composée d’une homothétie de rapport k et d’un déplacement ; son écriture complexe est z’ = az + b (a ≠ 0) : rapport |a|, angle arg a, centre ω = b/(1 − a) si a ≠ 1, et z’ − ω = ke^(iα)(z − ω). Elle multiplie les longueurs par k et les aires par k² ; elle transforme un cercle de rayon R en un cercle de rayon kR. Si A ≠ B et A’ ≠ B’, il existe une unique similitude directe qui transforme A en A’ et B en B’ : k = A’B’/AB, θ = (AB⃗ ; A’B’⃗). Forme réduite : S(Ω ; k ; α) = R(Ω ; α) ∘ H(Ω ; k).",
+   "points": [
+    "Isométrie : conserve les distances.",
+    "Déplacement : translation ou rotation.",
+    "Similitude directe : z’ = az + b.",
+    "Rapport |a|, angle arg a, centre b/(1 − a).",
+    "Aires multipliées par k²."
+   ],
+   "application": {
+    "q": "Éléments de la similitude z’ = (1 + i)z + 2 ?",
+    "a": "Rapport √2, angle π/4, centre ω = 2/(1 − 1 − i) = 2/(−i) = 2i."
+   },
+   "applications": [
+    {
+     "q": "Une similitude de rapport 3 transforme un triangle d’aire 2. Aire de l’image ?",
+     "a": "2 × 9 = 18."
+    },
+    {
+     "q": "La réciproque de S(Ω ; k ; α) ?",
+     "a": "S(Ω ; 1/k ; −α)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Classification selon k et θ",
+     "lines": [],
+     "table": [
+      [
+       "Cas",
+       "Nature"
+      ],
+      [
+       "k = 1, θ = 0",
+       "translation"
+      ],
+      [
+       "k = 1, θ ≠ 0",
+       "rotation d’angle θ"
+      ],
+      [
+       "k = 1, θ = π",
+       "symétrie centrale"
+      ],
+      [
+       "k ≠ 1, θ = 0 ou π",
+       "homothétie"
+      ],
+      [
+       "k ≠ 1, θ ≠ 0 [π]",
+       "similitude de centre Ω"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 13 : Courbes paramétrées",
+   "match": [
+    "Courbes paramétrées"
+   ],
+   "pages": [
+    159,
+    168
+   ],
+   "objectives": [
+    "Définir une courbe paramétrée et sa tangente.",
+    "Interpréter cinématiquement (vitesse, accélération).",
+    "Étudier et tracer une courbe paramétrée (courbe de Lissajous)."
+   ],
+   "intro": "Comment décrire la trajectoire d’un point dont les coordonnées dépendent du temps ?",
+   "summary": "Une courbe paramétrée est l’ensemble des points M(t) de coordonnées (f(t) ; g(t)), t ∈ I : OM⃗(t) = f(t)i⃗ + g(t)j⃗. Si f et g sont dérivables en t0 et (f’(t0) ; g’(t0)) ≠ (0 ; 0), la courbe admet en M(t0) une tangente de vecteur directeur (f’(t0) ; g’(t0)). En cinématique, ce vecteur est la vitesse du point mobile, et (f’’(t) ; g’’(t)) son accélération. Étude : réduire l’intervalle grâce à la périodicité et aux symétries (f(−t) = f(t), g(−t) = −g(t) : symétrie par rapport à (Ox) ; f(t + π) = −f(t), g(t + π) = g(t) : symétrie par rapport à (Oy)), dresser le tableau de variations conjoint de f et g, placer les points remarquables et leurs tangentes, puis compléter par symétrie.",
+   "points": [
+    "M(t) = (f(t) ; g(t)).",
+    "Tangente : vecteur (f’(t0) ; g’(t0)).",
+    "Vitesse et accélération.",
+    "Réduction par périodicité et symétries.",
+    "Tableau de variations conjoint."
+   ],
+   "application": {
+    "q": "Tangente en t0 = π/2 à la courbe x = cos t, y = sin 2t ?",
+    "a": "M0 = (0 ; 0), vecteur (−1 ; −2) ; équation : −2x + y = 0, soit y = 2x."
+   },
+   "applications": [
+    {
+     "q": "Représentation paramétrique du cercle de centre O et de rayon R ?",
+     "a": "x = R cos t, y = R sin t, t ∈ [0 ; 2π[."
+    },
+    {
+     "q": "Quand la tangente est-elle horizontale ?",
+     "a": "Quand g’(t0) = 0 et f’(t0) ≠ 0."
+    }
+   ],
+   "board": [
+    {
+     "h": "Courbe de Lissajous x = cos 3t, y = sin 2t",
+     "lines": [
+      "Période 2π ; symétries par rapport à (Ox) et (Oy) : étude sur [0 ; π/2].",
+      "f’(t) = −3 sin 3t ; g’(t) = 2 cos 2t.",
+      "Points : A (t = 0), B (t = π/4), C (t = π/3), D (t = π/2) ; tangentes (0 ; 2), (−3√2/2 ; 0), (0 ; −1), (3 ; −2).",
+      "E (t = π/6) : (0 ; √3/2), tangente (−3 ; 1)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 14 : Les coniques",
+   "match": [
+    "Les coniques"
+   ],
+   "pages": [
+    169,
+    180
+   ],
+   "objectives": [
+    "Définir une conique par foyer, directrice et excentricité.",
+    "Connaître les équations réduites de la parabole, de l’ellipse et de l’hyperbole.",
+    "Déterminer foyers, sommets, directrices, excentricité et tangentes."
+   ],
+   "intro": "Pourquoi les antennes paraboliques ont-elles cette forme ?",
+   "summary": "Étant donnés une droite D, un point F ∉ D et un réel e > 0, l’ensemble des points M tels que MF/MH = e (H projeté de M sur D) est la conique de foyer F, de directrice D et d’excentricité e : parabole si e = 1, ellipse si 0 < e < 1, hyperbole si e > 1. L’axe focal est un axe de symétrie. Parabole de paramètre p = FK : équation réduite y² = 2px (foyer (p/2 ; 0), directrice x = −p/2) ; un seul axe, un seul sommet. Ellipse : x²/a² + y²/b² = 1 ; si a > b, c = √(a² − b²), foyers (±c ; 0), e = c/a, directrices x = ±a²/c ; sommets (±a ; 0), (0 ; ±b) ; tangente en M0 : xx0/a² + yy0/b² = 1 ; définition bifocale MF + MF’ = 2a. Hyperbole : x²/a² − y²/b² = 1 ; c = √(a² + b²), foyers (±c ; 0), e = c/a, directrices x = ±a²/c, asymptotes y = ±(b/a)x ; tangente xx0/a² − yy0/b² = 1 ; |MF − MF’| = 2a ; équilatère si a = b.",
+   "points": [
+    "MF/MH = e.",
+    "e = 1 parabole ; e < 1 ellipse ; e > 1 hyperbole.",
+    "Parabole : y² = 2px.",
+    "Ellipse : c² = a² − b² ; MF + MF’ = 2a.",
+    "Hyperbole : c² = a² + b² ; |MF − MF’| = 2a."
+   ],
+   "application": {
+    "q": "Foyers et excentricité de x²/25 + y²/9 = 1 ?",
+    "a": "c = √(25 − 9) = 4 ; foyers (±4 ; 0) ; e = 4/5."
+   },
+   "applications": [
+    {
+     "q": "Foyer et directrice de y² = 8x ?",
+     "a": "p = 4 : foyer (2 ; 0), directrice x = −2."
+    },
+    {
+     "q": "Asymptotes de x²/16 − y²/9 = 1 ?",
+     "a": "y = ±(3/4)x."
+    }
+   ],
+   "board": [
+    {
+     "h": "Équations réduites",
+     "lines": [],
+     "table": [
+      [
+       "Conique",
+       "Équation",
+       "c",
+       "e"
+      ],
+      [
+       "Parabole",
+       "y² = 2px",
+       "—",
+       "1"
+      ],
+      [
+       "Ellipse (a > b)",
+       "x²/a² + y²/b² = 1",
+       "√(a² − b²)",
+       "c/a < 1"
+      ],
+      [
+       "Hyperbole",
+       "x²/a² − y²/b² = 1",
+       "√(a² + b²)",
+       "c/a > 1"
+      ]
+     ]
+    },
+    {
+     "h": "Construction de la parabole point par point",
+     "lines": [
+      "H ∈ D ; la médiatrice de [FH] coupe la perpendiculaire à D en H en un point M de la parabole ; cette médiatrice est la tangente en M."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 15 : Dénombrement, probabilités et loi binomiale",
+   "match": [
+    "Dénombrement, probabilités et loi binomiale"
+   ],
+   "pages": [
+    181,
+    187
+   ],
+   "objectives": [
+    "Utiliser p-listes, arrangements, permutations, combinaisons et binôme de Newton.",
+    "Calculer des probabilités ; définir une variable aléatoire, sa loi, son espérance, sa variance.",
+    "Utiliser le schéma de Bernoulli et la loi binomiale."
+   ],
+   "intro": "Un candidat répond au hasard à 4 questions à 3 choix. Quelle chance a-t-il d’avoir au moins 3 bonnes réponses ?",
+   "summary": "Card(E × F) = np ; nombre de p-listes : nᵖ ; d’arrangements : Aₙᵖ = n!/(n − p)! ; de permutations : n! ; de combinaisons : Cₙᵖ = n!/(p!(n − p)!) ; triangle de Pascal ; binôme de Newton (a + b)ⁿ = Σ Cₙᵖ aⁿ⁻ᵖbᵖ ; un ensemble à n éléments a 2ⁿ parties. En situation d’équiprobabilité, P(A) = card A / card Ω. Une variable aléatoire X associe un nombre à chaque issue ; sa loi donne P(X = xi) ; sa fonction de répartition F(x) = P(X ≤ x) ; E(X) = Σ xi pi ; V(X) = E(X²) − E(X)² ; σ = √V. Schéma de Bernoulli de paramètres (n ; p) : X, nombre de succès, suit la loi binomiale : P(X = k) = Cₙᵏ pᵏ qⁿ⁻ᵏ, E(X) = np, V(X) = npq (q = 1 − p).",
+   "points": [
+    "Aₙᵖ = n!/(n − p)! ; Cₙᵖ = n!/(p!(n − p)!).",
+    "Binôme de Newton ; 2ⁿ parties.",
+    "P(A) = card A / card Ω.",
+    "E(X) = Σxipi ; V = E(X²) − E(X)².",
+    "Binomiale : P(X = k) = Cₙᵏpᵏqⁿ⁻ᵏ ; E = np ; V = npq."
+   ],
+   "application": {
+    "q": "4 questions, p = 1/3 : probabilité d’exactement 3 bonnes réponses ?",
+    "a": "C₄³ (1/3)³ (2/3) = 8/81."
+   },
+   "applications": [
+    {
+     "q": "C₅² ?",
+     "a": "10."
+    },
+    {
+     "q": "Dé non truqué : probabilité d’obtenir un multiple de 3 ?",
+     "a": "2/6 = 1/3."
+    }
+   ],
+   "board": [
+    {
+     "h": "Exemple : trois pièces, X = nombre de « pile »",
+     "lines": [],
+     "table": [
+      [
+       "k",
+       "0",
+       "1",
+       "2",
+       "3"
+      ],
+      [
+       "P(X = k)",
+       "1/8",
+       "3/8",
+       "3/8",
+       "1/8"
+      ]
+     ]
+    },
+    {
+     "h": "Résultats",
+     "lines": [
+      "E(X) = 0 + 3/8 + 6/8 + 3/8 = 3/2.",
+      "Au moins 3 bonnes réponses sur 4 (p = 1/3) : 8/81 + 1/81 = 9/81 = 1/9."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre 15 : Lois continues, fluctuation et estimation",
+   "match": [
+    "Lois continues, fluctuation et estimation"
+   ],
+   "pages": [
+    187,
+    200
+   ],
+   "objectives": [
+    "Utiliser une densité de probabilité ; la loi uniforme.",
+    "Déterminer un intervalle de fluctuation asymptotique.",
+    "Prendre une décision ; estimer une proportion par un intervalle de confiance."
+   ],
+   "intro": "Une enquête annonce 30 % de clients sinistrés ; un expert en trouve 19 sur 100. L’annonce est-elle crédible ?",
+   "summary": "Une densité de probabilité sur I est une fonction f continue, positive, d’intégrale 1 sur I ; alors P(a ≤ X ≤ b) = ∫ₐᵇ f(t)dt. La loi uniforme sur [a ; b] a pour densité 1/(b − a) : la probabilité d’un intervalle est proportionnelle à sa longueur ; E(X) = (a + b)/2. Fluctuation : si Xn suit la loi B(n ; p), la fréquence Xn/n appartient, avec une probabilité tendant vers 1 − α, à l’intervalle In = [p − uα√(p(1 − p)/n) ; p + uα√(p(1 − p)/n)] (uα = 1,96 au seuil 95 %). Décision : si la fréquence observée f est dans In, on accepte l’hypothèse sur p ; sinon on la rejette (au risque α). Estimation : l’intervalle de confiance [f − 1/√n ; f + 1/√n] contient la proportion p avec une probabilité d’au moins 0,95.",
+   "points": [
+    "Densité : ∫ f = 1 ; P(a ≤ X ≤ b) = ∫ₐᵇ f.",
+    "Loi uniforme : 1/(b − a) ; E = (a + b)/2.",
+    "In = p ± 1,96√(p(1 − p)/n).",
+    "f ∈ In : accepter ; sinon rejeter.",
+    "Confiance : f ± 1/√n."
+   ],
+   "application": {
+    "q": "n = 100, p = 0,3, f = 0,19 : décision au seuil 95 % ?",
+    "a": "In ≈ [0,21 ; 0,39] ; 0,19 ∉ In : on rejette l’affirmation des 30 %."
+   },
+   "applications": [
+    {
+     "q": "X uniforme sur [0 ; 4] : P(X < 1) ?",
+     "a": "1/4."
+    },
+    {
+     "q": "Intervalle de confiance pour f = 0,4 et n = 400 ?",
+     "a": "[0,4 − 0,05 ; 0,4 + 0,05] = [0,35 ; 0,45]."
+    }
+   ],
+   "board": [
+    {
+     "h": "Calcul de l’intervalle de fluctuation",
+     "lines": [
+      "√(0,3 × 0,7/100) ≈ 0,0458 ; 1,96 × 0,0458 ≈ 0,0898.",
+      "In ≈ [0,210 ; 0,390]."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "7C"
+}

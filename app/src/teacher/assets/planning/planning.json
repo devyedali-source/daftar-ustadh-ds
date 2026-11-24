@@ -88,7 +88,9 @@
   "SN_6C": "Progression établie d’après le manuel « Sciences Naturelles 6ème M » (IPN), dans l’ordre des chapitres",
   "SN_6D": "Progression établie d’après le manuel « Sciences Naturelles 6ème SN » (IPN), dans l’ordre des chapitres",
   "SN_6A": "Progression établie d’après le manuel « Sciences Naturelles 6ème LM » (IPN), dans l’ordre des chapitres",
-  "SN_6O": "توزيع دروس الكتاب المدرسي « Sciences Naturelles 6ème LO » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب"
+  "SN_6O": "توزيع دروس الكتاب المدرسي « Sciences Naturelles 6ème LO » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
+  "MATS_7C": "Progression établie d’après le manuel « Mathématiques 7ème C » (IPN), dans l’ordre des chapitres",
+  "MATS_7D": "Progression établie d’après le manuel « Mathématiques 7ème D » (IPN), dans l’ordre des chapitres"
  },
  "plans": {
   "AR": {
@@ -26992,6 +26994,672 @@
      "k": "lesson",
      "i": [
       "Statistique — échantillonnage"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "7C": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Systèmes linéaires et méthode de Gauss"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Matrices, déterminants et inverse"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Matrices, déterminants et inverse"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Divisibilité, division euclidienne, nombres premiers, PGCD"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Bézout, Gauss, congruences, Fermat et équations diophantiennes"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres complexes — forme algébrique, module, argument, équations"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres complexes — forme exponentielle, géométrie, racines n-ièmes"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres complexes — forme exponentielle, géométrie, racines n-ièmes"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Généralités sur les fonctions — parité, symétries, limites, asymptotes"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Continuité, dérivabilité, point d’inflexion, bijection réciproque"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Continuité, dérivabilité, point d’inflexion, bijection réciproque"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fonctions logarithme népérien et exponentielle"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Primitives et intégrale"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Techniques d’intégration, aires et volumes"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Techniques d’intégration, aires et volumes"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Équations différentielles"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Angles orientés, cocyclicité, barycentre, déterminant"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Produit scalaire, géométrie de l’espace, produit vectoriel"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Produit scalaire, géométrie de l’espace, produit vectoriel"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Transformations du plan — translations, homothéties, réflexions, rotations"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Isométries, déplacements et similitudes"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Courbes paramétrées"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les coniques"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dénombrement, probabilités et loi binomiale"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Lois continues, fluctuation et estimation"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Lois continues, fluctuation et estimation"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "7D": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres complexes — forme algébrique, module, argument, équations"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres complexes — forme algébrique, module, argument, équations"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres complexes — forme exponentielle et géométrie"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Nombres complexes — forme exponentielle et géométrie"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Limites, continuité et dérivation"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Limites, continuité et dérivation"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Limites, continuité et dérivation"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Étude des fonctions"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Étude des fonctions"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fonctions logarithme népérien et exponentielle"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Fonctions logarithme népérien et exponentielle"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Suites numériques — généralités, suites arithmétiques et géométriques"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Suites numériques — limites, convergence, suites adjacentes"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Suites numériques — limites, convergence, suites adjacentes"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Suites numériques — limites, convergence, suites adjacentes"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Primitives et intégrale"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Primitives et intégrale"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Techniques d’intégration et calcul d’aires"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Techniques d’intégration et calcul d’aires"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Équations différentielles"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Équations différentielles"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dénombrement, probabilités et loi binomiale"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dénombrement, probabilités et loi binomiale"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Lois continues, fluctuation et estimation"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Lois continues, fluctuation et estimation"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Lois continues, fluctuation et estimation"
      ]
     },
     {
