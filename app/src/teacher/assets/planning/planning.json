@@ -81,8 +81,8 @@
   "MATS_6O": "توزيع دروس الكتاب المدرسي « Mathématiques 6ème LO » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
   "MATS_6C": "Progression établie d’après le manuel « Mathématiques 6ème M » (IPN), dans l’ordre des chapitres",
   "MATS_6D": "Progression établie d’après le manuel « Mathématiques 6ème D » (IPN), dans l’ordre des chapitres",
-  "PC_6C": "Progression établie d’après le manuel « Chimie 6ème C et D » (IPN), dans l’ordre des chapitres",
-  "PC_6D": "Progression établie d’après le manuel « Chimie 6ème C et D » (IPN), dans l’ordre des chapitres"
+  "PC_6C": "Progression établie d’après le manuel « Chimie 6ème C et D » ; « Physique 6ème M » (IPN), dans l’ordre des chapitres",
+  "PC_6D": "Progression établie d’après le manuel « Chimie 6ème C et D » ; « Physique 6ème SN » (IPN), dans l’ordre des chapitres"
  },
  "plans": {
   "AR": {
@@ -16948,7 +16948,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Ressources organiques naturelles et analyse élémentaire"
+      "Ressources organiques naturelles et analyse élémentaire",
+      "Cinématique — référentiel, position, vitesse, accélération"
      ]
     },
     {
@@ -16958,7 +16959,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Ressources organiques naturelles et analyse élémentaire"
+      "Ressources organiques naturelles et analyse élémentaire",
+      "Cinématique — référentiel, position, vitesse, accélération"
      ]
     },
     {
@@ -16968,7 +16970,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcanes"
+      "Les alcanes",
+      "Mouvements rectilignes et circulaires"
      ]
     },
     {
@@ -16978,7 +16981,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcanes"
+      "Les alcanes",
+      "Mouvements rectilignes et circulaires"
      ]
     },
     {
@@ -16988,7 +16992,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcanes"
+      "Les alcanes",
+      "Travail et puissance"
      ]
     },
     {
@@ -16998,7 +17003,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcènes"
+      "Les alcènes",
+      "Travail et puissance"
      ]
     },
     {
@@ -17008,7 +17014,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcènes"
+      "Les alcènes",
+      "Énergie cinétique et théorème de l’énergie cinétique"
      ]
     },
     {
@@ -17018,7 +17025,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcynes"
+      "Les alcynes",
+      "Énergie cinétique et théorème de l’énergie cinétique"
      ]
     },
     {
@@ -17028,7 +17036,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcynes"
+      "Les alcynes",
+      "Énergie potentielle et énergie mécanique"
      ]
     },
     {
@@ -17058,7 +17067,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les composés aromatiques"
+      "Les composés aromatiques",
+      "Énergie potentielle et énergie mécanique"
      ]
     },
     {
@@ -17068,7 +17078,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les composés aromatiques"
+      "Les composés aromatiques",
+      "Transferts thermiques et calorimétrie"
      ]
     },
     {
@@ -17078,7 +17089,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les composés aromatiques"
+      "Les composés aromatiques",
+      "Transferts thermiques et calorimétrie"
      ]
     },
     {
@@ -17088,7 +17100,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Fonctions oxygénées et amines"
+      "Fonctions oxygénées et amines",
+      "Champ magnétique"
      ]
     },
     {
@@ -17098,7 +17111,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Fonctions oxygénées et amines"
+      "Fonctions oxygénées et amines",
+      "Champ magnétique"
      ]
     },
     {
@@ -17108,7 +17122,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Isomérie"
+      "Isomérie",
+      "Interaction électrostatique et champ électrostatique"
      ]
     },
     {
@@ -17118,7 +17133,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Isomérie"
+      "Isomérie",
+      "Interaction électrostatique et champ électrostatique"
      ]
     },
     {
@@ -17128,7 +17144,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Oxydoréduction — définitions et couples"
+      "Oxydoréduction — définitions et couples",
+      "Potentiel et différence de potentiel"
      ]
     },
     {
@@ -17138,7 +17155,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Oxydoréduction — définitions et couples"
+      "Oxydoréduction — définitions et couples",
+      "Potentiel et différence de potentiel"
      ]
     },
     {
@@ -17148,7 +17166,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Oxydoréduction — définitions et couples"
+      "Oxydoréduction — définitions et couples",
+      "Puissance électrique dans une portion de circuit"
      ]
     },
     {
@@ -17178,7 +17197,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Classification des couples et prévision des réactions"
+      "Classification des couples et prévision des réactions",
+      "Puissance électrique dans une portion de circuit"
      ]
     },
     {
@@ -17188,7 +17208,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Classification des couples et prévision des réactions"
+      "Classification des couples et prévision des réactions",
+      "Puissance électrique dans une portion de circuit"
      ]
     },
     {
@@ -17198,7 +17219,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Piles et potentiels d’oxydoréduction"
+      "Piles et potentiels d’oxydoréduction",
+      "Le condensateur"
      ]
     },
     {
@@ -17208,7 +17230,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Piles et potentiels d’oxydoréduction"
+      "Piles et potentiels d’oxydoréduction",
+      "Le condensateur"
      ]
     },
     {
@@ -17218,7 +17241,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Électrolyse"
+      "Électrolyse",
+      "Courant alternatif, oscilloscope et transformateur"
      ]
     },
     {
@@ -17228,7 +17252,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Électrolyse"
+      "Électrolyse",
+      "Courant alternatif, oscilloscope et transformateur"
      ]
     },
     {
@@ -17238,7 +17263,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Électrolyse"
+      "Électrolyse",
+      "Courant alternatif, oscilloscope et transformateur"
      ]
     },
     {
@@ -17281,7 +17307,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Ressources organiques naturelles et analyse élémentaire"
+      "Ressources organiques naturelles et analyse élémentaire",
+      "Cinématique — référentiel, position, vitesse, accélération"
      ]
     },
     {
@@ -17291,7 +17318,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Ressources organiques naturelles et analyse élémentaire"
+      "Ressources organiques naturelles et analyse élémentaire",
+      "Cinématique — référentiel, position, vitesse, accélération"
      ]
     },
     {
@@ -17301,7 +17329,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcanes"
+      "Les alcanes",
+      "Mouvements rectilignes et circulaires"
      ]
     },
     {
@@ -17311,7 +17340,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcanes"
+      "Les alcanes",
+      "Mouvements rectilignes et circulaires"
      ]
     },
     {
@@ -17321,7 +17351,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcanes"
+      "Les alcanes",
+      "Mouvements rectilignes et circulaires"
      ]
     },
     {
@@ -17331,7 +17362,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcènes"
+      "Les alcènes",
+      "Travail et puissance"
      ]
     },
     {
@@ -17341,7 +17373,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcènes"
+      "Les alcènes",
+      "Travail et puissance"
      ]
     },
     {
@@ -17351,7 +17384,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcynes"
+      "Les alcynes",
+      "Énergie cinétique et théorème de l’énergie cinétique"
      ]
     },
     {
@@ -17361,7 +17395,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les alcynes"
+      "Les alcynes",
+      "Énergie potentielle et énergie mécanique"
      ]
     },
     {
@@ -17391,7 +17426,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les composés aromatiques"
+      "Les composés aromatiques",
+      "Énergie potentielle et énergie mécanique"
      ]
     },
     {
@@ -17401,7 +17437,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les composés aromatiques"
+      "Les composés aromatiques",
+      "Transferts thermiques et calorimétrie"
      ]
     },
     {
@@ -17411,7 +17448,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Les composés aromatiques"
+      "Les composés aromatiques",
+      "Transferts thermiques et calorimétrie"
      ]
     },
     {
@@ -17421,7 +17459,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Fonctions oxygénées et amines"
+      "Fonctions oxygénées et amines",
+      "Champ magnétique"
      ]
     },
     {
@@ -17431,7 +17470,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Fonctions oxygénées et amines"
+      "Fonctions oxygénées et amines",
+      "Champ magnétique"
      ]
     },
     {
@@ -17441,7 +17481,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Isomérie"
+      "Isomérie",
+      "Interaction électrostatique et champ électrostatique"
      ]
     },
     {
@@ -17451,7 +17492,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Isomérie"
+      "Isomérie",
+      "Interaction électrostatique et champ électrostatique"
      ]
     },
     {
@@ -17461,7 +17503,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Oxydoréduction — définitions et couples"
+      "Oxydoréduction — définitions et couples",
+      "Potentiel et différence de potentiel"
      ]
     },
     {
@@ -17471,7 +17514,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Oxydoréduction — définitions et couples"
+      "Oxydoréduction — définitions et couples",
+      "Potentiel et différence de potentiel"
      ]
     },
     {
@@ -17481,7 +17525,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Oxydoréduction — définitions et couples"
+      "Oxydoréduction — définitions et couples",
+      "Puissance électrique dans une portion de circuit"
      ]
     },
     {
@@ -17511,7 +17556,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Classification des couples et prévision des réactions"
+      "Classification des couples et prévision des réactions",
+      "Puissance électrique dans une portion de circuit"
      ]
     },
     {
@@ -17521,7 +17567,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Classification des couples et prévision des réactions"
+      "Classification des couples et prévision des réactions",
+      "Puissance électrique dans une portion de circuit"
      ]
     },
     {
@@ -17531,7 +17578,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Piles et potentiels d’oxydoréduction"
+      "Piles et potentiels d’oxydoréduction",
+      "Le condensateur"
      ]
     },
     {
@@ -17541,7 +17589,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Piles et potentiels d’oxydoréduction"
+      "Piles et potentiels d’oxydoréduction",
+      "Le condensateur"
      ]
     },
     {
@@ -17551,7 +17600,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Électrolyse"
+      "Électrolyse",
+      "Courant alternatif, oscilloscope et transformateur"
      ]
     },
     {
@@ -17561,7 +17611,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Électrolyse"
+      "Électrolyse",
+      "Courant alternatif, oscilloscope et transformateur"
      ]
     },
     {
@@ -17571,7 +17622,8 @@
      "u": "",
      "k": "lesson",
      "i": [
-      "Électrolyse"
+      "Électrolyse",
+      "Courant alternatif, oscilloscope et transformateur"
      ]
     },
     {
