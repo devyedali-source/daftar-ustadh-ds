@@ -1,0 +1,2491 @@
+{
+ "subject": "FR",
+ "book": "books/FR_6CD.pdf",
+ "bookTitle": "Français 6ème (C et D)",
+ "lessons": [
+  {
+   "title": "Thème 1 – Texte 1 : L’esprit critique, essai de définition",
+   "match": [
+    "Thème 1 – Texte 1 : L’esprit critique, essai de définition"
+   ],
+   "pages": [
+    11,
+    13
+   ],
+   "objectives": [
+    "Définir l’esprit critique à partir de trois extraits.",
+    "Justifier une réponse (vrai/faux) par une citation du texte.",
+    "Rédiger une définition personnelle illustrée d’un exemple."
+   ],
+   "intro": "Croyez-vous tout ce que vous lisez sur les réseaux sociaux ? Comment vérifiez-vous une information ?",
+   "summary": "L’esprit critique est une attitude intellectuelle qui permet de penser de manière rationnelle et autonome : réfléchir non pas plus mais mieux. C’est une pensée de « mise en doute » qui n’accepte pour vraie aucune affirmation sans l’avoir examinée par la raison, la documentation ou la démonstration. Il préserve des amalgames simplistes, des généralisations hâtives, des idées reçues et des certitudes sans preuves (doute méthodique). Ch. Godin le définit comme la disposition à n’admettre rien de vrai qui n’ait été soumis à l’épreuve de la preuve. C’est aussi un état d’esprit fait de curiosité, d’autonomie, de lucidité, d’écoute et de modestie, qui se construit tout au long de la vie.",
+   "points": [
+    "Esprit critique = réfléchir mieux, de façon rationnelle et autonome.",
+    "Pensée de « mise en doute » : examiner avant d’accepter.",
+    "Moyens de vérification : la raison, la documentation, la démonstration.",
+    "Refus des amalgames, généralisations hâtives, idées reçues.",
+    "Qualités : curiosité, autonomie, lucidité, écoute, modestie."
+   ],
+   "application": {
+    "q": "1. Avoir l’esprit critique, c’est savoir mieux réfléchir.",
+    "a": "Vrai : « l’objectif n’est pas de réfléchir plus, mais de réfléchir mieux »."
+   },
+   "applications": [
+    {
+     "q": "Citez trois « ennemis » de l’esprit critique d’après les extraits.",
+     "a": "Les amalgames simplistes, les généralisations hâtives, les idées reçues (et les certitudes sans preuves)."
+    },
+    {
+     "q": "Pourquoi dit-on que l’esprit critique « se construit tout au long d’une vie » ?",
+     "a": "Parce que rien n’est figé : on peut manquer d’esprit critique, se laisser avoir par des préjugés ; il faut sans cesse s’exercer."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 11,
+      "rect": [
+       0.06,
+       0.653,
+       0.94,
+       0.935
+      ],
+      "caption": "Extrait 1"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 12,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.935
+      ],
+      "caption": "Extraits 1 (fin), 2 et 3"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Avoir l’esprit critique, c’est savoir mieux réfléchir.",
+       "Vrai : « l’objectif n’est pas de réfléchir plus, mais de réfléchir mieux »."
+      ],
+      [
+       "2. Il consiste à vérifier une information avant de l’accepter.",
+       "Vrai : « n’accepter pour vraie… aucune affirmation… sans l’avoir au préalable examinée »."
+      ],
+      [
+       "3. Le doute n’est pas indispensable.",
+       "Faux : c’est « une pensée de mise en doute », « une forme de doute méthodique »."
+      ],
+      [
+       "4. On peut raisonner, se documenter ou démontrer.",
+       "Vrai : « par le biais de sa raison, d’une documentation approfondie… ou d’une démonstration logique »."
+      ],
+      [
+       "5. Il accepte les amalgames et les généralisations hâtives.",
+       "Faux : il « refuse tous les amalgames simplistes, toute généralisation hâtive »."
+      ],
+      [
+       "6. C’est être curieux et accepter qu’on peut se tromper.",
+       "Vrai : il « sollicite notre curiosité… notre modestie », « il nous arrive même d’en manquer »."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : discuter « Celui qui accepte ses erreurs et qui en comprend la source progresse ».",
+      "Écrit : une dizaine de lignes pour définir l’esprit critique avec ses propres mots, illustré d’un exemple concret."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 1 – Texte 2 : Esprit critique, esprit scientifique (P. Bayle)",
+   "match": [
+    "Thème 1 – Texte 2 : Esprit critique, esprit scientifique (P. Bayle)"
+   ],
+   "pages": [
+    13,
+    15
+   ],
+   "objectives": [
+    "Identifier une superstition et le raisonnement qui la fonde.",
+    "Repérer les arguments rationnels de l’auteur.",
+    "Réfléchir aux superstitions de sa société."
+   ],
+   "intro": "Dans votre entourage, certains phénomènes (éclipse, chouette, chat noir…) sont-ils considérés comme des signes de malheur ?",
+   "summary": "Dans « Pensées sur la Comète », Pierre Bayle affirme la primauté de l’expérience et de l’esprit scientifique contre l’obscurantisme, en prenant l’exemple des superstitions liées aux comètes. On croyait que les comètes annonçaient des malheurs. Bayle montre qu’elles n’en sont ni la cause efficiente ni le signe. Il condamne le raisonnement qui conclut que deux choses sont l’effet l’une de l’autre parce qu’elles se suivent (« c’est raisonner pitoyablement »). De plus, l’expérience ne prouve même pas qu’il y ait plus de malheurs après les comètes qu’en un autre temps, et les comètes obéissent à des lois naturelles (soleil, brouillards) : souvent seuls les astronomes les voient.",
+   "points": [
+    "Superstition : les comètes présagent des malheurs.",
+    "Raisonnement condamné : confondre succession et causalité.",
+    "Arguments : ni cause efficiente ni signe ; l’expérience ne montre pas plus de malheurs ; phénomènes naturels.",
+    "Attitude prônée : primauté de l’expérience et de la raison."
+   ],
+   "application": {
+    "q": "1. Quelle superstition se rattache aux comètes ?",
+    "a": "On croyait que leur apparition était le présage de grands malheurs."
+   },
+   "applications": [
+    {
+     "q": "Expliquez « c’est raisonner pitoyablement ».",
+     "a": "C’est raisonner de façon très faible et fausse, en prenant une simple coïncidence pour une cause."
+    },
+    {
+     "q": "Quel est le contraire de l’esprit scientifique selon le texte ?",
+     "a": "L’obscurantisme et la superstition."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 13,
+      "rect": [
+       0.06,
+       0.816,
+       0.94,
+       0.935
+      ],
+      "caption": "Présentation"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.904
+      ],
+      "caption": "Pierre BAYLE, Pensées sur la Comète"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Quelle superstition se rattache aux comètes ?",
+       "On croyait que leur apparition était le présage de grands malheurs."
+      ],
+      [
+       "2. Quel raisonnement Bayle met-il en cause ? Pourquoi ?",
+       "Celui qui conclut que deux choses sont l’effet l’une de l’autre parce qu’elles se suivent : la succession constante ne prouve pas la causalité."
+      ],
+      [
+       "3. Quels arguments montrent que la superstition contredit la raison ?",
+       "Les comètes ne sont ni la cause efficiente ni le signe des malheurs ; l’expérience ne prouve pas qu’il y ait plus de malheurs après elles ; elles obéissent aux lois de la nature."
+      ],
+      [
+       "4. Quelle attitude intellectuelle préconise-t-il ?",
+       "L’esprit critique et scientifique : se fier à l’expérience et à la raison, combattre l’obscurantisme et la crédulité."
+      ]
+     ]
+    },
+    {
+     "h": "Mots expliqués",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "présage",
+       "signe annonciateur"
+      ],
+      [
+       "cause efficiente",
+       "cause qui provoque, qui produit"
+      ],
+      [
+       "se morfondre",
+       "passer son temps de façon monotone, en s’ennuyant"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : présenter des superstitions qui persistent dans votre société et expliquer pourquoi elles persistent.",
+      "Écrit : Êtes-vous libérés des superstitions ou en gardez-vous quelques-unes ? Exemples précis."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 1 – Texte 3 : La dent d’or (Fontenelle)",
+   "match": [
+    "Thème 1 – Texte 3 : La dent d’or (Fontenelle)"
+   ],
+   "pages": [
+    15,
+    18
+   ],
+   "objectives": [
+    "Résumer une anecdote et en dégager la leçon.",
+    "Repérer le comique de situation.",
+    "Analyser une rumeur avec esprit critique."
+   ],
+   "intro": "Avez-vous déjà cru une rumeur qui s’est révélée fausse ? Qu’auriez-vous dû faire avant d’y croire ?",
+   "summary": "Fontenelle (1657-1757), précurseur de l’esprit philosophique, veut affranchir la pensée des préjugés. Sa règle : « Assurons-nous bien du fait, avant de nous inquiéter de la cause. » En 1593, le bruit courut qu’un enfant de Silésie, âgé de sept ans, avait vu pousser une dent d’or. Le professeur Horstius écrivit en 1595 qu’elle était en partie miraculeuse, envoyée par Dieu pour consoler les chrétiens affligés par les Turcs ; Rullandus, Ingolsteterus et Libavius publièrent à leur tour. Un orfèvre l’examina enfin : c’était une feuille d’or appliquée à la dent avec adresse. « On commença par faire des livres, et puis on consulta l’orfèvre. » Fontenelle généralise : nous avons des principes qui s’accommodent bien avec le faux ; les historiens peuvent être passionnés, crédules ou mal instruits.",
+   "points": [
+    "Règle : vérifier le fait avant de chercher la cause.",
+    "Anecdote : la prétendue dent d’or (1593).",
+    "Erreur des savants : écrire avant de vérifier.",
+    "Vérité : un orfèvre découvre une feuille d’or.",
+    "Comique : l’ordre inversé des démarches, l’ironie de l’auteur."
+   ],
+   "application": {
+    "q": "1. Point de départ et réaction des « savants » ?",
+    "a": "La rumeur d’une dent d’or poussée à un enfant de Silésie ; les savants écrivent des livres et s’affrontent pour en expliquer la cause, sans vérifier le fait."
+   },
+   "applications": [
+    {
+     "q": "Relevez une phrase ironique du texte.",
+     "a": "« Il ne manquait autre chose à tant de beaux ouvrages, sinon qu’il fût vrai que la dent était d’or. »"
+    },
+    {
+     "q": "Pourquoi les discussions historiques sont-elles sujettes à l’erreur ?",
+     "a": "Parce que les historiens peuvent avoir été passionnés, crédules, mal instruits ou négligents."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/3)",
+     "lines": [],
+     "fig": {
+      "page": 15,
+      "rect": [
+       0.06,
+       0.822,
+       0.94,
+       0.935
+      ],
+      "caption": "Présentation"
+     }
+    },
+    {
+     "h": "Le texte (2/3)",
+     "lines": [],
+     "fig": {
+      "page": 16,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.935
+      ],
+      "caption": "Histoire des oracles"
+     }
+    },
+    {
+     "h": "Le texte (3/3)",
+     "lines": [],
+     "fig": {
+      "page": 17,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.521
+      ],
+      "caption": "FONTENELLE (1686)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Point de départ et réaction des « savants » ?",
+       "La rumeur d’une dent d’or poussée à un enfant de Silésie ; les savants écrivent des livres et s’affrontent pour en expliquer la cause, sans vérifier le fait."
+      ],
+      [
+       "2. Comment s’est révélée la vérité ? Quelle démarche ?",
+       "Un orfèvre examina la dent : c’était une feuille d’or collée. La démarche juste est l’observation et la vérification du fait."
+      ],
+      [
+       "3. Le comique de la situation ?",
+       "L’ordre inversé : « on commença par faire des livres, et puis on consulta l’orfèvre » ; l’ironie : « Figurez-vous quelle consolation », « belle et docte réplique »."
+      ],
+      [
+       "4. Comment éviter ce ridicule ?",
+       "S’assurer d’abord de la réalité du fait avant de chercher ses causes : examiner, vérifier, consulter un connaisseur."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : exposé-enquête sur des rumeurs de votre milieu, avec analyse critique.",
+      "Écrit : expliquer et discuter « Assurons-nous bien du fait avant de nous inquiéter de la cause »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 1 – Texte 4 : Fanatisme (Voltaire)",
+   "match": [
+    "Thème 1 – Texte 4 : Fanatisme (Voltaire)"
+   ],
+   "pages": [
+    18,
+    20
+   ],
+   "objectives": [
+    "Analyser des parallélismes et un champ lexical.",
+    "Identifier le ton d’un texte.",
+    "Réfléchir aux moyens de lutter contre le fanatisme."
+   ],
+   "intro": "Qu’est-ce qui distingue une personne pieuse d’un fanatique ?",
+   "summary": "Voltaire (1694-1778), figure de l’esprit philosophique du 18e siècle, milite pour la tolérance, la justice et l’esprit critique. Pour lui, « le fanatisme est à la superstition ce que le transport est à la fièvre, ce que la rage est à la colère » : c’en est la forme extrême. L’enthousiaste prend ses songes pour des réalités ; le fanatique soutient sa folie par le meurtre. Le fanatisme est présenté comme une maladie presque incurable et épidémique (convulsionnaires de saint Paris). Le seul remède est l’esprit philosophique, qui adoucit les mœurs ; les lois sont impuissantes, car les fanatiques se croient au-dessus d’elles. Ils puisent leur fureur dans la religion même qui les condamne.",
+   "points": [
+    "Parallélismes : fanatisme/superstition = transport/fièvre = rage/colère.",
+    "Enthousiaste ≠ fanatique (le meurtre).",
+    "Champ lexical de la maladie : gangrené, incurable, épidémique, convulsionnaires, frénétique.",
+    "Remède : l’esprit philosophique ; les lois sont impuissantes.",
+    "Ton : polémique, indigné, ironique."
+   ],
+   "application": {
+    "q": "1. Quels parallélismes ? Quelle conclusion ?",
+    "a": "Fanatisme/superstition comme transport/fièvre et rage/colère : le fanatisme est le degré extrême, violent et dangereux de la superstition."
+   },
+   "applications": [
+    {
+     "q": "Quelle différence entre l’enthousiaste et le fanatique ?",
+     "a": "L’enthousiaste prend ses songes pour des réalités ; le fanatique soutient sa folie par le meurtre."
+    },
+    {
+     "q": "Pourquoi les lois sont-elles impuissantes ?",
+     "a": "Parce que les fanatiques se croient pénétrés d’un esprit supérieur aux lois."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 18,
+      "rect": [
+       0.06,
+       0.158,
+       0.94,
+       0.935
+      ],
+      "caption": "Présentation et texte"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 19,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.322
+      ],
+      "caption": "VOLTAIRE, Dictionnaire philosophique (1764)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Quels parallélismes ? Quelle conclusion ?",
+       "Fanatisme/superstition comme transport/fièvre et rage/colère : le fanatisme est le degré extrême, violent et dangereux de la superstition."
+      ],
+      [
+       "2. Champ lexical de la maladie ? Constat ?",
+       "gangrené, maladie, incurable, convulsionnaires, épidémique, mal, frénétique : le fanatisme est une maladie contagieuse de l’esprit."
+      ],
+      [
+       "3. Ton du texte ?",
+       "Polémique et indigné (violence des images), avec de l’ironie (« comme si vous lisiez un arrêt du conseil à un frénétique »)."
+      ],
+      [
+       "4. Comment être à l’abri du fanatisme ?",
+       "Par l’esprit philosophique qui, répandu de proche en proche, adoucit les mœurs et prévient le mal."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : comment lutter efficacement contre le fanatisme ?",
+      "Écrit : expliquer et commenter « Les fanatiques puisent leur fureur dans la religion même qui les condamne »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 2 – Texte 1 : Les satellites, porteurs de santé",
+   "match": [
+    "Thème 2 – Texte 1 : Les satellites, porteurs de santé"
+   ],
+   "pages": [
+    21,
+    23
+   ],
+   "objectives": [
+    "Définir les satellites et leurs fonctions.",
+    "Relever l’apport des satellites à la santé.",
+    "Argumenter sur les satellites et la communication."
+   ],
+   "intro": "Comment la météo du lendemain est-elle connue ? Comment voit-on un match joué à l’autre bout du monde ?",
+   "summary": "Les satellites artificiels, « bonnes à tout faire » mises en orbite, observent la Terre plus exactement que les postes terrestres et transmettent sans interruption des informations aux réseaux d’ordinateurs, donnant une image détaillée de « l’état du monde ». Ils servent à l’agriculture, aux forêts, aux travaux publics, à la géologie, à l’urbanisme, aux communications, à l’éducation, à la météorologie, aux ressources naturelles ; ils localisent les catastrophes et les invasions de sauterelles, diffusent la télévision et observent les groupements militaires. L’OMS pense qu’ils pourraient servir l’épidémiologie : détecter les régions où une maladie peut se développer (air, eau, sol, végétation), prévoir les épidémies et planifier les vaccins.",
+   "points": [
+    "Satellites : machines en orbite qui observent la Terre.",
+    "Comparés à des « bonnes à tout faire » dotées de « sens » artificiels.",
+    "Domaines : agriculture, météo, communications, catastrophes…",
+    "Santé : épidémiologie, prévision des épidémies, planification des vaccins."
+   ],
+   "application": {
+    "q": "1. Définition des satellites ?",
+    "a": "Des machines fabriquées par l’homme, mises en orbite, qui observent la Terre et transmettent des informations."
+   },
+   "applications": [
+    {
+     "q": "Citez quatre domaines observés par les satellites.",
+     "a": "L’agriculture, la météorologie, les communications, les ressources naturelles."
+    },
+    {
+     "q": "Que peuvent détecter les satellites en matière de santé ?",
+     "a": "Les régions où, selon l’air, l’eau, le sol et la végétation, une maladie peut se développer."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 21,
+      "rect": [
+       0.06,
+       0.556,
+       0.94,
+       0.935
+      ],
+      "caption": "Extrait 1"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 22,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.6
+      ],
+      "caption": "Journal Chaab (14 mai 2009)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Définition des satellites ?",
+       "Des machines fabriquées par l’homme, mises en orbite, qui observent la Terre et transmettent des informations."
+      ],
+      [
+       "2. Leur importance ?",
+       "Ils renseignent sur l’agriculture, le climat, les ressources, les catastrophes, diffusent la télévision et assurent les communications."
+      ],
+      [
+       "3. Avec quoi sont-ils comparés ?",
+       "Avec des « bonnes à tout faire » dotées de « sens » artificiels."
+      ],
+      [
+       "4. Intérêt des informations transmises ?",
+       "Elles donnent une image détaillée de « l’état du monde »."
+      ],
+      [
+       "5. Autre secteur souhaité par l’ONU (OMS) ? But ?",
+       "La santé (l’épidémiologie) : détecter les zones à risque de maladies."
+      ],
+      [
+       "6. Aide à la médecine ? Exemple.",
+       "Prévoir les épidémies et planifier les produits de vaccination."
+      ]
+     ]
+    },
+    {
+     "h": "Mots expliqués",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "orbite",
+       "trajectoire décrite autour d’une planète"
+      ],
+      [
+       "sophistiqué",
+       "perfectionné"
+      ],
+      [
+       "épidémiologie",
+       "étude des épidémies"
+      ],
+      [
+       "climatologie",
+       "étude du climat"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : avantages pour la Mauritanie du satellite Arabsat (télécommunications).",
+      "Écrit (15-20 lignes) : dans quelle mesure les satellites ont-ils contribué au développement des moyens de communication ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 2 – Texte 2 : Les applications de la science moderne (Heisenberg)",
+   "match": [
+    "Thème 2 – Texte 2 : Les applications de la science moderne (Heisenberg)"
+   ],
+   "pages": [
+    23,
+    25
+   ],
+   "objectives": [
+    "Dégager la réflexion d’un savant sur les effets culturels de la science.",
+    "Illustrer une idée par des exemples.",
+    "Résumer un texte au quart."
+   ],
+   "intro": "Quand on parle de physique aujourd’hui, à quoi pense-t-on d’abord ?",
+   "summary": "Werner Heisenberg, physicien allemand, prix Nobel 1932, s’interroge sur les répercussions socio-culturelles de la science moderne. On pense d’abord aux armes atomiques et à leur influence politique. Mais « tout instrument porte en lui l’esprit dans lequel il a été créé » : en s’occupant de ses armes nouvelles, chaque nation laisse l’esprit de la physique moderne pénétrer les esprits et s’imbriquer dans les traditions. Là où la science moderne s’est élaborée, les gens adoptent facilement les idées neuves, car ils s’y sont adaptés progressivement ; ailleurs, ces idées se heurtent aux fondements religieux et philosophiques de la culture.",
+   "points": [
+    "Applications visées : les armes atomiques.",
+    "Aspect plus important que le politique : l’impact culturel (l’esprit de la science pénètre les traditions).",
+    "Pays industrialisés : adaptation progressive aux idées neuves.",
+    "Autres pays : conflit avec les fondements religieux et philosophiques."
+   ],
+   "application": {
+    "q": "1. Quelles applications font l’objet de sa réflexion ?",
+    "a": "Les armes atomiques et, plus largement, les applications de la physique moderne."
+   },
+   "applications": [
+    {
+     "q": "Expliquez « tout instrument porte en lui l’esprit dans lequel il a été créé ».",
+     "a": "Un outil transmet la manière de penser de ceux qui l’ont conçu ; l’adopter, c’est aussi adopter une part de leur esprit."
+    },
+    {
+     "q": "Pourquoi les pays industrialisés s’adaptent-ils mieux ?",
+     "a": "Parce qu’ils se sont habitués progressivement, depuis longtemps, aux méthodes de pensée de la science."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.06,
+       0.508,
+       0.94,
+       0.935
+      ],
+      "caption": "Présentation et texte"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 24,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.446
+      ],
+      "caption": "HEISENBERG"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Quelles applications font l’objet de sa réflexion ?",
+       "Les armes atomiques et, plus largement, les applications de la physique moderne."
+      ],
+      [
+       "2. Aspect jugé plus important que le politique ? Pourquoi ?",
+       "L’aspect culturel : tout instrument porte l’esprit qui l’a créé, donc l’esprit de la physique moderne pénètre les traditions."
+      ],
+      [
+       "3. Exemples d’adoption facile des idées neuves ?",
+       "Dans les pays industrialisés, l’adoption de l’informatique ou de nouvelles techniques s’est faite progressivement, palier par palier."
+      ],
+      [
+       "4. Ces idées ne posent-elles aucun problème là-bas ?",
+       "Si : elles posent aussi des problèmes (éthiques, environnementaux), même si l’adaptation est plus facile."
+      ],
+      [
+       "5. Exemples pour la dernière phrase ?",
+       "Certaines innovations (en médecine ou en biologie) peuvent heurter des convictions religieuses ou des traditions."
+      ]
+     ]
+    },
+    {
+     "h": "Mots expliqués",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "s’imbriquer",
+       "pénétrer dans une structure déjà existante"
+      ],
+      [
+       "l’impact",
+       "action, contact"
+      ],
+      [
+       "palier par palier",
+       "étape par étape, progressivement"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : faut-il adopter toutes les applications de la science moderne ou en rejeter quelques-unes ?",
+      "Écrit : résumer le texte au ¼ ; discussion sur « Dans certaines parties du monde, les idées se heurtent aux fondements religieux et philosophiques de la culture »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 2 – Texte 3 : Dangers des sciences (Montesquieu)",
+   "match": [
+    "Thème 2 – Texte 3 : Dangers des sciences (Montesquieu)"
+   ],
+   "pages": [
+    25,
+    27
+   ],
+   "objectives": [
+    "Identifier le genre épistolaire et l’intention de l’auteur.",
+    "Relever les éléments montrant la science comme moyen d’asservissement.",
+    "Discuter « Science sans conscience n’est que ruine de l’âme »."
+   ],
+   "intro": "Les inventions servent-elles toujours au bien de l’humanité ? Donnez un exemple contraire.",
+   "summary": "Dans une lettre des « Lettres Persanes » (Venise, 1717), un Persan doute que l’utilité des sciences occidentales dédommage les hommes de leur mauvais usage. L’invention des bombes aurait ôté la liberté aux peuples d’Europe : les princes entretiennent de grosses armées qui oppriment leurs sujets ; depuis la poudre, il n’y a plus de places imprenables, donc plus d’asile contre l’injustice. Il craint qu’on découvre un jour un moyen plus rapide de faire périr des nations entières (phrase prophétique). La chimie est un « quatrième fléau » après la guerre, la peste et la famine. La boussole et les découvertes ont apporté les maladies, l’inutile multiplication de l’or et de l’argent, la destruction de nations et la servitude des survivants.",
+   "points": [
+    "Genre : lettre (roman épistolaire).",
+    "Intention : dénoncer le mauvais usage des sciences.",
+    "Science et asservissement : bombes, armées, oppression, destruction des peuples découverts.",
+    "Phrase prophétique : la crainte d’une arme d’extermination (annonce l’arme nucléaire)."
+   ],
+   "application": {
+    "q": "1. Justifiez le titre.",
+    "a": "L’auteur énumère les dangers des inventions : bombes, poudre, chimie, boussole."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi la chimie est-elle appelée « quatrième fléau » ?",
+     "a": "Parce qu’elle détruit les hommes continuellement, en détail, alors que la guerre, la peste et la famine les détruisent en gros, par intervalles."
+    },
+    {
+     "q": "Que reproche l’auteur à la boussole ?",
+     "a": "D’avoir communiqué aux Européens les maladies des peuples découverts et d’avoir causé leur destruction et leur servitude."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 25,
+      "rect": [
+       0.06,
+       0.436,
+       0.94,
+       0.935
+      ],
+      "caption": "Lettres Persanes"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 26,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.538
+      ],
+      "caption": "Montesquieu (1717)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Justifiez le titre.",
+       "L’auteur énumère les dangers des inventions : bombes, poudre, chimie, boussole."
+      ],
+      [
+       "2. Intention de l’auteur ?",
+       "Dénoncer le mauvais usage des sciences, qui servent à opprimer et à détruire."
+      ],
+      [
+       "3. Genre du texte ?",
+       "Une lettre : « Tu m’as beaucoup parlé, dans une de tes lettres », lieu et date « De Venise, le 2 de la lune de Rhamazan 1717 »."
+      ],
+      [
+       "4. Phrase prophétique ? Pourquoi ?",
+       "« Je tremble toujours qu’on ne parvienne à la fin à découvrir quelque secret qui fournisse une voie plus abrégée pour faire périr les hommes… » : elle annonce les armes de destruction massive."
+      ],
+      [
+       "5. Éléments montrant la science comme asservissement ?",
+       "Les bombes ont ôté la liberté ; les princes oppriment leurs sujets avec des troupes ; plus d’asile contre la violence ; servitude des peuples découverts."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : enquête sur l’état de la recherche scientifique en Mauritanie, puis exposé-débat.",
+      "Écrit : expliquer et discuter « Science sans conscience n’est que ruine de l’âme » (Rabelais)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 2 – Texte 4 : Déclaration sur la science et l’utilisation du savoir scientifique",
+   "match": [
+    "Thème 2 – Texte 4 : Déclaration sur la science et l’utilisation du savoir scientifique"
+   ],
+   "pages": [
+    27,
+    29
+   ],
+   "objectives": [
+    "Identifier l’énonciateur d’un texte officiel.",
+    "Relever avantages et inconvénients de la science.",
+    "Résumer chaque paragraphe en une ou deux phrases."
+   ],
+   "intro": "La science a-t-elle rendu la vie meilleure ? Citez un bienfait et un danger.",
+   "summary": "La Conférence mondiale sur la science (Budapest, 1999) rappelle que nous vivons sur la même planète, dans une interdépendance croissante : notre avenir est lié à la préservation des systèmes de maintien de la vie. Les nations et les scientifiques doivent utiliser de manière responsable le savoir pour satisfaire les besoins humains, en faisant collaborer toutes les sciences (naturelles, biomédicales, de l’ingénieur, sociales et humaines). La science a apporté des bienfaits : espérance de vie accrue, traitement de maladies, hausse de la production agricole, libération des tâches pénibles, nouveaux produits et technologies de communication. Mais elle a aussi causé la dégradation de l’environnement, des catastrophes technologiques, l’exclusion sociale et des armes sophistiquées. La déclaration appelle à réduire les ressources consacrées aux armements pour les reconvertir à des fins civiles.",
+   "points": [
+    "« Nous » : les participants à la conférence (nations et scientifiques).",
+    "Interdépendance et préservation de la planète.",
+    "Collaboration de toutes les sciences au service de l’humanité.",
+    "Avantages : santé, agriculture, énergie, communication.",
+    "Inconvénients : environnement, catastrophes, exclusion, armes.",
+    "Proposition : reconvertir l’armement à des fins civiles."
+   ],
+   "application": {
+    "q": "1. Que désigne « nous » ?",
+    "a": "Les participants à la Conférence mondiale sur la science : les nations et les scientifiques du monde."
+   },
+   "applications": [
+    {
+     "q": "Quelles sciences doivent collaborer ?",
+     "a": "Les sciences naturelles, biomédicales, de l’ingénieur, ainsi que les sciences sociales et humaines."
+    },
+    {
+     "q": "Résumez l’idée du paragraphe sur les bienfaits.",
+     "a": "Le savoir scientifique a allongé la vie, soigné des maladies, augmenté la production agricole et libéré l’homme des tâches pénibles."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 27,
+      "rect": [
+       0.06,
+       0.27,
+       0.94,
+       0.935
+      ],
+      "caption": "Déclaration de Budapest"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 28,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.569
+      ],
+      "caption": "Conférence mondiale sur la science (1999)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Que désigne « nous » ?",
+       "Les participants à la Conférence mondiale sur la science : les nations et les scientifiques du monde."
+      ],
+      [
+       "2. Sens de la phrase sur l’interdépendance ?",
+       "Les hommes dépendent les uns des autres, et leur avenir dépend de la protection de l’environnement qui permet la vie sur Terre."
+      ],
+      [
+       "3. Lien voulu entre les sciences ? But ?",
+       "Une collaboration active entre toutes les sciences, pour servir l’humanité entière et assurer une meilleure qualité de vie."
+      ],
+      [
+       "4. Deux avantages et deux inconvénients ?",
+       "Avantages : espérance de vie accrue, production agricole augmentée. Inconvénients : dégradation de l’environnement, armes de destruction massive."
+      ],
+      [
+       "5. Proposition du dernier paragraphe ?",
+       "Réduire les ressources consacrées aux armements et les reconvertir à des fins civiles."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : le savoir scientifique utilisé en Mauritanie n’a-t-il que des avantages ?",
+      "Écrit : résumé au ¼ ; discussion de « Les sciences doivent assurer à tous une meilleure qualité de vie… »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 3 – Texte 1 : Informatique, définition et rôle",
+   "match": [
+    "Thème 3 – Texte 1 : Informatique, définition et rôle"
+   ],
+   "pages": [
+    30,
+    32
+   ],
+   "objectives": [
+    "Définir l’informatique et l’origine du mot.",
+    "Citer des domaines d’application.",
+    "Suivre l’évolution de la terminologie (TIC)."
+   ],
+   "intro": "D’où vient, à votre avis, le mot « informatique » ?",
+   "summary": "Formé à partir de « information » et « automatique », le mot informatique désigne le traitement automatique de l’information par des ordinateurs, et plus largement l’ensemble des sciences et techniques liées au traitement de l’information ; dans le parler populaire, il désigne aussi le matériel (l’électronique) et la bureautique. Le terme a été créé en mars 1962 par Philippe Dreyfus, ancien directeur du Centre National de Calcul Électronique de Bull, pour nommer son entreprise, la Société d’Informatique Appliquée (SIA). Ses domaines sont nombreux : banque, médecine, agriculture, administrations, commerce. Les ordinateurs traitent des informations de plus en plus complexes, et l’on est passé de « l’informatique » aux « technologies de l’information », puis aux « nouvelles technologies de l’information et de la communication ».",
+   "points": [
+    "Informatique = information + automatique.",
+    "Créé en 1962 par Philippe Dreyfus (SIA).",
+    "Domaines : banque, médecine, agriculture, administrations, commerce.",
+    "Évolution : technologies de l’information, NTIC, traitement des connaissances."
+   ],
+   "application": {
+    "q": "1. Qu’est-ce que l’informatique ? Autres sens ?",
+    "a": "Le traitement automatique de l’information par ordinateur ; aussi les sciences et techniques de l’information, le matériel (l’électronique) et la bureautique."
+   },
+   "applications": [
+    {
+     "q": "Qui a créé le mot « informatique » et quand ?",
+     "a": "Philippe Dreyfus, en mars 1962."
+    },
+    {
+     "q": "Vers quoi le terme informatique glisse-t-il progressivement ?",
+     "a": "Vers un sens plus restreint, relié aux aspects techniques."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 30,
+      "rect": [
+       0.06,
+       0.63,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 1"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 31,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.538
+      ],
+      "caption": "Informatique : définition et rôle"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Qu’est-ce que l’informatique ? Autres sens ?",
+       "Le traitement automatique de l’information par ordinateur ; aussi les sciences et techniques de l’information, le matériel (l’électronique) et la bureautique."
+      ],
+      [
+       "2. À quelle fin Ph. Dreyfus utilisa-t-il ce mot ?",
+       "Pour désigner son entreprise, la « Société d’Informatique Appliquée » (SIA), en mars 1962."
+      ],
+      [
+       "3. Exemples d’application dans un domaine ?",
+       "En médecine : dossiers médicaux, imagerie ; en banque : gestion des comptes, cartes et virements."
+      ],
+      [
+       "4. Autres terminologies ?",
+       "Technologies de l’information ; (nouvelles) technologies de l’information et de la communication."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : doit-on généraliser l’informatique dans tous les domaines en Mauritanie ?",
+      "Écrit (15-20 lignes) : avantages et inconvénients de l’informatique.",
+      "Enquête : l’informatique dans l’éducation et les lycées."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 3 – Texte 2 : Qu’est-ce que l’informatique ? (Le Monde, 1967)",
+   "match": [
+    "Thème 3 – Texte 2 : Qu’est-ce que l’informatique ? (Le Monde, 1967)"
+   ],
+   "pages": [
+    32,
+    34
+   ],
+   "objectives": [
+    "Identifier le genre et le destinataire d’un article de presse.",
+    "Dégager le paradoxe de la spécialisation.",
+    "Retenir les trois phases du travail informatique."
+   ],
+   "intro": "Un seul homme peut-il connaître tout ce qui s’écrit dans le monde aujourd’hui ?",
+   "summary": "Dans un article du Monde (1967), le journaliste part d’une constatation : les bureaux deviennent des laboratoires où l’on traite scientifiquement l’information pour prendre des décisions, et cette information est énorme en quantité, mondiale, et de plus en plus diverse. Aucun cerveau humain ne peut l’embrasser. D’où un paradoxe : le savant universel n’existe plus (ère de la spécialisation), mais les connaissances sont liées entre elles ; plus on se spécialise, plus on devrait le regretter. L’informatique, méthode nouvelle, résout cette contradiction en trois phases : rassembler les informations dans tous les domaines et toutes les langues (traduction automatique) ; les trier et les classer (codification, systèmes de recherche) ; les traiter (accumuler, comparer, éliminer les mauvaises solutions).",
+   "points": [
+    "Genre : article de presse de vulgarisation, pour le grand public.",
+    "Caractéristiques de l’information : quantité, dimension mondiale, diversité.",
+    "Paradoxe : spécialisation des cerveaux / unité des connaissances.",
+    "Trois phases : rassembler, trier et classer, traiter."
+   ],
+   "application": {
+    "q": "1. Genre, destinataire, objectif ?",
+    "a": "Un article de presse (Le Monde) destiné au grand public, pour expliquer la nature et le rôle de l’informatique."
+   },
+   "applications": [
+    {
+     "q": "Expliquez le paradoxe relevé par le journaliste.",
+     "a": "Plus on se spécialise, plus on découvre les liens entre les domaines du savoir, donc plus on devrait regretter d’être spécialisé."
+    },
+    {
+     "q": "Quelle branche de l’informatique est « encore à ses balbutiements » ?",
+     "a": "La traduction automatique."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 32,
+      "rect": [
+       0.06,
+       0.353,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 2"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 33,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.754
+      ],
+      "caption": "Le Monde, 12/11/1967"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Genre, destinataire, objectif ?",
+       "Un article de presse (Le Monde) destiné au grand public, pour expliquer la nature et le rôle de l’informatique."
+      ],
+      [
+       "2. Constatation de départ ?",
+       "Les bureaux sont devenus de véritables laboratoires de traitement des informations nécessaires aux décisions de l’entreprise."
+      ],
+      [
+       "3. Caractéristiques de l’information ?",
+       "Sa masse énorme, sa dimension planétaire et sa diversité."
+      ],
+      [
+       "4. Conséquences pour son exploitation ?",
+       "Un cerveau humain unique ne peut plus tout embrasser."
+      ],
+      [
+       "5. Définition de l’informatique ?",
+       "Une méthode, une science nouvelle qui rassemble, classe et traite automatiquement les informations."
+      ],
+      [
+       "6./7. Son rôle et sa démarche ?",
+       "Résoudre la contradiction entre spécialisation et unité du savoir en trois phases : rassembler, trier/classer, traiter."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : avantages et inconvénients de l’informatique dans un secteur (agriculture) en Mauritanie.",
+      "Écrit : résumer le texte au ¼.",
+      "Enquête : l’informatique en Mauritanie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 3 – Texte 3 : Aux bons soins de l’ordinateur (texte d’anticipation)",
+   "match": [
+    "Thème 3 – Texte 3 : Aux bons soins de l’ordinateur (texte d’anticipation)"
+   ],
+   "pages": [
+    34,
+    37
+   ],
+   "objectives": [
+    "Reconnaître un texte d’anticipation.",
+    "Suivre les étapes d’une consultation assistée par ordinateur.",
+    "Distinguer fiction et réalité."
+   ],
+   "intro": "Pourrait-on un jour être soigné par un ordinateur ? Qu’est-ce qui existe déjà ?",
+   "summary": "En 1968, le Dr John Anderson imagine l’avenir de la médecine à l’ère de l’informatique. Monsieur Aba, malade, appelle son médecin par un « téléphone-téléviseur » qui permet de se voir. Le médecin décide de le recevoir au centre sanitaire, où il se rend en ambulance électrique climatisée. Le médecin demande à l’ordinateur le dossier médical du patient, le lit à l’écran et y dicte de nouveaux renseignements ; l’ordinateur organise la visite. Au centre, l’infirmière le conduit à la chambre B2 (l’ordinateur peut indiquer la direction) et annonce son nom dans un microphone. Le médecin l’examine, ordonne des analyses et dicte un résumé ; l’ordinateur propose des diagnostics possibles et suggère d’autres tests. Vingt ans plus tard, cette fiction est en partie devenue réalité.",
+   "points": [
+    "Contact : par téléphone-téléviseur (visioconférence).",
+    "Consultation au centre sanitaire.",
+    "L’ordinateur : dossier médical, organisation de la visite, orientation, aide au diagnostic.",
+    "Prise en charge : médecin, infirmière et ordinateur.",
+    "Réalité aujourd’hui : téléconsultation, dossiers électroniques, aide au diagnostic."
+   ],
+   "application": {
+    "q": "1. Comment M. Aba contacte-t-il son médecin ?",
+    "a": "Par le « téléphone-téléviseur », qui lui permet de lui parler en se voyant."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce qu’un texte d’anticipation ?",
+     "a": "Un texte qui imagine l’avenir à partir des possibilités de la science et de la technique."
+    },
+    {
+     "q": "Quelle est la part de l’ordinateur dans le diagnostic ?",
+     "a": "Il présente une liste de diagnostics possibles et suggère d’autres possibilités et d’autres tests."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 34,
+      "rect": [
+       0.06,
+       0.644,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 3"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 35,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.878
+      ],
+      "caption": "Dr John Anderson, Courrier de l’UNESCO (1968)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Comment M. Aba contacte-t-il son médecin ?",
+       "Par le « téléphone-téléviseur », qui lui permet de lui parler en se voyant."
+      ],
+      [
+       "2. Où le médecin décide-t-il de le consulter ?",
+       "Au centre sanitaire, où il se rend en ambulance électrique climatisée."
+      ],
+      [
+       "3. Que fait le médecin après le rendez-vous ?",
+       "Il demande à l’ordinateur le dossier médical du patient, le lit puis y dicte de nouveaux renseignements."
+      ],
+      [
+       "4. Qui organise la visite ?",
+       "L’ordinateur."
+      ],
+      [
+       "5. Autre rôle de l’ordinateur ?",
+       "Indiquer la direction des chambres et proposer des diagnostics et des tests."
+      ],
+      [
+       "6. Le patient est-il pris en charge par le seul médecin ?",
+       "Non : « l’infirmière le conduit à la chambre B2 », et l’ordinateur intervient aussi."
+      ],
+      [
+       "7. Fiction et réalité ?",
+       "Fiction en 1968 ; aujourd’hui la téléconsultation, les dossiers informatisés et l’aide au diagnostic sont des réalités."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : les ordinateurs pourront-ils remplacer les médecins ?",
+      "Écrit : texte d’anticipation (20 lignes) prêtant aux ordinateurs ou robots des pouvoirs extraordinaires.",
+      "Enquête dans un centre de soins de votre environnement."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 3 – Texte 4 : Avantages et inconvénients de l’informatique",
+   "match": [
+    "Thème 3 – Texte 4 : Avantages et inconvénients de l’informatique"
+   ],
+   "pages": [
+    37,
+    38
+   ],
+   "objectives": [
+    "Classer des avantages et des inconvénients par ordre d’importance.",
+    "Compléter une argumentation.",
+    "Rédiger un texte avantages/inconvénients sur une technologie."
+   ],
+   "intro": "Que faites-vous avec Internet ? Que perdez-vous à cause de lui ?",
+   "summary": "Avec l’informatique, le monde a connu une grande évolution : elle est devenue indispensable à la communication. Internet permet d’effectuer sans se déplacer des courses, des réservations, des commandes, des recherches d’emploi ; les réseaux sociaux permettent à des millions de personnes de communiquer, discuter et se divertir malgré les distances, d’exprimer leurs opinions sur des blogs, de partager photos et vidéos, et de travailler à distance. Mais l’informatique favorise la communication virtuelle : les gens se parlent peu et deviennent solitaires et insociables, les contacts physiques disparaissent. De plus, les réseaux ne sont pas toujours sécurisés : virus, perte de données, vols et arnaques.",
+   "points": [
+    "Avantages : opérations à distance, communication mondiale, expression, travail à distance.",
+    "Inconvénients : communication virtuelle, isolement, insécurité (virus, vols, arnaques).",
+    "Structure : thèse (avantages) / « Mais » / antithèse (inconvénients)."
+   ],
+   "application": {
+    "q": "1. Avantages par ordre décroissant (exemple) ?",
+    "a": "La communication à distance ; les opérations sans déplacement (réservations, commandes) ; la recherche d’emploi et le travail à distance ; l’expression des opinions."
+   },
+   "applications": [
+    {
+     "q": "Quel connecteur marque le passage aux inconvénients ?",
+     "a": "« Mais » (« Mais tous ces avantages ne doivent pas masquer… »)."
+    },
+    {
+     "q": "Qu’appelle-t-on « communication virtuelle » ?",
+     "a": "Une communication par écrans interposés, sans contact physique direct."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte",
+     "lines": [],
+     "fig": {
+      "page": 37,
+      "rect": [
+       0.06,
+       0.05,
+       0.94,
+       0.928
+      ],
+      "caption": "Source : Recherche Internet"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Avantages par ordre décroissant (exemple) ?",
+       "La communication à distance ; les opérations sans déplacement (réservations, commandes) ; la recherche d’emploi et le travail à distance ; l’expression des opinions."
+      ],
+      [
+       "2. Inconvénients par ordre décroissant (exemple) ?",
+       "L’isolement et la disparition des contacts ; les vols et arnaques ; les virus et la perte de données."
+      ],
+      [
+       "3. Avantages/inconvénients omis ?",
+       "Avantages : l’accès au savoir, l’enseignement à distance. Inconvénients : l’addiction, la désinformation, les atteintes à la vie privée."
+      ],
+      [
+       "4. Un autre titre ?",
+       "« L’informatique, une arme à double tranchant »."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : avantages et inconvénients des réseaux sociaux chez nous, notamment chez les jeunes.",
+      "Écrit (15-20 lignes) : avantages et inconvénients d’une technologie de votre choix.",
+      "Enquête : interroger un professionnel utilisant un ordinateur."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 4 – Texte 1 : Pays pauvres, pays riches : le gaspillage des énergies",
+   "match": [
+    "Thème 4 – Texte 1 : Pays pauvres, pays riches : le gaspillage des énergies"
+   ],
+   "pages": [
+    39,
+    41
+   ],
+   "objectives": [
+    "Identifier un problème de développement.",
+    "Analyser le caractère inéquitable des échanges.",
+    "Actualiser un texte daté."
+   ],
+   "intro": "Le fer de Zouérate : à qui est-il vendu ? Et que nous achetons-nous en retour ?",
+   "summary": "En 1982, le développement économique s’appuie sur des échanges de plus en plus inégaux : les États prospères vendent cher aux nations défavorisées leurs produits industriels et même des usines « clé en main », et reçoivent à bas prix sucre, coton, café, caoutchouc, cacao, thé, arachide, huiles, fruits, ainsi que du pétrole et des minerais (le fer de Mauritanie, la bauxite, le cuivre, l’uranium…). L’injustice ne cesse de croître : les paysans du Tiers Monde, travaillant pour l’exportation, négligent les cultures vivrières et ne mangent pas à leur faim, tandis que les pays riches « dévorent » l’énergie (un Boeing 747 brûle des tonnes de carburant alors que les agriculteurs de Tanzanie manquent de pétrole pour s’éclairer). Pour supprimer ces inégalités, il faudrait des solutions énergiques et une transformation radicale des mentalités.",
+   "points": [
+    "Problème : l’échange inégal entre pays riches et pays pauvres.",
+    "Pays riches : vendent cher des produits industriels.",
+    "Pays pauvres : vendent à bas prix matières premières et produits agricoles.",
+    "Conséquence : abandon des cultures vivrières, faim.",
+    "Solution : mesures énergiques et changement des mentalités."
+   ],
+   "application": {
+    "q": "1. Quel problème est posé ?",
+    "a": "L’inégalité des échanges entre pays riches et pays pauvres, et le gaspillage d’énergie par les pays riches."
+   },
+   "applications": [
+    {
+     "q": "Quel produit mauritanien est cité ?",
+     "a": "Le fer, importé « essentiellement de Mauritanie »."
+    },
+    {
+     "q": "Qu’est-ce qu’une culture vivrière ?",
+     "a": "Une culture destinée à nourrir la population locale, et non à l’exportation."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 39,
+      "rect": [
+       0.06,
+       0.66,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 1"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 40,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.631
+      ],
+      "caption": "M. Chabot et alii, À la découverte de la Terre (1982)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Quel problème est posé ?",
+       "L’inégalité des échanges entre pays riches et pays pauvres, et le gaspillage d’énergie par les pays riches."
+      ],
+      [
+       "2. Que vendent les pays riches ? Que reçoivent-ils ?",
+       "Ils vendent cher des produits industriels et des usines « clé en main » ; ils reçoivent à bas prix produits agricoles, pétrole et minerais."
+      ],
+      [
+       "3. Ce commerce est-il équitable ?",
+       "Non : les uns vendent cher, les autres bon marché ; « l’injustice ne cesse de croître »."
+      ],
+      [
+       "4. Problème grave pour les agriculteurs ?",
+       "Ils négligent les cultures vivrières pour l’exportation et ne mangent pas à leur faim."
+      ],
+      [
+       "5. Date ? Le problème est-il actuel ?",
+       "1982 ; oui, les inégalités commerciales persistent largement aujourd’hui."
+      ],
+      [
+       "6. Public visé ? But ?",
+       "Le public des pays riches (« nous »), pour le sensibiliser à l’injustice des échanges."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : comment les pays en développement (dont la Mauritanie) peuvent-ils réduire leur dépendance ?",
+      "Écrit : discussion de « Pour supprimer les dramatiques inégalités… transformation radicale des mentalités ».",
+      "Enquête : les échanges commerciaux de la Mauritanie (mines, pêche…)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 4 – Texte 2 : La science pour le développement",
+   "match": [
+    "Thème 4 – Texte 2 : La science pour le développement"
+   ],
+   "pages": [
+    41,
+    43
+   ],
+   "objectives": [
+    "Dégager la thèse d’un texte argumentatif.",
+    "Reformuler une phrase complexe.",
+    "Réfléchir au rôle de l’enseignement scientifique."
+   ],
+   "intro": "Comment la science peut-elle aider la Mauritanie à se développer ?",
+   "summary": "La science et ses applications sont indispensables au développement. Gouvernements et secteur privé doivent, par des programmes d’éducation et de recherche, bâtir une capacité scientifique et technologique adéquate et équitablement répartie, socle d’un développement économique, social, culturel et respectueux de l’environnement ; c’est urgent pour les pays en développement. La technologie doit s’orienter vers des modes de production propres et sans danger, une utilisation plus efficiente des ressources et des produits respectueux de l’environnement. Enseigner la science à tous, sans discrimination, est une condition de la démocratie et du développement durable. Il faut reconnaître le rôle fondamental des femmes dans la production alimentaire et la santé, et accorder une attention particulière aux groupes marginalisés.",
+   "points": [
+    "Thèse : la science est indispensable au développement.",
+    "Action attendue : programmes d’éducation et de recherche.",
+    "Production propre, ressources efficaces, produits écologiques.",
+    "Enseignement scientifique pour tous : démocratie et développement durable.",
+    "Publics prioritaires : les femmes et les groupes marginalisés."
+   ],
+   "application": {
+    "q": "1. Thèse défendue ?",
+    "a": "La science et ses applications sont indispensables au développement."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi le texte insiste-t-il sur les femmes ?",
+     "a": "Parce qu’elles jouent un rôle fondamental dans l’application des progrès scientifiques à la production alimentaire et aux soins de santé."
+    },
+    {
+     "q": "Que signifie « sans discrimination » ?",
+     "a": "Sans exclure personne, quels que soient le sexe, l’origine ou la condition sociale."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 41,
+      "rect": [
+       0.06,
+       0.674,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 2"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 42,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.538
+      ],
+      "caption": "La science pour le développement"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Thèse défendue ?",
+       "La science et ses applications sont indispensables au développement."
+      ],
+      [
+       "2. Action concrète attendue des gouvernements ?",
+       "Financer et soutenir des programmes d’éducation et de recherche pour créer une capacité scientifique bien répartie."
+      ],
+      [
+       "3. « Modes de production propres » ?",
+       "Des façons de produire qui ne polluent pas et ne présentent pas de danger."
+      ],
+      [
+       "4. Produits respectueux de l’environnement ?",
+       "Panneaux solaires, sacs biodégradables, engrais naturels."
+      ],
+      [
+       "5. Pourquoi enseigner les sciences ? À qui ?",
+       "C’est une condition de la démocratie et du développement durable ; à tous, et particulièrement aux femmes et aux groupes marginalisés."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : comment la science peut-elle contribuer au développement de la Mauritanie ?",
+      "Écrit : la Mauritanie ne bénéficie-t-elle pas encore suffisamment des progrès scientifiques ?"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 4 – Texte 3 : Le développement durable",
+   "match": [
+    "Thème 4 – Texte 3 : Le développement durable"
+   ],
+   "pages": [
+    43,
+    45
+   ],
+   "objectives": [
+    "Définir le développement durable et ses trois dimensions.",
+    "Relever des exemples d’actions concrètes.",
+    "Résumer un texte informatif au ¼."
+   ],
+   "intro": "Les puits, les pâturages, le poisson : en resteront-ils pour vos petits-enfants ?",
+   "summary": "Le développement durable est l’idée que les sociétés doivent répondre à leurs besoins sans compromettre la capacité des générations futures à répondre aux leurs ; il prend en compte le présent et le futur (environnement, ressources, équité sociale et économique). Contrairement au développement économique, il a trois dimensions : économique, environnementale et sociale. En écologie, les gouvernements mènent des politiques : en France, la « transition énergétique » (énergies renouvelables) et la « protection de la biodiversité ». Dans les entreprises, des lois les obligent à mesurer et publier leurs impacts : c’est la RSE (responsabilité sociale de l’entreprise) — énergies renouvelables, efficacité énergétique, réduction des gaz à effet de serre et du Bilan Carbone, protection des écosystèmes.",
+   "points": [
+    "Définition : répondre aux besoins présents sans compromettre ceux des générations futures.",
+    "Trois dimensions : économique, environnementale, sociale.",
+    "Écologie : transition énergétique, biodiversité (exemple : la France).",
+    "Entreprises : la RSE.",
+    "Genre : texte informatif (article de vulgarisation)."
+   ],
+   "application": {
+    "q": "1. Définition du développement durable ?",
+    "a": "Répondre à nos besoins sans compromettre la capacité des générations futures à répondre aux leurs. Exemple : pêcher sans épuiser les stocks."
+   },
+   "applications": [
+    {
+     "q": "Que signifie RSE ?",
+     "a": "Responsabilité sociale de l’entreprise."
+    },
+    {
+     "q": "Qu’est-ce que la « transition énergétique » ?",
+     "a": "Transformer la manière de produire l’énergie pour la rendre plus durable, notamment par les énergies renouvelables."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 43,
+      "rect": [
+       0.06,
+       0.294,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 3"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 44,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.754
+      ],
+      "caption": "Le développement durable"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Définition du développement durable ?",
+       "Répondre à nos besoins sans compromettre la capacité des générations futures à répondre aux leurs. Exemple : pêcher sans épuiser les stocks."
+      ],
+      [
+       "2. Concerne-t-il seulement le présent ?",
+       "Non : « prendre en compte à la fois les impératifs présents mais aussi ceux du futur »."
+      ],
+      [
+       "3. Principaux domaines visés ?",
+       "L’économie, l’environnement et le social."
+      ],
+      [
+       "4. Domaines proposés en exemples ?",
+       "L’écologie (politiques des gouvernements) et les entreprises."
+      ],
+      [
+       "5. Que cherche-t-on concrètement ?",
+       "Énergies renouvelables, protection de la biodiversité, réduction des émissions et pratiques écologiques des entreprises (RSE)."
+      ],
+      [
+       "6. Pays cité ?",
+       "La France."
+      ],
+      [
+       "7. Genre, destinataire, objectif ?",
+       "Un texte informatif destiné au grand public, pour expliquer le développement durable."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : comment protéger efficacement la nature et l’environnement en Mauritanie ?",
+      "Écrit : résumer le texte au ¼.",
+      "Enquête : inviter un fonctionnaire du Développement rural."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 4 – Texte 4 : Artisanat mauritanien et développement",
+   "match": [
+    "Thème 4 – Texte 4 : Artisanat mauritanien et développement"
+   ],
+   "pages": [
+    45,
+    49
+   ],
+   "objectives": [
+    "Expliquer les paragraphes d’un texte descriptif et argumentatif.",
+    "Relever l’habileté des artisans et des femmes.",
+    "Discuter le rôle de l’artisanat dans le développement."
+   ],
+   "intro": "Quels objets artisanaux trouve-t-on dans votre maison ? Sont-ils faits de matières traditionnelles ?",
+   "summary": "L’artisanat mauritanien évolue : on introduit des matériaux nouveaux et on décore des objets industriels. Est-ce un abâtardissement ou une adaptation ingénieuse ? Les matières synthétiques sont moins belles que le cuir et le bois, les couleurs chimiques plus criardes (caoutchouc au lieu d’ébène, plastique, nylon). Pourtant la finesse du travail reste impressionnante : les femmes brodent, crochètent, maîtrisent les couleurs chimiques avec un sens aigu des contrastes ; l’artisan habille les théières importées de cuivre et de laiton. L’artisanat de « récupération » transforme les boîtes de conserve en marmites, les pneus en grillage (Toujounine), les métaux en heurtoirs (Oualata), et les forgerons fabriquent des outils pour l’agriculture moderne. Le gouvernement soutient les coopératives et les foires de Kiffa et de Nouakchott : l’artisanat peut trouver sa place dans le développement.",
+   "points": [
+    "Question : abâtardissement ou adaptation ingénieuse ?",
+    "Regrets : matières synthétiques, couleurs criardes.",
+    "Admiration : finesse, ingéniosité, art des femmes.",
+    "Artisanat de récupération : ne rien perdre.",
+    "Soutien de l’État : coopératives, foires de Kiffa et Nouakchott."
+   ],
+   "application": {
+    "q": "1. Expliquez la première phrase.",
+    "a": "Les artisans utilisent des matériaux nouveaux et décorent à la manière traditionnelle des objets fabriqués en usine."
+   },
+   "applications": [
+    {
+     "q": "Qu’appelle-t-on artisanat de « récupération » ?",
+     "a": "Un artisanat qui transforme des objets destinés au rebut (boîtes, pneus, bidons) en objets utiles."
+    },
+    {
+     "q": "Citez deux foires soutenues par le gouvernement.",
+     "a": "Les foires de Kiffa et de Nouakchott."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/3)",
+     "lines": [],
+     "fig": {
+      "page": 45,
+      "rect": [
+       0.06,
+       0.705,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 4"
+     }
+    },
+    {
+     "h": "Le texte (2/3)",
+     "lines": [],
+     "fig": {
+      "page": 46,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.935
+      ],
+      "caption": "Artisanat mauritanien"
+     }
+    },
+    {
+     "h": "Le texte (3/3)",
+     "lines": [],
+     "fig": {
+      "page": 47,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.723
+      ],
+      "caption": "C. Belvaude, La Mauritanie (1989)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Expliquez la première phrase.",
+       "Les artisans utilisent des matériaux nouveaux et décorent à la manière traditionnelle des objets fabriqués en usine."
+      ],
+      [
+       "2. De quoi s’agit-il au premier paragraphe ?",
+       "Du doute entre abâtardissement et adaptation, et des regrets face aux matières synthétiques et aux couleurs chimiques."
+      ],
+      [
+       "3./4. Les paragraphes suivants ?",
+       "L’ingéniosité des artisans et des femmes (broderie, teinture, théières décorées), puis l’artisanat de récupération."
+      ],
+      [
+       "5. Justifiez le titre.",
+       "Le texte montre que l’artisanat, en s’adaptant, contribue au développement technologique et économique, soutenu par l’État."
+      ],
+      [
+       "6. Qu’est-ce qui montre l’habileté ?",
+       "La finesse du travail, les théières ornées de cuivre, les teintures aux contrastes subtils, les grillages faits de fil de pneus."
+      ],
+      [
+       "7. Pourquoi l’État soutient-il l’artisanat ?",
+       "Parce qu’il prend conscience de son potentiel de développement."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : que peut-on reprocher à l’artisanat dans notre pays ?",
+      "Écrit : l’artisanat mauritanien contribue au développement économique et technologique du pays. Qu’en pensez-vous ?",
+      "Enquête : « femmes et artisanat »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 5 – Texte 1 : La faim dans le monde",
+   "match": [
+    "Thème 5 – Texte 1 : La faim dans le monde"
+   ],
+   "pages": [
+    49,
+    51
+   ],
+   "objectives": [
+    "Identifier un défi mondial et ses causes.",
+    "Expliquer le passage des cultures vivrières aux cultures commerciales.",
+    "Proposer des solutions dans un article de journal."
+   ],
+   "intro": "Pourquoi, dans un monde qui produit beaucoup, des enfants meurent-ils encore de faim ?",
+   "summary": "Alors que les magasins des pays riches croulent sous les marchandises, chaque jour 10 000 personnes meurent de carences alimentaires et un milliard et demi d’êtres humains s’étiolent. La malnutrition chronique règne surtout dans le Tiers Monde (Asie méridionale, Afrique), en raison de l’explosion démographique, de la croissance rapide des villes et du manque de moyens techniques de l’agriculture. Jadis paysans et éleveurs produisaient pour eux-mêmes (agriculture vivrière), sauf à la soudure, lors des catastrophes et des guerres. La colonisation a introduit les cultures commerciales d’exportation (coton, café, canne à sucre) qui ont remplacé les cultures vivrières ; la monoculture rend dépendant des cours mondiaux. Les citadins doivent changer d’habitudes alimentaires et dépendent des industries de transformation, mais les pauvres des bidonvilles n’ont pas l’argent pour acheter.",
+   "points": [
+    "Défi : la faim et la malnutrition.",
+    "Zones touchées : Tiers Monde, Asie méridionale, Afrique.",
+    "Causes : explosion démographique, urbanisation, faibles moyens agricoles.",
+    "Colonisation : cultures commerciales à la place des cultures vivrières.",
+    "Villes : dépendance des industries alimentaires, pauvreté."
+   ],
+   "application": {
+    "q": "1. Quel défi ?",
+    "a": "La faim dans le monde."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce que la « période de la soudure » ?",
+     "a": "La période entre deux récoltes, quand les réserves s’épuisent."
+    },
+    {
+     "q": "Qu’est-ce que la monoculture ?",
+     "a": "La culture d’un seul produit commercial, dont les cours peuvent s’effondrer."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 49,
+      "rect": [
+       0.06,
+       0.593,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 1"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 50,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.754
+      ],
+      "caption": "Encyclopédie Tout l’Univers (1982)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Quel défi ?",
+       "La faim dans le monde."
+      ],
+      [
+       "2. Touche-t-elle tous les pays ?",
+       "Non : elle règne « essentiellement dans les pays du Tiers Monde », alors qu’à Paris ou Los Angeles les magasins « croulent sous les marchandises »."
+      ],
+      [
+       "3. La malnutrition ? Continents ? Aggravation ?",
+       "Une alimentation insuffisante ou mal équilibrée ; l’Asie et l’Afrique ; aggravée par l’explosion démographique, l’urbanisation et le manque de moyens agricoles."
+      ],
+      [
+       "4. Qu’est-ce qui a changé les habitudes ?",
+       "La colonisation, avec les cultures commerciales d’exportation, et l’urbanisation."
+      ],
+      [
+       "5. Pourquoi est-ce difficile de changer d’habitudes ?",
+       "En ville on ne peut plus piler ni dépouiller les animaux ; il faut des industries, et les pauvres n’ont pas l’argent pour acheter."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : comment éradiquer la faim dans certaines localités de la Mauritanie ?",
+      "Écrit : résumé au ¼, ou article de journal (15-20 lignes) proposant des solutions contre la faim en Mauritanie."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 5 – Texte 2 : La mondialisation",
+   "match": [
+    "Thème 5 – Texte 2 : La mondialisation"
+   ],
+   "pages": [
+    51,
+    53
+   ],
+   "objectives": [
+    "Dégager la thèse d’un discours.",
+    "Analyser le lien entre culture et économie.",
+    "Discuter les effets de la mondialisation."
+   ],
+   "intro": "Les films, la musique, les vêtements que vous aimez viennent-ils de chez nous ?",
+   "summary": "Pour Catherine Trautmann (table ronde de l’UNESCO, 1999), la mondialisation menace les identités culturelles et risque d’engendrer une standardisation : elle pousse à l’uniformisation des comportements et des modes de vie. Il faut promouvoir des valeurs communes à l’humanité, mais sans oublier les spécificités héritées du temps, le respect des identités et la richesse de la diversité des cultures. La diversité culturelle est aussi une exigence économique : la logique du libre-échange pousserait les États à renoncer à leurs industries culturelles face à des produits étrangers moins chers (films hollywoodiens amortis sur un vaste marché). Or les industries culturelles, du savoir et de l’imaginaire sont des industries d’avenir, créatrices d’emplois et de croissance.",
+   "points": [
+    "Thèse : la mondialisation menace les identités culturelles.",
+    "Danger : standardisation, uniformisation.",
+    "Nécessité : valeurs communes + respect de la diversité.",
+    "Enjeu économique : protéger les industries culturelles.",
+    "Exemple : les films hollywoodiens exportés à bas prix."
+   ],
+   "application": {
+    "q": "1. Comment la mondialisation porte-t-elle atteinte aux identités ?",
+    "a": "En poussant à l’uniformisation des comportements et des modes de vie (standardisation culturelle)."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi les films hollywoodiens sont-ils vendus à bas prix ?",
+     "a": "Parce qu’ils sont déjà amortis sur un vaste marché avant d’être exportés, sans l’obstacle de la langue."
+    },
+    {
+     "q": "Que sont les « industries de l’imaginaire » ?",
+     "a": "Les industries culturelles : cinéma, audiovisuel, livre, musique."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 51,
+      "rect": [
+       0.06,
+       0.542,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 2"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 52,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.415
+      ],
+      "caption": "C. Trautmann, UNESCO (1999)"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Comment la mondialisation porte-t-elle atteinte aux identités ?",
+       "En poussant à l’uniformisation des comportements et des modes de vie (standardisation culturelle)."
+      ],
+      [
+       "2. Émergence d’une culture globale ?",
+       "Les produits culturels des pays puissants, amortis sur un vaste marché, sont exportés à bas prix et s’imposent partout."
+      ],
+      [
+       "3. Thèse de l’auteur ?",
+       "La mondialisation menace les identités culturelles ; il faut défendre la diversité culturelle, exigence à la fois culturelle et économique."
+      ],
+      [
+       "4. Un autre titre ?",
+       "« Défendre la diversité culturelle »."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : avantages et inconvénients de la mondialisation dans notre pays.",
+      "Écrit : « La mondialisation menace les identités culturelles ». Qu’en pensez-vous ?",
+      "Enquête : méfaits de la mondialisation sur certains secteurs du pays."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 5 – Texte 3 : Le bonheur et l’argent (Th. Wiseman)",
+   "match": [
+    "Thème 5 – Texte 3 : Le bonheur et l’argent (Th. Wiseman)"
+   ],
+   "pages": [
+    53,
+    55
+   ],
+   "objectives": [
+    "Dégager le thème et la thèse d’un essai.",
+    "Analyser des exemples littéraires et cinématographiques.",
+    "Discuter « L’argent ne fait pas le bonheur »."
+   ],
+   "intro": "L’argent peut-il changer la façon dont une mère s’occupe de ses enfants ?",
+   "summary": "Dans son essai « L’argent et l’inconscient », Thomas Wiseman étudie l’influence psycho-sociologique de l’argent. Il part de la relation mère-enfant : on croirait l’instinct maternel inviolable, mais l’argent le transforme et même le supprime : plus une femme a d’argent, moins elle ressent le besoin de nourrir et soigner ses enfants (les nurses des classes supérieures anglaises, contrairement aux mères du Sud de l’Italie). L’argent influence aussi les rapports amoureux : Anna Karénine abandonne mari et enfant pour une passion rendue possible par la richesse ; dans « Elvira Madigan », les amants meurent de faim puis se tuent. « Même les histoires d’amour doivent être financées. » Dans tout mariage existe un rapport à l’argent, souvent caché : le conflit oppose la parcimonie et l’extravagance (le mari avare et la femme dépensière).",
+   "points": [
+    "Thème : le pouvoir de l’argent sur les comportements fondamentaux.",
+    "Point de départ : l’instinct maternel.",
+    "Thèse : l’argent transforme et peut supprimer cet instinct.",
+    "Couple : Anna Karénine, Elvira Madigan.",
+    "Conflit caché : parcimonie / extravagance."
+   ],
+   "application": {
+    "q": "1. Thème central ?",
+    "a": "L’influence de l’argent sur les comportements et les instincts humains."
+   },
+   "applications": [
+    {
+     "q": "Que signifie « même les histoires d’amour doivent être financées » ?",
+     "a": "Que l’amour ne peut durer sans moyens matériels pour vivre."
+    },
+    {
+     "q": "Quel conflit financier fondamental existe dans le mariage ?",
+     "a": "L’opposition entre la parcimonie (avarice) et l’extravagance (dépense)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 53,
+      "rect": [
+       0.06,
+       0.05,
+       0.94,
+       0.935
+      ],
+      "caption": "Texte 3"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 54,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.476
+      ],
+      "caption": "Th. Wiseman, L’argent et l’inconscient"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Thème central ?",
+       "L’influence de l’argent sur les comportements et les instincts humains."
+      ],
+      [
+       "2. Domaine de départ ? Sentiments touchés ?",
+       "La relation mère-enfant (l’instinct maternel) ; puis l’amour et le mariage."
+      ],
+      [
+       "3. Thèse sur la relation mère-enfant ?",
+       "Plus une mère a d’argent, moins elle ressent le besoin de nourrir et soigner ses enfants : l’argent transforme l’instinct."
+      ],
+      [
+       "4. Influence sur le couple ?",
+       "La richesse rend possibles les passions (Anna Karénine) ; la pauvreté les tue (Elvira Madigan) ; les querelles d’argent opposent l’avare et le dépensier."
+      ],
+      [
+       "5. Votre opinion ?",
+       "Réponse personnelle argumentée (l’argent influence, mais les valeurs et la religion peuvent maintenir les liens familiaux)."
+      ]
+     ]
+    },
+    {
+     "h": "Mots expliqués",
+     "lines": [],
+     "table": [
+      [
+       "Mot",
+       "Sens"
+      ],
+      [
+       "prérogative",
+       "privilège, avantage réservé"
+      ],
+      [
+       "névrotique",
+       "maladif, anormal"
+      ],
+      [
+       "parcimonie",
+       "économie excessive, avarice"
+      ],
+      [
+       "extravagance",
+       "dépense excessive"
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : la place de l’argent dans la famille mauritanienne.",
+      "Écrit : résumé au ¼, ou discussion de « L’argent ne fait pas le bonheur »."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thème 5 – Texte 4 : Discours de M. Ban Ki-moon (abolition de l’esclavage)",
+   "match": [
+    "Thème 5 – Texte 4 : Discours de M. Ban Ki-moon (abolition de l’esclavage)"
+   ],
+   "pages": [
+    55,
+    57
+   ],
+   "objectives": [
+    "Identifier les formes anciennes et nouvelles de l’esclavage.",
+    "Expliquer pourquoi la loi seule ne suffit pas.",
+    "Expliquer et discuter une citation sur le respect de l’homme."
+   ],
+   "intro": "L’esclavage a-t-il complètement disparu dans le monde ? Sous quelles formes peut-il exister aujourd’hui ?",
+   "summary": "À l’occasion de la Journée internationale pour l’abolition de l’esclavage (2 décembre), Ban Ki-moon rappelle l’article 4 de la Déclaration universelle des droits de l’homme : « nul ne sera tenu en esclavage ni en servitude ». Pourtant l’esclavage reste un problème grave sur tous les continents, et de nouvelles formes sont apparues : servitude pour dettes, servage, travail forcé, travail des enfants, trafic de personnes et d’organes, esclavage sexuel, enfants soldats, vente d’enfants, mariage forcé, vente de femmes, exploitation de la prostitution. Les victimes sont surtout les pauvres et les exclus (minorités, migrants, peuples autochtones). Pauvreté, classe, race, inégalités entre les sexes, manque d’éducation et demande de main-d’œuvre bon marché sont des pièges. Lutter contre l’esclavage, c’est l’interdire par la loi, mais aussi combattre la pauvreté, l’analphabétisme, les disparités et la violence contre les femmes et les enfants.",
+   "points": [
+    "Base juridique : article 4 de la DUDH.",
+    "Nouvelles formes : servitude pour dettes, travail forcé, enfants soldats, trafic, mariage forcé…",
+    "Victimes : pauvres, minorités, migrants, autochtones.",
+    "Causes : pauvreté, inégalités, manque d’éducation.",
+    "Solutions : la loi + lutte contre la pauvreté, l’analphabétisme et les discriminations."
+   ],
+   "application": {
+    "q": "1. Un autre titre ?",
+    "a": "« Éliminer toutes les formes d’esclavage »."
+   },
+   "applications": [
+    {
+     "q": "Que dit l’article 4 de la DUDH ?",
+     "a": "« Nul ne sera tenu en esclavage ni en servitude ; l’esclavage et la traite des esclaves sont interdits sous toutes leurs formes. »"
+    },
+    {
+     "q": "Citez trois formes nouvelles d’esclavage.",
+     "a": "La servitude pour dettes, l’utilisation d’enfants soldats, le trafic d’organes humains."
+    }
+   ],
+   "board": [
+    {
+     "h": "Le texte (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 55,
+      "rect": [
+       0.06,
+       0.158,
+       0.94,
+       0.935
+      ],
+      "caption": "Message du Secrétaire général de l’ONU"
+     }
+    },
+    {
+     "h": "Le texte (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 56,
+      "rect": [
+       0.06,
+       0.07,
+       0.94,
+       0.291
+      ],
+      "caption": "2 décembre"
+     }
+    },
+    {
+     "h": "Compréhension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Réponse"
+      ],
+      [
+       "1. Un autre titre ?",
+       "« Éliminer toutes les formes d’esclavage »."
+      ],
+      [
+       "2. Couches les plus exposées ? Pourquoi ?",
+       "Les pauvres et les exclus (minorités, migrants, autochtones), à cause de la pauvreté, de la discrimination et d’un accès limité à la terre et à l’éducation."
+      ],
+      [
+       "3. La liste est-elle exhaustive ?",
+       "Non : on peut ajouter l’exploitation des domestiques ou le travail non payé des migrants."
+      ],
+      [
+       "4. Pourquoi la loi seule ne suffit-elle pas ?",
+       "Parce que l’esclavage a des causes structurelles (pauvreté, ignorance, discriminations) que la loi ne supprime pas."
+      ],
+      [
+       "5. Solutions de l’auteur ?",
+       "Interdire l’esclavage par la loi et lutter contre la pauvreté, l’analphabétisme, les disparités, la discrimination et la violence."
+      ]
+     ]
+    },
+    {
+     "h": "Production",
+     "lines": [
+      "Oral : raconter une injustice dont on a été victime ou témoin ; ou donner son avis sur ce message.",
+      "Écrit : expliquer et discuter « Respect de l’homme ! … là est la pierre de touche » (Saint-Exupéry)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Techniques : les connecteurs logiques",
+   "match": [
+    "Techniques : les connecteurs logiques"
+   ],
+   "pages": [
+    79,
+    80
+   ],
+   "objectives": [
+    "Classer les connecteurs (temporels, spatiaux, logiques).",
+    "Identifier la relation logique exprimée.",
+    "Utiliser les connecteurs pour organiser un texte."
+   ],
+   "intro": "Lisez deux versions d’un même paragraphe, avec et sans « d’abord, ensuite, donc, mais ». Laquelle est la plus claire ?",
+   "summary": "Les connecteurs (mots-outils) relient les phrases et les propositions et organisent le texte. On distingue les connecteurs temporels (succession des actions : d’abord, ensuite, enfin), les connecteurs spatiaux (organisation dans l’espace) et les connecteurs logiques, présents surtout dans les textes explicatifs et argumentatifs, qui expriment les relations entre les idées : addition (et, de plus), cause (car, parce que), conséquence (donc, ainsi), opposition (mais, cependant), concession (bien que), illustration (par exemple), reformulation (c’est-à-dire), conclusion (enfin, en somme).",
+   "points": [
+    "Trois sortes : temporels, spatiaux, logiques.",
+    "Les connecteurs logiques expriment les relations entre les idées.",
+    "Indispensables au résumé et à l’argumentation."
+   ],
+   "application": {
+    "q": "Quelle relation exprime « Mais » dans « Mais tous ces avantages ne doivent pas masquer… » ?",
+    "a": "L’opposition : on passe des avantages aux inconvénients."
+   },
+   "applications": [
+    {
+     "q": "Donnez deux connecteurs de cause.",
+     "a": "car, parce que."
+    },
+    {
+     "q": "Dans quels types de textes trouve-t-on surtout les connecteurs logiques ?",
+     "a": "Dans les textes explicatifs et argumentatifs."
+    }
+   ],
+   "board": [
+    {
+     "h": "Les connecteurs logiques",
+     "lines": [],
+     "table": [
+      [
+       "Relation",
+       "Exemples"
+      ],
+      [
+       "Addition",
+       "et, de plus, en outre"
+      ],
+      [
+       "Cause",
+       "car, parce que, puisque"
+      ],
+      [
+       "Conséquence",
+       "donc, ainsi, c’est pourquoi"
+      ],
+      [
+       "Opposition",
+       "mais, cependant, or, pourtant"
+      ],
+      [
+       "Concession",
+       "bien que, même si"
+      ],
+      [
+       "Illustration",
+       "par exemple, ainsi"
+      ],
+      [
+       "Reformulation",
+       "c’est-à-dire, autrement dit"
+      ],
+      [
+       "Conclusion",
+       "en somme, enfin, bref"
+      ]
+     ]
+    },
+    {
+     "h": "Application",
+     "lines": [
+      "Relever les connecteurs du texte « Avantages et inconvénients de l’informatique » et dire la relation exprimée (« Mais » : opposition ; « En effet » : explication ; « Ainsi » : conséquence)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Techniques : le résumé de texte",
+   "match": [
+    "Techniques : le résumé de texte"
+   ],
+   "pages": [
+    59,
+    65
+   ],
+   "objectives": [
+    "Connaître le principe et la méthode du résumé.",
+    "Identifier l’idée directrice et la structure d’un texte.",
+    "Résumer au ¼ avec une marge de 10 %."
+   ],
+   "intro": "Racontez en deux phrases un film que vous avez vu. Qu’avez-vous gardé ? Qu’avez-vous supprimé ?",
+   "summary": "Résumer, c’est réduire un texte en gardant ses idées essentielles et leur enchaînement, sans rien ajouter et en gardant le même niveau de langue et le même système d’énonciation. La démarche : plusieurs lectures (idée principale, puis temps verbal, type de texte, auteur) ; identification de l’idée directrice ; repérage de la structure (parties, limites, sous-titres) ; reformulation de l’idée directrice et des idées secondaires (arguments) ; rédaction au ¼ de la longueur, avec une tolérance de 10 % en plus ou en moins. Il ne faut pas recopier des morceaux de phrases, ni citer le texte, ni retenir les exemples illustratifs ; il faut reformuler au maximum avec ses propres mots. Les exercices de la Partie II (technique et discrimination, usage excessif de la technologie, dossiers médicaux électroniques, santé infantile) permettent de s’entraîner.",
+   "points": [
+    "Garder l’essentiel et l’enchaînement des idées.",
+    "Ne rien ajouter ; même niveau de langue.",
+    "Étapes : lectures, idée directrice, structure, reformulation, rédaction.",
+    "Longueur : ¼ du texte (± 10 %).",
+    "Interdits : recopier, citer, garder les exemples."
+   ],
+   "application": {
+    "q": "Un texte compte 400 mots. Combien de mots doit compter son résumé ?",
+    "a": "Le ¼, soit 100 mots, avec une tolérance de 10 % : entre 90 et 110 mots."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi ne garde-t-on pas les exemples dans un résumé ?",
+     "a": "Parce qu’ils illustrent les idées sans en être l’essentiel."
+    },
+    {
+     "q": "Qu’est-ce que l’idée directrice ?",
+     "a": "L’idée principale qui organise tout le texte."
+    }
+   ],
+   "board": [
+    {
+     "h": "Démarche du résumé",
+     "lines": [
+      "1) Lire plusieurs fois le texte ; 2) identifier l’idée directrice (ID) ; 3) dégager la structure ; 4) reformuler l’ID et les arguments ; 5) rédiger au ¼ (± 10 %) ; 6) compter les mots."
+     ]
+    },
+    {
+     "h": "Tableau de structure",
+     "lines": [],
+     "table": [
+      [
+       "Parties",
+       "Limites",
+       "Sous-titres / idées"
+      ],
+      [
+       "Introduction",
+       "l. … à l. …",
+       "idée directrice"
+      ],
+      [
+       "Développement",
+       "l. … à l. …",
+       "arguments 1, 2…"
+      ],
+      [
+       "Conclusion",
+       "l. … à l. …",
+       "bilan"
+      ]
+     ]
+    },
+    {
+     "h": "À éviter / à faire",
+     "lines": [],
+     "table": [
+      [
+       "À éviter",
+       "À faire"
+      ],
+      [
+       "recopier des morceaux de phrases",
+       "reformuler avec ses propres mots"
+      ],
+      [
+       "citer le texte",
+       "garder l’ordre des idées"
+      ],
+      [
+       "garder les exemples",
+       "employer des connecteurs logiques"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Techniques : la discussion et la dissertation",
+   "match": [
+    "Techniques : la discussion et la dissertation"
+   ],
+   "pages": [
+    66,
+    76
+   ],
+   "objectives": [
+    "Distinguer la discussion et la dissertation.",
+    "Analyser un sujet et construire un plan.",
+    "Rédiger introduction et conclusion."
+   ],
+   "intro": "Sujet : « Les écrans rendent-ils les jeunes plus intelligents ? » Comment organiser votre réponse ?",
+   "summary": "La discussion porte sur des thèmes quotidiens, souvent d’actualité ; « discuter » signifie « argumenter » avec un raisonnement rigoureux. La dissertation de culture générale exige une réflexion organisée sur une question ou une citation. Méthode : analyser le sujet (mots-clés, problématique), rechercher les arguments et les exemples, établir un plan (dialectique : thèse, antithèse, synthèse ; ou thématique), rédiger une introduction (amener le sujet, le poser, annoncer le plan), un développement en paragraphes argumentatifs (idée, explication, exemple) liés par des connecteurs, et une conclusion (bilan, réponse à la question, éventuellement ouverture vers une autre problématique). Les sujets types du manuel portent sur l’argent, la technique, la santé et la violence (causes de la violence, violence à l’école).",
+   "points": [
+    "Discussion : argumenter sur un sujet d’actualité.",
+    "Dissertation : réflexion organisée sur une question.",
+    "Plan dialectique ou thématique.",
+    "Introduction : amener, poser, annoncer.",
+    "Conclusion : bilan, réponse, ouverture."
+   ],
+   "application": {
+    "q": "Quelles sont les trois étapes de l’introduction ?",
+    "a": "Amener le sujet, poser le sujet (la question), annoncer le plan."
+   },
+   "applications": [
+    {
+     "q": "Que signifie « discuter » ?",
+     "a": "Argumenter avec un raisonnement rigoureux."
+    },
+    {
+     "q": "Que peut contenir la fin de la conclusion ?",
+     "a": "Une ouverture vers une autre problématique dans le même champ."
+    }
+   ],
+   "board": [
+    {
+     "h": "Les étapes",
+     "lines": [
+      "1) Analyser le sujet ; 2) formuler la problématique ; 3) chercher arguments et exemples ; 4) faire le plan ; 5) rédiger ; 6) relire."
+     ]
+    },
+    {
+     "h": "Le plan dialectique",
+     "lines": [],
+     "table": [
+      [
+       "Partie",
+       "Contenu"
+      ],
+      [
+       "Thèse",
+       "arguments en faveur"
+      ],
+      [
+       "Antithèse",
+       "arguments contre / limites"
+      ],
+      [
+       "Synthèse",
+       "dépassement, position nuancée"
+      ]
+     ]
+    },
+    {
+     "h": "Le paragraphe argumentatif",
+     "lines": [
+      "Idée (argument) → explication → exemple → phrase de transition (connecteur)."
+     ]
+    },
+    {
+     "h": "Sujet d’entraînement (manuel)",
+     "lines": [
+      "« L’argent ne fait pas le bonheur. » Qu’en pensez-vous ? — Thèse : l’argent ne garantit ni l’amour ni la santé ; antithèse : il assure les besoins fondamentaux ; synthèse : il contribue au bonheur sans le constituer."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "6C"
+}
