@@ -1,0 +1,1466 @@
+{
+ "subject": "PC",
+ "book": "books/PC_5D_PHY.pdf",
+ "bookTitle": "Physique 5ème SN",
+ "lessons": [
+  {
+   "title": "Chimie – Chapitre I : La mole et la quantité de matière",
+   "match": [
+    "La mole et la quantité de matière"
+   ],
+   "pages": [
+    10,
+    17
+   ],
+   "objectives": [
+    "Définir la mole et le nombre d’Avogadro.",
+    "Calculer une masse molaire et une quantité de matière (solide, liquide, gaz).",
+    "Utiliser le volume molaire, la masse volumique, la densité et la loi des gaz parfaits."
+   ],
+   "intro": "Comment compter les molécules d’eau d’un verre ? Elles sont trop nombreuses : on les compte par « paquets », les moles.",
+   "summary": "Une mole est un ensemble de 6,02·10²³ entités identiques ; NA = 6,02·10²³ mol⁻¹ est le nombre d’Avogadro, et le nombre d’entités est N = n·NA. La masse molaire M (g·mol⁻¹) est la masse d’une mole d’atomes ou de molécules. Loi d’Avogadro-Ampère : à température et pression données, une mole de tout gaz occupe le même volume Vm : 22,4 L·mol⁻¹ dans les conditions normales (273 K, 10⁵ Pa), 24 L·mol⁻¹ dans les conditions habituelles (293 K). Quantité de matière : n = m/M (solides, liquides), n = V/Vm (gaz). Masse volumique ρ = m/V (kg·m⁻³) ; densité d = ρ/ρ_eau (solides, liquides) et d = M/29 pour un gaz. Loi des gaz parfaits : PV = nRT (P en Pa, V en m³, T en K, R = 8,32 SI).",
+   "points": [
+    "1 mol = 6,02·10²³ entités ; N = n·NA.",
+    "n = m/M ; n = V/Vm.",
+    "Vm = 22,4 L/mol (CNTP) ; 24 L/mol (conditions habituelles).",
+    "ρ = m/V ; d(gaz) = M/29.",
+    "PV = nRT."
+   ],
+   "application": {
+    "q": "Une bouteille contient 12 L de butane C₄H₁₀ (Vm = 24 L/mol). Quantité et masse du gaz ?",
+    "a": "n = 12/24 = 0,5 mol ; M = 4×12 + 10×1 = 58 g/mol ; m = 0,5 × 58 = 29 g."
+   },
+   "applications": [
+    {
+     "q": "Densité du butane par rapport à l’air ?",
+     "a": "d = 58/29 = 2 : le butane est plus lourd que l’air."
+    },
+    {
+     "q": "Nombre de molécules dans 2 mol d’eau ?",
+     "a": "N = 2 × 6,02·10²³ = 1,204·10²⁴."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. La mole",
+     "lines": [
+      "Une mole = 6,02·10²³ entités identiques ; NA = 6,02·10²³ mol⁻¹.",
+      "N = n·NA : 0,5 mol de O₂ contient 0,5 × 6,02·10²³ ≈ 3·10²³ molécules."
+     ]
+    },
+    {
+     "h": "II. Masse molaire",
+     "lines": [
+      "Masse molaire atomique : masse d’une mole d’atomes (g·mol⁻¹).",
+      "Masse molaire moléculaire : somme des masses molaires des atomes : M(C₄H₁₀) = 58 g/mol ; M(C₆H₁₂O₆) = 180 g/mol."
+     ]
+    },
+    {
+     "h": "III. Volume molaire (loi d’Avogadro-Ampère)",
+     "lines": [
+      "Vm = 22,4 L·mol⁻¹ à 273 K et 10⁵ Pa ; Vm = 24 L·mol⁻¹ à 293 K et 10⁵ Pa."
+     ]
+    },
+    {
+     "h": "IV. Quantité de matière",
+     "lines": [],
+     "table": [
+      [
+       "État",
+       "Formule"
+      ],
+      [
+       "Solide / liquide",
+       "n = m / M"
+      ],
+      [
+       "Gaz",
+       "n = V / Vm"
+      ],
+      [
+       "Gaz parfait",
+       "n = PV / RT"
+      ]
+     ]
+    },
+    {
+     "h": "Exemple : analyse de sang",
+     "lines": [
+      "Glucose : 4,78 mmol × 180 g/mol ≈ 0,86 g.",
+      "Urée : 0,32/60 ≈ 5,3 mmol, entre 2,50 et 8,33 mmol : taux normal.",
+      "Créatinine : 9·10⁻³/113 ≈ 79,6 μmol."
+     ]
+    },
+    {
+     "h": "V. Masse volumique et densité",
+     "lines": [
+      "ρ = m/V (kg·m⁻³).",
+      "Solide ou liquide : d = ρ/ρ_eau ; gaz : d = ρ/ρ_air = M/29."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre I : La réaction chimique et l’avancement",
+   "match": [
+    "La réaction chimique et l’avancement"
+   ],
+   "pages": [
+    18,
+    29
+   ],
+   "objectives": [
+    "Écrire et équilibrer l’équation d’une réaction chimique.",
+    "Construire un tableau d’avancement.",
+    "Déterminer le réactif limitant et l’avancement maximal."
+   ],
+   "intro": "On brûle de l’alcool : il disparaît, et il se forme du dioxyde de carbone et de l’eau. Comment prévoir les quantités ?",
+   "summary": "Au cours d’une réaction chimique, des réactifs disparaissent et des produits se forment ; l’équation doit respecter la conservation des éléments et des charges. L’avancement X est le nombre de fois que la réaction s’est produite depuis l’état initial. Pour aA + bB → cC + dD : à l’avancement X, il reste nᵢ(A) − aX et nᵢ(B) − bX, et il s’est formé cX de C et dX de D. Le réactif limitant est celui qui est entièrement consommé à la fin : on calcule nᵢ(A)/a et nᵢ(B)/b ; la plus petite valeur est l’avancement maximal Xmax et désigne le réactif limitant. Si nᵢ(A)/a = nᵢ(B)/b, le mélange est stœchiométrique.",
+   "points": [
+    "Équation équilibrée : conservation des éléments et des charges.",
+    "n(A) restant = nᵢ(A) − aX ; n(C) formé = cX.",
+    "Xmax = plus petite valeur de nᵢ(A)/a et nᵢ(B)/b.",
+    "Réactif limitant : entièrement consommé.",
+    "Mélange stœchiométrique : nᵢ(A)/a = nᵢ(B)/b."
+   ],
+   "application": {
+    "q": "2 mol de H₂ réagissent avec 2 mol de O₂ : 2H₂ + O₂ → 2H₂O. Réactif limitant et Xmax ?",
+    "a": "nᵢ(H₂)/2 = 1 ; nᵢ(O₂)/1 = 2 ; Xmax = 1 mol : H₂ est limitant ; il se forme 2 mol d’eau et il reste 1 mol de O₂."
+   },
+   "applications": [
+    {
+     "q": "Mg + 2H₃O⁺ → Mg²⁺ + H₂ + 2H₂O : quel test montre la formation d’ions Mg²⁺ ?",
+     "a": "Le précipité obtenu avec la soude (hydroxyde de magnésium)."
+    },
+    {
+     "q": "Qu’est-ce qu’un mélange stœchiométrique ?",
+     "a": "Les réactifs sont dans les proportions de l’équation : tous sont consommés en même temps."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Réaction chimique",
+     "lines": [
+      "Réactifs (consommés) → produits (formés).",
+      "L’équation est équilibrée : mêmes éléments, mêmes nombres d’atomes et mêmes charges de chaque côté."
+     ]
+    },
+    {
+     "h": "II. Tableau d’avancement",
+     "lines": [],
+     "table": [
+      [
+       "État",
+       "Avancement",
+       "n(A)",
+       "n(B)",
+       "n(C)",
+       "n(D)"
+      ],
+      [
+       "Initial",
+       "0",
+       "nᵢ(A)",
+       "nᵢ(B)",
+       "0",
+       "0"
+      ],
+      [
+       "En cours",
+       "X",
+       "nᵢ(A) − aX",
+       "nᵢ(B) − bX",
+       "cX",
+       "dX"
+      ],
+      [
+       "Final",
+       "Xmax",
+       "nᵢ(A) − aXmax",
+       "nᵢ(B) − bXmax",
+       "cXmax",
+       "dXmax"
+      ]
+     ]
+    },
+    {
+     "h": "III. Expression de l’avancement",
+     "lines": [
+      "X = (nᵢ(A) − n(A)restant)/a = (nᵢ(B) − n(B)restant)/b = n(C)/c = n(D)/d."
+     ]
+    },
+    {
+     "h": "IV. Réactif limitant",
+     "lines": [
+      "Hypothèse 1 : A limitant ⇒ nᵢ(A) − aXmax = 0 ⇒ Xmax = nᵢ(A)/a.",
+      "Hypothèse 2 : B limitant ⇒ nᵢ(B) − bXmax = 0 ⇒ Xmax = nᵢ(B)/b.",
+      "La plus petite valeur est la bonne (le manuel écrit par erreur nᵢ(B)/a et nᵢ(A) − bXmax)."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre II : De l’atome à l’élément chimique",
+   "match": [
+    "De l’atome à l’élément chimique"
+   ],
+   "pages": [
+    30,
+    37
+   ],
+   "objectives": [
+    "Décrire la structure de l’atome (noyau, électrons) et ses ordres de grandeur.",
+    "Utiliser la notation ᴬ_Z X, le nombre de neutrons N = A − Z et les isotopes.",
+    "Établir la répartition électronique sur les couches K, L, M."
+   ],
+   "intro": "Un atome est-il plein ? Si le noyau était une bille, l’atome serait un stade !",
+   "summary": "L’atome est composé d’un noyau chargé positivement autour duquel gravitent des électrons chargés négativement ; le noyau est 100 000 fois plus petit que l’atome (rayon ~10⁻¹⁵ m) mais concentre presque toute sa masse. Il contient des protons (charge e = 1,6·10⁻¹⁹ C, masse 1,67·10⁻²⁷ kg) et des neutrons (neutres, masse voisine), appelés nucléons. L’électron porte −e et a une masse de 9,1·10⁻³¹ kg. Z (numéro atomique) = nombre de protons = nombre d’électrons de l’atome ; A (nombre de masse) = nombre de nucléons ; N = A − Z. Les atomes de même Z forment un élément chimique ; les isotopes ont même Z et des A différents. Les électrons se répartissent sur des couches K, L, M… ; la couche de rang n contient au plus 2n² électrons et on remplit une couche quand la précédente est saturée.",
+   "points": [
+    "Noyau : protons + neutrons (nucléons) ; électrons autour.",
+    "Notation ᴬ_Z X ; N = A − Z.",
+    "Même Z = même élément ; isotopes : même Z, A différent.",
+    "Couche n : au plus 2n² électrons (K : 2, L : 8, M : 18).",
+    "m(atome) ≈ m(noyau)."
+   ],
+   "application": {
+    "q": "Le noyau d’un atome a une charge q = 3,2·10⁻¹⁹ C et contient 2 neutrons : Z, A et structure électronique ?",
+    "a": "Z = q/e = 2 ; A = 2 + 2 = 4 ; structure (K)² : c’est l’hélium."
+   },
+   "applications": [
+    {
+     "q": "Combien de neutrons dans ²³₁₁Na ?",
+     "a": "N = 23 − 11 = 12."
+    },
+    {
+     "q": "Structure électronique de l’oxygène (Z = 8) ?",
+     "a": "(K)²(L)⁶."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Structure de l’atome",
+     "lines": [
+      "Noyau positif (protons + neutrons) et nuage électronique négatif.",
+      "Proton : +e = 1,6·10⁻¹⁹ C ; 1,67·10⁻²⁷ kg. Neutron : neutre, masse voisine. Électron : −e ; 9,1·10⁻³¹ kg."
+     ]
+    },
+    {
+     "h": "II. Notation et nombres",
+     "lines": [
+      "ᴬ_Z X : Z protons, A nucléons, N = A − Z neutrons.",
+      "L’atome est électriquement neutre : Z électrons."
+     ]
+    },
+    {
+     "h": "III. Élément chimique et isotopes",
+     "lines": [
+      "Même Z ⇒ même élément ; à chaque Z correspond un seul élément.",
+      "Isotopes : même Z, A différents (ex. ³⁵Cl et ³⁷Cl)."
+     ]
+    },
+    {
+     "h": "IV. Répartition électronique",
+     "lines": [
+      "Couches K (n = 1), L (n = 2), M (n = 3)… ; au plus 2n² électrons.",
+      "Chlore Z = 17 : (K)²(L)⁸(M)⁷ ; avec 20 neutrons : A = 37 → ³⁷₁₇Cl."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre II : La classification périodique des éléments",
+   "match": [
+    "La classification périodique des éléments"
+   ],
+   "pages": [
+    38,
+    46
+   ],
+   "objectives": [
+    "Décrire la classification périodique (7 périodes, 18 colonnes).",
+    "Situer un élément à partir de sa structure électronique.",
+    "Connaître les familles : alcalins, alcalino-terreux, halogènes, gaz rares."
+   ],
+   "intro": "Pourquoi le sodium et le potassium réagissent-ils de la même façon avec l’eau ?",
+   "summary": "La classification périodique actuelle compte 7 lignes (périodes) et 18 colonnes (groupes). Le numéro n de la couche externe indique la période ; le nombre d’électrons de la couche externe indique la colonne (le groupe). Les isotopes d’un élément occupent la même case. Les éléments d’une même colonne ont des propriétés chimiques voisines et forment une famille : 1re colonne les alcalins, 2e les alcalino-terreux, 7e (groupe 17) les halogènes, dernière colonne les gaz rares (couche externe saturée, inertes).",
+   "points": [
+    "7 périodes, 18 colonnes.",
+    "Période = numéro de la couche externe.",
+    "Colonne = électrons de la couche externe.",
+    "Familles : alcalins, alcalino-terreux, halogènes, gaz rares."
+   ],
+   "application": {
+    "q": "Le chlore est dans la 3e ligne et la 7e colonne : structure électronique et Z ?",
+    "a": "(K)²(L)⁸(M)⁷ ; Z = 17."
+   },
+   "applications": [
+    {
+     "q": "Position du magnésium (Z = 12) ?",
+     "a": "(K)²(L)⁸(M)² : 3e période, 2e colonne (alcalino-terreux)."
+    },
+    {
+     "q": "Pourquoi les gaz rares sont-ils inertes ?",
+     "a": "Leur couche externe est saturée."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Le tableau",
+     "lines": [
+      "7 lignes (périodes) et 18 colonnes (groupes) ; classement par Z croissant."
+     ]
+    },
+    {
+     "h": "II. Lire la position",
+     "lines": [
+      "Période = rang n de la couche externe.",
+      "Colonne = nombre d’électrons périphériques.",
+      "He (K)² : 1re période, gaz rare ; Li (K)²(L)¹ : 2e période, 1re colonne."
+     ]
+    },
+    {
+     "h": "III. Familles",
+     "lines": [],
+     "table": [
+      [
+       "Colonne",
+       "Famille",
+       "Exemples"
+      ],
+      [
+       "1",
+       "alcalins",
+       "Li, Na, K"
+      ],
+      [
+       "2",
+       "alcalino-terreux",
+       "Be, Mg, Ca"
+      ],
+      [
+       "17 (7e)",
+       "halogènes",
+       "F, Cl, Br"
+      ],
+      [
+       "18 (dernière)",
+       "gaz rares",
+       "He, Ne, Ar"
+      ]
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre III : Molécules et ions",
+   "match": [
+    "Molécules et ions"
+   ],
+   "pages": [
+    47,
+    62
+   ],
+   "objectives": [
+    "Énoncer les règles du duet et de l’octet.",
+    "Distinguer liaison covalente et liaison ionique ; représenter une molécule (formules brute, développée, Lewis).",
+    "Prévoir les ions monoatomiques et connaître des ions polyatomiques."
+   ],
+   "intro": "Pourquoi le chlore se trouve-t-il dans la nature sous forme de Cl₂ et non d’atomes isolés ?",
+   "summary": "Sauf les gaz rares, les atomes sont instables car leur couche externe n’est pas remplie ; ils évoluent pour respecter la règle du duet (2 électrons) ou de l’octet (8 électrons) : ils mettent en commun des électrons (molécules) ou en cèdent ou en captent (ions). Une molécule est un ensemble d’au moins deux atomes unis par des liaisons. Liaison covalente : doublet de deux électrons partagés (un de chaque atome) ; liaison ionique : attraction électrostatique entre ions de signes contraires. Une molécule est représentée par sa formule brute, semi-développée ou développée ; la représentation de Lewis montre les doublets liants et non liants. Deux isomères ont la même formule brute mais des formules développées différentes. Un ion porte des charges positives (cation) ou négatives (anion) ; il est monoatomique ou polyatomique.",
+   "points": [
+    "Duet (H, Li…) / octet.",
+    "Covalente : doublet partagé ; ionique : attraction entre ions.",
+    "Formules : brute, semi-développée, développée, Lewis.",
+    "Isomères : même formule brute.",
+    "Cation (+) / anion (−) ; mono- ou polyatomique."
+   ],
+   "application": {
+    "q": "Comment se forme la molécule Cl₂ ?",
+    "a": "Chaque chlore (7 électrons externes) met en commun un électron : un doublet liant, chacun obtient l’octet : Cl–Cl."
+   },
+   "applications": [
+    {
+     "q": "Quel ion donne le magnésium (Z = 12) ?",
+     "a": "Mg²⁺ (il cède les 2 électrons de la couche M)."
+    },
+    {
+     "q": "Formule du chlorure de calcium ?",
+     "a": "CaCl₂ (Ca²⁺ et 2 Cl⁻)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Règles du duet et de l’octet",
+     "lines": [
+      "Les atomes tendent vers 2 (duet) ou 8 (octet) électrons sur la couche externe, comme les gaz rares."
+     ]
+    },
+    {
+     "h": "II. Liaisons chimiques",
+     "lines": [
+      "Covalente : mise en commun d’un doublet (H₂, Cl₂, HCl, H₂O).",
+      "Ionique : attraction entre ions (Na⁺Cl⁻)."
+     ]
+    },
+    {
+     "h": "III. Représentations",
+     "lines": [
+      "Formule brute (C₂H₆O), semi-développée (CH₃–CH₂–OH), développée, Lewis (doublets liants et non liants).",
+      "Isomères : CH₃–CH₂–OH et CH₃–O–CH₃ (même C₂H₆O)."
+     ]
+    },
+    {
+     "h": "IV. Les ions",
+     "lines": [
+      "Na → Na⁺ + e⁻ ; Cl + e⁻ → Cl⁻ ; Mg → Mg²⁺ + 2e⁻.",
+      "Ions polyatomiques : SO₄²⁻, NO₃⁻, OH⁻, NH₄⁺, H₃O⁺."
+     ]
+    },
+    {
+     "h": "V. Molécules polaires",
+     "lines": [
+      "LiCl, HF : molécules dissymétriques (polaires)."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre IV : Les ions en solution",
+   "match": [
+    "Les ions en solution"
+   ],
+   "pages": [
+    63,
+    79
+   ],
+   "objectives": [
+    "Mettre en évidence les ions en solution (conduction, électrolyse).",
+    "Calculer concentrations massique et molaire ; écrire une équation de dissolution.",
+    "Reconnaître des ions par des tests de précipitation."
+   ],
+   "intro": "L’eau pure conduit-elle le courant ? Et l’eau salée ?",
+   "summary": "Les ions en solution sont mis en évidence par la conduction électrique, négligeable en leur absence. Une solution aqueuse ionique est électriquement neutre. Un électrolyte est un corps dont la solution conduit mieux le courant que l’eau pure ; il est fort s’il s’ionise totalement, faible sinon. Concentration massique Cm = m/V (g/L) ; concentration molaire C = n/V (mol/L) ; [ion] dépend des coefficients de l’équation de dissolution. La solubilité est la concentration massique maximale du soluté. Lors de l’électrolyse, les anions vont vers l’anode (+), les cations vers la cathode (−). Tests de précipitation : Cu²⁺ + 2OH⁻ → Cu(OH)₂ (bleu) ; Fe²⁺ → précipité vert ; Fe³⁺ → précipité rouille ; Cl⁻ + Ag⁺ → AgCl (blanc, noircit à la lumière) ; SO₄²⁻ + Ba²⁺ → BaSO₄ (blanc).",
+   "points": [
+    "Solution ionique : neutre électriquement.",
+    "Cm = m/V ; C = n/V.",
+    "Électrolyte fort / faible.",
+    "Anions → anode (+) ; cations → cathode (−).",
+    "Tests : OH⁻ (Cu²⁺ bleu, Fe²⁺ vert, Fe³⁺ rouille) ; Ag⁺ (Cl⁻) ; Ba²⁺ (SO₄²⁻)."
+   ],
+   "application": {
+    "q": "27 g de glucose (M = 180 g/mol) dans 250 mL : concentration molaire ?",
+    "a": "n = 27/180 = 0,15 mol ; C = 0,15/0,25 = 0,6 mol/L."
+   },
+   "applications": [
+    {
+     "q": "10 mL de CuSO₄ à 10⁻² mol/L : volume de NaOH à 10⁻² mol/L pour précipiter tout Cu²⁺ ?",
+     "a": "Cu²⁺ + 2OH⁻ : il faut 2 × 10⁻⁴ mol de OH⁻, soit 20 mL."
+    },
+    {
+     "q": "Le passage du courant dans une solution est-il dû aux électrons ?",
+     "a": "Non : il est dû au déplacement des ions."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Solutions ioniques",
+     "lines": [
+      "Ions mis en évidence par la conduction ; solution électriquement neutre.",
+      "Électrolyte fort (ionisation totale) / faible (partielle)."
+     ]
+    },
+    {
+     "h": "II. Concentrations",
+     "lines": [
+      "Cm = m/V (g/L) ; C = n/V (mol/L) ; Cm = C × M.",
+      "CaCl₂ → Ca²⁺ + 2Cl⁻ : [Ca²⁺] = C ; [Cl⁻] = 2C.",
+      "Na₂SO₄ à 10⁻² mol/L : [Na⁺] = 2·10⁻² mol/L."
+     ]
+    },
+    {
+     "h": "III. Exemple",
+     "lines": [
+      "1,2 kg de CaCl₂ (M = 111 g/mol) dans 1,5 L : n ≈ 10,8 mol ; C ≈ 7,2 mol/L ; [Ca²⁺] ≈ 7,2 mol/L ; [Cl⁻] ≈ 14,4 mol/L."
+     ]
+    },
+    {
+     "h": "IV. Tests de reconnaissance",
+     "lines": [],
+     "table": [
+      [
+       "Ion",
+       "Réactif",
+       "Précipité"
+      ],
+      [
+       "Cu²⁺",
+       "soude (OH⁻)",
+       "bleu Cu(OH)₂"
+      ],
+      [
+       "Fe²⁺",
+       "soude",
+       "vert Fe(OH)₂"
+      ],
+      [
+       "Fe³⁺",
+       "soude",
+       "rouille Fe(OH)₃"
+      ],
+      [
+       "Cl⁻",
+       "nitrate d’argent",
+       "blanc AgCl"
+      ],
+      [
+       "SO₄²⁻",
+       "chlorure de baryum",
+       "blanc BaSO₄"
+      ]
+     ]
+    },
+    {
+     "h": "V. Électrolyse",
+     "lines": [
+      "Anions → anode (+) : ils cèdent des électrons ; cations → cathode (−) : ils captent des électrons."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre V : L’eau, le pH et les solutions acides",
+   "match": [
+    "L’eau, le pH et les solutions acides"
+   ],
+   "pages": [
+    80,
+    85
+   ],
+   "objectives": [
+    "Connaître l’autoprotolyse de l’eau et le produit ionique Ke.",
+    "Définir et mesurer le pH ; classer acide, neutre, basique.",
+    "Préparer une solution d’acide chlorhydrique (dissolution, dilution)."
+   ],
+   "intro": "Le citron, le vinaigre et l’eau de mer : lesquels sont acides ?",
+   "summary": "L’eau pure est faiblement conductrice : elle contient peu d’ions, formés par 2H₂O ⇄ H₃O⁺ + OH⁻. Le produit ionique Ke = [H₃O⁺][OH⁻] = 10⁻¹⁴ à 25 °C ; dans l’eau pure [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/L. Le pH est défini par [H₃O⁺] = 10⁻ᵖᴴ : pH < 7 solution acide, pH = 7 neutre, pH > 7 basique ; on le mesure au papier pH ou au pH-mètre. L’acide chlorhydrique est une solution de chlorure d’hydrogène HCl dans l’eau, électrolyte fort : [H₃O⁺] = [Cl⁻] = Ca. Dilution : la quantité de soluté se conserve, Cm·Vm = Cf·Vf, d’où le volume à prélever Vm = Cf·Vf/Cm.",
+   "points": [
+    "2H₂O ⇄ H₃O⁺ + OH⁻ ; Ke = 10⁻¹⁴ à 25 °C.",
+    "[H₃O⁺] = 10⁻ᵖᴴ.",
+    "pH < 7 acide ; = 7 neutre ; > 7 basique.",
+    "HCl : électrolyte fort, [H₃O⁺] = Ca.",
+    "Dilution : C₁V₁ = C₂V₂."
+   ],
+   "application": {
+    "q": "Une solution a [H₃O⁺] = 10⁻³ mol/L. pH ? Nature ?",
+    "a": "pH = 3 < 7 : solution acide."
+   },
+   "applications": [
+    {
+     "q": "Volume d’HCl à 1 mol/L pour préparer 100 mL à 0,1 mol/L ?",
+     "a": "Vm = 0,1 × 100 / 1 = 10 mL, complété à 100 mL avec de l’eau."
+    },
+    {
+     "q": "On dilue un vinaigre de pH 3 : entre quelles valeurs sera le pH ?",
+     "a": "Entre 3 et 7."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. L’eau",
+     "lines": [
+      "Molécule H₂O stable, excellent solvant, faiblement conductrice.",
+      "2H₂O ⇄ H₃O⁺ + OH⁻ ; Ke = [H₃O⁺][OH⁻] = 10⁻¹⁴ (25 °C)."
+     ]
+    },
+    {
+     "h": "II. Le pH",
+     "lines": [
+      "[H₃O⁺] = 10⁻ᵖᴴ ; mesure : papier indicateur, pH-mètre.",
+      "Acide pH < 7 ; neutre pH = 7 ; basique pH > 7."
+     ]
+    },
+    {
+     "h": "III. Acide chlorhydrique",
+     "lines": [
+      "(HCl)g + H₂O → H₃O⁺ + Cl⁻ (électrolyte fort) ; Ca = [H₃O⁺] = [Cl⁻].",
+      "Volume de gaz à dissoudre : Vg = n × Vm = Ca × V × Vm."
+     ]
+    },
+    {
+     "h": "IV. Dilution",
+     "lines": [
+      "La quantité de soluté se conserve : Cm × Vm = Cf × Vf ⇒ Vm = Cf·Vf / Cm.",
+      "La dilution d’un acide augmente son pH (vers 7)."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre V : Solutions basiques, indicateurs et neutralisation",
+   "match": [
+    "Solutions basiques, indicateurs et neutralisation"
+   ],
+   "pages": [
+    86,
+    96
+   ],
+   "objectives": [
+    "Préparer une solution d’hydroxyde de sodium.",
+    "Utiliser les indicateurs colorés.",
+    "Écrire la réaction de neutralisation et exploiter l’équivalence CaVa = CbVb."
+   ],
+   "intro": "Comment neutraliser exactement un acide ? Comment savoir que c’est fini ?",
+   "summary": "La soude (hydroxyde de sodium) s’obtient en dissolvant NaOH solide dans l’eau : NaOH → Na⁺ + OH⁻ ; son pH est supérieur à 7 et Cb = [OH⁻] = [Na⁺]. Les indicateurs colorés (hélianthine, BBT, phénolphtaléine) changent de couleur selon le pH. Neutralisation : (H₃O⁺ + Cl⁻) + (Na⁺ + OH⁻) → 2H₂O + (Na⁺ + Cl⁻). À l’équivalence, les quantités d’acide et de base apportées sont égales : na = nb, soit CaVa = CbVb ; le BBT vire au vert (pH = 7 pour un acide fort et une base forte).",
+   "points": [
+    "NaOH → Na⁺ + OH⁻ ; pH > 7.",
+    "Indicateurs : hélianthine, BBT, phénolphtaléine.",
+    "H₃O⁺ + OH⁻ → 2H₂O.",
+    "Équivalence : CaVa = CbVb.",
+    "BBT : jaune (acide), vert (neutre), bleu (basique)."
+   ],
+   "application": {
+    "q": "Volume d’HCl à 0,04 mol/L pour neutraliser 80 mL de soude à 0,05 mol/L ?",
+    "a": "Va = CbVb/Ca = 0,05 × 80/0,04 = 100 mL (le manuel calcule avec 40 mL et trouve 50 mL)."
+   },
+   "applications": [
+    {
+     "q": "Quelle solution est basique : eau de mer (pH 8) ou thé (pH 5,5) ?",
+     "a": "L’eau de mer (pH > 7)."
+    },
+    {
+     "q": "20 mL d’HCl à 0,1 mol/L sont neutralisés par 10 mL de soude : Cb ?",
+     "a": "Cb = CaVa/Vb = 0,1 × 20/10 = 0,2 mol/L."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Hydroxyde de sodium",
+     "lines": [
+      "NaOH(s) → Na⁺ + OH⁻ ; Cb = [OH⁻] = [Na⁺] ; nb = Cb·Vb.",
+      "La phénolphtaléine devient rose : pH > 7."
+     ]
+    },
+    {
+     "h": "II. Indicateurs colorés",
+     "lines": [],
+     "table": [
+      [
+       "Indicateur",
+       "Milieu acide",
+       "Milieu basique"
+      ],
+      [
+       "Hélianthine",
+       "rouge",
+       "jaune"
+      ],
+      [
+       "BBT",
+       "jaune",
+       "bleu (vert à pH 7)"
+      ],
+      [
+       "Phénolphtaléine",
+       "incolore",
+       "rose"
+      ]
+     ]
+    },
+    {
+     "h": "III. Neutralisation",
+     "lines": [
+      "(H₃O⁺ + Cl⁻) + (Na⁺ + OH⁻) → 2H₂O + (Na⁺ + Cl⁻).",
+      "Équivalence : na = nb ⇔ CaVa = CbVb."
+     ]
+    },
+    {
+     "h": "IV. Exercice résolu",
+     "lines": [
+      "Eau de mer pH 8 (basique) ; vinaigre 3 ; thé 5,5 ; citron 1,5 (le plus acide) ; thé le moins acide.",
+      "Indicateur pour le dosage HCl/NaOH : BBT."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Physique – Chapitre I : Notion de force et étalonnage d’un ressort",
+   "match": [
+    "Notion de force et étalonnage d’un ressort"
+   ],
+   "pages": [
+    9,
+    24
+   ],
+   "objectives": [
+    "Connaître les effets et les caractéristiques d’une force ; la représenter.",
+    "Décomposer une force et composer deux forces.",
+    "Étalonner un ressort et appliquer la loi de Hooke T = k·Δl."
+   ],
+   "intro": "Pourquoi un dynamomètre contient-il un ressort ? Que mesure-t-il vraiment ?",
+   "summary": "Une force ne se voit pas, on constate ses effets : effets dynamiques (mise en mouvement, variation de la valeur, de la direction ou du sens de la vitesse) et effet statique (déformation). Une force est modélisée par un vecteur à quatre caractéristiques : point d’application, direction (droite d’action), sens et intensité (en newtons, mesurée au dynamomètre). Dans un repère, F→ = Fx i→ + Fy j→ avec Fx = F cos α et Fy = F sin α. La résultante de deux forces concourantes a pour norme √(F₁² + F₂² + 2F₁F₂ cos θ). Pour étalonner un ressort, on suspend des masses et on mesure l’allongement : la tension T est proportionnelle à l’allongement Δl = l − l₀ (loi de Hooke) : T = k·Δl, k étant la constante de raideur en N/m.",
+   "points": [
+    "Effets d’une force : dynamique (mouvement) ou statique (déformation).",
+    "Caractéristiques : point d’application, direction, sens, intensité (N).",
+    "Fx = F cos α ; Fy = F sin α.",
+    "Résultante : R = √(F₁² + F₂² + 2F₁F₂ cos θ).",
+    "Loi de Hooke : T = k·Δl = k(l − l₀)."
+   ],
+   "application": {
+    "q": "Un ressort de raideur k = 50 N/m s’allonge de 4 cm : tension ?",
+    "a": "T = k·Δl = 50 × 0,04 = 2 N."
+   },
+   "applications": [
+    {
+     "q": "Une force de 10 N fait un angle de 30° avec (Ox) : composantes ?",
+     "a": "Fx = 10 cos 30° ≈ 8,66 N ; Fy = 10 sin 30° = 5 N."
+    },
+    {
+     "q": "Un ressort de raideur 200 N/m supporte 35 N : allongement ?",
+     "a": "Δl = 35/200 = 0,175 m = 17,5 cm."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Rappels mathématiques",
+     "lines": [
+      "sin α = opposé/hypoténuse ; cos α = adjacent/hypoténuse ; tan α = sin α/cos α ; sin²α + cos²α = 1.",
+      "Projection d’un vecteur : v′ = v cos θ.",
+      "Somme de deux vecteurs : ‖s→‖ = √(u² + v² + 2uv cos(u→, v→))."
+     ]
+    },
+    {
+     "h": "II. Les forces",
+     "lines": [
+      "Effets dynamiques : pierre lancée, moto qui accélère, ballon arrêté, bille déviée par un aimant, balle qui rebondit.",
+      "Effet statique : bouteille vide déformée par la main.",
+      "Caractéristiques : point d’application, direction, sens, intensité (N) ; F→ désigne la force, F sa valeur."
+     ]
+    },
+    {
+     "h": "III. Décomposition et composition",
+     "lines": [
+      "F→ = Fx i→ + Fy j→ ; Fx = F cos α ; Fy = F sin α.",
+      "Deux forces concourantes : règle du parallélogramme ; R² = F₁² + F₂² + 2F₁F₂ cos θ.",
+      "Même sens : R = F₁ + F₂ ; sens contraires : R = |F₁ − F₂| ; perpendiculaires : R = √(F₁² + F₂²)."
+     ]
+    },
+    {
+     "h": "IV. Étalonnage d’un ressort",
+     "lines": [
+      "On accroche des masses m au ressort : T = P = mg ; on mesure l’allongement Δl = l − l₀.",
+      "La courbe T = f(Δl) est une droite passant par l’origine : T = k·Δl (loi de Hooke).",
+      "k (N/m) est la pente de la droite ; un dynamomètre est un ressort étalonné."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre II : La poussée d’Archimède",
+   "match": [
+    "La poussée d’Archimède"
+   ],
+   "pages": [
+    25,
+    38
+   ],
+   "objectives": [
+    "Mettre en évidence la poussée d’Archimède et ses caractéristiques.",
+    "Montrer que la poussée est égale au poids du liquide déplacé : P_A = ρ_l·V_i·g.",
+    "Prévoir si un corps coule, flotte ou est en équilibre dans un liquide."
+   ],
+   "intro": "Pourquoi une pirogue chargée flotte-t-elle alors qu’un clou coule ?",
+   "summary": "Un solide immergé (totalement ou partiellement) dans un liquide subit de la part de ce liquide une force verticale vers le haut : la poussée d’Archimède. Avec un dynamomètre : poids réel P = 3 N, poids apparent Pa = 1,3 N, donc P_A = P − Pa = 1,7 N. La poussée ne dépend ni de la profondeur, ni de la quantité de liquide, ni du poids du corps ; elle dépend du volume immergé et de la nature du liquide. Sa valeur est égale au poids du liquide déplacé : P_A = ρ_l·V_i·g. Un corps totalement immergé coule si P > P_A (ρ_corps > ρ_liquide), est en équilibre au sein du liquide si P = P_A, et flotte si ρ_corps < ρ_liquide (à l’équilibre P = P_A avec un volume immergé partiel). Applications : sous-marin, plongeur, navires, montgolfières.",
+   "points": [
+    "Poussée verticale, vers le haut, appliquée au centre de poussée.",
+    "P_A = P − Pa (poids réel − poids apparent).",
+    "P_A = ρ_liquide × V_immergé × g.",
+    "Indépendante de la profondeur, de la quantité de liquide, du poids du corps.",
+    "Coule si ρ_corps > ρ_liquide ; flotte si ρ_corps < ρ_liquide."
+   ],
+   "application": {
+    "q": "Un cube de fer : P = 3 N, Pa = 2 N, il déplace 100 mL d’eau. Vérifier le principe.",
+    "a": "P_A = 3 − 2 = 1 N ; poids de l’eau déplacée = 1000 × 100·10⁻⁶ × 10 = 1 N : égalité vérifiée."
+   },
+   "applications": [
+    {
+     "q": "Un bois de masse volumique 600 kg/m³ flotte sur l’eau : fraction immergée ?",
+     "a": "V_i/V = 600/1000 = 0,6 : 60 % du volume est immergé."
+    },
+    {
+     "q": "Masse marquée 300 g : poids apparent 2,6 N (g = 10). Poussée ?",
+     "a": "P = 3 N ; P_A = 3 − 2,6 = 0,4 N."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Mise en évidence",
+     "lines": [
+      "Pirogue qui flotte ; ballon qu’il faut pousser pour l’immerger ; pot de sable : 3 N dans l’air, 1,3 N dans le liquide."
+     ]
+    },
+    {
+     "h": "II. Poids apparent",
+     "lines": [
+      "P_A = P − Pa = 3 − 1,3 = 1,7 N."
+     ]
+    },
+    {
+     "h": "III. Facteurs",
+     "lines": [],
+     "table": [
+      [
+       "Facteur",
+       "Influence ?"
+      ],
+      [
+       "Profondeur",
+       "non"
+      ],
+      [
+       "Quantité de liquide",
+       "non"
+      ],
+      [
+       "Poids du corps",
+       "non"
+      ],
+      [
+       "Volume immergé",
+       "oui"
+      ],
+      [
+       "Nature du liquide",
+       "oui"
+      ]
+     ]
+    },
+    {
+     "h": "IV. Expression",
+     "lines": [
+      "P_A = m_liquide déplacé × g = ρ_l × V_d × g = ρ_l × V_i × g."
+     ]
+    },
+    {
+     "h": "V. Flotte ou coule ?",
+     "lines": [
+      "Coule : P > P_A (ρ_s > ρ_l).",
+      "Équilibre dans le liquide : P = P_A (ρ_s = ρ_l).",
+      "Flotte : à l’équilibre P = P_A avec V_i < V (ρ_s < ρ_l) ; V_i/V = ρ_s/ρ_l."
+     ]
+    },
+    {
+     "h": "VI. Applications",
+     "lines": [
+      "Sous-marin : il remplit ou vide ses ballasts pour plonger ou remonter.",
+      "Plongeur, navires, montgolfières."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre III : Équilibre d’un solide soumis à deux ou trois forces",
+   "match": [
+    "Équilibre d’un solide soumis à deux ou trois forces"
+   ],
+   "pages": [
+    39,
+    52
+   ],
+   "objectives": [
+    "Énoncer les conditions d’équilibre d’un solide soumis à deux forces, à trois forces non parallèles.",
+    "Appliquer la méthode de résolution d’un problème de statique.",
+    "Résoudre : plan incliné, solide suspendu par deux fils, planche contre un mur."
+   ],
+   "intro": "Un tableau est suspendu par deux fils : comment calculer la tension de chaque fil ?",
+   "summary": "Un solide soumis à deux forces est en équilibre si ces forces ont la même droite d’action, des sens contraires et la même intensité : F₁→ + F₂→ = 0→. Un solide soumis à trois forces non parallèles est en équilibre si les forces sont coplanaires, leurs droites d’action concourantes, et leur somme vectorielle nulle : F₁→ + F₂→ + F₃→ = 0→ (polygone des forces fermé). Méthode : choisir le système, faire le bilan des forces, écrire la condition d’équilibre, la projeter sur deux axes (ou utiliser une construction graphique) et résoudre. Sur un plan incliné sans frottement d’angle α : T = P sin α et R = P cos α.",
+   "points": [
+    "Deux forces : même droite d’action, sens contraires, même intensité.",
+    "Trois forces : coplanaires, concourantes, somme nulle.",
+    "Méthode : système → bilan → condition → projections → calcul.",
+    "Plan incliné : T = P sin α ; R = P cos α."
+   ],
+   "application": {
+    "q": "Un solide de poids 20 N est retenu par un fil sur un plan incliné de 30° sans frottement : tension ?",
+    "a": "T = P sin α = 20 × 0,5 = 10 N ; R = 20 cos 30° ≈ 17,3 N."
+   },
+   "applications": [
+    {
+     "q": "Une charge de 100 N est suspendue par deux fils faisant chacun 60° avec la verticale : tension ?",
+     "a": "2T cos 60° = 100 ⇒ T = 100 N."
+    },
+    {
+     "q": "Deux forces de 5 N et 5 N, opposées, même droite : le solide est-il en équilibre ?",
+     "a": "Oui : somme nulle et même droite d’action."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Solide soumis à deux forces",
+     "lines": [
+      "F₁→ + F₂→ = 0→ : même droite d’action, sens opposés, F₁ = F₂.",
+      "Ex. : solide suspendu à un fil : T = P."
+     ]
+    },
+    {
+     "h": "II. Solide soumis à trois forces non parallèles",
+     "lines": [
+      "Coplanaires, concourantes, F₁→ + F₂→ + F₃→ = 0→.",
+      "Méthode graphique : triangle (dynamique) des forces fermé."
+     ]
+    },
+    {
+     "h": "III. Méthode de résolution",
+     "lines": [
+      "1) Système étudié ; 2) bilan des forces ; 3) condition d’équilibre ; 4) projections sur (Ox) et (Oy) ; 5) résolution."
+     ]
+    },
+    {
+     "h": "IV. Applications",
+     "lines": [
+      "Plan incliné : R = P cos α ; T = P sin α.",
+      "Solide suspendu par deux fils symétriques faisant α avec la verticale : 2T cos α = P.",
+      "Planche contre un mur : poids, réaction du mur, réaction du sol concourantes."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre III : Moment d’une force et solide mobile autour d’un axe",
+   "match": [
+    "Moment d’une force et solide mobile autour d’un axe"
+   ],
+   "pages": [
+    53,
+    71
+   ],
+   "objectives": [
+    "Définir le moment d’une force par rapport à un axe et son signe.",
+    "Appliquer le théorème des moments à un solide mobile autour d’un axe fixe.",
+    "Étudier poulie, treuil, levier, balance et couple de forces."
+   ],
+   "intro": "Pourquoi pousse-t-on une porte loin des gonds ?",
+   "summary": "L’effet de rotation d’une force sur un solide mobile autour d’un axe Δ dépend de son intensité et de la distance d entre sa droite d’action et l’axe (le bras de levier). Le moment est M_Δ(F→) = ± F·d (en N·m), positif si la force tend à faire tourner dans le sens choisi, négatif sinon ; il est nul si la droite d’action rencontre l’axe ou lui est parallèle. Théorème des moments : un solide mobile autour d’un axe fixe est en équilibre si la somme algébrique des moments des forces par rapport à l’axe est nulle (et la somme des forces aussi). Applications : poulie (T₁ = T₂), treuil (F·L = P·r), levier (F₁d₁ = F₂d₂), balance. Un couple de forces est formé de deux forces parallèles, de sens contraires et de même intensité, sans même droite d’action ; son moment vaut M = F·d (d distance entre les droites d’action).",
+   "points": [
+    "M_Δ(F→) = ± F·d (N·m).",
+    "Moment nul si la droite d’action coupe l’axe ou lui est parallèle.",
+    "Équilibre : Σ M_Δ = 0 et Σ F→ = 0→.",
+    "Levier : F₁·d₁ = F₂·d₂ ; treuil : F·L = P·r.",
+    "Couple : M = F·d."
+   ],
+   "application": {
+    "q": "Un levier : charge de 600 N à 0,2 m de l’axe ; on pousse à 1,2 m de l’autre côté. Force nécessaire ?",
+    "a": "F × 1,2 = 600 × 0,2 ⇒ F = 100 N."
+   },
+   "applications": [
+    {
+     "q": "Treuil : rayon du tambour 10 cm, manivelle 50 cm, charge 500 N : force ?",
+     "a": "F = P·r/L = 500 × 0,1/0,5 = 100 N."
+    },
+    {
+     "q": "Moment d’un couple de deux forces de 20 N distantes de 0,3 m ?",
+     "a": "M = 20 × 0,3 = 6 N·m."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Effet de rotation",
+     "lines": [
+      "Activités : la porte s’ouvre plus facilement si on pousse loin de l’axe et perpendiculairement."
+     ]
+    },
+    {
+     "h": "II. Moment d’une force",
+     "lines": [
+      "M_Δ(F→) = ± F × d ; d : distance de l’axe à la droite d’action.",
+      "Signe : + dans le sens positif choisi, − sinon."
+     ]
+    },
+    {
+     "h": "III. Théorème des moments",
+     "lines": [
+      "Σ M_Δ(F→ᵢ) = 0 pour un solide en équilibre autour d’un axe fixe."
+     ]
+    },
+    {
+     "h": "IV. Applications",
+     "lines": [],
+     "table": [
+      [
+       "Système",
+       "Condition d’équilibre"
+      ],
+      [
+       "Poulie",
+       "T₁ = T₂"
+      ],
+      [
+       "Treuil",
+       "F × L = P × r"
+      ],
+      [
+       "Levier",
+       "F₁ × d₁ = F₂ × d₂"
+      ],
+      [
+       "Balance",
+       "m₁ = m₂ (bras égaux)"
+      ]
+     ]
+    },
+    {
+     "h": "V. Couple de forces",
+     "lines": [
+      "Deux forces parallèles, de sens contraires, de même intensité, de droites d’action distinctes.",
+      "Moment du couple : M = F × d ; ex. volant, robinet, filière."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre IV : Lentilles minces — caractéristiques et images",
+   "match": [
+    "Lentilles minces — caractéristiques et images"
+   ],
+   "pages": [
+    72,
+    86
+   ],
+   "objectives": [
+    "Distinguer lentilles convergentes et divergentes.",
+    "Connaître centre optique, axe, foyers, distance focale et vergence.",
+    "Construire l’image d’un objet à travers une lentille (conditions de Gauss)."
+   ],
+   "intro": "La loupe grossit, les lunettes d’un myope rapetissent : quelle différence entre ces lentilles ?",
+   "summary": "Une lentille est un milieu transparent limité par deux faces dont l’une au moins est sphérique. Lentilles à bords minces : convergentes ; à bords épais : divergentes. Le centre optique O, l’axe optique principal, le foyer objet F et le foyer image F′ (symétriques par rapport à O) caractérisent la lentille ; la distance focale f = OF′ et la vergence C = 1/OF′ (en dioptries δ, f en mètres), positive pour une convergente, négative pour une divergente. Dans les conditions de Gauss (rayons peu inclinés et proches de l’axe), l’image est nette. Trois rayons particuliers : un rayon passant par O n’est pas dévié ; un rayon parallèle à l’axe émerge en passant par F′ ; un rayon passant par F émerge parallèle à l’axe. Une image est réelle si elle peut être recueillie sur un écran, virtuelle sinon.",
+   "points": [
+    "Bords minces : convergente ; bords épais : divergente.",
+    "F et F′ symétriques par rapport à O ; f = OF′.",
+    "C = 1/f (δ, f en m).",
+    "Rayons : par O non dévié ; parallèle → par F′ ; par F → parallèle.",
+    "Image réelle (sur écran) / virtuelle."
+   ],
+   "application": {
+    "q": "Vergence d’une lentille de distance focale 20 cm ?",
+    "a": "C = 1/0,20 = 5 δ."
+   },
+   "applications": [
+    {
+     "q": "Une lentille a C = −4 δ : nature et distance focale ?",
+     "a": "Divergente ; f = 1/C = −0,25 m."
+    },
+    {
+     "q": "Où placer un objet pour qu’une convergente serve de loupe ?",
+     "a": "Entre le foyer objet F et le centre optique O."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Les lentilles minces",
+     "lines": [
+      "Convergentes (bords minces) : biconvexe, plan-convexe, ménisque convergent.",
+      "Divergentes (bords épais) : biconcave, plan-concave, ménisque divergent."
+     ]
+    },
+    {
+     "h": "II. Éléments caractéristiques",
+     "lines": [
+      "Centre optique O, axe optique principal, foyers F et F′, plans focaux.",
+      "Distance focale f = OF′ ; vergence C = 1/OF′ (δ)."
+     ]
+    },
+    {
+     "h": "III. Trois rayons particuliers",
+     "lines": [
+      "Rayon passant par O : non dévié.",
+      "Rayon incident parallèle à l’axe : émerge en passant par F′.",
+      "Rayon incident passant par F : émerge parallèle à l’axe."
+     ]
+    },
+    {
+     "h": "IV. Construction des images",
+     "lines": [
+      "Objet au-delà de F (convergente) : image réelle, renversée.",
+      "Objet entre F et O : image virtuelle, droite, agrandie (loupe).",
+      "Lentille divergente, objet réel : image virtuelle, droite, plus petite."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre IV : Conjugaison, grandissement et instruments d’optique",
+   "match": [
+    "Conjugaison, grandissement et instruments d’optique"
+   ],
+   "pages": [
+    87,
+    101
+   ],
+   "objectives": [
+    "Appliquer la relation de conjugaison et du grandissement.",
+    "Calculer la vergence de lentilles accolées.",
+    "Comprendre l’œil, ses défauts, la loupe, le microscope et la lunette astronomique."
+   ],
+   "intro": "Comment l’œil fait-il pour voir net de près comme de loin ?",
+   "summary": "Relation de conjugaison (mesures algébriques sur l’axe orienté dans le sens de la lumière) : 1/OA′ − 1/OA = 1/OF′ = C. Grandissement : γ = A′B′/AB = OA′/OA ; γ < 0 image renversée, γ > 0 droite, |γ| > 1 agrandie. Deux lentilles minces accolées équivalent à une lentille de vergence C = C₁ + C₂. L’œil est modélisé par une lentille convergente (cristallin) et un écran (rétine) ; il accommode en modifiant sa vergence. Le myope voit mal de loin (corrigé par une divergente), l’hypermétrope voit mal de près (corrigé par une convergente). La loupe est une convergente ; le microscope associe un objectif et un oculaire convergents ; la lunette astronomique un objectif de grande distance focale et un oculaire.",
+   "points": [
+    "1/OA′ − 1/OA = 1/OF′.",
+    "γ = OA′/OA = A′B′/AB.",
+    "Lentilles accolées : C = C₁ + C₂.",
+    "Myopie : divergente ; hypermétropie : convergente.",
+    "Microscope, lunette : objectif + oculaire."
+   ],
+   "application": {
+    "q": "Lentille de f = 10 cm, objet à 30 cm devant (OA = −30 cm) : position et grandissement de l’image ?",
+    "a": "1/OA′ = 1/10 − 1/30 = 2/30 ⇒ OA′ = 15 cm ; γ = 15/(−30) = −0,5 : image réelle, renversée, deux fois plus petite."
+   },
+   "applications": [
+    {
+     "q": "Deux lentilles accolées de 5 δ et −2 δ : vergence équivalente ?",
+     "a": "C = 5 − 2 = 3 δ (convergente, f ≈ 33 cm)."
+    },
+    {
+     "q": "Un objet donne une image avec γ = −2 : nature ?",
+     "a": "Image renversée, deux fois plus grande."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Relation de conjugaison",
+     "lines": [
+      "1/OA′ − 1/OA = 1/OF′ = C (mesures algébriques)."
+     ]
+    },
+    {
+     "h": "II. Grandissement",
+     "lines": [
+      "γ = A′B′/AB = OA′/OA.",
+      "γ < 0 : renversée ; γ > 0 : droite ; |γ| > 1 : agrandie."
+     ]
+    },
+    {
+     "h": "III. Lentilles accolées",
+     "lines": [
+      "C = C₁ + C₂ (théorème des vergences)."
+     ]
+    },
+    {
+     "h": "IV. L’œil",
+     "lines": [
+      "Cristallin = lentille convergente ; rétine = écran ; accommodation = variation de la vergence.",
+      "Myope : image en avant de la rétine, correction par lentille divergente.",
+      "Hypermétrope : image en arrière, correction par lentille convergente."
+     ]
+    },
+    {
+     "h": "V. Instruments",
+     "lines": [
+      "Loupe : objet entre F et O, image virtuelle agrandie.",
+      "Microscope : objectif (image réelle agrandie) + oculaire (loupe).",
+      "Lunette astronomique : objectif de grande focale, oculaire ; objet à l’infini."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre V : Force et champ électrostatique",
+   "match": [
+    "Force et champ électrostatique"
+   ],
+   "pages": [
+    102,
+    119
+   ],
+   "objectives": [
+    "Décrire l’électrisation par frottement, contact et influence.",
+    "Appliquer la loi de Coulomb.",
+    "Définir le champ électrostatique, ses lignes de champ et la superposition des champs."
+   ],
+   "intro": "Pourquoi une règle frottée attire-t-elle de petits morceaux de papier ?",
+   "summary": "Un corps s’électrise par frottement, par contact ou par influence ; il existe deux sortes de charges : deux charges de même signe se repoussent, de signes contraires s’attirent. La charge électrique est quantifiée (multiple de e = 1,6·10⁻¹⁹ C) et se conserve. Loi de Coulomb : deux charges ponctuelles qA et qB distantes de d exercent l’une sur l’autre des forces opposées, portées par la droite qui les joint, d’intensité F = k|qA·qB|/d² avec k = 9·10⁹ SI. Une charge q placée en un point M où règne un champ E→ subit la force F→ = q·E→ ; le champ créé par une charge ponctuelle Q a pour valeur E = k|Q|/d², il est dirigé vers l’extérieur si Q > 0 et vers Q si Q < 0. Les lignes de champ sont tangentes en chaque point au vecteur champ ; entre deux plaques parallèles chargées, le champ est uniforme. Les champs se superposent : E→ = E₁→ + E₂→.",
+   "points": [
+    "Électrisation : frottement, contact, influence.",
+    "Charges de même signe : répulsion ; signes contraires : attraction.",
+    "Coulomb : F = k|qA qB|/d² ; k = 9·10⁹ SI.",
+    "F→ = q E→ ; E = k|Q|/d².",
+    "Superposition : E→ = E₁→ + E₂→ ; champ uniforme entre deux plaques."
+   ],
+   "application": {
+    "q": "Deux charges de 2·10⁻⁶ C distantes de 0,3 m : force ?",
+    "a": "F = 9·10⁹ × (2·10⁻⁶)²/0,3² = 0,4 N (répulsion)."
+   },
+   "applications": [
+    {
+     "q": "Force subie par un électron dans un champ de 1000 V/m ?",
+     "a": "F = eE = 1,6·10⁻¹⁹ × 1000 = 1,6·10⁻¹⁶ N, de sens opposé au champ."
+    },
+    {
+     "q": "Si la distance entre deux charges double, que devient la force ?",
+     "a": "Elle est divisée par 4."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Électrisation",
+     "lines": [
+      "Par frottement (règle frottée), par contact, par influence.",
+      "Deux types de charges : + et − ; conservation et quantification (q = n·e)."
+     ]
+    },
+    {
+     "h": "II. Loi de Coulomb",
+     "lines": [
+      "F = k|qA qB|/d² ; k = 9·10⁹ N·m²·C⁻² ; forces opposées, portées par (AB)."
+     ]
+    },
+    {
+     "h": "III. Champ électrostatique",
+     "lines": [
+      "F→ = q E→ (E en V/m ou N/C).",
+      "Charge ponctuelle Q : E = k|Q|/d² ; sortant si Q > 0, entrant si Q < 0."
+     ]
+    },
+    {
+     "h": "IV. Lignes de champ et superposition",
+     "lines": [
+      "Lignes de champ : tangentes au champ, orientées dans son sens.",
+      "Champ uniforme entre deux plaques parallèles de charges opposées.",
+      "Plusieurs charges : E→ = E₁→ + E₂→ + …"
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre VI : Intensité et tension électriques",
+   "match": [
+    "Intensité et tension électriques"
+   ],
+   "pages": [
+    120,
+    131
+   ],
+   "objectives": [
+    "Définir l’intensité du courant et la mesurer à l’ampèremètre.",
+    "Appliquer la loi d’unicité (série) et la loi des nœuds (dérivation).",
+    "Définir la tension, la mesurer au voltmètre et appliquer la loi des mailles ; conventions récepteur et générateur."
+   ],
+   "intro": "Pourquoi les lampes d’une maison sont-elles montées en dérivation ?",
+   "summary": "Le courant électrique est un déplacement d’ensemble de porteurs de charges (électrons dans les métaux, ions dans les solutions) ; son sens conventionnel va de la borne + vers la borne − à l’extérieur du générateur. L’intensité I = Q/t (A) se mesure avec un ampèremètre branché en série. Dans un circuit en série, l’intensité est la même en tout point (unicité) ; en dérivation, la somme des intensités qui arrivent à un nœud est égale à la somme de celles qui en partent (loi des nœuds). La tension U_AB = V_A − V_B (V) se mesure avec un voltmètre branché en dérivation ; loi d’additivité U_AC = U_AB + U_BC ; loi des mailles : la somme algébrique des tensions le long d’une maille est nulle. Convention récepteur : flèches de I et de U de sens opposés ; convention générateur : même sens.",
+   "points": [
+    "I = Q/t ; ampèremètre en série.",
+    "Série : I identique ; dérivation : loi des nœuds.",
+    "U_AB = V_A − V_B ; voltmètre en dérivation.",
+    "Additivité et loi des mailles.",
+    "Conventions récepteur / générateur."
+   ],
+   "application": {
+    "q": "Une charge de 120 C traverse un fil en 1 min : intensité ?",
+    "a": "I = Q/t = 120/60 = 2 A."
+   },
+   "applications": [
+    {
+     "q": "Nœud : I₁ = 0,5 A et I₂ = 0,3 A arrivent ; I₃ part. Valeur de I₃ ?",
+     "a": "I₃ = 0,8 A."
+    },
+    {
+     "q": "U_AB = 6 V, U_BC = 3 V : U_AC ?",
+     "a": "U_AC = 9 V."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Le courant électrique",
+     "lines": [
+      "Déplacement de porteurs de charges ; sens conventionnel : de + vers − à l’extérieur du générateur.",
+      "Intensité I = Q/t (ampère, A) ; mesure à l’ampèremètre (en série)."
+     ]
+    },
+    {
+     "h": "II. Lois des intensités",
+     "lines": [
+      "Série : unicité de l’intensité.",
+      "Dérivation : loi des nœuds Σ I entrantes = Σ I sortantes."
+     ]
+    },
+    {
+     "h": "III. La tension électrique",
+     "lines": [
+      "U_AB = V_A − V_B (volt, V) ; U_BA = −U_AB ; mesure au voltmètre (en dérivation).",
+      "Additivité : U_AC = U_AB + U_BC ; loi des mailles."
+     ]
+    },
+    {
+     "h": "IV. Conventions",
+     "lines": [
+      "Récepteur : U et I fléchés en sens opposés.",
+      "Générateur : U et I fléchés dans le même sens."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre VII : Dipôles passifs",
+   "match": [
+    "Dipôles passifs"
+   ],
+   "pages": [
+    132,
+    152
+   ],
+   "objectives": [
+    "Tracer et exploiter la caractéristique d’un dipôle passif.",
+    "Étudier la diode à jonction, la diode Zener et le conducteur ohmique (loi d’Ohm).",
+    "Calculer la résistance équivalente d’associations (série, parallèle)."
+   ],
+   "intro": "Pourquoi une diode laisse-t-elle passer le courant dans un seul sens ?",
+   "summary": "Un dipôle passif ne produit pas de courant ; sa caractéristique est la courbe U = f(I) (ou I = f(U)) en convention récepteur. La diode à jonction ne laisse passer le courant que dans le sens passant au-delà de sa tension de seuil ; elle est bloquée dans l’autre sens. La diode Zener conduit aussi en inverse au-delà de la tension Zener, qui reste alors pratiquement constante. Le conducteur ohmique a une caractéristique linéaire passant par l’origine : loi d’Ohm U = R·I (R en ohms) ; un dipôle est linéaire si sa caractéristique est une droite, symétrique s’il fonctionne de la même façon dans les deux sens. Associations : en série R = R₁ + R₂ ; en parallèle 1/R = 1/R₁ + 1/R₂ ; la résistance d’un fil est R = ρ·L/S.",
+   "points": [
+    "Caractéristique U = f(I) en convention récepteur.",
+    "Diode : sens passant au-delà du seuil ; bloquée en inverse.",
+    "Zener : tension constante en inverse (U_Z).",
+    "Loi d’Ohm : U = R·I.",
+    "Série : R = R₁ + R₂ ; parallèle : 1/R = 1/R₁ + 1/R₂."
+   ],
+   "application": {
+    "q": "Un conducteur ohmique de 100 Ω est traversé par 0,05 A : tension ?",
+    "a": "U = R·I = 100 × 0,05 = 5 V."
+   },
+   "applications": [
+    {
+     "q": "R₁ = 6 Ω et R₂ = 3 Ω en parallèle : R_éq ?",
+     "a": "1/R = 1/6 + 1/3 = 1/2 ⇒ R = 2 Ω."
+    },
+    {
+     "q": "Les mêmes en série ?",
+     "a": "R = 9 Ω."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Grandeurs et conventions",
+     "lines": [
+      "Courant, tension, orientation relative (convention récepteur)."
+     ]
+    },
+    {
+     "h": "II. Caractéristiques",
+     "lines": [
+      "Diode à jonction : non linéaire, non symétrique ; seuil en sens direct ; bloquée en inverse.",
+      "Diode Zener : en inverse, tension U_Z constante au-delà du seuil Zener.",
+      "Conducteur ohmique : droite passant par l’origine, U = R·I (linéaire et symétrique)."
+     ]
+    },
+    {
+     "h": "III. Associations de résistances",
+     "lines": [
+      "Série : R_éq = R₁ + R₂ + …",
+      "Parallèle : 1/R_éq = 1/R₁ + 1/R₂ + …",
+      "Résistance d’un fil : R = ρL/S."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre VIII : Dipôles actifs — générateurs",
+   "match": [
+    "Dipôles actifs — générateurs"
+   ],
+   "pages": [
+    153,
+    172
+   ],
+   "objectives": [
+    "Tracer et exploiter la caractéristique d’un générateur : U = E − r·I.",
+    "Définir force électromotrice et résistance interne ; courant de court-circuit.",
+    "Associer des générateurs et déterminer le point de fonctionnement d’un circuit."
+   ],
+   "intro": "Une pile neuve affiche 9 V à vide, mais moins quand elle alimente un moteur : pourquoi ?",
+   "summary": "Un dipôle actif (générateur) peut faire circuler un courant. En convention générateur, la caractéristique d’une pile est une droite décroissante : U = E − r·I, où E est la force électromotrice (tension à vide, I = 0) et r la résistance interne ; l’intensité de court-circuit (U = 0) vaut Icc = E/r. Associés en série (même sens), des générateurs équivalent à un générateur de f.é.m. E = E₁ + E₂ et de résistance r = r₁ + r₂. Le point de fonctionnement d’un circuit générateur–récepteur est l’intersection des deux caractéristiques ; pour une résistance R branchée sur le générateur : I = E/(R + r) (loi de Pouillet).",
+   "points": [
+    "U = E − r·I (convention générateur).",
+    "E : tension à vide ; r : résistance interne.",
+    "Icc = E/r.",
+    "Série : E = ΣEᵢ ; r = Σrᵢ.",
+    "Point de fonctionnement : I = E/(R + r)."
+   ],
+   "application": {
+    "q": "Pile E = 4,5 V, r = 1,5 Ω, branchée sur R = 7,5 Ω : intensité et tension ?",
+    "a": "I = 4,5/(7,5 + 1,5) = 0,5 A ; U = 4,5 − 1,5 × 0,5 = 3,75 V."
+   },
+   "applications": [
+    {
+     "q": "E = 12 V, r = 2 Ω : intensité de court-circuit ?",
+     "a": "Icc = 12/2 = 6 A."
+    },
+    {
+     "q": "Deux piles (1,5 V ; 0,5 Ω) en série : générateur équivalent ?",
+     "a": "E = 3 V ; r = 1 Ω."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Générateurs",
+     "lines": [
+      "Dipôles actifs : piles, accumulateurs, alimentations, dynamos."
+     ]
+    },
+    {
+     "h": "II. Caractéristique",
+     "lines": [
+      "Droite décroissante : U = E − r·I.",
+      "E = tension à vide (ordonnée à l’origine) ; r = −pente ; Icc = E/r."
+     ]
+    },
+    {
+     "h": "III. Association en série",
+     "lines": [
+      "E = E₁ + E₂ + … ; r = r₁ + r₂ + …"
+     ]
+    },
+    {
+     "h": "IV. Point de fonctionnement",
+     "lines": [
+      "Intersection de la caractéristique du générateur et de celle du récepteur.",
+      "Générateur + résistor R : I = E/(R + r)."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  }
+ ],
+ "level": "5D"
+}

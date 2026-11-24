@@ -1,0 +1,640 @@
+{
+ "subject": "PC",
+ "book": "books/PC_5A.pdf",
+ "bookTitle": "Physique & Chimie 5ème LM",
+ "lessons": [
+  {
+   "title": "Optique – Chapitre 1 : La lumière — comportement et réflexion",
+   "match": [
+    "La lumière — comportement et réflexion"
+   ],
+   "pages": [
+    10,
+    14
+   ],
+   "objectives": [
+    "Décrire le comportement de la lumière face à un objet (réfléchie, transmise, absorbée).",
+    "Énoncer les lois de la réflexion.",
+    "Construire l’image d’un objet dans un miroir plan."
+   ],
+   "intro": "On dirige une lampe vers un miroir, un verre d’eau, puis une feuille noire : que devient la lumière dans chaque cas ?",
+   "summary": "Selon l’objet rencontré, la lumière est réfléchie (miroir), transmise (vitre, eau) ou absorbée (feuille noire, qui s’échauffe). Dans un milieu homogène, elle se propage en ligne droite. Réflexion : le rayon réfléchi est dans le plan d’incidence (contenant le rayon incident et la normale) et l’angle de réflexion est égal à l’angle d’incidence (i = r), angles mesurés par rapport à la normale. L’image d’un objet dans un miroir plan est virtuelle, symétrique de l’objet par rapport au miroir, de même taille.",
+   "points": [
+    "Lumière réfléchie, transmise ou absorbée.",
+    "Propagation rectiligne dans un milieu homogène.",
+    "Réflexion : i = r, mesurés par rapport à la normale.",
+    "Miroir plan : image virtuelle, symétrique, même taille."
+   ],
+   "application": {
+    "q": "Un rayon arrive sur un miroir avec un angle d’incidence de 35° : angle de réflexion ?",
+    "a": "r = i = 35°."
+   },
+   "applications": [
+    {
+     "q": "Citer trois objets qui réfléchissent la lumière.",
+     "a": "Miroir, eau calme, métal poli."
+    },
+    {
+     "q": "Une image dans un miroir est-elle réelle ou virtuelle ?",
+     "a": "Virtuelle."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Comportement de la lumière",
+     "lines": [
+      "Miroir : lumière réfléchie ; verre d’eau : transmise ; feuille noire : absorbée (chaleur)."
+     ]
+    },
+    {
+     "h": "II. Réflexion de la lumière",
+     "lines": [
+      "Rayon incident, point d’incidence, normale, rayon réfléchi.",
+      "Loi 1 : le rayon réfléchi est dans le plan d’incidence.",
+      "Loi 2 : angle de réflexion = angle d’incidence (i = r)."
+     ]
+    },
+    {
+     "h": "III. Image dans un miroir plan",
+     "lines": [
+      "L’image est virtuelle, symétrique de l’objet par rapport au miroir, de même taille."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Optique – Chapitre 1 : La réfraction de la lumière",
+   "match": [
+    "La réfraction de la lumière"
+   ],
+   "pages": [
+    15,
+    24
+   ],
+   "objectives": [
+    "Définir la réfraction et le dioptre.",
+    "Utiliser l’indice de réfraction n = c/v.",
+    "Expliquer des phénomènes (cuillère « cassée », réflexion totale)."
+   ],
+   "intro": "Une cuillère plongée dans un verre d’eau semble cassée : illusion ou phénomène physique ?",
+   "summary": "La réfraction est le changement de direction de la lumière quand elle passe d’un milieu transparent à un autre de propriétés optiques différentes ; la surface de séparation est un dioptre. Elle s’explique par le changement de vitesse de la lumière. L’indice de réfraction n = c/v (c = 3·10⁸ m/s) : vide et air 1 ; eau 1,33 ; glace 1,31 ; verre 1,5 ; diamant 2,4. Plus n est grand, plus la lumière est ralentie. En passant dans un milieu plus réfringent, le rayon se rapproche de la normale (loi de Descartes : n₁ sin i₁ = n₂ sin i₂). Quand la lumière passe d’un milieu plus réfringent à un milieu moins réfringent sous une incidence assez grande, elle est entièrement réfléchie : c’est la réflexion totale (fibres optiques).",
+   "points": [
+    "Réfraction : changement de direction entre deux milieux.",
+    "n = c/v ; c = 3·10⁸ m/s.",
+    "n(eau) = 1,33 ; n(verre) = 1,5 ; n(diamant) = 2,4.",
+    "n₁ sin i₁ = n₂ sin i₂.",
+    "Réflexion totale : du milieu le plus réfringent vers le moins réfringent."
+   ],
+   "application": {
+    "q": "Vitesse de la lumière dans le verre (n = 1,5) ?",
+    "a": "v = c/n = 3·10⁸/1,5 = 2·10⁸ m/s."
+   },
+   "applications": [
+    {
+     "q": "Vrai ou faux : un rayon qui passe de l’air au verre accélère.",
+     "a": "Faux : il ralentit (n plus grand)."
+    },
+    {
+     "q": "Pourquoi un objet dans l’eau semble-t-il déplacé ?",
+     "a": "À cause de la réfraction de la lumière à la surface de l’eau."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Observation",
+     "lines": [
+      "Cuillère dans l’eau : elle semble cassée car la lumière change de direction en passant de l’eau à l’air."
+     ]
+    },
+    {
+     "h": "II. Définitions",
+     "lines": [
+      "Réfraction : changement de direction de propagation entre deux milieux transparents.",
+      "Dioptre : surface séparant deux milieux transparents différents."
+     ]
+    },
+    {
+     "h": "III. Indice de réfraction",
+     "lines": [],
+     "table": [
+      [
+       "Milieu",
+       "Indice n"
+      ],
+      [
+       "Vide / air",
+       "1"
+      ],
+      [
+       "Eau",
+       "1,33"
+      ],
+      [
+       "Glace",
+       "1,31"
+      ],
+      [
+       "Verre",
+       "1,5"
+      ],
+      [
+       "Diamant",
+       "2,4"
+      ]
+     ]
+    },
+    {
+     "h": "IV. Lois et réflexion totale",
+     "lines": [
+      "n₁ sin i₁ = n₂ sin i₂ ; vers un milieu plus réfringent, le rayon se rapproche de la normale.",
+      "Réflexion totale : la lumière passe d’un milieu plus réfringent à un milieu moins réfringent avec une grande incidence."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Optique – Chapitre 1 : Dispersion de la lumière blanche et rayonnements",
+   "match": [
+    "Dispersion de la lumière blanche et rayonnements"
+   ],
+   "pages": [
+    25,
+    34
+   ],
+   "objectives": [
+    "Montrer que la lumière blanche est polychromatique (prisme).",
+    "Distinguer sources monochromatiques et polychromatiques ; expliquer l’arc-en-ciel.",
+    "Connaître UV, IR et rayons X, leurs effets et précautions."
+   ],
+   "intro": "D’où viennent les couleurs de l’arc-en-ciel alors que le Soleil paraît blanc ?",
+   "summary": "La lumière blanche est polychromatique : elle contient toutes les couleurs du spectre visible. Newton l’a décomposée avec un prisme en un spectre allant du rouge au violet (rouge, orangé, jaune, vert, bleu, indigo, violet) : c’est la dispersion. Une lumière monochromatique n’a qu’une couleur (laser), une lumière polychromatique en a plusieurs (Soleil, lampe à incandescence). L’arc-en-ciel résulte de la réfraction et de la réflexion de la lumière du Soleil dans les gouttes d’eau. Au-delà du visible : les ultraviolets (bronzage, coups de soleil, stérilisation), les infrarouges (chaleur, télécommandes, caméras thermiques) et les rayons X (radiographie), dont il faut se protéger.",
+   "points": [
+    "Lumière blanche = mélange de couleurs (polychromatique).",
+    "Prisme : dispersion du rouge au violet.",
+    "Monochromatique (laser) / polychromatique (Soleil).",
+    "Arc-en-ciel : réfraction + réflexion dans les gouttes.",
+    "UV, IR, rayons X : effets et précautions."
+   ],
+   "application": {
+    "q": "Pourquoi dit-on que la lumière blanche est polychromatique ?",
+    "a": "Parce qu’un prisme la décompose en plusieurs couleurs."
+   },
+   "applications": [
+    {
+     "q": "Vrai ou faux : un prisme fabrique les couleurs.",
+     "a": "Faux : il sépare les couleurs déjà présentes dans la lumière blanche."
+    },
+    {
+     "q": "Citer une source monochromatique.",
+     "a": "Un laser."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Dispersion par un prisme",
+     "lines": [
+      "Expérience de Newton : la lumière blanche donne un spectre continu du rouge au violet.",
+      "Ordre : rouge, orangé, jaune, vert, bleu, indigo, violet."
+     ]
+    },
+    {
+     "h": "II. Sources de lumière",
+     "lines": [
+      "Monochromatique : une seule couleur (laser rouge).",
+      "Polychromatique : plusieurs couleurs (Soleil, lampe à incandescence)."
+     ]
+    },
+    {
+     "h": "III. Phénomènes naturels",
+     "lines": [
+      "Arc-en-ciel ; irisations des bulles de savon et des taches d’huile ; reflets colorés d’un CD."
+     ]
+    },
+    {
+     "h": "IV. Rayonnements invisibles",
+     "lines": [],
+     "table": [
+      [
+       "Rayonnement",
+       "Effets / usages",
+       "Précautions"
+      ],
+      [
+       "UV",
+       "bronzage, stérilisation, coups de soleil",
+       "crème, lunettes"
+      ],
+      [
+       "IR",
+       "chaleur, télécommandes, caméras thermiques",
+       "éviter l’exposition prolongée"
+      ],
+      [
+       "Rayons X",
+       "radiographie médicale",
+       "limiter les expositions, protection en plomb"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Mécanique – Chapitre 2 : Les forces",
+   "match": [
+    "Les forces"
+   ],
+   "pages": [
+    36,
+    46
+   ],
+   "objectives": [
+    "Connaître les effets et les caractéristiques d’une force ; la mesurer au dynamomètre.",
+    "Représenter une force et connaître les forces usuelles (poids, réaction, tension).",
+    "Déterminer la résultante de deux forces."
+   ],
+   "intro": "Pour tirer un seau d’un puits, quelles forces agissent sur le seau ?",
+   "summary": "Une force peut mettre en mouvement, modifier le mouvement ou déformer un objet. Elle est caractérisée par son point d’application, sa direction (horizontale, verticale, inclinée), son sens et sa valeur en newtons (N), mesurée au dynamomètre ; on la représente par une flèche à l’échelle. Forces usuelles : le poids P = m·g (vertical, vers le bas, appliqué au centre de gravité ; g ≈ 10 N/kg), la réaction d’un support, la tension d’un fil ou d’un ressort. Deux forces de même direction et même sens ont une résultante égale à leur somme ; de sens contraires, à leur différence ; perpendiculaires, R = √(F₁² + F₂²).",
+   "points": [
+    "Effets : mouvement ou déformation.",
+    "Caractéristiques : point d’application, direction, sens, valeur (N).",
+    "Poids P = m·g.",
+    "Résultante : même sens F₁ + F₂ ; sens contraires |F₁ − F₂| ; perpendiculaires √(F₁² + F₂²)."
+   ],
+   "application": {
+    "q": "Poids d’un sac de 5 kg (g = 10 N/kg) ?",
+    "a": "P = m·g = 5 × 10 = 50 N."
+   },
+   "applications": [
+    {
+     "q": "Deux forces de 30 N et 40 N perpendiculaires : résultante ?",
+     "a": "R = √(900 + 1600) = 50 N."
+    },
+    {
+     "q": "Forces sur un seau suspendu à une corde ?",
+     "a": "Le poids (vers le bas) et la tension de la corde (vers le haut)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Effets d’une force",
+     "lines": [
+      "Mettre en mouvement, modifier un mouvement, déformer."
+     ]
+    },
+    {
+     "h": "II. Caractéristiques et mesure",
+     "lines": [
+      "Point d’application, direction, sens, valeur (N).",
+      "Le dynamomètre mesure la valeur d’une force."
+     ]
+    },
+    {
+     "h": "III. Forces usuelles",
+     "lines": [
+      "Poids : vertical, vers le bas, P = m·g.",
+      "Réaction du support ; tension d’un fil ou d’un ressort."
+     ]
+    },
+    {
+     "h": "IV. Résultante de deux forces",
+     "lines": [
+      "Même direction, même sens : R = F₁ + F₂.",
+      "Même direction, sens contraires : R = |F₁ − F₂|.",
+      "Perpendiculaires : R = √(F₁² + F₂²)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Mécanique – Chapitre 2 : Équilibre d’un solide et poussée d’Archimède",
+   "match": [
+    "Équilibre d’un solide et poussée d’Archimède"
+   ],
+   "pages": [
+    47,
+    60
+   ],
+   "objectives": [
+    "Énoncer la condition d’équilibre d’un solide soumis à deux, puis trois forces.",
+    "Étudier un solide suspendu à un ressort (T = k·Δl).",
+    "Connaître le principe d’Archimède."
+   ],
+   "intro": "Archimède s’écria « Eurêka ! » dans son bain : qu’avait-il découvert ?",
+   "summary": "Un solide soumis à deux forces est en équilibre si elles ont même direction, des sens contraires et la même valeur. Un solide suspendu à un ressort est en équilibre quand la tension T = k·Δl compense le poids : k·Δl = m·g. Un solide soumis à trois forces est en équilibre si, placées bout à bout, elles forment un triangle fermé (somme nulle). Un corps plongé dans un liquide subit une poussée verticale vers le haut égale au poids du liquide déplacé (principe d’Archimède) ; cela explique la flottaison et le poids apparent. Pour un objet posé sur un plan : le poids (vertical, vers le bas) et la réaction du plan (perpendiculaire au plan, vers le haut s’il n’y a pas de frottement).",
+   "points": [
+    "Deux forces : même direction, sens contraires, même valeur.",
+    "Ressort : k·Δl = m·g.",
+    "Trois forces : triangle fermé.",
+    "Archimède : poussée = poids du liquide déplacé."
+   ],
+   "application": {
+    "q": "Un ressort (k = 50 N/m) porte une masse de 200 g (g = 10) : allongement ?",
+    "a": "k·Δl = m·g ⇒ Δl = 0,2 × 10/50 = 0,04 m = 4 cm."
+   },
+   "applications": [
+    {
+     "q": "Deux forces de même direction, même sens et même valeur peuvent-elles équilibrer un solide ?",
+     "a": "Non : il faut des sens contraires."
+    },
+    {
+     "q": "Que signifie « Eurêka » ?",
+     "a": "« J’ai trouvé ! »"
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Condition d’équilibre (deux forces)",
+     "lines": [
+      "F₁→ + F₂→ = 0→ : même droite d’action, sens contraires, même valeur."
+     ]
+    },
+    {
+     "h": "II. Solide suspendu à un ressort",
+     "lines": [
+      "T = k·Δl ; à l’équilibre T = P ⇒ k·Δl = m·g."
+     ]
+    },
+    {
+     "h": "III. Trois forces",
+     "lines": [
+      "Représenter les forces à l’échelle, les placer bout à bout : triangle fermé ⇒ équilibre."
+     ]
+    },
+    {
+     "h": "IV. Principe d’Archimède",
+     "lines": [
+      "Le roi Hiéron et la couronne : Archimède compare les volumes d’eau déplacés.",
+      "Tout corps plongé dans un liquide subit une poussée verticale, vers le haut, égale au poids du liquide déplacé."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Électricité – Chapitre 3 : Intensité et tension",
+   "match": [
+    "Intensité et tension"
+   ],
+   "pages": [
+    62,
+    72
+   ],
+   "objectives": [
+    "Définir l’intensité du courant continu, son unité et sa mesure.",
+    "Définir la tension, son unité et sa mesure.",
+    "Relier intensité, charge et durée : I = Q/t."
+   ],
+   "intro": "Comment mesurer ce qui « circule » dans un fil électrique ?",
+   "summary": "Le courant électrique continu est un déplacement de charges (électrons dans les métaux) ; son intensité I se mesure en ampères (A) avec un ampèremètre branché en série ; I = Q/t, et le nombre d’électrons qui passent est N = Q/e (e = 1,6·10⁻¹⁹ C). La tension électrique U entre deux points se mesure en volts (V) avec un voltmètre branché en dérivation ; elle est pratiquement nulle aux bornes d’un fil de connexion. En série, l’intensité est la même partout ; en dérivation, la tension est la même aux bornes des branches.",
+   "points": [
+    "I en ampères (A), ampèremètre en série.",
+    "I = Q/t ; N = Q/e.",
+    "U en volts (V), voltmètre en dérivation.",
+    "Tension ≈ 0 aux bornes d’un fil."
+   ],
+   "application": {
+    "q": "Une pile débite 0,5 A pendant 10 min : charge et nombre d’électrons ?",
+    "a": "Q = I·t = 0,5 × 600 = 300 C ; N = 300/1,6·10⁻¹⁹ ≈ 1,9·10²¹ électrons."
+   },
+   "applications": [
+    {
+     "q": "Unité de l’intensité ? Appareil ?",
+     "a": "L’ampère ; l’ampèremètre, branché en série."
+    },
+    {
+     "q": "Comment mesure-t-on une tension ?",
+     "a": "Avec un voltmètre branché en dérivation."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Intensité du courant",
+     "lines": [
+      "Symbole I, unité ampère (A), mesure à l’ampèremètre branché en série.",
+      "I = Q/t ; N = Q/e."
+     ]
+    },
+    {
+     "h": "II. Tension électrique",
+     "lines": [
+      "Symbole U, unité volt (V), mesure au voltmètre branché en dérivation.",
+      "Vrai/faux : la tension se mesure avec un ampèremètre → faux."
+     ]
+    },
+    {
+     "h": "III. Lois",
+     "lines": [
+      "Série : même intensité en tout point.",
+      "Dérivation : même tension aux bornes des branches ; l’intensité principale est la somme des intensités des branches."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Électricité – Chapitre 4 : Les effets du courant électrique",
+   "match": [
+    "Les effets du courant électrique"
+   ],
+   "pages": [
+    73,
+    84
+   ],
+   "objectives": [
+    "Décrire les effets thermique, magnétique et chimique du courant.",
+    "Citer leurs applications.",
+    "Se protéger et protéger les appareils des dangers du courant."
+   ],
+   "intro": "Pourquoi un fusible « saute »-t-il ?",
+   "summary": "Effet thermique : un conducteur parcouru par un courant s’échauffe (fil qui rougit) ; l’échauffement dépend de l’intensité, de la résistance et de la durée ; applications : grille-pain, fer à repasser, radiateur, fusible qui fond en cas de surcharge. Effet magnétique : le courant crée un champ magnétique qui dévie une boussole ; applications : électroaimants, moteurs électriques. Effet chimique : dans certaines solutions, le courant provoque une réaction aux électrodes (électrolyse) ; applications : galvanoplastie (dépôt de métal), charge des batteries. Le courant est dangereux pour le corps humain : il faut éviter les contacts avec les fils nus, utiliser des prises de terre, des fusibles et des disjoncteurs.",
+   "points": [
+    "Effet thermique : échauffement (radiateur, fusible).",
+    "Effet magnétique : boussole déviée (électroaimant, moteur).",
+    "Effet chimique : électrolyse (galvanoplastie, batteries).",
+    "Sécurité : fusible, disjoncteur, prise de terre."
+   ],
+   "application": {
+    "q": "À quel effet est dû le fonctionnement d’un fer à repasser ?",
+    "a": "À l’effet thermique du courant."
+   },
+   "applications": [
+    {
+     "q": "Quel effet utilise un électroaimant ?",
+     "a": "L’effet magnétique."
+    },
+    {
+     "q": "Qu’est-ce que la galvanoplastie ?",
+     "a": "Le dépôt d’une fine couche de métal sur un objet par électrolyse."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Effet thermique",
+     "lines": [
+      "Expérience : fil de fer fin parcouru par le courant : il chauffe et peut rougir.",
+      "Applications : grille-pain, fer à repasser, radiateur ; fusible."
+     ]
+    },
+    {
+     "h": "II. Effet magnétique",
+     "lines": [
+      "Expérience : une boussole près d’un fil parcouru par un courant est déviée.",
+      "Applications : électroaimants (grues), moteurs (ventilateurs, aspirateurs)."
+     ]
+    },
+    {
+     "h": "III. Effet chimique",
+     "lines": [
+      "Expérience : électrodes dans l’eau salée ou le sulfate de cuivre : bulles ou dépôts métalliques (électrolyse).",
+      "Applications : galvanoplastie (dorure, argenture), charge des batteries."
+     ]
+    },
+    {
+     "h": "IV. Sécurité",
+     "lines": [
+      "Dangers pour le corps humain ; protection par fusibles, disjoncteurs, prises de terre ; ne jamais toucher un fil dénudé."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 1 : Structure de la matière",
+   "match": [
+    "Structure de la matière"
+   ],
+   "pages": [
+    86,
+    100
+   ],
+   "objectives": [
+    "Identifier Z et A, reconnaître des isotopes.",
+    "Donner la structure électronique des 20 premiers éléments ; situer un élément dans le tableau.",
+    "Représenter des molécules (Lewis, formule développée) et prévoir la charge d’un ion."
+   ],
+   "intro": "De quoi est faite la matière, à la plus petite échelle ?",
+   "summary": "L’atome, plus petite entité de la matière, comporte un noyau (protons positifs et neutrons neutres : les nucléons) et des électrons négatifs très légers qui tournent autour. Charge élémentaire e = 1,6·10⁻¹⁹ C ; masse d’un nucléon ≈ 1,67·10⁻²⁷ kg. Z = nombre de protons = nombre d’électrons ; A = nombre de nucléons ; N = A − Z. Les isotopes ont le même Z et des A différents. Les électrons se répartissent sur les couches K (2), L (8), M (8 pour les 20 premiers éléments). Les atomes s’unissent par des liaisons covalentes (doublets partagés) pour former des molécules (règles du duet et de l’octet) ; un atome qui gagne ou perd des électrons devient un ion (anion ou cation), dont la charge se prévoit d’après sa colonne.",
+   "points": [
+    "Noyau (protons + neutrons) ; électrons.",
+    "e = 1,6·10⁻¹⁹ C ; m(nucléon) ≈ 1,67·10⁻²⁷ kg.",
+    "Z, A, N = A − Z ; isotopes.",
+    "Couches K (2), L (8), M.",
+    "Molécules (liaisons covalentes) ; ions (cations, anions)."
+   ],
+   "application": {
+    "q": "Structure électronique du sodium (Z = 11) et ion formé ?",
+    "a": "(K)²(L)⁸(M)¹ ; il perd 1 électron : Na⁺."
+   },
+   "applications": [
+    {
+     "q": "Combien de neutrons dans ³⁵₁₇Cl ?",
+     "a": "N = 35 − 17 = 18."
+    },
+    {
+     "q": "Quel ion forme le chlore ?",
+     "a": "Cl⁻ (il gagne un électron pour avoir l’octet)."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. L’atome",
+     "lines": [
+      "Noyau : protons (+e) et neutrons (0) ; électrons (−e) autour.",
+      "mp ≈ mn ≈ 1,67·10⁻²⁷ kg ; me = 9,1·10⁻³¹ kg (négligeable)."
+     ]
+    },
+    {
+     "h": "II. Z, A et isotopes",
+     "lines": [
+      "Z protons, A nucléons, N = A − Z neutrons ; notation ᴬ_Z X.",
+      "Isotopes : ¹²C et ¹⁴C (même Z = 6)."
+     ]
+    },
+    {
+     "h": "III. Structure électronique",
+     "lines": [
+      "K : 2 électrons ; L : 8 ; M : 8 (20 premiers éléments).",
+      "O (Z = 8) : (K)²(L)⁶ ; Cl (Z = 17) : (K)²(L)⁸(M)⁷."
+     ]
+    },
+    {
+     "h": "IV. Molécules et ions",
+     "lines": [
+      "Liaison covalente : doublet partagé ; H₂O : H–O–H.",
+      "Ions monoatomiques : Na⁺, Mg²⁺, Cl⁻, O²⁻."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chimie – Chapitre 2 : Quantité de matière",
+   "match": [
+    "Quantité de matière"
+   ],
+   "pages": [
+    101,
+    112
+   ],
+   "objectives": [
+    "Définir la mole et le nombre d’Avogadro.",
+    "Calculer une masse molaire et une quantité de matière n = m/M.",
+    "Utiliser le volume molaire des gaz et les proportions d’une équation."
+   ],
+   "intro": "Combien de molécules dans une gorgée d’eau ? Trop pour les compter : on utilise la mole.",
+   "summary": "La mole est l’unité de quantité de matière : 1 mol = 6,02·10²³ particules (nombre d’Avogadro NA). La masse molaire atomique est la masse d’une mole d’atomes (H : 1 ; C : 12 ; N : 14 ; O : 16 g/mol) ; la masse molaire moléculaire est la somme de celles des atomes (H₂O : 18 g/mol). Quantité de matière : n = m/M. À 0 °C et 1 atm, une mole de gaz occupe 22,4 L ; à 20 °C, 24 L : n = V/Vm. Dans une réaction, les quantités de réactifs et de produits sont proportionnelles aux coefficients de l’équation.",
+   "points": [
+    "1 mol = 6,02·10²³ particules.",
+    "M(H₂O) = 2 × 1 + 16 = 18 g/mol.",
+    "n = m/M.",
+    "Vm = 22,4 L/mol (0 °C) ; 24 L/mol (20 °C).",
+    "Proportionnalité aux coefficients."
+   ],
+   "application": {
+    "q": "Quantité de matière dans 36 g d’eau ?",
+    "a": "n = 36/18 = 2 mol."
+   },
+   "applications": [
+    {
+     "q": "Masse de 0,5 mol de CO₂ ?",
+     "a": "m = 0,5 × 44 = 22 g."
+    },
+    {
+     "q": "Volume de 3 mol de gaz à 0 °C ?",
+     "a": "V = 3 × 22,4 = 67,2 L."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. La mole",
+     "lines": [
+      "1 mol = 6,02·10²³ entités ; NA = 6,02·10²³."
+     ]
+    },
+    {
+     "h": "II. Masse molaire",
+     "lines": [
+      "Atomique : H 1 ; C 12 ; N 14 ; O 16 (g/mol).",
+      "Moléculaire : H₂O = 18 g/mol ; CO₂ = 44 g/mol."
+     ]
+    },
+    {
+     "h": "III. Quantité de matière",
+     "lines": [
+      "n = m/M ; m = n × M."
+     ]
+    },
+    {
+     "h": "IV. Volume molaire",
+     "lines": [
+      "Vm = 22,4 L/mol à 0 °C et 1 atm ; 24 L/mol à 20 °C.",
+      "2 mol de O₂ occupent 2 × 22,4 = 44,8 L (0 °C)."
+     ]
+    },
+    {
+     "h": "V. Calcul de prévision",
+     "lines": [
+      "CH₄ + 2O₂ → CO₂ + 2H₂O : 1 mol de méthane consomme 2 mol de dioxygène."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "5A"
+}
