@@ -1,0 +1,2358 @@
+{
+ "subject": "ANG",
+ "book": "books/ANG_7ACD.pdf",
+ "bookTitle": "Study English — 7th Year",
+ "lessons": [
+  {
+   "title": "Unit 1 – Lesson 1: Digital Revolution",
+   "match": [
+    "Unit 1 – Lesson 1: Digital Revolution"
+   ],
+   "pages": [
+    7,
+    10
+   ],
+   "objectives": [
+    "Use the causative: have / get someone do something, have / get something done.",
+    "Understand a text about the Internet and the Web.",
+    "Talk about things one has had done."
+   ],
+   "intro": "What is the difference between the Internet and the World Wide Web?",
+   "summary": "In the 1960s governments in some advanced countries made efforts to get scientists to invent a system to share information through computers, and the researchers introduced a new and cheap communication system. The Internet is an electronic communications network that connects computer networks around the world; it depends on codes called internet protocols. The World Wide Web is an information system that enables content sharing over the Internet in user-friendly ways. It was invented by Tim Berners-Lee in late 1989, with the first web server, the first web browser and HTML. HTML was published in 1991 and the browser source code released in 1993; Mosaic (later Netscape Navigator) sparked the Internet boom of the 1990s. Websites for the public appeared in 1993–94, and social media, common in the 2010s, made the Web ubiquitous in everyday life.",
+   "points": [
+    "Internet = network of networks (protocols).",
+    "Web = information system working over the Internet.",
+    "Tim Berners-Lee, 1989: server, browser, HTML.",
+    "Have + somebody + base verb; get + somebody + to-infinitive.",
+    "Have / get + something + past participle."
+   ],
+   "application": {
+    "q": "1. When did the invention of the Internet start?",
+    "a": "In the 1960s."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 7,
+      "rect": [
+       0.06,
+       0.13,
+       0.94,
+       0.84
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "advanced",
+       "ahead in progress"
+      ],
+      [
+       "facilities",
+       "material, equipment"
+      ],
+      [
+       "gifted",
+       "having great special talent"
+      ],
+      [
+       "web browser",
+       "software program to use the Internet"
+      ],
+      [
+       "to spark",
+       "to start"
+      ],
+      [
+       "decade",
+       "ten years"
+      ],
+      [
+       "common-place",
+       "ordinary"
+      ],
+      [
+       "ubiquitous",
+       "existing everywhere at the same time"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. When did the invention of the Internet start?",
+       "In the 1960s."
+      ],
+      [
+       "2. Who invented the WWW? And when?",
+       "Tim Berners-Lee, in late 1989."
+      ],
+      [
+       "3. Who provided funding for that purpose?",
+       "Governments in some advanced countries."
+      ],
+      [
+       "4. What are the differences between the Internet and the WWW?",
+       "The Internet is a network connecting computer networks; the Web is an information system for sharing content over the Internet."
+      ],
+      [
+       "5. How did the network ease the flow of information?",
+       "Documents are connected by hypertext links, so users move from one document to another."
+      ],
+      [
+       "6. When did the wide use of multimedia content by the public begin?",
+       "In the 2010s, with social media (websites for the public appeared in 1993–94)."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "The causative: you do not do the action yourself, you make it happen.",
+      "Have + somebody + base verb: I had the gardener dig up the weeds.",
+      "Get + somebody + to-infinitive: I got the gardener to dig up the weeds.",
+      "Have / get + something + past participle: I’ll get it cut this afternoon. He got his car stolen yesterday."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. I don’t have my car. I’m … at the mechanic shop.",
+       "b. having it repaired"
+      ],
+      [
+       "2. We need to … . They are really dirty.",
+       "d. get the windows cleaned"
+      ],
+      [
+       "3. I’m … by a local coat maker.",
+       "a. having my coat made"
+      ],
+      [
+       "4. I … at the ceremony last night.",
+       "c. got my car stolen"
+      ],
+      [
+       "b. Every Friday, (Dad / wash / his car).",
+       "Every Friday, Dad has his car washed."
+      ],
+      [
+       "c. Tomorrow, (she / repair / her watch).",
+       "Tomorrow, she will have her watch repaired."
+      ],
+      [
+       "d. Each Saturday, (we / invite / some friends).",
+       "Each Saturday, we have some friends invited to our home."
+      ],
+      [
+       "e. (They / redecorate / the school) last summer.",
+       "They had the school redecorated last summer."
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « by Sir Tim Berners » → by Sir Tim Berners-Lee ; « In the 1960s governments … have made » → made ; « difficulty to distinguish » → difficulty distinguishing.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Ask a partner: When did you last have your hair cut? Who did you get to do it for you?",
+      "Writing: At home, mention five things you’ve got done."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 1 – Lesson 2: Writing",
+   "match": [
+    "Unit 1 – Lesson 2: Writing"
+   ],
+   "pages": [
+    11,
+    13
+   ],
+   "objectives": [
+    "Comment on ideas.",
+    "Use coordinating conjunctions (FANBOYS).",
+    "Distinguish literary genres."
+   ],
+   "intro": "Is writing a gift, an art, or something in between?",
+   "summary": "Some 7th year literature students comment on the statement « Writing is neither a gift nor an art. It is in between. » Saleh says there are different genres, each with particular characteristics: poetry differs from prose. Mariem thinks many people in our country are gifted for poetry, but prose is an art based on tough rules. Dibi does not believe prose is very difficult: you need to know what you will write (an article, a short story, a novel or a play) and follow the steps of each genre. The teacher advises them to read the works of famous past and modern writers, and quotes Sherwin Cody (1903): the art of writing and speaking one’s own language effectively is the basis of culture and of business, and largely determines our success in life.",
+   "points": [
+    "Genres: poetry, prose, article, short story, novel, play.",
+    "Read a lot to write well.",
+    "Writing and speaking well: basis of culture and business (Sherwin Cody).",
+    "Commenting phrases: I appreciate your insights…",
+    "FANBOYS: for, and, nor, but, or, yet, so."
+   ],
+   "application": {
+    "q": "1. What are these students doing?",
+    "a": "They are commenting on a statement about writing."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 11,
+      "rect": [
+       0.06,
+       0.16,
+       0.94,
+       0.77
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "literature",
+       "the entire body of writings of a language"
+      ],
+      [
+       "commenting",
+       "giving a remark or criticism"
+      ],
+      [
+       "poetry",
+       "rhythmical composition"
+      ],
+      [
+       "prose",
+       "ordinary written language without metre"
+      ],
+      [
+       "genre",
+       "category of artistic work"
+      ],
+      [
+       "novel",
+       "a long fictional story"
+      ],
+      [
+       "utility",
+       "advantage"
+      ],
+      [
+       "post",
+       "an online message"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. What are these students doing?",
+       "They are commenting on a statement about writing."
+      ],
+      [
+       "2. What is the difference between poetry and prose, according to Saleh?",
+       "They are different genres with particular characteristics."
+      ],
+      [
+       "3. What does Dibi say we need to know before writing?",
+       "What we are going to write (an article, a short story, a novel, a play) and the steps of each genre."
+      ],
+      [
+       "4. What does the teacher advise?",
+       "To read the works of the most famous writers, past and modern."
+      ],
+      [
+       "5. According to Sherwin Cody, what does our way of talking and writing determine?",
+       "Largely our success in life."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Commenting on ideas: What a great post! – I appreciate your insights on this topic. – This post really resonates with me. – I’ve never thought about it that way before.",
+      "Coordinating conjunctions connect equal words, phrases or clauses: for, and, nor, but, or, yet, so (FANBOYS).",
+      "I wanted something to drink, so I looked in the fridge. – Reading fiction is beneficial, for it can make us more empathetic."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. Would you rather have cheese … mayonnaise on your sandwich?",
+       "or"
+      ],
+      [
+       "2. My two favorite sports are football … walking.",
+       "and"
+      ],
+      [
+       "3. They wanted to go to the beach, … Mom refused.",
+       "but"
+      ],
+      [
+       "4. I am allergic to cats, … we have three of them.",
+       "but"
+      ],
+      [
+       "5. I am a vegetarian, … I don’t eat any meat.",
+       "so"
+      ],
+      [
+       "Positive or negative? It was boring / It was brilliant / It was really exciting / It was cool / They can’t stand her / She’s so annoying",
+       "Negative / Positive / Positive / Positive / Negative / Negative"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « a novel or a player » → a novel or a play ; « to keep you update » → to keep you updated ; « How may poets » → How many poets.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With one or two friends, talk about a debatable issue and note the comments you make.",
+      "Writing: Write examples of the comments you made, to share with the class."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 2: Learning English",
+   "match": [
+    "Unit 2: Learning English"
+   ],
+   "pages": [
+    14,
+    16
+   ],
+   "objectives": [
+    "Discuss ideas: ask for and give opinions.",
+    "Use gerunds and infinitives.",
+    "Find ways to improve language skills."
+   ],
+   "intro": "What do you do to improve your English outside the classroom?",
+   "summary": "Teachers of English as a foreign language must develop four skills: listening, speaking, reading and writing, with activities adapted to the students’ level. Alioun, a 7th year English teacher, says that learning to write and speak fluently does not come easily and needs continuous efforts. Brahim thinks a 7th year student has no extra time; Ramata disagrees: they can attend evening classes in an English centre twice a week. Sidina advises starting a vocabulary book and noting every new word with its synonyms and phrases. The teacher adds: read a broad range of English newspapers (broadsheets, magazines, tabloids) to keep up-to-date, expand your vocabulary and learn spelling and context.",
+   "points": [
+    "Four skills: listening, speaking, reading, writing.",
+    "Evening classes, vocabulary book, English news.",
+    "Asking for opinion: What do you think about…?",
+    "Giving opinion: In my opinion… / As far as I’m concerned…",
+    "Gerund = verb + ing; infinitive = to + verb."
+   ],
+   "application": {
+    "q": "1. What are the most important skills in learning a language?",
+    "a": "Listening, speaking, reading and writing."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 14,
+      "rect": [
+       0.06,
+       0.16,
+       0.94,
+       0.73
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "conscious",
+       "aware"
+      ],
+      [
+       "skills",
+       "abilities"
+      ],
+      [
+       "facilitate",
+       "ease"
+      ],
+      [
+       "eloquent",
+       "expressive"
+      ],
+      [
+       "immerse",
+       "get exposed to"
+      ],
+      [
+       "broadsheets",
+       "newspapers printed on large paper"
+      ],
+      [
+       "tabloids",
+       "small newspapers"
+      ],
+      [
+       "expand",
+       "enlarge"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. What are the most important skills in learning a language?",
+       "Listening, speaking, reading and writing."
+      ],
+      [
+       "2. Whose responsibility is it to develop these skills?",
+       "The teachers’ (with continuous efforts from the students)."
+      ],
+      [
+       "3. How would the students get enough skills to speak and write?",
+       "By evening classes, a vocabulary book and reading English newspapers."
+      ],
+      [
+       "4. Is it easy to learn a foreign language at home?",
+       "Not easy, but possible with continuous efforts (vocabulary book, English news)."
+      ],
+      [
+       "5. What is the use of a foreign language?",
+       "Free answer: to communicate, study, keep up-to-date with world news…"
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Asking for opinion: Could you tell me…? What do you think about/of…? How do you feel about…?",
+      "Giving opinion: In my opinion/view… If you ask me… As far as I’m concerned… It seems to me that…"
+     ],
+     "table": [
+      [
+       "Gerund (verb + ing)",
+       "Infinitive (to + verb)"
+      ],
+      [
+       "learning",
+       "to learn"
+      ],
+      [
+       "reading",
+       "to read"
+      ],
+      [
+       "writing",
+       "to write"
+      ],
+      [
+       "Getting good results requires work.",
+       "To get good results, you should work hard."
+      ]
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. He can’t imagine … at home. (work)",
+       "working"
+      ],
+      [
+       "2. We have decided not … any old books. (buy)",
+       "to buy"
+      ],
+      [
+       "3. The children seem … the new school. (like)",
+       "to like"
+      ],
+      [
+       "4. The students hope … the exam. (pass)",
+       "to pass"
+      ],
+      [
+       "5. She doesn’t feel like … any work. (do)",
+       "doing"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « requires from them to be more conscious » → requires them to be more conscious ; « a 7 year student » → a 7th year student.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With two classmates, ask and answer: What’s your opinion about…? How do you feel about…?",
+      "Writing: Discuss with a friend the easiest and most efficient way to learn English, then write your conclusion."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 3: Protecting the environment",
+   "match": [
+    "Unit 3: Protecting the environment"
+   ],
+   "pages": [
+    17,
+    19
+   ],
+   "objectives": [
+    "Describe sequences of actions with sequencers.",
+    "Use imperatives and the passive voice.",
+    "Give instructions to protect the environment."
+   ],
+   "intro": "What small actions can you do every day to protect the planet?",
+   "summary": "The environment faces pollution, deforestation and climate change, but small actions by individuals lead to big improvements. First, reduce waste: avoid too much packaging, use reusable bags, bottles and containers. Next, recycle plastics, glass and paper, and donate old clothes and furniture. Then, turn off lights and appliances when not in use and use energy-efficient bulbs. After that, protect water: turn off taps while brushing your teeth and fix leaks immediately, because clean water is limited. Later, plant trees: they absorb carbon dioxide and produce oxygen. Finally, join local groups and sign petitions so that governments pass laws that reduce pollution. Protecting the environment starts with you.",
+   "points": [
+    "Steps: reduce, recycle, save energy, protect water, plant trees, join groups.",
+    "Sequencers: first, next, then, after that, later, finally.",
+    "Imperatives give instructions: Turn off the lights.",
+    "Passive: be + past participle: Waste is reduced.",
+    "Trees absorb CO₂ and produce oxygen."
+   ],
+   "application": {
+    "q": "1. What is the first step to reducing environment damage?",
+    "a": "Reducing the amount of waste we produce."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 17,
+      "rect": [
+       0.06,
+       0.155,
+       0.94,
+       0.58
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "pollution",
+       "making an environment unsafe"
+      ],
+      [
+       "deforestation",
+       "clearing of trees from a wooded area"
+      ],
+      [
+       "recycled",
+       "used again"
+      ],
+      [
+       "donated",
+       "given to help people"
+      ],
+      [
+       "appliances",
+       "electrical devices used in the house"
+      ],
+      [
+       "leaks",
+       "accidental holes letting water escape"
+      ],
+      [
+       "shortage",
+       "a lack of something"
+      ],
+      [
+       "petitions",
+       "requests"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. What is the first step to reducing environment damage?",
+       "Reducing the amount of waste we produce."
+      ],
+      [
+       "2. What should you do with plastic, glass or paper after using them?",
+       "Make sure they are recycled."
+      ],
+      [
+       "3. List two actions to save energy at home.",
+       "Turn off lights and appliances when not in use; switch to energy-efficient bulbs."
+      ],
+      [
+       "4. Why is it important to fix leaks immediately?",
+       "Because clean water is limited and wasting it can lead to a shortage."
+      ],
+      [
+       "5. What is the final step suggested?",
+       "Join local groups that protect the environment (and sign petitions)."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Sequencers show the order of steps: first, next, then, after that, later, finally.",
+      "Imperatives: base verb for commands and advice: Use reusable bags. Don’t waste water.",
+      "Passive voice: be (same tense) + past participle: Waste is reduced. Leaks should be fixed. The earth must be protected."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "How to make tea (order the steps a–e)",
+       "First, heat water in a kettle (d). Next, add tea leaves or a tea bag to the cup (a). Then, pour boiling water into the cup (b). After that, let the tea steep for a few minutes (e). Finally, stir the tea and enjoy your drink (c)."
+      ],
+      [
+       "a. First, the ingredients … (mix) in a large bowl.",
+       "are mixed"
+      ],
+      [
+       "b. … (cut) the vegetables into small pieces.",
+       "Next, cut"
+      ],
+      [
+       "c. After that, the mixture … (pour) into a baking tray.",
+       "is poured"
+      ],
+      [
+       "d. … (bake) the dish in the oven for 20 minutes.",
+       "Then, bake"
+      ],
+      [
+       "e. Finally, the food … (serve) with a fresh salad.",
+       "is served"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « Deforestation is the leaning of trees » → the clearing of trees ; « Protecting the environments » → the environment.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With your deskmate, write instructions on ‘how to recycle plastic’ or ‘how to bake a cake’ and present them.",
+      "Writing: Write instructions for: how to wash clothes, how to plant a tree, how to set up a new smartphone."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 4: A secretary",
+   "match": [
+    "Unit 4: A secretary"
+   ],
+   "pages": [
+    20,
+    22
+   ],
+   "objectives": [
+    "Report statements, questions and commands.",
+    "Apply tense changes in reported speech.",
+    "Understand a work dialogue."
+   ],
+   "intro": "How do you tell a friend what somebody else said?",
+   "summary": "Abdou needs to type a report and goes to see Jeinaba, a secretary. She asks when he wants it ready: there is a meeting in two hours. The report contains a few coloured pictures and complicated shapes; Jeinaba has a colour printing machine, but treating images and geometric shapes takes time. She has attended a professional training on Photoshop and InDesign. Abdou thinks she can finish in an hour, as the report is not long nor complicated; Jeinaba promises to do her best.",
+   "points": [
+    "Abdou needs his report typed before a meeting.",
+    "Jeinaba is trained on Photoshop and InDesign.",
+    "Reported speech: tenses move one step back after a past verb.",
+    "Questions become affirmative; commands become to-infinitive.",
+    "would, could, should, might, ought to do not change."
+   ],
+   "application": {
+    "q": "1. Where is Abdou?",
+    "a": "At the secretary’s office (Jeinaba’s)."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 20,
+      "rect": [
+       0.06,
+       0.165,
+       0.94,
+       0.55
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "free time",
+       "spare time"
+      ],
+      [
+       "in a hurry",
+       "under pressure"
+      ],
+      [
+       "geometric shapes",
+       "triangular, rectangular…"
+      ],
+      [
+       "Photoshop",
+       "software for editing images"
+      ],
+      [
+       "InDesign",
+       "software to prepare books for printing"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. Where is Abdou?",
+       "At the secretary’s office (Jeinaba’s)."
+      ],
+      [
+       "2. What is he doing?",
+       "He is asking her to type his report."
+      ],
+      [
+       "3. What does he need the report for?",
+       "For a meeting in two hours."
+      ],
+      [
+       "4. Does his report contain any pictures or shapes?",
+       "Yes, a few coloured pictures and complicated shapes."
+      ],
+      [
+       "5. Which software has the secretary been trained on?",
+       "Photoshop and InDesign."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "« I am tired », Tom said. → Tom said that he was tired.",
+      "WH-question: « Tom, what time is it? » Ted said. → Ted asked Tom what time it was.",
+      "Yes/No question: « Are you coming, Mary? » → Ted asked Mary if she was coming.",
+      "Command: « Sit down, Ali! » → The teacher told Ali to sit down. « Don’t smoke! » → told Samba not to smoke."
+     ],
+     "table": [
+      [
+       "Direct speech",
+       "Indirect speech"
+      ],
+      [
+       "simple present",
+       "simple past"
+      ],
+      [
+       "present continuous",
+       "past continuous"
+      ],
+      [
+       "simple future (will)",
+       "conditional (would)"
+      ],
+      [
+       "present perfect",
+       "past perfect"
+      ],
+      [
+       "simple past",
+       "past perfect or simple past"
+      ]
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. He says, « I go to the countryside each summer. »",
+       "He says that he goes to the countryside each summer."
+      ],
+      [
+       "2. They said, « We don’t like tea with sugar. »",
+       "They said that they didn’t like tea with sugar."
+      ],
+      [
+       "3. She said, « I won’t attend his party. »",
+       "She said that she wouldn’t attend his party."
+      ],
+      [
+       "4. Fatou said, « I helped my mother yesterday. »",
+       "Fatou said that she had helped her mother the day before."
+      ],
+      [
+       "5. Hamze said, « We are going to see you. »",
+       "Hamze said that they were going to see me/us."
+      ],
+      [
+       "6. I said, « I will invite my friends next weekend. »",
+       "I said that I would invite my friends the following weekend."
+      ],
+      [
+       "7. She claimed, « My boss didn’t tell me. »",
+       "She claimed that her boss hadn’t told her."
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « in two hours time » → in two hours’ time ; « my fiends » → my friends.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Write three personal statements, exchange them with a partner and report them to the class.",
+      "Writing: Write a short paragraph narrating a story or a tale you heard in your family or hometown."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 5: Mining equipment",
+   "match": [
+    "Unit 5: Mining equipment"
+   ],
+   "pages": [
+    23,
+    24
+   ],
+   "objectives": [
+    "Check and confirm information with question tags.",
+    "Learn the names of mining equipment.",
+    "Write a short conversation with question tags."
+   ],
+   "intro": "Which company exploits iron ore in Zouerate?",
+   "summary": "Mahmoud visits his uncle Salem in Zouerate; at the weekend they go to see aunt Maimouna in F’Derick. Mahmoud recognises the General Administration of SNIM and the railroad. He thinks the big trucks carry sand and bricks, but Salem explains that they bring the ore extracted by rock drills to the draglines, which put the iron ore into the train wagons. Bulldozers and hydraulic mining shovels remove unwanted materials; they also use rotary drill rigs, motor graders and wheel loaders. Salem says Mahmoud should know more since he wants to be a mining engineer, and Mahmoud says it is his best trip.",
+   "points": [
+    "SNIM: iron ore in Zouerate and F’Derick.",
+    "Trucks bring the ore to the draglines and the trains.",
+    "Question tag: positive statement → negative tag, and vice versa.",
+    "Use the same auxiliary or modal; do/does/did if none.",
+    "I am…, aren’t I?"
+   ],
+   "application": {
+    "q": "1. Choose another title for this dialogue.",
+    "a": "A visit to Zouerate / A trip to the mines (free answer)."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 23,
+      "rect": [
+       0.06,
+       0.155,
+       0.94,
+       0.54
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "mining trucks",
+       "heavy-duty trucks moving materials"
+      ],
+      [
+       "hydraulic mining shovels",
+       "machines with a broad scoop"
+      ],
+      [
+       "dozers",
+       "bulldozers"
+      ],
+      [
+       "rock drills",
+       "equipment to drill and extract ore"
+      ],
+      [
+       "motor graders",
+       "machines for grading (niveleuse)"
+      ],
+      [
+       "wheel loaders",
+       "machines lifting a bucket (chargeur)"
+      ],
+      [
+       "draglines",
+       "heavy excavators (pelle)"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. Choose another title for this dialogue.",
+       "A visit to Zouerate / A trip to the mines (free answer)."
+      ],
+      [
+       "2. Where is Mahmoud and why is he there?",
+       "In Zouerate, visiting his uncle Salem."
+      ],
+      [
+       "3. Where did his uncle take him at the weekend?",
+       "To F’Derick, to see aunt Maimouna."
+      ],
+      [
+       "4. What does Mahmoud want to study after his Bac?",
+       "Mining engineering (he wants to be a mining engineer)."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Question tag = auxiliary/modal + subject pronoun, separated by a comma.",
+      "Positive statement → negative tag: You are an engineer, aren’t you?",
+      "Negative statement → positive tag: You aren’t going there, are you?",
+      "Modal: We can leave now, can’t we? – No auxiliary: Kady left early, didn’t she?",
+      "I am a teacher, aren’t I?"
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. He can’t speak English fluently, …",
+       "can he?"
+      ],
+      [
+       "2. We have decided to participate, …",
+       "haven’t we?"
+      ],
+      [
+       "3. The children have won the match, …",
+       "haven’t they?"
+      ],
+      [
+       "4. The students will attend the lecture, …",
+       "won’t they?"
+      ],
+      [
+       "5. I don’t like black coffee, …",
+       "do I?"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « equipments » → equipment (uncountable) ; « Don’t they? » → , don’t they? ; « Can’t I? » → , can’t I? ; « model verb » → modal verb ; « The aren’t ready » → They aren’t ready.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Make sentences with question tags and check them with your deskmate.",
+      "Writing: Write a short conversation in which the characters use question tags."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 6 – Lesson 1: Dreams for tomorrow",
+   "match": [
+    "Unit 6 – Lesson 1: Dreams for tomorrow"
+   ],
+   "pages": [
+    25,
+    26
+   ],
+   "objectives": [
+    "Express hopes and wishes.",
+    "Distinguish hope (possible) from wish (unreal).",
+    "Write about one’s hopes and wishes."
+   ],
+   "intro": "What do you hope to do next year? What do you wish you could do now?",
+   "summary": "Baba was daydreaming: he hopes to visit Thiam’s hometown, Kaédi, next year. Thiam wishes Baba could come with him now. Baba hopes they can plan a trip together; Kaédi is a nice city with its ethnic diversity. Baba wishes he could speak the different local languages of Kaédi; Thiam says that would make travelling easier, but he will help him. Baba hopes Thiam will have time to teach him the traditions and rituals before he goes, and Thiam says one of his most important dreams can come true.",
+   "points": [
+    "Hope: possible or likely situations.",
+    "Wish: unreal, imaginary or impossible situations.",
+    "hope + present (future): I hope you pass.",
+    "wish + past (present unreal) / past perfect (regret) / would.",
+    "I wish I were taller."
+   ],
+   "application": {
+    "q": "1. What does Baba hope to do next year?",
+    "a": "To visit Thiam’s hometown, Kaédi."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 25,
+      "rect": [
+       0.06,
+       0.12,
+       0.94,
+       0.555
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "daydreaming",
+       "reverie, imagination"
+      ],
+      [
+       "amazing",
+       "great, awesome"
+      ],
+      [
+       "plan",
+       "organize, arrange"
+      ],
+      [
+       "rituals",
+       "actions done in a fixed traditional way"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. What does Baba hope to do next year?",
+       "To visit Thiam’s hometown, Kaédi."
+      ],
+      [
+       "2. What does Thiam want from Baba?",
+       "He wishes Baba could come with him now."
+      ],
+      [
+       "3. What does Baba wish to do before travelling to Kaédi?",
+       "To speak the local languages and learn the traditions and rituals."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Hope + present (future event): I hope you pass the exam. She hopes it doesn’t rain tomorrow.",
+      "Hope + past (past event): I hope you had a great time.",
+      "Wish + simple past (present unreal): I wish I knew French. I wish I were taller.",
+      "Wish + past perfect (past regret): She wishes she had studied more.",
+      "Wish + would (habits, changes we don’t control): I wish it would stop raining."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. I … I can visit Mecca next pilgrimage.",
+       "hope"
+      ],
+      [
+       "2. She … she could speak French fluently.",
+       "wishes"
+      ],
+      [
+       "3. We … to see the Northern lights someday.",
+       "hope"
+      ],
+      [
+       "4. I … I had more time for hobbies.",
+       "wish"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « That’s sounds amazing » → That sounds amazing ; « I wish so » → I hope so.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Write three sentences expressing your hopes and wishes and discuss them with a partner.",
+      "Writing: Write a short paragraph about your hopes and wishes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 6 – Lesson 2: My ideal friend",
+   "match": [
+    "Unit 6 – Lesson 2: My ideal friend"
+   ],
+   "pages": [
+    27,
+    28
+   ],
+   "objectives": [
+    "Express desires and wants with would like, feel like, want.",
+    "Describe the qualities of an ideal friend.",
+    "Write a letter to an ideal friend."
+   ],
+   "intro": "What qualities do you look for in a friend?",
+   "summary": "An ideal friend is someone the writer has always dreamed of having. He wants his friend to be honest and trustworthy, someone he can rely on in any situation, who supports him during tough times. He would like his friend to share similar interests: sports, reading, travelling. Another quality is kindness: a friend who listens when he is upset and gives advice, encourages him to chase his dreams and motivates him to do his best. In short, his ideal friend would be loyal, caring and fun to be with.",
+   "points": [
+    "Qualities: honest, trustworthy, supportive, kind, loyal.",
+    "Shared interests: sports, reading, travelling.",
+    "would like + noun / to-infinitive.",
+    "feel like + noun / gerund.",
+    "want + noun / to-infinitive."
+   ],
+   "application": {
+    "q": "1. What are the two main qualities the writer wants in an ideal friend?",
+    "a": "Honesty and trustworthiness."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 27,
+      "rect": [
+       0.06,
+       0.155,
+       0.94,
+       0.47
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "ideal",
+       "the most perfect example"
+      ],
+      [
+       "honest",
+       "always telling the truth"
+      ],
+      [
+       "trustworthy",
+       "reliable"
+      ],
+      [
+       "supportive",
+       "encouraging, giving help"
+      ],
+      [
+       "motivates",
+       "makes someone want to work hard"
+      ],
+      [
+       "loyal",
+       "faithful"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. What are the two main qualities the writer wants in an ideal friend?",
+       "Honesty and trustworthiness."
+      ],
+      [
+       "2. Why does the writer want a friend who shares similar interests?",
+       "To enjoy activities together (sports, reading, travelling and exploring new places)."
+      ],
+      [
+       "3. How should the ideal friend behave during tough times?",
+       "He should support him and stand by him."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Would like (polite): I would like a cup of coffee. She would like to visit Paris.",
+      "Feel like + noun / gerund: I feel like a glass of water. I feel like going for a walk.",
+      "Want + noun / to-infinitive: I want a new phone. They want to travel abroad."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. I … (to go) on vacation this summer.",
+       "would like to go / want to go"
+      ],
+      [
+       "2. My friend … (to learn) how to play baseball.",
+       "wants to learn"
+      ],
+      [
+       "3. I … (to find) a job that I love.",
+       "hope to find"
+      ],
+      [
+       "4. I … (to have) a lot of money one day.",
+       "would like to have"
+      ],
+      [
+       "5. I … (to travel) around the world with my best friends.",
+       "want to travel"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « enjoys playing sports reading books » → playing sports and reading books ; « with my bests » → with my best friends.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With your deskmates, discuss: Who is your best friend? Is he or she an ideal friend? Why?",
+      "Writing: Write a short letter to your ideal friend using expressions of desire."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 7 – Lesson 1: University students’ choices",
+   "match": [
+    "Unit 7 – Lesson 1: University students’ choices"
+   ],
+   "pages": [
+    29,
+    31
+   ],
+   "objectives": [
+    "Express alternatives with either… or / neither… nor.",
+    "Use idiomatic prepositions of location.",
+    "Talk about choices after the Bac."
+   ],
+   "intro": "What will you do after getting your Baccalaureate?",
+   "summary": "New Bac holders have various choices: either fulfil the ministry’s requirements for free enrolment or go to private universities, depending on their financial conditions or their eligibility for free scholarships from international organizations (UN, UNESCO, EU…) and foreign universities. They can search for scholarships online. University students can also benefit from online courses (writing, project management, graphic design), some free, others paid, and get certificates. Students who neither live at a university residence nor can continue at university can skip university and follow another programme suited to their circumstances.",
+   "points": [
+    "Free enrolment, private universities, scholarships.",
+    "Online courses with certificates.",
+    "Alternatives to university exist.",
+    "either … or (one of two); neither … nor (none).",
+    "in bed / on the bed; at the hospital / in hospital."
+   ],
+   "application": {
+    "q": "1. Is it up to a student to choose his specialization?",
+    "a": "Yes, students have various choices."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 29,
+      "rect": [
+       0.06,
+       0.145,
+       0.94,
+       0.62
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "enrolment",
+       "registration"
+      ],
+      [
+       "various",
+       "diverse"
+      ],
+      [
+       "requirements",
+       "demands, conditions"
+      ],
+      [
+       "free scholarship",
+       "study without payment"
+      ],
+      [
+       "online courses",
+       "distance learning"
+      ],
+      [
+       "certificate",
+       "document proving completion"
+      ],
+      [
+       "qualifications",
+       "skills gained after training"
+      ],
+      [
+       "alternative",
+       "substitute"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. Is it up to a student to choose his specialization?",
+       "Yes, students have various choices."
+      ],
+      [
+       "2. Do first-year university students have any assistance?",
+       "Yes: free enrolment, scholarships and online courses."
+      ],
+      [
+       "3. Where can they find assistance?",
+       "On the websites of international organizations, universities and institutes."
+      ],
+      [
+       "4. Where do they find free scholarships?",
+       "From international organizations (UN, UNESCO, OSCE, EU, ASEAN) and some foreign universities."
+      ],
+      [
+       "5. Do students who skip university have any alternative?",
+       "Yes, programmes that suit their circumstances and preferences."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Either … or: one of two possibilities: I will have either a coke or a fanta.",
+      "Neither … nor: none of the two: They neither live at a university residence nor go to university.",
+      "Whether and if also express alternatives."
+     ],
+     "table": [
+      [
+       "Expression",
+       "Meaning"
+      ],
+      [
+       "in bed",
+       "sleeping"
+      ],
+      [
+       "on the bed",
+       "sitting"
+      ],
+      [
+       "at the hospital",
+       "visiting, working"
+      ],
+      [
+       "in hospital",
+       "as a patient"
+      ]
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "2. The boss will be here today. / The boss will be here tomorrow.",
+       "The boss will be here either today or tomorrow."
+      ],
+      [
+       "3. In this game you win. / In this game you lose.",
+       "In this game you either win or lose."
+      ],
+      [
+       "4. Give the money you have stolen. / I’ll call the police.",
+       "Either give the money you have stolen or I’ll call the police."
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « Enhance: iprove » → improve.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: In a class meeting, talk about the alternatives available for students from different backgrounds.",
+      "Writing: Write a short paragraph about what you would do after getting the Bac."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 7 – Lesson 2: I prefer studying alone",
+   "match": [
+    "Unit 7 – Lesson 2: I prefer studying alone"
+   ],
+   "pages": [
+    32,
+    34
+   ],
+   "objectives": [
+    "Express, ask about, compare and explain preferences.",
+    "Use prefer, like, enjoy, ’d rather.",
+    "Discuss study habits."
+   ],
+   "intro": "Do you prefer studying alone or in a group? Why?",
+   "summary": "Ousman and Khady discuss their study preferences before the history exam. Ousman prefers studying in the morning when he is fresh; Khady likes studying in the evening when it is quiet. Khady enjoys group study because talking about the material helps her, while Ousman prefers studying alone because groups distract him. Khady likes flashcards; Ousman prefers writing summaries and watching videos for tricky topics. Khady prefers total silence, so she studies at the library, but Ousman would rather study at home because it is more comfortable.",
+   "points": [
+    "Ousman: morning, alone, summaries, at home.",
+    "Khady: evening, group, flashcards, library.",
+    "prefer / like + noun or gerund; enjoy + gerund.",
+    "’d rather + base verb (than + base verb).",
+    "prefer + gerund + to + gerund."
+   ],
+   "application": {
+    "q": "1. When does Ousman prefer to study, and why?",
+    "a": "In the morning, when he is fresh."
+   },
+   "board": [
+    {
+     "h": "Dialogue",
+     "lines": [],
+     "fig": {
+      "page": 32,
+      "rect": [
+       0.06,
+       0.145,
+       0.94,
+       0.62
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "prefer",
+       "like better"
+      ],
+      [
+       "fresh",
+       "rested, energetic"
+      ],
+      [
+       "enjoy",
+       "take pleasure in"
+      ],
+      [
+       "make sense",
+       "be logical"
+      ],
+      [
+       "tricky",
+       "complicated, challenging"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. When does Ousman prefer to study, and why?",
+       "In the morning, when he is fresh."
+      ],
+      [
+       "2. What time of the day does Khady like to study?",
+       "In the evening, when it is quiet."
+      ],
+      [
+       "3. Does Ousman enjoy studying alone or in a group? Why?",
+       "Alone, because groups distract him."
+      ],
+      [
+       "4. Why does Khady prefer group study?",
+       "Because talking about the material helps her."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Basic: I prefer studying alone. I like reading at night. I enjoy using flashcards. I’d rather study in the morning.",
+      "Asking: Do you prefer studying alone or in a group? Would you rather study in the morning or in the evening?",
+      "Comparing: I prefer reading books to watching videos. I’d rather write notes than use flashcards.",
+      "Explaining: I prefer studying in silence because it helps me concentrate."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. I prefer studying alone…",
+       "a. because it helps me focus better."
+      ],
+      [
+       "2. I like group discussions…",
+       "c. because they make learning fun."
+      ],
+      [
+       "3. I’d rather study when I wake up early…",
+       "b. than stay up until late at night."
+      ],
+      [
+       "4. I enjoy watching videos…",
+       "d. than reviewing my notes alone."
+      ],
+      [
+       "5. I prefer listening to music…",
+       "e. when I am working."
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: the title « I prefer study alone » → I prefer studying alone ; « Not all the times » → Not all the time ; item 4 of the matching exercise is not a logical ‘than’ continuation: « I enjoy watching videos more than reviewing my notes alone ».)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With a partner, discuss how to prepare well for an exam using I prefer… to… and I’d rather… than…",
+      "Writing: Complete sentences with your own preferences and reasons."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 7 – Lesson 3: Violent sports",
+   "match": [
+    "Unit 7 – Lesson 3: Violent sports"
+   ],
+   "pages": [
+    35,
+    37
+   ],
+   "objectives": [
+    "Express agreement, partial agreement and disagreement.",
+    "Ask for clarification.",
+    "Debate about sports."
+   ],
+   "intro": "Should violent sports like boxing be banned?",
+   "summary": "Sport has become very common: jogging, swimming, friendly matches, even marathons and triathlons. Doing exercise is good news, as studies show it improves our quality of life and prolongs life expectancy. Some sports such as football, tennis, volleyball and swimming are useful and less dangerous. The writer believes that violent sports such as rugby, boxing and wrestling should be prohibited: boxing is the most grueling sport, American football the most violent, and wrestling causes bruises, broken bones and even brain damage. Gymnastics is not violent but may be dangerous. Agreeing or disagreeing depends on people’s cultural, physical and social background.",
+   "points": [
+    "Sport improves health and life expectancy.",
+    "Non-violent: football, tennis, volleyball, swimming.",
+    "Violent: rugby, boxing, wrestling, American football.",
+    "Agreeing: I couldn’t agree more.",
+    "Disagreeing: I see your point, but…"
+   ],
+   "application": {
+    "q": "1. How many sports are mentioned in the text?",
+    "a": "About eleven: jogging, swimming, marathon, triathlon, football, tennis, volleyball, rugby, boxing, wrestling, American football, gymnastics."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 35,
+      "rect": [
+       0.06,
+       0.13,
+       0.94,
+       0.68
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "marathon",
+       "a long-distance race"
+      ],
+      [
+       "triathlon",
+       "contest of swimming, cycling and running"
+      ],
+      [
+       "prohibited",
+       "banned"
+      ],
+      [
+       "another round",
+       "another stage of the game"
+      ],
+      [
+       "grueling",
+       "brutal"
+      ],
+      [
+       "fake",
+       "not real, deceptive"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. How many sports are mentioned in the text?",
+       "About eleven: jogging, swimming, marathon, triathlon, football, tennis, volleyball, rugby, boxing, wrestling, American football, gymnastics."
+      ],
+      [
+       "2. What is the importance of sport?",
+       "It keeps us healthy, improves our quality of life and prolongs life expectancy."
+      ],
+      [
+       "3. Which sports can be seen as non-violent?",
+       "Football, tennis, volleyball, swimming (gymnastics is not violent but may be dangerous)."
+      ],
+      [
+       "4. Which sports are most violent and why?",
+       "Boxing, American football, rugby and wrestling, because they cause injuries such as bruises, broken bones and brain damage."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Agreeing: I (quite) agree. I couldn’t agree more. That’s true. That’s just it.",
+      "Agreeing partially: Yes, perhaps, but… I agree up to a certain point, but…",
+      "Asking for clarification: Could you explain to me…? Are you saying that…?",
+      "Disagreeing: I see your point, but I don’t quite agree. I completely disagree. Actually, I think the opposite."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "a. Online learning is better than traditional classrooms.",
+       "Free answer, e.g. I agree up to a certain point, but…"
+      ],
+      [
+       "b. Students should wear school uniforms.",
+       "Free answer, e.g. I couldn’t agree more."
+      ],
+      [
+       "c. Mobile phones should not be allowed in class.",
+       "Free answer with a reason."
+      ],
+      [
+       "d. Cheating is a bad habit.",
+       "I completely agree."
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « funny and useful » → fun and useful ; « slttements » → statements.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: Share your opinions with a partner, giving reasons.",
+      "Writing: Choose a debatable issue, discuss it, and write a paragraph about your different opinions."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 8 – Lesson 1: Technology gadgets",
+   "match": [
+    "Unit 8 – Lesson 1: Technology gadgets"
+   ],
+   "pages": [
+    38,
+    40
+   ],
+   "objectives": [
+    "Express ability, deduction and requests with modal verbs.",
+    "Discuss the advantages and disadvantages of gadgets.",
+    "Make polite requests."
+   ],
+   "intro": "Which gadget do you use most, and what for?",
+   "summary": "Technology plays a huge role in our lives. Smartphones are versatile: they check emails, set reminders and even control home appliances, but they waste time and can show harmful sites, so we must avoid nonsense and benefit from what is worthwhile. Laptops are used for work and entertainment and are great for working from home. Smart watches track health and activities. Gadgets can also cause problems: they become slow or break, and notifications and social media distract us. We must find a balance.",
+   "points": [
+    "Smartphones, laptops, smart watches.",
+    "Advantages and disadvantages: find a balance.",
+    "Ability: can, could, be able to.",
+    "Deduction: must, might/may/could, can’t.",
+    "Requests: can (informal), could (polite), would (formal)."
+   ],
+   "application": {
+    "q": "1. List the gadgets stated in the text.",
+    "a": "Smartphones, computers (laptops) and smart watches."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 38,
+      "rect": [
+       0.06,
+       0.14,
+       0.94,
+       0.51
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "gadgets",
+       "tools such as smartphones, laptops"
+      ],
+      [
+       "versatile",
+       "used for many functions"
+      ],
+      [
+       "entertainment",
+       "pleasure"
+      ],
+      [
+       "frustration",
+       "annoyance"
+      ],
+      [
+       "distracted",
+       "preoccupied"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. List the gadgets stated in the text.",
+       "Smartphones, computers (laptops) and smart watches."
+      ],
+      [
+       "2. What can a smartphone do?",
+       "Check emails, set reminders, control home appliances."
+      ],
+      [
+       "3. What can a laptop be used for?",
+       "For work and entertainment."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Ability: can (present), could (past), be able to (general/future).",
+      "Deduction: must (strong), might/may/could (possible), can’t (impossible).",
+      "Request: Can you help me? (informal) Could you lend me the pen? (polite) Would you mind if I open the window? (formal)"
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. When I was younger, I … run five miles.",
+       "could"
+      ],
+      [
+       "2. She … speak three languages fluently.",
+       "can"
+      ],
+      [
+       "3. I … help you with your homework later.",
+       "will be able to (can)"
+      ],
+      [
+       "4. I … play the piano, but I don’t practice anymore.",
+       "could (can)"
+      ],
+      [
+       "1. He … be at home; I saw his car in the driveway.",
+       "must"
+      ],
+      [
+       "2. She … be at work now because I haven’t seen her online today.",
+       "might (could)"
+      ],
+      [
+       "3. They … be at the meeting; it’s already over.",
+       "can’t"
+      ],
+      [
+       "Polite requests: Help me with my project. / Open the window. / Tell me where the library is. / Pass me the salt.",
+       "Could you help me with my project? / Would you open the window, please? / Could you tell me where the library is? / Can you pass me the salt, please?"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « For examples » → For example ; « Model verb » → modal verb.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With a classmate, discuss the functions a smartphone can do.",
+      "Writing: Rewrite four requests politely using can, could or would."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 8 – Lesson 2: The job interview",
+   "match": [
+    "Unit 8 – Lesson 2: The job interview"
+   ],
+   "pages": [
+    41,
+    43
+   ],
+   "objectives": [
+    "Express obligation with must, have to, need to, ought to, shall.",
+    "Express absence of obligation (don’t have to, needn’t).",
+    "Understand a job interview."
+   ],
+   "intro": "What do you need to prepare for a job interview?",
+   "summary": "Ms Roberts has a job interview. All candidates are required to bring a printed CV; she prepared it beforehand. As a team leader she must handle group dynamics; she managed a team of five and organized weekly check-ins. She will be required to attend interdepartmental meetings and may work some weekends at peak times; she is flexible. She manages her time by setting priorities and breaking tasks into steps. The company encourages sustainability (less paper, recycling), and she agrees we ought to contribute. New employees must complete a one-week onboarding programme and review the company handbook.",
+   "points": [
+    "Required documents: a printed CV.",
+    "Team leader: handle group dynamics, meet deadlines.",
+    "must: personal obligation; have to: external rules.",
+    "need to: necessity; ought to: moral obligation; shall: formal.",
+    "don’t have to / needn’t: no obligation."
+   ],
+   "application": {
+    "q": "1. Why did the interviewer ask Ms Roberts if she brought her CV?",
+    "a": "Because all candidates are required to bring a printed copy of their CV."
+   },
+   "board": [
+    {
+     "h": "Dialogue (1/2)",
+     "lines": [],
+     "fig": {
+      "page": 41,
+      "rect": [
+       0.06,
+       0.16,
+       0.94,
+       0.925
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Dialogue (2/2)",
+     "lines": [],
+     "fig": {
+      "page": 42,
+      "rect": [
+       0.06,
+       0.06,
+       0.94,
+       0.18
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "required",
+       "expected, have to"
+      ],
+      [
+       "beforehand",
+       "in advance"
+      ],
+      [
+       "handle",
+       "manage"
+      ],
+      [
+       "deadline",
+       "latest time to finish something"
+      ],
+      [
+       "flexible",
+       "able to adapt"
+      ],
+      [
+       "peak time",
+       "most active period"
+      ],
+      [
+       "prioritize",
+       "arrange by importance"
+      ],
+      [
+       "onboarding",
+       "introducing a new employee to a company"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. Why did the interviewer ask Ms Roberts if she brought her CV?",
+       "Because all candidates are required to bring a printed copy of their CV."
+      ],
+      [
+       "2. What does the company expect in terms of sustainability?",
+       "Following eco-friendly policies: minimizing paper use and recycling."
+      ],
+      [
+       "3. What training is required before starting the job?",
+       "A one-week onboarding programme (and reviewing the company handbook)."
+      ],
+      [
+       "4. How did Ms Roberts show flexibility?",
+       "She accepted occasional weekend work during peak times."
+      ],
+      [
+       "5. Is Ms Roberts a good candidate? Why?",
+       "Yes: she is prepared, experienced in leading a team, flexible and organized."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Must: strong personal obligation: You must study hard.",
+      "Have to: external obligation: You have to wear a seatbelt.",
+      "Need to: necessity: You need to bring your passport.",
+      "Ought to: moral obligation: You ought to apologize.",
+      "Shall: formal/legal: Employees shall follow company policies."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. You … study hard if you want to pass the exam.",
+       "must / have to"
+      ],
+      [
+       "2. Employees … wear a uniform at this company, it’s optional.",
+       "don’t have to"
+      ],
+      [
+       "3. It is imperative that all passengers … fasten their seatbelts.",
+       "must"
+      ],
+      [
+       "4. Students … bring their own books; the school provides them.",
+       "needn’t / don’t have to"
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: « needn’t to » → needn’t ; « additional recourses » → additional resources.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With your deskmate, brainstorm school and classroom rules.",
+      "Writing: Present and explain the rules you brainstormed to the class."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unit 8 – Lesson 3: A leap into the unknown",
+   "match": [
+    "Unit 8 – Lesson 3: A leap into the unknown"
+   ],
+   "pages": [
+    44,
+    46
+   ],
+   "objectives": [
+    "Express certainty and uncertainty.",
+    "Use must, have to, definitely, might, may, could, probably.",
+    "Understand a short story."
+   ],
+   "intro": "How do you feel before an important decision?",
+   "summary": "Amina stands at the airport gate, about to board a plane to a country she has never visited. She tries to convince herself it is the right decision, but uncertainty lingers. Her mother has no doubt she will succeed; her father hesitates: it might not be as easy as she thinks. Amina replied that she is certain this is what she wants. Alone in the terminal, doubt creeps in: what if she doesn’t fit in or struggles with the language? She reminds herself that things may be difficult at first, but she will adapt. At the final boarding call she whispers, « I must trust myself », and steps forward.",
+   "points": [
+    "Amina leaves for an unknown country.",
+    "Mother: certainty; father: doubt.",
+    "Certainty: must, have to, definitely, I’m certain.",
+    "Uncertainty: might, may, could, probably, possibly.",
+    "Final decision: she trusts herself."
+   ],
+   "application": {
+    "q": "1. Why was Amina feeling uncertain at the airport?",
+    "a": "She was going to a country she had never visited, leaving everything familiar."
+   },
+   "board": [
+    {
+     "h": "Text",
+     "lines": [],
+     "fig": {
+      "page": 44,
+      "rect": [
+       0.06,
+       0.165,
+       0.94,
+       0.57
+      ],
+      "caption": ""
+     }
+    },
+    {
+     "h": "Vocabulary",
+     "lines": [],
+     "table": [
+      [
+       "Word",
+       "Meaning"
+      ],
+      [
+       "pounding",
+       "beating fast (heart)"
+      ],
+      [
+       "lingered",
+       "took a long time to leave"
+      ],
+      [
+       "confidently",
+       "certain of your decision"
+      ],
+      [
+       "crept in",
+       "gradually became noticeable"
+      ],
+      [
+       "whispered",
+       "spoke very quietly"
+      ]
+     ]
+    },
+    {
+     "h": "Comprehension",
+     "lines": [],
+     "table": [
+      [
+       "Question",
+       "Answer"
+      ],
+      [
+       "1. Why was Amina feeling uncertain at the airport?",
+       "She was going to a country she had never visited, leaving everything familiar."
+      ],
+      [
+       "2. What did her mother say?",
+       "« I have no doubt that you will succeed. You’ve always been strong. »"
+      ],
+      [
+       "3. How did Amina respond to her father’s doubts?",
+       "She smiled and said she knew it would be a challenge but was certain it was what she wanted."
+      ],
+      [
+       "4. What phrases show Amina’s certainty?",
+       "« I am sure of it », « I’m certain that this is what I want », « I am confident that this journey will change my life »."
+      ],
+      [
+       "5. What were her main concerns?",
+       "Fitting in and struggling with the language; she decided to trust herself."
+      ]
+     ]
+    },
+    {
+     "h": "Grammar",
+     "lines": [
+      "Certainty: must (logical conclusion): She must be at home by now. – definitely: I definitely agree.",
+      "Uncertainty: might / may / could: It might rain later tonight. – probably, possibly, likely: He will probably come."
+     ]
+    },
+    {
+     "h": "Practice (answers)",
+     "lines": [],
+     "table": [
+      [
+       "Exercise",
+       "Answer"
+      ],
+      [
+       "1. I am not sure if I can come tomorrow. I … be late.",
+       "a. might"
+      ],
+      [
+       "2. The test is in two days, but I … pass it.",
+       "b. will"
+      ],
+      [
+       "3. This … be the answer, but I’m not sure.",
+       "a. could"
+      ],
+      [
+       "4. I … finish the report by today. I’m nearly done.",
+       "b. definitely will"
+      ],
+      [
+       "5. She … be going to the party, but I’m not sure.",
+       "a. might"
+      ],
+      [
+       "Rewrite: I don’t know if she will arrive on time. (uncertainty)",
+       "She might arrive on time."
+      ],
+      [
+       "I know it will be a good day. (certainty)",
+       "It will definitely be a good day."
+      ],
+      [
+       "It’s possible that he forgot to call me. (uncertainty)",
+       "He may have forgotten to call me."
+      ],
+      [
+       "There is no doubt that I will be attending the meeting. (certainty)",
+       "I will definitely attend the meeting."
+      ]
+     ]
+    },
+    {
+     "h": "Note",
+     "lines": [
+      "(Correction: title « I learn how to certainty » → I learn how to express certainty ; « what if I fit in? » → what if I don’t fit in? ; « embracing both the certainty of what lay ahead » → the certainty and the uncertainty of what lay ahead.)"
+     ]
+    },
+    {
+     "h": "Speaking & writing",
+     "lines": [
+      "Speaking: With your deskmate, answer: Will it rain tomorrow? Will you pass the Bac? Can Elmourabitoune win the World Cup?",
+      "Writing: Share your answers with the class, giving reasons for your certainty or uncertainty."
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "7C"
+}
