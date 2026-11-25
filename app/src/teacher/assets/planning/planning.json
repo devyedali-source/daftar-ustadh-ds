@@ -91,7 +91,9 @@
   "SN_6O": "توزيع دروس الكتاب المدرسي « Sciences Naturelles 6ème LO » (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب",
   "MATS_7C": "Progression établie d’après le manuel « Mathématiques 7ème C » (IPN), dans l’ordre des chapitres",
   "MATS_7D": "Progression établie d’après le manuel « Mathématiques 7ème D » (IPN), dans l’ordre des chapitres",
-  "MATS_7A": "Progression établie d’après le manuel « Mathématiques 7ème LM » (IPN), dans l’ordre des chapitres"
+  "MATS_7A": "Progression établie d’après le manuel « Mathématiques 7ème LM » (IPN), dans l’ordre des chapitres",
+  "PC_7C": "Progression établie d’après le manuel « Chimie 7ème » ; « Physique 7ème M » (IPN), dans l’ordre des chapitres",
+  "PC_7D": "Progression établie d’après le manuel « Chimie 7ème » ; « Physique 7ème SN » (IPN), dans l’ordre des chapitres"
  },
  "plans": {
   "AR": {
@@ -18319,6 +18321,724 @@
      "k": "exam",
      "i": [
       "اختبارات الفصل الثالث"
+     ]
+    }
+   ],
+   "7C": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — classes, nomenclature, obtention",
+      "Cinématique du point — vitesse et accélération"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — classes, nomenclature, obtention",
+      "Relation fondamentale de la dynamique"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — oxydation et déshydratation",
+      "Mouvement d’un projectile dans le champ de pesanteur"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — oxydation et déshydratation",
+      "Solide sur un plan incliné et sur une piste circulaire"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Chlorures d’acyle et anhydrides d’acide",
+      "Particule chargée dans un champ électrique uniforme"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Chlorures d’acyle et anhydrides d’acide",
+      "Satellites et gravitation"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Estérification, hydrolyse et saponification",
+      "Particule chargée dans un champ magnétique — force de Lorentz"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Estérification, hydrolyse et saponification",
+      "Particule chargée dans un champ magnétique — force de Lorentz"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les amides",
+      "Pendule élastique (oscillateur harmonique libre)"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les amides",
+      "Pendule élastique (oscillateur harmonique libre)"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Évolution quantitative d’un système chimique",
+      "Force de Laplace"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Évolution quantitative d’un système chimique",
+      "Induction électromagnétique"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Vitesses de réaction et temps de demi-réaction",
+      "Auto-induction et circuit RL"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Vitesses de réaction et temps de demi-réaction",
+      "Auto-induction et circuit RL"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Facteurs cinétiques et catalyse",
+      "Condensateur et circuit RC"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Facteurs cinétiques et catalyse",
+      "Oscillations électriques libres (LC et RLC)"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Facteurs cinétiques et catalyse",
+      "Oscillations électriques forcées — circuit RLC en régime sinusoïdal"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Solutions acides et basiques — pH, acides et bases forts",
+      "Oscillations électriques forcées — circuit RLC en régime sinusoïdal"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Solutions acides et basiques — pH, acides et bases forts",
+      "Propagation d’un mouvement vibratoire (milieu unidimensionnel)"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Couples acide/base, Ka et pKa",
+      "Propagation d’un mouvement vibratoire (milieu unidimensionnel)"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Couples acide/base, Ka et pKa",
+      "Interférences mécaniques à la surface d’un liquide"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Couples acide/base, Ka et pKa",
+      "Interférences lumineuses (fentes de Young)"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Niveaux d’énergie de l’atome d’hydrogène"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Effet photoélectrique"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Réactions nucléaires"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Réactions nucléaires"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
+     ]
+    }
+   ],
+   "7D": [
+    {
+     "l": "Octobre S1",
+     "w": 1,
+     "t": 1,
+     "u": "",
+     "k": "diag",
+     "i": [
+      "Prise de contact",
+      "Évaluation diagnostique"
+     ]
+    },
+    {
+     "l": "Octobre S2",
+     "w": 2,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — classes, nomenclature, obtention",
+      "Cinématique du point — vitesse et accélération"
+     ]
+    },
+    {
+     "l": "Octobre S3",
+     "w": 3,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — classes, nomenclature, obtention",
+      "Relation fondamentale de la dynamique"
+     ]
+    },
+    {
+     "l": "Octobre S4",
+     "w": 4,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — oxydation et déshydratation",
+      "Mouvement d’un projectile dans le champ de pesanteur"
+     ]
+    },
+    {
+     "l": "Novembre S1",
+     "w": 5,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les alcools — oxydation et déshydratation",
+      "Solide sur un plan incliné et sur une piste circulaire"
+     ]
+    },
+    {
+     "l": "Novembre S2",
+     "w": 6,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Chlorures d’acyle et anhydrides d’acide",
+      "Particule chargée dans un champ électrique uniforme"
+     ]
+    },
+    {
+     "l": "Novembre S3",
+     "w": 7,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Chlorures d’acyle et anhydrides d’acide",
+      "Satellites et gravitation"
+     ]
+    },
+    {
+     "l": "Novembre S4",
+     "w": 8,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Estérification, hydrolyse et saponification",
+      "Satellites et gravitation"
+     ]
+    },
+    {
+     "l": "Décembre S1",
+     "w": 9,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Estérification, hydrolyse et saponification",
+      "Particule chargée dans un champ magnétique — force de Lorentz"
+     ]
+    },
+    {
+     "l": "Décembre S2",
+     "w": 10,
+     "t": 1,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les amides",
+      "Particule chargée dans un champ magnétique — force de Lorentz"
+     ]
+    },
+    {
+     "l": "Décembre S3",
+     "w": 11,
+     "t": 1,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 1er trimestre"
+     ]
+    },
+    {
+     "l": "Décembre S4",
+     "w": 12,
+     "t": 1,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Janvier S1",
+     "w": 13,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Les amides",
+      "Pendule élastique (oscillateur harmonique libre)"
+     ]
+    },
+    {
+     "l": "Janvier S2",
+     "w": 14,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Évolution quantitative d’un système chimique",
+      "Pendule élastique (oscillateur harmonique libre)"
+     ]
+    },
+    {
+     "l": "Janvier S3",
+     "w": 15,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Évolution quantitative d’un système chimique",
+      "Force de Laplace"
+     ]
+    },
+    {
+     "l": "Janvier S4",
+     "w": 16,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Vitesses de réaction et temps de demi-réaction",
+      "Force de Laplace"
+     ]
+    },
+    {
+     "l": "Février S1",
+     "w": 17,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Vitesses de réaction et temps de demi-réaction",
+      "Induction électromagnétique"
+     ]
+    },
+    {
+     "l": "Février S2",
+     "w": 18,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Facteurs cinétiques et catalyse",
+      "Induction électromagnétique"
+     ]
+    },
+    {
+     "l": "Février S3",
+     "w": 19,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Facteurs cinétiques et catalyse",
+      "Propagation d’un mouvement vibratoire (milieu unidimensionnel)"
+     ]
+    },
+    {
+     "l": "Février S4",
+     "w": 20,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Facteurs cinétiques et catalyse",
+      "Propagation d’un mouvement vibratoire (milieu unidimensionnel)"
+     ]
+    },
+    {
+     "l": "Mars S1",
+     "w": 21,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Solutions acides et basiques — pH, acides et bases forts",
+      "Interférences mécaniques à la surface d’un liquide"
+     ]
+    },
+    {
+     "l": "Mars S2",
+     "w": 22,
+     "t": 2,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Solutions acides et basiques — pH, acides et bases forts",
+      "Interférences mécaniques à la surface d’un liquide"
+     ]
+    },
+    {
+     "l": "Mars S3",
+     "w": 23,
+     "t": 2,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 2e trimestre"
+     ]
+    },
+    {
+     "l": "Mars S4",
+     "w": 24,
+     "t": 2,
+     "u": "",
+     "k": "holiday",
+     "i": [
+      "Vacances"
+     ]
+    },
+    {
+     "l": "Avril S1",
+     "w": 25,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Couples acide/base, Ka et pKa",
+      "Interférences lumineuses (fentes de Young)"
+     ]
+    },
+    {
+     "l": "Avril S2",
+     "w": 26,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Couples acide/base, Ka et pKa",
+      "Interférences lumineuses (fentes de Young)"
+     ]
+    },
+    {
+     "l": "Avril S3",
+     "w": 27,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Couples acide/base, Ka et pKa",
+      "Niveaux d’énergie de l’atome d’hydrogène"
+     ]
+    },
+    {
+     "l": "Avril S4",
+     "w": 28,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Effet photoélectrique"
+     ]
+    },
+    {
+     "l": "Mai S1",
+     "w": 29,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Effet photoélectrique"
+     ]
+    },
+    {
+     "l": "Mai S2",
+     "w": 30,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Réactions nucléaires"
+     ]
+    },
+    {
+     "l": "Mai S3",
+     "w": 31,
+     "t": 3,
+     "u": "",
+     "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons",
+      "Réactions nucléaires"
+     ]
+    },
+    {
+     "l": "Mai S4",
+     "w": 32,
+     "t": 3,
+     "u": "",
+     "k": "eval",
+     "i": [
+      "Révision générale"
+     ]
+    },
+    {
+     "l": "Juin S1",
+     "w": 33,
+     "t": 3,
+     "u": "",
+     "k": "exam",
+     "i": [
+      "Évaluations du 3e trimestre"
      ]
     }
    ]
