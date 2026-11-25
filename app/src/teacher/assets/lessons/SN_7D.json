@@ -1,0 +1,2726 @@
+{
+ "subject": "SN",
+ "book": "books/SN_7D.pdf",
+ "bookTitle": "Sciences Naturelles 7ème SN",
+ "lessons": [
+  {
+   "title": "Chapitre I : Appareil génital mâle et spermatogenèse",
+   "match": [
+    "Appareil génital mâle et spermatogenèse"
+   ],
+   "pages": [
+    11,
+    16
+   ],
+   "objectives": [
+    "Décrire l’appareil génital de l’homme et le rôle de chaque partie.",
+    "Décrire la structure du testicule.",
+    "Expliquer les étapes, la durée et le rendement de la spermatogenèse."
+   ],
+   "intro": "Comment le testicule produit-il des millions de spermatozoïdes chaque jour ?",
+   "summary": "L’appareil génital de l’homme comprend : les gonades (deux testicules ovoïdes de 4 à 5 cm logés dans les bourses), les voies génitales (épididymes, canal de 6 m pelotonné ; canaux déférents ; urètre commun au sperme et à l’urine), les glandes annexes (vésicules séminales, prostate, glandes de Cowper) qui produisent le liquide séminal (fructose, ions, pH favorable à la mobilité) et le pénis, formé de deux corps caverneux et d’un corps spongieux. Le testicule est formé de tubes séminifères (0,2 mm de diamètre, 400 à 1 000 mm de long) ; entre les tubes, un tissu conjonctif contient des capillaires et les cellules interstitielles de Leydig. Le testicule est une glande mixte. La spermatogenèse est centripète : multiplication (mitoses des spermatogonies), accroissement (spermatocytes I), maturation ou méiose (spermatocytes II puis spermatides) et différenciation ou spermiogenèse (spermatides → spermatozoïdes). Elle dure 74 ± 4 jours chez l’Homme ; une spermatogonie donne 32 spermatozoïdes (3 mitoses goniales puis méiose). Les cellules de Sertoli assurent la cohésion du tube, coordonnent la spermatogenèse et nourrissent les cellules germinales. Les spermatozoïdes deviennent mobiles et féconds lors de la traversée de l’épididyme (6 m en une douzaine de jours). Le spermatozoïde (tête avec acrosome, pièce intermédiaire riche en mitochondries, flagelle) est haploïde : n = 23 chromosomes.",
+   "points": [
+    "Testicule : tubes séminifères + cellules de Leydig.",
+    "Spermatogenèse : multiplication, accroissement, méiose, spermiogenèse.",
+    "Durée : 74 ± 4 jours ; 32 spermatozoïdes par spermatogonie.",
+    "Sertoli : cohésion, coordination, nutrition.",
+    "Maturation et stockage dans l’épididyme."
+   ],
+   "application": {
+    "q": "Combien de spermatozoïdes produit une spermatogonie souche après 3 mitoses et une méiose ?",
+    "a": "2³ = 8 spermatocytes I, chacun donne 4 spermatides : 8 × 4 = 32 spermatozoïdes."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi les spermatocytes II sont-ils rares sur les coupes ?",
+     "a": "Parce que leur division en spermatides ne dure qu’environ 1 jour."
+    },
+    {
+     "q": "Quelles cellules du tube séminifère sont diploïdes ?",
+     "a": "Les spermatogonies et les spermatocytes I."
+    }
+   ],
+   "board": [
+    {
+     "h": "Appareil génital de l’homme",
+     "lines": [],
+     "table": [
+      [
+       "Partie",
+       "Organes",
+       "Rôle"
+      ],
+      [
+       "Gonades",
+       "2 testicules dans les bourses",
+       "spermatozoïdes et testostérone"
+      ],
+      [
+       "Voies génitales",
+       "épididymes, canaux déférents, urètre",
+       "maturation, stockage, conduction"
+      ],
+      [
+       "Glandes annexes",
+       "vésicules séminales, prostate, Cowper",
+       "liquide séminal (fructose, pH)"
+      ],
+      [
+       "Organe copulateur",
+       "pénis (2 corps caverneux, 1 corps spongieux)",
+       "dépôt du sperme"
+      ]
+     ]
+    },
+    {
+     "h": "Étapes de la spermatogenèse",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Cellules",
+       "Division"
+      ],
+      [
+       "Multiplication",
+       "spermatogonies (2n)",
+       "mitoses"
+      ],
+      [
+       "Accroissement",
+       "spermatocytes I (2n)",
+       "—"
+      ],
+      [
+       "Maturation",
+       "spermatocytes II (n) → spermatides (n)",
+       "méiose"
+      ],
+      [
+       "Différenciation",
+       "spermatides → spermatozoïdes",
+       "spermiogenèse"
+      ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "La température plus basse des bourses favorise la spermatogenèse.",
+      "Production continue, émission discontinue : la queue de l’épididyme stocke les spermatozoïdes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : Fonction endocrine du testicule et régulation hormonale",
+   "match": [
+    "Fonction endocrine du testicule et régulation hormonale"
+   ],
+   "pages": [
+    16,
+    18
+   ],
+   "objectives": [
+    "Citer les hormones testiculaires et leurs rôles.",
+    "Exploiter des expériences de castration, d’hypophysectomie et de lésion de l’hypothalamus.",
+    "Expliquer le rétrocontrôle négatif."
+   ],
+   "intro": "Qui commande le testicule et comment sa production reste-t-elle stable ?",
+   "summary": "La testostérone, sécrétée par les cellules de Leydig, différencie les voies génitales mâles, développe les caractères sexuels primaires, fait apparaître et maintient les caractères sexuels secondaires et permet l’achèvement de la spermatogenèse. Les cellules de Sertoli sécrètent l’AMH (inhibe la différenciation des voies génitales femelles) et l’inhibine (rétrocontrôle négatif sur l’hypophyse). La castration provoque la régression des caractères sexuels secondaires, la stérilité et une hausse de FSH et LH ; l’ablation de l’antéhypophyse ou une lésion de l’hypothalamus provoque en plus l’atrophie des testicules. L’hypothalamus sécrète la GnRH de façon pulsatile (une pulse toutes les 90 minutes) ; elle stimule l’antéhypophyse qui libère la LH et la FSH. La LH agit sur les cellules de Leydig et stimule la sécrétion de testostérone ; la FSH agit sur les cellules de Sertoli (sécrétion d’ABP, indispensable à la réception de la testostérone) et active la spermatogenèse. Les pulses de GnRH entraînent les pulses de LH qui entraînent ceux de la testostérone. La testostérone exerce en permanence un rétrocontrôle négatif sur le complexe hypothalamo-hypophysaire (CHH), ce qui maintient son taux constant.",
+   "points": [
+    "Leydig → testostérone ; Sertoli → AMH, inhibine, ABP.",
+    "GnRH pulsatile → LH et FSH.",
+    "LH → Leydig → testostérone.",
+    "FSH → Sertoli → spermatogenèse.",
+    "Rétrocontrôle négatif de la testostérone et de l’inhibine."
+   ],
+   "application": {
+    "q": "Après castration, pourquoi les taux de FSH et LH augmentent-ils ?",
+    "a": "La testostérone (et l’inhibine) ne freinent plus le CHH : le rétrocontrôle négatif est levé."
+   },
+   "applications": [
+    {
+     "q": "Que montre le décalage entre les pics de GnRH, de LH et de testostérone ?",
+     "a": "Une relation de causalité : GnRH → LH → testostérone."
+    },
+    {
+     "q": "Quelle hormone testiculaire freine surtout la FSH ?",
+     "a": "L’inhibine, sécrétée par les cellules de Sertoli."
+    }
+   ],
+   "board": [
+    {
+     "h": "Expériences",
+     "lines": [],
+     "table": [
+      [
+       "Expérience",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Castration",
+       "régression des CSII, stérilité, FSH et LH ↑",
+       "le testicule maintient les CSII et freine le CHH"
+      ],
+      [
+       "Ablation de l’antéhypophyse",
+       "atrophie des testicules, FSH et LH ↓",
+       "l’hypophyse commande le testicule"
+      ],
+      [
+       "Lésion de l’hypothalamus",
+       "mêmes troubles ; extraits hypothalamiques : correction",
+       "l’hypothalamus commande l’hypophyse (GnRH)"
+      ]
+     ]
+    },
+    {
+     "h": "Action du CHH sur le testicule",
+     "lines": [],
+     "table": [
+      [
+       "Hormone",
+       "Origine",
+       "Rôle"
+      ],
+      [
+       "GnRH",
+       "hypothalamus",
+       "stimule la sécrétion de FSH et LH"
+      ],
+      [
+       "FSH",
+       "antéhypophyse",
+       "multiplication des gonies, sécrétion d’ABP"
+      ],
+      [
+       "LH (ICSH)",
+       "antéhypophyse",
+       "stimule la sécrétion de testostérone"
+      ]
+     ]
+    },
+    {
+     "h": "Remarque",
+     "lines": [
+      "(Correction : le tableau du manuel écrit pour la LH « stimule la sécrétion de LH » ; il faut lire « stimule la sécrétion de testostérone par les cellules de Leydig ».)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : Appareil génital femelle, ovaire et ovogenèse",
+   "match": [
+    "Appareil génital femelle, ovaire et ovogenèse"
+   ],
+   "pages": [
+    19,
+    25
+   ],
+   "objectives": [
+    "Décrire l’appareil génital de la femme.",
+    "Décrire la structure de l’ovaire et la folliculogenèse.",
+    "Comparer ovogenèse et spermatogenèse."
+   ],
+   "intro": "Pourquoi une femme naît-elle avec un stock d’ovocytes qui ne fait que diminuer ?",
+   "summary": "L’appareil génital de la femme comprend deux ovaires (gonades), deux trompes de Fallope débutant par les pavillons (lieu de la fécondation), l’utérus (gestation), le vagin et la vulve, et des glandes annexes (Bartholin, glandes cervicales, utérines et mammaires). L’ovaire est une glande mixte formée d’une zone corticale, qui contient les follicules à différents stades, et d’une zone médullaire riche en vaisseaux. La folliculogenèse fait passer le follicule primordial (ovocyte I entouré de quelques cellules aplaties) au follicule primaire, puis secondaire ou plein (granulosa pluristratifiée, zone pellucide, thèques interne et externe), puis tertiaire ou cavitaire (antrum rempli de liquide folliculaire) et enfin au follicule mûr (de De Graaf). L’ovogenèse commence pendant la vie embryonnaire : vers la 12e semaine, les ovogonies entrent en méiose et donnent des ovocytes I bloqués en prophase I. Vers le 7e mois il y a environ 7 millions de follicules primordiaux, 2 millions à la naissance et environ 250 000 par ovaire après la puberté ; les autres dégénèrent (atrésie). Juste avant l’ovulation, l’ovocyte I achève la première division (ovocyte II + 1er globule polaire) ; l’ovocyte II se bloque en métaphase II et ne termine la méiose qu’après la pénétration du spermatozoïde.",
+   "points": [
+    "Ovaire : cortex (follicules) et médulla (vaisseaux).",
+    "Follicules : primordial, primaire, secondaire, tertiaire, mûr.",
+    "Ovocyte I bloqué en prophase I dès la vie fœtale.",
+    "Ovocyte II bloqué en métaphase II jusqu’à la fécondation.",
+    "L’atrésie est le destin normal des follicules."
+   ],
+   "application": {
+    "q": "Citer deux différences entre ovogenèse et spermatogenèse.",
+    "a": "L’ovogenèse commence dès la vie fœtale, la spermatogenèse à la puberté ; la méiose de l’ovogenèse est bloquée et donne un seul gamète, celle de la spermatogenèse est continue et donne 4 spermatides."
+   },
+   "applications": [
+    {
+     "q": "Où s’achève l’ovogenèse ?",
+     "a": "Hors de l’ovaire, dans la trompe, après la pénétration du spermatozoïde."
+    },
+    {
+     "q": "Quel rôle joue la zone pellucide ?",
+     "a": "Elle entoure l’ovocyte et porte les récepteurs qui reconnaissent les spermatozoïdes."
+    }
+   ],
+   "board": [
+    {
+     "h": "Comparaison",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Spermatogenèse",
+       "Ovogenèse"
+      ],
+      [
+       "Multiplication",
+       "mitoses",
+       "mitoses"
+      ],
+      [
+       "Accroissement",
+       "faible",
+       "important"
+      ],
+      [
+       "Maturation",
+       "méiose continue (4 spermatides)",
+       "méiose bloquée en métaphase II"
+      ],
+      [
+       "Différenciation",
+       "importante",
+       "absente"
+      ]
+     ]
+    },
+    {
+     "h": "Folliculogenèse",
+     "lines": [
+      "Primordial → primaire → secondaire (granulosa, zone pellucide, thèques) → tertiaire (antrum) → follicule mûr → ovulation."
+     ]
+    },
+    {
+     "h": "Évolution du stock",
+     "lines": [
+      "7 millions (6e-7e mois fœtal) → 2 millions (naissance) → environ 250 000 par ovaire (puberté) → 0 vers 50 ans."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : Les cycles sexuels de la femme",
+   "match": [
+    "Les cycles sexuels de la femme"
+   ],
+   "pages": [
+    26,
+    34
+   ],
+   "objectives": [
+    "Décrire le cycle ovarien et le cycle des hormones ovariennes.",
+    "Décrire les cycles de l’endomètre, de la glaire cervicale et de la température.",
+    "Relier chaque cycle aux hormones ovariennes."
+   ],
+   "intro": "Pourquoi la température du matin monte-t-elle au milieu du cycle ?",
+   "summary": "Le cycle sexuel dure en moyenne 28 jours et commence par les règles. Le cycle ovarien comprend la phase folliculaire (un seul follicule devient mûr, les autres s’atrésient), l’ovulation vers le 14e jour (éclatement du follicule mûr et expulsion de l’ovocyte II entouré de la corona radiata, 14 jours avant la fin du cycle) et la phase lutéinique (le corps jaune se forme, atteint son maximum vers le 21e jour puis régresse en corps blanc). Les œstrogènes sont faibles au début du cycle, présentent un pic à la veille de l’ovulation puis un second sommet plus discret au milieu de la phase lutéinique ; la progestérone, produite par le corps jaune, débute à l’ovulation et atteint son maximum au milieu de la phase lutéinique. L’endomètre passe par la phase menstruelle (desquamation et saignement), la phase proliférative (sous l’effet de l’œstradiol) et la phase sécrétoire (épaississement jusqu’à 7-8 mm, glandes sinueuses à glycogène, artères spiralées : dentelle utérine). La glaire cervicale devient abondante, filante et à mailles larges sous l’effet des œstrogènes au moment de l’ovulation ; la progestérone la rend épaisse. La température reste un peu au-dessous de 37 °C en phase folliculaire et dépasse 37 °C en phase lutéale grâce à l’effet hyperthermisant de la progestérone.",
+   "points": [
+    "Cycle ovarien : folliculaire, ovulation (J14), lutéinique.",
+    "Œstrogènes : pic avant l’ovulation ; progestérone : phase lutéale.",
+    "Endomètre : menstruelle, proliférative, sécrétoire (dentelle).",
+    "Glaire filante à l’ovulation (œstrogènes).",
+    "Hyperthermie de la phase lutéale (progestérone)."
+   ],
+   "application": {
+    "q": "Une courbe de température montre une hausse au 16e jour. Que peut-on en déduire ?",
+    "a": "L’ovulation a eu lieu vers le 16e jour : la hausse est due à la progestérone du corps jaune."
+   },
+   "applications": [
+    {
+     "q": "Que devient le follicule après l’ovulation ?",
+     "a": "Il se transforme en corps jaune qui sécrète progestérone et œstrogènes."
+    },
+    {
+     "q": "Pourquoi les règles surviennent-elles en fin de cycle ?",
+     "a": "La régression du corps jaune fait chuter les hormones ovariennes et l’endomètre se désagrège."
+    }
+   ],
+   "board": [
+    {
+     "h": "Les cycles",
+     "lines": [],
+     "table": [
+      [
+       "Organe",
+       "Phase folliculaire",
+       "Phase lutéale"
+      ],
+      [
+       "Ovaire",
+       "croissance d’un follicule",
+       "corps jaune"
+      ],
+      [
+       "Hormones",
+       "œstrogènes ↑ (pic avant J14)",
+       "progestérone + œstrogènes"
+      ],
+      [
+       "Endomètre",
+       "prolifération",
+       "dentelle utérine (sécrétion)"
+      ],
+      [
+       "Glaire",
+       "abondante, filante à l’ovulation",
+       "épaisse, peu abondante"
+      ],
+      [
+       "Température",
+       "< 37 °C",
+       "> 37 °C"
+      ]
+     ]
+    },
+    {
+     "h": "Rôles des hormones ovariennes",
+     "lines": [
+      "Œstradiol : développe les caractères sexuels et l’endomètre, rend la glaire filante (hormone de la femme).",
+      "Progestérone : prépare le nid utérin, hyperthermie, inhibe le myomètre (hormone de la mère)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : Régulation hormonale du cycle de la femme",
+   "match": [
+    "Régulation hormonale du cycle de la femme"
+   ],
+   "pages": [
+    34,
+    39
+   ],
+   "objectives": [
+    "Décrire le complexe hypothalamo-hypophysaire.",
+    "Exploiter des expériences d’hypophysectomie, d’ovariectomie et d’injections d’œstradiol.",
+    "Expliquer les rétrocontrôles négatif et positif."
+   ],
+   "intro": "Qu’est-ce qui déclenche le pic de LH du 14e jour ?",
+   "summary": "L’hypothalamus sécrète la GnRH, libérée dans le système porte hypothalamo-hypophysaire ; l’antéhypophyse libère la FSH et la LH ; la posthypophyse libère l’ocytocine et l’ADH. L’hypophysectomie d’une ratte pubère atrophie les ovaires et l’utérus ; la greffe d’hypophyse ou des injections d’extraits les restaurent ; chez une ratte hypophysectomisée et ovariectomisée, les extraits hypophysaires n’agissent pas sur l’utérus : l’hypophyse agit sur l’utérus par l’intermédiaire des ovaires. La FSH stimule la croissance des follicules ; le pic de LH, accompagné d’une hausse de FSH, déclenche l’ovulation et la transformation du follicule en corps jaune. L’ovariectomie fait monter FSH et LH. De faibles doses d’œstradiol pendant longtemps les diminuent (rétrocontrôle négatif) ; une forte dose d’œstradiol en peu de temps provoque un pic de LH (rétrocontrôle positif) ; œstradiol et progestérone à fortes doses maintiennent LH et FSH à un taux faible. En phase lutéale, la progestérone ralentit les pulses de GnRH ; en fin de cycle, la chute des hormones ovariennes lève le freinage et un nouveau cycle commence. Les chocs émotionnels peuvent modifier ce fonctionnement.",
+   "points": [
+    "GnRH → FSH et LH → ovaire → utérus.",
+    "FSH : croissance folliculaire ; pic de LH : ovulation.",
+    "Œstradiol faible : rétrocontrôle négatif.",
+    "Œstradiol élevé (avant J14) : rétrocontrôle positif → pic de LH.",
+    "Progestérone : rétrocontrôle toujours négatif."
+   ],
+   "application": {
+    "q": "Pourquoi une ratte ovariectomisée a-t-elle des taux élevés de FSH et LH ?",
+    "a": "Il n’y a plus d’œstradiol ni de progestérone pour freiner le CHH."
+   },
+   "applications": [
+    {
+     "q": "Quelle partie de l’hypophyse libère FSH et LH ?",
+     "a": "L’antéhypophyse (adénohypophyse)."
+    },
+    {
+     "q": "Quel est le rôle de la progestérone sur le CHH ?",
+     "a": "Elle exerce toujours un rétrocontrôle négatif : elle ralentit les pulses de GnRH."
+    }
+   ],
+   "board": [
+    {
+     "h": "Synthèse des expériences",
+     "lines": [],
+     "table": [
+      [
+       "Expérience",
+       "Résultat",
+       "Interprétation"
+      ],
+      [
+       "Ablation de l’utérus",
+       "cycle ovarien normal",
+       "l’utérus ne contrôle pas l’ovaire"
+      ],
+      [
+       "Ablation des ovaires",
+       "arrêt du cycle utérin",
+       "l’ovaire contrôle l’utérus"
+      ],
+      [
+       "Greffe sous-cutanée d’un fragment d’utérus",
+       "il suit le cycle de l’utérus en place",
+       "contrôle à distance par voie sanguine"
+      ],
+      [
+       "Œstradiol à faible dose",
+       "FSH et LH ↓",
+       "rétrocontrôle négatif"
+      ],
+      [
+       "Forte dose d’œstradiol",
+       "pic de LH",
+       "rétrocontrôle positif"
+      ]
+     ]
+    },
+    {
+     "h": "Remarque",
+     "lines": [
+      "(Correction : dans le tableau de synthèse le manuel écrit « greffe d’un fragment de l’ovaire » ; pour que le fragment subisse les mêmes transformations que l’utérus en place, il s’agit d’un fragment d’utérus.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : La fécondation",
+   "match": [
+    "La fécondation"
+   ],
+   "pages": [
+    40,
+    45
+   ],
+   "objectives": [
+    "Situer la fécondation dans le temps et l’espace.",
+    "Décrire la reconnaissance des gamètes et la réaction acrosomique.",
+    "Expliquer le blocage de la polyspermie et la caryogamie."
+   ],
+   "intro": "Pourquoi un seul spermatozoïde sur des millions féconde-t-il l’ovocyte ?",
+   "summary": "La fécondation a lieu dans le tiers supérieur de la trompe (ampoule). Un rapport n’est fécondant que dans les 3 à 4 jours qui précèdent l’ovulation (durée de vie des spermatozoïdes) ou les 24 heures qui la suivent (durée de vie de l’ovocyte). Sur 200 à 300 millions de spermatozoïdes, la glaire n’en laisse passer que 1 à 2 % et les débarrasse du liquide séminal ; ils sont capacités dans les voies génitales femelles. La reconnaissance se fait entre des protéines du spermatozoïde et des récepteurs de la zone pellucide (glycoprotéine ZP3) ; elle déclenche la réaction acrosomique : l’acrosome libère ses enzymes (acrosine) grâce à l’entrée de Ca²⁺, et les membranes fusionnent. L’entrée du spermatozoïde dépolarise la membrane de l’ovocyte (entrée de Na⁺ et Ca²⁺), ce qui empêche d’autres fusions ; la réaction corticale (exocytose des granules corticaux) modifie la zone pellucide : la monospermie est assurée. L’ovocyte II est activé, achève sa méiose et expulse le 2e globule polaire. Les pronucléus mâle et femelle répliquent leur ADN, se rapprochent et fusionnent : c’est la caryogamie, qui donne une cellule-œuf diploïde (2n).",
+   "points": [
+    "Lieu : tiers supérieur de la trompe.",
+    "Reconnaissance ZP3 – spermatozoïde.",
+    "Réaction acrosomique (acrosine, Ca²⁺).",
+    "Dépolarisation + réaction corticale : monospermie.",
+    "Caryogamie : zygote 2n."
+   ],
+   "application": {
+    "q": "La quantité d’ADN double dans les pronucléus avant la caryogamie. Pourquoi ?",
+    "a": "Les chromosomes se répliquent pour que le zygote soit prêt à sa première mitose (2n chromosomes dupliqués)."
+   },
+   "applications": [
+    {
+     "q": "Combien de jours dure la période de fécondabilité dans un cycle de 28 jours ?",
+     "a": "Environ 5 jours."
+    },
+    {
+     "q": "Quel est le rôle de l’acrosine ?",
+     "a": "Hydrolyser la zone pellucide pour permettre au spermatozoïde de la traverser."
+    }
+   ],
+   "board": [
+    {
+     "h": "Étapes",
+     "lines": [
+      "1) Remontée et capacitation des spermatozoïdes.",
+      "2) Traversée de la corona radiata et fixation sur la zone pellucide (ZP3).",
+      "3) Réaction acrosomique et fusion des membranes.",
+      "4) Blocage de la polyspermie (dépolarisation, réaction corticale).",
+      "5) Fin de la méiose, 2e globule polaire.",
+      "6) Pronucléus, réplication, caryogamie → zygote."
+     ]
+    },
+    {
+     "h": "Quantité d’ADN",
+     "lines": [],
+     "table": [
+      [
+       "Étape",
+       "Contenu nucléaire"
+      ],
+      [
+       "Ovocyte II",
+       "n chromosomes dupliqués"
+      ],
+      [
+       "Entrée du spermatozoïde",
+       "+ n chromosomes simples"
+      ],
+      [
+       "Expulsion du GP II",
+       "– n chromosomes simples"
+      ],
+      [
+       "Zygote",
+       "2n simples puis 2n dupliqués"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : Gestation, parturition et lactation",
+   "match": [
+    "Gestation, parturition et lactation"
+   ],
+   "pages": [
+    45,
+    54
+   ],
+   "objectives": [
+    "Décrire le devenir de l’œuf jusqu’à la nidation.",
+    "Expliquer le rôle de l’HCG et du placenta.",
+    "Expliquer le déclenchement de l’accouchement et le contrôle de la lactation."
+   ],
+   "intro": "Pourquoi les règles ne reviennent-elles pas pendant la grossesse ?",
+   "summary": "Le zygote se segmente pendant sa descente dans la trompe : il atteint l’utérus vers le 4e jour au stade morula, devient blastocyste (trophoblaste, bouton embryonnaire, blastocœle) et s’implante dans l’endomètre vers le 7e jour : c’est la nidation. Le trophoblaste sécrète l’HCG, dont l’action ressemble à celle de la LH : elle maintient le corps jaune, qui continue à produire œstrogènes et progestérone ; le placenta prend le relais vers la 11e semaine. Ces hormones bloquent les cycles par rétrocontrôle négatif sur le CHH. Le placenta assure les échanges (10 à 14 m² de surface) entre les sangs maternel et fœtal, qui restent séparés ; il peut laisser passer certains microbes (rubéole, toxoplasme, VIH). Au terme, le fœtus mûr sécrète du cortisol, qui diminue la progestérone et augmente l’œstradiol : le myomètre reprend ses contractions ; l’ocytocine de la posthypophyse et les prostaglandines les amplifient (les contractions stimulent la sécrétion d’ocytocine). L’accouchement comprend la dilatation du col, la rupture de la poche des eaux, l’expulsion du fœtus puis la délivrance du placenta. Après la naissance, la prolactine de l’antéhypophyse déclenche la sécrétion de lait (colostrum les premiers jours) ; la succion du mamelon entretient la lactation par un réflexe neuro-hormonal qui lève l’inhibition hypothalamique de la prolactine, et l’ocytocine provoque l’éjection du lait.",
+   "points": [
+    "Morula (J4), blastocyste, nidation (J7).",
+    "HCG → maintien du corps jaune.",
+    "Placenta : échanges et hormones dès la 11e semaine.",
+    "Cortisol fœtal → ocytocine et prostaglandines → accouchement.",
+    "Prolactine : sécrétion ; succion : entretien ; ocytocine : éjection."
+   ],
+   "application": {
+    "q": "Pourquoi détecte-t-on la grossesse par la recherche d’HCG dans l’urine ?",
+    "a": "Parce que l’HCG est sécrétée uniquement par le trophoblaste de l’embryon dès la nidation."
+   },
+   "applications": [
+    {
+     "q": "Quelle hormone inhibe les contractions de l’utérus pendant la grossesse ?",
+     "a": "La progestérone."
+    },
+    {
+     "q": "Que se passe-t-il si les tétées sont supprimées ?",
+     "a": "La production de lait diminue, car la succion entretient la sécrétion de prolactine."
+    }
+   ],
+   "board": [
+    {
+     "h": "De l’œuf à l’embryon",
+     "lines": [],
+     "table": [
+      [
+       "Jour",
+       "Stade",
+       "Lieu"
+      ],
+      [
+       "0",
+       "zygote",
+       "tiers supérieur de la trompe"
+      ],
+      [
+       "≈ 4",
+       "morula",
+       "entrée de l’utérus"
+      ],
+      [
+       "5-6",
+       "blastocyste",
+       "cavité utérine"
+      ],
+      [
+       "≈ 7",
+       "nidation",
+       "endomètre"
+      ]
+     ]
+    },
+    {
+     "h": "Hormones de la gestation",
+     "lines": [
+      "HCG (trophoblaste) → corps jaune → œstrogènes + progestérone.",
+      "À partir de la 11e semaine : le placenta sécrète progestérone et œstrogènes."
+     ]
+    },
+    {
+     "h": "Lactation (expériences)",
+     "lines": [
+      "Hypophysectomie → chute du lait ; section de la tige pituitaire → lait surabondant ; un extrait d’hypothalamus réduit la synthèse de prolactine : l’hypothalamus freine la prolactine."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre I : Maîtrise de la procréation",
+   "match": [
+    "Maîtrise de la procréation"
+   ],
+   "pages": [
+    55,
+    60
+   ],
+   "objectives": [
+    "Distinguer méthodes contraceptives et contragestives.",
+    "Expliquer le mode d’action des pilules.",
+    "Décrire la FIVETE et le diagnostic prénatal."
+   ],
+   "intro": "Comment les connaissances sur les hormones permettent-elles d’aider les couples ?",
+   "summary": "La contraception empêche la conception ; la contragestion empêche la gestation. Les méthodes naturelles (méthode des températures) sont peu sûres. Le préservatif masculin assure la contraception et protège contre les IST, dont le SIDA ; le diaphragme, employé avec une crème spermicide, arrête les spermatozoïdes à l’entrée de l’utérus. La pilule combinée (œstrogène + progestatif) prise 21 jours exerce un rétrocontrôle négatif permanent sur le CHH : LH et FSH restent bas, aucun follicule ne mûrit et il n’y a pas de pic de LH, donc pas d’ovulation ; elle épaissit aussi la glaire et modifie l’endomètre. Les pilules minidosées agissent surtout sur la glaire et l’endomètre. L’implant libère en continu un progestatif. La mifépristone (RU486), anti-progestérone, se fixe sur les récepteurs de la progestérone sans les activer : l’endomètre n’est plus maintenu et l’embryon est éliminé ; elle s’emploie en milieu hospitalier avant 49 jours, avec des prostaglandines. Le stérilet empêche la nidation. Pour lutter contre la stérilité : l’insémination artificielle et la FIVETE (blocage du CHH par un analogue de la GnRH, FSH pour faire mûrir plusieurs follicules, LH ou HCG, ponction des ovocytes, fécondation in vitro, culture jusqu’à 2 à 4 cellules, transfert dans l’utérus). Le diagnostic prénatal utilise l’échographie (ultrasons, sans danger) et l’amniocentèse (liquide amniotique vers la 17e semaine, caryotype du fœtus).",
+   "points": [
+    "Contraception ≠ contragestion.",
+    "Pilule combinée : rétrocontrôle négatif → pas d’ovulation.",
+    "RU486 : anti-progestérone.",
+    "FIVETE : 6 étapes.",
+    "Échographie et amniocentèse."
+   ],
+   "application": {
+    "q": "Pourquoi les règles surviennent-elles pendant les 7 jours d’arrêt de la pilule ?",
+    "a": "L’arrêt de la prise fait chuter les hormones de synthèse : l’endomètre n’est plus maintenu et se désagrège."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi la FSH est-elle injectée pendant plusieurs jours lors d’une FIVETE ?",
+     "a": "Pour faire croître et mûrir plusieurs follicules à la fois."
+    },
+    {
+     "q": "Quel examen permet d’établir le caryotype du fœtus ?",
+     "a": "L’amniocentèse (cellules fœtales du liquide amniotique)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Méthodes",
+     "lines": [],
+     "table": [
+      [
+       "Méthode",
+       "Niveau d’action"
+      ],
+      [
+       "Pilule combinée",
+       "CHH (pas d’ovulation), glaire, endomètre"
+      ],
+      [
+       "Préservatif, diaphragme",
+       "empêchent la rencontre des gamètes"
+      ],
+      [
+       "Stérilet",
+       "empêche la nidation"
+      ],
+      [
+       "RU486 + prostaglandines",
+       "contragestion (élimination de l’embryon)"
+      ]
+     ]
+    },
+    {
+     "h": "Étapes de la FIVETE",
+     "lines": [
+      "1) Analogue de GnRH puis FSH, puis LH ou HCG.",
+      "2) Ponction des ovocytes.",
+      "3) Préparation et capacitation des spermatozoïdes.",
+      "4) Fécondation in vitro.",
+      "5) Culture jusqu’à 2-4 cellules.",
+      "6) Transfert des embryons dans l’utérus."
+     ]
+    },
+    {
+     "h": "Remarque",
+     "lines": [
+      "(Correction : le manuel écrit « le préservatif féminin ou diaphragme » ; ce sont deux moyens différents : le diaphragme est une coupelle placée devant le col de l’utérus, le préservatif féminin une gaine placée dans le vagin.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre II : La fleur et la formation des gamètes chez les Spermaphytes",
+   "match": [
+    "La fleur et la formation des gamètes chez les Spermaphytes"
+   ],
+   "pages": [
+    89,
+    97
+   ],
+   "objectives": [
+    "Décrire l’organisation d’une fleur.",
+    "Décrire l’anthère et la formation du grain de pollen.",
+    "Décrire l’ovule et la formation du sac embryonnaire."
+   ],
+   "intro": "Où se forment les gamètes d’une plante à fleurs ?",
+   "summary": "Les fleurs peuvent être monosexuées (mâles ou femelles, comme chez le palmier dattier) ou bisexuées. Une fleur complète comprend, insérés sur le réceptacle, de l’extérieur vers l’intérieur : le calice (sépales) et la corolle (pétales), qui forment le périanthe protecteur ; l’androcée, ensemble des étamines (filet + anthère où se forme le pollen) ; le gynécée ou pistil, ensemble des carpelles (stigmate, style, ovaire contenant les ovules). L’anthère jeune montre quatre sacs polliniques avec l’assise mécanique, les assises nourricières et les cellules-mères du pollen ; dans l’anthère mûre le pollen est formé et l’assise mécanique est prête à s’ouvrir (déhiscence). Microsporogenèse : chaque cellule-mère (2n) subit une méiose et donne une tétrade de quatre microspores (n) ; chaque microspore subit une mitose et donne le grain de pollen, gamétophyte mâle, formé d’une cellule végétative et d’une cellule reproductrice qui se divisera en deux gamètes mâles ; il est entouré de l’intine et de l’exine percée de pores. L’ovule (funicule, hile, chalaze, deux téguments, micropyle, nucelle) peut être droit, recourbé ou renversé (le plus répandu). Macrosporogenèse : la cellule-mère du sac embryonnaire subit une méiose ; trois macrospores dégénèrent ; la macrospore restante subit trois mitoses (8 noyaux) et donne le sac embryonnaire à 7 cellules (oosphère et deux synergides au micropyle, trois antipodes, cellule centrale à deux noyaux polaires) : c’est le gamétophyte femelle.",
+   "points": [
+    "Fleur : calice, corolle, androcée, gynécée.",
+    "Étamine = filet + anthère ; carpelle = stigmate + style + ovaire.",
+    "Pollen : méiose puis mitose (gamétophyte mâle).",
+    "Sac embryonnaire : méiose puis 3 mitoses (8 noyaux, 7 cellules).",
+    "Oosphère = gamète femelle."
+   ],
+   "application": {
+    "q": "Combien de grains de pollen donne une cellule-mère du pollen ?",
+    "a": "Quatre : la méiose donne une tétrade de quatre microspores, chacune devenant un grain de pollen."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce qu’une plante dioïque ?",
+     "a": "Une plante dont les fleurs mâles et les fleurs femelles sont portées par des pieds différents (palmier dattier)."
+    },
+    {
+     "q": "Quel type d’ovule est le plus répandu ?",
+     "a": "L’ovule renversé (anatrope), avec un raphé."
+    }
+   ],
+   "board": [
+    {
+     "h": "Organisation de la fleur",
+     "lines": [],
+     "table": [
+      [
+       "Verticille",
+       "Pièces",
+       "Rôle"
+      ],
+      [
+       "Calice",
+       "sépales",
+       "protection"
+      ],
+      [
+       "Corolle",
+       "pétales",
+       "protection, attraction"
+      ],
+      [
+       "Androcée",
+       "étamines (filet, anthère)",
+       "pollen"
+      ],
+      [
+       "Gynécée (pistil)",
+       "carpelles (stigmate, style, ovaire)",
+       "ovules"
+      ]
+     ]
+    },
+    {
+     "h": "Formation des gamétophytes",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Mâle",
+       "Femelle"
+      ],
+      [
+       "Lieu",
+       "sac pollinique",
+       "nucelle de l’ovule"
+      ],
+      [
+       "Méiose",
+       "4 microspores fertiles",
+       "1 macrospore fertile sur 4"
+      ],
+      [
+       "Mitoses",
+       "1 (+1 pour les gamètes)",
+       "3"
+      ],
+      [
+       "Gamétophyte",
+       "grain de pollen",
+       "sac embryonnaire"
+      ]
+     ]
+    },
+    {
+     "h": "Remarque",
+     "lines": [
+      "(Correction : le manuel écrit « le carpelle est formé de trois parties : le style, l’ovaire, l’ovule et le stigmate » ; les trois parties sont le stigmate, le style et l’ovaire, qui contient les ovules.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre II : Pollinisation, double fécondation et formation de la graine",
+   "match": [
+    "Pollinisation, double fécondation et formation de la graine"
+   ],
+   "pages": [
+    98,
+    102
+   ],
+   "objectives": [
+    "Distinguer autopollinisation et pollinisation croisée.",
+    "Décrire la germination du pollen et la croissance du tube pollinique.",
+    "Expliquer la double fécondation et la formation de la graine et du fruit."
+   ],
+   "intro": "Pourquoi parle-t-on de « double » fécondation chez les plantes à fleurs ?",
+   "summary": "La pollinisation est le transport du pollen d’une anthère jusqu’au stigmate. Elle est directe (autogamie) sur la même fleur hermaphrodite, ou croisée (allogamie) quand le pollen vient d’une autre fleur, obligatoire pour les fleurs unisexuées (plante monoïque ou dioïque) ; le vent et les insectes transportent le pollen. Sur le stigmate, le grain de pollen se réhydrate et germe : l’intine sort par un pore et forme le tube pollinique, dirigé par le noyau végétatif, qui progresse dans le style jusqu’au micropyle de l’ovule. Le tube pénètre entre l’oosphère et une synergide et libère deux gamètes mâles. L’un féconde l’oosphère et donne l’œuf principal (2n), à l’origine de l’embryon ; l’autre s’unit aux deux noyaux polaires et donne l’œuf accessoire triploïde (3n), à l’origine de l’albumen, tissu de réserves. Les synergides et les antipodes dégénèrent. L’ovule devient la graine (embryon avec radicule, tigelle, gemmule et un ou deux cotylédons ; albumen ; téguments durcis) et la paroi de l’ovaire devient le fruit ; sépales, pétales et étamines se fanent.",
+   "points": [
+    "Autogamie et allogamie.",
+    "Tube pollinique jusqu’au micropyle.",
+    "Gamète 1 + oosphère → œuf principal 2n → embryon.",
+    "Gamète 2 + 2 noyaux polaires → œuf accessoire 3n → albumen.",
+    "Ovule → graine ; ovaire → fruit."
+   ],
+   "application": {
+    "q": "Un noyau polaire possède 10 chromosomes. Combien en possède l’albumen ?",
+    "a": "3n = 30 chromosomes (2 noyaux polaires n + 1 gamète mâle n)."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi la pollinisation est-elle obligatoirement croisée chez le palmier dattier ?",
+     "a": "Parce que ses fleurs sont unisexuées et portées par des pieds différents."
+    },
+    {
+     "q": "Quel est le rôle du noyau végétatif ?",
+     "a": "Il dirige la croissance du tube pollinique."
+    }
+   ],
+   "board": [
+    {
+     "h": "Double fécondation",
+     "lines": [],
+     "table": [
+      [
+       "Union",
+       "Produit",
+       "Devenir"
+      ],
+      [
+       "gamète mâle + oosphère (n + n)",
+       "œuf principal (2n)",
+       "embryon"
+      ],
+      [
+       "gamète mâle + 2 noyaux polaires (n + 2n)",
+       "œuf accessoire (3n)",
+       "albumen"
+      ]
+     ]
+    },
+    {
+     "h": "Transformations après fécondation",
+     "lines": [
+      "Ovule → graine ; téguments → enveloppes de la graine.",
+      "Paroi de l’ovaire → fruit.",
+      "Synergides, antipodes, noyau végétatif → dégénèrent."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre II : Germination de la graine et cycle de développement",
+   "match": [
+    "Germination de la graine et cycle de développement"
+   ],
+   "pages": [
+    103,
+    107
+   ],
+   "objectives": [
+    "Déterminer expérimentalement les conditions de la germination.",
+    "Décrire les étapes de la germination épigée et hypogée.",
+    "Décrire le cycle de développement et le cycle chromosomique d’une angiosperme."
+   ],
+   "intro": "De quoi une graine a-t-elle besoin pour germer ?",
+   "summary": "On fait germer des graines (haricot, maïs, lentille) en ne faisant varier qu’un facteur : seules les graines arrosées germent ; à humidité convenable, seules celles placées à environ 20 °C germent ; elles germent aussi à l’obscurité. Il faut donc de l’eau, une température convenable et de l’oxygène, et un état physiologique favorable (levée de la dormance, parfois par le froid). Une graine de pois placée sur du coton humide augmente de masse en deux phases : l’imbibition, rapide et réversible, puis, après la sortie de la radicule, la croissance, irréversible. La germination est la reprise du développement de l’embryon aux dépens des réserves : la graine passe de la vie ralentie à la vie active ; la plantule devient autonome quand ses racines absorbent l’eau et les ions et que ses feuilles font la photosynthèse. La germination est épigée si les cotylédons sortent du sol (l’hypocotyle s’allonge, haricot) et hypogée s’ils restent dans le sol (hypocotyle court). Le cycle de développement fait alterner le sporophyte (2n), plante feuillée qui porte les fleurs, et les gamétophytes (n), grain de pollen et sac embryonnaire, très réduits. La méiose a lieu dans les sacs polliniques et les ovules, la fécondation rétablit la diploïdie : le cycle est haplo-diplophasique, à diplophase dominante.",
+   "points": [
+    "Conditions : eau, température, oxygène, levée de dormance.",
+    "Imbibition réversible, croissance irréversible.",
+    "Germination épigée / hypogée.",
+    "Sporophyte 2n dominant ; gamétophytes n réduits.",
+    "Cycle haplo-diplophasique."
+   ],
+   "application": {
+    "q": "Dans une expérience, des graines placées à 20 °C sur du coton sec ne germent pas. Quel facteur manque ?",
+    "a": "L’eau : sans humidité, l’imbibition et la reprise de la vie active sont impossibles."
+   },
+   "applications": [
+    {
+     "q": "Quelle différence entre germination épigée et hypogée ?",
+     "a": "Épigée : les cotylédons sortent du sol ; hypogée : ils restent dans le sol."
+    },
+    {
+     "q": "Quel est le gamétophyte femelle d’une angiosperme ?",
+     "a": "Le sac embryonnaire."
+    }
+   ],
+   "board": [
+    {
+     "h": "Expériences",
+     "lines": [],
+     "table": [
+      [
+       "Condition",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Sans arrosage",
+       "pas de germination",
+       "l’eau est nécessaire"
+      ],
+      [
+       "Froid (coton humide)",
+       "pas de germination",
+       "température convenable nécessaire"
+      ],
+      [
+       "Obscurité",
+       "germination",
+       "la lumière n’est pas indispensable"
+      ]
+     ]
+    },
+    {
+     "h": "Cycle chromosomique",
+     "lines": [
+      "Sporophyte (2n) → méiose → microspores et macrospore (n) → grain de pollen et sac embryonnaire (n) → double fécondation → œuf (2n) → graine → nouveau sporophyte."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Notions de base et monohybridisme avec dominance",
+   "match": [
+    "Notions de base et monohybridisme avec dominance"
+   ],
+   "pages": [
+    125,
+    130
+   ],
+   "objectives": [
+    "Définir gène, allèle, locus, génotype, phénotype, homozygote, hétérozygote.",
+    "Interpréter un croisement mendélien avec échiquier.",
+    "Utiliser le test-cross pour connaître un génotype."
+   ],
+   "intro": "Comment un caractère caché en F1 réapparaît-il en F2 ?",
+   "summary": "Un gène est un fragment d’ADN qui détermine un caractère ; un allèle est l’une de ses versions ; il occupe un locus sur le chromosome. Le génotype est la combinaison des allèles ; le phénotype est l’ensemble des caractères observables. Un allèle dominant s’exprime à l’état homozygote ou hétérozygote ; un allèle récessif seulement à l’état homozygote ; deux allèles codominants s’expriment ensemble. Mendel a travaillé sur des lignées pures de pois et a réalisé des fécondations croisées. Chez la souris, le croisement de deux lignées pures (grise × blanche) donne une F1 uniforme grise (1re loi : uniformité des hybrides de F1) ; la F2 compte 198 grises et 72 blanches sur 270, soit environ 3/4 et 1/4 : le gris (G) domine le blanc (b). Les allèles se séparent lors de la formation des gamètes (loi de la pureté des gamètes ou de la disjonction) : chaque gamète ne reçoit qu’un allèle. Le test-cross croise l’individu de phénotype dominant avec un homozygote récessif : 100 % dominants s’il est homozygote, 50 % / 50 % s’il est hétérozygote.",
+   "points": [
+    "Gène, allèle, locus, génotype, phénotype.",
+    "1re loi : uniformité des hybrides de F1.",
+    "2e loi : pureté des gamètes (disjonction des allèles).",
+    "F2 : 3/4 dominants, 1/4 récessifs.",
+    "Test-cross : avec l’homozygote récessif."
+   ],
+   "application": {
+    "q": "Une souris grise croisée avec une blanche donne 50 % grises et 50 % blanches. Génotype de la grise ?",
+    "a": "Hétérozygote G//b : elle produit deux types de gamètes G et b en proportions égales."
+   },
+   "applications": [
+    {
+     "q": "Qu’appelle-t-on lignée pure ?",
+     "a": "Des individus homozygotes qui gardent les mêmes caractères génération après génération."
+    },
+    {
+     "q": "Pourquoi le testeur doit-il être homozygote récessif ?",
+     "a": "Il ne fournit qu’un seul type de gamète récessif, qui laisse s’exprimer l’allèle venant de l’individu testé."
+    }
+   ],
+   "board": [
+    {
+     "h": "Croisement F1 × F1 (souris)",
+     "lines": [],
+     "table": [
+      [
+       "Gamètes",
+       "1/2 G",
+       "1/2 b"
+      ],
+      [
+       "1/2 G",
+       "G//G [G] 1/4",
+       "G//b [G] 1/4"
+      ],
+      [
+       "1/2 b",
+       "G//b [G] 1/4",
+       "b//b [b] 1/4"
+      ]
+     ]
+    },
+    {
+     "h": "Vérification",
+     "lines": [
+      "198/270 ≈ 3/4 et 72/270 ≈ 1/4 : résultats conformes à l’hypothèse."
+     ]
+    },
+    {
+     "h": "Test-cross",
+     "lines": [],
+     "table": [
+      [
+       "Individu testé",
+       "Descendance"
+      ],
+      [
+       "G//G × b//b",
+       "100 % [G]"
+      ],
+      [
+       "G//b × b//b",
+       "50 % [G], 50 % [b]"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Monohybridisme — codominance, gène létal, polyallélie et cas particuliers",
+   "match": [
+    "Monohybridisme — codominance, gène létal, polyallélie et cas particuliers"
+   ],
+   "pages": [
+    131,
+    136
+   ],
+   "objectives": [
+    "Interpréter la codominance (1/4, 1/2, 1/4).",
+    "Reconnaître un gène létal (2/3, 1/3).",
+    "Interpréter la polyallélie, le cas des abeilles et un gène influencé par le sexe."
+   ],
+   "intro": "Pourquoi ne peut-on jamais obtenir une lignée pure de souris jaunes ?",
+   "summary": "Chez le muflier, rouge × blanc donne une F1 100 % rose ; la F2 donne 88 rouges, 182 roses et 90 blanches, soit 1/4, 1/2, 1/4 : les allèles sont codominants et l’hétérozygote a un phénotype intermédiaire. Chez la souris, jaune × jaune donne 2/3 de jaunes et 1/3 de noires au lieu de 3/4 et 1/4 : l’allèle J du jaune est dominant pour la couleur mais létal à l’état homozygote ; les souris jaunes sont toutes J//n. Un allèle létal ne tue que l’homozygote ; il peut être dominant ou récessif pour le phénotype. La polyallélie existe quand un gène a plus de deux allèles, comme chez le lapin (chinchilla, himalayan, albinos), mais chaque individu n’en porte que deux. Chez les abeilles, les ovules non fécondés donnent des mâles haploïdes (parthénogenèse) et les ovules fécondés des femelles diploïdes. Chez les ovins, le gène des cornes est dominant chez le mâle et récessif chez la femelle : c’est un gène influencé par le sexe, porté par un autosome.",
+   "points": [
+    "Codominance : F2 1/4, 1/2, 1/4.",
+    "Gène létal : 2/3, 1/3.",
+    "Polyallélie : plus de 2 allèles dans la population.",
+    "Abeilles : mâles haploïdes par parthénogenèse.",
+    "Gène influencé par le sexe : autosomal, expression selon le sexe."
+   ],
+   "application": {
+    "q": "Un couple de chiens à queue courte donne 3 chiots sans queue, 6 à queue courte et 2 à queue longue. Interpréter.",
+    "a": "Proportions proches de 1/4, 1/2, 1/4 : codominance ; les parents à queue courte sont hétérozygotes S//L."
+   },
+   "applications": [
+    {
+     "q": "Quel rapport suggère un gène létal ?",
+     "a": "2/3 – 1/3 au lieu de 3/4 – 1/4."
+    },
+    {
+     "q": "Pourquoi un mâle d’abeille transmet-il tous ses allèles à ses filles ?",
+     "a": "Il est haploïde : ses gamètes sont identiques et portent tous ses allèles."
+    }
+   ],
+   "board": [
+    {
+     "h": "Muflier : codominance",
+     "lines": [],
+     "table": [
+      [
+       "Gamètes",
+       "1/2 R",
+       "1/2 B"
+      ],
+      [
+       "1/2 R",
+       "R//R rouge",
+       "R//B rose"
+      ],
+      [
+       "1/2 B",
+       "R//B rose",
+       "B//B blanc"
+      ]
+     ]
+    },
+    {
+     "h": "Souris jaunes : gène létal",
+     "lines": [
+      "J//n × J//n → 1/4 J//J (meurent), 1/2 J//n [jaune], 1/4 n//n [noir] → 2/3 jaunes, 1/3 noires."
+     ]
+    },
+    {
+     "h": "Cas particuliers",
+     "lines": [],
+     "table": [
+      [
+       "Cas",
+       "Caractéristique"
+      ],
+      [
+       "Polyallélie (lapin)",
+       "C > ch > c (chinchilla, himalayan, albinos)"
+      ],
+      [
+       "Abeilles",
+       "♂ haploïdes, ♀ diploïdes"
+      ],
+      [
+       "Cornes des ovins",
+       "dominant chez le mâle, récessif chez la femelle"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Hérédité liée au sexe (gènes portés par X ou par Z)",
+   "match": [
+    "Hérédité liée au sexe (gènes portés par X ou par Z)"
+   ],
+   "pages": [
+    137,
+    140
+   ],
+   "objectives": [
+    "Reconnaître une hérédité liée au sexe par les croisements réciproques.",
+    "Écrire les génotypes avec X et Y, ou Z et W.",
+    "Interpréter les croisements chez la drosophile et le pigeon."
+   ],
+   "intro": "Pourquoi deux croisements réciproques donnent-ils des résultats différents ?",
+   "summary": "Chez les Mammifères et la drosophile, la femelle XX est homogamétique et le mâle XY hétérogamétique. Chez la drosophile, un croisement femelle aux yeux rouges × mâle aux yeux blancs donne une F1 toute rouge, mais le croisement réciproque donne des mâles aux yeux blancs (comme leur mère) et des femelles aux yeux rouges (comme leur père) : les résultats différents des croisements réciproques indiquent une hérédité liée au sexe, et le gène est porté par le segment propre du chromosome X. Le mâle ne possède qu’un seul allèle et exprime toujours celui de son X, reçu de sa mère. Chez les oiseaux et les papillons, c’est l’inverse : le mâle est homogamétique (ZZ) et la femelle hétérogamétique (ZW). Chez le pigeon, mâle bleu × femelle brune donne 100 % de bleus, mais mâle brun × femelle bleue donne des mâles bleus et des femelles brunes : le bleu (B) domine le brun (b) et le gène est porté par Z.",
+   "points": [
+    "Croisements réciproques différents → gène lié au sexe.",
+    "Mammifères, drosophile : ♀ XX, ♂ XY.",
+    "Oiseaux, papillons : ♂ ZZ, ♀ ZW.",
+    "Le sexe hétérogamétique a un seul allèle.",
+    "Le fils reçoit son X de sa mère."
+   ],
+   "application": {
+    "q": "Pigeon : mâle Zb//Zb × femelle ZB//W. Descendance ?",
+    "a": "Mâles ZB//Zb bleus ; femelles Zb//W brunes : 50 % de mâles bleus, 50 % de femelles brunes."
+   },
+   "applications": [
+    {
+     "q": "Quel sexe est hétérogamétique chez les oiseaux ?",
+     "a": "La femelle (ZW)."
+    },
+    {
+     "q": "Pourquoi un gène porté par X s’exprime-t-il plus souvent chez les mâles de drosophile ?",
+     "a": "Le mâle n’a qu’un X : un seul allèle récessif suffit pour s’exprimer."
+    }
+   ],
+   "board": [
+    {
+     "h": "Drosophile (gène porté par X)",
+     "lines": [],
+     "table": [
+      [
+       "Croisement",
+       "F1"
+      ],
+      [
+       "♀ X^R//X^R × ♂ X^b//Y",
+       "♀ X^R//X^b [R], ♂ X^R//Y [R]"
+      ],
+      [
+       "♀ X^b//X^b × ♂ X^R//Y",
+       "♀ X^R//X^b [R], ♂ X^b//Y [b]"
+      ]
+     ]
+    },
+    {
+     "h": "Pigeon (gène porté par Z)",
+     "lines": [
+      "Croisement 1 : ♂ ZB//ZB × ♀ Zb//W → 100 % [B].",
+      "Croisement 2 : ♂ Zb//Zb × ♀ ZB//W → ♂ [B], ♀ [b].",
+      "(Correction : pour la femelle du croisement 1, le manuel écrit « gamètes Zb et Y » ; il faut lire « Zb et W ».)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Dihybridisme — gènes indépendants",
+   "match": [
+    "Dihybridisme — gènes indépendants"
+   ],
+   "pages": [
+    141,
+    146
+   ],
+   "objectives": [
+    "Interpréter une F2 9/16, 3/16, 3/16, 1/16.",
+    "Interpréter un test-cross dihybride 1/4 × 4.",
+    "Énoncer la loi de la ségrégation indépendante des caractères."
+   ],
+   "intro": "Comment apparaissent des phénotypes que n’avaient ni les parents ni la F1 ?",
+   "summary": "Mendel croise des pois lisses et jaunes avec des pois ridés et verts (lignées pures) : la F1 est toute lisse et jaune ; la F2 donne 9/16 lisses-jaunes, 3/16 lisses-verts, 3/16 ridés-jaunes et 1/16 ridés-verts. Pour chaque caractère pris seul on retrouve 3/4 – 1/4 : les deux couples d’allèles se séparent indépendamment, car ils sont portés par deux paires de chromosomes différentes. L’hybride F1 produit quatre types de gamètes équiprobables (1/4 chacun) et deux phénotypes recombinés apparaissent. Chez la souris (gris uniforme × noir panaché), la F2 donne 559, 187, 188 et 63 souris sur 997, proches de 9/16, 3/16, 3/16, 1/16 ; le test-cross F1 × double récessif donne 142, 144, 143 et 139 sur 568, soit 1/4 de chaque phénotype. Si l’un des gènes est codominant (lapin : gris × blanc donne tacheté, long domine court), la F2 compte 6 phénotypes : 6/16, 3/16, 3/16, 2/16, 1/16, 1/16.",
+   "points": [
+    "Gènes indépendants : sur deux paires de chromosomes.",
+    "F1 → 4 gamètes à 1/4.",
+    "F2 : 9/16, 3/16, 3/16, 1/16.",
+    "Test-cross : 4 phénotypes à 1/4.",
+    "Avec codominance : 6 phénotypes."
+   ],
+   "application": {
+    "q": "Vérifier les résultats de la F2 des souris : 559 + 187 + 188 + 63.",
+    "a": "Total 997 ; 559/997 ≈ 0,56 ≈ 9/16 ; 187/997 ≈ 188/997 ≈ 0,19 ≈ 3/16 ; 63/997 ≈ 0,06 ≈ 1/16 : gènes indépendants."
+   },
+   "applications": [
+    {
+     "q": "Combien de génotypes différents en F2 avec deux gènes indépendants à dominance ?",
+     "a": "9 génotypes (3 × 3) pour 4 phénotypes."
+    },
+    {
+     "q": "Pour obtenir 25 % de chaque phénotype, quel croisement faut-il réaliser ?",
+     "a": "Un test-cross : la F1 dihybride × le double homozygote récessif."
+    }
+   ],
+   "board": [
+    {
+     "h": "Gamètes de la F1 (L//r ; J//v)",
+     "lines": [
+      "L J, L v, r J, r v : 1/4 chacun (brassage interchromosomique)."
+     ]
+    },
+    {
+     "h": "Résultats",
+     "lines": [],
+     "table": [
+      [
+       "Croisement",
+       "Proportions"
+      ],
+      [
+       "F1 × F1",
+       "9/16 [LJ], 3/16 [Lv], 3/16 [rJ], 1/16 [rv]"
+      ],
+      [
+       "F1 × double récessif",
+       "1/4 de chacun des 4 phénotypes"
+      ],
+      [
+       "Lapin (codominance + dominance)",
+       "6/16, 3/16, 3/16, 2/16, 1/16, 1/16"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Gènes liés, crossing-over et carte factorielle",
+   "match": [
+    "Gènes liés, crossing-over et carte factorielle"
+   ],
+   "pages": [
+    146,
+    158
+   ],
+   "objectives": [
+    "Reconnaître la liaison absolue et la liaison partielle.",
+    "Calculer un pourcentage de recombinaison.",
+    "Établir une distance en centimorgans et une carte factorielle."
+   ],
+   "intro": "Pourquoi un test-cross donne-t-il 41,5 % – 41,5 % – 8,5 % – 8,5 % au lieu de 4 × 25 % ?",
+   "summary": "Chez la drosophile, le croisement gris-ailes longues × noir-ailes vestigiales donne une F1 grise à ailes longues ; le test-cross mâle F1 × femelle double récessive ne donne que deux phénotypes parentaux à 50 % : les gènes sont portés par le même chromosome et la liaison est absolue (chez le mâle de drosophile il n’y a jamais de crossing-over). Le test-cross femelle F1 × mâle double récessif donne 41,5 % et 41,5 % de phénotypes parentaux et 8,5 % et 8,5 % de phénotypes recombinés : la liaison est partielle ; lors de la méiose de la femelle, un crossing-over (enjambement) entre chromatides homologues produit des gamètes recombinés. On parle de liaison CIS si les allèles dominants sont sur le même chromosome et TRANS sinon. Le pourcentage de recombinaison P = (effectifs recombinés / effectif total) × 100 mesure la distance entre les gènes : 1 % de recombinaison = 1 centimorgan (cM). Pour les gènes du corps et des soies (n, e), P = 15 % : distance de 15 cM. Les distances entre plusieurs gènes permettent de dessiner une carte factorielle (génétique).",
+   "points": [
+    "Liaison absolue : 2 phénotypes à 50 %.",
+    "Liaison partielle : parentaux > recombinés.",
+    "Crossing-over pendant la prophase I.",
+    "P = recombinés / total × 100.",
+    "1 % = 1 cM ; carte factorielle."
+   ],
+   "application": {
+    "q": "Test-cross : 42,5 % [n+e+], 42,5 % [ne], 7,5 % [n+e], 7,5 % [ne+]. Distance entre les gènes ?",
+    "a": "P = 7,5 + 7,5 = 15 % : distance de 15 cM."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi le test-cross se fait-il avec une femelle F1 pour étudier le crossing-over chez la drosophile ?",
+     "a": "Parce que le mâle de drosophile ne fait jamais de crossing-over."
+    },
+    {
+     "q": "Trois gènes A, B, C : A–B = 10 cM, B–C = 4 cM, A–C = 14 cM. Ordre ?",
+     "a": "A – B – C, car A–C = A–B + B–C."
+    }
+   ],
+   "board": [
+    {
+     "h": "Comparer les test-cross",
+     "lines": [],
+     "table": [
+      [
+       "Situation",
+       "Gamètes de l’hybride",
+       "Descendance"
+      ],
+      [
+       "Gènes indépendants",
+       "4 types à 1/4",
+       "4 × 25 %"
+      ],
+      [
+       "Liaison absolue",
+       "2 types parentaux à 1/2",
+       "2 × 50 %"
+      ],
+      [
+       "Liaison partielle",
+       "2 parentaux (1–P)/2, 2 recombinés P/2",
+       "parentaux majoritaires"
+      ]
+     ]
+    },
+    {
+     "h": "Calcul",
+     "lines": [
+      "P = (somme des recombinés / somme totale) × 100 ; distance (cM) = P.",
+      "Exemple drosophile ailes-corps : 8,5 + 8,5 = 17 % → 17 cM."
+     ]
+    },
+    {
+     "h": "Maïs (liaison absolue TRANS)",
+     "lines": [
+      "F2 : [Pc] 150, [PN] 317, [dN] 160 sur 627 ≈ 1/4, 1/2, 1/4."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Génétique humaine",
+   "match": [
+    "Génétique humaine"
+   ],
+   "pages": [
+    159,
+    167
+   ],
+   "objectives": [
+    "Citer les difficultés de l’étude de l’hérédité humaine et ses outils.",
+    "Analyser un arbre généalogique.",
+    "Déterminer un mode de transmission autosomique ou lié à X ; étudier le système ABO et le rhésus."
+   ],
+   "intro": "Comment savoir si une maladie héréditaire est dominante ou récessive, autosomique ou liée à X ?",
+   "summary": "L’étude de l’hérédité humaine est difficile : 2n = 46, croisements impossibles à imposer, génération longue et peu de descendants. On utilise l’arbre généalogique (pedigree), les statistiques sur plusieurs familles, le caryotype et l’électrophorèse. Une maladie est récessive si deux parents sains ont un enfant atteint (saut de génération) : c’est le cas de l’albinisme et de la mucoviscidose ; si une fille est atteinte alors que son père est sain, le gène n’est pas lié à X : il est autosomique (mucoviscidose : chromosome 7 ; aussi phénylcétonurie, drépanocytose). Une maladie est dominante si tout sujet atteint a au moins un parent atteint, sans saut de génération (chorée de Huntington, héméralopie congénitale, polydactylie). Une maladie récessive liée à X touche surtout les garçons, nés de mères conductrices (myopathie de Duchenne, protéine dystrophine ; hémophilie, daltonisme). Le système ABO est un cas de polyallélie avec codominance : A et B codominants, dominants sur O ; le sérum contient naturellement les agglutinines contre les antigènes absents des hématies. Le rhésus : Rh+ domine Rh– ; combiné à ABO, il donne 8 groupes.",
+   "points": [
+    "Pedigree : outil principal.",
+    "Récessif : parents sains, enfant atteint.",
+    "Dominant : pas de saut de génération.",
+    "Lié à X récessif : surtout des garçons, mères conductrices.",
+    "ABO : A = B > O ; Rh+ > Rh–."
+   ],
+   "application": {
+    "q": "Deux parents A//O et B//O. Groupes possibles des enfants ?",
+    "a": "AB (A//B), A (A//O), B (B//O) et O (O//O), chacun avec une probabilité de 1/4."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi un fils hémophile ne tient-il jamais l’allèle de son père ?",
+     "a": "Il reçoit de son père le chromosome Y ; son X vient de sa mère."
+    },
+    {
+     "q": "Quelle est la probabilité qu’un couple de conducteurs de la mucoviscidose ait un enfant malade ?",
+     "a": "1/4 (enfant m//m)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Lire un pedigree",
+     "lines": [],
+     "table": [
+      [
+       "Observation",
+       "Conclusion"
+      ],
+      [
+       "Parents sains, enfant atteint",
+       "allèle récessif"
+      ],
+      [
+       "Tout atteint a un parent atteint",
+       "allèle dominant"
+      ],
+      [
+       "Fille atteinte, père sain (récessif)",
+       "pas lié à X → autosomique"
+      ],
+      [
+       "Garçons atteints seulement, pères sains",
+       "lié à X probable"
+      ],
+      [
+       "Les deux sexes atteints",
+       "pas lié à Y"
+      ]
+     ]
+    },
+    {
+     "h": "Groupes sanguins ABO",
+     "lines": [],
+     "table": [
+      [
+       "Groupe",
+       "Génotypes",
+       "Agglutinines du sérum"
+      ],
+      [
+       "A",
+       "A//A, A//O",
+       "anti-B"
+      ],
+      [
+       "B",
+       "B//B, B//O",
+       "anti-A"
+      ],
+      [
+       "AB",
+       "A//B",
+       "aucune"
+      ],
+      [
+       "O",
+       "O//O",
+       "anti-A et anti-B"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre III : Anomalies chromosomiques",
+   "match": [
+    "Anomalies chromosomiques"
+   ],
+   "pages": [
+    167,
+    174
+   ],
+   "objectives": [
+    "Distinguer anomalies de nombre et de structure.",
+    "Expliquer la trisomie 21 et les syndromes de Turner et de Klinefelter par une non-disjonction.",
+    "Décrire délétion et translocation."
+   ],
+   "intro": "Comment un enfant peut-il avoir 47 chromosomes ?",
+   "summary": "Une anomalie chromosomique touche soit le nombre de chromosomes du caryotype (monosomie, trisomie), soit la structure d’un chromosome. La trisomie 21 : le caryotype présente trois chromosomes 21 (47 chromosomes) ; elle résulte de la non-disjonction des chromosomes 21 lors de la méiose chez l’un des parents, qui produit un gamète à n + 1 = 24 chromosomes. Les trisomies 13 et 18 entraînent rapidement la mort de l’enfant ; la plupart des trisomies conduisent à des avortements spontanés. Le syndrome de Turner (44 autosomes + X, 45 chromosomes) touche des femmes de petite taille, stériles, aux caractères sexuels secondaires peu développés. Le syndrome de Klinefelter (44 autosomes + XXY, 47 chromosomes) touche des hommes stériles, présentant parfois un développement des seins. Les anomalies de structure : la délétion est la perte d’un fragment (ex. chromosome 5 : syndrome du cri du chat) et entraîne la perte de gènes ; la translocation est le déplacement d’un fragment sur un autre chromosome (ex. 21 sur 14) ; elle est équilibrée si rien n’est perdu ni gagné, et le porteur est alors sain.",
+   "points": [
+    "Anomalie de nombre : monosomie, trisomie.",
+    "Trisomie 21 : non-disjonction méiotique.",
+    "Turner : 45, X ; Klinefelter : 47, XXY.",
+    "Délétion : perte de gènes.",
+    "Translocation équilibrée : porteur sain."
+   ],
+   "application": {
+    "q": "Écrire la formule chromosomique d’un garçon trisomique 21 et des gamètes possibles à son origine.",
+    "a": "2n + 1 = 45 autosomes + XY ; gamètes : (23 autosomes + Y) × (22 autosomes + X) ou (22 autosomes + Y) × (23 autosomes + X)."
+   },
+   "applications": [
+    {
+     "q": "Quel examen permet de diagnostiquer une trisomie avant la naissance ?",
+     "a": "Le caryotype des cellules fœtales obtenues par amniocentèse."
+    },
+    {
+     "q": "Pourquoi un porteur d’une translocation équilibrée est-il sain ?",
+     "a": "Il n’a ni perdu ni gagné de matériel génétique."
+    }
+   ],
+   "board": [
+    {
+     "h": "Anomalies de nombre",
+     "lines": [],
+     "table": [
+      [
+       "Anomalie",
+       "Formule",
+       "Sexe"
+      ],
+      [
+       "Trisomie 21",
+       "45 A + XX ou XY (47)",
+       "les deux sexes"
+      ],
+      [
+       "Turner",
+       "44 A + X (45)",
+       "féminin"
+      ],
+      [
+       "Klinefelter",
+       "44 A + XXY (47)",
+       "masculin"
+      ]
+     ]
+    },
+    {
+     "h": "Origine",
+     "lines": [
+      "Non-disjonction d’une paire de chromosomes homologues en méiose I, ou des chromatides en méiose II → gamète n + 1 et gamète n – 1."
+     ]
+    },
+    {
+     "h": "Anomalies de structure",
+     "lines": [
+      "Délétion : perte d’un fragment (chromosome 5).",
+      "Translocation : fragment fixé sur un autre chromosome (21 sur 14)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre IV : Organisation du système nerveux, nerf et neurone",
+   "match": [
+    "Organisation du système nerveux, nerf et neurone"
+   ],
+   "pages": [
+    193,
+    200
+   ],
+   "objectives": [
+    "Décrire l’organisation du système nerveux et ses protections.",
+    "Décrire la structure de la moelle épinière et d’un nerf.",
+    "Montrer, par la dégénérescence wallérienne, que le neurone est l’unité du tissu nerveux."
+   ],
+   "intro": "Pourquoi un nerf sectionné dégénère-t-il d’un côté seulement ?",
+   "summary": "On distingue le système nerveux somatique (cérébro-spinal), qui contrôle la vie de relation, et le système autonome (végétatif), qui contrôle le milieu intérieur de façon involontaire et comprend le sympathique et le parasympathique. Le système nerveux central (encéphale et moelle épinière) est protégé par les os du crâne et les vertèbres, par les trois méninges (dure-mère, arachnoïde, pie-mère) et par le liquide céphalo-rachidien. La moelle épinière est un cordon blanc qui se termine au niveau de la 2e vertèbre lombaire ; sa substance grise en forme de papillon (cornes dorsales, latérales, ventrales) est entourée de substance blanche formée de voies ascendantes et descendantes. Un nerf est formé de fibres nerveuses, avec ou sans myéline, groupées en faisceaux entourés de périnèvre, cloisonnés par l’endonèvre et entourés de l’épinèvre ; il peut être sensitif, moteur ou mixte. Après section d’un nerf, le bout séparé du corps cellulaire dégénère (dégénérescence wallérienne) et le bout relié au corps cellulaire survit : les fibres sont des prolongements de corps cellulaires. Le neurone comprend un corps cellulaire (noyau, corps de Nissl), des dendrites et un axone ; la substance grise contient les corps cellulaires et la substance blanche les fibres myélinisées. Les neurones communiquent par des synapses, chimiques le plus souvent ou électriques.",
+   "points": [
+    "Système somatique et système autonome.",
+    "Méninges et LCR protègent le SNC.",
+    "Nerf : faisceaux de fibres et gaines conjonctives.",
+    "Dégénérescence wallérienne : le bout sans noyau dégénère.",
+    "Neurone : corps cellulaire, dendrites, axone."
+   ],
+   "application": {
+    "q": "On sectionne la racine antérieure d’un nerf rachidien. Quelles fibres dégénèrent ?",
+    "a": "Les fibres situées au-delà de la section, côté périphérique : leurs corps cellulaires sont dans la corne antérieure de la moelle (neurones moteurs)."
+   },
+   "applications": [
+    {
+     "q": "Quelle méninge est mince et nourricière ?",
+     "a": "La pie-mère."
+    },
+    {
+     "q": "Que contient la substance grise ?",
+     "a": "Les corps cellulaires des neurones, des fibres nues, la névroglie et des capillaires."
+    }
+   ],
+   "board": [
+    {
+     "h": "Organisation",
+     "lines": [],
+     "table": [
+      [
+       "Système",
+       "Composition",
+       "Rôle"
+      ],
+      [
+       "Central",
+       "encéphale + moelle épinière",
+       "intégration et commande"
+      ],
+      [
+       "Périphérique",
+       "nerfs crâniens et rachidiens, ganglions",
+       "conduction"
+      ],
+      [
+       "Autonome",
+       "sympathique, parasympathique",
+       "milieu intérieur"
+      ]
+     ]
+    },
+    {
+     "h": "Expériences de section",
+     "lines": [],
+     "table": [
+      [
+       "Section",
+       "Fibres dégénérées",
+       "Corps cellulaires"
+      ],
+      [
+       "Nerf rachidien",
+       "portion séparée du centre",
+       "du côté central"
+      ],
+      [
+       "Racine postérieure, au-delà du ganglion",
+       "côté moelle",
+       "dans le ganglion spinal (sensitifs)"
+      ],
+      [
+       "Racine antérieure",
+       "côté périphérique",
+       "corne antérieure (moteurs)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre IV : Propriétés du tissu nerveux — excitabilité et conductibilité",
+   "match": [
+    "Propriétés du tissu nerveux — excitabilité et conductibilité"
+   ],
+   "pages": [
+    200,
+    205
+   ],
+   "objectives": [
+    "Mettre en évidence l’excitabilité et la conductibilité d’un nerf.",
+    "Définir seuil (rhéobase), temps utile et chronaxie.",
+    "Calculer la vitesse de l’influx et citer ses facteurs."
+   ],
+   "intro": "Pourquoi une excitation trop faible ou trop brève ne produit-elle aucune réponse ?",
+   "summary": "Sur une préparation nerf sciatique – muscle de grenouille, une excitation efficace du nerf provoque la contraction du muscle : le nerf est excitable et conducteur ; le potentiel d’action est la traduction électrique de son excitation. Pour être efficace, un excitant doit avoir une intensité minimale (seuil ; la rhéobase pour un temps long), une durée minimale (temps utile, de l’ordre de la milliseconde) et s’établir brusquement ; il faut un couple intensité-temps convenable. La chronaxie est le temps utile correspondant à une intensité double de la rhéobase. La vitesse de l’influx se mesure en plaçant les électrodes réceptrices à deux distances d1 et d2 : V = (d1 – d2) / Δt, Δt étant le décalage entre les deux potentiels d’action. La vitesse augmente avec la température, avec le diamètre de la fibre et avec la présence de myéline. Dans une fibre isolée, l’influx déclenché expérimentalement se propage dans les deux sens ; d’un neurone à l’autre, à travers une synapse, il ne passe que dans un seul sens.",
+   "points": [
+    "Excitabilité et conductibilité.",
+    "Seuil (rhéobase), temps utile, chronaxie.",
+    "Variation brutale nécessaire.",
+    "V = Δd / Δt.",
+    "Vitesse ↑ avec diamètre, myéline, température."
+   ],
+   "application": {
+    "q": "Les électrodes réceptrices sont à 6 cm puis à 2 cm de la cathode ; le décalage est de 1 ms. Vitesse ?",
+    "a": "V = (0,06 – 0,02) / 0,001 = 40 m/s."
+   },
+   "applications": [
+    {
+     "q": "Qu’appelle-t-on rhéobase ?",
+     "a": "L’intensité minimale efficace pour un temps de passage long."
+    },
+    {
+     "q": "L’influx passe-t-il dans les deux sens au niveau d’une synapse ?",
+     "a": "Non, la synapse est unidirectionnelle."
+    }
+   ],
+   "board": [
+    {
+     "h": "Conditions d’une excitation efficace",
+     "lines": [
+      "Intensité ≥ seuil.",
+      "Durée ≥ temps utile.",
+      "Établissement brusque.",
+      "Chronaxie : temps utile pour 2 × rhéobase."
+     ]
+    },
+    {
+     "h": "Facteurs de la vitesse",
+     "lines": [],
+     "table": [
+      [
+       "Facteur",
+       "Effet"
+      ],
+      [
+       "Diamètre de la fibre ↑",
+       "vitesse ↑"
+      ],
+      [
+       "Gaine de myéline",
+       "vitesse ↑ (conduction saltatoire)"
+      ],
+      [
+       "Température ↑",
+       "vitesse ↑"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre IV : Le message nerveux — potentiel de repos et potentiel d’action",
+   "match": [
+    "Le message nerveux — potentiel de repos et potentiel d’action"
+   ],
+   "pages": [
+    206,
+    215
+   ],
+   "objectives": [
+    "Expliquer l’enregistrement à l’oscilloscope.",
+    "Expliquer l’origine ionique du potentiel de repos et du potentiel d’action.",
+    "Décrire les propriétés du PA, sa propagation et le codage du message."
+   ],
+   "intro": "Comment une fibre nerveuse produit-elle un signal électrique ?",
+   "summary": "L’oscilloscope cathodique amplifie et enregistre des variations de tension brèves (0,5 à 1 ms) et faibles. Une microélectrode introduite dans l’axone indique une différence de potentiel constante d’environ –70 mV : c’est le potentiel de repos ; l’intérieur est négatif. Il est dû aux canaux de fuite, beaucoup plus perméables au K⁺ qu’au Na⁺, et à la pompe Na⁺/K⁺ (ATPase) qui maintient l’inégalité des concentrations en expulsant 3 Na⁺ contre 2 K⁺ entrants. Le potentiel d’action monophasique comprend une dépolarisation, une repolarisation, une hyperpolarisation puis le retour au repos ; il naît quand la dépolarisation atteint le seuil (environ –50 mV). La dépolarisation est due à l’ouverture des canaux Na⁺ voltage-dépendants (entrée de Na⁺) ; la repolarisation à leur inactivation et à l’ouverture retardée des canaux K⁺ voltage-dépendants (sortie de K⁺) ; l’hyperpolarisation au retard de fermeture des canaux K⁺. Une fibre isolée obéit à la loi du tout ou rien ; dans un nerf l’amplitude augmente avec l’intensité, car le nombre de fibres excitées augmente (recrutement). La propagation est continue (de proche en proche) dans les fibres sans myéline et saltatoire (de nœud de Ranvier en nœud de Ranvier) dans les fibres myélinisées ; la période réfractaire empêche le retour en arrière. Le message est codé en fréquence de PA ; au niveau du récepteur, le potentiel de récepteur est codé en amplitude.",
+   "points": [
+    "Potentiel de repos ≈ –70 mV (fuite de K⁺, pompe Na⁺/K⁺).",
+    "PA : dépolarisation, repolarisation, hyperpolarisation.",
+    "Na⁺ entre puis K⁺ sort (canaux voltage-dépendants).",
+    "Fibre : tout ou rien ; nerf : recrutement.",
+    "Codage en fréquence ; propagation saltatoire si myéline."
+   ],
+   "application": {
+    "q": "Pourquoi l’amplitude d’un potentiel de nerf augmente-t-elle avec l’intensité de stimulation ?",
+    "a": "Le nerf contient des fibres à seuils différents : plus l’intensité augmente, plus de fibres sont recrutées."
+   },
+   "applications": [
+    {
+     "q": "Que devient le potentiel de repos si la cellule meurt ?",
+     "a": "Il disparaît, car il exige une dépense d’énergie (ATP de la pompe)."
+    },
+    {
+     "q": "Pourquoi enregistre-t-on plusieurs pics loin du point de stimulation d’un nerf ?",
+     "a": "Les fibres de diamètres différents conduisent à des vitesses différentes (potentiel complexe)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Phases du PA et ions",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Canaux",
+       "Mouvement d’ions"
+      ],
+      [
+       "Dépolarisation",
+       "Na⁺ voltage-dépendants ouverts",
+       "entrée de Na⁺"
+      ],
+      [
+       "Repolarisation",
+       "Na⁺ inactivés, K⁺ ouverts",
+       "sortie de K⁺"
+      ],
+      [
+       "Hyperpolarisation",
+       "K⁺ encore ouverts",
+       "sortie de K⁺"
+      ],
+      [
+       "Repos",
+       "pompe Na⁺/K⁺, canaux de fuite",
+       "3 Na⁺ sortent, 2 K⁺ entrent"
+      ]
+     ]
+    },
+    {
+     "h": "Fibre et nerf",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Fibre isolée",
+       "Nerf"
+      ],
+      [
+       "Réponse",
+       "tout ou rien",
+       "amplitude graduée"
+      ],
+      [
+       "Explication",
+       "PA d’amplitude constante",
+       "recrutement de fibres"
+      ]
+     ]
+    },
+    {
+     "h": "Codage",
+     "lines": [
+      "Récepteur : potentiel de récepteur codé en amplitude.",
+      "Fibre : message codé en fréquence de potentiels d’action."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre IV : Les synapses et l’intégration",
+   "match": [
+    "Les synapses et l’intégration"
+   ],
+   "pages": [
+    216,
+    221
+   ],
+   "objectives": [
+    "Décrire la structure d’une synapse chimique.",
+    "Décrire les étapes de la transmission synaptique et la jonction neuromusculaire.",
+    "Distinguer PPSE et PPSI et expliquer l’intégration (sommations)."
+   ],
+   "intro": "Comment un neurone « décide »-t-il d’émettre ou non un message ?",
+   "summary": "Au microscope électronique, la synapse chimique montre un élément présynaptique riche en vésicules, une fente synaptique d’environ 20 nm et un élément postsynaptique portant des récepteurs ; elle est asymétrique, d’où le passage dans un seul sens et un retard synaptique. Les synapses peuvent être axo-dendritiques, axo-somatiques ou axo-axoniques. L’arrivée des PA ouvre des canaux Ca²⁺ voltage-dépendants ; le Ca²⁺ entre et provoque l’exocytose du neurotransmetteur ; celui-ci se fixe sur des récepteurs-canaux chimio-dépendants. Dans une synapse excitatrice (acétylcholine), l’entrée de Na⁺ provoque une dépolarisation locale : le PPSE. Dans une synapse inhibitrice (GABA), l’entrée de Cl⁻ ou la sortie de K⁺ provoque une hyperpolarisation : le PPSI. Le neurotransmetteur est ensuite dégradé (acétylcholinestérase) ou recapté. Le neurone postsynaptique additionne au niveau du cône axonique les PPSE et PPSI : sommation temporelle (stimulations rapprochées d’une même synapse) et sommation spatiale (synapses différentes). Si le potentiel global atteint le seuil, un PA naît : le neurone réalise l’intégration. À la jonction neuromusculaire (plaque motrice), l’acétylcholine provoque un PPSE puis la contraction de la fibre musculaire.",
+   "points": [
+    "Synapse : présynaptique, fente (20 nm), postsynaptique.",
+    "PA → Ca²⁺ → exocytose du neurotransmetteur.",
+    "PPSE (Na⁺) et PPSI (Cl⁻ ou K⁺).",
+    "Sommation temporelle et spatiale.",
+    "Plaque motrice : acétylcholine."
+   ],
+   "application": {
+    "q": "Un neurone reçoit simultanément un PPSE de +12 mV et un PPSI de –5 mV ; seuil à +15 mV au-dessus du repos. PA ?",
+    "a": "Somme algébrique : +7 mV < 15 mV : pas de potentiel d’action."
+   },
+   "applications": [
+    {
+     "q": "Qu’est-ce que la sommation spatiale ?",
+     "a": "L’addition de potentiels postsynaptiques venant de synapses différentes en même temps."
+    },
+    {
+     "q": "Où s’effectue l’intégration ?",
+     "a": "Au niveau du cône axonique (segment initial) du neurone postsynaptique."
+    }
+   ],
+   "board": [
+    {
+     "h": "Étapes de la transmission",
+     "lines": [
+      "1) PA dans la terminaison présynaptique.",
+      "2) Ouverture des canaux Ca²⁺ et entrée de Ca²⁺.",
+      "3) Exocytose du neurotransmetteur.",
+      "4) Fixation sur les récepteurs postsynaptiques.",
+      "5) PPSE ou PPSI.",
+      "6) Élimination du neurotransmetteur."
+     ]
+    },
+    {
+     "h": "Synapses excitatrice et inhibitrice",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Excitatrice",
+       "Inhibitrice"
+      ],
+      [
+       "Exemple de médiateur",
+       "acétylcholine",
+       "GABA"
+      ],
+      [
+       "Ions",
+       "entrée de Na⁺",
+       "entrée de Cl⁻ ou sortie de K⁺"
+      ],
+      [
+       "Potentiel",
+       "PPSE (dépolarisation)",
+       "PPSI (hyperpolarisation)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre IV : Le réflexe inné",
+   "match": [
+    "Le réflexe inné"
+   ],
+   "pages": [
+    222,
+    231
+   ],
+   "objectives": [
+    "Définir un réflexe inné et ses caractéristiques.",
+    "Identifier les éléments de l’arc réflexe par des expériences.",
+    "Expliquer le réflexe myotatique et le réflexe de flexion."
+   ],
+   "intro": "Pourquoi retire-t-on la main d’un objet brûlant avant même de sentir la douleur ?",
+   "summary": "Une grenouille spinale (encéphale détruit) dont on pince la peau d’une patte fléchit cette patte : c’est un réflexe, réponse involontaire, rapide, prévisible et identique chez tous les individus de l’espèce. Le réflexe disparaît si l’on anesthésie la peau (récepteur), si l’on coupe le nerf sciatique (conducteur), si l’on détruit la moelle épinière (centre) ou si l’on sectionne le muscle (effecteur). Les expériences de Magendie (1820) sur les racines des nerfs rachidiens et les sections suivies de dégénérescence montrent que la racine postérieure est sensitive (corps cellulaires dans le ganglion spinal) et la racine antérieure motrice (corps cellulaires dans la corne antérieure ; la poliomyélite les détruit). L’arc réflexe est le trajet : récepteur → neurone sensitif → centre médullaire → neurone moteur → effecteur. Le réflexe myotatique (achilléen, rotulien) est la contraction d’un muscle en réponse à son propre étirement ; les fuseaux neuromusculaires en sont les récepteurs ; il est monosynaptique pour le muscle étiré et, par un interneurone inhibiteur, relâche le muscle antagoniste (innervation réciproque) ; il maintient le tonus et la posture. Le réflexe de flexion (de retrait), déclenché par les nocicepteurs, est polysynaptique, donc plus lent.",
+   "points": [
+    "Réflexe : involontaire, rapide, prévisible, inné.",
+    "5 éléments : récepteur, voie sensitive, centre, voie motrice, effecteur.",
+    "Racine postérieure sensitive, antérieure motrice.",
+    "Réflexe myotatique monosynaptique + innervation réciproque.",
+    "Réflexe de flexion polysynaptique."
+   ],
+   "application": {
+    "q": "On sectionne la racine postérieure d’un nerf rachidien d’une grenouille spinale. Résultat d’un pincement de la patte ?",
+    "a": "Aucune réponse : le message sensitif ne parvient plus à la moelle."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi le réflexe de flexion est-il plus lent que le réflexe myotatique ?",
+     "a": "Il est polysynaptique : chaque synapse ajoute un retard."
+    },
+    {
+     "q": "Quel est le rôle de l’interneurone inhibiteur dans le réflexe myotatique ?",
+     "a": "Il relâche le muscle antagoniste pendant la contraction du muscle étiré."
+    }
+   ],
+   "board": [
+    {
+     "h": "Éléments de l’arc réflexe",
+     "lines": [],
+     "table": [
+      [
+       "Élément",
+       "Exemple",
+       "Expérience de vérification"
+      ],
+      [
+       "Récepteur",
+       "peau, fuseau neuromusculaire",
+       "anesthésie de la peau"
+      ],
+      [
+       "Conducteur sensitif",
+       "racine postérieure",
+       "section du nerf"
+      ],
+      [
+       "Centre",
+       "moelle épinière",
+       "destruction de la moelle"
+      ],
+      [
+       "Conducteur moteur",
+       "racine antérieure",
+       "section du nerf"
+      ],
+      [
+       "Effecteur",
+       "muscle",
+       "section du muscle"
+      ]
+     ]
+    },
+    {
+     "h": "Comparaison",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Myotatique",
+       "De flexion"
+      ],
+      [
+       "Stimulus",
+       "étirement du muscle",
+       "stimulus nociceptif"
+      ],
+      [
+       "Récepteur",
+       "fuseau neuromusculaire",
+       "nocicepteurs cutanés"
+      ],
+      [
+       "Synapses",
+       "monosynaptique (+ interneurone inhibiteur)",
+       "polysynaptique"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre IV : Danger des psychotropes sur le système nerveux",
+   "match": [
+    "Danger des psychotropes sur le système nerveux"
+   ],
+   "pages": [
+    232,
+    234
+   ],
+   "objectives": [
+    "Expliquer le mode d’action de la cocaïne sur les synapses.",
+    "Définir drogue, toxicomanie, tolérance et dépendance.",
+    "Décrire les effets du tabac (nicotine)."
+   ],
+   "intro": "Pourquoi une drogue crée-t-elle une dépendance ?",
+   "summary": "La cocaïne, principal alcaloïde de la feuille de coca, stimule la libération et bloque la recapture de la dopamine, de la noradrénaline et de la sérotonine dans la fente synaptique : les neurotransmetteurs restent plus longtemps actifs et le système de récompense est suractivé (euphorie, excitation). Une drogue est toute substance naturelle ou de synthèse qui modifie l’état de conscience et le fonctionnement du cerveau, donnant euphorie et plaisir avec déconnexion de la réalité. Sa consommation répétée conduit à la toxicomanie : dépendance psychique, voire physique, avec tolérance (il faut des doses de plus en plus fortes) et syndrome de manque à l’arrêt. La nicotine du tabac augmente le rythme cardiaque et la pression artérielle, donne une euphorie transitoire et une impression d’énergie, diminue l’appétit et le stress ressentis ; elle entraîne une tolérance et des dépendances psychique et physique très fortes.",
+   "points": [
+    "Cocaïne : bloque la recapture de la dopamine.",
+    "Drogue : modifie la conscience.",
+    "Toxicomanie : dépendance psychique et physique.",
+    "Tolérance : doses croissantes.",
+    "Nicotine : cœur, pression, dépendance forte."
+   ],
+   "application": {
+    "q": "Pourquoi le blocage de la recapture de la dopamine prolonge-t-il l’effet du message ?",
+    "a": "La dopamine reste dans la fente synaptique et continue à se fixer sur les récepteurs postsynaptiques."
+   },
+   "applications": [
+    {
+     "q": "Citer deux effets physiologiques de la nicotine.",
+     "a": "Elle augmente le rythme cardiaque et la pression artérielle."
+    },
+    {
+     "q": "Qu’appelle-t-on toxicomanie ?",
+     "a": "La dépendance psychologique voire physique à une ou plusieurs drogues."
+    }
+   ],
+   "board": [
+    {
+     "h": "Mode d’action de la cocaïne",
+     "lines": [
+      "Libération ↑ et recapture bloquée : dopamine, noradrénaline, sérotonine.",
+      "Les récepteurs postsynaptiques sont stimulés en permanence → suractivation du circuit de la récompense."
+     ]
+    },
+    {
+     "h": "Notions",
+     "lines": [],
+     "table": [
+      [
+       "Notion",
+       "Définition"
+      ],
+      [
+       "Tolérance",
+       "il faut augmenter la dose pour le même effet"
+      ],
+      [
+       "Dépendance",
+       "besoin psychique ou physique de la drogue"
+      ],
+      [
+       "Manque",
+       "troubles à l’arrêt de la consommation"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre V : L’activité cardiaque et son automatisme",
+   "match": [
+    "L’activité cardiaque et son automatisme"
+   ],
+   "pages": [
+    252,
+    262
+   ],
+   "objectives": [
+    "Comparer le cœur humain et le cœur de grenouille ; décrire le myocarde.",
+    "Interpréter un cardiogramme et un électrocardiogramme.",
+    "Démontrer l’automatisme cardiaque et localiser le tissu nodal."
+   ],
+   "intro": "Pourquoi un cœur isolé continue-t-il à battre ?",
+   "summary": "Le cœur humain, entouré du péricarde, a quatre cavités (deux oreillettes, deux ventricules) ; le ventricule gauche a la paroi la plus épaisse. Le cœur de grenouille a deux oreillettes, un seul ventricule, un sinus veineux et un bulbe artériel, sans vaisseaux coronaires. Le myocarde est formé de cellules musculaires striées à un noyau central, reliées entre elles. Chez la grenouille, les contractions se succèdent dans l’ordre sinus → oreillettes → ventricule → bulbe. Le cardiogramme comprend un ressaut (systole auriculaire), une partie ascendante (début de la systole ventriculaire, contraction isométrique), un palier (éjection, contraction isotonique) et une partie descendante (diastole générale). L’électrocardiogramme montre les ondes P (dépolarisation auriculaire), QRS (ventriculaire) et T. La fréquence cardiaque d’un adulte au repos est de 50 à 80 battements par minute ; le volume d’éjection systolique de 70 mL au repos à 150 mL à l’effort ; débit cardiaque = VES × FC. Un cœur de grenouille dont les centres nerveux sont détruits, ou isolé dans du liquide de Ringer, continue à battre : c’est l’automatisme cardiaque. Les ligatures de Stannius montrent que le centre principal est le sinus veineux, et qu’un centre secondaire plus lent existe à la jonction oreillettes-ventricule. Chez les Mammifères, l’automatisme est dû au tissu nodal : nœud sinusal (rythme imposé), nœud septal (auriculo-ventriculaire), faisceau de His et réseau de Purkinje ; la section du faisceau de His dissocie le rythme des oreillettes et des ventricules (rythme idio-ventriculaire lent).",
+   "points": [
+    "Cœur humain 4 cavités ; grenouille : 1 ventricule.",
+    "Cardiogramme : ressaut, montée, palier, descente.",
+    "DC = VES × FC.",
+    "Automatisme : le cœur isolé bat.",
+    "Tissu nodal : nœud sinusal → nœud septal → His → Purkinje."
+   ],
+   "application": {
+    "q": "FC = 70 battements/min et VES = 70 mL. Débit cardiaque ?",
+    "a": "DC = 70 × 70 = 4 900 mL/min, environ 5 L/min."
+   },
+   "applications": [
+    {
+     "q": "Que se passe-t-il chez l’Homme si le faisceau de His est altéré (maladie de Stokes-Adams) ?",
+     "a": "Les ventricules battent à leur propre rythme lent, indépendamment des oreillettes."
+    },
+    {
+     "q": "Quelle cavité a la paroi la plus épaisse ?",
+     "a": "Le ventricule gauche, qui envoie le sang dans tout le corps."
+    }
+   ],
+   "board": [
+    {
+     "h": "Ligatures de Stannius (grenouille)",
+     "lines": [],
+     "table": [
+      [
+       "Ligature",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Sinus / oreillettes",
+       "le sinus bat, le reste s’arrête puis reprend lentement",
+       "le sinus est le centre principal"
+      ],
+      [
+       "Oreillettes / ventricule",
+       "le ventricule reprend un rythme propre lent",
+       "centre secondaire à la jonction"
+      ]
+     ]
+    },
+    {
+     "h": "Hiérarchie des centres (Homme)",
+     "lines": [],
+     "table": [
+      [
+       "Centre",
+       "Rythme propre (battements/min)"
+      ],
+      [
+       "Nœud sinusal",
+       "120 à 130 (cœur énervé)"
+      ],
+      [
+       "Nœud septal",
+       "40 à 60"
+      ],
+      [
+       "Ventricules (idio-ventriculaire)",
+       "25 à 35"
+      ]
+     ]
+    },
+    {
+     "h": "Remarque",
+     "lines": [
+      "(Correction : chez l’Homme, le palier correspond à l’éjection du sang dans l’aorte et l’artère pulmonaire ; le manuel écrit « dans le bulbe », qui n’existe que chez la grenouille.)",
+      "(Correction : la précharge est le degré d’étirement du myocarde en fin de diastole, et non « en fin de systole ».)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre V : Adaptation de l’activité cardiaque (innervation et hormones)",
+   "match": [
+    "Adaptation de l’activité cardiaque (innervation et hormones)"
+   ],
+   "pages": [
+    262,
+    266
+   ],
+   "objectives": [
+    "Décrire la double innervation du cœur.",
+    "Expliquer le rôle des barorécepteurs et des chémorécepteurs.",
+    "Comparer les effets du sympathique, du parasympathique et de l’adrénaline."
+   ],
+   "intro": "Comment le cœur accélère-t-il pendant un effort ?",
+   "summary": "Le cœur reçoit une double innervation du système végétatif. Le centre parasympathique bulbaire (cardiomodérateur), situé dans le bulbe rachidien, agit par les nerfs pneumogastriques (nerfs X) : leur stimulation ralentit le cœur (bradycardie), leur section l’accélère. Le centre sympathique médullaire (cardioaccélérateur) agit par les nerfs sympathiques cardiaques : leur stimulation accélère et renforce les contractions (tachycardie). Les barorécepteurs de la crosse aortique et des sinus carotidiens, sensibles à l’étirement de la paroi, envoient des messages aux centres par les nerfs de Cyon-Ludwig et de Héring. Les chémorécepteurs sont sensibles au CO₂ et aux métabolites acides produits pendant l’effort. Les nerfs agissent par des médiateurs chimiques (expérience de Loewi) : acétylcholine pour le parasympathique, noradrénaline pour le sympathique. L’adrénaline de la médullosurrénale, libérée lors d’une émotion ou d’un stress, accélère le cœur (régulation hormonale cardioaccélératrice). À tout instant, le rythme est la résultante de ces systèmes ; le système nerveux central les module (une émotion violente l’accélère).",
+   "points": [
+    "Parasympathique (nerf X) : cardiomodérateur.",
+    "Sympathique : cardioaccélérateur.",
+    "Barorécepteurs : crosse aortique, sinus carotidiens.",
+    "Médiateurs : acétylcholine, noradrénaline.",
+    "Adrénaline : accélération hormonale."
+   ],
+   "application": {
+    "q": "Chez un animal, la section des deux nerfs X accélère le cœur. Que peut-on conclure ?",
+    "a": "Les nerfs X exercent en permanence un freinage sur le cœur (tonus cardiomodérateur)."
+   },
+   "applications": [
+    {
+     "q": "Quels nerfs portent les messages des barorécepteurs ?",
+     "a": "Les nerfs de Héring (sinus carotidiens) et de Cyon (crosse aortique)."
+    },
+    {
+     "q": "Pourquoi une émotion violente accélère-t-elle le cœur ?",
+     "a": "Elle provoque une décharge d’adrénaline par la médullosurrénale."
+    }
+   ],
+   "board": [
+    {
+     "h": "Systèmes régulateurs",
+     "lines": [],
+     "table": [
+      [
+       "Système",
+       "Récepteurs",
+       "Voie sensitive",
+       "Centre",
+       "Voie motrice",
+       "Effet"
+      ],
+      [
+       "Parasympathique",
+       "sinus carotidien, crosse aortique",
+       "nerfs de Héring et de Cyon",
+       "bulbaire",
+       "nerf X",
+       "bradycardie"
+      ],
+      [
+       "Orthosympathique",
+       "—",
+       "—",
+       "médullaire",
+       "nerfs cardiaques",
+       "tachycardie"
+      ],
+      [
+       "Hormonal",
+       "—",
+       "—",
+       "médullosurrénale",
+       "adrénaline (sang)",
+       "tachycardie"
+      ]
+     ]
+    },
+    {
+     "h": "Expérience de Loewi",
+     "lines": [
+      "Le liquide d’un cœur dont on stimule le nerf X ralentit un second cœur : le nerf agit par une substance chimique, l’acétylcholine."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre V : La pression artérielle et sa régulation nerveuse",
+   "match": [
+    "La pression artérielle et sa régulation nerveuse"
+   ],
+   "pages": [
+    266,
+    275
+   ],
+   "objectives": [
+    "Définir la pression artérielle et la mesurer.",
+    "Citer ses facteurs de variation.",
+    "Expliquer la correction réflexe d’une hypertension et d’une hypotension."
+   ],
+   "intro": "Que fait l’organisme quand la pression artérielle baisse après une hémorragie ?",
+   "summary": "La pression artérielle (PA) est la force exercée par le sang sur la paroi des artères ; elle dépend du débit cardiaque et de la résistance des vaisseaux (PA = DC × R) et de la volémie. Elle oscille entre la pression systolique (maximale, contraction du ventricule gauche) et la pression diastolique (minimale). Elle se mesure directement par un cathéter relié à un manomètre, ou indirectement avec un sphygmomanomètre et un stéthoscope sur l’artère brachiale. Elle varie avec l’effort, le sommeil, le stress, la position, l’excès de sel, les hémorragies, mais les perturbations sont vite corrigées. La stimulation du bulbe provoque une bradycardie et une hypotension ; la stimulation de la moelle une tachycardie, une hypertension et une vasoconstriction. Une ligature des carotides sous le sinus (hypotension sinusale) accélère le cœur et augmente la PA ; une hypertension du sinus ralentit le cœur et abaisse la PA. Correction d’une hypertension : l’étirement des barorécepteurs augmente la fréquence des PA dans les nerfs de Héring et de Cyon ; le centre bulbaire stimule le nerf X et inhibe le centre sympathique (par un neurone inhibiteur) : bradycardie et vasodilatation ramènent la PA à la normale. Correction d’une hypotension : la baisse de stimulation des barorécepteurs lève l’inhibition du centre vasomoteur et diminue l’activité du nerf X : tachycardie et vasoconstriction. C’est une boucle réflexe : capteurs, centre intégrateur, effecteurs.",
+   "points": [
+    "PA = DC × R ; systolique et diastolique.",
+    "Mesure au sphygmomanomètre.",
+    "Barorécepteurs → nerfs de Héring et de Cyon → bulbe.",
+    "Hypertension → nerf X activé, sympathique inhibé.",
+    "Hypotension → tachycardie + vasoconstriction."
+   ],
+   "application": {
+    "q": "Après une petite hémorragie, la fréquence cardiaque augmente. Expliquer.",
+    "a": "La PA baisse ; les barorécepteurs sont moins étirés, le nerf X est moins actif et le sympathique est levé d’inhibition : tachycardie et vasoconstriction."
+   },
+   "applications": [
+    {
+     "q": "Que représente une PA de 12/8 ?",
+     "a": "Pression systolique de 12 cm Hg (120 mm Hg) et diastolique de 8 cm Hg (80 mm Hg)."
+    },
+    {
+     "q": "Quel est l’effet de l’anesthésie de la zone dorsale du bulbe ?",
+     "a": "Une tachycardie et une augmentation de la PA (le frein disparaît)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Expériences",
+     "lines": [],
+     "table": [
+      [
+       "Expérience",
+       "Résultat",
+       "Conclusion"
+      ],
+      [
+       "Ligature des carotides sous le sinus",
+       "tachycardie, PA ↑",
+       "la baisse de pression sinusale déclenche une hausse"
+      ],
+      [
+       "Pression augmentée dans le sinus",
+       "bradycardie, PA ↓",
+       "le sinus contient des barorécepteurs"
+      ],
+      [
+       "Stimulation du bulbe",
+       "bradycardie, hypotension",
+       "centre cardiomodérateur"
+      ],
+      [
+       "Stimulation de la moelle",
+       "tachycardie, hypertension",
+       "centre accélérateur et vasoconstricteur"
+      ]
+     ]
+    },
+    {
+     "h": "Boucle réflexe",
+     "lines": [
+      "Capteurs : barorécepteurs.",
+      "Voies afférentes : nerfs de Héring et de Cyon.",
+      "Centre : bulbe rachidien.",
+      "Voies efférentes : nerf X, nerfs sympathiques.",
+      "Effecteurs : cœur, vaisseaux."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre V : Régulation hormonale de la pression artérielle",
+   "match": [
+    "Régulation hormonale de la pression artérielle"
+   ],
+   "pages": [
+    276,
+    280
+   ],
+   "objectives": [
+    "Exploiter des données sur les corticosurrénales et les reins.",
+    "Expliquer le système rénine-angiotensine-aldostérone.",
+    "Citer le rôle de l’adrénaline et de l’ADH."
+   ],
+   "intro": "Pourquoi l’obstruction d’une artère rénale provoque-t-elle une hypertension ?",
+   "summary": "Une tumeur des corticosurrénales provoque une forte hypertension par accumulation de Na⁺. Chez un malade dont l’artère rénale gauche est obstruée, la veine du rein gauche contient beaucoup plus de rénine (12 contre 6) : un rein mal irrigué sécrète de la rénine. La rénine transforme l’angiotensinogène, produit par le foie, en angiotensine ; celle-ci est vasoconstrictrice, stimule les centres cardioaccélérateur et vasoconstricteur, diminue la filtration glomérulaire et stimule la sécrétion d’aldostérone par les corticosurrénales ; l’aldostérone augmente la réabsorption du Na⁺ par le rein, diminue la diurèse et augmente la volémie, donc la PA. La régulation hormonale agit à long terme, après la régulation nerveuse, en cas d’hypotension ; elle agit sur le tonus des vaisseaux et sur la volémie. L’adrénaline et la noradrénaline de la médullosurrénale accélèrent le cœur et resserrent les artérioles : régulation à court terme. L’ADH (vasopressine), produite par l’hypothalamus et libérée par la posthypophyse quand les volorécepteurs signalent une baisse du volume sanguin, réduit la perte d’eau par le rein et resserre les vaisseaux.",
+   "points": [
+    "Rein mal irrigué → rénine ↑.",
+    "Rénine : angiotensinogène → angiotensine.",
+    "Angiotensine : vasoconstriction + aldostérone.",
+    "Aldostérone : réabsorption de Na⁺ → volémie ↑.",
+    "Adrénaline (court terme), ADH (eau)."
+   ],
+   "application": {
+    "q": "Pourquoi la rénine est-elle plus abondante dans la veine du rein gauche du malade ?",
+    "a": "Le rein gauche, dont l’artère est obstruée, reçoit peu de sang et sécrète beaucoup de rénine."
+   },
+   "applications": [
+    {
+     "q": "Quelle glande sécrète l’aldostérone ?",
+     "a": "La corticosurrénale."
+    },
+    {
+     "q": "Pourquoi l’ADH est-elle dite hypertensive ?",
+     "a": "Elle réduit l’élimination d’eau par le rein (volémie ↑) et resserre les vaisseaux."
+    }
+   ],
+   "board": [
+    {
+     "h": "Données du malade (rénine, unités arbitraires)",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Rein droit",
+       "Rein gauche (artère obstruée)",
+       "Rein normal"
+      ],
+      [
+       "Artère",
+       "6",
+       "6",
+       "4"
+      ],
+      [
+       "Veine",
+       "6",
+       "12",
+       "5"
+      ]
+     ]
+    },
+    {
+     "h": "Système rénine-angiotensine-aldostérone",
+     "lines": [
+      "Baisse de la PA rénale → rein → rénine.",
+      "Angiotensinogène (foie) → angiotensine.",
+      "Angiotensine → vasoconstriction + corticosurrénale → aldostérone.",
+      "Aldostérone → réabsorption de Na⁺ et d’eau → volémie ↑ → PA ↑."
+     ]
+    },
+    {
+     "h": "Autres hormones",
+     "lines": [
+      "Adrénaline : accélération cardiaque, vasoconstriction (court terme).",
+      "ADH : diurèse ↓, vasoconstriction."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre VI : La réponse immunitaire spécifique — antigènes et anticorps",
+   "match": [
+    "La réponse immunitaire spécifique — antigènes et anticorps"
+   ],
+   "pages": [
+    294,
+    300
+   ],
+   "objectives": [
+    "Exploiter des expériences (anatoxine tétanique, BCG) pour distinguer immunité humorale et cellulaire.",
+    "Définir antigène, déterminant antigénique et anticorps.",
+    "Décrire la structure des anticorps et leurs classes."
+   ],
+   "intro": "Comment un vaccin protège-t-il contre une maladie ?",
+   "summary": "Une souris témoin meurt après injection de toxine tétanique ; une souris vaccinée par l’anatoxine survit ; le sérum d’une souris vaccinée protège une souris neuve : c’est la réponse immunitaire à médiation humorale (RIMH), transférable par le sérum (anticorps). Chez le cobaye, l’immunité contre le bacille de Koch, obtenue par le BCG, se transfère par les lymphocytes et non par le sérum : c’est la réponse immunitaire à médiation cellulaire (RIMC). L’immunité spécifique est spécifique d’un antigène, acquise, transférable et dotée de mémoire. La RIMH, contre les agresseurs extracellulaires (bactéries, toxines), fait intervenir les lymphocytes B ; la RIMC, contre les cellules infectées et cancéreuses, les lymphocytes T. Un antigène est une substance reconnue comme étrangère ; la partie reconnue est le déterminant antigénique ou épitope, dont le nombre fixe la valence. Un anticorps (immunoglobuline) est une protéine en forme de Y formée de deux chaînes lourdes et deux chaînes légères liées par des ponts disulfure ; ses régions variables forment deux sites de liaison complémentaires de l’épitope ; la région constante permet la liaison aux phagocytes et au complément. Il existe cinq classes : IgG (75 %, seule à traverser le placenta), IgA (sécrétions), IgM, IgD et IgE.",
+   "points": [
+    "RIMH : transférable par le sérum (anticorps).",
+    "RIMC : transférable par les lymphocytes T.",
+    "Spécificité, mémoire, transférabilité.",
+    "Épitope = déterminant antigénique.",
+    "Anticorps : 2 chaînes lourdes + 2 légères, forme en Y."
+   ],
+   "application": {
+    "q": "Un sérum prélevé sur une souris vaccinée contre le tétanos protège-t-il contre la diphtérie ?",
+    "a": "Non : les anticorps sont spécifiques de l’antigène qui a provoqué leur production."
+   },
+   "applications": [
+    {
+     "q": "Quelle classe d’anticorps passe de la mère au fœtus ?",
+     "a": "Les IgG."
+    },
+    {
+     "q": "Qu’est-ce que la valence d’un antigène ?",
+     "a": "Le nombre de déterminants antigéniques qu’il porte."
+    }
+   ],
+   "board": [
+    {
+     "h": "Deux types de réponse",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "RIMH",
+       "RIMC"
+      ],
+      [
+       "Agresseur",
+       "extracellulaire (bactérie, toxine)",
+       "cellule infectée, cancéreuse, greffon"
+      ],
+      [
+       "Cellules",
+       "lymphocytes B → plasmocytes",
+       "lymphocytes T8 → LTc"
+      ],
+      [
+       "Effecteurs",
+       "anticorps circulants",
+       "lymphocytes cytotoxiques"
+      ],
+      [
+       "Transfert",
+       "par le sérum",
+       "par les lymphocytes"
+      ]
+     ]
+    },
+    {
+     "h": "Structure d’un anticorps",
+     "lines": [
+      "2 chaînes lourdes + 2 chaînes légères, ponts disulfure, charnière.",
+      "Régions variables (côté NH₂) : 2 sites de fixation de l’antigène.",
+      "Région constante : fixation aux phagocytes, activation du complément."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre VI : Déroulement de la réponse immunitaire et mémoire",
+   "match": [
+    "Déroulement de la réponse immunitaire et mémoire"
+   ],
+   "pages": [
+    301,
+    306
+   ],
+   "objectives": [
+    "Décrire les phases d’induction, d’amplification-différenciation et effectrice.",
+    "Expliquer la coopération cellulaire et le rôle des interleukines.",
+    "Comparer réponses primaire et secondaire."
+   ],
+   "intro": "Pourquoi un rappel de vaccin donne-t-il une réponse plus rapide et plus forte ?",
+   "summary": "Quand un élément étranger franchit la peau et les muqueuses, la réaction inflammatoire non spécifique se produit d’abord, puis la réponse spécifique en trois phases. Induction : les cellules présentatrices de l’antigène (macrophages, cellules dendritiques) captent l’antigène et migrent vers les ganglions ; les LB reconnaissent directement l’antigène, les LT4 le reconnaissent associé au CMH II et les LT8 associé au CMH I (double reconnaissance) ; la coopération cellulaire se fait par contact et par les interleukines (IL1, IL2). Amplification et différenciation : les lymphocytes sélectionnés et activés par l’IL2 des LT4 se multiplient (clones) ; les LB deviennent des plasmocytes (beaucoup de REG et d’appareil de Golgi) qui sécrètent des anticorps ; les LT4 deviennent des LT auxiliaires ; les LT8 deviennent des LT cytotoxiques (perforines). Phase effectrice : les anticorps forment des complexes immuns qui neutralisent l’antigène, activent le complément (lyse) et favorisent la phagocytose (opsonisation) ; les LTc se fixent sur les cellules infectées et libèrent des perforines qui forment des pores et font éclater la cellule. La mémoire repose sur les LB et LT mémoires à longue durée de vie : la réponse primaire est tardive, faible et brève ; la réponse secondaire est rapide, intense, durable et plus affine (surtout des IgG).",
+   "points": [
+    "Induction : CPA, reconnaissance, coopération (IL).",
+    "Amplification : clones ; LB → plasmocytes.",
+    "Effectrice : complexes immuns, complément, opsonisation.",
+    "LTc : perforines.",
+    "Mémoire : réponse secondaire rapide et forte."
+   ],
+   "application": {
+    "q": "Pourquoi une souris sans thymus produit-elle peu d’anticorps contre la plupart des antigènes ?",
+    "a": "Sans LT4, il n’y a pas d’interleukine 2 pour activer et multiplier les LB : la coopération cellulaire est impossible."
+   },
+   "applications": [
+    {
+     "q": "Quelle molécule permet au LTc de détruire une cellule infectée ?",
+     "a": "La perforine, qui forme un canal dans sa membrane."
+    },
+    {
+     "q": "Qu’est-ce que l’opsonisation ?",
+     "a": "La fixation des complexes immuns sur les phagocytes par la région constante des anticorps, ce qui facilite la phagocytose."
+    }
+   ],
+   "board": [
+    {
+     "h": "Les trois phases",
+     "lines": [],
+     "table": [
+      [
+       "Phase",
+       "Événements"
+      ],
+      [
+       "Induction",
+       "présentation par les CPA ; reconnaissance par LB, LT4 (CMH II), LT8 (CMH I)"
+      ],
+      [
+       "Amplification-différenciation",
+       "multiplication clonale ; plasmocytes, LTa, LTc, cellules mémoires"
+      ],
+      [
+       "Effectrice",
+       "anticorps (neutralisation, complément, opsonisation) ; LTc (perforines)"
+      ]
+     ]
+    },
+    {
+     "h": "Réponses primaire et secondaire",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Primaire",
+       "Secondaire"
+      ],
+      [
+       "Délai",
+       "long",
+       "court"
+      ],
+      [
+       "Intensité",
+       "faible",
+       "forte"
+      ],
+      [
+       "Durée",
+       "brève",
+       "longue"
+      ],
+      [
+       "Anticorps",
+       "surtout IgM",
+       "surtout IgG, plus affins"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre VI : Dysfonctionnements du système immunitaire",
+   "match": [
+    "Dysfonctionnements du système immunitaire"
+   ],
+   "pages": [
+    307,
+    313
+   ],
+   "objectives": [
+    "Expliquer l’allergie (hypersensibilité immédiate).",
+    "Définir une maladie auto-immune et en citer des exemples.",
+    "Décrire le VIH, son cycle et les phases de l’infection ; distinguer déficits congénitaux et acquis."
+   ],
+   "intro": "Comment un virus peut-il détruire le système immunitaire lui-même ?",
+   "summary": "Le système immunitaire peut réagir de façon excessive ou insuffisante. L’allergie est une réaction excessive à un allergène (pollen, poussières, acariens, aliments, médicaments, venins…) : lors du premier contact, des IgE se fixent sur les mastocytes ; au contact suivant, l’allergène relie les IgE et les mastocytes libèrent de l’histamine (urticaire, asthme, rhume, œdème). Il existe une allergie humorale (hypersensibilité immédiate) et une allergie cellulaire (retardée). Une maladie auto-immune survient quand le système immunitaire ne tolère plus le soi et détruit ses propres cellules (auto-anticorps) : diabète insulino-dépendant (cellules β du pancréas), sclérose en plaques (myéline), myasthénie (synapse neuromusculaire), anémie pernicieuse, polyarthrite rhumatoïde. Les déficits congénitaux apparaissent après 6 mois, quand les anticorps maternels disparaissent (absence de LB, de thymus ou de cellules souches : enfants conservés dans des « bulles » stériles). Le VIH, rétrovirus à ARN avec transcriptase inverse, intégrase et protéase, entouré d’une enveloppe portant la gp120, se fixe sur la protéine CD4 des LT4 et des macrophages ; son ARN est rétrotranscrit en ADN intégré au chromosome. L’infection comprend la primo-infection (charge virale élevée, signes grippaux), une phase asymptomatique longue (séropositivité), puis la chute des LT4 et le SIDA avec des maladies opportunistes. Il se transmet par voie sexuelle (80 % des cas), par le sang et de la mère à l’enfant.",
+   "points": [
+    "Allergie : IgE, mastocytes, histamine.",
+    "Auto-immunité : destruction du soi.",
+    "Déficits congénitaux et acquis.",
+    "VIH : cible les LT4 (CD4).",
+    "Phases : primo-infection, asymptomatique, SIDA."
+   ],
+   "application": {
+    "q": "Pourquoi la destruction des LT4 par le VIH affaiblit-elle à la fois la RIMH et la RIMC ?",
+    "a": "Les LT4 sécrètent l’interleukine 2 qui active la multiplication des LB et des LT8 : sans eux, les deux réponses s’effondrent."
+   },
+   "applications": [
+    {
+     "q": "Quelle protéine des LT4 le VIH reconnaît-il ?",
+     "a": "La protéine CD4, grâce à sa protéine d’enveloppe gp120."
+    },
+    {
+     "q": "Citer trois modes de transmission du VIH.",
+     "a": "Rapports sexuels, sang contaminé (seringues, objets tranchants), de la mère à l’enfant."
+    }
+   ],
+   "board": [
+    {
+     "h": "Dysfonctionnements",
+     "lines": [],
+     "table": [
+      [
+       "Type",
+       "Exemple",
+       "Mécanisme"
+      ],
+      [
+       "Hyperfonctionnement",
+       "allergie",
+       "IgE, histamine des mastocytes"
+      ],
+      [
+       "Auto-immunité",
+       "diabète insulino-dépendant",
+       "destruction des cellules β"
+      ],
+      [
+       "Déficit congénital",
+       "enfants « bulles »",
+       "absence de lignées immunitaires"
+      ],
+      [
+       "Déficit acquis",
+       "SIDA",
+       "destruction des LT4 par le VIH"
+      ]
+     ]
+    },
+    {
+     "h": "Évolution de l’infection par le VIH",
+     "lines": [
+      "Primo-infection : charge virale ↑, anticorps anti-VIH apparaissent.",
+      "Phase asymptomatique : séropositivité, LT4 diminuent lentement.",
+      "SIDA : LT4 très bas, maladies opportunistes."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapitre VI : Aides au système immunitaire",
+   "match": [
+    "Aides au système immunitaire"
+   ],
+   "pages": [
+    314,
+    318
+   ],
+   "objectives": [
+    "Comparer vaccination et sérothérapie.",
+    "Citer les types de greffes et les conditions de leur réussite.",
+    "Citer d’autres traitements (immunosuppresseurs, immunomodulateurs, trithérapie)."
+   ],
+   "intro": "Pourquoi injecte-t-on un sérum, et non un vaccin, à un blessé non vacciné contre le tétanos ?",
+   "summary": "La vaccination injecte un antigène rendu inoffensif (anatoxine, microbe atténué ou tué) : elle déclenche une réponse primaire et la formation de cellules mémoires ; c’est une immunité active, lente à s’installer mais durable ; les rappels entretiennent la mémoire. La sérothérapie injecte des anticorps tout faits (sérum d’origine animale, peu coûteux mais antigénique, ou d’origine humaine, mieux toléré) : c’est une immunité passive, immédiate mais de courte durée, utilisée en urgence (tétanos, rage, venin de serpent) ou en prévention (rubéole chez la femme enceinte, anti-Rh). La sérovaccination associe les deux. Les greffes : autogreffe (même individu) et isogreffe (même génotype) sont acceptées ; allogreffe (génotypes différents) et xénogreffe (espèces différentes) sont rejetées. La réussite exige la meilleure histocompatibilité (antigènes du CMH proches) et un traitement immunosuppresseur (la ciclosporine inhibe l’activité des LTc), qui augmente le risque d’infections. La greffe de moelle osseuse traite certains déficits ; la greffe du thymus traite l’aplasie thymique. Les immunomodulateurs (interleukines) stimulent les défenses. Contre le VIH, les antirétroviraux associés en trithérapie ralentissent la maladie sans éliminer le virus. La chimiothérapie anticancéreuse peut affaiblir l’immunité.",
+   "points": [
+    "Vaccination : active, lente, durable, mémoire.",
+    "Sérothérapie : passive, immédiate, brève.",
+    "Autogreffe, isogreffe acceptées ; allogreffe, xénogreffe rejetées.",
+    "Histocompatibilité + immunosuppresseurs.",
+    "Trithérapie contre le VIH."
+   ],
+   "application": {
+    "q": "Un blessé non vacciné reçoit sérum et vaccin antitétaniques. Pourquoi les deux ?",
+    "a": "Le sérum le protège immédiatement ; le vaccin installe une protection durable avant que les anticorps du sérum disparaissent."
+   },
+   "applications": [
+    {
+     "q": "Pourquoi un sérum d’origine animale peut-il provoquer une réaction allergique ?",
+     "a": "Ses anticorps sont eux-mêmes des antigènes pour le receveur."
+    },
+    {
+     "q": "Quelles greffes ont le meilleur taux de réussite ?",
+     "a": "Les autogreffes et les isogreffes."
+    }
+   ],
+   "board": [
+    {
+     "h": "Vaccination et sérothérapie",
+     "lines": [],
+     "table": [
+      [
+       "",
+       "Vaccination",
+       "Sérothérapie"
+      ],
+      [
+       "Produit injecté",
+       "antigène inoffensif",
+       "anticorps"
+      ],
+      [
+       "Immunité",
+       "active",
+       "passive"
+      ],
+      [
+       "Délai",
+       "quelques semaines",
+       "immédiat"
+      ],
+      [
+       "Durée",
+       "longue (mémoire)",
+       "courte"
+      ],
+      [
+       "Usage",
+       "prévention",
+       "urgence"
+      ]
+     ]
+    },
+    {
+     "h": "Types de greffes",
+     "lines": [],
+     "table": [
+      [
+       "Greffe",
+       "Donneur",
+       "Résultat"
+      ],
+      [
+       "Autogreffe",
+       "le même individu",
+       "acceptée"
+      ],
+      [
+       "Isogreffe",
+       "même génotype (vrais jumeaux)",
+       "acceptée"
+      ],
+      [
+       "Allogreffe",
+       "même espèce, génotype différent",
+       "rejetée sans traitement"
+      ],
+      [
+       "Xénogreffe",
+       "autre espèce",
+       "rejetée"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "level": "7D"
+}
