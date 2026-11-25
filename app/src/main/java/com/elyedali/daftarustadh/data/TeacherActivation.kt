@@ -20,7 +20,7 @@ object TeacherActivation {
     const val STAGE_COLLEGE = "college"
     const val STAGE_LYCEE = "lycee"
     /** الثانوية لا تُعرض في التفعيل حتى يكتمل تخطيطها وتحاضيرها وكتبها. */
-    const val LYCEE_READY = false
+    const val LYCEE_READY = true
 
     /** مبلغ التفعيل حسب عدد المراحل المختارة. */
     fun price(stages: Int) = if (stages >= 2) PRICE_BOTH else PRICE_STAGE
