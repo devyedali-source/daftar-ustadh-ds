@@ -111,8 +111,8 @@ SERIES["Chapitre 6 : Angles orientés de vecteurs"] = [
 ]
 
 SERIES["Chapitre 7 : Formules trigonométriques et équations"] = [
- {"k": "book", "src": "p. 100, ex. 2", "q": "Démontrer que pour tout réel α : cos α + cos(α + 2π/3) + cos(α + 4π/3) = 0.",
-  "a": "cos(α + 2π/3) = −(1/2)cos α − (√3/2)sin α et cos(α + 4π/3) = −(1/2)cos α + (√3/2)sin α. La somme vaut cos α − cos α + 0 = 0."},
+ {"k": "book", "src": "p. 100, ex. 2", "q": "Démontrer que pour tout réel α : a) cos α + cos(α + 2π/3) + cos(α + 4π/3) = 0 ; b) sin α + sin(α + 2π/3) + sin(α + 4π/3) = 0 (Correction : le manuel écrit « −sin α » au début ; la somme vaudrait alors −2 sin α).",
+  "a": "a) cos(α + 2π/3) = −(1/2)cos α − (√3/2)sin α et cos(α + 4π/3) = −(1/2)cos α + (√3/2)sin α. La somme vaut cos α − cos α + 0 = 0.\nb) sin(α + 2π/3) = −(1/2)sin α + (√3/2)cos α et sin(α + 4π/3) = −(1/2)sin α − (√3/2)cos α : la somme vaut sin α − sin α = 0."},
  {"k": "book", "src": "p. 100, ex. 5", "q": "En remarquant que π/4 = 2 × π/8, démontrer que cos(π/8) = √(2 + √2)/2 et sin(π/8) = √(2 − √2)/2. En déduire cos(3π/8) et sin(3π/8).",
   "a": "cos(π/4) = 2cos²(π/8) − 1 ⇒ cos²(π/8) = (2 + √2)/4 ; cos(π/8) > 0 donc cos(π/8) = √(2 + √2)/2. De même sin²(π/8) = (1 − cos(π/4))/2 = (2 − √2)/4.\n3π/8 = π/2 − π/8 : cos(3π/8) = sin(π/8) = √(2 − √2)/2 et sin(3π/8) = cos(π/8) = √(2 + √2)/2."},
  {"k": "book", "src": "p. 100, ex. 6", "q": "1) Écrire cos 3x en fonction de cos x et sin 3x en fonction de sin x.\n2) En déduire que tan 3x = tan x (3 − tan²x)/(1 − 3tan²x).",

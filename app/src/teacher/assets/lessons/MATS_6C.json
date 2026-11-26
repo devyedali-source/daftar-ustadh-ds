@@ -1383,8 +1383,8 @@
     {
      "k": "book",
      "src": "p. 100, ex. 2",
-     "q": "Démontrer que pour tout réel α : cos α + cos(α + 2π/3) + cos(α + 4π/3) = 0.",
-     "a": "cos(α + 2π/3) = −(1/2)cos α − (√3/2)sin α et cos(α + 4π/3) = −(1/2)cos α + (√3/2)sin α. La somme vaut cos α − cos α + 0 = 0."
+     "q": "Démontrer que pour tout réel α : a) cos α + cos(α + 2π/3) + cos(α + 4π/3) = 0 ; b) sin α + sin(α + 2π/3) + sin(α + 4π/3) = 0 (Correction : le manuel écrit « −sin α » au début ; la somme vaudrait alors −2 sin α).",
+     "a": "a) cos(α + 2π/3) = −(1/2)cos α − (√3/2)sin α et cos(α + 4π/3) = −(1/2)cos α + (√3/2)sin α. La somme vaut cos α − cos α + 0 = 0.\nb) sin(α + 2π/3) = −(1/2)sin α + (√3/2)cos α et sin(α + 4π/3) = −(1/2)sin α − (√3/2)cos α : la somme vaut sin α − sin α = 0."
     },
     {
      "k": "book",
