@@ -127,6 +127,56 @@
       "AX = (1 ; 0 ; 1) ⇒ X = (−11 ; 2 ; 6)."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 21, ex. 1",
+     "q": "Résoudre par des opérations élémentaires : x − 2y + z = 1 ; 2x − y + 3z = 0 ; x + y − z = 2.",
+     "a": "De la 3e : x = 2 − y + z. La 1re donne −3y + 2z = −1 et la 2e −3y + 5z = −4. Par différence 3z = −3 ⇒ z = −1, puis y = −1/3 et x = 4/3. S = {(4/3 ; −1/3 ; −1)}."
+    },
+    {
+     "k": "book",
+     "src": "p. 21, ex. 5",
+     "q": "Résoudre par la méthode de Gauss : x + y + z = 1 ; 8x + 2y + 5z = 3 ; 3x − 4y + 3z = −1.",
+     "a": "z = 1 − x − y : 3x − 3y = −2 et −7y = −4. Donc y = 4/7, x = −2/21, z = 11/21. (Vérification 2e équation : (−16 + 24 + 55)/21 = 3.)"
+    },
+    {
+     "k": "book",
+     "src": "p. 21, ex. 11",
+     "q": "Déterminer le polynôme P de degré 3 tel que P(1) = 0, P(2) = 2, P(3) = −1 et P(4) = 5.",
+     "a": "On écrit P(x) = a(x − 1) + b(x − 1)(x − 2) + c(x − 1)(x − 2)(x − 3). P(2) = a = 2 ; P(3) = 2a + 2b = −1 ⇒ b = −5/2 ; P(4) = 3a + 6b + 6c = 5 ⇒ c = 7/3. En développant : P(x) = (14x³ − 99x² + 211x − 126)/6."
+    },
+    {
+     "k": "book",
+     "src": "p. 21, ex. 12",
+     "q": "Déterminer la fonction polynôme de degré 3 dont la courbe passe par A(0 ; −1) et B(2 ; 5) avec une tangente horizontale en A et en B.",
+     "a": "P(x) = ax³ + bx² + cx + d : d = −1, P′(0) = c = 0, P(2) = 8a + 4b − 1 = 5, P′(2) = 12a + 4b = 0. D’où a = −3/2, b = 9/2 : P(x) = −(3/2)x³ + (9/2)x² − 1."
+    },
+    {
+     "k": "book",
+     "src": "p. 21, ex. 14 et 15",
+     "q": "Les vecteurs sont-ils coplanaires ? 1) u⃗(2 ; 3 ; 5), v⃗(8 ; 13 ; 21), w⃗(34 ; 55 ; 89). 2) e⃗₁(1 ; 2 ; 0), e⃗₂(1 ; 1 ; 1), e⃗₃(3 ; 0 ; −1).",
+     "a": "1) det = 2(13 × 89 − 21 × 55) − 8(3 × 89 − 5 × 55) + 34(3 × 21 − 5 × 13) = 2 × 2 − 8 × (−8) + 34 × (−2) = 0 : coplanaires.\n2) det = 1(−1 − 0) − 1(−2 − 0) + 3(2 − 0) = 7 ≠ 0 : non coplanaires (ils forment une base)."
+    },
+    {
+     "k": "book",
+     "src": "p. 21, ex. 16",
+     "q": "M = (1 5 ; 2 1 ; 5 0), N = (0 −7 ; 7 −4 ; 2 14) (matrices 3 × 2), K = (12 4 3 ; −2 5 7) (2 × 3).\n1) Calculer M + N. 2) Calculer M × K. Peut-on calculer M × N ? Conclure.",
+     "a": "1) M + N = (1 −2 ; 9 −3 ; 7 14).\n2) M × K (3 × 3) = (2 29 38 ; 22 13 13 ; 60 20 15). M × N n’existe pas : il faut que le nombre de colonnes de la première matrice soit égal au nombre de lignes de la seconde (le produit n’est pas commutatif en général)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "A = (2 1 ; 5 3). Calculer det A et A⁻¹, puis résoudre 2x + y = 4 ; 5x + 3y = 7 à l’aide de A⁻¹.",
+     "a": "det A = 6 − 5 = 1 ; A⁻¹ = (3 −1 ; −5 2). X = A⁻¹B = (3 × 4 − 7 ; −5 × 4 + 2 × 7) = (5 ; −6)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une cantine commande 50 kg de riz, 10 L d’huile et 30 kg de sucre. Prix unitaires (UM) : fournisseur 1 : 400 ; 1200 ; 350 — fournisseur 2 : 420 ; 1100 ; 330.\n1) Écrire la matrice des prix P (2 × 3) et le vecteur commande Q (3 × 1).\n2) Calculer P × Q et choisir le fournisseur.",
+     "a": "1) P = (400 1200 350 ; 420 1100 330), Q = (50 ; 10 ; 30).\n2) P × Q = (20 000 + 12 000 + 10 500 ; 21 000 + 11 000 + 9900) = (42 500 ; 41 900) : le fournisseur 2 est moins cher."
+    }
    ]
   },
   {
@@ -276,6 +326,50 @@
       "En remontant : 62 × (−9) + 43 × 13 = 1."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 33, ex. 3",
+     "q": "Un document comporte 4350 lignes ; une page complète en comporte 34. Combien de lignes figurent sur la dernière page ?",
+     "a": "4350 = 34 × 127 + 32 : la page n° 128 contient 32 lignes."
+    },
+    {
+     "k": "book",
+     "src": "p. 33, ex. 4 et 5",
+     "q": "1) Écrire 53 en base 5 et en base 2, puis 4606 en base 12.\n2) L’entier 341 s’écrit 2331 en base a. Calculer a.",
+     "a": "1) 53 = 2 × 5² + 0 × 5 + 3 : 203 (base 5) ; 53 = 110101 (base 2) ; 4606 = 2 × 12³ + 7 × 12² + 11 × 12 + 10 : 27AB (base 12, A = 10, B = 11).\n2) 2a³ + 3a² + 3a + 1 = 341 avec 2a³ < 341 < 3a³ : a = 5 (250 + 75 + 15 + 1 = 341)."
+    },
+    {
+     "k": "book",
+     "src": "p. 33, ex. 6",
+     "q": "a) PGCD et PPCM de 168 et 288. b) Si PGCD(a ; b) = 1 et PGCD(a ; c) = 1, montrer que a et bc sont premiers entre eux. c) Trouver (u ; v) tel que 14u + 25v = 1.",
+     "a": "a) 168 = 2³ × 3 × 7, 288 = 2⁵ × 3² : PGCD = 24, PPCM = 2016.\nb) Bézout : au + bv = 1 et au′ + cw = 1 ; en multipliant, a(…) + bc(vw) = 1 : PGCD(a ; bc) = 1.\nc) Euclide : 25 = 14 + 11 ; 14 = 11 + 3 ; 11 = 3 × 3 + 2 ; 3 = 2 + 1. En remontant : 1 = 9 × 14 − 5 × 25 : (u ; v) = (9 ; −5)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Résoudre dans ℤ² : 14x + 25y = 3.",
+     "a": "Solution particulière : 14 × 2 + 25 × (−1) = 3. Si 14x + 25y = 3, alors 14(x − 2) = −25(y + 1) ; 25 divise 14(x − 2) et PGCD(14 ; 25) = 1, donc (Gauss) x − 2 = 25k et y + 1 = −14k. S = {(2 + 25k ; −1 − 14k), k ∈ ℤ}."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "1) Reste de la division de 2¹⁰⁰ par 7. 2) Montrer que pour tout entier n, n³ − n est divisible par 6.",
+     "a": "1) 2³ = 8 ≡ 1 [7] donc 2⁹⁹ = (2³)³³ ≡ 1 et 2¹⁰⁰ ≡ 2 [7] : reste 2.\n2) n³ − n = (n − 1)n(n + 1) : produit de trois entiers consécutifs, divisible par 2 et par 3, donc par 6."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Utiliser le petit théorème de Fermat pour trouver le reste de 3¹⁰⁰ dans la division par 13.",
+     "a": "13 est premier et ne divise pas 3 : 3¹² ≡ 1 [13]. 100 = 12 × 8 + 4, donc 3¹⁰⁰ ≡ 3⁴ = 81 ≡ 3 [13]. Reste 3."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "1) Aujourd’hui est un jeudi. Quel jour serons-nous dans 1000 jours ?\n2) On dispose d’un bidon de 14 L, d’un bidon de 25 L et d’une citerne. Comment obtenir exactement 3 L ?",
+     "a": "1) 1000 = 7 × 142 + 6 : six jours après jeudi, c’est un mercredi.\n2) 14 × 2 − 25 = 3 : on verse deux fois 14 L dans le bidon de 25 L ; quand il est plein, il reste 3 L dans le bidon de 14 L."
+    }
    ]
   },
   {
@@ -353,6 +447,50 @@
        "−arg z"
       ]
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 42, ex. 3",
+     "q": "Déterminer un argument de : a = 1 + i ; b = 1 − i√3 ; c = (1 + i)/(1 − i√3) ; d = (1 + i)(1 − i√3).",
+     "a": "|a| = √2, arg a = π/4 ; |b| = 2, arg b = −π/3 ; |c| = √2/2, arg c = π/4 + π/3 = 7π/12 ; |d| = 2√2, arg d = π/4 − π/3 = −π/12 (modulo 2π)."
+    },
+    {
+     "k": "book",
+     "src": "p. 42, ex. 4",
+     "q": "Résoudre dans ℂ : a) z² = −9 ; b) z² = −√5 ; c) z² = 3.",
+     "a": "a) z = 3i ou −3i. b) z = i⁴√5 ou −i⁴√5. c) z = √3 ou −√3."
+    },
+    {
+     "k": "book",
+     "src": "p. 42, ex. 5",
+     "q": "Résoudre dans ℂ : z² = −5 + 12i.",
+     "a": "z = x + iy : x² − y² = −5, 2xy = 12 et x² + y² = |z²| = 13. D’où x² = 4, y² = 9, xy > 0 : z = 2 + 3i ou z = −2 − 3i."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Écrire sous forme algébrique : (3 + 4i)/(1 − 2i) et (1 + i)⁸.",
+     "a": "(3 + 4i)(1 + 2i)/5 = (−5 + 10i)/5 = −1 + 2i. (1 + i)² = 2i donc (1 + i)⁸ = (2i)⁴ = 16."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Résoudre dans ℂ : a) z² − 2z + 5 = 0 ; b) z² − (1 + i)z + i = 0.",
+     "a": "a) Δ = −16 = (4i)² : z = 1 + 2i ou 1 − 2i.\nb) z² − (1 + i)z + i = (z − 1)(z − i) : z = 1 ou z = i."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Déterminer l’ensemble des points M d’affixe z tels que |z − 2i| = |z + 1|.",
+     "a": "MA = MB avec A(2i) et B(−1) : c’est la médiatrice de [AB]. En posant z = x + iy : x² + (y − 2)² = (x + 1)² + y² ⇔ 2x + 4y − 3 = 0."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "En électricité, on représente des impédances par des complexes : Z₁ = 3 + 4i et Z₂ = 1 − i (en ohms).\n1) Montées en série, l’impédance est Z₁ + Z₂ : calculer son module.\n2) Montées en parallèle, Z = Z₁Z₂/(Z₁ + Z₂) : écrire Z sous forme algébrique.",
+     "a": "1) Z₁ + Z₂ = 4 + 3i ; |Z| = 5 Ω.\n2) Z₁Z₂ = 3 − 3i + 4i + 4 = 7 + i ; Z = (7 + i)/(4 + 3i) = (7 + i)(4 − 3i)/25 = (31 − 17i)/25."
     }
    ]
   },
@@ -441,6 +579,50 @@
        "symétrie de centre O"
       ]
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 55, ex. 8",
+     "q": "En utilisant la formule de Moivre, exprimer cos 3x, sin 3x, cos 4x et cos 5x en fonction de cos x ou sin x.",
+     "a": "(cos x + i sin x)ⁿ = cos nx + i sin nx, puis on développe et on identifie.\ncos 3x = 4cos³x − 3cos x ; sin 3x = 3sin x − 4sin³x ; cos 4x = 8cos⁴x − 8cos²x + 1 ; cos 5x = 16cos⁵x − 20cos³x + 5cos x."
+    },
+    {
+     "k": "book",
+     "src": "p. 55 (exercice résolu)",
+     "q": "Montrer que cos(π/17) + cos(3π/17) + … + cos(15π/17) = 1/2 (somme de 8 termes).",
+     "a": "C’est la partie réelle de la somme géométrique de premier terme e^(iπ/17) et de raison e^(2iπ/17) : e^(iπ/17)(1 − e^(16iπ/17))/(1 − e^(2iπ/17)). En factorisant par les angles moitiés, la partie réelle vaut sin(16π/17)/(2 sin(π/17)) = 1/2, car sin(16π/17) = sin(π/17)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Écrire z = −1 + i√3 sous forme exponentielle et calculer z⁶.",
+     "a": "|z| = 2, arg z = 2π/3 : z = 2e^(2iπ/3). z⁶ = 64e^(4iπ) = 64."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Résoudre dans ℂ l’équation z³ = 8i et placer les solutions.",
+     "a": "8i = 8e^(iπ/2) : zₖ = 2e^(i(π/6 + 2kπ/3)), k = 0, 1, 2. z₀ = √3 + i, z₁ = −√3 + i, z₂ = −2i. Ce sont les sommets d’un triangle équilatéral inscrit dans le cercle de centre O et de rayon 2."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Caractériser la transformation d’écriture complexe z′ = iz + 1 − i.",
+     "a": "Point fixe : ω = iω + 1 − i ⇔ ω(1 − i) = 1 − i ⇔ ω = 1. z′ − 1 = i(z − 1) : rotation de centre Ω(1) et d’angle π/2."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Linéariser cos²x et cos³x à l’aide des formules d’Euler.",
+     "a": "cos x = (e^(ix) + e^(−ix))/2. cos²x = (1 + cos 2x)/2 ; cos³x = (e^(3ix) + 3e^(ix) + 3e^(−ix) + e^(−3ix))/8 = (cos 3x + 3cos x)/4."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un bras de robot plan a deux segments : le premier, de longueur 2, part de l’origine avec l’angle θ ; le second, de longueur 1, fait l’angle φ avec le premier. L’extrémité a pour affixe z = 2e^(iθ) + e^(i(θ + φ)).\n1) Calculer z pour θ = π/2 et φ = −π/2, puis la distance de l’extrémité à l’origine.\n2) Pour quelle valeur de φ cette distance est-elle maximale ?",
+     "a": "1) z = 2i + e^0 = 1 + 2i ; |z| = √5.\n2) |z| = |2 + e^(iφ)| est maximal (égal à 3) pour φ = 0 : bras tendu."
     }
    ]
   },
@@ -576,6 +758,44 @@
       "h(x) = √(x² + x + 1) : h’(x) = (2x + 1)/(2√(x² + x + 1))."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 75, ex. 1",
+     "q": "f(x) = (√(1 + x²) − 1)/x si x < 0 et f(x) = x³ sin(π/x)/(1 + x²) si x > 0.\n1) Montrer que |f(x)| ≤ x³ pour x > 0 ; en déduire la limite en 0⁺. 2) f admet-elle un prolongement par continuité g en 0 ? 3) Limites en ±∞.",
+     "a": "1) |sin| ≤ 1 et 1 + x² ≥ 1 : |f(x)| ≤ x³ → 0.\n2) En 0⁻ : f(x) = x/(√(1 + x²) + 1) → 0. Les deux limites valent 0 : g(0) = 0.\n3) En +∞ : sin(π/x) ≈ π/x, f(x) ≈ x³(π/x)/x² → π. En −∞ : √(1 + x²) ≈ −x, f(x) → −1."
+    },
+    {
+     "k": "book",
+     "src": "p. 75, ex. 2 (1 à 3)",
+     "q": "Pour n ≥ 1, fₙ(x) = xⁿ + xⁿ⁻¹ + … + x sur [0 ; 1].\n1) Sens de variation de fₙ. 2) Montrer que fₙ(x) = 1 a une solution unique aₙ. 3) Montrer que aₙ > 1/2.",
+     "a": "1) Somme de fonctions croissantes : fₙ est strictement croissante.\n2) fₙ est continue, fₙ(0) = 0 < 1 ≤ fₙ(1) = n : solution unique (TVI + stricte monotonie).\n3) fₙ(1/2) = 1 − (1/2)ⁿ < 1 = fₙ(aₙ), et fₙ est croissante : aₙ > 1/2."
+    },
+    {
+     "k": "book",
+     "src": "p. 75, ex. 3",
+     "q": "g(x) = x³ − x − 1 sur [1 ; +∞[.\n1) a) Variations de g. b) Montrer que g(x) = 0 a une unique solution α et que 1,3 < α < 1,4. c) Montrer que √((1 + α)/α) = α.\n2) f(x) = √((1 + x)/x) : montrer que f′(x) = −(1/(2x²))√(x/(1 + x)).",
+     "a": "1) a) g′(x) = 3x² − 1 > 0 sur [1 ; +∞[ : g croissante, g(1) = −1, limite +∞.\nb) TVI : solution unique ; g(1,3) = −0,103 < 0 et g(1,4) = 0,344 > 0.\nc) (1 + α)/α = α² ⇔ α³ − α − 1 = 0, vrai ; et α > 0.\n2) u(x) = 1 + 1/x, u′(x) = −1/x² ; f′ = u′/(2√u) = −1/(2x²√((1 + x)/x)) = −(1/(2x²))√(x/(1 + x))."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Déterminer le point d’inflexion de la courbe de f(x) = x³ − 3x² + 2.",
+     "a": "f″(x) = 6x − 6 s’annule en changeant de signe en x = 1 : point d’inflexion (1 ; 0)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "f(x) = x² + 1 sur [0 ; +∞[. Montrer que f est une bijection sur un intervalle à préciser, donner f⁻¹ et calculer (f⁻¹)′(2).",
+     "a": "f est continue et strictement croissante : bijection de [0 ; +∞[ sur [1 ; +∞[. y = x² + 1 ⇔ x = √(y − 1) : f⁻¹(y) = √(y − 1). (f⁻¹)′(2) = 1/f′(1) = 1/2."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une bouée sphérique de rayon 1 dm s’enfonce dans l’eau d’une profondeur h (en dm) vérifiant h³ − 3h² + 1 = 0, avec 0 ≤ h ≤ 1.\n1) Montrer que cette équation a une solution unique dans [0 ; 1].\n2) Donner un encadrement de h d’amplitude 0,05.",
+     "a": "1) f(h) = h³ − 3h² + 1 ; f′(h) = 3h(h − 2) < 0 sur ]0 ; 1] : f strictement décroissante ; f(0) = 1 > 0 et f(1) = −1 < 0 : solution unique.\n2) f(0,65) ≈ 0,007 > 0 et f(0,7) ≈ −0,127 < 0 : 0,65 < h < 0,7 dm."
+    }
    ]
   },
   {
@@ -642,6 +862,50 @@
       "lim(x→+∞) ln x/x = 0 ; lim(x→0⁺) x ln x = 0 ; lim(h→0) ln(1 + h)/h = 1.",
       "lim(x→+∞) eˣ/x = +∞ ; lim(x→−∞) xeˣ = 0 ; approximation : eʰ ≈ 1 + h près de 0."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 83, ex. 3",
+     "q": "Domaine et dérivée de : 1) ln(x² − 1) ; 2) ln|cos x| ; 3) e^(x² + 2x + 1) ; 4) e^(sin x).",
+     "a": "1) ]−∞ ; −1[ ∪ ]1 ; +∞[, f′(x) = 2x/(x² − 1). 2) ℝ ∖ {π/2 + kπ}, f′(x) = −sin x/cos x = −tan x. 3) ℝ, f′(x) = (2x + 2)e^(x² + 2x + 1). 4) ℝ, f′(x) = cos x e^(sin x)."
+    },
+    {
+     "k": "book",
+     "src": "p. 83, ex. 4",
+     "q": "Primitives de : 1) tan x sur ]−π/2 ; π/2[ ; 2) 1/(1 + eˣ) ; 3) 1/3ˣ.",
+     "a": "1) tan x = −(cos x)′/cos x : F(x) = −ln(cos x) + c.\n2) 1/(1 + eˣ) = 1 − eˣ/(1 + eˣ) : F(x) = x − ln(1 + eˣ) + c.\n3) 1/3ˣ = e^(−x ln 3) : F(x) = −1/(3ˣ ln 3) + c."
+    },
+    {
+     "k": "book",
+     "src": "p. 83, ex. 5 (1)",
+     "q": "Étudier f(x) = x − 1 + ln((x − 2)/(x + 2)).",
+     "a": "D = ]−∞ ; −2[ ∪ ]2 ; +∞[. f′(x) = 1 + 1/(x − 2) − 1/(x + 2) = x²/(x² − 4) > 0 : croissante sur chaque intervalle. Limites : −∞ en −∞, +∞ en −2⁻, −∞ en 2⁺, +∞ en +∞. Asymptotes x = −2, x = 2 et y = x − 1 ; sur ]2 ; +∞[, (x − 2)/(x + 2) < 1 donc la courbe est au-dessous de la droite y = x − 1."
+    },
+    {
+     "k": "book",
+     "src": "p. 83, ex. 5 (2)",
+     "q": "Étudier f(x) = (x + 1)²e^(−x).",
+     "a": "f′(x) = (x + 1)(1 − x)e^(−x) : décroissante sur ]−∞ ; −1], croissante sur [−1 ; 1], décroissante sur [1 ; +∞[. f(−1) = 0, f(1) = 4/e ≈ 1,47. Limites : +∞ en −∞, 0 en +∞ (asymptote y = 0)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Résoudre : a) ln(x + 1) + ln(x − 1) = ln 3 ; b) e^(2x) − 3eˣ + 2 = 0.",
+     "a": "a) x > 1 et x² − 1 = 3 : x = 2.\nb) X = eˣ > 0 : X² − 3X + 2 = 0 ⇔ X = 1 ou X = 2 : x = 0 ou x = ln 2."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Calculer : lim (x → +∞) ln x/x ; lim (x → +∞) x e^(−x) ; lim (x → 0) (eˣ − 1)/x ; lim (x → 0) ln(1 + x)/x.",
+     "a": "0 ; 0 ; 1 (nombre dérivé de exp en 0) ; 1 (nombre dérivé de ln(1 + x) en 0)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Le carbone 14 se désintègre selon N(t) = N₀e^(−λt), avec une demi-vie de 5730 ans.\n1) Calculer λ.\n2) Un os contient 25 % du carbone 14 initial. Quel est son âge ?\n3) Même question pour 40 %.",
+     "a": "1) e^(−5730λ) = 1/2 ⇒ λ = ln 2/5730 ≈ 1,21 × 10⁻⁴ an⁻¹.\n2) 25 % = (1/2)² : t = 2 × 5730 = 11 460 ans.\n3) t = ln(1/0,4)/λ = 5730 × ln 2,5/ln 2 ≈ 7575 ans."
     }
    ]
   },
@@ -770,6 +1034,56 @@
       "Volume engendré par y = eˣ sur [−1 ; 1] : π∫₋₁¹ e²ˣ dx = (π/2)(e² − e⁻²) ≈ 11,394 u.v."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 96, ex. 6",
+     "q": "Majorer et minorer Iₙ = ∫₀¹ xⁿ/(1 + x) dx, puis en déduire que (Iₙ) converge vers 0.",
+     "a": "Pour 0 ≤ x ≤ 1 : 1/2 ≤ 1/(1 + x) ≤ 1, donc xⁿ/2 ≤ xⁿ/(1 + x) ≤ xⁿ. En intégrant : 1/(2(n + 1)) ≤ Iₙ ≤ 1/(n + 1). Les deux bornes tendent vers 0 : Iₙ → 0 (gendarmes)."
+    },
+    {
+     "k": "book",
+     "src": "p. 96, ex. 7",
+     "q": "Trouver la primitive de ln x sur ]0 ; +∞[ qui s’annule en 1.",
+     "a": "F(x) = ∫₁ˣ ln t dt. Par parties (f′ = 1, g = ln t) : F(x) = [t ln t]₁ˣ − ∫₁ˣ dt = x ln x − x + 1."
+    },
+    {
+     "k": "book",
+     "src": "p. 96, ex. 8",
+     "q": "f(x) = (x − 1)² et g(x) = −x² + 6x − 5. a) Points d’intersection des courbes. b) Aire du domaine 1 ≤ x ≤ 3, f(x) ≤ y ≤ g(x).",
+     "a": "a) (x − 1)² = −x² + 6x − 5 ⇔ 2x² − 8x + 6 = 0 ⇔ x = 1 ou 3 : points (1 ; 0) et (3 ; 4).\nb) A = ∫₁³ (−2x² + 8x − 6) dx = [−2x³/3 + 4x² − 6x]₁³ = 0 − (−8/3) = 8/3 u.a."
+    },
+    {
+     "k": "book",
+     "src": "p. 96, ex. 5 b",
+     "q": "Calculer la valeur moyenne de sin x sur [0 ; 2π].",
+     "a": "m = (1/2π)∫₀^(2π) sin x dx = (1/2π)[−cos x]₀^(2π) = 0."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Calculer par parties ∫₀¹ x eˣ dx.",
+     "a": "u = x, v′ = eˣ : [x eˣ]₀¹ − ∫₀¹ eˣ dx = e − (e − 1) = 1."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Calculer ∫₀^(π/2) cos²x dx (on linéarisera).",
+     "a": "cos²x = (1 + cos 2x)/2 : ∫ = [x/2 + sin 2x/4]₀^(π/2) = π/4."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Volume du solide obtenu en faisant tourner autour de l’axe des abscisses la courbe de y = √x pour 0 ≤ x ≤ 4.",
+     "a": "V = π∫₀⁴ (√x)² dx = π[x²/2]₀⁴ = 8π u.v."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un réservoir se remplit avec un débit d(t) = 2 + t litres par minute (t en minutes, 0 ≤ t ≤ 10).\n1) Quel volume d’eau entre en 10 minutes ?\n2) Quel est le débit moyen sur cette période ?",
+     "a": "1) V = ∫₀¹⁰ (2 + t) dt = [2t + t²/2]₀¹⁰ = 20 + 50 = 70 L.\n2) 70/10 = 7 L/min."
+    }
    ]
   },
   {
@@ -839,6 +1153,50 @@
       "Solutions : y = Ae^(2x) − eˣ."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 112, ex. 1",
+     "q": "Résoudre : 1) y′ − 3y = 0 ; 2) y′ + (1/2)y = 0 ; 3) 5y′ − 2y = 0.",
+     "a": "y′ = ay a pour solutions y = Ce^(ax). 1) y = Ce^(3x). 2) y = Ce^(−x/2). 3) y = Ce^(2x/5) (C réel)."
+    },
+    {
+     "k": "book",
+     "src": "p. 112, ex. 2",
+     "q": "Résoudre avec la condition donnée : 1) y′ + 2y = 0, y(0) = 1 ; 2) y′ − 5y = 0, y(2) = 7 ; 3) 2y′ − 3y = 0, y(2) = e.",
+     "a": "1) y = e^(−2x). 2) y = Ce^(5x) avec Ce^10 = 7 : y = 7e^(5(x − 2)). 3) y = Ce^(3x/2) avec Ce³ = e : y = e^(3x/2 − 2)."
+    },
+    {
+     "k": "book",
+     "src": "p. 112, ex. 3",
+     "q": "Résoudre : 1) y″ = y ; 2) y″ + y = 0 ; 3) y″ − 4y′ + 3y = 0 ; 4) y″ + 4y′ + 5y = 0 ; 5) y″ − 2y′ + y = 0 ; 6) 4y″ + 4y′ + y = 0.",
+     "a": "Équation caractéristique r² + ar + b = 0.\n1) r = ±1 : y = C₁eˣ + C₂e^(−x). 2) r = ±i : y = A cos x + B sin x. 3) r = 1 ou 3 : y = C₁eˣ + C₂e^(3x). 4) r = −2 ± i : y = e^(−2x)(A cos x + B sin x). 5) r = 1 double : y = (C₁x + C₂)eˣ. 6) r = −1/2 double : y = (C₁x + C₂)e^(−x/2)."
+    },
+    {
+     "k": "book",
+     "src": "p. 112, ex. 4 (1, 3, 11)",
+     "q": "Solutions vérifiant les conditions : 1) y″ + 4y = 0, y(π/2) = −1, y′(π/2) = 1 ; 3) y″ + 9y = 0, y(π) = 1, y′(π) = 0 ; 11) y″ − 4y′ = 0, y(0) = 8, y′(0) = 4.",
+     "a": "1) y = A cos 2x + B sin 2x : y(π/2) = −A = −1 ⇒ A = 1 ; y′(π/2) = −2B = 1 ⇒ B = −1/2. y = cos 2x − (1/2)sin 2x.\n3) y = A cos 3x + B sin 3x : −A = 1, −3B = 0 : y = −cos 3x.\n11) y = C₁ + C₂e^(4x) : C₁ + C₂ = 8 et 4C₂ = 4 : y = 7 + e^(4x)."
+    },
+    {
+     "k": "book",
+     "src": "p. 112, ex. 5 et 6",
+     "q": "1) Résoudre y″ − y′ − 2y = 0, puis trouver g telle que g(0) = 3 et g′(0) = 0 ; signe de g.\n2) Résoudre g″ − 2g′ + g = 0 ; trouver la solution dont la courbe passe par I(0 ; 4) avec une tangente de coefficient directeur 2 en ce point.",
+     "a": "1) r = 2 ou −1 : y = C₁e^(2x) + C₂e^(−x). C₁ + C₂ = 3 et 2C₁ − C₂ = 0 ⇒ C₁ = 1, C₂ = 2 : g(x) = e^(2x) + 2e^(−x) > 0.\n2) g(x) = (Ax + B)eˣ ; g(0) = B = 4 ; g′(0) = A + B = 2 ⇒ A = −2 : g(x) = (4 − 2x)eˣ."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Résoudre y′ = 2y + 3 et trouver la solution telle que y(0) = 1.",
+     "a": "Solution constante y = −3/2 ; solutions générales y = Ce^(2x) − 3/2. y(0) = 1 ⇒ C = 5/2 : y = (5/2)e^(2x) − 3/2."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un thé à 90 °C refroidit dans une pièce à 20 °C. Sa température θ(t) (t en minutes) vérifie θ′ = −0,1(θ − 20).\n1) Résoudre cette équation avec θ(0) = 90.\n2) Au bout de combien de temps le thé est-il à 55 °C ?",
+     "a": "1) y = θ − 20 vérifie y′ = −0,1y : θ(t) = 20 + 70e^(−0,1t).\n2) 70e^(−0,1t) = 35 ⇔ e^(−0,1t) = 1/2 ⇔ t = 10 ln 2 ≈ 6,9 min."
+    }
    ]
   },
   {
@@ -891,6 +1249,44 @@
       "det(u⃗ ; v⃗) = xy’ − x’y ; det(v⃗ ; u⃗) = −det(u⃗ ; v⃗).",
       "Aire du triangle ABC = ½|det(AB⃗ ; AC⃗)| ; aire du parallélogramme ABCD = |det(AB⃗ ; AD⃗)|."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 121, ex. 3",
+     "q": "ABC est un triangle ; E = bar{(A ; 1), (B ; 2)}, F = bar{(B ; 1), (C ; 2)}, G = bar{(C ; 1), (A ; 2)}. Avec les affixes, montrer que ABC et EFG ont le même centre de gravité.",
+     "a": "e = (a + 2b)/3, f = (b + 2c)/3, g = (c + 2a)/3. (e + f + g)/3 = (3a + 3b + 3c)/9 = (a + b + c)/3 : même centre de gravité."
+    },
+    {
+     "k": "book",
+     "src": "p. 121, ex. 4",
+     "q": "A(2 + i), B(1 + 2i), C(3 + 3i) (unité 1 cm). 1) Aire S du triangle ABC. 2) AB et AC. 3) Valeur exacte de sin Â.",
+     "a": "1) AB⃗(−1 ; 1), AC⃗(1 ; 2) : det = −2 − 1 = −3 ; S = (1/2)|det| = 3/2 cm².\n2) AB = |−1 + i| = √2 ; AC = |1 + 2i| = √5.\n3) S = (1/2)AB × AC × sin Â ⇒ sin Â = 3/√10."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "A(1), B(2 + i), C(i). Calculer (c − a)/(b − a) et en déduire la nature du triangle ABC.",
+     "a": "(−1 + i)/(1 + i) = (−1 + i)(1 − i)/2 = i : module 1 et argument π/2. AC = AB et (AB⃗ ; AC⃗) = π/2 : ABC est rectangle isocèle direct en A."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Montrer que les points d’affixes 1, i, −1 et −i sont cocycliques, puis que A(1 + i), B(3 + i), C(3 + 3i), D(1 + 3i) aussi.",
+     "a": "Les quatre premiers sont à la distance 1 de O. Pour ABCD : c’est un carré de centre 2 + 2i ; chaque sommet est à la distance √2 du centre."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "A(1 ; 2), B(3 ; 5), C(7 ; 11). Les points sont-ils alignés ?",
+     "a": "det(AB⃗ ; AC⃗) = 2 × 9 − 3 × 6 = 0 : alignés."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un terrain triangulaire a pour sommets O(0 ; 0), P(40 ; 10) et Q(10 ; 30) (unité 1 m). Calculer son aire, puis son prix à 800 UM le m².",
+     "a": "Aire = (1/2)|det(OP⃗ ; OQ⃗)| = (1/2)|40 × 30 − 10 × 10| = 550 m². Prix : 550 × 800 = 440 000 UM."
     }
    ]
   },
@@ -960,6 +1356,50 @@
       "Coplanaires : sécantes, strictement parallèles ou confondues ; sinon non coplanaires."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 133, ex. 1",
+     "q": "ABC est un triangle isocèle en C et C est le milieu d’un segment [EF]. Montrer que AE² + AF² = BE² + BF².",
+     "a": "Théorème de la médiane dans les triangles AEF et BEF (C milieu de [EF]) : AE² + AF² = 2AC² + EF²/2 et BE² + BF² = 2BC² + EF²/2. Comme AC = BC, les deux sommes sont égales."
+    },
+    {
+     "k": "book",
+     "src": "p. 133, ex. 2",
+     "q": "C est un cercle de diamètre [OB] ; A est un point de C, H son projeté orthogonal sur (OB). Une droite passant par O coupe (AH) en N et recoupe C en M. Montrer que OM⃗ · ON⃗ = OA².",
+     "a": "A ∈ C : le projeté de B sur (OA) est A, donc OA⃗ · OB⃗ = OA² ; le projeté de A sur (OB) est H, donc OA⃗ · OB⃗ = OH⃗ · OB⃗. N ∈ (AH) se projette aussi en H : ON⃗ · OB⃗ = OH⃗ · OB⃗ = OA². De même M ∈ C : OM⃗ · OB⃗ = OM². Comme ON⃗ = λOM⃗ : ON⃗ · OB⃗ = λOM² = OM⃗ · ON⃗. Donc OM⃗ · ON⃗ = OA²."
+    },
+    {
+     "k": "book",
+     "src": "p. 133, ex. 4",
+     "q": "P₁ : x + y + 1 = 0 et P₂ : x − y + z = 0.\n1) Montrer que P₁ et P₂ sont orthogonaux ; donner une représentation paramétrique de leur droite d’intersection d.\n2) A(1 ; 1 ; 1) : distances de A à P₁, à P₂ puis à d.",
+     "a": "1) n⃗₁(1 ; 1 ; 0) · n⃗₂(1 ; −1 ; 1) = 0. Direction n⃗₁ ∧ n⃗₂ = (1 ; −1 ; −2), point (0 ; −1 ; −1) : x = t, y = −1 − t, z = −1 − 2t.\n2) d(A ; P₁) = 3/√2 ; d(A ; P₂) = 1/√3. Les plans étant perpendiculaires : d(A ; d)² = 9/2 + 1/3 = 29/6, d(A ; d) = √(29/6) ≈ 2,20."
+    },
+    {
+     "k": "book",
+     "src": "p. 133, ex. 6",
+     "q": "d passe par A(1 ; −1 ; 2) de vecteur u⃗ = 3i⃗ + j⃗ − k⃗ ; d′ passe par B(8 ; −1 ; 3) de vecteur v⃗ = −i⃗ + 2j⃗ − 3k⃗. Démontrer que d et d′ sont coplanaires.",
+     "a": "Il suffit que AB⃗(7 ; 0 ; 1), u⃗ et v⃗ soient coplanaires : det = 7(1 × (−3) − (−1) × 2) − 0 + 1(3 × 2 − 1 × (−1)) = −7 + 7 = 0."
+    },
+    {
+     "k": "book",
+     "src": "p. 133, ex. 7",
+     "q": "C est le cylindre d’axe (O ; k⃗) passant par A(−3 ; 4 ; 2). 1) Équation de C. 2) Pour quelles valeurs de p le plan y = p coupe-t-il C suivant une droite ? suivant deux droites ?",
+     "a": "1) Rayon √(9 + 16) = 5 : x² + y² = 25.\n2) Dans le plan y = p : x² = 25 − p². Une droite (plan tangent) si p = ±5 ; deux droites si −5 < p < 5."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "u⃗(1 ; 2 ; 3) et v⃗(0 ; 1 ; −1). Calculer u⃗ ∧ v⃗ et l’aire du parallélogramme construit sur u⃗ et v⃗.",
+     "a": "u⃗ ∧ v⃗ = (2 × (−1) − 3 × 1 ; 3 × 0 − 1 × (−1) ; 1 × 1 − 2 × 0) = (−5 ; 1 ; 1). Aire = ‖u⃗ ∧ v⃗‖ = √27 = 3√3."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Repère orthonormé (unité 1 m). Le pan d’un toit est dans le plan x + y + z − 6 = 0 ; le sommet d’une antenne est en A(2 ; 3 ; 10). Quelle est la distance du sommet de l’antenne au toit ?",
+     "a": "d = |2 + 3 + 10 − 6|/√3 = 9/√3 = 3√3 ≈ 5,2 m."
+    }
    ]
   },
   {
@@ -1028,6 +1468,38 @@
       "R(Ω1 ; θ1) ∘ R(Ω2 ; θ2) : rotation d’angle θ1 + θ2, ou translation si θ1 + θ2 = 0 [2π].",
       "H1 ∘ H2 : homothétie de rapport k1k2, ou translation si k1k2 = 1."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 143, ex. 3",
+     "q": "ABCD est un carré direct de centre I ; t = t_(AD⃗), R₁ = R(A ; −π/2), R₂ = R(B ; −π/2), f = t∘R₁ et g = R₂∘R₁.\n1) Déterminer f(A) et caractériser f. 2) Déterminer g(A) et caractériser g. 3) Exprimer c et d à l’aide de a et b.",
+     "a": "1) f(A) = t(A) = D. f est une rotation d’angle −π/2 ; comme IA = ID et (IA⃗ ; ID⃗) = −π/2, f = R(I ; −π/2).\n2) g(A) = R₂(A) = C. Angle −π/2 − π/2 = π : g est une symétrie centrale ; I est le milieu de [AC] : g = S_I.\n3) R(B ; −π/2) envoie A sur C : c − b = −i(a − b), soit c = −ia + ib + b. D = bar{(A ; 1), (B ; −1), (C ; 1)} : d = a − b + c = a − ia + ib."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Caractériser les transformations : a) z′ = 2z + 3 − i ; b) z′ = −z + 2 + 4i ; c) z′ = e^(iπ/3) z.",
+     "a": "a) Point fixe ω = −3 + i : homothétie de centre −3 + i et de rapport 2.\nb) Symétrie centrale de centre 1 + 2i (point fixe).\nc) Rotation de centre O et d’angle π/3 ; l’image de 2 est 1 + i√3."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "(D) et (D′) sont deux droites parallèles distantes de d. Quelle est la nature de S_(D′)∘S_(D) ?",
+     "a": "Une translation de vecteur 2u⃗, où u⃗ est le vecteur orthogonal aux droites allant de (D) vers (D′), de norme d."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Quelle est la composée de deux homothéties h(Ω ; k) et h(Ω′ ; k′) lorsque kk′ ≠ 1 ? et lorsque kk′ = 1 ?",
+     "a": "Si kk′ ≠ 1 : une homothétie de rapport kk′ (son centre est sur (ΩΩ′)). Si kk′ = 1 : une translation (l’identité si Ω = Ω′)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un robot, sur un plan muni d’un repère complexe, tourne autour de O d’un angle π/2 puis se déplace de la translation de vecteur d’affixe 3 + i.\n1) Écrire la transformation sous forme complexe.\n2) Montrer qu’il s’agit d’une rotation et trouver son centre.",
+     "a": "1) z′ = iz + 3 + i.\n2) Rotation d’angle π/2 (coefficient i). Centre : ω = iω + 3 + i ⇔ ω = (3 + i)/(1 − i) = (3 + i)(1 + i)/2 = 1 + 2i."
     }
    ]
   },
@@ -1099,6 +1571,44 @@
       ]
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 154, ex. 4",
+     "q": "θ ∈ [0 ; π/2[ et f_θ : z ↦ z′ = (1 + i tan θ)z.\n1) Nature et éléments de f_θ. 2) Pour θ ∈ ]0 ; π/2[, montrer que OMM′ est rectangle (M ≠ O). 3) A(1) et A_θ = f_θ(A) : ensemble des points A_θ.",
+     "a": "1) θ = 0 : identité. Sinon 1 + i tan θ = (1/cos θ)e^(iθ) : similitude directe de centre O, d’angle θ et de rapport 1/cos θ.\n2) (z − z′)/z = −i tan θ : imaginaire pur, donc (M′M⃗ ; MO⃗) droit : OMM′ est rectangle en M.\n3) A_θ = 1 + i tan θ : quand θ décrit [0 ; π/2[, A_θ décrit la demi-droite x = 1, y ≥ 0."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Caractériser la similitude z′ = (1 + i)z + 2.",
+     "a": "Rapport |1 + i| = √2, angle π/4. Centre : ω = (1 + i)ω + 2 ⇔ −iω = 2 ⇔ ω = 2i."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Déterminer la similitude directe qui envoie A(1) sur A′(i) et B(2) sur B′(1 + 2i).",
+     "a": "z′ = az + b : a + b = i et 2a + b = 1 + 2i ⇒ a = 1 + i, b = −1. Rapport √2, angle π/4, centre ω tel que −iω = −1 : ω = −i."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Quelle est la transformation d’écriture z′ = i z̄ ?",
+     "a": "C’est une isométrie indirecte. Points fixes : x + iy = y + ix ⇔ x = y. C’est la réflexion d’axe la droite y = x."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Caractériser le déplacement z′ = iz + 2.",
+     "a": "Rotation d’angle π/2 ; centre ω = 2/(1 − i) = 1 + i."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un logiciel fait tourner une image de 90° et la réduit de moitié autour du point O : z′ = (i/2)z.\n1) Où va le coin d’affixe 4 + 2i ?\n2) On applique deux fois la transformation : quelle est la transformation obtenue ?",
+     "a": "1) (i/2)(4 + 2i) = −1 + 2i.\n2) z″ = (i/2)²z = −z/4 : homothétie de centre O et de rapport −1/4 (rotation de 180° et réduction au quart)."
+    }
    ]
   },
   {
@@ -1147,6 +1657,38 @@
       "Points : A (t = 0), B (t = π/4), C (t = π/3), D (t = π/2) ; tangentes (0 ; 2), (−3√2/2 ; 0), (0 ; −1), (3 ; −2).",
       "E (t = π/6) : (0 ; √3/2), tangente (−3 ; 1)."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 167, ex. 5",
+     "q": "Étudier et représenter la courbe C définie par x(t) = 2cos t, y(t) = sin 2t.",
+     "a": "Période 2π. x(−t) = x(t), y(−t) = −y(t) : symétrie par rapport à (Ox). x(π − t) = −x(t), y(π − t) = −y(t) : symétrie par rapport à O. On étudie sur [0 ; π/2] : x′(t) = −2sin t ≤ 0, y′(t) = 2cos 2t. x décroît de 2 à 0 ; y croît de 0 à 1 sur [0 ; π/4] puis décroît jusqu’à 0. Tangente verticale en M(0) = (2 ; 0), horizontale en M(π/4) = (√2 ; 1) ; en M(π/2) = O, vecteur directeur (−2 ; −2). On complète par les symétries : la courbe a la forme d’un « huit » couché."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Reconnaître les courbes : a) x = 3cos t, y = 2sin t ; b) x = t + 1/t, y = t − 1/t (t > 0).",
+     "a": "a) x²/9 + y²/4 = cos²t + sin²t = 1 : ellipse de demi-axes 3 et 2.\nb) x² − y² = (t + 1/t)² − (t − 1/t)² = 4 : branche de l’hyperbole x² − y² = 4 (x ≥ 2)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Courbe x = t², y = t³ − 3t. Points à tangente horizontale, à tangente verticale ; point double.",
+     "a": "y′ = 3t² − 3 = 0 ⇔ t = ±1 : tangentes horizontales en (1 ; −2) et (1 ; 2). x′ = 2t = 0 ⇔ t = 0 : tangente verticale en (0 ; 0). Point double : x(t) = x(−t) et y(−t) = −y(t), il faut y(t) = 0 avec t ≠ 0 : t = ±√3, point (3 ; 0)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Cycloïde x = t − sin t, y = 1 − cos t : vecteur dérivé et tangente au point de paramètre π/2.",
+     "a": "x′ = 1 − cos t, y′ = sin t ; en t = π/2 : vecteur (1 ; 1), point (π/2 − 1 ; 1). Tangente : y − 1 = x − (π/2 − 1), soit y = x + 2 − π/2."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un ballon est frappé ; sa position (en m) après t secondes est x(t) = 20t, y(t) = −5t² + 15t.\n1) À quel instant atteint-il sa hauteur maximale ? Quelle est cette hauteur ?\n2) Où retombe-t-il ?\n3) Donner l’équation cartésienne de la trajectoire.",
+     "a": "1) y′(t) = −10t + 15 = 0 ⇔ t = 1,5 s : y = 11,25 m (et x = 30 m).\n2) y = 0 ⇔ t = 3 s : x = 60 m.\n3) t = x/20 : y = −x²/80 + 3x/4 (arc de parabole)."
     }
    ]
   },
@@ -1223,6 +1765,44 @@
      "lines": [
       "H ∈ D ; la médiatrice de [FH] coupe la perpendiculaire à D en H en un point M de la parabole ; cette médiatrice est la tangente en M."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 174, ex. 1",
+     "q": "ABCD est un carré direct de centre O ; I et J sont les milieux de [AD] et [CD]. P est la parabole de sommet I et de foyer A.\n1) Déterminer la directrice de P. 2) Montrer que B ∈ P et préciser la tangente en B. 3) P′ est l’image de P par le quart de tour indirect de centre O : nature et éléments de P′.",
+     "a": "1) L’axe focal est (IA) ; D est le symétrique de A par rapport à I et (CD) ⊥ (IA) en D : la directrice est (CD).\n2) BA = BC et C est le projeté de B sur (CD) : B ∈ P. La tangente en B est la bissectrice de l’angle entre (BA) et (BC), c’est-à-dire la médiatrice de [AC], soit (BD).\n3) Le quart de tour envoie I sur J, A sur D et (CD) sur (BC) : P′ est la parabole de sommet J, de foyer D et de directrice (BC)."
+    },
+    {
+     "k": "book",
+     "src": "p. 174, ex. 2",
+     "q": "ABC est isocèle en C, I milieu de [AB], AB = 6 et IC = 2. E est l’ellipse de foyers A et B passant par C. 1) Longueur du grand axe. 2) Les sommets de E. 3) Excentricité.",
+     "a": "1) 2a = CA + CB = 2CA ; AC² = 9 + 4 = 13 : 2a = 2√13.\n2) C est un sommet (sur l’axe non focal (IC)), ainsi que son symétrique D par rapport à (AB) ; les sommets de l’axe focal sont sur (AB) à la distance a = √13 de I.\n3) c = IA = 3 : e = 3/√13 = 3√13/13."
+    },
+    {
+     "k": "book",
+     "src": "p. 178, ex. 5",
+     "q": "Nature et éléments de : 1) (x − 1)² + 2y = 0 ; 2) 4(x − 1)² + 16y² = 1 ; 3) x² − 2y² + 2x − 4y = 0.",
+     "a": "1) (x − 1)² = −2y : parabole de sommet (1 ; 0), d’axe x = 1, tournée vers le bas ; p = 1, foyer (1 ; −1/2), directrice y = 1/2.\n2) (x − 1)²/(1/4) + y²/(1/16) = 1 : ellipse de centre (1 ; 0), a = 1/2, b = 1/4, c = √3/4, foyers (1 ± √3/4 ; 0), e = √3/2.\n3) (x + 1)² − 2(y + 1)² = −1 ⇔ (y + 1)²/(1/2) − (x + 1)² = 1 : hyperbole de centre (−1 ; −1), axe focal vertical, sommets (−1 ; −1 ± √2/2), asymptotes y + 1 = ±(x + 1)/√2, e = √3."
+    },
+    {
+     "k": "book",
+     "src": "p. 178, ex. 8",
+     "q": "E est l’ensemble des points M(x ; y) tels que 25(x² + y²) = (3x − 16)².\n1) Montrer que E est une ellipse de foyer O et de directrice x = 16/3 ; excentricité ?\n2) θ étant une mesure de (u⃗ ; OM⃗), montrer que OM = 16/(5 + 3cos θ).",
+     "a": "1) 5OM = |3x − 16| ⇔ OM = (3/5)|x − 16/3| = (3/5) d(M ; Δ) : ellipse de foyer O, directrice Δ et excentricité e = 3/5 < 1.\n2) Les points de E vérifient x < 16/3, donc 5OM = 16 − 3x avec x = OM cos θ : OM(5 + 3cos θ) = 16."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Donner l’équation réduite de l’ellipse de foyers (±4 ; 0) et de grand axe 10.",
+     "a": "a = 5, c = 4, b² = a² − c² = 9 : x²/25 + y²/9 = 1."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une antenne parabolique a une section d’équation y = x²/(4f) (unité : cm), où f est la distance du sommet au foyer. Son diamètre est 60 cm et sa profondeur 9 cm.\n1) Calculer f.\n2) Où faut-il placer le récepteur ?",
+     "a": "1) Le bord (30 ; 9) est sur la parabole : 9 = 900/(4f) ⇒ f = 25 cm.\n2) Au foyer, sur l’axe, à 25 cm du fond de l’antenne."
     }
    ]
   },
@@ -1337,6 +1917,56 @@
       "√(0,3 × 0,7/100) ≈ 0,0458 ; 1,96 × 0,0458 ≈ 0,0898.",
       "In ≈ [0,210 ; 0,390]."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 194, ex. 5",
+     "q": "Un dé a 3 faces blanches, 2 vertes et 1 rouge. Rouge : on gagne 2 ; vert : on gagne 1 ; blanc : on relance, puis rouge : gain 3, vert : perte 1, blanc : ni gain ni perte. X est le gain. Valeurs, loi et espérance de X.",
+     "a": "X ∈ {−1 ; 0 ; 1 ; 2 ; 3}. P(X = 2) = 1/6 ; P(X = 1) = 1/3 ; P(X = 3) = (1/2)(1/6) = 1/12 ; P(X = −1) = (1/2)(1/3) = 1/6 ; P(X = 0) = 1/4. E(X) = 2/6 + 1/3 + 3/12 − 1/6 = 3/4."
+    },
+    {
+     "k": "book",
+     "src": "p. 194, ex. 6",
+     "q": "Un tireur touche la cible avec la probabilité 0,7. Il tire 3 fois ; Y est le nombre de succès. Loi de Y, E(Y), V(Y), σ(Y).",
+     "a": "Y suit B(3 ; 0,7) : P(Y = 0) = 0,027 ; P(Y = 1) = 0,189 ; P(Y = 2) = 0,441 ; P(Y = 3) = 0,343. E(Y) = 2,1 ; V(Y) = 3 × 0,7 × 0,3 = 0,63 ; σ(Y) = √0,63 ≈ 0,79."
+    },
+    {
+     "k": "book",
+     "src": "p. 186, exemple 7",
+     "q": "Une question propose trois réponses dont une seule est juste ; le candidat répond au hasard. Un test comporte 4 questions de ce type. Probabilité de répondre juste à exactement 3 questions ? aux 4 ?",
+     "a": "Schéma de Bernoulli n = 4, p = 1/3. P(3) = C(4 ; 3)(1/3)³(2/3) = 8/81 ; P(4) = (1/3)⁴ = 1/81."
+    },
+    {
+     "k": "book",
+     "src": "p. 197, ex. 2",
+     "q": "Une urne contient 3 boules blanches et 3 noires ; on tire simultanément 3 boules. A : « au moins une blanche » ; B : « au moins deux noires » ; C : « au moins une blanche et au moins une noire ».\na) P(A), P(B), P(C). b) P(A|B), P(A|C), P(B|A), P(B|C), P(C|A), P(C|B).",
+     "a": "C(6 ; 3) = 20. a) P(A) = 1 − 1/20 = 19/20 ; P(B) = (C(3 ; 2) × 3 + 1)/20 = 1/2 ; P(C) = 1 − 2/20 = 9/10.\nb) A ∩ B = B ∩ C = « 2 noires et 1 blanche » : 9/20 ; C ⊂ A.\nP(A|B) = 9/10 ; P(A|C) = 1 ; P(B|A) = 9/19 ; P(B|C) = 1/2 ; P(C|A) = 18/19 ; P(C|B) = 9/10."
+    },
+    {
+     "k": "book",
+     "src": "p. 197, ex. 4",
+     "q": "Une urne contient 4 boules vertes (1 F chacune), 2 blanches (2 F) et 1 rouge (5 F) ; on tire 3 boules ; X est le gain.\n1) Loi de X. 2) a) E(X). b) Quelle valeur donner à chaque boule blanche pour que E(X) = 0 ?",
+     "a": "1) C(7 ; 3) = 35. X = 3 : 4/35 ; X = 4 : 12/35 ; X = 5 : 4/35 ; X = 7 : 6/35 ; X = 8 : 8/35 ; X = 10 : 1/35.\n2) a) E(X) = 196/35 = 5,6 F.\nb) En moyenne on tire 12/7 vertes, 6/7 blanches et 3/7 rouge : (12 + 6w + 15)/7 = 0 ⇒ w = −4,5 F."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "f(t) = 2t sur [0 ; 1]. Vérifier que f est une densité ; calculer P(X ≤ 1/2) et E(X) = ∫₀¹ t f(t) dt.",
+     "a": "f est continue, positive et ∫₀¹ 2t dt = 1. P(X ≤ 1/2) = [t²]₀^(1/2) = 1/4. E(X) = ∫₀¹ 2t² dt = 2/3."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Une pièce est lancée 400 fois et donne 224 « pile ». Au seuil de 95 %, peut-on considérer qu’elle est équilibrée ?",
+     "a": "p = 0,5 : I = 0,5 ± 1,96√(0,25/400) = 0,5 ± 0,049 = [0,451 ; 0,549]. f = 0,56 ∉ I : on rejette l’hypothèse « pièce équilibrée » au risque de 5 %."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "1) Un bus passe toutes les 20 minutes ; l’attente X d’un usager suit la loi uniforme sur [0 ; 20]. Probabilité d’attendre moins de 5 min ? Attente moyenne ?\n2) Un sondage auprès de 625 usagers : 350 souhaitent un bus plus fréquent. Donner un intervalle de confiance au niveau 0,95. Une majorité le souhaite-t-elle ?",
+     "a": "1) P(X ≤ 5) = 5/20 = 1/4 ; E(X) = 10 min.\n2) f = 0,56 ; [0,56 − 1/25 ; 0,56 + 1/25] = [0,52 ; 0,60] : toutes les valeurs dépassent 0,5, une majorité le souhaite très probablement."
     }
    ]
   }
