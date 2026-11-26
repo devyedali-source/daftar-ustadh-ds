@@ -113,7 +113,7 @@ class AbsenceImporter(private val db: DaftarDatabase) {
             c.levelCode != file.levelCode || c.number != file.number
         ) return AbsenceCheck.WrongClass(file)
         val owner = db.institutionDao().getById(c.institutionId)
-        if (owner == null || owner.wilaya != file.wilaya ||
+        if (owner == null || owner.wilaya.trim().replace(Regex("\\s+"), " ").lowercase() != file.wilaya.trim().replace(Regex("\\s+"), " ").lowercase() ||
             (owner.schoolListId != null && file.schoolListId != null && owner.schoolListId != file.schoolListId)
         ) return AbsenceCheck.WrongClass(file)
         if (!c.managed) return AbsenceCheck.NotManaged(file)

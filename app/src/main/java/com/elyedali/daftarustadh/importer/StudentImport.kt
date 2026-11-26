@@ -124,7 +124,9 @@ object StudentImport {
 
         val usedRolls = existing.map { it.rollNumber }.toHashSet()
         val existingRims = existing.map { it.rim }.filter { it.isNotBlank() }.toHashSet()
-        val existingNames = existing.map { norm(it.nameAr) + "|" + norm(it.nameFr) }.toHashSet()
+        // أسماء القسم الحالية مع أرقام نداء أصحابها
+        val existingNames = existing.groupBy { norm(it.nameAr) + "|" + norm(it.nameFr) }.mapValues { e -> e.value.map { it.rollNumber }.toSet() }
+        val fileKeys = HashSet<String>()
         var nextRoll = (existing.maxOfOrNull { it.rollNumber } ?: 0) + 1
         var renumbered = 0; var dup = 0; var empty = 0
         val now = System.currentTimeMillis()
@@ -135,8 +137,13 @@ object StudentImport {
             if (ar.isBlank() && fr.isBlank()) { empty++; continue }
             val rim = cell(r, cRim)
             val nameKey = norm(ar) + "|" + norm(fr)
-            if ((rim.isNotBlank() && rim in existingRims) || nameKey in existingNames) { dup++; continue }
-            var roll = cell(r, cRoll).filter(Char::isDigit).toIntOrNull()
+            val rawRoll = cell(r, cRoll).filter(Char::isDigit)
+            // مكرر: نفس الرقم الوطني للتلميذ، أو اسم موجود في القسم من قبل بنفس رقم النداء (إعادة استيراد نفس اللائحة)،
+            // أو نفس الاسم بنفس رقم النداء في الملف. أما تلميذان بنفس الاسم (تشابه أسماء) فيُضافان معًا ويظهران في المعاينة قبل الحفظ
+            if ((rim.isNotBlank() && rim in existingRims) || (nameKey in existingNames && (rawRoll.isEmpty() || existingNames.getValue(nameKey).contains(rawRoll.toIntOrNull() ?: -1))) ||
+                (rawRoll.isNotEmpty() && "$nameKey#$rawRoll" in fileKeys)) { dup++; continue }
+            fileKeys.add("$nameKey#$rawRoll")
+            var roll = rawRoll.toIntOrNull()
             if (roll == null || roll <= 0 || roll in usedRolls) {
                 while (nextRoll in usedRolls) nextRoll++
                 roll = nextRoll
@@ -144,7 +151,6 @@ object StudentImport {
             }
             usedRolls.add(roll)
             if (rim.isNotBlank()) existingRims.add(rim)
-            existingNames.add(nameKey)
             out.add(
                 StudentEntity(
                     id = UUID.randomUUID().toString(),

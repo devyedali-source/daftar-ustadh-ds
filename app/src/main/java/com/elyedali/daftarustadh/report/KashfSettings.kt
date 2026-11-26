@@ -27,7 +27,9 @@ object KashfSettings {
 
     fun decodeThresholds(text: String?): Map<String, Double> = try {
         val o = JSONObject(text ?: "{}")
-        o.keys().asSequence().associateWith { o.getDouble(it) }
+        // معدل النجاح يبقى بين 8 و10 مهما وصل في ملف (ملف الإدارة الكامل أو نسخة Drive)
+        o.keys().asSequence().associateWith { o.getDouble(it) }.filterValues { !it.isNaN() }
+            .mapValues { it.value.coerceIn(MIN_THRESHOLD, MAX_THRESHOLD) }
     } catch (e: Exception) { emptyMap() }
 
     fun encodeThresholds(map: Map<String, Double>): String =

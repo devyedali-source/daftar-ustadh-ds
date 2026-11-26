@@ -317,10 +317,27 @@ object DriveSync {
                     skip = was - localKeys
                 }
                 val verb = if (replace || remoteWins) "INSERT OR REPLACE" else "INSERT OR IGNORE"
+                // سطر له وقت تعديل (النقاط، حصص الغياب، سجلات المواد...): عند الدمج يغلب الأحدث تعديلًا في السطر نفسه،
+                // لا الهاتف الأحدث تعديلًا في مجمله (وإلا محت نسخةُ هاتفٍ نقطةً عُدّلت بعدها في الهاتف الآخر)
+                val timeCol = listOf("updatedAt", "receivedAt").firstOrNull { it in cols }
+                val pkWhere = pk.joinToString(" AND ") { "`$it` = ?" }
                 for (k in 0 until rows.length()) {
                     val o = rows.getJSONObject(k)
                     if (t == "app_meta" && o.optString("key") in SKIP_META) continue
                     if (skip.isNotEmpty() && keyOf(o, pk) in skip) continue
+                    var rowVerb = verb
+                    if (!replace && timeCol != null && pk.isNotEmpty() && o.has(timeCol)) {
+                        val keyArgs = pk.map { n -> o.opt(n)?.takeIf { it != JSONObject.NULL } }.toTypedArray()
+                        val localT = w.query("SELECT `$timeCol` FROM `$t` WHERE $pkWhere", keyArgs).use { cur ->
+                            if (cur.moveToFirst() && !cur.isNull(0)) cur.getLong(0) else null
+                        }
+                        if (localT != null) {
+                            val remoteT = o.optLong(timeCol)
+                            val write = if (remoteT != localT) remoteT > localT else remoteWins
+                            if (!write) continue
+                            rowVerb = "INSERT OR REPLACE"
+                        }
+                    }
                     val names = o.keys().asSequence().filter { it in cols }.toList()
                     if (names.isEmpty()) continue
                     val args = names.map { n ->
@@ -333,7 +350,7 @@ object DriveSync {
                     }.toTypedArray()
                     // تعذّر سطر: يُلغى الاسترجاع كله (يُرجَع عن كل ما كُتب) ولا يُرفع شيء، بدل ضياع صامت
                     try {
-                        w.execSQL("$verb INTO `$t` (${names.joinToString { "`$it`" }}) VALUES (${names.joinToString { "?" }})", args)
+                        w.execSQL("$rowVerb INTO `$t` (${names.joinToString { "`$it`" }}) VALUES (${names.joinToString { "?" }})", args)
                     } catch (e: Exception) { throw SyncException("restore $t") }
                 }
             }
