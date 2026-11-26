@@ -715,6 +715,50 @@
       ]
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 73, ex. 3",
+     "q": "Un brin d’ADN a la séquence 3’ ACC GAC TAT ATA TAT CCG CAC TAC TTC GAC ACT 5’. 1) Séquence de l’autre brin. 2) Enzyme qui fabrique l’ARNm et où elle se fixe. 3) Séquence de l’ARNm si ce brin est transcrit.",
+     "a": "1) 5’ TGG CTG ATA TAT ATA GGC GTG ATG AAG CTG TGA 3’ (A–T, C–G).\n2) L’ARN polymérase, qui se fixe au promoteur, au début du gène, et lit le brin transcrit dans le sens 3’ → 5’.\n3) 5’ UGG CUG AUA UAU AUA GGC GUG AUG AAG CUG UGA 3’ (même séquence que le brin non transcrit, avec U à la place de T). À partir du codon AUG : Met – Lys – Leu – stop (UGA)."
+    },
+    {
+     "k": "book",
+     "src": "p. 74, ex. 4 (1 à 5)",
+     "q": "1) La méiose produit : 2 cellules haploïdes / 4 diploïdes / 4 haploïdes / 2 diploïdes ? 2) La transcription utilise : l’ARN polymérase sur le brin codant / l’ARN polymérase sur le brin non codant / l’ADN polymérase ? 3) La réplication de l’ADN a lieu grâce à : l’ARN polymérase / l’ADN polymérase durant l’interphase ? 4) L’épissage alternatif produit : un seul ARNm / de multiples ARNm / … ? 5) La mitose : source de diversité / donne 4 cellules / conserve le caryotype / produit les gamètes ?",
+     "a": "1) 4 cellules haploïdes à partir d’une cellule diploïde. 2) L’ARN polymérase qui lit le brin non codant (brin transcrit). 3) L’ADN polymérase, pendant la phase S de l’interphase. 4) De multiples ARNm à partir d’un même pré-ARNm. 5) Elle conserve toutes les caractéristiques du caryotype."
+    },
+    {
+     "k": "book",
+     "src": "p. 75, ex. 4 (6 à 14)",
+     "q": "6) Composition d’un chromosome métaphasique ? 8) Combien de nucléofilaments contient-il ? 9) L’ADN est-il le seul constituant du chromosome ? 10) Qu’est-ce qu’un gène ? 11) Caractéristiques de l’interphase ? 12) Évolution des chromosomes au cours du cycle ? 13) Résultat d’un cycle cellulaire ? 14) Nombre de chromosomes humains ?",
+     "a": "6) Deux chromatides réunies par le centromère. 8) Deux. 9) Non : l’ADN est le support de l’information génétique et l’un des constituants (avec des protéines). 10) Une succession de nucléotides codant un polypeptide. 11) Trois étapes (G1, S, G2), avec synthèses moléculaires. 12) Ils se condensent avant la mitose et alternent entre une et deux chromatides. 13) Deux cellules dont les chromosomes ont un nucléofilament. 14) 23 paires (46)."
+    },
+    {
+     "k": "book",
+     "src": "p. 72, ex. 2",
+     "q": "On cultive des cellules somatiques et on mesure la quantité d’ADN par cellule ; à un temps t, on ajoute de la colchicine. Que représentent la phase où la quantité d’ADN double, et celle où elle est divisée par deux ? Quelle est l’action de la colchicine ?",
+     "a": "Le doublement correspond à la réplication (phase S) ; la division par deux à la mitose (anaphase-télophase). La colchicine empêche la formation du fuseau : les chromosomes ne se séparent pas, la quantité d’ADN reste doublée (et peut doubler encore au cycle suivant, polyploïdie)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Une cellule de 2n = 8 chromosomes entre en méiose. Combien de chromosomes et de chromatides en prophase I, à la fin de la méiose I et à la fin de la méiose II ? Combien de combinaisons différentes de gamètes le brassage interchromosomique permet-il ?",
+     "a": "Prophase I : 8 chromosomes, 16 chromatides. Fin de méiose I : n = 4 chromosomes à 2 chromatides. Fin de méiose II : 4 chromosomes à 1 chromatide. Combinaisons : 2ⁿ = 2⁴ = 16 (sans compter les crossing-over)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Expliquer comment la méiose et la fécondation assurent à la fois la stabilité du caryotype et la diversité des individus.",
+     "a": "La méiose divise par deux le nombre de chromosomes (gamètes à n) et la fécondation le rétablit (cellule-œuf à 2n) : le caryotype est stable. Le brassage inter- et intrachromosomique de la méiose et la rencontre au hasard des gamètes créent des combinaisons d’allèles nouvelles."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un enfant atteint de trisomie 21 possède 47 chromosomes.\n1) Quelle anomalie présente son caryotype ?\n2) Expliquer, à l’aide d’un schéma de la méiose, comment un gamète peut contenir deux chromosomes 21.",
+     "a": "1) Trois chromosomes 21 au lieu de deux.\n2) Lors de l’anaphase I (non-disjonction des homologues) ou de l’anaphase II (non-séparation des chromatides), les deux chromosomes 21 partent vers le même pôle : un gamète reçoit deux chromosomes 21 ; fécondé par un gamète normal, il donne une cellule-œuf à 47 chromosomes."
+    }
    ]
   },
   {
@@ -1066,6 +1110,50 @@
       ]
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 108, ex. 6",
+     "q": "Pasteur cultive de la levure dans du glucose avec de moins en moins de dioxygène : milieu riche en O₂ : traces d’éthanol, rendement 250 mg de levure/g de glucose ; milieu pauvre : peu d’éthanol, 40 ; sans O₂ : beaucoup d’éthanol, 5,7. Conclure.",
+     "a": "En présence d’O₂, la levure respire : dégradation complète du glucose, beaucoup d’énergie, forte multiplication. Sans O₂, elle fermente (glucose → éthanol + CO₂) : dégradation incomplète, peu d’énergie, faible croissance. La respiration est bien plus rentable (36-38 ATP contre 2 ATP par glucose)."
+    },
+    {
+     "k": "book",
+     "src": "p. 109, ex. 7",
+     "q": "On stimule un muscle : 1) non traité : le glycogène baisse (1,08 → 0,8 g/kg) et l’acide lactique augmente ; 2) glycolyse bloquée : la phosphocréatine baisse (15-17 → 3-4) ; 3) glycolyse et phosphocréatine bloquées : l’ATP s’annule. a) Source d’énergie dans chaque cas. b) Pourquoi l’ATP est-il la forme d’énergie directement utilisable ?",
+     "a": "a) 1) Glycolyse anaérobie (fermentation lactique) qui régénère l’ATP ; 2) phosphocréatine (PC + ADP → C + ATP) ; 3) seule la réserve d’ATP est consommée.\nb) Dans tous les cas la contraction consomme de l’ATP (son hydrolyse par la myosine fournit l’énergie) ; les autres voies ne servent qu’à le régénérer, sa quantité restant stable tant qu’elles fonctionnent."
+    },
+    {
+     "k": "book",
+     "src": "p. 107, ex. 3",
+     "q": "a) Les fibres rapides ont un réticulum endoplasmique très développé. b) L’injection de Ca²⁺ dans l’hyaloplasme provoque la contraction. c) Le calcium radioactif est dans le réticulum des fibres relâchées, dans l’hyaloplasme des fibres contractées. Interpréter et préciser le rôle du calcium.",
+     "a": "Le réticulum stocke les ions Ca²⁺ ; lors de l’excitation il les libère dans l’hyaloplasme, ce qui déclenche la contraction ; leur repompage (actif, avec ATP) provoque le relâchement. Plus le réticulum est développé, plus ces échanges sont rapides. Le Ca²⁺ démasque les sites de fixation de la myosine sur l’actine."
+    },
+    {
+     "k": "book",
+     "src": "p. 108, ex. 5",
+     "q": "On cultive de la levure dans un liquide sucré, flacon A ouvert, flacon B fermé ; on compte les cellules. Quel flacon donne la plus forte multiplication ? Pourquoi ?",
+     "a": "Le flacon ouvert A (dioxygène disponible) : la levure respire et tire beaucoup plus d’énergie du glucose, elle se multiplie davantage. Dans B, l’O₂ s’épuise, la levure fermente et se multiplie peu."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Écrire les équations bilans de la respiration, de la fermentation alcoolique et de la fermentation lactique, avec le nombre d’ATP produits par molécule de glucose.",
+     "a": "Respiration : C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O (36 à 38 ATP). Fermentation alcoolique : C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (2 ATP). Fermentation lactique : C₆H₁₂O₆ → 2CH₃–CHOH–COOH (2 ATP)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Distinguer chaleur initiale et chaleur retardée lors de la contraction musculaire.",
+     "a": "La chaleur initiale est dégagée pendant la contraction (hydrolyse de l’ATP, réactions anaérobies rapides) ; la chaleur retardée apparaît après, pendant la récupération, et nécessite du dioxygène (respiration qui reconstitue les réserves)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un coureur de 100 m et un marathonien n’utilisent pas les mêmes voies de production d’ATP.\n1) Quelles voies dominent chez chacun ?\n2) Pourquoi le sprinteur est-il essoufflé après la course et pourquoi ses muscles peuvent-ils être douloureux ?",
+     "a": "1) Sprint : réserves d’ATP, phosphocréatine et fermentation lactique (voies anaérobies rapides). Marathon : respiration aérobie (glucose et lipides).\n2) Il rembourse la « dette d’oxygène » (respiration qui élimine l’acide lactique et reconstitue les réserves) ; l’accumulation d’acide lactique contribue aux douleurs et à la fatigue."
+    }
    ]
   },
   {
@@ -1405,6 +1493,44 @@
      "lines": [
       "(Correction : p. 128, le pendage du plan de faille se mesure par rapport à l’horizontale ; le toit est le compartiment situé au-dessus du plan et le mur celui situé au-dessous, quel que soit le compartiment soulevé.)"
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 130, ex. 2 (A et B)",
+     "q": "A) Corriger : 1) Les mouvements des plaques entraînent des séismes à leurs frontières. 2) Les plaques bougent de quelques km/an. 3) Une centaine de plaques recouvrent la Terre. B) Au niveau d’une fosse océanique ; d’une dorsale ; d’une chaîne de collision : que se passe-t-il ?",
+     "a": "A) 1) Exacte. 2) Faux : quelques cm/an. 3) Faux : une douzaine de grandes plaques.\nB) Fosse : une plaque plonge sous une autre. Dorsale : deux plaques s’éloignent. Chaîne de collision : les séismes sont fréquents (le volcanisme y est faible)."
+    },
+    {
+     "k": "book",
+     "src": "p. 131, ex. 2 (C)",
+     "q": "Vrai ou faux ? 1) Les zones de convergence engendrent du volcanisme basaltique. 2) Les fosses océaniques se situent au milieu de l’océan. 3) Une dorsale est couverte de volcans andésitiques. 4) Les plaques se rapprochent au niveau des dorsales. 5) Des séismes se produisent en limite de plaque.",
+     "a": "1) Faux : un volcanisme andésitique explosif. 2) Faux : en bordure (zones de subduction). 3) Faux : basaltiques. 4) Faux : elles s’éloignent (divergence). 5) Vrai."
+    },
+    {
+     "k": "book",
+     "src": "p. 132, ex. 4",
+     "q": "Corriger : 1) Une fosse de subduction est toujours bordée par un arc insulaire. 2) La lithosphère océanique plonge toujours sous un continent. 3) Le magma andésitique doit sa viscosité à sa pauvreté en silice. 4) Les séismes de subduction sont dus à l’étirement de la lithosphère.",
+     "a": "1) Elle peut aussi border un continent (cordillère des Andes). 2) Elle peut plonger sous une autre lithosphère océanique. 3) Il est visqueux car riche en silice. 4) Ils sont dus à la compression et au frottement de la plaque plongeante."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Distinguer faille normale, faille inverse et faille décrochante ; indiquer le type de contrainte associé à chacune.",
+     "a": "Faille normale : le compartiment supérieur descend, extension (dorsales, rifts). Faille inverse : il monte, compression (chaînes de collision). Décrochement : déplacement horizontal (failles transformantes)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Un pli dont les couches les plus anciennes sont au cœur est-il un anticlinal ou un synclinal ? Quelle contrainte l’a formé ?",
+     "a": "Un anticlinal ; il résulte d’une compression (raccourcissement) de roches au comportement souple."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Entre l’Amérique du Sud et l’Afrique, l’Atlantique s’élargit d’environ 3 cm par an.\n1) Quel phénomène se produit au milieu de l’Atlantique ?\n2) Les roches situées à 1500 km de la dorsale ont quel âge environ ?\n3) Que se passe-t-il sur la côte pacifique de l’Amérique du Sud ?",
+     "a": "1) Divergence au niveau de la dorsale médio-atlantique : création de lithosphère océanique.\n2) Chaque plaque s’éloigne de 1,5 cm/an : 1500 km/1,5 cm/an = 1,5 × 10⁸ cm/1,5 = 10⁸ ans, soit environ 100 millions d’années.\n3) Subduction de la plaque Nazca sous l’Amérique : fosse, séismes, volcans andésitiques des Andes."
     }
    ]
   }
