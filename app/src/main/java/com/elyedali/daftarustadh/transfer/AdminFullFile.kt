@@ -269,8 +269,19 @@ class AdminFullFile(val json: JSONObject) {
             // الأساتذة وإعدادات الجدول والكشوف
             val meta = json.optJSONObject("meta")
             meta?.keys()?.forEach { k ->
-                if (k in META_KEYS || k.startsWith(META_PREFIX)) {
+                if (k in META_KEYS) {
                     w.insert("app_meta", SQLiteDatabase.CONFLICT_REPLACE, ContentValues().apply { put("key", k); put("value", meta.optString(k)) })
+                } else if (k.startsWith(META_PREFIX)) {
+                    // وقت آخر سجل وصل من الأستاذ لكل قسم ومادة: برمز القسم عندك (القسم المدموج)، ويبقى الأحدث،
+                    // فلا يُقبل بعد الإدراج سجلٌ أقدم من سجل رُفع في أحد التطبيقين
+                    val parts = k.removePrefix(META_PREFIX).split("|")
+                    if (parts.size != 2) return@forEach
+                    val cid = classMap[parts[0]] ?: return@forEach
+                    val key = "$META_PREFIX$cid|${parts[1]}"
+                    val incoming = meta.optString(k).toLongOrNull() ?: return@forEach
+                    val mine = one(w, "SELECT value FROM app_meta WHERE `key` = ?", key)?.toLongOrNull() ?: 0L
+                    if (incoming > mine)
+                        w.insert("app_meta", SQLiteDatabase.CONFLICT_REPLACE, ContentValues().apply { put("key", key); put("value", incoming.toString()) })
                 }
             }
             outcome = Outcome.Done(classMap.size, stMap.size, gradeCount, merged)

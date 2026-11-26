@@ -131,10 +131,15 @@ private fun sameTeacher(a: String, b: String): Boolean {
         .replace(Regex("^\\s*(الاستاذ|الاستاذه|استاذ|prof\\.?|m\\.|mme)\\s+"), "")
         .replace(Regex("[^\\p{L}\\p{N}]+"), " ").trim()
     val x = n(a); val y = n(b)
-    if (x.isEmpty() || y.isEmpty() || x == y) return true
+    if (x == y) return true
+    // سجل بلا اسم أستاذ لا يُعدّ من الأستاذ المسند للمادة
+    if (x.isEmpty() || y.isEmpty()) return false
     val wx = x.split(" ").toSet(); val wy = y.split(" ").toSet()
-    // كل كلمات الاسم الأقصر موجودة في الأطول (مثل «محمد أحمد» و«محمد أحمد سالم»)
-    return wx.containsAll(wy) || wy.containsAll(wx)
+    // كل كلمات الاسم الأقصر موجودة في الأطول (مثل «محمد أحمد» و«محمد أحمد سالم»)؛
+    // والاسم الأقصر كلمتان على الأقل: اسم من كلمة واحدة («محمد») يشترك فيه أساتذة كثيرون
+    val shorter = if (wx.size <= wy.size) wx else wy
+    val longer = if (shorter === wx) wy else wx
+    return shorter.size >= 2 && longer.containsAll(shorter)
 }
 
 /** نتيجة رفع ملفات النتائج دفعة واحدة. */
