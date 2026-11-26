@@ -104,7 +104,7 @@ fun LessonDialog(
                     }
                     Column(Modifier.weight(1f)) {
                         Text(lesson.title, color = Color.White, fontWeight = FontWeight.Black, fontSize = 17.sp, maxLines = 2)
-                        Text(if (ltr) week else "$subjectLabel — $week", color = Color.White.copy(alpha = 0.85f), fontSize = 12.sp, maxLines = 1)
+                        Text(when { week.isBlank() -> subjectLabel; ltr -> week; else -> "$subjectLabel — $week" }, color = Color.White.copy(alpha = 0.85f), fontSize = 12.sp, maxLines = 1)
                     }
                 }
                 Row(Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {

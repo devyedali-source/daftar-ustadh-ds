@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""تخطيط الثانوية السنوي: لا يوجد تخطيط رسمي، فتُوزَّع دروس الكتاب المدرسي بترتيبها على أسابيع السنة.
+"""تخطيط الثانوية السنوي: لا يوجد تخطيط رسمي بالأسابيع، فتُعرض عناوين دروس الكتاب المدرسي بترتيبها مقسمة على الفصول الثلاثة (بلا أسابيع).
 
 - الرزنامة نفسها في كل المواد (كما في الإعدادية): أسبوع تشخيصي، دروس، اختبار وعطلة في نهاية الفصلين الأول والثاني،
   مراجعة عامة ثم اختبار في نهاية الفصل الثالث.
@@ -80,26 +80,44 @@ def distribute(lessons, weeks):
     return out
 
 
-def rows_for(books_lessons, lang):
+def unit_of(lesson):
+    """عنوان الوحدة/الفصل من بادئة عنوان الدرس («Unité I : …»)، إن وُجدت."""
+    t = lesson["title"]
+    return t.split(" : ")[0].strip() if " : " in t else ""
+
+
+def rows_for(books_lessons, lang, book_titles):
+    """الثانوية: عناوين الدروس مقسمة على الفصول الثلاثة (بلا أسابيع).
+    يُحدَّد فصل كل درس بتوزيعه على أسابيع السنة (حسب عدد صفحاته)، ثم تُجمع عناوين كل فصل بترتيب الكتاب."""
     lesson_weeks = [i for i in range(len(CAL)) if KIND[i][1] == "lesson"]
-    per_book = []
-    for lessons in books_lessons:
-        # كل فصل من الكتاب يوزَّع على أسابيع السنة كلها بترتيبه
-        per_book.append(distribute(lessons, lesson_weeks))
-    rows = []
-    for i in range(len(CAL)):
-        term, k = KIND[i]
-        if k == "lesson":
-            j = lesson_weeks.index(i)
-            items = []
-            for d in per_book:
-                items += d[j]
-        elif k == "exam":
-            items = TXT[lang]["exam"][term]
-        else:
-            items = TXT[lang][k]
-        rows.append({"l": label(i, lang), "w": i + 1, "t": term, "u": "", "k": k, "i": items})
-    return rows
+    terms = {t: [] for t in (1, 2, 3)}
+    two = len(books_lessons) > 1
+    for lessons, btitle in zip(books_lessons, book_titles):
+        d = distribute(lessons, lesson_weeks)
+        week_of = {}
+        for j, items in enumerate(d):
+            for it in items:
+                week_of.setdefault(it, lesson_weeks[j])
+        for l in lessons:
+            t = KIND[week_of.get(l["match"][0], lesson_weeks[-1])][0]
+            u = unit_of(l) or (btitle if two else "")
+            rows = terms[t]
+            if rows and rows[-1]["u"] == u and rows[-1]["b"] == btitle:
+                if l["match"][0] not in rows[-1]["i"]:
+                    rows[-1]["i"].append(l["match"][0])
+            else:
+                rows.append({"l": "", "w": 0, "t": t, "u": u, "k": "lesson", "i": [l["match"][0]], "b": btitle})
+    out = [{"l": "", "w": 0, "t": 1, "u": "", "k": "diag", "i": TXT[lang]["diag"]}]
+    for t in (1, 2, 3):
+        for r in terms[t]:
+            r.pop("b")
+            out.append(r)
+        if t == 3:
+            out.append({"l": "", "w": 0, "t": 3, "u": "", "k": "eval", "i": TXT[lang]["eval"]})
+        out.append({"l": "", "w": 0, "t": t, "u": "", "k": "exam", "i": TXT[lang]["exam"][t]})
+        if t < 3:
+            out.append({"l": "", "w": 0, "t": t, "u": "", "k": "holiday", "i": TXT[lang]["holiday"]})
+    return out
 
 
 def main():
@@ -115,12 +133,12 @@ def main():
     for (subj, lv), items in sorted(by_level.items()):
         items.sort(key=lambda x: x[0]["asset"])
         lang = lang_of(subj, items[0][1])
-        plan["plans"].setdefault(subj, {})[lv] = rows_for([les for _, les in items], lang)
+        plan["plans"].setdefault(subj, {})[lv] = rows_for([les for _, les in items], lang, [b["title"] for b, _ in items])
         titles = " ; ".join(f"« {b['title']} »" for b, _ in items)
         plan["source"][f"{subj}_{lv}"] = (
-            f"توزيع دروس الكتاب المدرسي {titles} (المعهد التربوي الوطني) على أسابيع السنة، بترتيبها في الكتاب"
+            f"عناوين دروس الكتاب المدرسي {titles} (المعهد التربوي الوطني) مقسمة على الفصول الثلاثة، بترتيبها في الكتاب"
             if lang == "ar" else
-            f"Progression établie d’après le manuel {titles} (IPN), dans l’ordre des chapitres")
+            f"Titres des leçons du manuel {titles} (IPN), répartis sur les trois trimestres, dans l’ordre des chapitres")
         print(f"{subj}_{lv}: {sum(len(r['i']) for r in plan['plans'][subj][lv] if r['k'] == 'lesson')} عنوانًا")
     with open(PLANNING, "w", encoding="utf-8") as fh:
         json.dump(plan, fh, ensure_ascii=False, indent=1)

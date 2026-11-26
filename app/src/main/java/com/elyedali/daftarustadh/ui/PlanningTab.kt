@@ -217,8 +217,10 @@ fun PlanningTab(
                 }
                 Row(Modifier.fillMaxWidth().clip(RoundedCornerShape(10.dp)).background(bg).padding(10.dp),
                     verticalAlignment = Alignment.Top) {
-                    Text(if (r.kind == "holiday" && r.label.isBlank()) "🌴" else r.label, Modifier.width(78.dp),
-                        fontWeight = FontWeight.Bold, fontSize = 12.sp, color = fg, textAlign = TextAlign.Start)
+                    // الثانوية: عناوين بلا أسابيع، فلا يظهر عمود الأسبوع
+                    if (r.label.isNotBlank() || r.kind == "holiday")
+                        Text(if (r.kind == "holiday" && r.label.isBlank()) "🌴" else r.label, Modifier.width(78.dp),
+                            fontWeight = FontWeight.Bold, fontSize = 12.sp, color = fg, textAlign = TextAlign.Start)
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                         if (r.kind == "holiday" && r.items.isEmpty()) Text(holiday, fontWeight = FontWeight.Bold, color = fg, fontSize = 13.sp)
                         r.items.forEach { item ->
