@@ -149,10 +149,10 @@ SERIES = {'Chapitre I : Substances dissoutes, pression osmotique et perméabilit
                                                                            '%) l’augmente. Le carbone de la matière organique vient du CO₂ fixé par photosynthèse.'},
                                                                      {'k': 'book',
                                                                       'src': 'p. 89, ex. 5',
-                                                                      'q': 'Expériences sur des feuilles testées à l’eau iodée. 1) Pourquoi décolore-t-on la feuille avant le test ? 2) Que colore '
+                                                                      'q': 'Expériences sur des feuilles testées à l’eau iodée. 1) Pourquoi la feuille est-elle verte ? 2) Que colore '
                                                                            'l’eau iodée ? 3) Pourquoi la partie blanche d’une feuille panachée reste-t-elle blanche ? 4) Conditions de la '
                                                                            'photosynthèse mises en évidence ?',
-                                                                      'a': '1) On enlève la chlorophylle (alcool bouillant) pour bien voir la coloration.\n'
+                                                                      'a': '1) Elle contient de la chlorophylle, pigment vert qui capte la lumière (avant le test à l’eau iodée, on la décolore dans l’alcool bouillant).\n'
                                                                            '2) L’amidon, en bleu-violet.\n'
                                                                            '3) Elle ne contient pas de chlorophylle : pas de photosynthèse, pas d’amidon.\n'
                                                                            '4) Il faut de la chlorophylle, de la lumière et du CO₂.'},
