@@ -12,7 +12,7 @@ SERIES["Chapitre 1 : Nombres complexes — forme exponentielle et géométrie"] 
  {"k": "extra", "src": "", "q": "Calculer (1 + i√3)⁶.",
   "a": "1 + i√3 = 2e^(iπ/3) : (1 + i√3)⁶ = 64e^(2iπ) = 64."},
  {"k": "extra", "src": "", "q": "A(1 + i), B(3 + 2i), C(2 + 4i). Calculer (c − a)/(b − a) et en déduire la nature de ABC.",
-  "a": "(1 + 3i)/(2 + i) = (1 + 3i)(2 − i)/5 = (5 + 5i)/5 = 1 + i = √2 e^(iπ/4). AC = √2 AB et (AB⃗ ; AC⃗) = π/4 : calculons BC : |c − b| = |−1 + 2i| = √5 = AB ; AC = √10. AB² + BC² = AC² : ABC est rectangle isocèle en B."},
+  "a": "(1 + 3i)/(2 + i) = (1 + 3i)(2 − i)/5 = (5 + 5i)/5 = 1 + i = √2 e^(iπ/4). Donc AC = √2 AB et (AB⃗ ; AC⃗) = π/4. Vérification : AB = |2 + i| = √5, BC = |−1 + 2i| = √5, AC = √10 et AB² + BC² = AC² : ABC est rectangle isocèle en B."},
  {"k": "extra", "src": "", "q": "Ensemble des points M d’affixe z tels que |z − 1 − i| = 2.",
   "a": "C’est le cercle de centre Ω(1 + i) et de rayon 2."},
  {"k": "int", "src": "", "q": "Sur un plan (repère complexe, unité 100 m), trois antennes sont en A(0), B(4) et C(2 + 2i√3).\n1) Montrer que ABC est équilatéral.\n2) On veut un relais au point Ω à égale distance des trois antennes. Donner son affixe et la distance aux antennes.",
