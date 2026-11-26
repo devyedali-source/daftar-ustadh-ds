@@ -33,7 +33,9 @@ sealed class RecordCheck {
         /** آخر فصل في السجل (الفصل الذي يخصه). */
         val term: Int = 1,
         /** سجل من الوضع الحر: عدد التلاميذ مطابق، فطوبقوا حسب ترتيبهم في القائمة دون أرقام النداء أو الأسماء. */
-        val byOrder: Boolean = false
+        val byOrder: Boolean = false,
+        /** اسم المؤسسة في السجل لا يطابق مؤسستك (أستاذ في العمل الحر كتب اسمها بنفسه): القسم عُرف بمستواه ورقمه وسنته فقط. */
+        val otherSchool: Boolean = false
     ) : RecordCheck()
 }
 
@@ -47,6 +49,7 @@ class RecordImporter(private val db: DaftarDatabase) {
         val idOk = byId != null && byId.institutionId == file.institutionId && byId.schoolYear == file.schoolYear &&
             byId.levelCode == file.levelCode && byId.number == file.number
         var classByName = false
+        var otherSchool = false
         val c: ClassEntity = if (idOk) byId!! else {
             // رمز القسم لا يوافق (أُعيد إنشاء القسم أو أُعيد تثبيت تطبيق الإدارة بعد إرسال الملفات للأساتذة):
             // يُعرف القسم باسمه في مؤسستك: نفس اسم المؤسسة والسنة والمستوى والرقم، ثم يُطابق الطلاب بأرقام النداء
@@ -54,10 +57,11 @@ class RecordImporter(private val db: DaftarDatabase) {
             // المؤسسة نفسها: نفس رمزها في لائحة المدارس، أو نفس الاسم والولاية (سجل الوضع الحر)
             val sameList = own.schoolListId != null && own.schoolListId == file.schoolListId
             val sameName = norm(own.schoolName) == norm(file.schoolName) && norm(own.wilaya) == norm(file.wilaya)
-            if (!sameList && !sameName) return RecordCheck.WrongClass(file)
             val slot = db.classDao().findSlot(own.id, file.schoolYear, file.levelCode, file.number)
                 ?: return RecordCheck.WrongClass(file)
             classByName = true
+            // مؤسسة باسم آخر (كتبه الأستاذ بنفسه في العمل الحر): لا يُرفض، بل يُرفع بعد تأكيد الإدارة
+            otherSchool = !sameList && !sameName
             slot
         }
         if (!classByName) {
@@ -107,7 +111,8 @@ class RecordImporter(private val db: DaftarDatabase) {
             mapping = mapping,
             byRoll = byRoll,
             classByName = classByName,
-            byOrder = byOrder
+            byOrder = byOrder,
+            otherSchool = otherSchool
         )
     }
 

@@ -152,6 +152,15 @@ private data class BatchResult(
     val missing: List<String>            // ما ينقص بعد الرفع: «1AS1: الفرنسية (ناقصة عند 3)»
 )
 
+/** سجلات تنتظر تأكيد الإدارة قبل رفعها (أستاذ في العمل الحر، أو غير المسند للمادة)، مع ما سبقها في نفس الدفعة. */
+private data class PendingRecords(
+    val ready: List<RecordCheck.Ready>,
+    val confirm: List<Triple<RecordCheck.Ready, String, List<String>>>,   // (السجل، وصفه، أسباب طلب التأكيد)
+    val rejected: List<String>,
+    val duplicates: Int,
+    val older: Int
+)
+
 private sealed class FileResult {
     data object Invalid : FileResult()
     data class Done(val outcome: ImportOutcome) : FileResult()
@@ -1160,64 +1169,13 @@ class MainActivity : AppCompatActivity() {
                 // ===== رفع ملفات النتائج دفعة واحدة =====
                 var batchResult by remember { mutableStateOf<BatchResult?>(null) }
                 var batchWorking by remember { mutableStateOf(false) }
+                var pendingRecords by remember { mutableStateOf<PendingRecords?>(null) }
                 var actRequesting by remember { mutableStateOf(false) }
                 var actError by remember { mutableStateOf<String?>(null) }
-                fun processRecordsBatch(uris: List<Uri>) {
-                    if (uris.isEmpty()) return
-                    batchWorking = true
-                    scope.launch {
-                        val rejected = ArrayList<String>()
-                        val ready = ArrayList<RecordCheck.Ready>()
-                        val seenBytes = HashSet<String>()
-                        var duplicates = 0
-                        var older = 0
-                        for (uri in uris) {
-                            val name = runCatching {
-                                contentResolver.query(uri, arrayOf(android.provider.OpenableColumns.DISPLAY_NAME), null, null, null)?.use { c ->
-                                    if (c.moveToFirst()) c.getString(0) else null
-                                }
-                            }.getOrNull() ?: uri.lastPathSegment.orEmpty()
-                            try {
-                                val bytes = withContext(Dispatchers.IO) { contentResolver.openInputStream(uri)?.use { it.readBytes() } } ?: throw IllegalStateException()
-                                // نفس الملف مرتين (حُمّل من واتساب أكثر من مرة): يُتجاوز
-                                // بصمة SHA-256 للمحتوى كله (لا رقم تجزئة قصير قد يتشابه فيه ملفان مختلفان فيُهمل أحدهما)
-                                val digest = java.security.MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
-                                if (!seenBytes.add(digest)) { duplicates++; continue }
-                                val data = if (com.elyedali.daftarustadh.transfer.DsqPdf.isPdf(bytes))
-                                    com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException() else bytes
-                                val decoded = TransferCodec.decodeAny(data)
-                                // ملف سجلات الأستاذ كلها: كل سجل داخله يُفحص كأنه ملف مستقل
-                                val recs: List<RecordFile>? = when (decoded) {
-                                    is com.elyedali.daftarustadh.transfer.RecordsBundle -> decoded.records
-                                    else -> null
-                                }
-                                if (decoded is RecordFile) rejected += "$name — " + getString(R.string.record_single_refused)
-                                else if (recs == null) rejected += "$name — " + getString(R.string.bu_not_record)
-                                else for (any in recs) {
-                                    val label = if (recs.size > 1) "$name (${any.className} — ${if (isFrUi) any.subjectNameFr else any.subjectNameAr})" else name
-                                    when (val chk = recordImporter.check(any)) {
-                                        is RecordCheck.Ready -> when {
-                                            chk.schoolClass.id in expiredClasses ->
-                                                rejected += "$label — " + getString(R.string.act_expired_grades)
-                                            !subjectOfLevel(chk.schoolClass, any.subjectCode) ->
-                                                rejected += "$label — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
-                                            // سجل أقدم من الذي رُفع لهذه المادة: يُتجاوز حتى لا تعود نقاط قديمة
-                                            chk.older -> { older++; }
-                                            // ليس الأستاذ المسند لهذه المادة في الجدول الزمني: لا يُرفع حتى تُصحّح الإدارة الإسناد ثم يُرفع الملف من جديد
-                                            ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }?.teacherName
-                                                ?.takeIf { it.isNotBlank() && !sameTeacher(it, any.teacherName) } != null ->
-                                                rejected += "$label — " + getString(R.string.bu_other_teacher, any.teacherName,
-                                                    ttAssignments.first { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }.teacherName)
-                                            else -> ready += chk
-                                        }
-                                        is RecordCheck.WrongClass -> rejected += "$label — " + getString(R.string.bu_wrong_class, any.className)
-                                        is RecordCheck.NotManaged -> rejected += "$label — " + getString(R.string.record_not_managed, any.className)
-                                    }
-                                }
-                            } catch (e: Exception) {
-                                rejected += "$name — " + getString(R.string.bu_not_record)
-                            }
-                        }
+                /** يرفع السجلات المقبولة ويعرض النتيجة وما بقي ناقصًا. */
+                suspend fun finishRecordsBatchImpl(ready: List<RecordCheck.Ready>, rejectedIn: List<String>, duplicatesIn: Int, older: Int) {
+                        val rejected = ArrayList(rejectedIn)
+                        var duplicates = duplicatesIn
                         // سجلان لنفس المادة في نفس القسم: يُؤخذ الأحدث إرسالًا، ثم الأكثر نقاطًا
                         val chosen = ready.groupBy { it.schoolClass.id + "|" + it.file.subjectCode }.values.map { group ->
                             duplicates += group.size - 1
@@ -1256,6 +1214,75 @@ class MainActivity : AppCompatActivity() {
                         batchWorking = false
                         if (older > 0) warnings += getString(R.string.record_older_skipped, older)
                         batchResult = BatchResult(imported, duplicates, rejected, warnings, term, missing)
+                }
+                fun processRecordsBatch(uris: List<Uri>) {
+                    if (uris.isEmpty()) return
+                    batchWorking = true
+                    scope.launch {
+                        val rejected = ArrayList<String>()
+                        val ready = ArrayList<RecordCheck.Ready>()
+                        val seenBytes = HashSet<String>()
+                        val toConfirm = ArrayList<Triple<RecordCheck.Ready, String, List<String>>>()
+                        var duplicates = 0
+                        var older = 0
+                        for (uri in uris) {
+                            val name = runCatching {
+                                contentResolver.query(uri, arrayOf(android.provider.OpenableColumns.DISPLAY_NAME), null, null, null)?.use { c ->
+                                    if (c.moveToFirst()) c.getString(0) else null
+                                }
+                            }.getOrNull() ?: uri.lastPathSegment.orEmpty()
+                            try {
+                                val bytes = withContext(Dispatchers.IO) { contentResolver.openInputStream(uri)?.use { it.readBytes() } } ?: throw IllegalStateException()
+                                // نفس الملف مرتين (حُمّل من واتساب أكثر من مرة): يُتجاوز
+                                // بصمة SHA-256 للمحتوى كله (لا رقم تجزئة قصير قد يتشابه فيه ملفان مختلفان فيُهمل أحدهما)
+                                val digest = java.security.MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
+                                if (!seenBytes.add(digest)) { duplicates++; continue }
+                                val data = if (com.elyedali.daftarustadh.transfer.DsqPdf.isPdf(bytes))
+                                    com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException() else bytes
+                                val decoded = TransferCodec.decodeAny(data)
+                                // ملف سجلات الأستاذ كلها: كل سجل داخله يُفحص كأنه ملف مستقل
+                                val recs: List<RecordFile>? = when (decoded) {
+                                    is com.elyedali.daftarustadh.transfer.RecordsBundle -> decoded.records
+                                    else -> null
+                                }
+                                if (decoded is RecordFile) rejected += "$name — " + getString(R.string.record_single_refused)
+                                else if (recs == null) rejected += "$name — " + getString(R.string.bu_not_record)
+                                else for (any in recs) {
+                                    val label = if (recs.size > 1) "$name (${any.className} — ${if (isFrUi) any.subjectNameFr else any.subjectNameAr})" else name
+                                    when (val chk = recordImporter.check(any)) {
+                                        is RecordCheck.Ready -> when {
+                                            chk.schoolClass.id in expiredClasses ->
+                                                rejected += "$label — " + getString(R.string.act_expired_grades)
+                                            !subjectOfLevel(chk.schoolClass, any.subjectCode) ->
+                                                rejected += "$label — " + getString(R.string.record_bad_subject, any.subjectNameAr, chk.schoolClass.name)
+                                            // سجل أقدم من الذي رُفع لهذه المادة: يُتجاوز حتى لا تعود نقاط قديمة
+                                            chk.older -> { older++; }
+                                            else -> {
+                                                // سجل يحتاج تأكيد الإدارة قبل رفعه (لا يُرفض):
+                                                // أستاذ في العمل الحر لم يصله ملف القسم، أو ليس الأستاذ المسند للمادة في الجدول الزمني
+                                                val assigned = ttAssignments.firstOrNull { it.classId == chk.schoolClass.id && it.subjectCode == any.subjectCode }
+                                                    ?.teacherName?.takeIf { it.isNotBlank() }
+                                                val reasons = ArrayList<String>()
+                                                if (chk.otherSchool) reasons += getString(R.string.record_confirm_school, any.schoolName, inst?.schoolName.orEmpty())
+                                                else if (chk.classByName) reasons += getString(R.string.record_confirm_free)
+                                                if (assigned != null && !sameTeacher(assigned, any.teacherName))
+                                                    reasons += getString(R.string.record_confirm_teacher, any.teacherName.ifBlank { "—" }, assigned)
+                                                if (reasons.isEmpty()) ready += chk else toConfirm += Triple(chk, label, reasons)
+                                            }
+                                        }
+                                        is RecordCheck.WrongClass -> rejected += "$label — " + getString(R.string.bu_wrong_class, any.className)
+                                        is RecordCheck.NotManaged -> rejected += "$label — " + getString(R.string.record_not_managed, any.className)
+                                    }
+                                }
+                            } catch (e: Exception) {
+                                rejected += "$name — " + getString(R.string.bu_not_record)
+                            }
+                        }
+                        if (toConfirm.isNotEmpty()) {
+                            // يُوقف الرفع حتى تؤكد الإدارة السجلات التي تحتاج تأكيدًا
+                            batchWorking = false
+                            pendingRecords = PendingRecords(ready, toConfirm, rejected, duplicates, older)
+                        } else finishRecordsBatchImpl(ready, rejected, duplicates, older)
                     }
                 }
                 processRecordsBatchRef = { processRecordsBatch(it) }
@@ -2852,6 +2879,41 @@ class MainActivity : AppCompatActivity() {
                             }
                         },
                         confirmButton = { TextButton(onClick = { batchResult = null }) { Text(stringResource(R.string.ok)) } }
+                    )
+                }
+                // سجلات تحتاج تأكيد الإدارة قبل رفعها: تُرفع بضغطة «رفع»، أو تُترك
+                pendingRecords?.let { p ->
+                    AlertDialog(
+                        onDismissRequest = {},
+                        title = { Text(stringResource(R.string.record_confirm_title)) },
+                        text = {
+                            androidx.compose.foundation.layout.Column(
+                                Modifier.verticalScroll(androidx.compose.foundation.rememberScrollState()),
+                                verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(6.dp)
+                            ) {
+                                Text(stringResource(R.string.record_confirm_intro))
+                                p.confirm.forEach { (_, label, reasons) ->
+                                    Text("• $label", fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                                    reasons.forEach { reason ->
+                                        Text("⚠️ $reason", color = androidx.compose.ui.graphics.Color(0xFFE65100),
+                                            style = androidx.compose.material3.MaterialTheme.typography.bodySmall)
+                                    }
+                                }
+                            }
+                        },
+                        confirmButton = {
+                            TextButton(onClick = {
+                                pendingRecords = null; batchWorking = true
+                                scope.launch { finishRecordsBatchImpl(p.ready + p.confirm.map { it.first }, p.rejected, p.duplicates, p.older) }
+                            }) { Text("⬆️ " + stringResource(R.string.record_confirm_upload)) }
+                        },
+                        dismissButton = {
+                            TextButton(onClick = {
+                                pendingRecords = null; batchWorking = true
+                                val skipped = p.confirm.map { it.second + " — " + getString(R.string.record_confirm_skipped) }
+                                scope.launch { finishRecordsBatchImpl(p.ready, p.rejected + skipped, p.duplicates, p.older) }
+                            }) { Text(stringResource(R.string.record_confirm_skip)) }
+                        }
                     )
                 }
 

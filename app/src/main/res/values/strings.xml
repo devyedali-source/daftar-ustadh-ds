@@ -1037,4 +1037,12 @@
     <string name="src_ministry">موقع وزارة التهذيب الوطني</string>
     <string name="src_exams">موقع مديرية الامتحانات والمسابقات (لوائح المؤسسات)</string>
     <string name="src_schools">لائحة المؤسسات مأخوذة من الموقع الرسمي:</string>
+    <string name="record_confirm_title">تأكيد رفع سجلات</string>
+    <string name="record_confirm_intro">هذه السجلات لا تُرفع إلا بتأكيدك. راجع الملاحظات ثم اضغط «رفع» إن كانت صحيحة:</string>
+    <string name="record_confirm_free">سجل من أستاذ لم يصله ملف هذا القسم من الإدارة (عمل حر)، أو وصله ملف قديم للقسم: طوبق التلاميذ بأرقام النداء، فراجعها بعد الرفع.</string>
+    <string name="record_confirm_school">اسم المؤسسة في السجل «%1$s» يختلف عن اسم مؤسستك «%2$s» (كتبه الأستاذ بنفسه): القسم عُرف بمستواه ورقمه فقط.</string>
+    <string name="record_confirm_teacher">السجل باسم الأستاذ %1$s، والمادة مسندة في الجدول الزمني إلى %2$s.</string>
+    <string name="record_confirm_upload">رفع</string>
+    <string name="record_confirm_skip">عدم الرفع</string>
+    <string name="record_confirm_skipped">لم يُرفع بقرارك</string>
 </resources>

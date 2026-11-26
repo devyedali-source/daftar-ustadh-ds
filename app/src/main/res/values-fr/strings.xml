@@ -1037,4 +1037,12 @@
     <string name="src_ministry">Site du ministère de l\'Éducation nationale</string>
     <string name="src_exams">Site de la Direction des examens et concours (listes des établissements)</string>
     <string name="src_schools">La liste des établissements provient du site officiel :</string>
+    <string name="record_confirm_title">Confirmer l\'import</string>
+    <string name="record_confirm_intro">Ces relevés ne sont importés qu\'avec votre confirmation. Vérifiez les remarques puis appuyez sur « Importer » s\'ils sont corrects :</string>
+    <string name="record_confirm_free">Relevé d\'un enseignant qui n\'a pas reçu le fichier de cette classe (travail libre) ou en a reçu un ancien : élèves associés par numéro d\'appel, vérifiez après l\'import.</string>
+    <string name="record_confirm_school">Le nom de l\'établissement dans le relevé « %1$s » diffère du vôtre « %2$s » (saisi par l\'enseignant) : la classe est reconnue par son niveau et son numéro seulement.</string>
+    <string name="record_confirm_teacher">Relevé au nom de %1$s, mais la matière est attribuée à %2$s dans l\'emploi du temps.</string>
+    <string name="record_confirm_upload">Importer</string>
+    <string name="record_confirm_skip">Ne pas importer</string>
+    <string name="record_confirm_skipped">non importé (votre choix)</string>
 </resources>
