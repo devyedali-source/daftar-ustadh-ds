@@ -35,7 +35,9 @@ data class RecordFile(
     val teacherName: String,
     val testsMode: String,
     val students: List<RecordStudent>,
-    val exportedAt: Long = 0L   // وقت إرسال الأستاذ للسجل: عند تكرار نفس السجل يُؤخذ الأحدث
+    val exportedAt: Long = 0L,  // وقت إرسال الأستاذ للسجل: عند تكرار نفس السجل يُؤخذ الأحدث
+    /** الفصل الذي اختاره الأستاذ عند الرفع (ملف سجلات الأستاذ كلها)؛ 0 = غير معروف (يُستنتج من الامتحانات). */
+    val term: Int = 0
 ) {
     val className: String get() = "$levelCode$number"
 }
@@ -131,10 +133,12 @@ object TransferCodec {
 
     private fun decodeRecords(json: JSONObject): RecordsBundle {
         val arr = try { json.getJSONArray("records") } catch (e: Exception) { throw InvalidClassFileException() }
-        val records = (0 until arr.length()).map { decodeRecord(arr.getJSONObject(it)) }
+        val term = json.optInt("term", 0).takeIf { it in 1..3 } ?: 0
+        // كل سجل يحمل الفصل الذي اختاره الأستاذ عند الرفع
+        val records = (0 until arr.length()).map { decodeRecord(arr.getJSONObject(it)).copy(term = term) }
         if (records.isEmpty()) throw InvalidClassFileException()
         return RecordsBundle(json.optString("teacherName"), json.optString("schoolName"), json.optString("schoolYear"),
-            json.optInt("term", 1), records)
+            if (term == 0) 1 else term, records)
     }
 
     private fun decodeRecord(json: JSONObject): RecordFile {
@@ -147,12 +151,15 @@ object TransferCodec {
                 val s = arr.getJSONObject(k)
                 val g = s.getJSONObject("grades")
                 // تُقبل فقط النقاط الصحيحة (من 0 إلى 20) في خانات معروفة؛ ما سواها يُهمل فلا يُفسد المعدلات
-                val grades = g.keys().asSequence().filter { GradeSlot.isKnown(it) }.toList()
+                val raw = g.keys().asSequence().filter { GradeSlot.isKnown(it) }.toList()
                     .associateWith { g.optDouble(it, Double.NaN) }.filterValues { !it.isNaN() && it in 0.0..20.0 }
-                    .filterValues { it in 0.0..20.0 }
                 val mk = s.optJSONObject("marks")
-                val marks = if (mk == null) emptyMap() else grades.keys.filter { mk.has(it) }
+                val marks = if (mk == null) emptyMap() else raw.keys.filter { mk.has(it) }
                     .associateWith { mk.getString(it) }.filterValues { com.elyedali.daftarustadh.data.GradeMark.isValid(it) }
+                // النقطة مقرّبة لرقمين؛ والغياب يأخذ قيمته الثابتة (بتبرير 10، بدون تبرير 0) مهما كُتب في الملف
+                val grades = raw.mapValues { (slot, v) ->
+                    marks[slot]?.let { com.elyedali.daftarustadh.data.GradeMark.valueOf(it) } ?: com.elyedali.daftarustadh.data.GradeMath.round2(v)
+                }
                 RecordStudent(s.getString("id"), s.optInt("roll"), s.optString("name"), grades, marks)
             }
             return RecordFile(

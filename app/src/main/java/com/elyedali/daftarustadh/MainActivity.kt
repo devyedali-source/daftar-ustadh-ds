@@ -1163,7 +1163,7 @@ class MainActivity : AppCompatActivity() {
                     scope.launch {
                         val rejected = ArrayList<String>()
                         val ready = ArrayList<RecordCheck.Ready>()
-                        val seenBytes = HashSet<Int>()
+                        val seenBytes = HashSet<String>()
                         var duplicates = 0
                         var older = 0
                         for (uri in uris) {
@@ -1175,7 +1175,9 @@ class MainActivity : AppCompatActivity() {
                             try {
                                 val bytes = withContext(Dispatchers.IO) { contentResolver.openInputStream(uri)?.use { it.readBytes() } } ?: throw IllegalStateException()
                                 // نفس الملف مرتين (حُمّل من واتساب أكثر من مرة): يُتجاوز
-                                if (!seenBytes.add(bytes.contentHashCode())) { duplicates++; continue }
+                                // بصمة SHA-256 للمحتوى كله (لا رقم تجزئة قصير قد يتشابه فيه ملفان مختلفان فيُهمل أحدهما)
+                                val digest = java.security.MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") { "%02x".format(it) }
+                                if (!seenBytes.add(digest)) { duplicates++; continue }
                                 val data = if (com.elyedali.daftarustadh.transfer.DsqPdf.isPdf(bytes))
                                     com.elyedali.daftarustadh.transfer.DsqPdf.extract(bytes) ?: throw PdfNotImportableException() else bytes
                                 val decoded = TransferCodec.decodeAny(data)
@@ -1231,9 +1233,7 @@ class MainActivity : AppCompatActivity() {
                                 warnings += label + ": " + getString(R.string.record_by_roll, chk.byRoll)
                         }
                         // الفصل الذي يُفحص: آخر فصل وصلت امتحاناته في هذه الملفات
-                        val term = (3 downTo 1).firstOrNull { t ->
-                            chosen.any { c -> c.file.students.any { st -> st.grades.containsKey(GradeSlot.exam(t)) } }
-                        } ?: 1
+                        val term = chosen.maxOfOrNull { recordImporter.termOf(it.file) } ?: 1
                         val classes = managedClasses.sortedWith(compareBy({ it.levelCode }, { it.number }))
                         val all = gradeDao.listClasses(classes.map { it.id })
                         val missing = ArrayList<String>()

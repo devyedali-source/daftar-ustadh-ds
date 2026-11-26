@@ -113,8 +113,11 @@ class RecordImporter(private val db: DaftarDatabase) {
 
     private fun exportedKey(classId: String, subject: String) = "record_exported|$classId|$subject"
 
-    /** آخر فصل وصلت امتحاناته في السجل. */
-    fun termOf(file: RecordFile): Int =
+    /**
+     * فصل السجل: الفصل الذي اختاره الأستاذ عند الرفع إن عُرف، وإلا آخر فصل وصلت امتحاناته في السجل.
+     * (سجل فصل لم تُرصد امتحاناته بعد كان يُعدّ من الفصل السابق، فلا تحلّ اختباراته الجديدة محلّ القديمة.)
+     */
+    fun termOf(file: RecordFile): Int = if (file.term in 1..3) file.term else
         (3 downTo 1).firstOrNull { t -> file.students.any { it.grades.containsKey(com.elyedali.daftarustadh.data.GradeSlot.exam(t)) } } ?: 1
 
     /**

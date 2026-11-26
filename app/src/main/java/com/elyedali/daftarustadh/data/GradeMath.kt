@@ -45,14 +45,15 @@ object GradeMath {
         }
     }
 
-    /** يقرأ نقطة كتبها المستخدم: يقبل الفاصلة أو النقطة، والأرقام العربية، ومن 0 إلى 20. */
+    /** يقرأ نقطة كتبها المستخدم: يقبل الفاصلة أو النقطة، والأرقام العربية، ومن 0 إلى 20 (مقرّبة لرقمين). */
     fun parse(text: String): Double? {
         val t = text.trim()
             .map { c -> if (c in '٠'..'٩') ('0' + (c - '٠')) else c }
             .joinToString("").replace(',', '.').replace('٫', '.')
         if (t.isEmpty()) return null
         val v = t.toDoubleOrNull() ?: return null
-        return if (v in 0.0..20.0) v else null
+        // تُحفظ النقطة مقرّبة لرقمين بعد الفاصلة: ما يظهر في الخانة والكشف هو نفسه ما يدخل في الحساب
+        return if (v in 0.0..20.0) round2(v) else null
     }
 
     /** عرض النقطة بأرقام لاتينية وبرقمين بعد الفاصلة على الأكثر: 12.5، 13.75، 14. */

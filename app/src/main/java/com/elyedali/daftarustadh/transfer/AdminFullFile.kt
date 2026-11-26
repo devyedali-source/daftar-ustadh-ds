@@ -199,6 +199,13 @@ class AdminFullFile(val json: JSONObject) {
                 val g = gs.getJSONObject(i)
                 val sid = stMap[g.getString("studentId")] ?: continue
                 val cid = classMap[g.getString("classId")] ?: continue
+                // نقطة صحيحة فقط: خانة معروفة وقيمة من 0 إلى 20 (مقرّبة لرقمين)؛ والغياب بقيمته الثابتة
+                val slot = g.optString("slot")
+                val v = g.optDouble("value", Double.NaN)
+                if (!com.elyedali.daftarustadh.data.GradeSlot.isKnown(slot) || v.isNaN() || v !in 0.0..20.0) continue
+                val mark = if (g.isNull("mark")) null else g.optString("mark").takeIf { com.elyedali.daftarustadh.data.GradeMark.isValid(it) }
+                g.put("value", mark?.let { com.elyedali.daftarustadh.data.GradeMark.valueOf(it) } ?: com.elyedali.daftarustadh.data.GradeMath.round2(v))
+                g.put("mark", mark ?: JSONObject.NULL)
                 g.put("studentId", sid); g.put("classId", cid)
                 val mine = one(w, "SELECT updatedAt FROM grade WHERE studentId = ? AND subjectCode = ? AND slot = ?",
                     sid, g.optString("subjectCode"), g.optString("slot"))?.toLongOrNull()
@@ -221,10 +228,15 @@ class AdminFullFile(val json: JSONObject) {
             // الغياب
             val sesCols = columns(w, "absence_session")
             val ses = rows("absence_session")
+            // رمز الحصة مبني على رمز القسم: في القسم المدموج يُعاد بناؤه، وإلا تكررت الحصة نفسها برمزين
+            val sesMap = HashMap<String, String>()
             for (i in 0 until ses.length()) {
                 val s = ses.getJSONObject(i)
                 val cid = classMap[s.getString("classId")] ?: continue
-                s.put("classId", cid)
+                val oldId = s.getString("id")
+                val newId = com.elyedali.daftarustadh.data.AbsenceSessionEntity.idOf(cid, s.optString("subjectCode"), s.optString("date"), s.optInt("period"))
+                sesMap[oldId] = newId
+                s.put("classId", cid); s.put("id", newId)
                 w.insert("absence_session", SQLiteDatabase.CONFLICT_REPLACE, values(s, sesCols))
             }
             val abCols = columns(w, "absence")
@@ -233,7 +245,8 @@ class AdminFullFile(val json: JSONObject) {
                 val a = abs.getJSONObject(i)
                 val cid = classMap[a.getString("classId")] ?: continue
                 val sid = stMap[a.getString("studentId")] ?: continue
-                a.put("classId", cid); a.put("studentId", sid)
+                val sesId = sesMap[a.getString("sessionId")] ?: continue
+                a.put("classId", cid); a.put("studentId", sid); a.put("sessionId", sesId)
                 w.insert("absence", SQLiteDatabase.CONFLICT_REPLACE, values(a, abCols))
             }
 

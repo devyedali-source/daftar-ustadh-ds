@@ -1,5 +1,7 @@
 package com.elyedali.daftarustadh.transfer
 
+import androidx.room.withTransaction
+
 import com.elyedali.daftarustadh.data.AbsenceSessionEntity
 import com.elyedali.daftarustadh.data.AbsenceSource
 import com.elyedali.daftarustadh.data.ClassEntity
@@ -129,7 +131,10 @@ class AbsenceImporter(private val db: DaftarDatabase) {
     }
 
     /** كل حصة في الملف تحلّ محلّ نفس الحصة عندك؛ الحصص الأخرى لا تُمسّ. */
-    suspend fun apply(ready: AbsenceCheck.Ready) {
+    suspend fun apply(ready: AbsenceCheck.Ready) = db.withTransaction { applyNow(ready) }
+
+    /** كل الملف في معاملة واحدة: إن توقف التطبيق في منتصفه لا يبقى ملف نصف مرفوع. */
+    private suspend fun applyNow(ready: AbsenceCheck.Ready) {
         val c = ready.schoolClass
         val file = ready.file
         val ids = db.studentDao().listByClass(c.id).map { it.id }.toSet()
