@@ -16,6 +16,12 @@ data class BoardSection(
     val drawing: BoardDrawing? = null
 )
 
+/**
+ * تمرين من «سلسلة تمارين» آخر الفصل: kind = "book" (من تمارين الكتاب، src رقمه وصفحته)،
+ * أو "extra" (تمرين على نمطه)، أو "int" (وضعية إدماجية)؛ مع حله ورسم من الكتاب إن احتاجه.
+ */
+data class SeriesItem(val kind: String, val src: String, val q: String, val a: String, val figure: BoardFigure? = null)
+
 /** رسم شرح أُعدّ للسبورة (ليس من الكتاب): صورة داخل ملفات التطبيق lessons/draw/… */
 data class BoardDrawing(val asset: String, val caption: String)
 
@@ -39,7 +45,9 @@ data class BookLesson(
     val applications: List<Pair<String, String>> = emptyList(),
     /** كتاب الدرس إن كان للمادة أكثر من كتاب (مثل التاريخ والجغرافيا). */
     val book: String = "",
-    val bookTitle: String = ""
+    val bookTitle: String = "",
+    /** سلسلة تمارين آخر الفصل مع الحلول (المواد العلمية في الثانوية). */
+    val series: List<SeriesItem> = emptyList()
 )
 
 /** دروس مادة لمستوى: الملف assets/lessons/{المادة}_{المستوى}.json والكتاب في assets/books. */
@@ -90,7 +98,16 @@ object LessonBank {
                         applications = l.optJSONArray("applications")?.let { a ->
                             (0 until a.length()).map { k -> a.getJSONObject(k).let { it.optString("q") to it.optString("a") } }
                         }.orEmpty(),
-                        book = l.optString("book"), bookTitle = l.optString("bookTitle")
+                        book = l.optString("book"), bookTitle = l.optString("bookTitle"),
+                        series = l.optJSONArray("series")?.let { a ->
+                            (0 until a.length()).map { k -> a.getJSONObject(k).let { e ->
+                                SeriesItem(e.optString("k"), e.optString("src"), e.optString("q"), e.optString("a"),
+                                    e.optJSONObject("fig")?.let { fo ->
+                                        val r = fo.getJSONArray("rect")
+                                        BoardFigure(fo.getInt("page"), (0 until r.length()).map { r.getDouble(it).toFloat() }, fo.optString("caption"))
+                                    })
+                            } }
+                        }.orEmpty()
                     )
                 })
             } catch (e: Exception) { null }

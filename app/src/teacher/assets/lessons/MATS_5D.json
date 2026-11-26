@@ -115,6 +115,56 @@
       "|3 − √13| = √13 − 3 car 3 < √13."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 15, ex. 4",
+     "q": "Calculer et simplifier : x = (11/7 + 7/11)² − (11/7 − 7/11)².",
+     "a": "(a + b)² − (a − b)² = 4ab, donc x = 4 × (11/7) × (7/11) = 4."
+    },
+    {
+     "k": "book",
+     "src": "p. 15, ex. 13",
+     "q": "Soit A = −x² + 4x + 21 (forme 1).\n1) Montrer que A = (7 − x)(x + 3) (forme 2).\n2) Montrer que A = −(x − 2)² + 25 (forme 3).\n3) En choisissant la bonne forme : a) calculer A pour x = 2 + √2 ; b) résoudre A = 0 ; c) résoudre A = 21 ; d) résoudre A = 7 − x.",
+     "a": "1) (7 − x)(x + 3) = 7x + 21 − x² − 3x = −x² + 4x + 21.\n2) −(x − 2)² + 25 = −x² + 4x − 4 + 25 = −x² + 4x + 21.\n3) a) Forme 3 : A = −(√2)² + 25 = 23.\nb) Forme 2 : (7 − x)(x + 3) = 0 ⇔ x = 7 ou x = −3.\nc) Forme 1 : −x² + 4x = 0 ⇔ x(4 − x) = 0 ⇔ x = 0 ou x = 4.\nd) Forme 2 : (7 − x)(x + 3) − (7 − x) = 0 ⇔ (7 − x)(x + 2) = 0 ⇔ x = 7 ou x = −2."
+    },
+    {
+     "k": "book",
+     "src": "p. 16, ex. 20",
+     "q": "Écrire sans radical au dénominateur : A = 2/√5 ; B = 1/(√2 − 1) ; C = (√2 + √3)/(5√3 + 3√2).",
+     "a": "A = 2√5/5.\nB = (√2 + 1)/((√2 − 1)(√2 + 1)) = (√2 + 1)/1 = √2 + 1.\nC : on multiplie par l’expression conjuguée 5√3 − 3√2 : dénominateur 75 − 18 = 57 ; numérateur (√2 + √3)(5√3 − 3√2) = 5√6 − 6 + 15 − 3√6 = 9 + 2√6. Donc C = (9 + 2√6)/57."
+    },
+    {
+     "k": "book",
+     "src": "p. 16, ex. 24",
+     "q": "Résoudre dans ℝ : a) |x| ≤ 3 ; b) |5x − 1| ≤ 3 ; c) |x| ≥ 3 ; d) |2 − x/3| > 1.",
+     "a": "a) −3 ≤ x ≤ 3 : S = [−3 ; 3].\nb) −3 ≤ 5x − 1 ≤ 3 ⇔ −2 ≤ 5x ≤ 4 : S = [−2/5 ; 4/5].\nc) x ≤ −3 ou x ≥ 3 : S = ]−∞ ; −3] ∪ [3 ; +∞[.\nd) 2 − x/3 > 1 ⇔ x < 3, ou 2 − x/3 < −1 ⇔ x > 9 : S = ]−∞ ; 3[ ∪ ]9 ; +∞[."
+    },
+    {
+     "k": "book",
+     "src": "p. 16, ex. 19",
+     "q": "a) Écrire sans radicaux au dénominateur 1/(√(x + 1) + √x).\nb) En déduire N = 1/1 + 1/(√2 + √1) + 1/(√3 + √2) + … + 1/(√100 + √99).",
+     "a": "a) 1/(√(x + 1) + √x) = (√(x + 1) − √x)/((x + 1) − x) = √(x + 1) − √x.\nb) 1/1 = √1 − √0 ; chaque terme vaut √(k + 1) − √k. La somme se télescope : N = √100 − √0 = 10."
+    },
+    {
+     "k": "book",
+     "src": "p. 16, ex. 33 a",
+     "q": "On donne 2,1 < x < 2,2 et 3,3 < y < 3,4. Encadrer x + y ; x − y ; xy ; x² ; 1/x ; x/y.",
+     "a": "x + y : 5,4 < x + y < 5,6.\nx − y : −3,4 < −y < −3,3 donc −1,3 < x − y < −1,1.\nxy (nombres positifs) : 6,93 < xy < 7,48.\nx² : 4,41 < x² < 4,84.\n1/x : 1/2,2 < 1/x < 1/2,1, soit environ 0,454 < 1/x < 0,477.\nx/y : 2,1/3,4 < x/y < 2,2/3,3, soit environ 0,617 < x/y < 0,667."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "1) Simplifier E = √12 − 3√27 + 2√75.\n2) Développer (√3 − 1)² et en déduire une écriture simple de √(4 − 2√3).",
+     "a": "1) E = 2√3 − 9√3 + 10√3 = 3√3.\n2) (√3 − 1)² = 3 − 2√3 + 1 = 4 − 2√3. Comme √3 − 1 > 0 : √(4 − 2√3) = |√3 − 1| = √3 − 1."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un carreleur pose des carreaux carrés d’aire 50 cm² chacun.\n1) Donner la valeur exacte simplifiée du côté d’un carreau. Est-ce un nombre rationnel ?\n2) Calculer la diagonale d’un carreau.\n3) Sachant que 1,414 < √2 < 1,415, encadrer le périmètre d’un carreau.\n4) Combien de carreaux faut-il pour couvrir une salle de 4 m² ?",
+     "a": "1) c = √50 = 5√2 cm ; c’est un irrationnel (√2 est irrationnel).\n2) d = c√2 = 5√2 × √2 = 10 cm (nombre entier).\n3) P = 4c = 20√2 : 28,28 < P < 28,30 (en cm).\n4) 4 m² = 40 000 cm² ; 40 000 ÷ 50 = 800 carreaux."
+    }
    ]
   },
   {
@@ -211,6 +261,66 @@
       "Par identification : a − 3 = 0 ; b − 3a = −3 ; −3b = −18 ⇒ a = 3 et b = 6.",
       "P(x) = (x − 3)(x² + 3x + 6) ; Δ = 9 − 24 = −15 < 0 : x² + 3x + 6 ne se factorise pas."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 20, ex. 3",
+     "q": "On considère P(x) = 9x² − 25 + (3x + 5)(x − 2).\n1) Factoriser 9x² − 25, puis factoriser P(x).\n2) Résoudre P(x) = 0.\n3) Développer et réduire P(x).",
+     "a": "1) 9x² − 25 = (3x − 5)(3x + 5) ; P(x) = (3x + 5)[(3x − 5) + (x − 2)] = (3x + 5)(4x − 7).\n2) P(x) = 0 ⇔ x = −5/3 ou x = 7/4.\n3) P(x) = 9x² − 25 + 3x² − 6x + 5x − 10 = 12x² − x − 35 (on retrouve (3x + 5)(4x − 7) = 12x² − x − 35)."
+    },
+    {
+     "k": "book",
+     "src": "p. 20, ex. 4",
+     "q": "P(x) = x³ + 6x² + 11x + 6.\n1) Calculer P(−1).\n2) Déterminer a et b tels que P(x) = (x + 1)(x² + ax + b).\n3) Factoriser P(x).",
+     "a": "1) P(−1) = −1 + 6 − 11 + 6 = 0.\n2) (x + 1)(x² + ax + b) = x³ + (a + 1)x² + (a + b)x + b ; par identification b = 6, a + 1 = 6 ⇒ a = 5 (et a + b = 11 ✓).\n3) x² + 5x + 6 = (x + 2)(x + 3), donc P(x) = (x + 1)(x + 2)(x + 3)."
+    },
+    {
+     "k": "book",
+     "src": "p. 20, ex. 8",
+     "q": "f(x) = x³ + 5x² − 12x + 6.\n1) Montrer que 1 est solution de f(x) = 0.\n2) Déterminer a, b, c tels que f(x) = (x − 1)(ax² + bx + c).\n3) En déduire le signe de f(x).",
+     "a": "1) f(1) = 1 + 5 − 12 + 6 = 0.\n2) Par identification : a = 1 ; −c = 6 ⇒ c = −6 ; b − a = 5 ⇒ b = 6 (vérification : c − b = −12 ✓). f(x) = (x − 1)(x² + 6x − 6).\n3) x² + 6x − 6 : Δ = 36 + 24 = 60, racines −3 − √15 ≈ −6,87 et −3 + √15 ≈ 0,87.\nf(x) < 0 sur ]−∞ ; −3 − √15[ ; f(x) > 0 sur ]−3 − √15 ; −3 + √15[ ; f(x) < 0 sur ]−3 + √15 ; 1[ ; f(x) > 0 sur ]1 ; +∞[."
+    },
+    {
+     "k": "book",
+     "src": "p. 20, ex. 10",
+     "q": "f(x) = x² − ax + 3 où a est un réel. Déterminer les valeurs de a pour lesquelles :\n1) f admet deux racines distinctes ; 2) une racine double ; 3) pas de racine ; 4) le minimum de f est strictement inférieur à −1.",
+     "a": "Δ = a² − 12.\n1) Δ > 0 ⇔ a < −2√3 ou a > 2√3.\n2) Δ = 0 ⇔ a = 2√3 ou a = −2√3.\n3) Δ < 0 ⇔ −2√3 < a < 2√3.\n4) Le minimum est f(a/2) = 3 − a²/4 ; 3 − a²/4 < −1 ⇔ a² > 16 ⇔ a < −4 ou a > 4."
+    },
+    {
+     "k": "book",
+     "src": "p. 20, ex. 2",
+     "q": "Déterminer a et b tels que Q(x) = (3x + 7)/(x + 2) = a + b/(x + 2), puis a, b, c tels que R(x) = (5x² − 7x + 4)/(x − 1) = ax + b + c/(x − 1).",
+     "a": "3x + 7 = 3(x + 2) + 1, donc Q(x) = 3 + 1/(x + 2) : a = 3, b = 1.\n5x² − 7x + 4 = (x − 1)(5x − 2) + 2, donc R(x) = 5x − 2 + 2/(x − 1) : a = 5, b = −2, c = 2."
+    },
+    {
+     "k": "book",
+     "src": "p. 20, ex. 12",
+     "q": "Un agriculteur construit un enclos rectangulaire de côtés x et 12 − x (en m) ; à l’intérieur se trouve un poulailler rectangulaire de 5 m sur 2 m (partie hachurée). On note A l’aire de la partie extérieure (blanche).\n1) Justifier que A(x) = −x² + 12x − 10.\n2) Pour quelles valeurs de x a-t-on A = 22 m² ?\n3) Écrire A(x) sous forme canonique et en déduire l’aire maximale.",
+     "fig": {
+      "page": 20,
+      "rect": [
+       0.55,
+       0.585,
+       0.93,
+       0.757
+      ],
+      "caption": "L’enclos et le poulailler"
+     },
+     "a": "1) Aire de l’enclos : x(12 − x) = 12x − x² ; on retire le poulailler 5 × 2 = 10 : A(x) = −x² + 12x − 10.\n2) −x² + 12x − 10 = 22 ⇔ x² − 12x + 32 = 0 ⇔ (x − 4)(x − 8) = 0 ⇔ x = 4 ou x = 8.\n3) A(x) = −(x − 6)² + 26 : l’aire est maximale, égale à 26 m², pour x = 6 m (enclos carré)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Soit P(x) = x³ − 7x + 6.\n1) Vérifier que 1 est racine de P et factoriser P(x) en produit de trois facteurs du premier degré.\n2) Résoudre P(x) ≥ 0.",
+     "a": "1) P(1) = 1 − 7 + 6 = 0. P(x) = (x − 1)(x² + x − 6) = (x − 1)(x − 2)(x + 3).\n2) Racines −3, 1, 2 : P < 0 sur ]−∞ ; −3[, P > 0 sur ]−3 ; 1[, P < 0 sur ]1 ; 2[, P > 0 sur ]2 ; +∞[. S = [−3 ; 1] ∪ [2 ; +∞[."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Dans un carton carré de 20 cm de côté, on découpe aux quatre coins un carré de côté x (0 < x < 10) puis on plie pour obtenir une boîte sans couvercle.\n1) Montrer que le volume est V(x) = 4x³ − 80x² + 400x.\n2) Calculer V(5).\n3) Résoudre V(x) = 500 (on pourra factoriser par x − 5) et donner les valeurs de x possibles.",
+     "a": "1) Le fond est un carré de côté 20 − 2x et la hauteur est x : V(x) = x(20 − 2x)² = x(400 − 80x + 4x²) = 4x³ − 80x² + 400x.\n2) V(5) = 5 × 10² = 500 cm³.\n3) V(x) = 500 ⇔ x³ − 20x² + 100x − 125 = 0 ⇔ (x − 5)(x² − 15x + 25) = 0. x² − 15x + 25 = 0 donne x = (15 ± 5√5)/2. Dans ]0 ; 10[ : x = 5 ou x = (15 − 5√5)/2 ≈ 1,91 cm."
     }
    ]
   },
@@ -311,6 +421,56 @@
       "‖u→‖ ≥ 0 ; ‖u→‖ = 0 ⇔ u→ = 0→ ; ‖−u→‖ = ‖u→‖ ; ‖k u→‖ = |k| ‖u→‖.",
       "Inégalité triangulaire : ‖u→ + v→‖ ≤ ‖u→‖ + ‖v→‖."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 26, ex. 6",
+     "q": "Dans une base (i⃗ ; j⃗), soit u⃗(6 ; −7) et v⃗(−5 ; 3). Calculer det(u⃗ ; v⃗).",
+     "a": "det(u⃗ ; v⃗) = 6 × 3 − (−7) × (−5) = 18 − 35 = −17."
+    },
+    {
+     "k": "book",
+     "src": "p. 26, ex. 7",
+     "q": "Dans une base orthonormée, u⃗(4 ; −7) et v⃗(−12 ; 21). Vérifier que u⃗ et v⃗ sont colinéaires.",
+     "a": "det(u⃗ ; v⃗) = 4 × 21 − (−7) × (−12) = 84 − 84 = 0 : u⃗ et v⃗ sont colinéaires (en fait v⃗ = −3u⃗)."
+    },
+    {
+     "k": "book",
+     "src": "p. 26, ex. 8",
+     "q": "Dans une base (i⃗ ; j⃗), u⃗(−7 ; 3), v⃗(5 ; 4) et w⃗(−2 ; −1).\n1) Montrer que (u⃗ ; v⃗) est une base.\n2) Donner les coordonnées de i⃗ et j⃗ dans la base (u⃗ ; v⃗).\n3) Donner les coordonnées de w⃗ dans la base (u⃗ ; v⃗).",
+     "a": "1) det(u⃗ ; v⃗) = −7 × 4 − 3 × 5 = −43 ≠ 0 : (u⃗ ; v⃗) est une base.\n2) u⃗ = −7i⃗ + 3j⃗ et v⃗ = 5i⃗ + 4j⃗. 4u⃗ − 3v⃗ = −43i⃗ donc i⃗ = (−4/43)u⃗ + (3/43)v⃗ ; 5u⃗ + 7v⃗ = 43j⃗ donc j⃗ = (5/43)u⃗ + (7/43)v⃗.\n3) w⃗ = −2i⃗ − j⃗ = (8u⃗ − 6v⃗ − 5u⃗ − 7v⃗)/43 = (3/43)u⃗ − (13/43)v⃗.\nVérification : 3u⃗ − 13v⃗ = (−86 ; −43) = 43w⃗."
+    },
+    {
+     "k": "book",
+     "src": "p. 26, ex. 3",
+     "q": "ABC est un triangle et M un point quelconque tel que 5MA⃗ = −2MB⃗ + 7MC⃗. Montrer à l’aide de la relation de Chasles que A, B et C sont alignés.",
+     "a": "5MA⃗ + 2MB⃗ − 7MC⃗ = 0⃗. On écrit MB⃗ = MA⃗ + AB⃗ et MC⃗ = MA⃗ + AC⃗ : 5MA⃗ + 2MA⃗ + 2AB⃗ − 7MA⃗ − 7AC⃗ = 0⃗, d’où 2AB⃗ = 7AC⃗, soit AB⃗ = (7/2)AC⃗. Les vecteurs AB⃗ et AC⃗ sont colinéaires : A, B, C sont alignés."
+    },
+    {
+     "k": "book",
+     "src": "p. 26, ex. 10",
+     "q": "ABC est un triangle. On place M et N tels que BM⃗ = (1/3)BA⃗ et BN⃗ = 3BC⃗. Montrer que (MC) // (AN).",
+     "a": "MC⃗ = MB⃗ + BC⃗ = (1/3)AB⃗ + BC⃗.\nAN⃗ = AB⃗ + BN⃗ = AB⃗ + 3BC⃗ = 3[(1/3)AB⃗ + BC⃗] = 3MC⃗.\nLes vecteurs sont colinéaires, donc (MC) // (AN)."
+    },
+    {
+     "k": "book",
+     "src": "p. 26, ex. 11",
+     "q": "ABCD est un parallélogramme. On construit M, N, P, Q tels que AM⃗ = (3/5)AB⃗ ; BN⃗ = (3/5)BC⃗ ; CP⃗ = (3/5)CD⃗ ; DQ⃗ = (3/5)DA⃗. Montrer que MNPQ est un parallélogramme.",
+     "a": "MN⃗ = MB⃗ + BN⃗ = (2/5)AB⃗ + (3/5)BC⃗.\nQP⃗ = QD⃗ + DP⃗ = (3/5)AD⃗ + (2/5)DC⃗.\nDans le parallélogramme ABCD : DC⃗ = AB⃗ et AD⃗ = BC⃗, donc QP⃗ = (2/5)AB⃗ + (3/5)BC⃗ = MN⃗ : MNPQ est un parallélogramme."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "ABC est un triangle, I le milieu de [BC] et D le point tel que AD⃗ = 2AI⃗. Montrer que ABDC est un parallélogramme.",
+     "a": "I milieu de [BC] : AI⃗ = (AB⃗ + AC⃗)/2, donc AD⃗ = AB⃗ + AC⃗. Or AD⃗ = AB⃗ + BD⃗, d’où BD⃗ = AC⃗ : ABDC est un parallélogramme."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Deux remorqueurs tirent un bateau. Dans une base orthonormée (unité : 1 kN), leurs forces sont représentées par u⃗(3 ; 4) et v⃗(5 ; −1).\n1) Calculer les coordonnées de la force résultante w⃗ = u⃗ + v⃗ et son intensité.\n2) Le bateau doit suivre la direction du vecteur d⃗(16 ; 6). Est-ce le cas ?\n3) Quelle force un troisième remorqueur doit-il exercer pour immobiliser le bateau ?",
+     "a": "1) w⃗(8 ; 3) ; ‖w⃗‖ = √(64 + 9) = √73 ≈ 8,54 kN.\n2) det(w⃗ ; d⃗) = 8 × 6 − 3 × 16 = 0 : w⃗ et d⃗ sont colinéaires (d⃗ = 2w⃗), le bateau suit bien cette direction.\n3) Il faut une force opposée : −w⃗(−8 ; −3), d’intensité √73 ≈ 8,54 kN."
     }
    ]
   },
@@ -417,6 +577,56 @@
       "Exemple : x² + y² − 2x − 3 = 0 ⇔ (x − 1)² + y² = 2² : cercle de centre Ω(1 ; 0) et de rayon 2."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 34, ex. 1",
+     "q": "Dans une base orthonormée, u⃗(−12 ; −6) et v⃗(5 ; −10). Montrer que u⃗ ⊥ v⃗.",
+     "a": "u⃗ · v⃗ = (−12)(5) + (−6)(−10) = −60 + 60 = 0, donc u⃗ ⊥ v⃗."
+    },
+    {
+     "k": "book",
+     "src": "p. 34, ex. 2 et 3",
+     "q": "1) Donner une équation cartésienne de la droite (D) passant par A(6 ; −7) de vecteur directeur u⃗(−3 ; 4).\n2) Donner une équation cartésienne de la droite passant par A(5 ; 7) et B(−6 ; 9).",
+     "a": "1) M(x ; y) ∈ (D) ⇔ det(AM⃗ ; u⃗) = 0 ⇔ 4(x − 6) + 3(y + 7) = 0 ⇔ 4x + 3y − 3 = 0.\n2) AB⃗(−11 ; 2) : 2(x − 5) + 11(y − 7) = 0 ⇔ 2x + 11y − 87 = 0 (vérification avec B : −12 + 99 − 87 = 0)."
+    },
+    {
+     "k": "book",
+     "src": "p. 34, ex. 5",
+     "q": "(D) : 4x − 2y + 6 = 0 et (D′) : x + 2y − 4 = 0.\n1) Donner les équations réduites et les coefficients directeurs.\n2) En déduire la position relative de (D) et (D′).\n3) (D″) : y = −(1/2)x − 5. Montrer que (D′) // (D″).",
+     "a": "1) (D) : y = 2x + 3, coefficient 2 ; (D′) : y = −(1/2)x + 2, coefficient −1/2.\n2) Repère orthonormé : 2 × (−1/2) = −1, donc (D) ⊥ (D′).\n3) (D′) et (D″) ont le même coefficient −1/2 et des ordonnées à l’origine différentes (2 et −5) : elles sont strictement parallèles."
+    },
+    {
+     "k": "book",
+     "src": "p. 34, ex. 10",
+     "q": "A(3 ; 2), B(0 ; 3), C(−2 ; 0).\n1) Déterminer D tel que ABCD soit un parallélogramme, puis son centre I.\n2) G et H sont les centres de gravité de ABC et ACD : déterminer G et H, puis montrer que I est le milieu de [GH].",
+     "a": "1) AD⃗ = BC⃗ ⇔ D = A + C − B = (1 ; −1). I milieu de [AC] : I(1/2 ; 1).\n2) G((3 + 0 − 2)/3 ; (2 + 3 + 0)/3) = (1/3 ; 5/3) ; H((3 − 2 + 1)/3 ; (2 + 0 − 1)/3) = (2/3 ; 1/3). Milieu de [GH] : ((1/3 + 2/3)/2 ; (5/3 + 1/3)/2) = (1/2 ; 1) = I."
+    },
+    {
+     "k": "book",
+     "src": "p. 34, ex. 11",
+     "q": "Dans un repère orthonormé, A(2 ; 0), B(−1 ; √3), C(−1 ; −√3). Démontrer que ABC est équilatéral de centre O.",
+     "a": "AB² = 9 + 3 = 12 ; BC² = 0 + (2√3)² = 12 ; AC² = 9 + 3 = 12 : ABC est équilatéral.\nOA = 2, OB = √(1 + 3) = 2, OC = 2 : O est le centre du cercle circonscrit ; c’est aussi le centre de gravité ((2 − 1 − 1)/3 ; 0) = (0 ; 0)."
+    },
+    {
+     "k": "book",
+     "src": "p. 34, ex. 14",
+     "q": "1) Γ est l’ensemble des points M(x ; y) tels que x² + y² − 2x + 8y − 8 = 0. Déterminer Γ et donner son équation dans le repère (Ω ; i⃗ ; j⃗) où Ω(1 ; −4).\n2) D : y = x. Montrer que D coupe Γ en deux points et calculer leurs coordonnées.",
+     "a": "1) (x − 1)² + (y + 4)² = 1 + 16 + 8 = 25 : Γ est le cercle de centre Ω(1 ; −4) et de rayon 5. Dans (Ω ; i⃗ ; j⃗) : X² + Y² = 25.\n2) y = x : 2x² + 6x − 8 = 0 ⇔ x² + 3x − 4 = 0 ⇔ x = 1 ou x = −4. Points (1 ; 1) et (−4 ; −4)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Déterminer une équation de la médiatrice du segment [AB] avec A(−1 ; 2) et B(3 ; 6).",
+     "a": "Milieu I(1 ; 4) ; AB⃗(4 ; 4) est normal à la médiatrice : 4(x − 1) + 4(y − 4) = 0 ⇔ x + y − 5 = 0."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Sur le plan d’un village (repère orthonormé, unité 100 m), une route rectiligne a pour équation 2x − y + 3 = 0 et un puits est au point P(6 ; 0). On veut relier le puits à la route par la conduite la plus courte.\n1) Donner une équation de la droite passant par P et perpendiculaire à la route.\n2) Calculer les coordonnées du point H où la conduite rejoint la route.\n3) Quelle est la longueur de la conduite en mètres ?",
+     "a": "1) Le vecteur n⃗(2 ; −1) normal à la route dirige la perpendiculaire : x + 2y + c = 0 passant par P ⇒ c = −6 : x + 2y − 6 = 0.\n2) y = 2x + 3 et x + 2y − 6 = 0 ⇒ 5x = 0 ⇒ H(0 ; 3).\n3) PH = √(36 + 9) = 3√5 ≈ 6,71 unités, soit environ 671 m."
+    }
    ]
   },
   {
@@ -502,6 +712,56 @@
       "Chaque équation est celle d’une droite : droites sécantes → solution unique (le point commun) ; strictement parallèles → aucune solution ; confondues → infinité de solutions."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 46, ex. 2",
+     "q": "Trouver les dimensions d’un champ rectangulaire d’aire 1200 m², sachant que sa longueur dépasse sa largeur de 10 m.",
+     "a": "Largeur l : l(l + 10) = 1200 ⇔ l² + 10l − 1200 = 0 ; Δ = 100 + 4800 = 4900 ; l = (−10 + 70)/2 = 30 (l’autre racine est négative). Largeur 30 m, longueur 40 m."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 3",
+     "q": "Un producteur loue une salle à 53 170 UM. Chaque billet est vendu 300 UM. À partir de quel nombre de spectateurs aura-t-il un bénéfice ?",
+     "a": "Il faut 300n > 53 170 ⇔ n > 177,23… Il y a bénéfice à partir de 178 spectateurs."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 6",
+     "q": "1) Résoudre dans ℝ² : 5a + 2b = 26 et 2a − 3b = −1.\n2) En déduire les systèmes : (5x² + 2y² = 26 ; 2x² − 3y² = −1), (5√x + 2√y = 26 ; 2√x − 3√y = −1), (5/x + 2/y = 26 ; 2/x − 3/y = −1).",
+     "a": "1) 15a + 6b = 78 et 4a − 6b = −2 ⇒ 19a = 76 ⇒ a = 4, puis b = 3.\n2) x² = 4 et y² = 3 : (2 ; √3), (2 ; −√3), (−2 ; √3), (−2 ; −√3).\n√x = 4 et √y = 3 : (16 ; 9).\n1/x = 4 et 1/y = 3 : (1/4 ; 1/3)."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 13 et 15",
+     "q": "1) Déterminer deux réels dont la somme est 7 et le produit 6.\n2) Trouver deux nombres de somme 25 et de produit 144.",
+     "a": "1) Ce sont les racines de X² − 7X + 6 = 0 : 1 et 6.\n2) X² − 25X + 144 = 0 ; Δ = 625 − 576 = 49 ; X = (25 ± 7)/2 : 16 et 9."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 17",
+     "q": "P(x) = 2x³ − 14x − 12. 1) Calculer P(−1). 2) Résoudre P(x) = 0 en factorisant P(x).",
+     "a": "1) P(−1) = −2 + 14 − 12 = 0.\n2) P(x) = (x + 1)(2x² − 2x − 12) = 2(x + 1)(x² − x − 6) = 2(x + 1)(x − 3)(x + 2). S = {−2 ; −1 ; 3}."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 4",
+     "q": "Résoudre dans ℝ : a) x⁴ − 4x² + 3 = 0 ; b) x + 3√x + 1 = 0.",
+     "a": "a) On pose X = x² ≥ 0 : X² − 4X + 3 = 0 ⇔ X = 1 ou X = 3 ; S = {−√3 ; −1 ; 1 ; √3}.\nb) L’équation n’a de sens que pour x ≥ 0 ; alors x + 3√x + 1 ≥ 1 > 0 : S = ∅."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 18",
+     "q": "Résoudre dans ℝ : (3x − 2)/(2x + 5) = (2x + 5)/(3x − 2).",
+     "a": "Conditions : x ≠ −5/2 et x ≠ 2/3. (3x − 2)² = (2x + 5)² ⇔ 3x − 2 = 2x + 5 ou 3x − 2 = −(2x + 5) ⇔ x = 7 ou x = −3/5. S = {−3/5 ; 7}."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une coopérative scolaire achète des stylos et des cahiers. 3 stylos et 2 cahiers coûtent 260 UM ; 5 stylos et 4 cahiers coûtent 480 UM.\n1) Mettre le problème en équations et trouver le prix d’un stylo et celui d’un cahier.\n2) Avec 1000 UM, on veut acheter autant de stylos que de cahiers. Combien au maximum ?",
+     "a": "1) 3p + 2c = 260 et 5p + 4c = 480. En doublant la première : 6p + 4c = 520 ; par soustraction p = 40 UM, puis c = (260 − 120)/2 = 70 UM.\n2) Un lot (1 stylo + 1 cahier) coûte 110 UM ; 110n ≤ 1000 ⇔ n ≤ 9,09 : au maximum 9 stylos et 9 cahiers (990 UM)."
+    }
    ]
   },
   {
@@ -581,6 +841,44 @@
       "On teste un point : 5x − 3y + 15 ≤ 0 ; avec O(0 ; 0) : 15 ≤ 0 est faux, donc la solution est le demi-plan fermé de frontière (AB) ne contenant pas O.",
       "Un système d’inéquations a pour solution l’intersection des demi-plans."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 46, ex. 5",
+     "q": "Résoudre dans ℝ : a) x² − 4x + 3 > 0 ; b) x² + x + 1 < 0 ; c) 2x² − x − 1 < 0 ; d) (x − 1)(x + 3) ≤ 0 ; e) (1 − 2x)²(1 + x) < 0.",
+     "a": "a) Racines 1 et 3 : S = ]−∞ ; 1[ ∪ ]3 ; +∞[.\nb) Δ = −3 < 0 : le trinôme est toujours positif, S = ∅.\nc) Racines −1/2 et 1 : S = ]−1/2 ; 1[.\nd) S = [−3 ; 1].\ne) (1 − 2x)² ≥ 0 et s’annule en 1/2 ; il faut 1 + x < 0 : S = ]−∞ ; −1[."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 8",
+     "q": "Mettre sous forme canonique, déterminer les racines et étudier le signe de : 1) P(x) = x² + 2x − 1 ; 2) P(x) = x² − 7x + 6 ; 3) P(x) = x² + 2x + 2.",
+     "a": "1) P(x) = (x + 1)² − 2 ; racines −1 − √2 et −1 + √2 ; P < 0 entre les racines, P > 0 à l’extérieur.\n2) P(x) = (x − 7/2)² − 25/4 ; racines 1 et 6 ; P < 0 sur ]1 ; 6[, P > 0 ailleurs.\n3) P(x) = (x + 1)² + 1 > 0 : pas de racine, P toujours positif."
+    },
+    {
+     "k": "book",
+     "src": "p. 46, ex. 9 (1°)",
+     "q": "P(x) = x³ − 4x² + 5x − 2 et a = 2. Vérifier que P(x) est factorisable par x − 2, factoriser et étudier le signe de P(x).",
+     "a": "P(2) = 8 − 16 + 10 − 2 = 0. P(x) = (x − 2)(x² − 2x + 1) = (x − 2)(x − 1)².\n(x − 1)² ≥ 0 : P(x) ≤ 0 sur ]−∞ ; 2] (nul en 1 et 2) et P(x) > 0 sur ]2 ; +∞[."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Résoudre dans ℝ : (x − 3)/(x + 1) ≥ 2.",
+     "a": "x ≠ −1. (x − 3)/(x + 1) − 2 = (−x − 5)/(x + 1) ≥ 0 ⇔ (x + 5)/(x + 1) ≤ 0. Tableau de signes : S = [−5 ; −1[."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Résoudre le système d’inéquations : 2x − 1 > 3 et x² − 9 < 0.",
+     "a": "2x − 1 > 3 ⇔ x > 2 ; x² − 9 < 0 ⇔ −3 < x < 3. S = ]2 ; 3[."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une entreprise vend un produit au prix p (en centaines d’UM). Le nombre d’articles vendus est q = 1000 − 20p.\n1) Exprimer la recette R(p) = p × q.\n2) Pour quels prix la recette est-elle au moins égale à 12 000 ?\n3) Quel prix donne la recette maximale ?",
+     "a": "1) R(p) = p(1000 − 20p) = −20p² + 1000p.\n2) −20p² + 1000p ≥ 12 000 ⇔ p² − 50p + 600 ≤ 0 ⇔ (p − 20)(p − 30) ≤ 0 ⇔ 20 ≤ p ≤ 30.\n3) R(p) = −20(p − 25)² + 12 500 : maximum 12 500 pour p = 25."
     }
    ]
   },
@@ -669,6 +967,50 @@
       "Dans un repère : x_G = (αx_A + βx_B + γx_C)/(α + β + γ) ; y_G = (αy_A + βy_B + γy_C)/(α + β + γ).",
       "Centre d’inertie : le centre d’inertie d’une plaque homogène est le barycentre des centres d’inertie de ses parties affectés de leurs masses (ou de leurs aires)."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 52, ex. 2 et 3",
+     "q": "A et B sont deux points distincts. Donner dans le repère (A ; AB⃗) les abscisses de F = bar{(A ; 2), (B ; 1)}, de F′ = bar{(A ; −2), (B ; −3)} et de G = bar{(A ; −2), (B ; 3)}.",
+     "a": "Si G = bar{(A ; a), (B ; b)} alors AG⃗ = (b/(a + b))AB⃗.\nF : 1/3 ; F′ : (−3)/(−5) = 3/5 ; G : 3/(−2 + 3) = 3."
+    },
+    {
+     "k": "book",
+     "src": "p. 52, ex. 10",
+     "q": "Exprimer G comme barycentre de A et B dans chaque cas : 1) AG⃗ = (2/3)AB⃗ ; 2) AG⃗ = −AB⃗ ; 3) AG⃗ = (1/2)AB⃗ ; 4) AG⃗ = (1/3)BA⃗ ; 5) 3BG⃗ + AG⃗ = 0⃗.",
+     "a": "On cherche a et b avec b/(a + b) égal au coefficient.\n1) G = bar{(A ; 1), (B ; 2)}.\n2) b/(a + b) = −1 : G = bar{(A ; 2), (B ; −1)}.\n3) G est le milieu : bar{(A ; 1), (B ; 1)}.\n4) AG⃗ = −(1/3)AB⃗ : G = bar{(A ; 4), (B ; −1)}.\n5) GA⃗ + 3GB⃗ = 0⃗ : G = bar{(A ; 1), (B ; 3)}."
+    },
+    {
+     "k": "book",
+     "src": "p. 52, ex. 14",
+     "q": "ABC est un triangle ; I, J, K sont tels que AI⃗ = (1/3)AB⃗, CJ⃗ = (1/4)CB⃗ et CK⃗ = (2/5)CA⃗. Démontrer que (AJ), (BK) et (CI) sont concourantes.",
+     "a": "I = bar{(A ; 2), (B ; 1)} ; J = bar{(C ; 3), (B ; 1)} ; K = bar{(C ; 3), (A ; 2)}.\nSoit G = bar{(A ; 2), (B ; 1), (C ; 3)}. Par associativité : G = bar{(I ; 3), (C ; 3)} ∈ (CI) ; G = bar{(A ; 2), (J ; 4)} ∈ (AJ) ; G = bar{(B ; 1), (K ; 5)} ∈ (BK). Les trois droites passent par G."
+    },
+    {
+     "k": "book",
+     "src": "p. 52, ex. 16",
+     "q": "ABC est un triangle ; D, E, F sont définis par AD⃗ = 3AB⃗ ; AE⃗ = −3AC⃗ ; CF⃗ = 2CB⃗.\n1) Exprimer D, E et F sous forme de barycentres.\n2) Exprimer ED⃗ et EF⃗ en fonction de AB⃗ et AC⃗ ; en déduire que D, E, F sont alignés.\n3) Montrer que B = bar{(C ; 3), (D ; 2), (E ; 1)}.",
+     "a": "1) D = bar{(A ; −2), (B ; 3)} ; E = bar{(A ; 4), (C ; −3)} ; F = bar{(C ; −1), (B ; 2)}.\n2) ED⃗ = AD⃗ − AE⃗ = 3AB⃗ + 3AC⃗ ; AF⃗ = AC⃗ + 2CB⃗ = 2AB⃗ − AC⃗, donc EF⃗ = 2AB⃗ + 2AC⃗. Ainsi EF⃗ = (2/3)ED⃗ : D, E, F sont alignés.\n3) En prenant A pour origine (b⃗ = AB⃗, c⃗ = AC⃗) : 3BC⃗ + 2BD⃗ + BE⃗ = 3(c⃗ − b⃗) + 2(3b⃗ − b⃗) + (−3c⃗ − b⃗) = 0⃗, donc B est le barycentre de (C ; 3), (D ; 2), (E ; 1)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Dans un repère, A(1 ; 2) et B(5 ; −2). Calculer les coordonnées de G = bar{(A ; 3), (B ; 1)}.",
+     "a": "G = (3A + B)/4 : x = (3 + 5)/4 = 2 ; y = (6 − 2)/4 = 1. G(2 ; 1)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "ABC est un triangle. Construire G = bar{(A ; 1), (B ; 1), (C ; 2)} en utilisant le milieu I de [AB].",
+     "a": "I = bar{(A ; 1), (B ; 1)} donc G = bar{(I ; 2), (C ; 2)} : G est le milieu de [IC]."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une barre rigide de 1,20 m et de masse négligeable porte une masse de 3 kg à l’extrémité A et une masse de 1 kg à l’extrémité B.\n1) À quelle distance de A faut-il suspendre la barre pour qu’elle reste horizontale ?\n2) On ajoute 2 kg en B. Où se trouve le nouveau point d’équilibre ?",
+     "a": "Le point d’équilibre est le barycentre des extrémités affectées des masses.\n1) G = bar{(A ; 3), (B ; 1)} : AG = (1/4) × 1,20 = 0,30 m.\n2) G′ = bar{(A ; 3), (B ; 3)} : c’est le milieu, à 0,60 m de A."
     }
    ]
   },
@@ -770,6 +1112,56 @@
       "Exemple : sin x = −1/2 = sin(−π/6) : x = −π/6 + 2kπ ou x = 7π/6 + 2kπ."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 60, ex. 1",
+     "q": "Calculer le sinus, le cosinus et la tangente de : −5π/2 ; −121π/6 ; 29π/4.",
+     "a": "−5π/2 = −2π − π/2 : sin = −1, cos = 0, tangente non définie.\n−121π/6 = −20π − π/6 : sin = −1/2, cos = √3/2, tan = −√3/3.\n29π/4 = 6π + 5π/4 : sin = −√2/2, cos = −√2/2, tan = 1."
+    },
+    {
+     "k": "book",
+     "src": "p. 60, ex. 2",
+     "q": "Calculer en fonction de cos x et sin x :\nA = cos(π + x) + cos(π − x) + cos(−x) ;\nB = sin(π + x) + sin(π − x) + sin(−x) ;\nD = sin(π/2 + x) + 2sin(x + 3π/2) + sin(x + 5π/2).",
+     "a": "A = −cos x − cos x + cos x = −cos x.\nB = −sin x + sin x − sin x = −sin x.\nD = cos x + 2(−cos x) + cos x = 0."
+    },
+    {
+     "k": "book",
+     "src": "p. 60, ex. 3",
+     "q": "1) Quels sont les réels x de [0 ; 2π[ vérifiant cos x = 1/2 ?\n2) Même question dans ]−π ; π].",
+     "a": "1) x = π/3 ou x = 5π/3.\n2) x = −π/3 ou x = π/3."
+    },
+    {
+     "k": "book",
+     "src": "p. 60, ex. 5",
+     "q": "Résoudre dans ℝ : a) 4sin²x − 3 = 0 ; b) 4cos²x − 1 = 0 ; c) 5sin²x + 1 = 0.",
+     "a": "a) sin x = √3/2 ou sin x = −√3/2 : x = π/3 + kπ ou x = −π/3 + kπ (k ∈ ℤ).\nb) cos x = ±1/2 : x = π/3 + kπ ou x = −π/3 + kπ.\nc) sin²x = −1/5 est impossible : S = ∅."
+    },
+    {
+     "k": "book",
+     "src": "p. 60, ex. 6 et 7",
+     "q": "1) x ∈ [0 ; π/2] et sin x = 1/4 : calculer cos x et tan x.\n2) x ∈ [−π/2 ; 0] et cos x = 0,8 : calculer sin x et tan x.",
+     "a": "1) cos x ≥ 0 : cos x = √(1 − 1/16) = √15/4 ; tan x = (1/4)/(√15/4) = √15/15.\n2) sin x ≤ 0 : sin x = −√(1 − 0,64) = −0,6 ; tan x = −0,6/0,8 = −0,75."
+    },
+    {
+     "k": "book",
+     "src": "p. 60, ex. 8 a",
+     "q": "Résoudre dans [0 ; π] : sin(3x − 5π) = sin(2x + π/3).",
+     "a": "1er cas : 3x − 5π = 2x + π/3 + 2kπ ⇒ x = 16π/3 + 2kπ : aucune valeur dans [0 ; π].\n2e cas : 3x − 5π = π − 2x − π/3 + 2kπ ⇒ 5x = 17π/3 + 2kπ ⇒ x = 17π/15 + 2kπ/5. Dans [0 ; π] : x = 11π/15 (k = −1) et x = π/3 (k = −2).\nS = {π/3 ; 11π/15}."
+    },
+    {
+     "k": "book",
+     "src": "p. 60, ex. 13",
+     "q": "On sait que (u⃗ ; v⃗) = −π/7 [2π] et (u⃗ ; w⃗) = −π/4 [2π]. Déterminer la mesure principale de (−u⃗ ; v⃗), (v⃗ ; w⃗) et (−w⃗ ; v⃗).",
+     "a": "(−u⃗ ; v⃗) = π + (u⃗ ; v⃗) = 6π/7.\n(v⃗ ; w⃗) = (v⃗ ; u⃗) + (u⃗ ; w⃗) = π/7 − π/4 = −3π/28.\n(−w⃗ ; v⃗) = π + (w⃗ ; v⃗) = π + 3π/28 = 31π/28 ≡ −25π/28 (mesure principale)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une grande roue a un rayon de 10 m et son centre est à 12 m du sol. Quand le rayon d’une cabine fait l’angle θ avec l’horizontale, la hauteur de la cabine est h = 12 + 10 sin θ (θ ∈ [0 ; 2π[).\n1) Quelle est la hauteur pour θ = π/6 ? pour θ = 3π/2 ?\n2) Pour quelles valeurs de θ la cabine est-elle à 17 m ?\n3) Pour quelles valeurs de θ la cabine est-elle à 12 − 5√3 m ?",
+     "a": "1) θ = π/6 : h = 12 + 5 = 17 m ; θ = 3π/2 : h = 12 − 10 = 2 m (point le plus bas).\n2) 10 sin θ = 5 ⇔ sin θ = 1/2 ⇔ θ = π/6 ou θ = 5π/6.\n3) sin θ = −√3/2 ⇔ θ = 4π/3 ou θ = 5π/3."
+    }
    ]
   },
   {
@@ -868,6 +1260,56 @@
       "Lecture graphique : les solutions de f(x) = k sont les abscisses des points d’intersection de Cf et de la droite y = k ; celles de f(x) < g(x) sont les abscisses des points de Cf situés au-dessous de Cg."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 77, ex. 2",
+     "q": "Déterminer l’ensemble de définition et simplifier :\nA(x) = x²/(x³ + 2x²) ; B(x) = (6 − 2x)/(x² − 6x + 9) ; C(x) = 2/((x − 1)(x − 3)) − 1/((x − 2)(x − 3)).",
+     "a": "A : x³ + 2x² = x²(x + 2) ≠ 0 ⇔ x ∉ {−2 ; 0} ; A(x) = 1/(x + 2).\nB : x² − 6x + 9 = (x − 3)² ≠ 0 ⇔ x ≠ 3 ; B(x) = −2(x − 3)/(x − 3)² = −2/(x − 3).\nC : x ∉ {1 ; 2 ; 3} ; C(x) = [2(x − 2) − (x − 1)]/((x − 1)(x − 2)(x − 3)) = (x − 3)/((x − 1)(x − 2)(x − 3)) = 1/((x − 1)(x − 2))."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 3",
+     "q": "f(x) = 3x − 7 ; g(x) = 4x² + 5x − 2 ; l(x) = −4x + 6.\nMontrer que f est croissante sur ℝ, g croissante sur ℝ₊ et l décroissante sur ℝ.",
+     "a": "Pour a < b :\nf(b) − f(a) = 3(b − a) > 0 : f croissante.\ng(b) − g(a) = 4(b² − a²) + 5(b − a) = (b − a)(4(a + b) + 5) > 0 si 0 ≤ a < b : g croissante sur ℝ₊.\nl(b) − l(a) = −4(b − a) < 0 : l décroissante."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 4",
+     "q": "Parmi les fonctions suivantes, lesquelles sont paires, impaires, ni paires ni impaires ?\nx ↦ x² ; x ↦ x³ ; x ↦ x + 1/x ; x ↦ 2x² + 3/x² ; x ↦ x² + 5/x ; x ↦ (x² + 1)/(x³ − 2x) ; x ↦ √(−x).",
+     "a": "x² : paire. x³ : impaire. x + 1/x : impaire (ℝ* symétrique). 2x² + 3/x² : paire. x² + 5/x : ni paire ni impaire (f(−1) = −4, f(1) = 6). (x² + 1)/(x³ − 2x) : impaire (numérateur pair, dénominateur impair, domaine ℝ ∖ {−√2 ; 0 ; √2} symétrique). √(−x) : ni l’une ni l’autre, son domaine ℝ₋ n’est pas symétrique."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 6",
+     "q": "f est définie par le tableau : x = −1 ; −0,5 ; 0 ; 1 ; 1,5 ; 3 et f(x) = 2 ; 4 ; 3,5 ; 2 ; −0,5 ; −14.\nQuelles sont les images de 0 ; 1 et 1,5 ? Quels nombres ont pour image 2 ?",
+     "a": "f(0) = 3,5 ; f(1) = 2 ; f(1,5) = −0,5. Les nombres d’image 2 (parmi ceux du tableau) sont −1 et 1."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 8",
+     "q": "f(x) = (2x + 1)/(3x − 4) pour x ≠ 4/3.\n1) Calculer f(4) ; f(−2) ; f(7) ; f(0,5) ; f(5).\n2) Déterminer les antécédents de 2.\n3) Coordonnées des points d’intersection de la courbe avec l’axe des abscisses.",
+     "a": "1) f(4) = 9/8 ; f(−2) = −3/−10 = 3/10 ; f(7) = 15/17 ; f(0,5) = 2/(−2,5) = −0,8 ; f(5) = 11/11 = 1.\n2) 2x + 1 = 2(3x − 4) ⇔ 4x = 9 ⇔ x = 9/4.\n3) f(x) = 0 ⇔ x = −1/2 : point (−1/2 ; 0)."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 10",
+     "q": "Ensemble de définition de : a) f(x) = (7 − 3/(2x))(5x + 1) ; b) f(x) = 2√x/√(3x + 7) ; c) f(x) = 1/(x + 2) + 1/(x − 3) ; d) f(x) = 1/(|x| + 1).",
+     "a": "a) x ≠ 0 : ℝ*.\nb) x ≥ 0 et 3x + 7 > 0 : [0 ; +∞[.\nc) ℝ ∖ {−2 ; 3}.\nd) |x| + 1 ≥ 1 > 0 : ℝ."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "f(x) = √(2x − 6). Déterminer son ensemble de définition et montrer que f est croissante.",
+     "a": "2x − 6 ≥ 0 ⇔ x ≥ 3 : D = [3 ; +∞[. Si 3 ≤ a < b alors 0 ≤ 2a − 6 < 2b − 6, et la racine carrée est croissante : f(a) < f(b)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "On veut clôturer un jardin rectangulaire avec 20 m de grillage. On note x la largeur (en m) et A(x) l’aire.\n1) Exprimer A(x) et donner l’ensemble de définition.\n2) Calculer A(2). Quelles largeurs donnent une aire de 21 m² ?\n3) Montrer que A(x) = 25 − (x − 5)² et en déduire les variations de A et l’aire maximale.",
+     "a": "1) Longueur 10 − x ; A(x) = x(10 − x), défini sur ]0 ; 10[.\n2) A(2) = 16 m². x(10 − x) = 21 ⇔ x² − 10x + 21 = 0 ⇔ x = 3 ou x = 7.\n3) 25 − (x − 5)² = 25 − x² + 10x − 25 = 10x − x² = A(x). A est croissante sur ]0 ; 5] et décroissante sur [5 ; 10[ ; aire maximale 25 m² pour un carré de 5 m."
+    }
    ]
   },
   {
@@ -960,6 +1402,56 @@
       "On complète la courbe par symétrie puis par translations de vecteur 2kπ i→."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 78, ex. 15",
+     "q": "f(x) = x² + 2x − 1. Démontrer que f(a) − f(b) = (a − b)(a + b + 2) et en déduire que f est décroissante sur ]−∞ ; −1] et croissante sur [−1 ; +∞[.",
+     "a": "f(a) − f(b) = a² − b² + 2(a − b) = (a − b)(a + b + 2).\nSi a < b ≤ −1 : a − b < 0 et a + b + 2 < 0, donc f(a) − f(b) > 0 : f décroissante.\nSi −1 ≤ a < b : a − b < 0 et a + b + 2 > 0, donc f(a) < f(b) : f croissante."
+    },
+    {
+     "k": "book",
+     "src": "p. 78, ex. 16",
+     "q": "f(x) = −2/x². Montrer à l’aide des règles sur les inégalités que f est croissante sur ]0 ; +∞[.",
+     "a": "0 < a < b ⇒ a² < b² ⇒ 1/a² > 1/b² ⇒ −2/a² < −2/b² : f(a) < f(b), f est croissante sur ]0 ; +∞[."
+    },
+    {
+     "k": "book",
+     "src": "p. 78, ex. 18",
+     "q": "f(x) = (2x² + 3)/(x² + 1). Exprimer f(−x) et comparer avec f(x). Que peut-on en déduire pour la courbe ?",
+     "a": "f(−x) = (2x² + 3)/(x² + 1) = f(x) : f est paire. Les points M(x ; f(x)) et M′(−x ; f(−x)) sont symétriques par rapport à l’axe des ordonnées : la courbe est symétrique par rapport à (Oy)."
+    },
+    {
+     "k": "book",
+     "src": "p. 78, ex. 20",
+     "q": "f(x) = |x + 2|. Exprimer f(x) sans valeur absolue et décrire sa représentation graphique.",
+     "a": "Si x ≥ −2 : f(x) = x + 2 ; si x < −2 : f(x) = −x − 2. La courbe est formée de deux demi-droites de sommet (−2 ; 0), en forme de V."
+    },
+    {
+     "k": "book",
+     "src": "p. 78, ex. 21",
+     "q": "Mettre sous forme canonique : A(x) = x² − 5x + 1 ; B(x) = 5x² + 3x − 4 ; C(x) = 2x² − 6x + 5.",
+     "a": "A(x) = (x − 5/2)² − 21/4.\nB(x) = 5(x + 3/10)² − 89/20.\nC(x) = 2(x − 3/2)² + 1/2."
+    },
+    {
+     "k": "book",
+     "src": "p. 78, ex. 24",
+     "q": "Construire le tableau de variations de f(x) = (x − 1)/(x − 3) et de h(x) = (2 + x)/x.",
+     "a": "f(x) = 1 + 2/(x − 3) : f est décroissante sur ]−∞ ; 3[ et sur ]3 ; +∞[ (hyperbole de centre (3 ; 1)).\nh(x) = 1 + 2/x : h est décroissante sur ]−∞ ; 0[ et sur ]0 ; +∞[ (centre (0 ; 1))."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Sans calculatrice, comparer : a) (−2,3)² et (−2,1)² ; b) 1/√7 et 1/√5 ; c) (0,7)³ et (0,8)³.",
+     "a": "a) Sur ℝ₋ la fonction carré est décroissante : −2,3 < −2,1 ⇒ (−2,3)² > (−2,1)².\nb) √5 < √7 et la fonction inverse est décroissante sur ]0 ; +∞[ : 1/√7 < 1/√5.\nc) La fonction cube est croissante : (0,7)³ < (0,8)³."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Deux forfaits téléphoniques : A coûte 1500 UM par mois plus 10 UM la minute ; B coûte 25 UM la minute sans abonnement. x est la durée mensuelle en minutes.\n1) Exprimer les coûts f(x) et g(x).\n2) Pour quelle durée les deux forfaits coûtent-ils autant ?\n3) Quel forfait conseiller à quelqu’un qui téléphone 3 heures par mois ?",
+     "a": "1) f(x) = 1500 + 10x (fonction affine) ; g(x) = 25x (fonction linéaire).\n2) 1500 + 10x = 25x ⇔ x = 100 minutes (coût 2500 UM).\n3) 180 min : f(180) = 3300 UM et g(180) = 4500 UM ; le forfait A est plus avantageux (au-delà de 100 minutes)."
+    }
    ]
   },
   {
@@ -1047,6 +1539,56 @@
       "AB² = BH × BC ; AC² = CH × CB ; AH² = HB × HC."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 84, ex. 1",
+     "q": "A, B, C sont tels que AB = 7, AC = 12, BC = 8. Calculer cos Â, cos B̂ et cos Ĉ.",
+     "a": "cos Â = (49 + 144 − 64)/(2 × 7 × 12) = 129/168 = 43/56.\ncos B̂ = (49 + 64 − 144)/(2 × 7 × 8) = −31/112.\ncos Ĉ = (144 + 64 − 49)/(2 × 12 × 8) = 159/192 = 53/64."
+    },
+    {
+     "k": "book",
+     "src": "p. 84, ex. 3",
+     "q": "ABC est un triangle tel que AB = 8 cm, AC = 12 cm et Â = 30°.\n1) Calculer BC.\n2) O est le centre du cercle circonscrit : quelle est la nature du triangle OBC ?\n3) En déduire le rayon du cercle circonscrit.",
+     "a": "1) BC² = 64 + 144 − 2 × 8 × 12 × cos 30° = 208 − 96√3 ≈ 41,72 ; BC ≈ 6,46 cm.\n2) L’angle au centre BOC vaut 2Â = 60° et OB = OC : OBC est équilatéral.\n3) R = OB = BC ≈ 6,46 cm."
+    },
+    {
+     "k": "book",
+     "src": "p. 84, ex. 6",
+     "q": "(D) : 5x − 4y + 7 = 0 et A(−3 ; 2). Calculer d(A ; D).",
+     "a": "d = |5(−3) − 4(2) + 7|/√(25 + 16) = 16/√41 = 16√41/41 ≈ 2,50."
+    },
+    {
+     "k": "book",
+     "src": "p. 84, ex. 8",
+     "q": "A(3 ; −2) et B(−5 ; 8). Donner par deux méthodes l’équation du cercle de diamètre [AB].",
+     "a": "Méthode 1 : M ∈ C ⇔ MA⃗ · MB⃗ = 0 ⇔ (x − 3)(x + 5) + (y + 2)(y − 8) = 0 ⇔ x² + y² + 2x − 6y − 31 = 0.\nMéthode 2 : centre I(−1 ; 3), AB = √164 donc r = √41 : (x + 1)² + (y − 3)² = 41, qui donne la même équation."
+    },
+    {
+     "k": "book",
+     "src": "p. 84, ex. 10",
+     "q": "A(5 ; 2), B(−8 ; 7), C(−3 ; 1). Donner une équation de la hauteur issue de A.",
+     "a": "BC⃗(5 ; −6) est normal à la hauteur : 5(x − 5) − 6(y − 2) = 0 ⇔ 5x − 6y − 13 = 0."
+    },
+    {
+     "k": "book",
+     "src": "p. 84, ex. 11",
+     "q": "ABC est rectangle en A, AB = 6 cm, AC = 8 cm ; H est le projeté orthogonal de A sur (BC).\n1) Calculer AH, BH et CH. 2) Calculer BA⃗ · BC⃗ et CA⃗ · CB⃗. 3) Que vaut AB⃗ · AC⃗ ?",
+     "a": "BC = 10 cm.\n1) AH = 6 × 8/10 = 4,8 cm ; BH = AB²/BC = 3,6 cm ; CH = AC²/BC = 6,4 cm.\n2) BA⃗ · BC⃗ = BH × BC = 36 ; CA⃗ · CB⃗ = CH × CB = 64.\n3) AB⃗ · AC⃗ = 0 car (AB) ⊥ (AC)."
+    },
+    {
+     "k": "book",
+     "src": "p. 84, ex. 14",
+     "q": "‖u⃗‖ = 1, ‖v⃗‖ = 3 et u⃗ · v⃗ = −2. Calculer (2u⃗ + 3v⃗) · (u⃗ − v⃗), puis le réel x tel que 2u⃗ + xv⃗ soit orthogonal à u⃗ − v⃗.",
+     "a": "(2u⃗ + 3v⃗) · (u⃗ − v⃗) = 2‖u⃗‖² + u⃗ · v⃗ − 3‖v⃗‖² = 2 − 2 − 27 = −27.\n(2u⃗ + xv⃗) · (u⃗ − v⃗) = 2 − 2(−2) + x(−2) − 9x = 6 − 11x = 0 ⇔ x = 6/11."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un élève tire une charrette sur 20 m avec une force de 50 N faisant un angle de 60° avec le sol.\n1) Calculer le travail W = F⃗ · AB⃗ de la force.\n2) Dans un repère orthonormé (unité 1 N et 1 m), une autre force F⃗(30 ; 40) déplace la charrette de A à B avec AB⃗(20 ; 0). Calculer l’intensité de la force et son travail.",
+     "a": "1) W = 50 × 20 × cos 60° = 500 J.\n2) ‖F⃗‖ = √(900 + 1600) = 50 N ; W = 30 × 20 + 40 × 0 = 600 J."
+    }
    ]
   },
   {
@@ -1133,6 +1675,56 @@
       "f ∘ (g ∘ h) = (f ∘ g) ∘ h ; en général f ∘ g ≠ g ∘ f.",
       "La composée d’une bijection et de sa réciproque est l’identité : f ∘ f⁻¹ = Id_F et f⁻¹ ∘ f = Id_E."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 88, ex. 2 et 3",
+     "q": "1) Pourquoi f : ℕ → ℕ, f(n) = |n − 1| n’est-elle pas une bijection ?\n2) Pourquoi f : ℕ → ℕ, f(n) = n + 1 n’est-elle pas une bijection ? Que peut-on modifier pour qu’elle le soit ?",
+     "a": "1) f(0) = f(2) = 1 : deux éléments ont la même image, f n’est pas injective.\n2) 0 n’a pas d’antécédent (n + 1 = 0 impossible dans ℕ) : f n’est pas surjective. En prenant ℕ* comme ensemble d’arrivée, f : ℕ → ℕ* devient bijective (réciproque n ↦ n − 1)."
+    },
+    {
+     "k": "book",
+     "src": "p. 88, ex. 4 et 7",
+     "q": "1) f(x) = 3x + 1 et g(x) = x² − 5x + 3 : calculer f∘g et g∘f.\n2) f(x) = 3x + 1 et g(x) = x² − 1 : a-t-on f∘g = g∘f ?",
+     "a": "1) f∘g(x) = 3(x² − 5x + 3) + 1 = 3x² − 15x + 10 ; g∘f(x) = (3x + 1)² − 5(3x + 1) + 3 = 9x² − 9x − 1.\n2) f∘g(x) = 3x² − 2 et g∘f(x) = (3x + 1)² − 1 = 9x² + 6x. Pour x = 0 : −2 ≠ 0, donc f∘g ≠ g∘f."
+    },
+    {
+     "k": "book",
+     "src": "p. 88, ex. 5",
+     "q": "Ces applications sont-elles injectives ? surjectives ? bijectives ?\n1) ℤ → ℤ, n ↦ n + 1 ; 2) ℤ → ℤ, n ↦ 2n ; 3) ℤ → ℤ, n ↦ n² ; 4) [1 ; +∞[ → [0 ; +∞[, x ↦ x² − 1 ; 5) ℝ ∖ {1} → ℝ, x ↦ (x + 1)/(x − 1).",
+     "a": "1) Bijective (réciproque n ↦ n − 1).\n2) Injective, non surjective (les impairs n’ont pas d’antécédent).\n3) Ni injective (1 et −1 ont la même image) ni surjective (2 n’est pas un carré).\n4) Bijective : elle est strictement croissante et tout y ≥ 0 a l’antécédent x = √(y + 1) ≥ 1.\n5) Injective, mais 1 n’a pas d’antécédent ((x + 1)/(x − 1) = 1 est impossible) : non surjective."
+    },
+    {
+     "k": "book",
+     "src": "p. 88, ex. 8",
+     "q": "f associe à toute date de l’année 2025 le jour de la semaine correspondant (lundi, mardi, …, dimanche). f est-elle injective, surjective, bijective ?",
+     "a": "Non injective : 365 dates pour 7 jours, plusieurs dates tombent le même jour. Surjective : chaque jour de la semaine apparaît dans l’année. Donc non bijective."
+    },
+    {
+     "k": "book",
+     "src": "p. 88, ex. 9",
+     "q": "F = {1 ; 2 ; 3} et G = {m ; n}. Construire une application surjective de F sur G, puis une application de F dans G non injective. Peut-on construire une application surjective de G sur F ?",
+     "a": "Surjective : 1 ↦ m, 2 ↦ n, 3 ↦ n. Non injective : 1 ↦ m, 2 ↦ m, 3 ↦ m (toute application de F dans G est d’ailleurs non injective). G n’a que 2 éléments : leurs images ne peuvent pas couvrir les 3 éléments de F, aucune application de G dans F n’est surjective."
+    },
+    {
+     "k": "book",
+     "src": "p. 88, ex. 11",
+     "q": "Déterminer deux fonctions u et v telles que h = u∘v : h₁(x) = √(3x − 1) ; h₂(x) = (4x + 7)² ; h₃(x) = 1/(2 − x) ; h₄(x) = sin(5 − x).",
+     "a": "h₁ : v(x) = 3x − 1, u(x) = √x. h₂ : v(x) = 4x + 7, u(x) = x². h₃ : v(x) = 2 − x, u(x) = 1/x. h₄ : v(x) = 5 − x, u(x) = sin x."
+    },
+    {
+     "k": "book",
+     "src": "p. 88, ex. 12",
+     "q": "f et g de ℕ dans ℕ : f(x) = 2x ; g(x) = x/2 si x est pair, 0 si x est impair.\na) Déterminer f∘g et g∘f. b) f et g sont-elles injectives ? surjectives ?",
+     "a": "a) f∘g(x) = x si x est pair, 0 si x est impair ; g∘f(x) = g(2x) = x pour tout x.\nb) f est injective mais pas surjective (les impairs ne sont pas atteints). g est surjective (g(2n) = n) mais pas injective (g(0) = g(1) = 0)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un surveillant attribue à chacun des 30 élèves d’une classe un casier numéroté.\n1) S’il y a 30 casiers et que deux élèves n’ont jamais le même casier, quelle est la nature de l’application « élève ↦ casier » ?\n2) Même question s’il y a 35 casiers.\n3) S’il n’y a que 25 casiers, l’application peut-elle être injective ?",
+     "a": "1) Injective (casiers différents) entre deux ensembles de 30 éléments : elle est aussi surjective, donc bijective.\n2) Injective mais non surjective : 5 casiers restent vides.\n3) Non : 30 élèves pour 25 casiers, au moins deux élèves partagent un casier."
     }
    ]
   },
@@ -1222,6 +1814,56 @@
       "Ligne 4 : 1 4 6 4 1 ; ligne 5 : 1 5 10 10 5 1."
      ]
     }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 94, ex. 1 et 2",
+     "q": "1) Les numéros d’un réseau téléphonique sont des nombres de 8 chiffres. Quelle est la capacité du réseau ?\n2) On lance un dé noir et un dé jaune et on relève les deux numéros dans l’ordre. Nombre de résultats possibles ?",
+     "a": "1) Chaque chiffre a 10 choix : 10⁸ = 100 000 000 numéros (si le premier chiffre ne peut pas être 0 : 9 × 10⁷ = 90 000 000).\n2) 6 × 6 = 36 couples."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 3 et 4",
+     "q": "1) De combien de façons 3 personnes peuvent-elles occuper 5 chaises ?\n2) Combien de groupes de 7 élèves peut-on former dans une classe de 12 élèves ?",
+     "a": "1) Arrangements : A(5 ; 3) = 5 × 4 × 3 = 60.\n2) Combinaisons : C(12 ; 7) = 12!/(7! 5!) = 792."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 7",
+     "q": "Une caisse contient 8 boules : 3 noires, 3 jaunes et 2 blanches.\n1) On tire 3 boules simultanément : a) nombre de tirages ; b) avec une seule boule noire ; c) avec au moins une boule noire.\n2) On tire 2 boules simultanément : a) nombre de tirages ; b) de même couleur ; c) de couleurs différentes.",
+     "a": "1) a) C(8 ; 3) = 56. b) C(3 ; 1) × C(5 ; 2) = 3 × 10 = 30. c) 56 − C(5 ; 3) = 56 − 10 = 46.\n2) a) C(8 ; 2) = 28. b) C(3 ; 2) + C(3 ; 2) + C(2 ; 2) = 3 + 3 + 1 = 7. c) 28 − 7 = 21."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 13 et 15",
+     "q": "1) 18 athlètes : on attribue une médaille d’or, d’argent et de bronze. Combien de distributions possibles ?\n2) 8 équipes ; chaque équipe rencontre une seule fois chacune des autres. Combien de matchs ?",
+     "a": "1) L’ordre compte : 18 × 17 × 16 = 4896.\n2) C(8 ; 2) = 28 matchs."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 17",
+     "q": "A est l’ensemble des nombres de quatre chiffres, le premier étant non nul.\n1) Combien d’éléments a A ?\n2) Combien sont : a) composés de 4 chiffres distincts ; b) avec au moins deux chiffres identiques ; c) composés de 4 chiffres distincts autres que 5 et 7 ?",
+     "a": "1) 9 × 10 × 10 × 10 = 9000.\n2) a) 9 × 9 × 8 × 7 = 4536. b) 9000 − 4536 = 4464. c) Il reste 8 chiffres (dont 0) : 7 choix pour le premier, puis 7, 6, 5 : 7 × 7 × 6 × 5 = 1470."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 19",
+     "q": "Une classe de 32 élèves compte 19 garçons et 13 filles. On élit deux délégués.\n1) Nombre de choix possibles ? 2) Si l’on impose un garçon et une fille ? 3) Si l’on impose deux garçons ?",
+     "a": "1) C(32 ; 2) = 496. 2) 19 × 13 = 247. 3) C(19 ; 2) = 171."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Combien d’anagrammes (mots ayant un sens ou non) peut-on former avec les lettres du mot LIVRE ? et du mot ÉCOLE en considérant É et E comme différentes ?",
+     "a": "LIVRE a 5 lettres distinctes : 5! = 120. ÉCOLE : 5 lettres distinctes aussi : 120."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Le mot de passe du réseau Wi-Fi du lycée est formé de 4 lettres majuscules (26 possibilités chacune) suivies de 2 chiffres.\n1) Combien de mots de passe sont possibles ?\n2) Combien si les 4 lettres doivent être différentes ?\n3) Un pirate teste 1000 mots de passe par seconde. Combien de temps lui faut-il au maximum dans le cas 1) ?",
+     "a": "1) 26⁴ × 10² = 456 976 × 100 = 45 697 600.\n2) 26 × 25 × 24 × 23 × 100 = 35 880 000.\n3) 45 697 600 ÷ 1000 ≈ 45 698 s, soit environ 12 h 42 min."
+    }
    ]
   },
   {
@@ -1310,6 +1952,50 @@
       "Histogramme (caractère continu) : rectangles dont l’aire est proportionnelle à l’effectif ; si les classes ont la même amplitude, les hauteurs sont proportionnelles aux effectifs.",
       "Diagramme polaire (radar) : un axe par modalité, chaque effectif représenté par un point."
      ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 103, ex. 1",
+     "q": "Série : xᵢ = 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 et nᵢ = 5 ; 8 ; 9 ; 11 ; 9 ; 8 ; 5.\n1) Donner le mode, la médiane et la moyenne.\n2) Nombre de valeurs qui dépassent 7 ; pourcentage des valeurs qui n’atteignent pas 5.\n3) Calculer la variance et l’écart type.",
+     "a": "N = 55.\n1) Mode : 6. Médiane : 28e valeur ; effectifs cumulés 5, 13, 22, 33 ⇒ Me = 6. Moyenne : Σnᵢxᵢ = 330, x̄ = 330/55 = 6.\n2) Valeurs > 7 : 8 + 5 = 13. Valeurs < 5 : 5 + 8 = 13, soit 13/55 ≈ 23,6 %.\n3) Σnᵢ(xᵢ − 6)² = 45 + 32 + 9 + 0 + 9 + 32 + 45 = 172 ; V = 172/55 ≈ 3,13 ; σ ≈ 1,77."
+    },
+    {
+     "k": "book",
+     "src": "p. 103, ex. 3",
+     "q": "On lance un dé 100 fois : xᵢ = 1 ; 2 ; 3 ; 4 ; 5 ; 6 et nᵢ = 20 ; 10 ; 26 ; 14 ; 10 ; 20. Déterminer les fréquences et les fréquences cumulées.",
+     "a": "Fréquences : 0,20 ; 0,10 ; 0,26 ; 0,14 ; 0,10 ; 0,20.\nFréquences cumulées croissantes : 0,20 ; 0,30 ; 0,56 ; 0,70 ; 0,80 ; 1."
+    },
+    {
+     "k": "book",
+     "src": "p. 103, ex. 6",
+     "q": "Âges de 20 personnes : 20 ; 18 ; 36 ; 30 ; 20 ; 24 ; 60 ; 26 ; 40 ; 24 ; 30 ; 32 ; 18 ; 24 ; 50 ; 26 ; 42 ; 28 ; 52 ; 28.\nDéterminer le mode, la moyenne, la médiane et l’étendue.",
+     "a": "Série ordonnée : 18, 18, 20, 20, 24, 24, 24, 26, 26, 28, 28, 30, 30, 32, 36, 40, 42, 50, 52, 60.\nMode : 24. Moyenne : 628/20 = 31,4 ans. Médiane : (10e + 11e)/2 = (28 + 28)/2 = 28. Étendue : 60 − 18 = 42."
+    },
+    {
+     "k": "book",
+     "src": "p. 103, ex. 8",
+     "q": "La moyenne d’un élève est 12,5. Avec une note de 16 au prochain contrôle, elle passerait à 13. Combien de contrôles a-t-il effectués ?",
+     "a": "(12,5n + 16)/(n + 1) = 13 ⇔ 12,5n + 16 = 13n + 13 ⇔ 0,5n = 3 ⇔ n = 6 contrôles."
+    },
+    {
+     "k": "book",
+     "src": "p. 103, ex. 9",
+     "q": "Après neuf devoirs, la moyenne d’un élève est 11,75. Quelle meilleure moyenne peut-il espérer après un dixième devoir ? Peut-elle descendre sous 10 ?",
+     "a": "Total actuel : 9 × 11,75 = 105,75. Meilleure moyenne (20 au dernier devoir) : 125,75/10 = 12,575. Pire cas (0) : 105,75/10 = 10,575 > 10 : la moyenne ne peut pas être inférieure à 10."
+    },
+    {
+     "k": "book",
+     "src": "p. 103, ex. 10",
+     "q": "On lance deux dés 60 fois et on note la somme : points 2 à 12, effectifs 2 ; 3 ; 3 ; 5 ; 8 ; 11 ; 9 ; 8 ; 5 ; 3 ; 3.\nCalculer la moyenne, la médiane, l’écart moyen et l’écart type.",
+     "a": "Σnᵢxᵢ = 438 : x̄ = 7,3.\nMédiane : 30e et 31e valeurs ; cumulés 2, 5, 8, 13, 21, 32 ⇒ Me = 7.\nÉcart moyen : Σnᵢ|xᵢ − 7,3| = 117,2 ⇒ 117,2/60 ≈ 1,95.\nΣnᵢxᵢ² = 3554 ; V = 3554/60 − 7,3² ≈ 59,23 − 53,29 = 5,94 ; σ ≈ 2,44."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Les notes d’un devoir dans une classe de 20 élèves : notes 8 ; 10 ; 12 ; 14 ; 16 avec les effectifs 2 ; 5 ; 8 ; 4 ; 1.\n1) Calculer la moyenne et la médiane.\n2) Quel pourcentage d’élèves a la moyenne (≥ 10) ?\n3) Calculer l’écart type. Une autre classe a la même moyenne avec un écart type de 4 : laquelle est la plus homogène ?",
+     "a": "1) x̄ = (16 + 50 + 96 + 56 + 16)/20 = 234/20 = 11,7. Cumulés 2, 7, 15 ⇒ 10e et 11e valeurs = 12 : Me = 12.\n2) 18/20 = 90 %.\n3) Σnᵢxᵢ² = 2820 ; V = 141 − 11,7² = 4,11 ; σ ≈ 2,03. Cette classe est plus homogène (écart type plus petit que 4)."
     }
    ]
   }

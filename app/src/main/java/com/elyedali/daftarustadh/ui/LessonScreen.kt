@@ -90,7 +90,9 @@ fun LessonDialog(
         stringResource(R.string.lesson_prep), stringResource(R.string.lesson_book), stringResource(R.string.lesson_board),
         stringResource(R.string.lesson_pages, lesson.pageFrom, lesson.pageTo), stringResource(R.string.lesson_objectives),
         stringResource(R.string.lesson_intro), stringResource(R.string.lesson_summary), stringResource(R.string.lesson_points),
-        stringResource(R.string.lesson_application), stringResource(R.string.lesson_reallife))
+        stringResource(R.string.lesson_application), stringResource(R.string.lesson_reallife),
+        stringResource(R.string.lesson_series), stringResource(R.string.lesson_show_solution), stringResource(R.string.lesson_hide_solution),
+        stringResource(R.string.lesson_series_book), stringResource(R.string.lesson_series_extra), stringResource(R.string.lesson_series_int))
     Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false, securePolicy = ScreenSecurity.dialogPolicy)) {
         Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
             // لا يختفي أسفل المحتوى (مثل زر «إظهار الإجابة») تحت أزرار الهاتف
@@ -109,12 +111,15 @@ fun LessonDialog(
                     ViewButton("📝 " + L.prep, view == 0, Modifier.weight(1f)) { view = 0 }
                     ViewButton("📖 " + L.book, view == 1, Modifier.weight(1f)) { view = 1 }
                     ViewButton("🧑‍🏫 " + L.board, view == 2, Modifier.weight(1f)) { view = 2 }
+                    // سلسلة تمارين آخر الفصل (المواد العلمية في الثانوية)
+                    if (lesson.series.isNotEmpty()) ViewButton("📚 " + L.series, view == 3, Modifier.weight(1f)) { view = 3 }
                 }
                 Box(Modifier.weight(1f)) {
                     when (view) {
                         1 -> BookPages(bookAsset, lesson.pageFrom, lesson.pageTo, bookTitle)
                         // دروس المواد التي تُدرَّس بالفرنسية أو الإنجليزية: السبورة تُكتب من اليسار إلى اليمين
                         2 -> BoardView(lesson, bookAsset)
+                        3 -> SeriesView(lesson, bookAsset, L)
                         else -> PrepView(lesson, L)
                     }
                 }
@@ -128,7 +133,9 @@ fun LessonDialog(
 private data class LessonLabels(
     val prep: String, val book: String, val board: String, val pages: String,
     val objectives: String, val intro: String, val summary: String, val points: String, val application: String,
-    val reallife: String = ""
+    val reallife: String = "",
+    val series: String = "Série", val showSol: String = "Afficher la solution", val hideSol: String = "Masquer la solution",
+    val kBook: String = "Exercice du manuel", val kExtra: String = "Exercice complémentaire", val kInt: String = "Situation d’intégration"
 )
 
 /** عناوين بلغة الدرس لدروس الفرنسية والإنجليزية، أو null لدروس العربية (تبقى بلغة التطبيق). */
@@ -137,10 +144,12 @@ private fun lessonLabels(l: BookLesson, subjectCode: String?): LessonLabels? {
     val pages = "${l.pageFrom} – ${l.pageTo}"
     return if (subjectCode == "ANG") LessonLabels(
         "Lesson plan", "Textbook", "Board", "Lesson pages in the textbook: $pages",
-        "Objectives", "Introduction", "Summary", "Key points", "Short exercise", "Applications")
+        "Objectives", "Introduction", "Summary", "Key points", "Short exercise", "Applications",
+        "Exercises", "Show the answer", "Hide the answer", "Textbook exercise", "Extra exercise", "Integration task")
     else LessonLabels(
         "Préparation", "Manuel", "Tableau", "Pages de la leçon dans le manuel : $pages",
-        "Objectifs", "Introduction", "Résumé", "Points essentiels", "Petite application", "Applications")
+        "Objectifs", "Introduction", "Résumé", "Points essentiels", "Petite application", "Applications",
+        "Série", "Afficher la solution", "Masquer la solution", "Exercice du manuel", "Exercice complémentaire", "Situation d’intégration")
 }
 
 /** الدرس مكتوب بحروف لاتينية (فرنسية أو إنجليزية): الحروف اللاتينية أكثر من العربية في عنوانه ومحتوى سبورته. */
@@ -155,10 +164,59 @@ private fun isLatinLesson(l: BookLesson): Boolean {
 private fun ViewButton(label: String, selected: Boolean, modifier: Modifier, onClick: () -> Unit) {
     if (selected) Button(onClick = onClick, modifier = modifier, shape = RoundedCornerShape(12.dp),
         contentPadding = PaddingValues(horizontal = 4.dp, vertical = 8.dp)) {
-        Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold, maxLines = 1)
+        Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold, maxLines = 2, textAlign = TextAlign.Center, lineHeight = 15.sp)
     } else OutlinedButton(onClick = onClick, modifier = modifier, shape = RoundedCornerShape(12.dp),
         contentPadding = PaddingValues(horizontal = 4.dp, vertical = 8.dp)) {
-        Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold, maxLines = 1)
+        Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold, maxLines = 2, textAlign = TextAlign.Center, lineHeight = 15.sp)
+    }
+}
+
+/** سلسلة تمارين آخر الفصل: تمارين الكتاب ثم تمارين على نمطها ووضعيات إدماجية، والحل مخفي حتى يطلبه الأستاذ. */
+@Composable
+private fun SeriesView(l: BookLesson, bookAsset: String, L: LessonLabels) {
+    val context = LocalContext.current
+    val hasFig = l.series.any { it.figure != null }
+    val holder = remember(bookAsset) { RendererHolder() }
+    DisposableEffect(bookAsset) { onDispose { holder.close() } }
+    val bookStates by BookPack.states.collectAsState()
+    val bookOnPhone = bookStates[BookPack.packOf(bookAsset)] is BookPack.Status.Ready
+    val ready by produceState(initialValue = false, bookAsset, hasFig, bookOnPhone) {
+        if (hasFig) value = withContext(Dispatchers.IO) { LessonBank.bookFile(context, bookAsset)?.let { holder.open(it) } ?: false }
+    }
+    LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(start = 12.dp, end = 12.dp, top = 12.dp, bottom = 40.dp),
+        verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        item { Text("📚 " + L.series + " — " + l.title, fontWeight = FontWeight.Black, fontSize = 16.sp) }
+        items(l.series.size) { i ->
+            val e = l.series[i]
+            var open by rememberSaveable(l.title, i) { mutableStateOf(false) }
+            val (tag, bg) = when (e.kind) {
+                "int" -> L.kInt to Color(0xFFFFF3E0)
+                "extra" -> L.kExtra to Color(0xFFE8F5E9)
+                else -> L.kBook to Color(0xFFE3F2FD)
+            }
+            Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(14.dp), colors = CardDefaults.cardColors(containerColor = bg)) {
+                Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text("${i + 1}. " + tag + if (e.src.isNotBlank()) " (${e.src})" else "", fontWeight = FontWeight.Black,
+                        fontSize = 14.sp, color = Color(0xFF263238))
+                    Text(e.q, fontSize = 14.sp, lineHeight = 22.sp, color = Color(0xFF212121))
+                    e.figure?.let { f ->
+                        val bmp by produceState<Bitmap?>(initialValue = null, ready, f) {
+                            if (ready) value = holder.renderCrop(f.page - 1, f.rect)
+                        }
+                        val b = bmp
+                        if (b != null) Image(b.asImageBitmap(), contentDescription = f.caption,
+                            modifier = Modifier.fillMaxWidth().background(Color.White, RoundedCornerShape(6.dp)).padding(4.dp)
+                                .aspectRatio(b.width.toFloat() / b.height), contentScale = ContentScale.FillWidth)
+                        if (b == null && !ready) Text("📖 " + stringResource(R.string.bk_fig_needs_book), fontSize = 12.sp,
+                            color = Color(0xFF6D4C41))
+                    }
+                    TextButton(onClick = { open = !open }) {
+                        Text(if (open) "▲ " + L.hideSol else "▼ " + L.showSol, fontWeight = FontWeight.Bold)
+                    }
+                    if (open) Text("✔ " + e.a, fontSize = 14.sp, lineHeight = 22.sp, color = Color(0xFF1B5E20))
+                }
+            }
+        }
     }
 }
 

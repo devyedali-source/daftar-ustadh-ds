@@ -862,6 +862,12 @@
     <string name="lesson_reallife">Applications</string>
     <string name="lesson_show_answer">Afficher la réponse</string>
     <string name="lesson_hide_answer">Masquer la réponse</string>
+    <string name="lesson_series">Série d’exercices</string>
+    <string name="lesson_show_solution">Afficher la solution</string>
+    <string name="lesson_hide_solution">Masquer la solution</string>
+    <string name="lesson_series_book">Exercice du manuel</string>
+    <string name="lesson_series_extra">Exercice complémentaire</string>
+    <string name="lesson_series_int">Situation d’intégration</string>
     <string name="bk_mb">%1$s Mo</string>
     <string name="bk_title">Mes manuels sur le téléphone</string>
     <string name="menu_phone_books">Télécharger mes manuels</string>

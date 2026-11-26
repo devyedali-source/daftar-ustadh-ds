@@ -36,6 +36,27 @@ def check(book, lessons, pages):
         titles.add(l["title"])
 
 
+def load_series(name, lessons, pages):
+    """سلسلة تمارين آخر الفصل: tools/lycee/series/<الكتاب>.py يعرّف SERIES = {عنوان الدرس: [تمارين]}.
+    كل تمرين: k ("book" من الكتاب، "extra" على نمطه، "int" وضعية إدماجية)، src، q، a، و fig اختياري."""
+    p = os.path.join(HERE, "series", name + ".py")
+    if not os.path.exists(p):
+        return lessons
+    spec = importlib.util.spec_from_file_location("series_" + name, p)
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    titles = {l["title"] for l in lessons}
+    for t, items in m.SERIES.items():
+        assert t in titles, f"{name}: سلسلة لدرس غير موجود {t}"
+        for e in items:
+            assert e.get("k") in ("book", "extra", "int") and e.get("q") and e.get("a"), f"{name}: تمرين ناقص في {t}"
+            f = e.get("fig")
+            if f:
+                r = f["rect"]
+                assert 1 <= f["page"] <= pages and 0 <= r[0] < r[2] <= 1 and 0 <= r[1] < r[3] <= 1, f"{name}: رسم خاطئ في سلسلة {t}"
+    return [dict(l, series=m.SERIES[l["title"]]) if l["title"] in m.SERIES else l for l in lessons]
+
+
 def build(name):
     m = load(name)
     b = BOOKS[m.BOOK]
@@ -43,6 +64,7 @@ def build(name):
     pdf = os.path.join(ROOT, "bookpacks", "b_" + "_".join(m.BOOK.split("_")[:2]).lower(), "src", "main", "assets", b["asset"])
     pages = int([l for l in subprocess.run(["pdfinfo", pdf], capture_output=True, text=True).stdout.splitlines() if l.startswith("Pages")][0].split()[-1])
     check(m.BOOK, m.LESSONS, pages)
+    m.LESSONS = load_series(name, m.LESSONS, pages)
     data = {"subject": b["subject"], "book": b["asset"], "bookTitle": b["title"], "lessons": m.LESSONS}
     for lv in b["levels"]:
         p = os.path.join(OUT, f"{b['subject']}_{lv}.json")
