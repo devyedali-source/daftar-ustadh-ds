@@ -306,7 +306,7 @@ SERIES["Chapitre 14 : Dénombrement"] = [
   "a": "1) 10⁶ = 1 000 000 numéros.\n2) a) A(5 ; 3) = 60. b) Le chauffeur est fixé ; les 3 passagers occupent 3 des 4 places restantes : A(4 ; 3) = 24."},
  {"k": "book", "src": "p. 166, ex. 8", "q": "Une caisse contient 5 boules numérotées 1 à 5. On tire successivement deux boules sans remise.\n1) Nombre de tirages possibles ? 2) Nombre de tirages donnant a + b > 7 ?",
   "a": "1) 5 × 4 = 20.\n2) a ≠ b et a + b ≥ 8 : (3 ; 5), (5 ; 3), (4 ; 5), (5 ; 4) : 4 tirages."},
- {"k": "book", "src": "p. 166, ex. 9 et 10", "q": "1) Montrer que pour n ≥ 1 : Σ (k = 0 à n) (−1)ᵏ Cₙᵏ = 0 et Σ (k = 1 à n) k Cₙᵏ = n 2ⁿ⁻¹.\n2) Résoudre dans ℝ : Σ (k = 0 à n) Cₙᵏ 2ᵏ xᵏ = 0.",
+ {"k": "book", "src": "p. 166, ex. 9 et 10", "q": "1) Montrer que pour n ≥ 1 : Σ (k = 0 à n) (−1)ᵏ Cₙᵏ = 0 (Correction : le manuel fait commencer cette somme à k = 1 ; elle vaudrait alors −1) et Σ (k = 1 à n) k Cₙᵏ = n 2ⁿ⁻¹.\n2) Résoudre dans ℝ : Σ (k = 0 à n) Cₙᵏ 2ᵏ xᵏ = 0.",
   "a": "1) Binôme : Σ Cₙᵏ(−1)ᵏ = (1 − 1)ⁿ = 0. Comme k Cₙᵏ = n Cₙ₋₁ᵏ⁻¹ : Σ k Cₙᵏ = n Σ Cₙ₋₁ʲ = n 2ⁿ⁻¹.\n2) La somme vaut (1 + 2x)ⁿ ; elle est nulle ⇔ x = −1/2."},
  {"k": "book", "src": "p. 166, ex. 11", "q": "Une caisse contient 4 boules numérotées de 1 à 4. Nombre de tirages possibles et nombre de tirages donnant |a − b| = 1 lorsqu’on tire deux boules : 1) successivement avec remise ; 2) successivement sans remise ; 3) simultanément.",
   "a": "1) 4² = 16 ; |a − b| = 1 : (1 ; 2), (2 ; 1), (2 ; 3), (3 ; 2), (3 ; 4), (4 ; 3) : 6.\n2) 4 × 3 = 12 ; toujours 6.\n3) C(4 ; 2) = 6 ; {1 ; 2}, {2 ; 3}, {3 ; 4} : 3."},

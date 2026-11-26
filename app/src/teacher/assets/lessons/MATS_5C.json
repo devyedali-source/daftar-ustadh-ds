@@ -2838,7 +2838,7 @@
     {
      "k": "book",
      "src": "p. 166, ex. 9 et 10",
-     "q": "1) Montrer que pour n ≥ 1 : Σ (k = 0 à n) (−1)ᵏ Cₙᵏ = 0 et Σ (k = 1 à n) k Cₙᵏ = n 2ⁿ⁻¹.\n2) Résoudre dans ℝ : Σ (k = 0 à n) Cₙᵏ 2ᵏ xᵏ = 0.",
+     "q": "1) Montrer que pour n ≥ 1 : Σ (k = 0 à n) (−1)ᵏ Cₙᵏ = 0 (Correction : le manuel fait commencer cette somme à k = 1 ; elle vaudrait alors −1) et Σ (k = 1 à n) k Cₙᵏ = n 2ⁿ⁻¹.\n2) Résoudre dans ℝ : Σ (k = 0 à n) Cₙᵏ 2ᵏ xᵏ = 0.",
      "a": "1) Binôme : Σ Cₙᵏ(−1)ᵏ = (1 − 1)ⁿ = 0. Comme k Cₙᵏ = n Cₙ₋₁ᵏ⁻¹ : Σ k Cₙᵏ = n Σ Cₙ₋₁ʲ = n 2ⁿ⁻¹.\n2) La somme vaut (1 + 2x)ⁿ ; elle est nulle ⇔ x = −1/2."
     },
     {
