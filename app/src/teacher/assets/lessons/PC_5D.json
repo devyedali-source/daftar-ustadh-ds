@@ -1,771 +1,8 @@
 {
  "subject": "PC",
- "book": "books/PC_5CD_CHI.pdf",
- "bookTitle": "Chimie 5ème AS",
+ "book": "books/PC_5D_PHY.pdf",
+ "bookTitle": "Physique 5ème SN",
  "lessons": [
-  {
-   "title": "Physique – Chapitre I : Notion de force et étalonnage d’un ressort",
-   "match": [
-    "Notion de force et étalonnage d’un ressort"
-   ],
-   "pages": [
-    9,
-    24
-   ],
-   "objectives": [
-    "Connaître les effets et les caractéristiques d’une force ; la représenter.",
-    "Décomposer une force et composer deux forces.",
-    "Étalonner un ressort et appliquer la loi de Hooke T = k·Δl."
-   ],
-   "intro": "Pourquoi un dynamomètre contient-il un ressort ? Que mesure-t-il vraiment ?",
-   "summary": "Une force ne se voit pas, on constate ses effets : effets dynamiques (mise en mouvement, variation de la valeur, de la direction ou du sens de la vitesse) et effet statique (déformation). Une force est modélisée par un vecteur à quatre caractéristiques : point d’application, direction (droite d’action), sens et intensité (en newtons, mesurée au dynamomètre). Dans un repère, F→ = Fx i→ + Fy j→ avec Fx = F cos α et Fy = F sin α. La résultante de deux forces concourantes a pour norme √(F₁² + F₂² + 2F₁F₂ cos θ). Pour étalonner un ressort, on suspend des masses et on mesure l’allongement : la tension T est proportionnelle à l’allongement Δl = l − l₀ (loi de Hooke) : T = k·Δl, k étant la constante de raideur en N/m.",
-   "points": [
-    "Effets d’une force : dynamique (mouvement) ou statique (déformation).",
-    "Caractéristiques : point d’application, direction, sens, intensité (N).",
-    "Fx = F cos α ; Fy = F sin α.",
-    "Résultante : R = √(F₁² + F₂² + 2F₁F₂ cos θ).",
-    "Loi de Hooke : T = k·Δl = k(l − l₀)."
-   ],
-   "application": {
-    "q": "Un ressort de raideur k = 50 N/m s’allonge de 4 cm : tension ?",
-    "a": "T = k·Δl = 50 × 0,04 = 2 N."
-   },
-   "applications": [
-    {
-     "q": "Une force de 10 N fait un angle de 30° avec (Ox) : composantes ?",
-     "a": "Fx = 10 cos 30° ≈ 8,66 N ; Fy = 10 sin 30° = 5 N."
-    },
-    {
-     "q": "Un ressort de raideur 200 N/m supporte 35 N : allongement ?",
-     "a": "Δl = 35/200 = 0,175 m = 17,5 cm."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Rappels mathématiques",
-     "lines": [
-      "sin α = opposé/hypoténuse ; cos α = adjacent/hypoténuse ; tan α = sin α/cos α ; sin²α + cos²α = 1.",
-      "Projection d’un vecteur : v′ = v cos θ.",
-      "Somme de deux vecteurs : ‖s→‖ = √(u² + v² + 2uv cos(u→, v→))."
-     ]
-    },
-    {
-     "h": "II. Les forces",
-     "lines": [
-      "Effets dynamiques : pierre lancée, moto qui accélère, ballon arrêté, bille déviée par un aimant, balle qui rebondit.",
-      "Effet statique : bouteille vide déformée par la main.",
-      "Caractéristiques : point d’application, direction, sens, intensité (N) ; F→ désigne la force, F sa valeur."
-     ]
-    },
-    {
-     "h": "III. Décomposition et composition",
-     "lines": [
-      "F→ = Fx i→ + Fy j→ ; Fx = F cos α ; Fy = F sin α.",
-      "Deux forces concourantes : règle du parallélogramme ; R² = F₁² + F₂² + 2F₁F₂ cos θ.",
-      "Même sens : R = F₁ + F₂ ; sens contraires : R = |F₁ − F₂| ; perpendiculaires : R = √(F₁² + F₂²)."
-     ]
-    },
-    {
-     "h": "IV. Étalonnage d’un ressort",
-     "lines": [
-      "On accroche des masses m au ressort : T = P = mg ; on mesure l’allongement Δl = l − l₀.",
-      "La courbe T = f(Δl) est une droite passant par l’origine : T = k·Δl (loi de Hooke).",
-      "k (N/m) est la pente de la droite ; un dynamomètre est un ressort étalonné."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre II : La poussée d’Archimède",
-   "match": [
-    "La poussée d’Archimède"
-   ],
-   "pages": [
-    25,
-    38
-   ],
-   "objectives": [
-    "Mettre en évidence la poussée d’Archimède et ses caractéristiques.",
-    "Montrer que la poussée est égale au poids du liquide déplacé : P_A = ρ_l·V_i·g.",
-    "Prévoir si un corps coule, flotte ou est en équilibre dans un liquide."
-   ],
-   "intro": "Pourquoi une pirogue chargée flotte-t-elle alors qu’un clou coule ?",
-   "summary": "Un solide immergé (totalement ou partiellement) dans un liquide subit de la part de ce liquide une force verticale vers le haut : la poussée d’Archimède. Avec un dynamomètre : poids réel P = 3 N, poids apparent Pa = 1,3 N, donc P_A = P − Pa = 1,7 N. La poussée ne dépend ni de la profondeur, ni de la quantité de liquide, ni du poids du corps ; elle dépend du volume immergé et de la nature du liquide. Sa valeur est égale au poids du liquide déplacé : P_A = ρ_l·V_i·g. Un corps totalement immergé coule si P > P_A (ρ_corps > ρ_liquide), est en équilibre au sein du liquide si P = P_A, et flotte si ρ_corps < ρ_liquide (à l’équilibre P = P_A avec un volume immergé partiel). Applications : sous-marin, plongeur, navires, montgolfières.",
-   "points": [
-    "Poussée verticale, vers le haut, appliquée au centre de poussée.",
-    "P_A = P − Pa (poids réel − poids apparent).",
-    "P_A = ρ_liquide × V_immergé × g.",
-    "Indépendante de la profondeur, de la quantité de liquide, du poids du corps.",
-    "Coule si ρ_corps > ρ_liquide ; flotte si ρ_corps < ρ_liquide."
-   ],
-   "application": {
-    "q": "Un cube de fer : P = 3 N, Pa = 2 N, il déplace 100 mL d’eau. Vérifier le principe.",
-    "a": "P_A = 3 − 2 = 1 N ; poids de l’eau déplacée = 1000 × 100·10⁻⁶ × 10 = 1 N : égalité vérifiée."
-   },
-   "applications": [
-    {
-     "q": "Un bois de masse volumique 600 kg/m³ flotte sur l’eau : fraction immergée ?",
-     "a": "V_i/V = 600/1000 = 0,6 : 60 % du volume est immergé."
-    },
-    {
-     "q": "Masse marquée 300 g : poids apparent 2,6 N (g = 10). Poussée ?",
-     "a": "P = 3 N ; P_A = 3 − 2,6 = 0,4 N."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Mise en évidence",
-     "lines": [
-      "Pirogue qui flotte ; ballon qu’il faut pousser pour l’immerger ; pot de sable : 3 N dans l’air, 1,3 N dans le liquide."
-     ]
-    },
-    {
-     "h": "II. Poids apparent",
-     "lines": [
-      "P_A = P − Pa = 3 − 1,3 = 1,7 N."
-     ]
-    },
-    {
-     "h": "III. Facteurs",
-     "lines": [],
-     "table": [
-      [
-       "Facteur",
-       "Influence ?"
-      ],
-      [
-       "Profondeur",
-       "non"
-      ],
-      [
-       "Quantité de liquide",
-       "non"
-      ],
-      [
-       "Poids du corps",
-       "non"
-      ],
-      [
-       "Volume immergé",
-       "oui"
-      ],
-      [
-       "Nature du liquide",
-       "oui"
-      ]
-     ]
-    },
-    {
-     "h": "IV. Expression",
-     "lines": [
-      "P_A = m_liquide déplacé × g = ρ_l × V_d × g = ρ_l × V_i × g."
-     ]
-    },
-    {
-     "h": "V. Flotte ou coule ?",
-     "lines": [
-      "Coule : P > P_A (ρ_s > ρ_l).",
-      "Équilibre dans le liquide : P = P_A (ρ_s = ρ_l).",
-      "Flotte : à l’équilibre P = P_A avec V_i < V (ρ_s < ρ_l) ; V_i/V = ρ_s/ρ_l."
-     ]
-    },
-    {
-     "h": "VI. Applications",
-     "lines": [
-      "Sous-marin : il remplit ou vide ses ballasts pour plonger ou remonter.",
-      "Plongeur, navires, montgolfières."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre III : Équilibre d’un solide soumis à deux ou trois forces",
-   "match": [
-    "Équilibre d’un solide soumis à deux ou trois forces"
-   ],
-   "pages": [
-    39,
-    52
-   ],
-   "objectives": [
-    "Énoncer les conditions d’équilibre d’un solide soumis à deux forces, à trois forces non parallèles.",
-    "Appliquer la méthode de résolution d’un problème de statique.",
-    "Résoudre : plan incliné, solide suspendu par deux fils, planche contre un mur."
-   ],
-   "intro": "Un tableau est suspendu par deux fils : comment calculer la tension de chaque fil ?",
-   "summary": "Un solide soumis à deux forces est en équilibre si ces forces ont la même droite d’action, des sens contraires et la même intensité : F₁→ + F₂→ = 0→. Un solide soumis à trois forces non parallèles est en équilibre si les forces sont coplanaires, leurs droites d’action concourantes, et leur somme vectorielle nulle : F₁→ + F₂→ + F₃→ = 0→ (polygone des forces fermé). Méthode : choisir le système, faire le bilan des forces, écrire la condition d’équilibre, la projeter sur deux axes (ou utiliser une construction graphique) et résoudre. Sur un plan incliné sans frottement d’angle α : T = P sin α et R = P cos α.",
-   "points": [
-    "Deux forces : même droite d’action, sens contraires, même intensité.",
-    "Trois forces : coplanaires, concourantes, somme nulle.",
-    "Méthode : système → bilan → condition → projections → calcul.",
-    "Plan incliné : T = P sin α ; R = P cos α."
-   ],
-   "application": {
-    "q": "Un solide de poids 20 N est retenu par un fil sur un plan incliné de 30° sans frottement : tension ?",
-    "a": "T = P sin α = 20 × 0,5 = 10 N ; R = 20 cos 30° ≈ 17,3 N."
-   },
-   "applications": [
-    {
-     "q": "Une charge de 100 N est suspendue par deux fils faisant chacun 60° avec la verticale : tension ?",
-     "a": "2T cos 60° = 100 ⇒ T = 100 N."
-    },
-    {
-     "q": "Deux forces de 5 N et 5 N, opposées, même droite : le solide est-il en équilibre ?",
-     "a": "Oui : somme nulle et même droite d’action."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Solide soumis à deux forces",
-     "lines": [
-      "F₁→ + F₂→ = 0→ : même droite d’action, sens opposés, F₁ = F₂.",
-      "Ex. : solide suspendu à un fil : T = P."
-     ]
-    },
-    {
-     "h": "II. Solide soumis à trois forces non parallèles",
-     "lines": [
-      "Coplanaires, concourantes, F₁→ + F₂→ + F₃→ = 0→.",
-      "Méthode graphique : triangle (dynamique) des forces fermé."
-     ]
-    },
-    {
-     "h": "III. Méthode de résolution",
-     "lines": [
-      "1) Système étudié ; 2) bilan des forces ; 3) condition d’équilibre ; 4) projections sur (Ox) et (Oy) ; 5) résolution."
-     ]
-    },
-    {
-     "h": "IV. Applications",
-     "lines": [
-      "Plan incliné : R = P cos α ; T = P sin α.",
-      "Solide suspendu par deux fils symétriques faisant α avec la verticale : 2T cos α = P.",
-      "Planche contre un mur : poids, réaction du mur, réaction du sol concourantes."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre III : Moment d’une force et solide mobile autour d’un axe",
-   "match": [
-    "Moment d’une force et solide mobile autour d’un axe"
-   ],
-   "pages": [
-    53,
-    71
-   ],
-   "objectives": [
-    "Définir le moment d’une force par rapport à un axe et son signe.",
-    "Appliquer le théorème des moments à un solide mobile autour d’un axe fixe.",
-    "Étudier poulie, treuil, levier, balance et couple de forces."
-   ],
-   "intro": "Pourquoi pousse-t-on une porte loin des gonds ?",
-   "summary": "L’effet de rotation d’une force sur un solide mobile autour d’un axe Δ dépend de son intensité et de la distance d entre sa droite d’action et l’axe (le bras de levier). Le moment est M_Δ(F→) = ± F·d (en N·m), positif si la force tend à faire tourner dans le sens choisi, négatif sinon ; il est nul si la droite d’action rencontre l’axe ou lui est parallèle. Théorème des moments : un solide mobile autour d’un axe fixe est en équilibre si la somme algébrique des moments des forces par rapport à l’axe est nulle (et la somme des forces aussi). Applications : poulie (T₁ = T₂), treuil (F·L = P·r), levier (F₁d₁ = F₂d₂), balance. Un couple de forces est formé de deux forces parallèles, de sens contraires et de même intensité, sans même droite d’action ; son moment vaut M = F·d (d distance entre les droites d’action).",
-   "points": [
-    "M_Δ(F→) = ± F·d (N·m).",
-    "Moment nul si la droite d’action coupe l’axe ou lui est parallèle.",
-    "Équilibre : Σ M_Δ = 0 et Σ F→ = 0→.",
-    "Levier : F₁·d₁ = F₂·d₂ ; treuil : F·L = P·r.",
-    "Couple : M = F·d."
-   ],
-   "application": {
-    "q": "Un levier : charge de 600 N à 0,2 m de l’axe ; on pousse à 1,2 m de l’autre côté. Force nécessaire ?",
-    "a": "F × 1,2 = 600 × 0,2 ⇒ F = 100 N."
-   },
-   "applications": [
-    {
-     "q": "Treuil : rayon du tambour 10 cm, manivelle 50 cm, charge 500 N : force ?",
-     "a": "F = P·r/L = 500 × 0,1/0,5 = 100 N."
-    },
-    {
-     "q": "Moment d’un couple de deux forces de 20 N distantes de 0,3 m ?",
-     "a": "M = 20 × 0,3 = 6 N·m."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Effet de rotation",
-     "lines": [
-      "Activités : la porte s’ouvre plus facilement si on pousse loin de l’axe et perpendiculairement."
-     ]
-    },
-    {
-     "h": "II. Moment d’une force",
-     "lines": [
-      "M_Δ(F→) = ± F × d ; d : distance de l’axe à la droite d’action.",
-      "Signe : + dans le sens positif choisi, − sinon."
-     ]
-    },
-    {
-     "h": "III. Théorème des moments",
-     "lines": [
-      "Σ M_Δ(F→ᵢ) = 0 pour un solide en équilibre autour d’un axe fixe."
-     ]
-    },
-    {
-     "h": "IV. Applications",
-     "lines": [],
-     "table": [
-      [
-       "Système",
-       "Condition d’équilibre"
-      ],
-      [
-       "Poulie",
-       "T₁ = T₂"
-      ],
-      [
-       "Treuil",
-       "F × L = P × r"
-      ],
-      [
-       "Levier",
-       "F₁ × d₁ = F₂ × d₂"
-      ],
-      [
-       "Balance",
-       "m₁ = m₂ (bras égaux)"
-      ]
-     ]
-    },
-    {
-     "h": "V. Couple de forces",
-     "lines": [
-      "Deux forces parallèles, de sens contraires, de même intensité, de droites d’action distinctes.",
-      "Moment du couple : M = F × d ; ex. volant, robinet, filière."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre IV : Lentilles minces — caractéristiques et images",
-   "match": [
-    "Lentilles minces — caractéristiques et images"
-   ],
-   "pages": [
-    72,
-    86
-   ],
-   "objectives": [
-    "Distinguer lentilles convergentes et divergentes.",
-    "Connaître centre optique, axe, foyers, distance focale et vergence.",
-    "Construire l’image d’un objet à travers une lentille (conditions de Gauss)."
-   ],
-   "intro": "La loupe grossit, les lunettes d’un myope rapetissent : quelle différence entre ces lentilles ?",
-   "summary": "Une lentille est un milieu transparent limité par deux faces dont l’une au moins est sphérique. Lentilles à bords minces : convergentes ; à bords épais : divergentes. Le centre optique O, l’axe optique principal, le foyer objet F et le foyer image F′ (symétriques par rapport à O) caractérisent la lentille ; la distance focale f = OF′ et la vergence C = 1/OF′ (en dioptries δ, f en mètres), positive pour une convergente, négative pour une divergente. Dans les conditions de Gauss (rayons peu inclinés et proches de l’axe), l’image est nette. Trois rayons particuliers : un rayon passant par O n’est pas dévié ; un rayon parallèle à l’axe émerge en passant par F′ ; un rayon passant par F émerge parallèle à l’axe. Une image est réelle si elle peut être recueillie sur un écran, virtuelle sinon.",
-   "points": [
-    "Bords minces : convergente ; bords épais : divergente.",
-    "F et F′ symétriques par rapport à O ; f = OF′.",
-    "C = 1/f (δ, f en m).",
-    "Rayons : par O non dévié ; parallèle → par F′ ; par F → parallèle.",
-    "Image réelle (sur écran) / virtuelle."
-   ],
-   "application": {
-    "q": "Vergence d’une lentille de distance focale 20 cm ?",
-    "a": "C = 1/0,20 = 5 δ."
-   },
-   "applications": [
-    {
-     "q": "Une lentille a C = −4 δ : nature et distance focale ?",
-     "a": "Divergente ; f = 1/C = −0,25 m."
-    },
-    {
-     "q": "Où placer un objet pour qu’une convergente serve de loupe ?",
-     "a": "Entre le foyer objet F et le centre optique O."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Les lentilles minces",
-     "lines": [
-      "Convergentes (bords minces) : biconvexe, plan-convexe, ménisque convergent.",
-      "Divergentes (bords épais) : biconcave, plan-concave, ménisque divergent."
-     ]
-    },
-    {
-     "h": "II. Éléments caractéristiques",
-     "lines": [
-      "Centre optique O, axe optique principal, foyers F et F′, plans focaux.",
-      "Distance focale f = OF′ ; vergence C = 1/OF′ (δ)."
-     ]
-    },
-    {
-     "h": "III. Trois rayons particuliers",
-     "lines": [
-      "Rayon passant par O : non dévié.",
-      "Rayon incident parallèle à l’axe : émerge en passant par F′.",
-      "Rayon incident passant par F : émerge parallèle à l’axe."
-     ]
-    },
-    {
-     "h": "IV. Construction des images",
-     "lines": [
-      "Objet au-delà de F (convergente) : image réelle, renversée.",
-      "Objet entre F et O : image virtuelle, droite, agrandie (loupe).",
-      "Lentille divergente, objet réel : image virtuelle, droite, plus petite."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre IV : Conjugaison, grandissement et instruments d’optique",
-   "match": [
-    "Conjugaison, grandissement et instruments d’optique"
-   ],
-   "pages": [
-    87,
-    101
-   ],
-   "objectives": [
-    "Appliquer la relation de conjugaison et du grandissement.",
-    "Calculer la vergence de lentilles accolées.",
-    "Comprendre l’œil, ses défauts, la loupe, le microscope et la lunette astronomique."
-   ],
-   "intro": "Comment l’œil fait-il pour voir net de près comme de loin ?",
-   "summary": "Relation de conjugaison (mesures algébriques sur l’axe orienté dans le sens de la lumière) : 1/OA′ − 1/OA = 1/OF′ = C. Grandissement : γ = A′B′/AB = OA′/OA ; γ < 0 image renversée, γ > 0 droite, |γ| > 1 agrandie. Deux lentilles minces accolées équivalent à une lentille de vergence C = C₁ + C₂. L’œil est modélisé par une lentille convergente (cristallin) et un écran (rétine) ; il accommode en modifiant sa vergence. Le myope voit mal de loin (corrigé par une divergente), l’hypermétrope voit mal de près (corrigé par une convergente). La loupe est une convergente ; le microscope associe un objectif et un oculaire convergents ; la lunette astronomique un objectif de grande distance focale et un oculaire.",
-   "points": [
-    "1/OA′ − 1/OA = 1/OF′.",
-    "γ = OA′/OA = A′B′/AB.",
-    "Lentilles accolées : C = C₁ + C₂.",
-    "Myopie : divergente ; hypermétropie : convergente.",
-    "Microscope, lunette : objectif + oculaire."
-   ],
-   "application": {
-    "q": "Lentille de f = 10 cm, objet à 30 cm devant (OA = −30 cm) : position et grandissement de l’image ?",
-    "a": "1/OA′ = 1/10 − 1/30 = 2/30 ⇒ OA′ = 15 cm ; γ = 15/(−30) = −0,5 : image réelle, renversée, deux fois plus petite."
-   },
-   "applications": [
-    {
-     "q": "Deux lentilles accolées de 5 δ et −2 δ : vergence équivalente ?",
-     "a": "C = 5 − 2 = 3 δ (convergente, f ≈ 33 cm)."
-    },
-    {
-     "q": "Un objet donne une image avec γ = −2 : nature ?",
-     "a": "Image renversée, deux fois plus grande."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Relation de conjugaison",
-     "lines": [
-      "1/OA′ − 1/OA = 1/OF′ = C (mesures algébriques)."
-     ]
-    },
-    {
-     "h": "II. Grandissement",
-     "lines": [
-      "γ = A′B′/AB = OA′/OA.",
-      "γ < 0 : renversée ; γ > 0 : droite ; |γ| > 1 : agrandie."
-     ]
-    },
-    {
-     "h": "III. Lentilles accolées",
-     "lines": [
-      "C = C₁ + C₂ (théorème des vergences)."
-     ]
-    },
-    {
-     "h": "IV. L’œil",
-     "lines": [
-      "Cristallin = lentille convergente ; rétine = écran ; accommodation = variation de la vergence.",
-      "Myope : image en avant de la rétine, correction par lentille divergente.",
-      "Hypermétrope : image en arrière, correction par lentille convergente."
-     ]
-    },
-    {
-     "h": "V. Instruments",
-     "lines": [
-      "Loupe : objet entre F et O, image virtuelle agrandie.",
-      "Microscope : objectif (image réelle agrandie) + oculaire (loupe).",
-      "Lunette astronomique : objectif de grande focale, oculaire ; objet à l’infini."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre V : Force et champ électrostatique",
-   "match": [
-    "Force et champ électrostatique"
-   ],
-   "pages": [
-    102,
-    119
-   ],
-   "objectives": [
-    "Décrire l’électrisation par frottement, contact et influence.",
-    "Appliquer la loi de Coulomb.",
-    "Définir le champ électrostatique, ses lignes de champ et la superposition des champs."
-   ],
-   "intro": "Pourquoi une règle frottée attire-t-elle de petits morceaux de papier ?",
-   "summary": "Un corps s’électrise par frottement, par contact ou par influence ; il existe deux sortes de charges : deux charges de même signe se repoussent, de signes contraires s’attirent. La charge électrique est quantifiée (multiple de e = 1,6·10⁻¹⁹ C) et se conserve. Loi de Coulomb : deux charges ponctuelles qA et qB distantes de d exercent l’une sur l’autre des forces opposées, portées par la droite qui les joint, d’intensité F = k|qA·qB|/d² avec k = 9·10⁹ SI. Une charge q placée en un point M où règne un champ E→ subit la force F→ = q·E→ ; le champ créé par une charge ponctuelle Q a pour valeur E = k|Q|/d², il est dirigé vers l’extérieur si Q > 0 et vers Q si Q < 0. Les lignes de champ sont tangentes en chaque point au vecteur champ ; entre deux plaques parallèles chargées, le champ est uniforme. Les champs se superposent : E→ = E₁→ + E₂→.",
-   "points": [
-    "Électrisation : frottement, contact, influence.",
-    "Charges de même signe : répulsion ; signes contraires : attraction.",
-    "Coulomb : F = k|qA qB|/d² ; k = 9·10⁹ SI.",
-    "F→ = q E→ ; E = k|Q|/d².",
-    "Superposition : E→ = E₁→ + E₂→ ; champ uniforme entre deux plaques."
-   ],
-   "application": {
-    "q": "Deux charges de 2·10⁻⁶ C distantes de 0,3 m : force ?",
-    "a": "F = 9·10⁹ × (2·10⁻⁶)²/0,3² = 0,4 N (répulsion)."
-   },
-   "applications": [
-    {
-     "q": "Force subie par un électron dans un champ de 1000 V/m ?",
-     "a": "F = eE = 1,6·10⁻¹⁹ × 1000 = 1,6·10⁻¹⁶ N, de sens opposé au champ."
-    },
-    {
-     "q": "Si la distance entre deux charges double, que devient la force ?",
-     "a": "Elle est divisée par 4."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Électrisation",
-     "lines": [
-      "Par frottement (règle frottée), par contact, par influence.",
-      "Deux types de charges : + et − ; conservation et quantification (q = n·e)."
-     ]
-    },
-    {
-     "h": "II. Loi de Coulomb",
-     "lines": [
-      "F = k|qA qB|/d² ; k = 9·10⁹ N·m²·C⁻² ; forces opposées, portées par (AB)."
-     ]
-    },
-    {
-     "h": "III. Champ électrostatique",
-     "lines": [
-      "F→ = q E→ (E en V/m ou N/C).",
-      "Charge ponctuelle Q : E = k|Q|/d² ; sortant si Q > 0, entrant si Q < 0."
-     ]
-    },
-    {
-     "h": "IV. Lignes de champ et superposition",
-     "lines": [
-      "Lignes de champ : tangentes au champ, orientées dans son sens.",
-      "Champ uniforme entre deux plaques parallèles de charges opposées.",
-      "Plusieurs charges : E→ = E₁→ + E₂→ + …"
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre VI : Intensité et tension électriques",
-   "match": [
-    "Intensité et tension électriques"
-   ],
-   "pages": [
-    120,
-    131
-   ],
-   "objectives": [
-    "Définir l’intensité du courant et la mesurer à l’ampèremètre.",
-    "Appliquer la loi d’unicité (série) et la loi des nœuds (dérivation).",
-    "Définir la tension, la mesurer au voltmètre et appliquer la loi des mailles ; conventions récepteur et générateur."
-   ],
-   "intro": "Pourquoi les lampes d’une maison sont-elles montées en dérivation ?",
-   "summary": "Le courant électrique est un déplacement d’ensemble de porteurs de charges (électrons dans les métaux, ions dans les solutions) ; son sens conventionnel va de la borne + vers la borne − à l’extérieur du générateur. L’intensité I = Q/t (A) se mesure avec un ampèremètre branché en série. Dans un circuit en série, l’intensité est la même en tout point (unicité) ; en dérivation, la somme des intensités qui arrivent à un nœud est égale à la somme de celles qui en partent (loi des nœuds). La tension U_AB = V_A − V_B (V) se mesure avec un voltmètre branché en dérivation ; loi d’additivité U_AC = U_AB + U_BC ; loi des mailles : la somme algébrique des tensions le long d’une maille est nulle. Convention récepteur : flèches de I et de U de sens opposés ; convention générateur : même sens.",
-   "points": [
-    "I = Q/t ; ampèremètre en série.",
-    "Série : I identique ; dérivation : loi des nœuds.",
-    "U_AB = V_A − V_B ; voltmètre en dérivation.",
-    "Additivité et loi des mailles.",
-    "Conventions récepteur / générateur."
-   ],
-   "application": {
-    "q": "Une charge de 120 C traverse un fil en 1 min : intensité ?",
-    "a": "I = Q/t = 120/60 = 2 A."
-   },
-   "applications": [
-    {
-     "q": "Nœud : I₁ = 0,5 A et I₂ = 0,3 A arrivent ; I₃ part. Valeur de I₃ ?",
-     "a": "I₃ = 0,8 A."
-    },
-    {
-     "q": "U_AB = 6 V, U_BC = 3 V : U_AC ?",
-     "a": "U_AC = 9 V."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Le courant électrique",
-     "lines": [
-      "Déplacement de porteurs de charges ; sens conventionnel : de + vers − à l’extérieur du générateur.",
-      "Intensité I = Q/t (ampère, A) ; mesure à l’ampèremètre (en série)."
-     ]
-    },
-    {
-     "h": "II. Lois des intensités",
-     "lines": [
-      "Série : unicité de l’intensité.",
-      "Dérivation : loi des nœuds Σ I entrantes = Σ I sortantes."
-     ]
-    },
-    {
-     "h": "III. La tension électrique",
-     "lines": [
-      "U_AB = V_A − V_B (volt, V) ; U_BA = −U_AB ; mesure au voltmètre (en dérivation).",
-      "Additivité : U_AC = U_AB + U_BC ; loi des mailles."
-     ]
-    },
-    {
-     "h": "IV. Conventions",
-     "lines": [
-      "Récepteur : U et I fléchés en sens opposés.",
-      "Générateur : U et I fléchés dans le même sens."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre VII : Dipôles passifs",
-   "match": [
-    "Dipôles passifs"
-   ],
-   "pages": [
-    132,
-    152
-   ],
-   "objectives": [
-    "Tracer et exploiter la caractéristique d’un dipôle passif.",
-    "Étudier la diode à jonction, la diode Zener et le conducteur ohmique (loi d’Ohm).",
-    "Calculer la résistance équivalente d’associations (série, parallèle)."
-   ],
-   "intro": "Pourquoi une diode laisse-t-elle passer le courant dans un seul sens ?",
-   "summary": "Un dipôle passif ne produit pas de courant ; sa caractéristique est la courbe U = f(I) (ou I = f(U)) en convention récepteur. La diode à jonction ne laisse passer le courant que dans le sens passant au-delà de sa tension de seuil ; elle est bloquée dans l’autre sens. La diode Zener conduit aussi en inverse au-delà de la tension Zener, qui reste alors pratiquement constante. Le conducteur ohmique a une caractéristique linéaire passant par l’origine : loi d’Ohm U = R·I (R en ohms) ; un dipôle est linéaire si sa caractéristique est une droite, symétrique s’il fonctionne de la même façon dans les deux sens. Associations : en série R = R₁ + R₂ ; en parallèle 1/R = 1/R₁ + 1/R₂ ; la résistance d’un fil est R = ρ·L/S.",
-   "points": [
-    "Caractéristique U = f(I) en convention récepteur.",
-    "Diode : sens passant au-delà du seuil ; bloquée en inverse.",
-    "Zener : tension constante en inverse (U_Z).",
-    "Loi d’Ohm : U = R·I.",
-    "Série : R = R₁ + R₂ ; parallèle : 1/R = 1/R₁ + 1/R₂."
-   ],
-   "application": {
-    "q": "Un conducteur ohmique de 100 Ω est traversé par 0,05 A : tension ?",
-    "a": "U = R·I = 100 × 0,05 = 5 V."
-   },
-   "applications": [
-    {
-     "q": "R₁ = 6 Ω et R₂ = 3 Ω en parallèle : R_éq ?",
-     "a": "1/R = 1/6 + 1/3 = 1/2 ⇒ R = 2 Ω."
-    },
-    {
-     "q": "Les mêmes en série ?",
-     "a": "R = 9 Ω."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Grandeurs et conventions",
-     "lines": [
-      "Courant, tension, orientation relative (convention récepteur)."
-     ]
-    },
-    {
-     "h": "II. Caractéristiques",
-     "lines": [
-      "Diode à jonction : non linéaire, non symétrique ; seuil en sens direct ; bloquée en inverse.",
-      "Diode Zener : en inverse, tension U_Z constante au-delà du seuil Zener.",
-      "Conducteur ohmique : droite passant par l’origine, U = R·I (linéaire et symétrique)."
-     ]
-    },
-    {
-     "h": "III. Associations de résistances",
-     "lines": [
-      "Série : R_éq = R₁ + R₂ + …",
-      "Parallèle : 1/R_éq = 1/R₁ + 1/R₂ + …",
-      "Résistance d’un fil : R = ρL/S."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
-  {
-   "title": "Physique – Chapitre VIII : Dipôles actifs — générateurs",
-   "match": [
-    "Dipôles actifs — générateurs"
-   ],
-   "pages": [
-    153,
-    172
-   ],
-   "objectives": [
-    "Tracer et exploiter la caractéristique d’un générateur : U = E − r·I.",
-    "Définir force électromotrice et résistance interne ; courant de court-circuit.",
-    "Associer des générateurs et déterminer le point de fonctionnement d’un circuit."
-   ],
-   "intro": "Une pile neuve affiche 9 V à vide, mais moins quand elle alimente un moteur : pourquoi ?",
-   "summary": "Un dipôle actif (générateur) peut faire circuler un courant. En convention générateur, la caractéristique d’une pile est une droite décroissante : U = E − r·I, où E est la force électromotrice (tension à vide, I = 0) et r la résistance interne ; l’intensité de court-circuit (U = 0) vaut Icc = E/r. Associés en série (même sens), des générateurs équivalent à un générateur de f.é.m. E = E₁ + E₂ et de résistance r = r₁ + r₂. Le point de fonctionnement d’un circuit générateur–récepteur est l’intersection des deux caractéristiques ; pour une résistance R branchée sur le générateur : I = E/(R + r) (loi de Pouillet).",
-   "points": [
-    "U = E − r·I (convention générateur).",
-    "E : tension à vide ; r : résistance interne.",
-    "Icc = E/r.",
-    "Série : E = ΣEᵢ ; r = Σrᵢ.",
-    "Point de fonctionnement : I = E/(R + r)."
-   ],
-   "application": {
-    "q": "Pile E = 4,5 V, r = 1,5 Ω, branchée sur R = 7,5 Ω : intensité et tension ?",
-    "a": "I = 4,5/(7,5 + 1,5) = 0,5 A ; U = 4,5 − 1,5 × 0,5 = 3,75 V."
-   },
-   "applications": [
-    {
-     "q": "E = 12 V, r = 2 Ω : intensité de court-circuit ?",
-     "a": "Icc = 12/2 = 6 A."
-    },
-    {
-     "q": "Deux piles (1,5 V ; 0,5 Ω) en série : générateur équivalent ?",
-     "a": "E = 3 V ; r = 1 Ω."
-    }
-   ],
-   "board": [
-    {
-     "h": "I. Générateurs",
-     "lines": [
-      "Dipôles actifs : piles, accumulateurs, alimentations, dynamos."
-     ]
-    },
-    {
-     "h": "II. Caractéristique",
-     "lines": [
-      "Droite décroissante : U = E − r·I.",
-      "E = tension à vide (ordonnée à l’origine) ; r = −pente ; Icc = E/r."
-     ]
-    },
-    {
-     "h": "III. Association en série",
-     "lines": [
-      "E = E₁ + E₂ + … ; r = r₁ + r₂ + …"
-     ]
-    },
-    {
-     "h": "IV. Point de fonctionnement",
-     "lines": [
-      "Intersection de la caractéristique du générateur et de celle du récepteur.",
-      "Générateur + résistor R : I = E/(R + r)."
-     ]
-    }
-   ],
-   "book": "books/PC_5D_PHY.pdf",
-   "bookTitle": "Physique 5ème SN"
-  },
   {
    "title": "Chimie – Chapitre I : La mole et la quantité de matière",
    "match": [
@@ -1716,6 +953,1139 @@
    ],
    "book": "books/PC_5CD_CHI.pdf",
    "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Physique – Chapitre I : Notion de force et étalonnage d’un ressort",
+   "match": [
+    "Notion de force et étalonnage d’un ressort"
+   ],
+   "pages": [
+    9,
+    24
+   ],
+   "objectives": [
+    "Connaître les effets et les caractéristiques d’une force ; la représenter.",
+    "Décomposer une force et composer deux forces.",
+    "Étalonner un ressort et appliquer la loi de Hooke T = k·Δl."
+   ],
+   "intro": "Pourquoi un dynamomètre contient-il un ressort ? Que mesure-t-il vraiment ?",
+   "summary": "Une force ne se voit pas, on constate ses effets : effets dynamiques (mise en mouvement, variation de la valeur, de la direction ou du sens de la vitesse) et effet statique (déformation). Une force est modélisée par un vecteur à quatre caractéristiques : point d’application, direction (droite d’action), sens et intensité (en newtons, mesurée au dynamomètre). Dans un repère, F→ = Fx i→ + Fy j→ avec Fx = F cos α et Fy = F sin α. La résultante de deux forces concourantes a pour norme √(F₁² + F₂² + 2F₁F₂ cos θ). Pour étalonner un ressort, on suspend des masses et on mesure l’allongement : la tension T est proportionnelle à l’allongement Δl = l − l₀ (loi de Hooke) : T = k·Δl, k étant la constante de raideur en N/m.",
+   "points": [
+    "Effets d’une force : dynamique (mouvement) ou statique (déformation).",
+    "Caractéristiques : point d’application, direction, sens, intensité (N).",
+    "Fx = F cos α ; Fy = F sin α.",
+    "Résultante : R = √(F₁² + F₂² + 2F₁F₂ cos θ).",
+    "Loi de Hooke : T = k·Δl = k(l − l₀)."
+   ],
+   "application": {
+    "q": "Un ressort de raideur k = 50 N/m s’allonge de 4 cm : tension ?",
+    "a": "T = k·Δl = 50 × 0,04 = 2 N."
+   },
+   "applications": [
+    {
+     "q": "Une force de 10 N fait un angle de 30° avec (Ox) : composantes ?",
+     "a": "Fx = 10 cos 30° ≈ 8,66 N ; Fy = 10 sin 30° = 5 N."
+    },
+    {
+     "q": "Un ressort de raideur 200 N/m supporte 35 N : allongement ?",
+     "a": "Δl = 35/200 = 0,175 m = 17,5 cm."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Rappels mathématiques",
+     "lines": [
+      "sin α = opposé/hypoténuse ; cos α = adjacent/hypoténuse ; tan α = sin α/cos α ; sin²α + cos²α = 1.",
+      "Projection d’un vecteur : v′ = v cos θ.",
+      "Somme de deux vecteurs : ‖s→‖ = √(u² + v² + 2uv cos(u→, v→))."
+     ]
+    },
+    {
+     "h": "II. Les forces",
+     "lines": [
+      "Effets dynamiques : pierre lancée, moto qui accélère, ballon arrêté, bille déviée par un aimant, balle qui rebondit.",
+      "Effet statique : bouteille vide déformée par la main.",
+      "Caractéristiques : point d’application, direction, sens, intensité (N) ; F→ désigne la force, F sa valeur."
+     ]
+    },
+    {
+     "h": "III. Décomposition et composition",
+     "lines": [
+      "F→ = Fx i→ + Fy j→ ; Fx = F cos α ; Fy = F sin α.",
+      "Deux forces concourantes : règle du parallélogramme ; R² = F₁² + F₂² + 2F₁F₂ cos θ.",
+      "Même sens : R = F₁ + F₂ ; sens contraires : R = |F₁ − F₂| ; perpendiculaires : R = √(F₁² + F₂²)."
+     ]
+    },
+    {
+     "h": "IV. Étalonnage d’un ressort",
+     "lines": [
+      "On accroche des masses m au ressort : T = P = mg ; on mesure l’allongement Δl = l − l₀.",
+      "La courbe T = f(Δl) est une droite passant par l’origine : T = k·Δl (loi de Hooke).",
+      "k (N/m) est la pente de la droite ; un dynamomètre est un ressort étalonné."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 22",
+     "q": "Deux forces F⃗₁ et F⃗₂ d’intensités 2 N et 4 N font un angle α = 120°.\n1) Les représenter (1 cm pour 1 N). 2) Déterminer l’intensité de F⃗ telle que F⃗ + F⃗₁ + F⃗₂ = 0⃗. 3) Deux forces F⃗₃ et F⃗₄ de même intensité font un angle de 60° ; leur résultante vaut 17,3 N. Quelle est leur intensité ?",
+     "a": "2) R² = F₁² + F₂² + 2F₁F₂cos α = 4 + 16 − 8 = 12 ⇒ R ≈ 3,46 N ; F⃗ = −R⃗, donc F ≈ 3,46 N.\n3) R = 2F cos 30° = F√3 = 17,3 ⇒ F = 10 N."
+    },
+    {
+     "k": "book",
+     "src": "p. 22",
+     "q": "Intensité et direction (angle avec Ox) de la force F⃗ de composantes : 1) (40 kN ; 60 kN) ; 2) (−50 kN ; 40 kN).",
+     "a": "1) F = √(40² + 60²) ≈ 72,1 kN ; tan θ = 60/40 ⇒ θ ≈ 56,3°.\n2) F = √(2500 + 1600) ≈ 64,0 kN ; θ ≈ 180° − 38,7° = 141,3°."
+    },
+    {
+     "k": "book",
+     "src": "p. 23",
+     "q": "Décomposer une force F = 10 N en deux forces concourantes de 7 N chacune (angle entre elles ?).",
+     "a": "F² = 7² + 7² + 2 × 7 × 7 cos α ⇒ cos α = (100 − 98)/98 ≈ 0,020 ⇒ α ≈ 88,8°. Chaque composante fait un angle d’environ 44,4° avec F⃗."
+    },
+    {
+     "k": "book",
+     "src": "p. 23",
+     "q": "F⃗₁ = 2i⃗ − 3j⃗ et F⃗₂ = −i⃗ − 2j⃗ (en N).\n1) Normes. 2) Angles (i⃗ ; F⃗₁) et (F⃗₁ ; F⃗₂). 3) F⃗ = 2F⃗₁ + 4F⃗₂ et son angle avec i⃗. 4) F⃗′ telle que F⃗′ + F⃗₁ + F⃗₂ = 0⃗.",
+     "a": "1) ‖F⃗₁‖ = √13 ≈ 3,61 N ; ‖F⃗₂‖ = √5 ≈ 2,24 N.\n2) (i⃗ ; F⃗₁) ≈ −56,3° ; cos(F⃗₁ ; F⃗₂) = (−2 + 6)/(√13 × √5) ≈ 0,496 ⇒ angle ≈ 60,3° (sens négatif : ≈ −60,3°).\n3) F⃗ = (0 ; −14) : 14 N, angle −90° (vers le bas).\n4) F⃗′ = −(F⃗₁ + F⃗₂) = −i⃗ + 5j⃗."
+    },
+    {
+     "k": "book",
+     "src": "p. 23",
+     "q": "Un ressort de longueur à vide l₀ = 22 cm a pour raideur k = 52,5 N/m. Calculer son allongement quand la tension vaut T₁ = 6,4 N, puis la tension quand sa longueur est l₂ = 28,7 cm.",
+     "a": "x₁ = T₁/k = 6,4/52,5 ≈ 0,122 m = 12,2 cm (longueur 34,2 cm).\nT₂ = k(l₂ − l₀) = 52,5 × 0,067 ≈ 3,52 N."
+    },
+    {
+     "k": "book",
+     "src": "p. 20",
+     "q": "Un ressort s’allonge de 5 cm sous une force de 10 N. Allongement pour 35 N ? Force pour un allongement de 12,5 cm ?",
+     "a": "k = 10/0,05 = 200 N/m. x = 35/200 = 0,175 m = 17,5 cm. F = 200 × 0,125 = 25 N."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Deux forces parallèles de même sens, F₁ = 30 N en A et F₂ = 20 N en B, avec AB = 50 cm. Caractéristiques de leur résultante.",
+     "a": "R = 50 N, même direction et même sens. Son point d’application C sur [AB] vérifie F₁ × AC = F₂ × BC : AC = 20 cm, BC = 30 cm."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Pour peser des colis, un commerçant étalonne un ressort : sans charge il mesure 15 cm, avec une masse de 2 kg il mesure 19 cm (g = 10 N/kg).\n1) Calculer la raideur du ressort.\n2) Avec un colis, le ressort mesure 22,5 cm. Quelle est la masse du colis ?\n3) Le ressort reste élastique jusqu’à 40 N. Quelle masse maximale peut-il peser ?",
+     "a": "1) k = 20 N/0,04 m = 500 N/m.\n2) Allongement 7,5 cm ⇒ F = 500 × 0,075 = 37,5 N ⇒ m = 3,75 kg.\n3) m = 40/10 = 4 kg (allongement 8 cm, longueur 23 cm)."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre II : La poussée d’Archimède",
+   "match": [
+    "La poussée d’Archimède"
+   ],
+   "pages": [
+    25,
+    38
+   ],
+   "objectives": [
+    "Mettre en évidence la poussée d’Archimède et ses caractéristiques.",
+    "Montrer que la poussée est égale au poids du liquide déplacé : P_A = ρ_l·V_i·g.",
+    "Prévoir si un corps coule, flotte ou est en équilibre dans un liquide."
+   ],
+   "intro": "Pourquoi une pirogue chargée flotte-t-elle alors qu’un clou coule ?",
+   "summary": "Un solide immergé (totalement ou partiellement) dans un liquide subit de la part de ce liquide une force verticale vers le haut : la poussée d’Archimède. Avec un dynamomètre : poids réel P = 3 N, poids apparent Pa = 1,3 N, donc P_A = P − Pa = 1,7 N. La poussée ne dépend ni de la profondeur, ni de la quantité de liquide, ni du poids du corps ; elle dépend du volume immergé et de la nature du liquide. Sa valeur est égale au poids du liquide déplacé : P_A = ρ_l·V_i·g. Un corps totalement immergé coule si P > P_A (ρ_corps > ρ_liquide), est en équilibre au sein du liquide si P = P_A, et flotte si ρ_corps < ρ_liquide (à l’équilibre P = P_A avec un volume immergé partiel). Applications : sous-marin, plongeur, navires, montgolfières.",
+   "points": [
+    "Poussée verticale, vers le haut, appliquée au centre de poussée.",
+    "P_A = P − Pa (poids réel − poids apparent).",
+    "P_A = ρ_liquide × V_immergé × g.",
+    "Indépendante de la profondeur, de la quantité de liquide, du poids du corps.",
+    "Coule si ρ_corps > ρ_liquide ; flotte si ρ_corps < ρ_liquide."
+   ],
+   "application": {
+    "q": "Un cube de fer : P = 3 N, Pa = 2 N, il déplace 100 mL d’eau. Vérifier le principe.",
+    "a": "P_A = 3 − 2 = 1 N ; poids de l’eau déplacée = 1000 × 100·10⁻⁶ × 10 = 1 N : égalité vérifiée."
+   },
+   "applications": [
+    {
+     "q": "Un bois de masse volumique 600 kg/m³ flotte sur l’eau : fraction immergée ?",
+     "a": "V_i/V = 600/1000 = 0,6 : 60 % du volume est immergé."
+    },
+    {
+     "q": "Masse marquée 300 g : poids apparent 2,6 N (g = 10). Poussée ?",
+     "a": "P = 3 N ; P_A = 3 − 2,6 = 0,4 N."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Mise en évidence",
+     "lines": [
+      "Pirogue qui flotte ; ballon qu’il faut pousser pour l’immerger ; pot de sable : 3 N dans l’air, 1,3 N dans le liquide."
+     ]
+    },
+    {
+     "h": "II. Poids apparent",
+     "lines": [
+      "P_A = P − Pa = 3 − 1,3 = 1,7 N."
+     ]
+    },
+    {
+     "h": "III. Facteurs",
+     "lines": [],
+     "table": [
+      [
+       "Facteur",
+       "Influence ?"
+      ],
+      [
+       "Profondeur",
+       "non"
+      ],
+      [
+       "Quantité de liquide",
+       "non"
+      ],
+      [
+       "Poids du corps",
+       "non"
+      ],
+      [
+       "Volume immergé",
+       "oui"
+      ],
+      [
+       "Nature du liquide",
+       "oui"
+      ]
+     ]
+    },
+    {
+     "h": "IV. Expression",
+     "lines": [
+      "P_A = m_liquide déplacé × g = ρ_l × V_d × g = ρ_l × V_i × g."
+     ]
+    },
+    {
+     "h": "V. Flotte ou coule ?",
+     "lines": [
+      "Coule : P > P_A (ρ_s > ρ_l).",
+      "Équilibre dans le liquide : P = P_A (ρ_s = ρ_l).",
+      "Flotte : à l’équilibre P = P_A avec V_i < V (ρ_s < ρ_l) ; V_i/V = ρ_s/ρ_l."
+     ]
+    },
+    {
+     "h": "VI. Applications",
+     "lines": [
+      "Sous-marin : il remplit ou vide ses ballasts pour plonger ou remonter.",
+      "Plongeur, navires, montgolfières."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 35",
+     "q": "Un navire de 8000 tonnes est immobile dans un port. 1) Exprimer l’intensité F de la poussée de l’eau en fonction du volume immergé V et de la masse volumique de l’eau de mer. 2) Calculer V (ρ = 1030 kg/m³).",
+     "a": "1) F = ρ × V × g, et à l’équilibre F = P = mg.\n2) V = m/ρ = 8,0 × 10⁶/1030 ≈ 7,77 × 10³ m³."
+    },
+    {
+     "k": "book",
+     "src": "p. 35",
+     "q": "Une sphère de cuivre (ρ = 8 g/cm³) de poids 24,525 N est immergée dans un liquide de masse volumique 0,8 g/cm³. Calculer son poids apparent (g = 9,81 N/kg).",
+     "a": "m = 2,5 kg ⇒ V = 2500/8 = 312,5 cm³. Poussée = 0,8 × 312,5 g = 250 g ⇒ 2,45 N. Poids apparent ≈ 24,53 − 2,45 ≈ 22,07 N."
+    },
+    {
+     "k": "book",
+     "src": "p. 35",
+     "q": "Un cylindre de cuivre de masse 565 g et de volume 63,4 cm³ est complètement immergé dans l’alcool (ρ = 820 kg/m³ ; g = 10 N/kg). 1) Poids apparent. 2) Densité du cuivre.",
+     "a": "1) P = 5,65 N ; poussée = 820 × 63,4 × 10⁻⁶ × 10 ≈ 0,52 N ; poids apparent ≈ 5,13 N.\n2) ρ = 565/63,4 ≈ 8,91 g/cm³ : densité ≈ 8,9."
+    },
+    {
+     "k": "book",
+     "src": "p. 35",
+     "q": "Une sphère en bois (ρ₁ = 600 kg/m³) flotte dans l’eau de mer (ρ₂ = 1024 kg/m³) avec un volume émergé Ve = 6 m³.\n1) Relation entre Ve, Vt, ρ₁ et ρ₂. 2) Vt et la masse m. 3) Force nécessaire pour la maintenir entièrement sous l’eau.",
+     "a": "1) Équilibre : ρ₁Vt g = ρ₂(Vt − Ve)g ⇒ Vt = ρ₂Ve/(ρ₂ − ρ₁).\n2) Vt = 1024 × 6/424 ≈ 14,5 m³ ; m ≈ 600 × 14,5 ≈ 8,7 × 10³ kg.\n3) Il faut compenser l’excès de poussée ρ₂Ve g ≈ 1024 × 6 × 9,8 ≈ 6,0 × 10⁴ N, force verticale vers le bas."
+    },
+    {
+     "k": "book",
+     "src": "p. 36",
+     "q": "Un iceberg (ρ₁ = 910 kg/m³) a un volume émergé Ve = 600 m³ dans l’eau de mer (ρ₂ = 1024 kg/m³). Calculer son volume total et sa masse.",
+     "a": "Vt = ρ₂Ve/(ρ₂ − ρ₁) = 1024 × 600/114 ≈ 5,39 × 10³ m³ ; m = 910 × 5,39 × 10³ ≈ 4,9 × 10⁶ kg. (Environ 89 % du volume est immergé.)"
+    },
+    {
+     "k": "book",
+     "src": "p. 36",
+     "q": "1) Un cylindre de bois (densité 0,65, H = 20 cm) flotte verticalement dans l’eau : hauteur immergée ?\n2) Un solide de masse 5 kg et de volume 1,5 dm³ est accroché à un ressort (k = 100 N/m). Allongement x₁ dans l’air et x₂ quand il est plongé dans l’eau (g = 10 N/kg).",
+     "a": "1) ρ_bois × H = ρ_eau × h ⇒ h = 0,65 × 20 = 13 cm.\n2) x₁ = mg/k = 0,50 m ; x₂ = (m − ρ_eau v)g/k = (5 − 1,5) × 10/100 = 0,35 m. L’allongement diminue à cause de la poussée d’Archimède (15 N)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un pêcheur veut savoir si sa pirogue (masse 120 kg, volume total de la coque 0,60 m³) peut transporter 4 personnes de 70 kg et 150 kg de poisson sans couler (eau de mer ρ = 1025 kg/m³).\n1) Quelle masse totale la pirogue peut-elle porter au maximum ?\n2) Le chargement prévu est-il possible ?",
+     "a": "1) Poussée maximale (coque immergée jusqu’au bord) : ρVg ⇒ masse maximale totale 1025 × 0,60 = 615 kg, soit 615 − 120 = 495 kg de charge.\n2) Charge prévue : 280 + 150 = 430 kg < 495 kg : c’est possible, mais avec une faible marge (il faut éviter les vagues)."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre III : Équilibre d’un solide soumis à deux ou trois forces",
+   "match": [
+    "Équilibre d’un solide soumis à deux ou trois forces"
+   ],
+   "pages": [
+    39,
+    52
+   ],
+   "objectives": [
+    "Énoncer les conditions d’équilibre d’un solide soumis à deux forces, à trois forces non parallèles.",
+    "Appliquer la méthode de résolution d’un problème de statique.",
+    "Résoudre : plan incliné, solide suspendu par deux fils, planche contre un mur."
+   ],
+   "intro": "Un tableau est suspendu par deux fils : comment calculer la tension de chaque fil ?",
+   "summary": "Un solide soumis à deux forces est en équilibre si ces forces ont la même droite d’action, des sens contraires et la même intensité : F₁→ + F₂→ = 0→. Un solide soumis à trois forces non parallèles est en équilibre si les forces sont coplanaires, leurs droites d’action concourantes, et leur somme vectorielle nulle : F₁→ + F₂→ + F₃→ = 0→ (polygone des forces fermé). Méthode : choisir le système, faire le bilan des forces, écrire la condition d’équilibre, la projeter sur deux axes (ou utiliser une construction graphique) et résoudre. Sur un plan incliné sans frottement d’angle α : T = P sin α et R = P cos α.",
+   "points": [
+    "Deux forces : même droite d’action, sens contraires, même intensité.",
+    "Trois forces : coplanaires, concourantes, somme nulle.",
+    "Méthode : système → bilan → condition → projections → calcul.",
+    "Plan incliné : T = P sin α ; R = P cos α."
+   ],
+   "application": {
+    "q": "Un solide de poids 20 N est retenu par un fil sur un plan incliné de 30° sans frottement : tension ?",
+    "a": "T = P sin α = 20 × 0,5 = 10 N ; R = 20 cos 30° ≈ 17,3 N."
+   },
+   "applications": [
+    {
+     "q": "Une charge de 100 N est suspendue par deux fils faisant chacun 60° avec la verticale : tension ?",
+     "a": "2T cos 60° = 100 ⇒ T = 100 N."
+    },
+    {
+     "q": "Deux forces de 5 N et 5 N, opposées, même droite : le solide est-il en équilibre ?",
+     "a": "Oui : somme nulle et même droite d’action."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Solide soumis à deux forces",
+     "lines": [
+      "F₁→ + F₂→ = 0→ : même droite d’action, sens opposés, F₁ = F₂.",
+      "Ex. : solide suspendu à un fil : T = P."
+     ]
+    },
+    {
+     "h": "II. Solide soumis à trois forces non parallèles",
+     "lines": [
+      "Coplanaires, concourantes, F₁→ + F₂→ + F₃→ = 0→.",
+      "Méthode graphique : triangle (dynamique) des forces fermé."
+     ]
+    },
+    {
+     "h": "III. Méthode de résolution",
+     "lines": [
+      "1) Système étudié ; 2) bilan des forces ; 3) condition d’équilibre ; 4) projections sur (Ox) et (Oy) ; 5) résolution."
+     ]
+    },
+    {
+     "h": "IV. Applications",
+     "lines": [
+      "Plan incliné : R = P cos α ; T = P sin α.",
+      "Solide suspendu par deux fils symétriques faisant α avec la verticale : 2T cos α = P.",
+      "Planche contre un mur : poids, réaction du mur, réaction du sol concourantes."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre III : Moment d’une force et solide mobile autour d’un axe",
+   "match": [
+    "Moment d’une force et solide mobile autour d’un axe"
+   ],
+   "pages": [
+    53,
+    71
+   ],
+   "objectives": [
+    "Définir le moment d’une force par rapport à un axe et son signe.",
+    "Appliquer le théorème des moments à un solide mobile autour d’un axe fixe.",
+    "Étudier poulie, treuil, levier, balance et couple de forces."
+   ],
+   "intro": "Pourquoi pousse-t-on une porte loin des gonds ?",
+   "summary": "L’effet de rotation d’une force sur un solide mobile autour d’un axe Δ dépend de son intensité et de la distance d entre sa droite d’action et l’axe (le bras de levier). Le moment est M_Δ(F→) = ± F·d (en N·m), positif si la force tend à faire tourner dans le sens choisi, négatif sinon ; il est nul si la droite d’action rencontre l’axe ou lui est parallèle. Théorème des moments : un solide mobile autour d’un axe fixe est en équilibre si la somme algébrique des moments des forces par rapport à l’axe est nulle (et la somme des forces aussi). Applications : poulie (T₁ = T₂), treuil (F·L = P·r), levier (F₁d₁ = F₂d₂), balance. Un couple de forces est formé de deux forces parallèles, de sens contraires et de même intensité, sans même droite d’action ; son moment vaut M = F·d (d distance entre les droites d’action).",
+   "points": [
+    "M_Δ(F→) = ± F·d (N·m).",
+    "Moment nul si la droite d’action coupe l’axe ou lui est parallèle.",
+    "Équilibre : Σ M_Δ = 0 et Σ F→ = 0→.",
+    "Levier : F₁·d₁ = F₂·d₂ ; treuil : F·L = P·r.",
+    "Couple : M = F·d."
+   ],
+   "application": {
+    "q": "Un levier : charge de 600 N à 0,2 m de l’axe ; on pousse à 1,2 m de l’autre côté. Force nécessaire ?",
+    "a": "F × 1,2 = 600 × 0,2 ⇒ F = 100 N."
+   },
+   "applications": [
+    {
+     "q": "Treuil : rayon du tambour 10 cm, manivelle 50 cm, charge 500 N : force ?",
+     "a": "F = P·r/L = 500 × 0,1/0,5 = 100 N."
+    },
+    {
+     "q": "Moment d’un couple de deux forces de 20 N distantes de 0,3 m ?",
+     "a": "M = 20 × 0,3 = 6 N·m."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Effet de rotation",
+     "lines": [
+      "Activités : la porte s’ouvre plus facilement si on pousse loin de l’axe et perpendiculairement."
+     ]
+    },
+    {
+     "h": "II. Moment d’une force",
+     "lines": [
+      "M_Δ(F→) = ± F × d ; d : distance de l’axe à la droite d’action.",
+      "Signe : + dans le sens positif choisi, − sinon."
+     ]
+    },
+    {
+     "h": "III. Théorème des moments",
+     "lines": [
+      "Σ M_Δ(F→ᵢ) = 0 pour un solide en équilibre autour d’un axe fixe."
+     ]
+    },
+    {
+     "h": "IV. Applications",
+     "lines": [],
+     "table": [
+      [
+       "Système",
+       "Condition d’équilibre"
+      ],
+      [
+       "Poulie",
+       "T₁ = T₂"
+      ],
+      [
+       "Treuil",
+       "F × L = P × r"
+      ],
+      [
+       "Levier",
+       "F₁ × d₁ = F₂ × d₂"
+      ],
+      [
+       "Balance",
+       "m₁ = m₂ (bras égaux)"
+      ]
+     ]
+    },
+    {
+     "h": "V. Couple de forces",
+     "lines": [
+      "Deux forces parallèles, de sens contraires, de même intensité, de droites d’action distinctes.",
+      "Moment du couple : M = F × d ; ex. volant, robinet, filière."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 63",
+     "q": "Les ressorts R₁ et R₂ (longueur à vide 10 cm, 1 cm par N) sont fixés en O₁ et O₂ distants de 20 cm et attachés à un anneau A avec R₃ (longueur 15 cm, 3 cm par N). À l’équilibre les trois ressorts font entre eux des angles de 120°.\n1) Longueurs de R₁ et R₂. 2) Leurs tensions. 3) Tension de R₃. 4) Où fixer l’extrémité libre de R₃ ?",
+     "a": "1) Par symétrie, O₁AO₂ est isocèle avec un angle de 120° en A : O₁O₂ = 2L sin 60° ⇒ L = 20/√3 ≈ 11,5 cm.\n2) Allongement 1,5 cm ⇒ T₁ = T₂ ≈ 1,5 N.\n3) Trois forces à 120° en équilibre ont la même intensité : T₃ ≈ 1,5 N.\n4) R₃ s’allonge de 3 × 1,5 ≈ 4,6 cm : longueur ≈ 19,6 cm, sur la médiatrice de [O₁O₂], du côté opposé à O₁O₂ (à environ 25 cm du milieu de [O₁O₂])."
+    },
+    {
+     "k": "book",
+     "src": "p. 63",
+     "q": "Un corps de poids 3 N repose sans frottement sur un plan incliné de 30°, retenu par un ressort (k = 50 N/m) faisant un angle β avec la ligne de plus grande pente.\n1) Bilan des forces. 2) T en fonction de β. 3) T et allongement pour β = 0°, 30°, 60°.",
+     "a": "1) Poids P⃗, réaction R⃗ perpendiculaire au plan, tension T⃗.\n2) Projection sur la ligne de plus grande pente : T cos β = P sin 30° ⇒ T = 1,5/cos β.\n3) β = 0 : 1,5 N (3 cm) ; β = 30° : ≈ 1,73 N (3,5 cm) ; β = 60° : 3 N (6 cm)."
+    },
+    {
+     "k": "book",
+     "src": "p. 64",
+     "q": "Une poutre de poids 7000 N est suspendue par deux élingues faisant 45° et 30° avec la verticale, de part et d’autre. 1) Condition d’équilibre. 2) Tensions T₁ et T₂.",
+     "a": "1) T⃗₁ + T⃗₂ + W⃗ = 0⃗.\n2) Horizontalement : T₁ sin 45° = T₂ sin 30° ; verticalement : T₁ cos 45° + T₂ cos 30° = 7000. D’où T₂(0,5 + 0,866) = 7000 ⇒ T₂ ≈ 5,12 × 10³ N et T₁ ≈ 3,62 × 10³ N."
+    },
+    {
+     "k": "book",
+     "src": "p. 65",
+     "q": "Une échelle (2 m, 400 N) s’appuie sur un mur lisse en B (réaction normale de 300 N) et sur le sol en A.\n1) Pourquoi la réaction en A ne peut-elle pas être normale au sol ? 2) Caractéristiques de la réaction en A. 3) Angle α avec le mur. 4) Que se passe-t-il sans frottement au sol ?",
+     "a": "1) La réaction du mur est horizontale ; il faut une composante horizontale opposée en A (frottement).\n2) R_A a une composante horizontale de 300 N et verticale de 400 N : R_A = 500 N, inclinée de 36,9° sur la verticale.\n3) Moments en A : P (l/2) sin α = R_B l cos α ⇒ tan α = 2R_B/P = 1,5 ⇒ α ≈ 56,3°.\n4) Rien n’équilibre la poussée du mur : l’échelle glisse."
+    },
+    {
+     "k": "book",
+     "src": "p. 67",
+     "q": "Un disque de poids 8 N tourne autour d’un axe horizontal passant par son centre O. Un dynamomètre accroché en A (bras de levier 15 cm) indique 5 N ; en B (bras de levier 12 cm) on suspend une masse. Poids de la masse ?",
+     "a": "Le poids du disque passe par l’axe (moment nul). Théorème des moments : 5 × 15 = P × 12 ⇒ P = 6,25 N."
+    },
+    {
+     "k": "book",
+     "src": "p. 69",
+     "q": "Un peintre et son matériel (80 kg) sont sur une échelle de 4 m et 20 kg, inclinée de 60° sur le sol, appuyée sur un mur lisse ; AG = 2,768 m (g = 10 N/kg).\n1) Poids total. 2) Réaction du mur. 3) Réaction du sol, frottement et réaction normale.",
+     "a": "1) P = 1000 N.\n2) Moments en A : P × AG cos 60° = R_B × AB sin 60° ⇒ R_B = 1000 × 1,384/3,464 ≈ 400 N (horizontale).\n3) Frottement f = 400 N ; réaction normale N = 1000 N ; R_A = √(400² + 1000²) ≈ 1077 N, inclinée de 68,2° sur l’horizontale."
+    },
+    {
+     "k": "book",
+     "src": "p. 65",
+     "q": "QCM : 1) Une force parallèle à l’axe de rotation : s’oppose / favorise / n’a aucun effet sur la rotation ? 2) Une poignée de porte est loin des gonds pour : raccourcir / allonger le bras de levier / l’esthétique ? 3) Le moment d’une force est nul si : sa droite d’action coupe l’axe / elle est très loin de l’axe / elle est très intense ?",
+     "a": "1) Aucun effet de rotation. 2) Allonger le bras de levier (le moment F × d est plus grand pour une même force). 3) Sa droite d’action coupe l’axe (d = 0)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une brouette chargée a un poids total de 600 N appliqué à 40 cm de l’axe de la roue ; les poignées sont à 1,20 m de l’axe.\n1) Quelle force verticale faut-il exercer sur les poignées pour soulever la brouette ?\n2) Comment répartir la charge pour fournir moins d’effort ?",
+     "a": "1) Moments par rapport à l’axe de la roue : F × 1,20 = 600 × 0,40 ⇒ F = 200 N.\n2) Placer la charge le plus près possible de la roue (bras de levier plus petit)."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre IV : Lentilles minces — caractéristiques et images",
+   "match": [
+    "Lentilles minces — caractéristiques et images"
+   ],
+   "pages": [
+    72,
+    86
+   ],
+   "objectives": [
+    "Distinguer lentilles convergentes et divergentes.",
+    "Connaître centre optique, axe, foyers, distance focale et vergence.",
+    "Construire l’image d’un objet à travers une lentille (conditions de Gauss)."
+   ],
+   "intro": "La loupe grossit, les lunettes d’un myope rapetissent : quelle différence entre ces lentilles ?",
+   "summary": "Une lentille est un milieu transparent limité par deux faces dont l’une au moins est sphérique. Lentilles à bords minces : convergentes ; à bords épais : divergentes. Le centre optique O, l’axe optique principal, le foyer objet F et le foyer image F′ (symétriques par rapport à O) caractérisent la lentille ; la distance focale f = OF′ et la vergence C = 1/OF′ (en dioptries δ, f en mètres), positive pour une convergente, négative pour une divergente. Dans les conditions de Gauss (rayons peu inclinés et proches de l’axe), l’image est nette. Trois rayons particuliers : un rayon passant par O n’est pas dévié ; un rayon parallèle à l’axe émerge en passant par F′ ; un rayon passant par F émerge parallèle à l’axe. Une image est réelle si elle peut être recueillie sur un écran, virtuelle sinon.",
+   "points": [
+    "Bords minces : convergente ; bords épais : divergente.",
+    "F et F′ symétriques par rapport à O ; f = OF′.",
+    "C = 1/f (δ, f en m).",
+    "Rayons : par O non dévié ; parallèle → par F′ ; par F → parallèle.",
+    "Image réelle (sur écran) / virtuelle."
+   ],
+   "application": {
+    "q": "Vergence d’une lentille de distance focale 20 cm ?",
+    "a": "C = 1/0,20 = 5 δ."
+   },
+   "applications": [
+    {
+     "q": "Une lentille a C = −4 δ : nature et distance focale ?",
+     "a": "Divergente ; f = 1/C = −0,25 m."
+    },
+    {
+     "q": "Où placer un objet pour qu’une convergente serve de loupe ?",
+     "a": "Entre le foyer objet F et le centre optique O."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Les lentilles minces",
+     "lines": [
+      "Convergentes (bords minces) : biconvexe, plan-convexe, ménisque convergent.",
+      "Divergentes (bords épais) : biconcave, plan-concave, ménisque divergent."
+     ]
+    },
+    {
+     "h": "II. Éléments caractéristiques",
+     "lines": [
+      "Centre optique O, axe optique principal, foyers F et F′, plans focaux.",
+      "Distance focale f = OF′ ; vergence C = 1/OF′ (δ)."
+     ]
+    },
+    {
+     "h": "III. Trois rayons particuliers",
+     "lines": [
+      "Rayon passant par O : non dévié.",
+      "Rayon incident parallèle à l’axe : émerge en passant par F′.",
+      "Rayon incident passant par F : émerge parallèle à l’axe."
+     ]
+    },
+    {
+     "h": "IV. Construction des images",
+     "lines": [
+      "Objet au-delà de F (convergente) : image réelle, renversée.",
+      "Objet entre F et O : image virtuelle, droite, agrandie (loupe).",
+      "Lentille divergente, objet réel : image virtuelle, droite, plus petite."
+     ]
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre IV : Conjugaison, grandissement et instruments d’optique",
+   "match": [
+    "Conjugaison, grandissement et instruments d’optique"
+   ],
+   "pages": [
+    87,
+    101
+   ],
+   "objectives": [
+    "Appliquer la relation de conjugaison et du grandissement.",
+    "Calculer la vergence de lentilles accolées.",
+    "Comprendre l’œil, ses défauts, la loupe, le microscope et la lunette astronomique."
+   ],
+   "intro": "Comment l’œil fait-il pour voir net de près comme de loin ?",
+   "summary": "Relation de conjugaison (mesures algébriques sur l’axe orienté dans le sens de la lumière) : 1/OA′ − 1/OA = 1/OF′ = C. Grandissement : γ = A′B′/AB = OA′/OA ; γ < 0 image renversée, γ > 0 droite, |γ| > 1 agrandie. Deux lentilles minces accolées équivalent à une lentille de vergence C = C₁ + C₂. L’œil est modélisé par une lentille convergente (cristallin) et un écran (rétine) ; il accommode en modifiant sa vergence. Le myope voit mal de loin (corrigé par une divergente), l’hypermétrope voit mal de près (corrigé par une convergente). La loupe est une convergente ; le microscope associe un objectif et un oculaire convergents ; la lunette astronomique un objectif de grande distance focale et un oculaire.",
+   "points": [
+    "1/OA′ − 1/OA = 1/OF′.",
+    "γ = OA′/OA = A′B′/AB.",
+    "Lentilles accolées : C = C₁ + C₂.",
+    "Myopie : divergente ; hypermétropie : convergente.",
+    "Microscope, lunette : objectif + oculaire."
+   ],
+   "application": {
+    "q": "Lentille de f = 10 cm, objet à 30 cm devant (OA = −30 cm) : position et grandissement de l’image ?",
+    "a": "1/OA′ = 1/10 − 1/30 = 2/30 ⇒ OA′ = 15 cm ; γ = 15/(−30) = −0,5 : image réelle, renversée, deux fois plus petite."
+   },
+   "applications": [
+    {
+     "q": "Deux lentilles accolées de 5 δ et −2 δ : vergence équivalente ?",
+     "a": "C = 5 − 2 = 3 δ (convergente, f ≈ 33 cm)."
+    },
+    {
+     "q": "Un objet donne une image avec γ = −2 : nature ?",
+     "a": "Image renversée, deux fois plus grande."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Relation de conjugaison",
+     "lines": [
+      "1/OA′ − 1/OA = 1/OF′ = C (mesures algébriques)."
+     ]
+    },
+    {
+     "h": "II. Grandissement",
+     "lines": [
+      "γ = A′B′/AB = OA′/OA.",
+      "γ < 0 : renversée ; γ > 0 : droite ; |γ| > 1 : agrandie."
+     ]
+    },
+    {
+     "h": "III. Lentilles accolées",
+     "lines": [
+      "C = C₁ + C₂ (théorème des vergences)."
+     ]
+    },
+    {
+     "h": "IV. L’œil",
+     "lines": [
+      "Cristallin = lentille convergente ; rétine = écran ; accommodation = variation de la vergence.",
+      "Myope : image en avant de la rétine, correction par lentille divergente.",
+      "Hypermétrope : image en arrière, correction par lentille convergente."
+     ]
+    },
+    {
+     "h": "V. Instruments",
+     "lines": [
+      "Loupe : objet entre F et O, image virtuelle agrandie.",
+      "Microscope : objectif (image réelle agrandie) + oculaire (loupe).",
+      "Lunette astronomique : objectif de grande focale, oculaire ; objet à l’infini."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 99",
+     "q": "Un objet AB est situé à 250 mm du centre optique d’une lentille convergente de distance focale f′ = 150 mm. Position et nature de l’image.",
+     "a": "OA = −250 mm. 1/OA′ = 1/f′ + 1/OA = 1/150 − 1/250 = 2/750 ⇒ OA′ = 375 mm. L’image est réelle (derrière la lentille) et renversée (γ = 375/(−250) = −1,5)."
+    },
+    {
+     "k": "book",
+     "src": "p. 99",
+     "q": "Un objet AB est à 30 cm devant une lentille ; son image se forme sur un écran à 15 cm derrière la lentille.\n1) Nature et sens de l’image. 2) Distance focale. 3) Cette lentille est-elle utilisée en loupe ? Où placer l’objet pour qu’elle le soit ?",
+     "a": "1) Image réelle (sur un écran), donc renversée ; γ = 15/(−30) = −0,5.\n2) 1/f′ = 1/15 + 1/30 = 1/10 ⇒ f′ = 10 cm (lentille convergente).\n3) Non : une loupe donne une image virtuelle, droite et agrandie. Il faut placer l’objet entre le foyer objet F et le centre optique O (à moins de 10 cm)."
+    },
+    {
+     "k": "book",
+     "src": "p. 95",
+     "q": "L’œil est assimilé à une lentille convergente ; la rétine est à 17 mm du cristallin.\n1) Distance focale et vergence de l’œil au repos. 2) Que signifie accommoder ? 3) Distance focale pour voir nettement un objet à 15 cm.",
+     "a": "1) Au repos l’image d’un objet éloigné se forme sur la rétine : f′ = 17 mm, C = 1/0,017 ≈ 58,8 δ.\n2) Le cristallin se bombe pour augmenter sa vergence et former sur la rétine l’image d’un objet proche.\n3) 1/f′ = 1/17 + 1/150 (en mm⁻¹) ⇒ f′ ≈ 15,3 mm (C ≈ 65,5 δ)."
+    },
+    {
+     "k": "book",
+     "src": "p. 100",
+     "q": "Une lentille convergente de distance focale 4,0 mm donne d’un objet de 0,2 mm placé à 4,1 mm une image A′B′.\n1) Nature, sens, taille de A′B′. 2) Une seconde lentille convergente (f′ = 16 mm) est à 18 cm de la première ; A′B′ lui sert d’objet. Où se forme l’image finale ? Quel appareil fonctionne ainsi ?",
+     "a": "1) 1/OA′ = 1/4 − 1/4,1 ⇒ OA′ = 164 mm ; γ = 164/(−4,1) = −40 : image réelle, renversée, de 8 mm.\n2) A′B′ est à 180 − 164 = 16 mm de la seconde lentille, c’est-à-dire dans son plan focal objet : l’image finale est rejetée à l’infini (observation sans fatigue). C’est le principe du microscope (objectif + oculaire)."
+    },
+    {
+     "k": "book",
+     "src": "p. 100",
+     "q": "Une lentille de vergence 5 δ donne d’un objet réel une image quatre fois plus grande. Type de lentille, distance focale, et positions possibles de l’objet.",
+     "a": "C > 0 : lentille convergente, f′ = 20 cm.\nImage réelle (γ = −4) : OA′ = −4OA et 1/OA′ − 1/OA = 5 ⇒ OA = −25 cm, OA′ = +100 cm.\nImage virtuelle (γ = +4, loupe) : OA = −15 cm, OA′ = −60 cm."
+    },
+    {
+     "k": "book",
+     "src": "p. 98, QCM",
+     "q": "QCM : 3) La distance entre les foyers objet et image est 20 cm ; la distance d’un foyer au centre optique est : 20 / 40 / 10 cm ? 4) La distance focale d’une lentille divergente ne peut jamais valoir : −2,5 / −10 / 50 cm ? 7) Une lentille convergente de focale 25 cm donne d’un objet situé à 50 cm une image : virtuelle à 25 cm / virtuelle à 50 cm / réelle à 50 cm ?",
+     "a": "3) 10 cm (les foyers sont symétriques par rapport à O). 4) 50 cm (une lentille divergente a f′ < 0). 7) Réelle, à 50 cm (objet à 2f ⇒ image à 2f, même taille, renversée)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Un myope voit nettement jusqu’à 50 cm au maximum (punctum remotum). Quelle lentille correctrice (placée contre l’œil) lui faut-il pour voir à l’infini ?",
+     "a": "La lentille doit donner d’un objet à l’infini une image virtuelle au PR : f′ = −50 cm, soit C = −2 δ (lentille divergente)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un projecteur de diapositives utilise une lentille convergente de vergence 10 δ. L’écran est à 3,0 m de la lentille.\n1) À quelle distance de la lentille placer la diapositive ?\n2) La diapositive mesure 36 mm. Quelle est la taille de l’image ?\n3) Pourquoi place-t-on la diapositive à l’envers ?",
+     "a": "1) f′ = 10 cm ; OA′ = 300 cm : 1/OA = 1/300 − 1/10 = −29/300 ⇒ OA ≈ −10,3 cm.\n2) γ = OA′/OA ≈ −29 : image d’environ 1,04 m.\n3) L’image réelle est renversée : on retourne la diapositive pour voir l’image à l’endroit."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre V : Force et champ électrostatique",
+   "match": [
+    "Force et champ électrostatique"
+   ],
+   "pages": [
+    102,
+    119
+   ],
+   "objectives": [
+    "Décrire l’électrisation par frottement, contact et influence.",
+    "Appliquer la loi de Coulomb.",
+    "Définir le champ électrostatique, ses lignes de champ et la superposition des champs."
+   ],
+   "intro": "Pourquoi une règle frottée attire-t-elle de petits morceaux de papier ?",
+   "summary": "Un corps s’électrise par frottement, par contact ou par influence ; il existe deux sortes de charges : deux charges de même signe se repoussent, de signes contraires s’attirent. La charge électrique est quantifiée (multiple de e = 1,6·10⁻¹⁹ C) et se conserve. Loi de Coulomb : deux charges ponctuelles qA et qB distantes de d exercent l’une sur l’autre des forces opposées, portées par la droite qui les joint, d’intensité F = k|qA·qB|/d² avec k = 9·10⁹ SI. Une charge q placée en un point M où règne un champ E→ subit la force F→ = q·E→ ; le champ créé par une charge ponctuelle Q a pour valeur E = k|Q|/d², il est dirigé vers l’extérieur si Q > 0 et vers Q si Q < 0. Les lignes de champ sont tangentes en chaque point au vecteur champ ; entre deux plaques parallèles chargées, le champ est uniforme. Les champs se superposent : E→ = E₁→ + E₂→.",
+   "points": [
+    "Électrisation : frottement, contact, influence.",
+    "Charges de même signe : répulsion ; signes contraires : attraction.",
+    "Coulomb : F = k|qA qB|/d² ; k = 9·10⁹ SI.",
+    "F→ = q E→ ; E = k|Q|/d².",
+    "Superposition : E→ = E₁→ + E₂→ ; champ uniforme entre deux plaques."
+   ],
+   "application": {
+    "q": "Deux charges de 2·10⁻⁶ C distantes de 0,3 m : force ?",
+    "a": "F = 9·10⁹ × (2·10⁻⁶)²/0,3² = 0,4 N (répulsion)."
+   },
+   "applications": [
+    {
+     "q": "Force subie par un électron dans un champ de 1000 V/m ?",
+     "a": "F = eE = 1,6·10⁻¹⁹ × 1000 = 1,6·10⁻¹⁶ N, de sens opposé au champ."
+    },
+    {
+     "q": "Si la distance entre deux charges double, que devient la force ?",
+     "a": "Elle est divisée par 4."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Électrisation",
+     "lines": [
+      "Par frottement (règle frottée), par contact, par influence.",
+      "Deux types de charges : + et − ; conservation et quantification (q = n·e)."
+     ]
+    },
+    {
+     "h": "II. Loi de Coulomb",
+     "lines": [
+      "F = k|qA qB|/d² ; k = 9·10⁹ N·m²·C⁻² ; forces opposées, portées par (AB)."
+     ]
+    },
+    {
+     "h": "III. Champ électrostatique",
+     "lines": [
+      "F→ = q E→ (E en V/m ou N/C).",
+      "Charge ponctuelle Q : E = k|Q|/d² ; sortant si Q > 0, entrant si Q < 0."
+     ]
+    },
+    {
+     "h": "IV. Lignes de champ et superposition",
+     "lines": [
+      "Lignes de champ : tangentes au champ, orientées dans son sens.",
+      "Champ uniforme entre deux plaques parallèles de charges opposées.",
+      "Plusieurs charges : E→ = E₁→ + E₂→ + …"
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 115, exercice résolu",
+     "q": "Quatre charges identiques −q sont fixées aux sommets d’un carré de côté a ; une charge q₀ > 0 est au centre O. Déterminer q₀ pour que la force totale sur chacune des cinq charges soit nulle.",
+     "a": "Par symétrie, la force sur q₀ est nulle. Sur la charge en A : B et D (distance a) la repoussent avec une résultante √2 kq²/a² dirigée selon OA vers l’extérieur ; C (distance a√2) la repousse avec kq²/(2a²) ; q₀ (distance a/√2) l’attire avec 2kqq₀/a². Équilibre : 2q₀ = q(√2 + 1/2) ⇒ q₀ = q(2√2 + 1)/4 ≈ 0,96 q."
+    },
+    {
+     "k": "book",
+     "src": "p. 118",
+     "q": "Deux petites sphères identiques de masse 50 mg, suspendues au même point par des fils de 50 cm, portent des charges égales et s’écartent de 5 cm. Calculer la charge de chacune (g = 9,8 N/kg ; k = 9 × 10⁹ SI).",
+     "a": "Chaque fil fait un angle θ avec sin θ = 2,5/50 = 0,05 (tan θ ≈ 0,050). Équilibre : F = mg tan θ = 50 × 10⁻⁶ × 9,8 × 0,050 ≈ 2,45 × 10⁻⁵ N. F = kq²/r² ⇒ q = r√(F/k) = 0,05 × √(2,45 × 10⁻⁵/9 × 10⁹) ≈ 2,6 × 10⁻⁹ C."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Deux charges q₁ = 2 μC et q₂ = −3 μC sont distantes de 30 cm. Calculer l’intensité de la force qui s’exerce entre elles. Est-elle attractive ou répulsive ?",
+     "a": "F = k|q₁q₂|/r² = 9 × 10⁹ × 6 × 10⁻¹²/0,09 = 0,6 N ; charges de signes contraires : force attractive."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Calculer le champ électrostatique créé par une charge q = 4 nC à 20 cm, puis la force subie par un électron placé en ce point.",
+     "a": "E = k|q|/r² = 9 × 10⁹ × 4 × 10⁻⁹/0,04 = 900 V/m, dirigé en s’éloignant de q. F = eE = 1,6 × 10⁻¹⁹ × 900 = 1,44 × 10⁻¹⁶ N, de sens opposé à E⃗ (charge négative)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Deux charges +q et +q sont placées en A et B distants de 2d. Où le champ est-il nul ? Quel est le champ au point M de la médiatrice situé à la distance d du milieu O ?",
+     "a": "Le champ est nul au milieu O (deux champs opposés de même intensité). En M : AM = d√2, chaque champ vaut kq/(2d²), et leurs composantes parallèles à (AB) s’annulent ; la résultante est portée par OM : E = 2 × kq/(2d²) × cos 45° = kq√2/(2d²)."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Entre deux plaques parallèles distantes de 2 cm soumises à une tension de 200 V règne un champ uniforme. Calculer E et la force sur une gouttelette portant la charge 3,2 × 10⁻¹⁹ C.",
+     "a": "E = U/d = 200/0,02 = 1,0 × 10⁴ V/m ; F = qE = 3,2 × 10⁻¹⁵ N."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une photocopieuse utilise un tambour chargé qui attire de fines particules d’encre (toner) de masse 1,0 × 10⁻¹⁵ kg portant chacune une charge de 1,6 × 10⁻¹⁸ C.\n1) Quel champ minimal faut-il au voisinage du tambour pour que la force électrique dépasse le poids d’une particule (g = 10 N/kg) ?\n2) Pourquoi les particules d’encre doivent-elles être de signe contraire au tambour ?",
+     "a": "1) qE > mg ⇒ E > mg/q = 1,0 × 10⁻¹⁴/1,6 × 10⁻¹⁸ ≈ 6,3 × 10³ V/m.\n2) Des charges de signes contraires s’attirent : l’encre se colle sur les zones chargées du tambour."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre VI : Intensité et tension électriques",
+   "match": [
+    "Intensité et tension électriques"
+   ],
+   "pages": [
+    120,
+    131
+   ],
+   "objectives": [
+    "Définir l’intensité du courant et la mesurer à l’ampèremètre.",
+    "Appliquer la loi d’unicité (série) et la loi des nœuds (dérivation).",
+    "Définir la tension, la mesurer au voltmètre et appliquer la loi des mailles ; conventions récepteur et générateur."
+   ],
+   "intro": "Pourquoi les lampes d’une maison sont-elles montées en dérivation ?",
+   "summary": "Le courant électrique est un déplacement d’ensemble de porteurs de charges (électrons dans les métaux, ions dans les solutions) ; son sens conventionnel va de la borne + vers la borne − à l’extérieur du générateur. L’intensité I = Q/t (A) se mesure avec un ampèremètre branché en série. Dans un circuit en série, l’intensité est la même en tout point (unicité) ; en dérivation, la somme des intensités qui arrivent à un nœud est égale à la somme de celles qui en partent (loi des nœuds). La tension U_AB = V_A − V_B (V) se mesure avec un voltmètre branché en dérivation ; loi d’additivité U_AC = U_AB + U_BC ; loi des mailles : la somme algébrique des tensions le long d’une maille est nulle. Convention récepteur : flèches de I et de U de sens opposés ; convention générateur : même sens.",
+   "points": [
+    "I = Q/t ; ampèremètre en série.",
+    "Série : I identique ; dérivation : loi des nœuds.",
+    "U_AB = V_A − V_B ; voltmètre en dérivation.",
+    "Additivité et loi des mailles.",
+    "Conventions récepteur / générateur."
+   ],
+   "application": {
+    "q": "Une charge de 120 C traverse un fil en 1 min : intensité ?",
+    "a": "I = Q/t = 120/60 = 2 A."
+   },
+   "applications": [
+    {
+     "q": "Nœud : I₁ = 0,5 A et I₂ = 0,3 A arrivent ; I₃ part. Valeur de I₃ ?",
+     "a": "I₃ = 0,8 A."
+    },
+    {
+     "q": "U_AB = 6 V, U_BC = 3 V : U_AC ?",
+     "a": "U_AC = 9 V."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Le courant électrique",
+     "lines": [
+      "Déplacement de porteurs de charges ; sens conventionnel : de + vers − à l’extérieur du générateur.",
+      "Intensité I = Q/t (ampère, A) ; mesure à l’ampèremètre (en série)."
+     ]
+    },
+    {
+     "h": "II. Lois des intensités",
+     "lines": [
+      "Série : unicité de l’intensité.",
+      "Dérivation : loi des nœuds Σ I entrantes = Σ I sortantes."
+     ]
+    },
+    {
+     "h": "III. La tension électrique",
+     "lines": [
+      "U_AB = V_A − V_B (volt, V) ; U_BA = −U_AB ; mesure au voltmètre (en dérivation).",
+      "Additivité : U_AC = U_AB + U_BC ; loi des mailles."
+     ]
+    },
+    {
+     "h": "IV. Conventions",
+     "lines": [
+      "Récepteur : U et I fléchés en sens opposés.",
+      "Générateur : U et I fléchés dans le même sens."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 130",
+     "q": "Une lampe est parcourue par un courant de 0,25 A pendant 1 h 30 min par jour. Calculer en coulombs et en ampères-heures la quantité d’électricité qui la traverse en une semaine.",
+     "a": "Q = I × t = 0,25 × 1,5 × 7 = 2,625 A·h = 2,625 × 3600 = 9450 C."
+    },
+    {
+     "k": "book",
+     "src": "p. 130",
+     "q": "Dans un tube de télévision, le faisceau d’électrons a une intensité de 1 mA. Combien d’électrons arrivent par minute sur l’écran ?",
+     "a": "Q = It = 1 × 10⁻³ × 60 = 0,06 C ; N = Q/e = 0,06/1,6 × 10⁻¹⁹ = 3,75 × 10¹⁷ électrons."
+    },
+    {
+     "k": "book",
+     "src": "p. 130",
+     "q": "Un circuit série est parcouru par un courant de 0,8 A. 1) On branche en série deux ampèremètres identiques : indications ? 2) On les branche en parallèle : indications ?",
+     "a": "1) Dans un circuit série l’intensité est la même partout : 0,8 A chacun.\n2) Loi des nœuds avec deux branches identiques : 0,4 A chacun."
+    },
+    {
+     "k": "book",
+     "src": "p. 131",
+     "q": "Un montage comprend plusieurs dipôles ; l’intensité dans la pile est I = 500 mA et deux dipôles en dérivation sont traversés par 300 mA et 100 mA. Quelle est l’intensité dans la troisième branche en dérivation avec eux ?",
+     "a": "Loi des nœuds : I₃ = 500 − 300 − 100 = 100 mA."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Dans un circuit série alimenté sous 12 V, la tension aux bornes d’une lampe vaut 4,5 V et celle aux bornes d’un moteur 6 V. Quelle est la tension aux bornes du conducteur ohmique également branché en série ?",
+     "a": "Loi d’additivité des tensions : U_R = 12 − 4,5 − 6 = 1,5 V."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Un oscilloscope affiche une tension continue : le spot est déplacé de 3,2 divisions vers le haut avec une sensibilité de 2 V/div. Quelle est la tension ?",
+     "a": "U = 3,2 × 2 = 6,4 V (positive, le spot monte)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une batterie de voiture porte l’indication « 12 V – 60 A·h ». Les phares (2 × 55 W ≈ 9,2 A au total) restent allumés moteur arrêté.\n1) Quelle quantité d’électricité (en coulombs) la batterie peut-elle débiter ?\n2) Au bout de combien de temps sera-t-elle vide ?",
+     "a": "1) Q = 60 A·h = 60 × 3600 = 216 000 C.\n2) t = Q/I = 60/9,2 ≈ 6,5 h."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre VII : Dipôles passifs",
+   "match": [
+    "Dipôles passifs"
+   ],
+   "pages": [
+    132,
+    152
+   ],
+   "objectives": [
+    "Tracer et exploiter la caractéristique d’un dipôle passif.",
+    "Étudier la diode à jonction, la diode Zener et le conducteur ohmique (loi d’Ohm).",
+    "Calculer la résistance équivalente d’associations (série, parallèle)."
+   ],
+   "intro": "Pourquoi une diode laisse-t-elle passer le courant dans un seul sens ?",
+   "summary": "Un dipôle passif ne produit pas de courant ; sa caractéristique est la courbe U = f(I) (ou I = f(U)) en convention récepteur. La diode à jonction ne laisse passer le courant que dans le sens passant au-delà de sa tension de seuil ; elle est bloquée dans l’autre sens. La diode Zener conduit aussi en inverse au-delà de la tension Zener, qui reste alors pratiquement constante. Le conducteur ohmique a une caractéristique linéaire passant par l’origine : loi d’Ohm U = R·I (R en ohms) ; un dipôle est linéaire si sa caractéristique est une droite, symétrique s’il fonctionne de la même façon dans les deux sens. Associations : en série R = R₁ + R₂ ; en parallèle 1/R = 1/R₁ + 1/R₂ ; la résistance d’un fil est R = ρ·L/S.",
+   "points": [
+    "Caractéristique U = f(I) en convention récepteur.",
+    "Diode : sens passant au-delà du seuil ; bloquée en inverse.",
+    "Zener : tension constante en inverse (U_Z).",
+    "Loi d’Ohm : U = R·I.",
+    "Série : R = R₁ + R₂ ; parallèle : 1/R = 1/R₁ + 1/R₂."
+   ],
+   "application": {
+    "q": "Un conducteur ohmique de 100 Ω est traversé par 0,05 A : tension ?",
+    "a": "U = R·I = 100 × 0,05 = 5 V."
+   },
+   "applications": [
+    {
+     "q": "R₁ = 6 Ω et R₂ = 3 Ω en parallèle : R_éq ?",
+     "a": "1/R = 1/6 + 1/3 = 1/2 ⇒ R = 2 Ω."
+    },
+    {
+     "q": "Les mêmes en série ?",
+     "a": "R = 9 Ω."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Grandeurs et conventions",
+     "lines": [
+      "Courant, tension, orientation relative (convention récepteur)."
+     ]
+    },
+    {
+     "h": "II. Caractéristiques",
+     "lines": [
+      "Diode à jonction : non linéaire, non symétrique ; seuil en sens direct ; bloquée en inverse.",
+      "Diode Zener : en inverse, tension U_Z constante au-delà du seuil Zener.",
+      "Conducteur ohmique : droite passant par l’origine, U = R·I (linéaire et symétrique)."
+     ]
+    },
+    {
+     "h": "III. Associations de résistances",
+     "lines": [
+      "Série : R_éq = R₁ + R₂ + …",
+      "Parallèle : 1/R_éq = 1/R₁ + 1/R₂ + …",
+      "Résistance d’un fil : R = ρL/S."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 147",
+     "q": "Caractéristique d’un conducteur ohmique : I (mA) = 0 ; 15 ; 30 ; 45 ; 60 ; 75 ; 90 ; 105 ; 120 et U (V) = 0 ; 0,5 ; 1 ; 1,5 ; 2 ; 2,5 ; 3 ; 3,5 ; 4. Déterminer sa résistance.",
+     "a": "La caractéristique est une droite passant par l’origine : R = U/I = 4/0,120 ≈ 33,3 Ω."
+    },
+    {
+     "k": "book",
+     "src": "p. 149",
+     "q": "Un ampèremètre indique 7,13 mA et un voltmètre 3,29 V aux bornes d’un conducteur ohmique X.\n1) Résistance X. 2) Intensité quand le voltmètre indique 2,03 V. 3) Tension quand l’ampèremètre indique 5,12 mA.",
+     "a": "1) X = 3,29/7,13 × 10⁻³ ≈ 461 Ω.\n2) I = 2,03/461 ≈ 4,40 mA.\n3) U = 461 × 5,12 × 10⁻³ ≈ 2,36 V."
+    },
+    {
+     "k": "book",
+     "src": "p. 150",
+     "q": "Une pile (U = 12 V) alimente un résistor R = 100 Ω qui supporte au plus 100 mA.\n1) Risque-t-on d’endommager R ? 2) Résistance minimale R′ à placer en série. 3) On branche R et R″ en parallèle, le tout en série avec R′ : valeur de R″ pour que I = 0,12 A ; intensité dans R.",
+     "a": "1) I = 12/100 = 0,12 A > 0,1 A : oui.\n2) R + R′ ≥ 12/0,1 = 120 Ω ⇒ R′ = 20 Ω.\n3) R_total = 12/0,12 = 100 Ω ⇒ R_parallèle = 80 Ω ⇒ 1/R″ = 1/80 − 1/100 ⇒ R″ = 400 Ω. U_parallèle = 0,12 × 80 = 9,6 V ⇒ I_R = 0,096 A (et 0,024 A dans R″)."
+    },
+    {
+     "k": "book",
+     "src": "p. 150",
+     "q": "R₁ = 10 Ω et R₂ = 20 Ω. 1) En série, I = 0,2 A : U₁, U₂, tension du générateur, résistance équivalente. 2) Même générateur, résistors en dérivation : Req, intensités I₁, I₂, I′. 3) Comparer I et I′.",
+     "a": "1) U₁ = 2 V, U₂ = 4 V, U = 6 V, Req = 30 Ω.\n2) Req = 10 × 20/30 ≈ 6,67 Ω ; U₁′ = U₂′ = 6 V ; I₁ = 0,6 A ; I₂ = 0,3 A ; I′ = 0,9 A (loi des nœuds) ; 6/0,9 ≈ 6,67 Ω = Req.\n3) I′ > I : le générateur débite plus de courant dans le montage en dérivation."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Une diode a une tension seuil de 0,6 V. Elle est branchée en sens direct, en série avec un résistor de 220 Ω, sur un générateur de 5 V. Calculer l’intensité. Que se passe-t-il si on inverse la diode ?",
+     "a": "I = (5 − 0,6)/220 = 0,020 A = 20 mA. En sens inverse la diode est bloquée : I = 0."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Calculer la résistance équivalente à trois résistors de 30 Ω, 60 Ω et 20 Ω montés en parallèle.",
+     "a": "1/R = 1/30 + 1/60 + 1/20 = (2 + 1 + 3)/60 = 1/10 ⇒ R = 10 Ω."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "On veut faire fonctionner une DEL (2 V ; 20 mA) avec une pile de 9 V.\n1) Quelle résistance de protection faut-il mettre en série ?\n2) Les résistances vendues valent 270 Ω, 330 Ω ou 470 Ω : laquelle choisir ? Quelle intensité obtient-on ?",
+     "a": "1) R = (9 − 2)/0,020 = 350 Ω.\n2) Il faut R ≥ 350 Ω pour ne pas dépasser 20 mA : on choisit 470 Ω, d’où I = 7/470 ≈ 15 mA (la DEL éclaire un peu moins mais ne risque rien)."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
+  },
+  {
+   "title": "Physique – Chapitre VIII : Dipôles actifs — générateurs",
+   "match": [
+    "Dipôles actifs — générateurs"
+   ],
+   "pages": [
+    153,
+    172
+   ],
+   "objectives": [
+    "Tracer et exploiter la caractéristique d’un générateur : U = E − r·I.",
+    "Définir force électromotrice et résistance interne ; courant de court-circuit.",
+    "Associer des générateurs et déterminer le point de fonctionnement d’un circuit."
+   ],
+   "intro": "Une pile neuve affiche 9 V à vide, mais moins quand elle alimente un moteur : pourquoi ?",
+   "summary": "Un dipôle actif (générateur) peut faire circuler un courant. En convention générateur, la caractéristique d’une pile est une droite décroissante : U = E − r·I, où E est la force électromotrice (tension à vide, I = 0) et r la résistance interne ; l’intensité de court-circuit (U = 0) vaut Icc = E/r. Associés en série (même sens), des générateurs équivalent à un générateur de f.é.m. E = E₁ + E₂ et de résistance r = r₁ + r₂. Le point de fonctionnement d’un circuit générateur–récepteur est l’intersection des deux caractéristiques ; pour une résistance R branchée sur le générateur : I = E/(R + r) (loi de Pouillet).",
+   "points": [
+    "U = E − r·I (convention générateur).",
+    "E : tension à vide ; r : résistance interne.",
+    "Icc = E/r.",
+    "Série : E = ΣEᵢ ; r = Σrᵢ.",
+    "Point de fonctionnement : I = E/(R + r)."
+   ],
+   "application": {
+    "q": "Pile E = 4,5 V, r = 1,5 Ω, branchée sur R = 7,5 Ω : intensité et tension ?",
+    "a": "I = 4,5/(7,5 + 1,5) = 0,5 A ; U = 4,5 − 1,5 × 0,5 = 3,75 V."
+   },
+   "applications": [
+    {
+     "q": "E = 12 V, r = 2 Ω : intensité de court-circuit ?",
+     "a": "Icc = 12/2 = 6 A."
+    },
+    {
+     "q": "Deux piles (1,5 V ; 0,5 Ω) en série : générateur équivalent ?",
+     "a": "E = 3 V ; r = 1 Ω."
+    }
+   ],
+   "board": [
+    {
+     "h": "I. Générateurs",
+     "lines": [
+      "Dipôles actifs : piles, accumulateurs, alimentations, dynamos."
+     ]
+    },
+    {
+     "h": "II. Caractéristique",
+     "lines": [
+      "Droite décroissante : U = E − r·I.",
+      "E = tension à vide (ordonnée à l’origine) ; r = −pente ; Icc = E/r."
+     ]
+    },
+    {
+     "h": "III. Association en série",
+     "lines": [
+      "E = E₁ + E₂ + … ; r = r₁ + r₂ + …"
+     ]
+    },
+    {
+     "h": "IV. Point de fonctionnement",
+     "lines": [
+      "Intersection de la caractéristique du générateur et de celle du récepteur.",
+      "Générateur + résistor R : I = E/(R + r)."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 167",
+     "q": "Une pile de f.é.m. 12 V et de résistance interne négligeable alimente deux branches en dérivation : R₁ = 2,5 Ω et R₂ = 12,5 Ω en série ; R₃ = 20 Ω et R₄ = 5 Ω en série. Calculer I, I₁, I₂ et U₁, U₂, U₃, U₄.",
+     "a": "Chaque branche est sous 12 V. I₁ = 12/15 = 0,8 A ; I₂ = 12/25 = 0,48 A ; I = 1,28 A. U₁ = 2 V ; U₂ = 10 V ; U₃ = 9,6 V ; U₄ = 2,4 V."
+    },
+    {
+     "k": "book",
+     "src": "p. 167",
+     "q": "Un générateur (E = 12 V ; r = 2 Ω) alimente un résistor R = 22 Ω. Loi des mailles, intensité et tension U_AB.",
+     "a": "E = rI + RI ⇒ I = E/(R + r) = 12/24 = 0,5 A ; U_AB = RI = 11 V (= E − rI)."
+    },
+    {
+     "k": "book",
+     "src": "p. 168",
+     "q": "Un générateur linéaire débite 200 mA sous 4 V et 800 mA sous 1 V.\n1) E, r et Icc. 2) Équation U = f(I). 3) Résistance à brancher pour qu’il débite 0,5 A. 4) Point de fonctionnement avec R = 7,5 Ω.",
+     "a": "1) 4 = E − 0,2r et 1 = E − 0,8r ⇒ r = 5 Ω, E = 5 V, Icc = E/r = 1 A.\n2) U = 5 − 5I.\n3) U = 2,5 V ⇒ R = 2,5/0,5 = 5 Ω.\n4) 7,5I = 5 − 5I ⇒ I = 0,4 A ; U = 3 V."
+    },
+    {
+     "k": "book",
+     "src": "p. 168",
+     "q": "Un voltmètre branché seul aux bornes d’un dipôle indique 1,5 V. Quelle est la nature du dipôle ? À quoi correspond cette indication ?",
+     "a": "C’est un dipôle actif (une pile) : un dipôle passif aurait une tension nulle en circuit ouvert. Le voltmètre ne fait (presque) pas débiter la pile : il indique sa f.é.m. E = 1,5 V."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Trois piles identiques (E = 1,5 V ; r = 0,5 Ω) sont associées en série. Caractéristiques du générateur équivalent et intensité débitée dans un résistor de 3 Ω.",
+     "a": "E_eq = 4,5 V ; r_eq = 1,5 Ω. I = 4,5/(3 + 1,5) = 1 A."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Un générateur (E = 6 V ; r = 1 Ω) débite 2 A. Calculer la puissance électrique totale, la puissance perdue par effet Joule dans le générateur et la puissance fournie au circuit, puis le rendement.",
+     "a": "P_totale = EI = 12 W ; P_Joule = rI² = 4 W ; P_utile = UI = (6 − 2) × 2 = 8 W ; rendement 8/12 ≈ 67 %."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un panneau solaire se comporte comme un générateur de f.é.m. 18 V et de résistance interne 1,5 Ω. Il alimente une pompe assimilée à un résistor de 7,5 Ω.\n1) Calculer l’intensité et la tension aux bornes de la pompe.\n2) Quelle est la puissance reçue par la pompe ?\n3) Pour quelle résistance de la pompe la puissance reçue serait-elle maximale ?",
+     "a": "1) I = 18/(7,5 + 1,5) = 2 A ; U = 7,5 × 2 = 15 V.\n2) P = UI = 30 W.\n3) P(R) = RE²/(R + r)² est maximale pour R = r = 1,5 Ω (P = 54 W), mais le rendement n’est alors que de 50 %."
+    }
+   ],
+   "book": "books/PC_5D_PHY.pdf",
+   "bookTitle": "Physique 5ème SN"
   }
  ],
  "level": "5D"
