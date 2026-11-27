@@ -72,22 +72,36 @@ class TeacherBundleImporter(private val db: DaftarDatabase) {
      * الإدارة أعادت إنشاء القسم أو أعادت تثبيت تطبيقها. يُستبدل القديم بالجديد، وتُنقل نقاط الأستاذ
      * من طلاب القسم القديم إلى طلاب الجديد بأرقام النداء، فلا يُرفض الملف ولا يضيع ما رصده.
      */
-    private suspend fun replaceOld(file: ClassFile): List<GradeEntity> {
+    /** ما يُنقل من القسم القديم إلى الجديد: النقاط، وحصص الغياب مع غائبيها. */
+    private class Moved(val grades: List<GradeEntity>, val sessions: List<Pair<com.elyedali.daftarustadh.data.AbsenceSessionEntity, List<String>>>)
+
+    private suspend fun replaceOld(file: ClassFile): Moved {
         val incoming = file.schoolClass
         val olds = db.classDao().findTeaching(incoming.schoolYear, incoming.levelCode, incoming.number).filter { old ->
             old.id != incoming.id && (old.institutionId == incoming.institutionId ||
                 db.institutionDao().getById(old.institutionId)?.let {
-                    norm(it.schoolName) == norm(file.institution.schoolName) && norm(it.wilaya) == norm(file.institution.wilaya) } == true)
+                    // نفس المؤسسة: نفس الاسم والولاية، أو نفس المدرسة المختارة من لائحة المدارس (ولو كُتب اسمها بشكل آخر)
+                    (norm(it.schoolName) == norm(file.institution.schoolName) && norm(it.wilaya) == norm(file.institution.wilaya)) ||
+                        (it.schoolListId != null && it.schoolListId == file.institution.schoolListId) } == true)
         }
-        if (olds.isEmpty()) return emptyList()
+        if (olds.isEmpty()) return Moved(emptyList(), emptyList())
         val newByRoll = file.students.associateBy { it.rollNumber }
         val moved = ArrayList<GradeEntity>()
+        val sessions = ArrayList<Pair<com.elyedali.daftarustadh.data.AbsenceSessionEntity, List<String>>>()
         olds.forEach { old ->
             val oldStudents = db.studentDao().listByClass(old.id).associateBy { it.id }
             db.gradeDao().listClasses(listOf(old.id)).forEach { g ->
                 val roll = oldStudents[g.studentId]?.rollNumber ?: return@forEach
                 val to = newByRoll[roll] ?: return@forEach
                 moved += g.copy(studentId = to.id, classId = incoming.id)
+            }
+            // الغياب الذي سجّله الأستاذ في القسم القديم (مثل العمل الحر) يُنقل أيضًا بأرقام النداء، ولا يُحذف
+            val absents = db.absenceDao().listAbsencesOfClass(old.id).groupBy { it.sessionId }
+            db.absenceDao().listSessionsOfClass(old.id).forEach { s ->
+                val ns = s.copy(id = com.elyedali.daftarustadh.data.AbsenceSessionEntity.idOf(incoming.id, s.subjectCode, s.date, s.period),
+                    classId = incoming.id)
+                val ids = absents[s.id].orEmpty().mapNotNull { a -> oldStudents[a.studentId]?.rollNumber?.let { newByRoll[it]?.id } }.distinct()
+                sessions += ns to ids
             }
             db.documentDao().moveClass(old.id, incoming.id)
             db.gradeDao().deleteByClass(old.id)
@@ -101,7 +115,7 @@ class TeacherBundleImporter(private val db: DaftarDatabase) {
             if (old.institutionId != incoming.institutionId)
                 db.timetableDao().clearTeacherTimetable(old.institutionId, old.schoolYear)
         }
-        return moved
+        return Moved(moved, sessions)
     }
 
     private class ConflictAbort(val className: String) : Exception()
@@ -121,7 +135,13 @@ class TeacherBundleImporter(private val db: DaftarDatabase) {
                     // مادة سحبتها الإدارة منه في هذا القسم (أسندتها لأستاذ آخر): تُزال من قائمته فلا يرسل سجلها
                     db.gradeDao().listTeacherSubjects(file.schoolClass.id).filter { it.subjectCode !in codes }
                         .forEach { db.gradeDao().removeTeacherSubject(it.classId, it.subjectCode) }
-                    moved.forEach { db.gradeDao().save(it) }
+                    moved.grades.forEach { db.gradeDao().save(it) }
+                    // حصة موجودة في الجديد (وصلت من قبل) لا يُكتب فوقها
+                    moved.sessions.forEach { (s, ids) ->
+                        if (db.absenceDao().listAbsences(s.id).isEmpty() &&
+                            db.absenceDao().listSessionsOfClass(s.classId).none { it.id == s.id })
+                            db.absenceDao().saveSession(s, ids)
+                    }
                     db.appMetaDao().put(com.elyedali.daftarustadh.data.AppMetaEntity(subjectsKey(file.schoolClass.id), codes.joinToString(",")))
                 }
                 is ImportOutcome.ConflictingSource -> throw ConflictAbort(r.className)

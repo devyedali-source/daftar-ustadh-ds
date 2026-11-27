@@ -41,6 +41,7 @@ import com.elyedali.daftarustadh.data.SubjectRecordEntity
 import com.elyedali.daftarustadh.data.GradeSlot
 import com.elyedali.daftarustadh.data.GradeMath
 import androidx.compose.ui.Modifier
+import androidx.room.withTransaction
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -489,7 +490,8 @@ class MainActivity : AppCompatActivity() {
 
                 /** حذف قسم وكل ما يتعلق به (بعد إدخال 9999). */
                 fun deleteClass(c: ClassEntity) {
-                    scope.launch {
+                    // الحذف كله في معاملة واحدة: إن توقف التطبيق في منتصفه لا يبقى قسم نصف محذوف
+                    scope.launch { db.withTransaction {
                         gradeDao.deleteByClass(c.id)
                         gradeDao.deleteRecordsByClass(c.id)
                         documentDao.deleteByClass(c.id)
@@ -501,7 +503,7 @@ class MainActivity : AppCompatActivity() {
                         timetableDao.deleteAssignmentsByClass(c.id)
                         timetableDao.deleteSlotsByClass(c.id)
                         classDao.delete(c)
-                    }
+                    } }
                 }
 
                 /** إنتاج كشوف الدرجات لقسم: ملف PDF واحد، كشف في كل صفحة، يُرسل للوراقة. */
@@ -1713,7 +1715,8 @@ class MainActivity : AppCompatActivity() {
                             onSave = { code, slot, values ->
                                 if (!gradesLocked(c.id)) scope.launch {
                                     val now = System.currentTimeMillis()
-                                    values.forEach { (sid, v) -> gradeDao.save(GradeEntity(sid, c.id, code, slot, v, now)) }
+                                    // كل نقاط الورقة تُحفظ معًا أو لا يُحفظ منها شيء
+                                    db.withTransaction { values.forEach { (sid, v) -> gradeDao.save(GradeEntity(sid, c.id, code, slot, v, now)) } }
                                 }
                             },
                             onOpenTable = { code, t ->
@@ -2087,7 +2090,7 @@ class MainActivity : AppCompatActivity() {
                                         schoolClass = c,
                                         students = students,
                                         onSave = { s -> scope.launch { studentDao.save(s) } },
-                                        onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
+                                        onDelete = { s -> scope.launch { db.withTransaction { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s) }; com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
                                         onImport = { importBack = Screen.ADMIN_CLASS; screen = Screen.IMPORT },
                                         onShowSubjects = { showSubjects = true },
                                         onBack = { screen = hubBack },
@@ -2207,7 +2210,7 @@ class MainActivity : AppCompatActivity() {
                                     schoolClass = c,
                                     students = students,
                                     onSave = { s -> scope.launch { studentDao.save(s) } },
-                                    onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
+                                    onDelete = { s -> scope.launch { db.withTransaction { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s) }; com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
                                     onImport = { importBack = Screen.TEACHER_HUB; screen = Screen.IMPORT },
                                     onShowSubjects = {},
                                     onBack = { screen = hubBack },
@@ -2252,7 +2255,7 @@ class MainActivity : AppCompatActivity() {
                             schoolClass = c,
                             students = students,
                             onSave = { s -> scope.launch { studentDao.save(s) } },
-                            onDelete = { s -> scope.launch { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s); com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
+                            onDelete = { s -> scope.launch { db.withTransaction { gradeDao.deleteByStudent(s.id); absenceDao.deleteByStudent(s.id); studentDao.delete(s) }; com.elyedali.daftarustadh.data.StudentPhotos.delete(this@MainActivity, s.id) } },
                             onImport = { importBack = Screen.ADMIN_CLASS; screen = Screen.IMPORT },
                             onShowSubjects = { showSubjects = true },
                             onBack = { screen = if (fromTeaching) Screen.TEACHER_CLASS else Screen.CLASSES },

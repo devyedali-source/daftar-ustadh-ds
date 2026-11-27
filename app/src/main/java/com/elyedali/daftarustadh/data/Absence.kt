@@ -67,6 +67,12 @@ abstract class AbsenceDao {
     @Query("SELECT * FROM absence_session WHERE classId = :classId AND subjectCode = :subjectCode ORDER BY date, period")
     abstract suspend fun listSessions(classId: String, subjectCode: String): List<AbsenceSessionEntity>
 
+    @Query("SELECT * FROM absence_session WHERE classId = :classId")
+    abstract suspend fun listSessionsOfClass(classId: String): List<AbsenceSessionEntity>
+
+    @Query("SELECT * FROM absence WHERE classId = :classId")
+    abstract suspend fun listAbsencesOfClass(classId: String): List<AbsenceEntity>
+
     @Query("SELECT * FROM absence WHERE sessionId = :sessionId")
     abstract suspend fun listAbsences(sessionId: String): List<AbsenceEntity>
 
