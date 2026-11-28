@@ -57,6 +57,54 @@ def load_series(name, lessons, pages):
     return [dict(l, series=m.SERIES[l["title"]]) if l["title"] in m.SERIES else l for l in lessons]
 
 
+BOARD_HEADS = {
+    "fr": ("Situation de départ", "Cours", "À retenir", "Exemples", "Exemple", "Réponse", "Exercice d’application", "Solution"),
+    "ar": ("وضعية الانطلاق", "الدرس", "أستخلص", "أمثلة", "مثال", "الجواب", "تمرين تطبيقي", "الحل"),
+    "en": ("Warm-up", "Lesson", "Key points", "Examples", "Example", "Answer", "Practice", "Answer"),
+}
+
+
+def board_lang(subject, lesson):
+    if subject == "ANG":
+        return "en"
+    return "ar" if any("\u0600" <= c <= "\u06FF" for c in lesson["title"]) else "fr"
+
+
+def sentences(text):
+    """يقسم الخلاصة إلى جمل: سطر لكل فكرة على السبورة."""
+    import re
+    parts = re.split(r"(?<=[.!?؟])\s+(?=[A-ZÀ-ÖØ-Þ0-9«(\u0600-\u06FF])", text.strip())
+    return [p.strip() for p in parts if p.strip()]
+
+
+def full_board(subject, lesson):
+    """سبورة الدرس كاملة ومنظمة من بدايته إلى نهايته:
+    وضعية الانطلاق ← الدرس (فقرة لكل فكرة) ← أقسام السبورة الخاصة (طرائق، جداول، رسوم) ← أستخلص ← أمثلة محلولة ← تمرين تطبيقي بحله."""
+    H = BOARD_HEADS[board_lang(subject, lesson)]
+    out = []
+    if lesson.get("intro"):
+        out.append({"h": H[0], "lines": [lesson["intro"]]})
+    lines = sentences(lesson.get("summary", ""))
+    # سبورة الكتاب الغنية أصلًا (6 أسطر فأكثر) تُغني عن تكرار الخلاصة
+    if lines and sum(len(s.get("lines", [])) for s in lesson["board"]) < 6:
+        out.append({"h": H[1], "lines": lines})
+    out += lesson["board"]
+    if lesson.get("points"):
+        out.append({"h": H[2], "lines": list(lesson["points"])})
+    ex = [e for e in lesson.get("applications") or [] if e.get("q")]
+    if ex:
+        exl = []
+        for i, e in enumerate(ex, 1):
+            exl.append(f"{H[4]} {i} : {e['q']}")
+            if e.get("a"):
+                exl.append(f"→ {H[5]} : {e['a']}")
+        out.append({"h": H[3], "lines": exl})
+    app = lesson.get("application") or {}
+    if app.get("q"):
+        out.append({"h": H[6], "lines": [app["q"]] + ([f"→ {H[7]} : {app['a']}"] if app.get("a") else [])})
+    return out
+
+
 def build(name):
     m = load(name)
     b = BOOKS[m.BOOK]
@@ -65,6 +113,8 @@ def build(name):
     pages = int([l for l in subprocess.run(["pdfinfo", pdf], capture_output=True, text=True).stdout.splitlines() if l.startswith("Pages")][0].split()[-1])
     check(m.BOOK, m.LESSONS, pages)
     m.LESSONS = load_series(name, m.LESSONS, pages)
+    # السبورة الكاملة المنظمة (تُبنى من عناصر الدرس، وتبقى أقسام السبورة الخاصة في وسطها)
+    m.LESSONS = [dict(l, board=full_board(b["subject"], l)) for l in m.LESSONS]
     data = {"subject": b["subject"], "book": b["asset"], "bookTitle": b["title"], "lessons": m.LESSONS}
     for lv in b["levels"]:
         p = os.path.join(OUT, f"{b['subject']}_{lv}.json")

@@ -42,6 +42,25 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment le testicule produit-il des millions de spermatozoïdes chaque jour ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’appareil génital de l’homme comprend : les gonades (deux testicules ovoïdes de 4 à 5 cm logés dans les bourses), les voies génitales (épididymes, canal de 6 m pelotonné ; canaux déférents ; urètre commun au sperme et à l’urine), les glandes annexes (vésicules séminales, prostate, glandes de Cowper) qui produisent le liquide séminal (fructose, ions, pH favorable à la mobilité) et le pénis, formé de deux corps caverneux et d’un corps spongieux.",
+      "Le testicule est formé de tubes séminifères (0,2 mm de diamètre, 400 à 1 000 mm de long) ; entre les tubes, un tissu conjonctif contient des capillaires et les cellules interstitielles de Leydig.",
+      "Le testicule est une glande mixte.",
+      "La spermatogenèse est centripète : multiplication (mitoses des spermatogonies), accroissement (spermatocytes I), maturation ou méiose (spermatocytes II puis spermatides) et différenciation ou spermiogenèse (spermatides → spermatozoïdes).",
+      "Elle dure 74 ± 4 jours chez l’Homme ; une spermatogonie donne 32 spermatozoïdes (3 mitoses goniales puis méiose).",
+      "Les cellules de Sertoli assurent la cohésion du tube, coordonnent la spermatogenèse et nourrissent les cellules germinales.",
+      "Les spermatozoïdes deviennent mobiles et féconds lors de la traversée de l’épididyme (6 m en une douzaine de jours).",
+      "Le spermatozoïde (tête avec acrosome, pièce intermédiaire riche en mitochondries, flagelle) est haploïde : n = 23 chromosomes."
+     ]
+    },
+    {
      "h": "Appareil génital de l’homme",
      "lines": [],
      "table": [
@@ -109,6 +128,32 @@
       "La température plus basse des bourses favorise la spermatogenèse.",
       "Production continue, émission discontinue : la queue de l’épididyme stocke les spermatozoïdes."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Testicule : tubes séminifères + cellules de Leydig.",
+      "Spermatogenèse : multiplication, accroissement, méiose, spermiogenèse.",
+      "Durée : 74 ± 4 jours ; 32 spermatozoïdes par spermatogonie.",
+      "Sertoli : cohésion, coordination, nutrition.",
+      "Maturation et stockage dans l’épididyme."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi les spermatocytes II sont-ils rares sur les coupes ?",
+      "→ Réponse : Parce que leur division en spermatides ne dure qu’environ 1 jour.",
+      "Exemple 2 : Quelles cellules du tube séminifère sont diploïdes ?",
+      "→ Réponse : Les spermatogonies et les spermatocytes I."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Combien de spermatozoïdes produit une spermatogonie souche après 3 mitoses et une méiose ?",
+      "→ Solution : 2³ = 8 spermatocytes I, chacun donne 4 spermatides : 8 × 4 = 32 spermatozoïdes."
+     ]
     }
    ]
   },
@@ -150,6 +195,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Qui commande le testicule et comment sa production reste-t-elle stable ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La testostérone, sécrétée par les cellules de Leydig, différencie les voies génitales mâles, développe les caractères sexuels primaires, fait apparaître et maintient les caractères sexuels secondaires et permet l’achèvement de la spermatogenèse.",
+      "Les cellules de Sertoli sécrètent l’AMH (inhibe la différenciation des voies génitales femelles) et l’inhibine (rétrocontrôle négatif sur l’hypophyse).",
+      "La castration provoque la régression des caractères sexuels secondaires, la stérilité et une hausse de FSH et LH ; l’ablation de l’antéhypophyse ou une lésion de l’hypothalamus provoque en plus l’atrophie des testicules.",
+      "L’hypothalamus sécrète la GnRH de façon pulsatile (une pulse toutes les 90 minutes) ; elle stimule l’antéhypophyse qui libère la LH et la FSH.",
+      "La LH agit sur les cellules de Leydig et stimule la sécrétion de testostérone ; la FSH agit sur les cellules de Sertoli (sécrétion d’ABP, indispensable à la réception de la testostérone) et active la spermatogenèse.",
+      "Les pulses de GnRH entraînent les pulses de LH qui entraînent ceux de la testostérone.",
+      "La testostérone exerce en permanence un rétrocontrôle négatif sur le complexe hypothalamo-hypophysaire (CHH), ce qui maintient son taux constant."
+     ]
+    },
     {
      "h": "Expériences",
      "lines": [],
@@ -207,6 +270,32 @@
      "lines": [
       "(Correction : le tableau du manuel écrit pour la LH « stimule la sécrétion de LH » ; il faut lire « stimule la sécrétion de testostérone par les cellules de Leydig ».)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Leydig → testostérone ; Sertoli → AMH, inhibine, ABP.",
+      "GnRH pulsatile → LH et FSH.",
+      "LH → Leydig → testostérone.",
+      "FSH → Sertoli → spermatogenèse.",
+      "Rétrocontrôle négatif de la testostérone et de l’inhibine."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que montre le décalage entre les pics de GnRH, de LH et de testostérone ?",
+      "→ Réponse : Une relation de causalité : GnRH → LH → testostérone.",
+      "Exemple 2 : Quelle hormone testiculaire freine surtout la FSH ?",
+      "→ Réponse : L’inhibine, sécrétée par les cellules de Sertoli."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Après castration, pourquoi les taux de FSH et LH augmentent-ils ?",
+      "→ Solution : La testostérone (et l’inhibine) ne freinent plus le CHH : le rétrocontrôle négatif est levé."
+     ]
     }
    ]
   },
@@ -249,6 +338,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une femme naît-elle avec un stock d’ovocytes qui ne fait que diminuer ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’appareil génital de la femme comprend deux ovaires (gonades), deux trompes de Fallope débutant par les pavillons (lieu de la fécondation), l’utérus (gestation), le vagin et la vulve, et des glandes annexes (Bartholin, glandes cervicales, utérines et mammaires).",
+      "L’ovaire est une glande mixte formée d’une zone corticale, qui contient les follicules à différents stades, et d’une zone médullaire riche en vaisseaux.",
+      "La folliculogenèse fait passer le follicule primordial (ovocyte I entouré de quelques cellules aplaties) au follicule primaire, puis secondaire ou plein (granulosa pluristratifiée, zone pellucide, thèques interne et externe), puis tertiaire ou cavitaire (antrum rempli de liquide folliculaire) et enfin au follicule mûr (de De Graaf).",
+      "L’ovogenèse commence pendant la vie embryonnaire : vers la 12e semaine, les ovogonies entrent en méiose et donnent des ovocytes I bloqués en prophase I.",
+      "Vers le 7e mois il y a environ 7 millions de follicules primordiaux, 2 millions à la naissance et environ 250 000 par ovaire après la puberté ; les autres dégénèrent (atrésie).",
+      "Juste avant l’ovulation, l’ovocyte I achève la première division (ovocyte II + 1er globule polaire) ; l’ovocyte II se bloque en métaphase II et ne termine la méiose qu’après la pénétration du spermatozoïde."
+     ]
+    },
+    {
      "h": "Comparaison",
      "lines": [],
      "table": [
@@ -289,6 +395,32 @@
      "h": "Évolution du stock",
      "lines": [
       "7 millions (6e-7e mois fœtal) → 2 millions (naissance) → environ 250 000 par ovaire (puberté) → 0 vers 50 ans."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Ovaire : cortex (follicules) et médulla (vaisseaux).",
+      "Follicules : primordial, primaire, secondaire, tertiaire, mûr.",
+      "Ovocyte I bloqué en prophase I dès la vie fœtale.",
+      "Ovocyte II bloqué en métaphase II jusqu’à la fécondation.",
+      "L’atrésie est le destin normal des follicules."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Où s’achève l’ovogenèse ?",
+      "→ Réponse : Hors de l’ovaire, dans la trompe, après la pénétration du spermatozoïde.",
+      "Exemple 2 : Quel rôle joue la zone pellucide ?",
+      "→ Réponse : Elle entoure l’ovocyte et porte les récepteurs qui reconnaissent les spermatozoïdes."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Citer deux différences entre ovogenèse et spermatogenèse.",
+      "→ Solution : L’ovogenèse commence dès la vie fœtale, la spermatogenèse à la puberté ; la méiose de l’ovogenèse est bloquée et donne un seul gamète, celle de la spermatogenèse est continue et donne 4 spermatides."
      ]
     }
    ]
@@ -332,6 +464,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi la température du matin monte-t-elle au milieu du cycle ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le cycle sexuel dure en moyenne 28 jours et commence par les règles.",
+      "Le cycle ovarien comprend la phase folliculaire (un seul follicule devient mûr, les autres s’atrésient), l’ovulation vers le 14e jour (éclatement du follicule mûr et expulsion de l’ovocyte II entouré de la corona radiata, 14 jours avant la fin du cycle) et la phase lutéinique (le corps jaune se forme, atteint son maximum vers le 21e jour puis régresse en corps blanc).",
+      "Les œstrogènes sont faibles au début du cycle, présentent un pic à la veille de l’ovulation puis un second sommet plus discret au milieu de la phase lutéinique ; la progestérone, produite par le corps jaune, débute à l’ovulation et atteint son maximum au milieu de la phase lutéinique.",
+      "L’endomètre passe par la phase menstruelle (desquamation et saignement), la phase proliférative (sous l’effet de l’œstradiol) et la phase sécrétoire (épaississement jusqu’à 7-8 mm, glandes sinueuses à glycogène, artères spiralées : dentelle utérine).",
+      "La glaire cervicale devient abondante, filante et à mailles larges sous l’effet des œstrogènes au moment de l’ovulation ; la progestérone la rend épaisse.",
+      "La température reste un peu au-dessous de 37 °C en phase folliculaire et dépasse 37 °C en phase lutéale grâce à l’effet hyperthermisant de la progestérone."
+     ]
+    },
+    {
      "h": "Les cycles",
      "lines": [],
      "table": [
@@ -372,6 +521,32 @@
      "lines": [
       "Œstradiol : développe les caractères sexuels et l’endomètre, rend la glaire filante (hormone de la femme).",
       "Progestérone : prépare le nid utérin, hyperthermie, inhibe le myomètre (hormone de la mère)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Cycle ovarien : folliculaire, ovulation (J14), lutéinique.",
+      "Œstrogènes : pic avant l’ovulation ; progestérone : phase lutéale.",
+      "Endomètre : menstruelle, proliférative, sécrétoire (dentelle).",
+      "Glaire filante à l’ovulation (œstrogènes).",
+      "Hyperthermie de la phase lutéale (progestérone)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que devient le follicule après l’ovulation ?",
+      "→ Réponse : Il se transforme en corps jaune qui sécrète progestérone et œstrogènes.",
+      "Exemple 2 : Pourquoi les règles surviennent-elles en fin de cycle ?",
+      "→ Réponse : La régression du corps jaune fait chuter les hormones ovariennes et l’endomètre se désagrège."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une courbe de température montre une hausse au 16e jour. Que peut-on en déduire ?",
+      "→ Solution : L’ovulation a eu lieu vers le 16e jour : la hausse est due à la progestérone du corps jaune."
      ]
     }
    ]
@@ -415,6 +590,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Qu’est-ce qui déclenche le pic de LH du 14e jour ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’hypothalamus sécrète la GnRH, libérée dans le système porte hypothalamo-hypophysaire ; l’antéhypophyse libère la FSH et la LH ; la posthypophyse libère l’ocytocine et l’ADH.",
+      "L’hypophysectomie d’une ratte pubère atrophie les ovaires et l’utérus ; la greffe d’hypophyse ou des injections d’extraits les restaurent ; chez une ratte hypophysectomisée et ovariectomisée, les extraits hypophysaires n’agissent pas sur l’utérus : l’hypophyse agit sur l’utérus par l’intermédiaire des ovaires.",
+      "La FSH stimule la croissance des follicules ; le pic de LH, accompagné d’une hausse de FSH, déclenche l’ovulation et la transformation du follicule en corps jaune.",
+      "L’ovariectomie fait monter FSH et LH.",
+      "De faibles doses d’œstradiol pendant longtemps les diminuent (rétrocontrôle négatif) ; une forte dose d’œstradiol en peu de temps provoque un pic de LH (rétrocontrôle positif) ; œstradiol et progestérone à fortes doses maintiennent LH et FSH à un taux faible.",
+      "En phase lutéale, la progestérone ralentit les pulses de GnRH ; en fin de cycle, la chute des hormones ovariennes lève le freinage et un nouveau cycle commence.",
+      "Les chocs émotionnels peuvent modifier ce fonctionnement."
+     ]
+    },
+    {
      "h": "Synthèse des expériences",
      "lines": [],
      "table": [
@@ -448,6 +641,32 @@
        "pic de LH",
        "rétrocontrôle positif"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "GnRH → FSH et LH → ovaire → utérus.",
+      "FSH : croissance folliculaire ; pic de LH : ovulation.",
+      "Œstradiol faible : rétrocontrôle négatif.",
+      "Œstradiol élevé (avant J14) : rétrocontrôle positif → pic de LH.",
+      "Progestérone : rétrocontrôle toujours négatif."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle partie de l’hypophyse libère FSH et LH ?",
+      "→ Réponse : L’antéhypophyse (adénohypophyse).",
+      "Exemple 2 : Quel est le rôle de la progestérone sur le CHH ?",
+      "→ Réponse : Elle exerce toujours un rétrocontrôle négatif : elle ralentit les pulses de GnRH."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi une ratte ovariectomisée a-t-elle des taux élevés de FSH et LH ?",
+      "→ Solution : Il n’y a plus d’œstradiol ni de progestérone pour freiner le CHH."
      ]
     }
    ]
@@ -491,6 +710,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un seul spermatozoïde sur des millions féconde-t-il l’ovocyte ?"
+     ]
+    },
+    {
      "h": "Étapes",
      "lines": [
       "1) Remontée et capacitation des spermatozoïdes.",
@@ -525,6 +750,32 @@
        "Zygote",
        "2n simples puis 2n dupliqués"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Lieu : tiers supérieur de la trompe.",
+      "Reconnaissance ZP3 – spermatozoïde.",
+      "Réaction acrosomique (acrosine, Ca²⁺).",
+      "Dépolarisation + réaction corticale : monospermie.",
+      "Caryogamie : zygote 2n."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de jours dure la période de fécondabilité dans un cycle de 28 jours ?",
+      "→ Réponse : Environ 5 jours.",
+      "Exemple 2 : Quel est le rôle de l’acrosine ?",
+      "→ Réponse : Hydrolyser la zone pellucide pour permettre au spermatozoïde de la traverser."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "La quantité d’ADN double dans les pronucléus avant la caryogamie. Pourquoi ?",
+      "→ Solution : Les chromosomes se répliquent pour que le zygote soit prêt à sa première mitose (2n chromosomes dupliqués)."
      ]
     }
    ]
@@ -568,6 +819,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi les règles ne reviennent-elles pas pendant la grossesse ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le zygote se segmente pendant sa descente dans la trompe : il atteint l’utérus vers le 4e jour au stade morula, devient blastocyste (trophoblaste, bouton embryonnaire, blastocœle) et s’implante dans l’endomètre vers le 7e jour : c’est la nidation.",
+      "Le trophoblaste sécrète l’HCG, dont l’action ressemble à celle de la LH : elle maintient le corps jaune, qui continue à produire œstrogènes et progestérone ; le placenta prend le relais vers la 11e semaine.",
+      "Ces hormones bloquent les cycles par rétrocontrôle négatif sur le CHH.",
+      "Le placenta assure les échanges (10 à 14 m² de surface) entre les sangs maternel et fœtal, qui restent séparés ; il peut laisser passer certains microbes (rubéole, toxoplasme, VIH).",
+      "Au terme, le fœtus mûr sécrète du cortisol, qui diminue la progestérone et augmente l’œstradiol : le myomètre reprend ses contractions ; l’ocytocine de la posthypophyse et les prostaglandines les amplifient (les contractions stimulent la sécrétion d’ocytocine).",
+      "L’accouchement comprend la dilatation du col, la rupture de la poche des eaux, l’expulsion du fœtus puis la délivrance du placenta.",
+      "Après la naissance, la prolactine de l’antéhypophyse déclenche la sécrétion de lait (colostrum les premiers jours) ; la succion du mamelon entretient la lactation par un réflexe neuro-hormonal qui lève l’inhibition hypothalamique de la prolactine, et l’ocytocine provoque l’éjection du lait."
+     ]
+    },
+    {
      "h": "De l’œuf à l’embryon",
      "lines": [],
      "table": [
@@ -609,6 +878,32 @@
      "h": "Lactation (expériences)",
      "lines": [
       "Hypophysectomie → chute du lait ; section de la tige pituitaire → lait surabondant ; un extrait d’hypothalamus réduit la synthèse de prolactine : l’hypothalamus freine la prolactine."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Morula (J4), blastocyste, nidation (J7).",
+      "HCG → maintien du corps jaune.",
+      "Placenta : échanges et hormones dès la 11e semaine.",
+      "Cortisol fœtal → ocytocine et prostaglandines → accouchement.",
+      "Prolactine : sécrétion ; succion : entretien ; ocytocine : éjection."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle hormone inhibe les contractions de l’utérus pendant la grossesse ?",
+      "→ Réponse : La progestérone.",
+      "Exemple 2 : Que se passe-t-il si les tétées sont supprimées ?",
+      "→ Réponse : La production de lait diminue, car la succion entretient la sécrétion de prolactine."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi détecte-t-on la grossesse par la recherche d’HCG dans l’urine ?",
+      "→ Solution : Parce que l’HCG est sécrétée uniquement par le trophoblaste de l’embryon dès la nidation."
      ]
     }
    ]
@@ -652,6 +947,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment les connaissances sur les hormones permettent-elles d’aider les couples ?"
+     ]
+    },
+    {
      "h": "Méthodes",
      "lines": [],
      "table": [
@@ -692,6 +993,32 @@
      "h": "Remarque",
      "lines": [
       "(Correction : le manuel écrit « le préservatif féminin ou diaphragme » ; ce sont deux moyens différents : le diaphragme est une coupelle placée devant le col de l’utérus, le préservatif féminin une gaine placée dans le vagin.)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Contraception ≠ contragestion.",
+      "Pilule combinée : rétrocontrôle négatif → pas d’ovulation.",
+      "RU486 : anti-progestérone.",
+      "FIVETE : 6 étapes.",
+      "Échographie et amniocentèse."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi la FSH est-elle injectée pendant plusieurs jours lors d’une FIVETE ?",
+      "→ Réponse : Pour faire croître et mûrir plusieurs follicules à la fois.",
+      "Exemple 2 : Quel examen permet d’établir le caryotype du fœtus ?",
+      "→ Réponse : L’amniocentèse (cellules fœtales du liquide amniotique)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi les règles surviennent-elles pendant les 7 jours d’arrêt de la pilule ?",
+      "→ Solution : L’arrêt de la prise fait chuter les hormones de synthèse : l’endomètre n’est plus maintenu et se désagrège."
      ]
     }
    ],
@@ -779,6 +1106,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment un caractère caché en F1 réapparaît-il en F2 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un gène est un fragment d’ADN qui détermine un caractère ; un allèle est l’une de ses versions ; il occupe un locus sur le chromosome.",
+      "Le génotype est la combinaison des allèles ; le phénotype est l’ensemble des caractères observables.",
+      "Un allèle dominant s’exprime à l’état homozygote ou hétérozygote ; un allèle récessif seulement à l’état homozygote ; deux allèles codominants s’expriment ensemble.",
+      "Mendel a travaillé sur des lignées pures de pois et a réalisé des fécondations croisées.",
+      "Chez la souris, le croisement de deux lignées pures (grise × blanche) donne une F1 uniforme grise (1re loi : uniformité des hybrides de F1) ; la F2 compte 198 grises et 72 blanches sur 270, soit environ 3/4 et 1/4 : le gris (G) domine le blanc (b).",
+      "Les allèles se séparent lors de la formation des gamètes (loi de la pureté des gamètes ou de la disjonction) : chaque gamète ne reçoit qu’un allèle.",
+      "Le test-cross croise l’individu de phénotype dominant avec un homozygote récessif : 100 % dominants s’il est homozygote, 50 % / 50 % s’il est hétérozygote."
+     ]
+    },
+    {
      "h": "Croisement F1 × F1 (souris)",
      "lines": [],
      "table": [
@@ -822,6 +1167,32 @@
        "50 % [G], 50 % [b]"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Gène, allèle, locus, génotype, phénotype.",
+      "1re loi : uniformité des hybrides de F1.",
+      "2e loi : pureté des gamètes (disjonction des allèles).",
+      "F2 : 3/4 dominants, 1/4 récessifs.",
+      "Test-cross : avec l’homozygote récessif."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’appelle-t-on lignée pure ?",
+      "→ Réponse : Des individus homozygotes qui gardent les mêmes caractères génération après génération.",
+      "Exemple 2 : Pourquoi le testeur doit-il être homozygote récessif ?",
+      "→ Réponse : Il ne fournit qu’un seul type de gamète récessif, qui laisse s’exprimer l’allèle venant de l’individu testé."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une souris grise croisée avec une blanche donne 50 % grises et 50 % blanches. Génotype de la grise ?",
+      "→ Solution : Hétérozygote G//b : elle produit deux types de gamètes G et b en proportions égales."
+     ]
     }
    ]
   },
@@ -863,6 +1234,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi ne peut-on jamais obtenir une lignée pure de souris jaunes ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Chez le muflier, rouge × blanc donne une F1 100 % rose ; la F2 donne 88 rouges, 182 roses et 90 blanches, soit 1/4, 1/2, 1/4 : les allèles sont codominants et l’hétérozygote a un phénotype intermédiaire.",
+      "Chez la souris, jaune × jaune donne 2/3 de jaunes et 1/3 de noires au lieu de 3/4 et 1/4 : l’allèle J du jaune est dominant pour la couleur mais létal à l’état homozygote ; les souris jaunes sont toutes J//n.",
+      "Un allèle létal ne tue que l’homozygote ; il peut être dominant ou récessif pour le phénotype.",
+      "La polyallélie existe quand un gène a plus de deux allèles, comme chez le lapin (chinchilla, himalayan, albinos), mais chaque individu n’en porte que deux.",
+      "Chez les abeilles, les ovules non fécondés donnent des mâles haploïdes (parthénogenèse) et les ovules fécondés des femelles diploïdes.",
+      "Chez les ovins, le gène des cornes est dominant chez le mâle et récessif chez la femelle : c’est un gène influencé par le sexe, porté par un autosome."
+     ]
+    },
     {
      "h": "Muflier : codominance",
      "lines": [],
@@ -911,6 +1299,32 @@
        "dominant chez le mâle, récessif chez la femelle"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Codominance : F2 1/4, 1/2, 1/4.",
+      "Gène létal : 2/3, 1/3.",
+      "Polyallélie : plus de 2 allèles dans la population.",
+      "Abeilles : mâles haploïdes par parthénogenèse.",
+      "Gène influencé par le sexe : autosomal, expression selon le sexe."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel rapport suggère un gène létal ?",
+      "→ Réponse : 2/3 – 1/3 au lieu de 3/4 – 1/4.",
+      "Exemple 2 : Pourquoi un mâle d’abeille transmet-il tous ses allèles à ses filles ?",
+      "→ Réponse : Il est haploïde : ses gamètes sont identiques et portent tous ses allèles."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un couple de chiens à queue courte donne 3 chiots sans queue, 6 à queue courte et 2 à queue longue. Interpréter.",
+      "→ Solution : Proportions proches de 1/4, 1/2, 1/4 : codominance ; les parents à queue courte sont hétérozygotes S//L."
+     ]
     }
    ]
   },
@@ -953,6 +1367,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi deux croisements réciproques donnent-ils des résultats différents ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Chez les Mammifères et la drosophile, la femelle XX est homogamétique et le mâle XY hétérogamétique.",
+      "Chez la drosophile, un croisement femelle aux yeux rouges × mâle aux yeux blancs donne une F1 toute rouge, mais le croisement réciproque donne des mâles aux yeux blancs (comme leur mère) et des femelles aux yeux rouges (comme leur père) : les résultats différents des croisements réciproques indiquent une hérédité liée au sexe, et le gène est porté par le segment propre du chromosome X.",
+      "Le mâle ne possède qu’un seul allèle et exprime toujours celui de son X, reçu de sa mère.",
+      "Chez les oiseaux et les papillons, c’est l’inverse : le mâle est homogamétique (ZZ) et la femelle hétérogamétique (ZW).",
+      "Chez le pigeon, mâle bleu × femelle brune donne 100 % de bleus, mais mâle brun × femelle bleue donne des mâles bleus et des femelles brunes : le bleu (B) domine le brun (b) et le gène est porté par Z."
+     ]
+    },
+    {
      "h": "Drosophile (gène porté par X)",
      "lines": [],
      "table": [
@@ -976,6 +1406,32 @@
       "Croisement 1 : ♂ ZB//ZB × ♀ Zb//W → 100 % [B].",
       "Croisement 2 : ♂ Zb//Zb × ♀ ZB//W → ♂ [B], ♀ [b].",
       "(Correction : pour la femelle du croisement 1, le manuel écrit « gamètes Zb et Y » ; il faut lire « Zb et W ».)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Croisements réciproques différents → gène lié au sexe.",
+      "Mammifères, drosophile : ♀ XX, ♂ XY.",
+      "Oiseaux, papillons : ♂ ZZ, ♀ ZW.",
+      "Le sexe hétérogamétique a un seul allèle.",
+      "Le fils reçoit son X de sa mère."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel sexe est hétérogamétique chez les oiseaux ?",
+      "→ Réponse : La femelle (ZW).",
+      "Exemple 2 : Pourquoi un gène porté par X s’exprime-t-il plus souvent chez les mâles de drosophile ?",
+      "→ Réponse : Le mâle n’a qu’un X : un seul allèle récessif suffit pour s’exprimer."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pigeon : mâle Zb//Zb × femelle ZB//W. Descendance ?",
+      "→ Solution : Mâles ZB//Zb bleus ; femelles Zb//W brunes : 50 % de mâles bleus, 50 % de femelles brunes."
      ]
     }
    ]
@@ -1019,6 +1475,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment apparaissent des phénotypes que n’avaient ni les parents ni la F1 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Mendel croise des pois lisses et jaunes avec des pois ridés et verts (lignées pures) : la F1 est toute lisse et jaune ; la F2 donne 9/16 lisses-jaunes, 3/16 lisses-verts, 3/16 ridés-jaunes et 1/16 ridés-verts.",
+      "Pour chaque caractère pris seul on retrouve 3/4 – 1/4 : les deux couples d’allèles se séparent indépendamment, car ils sont portés par deux paires de chromosomes différentes.",
+      "L’hybride F1 produit quatre types de gamètes équiprobables (1/4 chacun) et deux phénotypes recombinés apparaissent.",
+      "Chez la souris (gris uniforme × noir panaché), la F2 donne 559, 187, 188 et 63 souris sur 997, proches de 9/16, 3/16, 3/16, 1/16 ; le test-cross F1 × double récessif donne 142, 144, 143 et 139 sur 568, soit 1/4 de chaque phénotype.",
+      "Si l’un des gènes est codominant (lapin : gris × blanc donne tacheté, long domine court), la F2 compte 6 phénotypes : 6/16, 3/16, 3/16, 2/16, 1/16, 1/16."
+     ]
+    },
+    {
      "h": "Gamètes de la F1 (L//r ; J//v)",
      "lines": [
       "L J, L v, r J, r v : 1/4 chacun (brassage interchromosomique)."
@@ -1044,6 +1516,32 @@
        "Lapin (codominance + dominance)",
        "6/16, 3/16, 3/16, 2/16, 1/16, 1/16"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Gènes indépendants : sur deux paires de chromosomes.",
+      "F1 → 4 gamètes à 1/4.",
+      "F2 : 9/16, 3/16, 3/16, 1/16.",
+      "Test-cross : 4 phénotypes à 1/4.",
+      "Avec codominance : 6 phénotypes."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de génotypes différents en F2 avec deux gènes indépendants à dominance ?",
+      "→ Réponse : 9 génotypes (3 × 3) pour 4 phénotypes.",
+      "Exemple 2 : Pour obtenir 25 % de chaque phénotype, quel croisement faut-il réaliser ?",
+      "→ Réponse : Un test-cross : la F1 dihybride × le double homozygote récessif."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vérifier les résultats de la F2 des souris : 559 + 187 + 188 + 63.",
+      "→ Solution : Total 997 ; 559/997 ≈ 0,56 ≈ 9/16 ; 187/997 ≈ 188/997 ≈ 0,19 ≈ 3/16 ; 63/997 ≈ 0,06 ≈ 1/16 : gènes indépendants."
      ]
     }
    ]
@@ -1087,6 +1585,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un test-cross donne-t-il 41,5 % – 41,5 % – 8,5 % – 8,5 % au lieu de 4 × 25 % ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Chez la drosophile, le croisement gris-ailes longues × noir-ailes vestigiales donne une F1 grise à ailes longues ; le test-cross mâle F1 × femelle double récessive ne donne que deux phénotypes parentaux à 50 % : les gènes sont portés par le même chromosome et la liaison est absolue (chez le mâle de drosophile il n’y a jamais de crossing-over).",
+      "Le test-cross femelle F1 × mâle double récessif donne 41,5 % et 41,5 % de phénotypes parentaux et 8,5 % et 8,5 % de phénotypes recombinés : la liaison est partielle ; lors de la méiose de la femelle, un crossing-over (enjambement) entre chromatides homologues produit des gamètes recombinés.",
+      "On parle de liaison CIS si les allèles dominants sont sur le même chromosome et TRANS sinon.",
+      "Le pourcentage de recombinaison P = (effectifs recombinés / effectif total) × 100 mesure la distance entre les gènes : 1 % de recombinaison = 1 centimorgan (cM).",
+      "Pour les gènes du corps et des soies (n, e), P = 15 % : distance de 15 cM.",
+      "Les distances entre plusieurs gènes permettent de dessiner une carte factorielle (génétique)."
+     ]
+    },
+    {
      "h": "Comparer les test-cross",
      "lines": [],
      "table": [
@@ -1123,6 +1638,32 @@
      "h": "Maïs (liaison absolue TRANS)",
      "lines": [
       "F2 : [Pc] 150, [PN] 317, [dN] 160 sur 627 ≈ 1/4, 1/2, 1/4."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Liaison absolue : 2 phénotypes à 50 %.",
+      "Liaison partielle : parentaux > recombinés.",
+      "Crossing-over pendant la prophase I.",
+      "P = recombinés / total × 100.",
+      "1 % = 1 cM ; carte factorielle."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi le test-cross se fait-il avec une femelle F1 pour étudier le crossing-over chez la drosophile ?",
+      "→ Réponse : Parce que le mâle de drosophile ne fait jamais de crossing-over.",
+      "Exemple 2 : Trois gènes A, B, C : A–B = 10 cM, B–C = 4 cM, A–C = 14 cM. Ordre ?",
+      "→ Réponse : A – B – C, car A–C = A–B + B–C."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Test-cross : 42,5 % [n+e+], 42,5 % [ne], 7,5 % [n+e], 7,5 % [ne+]. Distance entre les gènes ?",
+      "→ Solution : P = 7,5 + 7,5 = 15 % : distance de 15 cM."
      ]
     }
    ]
@@ -1165,6 +1706,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment savoir si une maladie héréditaire est dominante ou récessive, autosomique ou liée à X ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’étude de l’hérédité humaine est difficile : 2n = 46, croisements impossibles à imposer, génération longue et peu de descendants.",
+      "On utilise l’arbre généalogique (pedigree), les statistiques sur plusieurs familles, le caryotype et l’électrophorèse.",
+      "Une maladie est récessive si deux parents sains ont un enfant atteint (saut de génération) : c’est le cas de l’albinisme et de la mucoviscidose ; si une fille est atteinte alors que son père est sain, le gène n’est pas lié à X : il est autosomique (mucoviscidose : chromosome 7 ; aussi phénylcétonurie, drépanocytose).",
+      "Une maladie est dominante si tout sujet atteint a au moins un parent atteint, sans saut de génération (chorée de Huntington, héméralopie congénitale, polydactylie).",
+      "Une maladie récessive liée à X touche surtout les garçons, nés de mères conductrices (myopathie de Duchenne, protéine dystrophine ; hémophilie, daltonisme).",
+      "Le système ABO est un cas de polyallélie avec codominance : A et B codominants, dominants sur O ; le sérum contient naturellement les agglutinines contre les antigènes absents des hématies.",
+      "Le rhésus : Rh+ domine Rh– ; combiné à ABO, il donne 8 groupes."
+     ]
+    },
     {
      "h": "Lire un pedigree",
      "lines": [],
@@ -1225,6 +1784,32 @@
        "anti-A et anti-B"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Pedigree : outil principal.",
+      "Récessif : parents sains, enfant atteint.",
+      "Dominant : pas de saut de génération.",
+      "Lié à X récessif : surtout des garçons, mères conductrices.",
+      "ABO : A = B > O ; Rh+ > Rh–."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi un fils hémophile ne tient-il jamais l’allèle de son père ?",
+      "→ Réponse : Il reçoit de son père le chromosome Y ; son X vient de sa mère.",
+      "Exemple 2 : Quelle est la probabilité qu’un couple de conducteurs de la mucoviscidose ait un enfant malade ?",
+      "→ Réponse : 1/4 (enfant m//m)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Deux parents A//O et B//O. Groupes possibles des enfants ?",
+      "→ Solution : AB (A//B), A (A//O), B (B//O) et O (O//O), chacun avec une probabilité de 1/4."
+     ]
     }
    ]
   },
@@ -1267,6 +1852,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment un enfant peut-il avoir 47 chromosomes ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une anomalie chromosomique touche soit le nombre de chromosomes du caryotype (monosomie, trisomie), soit la structure d’un chromosome.",
+      "La trisomie 21 : le caryotype présente trois chromosomes 21 (47 chromosomes) ; elle résulte de la non-disjonction des chromosomes 21 lors de la méiose chez l’un des parents, qui produit un gamète à n + 1 = 24 chromosomes.",
+      "Les trisomies 13 et 18 entraînent rapidement la mort de l’enfant ; la plupart des trisomies conduisent à des avortements spontanés.",
+      "Le syndrome de Turner (44 autosomes + X, 45 chromosomes) touche des femmes de petite taille, stériles, aux caractères sexuels secondaires peu développés.",
+      "Le syndrome de Klinefelter (44 autosomes + XXY, 47 chromosomes) touche des hommes stériles, présentant parfois un développement des seins.",
+      "Les anomalies de structure : la délétion est la perte d’un fragment (ex. chromosome 5 : syndrome du cri du chat) et entraîne la perte de gènes ; la translocation est le déplacement d’un fragment sur un autre chromosome (ex.",
+      "21 sur 14) ; elle est équilibrée si rien n’est perdu ni gagné, et le porteur est alors sain."
+     ]
+    },
+    {
      "h": "Anomalies de nombre",
      "lines": [],
      "table": [
@@ -1303,6 +1906,32 @@
      "lines": [
       "Délétion : perte d’un fragment (chromosome 5).",
       "Translocation : fragment fixé sur un autre chromosome (21 sur 14)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Anomalie de nombre : monosomie, trisomie.",
+      "Trisomie 21 : non-disjonction méiotique.",
+      "Turner : 45, X ; Klinefelter : 47, XXY.",
+      "Délétion : perte de gènes.",
+      "Translocation équilibrée : porteur sain."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel examen permet de diagnostiquer une trisomie avant la naissance ?",
+      "→ Réponse : Le caryotype des cellules fœtales obtenues par amniocentèse.",
+      "Exemple 2 : Pourquoi un porteur d’une translocation équilibrée est-il sain ?",
+      "→ Réponse : Il n’a ni perdu ni gagné de matériel génétique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écrire la formule chromosomique d’un garçon trisomique 21 et des gamètes possibles à son origine.",
+      "→ Solution : 2n + 1 = 45 autosomes + XY ; gamètes : (23 autosomes + Y) × (22 autosomes + X) ou (22 autosomes + Y) × (23 autosomes + X)."
      ]
     }
    ],
@@ -1402,6 +2031,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un nerf sectionné dégénère-t-il d’un côté seulement ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "On distingue le système nerveux somatique (cérébro-spinal), qui contrôle la vie de relation, et le système autonome (végétatif), qui contrôle le milieu intérieur de façon involontaire et comprend le sympathique et le parasympathique.",
+      "Le système nerveux central (encéphale et moelle épinière) est protégé par les os du crâne et les vertèbres, par les trois méninges (dure-mère, arachnoïde, pie-mère) et par le liquide céphalo-rachidien.",
+      "La moelle épinière est un cordon blanc qui se termine au niveau de la 2e vertèbre lombaire ; sa substance grise en forme de papillon (cornes dorsales, latérales, ventrales) est entourée de substance blanche formée de voies ascendantes et descendantes.",
+      "Un nerf est formé de fibres nerveuses, avec ou sans myéline, groupées en faisceaux entourés de périnèvre, cloisonnés par l’endonèvre et entourés de l’épinèvre ; il peut être sensitif, moteur ou mixte.",
+      "Après section d’un nerf, le bout séparé du corps cellulaire dégénère (dégénérescence wallérienne) et le bout relié au corps cellulaire survit : les fibres sont des prolongements de corps cellulaires.",
+      "Le neurone comprend un corps cellulaire (noyau, corps de Nissl), des dendrites et un axone ; la substance grise contient les corps cellulaires et la substance blanche les fibres myélinisées.",
+      "Les neurones communiquent par des synapses, chimiques le plus souvent ou électriques."
+     ]
+    },
+    {
      "h": "Organisation",
      "lines": [],
      "table": [
@@ -1452,6 +2099,32 @@
        "corne antérieure (moteurs)"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Système somatique et système autonome.",
+      "Méninges et LCR protègent le SNC.",
+      "Nerf : faisceaux de fibres et gaines conjonctives.",
+      "Dégénérescence wallérienne : le bout sans noyau dégénère.",
+      "Neurone : corps cellulaire, dendrites, axone."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle méninge est mince et nourricière ?",
+      "→ Réponse : La pie-mère.",
+      "Exemple 2 : Que contient la substance grise ?",
+      "→ Réponse : Les corps cellulaires des neurones, des fibres nues, la névroglie et des capillaires."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "On sectionne la racine antérieure d’un nerf rachidien. Quelles fibres dégénèrent ?",
+      "→ Solution : Les fibres situées au-delà de la section, côté périphérique : leurs corps cellulaires sont dans la corne antérieure de la moelle (neurones moteurs)."
+     ]
     }
    ]
   },
@@ -1494,6 +2167,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une excitation trop faible ou trop brève ne produit-elle aucune réponse ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Sur une préparation nerf sciatique – muscle de grenouille, une excitation efficace du nerf provoque la contraction du muscle : le nerf est excitable et conducteur ; le potentiel d’action est la traduction électrique de son excitation.",
+      "Pour être efficace, un excitant doit avoir une intensité minimale (seuil ; la rhéobase pour un temps long), une durée minimale (temps utile, de l’ordre de la milliseconde) et s’établir brusquement ; il faut un couple intensité-temps convenable.",
+      "La chronaxie est le temps utile correspondant à une intensité double de la rhéobase.",
+      "La vitesse de l’influx se mesure en plaçant les électrodes réceptrices à deux distances d1 et d2 : V = (d1 – d2) / Δt, Δt étant le décalage entre les deux potentiels d’action.",
+      "La vitesse augmente avec la température, avec le diamètre de la fibre et avec la présence de myéline.",
+      "Dans une fibre isolée, l’influx déclenché expérimentalement se propage dans les deux sens ; d’un neurone à l’autre, à travers une synapse, il ne passe que dans un seul sens."
+     ]
+    },
+    {
      "h": "Conditions d’une excitation efficace",
      "lines": [
       "Intensité ≥ seuil.",
@@ -1522,6 +2212,32 @@
        "Température ↑",
        "vitesse ↑"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Excitabilité et conductibilité.",
+      "Seuil (rhéobase), temps utile, chronaxie.",
+      "Variation brutale nécessaire.",
+      "V = Δd / Δt.",
+      "Vitesse ↑ avec diamètre, myéline, température."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’appelle-t-on rhéobase ?",
+      "→ Réponse : L’intensité minimale efficace pour un temps de passage long.",
+      "Exemple 2 : L’influx passe-t-il dans les deux sens au niveau d’une synapse ?",
+      "→ Réponse : Non, la synapse est unidirectionnelle."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Les électrodes réceptrices sont à 6 cm puis à 2 cm de la cathode ; le décalage est de 1 ms. Vitesse ?",
+      "→ Solution : V = (0,06 – 0,02) / 0,001 = 40 m/s."
      ]
     }
    ]
@@ -1564,6 +2280,25 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment une fibre nerveuse produit-elle un signal électrique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’oscilloscope cathodique amplifie et enregistre des variations de tension brèves (0,5 à 1 ms) et faibles.",
+      "Une microélectrode introduite dans l’axone indique une différence de potentiel constante d’environ –70 mV : c’est le potentiel de repos ; l’intérieur est négatif.",
+      "Il est dû aux canaux de fuite, beaucoup plus perméables au K⁺ qu’au Na⁺, et à la pompe Na⁺/K⁺ (ATPase) qui maintient l’inégalité des concentrations en expulsant 3 Na⁺ contre 2 K⁺ entrants.",
+      "Le potentiel d’action monophasique comprend une dépolarisation, une repolarisation, une hyperpolarisation puis le retour au repos ; il naît quand la dépolarisation atteint le seuil (environ –50 mV).",
+      "La dépolarisation est due à l’ouverture des canaux Na⁺ voltage-dépendants (entrée de Na⁺) ; la repolarisation à leur inactivation et à l’ouverture retardée des canaux K⁺ voltage-dépendants (sortie de K⁺) ; l’hyperpolarisation au retard de fermeture des canaux K⁺.",
+      "Une fibre isolée obéit à la loi du tout ou rien ; dans un nerf l’amplitude augmente avec l’intensité, car le nombre de fibres excitées augmente (recrutement).",
+      "La propagation est continue (de proche en proche) dans les fibres sans myéline et saltatoire (de nœud de Ranvier en nœud de Ranvier) dans les fibres myélinisées ; la période réfractaire empêche le retour en arrière.",
+      "Le message est codé en fréquence de PA ; au niveau du récepteur, le potentiel de récepteur est codé en amplitude."
+     ]
+    },
     {
      "h": "Phases du PA et ions",
      "lines": [],
@@ -1622,6 +2357,32 @@
       "Récepteur : potentiel de récepteur codé en amplitude.",
       "Fibre : message codé en fréquence de potentiels d’action."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Potentiel de repos ≈ –70 mV (fuite de K⁺, pompe Na⁺/K⁺).",
+      "PA : dépolarisation, repolarisation, hyperpolarisation.",
+      "Na⁺ entre puis K⁺ sort (canaux voltage-dépendants).",
+      "Fibre : tout ou rien ; nerf : recrutement.",
+      "Codage en fréquence ; propagation saltatoire si myéline."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que devient le potentiel de repos si la cellule meurt ?",
+      "→ Réponse : Il disparaît, car il exige une dépense d’énergie (ATP de la pompe).",
+      "Exemple 2 : Pourquoi enregistre-t-on plusieurs pics loin du point de stimulation d’un nerf ?",
+      "→ Réponse : Les fibres de diamètres différents conduisent à des vitesses différentes (potentiel complexe)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi l’amplitude d’un potentiel de nerf augmente-t-elle avec l’intensité de stimulation ?",
+      "→ Solution : Le nerf contient des fibres à seuils différents : plus l’intensité augmente, plus de fibres sont recrutées."
+     ]
     }
    ]
   },
@@ -1664,6 +2425,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment un neurone « décide »-t-il d’émettre ou non un message ?"
+     ]
+    },
+    {
      "h": "Étapes de la transmission",
      "lines": [
       "1) PA dans la terminaison présynaptique.",
@@ -1698,6 +2465,32 @@
        "PPSE (dépolarisation)",
        "PPSI (hyperpolarisation)"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Synapse : présynaptique, fente (20 nm), postsynaptique.",
+      "PA → Ca²⁺ → exocytose du neurotransmetteur.",
+      "PPSE (Na⁺) et PPSI (Cl⁻ ou K⁺).",
+      "Sommation temporelle et spatiale.",
+      "Plaque motrice : acétylcholine."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce que la sommation spatiale ?",
+      "→ Réponse : L’addition de potentiels postsynaptiques venant de synapses différentes en même temps.",
+      "Exemple 2 : Où s’effectue l’intégration ?",
+      "→ Réponse : Au niveau du cône axonique (segment initial) du neurone postsynaptique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un neurone reçoit simultanément un PPSE de +12 mV et un PPSI de –5 mV ; seuil à +15 mV au-dessus du repos. PA ?",
+      "→ Solution : Somme algébrique : +7 mV < 15 mV : pas de potentiel d’action."
      ]
     }
    ]
@@ -1741,6 +2534,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une drogue crée-t-elle une dépendance ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La cocaïne, principal alcaloïde de la feuille de coca, stimule la libération et bloque la recapture de la dopamine, de la noradrénaline et de la sérotonine dans la fente synaptique : les neurotransmetteurs restent plus longtemps actifs et le système de récompense est suractivé (euphorie, excitation).",
+      "Une drogue est toute substance naturelle ou de synthèse qui modifie l’état de conscience et le fonctionnement du cerveau, donnant euphorie et plaisir avec déconnexion de la réalité.",
+      "Sa consommation répétée conduit à la toxicomanie : dépendance psychique, voire physique, avec tolérance (il faut des doses de plus en plus fortes) et syndrome de manque à l’arrêt.",
+      "La nicotine du tabac augmente le rythme cardiaque et la pression artérielle, donne une euphorie transitoire et une impression d’énergie, diminue l’appétit et le stress ressentis ; elle entraîne une tolérance et des dépendances psychique et physique très fortes."
+     ]
+    },
+    {
      "h": "Mode d’action de la cocaïne",
      "lines": [
       "Libération ↑ et recapture bloquée : dopamine, noradrénaline, sérotonine.",
@@ -1767,6 +2575,32 @@
        "Manque",
        "troubles à l’arrêt de la consommation"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Cocaïne : bloque la recapture de la dopamine.",
+      "Drogue : modifie la conscience.",
+      "Toxicomanie : dépendance psychique et physique.",
+      "Tolérance : doses croissantes.",
+      "Nicotine : cœur, pression, dépendance forte."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Citer deux effets physiologiques de la nicotine.",
+      "→ Réponse : Elle augmente le rythme cardiaque et la pression artérielle.",
+      "Exemple 2 : Qu’appelle-t-on toxicomanie ?",
+      "→ Réponse : La dépendance psychologique voire physique à une ou plusieurs drogues."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi le blocage de la recapture de la dopamine prolonge-t-il l’effet du message ?",
+      "→ Solution : La dopamine reste dans la fente synaptique et continue à se fixer sur les récepteurs postsynaptiques."
      ]
     }
    ],
@@ -1860,6 +2694,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Quelle différence y a-t-il entre une roche et un minerai ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La géologie est la science qui étudie la Terre : elle observe, puis établit des hypothèses pour expliquer l’agencement des roches et reconstituer leur histoire.",
+      "Ses branches : la pétrographie (description des roches), la pétrologie (formation des roches : exogène pour les sédimentaires, endogène pour les magmatiques), la minéralogie (minéraux), la stratigraphie (couches ou strates), la paléontologie (fossiles), la tectonique (déformations de la croûte) et la géologie appliquée (mines, pétrole, eau, travaux publics).",
+      "Un minéral est une substance naturelle, inorganique, solide, de composition chimique définie et de structure atomique ordonnée (quartz, feldspath, mica, calcite).",
+      "Une roche est un assemblage naturel de minéraux : monominérale (grès, calcaire) ou polyminérale (granite, basalte) ; elle est magmatique, sédimentaire ou métamorphique.",
+      "Un minerai est une roche contenant un minéral utile en proportion suffisante pour être exploité (bauxite pour l’aluminium, galène pour le plomb, hématite pour le fer) ; la mine est le lieu d’extraction et le gisement l’ensemble géologique qui contient le minerai.",
+      "L’histoire de la Terre (4,6 milliards d’années) se divise en éons, ères, périodes et époques : Précambrien (4,6 à 0,54 milliard d’années : formation de la Terre, premières formes de vie), Paléozoïque ou Primaire (541 à 252 Ma : explosion cambrienne, sortie des êtres vivants sur la terre ferme, Pangée, grande extinction du Permien), Mésozoïque ou Secondaire (252 à 66 Ma : dinosaures, premiers oiseaux et mammifères, éclatement de la Pangée), Cénozoïque, Tertiaire et Quaternaire (depuis 66 Ma : mammifères, grandes chaînes récentes, apparition de l’Homme)."
+     ]
+    },
+    {
      "h": "Les ères géologiques",
      "lines": [],
      "table": [
@@ -1897,6 +2748,32 @@
       "Roche : assemblage de minéraux.",
       "Minerai : roche exploitable pour un minéral utile.",
       "Gisement : ensemble géologique contenant le minerai."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Branches : pétrographie, minéralogie, stratigraphie, paléontologie, tectonique.",
+      "Minéral ≠ roche ≠ minerai.",
+      "Roches magmatiques, sédimentaires, métamorphiques.",
+      "Âge de la Terre : 4,6 milliards d’années.",
+      "Précambrien, Primaire, Secondaire, Cénozoïque."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle branche de la géologie étudie les fossiles ?",
+      "→ Réponse : La paléontologie.",
+      "Exemple 2 : Comment se termine le Mésozoïque ?",
+      "→ Réponse : Par l’extinction des dinosaures, à la fin du Crétacé."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Classer : granite, quartz, hématite, grès.",
+      "→ Solution : Minéraux : quartz, hématite (minéral du minerai de fer) ; roches : granite (polyminérale), grès (monominérale)."
      ]
     }
    ]
@@ -1940,6 +2817,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le fer se trouve-t-il au nord et le cuivre à Akjoujt ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La Mauritanie comprend cinq ensembles géologiques.",
+      "La chaîne des Mauritanides est un arc de collines et de crêtes gréso-quartzitiques orienté nord-sud, de 100 km de large au maximum, dont la concavité est tournée vers l’Atlantique ; elle est formée de roches sédimentaires et métamorphiques fortement plissées, surtout lors de l’orogenèse hercynienne (environ 300 Ma) ; elle comprend les tronçons Zemmour-Tiferchai (nord), Akjoujt-Bakel (centre) et Sénégal oriental-Guinée (sud) ; elle renferme or, cuivre, chrome, cobalt et terres rares (gisement cuivre-or d’Akjoujt).",
+      "La dorsale Rgueïbat, au nord, est un vaste bombement de socle cristallin précambrien (granites, roches basiques et métamorphiques) : fer, or, cuivre, nickel, uranium, kimberlites parfois diamantifères.",
+      "Le bassin de Taoudéni est le plus grand bassin sédimentaire d’Afrique de l’Ouest ; ses couches du Protérozoïque supérieur au Carbonifère sont peu déformées ; il a un potentiel pétrolier et gazier.",
+      "Le bassin côtier atlantique, à l’ouest, contient des sédiments du Jurassique au Quaternaire (calcaires, grès, argiles, phosphates) et témoigne de quatre transgressions marines au Quaternaire (Tafaritien, Aïoujien, Inchirien, Nouakchottien).",
+      "Le bassin de Tindouf, au nord, est un vaste synclinal est-ouest bordé de cuestas le long de la dorsale Rgueïbat."
+     ]
+    },
+    {
      "h": "Les cinq ensembles",
      "lines": [],
      "table": [
@@ -1980,6 +2874,32 @@
      "lines": [
       "(Correction : la page 199 parle des « quatre grandes régions géologiques » alors que le même texte en décrit cinq.)",
       "(Correction : page 198, « Noukchottien » ; il faut lire « Nouakchottien ».)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "5 ensembles : Mauritanides, Rgueïbat, Taoudéni, bassin côtier, Tindouf.",
+      "Mauritanides : chaîne hercynienne plissée (≈ 300 Ma).",
+      "Rgueïbat : socle précambrien (fer).",
+      "Taoudéni : grand bassin sédimentaire peu déformé.",
+      "Bassin côtier : 4 transgressions quaternaires."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle orogenèse a plissé les Mauritanides ?",
+      "→ Réponse : L’orogenèse hercynienne, il y a environ 300 Ma.",
+      "Exemple 2 : Citer les quatre transgressions marines du Quaternaire.",
+      "→ Réponse : Tafaritien, Aïoujien, Inchirien et Nouakchottien."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans quel ensemble se trouve la région de Zouérate ? Quelle ressource y est exploitée ?",
+      "→ Solution : Dans la dorsale Rgueïbat ; on y exploite le fer (Kédia d’Idjil, guelbs)."
      ]
     }
    ]
@@ -2022,6 +2942,25 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le minerai de la Kédia d’Idjil est-il plus recherché que celui des guelbs ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le fer du Tiris (dorsale Rgueïbat) : la Kédia d’Idjil est un massif de roches métamorphiques plissées dont le minerai, très riche en hématite (Fe₂O₃), se présente en plaquettes (65 à 66 % de fer) ou massif (environ 68 %) ; le quartz est l’impureté principale.",
+      "Les guelbs, collines isolées autour de Zouérate, sont des quartzites à magnétite (Fe₃O₄) plus pauvres (environ 37 % de fer) ; le Guelb El Rhein est exploité.",
+      "Le minerai est abattu à l’explosif, concassé, trié et transporté par train jusqu’à Nouadhibou pour l’exportation.",
+      "Le cuivre d’Akjoujt (Guelb Moghrein, Mauritanides) forme un amas lenticulaire : minerai sulfuré profond (1,8 % de cuivre, chalcopyrite) et minerai oxydé superficiel (2,7 %, malachite et chrysocolle), coiffé d’un chapeau de fer.",
+      "Les phosphates de Bofal et Loubboira, le long du fleuve Sénégal (âge éocène), ont des réserves de 130 Mt (21 % de P₂O₅) et 29 Mt (19 %) ; leur minéral est l’apatite.",
+      "L’or de Tasiast (Inchiri), découvert en 1994 et exploité depuis 2007 à ciel ouvert, a une faible teneur (environ 2,5 g/t) et des réserves d’environ 8,9 millions d’onces.",
+      "Le sel est extrait de façon artisanale à N’Terert et à Idjil ; le gypse de Sebkha N’Drhamcha est l’un des plus grands gisements du monde ; le falun de Nouakchott sert à la construction.",
+      "Les indices : Mauritanides (cuivre, fer, terres rares, tungstène, chrome, or, cobalt), bassin côtier (phosphates, halite, gypse), Taoudéni (phosphates, cuivre, barytine), Rgueïbat (plomb, zinc, cuivre, étain, or, uranium), tourbe de Keur Massène."
+     ]
+    },
     {
      "h": "Principaux gisements",
      "lines": [],
@@ -2069,6 +3008,32 @@
      "lines": [
       "(Correction : page 202, la production de Tasiast est donnée « de 250 onces d’or par an » ; il s’agit de centaines de milliers d’onces par an, environ 250 000 onces.)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Fer : hématite (Idjil, 65-68 %) et magnétite (guelbs, 37 %).",
+      "Cuivre d’Akjoujt : sulfuré 1,8 %, oxydé 2,7 %.",
+      "Or de Tasiast : ≈ 2,5 g/t.",
+      "Phosphates de Bofal : apatite.",
+      "Sel, gypse, falun ; nombreux indices."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’appelle-t-on « chapeau de fer » ?",
+      "→ Réponse : La croûte ferrugineuse (0 à 15 m) formée par l’oxydation superficielle du gisement de cuivre.",
+      "Exemple 2 : Par quelle ville le fer est-il exporté ?",
+      "→ Réponse : Par Nouadhibou, où il arrive par le train."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle masse de fer contient 1 000 t de minerai de la Kédia (68 %) et 1 000 t de minerai des guelbs (37 %) ?",
+      "→ Solution : 680 t contre 370 t : le minerai de la Kédia contient presque deux fois plus de fer."
+     ]
     }
    ]
   },
@@ -2110,6 +3075,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le pétrole s’accumule-t-il au sommet des anticlinaux ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La matière première du pétrole est faite des restes de micro-organismes marins, de plancton et de végétaux qui se déposent au fond des eaux pauvres en oxygène (estuaires, lagunes, bassins fermés) avec des sédiments fins.",
+      "Lors de l’enfouissement, une partie de la matière organique échappe à l’oxydation et devient du kérogène dans une roche sédimentaire argilo-calcaire : la roche-mère.",
+      "Vers 2 000 m de profondeur (environ 65 °C), la température et la pression provoquent le craquage du kérogène en hydrocarbures ; à plus de 4 000 à 5 000 m se forment surtout des gaz.",
+      "Moins denses que l’eau, les hydrocarbures migrent vers le haut ; ils sont arrêtés par une roche imperméable (roche de couverture) et s’accumulent dans une roche poreuse ou fissurée, la roche-réservoir (porosité de 20 à 25 % au mieux), le plus souvent dans un anticlinal : c’est un piège, où se superposent gaz, pétrole et eau.",
+      "La prospection utilise la sismique (réflexion, réfraction) qui envoie des ondes et enregistre leurs échos sur les couches, puis la diagraphie ; seul un forage d’exploration (derrick, trépan, boue de forage, carottage) confirme la présence de pétrole.",
+      "Le pétrole remonte seul sous la pression du gaz (tête de puits ou « arbre de Noël ») ou est pompé.",
+      "Le raffinage comprend la distillation atmosphérique (environ 400 °C, tour de 60 m : gaz, essences, naphta, kérosène, gazole, coupes lourdes), la distillation sous vide (gazole, fioul lourd, résidus pour lubrifiants) et le craquage (environ 500 °C avec catalyseur) qui casse les molécules lourdes."
+     ]
+    },
     {
      "h": "Les roches du système pétrolier",
      "lines": [],
@@ -2161,6 +3144,32 @@
        "molécules plus légères"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Roche-mère : kérogène → hydrocarbures (≈ 2 000 m, 65 °C).",
+      "Migration vers le haut ; piège sous une roche de couverture.",
+      "Roche-réservoir poreuse ; gaz / pétrole / eau.",
+      "Prospection sismique, diagraphie, forage.",
+      "Raffinage : distillations et craquage."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi faut-il forer même après une étude sismique ?",
+      "→ Réponse : La sismique montre un piège mais ne prouve pas qu’il contient du pétrole.",
+      "Exemple 2 : À quoi sert le craquage ?",
+      "→ Réponse : À casser les molécules lourdes en molécules plus légères, plus demandées."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans un piège anticlinal, dans quel ordre trouve-t-on gaz, pétrole et eau ? Pourquoi ?",
+      "→ Solution : De haut en bas : gaz, pétrole, eau, car ils se rangent par densité croissante."
+     ]
     }
    ]
   },
@@ -2202,6 +3211,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "L’eau des nappes est-elle une ressource renouvelable ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’eau de pluie ruisselle ou s’infiltre ; elle circule dans les pores et les fissures des roches perméables (aquifères) et s’arrête sur une couche imperméable, le mur : la masse d’eau forme une nappe.",
+      "La nappe phréatique, peu profonde (1 à 20 m), est libre et réalimentée par l’infiltration des pluies : c’est une ressource renouvelable mais vulnérable à la pollution.",
+      "La nappe captive, entre deux couches imperméables, est sous pression et se renouvelle très lentement.",
+      "Les eaux de surface de la Mauritanie viennent surtout du fleuve Sénégal et de ses affluents (Karakoro, Gorgol) ; la production interne n’est que de 0,1 km³ et 405 retenues (barrages, digues) mobilisent les eaux temporaires.",
+      "Le barrage de Manantali stocke 11 milliards de m³ et maintient 300 m³/s à Bakel ; celui de Diama a un réservoir de 250 millions de m³ depuis 1986.",
+      "Les eaux souterraines sont surtout des eaux « fossiles » infiltrées pendant les phases humides du Quaternaire récent.",
+      "On distingue : le bassin côtier sénégalo-mauritanien (nappes du Continental Terminal, de Boulanouar — phréatique douce et sub-phréatique salée —, de Benichab, du Trarza, d’Aleg, de Kaédi et des alluvions du fleuve) ; le bassin de Taoudéni (aquifères de l’Adrar, du Tagant, de l’Assaba, de l’Aouker, d’Aïoun, du Hodh, du Dhar de Néma) ; la chaîne des Mauritanides (zone d’Akjoujt, débits d’environ 30 m³/h) ; la dorsale Rgueïbat, aux aquifères discontinus rechargés par les crues et aux eaux souvent saumâtres."
+     ]
+    },
     {
      "h": "Types de nappes",
      "lines": [],
@@ -2247,6 +3274,32 @@
        "Dorsale Rgueïbat",
        "aquifères discontinus, eaux souvent saumâtres"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Aquifère : roche perméable ; mur : couche imperméable.",
+      "Nappe phréatique libre et renouvelable ; nappe captive sous pression.",
+      "Eaux de surface : fleuve Sénégal, Manantali, Diama.",
+      "Eaux souterraines surtout fossiles.",
+      "4 unités hydrogéologiques."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel barrage maintient le débit du fleuve à Bakel ?",
+      "→ Réponse : Le barrage de Manantali (environ 300 m³/s).",
+      "Exemple 2 : Qu’appelle-t-on eaux « fossiles » ?",
+      "→ Réponse : Des eaux souterraines infiltrées pendant les phases humides du Quaternaire récent, peu renouvelées aujourd’hui."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi une nappe phréatique est-elle plus vulnérable qu’une nappe captive ?",
+      "→ Solution : Elle est libre et proche de la surface : les polluants s’y infiltrent directement, alors que la nappe captive est protégée par une couche imperméable."
      ]
     }
    ],

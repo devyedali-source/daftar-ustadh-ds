@@ -41,6 +41,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "On dirige une lampe vers un miroir, un verre d’eau, puis une feuille noire : que devient la lumière dans chaque cas ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Selon l’objet rencontré, la lumière est réfléchie (miroir), transmise (vitre, eau) ou absorbée (feuille noire, qui s’échauffe).",
+      "Dans un milieu homogène, elle se propage en ligne droite.",
+      "Réflexion : le rayon réfléchi est dans le plan d’incidence (contenant le rayon incident et la normale) et l’angle de réflexion est égal à l’angle d’incidence (i = r), angles mesurés par rapport à la normale.",
+      "L’image d’un objet dans un miroir plan est virtuelle, symétrique de l’objet par rapport au miroir, de même taille."
+     ]
+    },
+    {
      "h": "I. Comportement de la lumière",
      "lines": [
       "Miroir : lumière réfléchie ; verre d’eau : transmise ; feuille noire : absorbée (chaleur)."
@@ -58,6 +73,31 @@
      "h": "III. Image dans un miroir plan",
      "lines": [
       "L’image est virtuelle, symétrique de l’objet par rapport au miroir, de même taille."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Lumière réfléchie, transmise ou absorbée.",
+      "Propagation rectiligne dans un milieu homogène.",
+      "Réflexion : i = r, mesurés par rapport à la normale.",
+      "Miroir plan : image virtuelle, symétrique, même taille."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Citer trois objets qui réfléchissent la lumière.",
+      "→ Réponse : Miroir, eau calme, métal poli.",
+      "Exemple 2 : Une image dans un miroir est-elle réelle ou virtuelle ?",
+      "→ Réponse : Virtuelle."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un rayon arrive sur un miroir avec un angle d’incidence de 35° : angle de réflexion ?",
+      "→ Solution : r = i = 35°."
      ]
     }
    ]
@@ -100,6 +140,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Une cuillère plongée dans un verre d’eau semble cassée : illusion ou phénomène physique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La réfraction est le changement de direction de la lumière quand elle passe d’un milieu transparent à un autre de propriétés optiques différentes ; la surface de séparation est un dioptre.",
+      "Elle s’explique par le changement de vitesse de la lumière.",
+      "L’indice de réfraction n = c/v (c = 3·10⁸ m/s) : vide et air 1 ; eau 1,33 ; glace 1,31 ; verre 1,5 ; diamant 2,4.",
+      "Plus n est grand, plus la lumière est ralentie.",
+      "En passant dans un milieu plus réfringent, le rayon se rapproche de la normale (loi de Descartes : n₁ sin i₁ = n₂ sin i₂).",
+      "Quand la lumière passe d’un milieu plus réfringent à un milieu moins réfringent sous une incidence assez grande, elle est entièrement réfléchie : c’est la réflexion totale (fibres optiques)."
+     ]
+    },
     {
      "h": "I. Observation",
      "lines": [
@@ -149,6 +206,32 @@
       "n₁ sin i₁ = n₂ sin i₂ ; vers un milieu plus réfringent, le rayon se rapproche de la normale.",
       "Réflexion totale : la lumière passe d’un milieu plus réfringent à un milieu moins réfringent avec une grande incidence."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Réfraction : changement de direction entre deux milieux.",
+      "n = c/v ; c = 3·10⁸ m/s.",
+      "n(eau) = 1,33 ; n(verre) = 1,5 ; n(diamant) = 2,4.",
+      "n₁ sin i₁ = n₂ sin i₂.",
+      "Réflexion totale : du milieu le plus réfringent vers le moins réfringent."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Vrai ou faux : un rayon qui passe de l’air au verre accélère.",
+      "→ Réponse : Faux : il ralentit (n plus grand).",
+      "Exemple 2 : Pourquoi un objet dans l’eau semble-t-il déplacé ?",
+      "→ Réponse : À cause de la réfraction de la lumière à la surface de l’eau."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vitesse de la lumière dans le verre (n = 1,5) ?",
+      "→ Solution : v = c/n = 3·10⁸/1,5 = 2·10⁸ m/s."
+     ]
     }
    ]
   },
@@ -190,6 +273,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "D’où viennent les couleurs de l’arc-en-ciel alors que le Soleil paraît blanc ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La lumière blanche est polychromatique : elle contient toutes les couleurs du spectre visible.",
+      "Newton l’a décomposée avec un prisme en un spectre allant du rouge au violet (rouge, orangé, jaune, vert, bleu, indigo, violet) : c’est la dispersion.",
+      "Une lumière monochromatique n’a qu’une couleur (laser), une lumière polychromatique en a plusieurs (Soleil, lampe à incandescence).",
+      "L’arc-en-ciel résulte de la réfraction et de la réflexion de la lumière du Soleil dans les gouttes d’eau.",
+      "Au-delà du visible : les ultraviolets (bronzage, coups de soleil, stérilisation), les infrarouges (chaleur, télécommandes, caméras thermiques) et les rayons X (radiographie), dont il faut se protéger."
+     ]
+    },
     {
      "h": "I. Dispersion par un prisme",
      "lines": [
@@ -235,6 +334,32 @@
        "limiter les expositions, protection en plomb"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Lumière blanche = mélange de couleurs (polychromatique).",
+      "Prisme : dispersion du rouge au violet.",
+      "Monochromatique (laser) / polychromatique (Soleil).",
+      "Arc-en-ciel : réfraction + réflexion dans les gouttes.",
+      "UV, IR, rayons X : effets et précautions."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Vrai ou faux : un prisme fabrique les couleurs.",
+      "→ Réponse : Faux : il sépare les couleurs déjà présentes dans la lumière blanche.",
+      "Exemple 2 : Citer une source monochromatique.",
+      "→ Réponse : Un laser."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pourquoi dit-on que la lumière blanche est polychromatique ?",
+      "→ Solution : Parce qu’un prisme la décompose en plusieurs couleurs."
+     ]
     }
    ]
   },
@@ -276,6 +401,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pour tirer un seau d’un puits, quelles forces agissent sur le seau ?"
+     ]
+    },
+    {
      "h": "I. Effets d’une force",
      "lines": [
       "Mettre en mouvement, modifier un mouvement, déformer."
@@ -301,6 +432,31 @@
       "Même direction, même sens : R = F₁ + F₂.",
       "Même direction, sens contraires : R = |F₁ − F₂|.",
       "Perpendiculaires : R = √(F₁² + F₂²)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Effets : mouvement ou déformation.",
+      "Caractéristiques : point d’application, direction, sens, valeur (N).",
+      "Poids P = m·g.",
+      "Résultante : même sens F₁ + F₂ ; sens contraires |F₁ − F₂| ; perpendiculaires √(F₁² + F₂²)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Deux forces de 30 N et 40 N perpendiculaires : résultante ?",
+      "→ Réponse : R = √(900 + 1600) = 50 N.",
+      "Exemple 2 : Forces sur un seau suspendu à une corde ?",
+      "→ Réponse : Le poids (vers le bas) et la tension de la corde (vers le haut)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Poids d’un sac de 5 kg (g = 10 N/kg) ?",
+      "→ Solution : P = m·g = 5 × 10 = 50 N."
      ]
     }
    ]
@@ -343,6 +499,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Archimède s’écria « Eurêka ! » dans son bain : qu’avait-il découvert ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un solide soumis à deux forces est en équilibre si elles ont même direction, des sens contraires et la même valeur.",
+      "Un solide suspendu à un ressort est en équilibre quand la tension T = k·Δl compense le poids : k·Δl = m·g.",
+      "Un solide soumis à trois forces est en équilibre si, placées bout à bout, elles forment un triangle fermé (somme nulle).",
+      "Un corps plongé dans un liquide subit une poussée verticale vers le haut égale au poids du liquide déplacé (principe d’Archimède) ; cela explique la flottaison et le poids apparent.",
+      "Pour un objet posé sur un plan : le poids (vertical, vers le bas) et la réaction du plan (perpendiculaire au plan, vers le haut s’il n’y a pas de frottement)."
+     ]
+    },
+    {
      "h": "I. Condition d’équilibre (deux forces)",
      "lines": [
       "F₁→ + F₂→ = 0→ : même droite d’action, sens contraires, même valeur."
@@ -365,6 +537,31 @@
      "lines": [
       "Le roi Hiéron et la couronne : Archimède compare les volumes d’eau déplacés.",
       "Tout corps plongé dans un liquide subit une poussée verticale, vers le haut, égale au poids du liquide déplacé."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Deux forces : même direction, sens contraires, même valeur.",
+      "Ressort : k·Δl = m·g.",
+      "Trois forces : triangle fermé.",
+      "Archimède : poussée = poids du liquide déplacé."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Deux forces de même direction, même sens et même valeur peuvent-elles équilibrer un solide ?",
+      "→ Réponse : Non : il faut des sens contraires.",
+      "Exemple 2 : Que signifie « Eurêka » ?",
+      "→ Réponse : « J’ai trouvé ! »"
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un ressort (k = 50 N/m) porte une masse de 200 g (g = 10) : allongement ?",
+      "→ Solution : k·Δl = m·g ⇒ Δl = 0,2 × 10/50 = 0,04 m = 4 cm."
      ]
     }
    ]
@@ -407,6 +604,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment mesurer ce qui « circule » dans un fil électrique ?"
+     ]
+    },
+    {
      "h": "I. Intensité du courant",
      "lines": [
       "Symbole I, unité ampère (A), mesure à l’ampèremètre branché en série.",
@@ -425,6 +628,31 @@
      "lines": [
       "Série : même intensité en tout point.",
       "Dérivation : même tension aux bornes des branches ; l’intensité principale est la somme des intensités des branches."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "I en ampères (A), ampèremètre en série.",
+      "I = Q/t ; N = Q/e.",
+      "U en volts (V), voltmètre en dérivation.",
+      "Tension ≈ 0 aux bornes d’un fil."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Unité de l’intensité ? Appareil ?",
+      "→ Réponse : L’ampère ; l’ampèremètre, branché en série.",
+      "Exemple 2 : Comment mesure-t-on une tension ?",
+      "→ Réponse : Avec un voltmètre branché en dérivation."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une pile débite 0,5 A pendant 10 min : charge et nombre d’électrons ?",
+      "→ Solution : Q = I·t = 0,5 × 600 = 300 C ; N = 300/1,6·10⁻¹⁹ ≈ 1,9·10²¹ électrons."
      ]
     }
    ]
@@ -467,6 +695,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un fusible « saute »-t-il ?"
+     ]
+    },
+    {
      "h": "I. Effet thermique",
      "lines": [
       "Expérience : fil de fer fin parcouru par le courant : il chauffe et peut rougir.",
@@ -491,6 +725,31 @@
      "h": "IV. Sécurité",
      "lines": [
       "Dangers pour le corps humain ; protection par fusibles, disjoncteurs, prises de terre ; ne jamais toucher un fil dénudé."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Effet thermique : échauffement (radiateur, fusible).",
+      "Effet magnétique : boussole déviée (électroaimant, moteur).",
+      "Effet chimique : électrolyse (galvanoplastie, batteries).",
+      "Sécurité : fusible, disjoncteur, prise de terre."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel effet utilise un électroaimant ?",
+      "→ Réponse : L’effet magnétique.",
+      "Exemple 2 : Qu’est-ce que la galvanoplastie ?",
+      "→ Réponse : Le dépôt d’une fine couche de métal sur un objet par électrolyse."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "À quel effet est dû le fonctionnement d’un fer à repasser ?",
+      "→ Solution : À l’effet thermique du courant."
      ]
     }
    ]
@@ -534,6 +793,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "De quoi est faite la matière, à la plus petite échelle ?"
+     ]
+    },
+    {
      "h": "I. L’atome",
      "lines": [
       "Noyau : protons (+e) et neutrons (0) ; électrons (−e) autour.",
@@ -559,6 +824,32 @@
      "lines": [
       "Liaison covalente : doublet partagé ; H₂O : H–O–H.",
       "Ions monoatomiques : Na⁺, Mg²⁺, Cl⁻, O²⁻."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Noyau (protons + neutrons) ; électrons.",
+      "e = 1,6·10⁻¹⁹ C ; m(nucléon) ≈ 1,67·10⁻²⁷ kg.",
+      "Z, A, N = A − Z ; isotopes.",
+      "Couches K (2), L (8), M.",
+      "Molécules (liaisons covalentes) ; ions (cations, anions)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de neutrons dans ³⁵₁₇Cl ?",
+      "→ Réponse : N = 35 − 17 = 18.",
+      "Exemple 2 : Quel ion forme le chlore ?",
+      "→ Réponse : Cl⁻ (il gagne un électron pour avoir l’octet)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Structure électronique du sodium (Z = 11) et ion formé ?",
+      "→ Solution : (K)²(L)⁸(M)¹ ; il perd 1 électron : Na⁺."
      ]
     }
    ]
@@ -602,6 +893,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Combien de molécules dans une gorgée d’eau ? Trop pour les compter : on utilise la mole."
+     ]
+    },
+    {
      "h": "I. La mole",
      "lines": [
       "1 mol = 6,02·10²³ entités ; NA = 6,02·10²³."
@@ -631,6 +928,32 @@
      "h": "V. Calcul de prévision",
      "lines": [
       "CH₄ + 2O₂ → CO₂ + 2H₂O : 1 mol de méthane consomme 2 mol de dioxygène."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "1 mol = 6,02·10²³ particules.",
+      "M(H₂O) = 2 × 1 + 16 = 18 g/mol.",
+      "n = m/M.",
+      "Vm = 22,4 L/mol (0 °C) ; 24 L/mol (20 °C).",
+      "Proportionnalité aux coefficients."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Masse de 0,5 mol de CO₂ ?",
+      "→ Réponse : m = 0,5 × 44 = 22 g.",
+      "Exemple 2 : Volume de 3 mol de gaz à 0 °C ?",
+      "→ Réponse : V = 3 × 22,4 = 67,2 L."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quantité de matière dans 36 g d’eau ?",
+      "→ Solution : n = 36/18 = 2 mol."
      ]
     }
    ]

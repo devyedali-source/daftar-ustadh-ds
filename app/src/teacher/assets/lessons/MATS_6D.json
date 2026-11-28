@@ -42,6 +42,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "P(x) = x⁴ + 1 et Q(x) = (x² + √2x + 1)(x² − √2x + 1) prennent les mêmes valeurs en 0, 1, −1 et 2. Sont-ils égaux pour tout x ?"
+     ]
+    },
+    {
      "h": "Opérations",
      "lines": [
       "P(x) = x³ + x − 1, Q(x) = x² + 1 : (P ∘ Q)(x) = (x² + 1)³ + (x² + 1) − 1 = x⁶ + 3x⁴ + 4x² + 1 ; degré 6 = 3 × 2."
@@ -67,6 +73,32 @@
      "lines": [
       "Degré 1 : toujours irréductibles. x² + 1 irréductible ; x² − 2 = (x − √2)(x + √2) réductible ; ax² + bx + c irréductible ⇔ Δ < 0.",
       "Forme canonique : ax² + bx + c = a[(x + b/2a)² − Δ/4a²]."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "deg(PQ) = deg P + deg Q ; deg(P ∘ Q) = deg P × deg Q.",
+      "Égalité de polynômes ⇔ mêmes coefficients.",
+      "P = QS + R, deg R < deg Q.",
+      "P(x₀) = 0 ⇒ P(x) = (x − x₀)Q(x).",
+      "Méthodes : identification, division, Hörner."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel est le degré de (2x³ − 1)(x² + x) ?",
+      "→ Réponse : 3 + 2 = 5.",
+      "Exemple 2 : Montrer que x − 1 divise x³ − 6x² + 11x − 6.",
+      "→ Réponse : 1 − 6 + 11 − 6 = 0 ; x³ − 6x² + 11x − 6 = (x − 1)(x − 2)(x − 3)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Factoriser P(x) = x³ − 4x² + x + 6 sachant que P(2) = 0.",
+      "→ Solution : P(x) = (x − 2)(x² + ax + b) ; par identification a − 2 = −4 et −2b = 6 ⇒ a = −2, b = −3 ; x² − 2x − 3 = (x − 3)(x + 1) ⇒ P(x) = (x − 2)(x − 3)(x + 1)."
      ]
     }
    ]
@@ -109,6 +141,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Peut-on écrire (5x² − 7x + 4)/(x − 1) comme un polynôme plus une fraction plus simple ?"
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "M(x) = (3x³ − 2x² + x − 6)/[x(x + 2)(x − 3)] = 3 + 1/x − 4/(x + 2) + 4/(x − 3).",
@@ -127,6 +165,31 @@
      "lines": [
       "x³ − 6x² + 11x − 6 = 0 de racines p, q, r : p + q + r = 6, pq + pr + qr = 11, pqr = 6 ⇒ 1/p + 1/q + 1/r = 11/6.",
       "Racine évidente 1 ⇒ (x − 1)(x² − 5x + 6) = 0 ⇒ S = {1 ; 2 ; 3}."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "F = P/Q ; zéros de P, pôles de Q.",
+      "Partie polynômiale : quotient de la division de P par Q.",
+      "Éléments simples : a/(x − α)ⁱ, (ax + b)/(x² + αx + β)ʲ.",
+      "Coefficients : identification ou valeurs particulières."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pôles de (x + 1)/(x² − 4) ?",
+      "→ Réponse : 2 et −2.",
+      "Exemple 2 : Décomposer 1/[(x − 1)(x + 1)].",
+      "→ Réponse : 1/(2(x − 1)) − 1/(2(x + 1))."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écrire R(x) = (5x² − 7x + 4)/(x − 1) sous la forme ax + b + c/(x − 1).",
+      "→ Solution : Identification : a = 5, −a + b = −7 ⇒ b = −2, −b + c = 4 ⇒ c = 2 ; R(x) = 5x − 2 + 2/(x − 1)."
      ]
     }
    ],
@@ -220,6 +283,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment trouver deux nombres dont la somme est s et le produit p ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "ax + b = 0 : si a ≠ 0, S = {−b/a} ; si a = 0 et b = 0, S = ℝ ; si a = 0 et b ≠ 0, S = ∅. ax² + bx + c = 0 (a ≠ 0) : Δ = b² − 4ac (ou Δ’ = (b/2)² − ac) ; Δ < 0 : ∅ ; Δ = 0 : {−b/2a} ; Δ > 0 : x₁,₂ = (−b ± √Δ)/2a = (−b’ ± √Δ’)/a.",
+      "Somme −b/a, produit c/a ; si a + b + c = 0, racines 1 et c/a ; si a − b + c = 0, racines −1 et −c/a. x + y = s et xy = p ⇒ x, y racines de X² − sX + p = 0. x² = k : pas de solution si k < 0, {0} si k = 0, {−√k ; √k} si k > 0.",
+      "Bicarrée ax⁴ + bx² + c = 0 : on pose X = x².",
+      "Le signe d’un binôme et d’un trinôme se lit dans un tableau (trinôme du signe de a à l’extérieur des racines)."
+     ]
+    },
+    {
      "h": "Tableau des cas",
      "lines": [],
      "table": [
@@ -243,6 +321,32 @@
        "x₁ et x₂",
        "signe de a hors de [x₁ ; x₂], contraire entre"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Δ = b² − 4ac ; Δ’ = b’² − ac.",
+      "S = −b/a ; P = c/a.",
+      "X² − sX + p = 0.",
+      "Bicarrée : X = x².",
+      "Trinôme : signe de a sauf entre les racines."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre 2x² + 3x − 5 = 0 sans Δ.",
+      "→ Réponse : a + b + c = 0 ⇒ 1 et −5/2.",
+      "Exemple 2 : Deux nombres de somme 5 et produit 6 ?",
+      "→ Réponse : X² − 5X + 6 = 0 ⇒ 2 et 3."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre x⁴ − x² − 12 = 0.",
+      "→ Solution : X = x² : X² − X − 12 = 0 ⇒ X = 4 ou X = −3 ; x² = 4 ⇒ x = ±2 (x² = −3 impossible). S = {−2 ; 2}."
      ]
     }
    ]
@@ -285,6 +389,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Trois équations, trois inconnues : par où commencer ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour {ax + by = c ; a’x + b’y = c’}, Δ = ab’ − a’b : si Δ ≠ 0, solution unique (droites sécantes) ; si Δ = 0, aucune solution (droites strictement parallèles) ou une infinité (droites confondues).",
+      "Un système d’inéquations linéaires à deux inconnues se résout graphiquement (demi-plans).",
+      "Un système de trois équations à trois inconnues se résout par substitution ou par la méthode du pivot de Gauss (rendre le système triangulaire).",
+      "Une inéquation ax + by + cz + d > 0 définit un demi-espace de frontière le plan d’équation ax + by + cz + d = 0."
+     ]
+    },
+    {
      "h": "Interprétation graphique",
      "lines": [],
      "table": [
@@ -315,6 +434,31 @@
      "lines": [
       "{u − 4v + 2w = −7 ; −u + 5v − 3w = 6 ; 2u − v + w = 4} : L₂ ← L₂ + L₁ ; L₃ ← L₃ − 2L₁ ; L₃ ← L₃ − 7L₂.",
       "Système triangulaire : u − 4v + 2w = −7 ; v − w = −1 ; 4w = 25 ⇒ w = 25/4, v = 21/4, u = 3/2."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Δ ≠ 0 : solution unique ; Δ = 0 : aucune ou infinité.",
+      "Graphiquement : intersection de deux droites.",
+      "3 × 3 : substitution ou pivot de Gauss.",
+      "Inéquations : demi-plans, demi-espaces."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Le système {2x + 4y = 1 ; x + 2y = 3} a-t-il des solutions ?",
+      "→ Réponse : Δ = 0 et les droites sont parallèles distinctes : aucune solution.",
+      "Exemple 2 : Que représente l’ensemble des solutions de x + y + z ≤ 1 ?",
+      "→ Réponse : Un demi-espace limité par le plan x + y + z = 1."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre {x + y − 2z = −7 ; 2x − y + z = 0 ; 2x + y + z = 8}.",
+      "→ Solution : De (E₂) : z = −2x + y ; on remplace : 5x − y = −7 et 2y = 8 ⇒ y = 4, x = −3/5, z = 26/5."
      ]
     }
    ]
@@ -358,6 +502,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Peut-on « ranger » un système d’équations dans un tableau de nombres et le résoudre en une seule opération ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une matrice n × m est un tableau de n lignes et m colonnes ; aᵢⱼ est l’élément de la ligne i, colonne j ; si n = m elle est carrée.",
+      "Matrices particulières : identité I, diagonale, triangulaires.",
+      "Opérations : somme (terme à terme, commutative), produit par un réel, transposée (lignes ↔ colonnes), produit matriciel A(n × m) · B(m × p) = C(n × p) avec cᵢⱼ = ligne i de A · colonne j de B (associatif, distributif, non commutatif ; (AB)ᵗ = BᵗAᵗ).",
+      "Une matrice carrée A est inversible s’il existe A⁻¹ avec AA⁻¹ = A⁻¹A = I.",
+      "Un système s’écrit AX = K ; Cramer : x₁ = det(A₁)/det(A), x₂ = det(A₂)/det(A) où Aᵢ est A avec la i-ème colonne remplacée par K ; et si A est inversible, X = A⁻¹K."
+     ]
+    },
+    {
      "h": "Opérations (exemples)",
      "lines": [
       "2 × [1 2 0 ; 4 3 −1] = [2 4 0 ; 8 6 −2].",
@@ -370,6 +530,32 @@
      "lines": [
       "On écrit [A | I] et on fait des opérations sur les lignes jusqu’à [I | A⁻¹].",
       "Pour A = [1 −4 2 ; −1 5 −3 ; 2 −1 1] : A⁻¹ = (1/4)[2 2 2 ; −5 −3 1 ; −9 −7 1] et X = A⁻¹K = (3/2 ; 21/4 ; 25/4)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Format n × m ; aᵢⱼ.",
+      "Produit : ligne × colonne ; non commutatif.",
+      "det [a b ; c d] = ad − bc.",
+      "Cramer : xᵢ = det Aᵢ / det A.",
+      "AX = K ⇒ X = A⁻¹K."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : det [2 3 ; 7 −4] ?",
+      "→ Réponse : −8 − 21 = −29.",
+      "Exemple 2 : Le produit matriciel est-il commutatif ?",
+      "→ Réponse : Non : en général AB ≠ BA."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre par Cramer {3x − 2y = 4 ; 5x + 7y = −2}.",
+      "→ Solution : det A = 21 + 10 = 31 ; det A₁ = 28 − 4 = 24 ; det A₂ = −6 − 20 = −26 ⇒ x = 24/31, y = −26/31."
      ]
     }
    ]
@@ -411,10 +597,46 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pour quelles valeurs de m l’équation x² − 2mx + m + 2 = 0 a-t-elle deux racines distinctes ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les applications portent sur les équations du second degré avec paramètre, la somme et le produit des racines, les équations bicarrées et irrationnelles, les inéquations (tableaux de signes), les systèmes linéaires (substitution, combinaison, Cramer, Gauss), les systèmes d’inéquations (résolution graphique) et le calcul matriciel (produits, inverses, résolution matricielle)."
+     ]
+    },
+    {
      "h": "Méthode générale",
      "lines": [
       "1) Ramener l’équation à une forme connue ; 2) discuter selon le paramètre ; 3) vérifier ; 4) conclure.",
       "Systèmes : écrire sous forme matricielle AX = K puis choisir Cramer (2 × 2) ou Gauss (3 × 3)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Paramètre : discuter selon le signe de Δ(m).",
+      "Vérifier les solutions d’une équation irrationnelle.",
+      "Contrôler un système en remplaçant la solution."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre √(x + 2) = x.",
+      "→ Réponse : x + 2 = x² avec x ≥ 0 ⇒ x = 2 (−1 rejeté).",
+      "Exemple 2 : Résoudre {x + y + z = 6 ; x − y = 0 ; y − z = −1}.",
+      "→ Réponse : x = y, z = y + 1 ⇒ 3y + 1 = 6 ⇒ y = 5/3 = x, z = 8/3."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "x² − 2mx + m + 2 = 0 : condition pour deux racines distinctes.",
+      "→ Solution : Δ’ = m² − m − 2 = (m − 2)(m + 1) > 0 ⇔ m < −1 ou m > 2."
      ]
     }
    ],
@@ -502,6 +724,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La suite U0 = 2, Un+1 = (Un + 1)/Un : peut-on calculer U3 sans formule explicite ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une suite numérique est une fonction de ℕ (ou d’une partie de ℕ) dans ℝ ; elle est définie explicitement (Un = f(n)) ou par récurrence (U0 et Un+1 = f(Un)).",
+      "On la représente par les points (n ; Un) ou, pour une suite récurrente, à l’aide de la courbe de f et de la droite y = x.",
+      "Croissante si Un+1 ≥ Un, décroissante si Un+1 ≤ Un ; majorée, minorée, bornée.",
+      "Arithmétique : Un+1 = Un + r, Un = Up + (n − p)r, somme = nombre de termes × (premier + dernier)/2.",
+      "Géométrique : Un+1 = qUn, Un = Up qⁿ⁻ᵖ, somme = premier terme × (1 − q^nombre de termes)/(1 − q) (q ≠ 1)."
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "Un = n² − 2n + 1 : U2 = 1, U5 = 16, U12 = 121.",
@@ -533,6 +771,32 @@
        "N × (premier + dernier)/2",
        "premier × (1 − q^N)/(1 − q)"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Explicite / récurrente.",
+      "Sens de variation : signe de Un+1 − Un.",
+      "Arithmétique : Un = U0 + nr.",
+      "Géométrique : Un = U0 qⁿ.",
+      "Sommes de termes consécutifs."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Somme 1 + 2 + … + 100 ?",
+      "→ Réponse : 5050.",
+      "Exemple 2 : Un géométrique, U0 = 3, q = 2 : U5 ?",
+      "→ Réponse : 96."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "U0 = 2, Un+1 = (Un + 1)/Un : U1, U2 ?",
+      "→ Solution : U1 = 3/2 ; U2 = (3/2 + 1)/(3/2) = 5/3."
      ]
     }
    ]
@@ -576,6 +840,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment prouver qu’une propriété est vraie pour tous les entiers naturels sans les vérifier un par un ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Raisonnement par récurrence : initialisation (la propriété est vraie au rang n₀), hérédité (si elle est vraie au rang n, elle l’est au rang n + 1), conclusion.",
+      "Une suite converge si elle a une limite finie ; sinon elle diverge.",
+      "Les théorèmes sur les limites de fonctions s’appliquent ; qⁿ → 0 si |q| < 1, → +∞ si q > 1, diverge si q ≤ −1.",
+      "Comparaison : si Un ≤ Vn et lim Un = +∞, alors lim Vn = +∞ ; théorème des gendarmes.",
+      "Toute suite croissante et majorée (ou décroissante et minorée) converge.",
+      "Si Un+1 = f(Un) converge vers l et f est continue, alors l = f(l)."
+     ]
+    },
+    {
      "h": "Exemple",
      "lines": [
       "Un+1 = f(Un) avec |f’| ≤ 4/9 et f(2) = 2 : |Un − 2| ≤ (4/9)ⁿ ⇒ lim Un = 2."
@@ -585,6 +866,32 @@
      "h": "Suites adjacentes",
      "lines": [
       "(un) croissante, (vn) décroissante et lim (vn − un) = 0 : les deux suites sont adjacentes et convergent vers la même limite."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Récurrence : initialisation, hérédité, conclusion.",
+      "qⁿ → 0 si |q| < 1.",
+      "Gendarmes, comparaison.",
+      "Monotone et bornée ⇒ convergente.",
+      "Limite l d’une suite récurrente : l = f(l)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : lim (2/3)ⁿ ?",
+      "→ Réponse : 0.",
+      "Exemple 2 : Une suite croissante majorée par 5 converge-t-elle ?",
+      "→ Réponse : Oui, vers une limite l ≤ 5."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Montrer par récurrence que 1 + 2 + … + n = n(n + 1)/2.",
+      "→ Solution : n = 1 : 1 = 1 ; si vrai au rang n, la somme au rang n + 1 vaut n(n + 1)/2 + (n + 1) = (n + 1)(n + 2)/2."
      ]
     }
    ],
@@ -671,6 +978,20 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La courbe de f(x) = (3x² + 3x + 1)/(x + 2) semble avoir un « centre ». Comment le prouver ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une fonction numérique associe à tout x de son ensemble de définition Df une image f(x).",
+      "Polynôme : Df = ℝ ; fonction rationnelle : ℝ privé des zéros du dénominateur ; √(polynôme) : ensemble où le polynôme est positif ou nul.",
+      "Le point A(α ; β) est centre de symétrie de Cf si et seulement si, pour x ∈ Df, 2α − x ∈ Df et f(2α − x) + f(x) = 2β (ou f(α − x) + f(α + x) = 2β) ; la droite x = a est axe de symétrie si f(a − x) = f(a + x)."
+     ]
+    },
+    {
      "h": "Ensembles de définition",
      "lines": [
       "f₅(x) = …/(x³ − 6x² + 9x) : x(x − 3)² ≠ 0 ⇒ Df = ℝ \\ {0 ; 3}.",
@@ -683,6 +1004,31 @@
      "lines": [
       "f(x) = (3x² + 3x + 1)/(x + 2) = 3x − 3 + 7/(x + 2).",
       "A(−2 ; −9) : f(−4 − x) + f(x) = −3x − 15 − 7/(x + 2) + 3x − 3 + 7/(x + 2) = −18 = 2 × (−9) ⇒ A est centre de symétrie."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Df : dénominateur ≠ 0 ; radicande ≥ 0.",
+      "Centre A(α ; β) : f(2α − x) + f(x) = 2β.",
+      "Axe x = a : f(a − x) = f(a + x).",
+      "Paire : axe (Oy) ; impaire : centre O."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Montrer que Ω(1 ; 2) est centre de symétrie de f(x) = 2 + 3/(x − 1).",
+      "→ Réponse : f(2 − x) + f(x) = 2 − 3/(x − 1) + 2 + 3/(x − 1) = 4.",
+      "Exemple 2 : La droite x = 2 est-elle axe de symétrie de (x − 2)² ?",
+      "→ Réponse : Oui : f(2 − x) = f(2 + x) = x²."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Df de f(x) = √(x² − 7x + 10) ?",
+      "→ Solution : x² − 7x + 10 ≥ 0, racines 2 et 5 ⇒ Df = ]−∞ ; 2] ∪ [5 ; +∞[."
      ]
     }
    ]
@@ -726,6 +1072,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Que vaut (x² − 7x + 10)/(x² − 4) quand x tend vers 2 ? On obtient « 0/0 » : est-ce la fin du calcul ?"
+     ]
+    },
+    {
      "h": "Formes indéterminées (exemples)",
      "lines": [
       "lim (3x³ − 7x + 4)/(x² − 7x + 6) en 1 = lim (3x² + 3x − 4)/(x − 6) = −2/5.",
@@ -744,6 +1096,32 @@
      "h": "Trigonométrie",
      "lines": [
       "lim (2 sin x − 1)/(x − π/6) en π/6 : t = x − π/6 ⇒ lim (√3 sin t + cos t − 1)/t = √3."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Limite à gauche / à droite.",
+      "À l’infini : monômes de plus haut degré.",
+      "0/0 : factoriser ou multiplier par le conjugué.",
+      "lim sin x / x = 1 (x → 0).",
+      "Asymptotes verticale, horizontale, oblique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : lim (x³ − x² − x + 1)/(2x² − x − 1) en 1 ?",
+      "→ Réponse : (x − 1)²(x + 1)/[(x − 1)(2x + 1)] ⇒ 0.",
+      "Exemple 2 : lim (x² − 5x + 6)/(x − 4) en 4⁺ ?",
+      "→ Réponse : 2/0⁺ = +∞."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "lim (x² − 7x + 10)/(x² − 4) quand x → 2.",
+      "→ Solution : = lim (x − 2)(x − 5)/[(x − 2)(x + 2)] = lim (x − 5)/(x + 2) = −3/4."
      ]
     }
    ]
@@ -787,6 +1165,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une fonction continue qui passe d’une valeur négative à une valeur positive s’annule-t-elle forcément ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "f est continue en a si f est définie en a et lim f(x) = f(a) quand x → a ; elle est continue sur un intervalle si elle l’est en tout point.",
+      "Les polynômes, les fractions rationnelles (sur leur domaine), √x, sin et cos sont continues ; sommes, produits, quotients et composées de fonctions continues le sont aussi.",
+      "Si f n’est pas définie en a mais a une limite finie l en a, on peut la prolonger par continuité en posant f(a) = l.",
+      "Théorème des valeurs intermédiaires : si f est continue sur [a ; b], elle prend toute valeur comprise entre f(a) et f(b) ; si de plus f est strictement monotone et f(a)f(b) < 0, l’équation f(x) = 0 a une unique solution dans ]a ; b[.",
+      "L’image d’un intervalle par une fonction continue est un intervalle."
+     ]
+    },
+    {
      "h": "Continuité par morceaux",
      "lines": [
       "Pour une fonction définie par deux formules, on compare la limite à gauche, la limite à droite et la valeur au point de raccord."
@@ -796,6 +1190,32 @@
      "h": "Encadrement de la solution",
      "lines": [
       "Par dichotomie : on coupe l’intervalle en deux et on garde la moitié où f change de signe."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Continuité : lim f(x) = f(a).",
+      "Fonctions usuelles continues sur leur domaine.",
+      "Prolongement par continuité.",
+      "TVI : f continue, f(a)f(b) < 0 ⇒ une racine.",
+      "Strictement monotone ⇒ racine unique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Prolonger f(x) = (x² − 1)/(x − 1) par continuité en 1.",
+      "→ Réponse : lim f = 2 : on pose f(1) = 2.",
+      "Exemple 2 : f(x) = x³ − 3x + 1 a-t-elle une racine dans [0 ; 1] ?",
+      "→ Réponse : f(0) = 1 > 0 et f(1) = −1 < 0 ⇒ oui."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Montrer que x³ + x − 1 = 0 a une unique solution dans [0 ; 1].",
+      "→ Solution : f continue et strictement croissante (f’(x) = 3x² + 1 > 0) ; f(0) = −1 < 0, f(1) = 1 > 0 ⇒ une unique solution α ∈ ]0 ; 1[."
      ]
     }
    ],
@@ -888,12 +1308,52 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La courbe de |x² − 6x + 5| a-t-elle une tangente au point d’abscisse 5 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "f est dérivable en x₀ si [f(x) − f(x₀)]/(x − x₀) a une limite finie l quand x → x₀ ; l = f’(x₀) est le nombre dérivé et la tangente en A(x₀ ; f(x₀)) a pour équation y = f’(x₀)(x − x₀) + f(x₀). f est dérivable en x₀ si et seulement si elle est dérivable à gauche et à droite avec f’_g(x₀) = f’_d(x₀).",
+      "Si les nombres dérivés à gauche et à droite sont différents, la courbe a deux demi-tangentes (point anguleux).",
+      "Si le taux d’accroissement tend vers ±∞, la courbe a une (demi-)tangente parallèle à l’axe des ordonnées.",
+      "Une fonction dérivable en x₀ est continue en x₀."
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "g(x) = |x² − 6x + 5| en 5 : à gauche −(x − 1) → −4, à droite (x − 1) → 4 ⇒ non dérivable ; demi-tangentes y = −4(x − 5) et y = 4(x − 5).",
       "f(x) = |x² − 1| en 1 : f’_g(1) = −2, f’_d(1) = 2 ⇒ point anguleux.",
       "f(x) = √x en 0 : 1/√x → +∞ ⇒ demi-tangente verticale.",
       "f(x) = √(x² − 4x + 3) en 3⁺ : (x − 1)/√(x² − 4x + 3) → +∞ ⇒ demi-tangente verticale en (3 ; 0)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "f’(x₀) = lim [f(x) − f(x₀)]/(x − x₀).",
+      "Tangente : y = f’(x₀)(x − x₀) + f(x₀).",
+      "f’_g ≠ f’_d : point anguleux.",
+      "Taux → ±∞ : demi-tangente verticale."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : f(x) = |x| est-elle dérivable en 0 ?",
+      "→ Réponse : Non : f’_g(0) = −1 ≠ f’_d(0) = 1.",
+      "Exemple 2 : Équation de la tangente à √x en 4 ?",
+      "→ Réponse : f’(4) = 1/4 ⇒ y = (x − 4)/4 + 2 = x/4 + 1."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Tangente à f(x) = x² + x − 3 en x₀ = 2.",
+      "→ Solution : f(2) = 3 ; [f(x) − 3]/(x − 2) = (x + 3) → 5 ⇒ y = 5x − 7."
      ]
     }
    ]
@@ -937,6 +1397,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment prouver qu’une suite définie par Un+1 = f(Un) se rapproche de 2 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dérivées usuelles : (xⁿ)’ = nxⁿ⁻¹ ; (1/x)’ = −1/x² ; (√x)’ = 1/(2√x) ; (sin x)’ = cos x ; (cos x)’ = −sin x ; opérations (u + v)’, (uv)’ = u’v + uv’, (u/v)’ = (u’v − uv’)/v², (uⁿ)’ = nu’uⁿ⁻¹, (√u)’ = u’/(2√u), (v ∘ u)’ = u’ × v’ ∘ u.",
+      "Si f’ > 0 sur I, f est strictement croissante ; si f’ < 0, strictement décroissante ; si f’ s’annule en changeant de signe, f a un extremum.",
+      "Inégalité des accroissements finis : si |f’(x)| ≤ k sur I, alors |f(b) − f(a)| ≤ k|b − a|.",
+      "Une fonction continue et strictement monotone sur I réalise une bijection de I sur f(I) ; sa réciproque a une courbe symétrique par rapport à y = x et (f⁻¹)’(x) = 1/f’(f⁻¹(x)) là où f’ ≠ 0.",
+      "Si f’’ ≥ 0 sur I, la courbe est convexe (au-dessus de ses tangentes) ; un changement de signe de f’’ donne un point d’inflexion."
+     ]
+    },
+    {
      "h": "Fonction réciproque (exemple)",
      "lines": [
       "g continue et strictement croissante sur [2 ; +∞[ ⇒ bijection sur [−1 ; +∞[ ; g’(2) = 0 ⇒ g⁻¹ non dérivable en −1.",
@@ -947,6 +1423,32 @@
      "h": "Dérivée seconde",
      "lines": [
       "f’’ > 0 : concavité vers le haut ; f’’ < 0 : vers le bas ; f’’ s’annule en changeant de signe : point d’inflexion."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "(uv)’, (u/v)’, (uⁿ)’, (√u)’, (v ∘ u)’.",
+      "Signe de f’ ⇒ variations ; extremums.",
+      "|f’| ≤ k ⇒ |f(b) − f(a)| ≤ k|b − a|.",
+      "Bijection et réciproque ; (f⁻¹)’ = 1/f’(f⁻¹).",
+      "f’’ : concavité, inflexion."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Dériver f(x) = (2x + 1)³.",
+      "→ Réponse : f’(x) = 6(2x + 1)².",
+      "Exemple 2 : Dériver f(x) = √(x² + 1).",
+      "→ Réponse : f’(x) = x/√(x² + 1)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Avec |f’(x)| ≤ 4/9 sur [1 ; +∞[, f(2) = 2 et Un+1 = f(Un), U0 = 1 : montrer que lim Un = 2.",
+      "→ Solution : |Un+1 − 2| ≤ (4/9)|Un − 2| ⇒ |Un − 2| ≤ (4/9)ⁿ → 0 ; par le théorème des gendarmes, lim Un = 2."
      ]
     }
    ],
@@ -1034,6 +1536,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Avant de tracer une courbe, quelles informations faut-il réunir ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Plan d’étude : ensemble de définition, parité ou périodicité (réduction du domaine), centre ou axe de symétrie, limites aux bornes, asymptotes et branches infinies, dérivée et son signe, tableau de variations, points remarquables (intersections avec les axes, tangentes), position par rapport aux asymptotes, tracé.",
+      "Centre Ω(a ; b) : f(2a − x) + f(x) = 2b, ou f impaire dans le repère (Ω ; i, j) (changement de repère X = x − a, Y = y − b).",
+      "Branches infinies : asymptote oblique si lim f(x)/x = a ≠ 0 et lim [f(x) − ax] = b ; branches paraboliques sinon.",
+      "Les fonctions trigonométriques s’étudient sur une période puis par symétries."
+     ]
+    },
+    {
      "h": "Plan d’étude",
      "lines": [
       "1) Df ; 2) parité/périodicité ; 3) limites et asymptotes ; 4) f’ et variations ; 5) tableau ; 6) points particuliers ; 7) courbe."
@@ -1044,6 +1561,32 @@
      "lines": [
       "Branche parabolique de direction (Oy) en ±∞ (lim f(x)/x = ±∞).",
       "Intersections : A(0 ; 3), B(1 ; 0), C(3 ; 0) ; minimum f(2) = −1."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Df, parité, périodicité.",
+      "Limites, asymptotes, branches infinies.",
+      "f’, signe, tableau de variations.",
+      "Points particuliers, tangentes.",
+      "Tracé."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : La fonction cos est-elle paire ?",
+      "→ Réponse : Oui : cos(−x) = cos x ; on l’étudie sur [0 ; π].",
+      "Exemple 2 : Position de la courbe de x + 1/x par rapport à y = x pour x > 0 ?",
+      "→ Réponse : f(x) − x = 1/x > 0 : au-dessus."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Montrer que Ω(1 ; 2) est centre de symétrie de f(x) = 2 + 3/(x − 1).",
+      "→ Solution : f(2 − x) + f(x) = 2 − 3/(x − 1) + 2 + 3/(x − 1) = 4 = 2 × 2 ; ou : X = x − 1, Y = y − 2 ⇒ Y = 3/X impaire."
      ]
     }
    ],
@@ -1130,6 +1673,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Sans calculatrice, que vaut cos(5π/6) ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le cercle trigonométrique a pour rayon 1 et est orienté dans le sens inverse des aiguilles d’une montre.",
+      "À tout réel x correspond un point M ; cos x et sin x sont ses coordonnées : cos²x + sin²x = 1, −1 ≤ cos x ≤ 1, −1 ≤ sin x ≤ 1, et cos(x + 2kπ) = cos x, sin(x + 2kπ) = sin x ; tan x = sin x/cos x.",
+      "Valeurs remarquables : 0, π/6, π/4, π/3, π/2.",
+      "Angles associés : cos(−a) = cos a, sin(−a) = −sin a ; cos(π − a) = −cos a, sin(π − a) = sin a ; cos(π + a) = −cos a, sin(π + a) = −sin a ; cos(π/2 − a) = sin a, sin(π/2 − a) = cos a ; cos(π/2 + a) = −sin a, sin(π/2 + a) = cos a."
+     ]
+    },
+    {
      "h": "Valeurs remarquables",
      "lines": [],
      "table": [
@@ -1202,6 +1760,31 @@
        "cos a"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "cos²x + sin²x = 1.",
+      "Périodicité 2π.",
+      "Valeurs en 0, π/6, π/4, π/3, π/2.",
+      "Angles associés : −a, π − a, π + a, π/2 ± a."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : sin(7π/6) ?",
+      "→ Réponse : sin(π + π/6) = −1/2.",
+      "Exemple 2 : tan(π − a) ?",
+      "→ Réponse : −tan a."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "cos(5π/6) ?",
+      "→ Solution : cos(π − π/6) = −cos(π/6) = −√3/2."
+     ]
     }
    ]
   },
@@ -1244,6 +1827,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Dans un carré direct ABCD, que vaut l’angle orienté (AB ; AD) ? Et (AD ; AB) ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans le plan orienté, l’angle orienté (u ; v) de deux vecteurs non nuls a une infinité de mesures α + 2kπ (k ∈ ℤ) ; la mesure principale est dans ]−π ; π].",
+      "Propriétés : (v ; u) = −(u ; v) ; relation de Chasles (u ; v) + (v ; w) = (u ; w) [2π] ; (−u ; v) = (u ; v) + π ; (ku ; k’v) = (u ; v) si kk’ > 0 et (u ; v) + π si kk’ < 0. u et v colinéaires ⇔ (u ; v) = 0 [π] ; orthogonaux ⇔ (u ; v) = π/2 [π].",
+      "Modulo π : (u ; v) = α [π] ⇔ (u ; v) = α ou α + π [2π] (angles de droites).",
+      "Quatre points A, B, C, D (non alignés trois à trois) sont cocycliques si et seulement si (CA ; CB) = (DA ; DB) [π]."
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "Triangle isocèle rectangle en A, indirect : (AB ; AC) = −π/2, (BC ; BA) = π/4, (CB ; CA) = −π/4.",
@@ -1254,6 +1852,32 @@
      "h": "Modulo π",
      "lines": [
       "(u ; v) = 0 [π] ⇔ (u ; v) = 0 ou π [2π] : vecteurs colinéaires."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Mesure principale dans ]−π ; π].",
+      "Chasles : (u ; v) + (v ; w) = (u ; w).",
+      "(v ; u) = −(u ; v) ; (−u ; v) = (u ; v) + π.",
+      "Colinéaires : 0 [π] ; orthogonaux : π/2 [π].",
+      "Cocyclicité : (CA ; CB) = (DA ; DB) [π]."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Mesure principale de 17π/3 ?",
+      "→ Réponse : 17π/3 − 6π = −π/3.",
+      "Exemple 2 : Si (u ; v) = π/6, que vaut (−u ; v) ?",
+      "→ Réponse : π/6 + π = 7π/6, soit −5π/6 en mesure principale."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "ABCD carré direct de centre O : (AB ; AD) et (OA ; OB) ?",
+      "→ Solution : (AB ; AD) = π/2 ; (OA ; OB) = π/2."
      ]
     }
    ]
@@ -1297,6 +1921,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment résoudre 2 sin x − 1 = 0 sur ℝ ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Addition : cos(a ± b) = cos a cos b ∓ sin a sin b ; sin(a ± b) = sin a cos b ± cos a sin b ; tan(a + b) = (tan a + tan b)/(1 − tan a tan b).",
+      "Duplication : sin 2a = 2 sin a cos a ; cos 2a = cos²a − sin²a = 2cos²a − 1 = 1 − 2sin²a.",
+      "Linéarisation : cos²a = (1 + cos 2a)/2 ; sin²a = (1 − cos 2a)/2.",
+      "Transformation : a cos x + b sin x = r cos(x − φ) avec r = √(a² + b²), cos φ = a/r, sin φ = b/r.",
+      "Équations : cos x = cos α ⇔ x = α + 2kπ ou x = −α + 2kπ ; sin x = sin α ⇔ x = α + 2kπ ou x = π − α + 2kπ ; tan x = tan α ⇔ x = α + kπ.",
+      "Les inéquations se résolvent sur le cercle trigonométrique."
+     ]
+    },
+    {
      "h": "Formules",
      "lines": [],
      "table": [
@@ -1330,6 +1971,32 @@
      "h": "Exemple",
      "lines": [
       "√3 cos x + sin x = 2 cos(x − π/6) ; √3 cos x + sin x = √2 ⇔ cos(x − π/6) = √2/2 ⇔ x = π/6 ± π/4 + 2kπ."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "cos(a + b), sin(a + b).",
+      "sin 2a = 2 sin a cos a ; cos 2a = 2cos²a − 1.",
+      "Linéarisation cos²a, sin²a.",
+      "a cos x + b sin x = r cos(x − φ).",
+      "cos x = cos α ⇔ x = ±α + 2kπ."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Calculer cos(π/12).",
+      "→ Réponse : cos(π/3 − π/4) = (√6 + √2)/4.",
+      "Exemple 2 : Résoudre cos 2x = 0.",
+      "→ Réponse : 2x = π/2 + kπ ⇒ x = π/4 + kπ/2."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre 2 sin x − 1 = 0.",
+      "→ Solution : sin x = 1/2 = sin(π/6) ⇒ x = π/6 + 2kπ ou x = 5π/6 + 2kπ."
      ]
     }
    ],
@@ -1423,6 +2090,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Sur 100 lecteurs de trois revues, combien ne lisent aucune revue ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "card(A ∪ B) = card A + card B − card(A ∩ B) ; card(A × B) = card A × card B.",
+      "Nombre de p-listes d’un ensemble à n éléments : nᵖ (tirages successifs avec remise).",
+      "Arrangements de p éléments parmi n : Aₙᵖ = n!/(n − p)!",
+      "(tirages successifs sans remise) ; permutations : n!.",
+      "Combinaisons : Cₙᵖ = n!/[p!(n − p)!] (tirages simultanés) ; Cₙᵖ = Cₙⁿ⁻ᵖ ; Cₙᵖ = Cₙ₋₁ᵖ⁻¹ + Cₙ₋₁ᵖ (triangle de Pascal).",
+      "Binôme de Newton : (a + b)ⁿ = Σ Cₙᵏ aᵏ bⁿ⁻ᵏ."
+     ]
+    },
+    {
      "h": "Modèle des tirages",
      "lines": [],
      "table": [
@@ -1448,6 +2132,32 @@
      "h": "Triangle de Pascal",
      "lines": [
       "1 ; 1 1 ; 1 2 1 ; 1 3 3 1 ; 1 4 6 4 1 ⇒ (a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "card(A ∪ B) = card A + card B − card(A ∩ B).",
+      "p-listes : nᵖ.",
+      "Arrangements : n!/(n − p)!.",
+      "Combinaisons : n!/[p!(n − p)!].",
+      "(a + b)ⁿ = Σ Cₙᵏ aᵏbⁿ⁻ᵏ."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : C₅² ?",
+      "→ Réponse : 10.",
+      "Exemple 2 : Nombre de mots de 3 lettres distinctes avec 5 lettres ?",
+      "→ Réponse : A₅³ = 60."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Revues A (51), B (42), C (38) ; A∩B 22, B∩C 14, A∩C 16, A∩B∩C 8 sur 100 : combien ne lisent rien ?",
+      "→ Solution : Seulement A : 21, seulement B : 14, seulement C : 16, A et B seuls : 14, B et C seuls : 6, A et C seuls : 8, les trois : 8 ⇒ 87 lecteurs ; 13 ne lisent rien."
      ]
     }
    ],
@@ -1535,6 +2245,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "On jette trois fois une pièce : quelle est la probabilité d’obtenir au moins une fois Face ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Ω est l’ensemble des éventualités ; un événement est une partie de Ω ; A ∩ B (A et B), A ∪ B (A ou B), Ā (contraire) ; A et B incompatibles si A ∩ B = ∅ (un événement et son contraire sont incompatibles).",
+      "Une loi de probabilité associe à chaque éventualité un nombre positif, la somme valant 1 ; P(A ∪ B) = P(A) + P(B) − P(A ∩ B) ; P(Ā) = 1 − P(A) ; en cas d’équiprobabilité, P(A) = card A/card Ω.",
+      "Une variable aléatoire X associe un réel à chaque éventualité ; sa loi donne P(X = xᵢ), son espérance E(X) = Σ xᵢ P(X = xᵢ).",
+      "Probabilité conditionnelle : P_B(A) = P(A ∩ B)/P(B)."
+     ]
+    },
+    {
      "h": "Exemple (oral de mathématiques)",
      "lines": [
       "Ω = {P ; S ; G ; A} (probabilité, statistique, géométrie, algèbre) ; « obtenir la question de probabilité » = {P}."
@@ -1545,6 +2270,32 @@
      "lines": [
       "A « numéro ≤ 2 » = {1 ; 2}, B « numéro impair » = {1 ; 3 ; 5}, C « numéro > 4 » = {5 ; 6}.",
       "A ∩ B = {1} ; A ∪ C = {1 ; 2 ; 5 ; 6} ; P(B) = 1/2."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Ω, événements, contraire, incompatibles.",
+      "P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+      "Équiprobabilité : card A/card Ω.",
+      "Variable aléatoire, loi, espérance.",
+      "P_B(A) = P(A ∩ B)/P(B)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : P(A) = 0,4, P(B) = 0,5, P(A ∩ B) = 0,2 : P(A ∪ B) ?",
+      "→ Réponse : 0,7.",
+      "Exemple 2 : X gain : 10 avec p = 0,2 ; 0 sinon. E(X) ?",
+      "→ Réponse : 2."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Trois lancers d’une pièce : P(au moins une fois Face) ?",
+      "→ Solution : 1 − P(trois fois Pile) = 1 − 1/8 = 7/8."
      ]
     }
    ],
@@ -1630,6 +2381,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "On lance un dé 100 fois et le 4 sort 30 fois. Le dé est-il truqué ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un échantillon de taille n est le résultat de n répétitions indépendantes d’une même expérience (ou n individus prélevés dans une population).",
+      "Si la proportion théorique d’un caractère est p, la fréquence observée f dans un échantillon fluctue.",
+      "Pour 0,2 ≤ p ≤ 0,8 et n ≥ 25, l’intervalle de fluctuation au seuil de 95 % est [p − 1/√n ; p + 1/√n] : dans environ 95 % des échantillons, f appartient à cet intervalle.",
+      "Règle de décision : si f n’appartient pas à l’intervalle, on rejette l’hypothèse « la proportion est p » au risque de 5 % ; sinon on ne la rejette pas."
+     ]
+    },
+    {
      "h": "Démarche",
      "lines": [
       "1) Vérifier les conditions ; 2) calculer l’intervalle ; 3) comparer f ; 4) conclure."
@@ -1640,6 +2406,30 @@
      "lines": [
       "Si la proportion p est inconnue, à partir de la fréquence f observée sur un échantillon de taille n, l’intervalle [f − 1/√n ; f + 1/√n] est un intervalle de confiance de p au niveau 95 %.",
       "Exemple : n = 100, f = 0,5 ⇒ [0,4 ; 0,6]."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Échantillon de taille n.",
+      "Intervalle [p − 1/√n ; p + 1/√n] (0,2 ≤ p ≤ 0,8, n ≥ 25).",
+      "f hors intervalle ⇒ rejet au risque 5 %."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Intervalle de fluctuation pour p = 0,3 et n = 400 ?",
+      "→ Réponse : [0,3 − 0,05 ; 0,3 + 0,05] = [0,25 ; 0,35].",
+      "Exemple 2 : Que signifie « au seuil de 95 % » ?",
+      "→ Réponse : Environ 95 % des échantillons ont une fréquence dans l’intervalle."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "p = 0,5, n = 100, f = 0,62 : décision ?",
+      "→ Solution : Intervalle [0,4 ; 0,6] ; 0,62 ∉ ⇒ on rejette l’hypothèse p = 0,5."
      ]
     }
    ],

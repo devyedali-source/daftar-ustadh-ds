@@ -102,11 +102,14 @@ def rows_for(books_lessons, lang, book_titles):
             t = KIND[week_of.get(l["match"][0], lesson_weeks[-1])][0]
             u = unit_of(l) or (btitle if two else "")
             rows = terms[t]
-            if rows and rows[-1]["u"] == u and rows[-1]["b"] == btitle:
+            if rows and rows[-1]["k"] == "lesson" and rows[-1]["u"] == u and rows[-1]["b"] == btitle:
                 if l["match"][0] not in rows[-1]["i"]:
                     rows[-1]["i"].append(l["match"][0])
             else:
                 rows.append({"l": "", "w": 0, "t": t, "u": u, "k": "lesson", "i": [l["match"][0]], "b": btitle})
+            # سلسلة تمارين الفصل بعد آخر دروسه (مربوطة بآخر درس في الفصل)
+            if l.get("_series"):
+                rows.append({"l": "", "w": 0, "t": t, "u": u, "k": "series", "i": [l["match"][0]], "b": btitle})
     out = [{"l": "", "w": 0, "t": 1, "u": "", "k": "diag", "i": TXT[lang]["diag"]}]
     for t in (1, 2, 3):
         for r in terms[t]:
@@ -128,8 +131,16 @@ def main():
             continue
         m = load(f[:-3])
         b = BOOKS[m.BOOK]
+        # الدروس التي تُختم بها سلسلة تمارين الفصل
+        sp = os.path.join(HERE, "series", f)
+        with_series = set()
+        if os.path.exists(sp):
+            ns = {}
+            exec(open(sp, encoding="utf-8").read(), ns)
+            with_series = set(ns["SERIES"])
+        lessons = [dict(l, _series=True) if l["title"] in with_series else l for l in m.LESSONS]
         for lv in b["levels"]:
-            by_level.setdefault((b["subject"], lv), []).append((b, m.LESSONS))
+            by_level.setdefault((b["subject"], lv), []).append((b, lessons))
     for (subj, lv), items in sorted(by_level.items()):
         items.sort(key=lambda x: x[0]["asset"])
         lang = lang_of(subj, items[0][1])

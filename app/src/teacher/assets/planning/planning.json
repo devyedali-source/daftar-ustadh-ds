@@ -13495,6 +13495,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre I",
+     "k": "series",
+     "i": [
+      "La réaction chimique et l’avancement"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chimie – Chapitre II",
      "k": "lesson",
      "i": [
@@ -13515,8 +13525,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Physique – Chapitre I",
+     "k": "series",
+     "i": [
+      "Notion de force et étalonnage d’un ressort"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre II",
      "k": "lesson",
+     "i": [
+      "La poussée d’Archimède"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre II",
+     "k": "series",
      "i": [
       "La poussée d’Archimède"
      ]
@@ -13529,6 +13559,16 @@
      "k": "lesson",
      "i": [
       "Équilibre d’un solide soumis à deux ou trois forces",
+      "Moment d’une force et solide mobile autour d’un axe"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre III",
+     "k": "series",
+     "i": [
       "Moment d’une force et solide mobile autour d’un axe"
      ]
     },
@@ -13566,6 +13606,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre II",
+     "k": "series",
+     "i": [
+      "La classification périodique des éléments"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre III",
      "k": "lesson",
      "i": [
@@ -13576,8 +13626,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre III",
+     "k": "series",
+     "i": [
+      "Molécules et ions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre IV",
      "k": "lesson",
+     "i": [
+      "Les ions en solution"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre IV",
+     "k": "series",
      "i": [
       "Les ions en solution"
      ]
@@ -13597,8 +13667,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Conjugaison, grandissement et instruments d’optique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre V",
      "k": "lesson",
+     "i": [
+      "Force et champ électrostatique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre V",
+     "k": "series",
      "i": [
       "Force et champ électrostatique"
      ]
@@ -13638,8 +13728,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chimie – Chapitre V",
+     "k": "series",
+     "i": [
+      "Solutions basiques, indicateurs et neutralisation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre VI",
      "k": "lesson",
+     "i": [
+      "Intensité et tension électriques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre VI",
+     "k": "series",
      "i": [
       "Intensité et tension électriques"
      ]
@@ -13658,8 +13768,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre VII",
+     "k": "series",
+     "i": [
+      "Dipôles passifs"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre VIII",
      "k": "lesson",
+     "i": [
+      "Dipôles actifs — générateurs"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre VIII",
+     "k": "series",
      "i": [
       "Dipôles actifs — générateurs"
      ]
@@ -13712,6 +13842,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre I",
+     "k": "series",
+     "i": [
+      "La réaction chimique et l’avancement"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chimie – Chapitre II",
      "k": "lesson",
      "i": [
@@ -13732,8 +13872,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Physique – Chapitre I",
+     "k": "series",
+     "i": [
+      "Notion de force et étalonnage d’un ressort"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre II",
      "k": "lesson",
+     "i": [
+      "La poussée d’Archimède"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre II",
+     "k": "series",
      "i": [
       "La poussée d’Archimède"
      ]
@@ -13746,6 +13906,16 @@
      "k": "lesson",
      "i": [
       "Équilibre d’un solide soumis à deux ou trois forces",
+      "Moment d’une force et solide mobile autour d’un axe"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre III",
+     "k": "series",
+     "i": [
       "Moment d’une force et solide mobile autour d’un axe"
      ]
     },
@@ -13783,6 +13953,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre II",
+     "k": "series",
+     "i": [
+      "La classification périodique des éléments"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre III",
      "k": "lesson",
      "i": [
@@ -13793,8 +13973,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre III",
+     "k": "series",
+     "i": [
+      "Molécules et ions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre IV",
      "k": "lesson",
+     "i": [
+      "Les ions en solution"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre IV",
+     "k": "series",
      "i": [
       "Les ions en solution"
      ]
@@ -13814,6 +14014,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Conjugaison, grandissement et instruments d’optique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre V",
      "k": "lesson",
      "i": [
@@ -13824,8 +14034,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre V",
+     "k": "series",
+     "i": [
+      "Force et champ électrostatique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre VI",
      "k": "lesson",
+     "i": [
+      "Intensité et tension électriques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre VI",
+     "k": "series",
      "i": [
       "Intensité et tension électriques"
      ]
@@ -13865,6 +14095,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chimie – Chapitre V",
+     "k": "series",
+     "i": [
+      "Solutions basiques, indicateurs et neutralisation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre VII",
      "k": "lesson",
      "i": [
@@ -13875,8 +14115,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre VII",
+     "k": "series",
+     "i": [
+      "Dipôles passifs"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre VIII",
      "k": "lesson",
+     "i": [
+      "Dipôles actifs — générateurs"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre VIII",
+     "k": "series",
      "i": [
       "Dipôles actifs — générateurs"
      ]
@@ -14206,8 +14466,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre I",
+     "k": "series",
+     "i": [
+      "Ressources organiques naturelles et analyse élémentaire"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chimie – Chapitre II",
      "k": "lesson",
+     "i": [
+      "Les alcanes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chimie – Chapitre II",
+     "k": "series",
      "i": [
       "Les alcanes"
      ]
@@ -14227,10 +14507,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre III",
+     "k": "series",
+     "i": [
+      "Les alcynes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre I",
      "k": "lesson",
      "i": [
       "Cinématique — référentiel, position, vitesse, accélération",
+      "Mouvements rectilignes et circulaires"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre I",
+     "k": "series",
+     "i": [
       "Mouvements rectilignes et circulaires"
      ]
     },
@@ -14248,10 +14548,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Physique – Chapitre II",
+     "k": "series",
+     "i": [
+      "Travail et puissance"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre III",
      "k": "lesson",
      "i": [
       "Énergie cinétique et théorème de l’énergie cinétique",
+      "Énergie potentielle et énergie mécanique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre III",
+     "k": "series",
+     "i": [
       "Énergie potentielle et énergie mécanique"
      ]
     },
@@ -14289,10 +14609,30 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Les composés aromatiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre V",
      "k": "lesson",
      "i": [
       "Fonctions oxygénées et amines",
+      "Isomérie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre V",
+     "k": "series",
+     "i": [
       "Isomérie"
      ]
     },
@@ -14320,8 +14660,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Transferts thermiques et calorimétrie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre V",
      "k": "lesson",
+     "i": [
+      "Champ magnétique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre V",
+     "k": "series",
      "i": [
       "Champ magnétique"
      ]
@@ -14341,8 +14701,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Potentiel et différence de potentiel"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre VII",
      "k": "lesson",
+     "i": [
+      "Puissance électrique dans une portion de circuit"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre VII",
+     "k": "series",
      "i": [
       "Puissance électrique dans une portion de circuit"
      ]
@@ -14381,10 +14761,30 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chimie – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Classification des couples et prévision des réactions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chimie – Chapitre VII",
      "k": "lesson",
      "i": [
       "Piles et potentiels d’oxydoréduction",
+      "Électrolyse"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chimie – Chapitre VII",
+     "k": "series",
+     "i": [
       "Électrolyse"
      ]
     },
@@ -14402,8 +14802,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre VIII",
+     "k": "series",
+     "i": [
+      "Le condensateur"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre IX",
      "k": "lesson",
+     "i": [
+      "Courant alternatif, oscilloscope et transformateur"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre IX",
+     "k": "series",
      "i": [
       "Courant alternatif, oscilloscope et transformateur"
      ]
@@ -14455,8 +14875,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre I",
+     "k": "series",
+     "i": [
+      "Ressources organiques naturelles et analyse élémentaire"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chimie – Chapitre II",
      "k": "lesson",
+     "i": [
+      "Les alcanes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chimie – Chapitre II",
+     "k": "series",
      "i": [
       "Les alcanes"
      ]
@@ -14476,10 +14916,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre III",
+     "k": "series",
+     "i": [
+      "Les alcynes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre I",
      "k": "lesson",
      "i": [
       "Cinématique — référentiel, position, vitesse, accélération",
+      "Mouvements rectilignes et circulaires"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre I",
+     "k": "series",
+     "i": [
       "Mouvements rectilignes et circulaires"
      ]
     },
@@ -14497,10 +14957,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Physique – Chapitre II",
+     "k": "series",
+     "i": [
+      "Travail et puissance"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre III",
      "k": "lesson",
      "i": [
       "Énergie cinétique et théorème de l’énergie cinétique",
+      "Énergie potentielle et énergie mécanique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre III",
+     "k": "series",
+     "i": [
       "Énergie potentielle et énergie mécanique"
      ]
     },
@@ -14538,10 +15018,30 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Les composés aromatiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre V",
      "k": "lesson",
      "i": [
       "Fonctions oxygénées et amines",
+      "Isomérie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre V",
+     "k": "series",
+     "i": [
       "Isomérie"
      ]
     },
@@ -14569,8 +15069,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Transferts thermiques et calorimétrie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre V",
      "k": "lesson",
+     "i": [
+      "Champ magnétique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre V",
+     "k": "series",
      "i": [
       "Champ magnétique"
      ]
@@ -14590,8 +15110,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Potentiel et différence de potentiel"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre VII",
      "k": "lesson",
+     "i": [
+      "Puissance électrique dans une portion de circuit"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre VII",
+     "k": "series",
      "i": [
       "Puissance électrique dans une portion de circuit"
      ]
@@ -14630,10 +15170,30 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chimie – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Classification des couples et prévision des réactions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chimie – Chapitre VII",
      "k": "lesson",
      "i": [
       "Piles et potentiels d’oxydoréduction",
+      "Électrolyse"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chimie – Chapitre VII",
+     "k": "series",
+     "i": [
       "Électrolyse"
      ]
     },
@@ -14651,8 +15211,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre VIII",
+     "k": "series",
+     "i": [
+      "Le condensateur"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre IX",
      "k": "lesson",
+     "i": [
+      "Courant alternatif, oscilloscope et transformateur"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre IX",
+     "k": "series",
      "i": [
       "Courant alternatif, oscilloscope et transformateur"
      ]
@@ -15009,10 +15589,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre I",
+     "k": "series",
+     "i": [
+      "Les alcools — oxydation et déshydratation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chimie – Chapitre II",
      "k": "lesson",
      "i": [
       "Chlorures d’acyle et anhydrides d’acide",
+      "Estérification, hydrolyse et saponification"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chimie – Chapitre II",
+     "k": "series",
+     "i": [
       "Estérification, hydrolyse et saponification"
      ]
     },
@@ -15030,10 +15630,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre III",
+     "k": "series",
+     "i": [
+      "Les amides"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre I",
      "k": "lesson",
      "i": [
       "Cinématique du point — vitesse et accélération",
+      "Relation fondamentale de la dynamique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre I",
+     "k": "series",
+     "i": [
       "Relation fondamentale de la dynamique"
      ]
     },
@@ -15055,8 +15675,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Physique – Chapitre II",
+     "k": "series",
+     "i": [
+      "Particule chargée dans un champ magnétique — force de Lorentz"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre III",
      "k": "lesson",
+     "i": [
+      "Pendule élastique (oscillateur harmonique libre)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre III",
+     "k": "series",
      "i": [
       "Pendule élastique (oscillateur harmonique libre)"
      ]
@@ -15095,8 +15735,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Évolution quantitative d’un système chimique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre V",
      "k": "lesson",
+     "i": [
+      "Vitesses de réaction et temps de demi-réaction"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre V",
+     "k": "series",
      "i": [
       "Vitesses de réaction et temps de demi-réaction"
      ]
@@ -15115,8 +15775,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Facteurs cinétiques et catalyse"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre VII",
      "k": "lesson",
+     "i": [
+      "Solutions acides et basiques — pH, acides et bases forts"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre VII",
+     "k": "series",
      "i": [
       "Solutions acides et basiques — pH, acides et bases forts"
      ]
@@ -15135,8 +15815,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Force de Laplace"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre V",
      "k": "lesson",
+     "i": [
+      "Induction électromagnétique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre V",
+     "k": "series",
      "i": [
       "Induction électromagnétique"
      ]
@@ -15155,8 +15855,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Auto-induction et circuit RL"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre VII",
      "k": "lesson",
+     "i": [
+      "Condensateur et circuit RC"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre VII",
+     "k": "series",
      "i": [
       "Condensateur et circuit RC"
      ]
@@ -15175,6 +15895,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre VIII",
+     "k": "series",
+     "i": [
+      "Oscillations électriques libres (LC et RLC)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre IX",
      "k": "lesson",
      "i": [
@@ -15185,8 +15915,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre IX",
+     "k": "series",
+     "i": [
+      "Oscillations électriques forcées — circuit RLC en régime sinusoïdal"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre X",
      "k": "lesson",
+     "i": [
+      "Propagation d’un mouvement vibratoire (milieu unidimensionnel)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre X",
+     "k": "series",
      "i": [
       "Propagation d’un mouvement vibratoire (milieu unidimensionnel)"
      ]
@@ -15225,8 +15975,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chimie – Chapitre VIII",
+     "k": "series",
+     "i": [
+      "Couples acide/base, Ka et pKa"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chimie – Chapitre IX",
      "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chimie – Chapitre IX",
+     "k": "series",
      "i": [
       "Dosages acido-basiques et solutions tampons"
      ]
@@ -15245,8 +16015,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre XI",
+     "k": "series",
+     "i": [
+      "Interférences mécaniques à la surface d’un liquide"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre XII",
      "k": "lesson",
+     "i": [
+      "Interférences lumineuses (fentes de Young)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre XII",
+     "k": "series",
      "i": [
       "Interférences lumineuses (fentes de Young)"
      ]
@@ -15265,6 +16055,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre XIII",
+     "k": "series",
+     "i": [
+      "Niveaux d’énergie de l’atome d’hydrogène"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre XIV",
      "k": "lesson",
      "i": [
@@ -15275,8 +16075,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre XIV",
+     "k": "series",
+     "i": [
+      "Effet photoélectrique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre XV",
      "k": "lesson",
+     "i": [
+      "Réactions nucléaires"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre XV",
+     "k": "series",
      "i": [
       "Réactions nucléaires"
      ]
@@ -15329,6 +16149,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre I",
+     "k": "series",
+     "i": [
+      "Les alcools — oxydation et déshydratation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chimie – Chapitre II",
      "k": "lesson",
      "i": [
@@ -15340,8 +16170,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chimie – Chapitre II",
+     "k": "series",
+     "i": [
+      "Estérification, hydrolyse et saponification"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chimie – Chapitre III",
      "k": "lesson",
+     "i": [
+      "Les amides"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chimie – Chapitre III",
+     "k": "series",
      "i": [
       "Les amides"
      ]
@@ -15361,6 +16211,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Physique – Chapitre I",
+     "k": "series",
+     "i": [
+      "Relation fondamentale de la dynamique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Physique – Chapitre II",
      "k": "lesson",
      "i": [
@@ -15368,6 +16228,16 @@
       "Solide sur un plan incliné et sur une piste circulaire",
       "Particule chargée dans un champ électrique uniforme",
       "Satellites et gravitation",
+      "Particule chargée dans un champ magnétique — force de Lorentz"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Physique – Chapitre II",
+     "k": "series",
+     "i": [
       "Particule chargée dans un champ magnétique — force de Lorentz"
      ]
     },
@@ -15405,8 +16275,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre IV",
+     "k": "series",
+     "i": [
+      "Évolution quantitative d’un système chimique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre V",
      "k": "lesson",
+     "i": [
+      "Vitesses de réaction et temps de demi-réaction"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre V",
+     "k": "series",
      "i": [
       "Vitesses de réaction et temps de demi-réaction"
      ]
@@ -15425,8 +16315,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chimie – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Facteurs cinétiques et catalyse"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chimie – Chapitre VII",
      "k": "lesson",
+     "i": [
+      "Solutions acides et basiques — pH, acides et bases forts"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chimie – Chapitre VII",
+     "k": "series",
      "i": [
       "Solutions acides et basiques — pH, acides et bases forts"
      ]
@@ -15445,8 +16355,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre III",
+     "k": "series",
+     "i": [
+      "Pendule élastique (oscillateur harmonique libre)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre IV",
      "k": "lesson",
+     "i": [
+      "Force de Laplace"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre IV",
+     "k": "series",
      "i": [
       "Force de Laplace"
      ]
@@ -15465,6 +16395,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre V",
+     "k": "series",
+     "i": [
+      "Induction électromagnétique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre VI",
      "k": "lesson",
      "i": [
@@ -15475,8 +16415,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Physique – Chapitre VI",
+     "k": "series",
+     "i": [
+      "Propagation d’un mouvement vibratoire (milieu unidimensionnel)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Physique – Chapitre VII",
      "k": "lesson",
+     "i": [
+      "Interférences mécaniques à la surface d’un liquide"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Physique – Chapitre VII",
+     "k": "series",
      "i": [
       "Interférences mécaniques à la surface d’un liquide"
      ]
@@ -15515,8 +16475,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chimie – Chapitre VIII",
+     "k": "series",
+     "i": [
+      "Couples acide/base, Ka et pKa"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chimie – Chapitre IX",
      "k": "lesson",
+     "i": [
+      "Dosages acido-basiques et solutions tampons"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chimie – Chapitre IX",
+     "k": "series",
      "i": [
       "Dosages acido-basiques et solutions tampons"
      ]
@@ -15535,8 +16515,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre VIII",
+     "k": "series",
+     "i": [
+      "Interférences lumineuses (fentes de Young)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre IX",
      "k": "lesson",
+     "i": [
+      "Niveaux d’énergie de l’atome d’hydrogène"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre IX",
+     "k": "series",
      "i": [
       "Niveaux d’énergie de l’atome d’hydrogène"
      ]
@@ -15555,8 +16555,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Physique – Chapitre X",
+     "k": "series",
+     "i": [
+      "Effet photoélectrique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Physique – Chapitre XI",
      "k": "lesson",
+     "i": [
+      "Réactions nucléaires"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Physique – Chapitre XI",
+     "k": "series",
      "i": [
       "Réactions nucléaires"
      ]
@@ -20194,8 +21214,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 1",
+     "k": "series",
+     "i": [
+      "Calcul dans ℝ"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 2",
      "k": "lesson",
+     "i": [
+      "Polynômes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 2",
+     "k": "series",
      "i": [
       "Polynômes"
      ]
@@ -20214,8 +21254,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 2 (suite)",
+     "k": "series",
+     "i": [
+      "Coniques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 3",
      "k": "lesson",
+     "i": [
+      "Calcul vectoriel"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 3",
+     "k": "series",
      "i": [
       "Calcul vectoriel"
      ]
@@ -20234,8 +21294,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 4",
+     "k": "series",
+     "i": [
+      "Géométrie analytique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 5",
      "k": "lesson",
+     "i": [
+      "Équations et systèmes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 5",
+     "k": "series",
      "i": [
       "Équations et systèmes"
      ]
@@ -20254,8 +21334,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 5 (suite)",
+     "k": "series",
+     "i": [
+      "Inéquations"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 6",
      "k": "lesson",
+     "i": [
+      "Barycentre"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 6",
+     "k": "series",
      "i": [
       "Barycentre"
      ]
@@ -20294,8 +21394,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 7",
+     "k": "series",
+     "i": [
+      "Angles orientés et trigonométrie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 8",
      "k": "lesson",
+     "i": [
+      "Généralités sur les fonctions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 8",
+     "k": "series",
      "i": [
       "Généralités sur les fonctions"
      ]
@@ -20314,6 +21434,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 8 (suite)",
+     "k": "series",
+     "i": [
+      "Fonctions de référence"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 9",
      "k": "lesson",
      "i": [
@@ -20324,8 +21454,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 9",
+     "k": "series",
+     "i": [
+      "Produit scalaire"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 10",
      "k": "lesson",
+     "i": [
+      "Transformations géométriques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 10",
+     "k": "series",
      "i": [
       "Transformations géométriques"
      ]
@@ -20364,8 +21514,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 11",
+     "k": "series",
+     "i": [
+      "Arithmétique dans ℕ"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 12",
      "k": "lesson",
+     "i": [
+      "Géométrie dans l’espace"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 12",
+     "k": "series",
      "i": [
       "Géométrie dans l’espace"
      ]
@@ -20384,6 +21554,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 13",
+     "k": "series",
+     "i": [
+      "Applications"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 14",
      "k": "lesson",
      "i": [
@@ -20394,8 +21574,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 14",
+     "k": "series",
+     "i": [
+      "Dénombrement"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 15",
      "k": "lesson",
+     "i": [
+      "Statistiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 15",
+     "k": "series",
      "i": [
       "Statistiques"
      ]
@@ -20447,8 +21647,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 1",
+     "k": "series",
+     "i": [
+      "Calcul dans ℝ"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 2",
      "k": "lesson",
+     "i": [
+      "Polynômes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 2",
+     "k": "series",
      "i": [
       "Polynômes"
      ]
@@ -20467,6 +21687,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 3",
+     "k": "series",
+     "i": [
+      "Calcul vectoriel"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 4",
      "k": "lesson",
      "i": [
@@ -20477,8 +21707,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 4",
+     "k": "series",
+     "i": [
+      "Géométrie analytique"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 5",
      "k": "lesson",
+     "i": [
+      "Équations et systèmes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 5",
+     "k": "series",
      "i": [
       "Équations et systèmes"
      ]
@@ -20517,8 +21767,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 5 (suite)",
+     "k": "series",
+     "i": [
+      "Inéquations"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 6",
      "k": "lesson",
+     "i": [
+      "Barycentre"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 6",
+     "k": "series",
      "i": [
       "Barycentre"
      ]
@@ -20537,6 +21807,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 7",
+     "k": "series",
+     "i": [
+      "Angles orientés — Trigonométrie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 8",
      "k": "lesson",
      "i": [
@@ -20547,8 +21827,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 8",
+     "k": "series",
+     "i": [
+      "Généralités sur les fonctions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 8 (suite)",
      "k": "lesson",
+     "i": [
+      "Fonctions de référence"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 8 (suite)",
+     "k": "series",
      "i": [
       "Fonctions de référence"
      ]
@@ -20587,8 +21887,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 9",
+     "k": "series",
+     "i": [
+      "Produit scalaire"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 10",
      "k": "lesson",
+     "i": [
+      "Applications"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 10",
+     "k": "series",
      "i": [
       "Applications"
      ]
@@ -20607,8 +21927,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 11",
+     "k": "series",
+     "i": [
+      "Dénombrement"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 12",
      "k": "lesson",
+     "i": [
+      "Statistiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 12",
+     "k": "series",
      "i": [
       "Statistiques"
      ]
@@ -21266,6 +22606,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 1",
+     "k": "series",
+     "i": [
+      "Exercices (polynômes et fractions)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 2",
      "k": "lesson",
      "i": [
@@ -21279,11 +22629,31 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 2",
+     "k": "series",
+     "i": [
+      "Exercices (équations, systèmes, matrices)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 3",
      "k": "lesson",
      "i": [
       "Généralités sur les fonctions et symétries",
       "Limites",
+      "Continuité et théorème des valeurs intermédiaires"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 3",
+     "k": "series",
+     "i": [
       "Continuité et théorème des valeurs intermédiaires"
      ]
     },
@@ -21321,6 +22691,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 4",
+     "k": "series",
+     "i": [
+      "Barycentre d’un système de points pondérés"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 5",
      "k": "lesson",
      "i": [
@@ -21333,8 +22713,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 5",
+     "k": "series",
+     "i": [
+      "Primitives"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 6",
      "k": "lesson",
+     "i": [
+      "Angles orientés de vecteurs"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 6",
+     "k": "series",
      "i": [
       "Angles orientés de vecteurs"
      ]
@@ -21354,6 +22754,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 7",
+     "k": "series",
+     "i": [
+      "Formules trigonométriques et équations"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 8",
      "k": "lesson",
      "i": [
@@ -21364,8 +22774,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 8",
+     "k": "series",
+     "i": [
+      "Produit scalaire et applications"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 9",
      "k": "lesson",
+     "i": [
+      "Étude et représentation de fonctions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 9",
+     "k": "series",
      "i": [
       "Étude et représentation de fonctions"
      ]
@@ -21414,6 +22844,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 10",
+     "k": "series",
+     "i": [
+      "Raisonnement par récurrence et limites de suites"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 11",
      "k": "lesson",
      "i": [
@@ -21425,8 +22865,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 11",
+     "k": "series",
+     "i": [
+      "Rotations, homothéties et applications"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 12",
      "k": "lesson",
+     "i": [
+      "Vecteurs et géométrie dans l’espace"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 12",
+     "k": "series",
      "i": [
       "Vecteurs et géométrie dans l’espace"
      ]
@@ -21445,6 +22905,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 13",
+     "k": "series",
+     "i": [
+      "Dénombrement"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 14",
      "k": "lesson",
      "i": [
@@ -21455,8 +22925,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 14",
+     "k": "series",
+     "i": [
+      "Échantillonnage et intervalle de fluctuation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 15",
      "k": "lesson",
+     "i": [
+      "Probabilités"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 15",
+     "k": "series",
      "i": [
       "Probabilités"
      ]
@@ -21509,12 +22999,32 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre I",
+     "k": "series",
+     "i": [
+      "Fractions rationnelles et éléments simples"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre II",
      "k": "lesson",
      "i": [
       "Équations et inéquations du premier et du second degré",
       "Systèmes linéaires (2 et 3 inconnues) et inéquations",
       "Matrices, déterminants et méthode de Cramer",
+      "Exercices (équations, systèmes, matrices)"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre II",
+     "k": "series",
+     "i": [
       "Exercices (équations, systèmes, matrices)"
      ]
     },
@@ -21562,11 +23072,31 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre III",
+     "k": "series",
+     "i": [
+      "Limites de suites, récurrence et suites adjacentes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre IV",
      "k": "lesson",
      "i": [
       "Généralités sur les fonctions et symétries",
       "Limites",
+      "Continuité et théorème des valeurs intermédiaires"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre IV",
+     "k": "series",
+     "i": [
       "Continuité et théorème des valeurs intermédiaires"
      ]
     },
@@ -21585,8 +23115,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre V",
+     "k": "series",
+     "i": [
+      "Dérivées, variations et propriétés des fonctions dérivables"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre VI",
      "k": "lesson",
+     "i": [
+      "Étude et représentation de fonctions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre VI",
+     "k": "series",
      "i": [
       "Étude et représentation de fonctions"
      ]
@@ -21627,8 +23177,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre VII",
+     "k": "series",
+     "i": [
+      "Formules trigonométriques, équations et inéquations"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre VIII",
      "k": "lesson",
+     "i": [
+      "Dénombrement"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre VIII",
+     "k": "series",
      "i": [
       "Dénombrement"
      ]
@@ -21647,8 +23217,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre IX",
+     "k": "series",
+     "i": [
+      "Probabilités"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre X",
      "k": "lesson",
+     "i": [
+      "Statistique — échantillonnage"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre X",
+     "k": "series",
      "i": [
       "Statistique — échantillonnage"
      ]
@@ -21701,10 +23291,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 1",
+     "k": "series",
+     "i": [
+      "Matrices, déterminants et inverse"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 2",
      "k": "lesson",
      "i": [
       "Divisibilité, division euclidienne, nombres premiers, PGCD",
+      "Bézout, Gauss, congruences, Fermat et équations diophantiennes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 2",
+     "k": "series",
+     "i": [
       "Bézout, Gauss, congruences, Fermat et équations diophantiennes"
      ]
     },
@@ -21722,8 +23332,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 3",
+     "k": "series",
+     "i": [
+      "Nombres complexes — forme algébrique, module, argument, équations"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 4",
      "k": "lesson",
+     "i": [
+      "Nombres complexes — forme exponentielle, géométrie, racines n-ièmes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 4",
+     "k": "series",
      "i": [
       "Nombres complexes — forme exponentielle, géométrie, racines n-ièmes"
      ]
@@ -21772,8 +23402,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 5",
+     "k": "series",
+     "i": [
+      "Continuité, dérivabilité, point d’inflexion, bijection réciproque"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 6",
      "k": "lesson",
+     "i": [
+      "Fonctions logarithme népérien et exponentielle"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 6",
+     "k": "series",
      "i": [
       "Fonctions logarithme népérien et exponentielle"
      ]
@@ -21793,8 +23443,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 7",
+     "k": "series",
+     "i": [
+      "Techniques d’intégration, aires et volumes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 8",
      "k": "lesson",
+     "i": [
+      "Équations différentielles"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 8",
+     "k": "series",
      "i": [
       "Équations différentielles"
      ]
@@ -21813,8 +23483,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 9",
+     "k": "series",
+     "i": [
+      "Angles orientés, cocyclicité, barycentre, déterminant"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 10",
      "k": "lesson",
+     "i": [
+      "Produit scalaire, géométrie de l’espace, produit vectoriel"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 10",
+     "k": "series",
      "i": [
       "Produit scalaire, géométrie de l’espace, produit vectoriel"
      ]
@@ -21853,8 +23543,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 11",
+     "k": "series",
+     "i": [
+      "Transformations du plan — translations, homothéties, réflexions, rotations"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 12",
      "k": "lesson",
+     "i": [
+      "Isométries, déplacements et similitudes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 12",
+     "k": "series",
      "i": [
       "Isométries, déplacements et similitudes"
      ]
@@ -21873,8 +23583,28 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 13",
+     "k": "series",
+     "i": [
+      "Courbes paramétrées"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 14",
      "k": "lesson",
+     "i": [
+      "Les coniques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 14",
+     "k": "series",
      "i": [
       "Les coniques"
      ]
@@ -21887,6 +23617,16 @@
      "k": "lesson",
      "i": [
       "Dénombrement, probabilités et loi binomiale",
+      "Lois continues, fluctuation et estimation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 15",
+     "k": "series",
+     "i": [
       "Lois continues, fluctuation et estimation"
      ]
     },
@@ -21938,6 +23678,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 1",
+     "k": "series",
+     "i": [
+      "Nombres complexes — forme exponentielle et géométrie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 2",
      "k": "lesson",
      "i": [
@@ -21948,8 +23698,28 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre 2",
+     "k": "series",
+     "i": [
+      "Limites, continuité et dérivation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre 3",
      "k": "lesson",
+     "i": [
+      "Étude des fonctions"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre 3",
+     "k": "series",
      "i": [
       "Étude des fonctions"
      ]
@@ -21988,6 +23758,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 4",
+     "k": "series",
+     "i": [
+      "Fonctions logarithme népérien et exponentielle"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 5",
      "k": "lesson",
      "i": [
@@ -21999,10 +23779,30 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre 5",
+     "k": "series",
+     "i": [
+      "Suites numériques — limites, convergence, suites adjacentes"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre 6",
      "k": "lesson",
      "i": [
       "Primitives et intégrale",
+      "Techniques d’intégration et calcul d’aires"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre 6",
+     "k": "series",
+     "i": [
       "Techniques d’intégration et calcul d’aires"
      ]
     },
@@ -22040,10 +23840,30 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre 7",
+     "k": "series",
+     "i": [
+      "Équations différentielles"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre 8",
      "k": "lesson",
      "i": [
       "Dénombrement, probabilités et loi binomiale",
+      "Lois continues, fluctuation et estimation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre 8",
+     "k": "series",
+     "i": [
       "Lois continues, fluctuation et estimation"
      ]
     },
@@ -23589,6 +25409,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Unité I",
+     "k": "series",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Unité II",
      "k": "lesson",
      "i": [
@@ -23629,8 +25459,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Unité II",
+     "k": "series",
+     "i": [
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Unité III",
      "k": "lesson",
+     "i": [
+      "Séisme et volcanisme"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Unité III",
+     "k": "series",
      "i": [
       "Séisme et volcanisme"
      ]
@@ -23703,10 +25553,30 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre I",
+     "k": "series",
+     "i": [
+      "Substances dissoutes, pression osmotique et perméabilité"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre II",
      "k": "lesson",
      "i": [
       "L’alimentation de l’homme",
+      "La digestion et le devenir des nutriments"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre II",
+     "k": "series",
+     "i": [
       "La digestion et le devenir des nutriments"
      ]
     },
@@ -23745,8 +25615,28 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre III",
+     "k": "series",
+     "i": [
+      "Échanges gazeux chlorophylliens et photosynthèse"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre IV",
      "k": "lesson",
+     "i": [
+      "Mobilité des plaques lithosphériques — séismes et volcans"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre IV",
+     "k": "series",
      "i": [
       "Mobilité des plaques lithosphériques — séismes et volcans"
      ]
@@ -23777,6 +25667,16 @@
      "t": 3,
      "u": "Chapitre V",
      "k": "lesson",
+     "i": [
+      "Ensembles géologiques et potentialités de la Mauritanie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre V",
+     "k": "series",
      "i": [
       "Ensembles géologiques et potentialités de la Mauritanie"
      ]
@@ -23961,6 +25861,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Unité I",
+     "k": "series",
+     "i": [
+      "Cycles de développement et cycles chromosomiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Unité II",
      "k": "lesson",
      "i": [
@@ -24004,6 +25914,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Unité II",
+     "k": "series",
+     "i": [
+      "Phénomènes thermiques de la contraction musculaire"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Unité III",
      "k": "lesson",
      "i": [
@@ -24011,6 +25931,16 @@
       "Mouvements de divergence — dorsales et ouverture océanique",
       "Mouvements de convergence — subduction, obduction, collision",
       "Déformations de la croûte — les plis",
+      "Déformations de la croûte — les failles"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Unité III",
+     "k": "series",
+     "i": [
       "Déformations de la croûte — les failles"
      ]
     },
@@ -24099,6 +26029,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre I",
+     "k": "series",
+     "i": [
+      "Cycles de développement et cycles chromosomiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre II",
      "k": "lesson",
      "i": [
@@ -24111,11 +26051,31 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre II",
+     "k": "series",
+     "i": [
+      "Régulation de la glycémie et diabète"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre III",
      "k": "lesson",
      "i": [
       "Immunologie — soi, non-soi et anticorps",
       "Organes et cellules du système immunitaire",
+      "Réponses immunitaires non spécifiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre III",
+     "k": "series",
+     "i": [
       "Réponses immunitaires non spécifiques"
      ]
     },
@@ -24165,6 +26125,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre IV",
+     "k": "series",
+     "i": [
+      "Les protides"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre V",
      "k": "lesson",
      "i": [
@@ -24172,6 +26142,16 @@
       "Glycolyse et respiration cellulaire",
       "Les fermentations",
       "Utilisation de l’ATP et mécanisme de la contraction",
+      "Phénomènes thermiques de la contraction musculaire"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre V",
+     "k": "series",
+     "i": [
       "Phénomènes thermiques de la contraction musculaire"
      ]
     },
@@ -24475,6 +26455,16 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Unité I",
+     "k": "series",
+     "i": [
+      "Maîtrise de la procréation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Unité II",
      "k": "lesson",
      "i": [
@@ -24513,6 +26503,16 @@
       "Dihybridisme — gènes indépendants",
       "Gènes liés, crossing-over et carte factorielle",
       "Génétique humaine",
+      "Anomalies chromosomiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Unité II",
+     "k": "series",
+     "i": [
       "Anomalies chromosomiques"
      ]
     },
@@ -24563,6 +26563,16 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Unité III",
+     "k": "series",
+     "i": [
+      "Danger des psychotropes sur le système nerveux"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Unité IV",
      "k": "lesson",
      "i": [
@@ -24570,6 +26580,16 @@
       "Les grands ensembles géologiques de la Mauritanie",
       "Les ressources minières de la Mauritanie",
       "Le pétrole et le gaz naturel",
+      "Les ressources hydrogéologiques de la Mauritanie"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Unité IV",
+     "k": "series",
+     "i": [
       "Les ressources hydrogéologiques de la Mauritanie"
      ]
     },
@@ -24627,11 +26647,31 @@
      "l": "",
      "w": 0,
      "t": 1,
+     "u": "Chapitre I",
+     "k": "series",
+     "i": [
+      "Maîtrise de la procréation"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
      "u": "Chapitre II",
      "k": "lesson",
      "i": [
       "La fleur et la formation des gamètes chez les Spermaphytes",
       "Pollinisation, double fécondation et formation de la graine",
+      "Germination de la graine et cycle de développement"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 1,
+     "u": "Chapitre II",
+     "k": "series",
+     "i": [
       "Germination de la graine et cycle de développement"
      ]
     },
@@ -24684,6 +26724,16 @@
      "l": "",
      "w": 0,
      "t": 2,
+     "u": "Chapitre III",
+     "k": "series",
+     "i": [
+      "Anomalies chromosomiques"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
      "u": "Chapitre IV",
      "k": "lesson",
      "i": [
@@ -24692,6 +26742,16 @@
       "Le message nerveux — potentiel de repos et potentiel d’action",
       "Les synapses et l’intégration",
       "Le réflexe inné",
+      "Danger des psychotropes sur le système nerveux"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 2,
+     "u": "Chapitre IV",
+     "k": "series",
+     "i": [
       "Danger des psychotropes sur le système nerveux"
      ]
     },
@@ -24732,12 +26792,32 @@
      "l": "",
      "w": 0,
      "t": 3,
+     "u": "Chapitre V",
+     "k": "series",
+     "i": [
+      "Régulation hormonale de la pression artérielle"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
      "u": "Chapitre VI",
      "k": "lesson",
      "i": [
       "La réponse immunitaire spécifique — antigènes et anticorps",
       "Déroulement de la réponse immunitaire et mémoire",
       "Dysfonctionnements du système immunitaire",
+      "Aides au système immunitaire"
+     ]
+    },
+    {
+     "l": "",
+     "w": 0,
+     "t": 3,
+     "u": "Chapitre VI",
+     "k": "series",
+     "i": [
       "Aides au système immunitaire"
      ]
     },

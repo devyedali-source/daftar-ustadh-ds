@@ -42,6 +42,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Croyez-vous tout ce que vous lisez sur les réseaux sociaux ? Comment vérifiez-vous une information ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’esprit critique est une attitude intellectuelle qui permet de penser de manière rationnelle et autonome : réfléchir non pas plus mais mieux.",
+      "C’est une pensée de « mise en doute » qui n’accepte pour vraie aucune affirmation sans l’avoir examinée par la raison, la documentation ou la démonstration.",
+      "Il préserve des amalgames simplistes, des généralisations hâtives, des idées reçues et des certitudes sans preuves (doute méthodique).",
+      "Ch.",
+      "Godin le définit comme la disposition à n’admettre rien de vrai qui n’ait été soumis à l’épreuve de la preuve.",
+      "C’est aussi un état d’esprit fait de curiosité, d’autonomie, de lucidité, d’écoute et de modestie, qui se construit tout au long de la vie."
+     ]
+    },
+    {
      "h": "Le texte",
      "lines": [],
      "fig": {
@@ -95,6 +112,32 @@
       "Oral : discuter « Celui qui accepte ses erreurs et qui en comprend la source progresse ».",
       "Écrit : une dizaine de lignes pour définir l’esprit critique avec ses propres mots, illustré d’un exemple concret."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Esprit critique = réfléchir mieux, de façon rationnelle et autonome.",
+      "Pensée de « mise en doute » : examiner avant d’accepter.",
+      "Moyens de vérification : la raison, la documentation, la démonstration.",
+      "Refus des amalgames, généralisations hâtives, idées reçues.",
+      "Qualités : curiosité, autonomie, lucidité, écoute, modestie."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Citez trois « ennemis » de l’esprit critique d’après les extraits.",
+      "→ Réponse : Les amalgames simplistes, les généralisations hâtives, les idées reçues (et les certitudes sans preuves).",
+      "Exemple 2 : Pourquoi dit-on que l’esprit critique « se construit tout au long d’une vie » ?",
+      "→ Réponse : Parce que rien n’est figé : on peut manquer d’esprit critique, se laisser avoir par des préjugés ; il faut sans cesse s’exercer."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Avoir l’esprit critique, c’est savoir mieux réfléchir.",
+      "→ Solution : Vrai : « l’objectif n’est pas de réfléchir plus, mais de réfléchir mieux »."
+     ]
     }
    ]
   },
@@ -135,6 +178,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Dans votre entourage, certains phénomènes (éclipse, chouette, chat noir…) sont-ils considérés comme des signes de malheur ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans « Pensées sur la Comète », Pierre Bayle affirme la primauté de l’expérience et de l’esprit scientifique contre l’obscurantisme, en prenant l’exemple des superstitions liées aux comètes.",
+      "On croyait que les comètes annonçaient des malheurs.",
+      "Bayle montre qu’elles n’en sont ni la cause efficiente ni le signe.",
+      "Il condamne le raisonnement qui conclut que deux choses sont l’effet l’une de l’autre parce qu’elles se suivent (« c’est raisonner pitoyablement »).",
+      "De plus, l’expérience ne prouve même pas qu’il y ait plus de malheurs après les comètes qu’en un autre temps, et les comètes obéissent à des lois naturelles (soleil, brouillards) : souvent seuls les astronomes les voient."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -203,6 +262,31 @@
       "Oral : présenter des superstitions qui persistent dans votre société et expliquer pourquoi elles persistent.",
       "Écrit : Êtes-vous libérés des superstitions ou en gardez-vous quelques-unes ? Exemples précis."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Superstition : les comètes présagent des malheurs.",
+      "Raisonnement condamné : confondre succession et causalité.",
+      "Arguments : ni cause efficiente ni signe ; l’expérience ne montre pas plus de malheurs ; phénomènes naturels.",
+      "Attitude prônée : primauté de l’expérience et de la raison."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez « c’est raisonner pitoyablement ».",
+      "→ Réponse : C’est raisonner de façon très faible et fausse, en prenant une simple coïncidence pour une cause.",
+      "Exemple 2 : Quel est le contraire de l’esprit scientifique selon le texte ?",
+      "→ Réponse : L’obscurantisme et la superstition."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelle superstition se rattache aux comètes ?",
+      "→ Solution : On croyait que leur apparition était le présage de grands malheurs."
+     ]
     }
    ]
   },
@@ -244,6 +328,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Avez-vous déjà cru une rumeur qui s’est révélée fausse ? Qu’auriez-vous dû faire avant d’y croire ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Fontenelle (1657-1757), précurseur de l’esprit philosophique, veut affranchir la pensée des préjugés.",
+      "Sa règle : « Assurons-nous bien du fait, avant de nous inquiéter de la cause. » En 1593, le bruit courut qu’un enfant de Silésie, âgé de sept ans, avait vu pousser une dent d’or.",
+      "Le professeur Horstius écrivit en 1595 qu’elle était en partie miraculeuse, envoyée par Dieu pour consoler les chrétiens affligés par les Turcs ; Rullandus, Ingolsteterus et Libavius publièrent à leur tour.",
+      "Un orfèvre l’examina enfin : c’était une feuille d’or appliquée à la dent avec adresse.",
+      "« On commença par faire des livres, et puis on consulta l’orfèvre. » Fontenelle généralise : nous avons des principes qui s’accommodent bien avec le faux ; les historiens peuvent être passionnés, crédules ou mal instruits."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -304,6 +404,32 @@
       "Oral : exposé-enquête sur des rumeurs de votre milieu, avec analyse critique.",
       "Écrit : expliquer et discuter « Assurons-nous bien du fait avant de nous inquiéter de la cause »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Règle : vérifier le fait avant de chercher la cause.",
+      "Anecdote : la prétendue dent d’or (1593).",
+      "Erreur des savants : écrire avant de vérifier.",
+      "Vérité : un orfèvre découvre une feuille d’or.",
+      "Comique : l’ordre inversé des démarches, l’ironie de l’auteur."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez une phrase ironique du texte.",
+      "→ Réponse : « Il ne manquait autre chose à tant de beaux ouvrages, sinon qu’il fût vrai que la dent était d’or. »",
+      "Exemple 2 : Pourquoi les discussions historiques sont-elles sujettes à l’erreur ?",
+      "→ Réponse : Parce que les historiens peuvent avoir été passionnés, crédules, mal instruits ou négligents."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Point de départ et réaction des « savants » ?",
+      "→ Solution : La rumeur d’une dent d’or poussée à un enfant de Silésie ; les savants écrivent des livres et s’affrontent pour en expliquer la cause, sans vérifier le fait."
+     ]
     }
    ]
   },
@@ -345,6 +471,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Qu’est-ce qui distingue une personne pieuse d’un fanatique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Voltaire (1694-1778), figure de l’esprit philosophique du 18e siècle, milite pour la tolérance, la justice et l’esprit critique.",
+      "Pour lui, « le fanatisme est à la superstition ce que le transport est à la fièvre, ce que la rage est à la colère » : c’en est la forme extrême.",
+      "L’enthousiaste prend ses songes pour des réalités ; le fanatique soutient sa folie par le meurtre.",
+      "Le fanatisme est présenté comme une maladie presque incurable et épidémique (convulsionnaires de saint Paris).",
+      "Le seul remède est l’esprit philosophique, qui adoucit les mœurs ; les lois sont impuissantes, car les fanatiques se croient au-dessus d’elles.",
+      "Ils puisent leur fureur dans la religion même qui les condamne."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -391,6 +534,32 @@
       "Oral : comment lutter efficacement contre le fanatisme ?",
       "Écrit : expliquer et commenter « Les fanatiques puisent leur fureur dans la religion même qui les condamne »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Parallélismes : fanatisme/superstition = transport/fièvre = rage/colère.",
+      "Enthousiaste ≠ fanatique (le meurtre).",
+      "Champ lexical de la maladie : gangrené, incurable, épidémique, convulsionnaires, frénétique.",
+      "Remède : l’esprit philosophique ; les lois sont impuissantes.",
+      "Ton : polémique, indigné, ironique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle différence entre l’enthousiaste et le fanatique ?",
+      "→ Réponse : L’enthousiaste prend ses songes pour des réalités ; le fanatique soutient sa folie par le meurtre.",
+      "Exemple 2 : Pourquoi les lois sont-elles impuissantes ?",
+      "→ Réponse : Parce que les fanatiques se croient pénétrés d’un esprit supérieur aux lois."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quels parallélismes ? Quelle conclusion ?",
+      "→ Solution : Fanatisme/superstition comme transport/fièvre et rage/colère : le fanatisme est le degré extrême, violent et dangereux de la superstition."
+     ]
     }
    ]
   },
@@ -431,6 +600,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment la météo du lendemain est-elle connue ? Comment voit-on un match joué à l’autre bout du monde ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les satellites artificiels, « bonnes à tout faire » mises en orbite, observent la Terre plus exactement que les postes terrestres et transmettent sans interruption des informations aux réseaux d’ordinateurs, donnant une image détaillée de « l’état du monde ».",
+      "Ils servent à l’agriculture, aux forêts, aux travaux publics, à la géologie, à l’urbanisme, aux communications, à l’éducation, à la météorologie, aux ressources naturelles ; ils localisent les catastrophes et les invasions de sauterelles, diffusent la télévision et observent les groupements militaires.",
+      "L’OMS pense qu’ils pourraient servir l’épidémiologie : détecter les régions où une maladie peut se développer (air, eau, sol, végétation), prévoir les épidémies et planifier les vaccins."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -511,6 +694,31 @@
       "Oral : avantages pour la Mauritanie du satellite Arabsat (télécommunications).",
       "Écrit (15-20 lignes) : dans quelle mesure les satellites ont-ils contribué au développement des moyens de communication ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Satellites : machines en orbite qui observent la Terre.",
+      "Comparés à des « bonnes à tout faire » dotées de « sens » artificiels.",
+      "Domaines : agriculture, météo, communications, catastrophes…",
+      "Santé : épidémiologie, prévision des épidémies, planification des vaccins."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Citez quatre domaines observés par les satellites.",
+      "→ Réponse : L’agriculture, la météorologie, les communications, les ressources naturelles.",
+      "Exemple 2 : Que peuvent détecter les satellites en matière de santé ?",
+      "→ Réponse : Les régions où, selon l’air, l’eau, le sol et la végétation, une maladie peut se développer."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Définition des satellites ?",
+      "→ Solution : Des machines fabriquées par l’homme, mises en orbite, qui observent la Terre et transmettent des informations."
+     ]
     }
    ]
   },
@@ -551,6 +759,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quand on parle de physique aujourd’hui, à quoi pense-t-on d’abord ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Werner Heisenberg, physicien allemand, prix Nobel 1932, s’interroge sur les répercussions socio-culturelles de la science moderne.",
+      "On pense d’abord aux armes atomiques et à leur influence politique.",
+      "Mais « tout instrument porte en lui l’esprit dans lequel il a été créé » : en s’occupant de ses armes nouvelles, chaque nation laisse l’esprit de la physique moderne pénétrer les esprits et s’imbriquer dans les traditions.",
+      "Là où la science moderne s’est élaborée, les gens adoptent facilement les idées neuves, car ils s’y sont adaptés progressivement ; ailleurs, ces idées se heurtent aux fondements religieux et philosophiques de la culture."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -643,6 +866,31 @@
       "Oral : faut-il adopter toutes les applications de la science moderne ou en rejeter quelques-unes ?",
       "Écrit : résumer le texte au ¼ ; discussion sur « Dans certaines parties du monde, les idées se heurtent aux fondements religieux et philosophiques de la culture »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Applications visées : les armes atomiques.",
+      "Aspect plus important que le politique : l’impact culturel (l’esprit de la science pénètre les traditions).",
+      "Pays industrialisés : adaptation progressive aux idées neuves.",
+      "Autres pays : conflit avec les fondements religieux et philosophiques."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez « tout instrument porte en lui l’esprit dans lequel il a été créé ».",
+      "→ Réponse : Un outil transmet la manière de penser de ceux qui l’ont conçu ; l’adopter, c’est aussi adopter une part de leur esprit.",
+      "Exemple 2 : Pourquoi les pays industrialisés s’adaptent-ils mieux ?",
+      "→ Réponse : Parce qu’ils se sont habitués progressivement, depuis longtemps, aux méthodes de pensée de la science."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelles applications font l’objet de sa réflexion ?",
+      "→ Solution : Les armes atomiques et, plus largement, les applications de la physique moderne."
+     ]
     }
    ]
   },
@@ -684,6 +932,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "On entend souvent dire que les savants ont inventé la bombe atomique et sont donc responsables des guerres. Êtes-vous d’accord ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "François Jacob, biologiste, répond aux reproches adressés aux scientifiques : on les dit sans cœur, sans conscience, indifférents à l’humanité, dangereux inventeurs de moyens de destruction.",
+      "« C’est leur faire beaucoup d’honneur » : les imbéciles et les malfaisants existent dans toutes les catégories de la population.",
+      "Les catastrophes de l’histoire sont moins le fait des scientifiques que des prêtres et des hommes politiques, car ce qui fait s’entre-tuer les hommes, c’est l’intérêt mais aussi le dogmatisme : « Rien n’est aussi dangereux que la certitude d’avoir raison. » Tous les massacres ont été accomplis au nom d’une vérité jugée absolue.",
+      "La froideur et l’objectivité des savants conviennent peut-être mieux pour traiter les affaires humaines.",
+      "Ce ne sont pas les idées de la science qui engendrent les passions, ce sont les passions qui utilisent la science : « aucun génocide n’a encore été perpétré pour faire triompher une théorie scientifique »."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -760,6 +1024,32 @@
       "Oral : « Rien n’est aussi dangereux que la certitude d’avoir raison. » Êtes-vous d’accord ? Arguments et exemples.",
       "Écrit : résumé au ¼ ; ou discussion : « La science ne conduit pas au racisme et à la haine. C’est la haine qui en appelle à la science pour justifier son racisme. »"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Reproches : sans cœur, sans conscience, dangereux.",
+      "Antiphrase : « C’est leur faire beaucoup d’honneur ».",
+      "Thèse : le vrai danger est le dogmatisme, la certitude d’avoir raison.",
+      "Ce sont les passions qui utilisent la science, et non l’inverse.",
+      "Objectivité scientifique : une qualité, non un défaut."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Selon Jacob, quelles sont les deux causes qui font s’entre-tuer les hommes ?",
+      "→ Réponse : L’intérêt et le dogmatisme (la certitude d’avoir raison).",
+      "Exemple 2 : Relevez la phrase qui conclut l’argumentation.",
+      "→ Réponse : « Mais aucun génocide n’a encore été perpétré pour faire triompher une théorie scientifique. »"
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quels reproches fait-on aux scientifiques ?",
+      "→ Solution : D’être sans cœur et sans conscience, de ne pas s’intéresser au reste de l’humanité, d’être dangereux en découvrant des moyens de destruction et de coercition et en s’en servant."
+     ]
     }
    ]
   },
@@ -800,6 +1090,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les inventions servent-elles toujours au bien de l’humanité ? Donnez un exemple contraire."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans une lettre des « Lettres Persanes » (Venise, 1717), un Persan doute que l’utilité des sciences occidentales dédommage les hommes de leur mauvais usage.",
+      "L’invention des bombes aurait ôté la liberté aux peuples d’Europe : les princes entretiennent de grosses armées qui oppriment leurs sujets ; depuis la poudre, il n’y a plus de places imprenables, donc plus d’asile contre l’injustice.",
+      "Il craint qu’on découvre un jour un moyen plus rapide de faire périr des nations entières (phrase prophétique).",
+      "La chimie est un « quatrième fléau » après la guerre, la peste et la famine.",
+      "La boussole et les découvertes ont apporté les maladies, l’inutile multiplication de l’or et de l’argent, la destruction de nations et la servitude des survivants."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -850,6 +1156,31 @@
       "Oral : enquête sur l’état de la recherche scientifique en Mauritanie, puis exposé-débat.",
       "Écrit : expliquer et discuter « Science sans conscience n’est que ruine de l’âme » (Rabelais)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Genre : lettre (roman épistolaire).",
+      "Intention : dénoncer le mauvais usage des sciences.",
+      "Science et asservissement : bombes, armées, oppression, destruction des peuples découverts.",
+      "Phrase prophétique : la crainte d’une arme d’extermination (annonce l’arme nucléaire)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi la chimie est-elle appelée « quatrième fléau » ?",
+      "→ Réponse : Parce qu’elle détruit les hommes continuellement, en détail, alors que la guerre, la peste et la famine les détruisent en gros, par intervalles.",
+      "Exemple 2 : Que reproche l’auteur à la boussole ?",
+      "→ Réponse : D’avoir communiqué aux Européens les maladies des peuples découverts et d’avoir causé leur destruction et leur servitude."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Justifiez le titre.",
+      "→ Solution : L’auteur énumère les dangers des inventions : bombes, poudre, chimie, boussole."
+     ]
     }
    ]
   },
@@ -891,6 +1222,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Combien d’heures passez-vous chaque jour devant un écran ? Qu’y gagnez-vous ? Qu’y perdez-vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La télévision est une des plus belles inventions de l’homme moderne et, grâce à la baisse des prix, elle est devenue un objet familier en Afrique.",
+      "Ses avantages : elle est une source inépuisable d’informations (pays, cultures, événements culturels, politiques, économiques, scientifiques) ; elle rapproche les hommes, les frontières ne sont plus des barrières (les Jeux de Sydney et l’épopée des Lions indomptables du Cameroun ; la douleur des enfants soldats du Burundi, du Congo, de la Sierra Leone) ; elle est une source intarissable de distractions.",
+      "Mais une mauvaise utilisation a des effets néfastes : les jeunes enfants ne distinguent pas l’image de la réalité et imitent des vedettes qui ne sont pas des modèles ; les images de violence les prédisposent à la brutalité ; enfin la télévision cause de mauvais résultats scolaires et du désordre dans les familles, car elle accapare.",
+      "L’auteur, parent africain, conseille de ne pas laisser les enfants regarder tous les programmes sans précaution."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -956,6 +1302,32 @@
       "Écrit (au choix) : résumé au ⅓ ; ou discussion : « La télévision est l’une des plus belles inventions de l’homme moderne. »",
       "Exposé : le téléphone portable et l’Internet : utilisation en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Introduction : la fascination de la télévision ; question : n’a-t-elle que des avantages ?",
+      "Avantages : information, rapprochement des hommes, distraction.",
+      "Inconvénients : imitation de mauvais modèles, violence, échec scolaire et désordre familial.",
+      "Connecteurs : En premier lieu, Par ailleurs, Enfin / Tout d’abord, Ensuite, Enfin.",
+      "Conclusion : se méfier, surveiller les programmes des enfants."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez les connecteurs qui organisent les avantages.",
+      "→ Réponse : En premier lieu, Par ailleurs, Enfin.",
+      "Exemple 2 : Pourquoi les images de violence sont-elles dangereuses selon l’auteur ?",
+      "→ Réponse : Les jeunes qui y sont exposés grandissent dans un milieu marqué par la violence, ce qui les prédispose à devenir eux-mêmes brutaux."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Justifiez le titre.",
+      "→ Solution : Le texte montre que la télévision, malgré ses bienfaits, a des effets néfastes sur les enfants : il faut donc s’en méfier (« nous ne devrions pas laisser sans précaution nos jeunes enfants regarder tous les programmes »)."
+     ]
     }
    ]
   },
@@ -998,6 +1370,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "La science a-t-elle rendu la vie meilleure ? Citez un bienfait et un danger."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La Conférence mondiale sur la science (Budapest, 1999) rappelle que nous vivons sur la même planète, dans une interdépendance croissante : notre avenir est lié à la préservation des systèmes de maintien de la vie.",
+      "Les nations et les scientifiques doivent utiliser de manière responsable le savoir pour satisfaire les besoins humains, en faisant collaborer toutes les sciences (naturelles, biomédicales, de l’ingénieur, sociales et humaines).",
+      "La science a apporté des bienfaits : espérance de vie accrue, traitement de maladies, hausse de la production agricole, libération des tâches pénibles, nouveaux produits et technologies de communication.",
+      "Mais elle a aussi causé la dégradation de l’environnement, des catastrophes technologiques, l’exclusion sociale et des armes sophistiquées.",
+      "La déclaration appelle à réduire les ressources consacrées aux armements pour les reconvertir à des fins civiles."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1048,6 +1436,33 @@
       "Oral : le savoir scientifique utilisé en Mauritanie n’a-t-il que des avantages ?",
       "Écrit : résumé au ¼ ; discussion de « Les sciences doivent assurer à tous une meilleure qualité de vie… »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "« Nous » : les participants à la conférence (nations et scientifiques).",
+      "Interdépendance et préservation de la planète.",
+      "Collaboration de toutes les sciences au service de l’humanité.",
+      "Avantages : santé, agriculture, énergie, communication.",
+      "Inconvénients : environnement, catastrophes, exclusion, armes.",
+      "Proposition : reconvertir l’armement à des fins civiles."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelles sciences doivent collaborer ?",
+      "→ Réponse : Les sciences naturelles, biomédicales, de l’ingénieur, ainsi que les sciences sociales et humaines.",
+      "Exemple 2 : Résumez l’idée du paragraphe sur les bienfaits.",
+      "→ Réponse : Le savoir scientifique a allongé la vie, soigné des maladies, augmenté la production agricole et libéré l’homme des tâches pénibles."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Que désigne « nous » ?",
+      "→ Solution : Les participants à la Conférence mondiale sur la science : les nations et les scientifiques du monde."
+     ]
     }
    ]
   },
@@ -1088,6 +1503,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "D’où vient, à votre avis, le mot « informatique » ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Formé à partir de « information » et « automatique », le mot informatique désigne le traitement automatique de l’information par des ordinateurs, et plus largement l’ensemble des sciences et techniques liées au traitement de l’information ; dans le parler populaire, il désigne aussi le matériel (l’électronique) et la bureautique.",
+      "Le terme a été créé en mars 1962 par Philippe Dreyfus, ancien directeur du Centre National de Calcul Électronique de Bull, pour nommer son entreprise, la Société d’Informatique Appliquée (SIA).",
+      "Ses domaines sont nombreux : banque, médecine, agriculture, administrations, commerce.",
+      "Les ordinateurs traitent des informations de plus en plus complexes, et l’on est passé de « l’informatique » aux « technologies de l’information », puis aux « nouvelles technologies de l’information et de la communication »."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1135,6 +1565,31 @@
       "Écrit (15-20 lignes) : avantages et inconvénients de l’informatique.",
       "Enquête : l’informatique dans l’éducation et les lycées."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Informatique = information + automatique.",
+      "Créé en 1962 par Philippe Dreyfus (SIA).",
+      "Domaines : banque, médecine, agriculture, administrations, commerce.",
+      "Évolution : technologies de l’information, NTIC, traitement des connaissances."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qui a créé le mot « informatique » et quand ?",
+      "→ Réponse : Philippe Dreyfus, en mars 1962.",
+      "Exemple 2 : Vers quoi le terme informatique glisse-t-il progressivement ?",
+      "→ Réponse : Vers un sens plus restreint, relié aux aspects techniques."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce que l’informatique ? Autres sens ?",
+      "→ Solution : Le traitement automatique de l’information par ordinateur ; aussi les sciences et techniques de l’information, le matériel (l’électronique) et la bureautique."
+     ]
     }
    ]
   },
@@ -1175,6 +1630,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un seul homme peut-il connaître tout ce qui s’écrit dans le monde aujourd’hui ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans un article du Monde (1967), le journaliste part d’une constatation : les bureaux deviennent des laboratoires où l’on traite scientifiquement l’information pour prendre des décisions, et cette information est énorme en quantité, mondiale, et de plus en plus diverse.",
+      "Aucun cerveau humain ne peut l’embrasser.",
+      "D’où un paradoxe : le savant universel n’existe plus (ère de la spécialisation), mais les connaissances sont liées entre elles ; plus on se spécialise, plus on devrait le regretter.",
+      "L’informatique, méthode nouvelle, résout cette contradiction en trois phases : rassembler les informations dans tous les domaines et toutes les langues (traduction automatique) ; les trier et les classer (codification, systèmes de recherche) ; les traiter (accumuler, comparer, éliminer les mauvaises solutions)."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1230,6 +1700,31 @@
       "Écrit : résumer le texte au ¼.",
       "Enquête : l’informatique en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Genre : article de presse de vulgarisation, pour le grand public.",
+      "Caractéristiques de l’information : quantité, dimension mondiale, diversité.",
+      "Paradoxe : spécialisation des cerveaux / unité des connaissances.",
+      "Trois phases : rassembler, trier et classer, traiter."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez le paradoxe relevé par le journaliste.",
+      "→ Réponse : Plus on se spécialise, plus on découvre les liens entre les domaines du savoir, donc plus on devrait regretter d’être spécialisé.",
+      "Exemple 2 : Quelle branche de l’informatique est « encore à ses balbutiements » ?",
+      "→ Réponse : La traduction automatique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Genre, destinataire, objectif ?",
+      "→ Solution : Un article de presse (Le Monde) destiné au grand public, pour expliquer la nature et le rôle de l’informatique."
+     ]
     }
    ]
   },
@@ -1271,6 +1766,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourrait-on un jour être soigné par un ordinateur ? Qu’est-ce qui existe déjà ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "En 1968, le Dr John Anderson imagine l’avenir de la médecine à l’ère de l’informatique.",
+      "Monsieur Aba, malade, appelle son médecin par un « téléphone-téléviseur » qui permet de se voir.",
+      "Le médecin décide de le recevoir au centre sanitaire, où il se rend en ambulance électrique climatisée.",
+      "Le médecin demande à l’ordinateur le dossier médical du patient, le lit à l’écran et y dicte de nouveaux renseignements ; l’ordinateur organise la visite.",
+      "Au centre, l’infirmière le conduit à la chambre B2 (l’ordinateur peut indiquer la direction) et annonce son nom dans un microphone.",
+      "Le médecin l’examine, ordonne des analyses et dicte un résumé ; l’ordinateur propose des diagnostics possibles et suggère d’autres tests.",
+      "Vingt ans plus tard, cette fiction est en partie devenue réalité."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1330,6 +1843,32 @@
       "Écrit : texte d’anticipation (20 lignes) prêtant aux ordinateurs ou robots des pouvoirs extraordinaires.",
       "Enquête dans un centre de soins de votre environnement."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Contact : par téléphone-téléviseur (visioconférence).",
+      "Consultation au centre sanitaire.",
+      "L’ordinateur : dossier médical, organisation de la visite, orientation, aide au diagnostic.",
+      "Prise en charge : médecin, infirmière et ordinateur.",
+      "Réalité aujourd’hui : téléconsultation, dossiers électroniques, aide au diagnostic."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’un texte d’anticipation ?",
+      "→ Réponse : Un texte qui imagine l’avenir à partir des possibilités de la science et de la technique.",
+      "Exemple 2 : Quelle est la part de l’ordinateur dans le diagnostic ?",
+      "→ Réponse : Il présente une liste de diagnostics possibles et suggère d’autres possibilités et d’autres tests."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Comment M. Aba contacte-t-il son médecin ?",
+      "→ Solution : Par le « téléphone-téléviseur », qui lui permet de lui parler en se voyant."
+     ]
     }
    ]
   },
@@ -1369,6 +1908,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que faites-vous avec Internet ? Que perdez-vous à cause de lui ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Avec l’informatique, le monde a connu une grande évolution : elle est devenue indispensable à la communication.",
+      "Internet permet d’effectuer sans se déplacer des courses, des réservations, des commandes, des recherches d’emploi ; les réseaux sociaux permettent à des millions de personnes de communiquer, discuter et se divertir malgré les distances, d’exprimer leurs opinions sur des blogs, de partager photos et vidéos, et de travailler à distance.",
+      "Mais l’informatique favorise la communication virtuelle : les gens se parlent peu et deviennent solitaires et insociables, les contacts physiques disparaissent.",
+      "De plus, les réseaux ne sont pas toujours sécurisés : virus, perte de données, vols et arnaques."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1416,6 +1970,30 @@
       "Écrit (15-20 lignes) : avantages et inconvénients d’une technologie de votre choix.",
       "Enquête : interroger un professionnel utilisant un ordinateur."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Avantages : opérations à distance, communication mondiale, expression, travail à distance.",
+      "Inconvénients : communication virtuelle, isolement, insécurité (virus, vols, arnaques).",
+      "Structure : thèse (avantages) / « Mais » / antithèse (inconvénients)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel connecteur marque le passage aux inconvénients ?",
+      "→ Réponse : « Mais » (« Mais tous ces avantages ne doivent pas masquer… »).",
+      "Exemple 2 : Qu’appelle-t-on « communication virtuelle » ?",
+      "→ Réponse : Une communication par écrans interposés, sans contact physique direct."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Avantages par ordre décroissant (exemple) ?",
+      "→ Solution : La communication à distance ; les opérations sans déplacement (réservations, commandes) ; la recherche d’emploi et le travail à distance ; l’expression des opinions."
+     ]
     }
    ]
   },
@@ -1457,6 +2035,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Vous souvenez-vous de la période du confinement ? Qu’est-ce qui a changé dans votre vie et celle de votre famille ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Comme la plupart des pays du monde, la Mauritanie a été durement éprouvée par la pandémie de la Covid 19, qui a engendré une crise sanitaire, sociale et économique.",
+      "Les mesures (confinement, couvre-feu, gestes barrières) ont dérangé la vie dans tous les domaines : les enfants ont été privés d’école ; les cours en ligne ont montré leurs limites car tout le monde n’est pas connecté ; les travailleurs de l’informel (peintres, maçons, mécaniciens, ouvriers, marchands ambulants), qui vivaient au jour le jour, se sont retrouvés au chômage ; boutiquiers, restaurateurs et prestataires de services ont fermé ; la pêche a subi de grands dommages.",
+      "L’État a créé un Comité interministériel chargé de garder un stock suffisant de produits alimentaires et de médicaments, et a distribué des vivres aux populations démunies.",
+      "Malgré les vaccins, l’apparition de variants complique l’immunisation : la vigilance reste de mise.",
+      "« Endurance et patience… »"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1540,6 +2134,32 @@
       "Écrit : résumé au ¼ ; ou discussion : les vaccins suffisent-ils pour éradiquer le Coronavirus ?",
       "Enquête : l’évolution de la pandémie auprès des autorités sanitaires."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Défi : la pandémie de Covid 19 (crise sanitaire, sociale, économique).",
+      "Victimes : élèves, travailleurs de l’informel, commerçants, pêche.",
+      "Mesures de l’État : comité interministériel, stocks, distributions de vivres.",
+      "Limites : Internet inaccessible à tous ; variants du virus.",
+      "Leçon : vigilance, endurance et patience."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « se tourner les pouces » ?",
+      "→ Réponse : Rester sans rien faire.",
+      "Exemple 2 : Pourquoi les cours en ligne ont-ils montré leurs limites ?",
+      "→ Réponse : Parce qu’ils exigent Internet et que tout le monde n’est pas connecté sur l’ensemble du territoire."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quel défi parle-t-on ?",
+      "→ Solution : De la pandémie de la Covid 19 et de ses conséquences sanitaires, sociales et économiques."
+     ]
     }
    ]
   },
@@ -1581,6 +2201,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi certaines personnes refusent-elles de faire un test de dépistage, même gratuit ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le Sida est un déficit du système immunitaire transmis par un virus, le VIH ; il touche tous les continents : c’est une pandémie.",
+      "Selon le rapport de l’ONUSIDA, la plupart des 34,3 millions de personnes qui vivent avec le VIH ne savent pas qu’elles sont porteuses du virus, à cause de l’ignorance, du manque de services de conseil et de test et de la stigmatisation (rejet, violence contre les séropositifs).",
+      "L’auteur commente : l’ignorance joue un rôle, mais ce sont surtout les situations de précarité qui favorisent la transmission ; il dénonce le cercle vicieux de l’endettement des pays pauvres et la « marche impitoyable » des compagnies pharmaceutiques, plus soucieuses de profits que de soigner.",
+      "Enfin, un résultat positif n’est pas une mort annoncée : dans un pays en développement, une personne infectée peut vivre en moyenne neuf ans avant de tomber gravement malade, et survivre jusqu’à un an après, même sans traitement antirétroviral."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1642,6 +2277,32 @@
       "Oral : recherche collective auprès des autorités mauritaniennes de lutte contre le Sida (objectifs, stratégies, public ciblé, place du milieu scolaire).",
       "Écrit : réécrire au style indirect le passage « L’ONUSIDA… la propagation de cette pandémie »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Le Sida : une pandémie qui touche tous les continents.",
+      "Causes de l’ignorance du statut : ignorance, manque de services, stigmatisation.",
+      "Commentaire : la précarité favorise la transmission.",
+      "Responsables : endettement des pays pauvres, profits des laboratoires.",
+      "Séropositif ≠ mort immédiate (environ 9 ans avant la maladie)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « cercle vicieux » ?",
+      "→ Réponse : Un problème insoluble : les pays pauvres doivent s’endetter davantage pour soigner, ce qui les appauvrit encore.",
+      "Exemple 2 : Pourquoi parle-t-on de « pandémie » ?",
+      "→ Réponse : Parce que l’épidémie touche tous les continents et toutes les sociétés."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Pourquoi la plupart des porteurs du VIH l’ignorent-ils ? Votre jugement ?",
+      "→ Solution : Ignorance, manque de services appropriés de conseil et de test, stigmatisation (peur du rejet et de la violence). Attitude dangereuse : elle propage la maladie ; il faut se faire dépister."
+     ]
     }
    ]
   },
@@ -1683,6 +2344,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Votre famille ou vos voisins sont-ils venus de la campagne vers la ville ? Pourquoi ? Y vivent-ils mieux ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Selon une étude du Bureau International du Travail (BIT), l’urbanisation galopante du Tiers-monde ne favorise ni le développement économique ni le progrès social, contrairement à l’Europe après la révolution industrielle.",
+      "17 des 20 plus grandes agglomérations seront dans le Tiers-monde ; São Paulo et Mexico compteront chacune 25 millions d’habitants ; 75 % de la population sera urbanisée en Amérique latine, 42 % en Asie, 37 % en Afrique.",
+      "Dans ces villes, un quart de la population vit dans la pauvreté absolue ; les bidonvilles manquent d’assainissement, d’infrastructures sociales et surtout d’emplois et de formation, ce qui force les pauvres à vivre de la rue.",
+      "Les gouvernements ont tenté de décourager l’exode rural, mais ont échoué, et l’accroissement naturel aggrave l’engorgement des villes."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1743,6 +2419,32 @@
       "Oral : comment lutter efficacement contre l’exode rural en Mauritanie ?",
       "Écrit (dissertation) : « Dans notre pays, le phénomène d’urbanisation a engendré des bouleversements socio-économiques énormes. »"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thèse (BIT) : l’urbanisation du Tiers-monde n’est pas un moteur de développement.",
+      "Chiffres : 17/20 grandes villes ; 25 millions à São Paulo et Mexico.",
+      "Conditions : pauvreté absolue (¼), bidonvilles, chômage.",
+      "Opposition : villes européennes = centres de développement.",
+      "Échec des politiques contre l’exode rural."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’une mégalopole ?",
+      "→ Réponse : Une très grande ville, une énorme agglomération.",
+      "Exemple 2 : Quel pourcentage de la population africaine sera urbanisé d’après le texte ?",
+      "→ Réponse : 37 %."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Pourquoi l’urbanisation galopante ne favorise-t-elle pas le développement ?",
+      "→ Solution : Parce que les villes du Tiers-monde n’offrent ni emplois, ni formation, ni assainissement, ni infrastructures sociales : les conditions y sont « diamétralement opposées » à celles de l’Europe industrielle."
+     ]
     }
    ]
   },
@@ -1784,6 +2486,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Si vous deviez mettre en garde un petit frère contre un danger, quels arguments utiliseriez-vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Gilbert Sinoué écrit à son fils pour le mettre en garde contre la drogue.",
+      "Il décrit des scènes qui se répètent partout, à chaque heure : un adolescent titubant à Mexico, un autre qui s’écroule à Paris ; à Rio, les trafiquants contrôlent les favelas ; à Bamako, des enfants reniflent des solvants et la foule brûle les voleurs ; à Chicago, les bandes s’affrontent pour le marché.",
+      "Les profits du trafic s’élèvent à 400 milliards de dollars par an (deux fois l’industrie pharmaceutique, dix fois l’aide au développement) ; 85 milliards sont « blanchis » chaque année.",
+      "La drogue détruit aussi l’environnement (déforestation en Colombie, au Pérou, en Bolivie).",
+      "Il conclut : la drogue n’enrichit que les assassins, qui n’en consomment jamais et protègent leurs propres enfants ; c’est « un faux refuge, une béquille de papier » qui enlève à l’homme sa dignité.",
+      "« La drogue tue » : plus de 200 000 victimes par an."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1876,6 +2595,32 @@
       "Oral : recherche-exposé/débat : « La drogue est un faux refuge, une béquille de papier… »",
       "Écrit : à la manière de l’auteur, une lettre (15 à 20 lignes) pour mettre en garde un parent ou un ami contre un vice : tabac, alcool, jeux de hasard…"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Lettre d’un père à son fils : but = mise en garde.",
+      "Scènes sur tous les continents : Amérique, Europe, Afrique.",
+      "Drogue et violence, trafic, blanchiment, déforestation.",
+      "Chiffres-chocs : 400 milliards $ ; 200 000 morts par an.",
+      "Images : « faux refuge », « béquille de papier », « enchantement mortel »."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez « une béquille de papier ».",
+      "→ Réponse : Un soutien illusoire : la drogue semble aider mais elle ne peut rien porter, elle fait tomber.",
+      "Exemple 2 : Quel lien l’auteur établit-il entre la drogue et l’environnement ?",
+      "→ Réponse : La culture de la coca détruit les forêts : en Colombie, 4 hectares de forêt pour 1 hectare de coca."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qui a écrit cette lettre ? À qui et pourquoi ?",
+      "→ Solution : Gilbert Sinoué, à son fils, pour le mettre en garde contre la drogue."
+     ]
     }
    ]
   },
@@ -1917,6 +2662,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Connaissez-vous des pratiques traditionnelles qui nuisent à la santé des filles et des femmes ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Ce texte informatif, tiré d’un rapport de 2005 sur l’application du Programme d’action de Beijing, présente plusieurs formes de violence exercées contre les femmes en Mauritanie.",
+      "Les violences conjugales : une collecte de données (2002) dans 8 structures sanitaires de Nouakchott montre qu’elles sont assez répandues ; les victimes se heurtent à la faible capacité d’accueil, à l’absence d’enregistrement des cas et aux difficultés de la poursuite en justice.",
+      "Les mutilations génitales féminines : 71 % des femmes enquêtées déclarent avoir été excisées (76 % en milieu rural, 64,8 % en ville ; de 28 % chez les Ouolofs à 92 % chez les Soninkés).",
+      "Le gavage : pratique néfaste en régression (22 % des femmes), surtout en milieu maure.",
+      "Les mariages précoces : encore fréquents, même si l’âge au premier mariage recule (28 % des 15-19 ans sont mariées)."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1972,6 +2733,32 @@
       "Écrit : un texte informatif d’une vingtaine de lignes, en quatre paragraphes avec sous-titres, dénonçant d’autres pratiques néfastes.",
       "Enquête : auprès des services chargés de la condition féminine."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Type : texte informatif (rapport), avec sous-titres.",
+      "Violences conjugales : peu prises en charge.",
+      "Excision : 71 % (plus en milieu rural).",
+      "Gavage : en régression (22 %).",
+      "Mariage précoce : encore fréquent."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce que le gavage ?",
+      "→ Réponse : Forcer une femme à manger beaucoup pour qu’elle prenne du poids, considéré comme signe de beauté.",
+      "Exemple 2 : Quel milieu est le plus touché par l’excision ?",
+      "→ Réponse : Le milieu rural (76 %) plus que le milieu urbain (64,8 %)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1./2. De quel défi parle-t-on ?",
+      "→ Solution : De la violence à l’égard des femmes en Mauritanie."
+     ]
     }
    ]
   },
@@ -2013,6 +2800,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi, dans un monde qui produit beaucoup, des enfants meurent-ils encore de faim ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Alors que les magasins des pays riches croulent sous les marchandises, chaque jour 10 000 personnes meurent de carences alimentaires et un milliard et demi d’êtres humains s’étiolent.",
+      "La malnutrition chronique règne surtout dans le Tiers Monde (Asie méridionale, Afrique), en raison de l’explosion démographique, de la croissance rapide des villes et du manque de moyens techniques de l’agriculture.",
+      "Jadis paysans et éleveurs produisaient pour eux-mêmes (agriculture vivrière), sauf à la soudure, lors des catastrophes et des guerres.",
+      "La colonisation a introduit les cultures commerciales d’exportation (coton, café, canne à sucre) qui ont remplacé les cultures vivrières ; la monoculture rend dépendant des cours mondiaux.",
+      "Les citadins doivent changer d’habitudes alimentaires et dépendent des industries de transformation, mais les pauvres des bidonvilles n’ont pas l’argent pour acheter."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2063,6 +2866,32 @@
       "Oral : comment éradiquer la faim dans certaines localités de la Mauritanie ?",
       "Écrit : résumé au ¼, ou article de journal (15-20 lignes) proposant des solutions contre la faim en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Défi : la faim et la malnutrition.",
+      "Zones touchées : Tiers Monde, Asie méridionale, Afrique.",
+      "Causes : explosion démographique, urbanisation, faibles moyens agricoles.",
+      "Colonisation : cultures commerciales à la place des cultures vivrières.",
+      "Villes : dépendance des industries alimentaires, pauvreté."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce que la « période de la soudure » ?",
+      "→ Réponse : La période entre deux récoltes, quand les réserves s’épuisent.",
+      "Exemple 2 : Qu’est-ce que la monoculture ?",
+      "→ Réponse : La culture d’un seul produit commercial, dont les cours peuvent s’effondrer."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quel défi ?",
+      "→ Solution : La faim dans le monde."
+     ]
     }
    ]
   },
@@ -2104,6 +2933,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les films, la musique, les vêtements que vous aimez viennent-ils de chez nous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour Catherine Trautmann (table ronde de l’UNESCO, 1999), la mondialisation menace les identités culturelles et risque d’engendrer une standardisation : elle pousse à l’uniformisation des comportements et des modes de vie.",
+      "Il faut promouvoir des valeurs communes à l’humanité, mais sans oublier les spécificités héritées du temps, le respect des identités et la richesse de la diversité des cultures.",
+      "La diversité culturelle est aussi une exigence économique : la logique du libre-échange pousserait les États à renoncer à leurs industries culturelles face à des produits étrangers moins chers (films hollywoodiens amortis sur un vaste marché).",
+      "Or les industries culturelles, du savoir et de l’imaginaire sont des industries d’avenir, créatrices d’emplois et de croissance."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2151,6 +2995,32 @@
       "Écrit : « La mondialisation menace les identités culturelles ». Qu’en pensez-vous ?",
       "Enquête : méfaits de la mondialisation sur certains secteurs du pays."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thèse : la mondialisation menace les identités culturelles.",
+      "Danger : standardisation, uniformisation.",
+      "Nécessité : valeurs communes + respect de la diversité.",
+      "Enjeu économique : protéger les industries culturelles.",
+      "Exemple : les films hollywoodiens exportés à bas prix."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi les films hollywoodiens sont-ils vendus à bas prix ?",
+      "→ Réponse : Parce qu’ils sont déjà amortis sur un vaste marché avant d’être exportés, sans l’obstacle de la langue.",
+      "Exemple 2 : Que sont les « industries de l’imaginaire » ?",
+      "→ Réponse : Les industries culturelles : cinéma, audiovisuel, livre, musique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Comment la mondialisation porte-t-elle atteinte aux identités ?",
+      "→ Solution : En poussant à l’uniformisation des comportements et des modes de vie (standardisation culturelle)."
+     ]
     }
    ]
   },
@@ -2192,6 +3062,25 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Avez-vous vu des enfants mendier dans les rues ? Pourquoi sont-ils là ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Kadia Sall raconte la vie des « Almoudos », enfants confiés à un marabout pour apprendre le Coran.",
+      "Chez Thierno Yéro, ils dorment sur des nattes dans une baraque glaciale ; réveillés à coups de baguette, ils font les corvées puis partent mendier, le ventre creux, car ils doivent rapporter de l’argent au marabout.",
+      "Amadou, le plus jeune (six ans), envoyé en ville par son père qui lui avait promis une vie meilleure, découvre une réalité tout autre : il a peur des voitures, rentre les mains vides et il est battu.",
+      "Le marabout, venu en ville faire fortune en vendant talismans et amulettes à des citadins crédules, lui donne une potion contre la fièvre et l’envoie mendier malgré tout.",
+      "Plongé dans ses pensées, l’enfant est renversé par une voiture et meurt.",
+      "Il est enterré avant l’arrivée de son père.",
+      "Pour le marabout comme pour les parents, c’était « la volonté d’Allah ».",
+      "L’auteur dénonce : « Il est si facile de s’accrocher au fatalisme pour étouffer ses responsabilités ! »"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2260,6 +3149,32 @@
       "Oral : avantages et inconvénients de l’enseignement traditionnel en Mauritanie.",
       "Écrit : expliquer et discuter « Il est facile de s’accrocher au fatalisme pour étouffer ses responsabilités »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Sujet : la vie misérable des enfants mendiants confiés à un marabout.",
+      "Personnages : Amadou, Thierno Yéro, le père.",
+      "Conditions : froid, coups, faim, mendicité forcée.",
+      "Drame : la mort d’Amadou renversé par une voiture.",
+      "Dénonciation : le fatalisme qui étouffe les responsabilités."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que promettait le père à Amadou ?",
+      "→ Réponse : Qu’il mangerait à sa faim, coucherait dans une maison et serait instruit.",
+      "Exemple 2 : Qu’est-ce que le fatalisme ?",
+      "→ Réponse : L’attitude qui attribue tout au destin et dispense de chercher les vraies causes et les responsables."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quoi parle le texte ?",
+      "→ Solution : De la vie misérable des Almoudos, enfants confiés à un marabout et forcés de mendier, et de la mort du petit Amadou."
+     ]
     }
    ]
   },
@@ -2301,6 +3216,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi certains jeunes diplômés veulent-ils quitter leur pays à tout prix ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Azel a fait des études de droit grâce à une bourse obtenue avec son bac avec mention.",
+      "Il comptait sur son oncle, avocat à Larache, pour l’employer ; mais l’oncle, intègre, refusant les « arrangements », perdit sa clientèle et ferma son cabinet.",
+      "Sans piston, Azel ne trouve pas de travail, comme beaucoup d’autres.",
+      "Il participe au sit-in des diplômés chômeurs devant le Parlement à Rabat ; au bout d’un mois sans résultat, il reprend le car pour Tanger.",
+      "Désespéré, il imagine même sa mort dans un accident et les regrets de ses proches.",
+      "Partir devient une obsession : quitter « cette terre qui ne veut plus de ses enfants » et revenir un jour fier et riche, « partir pour sauver sa peau, même en risquant sa peau »."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2348,6 +3280,32 @@
       "Écrit : résumé au ¼ (376 mots : 4 = 94 mots).",
       "Enquête : la Mauritanie et les drames de l’émigration clandestine."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Situation : diplômé en droit, chômeur.",
+      "Espoir déçu : l’oncle avocat intègre a perdu sa clientèle.",
+      "Obstacle : le piston et la corruption.",
+      "Désespoir : sit-in inutile, rêve de mort.",
+      "Décision : émigrer (partir en Espagne) à tout prix."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez « partir pour sauver sa peau, même en risquant sa peau ».",
+      "→ Réponse : Émigrer pour échapper à une vie sans issue, même si le voyage clandestin peut coûter la vie.",
+      "Exemple 2 : Que signifie « piston » ?",
+      "→ Réponse : Une recommandation, une intervention de personnes influentes pour obtenir un emploi."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelle était la situation d’Azel ?",
+      "→ Solution : Diplômé en droit, issu d’une famille pauvre, il était au chômage."
+     ]
     }
    ]
   },
@@ -2389,6 +3347,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Dans votre quartier, voyez-vous des enfants travailler au lieu d’aller à l’école ? Quels travaux font-ils ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le texte présente trois formes de travail des enfants.",
+      "Le travail domestique : les enfants domestiques, estimés à plusieurs millions, sont les plus vulnérables et les plus difficiles à protéger ; mal payés ou pas du tout, ils font la lessive, la cuisine, le ménage, gardent les enfants, travaillent parfois 18 heures par jour, dorment par terre, sont privés d’école et de jeux et exposés aux violences.",
+      "Le travail militaire : l’enrôlement forcé d’enfants est une forme moderne d’esclavage ; selon l’ONU, 300 000 jeunes de moins de 18 ans ont participé à une trentaine de conflits (Sri Lanka, Bosnie, Afghanistan, Cambodge, Liban ; guérillas en Amérique latine) ; on les recrute parce qu’ils sont impressionnables et obéissants.",
+      "Les métiers des rues : cirer les chaussures, laver les voitures, porter des colis, vendre… ce sont des « enfants dans les rues », pas nécessairement « des rues »."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2446,6 +3419,32 @@
       "Écrit (discussion ou dissertation) : dégager, à partir d’exemples, les méfaits du travail des enfants.",
       "Enquête : conditions de travail des enfants dans votre quartier."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Type : texte informatif, organisé par sous-titres.",
+      "Travail domestique : le plus caché, le plus exploité.",
+      "Travail militaire : enfants soldats (300 000 selon l’ONU).",
+      "Métiers des rues : survie de l’enfant et de sa famille.",
+      "Phénomène mondial : Asie, Europe, Amérique latine, Moyen-Orient."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi recrute-t-on des enfants soldats selon l’UNICEF ?",
+      "→ Réponse : Parce qu’ils sont impressionnables, sensibles à l’autorité, moins portés à déserter ou à réclamer leur solde, et utiles pour les tâches auxiliaires.",
+      "Exemple 2 : Quelle différence entre « enfants dans les rues » et « enfants des rues » ?",
+      "→ Réponse : Les premiers travaillent dans la rue mais rentrent chez eux le soir ; les seconds vivent dans la rue."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quel type de texte s’agit-il ?",
+      "→ Solution : D’un texte informatif (documentaire), organisé en trois parties avec sous-titres."
+     ]
     }
    ]
   },
@@ -2487,6 +3486,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "L’argent peut-il changer la façon dont une mère s’occupe de ses enfants ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans son essai « L’argent et l’inconscient », Thomas Wiseman étudie l’influence psycho-sociologique de l’argent.",
+      "Il part de la relation mère-enfant : on croirait l’instinct maternel inviolable, mais l’argent le transforme et même le supprime : plus une femme a d’argent, moins elle ressent le besoin de nourrir et soigner ses enfants (les nurses des classes supérieures anglaises, contrairement aux mères du Sud de l’Italie).",
+      "L’argent influence aussi les rapports amoureux : Anna Karénine abandonne mari et enfant pour une passion rendue possible par la richesse ; dans « Elvira Madigan », les amants meurent de faim puis se tuent.",
+      "« Même les histoires d’amour doivent être financées. » Dans tout mariage existe un rapport à l’argent, souvent caché : le conflit oppose la parcimonie et l’extravagance (le mari avare et la femme dépensière)."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2577,6 +3591,32 @@
       "Oral : la place de l’argent dans la famille mauritanienne.",
       "Écrit : résumé au ¼, ou discussion de « L’argent ne fait pas le bonheur »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thème : le pouvoir de l’argent sur les comportements fondamentaux.",
+      "Point de départ : l’instinct maternel.",
+      "Thèse : l’argent transforme et peut supprimer cet instinct.",
+      "Couple : Anna Karénine, Elvira Madigan.",
+      "Conflit caché : parcimonie / extravagance."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « même les histoires d’amour doivent être financées » ?",
+      "→ Réponse : Que l’amour ne peut durer sans moyens matériels pour vivre.",
+      "Exemple 2 : Quel conflit financier fondamental existe dans le mariage ?",
+      "→ Réponse : L’opposition entre la parcimonie (avarice) et l’extravagance (dépense)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Thème central ?",
+      "→ Solution : L’influence de l’argent sur les comportements et les instincts humains."
+     ]
     }
    ]
   },
@@ -2618,6 +3658,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Le sous-développement de l’Afrique est-il dû seulement aux autres (colonisation, pays riches) ou aussi aux Africains eux-mêmes ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les ministres africains de l’économie, réunis à Addis-Abeba sous l’égide de la Commission économique pour l’Afrique (CEA), reconnaissent une part de responsabilité : la production alimentaire augmente moins vite que la population (la consommation par habitant a baissé de 1,1 % par an) parce que les gouvernements n’ont pas fait de l’agriculture la « pierre angulaire » du développement (moins de 10 % des dépenses publiques).",
+      "Ils proposent d’y consacrer 20 à 35 % : une nouvelle « révolution verte ».",
+      "Mais l’auteur dénonce aussi les dirigeants qui dilapident les richesses, la corruption qui gagne le corps social « comme une gangrène », les élites qui envoient leurs enfants dans des écoles étrangères, se soignent dans le privé et placent leur argent hors des frontières.",
+      "Si eux-mêmes ne croient pas au développement de leur pays, de quel droit réclament-ils la solidarité des pays riches ?",
+      "« Charité bien ordonnée commence par soi-même. »"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2683,6 +3739,32 @@
       "Écrit : résumé au ¼ ; ou expliquer et discuter « Charité bien ordonnée commence par soi-même ».",
       "Enquête : les manifestations du sous-développement dans votre région."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Question : l’Afrique est-elle l’artisan de son propre malheur ? Réponse : « oui mais ».",
+      "Cause reconnue : l’agriculture négligée (moins de 10 % des dépenses).",
+      "Solution proposée : 20 à 35 % des dépenses à l’agriculture.",
+      "Autres causes : corruption, dilapidation, manque de confiance des élites.",
+      "Morale : mettre de l’ordre chez soi avant de demander de l’aide."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « Charité bien ordonnée commence par soi-même » ?",
+      "→ Réponse : Avant d’aider les autres ou de leur demander de l’aide, il faut d’abord faire soi-même les efforts nécessaires.",
+      "Exemple 2 : Quel exemple montre que les « agresseurs » ont changé d’identité ?",
+      "→ Réponse : Le pasteur Masaï ne craint plus le colon britannique mais la cupidité de ses compatriotes kényans les plus en vue."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Justifiez le titre.",
+      "→ Solution : Les ministres reconnaissent que la crise vient d’abord du refus des gouvernements africains de privilégier l’agriculture, et l’auteur ajoute la corruption et le comportement des élites : l’Afrique est en partie responsable de son malheur."
+     ]
     }
    ]
   },
@@ -2724,6 +3806,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi beaucoup de familles nomades se sont-elles installées en ville après les années de sécheresse ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Ce reportage du Monde (1973) décrit la catastrophe des régions sahariennes : la sécheresse persistante, la désertification et l’insuffisance des pluies ont décimé les troupeaux, unique ressource des nomades.",
+      "En avril 1973, poussées par la famine, les tribus migrent aux portes des villes ; le département de l’Aïr, au Niger, est particulièrement touché.",
+      "Agadès passe de 7 000 à plus de 15 000 habitants en quelques mois ; ces « bidonvilles du désert » favorisent la sédentarisation et font perdre au nomade sa personnalité.",
+      "Les familles se dispersent ; les femmes vendent leurs derniers bijoux d’argent pour une mesure de mil ; les villages sont peuplés de vieillards, de femmes flétries, d’adolescents devenus chefs de famille trop tôt.",
+      "L’auteur s’interroge : la catastrophe va-t-elle faire disparaître ces fiers Touaregs ?",
+      "« C’est l’enjeu du drame. »"
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2774,6 +3873,32 @@
       "Oral : les solutions au fléau de la sécheresse en Mauritanie ; ou enquête sur les familles qui transposent la vie nomade en ville.",
       "Écrit (discussion) : la vie nomade est-elle en voie de disparition en Mauritanie ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Nature : reportage journalistique (Le Monde, 1973).",
+      "Cause : sécheresse et désertification → mort des troupeaux.",
+      "Conséquences : exode vers les villes, misère, dislocation des familles.",
+      "Enjeu : la disparition de la civilisation nomade touarègue.",
+      "Ton : grave, émouvant, interrogatif à la fin."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez un chiffre qui montre l’exode.",
+      "→ Réponse : Agadès est passé de 7 000 à plus de 15 000 habitants en quelques mois.",
+      "Exemple 2 : Que signifie « décimer » ?",
+      "→ Réponse : Faire mourir en grand nombre."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelle est la nature du texte ?",
+      "→ Solution : Un reportage journalistique : article du Monde, daté, avec des lieux précis (Aïr, Agadès, Arlit) et des chiffres."
+     ]
     }
    ]
   },
@@ -2815,6 +3940,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "L’esclavage a-t-il complètement disparu dans le monde ? Sous quelles formes peut-il exister aujourd’hui ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "À l’occasion de la Journée internationale pour l’abolition de l’esclavage (2 décembre), Ban Ki-moon rappelle l’article 4 de la Déclaration universelle des droits de l’homme : « nul ne sera tenu en esclavage ni en servitude ».",
+      "Pourtant l’esclavage reste un problème grave sur tous les continents, et de nouvelles formes sont apparues : servitude pour dettes, servage, travail forcé, travail des enfants, trafic de personnes et d’organes, esclavage sexuel, enfants soldats, vente d’enfants, mariage forcé, vente de femmes, exploitation de la prostitution.",
+      "Les victimes sont surtout les pauvres et les exclus (minorités, migrants, peuples autochtones).",
+      "Pauvreté, classe, race, inégalités entre les sexes, manque d’éducation et demande de main-d’œuvre bon marché sont des pièges.",
+      "Lutter contre l’esclavage, c’est l’interdire par la loi, mais aussi combattre la pauvreté, l’analphabétisme, les disparités et la violence contre les femmes et les enfants."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2865,6 +4006,32 @@
       "Oral : raconter une injustice dont on a été victime ou témoin ; ou donner son avis sur ce message.",
       "Écrit : expliquer et discuter « Respect de l’homme ! … là est la pierre de touche » (Saint-Exupéry)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Base juridique : article 4 de la DUDH.",
+      "Nouvelles formes : servitude pour dettes, travail forcé, enfants soldats, trafic, mariage forcé…",
+      "Victimes : pauvres, minorités, migrants, autochtones.",
+      "Causes : pauvreté, inégalités, manque d’éducation.",
+      "Solutions : la loi + lutte contre la pauvreté, l’analphabétisme et les discriminations."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que dit l’article 4 de la DUDH ?",
+      "→ Réponse : « Nul ne sera tenu en esclavage ni en servitude ; l’esclavage et la traite des esclaves sont interdits sous toutes leurs formes. »",
+      "Exemple 2 : Citez trois formes nouvelles d’esclavage.",
+      "→ Réponse : La servitude pour dettes, l’utilisation d’enfants soldats, le trafic d’organes humains."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Un autre titre ?",
+      "→ Solution : « Éliminer toutes les formes d’esclavage »."
+     ]
     }
    ]
   },
@@ -2906,6 +4073,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Dans votre ville, où vivent les familles qui n’ont pas les moyens de louer ou de construire une maison ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un milliard d’habitants de la planète (le cinquième de la population mondiale) vit dehors ou dans des logements misérables ou insalubres, et environ 100 millions de personnes sont totalement sans logement : l’ONU a donc déclaré 1987 « Année internationale des sans-abri ».",
+      "Dans les pays en développement, la croissance urbaine (4 à 10 % par an) aggrave la situation : en 1987, les villes du Tiers Monde gagneront 50 millions d’habitants, ce qui exige au moins 8 millions de logements.",
+      "L’enjeu est social et écologique ; les bidonvilles qui ceinturent les métropoles sont la manifestation la plus visible du mal-développement.",
+      "Il faut construire davantage, mieux et moins cher : 360 projets ont été lancés.",
+      "Un problème essentiel est l’importation massive de ciment : il faut l’associer aux produits locaux."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2965,6 +4148,32 @@
       "Écrit : un texte de 15 à 20 lignes proposant des solutions au problème des sans-abri en Mauritanie.",
       "Enquête : les sans-abri en Mauritanie (manifestations, causes, conséquences, solutions)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Chiffres : 1 milliard mal logés, 100 millions sans abri.",
+      "1987 : Année internationale des sans-abri (ONU).",
+      "Aggravation : croissance urbaine de 4 à 10 % par an.",
+      "Manifestation : les bidonvilles autour des métropoles.",
+      "Solution : construire plus, mieux, moins cher ; ciment + matériaux locaux."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle proportion de la population mondiale est mal logée ?",
+      "→ Réponse : Le cinquième (un milliard de personnes).",
+      "Exemple 2 : Que signifie « insalubre » ?",
+      "→ Réponse : Mauvais pour la santé."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce qu’un sans-abri ?",
+      "→ Solution : Une personne qui n’a pas de maison où habiter."
+     ]
     }
    ]
   },
@@ -3006,6 +4215,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Le fer de Zouérate : à qui est-il vendu ? Et que nous achetons-nous en retour ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "En 1982, le développement économique s’appuie sur des échanges de plus en plus inégaux : les États prospères vendent cher aux nations défavorisées leurs produits industriels et même des usines « clé en main », et reçoivent à bas prix sucre, coton, café, caoutchouc, cacao, thé, arachide, huiles, fruits, ainsi que du pétrole et des minerais (le fer de Mauritanie, la bauxite, le cuivre, l’uranium…).",
+      "L’injustice ne cesse de croître : les paysans du Tiers Monde, travaillant pour l’exportation, négligent les cultures vivrières et ne mangent pas à leur faim, tandis que les pays riches « dévorent » l’énergie (un Boeing 747 brûle des tonnes de carburant alors que les agriculteurs de Tanzanie manquent de pétrole pour s’éclairer).",
+      "Pour supprimer ces inégalités, il faudrait des solutions énergiques et une transformation radicale des mentalités."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -3061,6 +4284,32 @@
       "Écrit : discussion de « Pour supprimer les dramatiques inégalités… transformation radicale des mentalités ».",
       "Enquête : les échanges commerciaux de la Mauritanie (mines, pêche…)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Problème : l’échange inégal entre pays riches et pays pauvres.",
+      "Pays riches : vendent cher des produits industriels.",
+      "Pays pauvres : vendent à bas prix matières premières et produits agricoles.",
+      "Conséquence : abandon des cultures vivrières, faim.",
+      "Solution : mesures énergiques et changement des mentalités."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel produit mauritanien est cité ?",
+      "→ Réponse : Le fer, importé « essentiellement de Mauritanie ».",
+      "Exemple 2 : Qu’est-ce qu’une culture vivrière ?",
+      "→ Réponse : Une culture destinée à nourrir la population locale, et non à l’exportation."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quel problème est posé ?",
+      "→ Solution : L’inégalité des échanges entre pays riches et pays pauvres, et le gaspillage d’énergie par les pays riches."
+     ]
     }
    ]
   },
@@ -3102,6 +4351,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Suffit-il d’acheter des machines modernes pour qu’un pays devienne industrialisé ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Beaucoup de pays en voie de développement croient que la seule construction d’usines résout leurs problèmes d’industrialisation.",
+      "Or un pays peut avoir dix, cent usines sans être industrialisé tant qu’il ne possède pas son propre « tissu industriel humain », ses équipes d’animateurs industriels.",
+      "Bilan : près de la moitié des usines « clefs en main » du Tiers Monde ne fonctionnent pas, les autres marchent à moins de 50 % de leur capacité, presque toutes sont déficitaires.",
+      "La cause : les gouvernements confondent usine et entreprise.",
+      "« Une usine n’est pas une entreprise, pas plus qu’une série de casseroles et un fourneau ne sauraient constituer un restaurant ! » L’usine n’est qu’un outil au service d’une entreprise qui a l’expérience du métier.",
+      "« On ne peut fournir le piano et Mozart à la fois ! »"
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -3157,6 +4423,32 @@
       "Écrit : résumé au ¼.",
       "Enquête : les usines en Mauritanie (secteurs, progrès, difficultés)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Erreur : croire que les usines suffisent à l’industrialisation.",
+      "Condition : un tissu industriel humain (compétences nationales).",
+      "Bilan : la moitié des usines à l’arrêt, les autres sous-utilisées, déficitaires.",
+      "Confusion : usine (outil) ≠ entreprise (organisation, savoir-faire).",
+      "Images : casseroles / restaurant ; piano / Mozart."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez « On ne peut fournir le piano et Mozart à la fois ! ».",
+      "→ Réponse : Le constructeur fournit l’instrument (l’usine), mais pas le talent pour s’en servir (les compétences industrielles).",
+      "Exemple 2 : Que signifie « déficitaire » ?",
+      "→ Réponse : Qui ne fait pas de bénéfices, qui perd de l’argent."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelle erreur font les pays en développement ?",
+      "→ Solution : Ils croient trouver dans la seule construction d’usines la solution à leurs problèmes d’industrialisation."
+     ]
     }
    ]
   },
@@ -3198,6 +4490,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quelle est l’importance de la pêche pour l’économie de la Mauritanie et pour la ville de Nouadhibou ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Avant 1979, la pêche dans les eaux mauritaniennes était surtout pratiquée par plus de 100 chalutiers étrangers (espagnols, hollandais, japonais, russes, norvégiens, français…).",
+      "La Mauritanie a porté ses eaux territoriales à 200 milles marins et achevé en 1968 le port de pêche de Nouadhibou, ce qui développe le traitement sur place des captures (Tableau 1 : les débarquements passent de 22 000 t en 1967 à 95 000 t en 1973).",
+      "Vedettes garde-côtes, frigorifiques et usines de traitement permettent un meilleur contrôle, mais en 1974 les installations sont sous-utilisées (57 % pour la conserve, 50 % pour la congélation, 19 % pour la farine, 11 % pour la salaison).",
+      "La Nouvelle Politique de Pêche (NPP), appliquée à partir de 1979, rend obligatoire le débarquement à Nouadhibou, sanctionne les fraudes et permet aux Mauritaniens d’opérer sous licence : le tonnage traité sur place et les recettes de l’État augmentent (Tableau 2)."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -3301,6 +4608,32 @@
       "Écrit : 15 à 20 lignes sur l’importance d’une autre activité économique en Mauritanie.",
       "Enquête : actualiser les tableaux auprès des ports du pays."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Avant 1979 : pêche dominée par les chalutiers étrangers.",
+      "Port de Nouadhibou (1968) : traitement sur place.",
+      "Tableau 1 : débarquements de 22 000 t (1967) à 95 000 t (1973).",
+      "Sous-utilisation des installations en 1974.",
+      "NPP (1979) : débarquement obligatoire, licences, hausse des recettes."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce que la NPP ?",
+      "→ Réponse : La Nouvelle Politique de Pêche, appliquée à partir de 1979.",
+      "Exemple 2 : En quelle année les débarquements ont-ils été les plus élevés d’après le Tableau 1 ?",
+      "→ Réponse : En 1973 (95 000 tonnes)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qui pratiquait la pêche avant 1979 ?",
+      "→ Solution : Plus de 100 chalutiers étrangers : espagnols, hollandais, japonais, russes, norvégiens, français…"
+     ]
     }
    ]
   },
@@ -3342,6 +4675,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment la science peut-elle aider la Mauritanie à se développer ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La science et ses applications sont indispensables au développement.",
+      "Gouvernements et secteur privé doivent, par des programmes d’éducation et de recherche, bâtir une capacité scientifique et technologique adéquate et équitablement répartie, socle d’un développement économique, social, culturel et respectueux de l’environnement ; c’est urgent pour les pays en développement.",
+      "La technologie doit s’orienter vers des modes de production propres et sans danger, une utilisation plus efficiente des ressources et des produits respectueux de l’environnement.",
+      "Enseigner la science à tous, sans discrimination, est une condition de la démocratie et du développement durable.",
+      "Il faut reconnaître le rôle fondamental des femmes dans la production alimentaire et la santé, et accorder une attention particulière aux groupes marginalisés."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -3392,6 +4741,32 @@
       "Oral : comment la science peut-elle contribuer au développement de la Mauritanie ?",
       "Écrit : la Mauritanie ne bénéficie-t-elle pas encore suffisamment des progrès scientifiques ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thèse : la science est indispensable au développement.",
+      "Action attendue : programmes d’éducation et de recherche.",
+      "Production propre, ressources efficaces, produits écologiques.",
+      "Enseignement scientifique pour tous : démocratie et développement durable.",
+      "Publics prioritaires : les femmes et les groupes marginalisés."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi le texte insiste-t-il sur les femmes ?",
+      "→ Réponse : Parce qu’elles jouent un rôle fondamental dans l’application des progrès scientifiques à la production alimentaire et aux soins de santé.",
+      "Exemple 2 : Que signifie « sans discrimination » ?",
+      "→ Réponse : Sans exclure personne, quels que soient le sexe, l’origine ou la condition sociale."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Thèse défendue ?",
+      "→ Solution : La science et ses applications sont indispensables au développement."
+     ]
     }
    ]
   },
@@ -3433,6 +4808,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les puits, les pâturages, le poisson : en resteront-ils pour vos petits-enfants ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le développement durable est l’idée que les sociétés doivent répondre à leurs besoins sans compromettre la capacité des générations futures à répondre aux leurs ; il prend en compte le présent et le futur (environnement, ressources, équité sociale et économique).",
+      "Contrairement au développement économique, il a trois dimensions : économique, environnementale et sociale.",
+      "En écologie, les gouvernements mènent des politiques : en France, la « transition énergétique » (énergies renouvelables) et la « protection de la biodiversité ».",
+      "Dans les entreprises, des lois les obligent à mesurer et publier leurs impacts : c’est la RSE (responsabilité sociale de l’entreprise) — énergies renouvelables, efficacité énergétique, réduction des gaz à effet de serre et du Bilan Carbone, protection des écosystèmes."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -3506,6 +4896,32 @@
       "Écrit : résumer le texte au ¼.",
       "Enquête : inviter un fonctionnaire du Développement rural."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Définition : répondre aux besoins présents sans compromettre ceux des générations futures.",
+      "Trois dimensions : économique, environnementale, sociale.",
+      "Écologie : transition énergétique, biodiversité (exemple : la France).",
+      "Entreprises : la RSE.",
+      "Genre : texte informatif (article de vulgarisation)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie RSE ?",
+      "→ Réponse : Responsabilité sociale de l’entreprise.",
+      "Exemple 2 : Qu’est-ce que la « transition énergétique » ?",
+      "→ Réponse : Transformer la manière de produire l’énergie pour la rendre plus durable, notamment par les énergies renouvelables."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Définition du développement durable ?",
+      "→ Solution : Répondre à nos besoins sans compromettre la capacité des générations futures à répondre aux leurs. Exemple : pêcher sans épuiser les stocks."
+     ]
     }
    ]
   },
@@ -3547,6 +4963,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels objets artisanaux trouve-t-on dans votre maison ? Sont-ils faits de matières traditionnelles ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’artisanat mauritanien évolue : on introduit des matériaux nouveaux et on décore des objets industriels.",
+      "Est-ce un abâtardissement ou une adaptation ingénieuse ?",
+      "Les matières synthétiques sont moins belles que le cuir et le bois, les couleurs chimiques plus criardes (caoutchouc au lieu d’ébène, plastique, nylon).",
+      "Pourtant la finesse du travail reste impressionnante : les femmes brodent, crochètent, maîtrisent les couleurs chimiques avec un sens aigu des contrastes ; l’artisan habille les théières importées de cuivre et de laiton.",
+      "L’artisanat de « récupération » transforme les boîtes de conserve en marmites, les pneus en grillage (Toujounine), les métaux en heurtoirs (Oualata), et les forgerons fabriquent des outils pour l’agriculture moderne.",
+      "Le gouvernement soutient les coopératives et les foires de Kiffa et de Nouakchott : l’artisanat peut trouver sa place dans le développement."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -3616,6 +5049,32 @@
       "Écrit : l’artisanat mauritanien contribue au développement économique et technologique du pays. Qu’en pensez-vous ?",
       "Enquête : « femmes et artisanat »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Question : abâtardissement ou adaptation ingénieuse ?",
+      "Regrets : matières synthétiques, couleurs criardes.",
+      "Admiration : finesse, ingéniosité, art des femmes.",
+      "Artisanat de récupération : ne rien perdre.",
+      "Soutien de l’État : coopératives, foires de Kiffa et Nouakchott."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’appelle-t-on artisanat de « récupération » ?",
+      "→ Réponse : Un artisanat qui transforme des objets destinés au rebut (boîtes, pneus, bidons) en objets utiles.",
+      "Exemple 2 : Citez deux foires soutenues par le gouvernement.",
+      "→ Réponse : Les foires de Kiffa et de Nouakchott."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Expliquez la première phrase.",
+      "→ Solution : Les artisans utilisent des matériaux nouveaux et décorent à la manière traditionnelle des objets fabriqués en usine."
+     ]
     }
    ]
   },
@@ -3657,6 +5116,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quel est le dernier livre que vous avez lu en dehors des manuels ? Pourquoi lit-on moins aujourd’hui ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Selon B.",
+      "Brecout, les adolescents d’aujourd’hui ne lisent guère et ne savent peut-être plus lire : enquêtes, sondages, enseignants et bibliothécaires le confirment, mais les causes de cette crise restent mal connues.",
+      "Leur « non-lecture » est interprétée tantôt comme une lassitude passagère, tantôt comme une aversion définitive pour la civilisation de l’imprimé.",
+      "L’éloignement est plus fort encore vis-à-vis de la littérature : tout livre est assimilé au livre de classe, obligatoire donc ennuyeux, et les textes au programme sont jugés trop anciens et éloignés de l’actualité.",
+      "L’image tend à supplanter le texte : les jeunes préfèrent les magazines illustrés, les bandes dessinées, les photoromans.",
+      "On lit pour se distraire, passer le temps, chercher un plaisir diffus, être « branché », dans une lecture qui refuse l’analyse et néglige la qualité de l’œuvre."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -3706,6 +5182,32 @@
       "Écrit (dissertation) : la lecture est-elle une perte de temps face aux films et documentaires sur écran ?",
       "Enquête : « les jeunes et la lecture » dans votre établissement."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thèse : les adolescents ne lisent guère, la lecture est en crise.",
+      "Argument 1 : le livre assimilé au livre de classe, ennuyeux.",
+      "Argument 2 : textes jugés trop anciens.",
+      "Argument 3 : l’image supplante le texte (BD, magazines, photoromans).",
+      "Lecture de distraction, sans analyse."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « supplanter » ?",
+      "→ Réponse : Remplacer en prenant la place.",
+      "Exemple 2 : Que reprochent les lycéens aux textes au programme ?",
+      "→ Réponse : Ils les jugent trop anciens et trop éloignés de l’actualité."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Repérez et reformulez la thèse.",
+      "→ Solution : « Les adolescents d’aujourd’hui ne lisent guère et peut-être ne savent plus lire. » Reformulation : les jeunes se sont détournés de la lecture."
+     ]
     }
    ]
   },
@@ -3747,6 +5249,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les héros des films que vous aimez ressemblent-ils aux gens que vous connaissez ? Qu’est-ce qui les différencie ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Beaucoup d’éducateurs et de parents jugent dangereuse l’influence des films sur les enfants et envisagent d’intervenir.",
+      "Les films n’expriment pas ouvertement des idées immorales, mais ils créent un « climat » affectif ou intellectuel nocif pour les spectateurs sans maturité.",
+      "En effet, le monde du cinéma n’est pas une image fidèle de la réalité : la famille n’y est qu’un cadre, le travail y joue un rôle secondaire, l’art, la science, le progrès technique et social et la religion y sont rarement évoqués.",
+      "En revanche, le crime et la sexualité, l’argent, la réussite sociale, le prestige et le pouvoir, le romanesque et l’aventure dominent ; l’affectif l’emporte sur la raison, la force et la beauté sur l’intelligence et le caractère.",
+      "Enfin, les héros exercent des professions « romantiques » (cow-boy, danseur, chanteur, détective…) ; on n’y rencontre guère de simples ouvriers."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -3802,6 +5320,32 @@
       "Écrit : résumé au ¼ ; ou discussion : « Les films peuvent créer un climat… nocif pour les spectateurs n’ayant pas une maturité d’esprit suffisante ».",
       "Enquête : « les jeunes et le cinéma »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Constat : éducateurs et parents jugent les films dangereux.",
+      "Nuance : pas d’immoralité ouverte, mais un « climat » nocif.",
+      "Valeurs négligées : famille, travail, culture, religion.",
+      "Thèmes privilégiés : crime, sexualité, argent, pouvoir, aventure.",
+      "Héros : professions romantiques, loin de la réalité sociale."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « rocambolesque » ?",
+      "→ Réponse : Extraordinaire, invraisemblable, plein de péripéties.",
+      "Exemple 2 : Pourquoi le climat des films est-il dangereux pour les enfants ?",
+      "→ Réponse : Parce qu’ils n’ont ni expérience ni esprit critique et peuvent croire que le crime et la sexualité dominent le monde."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Que pensent éducateurs et parents des films ?",
+      "→ Solution : Ils jugent leur influence sur les enfants souvent dangereuse et pensent qu’il faut réagir."
+     ]
     }
    ]
   },
@@ -3843,6 +5387,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "À quels jeux jouaient vos grands-parents quand ils étaient enfants ? Y jouez-vous encore ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Comme les anciennes coiffures, les jeux et loisirs traditionnels sont abandonnés dans une société où tout modèle étranger est repris aveuglément.",
+      "Notre patrimoine est très riche en jeux collectifs et individuels, mais on ne s’y intéresse plus depuis une vingtaine d’années à cause des « produits de remplacement » : football, volley-ball, pétanque, cartes, échecs, scrabble.",
+      "Pourtant nos jeux sont aussi intéressants et compétitifs : le demraw et le srand exigent autant d’intuition et d’abstraction que les échecs ; le moudyar consiste à gagner des billes réparties dans des creux (« maisons ») ; le Cheikh Echbekah est un jeu mathématique ; le Chnag ressemble au billard ; le Hib est un jeu d’autodéfense ; le gach est un saute-mouton avec une balle.",
+      "Ces jeux ne survivent que dans les campagnes reculées, car la capitale diffuse la mode vers l’intérieur.",
+      "Il faut les réhabiliter pour protéger notre façon d’être et de penser, en faisant la synthèse de la tradition et de l’apport moderne."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -3908,6 +5468,32 @@
       "Écrit : résumé au ¼.",
       "Enquête : les jeux en Mauritanie aujourd’hui."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Constat : abandon des jeux traditionnels.",
+      "Cause : imitation aveugle des modèles étrangers, rôle de la capitale.",
+      "Qualités : jeux élaborés, compétitifs, exigeant intuition et abstraction.",
+      "Exemples : demraw, srand, moudyar, Cheikh Echbekah, Chnag, Hib, gach.",
+      "Solution : réhabiliter, faire la synthèse tradition / modernité."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel jeu traditionnel est comparé aux échecs ?",
+      "→ Réponse : Le demraw et le srand.",
+      "Exemple 2 : Que propose l’auteur à la fin ?",
+      "→ Réponse : Faire la synthèse de notre tradition et de l’apport moderne, sans rejeter l’apport extérieur."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce qui explique l’abandon des jeux traditionnels ?",
+      "→ Solution : L’imitation aveugle des modèles étrangers et l’introduction des sports et jeux modernes (football, volley-ball, pétanque, cartes, échecs, scrabble), diffusés par la capitale."
+     ]
     }
    ]
   },
@@ -3949,6 +5535,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Citez des objets en cuir que l’on trouve dans une tente ou une maison mauritanienne."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le cuir est le premier matériau de l’artisanat mauritanien.",
+      "On en fait l’ameublement de la tente et de la maison (nattes, couvertures-tapis « faru » ou « glaf », coussins, tapis de prière), les sacs de voyage et de la vie quotidienne (« tasufra » finement décorées, sacs à grains, outres à eau et à beurre, « kuntiya » pour les verres et théières), les objets du puits (abreuvoir, cordes, « dalu »), le harnachement du chameau et du cheval (selle gainée de cuir), les accessoires familiers (étuis de poignards, sandales, ceintures, porte-clefs), les instruments de musique des griots, les reliures des manuscrits, les balles des enfants.",
+      "Il sert enfin aux amulettes (petites pochettes sur des lanières) et aux parures : bracelets de cuir cousus de perles ou de coquillages, colliers de fines tresses de cuir ornés de perles."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4025,6 +5625,32 @@
       "Oral : l’artisanat national face à la concurrence des produits industriels.",
       "Écrit (discussion) : faut-il faire la promotion de l’artisanat dans les pays en voie de développement ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thème : l’importance du cuir dans l’artisanat mauritanien.",
+      "Usages : ameublement, sacs, puits, harnachement, objets familiers.",
+      "Musique et culture : instruments, reliures.",
+      "Ornement : amulettes et parures.",
+      "Mots locaux : faru, glaf, tasufra, kuntiya, dalu."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce que le « dalu » ?",
+      "→ Réponse : Un seau en cuir pour puiser l’eau.",
+      "Exemple 2 : À quoi sert la « kuntiya » ?",
+      "→ Réponse : C’est un sac à fond rigide pour transporter les verres et les théières."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quoi parle le texte ?",
+      "→ Solution : De l’artisanat du cuir en Mauritanie et de ses nombreux usages."
+     ]
     }
    ]
   },
@@ -4066,6 +5692,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment se déroule une fête de mariage dans votre communauté ? Quelle place y tient la musique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans un campement maure, le mariage est animé par les griots.",
+      "La « tidinitt » quitte les mélodies détendues du « karr » pour un grincement ascendant ; les tambours s’accentuent, les voix d’airain des griottes s’élèvent.",
+      "On récite l’épopée de Hennun, grand poème appelé « Tevragh Zeyna » (« qui finit beau »), qui fait battre le cœur de l’assistance.",
+      "Le « faghou », mode musical nerveux, subjugue l’esprit et rappelle les poèmes de guerre.",
+      "Les artistes chantent aussi l’épopée des Awlad M’Barek, entrecoupée de « chawrs » et de danses.",
+      "Les filles descendent alors dans l’espace pour danser la « Blida », lente et saccadée au Tagant, nerveuse et rapide au Trarza.",
+      "Elles n’oublient pas la réserve exigée des « Zewaya » (l’œil bas, le voile), mais le mariage est « l’une des rares occasions à mettre en sursis la rigueur des interdits sociaux »."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -4131,6 +5775,32 @@
       "Écrit : expliquer et discuter « Le mariage était l’une des rares occasions à mettre en sursis la rigueur des interdits sociaux ».",
       "Enquête : les instruments de musique traditionnels et modernes."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Cadre : un mariage dans un campement maure.",
+      "Animateurs : griots et griottes (tidinitt, tambours, chants).",
+      "Répertoire : épopées (Hennun, Awlad M’Barek), modes karr et faghou.",
+      "Danse : la Blida, variable selon les régions.",
+      "Le mariage suspend les interdits sociaux."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « Tevragh Zeyna » d’après le texte ?",
+      "→ Réponse : « Qui finit beau ».",
+      "Exemple 2 : Comment la Blida varie-t-elle selon les régions ?",
+      "→ Réponse : Saccadée et lente au Tagant, nerveuse et rapide au Trarza."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quoi parle l’auteur ?",
+      "→ Solution : D’une cérémonie de mariage dans un campement maure, animée par des griots."
+     ]
     }
    ]
   },
@@ -4172,6 +5842,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que pensez-vous des guérisseurs qui promettent de tout soigner rapidement ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Habib Ould Mahfoudh raconte avec humour l’histoire d’un homme des « Oulad Daymane », réputés pour leur patience extrême et leur refus de se plaindre.",
+      "Il a très mal à l’œil droit.",
+      "Un chamelier « tchiggui » (d’une peuplade qui s’émeut de tout) lui conseille un « excellent guérisseur des yeux droits ».",
+      "Le guérisseur, bavard et vantard (il prétend avoir soigné deux cent dix personnes la veille, avec un calcul faux), le couche de force, lui enlève l’œil… gauche, celui qui n’était pas malade, et le cautérise au fer rouge.",
+      "Le patient s’évanouit, puis remercie Dieu.",
+      "Le lendemain, il retourne chez son « bienfaiteur », se disant qu’il aurait pu lui arracher aussi l’œil malade, la langue et les oreilles : « C’est réellement un excellent homme. »"
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4222,6 +5909,32 @@
       "Oral : médecine traditionnelle et médecine moderne.",
       "Écrit : « Tous les guérisseurs sont des charlatans. » Partagez-vous cette opinion ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Personnage : un homme des Oulad Daymane, d’une patience absurde.",
+      "Le guérisseur : vantard, maladroit, charlatan.",
+      "Comique : l’erreur d’œil, le calcul faux, la gratitude du patient.",
+      "Ironie : « excellent », « bienfaiteur ».",
+      "Sens : dénoncer les charlatans et la résignation excessive."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez une phrase ironique.",
+      "→ Réponse : « C’est réellement un excellent homme. »",
+      "Exemple 2 : Quelle erreur de calcul fait le guérisseur ?",
+      "→ Réponse : Quatorze + deux + cent cinquante-sept font 173, et non « deux cent dix »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Donnez un titre.",
+      "→ Solution : « L’œil de trop » ou « Le guérisseur des yeux droits »."
+     ]
     }
    ]
   },
@@ -4263,6 +5976,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi, dans les contes et au théâtre, est-ce souvent le fou qui ose dire la vérité au roi ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans cette scène de théâtre, Kaya Maghan, roi du Wagadu, se compare à un soleil qui n’éclaire plus sa course : il se plaint de « l’océan de complaisance » où il sombre, car griots, prêtres, guerriers et conseillers ne lui disent que ce qui lui plaît.",
+      "Il demande à Kerfa le fou de lui dire la vérité sur son peuple et veut le nommer « grand maître du rêve éveillé et ministre de l’espoir ».",
+      "Le fou refuse avec fureur : ses rêves ne se laisseront pas enfermer dans la « géométrie aveugle » du pouvoir.",
+      "Par moquerie, il organise une vente aux enchères qui révèle la misère du peuple : « trois ventres creux » et « un crachat de tuberculeux » contre « une bedaine de courtisan ».",
+      "Le roi veut donner un sens à la folie ; le fou réplique : « Commence donc par en donner un à ton pouvoir. »"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -4327,6 +6056,32 @@
       "Oral : mémoriser une partie de la scène et la jouer en classe.",
       "Écrit : que préférez-vous, lire un roman ou assister à une représentation théâtrale ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Genre : théâtre (répliques, didascalies, acte et scène).",
+      "Kaya Maghan : le pouvoir, entouré de flatteurs.",
+      "Kerfa le fou : la vérité, la liberté de parole.",
+      "Maux du peuple : faim, maladie, misère face aux courtisans gras.",
+      "Message : critique du pouvoir et de la complaisance."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’une didascalie ?",
+      "→ Réponse : Une indication de mise en scène (gestes, ton, déplacements), souvent en italique.",
+      "Exemple 2 : Que reproche Kaya Maghan à son entourage ?",
+      "→ Réponse : Sa complaisance : il ne lui dit que ce qui lui plaît."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. À quel genre appartient ce texte ?",
+      "→ Solution : Au théâtre : répliques précédées du nom des personnages, didascalies en italique, « Acte 1 Scène 2 »."
+     ]
     }
    ]
   },
@@ -4368,6 +6123,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pensez-vous être mieux informé que vos parents au même âge ? Êtes-vous pour autant plus cultivé ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Maurice Druon fait le procès des techniques audiovisuelles dans le domaine de l’information.",
+      "Les gens sont plus informés qu’ils ne furent jamais, et même trop : radio et télévision délivrent en abondance et en permanence images et nouvelles ; on gaspille l’information comme l’eau, en tournant un bouton.",
+      "Cette « débauche informative » a deux résultats : chez les personnes très instruites, un sentiment douloureux d’écartèlement entre leur culture méthodiquement acquise et la culture immédiate, pléthorique et sommaire ; chez les gens de faible instruction et chez les enfants, la formation d’une « immense plèbe d’autodidactes » qui croient tout savoir mais à qui il manque l’essentiel : savoir penser.",
+      "Devant un livre, l’homme est actif et indépendant (il s’arrête, réfléchit, revient en arrière) ; devant la télévision, il est passif et bousculé, ses réactions sont impulsives."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4449,6 +6219,32 @@
       "Écrit : expliquer et discuter « Devant un livre, l’homme est actif et indépendant… Devant un écran de télévision, il est à la fois passif et bousculé » ; ou résumé au ⅓.",
       "Enquête : le livre, la radio, la télévision en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Question : l’information aide-t-elle l’homme à comprendre ?",
+      "Constat : la sur-information (« débauche informative »).",
+      "Effet 1 : écartèlement chez les instruits.",
+      "Effet 2 : une « plèbe d’autodidactes » qui ne savent pas penser.",
+      "Opposition : livre (actif, indépendant) / télévision (passif, bousculé)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : À quoi l’auteur compare-t-il le gaspillage de l’information ?",
+      "→ Réponse : Au gaspillage de l’eau : on le fait « en tournant un bouton ».",
+      "Exemple 2 : Que manque-t-il aux autodidactes de la télévision ?",
+      "→ Réponse : L’essentiel : savoir penser."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Idée générale ? Public visé ?",
+      "→ Solution : L’excès d’information audiovisuelle ne forme pas l’esprit et empêche de penser ; texte adressé au grand public cultivé (lecteurs de l’essai)."
+     ]
     }
    ]
   },
@@ -4490,6 +6286,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quand vous rencontrez une personne d’une autre culture, qu’est-ce qui vous sépare ? Qu’est-ce qui vous rapproche ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Paul Ricœur se demande comment une rencontre de cultures diverses est possible sans être « mortelle pour tous ».",
+      "On pourrait croire les cultures incommunicables, mais l’étrangeté de l’homme pour l’homme n’est jamais absolue : « L’homme est un étranger pour l’homme certes, mais toujours aussi un semblable. » Il faut faire le pari de l’identité humaine, comme l’égyptologue (Champollion) qui posa que des signes inconnus, s’ils étaient de l’homme, pouvaient être traduits.",
+      "Cela vaut aussi pour les valeurs et les symboles : on peut comprendre l’autre sans répéter, « me faire autre en restant moi-même ».",
+      "La compréhension est une aventure redoutable (risque de syncrétisme vague) ; seule une culture vivante, fidèle à ses origines et créatrice (art, littérature, philosophie, spiritualité), peut supporter la rencontre des autres cultures et lui donner un sens."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4549,6 +6360,32 @@
       "Écrit : résumé au ¼ ; ou discussion/dissertation : « L’homme est un étranger pour l’homme certes, mais toujours aussi un semblable. »",
       "Interview : un sage de votre entourage sur la rencontre de notre culture avec celles d’autres pays."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Question : comment une rencontre des cultures est-elle possible ?",
+      "Nuance : les cultures semblent incommunicables, mais l’homme reste un semblable.",
+      "Exemple : Champollion déchiffre les hiéroglyphes.",
+      "Comprendre l’autre sans se perdre soi-même.",
+      "Réponse : seule une culture vivante et créatrice supporte la rencontre."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « syncrétisme » ?",
+      "→ Réponse : Un mélange confus de doctrines ou de cultures différentes.",
+      "Exemple 2 : Expliquez « me faire autre en restant moi-même ».",
+      "→ Réponse : Comprendre l’autre de l’intérieur sans renoncer à sa propre identité."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Question de départ ? Qu’est-ce qui la justifie ?",
+      "→ Solution : « Comment est possible une rencontre de cultures diverses… qui ne soit pas mortelle pour tous ? » Elle se justifie par l’idée que les cultures seraient incommunicables."
+     ]
     }
    ]
   },
@@ -4590,6 +6427,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Si vous deviez présenter votre ville natale à un étranger, quels lieux, quels bruits et quelles odeurs choisiriez-vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le narrateur décrit Kaédi dans les années précédant l’Indépendance.",
+      "La ville était remarquable par son marché, sa gare routière, ses boutiques et comptoirs, les quartiers de Tantadji et de Touldé (villages lacustres à la saison des hautes eaux), les klaxons grincheux des voitures du courrier, le Léélé chanté le soir, l’école primaire sur le flanc de la colline, et le vieux canon rouillé tourné vers le fleuve, souvenir tragique de la pénétration française.",
+      "Kaédi, c’était aussi le fleuve généreux (poissons, eau, pâturage), tantôt « gonflé comme un bras de mer », tantôt « maigre comme un petit ruisseau », bordé de « peuples frères » ; l’appel lointain du muezzin ; l’odeur de la terre mouillée d’hivernage, avec laquelle les enfants modelaient voitures et pirogues ; le soir, au clair de lune, les vendeuses de lait chantant pour les enfants partis au loin."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4645,6 +6496,32 @@
       "Écrit : décrire une ville en quatre paragraphes avec les amorces « Kiffa ce n’était pas seulement… / Kiffa était… ».",
       "Enquête : l’histoire de votre ville ou village auprès des personnes âgées."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Type : texte descriptif (souvenir d’enfance).",
+      "Lieux : marché, gare, quartiers, école, place du canon, fleuve.",
+      "Sensations : bruits (klaxons, Léélé, muezzin), odeur de la terre mouillée.",
+      "Figures : comparaisons, personnification, anaphore « Kaédi, ce n’était pas seulement… ».",
+      "Sentiments : nostalgie, tendresse, fierté."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez une comparaison du texte.",
+      "→ Réponse : « un fleuve quelquefois gonflé comme un bras de mer ».",
+      "Exemple 2 : Que rappelle le canon de la grande place ?",
+      "→ Réponse : Les moments tragiques de la pénétration française dans le pays."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quels lieux sont décrits dans les trois premiers paragraphes ?",
+      "→ Solution : Le marché, la gare routière, les boutiques et comptoirs, les quartiers de Tantadji et Touldé, la place publique, l’école primaire, la grande place du canon, le fleuve et ses deux rives."
+     ]
     }
    ]
   },
@@ -4686,6 +6563,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Racontez en deux phrases un souvenir d’enfance qui vous a marqué. Pourquoi vous en souvenez-vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le narrateur se souvient de ses promenades quotidiennes avec son petit frère Lamine, la main dans la main : ils conduisaient les moutons au pâturage à Wandama, revenaient par les sentiers en passant par le champ des courses hippiques, les champs de mil et la résidence du directeur d’école, pour regagner le marché.",
+      "Comme tous les enfants, ils venaient admirer les étals et acheter beignets de mil, maïs grillé ou melons.",
+      "Un jour, deux vieux aveugles chantaient les louanges du Prophète (PSL) et répétaient en refrain un verset du Coran : « Patiente !",
+      "La promesse de Dieu est vraie… Célèbre la louange de ton Seigneur le soir et à l’aube. » Touchés, les enfants donnèrent une partie de leur petite bourse et apprirent le refrain par cœur ; les aveugles devinrent leurs amis et reconnaissaient leurs voix."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4744,6 +6636,32 @@
       "Oral : raconter un beau souvenir d’enfance avec une anecdote intéressante.",
       "Écrit : un texte autobiographique (15 à 20 lignes) avec au moins deux figures de style."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Lieux : le marché, Wandama, les sentiers, les champs.",
+      "Personnages : le narrateur, son frère Lamine, les deux aveugles.",
+      "Énumération des étapes de la promenade (verbes à l’imparfait).",
+      "L’anecdote des aveugles : compassion et générosité.",
+      "Type : récit autobiographique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez le refrain appris par les enfants.",
+      "→ Réponse : « Célèbre la louange de ton Seigneur, le soir et à l’aube. »",
+      "Exemple 2 : Quel sentiment pousse les enfants à donner leur argent ?",
+      "→ Réponse : La compassion."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Où et quand se passent les scènes ?",
+      "→ Solution : Au marché et dans les environs (Wandama, champs), tous les jours de l’année scolaire ou des vacances, pendant l’enfance du narrateur."
+     ]
     }
    ]
   },
@@ -4785,6 +6703,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Vos parents ont-ils des rêves pour vous ? Ressemblent-ils à leurs propres rêves ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Après la mort de son père, la narratrice se souvient.",
+      "Il lui disait, sérieux, presque tragique : « Écoute bien à ton école ! » Il avait peur que ses bonnes notes, « faveur étrange du destin », ne cessent d’un coup ; chaque réussite nourrissait l’espérance qu’elle serait « mieux que lui ».",
+      "Ce rêve a remplacé son propre rêve : tenir un beau café au centre-ville ; faute de fonds et par crainte, il s’est résigné.",
+      "Il ne sortira plus du « monde coupé en deux du petit commerçant » : d’un côté les bons clients, de l’autre les méchants qui vont dans les magasins du centre, et le gouvernement soupçonné de favoriser les gros.",
+      "Même parmi les bons clients, il se méfie.",
+      "Haine et servilité.",
+      "On allait chercher le pain à un kilomètre parce que le boulanger d’à côté n’achetait rien à la boutique."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4843,6 +6779,32 @@
       "Oral : raconter, sur un ton ironique mais aimable, l’histoire d’une personne de son entourage.",
       "Écrit : un court récit autobiographique évoquant le souvenir d’une personne aimée, en imitant le style de l’auteur."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Narratrice : la fille, après la mort de son père.",
+      "Le rêve du père : la réussite scolaire de sa fille.",
+      "Son propre rêve abandonné : un café au centre-ville.",
+      "Le monde du petit commerçant : bons / méchants clients, méfiance.",
+      "Style : phrases nominales, courtes, vocabulaire simple."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’une phrase nominale ?",
+      "→ Réponse : Une phrase sans verbe conjugué, construite autour d’un nom.",
+      "Exemple 2 : Quel était le rêve du père ?",
+      "→ Réponse : Tenir un beau café au cœur de la ville, avec une terrasse et une machine à café."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Protagonistes ?",
+      "→ Solution : La narratrice (la fille) et son père, petit commerçant ; à l’arrière-plan, les clients."
+     ]
     }
    ]
   },
@@ -4884,6 +6846,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels sacrifices font les mères pour nourrir leurs enfants ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Aimé Césaire évoque la petite maison de son enfance : minuscule, malodorante, dans une rue étroite, au bois pourri plein de rats, abritant ses six frères et sœurs.",
+      "Son père fantasque est tantôt mélancolique et tendre, tantôt pris de colère.",
+      "Sa mère, pour « notre faim inlassable », pédale jour et nuit sur une machine à coudre Singer : le narrateur est réveillé la nuit par « ces jambes inlassables qui pédalent ».",
+      "La case est « gerçant d’ampoules, comme un pêcher tourmenté de la cloque », le toit rapiécé de morceaux de bidon de pétrole, qui font des marais de rouille ; le lit de planches, aux pattes de caisses de Kérosine « comme s’il avait l’éléphantiasis », avec sa peau de cabri et ses feuilles de banane séchées, est le lit d’où « s’est levée ma race »."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -4969,6 +6946,32 @@
       "Écrit : à l’inverse de l’auteur, le portrait valorisant d’une mère dans une maison luxueuse (15 à 20 lignes, avec métaphores et personnifications).",
       "Enquête : un texte africain ou maghrébin dénonçant une injustice coloniale."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Portrait : la mère, le père, la famille nombreuse.",
+      "La mère couturière : effort sans fin (« pédale, pédale »).",
+      "Champs lexicaux : la misère, la maladie, la nuit, le travail.",
+      "Figures : répétition, comparaisons, personnification (maison « cruelle »).",
+      "But : dénoncer la misère coloniale et rendre hommage à la mère."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez une comparaison.",
+      "→ Réponse : « comme un pêcher tourmenté de la cloque ».",
+      "Exemple 2 : Pourquoi la mère travaille-t-elle de jour et de nuit ?",
+      "→ Réponse : Pour nourrir ses enfants : « pour notre faim »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De qui le narrateur dresse-t-il le portrait ?",
+      "→ Solution : De sa famille : surtout sa mère, mais aussi son père et ses frères et sœurs, et de leur maison."
+     ]
     }
    ]
   },
@@ -5010,6 +7013,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Une odeur ou une musique vous a-t-elle déjà rappelé une couleur, une personne ou un souvenir ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans « Correspondances », sonnet des Fleurs du Mal (1857), Baudelaire définit son art poétique.",
+      "La Nature est un temple où de « vivants piliers » laissent sortir de « confuses paroles » : l’homme y traverse des « forêts de symboles » qui l’observent.",
+      "Les parfums, les couleurs et les sons « se répondent » comme de longs échos dans une profonde unité : c’est la synesthésie.",
+      "Certains parfums sont frais « comme des chairs d’enfants », doux « comme les hautbois », verts « comme les prairies » ; d’autres, « corrompus, riches et triomphants » (ambre, musc, benjoin, encens), chantent « les transports de l’esprit et des sens ».",
+      "Le poète est un déchiffreur de l’univers symbolique."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -5068,6 +7087,32 @@
       "Lecture expressive du sonnet à haute voix.",
       "Écrit : expliquer en quelques lignes le vers « Les parfums, les couleurs et les sons se répondent »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Forme : sonnet (2 quatrains + 2 tercets) en alexandrins.",
+      "Correspondances verticales : le monde visible renvoie à un monde spirituel (symboles).",
+      "Correspondances horizontales : parfums, couleurs et sons se répondent.",
+      "Images : temple, vivants piliers, forêts de symboles, comparaisons.",
+      "Le poète : un « déchiffreur » de l’univers."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’une synesthésie ?",
+      "→ Réponse : Une association de sensations différentes (un parfum « doux comme les hautbois », « vert comme les prairies »).",
+      "Exemple 2 : Combien de syllabes compte un alexandrin ?",
+      "→ Réponse : Douze."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Impressions générales à la lecture ?",
+      "→ Solution : Une impression de mystère, d’harmonie et de musique : le monde est plein de signes et de sensations qui se mêlent."
+     ]
     }
    ]
   },
@@ -5109,6 +7154,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Une poésie doit-elle d’abord dire quelque chose ou d’abord chanter à l’oreille ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans « Art poétique », dédié à Charles Morice, Verlaine expose sa théorie : « De la musique avant toute chose » ; il préfère le vers impair, « plus vague et plus soluble dans l’air », la « chanson grise » où « l’Indécis au Précis se joint », la Nuance et non la Couleur.",
+      "Il faut fuir la Pointe (satire), l’Esprit cruel et le rire impur, tordre le cou à l’éloquence, assagir la Rime, « bijou d’un sou » qui sonne creux.",
+      "Le vers doit être « la chose envolée », « la bonne aventure » éparse au vent du matin.",
+      "« Et tout le reste est littérature. » Verlaine rompt avec la rhétorique et le lyrisme impersonnel pour chercher l’émotion intime et la mélodie."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -5163,6 +7223,32 @@
       "Lecture à haute voix en faisant entendre la musique des vers.",
       "Écrit : expliquer « Et tout le reste est littérature »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Recommandations : la musique, l’impair, la nuance, l’imprécision.",
+      "Interdictions : la pointe, l’esprit cruel, l’éloquence, la rime trop riche.",
+      "Conception : une poésie musicale, suggestive, légère.",
+      "Vers impair : l’ennéasyllabe (9 syllabes).",
+      "Dernier vers : « Et tout le reste est littérature »."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’un vers impair ?",
+      "→ Réponse : Un vers dont le nombre de syllabes est impair (5, 7, 9, 11…).",
+      "Exemple 2 : Que reproche Verlaine à la Rime ?",
+      "→ Réponse : C’est un « bijou d’un sou » qui « sonne creux et faux » : elle impose sa loi au détriment de la musique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Recommandations ?",
+      "→ Solution : « De la musique avant toute chose », « préfère l’Impair », choisir ses mots « sans quelque méprise », la « chanson grise », « la Nuance », « De la musique encore et toujours », « Que ton vers soit la chose envolée »."
+     ]
     }
    ]
   },
@@ -5204,6 +7290,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que feriez-vous si vous saviez qu’il ne vous reste que quelques instants à vivre ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans « Le temps de vivre », Boris Vian évoque un homme qui s’évade : il dévale la colline tandis que, « là-haut entre les quatre murs », la sirène de la prison hurle.",
+      "Il respire l’odeur des arbres, la lumière fait danser son ombre, il cueille deux feuilles jaunes « gorgées de sève et de soleil », plonge son visage dans l’eau, boit et rit de joie, répétant « Pourvu qu’ils me laissent le temps ».",
+      "Mais les canons d’acier crachent leur feu : « Une abeille de cuivre chaud », une balle, le foudroie sur l’autre rive ; « le sang et l’eau se sont mêlés ».",
+      "Pourtant, « il avait eu le temps de vivre » : quelques instants de liberté valent une vie.",
+      "Le poème oppose la Vie et la Mort."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -5250,6 +7352,32 @@
       "Lecture expressive du poème.",
       "Écrit : commenter le dernier vers « Il avait eu le temps de vivre »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Situation : un prisonnier évadé abattu en pleine fuite.",
+      "Champs lexicaux : liberté (dévalé, sautait), nature (arbres, herbes, eau, soleil), amour (la femme).",
+      "Refrain : « Pourvu qu’ils me laissent le temps ».",
+      "Images : « abeille de cuivre chaud » = la balle ; « le sang et l’eau se sont mêlés ».",
+      "Absence de ponctuation : course haletante, élan continu de la vie."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que désigne « une abeille de cuivre chaud » ?",
+      "→ Réponse : La balle qui tue l’évadé (métaphore).",
+      "Exemple 2 : Quel vers revient comme un refrain ?",
+      "→ Réponse : « Pourvu qu’ils me laissent le temps »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Champs lexicaux de la liberté, de la nature, de l’amour ?",
+      "→ Solution : Liberté : dévalé, sautait, courir, atteindre l’autre rive ; nature : colline, pierres, arbres, herbes, feuilles, sève, soleil, eau, ruisseau ; amour : « courir vers la femme »."
+     ]
     }
    ]
   },
@@ -5291,6 +7419,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment la guerre change-t-elle une ville et la vie de ses habitants ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans « Barbara », Jacques Prévert s’adresse à une jeune femme qu’il a croisée un jour de pluie à Brest, rue de Siam : souriante, épanouie, elle courait sous la pluie se jeter dans les bras d’un homme qui l’appelait.",
+      "Le poète, qui ne la connaissait pas, la tutoie parce qu’il dit « tu à tous ceux qui s’aiment ».",
+      "Cette « pluie sage et heureuse » tombait sur une ville heureuse.",
+      "Puis vient la guerre : « Quelle connerie la guerre » ; la pluie devient « pluie de fer, de feu, d’acier, de sang » (Brest bombardée en août 1944).",
+      "Qu’est devenue Barbara ?",
+      "Son amoureux est-il mort ?",
+      "Aujourd’hui, il pleut comme avant, « mais ce n’est plus pareil et tout est abîmé » : une pluie de deuil, des nuages qui crèvent comme des chiens, sur une ville « dont il ne reste rien »."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -5369,6 +7515,32 @@
       "Oral : lecture expressive du poème (à la manière de Serge Reggiani).",
       "Écrit : en groupe, un court poème évoquant un souvenir heureux ou douloureux avec l’anaphore « Rappelle-toi… »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Message : dénonciation de la guerre qui détruit l’amour et les villes.",
+      "Souvenir : la rencontre heureuse de Barbara sous la pluie.",
+      "Anaphore : « Rappelle-toi Barbara ».",
+      "Opposition : pluie heureuse / « pluie de fer, de feu, d’acier, de sang ».",
+      "Ton : tendresse puis désolation et colère."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’une anaphore ?",
+      "→ Réponse : La répétition d’un mot ou d’un groupe de mots en début de vers ou de phrase (« Rappelle-toi Barbara »).",
+      "Exemple 2 : Que désigne « cette pluie de fer » ?",
+      "→ Réponse : Les bombardements de Brest en août 1944."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Que dénonce le poète ?",
+      "→ Solution : La guerre et ses destructions : « Quelle connerie la guerre »."
+     ]
     }
    ]
   },
@@ -5410,6 +7582,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "À qui élèveriez-vous un monument si vous le pouviez ? Pourquoi ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Boris Vian veut élever un monument « à tous les enfants » partis à la guerre « le sac au dos par un brumeux matin d’avril », qui ont pleuré, les yeux baissés sur leurs chagrins.",
+      "Pas un monument de pierre, de béton ou de bronze, mais un monument de leur souffrance, de leur terreur, de leur étonnement devant un monde parfumé, plein de rires et d’oiseaux, soudain « griffé d’un coup de feu ».",
+      "En revanche, à ceux qui sont restés « les pieds au chaud sous leur bureau », calculant le rendement de la guerre qu’ils ont voulue, aux « gras » qui comptent leurs écus, il dressera le monument qui leur convient : avec le fouet, ses pieds, ses poings et des mots qui colleront sur leurs bajoues « des larmes de honte et de boue »."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -5456,6 +7642,32 @@
       "Oral : lire le poème à haute voix de manière vivante et touchante.",
       "Écrit : un court poème-dédicace : « À toutes les personnes malades », « À toutes les femmes rurales »…"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Situation : les jeunes soldats envoyés à la guerre.",
+      "Dédicace : « À tous les enfants… ».",
+      "Opposition : enfants victimes / profiteurs de guerre.",
+      "Procédés : anaphores, répétitions, énumérations, images violentes.",
+      "Dénonciation : la guerre voulue et exploitée par les puissants."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi le monument n’est-il pas « de pierre » ?",
+      "→ Réponse : Parce que le poète veut un monument fait de la souffrance, de la terreur et de l’étonnement des enfants, qui ne s’use pas avec le temps.",
+      "Exemple 2 : Relevez une image de la violence de la guerre.",
+      "→ Réponse : « Un monde neuf… Soudain griffé d’un coup de feu » ou « Grandit une hache de sang »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De qui et de quelle situation est-il question ?",
+      "→ Solution : Des jeunes gens (« enfants ») envoyés à la guerre, qui ont souffert et sont morts, et de ceux qui ont voulu la guerre sans y aller."
+     ]
     }
    ]
   },
@@ -5497,6 +7709,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment décririez-vous une nuit calme dans un village ou un campement ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans « Nuit de Sine », poème de « Chants d’ombre » (1945), Senghor, alors en France, évoque l’Afrique de son enfance en pays sérère.",
+      "Il demande à la femme de poser sur son front ses « mains balsamiques ».",
+      "Les palmes bruissent à peine dans la brise nocturne ; un « silence rythmé » berce les êtres ; on écoute « battre le pouls profond de l’Afrique dans la brume des villages perdus ».",
+      "La lune lasse décline vers la mer étale ; les rires s’assoupissent, les conteurs dodelinent de la tête « comme l’enfant sur le dos de sa mère », les pieds des danseurs s’alourdissent.",
+      "C’est l’heure des étoiles et de la Nuit qui songe, accoudée à une colline de nuages, « drapée dans son long pagne de lait ».",
+      "Les toits des cases luisent tendrement ; le foyer s’éteint dans l’intimité d’odeurs âcres et douces."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -5548,6 +7777,32 @@
      "lines": [
       "Écrit : faire un commentaire composé du poème (introduction, deux axes : la nuit personnifiée et maternelle ; l’Afrique paisible et sensuelle ; conclusion)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thème : la nuit africaine, paisible et maternelle.",
+      "Personnification : la Nuit qui songe, s’accoude, drapée dans un pagne.",
+      "Bruits et couleurs : palmes, chants, tam-tam du sang ; lune, lait, étoiles.",
+      "Silence et paix : assoupissement, berceuse, foyer qui s’éteint.",
+      "Versification : verset libre, enjambements, rejets."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « balsamiques » ?",
+      "→ Réponse : Qui apaisent comme un baume.",
+      "Exemple 2 : Relevez une comparaison du poème.",
+      "→ Réponse : « comme l’enfant sur le dos de sa mère »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Éléments de la personnification de la nuit ?",
+      "→ Solution : « la Nuit qui songe », « S’accoude à cette colline de nuages », « drapée dans son long pagne de lait » ; aussi la « lune lasse » qui va « vers son lit »."
+     ]
     }
    ]
   },
@@ -5589,6 +7844,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quel métier aimeriez-vous exercer plus tard ? Quelles qualités demande-t-il ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le cardiologue est un médecin spécialisé dans les maladies du cœur et du système cardio-vasculaire.",
+      "Il assure le dépistage par l’examen des patients, ordonne des examens complémentaires pour affiner son diagnostic, recommande un traitement médicamenteux ou chirurgical ou des consignes de prévention, suit les malades hospitalisés, organise la prise en charge en cas d’urgence et aide les patients guéris à retrouver une vie normale (régime, hygiène de vie).",
+      "Il lui faut de la curiosité scientifique, une excellente résistance physique et nerveuse, de la rigueur, une grande capacité d’écoute, de pédagogie et d’empathie, du sang-froid et de la réactivité, et une formation continue.",
+      "La formation dure une dizaine d’années ; il commence souvent à l’hôpital puis peut ouvrir un cabinet.",
+      "Il peut aussi faire de la recherche, enseigner, participer à des missions humanitaires ou aux politiques de santé publique."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -5662,6 +7933,32 @@
       "Écrit : résumé au ¼ ; ou discussion : « Malgré les progrès de la médecine moderne, on doit accorder encore une certaine confiance à la médecine traditionnelle dans notre pays. »",
       "Interview : un cardiologue sur les maladies cardio-vasculaires en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Définition : médecin des maladies du cœur et des vaisseaux.",
+      "Missions : dépistage, diagnostic, traitement, suivi, prévention.",
+      "Qualités : rigueur, résistance, écoute, empathie, sang-froid.",
+      "Formation : environ dix ans de médecine.",
+      "Autres activités : recherche, enseignement, humanitaire, santé publique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « empathie » ?",
+      "→ Réponse : La capacité de partager et de comprendre la douleur du malade.",
+      "Exemple 2 : Qu’est-ce qu’une ONG ?",
+      "→ Réponse : Une Organisation Non Gouvernementale, qui ne dépend pas d’un gouvernement."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce qu’un cardiologue ?",
+      "→ Solution : Un médecin spécialisé dans les maladies du cœur et les troubles du système cardio-vasculaire."
+     ]
     }
    ]
   },
@@ -5703,6 +8000,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les enfants peuvent-ils souffrir de maladies psychologiques ? Qui peut les soigner ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le pédopsychiatre est un médecin spécialisé dans les troubles psychologiques des enfants et des adolescents : troubles de la personnalité, troubles alimentaires, hyperactivité.",
+      "Au carrefour de la psychiatrie, de la pédiatrie et de la psychologie, il établit des diagnostics, communique avec les parents et les conseille, prescrit des médicaments, pratique des thérapies adaptées et hospitalise au besoin.",
+      "Il doit avoir une déontologie sans faille : empathie avec distance et objectivité, discrétion, écoute, grande capacité d’analyse, posture adaptée aux enfants, bonne communication avec les parents.",
+      "Les études sont longues (environ 11 ans après le bac).",
+      "La spécialité attire davantage car elle s’est diversifiée au-delà des cas lourds (autisme, schizophrénie), mais elle reste éprouvante (jeune âge, diversité des pathologies, manque de moyens).",
+      "En Mauritanie, un seul spécialiste exerce au CHS, et il n’existait pas de service de pédopsychiatrie : les enfants étaient soignés avec les adultes."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -5776,6 +8090,32 @@
       "Écrit : résumé au ¼ ; ou discussion sur la médecine traditionnelle et les maladies psychiatriques.",
       "Interview : un psychiatre sur les maladies psychiatriques en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Définition : médecin des troubles psychologiques de l’enfant et de l’adolescent.",
+      "Activités : diagnostic, conseils aux parents, médicaments, thérapies, hospitalisation.",
+      "Qualités : déontologie, empathie, discrétion, analyse.",
+      "Difficultés : jeune âge des patients, diversité des pathologies, manque de moyens.",
+      "Mauritanie : un seul spécialiste au CHS."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « hyperactivité » ?",
+      "→ Réponse : Une agitation excessive.",
+      "Exemple 2 : Qu’est-ce que la déontologie ?",
+      "→ Réponse : L’ensemble des règles morales d’une profession."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce qu’un pédopsychiatre ?",
+      "→ Solution : Un médecin spécialisé dans le traitement des troubles psychologiques des enfants et des adolescents."
+     ]
     }
    ]
   },
@@ -5817,6 +8157,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Qui aide les femmes à accoucher dans votre ville ou votre village ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La sage-femme accompagne les femmes enceintes tout au long de leur grossesse, établit des diagnostics jusqu’à l’accouchement et suit la nouvelle mère.",
+      "Elle utilise des technologies sophistiquées (monitoring, échographe) et, en cas de complication, fait appel à un gynécologue-obstétricien ou à un chirurgien.",
+      "Après l’accouchement, elle vérifie la santé du nouveau-né, le réanime si nécessaire, surveille le rétablissement de la mère et la conseille sur l’allaitement et l’hygiène du bébé.",
+      "Le métier implique de lourdes responsabilités et des conditions difficiles (horaires irréguliers, gardes de nuit, stress, échecs douloureux) et exige une grande résistance.",
+      "Mais il apporte la satisfaction morale, la sympathie des mères, l’estime de l’entourage et parfois des cadeaux.",
+      "On y accède par un diplôme d’État obtenu dans les écoles nationales de santé, sur concours (bac scientifique souvent exigé), ou par des formations à l’étranger."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -5874,6 +8231,32 @@
       "Écrit : résumé au ¼ ; ou discussion : l’accouchement sans assistance médicale est-il acceptable ?",
       "Enquête : le parcours et les conditions de travail de sages-femmes de votre ville."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Rôle : suivre la grossesse, l’accouchement, la mère et le nouveau-né.",
+      "Moyens : monitoring, échographe, appui du gynécologue.",
+      "Conditions : horaires irréguliers, gardes de nuit, stress.",
+      "Avantages : satisfaction morale, estime, reconnaissance.",
+      "Accès : diplôme d’État par concours (bac scientifique)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : À quoi sert l’échographe ?",
+      "→ Réponse : À voir le bébé dans le ventre de sa mère.",
+      "Exemple 2 : Qu’est-ce que le stress ?",
+      "→ Réponse : Un trouble causé par des activités contraignantes et difficiles."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quel est le rôle de la sage-femme ?",
+      "→ Solution : Accompagner les femmes enceintes pendant la grossesse, les aider à accoucher et assurer le suivi de la mère et du nouveau-né."
+     ]
     }
    ]
   },
@@ -5915,6 +8298,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Combien de langues parlez-vous ? À quoi peut servir la connaissance de plusieurs langues ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’interprète est un spécialiste de la communication : il restitue une information d’une langue dans une autre de façon fidèle, précise et complète.",
+      "Il doit bien maîtriser les langues étrangères et, avant chaque intervention, acquérir le vocabulaire technique et comprendre les enjeux du débat.",
+      "Il pratique l’interprétation consécutive (restituer les propos d’un orateur quelques minutes après son intervention) ou simultanée (traduire en cabine au fur et à mesure), exercice très difficile qui exige une intense concentration.",
+      "Il lui faut agilité d’esprit, résistance au stress et grande culture générale.",
+      "La plupart travaillent en indépendants (free-lance), les autres sont salariés d’organismes internationaux ou de grandes entreprises.",
+      "Ils se forment à l’université ou dans des écoles spécialisées et interviennent dans les conférences internationales, les négociations commerciales, les tribunaux, la police, les entreprises."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -5970,6 +8370,32 @@
       "Écrit : résumé au ¼ ; ou discussion : peut-on se contenter d’une ou deux langues pour communiquer efficacement aujourd’hui ?",
       "Interview : inviter un interprète en classe."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Définition : restituer une information d’une langue à une autre.",
+      "Interprétation consécutive : après l’intervention.",
+      "Interprétation simultanée : en cabine, en même temps.",
+      "Qualités : maîtrise des langues, agilité d’esprit, résistance au stress, culture générale.",
+      "Employeurs : indépendants, organismes internationaux, entreprises."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « décrypter » ?",
+      "→ Réponse : Expliquer après avoir bien analysé.",
+      "Exemple 2 : Pourquoi l’interprétation simultanée est-elle difficile ?",
+      "→ Réponse : Parce qu’il faut traduire en même temps que l’orateur parle, ce qui exige une intense concentration."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce qu’un interprète ?",
+      "→ Solution : Un spécialiste de la communication qui restitue une information reçue dans une langue vers une autre langue."
+     ]
     }
    ]
   },
@@ -6011,6 +8437,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une personne accusée a-t-elle besoin d’un avocat ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’avocat défend devant les tribunaux des personnes ayant commis des infractions (vols, crimes, fautes graves) ou ayant d’autres problèmes (héritage, propriété…) ; ces « clients » lui paient des honoraires.",
+      "Il défend aussi des personnes « morales » (institutions, entreprises, associations) dans leurs litiges, et il est conseiller juridique (succession, contrats).",
+      "Après avoir préparé le dossier, il s’occupe de la procédure ; le jour de la comparution, les juges interrogent accusés et plaignants pour avoir des informations solides ; puis l’avocat fait sa plaidoirie pour obtenir un acquittement, des circonstances atténuantes ou la restitution d’un droit.",
+      "Le jugement peut être favorable ou défavorable.",
+      "Pour devenir avocat, on fait des études de droit après un bac littéraire, et un concours peut être exigé pour obtenir le CAPA (Certificat d’Aptitude à la Profession d’Avocat)."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -6106,6 +8548,32 @@
       "Écrit : résumé au ¼ ; ou discussion : doit-on défendre les malfaiteurs en justice ou les condamner directement ?",
       "Interview : inviter un avocat en classe."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Mission : défendre et conseiller (personnes physiques et morales).",
+      "Rémunération : les honoraires.",
+      "Démarche : dossier → procédure → comparution → plaidoirie → verdict.",
+      "Buts de la plaidoirie : acquittement, circonstances atténuantes, restitution d’un droit.",
+      "Accès : études de droit et CAPA."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’une personne « morale » ?",
+      "→ Réponse : Une institution, une entreprise ou une association.",
+      "Exemple 2 : Que signifie CAPA ?",
+      "→ Réponse : Certificat d’Aptitude à la Profession d’Avocat."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Mission de l’avocat ? Deux domaines ?",
+      "→ Solution : Défendre ses clients devant les tribunaux et les conseiller ; domaines : le pénal (vols, crimes) et le civil (héritage, propriété, contrats)."
+     ]
     }
    ]
   },
@@ -6147,6 +8615,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Aimeriez-vous être journaliste ? Que faut-il savoir faire ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Sophie, ancienne journaliste à la Tribune de Toulouse, répond aux questions sur son métier.",
+      "Elle a fait un bac économique, une licence de langues étrangères appliquées (anglais, chinois) puis un master dans une école de journalisme reconnue.",
+      "Faire une école de journalisme est préférable : cela garantit des connaissances et des compétences et permet de développer un réseau professionnel, mais les concours sont payants et difficiles.",
+      "Pour les réussir, il faut beaucoup lire et suivre les médias (presse papier et web, radio, télévision) et savoir quel journaliste on veut devenir.",
+      "Les qualités : la curiosité (on traite des sujets qui ne nous intéressent pas forcément), la rigueur (des phrases bien construites, des faits), le travail d’équipe, la persévérance, le sang-froid, la gestion du stress, la lutte contre la timidité.",
+      "Ce qu’elle adore : apprendre chaque jour et rencontrer sans cesse de nouvelles personnes."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -6224,6 +8709,32 @@
       "Écrit (discussion ou dissertation) : « quand on est journaliste, on ne traite pas uniquement des sujets qui nous intéressent ».",
       "Enquête-interview : la presse locale ; un journaliste mauritanien."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Genre : interview (questions / réponses).",
+      "Parcours : bac éco, licence de langues, école de journalisme.",
+      "Conseils : lire, écouter les médias, avoir un modèle.",
+      "Qualités : curiosité, rigueur, persévérance, sang-froid.",
+      "Avantages : apprendre tous les jours, rencontrer des gens."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « avoir du sang-froid » ?",
+      "→ Réponse : Garder son calme dans les situations difficiles.",
+      "Exemple 2 : Que désigne « les plumes » ici ?",
+      "→ Réponse : Les journalistes (les écrivains de presse)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qui parle du journalisme ?",
+      "→ Solution : Sophie, une ancienne journaliste de la Tribune de Toulouse."
+     ]
     }
    ]
   },
@@ -6265,6 +8776,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pour vous inscrire à un concours après le bac, à qui faut-il écrire et comment ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Amadou Niang, de Nouadhibou, titulaire du bac D (2020), écrit au Ministre de la santé et des affaires sociales pour solliciter la validation de sa candidature au concours des infirmiers de l’École nationale de santé (ENS).",
+      "Il explique sa motivation : participer à la promotion de la santé, secteur vital pour le développement, et être utile à la société.",
+      "Il joint les pièces d’état civil et le certificat médical et termine par une formule de politesse respectueuse.",
+      "C’est une demande (lettre administrative) : en-tête (expéditeur, coordonnées, lieu et date, destinataire, objet), corps (sollicitation, justification, pièces jointes, formule finale) et signature."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -6348,6 +8874,32 @@
      "lines": [
       "Écrit : sur ce modèle, rédiger une demande d’emploi, de permission ou de congé, ou de bourse d’études."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Type : demande (lettre administrative).",
+      "En-tête : expéditeur, coordonnées, lieu et date, destinataire, objet.",
+      "Corps : sollicitation, présentation et motivation, pièces jointes.",
+      "Formules : « J’ai l’honneur de solliciter… », « Veuillez agréer… ».",
+      "Signature : « L’intéressé »."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle formule ouvre la demande ?",
+      "→ Réponse : « J’ai l’honneur de solliciter de votre haute et bienveillante autorité… »",
+      "Exemple 2 : Où place-t-on l’objet de la lettre ?",
+      "→ Réponse : Dans l’en-tête, avant le corps de la lettre."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qui a écrit ce document ? Pourquoi ?",
+      "→ Solution : Amadou Niang, pour solliciter la validation de sa candidature au concours des infirmiers de l’ENS."
+     ]
     }
    ]
   },
@@ -6389,6 +8941,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quand une entreprise recrute, comment sait-elle qui sont les candidats et ce qu’ils savent faire ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le curriculum vitae (CV) présente de façon brève et organisée le parcours d’une personne.",
+      "Le modèle est celui de Mohamed Lémine Ould Brahim, professeur : état civil et statut familial (nom, date et lieu de naissance, fonction, situation familiale, nationalité, contact, adresse) ; études et diplômes (bac C en 1978, maîtrise de chimie en 1982 au Maroc, doctorat de 3e cycle à Paris en 1985, thèse sur la dépollution dans les complexes sidérurgiques) ; postes et emplois (assistant puis maître-assistant à l’Institut Supérieur Scientifique de Nouakchott) ; travaux et publications ; langues écrites et parlées (français, arabe, anglais).",
+      "On l’utilise pour postuler à un emploi, un stage, une bourse, une promotion."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -6442,6 +9008,32 @@
      "lines": [
       "Écrit : rédiger son propre CV ; ou le CV d’un étudiant diplômé en droit, sociologie ou médecine qui cherche un emploi ou un stage."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Le CV : présentation brève du parcours d’une personne.",
+      "Rubriques : état civil, études et diplômes, postes et emplois, travaux et publications, langues.",
+      "Ordre chronologique, phrases nominales.",
+      "Usages : emploi, stage, bourse, concours.",
+      "Accompagné souvent d’une lettre de motivation."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « curriculum vitae » ?",
+      "→ Réponse : « Le déroulement de la vie » : le parcours d’une personne.",
+      "Exemple 2 : Quelle rubrique indique les compétences linguistiques ?",
+      "→ Réponse : « Langues écrites et parlées »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce qu’un CV ?",
+      "→ Solution : Un document qui présente l’identité, la formation, l’expérience professionnelle et les compétences d’une personne."
+     ]
     }
    ]
   },
@@ -6483,6 +9075,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi joint-on une lettre à son CV quand on cherche un emploi ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Fatimetou Ahmed Salem, jeune infirmière diplômée, écrit de Rosso à la directrice du Centre Hospitalier National de Nouakchott pour obtenir un poste d’infirmière au service de maternité.",
+      "Elle présente son expérience : plusieurs stages, dont le dernier à la maternité de Rosso, où elle a pris en charge 20 lits, réalisé des prédiagnostics, dirigé une équipe de 10 infirmières et assisté la sage-femme, ce qui a suscité son intérêt pour la maternité ; elle a aussi travaillé en réanimation et aux urgences.",
+      "Elle fait valoir ses qualités : actualisation constante de ses connaissances, souci du bien-être et de la dignité des patients, éthique indéfectible.",
+      "Elle propose une rencontre et termine par une formule de politesse.",
+      "C’est une lettre de motivation, qui accompagne le CV pour convaincre l’employeur."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -6543,6 +9151,32 @@
       "Écrit : rédiger une lettre de motivation pour soi ou pour un jeune diplômé cherchant un emploi ou un stage.",
       "Oral (exposé) : au moins trois exemples de lettres de motivation (emploi, stage, changement d’emploi)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Émettrice : une jeune infirmière diplômée.",
+      "Destinataire : la directrice du CHN de Nouakchott.",
+      "Objet : poste d’infirmière en maternité.",
+      "Arguments : stages, responsabilités, qualités humaines.",
+      "But : obtenir un entretien (« je vous propose de nous rencontrer »)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle phrase demande un entretien ?",
+      "→ Réponse : « Je vous propose de nous rencontrer au cours des semaines à venir. »",
+      "Exemple 2 : Quelle différence entre une demande et une lettre de motivation ?",
+      "→ Réponse : La demande sollicite une chose précise ; la lettre de motivation argumente pour convaincre en mettant en valeur ses compétences."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qui a écrit cette lettre ? À qui et pourquoi ?",
+      "→ Solution : Fatimetou Ahmed Salem, à la directrice du Centre Hospitalier National de Nouakchott, pour obtenir un poste d’infirmière au service de maternité."
+     ]
     }
    ]
   },
@@ -6584,6 +9218,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Après une réunion de parents d’élèves, comment garder une trace officielle des décisions prises ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le document est le modèle du procès-verbal d’une réunion de l’APEA (Agir Pour les Enfants Autistes), association qui soutient les enfants autistes.",
+      "Il comporte : le lieu, la date, l’ordre du jour (présentation de l’ordre du jour, compte rendu des activités récentes, lancement d’activités pour le dernier trimestre, divers), la liste des présents et des excusés, la présidence et l’heure de début.",
+      "Il rapporte ensuite chaque point : l’ordre du jour adopté à l’unanimité, les comptes rendus des membres et la synthèse du secrétaire général (réussites, échecs, remédiations), les propositions d’activités et celles qui sont retenues, les recommandations finales.",
+      "Il se termine par la signature du président et du secrétaire.",
+      "À retenir : le compte rendu est une synthèse sans valeur juridique ; le procès-verbal est un document officiel qui consigne les décisions, opposable en cas de litige, approuvé et signé par le président et le secrétaire de séance."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -6665,6 +9315,32 @@
      "lines": [
       "Écrit : rédiger le PV d’une réunion de votre choix : jeunes du quartier créant une coopérative, conseil des élèves, parents d’élèves…"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Le PV : document officiel qui consigne les décisions d’une réunion.",
+      "En-tête : lieu, date, ordre du jour, présents, excusés, président, heure.",
+      "Corps : un paragraphe par point de l’ordre du jour.",
+      "Fin : signatures du président et du secrétaire.",
+      "PV (valeur juridique) ≠ compte rendu (simple synthèse)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qui signe le procès-verbal ?",
+      "→ Réponse : Le président et le secrétaire de séance.",
+      "Exemple 2 : Qu’est-ce que l’ordre du jour ?",
+      "→ Réponse : La liste des points à traiter pendant la réunion."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quel nom porte ce document ?",
+      "→ Solution : Un procès-verbal (PV) de réunion."
+     ]
     }
    ]
   },
@@ -6707,6 +9383,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Une recette, un conte, une publicité, un article sur la Covid : ces textes ont-ils le même but ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour déterminer le type dominant d’un texte, on observe ses règles d’organisation : le lexique, la « grammaire » et l’articulation des phrases.",
+      "Un texte mêle souvent plusieurs intentions, mais l’une domine : on dira par exemple qu’il est à dominante informative, avec des sous-dominantes explicative et argumentative.",
+      "Le narratif est construit sur un axe temporel ; l’informatif présente des informations ; l’injonctif donne des conseils ou des ordres ; l’argumentatif cherche à convaincre ; le descriptif est construit avec des indicateurs spatiaux ; l’explicatif répond à une question."
+     ]
+    },
     {
      "h": "Les types de textes",
      "lines": [],
@@ -6754,6 +9444,33 @@
       "« Faut-il se méfier de la télévision ? » : dominante argumentative (connecteurs En premier lieu, Mais, Tout d’abord, Enfin), sous-dominante informative.",
       "« Une vieille ville mauritanienne » : dominante descriptive."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Narratif : axe temporel, passé simple / imparfait, indicateurs de temps.",
+      "Informatif : présentation, tournures impersonnelles, présent.",
+      "Injonctif : impératif, infinitif, « il faut ».",
+      "Argumentatif : connecteurs logiques, cause, conséquence, opposition.",
+      "Descriptif : indicateurs spatiaux, adjectifs, imparfait.",
+      "Explicatif : connecteurs de commentaire (car, c’est-à-dire)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quels temps dominent dans un texte narratif ?",
+      "→ Réponse : Le passé simple et l’imparfait (ou le passé composé).",
+      "Exemple 2 : Citez deux connecteurs d’opposition.",
+      "→ Réponse : Mais, toutefois (néanmoins, pourtant, or)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quel est le type dominant d’« Un beau souvenir d’enfance » ?",
+      "→ Solution : Narratif (autobiographique) : récit au passé, à la 1re personne, avec des indicateurs de temps (« Tous les jours », « Un jour »)."
+     ]
     }
    ]
   },
@@ -6795,6 +9512,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "« Ce n’est pas drôle » veut-il toujours dire seulement « ce n’est pas drôle » ? Que veut-on dire vraiment ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une figure de style est une manière de s’exprimer qui modifie le langage ordinaire pour le rendre plus expressif.",
+      "Il existe des figures d’analogie (comparaison, métaphore, personnification), de substitution (métonymie, synecdoque, périphrase), d’opposition (antithèse, oxymore, chiasme), d’insistance (anaphore, hyperbole, pléonasme), d’atténuation (litote, euphémisme) et de pensée (ironie, antiphrase, prosopopée).",
+      "Le manuel les présente par ordre alphabétique avec des exemples littéraires et non littéraires."
+     ]
+    },
     {
      "h": "Les principales figures",
      "lines": [],
@@ -6881,6 +9612,32 @@
      "lines": [
       "« un fleuve gonflé comme un bras de mer » (Kaédi) : comparaison ; « une abeille de cuivre chaud » (Vian) : métaphore ; « Rappelle-toi Barbara » (Prévert) : anaphore ; « la Nuit qui songe » (Senghor) : personnification."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Analogie : comparaison (avec outil), métaphore (sans outil), personnification.",
+      "Insistance : anaphore, hyperbole, pléonasme expressif.",
+      "Atténuation : litote, euphémisme.",
+      "Opposition : antithèse, oxymore, chiasme.",
+      "Substitution : métonymie, synecdoque, périphrase."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Différence entre comparaison et métaphore ?",
+      "→ Réponse : La comparaison utilise un outil (comme, tel, semblable à) ; la métaphore n’en a pas.",
+      "Exemple 2 : Qu’est-ce qu’un oxymore ?",
+      "→ Réponse : La juxtaposition de deux mots de sens contraires : « un regard éteint », « un silence éloquent »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Identifiez la figure : « Il est temps que je me repose » (V. Hugo, pour dire « que je meure »).",
+      "→ Solution : Un euphémisme : il adoucit l’idée brutale de la mort."
+     ]
     }
    ]
   },
@@ -6923,6 +9680,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Lisez « La courbe de tes yeux fait le tour de mon cœur ». Combien de syllabes entendez-vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le sonnet est composé de deux quatrains (strophes de quatre vers) suivis de deux tercets (strophes de trois vers) ; les rimes doivent être les mêmes dans les deux quatrains.",
+      "Les rimes sont la répétition de sons identiques à la fin des vers : elles sont riches si elles portent sur au moins trois sons (ensemble / ressemble), féminines si elles se terminent par un « e » muet (fleurie, s’envole), masculines dans les autres cas.",
+      "Elles se disposent en rimes plates ou suivies (AABB), croisées (ABAB) ou embrassées (ABBA).",
+      "La mesure est le nombre de syllabes d’un vers : l’alexandrin en compte douze (« La courbe de tes yeux fait le tour de mon cœur », Paul Éluard).",
+      "On ne compte pas le « e » muet en fin de vers ni lorsqu’il est élidé devant une voyelle : « La / ci / go / gn(e) au / long / bec » = 6 syllabes."
+     ]
+    },
+    {
      "h": "La disposition des rimes",
      "lines": [],
      "table": [
@@ -6955,6 +9728,32 @@
      "h": "Remarque",
      "lines": [
       "(Correction : un groupe de trois vers s’appelle un tercet, et non un « tiercé » ; le poète s’écrit Paul Éluard, et non « ELLUARD ».)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Sonnet : 2 quatrains + 2 tercets (14 vers).",
+      "Rimes riches (3 sons), féminines (e muet) / masculines.",
+      "Disposition : AABB plates, ABAB croisées, ABBA embrassées.",
+      "Alexandrin : 12 syllabes, césure à l’hémistiche (6/6).",
+      "E muet : non compté en fin de vers ou devant voyelle."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de vers compte un sonnet ?",
+      "→ Réponse : Quatorze : deux quatrains et deux tercets.",
+      "Exemple 2 : Qu’est-ce qu’une rime féminine ?",
+      "→ Réponse : Une rime terminée par un « e » muet (fleurie, s’envole)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle est la disposition des rimes dans un quatrain rimé ABBA ?",
+      "→ Solution : Des rimes embrassées."
      ]
     }
    ]

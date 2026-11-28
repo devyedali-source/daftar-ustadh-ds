@@ -101,9 +101,10 @@ fun PlanningTab(
             available.firstOrNull { it.first == subject }?.second.orEmpty(), practice?.word.orEmpty()) { openedPractice = null }
     }
     var opened by remember { mutableStateOf<Pair<com.elyedali.daftarustadh.data.BookLesson, String>?>(null) }
+    var openedView by remember { mutableStateOf(0) }
     opened?.let { (l, week) ->
         LessonDialog(l, available.firstOrNull { it.first == subject }?.second.orEmpty(), week,
-            lessonSet?.bookOf(l).orEmpty(), lessonSet?.bookTitleOf(l).orEmpty(), subject) { opened = null }
+            lessonSet?.bookOf(l).orEmpty(), lessonSet?.bookTitleOf(l).orEmpty(), subject, initialView = openedView) { opened = null }
     }
 
     // كتاب المادة المعروضة: إن لم يكن على الهاتف تظهر حالته أو زر تنزيله وحده (يختفي عند اكتماله)
@@ -198,7 +199,7 @@ fun PlanningTab(
         itemsIndexed(shownRows) { i, r ->
             val prev = shownRows.getOrNull(i - 1)
             // كم مرة ورد كل عنوان قبل هذا الأسبوع (لربط العناوين المكررة بدروس مختلفة)
-            val seen = shownRows.take(i).flatMap { it.items }
+            val seen = shownRows.take(i).filter { it.kind != "series" }.flatMap { it.items }
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 // عنوان الفصل عند بدايته
                 if (r.term in 1..3 && r.kind != "holiday" && (prev == null || prev.term != r.term))
@@ -223,12 +224,23 @@ fun PlanningTab(
                             fontWeight = FontWeight.Bold, fontSize = 12.sp, color = fg, textAlign = TextAlign.Start)
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                         if (r.kind == "holiday" && r.items.isEmpty()) Text(holiday, fontWeight = FontWeight.Bold, color = fg, fontSize = 13.sp)
-                        r.items.forEach { item ->
+                        // سلسلة تمارين الفصل (الثانوية): بعد آخر دروس الفصل، تفتح السلسلة مباشرة
+                        if (r.kind == "series") r.items.forEach { item ->
+                            val l = lessonSet?.find(item) ?: return@forEach
+                            if (l.series.isEmpty()) return@forEach
+                            val ar = l.title.any { it in '\u0600'..'\u06FF' }
+                            val label = when { subject == "ANG" -> "📚 Exercise series"; ar -> "📚 سلسلة تمارين الفصل"; else -> "📚 Série d'exercices" } +
+                                " (${l.series.size})"
+                            Text(label, fontSize = 13.sp, fontWeight = FontWeight.Black, color = Color.White,
+                                modifier = Modifier.clip(RoundedCornerShape(8.dp)).background(Color(0xFF2E7D32))
+                                    .clickable { openedView = 3; opened = l to r.label }.padding(horizontal = 10.dp, vertical = 6.dp))
+                        }
+                        if (r.kind != "series") r.items.forEach { item ->
                             val l = if (r.kind == "lesson") lessonSet?.find(item, seen.count { it == item }) else null
                             if (l != null) Text("📖 $item", fontSize = 13.sp, color = MaterialTheme.colorScheme.primary,
                                 fontWeight = FontWeight.Bold,
                                 modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(6.dp))
-                                    .clickable { opened = l to r.label }.padding(vertical = 2.dp))
+                                    .clickable { openedView = 0; opened = l to r.label }.padding(vertical = 2.dp))
                             else Text("• $item", fontSize = 13.sp, color = fg,
                                 fontWeight = if (r.kind == "lesson") FontWeight.Normal else FontWeight.Bold)
                         }

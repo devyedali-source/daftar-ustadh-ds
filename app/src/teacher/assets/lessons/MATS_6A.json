@@ -42,6 +42,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une entreprise emploie 320 personnes, avec trois fois plus d’hommes que de femmes. Combien de femmes ? Comment trouver la réponse sans tâtonner ?"
+     ]
+    },
+    {
      "h": "I. Équations du premier degré",
      "lines": [
       "5x + 7 = −3 + 2x ⇔ 3x = −10 ⇔ x = −10/3.",
@@ -99,6 +105,32 @@
       "Δ = 64 025 ; x ≈ 27,25 (la racine −36 est rejetée) ; longueur ≈ 4/5 × 27,25 + 7 = 28,8 cm.",
       "(Correction : le manuel écrit « 4/5 × 27,5 » ; il faut lire 27,25.)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Premier degré : isoler x (changer de membre = changer de signe).",
+      "Équation-produit : A × B = 0 ⇔ A = 0 ou B = 0.",
+      "Δ = b² − 4ac ; x = (−b ± √Δ)/2a.",
+      "a + b + c = 0 ⇒ racines 1 et c/a ; a − b + c = 0 ⇒ racines −1 et −c/a.",
+      "S = −b/a ; P = c/a ; X² − SX + P = 0."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Trouver deux nombres dont la somme est 7 et le produit 12.",
+      "→ Réponse : X² − 7X + 12 = 0 : Δ = 1 ; X = 3 ou X = 4.",
+      "Exemple 2 : Résoudre x² − 5x + 4 = 0 sans calculer Δ.",
+      "→ Réponse : a + b + c = 1 − 5 + 4 = 0 ⇒ racines 1 et c/a = 4."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre 2x² − x − 6 = 0.",
+      "→ Solution : Δ = (−1)² − 4 × 2 × (−6) = 49 > 0 ; x₁ = (1 − 7)/4 = −3/2 ; x₂ = (1 + 7)/4 = 2. S = {−3/2 ; 2}."
+     ]
     }
    ]
   },
@@ -140,6 +172,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Le périmètre d’un rectangle de largeur 5,3 cm ne doit pas dépasser 37 cm. Quelles longueurs sont possibles ? Ici la réponse n’est pas un nombre mais un intervalle."
+     ]
+    },
     {
      "h": "I. Premier degré",
      "lines": [
@@ -207,6 +245,32 @@
       "3x² + 6x + 5 > 0 : Δ = −24 < 0, a > 0 ⇒ S = ℝ.",
       "3x² + 6x − 9 > 0 : Δ = 144 ; racines −3 et 1 ⇒ S = ]−∞ ; −3[ ∪ ]1 ; +∞[."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Diviser par un négatif ⇒ changer le sens.",
+      "a ≤ x ≤ b ⇔ x ∈ [a ; b] ; a < x < b ⇔ x ∈ ]a ; b[.",
+      "ax + b : signe de −a puis 0 en −b/a puis signe de a.",
+      "Trinôme : signe de a « à l’extérieur » des racines.",
+      "Δ < 0 : trinôme toujours du signe de a."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Étudier le signe de 3x + 6.",
+      "→ Réponse : Nul en −2 ; négatif pour x < −2 ; positif pour x > −2.",
+      "Exemple 2 : Résoudre x² − 4 ≤ 0.",
+      "→ Réponse : Racines −2 et 2, a > 0 : négatif entre les racines ; S = [−2 ; 2]."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre 2(x − 4) ≤ 4x − 5.",
+      "→ Solution : 2x − 8 ≤ 4x − 5 ⇔ −2x ≤ 3 ⇔ x ≥ −3/2 (on a divisé par −2) ; S = [−3/2 ; +∞[."
+     ]
     }
    ]
   },
@@ -248,6 +312,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Fatima paie 1060 UM pour 3 kg de bananes et 2 kg de pommes. Peut-on trouver le prix d’un kilo de chaque fruit avec une seule équation ?"
+     ]
+    },
     {
      "h": "Combinaison",
      "lines": [
@@ -295,6 +365,32 @@
       ],
       "caption": "Région solution"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Substitution : isoler, remplacer.",
+      "Combinaison : coefficients opposés puis addition.",
+      "Cramer : x = Δx/Δ ; y = Δy/Δ (Δ ≠ 0).",
+      "Graphique : intersection de deux droites.",
+      "Inéquations : demi-plans ; région solution."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre par combinaison {x + y = 10 ; x − y = 2}.",
+      "→ Réponse : En additionnant : 2x = 12 ⇒ x = 6 ; y = 4.",
+      "Exemple 2 : Que signifie Δ = 0 dans la méthode de Cramer ?",
+      "→ Réponse : Le système n’a pas une solution unique : les droites sont parallèles (aucune solution) ou confondues (une infinité)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre {−3x + y = 9 ; 4x − 3y = −17} par substitution.",
+      "→ Solution : y = 9 + 3x ; 4x − 3(9 + 3x) = −17 ⇔ −5x = 10 ⇔ x = −2 ; y = 3. S = {(−2 ; 3)}."
+     ]
     }
    ]
   },
@@ -335,6 +431,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un éleveur remarque que le carré du nombre de têtes de ses chèvres est égal au triple du nombre de pattes plus le nombre de têtes. Combien a-t-il de chèvres ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les exercices corrigés du manuel montrent la démarche : choix de l’inconnue, mise en équation, résolution, vérification et conclusion (en rejetant les solutions impossibles, comme une longueur négative).",
+      "Ils portent sur un rectangle (inéquation), les chèvres et le trapèze (second degré), un partage d’argent (premier degré) et l’achat de fruits (système).",
+      "Les exercices généraux entraînent à toutes les techniques du chapitre."
+     ]
+    },
     {
      "h": "Exercices corrigés",
      "lines": [],
@@ -434,6 +544,31 @@
      "lines": [
       "(Correction : 2006 n’est pas divisible par 3, donc il n’existe pas trois entiers consécutifs de somme 2006 : 3n + 3 = 2006 n’a pas de solution entière.)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Choisir l’inconnue et l’écrire clairement.",
+      "Traduire l’énoncé en équation, inéquation ou système.",
+      "Rejeter les solutions sans sens (négatives…).",
+      "Conclure par une phrase."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une bouteille et son bouchon pèsent 110 g ; la bouteille pèse 100 g de plus. Poids du bouchon ?",
+      "→ Réponse : c + (c + 100) = 110 ⇔ c = 5 g ; la bouteille pèse 105 g.",
+      "Exemple 2 : Résoudre {2x − y = 2 ; x + y = 1}.",
+      "→ Réponse : En additionnant : 3x = 3 ⇒ x = 1 ; y = 0."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Chèvres : x² = 3 × 4x + x.",
+      "→ Solution : x² − 13x = 0 ⇔ x(x − 13) = 0 ⇔ x = 0 (rejeté) ou x = 13 : 13 chèvres."
+     ]
     }
    ]
   },
@@ -475,6 +610,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que devient 1/x quand x devient très grand ? Et quand x s’approche de 0 ?"
+     ]
+    },
     {
      "h": "Domaines de définition",
      "lines": [
@@ -525,6 +666,32 @@
       "En ±∞ : lim 3x²/x² = 3 ⇒ y = 3 asymptote horizontale.",
       "En 1 : 5/0 ⇒ x = 1 asymptote verticale ; en 2 : 15/0 ⇒ x = 2 asymptote verticale."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Df : polynôme ℝ ; rationnelle : dénominateur ≠ 0 ; racine : radicande ≥ 0.",
+      "En ±∞ : terme de plus haut degré.",
+      "l/0⁺ = ±∞ selon le signe de l.",
+      "Formes indéterminées : ∞ − ∞, 0 × ∞, ∞/∞, 0/0.",
+      "Asymptotes : horizontale, verticale, oblique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Calculer lim (2x + 1)/(x² − x + 1) en −∞.",
+      "→ Réponse : lim 2x/x² = lim 2/x = 0.",
+      "Exemple 2 : Quelle asymptote pour f(x) = (2x + 1)/(x − 3) ?",
+      "→ Réponse : y = 2 (horizontale) et x = 3 (verticale)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Déterminer Df pour h(x) = √(x + 5).",
+      "→ Solution : x + 5 ≥ 0 ⇔ x ≥ −5 ; Dh = [−5 ; +∞[."
+     ]
     }
    ]
   },
@@ -565,6 +732,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les courbes de x², de √x et de x + 1/x « partent » toutes vers l’infini. Partent-elles de la même façon ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Lorsque lim f(x) = ±∞ quand x → ±∞, on étudie lim f(x)/x.",
+      "1) Si lim f(x)/x = a ≠ 0 et lim [f(x) − ax] = b ∈ ℝ, la courbe admet une asymptote oblique y = ax + b (exemple f(x) = x + 1/x, asymptote y = x).",
+      "2) Si lim f(x)/x = 0, la courbe admet une branche parabolique de direction (Ox) (exemple √x).",
+      "3) Si lim f(x)/x = ±∞, la courbe admet une branche parabolique de direction (Oy) (exemple x²).",
+      "4) Si lim f(x)/x = a ≠ 0 et lim [f(x) − ax] = ±∞, la courbe admet une branche parabolique de direction la droite y = ax (exemple x + √x, direction y = x)."
+     ]
+    },
     {
      "h": "Les quatre possibilités",
      "lines": [],
@@ -622,6 +805,31 @@
      "lines": [
       "lim f(x)/x = lim (1 + 1/√x) = 1 ; lim [f(x) − x] = lim √x = +∞ ⇒ branche parabolique de direction y = x."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "lim f(x)/x = a ≠ 0 et lim (f(x) − ax) = b : asymptote oblique y = ax + b.",
+      "lim f(x)/x = 0 : branche parabolique de direction (Ox).",
+      "lim f(x)/x = ±∞ : branche parabolique de direction (Oy).",
+      "lim f(x)/x = a, lim (f(x) − ax) = ±∞ : direction y = ax."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Nature de la branche infinie de √x en +∞ ?",
+      "→ Réponse : lim √x/x = lim 1/√x = 0 : branche parabolique de direction (Ox).",
+      "Exemple 2 : Montrer que y = 2x est asymptote de f(x) = 2x + 3/x en +∞.",
+      "→ Réponse : lim [f(x) − 2x] = lim 3/x = 0."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Nature de la branche infinie de f(x) = x² en +∞ ?",
+      "→ Solution : lim f(x) = +∞ et lim x²/x = lim x = +∞ : branche parabolique de direction (Oy)."
+     ]
     }
    ]
   },
@@ -662,6 +870,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment savoir, sans tracer la courbe, si une fonction monte ou descend ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Formules : (k)’ = 0 ; (x)’ = 1 ; (ax + b)’ = a ; (xⁿ)’ = nxⁿ⁻¹ ; (1/x)’ = −1/x² ; (1/xⁿ)’ = −n/xⁿ⁺¹ ; (√x)’ = 1/(2√x) sur ]0 ; +∞[.",
+      "Opérations : (u + v)’ = u’ + v’ ; (ku)’ = ku’ ; (uv)’ = u’v + uv’ ; (1/u)’ = −u’/u² ; (u/v)’ = (u’v − uv’)/v².",
+      "Si f’(x) > 0 sur I, f est croissante sur I ; si f’(x) < 0, décroissante ; si f’(x) = 0, constante.",
+      "La tangente à la courbe au point d’abscisse x₀ a pour équation y = f’(x₀)(x − x₀) + f(x₀)."
+     ]
+    },
     {
      "h": "Formules de dérivation",
      "lines": [],
@@ -740,6 +963,31 @@
       "g(x) = (x² − 2x + 3)/(x − 2) ⇒ g’(x) = [(2x − 2)(x − 2) − (x² − 2x + 3)]/(x − 2)² = (x² − 4x + 1)/(x − 2)².",
       "h(x) = √(2x + 1) ⇒ h’(x) = 2/(2√(2x + 1)) = 1/√(2x + 1) sur ]−1/2 ; +∞[."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "(xⁿ)’ = nxⁿ⁻¹ ; (1/x)’ = −1/x² ; (√x)’ = 1/(2√x).",
+      "(uv)’ = u’v + uv’ ; (u/v)’ = (u’v − uv’)/v².",
+      "f’ > 0 ⇒ f croissante ; f’ < 0 ⇒ f décroissante.",
+      "Tangente : y = f’(x₀)(x − x₀) + f(x₀)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Dériver f(x) = 5x² + 3x − 5.",
+      "→ Réponse : f’(x) = 10x + 3.",
+      "Exemple 2 : Dériver f(x) = (2x + 1)/(x − 2).",
+      "→ Réponse : f’(x) = [2(x − 2) − (2x + 1)]/(x − 2)² = −5/(x − 2)²."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Équation de la tangente à f(x) = x³ − 3x² + 3x + 4 au point d’abscisse 2.",
+      "→ Solution : f’(x) = 3x² − 6x + 3 ; f’(2) = 3 ; f(2) = 6 ; y = 3(x − 2) + 6 = 3x."
+     ]
     }
    ]
   },
@@ -782,6 +1030,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Que se passe-t-il pour f(x) = (2x − 3)/(x + 1) quand x s’approche de −1 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une fonction homographique s’écrit f(x) = (ax + b)/(cx + d) avec c ≠ 0 et ad − bc ≠ 0.",
+      "Elle est définie sur ℝ \\ {−d/c}.",
+      "Elle peut se mettre sous la forme réduite f(x) = A + B/(x − α) avec A = a/c, α = −d/c et B = (bc − ad)/c² ≠ 0.",
+      "Sa courbe est une hyperbole qui admet une asymptote verticale x = α et une asymptote horizontale y = A ; leur point d’intersection Ω(α ; A) est centre de symétrie.",
+      "Si B < 0, f est croissante sur chaque intervalle de son domaine ; si B > 0, elle est décroissante."
+     ]
+    },
+    {
      "h": "Représentations",
      "lines": [
       "Hyperboles selon le signe de B."
@@ -815,6 +1079,32 @@
       ],
       "caption": "Courbe de f et ses asymptotes"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "f(x) = (ax + b)/(cx + d), c ≠ 0, ad − bc ≠ 0.",
+      "Df = ℝ \\ {−d/c}.",
+      "Forme réduite : A + B/(x − α).",
+      "Asymptotes x = α et y = A ; centre Ω(α ; A).",
+      "B < 0 : croissante ; B > 0 : décroissante (sur chaque intervalle)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Domaine et asymptotes de f(x) = (x + 2)/(x − 3) ?",
+      "→ Réponse : Df = ℝ \\ {3} ; x = 3 et y = 1 ; centre Ω(3 ; 1).",
+      "Exemple 2 : f(x) = 1 + 4/(x − 2) est-elle croissante ou décroissante ?",
+      "→ Réponse : B = 4 > 0 : décroissante sur ]−∞ ; 2[ et sur ]2 ; +∞[."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pour f(x) = (2x − 3)/(x + 1), montrer que f(x) = 2 − 5/(x + 1).",
+      "→ Solution : 2 − 5/(x + 1) = [2(x + 1) − 5]/(x + 1) = (2x − 3)/(x + 1)."
+     ]
     }
    ]
   },
@@ -854,6 +1144,19 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un champ rapporte 480 poires par arbre avec 60 poiriers, mais 5 de moins par arbre pour chaque poirier en plus. Faut-il planter davantage ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les exercices corrigés utilisent la dérivée pour trouver un minimum ou un maximum : le produit de deux nombres de différence 12, le coût minimal d’une entreprise, le rendement maximal d’un verger ; puis l’étude d’une fonction homographique et celle d’un trinôme (dérivée, signe, tableau de variations, tangente).",
+      "Les exercices généraux portent sur les domaines, images et antécédents, limites, dérivées, tangentes et études de fonctions."
+     ]
+    },
     {
      "h": "Exercices corrigés",
      "lines": [],
@@ -927,6 +1230,30 @@
        "f’(x) = 3(x − 1)(x + 1) ; croissante, décroissante sur [−1 ; 1], croissante ; f(−1) = 4, f(1) = 0 ; f(−x) + f(x) = 4 ⇒ A(0 ; 2) centre de symétrie"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Optimiser : f’(x) = 0 donne l’extremum.",
+      "Étude complète : Df, limites, f’, signe, tableau, courbe.",
+      "Vérifier la cohérence de la réponse avec le problème."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre f’(x) = 0 pour R(x) = −5x² + 180x + 28 800.",
+      "→ Réponse : R’(x) = −10x + 180 = 0 ⇔ x = 18.",
+      "Exemple 2 : Image de 1 par f(x) = −x² + 2x + 3 ?",
+      "→ Réponse : f(1) = −1 + 2 + 3 = 4."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Produit minimal de deux nombres dont la différence est 12 ?",
+      "→ Solution : f(x) = x(x − 12) = x² − 12x ; f’(x) = 2x − 12 = 0 ⇔ x = 6 ; minimum f(6) = −36 (nombres 6 et −6)."
+     ]
     }
    ]
   },
@@ -968,6 +1295,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un élève économise 2 UM le premier jour, puis toujours 2 UM de plus que la veille. Comment décrire ses économies jour après jour ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une suite numérique est une application de ℕ (ou d’une partie de ℕ) vers ℝ.",
+      "Elle peut être définie explicitement (Un en fonction de n) ou par récurrence (premier(s) terme(s) et une relation entre termes consécutifs).",
+      "Une suite est majorée par M si Un ≤ M pour tout n, minorée par m si Un ≥ m, bornée si elle est majorée et minorée.",
+      "Elle est croissante si Un+1 ≥ Un pour tout n, décroissante si Un+1 ≤ Un, constante si Un+1 = Un.",
+      "En pratique on étudie le signe de Un+1 − Un, ou, si tous les termes sont positifs, on compare Un+1/Un à 1."
+     ]
+    },
+    {
      "h": "Suites récurrentes",
      "lines": [
       "U0 = 2, Un+1 = 5Un − 7 : U1 = 3, U2 = 8, U3 = 33.",
@@ -985,6 +1328,31 @@
      "lines": [
       "Un = (3n − 2)/(n + 1) : Un+1 − Un = 5/[(n + 2)(n + 1)] > 0 ⇒ croissante.",
       "Vn = 2³ⁿ/3²ⁿ = (8/9)ⁿ : Vn+1/Vn = 8/9 < 1 ⇒ décroissante."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Explicite : Un = f(n) ; récurrente : U0 et Un+1 = g(Un).",
+      "Majorée / minorée / bornée.",
+      "Signe de Un+1 − Un ⇒ sens de variation.",
+      "Termes positifs : comparer Un+1/Un à 1."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un = n² − 6n + 1 : calculer U0 à U4.",
+      "→ Réponse : 1 ; −4 ; −7 ; −8 ; −7.",
+      "Exemple 2 : Sens de variation de Un = 1/(n + 1) ?",
+      "→ Réponse : Un+1 − Un = −1/[(n + 1)(n + 2)] < 0 : décroissante."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un = 2n + 3 : calculer U0, U1, U2, U3 et Un+1 − Un.",
+      "→ Solution : 3, 5, 7, 9 ; Un+1 − Un = 2."
      ]
     }
    ]
@@ -1027,6 +1395,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Calculez 1 + 2 + 3 + … + 100 en moins d’une minute. Comment faisait le jeune Gauss ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une suite est arithmétique s’il existe un réel r (la raison) tel que Un+1 = Un + r pour tout n.",
+      "Alors Un = U0 + nr et, plus généralement, Un = Up + (n − p)r.",
+      "Si r > 0 la suite est croissante, si r < 0 décroissante, si r = 0 constante.",
+      "Somme : 1 + 2 + … + n = n(n + 1)/2 ; U0 + U1 + … + Un = (n + 1)(U0 + Un)/2 ; et en général S = nombre de termes × (premier terme + dernier terme)/2.",
+      "La somme des n premiers nombres impairs vaut n² (1 + 3 + … + 99 = 2500)."
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "U0 = 2, r = 5 : U1 = 7, U2 = 12, U3 = 17, U4 = 22.",
@@ -1038,6 +1422,31 @@
      "lines": [
       "1 + 3 + 5 + … + 99 : 50 termes ⇒ 50 × (1 + 99)/2 = 2500.",
       "1 + 3 + … + (2n − 1) = n × (1 + 2n − 1)/2 = n²."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Un+1 = Un + r ; Un = U0 + nr ; Un = Up + (n − p)r.",
+      "r > 0 croissante ; r < 0 décroissante.",
+      "S = nombre de termes × (premier + dernier)/2.",
+      "1 + 2 + … + n = n(n + 1)/2."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un arithmétique, U4 = 5 et U11 = 19 : r et U0 ?",
+      "→ Réponse : 7r = 14 ⇒ r = 2 ; U0 = 5 − 8 = −3.",
+      "Exemple 2 : Calculer 2 + 4 + … + 200.",
+      "→ Réponse : 100 termes : 100 × (2 + 200)/2 = 10 100."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un arithmétique avec U17 = 24 et U40 = 70 : trouver r et U0.",
+      "→ Solution : U40 = U17 + 23r ⇒ 23r = 46 ⇒ r = 2 ; U0 = 24 − 17 × 2 = −10."
      ]
     }
    ]
@@ -1080,6 +1489,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une population augmente de 6 % par an. Que deviendra-t-elle dans 12 ans ? Ajoute-t-on chaque année la même quantité ?"
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "U0 = 3, q = 2 : 6, 12, 24, 48.",
@@ -1094,6 +1509,31 @@
       "Vn = Un − 10 : Vn+1 = Un/2 − 5 = (Un − 10)/2 = Vn/2 ⇒ géométrique, q = 1/2, V0 = −4.",
       "Vn = −4(1/2)ⁿ ; Un = 10 − 4(1/2)ⁿ.",
       "S10 = V0 + … + V10 = −4 × (1 − (1/2)¹¹)/(1/2) ≈ −7,996 ; S’10 = 110 + S10 ≈ 102,004."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Un+1 = q × Un ; Un = U0 × qⁿ ; Un = Up × qⁿ⁻ᵖ.",
+      "U0 > 0 : q > 1 croissante ; 0 < q < 1 décroissante.",
+      "S = premier terme × (1 − q^nombre de termes)/(1 − q).",
+      "Suite auxiliaire Vn = Un − l géométrique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un géométrique, U0 = 7, q = 3 : Un et U5 ?",
+      "→ Réponse : Un = 7 × 3ⁿ ; U5 = 7 × 243 = 1701.",
+      "Exemple 2 : Calculer 1 + 3 + 9 + … + 59 049.",
+      "→ Réponse : 59 049 = 3¹⁰ : 11 termes ; S = (3¹¹ − 1)/2 = 88 573."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vn géométrique, V7 = 4374, V5 = 486, q > 0 : q, V0, V10 ?",
+      "→ Solution : q² = 4374/486 = 9 ⇒ q = 3 ; V0 = 486/3⁵ = 2 ; V10 = 3³ × 4374 = 118 098."
      ]
     }
    ]
@@ -1136,6 +1576,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La suite 1/n devient-elle nulle ? Atteint-elle 0 ? Que signifie « tendre vers 0 » ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une suite Un a pour limite +∞ si Un devient aussi grand que l’on veut à partir d’un certain rang (exemple n²).",
+      "Suites de référence : n, n², n³, √n tendent vers +∞ ; 1/n, 1/n², 1/n³, 1/√n tendent vers 0.",
+      "Les formes indéterminées « ∞ − ∞ », « 0 × ∞ », « ∞/∞ », « 0/0 » se lèvent en factorisant par le terme dominant.",
+      "Une suite est convergente si elle a une limite réelle l ; sinon (limite infinie ou pas de limite) elle est divergente.",
+      "Théorème des gendarmes : si à partir d’un certain rang Vn ≤ Un ≤ Wn et si Vn et Wn tendent vers l, alors Un tend vers l."
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "lim (n² + n) = +∞ ; lim (1/√n + 1)(n² + 3) = 1 × (+∞) = +∞ ; lim 2/(−n² − 3) = 0.",
@@ -1172,6 +1628,31 @@
      "h": "Théorème des gendarmes",
      "lines": [
       "Un = 1/(n + 1) : −1/n < 1/(n + 1) < 1/n et ces deux suites tendent vers 0 ⇒ lim Un = 0."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Référence : nᵏ → +∞ ; 1/nᵏ → 0 ; √n → +∞.",
+      "Forme indéterminée : factoriser par le terme dominant.",
+      "Convergente : limite réelle ; divergente : sinon.",
+      "Gendarmes : Vn ≤ Un ≤ Wn, Vn → l, Wn → l ⇒ Un → l."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : La suite Un = (7n − 2)/(3n + 1) converge-t-elle ?",
+      "→ Réponse : Oui : lim = 7/3.",
+      "Exemple 2 : La suite (n² − 3n + 2)/(n² − 3) converge-t-elle ?",
+      "→ Réponse : Oui, vers 1."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calculer lim (n² − 5n + 1).",
+      "→ Solution : Forme ∞ − ∞ : n²(1 − 5/n + 1/n²) → +∞ × 1 = +∞."
      ]
     }
    ]
@@ -1212,6 +1693,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Une prime annuelle de 4000 UM augmente de 600 UM chaque année. Combien touchera-t-on au total en 11 versements ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les exercices corrigés modélisent des situations réelles : prime annuelle (suite arithmétique), croissance d’un ongle (arithmétique), population qui augmente de 6 % par an (géométrique), location de voitures (suite récurrente étudiée avec une suite auxiliaire).",
+      "D’autres portent sur les premiers termes, les suites bornées, la convergence et le sens de variation.",
+      "Les exercices généraux entraînent aux calculs de termes, de raisons et de sommes."
+     ]
+    },
     {
      "h": "Exercices corrigés",
      "lines": [],
@@ -1301,6 +1796,30 @@
        "U1 = 1/4, U2 = 3/16, U3 = 39/256 ; Un+1 − Un = −Un² ≤ 0 : décroissante"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Augmentation fixe ⇒ suite arithmétique.",
+      "Augmentation de t % ⇒ suite géométrique de raison 1 + t/100.",
+      "Un+1 = aUn + b ⇒ suite auxiliaire Vn = Un − l."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Population de 160 000 habitants augmentant de 6 % par an : raison de la suite ?",
+      "→ Réponse : q = 1,06.",
+      "Exemple 2 : Un = 3 × 2ⁿ : pour quel n a-t-on Un = 48 ?",
+      "→ Réponse : 2ⁿ = 16 ⇔ n = 4."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Prime : p0 = 4000, raison 600. Prime au bout de 10 ans ?",
+      "→ Solution : pn = 4000 + 600n ; p10 = 10 000 UM."
+     ]
     }
    ]
   },
@@ -1343,6 +1862,25 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Quand on lance un dé, peut-on prévoir le résultat ? Peut-on au moins dire quels résultats sont possibles ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le cardinal d’un ensemble est le nombre de ses éléments (card ∅ = 0).",
+      "A ∩ B contient les éléments communs à A et B ; A ∪ B ceux qui sont dans A ou dans B ; Ā (complémentaire) ceux de l’ensemble de référence qui ne sont pas dans A.",
+      "Une expérience aléatoire est une expérience dont le résultat est soumis au hasard (jeter un dé, une pièce, tirer une boule).",
+      "L’univers Ω est l’ensemble des résultats possibles ; chaque résultat est une issue.",
+      "Un événement est une partie de l’univers (élémentaire s’il n’a qu’un élément).",
+      "L’événement impossible est ∅, l’événement certain est Ω.",
+      "Deux événements sans élément commun sont incompatibles.",
+      "L’événement contraire Ā est formé des issues qui ne sont pas dans A."
+     ]
+    },
+    {
      "h": "Ensembles : exemple",
      "lines": [
       "Ω = {0 ; 1 ; … ; 9}, A = {0 ; 1 ; 2 ; 5}, B = {0 ; 1 ; 2 ; 6 ; 8}.",
@@ -1383,6 +1921,32 @@
        "issues hors de A",
        "A = {3} ⇒ Ā = {1 ; 2 ; 4 ; 5 ; 6}"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "card(A) = nombre d’éléments.",
+      "A ∩ B (et), A ∪ B (ou), Ā (non).",
+      "Univers Ω ; issue ; événement = partie de Ω.",
+      "Impossible ∅ ; certain Ω.",
+      "Incompatibles : A ∩ B = ∅."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : « Nombre pair » et « nombre impair » sont-ils incompatibles ?",
+      "→ Réponse : Oui : {2 ; 4 ; 6} ∩ {1 ; 3 ; 5} = ∅ (et ils sont même contraires).",
+      "Exemple 2 : Univers du lancer d’une pièce ?",
+      "→ Réponse : Ω = {Arabe ; Français}."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "On lance un dé : écrire A « nombre pair », B « obtenir 7 », C « nombre ≤ 6 ».",
+      "→ Solution : A = {2 ; 4 ; 6} ; B = ∅ (impossible) ; C = Ω (certain)."
      ]
     }
    ]
@@ -1426,6 +1990,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Avec un dé bien équilibré, a-t-on plus de chances d’obtenir 6 que 1 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "En situation d’équiprobabilité (tous les événements élémentaires ont la même probabilité), la probabilité d’un événement A est P(A) = card(A)/card(Ω) = nombre de cas favorables / nombre de cas possibles ; on a 0 ≤ P(A) ≤ 1.",
+      "Propriétés : P(∅) = 0 ; P(Ω) = 1 ; P(A ∪ B) = P(A) + P(B) − P(A ∩ B) ; P(Ā) = 1 − P(A).",
+      "Si A et B sont incompatibles, P(A ∩ B) = 0 et P(A ∪ B) = P(A) + P(B).",
+      "Pour un dé équilibré, chaque face a la probabilité 1/6."
+     ]
+    },
+    {
      "h": "Formules",
      "lines": [],
      "table": [
@@ -1455,6 +2034,32 @@
      "h": "Équiprobabilité",
      "lines": [
       "Dé équilibré : P(1) = P(2) = … = P(6) = 1/6."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "P(A) = cas favorables / cas possibles.",
+      "0 ≤ P(A) ≤ 1 ; P(∅) = 0 ; P(Ω) = 1.",
+      "P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+      "P(Ā) = 1 − P(A).",
+      "Incompatibles : P(A ∪ B) = P(A) + P(B)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une classe a 14 filles et 11 garçons ; on choisit un élève au hasard. P(fille) ?",
+      "→ Réponse : 14/25.",
+      "Exemple 2 : A et B incompatibles, P(A) = 0,2, P(B) = 0,4 : P(A ∪ B) ?",
+      "→ Réponse : 0,6."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "P(A) = 0,7, P(B) = 0,5, P(A ∩ B) = 0,3 : calculer P(A ∪ B) et P(Ā).",
+      "→ Solution : P(A ∪ B) = 0,7 + 0,5 − 0,3 = 0,9 ; P(Ā) = 0,3."
      ]
     }
    ]
@@ -1495,6 +2100,19 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "On lance trois fois une pièce. Combien de résultats possibles ? Comment être sûr de n’en oublier aucun ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les exercices corrigés utilisent un arbre (trois lancers de pièce : 8 issues ; tenues d’Ahmed : 2 × 3 × 2 = 12), un diagramme de Venn (lecteurs de trois revues), le tirage d’une boule et un tableau à double entrée (élèves portant des lunettes).",
+      "Les exercices généraux appliquent les mêmes outils : boules numérotées, nombres de frères et sœurs, bonbons, jetons, dés, questionnaire à choix multiples."
+     ]
+    },
     {
      "h": "Arbre des trois lancers",
      "lines": [
@@ -1585,6 +2203,30 @@
        "15. QCM (4 blanches, 2 noires)",
        "blanche : 4/6 ; numéro 2 : 1/3 ; blanche n° 1 : 1/3"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Arbre : multiplier les choix à chaque étape.",
+      "Venn : partir de l’intersection des trois ensembles.",
+      "Tableau : lire les effectifs, diviser par le total."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de tenues avec 2 pantalons, 3 chemises et 2 vestes ?",
+      "→ Réponse : 2 × 3 × 2 = 12.",
+      "Exemple 2 : Sac de 20 boules (10 rouges, 6 noires, 4 jaunes) : P(jaune) ?",
+      "→ Réponse : 4/20 = 1/5."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Trois lancers d’une pièce : P(trois fois Arabe), P(exactement deux fois Arabe), P(au moins une fois Français) ?",
+      "→ Solution : 8 issues : 1/8 ; 3/8 ; 1 − 1/8 = 7/8."
      ]
     }
    ]

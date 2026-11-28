@@ -42,6 +42,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un enseignant partage 2 700 UM entre ses élèves ; trois absents de plus et chacun aurait 30 UM de plus. Combien d’élèves ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’équation ax² + bx + c = 0 (a ≠ 0) est une équation du second degré ; son discriminant est Δ = b² − 4ac.",
+      "Si Δ < 0 : pas de solution réelle.",
+      "Si Δ = 0 : une solution double x0 = −b/(2a).",
+      "Si Δ > 0 : deux solutions x1 = (−b − √Δ)/(2a) et x2 = (−b + √Δ)/(2a).",
+      "Les solutions vérifient x1 + x2 = −b/a et x1 · x2 = c/a.",
+      "Racines évidentes : si a + b + c = 0, les solutions sont 1 et c/a ; si a − b + c = 0, ce sont −1 et −c/a.",
+      "Si b = 0 ou c = 0, on factorise directement."
+     ]
+    },
+    {
      "h": "Exemples du manuel",
      "lines": [],
      "table": [
@@ -84,6 +102,32 @@
      "lines": [
       "(Correction : p. 10, pour 5x² − 3x − 2 = 0 on a a = 5, et non a = 1.)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Δ = b² − 4ac.",
+      "Δ > 0 : deux solutions ; Δ = 0 : une ; Δ < 0 : aucune.",
+      "x1 + x2 = −b/a ; x1x2 = c/a.",
+      "a + b + c = 0 ⇒ 1 et c/a.",
+      "a − b + c = 0 ⇒ −1 et −c/a."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre x² − 6x + 5 = 0.",
+      "→ Réponse : a + b + c = 0 ⇒ S = {1 ; 5}.",
+      "Exemple 2 : Résoudre 2x² − 10x + 12 = 0.",
+      "→ Réponse : Δ = 4 ⇒ S = {2 ; 3}."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre 5x² − 3x − 2 = 0.",
+      "→ Solution : a + b + c = 0 ⇒ S = {1 ; −2/5} (Δ = 49)."
+     ]
     }
    ]
   },
@@ -124,6 +168,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pour quelles valeurs de x a-t-on x² + 3x − 4 < 0 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour résoudre une inéquation du second degré, on étudie le signe du trinôme ax² + bx + c.",
+      "Si Δ > 0 : le trinôme est du signe de a à l’extérieur des racines et du signe contraire entre les racines.",
+      "Si Δ = 0 : il est du signe de a et s’annule en x0 = −b/(2a).",
+      "Si Δ < 0 : il est toujours du signe de a.",
+      "Pour un quotient, on dresse un tableau de signes de chaque facteur en excluant les valeurs interdites."
+     ]
+    },
+    {
      "h": "Signe du trinôme (Δ > 0, racines x1 < x2)",
      "lines": [],
      "table": [
@@ -148,6 +208,31 @@
       "x² + x − 6 < 0 : racines −3 et 2 ⇒ S = ]−3 ; 2[.",
       "9x² + 1 < 0 : pas de racine, a > 0 ⇒ S = ∅.",
       "(x + 3)/(x − 1) ≤ 0 ⇒ S = [−3 ; 1[."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Signe de a à l’extérieur des racines.",
+      "Signe contraire entre les racines.",
+      "Δ < 0 : signe de a partout.",
+      "Tableau de signes pour les quotients."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre x² + 3x − 4 < 0.",
+      "→ Réponse : Racines −4 et 1 ⇒ S = ]−4 ; 1[.",
+      "Exemple 2 : Signe de 5x² + 2x + 4 ?",
+      "→ Réponse : Δ = −76 < 0 : toujours positif."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre −4x² + 3x + 1 ≥ 0.",
+      "→ Solution : Racines −1/4 et 1 ; a < 0 : S = [−1/4 ; 1]."
      ]
     }
    ]
@@ -190,12 +275,53 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi la courbe de x² + 2x + 1 est-elle symétrique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Rappels : fonction linéaire x ↦ ax (droite passant par l’origine), affine x ↦ ax + b, polynôme du second degré, polynômes, fonctions rationnelles.",
+      "Le domaine de définition Df est l’ensemble des x pour lesquels f(x) existe : dénominateur non nul, expression sous la racine positive ; un problème concret peut restreindre Df.",
+      "La courbe de f est l’ensemble des points M(x ; f(x)), x ∈ Df. f est paire si Df est symétrique par rapport à 0 et f(−x) = f(x) (courbe symétrique par rapport à (Oy)) ; impaire si f(−x) = −f(x) (symétrique par rapport à O).",
+      "La droite x = a est axe de symétrie si f(2a − x) = f(x) ; le point (a ; b) est centre de symétrie si f(2a − x) + f(x) = 2b."
+     ]
+    },
+    {
      "h": "Exemples du manuel",
      "lines": [
       "f(x) = √(x + 1) : Df = [−1 ; +∞[.",
       "f(x) = x² + 2x + 1 : f(−2 − x) = f(x) ⇒ x = −1 est axe de symétrie.",
       "g(x) = (2x + 3)/(x − 1) : g(2 − x) + g(x) = 4 ⇒ Ω(1 ; 2) est centre de symétrie.",
       "Aire d’un trapèze f(x) = 2x + 14 avec 0 ≤ x ≤ 7 : Df = [0 ; 7]."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Df : dénominateur ≠ 0 ; radicande ≥ 0.",
+      "Paire : f(−x) = f(x).",
+      "Impaire : f(−x) = −f(x).",
+      "Axe x = a : f(2a − x) = f(x).",
+      "Centre (a ; b) : f(2a − x) + f(x) = 2b."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : f(x) = x³ est-elle paire ?",
+      "→ Réponse : Non, elle est impaire.",
+      "Exemple 2 : Domaine de √(4 − x) ?",
+      "→ Réponse : ]−∞ ; 4]."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Domaine de f(x) = (x + 1)/(x − 1) ?",
+      "→ Solution : Df = ℝ \\ {1}."
      ]
     }
    ]
@@ -237,6 +363,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment savoir si une courbe s’approche indéfiniment d’une droite ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les tableaux d’opérations donnent la limite d’une somme, d’un produit et d’un quotient ; les cas ∞ − ∞, 0 × ∞, ∞/∞ et 0/0 sont des formes indéterminées (on factorise par le terme de plus haut degré).",
+      "En ±∞, un polynôme a la limite de son terme de plus haut degré, une fonction rationnelle celle du quotient des termes de plus haut degré.",
+      "Asymptotes : x = a est asymptote verticale si f(x) → ±∞ quand x → a ; y = b est asymptote horizontale si f(x) → b en ±∞ ; y = ax + b est asymptote oblique si f(x) − (ax + b) → 0.",
+      "La dérivée donne la pente de la tangente ; f’ > 0 sur un intervalle ⇒ f croissante ; f’ < 0 ⇒ f décroissante ; on en déduit le tableau de variations et les extremums."
+     ]
+    },
     {
      "h": "Asymptotes",
      "lines": [],
@@ -284,6 +425,31 @@
        "(u’v − uv’)/v²"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Formes indéterminées : ∞ − ∞, 0 × ∞, ∞/∞, 0/0.",
+      "Asymptote verticale, horizontale, oblique.",
+      "Signe de f’ ⇒ variations.",
+      "Tableau de variations."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Asymptote verticale de 1/(x − 2) ?",
+      "→ Réponse : x = 2.",
+      "Exemple 2 : f(x) = x² − 4x : variations ?",
+      "→ Réponse : f’(x) = 2x − 4 : décroissante sur ]−∞ ; 2], croissante sur [2 ; +∞[ ; minimum f(2) = −4."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Limite en +∞ de (3x² + 1)/(x² − 5) ?",
+      "→ Solution : Quotient des termes de plus haut degré : 3x²/x² → 3 ; asymptote y = 3."
+     ]
     }
    ]
   },
@@ -325,6 +491,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment exprimer ln 144 à l’aide de ln 2 et ln 3 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La fonction ln est la fonction définie et dérivable sur ]0 ; +∞[, de dérivée 1/x, qui s’annule en 1. ln 1 = 0, ln e = 1 (e ≈ 2,7) ; ln est strictement croissante : ln x = ln y ⇔ x = y ; ln x < ln y ⇔ x < y ; ln x = y ⇔ x = eʸ.",
+      "Pour x, y > 0 : ln(xy) = ln x + ln y ; ln(1/x) = −ln x ; ln(x/y) = ln x − ln y ; ln(xʳ) = r ln x ; ln √x = ½ ln x.",
+      "Limites : ln x → +∞ en +∞ et → −∞ en 0⁺.",
+      "Dérivée : (ln u)’ = u’/u (u > 0)."
+     ]
+    },
+    {
      "h": "Dérivées (exemple du manuel)",
      "lines": [],
      "table": [
@@ -355,6 +536,32 @@
      "lines": [
       "3 ln 2 = ln 8 < ln 9 = 2 ln 3.",
       "ln 5 − ln 2 = ln 2,5 > ln 12 − ln 5 = ln 2,4."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "ln 1 = 0 ; ln e = 1.",
+      "ln(xy) = ln x + ln y.",
+      "ln(xʳ) = r ln x.",
+      "ln x < ln y ⇔ x < y.",
+      "(ln u)’ = u’/u."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Calculer ln(e³) et ln √e.",
+      "→ Réponse : 3 et 1/2.",
+      "Exemple 2 : Écrire 2 ln 3 + ln 2 + ln(1/2) avec un seul logarithme.",
+      "→ Réponse : ln 9."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Exprimer ln 24 et ln 144 en fonction de ln 2 et ln 3.",
+      "→ Solution : ln 24 = 3 ln 2 + ln 3 ; ln 144 = 4 ln 2 + 2 ln 3."
      ]
     }
    ]
@@ -398,12 +605,54 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment résoudre e²ˣ − 5eˣ + 6 = 0 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La fonction exponentielle x ↦ eˣ est la réciproque de ln : y = eˣ ⇔ x = ln y.",
+      "Elle est définie sur ℝ, strictement positive et strictement croissante ; ln(eˣ) = x et e^(ln x) = x (x > 0) ; eˣ = eʸ ⇔ x = y ; eˣ < eʸ ⇔ x < y.",
+      "Règles : e^(x+y) = eˣeʸ ; e^(x−y) = eˣ/eʸ ; (eˣ)ʸ = e^(xy) ; e⁰ = 1.",
+      "Limites : eˣ → 0 en −∞ (asymptote horizontale y = 0), eˣ → +∞ en +∞ et eˣ/x → +∞ (branche parabolique de direction (Oy)).",
+      "(eˣ)’ = eˣ."
+     ]
+    },
+    {
      "h": "Exemples du manuel",
      "lines": [
       "e^(2x+3) = e ⇒ 2x + 3 = 1 ⇒ x = −1.",
       "5eˣ + 7 = 0 : impossible (eˣ > 0) ⇒ S = ∅.",
       "eˣ − 5 = 0 ⇒ x = ln 5.",
       "eˣ(eˣ − 7) = 0 ⇒ x = ln 7."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "eˣ > 0 ; strictement croissante.",
+      "e^(x+y) = eˣeʸ.",
+      "eˣ = a ⇔ x = ln a (a > 0).",
+      "(eˣ)’ = eˣ.",
+      "eˣ → 0 en −∞."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Simplifier e⁻⁵ · e⁵.",
+      "→ Réponse : e⁰ = 1.",
+      "Exemple 2 : Résoudre eˣ > 1.",
+      "→ Réponse : x > 0."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre e²ˣ − 5eˣ + 6 = 0.",
+      "→ Solution : X = eˣ : X² − 5X + 6 = 0 ⇒ X = 2 ou 3 ⇒ x = ln 2 ou ln 3."
      ]
     }
    ]
@@ -446,12 +695,52 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une suite est définie par U0 = 1 et Un+1 = 2Un + 3. Comment calculer U2 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une suite numérique est une application de ℕ (ou d’une partie de ℕ) dans ℝ ; on note Un au lieu de U(n).",
+      "Elle peut être définie explicitement (Un = 5n + 7) ou par récurrence (U0 donné et Un+1 = f(Un)).",
+      "(Un) est croissante si Un+1 − Un ≥ 0 pour tout n, décroissante si Un+1 − Un ≤ 0.",
+      "Elle est majorée par M si Un ≤ M, minorée par m si Un ≥ m, bornée si m ≤ Un ≤ M pour tout n."
+     ]
+    },
+    {
      "h": "Exemples du manuel",
      "lines": [
       "Un = 5n + 7 : U0 = 7, U2 = 17, U100 = 507.",
       "V0 = 1, Vn+1 = (1 − Vn)/(3 + Vn) : V1 = 0, V2 = 1/3.",
       "Un = (3n − 5)/n = 3 − 5/n ≤ 3 : majorée par 3.",
       "Wn = 9 + 1/(n + 2) : 9 < Wn ≤ 9,5 : bornée."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Un explicite ou par récurrence.",
+      "Croissante : Un+1 − Un ≥ 0.",
+      "Majorée : Un ≤ M ; minorée : Un ≥ m.",
+      "Bornée : les deux."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un = 3n + 13 est-elle croissante ?",
+      "→ Réponse : Un+1 − Un = 3 > 0 : oui.",
+      "Exemple 2 : Vn = (7n + 11)/(n + 1) est-elle minorée par 7 ?",
+      "→ Réponse : Vn − 7 = 4/(n + 1) > 0 : oui."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "U0 = 1 et Un+1 = 2Un + 3 : U1, U2 ?",
+      "→ Solution : U1 = 5 ; U2 = 13."
      ]
     }
    ]
@@ -494,6 +783,20 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un salaire augmente de 5 % par an : quel type de suite décrit son évolution ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "(Un) est arithmétique de raison r si Un+1 − Un = r pour tout n : Un = U0 + nr = Up + (n − p)r ; r = (Un − Up)/(n − p) ; trois termes consécutifs vérifient 2Un = Un−1 + Un+1 ; U0 + U1 + … + Un = (n + 1)(U0 + Un)/2.",
+      "(Un) est géométrique de raison q si Un+1 = qUn pour tout n : Un = U0qⁿ = Upqⁿ⁻ᵖ ; U0 + U1 + … + Un = U0(1 − qⁿ⁺¹)/(1 − q) (q ≠ 1).",
+      "Une augmentation de t % correspond à une suite géométrique de raison 1 + t/100."
+     ]
+    },
+    {
      "h": "Exemples du manuel",
      "lines": [
       "Un = 3n + 13 : arithmétique de raison 3, U0 = 13.",
@@ -524,6 +827,32 @@
        "(n + 1)(U0 + Un)/2",
        "U0(1 − qⁿ⁺¹)/(1 − q)"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Arithmétique : Un = U0 + nr.",
+      "Somme : (nombre de termes) × (premier + dernier)/2.",
+      "Géométrique : Un = U0qⁿ.",
+      "Somme : U0(1 − qⁿ⁺¹)/(1 − q).",
+      "Augmentation de t % : q = 1 + t/100."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : U5 = 14 et U13 = 38 (arithmétique) : raison ?",
+      "→ Réponse : r = (38 − 14)/8 = 3.",
+      "Exemple 2 : Géométrique U0 = 3, q = 2 : U5 ?",
+      "→ Réponse : 3 × 32 = 96."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "U arithmétique avec U3 = 25 et U5 = 37 : U4, r, U0 ?",
+      "→ Solution : U4 = 31 ; r = 6 ; U0 = 7 ; Un = 7 + 6n."
      ]
     }
    ]
@@ -566,6 +895,19 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Combien de numéros de téléphone de 8 chiffres commençant par 2, 3 ou 4 existe-t-il ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le cardinal d’un ensemble fini E est son nombre d’éléments ; card(∅) = 0 ; card(A ∪ B) = card A + card B − card(A ∩ B) ; card(A × B) = card A × card B.",
+      "Les tableaux à double entrée et les arbres de possibilités organisent le dénombrement. p-listes (avec répétition, ordre compte) : nᵖ ; arrangements (sans répétition, ordre compte) : Aₙᵖ = n(n − 1)…(n − p + 1) ; permutations : n! ; combinaisons (sans ordre) : Cₙᵖ = Aₙᵖ/p!."
+     ]
+    },
+    {
      "h": "Exemples du manuel",
      "lines": [
       "Code = une lettre (26) suivie d’un chiffre (10) : 26 × 10 = 260 codes.",
@@ -601,6 +943,32 @@
        "300",
        "1 000"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "card(A × B) = card A × card B.",
+      "p-listes : nᵖ.",
+      "Arrangements : Aₙᵖ.",
+      "Permutations : n!.",
+      "Combinaisons : Cₙᵖ = Aₙᵖ/p!."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de façons de choisir 3 élèves parmi 10 ?",
+      "→ Réponse : C₁₀³ = 120.",
+      "Exemple 2 : 5! ?",
+      "→ Réponse : 120."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Capacité du réseau téléphonique (8 chiffres, premier chiffre 2, 3 ou 4) ?",
+      "→ Solution : 3 × 10⁷ = 30 000 000 numéros."
      ]
     }
    ]
@@ -644,6 +1012,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "On lance un dé équilibré : quelle est la probabilité d’obtenir un nombre pair ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une expérience aléatoire a des résultats non prévisibles ; leur ensemble est l’univers Ω.",
+      "Un événement est une partie de Ω : élémentaire (un seul résultat), impossible (∅), certain (Ω).",
+      "L’événement contraire Ā est réalisé quand A ne l’est pas : p(Ā) = 1 − p(A).",
+      "A et B sont incompatibles si A ∩ B = ∅.",
+      "0 ≤ p(A) ≤ 1 ; p(A ∪ B) = p(A) + p(B) − p(A ∩ B) (= p(A) + p(B) si incompatibles).",
+      "En équiprobabilité, p(A) = card A / card Ω."
+     ]
+    },
+    {
      "h": "Nature des événements (dé à 6 faces)",
      "lines": [],
      "table": [
@@ -667,6 +1052,32 @@
        "« nombre pair »",
        "{2 ; 4 ; 6}"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Univers Ω, événement, événement élémentaire.",
+      "Impossible / certain.",
+      "p(Ā) = 1 − p(A).",
+      "p(A ∪ B) = p(A) + p(B) − p(A ∩ B).",
+      "Équiprobabilité : card A / card Ω."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : p(A) = 0,3 : p(Ā) ?",
+      "→ Réponse : 0,7.",
+      "Exemple 2 : p(A) = 0,5, p(B) = 0,4, p(A ∩ B) = 0,2 : p(A ∪ B) ?",
+      "→ Réponse : 0,7."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dé équilibré : probabilité d’un nombre pair, d’un multiple de 3, d’un nombre supérieur à 2 ?",
+      "→ Solution : 1/2 ; 1/3 ; 2/3."
      ]
     }
    ]

@@ -33,6 +33,21 @@
    "applications": [],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels outils utilisez-vous chaque jour pour communiquer ou vous informer ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les TIC sont l’ensemble des technologies liées aux médias, à l’informatique et à l’internet, utilisées pour créer, diffuser, partager, consulter ou stocker des informations.",
+      "La deuxième définition (UNESCO) énumère les outils : ordinateurs, internet (sites, blogs, messagerie), diffusion en direct (radio, télévision) et en différé (podcast, lecteurs audio et vidéo), téléphonie fixe, mobile, satellite, visioconférence.",
+      "La troisième (Université Laval) précise les contextes du partage : formation universitaire, relations thérapeutiques, activités professionnelles (Twitter, LinkedIn, Facebook, YouTube, blogue).",
+      "La quatrième explique le sigle : technologies de l’information et de la communication, terme employé depuis des dizaines d’années ; les NTIC désignent celles inventées récemment."
+     ]
+    },
+    {
      "h": "Le texte (1/2)",
      "lines": [],
      "fig": {
@@ -96,6 +111,23 @@
       "Écrit : un développement d’une vingtaine de lignes sur les avantages des TIC pour notre pays.",
       "Oral : enquête sur d’autres définitions des TIC ; interview d’un informaticien."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "TIC = technologies de l’information et de la communication.",
+      "Fonctions : créer, diffuser, partager, consulter, stocker.",
+      "Outils : ordinateur, internet, radio-télévision, téléphonie.",
+      "Contextes : formation, santé, profession.",
+      "NTIC = TIC récentes."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Point commun à toutes ces définitions ?",
+      "→ Solution : Les TIC servent à créer, transmettre, partager et stocker l’information par des moyens électroniques."
+     ]
     }
    ]
   },
@@ -127,6 +159,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Tout le monde a-t-il le même accès à l’internet dans votre ville ou votre village ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La fracture numérique est le fossé entre ceux qui ont accès à l’internet et ceux qui n’y ont pas accès.",
+      "Elle renforce les inégalités sociales, car c’est surtout la partie « informée », qui possède déjà plus de ressources financières, sociales et culturelles, qui en profite.",
+      "La diffusion rapide des NTIC dans les pays industrialisés et en développement fait craindre la marginalisation économique et sociale des non-équipés.",
+      "Les connectés bénéficient d’une meilleure information et sont inclus dans des réseaux de savoirs, de connaissances et d’éducation ; les non-connectés reçoivent une information moins riche et risquent d’être exclus.",
+      "(D’après Abdel Ben Youssef)"
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -187,6 +235,22 @@
       "Plan : 1) définition et effet sur les inégalités ; 2) diffusion rapide des NTIC et crainte de marginalisation ; 3) opposition connectés / non-connectés.",
       "Résumé au 1/4 de la longueur (± 10 %)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Fracture numérique : connectés / non-connectés.",
+      "Elle renforce les inégalités sociales existantes.",
+      "Risque de marginalisation des non-équipés.",
+      "Inclusion dans les réseaux de savoir ou exclusion."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce que la fracture numérique ?",
+      "→ Solution : Le fossé entre ceux qui ont accès à l’internet et ceux qui n’y ont pas accès."
+     ]
     }
    ]
   },
@@ -218,6 +282,23 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Avez-vous vu un ordinateur ou un dossier électronique dans un hôpital ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’informatique a été introduite progressivement dans la santé.",
+      "Première réussite : les systèmes de facturation, données saisies par des informaticiens ; le travail administratif fut numérisé.",
+      "Ensuite, des percées ont permis aux non-spécialistes (médecins, infirmiers, patients) d’utiliser des logiciels, puis on a développé les dossiers patients électroniques : la partie clinique fut numérisée.",
+      "Mais aucune de ces technologies n’a atteint tout son potentiel ; elles restent prometteuses, et on ne connaît pas encore le dénouement de cette transformation.",
+      "Toutefois, les nouvelles technologies rapprochent du patient et assistent davantage l’équipe soignante, et non plus seulement l’administration.",
+      "(InterSystems, 2019)"
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -264,6 +345,22 @@
       "Plan avec les connecteurs : jadis (administration) / ensuite (logiciels et dossiers électroniques) / mais (potentiel non atteint) / toutefois (rapprochement du patient).",
       "Résumé au 1/4 ; débat sur la phrase « Ce qui est passionnant… on n’en connaît pas le dénouement »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "1re phase : numérisation administrative (facturation).",
+      "2e phase : logiciels pour non-spécialistes + dossiers patients électroniques.",
+      "Potentiel encore non atteint.",
+      "But : se rapprocher du patient et aider l’équipe soignante."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Première phase de réussite ?",
+      "→ Solution : La numérisation du travail administratif (systèmes de facturation)."
+     ]
     }
    ]
   },
@@ -295,6 +392,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Vos parents savent-ils ce que vous faites sur votre téléphone ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les TIC sont un enjeu important de la protection et de l’éducation des enfants et des adolescents, dont la société n’a pas encore pris toute la mesure : la grande majorité des adolescents a un téléphone mobile et accès à l’internet.",
+      "Ce qui est nouveau, c’est la rapidité de diffusion et le changement de relation entre adultes et jeunes : avant, les parents maîtrisaient l’usage de la radio, du téléphone et de la télévision ; aujourd’hui, l’enfant est livré aux dangers du monde même à la maison, et c’est souvent lui qui apprend aux adultes l’usage des nouveaux médias.",
+      "Les parents, surtout les plus défavorisés, doivent donc être aidés.",
+      "Cependant, les TIC ne sont pas seulement source de dangers : elles sont un formidable outil pédagogique et thérapeutique, qui favorise la socialisation, l’acquisition des connaissances et l’autonomie.",
+      "(Dominique Youf, 2010)"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -363,6 +476,22 @@
       "Résumé au 1/4, ou discussion : les NTIC favorisent-elles l’acquisition des connaissances chez les jeunes ?",
       "Débat : les TIC, danger ou formidable outil pédagogique ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thèse : les TIC sont un enjeu majeur d’éducation.",
+      "Nouveauté : rapidité de diffusion et inversion du rôle éducatif.",
+      "Les parents défavorisés doivent être aidés.",
+      "Les TIC : outil pédagogique et thérapeutique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "A. Recopiez la bonne réponse (1, 2, 3).",
+      "→ Solution : 1-a (utiles pour l’éducation) ; 2-c (avant les TIC il y avait la radio et la télévision) ; 3-a (les parents ne peuvent plus éduquer correctement leurs enfants)."
+     ]
     }
    ]
   },
@@ -394,6 +523,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les réseaux sociaux vous aident-ils à apprendre ou vous font-ils perdre du temps ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "D’abord, les médias sociaux permettent l’échange et le partage d’informations (groupes Facebook, débats), mais il faut être prudent car certaines informations sont fausses ou mensongères.",
+      "Ensuite, les TIC aident les élèves en situation de handicap grâce à des logiciels adaptés et favorisent leur intégration scolaire.",
+      "Enfin, elles aident les enseignants (cours sur PowerPoint, attention et compréhension des élèves).",
+      "Cependant, elles entraînent la dépendance et diminuent la concentration : des élèves passent des soirées entières sur les réseaux, qui allongent la connexion (notifications, publicités) ; en classe, ils peuvent se connecter à des sites non recommandables.",
+      "Certains enseignants, mal à l’aise, refusent de les utiliser, et leur coût élevé crée une discrimination entre établissements riches et pauvres."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -462,6 +607,22 @@
       "Résumé au 1/4 ; discussion sur la prudence face aux informations des réseaux sociaux.",
       "Débat : pour ou contre l’emploi des TIC dans les lycées et collèges."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Avantages : partage, aide aux élèves handicapés, outil didactique.",
+      "Prudence : fausses informations.",
+      "Inconvénients : dépendance, déconcentration, sites non recommandables.",
+      "Enseignants réticents ; coût → discrimination."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Dans quel domaine l’auteur analyse-t-il les TIC ?",
+      "→ Solution : Dans le domaine éducatif."
+     ]
     }
    ]
   },
@@ -493,6 +654,23 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi certains villages n’ont-ils toujours pas d’internet ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les TIC sont enracinées dans la société : affaires, divertissement, communication, information, et près de cinq milliards de téléphones portables.",
+      "Mais leurs avantages restent inégaux.",
+      "Les pays à ressources limitées peinent à fournir électricité et connectivité aux villages et aux villes en expansion ; écoles et bureaux sont sous-financés ; beaucoup de familles et d’entreprises n’ont pas les moyens d’acheter ordinateurs et smartphones.",
+      "D’autres facteurs jouent, car ces technologies sont conçues par et pour les 30 % les plus riches : faible alphabétisation, diversité des langues, interdits politiques, religieux et sociaux, différences cognitives.",
+      "Une conception réussie doit être adaptée aux besoins et aux contraintes de la vie des utilisateurs.",
+      "(Ed Cutrell, Microsoft Research India)"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -557,6 +735,22 @@
       "Résumé au 1/4 ; dissertation : les TIC sont-elles enracinées dans notre façon de vivre ?",
       "Débat : avantages et inconvénients des TIC dans les lycées et collèges."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Les TIC sont partout (5 milliards de mobiles).",
+      "Avantages inégaux : électricité, connectivité, coût.",
+      "Conçues pour les 30 % les plus riches.",
+      "Il faut une conception adaptée aux besoins des pauvres."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1.",
+      "→ Solution : A : les TIC sont utilisées dans plusieurs domaines (affaires, divertissement, communication…)."
+     ]
     }
    ]
   },
@@ -588,6 +782,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quelle découverte médicale vous paraît la plus utile ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "On résume souvent les grands progrès médicaux à la radiologie et à la vaccination (fin du 19e et début du 20e siècle) ; pourtant les innovations actuelles permettent de vivre plus longtemps et en meilleure santé.",
+      "Les cellules souches, depuis la fin des années 90, servent la médecine régénérative (reconstituer un tissu ou un organe altéré) et la lutte contre le diabète, certains cancers ou la paralysie.",
+      "Le projet génome humain, achevé en 2004 après près de quinze ans, a décodé notre ADN et permet de localiser les gènes de maladies ; il a ouvert la voie au séquençage d’autres espèces.",
+      "Au début des années 2000, des chercheurs italiens ont retiré le foie cancéreux d’un patient pour l’irradier à forte dose avant de le réimplanter, sans endommager les autres organes.",
+      "Ces avancées sont le fruit de longues années de recherche."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -660,6 +870,22 @@
       "Résumé de l’extrait « Le traitement extracorporel du cancer » en 45 mots environ.",
       "Oral : enquête dans les structures sanitaires ; interview d’un informaticien."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Cellules souches : médecine régénérative.",
+      "Génome humain (2004) : gènes des maladies.",
+      "Traitement extracorporel du cancer (foie irradié puis réimplanté).",
+      "Fruit de longues recherches."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Thème du texte ?",
+      "→ Solution : Les grandes avancées scientifiques et médicales de notre temps."
+     ]
     }
    ]
   },
@@ -692,6 +918,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Avez-vous vu des panneaux solaires dans votre région ? À quoi servent-ils ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’énergie solaire est l’une des ressources les plus abondantes et les mieux réparties ; elle sert à l’éclairage, l’électrification, la climatisation, le chauffage, l’eau chaude, le pompage et l’irrigation.",
+      "Le solaire thermique utilise la chaleur du soleil, captée par des panneaux sur les toits, pour chauffer l’eau grâce à un fluide caloporteur (chauffe-eau solaire).",
+      "Le photovoltaïque utilise la lumière : les électrons des cellules se mettent en mouvement dans un circuit fermé et produisent de l’électricité, injectée dans le réseau, stockée en batteries ou utilisée directement.",
+      "Le thermodynamique concentre les rayons avec de grands miroirs paraboliques ; la chaleur produit de la vapeur qui fait tourner turbines et alternateurs (centrales solaires).",
+      "L’aérovoltaïque combine les deux : la face supérieure produit l’électricité, la face inférieure capte la chaleur, ce qui refroidit le panneau et augmente son rendement dans les régions chaudes."
+     ]
+    },
     {
      "h": "Le texte (1/3)",
      "lines": [],
@@ -782,6 +1024,23 @@
       "Résumé au 1/4 (± 10 %).",
       "Débat : énergies renouvelables ou énergies fossiles dans notre pays ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Énergie abondante et bien répartie.",
+      "Thermique : chaleur → eau chaude.",
+      "Photovoltaïque : lumière → électricité.",
+      "Thermodynamique : miroirs → vapeur → turbines.",
+      "Aérovoltaïque : hybride, meilleur rendement."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quoi parle ce texte ?",
+      "→ Solution : De l’énergie solaire, de ses formes et de ses applications."
+     ]
     }
    ]
   },
@@ -814,6 +1073,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que savez-vous des OGM ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les biotechnologies sont des techniques qui utilisent des organismes vivants pour créer ou modifier un produit.",
+      "Les biotechnologies conventionnelles (fermentation du pain, croisements de plantes et d’animaux) sont bien acceptées.",
+      "Les biotechnologies modernes changent le code génétique (modification génétique) : elles sont utilisées dans l’industrie (enzymes), mais les plantes génétiquement modifiées (OGM) restent controversées ; leurs rendements varient selon les endroits, et l’évaluation à long terme de leurs effets sur l’environnement et la santé prend du retard sur les découvertes.",
+      "Breveter les modifications génétiques attire des investissements, mais concentre la propriété des ressources, fait monter les coûts, entrave la recherche indépendante et nuit aux pratiques locales comme la conservation des semences.",
+      "Beaucoup de problèmes seraient résolus si les biotechnologies se focalisaient sur des priorités locales définies de façon transparente avec toutes les parties prenantes."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -886,6 +1161,23 @@
       "Résumé au 1/4 ; dissertation sur la dernière phrase du texte.",
       "Débat : pour ou contre les OGM dans notre agriculture."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Biotechnologies : organismes vivants pour créer ou modifier un produit.",
+      "Conventionnelles : acceptées ; OGM : controversés.",
+      "Évaluation à long terme en retard.",
+      "Brevets : investissements mais concentration et coûts.",
+      "Solution : priorités locales et transparence."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. À quelle question l’auteur répond-il ?",
+      "→ Solution : Les biotechnologies peuvent-elles contribuer à satisfaire la demande en nourriture ?"
+     ]
     }
    ]
   },
@@ -918,6 +1210,21 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels problèmes rencontrent les agriculteurs de votre région ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’agriculture affronte de nouveaux problèmes : nouvelles maladies des cultures, changements climatiques.",
+      "Des technologies novatrices issues de la recherche peuvent les surmonter et aider les petits producteurs : nouvelles variétés et races pour améliorer la productivité des cultures, de l’élevage et de la pisciculture ; diversification des régimes pour la nutrition et la sécurité alimentaire.",
+      "Pourtant, dans beaucoup de pays en développement, le lien entre recherche et développement agricole est faible, car les effets immédiats de la recherche sont difficiles à voir et les investissements rares.",
+      "Le FIDA, avec l’Union européenne, finance les centres du CGIAR et des instituts nationaux pour améliorer la résilience et la sécurité alimentaire des petits agriculteurs, surtout des jeunes et des femmes : technologies contre la pauvreté, échange de savoirs, partenariats, liens avec la sécurité alimentaire nationale, nouvelles approches pour orienter les politiques."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -992,6 +1299,23 @@
       "Résumé au 1/4 ; discussion : l’autosuffisance alimentaire est-elle possible en Mauritanie ?",
       "Oral : enquête auprès d’agriculteurs ; interview d’un fonctionnaire du secteur agricole."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Problèmes : maladies, climat.",
+      "Solutions : variétés et races nouvelles, diversification.",
+      "Lien recherche-développement faible : peu d’investissements.",
+      "FIDA + UE : subventions à la recherche.",
+      "Cible : petits agriculteurs, jeunes, femmes."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Domaine abordé ?",
+      "→ Solution : La recherche scientifique appliquée à l’agriculture."
+     ]
     }
    ]
   },
@@ -1024,6 +1348,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un paysan qui ne sait pas lire peut-il être cultivé ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans une conférence de 1953, André Siegfried propose une définition : la culture est une prise de conscience par l’individu de sa personnalité d’être pensant et de ses rapports avec les autres hommes et avec le milieu naturel ; l’homme cultivé se conçoit et se situe, membre de sa collectivité, de l’univers et de l’espèce humaine.",
+      "Il n’est donc pas nécessaire d’être instruit livresquement : l’artisan ou le paysan de tradition est cultivé, plus qu’un chef d’industrie mécanisé.",
+      "C’est une erreur de réduire la culture aux livres, même si c’est surtout par les livres et l’enseignement qu’on l’apprend.",
+      "On l’acquiert d’abord par l’observation et la réflexion personnelles, puis par l’expérience du métier, par la lecture, qui fait connaître les grands penseurs, et par la conversation, qui peut parfois remplacer la lecture (le provincial lit davantage, le Parisien converse).",
+      "Que ce soit par les yeux ou par l’oreille, c’est toujours une affaire de contact."
+     ]
+    },
     {
      "h": "Le texte (1/3)",
      "lines": [],
@@ -1107,6 +1447,23 @@
       "Dissertation : « Pour être cultivé, il n’est pas nécessaire d’être instruit livresquement. » Qu’en pensez-vous ?",
       "Débat : « Deux hommes sur trois sont incultes. »"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Culture = prise de conscience de soi et capacité à se situer.",
+      "Pas besoin d’être instruit livresquement.",
+      "Premier moyen : la réflexion personnelle.",
+      "Moyens complémentaires : métier, lecture, conversation.",
+      "La culture est une affaire de contact."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Comment voit-on qu’il s’adresse à un auditoire ? Sujet ?",
+      "→ Solution : Il interpelle : « Vous avez chacun votre définition, je suggère celle-ci », « Je vous dirai tout à l’heure » ; sujet : la définition de la culture et les moyens de l’acquérir."
+     ]
     }
    ]
   },
@@ -1139,6 +1496,21 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Préférez-vous des amis qui vous ressemblent ou qui sont différents de vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le généticien Albert Jacquard part de la phrase de Saint-Exupéry : « Si je diffère de toi, loin de te léser, je t’augmente. » Nos réflexes nient cette évidence : par confort intellectuel, nous ramenons tout à des types, alors que la richesse est dans la différence.",
+      "Nous avons besoin d’être uniques et reconnus comme originaux, et l’autre, en étant différent, renforce notre unicité.",
+      "Il ne faut pas gommer les conflits, mais les rendre bénéfiques, à condition de viser la construction de chacun et non la destruction de l’autre ou une hiérarchie : le heurt est bienfaisant, la compétition sournoise et destructrice.",
+      "La génétique enseigne que les individus, tous différents, ne peuvent être classés : la notion de « races » est arbitraire, la question du « meilleur » est sans réponse, et les tentatives d’« amélioration » biologique de l’homme ont été ridicules ou criminelles."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1200,6 +1572,23 @@
       "Dissertation : « La diversité des civilisations constitue la richesse de chacun de nous. »",
       "Exposé : quels profits une culture tire-t-elle du contact avec les autres ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "« Si je diffère de toi, je t’augmente. »",
+      "La richesse est dans la différence.",
+      "Le heurt construit ; la compétition détruit.",
+      "La génétique refuse de classer les hommes.",
+      "Les « races » : notion arbitraire."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Sens de la citation de Saint-Exupéry ?",
+      "→ Solution : La différence de l’autre ne me fait pas de tort, elle m’enrichit."
+     ]
     }
    ]
   },
@@ -1232,6 +1621,24 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Faut-il envoyer les enfants à l’école des autres pour réussir dans le monde moderne ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans L’aventure ambiguë (1961), Cheikh Hamidou Kane montre le pays des Diallobé en crise après l’implantation coloniale.",
+      "La Grande Royale, sœur du chef, s’adresse au peuple.",
+      "Elle a fait venir les femmes, contrairement à la coutume, car « de plus en plus, nous aurons à faire des choses que nous détestons ».",
+      "Elle déclare qu’elle déteste l’école étrangère mais qu’il faut y envoyer les enfants.",
+      "Elle sait que cette école tuera en eux ce que les Diallobé aiment et que certains ne reconnaîtront plus les leurs : il faut accepter de « mourir en nos enfants ».",
+      "La tornade de l’arrivée des étrangers annonce un grand hivernage : les enfants sont les meilleures graines et les champs les plus chers.",
+      "Personne ne répond."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1306,6 +1713,23 @@
       "Développer en quinze lignes l’opinion de la Grande Royale, ou l’opinion contraire.",
       "Débat : avantages et inconvénients de l’école moderne pour les cultures africaines."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Contexte : crise coloniale chez les Diallobé.",
+      "Rupture : les femmes convoquées à l’assemblée.",
+      "Décision : envoyer les enfants à l’école étrangère.",
+      "Prix à payer : perdre une part de l’identité.",
+      "Images : tornade, hivernage, graines, champs."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Pourquoi réunit-elle les Diallobé ? À quel moment ?",
+      "→ Solution : Pour les exhorter à envoyer leurs enfants à l’école étrangère ; à l’époque coloniale."
+     ]
     }
    ]
   },
@@ -1338,6 +1762,21 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Peut-on adopter la technologie moderne sans perdre sa culture ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour Paul Ricœur (1961), l’universalisation est une promotion de l’humanité mais aussi une subtile destruction des cultures traditionnelles et du « noyau éthique et mythique » des grandes civilisations.",
+      "Elle diffuse une civilisation de pacotille : partout le même mauvais film, les mêmes machines à sous, les mêmes objets en plastique, la même propagande ; en accédant à une culture de consommation, l’humanité tombe dans une sous-culture.",
+      "Pour les peuples qui sortent du sous-développement, le problème est un dilemme : la lutte contre le colonisateur exigeait de retrouver une personnalité propre enracinée dans le passé ; mais entrer dans la civilisation moderne exige la rationalité scientifique, technique et politique, qui oblige souvent à abandonner un passé culturel.",
+      "D’où le paradoxe : comment se moderniser et retourner aux sources ?"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1412,6 +1851,23 @@
       "Résumé au 1/4.",
       "Discussion : « Toute culture ne peut supporter et absorber le choc de la civilisation mondiale. »"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Universalisation : promotion et destruction.",
+      "Civilisation de pacotille, sous-culture de consommation.",
+      "Se réenraciner pour se libérer.",
+      "Se moderniser exige la rationalité.",
+      "Paradoxe : moderniser et retourner aux sources."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Phénomène et peuples concernés ?",
+      "→ Solution : L’universalisation (civilisation mondiale) ; surtout les peuples qui sortent du sous-développement."
+     ]
     }
    ]
   },
@@ -1444,6 +1900,21 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment un jeune peut-il apprendre quelque chose à une personne âgée sans la vexer ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "En Afrique, la coutume veut que les anciens forment les jeunes ; cette tradition est ébranlée : les aînés doivent aujourd’hui s’instruire auprès de leurs propres enfants, qui parfois tournent la tradition en dérision.",
+      "Les institutions, dirigées en grande partie par des expatriés, ignorent ce problème : les jeunes moniteurs chargés d’enseigner les techniques nouvelles aux paysans ne sont pas formés à la communication.",
+      "On voit un jeune homme autoritaire admonester ses aînés avec arrogance, sur un ton colonial, parce qu’il imite ses propres maîtres : il est rejeté, et ses projets avec lui.",
+      "Il existe une « conspiration de la courtoisie » des Africains qui empêche un vrai dialogue avec les experts étrangers, et un manque de courtoisie des jeunes envers les ruraux : les meilleurs plans échouent."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1514,6 +1985,23 @@
       "Dissertation : « La communication est la base du développement. »",
       "Oral : comment résoudre les problèmes de communication entre populations et experts ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Tradition renversée : les jeunes enseignent aux aînés.",
+      "Moniteurs non formés à enseigner aux adultes.",
+      "Arrogance → rejet des idées.",
+      "« Conspiration de la courtoisie » avec les experts.",
+      "Communication = condition du développement."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Problème posé ? Comment l’auteur l’a-t-il étudié ?",
+      "→ Solution : La communication entre moniteurs, experts et paysans ; il a travaillé dans plusieurs pays africains et s’est entretenu avec tous ces acteurs."
+     ]
     }
    ]
   },
@@ -1546,6 +2034,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quel métier rêvez-vous d’exercer ? Que faut-il pour y arriver ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le métier de pilote a toujours fait rêver : profession fascinante, mais formation difficile et contraignante ; il faut une très bonne santé, un profil scientifique et accepter un rythme de vie difficile.",
+      "Les écoles accueillent tous les bacheliers, mais le taux de réussite est bien plus élevé chez les titulaires d’un bac scientifique ; deux ans de préparation scientifique sont conseillés.",
+      "Il faut aussi des nerfs solides, de la rigueur, de la souplesse et un excellent bilan médical (vue, ouïe, système nerveux, cœur).",
+      "En France, trois filières : l’État (ENAC, SEFA), gratuite, sur concours, niveau bac + 2 ; les cadets d’Air France (bac + 1, 28 mois, poste quasi garanti mais très peu de places) ; la filière privée, plus longue et plus coûteuse, dans les aéro-clubs.",
+      "La carrière évolue sans cesse grâce aux stages."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1614,6 +2118,23 @@
       "Enquête : où et comment sont formés les pilotes mauritaniens ? Interview d’un pilote.",
       "Écrit : avantages et inconvénients d’un métier de votre choix (une vingtaine de lignes)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Métier fascinant, formation contraignante.",
+      "Bac scientifique conseillé, pas obligatoire.",
+      "Qualités : santé, nerfs solides, rigueur, souplesse.",
+      "Trois filières : État, Air France, privée.",
+      "Formation continue."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quel métier parle-t-on ?",
+      "→ Solution : Du métier de pilote d’avion (de ligne ou professionnel)."
+     ]
     }
    ]
   },
@@ -1646,6 +2167,23 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Qui consultez-vous quand vous voyez mal au tableau ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’ophtalmologiste (ou ophtalmologue, ou oculiste) est un médecin spécialiste de l’œil et de la vision, et aussi chirurgien.",
+      "Il traite les maladies de l’œil et les troubles de la vision (myopie, hypermétropie, astigmatisme, presbytie, strabisme), corrigés par des verres, des lentilles, une rééducation ou une opération.",
+      "L’examen comporte la mesure de l’acuité visuelle, du champ visuel, du tonus oculaire et l’examen du fond de l’œil ; des examens complémentaires (échographie, radiographie, angiographie) révèlent des maladies plus graves (kératite, cataracte, dégénérescence maculaire, décollement de la rétine).",
+      "Il travaille avec les opticiens et les orthoptistes.",
+      "Qualités : équilibre psychologique, patience, minutie, sens du contact, ouverture et mise à jour des connaissances.",
+      "Formation : bac scientifique puis 11 ans d’études (6 ans de médecine générale + 5 ans de spécialisation, DES)."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1724,6 +2262,23 @@
       "Exposés sur des spécialités médicales.",
       "Résumé au 1/4 ; dissertation : malgré les progrès de la médecine, certaines maladies font encore des ravages dans le tiers monde."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Médecin et chirurgien de l’œil.",
+      "Troubles : myopie, hypermétropie, astigmatisme, presbytie, strabisme.",
+      "Examen : acuité, champ visuel, tonus, fond d’œil.",
+      "Partenaires : opticiens, orthoptistes.",
+      "Formation : bac + 11."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce qu’un ophtalmologiste ?",
+      "→ Solution : Un médecin spécialiste de l’œil et de la vision, qui est aussi chirurgien."
+     ]
     }
    ]
   },
@@ -1756,6 +2311,23 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que fait le pharmacien en dehors de vendre des médicaments ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le pharmacien délivre les médicaments : en officine, il exécute les prescriptions, vend les produits pharmaceutiques et conseille en prévention ; à l’hôpital, il gère les stocks et prépare les traitements ; il peut aussi travailler en laboratoire (analyses) ou dans l’industrie (nouveaux produits), la recherche et l’enseignement.",
+      "C’est un scientifique du médicament (chimie, génétique, biologie, physique, botanique).",
+      "Le pharmacien grossiste-répartiteur achète, stocke et distribue les produits aux officines et aux hôpitaux, fait appliquer la réglementation, contrôle la qualité et la traçabilité, gère les clients et les relations avec les autorités.",
+      "Qualités : chaleureux, accueillant, serviable, disponible, rigoureux, organisé, discret, éthique, diplomate.",
+      "Débouchés : reprendre ou ouvrir une pharmacie, laboratoire d’analyses, praticien hospitalier.",
+      "Formation : bac scientifique puis au moins six ans d’études."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1820,6 +2392,23 @@
       "Enquête auprès des pharmaciens de la place.",
       "Fiche métier de votre choix : le métier, ses qualités, les débouchés, la formation."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Fonction principale : délivrer les médicaments.",
+      "Officine, hôpital, laboratoire, industrie.",
+      "Grossiste-répartiteur : achat, stockage, distribution.",
+      "Qualités : accueil, rigueur, discrétion, éthique.",
+      "Formation : bac + 6 minimum."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Métier et fonction ?",
+      "→ Solution : Le pharmacien ; il délivre les médicaments."
+     ]
     }
    ]
   },
@@ -1852,6 +2441,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "À qui peut-on parler quand on traverse une période difficile ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le psychologue écoute, accompagne et aide les personnes souffrant de troubles moraux ou psychiques, ponctuels ou chroniques : enfants, adolescents, adultes, salariés, couples.",
+      "Il les accompagne dans un travail introspectif pour résoudre leurs difficultés : c’est la thérapie.",
+      "Mais la psychologie est une science multiple, du psychologue clinicien au psychologue du travail.",
+      "Qualités : grande capacité d’écoute, aimer les autres et vouloir les aider, savoir faire parler les gens (observation, relance), neutralité et objectivité, bon équilibre personnel pour éviter l’identification, capacité d’adaptation.",
+      "Formation : bac + 5 (licence de trois ans, master 1 avec mémoire, master 2 professionnel ou recherche)."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1920,6 +2525,23 @@
       "Écrit : avantages et inconvénients du métier de psychologue dans notre pays.",
       "Enquête auprès de psychologues de la place."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Écouter, accompagner, aider.",
+      "Thérapie : travail introspectif.",
+      "Domaines variés : clinique, travail…",
+      "Qualités : écoute, neutralité, équilibre.",
+      "Formation : bac + 5."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelle profession ?",
+      "→ Solution : Psychologue."
+     ]
     }
    ]
   },
@@ -1952,6 +2574,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Connaissez-vous un héros de film qui ressemble aux héros des légendes anciennes ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un mythe est un récit fabuleux qui prétend expliquer la vérité des choses : l’origine de l’univers, la création de l’homme, le voyage dans l’au-delà.",
+      "Remplis de symboles et d’émotions, les mythes traditionnels avaient presque toujours une signification religieuse ou spirituelle (Livre des morts égyptien, douze travaux d’Hercule).",
+      "On croit qu’ils ont disparu avec le progrès scientifique : rien n’est plus faux, ils ont changé de forme et restent un besoin fondamental de l’homme.",
+      "Les médias modernes (publicité, cinéma, musique, télévision) véhiculent le mythe de l’éternelle jeunesse, de la puissance automobile, de l’harmonie sociale ; Roland Barthes et Umberto Eco ont étudié James Bond, Barbie, la voiture de sport, Harley Davidson.",
+      "Superman remplace Hercule, et les top-modèles la belle Hélène de Troie."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2022,6 +2660,23 @@
       "Écrit : expliquer et commenter le rôle psychique des mythes.",
       "Exposé : recueillir un mythe de votre communauté."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Mythe : récit fabuleux qui explique le monde.",
+      "Mythes traditionnels : sens religieux ou spirituel.",
+      "Les mythes n’ont pas disparu : ils ont changé de forme.",
+      "Mythes modernes : publicité, cinéma, télévision.",
+      "Superman = Hercule moderne."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Définition du mythe ?",
+      "→ Solution : Un récit fabuleux qui a la prétention d’expliquer la vérité des choses."
+     ]
     }
    ]
   },
@@ -2054,6 +2709,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les lieux touristiques que vous connaissez sont-ils restés propres et authentiques ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans Tristes tropiques (1955), l’ethnologue Claude Lévi-Strauss accuse la civilisation occidentale et le développement des voyages de rétrécir, d’uniformiser et de détruire la planète.",
+      "Les voyages, « coffrets magiques », ne livrent plus leurs trésors intacts : îles polynésiennes noyées de béton, bidonvilles qui rongent l’Afrique, aviation qui flétrit les forêts.",
+      "La civilisation occidentale a créé des merveilles, mais au prix d’une masse de sous-produits maléfiques qui infectent la terre : « ce que d’abord vous nous montrez, voyages, c’est notre ordure lancée au visage de l’humanité ».",
+      "Les récits de voyage entretiennent l’illusion de ce qui n’existe plus.",
+      "L’humanité s’installe dans la monoculture : elle produit la civilisation en masse, « comme la betterave »."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2121,6 +2792,23 @@
      "lines": [
       "Écrit : « Civilisation moderne et thèses écologistes », avec des exemples précis."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Voyages : illusion d’évasion.",
+      "Civilisation occidentale : merveilles et ordures.",
+      "Destruction de la diversité du monde.",
+      "Image de la monoculture (betterave).",
+      "Texte polémique (Rousseau)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. De quoi parle le texte ?",
+      "→ Solution : Des voyages et des dégâts de la civilisation occidentale sur le monde."
+     ]
     }
    ]
   },
@@ -2153,6 +2841,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un écrivain doit-il prendre position sur les problèmes de son époque ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour Sartre (Situations II, 1948), l’écrivain est « en situation dans son époque » : chaque parole et chaque silence ont des retentissements.",
+      "Il tient Flaubert et Goncourt pour responsables de la répression de la Commune, car ils n’ont rien écrit pour l’empêcher ; au contraire, Zola s’est engagé dans l’affaire Dreyfus et Gide a dénoncé l’administration du Congo.",
+      "L’Occupation a appris aux écrivains leur responsabilité : puisqu’ils agissent sur leur temps, cette action sera volontaire.",
+      "L’engagement porte non sur un avenir lointain et vague (laissé aux romanciers d’anticipation) mais sur l’avenir de notre époque : fin de la guerre, reconstruction, relations internationales, réformes sociales, révolution.",
+      "Le silence face à la violence est une complicité avec le bourreau."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2209,6 +2913,23 @@
       "Écrit : quels écrivains correspondent à la conception sartrienne de l’écrivain engagé ?",
       "Recherche : écrivains mauritaniens d’expression française engagés."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "L’écrivain est « en situation » dans son époque.",
+      "Le silence aussi est un acte.",
+      "Contre-exemples : Flaubert, Goncourt ; exemples : Zola, Gide.",
+      "Engagement sur l’avenir proche de son époque.",
+      "Écriture engagée : dénoncer, défendre les droits de l’homme."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qui parle ? « je » et « nous » ?",
+      "→ Solution : Jean-Paul Sartre ; « je » = lui-même, « nous » = les écrivains de sa génération ; il s’adresse aux écrivains et aux lecteurs."
+     ]
     }
    ]
   },
@@ -2241,6 +2962,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un poème doit-il servir une cause pour avoir de la valeur ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour Alain Robbe-Grillet (Pour un nouveau roman, 1963), l’art ne peut être réduit à un moyen au service d’une cause, même la plus juste : l’artiste ne met rien au-dessus de son travail ; la moindre direction extérieure le paralyse, le moindre souci didactique le gêne ; au moment de créer, il ne pense qu’aux problèmes de son art.",
+      "Ou bien l’art n’est rien, et on peut l’enrôler comme un instrument (au même titre que les armées ou les tracteurs) ; ou bien l’art existe en tant qu’art et reste pour l’artiste la chose la plus importante, même s’il paraît inutile ou réactionnaire vis-à-vis de la politique.",
+      "Pourtant, dans l’histoire des peuples, cet art prétendument gratuit trouve sa place à côté des syndicats et des barricades.",
+      "Il faut cesser de craindre « l’art pour l’art ».",
+      "« Le seul engagement possible pour l’écrivain, c’est la littérature. »"
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2305,6 +3042,23 @@
       "Résumé au 1/4.",
       "Exposé : les écrivains africains et l’engagement."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "L’art n’est pas un instrument.",
+      "L’artiste crée « pour rien ».",
+      "Dilemme : instrument ou art véritable.",
+      "L’art gratuit a sa place dans l’histoire.",
+      "Seul engagement : la littérature."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Réponse à la question ? En son nom ?",
+      "→ Solution : Non, l’art ne peut être engagé au service d’une cause ; il parle au nom des artistes (« l’artiste », « nous »)."
+     ]
     }
    ]
   },
@@ -2337,6 +3091,22 @@
    },
    "applications": [],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "La mondialisation profite-t-elle à tous les pays de la même façon ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le mouvement altermondialiste réunit des acteurs très divers qui veulent faire des valeurs sociales et environnementales le moteur de la mondialisation, contre les logiques de la mondialisation néolibérale.",
+      "Il grandit dans les années 1980 dans les pays du Sud (lutte contre la dette, l’OMC, les plans d’ajustement du FMI), apparaît en Europe, aux États-Unis et en Corée à partir de 1994 (chômage, précarité), puis se fait connaître à Seattle en 1999, au Forum social mondial et à Gênes en 2001.",
+      "C’est le « mouvement des mouvements » : sa diversité le rend efficace pour contester, mais l’empêche d’avoir un programme clair.",
+      "Ses thèmes communs : développement durable, souveraineté alimentaire, droits fondamentaux, paix, démocratie, selon la formule « un autre monde est possible ».",
+      "Il pense que la mondialisation non encadrée accroît les inégalités entre riches et pauvres et entre Nord et Sud ; certains dénoncent l’effet de serre, les OGM, la pollution, les armes, et les grandes compagnies qui privilégient le profit."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2405,6 +3175,23 @@
       "Écrit : expliquer et discuter la phrase de Camus (« le monde a été amputé de ce qui fait sa personnalité ») ou celle de Saint-Exupéry (« Je n’aime pas qu’on abîme les hommes… »).",
       "Enquête sur les problèmes d’environnement de votre ville."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Valeurs sociales et environnementales contre le néolibéralisme.",
+      "Seattle 1999, Gênes 2001.",
+      "« Le mouvement des mouvements ».",
+      "« Un autre monde est possible ».",
+      "Mondialisation non encadrée = inégalités."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce que le mouvement altermondialiste ?",
+      "→ Solution : Un mouvement social divers qui veut une mondialisation fondée sur des valeurs sociales et écologiques."
+     ]
     }
    ]
   },
@@ -2446,6 +3233,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels mots utilisez-vous pour enchaîner vos idées dans une rédaction ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les connecteurs (mots-outils) relient les phrases et les propositions et organisent le texte.",
+      "Les connecteurs temporels situent les événements : date et moment (hier, bientôt), succession (d’abord, puis, ensuite, enfin), fréquence (jamais, parfois, souvent), durée (longtemps, pendant).",
+      "Les connecteurs spatiaux organisent la description : lieu où l’on est (ici, au loin, à droite), où l’on va (à Kaédi, vers la forêt), d’où l’on vient (du Sahara), par où l’on passe (par le désert).",
+      "Les connecteurs logiques marquent les relations d’une argumentation : addition, cause, conséquence, opposition, condition, illustration, conclusion ; ils peuvent être des conjonctions de coordination, des adverbes, des conjonctions de subordination, des locutions ou des groupes prépositionnels."
+     ]
+    },
     {
      "h": "Principaux connecteurs logiques",
      "lines": [],
@@ -2489,6 +3291,32 @@
      "lines": [
       "(Correction : dans le tableau du manuel, « pouvu que » → pourvu que ; « des mots qui relent » → relient.)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Temporels : récit, explication.",
+      "Spatiaux : description.",
+      "Logiques : explication, argumentation.",
+      "Cause ≠ conséquence ; opposition ≠ concession.",
+      "Varier les connecteurs."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel connecteur exprime la cause : donc, car, pourtant ?",
+      "→ Réponse : Car.",
+      "Exemple 2 : Classez : d’abord, au loin, par conséquent.",
+      "→ Réponse : Temporel / spatial / logique (conséquence)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Reliez par le connecteur qui convient : « Les TIC aident les élèves. Elles peuvent les distraire. »",
+      "→ Solution : Les TIC aident les élèves ; cependant, elles peuvent les distraire (opposition)."
+     ]
     }
    ]
   },
@@ -2531,6 +3359,20 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pouvez-vous raconter un film en trois phrases sans rien oublier d’important ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le résumé apprend à distinguer l’essentiel de l’accessoire, à rendre exactement le sens d’un texte et à le reformuler avec ses propres mots.",
+      "Règles : respecter la longueur fixée et la tolérance ; rédiger des phrases complètes, sans style télégraphique, sans parenthèses ni « etc. » ; garder les articulations logiques ; retenir l’essentiel pour que le résumé se substitue au texte ; ne pas recopier des fragments du texte (sauf mots-clés et termes techniques) ; ne pas faire une réduction proportionnelle paragraphe par paragraphe ; n’ajouter aucun commentaire personnel ; respecter l’ordre de l’auteur ; écrire comme l’auteur, sans « l’auteur pense que » ; supprimer les exemples et anecdotes, sauf s’ils apportent une idée nouvelle.",
+      "Méthode : 1re lecture attentive sans souligner ; 2e lecture : vocabulaire, enchaînement des idées, soulignement des idées et encadrement des connecteurs ; 3e lecture : plan et idée principale de chaque partie ; puis rédaction brève et correcte, en comptant les mots."
+     ]
+    },
+    {
      "h": "Le résumé doit être",
      "lines": [
       "clair, cohérent, logique, bien enchaîné ;",
@@ -2569,6 +3411,32 @@
      "h": "Remarque",
      "lines": [
       "(Le manuel indique ici « résumer au tiers avec une tolérance de ± 15 % », alors que la plupart des exercices demandent le quart avec ± 10 % : on suit la consigne de chaque sujet.)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Essentiel / accessoire.",
+      "Phrases rédigées, connecteurs marqués.",
+      "Pas de copie, pas de commentaire.",
+      "Ordre de l’auteur respecté.",
+      "Trois lectures, plan, rédaction, comptage."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Peut-on écrire « L’auteur pense que… » dans un résumé ?",
+      "→ Réponse : Non, le résumé se substitue au texte et parle comme l’auteur.",
+      "Exemple 2 : Garde-t-on les exemples ?",
+      "→ Réponse : Non, sauf s’ils apportent une idée nouvelle importante."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un texte de 400 mots doit être résumé au quart (± 10 %). Combien de mots sont acceptés ?",
+      "→ Solution : 100 mots, de 90 à 110 mots."
      ]
     }
    ]
@@ -2612,6 +3480,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment convaincre quelqu’un qui ne partage pas votre avis ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Discuter, c’est argumenter avec rigueur.",
+      "Le devoir comprend trois parties.",
+      "L’introduction amène le sujet (le situer dans son contexte), pose la problématique (la question essentielle) et annonce le plan, qui doit être suivi.",
+      "Le développement suit ce plan : chaque partie compte deux à quatre paragraphes ; chaque paragraphe présente une seule idée (un argument) illustrée par un exemple ; chaque partie se termine par une transition.",
+      "La conclusion répond à la problématique ; elle ne résume pas le devoir, et peut s’ouvrir sur une autre question proche."
+     ]
+    },
+    {
      "h": "Plan type",
      "lines": [],
      "table": [
@@ -2640,6 +3524,32 @@
       "« On n’a rien sans peine. » Montrez, à l’aide d’exemples précis, la valeur de l’effort.",
       "« La dette est un frein au développement des nations. » Discutez.",
       "Que pensez-vous de cette affirmation de Kofi Annan sur le trafic de stupéfiants ?"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Introduction : sujet amené, problématique, plan annoncé.",
+      "Développement : un paragraphe = une idée + un exemple.",
+      "Transitions entre les parties.",
+      "Conclusion : réponse + ouverture.",
+      "Sujets du bac : discussion, dissertation, résumé."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien d’idées par paragraphe ?",
+      "→ Réponse : Une seule idée, illustrée par un exemple.",
+      "Exemple 2 : La conclusion résume-t-elle le devoir ?",
+      "→ Réponse : Non, elle répond à la problématique et peut ouvrir sur une autre question."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Rédigez l’introduction du sujet « Sauver la nature, c’est sauver l’homme ».",
+      "→ Solution : Sujet amené : la pollution et le réchauffement menacent la planète. Problématique : protéger la nature est-il une condition de la survie de l’homme ? Plan : d’abord l’homme dépend de la nature, ensuite sa destruction le menace, enfin les moyens de la sauver."
      ]
     }
    ]

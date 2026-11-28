@@ -31,6 +31,12 @@
    },
    "board": [
     {
+     "h": "Warm-up",
+     "lines": [
+      "Have you ever seen a fire? What happened?"
+     ]
+    },
+    {
      "h": "Dialogue",
      "lines": [],
      "fig": {
@@ -191,6 +197,22 @@
       "Speaking: In groups, talk about a fire you saw or heard about (a house, a market, the bush) and take notes.",
       "Writing: Use your notes to write a short paragraph about that experience."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Simple past: regular verbs + -ed (called, played).",
+      "Spelling: carry → carried; like → liked.",
+      "Irregular verbs: break → broke, get → got, go → went, see → saw.",
+      "Question: How did it happen? / Negative: It didn’t …"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What did Mariem tell Moctar and Abdoul?",
+      "→ Answer : That there was a fire in her building."
+     ]
     }
    ]
   },
@@ -220,6 +242,12 @@
     "a": "At 10 o’clock."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Is it a problem to be late at school or at work? Why?"
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -377,6 +405,21 @@
       "Speaking: Why is coming late to school or work a bad habit? Discuss with your neighbour.",
       "Writing: Summarize the text in two or three lines."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Past continuous: was/were + verb-ing.",
+      "Used for an action in progress in the past: Mohamed was standing…",
+      "Opposites: in front of ≠ behind, to get in ≠ to get out."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What time was Mohamed waiting at the door?",
+      "→ Answer : At 10 o’clock."
+     ]
     }
    ]
   },
@@ -406,6 +449,12 @@
     "a": "For Mauritania National Radio, an international radio corporation and private international radio stations (BBC, DW, Radio Monte Carlo)."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What questions does an employer ask in a job interview?"
+     ]
+    },
     {
      "h": "Dialogue (1/2)",
      "lines": [],
@@ -579,6 +628,21 @@
       "Speaking: In pairs, ask about past experiences: “Have you ever…?” / “Did you…?” (drink tea, play football, study English, work for a private company…).",
       "Writing: Write sentences about your experiences with already, yet, recently, for, never, once, twice, many times."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Present perfect: have/has + past participle.",
+      "For recent past actions with unspecified time.",
+      "Adverbs: already, recently, never, yet, just, ever, once, twice, for, since."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Who has the applicant worked for before?",
+      "→ Answer : For Mauritania National Radio, an international radio corporation and private international radio stations (BBC, DW, Radio Monte Carlo)."
+     ]
     }
    ]
   },
@@ -609,6 +673,21 @@
     "a": "Chinguetti."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What do you know about Chinguetti?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Brahim lives in Nouakchott, but when he was young he used to live in Chinguetti, an ancient Islamic town in northern Mauritania.",
+      "It was pretty and clean; there were beautiful old houses, many old and famous libraries and a splendid mosque of stone and mud, visited by people from remote places.",
+      "People were friendly and open-minded, and there were lovely small inns for tourists.",
+      "But being in the desert, most houses of the ancient section were almost buried under dunes, and people were always pushing the dunes back while sand storms kept covering the town."
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -767,6 +846,22 @@
       "Speaking: Would you like to live in a town like Chinguetti? Why or why not?",
       "Writing: Write a paragraph about your hometown or neighbourhood: what it is like, its problems, whether you like living there."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Past progressive: was/were + verb-ing.",
+      "Negative: was not (wasn’t) / were not (weren’t).",
+      "Questions: Were you speaking? – Yes, I was / No, I wasn’t.",
+      "Used to + verb: past habit (I used to live in Chinguetti)."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Name of Brahim’s hometown?",
+      "→ Answer : Chinguetti."
+     ]
     }
    ]
   },
@@ -797,6 +892,22 @@
     "a": "They are neighbours, classmates and close friends."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Describe your best friend in three words."
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Mohamed and Ali, from Nouakchott, are neighbours and classmates, about 17 years old; they speak English fluently.",
+      "Mohamed is tall with long black hair; Ali is rather short with curly bushy hair.",
+      "Their characters differ: Mohamed is shy, speaks slowly, moves carefully, seldom gets angry, but has a strong character; he is kind, generous, prays at the mosque and obeys his parents.",
+      "Ali is good-looking, always smiling, daring and stubborn; he is sometimes aggressive, but kind and obedient to his mother.",
+      "Both recited the Koran young, and they are inseparable."
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -927,6 +1038,22 @@
       "Speaking: Which of the two boys do you find more sympathetic? Why?",
       "Writing: In a few lines, compare two friends, relatives or people you know."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Physical description: tall, short, long black hair, curly hair.",
+      "Character: shy, kind, generous, daring, stubborn, obedient.",
+      "Contrast: whereas, however, but.",
+      "Adverbs of manner: fluent → fluently, careful → carefully."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Relationship between Mohamed and Ali?",
+      "→ Answer : They are neighbours, classmates and close friends."
+     ]
     }
    ]
   },
@@ -957,6 +1084,22 @@
     "a": "Aissata’s cousin, visiting Nouakchott from her village."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What important places would you show a visitor in Nouakchott?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Meima visits her cousin Aissata in Nouakchott.",
+      "Driving to the beach, they pass the National Hospital (big compared to the village dispensary), the tuberculosis centre and the HIV centre.",
+      "Aissata explains that being infected does not necessarily mean being sick: one can live with the virus without symptoms; HIV-positive people must take their medicines regularly to slow down the disease, and AIDS treatment is free.",
+      "The virus is transmitted through blood transfusion or sexual intercourse.",
+      "To avoid it: religion forbids sexual intercourse outside marriage, and doctors advise prevention methods; radio and TV programmes deal with the issue."
+     ]
+    },
     {
      "h": "Dialogue (1/2)",
      "lines": [],
@@ -1088,6 +1231,22 @@
       "Speaking: In groups: why has HIV spread so rapidly through the world?",
       "Writing: Write a short paragraph about the best methods of prevention from HIV/AIDS."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Adjectives describe things: big, good, beautiful.",
+      "Adverbs of manner describe actions: carefully, slowly, regularly.",
+      "HIV: infected ≠ always sick; treatment is free.",
+      "Prevention: religion, medical advice, awareness programmes."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Who is Meima?",
+      "→ Answer : Aissata’s cousin, visiting Nouakchott from her village."
+     ]
     }
    ]
   },
@@ -1117,6 +1276,12 @@
     "a": "The next presidential elections (an opposition campaign meeting)."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What do candidates usually promise during a campaign?"
+     ]
+    },
     {
      "h": "Dialogue (1/2)",
      "lines": [],
@@ -1276,6 +1441,21 @@
       "Speaking: Talk with a friend about the last election campaign you attended.",
       "Writing: In a few lines, write about an election campaign in your village or neighbourhood."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Reported speech: the tense goes one step back after a past reporting verb.",
+      "will → would; am → was; has gone → had gone.",
+      "Pronouns change: “I am ready” → he said he was ready."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What was the meeting about?",
+      "→ Answer : The next presidential elections (an opposition campaign meeting)."
+     ]
     }
    ]
   },
@@ -1306,6 +1486,21 @@
     "a": "E.g. “Choosing an accountant”."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What makes a good candidate for a job?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Oumou, Hassan and Cheikh run a fishing company and need an accountant.",
+      "Two applicants, Samba and Zeinab, are both good.",
+      "Oumou prefers Zeinab; Hassan wants Samba, who is younger and works faster; Cheikh disagrees: Zeinab has more education and more experience.",
+      "Finally Oumou agrees with Cheikh: Zeinab can have the job."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -1416,6 +1611,22 @@
       "Speaking: In groups, choose the classmate most qualified to represent your class.",
       "Writing: In a few lines, give your opinion about your choice."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Asking: How do you feel about…? What’s your opinion?",
+      "Giving: In my opinion…, I think…",
+      "Agreeing / disagreeing: You are right! / I’m sorry but I don’t agree.",
+      "Connectors: and, but, because, however, besides."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Another title?",
+      "→ Answer : E.g. “Choosing an accountant”."
+     ]
     }
    ]
   },
@@ -1446,6 +1657,12 @@
     "a": "To decide where to spend their summer holidays."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Where would you like to spend your summer holidays?"
+     ]
+    },
     {
      "h": "Dialogue (1/2)",
      "lines": [],
@@ -1607,6 +1824,22 @@
       "Speaking: In groups, discuss life in the city and in the countryside.",
       "Writing: In no less than six lines, talk about your last summer holidays."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Adverbs: adjective + -ly (honest → honestly); happy → happily.",
+      "Irregular: good → well, fast → fast, hard → hard.",
+      "Superlatives: the + adj-est (the smallest); the most + long adj (the most comfortable).",
+      "Irregular: good → the best, bad → the worst, far → the farthest/furthest."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What did they decide to do after the exams?",
+      "→ Answer : To decide where to spend their summer holidays."
+     ]
     }
    ]
   },
@@ -1636,6 +1869,22 @@
     "a": "She had a frightening experience: someone broke into the flat."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Have you ever been really frightened? What happened?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Fatma tells Noura about her frightening night.",
+      "She was watching TV when she heard a scream and a crash: someone had broken into the flat and surprised her maid Amy, who fell unconscious.",
+      "While Fatma was calling her neighbour Ali, a policeman, she heard footsteps coming towards her room.",
+      "She called her maid’s name, in vain.",
+      "Then she saw her husband Salem and was relieved: while he was visiting his parents, his boss had called him back, and he couldn’t phone because the network was bad."
+     ]
+    },
     {
      "h": "Dialogue (1/2)",
      "lines": [],
@@ -1780,6 +2029,21 @@
       "Speaking: You are a reporter: interview your neighbour, a football player injured in the stadium last week.",
       "Writing: Write the interview as a dialogue."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Past continuous: long action in progress; simple past: short event.",
+      "While + past continuous (+ past continuous or simple past).",
+      "When + simple past: I was sleeping when the phone rang."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What happened to Fatma?",
+      "→ Answer : She had a frightening experience: someone broke into the flat."
+     ]
     }
    ]
   },
@@ -1809,6 +2073,21 @@
     "a": "He hurt his foot."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What do you say to a doctor when you are hurt?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Doudou doesn’t go to work; he goes to see Dr Amadou.",
+      "He hurt his foot during the blackout last night when he fell over his son’s toy truck.",
+      "His wife thinks a bone may be broken, but the doctor says it is just a sprain, an X-ray isn’t necessary, and he will recommend something to calm the pain; all will be fine in a few days.",
+      "(Humour: Doudou thinks the doctor asks if he broke the truck.)"
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -1950,6 +2229,21 @@
       "Speaking: If you were Doudou, would you follow Dr Amadou’s advice or see another doctor? Why?",
       "Writing: There was a blackout in your neighbourhood: in at least five lines, say what you did."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Quoted speech: exact words in quotation marks.",
+      "Reported speech: the idea, no quotation marks.",
+      "With a present reporting verb (says), the tense does not change; pronouns change."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "What’s wrong with Doudou?",
+      "→ Answer : He hurt his foot."
+     ]
     }
    ]
   },
@@ -1979,6 +2273,21 @@
     "a": "Yesterday evening at eight o’clock."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What does your family usually do in the evening?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Yesterday at eight, Mr Sidi was reading a newspaper while his wife Aicha was cleaning the tea set; their daughters Leila and Navissa were reciting Koran verses written on their tablets.",
+      "Sidi’s friend Camara came in and was welcomed warmly.",
+      "While the two men were chatting about social issues, Aicha was preparing tea in another room.",
+      "The baby Ahmed woke up and cried because he didn’t see his mother; disturbed, the men went to the garden to talk peacefully."
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -2116,6 +2425,21 @@
       "Speaking: In pairs: does Sidi’s family represent the Mauritanian family model?",
       "Writing: Write about a day with friends: when each one did his task and how well."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Past continuous: was/were + verb-ing for actions in progress.",
+      "While + past continuous for simultaneous actions.",
+      "Adverbs of manner: warmly, calmly, peacefully."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "When were Sidi and Aicha in the living room?",
+      "→ Answer : Yesterday evening at eight o’clock."
+     ]
     }
    ]
   },
@@ -2145,6 +2469,22 @@
     "a": "Mederdra, in the south."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Would you prefer to live in the city or in your village later?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Mustafa grew up in the south.",
+      "After high school he studied at the University of Nouakchott, got a scholarship to study abroad, and came back to teach at the University of Nouakchott.",
+      "His hobby was gardening (his friends called him the “amateur gardener”); it reminded him of the countryside.",
+      "Married, he planted his first real garden in his big house.",
+      "He has taught at the university for eight years and is well-known, but now he is tired of fame; he hasn’t decided yet to move to the countryside, but he has already chosen a place near Mederdra, his hometown."
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -2287,6 +2627,21 @@
       "Speaking: How do you feel about Mustafa’s idea to leave Nouakchott and grow plants in the south?",
       "Writing: In at least seven lines: where you used to live, how long, when and why you moved, how long you have lived where you are now."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Present perfect + already (positive) / yet (negative, questions).",
+      "For + length of time; since + starting point.",
+      "Mauritania has been independent since 1960."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Where is Mustafa from?",
+      "→ Answer : Mederdra, in the south."
+     ]
     }
    ]
   },
@@ -2317,6 +2672,22 @@
     "a": "In a remote area in the countryside."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What pollutes the air and the water in your town?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Aly, who used to live in a remote area of the countryside, now lives in Nouakchott and is amazed by all the fuss about pollution.",
+      "His elder sister Amy explains: pollution is the fumes and chemical substances in the air we breathe, the water we drink and the products we eat, which threaten our lives.",
+      "They come from plants, factories, car and plane exhausts.",
+      "Dead fish floating on the sea show sea pollution; air pollution causes respiratory problems (asthma, bronchitis); land pollution destroys forests and vegetation.",
+      "Aly agrees that something must be done."
+     ]
+    },
     {
      "h": "Dialogue (1/2)",
      "lines": [],
@@ -2465,6 +2836,22 @@
       "Speaking: With a partner, discuss the impact of pollution on our environment.",
       "Writing: Write a paragraph: what pollution is, how bad it is, health problems it causes, what we can do."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Past perfect: had + past participle.",
+      "Negative: had not; question: Had they…?",
+      "Pollution: air, water (sea), land.",
+      "Causes: factories, cars, planes, chemical substances."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Where did Aly use to live?",
+      "→ Answer : In a remote area in the countryside."
+     ]
     }
    ]
   },
@@ -2494,6 +2881,21 @@
     "a": "No, after they graduated from high school."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What would you like to study after the baccalaureate?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Kader and Cherif have just finished high school.",
+      "Cherif will enrol in the faculty of law and economics to become a lawyer; Kader says that if he were him he would study English, which is more and more important.",
+      "Cherif will attend English evening classes.",
+      "Kader wants to study abroad: if the government gave him the scholarship he applied for, he would enrol in a famous university to study international relations; he dreams of working for an international institution or becoming a diplomat."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -2623,6 +3025,21 @@
      "lines": [
       "Speaking: Discuss with a classmate the subjects you would like to study at university.",
       "Writing: Write a short paragraph: what and where you would study if you got the baccalaureate."
+     ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Unreal conditional: If + simple past, would/could + verb.",
+      "If I were you, I would…",
+      "Real future plans: I will enrol…"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "After university graduation?",
+      "→ Answer : No, after they graduated from high school."
      ]
     }
    ]

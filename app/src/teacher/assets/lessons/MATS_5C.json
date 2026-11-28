@@ -47,6 +47,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "J’écris au tableau : 3√64 ; 5π/4π ; 4 − 10 ; 8/3 ; 10⁻⁴. Je demande aux élèves de dire pour chaque nombre le plus petit ensemble (ℕ, ℤ, 𝔻, ℚ ou ℝ) auquel il appartient, puis je leur montre que certains nombres « déguisés » sont en fait des entiers."
+     ]
+    },
+    {
      "h": "I. Les ensembles de nombres",
      "lines": [
       "ℕ = {0 ; 1 ; 2 ; …} : entiers naturels ; ℤ = {… ; −2 ; −1 ; 0 ; 1 ; 2 ; …} : entiers relatifs.",
@@ -133,6 +139,34 @@
       "|x − 4| = 1 ⇔ x − 4 = −1 ou x − 4 = 1 ⇒ S = {3 ; 5}.",
       "|x − 5| < 2 ⇔ −2 < x − 5 < 2 ⇔ 3 < x < 7 ⇒ S = ]3 ; 7[.",
       "|3 − √13| = √13 − 3 car 3 < √13."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "ℕ ⊂ ℤ ⊂ 𝔻 ⊂ ℚ ⊂ ℝ ; irrationnel : développement décimal illimité non périodique (√2, π).",
+      "√(a²) = |a| ; √(a×b) = √a × √b ; √(a/b) = √a/√b ; √(a + b) ≤ √a + √b.",
+      "x² = a : deux solutions √a et −√a si a > 0 ; une solution 0 si a = 0 ; aucune si a < 0.",
+      "a ≤ x ≤ b ⇔ |x − (a+b)/2| ≤ (b−a)/2 : centre (a+b)/2, rayon (b−a)/2.",
+      "|x| ≤ a ⇔ −a ≤ x ≤ a ; |x| ≥ a ⇔ x ≤ −a ou x ≥ a ; d(a ; b) = |a − b|."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Donner l’écriture fractionnaire de x = 4,735735… (735 se répète).",
+      "→ Réponse : 1000x = 4735,735… = 4731 + x ⇒ 999x = 4731 ⇒ x = 4731/999 = 1577/333.",
+      "Exemple 2 : Simplifier S = 5√48 − 2√75 + √27.",
+      "→ Réponse : S = 5×4√3 − 2×5√3 + 3√3 = 20√3 − 10√3 + 3√3 = 13√3.",
+      "Exemple 3 : Résoudre dans ℝ : |x − 5| < 2 puis |x + 1| ≥ 7.",
+      "→ Réponse : |x − 5| < 2 ⇔ 3 < x < 7, S = ]3 ; 7[. |x + 1| ≥ 7 ⇔ x ≤ −8 ou x ≥ 6, S = ]−∞ ; −8] ∪ [6 ; +∞[."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Écrire sans radical au dénominateur : A = 1/(√3 + 2).",
+      "→ Solution : A = (√3 − 2)/((√3 + 2)(√3 − 2)) = (√3 − 2)/(3 − 4) = 2 − √3."
      ]
     }
    ],
@@ -230,6 +264,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "J’écris P(x) = x³ − 3x − 18 et je demande aux élèves de calculer P(3). Ils trouvent 0 : je leur annonce qu’on peut alors écrire P(x) = (x − 3) × (un polynôme du second degré) et qu’aujourd’hui nous allons apprendre à le trouver."
+     ]
+    },
+    {
      "h": "I. Monômes et polynômes",
      "lines": [
       "Une fonction monôme est une fonction de la forme F(x) = axⁿ avec a ∈ ℝ et n ∈ ℕ : a est le coefficient et n le degré.",
@@ -290,6 +330,34 @@
       "P(x) = (x − 3)(x² + ax + b) = x³ + (a − 3)x² + (b − 3a)x − 3b.",
       "Par identification : a − 3 = 0 ; b − 3a = −3 ; −3b = −18 ⇒ a = 3 et b = 6.",
       "P(x) = (x − 3)(x² + 3x + 6) ; Δ = 9 − 24 = −15 < 0 : x² + 3x + 6 ne se factorise pas."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Monôme : axⁿ (a coefficient, n degré) ; polynôme : somme de monômes.",
+      "Polynôme réduit et ordonné : P(x) = a₀ + a₁x + … + aₙxⁿ ; suite caractéristique (a₀ ; a₁ ; … ; aₙ).",
+      "Deux polynômes sont égaux ⇔ ils ont la même suite caractéristique ; un polynôme est nul ⇔ tous ses coefficients sont nuls.",
+      "deg(P × R) = deg P + deg R ; deg(P + R) ≤ le plus grand des deux degrés.",
+      "α racine de P ⇔ P(α) = 0 ⇔ P(x) = (x − α)R(x) avec deg R = deg P − 1."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Simplifier et ordonner suivant les puissances croissantes : P(x) = −12x² + 8 − 7x − 5x³ + 4x² + 8x − 16 + x³ − 2x⁵.",
+      "→ Réponse : P(x) = −8 + x − 8x² − 4x³ − 2x⁵.",
+      "Exemple 2 : Donner la suite caractéristique de P(x) = −1 + 5x − (2/3)x³ + 4√3x⁵ − x⁶ − 2x⁷.",
+      "→ Réponse : (−1 ; 5 ; 0 ; −2/3 ; 0 ; 4√3 ; −1 ; −2).",
+      "Exemple 3 : Écrire f(x) = x⁴ + 4 comme produit de deux polynômes du second degré (on écrira f(x) = x⁴ + 4x² + 4 − 4x²).",
+      "→ Réponse : f(x) = (x² + 2)² − (2x)² = (x² + 2x + 2)(x² − 2x + 2)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "P(x) = x³ − 3x − 18. Vérifier que 3 est une racine de P puis factoriser P.",
+      "→ Solution : P(3) = 27 − 9 − 18 = 0. Par identification : P(x) = (x − 3)(x² + ax + b) = x³ + (a − 3)x² + (b − 3a)x − 3b, donc a − 3 = 0, b − 3a = −3, −3b = −18 : a = 3, b = 6. P(x) = (x − 3)(x² + 3x + 6), et x² + 3x + 6 ne se factorise pas (Δ = 9 − 24 = −15 < 0)."
      ]
     }
    ],
@@ -387,6 +455,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "J’écris trois équations : y² = 4x ; x²/9 + y²/4 = 1 ; x²/4 − y²/9 = 1, et je montre les trois courbes du livre. Je demande : « Laquelle est fermée ? Laquelle a deux branches ? » Puis j’annonce qu’on va apprendre à reconnaître une courbe à partir de son équation."
+     ]
+    },
+    {
      "h": "Définition et classement",
      "lines": [
       "Une courbe algébrique du second degré (conique) est l’ensemble Γ des points M(x ; y) tels que ax² + by² + cx + dy + e = 0.",
@@ -469,6 +543,34 @@
       ],
       "caption": "Hyperbole et ses asymptotes"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "ab = 0 : parabole ; ab > 0 : ellipse ; ab < 0 : hyperbole (sinon conique dégénérée).",
+      "Parabole : y² = 2px ou x² = 2py, sommet O, paramètre |p|.",
+      "Ellipse : x²/a² + y²/b² = 1 (a ≠ b), centre O, sommets (±a ; 0) et (0 ; ±b) ; si a = b c’est un cercle.",
+      "Hyperbole : x²/a² − y²/b² = ±1, centre O, asymptotes y = (b/a)x et y = −(b/a)x.",
+      "Forme canonique puis X = x − x₀, Y = y − y₀ : la conique a pour centre (ou sommet) Ω(x₀ ; y₀)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Identifier la courbe d’équation 4x² + 9y² − 36 = 0.",
+      "→ Réponse : 4x² + 9y² = 36 ⇔ x²/9 + y²/4 = 1 ⇔ x²/3² + y²/2² = 1 : ellipse de centre O, de sommets A(3 ; 0), A′(−3 ; 0), B(0 ; 2), B′(0 ; −2).",
+      "Exemple 2 : Identifier la courbe d’équation 9x² − 4y² − 36 = 0 et donner ses asymptotes.",
+      "→ Réponse : x²/4 − y²/9 = 1 ⇔ x²/2² − y²/3² = 1 : hyperbole de centre O, de sommets (2 ; 0) et (−2 ; 0), d’asymptotes y = (3/2)x et y = −(3/2)x.",
+      "Exemple 3 : Reconnaître la courbe x² + y² − 2x + 4y − 20 = 0.",
+      "→ Réponse : (x − 1)² + (y + 2)² = 25 : c’est le cercle de centre Ω(1 ; −2) et de rayon 5 (conique dégénérée)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Montrer que la courbe d’équation x² − 2x − 4y − 3 = 0 est une parabole et donner son sommet et son paramètre.",
+      "→ Solution : x² − 2x + 1 − 1 − 4y − 3 = 0 ⇔ (x − 1)² = 4y + 4 = 4(y + 1). On pose X = x − 1, Y = y + 1 : X² = 4Y = 2×2Y. C’est une parabole de sommet Ω(1 ; −1) et de paramètre 2."
+     ]
     }
    ],
    "series": [
@@ -566,6 +668,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je trace un triangle ABC et je demande : « Pour aller de A à C, est-ce la même chose d’aller directement ou de passer par B ? » J’écris alors AB→ + BC→ = AC→ et j’annonce que les vecteurs vont nous permettre de démontrer des alignements et des parallélismes par le calcul."
+     ]
+    },
+    {
      "h": "I. Notion de vecteur",
      "lines": [
       "Si A ≠ B, le vecteur u→ = AB→ est déterminé par : une longueur AB (la norme de u→), une direction (celle de la droite (AB)) et un sens (de A vers B).",
@@ -658,6 +766,34 @@
       "La norme de u→ = AB→ est la distance AB : ‖u→‖ = ‖AB→‖ = AB.",
       "‖u→‖ ≥ 0 ; ‖u→‖ = 0 ⇔ u→ = 0→ ; ‖−u→‖ = ‖u→‖ ; ‖k u→‖ = |k| ‖u→‖.",
       "Inégalité triangulaire : ‖u→ + v→‖ ≤ ‖u→‖ + ‖v→‖."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Vecteur AB→ : direction (AB), sens de A vers B, norme AB ; BA→ = −AB→.",
+      "Chasles : AB→ + BC→ = AC→ ; AC→ = OC→ − OA→.",
+      "I milieu de [AB] ⇔ IA→ + IB→ = 0→ ⇔ MA→ + MB→ = 2MI→.",
+      "G centre de gravité de ABC ⇔ GA→ + GB→ + GC→ = 0→ ; AG→ = (2/3)AA′→ ; MA→ + MB→ + MC→ = 3MG→.",
+      "u→ et v→ colinéaires ⇔ v→ = k u→ ; trois points A, B, C alignés ⇔ AB→ et AC→ colinéaires."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : ABC est un triangle, I et J les milieux de [AB] et [AC]. Exprimer IJ→ en fonction de BC→.",
+      "→ Réponse : IJ→ = IA→ + AJ→ = ½BA→ + ½AC→ = ½(BA→ + AC→) = ½BC→.",
+      "Exemple 2 : ABCD est un parallélogramme de centre O. Exprimer AC→ en fonction de AB→ et AD→, puis AO→.",
+      "→ Réponse : AC→ = AB→ + BC→ = AB→ + AD→ (car BC→ = AD→) ; AO→ = ½AC→ = ½(AB→ + AD→).",
+      "Exemple 3 : Soit w→ = 2u→ − 3v→. Montrer que ‖w→‖ ≤ 2‖u→‖ + 3‖v→‖.",
+      "→ Réponse : ‖w→‖ = ‖2u→ + (−3v→)‖ ≤ ‖2u→‖ + ‖−3v→‖ = |2|‖u→‖ + |−3|‖v→‖ = 2‖u→‖ + 3‖v→‖."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "A, B, C sont trois points distincts et M un point tel que 5MA→ = −2MB→ + 7MC→. Montrer que A, B, C sont alignés.",
+      "→ Solution : 5MA→ = −2MA→ − 2AB→ + 7MA→ + 7AC→ = 5MA→ − 2AB→ + 7AC→, donc −2AB→ + 7AC→ = 0→, soit AB→ = (7/2)AC→ : AB→ et AC→ sont colinéaires, donc A, B, C sont alignés."
      ]
     }
    ],
@@ -756,6 +892,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je place dans un repère les points A(6 ; −7) et B(3 ; −3) et je demande comment trouver, par le calcul seulement, si le point M(0 ; 1) est sur la droite (AB). J’annonce qu’on va apprendre à traduire la géométrie en calculs sur les coordonnées."
+     ]
+    },
+    {
      "h": "I. Coordonnées d’un vecteur dans une base",
      "lines": [
       "Tout couple (u→ ; v→) de vecteurs non nuls et non colinéaires est une base de V.",
@@ -834,6 +976,34 @@
       ],
       "caption": "Cercle de centre Ω et de rayon R"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "det(u→ ; v→) = xy′ − x′y ; u→ et v→ colinéaires ⇔ det(u→ ; v→) = 0.",
+      "AB→(x_B − x_A ; y_B − y_A) ; milieu ((x_A + x_B)/2 ; (y_A + y_B)/2) ; AB = √((x_B − x_A)² + (y_B − y_A)²).",
+      "u→ ⊥ v→ ⇔ xx′ + yy′ = 0 (base orthonormée).",
+      "(D) : ax + by + c = 0 ; vecteur directeur u→(−b ; a) ; vecteur normal n→(a ; b) ; y = mx + p.",
+      "Cercle de centre Ω(x₀ ; y₀) et de rayon R : (x − x₀)² + (y − y₀)² = R²."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Dans un repère orthonormé, A(−13 ; 4) et B(−7 ; 9). Calculer AB.",
+      "→ Réponse : AB = √((−7 + 13)² + (9 − 4)²) = √(36 + 25) = √61.",
+      "Exemple 2 : (D) : 4x − 2y + 6 = 0 et (D′) : x + 2y − 4 = 0. Donner leurs équations réduites et leur position relative.",
+      "→ Réponse : (D) : y = 2x + 3 et (D′) : y = −½x + 2 ; m × m′ = 2 × (−½) = −1, donc (D) ⊥ (D′).",
+      "Exemple 3 : Reconnaître l’ensemble des points M(x ; y) tels que x² + y² − 2x + 4y + 1 = 0.",
+      "→ Réponse : (x − 1)² − 1 + (y + 2)² − 4 + 1 = 0 ⇔ (x − 1)² + (y + 2)² = 2² : cercle de centre Ω(1 ; −2) et de rayon 2."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Donner une équation cartésienne de la droite (D) passant par A(6 ; −7) et de vecteur directeur u→(−3 ; 4).",
+      "→ Solution : M(x ; y) ∈ (D) ⇔ det(AM→ ; u→) = 0 ⇔ 4(x − 6) − (−3)(y + 7) = 0 ⇔ 4x − 24 + 3y + 21 = 0 ⇔ 4x + 3y − 3 = 0."
+     ]
     }
    ],
    "series": [
@@ -931,6 +1101,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je pose le problème du livre : « Un père a 35 ans et son fils 7 ans. Dans combien d’années l’âge du père sera-t-il le double de celui du fils ? » Les élèves cherchent, puis je montre qu’en appelant x le nombre d’années on obtient une équation qui donne la réponse sans tâtonner."
+     ]
+    },
+    {
      "h": "I. Équation du premier degré",
      "lines": [
       "Forme générale : ax + b = 0 (a ≠ 0) ⇔ x = −b/a.",
@@ -988,6 +1164,34 @@
       ],
       "caption": "Solutions d’un système et position de deux droites"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "ax + b = 0 (a ≠ 0) ⇔ x = −b/a.",
+      "Δ = b² − 4ac : Δ > 0 deux solutions (−b ± √Δ)/2a ; Δ = 0 solution double −b/2a ; Δ < 0 pas de solution.",
+      "a + b + c = 0 ⇒ solutions 1 et c/a ; a − b + c = 0 ⇒ solutions −1 et −c/a.",
+      "S = x₁ + x₂ = −b/a ; P = x₁x₂ = c/a ; ax² + bx + c = a(x − x₁)(x − x₂).",
+      "Système : Δ = ab′ − a′b ; si Δ ≠ 0, x = Δx/Δ et y = Δy/Δ (Δx = cb′ − c′b ; Δy = ac′ − a′c)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre dans ℝ : x² − 2x − 1 = 0.",
+      "→ Réponse : Δ = 4 + 4 = 8, √Δ = 2√2 : x₁ = 1 − √2 et x₂ = 1 + √2 ; S = {1 − √2 ; 1 + √2}.",
+      "Exemple 2 : Résoudre dans ℝ : x⁴ − 5x² + 6 = 0 (poser X = x²).",
+      "→ Réponse : X² − 5X + 6 = 0 donne X = 2 ou X = 3, donc x² = 2 ou x² = 3 : S = {−√3 ; −√2 ; √2 ; √3}.",
+      "Exemple 3 : Résoudre par les déterminants : 5x + 3y − 4 = 0 ; 2x − 7y + 11 = 0.",
+      "→ Réponse : 5x + 3y = 4 ; 2x − 7y = −11. Δ = 5×(−7) − 2×3 = −41 ; Δx = 4×(−7) − (−11)×3 = 5 ; Δy = 5×(−11) − 2×4 = −63. x = 5/(−41) = −5/41 ; y = −63/(−41) = 63/41."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Déterminer les dimensions d’un rectangle d’aire 15 et de périmètre 16.",
+      "→ Solution : x + y = 8 et xy = 15 : x et y sont les solutions de X² − 8X + 15 = 0. Δ = 64 − 60 = 4, √Δ = 2 : X = (8 − 2)/2 = 3 ou X = (8 + 2)/2 = 5. Les dimensions sont 3 et 5."
+     ]
     }
    ],
    "series": [
@@ -1091,6 +1295,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je demande : « Pour quelles valeurs de x a-t-on 5x − 4 ≥ 0 ? » puis « et 2x² − 5x + 2 ≤ 0 ? ». La première est facile, la seconde non : j’annonce qu’on va apprendre à utiliser les tableaux de signes."
+     ]
+    },
+    {
      "h": "I. Inéquations du premier degré",
      "lines": [
       "Formes : ax + b < 0 ; ax + b ≤ 0 ; ax + b > 0 ; ax + b ≥ 0 (a ≠ 0).",
@@ -1144,6 +1354,34 @@
       ],
       "caption": "Demi-plan solution de 5x − 3y + 15 ≤ 0"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "ax + b : signe de −a avant −b/a, signe de a après.",
+      "ax² + bx + c avec Δ > 0 : signe de a à l’extérieur des racines, signe de −a entre les racines.",
+      "Δ = 0 : signe de a (nul en −b/2a) ; Δ < 0 : toujours du signe de a.",
+      "Inéquation produit ou quotient : tableau de signes de chaque facteur ; on exclut les valeurs interdites.",
+      "ax + by + c ≤ 0 : demi-plan de frontière la droite ax + by + c = 0 ; on teste un point."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre dans ℝ : −33 ≤ 4x + 7 < 27.",
+      "→ Réponse : −40 ≤ 4x < 20 ⇔ −10 ≤ x < 5 : S = [−10 ; 5[.",
+      "Exemple 2 : Résoudre dans ℝ : 3x² − 4x + 12 > 0.",
+      "→ Réponse : Δ = 16 − 144 = −128 < 0 : le trinôme est toujours du signe de a = 3 > 0, donc S = ℝ.",
+      "Exemple 3 : Résoudre dans ℝ : (2x − 1)(x + 1) ≥ 0.",
+      "→ Réponse : Les racines sont −1 et ½ ; tableau de signes : le produit est positif ou nul pour x ≤ −1 ou x ≥ ½ : S = ]−∞ ; −1] ∪ [½ ; +∞[."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre dans ℝ : 2x² − 5x + 2 ≤ 0.",
+      "→ Solution : Δ = 25 − 16 = 9, √Δ = 3 : x₁ = (5 − 3)/4 = ½ et x₂ = (5 + 3)/4 = 2. Le trinôme (a = 2 > 0) est négatif entre les racines : S = [½ ; 2]."
+     ]
     }
    ],
    "series": [
@@ -1235,6 +1473,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je pose une règle sur un doigt avec deux objets de masses différentes aux extrémités et je demande où placer le doigt pour qu’elle reste en équilibre. Les élèves voient que le point d’équilibre est plus proche de la masse la plus lourde : c’est le barycentre."
+     ]
+    },
+    {
      "h": "I. Barycentre de deux points",
      "lines": [
       "Un point pondéré (A ; α) est un point A affecté du coefficient réel α.",
@@ -1303,6 +1547,34 @@
      "lines": [
       "Dans un repère : x_G = (αx_A + βx_B + γx_C)/(α + β + γ) ; y_G = (αy_A + βy_B + γy_C)/(α + β + γ).",
       "Centre d’inertie : le centre d’inertie d’une plaque homogène est le barycentre des centres d’inertie de ses parties affectés de leurs masses (ou de leurs aires)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "G = bar{(A ; α) ; (B ; β)} (α + β ≠ 0) ⇔ αGA→ + βGB→ = 0→ ⇔ AG→ = β/(α + β) AB→.",
+      "Homogénéité : on peut multiplier ou diviser tous les coefficients par un même réel non nul.",
+      "Isobarycentre de A et B : milieu de [AB] ; de A, B, C : centre de gravité.",
+      "Associativité : on remplace des points par leur barycentre partiel affecté de la somme de leurs coefficients.",
+      "Leibniz : αMA→ + βMB→ + γMC→ = (α + β + γ)MG→ ; x_G = (αx_A + βx_B + γx_C)/(α + β + γ)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Donner l’abscisse de G = bar{(A ; −5) ; (B ; 4)} dans le repère (A ; AB→).",
+      "→ Réponse : AG→ = 4/(−5 + 4) AB→ = −4AB→ : G a pour abscisse −4 (G est en dehors de [AB], du côté de A).",
+      "Exemple 2 : A(1 ; 2), B(3 ; −1), C(−2 ; 4). Calculer les coordonnées de G = bar{(A ; 1) ; (B ; 2) ; (C ; 1)}.",
+      "→ Réponse : x_G = (1 + 6 − 2)/4 = 5/4 ; y_G = (2 − 2 + 4)/4 = 1 : G(5/4 ; 1).",
+      "Exemple 3 : G = bar{(A ; 4) ; (B ; 5) ; (C ; 3)}. Montrer, en utilisant l’associativité, que G est sur la droite (CH) où H = bar{(A ; 4) ; (B ; 5)}.",
+      "→ Réponse : On remplace (A ; 4) et (B ; 5) par (H ; 9) : G = bar{(H ; 9) ; (C ; 3)}, donc G appartient à la droite (CH)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "A et B sont deux points distincts. Placer G = bar{(A ; 2) ; (B ; 3)} et donner son abscisse dans le repère (A ; AB→).",
+      "→ Solution : AG→ = 3/(2 + 3) AB→ = (3/5)AB→ : G est sur [AB], aux 3/5 de A, et son abscisse est 3/5."
      ]
     }
    ],
@@ -1394,6 +1666,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "J’enroule une ficelle graduée autour d’un cercle de rayon 1 et je demande à quel point du cercle arrive la graduation π, puis 2π, puis −π/2. Les élèves découvrent qu’à chaque réel correspond un point du cercle, et que x et x + 2π donnent le même point."
+     ]
+    },
     {
      "h": "I. Mesures d’angles",
      "lines": [
@@ -1487,6 +1765,34 @@
       "cos x = a : si a ∉ [−1 ; 1], pas de solution ; sinon a = cos α : x = α + 2kπ ou x = −α + 2kπ.",
       "tan x = a : a = tan α : x = α + kπ (k ∈ ℤ).",
       "Exemple : sin x = −1/2 = sin(−π/6) : x = −π/6 + 2kπ ou x = 7π/6 + 2kπ."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "180° = π rad = 200 gr ; y = πx/180 ; z = 10x/9.",
+      "Mesures de (OA→ ; OM→) : x + 2kπ ; mesure principale dans ]−π ; π] ; Chasles : (u→ ; v→) + (v→ ; w→) = (u→ ; w→) [2π].",
+      "cos²x + sin²x = 1 ; −1 ≤ cos x ≤ 1 ; −1 ≤ sin x ≤ 1 ; tan x = sin x/cos x.",
+      "Angles associés : −x, π − x, π + x, π/2 − x, π/2 + x.",
+      "sin x = sin α ⇔ x = α + 2kπ ou π − α + 2kπ ; cos x = cos α ⇔ x = ±α + 2kπ ; tan x = tan α ⇔ x = α + kπ."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Calculer cos(5π/6) et sin(5π/6).",
+      "→ Réponse : 5π/6 = π − π/6 : cos(5π/6) = −cos(π/6) = −√3/2 et sin(5π/6) = sin(π/6) = 1/2.",
+      "Exemple 2 : Résoudre dans ℝ : sin x = √2/2.",
+      "→ Réponse : √2/2 = sin(π/4) : x = π/4 + 2kπ ou x = π − π/4 + 2kπ = 3π/4 + 2kπ (k ∈ ℤ).",
+      "Exemple 3 : Résoudre dans ℝ : tan x = √3.",
+      "→ Réponse : √3 = tan(π/3) : x = π/3 + kπ (k ∈ ℤ)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Donner la mesure principale de l’angle orienté de mesure 25π/2.",
+      "→ Solution : 25π/2 = 24π/2 + π/2 = 12π + π/2 = 6 × 2π + π/2 : la mesure principale est π/2."
      ]
     }
    ],
@@ -1585,6 +1891,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je trace au tableau la courbe d’une fonction et je pose trois questions : « Quelle est l’image de 2 ? Pour quelles valeurs la fonction vaut-elle 0 ? Où monte-t-elle ? » Puis j’annonce qu’on va apprendre à répondre à ces questions aussi par le calcul."
+     ]
+    },
+    {
      "h": "I. Notion de fonction",
      "lines": [
       "Une fonction f de D vers ℝ associe à tout x de D un réel unique f(x) : f : x ↦ f(x).",
@@ -1645,6 +1957,34 @@
       "f admet un maximum M en a sur I si f(x) ≤ f(a) = M pour tout x ∈ I ; un minimum m en a si f(x) ≥ f(a) = m.",
       "Maximum (minimum) relatif ou local : vérifié seulement sur un intervalle ouvert contenant a.",
       "Lecture graphique : les solutions de f(x) = k sont les abscisses des points d’intersection de Cf et de la droite y = k ; celles de f(x) < g(x) sont les abscisses des points de Cf situés au-dessous de Cg."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Df : on exclut les valeurs qui annulent un dénominateur ; sous une racine, l’expression doit être positive ou nulle.",
+      "Paire : f(−x) = f(x), symétrie par rapport à (Oy) ; impaire : f(−x) = −f(x), symétrie par rapport à O.",
+      "Centre A(a ; b) : f(2a − x) + f(x) = 2b ; axe x = a : f(2a − x) = f(x).",
+      "Périodique de période T : f(x + T) = f(x) ; on étudie sur un intervalle de longueur T.",
+      "Taux d’accroissement (f(x₂) − f(x₁))/(x₂ − x₁) > 0 sur I ⇔ f strictement croissante sur I ; < 0 ⇔ strictement décroissante."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Étudier la parité de f(x) = x³ − 2x définie sur ℝ.",
+      "→ Réponse : Pour tout x réel, −x ∈ ℝ et f(−x) = −x³ + 2x = −(x³ − 2x) = −f(x) : f est impaire, sa courbe est symétrique par rapport à l’origine.",
+      "Exemple 2 : Soit f(x) = x² − 4x + 1. Montrer que la droite d’équation x = 2 est un axe de symétrie de Cf.",
+      "→ Réponse : f(4 − x) = (4 − x)² − 4(4 − x) + 1 = 16 − 8x + x² − 16 + 4x + 1 = x² − 4x + 1 = f(x) : la droite x = 2 est un axe de symétrie.",
+      "Exemple 3 : Montrer que f(x) = 2x + 3 est strictement croissante sur ℝ à l’aide du taux d’accroissement.",
+      "→ Réponse : Pour x₁ ≠ x₂ : (f(x₂) − f(x₁))/(x₂ − x₁) = 2(x₂ − x₁)/(x₂ − x₁) = 2 > 0, donc f est strictement croissante sur ℝ."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Déterminer l’ensemble de définition de f(x) = (−5x² + 4x + 1)/(x(x − 3)(x + 2)).",
+      "→ Solution : Le dénominateur s’annule pour x = 0, x = 3 et x = −2 : Df = ℝ ∖ {−2 ; 0 ; 3}."
      ]
     }
    ],
@@ -1735,6 +2075,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Je demande aux élèves de compléter un tableau de valeurs de x², x³, √x et 1/x pour x = 0,5 ; 1 ; 2 ; 4, puis de deviner l’allure de chaque courbe. Nous les comparons ensuite avec les courbes du livre."
+     ]
+    },
     {
      "h": "Plan d’étude d’une fonction",
      "lines": [
@@ -1832,6 +2178,34 @@
       ],
       "caption": "Courbe de la fonction sinus"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Plan d’étude : Df, domaine d’étude, variations, représentation graphique.",
+      "x² : paire, décroissante sur ]−∞ ; 0], croissante sur [0 ; +∞[ ; parabole de sommet O.",
+      "x³ : impaire, croissante sur ℝ ; √x : définie et croissante sur [0 ; +∞[.",
+      "1/x : définie sur ℝ*, impaire, décroissante sur ]−∞ ; 0[ et sur ]0 ; +∞[ ; hyperbole de centre O.",
+      "sin (impaire) et cos (paire) : période 2π, valeurs entre −1 et 1."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Comparer sans calculatrice (1,7)² et (1,72)², puis √0,5 et √0,6.",
+      "→ Réponse : x ↦ x² est croissante sur [0 ; +∞[ et 1,7 < 1,72, donc (1,7)² < (1,72)² ; x ↦ √x est croissante et 0,5 < 0,6, donc √0,5 < √0,6.",
+      "Exemple 2 : Résoudre graphiquement puis par le calcul : x² ≤ 4.",
+      "→ Réponse : La parabole y = x² est au-dessous de la droite y = 4 pour −2 ≤ x ≤ 2 : S = [−2 ; 2].",
+      "Exemple 3 : Sur quel intervalle de longueur suffit-il d’étudier la fonction sin ? Pourquoi ?",
+      "→ Réponse : sin est périodique de période 2π et impaire : on l’étudie sur [0 ; π], on complète sur [−π ; 0] par symétrie par rapport à O, puis par translations de vecteur 2kπ i→."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Étudier les variations de f(x) = 1/x sur ]0 ; +∞[.",
+      "→ Solution : Pour 0 < x₁ < x₂ : f(x₂) − f(x₁) = 1/x₂ − 1/x₁ = (x₁ − x₂)/(x₁x₂) < 0, car x₁ − x₂ < 0 et x₁x₂ > 0 : f est strictement décroissante sur ]0 ; +∞[."
+     ]
     }
    ],
    "series": [
@@ -1933,6 +2307,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je dessine deux vecteurs AB→ et AC→ et je projette C sur (AB) en C′. Je demande : « Que vaut AB × AC′ comparé à AB × AC × cos A ? » Après le calcul, les élèves voient que c’est le même nombre : c’est le produit scalaire."
+     ]
+    },
+    {
      "h": "I. Définitions du produit scalaire",
      "lines": [
       "u→·v→ = 0 si u→ = 0→ ou v→ = 0→ ; sinon u→·v→ = ‖u→‖ × ‖v→‖ × cos(u→ ; v→).",
@@ -2002,6 +2382,34 @@
       ],
       "caption": "Triangle rectangle et hauteur [AH]"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "u→·v→ = ‖u→‖ ‖v→‖ cos(u→ ; v→) ; AB→·AC→ = AB × AC × cos A.",
+      "Projection : AB→·AC→ = AB→·AC′→ (C′ projeté orthogonal de C sur (AB)).",
+      "u→ ⊥ v→ ⇔ u→·v→ = 0 ; u→² = ‖u→‖².",
+      "Base orthonormée : u→·v→ = xx′ + yy′ ; ‖u→‖ = √(x² + y²).",
+      "Médiane : MA² + MB² = 2MI² + AB²/2 ; triangle rectangle : AB² = BH × BC ; AH² = HB × HC."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Calculer u→·v→ pour u→(3,6 ; −4,8) et v→(−6,4 ; −4,5) dans une base orthonormée.",
+      "→ Réponse : u→·v→ = 3,6 × (−6,4) + (−4,8)(−4,5) = −23,04 + 21,6 = −1,44.",
+      "Exemple 2 : ABC est un triangle avec AB = 4, AC = 3, BC = 2 et I le milieu de [AB]. Calculer CI.",
+      "→ Réponse : CA² + CB² = 2CI² + AB²/2 ⇒ 9 + 4 = 2CI² + 8 ⇒ CI² = 5/2 ⇒ CI = √(5/2).",
+      "Exemple 3 : ABC est rectangle en A avec AB = 6 cm, AC = 8 cm et H le projeté orthogonal de A sur (BC). Calculer BC, BH et AH.",
+      "→ Réponse : BC = √(36 + 64) = 10 cm ; AB² = BH × BC ⇒ BH = 36/10 = 3,6 cm ; CH = 10 − 3,6 = 6,4 cm ; AH² = BH × CH = 23,04 ⇒ AH = 4,8 cm."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "‖u→‖ = 5, ‖v→‖ = 4 et u→·v→ = −6. Calculer (u→ + v→)·(3u→ − v→) puis cos(u→ ; v→).",
+      "→ Solution : (u→ + v→)·(3u→ − v→) = 3‖u→‖² − u→·v→ + 3u→·v→ − ‖v→‖² = 75 + 2×(−6) − 16 = 47. cos(u→ ; v→) = u→·v→/(‖u→‖‖v→‖) = −6/20 = −3/10."
+     ]
     }
    ],
    "series": [
@@ -2099,6 +2507,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je fais glisser une équerre sur le tableau sans la tourner, puis je la fais tourner autour d’un point, puis je l’agrandis par projection. Je demande ce qui change et ce qui reste pareil dans chaque cas : c’est l’idée des transformations."
+     ]
+    },
+    {
      "h": "Transformations du plan",
      "lines": [
       "Une transformation du plan est une bijection du plan dans lui-même : translation, homothétie, symétrie centrale, symétrie axiale, rotation."
@@ -2190,6 +2604,34 @@
       "Ω est sur la médiatrice de [MM′] ; la réciproque de R(Ω ; α) est R(Ω ; −α).",
       "La rotation conserve la distance (isométrie) et la mesure des angles orientés.",
       "R(Ω ; π/2) : quart de tour direct ; R(Ω ; π) = S_Ω ; R(Ω ; 0) : identité."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Translation t_u : MM′→ = u→ ; x′ = x + a, y′ = y + b ; t_u ∘ t_v = t_(u+v).",
+      "Homothétie h(Ω ; k) : ΩM′→ = kΩM→ ; M′N′→ = kMN→ ; les longueurs sont multipliées par |k|.",
+      "Symétrie centrale S_I = h(I ; −1) ; S_J ∘ S_I = t_(2IJ).",
+      "Réflexion S_Δ : Δ médiatrice de [MM′] ; deux réflexions d’axes parallèles → translation ; d’axes sécants → rotation.",
+      "Rotation R(Ω ; α) : ΩM′ = ΩM et (ΩM→ ; ΩM′→) = α ; R(Ω ; π) = S_Ω."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Donner l’expression analytique de l’homothétie de centre Ω(−2 ; 4) et de rapport k = 5/4.",
+      "→ Réponse : x′ = (5/4)x + (1 − 5/4)(−2) = (5/4)x + 1/2 ; y′ = (5/4)y + (1 − 5/4) × 4 = (5/4)y − 1.",
+      "Exemple 2 : La symétrie centrale de centre I(4 ; −7) transforme M(x ; y) en M′. Exprimer x′ et y′.",
+      "→ Réponse : I est le milieu de [MM′] : x′ = 2 × 4 − x = 8 − x ; y′ = 2 × (−7) − y = −14 − y.",
+      "Exemple 3 : I et J sont deux points distincts. Quelle est la transformation S_J ∘ S_I ?",
+      "→ Réponse : Si M′ = S_I(M) et M″ = S_J(M′), alors MM″→ = 2IJ→ : S_J ∘ S_I est la translation de vecteur 2IJ→."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Dans un repère, on considère la translation de vecteur u→(2 ; −9). Donner son expression analytique et l’image de A(4 ; 6).",
+      "→ Solution : x′ = x + 2 et y′ = y − 9 ; A′ a pour coordonnées (4 + 2 ; 6 − 9) = (6 ; −3)."
      ]
     }
    ],
@@ -2294,6 +2736,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je demande : « Combien de diviseurs a 120 ? » Les élèves les cherchent un par un et en oublient. Je leur annonce qu’à la fin de la leçon, ils sauront les compter sans les écrire, grâce à la décomposition en facteurs premiers."
+     ]
+    },
+    {
      "h": "I. Diviseurs et multiples",
      "lines": [
       "a et b entiers naturels, b ≠ 0 : b divise a s’il existe un entier naturel k tel que a = k × b ; a est un multiple de b et b est un diviseur de a.",
@@ -2353,6 +2801,34 @@
       "PGCD : produit des facteurs premiers communs, chacun avec le plus petit exposant.",
       "PPCM : produit de tous les facteurs premiers, chacun avec le plus grand exposant.",
       "a et b premiers entre eux ⇔ PGCD(a ; b) = 1 ; PGCD(a ; b) × PPCM(a ; b) = a × b."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "b divise a ⇔ a = k × b ; somme et différence de multiples de c sont des multiples de c.",
+      "Division euclidienne : a = bq + r avec 0 ≤ r < b (q et r uniques).",
+      "Nombre premier : exactement deux diviseurs, 1 et lui-même ; 0 et 1 ne sont pas premiers.",
+      "n = p₁^α₁ × … × p_k^α_k : nombre de diviseurs (α₁ + 1) × … × (α_k + 1).",
+      "PGCD : facteurs communs au plus petit exposant ; PPCM : tous les facteurs au plus grand exposant ; a et b premiers entre eux ⇔ PGCD(a ; b) = 1."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Effectuer la division euclidienne de 356 par 15.",
+      "→ Réponse : 356 = 15 × 23 + 11 avec 0 ≤ 11 < 15 : le quotient est 23 et le reste 11.",
+      "Exemple 2 : Calculer PGCD(84 ; 630) et PPCM(84 ; 630).",
+      "→ Réponse : 84 = 2² × 3 × 7 et 630 = 2 × 3² × 5 × 7 : PGCD = 2 × 3 × 7 = 42 ; PPCM = 2² × 3² × 5 × 7 = 1 260.",
+      "Exemple 3 : 21 et 32 sont-ils premiers entre eux ? Même question pour 21 et 35.",
+      "→ Réponse : Diviseurs de 21 : 1, 3, 7, 21 ; de 32 : 1, 2, 4, 8, 16, 32 : seul 1 est commun, ils sont premiers entre eux. 21 et 35 ont 7 comme diviseur commun : ils ne le sont pas."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Décomposer 120 en produit de facteurs premiers et donner le nombre de ses diviseurs.",
+      "→ Solution : 120 = 2 × 60 = 2 × 2 × 30 = 2 × 2 × 2 × 15 = 2³ × 3 × 5. Nombre de diviseurs : (3 + 1)(1 + 1)(1 + 1) = 16."
      ]
     }
    ],
@@ -2451,6 +2927,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je montre une boîte en forme de cube et je demande : « Deux arêtes qui ne se coupent pas sont-elles toujours parallèles ? » Les élèves trouvent des arêtes ni sécantes ni parallèles : dans l’espace, il existe des droites non coplanaires."
+     ]
+    },
+    {
      "h": "I. Droites et plans de l’espace",
      "lines": [
       "Une droite est déterminée par : un point et un vecteur directeur ; deux points ; un système de deux équations de plans.",
@@ -2511,6 +2993,34 @@
       ],
       "caption": "Cube ABCDEFGH"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Plan déterminé par : 3 points non alignés ; 2 droites parallèles ou sécantes ; une droite et un point extérieur.",
+      "Deux droites : coplanaires (parallèles ou sécantes) ou non coplanaires.",
+      "Un plan coupe deux plans parallèles suivant deux droites parallèles.",
+      "Théorème du toit : deux plans sécants contenant deux droites parallèles se coupent suivant une parallèle à ces droites.",
+      "(d) ⊥ plan P ⇔ (d) orthogonale à deux droites sécantes de P ; plan médiateur de [AB] : points équidistants de A et B."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Dans le cube ABCDEFGH, les plans (ABCD) et (EFGH) sont parallèles. Le plan (ACGE) les coupe : que peut-on dire des intersections ?",
+      "→ Réponse : Un plan coupe deux plans parallèles suivant deux droites parallèles : (AC) // (EG).",
+      "Exemple 2 : ABCD est un tétraèdre régulier et I le milieu de [CD]. Montrer que le plan (ABI) est le plan médiateur de [CD].",
+      "→ Réponse : AC = AD et BC = BD, donc A et B sont équidistants de C et D ; I aussi : A, B, I appartiennent au plan médiateur de [CD], qui est donc le plan (ABI).",
+      "Exemple 3 : Deux plans P et Q sont sécants suivant (Δ) ; (d₁) ⊂ P et (d₂) ⊂ Q sont parallèles. Que dire de (Δ) ?",
+      "→ Réponse : D’après le théorème du toit, (Δ) est parallèle à (d₁) et à (d₂)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "ABCDEFGH est un cube. Citer les arêtes parallèles à (AB), celles qui coupent (AB) et celles qui ne sont pas coplanaires avec (AB).",
+      "→ Solution : Parallèles : (DC), (EF), (HG). Sécantes : (AD), (AE), (BC), (BF). Non coplanaires : (CG), (DH), (EH), (FG)."
+     ]
     }
    ],
    "series": [
@@ -2607,6 +3117,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je dessine deux ensembles d’élèves et de tables avec des flèches et je demande : « Chaque élève a-t-il une table ? Chaque table est-elle occupée ? Deux élèves partagent-ils une table ? » Ces trois questions correspondent aux trois notions de la leçon."
+     ]
+    },
+    {
      "h": "I. Définition et vocabulaire",
      "lines": [
       "Une application est une correspondance entre un ensemble de départ E et un ensemble d’arrivée F qui à tout élément de E associe un unique élément de F.",
@@ -2667,6 +3183,34 @@
       "Exemple : f(x) = √(x + 1) et g(x) = 1/(x² + 1) : f ∘ g(x) = √((x² + 2)/(x² + 1)) et g ∘ f(x) = 1/(x + 2).",
       "f ∘ (g ∘ h) = (f ∘ g) ∘ h ; en général f ∘ g ≠ g ∘ f.",
       "La composée d’une bijection et de sa réciproque est l’identité : f ∘ f⁻¹ = Id_F et f⁻¹ ∘ f = Id_E."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Application : tout élément de E a une et une seule image dans F.",
+      "Fonction : au plus une image ; c’est une application lorsque Df = E.",
+      "Surjective : tout y de F a au moins un antécédent ; injective : au plus un antécédent (f(x) = f(y) ⇒ x = y).",
+      "Bijective : exactement un antécédent ; elle admet une réciproque f⁻¹ : f⁻¹(y) = x ⇔ f(x) = y.",
+      "En changeant l’ensemble de départ ou d’arrivée, on peut rendre une application injective ou surjective (x ↦ x² de ℝ⁺ vers ℝ⁺ est bijective)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : f : ℝ → ℝ, x ↦ 3x + 2. Donner l’image de −2 et l’antécédent de −7.",
+      "→ Réponse : f(−2) = −6 + 2 = −4 ; 3x + 2 = −7 ⇔ x = −3 : l’antécédent de −7 est −3.",
+      "Exemple 2 : f(x) = 1/(x − 2) définit-elle une application de ℝ vers ℝ ?",
+      "→ Réponse : Non : 2 n’a pas d’image car x − 2 = 0. Sa restriction g : ℝ ∖ {2} → ℝ, x ↦ 1/(x − 2), est une application.",
+      "Exemple 3 : f : E → F est bijective et f(4) = 3. Que vaut f⁻¹(3) ?",
+      "→ Réponse : f⁻¹(3) = 4, car f⁻¹(y) = x ⇔ f(x) = y."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "f : ℝ → ℝ, x ↦ x². f est-elle surjective ? injective ? Et f : ℝ⁺ → ℝ⁺, x ↦ x² ?",
+      "→ Solution : De ℝ vers ℝ : −1 n’a pas d’antécédent (pas surjective) et f(−2) = f(2) = 4 (pas injective). De ℝ⁺ vers ℝ⁺ : tout y ≥ 0 a un seul antécédent √y, donc f est bijective."
      ]
     }
    ],
@@ -2759,6 +3303,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Je demande : « De combien de façons peut-on ranger 5 voitures dans 5 garages ? » puis « et si on choisit seulement 3 élèves parmi 29 pour une commission ? » Les élèves essaient de compter un par un et voient qu’il faut des formules."
+     ]
+    },
+    {
      "h": "I. Langage des ensembles",
      "lines": [
       "Le cardinal d’un ensemble fini E, noté card(E), est le nombre de ses éléments ; card(∅) = 0.",
@@ -2819,6 +3369,34 @@
       "(a − b)ⁿ = Σₖ₌₀ⁿ (−1)ᵏ Cₙᵏ aⁿ⁻ᵏ bᵏ.",
       "Triangle de Pascal : chaque nombre est la somme des deux nombres situés au-dessus (Cₙᵖ + Cₙᵖ⁺¹ = Cₙ₊₁ᵖ⁺¹).",
       "Ligne 4 : 1 4 6 4 1 ; ligne 5 : 1 5 10 10 5 1."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "card(A ∪ B) = card(A) + card(B) − card(A ∩ B) ; card(A × B) = card(A) × card(B).",
+      "Successif avec remise : nᵖ ; successif sans remise : Aₙᵖ = n!/(n − p)! (p ≤ n) ; simultané : Cₙᵖ = n!/(p!(n − p)!).",
+      "Permutations : n! = n × (n − 1) × … × 2 × 1 ; 0! = 1.",
+      "Cₙᵖ = Cₙⁿ⁻ᵖ ; Cₙᵖ + Cₙᵖ⁺¹ = Cₙ₊₁ᵖ⁺¹ ; nombre de parties : 2ⁿ.",
+      "(a + b)ⁿ = Σₖ₌₀ⁿ Cₙᵏ aⁿ⁻ᵏ bᵏ ; coefficients lus dans le triangle de Pascal."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : De combien de façons peut-on garer 5 voitures numérotées dans 5 garages numérotés (une voiture par garage) ?",
+      "→ Réponse : C’est une permutation de 5 éléments : 5! = 120.",
+      "Exemple 2 : On tire successivement et sans remise 4 cartes d’un jeu de 32. Combien de tirages possibles ?",
+      "→ Réponse : A₃₂⁴ = 32 × 31 × 30 × 29 = 863 040.",
+      "Exemple 3 : Développer (a + b)⁴ à l’aide du triangle de Pascal.",
+      "→ Réponse : Les coefficients sont 1, 4, 6, 4, 1 : (a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une classe de 29 élèves (dont 22 garçons et 7 filles) choisit une commission de 3 membres. Combien de commissions possibles ? Combien comportent exactement 2 garçons ?",
+      "→ Solution : C₂₉³ = 29!/(3! × 26!) = (29 × 28 × 27)/6 = 3 654. Avec exactement 2 garçons : C₂₂² × C₇¹ = 231 × 7 = 1 617."
      ]
     }
    ],
@@ -2917,6 +3495,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "J’écris au tableau les notes d’un devoir de la classe (sans les noms) et je demande : « La classe a-t-elle bien réussi ? » Les élèves proposent la moyenne, la meilleure note, la note la plus fréquente… Chaque réponse correspond à un outil que nous allons définir."
+     ]
+    },
+    {
      "h": "I. Le langage statistique",
      "lines": [
       "Population : ensemble étudié ; ses éléments sont les individus. Échantillon : partie de la population.",
@@ -2969,6 +3553,34 @@
       ],
       "caption": "Histogramme des tailles"
      }
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Fréquence fᵢ = nᵢ/N ; pourcentage p = 100 × fᵢ ; somme des fréquences = 1.",
+      "Étendue = plus grande valeur − plus petite ; mode : valeur (ou classe) de plus grand effectif.",
+      "Médiane : rang (N + 1)/2 si N impair ; moyenne des rangs N/2 et N/2 + 1 si N pair.",
+      "Moyenne x̄ = Σ nᵢxᵢ/N = Σ fᵢxᵢ (centres des classes pour un caractère continu).",
+      "Variance V = Σ nᵢ(xᵢ − x̄)²/N ; écart type σ = √V."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Série : 2 ; 3 ; 5 ; 10 ; 12 ; 19 ; 20. Donner l’étendue et la médiane.",
+      "→ Réponse : Étendue = 20 − 2 = 18. N = 7 impair : la médiane est la 4ᵉ valeur, 10.",
+      "Exemple 2 : Poids (kg) de 60 personnes : ]40 ; 45] : 6 ; ]45 ; 50] : 10 ; ]50 ; 55] : 12 ; ]55 ; 60] : 19 ; ]60 ; 65] : 9 ; ]65 ; 70] : 4. Donner l’étendue et la classe modale.",
+      "→ Réponse : Étendue = 70 − 40 = 30 kg ; la classe modale est ]55 ; 60] (effectif 19).",
+      "Exemple 3 : Série : 4 ; 6 ; 8 (effectifs 1 chacun). Calculer la variance et l’écart type.",
+      "→ Réponse : x̄ = 6 ; V = ((4 − 6)² + 0 + (8 − 6)²)/3 = 8/3 ; σ = √(8/3) ≈ 1,63."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Notes sur 10 de 36 élèves : 3 (1), 4 (4), 5 (8), 6 (9), 7 (7), 8 (5), 9 (2). Calculer la moyenne et la médiane.",
+      "→ Solution : x̄ = (3 + 16 + 40 + 54 + 49 + 40 + 18)/36 = 220/36 ≈ 6,1. N = 36 est pair : la médiane est la moyenne des 18ᵉ et 19ᵉ valeurs ; les effectifs cumulés sont 1, 5, 13, 22… donc ces deux valeurs valent 6 et la médiane est 6."
+     ]
     }
    ],
    "series": [

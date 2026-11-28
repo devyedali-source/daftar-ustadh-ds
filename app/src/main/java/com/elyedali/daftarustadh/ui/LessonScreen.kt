@@ -76,9 +76,11 @@ fun LessonDialog(
     bookTitle: String,
     /** رمز المادة: الإنجليزية (ANG) تُعرض عناوينها بالإنجليزية، ومواد الفرنسية بالفرنسية. */
     subjectCode: String? = null,
+    /** الصفحة التي يُفتح عليها الدرس: 0 التحضير، 1 الكتاب، 2 السبورة، 3 سلسلة التمارين. */
+    initialView: Int = 0,
     onDismiss: () -> Unit
 ) {
-    var view by rememberSaveable { mutableStateOf(0) }   // 0 التحضير، 1 الكتاب، 2 السبورة
+    var view by rememberSaveable { mutableStateOf(if (initialView == 3 && lesson.series.isEmpty()) 0 else initialView) }   // 0 التحضير، 1 الكتاب، 2 السبورة، 3 السلسلة
     // دروس الفرنسية والإنجليزية: كل العناوين بلغة الدرس (قد لا يفهم الأستاذ العربية)، والصفحة من اليسار إلى اليمين
     val labels = lessonLabels(lesson, subjectCode)
     val ltr = labels != null

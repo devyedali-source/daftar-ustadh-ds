@@ -41,6 +41,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Le propène hydraté donne-t-il un seul alcool ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un monoalcool saturé non cyclique a pour formule brute CnH2n+2O (CnH2n+1OH) ; le groupe hydroxyle –OH est porté par un carbone tétragonal (carbone fonctionnel).",
+      "Le nom dérive de l’alcane correspondant : terminaison « -i-ol », i étant le numéro du carbone fonctionnel (le plus petit possible).",
+      "Alcool primaire : R–CH2–OH (carbone fonctionnel lié à au plus un carbone) ; secondaire : R1–CH(OH)–R2 ; tertiaire : R1R2R3C–OH (R groupes alkyles).",
+      "On obtient des alcools par hydratation des alcènes en milieu acide : R–CH=CH2 + H2O → R–CH(OH)–CH3 (majoritaire) et R–CH2–CH2OH.",
+      "Règle de Markovnikov : lors de l’addition d’un hydracide (ou de l’eau) sur un alcène dissymétrique, l’atome d’hydrogène se fixe sur le carbone le moins substitué (le plus hydrogéné)."
+     ]
+    },
+    {
      "h": "Classes d’alcools",
      "lines": [],
      "table": [
@@ -70,6 +86,32 @@
      "h": "Correction",
      "lines": [
       "(Correction : p. 34, la formule R1R2R3C–OH est celle des alcools tertiaires, et non « secondaires ».)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "CnH2n+2O ; groupe –OH.",
+      "Nom : alcane → « -i-ol ».",
+      "Primaire, secondaire, tertiaire.",
+      "Hydratation des alcènes (H⁺).",
+      "Markovnikov : H sur le carbone le plus hydrogéné."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Nom et classe de CH3–CH(OH)–CH2–CH3 ?",
+      "→ Réponse : Butan-2-ol, secondaire.",
+      "Exemple 2 : Formule brute d’un monoalcool saturé à 4 carbones ?",
+      "→ Réponse : C4H10O."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Hydratation du propène : produits ?",
+      "→ Solution : Propan-2-ol (majoritaire, Markovnikov) et propan-1-ol (minoritaire)."
      ]
     }
    ],
@@ -115,6 +157,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment distinguer au laboratoire un alcool primaire d’un alcool secondaire ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Oxydation complète (combustion) : CnH2n+1OH + (3n/2) O2 → n CO2 + (n + 1) H2O.",
+      "Une oxydation est ménagée lorsqu’elle ne modifie pas le squelette carboné : elle modifie seulement la fonction.",
+      "Avec le dichromate de potassium (Cr2O7²⁻/Cr³⁺, orange → vert) ou le permanganate (MnO4⁻/Mn²⁺) en milieu acide : un alcool primaire donne un aldéhyde, puis un acide carboxylique (oxydant en excès) ; un alcool secondaire donne une cétone, qui ne s’oxyde pas ; un alcool tertiaire ne s’oxyde pas.",
+      "Aldéhydes et cétones donnent un précipité jaune avec la DNPH ; seuls les aldéhydes réduisent la liqueur de Fehling (précipité rouge brique) et rosissent le réactif de Schiff.",
+      "La déshydratation intramoléculaire d’un alcool conduit à un alcène ; la déshydratation intermoléculaire de deux molécules d’alcool donne un étheroxyde."
+     ]
+    },
+    {
      "h": "Tests caractéristiques",
      "lines": [],
      "table": [
@@ -151,6 +209,32 @@
      "h": "Correction",
      "lines": [
       "(Correction : p. 34, l’oxydation ménagée d’un aldéhyde le transforme en acide carboxylique.)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Combustion : CO2 + H2O.",
+      "Ménagée : squelette conservé.",
+      "I → aldéhyde → acide ; II → cétone ; III : rien.",
+      "DNPH : aldéhydes et cétones ; Fehling : aldéhydes.",
+      "Déshydratation : alcène ou étheroxyde."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combustion de l’éthanol ?",
+      "→ Réponse : C2H5OH + 3O2 → 2CO2 + 3H2O.",
+      "Exemple 2 : Que donne l’oxydation ménagée du propan-2-ol ?",
+      "→ Réponse : La propanone (cétone)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un composé C5H10O donne un test positif à la DNPH et négatif à la liqueur de Fehling. Fonction ?",
+      "→ Solution : C’est une cétone ; il provient de l’oxydation d’un alcool secondaire."
      ]
     }
    ],
@@ -239,11 +323,54 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi remplace-t-on souvent l’acide par un chlorure d’acyle pour fabriquer un ester ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les dérivés des acides carboxyliques R–COOH s’obtiennent en remplaçant le groupe –OH.",
+      "Chlorure d’acyle R–COCl (formule brute CnH2n−1OCl) : on remplace « acide … -oïque » par « chlorure de … -oyle » (chlorure d’éthanoyle).",
+      "Obtention : action du chlorure de thionyle R–COOH + SOCl2 → R–COCl + HCl + SO2, ou du pentachlorure de phosphore R–COOH + PCl5 → R–COCl + POCl3 + HCl.",
+      "Anhydride d’acide (R–CO)2O (CnH2n−2O3) : pour un anhydride symétrique, le mot « acide » est remplacé par « anhydride » (anhydride éthanoïque) ; pour un anhydride mixte : « anhydride alcanoïque alcanoïque » dans l’ordre alphabétique.",
+      "Obtention : déshydratation intermoléculaire de deux molécules d’acide par un déshydratant fort (P4O10) et chauffage.",
+      "Ces dérivés sont plus réactifs que l’acide."
+     ]
+    },
+    {
      "h": "Obtention",
      "lines": [
       "R–COOH + SOCl2 → R–COCl + HCl + SO2.",
       "R–COOH + PCl5 → R–COCl + POCl3 + HCl.",
       "2 R–COOH → (R–CO)2O + H2O (déshydratant fort)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Chlorure d’acyle R–COCl.",
+      "SOCl2 ou PCl5.",
+      "Anhydride (R–CO)2O.",
+      "Déshydratation de deux acides.",
+      "Plus réactifs que l’acide."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Formule de l’anhydride éthanoïque ?",
+      "→ Réponse : (CH3–CO)2O.",
+      "Exemple 2 : Formule brute d’un chlorure d’acyle à 3 carbones ?",
+      "→ Réponse : C3H5OCl."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Nom de CH3–COCl ?",
+      "→ Solution : Chlorure d’éthanoyle."
      ]
     }
    ],
@@ -289,6 +416,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment obtenir un meilleur rendement en ester ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Estérification : R–COOH + R’–OH ⇌ R–COO–R’ + H2O ; elle est lente, limitée et athermique ; son inverse est l’hydrolyse de l’ester.",
+      "Les deux aboutissent au même équilibre de constante K = [ester][eau]/([acide][alcool]) (K ≈ 4 pour un alcool primaire avec un mélange équimolaire, rendement 67 %).",
+      "Rendement : r = n(ester)éq / n°(réactif limitant).",
+      "Pour améliorer le rendement : introduire l’un des réactifs en excès, extraire l’ester ou l’eau au fur et à mesure, ou remplacer l’acide par un chlorure d’acyle ou un anhydride (réaction rapide et totale).",
+      "Saponification : action d’une base forte sur un ester : R–COO–R’ + OH⁻ → R–COO⁻ + R’–OH, réaction lente et totale ; avec les corps gras, elle donne le savon et le glycérol."
+     ]
+    },
+    {
      "h": "Comparaison",
      "lines": [],
      "table": [
@@ -318,6 +461,32 @@
      "h": "Correction",
      "lines": [
       "(Correction : p. 51, exercice 1, CH3–COO–CH(CH3)–CH3 est l’éthanoate de 1-méthyléthyle (isopropyle), et non l’éthanoate de méthyle ; sa masse molaire est bien 102 g/mol.)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Estérification : lente, limitée, athermique.",
+      "K = [ester][eau]/([acide][alcool]).",
+      "r = n(ester)éq/n°(limitant).",
+      "Excès d’un réactif ou élimination d’un produit.",
+      "Saponification : totale ; savon."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Nom de l’ester CH3–COO–CH2–CH3 ?",
+      "→ Réponse : Éthanoate d’éthyle.",
+      "Exemple 2 : Pourquoi la saponification est-elle totale ?",
+      "→ Réponse : L’ion carboxylate formé ne réagit pas avec l’alcool : la réaction inverse n’a pas lieu."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1 mol d’acide éthanoïque + 1 mol d’éthanol, K = 4 : composition à l’équilibre ?",
+      "→ Solution : x²/(1 − x)² = 4 ⇒ x = 2/3 mol d’ester et d’eau ; 1/3 mol d’acide et d’alcool ; r ≈ 67 %."
      ]
     }
    ],
@@ -400,6 +569,20 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment fabriquer le propanamide à partir du propan-1-ol ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les amides ont pour formule générale R–CO–NR1R2 (formule brute CnH2n+1ON pour les amides saturés) : non substitués R–CO–NH2, monosubstitués R–CO–NH–R1 (N-substitués), disubstitués R–CO–NR1R2 (N,N-disubstitués).",
+      "Nom : on remplace la terminaison « -oïque » de l’acide par « -amide » et on enlève le mot acide (éthanamide) ; les groupes portés par l’azote sont précédés de N et cités dans l’ordre alphabétique (N-méthylpropanamide).",
+      "Obtention : à partir d’un acide et d’une amine, on obtient d’abord un sel (carboxylate d’alkylammonium) qui, chauffé, se déshydrate en amide ; avec un chlorure d’acyle : R–COCl + 2 R’–NH–R’’ → R–CO–NR’R’’ + chlorure d’alkylammonium (il faut deux molécules d’amine) ; avec un anhydride : (R–CO)2O + R’–NH2 → R–CO–NH–R’ + R–COOH."
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [],
      "table": [
@@ -419,6 +602,32 @@
        "CH3–CO–N(CH3)2",
        "N,N-diméthyléthanamide"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "R–CO–NH2, R–CO–NHR1, R–CO–NR1R2.",
+      "Nom : « -amide » ; préfixe N-.",
+      "Acide + amine → sel → amide (chauffage).",
+      "Chlorure d’acyle + 2 amines.",
+      "Anhydride + amine → amide + acide."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que donne CH3–COCl + 2 NH3 ?",
+      "→ Réponse : CH3–CO–NH2 + NH4Cl.",
+      "Exemple 2 : Classe de l’amide CH3–CO–NH–C2H5 ?",
+      "→ Réponse : Amide N-substitué (N-éthyléthanamide)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Synthèse du propanamide à partir du propan-1-ol ?",
+      "→ Solution : Oxydation ménagée → acide propanoïque ; + NH3 → propanoate d’ammonium ; chauffage (déshydratation) → propanamide CH3–CH2–CO–NH2."
      ]
     }
    ],
@@ -496,6 +705,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment savoir quelle quantité de produit on obtiendra ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un système chimique est l’ensemble des espèces présentes lors de la transformation.",
+      "Une réaction est rapide si l’évolution semble instantanée, lente si on peut suivre son évolution.",
+      "Une réaction totale fait disparaître au moins un réactif ; une réaction réversible conduit à un équilibre chimique.",
+      "L’avancement x mesure combien de fois la réaction s’est produite : pour aA + bB → cC + dD, n(A) = n°(A) − ax, n(B) = n°(B) − bx, n(C) = cx, n(D) = dx.",
+      "Le réactif limitant est celui qui disparaît totalement ; l’avancement maximal xmax correspond à sa disparition ; l’avancement final xf est celui mesuré quand le système n’évolue plus (xf = xmax pour une réaction totale, xf < xmax pour une réaction limitée)."
+     ]
+    },
+    {
      "h": "Tableau d’avancement",
      "lines": [],
      "table": [
@@ -533,6 +758,32 @@
      "h": "Dosage du diiode formé (trempe)",
      "lines": [
       "I2 + 2S2O3²⁻ → 2I⁻ + S4O6²⁻ ; à l’équivalence n(I2) = n(S2O3²⁻)/2 = x."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Rapide / lente ; totale / réversible.",
+      "n(A) = n°(A) − ax ; n(C) = cx.",
+      "Réactif limitant.",
+      "xmax ; xf.",
+      "Totale : xf = xmax."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce que la trempe ?",
+      "→ Réponse : Un refroidissement brutal (eau glacée) qui bloque la réaction pour la doser.",
+      "Exemple 2 : Réaction totale : relation entre xf et xmax ?",
+      "→ Réponse : xf = xmax."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "H2O2 + 2H⁺ + 2I⁻ → 2H2O + I2 avec n°(H2O2) = 0,28 mmol, n°(I⁻) = 1,0 mmol, n°(H⁺) = 0,60 mmol : réactif limitant ?",
+      "→ Solution : xmax = min(0,28 ; 0,50 ; 0,30) = 0,28 mmol : H2O2 est limitant."
      ]
     }
    ],
@@ -610,6 +861,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment mesurer la rapidité d’une réaction à un instant donné ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Vitesse moyenne de réaction entre t1 et t2 : Vm = Δx/Δt ; de formation d’un produit : Δn(P)/Δt ; de disparition d’un réactif : −Δn(R)/Δt.",
+      "Vitesse instantanée : V = dx/dt, coefficient directeur de la tangente à la courbe x(t) ; V(P) = dn(P)/dt ; V(R) = −dn(R)/dt ; au même instant, V = V(R)/a = V(P)/c (division par les coefficients stœchiométriques).",
+      "Vitesse volumique : Vv = (1/V)·dx/dt = dy/dt avec y = x/V (mol·L⁻¹·s⁻¹).",
+      "La vitesse diminue en général au cours du temps (consommation des réactifs).",
+      "Le temps de demi-réaction t1/2 est la durée au bout de laquelle x = xf/2 (pour une réaction totale, la moitié du réactif limitant a disparu)."
+     ]
+    },
+    {
      "h": "Définitions",
      "lines": [],
      "table": [
@@ -638,6 +905,32 @@
        "Δy/Δt",
        "(1/V)dx/dt"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Vm = Δx/Δt.",
+      "V = dx/dt (pente de la tangente).",
+      "V = V(R)/a = V(P)/c.",
+      "Vv = (1/V)dx/dt.",
+      "t1/2 : x = xf/2."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Comment déterminer graphiquement t1/2 ?",
+      "→ Réponse : On lit sur la courbe x(t) l’instant où x = xf/2.",
+      "Exemple 2 : Pourquoi la vitesse diminue-t-elle au cours du temps ?",
+      "→ Réponse : Parce que les concentrations des réactifs diminuent."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "2H2O2 → 2H2O + O2 : relation entre la vitesse de disparition de H2O2 et la vitesse de réaction ?",
+      "→ Solution : V(H2O2) = 2V ; V(O2) = V."
      ]
     }
    ],
@@ -714,6 +1007,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi conserve-t-on les aliments au réfrigérateur ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les facteurs cinétiques sont les paramètres physiques ou chimiques qui influencent l’évolution d’une réaction.",
+      "Concentration : la vitesse augmente quand les concentrations des réactifs augmentent (elle est donc maximale à t = 0 et diminue ensuite).",
+      "Température : la vitesse augmente avec la température ; une diminution brutale de la température bloque la réaction : c’est la trempe.",
+      "Un catalyseur est une espèce chimique qui accélère une réaction sans apparaître dans son équation-bilan ; il ne modifie pas l’état final.",
+      "La catalyse est homogène si le catalyseur et les réactifs sont dans le même état physique (ions Fe³⁺ pour la décomposition de H2O2), hétérogène s’ils sont dans des états différents (platine), enzymatique si le catalyseur est une enzyme (catalase)."
+     ]
+    },
+    {
      "h": "Types de catalyse",
      "lines": [],
      "table": [
@@ -737,6 +1046,32 @@
        "enzyme",
        "catalase"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Concentration ↑ ⇒ vitesse ↑.",
+      "Température ↑ ⇒ vitesse ↑.",
+      "Trempe : refroidissement brutal.",
+      "Catalyseur : accélère, absent du bilan.",
+      "Homogène, hétérogène, enzymatique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Citer deux facteurs cinétiques.",
+      "→ Réponse : La température et la concentration des réactifs.",
+      "Exemple 2 : Rôle du réfrigérateur ?",
+      "→ Réponse : Abaisser la température ralentit les réactions de dégradation."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "On ajoute un catalyseur à la décomposition de H2O2 : la quantité finale de O2 change-t-elle ?",
+      "→ Solution : Non : le catalyseur accélère la réaction mais ne modifie pas l’état final."
      ]
     }
    ],
@@ -814,11 +1149,53 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Le pH d’une solution d’acide chlorhydrique à 0,01 mol/L ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’eau subit une autoprotolyse : 2H2O ⇌ H3O⁺ + OH⁻ ; à 25 °C, dans l’eau pure, [H3O⁺] = [OH⁻] = 10⁻⁷ mol/L et dans toute solution aqueuse Ke = [H3O⁺][OH⁻] = 10⁻¹⁴. pH = −log[H3O⁺] = 14 + log[OH⁻] ; [H3O⁺] = 10⁻ᵖᴴ, [OH⁻] = 10^(pH−14).",
+      "Électroneutralité : somme des concentrations des charges positives = somme des charges négatives ; conservation de la matière : n0 = n(restante) + n(disparue).",
+      "Un acide fort réagit totalement avec l’eau : HA + H2O → H3O⁺ + A⁻ ; pH = −log C (solutions de pH ≤ 6).",
+      "Une base forte libère totalement OH⁻ ; pH = 14 + log C (pH ≥ 8).",
+      "Mélange de deux acides forts : [H3O⁺] = (C1V1 + C2V2)/(V1 + V2) ; mélange d’un acide fort et d’une base forte : si CaVa > CbVb, [H3O⁺] = (CaVa − CbVb)/(Va + Vb)."
+     ]
+    },
+    {
      "h": "Mélanges",
      "lines": [
       "Deux acides forts : pH = −log[(10^(−pH1)V1 + 10^(−pH2)V2)/(V1 + V2)].",
       "Deux bases fortes : pH = 14 + log[(10^(pH1−14)V1 + 10^(pH2−14)V2)/(V1 + V2)].",
       "Acide fort + base forte, CaVa > CbVb : pH = −log[(CaVa − CbVb)/(Va + Vb)]."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Ke = [H3O⁺][OH⁻] = 10⁻¹⁴ (25 °C).",
+      "pH = −log[H3O⁺].",
+      "Acide fort : pH = −log C.",
+      "Base forte : pH = 14 + log C.",
+      "Électroneutralité, conservation de la matière."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : pH de HCl à 0,01 mol/L ?",
+      "→ Réponse : 2.",
+      "Exemple 2 : [OH⁻] dans une solution de pH = 3 ?",
+      "→ Réponse : 10⁻¹¹ mol/L."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "pH d’une solution de soude à 10⁻² mol/L ?",
+      "→ Solution : pH = 14 + log 10⁻² = 12."
      ]
     }
    ],
@@ -908,6 +1285,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le vinaigre, à concentration égale, est-il moins acide que l’acide chlorhydrique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un acide faible AH réagit partiellement avec l’eau : AH + H2O ⇌ A⁻ + H3O⁺ ; une base faible B réagit partiellement : B + H2O ⇌ BH⁺ + OH⁻.",
+      "Le coefficient d’ionisation α est le pourcentage de molécules ionisées.",
+      "Constante d’acidité du couple AH/A⁻ : Ka = [A⁻][H3O⁺]/[AH] ; pKa = −log Ka.",
+      "Relation de Henderson : pH = pKa + log([base]/[acide]).",
+      "Un acide faible est faiblement ionisé si [A⁻]/[AH] ≤ 0,1 (pH ≤ pKa − 1) : alors pH = ½(pKa − log Ca) ; pour une base faiblement ionisée : pH = ½(pKa + log Cb + 14).",
+      "Plus Ka est grand (pKa petit), plus l’acide est fort et sa base conjuguée faible ; à concentrations égales, l’acide le plus fort donne le pH le plus petit.",
+      "Si pH < pKa, la forme acide prédomine ; si pH > pKa, la forme basique prédomine."
+     ]
+    },
+    {
      "h": "Diagramme de prédominance",
      "lines": [],
      "table": [
@@ -930,6 +1325,32 @@
      "lines": [
       "Ka plus grand (pKa plus petit) : acide plus fort, base conjuguée plus faible.",
       "À pH égaux, la solution la moins concentrée correspond à l’acide le plus fort."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Acide faible : réaction partielle.",
+      "Ka = [A⁻][H3O⁺]/[AH] ; pKa = −log Ka.",
+      "pH = pKa + log([A⁻]/[AH]).",
+      "Faiblement ionisé : pH = ½(pKa − log C).",
+      "pH < pKa : forme acide prédomine."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : pH d’un mélange équimolaire CH3COOH/CH3COO⁻ (pKa = 4,8) ?",
+      "→ Réponse : pH = pKa = 4,8.",
+      "Exemple 2 : NH4⁺/NH3 (pKa = 9,2) à pH = 7 : espèce prédominante ?",
+      "→ Réponse : NH4⁺."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Acide éthanoïque (pKa = 4,8) à 0,1 mol/L : pH ?",
+      "→ Solution : pH = ½(4,8 + 1) = 2,9."
      ]
     }
    ],
@@ -1019,6 +1440,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment déterminer la concentration exacte d’un vinaigre ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Doser une solution, c’est déterminer sa concentration à l’aide d’une solution titrante de concentration connue.",
+      "À l’équivalence, les réactifs ont été mélangés dans les proportions stœchiométriques : CaVa = CbVbéq.",
+      "Dosage acide fort / base forte : H3O⁺ + OH⁻ → 2H2O, pH = 7 à l’équivalence.",
+      "Dosage d’un acide faible par une base forte : AH + OH⁻ → A⁻ + H2O (totale) ; à l’équivalence la solution est basique (pH > 7, présence de A⁻) ; à la demi-équivalence (Vb = Vbéq/2), pH = pKa.",
+      "Dosage d’une base faible par un acide fort : B + H3O⁺ → BH⁺ + H2O ; équivalence acide (pH < 7) ; demi-équivalence pH = pKa.",
+      "L’équivalence se repère par la méthode des tangentes parallèles ou par un indicateur coloré dont la zone de virage contient le pH d’équivalence.",
+      "Une solution tampon est un mélange équimolaire d’un acide faible et de sa base conjuguée : son pH varie peu par ajout modéré d’acide fort, de base forte ou par dilution."
+     ]
+    },
+    {
      "h": "Trois dosages",
      "lines": [],
      "table": [
@@ -1048,6 +1487,32 @@
      "h": "Correction",
      "lines": [
       "(Correction : p. 171, dans le dosage d’un acide faible par une base forte, AH est l’acide faible, et non « l’acide fort ».)"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Équivalence : CaVa = CbVbéq.",
+      "AF/BF : pH = 7.",
+      "Acide faible/BF : pH > 7 ; demi-équivalence pH = pKa.",
+      "Base faible/AF : pH < 7.",
+      "Tampon : pH stable."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel indicateur pour un dosage acide fort/base forte ?",
+      "→ Réponse : Le bleu de bromothymol (zone de virage autour de 7).",
+      "Exemple 2 : Que vaut le pH à la demi-équivalence d’un acide faible ?",
+      "→ Réponse : pH = pKa."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "10 mL de vinaigre dilué dosés par la soude à 0,1 mol/L : Vbéq = 12 mL. Concentration ?",
+      "→ Solution : Ca = 0,1 × 12/10 = 0,12 mol/L."
      ]
     }
    ],
@@ -1125,6 +1590,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment décrire précisément le mouvement d’une balle ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans un repère (O ; i⃗, j⃗, k⃗) lié au référentiel, le vecteur position est OM⃗ = x i⃗ + y j⃗ + z k⃗ ; x(t), y(t), z(t) sont les équations horaires ; l’équation y = f(x) est celle de la trajectoire.",
+      "Vitesse moyenne : v⃗m = ΔOM⃗/Δt ; vitesse instantanée v⃗ = dOM⃗/dt (tangente à la trajectoire, dans le sens du mouvement, v = √(vx² + vy² + vz²)).",
+      "Accélération : a⃗ = dv⃗/dt ; dans la base de Frenet a⃗ = aₜ t⃗ + aₙ n⃗ avec aₜ = dv/dt et aₙ = v²/r.",
+      "Le mouvement est accéléré si a⃗·v⃗ > 0, retardé si a⃗·v⃗ < 0.",
+      "MRU : a = 0, x = vt + x0.",
+      "MRUV : a constante, v = at + v0, x = ½at² + v0t + x0."
+     ]
+    },
+    {
      "h": "Mouvements rectilignes",
      "lines": [],
      "table": [
@@ -1152,6 +1634,32 @@
      "h": "Relation indépendante du temps (MRUV)",
      "lines": [
       "v² − v0² = 2a(x − x0)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "OM⃗ = x i⃗ + y j⃗ + z k⃗.",
+      "v⃗ = dOM⃗/dt ; a⃗ = dv⃗/dt.",
+      "Frenet : aₜ = dv/dt ; aₙ = v²/r.",
+      "a⃗·v⃗ > 0 accéléré ; < 0 retardé.",
+      "MRUV : x = ½at² + v0t + x0."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un mobile a a = 2 m/s², v0 = 0 : distance après 5 s ?",
+      "→ Réponse : x = ½ × 2 × 25 = 25 m.",
+      "Exemple 2 : Mouvement circulaire uniforme : aₜ ? aₙ ?",
+      "→ Réponse : aₜ = 0 ; aₙ = v²/r (centripète)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "x = 2t et y = 4t² − 1 : trajectoire et vitesse à t = 1 s ?",
+      "→ Solution : y = x² − 1 (parabole) ; vx = 2, vy = 8t ⇒ v(1) = √68 ≈ 8,2 m/s."
      ]
     }
    ],
@@ -1197,9 +1705,51 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un passager est-il projeté vers l’avant quand le bus freine ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un système est un ensemble de points matériels en interaction, déformable ou indéformable.",
+      "Une force intérieure est exercée par une partie du système sur une autre ; une force extérieure par un agent extérieur.",
+      "Principe de l’inertie : si ΣF⃗ext = 0⃗, le centre d’inertie est au repos ou en mouvement rectiligne uniforme.",
+      "Relation fondamentale de la dynamique (dans un repère galiléen) : ΣF⃗ext = m a⃗.",
+      "Méthode : préciser le système, faire l’inventaire des forces, choisir le repère, faire un schéma, appliquer la RFD et projeter sur les axes."
+     ]
+    },
+    {
      "h": "Méthode de résolution",
      "lines": [
       "1) Système ; 2) bilan des forces ; 3) repère galiléen ; 4) schéma ; 5) ΣF⃗ext = m a⃗ ; 6) projections."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Forces intérieures / extérieures.",
+      "Inertie : ΣF⃗ = 0⃗ ⇒ repos ou MRU.",
+      "RFD : ΣF⃗ext = m a⃗.",
+      "Repère galiléen.",
+      "Système → forces → repère → schéma → projection."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un corps en chute libre : accélération ?",
+      "→ Réponse : a⃗ = g⃗.",
+      "Exemple 2 : Si la résultante est nulle, le mobile peut-il bouger ?",
+      "→ Réponse : Oui, en mouvement rectiligne uniforme."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une caisse de 10 kg est tirée horizontalement par 30 N, sans frottement : accélération ?",
+      "→ Solution : a = F/m = 3 m/s²."
      ]
     }
    ],
@@ -1288,6 +1838,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Sous quel angle faut-il lancer un ballon pour aller le plus loin ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un solide de masse m lancé de O avec une vitesse V⃗0 faisant l’angle α avec l’horizontale n’est soumis qu’à son poids : la RFD donne a⃗ = g⃗.",
+      "Sur Ox : ax = 0, Vx = V0 cos α, x = V0 cos α · t (MRU).",
+      "Sur Oy : ay = −g, Vy = −gt + V0 sin α, y = −½gt² + V0 sin α · t (MRUV).",
+      "Équation de la trajectoire (parabole) : y = −g x²/(2V0² cos² α) + x tan α.",
+      "Au sommet S, Vy = 0 : l’ordonnée yS est la flèche, yS = V0² sin² α/(2g).",
+      "La portée est l’abscisse du point d’ordonnée nulle : xP = V0² sin 2α/g, maximale pour α = 45°."
+     ]
+    },
+    {
      "h": "Conditions initiales",
      "lines": [],
      "table": [
@@ -1311,6 +1878,32 @@
        "V0 cos α · t",
        "−½gt² + V0 sin α · t"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "a⃗ = g⃗.",
+      "x = V0 cos α · t ; y = −½gt² + V0 sin α · t.",
+      "y = −g x²/(2V0² cos² α) + x tan α.",
+      "Flèche : V0² sin² α/(2g).",
+      "Portée : V0² sin 2α/g."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pour quel angle la portée est-elle maximale ?",
+      "→ Réponse : 45°.",
+      "Exemple 2 : Au sommet, que vaut Vy ?",
+      "→ Réponse : 0."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "V0 = 20 m/s, α = 45°, g = 10 : portée et flèche ?",
+      "→ Solution : Portée = 400/10 = 40 m ; flèche = 400 × 0,5/20 = 10 m."
      ]
     }
    ],
@@ -1355,10 +1948,51 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une voiture qui descend une pente sans moteur accélère-t-elle toujours ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Sur un plan incliné d’angle α avec frottement f : P⃗ + f⃗ + R⃗n = m a⃗ ; sur l’axe du mouvement : mg sin α − f = ma, donc a = g sin α − f/m est constante : le mouvement est rectiligne uniformément varié ; sur la normale : Rn = mg cos α ; la réaction totale vaut R = √(Rn² + f²).",
+      "Sur une piste circulaire lisse de rayon r, le théorème de l’énergie cinétique entre A et M donne VM² = VA² + 2gr sin θ (la réaction ne travaille pas, W(P) = mgr sin θ).",
+      "La RFD projetée sur la normale centripète donne R = mg sin θ + mVM²/r, soit R = 3mg sin θ + mVA²/r.",
+      "Le solide quitte la piste lorsque R s’annule."
+     ]
+    },
+    {
      "h": "Plan incliné",
      "lines": [
       "Ox : mg sin α − f = ma ; Oy : Rn − mg cos α = 0.",
       "R = √((mg cos α)² + (mg sin α − ma)²)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Plan incliné : a = g sin α − f/m.",
+      "Rn = mg cos α.",
+      "Piste : VM² = VA² + 2gr sin θ.",
+      "R = mg sin θ + mVM²/r.",
+      "Décollement : R = 0."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Avec f = 2 N, m = 1 kg, α = 30° : a ?",
+      "→ Réponse : a = 5 − 2 = 3 m/s².",
+      "Exemple 2 : Pourquoi la réaction d’une piste lisse ne travaille-t-elle pas ?",
+      "→ Réponse : Elle est perpendiculaire au déplacement."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Plan à 30°, sans frottement : accélération ?",
+      "→ Solution : a = g sin 30° = 5 m/s² (g = 10)."
      ]
     }
    ],
@@ -1403,6 +2037,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment fonctionne un oscilloscope cathodique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Champ accélérateur : une particule de charge q > 0 et de masse m, entrant sans vitesse entre deux plaques A et C distantes de d0 avec U0 = VA − VC, a une accélération constante a = qU0/(m d0) : mouvement RUV ; à la sortie, V = √(2qU0/m).",
+      "Champ déviateur : entre deux plaques horizontales P1 et P2 de longueur l, distantes de d, sous la tension U, la particule entrant en O avec V⃗0 horizontale subit a⃗ = qE⃗/m (verticale, a = qU/(md)).",
+      "Sur Ox : x = V0t (MRU) ; sur Oy : y = (qU/(2md)) t².",
+      "Trajectoire parabolique : y = qU x²/(2md V0²) pour 0 ≤ x ≤ l.",
+      "Après les plaques, la particule suit un mouvement rectiligne uniforme ; la déviation sur l’écran se calcule par tan α = dy/dx en x = l."
+     ]
+    },
+    {
      "h": "Champ déviateur",
      "lines": [],
      "table": [
@@ -1424,6 +2074,32 @@
        "(qU/(md))t",
        "(qU/(2md))t²"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Accélération : a = qU0/(md0).",
+      "Vitesse de sortie : √(2qU0/m).",
+      "Déviation : y = qU x²/(2mdV0²).",
+      "Hors des plaques : MRU.",
+      "tan α = qUl/(mdV0²)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Le poids de l’électron est-il pris en compte ?",
+      "→ Réponse : Non, il est négligeable devant la force électrique.",
+      "Exemple 2 : Que devient la trajectoire si U double ?",
+      "→ Réponse : La déviation y double."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Électron accéléré sous 1 000 V (e = 1,6·10⁻¹⁹ C, m = 9,1·10⁻³¹ kg) : vitesse ?",
+      "→ Solution : V = √(2 × 1,6·10⁻¹⁹ × 1000/9,1·10⁻³¹) ≈ 1,9·10⁷ m/s."
      ]
     }
    ],
@@ -1469,10 +2145,54 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un satellite ne tombe-t-il pas sur la Terre ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Loi de la gravitation : F = G m M/r².",
+      "À l’altitude h : g = GM/(R + h)² ; au sol g0 = GM/R², donc g = g0R²/r² (r = R + h).",
+      "Pour un satellite en orbite circulaire, la RFD projetée sur la tangente donne aₜ = 0 : mouvement uniforme ; sur la normale : GmM/r² = mV²/r, d’où V = √(GM/r) = √(g0R²/r) et ω = √(GM/r³).",
+      "Période T = 2π/ω = 2πr/V.",
+      "Troisième loi de Kepler : r³/T² = GM/(4π²) = constante pour tous les satellites d’une même planète.",
+      "Un satellite géostationnaire est fixe dans le référentiel terrestre : orbite dans le plan équatorial, même sens de rotation que la Terre, période T0 = 24 h = 86 400 s.",
+      "Énergies : Ec = GmM/(2r) ; Ep = −GmM/r + K ; Em = −GmM/(2r) + K."
+     ]
+    },
+    {
      "h": "Satellite géostationnaire",
      "lines": [
       "Plan d’orbite : équateur ; sens : celui de la Terre ; T0 = 86 400 s.",
       "Kepler donne r ≈ 42 000 km (altitude ≈ 36 000 km)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "g = g0R²/(R + h)².",
+      "V = √(GM/r).",
+      "T = 2πr/V.",
+      "Kepler : r³/T² = GM/(4π²).",
+      "Géostationnaire : équatorial, T = 24 h."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Le mouvement d’un satellite en orbite circulaire est-il uniforme ?",
+      "→ Réponse : Oui : aₜ = 0.",
+      "Exemple 2 : Si r est multiplié par 4, que devient T ?",
+      "→ Réponse : T est multiplié par 8 (T² ∝ r³)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vitesse d’un satellite à r = 7 000 km (g0 = 9,8 ; R = 6 400 km) ?",
+      "→ Solution : V = √(9,8 × (6,4·10⁶)²/7·10⁶) ≈ 7,6·10³ m/s."
      ]
     }
    ],
@@ -1518,6 +2238,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment sépare-t-on les isotopes d’un élément ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une particule de charge q et de vitesse V⃗ dans un champ magnétique B⃗ subit la force de Lorentz F⃗ = qV⃗ ∧ B⃗ : appliquée à la particule, perpendiculaire au plan (V⃗, B⃗), de sens tel que le trièdre (qV⃗, B⃗, F⃗) soit direct, d’intensité F = |q|VB sin(V⃗, B⃗).",
+      "Si V⃗0 est perpendiculaire à un champ uniforme B⃗, l’accélération est perpendiculaire à B⃗ (mouvement plan) et à V⃗ (aₜ = 0 : mouvement uniforme) ; aₙ = |q|V0B/m = V0²/r constant : la trajectoire est un cercle de rayon r = mV0/(|q|B).",
+      "Déviation angulaire : sin α = l/r (l largeur de la zone de champ) ; déviation linéaire sur l’écran O’I ≈ D tan α.",
+      "Spectrographe de masse : des isotopes de même charge et même vitesse ont des rayons proportionnels à leurs masses."
+     ]
+    },
+    {
      "h": "Caractéristiques de la force de Lorentz",
      "lines": [],
      "table": [
@@ -1541,6 +2276,32 @@
        "Intensité",
        "|q|VB sin(V⃗, B⃗)"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "F⃗ = qV⃗ ∧ B⃗ ; F = |q|VB sin θ.",
+      "Mouvement plan, circulaire uniforme.",
+      "r = mV0/(|q|B).",
+      "sin α = l/r.",
+      "Spectrographe : r ∝ m."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : La force de Lorentz travaille-t-elle ?",
+      "→ Réponse : Non : elle est perpendiculaire à la vitesse, l’énergie cinétique reste constante.",
+      "Exemple 2 : Que devient r si B double ?",
+      "→ Réponse : Il est divisé par 2."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Proton (m = 1,67·10⁻²⁷ kg) à 10⁶ m/s dans B = 0,1 T : rayon ?",
+      "→ Solution : r = 1,67·10⁻²⁷ × 10⁶/(1,6·10⁻¹⁹ × 0,1) ≈ 0,10 m."
      ]
     }
    ],
@@ -1636,6 +2397,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi la période d’un ressort ne dépend-elle pas de l’amplitude ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un mouvement est rectiligne sinusoïdal si x = Xm cos(ωt + φ) : v = −ωXm sin(ωt + φ), a = −ω²x, d’où l’équation différentielle x’’ + ω²x = 0.",
+      "Période T = 2π/ω ; fréquence N = 1/T.",
+      "Relation indépendante du temps : v² = ω²(Xm² − x²).",
+      "Pendule élastique (masse m, raideur k) : à l’équilibre (vertical) mg = kΔl0 ; la RFD donne x’’ + (k/m)x = 0 : ω0 = √(k/m), T0 = 2π√(m/k), indépendante de l’amplitude.",
+      "Énergie : Ec = ½mv², Ep = ½kx² (en prenant l’équilibre comme référence) ; Em = ½kXm² = ½mVmax² constante (système conservatif)."
+     ]
+    },
+    {
      "h": "Énergies",
      "lines": [],
      "table": [
@@ -1655,6 +2432,32 @@
        "Mécanique",
        "½kXm² = ½mVmax²"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "x = Xm cos(ωt + φ).",
+      "x’’ + ω0²x = 0 ; ω0 = √(k/m).",
+      "T0 = 2π√(m/k).",
+      "v² = ω²(Xm² − x²).",
+      "Em = ½kXm² constante."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Vitesse maximale si Xm = 5 cm et ω0 = 10 rad/s ?",
+      "→ Réponse : Vmax = 0,5 m/s.",
+      "Exemple 2 : Si m est multipliée par 4, T0 ?",
+      "→ Réponse : T0 double."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "m = 0,1 kg, k = 10 N/m : période ?",
+      "→ Solution : T0 = 2π√(0,01) ≈ 0,63 s."
      ]
     }
    ],
@@ -1737,6 +2540,20 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment un courant peut-il mettre une tige en mouvement ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Un conducteur de longueur l parcouru par un courant I et plongé dans un champ magnétique B⃗ subit la force de Laplace F⃗ = I l⃗ ∧ B⃗ : appliquée au milieu de la portion placée dans le champ, perpendiculaire au plan formé par le conducteur et B⃗, de sens tel que le trièdre (I l⃗, B⃗, F⃗) soit direct, d’intensité F = I l B |sin(l⃗, B⃗)|.",
+      "Règle de la main droite : le courant sort par le bout des doigts, la paume est tournée vers le sens de B⃗, le pouce indique le sens de F⃗.",
+      "Applications : rails de Laplace, haut-parleur électrodynamique, moteur à courant continu."
+     ]
+    },
+    {
      "h": "Caractéristiques",
      "lines": [],
      "table": [
@@ -1760,6 +2577,31 @@
        "Intensité",
        "I l B sin(l⃗, B⃗)"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "F⃗ = I l⃗ ∧ B⃗.",
+      "F = I l B sin θ.",
+      "Règle de la main droite.",
+      "Rails, haut-parleur, moteur."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que vaut F si le conducteur est parallèle à B⃗ ?",
+      "→ Réponse : 0.",
+      "Exemple 2 : Comment inverser le sens de F ?",
+      "→ Réponse : Inverser le courant ou le champ."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "I = 5 A, l = 0,1 m, B = 0,2 T, conducteur perpendiculaire à B⃗ : F ?",
+      "→ Solution : F = 5 × 0,1 × 0,2 = 0,1 N."
      ]
     }
    ],
@@ -1837,6 +2679,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment un alternateur produit-il de l’électricité ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "À une surface S on associe le vecteur surface S⃗ = S n⃗ (n⃗ normal, orienté par la règle de la main droite selon le sens positif choisi sur le contour).",
+      "Le flux de B⃗ à travers S : Φ = B⃗·S⃗ = BS cos(B⃗, n⃗) en weber (Wb) ; pour N spires Φ = NBS cos θ.",
+      "Toute variation du flux à travers un circuit y fait apparaître une force électromotrice induite : moyenne em = −ΔΦ/Δt, instantanée e = −dΦ/dt (loi de Faraday).",
+      "Si le circuit est fermé (résistance R), il est parcouru par un courant induit i = e/R.",
+      "Loi de Lenz : le courant induit a un sens tel qu’il s’oppose, par ses effets, à la cause qui lui donne naissance."
+     ]
+    },
+    {
      "h": "Règle d’orientation",
      "lines": [
       "Main droite : la paume vers le centre de la surface, les doigts dans le sens positif du contour, le pouce donne n⃗."
@@ -1846,6 +2704,32 @@
      "h": "Loi de Lenz (exemple)",
      "lines": [
       "Un aimant approche d’une bobine par son pôle nord : la face de la bobine en regard devient une face nord et repousse l’aimant."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Φ = NBS cos θ (Wb).",
+      "e = −dΦ/dt.",
+      "i = e/R.",
+      "Lenz : opposition à la cause.",
+      "Alternateur, transformateur."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Unité du flux magnétique ?",
+      "→ Réponse : Le weber (Wb).",
+      "Exemple 2 : Pourquoi le signe « − » dans e = −dΦ/dt ?",
+      "→ Réponse : Il traduit la loi de Lenz."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Bobine de 100 spires de 20 cm², B passant de 0 à 0,5 T en 0,1 s (axe parallèle à B⃗) : f.é.m. moyenne ?",
+      "→ Solution : ΔΦ = 100 × 2·10⁻³ × 0,5 = 0,1 Wb ; |e| = 1 V."
      ]
     }
    ],
@@ -1923,6 +2807,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une vague avance-t-elle alors que l’eau ne fait que monter et descendre ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Stroboscope de fréquence Ne éclairant un phénomène de fréquence N : immobilité apparente si N = kNe ; k positions immobiles si Ne = kN ; mouvement ralenti si N et Ne sont voisines (direct si N légèrement supérieure à Ne, inverse sinon).",
+      "Un ébranlement est transversal si la vibration est perpendiculaire à la propagation, longitudinal si elle est parallèle.",
+      "Le long d’une corde tendue (tension F, masse linéique μ), la célérité est V = √(F/μ).",
+      "La longueur d’onde λ = VT est la distance parcourue pendant une période.",
+      "Si la source vibre selon yS = a cos(ωt + φS), un point M à la distance x reçoit la vibration avec un retard θ = x/V : yM = a cos(ωt + φS − 2πx/λ).",
+      "Deux points distants de kλ vibrent en phase, de (2k + 1)λ/2 en opposition de phase."
+     ]
+    },
+    {
      "h": "Comparaison de deux points",
      "lines": [],
      "table": [
@@ -1942,6 +2843,32 @@
        "d = (2k + 1)λ/4",
        "en quadrature"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Stroboscope : immobilité si N = kNe.",
+      "Transversale / longitudinale.",
+      "V = √(F/μ) ; λ = VT.",
+      "yM = a cos(ωt + φS − 2πx/λ).",
+      "En phase : kλ ; opposition : (2k + 1)λ/2."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Fréquence N = 100 Hz, stroboscope Ne = 50 Hz : aspect ?",
+      "→ Réponse : Immobilité apparente (N = 2Ne).",
+      "Exemple 2 : Le son est-il une onde transversale ?",
+      "→ Réponse : Non, longitudinale."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Corde : N = 50 Hz, V = 10 m/s : longueur d’onde ?",
+      "→ Solution : λ = V/N = 0,2 m."
      ]
     }
    ],
@@ -2024,6 +2951,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Que se passe-t-il quand deux pointes frappent en même temps la surface de l’eau ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une source S vibrant selon yS = a cos(ωt + φS) donne en M, à la distance d, yM = a cos(ωt − 2πd/λ + φS).",
+      "Deux sources S1 et S2 cohérentes (en phase) donnent en M (distances d1 et d2) : yM = 2a cos(π(d2 − d1)/λ) cos(ωt − π(d1 + d2)/λ + φS).",
+      "Si d2 − d1 = kλ, M vibre avec une amplitude maximale 2a ; si d2 − d1 = (2k + 1)λ/2, M est immobile (amplitude nulle).",
+      "Les points d’amplitude maximale (ou nulle) se trouvent sur des hyperboles de foyers S1 et S2 : les franges d’interférence.",
+      "Entre S1 et S2, deux franges consécutives de même nature sont distantes de λ/2."
+     ]
+    },
+    {
      "h": "Résultats",
      "lines": [],
      "table": [
@@ -2039,6 +2982,32 @@
        "(2k + 1)λ/2",
        "nulle"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Sources cohérentes.",
+      "Amplitude 2a|cos(π(d2 − d1)/λ)|.",
+      "Maximum : d2 − d1 = kλ.",
+      "Immobile : d2 − d1 = (2k + 1)λ/2.",
+      "Franges hyperboliques ; distance λ/2 sur S1S2."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Distance entre deux franges d’amplitude maximale consécutives sur S1S2 si λ = 8 mm ?",
+      "→ Réponse : 4 mm.",
+      "Exemple 2 : Pourquoi les sources doivent-elles être cohérentes ?",
+      "→ Réponse : Pour garder un déphasage constant et obtenir des franges stables."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "λ = 1 cm, d1 = 3 cm, d2 = 5 cm : état de M ?",
+      "→ Solution : d2 − d1 = 2λ : amplitude maximale."
      ]
     }
    ],
@@ -2116,6 +3085,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La lumière ajoutée à la lumière peut-elle donner l’obscurité ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La fréquence d’une radiation est ν = 1/T = c/λ ; un photon porte l’énergie E = hν = hc/λ (h = 6,62·10⁻³⁴ J·s).",
+      "Dans le dispositif de Young (fentes distantes de a, écran à la distance D), la différence de marche au point M d’abscisse x est δ = d2 − d1 = ax/D.",
+      "M est sur une frange brillante si δ = kλ, soit x = kλD/a ; sur une frange sombre si δ = (2k’ + 1)λ/2, soit x = (2k’ + 1)λD/(2a).",
+      "L’interfrange (distance entre deux franges consécutives de même nature) est i = λD/a.",
+      "L’ordre d’interférence p = x/i est entier pour une frange brillante, demi-entier pour une frange sombre.",
+      "Avec deux radiations λ1 et λ2, les franges brillantes coïncident lorsque k1λ1 = k2λ2 ; la première coïncidence correspond aux plus petites valeurs de k1 et k2."
+     ]
+    },
+    {
      "h": "Franges",
      "lines": [],
      "table": [
@@ -2134,6 +3120,32 @@
        "(2k + 1)λ/2",
        "(2k + 1)λD/(2a)"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "E = hν = hc/λ.",
+      "δ = ax/D.",
+      "Brillante : x = kλD/a ; sombre : x = (2k + 1)λD/(2a).",
+      "i = λD/a.",
+      "Coïncidence : k1λ1 = k2λ2."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Énergie d’un photon de 500 nm ?",
+      "→ Réponse : E = 6,62·10⁻³⁴ × 3·10⁸/5·10⁻⁷ ≈ 4·10⁻¹⁹ J.",
+      "Exemple 2 : λ1 = 400 nm, λ2 = 600 nm : première coïncidence ?",
+      "→ Réponse : 3λ1 = 2λ2 : k1 = 3, k2 = 2."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "λ = 600 nm, a = 1 mm, D = 2 m : interfrange ?",
+      "→ Solution : i = 6·10⁻⁷ × 2/10⁻³ = 1,2 mm."
      ]
     }
    ],
@@ -2211,6 +3223,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le spectre de l’hydrogène est-il formé de raies ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’énergie de l’atome d’hydrogène est quantifiée : En = −13,6/n² eV (n = 1, 2, 3…), avec 1 eV = 1,6·10⁻¹⁹ J. n = 1 : état fondamental (E1 = −13,6 eV) ; n > 1 : états excités ; n → ∞ : état ionisé (E∞ = 0).",
+      "L’excitation est une transition vers un niveau supérieur par absorption d’un photon ; la désexcitation, vers un niveau inférieur, s’accompagne de l’émission d’un photon : hν = En − Ep.",
+      "L’ionisation libère l’électron.",
+      "Formule de Ritz : 1/λ = RH(1/p² − 1/n²) avec RH = 1,09·10⁷ m⁻¹.",
+      "Série de Lyman : retour au niveau p = 1 (ultraviolet) ; série de Balmer : retour à p = 2 (visible en partie) ; Paschen : p = 3."
+     ]
+    },
+    {
      "h": "Séries spectrales",
      "lines": [],
      "table": [
@@ -2240,6 +3268,32 @@
      "h": "Exemple",
      "lines": [
       "Transition 3 → 2 : ΔE = −1,51 − (−3,4) = 1,89 eV ⇒ λ = hc/ΔE ≈ 656 nm (raie rouge)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "En = −13,6/n² eV.",
+      "Fondamental n = 1 ; ionisé E = 0.",
+      "hν = En − Ep.",
+      "1/λ = RH(1/p² − 1/n²).",
+      "Lyman p = 1 ; Balmer p = 2."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : E2 et E3 ?",
+      "→ Réponse : E2 = −3,4 eV ; E3 ≈ −1,51 eV.",
+      "Exemple 2 : Un photon de 10,2 eV peut-il être absorbé à l’état fondamental ?",
+      "→ Réponse : Oui : E2 − E1 = 10,2 eV."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Énergie d’ionisation de l’atome d’hydrogène à l’état fondamental ?",
+      "→ Solution : 13,6 eV."
      ]
     }
    ],
@@ -2317,6 +3371,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une lumière rouge intense ne libère-t-elle aucun électron d’un métal alors qu’une faible lumière ultraviolette le fait ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’effet photoélectrique est l’émission d’électrons par un métal exposé à un rayonnement électromagnétique convenable.",
+      "La fréquence seuil ν0 est la fréquence minimale capable d’arracher des électrons (λ0 = c/ν0 longueur d’onde seuil) ; l’énergie d’extraction est W0 = hν0.",
+      "Relation d’Einstein : hν = W0 + Ec max.",
+      "L’énergie cinétique maximale se mesure par le potentiel d’arrêt U0 : ½mVmax² = eU0, d’où U0 = (h/e)(ν − ν0).",
+      "La puissance lumineuse reçue est P = n h ν (n photons par seconde) ; le rendement quantique r = n’/n (n’ photons efficaces) ; le courant de saturation IS = n’e = P e r/(hν)."
+     ]
+    },
+    {
      "h": "Relations",
      "lines": [],
      "table": [
@@ -2340,6 +3410,32 @@
        "Courant de saturation",
        "IS = Per/(hν)"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Seuil : ν ≥ ν0.",
+      "W0 = hν0.",
+      "hν = W0 + Ec max.",
+      "eU0 = Ec max.",
+      "IS = Per/(hν)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : L’effet dépend-il de l’intensité lumineuse pour se produire ?",
+      "→ Réponse : Non, il dépend de la fréquence (ν ≥ ν0) ; l’intensité agit sur le nombre d’électrons.",
+      "Exemple 2 : Ec max = 1 eV : potentiel d’arrêt ?",
+      "→ Réponse : U0 = 1 V."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Métal de seuil λ0 = 500 nm éclairé par λ = 400 nm : Ec max ?",
+      "→ Solution : hc(1/λ − 1/λ0) = 6,62·10⁻³⁴ × 3·10⁸ × (2,5·10⁶ − 2·10⁶) ≈ 1·10⁻¹⁹ J (≈ 0,62 eV)."
      ]
     }
    ],
@@ -2417,6 +3513,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "D’où vient l’énergie fantastique du Soleil ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le défaut de masse d’un noyau ᴬ_Z X est Δm = Zmp + (A − Z)mn − m(noyau) > 0.",
+      "Relation d’Einstein : E = mc².",
+      "L’énergie de liaison El = Δm c² ; l’énergie de liaison par nucléon El/A mesure la stabilité.",
+      "Désintégrations : α : ᴬ_Z X → ᴬ⁻⁴_(Z−2) Y + ⁴₂He ; β⁻ : ᴬ_Z X → ᴬ_(Z+1) Y + ⁰₋₁e (un neutron devient proton) ; β⁺ : ᴬ_Z X → ᴬ_(Z−1) Y + ⁰₁e (un proton devient neutron) ; γ : Y* → Y + γ.",
+      "Fission : un noyau lourd fissile bombardé par un neutron se scinde en deux noyaux plus légers et libère k neutrons (réaction en chaîne).",
+      "Fusion : deux petits noyaux s’unissent pour former un noyau plus lourd (²₁H + ³₁H → ⁴₂He + ¹₀n).",
+      "L’énergie libérée vaut E = (Σm réactifs − Σm produits)c²."
+     ]
+    },
+    {
      "h": "Exemples de fusion",
      "lines": [
       "²₁H + ³₁H → ⁴₂He + ¹₀n.",
@@ -2427,6 +3541,32 @@
      "h": "Fission",
      "lines": [
       "ᴬX + ¹₀n → ᴬ¹X1 + ᴬ²X2 + k ¹₀n : les neutrons émis entretiennent la réaction en chaîne."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Δm = Zmp + (A − Z)mn − m.",
+      "El = Δm c² ; El/A.",
+      "α, β⁻, β⁺, γ.",
+      "Fission (noyaux lourds), fusion (légers).",
+      "E = Δm c²."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel est le noyau le plus stable : El/A = 8,8 MeV ou 7,6 MeV ?",
+      "→ Réponse : Celui de 8,8 MeV/nucléon.",
+      "Exemple 2 : Équation de la désintégration β⁻ du ⁶⁰₂₇Co ?",
+      "→ Réponse : ⁶⁰₂₇Co → ⁶⁰₂₈Ni + ⁰₋₁e."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Δm = 0,03 u : énergie de liaison (1 u ↔ 931,5 MeV) ?",
+      "→ Solution : El ≈ 27,9 MeV."
      ]
     }
    ],

@@ -32,6 +32,12 @@
    },
    "board": [
     {
+     "h": "Warm-up",
+     "lines": [
+      "When you have difficult homework, whom do you ask for help?"
+     ]
+    },
+    {
      "h": "Dialogue",
      "lines": [],
      "fig": {
@@ -187,6 +193,23 @@
       "Speaking: In groups, talk about your present talents and the ones you could have had but didn’t develop.",
       "Writing: Write a short paragraph about your talents using can, could, may be."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Can / could: modal verbs; could = past of can; can’t = negative.",
+      "Ability: He can drive a car.",
+      "Probability: It could rain tonight. He could have gone out.",
+      "Suggestion / request: Can I help you? Could you do me a favour?",
+      "Surprise: You can’t be serious."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Who’s talking to whom?",
+      "→ Answer : Omar is talking to his friend Brahim (on the phone)."
+     ]
     }
    ]
   },
@@ -217,6 +240,12 @@
     "a": "Yes, most Mauritanians believe in it, to some extent."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Have you heard of things that people say bring bad luck? Give an example."
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -393,6 +422,22 @@
       "Speaking: In groups, talk about superstitious practices in your community. Take notes.",
       "Writing: Write a short paragraph about superstitious practices that still exist in your community."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Superstition differs from region to region.",
+      "More common in villages and towns than in big cities.",
+      "May / might: possibility, probability, permission, wishes, requests.",
+      "May you be happy! (wish) – May I come in? (permission)"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Do Mauritanians believe in superstition?",
+      "→ Answer : Yes, most Mauritanians believe in it, to some extent."
+     ]
     }
    ]
   },
@@ -423,6 +468,22 @@
     "a": "To have a picnic at the beach."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Where do you like to go with your friends at the end of the school year?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "At the end of the school year, Mohamed, Abou and Ismail plan a picnic at the beach next weekend.",
+      "They have saved enough money, Abou’s father will lend them his car, and they will hire a tent.",
+      "Mohamed says they should check the weather.",
+      "Ismail looks at a weather site on his phone: tomorrow will be sunny and cloudy, it is going to rain a lot in Nouakchott, it will be foggy in Nouadhibou and very hot in the East and North.",
+      "Disappointed, they decide to postpone the picnic to the next weekend."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -571,6 +632,22 @@
       "Speaking: Some classmates will spend their holiday abroad, you will spend it in the countryside: discuss it in groups using must be, will, ought to…",
       "Writing: Write a dialogue with a partner about where you plan to spend your next summer vacation and why."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Will: prediction (Tomorrow will be sunny), intention, invitation, request.",
+      "Must: obligation, probability, prediction (You must be tired), advice.",
+      "Ought to: mild obligation, suggestion, prediction, advice.",
+      "Be going to: prediction based on present evidence."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What are the three friends planning to do?",
+      "→ Answer : To have a picnic at the beach."
+     ]
     }
    ]
   },
@@ -601,6 +678,12 @@
     "a": "To predict the future (jobs, technology, homes, what our world will look like)."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "How do you imagine life in Mauritania in 30 years?"
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -771,6 +854,22 @@
       "Speaking: In groups, discuss the main causes of global warming and its effects on the environment.",
       "Writing: Write a short paragraph about the causes of global warming and what must be done to mitigate its effects."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Prediction 1: a warmer world (fossil fuels, CO2).",
+      "Prediction 2: more technology at home.",
+      "Prediction 3: population explosion and rising crime.",
+      "Will: future facts and predictions; be going to: plans, intentions, predictions based on present evidence."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What is the purpose of analysing statistics of previous years?",
+      "→ Answer : To predict the future (jobs, technology, homes, what our world will look like)."
+     ]
     }
    ]
   },
@@ -800,6 +899,12 @@
     "a": "Sidi is talking to his friend Moussa."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "How do you politely refuse an invitation from a friend?"
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -958,6 +1063,21 @@
       "Speaking: You invite a friend to a picnic; he declines and tells you why. Take notes.",
       "Writing: Write a short dialogue where you invite your friend, who refuses and says why."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Because / since / as introduce the cause.",
+      "So / thus / therefore introduce the effect.",
+      "Declining: I won’t be able to make it. It will be for some other time."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Who is talking to whom?",
+      "→ Answer : Sidi is talking to his friend Moussa."
+     ]
     }
    ]
   },
@@ -989,6 +1109,23 @@
     "a": "A global pandemic disease caused by the coronavirus SARS-CoV-2."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What do you remember about the Covid-19 period at school and at home?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Covid-19 is a global pandemic caused by the SARS-CoV-2 coronavirus, first identified in Wuhan (China) in December 2019.",
+      "Attempts to contain it failed and it spread worldwide.",
+      "The WHO declared it a public health emergency of international concern on 30 January 2020 and a pandemic on 11 March 2020; by 10 March 2023 it had caused more than 676 million cases and 6.88 million deaths.",
+      "Common symptoms are fever, dry cough and fatigue; the elderly and people with diseases (cardiovascular disease, diabetes, chronic respiratory disease, cancer) are more at risk.",
+      "It transmits through contaminated droplets and particles in the air, especially indoors and at close distance.",
+      "With no cure, experts recommend preventive measures: social distancing, masks, ventilation, quarantine; public measures included lockdowns, travel restrictions, testing and contact tracing."
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -1165,6 +1302,23 @@
       "Speaking: In groups, discuss how to inform schoolmates who know little about Covid-19.",
       "Writing: Write a questionnaire of at least 5 questions to ask a health professional about the disease."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Cause: SARS-CoV-2 virus; first outbreak in Wuhan, December 2019.",
+      "Symptoms: fever, dry cough, fatigue.",
+      "Transmission: droplets and airborne particles.",
+      "Prevention: distancing, masks, ventilation, quarantine.",
+      "Cause / effect connectors: because, since, as / therefore, consequently, that’s why, as a result."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What is Covid-19?",
+      "→ Answer : A global pandemic disease caused by the coronavirus SARS-CoV-2."
+     ]
     }
    ]
   },
@@ -1196,6 +1350,12 @@
     "a": "The pros of bringing cell phones to school."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Do you bring your phone to school? Is it useful or a problem?"
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -1345,6 +1505,23 @@
       "Speaking: In groups, discuss the disadvantages of bringing smartphones to school (distraction, cheating, bullying…).",
       "Writing: Write a short essay defending your point of view on why cellphones should not be brought to school."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Claim: phones should be allowed at school.",
+      "Reason 1: easy contact with parents.",
+      "Reason 2: safety (location, emergencies).",
+      "Reason 3: learning (information, study groups).",
+      "Making an argument: claim → 2 or 3 reasons (First, Second, Finally) → conclusion."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What’s the text about?",
+      "→ Answer : The pros of bringing cell phones to school."
+     ]
     }
    ]
   },
@@ -1375,6 +1552,12 @@
     "a": "Noura is talking to her grandmother Aicha."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Do your grandparents and you always agree? On what do you disagree?"
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -1521,6 +1704,22 @@
       "Speaking: In groups, discuss how practising sport keeps one fit and healthy.",
       "Writing: Write a short paragraph about how practising sport is vital to our health."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Noura’s opinion: girls should eat less and do sport.",
+      "Argument: walking 30 minutes a day is vital (scientific proof).",
+      "Aicha’s opinion: sport is for boys; incompatible with traditions.",
+      "Expressions: I think, I completely disagree, You’re absolutely wrong, Nonsense!"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Who’s talking to whom?",
+      "→ Answer : Noura is talking to her grandmother Aicha."
+     ]
     }
    ]
   },
@@ -1551,6 +1750,12 @@
     "a": "Salma is talking to her friend Hawa."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Have you ever met an old friend by chance? Where?"
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -1704,6 +1909,22 @@
       "Speaking: In groups, talk about your life experiences using ever, never, already, yet, since, for.",
       "Writing: Write a short dialogue with a friend about what you have / have not done before."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Hawa: nurse, has lived in Aioun for six years.",
+      "Salma: teacher, has recently been transferred.",
+      "They haven’t met since they graduated.",
+      "Present perfect = have / has + past participle; for + period, since + starting point."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Who is talking to whom?",
+      "→ Answer : Salma is talking to her friend Hawa."
+     ]
     }
    ]
   },
@@ -1733,6 +1954,12 @@
     "a": "For a job at the BNM bank."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What questions does an employer ask in a job interview?"
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -1886,6 +2113,21 @@
       "Speaking: Ask your partner questions about life experiences (ever, never, before, yet…). Take notes.",
       "Writing: Write at least 5 sentences about things you have done in your life."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Interview questions: Have you had any job experience? Do you speak English?",
+      "Present perfect answers: I have already done a training. I haven’t got married yet.",
+      "Adverbs: ever, never, already, yet, recently."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What’s Abidine applying for?",
+      "→ Answer : For a job at the BNM bank."
+     ]
     }
    ]
   },
@@ -1916,6 +2158,26 @@
     "a": "A popular hare whose many friends all refuse to help her when the hounds are chasing her."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What does the proverb « A friend in need is a friend indeed » mean?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "A hare is very popular with the other animals, who all claim to be her friends.",
+      "When she hears the hounds approaching, she asks them for help.",
+      "The horse declines: he has important work for his master.",
+      "The bull has an appointment with a lady.",
+      "The goat fears his back might be harmed.",
+      "The ram doesn’t want to interfere because hounds also eat sheep.",
+      "The calf doesn’t want to take the responsibility since older animals have refused.",
+      "As the hounds come near, the hare takes to her heels and luckily escapes.",
+      "Popularity does not mean friendship."
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -2091,6 +2353,22 @@
       "Speaking: In groups, recall the funny stories and folktales your grandmother used to tell you.",
       "Writing: Write a short paragraph narrating a tale from your national or local folklore."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "The hare: popular, many « friends ».",
+      "Each friend finds an excuse: horse, bull, goat, ram, calf.",
+      "The hare escapes alone.",
+      "Moral: popularity does not mean friendship; in a crisis you discover your true friends."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What’s the text about?",
+      "→ Answer : A popular hare whose many friends all refuse to help her when the hounds are chasing her."
+     ]
     }
    ]
   },
@@ -2121,6 +2399,12 @@
     "a": "c. answers to important issues of their age."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Do you know a funny story about Nasreddin (Djeha)?"
+     ]
+    },
     {
      "h": "Text",
      "lines": [],
@@ -2295,6 +2579,22 @@
       "Speaking: In groups, recall a funny story your grandparents told you. Take notes.",
       "Writing: Write a funny short story using one day, one night, once upon a time…"
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Question 1: the centre of the world → under my right heel.",
+      "Question 2: the number of stars → the hairs on my donkey.",
+      "Question 3: hairs in the tail → the hairs in your beard.",
+      "Nasreddin answers impossible questions with impossible proofs."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. The wise men were trying to find…",
+      "→ Answer : c. answers to important issues of their age."
+     ]
     }
    ]
   },
@@ -2325,6 +2625,22 @@
     "a": "Sidi’s father invites Sidi, Amadou and Omar to lunch for their success in the baccalaureate."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Do you prefer eating at home or at a restaurant? Why?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Sidi’s father invites Sidi and his friends Amadou and Omar to lunch in a restaurant in Tevragh-Zeina to celebrate their success in the baccalaureate.",
+      "Sidi suggests the Azalai-Marhaba or Alkhaima hotels; Amadou prefers fried chicken and hamburgers at the Prince restaurant, which is more fun.",
+      "Dad finds the Prince noisy and crowded, but Omar says they won’t wait long.",
+      "At the restaurant, Amadou asks for a bit of mustard and wonders where the knives and forks are: they eat with their fingers.",
+      "Dad finds the chicken quite tasty, better than he thought, and they go home to have green tea with mint."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -2489,6 +2805,22 @@
       "Speaking: With a friend, choose a fast-food restaurant: one suggests, the other agrees or disagrees and says why.",
       "Writing: Write a short paragraph comparing eating at a restaurant and eating at home."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Occasion: success in the baccalaureate.",
+      "Choice: the Prince restaurant (fast food).",
+      "Dad’s fear: noisy, crowded – but the food is tasty.",
+      "Reported commands: told / asked + (not) to + base verb."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "Who invites whom, and why?",
+      "→ Answer : Sidi’s father invites Sidi, Amadou and Omar to lunch for their success in the baccalaureate."
+     ]
     }
    ]
   },
@@ -2519,6 +2851,23 @@
     "a": "In the tourist company (with its manager)."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "What would you say about yourself in a job interview?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Abdou, a young Mauritanian graduate in tourism and hostelry from the University of Nouakchott, has an interview for a job as a tourist guide.",
+      "He was born in Madrid, where his parents were immigrants, but grew up and studied in Nouakchott.",
+      "He has worked as a tourist guide in Atar and in a fancy hotel in Dakar.",
+      "He lives with his parents in Arafat; he isn’t married because he can’t afford it yet.",
+      "He is ready to work outside Nouakchott, speaks English and French very well and can communicate in Spanish and Arabic, and is taking driving lessons.",
+      "The manager will call him at the end of the month."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -2677,6 +3026,22 @@
       "Speaking: You have graduated and want to apply for a job: discuss it in groups.",
       "Writing: Write an interview dialogue between a bank manager and a graduate in business management and accounting."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Job: tourist guide.",
+      "Qualifications: degree in tourism, experience in Atar and Dakar, languages.",
+      "Personal: lives in Arafat, not married, learning to drive.",
+      "Reported yes/no questions: asked + if / whether + subject + verb."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Where is this interview taking place?",
+      "→ Answer : In the tourist company (with its manager)."
+     ]
     }
    ]
   },
@@ -2707,6 +3072,12 @@
     "a": "The teacher and students (Omar, Fatou, Sidi, Lalla) with Mr. Moulay, the journalist."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Who should choose your future career: you or your parents?"
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -2886,6 +3257,22 @@
       "Speaking: In groups, discuss whether students should choose their career themselves or let others choose.",
       "Writing: Write a paragraph with at least three reasons why students should choose their own career."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Moulay: freelance journalist and reporter.",
+      "Reporter ≠ freelance journalist.",
+      "Career change: from medicine to journalism (his own choice).",
+      "Question tags: positive statement → negative tag, and vice versa."
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Who’s talking to whom?",
+      "→ Answer : The teacher and students (Omar, Fatou, Sidi, Lalla) with Mr. Moulay, the journalist."
+     ]
     }
    ]
   },
@@ -2916,6 +3303,22 @@
     "a": "Outside, in large groups."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "Do boys and girls in your family play the same games?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "The Woman and Children Magazine interviews Dr.",
+      "Ousmane, a specialist in children’s psychology.",
+      "Boys’ and girls’ play choices differ, because of gender and because society imposes norms and stereotypes.",
+      "Boys play outside in large, hierarchical groups with a leader who gives orders; their games are tough and competitive, with winners, losers and rules that cause arguments; they boast about their skills.",
+      "Girls play in small groups or pairs; the centre of a girl’s social life is her best friend; intimacy is key, and their games (jump rope, hopscotch, dolls) have no winners or losers."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -3104,6 +3507,22 @@
       "Speaking: In groups, discuss: should boys and girls enjoy equal status?",
       "Writing: Write a paragraph saying whether girls and boys should enjoy equal status."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Causes: gender and social norms.",
+      "Boys: outside, large hierarchical groups, leader, competition, boasting.",
+      "Girls: small groups or pairs, best friend, intimacy, no winners or losers.",
+      "Tags: Somebody called, didn’t they? – She seldom comes late, does she?"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. Where are boys likely to play?",
+      "→ Answer : Outside, in large groups."
+     ]
     }
    ]
   },
@@ -3133,6 +3552,21 @@
     "a": "Tips to prepare for an exam, and congratulations after success."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "How do you prepare for an important exam?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Omar is worried about his final exam, scheduled for 30 May, and asks his senior friend Ali for tips.",
+      "Ali advises him: get rid of your mobile phone, a major distraction; read your notebooks thoroughly; instead of memorizing, try to understand and apply; concentrate on one major theme at a time; group study is useful; solve former exam papers to get used to the types of questions.",
+      "After the exam, Omar announces he has passed with distinction.",
+      "Ali congratulates him warmly and wishes him good luck in his future career; Omar will never forget his help."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -3294,6 +3728,21 @@
       "Speaking: You and your friend have passed your final exam and exchange congratulations: discuss it in groups.",
       "Writing: Write a short dialogue about this experience."
      ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Tips: no phone, read notes, understand rather than memorize, one theme at a time, group study, past papers.",
+      "Result: Omar passed with distinction.",
+      "Congratulations! – Congratulations on… – I congratulate you on… – Well done! Good job!"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What’s the dialogue about?",
+      "→ Answer : Tips to prepare for an exam, and congratulations after success."
+     ]
     }
    ]
   },
@@ -3324,6 +3773,22 @@
     "a": "Fatou’s birthday and the present her classmates give her."
    },
    "board": [
+    {
+     "h": "Warm-up",
+     "lines": [
+      "On which occasions do people congratulate each other in your community?"
+     ]
+    },
+    {
+     "h": "Lesson",
+     "lines": [
+      "Omar tells Ahmed that their classmate Fatou’s birthday is soon, on January the tenth (a Monday).",
+      "Ismail suggests giving her a cake; Ahmed prefers flowers, and they agree.",
+      "On 10 January, Omar wishes Fatou a happy birthday and tells her another good news: she has passed her exam.",
+      "Fatou loves the beautiful flowers; Ismail says they are from all of them and wishes her a long life full of happiness and prosperity.",
+      "« Same to you! » she answers."
+     ]
+    },
     {
      "h": "Dialogue",
      "lines": [],
@@ -3475,6 +3940,22 @@
      "lines": [
       "Speaking: You and your friend have passed your final exam and exchange congratulations: discuss it in groups.",
       "Writing: Write a short dialogue about this experience."
+     ]
+    },
+    {
+     "h": "Key points",
+     "lines": [
+      "Occasion: Fatou’s birthday (10 January) and her success.",
+      "Present: flowers, from all of them.",
+      "Wishes: Happy birthday! Good luck! Best wishes! We wish you long life…",
+      "Exclamations: Great! Lucky you! Marvellous! Well done!"
+     ]
+    },
+    {
+     "h": "Practice",
+     "lines": [
+      "1. What’s the dialogue about?",
+      "→ Answer : Fatou’s birthday and the present her classmates give her."
      ]
     }
    ]

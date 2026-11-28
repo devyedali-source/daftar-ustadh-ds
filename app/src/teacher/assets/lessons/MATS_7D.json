@@ -42,6 +42,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "L’équation x² + x + 1 = 0 n’a pas de solution réelle. En a-t-elle d’autres ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "ℂ est l’ensemble des nombres z = x + iy (x, y réels) avec i² = −1 ; x = Re(z), y = Im(z) ; z est réel si Im(z) = 0, imaginaire pur si Re(z) = 0.",
+      "Dans un repère orthonormé direct, z est l’affixe du point M(x ; y).",
+      "Conjugué : z̄ = x − iy ; il est compatible avec les opérations.",
+      "Module : |z| = OM = √(x² + y²) ; |zz’| = |z||z’| ; |z + z’| ≤ |z| + |z’| ; AB = |zB − zA|.",
+      "Argument : arg z = (u⃗ ; OM⃗) [2π] ; arg(zz’) = arg z + arg z’ ; arg(z/z’) = arg z − arg z’ ; arg(zⁿ) = n arg z.",
+      "Forme trigonométrique : z = r(cos θ + i sin θ) avec r = |z|, θ = arg z.",
+      "Équation az² + bz + c = 0 (a ≠ 0) : Δ = b² − 4ac ; si δ est une racine carrée de Δ, les solutions sont (−b ± δ)/(2a) ; à coefficients réels et Δ < 0, les solutions sont conjuguées (−b ± i√(−Δ))/(2a)."
+     ]
+    },
+    {
      "h": "Équations du second degré (exemples du manuel)",
      "lines": [
       "z² − 2z cos θ + 1 = 0 : Δ’ = −sin² θ ⇒ z = cos θ ± i sin θ.",
@@ -77,6 +95,32 @@
        "|z|",
        "−arg z"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "z = x + iy ; i² = −1.",
+      "|z| = √(x² + y²) ; AB = |zB − zA|.",
+      "arg(zz’) = arg z + arg z’.",
+      "z = r(cos θ + i sin θ).",
+      "Δ < 0 (réels) : solutions conjuguées."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Module de 3 + 4i ?",
+      "→ Réponse : 5.",
+      "Exemple 2 : Résoudre z² + z + 1 = 0.",
+      "→ Réponse : Δ = −3 ⇒ z = (−1 ± i√3)/2."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Forme trigonométrique de 1 + i et 1 − i ?",
+      "→ Solution : 1 + i = √2(cos π/4 + i sin π/4) ; 1 − i = √2(cos(−π/4) + i sin(−π/4))."
      ]
     }
    ]
@@ -120,6 +164,20 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment prouver avec les complexes qu’un triangle est rectangle isocèle ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "On note e^(iθ) = cos θ + i sin θ ; tout complexe non nul s’écrit z = re^(iθ) avec r = |z| et θ = arg z ; e^(iθ)e^(iθ’) = e^(i(θ+θ’)), 1/e^(iθ) = e^(−iθ).",
+      "Configurations (A, B, C, D distincts d’affixes zA, zB, zC, zD) : (zA − zB)/(zA − zC) réel ⇔ A, B, C alignés ; (zA − zB)/(zD − zC) réel ⇔ (AB) ∥ (CD) ; imaginaire pur ⇔ (AB) ⊥ (CD) ; (zA − zB)/(zA − zC) = ki (k ≠ 0) ⇔ ABC rectangle en A ; = ±i ⇔ rectangle isocèle en A ; de module 1 ⇔ isocèle en A ; = e^(±iπ/3) ⇔ équilatéral.",
+      "Pour Z = (z − b)/(z − a) : |Z| = MB/MA et arg Z = (MA⃗ ; MB⃗) [2π]. |Z| = 1 ⇔ M sur la médiatrice de [AB] ; Z réel ⇔ M sur (AB) ; Z imaginaire pur ⇔ M sur le cercle de diamètre [AB]."
+     ]
+    },
+    {
      "h": "Configurations",
      "lines": [],
      "table": [
@@ -154,6 +212,32 @@
      "lines": [
       "Z réel ⇔ (MA⃗ ; MB⃗) = 0 [π] ou M = B : la droite (AB) privée de A.",
       "Z imaginaire pur ⇔ (MA⃗ ; MB⃗) = π/2 [π] ou M = B : le cercle de diamètre [AB] privé de A."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "z = re^(iθ).",
+      "Quotient réel : alignement ou parallélisme.",
+      "Quotient imaginaire pur : orthogonalité.",
+      "= ±i : triangle rectangle isocèle.",
+      "|Z| = MB/MA ; arg Z = (MA⃗ ; MB⃗)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Forme exponentielle de 1 − i ?",
+      "→ Réponse : √2 e^(−iπ/4).",
+      "Exemple 2 : Que signifie (zA − zB)/(zA − zC) = i ?",
+      "→ Réponse : AB = AC et (AC⃗ ; AB⃗) = π/2 : ABC rectangle isocèle en A."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "A(2 + i), B(2i) et Z = (z − 2i)/(z − 2 − i). Ensemble des M tels que |Z| = 1 ?",
+      "→ Solution : MB = MA : la médiatrice de [AB]."
      ]
     }
    ],
@@ -241,6 +325,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une fonction continue qui change de signe s’annule-t-elle forcément ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "f est continue en a si lim(x→a) f(x) = f(a) ; si f n’est pas définie en a mais a une limite finie l, son prolongement par continuité vaut l en a.",
+      "L’image d’un intervalle par une fonction continue est un intervalle (d’un segment, un segment [m ; M]).",
+      "Théorème des valeurs intermédiaires : si f est continue sur [a ; b], tout réel k entre f(a) et f(b) a au moins un antécédent ; si de plus f est strictement monotone, il est unique ; en particulier si f(a)f(b) < 0, f s’annule. f est dérivable en x0 si [f(x0 + h) − f(x0)]/h a une limite finie f’(x0) : la tangente a pour pente f’(x0) ; une limite infinie donne une tangente verticale ; des dérivées à droite et à gauche différentes donnent un point anguleux.",
+      "(g ∘ f)’ = f’ × g’ ∘ f.",
+      "Si f’’ s’annule en a en changeant de signe, le point d’abscisse a est un point d’inflexion.",
+      "Une fonction continue strictement monotone sur I est une bijection de I sur f(I) ; si f’(x0) ≠ 0, (f⁻¹)’(y0) = 1/f’(f⁻¹(y0))."
+     ]
+    },
+    {
      "h": "Dérivées successives",
      "lines": [],
      "table": [
@@ -279,6 +380,32 @@
      "h": "Point d’inflexion (exemple)",
      "lines": [
       "f(x) = x⁴ − 6x² + 1 : f’’(x) = 12x² − 12 s’annule en ±1 en changeant de signe ⇒ I(1 ; −4) et J(−1 ; −4)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "TVI : f continue, k entre f(a) et f(b).",
+      "Monotone stricte : solution unique.",
+      "Dérivée à droite ≠ à gauche : point anguleux.",
+      "f’’ change de signe : point d’inflexion.",
+      "(f⁻¹)’(y0) = 1/f’(x0)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : (f⁻¹)’(1) pour f(x) = x⁵ + x + 1 ?",
+      "→ Réponse : f(0) = 1, f’(0) = 1 ⇒ (f⁻¹)’(1) = 1.",
+      "Exemple 2 : Pourquoi x³ − x − 1 = 0 a-t-elle une solution entre 1 et 2 ?",
+      "→ Réponse : f(1) = −1 < 0, f(2) = 5 > 0 et f est continue : TVI."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "f(x) = x⁵ + x + 1 : calculer (f⁻¹)’(3).",
+      "→ Solution : f(1) = 3 ; f’(x) = 5x⁴ + 1 ⇒ f’(1) = 6 ; (f⁻¹)’(3) = 1/6."
      ]
     }
    ],
@@ -366,6 +493,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment savoir qu’une courbe a un axe de symétrie sans la tracer ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Df est l’ensemble des réels x pour lesquels f(x) existe. f est paire si Df est symétrique par rapport à 0 et f(−x) = f(x) ; impaire si f(−x) = −f(x) ; périodique de période T si f(x + T) = f(x).",
+      "La droite x = a est axe de symétrie de C si f(2a − x) = f(x) (ou si f est paire dans le repère d’origine O’(a ; 0)) ; le point (a ; b) est centre de symétrie si f(2a − x) + f(x) = 2b.",
+      "Les théorèmes sur les limites d’une somme, d’un produit et d’un quotient laissent des formes indéterminées (∞ − ∞, 0 × ∞, ∞/∞, 0/0).",
+      "Asymptotes : si lim(x→x0) f(x) = ±∞, la droite x = x0 est asymptote verticale ; si lim(x→±∞) f(x) = l, la droite y = l est asymptote horizontale ; si lim [f(x) − (ax + b)] = 0, la droite y = ax + b est asymptote oblique.",
+      "Si f(x)/x tend vers ±∞, la courbe a une branche parabolique de direction (Oy)."
+     ]
+    },
+    {
      "h": "Exemples d’asymptotes",
      "lines": [],
      "table": [
@@ -402,6 +545,32 @@
      "lines": [
       "f(x) = x − 1 + 4/(x − 2) : asymptotes x = 2 et y = x − 1 ; f’(x) = x(x − 4)/(x − 2)².",
       "Maximum local f(0) = −3 ; minimum local f(4) = 5."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Paire : f(−x) = f(x) ; impaire : f(−x) = −f(x).",
+      "Axe x = a : f(2a − x) = f(x).",
+      "Centre (a ; b) : f(2a − x) + f(x) = 2b.",
+      "Formes indéterminées.",
+      "Asymptotes verticale, horizontale, oblique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : f(x) = x³ est-elle paire ou impaire ?",
+      "→ Réponse : Impaire : (−x)³ = −x³.",
+      "Exemple 2 : Que signifie lim(x→±∞) f(x)/x = ±∞ ?",
+      "→ Réponse : La courbe a une branche parabolique de direction (Oy)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Montrer que x = 2 est axe de symétrie de la courbe de f(x) = 4/(x(x − 4)).",
+      "→ Solution : f(4 − x) = 4/((4 − x)(−x)) = 4/(x(x − 4)) = f(x)."
      ]
     }
    ],
@@ -483,6 +652,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi ln transforme-t-elle les produits en sommes ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "ln est la fonction dérivable sur ]0 ; +∞[ de dérivée 1/x qui s’annule en 1 ; elle est strictement croissante, négative sur ]0 ; 1[, positive sur ]1 ; +∞[. ln(ab) = ln a + ln b ; ln(a/b) = ln a − ln b ; ln(aᵖ) = p ln a ; ln √a = ½ ln a. ln est une bijection de ]0 ; +∞[ sur ℝ ; e est le réel tel que ln e = 1 (e ≈ 2,718).",
+      "Limites : ln x → +∞ en +∞, → −∞ en 0⁺ ; ln x/x → 0 ; x ln x → 0 en 0⁺ ; ln(1 + h)/h → 1.",
+      "(ln u)’ = u’/u ; u’/u a pour primitive ln|u|. exp est la réciproque de ln : y = eˣ ⇔ x = ln y ; eˣ > 0 ; e^(a+b) = eᵃeᵇ ; (eˣ)’ = eˣ ; (eᵘ)’ = u’eᵘ ; eˣ → +∞ en +∞, → 0 en −∞ ; eˣ/x → +∞ ; xeˣ → 0 en −∞.",
+      "Pour a > 0 : aᵇ = e^(b ln a) ; (aˣ)’ = (ln a)aˣ ; log_a x = ln x / ln a.",
+      "Croissances comparées : eˣ/xⁿ → +∞ et ln x/xⁿ → 0 en +∞."
+     ]
+    },
+    {
      "h": "Tableau de variations de ln",
      "lines": [],
      "table": [
@@ -507,6 +692,32 @@
      "lines": [
       "lim(x→+∞) ln x/x = 0 ; lim(x→0⁺) x ln x = 0 ; lim(h→0) ln(1 + h)/h = 1.",
       "lim(x→+∞) eˣ/x = +∞ ; lim(x→−∞) xeˣ = 0 ; approximation : eʰ ≈ 1 + h près de 0."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "(ln x)’ = 1/x ; ln(ab) = ln a + ln b.",
+      "(eˣ)’ = eˣ ; e^(a+b) = eᵃeᵇ.",
+      "(ln u)’ = u’/u ; (eᵘ)’ = u’eᵘ.",
+      "aᵇ = e^(b ln a).",
+      "Croissances comparées : l’exponentielle l’emporte, le logarithme est dominé."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Dérivée de ln(x² + 1) ?",
+      "→ Réponse : 2x/(x² + 1).",
+      "Exemple 2 : Écrire 2^√3 avec l’exponentielle.",
+      "→ Réponse : 2^√3 = e^(√3 ln 2)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre ln(2x − 1) = 0.",
+      "→ Solution : 2x − 1 = 1 ⇒ x = 1 (avec 2x − 1 > 0)."
      ]
     }
    ],
@@ -594,6 +805,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "On place de l’argent à intérêts composés : comment prévoir le capital dans 10 ans ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une suite numérique est une application de ℕ (ou d’une partie de ℕ) dans ℝ ; elle est définie par une formule explicite Un = f(n) ou par une relation de récurrence U0 donné, Un+1 = f(Un).",
+      "Raisonnement par récurrence : si P(0) est vraie et si P(p) ⇒ P(p + 1), alors P(n) est vraie pour tout n.",
+      "(Un) est majorée s’il existe M tel que Un ≤ M, minorée s’il existe m tel que Un ≥ m, bornée si elle est les deux.",
+      "Sens de variation : étudier le signe de Un+1 − Un, ou comparer Un+1/Un à 1 (termes positifs), ou étudier f si Un = f(n).",
+      "Suite arithmétique de raison r : Un+1 = Un + r, Un = U0 + nr, U0 + … + Un−1 = n(U0 + Un−1)/2.",
+      "Suite géométrique de raison q : Un+1 = qUn, Un = U0qⁿ, U0 + … + Un−1 = U0(1 − qⁿ)/(1 − q) (q ≠ 1).",
+      "En particulier 1 + 2 + … + n = n(n + 1)/2."
+     ]
+    },
+    {
      "h": "Arithmétique / géométrique",
      "lines": [],
      "table": [
@@ -623,6 +852,32 @@
      "h": "Exemple : suite bornée",
      "lines": [
       "Un = sin n / n² (n ≥ 1) : |Un| ≤ 1/n² ≤ 1 ⇒ −1 ≤ Un ≤ 1."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Explicite ou par récurrence.",
+      "Récurrence : initialisation + hérédité.",
+      "Monotonie : signe de Un+1 − Un.",
+      "Arithmétique : Un = U0 + nr.",
+      "Géométrique : Un = U0qⁿ ; somme U0(1 − qⁿ)/(1 − q)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : V géométrique de raison −3 avec V4 = 81 : V0 ?",
+      "→ Réponse : V0 = 81/(−3)⁴ = 1.",
+      "Exemple 2 : U0 = 1, Un+1 = 1 + Un² : U1 et U2 ?",
+      "→ Réponse : U1 = 2 ; U2 = 5."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "U arithmétique, U0 = 2, r = 6 : U29 et S30 = U0 + … + U29 ?",
+      "→ Solution : U29 = 2 + 29 × 6 = 176 ; S30 = 30 × (2 + 176)/2 = 2 670."
      ]
     }
    ]
@@ -666,6 +921,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La suite définie par V0 = 2 et Vn+1 = 2 + 1/Vn converge-t-elle ? Vers quoi ?"
+     ]
+    },
+    {
      "h": "Exemples du manuel",
      "lines": [
       "Un = 1/n! : 0 < 1/n! ≤ 1/n ⇒ Un → 0.",
@@ -681,6 +942,32 @@
       "Un+1 = (Un + 2Vn)/3, Vn+1 = (Un + 4Vn)/5, U0 = 1, V0 = 2.",
       "Wn = Vn − Un est géométrique de raison 2/15 → 0 ; (Un) croît, (Vn) décroît : suites adjacentes.",
       "Tn = 3Un + 10Vn est constante (= 23) ⇒ limite commune l = 23/13."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Convergente : limite finie.",
+      "Croissante majorée ⇒ convergente.",
+      "Gendarmes.",
+      "Un+1 = g(Un) : limite l avec g(l) = l.",
+      "Adjacentes : même limite."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Limite de (0,5)ⁿ ?",
+      "→ Réponse : 0.",
+      "Exemple 2 : Une suite croissante et majorée par 5 converge-t-elle ?",
+      "→ Réponse : Oui (convergence monotone), vers une limite ≤ 5."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Limite de Un = (2n + 3)/(n + 1) ?",
+      "→ Solution : Un − 2 = 1/(n + 1) → 0 : Un → 2."
      ]
     }
    ],
@@ -762,6 +1049,24 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment calculer l’aire sous la courbe de eˣ entre 0 et 1 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "F est une primitive de f sur I si F’ = f.",
+      "Toute fonction continue sur un intervalle a des primitives ; elles diffèrent d’une constante ; une seule vérifie F(x0) = y0.",
+      "Primitives de composées : U’Uⁿ → Uⁿ⁺¹/(n + 1) ; U’/Uⁿ → −1/((n − 1)Uⁿ⁻¹) ; U’/√U → 2√U ; U’/U → ln|U| ; U’eᵁ → eᵁ ; U’cos U → sin U ; U’sin U → −cos U ; U’(1 + tan² U) → tan U.",
+      "L’intégrale ∫ₐᵇ f(t)dt = F(b) − F(a) ; relation de Chasles, linéarité ; si f ≥ 0 elle mesure l’aire entre la courbe, l’axe (Ox) et les droites x = a, x = b.",
+      "Positivité, comparaison, |∫f| ≤ ∫|f|.",
+      "Inégalité de la moyenne : si m ≤ f ≤ M sur [a ; b], m ≤ (1/(b − a))∫ₐᵇ f ≤ M ; la valeur moyenne est (1/(b − a))∫ₐᵇ f.",
+      "F(x) = ∫_{u(x)}^{v(x)} f(t)dt a pour dérivée v’(x)f(v(x)) − u’(x)f(u(x))."
+     ]
+    },
+    {
      "h": "Primitives des composées",
      "lines": [],
      "table": [
@@ -799,6 +1104,32 @@
      "h": "Exemple : dérivée d’une intégrale",
      "lines": [
       "F(x) = ∫_{cos x}^{sin x} √(1 − t²) dt ⇒ F’(x) = cos x·|cos x| + sin x·|sin x| ; sur [0 ; π/2], F’(x) = cos² x + sin² x = 1."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "F’ = f ; primitives à une constante près.",
+      "U’Uⁿ → Uⁿ⁺¹/(n + 1) ; U’/U → ln|U|.",
+      "∫ₐᵇ f = F(b) − F(a).",
+      "f ≥ 0 : intégrale = aire.",
+      "Valeur moyenne : (1/(b − a))∫ₐᵇ f."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : ∫₀¹ eˣ dx ?",
+      "→ Réponse : e − 1.",
+      "Exemple 2 : Valeur moyenne de x² sur [0 ; 3] ?",
+      "→ Réponse : (1/3) × 9 = 3."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Primitive F de f(x) = (2x − 1)(x² − x + 1)⁴ telle que F(1) = 2.",
+      "→ Solution : f = U’U⁴ avec U = x² − x + 1 ⇒ F = U⁵/5 + k ; F(1) = 1/5 + k = 2 ⇒ k = 9/5."
      ]
     }
    ]
@@ -839,10 +1170,48 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment calculer ∫₀^π x sin x dx alors qu’on ne connaît pas de primitive évidente ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Si F est une primitive de f, x ↦ F(λx + μ)/λ est une primitive de x ↦ f(λx + μ) (λ ≠ 0).",
+      "Intégration par parties : ∫ₐᵇ f(t)g’(t)dt = [f(t)g(t)]ₐᵇ − ∫ₐᵇ f’(t)g(t)dt (f, g dérivables à dérivées continues).",
+      "Aire entre deux courbes : si f ≤ g sur [a ; b], l’aire du domaine limité par les deux courbes et les droites x = a, x = b est ∫ₐᵇ (g − f)(x)dx (en unités d’aire)."
+     ]
+    },
+    {
      "h": "Exemples",
      "lines": [
       "J = ∫₁² x ln x dx = [x²/2 · ln x]₁² − ∫₁² x/2 dx = 2 ln 2 − 3/4.",
       "Aire entre y = x² − 2x + 2 et y = −x² + 6 sur [−1 ; 2] : ∫₋₁² (−2x² + 2x + 4)dx = 9 u.a."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Changement de variable affine.",
+      "Par parties : ∫fg’ = [fg] − ∫f’g.",
+      "Aire entre courbes : ∫(g − f)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : ∫₀¹ xeˣ dx ?",
+      "→ Réponse : Par parties : [xeˣ]₀¹ − ∫₀¹ eˣ dx = e − (e − 1) = 1.",
+      "Exemple 2 : Aire entre y = x et y = x² sur [0 ; 1] ?",
+      "→ Réponse : ∫₀¹ (x − x²)dx = 1/2 − 1/3 = 1/6."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calculer I = ∫₀^π x sin x dx.",
+      "→ Solution : f = x, g’ = sin x : I = [−x cos x]₀^π + ∫₀^π cos x dx = π."
      ]
     }
    ],
@@ -930,6 +1299,22 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Quelle fonction est égale à sa propre dérivée et vaut 1 en 0 ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une équation différentielle lie une fonction inconnue y à ses dérivées ; son ordre est celui de la dérivée la plus élevée.",
+      "Les solutions de y’ + ay = 0 sont x ↦ Ae^(−ax) ; la solution telle que y(x0) = y0 est y0e^(−a(x − x0)).",
+      "Pour y’’ + ay’ + by = 0, on résout l’équation caractéristique r² + ar + b = 0 : deux racines réelles r1, r2 : y = Ae^(r1x) + Be^(r2x) ; racine double r : y = (Ax + B)e^(rx) ; racines complexes α ± iβ : y = e^(αx)(A cos βx + B sin βx).",
+      "Il existe une unique solution vérifiant y(x0) = y0 et y’(x0) = y’0.",
+      "Avec un second membre : si g est une solution particulière, f est solution si et seulement si f − g est solution de l’équation sans second membre."
+     ]
+    },
+    {
      "h": "Solutions de y’’ + ay’ + by = 0",
      "lines": [],
      "table": [
@@ -956,6 +1341,32 @@
      "lines": [
       "g(x) = −eˣ est solution particulière : g’ − 2g = −eˣ + 2eˣ = eˣ.",
       "Solutions : y = Ae^(2x) − eˣ."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "y’ + ay = 0 ⇒ y = Ae^(−ax).",
+      "Équation caractéristique r² + ar + b = 0.",
+      "Δ > 0, Δ = 0, Δ < 0 : trois formes.",
+      "Conditions initiales : solution unique.",
+      "Second membre : solution particulière + solutions homogènes."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre y’’ + 4y = 0.",
+      "→ Réponse : r = ±2i ⇒ y = A cos 2x + B sin 2x.",
+      "Exemple 2 : Solution de y’ + 3y = 0 avec y(0) = 2 ?",
+      "→ Réponse : y = 2e^(−3x)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre y’’ − y’ − 6y = −6x − 1.",
+      "→ Solution : Solution particulière g(x) = x ; r² − r − 6 = 0 ⇒ r = 3 ou −2 ; y = Ae^(3x) + Be^(−2x) + x."
      ]
     }
    ],
@@ -1037,6 +1448,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un candidat répond au hasard à 4 questions à 3 choix. Quelle chance a-t-il d’avoir au moins 3 bonnes réponses ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Card(E × F) = np ; nombre de p-listes : nᵖ ; d’arrangements : Aₙᵖ = n!/(n − p)! ; de permutations : n! ; de combinaisons : Cₙᵖ = n!/(p!(n − p)!) ; triangle de Pascal ; binôme de Newton (a + b)ⁿ = Σ Cₙᵖ aⁿ⁻ᵖbᵖ ; un ensemble à n éléments a 2ⁿ parties.",
+      "En situation d’équiprobabilité, P(A) = card A / card Ω.",
+      "Une variable aléatoire X associe un nombre à chaque issue ; sa loi donne P(X = xi) ; sa fonction de répartition F(x) = P(X ≤ x) ; E(X) = Σ xi pi ; V(X) = E(X²) − E(X)² ; σ = √V.",
+      "Schéma de Bernoulli de paramètres (n ; p) : X, nombre de succès, suit la loi binomiale : P(X = k) = Cₙᵏ pᵏ qⁿ⁻ᵏ, E(X) = np, V(X) = npq (q = 1 − p)."
+     ]
+    },
+    {
      "h": "Exemple : trois pièces, X = nombre de « pile »",
      "lines": [],
      "table": [
@@ -1061,6 +1487,32 @@
      "lines": [
       "E(X) = 0 + 3/8 + 6/8 + 3/8 = 3/2.",
       "Au moins 3 bonnes réponses sur 4 (p = 1/3) : 8/81 + 1/81 = 9/81 = 1/9."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Aₙᵖ = n!/(n − p)! ; Cₙᵖ = n!/(p!(n − p)!).",
+      "Binôme de Newton ; 2ⁿ parties.",
+      "P(A) = card A / card Ω.",
+      "E(X) = Σxipi ; V = E(X²) − E(X)².",
+      "Binomiale : P(X = k) = Cₙᵏpᵏqⁿ⁻ᵏ ; E = np ; V = npq."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : C₅² ?",
+      "→ Réponse : 10.",
+      "Exemple 2 : Dé non truqué : probabilité d’obtenir un multiple de 3 ?",
+      "→ Réponse : 2/6 = 1/3."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "4 questions, p = 1/3 : probabilité d’exactement 3 bonnes réponses ?",
+      "→ Solution : C₄³ (1/3)³ (2/3) = 8/81."
      ]
     }
    ]
@@ -1104,10 +1556,52 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une enquête annonce 30 % de clients sinistrés ; un expert en trouve 19 sur 100. L’annonce est-elle crédible ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une densité de probabilité sur I est une fonction f continue, positive, d’intégrale 1 sur I ; alors P(a ≤ X ≤ b) = ∫ₐᵇ f(t)dt.",
+      "La loi uniforme sur [a ; b] a pour densité 1/(b − a) : la probabilité d’un intervalle est proportionnelle à sa longueur ; E(X) = (a + b)/2.",
+      "Fluctuation : si Xn suit la loi B(n ; p), la fréquence Xn/n appartient, avec une probabilité tendant vers 1 − α, à l’intervalle In = [p − uα√(p(1 − p)/n) ; p + uα√(p(1 − p)/n)] (uα = 1,96 au seuil 95 %).",
+      "Décision : si la fréquence observée f est dans In, on accepte l’hypothèse sur p ; sinon on la rejette (au risque α).",
+      "Estimation : l’intervalle de confiance [f − 1/√n ; f + 1/√n] contient la proportion p avec une probabilité d’au moins 0,95."
+     ]
+    },
+    {
      "h": "Calcul de l’intervalle de fluctuation",
      "lines": [
       "√(0,3 × 0,7/100) ≈ 0,0458 ; 1,96 × 0,0458 ≈ 0,0898.",
       "In ≈ [0,210 ; 0,390]."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Densité : ∫ f = 1 ; P(a ≤ X ≤ b) = ∫ₐᵇ f.",
+      "Loi uniforme : 1/(b − a) ; E = (a + b)/2.",
+      "In = p ± 1,96√(p(1 − p)/n).",
+      "f ∈ In : accepter ; sinon rejeter.",
+      "Confiance : f ± 1/√n."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : X uniforme sur [0 ; 4] : P(X < 1) ?",
+      "→ Réponse : 1/4.",
+      "Exemple 2 : Intervalle de confiance pour f = 0,4 et n = 400 ?",
+      "→ Réponse : [0,4 − 0,05 ; 0,4 + 0,05] = [0,35 ; 0,45]."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "n = 100, p = 0,3, f = 0,19 : décision au seuil 95 % ?",
+      "→ Solution : In ≈ [0,21 ; 0,39] ; 0,19 ∉ In : on rejette l’affirmation des 30 %."
      ]
     }
    ],

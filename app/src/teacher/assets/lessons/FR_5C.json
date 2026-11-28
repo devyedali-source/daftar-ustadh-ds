@@ -32,6 +32,21 @@
    },
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Combien de temps passez-vous chaque jour au téléphone ? Pensez-vous que cela peut avoir des effets sur la santé ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans une interview, le Dr Denis Zmirou ne conseille pas d’abandonner le portable mais d’en limiter l’usage : communications rapides (5 à 10 minutes), messages urgents, appels dans des lieux ouverts, kit mains libres en déplacement, ne pas le porter près des organes de reproduction.",
+      "Parmi les effets biologiques avérés : modifications de l’électro-encéphalogramme et des fonctions cognitives, augmentation d’une enzyme (l’ODC) ; maux de tête et sensations d’échauffement.",
+      "Les études ne sont pas concluantes sur l’effet cancérogène, mais il faut rester vigilant.",
+      "Il recommande d’indiquer la puissance des appareils sur les emballages pour que les consommateurs choisissent et que les industriels la réduisent."
+     ]
+    },
+    {
      "h": "Le texte (1/2)",
      "lines": [],
      "fig": {
@@ -100,6 +115,23 @@
       "Écrit : résumer en une phrase simple le premier paragraphe.",
       "Oral (exposé) : le téléphone portable impacte-t-il nos valeurs sociales ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Type de texte : l’interview (questions *, réponses -).",
+      "Conseil : usage limité et prudent, pas d’abandon.",
+      "Risques : effets sur le cerveau et la mémoire, maux de tête, échauffement.",
+      "Les études ne sont pas concluantes : rester vigilant.",
+      "Recommandation : afficher la puissance des téléphones."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment appelle-t-on ce type de texte ?",
+      "→ Solution : Une interview (un entretien) : questions du journaliste et réponses du spécialiste."
+     ]
     }
    ]
   },
@@ -131,6 +163,21 @@
     "a": "Le but est la fin recherchée, le moyen ce qui permet de l’atteindre ; synonyme dans le texte : « outil »."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "La machine est-elle une menace pour l’homme ou un simple outil ? Donnez un exemple."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour Saint-Exupéry, ceux qui s’effraient du progrès technique confondent but et moyen : la machine n’est pas un but mais un outil, « l’avion est un outil comme la charrue ».",
+      "Si nous croyons que la machine abîme l’homme, c’est que nous manquons de recul : cent ans de machine contre deux cent mille ans d’histoire humaine.",
+      "Nous commençons à peine à habiter cette « maison nouvelle » (le monde moderne) que nous n’avons pas fini de bâtir ; tout a changé si vite (rapports humains, travail, coutumes) que nous utilisons un langage d’hier pour un monde d’aujourd’hui.",
+      "Nous sommes « des émigrants qui n’ont pas encore fondé leur patrie »."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -192,6 +239,23 @@
       "Écrit : exposé sur les avantages et inconvénients d’une invention technologique.",
       "Oral (exposé) : l’introduction de la technologie en Mauritanie se fait-elle sans risque pour les valeurs morales ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "But ≠ moyen : la machine est un moyen (un outil).",
+      "Avertissement : ne pas confondre but et moyen.",
+      "On manque de recul pour juger la machine.",
+      "La « maison nouvelle » = le monde moderne transformé par la technique.",
+      "Image finale : des émigrants sans patrie encore fondée."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Différence entre but et moyen ? Synonyme de moyen ?",
+      "→ Solution : Le but est la fin recherchée, le moyen ce qui permet de l’atteindre ; synonyme dans le texte : « outil »."
+     ]
     }
    ]
   },
@@ -223,6 +287,20 @@
     "a": "L’homme sait déjà faire les choses pour les avoir vues ; le robot n’a d’autres connaissances que celles qu’on lui transmet."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Avez-vous déjà vu un robot ? Peut-il faire tout ce que fait un homme ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Construire un robot qui ferait le ménage et la cuisine est très compliqué : un ami sait préparer une tartine parce qu’il l’a vu faire, alors que le robot n’a d’autres connaissances que celles qu’on lui transmet ; il faut tout lui expliquer, étape par étape (programmation).",
+      "La description est ennuyeuse et longue ; mais une fois programmé, il saura le faire pour toujours.",
+      "Il faut programmer avec une minutie absolue, car l’ordinateur ne sait pas s’adapter aux imprévus ; les savants espèrent améliorer « l’intelligence artificielle » pour rendre les robots plus autonomes."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -291,6 +369,23 @@
       "Résumé : a) dégager la structure du texte (problème – exemple – limites – espoir) ; b) résumer le texte en 6 à 8 lignes.",
       "Oral (débat ou exposé) : quelles innovations techniques facilitent la vie quotidienne dans votre milieu ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "L’homme apprend en observant ; le robot ne sait que ce qu’on lui transmet.",
+      "Il faut tout expliquer au robot : c’est la programmation.",
+      "Critique : le robot ne s’adapte pas aux imprévus.",
+      "Espoir : l’intelligence artificielle.",
+      "Type : texte explicatif."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Qu’est-ce qui différencie le robot de l’homme ?",
+      "→ Solution : L’homme sait déjà faire les choses pour les avoir vues ; le robot n’a d’autres connaissances que celles qu’on lui transmet."
+     ]
     }
    ]
   },
@@ -321,6 +416,19 @@
     "a": "À des enfants, puis à des adolescents, puis à des hommes munis d’outils, enfin à de lourds géants."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les machines sont-elles nos amies ou nos maîtres ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans ce poème, Maurice Carême raconte l’évolution des machines comme une croissance humaine : d’abord elles « riaient comme des enfants » et semblaient vouloir amuser les gens ; puis elles grandirent, devinrent des adolescents, puis des hommes munis d’outils ; enfin, profitant du silence et de l’indifférence de leurs utilisateurs, elles devinrent « ces lourds géants / qui nous broient dans leurs rets ».",
+      "Les articulateurs (puis, enfin, lentement) marquent cette transformation : de l’amusement à la domination de l’homme."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -371,6 +479,22 @@
       "Oral (débat en grand groupe) : peut-on se passer aujourd’hui des ordinateurs ?",
       "Écrit : avantages et inconvénients du téléphone portable."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Comparaisons : enfants → adolescents → hommes → géants.",
+      "Articulateurs : puis, enfin, lentement.",
+      "Les utilisateurs : silence et morne indifférence.",
+      "Fin : les machines dominent l’homme (« nous broient dans leurs rets »)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "À quoi sont comparées les machines ?",
+      "→ Solution : À des enfants, puis à des adolescents, puis à des hommes munis d’outils, enfin à de lourds géants."
+     ]
     }
    ]
   },
@@ -402,6 +526,20 @@
     "a": "Par exemple : « Le portable ruine la famille »."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Le portable coûte-t-il cher à votre famille ? Qu’achète-t-on en premier : du crédit ou de la nourriture ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans ce poème, Djibril Zakaria Sall montre que l’arrivée du portable, avec « un lot de mots et de maux », a ruiné les familles : les économies fondent, la cuisine chancelle, on emprunte pour charger le portable alors que les ventres sont creux ; tout le monde parle sans se soucier de la durée, appelle Paris et New York pour des futilités.",
+      "« Sonne le portable / Sonne le glas de l’argent » : le portable conduit la famille à l’adversité.",
+      "L’auteur emploie le pronom indéfini « on » pour généraliser le comportement à tous."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -474,6 +612,23 @@
       "Écrit : contrairement à l’auteur, rédiger un poème montrant les aspects positifs du portable.",
       "Oral (individuel) : chacun raconte son expérience personnelle avec le portable."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Le portable : source de « mots et de maux » (jeu de mots).",
+      "Maux : dépenses inutiles, dettes, faim, futilités.",
+      "Comportement des utilisateurs : irresponsable, dépensier.",
+      "Pronom « on » : généralisation.",
+      "« Sonne le glas de l’argent » : ruine de la famille."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Autre titre au poème ?",
+      "→ Solution : Par exemple : « Le portable ruine la famille »."
+     ]
     }
    ]
   },
@@ -504,6 +659,22 @@
     "a": "Oui : le texte montre comment la télévision transforme (et dégrade) la vie de famille."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Chez vous, regarde-t-on la télévision pendant les repas ? Que se passe-t-il alors ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Une mère de famille raconte que ses voisins, les Fournier, formaient la famille la plus unie : au dîner chacun racontait sa journée.",
+      "Depuis qu’ils ont installé un téléviseur dans la salle à manger, personne ne remarque plus la cuisine de Mme Fournier ; le choix des programmes est devenu le seul sujet de conversation et le père s’isole.",
+      "Sa propre famille a mis le poste au salon pour protéger le repas, mais la situation est pire : les enfants mangent froid ou quittent la table pour un western ou un feuilleton, ne font plus de sport, et leur travail scolaire et leur santé en souffrent.",
+      "Un soir sans télé devient une soirée triste.",
+      "« Si c’était à refaire… » : elle regrette l’achat."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -564,6 +735,22 @@
       "Écrit (15 à 20 lignes) : la télévision modifie-t-elle la vie d’une famille mauritanienne ? Donnez vos arguments.",
       "Oral (débat) : d’autres raisons de ne pas aimer la télévision ? « La TV réduit le temps de lecture » : est-ce vrai pour vous ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "La télévision a détruit l’harmonie et le dialogue familiaux.",
+      "Dangers : fin des conversations, isolement, repas perturbés, plus de sport, baisse des résultats scolaires et de la santé.",
+      "Dépendance : sans télé, les enfants s’ennuient.",
+      "Regret final : « Si c’était à refaire… »."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Le titre correspond-il à l’idée essentielle ?",
+      "→ Solution : Oui : le texte montre comment la télévision transforme (et dégrade) la vie de famille."
+     ]
     }
    ]
   },
@@ -595,6 +782,21 @@
     "a": "Il combine en même temps l’image (vidéo) et le son (audio)."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quelle émission regardez-vous le plus ? Vous informe-t-elle, vous éduque-t-elle ou vous divertit-elle ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La télévision est un média de masse qui permet à un grand nombre de gens de capter chez eux des émissions ; sa particularité est de combiner l’image et le son.",
+      "Elle a deux modes de diffusion : le direct (l’événement est vu au moment où il se passe) et le différé (l’émission est préparée, enregistrée et diffusée plus tard).",
+      "Le plus puissant des médias électroniques, elle remplit plusieurs fonctions : informative (journal télévisé, actualités, magazines) et éducative (flore, faune, hygiène, civisme, code de la route, langues, alphabétisation…).",
+      "Le sens d’une émission dépend moins de l’intention des auteurs que de l’esprit du téléspectateur : il faut la regarder intelligemment, avec esprit critique ; ainsi elle peut être un puissant facteur de développement et d’unité nationale."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -656,6 +858,23 @@
       "Écrit : expliquer et discuter « La TV peut constituer dans un pays un puissant facteur de développement et d’unité nationale ».",
       "Oral : la TVM est apparue en 1981, 21 ans après l’indépendance : apparition tardive ou précoce ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Particularité : image + son.",
+      "Direct : en même temps que l’événement ; différé : préparé et diffusé plus tard.",
+      "Fonctions : informative, éducative.",
+      "Le sens dépend du téléspectateur : refuser la passivité, garder l’esprit critique.",
+      "La TV peut être un facteur de développement et d’unité nationale."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Particularité de ce média ?",
+      "→ Solution : Il combine en même temps l’image (vidéo) et le son (audio)."
+     ]
     }
    ]
   },
@@ -687,6 +906,23 @@
     "a": "Ce qui est dit oralement s’oublie, alors que l’écrit reste ; on peut nuancer : la tradition orale a longtemps transmis les connaissances."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels journaux connaissez-vous en Mauritanie ? Les lisez-vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Longtemps, l’homme n’a communiqué que par la parole ; mais « les paroles s’envolent », d’où la naissance de l’écriture et la recherche du support idéal : pierre, os, peau, papyrus, puis papier inventé par les Chinois au IIe siècle av.",
+      "J.-C.",
+      "L’imprimerie de Gutenberg (XVe siècle) a permis de reproduire rapidement textes et illustrations ; apparaissent alors les périodiques (mensuels, hebdomadaires puis quotidiens) qui commentent les faits.",
+      "La liberté de la presse permet la libre communication des opinions, mais une partie de la presse reste soumise à la censure.",
+      "Des journaux spécialisés (sport, jeunes, femmes) attirent les publicitaires.",
+      "La situation diffère selon le niveau de vie, d’alphabétisation et d’industrialisation ; la mission de la presse reste d’informer le plus objectivement possible."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -738,6 +974,23 @@
       "Oral : quel doit être le combat de la presse écrite ?",
       "Enquête : presse écrite / presse orale ; situation de la presse écrite en Mauritanie (compte rendu et débat)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Parole → écriture → supports (pierre, os, peau, papyrus, papier).",
+      "Gutenberg (XVe s.) : l’imprimerie et les premiers périodiques.",
+      "Liberté de la presse / censure.",
+      "Presse spécialisée et publicité.",
+      "Mission : informer objectivement."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "« Les paroles s’envolent… » : sens ?",
+      "→ Solution : Ce qui est dit oralement s’oublie, alors que l’écrit reste ; on peut nuancer : la tradition orale a longtemps transmis les connaissances."
+     ]
     }
    ]
   },
@@ -769,6 +1022,19 @@
     "a": "On pousse le lecteur à donner de l’argent."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Une photo ou un long article : lequel vous touche le plus ? Pourquoi ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Paul Almazy présente les avantages de la photo sur le texte : la rapidité et la facilité de lecture (prise de connaissance immédiate, comme les panneaux routiers) ; la densité sémantique (une petite photo contient beaucoup d’informations) ; la mémorisation (on se souvient mieux de ce qu’on a vu que de ce qu’on a lu) ; et surtout le pouvoir de sensibilisation, infiniment plus fort.",
+      "Exemple : en France, un appel aux dons pour rendre les bâtiments publics accessibles aux handicapés reste sans succès, mais dès que le journal publie la photo d’un handicapé bloqué devant l’escalier de la mairie, les dons pleuvent."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -823,6 +1089,23 @@
       "Écrit : repérer les idées essentielles puis résumer le texte en 6 à 8 lignes.",
       "Oral (débat) : « On se souvient généralement mieux et plus longtemps de ce qu’on a vu que de ce qu’on a lu »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Avantage 1 : rapidité et facilité de lecture.",
+      "Avantage 2 : densité sémantique.",
+      "Avantage 3 : meilleure mémorisation.",
+      "Avantage essentiel : pouvoir de sensibilisation.",
+      "Exemple : la photo du handicapé déclenche les dons."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "« On ouvre le portefeuille du lecteur » ?",
+      "→ Solution : On pousse le lecteur à donner de l’argent."
+     ]
     }
    ]
   },
@@ -854,6 +1137,22 @@
     "a": "Selles plus fréquentes, moins formées et plus liquides ; fièvre, perte d’appétit, nausées, vomissements, maux de ventre, crampes."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels conseils donne-t-on chez vous à une maman dont l’enfant a la diarrhée ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La diarrhée est très fréquente chez les nourrissons et les enfants : selles plus fréquentes, moins formées et plus liquides, parfois avec fièvre, perte d’appétit, nausées, vomissements, maux de ventre.",
+      "Elle est dangereuse car elle draine l’eau et les sels minéraux du corps : sans remplacement rapide, l’enfant se déshydrate.",
+      "La diarrhée aiguë est brutale et de courte durée, la chronique dure des semaines voire des mois ; la diarrhée aiguë est une des causes majeures de mortalité infantile, surtout là où l’hygiène est mauvaise.",
+      "Causes : virus (rotavirus), bactéries (intoxication alimentaire), parasites, champignons, transmis par les selles, la salive, les mains, les aliments contaminés.",
+      "Traitement : la réhydratation par les solutions de réhydratation orale (SRO) et des liquides (eau sucrée et salée, eau de riz, bouillon…), en évitant lait et jus purs ; si elle persiste, médicaments ou hospitalisation."
+     ]
+    },
     {
      "h": "Le texte (1/3)",
      "lines": [],
@@ -958,6 +1257,23 @@
       "Écrit : résumer le texte au 1/3 de sa longueur.",
       "Oral (enquête-interview) : interroger des agents de santé sur les maladies infantiles en Mauritanie (nombre de cas, prise en charge, traitements, moyens)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Signes : selles fréquentes et liquides, fièvre, vomissements…",
+      "Danger : la déshydratation.",
+      "Aiguë (courte) ≠ chronique (semaines, mois).",
+      "Causes : virus, bactéries, parasites, champignons.",
+      "Traitement essentiel : réhydratation (SRO)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment se manifeste la diarrhée ?",
+      "→ Solution : Selles plus fréquentes, moins formées et plus liquides ; fièvre, perte d’appétit, nausées, vomissements, maux de ventre, crampes."
+     ]
     }
    ]
   },
@@ -989,6 +1305,23 @@
     "a": "Le SARS-CoV-2."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Vous souvenez-vous de la période du confinement ? Qu’avez-vous appris sur la protection contre les maladies ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La Covid-19 est une pneumonie causée par un virus de la famille des coronavirus, le SARS-CoV-2.",
+      "Le réservoir est probablement animal : il est très proche d’un virus de chauve-souris, et le pangolin pourrait être un hôte intermédiaire, mais l’animal n’a pas été identifié avec certitude.",
+      "Le virus se transmet par les gouttelettes respiratoires (toux, éternuement) et les surfaces contaminées.",
+      "Symptômes fréquents : fièvre, toux sèche, fatigue ; d’autres moins courants.",
+      "Environ 80 % des patients guérissent sans hospitalisation ; une personne sur cinq présente des symptômes graves, surtout les personnes âgées et malades.",
+      "Protection : ne pas se toucher les yeux, le nez, la bouche avec des mains sales ; mesures « barrières » : lavage des mains, tousser dans son coude, mouchoirs à usage unique, ne pas se serrer la main ; désinfecter les surfaces."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1055,6 +1388,23 @@
       "Débat : pour ou contre le confinement ?",
       "Action sociale : campagne de sensibilisation en petits groupes."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Virus : SARS-CoV-2.",
+      "Origine animale probable (chauve-souris, pangolin), non certaine.",
+      "Transmission : gouttelettes et surfaces.",
+      "Symptômes : fièvre, toux sèche, fatigue.",
+      "Prévention : gestes barrières et désinfection."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Nom du virus ?",
+      "→ Solution : Le SARS-CoV-2."
+     ]
     }
    ]
   },
@@ -1086,6 +1436,22 @@
     "a": "Syndrome d’immunodéficience acquise ; le VIH."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi est-il important d’être bien informé sur les maladies graves comme le SIDA ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le SIDA (syndrome d’immunodéficience acquise) est causé par le VIH (virus de l’immunodéficience humaine), qui détruit les cellules T CD4, défenses naturelles du corps : des infections anodines peuvent alors s’aggraver ou entraîner le décès, et le risque de cancer augmente.",
+      "Le VIH se transmet par les liquides corporels (sang, sperme, sécrétions vaginales, lait maternel) au contact d’une muqueuse ; le plus souvent lors de rapports non protégés ou par l’échange de seringues ; pas par les baisers.",
+      "Les symptômes apparaissent 2 à 12 semaines après la contamination et ressemblent à ceux de la grippe ; seul un test de séropositivité permet de déceler le virus.",
+      "Prévention : protection lors des rapports, limitation des partenaires, ne pas réutiliser seringues, lames de rasoir, couteaux.",
+      "Traitement : la polythérapie antirétrovirale (au moins 3 médicaments), qui ne guérit pas mais réduit le virus et renforce le système immunitaire."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1150,6 +1516,23 @@
       "Écrit : résumer le texte au 1/4 de sa longueur.",
       "Oral : interview d’un médecin infectiologue ; exposé sur le SIDA en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "SIDA = syndrome d’immunodéficience acquise ; virus : VIH.",
+      "Le VIH détruit les défenses immunitaires (cellules T CD4).",
+      "Transmission : sang, liquides sexuels, lait maternel ; seringues.",
+      "Signes semblables à la grippe ; seul le test permet le diagnostic.",
+      "Traitement : polythérapie, qui ne guérit pas."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Que signifie SIDA ? Quel virus ?",
+      "→ Solution : Syndrome d’immunodéficience acquise ; le VIH."
+     ]
     }
    ]
   },
@@ -1181,6 +1564,22 @@
     "a": "Une bactérie : Treponema pallidum (la question parle de « virus », mais le texte dit bien « bactérie »)."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quelle découverte de 1945 a changé la lutte contre de nombreuses infections ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La syphilis est une infection sexuellement transmissible causée par une bactérie, Treponema pallidum.",
+      "Elle se transmet lors de relations sexuelles avec un partenaire infecté, plus rarement par l’échange de seringues ou une lésion cutanée, et de la mère à l’enfant pendant la grossesse.",
+      "Au stade primaire, une ulcération non douloureuse apparaît en général 3 semaines après la contamination ; le stade secondaire apparaît 3 à 10 semaines après et dure de 4 mois à 2-3 ans, avec des éruptions sur la peau.",
+      "Non traitée, elle peut atteindre le cœur et le cerveau et causer la mort.",
+      "Elle est beaucoup moins répandue depuis la découverte des antibiotiques en 1945."
+     ]
+    },
     {
      "h": "Compréhension",
      "lines": [],
@@ -1221,6 +1620,23 @@
       "Écrit : résumer le texte au 1/3 de sa longueur.",
       "Oral : interview d’un médecin infectiologue sur la situation en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Agent : une bactérie (Treponema pallidum).",
+      "Transmission : sexuelle, seringues, mère-enfant.",
+      "Stade primaire puis secondaire (4 mois à 2-3 ans).",
+      "Complications : cœur, cerveau, décès.",
+      "Remède : les antibiotiques (1945)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Agent responsable ?",
+      "→ Solution : Une bactérie : Treponema pallidum (la question parle de « virus », mais le texte dit bien « bactérie »)."
+     ]
     }
    ]
   },
@@ -1252,6 +1668,22 @@
     "a": "Gonorrhée ou blennorragie ; surtout les moins de trente ans."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une maladie sans symptômes peut-elle être plus dangereuse qu’une maladie visible ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La gonorrhée (aussi appelée blennorragie) est une infection sexuellement transmissible qui touche surtout les moins de trente ans, en particulier les hommes.",
+      "Elle est due à une bactérie, le gonocoque, transmise lors de rapports non protégés.",
+      "Elle peut ne provoquer aucun symptôme tout en restant contagieuse ; sinon, elle cause des brûlures en urinant et des écoulements.",
+      "Non traitée, elle peut provoquer des inflammations à l’origine d’infertilité.",
+      "Les complications sont plus fréquentes chez la femme car la maladie y est souvent sans symptôme, donc découverte tard."
+     ]
+    },
     {
      "h": "Compréhension",
      "lines": [],
@@ -1288,6 +1720,23 @@
       "Écrit : résumer le texte au 1/3 de sa longueur.",
       "Oral : interview d’un médecin infectiologue sur les IST en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Agent : une bactérie, le gonocoque.",
+      "Touche surtout les moins de 30 ans.",
+      "Souvent sans symptôme mais contagieuse.",
+      "Complication principale : l’infertilité.",
+      "Plus grave chez la femme : souvent sans signe, donc non traitée."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Noms et âge touché ?",
+      "→ Solution : Gonorrhée ou blennorragie ; surtout les moins de trente ans."
+     ]
     }
    ]
   },
@@ -1319,6 +1768,22 @@
     "a": "Le HSV-2."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "À quoi servent les chiffres dans un article scientifique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’infection au virus HSV-2 se transmet par voie sexuelle et cause l’herpès génital ; elle perdure toute la vie.",
+      "Selon l’OMS, elle touchait 417 millions de personnes en 2012 (267 millions de femmes, 150 millions d’hommes), surtout en Afrique (31,5 %) puis en Amérique (14,4 %).",
+      "Elle est très souvent asymptomatique : la plupart des porteurs ignorent leur état ; seuls 10 à 20 % ont eu un diagnostic.",
+      "Le traitement antiviral (acyclovir) réduit la gravité et la fréquence des symptômes sans guérir l’herpès, car il n’élimine pas les virus « dormants ».",
+      "Prévention : le préservatif correctement utilisé ; les femmes enceintes doivent alerter les professionnels de santé."
+     ]
+    },
     {
      "h": "Compréhension",
      "lines": [],
@@ -1355,6 +1820,23 @@
       "Écrit : résumer le texte au 1/3 de sa longueur.",
       "Oral : interview d’un médecin infectiologue."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Virus : HSV-2.",
+      "Chiffres OMS (2012) : 417 millions ; Afrique 31,5 %, Amérique 14,4 %.",
+      "Souvent asymptomatique.",
+      "Traitement antiviral qui ne guérit pas.",
+      "Rôle des chiffres : rendre l’information précise et crédible."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Virus responsable ?",
+      "→ Solution : Le HSV-2."
+     ]
     }
    ]
   },
@@ -1385,6 +1867,22 @@
     "a": "Oui : « Nous avons tous la possibilité d’agir pour diminuer notre impact sur l’environnement. »"
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que pouvez-vous faire, chez vous et à l’école, pour moins gaspiller ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Aperçu du thème : le développement durable est « un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures de répondre aux leurs ».",
+      "Il a trois aspects : environnemental, économique et sociologique (Ignacy Sachs en distingue cinq : sociale, économique, écologique, spatiale, culturelle).",
+      "Le texte montre que chacun peut agir pour diminuer son impact sur l’environnement : le développement durable exige de changer notre système économique et nos modes de vie pour réduire la consommation des ressources naturelles, tout en recherchant une meilleure répartition des richesses à l’échelle planétaire.",
+      "Plus de la moitié de l’empreinte écologique humaine vient de la consommation d’énergies (déplacements, transport, chauffage), puis de l’alimentation.",
+      "À l’école aussi on peut agir : papier recyclé, deux faces des feuilles, tri des déchets, choix des menus, venir à pied, en vélo ou en bus."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1479,6 +1977,22 @@
       "Écrit : développer en 10 lignes l’idée « À l’école aussi, on peut agir pour le développement durable. »",
       "Oral (débat) : quel rôle pouvez-vous jouer pour protéger l’environnement dans votre localité ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Développement durable = répondre aux besoins du présent sans compromettre ceux des générations futures.",
+      "Trois aspects : environnemental, économique, social.",
+      "Empreinte écologique : d’abord l’énergie, puis l’alimentation.",
+      "Chacun peut agir à son échelle, y compris à l’école."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "L’homme peut-il améliorer son comportement ?",
+      "→ Solution : Oui : « Nous avons tous la possibilité d’agir pour diminuer notre impact sur l’environnement. »"
+     ]
     }
    ]
   },
@@ -1509,6 +2023,22 @@
     "a": "Il croyait les ressources de la nature inépuisables et ne pensait pas à la protéger."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les ressources de la nature sont-elles inépuisables ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Longtemps l’homme a cru inépuisables les ressources de la nature.",
+      "Depuis quelques décennies, la situation se retourne : à cause de la prolifération des humains, de l’extension des besoins et des pouvoirs nés du progrès des sciences et des techniques, l’homme devient un adversaire pour la nature : il en épuise les ressources ou y introduit détérioration et déséquilibre.",
+      "Il doit donc surveiller sa conduite et protéger la nature contre lui-même.",
+      "Ce souci concerne désormais hygiénistes, médecins, sociologues, économistes, partis politiques et chefs d’État.",
+      "Motifs : en défendant la nature, l’homme se défend lui-même (santé, patrimoine héréditaire) : c’est une tâche d’hygiène planétaire ; et les biologistes refusent la disparition de tant d’espèces vivantes."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1603,6 +2133,22 @@
       "Écrit : développer en 10 lignes : « En défendant la nature, l’homme se défend lui-même. »",
       "Oral : enquête auprès des agents de protection de la nature ; interview d’un agent des eaux et forêts."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Erreur passée : croire la nature inépuisable.",
+      "Causes : surpopulation, besoins accrus, puissance technique.",
+      "Motif 1 : hygiène planétaire (l’homme se protège lui-même).",
+      "Motif 2 : préserver les espèces (biologistes)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle erreur l’homme faisait-il ?",
+      "→ Solution : Il croyait les ressources de la nature inépuisables et ne pensait pas à la protéger."
+     ]
     }
    ]
   },
@@ -1633,6 +2179,22 @@
     "a": "« Beaucoup d’avantages, mais aussi beaucoup de défauts. »"
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comptez les objets en plastique autour de vous en classe."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le texte fait l’inventaire des objets en plastique de la cuisine et montre que nous vivons à « l’âge du plastique ».",
+      "La phrase « Beaucoup d’avantages, mais aussi beaucoup de défauts » annonce sa structure.",
+      "Avantages : léger, résistant aux chocs, durable, rigide ou flexible, transparent ou opaque, il remplace le papier, le verre…, et coûte généralement moins cher.",
+      "Défauts : facilement inflammable, la plupart ne sont pas biodégradables ; jetés le long des routes et sur les plages, ils dégradent l’environnement.",
+      "Des recherches visent des plastiques biodégradables et le recyclage, mais sans résultats encore probants."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1723,6 +2285,22 @@
       "Écrit : reformuler l’idée directrice de chaque paragraphe, puis résumer le texte en 3 ou 4 phrases.",
       "Oral : dialogue ingénieur / membre d’une ONG ; débat : la sanction est-elle le meilleur moyen de lutter contre ceux qui dégradent l’environnement ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Phrase-annonce : « Beaucoup d’avantages, mais aussi beaucoup de défauts. »",
+      "Articulations : ainsi, mais, de ce fait, enfin, par ailleurs.",
+      "Plan : 1) présence du plastique 2) avantages 3) défauts 4) recherches.",
+      "Biodégradable : détruit par l’action des éléments naturels."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Phrase qui annonce la structure ?",
+      "→ Solution : « Beaucoup d’avantages, mais aussi beaucoup de défauts. »"
+     ]
     }
    ]
   },
@@ -1753,6 +2331,21 @@
     "a": "Ex. : « Manantali : un barrage au service de qui ? »"
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que savez-vous de l’OMVS et des barrages de Diama et de Manantali ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les barrages produisent de l’électricité, fournissent l’eau potable et l’eau d’irrigation, régulent les crues et la navigation ; l’électricité ne doit pas être privilégiée au détriment des besoins des populations locales (pêche, irrigation).",
+      "Après des sécheresses, le Sénégal, la Mauritanie et le Mali ont décidé de construire le barrage de Manantali (sur le Bafing, au Mali) et le barrage anti-sel de Diama.",
+      "Mais l’irrigation a tardé, aucun bateau n’est passé par l’écluse de Diama, et la culture de décrue et la pêche (environ quinze mille personnes) ont été perturbées : les crues artificielles ont été mal gérées, des agriculteurs ont afflué vers les villes.",
+      "Avec la centrale (lignes vers Bamako, Dakar, Nouakchott), il faut partager l’eau entre énergie et crue ; la gestion d’un tel ouvrage exige la concertation de tous."
+     ]
+    },
     {
      "h": "Le texte (1/3)",
      "lines": [],
@@ -1831,6 +2424,22 @@
       "Écrit : idée principale de chaque paragraphe puis résumé en 8 à 10 lignes ; développer : « La production d’électricité ne doit pas être systématiquement privilégiée au détriment des besoins des populations locales. »",
       "Oral (enquête) : un problème d’environnement chez nous (avancée du désert, réchauffement climatique, barrages) : causes et solutions."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Usages : électricité, eau potable, irrigation, régulation des crues, navigation.",
+      "Manantali (Mali, Bafing) et Diama (anti-sel).",
+      "Problèmes : irrigation en retard, navigation nulle, crues artificielles mal gérées.",
+      "Idée directrice : un barrage doit servir les intérêts de tous, par la concertation."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Titre ?",
+      "→ Solution : Ex. : « Manantali : un barrage au service de qui ? »"
+     ]
     }
    ]
   },
@@ -1862,6 +2471,19 @@
     "a": "Ex. : « Le progrès médical et ses limites »."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Qu’avez-vous retenu de vos années de collège en français ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Cette phase tient lieu d’évaluation diagnostique pour les élèves qui entrent au lycée.",
+      "Le texte d’appui porte sur le progrès médical : il a amélioré la qualité de vie des patients et les chances de guérison, mais on a toujours besoin de recherche, car on ne comprend encore que rudimentairement les causes de nombreuses maladies ; les traitements du cancer, du diabète, des maladies neurologiques et de la maladie d’Alzheimer doivent encore progresser."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1927,6 +2549,23 @@
      "lines": [
       "Essai : à quel défi majeur la société mauritanienne est-elle confrontée aujourd’hui dans le domaine de la santé ? (10 lignes)"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Compréhension : titre, idées principales.",
+      "Vocabulaire : expliquer, trouver des mots de la même famille.",
+      "Conjugaison : futur simple, imparfait.",
+      "Grammaire : accords après changement du sujet.",
+      "Essai : donner son avis en 10 lignes."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Titre ?",
+      "→ Solution : Ex. : « Le progrès médical et ses limites »."
+     ]
     }
    ]
   },
@@ -1957,6 +2596,20 @@
     "a": "alors que (opposition)"
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Lisez un paragraphe sans aucun mot de liaison : que remarquez-vous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les connecteurs (mots-outils) relient les phrases et les propositions et organisent le texte.",
+      "Il y en a trois sortes (annexe p.",
+      "75) : temporels (date, succession, fréquence, durée : hier, d’abord, puis, enfin, souvent, longtemps…), surtout dans le récit et l’explication ; spatiaux (ici, là-bas, devant, à gauche…), surtout dans la description ; logiques, qui expriment les relations entre les idées dans l’explication et l’argumentation : addition, cause, conséquence, opposition, condition, illustration, conclusion…"
+     ]
+    },
     {
      "h": "Compréhension",
      "lines": [],
@@ -2047,6 +2700,22 @@
       "Exercices 1, 3, 4, 5 et 6 du livre (p. 53-56) : compléter des textes avec les connecteurs proposés.",
       "Écrire un paragraphe argumentatif en utilisant au moins cinq connecteurs logiques différents."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Temporels : d’abord, puis, ensuite, enfin, longtemps…",
+      "Spatiaux : ici, là-bas, devant, au loin…",
+      "Logiques : relations entre les idées (argumentation).",
+      "Un même connecteur peut changer de valeur selon le contexte (ainsi, or, et)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Nous n’avons pas trouvé cette pièce bonne (…) la critique était enthousiaste.",
+      "→ Solution : alors que (opposition)"
+     ]
     }
    ]
   },
@@ -2077,6 +2746,20 @@
     "a": "Communiquer avec le monde entier ; utile pour devoirs et exposés ; recherches sans se déplacer ; familiariser avec l’informatique ; source de savoir inépuisable ; échanges entre écoles."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Internet à l’école : bonne ou mauvaise idée ? Levez la main pour « oui », « non », « oui, mais »."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Exercice 1 : treize propos d’élèves sur « L’Internet à l’école, est-ce une bonne chose ? » sont à classer en trois colonnes : OUI (avantages), NON (inconvénients), OUI, MAIS (apports et limites).",
+      "Exercice 2 : « Peut-on amener son téléphone à l’école ? » Un représentant des chefs d’établissement explique pourquoi les jeunes veulent un portable (donner sa position aux parents, communiquer avec les copains, regarder des vidéos, se sentir plus grand), puis les problèmes qu’il pose (il perturbe les cours, isole à la récré, coûte cher et suscite vols et envie, expose au harcèlement, rend « accro »).",
+      "Il conclut à deux solutions : l’accepter mais éteint, ou l’interdire."
+     ]
+    },
     {
      "h": "Compréhension",
      "lines": [],
@@ -2109,6 +2792,22 @@
       "Exercice 1 : remplir le tableau OUI / NON / OUI, MAIS.",
       "Exercice 2 : rédiger un texte de 15 à 20 lignes donnant son avis sur le téléphone portable à l’école."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Argument = idée qui justifie une position.",
+      "Classer : pour / contre / nuancé (oui, mais).",
+      "Chaque argument s’appuie sur un exemple.",
+      "Conclure en prenant clairement position."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Arguments OUI (Internet) ?",
+      "→ Solution : Communiquer avec le monde entier ; utile pour devoirs et exposés ; recherches sans se déplacer ; familiariser avec l’informatique ; source de savoir inépuisable ; échanges entre écoles."
+     ]
     }
    ]
   },
@@ -2139,6 +2838,22 @@
     "a": "Divertir, faire de la publicité, informer."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Racontez en une phrase le dernier film ou la dernière émission que vous avez vus."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Résumer, c’est mettre en évidence l’essentiel et restituer les idées en les reformulant dans l’ordre du texte, sans rien ajouter et au même niveau de langue (annexe p.",
+      "77).",
+      "Étapes : 1) plusieurs lectures (idée principale, type de texte, auteur) ; 2) exploitation par paragraphe (idée centrale, mots clés, articulateurs) ; 3) au brouillon, reformuler les idées principales sans détails superflus ni répétitions ; 4) rédiger en articulant les idées par des mots de liaison ; 5) vérifier : pas de répétitions, ni commentaire ni jugement personnel.",
+      "À éviter : recopier des morceaux de phrases, citer le texte, retenir les exemples.",
+      "Le texte d’appui (exercice 3) oppose avantages et inconvénients de la télévision."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2203,6 +2918,22 @@
       "Exercice 3 : résumer le 1er paragraphe (138 mots) au 1/4, soit environ 35 mots.",
       "Exercice 4 : extrait sur le progrès et les médicaments (97 mots) : structure puis résumé en 24 mots environ."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Lire → analyser → reformuler → rédiger → vérifier.",
+      "Respecter l’ordre du texte et le système d’énonciation.",
+      "Supprimer exemples, répétitions, citations.",
+      "Respecter le nombre de mots (± 10 %)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Fonctions de la télévision ?",
+      "→ Solution : Divertir, faire de la publicité, informer."
+     ]
     }
    ]
   },
@@ -2233,6 +2964,12 @@
     "a": "D’Internet."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "« Sur Internet, il y a le pire comme il y a le meilleur. » Êtes-vous d’accord ?"
+     ]
+    },
     {
      "h": "Compréhension",
      "lines": [],
@@ -2278,6 +3015,22 @@
       "Exercice 5 et 6 : remplir le tableau des questions préliminaires puis rédiger l’introduction.",
       "Résumés courts : extraits sur le progrès (87 mots → 22 mots ; 101 mots → 25 mots)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Introduction : amener, poser, annoncer le plan.",
+      "Développement : une idée + un exemple par paragraphe, transitions.",
+      "Conclusion : réponse à la problématique + ouverture.",
+      "Quatre questions pour analyser le sujet."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "De quoi parle le sujet (exercice 5) ?",
+      "→ Solution : D’Internet."
+     ]
     }
    ]
   },
@@ -2308,6 +3061,19 @@
     "a": "Un fait précis qui illustre une idée pour la rendre concrète et convaincante."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment un auteur rend-il son argument convaincant ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Exercice 7 : un texte sur la mortalité infanto-juvénile, plus élevée chez les garçons sauf en Chine, en Inde, au Népal et au Pakistan, où les garçons reçoivent plus de soins et une meilleure alimentation ; la survie augmente surtout dans les foyers riches, en ville et quand la mère a été scolarisée ; le sida, le paludisme et les guerres aggravent la mortalité.",
+      "Exercice 8 : un texte sur les fonctions informative et éducative de la télévision ; le sens d’une émission dépend de l’esprit du téléspectateur, qui doit regarder avec réflexion et esprit critique ; la télévision peut être un facteur de développement et d’unité nationale."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -2362,6 +3128,22 @@
       "Exercice 7 : résumer le 1er paragraphe au 1/3 (33 mots environ).",
       "Exercice 8 : structure, résumé des paragraphes 1 et 2 au 1/4, introduction du sujet « La télévision est un moyen d’éducation pour les élèves »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Étapes du résumé : lire, analyser, reformuler, rédiger, vérifier.",
+      "L’exemple illustre une idée pour la rendre concrète et convaincante.",
+      "Types d’exemples : concret, donnée chiffrée, expérience vécue, cas.",
+      "Télévision : informer (actualités) / éduquer (apprendre mieux ce qu’on savait peu)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Définition de l’exemple ?",
+      "→ Solution : Un fait précis qui illustre une idée pour la rendre concrète et convaincante."
+     ]
     }
    ]
   },
@@ -2392,6 +3174,21 @@
     "a": "Plus que l’absence de maladie : la vitalité, la forme et l’énergie."
    },
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "L’homme peut-il tout observer avec ses seuls sens ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Exercice 9 (S.",
+      "Miller) : la santé est vitalité, forme et énergie ; le confort ne va pas de pair avec la santé ; l’organisme mène un combat permanent contre bactéries, virus et microbes ; contrairement à une machine qui s’use quand on s’en sert, le corps s’affaiblit si on ne l’utilise pas : il faut s’entraîner chaque jour.",
+      "Exercice 10 (Claude Bernard, 1865) : l’homme observe peu de phénomènes avec ses sens ; il a amplifié ses organes avec des appareils et des instruments ; l’investigation est simple (les sens suffisent) ou complexe (des moyens variés rendent accessibles des phénomènes cachés).",
+      "Lectures (« Je peux lire aussi ») : le progrès scientifique et ses bienfaits, l’énergie solaire et les gaz à effet de serre, l’intelligence artificielle, la robotisation et l’emploi."
+     ]
+    },
     {
      "h": "Compréhension",
      "lines": [],
@@ -2432,6 +3229,22 @@
       "Exercice 9 : résumer au 1/3.",
       "Exercice 10 : plan détaillé puis résumé au 1/4.",
       "Lecture : choisir un des textes p. 70-72 et en présenter l’idée principale à la classe."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Santé = vitalité, forme, énergie.",
+      "Une vie trop facile affaiblit l’organisme.",
+      "Investigation simple (sens) / complexe (instruments).",
+      "Plan détaillé → résumé au 1/4."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Définition de la santé ?",
+      "→ Solution : Plus que l’absence de maladie : la vitalité, la forme et l’énergie."
      ]
     }
    ]

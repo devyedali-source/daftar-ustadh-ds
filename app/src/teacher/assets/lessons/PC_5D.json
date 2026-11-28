@@ -42,6 +42,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment compter les molécules d’eau d’un verre ? Elles sont trop nombreuses : on les compte par « paquets », les moles."
+     ]
+    },
+    {
      "h": "I. La mole",
      "lines": [
       "Une mole = 6,02·10²³ entités identiques ; NA = 6,02·10²³ mol⁻¹.",
@@ -97,6 +103,32 @@
       "ρ = m/V (kg·m⁻³).",
       "Solide ou liquide : d = ρ/ρ_eau ; gaz : d = ρ/ρ_air = M/29."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "1 mol = 6,02·10²³ entités ; N = n·NA.",
+      "n = m/M ; n = V/Vm.",
+      "Vm = 22,4 L/mol (CNTP) ; 24 L/mol (conditions habituelles).",
+      "ρ = m/V ; d(gaz) = M/29.",
+      "PV = nRT."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Densité du butane par rapport à l’air ?",
+      "→ Réponse : d = 58/29 = 2 : le butane est plus lourd que l’air.",
+      "Exemple 2 : Nombre de molécules dans 2 mol d’eau ?",
+      "→ Réponse : N = 2 × 6,02·10²³ = 1,204·10²⁴."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une bouteille contient 12 L de butane C₄H₁₀ (Vm = 24 L/mol). Quantité et masse du gaz ?",
+      "→ Solution : n = 12/24 = 0,5 mol ; M = 4×12 + 10×1 = 58 g/mol ; m = 0,5 × 58 = 29 g."
+     ]
     }
    ],
    "book": "books/PC_5CD_CHI.pdf",
@@ -140,6 +172,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "On brûle de l’alcool : il disparaît, et il se forme du dioxyde de carbone et de l’eau. Comment prévoir les quantités ?"
+     ]
+    },
     {
      "h": "I. Réaction chimique",
      "lines": [
@@ -197,6 +235,32 @@
       "Hypothèse 1 : A limitant ⇒ nᵢ(A) − aXmax = 0 ⇒ Xmax = nᵢ(A)/a.",
       "Hypothèse 2 : B limitant ⇒ nᵢ(B) − bXmax = 0 ⇒ Xmax = nᵢ(B)/b.",
       "La plus petite valeur est la bonne (le manuel écrit par erreur nᵢ(B)/a et nᵢ(A) − bXmax)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Équation équilibrée : conservation des éléments et des charges.",
+      "n(A) restant = nᵢ(A) − aX ; n(C) formé = cX.",
+      "Xmax = plus petite valeur de nᵢ(A)/a et nᵢ(B)/b.",
+      "Réactif limitant : entièrement consommé.",
+      "Mélange stœchiométrique : nᵢ(A)/a = nᵢ(B)/b."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Mg + 2H₃O⁺ → Mg²⁺ + H₂ + 2H₂O : quel test montre la formation d’ions Mg²⁺ ?",
+      "→ Réponse : Le précipité obtenu avec la soude (hydroxyde de magnésium).",
+      "Exemple 2 : Qu’est-ce qu’un mélange stœchiométrique ?",
+      "→ Réponse : Les réactifs sont dans les proportions de l’équation : tous sont consommés en même temps."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "2 mol de H₂ réagissent avec 2 mol de O₂ : 2H₂ + O₂ → 2H₂O. Réactif limitant et Xmax ?",
+      "→ Solution : nᵢ(H₂)/2 = 1 ; nᵢ(O₂)/1 = 2 ; Xmax = 1 mol : H₂ est limitant ; il se forme 2 mol d’eau et il reste 1 mol de O₂."
      ]
     }
    ],
@@ -298,6 +362,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un atome est-il plein ? Si le noyau était une bille, l’atome serait un stade !"
+     ]
+    },
+    {
      "h": "I. Structure de l’atome",
      "lines": [
       "Noyau positif (protons + neutrons) et nuage électronique négatif.",
@@ -323,6 +393,32 @@
      "lines": [
       "Couches K (n = 1), L (n = 2), M (n = 3)… ; au plus 2n² électrons.",
       "Chlore Z = 17 : (K)²(L)⁸(M)⁷ ; avec 20 neutrons : A = 37 → ³⁷₁₇Cl."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Noyau : protons + neutrons (nucléons) ; électrons autour.",
+      "Notation ᴬ_Z X ; N = A − Z.",
+      "Même Z = même élément ; isotopes : même Z, A différent.",
+      "Couche n : au plus 2n² électrons (K : 2, L : 8, M : 18).",
+      "m(atome) ≈ m(noyau)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de neutrons dans ²³₁₁Na ?",
+      "→ Réponse : N = 23 − 11 = 12.",
+      "Exemple 2 : Structure électronique de l’oxygène (Z = 8) ?",
+      "→ Réponse : (K)²(L)⁶."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Le noyau d’un atome a une charge q = 3,2·10⁻¹⁹ C et contient 2 neutrons : Z, A et structure électronique ?",
+      "→ Solution : Z = q/e = 2 ; A = 2 + 2 = 4 ; structure (K)² : c’est l’hélium."
      ]
     }
    ],
@@ -367,6 +463,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le sodium et le potassium réagissent-ils de la même façon avec l’eau ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La classification périodique actuelle compte 7 lignes (périodes) et 18 colonnes (groupes).",
+      "Le numéro n de la couche externe indique la période ; le nombre d’électrons de la couche externe indique la colonne (le groupe).",
+      "Les isotopes d’un élément occupent la même case.",
+      "Les éléments d’une même colonne ont des propriétés chimiques voisines et forment une famille : 1re colonne les alcalins, 2e les alcalino-terreux, 7e (groupe 17) les halogènes, dernière colonne les gaz rares (couche externe saturée, inertes)."
+     ]
+    },
+    {
      "h": "I. Le tableau",
      "lines": [
       "7 lignes (périodes) et 18 colonnes (groupes) ; classement par Z croissant."
@@ -409,6 +520,31 @@
        "gaz rares",
        "He, Ne, Ar"
       ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "7 périodes, 18 colonnes.",
+      "Période = numéro de la couche externe.",
+      "Colonne = électrons de la couche externe.",
+      "Familles : alcalins, alcalino-terreux, halogènes, gaz rares."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Position du magnésium (Z = 12) ?",
+      "→ Réponse : (K)²(L)⁸(M)² : 3e période, 2e colonne (alcalino-terreux).",
+      "Exemple 2 : Pourquoi les gaz rares sont-ils inertes ?",
+      "→ Réponse : Leur couche externe est saturée."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Le chlore est dans la 3e ligne et la 7e colonne : structure électronique et Z ?",
+      "→ Solution : (K)²(L)⁸(M)⁷ ; Z = 17."
      ]
     }
    ],
@@ -504,6 +640,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le chlore se trouve-t-il dans la nature sous forme de Cl₂ et non d’atomes isolés ?"
+     ]
+    },
+    {
      "h": "I. Règles du duet et de l’octet",
      "lines": [
       "Les atomes tendent vers 2 (duet) ou 8 (octet) électrons sur la couche externe, comme les gaz rares."
@@ -534,6 +676,32 @@
      "h": "V. Molécules polaires",
      "lines": [
       "LiCl, HF : molécules dissymétriques (polaires)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Duet (H, Li…) / octet.",
+      "Covalente : doublet partagé ; ionique : attraction entre ions.",
+      "Formules : brute, semi-développée, développée, Lewis.",
+      "Isomères : même formule brute.",
+      "Cation (+) / anion (−) ; mono- ou polyatomique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel ion donne le magnésium (Z = 12) ?",
+      "→ Réponse : Mg²⁺ (il cède les 2 électrons de la couche M).",
+      "Exemple 2 : Formule du chlorure de calcium ?",
+      "→ Réponse : CaCl₂ (Ca²⁺ et 2 Cl⁻)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment se forme la molécule Cl₂ ?",
+      "→ Solution : Chaque chlore (7 électrons externes) met en commun un électron : un doublet liant, chacun obtient l’octet : Cl–Cl."
      ]
     }
    ],
@@ -629,6 +797,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "L’eau pure conduit-elle le courant ? Et l’eau salée ?"
+     ]
+    },
+    {
      "h": "I. Solutions ioniques",
      "lines": [
       "Ions mis en évidence par la conduction ; solution électriquement neutre.",
@@ -689,6 +863,32 @@
      "h": "V. Électrolyse",
      "lines": [
       "Anions → anode (+) : ils cèdent des électrons ; cations → cathode (−) : ils captent des électrons."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Solution ionique : neutre électriquement.",
+      "Cm = m/V ; C = n/V.",
+      "Électrolyte fort / faible.",
+      "Anions → anode (+) ; cations → cathode (−).",
+      "Tests : OH⁻ (Cu²⁺ bleu, Fe²⁺ vert, Fe³⁺ rouille) ; Ag⁺ (Cl⁻) ; Ba²⁺ (SO₄²⁻)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : 10 mL de CuSO₄ à 10⁻² mol/L : volume de NaOH à 10⁻² mol/L pour précipiter tout Cu²⁺ ?",
+      "→ Réponse : Cu²⁺ + 2OH⁻ : il faut 2 × 10⁻⁴ mol de OH⁻, soit 20 mL.",
+      "Exemple 2 : Le passage du courant dans une solution est-il dû aux électrons ?",
+      "→ Réponse : Non : il est dû au déplacement des ions."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "27 g de glucose (M = 180 g/mol) dans 250 mL : concentration molaire ?",
+      "→ Solution : n = 27/180 = 0,15 mol ; C = 0,15/0,25 = 0,6 mol/L."
      ]
     }
    ],
@@ -784,6 +984,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Le citron, le vinaigre et l’eau de mer : lesquels sont acides ?"
+     ]
+    },
+    {
      "h": "I. L’eau",
      "lines": [
       "Molécule H₂O stable, excellent solvant, faiblement conductrice.",
@@ -809,6 +1015,32 @@
      "lines": [
       "La quantité de soluté se conserve : Cm × Vm = Cf × Vf ⇒ Vm = Cf·Vf / Cm.",
       "La dilution d’un acide augmente son pH (vers 7)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "2H₂O ⇄ H₃O⁺ + OH⁻ ; Ke = 10⁻¹⁴ à 25 °C.",
+      "[H₃O⁺] = 10⁻ᵖᴴ.",
+      "pH < 7 acide ; = 7 neutre ; > 7 basique.",
+      "HCl : électrolyte fort, [H₃O⁺] = Ca.",
+      "Dilution : C₁V₁ = C₂V₂."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Volume d’HCl à 1 mol/L pour préparer 100 mL à 0,1 mol/L ?",
+      "→ Réponse : Vm = 0,1 × 100 / 1 = 10 mL, complété à 100 mL avec de l’eau.",
+      "Exemple 2 : On dilue un vinaigre de pH 3 : entre quelles valeurs sera le pH ?",
+      "→ Réponse : Entre 3 et 7."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une solution a [H₃O⁺] = 10⁻³ mol/L. pH ? Nature ?",
+      "→ Solution : pH = 3 < 7 : solution acide."
      ]
     }
    ],
@@ -854,6 +1086,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment neutraliser exactement un acide ? Comment savoir que c’est fini ?"
+     ]
+    },
+    {
      "h": "I. Hydroxyde de sodium",
      "lines": [
       "NaOH(s) → Na⁺ + OH⁻ ; Cb = [OH⁻] = [Na⁺] ; nb = Cb·Vb.",
@@ -898,6 +1136,32 @@
      "lines": [
       "Eau de mer pH 8 (basique) ; vinaigre 3 ; thé 5,5 ; citron 1,5 (le plus acide) ; thé le moins acide.",
       "Indicateur pour le dosage HCl/NaOH : BBT."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "NaOH → Na⁺ + OH⁻ ; pH > 7.",
+      "Indicateurs : hélianthine, BBT, phénolphtaléine.",
+      "H₃O⁺ + OH⁻ → 2H₂O.",
+      "Équivalence : CaVa = CbVb.",
+      "BBT : jaune (acide), vert (neutre), bleu (basique)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle solution est basique : eau de mer (pH 8) ou thé (pH 5,5) ?",
+      "→ Réponse : L’eau de mer (pH > 7).",
+      "Exemple 2 : 20 mL d’HCl à 0,1 mol/L sont neutralisés par 10 mL de soude : Cb ?",
+      "→ Réponse : Cb = CaVa/Vb = 0,1 × 20/10 = 0,2 mol/L."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Volume d’HCl à 0,04 mol/L pour neutraliser 80 mL de soude à 0,05 mol/L ?",
+      "→ Solution : Va = CbVb/Ca = 0,05 × 80/0,04 = 100 mL (le manuel calcule avec 40 mL et trouve 50 mL)."
      ]
     }
    ],
@@ -993,6 +1257,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un dynamomètre contient-il un ressort ? Que mesure-t-il vraiment ?"
+     ]
+    },
+    {
      "h": "I. Rappels mathématiques",
      "lines": [
       "sin α = opposé/hypoténuse ; cos α = adjacent/hypoténuse ; tan α = sin α/cos α ; sin²α + cos²α = 1.",
@@ -1022,6 +1292,32 @@
       "On accroche des masses m au ressort : T = P = mg ; on mesure l’allongement Δl = l − l₀.",
       "La courbe T = f(Δl) est une droite passant par l’origine : T = k·Δl (loi de Hooke).",
       "k (N/m) est la pente de la droite ; un dynamomètre est un ressort étalonné."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Effets d’une force : dynamique (mouvement) ou statique (déformation).",
+      "Caractéristiques : point d’application, direction, sens, intensité (N).",
+      "Fx = F cos α ; Fy = F sin α.",
+      "Résultante : R = √(F₁² + F₂² + 2F₁F₂ cos θ).",
+      "Loi de Hooke : T = k·Δl = k(l − l₀)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une force de 10 N fait un angle de 30° avec (Ox) : composantes ?",
+      "→ Réponse : Fx = 10 cos 30° ≈ 8,66 N ; Fy = 10 sin 30° = 5 N.",
+      "Exemple 2 : Un ressort de raideur 200 N/m supporte 35 N : allongement ?",
+      "→ Réponse : Δl = 35/200 = 0,175 m = 17,5 cm."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un ressort de raideur k = 50 N/m s’allonge de 4 cm : tension ?",
+      "→ Solution : T = k·Δl = 50 × 0,04 = 2 N."
      ]
     }
    ],
@@ -1117,6 +1413,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une pirogue chargée flotte-t-elle alors qu’un clou coule ?"
+     ]
+    },
+    {
      "h": "I. Mise en évidence",
      "lines": [
       "Pirogue qui flotte ; ballon qu’il faut pousser pour l’immerger ; pot de sable : 3 N dans l’air, 1,3 N dans le liquide."
@@ -1177,6 +1479,32 @@
      "lines": [
       "Sous-marin : il remplit ou vide ses ballasts pour plonger ou remonter.",
       "Plongeur, navires, montgolfières."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Poussée verticale, vers le haut, appliquée au centre de poussée.",
+      "P_A = P − Pa (poids réel − poids apparent).",
+      "P_A = ρ_liquide × V_immergé × g.",
+      "Indépendante de la profondeur, de la quantité de liquide, du poids du corps.",
+      "Coule si ρ_corps > ρ_liquide ; flotte si ρ_corps < ρ_liquide."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un bois de masse volumique 600 kg/m³ flotte sur l’eau : fraction immergée ?",
+      "→ Réponse : V_i/V = 600/1000 = 0,6 : 60 % du volume est immergé.",
+      "Exemple 2 : Masse marquée 300 g : poids apparent 2,6 N (g = 10). Poussée ?",
+      "→ Réponse : P = 3 N ; P_A = 3 − 2,6 = 0,4 N."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un cube de fer : P = 3 N, Pa = 2 N, il déplace 100 mL d’eau. Vérifier le principe.",
+      "→ Solution : P_A = 3 − 2 = 1 N ; poids de l’eau déplacée = 1000 × 100·10⁻⁶ × 10 = 1 N : égalité vérifiée."
      ]
     }
    ],
@@ -1265,6 +1593,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un tableau est suspendu par deux fils : comment calculer la tension de chaque fil ?"
+     ]
+    },
+    {
      "h": "I. Solide soumis à deux forces",
      "lines": [
       "F₁→ + F₂→ = 0→ : même droite d’action, sens opposés, F₁ = F₂.",
@@ -1290,6 +1624,31 @@
       "Plan incliné : R = P cos α ; T = P sin α.",
       "Solide suspendu par deux fils symétriques faisant α avec la verticale : 2T cos α = P.",
       "Planche contre un mur : poids, réaction du mur, réaction du sol concourantes."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Deux forces : même droite d’action, sens contraires, même intensité.",
+      "Trois forces : coplanaires, concourantes, somme nulle.",
+      "Méthode : système → bilan → condition → projections → calcul.",
+      "Plan incliné : T = P sin α ; R = P cos α."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une charge de 100 N est suspendue par deux fils faisant chacun 60° avec la verticale : tension ?",
+      "→ Réponse : 2T cos 60° = 100 ⇒ T = 100 N.",
+      "Exemple 2 : Deux forces de 5 N et 5 N, opposées, même droite : le solide est-il en équilibre ?",
+      "→ Réponse : Oui : somme nulle et même droite d’action."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un solide de poids 20 N est retenu par un fil sur un plan incliné de 30° sans frottement : tension ?",
+      "→ Solution : T = P sin α = 20 × 0,5 = 10 N ; R = 20 cos 30° ≈ 17,3 N."
      ]
     }
    ],
@@ -1334,6 +1693,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi pousse-t-on une porte loin des gonds ?"
+     ]
+    },
     {
      "h": "I. Effet de rotation",
      "lines": [
@@ -1384,6 +1749,32 @@
      "lines": [
       "Deux forces parallèles, de sens contraires, de même intensité, de droites d’action distinctes.",
       "Moment du couple : M = F × d ; ex. volant, robinet, filière."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "M_Δ(F→) = ± F·d (N·m).",
+      "Moment nul si la droite d’action coupe l’axe ou lui est parallèle.",
+      "Équilibre : Σ M_Δ = 0 et Σ F→ = 0→.",
+      "Levier : F₁·d₁ = F₂·d₂ ; treuil : F·L = P·r.",
+      "Couple : M = F·d."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Treuil : rayon du tambour 10 cm, manivelle 50 cm, charge 500 N : force ?",
+      "→ Réponse : F = P·r/L = 500 × 0,1/0,5 = 100 N.",
+      "Exemple 2 : Moment d’un couple de deux forces de 20 N distantes de 0,3 m ?",
+      "→ Réponse : M = 20 × 0,3 = 6 N·m."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un levier : charge de 600 N à 0,2 m de l’axe ; on pousse à 1,2 m de l’autre côté. Force nécessaire ?",
+      "→ Solution : F × 1,2 = 600 × 0,2 ⇒ F = 100 N."
      ]
     }
    ],
@@ -1479,6 +1870,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La loupe grossit, les lunettes d’un myope rapetissent : quelle différence entre ces lentilles ?"
+     ]
+    },
+    {
      "h": "I. Les lentilles minces",
      "lines": [
       "Convergentes (bords minces) : biconvexe, plan-convexe, ménisque convergent.",
@@ -1506,6 +1903,32 @@
       "Objet au-delà de F (convergente) : image réelle, renversée.",
       "Objet entre F et O : image virtuelle, droite, agrandie (loupe).",
       "Lentille divergente, objet réel : image virtuelle, droite, plus petite."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Bords minces : convergente ; bords épais : divergente.",
+      "F et F′ symétriques par rapport à O ; f = OF′.",
+      "C = 1/f (δ, f en m).",
+      "Rayons : par O non dévié ; parallèle → par F′ ; par F → parallèle.",
+      "Image réelle (sur écran) / virtuelle."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une lentille a C = −4 δ : nature et distance focale ?",
+      "→ Réponse : Divergente ; f = 1/C = −0,25 m.",
+      "Exemple 2 : Où placer un objet pour qu’une convergente serve de loupe ?",
+      "→ Réponse : Entre le foyer objet F et le centre optique O."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vergence d’une lentille de distance focale 20 cm ?",
+      "→ Solution : C = 1/0,20 = 5 δ."
      ]
     }
    ],
@@ -1551,6 +1974,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment l’œil fait-il pour voir net de près comme de loin ?"
+     ]
+    },
+    {
      "h": "I. Relation de conjugaison",
      "lines": [
       "1/OA′ − 1/OA = 1/OF′ = C (mesures algébriques)."
@@ -1583,6 +2012,32 @@
       "Loupe : objet entre F et O, image virtuelle agrandie.",
       "Microscope : objectif (image réelle agrandie) + oculaire (loupe).",
       "Lunette astronomique : objectif de grande focale, oculaire ; objet à l’infini."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "1/OA′ − 1/OA = 1/OF′.",
+      "γ = OA′/OA = A′B′/AB.",
+      "Lentilles accolées : C = C₁ + C₂.",
+      "Myopie : divergente ; hypermétropie : convergente.",
+      "Microscope, lunette : objectif + oculaire."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Deux lentilles accolées de 5 δ et −2 δ : vergence équivalente ?",
+      "→ Réponse : C = 5 − 2 = 3 δ (convergente, f ≈ 33 cm).",
+      "Exemple 2 : Un objet donne une image avec γ = −2 : nature ?",
+      "→ Réponse : Image renversée, deux fois plus grande."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Lentille de f = 10 cm, objet à 30 cm devant (OA = −30 cm) : position et grandissement de l’image ?",
+      "→ Solution : 1/OA′ = 1/10 − 1/30 = 2/30 ⇒ OA′ = 15 cm ; γ = 15/(−30) = −0,5 : image réelle, renversée, deux fois plus petite."
      ]
     }
    ],
@@ -1678,6 +2133,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une règle frottée attire-t-elle de petits morceaux de papier ?"
+     ]
+    },
+    {
      "h": "I. Électrisation",
      "lines": [
       "Par frottement (règle frottée), par contact, par influence.",
@@ -1703,6 +2164,32 @@
       "Lignes de champ : tangentes au champ, orientées dans son sens.",
       "Champ uniforme entre deux plaques parallèles de charges opposées.",
       "Plusieurs charges : E→ = E₁→ + E₂→ + …"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Électrisation : frottement, contact, influence.",
+      "Charges de même signe : répulsion ; signes contraires : attraction.",
+      "Coulomb : F = k|qA qB|/d² ; k = 9·10⁹ SI.",
+      "F→ = q E→ ; E = k|Q|/d².",
+      "Superposition : E→ = E₁→ + E₂→ ; champ uniforme entre deux plaques."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Force subie par un électron dans un champ de 1000 V/m ?",
+      "→ Réponse : F = eE = 1,6·10⁻¹⁹ × 1000 = 1,6·10⁻¹⁶ N, de sens opposé au champ.",
+      "Exemple 2 : Si la distance entre deux charges double, que devient la force ?",
+      "→ Réponse : Elle est divisée par 4."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Deux charges de 2·10⁻⁶ C distantes de 0,3 m : force ?",
+      "→ Solution : F = 9·10⁹ × (2·10⁻⁶)²/0,3² = 0,4 N (répulsion)."
      ]
     }
    ],
@@ -1792,6 +2279,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi les lampes d’une maison sont-elles montées en dérivation ?"
+     ]
+    },
+    {
      "h": "I. Le courant électrique",
      "lines": [
       "Déplacement de porteurs de charges ; sens conventionnel : de + vers − à l’extérieur du générateur.",
@@ -1817,6 +2310,32 @@
      "lines": [
       "Récepteur : U et I fléchés en sens opposés.",
       "Générateur : U et I fléchés dans le même sens."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "I = Q/t ; ampèremètre en série.",
+      "Série : I identique ; dérivation : loi des nœuds.",
+      "U_AB = V_A − V_B ; voltmètre en dérivation.",
+      "Additivité et loi des mailles.",
+      "Conventions récepteur / générateur."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Nœud : I₁ = 0,5 A et I₂ = 0,3 A arrivent ; I₃ part. Valeur de I₃ ?",
+      "→ Réponse : I₃ = 0,8 A.",
+      "Exemple 2 : U_AB = 6 V, U_BC = 3 V : U_AC ?",
+      "→ Réponse : U_AC = 9 V."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une charge de 120 C traverse un fil en 1 min : intensité ?",
+      "→ Solution : I = Q/t = 120/60 = 2 A."
      ]
     }
    ],
@@ -1906,6 +2425,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une diode laisse-t-elle passer le courant dans un seul sens ?"
+     ]
+    },
+    {
      "h": "I. Grandeurs et conventions",
      "lines": [
       "Courant, tension, orientation relative (convention récepteur)."
@@ -1925,6 +2450,32 @@
       "Série : R_éq = R₁ + R₂ + …",
       "Parallèle : 1/R_éq = 1/R₁ + 1/R₂ + …",
       "Résistance d’un fil : R = ρL/S."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Caractéristique U = f(I) en convention récepteur.",
+      "Diode : sens passant au-delà du seuil ; bloquée en inverse.",
+      "Zener : tension constante en inverse (U_Z).",
+      "Loi d’Ohm : U = R·I.",
+      "Série : R = R₁ + R₂ ; parallèle : 1/R = 1/R₁ + 1/R₂."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : R₁ = 6 Ω et R₂ = 3 Ω en parallèle : R_éq ?",
+      "→ Réponse : 1/R = 1/6 + 1/3 = 1/2 ⇒ R = 2 Ω.",
+      "Exemple 2 : Les mêmes en série ?",
+      "→ Réponse : R = 9 Ω."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un conducteur ohmique de 100 Ω est traversé par 0,05 A : tension ?",
+      "→ Solution : U = R·I = 100 × 0,05 = 5 V."
      ]
     }
    ],
@@ -2014,6 +2565,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une pile neuve affiche 9 V à vide, mais moins quand elle alimente un moteur : pourquoi ?"
+     ]
+    },
+    {
      "h": "I. Générateurs",
      "lines": [
       "Dipôles actifs : piles, accumulateurs, alimentations, dynamos."
@@ -2037,6 +2594,32 @@
      "lines": [
       "Intersection de la caractéristique du générateur et de celle du récepteur.",
       "Générateur + résistor R : I = E/(R + r)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "U = E − r·I (convention générateur).",
+      "E : tension à vide ; r : résistance interne.",
+      "Icc = E/r.",
+      "Série : E = ΣEᵢ ; r = Σrᵢ.",
+      "Point de fonctionnement : I = E/(R + r)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : E = 12 V, r = 2 Ω : intensité de court-circuit ?",
+      "→ Réponse : Icc = 12/2 = 6 A.",
+      "Exemple 2 : Deux piles (1,5 V ; 0,5 Ω) en série : générateur équivalent ?",
+      "→ Réponse : E = 3 V ; r = 1 Ω."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pile E = 4,5 V, r = 1,5 Ω, branchée sur R = 7,5 Ω : intensité et tension ?",
+      "→ Solution : I = 4,5/(7,5 + 1,5) = 0,5 A ; U = 4,5 − 1,5 × 0,5 = 3,75 V."
      ]
     }
    ],

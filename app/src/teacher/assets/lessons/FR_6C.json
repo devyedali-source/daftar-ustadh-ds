@@ -42,6 +42,23 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Croyez-vous tout ce que vous lisez sur les réseaux sociaux ? Comment vérifiez-vous une information ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’esprit critique est une attitude intellectuelle qui permet de penser de manière rationnelle et autonome : réfléchir non pas plus mais mieux.",
+      "C’est une pensée de « mise en doute » qui n’accepte pour vraie aucune affirmation sans l’avoir examinée par la raison, la documentation ou la démonstration.",
+      "Il préserve des amalgames simplistes, des généralisations hâtives, des idées reçues et des certitudes sans preuves (doute méthodique).",
+      "Ch.",
+      "Godin le définit comme la disposition à n’admettre rien de vrai qui n’ait été soumis à l’épreuve de la preuve.",
+      "C’est aussi un état d’esprit fait de curiosité, d’autonomie, de lucidité, d’écoute et de modestie, qui se construit tout au long de la vie."
+     ]
+    },
+    {
      "h": "Le texte (1/2)",
      "lines": [],
      "fig": {
@@ -109,6 +126,32 @@
       "Oral : discuter « Celui qui accepte ses erreurs et qui en comprend la source progresse ».",
       "Écrit : une dizaine de lignes pour définir l’esprit critique avec ses propres mots, illustré d’un exemple concret."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Esprit critique = réfléchir mieux, de façon rationnelle et autonome.",
+      "Pensée de « mise en doute » : examiner avant d’accepter.",
+      "Moyens de vérification : la raison, la documentation, la démonstration.",
+      "Refus des amalgames, généralisations hâtives, idées reçues.",
+      "Qualités : curiosité, autonomie, lucidité, écoute, modestie."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Citez trois « ennemis » de l’esprit critique d’après les extraits.",
+      "→ Réponse : Les amalgames simplistes, les généralisations hâtives, les idées reçues (et les certitudes sans preuves).",
+      "Exemple 2 : Pourquoi dit-on que l’esprit critique « se construit tout au long d’une vie » ?",
+      "→ Réponse : Parce que rien n’est figé : on peut manquer d’esprit critique, se laisser avoir par des préjugés ; il faut sans cesse s’exercer."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Avoir l’esprit critique, c’est savoir mieux réfléchir.",
+      "→ Solution : Vrai : « l’objectif n’est pas de réfléchir plus, mais de réfléchir mieux »."
+     ]
     }
    ]
   },
@@ -149,6 +192,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Dans votre entourage, certains phénomènes (éclipse, chouette, chat noir…) sont-ils considérés comme des signes de malheur ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans « Pensées sur la Comète », Pierre Bayle affirme la primauté de l’expérience et de l’esprit scientifique contre l’obscurantisme, en prenant l’exemple des superstitions liées aux comètes.",
+      "On croyait que les comètes annonçaient des malheurs.",
+      "Bayle montre qu’elles n’en sont ni la cause efficiente ni le signe.",
+      "Il condamne le raisonnement qui conclut que deux choses sont l’effet l’une de l’autre parce qu’elles se suivent (« c’est raisonner pitoyablement »).",
+      "De plus, l’expérience ne prouve même pas qu’il y ait plus de malheurs après les comètes qu’en un autre temps, et les comètes obéissent à des lois naturelles (soleil, brouillards) : souvent seuls les astronomes les voient."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -231,6 +290,31 @@
       "Oral : présenter des superstitions qui persistent dans votre société et expliquer pourquoi elles persistent.",
       "Écrit : Êtes-vous libérés des superstitions ou en gardez-vous quelques-unes ? Exemples précis."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Superstition : les comètes présagent des malheurs.",
+      "Raisonnement condamné : confondre succession et causalité.",
+      "Arguments : ni cause efficiente ni signe ; l’expérience ne montre pas plus de malheurs ; phénomènes naturels.",
+      "Attitude prônée : primauté de l’expérience et de la raison."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez « c’est raisonner pitoyablement ».",
+      "→ Réponse : C’est raisonner de façon très faible et fausse, en prenant une simple coïncidence pour une cause.",
+      "Exemple 2 : Quel est le contraire de l’esprit scientifique selon le texte ?",
+      "→ Réponse : L’obscurantisme et la superstition."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelle superstition se rattache aux comètes ?",
+      "→ Solution : On croyait que leur apparition était le présage de grands malheurs."
+     ]
     }
    ]
   },
@@ -272,6 +356,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Avez-vous déjà cru une rumeur qui s’est révélée fausse ? Qu’auriez-vous dû faire avant d’y croire ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Fontenelle (1657-1757), précurseur de l’esprit philosophique, veut affranchir la pensée des préjugés.",
+      "Sa règle : « Assurons-nous bien du fait, avant de nous inquiéter de la cause. » En 1593, le bruit courut qu’un enfant de Silésie, âgé de sept ans, avait vu pousser une dent d’or.",
+      "Le professeur Horstius écrivit en 1595 qu’elle était en partie miraculeuse, envoyée par Dieu pour consoler les chrétiens affligés par les Turcs ; Rullandus, Ingolsteterus et Libavius publièrent à leur tour.",
+      "Un orfèvre l’examina enfin : c’était une feuille d’or appliquée à la dent avec adresse.",
+      "« On commença par faire des livres, et puis on consulta l’orfèvre. » Fontenelle généralise : nous avons des principes qui s’accommodent bien avec le faux ; les historiens peuvent être passionnés, crédules ou mal instruits."
+     ]
+    },
     {
      "h": "Le texte (1/3)",
      "lines": [],
@@ -346,6 +446,32 @@
       "Oral : exposé-enquête sur des rumeurs de votre milieu, avec analyse critique.",
       "Écrit : expliquer et discuter « Assurons-nous bien du fait avant de nous inquiéter de la cause »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Règle : vérifier le fait avant de chercher la cause.",
+      "Anecdote : la prétendue dent d’or (1593).",
+      "Erreur des savants : écrire avant de vérifier.",
+      "Vérité : un orfèvre découvre une feuille d’or.",
+      "Comique : l’ordre inversé des démarches, l’ironie de l’auteur."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Relevez une phrase ironique du texte.",
+      "→ Réponse : « Il ne manquait autre chose à tant de beaux ouvrages, sinon qu’il fût vrai que la dent était d’or. »",
+      "Exemple 2 : Pourquoi les discussions historiques sont-elles sujettes à l’erreur ?",
+      "→ Réponse : Parce que les historiens peuvent avoir été passionnés, crédules, mal instruits ou négligents."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Point de départ et réaction des « savants » ?",
+      "→ Solution : La rumeur d’une dent d’or poussée à un enfant de Silésie ; les savants écrivent des livres et s’affrontent pour en expliquer la cause, sans vérifier le fait."
+     ]
     }
    ]
   },
@@ -387,6 +513,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Qu’est-ce qui distingue une personne pieuse d’un fanatique ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Voltaire (1694-1778), figure de l’esprit philosophique du 18e siècle, milite pour la tolérance, la justice et l’esprit critique.",
+      "Pour lui, « le fanatisme est à la superstition ce que le transport est à la fièvre, ce que la rage est à la colère » : c’en est la forme extrême.",
+      "L’enthousiaste prend ses songes pour des réalités ; le fanatique soutient sa folie par le meurtre.",
+      "Le fanatisme est présenté comme une maladie presque incurable et épidémique (convulsionnaires de saint Paris).",
+      "Le seul remède est l’esprit philosophique, qui adoucit les mœurs ; les lois sont impuissantes, car les fanatiques se croient au-dessus d’elles.",
+      "Ils puisent leur fureur dans la religion même qui les condamne."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -447,6 +590,32 @@
       "Oral : comment lutter efficacement contre le fanatisme ?",
       "Écrit : expliquer et commenter « Les fanatiques puisent leur fureur dans la religion même qui les condamne »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Parallélismes : fanatisme/superstition = transport/fièvre = rage/colère.",
+      "Enthousiaste ≠ fanatique (le meurtre).",
+      "Champ lexical de la maladie : gangrené, incurable, épidémique, convulsionnaires, frénétique.",
+      "Remède : l’esprit philosophique ; les lois sont impuissantes.",
+      "Ton : polémique, indigné, ironique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle différence entre l’enthousiaste et le fanatique ?",
+      "→ Réponse : L’enthousiaste prend ses songes pour des réalités ; le fanatique soutient sa folie par le meurtre.",
+      "Exemple 2 : Pourquoi les lois sont-elles impuissantes ?",
+      "→ Réponse : Parce que les fanatiques se croient pénétrés d’un esprit supérieur aux lois."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quels parallélismes ? Quelle conclusion ?",
+      "→ Solution : Fanatisme/superstition comme transport/fièvre et rage/colère : le fanatisme est le degré extrême, violent et dangereux de la superstition."
+     ]
     }
    ]
   },
@@ -487,6 +656,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment la météo du lendemain est-elle connue ? Comment voit-on un match joué à l’autre bout du monde ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les satellites artificiels, « bonnes à tout faire » mises en orbite, observent la Terre plus exactement que les postes terrestres et transmettent sans interruption des informations aux réseaux d’ordinateurs, donnant une image détaillée de « l’état du monde ».",
+      "Ils servent à l’agriculture, aux forêts, aux travaux publics, à la géologie, à l’urbanisme, aux communications, à l’éducation, à la météorologie, aux ressources naturelles ; ils localisent les catastrophes et les invasions de sauterelles, diffusent la télévision et observent les groupements militaires.",
+      "L’OMS pense qu’ils pourraient servir l’épidémiologie : détecter les régions où une maladie peut se développer (air, eau, sol, végétation), prévoir les épidémies et planifier les vaccins."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -581,6 +764,31 @@
       "Oral : avantages pour la Mauritanie du satellite Arabsat (télécommunications).",
       "Écrit (15-20 lignes) : dans quelle mesure les satellites ont-ils contribué au développement des moyens de communication ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Satellites : machines en orbite qui observent la Terre.",
+      "Comparés à des « bonnes à tout faire » dotées de « sens » artificiels.",
+      "Domaines : agriculture, météo, communications, catastrophes…",
+      "Santé : épidémiologie, prévision des épidémies, planification des vaccins."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Citez quatre domaines observés par les satellites.",
+      "→ Réponse : L’agriculture, la météorologie, les communications, les ressources naturelles.",
+      "Exemple 2 : Que peuvent détecter les satellites en matière de santé ?",
+      "→ Réponse : Les régions où, selon l’air, l’eau, le sol et la végétation, une maladie peut se développer."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Définition des satellites ?",
+      "→ Solution : Des machines fabriquées par l’homme, mises en orbite, qui observent la Terre et transmettent des informations."
+     ]
     }
    ]
   },
@@ -621,6 +829,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quand on parle de physique aujourd’hui, à quoi pense-t-on d’abord ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Werner Heisenberg, physicien allemand, prix Nobel 1932, s’interroge sur les répercussions socio-culturelles de la science moderne.",
+      "On pense d’abord aux armes atomiques et à leur influence politique.",
+      "Mais « tout instrument porte en lui l’esprit dans lequel il a été créé » : en s’occupant de ses armes nouvelles, chaque nation laisse l’esprit de la physique moderne pénétrer les esprits et s’imbriquer dans les traditions.",
+      "Là où la science moderne s’est élaborée, les gens adoptent facilement les idées neuves, car ils s’y sont adaptés progressivement ; ailleurs, ces idées se heurtent aux fondements religieux et philosophiques de la culture."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -707,6 +930,31 @@
       "Oral : faut-il adopter toutes les applications de la science moderne ou en rejeter quelques-unes ?",
       "Écrit : résumer le texte au ¼ ; discussion sur « Dans certaines parties du monde, les idées se heurtent aux fondements religieux et philosophiques de la culture »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Applications visées : les armes atomiques.",
+      "Aspect plus important que le politique : l’impact culturel (l’esprit de la science pénètre les traditions).",
+      "Pays industrialisés : adaptation progressive aux idées neuves.",
+      "Autres pays : conflit avec les fondements religieux et philosophiques."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez « tout instrument porte en lui l’esprit dans lequel il a été créé ».",
+      "→ Réponse : Un outil transmet la manière de penser de ceux qui l’ont conçu ; l’adopter, c’est aussi adopter une part de leur esprit.",
+      "Exemple 2 : Pourquoi les pays industrialisés s’adaptent-ils mieux ?",
+      "→ Réponse : Parce qu’ils se sont habitués progressivement, depuis longtemps, aux méthodes de pensée de la science."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quelles applications font l’objet de sa réflexion ?",
+      "→ Solution : Les armes atomiques et, plus largement, les applications de la physique moderne."
+     ]
     }
    ]
   },
@@ -747,6 +995,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les inventions servent-elles toujours au bien de l’humanité ? Donnez un exemple contraire."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans une lettre des « Lettres Persanes » (Venise, 1717), un Persan doute que l’utilité des sciences occidentales dédommage les hommes de leur mauvais usage.",
+      "L’invention des bombes aurait ôté la liberté aux peuples d’Europe : les princes entretiennent de grosses armées qui oppriment leurs sujets ; depuis la poudre, il n’y a plus de places imprenables, donc plus d’asile contre l’injustice.",
+      "Il craint qu’on découvre un jour un moyen plus rapide de faire périr des nations entières (phrase prophétique).",
+      "La chimie est un « quatrième fléau » après la guerre, la peste et la famine.",
+      "La boussole et les découvertes ont apporté les maladies, l’inutile multiplication de l’or et de l’argent, la destruction de nations et la servitude des survivants."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -811,6 +1075,31 @@
       "Oral : enquête sur l’état de la recherche scientifique en Mauritanie, puis exposé-débat.",
       "Écrit : expliquer et discuter « Science sans conscience n’est que ruine de l’âme » (Rabelais)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Genre : lettre (roman épistolaire).",
+      "Intention : dénoncer le mauvais usage des sciences.",
+      "Science et asservissement : bombes, armées, oppression, destruction des peuples découverts.",
+      "Phrase prophétique : la crainte d’une arme d’extermination (annonce l’arme nucléaire)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi la chimie est-elle appelée « quatrième fléau » ?",
+      "→ Réponse : Parce qu’elle détruit les hommes continuellement, en détail, alors que la guerre, la peste et la famine les détruisent en gros, par intervalles.",
+      "Exemple 2 : Que reproche l’auteur à la boussole ?",
+      "→ Réponse : D’avoir communiqué aux Européens les maladies des peuples découverts et d’avoir causé leur destruction et leur servitude."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Justifiez le titre.",
+      "→ Solution : L’auteur énumère les dangers des inventions : bombes, poudre, chimie, boussole."
+     ]
     }
    ]
   },
@@ -853,6 +1142,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "La science a-t-elle rendu la vie meilleure ? Citez un bienfait et un danger."
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La Conférence mondiale sur la science (Budapest, 1999) rappelle que nous vivons sur la même planète, dans une interdépendance croissante : notre avenir est lié à la préservation des systèmes de maintien de la vie.",
+      "Les nations et les scientifiques doivent utiliser de manière responsable le savoir pour satisfaire les besoins humains, en faisant collaborer toutes les sciences (naturelles, biomédicales, de l’ingénieur, sociales et humaines).",
+      "La science a apporté des bienfaits : espérance de vie accrue, traitement de maladies, hausse de la production agricole, libération des tâches pénibles, nouveaux produits et technologies de communication.",
+      "Mais elle a aussi causé la dégradation de l’environnement, des catastrophes technologiques, l’exclusion sociale et des armes sophistiquées.",
+      "La déclaration appelle à réduire les ressources consacrées aux armements pour les reconvertir à des fins civiles."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -917,6 +1222,33 @@
       "Oral : le savoir scientifique utilisé en Mauritanie n’a-t-il que des avantages ?",
       "Écrit : résumé au ¼ ; discussion de « Les sciences doivent assurer à tous une meilleure qualité de vie… »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "« Nous » : les participants à la conférence (nations et scientifiques).",
+      "Interdépendance et préservation de la planète.",
+      "Collaboration de toutes les sciences au service de l’humanité.",
+      "Avantages : santé, agriculture, énergie, communication.",
+      "Inconvénients : environnement, catastrophes, exclusion, armes.",
+      "Proposition : reconvertir l’armement à des fins civiles."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelles sciences doivent collaborer ?",
+      "→ Réponse : Les sciences naturelles, biomédicales, de l’ingénieur, ainsi que les sciences sociales et humaines.",
+      "Exemple 2 : Résumez l’idée du paragraphe sur les bienfaits.",
+      "→ Réponse : Le savoir scientifique a allongé la vie, soigné des maladies, augmenté la production agricole et libéré l’homme des tâches pénibles."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Que désigne « nous » ?",
+      "→ Solution : Les participants à la Conférence mondiale sur la science : les nations et les scientifiques du monde."
+     ]
     }
    ]
   },
@@ -957,6 +1289,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "D’où vient, à votre avis, le mot « informatique » ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Formé à partir de « information » et « automatique », le mot informatique désigne le traitement automatique de l’information par des ordinateurs, et plus largement l’ensemble des sciences et techniques liées au traitement de l’information ; dans le parler populaire, il désigne aussi le matériel (l’électronique) et la bureautique.",
+      "Le terme a été créé en mars 1962 par Philippe Dreyfus, ancien directeur du Centre National de Calcul Électronique de Bull, pour nommer son entreprise, la Société d’Informatique Appliquée (SIA).",
+      "Ses domaines sont nombreux : banque, médecine, agriculture, administrations, commerce.",
+      "Les ordinateurs traitent des informations de plus en plus complexes, et l’on est passé de « l’informatique » aux « technologies de l’information », puis aux « nouvelles technologies de l’information et de la communication »."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1018,6 +1365,31 @@
       "Écrit (15-20 lignes) : avantages et inconvénients de l’informatique.",
       "Enquête : l’informatique dans l’éducation et les lycées."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Informatique = information + automatique.",
+      "Créé en 1962 par Philippe Dreyfus (SIA).",
+      "Domaines : banque, médecine, agriculture, administrations, commerce.",
+      "Évolution : technologies de l’information, NTIC, traitement des connaissances."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qui a créé le mot « informatique » et quand ?",
+      "→ Réponse : Philippe Dreyfus, en mars 1962.",
+      "Exemple 2 : Vers quoi le terme informatique glisse-t-il progressivement ?",
+      "→ Réponse : Vers un sens plus restreint, relié aux aspects techniques."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Qu’est-ce que l’informatique ? Autres sens ?",
+      "→ Solution : Le traitement automatique de l’information par ordinateur ; aussi les sciences et techniques de l’information, le matériel (l’électronique) et la bureautique."
+     ]
     }
    ]
   },
@@ -1058,6 +1430,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un seul homme peut-il connaître tout ce qui s’écrit dans le monde aujourd’hui ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans un article du Monde (1967), le journaliste part d’une constatation : les bureaux deviennent des laboratoires où l’on traite scientifiquement l’information pour prendre des décisions, et cette information est énorme en quantité, mondiale, et de plus en plus diverse.",
+      "Aucun cerveau humain ne peut l’embrasser.",
+      "D’où un paradoxe : le savant universel n’existe plus (ère de la spécialisation), mais les connaissances sont liées entre elles ; plus on se spécialise, plus on devrait le regretter.",
+      "L’informatique, méthode nouvelle, résout cette contradiction en trois phases : rassembler les informations dans tous les domaines et toutes les langues (traduction automatique) ; les trier et les classer (codification, systèmes de recherche) ; les traiter (accumuler, comparer, éliminer les mauvaises solutions)."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1127,6 +1514,31 @@
       "Écrit : résumer le texte au ¼.",
       "Enquête : l’informatique en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Genre : article de presse de vulgarisation, pour le grand public.",
+      "Caractéristiques de l’information : quantité, dimension mondiale, diversité.",
+      "Paradoxe : spécialisation des cerveaux / unité des connaissances.",
+      "Trois phases : rassembler, trier et classer, traiter."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Expliquez le paradoxe relevé par le journaliste.",
+      "→ Réponse : Plus on se spécialise, plus on découvre les liens entre les domaines du savoir, donc plus on devrait regretter d’être spécialisé.",
+      "Exemple 2 : Quelle branche de l’informatique est « encore à ses balbutiements » ?",
+      "→ Réponse : La traduction automatique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Genre, destinataire, objectif ?",
+      "→ Solution : Un article de presse (Le Monde) destiné au grand public, pour expliquer la nature et le rôle de l’informatique."
+     ]
     }
    ]
   },
@@ -1168,6 +1580,24 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourrait-on un jour être soigné par un ordinateur ? Qu’est-ce qui existe déjà ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "En 1968, le Dr John Anderson imagine l’avenir de la médecine à l’ère de l’informatique.",
+      "Monsieur Aba, malade, appelle son médecin par un « téléphone-téléviseur » qui permet de se voir.",
+      "Le médecin décide de le recevoir au centre sanitaire, où il se rend en ambulance électrique climatisée.",
+      "Le médecin demande à l’ordinateur le dossier médical du patient, le lit à l’écran et y dicte de nouveaux renseignements ; l’ordinateur organise la visite.",
+      "Au centre, l’infirmière le conduit à la chambre B2 (l’ordinateur peut indiquer la direction) et annonce son nom dans un microphone.",
+      "Le médecin l’examine, ordonne des analyses et dicte un résumé ; l’ordinateur propose des diagnostics possibles et suggère d’autres tests.",
+      "Vingt ans plus tard, cette fiction est en partie devenue réalité."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1241,6 +1671,32 @@
       "Écrit : texte d’anticipation (20 lignes) prêtant aux ordinateurs ou robots des pouvoirs extraordinaires.",
       "Enquête dans un centre de soins de votre environnement."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Contact : par téléphone-téléviseur (visioconférence).",
+      "Consultation au centre sanitaire.",
+      "L’ordinateur : dossier médical, organisation de la visite, orientation, aide au diagnostic.",
+      "Prise en charge : médecin, infirmière et ordinateur.",
+      "Réalité aujourd’hui : téléconsultation, dossiers électroniques, aide au diagnostic."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce qu’un texte d’anticipation ?",
+      "→ Réponse : Un texte qui imagine l’avenir à partir des possibilités de la science et de la technique.",
+      "Exemple 2 : Quelle est la part de l’ordinateur dans le diagnostic ?",
+      "→ Réponse : Il présente une liste de diagnostics possibles et suggère d’autres possibilités et d’autres tests."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Comment M. Aba contacte-t-il son médecin ?",
+      "→ Solution : Par le « téléphone-téléviseur », qui lui permet de lui parler en se voyant."
+     ]
     }
    ]
   },
@@ -1280,6 +1736,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Que faites-vous avec Internet ? Que perdez-vous à cause de lui ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Avec l’informatique, le monde a connu une grande évolution : elle est devenue indispensable à la communication.",
+      "Internet permet d’effectuer sans se déplacer des courses, des réservations, des commandes, des recherches d’emploi ; les réseaux sociaux permettent à des millions de personnes de communiquer, discuter et se divertir malgré les distances, d’exprimer leurs opinions sur des blogs, de partager photos et vidéos, et de travailler à distance.",
+      "Mais l’informatique favorise la communication virtuelle : les gens se parlent peu et deviennent solitaires et insociables, les contacts physiques disparaissent.",
+      "De plus, les réseaux ne sont pas toujours sécurisés : virus, perte de données, vols et arnaques."
+     ]
+    },
     {
      "h": "Le texte",
      "lines": [],
@@ -1327,6 +1798,30 @@
       "Écrit (15-20 lignes) : avantages et inconvénients d’une technologie de votre choix.",
       "Enquête : interroger un professionnel utilisant un ordinateur."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Avantages : opérations à distance, communication mondiale, expression, travail à distance.",
+      "Inconvénients : communication virtuelle, isolement, insécurité (virus, vols, arnaques).",
+      "Structure : thèse (avantages) / « Mais » / antithèse (inconvénients)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel connecteur marque le passage aux inconvénients ?",
+      "→ Réponse : « Mais » (« Mais tous ces avantages ne doivent pas masquer… »).",
+      "Exemple 2 : Qu’appelle-t-on « communication virtuelle » ?",
+      "→ Réponse : Une communication par écrans interposés, sans contact physique direct."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Avantages par ordre décroissant (exemple) ?",
+      "→ Solution : La communication à distance ; les opérations sans déplacement (réservations, commandes) ; la recherche d’emploi et le travail à distance ; l’expression des opinions."
+     ]
     }
    ]
   },
@@ -1368,6 +1863,20 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Le fer de Zouérate : à qui est-il vendu ? Et que nous achetons-nous en retour ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "En 1982, le développement économique s’appuie sur des échanges de plus en plus inégaux : les États prospères vendent cher aux nations défavorisées leurs produits industriels et même des usines « clé en main », et reçoivent à bas prix sucre, coton, café, caoutchouc, cacao, thé, arachide, huiles, fruits, ainsi que du pétrole et des minerais (le fer de Mauritanie, la bauxite, le cuivre, l’uranium…).",
+      "L’injustice ne cesse de croître : les paysans du Tiers Monde, travaillant pour l’exportation, négligent les cultures vivrières et ne mangent pas à leur faim, tandis que les pays riches « dévorent » l’énergie (un Boeing 747 brûle des tonnes de carburant alors que les agriculteurs de Tanzanie manquent de pétrole pour s’éclairer).",
+      "Pour supprimer ces inégalités, il faudrait des solutions énergiques et une transformation radicale des mentalités."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1437,6 +1946,32 @@
       "Écrit : discussion de « Pour supprimer les dramatiques inégalités… transformation radicale des mentalités ».",
       "Enquête : les échanges commerciaux de la Mauritanie (mines, pêche…)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Problème : l’échange inégal entre pays riches et pays pauvres.",
+      "Pays riches : vendent cher des produits industriels.",
+      "Pays pauvres : vendent à bas prix matières premières et produits agricoles.",
+      "Conséquence : abandon des cultures vivrières, faim.",
+      "Solution : mesures énergiques et changement des mentalités."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel produit mauritanien est cité ?",
+      "→ Réponse : Le fer, importé « essentiellement de Mauritanie ».",
+      "Exemple 2 : Qu’est-ce qu’une culture vivrière ?",
+      "→ Réponse : Une culture destinée à nourrir la population locale, et non à l’exportation."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quel problème est posé ?",
+      "→ Solution : L’inégalité des échanges entre pays riches et pays pauvres, et le gaspillage d’énergie par les pays riches."
+     ]
     }
    ]
   },
@@ -1478,6 +2013,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment la science peut-elle aider la Mauritanie à se développer ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La science et ses applications sont indispensables au développement.",
+      "Gouvernements et secteur privé doivent, par des programmes d’éducation et de recherche, bâtir une capacité scientifique et technologique adéquate et équitablement répartie, socle d’un développement économique, social, culturel et respectueux de l’environnement ; c’est urgent pour les pays en développement.",
+      "La technologie doit s’orienter vers des modes de production propres et sans danger, une utilisation plus efficiente des ressources et des produits respectueux de l’environnement.",
+      "Enseigner la science à tous, sans discrimination, est une condition de la démocratie et du développement durable.",
+      "Il faut reconnaître le rôle fondamental des femmes dans la production alimentaire et la santé, et accorder une attention particulière aux groupes marginalisés."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1542,6 +2093,32 @@
       "Oral : comment la science peut-elle contribuer au développement de la Mauritanie ?",
       "Écrit : la Mauritanie ne bénéficie-t-elle pas encore suffisamment des progrès scientifiques ?"
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thèse : la science est indispensable au développement.",
+      "Action attendue : programmes d’éducation et de recherche.",
+      "Production propre, ressources efficaces, produits écologiques.",
+      "Enseignement scientifique pour tous : démocratie et développement durable.",
+      "Publics prioritaires : les femmes et les groupes marginalisés."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi le texte insiste-t-il sur les femmes ?",
+      "→ Réponse : Parce qu’elles jouent un rôle fondamental dans l’application des progrès scientifiques à la production alimentaire et aux soins de santé.",
+      "Exemple 2 : Que signifie « sans discrimination » ?",
+      "→ Réponse : Sans exclure personne, quels que soient le sexe, l’origine ou la condition sociale."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Thèse défendue ?",
+      "→ Solution : La science et ses applications sont indispensables au développement."
+     ]
     }
    ]
   },
@@ -1583,6 +2160,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les puits, les pâturages, le poisson : en resteront-ils pour vos petits-enfants ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Le développement durable est l’idée que les sociétés doivent répondre à leurs besoins sans compromettre la capacité des générations futures à répondre aux leurs ; il prend en compte le présent et le futur (environnement, ressources, équité sociale et économique).",
+      "Contrairement au développement économique, il a trois dimensions : économique, environnementale et sociale.",
+      "En écologie, les gouvernements mènent des politiques : en France, la « transition énergétique » (énergies renouvelables) et la « protection de la biodiversité ».",
+      "Dans les entreprises, des lois les obligent à mesurer et publier leurs impacts : c’est la RSE (responsabilité sociale de l’entreprise) — énergies renouvelables, efficacité énergétique, réduction des gaz à effet de serre et du Bilan Carbone, protection des écosystèmes."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1656,6 +2248,32 @@
       "Écrit : résumer le texte au ¼.",
       "Enquête : inviter un fonctionnaire du Développement rural."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Définition : répondre aux besoins présents sans compromettre ceux des générations futures.",
+      "Trois dimensions : économique, environnementale, sociale.",
+      "Écologie : transition énergétique, biodiversité (exemple : la France).",
+      "Entreprises : la RSE.",
+      "Genre : texte informatif (article de vulgarisation)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie RSE ?",
+      "→ Réponse : Responsabilité sociale de l’entreprise.",
+      "Exemple 2 : Qu’est-ce que la « transition énergétique » ?",
+      "→ Réponse : Transformer la manière de produire l’énergie pour la rendre plus durable, notamment par les énergies renouvelables."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Définition du développement durable ?",
+      "→ Solution : Répondre à nos besoins sans compromettre la capacité des générations futures à répondre aux leurs. Exemple : pêcher sans épuiser les stocks."
+     ]
     }
    ]
   },
@@ -1697,6 +2315,23 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Quels objets artisanaux trouve-t-on dans votre maison ? Sont-ils faits de matières traditionnelles ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "L’artisanat mauritanien évolue : on introduit des matériaux nouveaux et on décore des objets industriels.",
+      "Est-ce un abâtardissement ou une adaptation ingénieuse ?",
+      "Les matières synthétiques sont moins belles que le cuir et le bois, les couleurs chimiques plus criardes (caoutchouc au lieu d’ébène, plastique, nylon).",
+      "Pourtant la finesse du travail reste impressionnante : les femmes brodent, crochètent, maîtrisent les couleurs chimiques avec un sens aigu des contrastes ; l’artisan habille les théières importées de cuivre et de laiton.",
+      "L’artisanat de « récupération » transforme les boîtes de conserve en marmites, les pneus en grillage (Toujounine), les métaux en heurtoirs (Oualata), et les forgerons fabriquent des outils pour l’agriculture moderne.",
+      "Le gouvernement soutient les coopératives et les foires de Kiffa et de Nouakchott : l’artisanat peut trouver sa place dans le développement."
+     ]
+    },
     {
      "h": "Le texte (1/3)",
      "lines": [],
@@ -1780,6 +2415,32 @@
       "Écrit : l’artisanat mauritanien contribue au développement économique et technologique du pays. Qu’en pensez-vous ?",
       "Enquête : « femmes et artisanat »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Question : abâtardissement ou adaptation ingénieuse ?",
+      "Regrets : matières synthétiques, couleurs criardes.",
+      "Admiration : finesse, ingéniosité, art des femmes.",
+      "Artisanat de récupération : ne rien perdre.",
+      "Soutien de l’État : coopératives, foires de Kiffa et Nouakchott."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’appelle-t-on artisanat de « récupération » ?",
+      "→ Réponse : Un artisanat qui transforme des objets destinés au rebut (boîtes, pneus, bidons) en objets utiles.",
+      "Exemple 2 : Citez deux foires soutenues par le gouvernement.",
+      "→ Réponse : Les foires de Kiffa et de Nouakchott."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Expliquez la première phrase.",
+      "→ Solution : Les artisans utilisent des matériaux nouveaux et décorent à la manière traditionnelle des objets fabriqués en usine."
+     ]
     }
    ]
   },
@@ -1821,6 +2482,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi, dans un monde qui produit beaucoup, des enfants meurent-ils encore de faim ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Alors que les magasins des pays riches croulent sous les marchandises, chaque jour 10 000 personnes meurent de carences alimentaires et un milliard et demi d’êtres humains s’étiolent.",
+      "La malnutrition chronique règne surtout dans le Tiers Monde (Asie méridionale, Afrique), en raison de l’explosion démographique, de la croissance rapide des villes et du manque de moyens techniques de l’agriculture.",
+      "Jadis paysans et éleveurs produisaient pour eux-mêmes (agriculture vivrière), sauf à la soudure, lors des catastrophes et des guerres.",
+      "La colonisation a introduit les cultures commerciales d’exportation (coton, café, canne à sucre) qui ont remplacé les cultures vivrières ; la monoculture rend dépendant des cours mondiaux.",
+      "Les citadins doivent changer d’habitudes alimentaires et dépendent des industries de transformation, mais les pauvres des bidonvilles n’ont pas l’argent pour acheter."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1885,6 +2562,32 @@
       "Oral : comment éradiquer la faim dans certaines localités de la Mauritanie ?",
       "Écrit : résumé au ¼, ou article de journal (15-20 lignes) proposant des solutions contre la faim en Mauritanie."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Défi : la faim et la malnutrition.",
+      "Zones touchées : Tiers Monde, Asie méridionale, Afrique.",
+      "Causes : explosion démographique, urbanisation, faibles moyens agricoles.",
+      "Colonisation : cultures commerciales à la place des cultures vivrières.",
+      "Villes : dépendance des industries alimentaires, pauvreté."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Qu’est-ce que la « période de la soudure » ?",
+      "→ Réponse : La période entre deux récoltes, quand les réserves s’épuisent.",
+      "Exemple 2 : Qu’est-ce que la monoculture ?",
+      "→ Réponse : La culture d’un seul produit commercial, dont les cours peuvent s’effondrer."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Quel défi ?",
+      "→ Solution : La faim dans le monde."
+     ]
     }
    ]
   },
@@ -1926,6 +2629,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Les films, la musique, les vêtements que vous aimez viennent-ils de chez nous ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Pour Catherine Trautmann (table ronde de l’UNESCO, 1999), la mondialisation menace les identités culturelles et risque d’engendrer une standardisation : elle pousse à l’uniformisation des comportements et des modes de vie.",
+      "Il faut promouvoir des valeurs communes à l’humanité, mais sans oublier les spécificités héritées du temps, le respect des identités et la richesse de la diversité des cultures.",
+      "La diversité culturelle est aussi une exigence économique : la logique du libre-échange pousserait les États à renoncer à leurs industries culturelles face à des produits étrangers moins chers (films hollywoodiens amortis sur un vaste marché).",
+      "Or les industries culturelles, du savoir et de l’imaginaire sont des industries d’avenir, créatrices d’emplois et de croissance."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -1987,6 +2705,32 @@
       "Écrit : « La mondialisation menace les identités culturelles ». Qu’en pensez-vous ?",
       "Enquête : méfaits de la mondialisation sur certains secteurs du pays."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thèse : la mondialisation menace les identités culturelles.",
+      "Danger : standardisation, uniformisation.",
+      "Nécessité : valeurs communes + respect de la diversité.",
+      "Enjeu économique : protéger les industries culturelles.",
+      "Exemple : les films hollywoodiens exportés à bas prix."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi les films hollywoodiens sont-ils vendus à bas prix ?",
+      "→ Réponse : Parce qu’ils sont déjà amortis sur un vaste marché avant d’être exportés, sans l’obstacle de la langue.",
+      "Exemple 2 : Que sont les « industries de l’imaginaire » ?",
+      "→ Réponse : Les industries culturelles : cinéma, audiovisuel, livre, musique."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Comment la mondialisation porte-t-elle atteinte aux identités ?",
+      "→ Solution : En poussant à l’uniformisation des comportements et des modes de vie (standardisation culturelle)."
+     ]
     }
    ]
   },
@@ -2028,6 +2772,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "L’argent peut-il changer la façon dont une mère s’occupe de ses enfants ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Dans son essai « L’argent et l’inconscient », Thomas Wiseman étudie l’influence psycho-sociologique de l’argent.",
+      "Il part de la relation mère-enfant : on croirait l’instinct maternel inviolable, mais l’argent le transforme et même le supprime : plus une femme a d’argent, moins elle ressent le besoin de nourrir et soigner ses enfants (les nurses des classes supérieures anglaises, contrairement aux mères du Sud de l’Italie).",
+      "L’argent influence aussi les rapports amoureux : Anna Karénine abandonne mari et enfant pour une passion rendue possible par la richesse ; dans « Elvira Madigan », les amants meurent de faim puis se tuent.",
+      "« Même les histoires d’amour doivent être financées. » Dans tout mariage existe un rapport à l’argent, souvent caché : le conflit oppose la parcimonie et l’extravagance (le mari avare et la femme dépensière)."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2118,6 +2877,32 @@
       "Oral : la place de l’argent dans la famille mauritanienne.",
       "Écrit : résumé au ¼, ou discussion de « L’argent ne fait pas le bonheur »."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Thème : le pouvoir de l’argent sur les comportements fondamentaux.",
+      "Point de départ : l’instinct maternel.",
+      "Thèse : l’argent transforme et peut supprimer cet instinct.",
+      "Couple : Anna Karénine, Elvira Madigan.",
+      "Conflit caché : parcimonie / extravagance."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « même les histoires d’amour doivent être financées » ?",
+      "→ Réponse : Que l’amour ne peut durer sans moyens matériels pour vivre.",
+      "Exemple 2 : Quel conflit financier fondamental existe dans le mariage ?",
+      "→ Réponse : L’opposition entre la parcimonie (avarice) et l’extravagance (dépense)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Thème central ?",
+      "→ Solution : L’influence de l’argent sur les comportements et les instincts humains."
+     ]
     }
    ]
   },
@@ -2159,6 +2944,22 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "L’esclavage a-t-il complètement disparu dans le monde ? Sous quelles formes peut-il exister aujourd’hui ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "À l’occasion de la Journée internationale pour l’abolition de l’esclavage (2 décembre), Ban Ki-moon rappelle l’article 4 de la Déclaration universelle des droits de l’homme : « nul ne sera tenu en esclavage ni en servitude ».",
+      "Pourtant l’esclavage reste un problème grave sur tous les continents, et de nouvelles formes sont apparues : servitude pour dettes, servage, travail forcé, travail des enfants, trafic de personnes et d’organes, esclavage sexuel, enfants soldats, vente d’enfants, mariage forcé, vente de femmes, exploitation de la prostitution.",
+      "Les victimes sont surtout les pauvres et les exclus (minorités, migrants, peuples autochtones).",
+      "Pauvreté, classe, race, inégalités entre les sexes, manque d’éducation et demande de main-d’œuvre bon marché sont des pièges.",
+      "Lutter contre l’esclavage, c’est l’interdire par la loi, mais aussi combattre la pauvreté, l’analphabétisme, les disparités et la violence contre les femmes et les enfants."
+     ]
+    },
     {
      "h": "Le texte (1/2)",
      "lines": [],
@@ -2223,6 +3024,32 @@
       "Oral : raconter une injustice dont on a été victime ou témoin ; ou donner son avis sur ce message.",
       "Écrit : expliquer et discuter « Respect de l’homme ! … là est la pierre de touche » (Saint-Exupéry)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Base juridique : article 4 de la DUDH.",
+      "Nouvelles formes : servitude pour dettes, travail forcé, enfants soldats, trafic, mariage forcé…",
+      "Victimes : pauvres, minorités, migrants, autochtones.",
+      "Causes : pauvreté, inégalités, manque d’éducation.",
+      "Solutions : la loi + lutte contre la pauvreté, l’analphabétisme et les discriminations."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que dit l’article 4 de la DUDH ?",
+      "→ Réponse : « Nul ne sera tenu en esclavage ni en servitude ; l’esclavage et la traite des esclaves sont interdits sous toutes leurs formes. »",
+      "Exemple 2 : Citez trois formes nouvelles d’esclavage.",
+      "→ Réponse : La servitude pour dettes, l’utilisation d’enfants soldats, le trafic d’organes humains."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "1. Un autre titre ?",
+      "→ Solution : « Éliminer toutes les formes d’esclavage »."
+     ]
     }
    ]
   },
@@ -2262,6 +3089,19 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Lisez deux versions d’un même paragraphe, avec et sans « d’abord, ensuite, donc, mais ». Laquelle est la plus claire ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Les connecteurs (mots-outils) relient les phrases et les propositions et organisent le texte.",
+      "On distingue les connecteurs temporels (succession des actions : d’abord, ensuite, enfin), les connecteurs spatiaux (organisation dans l’espace) et les connecteurs logiques, présents surtout dans les textes explicatifs et argumentatifs, qui expriment les relations entre les idées : addition (et, de plus), cause (car, parce que), conséquence (donc, ainsi), opposition (mais, cependant), concession (bien que), illustration (par exemple), reformulation (c’est-à-dire), conclusion (enfin, en somme)."
+     ]
+    },
     {
      "h": "Les connecteurs logiques",
      "lines": [],
@@ -2309,6 +3149,30 @@
      "lines": [
       "Relever les connecteurs du texte « Avantages et inconvénients de l’informatique » et dire la relation exprimée (« Mais » : opposition ; « En effet » : explication ; « Ainsi » : conséquence)."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Trois sortes : temporels, spatiaux, logiques.",
+      "Les connecteurs logiques expriment les relations entre les idées.",
+      "Indispensables au résumé et à l’argumentation."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Donnez deux connecteurs de cause.",
+      "→ Réponse : car, parce que.",
+      "Exemple 2 : Dans quels types de textes trouve-t-on surtout les connecteurs logiques ?",
+      "→ Réponse : Dans les textes explicatifs et argumentatifs."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelle relation exprime « Mais » dans « Mais tous ces avantages ne doivent pas masquer… » ?",
+      "→ Solution : L’opposition : on passe des avantages aux inconvénients."
+     ]
     }
    ]
   },
@@ -2350,6 +3214,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Racontez en deux phrases un film que vous avez vu. Qu’avez-vous gardé ? Qu’avez-vous supprimé ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "Résumer, c’est réduire un texte en gardant ses idées essentielles et leur enchaînement, sans rien ajouter et en gardant le même niveau de langue et le même système d’énonciation.",
+      "La démarche : plusieurs lectures (idée principale, puis temps verbal, type de texte, auteur) ; identification de l’idée directrice ; repérage de la structure (parties, limites, sous-titres) ; reformulation de l’idée directrice et des idées secondaires (arguments) ; rédaction au ¼ de la longueur, avec une tolérance de 10 % en plus ou en moins.",
+      "Il ne faut pas recopier des morceaux de phrases, ni citer le texte, ni retenir les exemples illustratifs ; il faut reformuler au maximum avec ses propres mots.",
+      "Les exercices de la Partie II (technique et discrimination, usage excessif de la technologie, dossiers médicaux électroniques, santé infantile) permettent de s’entraîner."
+     ]
+    },
     {
      "h": "Démarche du résumé",
      "lines": [
@@ -2403,6 +3282,32 @@
        "employer des connecteurs logiques"
       ]
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Garder l’essentiel et l’enchaînement des idées.",
+      "Ne rien ajouter ; même niveau de langue.",
+      "Étapes : lectures, idée directrice, structure, reformulation, rédaction.",
+      "Longueur : ¼ du texte (± 10 %).",
+      "Interdits : recopier, citer, garder les exemples."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Pourquoi ne garde-t-on pas les exemples dans un résumé ?",
+      "→ Réponse : Parce qu’ils illustrent les idées sans en être l’essentiel.",
+      "Exemple 2 : Qu’est-ce que l’idée directrice ?",
+      "→ Réponse : L’idée principale qui organise tout le texte."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un texte compte 400 mots. Combien de mots doit compter son résumé ?",
+      "→ Solution : Le ¼, soit 100 mots, avec une tolérance de 10 % : entre 90 et 110 mots."
+     ]
     }
    ]
   },
@@ -2445,6 +3350,21 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Sujet : « Les écrans rendent-ils les jeunes plus intelligents ? » Comment organiser votre réponse ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La discussion porte sur des thèmes quotidiens, souvent d’actualité ; « discuter » signifie « argumenter » avec un raisonnement rigoureux.",
+      "La dissertation de culture générale exige une réflexion organisée sur une question ou une citation.",
+      "Méthode : analyser le sujet (mots-clés, problématique), rechercher les arguments et les exemples, établir un plan (dialectique : thèse, antithèse, synthèse ; ou thématique), rédiger une introduction (amener le sujet, le poser, annoncer le plan), un développement en paragraphes argumentatifs (idée, explication, exemple) liés par des connecteurs, et une conclusion (bilan, réponse à la question, éventuellement ouverture vers une autre problématique).",
+      "Les sujets types du manuel portent sur l’argent, la technique, la santé et la violence (causes de la violence, violence à l’école)."
+     ]
+    },
+    {
      "h": "Les étapes",
      "lines": [
       "1) Analyser le sujet ; 2) formuler la problématique ; 3) chercher arguments et exemples ; 4) faire le plan ; 5) rédiger ; 6) relire."
@@ -2482,6 +3402,32 @@
      "h": "Sujet d’entraînement (manuel)",
      "lines": [
       "« L’argent ne fait pas le bonheur. » Qu’en pensez-vous ? — Thèse : l’argent ne garantit ni l’amour ni la santé ; antithèse : il assure les besoins fondamentaux ; synthèse : il contribue au bonheur sans le constituer."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Discussion : argumenter sur un sujet d’actualité.",
+      "Dissertation : réflexion organisée sur une question.",
+      "Plan dialectique ou thématique.",
+      "Introduction : amener, poser, annoncer.",
+      "Conclusion : bilan, réponse, ouverture."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Que signifie « discuter » ?",
+      "→ Réponse : Argumenter avec un raisonnement rigoureux.",
+      "Exemple 2 : Que peut contenir la fin de la conclusion ?",
+      "→ Réponse : Une ouverture vers une autre problématique dans le même champ."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Quelles sont les trois étapes de l’introduction ?",
+      "→ Solution : Amener le sujet, poser le sujet (la question), annoncer le plan."
      ]
     }
    ]

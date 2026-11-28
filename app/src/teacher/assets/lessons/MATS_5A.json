@@ -41,6 +41,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "J’écris au tableau 2 + 3 × 4 et je demande le résultat : certains trouvent 20, d’autres 14. Qui a raison ? Pourquoi ?"
+     ]
+    },
+    {
      "h": "I. Règles de signes",
      "lines": [
       "Parenthèses précédées de + : on conserve les signes ; précédées de − : on change les signes.",
@@ -70,6 +76,31 @@
       "Reste après le cousin : 3/5 ; boucher : 3/4 × 3/5 = 9/20 ; reste : 3/5 − 9/20 = 3/20.",
       "Frère : 9/10 × 3/20 = 27/200 ; reste : 3/20 − 27/200 = 3/200 du troupeau = 3 moutons.",
       "Le troupeau comptait 200 moutons."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "a − (b − c) = a − b + c ; a + (b − c) = a + b − c.",
+      "Même signe → produit positif ; signes contraires → produit négatif.",
+      "Ordre : parenthèses → puissances → × et ÷ → + et −.",
+      "a/b + c/d = (ad + bc)/bd ; a/b ÷ c/d = a/b × d/c."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Calculer A = 132 − 11 × 10 + 4 × 2,5.",
+      "→ Réponse : A = 132 − 110 + 10 = 32.",
+      "Exemple 2 : Placer des parenthèses pour que 1 + 2 × 3 = 9.",
+      "→ Réponse : (1 + 2) × 3 = 9."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calculer F = (3 + 5 × 7) ÷ 2 + 1.",
+      "→ Solution : F = (3 + 35) ÷ 2 + 1 = 38 ÷ 2 + 1 = 19 + 1 = 20."
      ]
     }
    ]
@@ -111,6 +142,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Combien de grains de sable y a-t-il sur une plage ? On aura besoin des puissances de 10 pour écrire un tel nombre."
+     ]
+    },
     {
      "h": "I. Définition",
      "lines": [
@@ -158,6 +195,31 @@
       "Plage : 125 m × 2 000 m × 4 m = 10⁶ m³ = 10¹⁵ mm³.",
       "10 grains par mm³ ⇒ environ 10¹⁶ grains de sable."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "aⁿ × aᵐ = aⁿ⁺ᵐ ; aⁿ / aᵐ = aⁿ⁻ᵐ ; (aⁿ)ᵐ = aⁿˣᵐ.",
+      "(ab)ⁿ = aⁿbⁿ ; (a/b)ⁿ = aⁿ/bⁿ.",
+      "a⁰ = 1 ; a⁻ⁿ = 1/aⁿ.",
+      "(−a)ⁿ = aⁿ (n pair) ; −aⁿ (n impair)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Écrire 2⁴ + 2⁴ avec une seule puissance.",
+      "→ Réponse : 2⁴ + 2⁴ = 2 × 2⁴ = 2⁵.",
+      "Exemple 2 : Comparer (2³)⁵ et 2^(3⁵).",
+      "→ Réponse : (2³)⁵ = 2¹⁵ et 3⁵ = 243 > 15, donc 2^(3⁵) > (2³)⁵."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Calculer A = (−3)² + 5 × 2².",
+      "→ Solution : A = 9 + 5 × 4 = 9 + 20 = 29 (la puissance est prioritaire, puis la multiplication)."
+     ]
     }
    ]
   },
@@ -200,6 +262,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Quel nombre positif a pour carré 49 ? et 2 ? On ne peut pas écrire ce dernier sous forme décimale exacte : on note √2."
+     ]
+    },
+    {
      "h": "I. Définition et propriétés",
      "lines": [
       "√a (a ≥ 0) : unique réel positif dont le carré est a.",
@@ -225,6 +293,32 @@
      "lines": [
       "1/(√3 − 2) : on multiplie par √3 + 2 ⇒ (√3 + 2)/(3 − 4) = −√3 − 2.",
       "2/(2√5 − 5√2) = 2(2√5 + 5√2)/(20 − 50) = −(2√5 + 5√2)/15."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "(√a)² = a ; √(a²) = |a|.",
+      "√(ab) = √a √b ; √(a/b) = √a / √b.",
+      "√(a + b) ≠ √a + √b en général.",
+      "a√b : on fait sortir les carrés parfaits (√45 = 3√5).",
+      "Conjuguée de √a − √b : √a + √b."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Écrire √45, √12, √20 sous la forme a√b.",
+      "→ Réponse : 3√5 ; 2√3 ; 2√5.",
+      "Exemple 2 : Simplifier B = 4√7 + 2√63 − 5√28.",
+      "→ Réponse : B = 4√7 + 6√7 − 10√7 = 0."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Simplifier A = 5√27 − 2√75 + 3√3.",
+      "→ Solution : A = 15√3 − 10√3 + 3√3 = 8√3."
      ]
     }
    ]
@@ -267,6 +361,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Si 2,3 ≤ x ≤ 2,4, que peut-on dire de 2x ? de −3x ? de 1/x ?"
+     ]
+    },
     {
      "h": "I. Ordre et opérations",
      "lines": [
@@ -323,6 +423,32 @@
       "x ∈ [−2 ; 8] ⇔ |x − 3| ≤ 5 ⇔ d(x ; 3) ≤ 5.",
       "x ∈ [−2 ; 6] ⇔ |x − 2| ≤ 4."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "a ≤ b ⇔ a + c ≤ b + c.",
+      "a ≤ b et k > 0 ⇒ ka ≤ kb ; k < 0 ⇒ ka ≥ kb.",
+      "0 < a ≤ b ⇒ 1/b ≤ 1/a.",
+      "|x| ≤ r ⇔ −r ≤ x ≤ r ; |x − a| ≤ r ⇔ x ∈ [a − r ; a + r].",
+      "Centre (a + b)/2, rayon (b − a)/2."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre |3x − 1| ≤ 11.",
+      "→ Réponse : −11 ≤ 3x − 1 ≤ 11 ⇔ −10 ≤ 3x ≤ 12 ⇔ x ∈ [−10/3 ; 4].",
+      "Exemple 2 : Traduire −1 ≥ x ≥ −4 sous forme d’intervalle.",
+      "→ Réponse : x ∈ [−4 ; −1]."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre |x + 3| = 7.",
+      "→ Solution : x + 3 = 7 ou x + 3 = −7 ⇔ x = 4 ou x = −10 ; S = {−10 ; 4}."
+     ]
     }
    ]
   },
@@ -364,6 +490,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Calculer 99² de tête : est-ce possible ? Oui, avec (100 − 1)²."
+     ]
+    },
+    {
      "h": "I. Identités d’ordre 2",
      "lines": [
       "(2x + 3)² = 4x² + 12x + 9 ; (2x − 3)² = 4x² − 12x + 9.",
@@ -390,6 +522,31 @@
      "h": "IV. Écriture scientifique",
      "lines": [
       "a × 10ⁿ avec 1 ≤ a < 10 : M = 5 × 10⁵ × 3 × 10⁷ = 1,5 × 10¹³."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "(a ± b)² = a² ± 2ab + b² ; (a + b)(a − b) = a² − b².",
+      "(a ± b)³ = a³ ± 3a²b + 3ab² ± b³.",
+      "a³ − b³ = (a − b)(a² + ab + b²) ; a³ + b³ = (a + b)(a² − ab + b²).",
+      "Factoriser : facteur commun ou identité remarquable."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Développer (2x − 5)³.",
+      "→ Réponse : 8x³ − 60x² + 150x − 125.",
+      "Exemple 2 : Factoriser 16x² − 8x + 1.",
+      "→ Réponse : (4x − 1)²."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Développer puis factoriser A = (x − 3)(x + 7) − (2x − 7)(x − 3).",
+      "→ Solution : A = x² + 4x − 21 − (2x² − 13x + 21) = −x² + 17x − 42 ; A = (x − 3)[(x + 7) − (2x − 7)] = (x − 3)(−x + 14)."
      ]
     }
    ]
@@ -432,6 +589,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un père a 30 ans et son fils 7 ans. Dans combien d’années le père aura-t-il le double de l’âge de son fils ?"
+     ]
+    },
+    {
      "h": "I. Équations du 1er degré",
      "lines": [
       "ax + b = 0 (a ≠ 0) ⇔ x = −b/a.",
@@ -458,6 +621,31 @@
       "ax ≥ b : si a > 0, x ≥ b/a ; si a < 0, x ≤ b/a.",
       "7x > 8x − 3 ⇔ x < 3 ; −3x + 1 > −5x − 2 ⇔ 2x > −3 ⇔ x > −3/2.",
       "−4y ≥ −19 ⇔ y ≤ 19/4 : entiers naturels solutions 0, 1, 2, 3, 4."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "ax + b = 0 ⇔ x = −b/a.",
+      "Produit nul : un des facteurs est nul.",
+      "Inéquation : multiplier par un négatif change le sens.",
+      "Étapes : inconnue → équation → résolution → vérification → conclusion."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre 5x − 10 ≥ 0.",
+      "→ Réponse : x ≥ 2 ; S = [2 ; +∞[.",
+      "Exemple 2 : Résoudre 12 − 6x < 0.",
+      "→ Réponse : −6x < −12 ⇔ x > 2 ; S = ]2 ; +∞[."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre −2x + 3 = 0.",
+      "→ Solution : −2x = −3 ⇔ x = 3/2 ; S = {3/2}."
      ]
     }
    ]
@@ -500,6 +688,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "2 stylos et 3 cahiers coûtent 50 MRU ; 1 stylo et 2 cahiers coûtent 30 MRU. Combien coûte un stylo ? un cahier ?"
+     ]
+    },
+    {
      "h": "I. Définition",
      "lines": [
       "Système : ax + by = c et a′x + b′y = c′ (a, b, c, a′, b′, c′ réels)."
@@ -532,6 +726,31 @@
      "h": "IV. Problème",
      "lines": [
       "Choisir les inconnues, écrire le système, le résoudre, vérifier et conclure."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Substitution, combinaison, déterminants.",
+      "Δ = ab′ − a′b ≠ 0 ⇒ solution unique.",
+      "Δ = 0 : aucune solution ou une infinité.",
+      "Solution = coordonnées du point d’intersection des droites."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Résoudre par combinaison 2x + y = 7 ; x − y = 2.",
+      "→ Réponse : En additionnant : 3x = 9 ⇒ x = 3, y = 1.",
+      "Exemple 2 : Que dire si Δ = 0 et Δx ≠ 0 ?",
+      "→ Réponse : Le système n’a pas de solution (droites parallèles)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Résoudre par substitution x + 3y = 10 ; 3x + 5y = 18.",
+      "→ Solution : x = −3y + 10 ; 3(−3y + 10) + 5y = 18 ⇔ −4y = −12 ⇔ y = 3, x = 1 ; S = {(1 ; 3)}."
      ]
     }
    ]
@@ -575,6 +794,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Le prix à payer dépend du nombre de baguettes achetées : c’est une fonction. Comment la représenter ?"
+     ]
+    },
+    {
      "h": "I. Image, antécédent, ensemble de définition",
      "lines": [
       "f(x) = −x² + 2x − 1 : f(0) = −1 ; f(−2) = −4 − 4 − 1 = −9.",
@@ -607,6 +832,32 @@
      "lines": [
       "f(x) = x² − 3x + 1 : f(3 − x) = f(x), la droite x = 3/2 est axe de symétrie.",
       "f(x) = (3x + 1)/(x − 5) : f(10 − x) + f(x) = 6, le point Ω(5 ; 3) est centre de symétrie."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Image f(x) ; antécédents : résoudre f(x) = a.",
+      "Df : dénominateur ≠ 0, radicande ≥ 0.",
+      "Paire : f(−x) = f(x) ; impaire : f(−x) = −f(x).",
+      "Taux d’accroissement ≥ 0 : croissante ; ≤ 0 : décroissante.",
+      "Axe x = a : f(2a − x) = f(x) ; centre (a ; b) : f(2a − x) + f(x) = 2b."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Df de x ↦ (2x + 1)/(x − 3) ?",
+      "→ Réponse : ℝ ∖ {3}.",
+      "Exemple 2 : f(x) = x³ est-elle paire ou impaire ?",
+      "→ Réponse : f(−x) = −x³ = −f(x) : impaire."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Soit f(x) = −x² + 2x − 1. Calculer f(0), f(−2) et chercher les antécédents de 1.",
+      "→ Solution : f(0) = −1 ; f(−2) = −9 ; f(x) = 1 ⇔ (x − 1)² = −1, impossible : 1 n’a pas d’antécédent."
      ]
     }
    ]
@@ -649,6 +900,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un artisan veut savoir pour quelle quantité produite son bénéfice est le plus grand : comment l’aider ?"
+     ]
+    },
+    {
      "h": "I. Fonction affine",
      "lines": [
       "f(x) = ax + b : droite ; a = pente (coefficient directeur), b = ordonnée à l’origine.",
@@ -674,6 +931,31 @@
      "lines": [
       "La courbe de f passe par A(3 ; −1) ⇔ f(3) = −1.",
       "L’ordonnée du point d’abscisse 2 vaut 1 ⇔ g(2) = 1."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Plan d’étude : Df → parité → variations → tableau de valeurs → courbe.",
+      "f(x) = ax + b : droite ; a coefficient directeur, b ordonnée à l’origine.",
+      "x² : parabole, minimum 0 en 0.",
+      "Lecture graphique : images, antécédents, extremums."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Tracer la droite de f(x) = 2x − 1.",
+      "→ Réponse : Elle passe par (0 ; −1) et (1 ; 1).",
+      "Exemple 2 : La courbe de k passe par l’origine : que vaut k(0) ?",
+      "→ Réponse : k(0) = 0."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "f(x) = −2x + 3 : sens de variation ? Image de 0 ?",
+      "→ Solution : a = −2 < 0 : f est décroissante ; f(0) = 3."
      ]
     }
    ]
@@ -717,6 +999,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "ABCD est un parallélogramme : comment le traduire par une égalité de vecteurs ?"
+     ]
+    },
+    {
      "h": "I. Notion de vecteur",
      "lines": [
       "AB→ : direction (AB), sens de A vers B, norme AB.",
@@ -751,6 +1039,32 @@
       "AB→(x_B − x_A ; y_B − y_A) ; milieu I((x_A + x_B)/2 ; (y_A + y_B)/2).",
       "AB = √((x_B − x_A)² + (y_B − y_A)²).",
       "u→(x ; y) + v→(x′ ; y′) = (x + x′ ; y + y′) ; k u→ = (kx ; ky)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Vecteur : direction, sens, norme.",
+      "Chasles : AB→ + BC→ = AC→.",
+      "AB→ = DC→ ⇔ ABCD parallélogramme.",
+      "Colinéaires : u→ = k v→ ; alignement : AC→ = k AB→.",
+      "AB→(x_B − x_A ; y_B − y_A) ; AB = √(…)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : A(2 ; −1), B(−6 ; −1) : coordonnées de AB→ et longueur AB.",
+      "→ Réponse : AB→(−8 ; 0) ; AB = 8.",
+      "Exemple 2 : Compléter : MN→ + … = MP→.",
+      "→ Réponse : NP→."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vrai ou faux : si AB→ = CD→ alors ABCD est un parallélogramme.",
+      "→ Solution : Faux : c’est ABDC qui est un parallélogramme (AB→ = DC→ pour ABCD)."
      ]
     }
    ]
@@ -793,6 +1107,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Par deux points passe une seule droite : comment trouver son équation ?"
+     ]
+    },
+    {
      "h": "I. Équations d’une droite",
      "lines": [
       "Réduite : y = mx + p ; cartésienne : ax + by + c = 0.",
@@ -818,6 +1138,31 @@
      "h": "IV. Représentation graphique",
      "lines": [
       "Placer deux points de la droite et les joindre (ex. A(−1 ; 2) et B(3 ; 1))."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "y = mx + p ; ax + by + c = 0.",
+      "Vecteur directeur (−b ; a) ; vecteur normal (a ; b).",
+      "Parallèles : m = m′ ; perpendiculaires : mm′ = −1.",
+      "M ∈ (AB) ⇔ AM→, AB→ colinéaires."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Les droites y = 2x + 1 et y = −x/2 + 3 sont-elles perpendiculaires ?",
+      "→ Réponse : 2 × (−1/2) = −1 : oui.",
+      "Exemple 2 : Vecteur directeur de 2x − y + 4 = 0 ?",
+      "→ Réponse : u→(1 ; 2)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Équation de (AB) avec A(2 ; 1) et B(−3 ; 5).",
+      "→ Solution : AM→(x − 2 ; y − 1), AB→(−5 ; 4) : 4(x − 2) + 5(y − 1) = 0 ⇔ 4x + 5y − 13 = 0."
      ]
     }
    ]
@@ -860,6 +1205,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une baguette coûte 10 MRU : combien coûtent 12 baguettes ? Le prix est-il proportionnel au nombre de baguettes ?"
+     ]
+    },
+    {
      "h": "I. Situations de proportionnalité",
      "lines": [
       "Baguettes : 2 → 20 ; 5 → 50 ; 12 → 120 ; coefficient 10 (prix d’une baguette).",
@@ -886,6 +1237,31 @@
       "80 % de 25 élèves : 0,80 × 25 = 20 élèves.",
       "Augmenter de 36 % : × 1,36 ; diminuer de 3,5 % : × 0,965.",
       "Augmenter de 4 % : × 1,04 (et non 1,4) ; diminuer de 25 % : × 0,75 (et non 0,25)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Coefficient de proportionnalité constant.",
+      "Fonction linéaire f(x) = px : droite passant par l’origine.",
+      "Produit en croix : a × d = b × c.",
+      "Augmenter de t % : × (1 + t/100) ; diminuer : × (1 − t/100)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un article de 2 000 MRU augmente de 15 %. Nouveau prix ?",
+      "→ Réponse : 2 000 × 1,15 = 2 300 MRU.",
+      "Exemple 2 : Un prix de 500 MRU baisse de 20 %. Nouveau prix ?",
+      "→ Réponse : 500 × 0,8 = 400 MRU."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Ramata achète 4 kg de sucre pour 160 MRU. Prix de 7 kg ?",
+      "→ Solution : 160 × 7 / 4 = 280 MRU."
      ]
     }
    ]
@@ -927,6 +1303,21 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Le médecin a mesuré la taille de 26 élèves de 5MA : comment organiser ces données ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La population est l’ensemble étudié ; un individu en est un élément ; le caractère est l’information étudiée (qualitatif ou quantitatif discret ou continu) ; une modalité est une valeur prise ; l’effectif d’une modalité est le nombre d’individus correspondants, l’effectif total N leur somme.",
+      "Pour un caractère continu, on regroupe en classes [a ; b[ d’amplitude b − a et de centre (a + b)/2.",
+      "La fréquence d’une modalité est son effectif divisé par N (somme des fréquences = 1 ou 100 %).",
+      "Les effectifs (fréquences) cumulés croissants additionnent les valeurs inférieures ou égales."
+     ]
+    },
     {
      "h": "I. Vocabulaire",
      "lines": [
@@ -994,6 +1385,31 @@
       "fᵢ = nᵢ / N ; f₁ + f₂ + … + fₚ = 1 (100 %).",
       "Fréquence cumulée croissante : somme des fréquences des valeurs ≤ x."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Population, individu, caractère, modalité, effectif.",
+      "Qualitatif / quantitatif discret / continu.",
+      "Classe [a ; b[ : amplitude b − a, centre (a + b)/2.",
+      "Fréquence = effectif / effectif total ; somme = 1."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Amplitude et centre de [160 ; 165[ ?",
+      "→ Réponse : Amplitude 5 ; centre 162,5.",
+      "Exemple 2 : Somme des fréquences en % ?",
+      "→ Réponse : 100 %."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Fréquence de la classe [170 ; 175[ (effectif 10 sur 26) ?",
+      "→ Solution : 10/26 ≈ 0,38 soit 38 %."
+     ]
     }
    ]
   },
@@ -1036,6 +1452,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un joueur de basket veut connaître sa moyenne de points par match : comment la calculer avec 22 matchs ?"
+     ]
+    },
+    {
      "h": "I. Mode",
      "lines": [
       "Tailles : classe modale [170 ; 175[ (effectif 10)."
@@ -1068,6 +1490,32 @@
       "Bâtons ou barres : hauteur proportionnelle à l’effectif.",
       "Circulaire : angle = (nᵢ/N) × 360°.",
       "Histogramme : rectangles de base les classes."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Mode : plus grand effectif.",
+      "x̄ = Σ nᵢxᵢ / N (centres des classes).",
+      "Médiane : partage en deux moitiés.",
+      "Étendue = max − min ; σ = √V.",
+      "Circulaire : angle = fréquence × 360°."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Médiane de 5 ; 7 ; 8 ; 12 ; 15.",
+      "→ Réponse : N = 5 impair : Me = 8.",
+      "Exemple 2 : Médiane de 4 ; 6 ; 9 ; 11.",
+      "→ Réponse : (6 + 9)/2 = 7,5."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Taille moyenne : 155 (3), 163 (11), 167 (13), 171 (7), 175 (2).",
+      "→ Solution : x̄ = (465 + 1 793 + 2 171 + 1 197 + 350)/36 = 5 976/36 = 166 cm."
      ]
     }
    ]

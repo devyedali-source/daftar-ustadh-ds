@@ -4,6 +4,1221 @@
  "bookTitle": "Physique 5ème M",
  "lessons": [
   {
+   "title": "Chimie – Chapitre I : La mole et la quantité de matière",
+   "match": [
+    "La mole et la quantité de matière"
+   ],
+   "pages": [
+    10,
+    17
+   ],
+   "objectives": [
+    "Définir la mole et le nombre d’Avogadro.",
+    "Calculer une masse molaire et une quantité de matière (solide, liquide, gaz).",
+    "Utiliser le volume molaire, la masse volumique, la densité et la loi des gaz parfaits."
+   ],
+   "intro": "Comment compter les molécules d’eau d’un verre ? Elles sont trop nombreuses : on les compte par « paquets », les moles.",
+   "summary": "Une mole est un ensemble de 6,02·10²³ entités identiques ; NA = 6,02·10²³ mol⁻¹ est le nombre d’Avogadro, et le nombre d’entités est N = n·NA. La masse molaire M (g·mol⁻¹) est la masse d’une mole d’atomes ou de molécules. Loi d’Avogadro-Ampère : à température et pression données, une mole de tout gaz occupe le même volume Vm : 22,4 L·mol⁻¹ dans les conditions normales (273 K, 10⁵ Pa), 24 L·mol⁻¹ dans les conditions habituelles (293 K). Quantité de matière : n = m/M (solides, liquides), n = V/Vm (gaz). Masse volumique ρ = m/V (kg·m⁻³) ; densité d = ρ/ρ_eau (solides, liquides) et d = M/29 pour un gaz. Loi des gaz parfaits : PV = nRT (P en Pa, V en m³, T en K, R = 8,32 SI).",
+   "points": [
+    "1 mol = 6,02·10²³ entités ; N = n·NA.",
+    "n = m/M ; n = V/Vm.",
+    "Vm = 22,4 L/mol (CNTP) ; 24 L/mol (conditions habituelles).",
+    "ρ = m/V ; d(gaz) = M/29.",
+    "PV = nRT."
+   ],
+   "application": {
+    "q": "Une bouteille contient 12 L de butane C₄H₁₀ (Vm = 24 L/mol). Quantité et masse du gaz ?",
+    "a": "n = 12/24 = 0,5 mol ; M = 4×12 + 10×1 = 58 g/mol ; m = 0,5 × 58 = 29 g."
+   },
+   "applications": [
+    {
+     "q": "Densité du butane par rapport à l’air ?",
+     "a": "d = 58/29 = 2 : le butane est plus lourd que l’air."
+    },
+    {
+     "q": "Nombre de molécules dans 2 mol d’eau ?",
+     "a": "N = 2 × 6,02·10²³ = 1,204·10²⁴."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment compter les molécules d’eau d’un verre ? Elles sont trop nombreuses : on les compte par « paquets », les moles."
+     ]
+    },
+    {
+     "h": "I. La mole",
+     "lines": [
+      "Une mole = 6,02·10²³ entités identiques ; NA = 6,02·10²³ mol⁻¹.",
+      "N = n·NA : 0,5 mol de O₂ contient 0,5 × 6,02·10²³ ≈ 3·10²³ molécules."
+     ]
+    },
+    {
+     "h": "II. Masse molaire",
+     "lines": [
+      "Masse molaire atomique : masse d’une mole d’atomes (g·mol⁻¹).",
+      "Masse molaire moléculaire : somme des masses molaires des atomes : M(C₄H₁₀) = 58 g/mol ; M(C₆H₁₂O₆) = 180 g/mol."
+     ]
+    },
+    {
+     "h": "III. Volume molaire (loi d’Avogadro-Ampère)",
+     "lines": [
+      "Vm = 22,4 L·mol⁻¹ à 273 K et 10⁵ Pa ; Vm = 24 L·mol⁻¹ à 293 K et 10⁵ Pa."
+     ]
+    },
+    {
+     "h": "IV. Quantité de matière",
+     "lines": [],
+     "table": [
+      [
+       "État",
+       "Formule"
+      ],
+      [
+       "Solide / liquide",
+       "n = m / M"
+      ],
+      [
+       "Gaz",
+       "n = V / Vm"
+      ],
+      [
+       "Gaz parfait",
+       "n = PV / RT"
+      ]
+     ]
+    },
+    {
+     "h": "Exemple : analyse de sang",
+     "lines": [
+      "Glucose : 4,78 mmol × 180 g/mol ≈ 0,86 g.",
+      "Urée : 0,32/60 ≈ 5,3 mmol, entre 2,50 et 8,33 mmol : taux normal.",
+      "Créatinine : 9·10⁻³/113 ≈ 79,6 μmol."
+     ]
+    },
+    {
+     "h": "V. Masse volumique et densité",
+     "lines": [
+      "ρ = m/V (kg·m⁻³).",
+      "Solide ou liquide : d = ρ/ρ_eau ; gaz : d = ρ/ρ_air = M/29."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "1 mol = 6,02·10²³ entités ; N = n·NA.",
+      "n = m/M ; n = V/Vm.",
+      "Vm = 22,4 L/mol (CNTP) ; 24 L/mol (conditions habituelles).",
+      "ρ = m/V ; d(gaz) = M/29.",
+      "PV = nRT."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Densité du butane par rapport à l’air ?",
+      "→ Réponse : d = 58/29 = 2 : le butane est plus lourd que l’air.",
+      "Exemple 2 : Nombre de molécules dans 2 mol d’eau ?",
+      "→ Réponse : N = 2 × 6,02·10²³ = 1,204·10²⁴."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une bouteille contient 12 L de butane C₄H₁₀ (Vm = 24 L/mol). Quantité et masse du gaz ?",
+      "→ Solution : n = 12/24 = 0,5 mol ; M = 4×12 + 10×1 = 58 g/mol ; m = 0,5 × 58 = 29 g."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre I : La réaction chimique et l’avancement",
+   "match": [
+    "La réaction chimique et l’avancement"
+   ],
+   "pages": [
+    18,
+    29
+   ],
+   "objectives": [
+    "Écrire et équilibrer l’équation d’une réaction chimique.",
+    "Construire un tableau d’avancement.",
+    "Déterminer le réactif limitant et l’avancement maximal."
+   ],
+   "intro": "On brûle de l’alcool : il disparaît, et il se forme du dioxyde de carbone et de l’eau. Comment prévoir les quantités ?",
+   "summary": "Au cours d’une réaction chimique, des réactifs disparaissent et des produits se forment ; l’équation doit respecter la conservation des éléments et des charges. L’avancement X est le nombre de fois que la réaction s’est produite depuis l’état initial. Pour aA + bB → cC + dD : à l’avancement X, il reste nᵢ(A) − aX et nᵢ(B) − bX, et il s’est formé cX de C et dX de D. Le réactif limitant est celui qui est entièrement consommé à la fin : on calcule nᵢ(A)/a et nᵢ(B)/b ; la plus petite valeur est l’avancement maximal Xmax et désigne le réactif limitant. Si nᵢ(A)/a = nᵢ(B)/b, le mélange est stœchiométrique.",
+   "points": [
+    "Équation équilibrée : conservation des éléments et des charges.",
+    "n(A) restant = nᵢ(A) − aX ; n(C) formé = cX.",
+    "Xmax = plus petite valeur de nᵢ(A)/a et nᵢ(B)/b.",
+    "Réactif limitant : entièrement consommé.",
+    "Mélange stœchiométrique : nᵢ(A)/a = nᵢ(B)/b."
+   ],
+   "application": {
+    "q": "2 mol de H₂ réagissent avec 2 mol de O₂ : 2H₂ + O₂ → 2H₂O. Réactif limitant et Xmax ?",
+    "a": "nᵢ(H₂)/2 = 1 ; nᵢ(O₂)/1 = 2 ; Xmax = 1 mol : H₂ est limitant ; il se forme 2 mol d’eau et il reste 1 mol de O₂."
+   },
+   "applications": [
+    {
+     "q": "Mg + 2H₃O⁺ → Mg²⁺ + H₂ + 2H₂O : quel test montre la formation d’ions Mg²⁺ ?",
+     "a": "Le précipité obtenu avec la soude (hydroxyde de magnésium)."
+    },
+    {
+     "q": "Qu’est-ce qu’un mélange stœchiométrique ?",
+     "a": "Les réactifs sont dans les proportions de l’équation : tous sont consommés en même temps."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "On brûle de l’alcool : il disparaît, et il se forme du dioxyde de carbone et de l’eau. Comment prévoir les quantités ?"
+     ]
+    },
+    {
+     "h": "I. Réaction chimique",
+     "lines": [
+      "Réactifs (consommés) → produits (formés).",
+      "L’équation est équilibrée : mêmes éléments, mêmes nombres d’atomes et mêmes charges de chaque côté."
+     ]
+    },
+    {
+     "h": "II. Tableau d’avancement",
+     "lines": [],
+     "table": [
+      [
+       "État",
+       "Avancement",
+       "n(A)",
+       "n(B)",
+       "n(C)",
+       "n(D)"
+      ],
+      [
+       "Initial",
+       "0",
+       "nᵢ(A)",
+       "nᵢ(B)",
+       "0",
+       "0"
+      ],
+      [
+       "En cours",
+       "X",
+       "nᵢ(A) − aX",
+       "nᵢ(B) − bX",
+       "cX",
+       "dX"
+      ],
+      [
+       "Final",
+       "Xmax",
+       "nᵢ(A) − aXmax",
+       "nᵢ(B) − bXmax",
+       "cXmax",
+       "dXmax"
+      ]
+     ]
+    },
+    {
+     "h": "III. Expression de l’avancement",
+     "lines": [
+      "X = (nᵢ(A) − n(A)restant)/a = (nᵢ(B) − n(B)restant)/b = n(C)/c = n(D)/d."
+     ]
+    },
+    {
+     "h": "IV. Réactif limitant",
+     "lines": [
+      "Hypothèse 1 : A limitant ⇒ nᵢ(A) − aXmax = 0 ⇒ Xmax = nᵢ(A)/a.",
+      "Hypothèse 2 : B limitant ⇒ nᵢ(B) − bXmax = 0 ⇒ Xmax = nᵢ(B)/b.",
+      "La plus petite valeur est la bonne (le manuel écrit par erreur nᵢ(B)/a et nᵢ(A) − bXmax)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Équation équilibrée : conservation des éléments et des charges.",
+      "n(A) restant = nᵢ(A) − aX ; n(C) formé = cX.",
+      "Xmax = plus petite valeur de nᵢ(A)/a et nᵢ(B)/b.",
+      "Réactif limitant : entièrement consommé.",
+      "Mélange stœchiométrique : nᵢ(A)/a = nᵢ(B)/b."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Mg + 2H₃O⁺ → Mg²⁺ + H₂ + 2H₂O : quel test montre la formation d’ions Mg²⁺ ?",
+      "→ Réponse : Le précipité obtenu avec la soude (hydroxyde de magnésium).",
+      "Exemple 2 : Qu’est-ce qu’un mélange stœchiométrique ?",
+      "→ Réponse : Les réactifs sont dans les proportions de l’équation : tous sont consommés en même temps."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "2 mol de H₂ réagissent avec 2 mol de O₂ : 2H₂ + O₂ → 2H₂O. Réactif limitant et Xmax ?",
+      "→ Solution : nᵢ(H₂)/2 = 1 ; nᵢ(O₂)/1 = 2 ; Xmax = 1 mol : H₂ est limitant ; il se forme 2 mol d’eau et il reste 1 mol de O₂."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 25, ex. 4",
+     "q": "1) Un comprimé contient m = 500 mg d’acide ascorbique C₆H₈O₆. Quelle quantité de matière contient-il ?\n2) Une gélule contient n = 8,04 mmol de chlorure de potassium KCl. Quelle masse de KCl absorbe-t-on ?\nDonnées : M(C₆H₈O₆) = 176,0 g/mol ; M(KCl) = 74,6 g/mol.",
+     "a": "1) n = m/M = 0,500/176,0 ≈ 2,84 × 10⁻³ mol.\n2) m = n × M = 8,04 × 10⁻³ × 74,6 ≈ 0,600 g."
+    },
+    {
+     "k": "book",
+     "src": "p. 25, ex. 5",
+     "q": "Deux récipients reliés par un robinet contiennent un gaz parfait à 27 °C : P₁ = 2,0 × 10⁵ Pa, V₁ = 2,0 L ; P₂ = 1,0 × 10⁵ Pa, V₂ = 5,0 L (R = 8,31 SI).\n1) Calculer n₁ et n₂. 2) On ouvre le robinet : volume total Vt ? 3) Pression finale Pt ?",
+     "a": "T = 300 K. 1) n₁ = P₁V₁/(RT) = (2,0 × 10⁵ × 2,0 × 10⁻³)/(8,31 × 300) ≈ 0,160 mol ; n₂ = (1,0 × 10⁵ × 5,0 × 10⁻³)/2493 ≈ 0,201 mol.\n2) Vt = 7,0 L.\n3) Pt = (n₁ + n₂)RT/Vt = (400 + 500)/(7,0 × 10⁻³) ≈ 1,29 × 10⁵ Pa."
+    },
+    {
+     "k": "book",
+     "src": "p. 25, ex. 6",
+     "q": "On verse V = 20,0 mL d’une solution de nitrate d’argent ([Ag⁺] = 0,15 mol/L) sur 0,127 g de poudre de cuivre ; la solution devient bleue et de l’argent se dépose.\na) Équation. b) État initial. c) Réactif limitant et avancement maximal. d) État final. e) Concentrations des ions et masses des solides à l’état final.\n(M(Cu) = 63,5 g/mol ; M(Ag) = 108 g/mol)",
+     "a": "a) Cu + 2Ag⁺ → Cu²⁺ + 2Ag.\nb) n(Ag⁺) = 0,020 × 0,15 = 3,0 × 10⁻³ mol ; n(Cu) = 0,127/63,5 = 2,0 × 10⁻³ mol.\nc) Ag⁺ : 3,0 × 10⁻³ − 2x = 0 ⇒ x = 1,5 × 10⁻³ ; Cu : x = 2,0 × 10⁻³. Ag⁺ est limitant, xmax = 1,5 × 10⁻³ mol.\nd) Cu : 0,5 × 10⁻³ mol ; Ag⁺ : 0 ; Cu²⁺ : 1,5 × 10⁻³ mol ; Ag : 3,0 × 10⁻³ mol.\ne) [Cu²⁺] = 1,5 × 10⁻³/0,020 = 0,075 mol/L ; [NO₃⁻] = 0,15 mol/L. m(Cu) ≈ 0,032 g ; m(Ag) ≈ 0,324 g."
+    },
+    {
+     "k": "book",
+     "src": "p. 26, ex. 7",
+     "q": "Un réservoir contient 42 L d’essence assimilée à l’heptane C₇H₁₆ (densité 0,755). La combustion est complète (CO₂ et H₂O). Vm = 25 L/mol.\na) Équation. b) Volume de dioxygène pour la moitié du réservoir. c) Pour la totalité. d) Volume de CO₂ formé (totalité).",
+     "a": "a) C₇H₁₆ + 11 O₂ → 7 CO₂ + 8 H₂O.\nb) m = 42 × 0,755 = 31,71 kg ; n = 31 710/100 = 317,1 mol. Moitié : 158,6 mol ⇒ n(O₂) = 11 × 158,6 ≈ 1744 mol ⇒ V ≈ 43,6 m³.\nc) ≈ 87,2 m³.\nd) n(CO₂) = 7 × 317,1 ≈ 2220 mol ⇒ V ≈ 55,5 m³."
+    },
+    {
+     "k": "book",
+     "src": "p. 27, ex. 9",
+     "q": "Combustion de la diméthylhydrazine : C₂H₈N₂ + N₂O₄ → N₂ + H₂O + CO₂.\n1) Équilibrer. 2) Quantités initiales pour 480 g de C₂H₈N₂ et 1288 g de N₂O₄. 3) Tableau d’avancement. 4) Composition finale et masses des produits.",
+     "a": "1) C₂H₈N₂ + 2N₂O₄ → 3N₂ + 4H₂O + 2CO₂.\n2) M(C₂H₈N₂) = 60 g/mol ⇒ 8,0 mol ; M(N₂O₄) = 92 g/mol ⇒ 14 mol.\n3) xmax : 8,0 pour C₂H₈N₂, 14/2 = 7,0 pour N₂O₄ : N₂O₄ est limitant, xmax = 7,0 mol.\n4) C₂H₈N₂ : 1,0 mol ; N₂ : 21 mol (588 g) ; H₂O : 28 mol (504 g) ; CO₂ : 14 mol (616 g)."
+    },
+    {
+     "k": "book",
+     "src": "p. 27, ex. 10",
+     "q": "3HO⁻ + Fe³⁺ → Fe(OH)₃. On mélange 20 mL de sulfate de fer (0,12 mol/L en Fe³⁺) et 2 mL de soude (0,5 mol/L).\na) Quantités initiales. b) Tableau d’avancement. c) État final. d) Quantités des réactifs quand il s’est formé 2 × 10⁻⁴ mol de Fe(OH)₃.",
+     "a": "a) n(Fe³⁺) = 2,4 × 10⁻³ mol ; n(HO⁻) = 1,0 × 10⁻³ mol.\nb) HO⁻ : 1,0 × 10⁻³ − 3x ; Fe³⁺ : 2,4 × 10⁻³ − x ; Fe(OH)₃ : x.\nc) HO⁻ limitant : xmax ≈ 3,3 × 10⁻⁴ mol. Fe³⁺ restant ≈ 2,07 × 10⁻³ mol ; Fe(OH)₃ ≈ 3,3 × 10⁻⁴ mol.\nd) x = 2 × 10⁻⁴ : HO⁻ = 4,0 × 10⁻⁴ mol ; Fe³⁺ = 2,2 × 10⁻³ mol."
+    },
+    {
+     "k": "book",
+     "src": "p. 28, ex. 12",
+     "q": "On fait réagir 0,60 g d’aluminium avec 6,0 mL d’acide chlorhydrique à 1,0 mol/L en H⁺ ; un gaz se dégage. Vm = 25 L/mol.\n1) Nature du gaz ? 2) Équation. 3) Quantités initiales. 4) Réactif limitant et volume de gaz dégagé.",
+     "a": "1) Du dihydrogène (petite détonation).\n2) 2Al + 6H⁺ → 2Al³⁺ + 3H₂.\n3) n(Al) = 0,60/27 ≈ 2,2 × 10⁻² mol ; n(H⁺) = 6,0 × 10⁻³ mol.\n4) Al : x ≤ 1,1 × 10⁻² ; H⁺ : x ≤ 1,0 × 10⁻³. H⁺ est limitant, xmax = 1,0 × 10⁻³ mol ; n(H₂) = 3,0 × 10⁻³ mol, V = 75 mL."
+    },
+    {
+     "k": "book",
+     "src": "p. 28, ex. 13",
+     "q": "Synthèse de l’aspirine : C₇H₆O₃ + C₄H₆O₃ → C₉H₈O₄ + C₂H₄O₂, avec 3,3 g d’acide salicylique et 7,0 mL d’anhydride acétique (masse volumique 1,08 g/mL ; Correction : le manuel écrit 1,08 g.L⁻¹).\n1) Quantités initiales. 2) Bilan de matière. 3) Masses à l’état final. 4) Masse d’acide salicylique pour un mélange stœchiométrique.",
+     "a": "1) M(C₇H₆O₃) = 138 g/mol ⇒ 2,39 × 10⁻² mol. m(anhydride) = 7,56 g ; M = 102 g/mol ⇒ 7,41 × 10⁻² mol.\n2) L’acide salicylique est limitant : xmax = 2,39 × 10⁻² mol.\n3) Aspirine : 2,39 × 10⁻² × 180 ≈ 4,30 g ; acide acétique ≈ 1,43 g ; anhydride restant 5,02 × 10⁻² mol ≈ 5,12 g.\n4) 7,41 × 10⁻² × 138 ≈ 10,2 g."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un camping-gaz contient 190 g de butane C₄H₁₀. Lors de la combustion complète, il se forme CO₂ et H₂O. (Vm = 24 L/mol ; l’air contient 1/5 de dioxygène en volume)\n1) Écrire l’équation de combustion.\n2) Quel volume de dioxygène faut-il pour brûler tout le butane ? Quel volume d’air ?\n3) Quelle masse de CO₂ rejette-t-on ? Pourquoi faut-il aérer la tente ?",
+     "a": "1) 2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O.\n2) n = 190/58 ≈ 3,28 mol ; n(O₂) = 6,5 × 3,28 ≈ 21,3 mol ⇒ V(O₂) ≈ 511 L ; V(air) ≈ 2,56 m³.\n3) n(CO₂) = 4 × 3,28 ≈ 13,1 mol ⇒ 577 g. La combustion consomme le dioxygène et, si l’air manque, elle devient incomplète et produit du monoxyde de carbone, très toxique."
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre II : De l’atome à l’élément chimique",
+   "match": [
+    "De l’atome à l’élément chimique"
+   ],
+   "pages": [
+    30,
+    37
+   ],
+   "objectives": [
+    "Décrire la structure de l’atome (noyau, électrons) et ses ordres de grandeur.",
+    "Utiliser la notation ᴬ_Z X, le nombre de neutrons N = A − Z et les isotopes.",
+    "Établir la répartition électronique sur les couches K, L, M."
+   ],
+   "intro": "Un atome est-il plein ? Si le noyau était une bille, l’atome serait un stade !",
+   "summary": "L’atome est composé d’un noyau chargé positivement autour duquel gravitent des électrons chargés négativement ; le noyau est 100 000 fois plus petit que l’atome (rayon ~10⁻¹⁵ m) mais concentre presque toute sa masse. Il contient des protons (charge e = 1,6·10⁻¹⁹ C, masse 1,67·10⁻²⁷ kg) et des neutrons (neutres, masse voisine), appelés nucléons. L’électron porte −e et a une masse de 9,1·10⁻³¹ kg. Z (numéro atomique) = nombre de protons = nombre d’électrons de l’atome ; A (nombre de masse) = nombre de nucléons ; N = A − Z. Les atomes de même Z forment un élément chimique ; les isotopes ont même Z et des A différents. Les électrons se répartissent sur des couches K, L, M… ; la couche de rang n contient au plus 2n² électrons et on remplit une couche quand la précédente est saturée.",
+   "points": [
+    "Noyau : protons + neutrons (nucléons) ; électrons autour.",
+    "Notation ᴬ_Z X ; N = A − Z.",
+    "Même Z = même élément ; isotopes : même Z, A différent.",
+    "Couche n : au plus 2n² électrons (K : 2, L : 8, M : 18).",
+    "m(atome) ≈ m(noyau)."
+   ],
+   "application": {
+    "q": "Le noyau d’un atome a une charge q = 3,2·10⁻¹⁹ C et contient 2 neutrons : Z, A et structure électronique ?",
+    "a": "Z = q/e = 2 ; A = 2 + 2 = 4 ; structure (K)² : c’est l’hélium."
+   },
+   "applications": [
+    {
+     "q": "Combien de neutrons dans ²³₁₁Na ?",
+     "a": "N = 23 − 11 = 12."
+    },
+    {
+     "q": "Structure électronique de l’oxygène (Z = 8) ?",
+     "a": "(K)²(L)⁶."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Un atome est-il plein ? Si le noyau était une bille, l’atome serait un stade !"
+     ]
+    },
+    {
+     "h": "I. Structure de l’atome",
+     "lines": [
+      "Noyau positif (protons + neutrons) et nuage électronique négatif.",
+      "Proton : +e = 1,6·10⁻¹⁹ C ; 1,67·10⁻²⁷ kg. Neutron : neutre, masse voisine. Électron : −e ; 9,1·10⁻³¹ kg."
+     ]
+    },
+    {
+     "h": "II. Notation et nombres",
+     "lines": [
+      "ᴬ_Z X : Z protons, A nucléons, N = A − Z neutrons.",
+      "L’atome est électriquement neutre : Z électrons."
+     ]
+    },
+    {
+     "h": "III. Élément chimique et isotopes",
+     "lines": [
+      "Même Z ⇒ même élément ; à chaque Z correspond un seul élément.",
+      "Isotopes : même Z, A différents (ex. ³⁵Cl et ³⁷Cl)."
+     ]
+    },
+    {
+     "h": "IV. Répartition électronique",
+     "lines": [
+      "Couches K (n = 1), L (n = 2), M (n = 3)… ; au plus 2n² électrons.",
+      "Chlore Z = 17 : (K)²(L)⁸(M)⁷ ; avec 20 neutrons : A = 37 → ³⁷₁₇Cl."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Noyau : protons + neutrons (nucléons) ; électrons autour.",
+      "Notation ᴬ_Z X ; N = A − Z.",
+      "Même Z = même élément ; isotopes : même Z, A différent.",
+      "Couche n : au plus 2n² électrons (K : 2, L : 8, M : 18).",
+      "m(atome) ≈ m(noyau)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Combien de neutrons dans ²³₁₁Na ?",
+      "→ Réponse : N = 23 − 11 = 12.",
+      "Exemple 2 : Structure électronique de l’oxygène (Z = 8) ?",
+      "→ Réponse : (K)²(L)⁶."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Le noyau d’un atome a une charge q = 3,2·10⁻¹⁹ C et contient 2 neutrons : Z, A et structure électronique ?",
+      "→ Solution : Z = q/e = 2 ; A = 2 + 2 = 4 ; structure (K)² : c’est l’hélium."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre II : La classification périodique des éléments",
+   "match": [
+    "La classification périodique des éléments"
+   ],
+   "pages": [
+    38,
+    46
+   ],
+   "objectives": [
+    "Décrire la classification périodique (7 périodes, 18 colonnes).",
+    "Situer un élément à partir de sa structure électronique.",
+    "Connaître les familles : alcalins, alcalino-terreux, halogènes, gaz rares."
+   ],
+   "intro": "Pourquoi le sodium et le potassium réagissent-ils de la même façon avec l’eau ?",
+   "summary": "La classification périodique actuelle compte 7 lignes (périodes) et 18 colonnes (groupes). Le numéro n de la couche externe indique la période ; le nombre d’électrons de la couche externe indique la colonne (le groupe). Les isotopes d’un élément occupent la même case. Les éléments d’une même colonne ont des propriétés chimiques voisines et forment une famille : 1re colonne les alcalins, 2e les alcalino-terreux, 7e (groupe 17) les halogènes, dernière colonne les gaz rares (couche externe saturée, inertes).",
+   "points": [
+    "7 périodes, 18 colonnes.",
+    "Période = numéro de la couche externe.",
+    "Colonne = électrons de la couche externe.",
+    "Familles : alcalins, alcalino-terreux, halogènes, gaz rares."
+   ],
+   "application": {
+    "q": "Le chlore est dans la 3e ligne et la 7e colonne : structure électronique et Z ?",
+    "a": "(K)²(L)⁸(M)⁷ ; Z = 17."
+   },
+   "applications": [
+    {
+     "q": "Position du magnésium (Z = 12) ?",
+     "a": "(K)²(L)⁸(M)² : 3e période, 2e colonne (alcalino-terreux)."
+    },
+    {
+     "q": "Pourquoi les gaz rares sont-ils inertes ?",
+     "a": "Leur couche externe est saturée."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le sodium et le potassium réagissent-ils de la même façon avec l’eau ?"
+     ]
+    },
+    {
+     "h": "Cours",
+     "lines": [
+      "La classification périodique actuelle compte 7 lignes (périodes) et 18 colonnes (groupes).",
+      "Le numéro n de la couche externe indique la période ; le nombre d’électrons de la couche externe indique la colonne (le groupe).",
+      "Les isotopes d’un élément occupent la même case.",
+      "Les éléments d’une même colonne ont des propriétés chimiques voisines et forment une famille : 1re colonne les alcalins, 2e les alcalino-terreux, 7e (groupe 17) les halogènes, dernière colonne les gaz rares (couche externe saturée, inertes)."
+     ]
+    },
+    {
+     "h": "I. Le tableau",
+     "lines": [
+      "7 lignes (périodes) et 18 colonnes (groupes) ; classement par Z croissant."
+     ]
+    },
+    {
+     "h": "II. Lire la position",
+     "lines": [
+      "Période = rang n de la couche externe.",
+      "Colonne = nombre d’électrons périphériques.",
+      "He (K)² : 1re période, gaz rare ; Li (K)²(L)¹ : 2e période, 1re colonne."
+     ]
+    },
+    {
+     "h": "III. Familles",
+     "lines": [],
+     "table": [
+      [
+       "Colonne",
+       "Famille",
+       "Exemples"
+      ],
+      [
+       "1",
+       "alcalins",
+       "Li, Na, K"
+      ],
+      [
+       "2",
+       "alcalino-terreux",
+       "Be, Mg, Ca"
+      ],
+      [
+       "17 (7e)",
+       "halogènes",
+       "F, Cl, Br"
+      ],
+      [
+       "18 (dernière)",
+       "gaz rares",
+       "He, Ne, Ar"
+      ]
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "7 périodes, 18 colonnes.",
+      "Période = numéro de la couche externe.",
+      "Colonne = électrons de la couche externe.",
+      "Familles : alcalins, alcalino-terreux, halogènes, gaz rares."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Position du magnésium (Z = 12) ?",
+      "→ Réponse : (K)²(L)⁸(M)² : 3e période, 2e colonne (alcalino-terreux).",
+      "Exemple 2 : Pourquoi les gaz rares sont-ils inertes ?",
+      "→ Réponse : Leur couche externe est saturée."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Le chlore est dans la 3e ligne et la 7e colonne : structure électronique et Z ?",
+      "→ Solution : (K)²(L)⁸(M)⁷ ; Z = 17."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 43, ex. 4",
+     "q": "L’atome d’aluminium possède 13 électrons et 27 nucléons (e = 1,6 × 10⁻¹⁹ C).\na) Charge totale des électrons. b) Charge du noyau et nombre de protons. c) Nombre de charge. d) Représentation symbolique.",
+     "a": "a) q = −13 × 1,6 × 10⁻¹⁹ = −2,08 × 10⁻¹⁸ C.\nb) L’atome est neutre : le noyau porte +2,08 × 10⁻¹⁸ C, soit 13 protons.\nc) Z = 13.\nd) ²⁷₁₃Al (14 neutrons)."
+    },
+    {
+     "k": "book",
+     "src": "p. 43, ex. 5",
+     "q": "La masse d’un atome X est 3,84 × 10⁻²⁶ kg et la charge de son noyau est 17,6 × 10⁻¹⁹ C (masse d’un nucléon : 1,67 × 10⁻²⁷ kg).\n1) Composition du noyau et nombre d’électrons. 2) Identifier l’élément. 3) Représentation symbolique.",
+     "a": "1) Z = 17,6 × 10⁻¹⁹/1,6 × 10⁻¹⁹ = 11 protons ; A = 3,84 × 10⁻²⁶/1,67 × 10⁻²⁷ ≈ 23 nucléons, donc 12 neutrons ; 11 électrons.\n2) Z = 11 : le sodium.\n3) ²³₁₁Na."
+    },
+    {
+     "k": "book",
+     "src": "p. 43, ex. 6",
+     "q": "Le chlore (Z = 17) a deux isotopes de 18 et 20 neutrons.\n1) Les représenter. 2) Masse molaire de chacun. 3) Structure électronique de l’ion Cl⁻. 4) Sachant que M(Cl) = 35,5 g/mol, calculer le pourcentage de chaque isotope.",
+     "a": "1) ³⁵₁₇Cl et ³⁷₁₇Cl.\n2) Environ 35 g/mol et 37 g/mol.\n3) Cl⁻ : (K)²(L)⁸(M)⁸.\n4) 35x + 37(1 − x) = 35,5 ⇒ x = 0,75 : 75 % de chlore 35 et 25 % de chlore 37."
+    },
+    {
+     "k": "book",
+     "src": "p. 43, ex. 7",
+     "q": "Le noyau de phosphore renferme 30 nucléons et porte q = 24 × 10⁻¹⁹ C.\n1) Nombre de protons. 2) Symbole du noyau. 3) Structure électronique. 4) L’atome gagne trois électrons : symbole et structure de l’ion obtenu ; composition de son noyau.",
+     "a": "1) Z = 24/1,6 = 15.\n2) ³⁰₁₅P.\n3) (K)²(L)⁸(M)⁵.\n4) P³⁻ : (K)²(L)⁸(M)⁸ ; le noyau ne change pas : 15 protons et 15 neutrons."
+    },
+    {
+     "k": "book",
+     "src": "p. 44, ex. 8",
+     "q": "L’aluminium a pour formule électronique (K)²(L)⁸(M)³.\n1) Nombre de charge. 2) Symbole du noyau (14 neutrons). 3) Masse molaire approchée. 4) Structure électronique de Al³⁺. 5) Position dans le tableau périodique.",
+     "a": "1) Z = 13. 2) ²⁷₁₃Al. 3) M ≈ 27 g/mol. 4) Al³⁺ : (K)²(L)⁸. 5) 3e période (couche M externe), 13e colonne (3e groupe des éléments principaux), car 3 électrons périphériques."
+    },
+    {
+     "k": "book",
+     "src": "p. 44, ex. 10",
+     "q": "Un jeune sportif doit consommer 1 g de calcium par jour ; 100 g de lait contiennent 133 mg de calcium ; masse volumique du lait 1,031 g/cm³.\n1) Volume de lait nécessaire. 2) Nombre de verres de 200 cm³.",
+     "a": "1) m(lait) = 1000/1,33 ≈ 752 g ; V = 752/1,031 ≈ 729 cm³ (environ 0,73 L).\n2) 729/200 ≈ 3,6 : il faut un peu moins de 4 verres."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Le soufre est situé dans la 3e période et la 16e colonne (6 électrons périphériques).\n1) Structure électronique et numéro atomique. 2) Quel ion simple donne-t-il ? 3) Citer un élément de la même famille.",
+     "a": "1) (K)²(L)⁸(M)⁶ : Z = 16.\n2) Il gagne 2 électrons pour avoir l’octet : S²⁻.\n3) L’oxygène (Z = 8), juste au-dessus."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Une étiquette d’eau minérale indique : calcium 80 mg/L, magnésium 24 mg/L, sodium 9,2 mg/L.\n1) Donner la structure électronique de Ca (Z = 20), Mg (Z = 12) et Na (Z = 11) et les ions qu’ils forment.\n2) Calculer la concentration molaire de chaque ion (M : Ca 40 ; Mg 24 ; Na 23 g/mol).\n3) Pourquoi Ca et Mg ont-ils des propriétés voisines ?",
+     "a": "1) Ca : (K)²(L)⁸(M)⁸(N)² → Ca²⁺ ; Mg : (K)²(L)⁸(M)² → Mg²⁺ ; Na : (K)²(L)⁸(M)¹ → Na⁺.\n2) [Ca²⁺] = 0,080/40 = 2,0 × 10⁻³ mol/L ; [Mg²⁺] = 1,0 × 10⁻³ mol/L ; [Na⁺] = 4,0 × 10⁻⁴ mol/L.\n3) Ils ont tous deux 2 électrons périphériques : ils sont dans la même colonne (alcalino-terreux)."
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre III : Molécules et ions",
+   "match": [
+    "Molécules et ions"
+   ],
+   "pages": [
+    47,
+    62
+   ],
+   "objectives": [
+    "Énoncer les règles du duet et de l’octet.",
+    "Distinguer liaison covalente et liaison ionique ; représenter une molécule (formules brute, développée, Lewis).",
+    "Prévoir les ions monoatomiques et connaître des ions polyatomiques."
+   ],
+   "intro": "Pourquoi le chlore se trouve-t-il dans la nature sous forme de Cl₂ et non d’atomes isolés ?",
+   "summary": "Sauf les gaz rares, les atomes sont instables car leur couche externe n’est pas remplie ; ils évoluent pour respecter la règle du duet (2 électrons) ou de l’octet (8 électrons) : ils mettent en commun des électrons (molécules) ou en cèdent ou en captent (ions). Une molécule est un ensemble d’au moins deux atomes unis par des liaisons. Liaison covalente : doublet de deux électrons partagés (un de chaque atome) ; liaison ionique : attraction électrostatique entre ions de signes contraires. Une molécule est représentée par sa formule brute, semi-développée ou développée ; la représentation de Lewis montre les doublets liants et non liants. Deux isomères ont la même formule brute mais des formules développées différentes. Un ion porte des charges positives (cation) ou négatives (anion) ; il est monoatomique ou polyatomique.",
+   "points": [
+    "Duet (H, Li…) / octet.",
+    "Covalente : doublet partagé ; ionique : attraction entre ions.",
+    "Formules : brute, semi-développée, développée, Lewis.",
+    "Isomères : même formule brute.",
+    "Cation (+) / anion (−) ; mono- ou polyatomique."
+   ],
+   "application": {
+    "q": "Comment se forme la molécule Cl₂ ?",
+    "a": "Chaque chlore (7 électrons externes) met en commun un électron : un doublet liant, chacun obtient l’octet : Cl–Cl."
+   },
+   "applications": [
+    {
+     "q": "Quel ion donne le magnésium (Z = 12) ?",
+     "a": "Mg²⁺ (il cède les 2 électrons de la couche M)."
+    },
+    {
+     "q": "Formule du chlorure de calcium ?",
+     "a": "CaCl₂ (Ca²⁺ et 2 Cl⁻)."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi le chlore se trouve-t-il dans la nature sous forme de Cl₂ et non d’atomes isolés ?"
+     ]
+    },
+    {
+     "h": "I. Règles du duet et de l’octet",
+     "lines": [
+      "Les atomes tendent vers 2 (duet) ou 8 (octet) électrons sur la couche externe, comme les gaz rares."
+     ]
+    },
+    {
+     "h": "II. Liaisons chimiques",
+     "lines": [
+      "Covalente : mise en commun d’un doublet (H₂, Cl₂, HCl, H₂O).",
+      "Ionique : attraction entre ions (Na⁺Cl⁻)."
+     ]
+    },
+    {
+     "h": "III. Représentations",
+     "lines": [
+      "Formule brute (C₂H₆O), semi-développée (CH₃–CH₂–OH), développée, Lewis (doublets liants et non liants).",
+      "Isomères : CH₃–CH₂–OH et CH₃–O–CH₃ (même C₂H₆O)."
+     ]
+    },
+    {
+     "h": "IV. Les ions",
+     "lines": [
+      "Na → Na⁺ + e⁻ ; Cl + e⁻ → Cl⁻ ; Mg → Mg²⁺ + 2e⁻.",
+      "Ions polyatomiques : SO₄²⁻, NO₃⁻, OH⁻, NH₄⁺, H₃O⁺."
+     ]
+    },
+    {
+     "h": "V. Molécules polaires",
+     "lines": [
+      "LiCl, HF : molécules dissymétriques (polaires)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Duet (H, Li…) / octet.",
+      "Covalente : doublet partagé ; ionique : attraction entre ions.",
+      "Formules : brute, semi-développée, développée, Lewis.",
+      "Isomères : même formule brute.",
+      "Cation (+) / anion (−) ; mono- ou polyatomique."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quel ion donne le magnésium (Z = 12) ?",
+      "→ Réponse : Mg²⁺ (il cède les 2 électrons de la couche M).",
+      "Exemple 2 : Formule du chlorure de calcium ?",
+      "→ Réponse : CaCl₂ (Ca²⁺ et 2 Cl⁻)."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Comment se forme la molécule Cl₂ ?",
+      "→ Solution : Chaque chlore (7 électrons externes) met en commun un électron : un doublet liant, chacun obtient l’octet : Cl–Cl."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 59, ex. 1",
+     "q": "1) Structure électronique et représentation de Lewis des atomes de carbone (Z = 6) et d’hydrogène (Z = 1). 2) Nombre de liaisons covalentes de chacun. 3) Formules développées du méthane CH₄ et de l’acétylène C₂H₂.",
+     "a": "1) C : (K)²(L)⁴, 4 électrons de valence (4 électrons célibataires dans le schéma de Lewis) ; H : (K)¹.\n2) Le carbone forme 4 liaisons (tétravalent), l’hydrogène 1 (monovalent).\n3) CH₄ : un C relié à quatre H par des liaisons simples. C₂H₂ : H–C≡C–H (liaison triple entre les deux C)."
+    },
+    {
+     "k": "book",
+     "src": "p. 59, ex. 3",
+     "q": "1) Définir les liaisons covalentes simple, double et triple. 2) Schémas de Lewis de O₂, N₂ et CO₂ et types de liaisons.",
+     "a": "1) Mise en commun d’un, deux ou trois doublets d’électrons entre deux atomes.\n2) O₂ : O=O (double liaison, deux doublets non liants sur chaque O). N₂ : N≡N (triple liaison, un doublet non liant sur chaque N). CO₂ : O=C=O (deux doubles liaisons)."
+    },
+    {
+     "k": "book",
+     "src": "p. 59, ex. 4",
+     "q": "1) Quels ions obtient-on à partir des atomes de sodium (Z = 11) et d’oxygène (Z = 8) ? 2) Équations de passage de l’atome à l’ion. 3) Dans l’oxyde de sodium, dans quel rapport sont ces ions ?",
+     "a": "1) Na⁺ et O²⁻.\n2) Na → Na⁺ + e⁻ ; O + 2e⁻ → O²⁻.\n3) Le solide est neutre : deux Na⁺ pour un O²⁻ ; formule Na₂O."
+    },
+    {
+     "k": "book",
+     "src": "p. 60, ex. 6",
+     "q": "C (Z = 6), F (9), Na (11), Mg (12), Cl (17).\n1) Structures électroniques ; éléments ayant le même nombre d’électrons de valence. 2) Formule brute et schéma de Lewis du tétrafluorométhane. 3) Ions simples de Mg, Cl, Na, F ; formule du chlorure de magnésium.",
+     "a": "1) C : K²L⁴ ; F : K²L⁷ ; Na : K²L⁸M¹ ; Mg : K²L⁸M² ; Cl : K²L⁸M⁷. F et Cl ont 7 électrons de valence.\n2) CF₄ : C central lié à quatre F par des liaisons simples, chaque F portant 3 doublets non liants ; liaisons covalentes polarisées (F plus électronégatif).\n3) Mg²⁺, Cl⁻, Na⁺, F⁻ ; chlorure de magnésium : MgCl₂."
+    },
+    {
+     "k": "book",
+     "src": "p. 61, ex. 7",
+     "q": "P (Z = 15) et Cl (Z = 17). 1) Positions dans le tableau ; lequel est le plus électronégatif ? 2) Nature de la liaison P–Cl, nombre de liaisons du phosphore, formule et schéma de Lewis de la molécule.",
+     "a": "1) P : 3e période, 15e colonne (5 électrons de valence) ; Cl : 3e période, 17e colonne. Cl est plus électronégatif (plus à droite dans la même période).\n2) Liaison covalente polarisée (δ+ sur P, δ− sur Cl). P forme 3 liaisons : PCl₃ (P central avec un doublet non liant, chaque Cl avec 3 doublets non liants)."
+    },
+    {
+     "k": "book",
+     "src": "p. 61, ex. 9",
+     "q": "1) Schémas de Lewis de H₂O, H₂O₂ et NH₃. 2) Expliquer la formation de NH₄⁺ et H₃O⁺. 3) L’ion bichromate contient 2 Cr et 7 O et porte deux charges négatives : formule ? Formule du bichromate de potassium ? 4) Formule du chlorure d’ammonium.",
+     "a": "1) H–O–H (2 doublets non liants sur O) ; H–O–O–H ; NH₃ (N avec 3 liaisons et 1 doublet non liant).\n2) Le doublet non liant de N (ou de O) capte un ion H⁺ : NH₃ + H⁺ → NH₄⁺ ; H₂O + H⁺ → H₃O⁺.\n3) Cr₂O₇²⁻ ; K₂Cr₂O₇.\n4) NH₄Cl."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Écrire la formule brute des composés ioniques formés par : a) Al³⁺ et O²⁻ ; b) Ca²⁺ et Cl⁻ ; c) Fe³⁺ et SO₄²⁻.",
+     "a": "La somme des charges doit être nulle : a) Al₂O₃ ; b) CaCl₂ ; c) Fe₂(SO₄)₃."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Le sel de table est le chlorure de sodium NaCl ; le gaz qui sert à désinfecter l’eau est le dichlore Cl₂.\n1) Expliquer pourquoi NaCl est un composé ionique alors que Cl₂ est une molécule.\n2) Écrire le schéma de Lewis de Cl₂.\n3) Dans l’eau de Javel on trouve l’ion hypochlorite ClO⁻. Proposer un schéma de Lewis.",
+     "a": "1) Na cède facilement son électron périphérique et Cl en capte un : il se forme des ions Na⁺ et Cl⁻ qui s’attirent. Deux atomes de chlore identiques mettent en commun un doublet : liaison covalente.\n2) Cl–Cl, chaque Cl portant 3 doublets non liants.\n3) [Cl–O]⁻ : liaison simple, 3 doublets non liants sur Cl et 3 sur O (O porte la charge négative)."
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre IV : Les ions en solution",
+   "match": [
+    "Les ions en solution"
+   ],
+   "pages": [
+    63,
+    79
+   ],
+   "objectives": [
+    "Mettre en évidence les ions en solution (conduction, électrolyse).",
+    "Calculer concentrations massique et molaire ; écrire une équation de dissolution.",
+    "Reconnaître des ions par des tests de précipitation."
+   ],
+   "intro": "L’eau pure conduit-elle le courant ? Et l’eau salée ?",
+   "summary": "Les ions en solution sont mis en évidence par la conduction électrique, négligeable en leur absence. Une solution aqueuse ionique est électriquement neutre. Un électrolyte est un corps dont la solution conduit mieux le courant que l’eau pure ; il est fort s’il s’ionise totalement, faible sinon. Concentration massique Cm = m/V (g/L) ; concentration molaire C = n/V (mol/L) ; [ion] dépend des coefficients de l’équation de dissolution. La solubilité est la concentration massique maximale du soluté. Lors de l’électrolyse, les anions vont vers l’anode (+), les cations vers la cathode (−). Tests de précipitation : Cu²⁺ + 2OH⁻ → Cu(OH)₂ (bleu) ; Fe²⁺ → précipité vert ; Fe³⁺ → précipité rouille ; Cl⁻ + Ag⁺ → AgCl (blanc, noircit à la lumière) ; SO₄²⁻ + Ba²⁺ → BaSO₄ (blanc).",
+   "points": [
+    "Solution ionique : neutre électriquement.",
+    "Cm = m/V ; C = n/V.",
+    "Électrolyte fort / faible.",
+    "Anions → anode (+) ; cations → cathode (−).",
+    "Tests : OH⁻ (Cu²⁺ bleu, Fe²⁺ vert, Fe³⁺ rouille) ; Ag⁺ (Cl⁻) ; Ba²⁺ (SO₄²⁻)."
+   ],
+   "application": {
+    "q": "27 g de glucose (M = 180 g/mol) dans 250 mL : concentration molaire ?",
+    "a": "n = 27/180 = 0,15 mol ; C = 0,15/0,25 = 0,6 mol/L."
+   },
+   "applications": [
+    {
+     "q": "10 mL de CuSO₄ à 10⁻² mol/L : volume de NaOH à 10⁻² mol/L pour précipiter tout Cu²⁺ ?",
+     "a": "Cu²⁺ + 2OH⁻ : il faut 2 × 10⁻⁴ mol de OH⁻, soit 20 mL."
+    },
+    {
+     "q": "Le passage du courant dans une solution est-il dû aux électrons ?",
+     "a": "Non : il est dû au déplacement des ions."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "L’eau pure conduit-elle le courant ? Et l’eau salée ?"
+     ]
+    },
+    {
+     "h": "I. Solutions ioniques",
+     "lines": [
+      "Ions mis en évidence par la conduction ; solution électriquement neutre.",
+      "Électrolyte fort (ionisation totale) / faible (partielle)."
+     ]
+    },
+    {
+     "h": "II. Concentrations",
+     "lines": [
+      "Cm = m/V (g/L) ; C = n/V (mol/L) ; Cm = C × M.",
+      "CaCl₂ → Ca²⁺ + 2Cl⁻ : [Ca²⁺] = C ; [Cl⁻] = 2C.",
+      "Na₂SO₄ à 10⁻² mol/L : [Na⁺] = 2·10⁻² mol/L."
+     ]
+    },
+    {
+     "h": "III. Exemple",
+     "lines": [
+      "1,2 kg de CaCl₂ (M = 111 g/mol) dans 1,5 L : n ≈ 10,8 mol ; C ≈ 7,2 mol/L ; [Ca²⁺] ≈ 7,2 mol/L ; [Cl⁻] ≈ 14,4 mol/L."
+     ]
+    },
+    {
+     "h": "IV. Tests de reconnaissance",
+     "lines": [],
+     "table": [
+      [
+       "Ion",
+       "Réactif",
+       "Précipité"
+      ],
+      [
+       "Cu²⁺",
+       "soude (OH⁻)",
+       "bleu Cu(OH)₂"
+      ],
+      [
+       "Fe²⁺",
+       "soude",
+       "vert Fe(OH)₂"
+      ],
+      [
+       "Fe³⁺",
+       "soude",
+       "rouille Fe(OH)₃"
+      ],
+      [
+       "Cl⁻",
+       "nitrate d’argent",
+       "blanc AgCl"
+      ],
+      [
+       "SO₄²⁻",
+       "chlorure de baryum",
+       "blanc BaSO₄"
+      ]
+     ]
+    },
+    {
+     "h": "V. Électrolyse",
+     "lines": [
+      "Anions → anode (+) : ils cèdent des électrons ; cations → cathode (−) : ils captent des électrons."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Solution ionique : neutre électriquement.",
+      "Cm = m/V ; C = n/V.",
+      "Électrolyte fort / faible.",
+      "Anions → anode (+) ; cations → cathode (−).",
+      "Tests : OH⁻ (Cu²⁺ bleu, Fe²⁺ vert, Fe³⁺ rouille) ; Ag⁺ (Cl⁻) ; Ba²⁺ (SO₄²⁻)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : 10 mL de CuSO₄ à 10⁻² mol/L : volume de NaOH à 10⁻² mol/L pour précipiter tout Cu²⁺ ?",
+      "→ Réponse : Cu²⁺ + 2OH⁻ : il faut 2 × 10⁻⁴ mol de OH⁻, soit 20 mL.",
+      "Exemple 2 : Le passage du courant dans une solution est-il dû aux électrons ?",
+      "→ Réponse : Non : il est dû au déplacement des ions."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "27 g de glucose (M = 180 g/mol) dans 250 mL : concentration molaire ?",
+      "→ Solution : n = 27/180 = 0,15 mol ; C = 0,15/0,25 = 0,6 mol/L."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 76, ex. 4",
+     "q": "On dissout m₁ = 1,42 g de sulfate de sodium Na₂SO₄ (électrolyte fort) pour obtenir V₁ = 100 mL de solution S₁.\n1) Équation de dissociation. 2) Concentration C₁. 3) Concentrations des ions. 4) On ajoute 400 mL d’eau : nom de l’opération et nouvelle concentration.\n(O = 16 ; Na = 23 ; S = 32 g/mol)",
+     "a": "1) Na₂SO₄ → 2Na⁺ + SO₄²⁻.\n2) M = 142 g/mol ; n = 0,010 mol ; C₁ = 0,10 mol/L.\n3) [Na⁺] = 0,20 mol/L ; [SO₄²⁻] = 0,10 mol/L.\n4) Une dilution ; C₂ = 0,010/0,500 = 0,020 mol/L."
+    },
+    {
+     "k": "book",
+     "src": "p. 76, ex. 5",
+     "q": "À partir d’une solution S₁ de KNO₃ à C₁ = 10⁻¹ mol/L, préparer V₂ = 100 mL de solution S₂ à C₂ = 10⁻² mol/L.\n1) Mode opératoire et matériel. 2) Équation d’ionisation. 3) Molarité des ions dans S₂.",
+     "a": "1) V₁ = C₂V₂/C₁ = 10 mL : on prélève 10 mL de S₁ avec la pipette jaugée de 10 mL, on les verse dans la fiole jaugée de 100 mL, on complète avec de l’eau distillée jusqu’au trait de jauge et on agite.\n2) KNO₃ → K⁺ + NO₃⁻.\n3) [K⁺] = [NO₃⁻] = 10⁻² mol/L."
+    },
+    {
+     "k": "book",
+     "src": "p. 76, ex. 6",
+     "q": "Solution S de sulfate de fer III Fe₂(SO₄)₃, C = 0,02 mol/L, V = 200 mL.\n1) Équation de dissociation. 2) Molarités des ions. 3) Masse dissoute. 4) On ajoute de la soude à C′ = 0,1 mol/L : a) nom et couleur du précipité ; b) équation ; c) volume V′ pour précipiter tous les ions Fe³⁺ ; d) masse du précipité.\n(O = 16 ; H = 1 ; Fe = 56 ; S = 32 g/mol)",
+     "a": "1) Fe₂(SO₄)₃ → 2Fe³⁺ + 3SO₄²⁻.\n2) [Fe³⁺] = 0,04 mol/L ; [SO₄²⁻] = 0,06 mol/L.\n3) M = 400 g/mol ; n = 4,0 × 10⁻³ mol ; m = 1,6 g.\n4) a) Hydroxyde de fer III, couleur rouille. b) Fe³⁺ + 3HO⁻ → Fe(OH)₃. c) n(Fe³⁺) = 8,0 × 10⁻³ mol ⇒ n(HO⁻) = 2,4 × 10⁻² mol ⇒ V′ = 240 mL. d) M(Fe(OH)₃) = 107 g/mol ; m ≈ 0,856 g."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 7",
+     "q": "La solubilité de PbCl₂ est s = 1,6 × 10⁻² mol/L. On introduit m = 2 g de PbCl₂ dans V = 225 mL d’eau.\n1) Équation de dissociation. 2) Masse m′ non dissoute. 3) Volume minimal V′ d’eau à ajouter pour tout dissoudre.\n(Cl = 35,5 ; Pb = 207 g/mol)",
+     "a": "1) PbCl₂ → Pb²⁺ + 2Cl⁻.\n2) M = 278 g/mol. On peut dissoudre 1,6 × 10⁻² × 0,225 = 3,6 × 10⁻³ mol, soit 1,0 g : m′ ≈ 1,0 g.\n3) n totale = 2/278 ≈ 7,19 × 10⁻³ mol ⇒ volume nécessaire 7,19 × 10⁻³/1,6 × 10⁻² ≈ 0,450 L ⇒ V′ ≈ 225 mL."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 8",
+     "q": "On dissout m = 3,25 g de FeCl₃ ; dans la solution [Cl⁻] = 0,06 mol/L.\n1) Équation de dissociation. 2) Volume V. 3) Comment identifier les ions présents ?\n(Cl = 35,5 ; Fe = 56 g/mol)",
+     "a": "1) FeCl₃ → Fe³⁺ + 3Cl⁻.\n2) M = 162,5 g/mol ; n = 0,020 mol ; C = [Cl⁻]/3 = 0,02 mol/L ⇒ V = 1,0 L.\n3) Fe³⁺ : avec la soude, précipité rouille Fe(OH)₃ (Fe³⁺ + 3HO⁻ → Fe(OH)₃). Cl⁻ : avec le nitrate d’argent, précipité blanc AgCl qui noircit à la lumière (Ag⁺ + Cl⁻ → AgCl)."
+    },
+    {
+     "k": "book",
+     "src": "p. 77, ex. 9",
+     "q": "On dissout m₁ = 4 g de sulfate de fer II FeSO₄ dans V₁ = 100 mL. On fait réagir 10 mL de cette solution avec 30 mL de potasse KOH à 0,2 mol/L.\n1) Concentration C₁. 2) Équation de précipitation, nom et couleur du précipité ; quel réactif est en excès ? 3) Masse du solide et concentrations des ions dans le filtrat.",
+     "a": "1) M = 152 g/mol ; n = 2,63 × 10⁻² mol ; C₁ ≈ 0,263 mol/L.\n2) Fe²⁺ + 2HO⁻ → Fe(OH)₂, précipité vert d’hydroxyde de fer II. n(Fe²⁺) = 2,63 × 10⁻³ mol ; n(HO⁻) = 6,0 × 10⁻³ mol > 2 × 2,63 × 10⁻³ : HO⁻ est en excès.\n3) m = 2,63 × 10⁻³ × 90 ≈ 0,237 g. Dans 40 mL : [K⁺] = 0,15 mol/L ; [SO₄²⁻] ≈ 0,066 mol/L ; HO⁻ restant 7,4 × 10⁻⁴ mol ⇒ [HO⁻] ≈ 0,018 mol/L."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "Écrire les équations de précipitation avec les ions hydroxyde de : Cu²⁺, Fe²⁺, Fe³⁺, Al³⁺, Zn²⁺, et donner la couleur des précipités.",
+     "a": "Cu²⁺ + 2HO⁻ → Cu(OH)₂ (bleu) ; Fe²⁺ + 2HO⁻ → Fe(OH)₂ (vert) ; Fe³⁺ + 3HO⁻ → Fe(OH)₃ (rouille) ; Al³⁺ + 3HO⁻ → Al(OH)₃ (blanc) ; Zn²⁺ + 2HO⁻ → Zn(OH)₂ (blanc)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un technicien doit identifier le contenu de trois flacons sans étiquette : sulfate de cuivre, chlorure de fer III et chlorure de sodium. Il dispose de soude et de nitrate d’argent.\n1) Proposer une démarche.\n2) Écrire les équations des réactions observées.",
+     "a": "1) On verse quelques gouttes de soude dans un échantillon de chaque flacon : précipité bleu ⇒ sulfate de cuivre ; précipité rouille ⇒ chlorure de fer III ; rien ⇒ chlorure de sodium. On confirme avec le nitrate d’argent : précipité blanc (ions chlorure) pour le chlorure de fer III et le chlorure de sodium.\n2) Cu²⁺ + 2HO⁻ → Cu(OH)₂ ; Fe³⁺ + 3HO⁻ → Fe(OH)₃ ; Ag⁺ + Cl⁻ → AgCl."
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre V : L’eau, le pH et les solutions acides",
+   "match": [
+    "L’eau, le pH et les solutions acides"
+   ],
+   "pages": [
+    80,
+    85
+   ],
+   "objectives": [
+    "Connaître l’autoprotolyse de l’eau et le produit ionique Ke.",
+    "Définir et mesurer le pH ; classer acide, neutre, basique.",
+    "Préparer une solution d’acide chlorhydrique (dissolution, dilution)."
+   ],
+   "intro": "Le citron, le vinaigre et l’eau de mer : lesquels sont acides ?",
+   "summary": "L’eau pure est faiblement conductrice : elle contient peu d’ions, formés par 2H₂O ⇄ H₃O⁺ + OH⁻. Le produit ionique Ke = [H₃O⁺][OH⁻] = 10⁻¹⁴ à 25 °C ; dans l’eau pure [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/L. Le pH est défini par [H₃O⁺] = 10⁻ᵖᴴ : pH < 7 solution acide, pH = 7 neutre, pH > 7 basique ; on le mesure au papier pH ou au pH-mètre. L’acide chlorhydrique est une solution de chlorure d’hydrogène HCl dans l’eau, électrolyte fort : [H₃O⁺] = [Cl⁻] = Ca. Dilution : la quantité de soluté se conserve, Cm·Vm = Cf·Vf, d’où le volume à prélever Vm = Cf·Vf/Cm.",
+   "points": [
+    "2H₂O ⇄ H₃O⁺ + OH⁻ ; Ke = 10⁻¹⁴ à 25 °C.",
+    "[H₃O⁺] = 10⁻ᵖᴴ.",
+    "pH < 7 acide ; = 7 neutre ; > 7 basique.",
+    "HCl : électrolyte fort, [H₃O⁺] = Ca.",
+    "Dilution : C₁V₁ = C₂V₂."
+   ],
+   "application": {
+    "q": "Une solution a [H₃O⁺] = 10⁻³ mol/L. pH ? Nature ?",
+    "a": "pH = 3 < 7 : solution acide."
+   },
+   "applications": [
+    {
+     "q": "Volume d’HCl à 1 mol/L pour préparer 100 mL à 0,1 mol/L ?",
+     "a": "Vm = 0,1 × 100 / 1 = 10 mL, complété à 100 mL avec de l’eau."
+    },
+    {
+     "q": "On dilue un vinaigre de pH 3 : entre quelles valeurs sera le pH ?",
+     "a": "Entre 3 et 7."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Le citron, le vinaigre et l’eau de mer : lesquels sont acides ?"
+     ]
+    },
+    {
+     "h": "I. L’eau",
+     "lines": [
+      "Molécule H₂O stable, excellent solvant, faiblement conductrice.",
+      "2H₂O ⇄ H₃O⁺ + OH⁻ ; Ke = [H₃O⁺][OH⁻] = 10⁻¹⁴ (25 °C)."
+     ]
+    },
+    {
+     "h": "II. Le pH",
+     "lines": [
+      "[H₃O⁺] = 10⁻ᵖᴴ ; mesure : papier indicateur, pH-mètre.",
+      "Acide pH < 7 ; neutre pH = 7 ; basique pH > 7."
+     ]
+    },
+    {
+     "h": "III. Acide chlorhydrique",
+     "lines": [
+      "(HCl)g + H₂O → H₃O⁺ + Cl⁻ (électrolyte fort) ; Ca = [H₃O⁺] = [Cl⁻].",
+      "Volume de gaz à dissoudre : Vg = n × Vm = Ca × V × Vm."
+     ]
+    },
+    {
+     "h": "IV. Dilution",
+     "lines": [
+      "La quantité de soluté se conserve : Cm × Vm = Cf × Vf ⇒ Vm = Cf·Vf / Cm.",
+      "La dilution d’un acide augmente son pH (vers 7)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "2H₂O ⇄ H₃O⁺ + OH⁻ ; Ke = 10⁻¹⁴ à 25 °C.",
+      "[H₃O⁺] = 10⁻ᵖᴴ.",
+      "pH < 7 acide ; = 7 neutre ; > 7 basique.",
+      "HCl : électrolyte fort, [H₃O⁺] = Ca.",
+      "Dilution : C₁V₁ = C₂V₂."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Volume d’HCl à 1 mol/L pour préparer 100 mL à 0,1 mol/L ?",
+      "→ Réponse : Vm = 0,1 × 100 / 1 = 10 mL, complété à 100 mL avec de l’eau.",
+      "Exemple 2 : On dilue un vinaigre de pH 3 : entre quelles valeurs sera le pH ?",
+      "→ Réponse : Entre 3 et 7."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une solution a [H₃O⁺] = 10⁻³ mol/L. pH ? Nature ?",
+      "→ Solution : pH = 3 < 7 : solution acide."
+     ]
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
+   "title": "Chimie – Chapitre V : Solutions basiques, indicateurs et neutralisation",
+   "match": [
+    "Solutions basiques, indicateurs et neutralisation"
+   ],
+   "pages": [
+    86,
+    96
+   ],
+   "objectives": [
+    "Préparer une solution d’hydroxyde de sodium.",
+    "Utiliser les indicateurs colorés.",
+    "Écrire la réaction de neutralisation et exploiter l’équivalence CaVa = CbVb."
+   ],
+   "intro": "Comment neutraliser exactement un acide ? Comment savoir que c’est fini ?",
+   "summary": "La soude (hydroxyde de sodium) s’obtient en dissolvant NaOH solide dans l’eau : NaOH → Na⁺ + OH⁻ ; son pH est supérieur à 7 et Cb = [OH⁻] = [Na⁺]. Les indicateurs colorés (hélianthine, BBT, phénolphtaléine) changent de couleur selon le pH. Neutralisation : (H₃O⁺ + Cl⁻) + (Na⁺ + OH⁻) → 2H₂O + (Na⁺ + Cl⁻). À l’équivalence, les quantités d’acide et de base apportées sont égales : na = nb, soit CaVa = CbVb ; le BBT vire au vert (pH = 7 pour un acide fort et une base forte).",
+   "points": [
+    "NaOH → Na⁺ + OH⁻ ; pH > 7.",
+    "Indicateurs : hélianthine, BBT, phénolphtaléine.",
+    "H₃O⁺ + OH⁻ → 2H₂O.",
+    "Équivalence : CaVa = CbVb.",
+    "BBT : jaune (acide), vert (neutre), bleu (basique)."
+   ],
+   "application": {
+    "q": "Volume d’HCl à 0,04 mol/L pour neutraliser 80 mL de soude à 0,05 mol/L ?",
+    "a": "Va = CbVb/Ca = 0,05 × 80/0,04 = 100 mL (le manuel calcule avec 40 mL et trouve 50 mL)."
+   },
+   "applications": [
+    {
+     "q": "Quelle solution est basique : eau de mer (pH 8) ou thé (pH 5,5) ?",
+     "a": "L’eau de mer (pH > 7)."
+    },
+    {
+     "q": "20 mL d’HCl à 0,1 mol/L sont neutralisés par 10 mL de soude : Cb ?",
+     "a": "Cb = CaVa/Vb = 0,1 × 20/10 = 0,2 mol/L."
+    }
+   ],
+   "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment neutraliser exactement un acide ? Comment savoir que c’est fini ?"
+     ]
+    },
+    {
+     "h": "I. Hydroxyde de sodium",
+     "lines": [
+      "NaOH(s) → Na⁺ + OH⁻ ; Cb = [OH⁻] = [Na⁺] ; nb = Cb·Vb.",
+      "La phénolphtaléine devient rose : pH > 7."
+     ]
+    },
+    {
+     "h": "II. Indicateurs colorés",
+     "lines": [],
+     "table": [
+      [
+       "Indicateur",
+       "Milieu acide",
+       "Milieu basique"
+      ],
+      [
+       "Hélianthine",
+       "rouge",
+       "jaune"
+      ],
+      [
+       "BBT",
+       "jaune",
+       "bleu (vert à pH 7)"
+      ],
+      [
+       "Phénolphtaléine",
+       "incolore",
+       "rose"
+      ]
+     ]
+    },
+    {
+     "h": "III. Neutralisation",
+     "lines": [
+      "(H₃O⁺ + Cl⁻) + (Na⁺ + OH⁻) → 2H₂O + (Na⁺ + Cl⁻).",
+      "Équivalence : na = nb ⇔ CaVa = CbVb."
+     ]
+    },
+    {
+     "h": "IV. Exercice résolu",
+     "lines": [
+      "Eau de mer pH 8 (basique) ; vinaigre 3 ; thé 5,5 ; citron 1,5 (le plus acide) ; thé le moins acide.",
+      "Indicateur pour le dosage HCl/NaOH : BBT."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "NaOH → Na⁺ + OH⁻ ; pH > 7.",
+      "Indicateurs : hélianthine, BBT, phénolphtaléine.",
+      "H₃O⁺ + OH⁻ → 2H₂O.",
+      "Équivalence : CaVa = CbVb.",
+      "BBT : jaune (acide), vert (neutre), bleu (basique)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Quelle solution est basique : eau de mer (pH 8) ou thé (pH 5,5) ?",
+      "→ Réponse : L’eau de mer (pH > 7).",
+      "Exemple 2 : 20 mL d’HCl à 0,1 mol/L sont neutralisés par 10 mL de soude : Cb ?",
+      "→ Réponse : Cb = CaVa/Vb = 0,1 × 20/10 = 0,2 mol/L."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Volume d’HCl à 0,04 mol/L pour neutraliser 80 mL de soude à 0,05 mol/L ?",
+      "→ Solution : Va = CbVb/Ca = 0,05 × 80/0,04 = 100 mL (le manuel calcule avec 40 mL et trouve 50 mL)."
+     ]
+    }
+   ],
+   "series": [
+    {
+     "k": "book",
+     "src": "p. 91, exercice résolu (9)",
+     "q": "Quel volume VA d’acide chlorhydrique à CA = 0,04 mol/L faut-il pour neutraliser VB = 80 mL de soude à CB = 0,05 mol/L ? Quel indicateur utiliser ? (Correction : le corrigé du manuel calcule avec 40 mL au lieu de 80 mL et trouve 50 mL.)",
+     "a": "À l’équivalence CA × VA = CB × VB ⇒ VA = 0,05 × 80/0,04 = 100 mL. Le BBT convient (zone de virage autour de pH 7)."
+    },
+    {
+     "k": "book",
+     "src": "p. 93, ex. 4",
+     "q": "Le pH de l’eau pure est 7,5 à 0 °C et 6,6 à 50 °C. Calculer [H₃O⁺] et [OH⁻] à ces deux températures.",
+     "a": "Dans l’eau pure [H₃O⁺] = [OH⁻] = 10^(−pH). À 0 °C : ≈ 3,2 × 10⁻⁸ mol/L ; à 50 °C : ≈ 2,5 × 10⁻⁷ mol/L. (L’eau reste neutre même si son pH n’est pas 7.)"
+    },
+    {
+     "k": "book",
+     "src": "p. 93, ex. 6 et 7",
+     "q": "1) Concentrations des ions dans des solutions d’acide chlorhydrique de pH 2 ; 3,5 ; 4,2, puis leurs concentrations massiques.\n2) pH des solutions : CA = 10⁻² mol/L ; CB = 3 × 10⁻⁴ mol/L ; CC = 0,5 g/L ; CD = 0,365 g/L. (M(HCl) = 36,5 g/mol)",
+     "a": "1) [H₃O⁺] = [Cl⁻] = 1,0 × 10⁻² ; 3,2 × 10⁻⁴ ; 6,3 × 10⁻⁵ mol/L ; concentrations massiques 0,365 g/L ; 1,15 × 10⁻² g/L ; 2,3 × 10⁻³ g/L.\n2) pH(A) = 2 ; pH(B) ≈ 3,5 ; CC = 0,5/36,5 ≈ 1,37 × 10⁻² mol/L ⇒ pH ≈ 1,9 ; CD = 0,01 mol/L ⇒ pH = 2."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 9",
+     "q": "À partir d’une solution S₁ d’acide chlorhydrique à 0,8 mol/L, préparer 4 L de solution S₂ à 0,01 mol/L. Procédure, pH obtenu, masse de HCl dissous.",
+     "a": "V₁ = 0,01 × 4/0,8 = 0,050 L : on prélève 50 mL de S₁ et on complète à 4 L avec de l’eau distillée. pH = 2. n = 0,04 mol ⇒ m = 1,46 g."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 10",
+     "q": "On mélange 50 cm³ d’acide chlorhydrique de pH 2 et 100 cm³ de pH 3. Concentration de la solution obtenue et pH.",
+     "a": "n = 0,050 × 10⁻² + 0,100 × 10⁻³ = 6,0 × 10⁻⁴ mol dans 0,150 L : C = [Cl⁻] = [H₃O⁺] = 4,0 × 10⁻³ mol/L ; pH ≈ 2,4."
+    },
+    {
+     "k": "book",
+     "src": "p. 94, ex. 12 et 13",
+     "q": "1) Une solution de soude contient 20 g/L de NaOH : concentration et pH. 2) Masse de NaOH pour 1 L de solution à 0,4 mol/L et pH de cette solution. (M(NaOH) = 40 g/mol ; à 25 °C [H₃O⁺][OH⁻] = 10⁻¹⁴)",
+     "a": "1) C = 0,5 mol/L ; [H₃O⁺] = 10⁻¹⁴/0,5 = 2 × 10⁻¹⁴ ⇒ pH ≈ 13,7.\n2) m = 16 g ; pH = 14 + log 0,4 ≈ 13,6."
+    },
+    {
+     "k": "extra",
+     "src": "",
+     "q": "On dose 20 mL d’une solution de soude par de l’acide chlorhydrique à 0,10 mol/L en présence de BBT ; le virage se produit pour 12,5 mL d’acide. Concentration de la soude ? Couleur du BBT avant et après l’équivalence ?",
+     "a": "CB = 0,10 × 12,5/20 = 0,0625 mol/L. Le BBT est bleu en milieu basique (avant l’équivalence), vert à l’équivalence et jaune après (acide en excès)."
+    },
+    {
+     "k": "int",
+     "src": "",
+     "q": "Un détartrant contient de l’acide chlorhydrique. On dilue 10 fois le produit puis on dose 10 mL de la solution diluée par de la soude à 0,50 mol/L : l’équivalence est obtenue pour 16 mL.\n1) Concentration de la solution diluée, puis du produit commercial.\n2) Pourquoi porter des gants et des lunettes ?",
+     "a": "1) C × 10 = 0,50 × 16 ⇒ C = 0,80 mol/L ; produit commercial : 8,0 mol/L (environ 292 g/L de HCl).\n2) Solution très acide (pH proche de 0), corrosive pour la peau et les yeux."
+    }
+   ],
+   "book": "books/PC_5CD_CHI.pdf",
+   "bookTitle": "Chimie 5ème AS"
+  },
+  {
    "title": "Physique – Chapitre I : Notion de force et étalonnage d’un ressort",
    "match": [
     "Notion de force et étalonnage d’un ressort"
@@ -42,6 +1257,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi un dynamomètre contient-il un ressort ? Que mesure-t-il vraiment ?"
+     ]
+    },
+    {
      "h": "I. Rappels mathématiques",
      "lines": [
       "sin α = opposé/hypoténuse ; cos α = adjacent/hypoténuse ; tan α = sin α/cos α ; sin²α + cos²α = 1.",
@@ -71,6 +1292,32 @@
       "On accroche des masses m au ressort : T = P = mg ; on mesure l’allongement Δl = l − l₀.",
       "La courbe T = f(Δl) est une droite passant par l’origine : T = k·Δl (loi de Hooke).",
       "k (N/m) est la pente de la droite ; un dynamomètre est un ressort étalonné."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Effets d’une force : dynamique (mouvement) ou statique (déformation).",
+      "Caractéristiques : point d’application, direction, sens, intensité (N).",
+      "Fx = F cos α ; Fy = F sin α.",
+      "Résultante : R = √(F₁² + F₂² + 2F₁F₂ cos θ).",
+      "Loi de Hooke : T = k·Δl = k(l − l₀)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une force de 10 N fait un angle de 30° avec (Ox) : composantes ?",
+      "→ Réponse : Fx = 10 cos 30° ≈ 8,66 N ; Fy = 10 sin 30° = 5 N.",
+      "Exemple 2 : Un ressort de raideur 200 N/m supporte 35 N : allongement ?",
+      "→ Réponse : Δl = 35/200 = 0,175 m = 17,5 cm."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un ressort de raideur k = 50 N/m s’allonge de 4 cm : tension ?",
+      "→ Solution : T = k·Δl = 50 × 0,04 = 2 N."
      ]
     }
    ],
@@ -123,7 +1370,9 @@
      "q": "Pour peser des colis, un commerçant étalonne un ressort : sans charge il mesure 15 cm, avec une masse de 2 kg il mesure 19 cm (g = 10 N/kg).\n1) Calculer la raideur du ressort.\n2) Avec un colis, le ressort mesure 22,5 cm. Quelle est la masse du colis ?\n3) Le ressort reste élastique jusqu’à 40 N. Quelle masse maximale peut-il peser ?",
      "a": "1) k = 20 N/0,04 m = 500 N/m.\n2) Allongement 7,5 cm ⇒ F = 500 × 0,075 = 37,5 N ⇒ m = 3,75 kg.\n3) m = 40/10 = 4 kg (allongement 8 cm, longueur 23 cm)."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre II : La poussée d’Archimède",
@@ -163,6 +1412,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une pirogue chargée flotte-t-elle alors qu’un clou coule ?"
+     ]
+    },
     {
      "h": "I. Mise en évidence",
      "lines": [
@@ -225,6 +1480,32 @@
       "Sous-marin : il remplit ou vide ses ballasts pour plonger ou remonter.",
       "Plongeur, navires, montgolfières."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Poussée verticale, vers le haut, appliquée au centre de poussée.",
+      "P_A = P − Pa (poids réel − poids apparent).",
+      "P_A = ρ_liquide × V_immergé × g.",
+      "Indépendante de la profondeur, de la quantité de liquide, du poids du corps.",
+      "Coule si ρ_corps > ρ_liquide ; flotte si ρ_corps < ρ_liquide."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Un bois de masse volumique 600 kg/m³ flotte sur l’eau : fraction immergée ?",
+      "→ Réponse : V_i/V = 600/1000 = 0,6 : 60 % du volume est immergé.",
+      "Exemple 2 : Masse marquée 300 g : poids apparent 2,6 N (g = 10). Poussée ?",
+      "→ Réponse : P = 3 N ; P_A = 3 − 2,6 = 0,4 N."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un cube de fer : P = 3 N, Pa = 2 N, il déplace 100 mL d’eau. Vérifier le principe.",
+      "→ Solution : P_A = 3 − 2 = 1 N ; poids de l’eau déplacée = 1000 × 100·10⁻⁶ × 10 = 1 N : égalité vérifiée."
+     ]
     }
    ],
    "series": [
@@ -270,7 +1551,9 @@
      "q": "Un pêcheur veut savoir si sa pirogue (masse 120 kg, volume total de la coque 0,60 m³) peut transporter 4 personnes de 70 kg et 150 kg de poisson sans couler (eau de mer ρ = 1025 kg/m³).\n1) Quelle masse totale la pirogue peut-elle porter au maximum ?\n2) Le chargement prévu est-il possible ?",
      "a": "1) Poussée maximale (coque immergée jusqu’au bord) : ρVg ⇒ masse maximale totale 1025 × 0,60 = 615 kg, soit 615 − 120 = 495 kg de charge.\n2) Charge prévue : 280 + 150 = 430 kg < 495 kg : c’est possible, mais avec une faible marge (il faut éviter les vagues)."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre III : Équilibre d’un solide soumis à deux ou trois forces",
@@ -310,6 +1593,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Un tableau est suspendu par deux fils : comment calculer la tension de chaque fil ?"
+     ]
+    },
+    {
      "h": "I. Solide soumis à deux forces",
      "lines": [
       "F₁→ + F₂→ = 0→ : même droite d’action, sens opposés, F₁ = F₂.",
@@ -336,8 +1625,35 @@
       "Solide suspendu par deux fils symétriques faisant α avec la verticale : 2T cos α = P.",
       "Planche contre un mur : poids, réaction du mur, réaction du sol concourantes."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Deux forces : même droite d’action, sens contraires, même intensité.",
+      "Trois forces : coplanaires, concourantes, somme nulle.",
+      "Méthode : système → bilan → condition → projections → calcul.",
+      "Plan incliné : T = P sin α ; R = P cos α."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une charge de 100 N est suspendue par deux fils faisant chacun 60° avec la verticale : tension ?",
+      "→ Réponse : 2T cos 60° = 100 ⇒ T = 100 N.",
+      "Exemple 2 : Deux forces de 5 N et 5 N, opposées, même droite : le solide est-il en équilibre ?",
+      "→ Réponse : Oui : somme nulle et même droite d’action."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un solide de poids 20 N est retenu par un fil sur un plan incliné de 30° sans frottement : tension ?",
+      "→ Solution : T = P sin α = 20 × 0,5 = 10 N ; R = 20 cos 30° ≈ 17,3 N."
+     ]
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre III : Moment d’une force et solide mobile autour d’un axe",
@@ -377,6 +1693,12 @@
     }
    ],
    "board": [
+    {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi pousse-t-on une porte loin des gonds ?"
+     ]
+    },
     {
      "h": "I. Effet de rotation",
      "lines": [
@@ -427,6 +1749,32 @@
      "lines": [
       "Deux forces parallèles, de sens contraires, de même intensité, de droites d’action distinctes.",
       "Moment du couple : M = F × d ; ex. volant, robinet, filière."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "M_Δ(F→) = ± F·d (N·m).",
+      "Moment nul si la droite d’action coupe l’axe ou lui est parallèle.",
+      "Équilibre : Σ M_Δ = 0 et Σ F→ = 0→.",
+      "Levier : F₁·d₁ = F₂·d₂ ; treuil : F·L = P·r.",
+      "Couple : M = F·d."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Treuil : rayon du tambour 10 cm, manivelle 50 cm, charge 500 N : force ?",
+      "→ Réponse : F = P·r/L = 500 × 0,1/0,5 = 100 N.",
+      "Exemple 2 : Moment d’un couple de deux forces de 20 N distantes de 0,3 m ?",
+      "→ Réponse : M = 20 × 0,3 = 6 N·m."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un levier : charge de 600 N à 0,2 m de l’axe ; on pousse à 1,2 m de l’autre côté. Force nécessaire ?",
+      "→ Solution : F × 1,2 = 600 × 0,2 ⇒ F = 100 N."
      ]
     }
    ],
@@ -479,7 +1827,9 @@
      "q": "Une brouette chargée a un poids total de 600 N appliqué à 40 cm de l’axe de la roue ; les poignées sont à 1,20 m de l’axe.\n1) Quelle force verticale faut-il exercer sur les poignées pour soulever la brouette ?\n2) Comment répartir la charge pour fournir moins d’effort ?",
      "a": "1) Moments par rapport à l’axe de la roue : F × 1,20 = 600 × 0,40 ⇒ F = 200 N.\n2) Placer la charge le plus près possible de la roue (bras de levier plus petit)."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre IV : Lentilles minces — caractéristiques et images",
@@ -520,6 +1870,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "La loupe grossit, les lunettes d’un myope rapetissent : quelle différence entre ces lentilles ?"
+     ]
+    },
+    {
      "h": "I. Les lentilles minces",
      "lines": [
       "Convergentes (bords minces) : biconvexe, plan-convexe, ménisque convergent.",
@@ -548,8 +1904,36 @@
       "Objet entre F et O : image virtuelle, droite, agrandie (loupe).",
       "Lentille divergente, objet réel : image virtuelle, droite, plus petite."
      ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Bords minces : convergente ; bords épais : divergente.",
+      "F et F′ symétriques par rapport à O ; f = OF′.",
+      "C = 1/f (δ, f en m).",
+      "Rayons : par O non dévié ; parallèle → par F′ ; par F → parallèle.",
+      "Image réelle (sur écran) / virtuelle."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Une lentille a C = −4 δ : nature et distance focale ?",
+      "→ Réponse : Divergente ; f = 1/C = −0,25 m.",
+      "Exemple 2 : Où placer un objet pour qu’une convergente serve de loupe ?",
+      "→ Réponse : Entre le foyer objet F et le centre optique O."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Vergence d’une lentille de distance focale 20 cm ?",
+      "→ Solution : C = 1/0,20 = 5 δ."
+     ]
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre IV : Conjugaison, grandissement et instruments d’optique",
@@ -590,6 +1974,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Comment l’œil fait-il pour voir net de près comme de loin ?"
+     ]
+    },
+    {
      "h": "I. Relation de conjugaison",
      "lines": [
       "1/OA′ − 1/OA = 1/OF′ = C (mesures algébriques)."
@@ -622,6 +2012,32 @@
       "Loupe : objet entre F et O, image virtuelle agrandie.",
       "Microscope : objectif (image réelle agrandie) + oculaire (loupe).",
       "Lunette astronomique : objectif de grande focale, oculaire ; objet à l’infini."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "1/OA′ − 1/OA = 1/OF′.",
+      "γ = OA′/OA = A′B′/AB.",
+      "Lentilles accolées : C = C₁ + C₂.",
+      "Myopie : divergente ; hypermétropie : convergente.",
+      "Microscope, lunette : objectif + oculaire."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Deux lentilles accolées de 5 δ et −2 δ : vergence équivalente ?",
+      "→ Réponse : C = 5 − 2 = 3 δ (convergente, f ≈ 33 cm).",
+      "Exemple 2 : Un objet donne une image avec γ = −2 : nature ?",
+      "→ Réponse : Image renversée, deux fois plus grande."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Lentille de f = 10 cm, objet à 30 cm devant (OA = −30 cm) : position et grandissement de l’image ?",
+      "→ Solution : 1/OA′ = 1/10 − 1/30 = 2/30 ⇒ OA′ = 15 cm ; γ = 15/(−30) = −0,5 : image réelle, renversée, deux fois plus petite."
      ]
     }
    ],
@@ -674,7 +2090,9 @@
      "q": "Un projecteur de diapositives utilise une lentille convergente de vergence 10 δ. L’écran est à 3,0 m de la lentille.\n1) À quelle distance de la lentille placer la diapositive ?\n2) La diapositive mesure 36 mm. Quelle est la taille de l’image ?\n3) Pourquoi place-t-on la diapositive à l’envers ?",
      "a": "1) f′ = 10 cm ; OA′ = 300 cm : 1/OA = 1/300 − 1/10 = −29/300 ⇒ OA ≈ −10,3 cm.\n2) γ = OA′/OA ≈ −29 : image d’environ 1,04 m.\n3) L’image réelle est renversée : on retourne la diapositive pour voir l’image à l’endroit."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre V : Force et champ électrostatique",
@@ -715,6 +2133,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une règle frottée attire-t-elle de petits morceaux de papier ?"
+     ]
+    },
+    {
      "h": "I. Électrisation",
      "lines": [
       "Par frottement (règle frottée), par contact, par influence.",
@@ -740,6 +2164,32 @@
       "Lignes de champ : tangentes au champ, orientées dans son sens.",
       "Champ uniforme entre deux plaques parallèles de charges opposées.",
       "Plusieurs charges : E→ = E₁→ + E₂→ + …"
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Électrisation : frottement, contact, influence.",
+      "Charges de même signe : répulsion ; signes contraires : attraction.",
+      "Coulomb : F = k|qA qB|/d² ; k = 9·10⁹ SI.",
+      "F→ = q E→ ; E = k|Q|/d².",
+      "Superposition : E→ = E₁→ + E₂→ ; champ uniforme entre deux plaques."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Force subie par un électron dans un champ de 1000 V/m ?",
+      "→ Réponse : F = eE = 1,6·10⁻¹⁹ × 1000 = 1,6·10⁻¹⁶ N, de sens opposé au champ.",
+      "Exemple 2 : Si la distance entre deux charges double, que devient la force ?",
+      "→ Réponse : Elle est divisée par 4."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Deux charges de 2·10⁻⁶ C distantes de 0,3 m : force ?",
+      "→ Solution : F = 9·10⁹ × (2·10⁻⁶)²/0,3² = 0,4 N (répulsion)."
      ]
     }
    ],
@@ -786,7 +2236,9 @@
      "q": "Une photocopieuse utilise un tambour chargé qui attire de fines particules d’encre (toner) de masse 1,0 × 10⁻¹⁵ kg portant chacune une charge de 1,6 × 10⁻¹⁸ C.\n1) Quel champ minimal faut-il au voisinage du tambour pour que la force électrique dépasse le poids d’une particule (g = 10 N/kg) ?\n2) Pourquoi les particules d’encre doivent-elles être de signe contraire au tambour ?",
      "a": "1) qE > mg ⇒ E > mg/q = 1,0 × 10⁻¹⁴/1,6 × 10⁻¹⁸ ≈ 6,3 × 10³ V/m.\n2) Des charges de signes contraires s’attirent : l’encre se colle sur les zones chargées du tambour."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre VI : Intensité et tension électriques",
@@ -827,6 +2279,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi les lampes d’une maison sont-elles montées en dérivation ?"
+     ]
+    },
+    {
      "h": "I. Le courant électrique",
      "lines": [
       "Déplacement de porteurs de charges ; sens conventionnel : de + vers − à l’extérieur du générateur.",
@@ -852,6 +2310,32 @@
      "lines": [
       "Récepteur : U et I fléchés en sens opposés.",
       "Générateur : U et I fléchés dans le même sens."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "I = Q/t ; ampèremètre en série.",
+      "Série : I identique ; dérivation : loi des nœuds.",
+      "U_AB = V_A − V_B ; voltmètre en dérivation.",
+      "Additivité et loi des mailles.",
+      "Conventions récepteur / générateur."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : Nœud : I₁ = 0,5 A et I₂ = 0,3 A arrivent ; I₃ part. Valeur de I₃ ?",
+      "→ Réponse : I₃ = 0,8 A.",
+      "Exemple 2 : U_AB = 6 V, U_BC = 3 V : U_AC ?",
+      "→ Réponse : U_AC = 9 V."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Une charge de 120 C traverse un fil en 1 min : intensité ?",
+      "→ Solution : I = Q/t = 120/60 = 2 A."
      ]
     }
    ],
@@ -898,7 +2382,9 @@
      "q": "Une batterie de voiture porte l’indication « 12 V – 60 A·h ». Les phares (2 × 55 W ≈ 9,2 A au total) restent allumés moteur arrêté.\n1) Quelle quantité d’électricité (en coulombs) la batterie peut-elle débiter ?\n2) Au bout de combien de temps sera-t-elle vide ?",
      "a": "1) Q = 60 A·h = 60 × 3600 = 216 000 C.\n2) t = Q/I = 60/9,2 ≈ 6,5 h."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre VII : Dipôles passifs",
@@ -939,6 +2425,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Pourquoi une diode laisse-t-elle passer le courant dans un seul sens ?"
+     ]
+    },
+    {
      "h": "I. Grandeurs et conventions",
      "lines": [
       "Courant, tension, orientation relative (convention récepteur)."
@@ -958,6 +2450,32 @@
       "Série : R_éq = R₁ + R₂ + …",
       "Parallèle : 1/R_éq = 1/R₁ + 1/R₂ + …",
       "Résistance d’un fil : R = ρL/S."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "Caractéristique U = f(I) en convention récepteur.",
+      "Diode : sens passant au-delà du seuil ; bloquée en inverse.",
+      "Zener : tension constante en inverse (U_Z).",
+      "Loi d’Ohm : U = R·I.",
+      "Série : R = R₁ + R₂ ; parallèle : 1/R = 1/R₁ + 1/R₂."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : R₁ = 6 Ω et R₂ = 3 Ω en parallèle : R_éq ?",
+      "→ Réponse : 1/R = 1/6 + 1/3 = 1/2 ⇒ R = 2 Ω.",
+      "Exemple 2 : Les mêmes en série ?",
+      "→ Réponse : R = 9 Ω."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Un conducteur ohmique de 100 Ω est traversé par 0,05 A : tension ?",
+      "→ Solution : U = R·I = 100 × 0,05 = 5 V."
      ]
     }
    ],
@@ -1004,7 +2522,9 @@
      "q": "On veut faire fonctionner une DEL (2 V ; 20 mA) avec une pile de 9 V.\n1) Quelle résistance de protection faut-il mettre en série ?\n2) Les résistances vendues valent 270 Ω, 330 Ω ou 470 Ω : laquelle choisir ? Quelle intensité obtient-on ?",
      "a": "1) R = (9 − 2)/0,020 = 350 Ω.\n2) Il faut R ≥ 350 Ω pour ne pas dépasser 20 mA : on choisit 470 Ω, d’où I = 7/470 ≈ 15 mA (la DEL éclaire un peu moins mais ne risque rien)."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   },
   {
    "title": "Physique – Chapitre VIII : Dipôles actifs — générateurs",
@@ -1045,6 +2565,12 @@
    ],
    "board": [
     {
+     "h": "Situation de départ",
+     "lines": [
+      "Une pile neuve affiche 9 V à vide, mais moins quand elle alimente un moteur : pourquoi ?"
+     ]
+    },
+    {
      "h": "I. Générateurs",
      "lines": [
       "Dipôles actifs : piles, accumulateurs, alimentations, dynamos."
@@ -1068,6 +2594,32 @@
      "lines": [
       "Intersection de la caractéristique du générateur et de celle du récepteur.",
       "Générateur + résistor R : I = E/(R + r)."
+     ]
+    },
+    {
+     "h": "À retenir",
+     "lines": [
+      "U = E − r·I (convention générateur).",
+      "E : tension à vide ; r : résistance interne.",
+      "Icc = E/r.",
+      "Série : E = ΣEᵢ ; r = Σrᵢ.",
+      "Point de fonctionnement : I = E/(R + r)."
+     ]
+    },
+    {
+     "h": "Exemples",
+     "lines": [
+      "Exemple 1 : E = 12 V, r = 2 Ω : intensité de court-circuit ?",
+      "→ Réponse : Icc = 12/2 = 6 A.",
+      "Exemple 2 : Deux piles (1,5 V ; 0,5 Ω) en série : générateur équivalent ?",
+      "→ Réponse : E = 3 V ; r = 1 Ω."
+     ]
+    },
+    {
+     "h": "Exercice d’application",
+     "lines": [
+      "Pile E = 4,5 V, r = 1,5 Ω, branchée sur R = 7,5 Ω : intensité et tension ?",
+      "→ Solution : I = 4,5/(7,5 + 1,5) = 0,5 A ; U = 4,5 − 1,5 × 0,5 = 3,75 V."
      ]
     }
    ],
@@ -1114,7 +2666,9 @@
      "q": "Un panneau solaire se comporte comme un générateur de f.é.m. 18 V et de résistance interne 1,5 Ω. Il alimente une pompe assimilée à un résistor de 7,5 Ω.\n1) Calculer l’intensité et la tension aux bornes de la pompe.\n2) Quelle est la puissance reçue par la pompe ?\n3) Pour quelle résistance de la pompe la puissance reçue serait-elle maximale ?",
      "a": "1) I = 18/(7,5 + 1,5) = 2 A ; U = 7,5 × 2 = 15 V.\n2) P = UI = 30 W.\n3) P(R) = RE²/(R + r)² est maximale pour R = r = 1,5 Ω (P = 54 W), mais le rendement n’est alors que de 50 %."
     }
-   ]
+   ],
+   "book": "books/PC_5C_PHY.pdf",
+   "bookTitle": "Physique 5ème M"
   }
  ],
  "level": "5C"
